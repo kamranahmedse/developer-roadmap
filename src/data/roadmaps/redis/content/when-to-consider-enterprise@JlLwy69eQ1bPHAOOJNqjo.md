@@ -5,4 +5,4 @@ Redis Enterprise is typically considered when an organization requires enhanced 
 Learn more from the following resources:
 
 - [@official@About Redis Enterprise](https://redis.io/about/redis-enterprise/)
-- [@official@Redis Enterprise Website](https://redis.io/enterprise/)
+- [@official@Redis Enterprise](https://redis.io/enterprise/)

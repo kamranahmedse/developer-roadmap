@@ -4,5 +4,5 @@ The `GET` command in Redis is used to retrieve the value associated with a speci
 
 Learn more from the following resources:
 
-- [@official@GET Documentation](https://redis.io/docs/latest/commands/get/)
+- [@official@GET](https://redis.io/docs/latest/commands/get/)
 - [@article@How to get all keys in Redis](https://www.atlassian.com/data/admin/how-to-get-all-keys-in-redis)

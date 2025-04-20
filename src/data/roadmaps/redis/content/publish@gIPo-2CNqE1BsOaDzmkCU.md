@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@PUBLISH Documentation](https://redis.io/docs/latest/commands/publish/)
+- [@official@PUBLISH](https://redis.io/docs/latest/commands/publish/)

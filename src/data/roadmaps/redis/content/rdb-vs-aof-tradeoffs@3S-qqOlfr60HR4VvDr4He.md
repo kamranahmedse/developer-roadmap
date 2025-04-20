@@ -1,6 +1,6 @@
 # RDB vs AOF Tradeoffs
 
-When comparing RDB (Redis Database Backup) and AOF (Append-Only File) for data persistence in Redis, several trade-offs must be considered. 
+When comparing RDB (Redis Database Backup) and AOF (Append-Only File) for data persistence in Redis, several trade-offs must be considered.
 
 **RDB** is optimized for performance and efficient storage, creating point-in-time snapshots of the dataset at specified intervals. It is faster for startup since it loads a single file and consumes less disk I/O during normal operations. However, it may lead to data loss between snapshots if the server crashes, as changes made during that interval are not saved.
 

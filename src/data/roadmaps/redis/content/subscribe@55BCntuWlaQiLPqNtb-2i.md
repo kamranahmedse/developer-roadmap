@@ -4,4 +4,4 @@ The SUBSCRIBE command subscribes the client to the channels specified, once subs
 
 Learn more from the following resources:
 
-- [@official@SUBSCRIBE Documentation](https://redis.io/docs/latest/commands/subscribe/)
+- [@official@SUBSCRIBE](https://redis.io/docs/latest/commands/subscribe/)

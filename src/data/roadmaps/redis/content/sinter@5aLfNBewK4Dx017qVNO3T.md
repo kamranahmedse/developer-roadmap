@@ -4,4 +4,4 @@ The SINTER command will return members of the set which will result in the inter
 
 Learn more from the following resources:
 
-- [@official@SINTER Documentation](https://redis.io/docs/latest/commands/sinter/)
+- [@official@SINTER](https://redis.io/docs/latest/commands/sinter/)

@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@official@SET Docs](https://redis.io/docs/latest/commands/set/)
 - [@official@GET Docs](https://redis.io/docs/latest/commands/get/)
-- [@official@Redis command cheat sheet](https://redis.io/learn/howtos/quick-start/cheat-sheet)
+- [@official@Redis Cheat Sheet](https://redis.io/learn/howtos/quick-start/cheat-sheet)

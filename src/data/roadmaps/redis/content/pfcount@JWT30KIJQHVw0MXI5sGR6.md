@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@PFCOUNT Documentation](https://redis.io/docs/latest/commands/pfcount/)
+- [@official@PFCOUNT](https://redis.io/docs/latest/commands/pfcount/)

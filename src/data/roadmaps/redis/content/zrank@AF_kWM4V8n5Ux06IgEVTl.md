@@ -4,4 +4,4 @@ ZRANK returns the rank of member in the sorted set stored at key, with the score
 
 Learn more from the following resources:
 
-- [@official@ZRANK Documentation](https://redis.io/docs/latest/commands/zrank/)
+- [@official@ZRANK](https://redis.io/docs/latest/commands/zrank/)

@@ -4,4 +4,4 @@ The WATCH command marks the given keys to be watched for conditional execution o
 
 Learn more from the following resources:
 
-- [@official@WATCH Documentation](https://redis.io/docs/latest/commands/watch/)
+- [@official@WATCH](https://redis.io/docs/latest/commands/watch/)

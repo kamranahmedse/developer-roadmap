@@ -4,4 +4,4 @@ ZINCRBY increments the score of a member in a sorted set by the defined incremen
 
 Learn more from the following resources:
 
-- [@official@ZINCRBY Documentation](https://redis.io/docs/latest/commands/zincrby/)
+- [@official@ZINCRBY](https://redis.io/docs/latest/commands/zincrby/)

@@ -4,4 +4,4 @@ The ZADD command adds all of the specified members with the specified scores to 
 
 Learn more from the following resources:
 
-- [@official@ZADD Documentation](https://redis.io/docs/latest/commands/zadd/)
+- [@official@ZADD](https://redis.io/docs/latest/commands/zadd/)

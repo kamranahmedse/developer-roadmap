@@ -4,5 +4,5 @@ The `EVALSHA` command in Redis is used to execute a Lua script that has already 
 
 Learn more from the following resources:
 
-- [@official@EVALSHA Documentation](https://redis.io/docs/latest/commands/evalsha/)
+- [@official@EVALSHA](https://redis.io/docs/latest/commands/evalsha/)
 - [@article@Redis EVALSHA Command](https://www.tutorialspoint.com/redis/scripting_evalsha.htm)

@@ -4,4 +4,4 @@ The XLEN command used to get the length of a stream, returning the number of ent
 
 Learn more from the following resources:
 
-- [@official@XLEN Documentation](https://redis.io/docs/latest/commands/xlen/)
+- [@official@XLEN](https://redis.io/docs/latest/commands/xlen/)
