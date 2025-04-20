@@ -4,4 +4,4 @@ The SETBIT command sets or clearts the bit at the specified offset in the string
 
 Learn more from the following resources:
 
-- [@official@SETBIT command](https://redis.io/docs/latest/commands/setbit/)
+- [@official@SETBIT](https://redis.io/docs/latest/commands/setbit/)

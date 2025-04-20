@@ -4,4 +4,4 @@ The SREM command will remove the specified members from the set stored at the de
 
 Learn more from the following resources:
 
-- [@official@SREM Documentation](https://redis.io/docs/latest/commands/srem/)
+- [@official@SREM](https://redis.io/docs/latest/commands/srem/)

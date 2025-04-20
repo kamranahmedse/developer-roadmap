@@ -4,4 +4,4 @@ The UNSUBSCRIBE command unsubscribes the client for the given channels, or all c
 
 Learn more from the following resources:
 
-- [@official@UNSUBSCRIBE Documentation](https://redis.io/docs/latest/commands/unsubscribe/)
+- [@official@UNSUBSCRIBE](https://redis.io/docs/latest/commands/unsubscribe/)
