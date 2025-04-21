@@ -45,7 +45,7 @@ Here is a sample output of the game:
 ```plaintext
 Welcome to the Number Guessing Game!
 I'm thinking of a number between 1 and 100.
-You have 5 chances to guess the correct number.
+You have number of chances to guess the correct number depending on the difficulty level you choose.
 
 Please select the difficulty level:
 1. Easy (10 chances)
