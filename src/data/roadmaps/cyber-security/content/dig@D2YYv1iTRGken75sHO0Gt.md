@@ -5,4 +5,4 @@
 Learn more from the following resources:
 
 - [@video@How to look up DNS records with dig](https://www.youtube.com/watch?v=3AOKomsmeUY)
-- [@article@How to use Linux dig command](https://www.google.com/search?client=firefox-b-d&q=linux+dig+command)
+- [@article@dig command](https://www.geeksforgeeks.org/dig-command-in-linux-with-examples/)
