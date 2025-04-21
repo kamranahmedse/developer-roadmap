@@ -44,10 +44,10 @@ Here is a sample output of the game:
 
 ```plaintext
 Welcome to the Number Guessing Game!
-I'm thinking of a number between 1 and 100.
-You have number of chances to guess the correct number depending on the difficulty level you choose.
+I'm thinking of a secret number between 1 and 100. Get ready to test your guessing skills!
+You have a limited number of chances to guess the correct number, and this depends on the difficulty level you choose.
 
-Please select the difficulty level:
+Please select the difficulty level by entering the corresponding number:
 1. Easy (10 chances)
 2. Medium (5 chances)
 3. Hard (3 chances)
