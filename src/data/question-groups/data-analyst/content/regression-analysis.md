@@ -1,0 +1,3 @@
+A data analyst might apply linear regression to model the relationship between advertising spend and sales data over time. By identifying the line of best fit, analysts can forecast future sales and support data-driven decision-making about how much money to use in advertising. 
+
+More advanced scenarios may include techniques such as multivariate regression when multiple variables are influencing the outcome. 

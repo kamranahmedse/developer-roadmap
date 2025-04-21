@@ -1,0 +1,3 @@
+EDA is a critical initial step in any data project, often using visual methods to understand the data. 
+
+It helps data analysts identify patterns, spot anomalies, test assumptions, and understand the structure and distribution of data. The output of your EDA will act as the input for the selection of appropriate models and methods for deeper analysis, ultimately reducing the risk of inaccuracy in the final results. 

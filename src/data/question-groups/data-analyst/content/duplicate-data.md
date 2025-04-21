@@ -1,0 +1,3 @@
+Duplicate data can skew results and lead to incorrect conclusions, reason why data analysts try to avoid it as the plague.
+
+Typically, analysts detect duplicates using key fields (when available) or fuzzy matching (which allows for partial matches to be identified as exact ones), then handle them by either merging records, keeping the most recent entry, or removing the redundant rows, depending on the context and business rules. 

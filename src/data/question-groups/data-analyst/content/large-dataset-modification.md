@@ -1,0 +1,1 @@
+Modifying large datasets can lead to inconsistencies or data integrity issues. Best practices include performing updates in batch processes, using audit trails, applying automated validation scripts, and staging changes in test environments before deploying to production systems to ensure standards are met. 

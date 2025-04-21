@@ -1,0 +1,3 @@
+Excel is quite a versatile tool used by almost everyone in the data industry. While it might not be the best choice for all use cases, it's frequently used for tasks such as data entry, quick data cleansing, creating pivot tables, performing basic analysis, and building initial visualizations. 
+
+Given its ease of use and how powerful it is, it often serves as a useful platform for prototyping before scaling up to more complex tools like SQL or Python. 
