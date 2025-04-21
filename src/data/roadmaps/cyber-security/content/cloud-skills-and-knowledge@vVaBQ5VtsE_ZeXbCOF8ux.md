@@ -7,4 +7,4 @@ Security in the cloud is a vital skill, encompassing encryption, identity and ac
 Learn more from the following resources:
 
 - [@article@7 Cloud Computing skills to know](https://www.coursera.org/articles/cloud-computing-skills)
-- [@video@What cloud skills are essential?](https://www.youtube.com/watch?v=udKBDRcj178)
+- [@video@What Cloud Skills are Essential?](https://www.youtube.com/watch?v=udKBDRcj178)
