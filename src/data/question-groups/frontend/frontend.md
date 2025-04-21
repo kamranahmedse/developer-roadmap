@@ -12,6 +12,7 @@ relatedGuidesId: 'frontend'
 seo:
   title: 'Top 30 Popular Front End Developer Interview Questions'
   description: 'Nail your frontend developer interview with these 30 popularly asked questions and answers. Test your knowledge with our quiz cards!'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-developer-interview-questions-ezbj6.jpg'
   keywords:
     - 'frontend quiz'
     - 'frontend questions'

@@ -8,6 +8,7 @@ isNew: false
 seo:
   title: 'JavaScript Questions'
   description: 'Curated list of JavaScript questions to test, rate and improve your knowledge. Questions are based on real world experience and knowledge.'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/javascript-questions-x6n2w.jpg'
   keywords:
     - 'javascript quiz'
     - 'javascript questions'

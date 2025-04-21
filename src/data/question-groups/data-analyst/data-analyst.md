@@ -10,6 +10,7 @@ date: 2025-04-21
 seo:
   title: '50 Popular Data Analyst Interview Questions (+ Quiz!)'
   description: 'Get interview-ready with this essential list of data analyst interview questions, covering technical, analytical, and scenario-based Q&A.'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/data-analyst-interview-questions-ontjt.jpg'
   keywords:
     - 'data analyst quiz'
     - 'data analyst questions'

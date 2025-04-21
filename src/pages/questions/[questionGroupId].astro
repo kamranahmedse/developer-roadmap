@@ -19,6 +19,7 @@ export const prerender = true;
 export interface Props {
   questionGroup: QuestionGroupType;
 }
+
 export async function getStaticPaths() {
   const questionGroups = await getAllQuestionGroups();
 
@@ -39,6 +40,7 @@ const { frontmatter } = questionGroup;
   briefTitle={frontmatter.briefTitle}
   description={frontmatter.seo.description}
   keywords={frontmatter.seo.keywords}
+  ogImageUrl={frontmatter.seo.ogImageUrl}
   permalink={`/questions/${questionGroup.id}`}
 >
   {

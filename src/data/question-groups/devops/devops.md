@@ -10,6 +10,7 @@ date: 2024-08-20
 seo:
   title: 'Top 50 Popular DevOps Interview Questions (and Answers)'
   description: 'Get ready for your DevOps interview with 50 popular questions and answers that cover tools, pipelines, and key practices.'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/devops-interview-questions-x6n2w.jpg'
   keywords:
     - 'devops quiz'
     - 'devops questions'

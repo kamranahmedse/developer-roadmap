@@ -8,6 +8,7 @@ isNew: false
 seo:
   title: 'React Questions'
   description: 'Curated list of React questions to test, rate and improve your knowledge. Questions are based on real world experience and knowledge.'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/react-questions-x6n2w.jpg'
   keywords:
     - 'react quiz'
     - 'react questions'
