@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@MONITOR Documentation](https://redis.io/docs/latest/commands/monitor/)
-- [@official@SLOWLOG Documentation](https://redis.io/docs/latest/commands/slowlog/)
+- [@official@MONITOR](https://redis.io/docs/latest/commands/monitor/)
+- [@official@SLOWLOG](https://redis.io/docs/latest/commands/slowlog/)

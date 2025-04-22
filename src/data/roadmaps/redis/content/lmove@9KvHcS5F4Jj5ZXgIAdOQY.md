@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@LMOVE Documentation](https://redis.io/docs/latest/commands/lmove/)
+- [@official@LMOVE](https://redis.io/docs/latest/commands/lmove/)

@@ -1,0 +1,1 @@
+On one side, the first one is used when predicting a continuous outcome, such as revenue, and on the other side logistic regression is better for categorical or binary outcomes, such as churn (yes/no). This type of regression applies a sigmoid function to output probabilities, making it great for classification tasks. 

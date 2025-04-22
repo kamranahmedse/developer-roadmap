@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@HEXISTS Documentation](https://redis.io/docs/latest/commands/hexists/)
+- [@official@HEXISTS](https://redis.io/docs/latest/commands/hexists/)

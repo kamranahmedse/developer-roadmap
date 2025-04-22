@@ -4,4 +4,4 @@ The SADD command will add the specified members to the set which is stored and t
 
 Learn more from the following resources:
 
-- [@official@SADD Documentation](https://redis.io/docs/latest/commands/sadd/)
+- [@official@SADD](https://redis.io/docs/latest/commands/sadd/)

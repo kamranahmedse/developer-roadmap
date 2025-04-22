@@ -4,4 +4,5 @@ The RDB (Redis Database Backup) mechanism in Redis creates snapshots of the data
 
 Learn more from the following resources:
 
+- [@official@Backup Data](https://redis.io/docs/latest/operate/rc/databases/back-up-data/)
 - [@article@About RDB Snapshots](https://cloud.google.com/memorystore/docs/redis/about-rdb-snapshots)

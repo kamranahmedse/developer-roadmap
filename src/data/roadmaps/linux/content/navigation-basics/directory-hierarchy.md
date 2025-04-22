@@ -14,4 +14,5 @@ In Linux, understanding the directory hierarchy is crucial for efficient navigat
 
 Visit the following resources to learn more:
 
-- [Overview of File System Hierarchy Standard (FHS)](https://access.redhat.com/documentation/ru-ru/red_hat_enterprise_linux/4/html/reference_guide/s1-filesystem-fhs#s3-filesystem-usr).
+- [@article@Overview of File System Hierarchy Standard (FHS)](https://access.redhat.com/documentation/ru-ru/red_hat_enterprise_linux/4/html/reference_guide/s1-filesystem-fhs#s3-filesystem-usr).
+- [@video@The Linux File System explained in 1,233 seconds](https://youtu.be/A3G-3hp88mo?si=sTJTSzubdb0Vizjr)

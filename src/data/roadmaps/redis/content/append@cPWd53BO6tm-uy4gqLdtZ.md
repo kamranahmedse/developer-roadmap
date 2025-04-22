@@ -4,5 +4,5 @@ Redis APPEND command is used to add some value in a key. If the key already exis
 
 Learn more from the following resources:
 
-- [@official@APPEND Docs](https://redis.io/docs/latest/commands/append/)
+- [@official@APPEND](https://redis.io/docs/latest/commands/append/)
 - [@article@Redis - String Append Command](https://www.tutorialspoint.com/redis/strings_append.htm)

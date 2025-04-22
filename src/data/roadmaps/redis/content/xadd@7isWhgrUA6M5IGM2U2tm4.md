@@ -4,4 +4,4 @@ The XADD command used to append new entries to a stream data structure. It allow
 
 Learn more from the following resources:
 
-- [@official@XADD Documentation](https://redis.io/docs/latest/commands/xadd/)
+- [@official@XADD](https://redis.io/docs/latest/commands/xadd/)

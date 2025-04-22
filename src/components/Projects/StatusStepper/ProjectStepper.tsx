@@ -1,19 +1,19 @@
 import { Flag, Play, Send, Share, Square, StopCircle, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import { cn } from '../../../lib/classname.ts';
-import { useStickyStuck } from '../../../hooks/use-sticky-stuck.tsx';
-import { StepperAction } from './StepperAction.tsx';
-import { StepperStepSeparator } from './StepperStepSeparator.tsx';
-import { MilestoneStep } from './MilestoneStep.tsx';
-import { httpGet, httpPost } from '../../../lib/http.ts';
-import { StartProjectModal } from '../StartProjectModal.tsx';
-import { getRelativeTimeString } from '../../../lib/date.ts';
-import { getUser, isLoggedIn } from '../../../lib/jwt.ts';
-import { showLoginPopup } from '../../../lib/popup.ts';
-import { SubmitProjectModal } from '../SubmitProjectModal.tsx';
-import { useCopyText } from '../../../hooks/use-copy-text.ts';
-import { CheckIcon } from '../../ReactIcons/CheckIcon.tsx';
-import { pageProgressMessage } from '../../../stores/page.ts';
+import { cn } from '../../../lib/classname';
+import { useStickyStuck } from '../../../hooks/use-sticky-stuck';
+import { StepperAction } from './StepperAction';
+import { StepperStepSeparator } from './StepperStepSeparator';
+import { MilestoneStep } from './MilestoneStep';
+import { httpGet, httpPost } from '../../../lib/http';
+import { StartProjectModal } from '../StartProjectModal';
+import { getRelativeTimeString } from '../../../lib/date';
+import { getUser, isLoggedIn } from '../../../lib/jwt';
+import { showLoginPopup } from '../../../lib/popup';
+import { SubmitProjectModal } from '../SubmitProjectModal';
+import { useCopyText } from '../../../hooks/use-copy-text';
+import { CheckIcon } from '../../ReactIcons/CheckIcon';
+import { pageProgressMessage } from '../../../stores/page';
 
 type ProjectStatusResponse = {
   id?: string;

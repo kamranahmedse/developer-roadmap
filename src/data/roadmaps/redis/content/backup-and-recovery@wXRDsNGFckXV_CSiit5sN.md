@@ -4,5 +4,5 @@ Backing up and recovering Redis data is crucial for ensuring data persistence an
 
 Learn more from the following resources:
 
-- [@official@Backup and recovery](https://redis.io/redis-enterprise/technology/backup-disaster-recovery/)
+- [@official@Backup and Recovery](https://redis.io/redis-enterprise/technology/backup-disaster-recovery/)
 - [@video@Backup & Restore Redis Cluster with Stash](https://youtu.be/Py_Ivv-2dcQ?si=z8gAAmhlpUBce4jY)

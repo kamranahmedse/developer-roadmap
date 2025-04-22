@@ -4,4 +4,4 @@ The STRLEN command returns the length of a string value that is stored at the de
 
 Learn more from the following resources:
 
-- [@official@STRLEN Documentation](https://redis.io/docs/latest/commands/strlen/)
+- [@official@STRLEN](https://redis.io/docs/latest/commands/strlen/)

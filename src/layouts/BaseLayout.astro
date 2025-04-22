@@ -14,7 +14,6 @@ import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import { PageProgress } from '../components/PageProgress';
-import { PageSponsors } from '../components/PageSponsors/PageSponsors';
 import { PageVisit } from '../components/PageVisit/PageVisit';
 import { CourseAnnouncement } from '../components/SQLCourse/CourseAnnouncement';
 import { Toaster } from '../components/Toast';
@@ -224,11 +223,6 @@ const gaPageIdentifier = Astro.url.pathname
     <Toaster client:only='react' />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
-
-    <PageSponsors
-      gaPageIdentifier={briefTitle || gaPageIdentifier}
-      client:load
-    />
 
     <GoogleAdSlot />
     <slot name='after-footer' />
