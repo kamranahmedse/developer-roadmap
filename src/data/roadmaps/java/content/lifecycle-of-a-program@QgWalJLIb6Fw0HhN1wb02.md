@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Life Cycle of a Java Program](https://www.startertutorials.com/corejava/life-cycle-java-program.html)
 - [@article@How the JVM Executes Java Code](https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html)
-- [@article@Stack Тrace by Hyperskill (JetBrains Academy)](https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html)
+- [@article@Stack Тrace by Hyperskill (JetBrains Academy)](https://hyperskill.org/learn/step/17477)
