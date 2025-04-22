@@ -4,6 +4,6 @@
 
 Learn more from the following resources:
 
-- [@official@NMAP Website](https://nmap.org/)
+- [@official@NMAP](https://nmap.org/)
 - [@article@NMAP Cheat Sheet](https://www.tutorialspoint.com/nmap-cheat-sheet)
-- [@video@Nmap Tutorial to find Network Vulnerabilities]
+- [@video@Nmap Tutorial to find Network Vulnerabilities](https://www.youtube.com/watch?v=4t4kBkMsDbQ)
