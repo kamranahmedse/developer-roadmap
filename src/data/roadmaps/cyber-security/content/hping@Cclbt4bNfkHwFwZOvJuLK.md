@@ -4,5 +4,5 @@ hping is a versatile and powerful command-line based packet crafting tool that a
 
 Learn more from the following resources:
 
-- [@official@hping source code](https://salsa.debian.org/debian/hping3)
+- [@official@hping](https://salsa.debian.org/debian/hping3)
 - [@article@What is hping?](https://www.okta.com/uk/identity-101/hping/)
