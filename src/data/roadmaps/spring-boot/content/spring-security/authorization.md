@@ -5,6 +5,7 @@ Spring Security supports a variety of authentication mechanisms, such as usernam
 Visit the following resources to learn more:
 
 - [@official@Spring Authorization](https://docs.spring.io/spring-security/reference/servlet/authorization/index.html)
+- [@official@Authorization: Roles and Authorities](https://hyperskill.org/learn/step/31611)
 - [@article@Advanced authorization in Spring](https://docs.spring.io/spring-security/site/docs/5.2.11.RELEASE/reference/html/authorization.html)
 - [@article@Spring Security: Authentication and Authorization In-Depth](https://www.marcobehler.com/guides/spring-security)
 - [@feed@Explore top posts about Authorization](https://app.daily.dev/tags/authorization?ref=roadmapsh)
