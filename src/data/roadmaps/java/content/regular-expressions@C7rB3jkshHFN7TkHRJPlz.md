@@ -5,4 +5,4 @@ Regular expressions, often shortened to "regex," are sequences of characters tha
 Visit the following resources to learn more:
 
 - [@article@Java Regular Expressions Tutorial](https://jenkov.com/tutorials/java-regex/index.html)
-- [@article@Regex sets, ranges, alternations by Hyperskill (JetBrains Academy)](https://jenkov.com/tutorials/java-regex/index.html)
+- [@article@Regex Sets, Ranges, Alternations by Hyperskill (JetBrains Academy)](https://jenkov.com/tutorials/java-regex/index.html)
