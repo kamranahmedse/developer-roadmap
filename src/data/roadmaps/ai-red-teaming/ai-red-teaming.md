@@ -7,6 +7,7 @@ briefDescription: 'Learn to become a red teaming expert in AI'
 title: 'AI Red Teaming'
 description: 'Learn to become a red teaming expert in AI'
 isNew: true
+isHidden: true
 hasTopics: true
 renderer: editor
 dimensions:

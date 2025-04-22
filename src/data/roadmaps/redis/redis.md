@@ -8,7 +8,7 @@ briefDescription: 'Step by step guide to learn Redis in 2025'
 title: 'Redis Roadmap'
 description: 'Step by step guide to learn Redis in 2025'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 3550
