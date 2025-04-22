@@ -241,25 +241,25 @@ importers:
   packages/editor:
     dependencies:
       '@xyflow/react':
-        specifier: ^12.4.2
+        specifier: ^12.6.0
         version: 12.6.0(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
       lucide-react:
-        specifier: ^0.474.0
-        version: 0.474.0(react@19.1.0)
+        specifier: ^0.503.0
+        version: 0.503.0(react@19.1.0)
       nanoid:
-        specifier: ^5.0.9
+        specifier: ^5.1.5
         version: 5.1.5
       react:
-        specifier: ^19.0.0
+        specifier: ^19.1.0
         version: 19.1.0
       remark-parse:
         specifier: ^11.0.0
         version: 11.0.0
       tailwind-merge:
-        specifier: ^3.0.1
+        specifier: ^3.2.0
         version: 3.2.0
       unified:
         specifier: ^11.0.5
@@ -269,25 +269,25 @@ importers:
         version: 5.0.3(@types/react@19.1.2)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
     devDependencies:
       '@tailwindcss/postcss':
-        specifier: ^4.0.3
+        specifier: ^4.1.4
         version: 4.1.4
       '@types/react':
-        specifier: ^19.0.8
+        specifier: ^19.1.2
         version: 19.1.2
       postcss:
-        specifier: ^8.5.1
+        specifier: ^8.5.3
         version: 8.5.3
       postcss-replace:
         specifier: ^2.0.1
         version: 2.0.1(postcss@8.5.3)
       tailwindcss:
-        specifier: ^4.0.3
+        specifier: ^4.1.4
         version: 4.1.4
       tsup:
-        specifier: ^8.3.6
+        specifier: ^8.4.0
         version: 8.4.0(jiti@2.4.2)(postcss@8.5.3)(tsx@4.19.3)(typescript@5.8.3)
       typescript:
-        specifier: ^5.7.3
+        specifier: ^5.8.3
         version: 5.8.3
 
 packages:
@@ -2440,11 +2440,6 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
-
-  lucide-react@0.474.0:
-    resolution: {integrity: sha512-CmghgHkh0OJNmxGKWc0qfPJCYHASPMVSyGY8fj3xgk4v84ItqDg64JNKFZn5hC6E0vHi6gxnbCgwhyVB09wQtA==}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   lucide-react@0.503.0:
     resolution: {integrity: sha512-HGGkdlPWQ0vTF8jJ5TdIqhQXZi6uh3LnNgfZ8MHiuxFfX3RZeA79r2MW2tHAZKlAVfoNE8esm3p+O6VkIvpj6w==}
@@ -5888,10 +5883,6 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
-
-  lucide-react@0.474.0(react@19.1.0):
-    dependencies:
-      react: 19.1.0
 
   lucide-react@0.503.0(react@19.1.0):
     dependencies:
