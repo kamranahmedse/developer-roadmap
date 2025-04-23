@@ -1285,12 +1285,17 @@
     "description": "In the context of cybersecurity, a bus refers to a communication system that transfers data between components inside a computer or between computers. It's a critical part of computer architecture that can be vulnerable to various security threats. Attackers may attempt to exploit bus systems to intercept sensitive data, inject malicious code, or perform side-channel attacks. These vulnerabilities can exist at different levels, from the system bus connecting major computer components to expansion buses for peripheral devices. Securing bus communications involves implementing encryption, access controls, and monitoring for unusual activity. As buses play a crucial role in data transfer, protecting them is essential for maintaining the overall security and integrity of computer systems and networks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a bus?",
+        "title": "Bus in Computing",
+        "url": "https://en.wikipedia.org/wiki/Bus_(computing)",
+        "type": "article"
+      },
+      {
+        "title": "What is a Bus?",
         "url": "https://www.lenovo.com/gb/en/glossary/bus/?srsltid=AfmBOoocoXVvqdupLu13XAm0FZMOHjRtjnnCCFxa59tEa-bQwhiVhac2",
         "type": "article"
       },
       {
-        "title": "Computer buses",
+        "title": "Computer Buses",
         "url": "https://www.youtube.com/watch?v=aBCaCrC3z0k",
         "type": "video"
       }
@@ -1933,7 +1938,12 @@
         "type": "article"
       },
       {
-        "title": "Cyber Security Threat Hunting explained",
+        "title": "What is Threat Hunting? Threat Hunting Types and Techniques",
+        "url": "https://www.fortinet.com/resources/cyberglossary/threat-hunting",
+        "type": "article"
+      },
+      {
+        "title": "Cyber Security Threat Hunting Explained",
         "url": "https://www.youtube.com/watch?v=VNp35Uw_bSM",
         "type": "video"
       }
@@ -1944,7 +1954,7 @@
     "description": "Vulnerability management is the process of identifying, evaluating, prioritizing, and mitigating security vulnerabilities in an organization's systems, applications, and networks. It is a continuous, proactive approach to safeguarding digital assets by addressing potential weaknesses that could be exploited by attackers. The process begins with **vulnerability scanning**, where tools are used to detect known vulnerabilities by analyzing software, configurations, and devices.\n\nOnce vulnerabilities are identified, they are **assessed and prioritized** based on factors such as severity, potential impact, and exploitability. Organizations typically use frameworks like CVSS (Common Vulnerability Scoring System) to assign risk scores to vulnerabilities, helping them focus on the most critical ones first.\n\nNext, **remediation** is carried out through patching, configuration changes, or other fixes. In some cases, mitigation may involve applying temporary workarounds until a full patch is available. Finally, continuous **monitoring and reporting** ensure that new vulnerabilities are swiftly identified and addressed, maintaining the organization's security posture. Vulnerability management is key to reducing the risk of exploitation and minimizing the attack surface in today's complex IT environments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is vulnerability management? - Rapid7",
+        "title": "What is Vulnerability Management? - Rapid7",
         "url": "https://www.rapid7.com/fundamentals/vulnerability-management-and-scanning/",
         "type": "article"
       },
@@ -2138,11 +2148,16 @@
   },
   "FJsEBOFexbDyAj86XWBCc": {
     "title": "Basics of IDS and IPS",
-    "description": "When it comes to cybersecurity, detecting and preventing intrusions is crucial for protecting valuable information systems and networks. In this section, we'll discuss the basics of Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) to help you better understand their function and importance in your overall cybersecurity strategy.\n\nWhat is Intrusion Detection System (IDS)?\n-----------------------------------------\n\nAn Intrusion Detection System (IDS) is a critical security tool designed to monitor and analyze network traffic or host activities for any signs of malicious activity, policy violations, or unauthorized access attempts. Once a threat or anomaly is identified, the IDS raises an alert to the security administrator for further investigation and possible actions.\n\nWhat is Intrusion Prevention System (IPS)?\n------------------------------------------\n\nAn Intrusion Prevention System (IPS) is an advanced security solution closely related to IDS. While an IDS mainly focuses on detecting and alerting about intrusions, an IPS takes it a step further and actively works to prevent the attacks. It monitors, analyzes, and takes pre-configured automatic actions based on suspicious activities, such as blocking malicious traffic, reseting connections, or dropping malicious packets.\n\nLearn more from the following resources:",
+    "description": "When it comes to cybersecurity, detecting and preventing intrusions is crucial for protecting valuable information systems and networks. In this section, we'll discuss the basics of Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) to help you better understand their function and importance in your overall cybersecurity strategy.\n\nWhat is Intrusion Detection System (IDS)?\n-----------------------------------------\n\nAn Intrusion Detection System (IDS) is a critical security tool designed to monitor and analyze network traffic or host activities for any signs of malicious activity, policy violations, or unauthorized access attempts. Once a threat or anomaly is identified, the IDS raises an alert to the security administrator for further investigation and possible actions.\n\nWhat is Intrusion Prevention System (IPS)?\n------------------------------------------\n\nAn Intrusion Prevention System (IPS) is an advanced security solution closely related to IDS. While an IDS mainly focuses on detecting and alerting about intrusions, an IPS takes it a step further and actively works to prevent the attacks. It monitors, analyzes, and takes pre-configured automatic actions based on suspicious activities, such as blocking malicious traffic, resetting connections, or dropping malicious packets.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is an Intrusion Prevention System?",
         "url": "https://www.paloaltonetworks.com/cyberpedia/what-is-an-intrusion-prevention-system-ips",
+        "type": "article"
+      },
+      {
+        "title": "What is Intrusion Detection Systems (IDS)",
+        "url": "https://www.fortinet.com/resources/cyberglossary/intrusion-detection-system",
         "type": "article"
       },
       {
@@ -2209,18 +2224,23 @@
     "description": "In the context of cybersecurity, Blue Team, Red Team, and Purple Team are terms used to describe different roles and methodologies employed to ensure the security of an organization or system. Let's explore each one in detail. In cybersecurity, Blue Team and Red Team refer to opposing groups that work together to improve an organization's security posture. The Blue Team represents defensive security personnel who protect systems and networks from attacks, while the Red Team simulates real-world adversaries to test the Blue Team's defenses. Purple Team bridges the gap between the two, facilitating collaboration and knowledge sharing to enhance overall security effectiveness. This approach combines the defensive strategies of the Blue Team with the offensive tactics of the Red Team, creating a more comprehensive and dynamic security framework that continuously evolves to address emerging threats and vulnerabilities.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a blue team?",
+        "title": "What is a Blue Team?",
         "url": "https://www.checkpoint.com/cyber-hub/cyber-security/what-is-a-blue-team/",
         "type": "article"
       },
       {
-        "title": "What is red teaming?",
+        "title": "What is Red Teaming?",
         "url": "https://www.ibm.com/think/topics/red-teaming",
         "type": "article"
       },
       {
-        "title": "Purple teaming explained",
+        "title": "Purple Teaming Explained",
         "url": "https://www.crowdstrike.com/cybersecurity-101/purple-teaming/",
+        "type": "article"
+      },
+      {
+        "title": "Red Team VS Blue Team: What's the Difference?",
+        "url": "https://www.crowdstrike.com/en-us/cybersecurity-101/advisory-services/red-team-vs-blue-team/",
         "type": "article"
       }
     ]
@@ -2269,6 +2289,11 @@
       {
         "title": "OSINT Framework",
         "url": "https://osintframework.com/",
+        "type": "article"
+      },
+      {
+        "title": "Threat Intelligence",
+        "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/",
         "type": "article"
       }
     ]
@@ -3988,17 +4013,17 @@
     "description": "What is Brute Force?\n--------------------\n\nBrute Force is a method of password cracking where an attacker systematically tries all possible combinations of characters until the correct password is found. This method is highly resource-intensive, as it involves attempting numerous password variations in a relatively short period of time.\n\nWhat is Password Spray?\n-----------------------\n\nPassword Spray is a more targeted and stealthy method of password cracking where an attacker tries a small number of common passwords across many different accounts. Instead of bombarding a single account with numerous password attempts (as in brute force), password spraying involves using one or a few passwords against multiple accounts.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Brute force vs. Password Spray attack",
+        "title": "Brute-force vs. Password Spray Attack",
         "url": "https://www.inspark.nl/brute-force-vs-password-spray-attack-in-azure-sentinel/",
         "type": "article"
       },
       {
-        "title": "What is password spraying?",
+        "title": "What is Password Spraying?",
         "url": "https://www.techtarget.com/whatis/definition/password-spraying",
         "type": "article"
       },
       {
-        "title": "What is a brute force attack?",
+        "title": "What is a Brute-force Attack?",
         "url": "https://www.fortinet.com/resources/cyberglossary/brute-force-attack",
         "type": "article"
       }
@@ -4129,6 +4154,11 @@
         "title": "Buffer Overflow Attack",
         "url": "https://www.imperva.com/learn/application-security/buffer-overflow/",
         "type": "article"
+      },
+      {
+        "title": "Buffer Overflows Made Easy",
+        "url": "https://www.youtube.com/watch?v=qSnPayW6F7U",
+        "type": "video"
       }
     ]
   },
@@ -4631,7 +4661,7 @@
     "description": "Box is a popular cloud storage service that provides individuals and businesses with a platform to securely store, share, and access files and documents from any device. Box is known for its emphasis on security and collaboration features, making it an ideal choice for businesses who want a secure way to share and collaborate on files with their teams.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Box Website",
+        "title": "Box",
         "url": "https://www.box.com/en-gb/home",
         "type": "article"
       },
@@ -4777,6 +4807,11 @@
         "title": "Start learning bash",
         "url": "https://linuxhandbook.com/bash/",
         "type": "course"
+      },
+      {
+        "title": "Bash",
+        "url": "https://www.gnu.org/software/bash/",
+        "type": "article"
       },
       {
         "title": "Bash in 100 Seconds",
