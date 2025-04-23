@@ -4,31 +4,6 @@ A `Switch` is a core component in React Native used to implement a "toggle" or "
 
 `Switch` component has a boolean `value` prop (true for on, false for off) and an `onValueChange` event handler, which is triggered whenever the user toggles the switch.
 
-Here's an example of how to use `Switch` in a React Native application:
+Visit the following resources to learn more:
 
-```jsx
-import React, {useState} from 'react';
-import {View, Switch, Text} from 'react-native';
-
-const App = () => {
-  const [isEnabled, setIsEnabled] = useState(false);
-
-  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
-
-  return (
-    <View>
-      <Text>Enable Feature:</Text>
-      <Switch
-     trackColor={{ false: "#767577", true: "#81b0ff" }}
-     thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
-      onValueChange={toggleSwitch}
-      value={isEnabled}
-      />
-    </View>
-  );
-};
-
-export default App;
-```
-
-In this example, `Switch` component's `value` prop is set to the state hook `isEnabled`. The `onValueChange` event handler triggers `toggleSwitch` function, which updates the state of `isEnabled`. The colors for the track and thumb of the switch can be customized using `trackColor` and `thumbColor` props.
+- [@official@Switch](https://reactnative.dev/docs/switch)

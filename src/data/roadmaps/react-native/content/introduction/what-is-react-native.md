@@ -4,4 +4,6 @@ React Native is a popular open-source framework developed by Facebook for buildi
 
 With React Native, you write components with JSX, a syntax that combines JavaScript and XML. These components can map to native UI elements like views, text, images, and more.
 
-For more in-depth information about React Native, I recommend visiting the [official documentation](https://reactnative.dev/docs/getting-started).
+Visit the following resources to learn more:
+
+- [@official@Getting Started with React Native](https://reactnative.dev/docs/getting-started))

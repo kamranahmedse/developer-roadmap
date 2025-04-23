@@ -4,6 +4,6 @@ Use the built-in profiler to get detailed information about work done in the Jav
 
 For iOS, Instruments is an invaluable tool, and on Android you should learn to use `systrace`.
 
-Visit the following for more details:
+Visit the following resources to learn more:
 
-- [@article@Profiling React Native](https://reactnative.dev/docs/profiling)
+- [@official@Profiling React Native](https://reactnative.dev/docs/profiling)

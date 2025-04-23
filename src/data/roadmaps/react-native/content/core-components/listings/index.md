@@ -1,82 +1,9 @@
 # Listings
 
-When working with listings in React Native, the commonly used components include:
+When working with listings in React Native, commonly used components include **FlatList**, **SectionList**, and **VirtualizedList**. **FlatList** is a high-performance, scrollable list component that efficiently renders a large number of items. It is ideal for displaying simple lists of data. **SectionList** is similar but is used for displaying data in separate sections with headers, making it suitable for grouped data presentations.
 
-- **FlatList** - It is a high-performance, scrollable list component that renders a large number of items efficiently.
-   
-   Example:
-   ```jsx
-   import { FlatList, Text } from 'react-native';
+**VirtualizedList** is a lower-level component that provides more fine-grained control over list rendering performance, making it useful for complex lists or when custom behavior is needed. These components are essential for managing dynamic data and displaying large lists effectively in React Native applications.
 
-   const data = [
-     { id: 1, text: 'Item 1' },
-     { id: 2, text: 'Item 2' },
-     { id: 3, text: 'Item 3' },
-   ];
+Visit the following resources to learn more:
 
-   const renderItem = ({ item }) => <Text>{item.text}</Text>;
-
-   const MyFlatList = () => (
-     <FlatList
-       data={data}
-       renderItem={renderItem}
-       keyExtractor={item => item.id.toString()}
-     />
-   );
-   ```
-
-- **SectionList** - Similar to FlatList, but it is used when you want to display data in separate sections with section headers.
-
-   Example:
-   ```jsx
-   import { SectionList, Text } from 'react-native';
-
-   const sections = [
-     { title: 'Section 1', data: ['Item 1', 'Item 2', 'Item 3'] },
-     { title: 'Section 2', data: ['Item 4', 'Item 5', 'Item 6'] },
-   ];
-
-   const Item = ({ text }) => <Text>{text}</Text>;
-   const SectionHeader = ({ title }) => <Text>{title}</Text>;
-
-   const MySectionList = () => (
-     <SectionList
-       sections={sections}
-       renderItem={({ item }) => <Item text={item} />}
-       renderSectionHeader={({ section: { title } }) => (
-         <SectionHeader title={title} />
-       )}
-       keyExtractor={(item, index) => item + index}
-     />
-   );
-   ```
-
-- **VirtualizedList** - A lower-level component for rendering large lists and for more fine-grained control over list rendering performance.
-
-   Example:
-   ```jsx
-   import { VirtualizedList, Text } from 'react-native';
-
-   const data = [
-     { id: 1, text: 'Item 1' },
-     { id: 2, text: 'Item 2' },
-     { id: 3, text: 'Item 3' },
-   ];
-
-   const getItemCount = data => data.length;
-   const getItem = (data, index) => data[index];
-
-   const renderItem = ({ item }) => <Text>{item.text}</Text>;
-
-   const MyVirtualizedList = () => (
-     <VirtualizedList
-       data={data}
-       renderItem={renderItem}
-       keyExtractor={item => item.id.toString()}
-       getItemCount={getItemCount}
-       getItem={getItem}
-     />
-   );
-   ```
-
-These components are essential when dealing with dynamic data and displaying large lists in React Native applications.
+- [@official@Using List Views](https://reactnative.dev/docs/using-a-listview)
