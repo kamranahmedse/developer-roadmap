@@ -1,0 +1,322 @@
+{
+  "R9DQNc0AyAQ2HLpP4HOk6": {
+    "title": "AI Security Fundamentals",
+    "description": "",
+    "links": []
+  },
+  "fNTb9y3zs1HPYclAmu_Wv": {
+    "title": "Why Red Team AI Systems?",
+    "description": "",
+    "links": []
+  },
+  "HFJIYcI16OMyM77fAw9af": {
+    "title": "Introduction",
+    "description": "",
+    "links": []
+  },
+  "1gyuEV519LjN-KpROoVwv": {
+    "title": "Ethical Considerations",
+    "description": "",
+    "links": []
+  },
+  "Irkc9DgBfqSn72WaJqXEt": {
+    "title": "Role of Red Teams",
+    "description": "",
+    "links": []
+  },
+  "NvOJIv36Utpm7_kOZyr79": {
+    "title": "Supervised Learning",
+    "description": "",
+    "links": []
+  },
+  "ZC0yKsu-CJC-LZKKo2pLD": {
+    "title": "Unsupervised Learning",
+    "description": "",
+    "links": []
+  },
+  "Xqzc4mOKsVzwaUxLGjHya": {
+    "title": "Reinforcement Learning",
+    "description": "",
+    "links": []
+  },
+  "RuKzVhd1nZphCrlW1wZGL": {
+    "title": "Neural Networks",
+    "description": "",
+    "links": []
+  },
+  "3XJ-g0KvHP75U18mxCqgw": {
+    "title": "Generative Models",
+    "description": "",
+    "links": []
+  },
+  "8K-wCn2cLc7Vs_V4sC3sE": {
+    "title": "Large Language Models",
+    "description": "",
+    "links": []
+  },
+  "gx4KaFqKgJX9n9_ZGMqlZ": {
+    "title": "Prompt Engineering",
+    "description": "",
+    "links": []
+  },
+  "WZkIHZkV2qDYbYF9KBBRi": {
+    "title": "Confidentiality, Integrity, Availability",
+    "description": "",
+    "links": []
+  },
+  "RDOaTBWP3aIJPUp_kcafm": {
+    "title": "Threat Modeling",
+    "description": "",
+    "links": []
+  },
+  "MupRvk_8Io2Hn7yEvU663": {
+    "title": "Risk Management",
+    "description": "",
+    "links": []
+  },
+  "887lc3tWCRH-sOHSxWgWJ": {
+    "title": "Vulnerability Assessment",
+    "description": "",
+    "links": []
+  },
+  "Ds8pqn4y9Npo7z6ubunvc": {
+    "title": "Jailbreak Techniques",
+    "description": "",
+    "links": []
+  },
+  "j7uLLpt8MkZ1rqM7UBPW4": {
+    "title": "Safety Filter Bypasses",
+    "description": "",
+    "links": []
+  },
+  "XOrAPDRhBvde9R-znEipH": {
+    "title": "Prompt Injection",
+    "description": "",
+    "links": []
+  },
+  "1Xr7mxVekeAHzTL7G4eAZ": {
+    "title": "Prompt Hacking",
+    "description": "",
+    "links": []
+  },
+  "5zHow4KZVpfhch5Aabeft": {
+    "title": "Direct",
+    "description": "",
+    "links": []
+  },
+  "3_gJRtJSdm2iAfkwmcv0e": {
+    "title": "Indirect",
+    "description": "",
+    "links": []
+  },
+  "G1u_Kq4NeUsGX2qnUTuJU": {
+    "title": "Countermeasures",
+    "description": "",
+    "links": []
+  },
+  "vhBu5x8INTtqvx6vcYAhE": {
+    "title": "Code Injection",
+    "description": "",
+    "links": []
+  },
+  "uBXrri2bXVsNiM8fIHHOv": {
+    "title": "Model Vulnerabilities",
+    "description": "",
+    "links": []
+  },
+  "QFzLx5nc4rCCD8WVc20mo": {
+    "title": "Model Weight Stealing",
+    "description": "",
+    "links": []
+  },
+  "DQeOavZCoXpF3k_qRDABs": {
+    "title": "Unauthorized Access",
+    "description": "",
+    "links": []
+  },
+  "nD0_64ELEeJSN-0aZiR7i": {
+    "title": "Data Poisoning",
+    "description": "",
+    "links": []
+  },
+  "xjlttOti-_laPRn8a2fVy": {
+    "title": "Adversarial Examples",
+    "description": "",
+    "links": []
+  },
+  "iE5PcswBHnu_EBFIacib0": {
+    "title": "Model Inversion",
+    "description": "",
+    "links": []
+  },
+  "2Y0ZO-etpv3XIvunDLu-W": {
+    "title": "Adversarial Training",
+    "description": "",
+    "links": []
+  },
+  "6gEHMhh6BGJI-ZYN27YPW": {
+    "title": "Robust Model Design",
+    "description": "",
+    "links": []
+  },
+  "7Km0mFpHguHYPs5UhHTsM": {
+    "title": "Continuous Monitoring",
+    "description": "",
+    "links": []
+  },
+  "aKzai0A8J55-OBXTnQih1": {
+    "title": "Insecure Deserialization",
+    "description": "",
+    "links": []
+  },
+  "kgDsDlBk8W2aM6LyWpFY8": {
+    "title": "Remote Code Execution",
+    "description": "",
+    "links": []
+  },
+  "nhUKKWyBH80nyKfGT8ErC": {
+    "title": "Infrastructure Security",
+    "description": "",
+    "links": []
+  },
+  "Tszl26iNBnQBdBEWOueDA": {
+    "title": "API Protection",
+    "description": "",
+    "links": []
+  },
+  "J7gjlt2MBx7lOkOnfGvPF": {
+    "title": "Authentication",
+    "description": "",
+    "links": []
+  },
+  "JQ3bR8odXJfd-1RCEf3-Q": {
+    "title": "Authentication",
+    "description": "",
+    "links": []
+  },
+  "0bApnJTt-Z2IUf0X3OCYf": {
+    "title": "Black Box Testing",
+    "description": "",
+    "links": []
+  },
+  "Mrk_js5UVn4dRDw-Yco3Y": {
+    "title": "White Box Testing",
+    "description": "",
+    "links": []
+  },
+  "ZVNAMCP68XKRXVxF2-hBc": {
+    "title": "Grey Box Testing",
+    "description": "",
+    "links": []
+  },
+  "LVdYN9hyCyNPYn2Lz1y9b": {
+    "title": "Automated vs Manual",
+    "description": "",
+    "links": []
+  },
+  "65Lo60JQS5YlvvQ6KevXt": {
+    "title": "Continuous Testing",
+    "description": "",
+    "links": []
+  },
+  "c8n8FcYKDOgPLQvV9xF5J": {
+    "title": "Testing Platforms",
+    "description": "",
+    "links": []
+  },
+  "59lkLcoqV4gq7f8Zm0X2p": {
+    "title": "Monitoring Solutions",
+    "description": "",
+    "links": []
+  },
+  "et1Xrr8ez-fmB0mAq8W_a": {
+    "title": "Benchmark Datasets",
+    "description": "",
+    "links": []
+  },
+  "C1zO2xC0AqyV53p2YEPWg": {
+    "title": "Custom Testing Scripts",
+    "description": "",
+    "links": []
+  },
+  "BLnfNlA0C4yzy1dvifjwx": {
+    "title": "Reporting Tools",
+    "description": "",
+    "links": []
+  },
+  "s1xKK8HL5-QGZpcutiuvj": {
+    "title": "Specialized Courses",
+    "description": "",
+    "links": []
+  },
+  "HHjsFR6wRDqUd66PMDE_7": {
+    "title": "Industry Credentials",
+    "description": "",
+    "links": []
+  },
+  "MmwwRK4I9aRH_ha7duPqf": {
+    "title": "Lab Environments",
+    "description": "",
+    "links": []
+  },
+  "2Imb64Px3ZQcBpSQjdc_G": {
+    "title": "CTF Challenges",
+    "description": "",
+    "links": []
+  },
+  "DpYsL0du37n40toH33fIr": {
+    "title": "Red Team Simulations",
+    "description": "",
+    "links": []
+  },
+  "LuKnmd9nSz9yLbTU_5Yp2": {
+    "title": "Conferences",
+    "description": "",
+    "links": []
+  },
+  "ZlR03pM-sqVFZNhD1gMSJ": {
+    "title": "Research Groups",
+    "description": "",
+    "links": []
+  },
+  "Smncq-n1OlnLAY27AFQOO": {
+    "title": "Forums",
+    "description": "",
+    "links": []
+  },
+  "xJYTRbPxMn0Xs5ea0Ygn6": {
+    "title": "LLM Security Testing",
+    "description": "",
+    "links": []
+  },
+  "FVsKivsJrIb82B0lpPmgw": {
+    "title": "Agentic AI Security",
+    "description": "",
+    "links": []
+  },
+  "KAcCZ3zcv25R6HwzAsfUG": {
+    "title": "Responsible Disclosure",
+    "description": "",
+    "links": []
+  },
+  "-G8v_CNa8wO_g-46_RFQo": {
+    "title": "Emerging Threats",
+    "description": "",
+    "links": []
+  },
+  "soC-kcem1ISbnCQMa6BIB": {
+    "title": "Advanced Techniques",
+    "description": "",
+    "links": []
+  },
+  "VmaIHVsCpq2um_0cA33V3": {
+    "title": "Research Opportunities",
+    "description": "",
+    "links": []
+  },
+  "WePO66_4-gNcSdE00WKmw": {
+    "title": "Industry Standards",
+    "description": "",
+    "links": []
+  }
+}
