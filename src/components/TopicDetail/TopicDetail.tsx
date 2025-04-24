@@ -22,7 +22,16 @@ import type {
   RoadmapContentDocument,
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
-import { Ban, Coins, FileText, HeartHandshake, Star, X } from 'lucide-react';
+import {
+  Ban,
+  BookIcon,
+  Coins,
+  FileText,
+  HeartHandshake,
+  SparklesIcon,
+  Star,
+  X,
+} from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
@@ -33,6 +42,13 @@ import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
 import { ResourceListSeparator } from './ResourceListSeparator.tsx';
 import { PaidResourceDisclaimer } from './PaidResourceDisclaimer.tsx';
+import {
+  TopicDetailsTabs,
+  type AllowedTopicDetailsTabs,
+} from './TopicDetailsTabs.tsx';
+import { TopicDetailAI } from './TopicDetailAI.tsx';
+import { cn } from '../../lib/classname.ts';
+import type { AIChatHistoryType } from '../GenerateCourse/AICourseLessonChat.tsx';
 
 type TopicDetailProps = {
   resourceId?: string;
@@ -52,6 +68,14 @@ type PaidResourceType = {
 };
 
 const paidResourcesCache: Record<string, PaidResourceType[]> = {};
+
+const defaultChatHistory: AIChatHistoryType[] = [
+  {
+    role: 'assistant',
+    content: 'Hey, I am your AI instructor. How can I help you today? 🤖',
+    isDefault: true,
+  },
+];
 
 async function fetchRoadmapPaidResources(roadmapId: string) {
   if (paidResourcesCache[roadmapId]) {
@@ -93,6 +117,11 @@ export function TopicDetail(props: TopicDetailProps) {
   const [topicTitle, setTopicTitle] = useState('');
   const [topicHtmlTitle, setTopicHtmlTitle] = useState('');
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
+  const [activeTab, setActiveTab] =
+    useState<AllowedTopicDetailsTabs>('content');
+  const [aiChatHistory, setAiChatHistory] =
+    useState<AIChatHistoryType[]>(defaultChatHistory);
+
   const toast = useToast();
 
   const [showPaidResourceDisclaimer, setShowPaidResourceDisclaimer] =
@@ -108,14 +137,15 @@ export function TopicDetail(props: TopicDetailProps) {
   const [resourceType, setResourceType] = useState<ResourceType>('roadmap');
   const [paidResources, setPaidResources] = useState<PaidResourceType[]>([]);
 
-  // Close the topic detail when user clicks outside the topic detail
-  useOutsideClick(topicRef, () => {
+  const handleClose = () => {
     setIsActive(false);
-  });
+    setAiChatHistory(defaultChatHistory);
+    setActiveTab('content');
+  };
 
-  useKeydown('Escape', () => {
-    setIsActive(false);
-  });
+  // Close the topic detail when user clicks outside the topic detail
+  useOutsideClick(topicRef, handleClose);
+  useKeydown('Escape', handleClose);
 
   useEffect(() => {
     if (resourceType !== 'roadmap' || !defaultResourceId) {
@@ -344,7 +374,7 @@ export function TopicDetail(props: TopicDetailProps) {
       <div
         ref={topicRef}
         tabIndex={0}
-        className="fixed right-0 top-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
+        className="fixed top-0 right-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
         {isLoading && (
           <div className="flex h-full w-full items-center justify-center">
@@ -359,9 +389,12 @@ export function TopicDetail(props: TopicDetailProps) {
 
         {!isContributing && !isLoading && !error && (
           <>
-            <div className="flex-1">
-              {/* Actions for the topic */}
-              <div className="mb-2">
+            <div
+              className={cn('flex-1', {
+                'flex flex-col': activeTab === 'ai',
+              })}
+            >
+              <div className="mb-6">
                 {!isEmbed && (
                   <TopicProgressButton
                     topicId={
@@ -371,200 +404,214 @@ export function TopicDetail(props: TopicDetailProps) {
                     }
                     resourceId={resourceId}
                     resourceType={resourceType}
-                    onClose={() => {
-                      setIsActive(false);
-                    }}
+                    onClose={handleClose}
                   />
                 )}
 
                 <button
                   type="button"
                   id="close-topic"
-                  className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
-                  onClick={() => {
-                    setIsActive(false);
-                  }}
+                  className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                  onClick={handleClose}
                 >
                   <X className="h-5 w-5" />
                 </button>
               </div>
 
-              {/* Topic Content */}
-              {hasContent ? (
-                <>
-                  <div className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h1:text-balance prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
-                    {topicTitle && <h1>{topicTitle}</h1>}
-                    <div
-                      id="topic-content"
-                      dangerouslySetInnerHTML={{ __html: topicHtml }}
-                    />
-                  </div>
-                </>
-              ) : (
-                <>
-                  {!canSubmitContribution && (
-                    <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
-                      <FileText className="h-16 w-16 text-gray-300" />
-                      <p className="mt-2 text-lg font-medium text-gray-500">
-                        Empty Content
-                      </p>
-                    </div>
-                  )}
-                  {canSubmitContribution && (
-                    <div className="mx-auto flex h-[calc(100%-38px)] max-w-[400px] flex-col items-center justify-center text-center">
-                      <HeartHandshake className="mb-2 h-16 w-16 text-gray-300" />
-                      <p className="text-lg font-semibold text-gray-900">
-                        Help us write this content
-                      </p>
-                      <p className="mb-3 mt-2 text-sm text-gray-500">
-                        Write a brief introduction to this topic and submit a
-                        link to a good article, podcast, video, or any other
-                        self-vetted resource that helped you understand this
-                        topic better.
-                      </p>
-                      <a
-                        href={contributionUrl}
-                        target={'_blank'}
-                        className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-                      >
-                        <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                        Help us Write this Content
-                      </a>
-                    </div>
-                  )}
-                </>
+              <TopicDetailsTabs
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+              />
+
+              {activeTab === 'ai' && (
+                <TopicDetailAI
+                  aiChatHistory={aiChatHistory}
+                  setAiChatHistory={setAiChatHistory}
+                />
               )}
 
-              {links.length > 0 && (
+              {activeTab === 'content' && (
                 <>
-                  <ResourceListSeparator
-                    text="Free Resources"
-                    className="text-green-600"
-                    icon={HeartHandshake}
-                  />
-                  <ul className="ml-3 mt-4 space-y-1">
-                    {links.map((link) => {
-                      return (
-                        <li key={link.id}>
-                          <TopicDetailLink
-                            url={link.url}
-                            type={link.type}
-                            title={link.title}
-                            onClick={() => {
-                              // if it is one of our roadmaps, we want to track the click
-                              if (canSubmitContribution) {
-                                const parsedUrl = parseUrl(link.url);
-
-                                window.fireEvent({
-                                  category: 'TopicResourceClick',
-                                  action: `Click: ${parsedUrl.hostname}`,
-                                  label: `${resourceType} / ${resourceId} / ${topicId} / ${link.url}`,
-                                });
-                              }
-                            }}
-                          />
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </>
-              )}
-
-              {paidResourcesForTopic.length > 0 && (
-                <>
-                  <ResourceListSeparator text="Premium Resources" icon={Star} />
-
-                  <ul className="ml-3 mt-3 space-y-1">
-                    {paidResourcesForTopic.map((resource) => {
-                      return (
-                        <li key={resource._id}>
-                          <TopicDetailLink
-                            url={resource.url}
-                            type={resource.type as any}
-                            title={resource.title}
-                            isPaid={true}
-                          />
-                        </li>
-                      );
-                    })}
-                  </ul>
-
-                  {hasPaidScrimbaLinks && (
-                    <div className="relative -mb-1 ml-3 mt-4 rounded-md border border-yellow-300 bg-yellow-100 px-2.5 py-2 text-sm text-yellow-800">
-                      <div className="flex items-center gap-2">
-                        <Coins className="h-4 w-4 text-yellow-700" />
-                        <span>
-                          Scrimba is offering{' '}
-                          <span className={'font-semibold'}>20% off</span> on
-                          all courses for roadmap.sh users.
-                        </span>
+                  {hasContent ? (
+                    <>
+                      <div className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h1:text-balance prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
+                        {topicTitle && <h1>{topicTitle}</h1>}
+                        <div
+                          id="topic-content"
+                          dangerouslySetInnerHTML={{ __html: topicHtml }}
+                        />
                       </div>
-                    </div>
+                    </>
+                  ) : (
+                    <>
+                      {!canSubmitContribution && (
+                        <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
+                          <FileText className="h-16 w-16 text-gray-300" />
+                          <p className="mt-2 text-lg font-medium text-gray-500">
+                            Empty Content
+                          </p>
+                        </div>
+                      )}
+                      {canSubmitContribution && (
+                        <div className="mx-auto flex h-[calc(100%-38px)] max-w-[400px] flex-col items-center justify-center text-center">
+                          <HeartHandshake className="mb-2 h-16 w-16 text-gray-300" />
+                          <p className="text-lg font-semibold text-gray-900">
+                            Help us write this content
+                          </p>
+                          <p className="mt-2 mb-3 text-sm text-gray-500">
+                            Write a brief introduction to this topic and submit
+                            a link to a good article, podcast, video, or any
+                            other self-vetted resource that helped you
+                            understand this topic better.
+                          </p>
+                          <a
+                            href={contributionUrl}
+                            target={'_blank'}
+                            className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                          >
+                            <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
+                            Help us Write this Content
+                          </a>
+                        </div>
+                      )}
+                    </>
                   )}
 
-                  {showPaidResourceDisclaimer && (
-                    <PaidResourceDisclaimer
-                      onClose={() => {
-                        localStorage.setItem(
-                          PAID_RESOURCE_DISCLAIMER_HIDDEN,
-                          'true',
-                        );
-                        setShowPaidResourceDisclaimer(false);
-                      }}
-                    />
-                  )}
-                </>
-              )}
+                  {links.length > 0 && (
+                    <>
+                      <ResourceListSeparator
+                        text="Free Resources"
+                        className="text-green-600"
+                        icon={HeartHandshake}
+                      />
+                      <ul className="mt-4 ml-3 space-y-1">
+                        {links.map((link) => {
+                          return (
+                            <li key={link.id}>
+                              <TopicDetailLink
+                                url={link.url}
+                                type={link.type}
+                                title={link.title}
+                                onClick={() => {
+                                  // if it is one of our roadmaps, we want to track the click
+                                  if (canSubmitContribution) {
+                                    const parsedUrl = parseUrl(link.url);
 
-              {/* Contribution */}
-              {canSubmitContribution &&
-                !hasEnoughLinks &&
-                contributionUrl &&
-                hasContent && (
-                  <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
-                    <div className="mb-4 mt-3">
-                      <p className="">
-                        Find more resources using these pre-filled search
-                        queries:
-                      </p>
-                      <div className="mt-3 flex gap-2 text-gray-700">
+                                    window.fireEvent({
+                                      category: 'TopicResourceClick',
+                                      action: `Click: ${parsedUrl.hostname}`,
+                                      label: `${resourceType} / ${resourceId} / ${topicId} / ${link.url}`,
+                                    });
+                                  }
+                                }}
+                              />
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </>
+                  )}
+
+                  {paidResourcesForTopic.length > 0 && (
+                    <>
+                      <ResourceListSeparator
+                        text="Premium Resources"
+                        icon={Star}
+                      />
+
+                      <ul className="mt-3 ml-3 space-y-1">
+                        {paidResourcesForTopic.map((resource) => {
+                          return (
+                            <li key={resource._id}>
+                              <TopicDetailLink
+                                url={resource.url}
+                                type={resource.type as any}
+                                title={resource.title}
+                                isPaid={true}
+                              />
+                            </li>
+                          );
+                        })}
+                      </ul>
+
+                      {hasPaidScrimbaLinks && (
+                        <div className="relative mt-4 -mb-1 ml-3 rounded-md border border-yellow-300 bg-yellow-100 px-2.5 py-2 text-sm text-yellow-800">
+                          <div className="flex items-center gap-2">
+                            <Coins className="h-4 w-4 text-yellow-700" />
+                            <span>
+                              Scrimba is offering{' '}
+                              <span className={'font-semibold'}>20% off</span>{' '}
+                              on all courses for roadmap.sh users.
+                            </span>
+                          </div>
+                        </div>
+                      )}
+
+                      {showPaidResourceDisclaimer && (
+                        <PaidResourceDisclaimer
+                          onClose={() => {
+                            localStorage.setItem(
+                              PAID_RESOURCE_DISCLAIMER_HIDDEN,
+                              'true',
+                            );
+                            setShowPaidResourceDisclaimer(false);
+                          }}
+                        />
+                      )}
+                    </>
+                  )}
+
+                  {canSubmitContribution &&
+                    !hasEnoughLinks &&
+                    contributionUrl &&
+                    hasContent && (
+                      <div className="mt-3 mb-12 border-t text-sm text-gray-400 sm:mt-12">
+                        <div className="mt-3 mb-4">
+                          <p className="">
+                            Find more resources using these pre-filled search
+                            queries:
+                          </p>
+                          <div className="mt-3 flex gap-2 text-gray-700">
+                            <a
+                              href={googleSearchUrl}
+                              target="_blank"
+                              className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                            >
+                              <GoogleIcon className={'h-4 w-4'} />
+                              Google
+                            </a>
+                            <a
+                              href={youtubeSearchUrl}
+                              target="_blank"
+                              className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                            >
+                              <YouTubeIcon className={'h-4 w-4 text-red-500'} />
+                              YouTube
+                            </a>
+                          </div>
+                        </div>
+
+                        <p className="mt-2 mb-2 leading-relaxed">
+                          This popup should be a brief introductory paragraph
+                          for the topic and a few links to good articles,
+                          videos, or any other self-vetted resources. Please
+                          consider submitting a PR to improve this content.
+                        </p>
                         <a
-                          href={googleSearchUrl}
-                          target="_blank"
-                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
+                          href={contributionUrl}
+                          target={'_blank'}
+                          className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
                         >
-                          <GoogleIcon className={'h-4 w-4'} />
-                          Google
-                        </a>
-                        <a
-                          href={youtubeSearchUrl}
-                          target="_blank"
-                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                        >
-                          <YouTubeIcon className={'h-4 w-4 text-red-500'} />
-                          YouTube
+                          <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
+                          Help us Improve this Content
                         </a>
                       </div>
-                    </div>
-
-                    <p className="mb-2 mt-2 leading-relaxed">
-                      This popup should be a brief introductory paragraph for
-                      the topic and a few links to good articles, videos, or any
-                      other self-vetted resources. Please consider submitting a
-                      PR to improve this content.
-                    </p>
-                    <a
-                      href={contributionUrl}
-                      target={'_blank'}
-                      className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-                    >
-                      <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                      Help us Improve this Content
-                    </a>
-                  </div>
-                )}
+                    )}
+                </>
+              )}
             </div>
-            {resourceId === 'devops' && (
+
+            {resourceId === 'devops' && activeTab === 'content' && (
               <div className="mt-4">
                 <a
                   href={tnsLink}
@@ -602,13 +649,12 @@ export function TopicDetail(props: TopicDetailProps) {
           </>
         )}
 
-        {/* Error */}
         {!isContributing && !isLoading && error && (
           <>
             <button
               type="button"
               id="close-topic"
-              className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+              className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
               onClick={() => {
                 setIsActive(false);
                 setIsContributing(false);
