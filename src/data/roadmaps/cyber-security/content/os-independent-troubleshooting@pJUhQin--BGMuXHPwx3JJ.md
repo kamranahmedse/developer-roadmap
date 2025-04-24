@@ -40,5 +40,6 @@ Logs are records of system events, application behavior, and user activity, whic
 
 Learn more from the following resources:
 
-- [@article@How to identify 9 signs of Operating System.](https://bro4u.com/blog/how-to-identify-9-signs-of-operating-system)
-- [@article@Trouble shooting guide](https://cdnsm5-ss6.sharpschool.com/userfiles/servers/server_20856499/file/teacher%20pages/lindsay%20dolezal/it%20essentials/5.6.pdf)
+- [@articleOS-Independent Troubleshooting Flashcards](https://quizlet.com/ph/837474114/os-independent-troubleshooting-flash-cards/)
+- [@video@Operating System Troubleshooting - CompTIA A+](https://www.youtube.com/watch?v=6gainrNiypc)
+- [@article@Troubleshooting Guide](https://cdnsm5-ss6.sharpschool.com/userfiles/servers/server_20856499/file/teacher%20pages/lindsay%20dolezal/it%20essentials/5.6.pdf)

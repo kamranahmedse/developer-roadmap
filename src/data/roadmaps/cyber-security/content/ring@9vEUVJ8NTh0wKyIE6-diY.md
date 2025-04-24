@@ -4,5 +4,5 @@ In a ring topology, each network device is connected in a circular fashion, wher
 
 Learn more from the following resources:
 
-- [@article@What is ring topology?](https://www.lenovo.com/gb/en/glossary/what-is-ring-topology/)
+- [@article@What is Ring Topology?](https://www.lenovo.com/gb/en/glossary/what-is-ring-topology/)
 - [@video@Network Topologies - Ring](https://www.youtube.com/watch?v=hjeDN2xnc50)

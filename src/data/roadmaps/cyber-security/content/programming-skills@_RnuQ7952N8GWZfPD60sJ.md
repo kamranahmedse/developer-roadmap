@@ -8,4 +8,11 @@ Programming knowledge is a fundamental skill for professionals in the cybersecur
 - **JavaScript**: With its ubiquity in modern web browsers, JavaScript is crucial for understanding and protecting against web security vulnerabilities, such as Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks.
 - **Ruby**: Ruby has a strong foothold in web application development and is utilized for scripting and automation, just like Python. Familiarity with Ruby may give cybersecurity professionals an edge in certain environments.
 
-Acquiring programming knowledge in cybersecurity can help you stay on top of the latest threats, develop secure software, and implement effective countermeasures. As you progress in your cybersecurity career, you'll find that your programming skills will continually evolve and your understanding of various languages, concepts, and techniques will expand.
+Visit the following resources to learn more:
+
+- [@roadmap@Visit Linux Roadmap](https://roadmap.sh/linux)
+- [@roadmap@Visit Python Roadmap](https://roadmap.sh/python)
+- [@roadmap@Visit C++ Roadmap](https://roadmap.sh/cpp)
+- [@roadmap@Visit Java Roadmap](https://roadmap.sh/java)
+- [@roadmap@Visit JavaScript Roadmap](https://roadmap.sh/javascript)
+- [@roadmap@Visit Typescript Roadmap](https://roadmap.sh/typescript)

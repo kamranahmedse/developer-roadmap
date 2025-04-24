@@ -4,5 +4,6 @@
 
 Learn more from the following resources:
 
-- [@article@Offsec OSCP Site](https://www.offsec.com/courses/pen-200/)
-- [@article@How to prepare for the OSCP](https://cybersecurityguide.org/programs/cybersecurity-certifications/oscp/)
+- [@official@Offensive Security Certified Professional](https://www.offsec.com/courses/pen-200/)
+- [@article@How to Prepare for OSCP Exam](https://cybersecurityguide.org/programs/cybersecurity-certifications/oscp/)
+- [@article@How to Become an OSCP [Full Guide] - Geekflare](https://geekflare.com/cybersecurity/oscp-certification/)

@@ -1,4 +1,4 @@
-# Perimiter vs DMZ vs Segmentation
+# Perimeter vs DMZ vs Segmentation
 
 In network security, **perimeter**, **DMZ (Demilitarized Zone)**, and **segmentation** are strategies for organizing and protecting systems:
 
