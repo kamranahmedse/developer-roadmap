@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@dApp Security Considerations](https://livebook.manning.com/book/building-ethereum-dapps/chapter-14/)
 - [@article@dApp Security:All You Need to Know](https://www.immunebytes.com/blog/dapp-security/#Benefits_of_DApps_Security)
 - [@feed@Explore top posts about Security](https://app.daily.dev/tags/security?ref=roadmapsh)
+- [@course@Web3 Security | Bankless Academy](https://app.banklessacademy.com/lessons/web3-security)
