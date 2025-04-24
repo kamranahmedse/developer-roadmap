@@ -4,4 +4,5 @@ GIAC is a globally recognized organization that provides certifications for info
 
 Learn more from the following resources:
 
-- [@official@GIAC Website](https://www.giac.org/)
+- [@official@GIAC](https://www.giac.org/)
+- [@official@Get Certified - GIAC](https://www.giac.org/get-certified/?msc=main-nav)
