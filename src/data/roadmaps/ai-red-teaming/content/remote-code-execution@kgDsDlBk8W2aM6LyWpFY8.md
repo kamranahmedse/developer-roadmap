@@ -1,6 +1,6 @@
 # Remote Code Execution
 
-(AI Red Teamers attempt to achieve RCE on systems hosting or interacting with AI models. This could involve exploiting vulnerabilities in the AI framework itself, the web server, connected APIs, or tricking an AI agent with code execution capabilities into running malicious commands provided via prompts. RCE is often the ultimate goal of exploiting other vulnerabilities like code injection or insecure deserialization.)
+AI Red Teamers attempt to achieve RCE on systems hosting or interacting with AI models. This could involve exploiting vulnerabilities in the AI framework itself, the web server, connected APIs, or tricking an AI agent with code execution capabilities into running malicious commands provided via prompts. RCE is often the ultimate goal of exploiting other vulnerabilities like code injection or insecure deserialization.
 
 Learn more from the following resources:
 

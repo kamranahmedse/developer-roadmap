@@ -1,6 +1,6 @@
 # Generative Models
 
-(AI Red Teamers focus heavily on generative models (like GANs and LLMs) due to their widespread use and unique risks. Understanding how they generate content is key to testing for issues like generating harmful/biased outputs, deepfakes, prompt injection vulnerabilities, or leaking sensitive information from their vast training data.)
+AI Red Teamers focus heavily on generative models (like GANs and LLMs) due to their widespread use and unique risks. Understanding how they generate content is key to testing for issues like generating harmful/biased outputs, deepfakes, prompt injection vulnerabilities, or leaking sensitive information from their vast training data.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Automated vs Manual Testing
 
-(AI Red Teaming typically employs a blend of automated tools (for large-scale scanning, fuzzing prompts, generating basic adversarial examples) and manual human testing (for creative jailbreaking, complex multi-stage attacks, evaluating nuanced safety issues like bias). Automation provides scale, while manual testing provides depth and creativity needed to find novel vulnerabilities.)
+AI Red Teaming typically employs a blend of automated tools (for large-scale scanning, fuzzing prompts, generating basic adversarial examples) and manual human testing (for creative jailbreaking, complex multi-stage attacks, evaluating nuanced safety issues like bias). Automation provides scale, while manual testing provides depth and creativity needed to find novel vulnerabilities.
 
 Learn more from the following resources:
 

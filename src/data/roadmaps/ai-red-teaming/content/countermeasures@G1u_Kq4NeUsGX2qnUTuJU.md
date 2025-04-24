@@ -1,6 +1,6 @@
 # Countermeasures
 
-(AI Red Teamers must also understand and test defenses against prompt hacking. This includes evaluating the effectiveness of input sanitization, output filtering, instruction demarcation (e.g., XML tagging), contextual awareness checks, model fine-tuning for resistance, and applying the principle of least privilege to LLM capabilities and tool access.)
+AI Red Teamers must also understand and test defenses against prompt hacking. This includes evaluating the effectiveness of input sanitization, output filtering, instruction demarcation (e.g., XML tagging), contextual awareness checks, model fine-tuning for resistance, and applying the principle of least privilege to LLM capabilities and tool access.
 
 Learn more from the following resources:
 

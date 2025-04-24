@@ -1,6 +1,6 @@
 # API Protection
 
-(AI Red Teamers rigorously test the security of APIs providing access to AI models. They probe for OWASP API Top 10 vulnerabilities like broken authentication/authorization, injection flaws, security misconfigurations, and lack of rate limiting, specifically evaluating how these could lead to misuse or compromise of the AI model itself.)
+AI Red Teamers rigorously test the security of APIs providing access to AI models. They probe for OWASP API Top 10 vulnerabilities like broken authentication/authorization, injection flaws, security misconfigurations, and lack of rate limiting, specifically evaluating how these could lead to misuse or compromise of the AI model itself.
 
 Learn more from the following resources:
 

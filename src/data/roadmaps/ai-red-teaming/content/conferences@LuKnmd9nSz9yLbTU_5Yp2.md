@@ -1,6 +1,6 @@
 # Conferences
 
-(Attending major cybersecurity conferences (DEF CON, Black Hat, RSA) and increasingly specialized AI Safety/Security conferences allows AI Red Teamers to learn about cutting-edge research, network with peers, and discover new tools and attack/defense techniques.)
+Attending major cybersecurity conferences (DEF CON, Black Hat, RSA) and increasingly specialized AI Safety/Security conferences allows AI Red Teamers to learn about cutting-edge research, network with peers, and discover new tools and attack/defense techniques.
 
 Learn more from the following resources:
 

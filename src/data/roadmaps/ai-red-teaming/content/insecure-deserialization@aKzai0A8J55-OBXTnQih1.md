@@ -1,6 +1,6 @@
 # Insecure Deserialization
 
-(AI Red Teamers investigate if serialized objects used by the AI system (e.g., for saving model states, configurations, or transmitting data) can be manipulated by an attacker. They test if crafting malicious serialized objects could lead to remote code execution or other exploits when the application deserializes the untrusted data.)
+AI Red Teamers investigate if serialized objects used by the AI system (e.g., for saving model states, configurations, or transmitting data) can be manipulated by an attacker. They test if crafting malicious serialized objects could lead to remote code execution or other exploits when the application deserializes the untrusted data.
 
 Learn more from the following resources:
 

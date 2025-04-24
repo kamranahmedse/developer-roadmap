@@ -1,6 +1,6 @@
 # White Box Testing
 
-(White-box testing in AI Red Teaming grants the tester full access to the model's internals (architecture, weights, training data, source code). This allows for highly targeted attacks, such as crafting precise adversarial examples using gradients, analyzing code for vulnerabilities, or directly examining training data for biases or PII leakage. It simulates insider threats or deep analysis scenarios.)
+White-box testing in AI Red Teaming grants the tester full access to the model's internals (architecture, weights, training data, source code). This allows for highly targeted attacks, such as crafting precise adversarial examples using gradients, analyzing code for vulnerabilities, or directly examining training data for biases or PII leakage. It simulates insider threats or deep analysis scenarios.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Code Injection
 
-(AI Red Teamers test for code injection vulnerabilities specifically in the context of AI applications. This involves probing whether user input, potentially manipulated via prompts, can lead to the execution of unintended code (e.g., SQL, OS commands, or script execution via generated code) within the application layer or connected systems, using the AI as a potential vector.)
+AI Red Teamers test for code injection vulnerabilities specifically in the context of AI applications. This involves probing whether user input, potentially manipulated via prompts, can lead to the execution of unintended code (e.g., SQL, OS commands, or script execution via generated code) within the application layer or connected systems, using the AI as a potential vector.
 
 Learn more from the following resources:
 

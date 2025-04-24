@@ -1,6 +1,6 @@
 # Supervised Learning
 
-(AI Red Teamers analyze systems built using supervised learning to probe for vulnerabilities like susceptibility to adversarial examples designed to cause misclassification, sensitivity to data distribution shifts, or potential for data leakage related to the labeled training data. Understanding how these models learn input-output mappings is key to devising tests that challenge their learned boundaries.)
+AI Red Teamers analyze systems built using supervised learning to probe for vulnerabilities like susceptibility to adversarial examples designed to cause misclassification, sensitivity to data distribution shifts, or potential for data leakage related to the labeled training data. Understanding how these models learn input-output mappings is key to devising tests that challenge their learned boundaries.
 
 Learn more from the following resources:
 

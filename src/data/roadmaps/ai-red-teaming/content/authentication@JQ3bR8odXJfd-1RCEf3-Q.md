@@ -1,6 +1,6 @@
 # Authorization
 
-(AI Red Teamers test authorization controls to ensure that authenticated users can only access the AI features and data permitted by their roles/permissions. They attempt privilege escalation, try to access other users' data via the AI, or manipulate the AI to perform actions beyond its authorized scope.)
+AI Red Teamers test authorization controls to ensure that authenticated users can only access the AI features and data permitted by their roles/permissions. They attempt privilege escalation, try to access other users' data via the AI, or manipulate the AI to perform actions beyond its authorized scope.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Direct Injection
 
-(Direct injection attacks occur when malicious instructions are inserted directly into the prompt input field by the user interacting with the LLM. AI Red Teamers use this technique to assess if basic instructions like "Ignore previous prompt" can immediately compromise the model's safety or intended function, testing the robustness of the system prompt's influence.)
+Direct injection attacks occur when malicious instructions are inserted directly into the prompt input field by the user interacting with the LLM. AI Red Teamers use this technique to assess if basic instructions like "Ignore previous prompt" can immediately compromise the model's safety or intended function, testing the robustness of the system prompt's influence.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Research Groups
 
-(Following and potentially contributing to research groups at universities (like CMU, Stanford, Oxford), non-profits (like OpenAI, Anthropic), or government bodies (like UK's AISI) focused on AI safety, security, and alignment provides deep insights into emerging threats and mitigation strategies relevant to AI Red Teaming.)
+Following and potentially contributing to research groups at universities (like CMU, Stanford, Oxford), non-profits (like OpenAI, Anthropic), or government bodies (like UK's AISI) focused on AI safety, security, and alignment provides deep insights into emerging threats and mitigation strategies relevant to AI Red Teaming.
 
 Learn more from the following resources:
 

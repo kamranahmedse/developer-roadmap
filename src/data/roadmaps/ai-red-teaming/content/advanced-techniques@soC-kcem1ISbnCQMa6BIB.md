@@ -1,6 +1,6 @@
 # Advanced Techniques
 
-(The practice of AI Red Teaming itself will evolve. Future techniques may involve using AI adversaries to automatically discover complex vulnerabilities, developing more sophisticated methods for testing AI alignment and safety properties, simulating multi-agent system failures, and creating novel metrics for evaluating AI robustness against unknown future attacks.)
+The practice of AI Red Teaming itself will evolve. Future techniques may involve using AI adversaries to automatically discover complex vulnerabilities, developing more sophisticated methods for testing AI alignment and safety properties, simulating multi-agent system failures, and creating novel metrics for evaluating AI robustness against unknown future attacks.
 
 Learn more from the following resources:
 

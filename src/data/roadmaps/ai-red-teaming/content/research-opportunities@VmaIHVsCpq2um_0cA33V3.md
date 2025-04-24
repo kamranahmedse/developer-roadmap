@@ -1,6 +1,6 @@
 # Research Opportunities
 
-(AI Red Teaming relies on ongoing research. Key areas needing further investigation include scalable methods for finding elusive vulnerabilities, understanding emergent behaviors in complex models, developing provable safety guarantees, creating better benchmarks for AI security, and exploring the socio-technical aspects of AI misuse and defense.)
+AI Red Teaming relies on ongoing research. Key areas needing further investigation include scalable methods for finding elusive vulnerabilities, understanding emergent behaviors in complex models, developing provable safety guarantees, creating better benchmarks for AI security, and exploring the socio-technical aspects of AI misuse and defense.
 
 Learn more from the following resources:
 

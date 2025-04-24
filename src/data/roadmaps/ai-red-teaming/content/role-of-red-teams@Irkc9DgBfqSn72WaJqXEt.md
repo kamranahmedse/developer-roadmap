@@ -1,6 +1,6 @@
 # Role of Red Teams
 
-(The role of an AI Red Team is to rigorously challenge AI systems from an adversarial perspective. They design and execute tests to uncover vulnerabilities related to the model's logic, data dependencies, prompt interfaces, safety alignments, and interactions with surrounding infrastructure. They provide detailed reports on findings, potential impacts, and remediation advice, acting as a critical feedback loop for AI developers and stakeholders to improve system security and trustworthiness before and after deployment.)
+The role of an AI Red Team is to rigorously challenge AI systems from an adversarial perspective. They design and execute tests to uncover vulnerabilities related to the model's logic, data dependencies, prompt interfaces, safety alignments, and interactions with surrounding infrastructure. They provide detailed reports on findings, potential impacts, and remediation advice, acting as a critical feedback loop for AI developers and stakeholders to improve system security and trustworthiness before and after deployment.
 
 Learn more from the following resources:
 

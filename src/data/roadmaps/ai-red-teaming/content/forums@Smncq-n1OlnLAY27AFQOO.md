@@ -1,6 +1,6 @@
 # Forums
 
-(Engaging in online forums, mailing lists, Discord servers, or subreddits dedicated to AI security, adversarial ML, prompt engineering, or general cybersecurity helps AI Red Teamers exchange knowledge, ask questions, learn about new tools/techniques, and find collaboration opportunities.)
+Engaging in online forums, mailing lists, Discord servers, or subreddits dedicated to AI security, adversarial ML, prompt engineering, or general cybersecurity helps AI Red Teamers exchange knowledge, ask questions, learn about new tools/techniques, and find collaboration opportunities.
 
 Learn more from the following resources:
 

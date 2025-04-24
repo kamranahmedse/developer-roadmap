@@ -1,6 +1,6 @@
 # Robust Model Design
 
-(AI Red Teamers assess whether choices made during model design (architecture selection, regularization techniques, ensemble methods) effectively contribute to robustness against anticipated attacks. They test if these design choices actually prevent common failure modes identified during threat modeling.)
+AI Red Teamers assess whether choices made during model design (architecture selection, regularization techniques, ensemble methods) effectively contribute to robustness against anticipated attacks. They test if these design choices actually prevent common failure modes identified during threat modeling.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Grey Box Testing
 
-(Grey-box AI Red Teaming involves testing with partial knowledge of the system, such as knowing the model type (e.g., GPT-4), having access to some documentation, or understanding the general system architecture but not having full model weights or source code. This allows for more targeted testing than black-box while still simulating realistic external attacker scenarios where some information might be gleaned.)
+Grey-box AI Red Teaming involves testing with partial knowledge of the system, such as knowing the model type (e.g., GPT-4), having access to some documentation, or understanding the general system architecture but not having full model weights or source code. This allows for more targeted testing than black-box while still simulating realistic external attacker scenarios where some information might be gleaned.
 
 Learn more from the following resources:
 

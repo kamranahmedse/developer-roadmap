@@ -1,6 +1,6 @@
 # Benchmark Datasets
 
-(AI Red Teamers may use or contribute to benchmark datasets specifically designed to evaluate AI security. These datasets (like SecBench, NYU CTF Bench, CySecBench) contain prompts or scenarios targeting vulnerabilities, safety issues, or specific cybersecurity capabilities, allowing for standardized testing of models.)
+AI Red Teamers may use or contribute to benchmark datasets specifically designed to evaluate AI security. These datasets (like SecBench, NYU CTF Bench, CySecBench) contain prompts or scenarios targeting vulnerabilities, safety issues, or specific cybersecurity capabilities, allowing for standardized testing of models.
 
 Learn more from the following resources:
 

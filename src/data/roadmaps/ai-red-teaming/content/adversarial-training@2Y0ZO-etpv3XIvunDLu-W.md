@@ -1,6 +1,6 @@
 # Adversarial Training
 
-(AI Red Teamers evaluate the effectiveness of adversarial training as a defense. They test if models trained on adversarial examples are truly robust or if new, unseen adversarial attacks can still bypass the hardened defenses. This helps refine the adversarial training process itself.)
+AI Red Teamers evaluate the effectiveness of adversarial training as a defense. They test if models trained on adversarial examples are truly robust or if new, unseen adversarial attacks can still bypass the hardened defenses. This helps refine the adversarial training process itself.
 
 Learn more from the following resources:
 

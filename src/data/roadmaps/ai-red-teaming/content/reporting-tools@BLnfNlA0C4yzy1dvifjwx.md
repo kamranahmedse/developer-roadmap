@@ -1,6 +1,6 @@
 # Reporting Tools
 
-(AI Red Teamers use reporting techniques and potentially tools to clearly document their findings, including discovered vulnerabilities, successful exploit steps (e.g., effective prompts), assessed impact, and actionable recommendations tailored to AI systems. Good reporting translates technical findings into understandable risks for stakeholders.)
+AI Red Teamers use reporting techniques and potentially tools to clearly document their findings, including discovered vulnerabilities, successful exploit steps (e.g., effective prompts), assessed impact, and actionable recommendations tailored to AI systems. Good reporting translates technical findings into understandable risks for stakeholders.
 
 Learn more from the following resources:
 

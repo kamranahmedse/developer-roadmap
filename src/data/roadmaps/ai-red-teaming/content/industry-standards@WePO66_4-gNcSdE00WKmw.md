@@ -1,6 +1,6 @@
 # Industry Standards
 
-(As AI matures, AI Red Teamers will increasingly need to understand and test against emerging industry standards and regulations for AI safety, security, and risk management, such as the NIST AI RMF, ISO/IEC 42001, and sector-specific guidelines, ensuring AI systems meet compliance requirements.)
+As AI matures, AI Red Teamers will increasingly need to understand and test against emerging industry standards and regulations for AI safety, security, and risk management, such as the NIST AI RMF, ISO/IEC 42001, and sector-specific guidelines, ensuring AI systems meet compliance requirements.
 
 Learn more from the following resources:
 

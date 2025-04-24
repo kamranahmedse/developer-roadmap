@@ -1,6 +1,6 @@
 # Continuous Testing
 
-(Applying continuous testing principles to AI security involves integrating automated red teaming checks into the development pipeline (CI/CD). This allows for regular, automated assessment of model safety, robustness, and alignment as the model or application code evolves, catching regressions or new vulnerabilities early. Tools facilitating Continuous Automated Red Teaming (CART) are emerging.)
+Applying continuous testing principles to AI security involves integrating automated red teaming checks into the development pipeline (CI/CD). This allows for regular, automated assessment of model safety, robustness, and alignment as the model or application code evolves, catching regressions or new vulnerabilities early. Tools facilitating Continuous Automated Red Teaming (CART) are emerging.
 
 Learn more from the following resources:
 

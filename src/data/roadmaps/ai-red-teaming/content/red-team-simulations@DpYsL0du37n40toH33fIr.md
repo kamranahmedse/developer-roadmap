@@ -1,6 +1,6 @@
 # Red Team Simulations
 
-(Participating in or conducting structured red team simulations against AI systems (or components) provides the most realistic practice. This involves applying methodologies, TTPs (Tactics, Techniques, and Procedures), reconnaissance, exploitation, and reporting within a defined scope and objective, specifically targeting AI vulnerabilities.)
+Participating in or conducting structured red team simulations against AI systems (or components) provides the most realistic practice. This involves applying methodologies, TTPs (Tactics, Techniques, and Procedures), reconnaissance, exploitation, and reporting within a defined scope and objective, specifically targeting AI vulnerabilities.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Ethical Considerations
 
-(Ethical conduct is crucial for AI Red Teamers. While simulating attacks, they must operate within strict legal and ethical boundaries defined by rules of engagement, focusing on improving safety without causing real harm or enabling misuse. This includes respecting data privacy, obtaining consent where necessary, responsibly disclosing vulnerabilities, and carefully considering the potential negative impacts of both the testing process and the AI capabilities being tested. The goal is discovery for defense, not exploitation.)
+Ethical conduct is crucial for AI Red Teamers. While simulating attacks, they must operate within strict legal and ethical boundaries defined by rules of engagement, focusing on improving safety without causing real harm or enabling misuse. This includes respecting data privacy, obtaining consent where necessary, responsibly disclosing vulnerabilities, and carefully considering the potential negative impacts of both the testing process and the AI capabilities being tested. The goal is discovery for defense, not exploitation.
 
 Learn more from the following resources:
 

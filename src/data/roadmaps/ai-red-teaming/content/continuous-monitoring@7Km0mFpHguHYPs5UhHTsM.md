@@ -1,6 +1,6 @@
 # Continuous Monitoring
 
-(AI Red Teamers assess the effectiveness of continuous monitoring systems by attempting attacks and observing if detection mechanisms trigger appropriate alerts and responses. They test if monitoring covers AI-specific anomalies (like sudden shifts in output toxicity or unexpected resource consumption by the model) in addition to standard infrastructure monitoring.)
+AI Red Teamers assess the effectiveness of continuous monitoring systems by attempting attacks and observing if detection mechanisms trigger appropriate alerts and responses. They test if monitoring covers AI-specific anomalies (like sudden shifts in output toxicity or unexpected resource consumption by the model) in addition to standard infrastructure monitoring.
 
 Learn more from the following resources:
 

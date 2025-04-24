@@ -1,6 +1,6 @@
 # Data Poisoning
 
-(AI Red Teamers simulate data poisoning attacks by evaluating how introducing manipulated or mislabeled data into potential training or fine-tuning datasets could compromise the model. They assess the impact on model accuracy, fairness, or the potential creation of exploitable backdoors, informing defenses around data validation and provenance.)
+AI Red Teamers simulate data poisoning attacks by evaluating how introducing manipulated or mislabeled data into potential training or fine-tuning datasets could compromise the model. They assess the impact on model accuracy, fairness, or the potential creation of exploitable backdoors, informing defenses around data validation and provenance.
 
 Learn more from the following resources:
 

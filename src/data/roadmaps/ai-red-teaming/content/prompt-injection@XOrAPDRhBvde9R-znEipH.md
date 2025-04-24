@@ -1,6 +1,6 @@
 # Prompt Injection
 
-(Prompt injection is a critical vulnerability tested by AI Red Teamers. They attempt to insert instructions into the LLM's input that override its intended system prompt or task, causing it to perform unauthorized actions, leak data, or generate malicious output. This tests the model's ability to distinguish trusted instructions from potentially harmful user/external input.)
+Prompt injection is a critical vulnerability tested by AI Red Teamers. They attempt to insert instructions into the LLM's input that override its intended system prompt or task, causing it to perform unauthorized actions, leak data, or generate malicious output. This tests the model's ability to distinguish trusted instructions from potentially harmful user/external input.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Safety Filter Bypasses
 
-(AI Red Teamers specifically target the safety mechanisms (filters, guardrails) implemented within or around an AI model. They test techniques like using synonyms for blocked words, employing different languages, embedding harmful requests within harmless text, or using character-level obfuscation to evade detection and induce the model to generate prohibited content, thereby assessing the robustness of the safety controls.)
+AI Red Teamers specifically target the safety mechanisms (filters, guardrails) implemented within or around an AI model. They test techniques like using synonyms for blocked words, employing different languages, embedding harmful requests within harmless text, or using character-level obfuscation to evade detection and induce the model to generate prohibited content, thereby assessing the robustness of the safety controls.
 
 Learn more from the following resources:
 

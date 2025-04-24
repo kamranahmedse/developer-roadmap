@@ -1,6 +1,6 @@
 # LLM Security Testing
 
-(The core application area for many AI Red Teamers today involves specifically testing Large Language Models for vulnerabilities like prompt injection, jailbreaking, harmful content generation, bias, and data privacy issues using specialized prompts and evaluation frameworks.)
+The core application area for many AI Red Teamers today involves specifically testing Large Language Models for vulnerabilities like prompt injection, jailbreaking, harmful content generation, bias, and data privacy issues using specialized prompts and evaluation frameworks.
 
 Learn more from the following resources:
 

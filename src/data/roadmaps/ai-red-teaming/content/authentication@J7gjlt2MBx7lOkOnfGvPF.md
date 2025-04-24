@@ -1,6 +1,6 @@
 # Authentication
 
-(AI Red Teamers test the authentication mechanisms controlling access to AI systems and APIs. They attempt to bypass logins, steal or replay API keys/tokens, exploit weak password policies, or find flaws in MFA implementations to gain unauthorized access to the AI model or its management interfaces.)
+AI Red Teamers test the authentication mechanisms controlling access to AI systems and APIs. They attempt to bypass logins, steal or replay API keys/tokens, exploit weak password policies, or find flaws in MFA implementations to gain unauthorized access to the AI model or its management interfaces.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Unauthorized Access
 
-(AI Red Teamers test if vulnerabilities in the AI system or its interfaces allow attackers to gain unauthorized access to data, functionalities, or underlying infrastructure. This includes attempting privilege escalation via prompts, exploiting insecure API endpoints connected to the AI, or manipulating the AI to access restricted system resources.)
+AI Red Teamers test if vulnerabilities in the AI system or its interfaces allow attackers to gain unauthorized access to data, functionalities, or underlying infrastructure. This includes attempting privilege escalation via prompts, exploiting insecure API endpoints connected to the AI, or manipulating the AI to access restricted system resources.
 
 Learn more from the following resources:
 

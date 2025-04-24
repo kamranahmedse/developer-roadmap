@@ -1,6 +1,6 @@
 # Testing Platforms
 
-(Platforms used by AI Red Teamers range from general penetration testing OS distributions like Kali Linux to specific AI red teaming tools/frameworks like Microsoft's PyRIT or Promptfoo, and vulnerability scanners like OWASP ZAP adapted for API testing of AI services. These platforms provide the toolsets needed to conduct assessments.)
+Platforms used by AI Red Teamers range from general penetration testing OS distributions like Kali Linux to specific AI red teaming tools/frameworks like Microsoft's PyRIT or Promptfoo, and vulnerability scanners like OWASP ZAP adapted for API testing of AI services. These platforms provide the toolsets needed to conduct assessments.
 
 Learn more from the following resources:
 
