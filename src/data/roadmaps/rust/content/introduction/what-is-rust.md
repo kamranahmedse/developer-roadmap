@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@video@What is Rust?](https://www.youtube.com/watch?v=R33h77nrMqc)
 - [@feed@Explore top posts about Rust](https://app.daily.dev/tags/rust?ref=roadmapsh)
-- [@article@Introduction to Rust](https://doc.rust-lang.org/stable/rust-by-example/index.html) 
+- [@official@Rust by example](https://doc.rust-lang.org/stable/rust-by-example/index.html) 
