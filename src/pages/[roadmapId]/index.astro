@@ -18,6 +18,7 @@ import RoadmapNote from '../../components/RoadmapNote.astro';
 import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
 import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
 import { getProjectsByRoadmapId } from '../../lib/project';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
 
 export const prerender = true;
 
@@ -183,5 +184,6 @@ const courses = roadmapData.courses || [];
     <RelatedRoadmaps roadmap={roadmapData} />
   </div>
 
+  <CheckSubscriptionVerification client:load />
   <div slot='changelog-banner'></div>
 </BaseLayout>

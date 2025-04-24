@@ -49,6 +49,7 @@ import {
 import { TopicDetailAI } from './TopicDetailAI.tsx';
 import { cn } from '../../lib/classname.ts';
 import type { AIChatHistoryType } from '../GenerateCourse/AICourseLessonChat.tsx';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
 
 type TopicDetailProps = {
   resourceId?: string;
@@ -121,6 +122,8 @@ export function TopicDetail(props: TopicDetailProps) {
     useState<AllowedTopicDetailsTabs>('content');
   const [aiChatHistory, setAiChatHistory] =
     useState<AIChatHistoryType[]>(defaultChatHistory);
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const [isCustomResource, setIsCustomResource] = useState(false);
 
   const toast = useToast();
 
@@ -139,6 +142,7 @@ export function TopicDetail(props: TopicDetailProps) {
 
   const handleClose = () => {
     setIsActive(false);
+    setShowUpgradeModal(false);
     setAiChatHistory(defaultChatHistory);
     setActiveTab('content');
   };
@@ -209,6 +213,7 @@ export function TopicDetail(props: TopicDetailProps) {
     setTopicId(topicId);
     setResourceType(resourceType);
     setResourceId(resourceId);
+    setIsCustomResource(isCustomResource);
 
     const topicPartial = topicId.replaceAll(':', '/');
     let topicUrl =
@@ -369,6 +374,8 @@ export function TopicDetail(props: TopicDetailProps) {
     (resource) => resource?.url?.toLowerCase().indexOf('scrimba') !== -1,
   );
 
+  const shouldShowAiTab = !isCustomResource && resourceType === 'roadmap';
+
   return (
     <div className={'relative z-92'}>
       <div
@@ -376,6 +383,10 @@ export function TopicDetail(props: TopicDetailProps) {
         tabIndex={0}
         className="fixed top-0 right-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
+        {showUpgradeModal && (
+          <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+        )}
+
         {isLoading && (
           <div className="flex h-full w-full items-center justify-center">
             <Spinner
@@ -394,7 +405,7 @@ export function TopicDetail(props: TopicDetailProps) {
                 'flex flex-col': activeTab === 'ai',
               })}
             >
-              <div className="mb-6">
+              <div className={cn('mb-6', !shouldShowAiTab && 'mb-2')}>
                 {!isEmbed && (
                   <TopicProgressButton
                     topicId={
@@ -418,15 +429,21 @@ export function TopicDetail(props: TopicDetailProps) {
                 </button>
               </div>
 
-              <TopicDetailsTabs
-                activeTab={activeTab}
-                setActiveTab={setActiveTab}
-              />
+              {shouldShowAiTab && (
+                <TopicDetailsTabs
+                  activeTab={activeTab}
+                  setActiveTab={setActiveTab}
+                />
+              )}
 
-              {activeTab === 'ai' && (
+              {activeTab === 'ai' && shouldShowAiTab && (
                 <TopicDetailAI
+                  resourceId={resourceId}
+                  resourceType={resourceType}
+                  topicId={topicId}
                   aiChatHistory={aiChatHistory}
                   setAiChatHistory={setAiChatHistory}
+                  onUpgrade={() => setShowUpgradeModal(true)}
                 />
               )}
 

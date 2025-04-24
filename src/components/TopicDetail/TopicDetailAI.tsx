@@ -11,7 +11,7 @@ import { billingDetailsOptions } from '../../queries/billing';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
-import { BotIcon, LockIcon, SendIcon } from 'lucide-react';
+import { BotIcon, Loader2Icon, LockIcon, SendIcon } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname';
 import TextareaAutosize from 'react-textarea-autosize';
@@ -23,15 +23,31 @@ import {
 import { useToast } from '../../hooks/use-toast';
 import { readStream } from '../../lib/ai';
 import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
+import type { ResourceType } from '../../lib/resource-progress';
+import { getPercentage } from '../../lib/number';
 
 type TopicDetailAIProps = {
+  resourceId: string;
+  resourceType: ResourceType;
+  topicId: string;
+
   aiChatHistory: AIChatHistoryType[];
   setAiChatHistory: (history: AIChatHistoryType[]) => void;
+
+  onUpgrade: () => void;
 };
 
 export function TopicDetailAI(props: TopicDetailAIProps) {
-  const { aiChatHistory, setAiChatHistory } = props;
+  const {
+    aiChatHistory,
+    setAiChatHistory,
+    resourceId,
+    resourceType,
+    topicId,
+    onUpgrade,
+  } = props;
 
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const scrollareaRef = useRef<HTMLDivElement>(null);
 
   const toast = useToast();
@@ -78,7 +94,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     });
 
     scrollToBottom();
-    // completeCourseAIChat(newMessages);
+    completeAITutorChat(newMessages);
   };
 
   const scrollToBottom = useCallback(() => {
@@ -88,86 +104,103 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     });
   }, [scrollareaRef]);
 
-  const completeCourseAIChat = async (messages: AIChatHistoryType[]) => {
-    setIsStreamingMessage(true);
+  const completeAITutorChat = async (messages: AIChatHistoryType[]) => {
+    try {
+      setIsStreamingMessage(true);
 
-    // const response = await fetch(
-    //   `${import.meta.env.PUBLIC_API_URL}/v1-follow-up-ai-course/${courseSlug}`,
-    //   {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     credentials: 'include',
-    //     body: JSON.stringify({
-    //       moduleTitle,
-    //       lessonTitle,
-    //       messages: messages.slice(-10),
-    //     }),
-    //   },
-    // );
+      const sanitizedTopicId = topicId?.includes('@')
+        ? topicId?.split('@')?.[1]
+        : topicId;
 
-    const response = new Response();
-
-    if (!response.ok) {
-      const data = await response.json();
-
-      toast.error(data?.message || 'Something went wrong');
-      setAiChatHistory([...messages].slice(0, messages.length - 1));
-      setIsStreamingMessage(false);
-
-      if (data.status === 401) {
-        removeAuthToken();
-        window.location.reload();
-      }
-    }
-
-    const reader = response.body?.getReader();
-
-    if (!reader) {
-      setIsStreamingMessage(false);
-      toast.error('Something went wrong');
-      return;
-    }
-
-    await readStream(reader, {
-      onStream: async (content) => {
-        flushSync(() => {
-          setStreamedMessage(content);
-        });
-
-        scrollToBottom();
-      },
-      onStreamEnd: async (content) => {
-        const newMessages: AIChatHistoryType[] = [
-          ...messages,
-          {
-            role: 'assistant',
-            content,
-            html: await markdownToHtmlWithHighlighting(content),
+      const response = await fetch(
+        `${import.meta.env.PUBLIC_API_URL}/v1-topic-detail-chat`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
           },
-        ];
+          credentials: 'include',
+          body: JSON.stringify({
+            resourceId,
+            resourceType,
+            topicId: sanitizedTopicId,
+            messages: messages.slice(-10),
+          }),
+        },
+      );
 
-        flushSync(() => {
-          setStreamedMessage('');
-          setIsStreamingMessage(false);
-          setAiChatHistory(newMessages);
-        });
+      if (!response.ok) {
+        const data = await response.json();
+
+        toast.error(data?.message || 'Something went wrong');
+        setAiChatHistory([...messages].slice(0, messages.length - 1));
+        setIsStreamingMessage(false);
+
+        if (data.status === 401) {
+          removeAuthToken();
+          window.location.reload();
+        }
 
         queryClient.invalidateQueries(getAiCourseLimitOptions());
-        scrollToBottom();
-      },
-    });
+        return;
+      }
 
-    setIsStreamingMessage(false);
+      const reader = response.body?.getReader();
+
+      if (!reader) {
+        setIsStreamingMessage(false);
+        toast.error('Something went wrong');
+        return;
+      }
+
+      await readStream(reader, {
+        onStream: async (content) => {
+          flushSync(() => {
+            setStreamedMessage(content);
+          });
+
+          scrollToBottom();
+        },
+        onStreamEnd: async (content) => {
+          const newMessages: AIChatHistoryType[] = [
+            ...messages,
+            {
+              role: 'assistant',
+              content,
+              html: await markdownToHtmlWithHighlighting(content),
+            },
+          ];
+
+          flushSync(() => {
+            setStreamedMessage('');
+            setIsStreamingMessage(false);
+            setAiChatHistory(newMessages);
+          });
+
+          queryClient.invalidateQueries(getAiCourseLimitOptions());
+          scrollToBottom();
+        },
+      });
+
+      setIsStreamingMessage(false);
+    } catch (error) {
+      toast.error('Something went wrong');
+      setIsStreamingMessage(false);
+    }
   };
 
   useEffect(() => {
     scrollToBottom();
   }, []);
 
+  const isDataLoading = isLoading || isBillingDetailsLoading;
+  const usagePercentage = getPercentage(
+    tokenUsage?.used || 0,
+    tokenUsage?.limit || 0,
+  );
+
   return (
-    <div className="mt-4 flex grow flex-col rounded-lg border">
+    <div className="mt-4 flex grow flex-col overflow-hidden rounded-lg border">
       <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
         <h4 className="flex items-center gap-2 text-base font-medium">
           <BotIcon
@@ -176,6 +209,12 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           />
           AI Tutor
         </h4>
+
+        {!isDataLoading && !isPaidUser && (
+          <p className="text-sm text-gray-500">
+            <span className="font-medium">{usagePercentage}%</span> used
+          </p>
+        )}
       </div>
 
       <div
@@ -193,31 +232,6 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                       content={chat.content}
                       html={chat.html}
                     />
-
-                    {/* {chat.isDefault && defaultQuestions?.length > 1 && (
-                        <div className="mt-0.5 mb-1">
-                          <p className="mb-2 text-xs font-normal text-gray-500">
-                            Some questions you might have about this lesson.
-                          </p>
-                          <div className="flex flex-col justify-end gap-1">
-                            {defaultQuestions.map((question, index) => (
-                              <button
-                                key={`default-question-${index}`}
-                                className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
-                                onClick={() => {
-                                  flushSync(() => {
-                                    setMessage(question);
-                                  });
-
-                                  textareaRef.current?.focus();
-                                }}
-                              >
-                                {question}
-                              </button>
-                            ))}
-                          </div>
-                        </div>
-                      )} */}
                   </Fragment>
                 );
               })}
@@ -247,9 +261,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             </p>
             {!isPaidUser && (
               <button
-                onClick={() => {
-                  // onUpgradeClick();
-                }}
+                onClick={onUpgrade}
                 className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
               >
                 Upgrade for more
@@ -271,6 +283,14 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             </button>
           </div>
         )}
+
+        {isDataLoading && (
+          <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+            <Loader2Icon className="size-4 animate-spin" />
+            <p>Loading...</p>
+          </div>
+        )}
+
         <TextareaAutosize
           className={cn(
             'h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-hidden',
@@ -281,15 +301,15 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           onChange={(e) => setMessage(e.target.value)}
           autoFocus={true}
           onKeyDown={(e) => {
-            // if (e.key === 'Enter' && !e.shiftKey) {
-            //   handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
-            // }
+            if (e.key === 'Enter' && !e.shiftKey) {
+              handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
+            }
           }}
-          // ref={textareaRef}
+          ref={textareaRef}
         />
         <button
           type="submit"
-          // disabled={isDisabled || isStreamingMessage || isLimitExceeded}
+          disabled={isStreamingMessage || isLimitExceeded}
           className="flex aspect-square size-[41px] items-center justify-center text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
         >
           <SendIcon className="size-4 stroke-[2.5]" />

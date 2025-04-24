@@ -66,7 +66,15 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   // Mark as done
   useKeydown(
     'd',
-    () => {
+    (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
       if (progress === 'done') {
         onClose();
         return;
@@ -80,7 +88,15 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   // Mark as learning
   useKeydown(
     'l',
-    () => {
+    (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
       if (progress === 'learning') {
         return;
       }
@@ -93,7 +109,15 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   // Mark as learning
   useKeydown(
     's',
-    () => {
+    (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
       if (progress === 'skipped') {
         onClose();
         return;
@@ -107,9 +131,16 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   // Mark as pending
   useKeydown(
     'r',
-    () => {
+    (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
       if (progress === 'pending') {
-        onClose();
         return;
       }
 
@@ -175,7 +206,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
   return (
     <div className="relative inline-flex rounded-md border border-gray-300">
-      <span className="inline-flex cursor-default items-center  p-1 px-2 text-sm text-black">
+      <span className="inline-flex cursor-default items-center p-1 px-2 text-sm text-black">
         <span className="flex h-2 w-2">
           <span
             className={`relative inline-flex h-2 w-2 rounded-full ${statusColors[progress]}`}
@@ -187,7 +218,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
       </span>
 
       <button
-        className="inline-flex cursor-pointer items-center rounded-br-md rounded-tr-md border-l border-l-gray-300 bg-gray-100 p-1 px-2 text-sm text-black hover:bg-gray-200"
+        className="inline-flex cursor-pointer items-center rounded-tr-md rounded-br-md border-l border-l-gray-300 bg-gray-100 p-1 px-2 text-sm text-black hover:bg-gray-200"
         onClick={() => setShowChangeStatus(true)}
       >
         <span className="mr-0.5">Update Status</span>
@@ -196,7 +227,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
       {showChangeStatus && (
         <div
-          className="absolute right-0 top-full mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md"
+          className="absolute top-full right-0 mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md"
           ref={changeStatusRef!}
         >
           {allowMarkingDone && (
