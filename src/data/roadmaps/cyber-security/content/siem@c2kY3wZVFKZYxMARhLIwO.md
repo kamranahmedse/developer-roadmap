@@ -1,7 +1,6 @@
 # SIEM
 
-SIEM, short for Security Information and Event Manager, is a term used to describe tools that greatly increases visibility into a network or system. 
-It does this by monitoring, filtering, collecting, normalizing, and correlating vast amounts of data such as logs, and neatly presents it via an interface/dashboard.  Organizations leverage SIEMs to monitor and thus identify, protect, and respond to potential threats in their environment. For hands-on experience, you should consider setting up a SIEM in your own environment. There are some commercial tools that you can try out for free, and there are also open source alternatives, such as Wazuh or LevelBlue OSSIM (AlienVault).
+SIEM, short for Security Information and Event Manager, is a term used to describe tools that greatly increases visibility into a network or system. It does this by monitoring, filtering, collecting, normalizing, and correlating vast amounts of data such as logs, and neatly presents it via an interface/dashboard.  Organizations leverage SIEMs to monitor and thus identify, protect, and respond to potential threats in their environment. For hands-on experience, you should consider setting up a SIEM in your own environment. There are some commercial tools that you can try out for free, and there are also open source alternatives, such as Wazuh or LevelBlue OSSIM (AlienVault).
 
 Visit the following resources to learn more:
 

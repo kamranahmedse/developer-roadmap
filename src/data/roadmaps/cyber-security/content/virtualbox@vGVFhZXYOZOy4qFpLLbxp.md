@@ -4,5 +4,6 @@ VirtualBox is a free, open-source virtualization software developed by Oracle. I
 
 Learn more from the following resources:
 
-- [@official@VirtualBox Website](https://www.virtualbox.org/)
+- [@official@VirtualBox](https://www.virtualbox.org/)
+- [@official@VirtualBox Documentation](https://www.virtualbox.org/wiki/Documentation)
 - [@video@How to use VirtualBox](https://www.youtube.com/watch?v=nvdnQX9UkMY)
