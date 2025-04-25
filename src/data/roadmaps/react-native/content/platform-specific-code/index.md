@@ -1,39 +1,8 @@
 # Platform Specific Code
 
-In React Native, you might need to maintain certain parts of your application differently for iOS and Android. This is where "Platform Specific Code" comes into play. There are two ways you can achieve this:
+In React Native, managing platform-specific code for iOS and Android is essential for addressing differences in application behavior and appearance. This can be achieved in two primary ways: using the `Platform` module, which allows developers to detect the current platform and apply conditional styles or logic accordingly, as demonstrated by using `Platform.select` to set different background colors for iOS and Android; and utilizing file extensions like `.ios.js` and `.android.js`, which enables React Native to automatically load the appropriate file based on the platform. For instance, if you have `Header.ios.js` and `Header.android.js`, importing the `Header` component will automatically reference the correct file for the running platform, streamlining the development process.
 
-## Platform module
+Visit the following resources to learn more:
 
-React Native provides a `Platform` module that can be used to detect which platform your code is running on (iOS or Android). This can be helpful when you have minor platform differences in your code execution, component styles, or API calls.
-
-**Example:**
-
-```javascript
-import { Platform, StyleSheet } from 'react-native';
-
-const styles = StyleSheet.create({
-  container: {
-    ...Platform.select({
-      ios: {
-        backgroundColor: 'red',
-      },
-      android: {
-        backgroundColor: 'blue',
-      },
-    }),
-  },
-});
-```
-
-## File extensions
-
-Another way to handle platform-specific logic is by using file extensions like `.ios.js` and `.android.js`. By naming your files with these extensions, React Native will automatically pick up the appropriate file based on the platform the app is running on.
-
-**Example:**
-
-Let's say you have two files in your project, `Header.ios.js` and `Header.android.js`. When you import the `Header` component in your code, React Native will automatically import the correct file for the platform.
-
-```javascript
-// App.js
-import Header from './Header';
-```
+- [@official@Platform-Specific Code](https://reactnative.dev/docs/platform-specific-code)
+- [@official@App Extensions](https://reactnative.dev/docs/app-extensions)

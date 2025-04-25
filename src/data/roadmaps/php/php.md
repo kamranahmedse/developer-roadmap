@@ -7,7 +7,7 @@ briefDescription: 'Step by step guide to learning PHP in 2025'
 title: 'PHP Roadmap'
 description: 'Step by step guide to learning PHP in 2025'
 renderer: 'editor'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

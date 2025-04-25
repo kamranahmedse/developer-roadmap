@@ -41,7 +41,7 @@ question:
 
     An expert Go developer in this field must understand garbage collection and how to optimize code for high performance and scalability given how these are major design pillars for Go.
 
-    On top of that, familiarity with testing frameworks and debugging tools is also essential to ensure that applications are both reliable and efficient. Many companies assess these skills during interviews by asking a variety of Golang interview questions that explore topics like concurrency, data structures, and the integration of Golang with other languages and technologies.
+    On top of that, familiarity with testing frameworks and debugging tools is also essential to ensure that applications are both reliable and efficient. Many companies assess these skills during interviews by asking a variety of [Golang interview questions](https://roadmap.sh/questions/golang) that explore topics like concurrency, data structures, and the integration of Golang with other languages and technologies.
 
     The role requires a strong foundation in software development practices (i.e. version control, code smells, unit testing, etc) as well as a willingness to continuously learn and adapt to new tools and techniques to survive in the constantly evolving tech environment.
 schema:

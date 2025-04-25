@@ -4,5 +4,5 @@ The Certified Information Security Manager (CISM) is an advanced cybersecurity c
 
 Learn more from the following resources:
 
-- [@official@CISM Website](https://www.isaca.org/credentialing/cism)
+- [@official@CISM](https://www.isaca.org/credentialing/cism)
 - [@article@Certified Information Security Manager (CISM)](https://www.techtarget.com/searchsecurity/definition/certified-information-security-manager-CISM)

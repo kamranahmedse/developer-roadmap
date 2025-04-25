@@ -7,50 +7,7 @@ There are two types of deep links:
 1. **Universal Links** (iOS) / **App Links** (Android): These are HTTPS URLs that allow the user to navigate to a specific screen when the app is installed and fallback to a specified website when the app is not installed.
 2. **Custom URL Schemes**: Unique URLs, like `myapp://my-screen`, that can open the app directly to a specific screen when clicked.
 
-## Handling Deep Links in React Native
+Visit the following resources to learn more:
 
-In React Native, you can handle deep links using the `Linking` module which provides the necessary methods to work with deep links.
-
-First, you have to import `Linking` from `"react-native"`:
-
-```js
-import { Linking } from 'react-native';
-```
-
-To handle deep links, you need to add a listener that will be triggered when the app receives a deep link. You can add the listener in the `componentDidMount` lifecycle method and remove it in the `componentWillUnmount` method.
-
-For example:
-
-```js
-import React from 'react';
-import { Linking, Text, View } from 'react-native';
-
-class App extends React.Component {
-  componentDidMount() {
-    Linking.addEventListener('url', this.handleOpenURL);
-  }
-
-  componentWillUnmount() {
-    Linking.removeEventListener('url', this.handleOpenURL);
-  }
-
-  handleOpenURL(event) {
-    // Handle your deep link logic
-    console.log('Received deep link: ', event.url);
-  }
-
-  render() {
-    return (
-      <View>
-        <Text>Hello from React Native!</Text>
-      </View>
-    );
-  }
-}
-
-export default App;
-```
-
-To work with universal links or app links, you need to configure your app on both iOS and Android. You can follow the official guide [here](https://reactnative.dev/docs/linking).
-
-You can also use popular libraries like `react-navigation` or `react-native-navigation` that provide built-in support for handling deep links in your app.
+- [@article@Deep Linking - React Navigation](https://reactnavigation.org/docs/deep-linking/)
+- [@article@Handle deep links in React Native apps](https://medium.com/the-react-native-log/handle-deep-links-in-react-native-apps-b22055149b3a)

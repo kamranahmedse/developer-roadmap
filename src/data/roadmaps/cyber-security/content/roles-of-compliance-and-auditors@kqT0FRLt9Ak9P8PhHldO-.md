@@ -4,4 +4,5 @@ Compliance officers ensure that an organization adheres to legal, regulatory, an
 
 Learn more from the following resources:
 
-- [@article@What is a compliance audit?](https://www.auditboard.com/blog/compliance-audit/)
+- [@article@What is a Compliance Audit?](https://www.auditboard.com/blog/compliance-audit/)
+- [@article@Compliance Office and Internal Audit Roles and Responsibilities](https://www.compliance.com/resources/compliance-office-and-internal-audit-roles-and-responsibilities/)

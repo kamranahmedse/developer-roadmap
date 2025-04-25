@@ -4,5 +4,5 @@ WinHex is a universal hexadecimal editor and disk editor primarily used for comp
 
 Learn more from the following resources:
 
-- [@official@WinHex Website](https://x-ways.net/winhex/)
+- [@official@WinHex](https://x-ways.net/winhex/)
 - [@article@What is WinHex?](https://www.lenovo.com/in/en/glossary/winhex/)

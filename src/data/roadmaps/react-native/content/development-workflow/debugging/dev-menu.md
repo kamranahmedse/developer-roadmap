@@ -5,4 +5,6 @@ React Native provides an in-app developer menu which offers several debugging op
 - Android: `Cmd + M` or `Ctrl + M`
 - iOS: `Cmd + D` or `Ctrl + D`
 
-Visit the [React Native docs](https://reactnative.dev/docs/debugging) for more information.
+Visit the following resources to learn more:
+
+- [@official@Debugging](https://reactnative.dev/docs/debugging)

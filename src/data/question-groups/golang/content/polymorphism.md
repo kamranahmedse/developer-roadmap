@@ -1,0 +1,1 @@
+In Go, you can define methods that accept parameters conforming to a specific interface. As long as a type implements the required interface, it can be passed to these methods, enabling polymorphism. 

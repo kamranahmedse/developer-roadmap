@@ -1,0 +1,3 @@
+Pointers in Go hold memory addresses, they're essentially a variable like any other with a special type of content inside it. This address inside the pointer allows you, the developer, to pass variables by reference instead of by value (because you're actually passing by value the addressed reference, without having to duplicate the actual value being referenced). 
+
+This is crucial if you expect to have efficient management of the memory space as modifying an existing object via its pointer affects the original value. 

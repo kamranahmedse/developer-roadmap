@@ -1,0 +1,3 @@
+A pointer in Go holds the address of another variable (much like pointers in other languages, like C). This connection to the memory sector enables efficient memory consumption because it allows direct access and manipulation of data without copying entire data structures. 
+
+Understanding pointers is essential for low-level programming and for achieving optimal cpu and memory resource consumption. 

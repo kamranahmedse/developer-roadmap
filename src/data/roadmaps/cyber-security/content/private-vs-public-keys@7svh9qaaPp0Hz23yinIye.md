@@ -1,4 +1,4 @@
-# Pvt Key vs Pub Key
+# Private Key vs Public Key
 
 **Public keys** and **private keys** are cryptographic components used in asymmetric encryption. 
 

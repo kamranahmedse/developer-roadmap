@@ -1,6 +1,9 @@
 # Learn the Pre-requisites
 
-Before you start learning React Native, you should have a basic knowledge of [JavaScript](/javascript) and [React](/react). You don't need to fully master these topics, but you should be familiar with them. Learn the basics of JavaScript (e.g. topics marked for beginners in [JavaScript Roadmap](/javascript) and continue with React Native. I have heard good things about official React Native documentation, so you can start there and pick up the relevant topics wherever needed.
+Before you start learning React Native, you should have a basic knowledge of JavaScript and React. You don't need to fully master these topics, but you should be familiar with them. Learn the basics of JavaScript (e.g. topics marked for beginners in JavaScript Roadmap and continue with React Native.
 
-- [@roadmap.sh@Learn Beginner Topics in JavaScript](/javascript)
-- [@article@React Native Basics](https://reactnative.dev/docs/getting-started)
+Visit the following resources to learn more:
+
+- [@official@React Native Basics](https://reactnative.dev/docs/getting-started)
+- [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
+- [@roadmap@Visit Dedicated React Roadmap](https://roadmap.sh/react)

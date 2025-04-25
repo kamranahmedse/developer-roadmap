@@ -1,0 +1,1 @@
+Go's garbage collection automatically frees unused memory, improving memory management efficiency and reducing the risk of leaks. This ensures stable memory usage throughout the execution of your code, even when handling multiple tasks concurrently. 

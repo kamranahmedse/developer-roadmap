@@ -6,3 +6,7 @@ In React Native, you can implement push notifications using third-party librarie
 
 - Firebase Cloud Messaging (FCM) for both Android and iOS
 - Apple Push Notification Service (APNs) for iOS
+
+Visit the following resources to learn more:
+
+- [@article@React Native Push Notifications](https://blog.logrocket.com/react-native-push-notifications-complete-guide/)

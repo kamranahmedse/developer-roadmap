@@ -4,6 +4,6 @@ React Native is an open-source framework developed by Facebook that allows devel
 
 Visit the following resources to learn more:
 
-- [@article@Official Website](https://reactnative.dev/)
-- [@article@Official Getting Started to React Native](https://reactnative.dev/docs/getting-started)
+- [@official@React Native](https://reactnative.dev/)
+- [@official@Getting Started with React Native](https://reactnative.dev/docs/getting-started)
 - [@video@React Native Course for Beginners in 2024 | Build a Full Stack React Native App](https://www.youtube.com/watch?v=ZBCUegTZF7M)

@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname.ts';
 import { Filter, X } from 'lucide-react';
 import { CategoryFilterButton } from './CategoryFilterButton.tsx';
-import { useOutsideClick } from '../../hooks/use-outside-click.ts';
 import {
   deleteUrlParam,
   getUrlParams,
@@ -388,6 +387,11 @@ const groups: GroupType[] = [
         title: 'AI Engineer',
         link: '/ai-engineer',
         type: 'role',
+      },
+      {
+        title: 'AI Red Teaming',
+        link: '/ai-red-teaming',
+        type: 'skill',
       },
       {
         title: 'Data Analyst',
