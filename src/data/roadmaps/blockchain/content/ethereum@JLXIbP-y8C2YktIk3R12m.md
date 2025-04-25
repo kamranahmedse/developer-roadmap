@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@Ethereum Whitepaper](https://ethereum.org/en/whitepaper/)
 - [@article@A Gentle Introduction to Ethereum](https://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/)
 - [@feed@Explore top posts about Ethereum](https://app.daily.dev/tags/ethereum?ref=roadmapsh)
-- [@course@Ethereum Basics | Bankless Academy](https://app.banklessacademy.com/lessons/ethereum-basics)

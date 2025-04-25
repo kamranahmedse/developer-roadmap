@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@article@Layer 2 - Binance Academy](https://academy.binance.com/en/glossary/layer-2)
 - [@article@Develop a ZK-powered Layer 2 with the Polygon CDK open-source framework](https://wiki.polygon.technology/docs/cdk/)
 - [@feed@Explore top posts about Blockchain](https://app.daily.dev/tags/blockchain?ref=roadmapsh)
-- [@course@Layer 2 Blockchains | Bankless Academy](https://app.banklessacademy.com/lessons/layer-2-blockchains)

@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [@video@How does a Blockchain Work?](https://youtu.be/SSo_EIwHSd4)
 - [@video@What Is a Blockchain? | Blockchain Basics for Developers](https://youtu.be/4ff9esY_4aU)
 - [@feed@Explore top posts about Blockchain](https://app.daily.dev/tags/blockchain?ref=roadmapsh)
-- [@course@Blockchain Basics | Bankless Academy](https://app.banklessacademy.com/lessons/blockchain-basics)
