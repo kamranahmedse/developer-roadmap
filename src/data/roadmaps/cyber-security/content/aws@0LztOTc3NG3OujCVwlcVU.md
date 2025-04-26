@@ -4,8 +4,8 @@ Amazon Web Services (AWS) is a leading cloud computing platform provided by Amaz
 
 Learn more from the following resources:
 
-- [@roadmap@AWS Roadmap](https://roadmap.sh/aws)
-- [@official@AWS Website](https://aws.amazon.com)
+- [@roadmap@Visit Dedicated AWS Roadmap](https://roadmap.sh/aws)
+- [@official@AWS](https://aws.amazon.com)
 - [@article@How to create an AWS account](https://grapplingdev.com/tutorials/how-to-create-aws-account)
 - [@video@AWS Overview](https://www.youtube.com/watch?v=a9__D53WsUs)
 - [@course@AWS Complete Tutorial](https://www.youtube.com/watch?v=B8i49C8fC3E)

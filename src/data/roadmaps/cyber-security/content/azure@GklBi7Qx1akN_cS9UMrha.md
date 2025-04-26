@@ -4,6 +4,6 @@ Azure is Microsoft's comprehensive cloud computing platform that offers a wide r
 
 Learn more from the following resources:
 
-- [@official@Azure Website](https://azure.microsoft.com)
+- [@official@Azure](https://azure.microsoft.com)
 - [@video@Azure DevOps Tutorial for Beginners](https://www.youtube.com/watch?v=4BibQ69MD8c)
 - [@feed@daily.dev Azure Feed](https://app.daily.dev/tags/azure)

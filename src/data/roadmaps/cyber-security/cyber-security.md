@@ -28,7 +28,6 @@ seo:
     - 'cyber security skills'
     - 'guide to cyber security'
     - 'cyber security roadmap'
-    - 'cyber security skills'
     - 'cyber security skills test'
     - 'skills for cyber security'
     - 'what is cyber security'
@@ -38,7 +37,6 @@ seo:
     - 'cyber security expert roadmap'
     - 'become a cyber security expert'
     - 'cyber security expert career path'
-    - 'cyber security expert'
     - 'modern cyber security expert'
 relatedRoadmaps:
   - 'backend'
