@@ -4,6 +4,6 @@ AI Red Teamers specifically target the safety mechanisms (filters, guardrails) i
 
 Learn more from the following resources:
 
-- [@article@Bypassing AI Content Filters | Restackio](https://www.restack.io/p/ai-driven-content-moderation-answer-bypass-filters-cat-ai) - Discusses techniques for evasion.
-- [@article@How to Bypass Azure AI Content Safety Guardrails - Mindgard](https://mindgard.ai/blog/bypassing-azure-ai-content-safety-guardrails) - Case study on bypassing specific safety mechanisms.
-- [@article@The Best Methods to Bypass AI Detection: Tips and Techniques - PopAi](https://www.popai.pro/resources/the-best-methods-to-bypass-ai-detection-tips-and-techniques/) - Focuses on evasion, relevant for filter bypass testing.
+- [@article@Bypassing AI Content Filters](https://www.restack.io/p/ai-driven-content-moderation-answer-bypass-filters-cat-ai)
+- [@article@How to Bypass Azure AI Content Safety Guardrails](https://mindgard.ai/blog/bypassing-azure-ai-content-safety-guardrails)
+- [@article@The Best Methods to Bypass AI Detection: Tips and Techniques](https://www.popai.pro/resources/the-best-methods-to-bypass-ai-detection-tips-and-techniques/)

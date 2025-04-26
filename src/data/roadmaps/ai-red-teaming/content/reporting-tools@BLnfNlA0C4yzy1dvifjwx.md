@@ -4,6 +4,6 @@ AI Red Teamers use reporting techniques and potentially tools to clearly documen
 
 Learn more from the following resources:
 
-- [@article@The Complete Red Teaming Checklist [PDF]: 5 Key Steps - Mindgard AI](https://mindgard.ai/blog/red-teaming-checklist) (Mentions reporting and templates)
-- [@guide@Penetration Testing Report: 6 Key Sections and 4 Best Practices - Bright Security](https://brightsec.com/blog/penetration-testing-report/) - General best practices for reporting security findings.
-- [@guide@Penetration testing best practices: Strategies for all test types - Strike Graph](https://www.strikegraph.com/blog/pen-testing-best-practices) - Includes tips on documentation.
+- [@article@The Complete Red Teaming Checklist [PDF]: 5 Key Steps - Mindgard AI](https://mindgard.ai/blog/red-teaming-checklist)
+- [@guide@Penetration Testing Report: 6 Key Sections and 4 Best Practices](https://brightsec.com/blog/penetration-testing-report/)
+- [@guide@Penetration testing best practices: Strategies for all test types](https://www.strikegraph.com/blog/pen-testing-best-practices)

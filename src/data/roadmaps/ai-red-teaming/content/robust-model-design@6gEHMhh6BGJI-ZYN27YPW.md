@@ -4,6 +4,6 @@ AI Red Teamers assess whether choices made during model design (architecture sel
 
 Learn more from the following resources:
 
-- [@article@Model Robustness: Building Reliable AI Models - Encord](https://encord.com/blog/model-robustness-machine-learning-strategies/) - Discusses strategies for building robust models.
-- [@article@Understanding Robustness in Machine Learning - Alooba](https://www.alooba.com/skills/concepts/machine-learning/robustness/) - Explains the concept of ML robustness.
-- [@paper@Towards Evaluating the Robustness of Neural Networks (arXiv by Goodfellow et al.)](https://arxiv.org/abs/1608.04644) - Foundational paper on evaluating robustness.
+- [@article@Model Robustness: Building Reliable AI Models](https://encord.com/blog/model-robustness-machine-learning-strategies/)
+- [@article@Understanding Robustness in Machine Learning](https://www.alooba.com/skills/concepts/machine-learning/robustness/)
+- [@paper@Towards Evaluating the Robustness of Neural Networks (arXiv by Goodfellow et al.)](https://arxiv.org/abs/1608.04644)

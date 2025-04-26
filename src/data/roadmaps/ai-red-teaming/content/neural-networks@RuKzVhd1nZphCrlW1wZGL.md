@@ -4,6 +4,6 @@ Understanding neural network architectures (layers, nodes, activation functions)
 
 Learn more from the following resources:
 
-- [@guide@Neural Networks Explained: A Beginner's Guide - SkillCamper](https://www.skillcamper.com/blog/neural-networks-explained-a-beginners-guide) - Foundational guide.
-- [@guide@Neural networks | Machine Learning - Google for Developers](https://developers.google.com/machine-learning/crash-course/neural-networks) - Google's explanation within their ML crash course.
-- [@paper@Red Teaming with Artificial Intelligence-Driven Cyberattacks: A Scoping Review - arXiv](https://arxiv.org/html/2503.19626) - Review discussing AI methods like neural networks used in red teaming simulations.
+- [@guide@Neural Networks Explained: A Beginner's Guide](https://www.skillcamper.com/blog/neural-networks-explained-a-beginners-guide)
+- [@guide@Neural networks | Machine Learning](https://developers.google.com/machine-learning/crash-course/neural-networks)
+- [@paper@Red Teaming with Artificial Intelligence-Driven Cyberattacks: A Scoping Review](https://arxiv.org/html/2503.19626)

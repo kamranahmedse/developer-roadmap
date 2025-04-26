@@ -4,6 +4,6 @@ White-box testing in AI Red Teaming grants the tester full access to the model's
 
 Learn more from the following resources:
 
-- [@article@Black-Box, Gray Box, and White-Box Penetration Testing - EC-Council](https://www.eccouncil.org/cybersecurity-exchange/penetration-testing/black-box-gray-box-and-white-box-penetration-testing-importance-and-uses/) - Comparison of testing types.
-- [@article@White-Box Adversarial Examples (OpenAI Blog)](https://openai.com/research/adversarial-robustness-toolbox) - Discusses generating attacks with full model knowledge.
-- [@guide@LLM red teaming guide (open source) - Promptfoo](https://www.promptfoo.dev/docs/red-team/) - Mentions white-box testing benefits for LLMs.
+- [@article@Black-Box, Gray Box, and White-Box Penetration Testing](https://www.eccouncil.org/cybersecurity-exchange/penetration-testing/black-box-gray-box-and-white-box-penetration-testing-importance-and-uses/)
+- [@article@White-Box Adversarial Examples (OpenAI Blog)](https://openai.com/research/adversarial-robustness-toolbox)
+- [@guide@LLM red teaming guide (open source)](https://www.promptfoo.dev/docs/red-team/)
