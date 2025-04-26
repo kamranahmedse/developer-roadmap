@@ -4,6 +4,6 @@ The practice of AI Red Teaming itself will evolve. Future techniques may involve
 
 Learn more from the following resources:
 
-- [@article@AI red-teaming in critical infrastructure: Boosting security and trust in AI systems - DNV](https://www.dnv.com/article/ai-red-teaming-for-critical-infrastructure-industries/) - Discusses applying red teaming to complex systems.
-- [@article@Advanced Techniques in AI Red Teaming for LLMs | NeuralTrust](https://neuraltrust.ai/blog/advanced-techniques-in-ai-red-teaming) - Discusses techniques like adversarial ML and automated threat intelligence for red teaming.
-- [@paper@Diverse and Effective Red Teaming with Auto-generated Rewards and Multi-step Reinforcement Learning - arXiv](https://arxiv.org/html/2412.18693v1) - Research on using RL for more advanced automated red teaming.
+- [@article@AI red-teaming in critical infrastructure: Boosting security and trust in AI systems](https://www.dnv.com/article/ai-red-teaming-for-critical-infrastructure-industries/)
+- [@article@Advanced Techniques in AI Red Teaming for LLMs](https://neuraltrust.ai/blog/advanced-techniques-in-ai-red-teaming)
+- [@paper@Diverse and Effective Red Teaming with Auto-generated Rewards and Multi-step Reinforcement Learning](https://arxiv.org/html/2412.18693v1)

@@ -4,7 +4,7 @@ AI Red Teamers need environments to practice attacking vulnerable systems safely
 
 Learn more from the following resources:
 
-- [@platform@Gandalf AI Prompt Injection Lab](https://gandalf.lakera.ai/) - A popular web-based lab for prompt injection practice.
-- [@platform@Hack The Box: Hacking Labs](https://www.hackthebox.com/hacker/hacking-labs) - General pentesting labs.
-- [@platform@TryHackMe: Learn Cyber Security](https://tryhackme.com/) - Gamified cybersecurity training labs.
-- [@platform@VulnHub](https://www.vulnhub.com/) - Provides vulnerable VM images for practice.
+- [@platform@Gandalf AI Prompt Injection Lab](https://gandalf.lakera.ai/)
+- [@platform@Hack The Box: Hacking Labs](https://www.hackthebox.com/hacker/hacking-labs)
+- [@platform@TryHackMe: Learn Cyber Security](https://tryhackme.com/)
+- [@platform@VulnHub](https://www.vulnhub.com/)

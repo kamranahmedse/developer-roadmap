@@ -4,6 +4,6 @@ AI Red Teamers test authorization controls to ensure that authenticated users ca
 
 Learn more from the following resources:
 
-- [@article@What is Authentication vs Authorization? - Auth0](https://auth0.com/intro-to-iam/authentication-vs-authorization) - Foundational explanation.
-- [@guide@Identity and access management (IAM) fundamental concepts - Learn Microsoft](https://learn.microsoft.com/en-us/entra/fundamentals/identity-fundamental-concepts) - Explains roles and permissions.
-- [@guide@OWASP API Security Project](https://owasp.org/www-project-api-security/) (Covers Broken Object Level/Function Level Authorization)
+- [@article@What is Authentication vs Authorization?](https://auth0.com/intro-to-iam/authentication-vs-authorization)
+- [@guide@Identity and access management (IAM) fundamental concepts](https://learn.microsoft.com/en-us/entra/fundamentals/identity-fundamental-concepts)
+- [@guide@OWASP API Security Project](https://owasp.org/www-project-api-security/)

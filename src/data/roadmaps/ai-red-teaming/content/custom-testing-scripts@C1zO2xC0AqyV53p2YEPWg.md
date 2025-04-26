@@ -4,6 +4,6 @@ AI Red Teamers frequently write custom scripts (often in Python) to automate bes
 
 Learn more from the following resources:
 
-- [@guide@Python for Cybersecurity: Key Use Cases and Tools - Panther](https://panther.com/blog/python-for-cybersecurity-key-use-cases-and-tools) - Discusses Python's role in automation, pen testing, etc.
-- [@guide@Python for cybersecurity: use cases, tools and best practices - SoftTeco](https://softteco.com/blog/python-for-cybersecurity) - Covers using Python for various security tasks.
-- [@tool@Scapy](https://scapy.net/) - Powerful Python library for packet manipulation.
+- [@guide@Python for Cybersecurity: Key Use Cases and Tools](https://panther.com/blog/python-for-cybersecurity-key-use-cases-and-tools)
+- [@guide@Python for cybersecurity: use cases, tools and best practices](https://softteco.com/blog/python-for-cybersecurity)
+- [@tool@Scapy](https://scapy.net/)

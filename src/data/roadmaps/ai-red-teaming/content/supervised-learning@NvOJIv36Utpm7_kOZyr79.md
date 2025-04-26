@@ -4,6 +4,6 @@ AI Red Teamers analyze systems built using supervised learning to probe for vuln
 
 Learn more from the following resources:
 
-- [@article@AI and cybersecurity: a love-hate revolution - Alter Solutions](https://www.alter-solutions.com/en-us/articles/ai-cybersecurity-love-hate-revolution) - Discusses supervised learning use in vulnerability scanning and potential exploits.
-- [@article@What Is Supervised Learning? | IBM](https://www.ibm.com/think/topics/supervised-learning) - Foundational explanation.
-- [@article@What is Supervised Learning? | Google Cloud](https://cloud.google.com/discover/what-is-supervised-learning) - Foundational explanation.
+- [@article@AI and cybersecurity: a love-hate revolution](https://www.alter-solutions.com/en-us/articles/ai-cybersecurity-love-hate-revolution)
+- [@article@What Is Supervised Learning?](https://www.ibm.com/think/topics/supervised-learning)
+- [@article@What is Supervised Learning?](https://cloud.google.com/discover/what-is-supervised-learning)

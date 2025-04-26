@@ -4,7 +4,7 @@ A core AI Red Teaming activity involves generating adversarial examples – inpu
 
 Learn more from the following resources:
 
-- [@article@Adversarial Examples Explained (OpenAI Blog)](https://openai.com/research/adversarial-examples) - Introduction by OpenAI.
-- [@guide@Adversarial Examples – Interpretable Machine Learning Book](https://christophm.github.io/interpretable-ml-book/adversarial.html) - In-depth explanation and examples.
-- [@guide@Adversarial Testing for Generative AI | Machine Learning - Google for Developers](https://developers.google.com/machine-learning/guides/adv-testing) - Google's guide on adversarial testing workflows.
-- [@video@How AI Can Be Tricked With Adversarial Attacks - Two Minute Papers](https://www.youtube.com/watch?v=J3X_JWQkvo8?v=MPcfoQBDY0w) - Short video demonstrating adversarial examples.
+- [@article@Adversarial Examples Explained (OpenAI Blog)](https://openai.com/research/adversarial-examples)
+- [@guide@Adversarial Examples – Interpretable Machine Learning Book](https://christophm.github.io/interpretable-ml-book/adversarial.html)
+- [@guide@Adversarial Testing for Generative AI](https://developers.google.com/machine-learning/guides/adv-testing)
+- [@video@How AI Can Be Tricked With Adversarial Attacks](https://www.youtube.com/watch?v=J3X_JWQkvo8?v=MPcfoQBDY0w)
