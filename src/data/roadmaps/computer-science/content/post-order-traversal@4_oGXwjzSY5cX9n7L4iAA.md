@@ -4,4 +4,5 @@ Post-order traversal is a type of tree traversal that visits the left subtree, t
 
 Visit the following resources to learn more:
 
+- [@article@Postorder Traversal of Binary Tree](https://www.geeksforgeeks.org/postorder-traversal-of-binary-tree/)
 - [@video@Tree | Illustrated Data Structures](https://www.youtube.com/watch?v=S2W3SXGPVyU)
