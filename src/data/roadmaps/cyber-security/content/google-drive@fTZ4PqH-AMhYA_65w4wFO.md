@@ -4,4 +4,4 @@ Google Drive is a cloud-based storage solution provided by Google, which offers 
 
 Learn more from the following resources:
 
-- [@official@Google Drive Website](https://drive.google.com)
+- [@official@Google Drive](https://drive.google.com)
