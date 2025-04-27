@@ -584,7 +584,7 @@
         "type": "course"
       },
       {
-        "title": "Linux Roadmap",
+        "title": "Visit Linux Roadmap",
         "url": "https://roadmap.sh/linux",
         "type": "article"
       },
@@ -615,8 +615,8 @@
     "description": "**macOS** is an operating system developed by Apple Inc. for its line of Mac computers. Known for its user-friendly interface and integration with other Apple products, macOS features a Unix-based architecture, offering stability, security, and performance. It includes a suite of built-in applications, such as Safari, Mail, and Finder, and supports a wide range of third-party software. macOS provides seamless integration with services like iCloud, Continuity, and Handoff, enhancing productivity and connectivity across Apple devices. Regular updates and a focus on design and usability make macOS a popular choice for both personal and professional use.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "MacOS Website",
-        "url": "https://www.apple.com/uk/macos/macos-sequoia/",
+        "title": "macOS",
+        "url": "https://www.apple.com/macos/macos-sequoia/",
         "type": "article"
       },
       {
@@ -874,7 +874,7 @@
     "description": "**Loopback** refers to a special network interface used to send traffic back to the same device for testing and diagnostic purposes. The loopback address for IPv4 is `127.0.0.1`, while for IPv6 it is `::1`. When a device sends a request to the loopback address, the network data does not leave the local machine; instead, it is processed internally, allowing developers to test applications or network services without requiring external network access. Loopback is commonly used to simulate network traffic, check local services, or debug issues locally.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Understanding the loopback address and loopback interfaces",
+        "title": "Understanding the Loopback Address and Loopback Interfaces",
         "url": "https://study-ccna.com/loopback-interface-loopback-address/",
         "type": "article"
       }
@@ -964,6 +964,11 @@
     "title": "ARP",
     "description": "Address Resolution Protocol (ARP) is a crucial mechanism used in networking that allows the Internet Protocol (IP) to map an IP address to a corresponding physical address, commonly known as a Media Access Control (MAC) address. This protocol is essential for enabling devices within a Local Area Network (LAN) to communicate by translating IP addresses into specific hardware addresses.\n\nWhen one device on a LAN wants to communicate with another, it needs to know the MAC address associated with the target device’s IP address. ARP facilitates this by sending out an ARP request, which broadcasts the target IP to all devices in the network. Each device checks the requested IP against its own. The device that recognizes the IP as its own responds with an ARP reply, which includes its MAC address.\n\nOnce the requesting device receives the MAC address, it updates its ARP cache—a table that stores IP-to-MAC address mappings—allowing it to send data directly to the correct hardware address.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "ARP - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Address_Resolution_Protocol",
+        "type": "article"
+      },
       {
         "title": "What is Address Resolution Protocol?",
         "url": "https://www.fortinet.com/resources/cyberglossary/what-is-arp",
@@ -1304,12 +1309,12 @@
     "description": "Mesh topology is a network architecture where devices or nodes are interconnected with multiple direct, point-to-point links to every other node in the network. This structure allows data to travel from source to destination through multiple paths, enhancing reliability and fault tolerance. In a full mesh topology, every node is connected to every other node, while in a partial mesh, only some nodes have multiple connections. Mesh networks are highly resilient to failures, as traffic can be rerouted if a link goes down. They're commonly used in wireless networks, IoT applications, and critical infrastructure where redundancy and self-healing capabilities are crucial. However, mesh topologies can be complex and expensive to implement, especially in large networks due to the high number of connections required.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is mesh topology?",
+        "title": "What is Mesh Topology?",
         "url": "https://www.lenovo.com/gb/en/glossary/mesh-topology",
         "type": "article"
       },
       {
-        "title": "Mesh topology explained",
+        "title": "Mesh Topology explained",
         "url": "https://www.computerhope.com/jargon/m/mesh.htm",
         "type": "article"
       }
@@ -1713,6 +1718,11 @@
     "description": "ARP is a protocol used by the Internet Protocol (IP) to map an IP address to a physical address, also known as a Media Access Control (MAC) address. ARP is essential for routing data between devices in a Local Area Network (LAN) as it allows for the translation of IP addresses to specific hardware on the network. When a device wants to communicate with another device on the same LAN, it needs to determine the corresponding MAC address for the target IP address. ARP helps in this process by broadcasting an ARP request containing the target IP address. All devices within the broadcast domain receive this ARP request and compare the target IP address with their own IP address. If a match is found, the device with the matching IP address sends an ARP reply which contains its MAC address. The device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "ARP - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Address_Resolution_Protocol",
+        "type": "article"
+      },
+      {
         "title": "What is Address Resolution Protocol?",
         "url": "https://www.fortinet.com/resources/cyberglossary/what-is-arp",
         "type": "article"
@@ -1896,8 +1906,14 @@
   },
   "vYvFuz7lAJXZ1vK_4999a": {
     "title": "Local Auth",
-    "description": "Local authentication refers to the process of verifying a user's identity on a specific device or system without relying on external servers or networks. It typically involves storing and checking credentials directly on the device itself. Common methods include username/password combinations, biometrics (fingerprint, face recognition), or PIN codes. Local authentication is often used for device access, offline applications, or as a fallback when network-based authentication is unavailable. While it offers quick access and works without internet connectivity, it can be less secure than centralized authentication systems and more challenging to manage across multiple devices. Local authentication is commonly used in personal devices, standalone systems, and scenarios where network-based authentication is impractical or unnecessary.",
-    "links": []
+    "description": "Local authentication refers to the process of verifying a user's identity on a specific device or system without relying on external servers or networks. It typically involves storing and checking credentials directly on the device itself. Common methods include username/password combinations, biometrics (fingerprint, face recognition), or PIN codes. Local authentication is often used for device access, offline applications, or as a fallback when network-based authentication is unavailable. While it offers quick access and works without internet connectivity, it can be less secure than centralized authentication systems and more challenging to manage across multiple devices. Local authentication is commonly used in personal devices, standalone systems, and scenarios where network-based authentication is impractical or unnecessary.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Local authentication, registration, and other settings",
+        "url": "https://learn.microsoft.com/en-us/power-pages/security/authentication/set-authentication-identity",
+        "type": "article"
+      }
+    ]
   },
   "_hYN0gEi9BL24nptEtXWU": {
     "title": "Security Skills and Knowledge",
@@ -2256,7 +2272,7 @@
   },
   "WG7DdsxESm31VcLFfkVTz": {
     "title": "Authentication vs Authorization",
-    "description": "Authentication vs Authorization\n-------------------------------\n\n**Authentication** is the process of validating the identity of a user, device, or system. It confirms that the entity attempting to access the resource is who or what they claim to be. The most common form of authentication is the use of usernames and passwords. Other methods include:\n\n**Authorization** comes into play after the authentication process is complete. It involves granting or denying access to a resource, based on the authenticated user's privileges. Authorization determines what actions the authenticated user or entity is allowed to perform within a system or application.",
+    "description": "**Authentication** is the process of validating the identity of a user, device, or system. It confirms that the entity attempting to access the resource is who or what they claim to be. The most common form of authentication is the use of usernames and passwords. Other methods include:\n\n**Authorization** comes into play after the authentication process is complete. It involves granting or denying access to a resource, based on the authenticated user's privileges. Authorization determines what actions the authenticated user or entity is allowed to perform within a system or application.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Two-factor authentication (2FA)",
@@ -2430,7 +2446,7 @@
   },
   "v7CD_sHqLWbm9ibXXESIK": {
     "title": "Learn how Malware works and Types",
-    "description": "Malware, short for malicious software, refers to any software intentionally created to cause harm to a computer system, server, network, or user. It is a broad term that encompasses various types of harmful software created by cybercriminals for various purposes. In this guide, we will delve deeper into the major types of malware and their characteristics.\n\nVirus\n-----\n\nA computer virus is a type of malware that, much like a biological virus, attaches itself to a host (e.g., a file or software) and replicates when the host is executed. Viruses can corrupt, delete or modify data, and slow down system performance.\n\nWorm\n----\n\nWorms are self-replicating malware that spread through networks without human intervention. They exploit system vulnerabilities, consuming bandwidth and sometimes carrying a payload to infect target machines.\n\nTrojan Horse\n------------\n\nA trojan horse is a piece of software disguised as a legitimate program but contains harmful code. Users unknowingly download and install it, giving the attacker unauthorized access to the computer or network. Trojans can be used to steal data, create a backdoor, or launch additional malware attacks.\n\nRansomware\n----------\n\nRansomware is a type of malware that encrypts its victims' files and demands a ransom, typically in the form of cryptocurrency, for the decryption key. If the victim refuses or fails to pay within a specified time, the encrypted data may be lost forever.\n\nSpyware\n-------\n\nSpyware is a type of malware designed to collect and relay information about a user or organization without their consent. It can capture keystrokes, record browsing history, and access personal data such as usernames and passwords.\n\nAdware\n------\n\nAdware is advertising-supported software that automatically displays or downloads advertising materials, often in the form of pop-up ads, on a user's computer. While not always malicious, adware can be intrusive and open the door for other malware infections.\n\nRootkit\n-------\n\nA rootkit is a type of malware designed to hide or obscure the presence of other malicious programs on a computer system. This enables it to maintain persistent unauthorized access to the system and can make it difficult for users or security software to detect and remove infected files.\n\nKeylogger\n---------\n\nKeyloggers are a type of malware that monitor and record users' keystrokes, allowing attackers to capture sensitive information, such as login credentials or financial information entered on a keyboard.\n\nUnderstanding the different types of malware can help you better identify and protect against various cyber threats. As the cyber landscape continues to evolve, it's essential to stay informed about emerging malware and equip yourself with the necessary security skills and knowledge.",
+    "description": "Malware, short for malicious software, refers to any software intentionally created to cause harm to a computer system, server, network, or user. It is a broad term that encompasses various types of harmful software created by cybercriminals for various purposes. In this guide, we will delve deeper into the major types of malware and their characteristics.\n\nVirus\n-----\n\nA computer virus is a type of malware that, much like a biological virus, attaches itself to a host (e.g., a file or software) and replicates when the host is executed. Viruses can corrupt, delete or modify data, and slow down system performance.\n\nWorm\n----\n\nWorms are self-replicating malware that spread through networks without human intervention. They exploit system vulnerabilities, consuming bandwidth and sometimes carrying a payload to infect target machines.\n\nTrojan Horse\n------------\n\nA trojan horse is a piece of software disguised as a legitimate program but contains harmful code. Users unknowingly download and install it, giving the attacker unauthorized access to the computer or network. Trojans can be used to steal data, create a backdoor, or launch additional malware attacks.\n\nRansomware\n----------\n\nRansomware is a type of malware that encrypts its victims' files and demands a ransom, typically in the form of cryptocurrency, for the decryption key. If the victim refuses or fails to pay within a specified time, the encrypted data may be lost forever.\n\nSpyware\n-------\n\nSpyware is a type of malware designed to collect and relay information about a user or organization without their consent. It can capture keystrokes, record browsing history, and access personal data such as usernames and passwords.\n\nAdware\n------\n\nAdware is advertising-supported software that automatically displays or downloads advertising materials, often in the form of pop-up ads, on a user's computer. While not always malicious, adware can be intrusive and open the door for other malware infections.\n\nRootkit\n-------\n\nA rootkit is a type of malware designed to hide or obscure the presence of other malicious programs on a computer system. This enables it to maintain persistent unauthorized access to the system and can make it difficult for users or security software to detect and remove infected files.\n\nKeylogger\n---------\n\nKeyloggers are a type of malware that monitor and record users' keystrokes, allowing attackers to capture sensitive information, such as login credentials or financial information entered on a keyboard.\n\nLearn more from the following resources:",
     "links": []
   },
   "Hoou7kWyfB2wx_yFHug_H": {
@@ -2438,7 +2454,7 @@
     "description": "**Nmap** (Network Mapper) is an open-source network scanning tool used to discover hosts and services on a network, identify open ports, and detect vulnerabilities. It provides detailed information about networked devices, including their IP addresses, operating systems, and running services. Nmap supports various scanning techniques such as TCP SYN scan, UDP scan, and service version detection. It's widely used for network security assessments, vulnerability scanning, and network inventory management, helping administrators and security professionals understand and secure their network environments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "NMAP Website",
+        "title": "NMAP",
         "url": "https://nmap.org/",
         "type": "article"
       },
@@ -2446,6 +2462,11 @@
         "title": "NMAP Cheat Sheet",
         "url": "https://www.tutorialspoint.com/nmap-cheat-sheet",
         "type": "article"
+      },
+      {
+        "title": "Nmap Tutorial to find Network Vulnerabilities",
+        "url": "https://www.youtube.com/watch?v=4t4kBkMsDbQ",
+        "type": "video"
       }
     ]
   },
@@ -2538,6 +2559,11 @@
     "title": "arp",
     "description": "ARP is a protocol used by the Internet Protocol (IP) to map an IP address to a physical address, also known as a Media Access Control (MAC) address. ARP is essential for routing data between devices in a Local Area Network (LAN) as it allows for the translation of IP addresses to specific hardware on the network. When a device wants to communicate with another device on the same LAN, it needs to determine the corresponding MAC address for the target IP address. ARP helps in this process by broadcasting an ARP request containing the target IP address. All devices within the broadcast domain receive this ARP request and compare the target IP address with their own IP address. If a match is found, the device with the matching IP address sends an ARP reply which contains its MAC address. The device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "ARP - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Address_Resolution_Protocol",
+        "type": "article"
+      },
       {
         "title": "What is Address Resolution Protocol?",
         "url": "https://www.fortinet.com/resources/cyberglossary/what-is-arp",
@@ -2661,6 +2687,11 @@
     "description": "**memdump** is a tool or process used to capture the contents of a computer's physical memory (RAM) for analysis. This \"memory dump\" can be useful in digital forensics, debugging, or incident response to identify active processes, open files, network connections, or potentially malicious code running in memory. By analyzing a memory dump, security professionals can investigate malware, recover encryption keys, or gather evidence in case of a breach. Tools like `memdump` (Linux utility) or `DumpIt` (Windows) are commonly used to perform this process.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "memdump - Github",
+        "url": "https://github.com/tchebb/memdump",
+        "type": "opensource"
+      },
+      {
         "title": "memdump",
         "url": "https://www.kali.org/tools/memdump/",
         "type": "article"
@@ -2688,7 +2719,7 @@
     "description": "Autopsy is a versatile and powerful open-source digital forensics platform that is primarily used for incident response, cyber security investigations, and data recovery. As an investigator, you can utilize Autopsy to quickly and efficiently analyze a compromised system, extract crucial artifacts, and generate comprehensive reports. Integrated with The Sleuth Kit and other plug-ins, Autopsy allows examiners to automate tasks and dig deep into a system's structure to discover the root cause of an incident.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Autopsy Website",
+        "title": "Autopsy",
         "url": "https://www.autopsy.com/",
         "type": "article"
       },
@@ -2917,7 +2948,7 @@
     "description": "**NIST (National Institute of Standards and Technology)** is a U.S. federal agency that develops and promotes measurement standards, technology, and best practices. In the context of cybersecurity, NIST provides widely recognized guidelines and frameworks, such as the **NIST Cybersecurity Framework (CSF)**, which offers a structured approach to managing and mitigating cybersecurity risks. NIST also publishes the **NIST Special Publication (SP) 800 series**, which includes standards and guidelines for securing information systems, protecting data, and ensuring system integrity. These resources are essential for organizations seeking to enhance their security posture and comply with industry regulations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "NIST Website",
+        "title": "NIST",
         "url": "https://www.nist.gov/",
         "type": "article"
       },
@@ -3060,7 +3091,7 @@
     "description": "**LOLBAS** (Living Off the Land Binaries and Scripts) refers to a collection of legitimate system binaries and scripts that can be abused by attackers to perform malicious actions while evading detection. These tools, which are often part of the operating system or installed software, can be leveraged for various purposes, such as executing commands, accessing data, or modifying system configurations, thereby allowing attackers to carry out their activities without deploying custom malware. The use of LOLBAS techniques makes it harder for traditional security solutions to detect and prevent malicious activities since the binaries and scripts used are typically trusted and deemed legitimate.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "LOLBAS project",
+        "title": "LOLBAS Project",
         "url": "https://lolbas-project.github.io/#",
         "type": "article"
       },
@@ -3113,7 +3144,7 @@
     "description": "**NetFlow** is a network protocol developed by Cisco for collecting and analyzing network traffic data. It provides detailed information about network flows, including the source and destination IP addresses, ports, and the amount of data transferred. NetFlow data helps network administrators monitor traffic patterns, assess network performance, and identify potential security threats. By analyzing flow data, organizations can gain insights into bandwidth usage, detect anomalies, and optimize network resources. NetFlow is widely supported across various network devices and often integrated with network management and security tools for enhanced visibility and control.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Cisco NetFlow Website",
+        "title": "Cisco NetFlow",
         "url": "https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html",
         "type": "article"
       },
@@ -3174,7 +3205,7 @@
   },
   "6oAzYfwsHQYNVbi7c2Tly": {
     "title": "NAC-based",
-    "description": "Network Access Control (NAC) based hardening is a crucial component in enhancing the security of your network infrastructure. NAC provides organizations with the ability to control and manage access to the network resources, ensuring that only authorized users and devices can connect to the network. It plays a vital role in reducing the attack surface and preventing unauthorized access to sensitive data and resources. By implementing NAC-based hardening in your cybersecurity strategy, you protect your organization from threats and maintain secure access to critical resources.\n\nLearn more from the following resouces:",
+    "description": "Network Access Control (NAC) based hardening is a crucial component in enhancing the security of your network infrastructure. NAC provides organizations with the ability to control and manage access to the network resources, ensuring that only authorized users and devices can connect to the network. It plays a vital role in reducing the attack surface and preventing unauthorized access to sensitive data and resources. By implementing NAC-based hardening in your cybersecurity strategy, you protect your organization from threats and maintain secure access to critical resources.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is Network Access Control",
@@ -3407,12 +3438,12 @@
     "description": "Antivirus software is a specialized program designed to detect, prevent, and remove malicious software, such as viruses, worms, and trojans, from computer systems. It works by scanning files and programs for known malware signatures, monitoring system behavior for suspicious activity, and providing real-time protection against potential threats. Regular updates are essential for antivirus software to recognize and defend against the latest threats. While it is a critical component of cybersecurity, antivirus solutions are often part of a broader security strategy that includes firewalls, anti-malware tools, and user education to protect against a wide range of cyber threats.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is antivirus software?",
+        "title": "What is Antivirus Software?",
         "url": "https://www.webroot.com/gb/en/resources/tips-articles/what-is-anti-virus-software",
         "type": "article"
       },
       {
-        "title": "What is an antivirus and how does it keep us safe?",
+        "title": "What is an Antivirus and how does it keep us safe?",
         "url": "https://www.youtube.com/watch?v=jW626WMWNAE",
         "type": "video"
       }
@@ -3423,7 +3454,12 @@
     "description": "Anti-malware is a type of software designed to detect, prevent, and remove malicious software, such as viruses, worms, trojans, ransomware, and spyware, from computer systems. By continuously scanning files, applications, and incoming data, anti-malware solutions protect devices from a wide range of threats that can compromise system integrity, steal sensitive information, or disrupt operations. Advanced anti-malware programs utilize real-time monitoring, heuristic analysis, and behavioral detection techniques to identify and neutralize both known and emerging threats, ensuring that systems remain secure against evolving cyber attacks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is antimalware?",
+        "title": "Anti-malware Definition",
+        "url": "https://www.computertechreviews.com/definition/anti-malware/",
+        "type": "article"
+      },
+      {
+        "title": "What is Antimalware?",
         "url": "https://riskxchange.co/1006974/cybersecurity-what-is-anti-malware/",
         "type": "article"
       },
@@ -3811,7 +3847,7 @@
     "description": "ANY.RUN is an interactive online malware analysis platform that allows users to safely execute and analyze suspicious files and URLs in a controlled, virtualized environment. This sandbox service provides real-time insights into the behavior of potentially malicious software, such as how it interacts with the system, what files it modifies, and what network connections it attempts to make. Users can observe and control the analysis process, making it a valuable tool for cybersecurity professionals to identify and understand new threats, assess their impact, and develop appropriate countermeasures. ANY.RUN is particularly useful for dynamic analysis, enabling a deeper understanding of malware behavior in real-time.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "ANY.RUN Website",
+        "title": "Any.run",
         "url": "https://any.run/",
         "type": "article"
       },
@@ -4162,7 +4198,7 @@
     "description": "A Man-in-the-Middle (MITM) attack occurs when a malicious actor intercepts communication between two parties, such as a user and a website, without their knowledge. The attacker can eavesdrop, alter, or inject false information into the communication, often to steal sensitive data like login credentials or manipulate transactions. MITM attacks are commonly executed through compromised Wi-Fi networks or by exploiting security vulnerabilities in protocols.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Wikipedia - Man-in-the-middle attack",
+        "title": "Man-in-the-middle attack",
         "url": "https://en.wikipedia.org/wiki/Man-in-the-middle_attack",
         "type": "article"
       }
@@ -4276,7 +4312,7 @@
   },
   "nOND14t7ISgSH3zNpV3F8": {
     "title": "Memory Leak",
-    "description": "A Memory Leak occurs when a computer program consumes memory but fails to release it back to the operating system after it is no longer needed. Over time, this can lead to reduced system performance, increased memory usage, and, in severe cases, the program or system may crash due to the exhaustion of available memory.",
+    "description": "A Memory Leak occurs when a computer program consumes memory but fails to release it back to the operating system after it is no longer needed. Over time, this can lead to reduced system performance, increased memory usage, and, in severe cases, the program or system may crash due to the exhaustion of available memory.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What are memory leaks?",
@@ -4443,7 +4479,7 @@
     "description": "A legal department within an organization is responsible for handling all legal matters that affect the business, ensuring compliance with laws and regulations, and providing advice on various legal issues. Its primary functions include managing contracts, intellectual property, employment law, and regulatory compliance, as well as addressing disputes, litigation, and risk management. The legal department also plays a crucial role in corporate governance, ensuring that the company operates within the boundaries of the law while minimizing legal risks. In some cases, they work with external legal counsel for specialized legal matters, such as mergers and acquisitions or complex litigation.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Key functions of a legal team",
+        "title": "Key Functions of a Legal Team",
         "url": "https://uk.practicallaw.thomsonreuters.com/w-009-3932?transitionType=Default&contextData=(sc.Default)&firstPage=true",
         "type": "article"
       },
@@ -4703,12 +4739,12 @@
         "type": "course"
       },
       {
-        "title": "AWS Roadmap",
+        "title": "Visit Dedicated AWS Roadmap",
         "url": "https://roadmap.sh/aws",
         "type": "article"
       },
       {
-        "title": "AWS Website",
+        "title": "AWS",
         "url": "https://aws.amazon.com",
         "type": "article"
       },
@@ -4745,7 +4781,7 @@
     "description": "Azure is Microsoft's comprehensive cloud computing platform that offers a wide range of services for building, deploying, and managing applications. It provides infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) solutions, supporting various programming languages, tools, and frameworks. Azure's services include virtual machines, storage, databases, AI and machine learning, IoT, and more. It offers global data center coverage, integrated DevOps tools, and robust security features, making it a versatile platform for businesses of all sizes to innovate, scale, and transform their operations in the cloud.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Azure Website",
+        "title": "Azure",
         "url": "https://azure.microsoft.com",
         "type": "article"
       },
