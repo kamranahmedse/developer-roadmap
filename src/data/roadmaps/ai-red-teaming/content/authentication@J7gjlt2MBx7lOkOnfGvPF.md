@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@article@Red-Teaming in AI Testing: Stress Testing](https://www.labelvisor.com/red-teaming-abstract-competitive-testing-data-selection/)
 - [@article@What is Authentication vs Authorization?](https://auth0.com/intro-to-iam/authentication-vs-authorization)
-- [@video@How JWTs are used for Authentication (and how to bypass it)](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3Dexample_video_panel_url?v=3OpQi65s_ME)
+- [@article@JWT Attacks](https://portswigger.net/web-security/jwt)
