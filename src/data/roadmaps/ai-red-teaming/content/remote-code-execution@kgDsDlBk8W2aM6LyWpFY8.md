@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@article@Exploiting LLMs with Code Execution (GitHub Gist)](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516)
 - [@article@What is remote code execution?](https://www.cloudflare.com/learning/security/what-is-remote-code-execution/)
-- [@video@DEFCON 31 - AI Village - Hacking an LLM embedded system (agent) - Johann Rehberger](https://www.google.com/search?q=https://www.youtube.com/watch%3Fv%3D6u04C1N69ks?v=1FfYnF2GXVU)
+  

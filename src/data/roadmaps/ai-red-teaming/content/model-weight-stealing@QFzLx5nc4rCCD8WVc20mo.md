@@ -6,5 +6,4 @@ Learn more from the following resources:
 
 - [@article@A Playbook for Securing AI Model Weights](https://www.rand.org/pubs/research_briefs/RBA2849-1.html)
 - [@article@How to Steal a Machine Learning Model (SkyCryptor)](https://skycryptor.com/blog/how-to-steal-a-machine-learning-model)
-- [@paper@Defense Against Model Stealing (Microsoft Research)](https://www.microsoft.com/en-us/research/publication/defense-against-model-stealing-attacks/)
 - [@paper@On the Limitations of Model Stealing with Uncertainty Quantification Models](https://openreview.net/pdf?id=ONRFHoUzNk)

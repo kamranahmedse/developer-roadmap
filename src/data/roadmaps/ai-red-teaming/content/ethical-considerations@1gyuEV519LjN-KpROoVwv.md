@@ -7,4 +7,3 @@ Learn more from the following resources:
 - [@article@Red-Teaming in AI Testing: Stress Testing](https://www.labelvisor.com/red-teaming-abstract-competitive-testing-data-selection/)
 - [@article@Responsible AI assessment - Responsible AI | Coursera](https://www.coursera.org/learn/ai-security)
 - [@guide@Responsible AI Principles (Microsoft)](https://www.microsoft.com/en-us/ai/responsible-ai)
-- [@video@Questions to Guide AI Red-Teaming (CMU SEI)](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=928382)

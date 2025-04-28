@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@article@The Complete Guide to Red Teaming: Process, Benefits & More](https://mindgard.ai/blog/red-teaming)
 - [@article@The Complete Red Teaming Checklist [PDF]: 5 Key Steps - Mindgard AI](https://mindgard.ai/blog/red-teaming-checklist)
-- [@article@What is AI Red Teaming? - Learn Prompting](https://learnprompting.org/docs/category/ai-red-teaming)
+- [@article@Red Teaming in Defending AI Systems](https://protectai.com/blog/expanding-role-red-teaming-defending-ai-systems)

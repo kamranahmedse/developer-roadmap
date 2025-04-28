@@ -4,6 +4,6 @@ AI Red Teamers test if vulnerabilities in the AI system or its interfaces allow 
 
 Learn more from the following resources:
 
-- [@article@Unauthorized Data Access via LLMs (Security Boulevard)](https://securityboulevard.com/2023/11/unauthorized-data-access-via-llms/)
+- [@article@Defending Model Files from Unauthorized Access](https://developer.nvidia.com/blog/defending-ai-model-files-from-unauthorized-access-with-canaries/)
 - [@guide@OWASP API Security Project](https://owasp.org/www-project-api-security/)
-- [@paper@AI System Abuse Cases (Harvard Belfer Center)](https://www.belfercenter.org/publication/ai-system-abuse-cases)
+- [@article@Detecting Unauthorized Usage](https://www.unr.edu/digital-learning/instructional-strategies/understanding-and-integrating-generative-ai-in-teaching/how-can-i-detect-unauthorized-ai-usage)

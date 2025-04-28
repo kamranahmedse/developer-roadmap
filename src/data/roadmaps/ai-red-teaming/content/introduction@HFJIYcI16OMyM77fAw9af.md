@@ -7,4 +7,3 @@ Learn more from the following resources:
 - [@article@A Guide to AI Red Teaming](https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/)
 - [@article@What is AI Red Teaming? (Learn Prompting)](https://learnprompting.org/blog/what-is-ai-red-teaming)
 - [@article@What is AI Red Teaming? The Complete Guide](https://mindgard.ai/blog/what-is-ai-red-teaming)
-- [@podcast@Red Team Podcast - AI Red Teaming Insights & Defense Strategies](https://mindgard.ai/podcast/red-team)

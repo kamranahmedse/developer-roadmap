@@ -7,4 +7,3 @@ Learn more from the following resources:
 - [@article@Core Components of AI Red Team Exercises (Learn Prompting)](https://learnprompting.org/blog/what-is-ai-red-teaming)
 - [@guide@Threat Modeling Process](https://owasp.org/www-community/Threat_Modeling_Process)
 - [@guide@Threat Modeling](https://owasp.org/www-community/Threat_Modeling)
-- [@video@How Microsoft Approaches AI Red Teaming (MS Build)](https://learn.microsoft.com/en-us/events/build-may-2023/breakout-responsible-ai-red-teaming/)

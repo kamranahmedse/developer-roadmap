@@ -6,5 +6,4 @@ Learn more from the following resources:
 
 - [@course@AI Red Teaming Courses - Learn Prompting](https://learnprompting.org/blog/ai-red-teaming-courses)
 - [@course@AI Security | Coursera](https://www.coursera.org/learn/ai-security)
-- [@course@Exploring Adversarial Machine Learning](https://www.nvidia.com/en-us/training/instructor-led-workshops/exploring-adversarial-machine-learning/)
 - [@course@Free Online Cyber Security Courses with Certificates in 2025](https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/)

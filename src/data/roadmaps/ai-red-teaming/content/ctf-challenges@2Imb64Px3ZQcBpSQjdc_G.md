@@ -4,7 +4,6 @@ Capture The Flag competitions increasingly include AI/ML security challenges. Pa
 
 Learn more from the following resources:
 
-- [@article@Capture the flag (cybersecurity)](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)
+- [@platform@HackAPrompt](https://www.hackaprompt.com/)
 - [@article@Progress from our Frontier Red Team](https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team)
 - [@platform@CTFtime.org](https://ctftime.org/)
-- [@platform@picoCTF](https://picoctf.org/)

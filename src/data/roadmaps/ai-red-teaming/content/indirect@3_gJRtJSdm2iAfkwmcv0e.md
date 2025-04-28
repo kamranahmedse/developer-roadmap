@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@paper@The Practical Application of Indirect Prompt Injection Attacks](https://www.researchgate.net/publication/382692833_The_Practical_Application_of_Indirect_Prompt_Injection_Attacks_From_Academia_to_Industry)
 - [@article@How to Prevent Indirect Prompt Injection Attacks](https://www.cobalt.io/blog/how-to-prevent-indirect-prompt-injection-attacks)
-- [@article@Jailbreaks via Indirect Injection (Practical AI Safety Newsletter)](https://newsletter.practicalai.safety/p/jailbreaks-via-indirect-injection)
+- [@article@Indirect Prompt Injection Data Exfiltration](https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/)

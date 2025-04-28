@@ -5,5 +5,5 @@ Jailbreaking is a specific category of prompt hacking where the AI Red Teamer ai
 Learn more from the following resources:
 
 - [@article@InjectPrompt (David Willis-Owen)](https://injectprompt.com)
-- [@guide@Prompt Hacking Guide - Learn Prompting](https://learnprompting.org/docs/category/prompt-hacking)
+- [@guide@Jailbreaking Guide - Learn Prompting](https://learnprompting.org/docs/prompt_hacking/jailbreaking)
 - [@paper@Jailbroken: How Does LLM Safety Training Fail? (arXiv)](https://arxiv.org/abs/2307.02483)
