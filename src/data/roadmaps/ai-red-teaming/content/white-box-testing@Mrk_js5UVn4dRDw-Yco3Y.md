@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@article@Black-Box, Gray Box, and White-Box Penetration Testing](https://www.eccouncil.org/cybersecurity-exchange/penetration-testing/black-box-gray-box-and-white-box-penetration-testing-importance-and-uses/)
 - [@article@What is White Box Penetration Testing](https://www.getastra.com/blog/security-audit/white-box-penetration-testing/)
-- [@tool@Spikee](https://spikee.ai)
+- [@article@The Art of White Box Pentesting](https://infosecwriteups.com/cracking-the-code-the-art-of-white-box-pentesting-de296bc22c67)
