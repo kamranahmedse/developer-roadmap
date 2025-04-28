@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@article@Automation Testing vs. Manual Testing: Which is the better approach?](https://www.opkey.com/blog/automation-testing-vs-manual-testing-which-is-better)
 - [@article@Manual Testing vs Automated Testing: What's the Difference?](https://www.leapwork.com/blog/manual-vs-automated-testing)
-- [@guide@LLM red teaming guide (open source)](https://www.promptfoo.dev/docs/red-team/)
+- [@tool@Spikee](https://spikee.ai)
