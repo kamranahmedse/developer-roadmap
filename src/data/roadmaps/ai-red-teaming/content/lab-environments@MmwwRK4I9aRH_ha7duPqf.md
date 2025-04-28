@@ -4,7 +4,8 @@ AI Red Teamers need environments to practice attacking vulnerable systems safely
 
 Learn more from the following resources:
 
+- [@platform@HackAPrompt Playground](https://learnprompting.org/hackaprompt-playground)
+- [@platform@InjectPrompt Playground](https://playground.injectprompt.com/)
 - [@platform@Gandalf AI Prompt Injection Lab](https://gandalf.lakera.ai/)
 - [@platform@Hack The Box: Hacking Labs](https://www.hackthebox.com/hacker/hacking-labs)
 - [@platform@TryHackMe: Learn Cyber Security](https://tryhackme.com/)
-- [@platform@VulnHub](https://www.vulnhub.com/)
