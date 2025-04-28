@@ -4,8 +4,6 @@ For AI Red Teamers, prompt engineering is both a tool and a target. It's a tool 
 
 Learn more from the following resources:
 
-- [@article@Introduction to Prompt Engineering](https://www.datacamp.com/tutorial/introduction-prompt-engineering)
 - [@article@System Prompts - InjectPrompt](https://www.injectprompt.com/t/system-prompts)
 - [@course@Introduction to Prompt Engineering](https://learnprompting.org/courses/intro-to-prompt-engineering)
-- [@guide@Prompt Engineering Guide](https://learnprompting.org/docs/prompt-engineering)
 - [@guide@The Ultimate Guide to Red Teaming LLMs and Adversarial Prompts (Kili Technology)](https://kili-technology.com/large-language-models-llms/red-teaming-llms-and-adversarial-prompts)
