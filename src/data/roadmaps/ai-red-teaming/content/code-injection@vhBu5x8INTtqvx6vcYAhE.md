@@ -5,5 +5,5 @@ AI Red Teamers test for code injection vulnerabilities specifically in the conte
 Learn more from the following resources:
 
 - [@article@Code Injection in LLM Applications](https://neuraltrust.ai/blog/code-injection-in-llms)
-- [@docs@Secure Plugin Sandboxing (OpenAI Plugins)](https://platform.openai.com/docs/plugins/production/security-requirements)
+- [@article@Code Injection](https://learnprompting.org/docs/prompt_hacking/offensive_measures/code_injection)
 - [@guide@Code Injection](https://owasp.org/www-community/attacks/Code_Injection)
