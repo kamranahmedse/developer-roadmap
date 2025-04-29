@@ -389,6 +389,11 @@ const groups: GroupType[] = [
         type: 'role',
       },
       {
+        title: 'AI Agents',
+        link: '/ai-agents',
+        type: 'role',
+      },
+      {
         title: 'AI Red Teaming',
         link: '/ai-red-teaming',
         type: 'skill',
