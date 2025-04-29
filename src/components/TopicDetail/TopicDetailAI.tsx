@@ -26,6 +26,7 @@ import { readStream } from '../../lib/ai';
 import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import type { ResourceType } from '../../lib/resource-progress';
 import { getPercentage } from '../../lib/number';
+import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 
 type TopicDetailAIProps = {
   resourceId: string;
@@ -51,6 +52,10 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const scrollareaRef = useRef<HTMLDivElement>(null);
 
+  const sanitizedTopicId = topicId?.includes('@')
+    ? topicId?.split('@')?.[1]
+    : topicId;
+
   const toast = useToast();
   const [message, setMessage] = useState('');
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
@@ -63,6 +68,20 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
+
+  const { data: roadmapTreeMapping, isLoading: isRoadmapTreeMappingLoading } =
+    useQuery(
+      {
+        ...roadmapTreeMappingOptions(resourceId),
+        select: (data) => {
+          const node = data.find(
+            (mapping) => mapping.nodeId === sanitizedTopicId,
+          );
+          return node;
+        },
+      },
+      queryClient,
+    );
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -108,10 +127,6 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   const completeAITutorChat = async (messages: AIChatHistoryType[]) => {
     try {
       setIsStreamingMessage(true);
-
-      const sanitizedTopicId = topicId?.includes('@')
-        ? topicId?.split('@')?.[1]
-        : topicId;
 
       const response = await fetch(
         `${import.meta.env.PUBLIC_API_URL}/v1-topic-detail-chat`,
@@ -194,22 +209,61 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     scrollToBottom();
   }, []);
 
-  const isDataLoading = isLoading || isBillingDetailsLoading;
+  const isDataLoading =
+    isLoading || isBillingDetailsLoading || isRoadmapTreeMappingLoading;
   const usagePercentage = getPercentage(
     tokenUsage?.used || 0,
     tokenUsage?.limit || 0,
   );
+  const hasSubjects =
+    roadmapTreeMapping?.subjects && roadmapTreeMapping?.subjects?.length > 0;
 
   return (
-    <div className="mt-4 flex grow flex-col overflow-hidden rounded-lg border">
-      <div className="flex items-center justify-between gap-2 border-b border-gray-200 px-4 py-2 text-sm">
-        <h4 className="flex items-center gap-2 text-base font-medium">
-          <BotIcon
-            className="relative -top-[1px] size-5 shrink-0 text-black"
-            strokeWidth={2.5}
-          />
-          AI Tutor
-        </h4>
+    <div className="mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
+      {hasSubjects && (
+        <div className="border-b border-gray-200 px-4 py-2">
+          <h4 className="flex items-center gap-2 text-base">
+            Complete the following courses on AI Tutor
+          </h4>
+
+          <div className="mt-2.5 flex flex-wrap gap-1 text-sm">
+            {roadmapTreeMapping?.subjects?.map((subject) => {
+              return (
+                <a
+                  key={subject}
+                  target="_blank"
+                  href={`/ai/search?term=${subject}&difficulty=beginner`}
+                  className="rounded-md border px-1.5"
+                >
+                  {subject}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      <div
+        className={cn(
+          'flex items-center justify-between gap-2 border-gray-200 px-4 py-2 text-sm',
+          !hasSubjects && 'border-b',
+        )}
+      >
+        {hasSubjects && (
+          <span className="flex items-center gap-2 text-base">
+            or start chatting with AI
+          </span>
+        )}
+
+        {!hasSubjects && (
+          <h4 className="flex items-center gap-2 text-base font-medium">
+            <BotIcon
+              className="relative -top-[1px] size-5 shrink-0 text-black"
+              strokeWidth={2.5}
+            />
+            AI Tutor
+          </h4>
+        )}
 
         {!isDataLoading && !isPaidUser && (
           <p className="text-sm text-gray-500">
