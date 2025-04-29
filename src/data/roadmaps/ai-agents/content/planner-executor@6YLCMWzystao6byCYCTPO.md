@@ -1,1 +1,3 @@
 # Planner Executor
+
+A planner-executor agent splits its work into two clear parts. First, the planner thinks ahead. It looks at a goal, lists the steps needed, and puts them in the best order. Second, the executor acts. It takes each planned step and carries it out, checking results as it goes. If something fails or the world changes, the planner may update the plan, and the executor follows the new steps. This divide-and-conquer style lets the agent handle big tasks without losing track of small actions. It is easy to debug, supports reuse of plans, and helps keep the agent’s behavior clear and steady.

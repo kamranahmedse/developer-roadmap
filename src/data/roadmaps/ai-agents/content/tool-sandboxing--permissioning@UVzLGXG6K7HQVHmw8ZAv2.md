@@ -1,1 +1,3 @@
 # Tool sandboxing / Permissioning
+
+Tool sandboxing keeps the AI agent inside a safe zone where it can only run approved actions and cannot touch the wider system. Permissioning sets clear rules that say which files, networks, or commands the agent may use. Together they stop errors, leaks, or abuse by limiting what the agent can reach and do. Developers grant the smallest set of rights, watch activity, and block anything outside the plan. If the agent needs new access, it must ask and get a fresh permit. This simple fence protects user data, reduces harm, and builds trust in the agent’s work.

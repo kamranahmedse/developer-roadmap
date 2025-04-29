@@ -1,1 +1,3 @@
 # What are Tools?
+
+Tools are extra skills or resources that an AI agent can call on to finish a job. A tool can be anything from a web search API to a calculator, a database, or a language-translation engine. The agent sends a request to the tool, gets the result, and then uses that result to move forward. Tools let a small core model handle tasks that would be hard or slow on its own. They also help keep answers current, accurate, and grounded in real data. Choosing the right tool and knowing when to use it are key parts of building a smart agent.

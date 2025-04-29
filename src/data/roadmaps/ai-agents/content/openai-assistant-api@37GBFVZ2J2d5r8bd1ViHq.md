@@ -1,1 +1,3 @@
 # OpenAI Assistant API
+
+The OpenAI Assistants API lets you add clear, task-specific actions to a chat with a large language model. You first describe each action you want the model to use, giving it a name, a short purpose, and a list of inputs in JSON form. During the chat, the model may decide that one of these actions will help. It then returns the name of the action and a JSON object with the input values it thinks are right. Your code receives this call, runs real work such as a database query or a web request, and sends the result back to the model. The model reads the result and continues the chat, now armed with fresh facts. This loop lets you keep control of what real work happens while still letting the model plan and talk in natural language.

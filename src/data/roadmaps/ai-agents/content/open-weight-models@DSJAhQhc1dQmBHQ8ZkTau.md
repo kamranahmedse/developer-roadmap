@@ -1,1 +1,3 @@
 # Open Weight Models
+
+Open-weight models are neural networks whose trained parameters, also called weights, are shared with everyone. Anyone can download the files, run the model, fine-tune it, or build tools on top of it. The licence that comes with the model spells out what you are allowed to do. Some licences are very permissive and even let you use the model for commercial work. Others allow only research or personal projects. Because the weights are public, the community can inspect how the model works, check for bias, and suggest fixes. Open weights also lower costs, since teams do not have to train a large model from scratch. Well-known examples include BLOOM, Falcon, and Llama 2.

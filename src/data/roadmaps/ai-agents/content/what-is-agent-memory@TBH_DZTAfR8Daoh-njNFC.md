@@ -1,1 +1,3 @@
 # What is Agent Memory?
+
+Agent memory is the part of an AI agent that keeps track of what has already happened. It stores past user messages, facts the agent has learned, and its own previous steps. This helps the agent remember goals, user likes and dislikes, and important details across turns or sessions. Memory can be short-term, lasting only for one conversation, or long-term, lasting across many. With a good memory the agent avoids repeating questions, stays consistent, and plans better actions. Without it, the agent would forget everything each time and feel unfocused.

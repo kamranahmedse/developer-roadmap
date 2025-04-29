@@ -1,1 +1,3 @@
 # MCP Hosts
+
+MCP Hosts are the computers or cloud services that run the Model Context Protocol. They keep the protocol code alive, listen for incoming calls, and pass data between users, tools, and language models. A host loads the MCP manifest, checks that requests follow the rules, and stores any state that needs to last between calls. It may cache recent messages, track token use, and add safety or billing checks before it forwards a prompt to the model. Hosts also expose an API endpoint so that outside apps can connect without knowing the low-level details of the protocol. You can run a host on your own laptop for testing or deploy it on a serverless platform for scale; either way, it provides the same trusted place where MCP agents, tools, and data meet.

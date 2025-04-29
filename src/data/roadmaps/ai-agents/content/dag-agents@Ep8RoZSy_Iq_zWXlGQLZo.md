@@ -1,1 +1,3 @@
 # DAG Agents
+
+A DAG (Directed Acyclic Graph) agent is built from many small parts, called nodes, that form a one-way graph with no loops. Each node does a clear task, then passes its result to the next node along a directed edge. Because the graph has no cycles, data always moves forward and never gets stuck in endless repeats. This makes the flow of work easy to follow and test. The layout lets you run nodes that do not depend on each other at the same time, so the agent can work faster. If one node fails, you can see the exact path it took and fix just that part. DAG agents work well for jobs like data cleaning, multi-step reasoning, or any long chain of steps where order matters and backtracking is not needed.

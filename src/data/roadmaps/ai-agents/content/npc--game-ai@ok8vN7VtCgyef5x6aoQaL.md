@@ -1,1 +1,3 @@
 # NPC / Game AI
+
+Game studios often use AI agents to control non-player characters (NPCs). The agent watches the game state and picks actions such as moving, speaking, or fighting. It can switch tactics when the player changes strategy, so battles feel fresh instead of scripted. A quest giver can also use an agent to offer hints that fit the player’s progress. In open-world games, agents help crowds walk around objects, pick new goals, and react to danger, which makes towns feel alive. Designers save time because they write broad rules and let the agent fill in details instead of hand-coding every scene. Better NPC behavior keeps players engaged and raises replay value.

@@ -1,1 +1,3 @@
 # Presence Penalty
+
+Presence penalty is a setting you can adjust when you ask a large language model to write. It pushes the model to choose words it has not used yet. Each time a word has already appeared, the model gets a small score cut for picking it again. A higher penalty gives bigger cuts, so the model looks for new words and fresh ideas. A lower penalty lets the model reuse words more often, which can help with repeats like rhymes or bullet lists. Tuning this control helps you steer the output toward either more variety or more consistency.

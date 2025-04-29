@@ -1,1 +1,3 @@
 # Top-p
+
+Top-p, also called nucleus sampling, is a setting that guides how an LLM picks its next word. The model lists many possible words and sorts them by probability. It then finds the smallest group of top words whose combined chance adds up to the chosen p value, such as 0.9. Only words inside this group stay in the running; the rest are dropped. The model picks one word from the kept group at random, weighted by their original chances. A lower p keeps only the very likely words, so output is safer and more focused. A higher p lets in less likely words, adding surprise and creativity but also more risk of error.

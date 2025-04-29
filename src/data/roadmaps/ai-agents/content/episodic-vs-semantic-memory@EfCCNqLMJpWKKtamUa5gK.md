@@ -1,1 +1,3 @@
 # Episodic vs Semantic Memory
+
+Agent memory often has two parts. Episodic memory stores single events. It keeps data about what happened, when it happened, and who or what was involved. This lets the agent recall a past step-by-step experience, like a diary entry. Semantic memory stores facts that stay the same across time. It holds rules, concepts, and meanings, like the statement “Paris is the capital of France.” The key difference is time and context: episodic memory is tied to a specific moment, while semantic memory is timeless knowledge. Together they help the agent both remember past actions and use general truths to plan new ones.

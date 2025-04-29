@@ -1,1 +1,3 @@
 # Provide additional context
+
+Provide additional context means giving the AI enough background facts, constraints, and goals so it can reply in the way you need. Start by naming the topic and the purpose of the answer. Add who the answer is for, the tone you want, and any limits such as length, format, or style. List key facts, data, or examples that matter to the task. This extra detail stops the model from guessing and keeps replies on target. Think of it like guiding a new teammate: share the details they need, but keep them short and clear.

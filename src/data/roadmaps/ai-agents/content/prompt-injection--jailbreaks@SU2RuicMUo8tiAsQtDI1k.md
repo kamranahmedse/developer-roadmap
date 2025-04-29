@@ -1,1 +1,3 @@
 # Prompt Injection / Jailbreaks
+
+Prompt injection, also called a jailbreak, is a trick that makes an AI system break its own rules. An attacker hides special words or symbols inside normal-looking text. When the AI reads this text, it follows the hidden instructions instead of its safety rules. The attacker might force the AI to reveal private data, produce harmful content, or give wrong advice. This risk grows when the AI talks to other software or pulls text from the internet, because harmful prompts can slip in without warning. Good defenses include cleaning user input, setting strong guardrails inside the model, checking outputs for policy breaks, and keeping humans in the loop for high-risk tasks.

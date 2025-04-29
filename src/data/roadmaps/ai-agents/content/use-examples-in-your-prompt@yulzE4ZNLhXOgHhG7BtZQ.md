@@ -1,1 +1,3 @@
 # Use Examples in your Prompt
+
+A clear way to guide an AI is to place one or two short samples inside your prompt. Show a small input and the exact output you expect. The AI studies these pairs and copies their pattern. Use plain words in the sample, keep the format steady, and label each part so the model knows which is which. If you need a list, show a list; if you need a table, include a small table. Good examples cut guesswork, reduce errors, and save you from writing long rules.

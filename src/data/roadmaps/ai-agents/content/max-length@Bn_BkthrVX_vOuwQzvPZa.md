@@ -1,1 +1,3 @@
 # Max Length
+
+Max Length is the setting that tells a language model the biggest number of tokens it may write in one go. A token is a small piece of text, usually a short word or part of a word, so 100 tokens roughly equals a short paragraph. When the model reaches the limit, it stops and returns the answer. A small limit keeps replies short, saves money, and runs fast, but it can cut ideas in half. A large limit lets the model finish long thoughts, yet it needs more time, more processing power, and can wander off topic. Choose the value to fit the job: a tweet might need 50 tokens, a long guide might need 1,000 or more. Good tuning finds a balance between cost, speed, and clear, complete answers.

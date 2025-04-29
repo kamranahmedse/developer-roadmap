@@ -1,1 +1,3 @@
 # File System Access
+
+File system access lets an AI agent read, create, change, or delete files and folders on a computer or server. With this power, the agent can open a text file to pull data, write a new report, save logs, or tidy up old files without human help. It can also move files between folders to keep things organised. This tool is useful for tasks such as data processing, report generation, and backup jobs. Strong safety checks are needed so the agent touches only the right files, avoids private data, and cannot harm the system by mistake.

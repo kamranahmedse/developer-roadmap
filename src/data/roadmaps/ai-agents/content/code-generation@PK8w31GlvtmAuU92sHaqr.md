@@ -1,1 +1,3 @@
 # Code generation
+
+Code-generation agents take a plain language request, understand the goal, and then write or edit source code to meet it. They can build small apps, add features, fix bugs, refactor old code, write tests, or translate code from one language to another. This saves time for developers, helps beginners learn, and reduces human error. Teams use these agents inside code editors, chat tools, and automated pipelines. By handling routine coding tasks, the agents free people to focus on design, logic, and user needs.

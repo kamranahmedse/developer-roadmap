@@ -1,1 +1,3 @@
 # Data analysis
+
+AI agents can automate many steps of data analysis. They pull data from files, databases, or live streams and put it into a tidy shape. They spot missing entries, flag odd numbers, and fill gaps with smart guesses. Once the data is clean, the agent looks for patterns, such as spikes in sales or drops in sensor readings. It can build simple charts or full dashboards, saving hours of manual work. Some agents run basic statistics, while others use machine learning to forecast next week’s demand. They also send alerts if the numbers move outside set limits. This keeps people informed without constant checking.

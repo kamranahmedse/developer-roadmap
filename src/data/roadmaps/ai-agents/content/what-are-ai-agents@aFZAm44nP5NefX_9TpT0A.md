@@ -1,1 +1,3 @@
 # What are AI Agents?
+
+An AI agent is a computer program or robot that can sense its surroundings, think about what it senses, and then act to reach a goal. It gathers data through cameras, microphones, or software inputs, decides what the data means using rules or learned patterns, and picks the best action to move closer to its goal. After acting, it checks the results and learns from them, so it can do better next time. Chatbots, self-driving cars, and game characters are all examples.

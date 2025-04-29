@@ -1,1 +1,3 @@
 # Smol Depot
+
+Smol Depot is an open-source kit that lets you bundle all the parts of a small AI agent in one place. You keep prompts, settings, and code files together in a single folder, then point the Depot tool at that folder to spin the agent up. The tool handles tasks such as loading models, saving chat history, and calling outside APIs, so you do not have to write that glue code yourself. A simple command can copy a starter template, letting you focus on the logic and prompts that make your agent special. Because everything lives in plain files, you can track changes with Git and share the agent like any other project. This makes Smol Depot a quick way to build, test, and ship lightweight agents without a heavy framework.

@@ -1,1 +1,3 @@
 # Long Term Memory
+
+Long term memory in an AI agent is the part of its storage where information is kept for long periods so it can be used again in the future. It works like a notebook that the agent can write to and read from whenever needed. The agent saves facts, past events, user preferences, and learned skills in this space. When a similar event happens later, the agent looks up this stored data to make better choices and respond in a consistent way. Long term memory lets the agent grow smarter over time because it does not forget important details after the current task ends. This memory usually lives in a database or file system and may include text, numbers, or compressed states of past conversations.

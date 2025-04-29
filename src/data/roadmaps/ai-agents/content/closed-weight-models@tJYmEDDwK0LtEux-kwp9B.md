@@ -1,1 +1,3 @@
 # Closed Weight Models
+
+Closed-weight models are AI systems whose trained parameters—the numbers that hold what the model has learned—are not shared with the public. You can send prompts to these models through an online service or a software kit, but you cannot download the weights, inspect them, or fine-tune them on your own computer. The company that owns the model keeps control and sets the rules for use, often through paid APIs or tight licences. This approach helps the owner protect trade secrets, reduce misuse, and keep a steady income stream. The downside is less freedom for users, higher costs over time, and limited ability to audit or adapt the model. Well-known examples include GPT-4, Claude, and Gemini.

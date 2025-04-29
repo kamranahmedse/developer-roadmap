@@ -1,1 +1,3 @@
 # Manual (from scratch)
+
+Building an AI agent from scratch means you write every part of the system yourself instead of using ready-made tools. You decide how the agent senses the world, saves data, learns, and makes choices. First, you choose a goal, like playing a game or answering questions. Then you design the inputs, for example keyboard moves or text. You code the logic that turns these inputs into actions. You may add a learning part, such as a basic neural network or a set of rules that update over time. You also build memory so the agent can use past facts. Testing is key: run the agent, watch what it does, and fix mistakes. This path is slow and hard, but it teaches you how each piece works and gives you full control.

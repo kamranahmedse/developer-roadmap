@@ -1,1 +1,3 @@
 # Data Privacy + PII Redaction
+
+AI agents often handle user text, images, and logs that carry personal data such as names, phone numbers, addresses, or ID numbers. If this data leaks, people may face fraud, stalking, or other harm. Privacy laws like GDPR and CCPA require teams to keep such data safe and to use it only for clear, lawful reasons. A key safeguard is PII redaction: the system scans each input and output, finds any detail that can identify a person, and masks or deletes it before storage or sharing. Redaction methods include simple pattern rules, machine-learning models, or a mix of both. Keep audit trails, set strong access limits, and test the redaction flow often to be sure no private detail slips through.
