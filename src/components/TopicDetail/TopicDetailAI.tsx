@@ -12,7 +12,13 @@ import { billingDetailsOptions } from '../../queries/billing';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
-import { BotIcon, Loader2Icon, LockIcon, SendIcon } from 'lucide-react';
+import {
+  BotIcon,
+  Loader2Icon,
+  LockIcon,
+  RotateCcwIcon,
+  SendIcon,
+} from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname';
 import TextareaAutosize from 'react-textarea-autosize';
@@ -27,6 +33,7 @@ import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import type { ResourceType } from '../../lib/resource-progress';
 import { getPercentage } from '../../lib/number';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
+import { defaultChatHistory } from './TopicDetail';
 
 type TopicDetailAIProps = {
   resourceId: string;
@@ -217,9 +224,16 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   );
   const hasSubjects =
     roadmapTreeMapping?.subjects && roadmapTreeMapping?.subjects?.length > 0;
+  const hasChatHistory = aiChatHistory.length > 1;
 
   return (
-    <div className="mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
+    <div className="relative mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
+      {isDataLoading && (
+        <div className="absolute inset-0 z-20 flex items-center justify-center gap-2 bg-white text-black">
+          <Loader2Icon className="size-8 animate-spin stroke-3 text-gray-500" />
+        </div>
+      )}
+
       {hasSubjects && (
         <div className="border-b border-gray-200 px-4 py-2">
           <h4 className="flex items-center gap-2 text-base">
@@ -232,7 +246,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 <a
                   key={subject}
                   target="_blank"
-                  href={`/ai/search?term=${subject}&difficulty=beginner`}
+                  href={`/ai/search?term=${subject}&difficulty=beginner&src=topic`}
                   className="rounded-md border px-1.5"
                 >
                   {subject}
@@ -265,10 +279,33 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           </h4>
         )}
 
-        {!isDataLoading && !isPaidUser && (
-          <p className="text-sm text-gray-500">
-            <span className="font-medium">{usagePercentage}%</span> used
-          </p>
+        {!isDataLoading && (
+          <div className="flex items-center gap-2.5">
+            {hasChatHistory && (
+              <button
+                className="rounded-md bg-white p-1 text-xs font-medium text-black hover:bg-gray-200"
+                onClick={() => {
+                  setAiChatHistory(defaultChatHistory);
+                }}
+              >
+                <RotateCcwIcon className="size-3.5" />
+              </button>
+            )}
+
+            {!isPaidUser && (
+              <>
+                <button
+                  className="underline underline-offset-2 hover:no-underline"
+                  onClick={onUpgrade}
+                >
+                  Upgrade
+                </button>
+                <p className="text-sm text-gray-500">
+                  <span className="font-medium">{usagePercentage}%</span> used
+                </p>
+              </>
+            )}
+          </div>
         )}
       </div>
 
@@ -349,7 +386,6 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         <TextareaAutosize
           className={cn(
             'h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-hidden',
-            // isDisabled ? 'cursor-not-allowed opacity-50' : 'cursor-auto',
           )}
           placeholder="Ask AI anything about the lesson..."
           value={message}

@@ -70,7 +70,7 @@ type PaidResourceType = {
 
 const paidResourcesCache: Record<string, PaidResourceType[]> = {};
 
-const defaultChatHistory: AIChatHistoryType[] = [
+export const defaultChatHistory: AIChatHistoryType[] = [
   {
     role: 'assistant',
     content: 'Hey, I am your AI instructor. How can I help you today? 🤖',
