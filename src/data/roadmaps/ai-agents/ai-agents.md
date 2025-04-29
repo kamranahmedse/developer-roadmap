@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/ai-agents.json'
 pdfUrl: '/pdfs/roadmaps/ai-agents.pdf'
 order: 22
 briefTitle: 'AI Agents'
-briefDescription: 'Step by step guide to learn AI Agents in 2025'
+briefDescription: 'Learn to design, build and ship AI agents in 2025'
 title: 'AI Agents'
-description: 'Step by step guide to learn AI Agents in 2025'
+description: 'Learn to design, build and ship AI agents in 2025'
 isNew: true
 isHidden: false
 hasTopics: true
@@ -15,7 +15,7 @@ dimensions:
   height: 3300
 schema:
   headline: 'AI Agents Roadmap'
-  description: 'Learn how to build and ship AI agents with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to design, build and ship AI agents with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/ai-agents.png'
   datePublished: '2025-04-29'
   dateModified: '2025-04-29'
