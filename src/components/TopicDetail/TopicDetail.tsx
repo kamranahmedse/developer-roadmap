@@ -26,8 +26,6 @@ import { Ban, Coins, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
-import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
-import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
@@ -323,8 +321,6 @@ export function TopicDetail(props: TopicDetailProps) {
   const resourceTitleForSearch = resourceTitle
     ?.toLowerCase()
     ?.replace(/\s+?roadmap/gi, '');
-  const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(topicHtmlTitle?.toLowerCase())} guide for ${encodeURIComponent(resourceTitleForSearch || '')}`;
-  const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(topicHtmlTitle?.toLowerCase())} for ${encodeURIComponent(resourceTitleForSearch || '')}`;
 
   const tnsLink =
     'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic';
@@ -522,35 +518,13 @@ export function TopicDetail(props: TopicDetailProps) {
                 contributionUrl &&
                 hasContent && (
                   <div className="mb-12 mt-3 border-t text-sm text-gray-400 sm:mt-12">
-                    <div className="mb-4 mt-3">
-                      <p className="">
-                        Find more resources using these pre-filled search
-                        queries:
-                      </p>
-                      <div className="mt-3 flex gap-2 text-gray-700">
-                        <a
-                          href={googleSearchUrl}
-                          target="_blank"
-                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                        >
-                          <GoogleIcon className={'h-4 w-4'} />
-                          Google
-                        </a>
-                        <a
-                          href={youtubeSearchUrl}
-                          target="_blank"
-                          className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                        >
-                          <YouTubeIcon className={'h-4 w-4 text-red-500'} />
-                          YouTube
-                        </a>
-                      </div>
-                    </div>
-
-                    <p className="mb-2 mt-2 leading-relaxed">
+                    <h2 className="mb-1 mt-4 text-base text-black font-medium">
+                      Help us add learning resources 
+                    </h2>
+                    <p className="mb-4 leading-relaxed">
                       This popup should be a brief introductory paragraph for
                       the topic and a few links to good articles, videos, or any
-                      other self-vetted resources. Please consider submitting a
+                      other self-vetted learning resources. Please consider submitting a
                       PR to improve this content.
                     </p>
                     <a
