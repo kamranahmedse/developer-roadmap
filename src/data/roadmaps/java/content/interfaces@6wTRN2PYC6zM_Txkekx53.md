@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Interfaces in Java](https://jenkov.com/tutorials/java/interfaces.html)
 - [@article@A Guide to Java Interfaces](https://www.baeldung.com/java-interfaces)
+- [@article@Default Methods by Hyperskill (JetBrains Academy)](https://hyperskill.org/learn/step/11354)
