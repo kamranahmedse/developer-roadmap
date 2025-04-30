@@ -10,4 +10,5 @@ Spring Boot follows a layered architecture in which each layer communicates with
 Visit the following resources to learn more:
 
 - [@article@Spring Boot Architecture – Detailed Explanation](https://www.interviewbit.com/blog/spring-boot-architecture)
+- [@article@Application Layers by Hyperskill (JetBrains Academy)](https://hyperskill.org/learn/step/13971)
 - [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)
