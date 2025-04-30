@@ -1,3 +1,9 @@
 # Fine-tuning vs Prompt Engineering
 
-Fine-tuning and prompt engineering are two ways to get better answers from a large language model. Fine-tuning means you take an existing model and train it more on your own examples so it adapts to a narrow task. You need extra data, computer power, and time, but the model then learns the style and facts you want. Prompt engineering means you leave the model as it is and adjust the words you send to it. You give clear instructions, show examples, or set rules inside the prompt so the model follows them right away. This is faster, cheaper, and safer if you have no special data. Fine-tuning is best when you need deep knowledge of a field or a fixed voice across many calls. Prompt engineering is enough when you want quick control, small changes, or are still testing ideas.
+Fine-tuning and prompt engineering are two ways to get better outputs from a language model. Fine-tuning means training an existing model further with your own examples so it adapts to specific tasks. It needs extra data, computing power, and time but creates deeply specialized models. Prompt engineering, in contrast, leaves the model unchanged and focuses on crafting better instructions or examples in the prompt itself. It is faster, cheaper, and safer when no custom data is available. Fine-tuning suits deep domain needs; prompt engineering fits quick control and prototyping.
+
+Visit the following resources to learn more:
+
+- [@article@OpenAI Fine Tuning](https://platform.openai.com/docs/guides/fine-tuning)
+- [@article@Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [@article@Prompt Engineering vs Prompt Tuning: A Detailed Explanation](https://medium.com/@aabhi02/prompt-engineering-vs-prompt-tuning-a-detailed-explanation-19ea8ce62ac4)

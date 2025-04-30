@@ -1,3 +1,10 @@
 # CrewAI
 
-CrewAI is an open-source Python framework that lets you join several language-model agents into one team, called a crew. Each agent gets a name, a role, and a set of skills, and the library handles planning, task routing, and chat among them. To use it, you install the package, import it, define your agents in a few lines of code, link them with a Crew object, and give the crew a mission prompt. CrewAI then talks to an LLM such as OpenAI GPT-4 or Claude, passes messages between agents, runs any tools you attach, and returns a single answer. You can plug in web search, Python functions, or vector stores for memory, and you can tune settings like temperature or max tokens. Built-in logs show every step so you can debug and improve the workflow. The result is a fast way to build multi-step agent systems for tasks like research, code review, or content creation without writing a lot of low-level glue code.
+CrewAI is an open-source Python framework for creating teams of AI agents, called a crew. Each agent is assigned a name, role, and set of tools, and the system manages planning, communication, and execution between them. To use it, install the package, define agents in code, connect them with a `Crew` object, and assign a mission prompt. CrewAI interacts with an LLM like GPT-4 or Claude, passes messages, runs tools, and returns a final output. You can also add web search, custom functions, or memory stores. Logs are built-in to help debug and optimize workflows.
+
+Visit the following resources to learn more:
+
+- [@official@CrewAI](https://crewai.com/)
+- [@official@CrewAI Documentation](https://docs.crewai.com/)
+- [@article@Getting Started with CrewAI: Building AI Agents That Work Together](https://medium.com/@cammilo/getting-started-with-crewai-building-ai-agents-that-work-together-9c1f47f185ca)
+- [@video@Crew AI Full Tutorial For Beginners](https://www.youtube.com/watch?v=q6QLGS306d0)

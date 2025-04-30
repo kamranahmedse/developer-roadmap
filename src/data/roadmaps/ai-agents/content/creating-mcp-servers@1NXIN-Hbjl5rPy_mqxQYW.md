@@ -1,3 +1,8 @@
 # Creating MCP Servers
 
-Creating an MCP server means building a program that stores and shares conversation data for AI agents using the Model Context Protocol. Start by choosing a language and web framework, then set up REST endpoints such as /messages, /state, and /health. Each endpoint sends or receives JSON that follows the MCP schema. Use a database or an in-memory store to keep session logs, and tag every entry with a session ID, role, and timestamp. Add token-based authentication so only trusted agents can read or write. Include filters and range queries so an agent can ask for just the parts of the log it needs. Limit message size and request rate to avoid overload. Finish by writing unit tests, adding monitoring, and running load checks to be sure the server stays reliable as traffic grows.
+An MCP server stores and shares conversation data for AI agents using the Model Context Protocol (MCP), a standard for agent memory management. Start by picking a language and web framework, then create REST endpoints like `/messages`, `/state`, and `/health`. Each endpoint exchanges JSON following the MCP schema. Store session logs with a session ID, role, and timestamp using a database or in-memory store. Add token-based authentication and filters so agents can fetch only what they need. Set limits on message size and request rates to avoid overload. Finally, write unit tests, add monitoring, and run load tests to ensure stability.
+
+Visit the following resources to learn more:
+
+- [@official@Model Context Protocol (MCP) Specification](https://www.anthropic.com/news/model-context-protocol)
+- [@article@How to Build and Host Your Own MCP Servers in Easy Steps?](https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/)
