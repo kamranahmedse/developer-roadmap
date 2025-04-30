@@ -4,8 +4,18 @@
     "description": "Fundamental IT skills form the backbone of cybersecurity proficiency and encompass a broad range of technical knowledge. These skills include understanding computer hardware and software, networking concepts, and operating systems (particularly Windows and Linux). Proficiency in at least one programming language, such as Python or JavaScript, is increasingly important for automation and scripting tasks. Database management, including SQL, is crucial for handling and securing data. Knowledge of cloud computing platforms like AWS or Azure is becoming essential as organizations migrate to cloud environments. Familiarity with basic cybersecurity concepts such as encryption, access control, and common attack vectors provides a foundation for more advanced security work. Additionally, troubleshooting skills, the ability to interpret logs, and a basic understanding of web technologies are vital. These fundamental IT skills enable cybersecurity professionals to effectively protect systems, identify vulnerabilities, and respond to incidents in increasingly complex technological landscapes.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Top 10 in demand IT skills",
+        "title": "7 In-Demand IT Skills to Boost Your Resume in 2025",
+        "url": "https://www.coursera.org/articles/key-it-skills-for-your-career",
+        "type": "article"
+      },
+      {
+        "title": "Top 10 in Demand IT Skills",
         "url": "https://www.comptia.org/blog/top-it-skills-in-demand",
+        "type": "article"
+      },
+      {
+        "title": "IT Skills: Definition and Examples",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/it-skills",
         "type": "article"
       }
     ]
@@ -200,7 +210,7 @@
     "description": "Google Workspace, formerly known as G Suite, is a collection of cloud-based productivity and collaboration tools developed by Google. It includes popular applications such as Gmail for email, Google Drive for file storage and sharing, Google Docs for document creation and editing, Google Sheets for spreadsheets, and Google Meet for video conferencing. From a cybersecurity perspective, Google Workspace presents both advantages and challenges. It offers robust built-in security features like two-factor authentication, encryption of data in transit and at rest, and advanced threat protection. However, its cloud-based nature means organizations must carefully manage access controls, data sharing policies, and compliance with various regulations. Security professionals must be vigilant about potential phishing attacks targeting Google accounts, data leakage through improper sharing settings, and the risks associated with third-party app integrations. Understanding how to properly configure and monitor Google Workspace is crucial for maintaining the security of an organization's collaborative environment and protecting sensitive information stored within these widely-used tools.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Google Workspace Website",
+        "title": "Google Workspace",
         "url": "https://workspace.google.com/intl/en_uk/",
         "type": "article"
       }
@@ -435,7 +445,7 @@
     "description": "The GIAC Security Essentials Certification (GSEC) is an advanced cybersecurity certification that demonstrates an individual's knowledge and skills in addressing security threats and vulnerabilities in various systems. Developed by the Global Information Assurance Certification (GIAC), this certification is suitable for security professionals, IT managers, and network administrators who want to enhance their expertise in the core cybersecurity concepts and practices.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "GSEC Certification Website",
+        "title": "GSEC Certification",
         "url": "https://www.giac.org/certifications/security-essentials-gsec/",
         "type": "article"
       }
@@ -446,7 +456,7 @@
     "description": "The GIAC Penetration Tester (GPEN) certification is an advanced-level credential designed for professionals who want to demonstrate their expertise in the field of penetration testing and ethical hacking. Created by the Global Information Assurance Certification (GIAC) organization, GPEN validates an individual's ability to conduct legal, systematic, and effective penetration tests to assess the security of computer networks, systems, and applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "GPEN Certification Website",
+        "title": "GPEN Certification",
         "url": "https://www.giac.org/certifications/penetration-tester-gpen/",
         "type": "article"
       },
@@ -462,7 +472,7 @@
     "description": "The GIAC Web Application Penetration Tester (GWAPT) certification validates an individual's ability to perform in-depth web application security assessments and exploit vulnerabilities. GWAPT focuses on using ethical hacking methodologies to conduct web application penetration testing with the goal of identifying, evaluating, and mitigating security risks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "GWAPT Certification Website",
+        "title": "GWAPT Certification",
         "url": "https://www.giac.org/certifications/web-application-penetration-tester-gwapt/",
         "type": "article"
       }
@@ -473,8 +483,13 @@
     "description": "GIAC is a globally recognized organization that provides certifications for information security professionals. Established in 1999, its primary aim is to validate the knowledge and skills of professionals in various cybersecurity domains. GIAC certifications focus on practical and hands-on abilities to ensure that certified individuals possess the necessary expertise to tackle real-world cybersecurity challenges.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "GIAC Website",
+        "title": "GIAC",
         "url": "https://www.giac.org/",
+        "type": "article"
+      },
+      {
+        "title": "Get Certified - GIAC",
+        "url": "https://www.giac.org/get-certified/?msc=main-nav",
         "type": "article"
       }
     ]
@@ -917,7 +932,7 @@
     "description": "A default gateway is a network node, typically a router or a firewall, that serves as the access point or intermediary between a local network and external networks, such as the internet. When a device on a local network needs to communicate with a device outside its own subnet—such as accessing a website or sending an email—it sends the data to the default gateway, which then routes it to the appropriate external destination. The default gateway acts as a traffic director, ensuring that data packets are correctly forwarded between the internal network and external networks, making it a crucial component for enabling communication beyond the local network's boundaries.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a default gateway?",
+        "title": "What is a Default Gateway?",
         "url": "https://nordvpn.com/blog/what-is-a-default-gateway/?srsltid=AfmBOoosi5g4acnT9Gv_B86FMGr72hWDhk8J-4jr1HvxPCSu96FikCyw",
         "type": "article"
       },
@@ -949,7 +964,7 @@
     "description": "A **DMZ**, also known as a **Demilitarized Zone**, is a specific part of a network that functions as a buffer or separation between an organization's internal, trusted network and the external, untrusted networks like the internet. The primary purpose of a DMZ is to isolate critical systems and data from the potentially hostile external environment and provide an extra layer of security.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a DMZ network?",
+        "title": "What is a DMZ Network?",
         "url": "https://www.fortinet.com/resources/cyberglossary/what-is-dmz",
         "type": "article"
       },
@@ -1378,6 +1393,11 @@
     "description": "FTP is a standard network protocol used to transfer files from one host to another host over a TCP-based network, such as the Internet. Originally developed in the 1970s, it's one of the earliest protocols for transferring files between computers and remains widely used today.\n\nFTP operates on a client-server model, where one computer acts as the client (the sender or requester) and the other acts as the server (the receiver or provider). The client initiates a connection to the server, usually by providing a username and password for authentication, and then requests a file transfer.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "File Transfer Protocol",
+        "url": "https://en.wikipedia.org/wiki/File_Transfer_Protocol",
+        "type": "article"
+      },
+      {
         "title": "FTP meaning and uses",
         "url": "https://www.investopedia.com/terms/f/ftp-file-transfer-protocol.asp",
         "type": "article"
@@ -1701,11 +1721,6 @@
     "title": "dig",
     "description": "`dig`, short for the Domain Information Groper, is a powerful and flexible command-line tool used to perform DNS queries and obtain valuable information about domains, IPs, and DNS records. This utility, available on UNIX-based systems like Linux and macOS, provides an essential function to help diagnose and resolve various issues related to domain name resolution and network connectivity. It is highly useful for network administrators and cybersecurity professionals when troubleshooting DNS-related problems.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "How to use Linux dig command",
-        "url": "https://www.google.com/search?client=firefox-b-d&q=linux+dig+command",
-        "type": "article"
-      },
       {
         "title": "How to look up DNS records with dig",
         "url": "https://www.youtube.com/watch?v=3AOKomsmeUY",
@@ -2336,6 +2351,11 @@
     "title": "False Negative / False Positive",
     "description": "A false positive happens when the security tool mistakenly identifies a non-threat as a threat. For example, it might raise an alarm for a legitimate user's activity, indicating a potential attack when there isn't any. A high number of false positives can cause unnecessary diverting of resources and time, investigating false alarms. Additionally, it could lead to user frustration if legitimate activities are being blocked.\n\nA false negative occurs when the security tool fails to detect an actual threat or attack. This could result in a real attack going unnoticed, causing damage to the system, data breaches, or other negative consequences. A high number of false negatives indicate that the security system needs to be improved to capture real threats effectively.\n\nTo have an effective cybersecurity system, security professionals aim to maximize true positives and true negatives, while minimizing false positives and false negatives. Balancing these aspects ensures that the security tools maintain their effectiveness without causing undue disruptions to a user's experience.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Difference Between False Positive and False Negative",
+        "url": "https://www.differencebetween.net/science/difference-between-false-positive-and-false-negative/",
+        "type": "article"
+      },
       {
         "title": "What is a false positive virus?",
         "url": "https://www.youtube.com/watch?v=WrcAGBvIT14",
@@ -3112,7 +3132,7 @@
     "description": "Event logs are digital records that document activities and occurrences within computer systems and networks. They serve as a crucial resource for cybersecurity professionals, providing a chronological trail of system operations, user actions, and security-related events. These logs capture a wide range of information, including login attempts, file access, system changes, and application errors. In the context of security, event logs play a vital role in threat detection, incident response, and forensic analysis. They help identify unusual patterns, track potential security breaches, and reconstruct the sequence of events during an attack. Effective log management involves collecting logs from various sources, securely storing them, and implementing tools for log analysis and correlation. However, the sheer volume of log data can be challenging to manage, requiring advanced analytics and automation to extract meaningful insights and detect security incidents in real-time.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is an event log?",
+        "title": "What is an Event Log?",
         "url": "https://www.crowdstrike.com/cybersecurity-101/observability/event-log/",
         "type": "article"
       },
@@ -3176,12 +3196,12 @@
     "description": "Firewall logs are detailed records of network traffic and security events captured by firewall devices. These logs provide crucial information about connection attempts, allowed and blocked traffic, and potential security incidents. They typically include data such as source and destination IP addresses, ports, protocols, timestamps, and the action taken by the firewall. Security professionals analyze these logs to monitor network activity, detect unusual patterns, investigate security breaches, and ensure policy compliance. Firewall logs are essential for troubleshooting network issues, optimizing security rules, and conducting forensic analysis after an incident. However, the volume of log data generated can be overwhelming, necessitating the use of log management tools and security information and event management (SIEM) systems to effectively process, correlate, and derive actionable insights from the logs. Regular review and analysis of firewall logs are critical practices in maintaining a robust security posture and responding promptly to potential threats.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is firewall logging and why is it important?",
+        "title": "What is Firewall Logging and Why is it Important?",
         "url": "https://cybriant.com/what-is-firewall-logging-and-why-is-it-important/",
         "type": "article"
       },
       {
-        "title": "Reviewing firewall logs",
+        "title": "Reviewing Firewall Logs",
         "url": "https://www.youtube.com/watch?v=XiJ30f8V_T4",
         "type": "video"
       }
@@ -3320,7 +3340,7 @@
         "type": "article"
       },
       {
-        "title": "Endpoints are the IT frontdoor - Gaurd them!",
+        "title": "Endpoints are the IT Frontdoor - Guard them!",
         "url": "https://www.youtube.com/watch?v=Njqid_JpqTs",
         "type": "video"
       }
@@ -3491,13 +3511,13 @@
     "description": "Data Loss Prevention (DLP) refers to a set of strategies, tools, and processes used by organizations to ensure that sensitive data is not lost, accessed, or misused by unauthorized users. DLP solutions monitor, detect, and block the movement of critical information outside an organization’s network, helping to prevent data breaches, leaks, and other security incidents.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is data loss prevention (DLP)?",
-        "url": "https://www.techtarget.com/whatis/definition/data-loss-prevention-DLP",
+        "title": "What is DLP (data loss prevention)?",
+        "url": "https://www.cloudflare.com/es-es/learning/access-management/what-is-dlp/",
         "type": "article"
       },
       {
-        "title": "What is DLP (data loss prevention)?",
-        "url": "https://www.cloudflare.com/es-es/learning/access-management/what-is-dlp/",
+        "title": "What is Data Loss Prevention (DLP)?",
+        "url": "https://www.techtarget.com/whatis/definition/data-loss-prevention-DLP",
         "type": "article"
       }
     ]
@@ -3523,7 +3543,7 @@
     "description": "Firewalls are network security devices that monitor and control incoming and outgoing traffic based on predetermined security rules. Traditional firewalls operate at the network layer, filtering traffic based on IP addresses, ports, and protocols. They provide basic protection by creating a barrier between trusted internal networks and untrusted external networks.\n\nNext-generation firewalls (NGFWs) build upon this foundation, offering more advanced features to address modern cyber threats. NGFWs incorporate deep packet inspection, application-level filtering, and integrated intrusion prevention systems. They can identify and control applications regardless of port or protocol, enabling more granular security policies. NGFWs often include additional security functions such as SSL/TLS inspection, antivirus scanning, and threat intelligence integration. This evolution allows for more comprehensive network protection, better visibility into network traffic, and improved defense against sophisticated attacks in today's complex and dynamic threat landscape.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a firewall?",
+        "title": "What is a Firewall?",
         "url": "https://www.kaspersky.com/resource-center/definitions/firewall",
         "type": "article"
       },
@@ -4022,12 +4042,17 @@
     "description": "Dumpster Diving in the context of cybersecurity refers to the practice of searching through discarded materials in trash or recycling bins to find confidential information. This technique may seem unsophisticated, but it can be extremely effective in obtaining valuable data such as passwords, account information, network diagrams, or any other sensitive information that has not been properly destroyed.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Dumpster Diving",
+        "url": "https://www.techtarget.com/searchsecurity/definition/dumpster-diving",
+        "type": "article"
+      },
+      {
         "title": "What is Dumpster Diving",
         "url": "https://powerdmarc.com/dumpster-diving-in-cybersecurity/",
         "type": "article"
       },
       {
-        "title": "Dumpster diving for sensitive information",
+        "title": "Dumpster Diving for Sensitive Information",
         "url": "https://www.youtube.com/watch?v=Pom86gq4mk4",
         "type": "video"
       }
@@ -4239,7 +4264,23 @@
   "urtsyYWViEzbqYLoNfQAh": {
     "title": "DNS Poisoning",
     "description": "DNS spoofing or DNS cache poisoning, occurs when fake information is inserted into a DNS server’s cache.This causes DNS queries to return incorrect IP addresses, directing users to the wrong websites. Hackers exploit this to reroute traffic to malicious sites. The issue persists until the cached information is corrected.When the cache is poisoned, it misdirects traffic until the incorrect information is fixed. This technique exploits vulnerabilities in the DNS system and can spread to other servers, causing widespread issues.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "What is DNS Cache Poisoning? | DNS spoofing",
+        "url": "https://www.cloudflare.com/learning/dns/dns-cache-poisoning/",
+        "type": "article"
+      },
+      {
+        "title": "What Is DNS Poisoning?",
+        "url": "https://www.fortinet.com/resources/cyberglossary/dns-poisoning",
+        "type": "article"
+      },
+      {
+        "title": "DNS Poisoning (DNS Spoofing): Definition, Technique & Defense",
+        "url": "https://www.okta.com/identity-101/dns-poisoning/",
+        "type": "article"
+      }
+    ]
   },
   "LfWJJaT3fv0p6fUeS8b84": {
     "title": "Deauth Attack",
@@ -4765,14 +4806,19 @@
     "description": "Google Cloud Platform (GCP) is a collection of cloud computing services offered by Google, which provides infrastructure and platform services to businesses or individuals. It enables users to either build their own applications or services on the provided resources, or utilize ready-to-use services provided by Google. GCP covers a wide range of services, including (but not limited to) compute, storage, databases, networking, and many more.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Google Cloud Platform Video Course",
-        "url": "https://www.youtube.com/watch?v=fZOz13joN0o",
-        "type": "course"
-      },
-      {
         "title": "Google Cloud Platform",
         "url": "https://cloud.google.com",
         "type": "article"
+      },
+      {
+        "title": "Cloud Computing, Hosting Services, and APIs",
+        "url": "https://cloud.google.com/gcp",
+        "type": "article"
+      },
+      {
+        "title": "Google Cloud Platform Video Course",
+        "url": "https://www.youtube.com/watch?v=fZOz13joN0o",
+        "type": "video"
       }
     ]
   },
@@ -4823,9 +4869,19 @@
     "description": "Dropbox is a widely used cloud storage service that allows you to store, access, and share files, documents, and media with ease across various devices. Launched in 2007, Dropbox has become one of the most popular cloud storage solutions, catering to both individual users and businesses. The service is available on multiple platforms, including Windows, macOS, Linux, iOS, and Android.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Dropbox Website",
+        "title": "Dropbox",
         "url": "https://dropbox.com",
         "type": "article"
+      },
+      {
+        "title": "How to Use Dropbox - a guide to your account",
+        "url": "https://learn.dropbox.com/self-guided-learning/dropbox-fundamentals-course/how-to-use-dropbox",
+        "type": "article"
+      },
+      {
+        "title": "Dropbox Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=b0Nk9muiUcQ",
+        "type": "video"
       }
     ]
   },
@@ -4866,7 +4922,7 @@
     "description": "Google Drive is a cloud-based storage solution provided by Google, which offers users the ability to store, share, and collaborate on files and documents across different platforms and devices. It is integrated with Google's productivity suite, including Google Docs, Sheets, Slides, and Forms, allowing seamless collaboration with team members in real-time.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Google Drive Website",
+        "title": "Google Drive",
         "url": "https://drive.google.com",
         "type": "article"
       }
@@ -4945,18 +5001,18 @@
     "description": "Go, also known as Golang, is an open-source programming language created by Google. Launched in 2009, it was designed to overcome issues present in other languages and offer a more secure, robust, and efficient development experience.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Go tutorial for beginners",
-        "url": "https://www.youtube.com/watch?v=yyUHQIec83I",
-        "type": "course"
-      },
-      {
-        "title": "Go Roadmap",
+        "title": "Visit Dedicated Go Roadmap",
         "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
         "title": "Go in 100 seconds",
         "url": "https://www.youtube.com/watch?v=446E-r0rXHI",
+        "type": "video"
+      },
+      {
+        "title": "Go Tutorial for beginners",
+        "url": "https://www.youtube.com/watch?v=yyUHQIec83I",
         "type": "video"
       }
     ]
