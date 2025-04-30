@@ -7,6 +7,7 @@
 Visit the following resources to learn more:
 
 - [@article@Sockets](https://docs.oracle.com/javase/tutorial/networking/sockets/index.html)
-- [@video@What is Socket Programming?](https://youtu.be/BqBKEXLqdvI)
 - [@article@Java Networking](https://www.tutorialspoint.com/java/java_networking.htm)
+- [@article@Java 11 HTTP Client by Hyperskill (JetBrains Academy)](https://hyperskill.org/learn/step/14268)
+- [@video@What is Socket Programming?](https://youtu.be/BqBKEXLqdvI)
 - [@feed@Explore top posts about Networking](https://app.daily.dev/tags/networking?ref=roadmapsh)
