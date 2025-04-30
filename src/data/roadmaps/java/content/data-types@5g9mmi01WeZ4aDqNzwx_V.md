@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 
 - [@article@Java Data Types](https://jenkov.com/tutorials/java/variables.html)
 - [@article@What are Data Types & Variables?](https://jenkov.com/tutorials/java/data-types.html)
+- [@article@Object Interning by Hyperskill (JetBrains Academy)](https://hyperskill.org/learn/step/5040)
