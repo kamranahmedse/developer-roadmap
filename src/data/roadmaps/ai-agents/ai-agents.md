@@ -23,12 +23,12 @@ seo:
   title: 'AI Agents Roadmap - roadmap.sh'
   description: 'Step by step guide to learn AI Agents in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
-    - 'ai agents tutorial'
     - 'step by step guide for ai agents'
     - 'how to learn ai agents'
     - 'use ai agents in production'
-    - 'ai agents roadmap 2025'
     - 'guide to learning ai agents'
+    - 'ai agents roadmap 2025'
+    - 'ai agents tutorial'
     - 'ai agents for beginners'
     - 'ai agents roadmap'
     - 'ai agents learning path'
@@ -44,6 +44,7 @@ seo:
     - 'learn ai agents for development'
     - 'become an ai agents expert'
     - 'what is ai agents'
+    - 'what is ai agent'
 relatedRoadmaps:
   - 'ai-engineer'
   - 'ai-data-scientist'
