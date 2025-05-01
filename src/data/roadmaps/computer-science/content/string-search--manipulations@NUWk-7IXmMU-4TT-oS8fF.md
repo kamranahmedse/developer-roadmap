@@ -4,4 +4,4 @@ String search and manipulation is a very important topic in computer science. It
 
 Visit the following resources to learn more:
 
-- [@article@String-searching algorithm](https://en.wikipedia.org/wiki/String-searching_algorithm)
+- [@article@String-searching Algorithm](https://en.wikipedia.org/wiki/String-searching_algorithm)

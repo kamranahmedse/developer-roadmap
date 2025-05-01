@@ -4,5 +4,7 @@ TLS (Transport Layer Security) is a cryptographic protocol that provides privacy
 
 Visit the following resources to learn more:
 
+- [@article@What is TLS & How Does it Work? - Internet Society](https://www.internetsociety.org/deploy360/tls/basics/)
+- [@article@What is TLS (Transport Layer Security)? - Cloudflare](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/)
 - [@video@SSL and HTTPS](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
 - [@video@SSL/TLS - Cristina Formaini](https://www.youtube.com/watch?v=Rp3iZUvXWlM)

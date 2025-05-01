@@ -9,6 +9,7 @@ Given below is the list of resources; pick ones relevant to the language of your
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit Dedicated C++ Roadmap](https://roadmap.sh/cpp)
 - [@article@Learn C++ - W3Schools](https://www.w3schools.com/cpp/)
 - [@article@Learn C++ - Tutorials Point](https://www.tutorialspoint.com/cplusplus/index.htm)
 - [@video@C++ Programming Course - Beginner to Advanced](https://www.youtube.com/watch?v=8jLOx1hD3_o)
