@@ -14,7 +14,6 @@ import {
   updateResourceProgress as updateResourceProgressApi,
 } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
-import { TopicProgressButton } from './TopicProgressButton';
 import { showLoginPopup } from '../../lib/popup';
 import { useToast } from '../../hooks/use-toast';
 import type {
@@ -22,16 +21,7 @@ import type {
   RoadmapContentDocument,
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
-import {
-  Ban,
-  BookIcon,
-  Coins,
-  FileText,
-  HeartHandshake,
-  SparklesIcon,
-  Star,
-  X,
-} from 'lucide-react';
+import { Ban, Coins, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
@@ -50,6 +40,7 @@ import { TopicDetailAI } from './TopicDetailAI.tsx';
 import { cn } from '../../lib/classname.ts';
 import type { AIChatHistoryType } from '../GenerateCourse/AICourseLessonChat.tsx';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
+import { TopicProgressButton } from './TopicProgressButton.tsx';
 
 type TopicDetailProps = {
   resourceId?: string;
@@ -405,7 +396,41 @@ export function TopicDetail(props: TopicDetailProps) {
                 'flex flex-col': activeTab === 'ai',
               })}
             >
-              <div className={cn('mb-6', !shouldShowAiTab && 'mb-2')}>
+              <div className={cn('mb-6 -mx-6 -mt-6 border-b p-2 flex items-center justify-between')}>
+                <div>
+                  {!isEmbed && (
+                    <TopicProgressButton
+                      topicId={
+                        topicId.indexOf('@') !== -1
+                          ? topicId.split('@')[1]
+                          : topicId
+                      }
+                      resourceId={resourceId}
+                      resourceType={resourceType}
+                      onClose={handleClose}
+                    />
+                  )}
+                </div>
+                <button
+                  type="button"
+                  id="close-topic"
+                  className="flex gap-2 items-center rounded-lg bg-transparent p-1.5 text-xs uppercase tracking-wider text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                  onClick={handleClose}
+                >
+                  <X className="size-4" />
+                  Close
+                </button>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <div>
+                  {shouldShowAiTab && (
+                    <TopicDetailsTabs
+                      activeTab={activeTab}
+                      setActiveTab={setActiveTab}
+                    />
+                  )}
+                </div>
                 {!isEmbed && (
                   <TopicProgressButton
                     topicId={
@@ -418,23 +443,7 @@ export function TopicDetail(props: TopicDetailProps) {
                     onClose={handleClose}
                   />
                 )}
-
-                <button
-                  type="button"
-                  id="close-topic"
-                  className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
-                  onClick={handleClose}
-                >
-                  <X className="h-5 w-5" />
-                </button>
               </div>
-
-              {shouldShowAiTab && (
-                <TopicDetailsTabs
-                  activeTab={activeTab}
-                  setActiveTab={setActiveTab}
-                />
-              )}
 
               {activeTab === 'ai' && shouldShowAiTab && (
                 <TopicDetailAI
