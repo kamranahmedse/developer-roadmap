@@ -18,7 +18,7 @@ The **backend** is the behind-the-scenes part of an application that handles log
 
 For AI agents, the backend sends user prompts to the AI, gets a response, and returns it to the frontend.
 
-🔗 **Watch video:** [What is Backend? – freeCodeCamp](https://www.youtube.com/watch?v=0GgY8GFXU9A)
+🔗 **Watch video:** [What is Backend? – Super Simple Dev](https://youtu.be/XBu54nfzxAQ?si=LJHqK6JbMmny6edU)
 
 ---
 
@@ -31,7 +31,7 @@ For AI agents, the backend sends user prompts to the AI, gets a response, and re
 
 We often use **APIs (Application Programming Interfaces)** to talk to AI models (like OpenAI’s API). APIs follow REST architecture and usually work over HTTP using methods like `GET`, `POST`, etc.
 
-🔗 **Watch video:** [HTTP & APIs Explained – Fireship](https://www.youtube.com/watch?v=5WUvF8xG4DM)
+🔗 **Watch video:** [APIs Explained – Exponent](https://youtu.be/bxuYDT-BWaI?si=E5WMb3ALsEJ50ZXm)
 
 ---
 
@@ -46,7 +46,7 @@ With just a few lines of code, you can:
 - Define API routes (like `/ask-ai`)
 - Send and receive JSON data
 
-🔗 **Watch video:** [Node.js + Express Crash Course – Traversy Media](https://www.youtube.com/watch?v=L72fhGm1tfE)
+🔗 **Watch video:** [Node.js + Express Crash Course – Free code camp](https://youtu.be/Oe421EPjeBE?si=TPx9bg54aYRU070q)
 
 ---
 
@@ -59,7 +59,7 @@ Middleware is also used to:
 - Check or modify requests before reaching the route
 - Handle errors and authentication
 
-🔗 **Watch video:** [JSON & Middleware in Express – CodeWithHarry (Hindi)](https://www.youtube.com/watch?v=UjHT_NKR_gU)
+🔗 **Watch video:** [JSON & Middleware in Express – Web dev Simplified ](https://youtu.be/lY6icfhap2o?si=75ZWcgdCpdX6nokw)
 
 ---
 
@@ -73,7 +73,7 @@ Steps:
 - Receive the AI’s response
 - Return it to the user
 
-🔗 **Watch video:** [OpenAI API Integration with Node.js – Ania Kubów](https://www.youtube.com/watch?v=fgdpvwEWJ9M)
+🔗 **Watch video:** [OpenAI API Integration with Node.js – United Top Tech](https://youtu.be/L9VRxKT-hXc?si=yl3SkyFkKE_2mt78)
 
 ---
 
