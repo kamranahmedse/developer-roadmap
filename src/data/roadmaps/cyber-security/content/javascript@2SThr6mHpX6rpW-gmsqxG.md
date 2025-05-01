@@ -4,6 +4,6 @@ JavaScript (often abbreviated as JS) is a widely-used, high-level programming la
 
 Learn more from the following resources:
 
-- [@roadmap@JavaScript Roadmap](https://roadmap.sh/javascript)
+- [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
 - [@article@What is JavaScript?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 - [@video@100 JavaScript concepts you need to know](https://www.youtube.com/watch?v=lkIFF4maKMU)
