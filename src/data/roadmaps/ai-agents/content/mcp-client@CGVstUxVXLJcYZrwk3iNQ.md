@@ -1,3 +1,10 @@
 # MCP Client
 
-The MCP Client is the part of an AI agent that talks directly to the large-language-model service. It gathers all messages, files, and tool signals that make up the current working state, packs them into the format defined by the Model Context Protocol, and sends the bundle to the model’s API. After the model answers, the client unpacks the reply, checks that it follows protocol rules, and hands the result to other modules, such as planners or tool runners. It also tracks tokens, applies privacy filters, retries on network errors, and logs key events for debugging. In short, the MCP Client is the gateway that turns local agent data into a valid model request and turns the model’s response into something the rest of the system can use.
+The MCP Client is the part of an AI agent that talks to the language model API. It collects messages, files, and tool signals, packs them using the Model Context Protocol, and sends them to the model. When a reply comes back, it unpacks it, checks the format, and passes the result to other modules. It also tracks token usage, filters private data, retries failed calls, and logs important events for debugging.
+
+Visit the following resources to learn more:
+
+- [@opensource@Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol)
+- [@official@Model Context Protocol](https://modelcontextprotocol.io/introduction)
+- [@official@OpenAI API Reference](https://platform.openai.com/docs/api-reference)  
+- [@official@Anthropic API Documentation](https://docs.anthropic.com/claude/reference)  
