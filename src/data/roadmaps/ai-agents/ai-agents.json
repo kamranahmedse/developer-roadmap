@@ -721,7 +721,7 @@
       "data": {
         "label": "Git and GitHub Roadmap",
         "style": { "fontSize": 17 },
-        "href": "https://roadmap.sh/backend?r=backend-beginner",
+        "href": "https://roadmap.sh/git-github?r=git-github-beginner",
         "color": "#ffffff",
         "backgroundColor": "#4036d6",
         "oldId": "Ynvi5skgC85lgm96V_p42"
@@ -745,7 +745,7 @@
       "data": {
         "label": "API Design Roadmap",
         "style": { "fontSize": 17 },
-        "href": "https://roadmap.sh/backend?r=backend-beginner",
+        "href": "https://roadmap.sh/api-design",
         "color": "#ffffff",
         "backgroundColor": "#4036d6"
       },
