@@ -21,7 +21,7 @@ import type {
   RoadmapContentDocument,
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
-import { Ban, Coins, FileText, HeartHandshake, Star, X } from 'lucide-react';
+import { Ban, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
@@ -396,29 +396,28 @@ export function TopicDetail(props: TopicDetailProps) {
                 'flex flex-col': activeTab === 'ai',
               })}
             >
-              <div className={cn('mb-6 -mx-6 -mt-6 border-b p-2 flex items-center justify-between')}>
+              <div
+                className={cn(
+                  '-mt-4 mb-2 flex items-center justify-between py-1.5',
+                )}
+              >
                 <div>
-                  {!isEmbed && (
-                    <TopicProgressButton
-                      topicId={
-                        topicId.indexOf('@') !== -1
-                          ? topicId.split('@')[1]
-                          : topicId
-                      }
-                      resourceId={resourceId}
-                      resourceType={resourceType}
-                      onClose={handleClose}
-                    />
-                  )}
+                  <a
+                    href={contributionUrl}
+                    target={'_blank'}
+                    className="flex w-full items-center justify-center rounded-md px-2 py-1 text-sm text-xs text-black transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                  >
+                    <GitHubIcon className="mr-1.5 inline-block size-[12px] text-current" />
+                    Edit this content
+                  </a>
                 </div>
                 <button
                   type="button"
                   id="close-topic"
-                  className="flex gap-2 items-center rounded-lg bg-transparent p-1.5 text-xs uppercase tracking-wider text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                  className="flex items-center gap-2 rounded-lg bg-transparent px-1.5 py-1 text-xs tracking-wider text-gray-400 uppercase hover:bg-gray-200 hover:text-gray-900"
                   onClick={handleClose}
                 >
                   <X className="size-4" />
-                  Close
                 </button>
               </div>
 
@@ -559,19 +558,6 @@ export function TopicDetail(props: TopicDetailProps) {
                           );
                         })}
                       </ul>
-
-                      {hasPaidScrimbaLinks && (
-                        <div className="relative mt-4 -mb-1 ml-3 rounded-md border border-yellow-300 bg-yellow-100 px-2.5 py-2 text-sm text-yellow-800">
-                          <div className="flex items-center gap-2">
-                            <Coins className="h-4 w-4 text-yellow-700" />
-                            <span>
-                              Scrimba is offering{' '}
-                              <span className={'font-semibold'}>20% off</span>{' '}
-                              on all courses for roadmap.sh users.
-                            </span>
-                          </div>
-                        </div>
-                      )}
 
                       {showPaidResourceDisclaimer && (
                         <PaidResourceDisclaimer

@@ -204,6 +204,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         console.error(err);
       })
       .finally(() => {
+        setShowChangeStatus(false);
         setIsUpdatingProgress(false);
       });
   };
@@ -223,9 +224,9 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
   if (isUpdatingProgress) {
     return (
-      <button className="inline-flex cursor-default items-center rounded-md bg-white p-1 px-2 text-sm text-black">
+      <button className="inline-flex cursor-default items-center rounded-md border border-gray-300 bg-white p-1 px-2 text-sm text-black">
         <Spinner isDualRing={false} className="h-4 w-4" />
-        <span className="ml-2">Updating Status..</span>
+        <span className="ml-2">Please wait..</span>
       </button>
     );
   }
@@ -233,23 +234,23 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   return (
     <div className="relative inline-flex">
       <button
+        className="inline-flex cursor-default cursor-pointer items-center rounded-md border border-gray-300 p-1 px-2 text-sm text-black hover:bg-gray-100"
         onClick={() => setShowChangeStatus(true)}
-        className="inline-flex cursor-pointer items-center gap-2 rounded-md p-1 px-2 text-sm text-black hover:bg-gray-100"
       >
         <span className="flex h-2 w-2">
           <span
             className={`relative inline-flex h-2 w-2 rounded-full ${statusColors[progress]}`}
           ></span>
         </span>
-        <span className="capitalize">
+        <span className="ml-2 capitalize">
           {progress === 'learning' ? 'In Progress' : progress}
         </span>
-        <ChevronDown className="h-4 w-4" />
+        <ChevronDown className="ml-2 h-4 w-4" />
       </button>
 
       {showChangeStatus && (
         <div
-          className="absolute top-full left-0 z-50 mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md"
+          className="absolute bg-white z-50 top-full right-0 mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md"
           ref={changeStatusRef!}
         >
           {allowMarkingDone && (
