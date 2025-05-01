@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@What is an Agent Loop?](https://huggingface.co/learn/agents-course/en/unit1/agent-steps-and-structure)
 - [@article@Let's Build your Own Agentic Loop](https://www.reddit.com/r/AI_Agents/comments/1js1xjz/lets_build_our_own_agentic_loop_running_in_our/)
-- [@article@AgentExecutor](https://python.langchain.com/v0.2/docs/concepts/#agent-executor)
