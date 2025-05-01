@@ -9,5 +9,13 @@ Here is an example of how you can use the `tail` command to view the last few en
 ```bash
 tail /var/log/auth.log
 ```
+However, there is a newer way to see the logs in your system. In the Debian OS there is a directory called **journal** located in the /var/log. To access the collected log data it is required to use the `journalctl` command, which will output the logs.
+Here is an example of how you can use the `journalctl` command:
+
+```bash
+journalctl --since "yesterday" 
+```
+The last command will display all the collected information since the day before the current day. You may want to use the man journalctl to see all the options available for this command.
+
 
 Get yourself familiar with reading and understanding auth logs, as it's one essential way to keep your server secure.
