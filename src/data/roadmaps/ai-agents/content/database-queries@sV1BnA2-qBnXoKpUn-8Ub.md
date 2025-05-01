@@ -4,6 +4,4 @@ Database queries let an AI agent fetch, add, change, or remove data stored in a 
 
 Visit the following resources to learn more:
 
-- [@official@PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - [@article@Building Your Own Database Agent](https://www.deeplearning.ai/short-courses/building-your-own-database-agent/)
-- [@video@SQL Tutorial for Beginners](https://www.youtube.com/watch?v=HXV3zeQKqGY)
