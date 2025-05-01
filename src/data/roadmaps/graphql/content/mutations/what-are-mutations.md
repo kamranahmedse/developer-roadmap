@@ -6,4 +6,4 @@ A mutation typically includes fields that specify the data to be changed and the
 
 Learn more from the following resources:
 
-- [@official@Get started with Mutations](https://graphql.org/learn/queries/#mutations)
+- [@official@Get started with Mutations](https://graphql.org/learn/mutations/)
