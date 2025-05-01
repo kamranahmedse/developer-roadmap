@@ -16,6 +16,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { useToast } from '../../hooks/use-toast';
 import { Spinner } from '../ReactIcons/Spinner';
 import { ChevronDown } from 'lucide-react';
+import { cn } from '../../lib/classname';
 
 const statusColors: Record<ResourceProgressType, string> = {
   done: 'bg-green-500',
@@ -29,6 +30,7 @@ type TopicProgressButtonProps = {
   topicId: string;
   resourceId: string;
   resourceType: ResourceType;
+  dropdownClassName?: string;
 
   onClose: () => void;
 };
@@ -60,7 +62,8 @@ function ProgressDropdownItem(props: ProgressDropdownItemProps) {
 }
 
 export function TopicProgressButton(props: TopicProgressButtonProps) {
-  const { topicId, resourceId, resourceType, onClose } = props;
+  const { topicId, resourceId, resourceType, onClose, dropdownClassName } =
+    props;
 
   const toast = useToast();
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
@@ -234,7 +237,9 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   return (
     <div className="relative inline-flex">
       <button
-        className="inline-flex cursor-default cursor-pointer items-center rounded-md border border-gray-300 p-1 px-2 text-sm text-black hover:bg-gray-100"
+        className={cn(
+          'flex cursor-default cursor-pointer items-center rounded-md border border-gray-300 p-1 px-2 text-sm text-black hover:border-gray-400',
+        )}
         onClick={() => setShowChangeStatus(true)}
       >
         <span className="flex h-2 w-2">
@@ -250,7 +255,10 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
       {showChangeStatus && (
         <div
-          className="absolute bg-white z-50 top-full right-0 mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md"
+          className={cn(
+            'absolute top-full right-0 z-50 mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md',
+            dropdownClassName,
+          )}
           ref={changeStatusRef!}
         >
           {allowMarkingDone && (

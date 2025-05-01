@@ -11,7 +11,7 @@ export function TopicDetailsTabs(props: TopicDetailsTabsProps) {
   const { activeTab, setActiveTab } = props;
 
   return (
-    <div className="flex w-max items-center gap-1.5 p-0.5">
+    <div className="flex w-max gap-1.5">
       <TopicDetailsTab
         isActive={activeTab === 'content'}
         icon={Earth}
@@ -42,7 +42,7 @@ function TopicDetailsTab(props: TopicDetailsTabProps) {
 
   return (
     <button
-      className="flex hover:bg-gray-100 items-center gap-2 px-2 py-1 rounded-lg text-sm text-gray-500 data-[state=active]:bg-black data-[state=active]:text-white"
+      className="flex border data-[state=active]:border-black border-gray-300 hover:bg-gray-100 items-center gap-2 px-2 py-1 rounded-md text-sm text-gray-500 data-[state=active]:bg-black data-[state=active]:text-white"
       data-state={isActive ? 'active' : 'inactive'}
       onClick={onClick}
       disabled={isActive}

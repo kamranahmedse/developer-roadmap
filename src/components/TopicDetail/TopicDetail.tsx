@@ -396,52 +396,40 @@ export function TopicDetail(props: TopicDetailProps) {
                 'flex flex-col': activeTab === 'ai',
               })}
             >
-              <div
-                className={cn(
-                  '-mt-4 mb-2 flex items-center justify-between py-1.5',
-                )}
-              >
-                <div>
-                  <a
-                    href={contributionUrl}
-                    target={'_blank'}
-                    className="flex w-full items-center justify-center rounded-md px-2 py-1 text-sm text-xs text-black transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-                  >
-                    <GitHubIcon className="mr-1.5 inline-block size-[12px] text-current" />
-                    Edit this content
-                  </a>
-                </div>
-                <button
-                  type="button"
-                  id="close-topic"
-                  className="flex items-center gap-2 rounded-lg bg-transparent px-1.5 py-1 text-xs tracking-wider text-gray-400 uppercase hover:bg-gray-200 hover:text-gray-900"
-                  onClick={handleClose}
-                >
-                  <X className="size-4" />
-                </button>
-              </div>
-
               <div className="flex items-center justify-between">
-                <div>
-                  {shouldShowAiTab && (
-                    <TopicDetailsTabs
-                      activeTab={activeTab}
-                      setActiveTab={setActiveTab}
-                    />
-                  )}
-                </div>
-                {!isEmbed && (
-                  <TopicProgressButton
-                    topicId={
-                      topicId.indexOf('@') !== -1
-                        ? topicId.split('@')[1]
-                        : topicId
-                    }
-                    resourceId={resourceId}
-                    resourceType={resourceType}
-                    onClose={handleClose}
+                {shouldShowAiTab && (
+                  <TopicDetailsTabs
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
                   />
                 )}
+                <div
+                  className={cn('flex flex-grow justify-end gap-1', {
+                    'justify-between': !shouldShowAiTab,
+                  })}
+                >
+                  {!isEmbed && (
+                    <TopicProgressButton
+                      topicId={
+                        topicId.indexOf('@') !== -1
+                          ? topicId.split('@')[1]
+                          : topicId
+                      }
+                      dropdownClassName={!shouldShowAiTab ? 'left-0' : 'right-0'}
+                      resourceId={resourceId}
+                      resourceType={resourceType}
+                      onClose={handleClose}
+                    />
+                  )}
+                  <button
+                    type="button"
+                    id="close-topic"
+                    className="flex items-center gap-1.5 rounded-lg bg-gray-200 px-1.5 py-1 text-xs text-black hover:bg-gray-300 hover:text-gray-900"
+                    onClick={handleClose}
+                  >
+                    <X className="size-4" />
+                  </button>
+                </div>
               </div>
 
               {activeTab === 'ai' && shouldShowAiTab && (
