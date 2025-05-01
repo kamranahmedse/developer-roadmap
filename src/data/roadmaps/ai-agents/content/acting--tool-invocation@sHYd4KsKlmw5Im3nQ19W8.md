@@ -5,5 +5,4 @@ Acting, also called tool invocation, is the step where the AI chooses a tool and
 Visit the following resources to learn more:
 
 - [@article@What are Tools in AI Agents?](https://huggingface.co/learn/agents-course/en/unit1/tools)
-- [@article@ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
-- [@article@Planning - LangChain](https://python.langchain.com/v0.2/docs/concepts/#planning)
+- [@article@What is Tool Calling in Agents?](https://www.useparagon.com/blog/ai-building-blocks-what-is-tool-calling-a-guide-for-pms)
