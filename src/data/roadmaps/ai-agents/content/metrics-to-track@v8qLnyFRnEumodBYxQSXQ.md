@@ -1,3 +1,10 @@
 # Metrics to Track
 
-To know if an AI agent works well, you need numbers that tell the story. Track accuracy, precision, recall, and F1 score to see how often the agent is right. For ranking tasks, record mean average precision or ROC-AUC. If users interact with the agent, measure response time, latency, and the share of failed requests. Safety metrics count toxic or biased outputs, while robustness tests see how the agent copes with noisy or tricky inputs. Resource metrics—memory, CPU, and energy—show if the system can run at scale. Choose the metrics that fit the task, compare results to a baseline, and watch the trend with every new version.
+To judge how well an AI agent works, you need clear numbers. Track accuracy, precision, recall, and F1 score to measure correctness. For ranking tasks, use metrics like mean average precision or ROC-AUC. If users interact with the agent, monitor response time, latency, and failure rates. Safety metrics count toxic or biased outputs, while robustness tests check how the agent handles messy or tricky inputs. Resource metrics—memory, CPU, and energy—show if it can scale. Pick the metrics that match your goal, compare against a baseline, and track trends across versions.
+
+Visit the following resources to learn more:
+
+- [@article@Robustness Testing for AI](https://mitibmwatsonailab.mit.edu/category/robustness/)
+- [@article@Complete Guide to Machine Learning Evaluation Metrics](https://medium.com/analytics-vidhya/complete-guide-to-machine-learning-evaluation-metrics-615c2864d916)  
+- [@article@Measuring Model Performance](https://developers.google.com/machine-learning/crash-course/classification/accuracy)  
+- [@article@A Practical Framework for (Gen)AI Value Measurement](https://medium.com/google-cloud/a-practical-framework-for-gen-ai-value-measurement-5fccf3b66c43)  
