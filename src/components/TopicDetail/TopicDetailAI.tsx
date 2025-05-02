@@ -231,7 +231,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
   const testMyKnowledgePrompt =
     'Act as an interviewer and test my understanding of this topic';
-  const summarizePrompt = 'Summarize this topic in no more than two sentences';
+  const explainTopicPrompt = 'Explain this topic in detail';
   const predefinedMessages = useMemo(
     () => [
       {
@@ -243,8 +243,8 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         message: testMyKnowledgePrompt,
       },
       {
-        label: 'Summarize in 2 sentences',
-        message: summarizePrompt,
+        label: 'Explain Topic',
+        message: explainTopicPrompt,
       },
     ],
     [],
@@ -382,14 +382,14 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 const isTextMyKnowledgePrompt =
                   chat.role === 'user' &&
                   chat.content === testMyKnowledgePrompt;
-                const isTextSummarizePrompt =
-                  chat.role === 'user' && chat.content === summarizePrompt;
+                const isTextExplainTopicPrompt =
+                  chat.role === 'user' && chat.content === explainTopicPrompt;
 
                 let content = chat.content;
                 if (isTextMyKnowledgePrompt) {
                   content = 'Starting Interview';
-                } else if (isTextSummarizePrompt) {
-                  content = 'Summarize in 2 sentences';
+                } else if (isTextExplainTopicPrompt) {
+                  content = 'Explain Topic';
                 }
 
                 return (
