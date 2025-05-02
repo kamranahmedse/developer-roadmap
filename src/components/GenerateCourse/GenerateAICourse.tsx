@@ -54,6 +54,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
     const params = getUrlParams();
     const paramsTerm = params?.term;
     const paramsDifficulty = params?.difficulty;
+    const paramsSrc = params?.src || 'search';
     if (!paramsTerm || !paramsDifficulty) {
       return;
     }
@@ -87,6 +88,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       instructions: paramsCustomInstructions,
       goal: paramsGoal,
       about: paramsAbout,
+      src: paramsSrc,
     });
   }, [term, difficulty]);
 
@@ -98,9 +100,18 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
     about?: string;
     isForce?: boolean;
     prompt?: string;
+    src?: string;
   }) => {
-    const { term, difficulty, isForce, prompt, instructions, goal, about } =
-      options;
+    const {
+      term,
+      difficulty,
+      isForce,
+      prompt,
+      instructions,
+      goal,
+      about,
+      src,
+    } = options;
 
     if (!isLoggedIn()) {
       window.location.href = '/ai';
@@ -121,6 +132,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       about,
       isForce,
       prompt,
+      src,
     });
   };
 

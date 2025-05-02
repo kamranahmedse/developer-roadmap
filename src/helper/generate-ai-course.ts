@@ -20,6 +20,7 @@ type GenerateCourseOptions = {
   onCourseChange?: (course: AiCourse, rawData: string) => void;
   onLoadingChange?: (isLoading: boolean) => void;
   onError?: (error: string) => void;
+  src?: string;
 };
 
 export async function generateCourse(options: GenerateCourseOptions) {
@@ -37,6 +38,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
     instructions,
     goal,
     about,
+    src = 'search',
   } = options;
 
   onLoadingChange?.(true);
@@ -85,6 +87,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
             instructions,
             goal,
             about,
+            src,
           }),
           credentials: 'include',
         },
