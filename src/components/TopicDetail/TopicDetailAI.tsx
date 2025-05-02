@@ -231,15 +231,20 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
   const testMyKnowledgePrompt =
     'Act as an interviewer and test my understanding of this topic';
+  const summarizePrompt = 'Summarize this topic in no more than two sentences';
   const predefinedMessages = useMemo(
     () => [
       {
-        label: 'Explain this topic like I am a 5 years old',
+        label: 'Explain like I am five',
         message: 'Explain this topic like I am a 5 years old',
       },
       {
         label: 'Test my Knowledge',
         message: testMyKnowledgePrompt,
+      },
+      {
+        label: 'Summarize in 2 sentences',
+        message: summarizePrompt,
       },
     ],
     [],
@@ -377,16 +382,21 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 const isTextMyKnowledgePrompt =
                   chat.role === 'user' &&
                   chat.content === testMyKnowledgePrompt;
+                const isTextSummarizePrompt =
+                  chat.role === 'user' && chat.content === summarizePrompt;
+
+                let content = chat.content;
+                if (isTextMyKnowledgePrompt) {
+                  content = 'Starting Interview';
+                } else if (isTextSummarizePrompt) {
+                  content = 'Summarize in 2 sentences';
+                }
 
                 return (
                   <Fragment key={`chat-${index}`}>
                     <AIChatCard
                       role={chat.role}
-                      content={
-                        isTextMyKnowledgePrompt
-                          ? 'Starting Interview'
-                          : chat.content
-                      }
+                      content={content}
                       html={chat.html}
                     />
                   </Fragment>
@@ -462,6 +472,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           autoFocus={true}
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !e.shiftKey) {
+              e.preventDefault();
               handleChatSubmit();
             }
           }}
