@@ -25,7 +25,7 @@ import { Ban, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
-import { resourceTitleFromId } from '../../lib/roadmap.ts';
+import { resourceTitleFromId, type AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
 import { ResourceListSeparator } from './ResourceListSeparator.tsx';
@@ -44,6 +44,7 @@ type TopicDetailProps = {
   resourceId?: string;
   resourceTitle?: string;
   resourceType?: ResourceType;
+  renderer?: AllowedRoadmapRenderer;
 
   isEmbed?: boolean;
   canSubmitContribution: boolean;
@@ -93,6 +94,7 @@ export function TopicDetail(props: TopicDetailProps) {
     canSubmitContribution,
     resourceId: defaultResourceId,
     isEmbed = false,
+    renderer = 'balsamiq',
     resourceTitle,
   } = props;
 
@@ -397,6 +399,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   <TopicDetailsTabs
                     activeTab={activeTab}
                     setActiveTab={setActiveTab}
+                    hasAITutor={renderer === 'editor'}
                   />
                 )}
                 <div
