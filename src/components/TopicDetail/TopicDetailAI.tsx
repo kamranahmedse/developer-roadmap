@@ -1,14 +1,6 @@
 import '../GenerateCourse/AICourseLessonChat.css';
 import { useQuery } from '@tanstack/react-query';
-import {
-  useState,
-  type FormEvent,
-  useRef,
-  Fragment,
-  useCallback,
-  useEffect,
-  useMemo,
-} from 'react';
+import { useState, useRef, Fragment, useCallback, useEffect } from 'react';
 import { billingDetailsOptions } from '../../queries/billing';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
@@ -37,11 +29,7 @@ import { getPercentage } from '../../lib/number';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { defaultChatHistory } from './TopicDetail';
 import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
-import {
-  explainTopicPrompt,
-  PredefinedMessages,
-  testMyKnowledgePrompt,
-} from './PredefinedMessages';
+import { PredefinedActions, promptLabelMapping } from './PredefinedActions';
 
 type TopicDetailAIProps = {
   resourceId: string;
@@ -338,15 +326,15 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         )}
       </div>
 
-      <PredefinedMessages
-        onSelect={(m) => {
-          if (!m?.message) {
+      <PredefinedActions
+        onSelect={(action) => {
+          if (!action?.prompt) {
             toast.error('Something went wrong');
             return;
           }
 
-          setMessage(m.message);
-          handleChatSubmit(m.message);
+          setMessage(action.prompt);
+          handleChatSubmit(action.prompt);
         }}
       />
 
@@ -358,17 +346,10 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           <div className="relative flex grow flex-col justify-end">
             <div className="flex flex-col justify-end gap-2 px-3 py-2">
               {aiChatHistory.map((chat, index) => {
-                const isTextMyKnowledgePrompt =
-                  chat.role === 'user' &&
-                  chat.content === testMyKnowledgePrompt;
-                const isTextExplainTopicPrompt =
-                  chat.role === 'user' && chat.content === explainTopicPrompt;
-
                 let content = chat.content;
-                if (isTextMyKnowledgePrompt) {
-                  content = 'Starting Interview';
-                } else if (isTextExplainTopicPrompt) {
-                  content = 'Explain Topic';
+
+                if (chat.role === 'user' && promptLabelMapping[chat.content]) {
+                  content = promptLabelMapping[chat.content];
                 }
 
                 return (
