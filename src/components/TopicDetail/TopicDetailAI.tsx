@@ -37,6 +37,11 @@ import { getPercentage } from '../../lib/number';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { defaultChatHistory } from './TopicDetail';
 import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
+import {
+  explainTopicPrompt,
+  PredefinedMessages,
+  testMyKnowledgePrompt,
+} from './PredefinedMessages';
 
 type TopicDetailAIProps = {
   resourceId: string;
@@ -229,27 +234,6 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     roadmapTreeMapping?.subjects && roadmapTreeMapping?.subjects?.length > 0;
   const hasChatHistory = aiChatHistory.length > 1;
 
-  const testMyKnowledgePrompt =
-    'Act as an interviewer and test my understanding of this topic';
-  const explainTopicPrompt = 'Explain this topic in detail';
-  const predefinedMessages = useMemo(
-    () => [
-      {
-        label: 'Explain like I am five',
-        message: 'Explain this topic like I am a 5 years old',
-      },
-      {
-        label: 'Test my Knowledge',
-        message: testMyKnowledgePrompt,
-      },
-      {
-        label: 'Explain Topic',
-        message: explainTopicPrompt,
-      },
-    ],
-    [],
-  );
-
   return (
     <div className="relative mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
       {isDataLoading && (
@@ -333,7 +317,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             {!isPaidUser && (
               <>
                 <button
-                  className="hidden sm:block rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300"
+                  className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 sm:block"
                   onClick={() => {
                     setShowAILimitsPopup(true);
                   }}
@@ -354,23 +338,17 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         )}
       </div>
 
-      <div
-        className={cn(
-          'scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin flex items-center gap-2 overflow-x-auto border-gray-200 px-3 py-1 text-sm',
-        )}
-      >
-        {predefinedMessages.map((m) => (
-          <PredefinedMessageButton
-            key={m.message}
-            label={m.label}
-            message={m.message}
-            onClick={() => {
-              setMessage(m.message);
-              handleChatSubmit(m.message);
-            }}
-          />
-        ))}
-      </div>
+      <PredefinedMessages
+        onSelect={(m) => {
+          if (!m?.message) {
+            toast.error('Something went wrong');
+            return;
+          }
+
+          setMessage(m.message);
+          handleChatSubmit(m.message);
+        }}
+      />
 
       <div
         className="scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin relative grow overflow-y-auto"
@@ -488,24 +466,5 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         </button>
       </form>
     </div>
-  );
-}
-
-type PredefinedMessageButtonProps = {
-  label: string;
-  message: string;
-  onClick: () => void;
-};
-
-function PredefinedMessageButton(props: PredefinedMessageButtonProps) {
-  const { label, message, onClick } = props;
-
-  return (
-    <button
-      className="shrink-0 rounded-md bg-gray-200 px-2 py-1 text-sm whitespace-nowrap hover:bg-gray-300"
-      onClick={onClick}
-    >
-      {label}
-    </button>
   );
 }
