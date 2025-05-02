@@ -259,7 +259,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                   key={subject}
                   target="_blank"
                   href={`/ai/search?term=${subject}&difficulty=beginner&src=topic`}
-                  className="flex items-center bg-gray-100 gap-1 gap-2 rounded-md border border-gray-300 px-2 py-1 hover:bg-gray-200 hover:text-black"
+                  className="flex items-center gap-1 gap-2 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
                 >
                   {subject}
                 </a>
@@ -280,7 +280,8 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
               className="relative -top-[1px] size-4 shrink-0 text-black"
               strokeWidth={2.5}
             />
-            Chat with AI
+            <span className="hidden sm:block">Chat with AI</span>
+            <span className="block sm:hidden">AI Tutor</span>
           </span>
         )}
 
@@ -310,7 +311,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             {!isPaidUser && (
               <>
                 <button
-                  className="rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300"
+                  className="hidden sm:block rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300"
                   onClick={() => {
                     setShowAILimitsPopup(true);
                   }}
