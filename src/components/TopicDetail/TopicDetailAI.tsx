@@ -267,7 +267,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
       <div
         className={cn(
-          'flex items-center justify-between gap-2 border-gray-200 px-3 py-2 text-sm',
+          'flex min-h-[46px] items-center justify-between gap-2 border-gray-200 px-3 py-2 text-sm',
         )}
       >
         {hasSubjects && (
@@ -295,7 +295,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           <div className="flex gap-1.5">
             {hasChatHistory && (
               <button
-                className="rounded-md bg-white px-2 text-xs font-medium text-black hover:bg-gray-200"
+                className="rounded-md bg-white py-2 px-2 text-xs font-medium text-black hover:bg-gray-200"
                 onClick={() => {
                   setAiChatHistory(defaultChatHistory);
                 }}

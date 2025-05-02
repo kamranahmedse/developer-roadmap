@@ -3,7 +3,9 @@ import {
   BookOpenTextIcon,
   BrainIcon,
   ChevronDownIcon,
+  ListIcon,
   NotebookPenIcon,
+  PencilLine,
   type LucideIcon,
 } from 'lucide-react';
 import { cn } from '../../lib/classname';
@@ -23,8 +25,19 @@ export const actions: PredefinedActionType[] = [
     children: [
       {
         icon: NotebookPenIcon,
-        label: 'Explain Topic',
+        label: 'Explain the topic',
         prompt: 'Explain this topic in detail and include examples',
+      },
+      {
+        icon: ListIcon,
+        label: 'List the key points',
+        prompt: 'List the key points to remember from this topic',
+      },
+      {
+        icon: PencilLine,
+        label: 'Summarize the topic',
+        prompt:
+          'Briefly explain the topic in a few sentences. Treat it as a brief answer to an interview question. Your response should just be the answer to the question, nothing else.',
       },
       {
         icon: BabyIcon,
@@ -46,6 +59,15 @@ export const promptLabelMapping = actions.reduce(
     if (action.prompt) {
       acc[action.prompt] = action.label;
     }
+
+    if (action.children) {
+      action.children.forEach((child) => {
+        if (child.prompt) {
+          acc[child.prompt] = child.label;
+        }
+      });
+    }
+
     return acc;
   },
   {} as Record<string, string>,
@@ -107,7 +129,7 @@ export function PredefinedActionButton(props: PredefinedActionButtonProps) {
       )}
       onClick={onClick}
     >
-      {Icon && <Icon className="size-3.5" />}
+      {Icon && <Icon className="size-3.5 mr-1" />}
       {label}
       {isGroup && <ChevronDownIcon className="size-3.5" />}
     </button>
