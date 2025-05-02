@@ -7,6 +7,7 @@ import {
   Fragment,
   useCallback,
   useEffect,
+  useMemo,
 } from 'react';
 import { billingDetailsOptions } from '../../queries/billing';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
@@ -18,7 +19,7 @@ import {
   Loader2Icon,
   LockIcon,
   SendIcon,
-  Trash2
+  Trash2,
 } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname';
@@ -60,6 +61,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const scrollareaRef = useRef<HTMLDivElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const sanitizedTopicId = topicId?.includes('@')
     ? topicId?.split('@')?.[1]
@@ -95,10 +97,9 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
 
-  const handleChatSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleChatSubmit = (overrideMessage?: string) => {
+    const trimmedMessage = (overrideMessage ?? message).trim();
 
-    const trimmedMessage = message.trim();
     if (
       !trimmedMessage ||
       isStreamingMessage ||
@@ -228,6 +229,27 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     roadmapTreeMapping?.subjects && roadmapTreeMapping?.subjects?.length > 0;
   const hasChatHistory = aiChatHistory.length > 1;
 
+  const testMyKnowledgePrompt =
+    'Act as an interviewer and test my understanding of this topic';
+  const explainTopicPrompt = 'Explain this topic in detail';
+  const predefinedMessages = useMemo(
+    () => [
+      {
+        label: 'Explain like I am five',
+        message: 'Explain this topic like I am a 5 years old',
+      },
+      {
+        label: 'Test my Knowledge',
+        message: testMyKnowledgePrompt,
+      },
+      {
+        label: 'Explain Topic',
+        message: explainTopicPrompt,
+      },
+    ],
+    [],
+  );
+
   return (
     <div className="relative mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
       {isDataLoading && (
@@ -333,6 +355,24 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
       </div>
 
       <div
+        className={cn(
+          'scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin flex items-center gap-2 overflow-x-auto border-gray-200 px-3 py-1 text-sm',
+        )}
+      >
+        {predefinedMessages.map((m) => (
+          <PredefinedMessageButton
+            key={m.message}
+            label={m.label}
+            message={m.message}
+            onClick={() => {
+              setMessage(m.message);
+              handleChatSubmit(m.message);
+            }}
+          />
+        ))}
+      </div>
+
+      <div
         className="scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin relative grow overflow-y-auto"
         ref={scrollareaRef}
       >
@@ -340,11 +380,24 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           <div className="relative flex grow flex-col justify-end">
             <div className="flex flex-col justify-end gap-2 px-3 py-2">
               {aiChatHistory.map((chat, index) => {
+                const isTextMyKnowledgePrompt =
+                  chat.role === 'user' &&
+                  chat.content === testMyKnowledgePrompt;
+                const isTextExplainTopicPrompt =
+                  chat.role === 'user' && chat.content === explainTopicPrompt;
+
+                let content = chat.content;
+                if (isTextMyKnowledgePrompt) {
+                  content = 'Starting Interview';
+                } else if (isTextExplainTopicPrompt) {
+                  content = 'Explain Topic';
+                }
+
                 return (
                   <Fragment key={`chat-${index}`}>
                     <AIChatCard
                       role={chat.role}
-                      content={chat.content}
+                      content={content}
                       html={chat.html}
                     />
                   </Fragment>
@@ -364,8 +417,12 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
       </div>
 
       <form
+        ref={formRef}
         className="relative flex items-start border-t border-gray-200 text-sm"
-        onSubmit={handleChatSubmit}
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleChatSubmit();
+        }}
       >
         {isLimitExceeded && isLoggedIn() && (
           <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
@@ -416,7 +473,8 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           autoFocus={true}
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !e.shiftKey) {
-              handleChatSubmit(e as unknown as FormEvent<HTMLFormElement>);
+              e.preventDefault();
+              handleChatSubmit();
             }
           }}
           ref={textareaRef}
@@ -430,5 +488,24 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         </button>
       </form>
     </div>
+  );
+}
+
+type PredefinedMessageButtonProps = {
+  label: string;
+  message: string;
+  onClick: () => void;
+};
+
+function PredefinedMessageButton(props: PredefinedMessageButtonProps) {
+  const { label, message, onClick } = props;
+
+  return (
+    <button
+      className="shrink-0 rounded-md bg-gray-200 px-2 py-1 text-sm whitespace-nowrap hover:bg-gray-300"
+      onClick={onClick}
+    >
+      {label}
+    </button>
   );
 }
