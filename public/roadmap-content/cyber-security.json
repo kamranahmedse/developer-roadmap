@@ -4,8 +4,18 @@
     "description": "Fundamental IT skills form the backbone of cybersecurity proficiency and encompass a broad range of technical knowledge. These skills include understanding computer hardware and software, networking concepts, and operating systems (particularly Windows and Linux). Proficiency in at least one programming language, such as Python or JavaScript, is increasingly important for automation and scripting tasks. Database management, including SQL, is crucial for handling and securing data. Knowledge of cloud computing platforms like AWS or Azure is becoming essential as organizations migrate to cloud environments. Familiarity with basic cybersecurity concepts such as encryption, access control, and common attack vectors provides a foundation for more advanced security work. Additionally, troubleshooting skills, the ability to interpret logs, and a basic understanding of web technologies are vital. These fundamental IT skills enable cybersecurity professionals to effectively protect systems, identify vulnerabilities, and respond to incidents in increasingly complex technological landscapes.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Top 10 in demand IT skills",
+        "title": "7 In-Demand IT Skills to Boost Your Resume in 2025",
+        "url": "https://www.coursera.org/articles/key-it-skills-for-your-career",
+        "type": "article"
+      },
+      {
+        "title": "Top 10 in Demand IT Skills",
         "url": "https://www.comptia.org/blog/top-it-skills-in-demand",
+        "type": "article"
+      },
+      {
+        "title": "IT Skills: Definition and Examples",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/it-skills",
         "type": "article"
       }
     ]
@@ -31,7 +41,7 @@
     "description": "There are several types of network connections that enable communication between devices, each serving different functions based on speed, reliability, and purpose. **Ethernet** is a wired connection type commonly used in local area networks (LANs), providing high-speed, stable, and secure data transfer. Ethernet is ideal for businesses and environments where reliability is crucial, offering speeds from 100 Mbps to several Gbps.\n\n**Wi-Fi**, a wireless connection, enables devices to connect to a network without physical cables. It provides flexibility and mobility, making it popular in homes, offices, and public spaces. While Wi-Fi offers convenience, it can be less reliable and slower than Ethernet due to signal interference or distance from the access point.\n\n**Bluetooth** is a short-range wireless technology primarily used for connecting peripherals like headphones, keyboards, and other devices. It operates over shorter distances, typically up to 10 meters, and is useful for personal device communication rather than networking larger systems.\n\n**Fiber-optic connections** use light signals through glass or plastic fibers to transmit data at very high speeds over long distances, making them ideal for internet backbones or connecting data centers. Fiber is faster and more reliable than traditional copper cables, but it is also more expensive to implement.\n\n**Cellular connections**, such as 4G and 5G, allow mobile devices to connect to the internet via wireless cellular networks. These connections offer mobility, enabling internet access from almost anywhere, but their speeds and reliability can vary depending on network coverage.\n\nEach connection type plays a specific role, balancing factors like speed, distance, and convenience to meet the varying needs of users and organizations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is ethernet?",
+        "title": "What is Ethernet?",
         "url": "https://www.techtarget.com/searchnetworking/definition/Ethernet",
         "type": "article"
       },
@@ -52,14 +62,19 @@
     "description": "Understanding Common Symptoms\n-----------------------------\n\nIn order to troubleshoot effectively, it is important to recognize and understand the common symptoms encountered in IT systems. These can range from hardware-related issues, such as overheating or physical damage, to software-related problems, such as slow performance or unresponsiveness.\n\nBasic Troubleshooting Process\n-----------------------------\n\nFollowing a systematic troubleshooting process is critical, regardless of the operating system. Here are the basic steps you might follow:\n\n*   **Identify the problem**: Gather information on the issue and its symptoms, and attempt to reproduce the problem, if possible. Take note of any error messages or unusual behaviors.\n*   **Research and analyze**: Search for potential causes and remedies on relevant forums, web resources, or vendor documentation.\n*   **Develop a plan**: Formulate a strategy to resolve the issue, considering the least disruptive approach first, where possible.\n*   **Test and implement**: Execute the proposed solution(s) and verify if the problem is resolved. If not, repeat the troubleshooting process with a new plan until the issue is fixed.\n*   **Document the process and findings**: Record the steps taken, solutions implemented, and results to foster learning and improve future troubleshooting efforts.\n\nIsolating the Problem\n---------------------\n\nTo pinpoint the root cause of an issue, it's important to isolate the problem. You can perform this by:\n\n*   **Disabling or isolating hardware components**: Disconnect any peripherals or external devices, then reconnect and test them one by one to identify the defective component(s).\n*   **Checking resource usage**: Utilize built-in or third-party tools to monitor resource usage (e.g., CPU, memory, and disk) to determine whether a bottleneck is causing the problem.\n*   **Verifying software configurations**: Analyze the configuration files or settings for any software or applications that could be contributing to the problem.\n\nNetworking and Connectivity Issues\n----------------------------------\n\nEffective troubleshooting of network-related issues requires an understanding of various protocols, tools, and devices involved in networking. Here are some basic steps you can follow:\n\n*   **Verify physical connectivity**: Inspect cables, connectors, and devices to ensure all components are securely connected and functioning correctly.\n*   **Confirm IP configurations**: Check the system's IP address and related settings to ensure it has a valid IP configuration.\n*   **Test network services**: Use command-line tools, such as `ping` and `traceroute` (or `tracert` in Windows), to test network connections and diagnose potential problems.\n\nLog Analysis\n------------\n\nLogs are records of system events, application behavior, and user activity, which can be invaluable when troubleshooting issues. To effectively analyze logs, you should:\n\n*   **Identify relevant logs**: Determine which log files contain information related to the problem under investigation.\n*   **Analyze log content**: Examine events, error messages, or patterns that might shed light on the root cause of the issue.\n*   **Leverage log-analysis tools**: Utilize specialized tools or scripts to help parse, filter, and analyze large or complex log files.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "How to identify 9 signs of Operating System.",
-        "url": "https://bro4u.com/blog/how-to-identify-9-signs-of-operating-system",
+        "title": "@articleOS-Independent Troubleshooting Flashcards",
+        "url": "https://quizlet.com/ph/837474114/os-independent-troubleshooting-flash-cards/",
         "type": "article"
       },
       {
-        "title": "Trouble shooting guide",
+        "title": "Troubleshooting Guide",
         "url": "https://cdnsm5-ss6.sharpschool.com/userfiles/servers/server_20856499/file/teacher%20pages/lindsay%20dolezal/it%20essentials/5.6.pdf",
         "type": "article"
+      },
+      {
+        "title": "Operating System Troubleshooting - CompTIA A+",
+        "url": "https://www.youtube.com/watch?v=6gainrNiypc",
+        "type": "video"
       }
     ]
   },
@@ -195,7 +210,7 @@
     "description": "Google Workspace, formerly known as G Suite, is a collection of cloud-based productivity and collaboration tools developed by Google. It includes popular applications such as Gmail for email, Google Drive for file storage and sharing, Google Docs for document creation and editing, Google Sheets for spreadsheets, and Google Meet for video conferencing. From a cybersecurity perspective, Google Workspace presents both advantages and challenges. It offers robust built-in security features like two-factor authentication, encryption of data in transit and at rest, and advanced threat protection. However, its cloud-based nature means organizations must carefully manage access controls, data sharing policies, and compliance with various regulations. Security professionals must be vigilant about potential phishing attacks targeting Google accounts, data leakage through improper sharing settings, and the risks associated with third-party app integrations. Understanding how to properly configure and monitor Google Workspace is crucial for maintaining the security of an organization's collaborative environment and protecting sensitive information stored within these widely-used tools.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Google Workspace Website",
+        "title": "Google Workspace",
         "url": "https://workspace.google.com/intl/en_uk/",
         "type": "article"
       }
@@ -238,7 +253,7 @@
     "description": "TryHackMe is an online platform designed for cybersecurity training and learning through hands-on experience. It offers a wide range of virtual rooms and challenges covering various security topics, from basic to advanced levels. Users can access vulnerable machines, engage in capture-the-flag (CTF) style exercises, and learn practical skills in areas like penetration testing, web security, and network security. TryHackMe uses browser-based tools and virtual machines, making it accessible without requiring powerful hardware. The platform caters to beginners and experienced professionals alike, providing guided learning paths, real-world scenarios, and a supportive community. It's widely used for both individual skill development and corporate cybersecurity training.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "TryHackMe Website",
+        "title": "TryHackMe",
         "url": "https://tryhackme.com/",
         "type": "article"
       },
@@ -254,7 +269,7 @@
     "description": "VulnHub is an online platform that provides a collection of intentionally vulnerable virtual machines for cybersecurity enthusiasts, penetration testers, and ethical hackers to practice their skills. These virtual machines simulate various real-world scenarios with different vulnerabilities and security misconfigurations. Users can download and run these VMs in their own environments, attempting to exploit vulnerabilities and gain root access. VulnHub offers a hands-on approach to learning about cybersecurity, allowing users to explore different attack vectors, practice exploitation techniques, and understand common security flaws in a safe, legal environment. It's a valuable resource for both beginners and experienced professionals to enhance their offensive security skills and prepare for certifications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Vulnhub Website",
+        "title": "Vulnhub",
         "url": "https://www.vulnhub.com/",
         "type": "article"
       },
@@ -270,7 +285,7 @@
     "description": "**picoCTF** is an online cybersecurity competition designed to help students and beginners learn and practice hacking skills through capture-the-flag (CTF) challenges. Developed by Carnegie Mellon University, picoCTF features a series of progressively difficult puzzles that teach concepts such as reverse engineering, cryptography, web exploitation, forensics, and binary exploitation. It's an educational platform that offers hands-on experience in solving real-world cybersecurity problems, making it popular among both students and aspiring cybersecurity professionals for learning and improving their skills in a practical, interactive environment.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "picoCTF Website",
+        "title": "picoCTF",
         "url": "https://picoctf.org/",
         "type": "article"
       },
@@ -286,7 +301,7 @@
     "description": "The SANS Holiday Hack Challenge is an annual cybersecurity event that offers participants the opportunity to solve a series of themed cybersecurity puzzles and challenges. Designed to engage both beginners and experienced professionals, the challenge covers a wide range of topics including network forensics, penetration testing, reverse engineering, and more. It provides a fun, gamified learning experience that encourages participants to enhance their skills while collaborating with the global cybersecurity community. The event often features real-world security scenarios, creative storytelling, and interactive, hands-on tasks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SANS Holiday Hack Website",
+        "title": "SANS Holiday Hack",
         "url": "https://www.sans.org/mlp/holiday-hack-challenge-2023/",
         "type": "article"
       },
@@ -302,14 +317,14 @@
     "description": "CompTIA A+ is an entry-level certification for IT professionals that focuses on essential knowledge and skills in computer hardware, software, and troubleshooting. This certification is widely recognized in the IT industry and can serve as a stepping stone for individuals looking to start a career in the field of information technology.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Comptia A+ Course",
-        "url": "https://www.youtube.com/watch?v=1CZXXNKAY5o",
-        "type": "course"
-      },
-      {
-        "title": "Comptia A+ Website",
+        "title": "CompTIA A+",
         "url": "https://www.comptia.org/certifications/a",
         "type": "article"
+      },
+      {
+        "title": "CompTIA A+ Course",
+        "url": "https://www.youtube.com/watch?v=1CZXXNKAY5o",
+        "type": "video"
       }
     ]
   },
@@ -318,7 +333,7 @@
     "description": "The CompTIA Linux+ certification is an entry-level certification aimed at individuals who are seeking to learn and demonstrate their skills and knowledge of the Linux operating system. This certification is widely recognized in the IT industry as an essential qualification for entry-level Linux administrators and helps them gain a strong foundation in Linux system administration tasks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Linux+ Website",
+        "title": "CompTIA Linux+",
         "url": "https://www.comptia.org/certifications/linux",
         "type": "article"
       },
@@ -331,17 +346,17 @@
   },
   "4RGbNOfMPDbBcvUFWTTCV": {
     "title": "CompTIA Network+",
-    "description": "The CompTIA Network+ is a highly sought-after certification for IT professionals who aim to build a solid foundation in networking concepts and practices. This certification is vendor-neutral, meaning that it covers a broad range of knowledge that can be applied to various network technologies, products, and solutions. The Network+ certification is designed for beginners in the world of IT networking, and it is recommended that you first obtain the [CompTIA A+ certification](#) before moving on to Network+.\n\nLearn more from the following resources:",
+    "description": "The CompTIA Network+ is a highly sought-after certification for IT professionals who aim to build a solid foundation in networking concepts and practices. This certification is vendor-neutral, meaning that it covers a broad range of knowledge that can be applied to various network technologies, products, and solutions. The Network+ certification is designed for beginners in the world of IT networking, and it is recommended that you first obtain the CompTIA A+ certification before moving on to Network+.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "CompTIA Network+",
+        "url": "https://www.comptia.org/certifications/network",
+        "type": "article"
+      },
       {
         "title": "CompTIA Network+ Course",
         "url": "https://www.youtube.com/watch?v=xmpYfyNmWbw",
-        "type": "course"
-      },
-      {
-        "title": "CompTIA Network+ Website",
-        "url": "https://www.comptia.org/certifications/network",
-        "type": "article"
+        "type": "video"
       }
     ]
   },
@@ -350,14 +365,14 @@
     "description": "The Cisco Certified Network Associate (CCNA) certification is an entry-level certification for IT professionals who want to specialize in networking, specifically within the realm of Cisco products. This certification validates an individual's ability to install, configure, operate, and troubleshoot medium-sized routed and switched networks. It also covers the essentials of network security and management.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "@Network Chuck Free CCNA Course",
-        "url": "https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P",
+        "title": "CCNA Certification",
+        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
         "type": "article"
       },
       {
-        "title": "CCNA Certification Website",
-        "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
-        "type": "article"
+        "title": "Network Chuck Free CCNA Course",
+        "url": "https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P",
+        "type": "video"
       }
     ]
   },
@@ -382,8 +397,13 @@
     "description": "**Certified Ethical Hacker (CEH)** is an advanced certification focused on equipping cybersecurity professionals with the knowledge and skills required to defend against the continuously evolving landscape of cyber threats. This certification is facilitated by the EC-Council, an internationally recognized organization for information security certifications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "CEH Website",
+        "title": "CEH",
         "url": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/",
+        "type": "article"
+      },
+      {
+        "title": "Certified Ethical Hacker Online Training",
+        "url": "https://iclass.eccouncil.org/our-courses/certified-ethical-hacker-ceh/",
         "type": "article"
       }
     ]
@@ -393,7 +413,7 @@
     "description": "The **Certified Information Systems Auditor (CISA)** is a globally recognized certification for professionals who audit, control, monitor, and assess an organization's information technology and business systems.\n\nCISA was established by the Information Systems Audit and Control Association (ISACA) and is designed to demonstrate an individual's expertise in managing vulnerabilities, ensuring compliance with industry regulations, and instituting controls within the business environment.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "CISA Website",
+        "title": "CISA",
         "url": "https://www.isaca.org/credentialing/cisa",
         "type": "article"
       },
@@ -409,7 +429,7 @@
     "description": "The Certified Information Security Manager (CISM) is an advanced cybersecurity certification offered by ISACA that focuses on information security management. It is designed for professionals who have a strong understanding of information security and are responsible for overseeing, designing, and managing an organization's information security programs.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "CISM Website",
+        "title": "CISM",
         "url": "https://www.isaca.org/credentialing/cism",
         "type": "article"
       },
@@ -425,7 +445,7 @@
     "description": "The GIAC Security Essentials Certification (GSEC) is an advanced cybersecurity certification that demonstrates an individual's knowledge and skills in addressing security threats and vulnerabilities in various systems. Developed by the Global Information Assurance Certification (GIAC), this certification is suitable for security professionals, IT managers, and network administrators who want to enhance their expertise in the core cybersecurity concepts and practices.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "GSEC Certification Website",
+        "title": "GSEC Certification",
         "url": "https://www.giac.org/certifications/security-essentials-gsec/",
         "type": "article"
       }
@@ -436,7 +456,7 @@
     "description": "The GIAC Penetration Tester (GPEN) certification is an advanced-level credential designed for professionals who want to demonstrate their expertise in the field of penetration testing and ethical hacking. Created by the Global Information Assurance Certification (GIAC) organization, GPEN validates an individual's ability to conduct legal, systematic, and effective penetration tests to assess the security of computer networks, systems, and applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "GPEN Certification Website",
+        "title": "GPEN Certification",
         "url": "https://www.giac.org/certifications/penetration-tester-gpen/",
         "type": "article"
       },
@@ -452,7 +472,7 @@
     "description": "The GIAC Web Application Penetration Tester (GWAPT) certification validates an individual's ability to perform in-depth web application security assessments and exploit vulnerabilities. GWAPT focuses on using ethical hacking methodologies to conduct web application penetration testing with the goal of identifying, evaluating, and mitigating security risks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "GWAPT Certification Website",
+        "title": "GWAPT Certification",
         "url": "https://www.giac.org/certifications/web-application-penetration-tester-gwapt/",
         "type": "article"
       }
@@ -463,8 +483,13 @@
     "description": "GIAC is a globally recognized organization that provides certifications for information security professionals. Established in 1999, its primary aim is to validate the knowledge and skills of professionals in various cybersecurity domains. GIAC certifications focus on practical and hands-on abilities to ensure that certified individuals possess the necessary expertise to tackle real-world cybersecurity challenges.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "GIAC Website",
+        "title": "GIAC",
         "url": "https://www.giac.org/",
+        "type": "article"
+      },
+      {
+        "title": "Get Certified - GIAC",
+        "url": "https://www.giac.org/get-certified/?msc=main-nav",
         "type": "article"
       }
     ]
@@ -474,23 +499,28 @@
     "description": "**OSCP (Offensive Security Certified Professional)** is a widely recognized certification in cybersecurity that focuses on penetration testing and ethical hacking. Offered by Offensive Security, it requires candidates to complete a challenging exam that involves identifying and exploiting vulnerabilities in a controlled environment. The OSCP certification emphasizes hands-on skills, practical experience, and the ability to conduct comprehensive security assessments, making it highly valued by employers for its rigorous approach to real-world penetration testing techniques.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Offsec OSCP Site",
+        "title": "Offensive Security Certified Professional",
         "url": "https://www.offsec.com/courses/pen-200/",
         "type": "article"
       },
       {
-        "title": "How to prepare for the OSCP",
+        "title": "How to Prepare for OSCP Exam",
         "url": "https://cybersecurityguide.org/programs/cybersecurity-certifications/oscp/",
+        "type": "article"
+      },
+      {
+        "title": "How to Become an OSCP [Full Guide] - Geekflare",
+        "url": "https://geekflare.com/cybersecurity/oscp-certification/",
         "type": "article"
       }
     ]
   },
   "rA1skdztev3-8VmAtIlmr": {
     "title": "CREST",
-    "description": "CREST is a non-profit, accreditation and certification body that represents the technical information security industry. Established in 2008, its mission is to promote the development and professionalization of the cyber security sector. CREST provides certifications for individuals and accreditations for companies, helping customers find knowledgeable and experienced professionals in the field.\n\nLearn more from the following resources:",
+    "description": "CREST is a non-profit, accreditation and certification body that represents the technical information security industry. Established in 2008, its mission is to promote the development and professionalization of the cyber security sector. CREST provides certifications for individuals and accreditation for companies, helping customers find knowledgeable and experienced professionals in the field.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "CREST Certifications Website",
+        "title": "CREST Certifications",
         "url": "https://www.crest-approved.org/skills-certifications-careers/crest-certifications/",
         "type": "article"
       },
@@ -506,14 +536,14 @@
     "description": "The Certified Information Systems Security Professional (CISSP) is a globally recognized certification offered by the International Information System Security Certification Consortium (ISC)². It is designed for experienced security professionals to validate their knowledge and expertise in the field of information security.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "CISSP Certification course",
-        "url": "https://www.youtube.com/watch?v=M1_v5HBVHWo",
-        "type": "course"
-      },
-      {
-        "title": "CISSP Certification Website",
+        "title": "CISSP Certification",
         "url": "https://www.isc2.org/certifications/cissp",
         "type": "article"
+      },
+      {
+        "title": "CISSP Certification Course",
+        "url": "https://www.youtube.com/watch?v=M1_v5HBVHWo",
+        "type": "video"
       }
     ]
   },
@@ -521,6 +551,16 @@
     "title": "Operating Systems",
     "description": "**Operating systems (OS)** are software that manage computer hardware and provide a platform for applications to run. They handle essential functions such as managing memory, processing tasks, controlling input and output devices, and facilitating file management. Key examples include **Windows**, **macOS**, **Linux**, and **Unix**. Each operating system offers different features and interfaces, tailored to specific user needs or system requirements, from desktop computing to server management and embedded systems.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "What is a Operating System?",
+        "url": "https://en.wikipedia.org/wiki/Operating_system",
+        "type": "article"
+      },
+      {
+        "title": "8 Different Types of Operating Systems With Examples",
+        "url": "https://techspirited.com/different-types-of-operating-systems",
+        "type": "article"
+      },
       {
         "title": "What is an operating system as fast as possible",
         "url": "https://www.youtube.com/watch?v=pVzRTmdd9j0",
@@ -538,14 +578,14 @@
         "type": "article"
       },
       {
-        "title": "Windows 11 Full Tutorial - A 2 Hour Course to Learn and Master Windows 11",
-        "url": "https://www.youtube.com/watch?v=UKn-r3X2CLk",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Windows",
         "url": "https://app.daily.dev/tags/windows?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Windows 11 Full Tutorial - A 2 Hour Course to Learn and Master Windows 11",
+        "url": "https://www.youtube.com/watch?v=UKn-r3X2CLk",
+        "type": "video"
       }
     ]
   },
@@ -559,7 +599,7 @@
         "type": "course"
       },
       {
-        "title": "Linux Roadmap",
+        "title": "Visit Linux Roadmap",
         "url": "https://roadmap.sh/linux",
         "type": "article"
       },
@@ -590,8 +630,8 @@
     "description": "**macOS** is an operating system developed by Apple Inc. for its line of Mac computers. Known for its user-friendly interface and integration with other Apple products, macOS features a Unix-based architecture, offering stability, security, and performance. It includes a suite of built-in applications, such as Safari, Mail, and Finder, and supports a wide range of third-party software. macOS provides seamless integration with services like iCloud, Continuity, and Handoff, enhancing productivity and connectivity across Apple devices. Regular updates and a focus on design and usability make macOS a popular choice for both personal and professional use.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "MacOS Website",
-        "url": "https://www.apple.com/uk/macos/macos-sequoia/",
+        "title": "macOS",
+        "url": "https://www.apple.com/macos/macos-sequoia/",
         "type": "article"
       },
       {
@@ -684,6 +724,11 @@
     "description": "Common operating system (OS) commands are essential for interacting with a system's shell or command-line interface (CLI). These commands allow users to perform a wide range of tasks, such as navigating the file system, managing files and directories, checking system status, and administering processes. Below are some commonly used commands across Unix/Linux and Windows operating systems:\n\n1.  **Navigating the File System:**\n    \n    *   Unix/Linux: `ls` (list files), `cd` (change directory), `pwd` (print working directory)\n    *   Windows: `dir` (list files), `cd` (change directory), `echo %cd%` (print working directory)\n2.  **File and Directory Management:**\n    \n    *   Unix/Linux: `cp` (copy files), `mv` (move/rename files), `rm` (remove files), `mkdir` (create directory)\n    *   Windows: `copy` (copy files), `move` (move/rename files), `del` (delete files), `mkdir` (create directory)\n3.  **System Information and Processes:**\n    \n    *   Unix/Linux: `top` or `htop` (view running processes), `ps` (list processes), `df` (disk usage), `uname` (system info)\n    *   Windows: `tasklist` (list processes), `taskkill` (kill process), `systeminfo` (system details)\n4.  **File Permissions and Ownership:**\n    \n    *   Unix/Linux: `chmod` (change file permissions), `chown` (change file ownership)\n    *   Windows: `icacls` (modify access control lists), `attrib` (change file attributes)\n5.  **Network Commands:**\n    \n    *   Unix/Linux: `ping` (test network connection), `ifconfig` or `ip` (network interface configuration), `netstat` (network statistics)\n    *   Windows: `ping` (test network connection), `ipconfig` (network configuration), `netstat` (network statistics)\n\nThese commands form the foundation of interacting with and managing an OS via the command line, providing greater control over system operations compared to graphical interfaces.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "Essential Unix Commands",
+        "url": "https://www.geeksforgeeks.org/essential-linuxunix-commands/",
+        "type": "article"
+      },
+      {
         "title": "60 Linux commands you must know",
         "url": "https://www.youtube.com/watch?v=gd7BXuUQ91w",
         "type": "video"
@@ -727,7 +772,7 @@
     "description": "Networking protocols are essential for facilitating communication between devices and systems across networks. In cybersecurity, understanding these protocols is crucial for identifying potential vulnerabilities and securing data transmission. Common protocols include TCP/IP, the foundation of internet communication, which ensures reliable data delivery. HTTP and HTTPS are used for web browsing, with HTTPS providing encrypted connections. FTP and SFTP handle file transfers, while SMTP, POP3, and IMAP manage email services. DNS translates domain names to IP addresses, and DHCP automates IP address assignment. SSH enables secure remote access and management of systems. Other important protocols include TLS/SSL for encryption, SNMP for network management, and VPN protocols like IPsec and OpenVPN for secure remote connections. Cybersecurity professionals must be well-versed in these protocols to effectively monitor network traffic, implement security measures, and respond to potential threats targeting specific protocol vulnerabilities.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "12 common network protocols",
+        "title": "12 Common Network Protocols",
         "url": "https://www.techtarget.com/searchnetworking/feature/12-common-network-protocols-and-their-functions-explained",
         "type": "article"
       },
@@ -748,7 +793,7 @@
         "type": "article"
       },
       {
-        "title": "Common network ports",
+        "title": "Common Network Ports",
         "url": "https://www.youtube.com/watch?v=dh8h-4u7Wak",
         "type": "video"
       }
@@ -844,7 +889,7 @@
     "description": "**Loopback** refers to a special network interface used to send traffic back to the same device for testing and diagnostic purposes. The loopback address for IPv4 is `127.0.0.1`, while for IPv6 it is `::1`. When a device sends a request to the loopback address, the network data does not leave the local machine; instead, it is processed internally, allowing developers to test applications or network services without requiring external network access. Loopback is commonly used to simulate network traffic, check local services, or debug issues locally.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Understanding the loopback address and loopback interfaces",
+        "title": "Understanding the Loopback Address and Loopback Interfaces",
         "url": "https://study-ccna.com/loopback-interface-loopback-address/",
         "type": "article"
       }
@@ -887,7 +932,7 @@
     "description": "A default gateway is a network node, typically a router or a firewall, that serves as the access point or intermediary between a local network and external networks, such as the internet. When a device on a local network needs to communicate with a device outside its own subnet—such as accessing a website or sending an email—it sends the data to the default gateway, which then routes it to the appropriate external destination. The default gateway acts as a traffic director, ensuring that data packets are correctly forwarded between the internal network and external networks, making it a crucial component for enabling communication beyond the local network's boundaries.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a default gateway?",
+        "title": "What is a Default Gateway?",
         "url": "https://nordvpn.com/blog/what-is-a-default-gateway/?srsltid=AfmBOoosi5g4acnT9Gv_B86FMGr72hWDhk8J-4jr1HvxPCSu96FikCyw",
         "type": "article"
       },
@@ -919,7 +964,7 @@
     "description": "A **DMZ**, also known as a **Demilitarized Zone**, is a specific part of a network that functions as a buffer or separation between an organization's internal, trusted network and the external, untrusted networks like the internet. The primary purpose of a DMZ is to isolate critical systems and data from the potentially hostile external environment and provide an extra layer of security.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a DMZ network?",
+        "title": "What is a DMZ Network?",
         "url": "https://www.fortinet.com/resources/cyberglossary/what-is-dmz",
         "type": "article"
       },
@@ -934,6 +979,11 @@
     "title": "ARP",
     "description": "Address Resolution Protocol (ARP) is a crucial mechanism used in networking that allows the Internet Protocol (IP) to map an IP address to a corresponding physical address, commonly known as a Media Access Control (MAC) address. This protocol is essential for enabling devices within a Local Area Network (LAN) to communicate by translating IP addresses into specific hardware addresses.\n\nWhen one device on a LAN wants to communicate with another, it needs to know the MAC address associated with the target device’s IP address. ARP facilitates this by sending out an ARP request, which broadcasts the target IP to all devices in the network. Each device checks the requested IP against its own. The device that recognizes the IP as its own responds with an ARP reply, which includes its MAC address.\n\nOnce the requesting device receives the MAC address, it updates its ARP cache—a table that stores IP-to-MAC address mappings—allowing it to send data directly to the correct hardware address.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "ARP - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Address_Resolution_Protocol",
+        "type": "article"
+      },
       {
         "title": "What is Address Resolution Protocol?",
         "url": "https://www.fortinet.com/resources/cyberglossary/what-is-arp",
@@ -1046,7 +1096,7 @@
         "type": "article"
       },
       {
-        "title": "What is a router and how does it work?",
+        "title": "What is a router and How does it work?",
         "url": "https://www.youtube.com/watch?v=UIJzHLpG9bM",
         "type": "video"
       },
@@ -1067,12 +1117,12 @@
     "description": "A switch is a network device that operates at the data link layer (Layer 2) of the OSI model, connecting multiple devices within a local area network (LAN). It uses MAC addresses to forward data packets between devices, creating separate collision domains for each port. Switches improve network efficiency by sending packets only to their intended destinations, reducing unnecessary traffic. They support full-duplex communication, allowing simultaneous data transmission in both directions. Modern switches often include advanced features like VLANs, port mirroring, and Quality of Service (QoS) management. Switches are fundamental to creating efficient, segmented networks and are crucial components in both small office and large enterprise network infrastructures.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a network switch?",
+        "title": "What is a Network Switch?",
         "url": "https://www.cloudflare.com/en-gb/learning/network-layer/what-is-a-network-switch/",
         "type": "article"
       },
       {
-        "title": "What is a SWITCH?",
+        "title": "What is a Switch?",
         "url": "https://www.youtube.com/watch?v=9eH16Fxeb9o",
         "type": "video"
       }
@@ -1243,6 +1293,11 @@
     "links": [
       {
         "title": "Star Topology",
+        "url": "https://www.computerhope.com/jargon/s/startopo.htm",
+        "type": "article"
+      },
+      {
+        "title": "Star Topology",
         "url": "https://www.youtube.com/watch?v=EQ3rW22-Py0",
         "type": "video"
       }
@@ -1253,7 +1308,7 @@
     "description": "In a ring topology, each network device is connected in a circular fashion, where data travels through each node in one direction (or both in a bidirectional setup) until it reaches its destination. This structure simplifies wiring and ensures a predictable data path, but a failure in any single node or connection can disrupt the entire network unless redundant paths are used. Ring topology is known for its straightforward installation but is less common today due to its vulnerability to network interruptions.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is ring topology?",
+        "title": "What is Ring Topology?",
         "url": "https://www.lenovo.com/gb/en/glossary/what-is-ring-topology/",
         "type": "article"
       },
@@ -1269,12 +1324,12 @@
     "description": "Mesh topology is a network architecture where devices or nodes are interconnected with multiple direct, point-to-point links to every other node in the network. This structure allows data to travel from source to destination through multiple paths, enhancing reliability and fault tolerance. In a full mesh topology, every node is connected to every other node, while in a partial mesh, only some nodes have multiple connections. Mesh networks are highly resilient to failures, as traffic can be rerouted if a link goes down. They're commonly used in wireless networks, IoT applications, and critical infrastructure where redundancy and self-healing capabilities are crucial. However, mesh topologies can be complex and expensive to implement, especially in large networks due to the high number of connections required.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is mesh topology?",
+        "title": "What is Mesh Topology?",
         "url": "https://www.lenovo.com/gb/en/glossary/mesh-topology",
         "type": "article"
       },
       {
-        "title": "Mesh topology explained",
+        "title": "Mesh Topology explained",
         "url": "https://www.computerhope.com/jargon/m/mesh.htm",
         "type": "article"
       }
@@ -1337,6 +1392,11 @@
     "title": "FTP",
     "description": "FTP is a standard network protocol used to transfer files from one host to another host over a TCP-based network, such as the Internet. Originally developed in the 1970s, it's one of the earliest protocols for transferring files between computers and remains widely used today.\n\nFTP operates on a client-server model, where one computer acts as the client (the sender or requester) and the other acts as the server (the receiver or provider). The client initiates a connection to the server, usually by providing a username and password for authentication, and then requests a file transfer.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "File Transfer Protocol",
+        "url": "https://en.wikipedia.org/wiki/File_Transfer_Protocol",
+        "type": "article"
+      },
       {
         "title": "FTP meaning and uses",
         "url": "https://www.investopedia.com/terms/f/ftp-file-transfer-protocol.asp",
@@ -1407,7 +1467,7 @@
     "description": "VMware is a leading provider of virtualization and cloud computing software. Its core technology allows multiple virtual machines (VMs) to run on a single physical server, each with its own operating system and resources. VMware's product suite includes tools for server virtualization, desktop virtualization, cloud management, and network virtualization. Key products like vSphere and ESXi enable efficient resource utilization, improved scalability, and simplified IT management. VMware's solutions are widely used in enterprise environments for consolidating servers, enabling cloud computing, facilitating disaster recovery, and supporting development and testing environments. The company's technology plays a crucial role in modern data center operations and hybrid cloud strategies.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "VMWare Website",
+        "title": "VMWare",
         "url": "https://www.vmware.com/",
         "type": "article"
       },
@@ -1423,8 +1483,13 @@
     "description": "VirtualBox is a free, open-source virtualization software developed by Oracle. It allows users to run multiple operating systems simultaneously on a single physical machine. VirtualBox supports a wide range of guest operating systems, including various versions of Windows, Linux, macOS, and more. It provides features like snapshots for easy system state preservation, shared folders for file exchange between host and guest systems, and USB device support. VirtualBox is popular among developers, IT professionals, and enthusiasts for testing software, running legacy applications, and experimenting with different operating systems without the need for separate physical hardware.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "VirtualBox Website",
+        "title": "VirtualBox",
         "url": "https://www.virtualbox.org/",
+        "type": "article"
+      },
+      {
+        "title": "VirtualBox Documentation",
+        "url": "https://www.virtualbox.org/wiki/Documentation",
         "type": "article"
       },
       {
@@ -1455,8 +1520,13 @@
     "description": "**Proxmox** is an open-source virtualization management platform that integrates both **Proxmox Virtual Environment (Proxmox VE)** and **Proxmox Mail Gateway**. Proxmox VE combines virtualization technologies, including KVM for virtual machines and LXC for lightweight containers, into a unified web-based interface for managing and deploying virtualized environments. It offers features such as high availability, storage management, and backup solutions. Proxmox Mail Gateway provides email security and anti-spam solutions, protecting email systems from threats. Proxmox is valued for its flexibility, cost-effectiveness, and comprehensive management capabilities.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Proxmox Website",
+        "title": "Proxmox",
         "url": "https://www.proxmox.com/en/",
+        "type": "article"
+      },
+      {
+        "title": "Proxmox Virtual Environment",
+        "url": "https://en.wikipedia.org/wiki/Proxmox_Virtual_Environment",
         "type": "article"
       },
       {
@@ -1620,12 +1690,12 @@
     "description": "Port scanners are essential tools in the troubleshooting and cybersecurity landscape. They are designed to detect open or closed network ports on a target system. Network ports serve as communication endpoints for various applications and services running on a device, and knowing the status of these ports can help identify potential security vulnerabilities or confirm that specific services are running as intended.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Top 5 Best port scanners",
+        "title": "Top 5 Best Port Scanners",
         "url": "https://securitytrails.com/blog/best-port-scanners",
         "type": "article"
       },
       {
-        "title": "How To Use nmap To Scan For Open Ports",
+        "title": "How To Use Nmap To Scan For Open Ports",
         "url": "https://www.youtube.com/watch?v=ifbwTt3_oCg",
         "type": "video"
       }
@@ -1652,11 +1722,6 @@
     "description": "`dig`, short for the Domain Information Groper, is a powerful and flexible command-line tool used to perform DNS queries and obtain valuable information about domains, IPs, and DNS records. This utility, available on UNIX-based systems like Linux and macOS, provides an essential function to help diagnose and resolve various issues related to domain name resolution and network connectivity. It is highly useful for network administrators and cybersecurity professionals when troubleshooting DNS-related problems.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "How to use Linux dig command",
-        "url": "https://www.google.com/search?client=firefox-b-d&q=linux+dig+command",
-        "type": "article"
-      },
-      {
         "title": "How to look up DNS records with dig",
         "url": "https://www.youtube.com/watch?v=3AOKomsmeUY",
         "type": "video"
@@ -1667,6 +1732,11 @@
     "title": "arp",
     "description": "ARP is a protocol used by the Internet Protocol (IP) to map an IP address to a physical address, also known as a Media Access Control (MAC) address. ARP is essential for routing data between devices in a Local Area Network (LAN) as it allows for the translation of IP addresses to specific hardware on the network. When a device wants to communicate with another device on the same LAN, it needs to determine the corresponding MAC address for the target IP address. ARP helps in this process by broadcasting an ARP request containing the target IP address. All devices within the broadcast domain receive this ARP request and compare the target IP address with their own IP address. If a match is found, the device with the matching IP address sends an ARP reply which contains its MAC address. The device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "ARP - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Address_Resolution_Protocol",
+        "type": "article"
+      },
       {
         "title": "What is Address Resolution Protocol?",
         "url": "https://www.fortinet.com/resources/cyberglossary/what-is-arp",
@@ -1683,6 +1753,11 @@
     "title": "Protocol Analyzers",
     "description": "**Protocol analyzers**, also known as network analyzers or packet sniffers, are tools used to capture, inspect, and analyze network traffic. They help diagnose network issues, troubleshoot performance problems, and ensure security by providing detailed insights into the data packets transmitted across a network. Protocol analyzers decode and display various network protocols, such as TCP/IP, HTTP, and DNS, allowing users to understand communication patterns, detect anomalies, and identify potential vulnerabilities. Popular examples include Wireshark and tcpdump.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "What is a Protocol Analyzer?",
+        "url": "https://www.liveaction.com/glossary/protocol-analyzer/",
+        "type": "article"
+      },
       {
         "title": "Protocol Analyzers",
         "url": "https://www.youtube.com/watch?v=hTMhlB-o0Ow",
@@ -1713,8 +1788,19 @@
   },
   "xFuWk7M-Vctk_xb7bHbWs": {
     "title": "route",
-    "description": "The `route` command is a network utility used to view and manipulate the IP routing table on Unix-like and Windows systems. It allows users to display the current routes that data packets take, as well as add, modify, or delete routes for network traffic. This command is often used in network troubleshooting and configuration to control how data flows between different networks and subnets. By specifying routes manually, administrators can define specific paths for network traffic, bypassing default routes and optimizing performance or security.",
-    "links": []
+    "description": "The `route` command is a network utility used to view and manipulate the IP routing table on Unix-like and Windows systems. It allows users to display the current routes that data packets take, as well as add, modify, or delete routes for network traffic. This command is often used in network troubleshooting and configuration to control how data flows between different networks and subnets. By specifying routes manually, administrators can define specific paths for network traffic, bypassing default routes and optimizing performance or security.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "route command",
+        "url": "https://www.man7.org/linux/man-pages/man8/route.8.html",
+        "type": "article"
+      },
+      {
+        "title": "route command explained",
+        "url": "https://www.youtube.com/watch?v=uOqBollh_x4",
+        "type": "video"
+      }
+    ]
   },
   "y8GaUNpaCT1Ai88wPOk6d": {
     "title": "tcpdump",
@@ -1822,12 +1908,12 @@
     "description": "Certificates, also known as digital certificates or SSL/TLS certificates, play a crucial role in the world of cybersecurity. They help secure communications between clients and servers over the internet, ensuring that sensitive data remains confidential and protected from prying eyes.\n\nDigital certificates provide a crucial layer of security and trust for online communications. Understanding their role in cybersecurity, the different types of certificates, and the importance of acquiring certificates from trusted CAs can greatly enhance your organization's online security posture and reputation.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is an SSL certificate?",
+        "title": "What is an SSL Certificate?",
         "url": "https://www.cloudflare.com/en-gb/learning/ssl/what-is-an-ssl-certificate/",
         "type": "article"
       },
       {
-        "title": "What is a certificate authority",
+        "title": "What is a Certificate Authority",
         "url": "https://www.ssl.com/article/what-is-a-certificate-authority-ca/",
         "type": "article"
       }
@@ -1835,8 +1921,14 @@
   },
   "vYvFuz7lAJXZ1vK_4999a": {
     "title": "Local Auth",
-    "description": "Local authentication refers to the process of verifying a user's identity on a specific device or system without relying on external servers or networks. It typically involves storing and checking credentials directly on the device itself. Common methods include username/password combinations, biometrics (fingerprint, face recognition), or PIN codes. Local authentication is often used for device access, offline applications, or as a fallback when network-based authentication is unavailable. While it offers quick access and works without internet connectivity, it can be less secure than centralized authentication systems and more challenging to manage across multiple devices. Local authentication is commonly used in personal devices, standalone systems, and scenarios where network-based authentication is impractical or unnecessary.",
-    "links": []
+    "description": "Local authentication refers to the process of verifying a user's identity on a specific device or system without relying on external servers or networks. It typically involves storing and checking credentials directly on the device itself. Common methods include username/password combinations, biometrics (fingerprint, face recognition), or PIN codes. Local authentication is often used for device access, offline applications, or as a fallback when network-based authentication is unavailable. While it offers quick access and works without internet connectivity, it can be less secure than centralized authentication systems and more challenging to manage across multiple devices. Local authentication is commonly used in personal devices, standalone systems, and scenarios where network-based authentication is impractical or unnecessary.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Local authentication, registration, and other settings",
+        "url": "https://learn.microsoft.com/en-us/power-pages/security/authentication/set-authentication-identity",
+        "type": "article"
+      }
+    ]
   },
   "_hYN0gEi9BL24nptEtXWU": {
     "title": "Security Skills and Knowledge",
@@ -1991,7 +2083,7 @@
     "description": "**Penetration Testing Rules of Engagement** define the guidelines and boundaries for conducting a penetration test. They establish the scope, objectives, and constraints, including the systems and networks to be tested, the testing methods allowed, and the times during which testing can occur. These rules ensure that the testing is conducted ethically and legally, minimizing disruptions and protecting sensitive data. They also include communication protocols for reporting findings and any necessary approvals or permissions from stakeholders to ensure that the testing aligns with organizational policies and compliance requirements.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Why are rules of engagement important to a Penetration Test?",
+        "title": "Why are Rules of Engagement Important to a Penetration Test?",
         "url": "https://www.triaxiomsecurity.com/rules-of-engagement-important-to-penetration-test/",
         "type": "article"
       },
@@ -2023,12 +2115,12 @@
     "description": "The core concepts of Zero Trust revolve around the principle of \"never trust, always verify,\" emphasizing the need to continuously validate every user, device, and application attempting to access resources, regardless of their location within or outside the network perimeter. Unlike traditional security models that rely on a strong perimeter defense, Zero Trust assumes that threats could already exist inside the network and that no entity should be trusted by default. Key principles include strict identity verification, least privilege access, micro-segmentation, and continuous monitoring. This approach limits access to resources based on user roles, enforces granular security policies, and continuously monitors for abnormal behavior, ensuring that security is maintained even if one segment of the network is compromised. Zero Trust is designed to protect modern IT environments from evolving threats by focusing on securing data and resources, rather than just the network perimeter.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a zero trust network?",
+        "title": "What is a Zero Trust Network?",
         "url": "https://www.cloudflare.com/en-gb/learning/security/glossary/what-is-zero-trust/",
         "type": "article"
       },
       {
-        "title": "Zero trust explained in 4 minutes",
+        "title": "Zero Trust Explained in 4 minutes",
         "url": "https://www.youtube.com/watch?v=yn6CPQ9RioA",
         "type": "video"
       }
@@ -2039,8 +2131,13 @@
     "description": "Compliance officers ensure that an organization adheres to legal, regulatory, and internal policies by proactively implementing controls, training employees, and mitigating risks. Auditors, both internal and external, assess the effectiveness of these controls and the accuracy of financial reporting through periodic evaluations, providing independent assurance to management and stakeholders. While compliance focuses on prevention and day-to-day adherence, auditors focus on verifying and evaluating past performance to ensure integrity and identify areas for improvement. Both roles work together to manage risk and maintain organizational accountability.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a compliance audit?",
+        "title": "What is a Compliance Audit?",
         "url": "https://www.auditboard.com/blog/compliance-audit/",
+        "type": "article"
+      },
+      {
+        "title": "Compliance Office and Internal Audit Roles and Responsibilities",
+        "url": "https://www.compliance.com/resources/compliance-office-and-internal-audit-roles-and-responsibilities/",
         "type": "article"
       }
     ]
@@ -2084,7 +2181,7 @@
   },
   "H38Vb7xvuBJXVzgPBdRdT": {
     "title": "Cyber Kill Chain",
-    "description": "The **Cyber Kill Chain** is a model that was developed by Lockheed Martin, a major aerospace, military support, and security company, to understand and prevent cyber intrusions in various networks and systems. It serves as a framework for breaking down the stages of a cyber attack, making it easier for security professionals to identify, mitigate, and prevent threats.\n\nThe concept is based on a military model, where the term \"kill chain\" represents a series of steps needed to successfully target and engage an adversary. In the context of cybersecurity, the model breaks down the stages of a cyber attack into seven distinct phases:\n\n*   **Reconnaissance**: This initial phase involves gathering intelligence on the target, which may include researching public databases, performing network scans, or social engineering techniques.\n*   **Weaponization**: In this stage, the attacker creates a weapon – such as a malware, virus, or exploit – and packages it with a delivery mechanism that can infiltrate the target's system.\n*   **Delivery**: The attacker selects and deploys the delivery method to transmit the weapon to the target. Common methods include email attachments, malicious URLs, or infected software updates.\n*   **Exploitation**: This is the phase where the weapon is activated, taking advantage of vulnerabilities in the target's systems or applications to execute the attacker's code.\n*   **Installation**: Once the exploit is successful, the attacker installs the malware on the victim's system, setting the stage for further attacks or data exfiltration.\n*   **Command and Control (C2)**: The attacker establishes a communication channel with the infected system, allowing them to remotely control the malware and conduct further actions.\n*   **Actions on Objectives**: In this final phase, the attacker achieves their goal, which may involve stealing sensitive data, compromising systems, or disrupting services.\n\nLearn more from the following resources:",
+    "description": "The **Cyber Kill Chain** is a model that was developed by Lockheed Martin, a major aerospace, military support, and security company, to understand and prevent cyber intrusions in various networks and systems. It serves as a framework for breaking down the stages of a cyber attack, making it easier for security professionals to identify, mitigate, and prevent threats.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Cyber Kill Chain",
@@ -2116,11 +2213,16 @@
   },
   "_S25EOGS3P8647zLM5i-g": {
     "title": "Operating System Hardening",
-    "description": "**Operating system hardening** involves configuring and securing an OS to reduce vulnerabilities and improve its defense against attacks. This process includes disabling unnecessary services and ports, applying security patches and updates, configuring strong authentication mechanisms, enforcing least privilege principles, and enabling firewalls and intrusion detection systems. Hardening also involves setting up proper file permissions, securing system logs, and regularly auditing the system to ensure compliance with security policies and best practices. The goal is to minimize the attack surface and protect the OS from potential threats and exploits.\n\nLearn more from the following resources",
+    "description": "**Operating system hardening** involves configuring and securing an OS to reduce vulnerabilities and improve its defense against attacks. This process includes disabling unnecessary services and ports, applying security patches and updates, configuring strong authentication mechanisms, enforcing least privilege principles, and enabling firewalls and intrusion detection systems. Hardening also involves setting up proper file permissions, securing system logs, and regularly auditing the system to ensure compliance with security policies and best practices. The goal is to minimize the attack surface and protect the OS from potential threats and exploits.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "OS Hardening: 15 Best Practices",
         "url": "https://perception-point.io/guides/os-isolation/os-hardening-10-best-practices/",
+        "type": "article"
+      },
+      {
+        "title": "Operating System (OS) Hardening: Pros, Cons, and Importance",
+        "url": "https://linfordco.com/blog/operating-system-hardening/",
         "type": "article"
       },
       {
@@ -2185,7 +2287,7 @@
   },
   "WG7DdsxESm31VcLFfkVTz": {
     "title": "Authentication vs Authorization",
-    "description": "Authentication vs Authorization\n-------------------------------\n\n**Authentication** is the process of validating the identity of a user, device, or system. It confirms that the entity attempting to access the resource is who or what they claim to be. The most common form of authentication is the use of usernames and passwords. Other methods include:\n\n**Authorization** comes into play after the authentication process is complete. It involves granting or denying access to a resource, based on the authenticated user's privileges. Authorization determines what actions the authenticated user or entity is allowed to perform within a system or application.",
+    "description": "**Authentication** is the process of validating the identity of a user, device, or system. It confirms that the entity attempting to access the resource is who or what they claim to be. The most common form of authentication is the use of usernames and passwords. Other methods include:\n\n**Authorization** comes into play after the authentication process is complete. It involves granting or denying access to a resource, based on the authenticated user's privileges. Authorization determines what actions the authenticated user or entity is allowed to perform within a system or application.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Two-factor authentication (2FA)",
@@ -2250,6 +2352,11 @@
     "description": "A false positive happens when the security tool mistakenly identifies a non-threat as a threat. For example, it might raise an alarm for a legitimate user's activity, indicating a potential attack when there isn't any. A high number of false positives can cause unnecessary diverting of resources and time, investigating false alarms. Additionally, it could lead to user frustration if legitimate activities are being blocked.\n\nA false negative occurs when the security tool fails to detect an actual threat or attack. This could result in a real attack going unnoticed, causing damage to the system, data breaches, or other negative consequences. A high number of false negatives indicate that the security system needs to be improved to capture real threats effectively.\n\nTo have an effective cybersecurity system, security professionals aim to maximize true positives and true negatives, while minimizing false positives and false negatives. Balancing these aspects ensures that the security tools maintain their effectiveness without causing undue disruptions to a user's experience.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "Difference Between False Positive and False Negative",
+        "url": "https://www.differencebetween.net/science/difference-between-false-positive-and-false-negative/",
+        "type": "article"
+      },
+      {
         "title": "What is a false positive virus?",
         "url": "https://www.youtube.com/watch?v=WrcAGBvIT14",
         "type": "video"
@@ -2263,7 +2370,7 @@
   },
   "M6uwyD4ibguxytf1od-og": {
     "title": "True Negative / True Positive",
-    "description": "True Negative / True Positive\n-----------------------------\n\nA True Positive occurs when a security system correctly identifies a genuine threat or malicious activity. It's an accurate alert that correctly detects an actual security incident. For example, an antivirus correctly flagging a file as malware. A True Negative is when a security system correctly identifies that there is no threat when indeed no threat exists. It's the system's accurate determination that normal, benign activity is not a security risk. For example, a firewall correctly allowing legitimate network traffic.\n\nBoth True Positives and True Negatives represent correct assessments by security systems, contributing to effective threat detection and minimizing false alarms. Balancing these with minimizing false positives and false negatives is crucial for optimal security system performance.\n\nLearn more from the following resources:",
+    "description": "A True Positive occurs when a security system correctly identifies a genuine threat or malicious activity. It's an accurate alert that correctly detects an actual security incident. For example, an antivirus correctly flagging a file as malware. A True Negative is when a security system correctly identifies that there is no threat when indeed no threat exists. It's the system's accurate determination that normal, benign activity is not a security risk. For example, a firewall correctly allowing legitimate network traffic.\n\nBoth True Positives and True Negatives represent correct assessments by security systems, contributing to effective threat detection and minimizing false alarms. Balancing these with minimizing false positives and false negatives is crucial for optimal security system performance.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "False Positives and False Negatives in Information Security",
@@ -2330,7 +2437,7 @@
     "description": "Privilege escalation is a technique where an attacker increases their access level within a system, moving from lower to higher permissions, such as from a standard user to an administrator. This can be achieved by exploiting system vulnerabilities, misconfigurations, or security weaknesses. It is critical to implement strong access controls, adhere to the principle of least privilege, and regularly update and patch systems to defend against such attacks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is privilege escalation?",
+        "title": "What is Privilege Escalation?",
         "url": "https://www.crowdstrike.com/cybersecurity-101/privilege-escalation/",
         "type": "article"
       },
@@ -2359,7 +2466,7 @@
   },
   "v7CD_sHqLWbm9ibXXESIK": {
     "title": "Learn how Malware works and Types",
-    "description": "Malware, short for malicious software, refers to any software intentionally created to cause harm to a computer system, server, network, or user. It is a broad term that encompasses various types of harmful software created by cybercriminals for various purposes. In this guide, we will delve deeper into the major types of malware and their characteristics.\n\nVirus\n-----\n\nA computer virus is a type of malware that, much like a biological virus, attaches itself to a host (e.g., a file or software) and replicates when the host is executed. Viruses can corrupt, delete or modify data, and slow down system performance.\n\nWorm\n----\n\nWorms are self-replicating malware that spread through networks without human intervention. They exploit system vulnerabilities, consuming bandwidth and sometimes carrying a payload to infect target machines.\n\nTrojan Horse\n------------\n\nA trojan horse is a piece of software disguised as a legitimate program but contains harmful code. Users unknowingly download and install it, giving the attacker unauthorized access to the computer or network. Trojans can be used to steal data, create a backdoor, or launch additional malware attacks.\n\nRansomware\n----------\n\nRansomware is a type of malware that encrypts its victims' files and demands a ransom, typically in the form of cryptocurrency, for the decryption key. If the victim refuses or fails to pay within a specified time, the encrypted data may be lost forever.\n\nSpyware\n-------\n\nSpyware is a type of malware designed to collect and relay information about a user or organization without their consent. It can capture keystrokes, record browsing history, and access personal data such as usernames and passwords.\n\nAdware\n------\n\nAdware is advertising-supported software that automatically displays or downloads advertising materials, often in the form of pop-up ads, on a user's computer. While not always malicious, adware can be intrusive and open the door for other malware infections.\n\nRootkit\n-------\n\nA rootkit is a type of malware designed to hide or obscure the presence of other malicious programs on a computer system. This enables it to maintain persistent unauthorized access to the system and can make it difficult for users or security software to detect and remove infected files.\n\nKeylogger\n---------\n\nKeyloggers are a type of malware that monitor and record users' keystrokes, allowing attackers to capture sensitive information, such as login credentials or financial information entered on a keyboard.\n\nUnderstanding the different types of malware can help you better identify and protect against various cyber threats. As the cyber landscape continues to evolve, it's essential to stay informed about emerging malware and equip yourself with the necessary security skills and knowledge.",
+    "description": "Malware, short for malicious software, refers to any software intentionally created to cause harm to a computer system, server, network, or user. It is a broad term that encompasses various types of harmful software created by cybercriminals for various purposes. In this guide, we will delve deeper into the major types of malware and their characteristics.\n\nVirus\n-----\n\nA computer virus is a type of malware that, much like a biological virus, attaches itself to a host (e.g., a file or software) and replicates when the host is executed. Viruses can corrupt, delete or modify data, and slow down system performance.\n\nWorm\n----\n\nWorms are self-replicating malware that spread through networks without human intervention. They exploit system vulnerabilities, consuming bandwidth and sometimes carrying a payload to infect target machines.\n\nTrojan Horse\n------------\n\nA trojan horse is a piece of software disguised as a legitimate program but contains harmful code. Users unknowingly download and install it, giving the attacker unauthorized access to the computer or network. Trojans can be used to steal data, create a backdoor, or launch additional malware attacks.\n\nRansomware\n----------\n\nRansomware is a type of malware that encrypts its victims' files and demands a ransom, typically in the form of cryptocurrency, for the decryption key. If the victim refuses or fails to pay within a specified time, the encrypted data may be lost forever.\n\nSpyware\n-------\n\nSpyware is a type of malware designed to collect and relay information about a user or organization without their consent. It can capture keystrokes, record browsing history, and access personal data such as usernames and passwords.\n\nAdware\n------\n\nAdware is advertising-supported software that automatically displays or downloads advertising materials, often in the form of pop-up ads, on a user's computer. While not always malicious, adware can be intrusive and open the door for other malware infections.\n\nRootkit\n-------\n\nA rootkit is a type of malware designed to hide or obscure the presence of other malicious programs on a computer system. This enables it to maintain persistent unauthorized access to the system and can make it difficult for users or security software to detect and remove infected files.\n\nKeylogger\n---------\n\nKeyloggers are a type of malware that monitor and record users' keystrokes, allowing attackers to capture sensitive information, such as login credentials or financial information entered on a keyboard.\n\nLearn more from the following resources:",
     "links": []
   },
   "Hoou7kWyfB2wx_yFHug_H": {
@@ -2367,7 +2474,7 @@
     "description": "**Nmap** (Network Mapper) is an open-source network scanning tool used to discover hosts and services on a network, identify open ports, and detect vulnerabilities. It provides detailed information about networked devices, including their IP addresses, operating systems, and running services. Nmap supports various scanning techniques such as TCP SYN scan, UDP scan, and service version detection. It's widely used for network security assessments, vulnerability scanning, and network inventory management, helping administrators and security professionals understand and secure their network environments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "NMAP Website",
+        "title": "NMAP",
         "url": "https://nmap.org/",
         "type": "article"
       },
@@ -2375,6 +2482,11 @@
         "title": "NMAP Cheat Sheet",
         "url": "https://www.tutorialspoint.com/nmap-cheat-sheet",
         "type": "article"
+      },
+      {
+        "title": "Nmap Tutorial to find Network Vulnerabilities",
+        "url": "https://www.youtube.com/watch?v=4t4kBkMsDbQ",
+        "type": "video"
       }
     ]
   },
@@ -2417,7 +2529,7 @@
   },
   "W7iQUCjODGYgE4PjC5TZI": {
     "title": "curl",
-    "description": "Curl is a versatile command-line tool primarily used for transferring data using various network protocols. It is widely used in cybersecurity and development for the purpose of testing and interacting with web services, APIs, and scrutinizing web application security. Curl supports various protocols such as HTTP, HTTPS, FTP, SCP, SFTP, and many more.\n\nLearn more from the following resources:",
+    "description": "cURL is a versatile command-line tool primarily used for transferring data using various network protocols. It is widely used in cybersecurity and development for the purpose of testing and interacting with web services, APIs, and scrutinizing web application security. Curl supports various protocols such as HTTP, HTTPS, FTP, SCP, SFTP, and many more.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is the cURL command?",
@@ -2468,6 +2580,11 @@
     "description": "ARP is a protocol used by the Internet Protocol (IP) to map an IP address to a physical address, also known as a Media Access Control (MAC) address. ARP is essential for routing data between devices in a Local Area Network (LAN) as it allows for the translation of IP addresses to specific hardware on the network. When a device wants to communicate with another device on the same LAN, it needs to determine the corresponding MAC address for the target IP address. ARP helps in this process by broadcasting an ARP request containing the target IP address. All devices within the broadcast domain receive this ARP request and compare the target IP address with their own IP address. If a match is found, the device with the matching IP address sends an ARP reply which contains its MAC address. The device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "ARP - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Address_Resolution_Protocol",
+        "type": "article"
+      },
+      {
         "title": "What is Address Resolution Protocol?",
         "url": "https://www.fortinet.com/resources/cyberglossary/what-is-arp",
         "type": "article"
@@ -2483,6 +2600,11 @@
     "title": "cat",
     "description": "`cat` is a widely used command-line utility in UNIX and UNIX-like systems. It stands for \"concatenate\" which, as the name suggests, can be used to concatenate files, display file contents, or combine files. In the context of incident response and discovery tools, `cat` plays an essential role in quickly accessing and assessing the contents of various files that inform on security incidents and help users understand system data as well as potential threats.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Cat Command in Linux",
+        "url": "https://linuxize.com/post/linux-cat-command/",
+        "type": "article"
+      },
       {
         "title": "Linux cat command",
         "url": "https://phoenixnap.com/kb/linux-cat-command",
@@ -2548,7 +2670,7 @@
     "description": "Wireshark is a powerful, open-source network protocol analyzer used for real-time packet capture and analysis. It allows users to examine network traffic at a microscopic level, capturing and interactively browsing the traffic running on a computer network. Wireshark can decode a wide variety of network protocols, making it an essential tool for network troubleshooting, security analysis, software and protocol development, and education. It provides a user-friendly graphical interface and offers features like deep inspection of hundreds of protocols, live capture and offline analysis, and the ability to read/write many different capture file formats. Wireshark is widely used by IT professionals, security experts, and developers for diagnosing network issues and understanding network communication.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Wireshark Website",
+        "title": "Wireshark",
         "url": "https://www.wireshark.org/",
         "type": "article"
       },
@@ -2569,7 +2691,7 @@
     "description": "WinHex is a universal hexadecimal editor and disk editor primarily used for computer forensics and data recovery. It allows users to examine and edit the raw content of files, disks, or memory in hexadecimal and ASCII formats. WinHex provides advanced features for data analysis, including disk cloning, secure data erasure, and file system reconstruction. It supports various file systems and can work with physical disks, disk images, and RAM. Forensic experts use WinHex to investigate digital evidence, recover deleted files, and analyze data structures. While powerful, it requires careful use as it can directly manipulate raw data, potentially causing unintended changes to critical system files or data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "WinHex Website",
+        "title": "WinHex",
         "url": "https://x-ways.net/winhex/",
         "type": "article"
       },
@@ -2584,6 +2706,11 @@
     "title": "memdump",
     "description": "**memdump** is a tool or process used to capture the contents of a computer's physical memory (RAM) for analysis. This \"memory dump\" can be useful in digital forensics, debugging, or incident response to identify active processes, open files, network connections, or potentially malicious code running in memory. By analyzing a memory dump, security professionals can investigate malware, recover encryption keys, or gather evidence in case of a breach. Tools like `memdump` (Linux utility) or `DumpIt` (Windows) are commonly used to perform this process.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "memdump - Github",
+        "url": "https://github.com/tchebb/memdump",
+        "type": "opensource"
+      },
       {
         "title": "memdump",
         "url": "https://www.kali.org/tools/memdump/",
@@ -2612,7 +2739,7 @@
     "description": "Autopsy is a versatile and powerful open-source digital forensics platform that is primarily used for incident response, cyber security investigations, and data recovery. As an investigator, you can utilize Autopsy to quickly and efficiently analyze a compromised system, extract crucial artifacts, and generate comprehensive reports. Integrated with The Sleuth Kit and other plug-ins, Autopsy allows examiners to automate tasks and dig deep into a system's structure to discover the root cause of an incident.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Autopsy Website",
+        "title": "Autopsy",
         "url": "https://www.autopsy.com/",
         "type": "article"
       },
@@ -2727,6 +2854,11 @@
         "title": "What is PKI?",
         "url": "https://cpl.thalesgroup.com/faq/public-key-infrastructure-pki/what-public-key-infrastructure-pki",
         "type": "article"
+      },
+      {
+        "title": "What Is Public Key Infrastructure (PKI) & How Does It Work?",
+        "url": "https://www.okta.com/identity-101/public-key-infrastructure/",
+        "type": "article"
       }
     ]
   },
@@ -2836,7 +2968,7 @@
     "description": "**NIST (National Institute of Standards and Technology)** is a U.S. federal agency that develops and promotes measurement standards, technology, and best practices. In the context of cybersecurity, NIST provides widely recognized guidelines and frameworks, such as the **NIST Cybersecurity Framework (CSF)**, which offers a structured approach to managing and mitigating cybersecurity risks. NIST also publishes the **NIST Special Publication (SP) 800 series**, which includes standards and guidelines for securing information systems, protecting data, and ensuring system integrity. These resources are essential for organizations seeking to enhance their security posture and comply with industry regulations.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "NIST Website",
+        "title": "NIST",
         "url": "https://www.nist.gov/",
         "type": "article"
       },
@@ -2849,7 +2981,7 @@
   },
   "fjEdufrZAfW4Rl6yDU8Hk": {
     "title": "RMF",
-    "description": "A **Risk Management Framework (RMF)** is a structured approach that organizations use to identify, assess, manage, and mitigate risks. It provides a systematic process to ensure that risks are effectively controlled and aligned with the organization's objectives. Key components include:\n\n1.  **Risk Identification:** Identifying potential internal and external risks that could impact the organization.\n2.  **Risk Assessment:** Evaluating the likelihood and impact of identified risks.\n3.  **Risk Mitigation:** Developing strategies to reduce or eliminate risks, such as controls, policies, and contingency plans.\n4.  **Risk Monitoring:** Continuously tracking risks and the effectiveness of mitigation measures.\n5.  **Communication and Reporting:** Regularly updating stakeholders on the risk status and actions taken.\n6.  **Review and Improvement:** Periodically reassessing the framework and adapting to changes in the business or regulatory environment.\n\nThe RMF ensures that risks are managed proactively and consistently across the organization, helping to safeguard assets and support strategic decision-making.\n\nLearn more from the following resources:",
+    "description": "A **Risk Management Framework (RMF)** is a structured approach that organizations use to identify, assess, manage, and mitigate risks. It provides a systematic process to ensure that risks are effectively controlled and aligned with the organization's objectives. Key components include:\n\n1.  **Risk Identification:** Identifying potential internal and external risks that could impact the organization.\n2.  **Risk Assessment:** Evaluating the likelihood and impact of identified risks.\n3.  **Risk Mitigation:** Developing strategies to reduce or eliminate risks, such as controls, policies, and contingency plans.\n4.  **Risk Monitoring:** Continuously tracking risks and the effectiveness of mitigation measures.\n5.  **Communication and Reporting:** Regularly updating stakeholders on the risk status and actions taken.\n6.  **Review and Improvement:** Periodically reassessing the framework and adapting to changes in the business or regulatory environment.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is the Risk Management Framework?",
@@ -2868,7 +3000,7 @@
     "description": "The **Center for Internet Security (CIS)** is a non-profit organization that focuses on enhancing the cybersecurity posture of individuals, organizations, and governments around the world. CIS offers various tools, best practices, guidelines, and frameworks that help in defending against common cyber threats.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "CIS Website",
+        "title": "CIS",
         "url": "https://www.cisecurity.org/",
         "type": "article"
       },
@@ -2950,6 +3082,16 @@
         "title": "ParrotOS",
         "url": "https://parrotsec.org/",
         "type": "article"
+      },
+      {
+        "title": "ParrotOS Documentation",
+        "url": "https://parrotsec.org/docs",
+        "type": "article"
+      },
+      {
+        "title": "ParrotOS Downloads",
+        "url": "https://parrotsec.org/download",
+        "type": "article"
       }
     ]
   },
@@ -2969,7 +3111,7 @@
     "description": "**LOLBAS** (Living Off the Land Binaries and Scripts) refers to a collection of legitimate system binaries and scripts that can be abused by attackers to perform malicious actions while evading detection. These tools, which are often part of the operating system or installed software, can be leveraged for various purposes, such as executing commands, accessing data, or modifying system configurations, thereby allowing attackers to carry out their activities without deploying custom malware. The use of LOLBAS techniques makes it harder for traditional security solutions to detect and prevent malicious activities since the binaries and scripts used are typically trusted and deemed legitimate.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "LOLBAS project",
+        "title": "LOLBAS Project",
         "url": "https://lolbas-project.github.io/#",
         "type": "article"
       },
@@ -2990,7 +3132,7 @@
     "description": "Event logs are digital records that document activities and occurrences within computer systems and networks. They serve as a crucial resource for cybersecurity professionals, providing a chronological trail of system operations, user actions, and security-related events. These logs capture a wide range of information, including login attempts, file access, system changes, and application errors. In the context of security, event logs play a vital role in threat detection, incident response, and forensic analysis. They help identify unusual patterns, track potential security breaches, and reconstruct the sequence of events during an attack. Effective log management involves collecting logs from various sources, securely storing them, and implementing tools for log analysis and correlation. However, the sheer volume of log data can be challenging to manage, requiring advanced analytics and automation to extract meaningful insights and detect security incidents in real-time.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is an event log?",
+        "title": "What is an Event Log?",
         "url": "https://www.crowdstrike.com/cybersecurity-101/observability/event-log/",
         "type": "article"
       },
@@ -3022,7 +3164,7 @@
     "description": "**NetFlow** is a network protocol developed by Cisco for collecting and analyzing network traffic data. It provides detailed information about network flows, including the source and destination IP addresses, ports, and the amount of data transferred. NetFlow data helps network administrators monitor traffic patterns, assess network performance, and identify potential security threats. By analyzing flow data, organizations can gain insights into bandwidth usage, detect anomalies, and optimize network resources. NetFlow is widely supported across various network devices and often integrated with network management and security tools for enhanced visibility and control.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Cisco NetFlow Website",
+        "title": "Cisco NetFlow",
         "url": "https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html",
         "type": "article"
       },
@@ -3054,12 +3196,12 @@
     "description": "Firewall logs are detailed records of network traffic and security events captured by firewall devices. These logs provide crucial information about connection attempts, allowed and blocked traffic, and potential security incidents. They typically include data such as source and destination IP addresses, ports, protocols, timestamps, and the action taken by the firewall. Security professionals analyze these logs to monitor network activity, detect unusual patterns, investigate security breaches, and ensure policy compliance. Firewall logs are essential for troubleshooting network issues, optimizing security rules, and conducting forensic analysis after an incident. However, the volume of log data generated can be overwhelming, necessitating the use of log management tools and security information and event management (SIEM) systems to effectively process, correlate, and derive actionable insights from the logs. Regular review and analysis of firewall logs are critical practices in maintaining a robust security posture and responding promptly to potential threats.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is firewall logging and why is it important?",
+        "title": "What is Firewall Logging and Why is it Important?",
         "url": "https://cybriant.com/what-is-firewall-logging-and-why-is-it-important/",
         "type": "article"
       },
       {
-        "title": "Reviewing firewall logs",
+        "title": "Reviewing Firewall Logs",
         "url": "https://www.youtube.com/watch?v=XiJ30f8V_T4",
         "type": "video"
       }
@@ -3083,7 +3225,7 @@
   },
   "6oAzYfwsHQYNVbi7c2Tly": {
     "title": "NAC-based",
-    "description": "Network Access Control (NAC) based hardening is a crucial component in enhancing the security of your network infrastructure. NAC provides organizations with the ability to control and manage access to the network resources, ensuring that only authorized users and devices can connect to the network. It plays a vital role in reducing the attack surface and preventing unauthorized access to sensitive data and resources. By implementing NAC-based hardening in your cybersecurity strategy, you protect your organization from threats and maintain secure access to critical resources.\n\nLearn more from the following resouces:",
+    "description": "Network Access Control (NAC) based hardening is a crucial component in enhancing the security of your network infrastructure. NAC provides organizations with the ability to control and manage access to the network resources, ensuring that only authorized users and devices can connect to the network. It plays a vital role in reducing the attack surface and preventing unauthorized access to sensitive data and resources. By implementing NAC-based hardening in your cybersecurity strategy, you protect your organization from threats and maintain secure access to critical resources.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is Network Access Control",
@@ -3099,8 +3241,19 @@
   },
   "W7bcydXdwlubXF2PHKOuq": {
     "title": "Port Blocking",
-    "description": "Port blocking is an essential practice in hardening the security of your network and devices. It involves restricting, filtering, or entirely denying access to specific network ports to minimize exposure to potential cyber threats. By limiting access to certain ports, you can effectively safeguard your systems against unauthorized access and reduce the likelihood of security breaches.",
-    "links": []
+    "description": "Port blocking is an essential practice in hardening the security of your network and devices. It involves restricting, filtering, or entirely denying access to specific network ports to minimize exposure to potential cyber threats. By limiting access to certain ports, you can effectively safeguard your systems against unauthorized access and reduce the likelihood of security breaches.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is Port Blocking?",
+        "url": "https://cyberpedia.reasonlabs.com/EN/port%20blocking.html",
+        "type": "article"
+      },
+      {
+        "title": "Is Your Router Blocking Your Ports? Here's How to Find Out?",
+        "url": "https://softhandtech.com/how-can-i-tell-if-a-port-is-blocked-on-my-router/",
+        "type": "article"
+      }
+    ]
   },
   "FxuMJmDoDkIsPFp2iocFg": {
     "title": "Group Policy",
@@ -3187,7 +3340,7 @@
         "type": "article"
       },
       {
-        "title": "Endpoints are the IT frontdoor - Gaurd them!",
+        "title": "Endpoints are the IT Frontdoor - Guard them!",
         "url": "https://www.youtube.com/watch?v=Njqid_JpqTs",
         "type": "video"
       }
@@ -3305,12 +3458,12 @@
     "description": "Antivirus software is a specialized program designed to detect, prevent, and remove malicious software, such as viruses, worms, and trojans, from computer systems. It works by scanning files and programs for known malware signatures, monitoring system behavior for suspicious activity, and providing real-time protection against potential threats. Regular updates are essential for antivirus software to recognize and defend against the latest threats. While it is a critical component of cybersecurity, antivirus solutions are often part of a broader security strategy that includes firewalls, anti-malware tools, and user education to protect against a wide range of cyber threats.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is antivirus software?",
+        "title": "What is Antivirus Software?",
         "url": "https://www.webroot.com/gb/en/resources/tips-articles/what-is-anti-virus-software",
         "type": "article"
       },
       {
-        "title": "What is an antivirus and how does it keep us safe?",
+        "title": "What is an Antivirus and how does it keep us safe?",
         "url": "https://www.youtube.com/watch?v=jW626WMWNAE",
         "type": "video"
       }
@@ -3321,7 +3474,12 @@
     "description": "Anti-malware is a type of software designed to detect, prevent, and remove malicious software, such as viruses, worms, trojans, ransomware, and spyware, from computer systems. By continuously scanning files, applications, and incoming data, anti-malware solutions protect devices from a wide range of threats that can compromise system integrity, steal sensitive information, or disrupt operations. Advanced anti-malware programs utilize real-time monitoring, heuristic analysis, and behavioral detection techniques to identify and neutralize both known and emerging threats, ensuring that systems remain secure against evolving cyber attacks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is antimalware?",
+        "title": "Anti-malware Definition",
+        "url": "https://www.computertechreviews.com/definition/anti-malware/",
+        "type": "article"
+      },
+      {
+        "title": "What is Antimalware?",
         "url": "https://riskxchange.co/1006974/cybersecurity-what-is-anti-malware/",
         "type": "article"
       },
@@ -3353,13 +3511,13 @@
     "description": "Data Loss Prevention (DLP) refers to a set of strategies, tools, and processes used by organizations to ensure that sensitive data is not lost, accessed, or misused by unauthorized users. DLP solutions monitor, detect, and block the movement of critical information outside an organization’s network, helping to prevent data breaches, leaks, and other security incidents.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is data loss prevention (DLP)?",
-        "url": "https://www.techtarget.com/whatis/definition/data-loss-prevention-DLP",
+        "title": "What is DLP (data loss prevention)?",
+        "url": "https://www.cloudflare.com/es-es/learning/access-management/what-is-dlp/",
         "type": "article"
       },
       {
-        "title": "What is DLP (data loss prevention)?",
-        "url": "https://www.cloudflare.com/es-es/learning/access-management/what-is-dlp/",
+        "title": "What is Data Loss Prevention (DLP)?",
+        "url": "https://www.techtarget.com/whatis/definition/data-loss-prevention-DLP",
         "type": "article"
       }
     ]
@@ -3385,7 +3543,7 @@
     "description": "Firewalls are network security devices that monitor and control incoming and outgoing traffic based on predetermined security rules. Traditional firewalls operate at the network layer, filtering traffic based on IP addresses, ports, and protocols. They provide basic protection by creating a barrier between trusted internal networks and untrusted external networks.\n\nNext-generation firewalls (NGFWs) build upon this foundation, offering more advanced features to address modern cyber threats. NGFWs incorporate deep packet inspection, application-level filtering, and integrated intrusion prevention systems. They can identify and control applications regardless of port or protocol, enabling more granular security policies. NGFWs often include additional security functions such as SSL/TLS inspection, antivirus scanning, and threat intelligence integration. This evolution allows for more comprehensive network protection, better visibility into network traffic, and improved defense against sophisticated attacks in today's complex and dynamic threat landscape.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a firewall?",
+        "title": "What is a Firewall?",
         "url": "https://www.kaspersky.com/resource-center/definitions/firewall",
         "type": "article"
       },
@@ -3534,12 +3692,12 @@
     "description": "The **Preparation** phase in incident response involves establishing and maintaining the tools, policies, and procedures necessary to handle security incidents effectively. This includes creating an incident response plan, defining roles and responsibilities, training staff, and ensuring that appropriate technologies, such as monitoring systems and logging tools, are in place to detect and respond to incidents. Preparation also involves conducting regular drills, threat intelligence gathering, and vulnerability assessments to enhance readiness, ensuring the organization is equipped to mitigate potential security threats quickly and efficiently.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "",
+        "title": "What is Incident Response",
         "url": "https://www.microsoft.com/en-gb/security/business/security-101/what-is-incident-response",
         "type": "article"
       },
       {
-        "title": "",
+        "title": "Cyber Security Incident Response Explained",
         "url": "https://www.youtube.com/watch?v=ePZGqlcB1O8",
         "type": "video"
       }
@@ -3566,7 +3724,7 @@
     "description": "Containment in cybersecurity refers to the process of limiting the impact of a security incident by isolating affected systems, networks, or data to prevent further spread or damage. When a breach or malware infection is detected, containment strategies are quickly implemented to halt the attack's progress, often by disconnecting compromised systems from the network, blocking malicious traffic, or restricting user access. Containment is a critical step in incident response, allowing security teams to control the situation while they investigate the root cause, assess the extent of the breach, and prepare for remediation. Effective containment minimizes the potential harm to the organization, preserving the integrity of unaffected systems and data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Microsoft security incident management: Containment, eradication, and recovery",
+        "title": "Microsoft Security Incident Management: Containment, Eradication, and Recovery",
         "url": "https://learn.microsoft.com/en-us/compliance/assurance/assurance-sim-containment-eradication-recovery",
         "type": "article"
       },
@@ -3667,13 +3825,13 @@
     "description": "VirusTotal's main feature is multi-scanning using over 70 antivirus scanners to generate a cumulative report on whether a file is malicious. It also stores file hashes, eliminating the need to rescan previously uploaded files. Researchers can comment in the community, sharing their analysis and insights into malware for others to benefit from. VirusTotal's aggregated data comes from various antivirus engines, website scanners, file and URL analysis tools, and user contributions. These tools serve diverse purposes, including heuristic engines, known-bad signatures, metadata extraction, and identification of malicious signals. Additionally, VirusTotal offers services to search by file hash, IP address, and URL, which are also scanned. For more comprehensive features, VirusTotal provides Premium services such as Intelligence & Hunting.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "VirusTotal's Docs on how VirusTotal Works",
-        "url": "https://docs.virustotal.com/docs/how-it-works",
+        "title": "VirusTotal",
+        "url": "https://www.virustotal.com",
         "type": "article"
       },
       {
-        "title": "VirusTotal's website",
-        "url": "https://www.virustotal.com",
+        "title": "How VirusTotal Works",
+        "url": "https://docs.virustotal.com/docs/how-it-works",
         "type": "article"
       },
       {
@@ -3709,7 +3867,7 @@
     "description": "ANY.RUN is an interactive online malware analysis platform that allows users to safely execute and analyze suspicious files and URLs in a controlled, virtualized environment. This sandbox service provides real-time insights into the behavior of potentially malicious software, such as how it interacts with the system, what files it modifies, and what network connections it attempts to make. Users can observe and control the analysis process, making it a valuable tool for cybersecurity professionals to identify and understand new threats, assess their impact, and develop appropriate countermeasures. ANY.RUN is particularly useful for dynamic analysis, enabling a deeper understanding of malware behavior in real-time.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "ANY.RUN Website",
+        "title": "Any.run",
         "url": "https://any.run/",
         "type": "article"
       },
@@ -3863,7 +4021,7 @@
     "description": "In a Shoulder Surfing Attack, an attacker tries to get information when you are unaware of where the attacker looks over your shoulder or from your back to see what you're doing on your device and obtain sensitive information. Shoulder Surfing attacks are accomplished by observing the content \"over the victim's shoulder\". It is a social engineering attack where the attackers physically view the device screen and keypad to obtain personal information. This attack is mostly done when you are in a public place or crowded area. Sometimes attackers attack when you are busy on your device and the attacker could be your friend, someone you know or it may be some stranger.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is shoulder surfing, and how can you avoid it?",
+        "title": "What is Shoulder Surfing, and How can you avoid it?",
         "url": "https://nordvpn.com/blog/shoulder-surfing/?srsltid=AfmBOorl5NPpW_Tnhas9gB2HiblorqwXyK0NJae7uaketrnDwbjJmiYV",
         "type": "article"
       },
@@ -3884,12 +4042,17 @@
     "description": "Dumpster Diving in the context of cybersecurity refers to the practice of searching through discarded materials in trash or recycling bins to find confidential information. This technique may seem unsophisticated, but it can be extremely effective in obtaining valuable data such as passwords, account information, network diagrams, or any other sensitive information that has not been properly destroyed.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Dumpster Diving",
+        "url": "https://www.techtarget.com/searchsecurity/definition/dumpster-diving",
+        "type": "article"
+      },
+      {
         "title": "What is Dumpster Diving",
         "url": "https://powerdmarc.com/dumpster-diving-in-cybersecurity/",
         "type": "article"
       },
       {
-        "title": "Dumpster diving for sensitive information",
+        "title": "Dumpster Diving for Sensitive Information",
         "url": "https://www.youtube.com/watch?v=Pom86gq4mk4",
         "type": "video"
       }
@@ -3945,11 +4108,16 @@
   },
   "UU_inxa8Y2lLP2BRhdLDT": {
     "title": "Reconnaissance",
-    "description": "Reconnaissance is the first phase of a cyberattack, during which attackers gather as much information as possible about a target system, network, or organization. The goal of reconnaissance is to identify potential vulnerabilities, entry points, and other valuable details that can be exploited in subsequent attack phases.\n\nVisit the following resources to learn more:",
+    "description": "Reconnaissance is the first phase of a cyber-attack, during which attackers gather as much information as possible about a target system, network, or organization. The goal of reconnaissance is to identify potential vulnerabilities, entry points, and other valuable details that can be exploited in subsequent attack phases.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is Cyber Reconnaissance",
         "url": "https://www.sentinelone.com/cybersecurity-101/threat-intelligence/what-is-cyber-reconnaissance/",
+        "type": "article"
+      },
+      {
+        "title": "What is Cybersecurity Reconnaissance?",
+        "url": "https://cymulate.com/cybersecurity-glossary/cyber-reconnaissance/",
         "type": "article"
       }
     ]
@@ -3970,7 +4138,7 @@
     "description": "Watering Hole Attack is a type of cyberattack where the attacker targets a specific group of users by compromising a website or online resource that they are known to frequently visit. The name \"watering hole\" comes from the idea of predators waiting by a water source to attack prey, similar to how attackers wait for their targets to visit a compromised site.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is a watering hole attack?",
+        "title": "What is a Watering Hole Attack?",
         "url": "https://www.techtarget.com/searchsecurity/definition/watering-hole-attack",
         "type": "article"
       },
@@ -4055,7 +4223,7 @@
     "description": "A Man-in-the-Middle (MITM) attack occurs when a malicious actor intercepts communication between two parties, such as a user and a website, without their knowledge. The attacker can eavesdrop, alter, or inject false information into the communication, often to steal sensitive data like login credentials or manipulate transactions. MITM attacks are commonly executed through compromised Wi-Fi networks or by exploiting security vulnerabilities in protocols.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Wikipedia - Man-in-the-middle attack",
+        "title": "Man-in-the-middle attack",
         "url": "https://en.wikipedia.org/wiki/Man-in-the-middle_attack",
         "type": "article"
       }
@@ -4096,7 +4264,23 @@
   "urtsyYWViEzbqYLoNfQAh": {
     "title": "DNS Poisoning",
     "description": "DNS spoofing or DNS cache poisoning, occurs when fake information is inserted into a DNS server’s cache.This causes DNS queries to return incorrect IP addresses, directing users to the wrong websites. Hackers exploit this to reroute traffic to malicious sites. The issue persists until the cached information is corrected.When the cache is poisoned, it misdirects traffic until the incorrect information is fixed. This technique exploits vulnerabilities in the DNS system and can spread to other servers, causing widespread issues.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "What is DNS Cache Poisoning? | DNS spoofing",
+        "url": "https://www.cloudflare.com/learning/dns/dns-cache-poisoning/",
+        "type": "article"
+      },
+      {
+        "title": "What Is DNS Poisoning?",
+        "url": "https://www.fortinet.com/resources/cyberglossary/dns-poisoning",
+        "type": "article"
+      },
+      {
+        "title": "DNS Poisoning (DNS Spoofing): Definition, Technique & Defense",
+        "url": "https://www.okta.com/identity-101/dns-poisoning/",
+        "type": "article"
+      }
+    ]
   },
   "LfWJJaT3fv0p6fUeS8b84": {
     "title": "Deauth Attack",
@@ -4135,8 +4319,13 @@
     "description": "A Rogue Access Point (Rogue AP) is an unauthorized wireless access point installed on a secure network without the network administrator's knowledge or consent. These devices can be set up by malicious actors to intercept, steal, or manipulate network traffic, or by employees who unintentionally compromise network security by setting up their own wireless access points.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rogue access points",
+        "title": "Rogue Access Points",
         "url": "https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:online-data-security/xcae6f4a7ff015e7d:cyber-attacks/a/rogue-access-points-mitm-attacks",
+        "type": "article"
+      },
+      {
+        "title": "What is Rogue Access Point",
+        "url": "https://pentescope.com/rogue-access-point-detection-and-prevention/",
         "type": "article"
       }
     ]
@@ -4164,7 +4353,7 @@
   },
   "nOND14t7ISgSH3zNpV3F8": {
     "title": "Memory Leak",
-    "description": "A Memory Leak occurs when a computer program consumes memory but fails to release it back to the operating system after it is no longer needed. Over time, this can lead to reduced system performance, increased memory usage, and, in severe cases, the program or system may crash due to the exhaustion of available memory.",
+    "description": "A Memory Leak occurs when a computer program consumes memory but fails to release it back to the operating system after it is no longer needed. Over time, this can lead to reduced system performance, increased memory usage, and, in severe cases, the program or system may crash due to the exhaustion of available memory.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What are memory leaks?",
@@ -4331,7 +4520,7 @@
     "description": "A legal department within an organization is responsible for handling all legal matters that affect the business, ensuring compliance with laws and regulations, and providing advice on various legal issues. Its primary functions include managing contracts, intellectual property, employment law, and regulatory compliance, as well as addressing disputes, litigation, and risk management. The legal department also plays a crucial role in corporate governance, ensuring that the company operates within the boundaries of the law while minimizing legal risks. In some cases, they work with external legal counsel for specialized legal matters, such as mergers and acquisitions or complex litigation.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Key functions of a legal team",
+        "title": "Key Functions of a Legal Team",
         "url": "https://uk.practicallaw.thomsonreuters.com/w-009-3932?transitionType=Default&contextData=(sc.Default)&firstPage=true",
         "type": "article"
       },
@@ -4384,7 +4573,7 @@
         "type": "article"
       },
       {
-        "title": "What cloud skills are essential?",
+        "title": "What Cloud Skills are Essential?",
         "url": "https://www.youtube.com/watch?v=udKBDRcj178",
         "type": "video"
       }
@@ -4395,7 +4584,12 @@
     "description": "Cloud security encompasses the measures, controls, policies, and technologies implemented to protect data, applications, and infrastructure associated with cloud computing environments. It involves securing data both in transit and at rest, managing access controls, ensuring compliance with regulations, and protecting against threats like data breaches, account hijacking, and DDoS attacks. Cloud security strategies often include encryption, multi-factor authentication, regular security audits, and shared responsibility models between cloud providers and customers. While cloud platforms offer advanced security features, organizations must also adapt their security practices to address the unique challenges of cloud environments, such as data sovereignty issues, shared infrastructure risks, and the need for continuous monitoring across distributed systems.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is cloud security",
+        "title": "What Is Cloud Security? - Google Cloud",
+        "url": "https://cloud.google.com/learn/what-is-cloud-security",
+        "type": "article"
+      },
+      {
+        "title": "Cloud Security",
         "url": "https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/",
         "type": "article"
       },
@@ -4411,7 +4605,7 @@
     "description": "Deploying to the cloud involves the process of making applications, services, or infrastructure available in cloud computing environments. It typically includes selecting a cloud provider (e.g., AWS, Azure, Google Cloud), configuring necessary resources (compute, storage, networking), and using deployment tools to push code or infrastructure definitions. Modern cloud deployments often leverage containerization, orchestration platforms like Kubernetes, and CI/CD pipelines for automated, consistent releases. Key considerations include scalability, security, cost optimization, and maintaining high availability. Cloud-native approaches, such as microservices architecture and serverless computing, are frequently employed to maximize cloud benefits. Effective cloud deployment strategies balance performance, reliability, and cost-efficiency while ensuring compliance with relevant regulations and organizational policies.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is cloud deployment?",
+        "title": "What is Cloud Deployment?",
         "url": "https://www.cognizant.com/us/en/glossary/cloud-deployment",
         "type": "article"
       },
@@ -4443,8 +4637,23 @@
     "description": "Infrastructure as Code (IaC) is a practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. It treats infrastructure configuration as software, allowing it to be version-controlled, tested, and automatically deployed. IaC enables consistent, repeatable environment setups, reduces manual errors, facilitates rapid scaling and disaster recovery, and improves collaboration between development and operations teams. Popular IaC tools include Terraform, AWS CloudFormation, and Ansible, which use declarative or imperative approaches to define infrastructure states. This approach is fundamental to DevOps practices, cloud computing, and the efficient management of complex, dynamic IT environments.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Terraform Roadmap",
+        "title": "Visit Dedicated Terraform Roadmap",
         "url": "https://roadmap.sh/terraform",
+        "type": "article"
+      },
+      {
+        "title": "Visit Dedicated AWS Roadmap",
+        "url": "https://roadmap.sh/aws",
+        "type": "article"
+      },
+      {
+        "title": "What is Infrastructure as Code? - IaC Explained - AWS",
+        "url": "https://aws.amazon.com/what-is/iac/",
+        "type": "article"
+      },
+      {
+        "title": "What is infrastructure as code (IaC)? - Azure DevOps",
+        "url": "https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code",
         "type": "article"
       }
     ]
@@ -4454,7 +4663,7 @@
     "description": "Serverless computing is a cloud execution model where the cloud provider dynamically manages server allocation, allowing developers to focus solely on writing code. It offers automatic scaling, pay-per-use billing based on actual compute time, and typically operates through event-driven, stateless functions designed for quick execution. Popular platforms include AWS Lambda, Azure Functions, and Google Cloud Functions. While serverless computing provides reduced operational complexity and cost efficiency, particularly for microservices and event-driven applications, it may face challenges with long-running tasks, cold starts, and potential vendor lock-in. Despite its name, servers are still involved, but their management is abstracted away from the developer, simplifying the deployment and scaling of applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is serverless computing?",
+        "title": "What is Serverless Computing?",
         "url": "https://www.cloudflare.com/en-gb/learning/serverless/what-is-serverless/",
         "type": "article"
       },
@@ -4470,7 +4679,7 @@
     "description": "Software as a Service (SaaS) is a cloud-based model where software applications are delivered to users over the internet, eliminating the need for local installation or maintenance. SaaS providers manage infrastructure, security, and updates, allowing users to access the software on a subscription basis from any device with an internet connection. This model offers scalability, reduced upfront costs, and easy integration with other cloud services, making it a popular choice for businesses looking for flexibility and efficiency in software deployment.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "iWhat is SaaS? Microsoft",
+        "title": "Software as a Service?",
         "url": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-saas",
         "type": "article"
       },
@@ -4518,12 +4727,12 @@
     "description": "A **private cloud** is a cloud computing environment dedicated to a single organization, offering the same benefits as public clouds, such as scalability and self-service, but with greater control and customization. It is hosted either on-premises or by a third-party provider, and it ensures that the organization's data and applications are isolated from other entities. This setup enhances security and compliance, making it ideal for businesses with specific regulatory requirements or high-security needs.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a private cloud?",
+        "title": "What is a Private Cloud?",
         "url": "https://aws.amazon.com/what-is/private-cloud/",
         "type": "article"
       },
       {
-        "title": "Private cloud rules",
+        "title": "Private Cloud Rules",
         "url": "https://www.youtube.com/watch?v=Tzqy8lW0bk4",
         "type": "video"
       }
@@ -4534,12 +4743,12 @@
     "description": "A **public cloud** is a computing service offered by third-party providers over the internet, where resources such as servers, storage, and applications are shared among multiple users or organizations. It is typically managed by the cloud service provider and offers scalability, cost-effectiveness, and ease of access, with users paying only for the resources they consume. Public clouds are ideal for businesses and individuals who need flexible, on-demand computing resources without the overhead of managing physical infrastructure. Popular examples include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a public cloud? Microsoft",
+        "title": "A Public Cloud?",
         "url": "https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-a-public-cloud",
         "type": "article"
       },
       {
-        "title": "What is a public cloud?",
+        "title": "What is a Public Cloud",
         "url": "https://www.youtube.com/watch?v=KaCyfQ7luVY",
         "type": "video"
       }
@@ -4571,12 +4780,12 @@
         "type": "course"
       },
       {
-        "title": "AWS Roadmap",
+        "title": "Visit Dedicated AWS Roadmap",
         "url": "https://roadmap.sh/aws",
         "type": "article"
       },
       {
-        "title": "AWS Website",
+        "title": "AWS",
         "url": "https://aws.amazon.com",
         "type": "article"
       },
@@ -4597,14 +4806,19 @@
     "description": "Google Cloud Platform (GCP) is a collection of cloud computing services offered by Google, which provides infrastructure and platform services to businesses or individuals. It enables users to either build their own applications or services on the provided resources, or utilize ready-to-use services provided by Google. GCP covers a wide range of services, including (but not limited to) compute, storage, databases, networking, and many more.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Google Cloud Platform Video Course",
-        "url": "https://www.youtube.com/watch?v=fZOz13joN0o",
-        "type": "course"
-      },
-      {
         "title": "Google Cloud Platform",
         "url": "https://cloud.google.com",
         "type": "article"
+      },
+      {
+        "title": "Cloud Computing, Hosting Services, and APIs",
+        "url": "https://cloud.google.com/gcp",
+        "type": "article"
+      },
+      {
+        "title": "Google Cloud Platform Video Course",
+        "url": "https://www.youtube.com/watch?v=fZOz13joN0o",
+        "type": "video"
       }
     ]
   },
@@ -4613,7 +4827,7 @@
     "description": "Azure is Microsoft's comprehensive cloud computing platform that offers a wide range of services for building, deploying, and managing applications. It provides infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) solutions, supporting various programming languages, tools, and frameworks. Azure's services include virtual machines, storage, databases, AI and machine learning, IoT, and more. It offers global data center coverage, integrated DevOps tools, and robust security features, making it a versatile platform for businesses of all sizes to innovate, scale, and transform their operations in the cloud.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Azure Website",
+        "title": "Azure",
         "url": "https://azure.microsoft.com",
         "type": "article"
       },
@@ -4634,8 +4848,13 @@
     "description": "Amazon Simple Storage Service (S3) is a scalable, object-based cloud storage service provided by AWS. It allows users to store and retrieve large amounts of data, such as files, backups, or media content, with high durability and availability. S3 is designed for flexibility, enabling users to access data from anywhere via the internet while offering security features like encryption and access controls. It is widely used for data storage, content distribution, disaster recovery, and big data analytics, providing cost-effective, scalable storage for a variety of applications.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "AWS S3 Website",
-        "url": "https://aws.amazon.com/pm/serv-s3/?gclid=Cj0KCQjwrp-3BhDgARIsAEWJ6SyhAtgc3NJbsxaAXVbWEOW5gG-XFH51jIc8SxahYSxNJ501l9soUA0aAnEjEALw_wcB&trk=777b3ec4-de01-41fb-aa63-cde3d034a89e&sc_channel=ps&ef_id=Cj0KCQjwrp-3BhDgARIsAEWJ6SyhAtgc3NJbsxaAXVbWEOW5gG-XFH51jIc8SxahYSxNJ501l9soUA0aAnEjEALw_wcB:G:s&s_kwcid=AL!4422!3!638364429346!e!!g!!aws%20s3!19096959014!142655567183",
+        "title": "Amazon Web Services S3",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+        "type": "article"
+      },
+      {
+        "title": "Amazon Simple Storage Service Documentation",
+        "url": "https://docs.aws.amazon.com/s3/",
         "type": "article"
       },
       {
@@ -4650,9 +4869,19 @@
     "description": "Dropbox is a widely used cloud storage service that allows you to store, access, and share files, documents, and media with ease across various devices. Launched in 2007, Dropbox has become one of the most popular cloud storage solutions, catering to both individual users and businesses. The service is available on multiple platforms, including Windows, macOS, Linux, iOS, and Android.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Dropbox Website",
+        "title": "Dropbox",
         "url": "https://dropbox.com",
         "type": "article"
+      },
+      {
+        "title": "How to Use Dropbox - a guide to your account",
+        "url": "https://learn.dropbox.com/self-guided-learning/dropbox-fundamentals-course/how-to-use-dropbox",
+        "type": "article"
+      },
+      {
+        "title": "Dropbox Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=b0Nk9muiUcQ",
+        "type": "video"
       }
     ]
   },
@@ -4677,7 +4906,7 @@
     "description": "**OneDrive** is a cloud storage service provided by Microsoft that allows users to store, sync, and share files and folders online. It integrates seamlessly with Windows and Microsoft 365 applications, enabling users to access their data from any device with an internet connection. OneDrive offers features such as real-time collaboration, file versioning, and automatic backup, making it convenient for personal and professional use. It also provides options for sharing files with others and controlling access permissions, enhancing productivity and data management.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "OneDrive Website",
+        "title": "Microsoft OneDrive",
         "url": "https://onedrive.live.com",
         "type": "article"
       },
@@ -4693,7 +4922,7 @@
     "description": "Google Drive is a cloud-based storage solution provided by Google, which offers users the ability to store, share, and collaborate on files and documents across different platforms and devices. It is integrated with Google's productivity suite, including Google Docs, Sheets, Slides, and Forms, allowing seamless collaboration with team members in real-time.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Google Drive Website",
+        "title": "Google Drive",
         "url": "https://drive.google.com",
         "type": "article"
       }
@@ -4712,8 +4941,39 @@
   },
   "_RnuQ7952N8GWZfPD60sJ": {
     "title": "Programming Skills",
-    "description": "Programming knowledge is a fundamental skill for professionals in the cybersecurity field, as it enables them to build, assess, and defend computer systems, networks, and applications. Having a strong foundation in programming languages, concepts, and techniques is essential for identifying potential security threats, writing secure code, and implementing robust security measures.\n\n*   **Python**: As an easy-to-learn high-level language, Python is commonly used for tasks like automation, scripting, and data analysis. It also contains a plethora of libraries and frameworks for cybersecurity, making it highly valuable for security professionals.\n*   **C/C++**: These two languages are foundational for understanding system and application-level vulnerabilities since most operating systems are written in C and C++. Knowledge of these languages allows cybersecurity experts to analyze source code, identify potential exploits, and create secure software.\n*   **Java**: As a popular and versatile programming language, Java is often used in web applications and enterprise environments. Java knowledge equips cybersecurity professionals to understand and mitigate potential security flaws in Java-based applications.\n*   **JavaScript**: With its ubiquity in modern web browsers, JavaScript is crucial for understanding and protecting against web security vulnerabilities, such as Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks.\n*   **Ruby**: Ruby has a strong foothold in web application development and is utilized for scripting and automation, just like Python. Familiarity with Ruby may give cybersecurity professionals an edge in certain environments.\n\nAcquiring programming knowledge in cybersecurity can help you stay on top of the latest threats, develop secure software, and implement effective countermeasures. As you progress in your cybersecurity career, you'll find that your programming skills will continually evolve and your understanding of various languages, concepts, and techniques will expand.",
-    "links": []
+    "description": "Programming knowledge is a fundamental skill for professionals in the cybersecurity field, as it enables them to build, assess, and defend computer systems, networks, and applications. Having a strong foundation in programming languages, concepts, and techniques is essential for identifying potential security threats, writing secure code, and implementing robust security measures.\n\n*   **Python**: As an easy-to-learn high-level language, Python is commonly used for tasks like automation, scripting, and data analysis. It also contains a plethora of libraries and frameworks for cybersecurity, making it highly valuable for security professionals.\n*   **C/C++**: These two languages are foundational for understanding system and application-level vulnerabilities since most operating systems are written in C and C++. Knowledge of these languages allows cybersecurity experts to analyze source code, identify potential exploits, and create secure software.\n*   **Java**: As a popular and versatile programming language, Java is often used in web applications and enterprise environments. Java knowledge equips cybersecurity professionals to understand and mitigate potential security flaws in Java-based applications.\n*   **JavaScript**: With its ubiquity in modern web browsers, JavaScript is crucial for understanding and protecting against web security vulnerabilities, such as Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks.\n*   **Ruby**: Ruby has a strong foothold in web application development and is utilized for scripting and automation, just like Python. Familiarity with Ruby may give cybersecurity professionals an edge in certain environments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Linux Roadmap",
+        "url": "https://roadmap.sh/linux",
+        "type": "article"
+      },
+      {
+        "title": "Visit Python Roadmap",
+        "url": "https://roadmap.sh/python",
+        "type": "article"
+      },
+      {
+        "title": "Visit C++ Roadmap",
+        "url": "https://roadmap.sh/cpp",
+        "type": "article"
+      },
+      {
+        "title": "Visit Java Roadmap",
+        "url": "https://roadmap.sh/java",
+        "type": "article"
+      },
+      {
+        "title": "Visit JavaScript Roadmap",
+        "url": "https://roadmap.sh/javascript",
+        "type": "article"
+      },
+      {
+        "title": "Visit Typescript Roadmap",
+        "url": "https://roadmap.sh/typescript",
+        "type": "article"
+      }
+    ]
   },
   "XiHvGy--OkPFfJeKA6-LP": {
     "title": "Python",
@@ -4725,7 +4985,7 @@
         "type": "course"
       },
       {
-        "title": "Python Roadmap",
+        "title": "Visit Dedicated Python Roadmap",
         "url": "https://roadmap.sh/python",
         "type": "article"
       },
@@ -4741,18 +5001,18 @@
     "description": "Go, also known as Golang, is an open-source programming language created by Google. Launched in 2009, it was designed to overcome issues present in other languages and offer a more secure, robust, and efficient development experience.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Go tutorial for beginners",
-        "url": "https://www.youtube.com/watch?v=yyUHQIec83I",
-        "type": "course"
-      },
-      {
-        "title": "Go Roadmap",
+        "title": "Visit Dedicated Go Roadmap",
         "url": "https://roadmap.sh/golang",
         "type": "article"
       },
       {
         "title": "Go in 100 seconds",
         "url": "https://www.youtube.com/watch?v=446E-r0rXHI",
+        "type": "video"
+      },
+      {
+        "title": "Go Tutorial for beginners",
+        "url": "https://www.youtube.com/watch?v=yyUHQIec83I",
         "type": "video"
       }
     ]
@@ -4783,14 +5043,19 @@
     "description": "C++ is a widely-used, high-level programming language that evolved from the earlier C programming language. Developed by Bjarne Stroustrup in 1985 at Bell Labs, C++ provides object-oriented features and low-level memory manipulation, making it an essential language for many fields, including game development, high-performance systems, and cybersecurity.\n\nLearn more form the following resources:",
     "links": [
       {
-        "title": "C++ Full Course - BroCode",
-        "url": "https://www.youtube.com/watch?v=-TkoO8Z07hI",
-        "type": "course"
+        "title": "Visit Dedicated C++ Roadmap",
+        "url": "https://roadmap.sh/cpp",
+        "type": "article"
       },
       {
         "title": "C++ Introduction",
         "url": "https://www.w3schools.com/cpp/cpp_intro.asp",
         "type": "article"
+      },
+      {
+        "title": "C++ Full Course - BroCode",
+        "url": "https://www.youtube.com/watch?v=-TkoO8Z07hI",
+        "type": "video"
       }
     ]
   },
@@ -4835,7 +5100,7 @@
         "type": "article"
       },
       {
-        "title": "Microsoft's Official PowerShell Documentation",
+        "title": "Microsoft's PowerShell Documentation",
         "url": "https://docs.microsoft.com/en-us/powershell/",
         "type": "article"
       },

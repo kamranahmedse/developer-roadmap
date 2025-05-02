@@ -5,4 +5,4 @@
 Learn more from the following resources:
 
 - [@article@What is PKI?](https://cpl.thalesgroup.com/faq/public-key-infrastructure-pki/what-public-key-infrastructure-pki)
-- [@article@Design and build a privately hosted Public Key Infrastructure](Design and build a privately hosted Public Key Infrastructure)
+- [@article@What Is Public Key Infrastructure (PKI) & How Does It Work?](https://www.okta.com/identity-101/public-key-infrastructure/)

@@ -4,5 +4,5 @@ Deploying to the cloud involves the process of making applications, services, or
 
 Learn more from the following resources:
 
-- [@article@What is cloud deployment?](https://www.cognizant.com/us/en/glossary/cloud-deployment)
+- [@article@What is Cloud Deployment?](https://www.cognizant.com/us/en/glossary/cloud-deployment)
 - [@video@Deploying a Website to AWS in Under 1 Minute](https://www.youtube.com/watch?v=goiW0g7A0WE)

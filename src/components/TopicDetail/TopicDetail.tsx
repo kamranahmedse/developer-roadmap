@@ -25,8 +25,6 @@ import { Ban, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
-import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
-import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 import { resourceTitleFromId } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
@@ -349,8 +347,6 @@ export function TopicDetail(props: TopicDetailProps) {
   const resourceTitleForSearch = resourceTitle
     ?.toLowerCase()
     ?.replace(/\s+?roadmap/gi, '');
-  const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(topicHtmlTitle?.toLowerCase())} guide for ${encodeURIComponent(resourceTitleForSearch || '')}`;
-  const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(topicHtmlTitle?.toLowerCase())} for ${encodeURIComponent(resourceTitleForSearch || '')}`;
 
   const tnsLink =
     'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic';
@@ -415,7 +411,9 @@ export function TopicDetail(props: TopicDetailProps) {
                           ? topicId.split('@')[1]
                           : topicId
                       }
-                      dropdownClassName={!shouldShowAiTab ? 'left-0' : 'right-0'}
+                      dropdownClassName={
+                        !shouldShowAiTab ? 'left-0' : 'right-0'
+                      }
                       resourceId={resourceId}
                       resourceType={resourceType}
                       onClose={handleClose}
@@ -560,55 +558,33 @@ export function TopicDetail(props: TopicDetailProps) {
                       )}
                     </>
                   )}
-
-                  {canSubmitContribution &&
-                    !hasEnoughLinks &&
-                    contributionUrl &&
-                    hasContent && (
-                      <div className="mt-3 mb-12 border-t text-sm text-gray-400 sm:mt-12">
-                        <div className="mt-3 mb-4">
-                          <p className="">
-                            Find more resources using these pre-filled search
-                            queries:
-                          </p>
-                          <div className="mt-3 flex gap-2 text-gray-700">
-                            <a
-                              href={googleSearchUrl}
-                              target="_blank"
-                              className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                            >
-                              <GoogleIcon className={'h-4 w-4'} />
-                              Google
-                            </a>
-                            <a
-                              href={youtubeSearchUrl}
-                              target="_blank"
-                              className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
-                            >
-                              <YouTubeIcon className={'h-4 w-4 text-red-500'} />
-                              YouTube
-                            </a>
-                          </div>
-                        </div>
-
-                        <p className="mt-2 mb-2 leading-relaxed">
-                          This popup should be a brief introductory paragraph
-                          for the topic and a few links to good articles,
-                          videos, or any other self-vetted resources. Please
-                          consider submitting a PR to improve this content.
-                        </p>
-                        <a
-                          href={contributionUrl}
-                          target={'_blank'}
-                          className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-                        >
-                          <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                          Help us Improve this Content
-                        </a>
-                      </div>
-                    )}
                 </>
               )}
+              {/* Contribution */}
+              {canSubmitContribution &&
+                !hasEnoughLinks &&
+                contributionUrl &&
+                hasContent && (
+                  <div className="mt-3 mb-12 border-t text-sm text-gray-400 sm:mt-12">
+                    <h2 className="mt-4 mb-1 text-base font-medium text-black">
+                      Help us add learning resources
+                    </h2>
+                    <p className="mb-4 leading-relaxed">
+                      This popup should be a brief introductory paragraph for
+                      the topic and a few links to good articles, videos, or any
+                      other self-vetted learning resources. Please consider
+                      submitting a PR to improve this content.
+                    </p>
+                    <a
+                      href={contributionUrl}
+                      target={'_blank'}
+                      className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                    >
+                      <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
+                      Help us Improve this Content
+                    </a>
+                  </div>
+                )}
             </div>
 
             {resourceId === 'devops' && activeTab === 'content' && (

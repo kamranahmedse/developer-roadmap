@@ -4,7 +4,7 @@ VirusTotal's main feature is multi-scanning using over 70 antivirus scanners to 
 
 Visit the following resources to learn more:
 
-- [@official@VirusTotal's Docs on how VirusTotal Works](https://docs.virustotal.com/docs/how-it-works)
-- [@official@VirusTotal's website](https://www.virustotal.com)
+- [@official@VirusTotal](https://www.virustotal.com)
+- [@official@How VirusTotal Works](https://docs.virustotal.com/docs/how-it-works)
 - [@article@@CISA's definition of VirusTotal](https://www.cisa.gov/resources-tools/services/virustotal)
 - [@video@Walkthrough VirusTotal Intelligence Interface](https://www.youtube.com/watch?v=WoHVM8pCfsQ)

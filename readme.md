@@ -87,6 +87,8 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
 - [Technical Writer Roadmap](https://roadmap.sh/technical-writer)
 - [DevRel Engineer Roadmap](https://roadmap.sh/devrel)
+- [AI Red Teaming Roadmap](https://roadmap.sh/ai-red-teaming)
+- [AI Agents Roadmap](https://roadmap.sh/ai-agents)
 
 There are also interactive best practices:
 

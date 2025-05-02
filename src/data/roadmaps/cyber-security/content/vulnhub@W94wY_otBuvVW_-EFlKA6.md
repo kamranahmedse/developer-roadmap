@@ -4,5 +4,5 @@ VulnHub is an online platform that provides a collection of intentionally vulner
 
 Learn more from the following resources:
 
-- [@official@Vulnhub Website](https://www.vulnhub.com/)
+- [@official@Vulnhub](https://www.vulnhub.com/)
 - [@article@A Beginners Guide to Vulnhub](https://medium.com/@gavinloughridge/a-beginners-guide-to-vulnhub-part-1-52b06466635d)

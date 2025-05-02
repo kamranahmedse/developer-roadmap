@@ -5,6 +5,6 @@ A router is a networking device that directs data packets between different netw
 Learn more from the following resources:
 
 - [@article@What is a Router](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-a-router/)
-- [@video@What is a router and how does it work?](https://www.youtube.com/watch?v=UIJzHLpG9bM)
+- [@video@What is a router and How does it work?](https://www.youtube.com/watch?v=UIJzHLpG9bM)
 - [@video@Everything Routers do](https://youtu.be/AzXys5kxpAM?si=nEsCH6jG2Lj6Ua8N)
 - [@video@How Routers forward Packets?](https://youtu.be/Ep-x_6kggKA?si=II5xBPoXjYEjLvWX)

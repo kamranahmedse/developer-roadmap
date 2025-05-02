@@ -8,5 +8,7 @@
 
 Learn more from the following resources:
 
+- [@article@From Known to Unknown](https://securitysandman.com/2025/01/06/from-known-to-unknown-shifting-cybersecurity-to-proactive-ai-detection/)
+- [@article@Catching all Threats - Known, Unknown, and Unknown Unknown](https://www.scworld.com/perspective/catching-all-threats-known-unknown-and-unknown-unknown-before-they-can-harm-you)
 - [@video@Detecting known threats](https://www.youtube.com/watch?v=hOaHDVMQ9_s)
 - [@video@How to deal with unknown threats](https://www.youtube.com/watch?v=CH4tX_MVLh0)

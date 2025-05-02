@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@Understanding the loopback address and loopback interfaces](https://study-ccna.com/loopback-interface-loopback-address/)
+- [@article@Understanding the Loopback Address and Loopback Interfaces](https://study-ccna.com/loopback-interface-loopback-address/)

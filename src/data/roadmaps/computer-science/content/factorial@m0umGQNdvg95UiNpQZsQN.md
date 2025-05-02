@@ -24,3 +24,8 @@ def generate_permutations(s):
 
     return permutations
 ```
+
+Visit the following resources to learn more:
+
+- [@article@Big O Cheat Sheet - Time Complexity Chart](https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/)
+- [@video@Factorial Explained](https://www.youtube.com/watch?v=pxh__ugRKz8)
