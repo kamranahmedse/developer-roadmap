@@ -108,8 +108,6 @@ export function BillingPage() {
           onClose={() => {
             setShowUpgradeModal(false);
           }}
-          success="/account/billing?s=1"
-          cancel="/account/billing"
         />
       )}
 
