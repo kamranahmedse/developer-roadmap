@@ -560,68 +560,42 @@ export function TopicDetail(props: TopicDetailProps) {
                   )}
                 </>
               )}
-              {/* Contribution */}
-              {canSubmitContribution &&
-                !hasEnoughLinks &&
-                contributionUrl &&
-                hasContent && (
-                  <div className="mt-3 mb-12 border-t text-sm text-gray-400 sm:mt-12">
-                    <h2 className="mt-4 mb-1 text-base font-medium text-black">
-                      Help us add learning resources
-                    </h2>
-                    <p className="mb-4 leading-relaxed">
-                      This popup should be a brief introductory paragraph for
-                      the topic and a few links to good articles, videos, or any
-                      other self-vetted learning resources. Please consider
-                      submitting a PR to improve this content.
-                    </p>
-                    <a
-                      href={contributionUrl}
-                      target={'_blank'}
-                      className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-                    >
-                      <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
-                      Help us Improve this Content
-                    </a>
-                  </div>
-                )}
             </div>
 
-            {resourceId === 'devops' && activeTab === 'content' && (
-              <div className="mt-4">
-                <a
-                  href={tnsLink}
-                  target="_blank"
-                  className="hidden rounded-md border bg-gray-200 px-2 py-2 text-sm hover:bg-gray-300 sm:block"
-                >
-                  <span className="badge mr-1.5">Partner</span>
-                  Get the latest {resourceTitleFromId(resourceId)} news from our
-                  sister site{' '}
-                  <span className="font-medium underline underline-offset-1">
-                    TheNewStack.io
-                  </span>
-                </a>
+            {canSubmitContribution &&
+              contributionUrl &&
+              activeTab === 'content' &&
+              hasContent && (
+                <div className="mt-4">
+                  <a
+                    href={contributionUrl}
+                    target="_blank"
+                    className="hidden rounded-md border bg-gray-200 px-2 py-2 text-sm hover:bg-gray-300 sm:flex items-center justify-center"
+                  >
+                    <GitHubIcon className="mr-2 inline-block h-4 w-4 text-current" />
+                    Help us Improve this Content
+                  </a>
 
-                <a
-                  href={tnsLink}
-                  className="hidden rounded-md border bg-gray-200 px-2 py-1.5 text-sm hover:bg-gray-300 min-[390px]:block sm:hidden"
-                  onClick={() => {
-                    window.fireEvent({
-                      category: 'PartnerClick',
-                      action: 'TNS Redirect',
-                      label: 'Roadmap Topic / TNS Link',
-                    });
-                  }}
-                >
-                  <span className="badge mr-1.5">Partner</span>
-                  Visit{' '}
-                  <span className="font-medium underline underline-offset-1">
-                    TheNewStack.io
-                  </span>{' '}
-                  for {resourceTitleFromId(resourceId)} news
-                </a>
-              </div>
-            )}
+                  <a
+                    href={tnsLink}
+                    className="hidden rounded-md border bg-gray-200 px-2 py-1.5 text-sm hover:bg-gray-300 min-[390px]:block sm:hidden"
+                    onClick={() => {
+                      window.fireEvent({
+                        category: 'PartnerClick',
+                        action: 'TNS Redirect',
+                        label: 'Roadmap Topic / TNS Link',
+                      });
+                    }}
+                  >
+                    <span className="badge mr-1.5">Partner</span>
+                    Visit{' '}
+                    <span className="font-medium underline underline-offset-1">
+                      TheNewStack.io
+                    </span>{' '}
+                    for {resourceTitleFromId(resourceId)} news
+                  </a>
+                </div>
+              )}
           </>
         )}
 
