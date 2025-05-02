@@ -6,7 +6,8 @@ import {
   ListIcon,
   NotebookPenIcon,
   PencilLine,
-  type LucideIcon,
+  Star,
+  type LucideIcon
 } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { PredefinedActionGroup } from './PredefinedActionGroup';
@@ -43,6 +44,12 @@ export const actions: PredefinedActionType[] = [
         icon: BabyIcon,
         label: 'Explain like I am five',
         prompt: 'Explain this topic like I am a 5 years old',
+      },
+      {
+        icon: Star,
+        label: 'Why is it important?',
+        prompt:
+          'Why is this topic important? What are the real world applications (only add if appropriate)?',
       },
     ],
   },
@@ -129,7 +136,7 @@ export function PredefinedActionButton(props: PredefinedActionButtonProps) {
       )}
       onClick={onClick}
     >
-      {Icon && <Icon className="size-3.5 mr-1" />}
+      {Icon && <Icon className="mr-1 size-3.5" />}
       {label}
       {isGroup && <ChevronDownIcon className="size-3.5" />}
     </button>
