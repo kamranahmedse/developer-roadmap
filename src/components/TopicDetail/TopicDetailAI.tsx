@@ -14,10 +14,11 @@ import { queryClient } from '../../stores/query-client';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import {
   BotIcon,
+  Gift,
   Loader2Icon,
   LockIcon,
-  RotateCcwIcon,
   SendIcon,
+  Trash2
 } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname';
@@ -34,6 +35,7 @@ import type { ResourceType } from '../../lib/resource-progress';
 import { getPercentage } from '../../lib/number';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { defaultChatHistory } from './TopicDetail';
+import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
 
 type TopicDetailAIProps = {
   resourceId: string;
@@ -67,7 +69,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   const [message, setMessage] = useState('');
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] = useState('');
-
+  const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
   const { data: tokenUsage, isLoading } = useQuery(
     getAiCourseLimitOptions(),
     queryClient,
@@ -234,10 +236,20 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         </div>
       )}
 
+      {showAILimitsPopup && (
+        <AILimitsPopup
+          onClose={() => setShowAILimitsPopup(false)}
+          onUpgrade={() => {
+            setShowAILimitsPopup(false);
+            onUpgrade();
+          }}
+        />
+      )}
+
       {hasSubjects && (
-        <div className="border-b border-gray-200 px-4 py-2">
-          <h4 className="flex items-center gap-2 text-base">
-            Complete the following courses on AI Tutor
+        <div className="border-b border-gray-200 p-3">
+          <h4 className="flex items-center gap-2 text-sm">
+            Complete the following AI Tutor courses
           </h4>
 
           <div className="mt-2.5 flex flex-wrap gap-1 text-sm">
@@ -247,7 +259,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                   key={subject}
                   target="_blank"
                   href={`/ai/search?term=${subject}&difficulty=beginner&src=topic`}
-                  className="rounded-md border px-1.5"
+                  className="flex items-center bg-gray-100 gap-1 gap-2 rounded-md border border-gray-300 px-2 py-1 hover:bg-gray-200 hover:text-black"
                 >
                   {subject}
                 </a>
@@ -259,13 +271,16 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
       <div
         className={cn(
-          'flex items-center justify-between gap-2 border-gray-200 px-4 py-2 text-sm',
-          !hasSubjects && 'border-b',
+          'flex items-center justify-between gap-2 border-gray-200 px-3 py-2 text-sm',
         )}
       >
         {hasSubjects && (
-          <span className="flex items-center gap-2 text-base">
-            or start chatting with AI
+          <span className="flex items-center gap-2 text-sm">
+            <BotIcon
+              className="relative -top-[1px] size-4 shrink-0 text-black"
+              strokeWidth={2.5}
+            />
+            Chat with AI
           </span>
         )}
 
@@ -280,29 +295,36 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         )}
 
         {!isDataLoading && (
-          <div className="flex items-center gap-2.5">
+          <div className="flex gap-1.5">
             {hasChatHistory && (
               <button
-                className="rounded-md bg-white p-1 text-xs font-medium text-black hover:bg-gray-200"
+                className="rounded-md bg-white px-2 text-xs font-medium text-black hover:bg-gray-200"
                 onClick={() => {
                   setAiChatHistory(defaultChatHistory);
                 }}
               >
-                <RotateCcwIcon className="size-3.5" />
+                <Trash2 className="size-3.5" />
               </button>
             )}
 
             {!isPaidUser && (
               <>
                 <button
-                  className="underline underline-offset-2 hover:no-underline"
+                  className="rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300"
+                  onClick={() => {
+                    setShowAILimitsPopup(true);
+                  }}
+                >
+                  <span className="font-medium">{usagePercentage}%</span>{' '}
+                  credits used
+                </button>
+                <button
+                  className="flex items-center gap-1 rounded-md bg-yellow-400 px-2 py-1 text-sm text-black hover:bg-yellow-500"
                   onClick={onUpgrade}
                 >
+                  <Gift className="size-4" />
                   Upgrade
                 </button>
-                <p className="text-sm text-gray-500">
-                  <span className="font-medium">{usagePercentage}%</span> used
-                </p>
               </>
             )}
           </div>

@@ -375,7 +375,7 @@ export function TopicDetail(props: TopicDetailProps) {
         )}
 
         {isLoading && (
-          <div className="flex h-full w-full items-center justify-center">
+          <div className="flex h-full w-full justify-center">
             <Spinner
               outerFill="#d1d5db"
               className="h-6 w-6 sm:h-8 sm:w-8"
@@ -392,7 +392,7 @@ export function TopicDetail(props: TopicDetailProps) {
                 'flex flex-col': activeTab === 'ai',
               })}
             >
-              <div className="flex items-center justify-between">
+              <div className="flex justify-between">
                 {shouldShowAiTab && (
                   <TopicDetailsTabs
                     activeTab={activeTab}
@@ -570,7 +570,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   <a
                     href={contributionUrl}
                     target="_blank"
-                    className="hidden rounded-md border bg-gray-200 px-2 py-2 text-sm hover:bg-gray-300 sm:flex items-center justify-center"
+                    className="hidden items-center justify-center rounded-md border bg-gray-200 px-2 py-2 text-sm hover:bg-gray-300 sm:flex"
                   >
                     <GitHubIcon className="mr-2 inline-block h-4 w-4 text-current" />
                     Help us Improve this Content
