@@ -2,19 +2,19 @@ import type { LucideIcon } from 'lucide-react';
 import { useState, useRef } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import {
-  type PredefinedMessageType,
+  type PredefinedActionType,
   PredefinedActionButton,
 } from './PredefinedActions';
 
-type PredefinedMessageGroupProps = {
+type PredefinedActionGroupProps = {
   label: string;
   icon: LucideIcon;
-  messages: PredefinedMessageType[];
-  onSelect: (message: PredefinedMessageType) => void;
+  actions: PredefinedActionType[];
+  onSelect: (action: PredefinedActionType) => void;
 };
 
-export function PredefinedActionGroup(props: PredefinedMessageGroupProps) {
-  const { label, icon: Icon, messages, onSelect } = props;
+export function PredefinedActionGroup(props: PredefinedActionGroupProps) {
+  const { label, icon: Icon, actions, onSelect } = props;
 
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -34,14 +34,14 @@ export function PredefinedActionGroup(props: PredefinedMessageGroupProps) {
 
       {isOpen && (
         <div className="absolute top-full left-0 z-20 mt-1 divide-y overflow-hidden rounded-md border border-gray-200 bg-white p-0">
-          {messages.map((m) => {
+          {actions.map((action) => {
             return (
               <PredefinedActionButton
-                key={m.message}
-                {...m}
+                key={action.label}
+                {...action}
                 className="h-7 w-full rounded-none bg-transparent hover:bg-gray-200"
                 onClick={() => {
-                  onSelect(m);
+                  onSelect(action);
                   setIsOpen(false);
                 }}
               />

@@ -40,6 +40,7 @@ type TopicDetailAIProps = {
   setAiChatHistory: (history: AIChatHistoryType[]) => void;
 
   onUpgrade: () => void;
+  onLogin: () => void;
 };
 
 export function TopicDetailAI(props: TopicDetailAIProps) {
@@ -50,6 +51,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     resourceType,
     topicId,
     onUpgrade,
+    onLogin,
   } = props;
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -307,6 +309,11 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 <button
                   className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 sm:block"
                   onClick={() => {
+                    if (!isLoggedIn()) {
+                      onLogin();
+                      return;
+                    }
+
                     setShowAILimitsPopup(true);
                   }}
                 >
@@ -315,7 +322,14 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 </button>
                 <button
                   className="flex items-center gap-1 rounded-md bg-yellow-400 px-2 py-1 text-sm text-black hover:bg-yellow-500"
-                  onClick={onUpgrade}
+                  onClick={() => {
+                    if (!isLoggedIn()) {
+                      onLogin();
+                      return;
+                    }
+
+                    onUpgrade();
+                  }}
                 >
                   <Gift className="size-4" />
                   Upgrade
@@ -328,6 +342,16 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
       <PredefinedActions
         onSelect={(action) => {
+          if (!isLoggedIn()) {
+            onLogin();
+            return;
+          }
+
+          if (isLimitExceeded) {
+            onUpgrade();
+            return;
+          }
+
           if (!action?.prompt) {
             toast.error('Something went wrong');
             return;

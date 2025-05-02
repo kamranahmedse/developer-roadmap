@@ -25,7 +25,10 @@ import { Ban, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
-import { resourceTitleFromId, type AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
+import {
+  resourceTitleFromId,
+  type AllowedRoadmapRenderer,
+} from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
 import { ResourceListSeparator } from './ResourceListSeparator.tsx';
@@ -441,6 +444,10 @@ export function TopicDetail(props: TopicDetailProps) {
                   aiChatHistory={aiChatHistory}
                   setAiChatHistory={setAiChatHistory}
                   onUpgrade={() => setShowUpgradeModal(true)}
+                  onLogin={() => {
+                    handleClose();
+                    showLoginPopup();
+                  }}
                 />
               )}
 

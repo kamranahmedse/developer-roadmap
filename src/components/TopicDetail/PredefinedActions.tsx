@@ -79,7 +79,7 @@ export function PredefinedActions(props: PredefinedActionsProps) {
             key={action.label}
             label={action.label}
             icon={action.icon}
-            messages={action.children}
+            actions={action.children}
             onSelect={onSelect}
           />
         );
