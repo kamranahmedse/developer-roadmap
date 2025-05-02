@@ -350,7 +350,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
       <div
         className={cn(
-          'flex items-center gap-2 border-gray-200 px-3 py-1 text-sm',
+          'scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin flex items-center gap-2 overflow-x-auto border-gray-200 px-3 py-1 text-sm',
         )}
       >
         {predefinedMessages.map((m) => (
@@ -490,7 +490,7 @@ function PredefinedMessageButton(props: PredefinedMessageButtonProps) {
 
   return (
     <button
-      className="rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300"
+      className="shrink-0 rounded-md bg-gray-200 px-2 py-1 text-sm whitespace-nowrap hover:bg-gray-300"
       onClick={onClick}
     >
       {label}
