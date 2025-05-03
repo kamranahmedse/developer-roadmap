@@ -79,6 +79,7 @@ Visit the following resources to learn more:
 - `@course@`
 - `@podcast@`
 - `@video@`
+- `@book@`
 
 It's important to add a valid type, this will help us categorize the content and display it properly on the roadmap. The order of the links based on type is same as above.
 
