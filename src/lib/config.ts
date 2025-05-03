@@ -1,5 +1,5 @@
 export const siteConfig = {
-  title: 'Roadmaps to becoming a modern developer',
+  title: 'Roadmaps for becoming a modern developer',
   description:
     'Community driven roadmaps, articles and guides for developers to grow in their career.',
   url: {
@@ -12,16 +12,19 @@ export const siteConfig = {
   },
   keywords: [
     'roadmap',
+    'roadmap.sh',
     'developer roadmaps',
     'developer roadmap',
     'how to become a developer',
     ...[
       'frontend developer',
       'backend developer',
+      'full stack developer',
       'sre',
       'devops',
+      'devops engineer',
       'android developer',
-      'dba',
+      'database administrator',
       'blockchain developer',
       'qa',
       'qa engineer',
@@ -38,9 +41,24 @@ export const siteConfig = {
       'design system',
       'software design',
       'graphql',
+      'ux design',
+      'terraform developer',
+      'sql developer',
+      'spring boot developer',
+      'php developer',
+      'ios developer',
+      'game developer',
+      'flutter developer',
+      'data analyst',
+      'aws developer',
+      'cyber security specialist',
+      'ai developer',
+      'ai engineer',
+      'ai data scientist'
     ].flatMap((roadmapKeyword) => [
       `${roadmapKeyword} roadmap`,
-      `${roadmapKeyword} roadmap 2023`,
+      `${roadmapKeyword} roadmap 2024`,
+      `${roadmapKeyword} roadmap 2025`,
     ]),
   ],
 };
