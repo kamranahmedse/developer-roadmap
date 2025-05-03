@@ -19,6 +19,7 @@ type GenerateCourseOptions = {
   onCourseSlugChange?: (courseSlug: string) => void;
   onCourseChange?: (course: AiCourse, rawData: string) => void;
   onLoadingChange?: (isLoading: boolean) => void;
+  onCreatorIdChange?: (creatorId: string) => void;
   onError?: (error: string) => void;
   src?: string;
 };
@@ -33,6 +34,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
     onCourseChange,
     onLoadingChange,
     onError,
+    onCreatorIdChange,
     isForce = false,
     prompt,
     instructions,
@@ -116,14 +118,17 @@ export async function generateCourse(options: GenerateCourseOptions) {
 
     const COURSE_ID_REGEX = new RegExp('@COURSEID:(\\w+)@');
     const COURSE_SLUG_REGEX = new RegExp(/@COURSESLUG:([\w-]+)@/);
+    const CREATOR_ID_REGEX = new RegExp('@CREATORID:(\\w+)@');
 
     await readStream(reader, {
       onStream: (result) => {
         if (result.includes('@COURSEID') || result.includes('@COURSESLUG')) {
           const courseIdMatch = result.match(COURSE_ID_REGEX);
           const courseSlugMatch = result.match(COURSE_SLUG_REGEX);
+          const creatorIdMatch = result.match(CREATOR_ID_REGEX);
           const extractedCourseId = courseIdMatch?.[1] || '';
           const extractedCourseSlug = courseSlugMatch?.[1] || '';
+          const extractedCreatorId = creatorIdMatch?.[1] || '';
 
           if (extractedCourseSlug) {
             window.history.replaceState(
@@ -140,10 +145,12 @@ export async function generateCourse(options: GenerateCourseOptions) {
 
           result = result
             .replace(COURSE_ID_REGEX, '')
-            .replace(COURSE_SLUG_REGEX, '');
+            .replace(COURSE_SLUG_REGEX, '')
+            .replace(CREATOR_ID_REGEX, '');
 
           onCourseIdChange?.(extractedCourseId);
           onCourseSlugChange?.(extractedCourseSlug);
+          onCreatorIdChange?.(extractedCreatorId);
         }
 
         try {
@@ -162,7 +169,9 @@ export async function generateCourse(options: GenerateCourseOptions) {
       onStreamEnd: (result) => {
         result = result
           .replace(COURSE_ID_REGEX, '')
-          .replace(COURSE_SLUG_REGEX, '');
+          .replace(COURSE_SLUG_REGEX, '')
+          .replace(CREATOR_ID_REGEX, '');
+
         onLoadingChange?.(false);
         queryClient.invalidateQueries(getAiCourseLimitOptions());
       },

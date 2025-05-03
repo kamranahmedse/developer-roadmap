@@ -7,7 +7,6 @@ import { generateCourse } from '../../helper/generate-ai-course';
 import { useQuery } from '@tanstack/react-query';
 import { getAiCourseOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
-import { useAuth } from '../../hooks/use-auth';
 
 type GenerateAICourseProps = {};
 
@@ -21,8 +20,8 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
-  const currentUser = useAuth();
 
+  const [creatorId, setCreatorId] = useState('');
   const [courseId, setCourseId] = useState('');
   const [courseSlug, setCourseSlug] = useState('');
   const [course, setCourse] = useState<AiCourse>({
@@ -124,6 +123,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       slug: courseSlug,
       onCourseIdChange: setCourseId,
       onCourseSlugChange: setCourseSlug,
+      onCreatorIdChange: setCreatorId,
       onCourseChange: setCourse,
       onLoadingChange: setIsLoading,
       onError: setError,
@@ -164,7 +164,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
   return (
     <AICourseContent
       courseSlug={courseSlug}
-      creatorId={currentUser?.id}
+      creatorId={creatorId}
       course={course}
       isLoading={isLoading}
       error={error}
