@@ -258,6 +258,19 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 <a
                   key={subject}
                   target="_blank"
+                  onClick={(e) => {
+                    if (!isLoggedIn()) {
+                      e.preventDefault();
+                      onLogin();
+                      return;
+                    }
+
+                    if (isLimitExceeded) {
+                      e.preventDefault();
+                      onUpgrade();
+                      return;
+                    }
+                  }}
                   href={`/ai/search?term=${subject}&difficulty=beginner&src=topic`}
                   className="flex items-center gap-1 gap-2 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
                 >
