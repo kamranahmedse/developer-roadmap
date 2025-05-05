@@ -7,6 +7,7 @@ import { queryClient } from '../../stores/query-client';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import {
   BotIcon,
+  ChevronRightIcon,
   Gift,
   Loader2Icon,
   LockIcon,
@@ -220,9 +221,12 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     tokenUsage?.used || 0,
     tokenUsage?.limit || 0,
   );
-  const hasSubjects =
-    roadmapTreeMapping?.subjects && roadmapTreeMapping?.subjects?.length > 0;
   const hasChatHistory = aiChatHistory.length > 1;
+  const nodeTextParts = roadmapTreeMapping?.text?.split('>') || [];
+  const hasSubjects =
+    (roadmapTreeMapping?.subjects &&
+      roadmapTreeMapping?.subjects?.length > 0) ||
+    nodeTextParts.length > 1;
 
   return (
     <div className="relative mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
@@ -261,6 +265,26 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 </a>
               );
             })}
+
+            {roadmapTreeMapping?.subjects?.length === 0 && (
+              <a
+                target="_blank"
+                href={`/ai/search?term=${roadmapTreeMapping?.text}&difficulty=beginner&src=topic`}
+                className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
+              >
+                {nodeTextParts.map((text, index) => (
+                  <>
+                    <span key={text} className="flex items-center">
+                      {text}
+                    </span>
+
+                    {index !== nodeTextParts.length - 1 && (
+                      <ChevronRightIcon className="h-3 w-3 text-gray-400" />
+                    )}
+                  </>
+                ))}
+              </a>
+            )}
           </div>
         </div>
       )}
@@ -295,7 +319,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           <div className="flex gap-1.5">
             {hasChatHistory && (
               <button
-                className="rounded-md bg-white py-2 px-2 text-xs font-medium text-black hover:bg-gray-200"
+                className="rounded-md bg-white px-2 py-2 text-xs font-medium text-black hover:bg-gray-200"
                 onClick={() => {
                   setAiChatHistory(defaultChatHistory);
                 }}
