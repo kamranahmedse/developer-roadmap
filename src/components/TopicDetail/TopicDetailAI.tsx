@@ -303,10 +303,10 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
             <button
               onClick={onShowSubjectSearchModal}
-              className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-transparent px-2 py-1 hover:bg-gray-200 hover:text-black"
+              className="flex text-gray-400 items-center gap-1.5 rounded-md border border-dashed hover:border-solid border-gray-300 bg-transparent px-2 py-1 hover:bg-gray-200 hover:text-black"
             >
               <WandSparkles className="h-3 w-3" />
-              Custom Topic
+              Learn another topic
             </button>
           </div>
         </div>
