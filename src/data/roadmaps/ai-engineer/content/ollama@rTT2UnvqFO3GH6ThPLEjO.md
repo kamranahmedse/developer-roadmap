@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Ollama](https://ollama.com/)
 - [@article@Ollama: Easily run LLMs locally](https://klu.ai/glossary/ollama)
+- [@video@What is Ollama? Running Local LLMs Made Simple](https://www.youtube.com/watch?v=5RIOQuHOihY)
