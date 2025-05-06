@@ -5,4 +5,4 @@ Classes are blueprints for creating objects, which are instances of those classe
 Visit the following resources to learn more:
 
 - [@article@Java Class and Objects](https://www.programiz.com/java-programming/class-objects)
-- [@article@Java Classes and Objects](https://www.youtube.com/watch?v=IUqKuGNasdM)
+- [@video@Java Classes and Objects](https://www.youtube.com/watch?v=IUqKuGNasdM)
