@@ -1,6 +1,6 @@
 # API Styles
 
-Up until Vue 2, there was one way to create components in Vue. With Vue 3, a new methodology was introduced called the Composition API. Now, if we want to make a component in Vue, we have two ways to do it. You might be wondering what the difference is, exactly, so let’s take a look at how the newer Composition API differs from the Vue 2 methodology, which is now known as the Options API
+Though Vue 2 supported many approaches to writing components, only one approach, the "Options API", was built in and accessible without plugins. Vue 3, retains the Options API (OAPI), and adds in the Composition API (CAPI). Composition API itself is actually a part of the Options API, but moves most of the component logic into a setup function. This led to a 3rd approach to writing components being built in called "script/setup", which removes much of the boilerplate from Composition API. These approaches are not mutually exclusive. Each component in your project can use any of these approaches, however for consistency it is recommended to stick primarily to one, and only deviate to one of the others when you have a good reason.
 
 Visit the following resources to learn more:
 
