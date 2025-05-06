@@ -5,3 +5,7 @@ Emotional intelligence is crucial for an Engineering Manager. It helps them unde
 Engineering Managers often face challenges in dealing with various personalities within a team. By applying emotional intelligence, they can navigate these difficulties, resolve conflicts, and maintain a positive working environment. Their challenge is to balance their own emotions while addressing those of their team.
 
 Success in this aspect requires strong listening skills, empathy, and patience. Engineering Managers also need to continuously improve their emotional intelligence through self-reflection and seeking feedback. This helps them foster a team environment where everyone is understood and valued.
+
+Visit the following resources to learn more:
+
+- [@video@Daniel Goleman on the different kinds of empathy](https://www.youtube.com/watch?v=WdDVvLEKoc8)
