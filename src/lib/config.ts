@@ -1,5 +1,5 @@
 export const siteConfig = {
-  title: 'Roadmaps for becoming a modern developer',
+  title: 'Roadmaps to becoming a modern developer',
   description:
     'Community driven roadmaps, articles and guides for developers to grow in their career.',
   url: {
