@@ -10,8 +10,7 @@ import {
   ChevronRightIcon,
   Gift,
   Loader2Icon,
-  LockIcon, SendIcon,
-  Trash2,
+  LockIcon, SendIcon, Trash2,
   WandSparkles
 } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';

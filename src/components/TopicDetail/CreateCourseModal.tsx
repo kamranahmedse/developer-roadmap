@@ -1,5 +1,6 @@
-import { ChevronRightIcon, SearchIcon } from 'lucide-react';
+import { WandSparkles } from 'lucide-react';
 import { Modal } from '../Modal';
+import { useState } from 'react';
 
 type CreateCourseModalProps = {
   onClose: () => void;
@@ -7,6 +8,8 @@ type CreateCourseModalProps = {
 
 export function CreateCourseModal(props: CreateCourseModalProps) {
   const { onClose } = props;
+
+  const [subject, setSubject] = useState('');
 
   return (
     <Modal
@@ -29,23 +32,26 @@ export function CreateCourseModal(props: CreateCourseModalProps) {
           className="mb-2.5 ml-1 inline-block text-sm leading-none"
           htmlFor="subject"
         >
-          Subject
+          Ask AI to Teach You
         </label>
-        <div className="relative overflow-hidden rounded-lg border">
+        <div className="relative flex items-center gap-2 overflow-hidden">
           <input
             id="subject"
             type="text"
-            className="w-full bg-white p-2.5 px-8 text-sm focus:bg-gray-50 focus:outline-hidden"
-            placeholder="Enter a Subject for the Course"
+            className="w-full bg-white p-2.5 pr-8 text-sm focus:outline-hidden"
+            placeholder="Enter a topic to learn"
             name="subject"
             autoFocus={true}
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
           />
 
-          <div className="absolute top-0 left-0 flex h-full items-center justify-center px-2 text-gray-500">
-            <SearchIcon className="size-4" />
-          </div>
-          <button className="absolute top-0 right-0 flex h-full items-center justify-center px-2 hover:bg-gray-200">
-            <ChevronRightIcon className="size-4" />
+          <button
+            disabled={!subject.trim()}
+            className="flex h-full disabled:opacity-40 items-center justify-center gap-2 rounded-md bg-black px-3 py-1 text-sm text-white hover:opacity-80"
+          >
+            Generate
+            <WandSparkles className="size-4" />
           </button>
         </div>
       </form>
