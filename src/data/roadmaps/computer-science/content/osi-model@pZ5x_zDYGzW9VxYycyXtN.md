@@ -1,6 +1,6 @@
 # OSI and TCP/IP Models
 
-The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're are trying to design a system to communicate with other systems.
+The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're trying to design a system to communicate with other systems.
 
 Visit the following resources to learn more:
 
