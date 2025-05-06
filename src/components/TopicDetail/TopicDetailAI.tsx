@@ -10,11 +10,9 @@ import {
   ChevronRightIcon,
   Gift,
   Loader2Icon,
-  LockIcon,
-  PlusIcon,
-  SearchIcon,
-  SendIcon,
+  LockIcon, SendIcon,
   Trash2,
+  WandSparkles
 } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname';
@@ -308,8 +306,8 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
               onClick={onShowSubjectSearchModal}
               className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-transparent px-2 py-1 hover:bg-gray-200 hover:text-black"
             >
-              <PlusIcon className="h-3 w-3" />
-              Create a Course
+              <WandSparkles className="h-3 w-3" />
+              Custom Topic
             </button>
           </div>
         </div>
