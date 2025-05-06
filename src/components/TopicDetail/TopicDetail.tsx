@@ -42,6 +42,7 @@ import { cn } from '../../lib/classname.ts';
 import type { AIChatHistoryType } from '../GenerateCourse/AICourseLessonChat.tsx';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
 import { TopicProgressButton } from './TopicProgressButton.tsx';
+import { CreateCourseModal } from './CreateCourseModal.tsx';
 
 type TopicDetailProps = {
   resourceId?: string;
@@ -119,6 +120,8 @@ export function TopicDetail(props: TopicDetailProps) {
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isCustomResource, setIsCustomResource] = useState(false);
 
+  const [showSubjectSearchModal, setShowSubjectSearchModal] = useState(false);
+
   const toast = useToast();
 
   const [showPaidResourceDisclaimer, setShowPaidResourceDisclaimer] =
@@ -139,6 +142,7 @@ export function TopicDetail(props: TopicDetailProps) {
     setShowUpgradeModal(false);
     setAiChatHistory(defaultChatHistory);
     setActiveTab('content');
+    setShowSubjectSearchModal(false);
   };
 
   // Close the topic detail when user clicks outside the topic detail
@@ -349,10 +353,6 @@ export function TopicDetail(props: TopicDetailProps) {
     return null;
   }
 
-  const resourceTitleForSearch = resourceTitle
-    ?.toLowerCase()
-    ?.replace(/\s+?roadmap/gi, '');
-
   const tnsLink =
     'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic';
 
@@ -361,10 +361,6 @@ export function TopicDetail(props: TopicDetailProps) {
       topicId.indexOf('@') !== -1 ? topicId.split('@')[1] : topicId;
     return resource.topicIds.includes(normalizedTopicId);
   });
-
-  const hasPaidScrimbaLinks = paidResourcesForTopic.some(
-    (resource) => resource?.url?.toLowerCase().indexOf('scrimba') !== -1,
-  );
 
   const shouldShowAiTab = !isCustomResource && resourceType === 'roadmap';
 
@@ -377,6 +373,10 @@ export function TopicDetail(props: TopicDetailProps) {
       >
         {showUpgradeModal && (
           <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+        )}
+
+        {showSubjectSearchModal && (
+          <CreateCourseModal onClose={() => setShowSubjectSearchModal(false)} />
         )}
 
         {isLoading && (
@@ -447,6 +447,14 @@ export function TopicDetail(props: TopicDetailProps) {
                   onLogin={() => {
                     handleClose();
                     showLoginPopup();
+                  }}
+                  onShowSubjectSearchModal={() => {
+                    if (!isLoggedIn()) {
+                      showLoginPopup();
+                      return;
+                    }
+
+                    setShowSubjectSearchModal(true);
                   }}
                 />
               )}

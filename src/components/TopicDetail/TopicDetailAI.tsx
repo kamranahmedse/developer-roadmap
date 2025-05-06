@@ -10,9 +10,8 @@ import {
   ChevronRightIcon,
   Gift,
   Loader2Icon,
-  LockIcon,
-  SendIcon,
-  Trash2,
+  LockIcon, SendIcon, Trash2,
+  WandSparkles
 } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname';
@@ -42,6 +41,8 @@ type TopicDetailAIProps = {
 
   onUpgrade: () => void;
   onLogin: () => void;
+
+  onShowSubjectSearchModal: () => void;
 };
 
 export function TopicDetailAI(props: TopicDetailAIProps) {
@@ -53,6 +54,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     topicId,
     onUpgrade,
     onLogin,
+    onShowSubjectSearchModal,
   } = props;
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -298,6 +300,14 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 ))}
               </a>
             )}
+
+            <button
+              onClick={onShowSubjectSearchModal}
+              className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-transparent px-2 py-1 hover:bg-gray-200 hover:text-black"
+            >
+              <WandSparkles className="h-3 w-3" />
+              Custom Topic
+            </button>
           </div>
         </div>
       )}
