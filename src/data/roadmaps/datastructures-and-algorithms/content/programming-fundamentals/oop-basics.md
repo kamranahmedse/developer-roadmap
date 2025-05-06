@@ -4,5 +4,4 @@ Object-oriented programming (OOP) is a programming paradigm that uses "objects" 
 
 Visit the following resources to learn more:
 
-- [@article@Introduction of OOP](https://www.geeksforgeeks.org/introduction-of-object-oriented-programming/)
 - [@video@Object-Oriented Programming (Simplified)](https://youtu.be/pTB0EiLXUC8?si=I8rV2K5fhpoqmixX)
