@@ -1820,7 +1820,7 @@
   },
   "Mt5W1IvuHevNXVRlh7z26": {
     "title": "OSI",
-    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're are trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
+    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Cloudflare - What is the OSI model",
