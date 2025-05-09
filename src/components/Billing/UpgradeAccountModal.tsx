@@ -264,9 +264,14 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                           setSelectedPlan(plan.interval);
                           if (!currentPlanPriceId) {
                             const currentUrlPath = window.location.pathname;
+                            const encodedCurrentUrlPath = encodeURIComponent(
+                              currentUrlPath,
+                            );
+                            const successPage = `/thank-you?next=${encodedCurrentUrlPath}&s=1`;
+
                             createCheckoutSession({
                               priceId: plan.priceId,
-                              success: success || `${currentUrlPath}?s=1`,
+                              success: success || successPage,
                               cancel: cancel || `${currentUrlPath}?s=0`,
                             });
                             return;
