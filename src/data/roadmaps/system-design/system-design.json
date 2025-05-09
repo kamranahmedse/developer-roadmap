@@ -4715,7 +4715,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Queu-based Load Leveling",
+        "label": "Queue-based Load Leveling",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
