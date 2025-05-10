@@ -17,3 +17,7 @@ dnf list installed
 ```
 
 Remember, different distributions will have their own syntax for this command.
+
+*Resources*
+- [apt command guide](https://itsfoss.com/apt-command-guide/)
+- [dnf command guide](https://www.geeksforgeeks.org/dnf-command-in-linux/)
