@@ -18,7 +18,12 @@ export function ThankYouPage() {
       return;
     }
 
-    const decodedNextPage = decodeURIComponent(next);
+    let decodedNextPage = decodeURIComponent(next);
+
+    if (decodedNextPage === '/courses/sql') {
+      decodedNextPage = `${import.meta.env.PUBLIC_COURSE_APP_URL}/sql`;
+    }
+
     setNextPage(decodedNextPage);
     setIsLoading(false);
     setShouldVerifyUpgrade(shouldVerifyUpgrade);
