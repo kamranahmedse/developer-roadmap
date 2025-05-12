@@ -61,7 +61,7 @@ export function ThankYouPage() {
             Thank you!
           </h1>
 
-          <p className="mb-8 text-lg text-gray-600">
+          <p className="mb-8 text-lg text-gray-600 max-w-lg text-balance">
             Your transaction was successful and your access has been activated.
           </p>
 
