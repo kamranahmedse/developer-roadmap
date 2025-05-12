@@ -16,14 +16,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { useToast } from '../../hooks/use-toast';
 import { Spinner } from '../ReactIcons/Spinner';
 import { ChevronDown } from 'lucide-react';
-
-type TopicProgressButtonProps = {
-  topicId: string;
-  resourceId: string;
-  resourceType: ResourceType;
-
-  onClose: () => void;
-};
+import { cn } from '../../lib/classname';
 
 const statusColors: Record<ResourceProgressType, string> = {
   done: 'bg-green-500',
@@ -33,8 +26,44 @@ const statusColors: Record<ResourceProgressType, string> = {
   removed: '',
 };
 
+type TopicProgressButtonProps = {
+  topicId: string;
+  resourceId: string;
+  resourceType: ResourceType;
+  dropdownClassName?: string;
+
+  onClose: () => void;
+};
+
+type ProgressDropdownItemProps = {
+  status: ResourceProgressType;
+  shortcutKey: string;
+  label: string;
+  onClick: () => void;
+};
+
+function ProgressDropdownItem(props: ProgressDropdownItemProps) {
+  const { status, shortcutKey, label, onClick } = props;
+
+  return (
+    <button
+      className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+      onClick={onClick}
+    >
+      <span>
+        <span
+          className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors[status]}`}
+        ></span>
+        {label}
+      </span>
+      <span className="text-xs text-gray-500">{shortcutKey}</span>
+    </button>
+  );
+}
+
 export function TopicProgressButton(props: TopicProgressButtonProps) {
-  const { topicId, resourceId, resourceType, onClose } = props;
+  const { topicId, resourceId, resourceType, onClose, dropdownClassName } =
+    props;
 
   const toast = useToast();
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
@@ -66,7 +95,15 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   // Mark as done
   useKeydown(
     'd',
-    () => {
+    (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
       if (progress === 'done') {
         onClose();
         return;
@@ -80,7 +117,15 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   // Mark as learning
   useKeydown(
     'l',
-    () => {
+    (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
       if (progress === 'learning') {
         return;
       }
@@ -93,7 +138,15 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   // Mark as learning
   useKeydown(
     's',
-    () => {
+    (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
       if (progress === 'skipped') {
         onClose();
         return;
@@ -107,9 +160,16 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   // Mark as pending
   useKeydown(
     'r',
-    () => {
+    (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLTextAreaElement ||
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
+
       if (progress === 'pending') {
-        onClose();
         return;
       }
 
@@ -147,6 +207,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         console.error(err);
       })
       .finally(() => {
+        setShowChangeStatus(false);
         setIsUpdatingProgress(false);
       });
   };
@@ -167,15 +228,20 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   if (isUpdatingProgress) {
     return (
       <button className="inline-flex cursor-default items-center rounded-md border border-gray-300 bg-white p-1 px-2 text-sm text-black">
-        <Spinner className="h-4 w-4" />
-        <span className="ml-2">Updating Status..</span>
+        <Spinner isDualRing={false} className="h-4 w-4" />
+        <span className="ml-2">Please wait..</span>
       </button>
     );
   }
 
   return (
-    <div className="relative inline-flex rounded-md border border-gray-300">
-      <span className="inline-flex cursor-default items-center  p-1 px-2 text-sm text-black">
+    <div className="relative inline-flex">
+      <button
+        className={cn(
+          'flex cursor-default cursor-pointer items-center rounded-md border border-gray-300 p-1 px-2 text-sm text-black hover:border-gray-400',
+        )}
+        onClick={() => setShowChangeStatus(true)}
+      >
         <span className="flex h-2 w-2">
           <span
             className={`relative inline-flex h-2 w-2 rounded-full ${statusColors[progress]}`}
@@ -184,77 +250,48 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         <span className="ml-2 capitalize">
           {progress === 'learning' ? 'In Progress' : progress}
         </span>
-      </span>
-
-      <button
-        className="inline-flex cursor-pointer items-center rounded-br-md rounded-tr-md border-l border-l-gray-300 bg-gray-100 p-1 px-2 text-sm text-black hover:bg-gray-200"
-        onClick={() => setShowChangeStatus(true)}
-      >
-        <span className="mr-0.5">Update Status</span>
-        <ChevronDown className="h-4 w-4" />
+        <ChevronDown className="ml-2 h-4 w-4" />
       </button>
 
       {showChangeStatus && (
         <div
-          className="absolute right-0 top-full mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md"
+          className={cn(
+            'absolute top-full right-0 z-50 mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md',
+            dropdownClassName,
+          )}
           ref={changeStatusRef!}
         >
           {allowMarkingDone && (
-            <button
-              className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+            <ProgressDropdownItem
+              status="done"
+              shortcutKey="D"
+              label="Done"
               onClick={() => handleUpdateResourceProgress('done')}
-            >
-              <span>
-                <span
-                  className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['done']}`}
-                ></span>
-                Done
-              </span>
-              <span className="text-xs text-gray-500">D</span>
-            </button>
+            />
           )}
           {allowMarkingLearning && (
-            <button
-              className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+            <ProgressDropdownItem
+              status="learning"
+              shortcutKey="L"
+              label="In Progress"
               onClick={() => handleUpdateResourceProgress('learning')}
-            >
-              <span>
-                <span
-                  className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['learning']}`}
-                ></span>
-                In Progress
-              </span>
-
-              <span className="text-xs text-gray-500">L</span>
-            </button>
+            />
           )}
           {allowMarkingPending && (
-            <button
-              className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+            <ProgressDropdownItem
+              status="pending"
+              shortcutKey="R"
+              label="Reset"
               onClick={() => handleUpdateResourceProgress('pending')}
-            >
-              <span>
-                <span
-                  className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['pending']}`}
-                ></span>
-                Reset
-              </span>
-              <span className="text-xs text-gray-500">R</span>
-            </button>
+            />
           )}
           {allowMarkingSkipped && (
-            <button
-              className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+            <ProgressDropdownItem
+              status="skipped"
+              shortcutKey="S"
+              label="Skip"
               onClick={() => handleUpdateResourceProgress('skipped')}
-            >
-              <span>
-                <span
-                  className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['skipped']}`}
-                ></span>
-                Skip
-              </span>
-              <span className="text-xs text-gray-500">S</span>
-            </button>
+            />
           )}
         </div>
       )}

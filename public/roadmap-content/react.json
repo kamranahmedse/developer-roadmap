@@ -4,11 +4,6 @@
     "description": "Here is the list of most common CLI tools for React development:",
     "links": [
       {
-        "title": "create-react-app",
-        "url": "https://create-react-app.dev",
-        "type": "article"
-      },
-      {
         "title": "vite",
         "url": "https://vitejs.dev",
         "type": "article"

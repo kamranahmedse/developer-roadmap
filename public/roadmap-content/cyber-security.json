@@ -199,7 +199,7 @@
     "description": "iCloud is a cloud storage and cloud computing service provided by Apple Inc. It allows users to store data, such as documents, photos, and music, on remote servers and synchronize them across their Apple devices, including iPhones, iPads, and MacBooks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "iCloud Website",
+        "title": "iCloud",
         "url": "https://www.icloud.com/",
         "type": "article"
       }
@@ -237,7 +237,7 @@
     "description": "Hack The Box (HTB) is a popular online platform designed for security enthusiasts, penetration testers, and ethical hackers to develop and enhance their skills by engaging in real-world cybersecurity challenges. The platform provides a wide array of virtual machines (VMs), known as \"boxes,\" each with a unique set of security vulnerabilities to exploit.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Hack The Box Website",
+        "title": "Hack The Box",
         "url": "https://www.hackthebox.com/",
         "type": "article"
       },
@@ -380,6 +380,11 @@
     "title": "CompTIA Security+",
     "description": "CompTIA Security+ is a highly recognized and respected certification for individuals seeking to start their careers in the field of cybersecurity. This certification is vendor-neutral, meaning it doesn't focus on any specific technology or platform, and provides a solid foundation in cybersecurity principles, concepts, and best practices.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "CompTIA SY0-701 Security+ Exam Course Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv",
+        "type": "course"
+      },
       {
         "title": "CompTIA Security+ Course",
         "url": "https://www.youtube.com/watch?v=yLf2jRY39Rc&list=PLIhvC56v63IIyU0aBUed4qwP0nSCORAdB",
@@ -1075,7 +1080,12 @@
     "description": "IP, or Internet Protocol, is a fundamental concept in cybersecurity that refers to the way data is transferred across networks, specifically the internet. It is a core component of the internet's architecture and serves as the primary building block for communication between devices connected to the network. An IP address is a unique identifier assigned to each device connected to a network, like a computer or smartphone. It comprises a series of numbers separated by dots (e.g., 192.168.1.1). IP addresses can be either IPv4 (32-bit) or the newer IPv6 (128-bit) format, which provides more available addresses. They allow devices to send and receive data packets to and from other devices on the internet.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is an IP address and what does it mean?",
+        "title": "Check Your IP Address",
+        "url": "https://ipleak.net",
+        "type": "website"
+      },
+      {
+        "title": "What is an IP Address and What does it mean?",
         "url": "https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address",
         "type": "article"
       },
@@ -1430,7 +1440,7 @@
     "description": "HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) are fundamental protocols for web communication. HTTP is the foundation for data exchange on the World Wide Web, allowing browsers to request resources from web servers. However, HTTP transmits data in plain text, making it vulnerable to eavesdropping and man-in-the-middle attacks. HTTPS addresses these security concerns by adding a layer of encryption using SSL/TLS (Secure Sockets Layer/Transport Layer Security). This encryption protects the confidentiality and integrity of data in transit, securing sensitive information such as login credentials and financial transactions. HTTPS also provides authentication, ensuring that users are communicating with the intended website. In recent years, there has been a significant push towards HTTPS adoption across the web, with major browsers marking HTTP sites as \"not secure.\" This shift has greatly enhanced overall web security, though it's important to note that HTTPS secures the connection, not necessarily the content of the website itself.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "An overview of HTTP",
+        "title": "An Overview of HTTP",
         "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview",
         "type": "article"
       },
@@ -1538,7 +1548,7 @@
   },
   "CIoLaRv5I3sCr9tBnZHEi": {
     "title": "Hypervisor",
-    "description": "A hypervisor, also known as a virtual machine monitor (VMM), is software or firmware that enables the creation and management of virtual machines (VMs) by abstracting the underlying hardware. It allows multiple VMs to run on a single physical machine, each operating independently with its own operating system and applications. Hypervisors facilitate better resource utilization by allowing a physical server to host several virtual environments, optimizing hardware efficiency.\n\nThere are two types of hypervisors:\n\n*   **Type 1 hypervisor**, or bare-metal hypervisor, runs directly on the physical hardware without a host operating system. It provides better performance and is commonly used in enterprise environments. Examples include VMware ESXi and Microsoft Hyper-V.\n*   **Type 2 hypervisor** runs on top of an existing operating system, relying on the host OS for resource management. These are typically used for personal or development purposes, with examples like VMware Workstation and Oracle VirtualBox.\n\nHypervisors are fundamental in cloud computing, virtualization, and server consolidation, allowing for flexible and efficient resource management and isolation between virtual environments.\n\nLearn more from the following resources:",
+    "description": "A hypervisor, also known as a virtual machine monitor (VMM), is software or firmware that enables the creation and management of virtual machines (VMs) by abstracting the underlying hardware. It allows multiple VMs to run on a single physical machine, each operating independently with its own operating system and applications. Hypervisors facilitate better resource utilization by allowing a physical server to host several virtual environments, optimizing hardware efficiency.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "What is a hypervisor?",
@@ -2548,7 +2558,7 @@
     "description": "hping is a versatile and powerful command-line based packet crafting tool that allows network administrators, security professionals, and system auditors to manipulate and analyze network packets at a granular level. hping can be used to perform stress testing, firewall testing, scanning, and packet generation, among other functionalities.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "hping source code",
+        "title": "hping",
         "url": "https://salsa.debian.org/debian/hping3",
         "type": "article"
       },
@@ -2824,6 +2834,16 @@
         "type": "article"
       },
       {
+        "title": "Hashing Algorithm Overview: Types, Methodologies & Usage",
+        "url": "https://www.okta.com/identity-101/hashing-algorithms/",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Cryptography Types:",
+        "url": "https://geekflare.com/cybersecurity/cryptography-types/",
+        "type": "article"
+      },
+      {
         "title": "Hashing Explained",
         "url": "https://www.youtube.com/watch?v=EOe1XUykdP4",
         "type": "video"
@@ -2952,7 +2972,7 @@
     "description": "The International Organization for Standardization (ISO) is an international standard-setting body composed of representatives from various national standards organizations. It promotes worldwide proprietary, industrial, and commercial standards. In the domain of cyber security, there are several important ISO standards that help organizations to protect their sensitive data and to be resilient against cyber threats.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "ISO Website",
+        "title": "International Organization for Standardization",
         "url": "https://www.iso.org/home.html",
         "type": "article"
       },
@@ -3102,6 +3122,16 @@
       {
         "title": "Kali Linux",
         "url": "https://www.kali.org/",
+        "type": "article"
+      },
+      {
+        "title": "Kali Tools",
+        "url": "https://www.kali.org/tools",
+        "type": "article"
+      },
+      {
+        "title": "Kali Docs",
+        "url": "https://www.kali.org/docs/",
         "type": "article"
       }
     ]
@@ -3319,12 +3349,12 @@
     "description": "A **jump server**, also known as a **bastion host** or **jump host**, is a critical security component in many network architectures. It is a dedicated, locked-down, and secure server that sits within a protected network, and provides a controlled access point for users and administrators to access specific components within the system. This intermediate server acts as a bridge between untrusted networks and the internal privileged systems, thereby reducing the attack surface and securing the environment.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is a jump server?",
+        "title": "What is a Jump Server?",
         "url": "https://www.ssh.com/academy/iam/jump-server",
         "type": "article"
       },
       {
-        "title": "What is a bastion host and why is it so important?",
+        "title": "What is a Bastion Host and Why is it so important?",
         "url": "https://www.youtube.com/watch?v=pI6glWVEkcY",
         "type": "video"
       }
@@ -3793,6 +3823,16 @@
     "description": "\"known\" and \"unknown\" refer to the classification of threats based on the visibility and familiarity of the attack or vulnerability.\n\n*   **Known Threats** are those that have been previously identified and documented, such as malware signatures, vulnerabilities, or attack patterns. Security solutions like antivirus software and intrusion detection systems typically rely on databases of known threats to recognize and block them. These threats are easier to defend against because security teams have the tools and knowledge to detect and mitigate them.\n    \n*   **Unknown Threats**, on the other hand, refer to new, emerging, or sophisticated threats that have not been previously encountered or documented. These can include zero-day vulnerabilities, which are software flaws not yet known to the vendor or the public, or advanced malware designed to evade traditional defenses. Unknown threats require more advanced detection techniques, such as behavioral analysis, machine learning, or heuristic-based detection, to identify anomalies and suspicious activities that don't match known patterns.\n    \n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "From Known to Unknown",
+        "url": "https://securitysandman.com/2025/01/06/from-known-to-unknown-shifting-cybersecurity-to-proactive-ai-detection/",
+        "type": "article"
+      },
+      {
+        "title": "Catching all Threats - Known, Unknown, and Unknown Unknown",
+        "url": "https://www.scworld.com/perspective/catching-all-threats-known-unknown-and-unknown-unknown-before-they-can-harm-you",
+        "type": "article"
+      },
+      {
         "title": "Detecting known threats",
         "url": "https://www.youtube.com/watch?v=hOaHDVMQ9_s",
         "type": "video"
@@ -3851,7 +3891,7 @@
     "description": "Joe Sandbox is an advanced malware analysis platform that allows security professionals to analyze suspicious files, URLs, and documents in a controlled and isolated environment known as a sandbox. This platform provides in-depth behavioral analysis by executing the potentially malicious code in a virtualized environment to observe its actions, such as file modifications, network communications, and registry changes, without risking the integrity of the actual network or systems. Joe Sandbox supports a wide range of file types and can detect and analyze complex, evasive malware that may attempt to avoid detection in less sophisticated environments. The insights generated from Joe Sandbox are crucial for understanding the nature of the threat, aiding in the development of countermeasures, and enhancing overall cybersecurity defenses.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Joe Sandbox Website",
+        "title": "Joe Sandbox",
         "url": "https://www.joesandbox.com/#windows",
         "type": "article"
       },
@@ -4933,7 +4973,7 @@
     "description": "iCloud is a cloud storage and cloud computing service provided by Apple Inc. It allows users to store data, such as documents, photos, and music, on remote servers and synchronize them across their Apple devices, including iPhones, iPads, and MacBooks.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "iCloud Website",
+        "title": "iCloud",
         "url": "https://www.icloud.com/",
         "type": "article"
       }
@@ -5022,7 +5062,7 @@
     "description": "JavaScript (often abbreviated as JS) is a widely-used, high-level programming language. It is predominantly used for creating and enhancing the interactive elements of web pages, making it an integral part of the web development space. JavaScript was initially known as LiveScript and was created by Brendan Eich in 1995, but it later got renamed to JavaScript.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "JavaScript Roadmap",
+        "title": "Visit Dedicated JavaScript Roadmap",
         "url": "https://roadmap.sh/javascript",
         "type": "article"
       },

@@ -177,7 +177,7 @@ const gaPageIdentifier = Astro.url.pathname
       jsonLd.length > 0 && (
         <script
           type='application/ld+json'
-          set:html={JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd)}
+          set:html={JSON.stringify(jsonLd)}
         />
       )
     }

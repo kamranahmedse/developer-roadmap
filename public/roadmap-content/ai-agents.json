@@ -1,117 +1,459 @@
 {
   "VPI89s-m885r2YrXjYxdd": {
     "title": "Basic Backend Development",
-    "description": "",
-    "links": []
+    "description": "Before you start learning how to build AI agents, we would recommend you to have a basic knowledge of Backend development. This includes, programming language knowledge, interacting with database and basics of APIs at minimum.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Introduction to the server-side",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction",
+        "type": "article"
+      },
+      {
+        "title": "What is a REST API? - Red Hat",
+        "url": "https://www.redhat.com/en/topics/api/what-is-a-rest-api",
+        "type": "article"
+      },
+      {
+        "title": "What is a Database? - Oracle",
+        "url": "https://www.oracle.com/database/what-is-database/",
+        "type": "article"
+      }
+    ]
   },
   "McREk2zHOlIrqbGSKbX-J": {
     "title": "Git and Terminal Usage",
-    "description": "",
-    "links": []
+    "description": "Git and the terminal are key tools for AI agents and developers. Git lets you track changes in code, work with branches, and collaborate safely with others. It stores snapshots of your work so you can undo mistakes or merge ideas. The terminal (command line) lets you move around files, run programs, set up servers, and control tools like Git quickly without a GUI.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Git Basics",
+        "url": "https://git-scm.com/doc",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to the Terminal",
+        "url": "https://ubuntu.com/tutorials/command-line-for-beginners#1-overview",
+        "type": "article"
+      },
+      {
+        "title": "Git and Terminal Basics Crash Course (YouTube)",
+        "url": "https://www.youtube.com/watch?v=HVsySz-h9r4",
+        "type": "video"
+      }
+    ]
   },
   "QtTwecLdvQa8pgELJ6i80": {
     "title": "REST API Knowledge",
-    "description": "",
-    "links": []
+    "description": "A **REST API** (Representational State Transfer) is an architectural style for designing networked applications. In AI agents, REST APIs enable communication between the agent and external systems, allowing for data exchange and integration. The agent can use REST APIs to retrieve data from external sources, send data to external systems, and interact with other AI agents or services. This provides a flexible and scalable way to integrate with various systems, enabling the agent to access a wide range of data and services. REST APIs in AI agents support a variety of functions, including data retrieval, data sending, and system interaction. They play a crucial role in facilitating communication between AI agents and external systems, making them a fundamental component of AI agent architecture.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is RESTful API? - RESTful API Explained - AWS",
+        "url": "https://aws.amazon.com/what-is/restful-api/",
+        "type": "article"
+      },
+      {
+        "title": "What Is a REST API? Examples, Uses & Challenges ",
+        "url": "https://blog.postman.com/rest-api-examples/",
+        "type": "article"
+      }
+    ]
   },
   "ZF5_5Y5zqa75Ov22JACX6": {
     "title": "Transformer Models and LLMs",
-    "description": "Transformer models are a type of neural network that read input data—like words in a sentence—all at once instead of one piece at a time. They use “attention” to find which parts of the input matter most for each other part. This lets them learn patterns in language very well. When a transformer has been trained on a very large set of text, we call it a Large Language Model (LLM). An LLM can answer questions, write text, translate languages, and code because it has seen many examples during training. AI agents use these models as their “brains.” They feed tasks or prompts to the LLM, get back text or plans, and then act on those results. This structure helps agents understand goals, break them into steps, and adjust based on feedback, making them useful for chatbots, research helpers, and automation tools.",
-    "links": []
+    "description": "Transformer models are a type of neural network that read input data—like words in a sentence—all at once instead of one piece at a time. They use “attention” to find which parts of the input matter most for each other part. This lets them learn patterns in language very well. When a transformer has been trained on a very large set of text, we call it a Large Language Model (LLM). An LLM can answer questions, write text, translate languages, and code because it has seen many examples during training. AI agents use these models as their “brains.” They feed tasks or prompts to the LLM, get back text or plans, and then act on those results. This structure helps agents understand goals, break them into steps, and adjust based on feedback, making them useful for chatbots, research helpers, and automation tools.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Exploring Open Source AI Models: LLMs and Transformer Architectures",
+        "url": "https://llmmodels.org/blog/exploring-open-source-ai-models-llms-and-transformer-architectures/",
+        "type": "article"
+      },
+      {
+        "title": "Transformer Models Vs Llm Comparison",
+        "url": "https://www.restack.io/p/transformer-models-answer-vs-llm-cat-ai",
+        "type": "article"
+      },
+      {
+        "title": "How Transformer LLMs Work",
+        "url": "https://www.deeplearning.ai/short-courses/how-transformer-llms-work/",
+        "type": "article"
+      }
+    ]
   },
   "GAjuWyJl9CI1nqXBp6XCf": {
     "title": "Tokenization",
-    "description": "Tokenization is the step where raw text is broken into small pieces called tokens, and each token is given a unique number. A token can be a whole word, part of a word, a punctuation mark, or even a space. The list of all possible tokens is the model’s vocabulary. Once text is turned into these numbered tokens, the model can look up an embedding for each number and start its math. By working with tokens instead of full sentences, the model keeps the input size steady and can handle new or rare words by slicing them into familiar sub-pieces. After the model finishes its work, the numbered tokens are turned back into text through the same vocabulary map, letting the user read the result.",
-    "links": []
+    "description": "Tokenization is the step where raw text is broken into small pieces called tokens, and each token is given a unique number. A token can be a whole word, part of a word, a punctuation mark, or even a space. The list of all possible tokens is the model’s vocabulary. Once text is turned into these numbered tokens, the model can look up an embedding for each number and start its math. By working with tokens instead of full sentences, the model keeps the input size steady and can handle new or rare words by slicing them into familiar sub-pieces. After the model finishes its work, the numbered tokens are turned back into text through the same vocabulary map, letting the user read the result.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Explaining Tokens — the Language and Currency of AI",
+        "url": "https://blogs.nvidia.com/blog/ai-tokens-explained/",
+        "type": "article"
+      },
+      {
+        "title": "What is Tokenization? Types, Use Cases, Implementation",
+        "url": "https://www.datacamp.com/blog/what-is-tokenization",
+        "type": "article"
+      }
+    ]
   },
   "dyn1LSioema-Bf9lLTgUZ": {
     "title": "Context Windows",
-    "description": "A context window is the chunk of text a large language model can read at one time. It is measured in tokens, which are pieces of words. If a model has a 4,000-token window, it can only “look at” up to about 3,000 words before it must forget or shorten earlier parts. New tokens push old ones out, like a sliding window moving over text. The window size sets hard limits on how long a prompt, chat history, or document can be. A small window forces you to keep inputs short or split them, while a large window lets the model follow longer stories and hold more facts. Choosing the right window size balances cost, speed, and how much detail the model can keep in mind at once.",
-    "links": []
+    "description": "A context window is the chunk of text a large language model can read at one time. It is measured in tokens, which are pieces of words. If a model has a 4,000-token window, it can only “look at” up to about 3,000 words before it must forget or shorten earlier parts. New tokens push old ones out, like a sliding window moving over text. The window size sets hard limits on how long a prompt, chat history, or document can be. A small window forces you to keep inputs short or split them, while a large window lets the model follow longer stories and hold more facts. Choosing the right window size balances cost, speed, and how much detail the model can keep in mind at once.\n\nNew techniques, like retrieval-augmented generation (RAG) and long-context transformers (e.g., Claude 3, Gemini 1.5), aim to extend usable context without hitting model limits directly.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a Context Window in AI?",
+        "url": "https://www.ibm.com/think/topics/context-window",
+        "type": "article"
+      },
+      {
+        "title": "Scaling Language Models with Retrieval-Augmented Generation (RAG)",
+        "url": "https://arxiv.org/abs/2005.11401",
+        "type": "article"
+      },
+      {
+        "title": "Long Context in Language Models - Anthropic's Claude 3",
+        "url": "https://www.anthropic.com/news/claude-3-family",
+        "type": "article"
+      }
+    ]
   },
   "1fiWPBV99E2YncqdCgUw2": {
     "title": "Token Based Pricing",
-    "description": "Token-based pricing is how many language-model services charge for use. A token is a small chunk of text, roughly four characters or part of a word. The service counts every token that goes into the model (your prompt) and every token that comes out (the reply). It then multiplies this total by a listed price per thousand tokens. Some plans set one price for input tokens and a higher or lower price for output tokens. Because the bill grows with each token, users often shorten prompts, trim extra words, or cap response length to spend less.",
-    "links": []
+    "description": "Token-based pricing is how many language-model services charge for use. A token is a small chunk of text, roughly four characters or part of a word. The service counts every token that goes into the model (your prompt) and every token that comes out (the reply). It then multiplies this total by a listed price per thousand tokens. Some plans set one price for input tokens and a higher or lower price for output tokens. Because the bill grows with each token, users often shorten prompts, trim extra words, or cap response length to spend less.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Explaining Tokens — the Language and Currency of AI",
+        "url": "https://blogs.nvidia.com/blog/ai-tokens-explained/",
+        "type": "article"
+      },
+      {
+        "title": "What Are AI Tokens?",
+        "url": "https://methodshop.com/what-are-ai-tokens/",
+        "type": "article"
+      },
+      {
+        "title": "Pricing - OpenAI",
+        "url": "https://openai.com/api/pricing/",
+        "type": "article"
+      }
+    ]
   },
   "L1zL1GzqjSAjF06pIIXhy": {
     "title": "Temperature",
-    "description": "Temperature is a setting that changes how random or predictable an AI model’s text output is. The value usually goes from 0 to 1, sometimes higher. A low temperature, close to 0, makes the model pick the most likely next word almost every time, so the answer is steady and safe but can feel dull or repetitive. A high temperature, like 0.9 or 1.0, lets the model explore less-likely word choices, which can give fresh and creative replies, but it may also add mistakes or drift off topic. By adjusting temperature, you balance reliability and creativity to fit the goal of your task.",
-    "links": []
+    "description": "Temperature is a setting that changes how random or predictable an AI model’s text output is. The value usually goes from 0 to 1, sometimes higher. A low temperature, close to 0, makes the model pick the most likely next word almost every time, so the answer is steady and safe but can feel dull or repetitive. A high temperature, like 0.9 or 1.0, lets the model explore less-likely word choices, which can give fresh and creative replies, but it may also add mistakes or drift off topic. By adjusting temperature, you balance reliability and creativity to fit the goal of your task.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Temperature Means in Natural Language Processing and AI",
+        "url": "https://thenewstack.io/what-temperature-means-in-natural-language-processing-and-ai/",
+        "type": "article"
+      },
+      {
+        "title": "LLM Temperature: How It Works and When You Should Use It",
+        "url": "https://www.vellum.ai/llm-parameters/temperature",
+        "type": "article"
+      },
+      {
+        "title": "What is LLM Temperature? - IBM",
+        "url": "https://www.ibm.com/think/topics/llm-temperature",
+        "type": "article"
+      },
+      {
+        "title": "How Temperature Settings Transform Your AI Agent's Responses",
+        "url": "https://docsbot.ai/article/how-temperature-settings-transform-your-ai-agents-responses",
+        "type": "article"
+      }
+    ]
   },
   "z_N-Y0zGkv8_qHPuVtimL": {
     "title": "Frequency Penalty",
-    "description": "Frequency penalty is a setting that tells a language model, “Stop repeating yourself.” As the model writes, it keeps track of how many times it has already used each word. A positive frequency-penalty value lowers the chance of picking a word again if it has been seen many times in the current reply. This helps cut down on loops like “very very very” or long blocks that echo the same phrase. A value of 0 turns the rule off, while higher numbers make the model avoid repeats more strongly. If the penalty is too high, the text may miss common words that are still needed, so you often start low (for example 0.2) and adjust. Frequency penalty works together with other controls such as temperature and top-p to shape output that is clear, varied, and not boring.",
-    "links": []
+    "description": "Frequency penalty is a setting that tells a language model, “Stop repeating yourself.” As the model writes, it keeps track of how many times it has already used each word. A positive frequency-penalty value lowers the chance of picking a word again if it has been seen many times in the current reply. This helps cut down on loops like “very very very” or long blocks that echo the same phrase. A value of 0 turns the rule off, while higher numbers make the model avoid repeats more strongly. If the penalty is too high, the text may miss common words that are still needed, so you often start low (for example 0.2) and adjust. Frequency penalty works together with other controls such as temperature and top-p to shape output that is clear, varied, and not boring.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Frequency Penalty Explanation",
+        "url": "https://docs.aipower.org/docs/ai-engine/openai/frequency-penalty",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Frequency Penalty and Presence Penalty",
+        "url": "https://medium.com/@the_tori_report/understanding-frequency-penalty-and-presence-penalty-how-to-fine-tune-ai-generated-text-e5e4f5e779cd",
+        "type": "article"
+      }
+    ]
   },
   "Vd8ycw8pW-ZKvg5WYFtoh": {
     "title": "Presence Penalty",
-    "description": "Presence penalty is a setting you can adjust when you ask a large language model to write. It pushes the model to choose words it has not used yet. Each time a word has already appeared, the model gets a small score cut for picking it again. A higher penalty gives bigger cuts, so the model looks for new words and fresh ideas. A lower penalty lets the model reuse words more often, which can help with repeats like rhymes or bullet lists. Tuning this control helps you steer the output toward either more variety or more consistency.",
-    "links": []
+    "description": "Presence penalty is a setting you can adjust when you ask a large language model to write. It pushes the model to choose words it has not used yet. Each time a word has already appeared, the model gets a small score cut for picking it again. A higher penalty gives bigger cuts, so the model looks for new words and fresh ideas. A lower penalty lets the model reuse words more often, which can help with repeats like rhymes or bullet lists. Tuning this control helps you steer the output toward either more variety or more consistency.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Presence Penalty and Frequency Penalty",
+        "url": "https://medium.com/@pushparajgenai2025/understanding-presence-penalty-and-frequency-penalty-in-openai-chat-completion-api-calls-2e3a22547b48",
+        "type": "article"
+      },
+      {
+        "title": "Difference between Frequency and Presence Penalties?",
+        "url": "https://community.openai.com/t/difference-between-frequency-and-presence-penalties/2777",
+        "type": "article"
+      },
+      {
+        "title": "LLM Parameters Explained: A Practical Guide with Examples",
+        "url": "https://learnprompting.org/blog/llm-parameters",
+        "type": "article"
+      }
+    ]
   },
   "icbp1NjurQfdM0dHnz6v2": {
     "title": "Top-p",
-    "description": "Top-p, also called nucleus sampling, is a setting that guides how an LLM picks its next word. The model lists many possible words and sorts them by probability. It then finds the smallest group of top words whose combined chance adds up to the chosen p value, such as 0.9. Only words inside this group stay in the running; the rest are dropped. The model picks one word from the kept group at random, weighted by their original chances. A lower p keeps only the very likely words, so output is safer and more focused. A higher p lets in less likely words, adding surprise and creativity but also more risk of error.",
-    "links": []
+    "description": "Top-p, also called nucleus sampling, is a setting that guides how an LLM picks its next word. The model lists many possible words and sorts them by probability. It then finds the smallest group of top words whose combined chance adds up to the chosen p value, such as 0.9. Only words inside this group stay in the running; the rest are dropped. The model picks one word from the kept group at random, weighted by their original chances. A lower p keeps only the very likely words, so output is safer and more focused. A higher p lets in less likely words, adding surprise and creativity but also more risk of error.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Nucleus Sampling",
+        "url": "https://nn.labml.ai/sampling/nucleus.html",
+        "type": "article"
+      },
+      {
+        "title": "Sampling Techniques in Large Language Models (LLMs)",
+        "url": "https://medium.com/@shashankag14/understanding-sampling-techniques-in-large-language-models-llms-dfc28b93f518",
+        "type": "article"
+      },
+      {
+        "title": "Temperature, top_p and top_k for chatbot responses",
+        "url": "https://community.openai.com/t/temperature-top-p-and-top-k-for-chatbot-responses/295542",
+        "type": "article"
+      }
+    ]
   },
   "K0G-Lw069jXUJwZqHtybd": {
     "title": "Stopping Criteria",
-    "description": "Stopping criteria tell the language model when to stop writing more text. Without them, the model could keep adding words forever, waste time, or spill past the point we care about. Common rules include a maximum number of tokens, a special end-of-sequence token, or a custom string such as “\\\\n\\\\n”. We can also stop when the answer starts to repeat or reaches a score that means it is off topic. Good stopping rules save cost, speed up replies, and avoid nonsense or unsafe content.",
-    "links": []
+    "description": "Stopping criteria tell the language model when to stop writing more text. Without them, the model could keep adding words forever, waste time, or spill past the point we care about. Common rules include a maximum number of tokens, a special end-of-sequence token, or a custom string such as `“\\n\\n”`. We can also stop when the answer starts to repeat or reaches a score that means it is off topic. Good stopping rules save cost, speed up replies, and avoid nonsense or unsafe content.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Defining Stopping Criteria in Large Language Models",
+        "url": "https://www.metriccoders.com/post/defining-stopping-criteria-in-large-language-models-a-practical-guide",
+        "type": "article"
+      },
+      {
+        "title": "Stopping Criteria for Decision Tree Algorithm and Tree Plots",
+        "url": "https://aieagle.in/stopping-criteria-for-decision-tree-algorithm-and-tree-plots/",
+        "type": "article"
+      }
+    ]
   },
   "DSJAhQhc1dQmBHQ8ZkTau": {
     "title": "Open Weight Models",
-    "description": "Open-weight models are neural networks whose trained parameters, also called weights, are shared with everyone. Anyone can download the files, run the model, fine-tune it, or build tools on top of it. The licence that comes with the model spells out what you are allowed to do. Some licences are very permissive and even let you use the model for commercial work. Others allow only research or personal projects. Because the weights are public, the community can inspect how the model works, check for bias, and suggest fixes. Open weights also lower costs, since teams do not have to train a large model from scratch. Well-known examples include BLOOM, Falcon, and Llama 2.",
-    "links": []
+    "description": "Open-weight models are neural networks whose trained parameters, also called weights, are shared with everyone. Anyone can download the files, run the model, fine-tune it, or build tools on top of it. The licence that comes with the model spells out what you are allowed to do. Some licences are very permissive and even let you use the model for commercial work. Others allow only research or personal projects. Because the weights are public, the community can inspect how the model works, check for bias, and suggest fixes. Open weights also lower costs, since teams do not have to train a large model from scratch. Well-known examples include BLOOM, Falcon, and Llama 2.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "BLOOM BigScience",
+        "url": "https://bigscience.huggingface.co/",
+        "type": "article"
+      },
+      {
+        "title": "Falcon LLM – Technology Innovation Institute (TII)",
+        "url": "https://falconllm.tii.ae/",
+        "type": "article"
+      },
+      {
+        "title": "Llama 2 – Meta's Official Announcement",
+        "url": "https://ai.meta.com/llama/",
+        "type": "article"
+      },
+      {
+        "title": "Hugging Face – Open LLM Leaderboard (Top Open Models)",
+        "url": "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard",
+        "type": "article"
+      },
+      {
+        "title": "EleutherAI – Open Research Collective (GPT-Neo, GPT-J, etc.)",
+        "url": "https://www.eleuther.ai/",
+        "type": "article"
+      }
+    ]
   },
   "tJYmEDDwK0LtEux-kwp9B": {
     "title": "Closed Weight Models",
-    "description": "Closed-weight models are AI systems whose trained parameters—the numbers that hold what the model has learned—are not shared with the public. You can send prompts to these models through an online service or a software kit, but you cannot download the weights, inspect them, or fine-tune them on your own computer. The company that owns the model keeps control and sets the rules for use, often through paid APIs or tight licences. This approach helps the owner protect trade secrets, reduce misuse, and keep a steady income stream. The downside is less freedom for users, higher costs over time, and limited ability to audit or adapt the model. Well-known examples include GPT-4, Claude, and Gemini.",
-    "links": []
+    "description": "Closed-weight models are AI systems whose trained parameters—the numbers that hold what the model has learned—are not shared with the public. You can send prompts to these models through an online service or a software kit, but you cannot download the weights, inspect them, or fine-tune them on your own computer. The company that owns the model keeps control and sets the rules for use, often through paid APIs or tight licences. This approach helps the owner protect trade secrets, reduce misuse, and keep a steady income stream. The downside is less freedom for users, higher costs over time, and limited ability to audit or adapt the model. Well-known examples include GPT-4, Claude, and Gemini.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Open-Source LLMs vs Closed LLMs",
+        "url": "https://hatchworks.com/blog/gen-ai/open-source-vs-closed-llms-guide/",
+        "type": "article"
+      },
+      {
+        "title": "2024 Comparison of Open-Source Vs Closed-Source LLMs",
+        "url": "https://blog.spheron.network/choosing-the-right-llm-2024-comparison-of-open-source-vs-closed-source-llms",
+        "type": "article"
+      },
+      {
+        "title": "Open AI's GPT-4",
+        "url": "https://openai.com/gpt-4",
+        "type": "article"
+      },
+      {
+        "title": "Claude",
+        "url": "https://www.anthropic.com/claude",
+        "type": "article"
+      },
+      {
+        "title": "Gemini",
+        "url": "https://deepmind.google/technologies/gemini/",
+        "type": "article"
+      }
+    ]
   },
   "i2NE6haX9-7mdoV5LQ3Ah": {
     "title": "Streamed vs Unstreamed Responses",
-    "description": "Streamed and unstreamed responses describe how an AI agent sends its answer to the user. With a streamed response, the agent starts sending words as soon as it generates them. The user sees the text grow on the screen in real time. This feels fast and lets the user stop or change the request early. It is useful for long answers and chat-like apps. An unstreamed response waits until the whole answer is ready, then sends it all at once. This makes the code on the client side simpler and is easier to cache or log, but the user must wait longer, especially for big outputs. Choosing between the two depends on the need for speed, the length of the answer, and how complex you want the client and server to be.",
-    "links": []
+    "description": "Streamed and unstreamed responses describe how an AI agent sends its answer to the user. With a streamed response, the agent starts sending words as soon as it generates them. The user sees the text grow on the screen in real time. This feels fast and lets the user stop or change the request early. It is useful for long answers and chat-like apps.\n\nAn unstreamed response waits until the whole answer is ready, then sends it all at once. This makes the code on the client side simpler and is easier to cache or log, but the user must wait longer, especially for big outputs. Choosing between the two depends on the need for speed, the length of the answer, and how complex you want the client and server to be.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Streaming Responses in AI: How AI Outputs Are Generated in Real Time",
+        "url": "https://dev.to/pranshu_kabra_fe98a73547a/streaming-responses-in-ai-how-ai-outputs-are-generated-in-real-time-18kb",
+        "type": "article"
+      },
+      {
+        "title": "AI for Web Devs: Faster Responses with HTTP Streaming",
+        "url": "https://austingil.com/ai-for-web-devs-streaming/",
+        "type": "article"
+      },
+      {
+        "title": "Master the OpenAI API: Stream Responses",
+        "url": "https://www.toolify.ai/gpts/master-the-openai-api-stream-responses-139447",
+        "type": "article"
+      }
+    ]
   },
   "N3yZfUxphxjiupqGpyaS9": {
     "title": "Reasoning vs Standard Models",
-    "description": "Reasoning models break a task into clear steps and follow a line of logic, while standard models give an answer in one quick move. A reasoning model might write down short notes, check each note, and then combine them to reach the final reply. This helps it solve math problems, plan actions, and spot errors that simple pattern matching would miss. A standard model depends on patterns it learned during training and often guesses the most likely next word. That works well for everyday chat, summaries, or common facts, but it can fail on tricky puzzles or tasks with many linked parts. Reasoning takes more time and computer power, yet it brings higher accuracy and makes the agent easier to debug because you can see its thought steps. Many new AI agents mix both styles: they use quick pattern recall for simple parts and switch to step-by-step reasoning when a goal needs deeper thought.",
-    "links": []
+    "description": "Reasoning models break a task into clear steps and follow a line of logic, while standard models give an answer in one quick move. A reasoning model might write down short notes, check each note, and then combine them to reach the final reply. This helps it solve math problems, plan actions, and spot errors that simple pattern matching would miss. A standard model depends on patterns it learned during training and often guesses the most likely next word. That works well for everyday chat, summaries, or common facts, but it can fail on tricky puzzles or tasks with many linked parts. Reasoning takes more time and computer power, yet it brings higher accuracy and makes the agent easier to debug because you can see its thought steps. Many new AI agents mix both styles: they use quick pattern recall for simple parts and switch to step-by-step reasoning when a goal needs deeper thought.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "url": "https://react-lm.github.io/",
+        "type": "article"
+      },
+      {
+        "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
+        "url": "https://learnprompting.org/docs/agents/react",
+        "type": "article"
+      }
+    ]
   },
   "5OW_6o286mj470ElFyJ_5": {
     "title": "Fine-tuning vs Prompt Engineering",
-    "description": "Fine-tuning and prompt engineering are two ways to get better answers from a large language model. Fine-tuning means you take an existing model and train it more on your own examples so it adapts to a narrow task. You need extra data, computer power, and time, but the model then learns the style and facts you want. Prompt engineering means you leave the model as it is and adjust the words you send to it. You give clear instructions, show examples, or set rules inside the prompt so the model follows them right away. This is faster, cheaper, and safer if you have no special data. Fine-tuning is best when you need deep knowledge of a field or a fixed voice across many calls. Prompt engineering is enough when you want quick control, small changes, or are still testing ideas.",
-    "links": []
+    "description": "Fine-tuning and prompt engineering are two ways to get better outputs from a language model. Fine-tuning means training an existing model further with your own examples so it adapts to specific tasks. It needs extra data, computing power, and time but creates deeply specialized models. Prompt engineering, in contrast, leaves the model unchanged and focuses on crafting better instructions or examples in the prompt itself. It is faster, cheaper, and safer when no custom data is available. Fine-tuning suits deep domain needs; prompt engineering fits quick control and prototyping.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "OpenAI Fine Tuning",
+        "url": "https://platform.openai.com/docs/guides/fine-tuning",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Engineering vs Prompt Tuning: A Detailed Explanation",
+        "url": "https://medium.com/@aabhi02/prompt-engineering-vs-prompt-tuning-a-detailed-explanation-19ea8ce62ac4",
+        "type": "article"
+      }
+    ]
   },
   "UIm54UmICKgep6s8Itcyv": {
     "title": "Embeddings and Vector Search",
-    "description": "Embeddings turn words, pictures, or other data into lists of numbers called vectors. Each vector keeps the meaning of the original item. Things with similar meaning get vectors that sit close together in this number space. Vector search scans a large set of vectors and finds the ones nearest to a query vector, even if the exact words differ. This lets AI agents match questions with answers, suggest related items, and link ideas quickly.",
-    "links": []
+    "description": "Embeddings turn words, pictures, or other data into lists of numbers called vectors. Each vector keeps the meaning of the original item. Things with similar meaning get vectors that sit close together in this number space. Vector search scans a large set of vectors and finds the ones nearest to a query vector, even if the exact words differ. This lets AI agents match questions with answers, suggest related items, and link ideas quickly.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "OpenAI Embeddings API Documentation",
+        "url": "https://platform.openai.com/docs/guides/embeddings/what-are-embeddings",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Embeddings and Vector Search (Pinecone Blog)",
+        "url": "https://www.pinecone.io/learn/vector-embeddings/",
+        "type": "article"
+      }
+    ]
   },
   "qwVQOwBTLA2yUgRISzC8k": {
     "title": "Understand the Basics of RAG",
-    "description": "RAG, short for Retrieval-Augmented Generation, is a way to make language models give better answers by letting them look things up before they reply. First, the system turns the user’s question into a search query and scans a knowledge source, such as a set of documents or a database. It then pulls back the most relevant passages, called “retrievals.” Next, the language model reads those passages and uses them, plus its own trained knowledge, to write the final answer. This mix of search and generation helps the model stay up to date, reduce guesswork, and cite real facts. Because it adds outside information on demand, RAG often needs less fine-tuning and can handle topics the base model never saw during training.",
-    "links": []
+    "description": "RAG, short for Retrieval-Augmented Generation, is a way to make language models give better answers by letting them look things up before they reply. First, the system turns the user’s question into a search query and scans a knowledge source, such as a set of documents or a database. It then pulls back the most relevant passages, called “retrievals.” Next, the language model reads those passages and uses them, plus its own trained knowledge, to write the final answer. This mix of search and generation helps the model stay up to date, reduce guesswork, and cite real facts. Because it adds outside information on demand, RAG often needs less fine-tuning and can handle topics the base model never saw during training.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is RAG in AI and How to Use It?",
+        "url": "https://www.v7labs.com/blog/what-is-rag",
+        "type": "article"
+      },
+      {
+        "title": "An Introduction to RAG and Simple & Complex RAG",
+        "url": "https://medium.com/enterprise-rag/an-introduction-to-rag-and-simple-complex-rag-9c3aa9bd017b",
+        "type": "article"
+      },
+      {
+        "title": "Learn RAG From Scratch",
+        "url": "https://www.youtube.com/watch?v=sVcwVQRHIc8",
+        "type": "video"
+      }
+    ]
   },
   "B8dzg61TGaknuruBgkEJd": {
     "title": "Pricing of Common Models",
-    "description": "When you use a large language model, you usually pay by the amount of text it reads and writes, counted in “tokens.” A token is about four characters or three-quarters of a word. Providers list a price per 1,000 tokens. For example, GPT-3.5 Turbo may cost around $0.002 per 1,000 tokens, while GPT-4 is much higher, such as $0.03 to $0.06 for prompts and $0.06 to $0.12 for replies. Smaller open-source models like Llama-2 can be free to use if you run them on your own computer, but you still pay for the hardware or cloud time. Vision or audio models often have extra fees because they use more compute. When planning costs, estimate the tokens in each call, multiply by the price, and add any hosting or storage charges.",
-    "links": []
+    "description": "When you use a large language model, you usually pay by the amount of text it reads and writes, counted in “tokens.” A token is about four characters or three-quarters of a word. Providers list a price per 1,000 tokens. For example, GPT-3.5 Turbo may cost around $0.002 per 1,000 tokens, while GPT-4 is much higher, such as $0.03 to $0.06 for prompts and $0.06 to $0.12 for replies. Smaller open-source models like Llama-2 can be free to use if you run them on your own computer, but you still pay for the hardware or cloud time. Vision or audio models often have extra fees because they use more compute. When planning costs, estimate the tokens in each call, multiply by the price, and add any hosting or storage charges.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "OpenAI Pricing",
+        "url": "https://openai.com/api/pricing/",
+        "type": "article"
+      },
+      {
+        "title": "Executive Guide To AI Agent Pricing",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2025/01/28/executive-guide-to-ai-agent-pricing-winning-strategies-and-models-to-drive-growth/",
+        "type": "article"
+      },
+      {
+        "title": "AI Pricing: How Much Does Artificial Intelligence Cost In 2025?",
+        "url": "https://www.internetsearchinc.com/ai-pricing-how-much-does-artificial-intelligence-cost/",
+        "type": "article"
+      }
+    ]
   },
   "aFZAm44nP5NefX_9TpT0A": {
     "title": "What are AI Agents?",
-    "description": "An AI agent is a computer program or robot that can sense its surroundings, think about what it senses, and then act to reach a goal. It gathers data through cameras, microphones, or software inputs, decides what the data means using rules or learned patterns, and picks the best action to move closer to its goal. After acting, it checks the results and learns from them, so it can do better next time. Chatbots, self-driving cars, and game characters are all examples.",
-    "links": []
+    "description": "An AI agent is a computer program or robot that can sense its surroundings, think about what it senses, and then act to reach a goal. It gathers data through cameras, microphones, or software inputs, decides what the data means using rules or learned patterns, and picks the best action to move closer to its goal. After acting, it checks the results and learns from them, so it can do better next time. Chatbots, self-driving cars, and game characters are all examples.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What are AI Agents? - Agents in Artificial Intelligence Explained",
+        "url": "https://aws.amazon.com/what-is/ai-agents/",
+        "type": "article"
+      },
+      {
+        "title": "AI Agents Explained in Simple Terms for Beginners",
+        "url": "https://www.geeky-gadgets.com/ai-agents-explained-for-beginners/",
+        "type": "article"
+      },
+      {
+        "title": "What are AI Agents?",
+        "url": "https://www.youtube.com/watch?v=F8NKVhkZZWI",
+        "type": "video"
+      }
+    ]
   },
   "2zsOUWJQ8e7wnoHmq1icG": {
     "title": "What are Tools?",
-    "description": "Tools are extra skills or resources that an AI agent can call on to finish a job. A tool can be anything from a web search API to a calculator, a database, or a language-translation engine. The agent sends a request to the tool, gets the result, and then uses that result to move forward. Tools let a small core model handle tasks that would be hard or slow on its own. They also help keep answers current, accurate, and grounded in real data. Choosing the right tool and knowing when to use it are key parts of building a smart agent.",
-    "links": []
+    "description": "Tools are extra skills or resources that an AI agent can call on to finish a job. A tool can be anything from a web search API to a calculator, a database, or a language-translation engine. The agent sends a request to the tool, gets the result, and then uses that result to move forward. Tools let a small core model handle tasks that would be hard or slow on its own. They also help keep answers current, accurate, and grounded in real data. Choosing the right tool and knowing when to use it are key parts of building a smart agent.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Compare 50+ AI Agent Tools in 2025 - AIMultiple",
+        "url": "https://research.aimultiple.com/ai-agent-tools/",
+        "type": "article"
+      },
+      {
+        "title": "AI Agents Explained in Simple Terms for Beginners",
+        "url": "https://www.geeky-gadgets.com/ai-agents-explained-for-beginners/",
+        "type": "article"
+      }
+    ]
   },
   "Eih4eybuYB3C2So8K0AT3": {
     "title": "Agent Loop",
-    "description": "An agent loop is the cycle that lets an AI agent keep working toward a goal. First, the agent gathers fresh data from its tools, sensors, or memory. Next, it updates its internal state and decides what to do, often by running a planning or reasoning step. Then it carries out the chosen action, such as calling an API, writing to a file, or sending a message. After acting, it checks the result and stores new information. The loop starts again with the latest data, so the agent can adjust to changes and improve over time. This fast repeat of observe–decide–act gives the agent its power.",
+    "description": "An agent loop is the cycle that lets an AI agent keep working toward a goal. First, the agent gathers fresh data from its tools, sensors, or memory. Next, it updates its internal state and decides what to do, often by running a planning or reasoning step. Then it carries out the chosen action, such as calling an API, writing to a file, or sending a message. After acting, it checks the result and stores new information. The loop starts again with the latest data, so the agent can adjust to changes and improve over time. This fast repeat of observe–decide–act gives the agent its power.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is an Agent Loop?",
@@ -127,293 +469,1198 @@
   },
   "LU76AhCYDjxdBhpMQ4eMU": {
     "title": "Perception / User Input",
-    "description": "Perception, also called user input, is the first step in an agent loop. The agent listens and gathers data from the outside world. This data can be text typed by a user, spoken words, camera images, sensor readings, or web content pulled through an API. The goal is to turn raw signals into a clear, usable form. The agent may clean the text, translate speech to text, resize an image, or drop noise from sensor values. Good perception means the agent starts its loop with facts, not guesses. If the input is wrong or unclear, later steps will also fail. So careful handling of perception keeps the whole agent loop on track.",
-    "links": []
+    "description": "Perception, also called user input, is the first step in an agent loop. The agent listens and gathers data from the outside world. This data can be text typed by a user, spoken words, camera images, sensor readings, or web content pulled through an API. The goal is to turn raw signals into a clear, usable form. The agent may clean the text, translate speech to text, resize an image, or drop noise from sensor values. Good perception means the agent starts its loop with facts, not guesses. If the input is wrong or unclear, later steps will also fail. So careful handling of perception keeps the whole agent loop on track.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Perception in AI: Understanding Its Types and Importance",
+        "url": "https://marktalks.com/perception-in-ai-understanding-its-types-and-importance/",
+        "type": "article"
+      },
+      {
+        "title": "What Is AI Agent Perception? - IBM",
+        "url": "https://www.ibm.com/think/topics/ai-agent-perception",
+        "type": "article"
+      }
+    ]
   },
   "ycPRgRYR4lEBQr_xxHKnM": {
     "title": "Reason and Plan",
-    "description": "Reason and Plan is the moment when an AI agent thinks before it acts. The agent starts with a goal and the facts it already knows. It looks at these facts and asks, “What do I need to do next to reach the goal?” It breaks the goal into smaller steps, checks if each step makes sense, and orders them in a clear path. The agent may also guess what could go wrong and prepare backup steps. Once the plan feels solid, the agent is ready to move on and take the first action.",
-    "links": []
+    "description": "Reason and Plan is the moment when an AI agent thinks before it acts. The agent starts with a goal and the facts it already knows. It looks at these facts and asks, “What do I need to do next to reach the goal?” It breaks the goal into smaller steps, checks if each step makes sense, and orders them in a clear path. The agent may also guess what could go wrong and prepare backup steps. Once the plan feels solid, the agent is ready to move on and take the first action.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "url": "https://react-lm.github.io/",
+        "type": "article"
+      },
+      {
+        "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
+        "url": "https://learnprompting.org/docs/agents/react",
+        "type": "article"
+      }
+    ]
   },
   "sHYd4KsKlmw5Im3nQ19W8": {
     "title": "Acting / Tool Invocation",
-    "description": "Acting, also called tool invocation, is the step where the AI chooses a tool and runs it to get real-world data or to change something. The agent looks at its current goal and the plan it just made. It then picks the best tool, such as a web search, a database query, or a calculator. The agent fills in the needed inputs and sends the call. The external system does the heavy work and returns a result. Acting ends when the agent stores that result so it can think about the next move.",
+    "description": "Acting, also called tool invocation, is the step where the AI chooses a tool and runs it to get real-world data or to change something. The agent looks at its current goal and the plan it just made. It then picks the best tool, such as a web search, a database query, or a calculator. The agent fills in the needed inputs and sends the call. The external system does the heavy work and returns a result. Acting ends when the agent stores that result so it can think about the next move.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What are Tools in AI Agents?",
         "url": "https://huggingface.co/learn/agents-course/en/unit1/tools",
+        "type": "article"
+      },
+      {
+        "title": "What is Tool Calling in Agents?",
+        "url": "https://www.useparagon.com/blog/ai-building-blocks-what-is-tool-calling-a-guide-for-pms",
         "type": "article"
       }
     ]
   },
   "ZJTrun3jK3zBGOTm1jdMI": {
     "title": "Observation & Reflection",
-    "description": "Observation and reflection form the thinking pause in an AI agent’s loop. First, the agent looks at the world around it, gathers fresh data, and sees what has changed. It then pauses to ask, “What does this new information mean for my goal?” During this short check, the agent updates its memory, spots errors, and ranks what matters most. These steps guide wiser plans and actions in the next cycle. Without careful observation and reflection, the agent would rely on old or wrong facts and soon drift off course.",
-    "links": []
+    "description": "Observation and reflection form the thinking pause in an AI agent’s loop. First, the agent looks at the world around it, gathers fresh data, and sees what has changed. It then pauses to ask, “What does this new information mean for my goal?” During this short check, the agent updates its memory, spots errors, and ranks what matters most. These steps guide wiser plans and actions in the next cycle. Without careful observation and reflection, the agent would rely on old or wrong facts and soon drift off course.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Best Practices for Prompting and Self-checking",
+        "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+        "type": "article"
+      },
+      {
+        "title": "Self-Reflective AI: Building Agents That Learn by Observing Themselves",
+        "url": "https://arxiv.org/abs/2302.14045",
+        "type": "article"
+      }
+    ]
   },
   "PPdAutqJF5G60Eg9lYBND": {
     "title": "Personal assistant",
-    "description": "A personal assistant AI agent is a smart program that helps one person manage daily tasks. It can check a calendar, set reminders, and send alerts so you never miss a meeting. It can read emails, highlight key points, and even draft quick replies. If you ask a question, it searches trusted sources and gives a short answer. It can order food, book rides, or shop online when you give simple voice or text commands. Because it learns your habits, it suggests the best time to work, rest, or travel. All these actions run in the background, saving you time and reducing stress.",
-    "links": []
+    "description": "A personal assistant AI agent is a smart program that helps one person manage daily tasks. It can check a calendar, set reminders, and send alerts so you never miss a meeting. It can read emails, highlight key points, and even draft quick replies. If you ask a question, it searches trusted sources and gives a short answer. It can order food, book rides, or shop online when you give simple voice or text commands. Because it learns your habits, it suggests the best time to work, rest, or travel. All these actions run in the background, saving you time and reducing stress.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "A Complete Guide on AI-powered Personal Assistants",
+        "url": "https://medium.com/@alexander_clifford/a-complete-guide-on-ai-powered-personal-assistants-with-examples-2f5cd894d566",
+        "type": "article"
+      },
+      {
+        "title": "9 Best AI Personal Assistants for Work, Chat and Home",
+        "url": "https://saner.ai/best-ai-personal-assistants/",
+        "type": "article"
+      }
+    ]
   },
   "PK8w31GlvtmAuU92sHaqr": {
     "title": "Code generation",
-    "description": "Code-generation agents take a plain language request, understand the goal, and then write or edit source code to meet it. They can build small apps, add features, fix bugs, refactor old code, write tests, or translate code from one language to another. This saves time for developers, helps beginners learn, and reduces human error. Teams use these agents inside code editors, chat tools, and automated pipelines. By handling routine coding tasks, the agents free people to focus on design, logic, and user needs.",
-    "links": []
+    "description": "Code-generation agents take a plain language request, understand the goal, and then write or edit source code to meet it. They can build small apps, add features, fix bugs, refactor old code, write tests, or translate code from one language to another. This saves time for developers, helps beginners learn, and reduces human error. Teams use these agents inside code editors, chat tools, and automated pipelines. By handling routine coding tasks, the agents free people to focus on design, logic, and user needs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Multi-Agent-based Code Generation",
+        "url": "https://arxiv.org/abs/2312.13010",
+        "type": "article"
+      },
+      {
+        "title": "From Prompt to Production: Github Blog",
+        "url": "https://github.blog/ai-and-ml/github-copilot/from-prompt-to-production-building-a-landing-page-with-copilot-agent-mode/",
+        "type": "article"
+      },
+      {
+        "title": "Github Copilot",
+        "url": "https://github.com/features/copilot",
+        "type": "article"
+      }
+    ]
   },
   "wKYEaPWNsR30TIpHaxSsq": {
     "title": "Data analysis",
-    "description": "AI agents can automate many steps of data analysis. They pull data from files, databases, or live streams and put it into a tidy shape. They spot missing entries, flag odd numbers, and fill gaps with smart guesses. Once the data is clean, the agent looks for patterns, such as spikes in sales or drops in sensor readings. It can build simple charts or full dashboards, saving hours of manual work. Some agents run basic statistics, while others use machine learning to forecast next week’s demand. They also send alerts if the numbers move outside set limits. This keeps people informed without constant checking.",
-    "links": []
+    "description": "AI agents can automate data analysis by pulling information from files, databases, or live streams. They clean the data by spotting missing values, outliers, and making smart corrections. After cleaning, agents find patterns like sales spikes or sensor drops and can build charts or dashboards. Some run basic statistics, others apply machine learning to predict trends. Agents can also send alerts if numbers go beyond set limits, helping people stay informed without constant monitoring.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How AI Will Transform Data Analysis in 2025",
+        "url": "https://www.devfi.com/ai-transform-data-analysis-2025/",
+        "type": "article"
+      },
+      {
+        "title": "How AI Has Changed The World Of Analytics And Data Science",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2025/01/28/how-ai-has-changed-the-world-of-analytics-and-data-science/k",
+        "type": "article"
+      }
+    ]
   },
   "5oLc-235bvKhApxzYFkEc": {
     "title": "Web Scraping / Crawling",
-    "description": "Web scraping and crawling let an AI agent collect data from many web pages without human help. The agent sends a request to a page, reads the HTML, and pulls out parts you ask for, such as prices, news headlines, or product details. It can then follow links on the page to reach more pages and repeat the same steps. This loop builds a large, up-to-date dataset in minutes or hours instead of days. Companies use it to track market prices, researchers use it to gather facts or trends, and developers use it to feed fresh data into other AI models. Good scraping code also respects site rules like robots.txt and avoids hitting servers too fast, so it works smoothly and fairly.",
-    "links": []
+    "description": "Web scraping and crawling let an AI agent collect data from many web pages without human help. The agent sends a request to a page, reads the HTML, and pulls out parts you ask for, such as prices, news headlines, or product details. It can then follow links on the page to reach more pages and repeat the same steps. This loop builds a large, up-to-date dataset in minutes or hours instead of days. Companies use it to track market prices, researchers use it to gather facts or trends, and developers use it to feed fresh data into other AI models. Good scraping code also respects site rules like robots.txt and avoids hitting servers too fast, so it works smoothly and fairly.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Crawl AI - Build Your AI With One Prompt",
+        "url": "https://www.crawlai.org/",
+        "type": "article"
+      },
+      {
+        "title": "AI-Powered Web Scraper with Crawl4AI and DeepSeek",
+        "url": "https://brightdata.com/blog/web-data/crawl4ai-and-deepseek-web-scraping",
+        "type": "article"
+      },
+      {
+        "title": "Best Web Scraping Tools for AI Applications",
+        "url": "https://www.thetoolnerd.com/p/best-web-scraping-tools-for-ai-applications",
+        "type": "article"
+      },
+      {
+        "title": "8 Best AI Web Scraping Tools I Tried - HubSpot Blog",
+        "url": "https://blog.hubspot.com/website/ai-web-scraping",
+        "type": "article"
+      }
+    ]
   },
   "ok8vN7VtCgyef5x6aoQaL": {
     "title": "NPC / Game AI",
-    "description": "Game studios often use AI agents to control non-player characters (NPCs). The agent watches the game state and picks actions such as moving, speaking, or fighting. It can switch tactics when the player changes strategy, so battles feel fresh instead of scripted. A quest giver can also use an agent to offer hints that fit the player’s progress. In open-world games, agents help crowds walk around objects, pick new goals, and react to danger, which makes towns feel alive. Designers save time because they write broad rules and let the agent fill in details instead of hand-coding every scene. Better NPC behavior keeps players engaged and raises replay value.",
-    "links": []
+    "description": "Game studios use AI agents to control non-player characters (NPCs). The agent observes the game state and decides actions like moving, speaking, or fighting. It can shift tactics when the player changes strategy, keeping battles fresh instead of predictable. A quest giver might use an agent to offer hints that fit the player’s progress. In open-world games, agents guide crowds to move around obstacles, set new goals, and react to threats, making towns feel alive. Designers save time by writing broad rules and letting agents fill in details instead of hand-coding every scene. Smarter NPC behavior keeps players engaged and boosts replay value.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Unity – AI for NPCs",
+        "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/artificial-intelligence-in-unreal-engine?application_version=5.3",
+        "type": "article"
+      },
+      {
+        "title": "AI-Driven NPCs: The Future of Gaming Explained",
+        "url": "https://www.capermint.com/blog/everything-you-need-to-know-about-non-player-character-npc/",
+        "type": "article"
+      }
+    ]
   },
   "Bn_BkthrVX_vOuwQzvPZa": {
     "title": "Max Length",
-    "description": "Max Length is the setting that tells a language model the biggest number of tokens it may write in one go. A token is a small piece of text, usually a short word or part of a word, so 100 tokens roughly equals a short paragraph. When the model reaches the limit, it stops and returns the answer. A small limit keeps replies short, saves money, and runs fast, but it can cut ideas in half. A large limit lets the model finish long thoughts, yet it needs more time, more processing power, and can wander off topic. Choose the value to fit the job: a tweet might need 50 tokens, a long guide might need 1,000 or more. Good tuning finds a balance between cost, speed, and clear, complete answers.",
-    "links": []
+    "description": "Max Length sets the maximum number of tokens a language model can generate in one reply. Tokens are pieces of text—roughly 100 tokens equals a short paragraph. A small limit saves time and cost but risks cutting answers short. A large limit allows full, detailed replies but needs more compute and can lose focus. Choose limits based on the task: short limits for tweets, longer ones for articles. Tuning Max Length carefully helps balance clarity, speed, and cost.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "OpenAI Token Usage",
+        "url": "https://platform.openai.com/docs/guides/gpt/managing-tokens",
+        "type": "article"
+      },
+      {
+        "title": "Size and Max Token Limits",
+        "url": "https://docs.anthropic.com/claude/docs/size-and-token-limits",
+        "type": "article"
+      },
+      {
+        "title": "Utilising Max Token Context Window of Anthropic Claude",
+        "url": "https://medium.com/@nampreetsingh/utilising-max-token-context-window-of-anthropic-claude-on-amazon-bedrock-7377d94b2dfa",
+        "type": "article"
+      },
+      {
+        "title": "Controlling the Length of OpenAI Model Responses",
+        "url": "https://help.openai.com/en/articles/5072518-controlling-the-length-of-openai-model-responses",
+        "type": "article"
+      },
+      {
+        "title": "Max Model Length in AI",
+        "url": "https://www.restack.io/p/ai-model-answer-max-model-length-cat-ai",
+        "type": "article"
+      },
+      {
+        "title": "Understanding ChatGPT/OpenAI Tokens",
+        "url": "https://youtu.be/Mo3NV5n1yZk",
+        "type": "video"
+      }
+    ]
   },
   "Y8EqzFx3qxtrSh7bWbbV8": {
     "title": "What is Prompt Engineering",
-    "description": "Prompt engineering is the skill of writing clear questions or instructions so that an AI system gives the answer you want. It means choosing the right words, adding enough detail, and giving examples when needed. A good prompt tells the AI what role to play, what style to use, and what facts to include or avoid. By testing and refining the prompt, you can improve the quality, accuracy, and usefulness of the AI’s response. In short, prompt engineering is guiding the AI with well-designed text so it can help you better.",
-    "links": []
+    "description": "Prompt engineering is the skill of writing clear questions or instructions so that an AI system gives the answer you want. It means choosing the right words, adding enough detail, and giving examples when needed. A good prompt tells the AI what role to play, what style to use, and what facts to include or avoid. By testing and refining the prompt, you can improve the quality, accuracy, and usefulness of the AI’s response. In short, prompt engineering is guiding the AI with well-designed text so it can help you better.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Prompt Engineering Roadmap",
+        "url": "https://roadmap.sh/prompt-engineering",
+        "type": "article"
+      },
+      {
+        "title": "What is Prompt Engineering? - AI Prompt Engineering Explained - AWS",
+        "url": "https://aws.amazon.com/what-is/prompt-engineering/",
+        "type": "article"
+      },
+      {
+        "title": "What is Prompt Engineering? A Detailed Guide For 2025",
+        "url": "https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication",
+        "type": "article"
+      }
+    ]
   },
   "qFKFM2qNPEN7EoD0V-1SM": {
     "title": "Be specific in what you want",
-    "description": "When you ask an AI to do something, clear and exact words help it give the answer you want. State the goal, the format, and any limits up front. Say who the answer is for, how long it should be, and what to leave out. If numbers, dates, or sources matter, name them. For example, rather than “Explain World War II,” try “List three key events of World War II with dates and one short fact for each.” Being this precise cuts down on guesswork, avoids unwanted extra detail, and saves time by reducing follow-up questions.",
-    "links": []
+    "description": "When you ask an AI to do something, clear and exact words help it give the answer you want. State the goal, the format, and any limits up front. Say who the answer is for, how long it should be, and what to leave out. If numbers, dates, or sources matter, name them. For example, rather than “Explain World War II,” try “List three key events of World War II with dates and one short fact for each.” Being this precise cuts down on guesswork, avoids unwanted extra detail, and saves time by reducing follow-up questions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/",
+        "type": "article"
+      },
+      {
+        "title": "AI Prompting Examples, Templates, and Tips For Educators",
+        "url": "https://honorlock.com/blog/education-ai-prompt-writing/",
+        "type": "article"
+      },
+      {
+        "title": "How to Ask AI for Anything: The Art of Prompting",
+        "url": "https://sixtyandme.com/using-ai-prompts/",
+        "type": "article"
+      }
+    ]
   },
   "6I42CoeWX-kkFXTKAY7rw": {
     "title": "Provide additional context",
-    "description": "Provide additional context means giving the AI enough background facts, constraints, and goals so it can reply in the way you need. Start by naming the topic and the purpose of the answer. Add who the answer is for, the tone you want, and any limits such as length, format, or style. List key facts, data, or examples that matter to the task. This extra detail stops the model from guessing and keeps replies on target. Think of it like guiding a new teammate: share the details they need, but keep them short and clear.",
-    "links": []
+    "description": "Provide additional context means giving the AI enough background facts, constraints, and goals so it can reply in the way you need. Start by naming the topic and the purpose of the answer. Add who the answer is for, the tone you want, and any limits such as length, format, or style. List key facts, data, or examples that matter to the task. This extra detail stops the model from guessing and keeps replies on target. Think of it like guiding a new teammate: share the details they need, but keep them short and clear.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Context in Prompt Engineering?",
+        "url": "https://www.godofprompt.ai/blog/what-is-context-in-prompt-engineering",
+        "type": "article"
+      },
+      {
+        "title": "The Importance of Context for Reliable AI Systems",
+        "url": "https://medium.com/mathco-ai/the-importance-of-context-for-reliable-ai-systems-and-how-to-provide-context-009bd1ac7189/",
+        "type": "article"
+      },
+      {
+        "title": "Context Engineering: Why Feeding AI the Right Context Matters",
+        "url": "https://inspirednonsense.com/context-engineering-why-feeding-ai-the-right-context-matters-353e8f87d6d3",
+        "type": "article"
+      }
+    ]
   },
   "sUwdtOX550tSdceaeFPmF": {
     "title": "Use relevant technical terms",
-    "description": "When a task involves a special field such as law, medicine, or computer science, include the correct domain words in your prompt so the AI knows exactly what you mean. Ask for “O(n log n) sorting algorithms” instead of just “fast sorts,” or “HTTP status code 404” instead of “page not found error.” The right term narrows the topic, removes guesswork, and points the model toward the knowledge base you need. It also keeps the answer at the right level, because the model sees you understand the field and will reply with matching depth. Check spelling and letter case; “SQL” and “sql” are seen the same, but “Sequel” is not. Do not overload the prompt with buzzwords—add only the words that truly matter. The goal is clear language plus the exact technical labels the subject uses.",
-    "links": []
+    "description": "When a task involves a special field such as law, medicine, or computer science, include the correct domain words in your prompt so the AI knows exactly what you mean. Ask for “O(n log n) sorting algorithms” instead of just “fast sorts,” or “HTTP status code 404” instead of “page not found error.” The right term narrows the topic, removes guesswork, and points the model toward the knowledge base you need. It also keeps the answer at the right level, because the model sees you understand the field and will reply with matching depth. Check spelling and letter case; “SQL” and “sql” are seen the same, but “Sequel” is not. Do not overload the prompt with buzzwords—add only the words that truly matter. The goal is clear language plus the exact technical labels the subject uses.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "AI Terms Glossary: AI Terms To Know In 2024",
+        "url": "https://www.moveworks.com/us/en/resources/ai-terms-glossary",
+        "type": "article"
+      },
+      {
+        "title": "15 Essential AI Agent Terms You Must Know",
+        "url": "https://shivammore.medium.com/15-essential-ai-agent-terms-you-must-know-6bfc2f332f6d",
+        "type": "article"
+      },
+      {
+        "title": "AI Agent Examples & Use Cases: Real Applications in 2025",
+        "url": "https://eastgate-software.com/ai-agent-examples-use-cases-real-applications-in-2025/",
+        "type": "article"
+      }
+    ]
   },
   "yulzE4ZNLhXOgHhG7BtZQ": {
     "title": "Use Examples in your Prompt",
-    "description": "A clear way to guide an AI is to place one or two short samples inside your prompt. Show a small input and the exact output you expect. The AI studies these pairs and copies their pattern. Use plain words in the sample, keep the format steady, and label each part so the model knows which is which. If you need a list, show a list; if you need a table, include a small table. Good examples cut guesswork, reduce errors, and save you from writing long rules.",
-    "links": []
+    "description": "A clear way to guide an AI is to place one or two short samples inside your prompt. Show a small input and the exact output you expect. The AI studies these pairs and copies their pattern. Use plain words in the sample, keep the format steady, and label each part so the model knows which is which. If you need a list, show a list; if you need a table, include a small table. Good examples cut guesswork, reduce errors, and save you from writing long rules.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "10 Real-World AI Agent Examples in 2025",
+        "url": "https://www.chatbase.co/blog/ai-agent-examples",
+        "type": "article"
+      },
+      {
+        "title": "GPT-4.1 Prompting Guide",
+        "url": "https://cookbook.openai.com/examples/gpt4-1_prompting_guide",
+        "type": "article"
+      },
+      {
+        "title": "AI Agent Examples & Use Cases: Real Applications in 2025",
+        "url": "https://eastgate-software.com/ai-agent-examples-use-cases-real-applications-in-2025/",
+        "type": "article"
+      }
+    ]
   },
   "noTuUFnHSBzn7GKG9UZEi": {
     "title": "Iterate and Test your Prompts",
-    "description": "After you write a first prompt, treat it as a draft, not the final version. Run it with the AI, check the output, and note what is missing, wrong, or confusing. Change one thing at a time, such as adding an example, a limit on length, or a tone request. Test again and see if the result gets closer to what you want. Keep a record of each change and its effect, so you can learn patterns that work. Stop when the output is clear, correct, and repeatable. This loop of try, observe, adjust, and retry turns a rough prompt into a strong one.",
-    "links": []
+    "description": "After you write a first prompt, treat it as a draft, not the final version. Run it with the AI, check the output, and note what is missing, wrong, or confusing. Change one thing at a time, such as adding an example, a limit on length, or a tone request. Test again and see if the result gets closer to what you want. Keep a record of each change and its effect, so you can learn patterns that work. Stop when the output is clear, correct, and repeatable. This loop of try, observe, adjust, and retry turns a rough prompt into a strong one.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Prompt Engineering Best Practices",
+        "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/",
+        "type": "course"
+      },
+      {
+        "title": "Master Iterative Prompting: A Guide",
+        "url": "https://blogs.vreamer.space/master-iterative-prompting-a-guide-to-more-effective-interactions-with-ai-50a736eaec38",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Engineering: The Iterative Process",
+        "url": "https://www.youtube.com/watch?v=dOxUroR57xs",
+        "type": "video"
+      }
+    ]
   },
   "wwHHlEoPAx0TLxbtY6nMA": {
     "title": "Specify Length, format etc",
-    "description": "When you give a task to an AI, make clear how long the answer should be and what shape it must take. Say “Write 120 words” or “Give the steps as a numbered list.” If you need a table, state the column names and order. If you want bullet points, mention that. Telling the AI to use plain text, JSON, or markdown stops guesswork and saves time. Clear limits on length keep the reply focused. A fixed format makes it easier for people or other software to read and use the result. Always put these rules near the start of your prompt so the AI sees them as important.",
-    "links": []
+    "description": "When you give a task to an AI, make clear how long the answer should be and what shape it must take. Say “Write 120 words” or “Give the steps as a numbered list.” If you need a table, state the column names and order. If you want bullet points, mention that. Telling the AI to use plain text, JSON, or markdown stops guesswork and saves time. Clear limits on length keep the reply focused. A fixed format makes it easier for people or other software to read and use the result. Always put these rules near the start of your prompt so the AI sees them as important.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Mastering Prompt Engineering: Format, Length, and Audience",
+        "url": "https://techlasi.com/savvy/mastering-prompt-engineering-format-length-and-audience-examples-for-2024/",
+        "type": "article"
+      },
+      {
+        "title": "Ultimate Guide to Prompt Engineering",
+        "url": "https://promptdrive.ai/prompt-engineering/",
+        "type": "article"
+      }
+    ]
   },
   "qakbxB8xe7Y8gejC5cZnK": {
     "title": "Tool Definition",
-    "description": "A tool is any skill or function that an AI agent can call to get a job done. It can be as simple as a calculator for math or as complex as an API that fetches live weather data. Each tool has a name, a short description of what it does, and a clear list of the inputs it needs and the outputs it returns. The agent’s planner reads this definition to decide when to use the tool. Good tool definitions are precise and leave no room for doubt, so the agent will not guess or misuse them. They also set limits, like how many times a tool can be called or how much data can be pulled, which helps control cost and errors. Think of a tool definition as a recipe card the agent follows every time it needs that skill.",
-    "links": []
+    "description": "A tool is any skill or function that an AI agent can call to get a job done. It can be as simple as a calculator for math or as complex as an API that fetches live weather data. Each tool has a name, a short description of what it does, and a clear list of the inputs it needs and the outputs it returns. The agent’s planner reads this definition to decide when to use the tool. Good tool definitions are precise and leave no room for doubt, so the agent will not guess or misuse them. They also set limits, like how many times a tool can be called or how much data can be pulled, which helps control cost and errors. Think of a tool definition as a recipe card the agent follows every time it needs that skill.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding the Agent Function in AI: Key Roles and Responsibilities",
+        "url": "https://pingax.com/ai/agent/function/understanding-the-agent-function-in-ai-key-roles-and-responsibilities/",
+        "type": "article"
+      },
+      {
+        "title": "What is an AI Tool?",
+        "url": "https://www.synthesia.io/glossary/ai-tool",
+        "type": "article"
+      }
+    ]
   },
   "kBtqT8AduLoYDWopj-V9_": {
     "title": "Web Search",
-    "description": "Web search lets an AI agent pull fresh facts, news, and examples from the internet while it is working. The agent turns a user request into search words, sends them to a search engine, and reads the list of results. It then follows the most promising links, grabs the page text, and picks out the parts that answer the task. This helps the agent handle topics that were not in its training data, update old knowledge, or double-check details. Web search covers almost any subject and is much faster than manual research, but the agent must watch for ads, bias, or wrong pages and cross-check sources to stay accurate.",
-    "links": []
+    "description": "Web search lets an AI agent pull fresh facts, news, and examples from the internet while it is working. The agent turns a user request into search words, sends them to a search engine, and reads the list of results. It then follows the most promising links, grabs the page text, and picks out the parts that answer the task. This helps the agent handle topics that were not in its training data, update old knowledge, or double-check details. Web search covers almost any subject and is much faster than manual research, but the agent must watch for ads, bias, or wrong pages and cross-check sources to stay accurate.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "8 Best AI Search Engines for 2025",
+        "url": "https://usefulai.com/tools/ai-search-engines",
+        "type": "article"
+      },
+      {
+        "title": "Web Search Agent - PraisonAI Documentation",
+        "url": "https://docs.praison.ai/agents/websearch",
+        "type": "article"
+      }
+    ]
   },
   "mS0EVCkWuPN_GkVPng4A2": {
     "title": "Code Execution / REPL",
-    "description": "Code Execution or REPL (Read-Eval-Print Loop) lets an AI agent run small pieces of code on demand, see the result right away, and use that result to decide what to do next. The agent “reads” the code, “evaluates” it in a safe sandbox, “prints” the output, and then loops back for more input. With this tool the agent can test ideas, perform math, transform text, call APIs, or inspect data without waiting for a full build or deployment. Python, JavaScript, or even shell commands are common choices because they start fast and have many libraries. Quick feedback helps the agent catch errors early and refine its plan step by step. Sandboxing keeps the host system safe by blocking dangerous actions such as deleting files or making forbidden network calls. Overall, a Code Execution / REPL tool gives the agent a fast, flexible workbench for problem-solving.",
-    "links": []
+    "description": "Code Execution or REPL (Read-Eval-Print Loop) lets an AI agent run small pieces of code on demand, see the result right away, and use that result to decide what to do next. The agent “reads” the code, “evaluates” it in a safe sandbox, “prints” the output, and then loops back for more input. With this tool the agent can test ideas, perform math, transform text, call APIs, or inspect data without waiting for a full build or deployment. Python, JavaScript, or even shell commands are common choices because they start fast and have many libraries. Quick feedback helps the agent catch errors early and refine its plan step by step. Sandboxing keeps the host system safe by blocking dangerous actions such as deleting files or making forbidden network calls. Overall, a Code Execution / REPL tool gives the agent a fast, flexible workbench for problem-solving.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a REPL?",
+        "url": "https://docs.replit.com/getting-started/intro-replit",
+        "type": "article"
+      },
+      {
+        "title": "Code Execution AI Agent",
+        "url": "https://docs.praison.ai/features/codeagent",
+        "type": "article"
+      },
+      {
+        "title": "Building an AI Agent's Code Execution Environment",
+        "url": "https://murraycole.com/posts/ai-code-execution-environment",
+        "type": "article"
+      },
+      {
+        "title": "Python Code Tool",
+        "url": "https://python.langchain.com/docs/integrations/tools/python/",
+        "type": "article"
+      }
+    ]
   },
   "sV1BnA2-qBnXoKpUn-8Ub": {
     "title": "Database Queries",
-    "description": "Database queries let an AI agent fetch, add, change, or remove data stored in a database. The agent sends a request written in a query language, most often SQL. The database engine then looks through its tables and returns only the rows and columns that match the rules in the request. With this tool, the agent can answer questions that need up-to-date numbers, user records, or other stored facts. It can also write new entries or adjust old ones to keep the data current. Because queries work in real time and follow clear rules, they give the agent a reliable way to handle large sets of structured information.",
-    "links": []
+    "description": "Database queries let an AI agent fetch, add, change, or remove data stored in a database. The agent sends a request written in a query language, most often SQL. The database engine then looks through its tables and returns only the rows and columns that match the rules in the request. With this tool, the agent can answer questions that need up-to-date numbers, user records, or other stored facts. It can also write new entries or adjust old ones to keep the data current. Because queries work in real time and follow clear rules, they give the agent a reliable way to handle large sets of structured information.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Building Your Own Database Agent",
+        "url": "https://www.deeplearning.ai/short-courses/building-your-own-database-agent/",
+        "type": "article"
+      }
+    ]
   },
   "52qxjZILV-X1isup6dazC": {
     "title": "API Requests",
-    "description": "API requests let an AI agent ask another service for data or for an action. The agent builds a short message that follows the service’s rules, sends it over the internet, and waits for a reply. For example, it can call a weather API to get today’s forecast or a payment API to charge a customer. Each request has a method like GET or POST, a URL, and often a small block of JSON with needed details. The service answers with another JSON block that the agent reads and uses. Because API requests are fast and clear, they are a common tool for connecting the agent to many other systems without extra work.",
-    "links": []
+    "description": "API requests let an AI agent ask another service for data or for an action. The agent builds a short message that follows the service’s rules, sends it over the internet, and waits for a reply. For example, it can call a weather API to get today’s forecast or a payment API to charge a customer. Each request has a method like GET or POST, a URL, and often a small block of JSON with needed details. The service answers with another JSON block that the agent reads and uses. Because API requests are fast and clear, they are a common tool for connecting the agent to many other systems without extra work.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Introduction to APIs - MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Introduction_to_APIs",
+        "type": "article"
+      },
+      {
+        "title": "How APIs Power AI Agents: A Comprehensive Guide",
+        "url": "https://blog.treblle.com/api-guide-for-ai-agents/",
+        "type": "article"
+      }
+    ]
   },
   "qaNr5I-NQPnfrRH7ynGTl": {
     "title": "Email / Slack / SMS",
-    "description": "Email, Slack, and SMS are message channels an AI agent can use to act on tasks and share updates. The agent writes and sends emails to give detailed reports or collect files. It posts to Slack to chat with a team, answer questions, or trigger alerts inside a workspace. It sends SMS texts for quick notices such as reminders, confirmations, or warnings when a fast response is needed. By picking the right channel, the agent reaches users where they already communicate, makes sure important information arrives on time, and can even gather replies to keep a task moving forward.",
-    "links": []
+    "description": "Email, Slack, and SMS are message channels an AI agent can use to act on tasks and share updates. The agent writes and sends emails to give detailed reports or collect files. It posts to Slack to chat with a team, answer questions, or trigger alerts inside a workspace. It sends SMS texts for quick notices such as reminders, confirmations, or warnings when a fast response is needed. By picking the right channel, the agent reaches users where they already communicate, makes sure important information arrives on time, and can even gather replies to keep a task moving forward.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Twilio Messaging API",
+        "url": "https://www.twilio.com/docs/usage/api",
+        "type": "article"
+      },
+      {
+        "title": "Slack AI Agents",
+        "url": "https://slack.com/ai-agents",
+        "type": "article"
+      }
+    ]
   },
   "BoJqZvdGam4cd6G6yK2IV": {
     "title": "File System Access",
-    "description": "File system access lets an AI agent read, create, change, or delete files and folders on a computer or server. With this power, the agent can open a text file to pull data, write a new report, save logs, or tidy up old files without human help. It can also move files between folders to keep things organised. This tool is useful for tasks such as data processing, report generation, and backup jobs. Strong safety checks are needed so the agent touches only the right files, avoids private data, and cannot harm the system by mistake.",
-    "links": []
+    "description": "File system access lets an AI agent read, create, change, or delete files and folders on a computer or server. With this power, the agent can open a text file to pull data, write a new report, save logs, or tidy up old files without human help. It can also move files between folders to keep things organized. This tool is useful for tasks such as data processing, report generation, and backup jobs. Strong safety checks are needed so the agent touches only the right files, avoids private data, and cannot harm the system by mistake.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Filesystem MCP server for AI Agents",
+        "url": "https://playbooks.com/mcp/mateicanavra-filesystem",
+        "type": "article"
+      },
+      {
+        "title": "File System Access API",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API",
+        "type": "article"
+      },
+      {
+        "title": "Understanding File Permissions and Security",
+        "url": "https://linuxize.com/post/understanding-linux-file-permissions/",
+        "type": "article"
+      },
+      {
+        "title": "How File Systems Work?",
+        "url": "https://www.youtube.com/watch?v=KN8YgJnShPM",
+        "type": "video"
+      }
+    ]
   },
   "TBH_DZTAfR8Daoh-njNFC": {
     "title": "What is Agent Memory?",
-    "description": "Agent memory is the part of an AI agent that keeps track of what has already happened. It stores past user messages, facts the agent has learned, and its own previous steps. This helps the agent remember goals, user likes and dislikes, and important details across turns or sessions. Memory can be short-term, lasting only for one conversation, or long-term, lasting across many. With a good memory the agent avoids repeating questions, stays consistent, and plans better actions. Without it, the agent would forget everything each time and feel unfocused.",
-    "links": []
+    "description": "Agent memory is the part of an AI agent that keeps track of what has already happened. It stores past user messages, facts the agent has learned, and its own previous steps. This helps the agent remember goals, user likes and dislikes, and important details across turns or sessions. Memory can be short-term, lasting only for one conversation, or long-term, lasting across many. With a good memory the agent avoids repeating questions, stays consistent, and plans better actions. Without it, the agent would forget everything each time and feel unfocused.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Agentic Memory for LLM Agents",
+        "url": "https://arxiv.org/abs/2502.12110",
+        "type": "article"
+      },
+      {
+        "title": "Memory Management in AI Agents",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/",
+        "type": "article"
+      },
+      {
+        "title": "Storing and Retrieving Knowledge for Agents",
+        "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/",
+        "type": "article"
+      },
+      {
+        "title": "Short-Term vs Long-Term Memory in AI Agents",
+        "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/",
+        "type": "article"
+      },
+      {
+        "title": "Building Brain-Like Memory for AI Agents",
+        "url": "https://www.youtube.com/watch?v=VKPngyO0iKg",
+        "type": "video"
+      }
+    ]
   },
   "M3U6RfIqaiut2nuOibY8W": {
     "title": "Short Term  Memory",
-    "description": "Short-term memory lets an AI agent hold recent facts while it works on a task. It keeps chat history, sensor readings, or current goals for a short time, often only for the length of one session. With this memory the agent can follow a user’s last request, track the next step in a plan, or keep variables needed for quick reasoning. Once the task ends or enough time passes, most of the stored items are cleared or moved to long-term memory. Because the data is small and brief, short-term memory is fast to read and write, which helps the agent react without delay. Common ways to build it include using a sliding window over recent messages, a small key-value store, or hidden states in a neural network. Good design of short-term memory prevents the agent from forgetting vital details too soon while avoiding overload with useless data.",
-    "links": []
+    "description": "Short term memory are the facts which are passed as a part of the prompt to the LLM e.g. there might be a prompt like below:\n\n    Users Profile:\n    - name: {name}\n    - age: {age}\n    - expertise: {expertise}\n    \n    User is currently learning about {current_topic}. User has some goals in mind which are:\n    - {goal_1}\n    - {goal_2}\n    - {goal_3}\n    \n    Help the user achieve the goals.\n    \n\nNotice how we injected the user's profile, current topic and goals in the prompt. These are all short term memories.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Memory Management in AI Agents",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/",
+        "type": "article"
+      },
+      {
+        "title": "Build Smarter AI Agents: Manage Short-term and Long-term Memory",
+        "url": "https://redis.io/blog/build-smarter-ai-agents-manage-short-term-and-long-term-memory-with-redis/",
+        "type": "article"
+      },
+      {
+        "title": "Storing and Retrieving Knowledge for Agents",
+        "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/",
+        "type": "article"
+      },
+      {
+        "title": "Short-Term vs Long-Term Memory in AI Agents",
+        "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/",
+        "type": "article"
+      },
+      {
+        "title": "Building Brain-Like Memory for AI Agents",
+        "url": "https://www.youtube.com/watch?v=VKPngyO0iKg",
+        "type": "video"
+      }
+    ]
   },
   "Ue633fz6Xu2wa2-KOAtdP": {
     "title": "Long Term Memory",
-    "description": "Long term memory in an AI agent is the part of its storage where information is kept for long periods so it can be used again in the future. It works like a notebook that the agent can write to and read from whenever needed. The agent saves facts, past events, user preferences, and learned skills in this space. When a similar event happens later, the agent looks up this stored data to make better choices and respond in a consistent way. Long term memory lets the agent grow smarter over time because it does not forget important details after the current task ends. This memory usually lives in a database or file system and may include text, numbers, or compressed states of past conversations.",
-    "links": []
+    "description": "Long term memory in an AI agent stores important information for future use, like a digital notebook. It saves facts, past events, user preferences, and learned skills so the agent can make smarter and more consistent decisions over time. Unlike short-term memory, this data survives across sessions. When a similar situation comes up, the agent can look back and use what it already knows. Long term memory usually lives in a database, file system, or vector store and may hold text, numbers, embeddings, or past conversation states. Good management of long-term memory is key for building agents that feel personalized and get better with experience.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Long Term Memory in AI Agents",
+        "url": "https://medium.com/@alozie_igbokwe/ai-101-long-term-memory-in-ai-agents-35f87f2d0ce0",
+        "type": "article"
+      },
+      {
+        "title": "Memory Management in AI Agents",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/",
+        "type": "article"
+      },
+      {
+        "title": "Storing and Retrieving Knowledge for Agents",
+        "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/",
+        "type": "article"
+      },
+      {
+        "title": "Short-Term vs Long-Term Memory in AI Agents",
+        "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/",
+        "type": "article"
+      },
+      {
+        "title": "Building Brain-Like Memory for AI Agents",
+        "url": "https://www.youtube.com/watch?v=VKPngyO0iKg",
+        "type": "video"
+      }
+    ]
   },
   "EfCCNqLMJpWKKtamUa5gK": {
     "title": "Episodic vs Semantic Memory",
-    "description": "Agent memory often has two parts. Episodic memory stores single events. It keeps data about what happened, when it happened, and who or what was involved. This lets the agent recall a past step-by-step experience, like a diary entry. Semantic memory stores facts that stay the same across time. It holds rules, concepts, and meanings, like the statement “Paris is the capital of France.” The key difference is time and context: episodic memory is tied to a specific moment, while semantic memory is timeless knowledge. Together they help the agent both remember past actions and use general truths to plan new ones.",
-    "links": []
+    "description": "Agent memory often has two parts. Episodic memory is relevant to the context of the current conversation and may be lost after the conversation ends. Semantic memory is relevant to the broader knowledge of the agent and is persistent.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is AI Agent Memory? - IBM",
+        "url": "https://www.ibm.com/think/topics/ai-agent-memory",
+        "type": "article"
+      },
+      {
+        "title": "Episodic Memory vs. Semantic Memory: The Key Differences",
+        "url": "https://www.magneticmemorymethod.com/episodic-vs-semantic-memory/",
+        "type": "article"
+      },
+      {
+        "title": "Memory Systems in LangChain",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/",
+        "type": "article"
+      }
+    ]
   },
   "wkS4yOJ3JdZQE_yBID8K7": {
     "title": "RAG and Vector Databases",
-    "description": "RAG, short for Retrieval-Augmented Generation, lets an AI agent pull facts from stored data each time it answers. The data sits in a vector database. In that database, every text chunk is turned into a number list called a vector. Similar ideas create vectors that lie close together, so the agent can find related chunks fast. When the user asks a question, the agent turns the question into its own vector, finds the nearest chunks, and reads them. It then writes a reply that mixes the new prompt with those chunks. Because the data store can hold a lot of past chats, documents, or notes, this process gives the agent a working memory without stuffing everything into the prompt. It lowers token cost, keeps answers on topic, and allows the memory to grow over time.",
-    "links": []
+    "description": "RAG, short for Retrieval-Augmented Generation, lets an AI agent pull facts from stored data each time it answers. The data sits in a vector database. In that database, every text chunk is turned into a number list called a vector. Similar ideas create vectors that lie close together, so the agent can find related chunks fast. When the user asks a question, the agent turns the question into its own vector, finds the nearest chunks, and reads them. It then writes a reply that mixes the new prompt with those chunks. Because the data store can hold a lot of past chats, documents, or notes, this process gives the agent a working memory without stuffing everything into the prompt. It lowers token cost, keeps answers on topic, and allows the memory to grow over time.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Retrieval-Augmented Generation (RAG) and Vector Databases",
+        "url": "https://pureai.com/Articles/2025/03/03/Understanding-RAG.aspx",
+        "type": "article"
+      },
+      {
+        "title": "Build Advanced Retrieval-Augmented Generation Systems",
+        "url": "https://learn.microsoft.com/en-us/azure/developer/ai/advanced-retrieval-augmented-generation",
+        "type": "article"
+      },
+      {
+        "title": "What Is Retrieval-Augmented Generation, aka RAG?",
+        "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+        "type": "article"
+      }
+    ]
   },
   "QJqXHV8VHPTnfYfmKPzW7": {
     "title": "User Profile Storage",
-    "description": "User profile storage is the part of an AI agent’s memory that holds stable facts about each user, such as name, age group, language, past choices, and long-term goals. The agent saves this data in a file or small database so it can load it each time the same user returns. By keeping the profile separate from short-term conversation logs, the agent can remember preferences without mixing them with temporary chat history. The profile is updated only when the user states a new lasting preference or when old information changes, which helps prevent drift or bloat. Secure storage, access controls, and encryption protect the data so that only the agent and the user can see it. Good profile storage lets the agent give answers that feel personal and consistent.",
-    "links": []
+    "description": "User profile storage is the part of an AI agent’s memory that holds stable facts about each user, such as name, age group, language, past choices, and long-term goals. The agent saves this data in a file or small database so it can load it each time the same user returns. By keeping the profile separate from short-term conversation logs, the agent can remember preferences without mixing them with temporary chat history. The profile is updated only when the user states a new lasting preference or when old information changes, which helps prevent drift or bloat.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Storage Technology Explained: AI and Data Storage",
+        "url": "https://www.computerweekly.com/feature/Storage-technology-explained-AI-and-the-data-storage-it-needs",
+        "type": "article"
+      },
+      {
+        "title": "The Architect's Guide to Storage for AI - The New Stack",
+        "url": "https://thenewstack.io/the-architects-guide-to-storage-for-ai/",
+        "type": "article"
+      }
+    ]
   },
   "jTDC19BTWCqxqMizrIJHr": {
     "title": "Summarization / Compression",
-    "description": "Summarization or compression lets an AI agent keep the gist of past chats without saving every line. After a talk, the agent runs a small model or rule set that pulls out key facts, goals, and feelings and writes them in a short note. This note goes into long-term memory, while the full chat can be dropped or stored elsewhere. Because the note is short, the agent spends fewer tokens when it loads memory into the next prompt, so costs stay low and speed stays high. Good summaries leave out side jokes and filler but keep names, dates, open tasks, and user preferences. The agent can update the note after each session, overwriting old points that are no longer true. This process lets the agent remember what matters even after hundreds of turns.",
-    "links": []
+    "description": "Summarization or compression lets an AI agent keep the gist of past chats without saving every line. After a talk, the agent runs a small model or rule set that pulls out key facts, goals, and feelings and writes them in a short note. This note goes into long-term memory, while the full chat can be dropped or stored elsewhere. Because the note is short, the agent spends fewer tokens when it loads memory into the next prompt, so costs stay low and speed stays high. Good summaries leave out side jokes and filler but keep names, dates, open tasks, and user preferences. The agent can update the note after each session, overwriting old points that are no longer true. This process lets the agent remember what matters even after hundreds of turns.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Evaluating LLMs for Text Summarization",
+        "url": "https://insights.sei.cmu.edu/blog/evaluating-llms-for-text-summarization-introduction/",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide to AI Document Summarization",
+        "url": "https://www.documentllm.com/blog/ai-document-summarization-guide",
+        "type": "article"
+      }
+    ]
   },
   "m-97m7SI0XpBnhEE8-_1S": {
     "title": "Forgetting / Aging Strategies",
-    "description": "Forgetting or aging strategies help an AI agent keep only the useful parts of its memory and drop the rest over time. The agent may tag each memory with a time stamp and lower its importance as it gets older, or it may remove items that have not been used for a while, much like a “least-recently-used” list. Some systems give each memory a relevance score; when space runs low, they erase the lowest-scoring items first. Others keep a fixed-length sliding window of the most recent events or create short summaries and store those instead of raw details. These methods stop the memory store from growing without limits, cut storage costs, and let the agent focus on current goals. Choosing the right mix of aging rules is a trade-off: forget too fast and the agent loses context, forget too slow and it wastes resources or reacts to outdated facts.",
-    "links": []
+    "description": "Forgetting or aging strategies help an AI agent keep only the useful parts of its memory and drop the rest over time. The agent may tag each memory with a time stamp and lower its importance as it gets older, or it may remove items that have not been used for a while, much like a “least-recently-used” list. Some systems give each memory a relevance score; when space runs low, they erase the lowest-scoring items first. Others keep a fixed-length sliding window of the most recent events or create short summaries and store those instead of raw details. These methods stop the memory store from growing without limits, cut storage costs, and let the agent focus on current goals. Choosing the right mix of aging rules is a trade-off: forget too fast and the agent loses context, forget too slow and it wastes resources or reacts to outdated facts.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Memory Management",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/",
+        "type": "article"
+      },
+      {
+        "title": "Memory Management for AI Agents",
+        "url": "https://techcommunity.microsoft.com/blog/azure-ai-services-blog/memory-management-for-ai-agents/4406359",
+        "type": "article"
+      }
+    ]
   },
   "53xDks6JQ33fHMa3XcuCd": {
     "title": "ReAct (Reason + Act)",
-    "description": "ReAct is an agent pattern that makes a model alternate between two simple steps: Reason and Act. First, the agent writes a short thought that sums up what it knows and what it should try next. Then it performs an action such as calling an API, running code, or searching a document. The result of that action is fed back, giving the agent fresh facts to think about. This loop repeats until the task is done. By showing its thoughts in plain text, the agent can be inspected, debugged, and even corrected on the fly. The clear split between thinking and doing also cuts wasted moves and guides the model toward steady progress. ReAct works well with large language models because they can both generate the chain of thoughts and choose the next tool in the very same response.",
-    "links": []
+    "description": "ReAct is an agent pattern that makes a model alternate between two simple steps: Reason and Act. First, the agent writes a short thought that sums up what it knows and what it should try next. Then it performs an action such as calling an API, running code, or searching a document. The result of that action is fed back, giving the agent fresh facts to think about. This loop repeats until the task is done. By showing its thoughts in plain text, the agent can be inspected, debugged, and even corrected on the fly. The clear split between thinking and doing also cuts wasted moves and guides the model toward steady progress. ReAct works well with large language models because they can both generate the chain of thoughts and choose the next tool in the very same response.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "url": "https://react-lm.github.io/",
+        "type": "article"
+      },
+      {
+        "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
+        "url": "https://learnprompting.org/docs/agents/react",
+        "type": "article"
+      }
+    ]
   },
   "1B0IqRNYdtbHDi1jHSXuI": {
     "title": "Model Context Protocol (MCP)",
-    "description": "Model Context Protocol (MCP) is a rulebook that tells an AI agent how to pack background information before it sends a prompt to a language model. It lists what pieces go into the prompt—things like the system role, the user’s request, past memory, tool calls, or code snippets—and fixes their order. Clear tags mark each piece, so both humans and machines can see where one part ends and the next begins. Keeping the format steady cuts confusion, lets different tools work together, and makes it easier to test or swap models later. When agents follow MCP, the model gets a clean, complete prompt and can give better answers.",
-    "links": []
+    "description": "Model Context Protocol (MCP) is a rulebook that tells an AI agent how to pack background information before it sends a prompt to a language model. It lists what pieces go into the prompt—things like the system role, the user’s request, past memory, tool calls, or code snippets—and fixes their order. Clear tags mark each piece, so both humans and machines can see where one part ends and the next begins. Keeping the format steady cuts confusion, lets different tools work together, and makes it easier to test or swap models later. When agents follow MCP, the model gets a clean, complete prompt and can give better answers.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Model Context Protocol",
+        "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+        "type": "opensource"
+      },
+      {
+        "title": "Model Context Protocol",
+        "url": "https://modelcontextprotocol.io/introduction",
+        "type": "article"
+      },
+      {
+        "title": "Introducing the Azure MCP Server ",
+        "url": "https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide to MCP",
+        "url": "https://guangzhengli.com/blog/en/model-context-protocol",
+        "type": "article"
+      }
+    ]
   },
   "9FryAIrWRHh8YlzKX3et5": {
     "title": "MCP Hosts",
-    "description": "MCP Hosts are the computers or cloud services that run the Model Context Protocol. They keep the protocol code alive, listen for incoming calls, and pass data between users, tools, and language models. A host loads the MCP manifest, checks that requests follow the rules, and stores any state that needs to last between calls. It may cache recent messages, track token use, and add safety or billing checks before it forwards a prompt to the model. Hosts also expose an API endpoint so that outside apps can connect without knowing the low-level details of the protocol. You can run a host on your own laptop for testing or deploy it on a serverless platform for scale; either way, it provides the same trusted place where MCP agents, tools, and data meet.",
-    "links": []
+    "description": "MCP Hosts are computers or services that run the Model Context Protocol. They handle incoming calls, load the MCP manifest, check requests, and pass data between users, tools, and language models. Hosts may cache recent messages, track token usage, and add safety or billing checks before sending prompts to the model. They expose an API endpoint so apps can connect easily. You can run a host on your laptop for testing or deploy it on cloud platforms for scale. The host acts as the trusted bridge where agents, tools, and data meet.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "punkeye/awesome-mcp-servers",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "type": "opensource"
+      },
+      {
+        "title": "Vercel Serverless Hosting",
+        "url": "https://vercel.com/docs",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide to MCP",
+        "url": "https://guangzhengli.com/blog/en/model-context-protocol",
+        "type": "article"
+      },
+      {
+        "title": "AWS MCP Servers for Code Assistants",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-aws-mcp-servers-for-code-assistants-part-1/",
+        "type": "article"
+      }
+    ]
   },
   "CGVstUxVXLJcYZrwk3iNQ": {
     "title": "MCP Client",
-    "description": "The MCP Client is the part of an AI agent that talks directly to the large-language-model service. It gathers all messages, files, and tool signals that make up the current working state, packs them into the format defined by the Model Context Protocol, and sends the bundle to the model’s API. After the model answers, the client unpacks the reply, checks that it follows protocol rules, and hands the result to other modules, such as planners or tool runners. It also tracks tokens, applies privacy filters, retries on network errors, and logs key events for debugging. In short, the MCP Client is the gateway that turns local agent data into a valid model request and turns the model’s response into something the rest of the system can use.",
-    "links": []
+    "description": "The MCP Client is the part of an AI agent that talks to the language model API. It collects messages, files, and tool signals, packs them using the Model Context Protocol, and sends them to the model. When a reply comes back, it unpacks it, checks the format, and passes the result to other modules. It also tracks token usage, filters private data, retries failed calls, and logs important events for debugging.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Model Context Protocol",
+        "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+        "type": "opensource"
+      },
+      {
+        "title": "Model Context Protocol",
+        "url": "https://modelcontextprotocol.io/introduction",
+        "type": "article"
+      },
+      {
+        "title": "OpenAI API Reference",
+        "url": "https://platform.openai.com/docs/api-reference",
+        "type": "article"
+      },
+      {
+        "title": "Anthropic API Documentation",
+        "url": "https://docs.anthropic.com/claude/reference",
+        "type": "article"
+      }
+    ]
   },
   "yv_-87FVM7WKn5iv6LW9q": {
     "title": "MCP Servers",
-    "description": "An MCP Server is the main machine or cloud service that runs the Model Context Protocol. It keeps the shared “memory” that different AI agents need so they stay on the same page. When an agent sends a request, the server checks who is asking, pulls the right context from its store, and sends it back fast. It also saves new facts and task results so the next agent can use them. An MCP Server must handle many users at once, protect private data with strict access rules, and log every change for easy roll-back. Good servers break work into small tasks, spread them across many computers, and add backups so they never lose data. In short, the MCP Server is the hub that makes sure all agents share fresh, safe, and correct context.",
-    "links": []
+    "description": "An MCP Server is the main machine or cloud service that runs the Model Context Protocol. It keeps the shared “memory” that different AI agents need so they stay on the same page. When an agent sends a request, the server checks who is asking, pulls the right context from its store, and sends it back fast. It also saves new facts and task results so the next agent can use them. An MCP Server must handle many users at once, protect private data with strict access rules, and log every change for easy roll-back. Good servers break work into small tasks, spread them across many computers, and add backups so they never lose data. In short, the MCP Server is the hub that makes sure all agents share fresh, safe, and correct context.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "punkeye/awesome-mcp-servers",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "type": "opensource"
+      },
+      {
+        "title": "Introducing the Azure MCP Server ",
+        "url": "https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide to MCP",
+        "url": "https://guangzhengli.com/blog/en/model-context-protocol",
+        "type": "article"
+      },
+      {
+        "title": "AWS MCP Servers for Code Assistants",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-aws-mcp-servers-for-code-assistants-part-1/",
+        "type": "article"
+      }
+    ]
   },
   "1NXIN-Hbjl5rPy_mqxQYW": {
     "title": "Creating MCP Servers",
-    "description": "Creating an MCP server means building a program that stores and shares conversation data for AI agents using the Model Context Protocol. Start by choosing a language and web framework, then set up REST endpoints such as /messages, /state, and /health. Each endpoint sends or receives JSON that follows the MCP schema. Use a database or an in-memory store to keep session logs, and tag every entry with a session ID, role, and timestamp. Add token-based authentication so only trusted agents can read or write. Include filters and range queries so an agent can ask for just the parts of the log it needs. Limit message size and request rate to avoid overload. Finish by writing unit tests, adding monitoring, and running load checks to be sure the server stays reliable as traffic grows.",
-    "links": []
+    "description": "An MCP server stores and shares conversation data for AI agents using the Model Context Protocol (MCP), a standard for agent memory management. Start by picking a language and web framework, then create REST endpoints like `/messages`, `/state`, and `/health`. Each endpoint exchanges JSON following the MCP schema. Store session logs with a session ID, role, and timestamp using a database or in-memory store. Add token-based authentication and filters so agents can fetch only what they need. Set limits on message size and request rates to avoid overload. Finally, write unit tests, add monitoring, and run load tests to ensure stability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Model Context Protocol (MCP) Specification",
+        "url": "https://www.anthropic.com/news/model-context-protocol",
+        "type": "article"
+      },
+      {
+        "title": "How to Build and Host Your Own MCP Servers in Easy Steps?",
+        "url": "https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/",
+        "type": "article"
+      }
+    ]
   },
   "iBtJp24F_kJE3YlBsW60s": {
     "title": "Local Desktop",
-    "description": "A Local Desktop deployment means you run the MCP server on your own computer instead of on a remote machine or cloud service. You install the MCP software, any language runtimes it needs, and the model files all on your desktop or laptop. When you start the server, it listens on a port such as 127.0.0.1:8000, which is only reachable from the same computer unless you change network settings. This setup is handy for quick tests, small demos, or private work because you control the files and can restart the server at any time. It also avoids extra cost from cloud hosting. The main limits are the power of your hardware and the fact that other people cannot reach the service unless you expose it through port forwarding or a tunnel.",
-    "links": []
+    "description": "A Local Desktop deployment means running the MCP server directly on your own computer instead of a remote cloud or server. You install the MCP software, needed runtimes, and model files onto your desktop or laptop. The server then listens on a local address like `127.0.0.1:8000`, accessible only from the same machine unless you open ports manually. This setup is great for fast tests, personal demos, or private experiments since you keep full control and avoid cloud costs. However, it's limited by your hardware's speed and memory, and others cannot access it without tunneling tools like ngrok or local port forwarding.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Build a Simple Local MCP Server",
+        "url": "https://blog.stackademic.com/build-simple-local-mcp-server-5434d19572a4",
+        "type": "article"
+      },
+      {
+        "title": "How to Build and Host Your Own MCP Servers in Easy Steps",
+        "url": "https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/",
+        "type": "article"
+      },
+      {
+        "title": "Expose localhost to Internet",
+        "url": "https://ngrok.com/docs",
+        "type": "article"
+      },
+      {
+        "title": "Run a Local Server on Your Machine",
+        "url": "https://www.youtube.com/watch?v=ldGl6L4Vktk",
+        "type": "video"
+      }
+    ]
   },
   "dHNMX3_t1KSDdAWqgdJXv": {
     "title": "Remote / Cloud",
-    "description": "Remote or cloud deployment places the MCP server on a cloud provider instead of a local machine. You package the server as a container or virtual machine, choose a service like AWS, Azure, or GCP, and give it compute, storage, and a public HTTPS address. A load balancer spreads traffic, while auto-scaling adds or removes copies of the server as demand changes. You secure the endpoint with TLS, API keys, and firewalls, and you send logs and metrics to the provider’s monitoring tools. This setup lets the server handle many users, updates are easier, and you avoid local hardware limits, though you must watch costs and protect sensitive data.",
-    "links": []
+    "description": "Remote or cloud deployment places the MCP server on a cloud provider instead of a local machine. You package the server as a container or virtual machine, choose a service like AWS, Azure, or GCP, and give it compute, storage, and a public HTTPS address. A load balancer spreads traffic, while auto-scaling adds or removes copies of the server as demand changes. You secure the endpoint with TLS, API keys, and firewalls, and you send logs and metrics to the provider’s monitoring tools. This setup lets the server handle many users, updates are easier, and you avoid local hardware limits, though you must watch costs and protect sensitive data.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Edge AI vs. Cloud AI: Real-Time Intelligence Models",
+        "url": "https://medium.com/@hassaanidrees7/edge-ai-vs-cloud-ai-real-time-intelligence-vs-centralized-processing-df8c6e94fd11",
+        "type": "article"
+      },
+      {
+        "title": "Cloud AI vs. On-premises AI",
+        "url": "https://www.pluralsight.com/resources/blog/ai-and-data/ai-on-premises-vs-in-cloud",
+        "type": "article"
+      },
+      {
+        "title": "Cloud vs On-Premises AI Deployment",
+        "url": "https://toxigon.com/cloud-vs-on-premises-ai-deployment",
+        "type": "article"
+      }
+    ]
   },
   "qwdh5pkBbrF8LKPxbZp4F": {
     "title": "Chain of Thought (CoT)",
-    "description": "Chain of Thought (CoT) is a way for an AI agent to think out loud. Before giving its final answer, the agent writes short notes that show each step it takes. These notes can list facts, name sub-tasks, or do small bits of math. By seeing the steps, the agent stays organized and is less likely to make a mistake. People who read the answer can also check the logic and spot any weak points. The same written steps can be fed back into the agent so it can plan, reflect, or fix itself. Because it is easy to use and boosts trust, CoT is one of the most common designs for language-based agents today.",
-    "links": []
+    "description": "Chain of Thought (CoT) is a way for an AI agent to think out loud. Before giving its final answer, the agent writes short notes that show each step it takes. These notes can list facts, name sub-tasks, or do small bits of math. By seeing the steps, the agent stays organized and is less likely to make a mistake. People who read the answer can also check the logic and spot any weak points. The same written steps can be fed back into the agent so it can plan, reflect, or fix itself. Because it is easy to use and boosts trust, CoT is one of the most common designs for language-based agents today.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "url": "https://arxiv.org/abs/2201.11903",
+        "type": "article"
+      },
+      {
+        "title": "Evoking Chain of Thought Reasoning in LLMs - Prompting Guide",
+        "url": "https://www.promptingguide.ai/techniques/cot",
+        "type": "article"
+      }
+    ]
   },
   "cW8O4vLLKEG-Q0dE8E5Zp": {
     "title": "RAG Agent",
-    "description": "A RAG (Retrieval-Augmented Generation) agent mixes search with language generation so it can answer questions using fresh and reliable facts. When a user sends a query, the agent first turns that query into an embedding—basically a number list that captures its meaning. It then looks up similar embeddings in a vector database that holds passages from web pages, PDFs, or other text. The best-matching passages come back as context. The agent puts the original question and those passages into a large language model. The model writes the final reply, grounding every sentence in the retrieved text. This setup keeps the model smaller, reduces wrong guesses, and lets the system update its knowledge just by adding new documents to the database. Common tools for building a RAG agent include an embedding model, a vector store like FAISS or Pinecone, and an LLM connected through a framework such as LangChain or LlamaIndex.",
-    "links": []
+    "description": "A RAG (Retrieval-Augmented Generation) agent mixes search with language generation so it can answer questions using fresh and reliable facts. When a user sends a query, the agent first turns that query into an embedding—basically a number list that captures its meaning. It then looks up similar embeddings in a vector database that holds passages from web pages, PDFs, or other text. The best-matching passages come back as context. The agent puts the original question and those passages into a large language model. The model writes the final reply, grounding every sentence in the retrieved text. This setup keeps the model smaller, reduces wrong guesses, and lets the system update its knowledge just by adding new documents to the database. Common tools for building a RAG agent include an embedding model, a vector store like FAISS or Pinecone, and an LLM connected through a framework such as LangChain or LlamaIndex.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is RAG? - Retrieval-Augmented Generation AI Explained",
+        "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+        "type": "article"
+      },
+      {
+        "title": "What Is Retrieval-Augmented Generation, aka RAG?",
+        "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/",
+        "type": "article"
+      }
+    ]
   },
   "6YLCMWzystao6byCYCTPO": {
     "title": "Planner Executor",
-    "description": "A planner-executor agent splits its work into two clear parts. First, the planner thinks ahead. It looks at a goal, lists the steps needed, and puts them in the best order. Second, the executor acts. It takes each planned step and carries it out, checking results as it goes. If something fails or the world changes, the planner may update the plan, and the executor follows the new steps. This divide-and-conquer style lets the agent handle big tasks without losing track of small actions. It is easy to debug, supports reuse of plans, and helps keep the agent’s behavior clear and steady.",
-    "links": []
+    "description": "A **planner-executor agent** is a type of AI agent that splits its work into two clear parts: planning and execution. The **planner** thinks ahead, taking a goal and breaking it down into a sequence of steps, ordering them in a logical and efficient manner. The **executor**, on the other hand, takes each planned step and carries it out, monitoring the results and reporting back to the planner. If something fails or the world changes, the planner may update the plan, and the executor follows the new steps. This modular approach allows the agent to handle complex tasks by dividing them into manageable parts, making it easier to debug, reuse plans, and maintain clear and consistent behavior.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Plan-and-Execute Agents",
+        "url": "https://blog.langchain.dev/planning-agents/",
+        "type": "article"
+      },
+      {
+        "title": "Plan and Execute: AI Agents Architecture",
+        "url": "https://medium.com/@shubham.ksingh.cer14/plan-and-execute-ai-agents-architecture-f6c60b5b9598",
+        "type": "article"
+      }
+    ]
   },
   "Ep8RoZSy_Iq_zWXlGQLZo": {
     "title": "DAG Agents",
-    "description": "A DAG (Directed Acyclic Graph) agent is built from many small parts, called nodes, that form a one-way graph with no loops. Each node does a clear task, then passes its result to the next node along a directed edge. Because the graph has no cycles, data always moves forward and never gets stuck in endless repeats. This makes the flow of work easy to follow and test. The layout lets you run nodes that do not depend on each other at the same time, so the agent can work faster. If one node fails, you can see the exact path it took and fix just that part. DAG agents work well for jobs like data cleaning, multi-step reasoning, or any long chain of steps where order matters and backtracking is not needed.",
-    "links": []
+    "description": "A DAG (Directed Acyclic Graph) agent is made of small parts called nodes that form a one-way graph with no loops. Each node does a task and passes its result to the next. Because there are no cycles, data always moves forward, making workflows easy to follow and debug. Independent nodes can run in parallel, speeding up tasks. If a node fails, you can trace and fix that part without touching the rest. DAG agents are ideal for jobs like data cleaning, multi-step reasoning, or workflows where backtracking isn’t needed.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Airflow: Directed Acyclic Graphs Documentation",
+        "url": "https://airflow.apache.org/docs/apache-airflow/stable/concepts/dags.html",
+        "type": "article"
+      },
+      {
+        "title": "What are DAGs in AI Systems?",
+        "url": "https://www.restack.io/p/version-control-for-ai-answer-what-is-dag-in-ai-cat-ai",
+        "type": "article"
+      },
+      {
+        "title": "DAGs Explained Simply",
+        "url": "https://www.youtube.com/watch?v=1Yh5S-S6wsI",
+        "type": "video"
+      }
+    ]
   },
   "Nmy1PoB32DcWZnPM8l8jT": {
     "title": "Tree-of-Thought",
-    "description": "Tree-of-Thought is a way to organize an AI agent’s reasoning as a branching tree. At the root, the agent states the main problem. Each branch is a small idea, step, or guess that could lead to a solution. The agent expands the most promising branches, checks if they make sense, and prunes paths that look wrong or unhelpful. This setup helps the agent explore many possible answers while staying focused on the best ones. Because the agent can compare different branches side by side, it is less likely to get stuck on a bad line of thought. The result is more reliable and creative problem solving.",
-    "links": []
+    "description": "Tree-of-Thought is a way to organize an AI agent’s reasoning as a branching tree. At the root, the agent states the main problem. Each branch is a small idea, step, or guess that could lead to a solution. The agent expands the most promising branches, checks if they make sense, and prunes paths that look wrong or unhelpful. This setup helps the agent explore many possible answers while staying focused on the best ones. Because the agent can compare different branches side by side, it is less likely to get stuck on a bad line of thought. The result is more reliable and creative problem solving.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Tree of Thoughts (ToT) | Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/techniques/tot",
+        "type": "article"
+      },
+      {
+        "title": "What is tree-of-thoughts? - IBM",
+        "url": "https://www.ibm.com/think/topics/tree-of-thoughts",
+        "type": "article"
+      },
+      {
+        "title": "The Revolutionary Approach of Tree-of-Thought Prompting in AI",
+        "url": "https://medium.com/@WeavePlatform/the-revolutionary-approach-of-tree-of-thought-prompting-in-ai-eb7c0872247b",
+        "type": "article"
+      }
+    ]
   },
   "US6T5dXM8IY9V2qZnTOFW": {
     "title": "Manual (from scratch)",
-    "description": "Building an AI agent from scratch means you write every part of the system yourself instead of using ready-made tools. You decide how the agent senses the world, saves data, learns, and makes choices. First, you choose a goal, like playing a game or answering questions. Then you design the inputs, for example keyboard moves or text. You code the logic that turns these inputs into actions. You may add a learning part, such as a basic neural network or a set of rules that update over time. You also build memory so the agent can use past facts. Testing is key: run the agent, watch what it does, and fix mistakes. This path is slow and hard, but it teaches you how each piece works and gives you full control.",
-    "links": []
+    "description": "Building an AI agent from scratch means writing every part of the system yourself, without ready-made libraries. You define how the agent senses inputs, stores memory, makes decisions, and learns over time. First, you pick a clear goal, like solving puzzles or chatting. Then you code the inputs (keyboard, mouse, text), decision logic (rules or neural networks), and memory (saving facts from past events). Testing is critical: you run the agent, watch its actions, debug, and improve. Though it takes longer, this approach gives deep understanding and full control over how the agent works and evolves.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "A Step-by-Step Guide to Building an AI Agent From Scratch",
+        "url": "https://www.neurond.com/blog/how-to-build-an-ai-agent",
+        "type": "article"
+      },
+      {
+        "title": "How to Build AI Agents",
+        "url": "https://wotnot.io/blog/build-ai-agents",
+        "type": "article"
+      },
+      {
+        "title": "Build Your Own AI Agent from Scratch in 30 Minutes",
+        "url": "https://medium.com/@gurpartap.sandhu3/build-you-own-ai-agent-from-scratch-in-30-mins-using-simple-python-1458f8099da0",
+        "type": "article"
+      },
+      {
+        "title": "Building an AI Agent From Scratch",
+        "url": "https://www.youtube.com/watch?v=bTMPwUgLZf0",
+        "type": "video"
+      }
+    ]
   },
   "aafZxtjxiwzJH1lwHBODi": {
     "title": "LLM Native \"Function Calling\"",
-    "description": "LLM native “function calling” lets a large language model decide when to run a piece of code and which inputs to pass to it. You first tell the model what functions are available. For each one you give a short name, a short description, and a list of arguments with their types. During a chat, the model can answer in JSON that matches this schema instead of plain text. Your wrapper program reads the JSON, calls the real function, and then feeds the result back to the model so it can keep going. This loop helps an agent search the web, look up data, send an email, or do any other task you expose. Because the output is structured, you get fewer mistakes than when the model tries to write raw code or natural-language commands. You also keep tight control over what the agent can and cannot do. Most current API providers support this method, so you can add new tools by only editing the schema and a handler, not the model itself.",
-    "links": []
+    "description": "LLM native “function calling” lets a large language model decide when to run a piece of code and which inputs to pass to it. You first tell the model what functions are available. For each one you give a short name, a short description, and a list of arguments with their types. During a chat, the model can answer in JSON that matches this schema instead of plain text. Your wrapper program reads the JSON, calls the real function, and then feeds the result back to the model so it can keep going. This loop helps an agent search the web, look up data, send an email, or do any other task you expose. Because the output is structured, you get fewer mistakes than when the model tries to write raw code or natural-language commands.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "A Comprehensive Guide to Function Calling in LLMs",
+        "url": "https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/",
+        "type": "article"
+      },
+      {
+        "title": "Function Calling with LLMs | Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/applications/function_calling",
+        "type": "article"
+      },
+      {
+        "title": "Function Calling with Open-Source LLMs",
+        "url": "https://medium.com/@rushing_andrei/function-calling-with-open-source-llms-594aa5b3a304",
+        "type": "article"
+      }
+    ]
   },
   "AQtxTTxmBpfl8BMgJbGzc": {
     "title": "OpenAI Functions Calling",
-    "description": "OpenAI Function Calling lets you give a language model a list of tools and have it decide which one to use and with what data. You describe each tool with a short name, what it does, and the shape of its inputs in a small JSON-like schema. You then pass the user message and this tool list to the model. Instead of normal text, the model can reply with a JSON block that names the tool and fills in the needed arguments. Your program reads this block, runs the real function, and can send the result back for the next step. This pattern makes agent actions clear, easy to parse, and hard to abuse, because the model cannot run code on its own and all calls go through your checks. It also cuts down on prompt hacks and wrong formats, so agents work faster and more safely.",
-    "links": []
+    "description": "OpenAI Function Calling lets you give a language model a list of tools and have it decide which one to use and with what data. You describe each tool with a short name, what it does, and the shape of its inputs in a small JSON-like schema. You then pass the user message and this tool list to the model. Instead of normal text, the model can reply with a JSON block that names the tool and fills in the needed arguments. Your program reads this block, runs the real function, and can send the result back for the next step. This pattern makes agent actions clear, easy to parse, and hard to abuse, because the model cannot run code on its own and all calls go through your checks. It also cuts down on prompt hacks and wrong formats, so agents work faster and more safely.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "OpenAI Documentation – Function Calling",
+        "url": "https://platform.openai.com/docs/guides/function-calling",
+        "type": "article"
+      },
+      {
+        "title": "OpenAI Cookbook – Using Functions with GPT Models",
+        "url": "https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb",
+        "type": "article"
+      },
+      {
+        "title": "@officialOpenAI Blog – Announcing Function Calling and Other Updates",
+        "url": "https://openai.com/blog/function-calling-and-other-api-updates",
+        "type": "article"
+      },
+      {
+        "title": "@officialOpenAI API Reference – Functions Section",
+        "url": "https://platform.openai.com/docs/api-reference/chat/create#functions",
+        "type": "article"
+      },
+      {
+        "title": "@officialOpenAI Community – Discussions and Examples on Function Calling",
+        "url": "https://community.openai.com/tag/function-calling",
+        "type": "article"
+      }
+    ]
   },
   "_iIsBJTVS6OBf_dsdmbVO": {
     "title": "Gemini Function Calling",
-    "description": "Gemini function calling lets you hook the Gemini language model to real code in a safe and simple way. You first list the functions you want it to use, each with a name, a short note about what it does, and a JSON schema for the needed arguments. When the user speaks, Gemini checks this list and, if a match makes sense, answers with a tiny JSON block that holds the chosen function name and the filled-in arguments. Your program then runs that function, sends the result back, and the chat moves on. Because the reply is strict JSON and not free text, you do not have to guess at what the model means, and you avoid many errors. This flow lets you build agents that pull data, call APIs, or carry out long action chains while keeping control of business logic on your side.",
-    "links": []
+    "description": "Gemini function calling lets you hook the Gemini language model to real code in a safe and simple way. You first list the functions you want it to use, each with a name, a short note about what it does, and a JSON schema for the needed arguments. When the user speaks, Gemini checks this list and, if a match makes sense, answers with a tiny JSON block that holds the chosen function name and the filled-in arguments. Your program then runs that function, sends the result back, and the chat moves on. Because the reply is strict JSON and not free text, you do not have to guess at what the model means, and you avoid many errors. This flow lets you build agents that pull data, call APIs, or carry out long action chains while keeping control of business logic on your side.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Function Calling with the Gemini API",
+        "url": "https://ai.google.dev/gemini-api/docs/function-calling",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Function Calling in Gemini",
+        "url": "https://medium.com/google-cloud/understanding-function-calling-in-gemini-3097937f1905",
+        "type": "article"
+      }
+    ]
   },
   "37GBFVZ2J2d5r8bd1ViHq": {
     "title": "OpenAI Assistant API",
-    "description": "The OpenAI Assistants API lets you add clear, task-specific actions to a chat with a large language model. You first describe each action you want the model to use, giving it a name, a short purpose, and a list of inputs in JSON form. During the chat, the model may decide that one of these actions will help. It then returns the name of the action and a JSON object with the input values it thinks are right. Your code receives this call, runs real work such as a database query or a web request, and sends the result back to the model. The model reads the result and continues the chat, now armed with fresh facts. This loop lets you keep control of what real work happens while still letting the model plan and talk in natural language.",
-    "links": []
+    "description": "The OpenAI Assistants API lets you add clear, task-specific actions to a chat with a large language model. You first describe each action you want the model to use, giving it a name, a short purpose, and a list of inputs in JSON form. During the chat, the model may decide that one of these actions will help. It then returns the name of the action and a JSON object with the input values it thinks are right. Your code receives this call, runs real work such as a database query or a web request, and sends the result back to the model. The model reads the result and continues the chat, now armed with fresh facts. This loop lets you keep control of what real work happens while still letting the model plan and talk in natural language.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "OpenAI Documentation – Assistants API Overview",
+        "url": "https://platform.openai.com/docs/assistants/overview",
+        "type": "article"
+      },
+      {
+        "title": "OpenAI Blog – Introducing the Assistants API",
+        "url": "https://openai.com/blog/assistants-api",
+        "type": "article"
+      },
+      {
+        "title": "OpenAI Cookbook – Assistants API Example",
+        "url": "https://github.com/openai/openai-cookbook/blob/main/examples/Assistants_API_overview_python.ipynb",
+        "type": "article"
+      },
+      {
+        "title": "OpenAI API Reference – Assistants Endpoints",
+        "url": "https://platform.openai.com/docs/api-reference/assistants",
+        "type": "article"
+      }
+    ]
   },
   "Ka6VpCEnqABvwiF9vba7t": {
     "title": "Langchain",
-    "description": "LangChain is a Python and JavaScript library that helps you put large language models to work in real products. It gives ready-made parts for common agent tasks such as talking to many tools, keeping short-term memory, and calling an external API when the model needs fresh data. You combine these parts like Lego blocks: pick a model, add a prompt template, chain the steps, then wrap the chain in an “agent” that can choose what step to run next. Built-in connectors link to OpenAI, Hugging Face, vector stores, and SQL databases, so you can search documents or pull company data without writing a lot of glue code. This lets you move fast from idea to working bot, while still letting you swap out parts if your needs change.",
-    "links": []
+    "description": "LangChain is a Python and JavaScript library that helps you put large language models to work in real products. It gives ready-made parts for common agent tasks such as talking to many tools, keeping short-term memory, and calling an external API when the model needs fresh data. You combine these parts like Lego blocks: pick a model, add a prompt template, chain the steps, then wrap the chain in an “agent” that can choose what step to run next. Built-in connectors link to OpenAI, Hugging Face, vector stores, and SQL databases, so you can search documents or pull company data without writing a lot of glue code. This lets you move fast from idea to working bot, while still letting you swap out parts if your needs change.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain",
+        "type": "opensource"
+      },
+      {
+        "title": "LangChain Documentation",
+        "url": "https://python.langchain.com/docs/introduction/",
+        "type": "article"
+      },
+      {
+        "title": "Building Applications with LLMs using LangChain",
+        "url": "https://www.pinecone.io/learn/series/langchain/",
+        "type": "article"
+      },
+      {
+        "title": "AI Agents with LangChain and LangGraph",
+        "url": "https://www.udacity.com/course/ai-agents-with-langchain-and-langgraph--cd13764",
+        "type": "article"
+      },
+      {
+        "title": "LangChain Crash Course - Build LLM Apps Fast (YouTube)",
+        "url": "https://www.youtube.com/watch?v=nAmC7SoVLd8",
+        "type": "video"
+      }
+    ]
   },
   "iEHF-Jm3ck-Iu85EbCoDi": {
     "title": "LlamaIndex",
-    "description": "LlamaIndex is an open-source Python toolkit that helps you give a language model access to your own data. You load files such as PDFs, web pages, or database rows. The toolkit breaks the text into chunks, turns them into vectors, and stores them in a chosen vector store like FAISS or Pinecone. When a user asks a question, LlamaIndex finds the best chunks, adds them to the prompt, and sends the prompt to the model. This flow is called retrieval-augmented generation and it lets an agent give answers grounded in your content. The library offers simple classes for loading, indexing, querying, and composing tools, so you write less boilerplate code. It also works with other frameworks, including LangChain, and supports models from OpenAI or Hugging Face. With a few lines of code you can build a chatbot, Q&A system, or other agent that knows your documents.",
-    "links": []
+    "description": "LlamaIndex is an open-source Python toolkit that helps you give a language model access to your own data. You load files such as PDFs, web pages, or database rows. The toolkit breaks the text into chunks, turns them into vectors, and stores them in a chosen vector store like FAISS or Pinecone. When a user asks a question, LlamaIndex finds the best chunks, adds them to the prompt, and sends the prompt to the model. This flow is called retrieval-augmented generation and it lets an agent give answers grounded in your content. The library offers simple classes for loading, indexing, querying, and composing tools, so you write less boilerplate code. It also works with other frameworks, including LangChain, and supports models from OpenAI or Hugging Face. With a few lines of code you can build a chatbot, Q&A system, or other agent that knows your documents.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "run-llama/llama_index",
+        "url": "https://github.com/run-llama/llama_index",
+        "type": "opensource"
+      },
+      {
+        "title": "LlamaIndex",
+        "url": "https://llamaindex.ai/",
+        "type": "article"
+      },
+      {
+        "title": "LlamaIndex Documentation",
+        "url": "https://docs.smith.langchain.com/",
+        "type": "article"
+      },
+      {
+        "title": "What is LlamaIndex.TS",
+        "url": "https://ts.llamaindex.ai/docs/llamaindex",
+        "type": "article"
+      },
+      {
+        "title": "What is LlamaIndex? - IBM",
+        "url": "https://www.ibm.com/think/topics/llamaindex",
+        "type": "article"
+      },
+      {
+        "title": "LlamaIndex - Hugging Face",
+        "url": "https://huggingface.co/llamaindex",
+        "type": "article"
+      }
+    ]
   },
   "XS-FsvtrXGZ8DPrwOsnlI": {
     "title": "Haystack",
-    "description": "Haystack is an open-source Python framework that helps you build search and question-answering agents fast. You connect your data sources, pick a language model, and set up pipelines that find the best answer to a user’s query. Haystack handles tasks such as indexing documents, retrieving passages, running the model, and ranking results. It works with many back-ends like Elasticsearch, OpenSearch, FAISS, and Pinecone, so you can scale from a laptop to a cluster. You can add features like summarization, translation, and document chat by dropping extra nodes into the pipeline. The framework also offers REST APIs, a web UI, and clear tutorials, making it easy to test and deploy your agent in production.",
-    "links": []
+    "description": "Haystack is an open-source Python framework that helps you build search and question-answering agents fast. You connect your data sources, pick a language model, and set up pipelines that find the best answer to a user’s query. Haystack handles tasks such as indexing documents, retrieving passages, running the model, and ranking results. It works with many back-ends like Elasticsearch, OpenSearch, FAISS, and Pinecone, so you can scale from a laptop to a cluster. You can add features like summarization, translation, and document chat by dropping extra nodes into the pipeline. The framework also offers REST APIs, a web UI, and clear tutorials, making it easy to test and deploy your agent in production.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "deepset-ai/haystack",
+        "url": "https://github.com/deepset-ai/haystack",
+        "type": "opensource"
+      },
+      {
+        "title": "Haystack",
+        "url": "https://haystack.deepset.ai/",
+        "type": "article"
+      },
+      {
+        "title": "Haystack Overview",
+        "url": "https://docs.haystack.deepset.ai/docs/intro",
+        "type": "article"
+      }
+    ]
   },
   "7YtnQ9-KIvGPSpDzEDexl": {
     "title": "AutoGen",
-    "description": "AutoGen is an open-source Python framework that helps you build AI agents without starting from scratch. It lets you define each agent with a role, goals, and tools, then handles the chat flow between them and a large language model such as GPT-4. You can chain several agents so they plan, code, review, and run tasks together. The library includes ready-made modules for memory, task planning, tool calling, and function execution, so you only write the parts that are unique to your app. AutoGen connects to OpenAI, Azure, or local models through a simple settings file. Logs, cost tracking, and step-by-step debugging come built in, which makes testing easy. Because the agents are plain Python objects, you can mix them with other libraries or your own code. AutoGen is still young, so expect fast changes and keep an eye on usage costs, but it is a strong choice when you want to turn a prompt into a working multi-agent system in hours instead of weeks.",
-    "links": []
+    "description": "AutoGen is an open-source Python framework that helps you build AI agents without starting from scratch. It lets you define each agent with a role, goals, and tools, then handles the chat flow between them and a large language model such as GPT-4. You can chain several agents so they plan, code, review, and run tasks together. The library includes ready-made modules for memory, task planning, tool calling, and function execution, so you only write the parts that are unique to your app. AutoGen connects to OpenAI, Azure, or local models through a simple settings file. Logs, cost tracking, and step-by-step debugging come built in, which makes testing easy. Because the agents are plain Python objects, you can mix them with other libraries or your own code. AutoGen is still young, so expect fast changes and keep an eye on usage costs, but it is a strong choice when you want to turn a prompt into a working multi-agent system in hours instead of weeks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GitHub - microsoft/autogen",
+        "url": "https://github.com/microsoft/autogen",
+        "type": "opensource"
+      },
+      {
+        "title": "AutoGen - Microsoft Research",
+        "url": "https://www.microsoft.com/en-us/research/project/autogen/",
+        "type": "article"
+      }
+    ]
   },
   "uFPJqgU4qGvZyxTv-osZA": {
     "title": "CrewAI",
-    "description": "CrewAI is an open-source Python framework that lets you join several language-model agents into one team, called a crew. Each agent gets a name, a role, and a set of skills, and the library handles planning, task routing, and chat among them. To use it, you install the package, import it, define your agents in a few lines of code, link them with a Crew object, and give the crew a mission prompt. CrewAI then talks to an LLM such as OpenAI GPT-4 or Claude, passes messages between agents, runs any tools you attach, and returns a single answer. You can plug in web search, Python functions, or vector stores for memory, and you can tune settings like temperature or max tokens. Built-in logs show every step so you can debug and improve the workflow. The result is a fast way to build multi-step agent systems for tasks like research, code review, or content creation without writing a lot of low-level glue code.",
-    "links": []
+    "description": "CrewAI is an open-source Python framework for creating teams of AI agents, called a crew. Each agent is assigned a name, role, and set of tools, and the system manages planning, communication, and execution between them. To use it, install the package, define agents in code, connect them with a `Crew` object, and assign a mission prompt. CrewAI interacts with an LLM like GPT-4 or Claude, passes messages, runs tools, and returns a final output. You can also add web search, custom functions, or memory stores. Logs are built-in to help debug and optimize workflows.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "CrewAI",
+        "url": "https://crewai.com/",
+        "type": "article"
+      },
+      {
+        "title": "CrewAI Documentation",
+        "url": "https://docs.crewai.com/",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with CrewAI: Building AI Agents That Work Together",
+        "url": "https://medium.com/@cammilo/getting-started-with-crewai-building-ai-agents-that-work-together-9c1f47f185ca",
+        "type": "article"
+      },
+      {
+        "title": "Crew AI Full Tutorial For Beginners",
+        "url": "https://www.youtube.com/watch?v=q6QLGS306d0",
+        "type": "video"
+      }
+    ]
   },
   "eWxQiBrxIUG2JNcrdfIHS": {
     "title": "Smol Depot",
-    "description": "Smol Depot is an open-source kit that lets you bundle all the parts of a small AI agent in one place. You keep prompts, settings, and code files together in a single folder, then point the Depot tool at that folder to spin the agent up. The tool handles tasks such as loading models, saving chat history, and calling outside APIs, so you do not have to write that glue code yourself. A simple command can copy a starter template, letting you focus on the logic and prompts that make your agent special. Because everything lives in plain files, you can track changes with Git and share the agent like any other project. This makes Smol Depot a quick way to build, test, and ship lightweight agents without a heavy framework.",
-    "links": []
+    "description": "Smol Depot is an open-source kit that lets you bundle all the parts of a small AI agent in one place. You keep prompts, settings, and code files together in a single folder, then point the Depot tool at that folder to spin the agent up. The tool handles tasks such as loading models, saving chat history, and calling outside APIs, so you do not have to write that glue code yourself. A simple command can copy a starter template, letting you focus on the logic and prompts that make your agent special. Because everything lives in plain files, you can track changes with Git and share the agent like any other project.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "smol.ai - Continuous Fine-tuning Platform for AI Engineers",
+        "url": "https://smol.candycode.dev/",
+        "type": "article"
+      },
+      {
+        "title": "5-min Smol AI Tutorial",
+        "url": "https://www.ai-jason.com/learning-ai/smol-ai-tutorial",
+        "type": "article"
+      },
+      {
+        "title": "Smol AI Full Beginner Course",
+        "url": "https://www.youtube.com/watch?v=d7qFVrpLh34",
+        "type": "video"
+      }
+    ]
   },
   "1EZFbDHA5J5_5BPMLMxXb": {
     "title": "Anthropic Tool Use",
-    "description": "Anthropic Tool Use lets you connect a Claude model to real software functions so the agent can do useful tasks on its own. You give Claude a list of tools, each with a name, a short description, and a strict JSON schema that shows the allowed input fields. During a chat you send user text plus this tool list. Claude decides if a tool should run, picks one, and returns a JSON block that matches the schema. Your code reads the JSON, calls the matching function, and sends the result back to Claude for the next step. This loop repeats until no more tool calls are needed. Clear schemas, small field sets, and helpful examples make the calls accurate. By keeping the model in charge of choosing tools while your code controls real actions, you gain both flexibility and safety.",
+    "description": "Anthropic Tool Use lets you connect a Claude model to real software functions so the agent can do useful tasks on its own. You give Claude a list of tools, each with a name, a short description, and a strict JSON schema that shows the allowed input fields. During a chat you send user text plus this tool list. Claude decides if a tool should run, picks one, and returns a JSON block that matches the schema. Your code reads the JSON, calls the matching function, and sends the result back to Claude for the next step. This loop repeats until no more tool calls are needed. Clear schemas, small field sets, and helpful examples make the calls accurate. By keeping the model in charge of choosing tools while your code controls real actions, you gain both flexibility and safety.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Anthropic Tool Use",
@@ -424,87 +1671,394 @@
   },
   "v8qLnyFRnEumodBYxQSXQ": {
     "title": "Metrics to Track",
-    "description": "To know if an AI agent works well, you need numbers that tell the story. Track accuracy, precision, recall, and F1 score to see how often the agent is right. For ranking tasks, record mean average precision or ROC-AUC. If users interact with the agent, measure response time, latency, and the share of failed requests. Safety metrics count toxic or biased outputs, while robustness tests see how the agent copes with noisy or tricky inputs. Resource metrics—memory, CPU, and energy—show if the system can run at scale. Choose the metrics that fit the task, compare results to a baseline, and watch the trend with every new version.",
-    "links": []
+    "description": "To judge how well an AI agent works, you need clear numbers. Track accuracy, precision, recall, and F1 score to measure correctness. For ranking tasks, use metrics like mean average precision or ROC-AUC. If users interact with the agent, monitor response time, latency, and failure rates. Safety metrics count toxic or biased outputs, while robustness tests check how the agent handles messy or tricky inputs. Resource metrics—memory, CPU, and energy—show if it can scale. Pick the metrics that match your goal, compare against a baseline, and track trends across versions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Robustness Testing for AI",
+        "url": "https://mitibmwatsonailab.mit.edu/category/robustness/",
+        "type": "article"
+      },
+      {
+        "title": "Complete Guide to Machine Learning Evaluation Metrics",
+        "url": "https://medium.com/analytics-vidhya/complete-guide-to-machine-learning-evaluation-metrics-615c2864d916",
+        "type": "article"
+      },
+      {
+        "title": "Measuring Model Performance",
+        "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy",
+        "type": "article"
+      },
+      {
+        "title": "A Practical Framework for (Gen)AI Value Measurement",
+        "url": "https://medium.com/google-cloud/a-practical-framework-for-gen-ai-value-measurement-5fccf3b66c43",
+        "type": "article"
+      }
+    ]
   },
   "qo_O4YAe4-MTP_ZJoXJHR": {
     "title": "Unit Testing for Individual Tools",
-    "description": "Unit testing checks that each tool an AI agent uses works as expected when it stands alone. You write small tests that feed the tool clear input and then compare its output to a known correct answer. If the tool is a function that parses dates, you test many date strings and see if the function gives the right results. Good tests cover normal cases, edge cases, and error cases. Run the tests every time you change the code. When a test fails, fix the tool before moving on. This habit keeps bugs from spreading into larger agent workflows and makes later debugging faster.",
-    "links": []
+    "description": "Unit testing checks that each tool an AI agent uses works as expected when it stands alone. You write small tests that feed the tool clear input and then compare its output to a known correct answer. If the tool is a function that parses dates, you test many date strings and see if the function gives the right results. Good tests cover normal cases, edge cases, and error cases. Run the tests every time you change the code. When a test fails, fix the tool before moving on. This habit keeps bugs from spreading into larger agent workflows and makes later debugging faster.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Unit Testing Agents",
+        "url": "https://docs.patronus.ai/docs/agent_evals/unit_testing",
+        "type": "article"
+      },
+      {
+        "title": "Best AI Tools for Unit Testing: A Look at Top 14 AI Tools",
+        "url": "https://thetrendchaser.com/best-ai-tools-for-unit-testing/",
+        "type": "article"
+      },
+      {
+        "title": "AI for Unit Testing: Revolutionizing Developer Productivity",
+        "url": "https://www.diffblue.com/resources/ai-for-unit-testing-revolutionizing-developer-productivity/",
+        "type": "article"
+      }
+    ]
   },
   "P9-SiIda3TSjHsfkI5OUV": {
     "title": "Integration Testing for Flows",
-    "description": "Integration testing for flows checks that an AI agent works well from the first user input to the final action, across every step in between. It joins all parts of the system—natural-language understanding, planning, memory, tools, and output—and runs them together in real scenarios. Test cases follow common and edge-case paths a user might take. The goal is to catch errors that only appear when parts interact, such as wrong data passed between modules or timing issues. Good practice includes building automated test suites, using real or mock services, and logging each step for easy debugging. When integration tests pass, you gain confidence that the whole flow feels smooth and reliable for users.",
-    "links": []
+    "description": "Integration testing for flows checks that an AI agent works well from the first user input to the final action, across every step in between. It joins all parts of the system—natural-language understanding, planning, memory, tools, and output—and runs them together in real scenarios. Test cases follow common and edge-case paths a user might take. The goal is to catch errors that only appear when parts interact, such as wrong data passed between modules or timing issues. Good practice includes building automated test suites, using real or mock services, and logging each step for easy debugging. When integration tests pass, you gain confidence that the whole flow feels smooth and reliable for users.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Integration Testing for AI-based Features with Humans",
+        "url": "https://www.microsoft.com/en-us/research/publication/hint-integration-testing-for-ai-based-features-with-humans-in-the-loop/",
+        "type": "article"
+      },
+      {
+        "title": "Integration Testing and Unit Testing in AI",
+        "url": "https://www.aviator.co/blog/integration-testing-and-unit-testing-in-the-age-of-ai/",
+        "type": "article"
+      },
+      {
+        "title": "Integration Testing",
+        "url": "https://www.guru99.com/integration-testing.html",
+        "type": "article"
+      }
+    ]
   },
   "rHxdxN97ZcU7MPl8L1jzN": {
     "title": "Human in the Loop Evaluation",
-    "description": "Human-in-the-loop evaluation checks an AI agent by letting real people judge its output and behavior. Instead of trusting only automated scores, testers invite users, domain experts, or crowd workers to watch tasks, label answers, flag errors, and rate clarity, fairness, or safety. Their feedback shows problems that numbers alone miss, such as hidden bias, confusing language, or actions that feel wrong to a person. Teams study these notes, adjust the model, and run another round, repeating until the agent meets quality and trust goals. Mixing human judgment with data leads to a system that is more accurate, useful, and safe for everyday use.",
-    "links": []
+    "description": "Human-in-the-loop evaluation checks an AI agent by letting real people judge its output and behavior. Instead of trusting only automated scores, testers invite users, domain experts, or crowd workers to watch tasks, label answers, flag errors, and rate clarity, fairness, or safety. Their feedback shows problems that numbers alone miss, such as hidden bias, confusing language, or actions that feel wrong to a person. Teams study these notes, adjust the model, and run another round, repeating until the agent meets quality and trust goals. Mixing human judgment with data leads to a system that is more accurate, useful, and safe for everyday use.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Human in the Loop · Cloudflare Agents",
+        "url": "https://developers.cloudflare.com/agents/concepts/human-in-the-loop/",
+        "type": "article"
+      },
+      {
+        "title": "What is Human-in-the-Loop: A Guide",
+        "url": "https://logifusion.com/what-is-human-in-the-loop-htil/",
+        "type": "article"
+      },
+      {
+        "title": "Human-in-the-Loop ML",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms-human-review-workflow.html",
+        "type": "article"
+      },
+      {
+        "title": "The Importance of Human Feedback in AI (Hugging Face Blog)",
+        "url": "https://huggingface.co/blog/rlhf",
+        "type": "article"
+      }
+    ]
   },
   "xp7TCTRE9HP60_rGzTUF6": {
     "title": "LangSmith",
-    "description": "LangSmith is a tool that helps you see how well your AI agents work. It lets you record every step the agent takes, from the first input to the final answer. You can replay these steps to find places where the agent goes wrong. LangSmith also lets you create test sets with real user prompts and compare new model versions against them. It shows clear numbers on speed, cost, and accuracy so you can spot trade-offs. Because LangSmith links to LangChain, you can add it with only a few extra lines of code. The web dashboard then gives charts, error logs, and side-by-side result views. This makes it easy to track progress, fix bugs, and prove that your agent is getting better over time.",
-    "links": []
+    "description": "LangSmith is a tool that helps you see how well your AI agents work. It lets you record every step the agent takes, from the first input to the final answer. You can replay these steps to find places where the agent goes wrong. LangSmith also lets you create test sets with real user prompts and compare new model versions against them. It shows clear numbers on speed, cost, and accuracy so you can spot trade-offs. Because LangSmith links to LangChain, you can add it with only a few extra lines of code. The web dashboard then gives charts, error logs, and side-by-side result views. This makes it easy to track progress, fix bugs, and prove that your agent is getting better over time.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "LangSmith",
+        "url": "https://smith.langchain.com/",
+        "type": "article"
+      },
+      {
+        "title": "LangSmith Documentation",
+        "url": "https://docs.smith.langchain.com/",
+        "type": "article"
+      },
+      {
+        "title": "Harden your application with LangSmith Evaluation",
+        "url": "https://www.langchain.com/evaluation",
+        "type": "article"
+      },
+      {
+        "title": "What is LangSmith and Why should I care as a developer?",
+        "url": "https://medium.com/around-the-prompt/what-is-langsmith-and-why-should-i-care-as-a-developer-e5921deb54b5",
+        "type": "article"
+      }
+    ]
   },
   "YzEDtGEaMaMWVt0W03HRt": {
     "title": "Ragas",
-    "description": "Ragas is an open-source tool used to check how well a Retrieval-Augmented Generation (RAG) agent works. You give it the user question, the passages the agent pulled from a knowledge base, and the final answer. Ragas then scores the answer for things like correctness, relevance, and whether the cited passages really support the words in the answer. It uses large language models under the hood, so you do not need to write your own scoring rules. Results appear in a clear report that shows strong and weak spots in the pipeline. With this feedback you can change prompts, retriever settings, or model choices and quickly see if quality goes up. This makes testing RAG systems faster, repeatable, and less guess-based.",
-    "links": []
+    "description": "Ragas is an open-source tool used to check how well a Retrieval-Augmented Generation (RAG) agent works. You give it the user question, the passages the agent pulled from a knowledge base, and the final answer. Ragas then scores the answer for things like correctness, relevance, and whether the cited passages really support the words in the answer. It uses large language models under the hood, so you do not need to write your own scoring rules. Results appear in a clear report that shows strong and weak spots in the pipeline. With this feedback you can change prompts, retriever settings, or model choices and quickly see if quality goes up. This makes testing RAG systems faster, repeatable, and less guess-based.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "explodinggradients/ragas",
+        "url": "https://github.com/explodinggradients/ragas",
+        "type": "opensource"
+      },
+      {
+        "title": "Ragas Documentation",
+        "url": "https://docs.ragas.io/en/latest/",
+        "type": "article"
+      },
+      {
+        "title": "Evaluating RAG Applications with RAGAs",
+        "url": "https://towardsdatascience.com/evaluating-rag-applications-with-ragas-81d67b0ee31a/n",
+        "type": "article"
+      }
+    ]
   },
   "0924QUH1wV7Mp-Xu0FAhF": {
     "title": "DeepEval",
-    "description": "DeepEval is an open-source tool that helps you test and score the answers your AI agent gives. You write small test cases that show an input and the reply you hope to get, or a rule the reply must follow. DeepEval runs the agent, checks the reply with built-in measures such as similarity, accuracy, or safety, and then marks each test as pass or fail. You can add your own checks, store tests in code or YAML files, and run them in a CI pipeline so every new model or prompt version gets the same quick audit. The fast feedback makes it easy to spot errors, cut down on hallucinations, and compare different models before you ship.",
-    "links": []
+    "description": "DeepEval is an open-source tool that helps you test and score the answers your AI agent gives. You write small test cases that show an input and the reply you hope to get, or a rule the reply must follow. DeepEval runs the agent, checks the reply with built-in measures such as similarity, accuracy, or safety, and then marks each test as pass or fail. You can add your own checks, store tests in code or YAML files, and run them in a CI pipeline so every new model or prompt version gets the same quick audit. The fast feedback makes it easy to spot errors, cut down on hallucinations, and compare different models before you ship.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "DeepEval GitHub Repository",
+        "url": "https://github.com/confident-ai/deepeval",
+        "type": "opensource"
+      },
+      {
+        "title": "DeepEval - The Open-Source LLM Evaluation Framework",
+        "url": "https://www.deepeval.com/",
+        "type": "article"
+      },
+      {
+        "title": "Evaluate LLMs Effectively Using DeepEval: A Pratical Guide",
+        "url": "https://www.datacamp.com/tutorial/deepeval",
+        "type": "article"
+      },
+      {
+        "title": "DeepEval - LLM Evaluation Framework",
+        "url": "https://www.youtube.com/watch?v=ZNs2dCXHlfo",
+        "type": "video"
+      }
+    ]
   },
   "zs6LM8WEnb0ERWpiaQCgc": {
     "title": "Structured logging & tracing",
-    "description": "Structured logging and tracing are ways to record what an AI agent does so you can find and fix problems fast. Instead of dumping plain text, the agent writes logs in a fixed key-value format, such as time, user\\_id, step, and message. Because every entry follows the same shape, search tools can filter, sort, and count events with ease. Tracing links those log lines into a chain that follows one request or task across many functions, threads, or microservices. By adding a unique trace ID to each step, you can see how long each part took and where errors happened. Together, structured logs and traces offer clear, machine-readable data that helps developers spot slow code paths, unusual behavior, and hidden bugs without endless manual scans.",
-    "links": []
+    "description": "Structured logging and tracing are ways to record what an AI agent does so you can find and fix problems fast. Instead of dumping plain text, the agent writes logs in a fixed key-value format, such as time, user\\_id, step, and message. Because every entry follows the same shape, search tools can filter, sort, and count events with ease. Tracing links those log lines into a chain that follows one request or task across many functions, threads, or microservices. By adding a unique trace ID to each step, you can see how long each part took and where errors happened. Together, structured logs and traces offer clear, machine-readable data that helps developers spot slow code paths, unusual behavior, and hidden bugs without endless manual scans.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Structured Logging: A Comprehensive Guide",
+        "url": "https://www.graphapp.ai/blog/understanding-structured-logging-a-comprehensive-guide",
+        "type": "article"
+      },
+      {
+        "title": "Structured Logging & Cloud Logging",
+        "url": "https://cloud.google.com/logging/docs/structured-logging",
+        "type": "article"
+      },
+      {
+        "title": "Best Practices for Logging in AI Applications",
+        "url": "https://www.restack.io/p/best-ai-practices-software-compliance-answer-logging-best-practices-cat-ai",
+        "type": "article"
+      }
+    ]
   },
   "SS8mGqf9wfrNqenIWvN8Z": {
     "title": "LangSmith",
-    "description": "LangSmith is a web tool that helps you see and fix what your AI agents are doing. It records each call that the agent makes to a language model, the input it used, and the answer it got back. You can replay any step, compare different prompts, measure cost, speed, and error rates, and tag runs for easy search. It also lets you store test sets and run quick checks so you know if new code makes the agent worse. By showing clear traces and charts, LangSmith makes it easier to debug, improve, and trust AI systems built with LangChain or other frameworks.",
-    "links": []
+    "description": "LangSmith is a web tool that helps you see and fix what your AI agents are doing. It records each call that the agent makes to a language model, the input it used, and the answer it got back. You can replay any step, compare different prompts, measure cost, speed, and error rates, and tag runs for easy search. It also lets you store test sets and run quick checks so you know if new code makes the agent worse. By showing clear traces and charts, LangSmith makes it easier to debug, improve, and trust AI systems built with LangChain or other frameworks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "LangSmith",
+        "url": "https://smith.langchain.com/",
+        "type": "article"
+      },
+      {
+        "title": "LangSmith Documentation",
+        "url": "https://docs.smith.langchain.com/",
+        "type": "article"
+      },
+      {
+        "title": "Harden your application with LangSmith Evaluation",
+        "url": "https://www.langchain.com/evaluation",
+        "type": "article"
+      },
+      {
+        "title": "What is LangSmith and Why should I care as a developer?",
+        "url": "https://medium.com/around-the-prompt/what-is-langsmith-and-why-should-i-care-as-a-developer-e5921deb54b5",
+        "type": "article"
+      }
+    ]
   },
   "MLxP5N0Vrmwh-kyvNeGXn": {
     "title": "Helicone",
-    "description": "Helicone is an open-source tool that helps you watch and understand how your AI agents talk to large language models. You send your model calls through Helicone’s proxy, and it records each request and response without changing the result. A clear web dashboard then shows logs, latency, token counts, error rates, and cost for every call. You can filter, search, and trace a single user journey, which makes it easy to spot slow prompts or rising costs. Helicone also lets you set alerts and share traces with your team, so problems get fixed fast and future changes are safer.",
-    "links": []
+    "description": "Helicone is an open-source tool that helps you watch and understand how your AI agents talk to large language models. You send your model calls through Helicone’s proxy, and it records each request and response without changing the result. A clear web dashboard then shows logs, latency, token counts, error rates, and cost for every call. You can filter, search, and trace a single user journey, which makes it easy to spot slow prompts or rising costs. Helicone also lets you set alerts and share traces with your team, so problems get fixed fast and future changes are safer.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Helicone/helicone",
+        "url": "https://github.com/Helicone/helicone",
+        "type": "opensource"
+      },
+      {
+        "title": "Helicone",
+        "url": "https://www.helicone.ai/",
+        "type": "article"
+      },
+      {
+        "title": "Helicone OSS LLM Observability",
+        "url": "https://docs.helicone.ai/getting-started/quick-start",
+        "type": "article"
+      }
+    ]
   },
   "UoIheaJlShiceafrWALEH": {
     "title": "LangFuse",
-    "description": "LangFuse is a free, open-source tool that lets you watch and debug AI agents while they run. You add a small code snippet to your agent, and LangFuse starts collecting every prompt, model response, and user input. It shows this data as neat timelines, so you can see each step the agent takes, how long the calls cost, and where errors happen. You can tag runs, search through them, and compare different prompt versions to find what works best. The dashboard also tracks token usage and latency, helping you cut cost and improve speed. Because LangFuse stores data in your own database, you keep full control of sensitive text. It works well with popular frameworks like LangChain and can send alerts to Slack or email when something breaks.",
-    "links": []
+    "description": "LangFuse is a free, open-source tool that lets you watch and debug AI agents while they run. You add a small code snippet to your agent, and LangFuse starts collecting every prompt, model response, and user input. It shows this data as neat timelines, so you can see each step the agent takes, how long the calls cost, and where errors happen. You can tag runs, search through them, and compare different prompt versions to find what works best. The dashboard also tracks token usage and latency, helping you cut cost and improve speed. Because LangFuse stores data in your own database, you keep full control of sensitive text. It works well with popular frameworks like LangChain and can send alerts to Slack or email when something breaks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "langfuse/langfuse",
+        "url": "https://github.com/langfuse/langfuse",
+        "type": "opensource"
+      },
+      {
+        "title": "LangFuse",
+        "url": "https://langfuse.com/",
+        "type": "article"
+      },
+      {
+        "title": "LangFuse Documentation",
+        "url": "https://langfuse.com/docs",
+        "type": "article"
+      },
+      {
+        "title": "Langfuse: Open Source LLM Engineering Platform",
+        "url": "https://www.ycombinator.com/companies/langfuse",
+        "type": "article"
+      }
+    ]
   },
   "7UqPXUzqKYXklnB3x-tsv": {
     "title": "openllmetry",
-    "description": "openllmetry is a small Python library that makes it easy to watch what your AI agent is doing and how well it is working. It wraps calls to large-language-model APIs, vector stores, and other tools, then sends logs, traces, and simple metrics to any backend that speaks the OpenTelemetry standard, such as Jaeger, Zipkin, or Grafana. You add one or two lines of code at start-up, and the library captures prompt text, model name, latency, token counts, and costs each time the agent asks the model for an answer. The data helps you spot slow steps, high spend, or bad answers, and it lets you play back full traces to debug agent chains. Because it follows OpenTelemetry, you can mix these AI traces with normal service traces and see the whole flow in one place.",
-    "links": []
+    "description": "openllmetry is a small Python library that makes it easy to watch what your AI agent is doing and how well it is working. It wraps calls to large-language-model APIs, vector stores, and other tools, then sends logs, traces, and simple metrics to any backend that speaks the OpenTelemetry standard, such as Jaeger, Zipkin, or Grafana. You add one or two lines of code at start-up, and the library captures prompt text, model name, latency, token counts, and costs each time the agent asks the model for an answer. The data helps you spot slow steps, high spend, or bad answers, and it lets you play back full traces to debug agent chains. Because it follows OpenTelemetry, you can mix these AI traces with normal service traces and see the whole flow in one place.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "traceloop/openllmetry",
+        "url": "https://github.com/traceloop/openllmetry",
+        "type": "opensource"
+      },
+      {
+        "title": "OpenTelemetry Documentation",
+        "url": "https://www.traceloop.com/blog/openllmetry",
+        "type": "article"
+      },
+      {
+        "title": "What is OpenLLMetry? - traceloop",
+        "url": "https://www.traceloop.com/docs/openllmetry/introduction",
+        "type": "article"
+      },
+      {
+        "title": "Use Traceloop with Python",
+        "url": "https://www.traceloop.com/docs/openllmetry/getting-started-python",
+        "type": "article"
+      }
+    ]
   },
   "SU2RuicMUo8tiAsQtDI1k": {
     "title": "Prompt Injection / Jailbreaks",
-    "description": "Prompt injection, also called a jailbreak, is a trick that makes an AI system break its own rules. An attacker hides special words or symbols inside normal-looking text. When the AI reads this text, it follows the hidden instructions instead of its safety rules. The attacker might force the AI to reveal private data, produce harmful content, or give wrong advice. This risk grows when the AI talks to other software or pulls text from the internet, because harmful prompts can slip in without warning. Good defenses include cleaning user input, setting strong guardrails inside the model, checking outputs for policy breaks, and keeping humans in the loop for high-risk tasks.",
-    "links": []
+    "description": "Prompt injection, also called a jailbreak, is a trick that makes an AI system break its own rules. An attacker hides special words or symbols inside normal-looking text. When the AI reads this text, it follows the hidden instructions instead of its safety rules. The attacker might force the AI to reveal private data, produce harmful content, or give wrong advice. This risk grows when the AI talks to other software or pulls text from the internet, because harmful prompts can slip in without warning. Good defenses include cleaning user input, setting strong guardrails inside the model, checking outputs for policy breaks, and keeping humans in the loop for high-risk tasks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Prompt Injection vs. Jailbreaking: What's the Difference?",
+        "url": "https://learnprompting.org/blog/injection_jailbreaking",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Injection vs Prompt Jailbreak",
+        "url": "https://codoid.com/ai/prompt-injection-vs-prompt-jailbreak-a-detailed-comparison/",
+        "type": "article"
+      },
+      {
+        "title": "How Prompt Attacks Exploit GenAI and How to Fight Back",
+        "url": "https://unit42.paloaltonetworks.com/new-frontier-of-genai-threats-a-comprehensive-guide-to-prompt-attacks/",
+        "type": "article"
+      }
+    ]
   },
   "UVzLGXG6K7HQVHmw8ZAv2": {
     "title": "Tool sandboxing / Permissioning",
-    "description": "Tool sandboxing keeps the AI agent inside a safe zone where it can only run approved actions and cannot touch the wider system. Permissioning sets clear rules that say which files, networks, or commands the agent may use. Together they stop errors, leaks, or abuse by limiting what the agent can reach and do. Developers grant the smallest set of rights, watch activity, and block anything outside the plan. If the agent needs new access, it must ask and get a fresh permit. This simple fence protects user data, reduces harm, and builds trust in the agent’s work.",
-    "links": []
+    "description": "Tool sandboxing keeps the AI agent inside a safe zone where it can only run approved actions and cannot touch the wider system. Permissioning sets clear rules that say which files, networks, or commands the agent may use. Together they stop errors, leaks, or abuse by limiting what the agent can reach and do. Developers grant the smallest set of rights, watch activity, and block anything outside the plan. If the agent needs new access, it must ask and get a fresh permit. This simple fence protects user data, reduces harm, and builds trust in the agent’s work.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "AI Sandbox | Harvard University Information Technology",
+        "url": "https://www.huit.harvard.edu/ai-sandbox",
+        "type": "article"
+      },
+      {
+        "title": "How to Set Up AI Sandboxes to Maximize Adoption",
+        "url": "https://medium.com/@emilholmegaard/how-to-set-up-ai-sandboxes-to-maximize-adoption-without-compromising-ethics-and-values-637c70626130",
+        "type": "article"
+      },
+      {
+        "title": "Sandboxes for AI - The Datasphere Initiative",
+        "url": "https://www.thedatasphere.org/datasphere-publish/sandboxes-for-ai/",
+        "type": "article"
+      }
+    ]
   },
   "rdlYBJNNyZUshzsJawME4": {
     "title": "Data Privacy + PII Redaction",
-    "description": "AI agents often handle user text, images, and logs that carry personal data such as names, phone numbers, addresses, or ID numbers. If this data leaks, people may face fraud, stalking, or other harm. Privacy laws like GDPR and CCPA require teams to keep such data safe and to use it only for clear, lawful reasons. A key safeguard is PII redaction: the system scans each input and output, finds any detail that can identify a person, and masks or deletes it before storage or sharing. Redaction methods include simple pattern rules, machine-learning models, or a mix of both. Keep audit trails, set strong access limits, and test the redaction flow often to be sure no private detail slips through.",
-    "links": []
+    "description": "AI agents often process text, images, and logs that include personal data like names, phone numbers, or addresses. Leaks can cause fraud, stalking, or other harm, so laws like GDPR and CCPA require strict protections. A key method is PII redaction: scanning inputs and outputs to find and mask any personal details before storage or sharing. Redaction uses pattern rules, machine learning, or both. Teams should also keep audit logs, enforce access controls, and test their redaction flows often to prevent leaks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GDPR Compliance Overview",
+        "url": "https://gdpr.eu/",
+        "type": "article"
+      },
+      {
+        "title": "Protect Sensitive Data with PII Redaction Software",
+        "url": "https://redactor.ai/blog/pii-redaction-software-guide",
+        "type": "article"
+      },
+      {
+        "title": "A Complete Guide on PII Redaction",
+        "url": "https://enthu.ai/blog/what-is-pii-redaction/",
+        "type": "article"
+      }
+    ]
   },
   "EyLo2j8IQsIK91SKaXkmK": {
     "title": "Bias & Toxicity Guardrails",
-    "description": "Bias and toxicity guardrails keep an AI agent from giving unfair or harmful results. Bias shows up when training data favors certain groups or views. Toxicity is language that is hateful, violent, or rude. To stop this, start with clean and balanced data. Remove slurs, stereotypes, and spam. Add examples from many voices so the model learns fair patterns. During training, test the model often and adjust weights or rules that lean one way. After training, put filters in place that block toxic words or flag unfair answers before users see them. Keep logs, run audits, and ask users for feedback to catch new issues early. Write down every step so builders and users know the limits and risks. These actions protect people, follow laws, and help users trust the AI.",
-    "links": []
+    "description": "Bias and toxicity guardrails keep an AI agent from giving unfair or harmful results. Bias shows up when training data favors certain groups or views. Toxicity is language that is hateful, violent, or rude. To stop this, start with clean and balanced data. Remove slurs, stereotypes, and spam. Add examples from many voices so the model learns fair patterns. During training, test the model often and adjust weights or rules that lean one way. After training, put filters in place that block toxic words or flag unfair answers before users see them. Keep logs, run audits, and ask users for feedback to catch new issues early. Write down every step so builders and users know the limits and risks. These actions protect people, follow laws, and help users trust the AI.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Define the Agent Guardrails",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-agent-planning/define-the-agent-guardrails",
+        "type": "article"
+      },
+      {
+        "title": "How to Build Safe AI Agents: Best Practices for Guardrails",
+        "url": "https://medium.com/@sahin.samia/how-to-build-safe-ai-agents-best-practices-for-guardrails-and-oversight-a0085b50c022",
+        "type": "article"
+      }
+    ]
   },
   "63nsfJFO1BwjLX_ZVaPFC": {
     "title": "Safety + Red Team Testing",
-    "description": "Safety + Red Team Testing is the practice of checking an AI agent for harmful or risky behavior before and after release. Safety work sets rules, guardrails, and alarms so the agent follows laws, keeps data private, and treats people fairly. Red team testing sends skilled testers to act like attackers or troublemakers. They type tricky prompts, try to leak private data, force biased outputs, or cause the agent to give dangerous advice. Every weakness they find is logged and fixed by adding filters, better training data, stronger limits, or live monitoring. Running these tests often lowers the chance of real-world harm and builds trust with users and regulators.",
-    "links": []
+    "description": "Safety + Red Team Testing is the practice of checking an AI agent for harmful or risky behavior before and after release. Safety work sets rules, guardrails, and alarms so the agent follows laws, keeps data private, and treats people fairly. Red team testing sends skilled testers to act like attackers or troublemakers. They type tricky prompts, try to leak private data, force biased outputs, or cause the agent to give dangerous advice. Every weakness they find is logged and fixed by adding filters, better training data, stronger limits, or live monitoring. Running these tests often lowers the chance of real-world harm and builds trust with users and regulators.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated AI Red Teaming Roadmap",
+        "url": "https://roadmap.sh/ai-red-teaming",
+        "type": "article"
+      },
+      {
+        "title": "Enhancing AI safety: Insights and lessons from red teaming",
+        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/01/14/enhancing-ai-safety-insights-and-lessons-from-red-teaming/",
+        "type": "article"
+      },
+      {
+        "title": "AI Safety Testing in the Absence of Regulations",
+        "url": "https://aisecuritycentral.com/ai-safety-testing/",
+        "type": "article"
+      },
+      {
+        "title": "A Guide to AI Red Teaming - HiddenLayer",
+        "url": "https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/",
+        "type": "article"
+      }
+    ]
   }
 }

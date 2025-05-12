@@ -18,4 +18,4 @@ if(isset($_POST['csrf']) && $_POST['csrf'] === $_SESSION['csrf']) {
 
 Visit the following resources to learn more:
 
-- [@article@PHP Tutorial CSRF] (https://www.phptutorial.net/php-tutorial/php-csrf/)
+- [@article@PHP Tutorial CSRF](https://www.phptutorial.net/php-tutorial/php-csrf/)

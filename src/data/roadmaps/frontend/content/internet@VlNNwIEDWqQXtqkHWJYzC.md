@@ -4,5 +4,5 @@ The Internet is a global network of interconnected computer networks that use th
 
 Visit the following resources to learn more:
 
-- [@roadmap@Introduction to Internet](https://roadmap.sh/guides/what-is-internet)
+- [@article@Introduction to Internet](https://roadmap.sh/guides/what-is-internet)
 - [@article@The Internet](https://en.wikipedia.org/wiki/Internet)

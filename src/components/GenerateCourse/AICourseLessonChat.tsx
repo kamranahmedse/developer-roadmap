@@ -399,7 +399,7 @@ type AIChatCardProps = {
   html?: string;
 };
 
-function AIChatCard(props: AIChatCardProps) {
+export function AIChatCard(props: AIChatCardProps) {
   const { role, content, html: defaultHtml } = props;
 
   const html = useMemo(() => {
