@@ -101,8 +101,8 @@ for (const roadmapId of editorRoadmapIds) {
   > = {};
 
   for (const node of nodes) {
-    const ndoeDirPatterWithoutExt = `${slugify(node?.data?.label as string)}@${node.id}`;
-    const nodeDirPattern = `${ndoeDirPatterWithoutExt}.md`;
+    const nodeDirPatternWithoutExt = `${slugify(node?.data?.label as string)}@${node.id}`;
+    const nodeDirPattern = `${nodeDirPatternWithoutExt}.md`;
     if (!roadmapContentFiles.includes(nodeDirPattern)) {
       contentMap[nodeDirPattern] = {
         title: node?.data?.label as string,
