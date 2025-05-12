@@ -161,9 +161,12 @@ export function BuyButton(props: BuyButtonProps) {
       return;
     }
 
+    const encodedCourseSlug = encodeURIComponent(`/courses/${SQL_COURSE_SLUG}`);
+    const successUrl = `/thank-you?next=${encodedCourseSlug}`;
+    
     createCheckoutSession({
       courseId: SQL_COURSE_SLUG,
-      success: `/courses/${SQL_COURSE_SLUG}?${COURSE_PURCHASE_SUCCESS_PARAM}=1`,
+      success: successUrl,
       cancel: `/courses/${SQL_COURSE_SLUG}?${COURSE_PURCHASE_SUCCESS_PARAM}=0`,
     });
   }
