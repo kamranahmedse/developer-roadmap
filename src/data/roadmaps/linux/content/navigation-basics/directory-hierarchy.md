@@ -11,6 +11,7 @@ In Linux, understanding the directory hierarchy is crucial for efficient navigat
 - `/usr`: User programs and data.
 - `/lib`: Shared libraries.
 - `/tmp`: Temporary files.
+- `/opt`: Third-party applications.
 
 Visit the following resources to learn more:
 
