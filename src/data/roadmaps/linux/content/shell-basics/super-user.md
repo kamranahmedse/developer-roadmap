@@ -1,17 +1,34 @@
-# Super User
+# Super User (root) in Linux
 
-The Super User, also known as "root user", represents a user account in Linux with extensive powers, privileges, and capabilities. This user has complete control over the system and can access any data stored on it. This includes the ability to modify system configurations, change other user's passwords, install software, and perform more administrative tasks in the shell environment.
+The **super user** (also known as **root**) is the account on Unix-like systems with **UID 0**. It has full control over the system: it can read or write any file, kill any process, bind to low‐numbered ports, install or remove software, change other users’ passwords, load kernel modules, and more.
 
-The usage of super user is critical to operating a Linux system properly and safely as it can potentially cause serious damage. The super user can be accessed through the `sudo` or `su` commands.
+> **⚠️ Warning:** Mistakes as root can brick your system, wipe data, or open security holes. Always proceed with caution.
 
-Specifically, `su` switches the current user to the root, whereas `sudo` allows you to run a command as another user, default being root. However, they also have a key difference which is `sudo` will log the commands and its arguments which can be a handy audit trail.
+---
+
+## Table of Contents
+
+1. [Becoming root: `su` vs. `sudo`](#becoming-root-su-vs-sudo)  
+2. [Configuring `sudo`](#configuring-sudo)  
+3. [Root vs. Privileged Users](#root-vs-privileged-users)  
+4. [Security Best Practices](#security-best-practices)  
+5. [When to use `root` vs. `sudo`](#when-to-use-root-vs-sudo)  
+6. [Further Reading](#further-reading)
+
+---
+
+## Becoming root: `su` vs. `sudo`
+
+| Command       | What it does                                    | Password prompt        | Environment                     | Logging                       |
+|---------------|-------------------------------------------------|------------------------|---------------------------------|-------------------------------|
+| `su -`        | Switch to root user (login shell)               | root’s password        | root’s login env (`$HOME`, `$PATH`) | none by default               |
+| `sudo <cmd>`  | Run one command as root (or another user)       | your own password      | your normal env (with resets)    | logged to `/var/log/auth.log` |
+
+### Examples
 
 ```bash
-# This would prompt for root password and switch you to root usermode
+# Full root login shell (reads root’s shell startup files)
 $ su -
 
-# To perform a command as superuser (if allowed in sudoers list)
-$ sudo <command>
-```
-
-Note that super user privileges should be handled with care due to their potential to disrupt the system's functionality. Mistaken changes to key system files or unauthorized access can lead to severe issues.
+# Run one command as root (if you're in sudoers)
+$ sudo apt update
