@@ -717,8 +717,14 @@
   },
   "J9yIXZTtwbFzH2u4dI1ep": {
     "title": "CSRF Protection",
-    "description": "Cross-Site Request Forgery (CSRF) Protection in PHP is a method where a website can defend itself against unwanted actions performed on behalf of the users without their consent. It's a critical aspect of security as it safeguards users against potential harmful activities. Here's an example: if users are logged into a website and get tricked into clicking a deceitful link, CSRF attacks could be triggered. To protect your PHP applications from such attacks, you can generate a unique token for every session and include it as a hidden field for all form submissions. Afterwards, you need to verify this token on the server side before performing any action.\n\n    <?php\n    // Generate CSRF token\n    if(empty($_SESSION['csrf'])) {\n        $_SESSION['csrf'] = bin2hex(random_bytes(32));\n    }\n    \n    // Verify CSRF token\n    if(isset($_POST['csrf']) && $_POST['csrf'] === $_SESSION['csrf']) {\n        // valid CSRF token, perform action\n    }\n    ?>\n    \n\nVisit the following resources to learn more:\n\n*   \\[@article@PHP Tutorial CSRF\\] ([https://www.phptutorial.net/php-tutorial/php-csrf/](https://www.phptutorial.net/php-tutorial/php-csrf/))",
-    "links": []
+    "description": "Cross-Site Request Forgery (CSRF) Protection in PHP is a method where a website can defend itself against unwanted actions performed on behalf of the users without their consent. It's a critical aspect of security as it safeguards users against potential harmful activities. Here's an example: if users are logged into a website and get tricked into clicking a deceitful link, CSRF attacks could be triggered. To protect your PHP applications from such attacks, you can generate a unique token for every session and include it as a hidden field for all form submissions. Afterwards, you need to verify this token on the server side before performing any action.\n\n    <?php\n    // Generate CSRF token\n    if(empty($_SESSION['csrf'])) {\n        $_SESSION['csrf'] = bin2hex(random_bytes(32));\n    }\n    \n    // Verify CSRF token\n    if(isset($_POST['csrf']) && $_POST['csrf'] === $_SESSION['csrf']) {\n        // valid CSRF token, perform action\n    }\n    ?>\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "PHP Tutorial CSRF",
+        "url": "https://www.phptutorial.net/php-tutorial/php-csrf/",
+        "type": "article"
+      }
+    ]
   },
   "JbWFfJiCRrXDhnuIx_lqx": {
     "title": "Password Hashing",
@@ -890,7 +896,7 @@
     "links": [
       {
         "title": "Inheritance",
-        "url": "https://www.php.net/manual/en/keyword.extends.php",
+        "url": "https://www.php.net/manual/en/language.oop5.inheritance.php",
         "type": "article"
       }
     ]
@@ -912,8 +918,8 @@
     "links": [
       {
         "title": "Polymorphism",
-        "url": "https://www.php.net/manual/en/language.oop5.polymorphism.php",
-        "type": "article"
+        "url": "https://www.phptutorial.net/php-oop/php-polymorphism/",
+        "type": "opensource"
       }
     ]
   },
