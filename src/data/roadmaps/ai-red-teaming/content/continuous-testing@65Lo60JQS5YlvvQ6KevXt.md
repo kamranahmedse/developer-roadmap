@@ -4,6 +4,6 @@ Applying continuous testing principles to AI security involves integrating autom
 
 Learn more from the following resources:
 
-- [@article@Continuous Automated Red Teaming (CART) - FireCompass](https://www.firecompass.com/continuous-automated-red-teaming/) - Explains the concept of CART.
-- [@article@What is Continuous Penetration Testing? Process and Benefits - Qualysec Technologies](https://qualysec.com/continuous-penetration-testing/) - Related concept applied to pen testing.
-- [@guide@What is Continuous Testing and How Does it Work? - Black Duck](https://www.blackduck.com/glossary/what-is-continuous-testing.html) - General definition and benefits.
+- [@article@Continuous Automated Red Teaming (CART)](https://www.firecompass.com/continuous-automated-red-teaming/)
+- [@article@What is Continuous Penetration Testing? Process and Benefits](https://qualysec.com/continuous-penetration-testing/)
+- [@guide@What is Continuous Testing and How Does it Work?](https://www.blackduck.com/glossary/what-is-continuous-testing.html)

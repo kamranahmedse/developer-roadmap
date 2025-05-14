@@ -1,6 +1,6 @@
 # Composition API
 
-With the release of Vue 3, developers now have access to the Composition API, a new way to write Vue components. This API allows features to be grouped together logically, rather than having to organize your single-file components by function. Using the Composition API can lead to more readable code, and gives the developer more flexibility when developing their applications.
+Vue offers many approaches for how to write components, including the "Composition API", which is most commonly used via "Script Setup". This approach is based around pulling in low level atomic functions used by Vue's reactivity engine. By composing these low level functions together, you can craft your own system for writing components. One feature this allows for is extending reactivity outside of components. This means you can extract your custom functions for reuse in multiple components. When reusing reactive logic, your functions are called "composables". 
 
 Visit the following resources to learn more:
 

@@ -658,11 +658,6 @@
         "title": "Angular Official Docs - Event Binding",
         "url": "https://angular.dev/guide/templates/event-binding",
         "type": "article"
-      },
-      {
-        "title": "Event Binding in Angular",
-        "url": "https://www.knowledgehut.com/blog/web-development/event-binding-in-angular",
-        "type": "article"
       }
     ]
   },

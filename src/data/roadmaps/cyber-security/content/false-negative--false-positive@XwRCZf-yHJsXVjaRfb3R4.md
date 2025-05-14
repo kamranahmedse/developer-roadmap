@@ -8,5 +8,6 @@ To have an effective cybersecurity system, security professionals aim to maximiz
 
 Learn more from the following resources:
 
+- [@article@Difference Between False Positive and False Negative](https://www.differencebetween.net/science/difference-between-false-positive-and-false-negative/)
 - [@video@What is a false positive virus?](https://www.youtube.com/watch?v=WrcAGBvIT14)
 - [@video@False positives and false negatives](https://www.youtube.com/watch?v=bUNBzMnfHLw)

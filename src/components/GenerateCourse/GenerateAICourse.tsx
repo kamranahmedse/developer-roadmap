@@ -7,7 +7,6 @@ import { generateCourse } from '../../helper/generate-ai-course';
 import { useQuery } from '@tanstack/react-query';
 import { getAiCourseOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
-import { useAuth } from '../../hooks/use-auth';
 
 type GenerateAICourseProps = {};
 
@@ -21,8 +20,8 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
-  const currentUser = useAuth();
 
+  const [creatorId, setCreatorId] = useState('');
   const [courseId, setCourseId] = useState('');
   const [courseSlug, setCourseSlug] = useState('');
   const [course, setCourse] = useState<AiCourse>({
@@ -54,6 +53,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
     const params = getUrlParams();
     const paramsTerm = params?.term;
     const paramsDifficulty = params?.difficulty;
+    const paramsSrc = params?.src || 'search';
     if (!paramsTerm || !paramsDifficulty) {
       return;
     }
@@ -87,6 +87,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       instructions: paramsCustomInstructions,
       goal: paramsGoal,
       about: paramsAbout,
+      src: paramsSrc,
     });
   }, [term, difficulty]);
 
@@ -98,9 +99,18 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
     about?: string;
     isForce?: boolean;
     prompt?: string;
+    src?: string;
   }) => {
-    const { term, difficulty, isForce, prompt, instructions, goal, about } =
-      options;
+    const {
+      term,
+      difficulty,
+      isForce,
+      prompt,
+      instructions,
+      goal,
+      about,
+      src,
+    } = options;
 
     if (!isLoggedIn()) {
       window.location.href = '/ai';
@@ -113,6 +123,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       slug: courseSlug,
       onCourseIdChange: setCourseId,
       onCourseSlugChange: setCourseSlug,
+      onCreatorIdChange: setCreatorId,
       onCourseChange: setCourse,
       onLoadingChange: setIsLoading,
       onError: setError,
@@ -121,6 +132,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
       about,
       isForce,
       prompt,
+      src,
     });
   };
 
@@ -152,7 +164,7 @@ export function GenerateAICourse(props: GenerateAICourseProps) {
   return (
     <AICourseContent
       courseSlug={courseSlug}
-      creatorId={currentUser?.id}
+      creatorId={creatorId}
       course={course}
       isLoading={isLoading}
       error={error}

@@ -13,494 +13,394 @@ const __dirname = dirname(__filename);
  * @property {string} text - The text content of the node
  */
 
-const roadmapId = 'php';
+const roadmapId = 'ai-agents';
 
 /** @type {Node[]} */
 const nodes = [
   {
-    "id": "_hYN0gEi9BL24nptEtXWU",
-    "text": "PHP > Introduction to PHP"
+    id: 'ZF5_5Y5zqa75Ov22JACX6',
+    text: 'AI Agents > Transformer Models and LLMs',
   },
   {
-    "id": "_LhLDVZjLt1DoAP1NuUES",
-    "text": "PHP > Introduction to PHP > What is PHP?"
+    id: 'GAjuWyJl9CI1nqXBp6XCf',
+    text: 'AI Agents > LLM Fundamentals > Model Mechanis > Tokenization',
   },
   {
-    "id": "b2CuLrhsUNnb4OxI6RRAS",
-    "text": "PHP > Introduction to PHP > Evolution and History"
+    id: 'dyn1LSioema-Bf9lLTgUZ',
+    text: 'AI Agents > LLM Fundamentals > Model Mechanis > Context Windows',
   },
   {
-    "id": "6sHRQTcoKL3TlgNJlwyx8",
-    "text": "PHP > Introduction to PHP > PHP Versions and Features"
+    id: '1fiWPBV99E2YncqdCgUw2',
+    text: 'AI Agents > LLM Fundamentals > Model Mechanis > Token Based Pricing',
   },
   {
-    "id": "3_TuxOSzBuktBlBF05r_z",
-    "text": "PHP > Installing PHP"
+    id: 'L1zL1GzqjSAjF06pIIXhy',
+    text: 'AI Agents > LLM Fundamentals > Generation Controls > Temperature',
   },
   {
-    "id": "36Y1HkHxhuxh2qVQB8NVE",
-    "text": "PHP > WAMP"
+    id: 'icbp1NjurQfdM0dHnz6v2',
+    text: 'AI Agents > LLM Fundamentals > Generation Controls > Top-p',
   },
   {
-    "id": "-wniKEBwbF0Fi1fHpF-Gc",
-    "text": "PHP > XAMPP"
+    id: 'z_N-Y0zGkv8_qHPuVtimL',
+    text: 'AI Agents > LLM Fundamentals > Generation Controls > Frequency Penalty',
   },
   {
-    "id": "t7p7TU2khaxsZPYAdwFAA",
-    "text": "PHP > MAMP"
+    id: 'Vd8ycw8pW-ZKvg5WYFtoh',
+    text: 'AI Agents > LLM Fundamentals > Generation Controls > Presence Penalty',
   },
   {
-    "id": "7LjxtrmgJtTJc0_kP83Tr",
-    "text": "PHP > LAMP"
+    id: 'K0G-Lw069jXUJwZqHtybd',
+    text: 'AI Agents > LLM Fundamentals > Generation Controls > Stopping Criteria',
   },
   {
-    "id": "hzBUHSuFwLYNooF_vEmrs",
-    "text": "PHP > Basic PHP Syntax"
+    id: 'Bn_BkthrVX_vOuwQzvPZa',
+    text: 'AI Agents > LLM Fundamentals > Generation Controls > Max Length',
   },
   {
-    "id": "D0BtyxyjIBcpfn5wP23WC",
-    "text": "PHP > Variables and Scope"
+    id: 'DSJAhQhc1dQmBHQ8ZkTau',
+    text: 'AI Agents > Model Families and Licences > Open Weight Models',
   },
   {
-    "id": "srIHPZabaCGdB5VvUXaMa",
-    "text": "PHP > Data Types"
+    id: 'tJYmEDDwK0LtEux-kwp9B',
+    text: 'AI Agents > Model Families and Licences > Closed Weight Models',
   },
   {
-    "id": "pzReF4C0mcCWAnpfIJbwl",
-    "text": "PHP > Casting Data Types"
+    id: 'i2NE6haX9-7mdoV5LQ3Ah',
+    text: 'AI Agents > Understand the Basics > Streamed vs Unstreamed Responses',
   },
   {
-    "id": "2ykzBBdYhWuM-neGf0AWP",
-    "text": "PHP > echo"
+    id: 'N3yZfUxphxjiupqGpyaS9',
+    text: 'AI Agents > Understand the Basics > Reasoning vs Standard Models',
   },
   {
-    "id": "NQUmO90sqe7fnzod3Ia8H",
-    "text": "PHP > print"
+    id: '5OW_6o286mj470ElFyJ_5',
+    text: 'AI Agents > Understand the Basics > Fine-tuning vs Prompt Engineering',
   },
   {
-    "id": "wsC7OGXOyfCY4pLLNrR2v",
-    "text": "PHP > print_r"
+    id: 'UIm54UmICKgep6s8Itcyv',
+    text: 'AI Agents > Understand the Basics > Embeddings and Vector Search',
   },
   {
-    "id": "JCCeVC0hOrvIeyfg1ScKA",
-    "text": "PHP > var_dump"
+    id: 'qwVQOwBTLA2yUgRISzC8k',
+    text: 'AI Agents > Understand the Basics > Understand the Basics of RAG',
   },
   {
-    "id": "VLRLymQmLfscrBfzXKvHi",
-    "text": "PHP > Constants"
+    id: 'B8dzg61TGaknuruBgkEJd',
+    text: 'AI Agents > Understand the Basics > Pricing of Common Models',
   },
   {
-    "id": "IhKjvT6CjRz4dsSU7SNQo",
-    "text": "PHP > Arrays"
+    id: 'aFZAm44nP5NefX_9TpT0A',
+    text: 'AI Agents > AI Agents 101 > What are AI Agents?',
   },
   {
-    "id": "j2S8dP3HlAOOoZdpj-7Dx",
-    "text": "PHP > Arrays > Indexed Arrays"
+    id: '2zsOUWJQ8e7wnoHmq1icG',
+    text: 'AI Agents > AI Agents 101 > What are Tools?',
   },
   {
-    "id": "i_NRsOJNNp7AOqMgu5Jg8",
-    "text": "PHP > Arrays > Associative Arrays"
+    id: 'Eih4eybuYB3C2So8K0AT3',
+    text: 'AI Agents > AI Agents 101 > Agent Loop',
   },
   {
-    "id": "uARTOZ-ZwugSmbCJoRS5Y",
-    "text": "PHP > Arrays > Multi-dimensional Arrays"
+    id: 'LU76AhCYDjxdBhpMQ4eMU',
+    text: 'AI Agents > AI Agents 101 > Agent Loop > Perception / User Input',
   },
   {
-    "id": "38YksjvhXCbgnHqkl57Cz",
-    "text": "PHP > Conditionals"
+    id: 'ycPRgRYR4lEBQr_xxHKnM',
+    text: 'AI Agents > AI Agents 101 > Agent Loop > Reason and Plan',
   },
   {
-    "id": "-McOv-ZPTGayX7Mx2Thw1",
-    "text": "PHP > Conditionals > if/else"
+    id: 'sHYd4KsKlmw5Im3nQ19W8',
+    text: 'AI Agents > AI Agents 101 > Agent Loop > Acting / Tool Invocation',
   },
   {
-    "id": "bgJ9-m6Fiu3VCc-NZlbpn",
-    "text": "PHP > Conditionals > switch"
+    id: 'ZJTrun3jK3zBGOTm1jdMI',
+    text: 'AI Agents > AI Agents 101 > Agent Loop > Observation & Reflection',
   },
   {
-    "id": "3gNzX-bw2iqur7U7-_W38",
-    "text": "PHP > Conditionals > match"
+    id: 'PPdAutqJF5G60Eg9lYBND',
+    text: 'AI Agents > AI Agents 101 > Example Usecases > Personal assistant',
   },
   {
-    "id": "w0ntgFBhgGd5RUFd-qlPK",
-    "text": "PHP > Conditionals > Null Coalescing Operator"
+    id: 'PK8w31GlvtmAuU92sHaqr',
+    text: 'AI Agents > AI Agents 101 > Example Usecases > Code generation',
   },
   {
-    "id": "1NXSk8VZDr89jQTTkOL7x",
-    "text": "PHP > Conditionals > Null Safe Operator"
+    id: 'wKYEaPWNsR30TIpHaxSsq',
+    text: 'AI Agents > AI Agents 101 > Example Usecases > Data analysis',
   },
   {
-    "id": "qwt8xN4vuTrY-D0czYITI",
-    "text": "PHP > Loops"
+    id: '5oLc-235bvKhApxzYFkEc',
+    text: 'AI Agents > AI Agents 101 > Example Usecases > Web Scraping / Crawling',
   },
   {
-    "id": "WiGv7vi7Mtw-YqPMcnnyw",
-    "text": "PHP > Functions"
+    id: 'ok8vN7VtCgyef5x6aoQaL',
+    text: 'AI Agents > AI Agents 101 > Example Usecases > NPC / Game AI',
   },
   {
-    "id": "1nODJchgSuWbcvSlxnWeE",
-    "text": "PHP > Functions > Function Declaration"
+    id: 'Y8EqzFx3qxtrSh7bWbbV8',
+    text: 'AI Agents > Prompt Engineering > What is Prompt Engineering',
   },
   {
-    "id": "mpQKoBzsOa-5iWo08sOhQ",
-    "text": "PHP > Functions > Parameters / Return Values"
+    id: 'qFKFM2qNPEN7EoD0V-1SM',
+    text: 'AI Agents > Prompt Engineering > Writing Good Prompts > Be specific in what you want',
   },
   {
-    "id": "RgVP99rJJ8FVecIA45w20",
-    "text": "PHP > Functions > Default / Optional Params"
+    id: '6I42CoeWX-kkFXTKAY7rw',
+    text: 'AI Agents > Prompt Engineering > Writing Good Prompts > Provide additional context',
   },
   {
-    "id": "RkNjYva8o_jXp9suz5YdG",
-    "text": "PHP > Functions > Named Arguments"
+    id: 'sUwdtOX550tSdceaeFPmF',
+    text: 'AI Agents > Prompt Engineering > Writing Good Prompts > Use relevant technical terms',
   },
   {
-    "id": "Nr5m6wQLp7VyG3AucrSc8",
-    "text": "PHP > Functions > Anonymous Functions"
+    id: 'yulzE4ZNLhXOgHhG7BtZQ',
+    text: 'AI Agents > Prompt Engineering > Writing Good Prompts > Use Examples in your Prompt',
   },
   {
-    "id": "x7hA2KAzJIjc-prgCEw6V",
-    "text": "PHP > Functions > Callback Functions"
+    id: 'noTuUFnHSBzn7GKG9UZEi',
+    text: 'AI Agents > Prompt Engineering > Writing Good Prompts > Iterate and Test your Prompts',
   },
   {
-    "id": "mP1BIkqbWVVTU-zZv1ZL6",
-    "text": "PHP > Functions > Arrow Functions"
+    id: 'wwHHlEoPAx0TLxbtY6nMA',
+    text: 'AI Agents > Prompt Engineering > Writing Good Prompts > Specify Length, format etc',
   },
   {
-    "id": "D9ybK5INH5zSOcYMb5ZPi",
-    "text": "PHP > Functions > Recursion"
+    id: 'qakbxB8xe7Y8gejC5cZnK',
+    text: 'AI Agents > AI Agents 101 > Tools / Actions > Tool Definition',
   },
   {
-    "id": "rtmytETfyyLdcXUC0QyzL",
-    "text": "PHP > Functions > Variadic Functions"
+    id: 'kBtqT8AduLoYDWopj-V9_',
+    text: 'AI Agents > Tools / Actions > Examples of Tools > Web Search',
   },
   {
-    "id": "Kaaqu-mN7xvHN6CbIn616",
-    "text": "PHP > File Handling > require"
+    id: 'mS0EVCkWuPN_GkVPng4A2',
+    text: 'AI Agents > Tools / Actions > Examples of Tools > Code Execution / REPL',
   },
   {
-    "id": "-CyJbsg2ho3RvfzKnJj5C",
-    "text": "PHP > File Handling > require_once"
+    id: 'sV1BnA2-qBnXoKpUn-8Ub',
+    text: 'AI Agents > Tools / Actions > Examples of Tools > Database Queries',
   },
   {
-    "id": "hKfv7V6bl2LXssq9Ffi7C",
-    "text": "PHP > File Handling > include"
+    id: '52qxjZILV-X1isup6dazC',
+    text: 'AI Agents > Tools / Actions > Examples of Tools > API Requests > Tools / Actions > Examples of Tools > API Requests',
   },
   {
-    "id": "SwtLDgyPmDry20qS4FBfH",
-    "text": "PHP > File Handling > include_once"
+    id: 'qaNr5I-NQPnfrRH7ynGTl',
+    text: 'AI Agents > Tools / Actions > Examples of Tools > Email / Slack / SMS',
   },
   {
-    "id": "S9wTlkbv9-R6dohhZ47hs",
-    "text": "PHP > File Operations > Reading Files"
+    id: 'BoJqZvdGam4cd6G6yK2IV',
+    text: 'AI Agents > Tools / Actions > Examples of Tools > File System Access',
   },
   {
-    "id": "two4UycJaCfSp6jQqtTAb",
-    "text": "PHP > File Operations > Writing Files"
+    id: '1B0IqRNYdtbHDi1jHSXuI',
+    text: 'AI Agents > Model Context Protocol (MCP)',
   },
   {
-    "id": "tgIyG6vHWpe9sz6lHmj5a",
-    "text": "PHP > File Operations > File Permissions"
+    id: '9FryAIrWRHh8YlzKX3et5',
+    text: 'AI Agents > Model Context Protocol (MCP) > Core Components > MCP Hosts',
   },
   {
-    "id": "MRDjEjbkMpk7shcWAoPOF",
-    "text": "PHP > File Operations > CSV Processing"
+    id: 'CGVstUxVXLJcYZrwk3iNQ',
+    text: 'AI Agents > Model Context Protocol (MCP) > Core Components > MCP Client',
   },
   {
-    "id": "DB2cxZE58WCCavW2PNwmf",
-    "text": "PHP > File Operations > JSON Processing"
+    id: 'yv_-87FVM7WKn5iv6LW9q',
+    text: 'AI Agents > Model Context Protocol (MCP) > Core Components > MCP Servers',
   },
   {
-    "id": "ggkWo0DRSSDDkHpbiyUyf",
-    "text": "PHP > File Operations > XML Processing"
+    id: '1NXIN-Hbjl5rPy_mqxQYW',
+    text: 'AI Agents > Model Context Protocol (MCP) > Creating MCP Servers',
   },
   {
-    "id": "tn_iIfaJZVtPK6vFds7FH",
-    "text": "PHP > HTTP / Request Handling > HTTP Methods"
+    id: 'iBtJp24F_kJE3YlBsW60s',
+    text: 'AI Agents > Model Context Protocol (MCP) > Creating MCP Servers > Deployment Modes > Local Desktop',
   },
   {
-    "id": "GFYGFVfxkOoPI5mI4zSt1",
-    "text": "PHP > HTTP / Request Handling > $_GET"
+    id: 'dHNMX3_t1KSDdAWqgdJXv',
+    text: 'AI Agents > Model Context Protocol (MCP) > Creating MCP Servers > Deployment Modes > Remote / Cloud',
   },
   {
-    "id": "qNG-a4iIO-puZsMwAMzYC",
-    "text": "PHP > HTTP / Request Handling > $_POST"
+    id: 'TBH_DZTAfR8Daoh-njNFC',
+    text: 'AI Agents > Agent Memory > What is Agent Memory?',
   },
   {
-    "id": "A6rfW4uJhyfAX2b18_EEC",
-    "text": "PHP > HTTP / Request Handling > $_REQUEST"
+    id: 'M3U6RfIqaiut2nuOibY8W',
+    text: 'AI Agents > Agent Memory > Short Term  Memory',
   },
   {
-    "id": "7Ja2at_N9tRTlvSGahrqn",
-    "text": "PHP > HTTP / Request Handling > $_SERVER"
+    id: 'Ue633fz6Xu2wa2-KOAtdP',
+    text: 'AI Agents > Agent Memory > What is Agent Memory? > Long Term Memory',
   },
   {
-    "id": "sYI7f1PYP7G30_Uj2mZRv",
-    "text": "PHP > Form Processing"
+    id: 'EfCCNqLMJpWKKtamUa5gK',
+    text: 'AI Agents > Agent Memory > What is Agent Memory? > Episodic vs Semantic Memory',
   },
   {
-    "id": "HNo8QO4aPbvgePiA4l6tq",
-    "text": "PHP > File Uploads"
+    id: 'wkS4yOJ3JdZQE_yBID8K7',
+    text: 'AI Agents > Agent Memory > What is Agent Memory? > Maintaining Memory > RAG and Vector Databases',
   },
   {
-    "id": "CGehmZjcgTWC7fQAvxmNW",
-    "text": "PHP > State Management"
+    id: 'QJqXHV8VHPTnfYfmKPzW7',
+    text: 'AI Agents > Agent Memory > What is Agent Memory? > Maintaining Memory > User Profile Storage',
   },
   {
-    "id": "so03-fK7E2WvTm6XsPq4i",
-    "text": "PHP > State Management > Cookies"
+    id: 'jTDC19BTWCqxqMizrIJHr',
+    text: 'AI Agents > Agent Memory > Maintaining Memory > Summarization / Compression',
   },
   {
-    "id": "qobzzgzArNHLLn9Oiqc6G",
-    "text": "PHP > State Management > Sessions"
+    id: 'm-97m7SI0XpBnhEE8-_1S',
+    text: 'AI Agents > Agent Memory > Maintaining Memory > Forgetting / Aging Strategies',
   },
   {
-    "id": "93oEIZttb85S23C1fLraP",
-    "text": "PHP > Basics of Security > Input Validation"
+    id: 'cW8O4vLLKEG-Q0dE8E5Zp',
+    text: 'AI Agents > Agent Architectures > Common Architectures > RAG Agent',
   },
   {
-    "id": "801vB_JMas4ucriUmfrLg",
-    "text": "PHP > Basics of Security > SQL Injection"
+    id: '53xDks6JQ33fHMa3XcuCd',
+    text: 'AI Agents > Agent Architectures > Common Architectures > ReAct (Reason + Act)',
   },
   {
-    "id": "DxqQrToZSayWplKdCkTgT",
-    "text": "PHP > Basics of Security > XSS Prevention"
+    id: 'qwdh5pkBbrF8LKPxbZp4F',
+    text: 'AI Agents > Agent Architectures > Common Architectures > Chain of Thought (CoT)',
   },
   {
-    "id": "J9yIXZTtwbFzH2u4dI1ep",
-    "text": "PHP > Basics of Security > CSRF Protection"
+    id: '6YLCMWzystao6byCYCTPO',
+    text: 'AI Agents > Agent Architectures > Common Architectures > Planner Executor',
   },
   {
-    "id": "JbWFfJiCRrXDhnuIx_lqx",
-    "text": "PHP > Basics of Security > Password Hashing"
+    id: 'Ep8RoZSy_Iq_zWXlGQLZo',
+    text: 'AI Agents > Agent Architectures > Common Architectures > DAG Agents',
   },
   {
-    "id": "HJJzKYXdK4BWITLP4APLZ",
-    "text": "PHP > Basics of Security > Auth Mechanisms"
+    id: 'Nmy1PoB32DcWZnPM8l8jT',
+    text: 'AI Agents > Agent Architectures > Common Architectures > Tree-of-Thought',
   },
   {
-    "id": "tfC1tCrbvH5J43WUpG9Yb",
-    "text": "PHP > Basics of Security > Sanitization Techniques"
+    id: 'hj1adjkG9nalXKZ-Youn0',
+    text: 'AI Agents > Agent Architectures > Common Architectures > Tree-of-Thought',
   },
   {
-    "id": "cJtPz1RMN1qDE4eRdv4N_",
-    "text": "PHP > Database Connectivity > PDO"
+    id: 'US6T5dXM8IY9V2qZnTOFW',
+    text: 'AI Agents > Building Agents > Manual (from scratch)',
   },
   {
-    "id": "YLuo0oZJzTCoiZoOSG57z",
-    "text": "PHP > Database Connectivity > MySQLi"
+    id: 'aafZxtjxiwzJH1lwHBODi',
+    text: 'AI Agents > Building Agents > LLM Native "Function Calling"',
   },
   {
-    "id": "SeqGIfcLuveZ2z5ZSXcOd",
-    "text": "PHP > Advanced Database Techniques > Object-Relational Mapping (ORM)"
+    id: 'AQtxTTxmBpfl8BMgJbGzc',
+    text: 'AI Agents > Building Agents > LLM Native "Function Calling" > OpenAI Functions Calling',
   },
   {
-    "id": "FY-F6n9j29hQrnFry3VGb",
-    "text": "PHP > Advanced Database Techniques > Database Transactions"
+    id: '37GBFVZ2J2d5r8bd1ViHq',
+    text: 'AI Agents > Building Agents > LLM Native "Function Calling" > OpenAI Assistant API',
   },
   {
-    "id": "txUyPR_tdC8iTJV3RtvBz",
-    "text": "PHP > Advanced Database Techniques > Connection Pooling"
+    id: '_iIsBJTVS6OBf_dsdmbVO',
+    text: 'AI Agents > Building Agents > LLM Native "Function Calling" > Gemini Function Calling',
   },
   {
-    "id": "M1nVsh_sCSFJRf6-7Ttsj",
-    "text": "PHP > Advanced Database Techniques > Performance Optimization"
+    id: '1EZFbDHA5J5_5BPMLMxXb',
+    text: 'AI Agents > Building Agents > LLM Native "Function Calling" > Anthropic Tool Use',
   },
   {
-    "id": "meplwvmHMtI3Sb_fyodzZ",
-    "text": "PHP > Advanced Database Techniques > Database Migrations"
+    id: 'Ka6VpCEnqABvwiF9vba7t',
+    text: 'AI Agents > Building Agents > Building Using Frameworks > Langchain',
   },
   {
-    "id": "yTviiPFR5b_dr3WyxdxxQ",
-    "text": "PHP > OOP Fundamentals"
+    id: 'iEHF-Jm3ck-Iu85EbCoDi',
+    text: 'AI Agents > Building Agents > Building Using Frameworks > LlamaIndex',
   },
   {
-    "id": "PIuplWreo7PFG3Mdn2t6W",
-    "text": "PHP > OOP Fundamentals > Classes and Objects"
+    id: 'XS-FsvtrXGZ8DPrwOsnlI',
+    text: 'AI Agents > Building Agents > Building Using Frameworks > Haystack',
   },
   {
-    "id": "oNUt1oT8pYBVvH0S2P6cb",
-    "text": "PHP > OOP Fundamentals > Constructor / Destructor"
+    id: '7YtnQ9-KIvGPSpDzEDexl',
+    text: 'AI Agents > Building Agents > Building Using Frameworks > AutoGen',
   },
   {
-    "id": "MRAPXshy9RoYdReY6grf_",
-    "text": "PHP > OOP Fundamentals > Properties and Methods"
+    id: 'uFPJqgU4qGvZyxTv-osZA',
+    text: 'AI Agents > Building Agents > Building Using Frameworks > CrewAI',
   },
   {
-    "id": "RD2RaBmA2XWkEa13PTCTX",
-    "text": "PHP > OOP Fundamentals > Access Specifiers"
+    id: 'eWxQiBrxIUG2JNcrdfIHS',
+    text: 'AI Agents > Building Agents > Building Using Frameworks > Smol Depot',
   },
   {
-    "id": "qlkpwXfOc1p7j37hrzffI",
-    "text": "PHP > OOP Fundamentals > Static Methods and Properties"
+    id: 'v8qLnyFRnEumodBYxQSXQ',
+    text: 'AI Agents > Building Agents > Evaluation and Testing > Metrics to Track',
   },
   {
-    "id": "c5q2e_jyMt8Pir5Od3lRi",
-    "text": "PHP > OOP Fundamentals > Inheritance"
+    id: 'qo_O4YAe4-MTP_ZJoXJHR',
+    text: 'AI Agents > Evaluation and Testing > Unit Testing for Individual Tools',
   },
   {
-    "id": "gtq5KrghF28f5G8nuDcYQ",
-    "text": "PHP > Polymorphism"
+    id: 'P9-SiIda3TSjHsfkI5OUV',
+    text: 'AI Agents > Evaluation and Testing > Integration Testing for Flows',
   },
   {
-    "id": "ub79EkMiOmPBwXLRuYFL8",
-    "text": "PHP > Abstract classes"
+    id: 'rHxdxN97ZcU7MPl8L1jzN',
+    text: 'AI Agents > Evaluation and Testing > Human in the Loop Evaluation',
   },
   {
-    "id": "vu0H-TsD7hkJgOQbSRj92",
-    "text": "PHP > Interfaces"
+    id: 'xp7TCTRE9HP60_rGzTUF6',
+    text: 'AI Agents > Evaluation and Testing > Frameworks > LangSmith',
   },
   {
-    "id": "GR09ns9B-0cONQaQ_uj-7",
-    "text": "PHP > Traits"
+    id: '0924QUH1wV7Mp-Xu0FAhF',
+    text: 'AI Agents > Evaluation and Testing > Frameworks > DeepEval',
   },
   {
-    "id": "9raJ06lKRZITbjWeLil-F",
-    "text": "PHP > Namespaces"
+    id: 'YzEDtGEaMaMWVt0W03HRt',
+    text: 'AI Agents > Evaluation and Testing > Frameworks > Ragas',
   },
   {
-    "id": "rSXsPWto7Jeyw3Szl9pvf",
-    "text": "PHP > Magic methods"
+    id: 'zs6LM8WEnb0ERWpiaQCgc',
+    text: 'AI Agents > Debugging and Monitoring > Structured logging & tracing',
   },
   {
-    "id": "sPW-Ti2VyNYzxq6EYkbn7",
-    "text": "PHP > Type Declarations"
+    id: 'zs6LM8WEnb0ERWpiaQCgc',
+    text: 'AI Agents > Debugging and Monitoring > Structured logging & tracing',
   },
   {
-    "id": "KEE50C6lOS4eX8sAbfhYe",
-    "text": "PHP > Dependency injection"
+    id: 'SS8mGqf9wfrNqenIWvN8Z',
+    text: 'AI Agents > Observability Tools > LangSmith',
   },
   {
-    "id": "zsscRQZIq5o0JZir9hlz-",
-    "text": "PHP > Laravel"
+    id: 'MLxP5N0Vrmwh-kyvNeGXn',
+    text: 'AI Agents > Observability Tools > Helicone',
   },
   {
-    "id": "57VSMVePOr9qUD5x_LNdf",
-    "text": "PHP > Symfony"
+    id: 'UoIheaJlShiceafrWALEH',
+    text: 'AI Agents > Observability Tools > LangFuse',
   },
   {
-    "id": "yVFDu2aTiEZ4PWMdKdW2P",
-    "text": "PHP > Composer"
+    id: '7UqPXUzqKYXklnB3x-tsv',
+    text: 'AI Agents > Observability Tools > openllmetry',
   },
   {
-    "id": "xZf2jjnCVHwYfDH2hs9kR",
-    "text": "PHP > Packagist"
+    id: 'SU2RuicMUo8tiAsQtDI1k',
+    text: 'AI Agents > Security & Ethics > Prompt Injection / Jailbreaks',
   },
   {
-    "id": "qFiTsf6Es-gwqe6J6bdL1",
-    "text": "PHP > Autoloading"
+    id: 'UVzLGXG6K7HQVHmw8ZAv2',
+    text: 'AI Agents > Security & Ethics > Tool sandboxing / Permissioning',
   },
   {
-    "id": "NfBKKwG2GGBPppOjoLLBg",
-    "text": "PHP > PHPUnit"
+    id: 'rdlYBJNNyZUshzsJawME4',
+    text: 'AI Agents > Security & Ethics > Data Privacy + PII Redaction',
   },
   {
-    "id": "d6MydchA52HIxfAUjmZui",
-    "text": "PHP > Pest"
+    id: 'EyLo2j8IQsIK91SKaXkmK',
+    text: 'AI Agents > Security & Ethics > Bias & Toxicity Guardrails',
   },
   {
-    "id": "6eWgZVLV479oQzl0fu-Od",
-    "text": "PHP > Style Tools"
+    id: '63nsfJFO1BwjLX_ZVaPFC',
+    text: 'AI Agents > Security & Ethics > Safety + Red Team Testing',
   },
-  {
-    "id": "fSpvZ_4kGFMbFVCWhA8vn",
-    "text": "PHP > Style Tools > PHPCodeSniffer"
-  },
-  {
-    "id": "r07k_hT2z2EiIBH4q3F7-",
-    "text": "PHP > Style Tools > PHP CS Fixer"
-  },
-  {
-    "id": "PrG_5dyBblXsWYYRcOJMa",
-    "text": "PHP > Static Analysis"
-  },
-  {
-    "id": "12k71gNfwAcT9K5aLWgbZ",
-    "text": "PHP > Static Analysis > PHPStan"
-  },
-  {
-    "id": "T1XD93j6Lkpl88JSmys9b",
-    "text": "PHP > Static Analysis > Psalm"
-  },
-  {
-    "id": "B45YVzov8X_iOtneiFEqa",
-    "text": "PHP > Static Analysis > Phan"
-  },
-  {
-    "id": "KC6D81-T-FwQc7Osw1rlY",
-    "text": "PHP > External Integrations > cURL"
-  },
-  {
-    "id": "_Al4NXKVQAnk8OikwvXCL",
-    "text": "PHP > External Integrations > Guzzle"
-  },
-  {
-    "id": "SD9k16UlVve9WtNMDA5Za",
-    "text": "PHP > PHP-FIG"
-  },
-  {
-    "id": "3tONibbRgK7HCwGTE2Gqw",
-    "text": "PHP > PHP-FIG > PSR Standards"
-  },
-  {
-    "id": "_Dh78x_tPLqZweg--qZFQ",
-    "text": "PHP > Performance Optimization > Profiling Techniques"
-  },
-  {
-    "id": "Av-BMa57RvrLlAXLffOH0",
-    "text": "PHP > Performance Optimization > Caching Strategies"
-  },
-  {
-    "id": "bt7dK2PcOZ72B9HXPyMwL",
-    "text": "PHP > Performance Optimization > Memory Management"
-  },
-  {
-    "id": "VpwwF8j5ZtXVSbzNfE7Sx",
-    "text": "PHP > Performance Optimization > Configuration Tuning"
-  },
-  {
-    "id": "NieqZd1juaNYoZOrB7e31",
-    "text": "PHP > Performance Optimization > Opcode Caching"
-  },
-  {
-    "id": "AoGS-5MSkp8gtJFQVPSBE",
-    "text": "PHP > Performance Optimization > PHP-FPM"
-  },
-  {
-    "id": "qp5Xi12c0qcSzTanzJq0Z",
-    "text": "PHP > System Interactions"
-  },
-  {
-    "id": "VhyYNGhOdKKrz_-uTkrjD",
-    "text": "PHP > System Interactions > Executing System Commands"
-  },
-  {
-    "id": "NTKUMgsKGYISIyhgOJPQn",
-    "text": "PHP > System Interactions > Process Control"
-  },
-  {
-    "id": "fitjnLYKLHJ2P5G7JAvzm",
-    "text": "PHP > System Interactions > Environment Variables"
-  },
-  {
-    "id": "DTaAZaU1CwzW7esoDhj85",
-    "text": "PHP > System Interactions > Configuration Files"
-  },
-  {
-    "id": "lFoHoMRywCWa056ii5cKQ",
-    "text": "PHP > Debugging Tools > Xdebug"
-  },
-  {
-    "id": "KpQb5Zh3GUcbYUyXHvyu2",
-    "text": "PHP > Debugging Tools > Zend Debugger"
-  },
-  {
-    "id": "KMQqePqAjQ-ReDwHqeofx",
-    "text": "PHP > Web Servers > Apache"
-  },
-  {
-    "id": "aspZpACHEKOsi_Er5FYPY",
-    "text": "PHP > Web Servers > Nginx"
-  }
 ];
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
@@ -516,19 +416,11 @@ const openai = new OpenAI({
 
 const prompt = `
   You are a helpful assistant that can help me generate content for a roadmap tree.
-  User will give you roadmap topics in the form of "Parent > Child > Leaf". You need
-  to generate content for the last node in the hierarchy in relation to the parents.
-  Remember that you are explaining the topics for PHP showing what the given topic is
-  with respect to PHP and giving a short code sample ONLY when required. 
+  You will be given a roadmap topic in the form of "Parent > Child > Leaf". You need
+  to generate a single paragraph explaining the topic.
   Also, I hate it when you say "In the realm of..." 
   or "In the context of..." or "..in the context of..." or "when we talk about..." or something
   similar.
-  Content should be helpful and engaging for a technical audience.
-  It can include things like (you can include more or less, depending on the topic):
-    - Briefly explain the given topic in relation to PHP.
-    - Code sample if applicable.
-    - Add a link to PHP documentation
-  The content should be a a single textual paragraph.
   IMPORTANT: Use simple and clear English. Avoid complex words and jargon when possible.
   Write in a way that is easy to understand. Use short sentences and common words.
 `;
@@ -541,7 +433,7 @@ const prompt = `
 const generateContent = async (node) => {
   try {
     const content = await openai.chat.completions.create({
-      model: 'gpt-4',
+      model: 'o3',
       messages: [
         { role: 'system', content: prompt },
         {

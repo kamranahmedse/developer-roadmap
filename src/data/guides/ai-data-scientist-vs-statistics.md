@@ -7,7 +7,7 @@ seo:
   title: "Data Science vs Statistics: How do they compare?"
   description: "Not sure whether to pursue data science or statistics? This guide breaks down the key differences, career paths, and skills you need to make an informed choice."
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-vs-statistics-e3rtw.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-03-24
 sitemap:

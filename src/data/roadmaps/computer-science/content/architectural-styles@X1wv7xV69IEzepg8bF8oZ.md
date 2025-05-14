@@ -4,4 +4,4 @@ Architectural patterns are the fundamental organization of a system, defining ho
 
 Visit the following resources to learn more:
 
-- [@article@List of software architecture styles and patterns](https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns)
+- [@article@List of Software Architecture Styles and Patterns](https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns)

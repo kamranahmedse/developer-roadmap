@@ -4,7 +4,7 @@ Engaging in online forums, mailing lists, Discord servers, or subreddits dedicat
 
 Learn more from the following resources:
 
-- [@community@List of Cybersecurity Discord Servers - DFIR Training](https://www.dfir.training/dfir-groups/discord?category[0]=17&category_children=1) - List including relevant servers.
-- [@community@Reddit - r/MachineLearning](https://www.reddit.com/r/MachineLearning/) - ML specific discussion.
-- [@community@Reddit - r/artificial](https://www.reddit.com/r/artificial/) - General AI discussion.
-- [@community@Reddit - r/cybersecurity](https://www.reddit.com/r/cybersecurity/) - General cybersecurity forum.
+- [@community@LearnPrompting Prompt Hacking Discord](https://discord.com/channels/1046228027434086460/1349689482651369492)
+- [@community@Reddit - r/ChatGPTJailbreak](https://www.reddit.com/r/ChatGPTJailbreak/)
+- [@community@Reddit - r/artificial](https://www.reddit.com/r/artificial/)
+- [@community@Reddit - r/cybersecurity](https://www.reddit.com/r/cybersecurity/)

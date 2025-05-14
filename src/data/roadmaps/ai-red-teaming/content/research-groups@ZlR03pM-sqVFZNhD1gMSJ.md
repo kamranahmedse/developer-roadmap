@@ -4,7 +4,7 @@ Following and potentially contributing to research groups at universities (like 
 
 Learn more from the following resources:
 
-- [@group@AI Cybersecurity | Global Cyber Security Capacity Centre (Oxford)](https://gcscc.ox.ac.uk/ai-security) - Academic research center.
-- [@group@Anthropic Research](https://www.anthropic.com/research) - AI safety research lab.
-- [@group@Center for AI Safety](https://www.safe.ai/) - Non-profit research organization.
-- [@group@The AI Security Institute (AISI)](https://www.aisi.gov.uk/) - UK government institute focused on AI safety/security research.
+- [@group@AI Cybersecurity | Global Cyber Security Capacity Centre (Oxford)](https://gcscc.ox.ac.uk/ai-security)
+- [@group@Anthropic Research](https://www.anthropic.com/research)
+- [@group@Center for AI Safety](https://www.safe.ai/)
+- [@group@The AI Security Institute (AISI)](https://www.aisi.gov.uk/)

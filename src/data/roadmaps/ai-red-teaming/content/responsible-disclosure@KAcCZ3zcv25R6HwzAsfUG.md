@@ -4,6 +4,6 @@ A critical practice for AI Red Teamers is responsible disclosure: privately repo
 
 Learn more from the following resources:
 
-- [@guide@Responsible Disclosure of AI Vulnerabilities - Preamble AI](https://www.preamble.com/blog/responsible-disclosure-of-ai-vulnerabilities) - Discusses the process specifically for AI vulnerabilities.
-- [@guide@Vulnerability Disclosure Program | CISA](https://www.cisa.gov/resources-tools/programs/vulnerability-disclosure-program-vdp) - Government VDP example.
-- [@policy@Google Vulnerability Reward Program (VRP)](https://bughunters.google.com/) - Example of a major tech company's VDP/bug bounty program.
+- [@guide@0din.ai Policy](https://0din.ai/policy)
+- [@guide@Huntr Guidelines](https://huntr.com/guidelines)
+- [@policy@Google Vulnerability Reward Program (VRP)](https://bughunters.google.com/)

@@ -1,322 +1,1406 @@
 {
   "R9DQNc0AyAQ2HLpP4HOk6": {
     "title": "AI Security Fundamentals",
-    "description": "",
-    "links": []
+    "description": "This covers the foundational concepts essential for AI Red Teaming, bridging traditional cybersecurity with AI-specific threats. An AI Red Teamer must understand common vulnerabilities in ML models (like evasion or poisoning), security risks in the AI lifecycle (from data collection to deployment), and how AI capabilities can be misused. This knowledge forms the basis for designing effective tests against AI systems.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Security | Coursera",
+        "url": "https://www.coursera.org/learn/ai-security",
+        "type": "course"
+      },
+      {
+        "title": "Building Trustworthy AI: Contending with Data Poisoning",
+        "url": "https://nisos.com/research/building-trustworthy-ai/",
+        "type": "article"
+      },
+      {
+        "title": "What Is Adversarial AI in Machine Learning?",
+        "url": "https://www.paloaltonetworks.co.uk/cyberpedia/what-are-adversarial-attacks-on-AI-Machine-Learning",
+        "type": "article"
+      }
+    ]
   },
   "fNTb9y3zs1HPYclAmu_Wv": {
     "title": "Why Red Team AI Systems?",
-    "description": "",
-    "links": []
+    "description": "AI systems introduce novel risks beyond traditional software, such as emergent unintended capabilities, complex failure modes, susceptibility to subtle data manipulations, and potential for large-scale misuse (e.g., generating disinformation). AI Red Teaming is necessary because standard testing methods often fail to uncover these unique AI vulnerabilities. It provides critical, adversary-focused insights needed to build genuinely safe, reliable, and secure AI before deployment.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Introduction to Prompt Hacking",
+        "url": "https://learnprompting.org/courses/intro-to-prompt-hacking",
+        "type": "course"
+      },
+      {
+        "title": "Prompt Hacking Offensive Measures",
+        "url": "https://learnprompting.org/docs/prompt_hacking/offensive_measures/introduction",
+        "type": "article"
+      }
+    ]
   },
   "HFJIYcI16OMyM77fAw9af": {
     "title": "Introduction",
-    "description": "",
-    "links": []
+    "description": "AI Red Teaming is the practice of simulating adversarial attacks against AI systems to proactively identify vulnerabilities, potential misuse scenarios, and failure modes before malicious actors do. Distinct from traditional cybersecurity red teaming, it focuses on the unique attack surfaces of AI models, such as prompt manipulation, data poisoning, model extraction, and evasion techniques. The primary goal for an AI Red Teamer is to test the robustness, safety, alignment, and fairness of AI systems, particularly complex ones like LLMs, by adopting an attacker's mindset to uncover hidden flaws and provide actionable feedback for improvement.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "A Guide to AI Red Teaming",
+        "url": "https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/",
+        "type": "article"
+      },
+      {
+        "title": "What is AI Red Teaming? (Learn Prompting)",
+        "url": "https://learnprompting.org/blog/what-is-ai-red-teaming",
+        "type": "article"
+      },
+      {
+        "title": "What is AI Red Teaming? The Complete Guide",
+        "url": "https://mindgard.ai/blog/what-is-ai-red-teaming",
+        "type": "article"
+      }
+    ]
   },
   "1gyuEV519LjN-KpROoVwv": {
     "title": "Ethical Considerations",
-    "description": "",
-    "links": []
+    "description": "Ethical conduct is crucial for AI Red Teamers. While simulating attacks, they must operate within strict legal and ethical boundaries defined by rules of engagement, focusing on improving safety without causing real harm or enabling misuse. This includes respecting data privacy, obtaining consent where necessary, responsibly disclosing vulnerabilities, and carefully considering the potential negative impacts of both the testing process and the AI capabilities being tested. The goal is discovery for defense, not exploitation.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Red-Teaming in AI Testing: Stress Testing",
+        "url": "https://www.labelvisor.com/red-teaming-abstract-competitive-testing-data-selection/",
+        "type": "article"
+      },
+      {
+        "title": "Responsible AI assessment - Responsible AI | Coursera",
+        "url": "https://www.coursera.org/learn/ai-security",
+        "type": "article"
+      },
+      {
+        "title": "Responsible AI Principles (Microsoft)",
+        "url": "https://www.microsoft.com/en-us/ai/responsible-ai",
+        "type": "article"
+      }
+    ]
   },
   "Irkc9DgBfqSn72WaJqXEt": {
     "title": "Role of Red Teams",
-    "description": "",
-    "links": []
+    "description": "The role of an AI Red Team is to rigorously challenge AI systems from an adversarial perspective. They design and execute tests to uncover vulnerabilities related to the model's logic, data dependencies, prompt interfaces, safety alignments, and interactions with surrounding infrastructure. They provide detailed reports on findings, potential impacts, and remediation advice, acting as a critical feedback loop for AI developers and stakeholders to improve system security and trustworthiness before and after deployment.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The Complete Guide to Red Teaming: Process, Benefits & More",
+        "url": "https://mindgard.ai/blog/red-teaming",
+        "type": "article"
+      },
+      {
+        "title": "The Complete Red Teaming Checklist [PDF]: 5 Key Steps - Mindgard AI",
+        "url": "https://mindgard.ai/blog/red-teaming-checklist",
+        "type": "article"
+      },
+      {
+        "title": "Red Teaming in Defending AI Systems",
+        "url": "https://protectai.com/blog/expanding-role-red-teaming-defending-ai-systems",
+        "type": "article"
+      }
+    ]
   },
   "NvOJIv36Utpm7_kOZyr79": {
     "title": "Supervised Learning",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers analyze systems built using supervised learning to probe for vulnerabilities like susceptibility to adversarial examples designed to cause misclassification, sensitivity to data distribution shifts, or potential for data leakage related to the labeled training data. Understanding how these models learn input-output mappings is key to devising tests that challenge their learned boundaries.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI and cybersecurity: a love-hate revolution",
+        "url": "https://www.alter-solutions.com/en-us/articles/ai-cybersecurity-love-hate-revolution",
+        "type": "article"
+      },
+      {
+        "title": "What Is Supervised Learning?",
+        "url": "https://www.ibm.com/think/topics/supervised-learning",
+        "type": "article"
+      },
+      {
+        "title": "What is Supervised Learning?",
+        "url": "https://cloud.google.com/discover/what-is-supervised-learning",
+        "type": "article"
+      }
+    ]
   },
   "ZC0yKsu-CJC-LZKKo2pLD": {
     "title": "Unsupervised Learning",
-    "description": "",
-    "links": []
+    "description": "When red teaming AI systems using unsupervised learning (e.g., clustering algorithms), focus areas include assessing whether the discovered patterns reveal sensitive information, if the model can be manipulated to group data incorrectly, or if dimensionality reduction techniques obscure security-relevant features. Understanding these models helps identify risks associated with pattern discovery on unlabeled data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How Unsupervised Learning Works with Examples",
+        "url": "https://www.coursera.org/articles/unsupervised-learning",
+        "type": "article"
+      },
+      {
+        "title": "Supervised vs. Unsupervised Learning: Which Approach is Best?",
+        "url": "https://www.digitalocean.com/resources/articles/supervised-vs-unsupervised-learning",
+        "type": "article"
+      }
+    ]
   },
   "Xqzc4mOKsVzwaUxLGjHya": {
     "title": "Reinforcement Learning",
-    "description": "",
-    "links": []
+    "description": "Red teaming RL-based AI systems involves testing for vulnerabilities such as reward hacking (exploiting the reward function to induce unintended behavior), unsafe exploration (agent takes harmful actions during learning), or susceptibility to adversarial perturbations in the environment's state. Understanding the agent's policy and value functions is crucial for designing effective tests against RL agents.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Deep Reinforcement Learning Course by HuggingFace",
+        "url": "https://huggingface.co/learn/deep-rl-course/unit0/introduction",
+        "type": "course"
+      },
+      {
+        "title": "Resources to Learn Reinforcement Learning",
+        "url": "https://towardsdatascience.com/best-free-courses-and-resources-to-learn-reinforcement-learning-ed6633608cb2/",
+        "type": "article"
+      },
+      {
+        "title": "What is reinforcement learning?",
+        "url": "https://online.york.ac.uk/resources/what-is-reinforcement-learning/",
+        "type": "article"
+      },
+      {
+        "title": "Diverse and Effective Red Teaming with Auto-generated Rewards and Multi-step Reinforcement Learning",
+        "url": "https://arxiv.org/html/2412.18693v1",
+        "type": "article"
+      }
+    ]
   },
   "RuKzVhd1nZphCrlW1wZGL": {
     "title": "Neural Networks",
-    "description": "",
-    "links": []
+    "description": "Understanding neural network architectures (layers, nodes, activation functions) is vital for AI Red Teamers. This knowledge allows for targeted testing, such as crafting adversarial examples that exploit specific activation functions or identifying potential vulnerabilities related to network depth or connectivity. It provides insight into the 'black box' for more effective white/grey-box testing.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Neural Networks Explained: A Beginner's Guide",
+        "url": "https://www.skillcamper.com/blog/neural-networks-explained-a-beginners-guide",
+        "type": "article"
+      },
+      {
+        "title": "Neural networks | Machine Learning",
+        "url": "https://developers.google.com/machine-learning/crash-course/neural-networks",
+        "type": "article"
+      },
+      {
+        "title": "Red Teaming with Artificial Intelligence-Driven Cyberattacks: A Scoping Review",
+        "url": "https://arxiv.org/html/2503.19626",
+        "type": "article"
+      }
+    ]
   },
   "3XJ-g0KvHP75U18mxCqgw": {
     "title": "Generative Models",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers focus heavily on generative models (like GANs and LLMs) due to their widespread use and unique risks. Understanding how they generate content is key to testing for issues like generating harmful/biased outputs, deepfakes, prompt injection vulnerabilities, or leaking sensitive information from their vast training data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Introduction to Generative AI",
+        "url": "https://learnprompting.org/courses/intro-to-gen-ai",
+        "type": "course"
+      },
+      {
+        "title": "What is Generative AI?",
+        "url": "https://learnprompting.org/docs/basics/generative_ai",
+        "type": "article"
+      },
+      {
+        "title": "Generative AI beginner's guide",
+        "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/overview",
+        "type": "article"
+      }
+    ]
   },
   "8K-wCn2cLc7Vs_V4sC3sE": {
     "title": "Large Language Models",
-    "description": "",
-    "links": []
+    "description": "LLMs are a primary target for AI Red Teaming. Understanding their architecture (often Transformer-based), training processes (pre-training, fine-tuning), and capabilities (text generation, summarization, Q&A) is essential for identifying vulnerabilities like prompt injection, jailbreaking, data regurgitation, and emergent harmful behaviors specific to these large-scale models.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is an LLM (large language model)?",
+        "url": "https://www.cloudflare.com/learning/ai/what-is-large-language-model/",
+        "type": "article"
+      },
+      {
+        "title": "ChatGPT For Everyone",
+        "url": "https://learnprompting.org/courses/chatgpt-for-everyone",
+        "type": "article"
+      },
+      {
+        "title": "What Are Large Language Models? A Beginner's Guide for 2025",
+        "url": "https://www.kdnuggets.com/large-language-models-beginners-guide-2025",
+        "type": "article"
+      }
+    ]
   },
   "gx4KaFqKgJX9n9_ZGMqlZ": {
     "title": "Prompt Engineering",
-    "description": "",
-    "links": []
+    "description": "For AI Red Teamers, prompt engineering is both a tool and a target. It's a tool for crafting inputs to test model boundaries and vulnerabilities (e.g., creating jailbreak prompts). It's a target because understanding how prompts influence LLMs is key to identifying prompt injection vulnerabilities and designing defenses. Mastering prompt design is fundamental to effective LLM red teaming.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Introduction to Prompt Engineering",
+        "url": "https://learnprompting.org/courses/intro-to-prompt-engineering",
+        "type": "course"
+      },
+      {
+        "title": "System Prompts - InjectPrompt",
+        "url": "https://www.injectprompt.com/t/system-prompts",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide to Red Teaming LLMs and Adversarial Prompts (Kili Technology)",
+        "url": "https://kili-technology.com/large-language-models-llms/red-teaming-llms-and-adversarial-prompts",
+        "type": "article"
+      }
+    ]
   },
   "WZkIHZkV2qDYbYF9KBBRi": {
     "title": "Confidentiality, Integrity, Availability",
-    "description": "",
-    "links": []
+    "description": "The CIA Triad is directly applicable in AI Red Teaming. Confidentiality tests focus on preventing leakage of training data or proprietary model details. Integrity tests probe for susceptibility to data poisoning or model manipulation. Availability tests assess resilience against denial-of-service attacks targeting the AI model or its supporting infrastructure.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Confidentiality, Integrity, Availability: Key Examples",
+        "url": "https://www.datasunrise.com/knowledge-center/confidentiality-integrity-availability-examples/",
+        "type": "article"
+      },
+      {
+        "title": "The CIA Triad: Confidentiality, Integrity, Availability",
+        "url": "https://www.veeam.com/blog/cybersecurity-cia-triad-explained.html",
+        "type": "article"
+      },
+      {
+        "title": "What's The CIA Triad? Confidentiality, Integrity, & Availability, Explained",
+        "url": "https://www.splunk.com/en_us/blog/learn/cia-triad-confidentiality-integrity-availability.html",
+        "type": "article"
+      }
+    ]
   },
   "RDOaTBWP3aIJPUp_kcafm": {
     "title": "Threat Modeling",
-    "description": "",
-    "links": []
+    "description": "AI Red Teams apply threat modeling to identify unique attack surfaces in AI systems, such as manipulating training data, exploiting prompt interfaces, attacking the model inference process, or compromising connected tools/APIs. Before attacking an AI system, red teamers perform threat modeling to map out possible adversaries (from curious users to state actors) and attack vectors, prioritizing tests based on likely impact and adversary capability.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Core Components of AI Red Team Exercises (Learn Prompting)",
+        "url": "https://learnprompting.org/blog/what-is-ai-red-teaming",
+        "type": "article"
+      },
+      {
+        "title": "Threat Modeling Process",
+        "url": "https://owasp.org/www-community/Threat_Modeling_Process",
+        "type": "article"
+      },
+      {
+        "title": "Threat Modeling",
+        "url": "https://owasp.org/www-community/Threat_Modeling",
+        "type": "article"
+      }
+    ]
   },
   "MupRvk_8Io2Hn7yEvU663": {
     "title": "Risk Management",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers contribute to the AI risk management process by identifying and demonstrating concrete vulnerabilities. Findings from red team exercises inform risk assessments, helping organizations understand the likelihood and potential impact of specific AI threats and prioritize resources for mitigation based on demonstrated exploitability.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "type": "article"
+      },
+      {
+        "title": "A Beginner's Guide to Cybersecurity Risks and Vulnerabilities",
+        "url": "https://online.champlain.edu/blog/beginners-guide-cybersecurity-risk-management",
+        "type": "article"
+      },
+      {
+        "title": "Cybersecurity Risk Management: Frameworks, Plans, and Best Practices",
+        "url": "https://hyperproof.io/resource/cybersecurity-risk-management-process/",
+        "type": "article"
+      }
+    ]
   },
   "887lc3tWCRH-sOHSxWgWJ": {
     "title": "Vulnerability Assessment",
-    "description": "",
-    "links": []
+    "description": "While general vulnerability assessment scans infrastructure, AI Red Teaming extends this to assess vulnerabilities specific to the AI model and its unique interactions. This includes probing for prompt injection flaws, testing for adversarial example robustness, checking for data privacy leaks, and evaluating safety alignment failures – weaknesses not typically found by standard IT vulnerability scanners.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI red-teaming in critical infrastructure: Boosting security and trust in AI systems",
+        "url": "https://www.dnv.com/article/ai-red-teaming-for-critical-infrastructure-industries/",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide to Vulnerability Assessment",
+        "url": "https://strobes.co/blog/guide-vulnerability-assessment/",
+        "type": "article"
+      },
+      {
+        "title": "Vulnerability Scanning Tools",
+        "url": "https://owasp.org/www-community/Vulnerability_Scanning_Tools",
+        "type": "article"
+      }
+    ]
   },
   "Ds8pqn4y9Npo7z6ubunvc": {
     "title": "Jailbreak Techniques",
-    "description": "",
-    "links": []
+    "description": "Jailbreaking is a specific category of prompt hacking where the AI Red Teamer aims to bypass the LLM's safety and alignment training. They use techniques like creating fictional scenarios, asking the model to simulate an unrestricted AI, or using complex instructions to trick the model into generating content that violates its own policies (e.g., generating harmful code, hate speech, or illegal instructions).\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "InjectPrompt",
+        "url": "https://injectprompt.com",
+        "type": "article"
+      },
+      {
+        "title": "Jailbreaking Guide - Learn Prompting",
+        "url": "https://learnprompting.org/docs/prompt_hacking/jailbreaking",
+        "type": "article"
+      },
+      {
+        "title": "Jailbroken: How Does LLM Safety Training Fail? (arXiv)",
+        "url": "https://arxiv.org/abs/2307.02483",
+        "type": "article"
+      }
+    ]
   },
   "j7uLLpt8MkZ1rqM7UBPW4": {
     "title": "Safety Filter Bypasses",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers specifically target the safety mechanisms (filters, guardrails) implemented within or around an AI model. They test techniques like using synonyms for blocked words, employing different languages, embedding harmful requests within harmless text, or using character-level obfuscation to evade detection and induce the model to generate prohibited content, thereby assessing the robustness of the safety controls.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Bypassing AI Content Filters",
+        "url": "https://www.restack.io/p/ai-driven-content-moderation-answer-bypass-filters-cat-ai",
+        "type": "article"
+      },
+      {
+        "title": "How to Bypass Azure AI Content Safety Guardrails",
+        "url": "https://mindgard.ai/blog/bypassing-azure-ai-content-safety-guardrails",
+        "type": "article"
+      },
+      {
+        "title": "The Best Methods to Bypass AI Detection: Tips and Techniques",
+        "url": "https://www.popai.pro/resources/the-best-methods-to-bypass-ai-detection-tips-and-techniques/",
+        "type": "article"
+      }
+    ]
   },
   "XOrAPDRhBvde9R-znEipH": {
     "title": "Prompt Injection",
-    "description": "",
-    "links": []
+    "description": "Prompt injection is a critical vulnerability tested by AI Red Teamers. They attempt to insert instructions into the LLM's input that override its intended system prompt or task, causing it to perform unauthorized actions, leak data, or generate malicious output. This tests the model's ability to distinguish trusted instructions from potentially harmful user/external input.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Advanced Prompt Hacking - Learn Prompting",
+        "url": "https://learnprompting.org/courses/advanced-prompt-hacking",
+        "type": "course"
+      },
+      {
+        "title": "Prompt Injection & the Rise of Prompt Attacks",
+        "url": "https://www.lakera.ai/blog/guide-to-prompt-injection",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Injection (Learn Prompting)",
+        "url": "https://learnprompting.org/docs/prompt_hacking/injection",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Injection Attack Explanation (IBM)",
+        "url": "https://research.ibm.com/blog/prompt-injection-attacks-against-llms",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Injection: Impact, How It Works & 4 Defense Measures",
+        "url": "https://www.tigera.io/learn/guides/llm-security/prompt-injection/",
+        "type": "article"
+      }
+    ]
   },
   "1Xr7mxVekeAHzTL7G4eAZ": {
     "title": "Prompt Hacking",
-    "description": "",
-    "links": []
+    "description": "Prompt hacking is a core technique for AI Red Teamers targeting LLMs. It involves crafting inputs (prompts) to manipulate the model into bypassing safety controls, revealing hidden information, or performing unintended actions. Red teamers systematically test various prompt hacking methods (like jailbreaking, role-playing, or instruction manipulation) to assess the LLM's resilience against adversarial user input.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Introduction to Prompt Hacking",
+        "url": "https://learnprompting.org/courses/intro-to-prompt-hacking",
+        "type": "course"
+      },
+      {
+        "title": "Prompt Hacking Guide",
+        "url": "https://learnprompting.org/docs/prompt_hacking/introduction",
+        "type": "article"
+      },
+      {
+        "title": "SoK: Prompt Hacking of LLMs (arXiv 2023)",
+        "url": "https://arxiv.org/abs/2311.05544",
+        "type": "article"
+      }
+    ]
   },
   "5zHow4KZVpfhch5Aabeft": {
     "title": "Direct",
-    "description": "",
-    "links": []
+    "description": "Direct injection attacks occur when malicious instructions are inserted directly into the prompt input field by the user interacting with the LLM. AI Red Teamers use this technique to assess if basic instructions like \"Ignore previous prompt\" can immediately compromise the model's safety or intended function, testing the robustness of the system prompt's influence.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Prompt Injection",
+        "url": "https://learnprompting.org/docs/prompt_hacking/injection?srsltid=AfmBOooOKRzLT0Hn2PNdAa69Fietniztfds6Fo1PO8WuIyyXjbLb6XgI",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Injection & the Rise of Prompt Attacks",
+        "url": "https://www.lakera.ai/blog/guide-to-prompt-injection",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Injection Cheat Sheet (FlowGPT)",
+        "url": "https://flowgpt.com/p/prompt-injection-cheat-sheet",
+        "type": "article"
+      }
+    ]
   },
   "3_gJRtJSdm2iAfkwmcv0e": {
     "title": "Indirect",
-    "description": "",
-    "links": []
+    "description": "Indirect injection involves embedding malicious prompts within external data sources that the LLM processes, such as websites, documents, or emails. AI Red Teamers test this by poisoning data sources the AI might interact with (e.g., adding hidden instructions to a webpage summarized by the AI) to see if the AI executes unintended commands or leaks data when processing that source.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The Practical Application of Indirect Prompt Injection Attacks",
+        "url": "https://www.researchgate.net/publication/382692833_The_Practical_Application_of_Indirect_Prompt_Injection_Attacks_From_Academia_to_Industry",
+        "type": "article"
+      },
+      {
+        "title": "How to Prevent Indirect Prompt Injection Attacks",
+        "url": "https://www.cobalt.io/blog/how-to-prevent-indirect-prompt-injection-attacks",
+        "type": "article"
+      },
+      {
+        "title": "Indirect Prompt Injection Data Exfiltration",
+        "url": "https://embracethered.com/blog/posts/2024/chatgpt-macos-app-persistent-data-exfiltration/",
+        "type": "article"
+      }
+    ]
   },
   "G1u_Kq4NeUsGX2qnUTuJU": {
     "title": "Countermeasures",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers must also understand and test defenses against prompt hacking. This includes evaluating the effectiveness of input sanitization, output filtering, instruction demarcation (e.g., XML tagging), contextual awareness checks, model fine-tuning for resistance, and applying the principle of least privilege to LLM capabilities and tool access.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Prompt Hacking Defensive Measures",
+        "url": "https://learnprompting.org/docs/prompt_hacking/defensive_measures/introduction",
+        "type": "article"
+      },
+      {
+        "title": "Mitigating Prompt Injection Attacks (NCC Group Research)",
+        "url": "https://research.nccgroup.com/2023/12/01/mitigating-prompt-injection-attacks/",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Injection & the Rise of Prompt Attacks",
+        "url": "https://www.lakera.ai/blog/guide-to-prompt-injection",
+        "type": "article"
+      },
+      {
+        "title": "Prompt Injection: Impact, How It Works & 4 Defense Measures",
+        "url": "https://www.tigera.io/learn/guides/llm-security/prompt-injection/",
+        "type": "article"
+      },
+      {
+        "title": "OpenAI Best Practices for Prompt Security",
+        "url": "https://platform.openai.com/docs/guides/prompt-engineering/strategy-write-clear-instructions",
+        "type": "article"
+      }
+    ]
   },
   "vhBu5x8INTtqvx6vcYAhE": {
     "title": "Code Injection",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers test for code injection vulnerabilities specifically in the context of AI applications. This involves probing whether user input, potentially manipulated via prompts, can lead to the execution of unintended code (e.g., SQL, OS commands, or script execution via generated code) within the application layer or connected systems, using the AI as a potential vector.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Code Injection in LLM Applications",
+        "url": "https://neuraltrust.ai/blog/code-injection-in-llms",
+        "type": "article"
+      },
+      {
+        "title": "Code Injection",
+        "url": "https://learnprompting.org/docs/prompt_hacking/offensive_measures/code_injection",
+        "type": "article"
+      },
+      {
+        "title": "Code Injection",
+        "url": "https://owasp.org/www-community/attacks/Code_Injection",
+        "type": "article"
+      }
+    ]
   },
   "uBXrri2bXVsNiM8fIHHOv": {
     "title": "Model Vulnerabilities",
-    "description": "",
-    "links": []
+    "description": "This category covers attacks and tests targeting the AI model itself, beyond the prompt interface. AI Red Teamers investigate inherent weaknesses in the model's architecture, training data artifacts, or prediction mechanisms, such as susceptibility to data extraction, poisoning, or adversarial manipulation.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Security Risks Uncovered: What You Must Know in 2025",
+        "url": "https://ttms.com/uk/ai-security-risks-explained-what-you-need-to-know-in-2025/",
+        "type": "article"
+      },
+      {
+        "title": "Weaknesses in Modern AI",
+        "url": "https://insights.sei.cmu.edu/blog/weaknesses-and-vulnerabilities-in-modern-ai-why-security-and-safety-are-so-challenging/",
+        "type": "article"
+      },
+      {
+        "title": "AI and ML Vulnerabilities (CNAS Report)",
+        "url": "https://www.cnas.org/publications/reports/understanding-and-mitigating-ai-vulnerabilities",
+        "type": "article"
+      }
+    ]
   },
   "QFzLx5nc4rCCD8WVc20mo": {
     "title": "Model Weight Stealing",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers assess the risk of attackers reconstructing or stealing the proprietary weights of a trained model, often through API query-based attacks. Testing involves simulating such attacks to understand how easily the model's functionality can be replicated, which informs defenses like query rate limiting, watermarking, or differential privacy.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "A Playbook for Securing AI Model Weights",
+        "url": "https://www.rand.org/pubs/research_briefs/RBA2849-1.html",
+        "type": "article"
+      },
+      {
+        "title": "How to Steal a Machine Learning Model (SkyCryptor)",
+        "url": "https://skycryptor.com/blog/how-to-steal-a-machine-learning-model",
+        "type": "article"
+      },
+      {
+        "title": "On the Limitations of Model Stealing with Uncertainty Quantification Models",
+        "url": "https://openreview.net/pdf?id=ONRFHoUzNk",
+        "type": "article"
+      }
+    ]
   },
   "DQeOavZCoXpF3k_qRDABs": {
     "title": "Unauthorized Access",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers test if vulnerabilities in the AI system or its interfaces allow attackers to gain unauthorized access to data, functionalities, or underlying infrastructure. This includes attempting privilege escalation via prompts, exploiting insecure API endpoints connected to the AI, or manipulating the AI to access restricted system resources.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Defending Model Files from Unauthorized Access",
+        "url": "https://developer.nvidia.com/blog/defending-ai-model-files-from-unauthorized-access-with-canaries/",
+        "type": "article"
+      },
+      {
+        "title": "OWASP API Security Project",
+        "url": "https://owasp.org/www-project-api-security/",
+        "type": "article"
+      },
+      {
+        "title": "Detecting Unauthorized Usage",
+        "url": "https://www.unr.edu/digital-learning/instructional-strategies/understanding-and-integrating-generative-ai-in-teaching/how-can-i-detect-unauthorized-ai-usage",
+        "type": "article"
+      }
+    ]
   },
   "nD0_64ELEeJSN-0aZiR7i": {
     "title": "Data Poisoning",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers simulate data poisoning attacks by evaluating how introducing manipulated or mislabeled data into potential training or fine-tuning datasets could compromise the model. They assess the impact on model accuracy, fairness, or the potential creation of exploitable backdoors, informing defenses around data validation and provenance.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Poisoning",
+        "url": "https://www.aiblade.net/p/ai-poisoning-is-it-really-a-threat",
+        "type": "article"
+      },
+      {
+        "title": "Detecting and Preventing Data Poisoning Attacks on AI Models",
+        "url": "https://arxiv.org/abs/2503.09302",
+        "type": "article"
+      },
+      {
+        "title": "Poisoning Web-Scale Training Data (arXiv)",
+        "url": "https://arxiv.org/abs/2310.12818",
+        "type": "article"
+      }
+    ]
   },
   "xjlttOti-_laPRn8a2fVy": {
     "title": "Adversarial Examples",
-    "description": "",
-    "links": []
+    "description": "A core AI Red Teaming activity involves generating adversarial examples – inputs slightly perturbed to cause misclassification or bypass safety filters – to test model robustness. Red teamers use various techniques (gradient-based, optimization-based, or black-box methods) to find inputs that exploit model weaknesses, informing developers on how to harden the model.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Adversarial Examples – Interpretable Machine Learning Book",
+        "url": "https://christophm.github.io/interpretable-ml-book/adversarial.html",
+        "type": "article"
+      },
+      {
+        "title": "Adversarial Testing for Generative AI",
+        "url": "https://developers.google.com/machine-learning/guides/adv-testing",
+        "type": "article"
+      },
+      {
+        "title": "How AI Can Be Tricked With Adversarial Attacks",
+        "url": "https://www.youtube.com/watch?v=J3X_JWQkvo8?v=MPcfoQBDY0w",
+        "type": "video"
+      }
+    ]
   },
   "iE5PcswBHnu_EBFIacib0": {
     "title": "Model Inversion",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers perform model inversion tests to assess if an attacker can reconstruct sensitive training data (like images, text snippets, or personal attributes) by repeatedly querying the model and analyzing its outputs. Success indicates privacy risks due to data memorization, requiring mitigation techniques like differential privacy or output filtering.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Model inversion and membership inference: Understanding new AI security risks",
+        "url": "https://www.hoganlovells.com/en/publications/model-inversion-and-membership-inference-understanding-new-ai-security-risks-and-mitigating-vulnerabilities",
+        "type": "article"
+      },
+      {
+        "title": "Extracting Training Data from LLMs (arXiv)",
+        "url": "https://arxiv.org/abs/2012.07805",
+        "type": "article"
+      },
+      {
+        "title": "Model Inversion Attacks: A Survey of Approaches and Countermeasures",
+        "url": "https://arxiv.org/html/2411.10023v1",
+        "type": "article"
+      }
+    ]
   },
   "2Y0ZO-etpv3XIvunDLu-W": {
     "title": "Adversarial Training",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers evaluate the effectiveness of adversarial training as a defense. They test if models trained on adversarial examples are truly robust or if new, unseen adversarial attacks can still bypass the hardened defenses. This helps refine the adversarial training process itself.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Model Robustness: Building Reliable AI Models",
+        "url": "https://encord.com/blog/model-robustness-machine-learning-strategies/",
+        "type": "article"
+      },
+      {
+        "title": "Adversarial Testing for Generative AI",
+        "url": "https://developers.google.com/machine-learning/guides/adv-testing",
+        "type": "article"
+      },
+      {
+        "title": "Detecting and Preventing Data Poisoning Attacks on AI Models",
+        "url": "https://arxiv.org/abs/2503.09302",
+        "type": "article"
+      }
+    ]
   },
   "6gEHMhh6BGJI-ZYN27YPW": {
     "title": "Robust Model Design",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers assess whether choices made during model design (architecture selection, regularization techniques, ensemble methods) effectively contribute to robustness against anticipated attacks. They test if these design choices actually prevent common failure modes identified during threat modeling.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Model Robustness: Building Reliable AI Models",
+        "url": "https://encord.com/blog/model-robustness-machine-learning-strategies/",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Robustness in Machine Learning",
+        "url": "https://www.alooba.com/skills/concepts/machine-learning/robustness/",
+        "type": "article"
+      },
+      {
+        "title": "Towards Evaluating the Robustness of Neural Networks (arXiv by Goodfellow et al.)",
+        "url": "https://arxiv.org/abs/1608.04644",
+        "type": "article"
+      }
+    ]
   },
   "7Km0mFpHguHYPs5UhHTsM": {
     "title": "Continuous Monitoring",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers assess the effectiveness of continuous monitoring systems by attempting attacks and observing if detection mechanisms trigger appropriate alerts and responses. They test if monitoring covers AI-specific anomalies (like sudden shifts in output toxicity or unexpected resource consumption by the model) in addition to standard infrastructure monitoring.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Cyber Security Monitoring: 5 Key Components",
+        "url": "https://www.bitsight.com/blog/5-things-to-consider-building-continuous-security-monitoring-strategy",
+        "type": "article"
+      },
+      {
+        "title": "Cyber Security Monitoring: Definition and Best Practices",
+        "url": "https://www.sentinelone.com/cybersecurity-101/cybersecurity/cyber-security-monitoring/",
+        "type": "article"
+      },
+      {
+        "title": "Cybersecurity Monitoring: Definition, Tools & Best Practices",
+        "url": "https://nordlayer.com/blog/cybersecurity-monitoring/",
+        "type": "article"
+      }
+    ]
   },
   "aKzai0A8J55-OBXTnQih1": {
     "title": "Insecure Deserialization",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers investigate if serialized objects used by the AI system (e.g., for saving model states, configurations, or transmitting data) can be manipulated by an attacker. They test if crafting malicious serialized objects could lead to remote code execution or other exploits when the application deserializes the untrusted data.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Lightboard Lessons: OWASP Top 10 - Insecure Deserialization",
+        "url": "https://community.f5.com/kb/technicalarticles/lightboard-lessons-owasp-top-10---insecure-deserialization/281509",
+        "type": "article"
+      },
+      {
+        "title": "How Hugging Face Was Ethically Hacked",
+        "url": "https://www.aiblade.net/p/how-hugging-face-was-ethically-hacked",
+        "type": "article"
+      },
+      {
+        "title": "OWASP TOP 10: Insecure Deserialization",
+        "url": "https://blog.detectify.com/best-practices/owasp-top-10-insecure-deserialization/",
+        "type": "article"
+      },
+      {
+        "title": "Insecure Deserialization",
+        "url": "https://owasp.org/www-community/vulnerabilities/Insecure_Deserialization",
+        "type": "article"
+      }
+    ]
   },
   "kgDsDlBk8W2aM6LyWpFY8": {
     "title": "Remote Code Execution",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers attempt to achieve RCE on systems hosting or interacting with AI models. This could involve exploiting vulnerabilities in the AI framework itself, the web server, connected APIs, or tricking an AI agent with code execution capabilities into running malicious commands provided via prompts. RCE is often the ultimate goal of exploiting other vulnerabilities like code injection or insecure deserialization.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Exploiting LLMs with Code Execution (GitHub Gist)",
+        "url": "https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516",
+        "type": "article"
+      },
+      {
+        "title": "What is remote code execution?",
+        "url": "https://www.cloudflare.com/learning/security/what-is-remote-code-execution/",
+        "type": "article"
+      }
+    ]
   },
   "nhUKKWyBH80nyKfGT8ErC": {
     "title": "Infrastructure Security",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers assess the security posture of the infrastructure hosting AI models (cloud environments, servers, containers). They look for misconfigurations, unpatched systems, insecure network setups, or inadequate access controls that could allow compromise of the AI system or leakage of sensitive data/models.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Infrastructure Attacks (VentureBeat)",
+        "url": "https://venturebeat.com/ai/understanding-ai-infrastructure-attacks/",
+        "type": "article"
+      },
+      {
+        "title": "Network Infrastructure Security - Best Practices and Strategies",
+        "url": "https://www.dataguard.com/blog/network-infrastructure-security-best-practices-and-strategies/",
+        "type": "article"
+      },
+      {
+        "title": "Secure Deployment of ML Systems (NIST)",
+        "url": "https://csrc.nist.gov/publications/detail/sp/800-218/final",
+        "type": "article"
+      }
+    ]
   },
   "Tszl26iNBnQBdBEWOueDA": {
     "title": "API Protection",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers rigorously test the security of APIs providing access to AI models. They probe for OWASP API Top 10 vulnerabilities like broken authentication/authorization, injection flaws, security misconfigurations, and lack of rate limiting, specifically evaluating how these could lead to misuse or compromise of the AI model itself.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Securing APIs with AI for Advanced Threat Protection",
+        "url": "https://adevait.com/artificial-intelligence/securing-apis-with-ai",
+        "type": "article"
+      },
+      {
+        "title": "Securing Machine Learning APIs (IBM)",
+        "url": "https://developer.ibm.com/articles/se-securing-machine-learning-apis/",
+        "type": "article"
+      },
+      {
+        "title": "OWASP API Security Project (Top 10 2023)",
+        "url": "https://owasp.org/www-project-api-security/",
+        "type": "article"
+      }
+    ]
   },
   "J7gjlt2MBx7lOkOnfGvPF": {
     "title": "Authentication",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers test the authentication mechanisms controlling access to AI systems and APIs. They attempt to bypass logins, steal or replay API keys/tokens, exploit weak password policies, or find flaws in MFA implementations to gain unauthorized access to the AI model or its management interfaces.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Red-Teaming in AI Testing: Stress Testing",
+        "url": "https://www.labelvisor.com/red-teaming-abstract-competitive-testing-data-selection/",
+        "type": "article"
+      },
+      {
+        "title": "What is Authentication vs Authorization?",
+        "url": "https://auth0.com/intro-to-iam/authentication-vs-authorization",
+        "type": "article"
+      },
+      {
+        "title": "JWT Attacks",
+        "url": "https://portswigger.net/web-security/jwt",
+        "type": "article"
+      }
+    ]
   },
   "JQ3bR8odXJfd-1RCEf3-Q": {
     "title": "Authentication",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers test authorization controls to ensure that authenticated users can only access the AI features and data permitted by their roles/permissions. They attempt privilege escalation, try to access other users' data via the AI, or manipulate the AI to perform actions beyond its authorized scope.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is Authentication vs Authorization?",
+        "url": "https://auth0.com/intro-to-iam/authentication-vs-authorization",
+        "type": "article"
+      },
+      {
+        "title": "Identity and access management (IAM) fundamental concepts",
+        "url": "https://learn.microsoft.com/en-us/entra/fundamentals/identity-fundamental-concepts",
+        "type": "article"
+      },
+      {
+        "title": "OWASP API Security Project",
+        "url": "https://owasp.org/www-project-api-security/",
+        "type": "article"
+      }
+    ]
   },
   "0bApnJTt-Z2IUf0X3OCYf": {
     "title": "Black Box Testing",
-    "description": "",
-    "links": []
+    "description": "In AI Red Teaming, black-box testing involves probing the AI system with inputs and observing outputs without any knowledge of the model's architecture, training data, or internal logic. This simulates an external attacker and is crucial for finding vulnerabilities exploitable through publicly accessible interfaces, such as prompt injection or safety bypasses discoverable via API interaction.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Black-Box, Gray Box, and White-Box Penetration Testing",
+        "url": "https://www.eccouncil.org/cybersecurity-exchange/penetration-testing/black-box-gray-box-and-white-box-penetration-testing-importance-and-uses/",
+        "type": "article"
+      },
+      {
+        "title": "What is Black Box Testing",
+        "url": "https://www.imperva.com/learn/application-security/black-box-testing/",
+        "type": "article"
+      },
+      {
+        "title": "LLM red teaming guide (open source)",
+        "url": "https://www.promptfoo.dev/docs/red-team/",
+        "type": "article"
+      }
+    ]
   },
   "Mrk_js5UVn4dRDw-Yco3Y": {
     "title": "White Box Testing",
-    "description": "",
-    "links": []
+    "description": "White-box testing in AI Red Teaming grants the tester full access to the model's internals (architecture, weights, training data, source code). This allows for highly targeted attacks, such as crafting precise adversarial examples using gradients, analyzing code for vulnerabilities, or directly examining training data for biases or PII leakage. It simulates insider threats or deep analysis scenarios.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Black-Box, Gray Box, and White-Box Penetration Testing",
+        "url": "https://www.eccouncil.org/cybersecurity-exchange/penetration-testing/black-box-gray-box-and-white-box-penetration-testing-importance-and-uses/",
+        "type": "article"
+      },
+      {
+        "title": "What is White Box Penetration Testing",
+        "url": "https://www.getastra.com/blog/security-audit/white-box-penetration-testing/",
+        "type": "article"
+      },
+      {
+        "title": "The Art of White Box Pentesting",
+        "url": "https://infosecwriteups.com/cracking-the-code-the-art-of-white-box-pentesting-de296bc22c67",
+        "type": "article"
+      }
+    ]
   },
   "ZVNAMCP68XKRXVxF2-hBc": {
     "title": "Grey Box Testing",
-    "description": "",
-    "links": []
+    "description": "Grey-box AI Red Teaming involves testing with partial knowledge of the system, such as knowing the model type (e.g., GPT-4), having access to some documentation, or understanding the general system architecture but not having full model weights or source code. This allows for more targeted testing than black-box while still simulating realistic external attacker scenarios where some information might be gleaned.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Transparency: Connecting AI Red Teaming and Compliance",
+        "url": "https://splx.ai/blog/ai-transparency-connecting-ai-red-teaming-and-compliance",
+        "type": "article"
+      },
+      {
+        "title": "Black-Box, Gray Box, and White-Box Penetration Testing",
+        "url": "https://www.eccouncil.org/cybersecurity-exchange/penetration-testing/black-box-gray-box-and-white-box-penetration-testing-importance-and-uses/",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Black Box, White Box, and Grey Box Testing",
+        "url": "https://www.frugaltesting.com/blog/understanding-black-box-white-box-and-grey-box-testing-in-software-testing",
+        "type": "article"
+      }
+    ]
   },
   "LVdYN9hyCyNPYn2Lz1y9b": {
     "title": "Automated vs Manual",
-    "description": "",
-    "links": []
+    "description": "AI Red Teaming typically employs a blend of automated tools (for large-scale scanning, fuzzing prompts, generating basic adversarial examples) and manual human testing (for creative jailbreaking, complex multi-stage attacks, evaluating nuanced safety issues like bias). Automation provides scale, while manual testing provides depth and creativity needed to find novel vulnerabilities.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Automation Testing vs. Manual Testing: Which is the better approach?",
+        "url": "https://www.opkey.com/blog/automation-testing-vs-manual-testing-which-is-better",
+        "type": "article"
+      },
+      {
+        "title": "Manual Testing vs Automated Testing: What's the Difference?",
+        "url": "https://www.leapwork.com/blog/manual-vs-automated-testing",
+        "type": "article"
+      },
+      {
+        "title": "Spikee",
+        "url": "https://spikee.ai",
+        "type": "article"
+      }
+    ]
   },
   "65Lo60JQS5YlvvQ6KevXt": {
     "title": "Continuous Testing",
-    "description": "",
-    "links": []
+    "description": "Applying continuous testing principles to AI security involves integrating automated red teaming checks into the development pipeline (CI/CD). This allows for regular, automated assessment of model safety, robustness, and alignment as the model or application code evolves, catching regressions or new vulnerabilities early. Tools facilitating Continuous Automated Red Teaming (CART) are emerging.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Continuous Automated Red Teaming (CART)",
+        "url": "https://www.firecompass.com/continuous-automated-red-teaming/",
+        "type": "article"
+      },
+      {
+        "title": "What is Continuous Penetration Testing? Process and Benefits",
+        "url": "https://qualysec.com/continuous-penetration-testing/",
+        "type": "article"
+      },
+      {
+        "title": "What is Continuous Testing and How Does it Work?",
+        "url": "https://www.blackduck.com/glossary/what-is-continuous-testing.html",
+        "type": "article"
+      }
+    ]
   },
   "c8n8FcYKDOgPLQvV9xF5J": {
     "title": "Testing Platforms",
-    "description": "",
-    "links": []
+    "description": "Platforms used by AI Red Teamers range from general penetration testing OS distributions like Kali Linux to specific AI red teaming tools/frameworks like Microsoft's PyRIT or Promptfoo, and vulnerability scanners like OWASP ZAP adapted for API testing of AI services. These platforms provide the toolsets needed to conduct assessments.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Red Teaming Agent - Azure AI Foundry | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-red-teaming-agent",
+        "type": "article"
+      },
+      {
+        "title": "Kali Linux",
+        "url": "https://www.kali.org/",
+        "type": "article"
+      },
+      {
+        "title": "OWASP Zed Attack Proxy (ZAP)",
+        "url": "https://owasp.org/www-project-zap/",
+        "type": "article"
+      },
+      {
+        "title": "Promptfoo",
+        "url": "https://www.promptfoo.dev/",
+        "type": "article"
+      },
+      {
+        "title": "PyRIT (Python Risk Identification Tool for generative AI)",
+        "url": "https://github.com/Azure/PyRIT",
+        "type": "article"
+      }
+    ]
   },
   "59lkLcoqV4gq7f8Zm0X2p": {
     "title": "Monitoring Solutions",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers interact with monitoring tools primarily to test their effectiveness (evasion) or potentially exploit vulnerabilities within them. Understanding tools like IDS (Snort, Suricata), network analyzers (Wireshark), and SIEMs helps red teamers simulate attacks that might bypass or target these defensive systems.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Open Source IDS Tools: Comparing Suricata, Snort, Bro (Zeek), Linux",
+        "url": "https://levelblue.com/blogs/security-essentials/open-source-intrusion-detection-tools-a-quick-overview",
+        "type": "article"
+      },
+      {
+        "title": "Snort",
+        "url": "https://www.snort.org/",
+        "type": "article"
+      },
+      {
+        "title": "Suricata",
+        "url": "https://suricata.io/",
+        "type": "article"
+      },
+      {
+        "title": "Wireshark",
+        "url": "https://www.wireshark.org/",
+        "type": "article"
+      },
+      {
+        "title": "Zeek (formerly Bro)",
+        "url": "https://zeek.org/",
+        "type": "article"
+      }
+    ]
   },
   "et1Xrr8ez-fmB0mAq8W_a": {
     "title": "Benchmark Datasets",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers may use or contribute to benchmark datasets specifically designed to evaluate AI security. These datasets (like HackAprompt, SecBench, NYU CTF Bench, CySecBench) contain prompts or scenarios targeting vulnerabilities, safety issues, or specific cybersecurity capabilities, allowing for standardized testing of models.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "HackAPrompt Dataset",
+        "url": "https://huggingface.co/datasets/hackaprompt/hackaprompt-dataset",
+        "type": "article"
+      },
+      {
+        "title": "CySecBench: Generative AI-based CyberSecurity-focused Prompt Dataset",
+        "url": "https://github.com/cysecbench/dataset",
+        "type": "article"
+      },
+      {
+        "title": "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/69d97a6493fbf016fff0a751f253ad18-Abstract-Datasets_and_Benchmarks_Track.html",
+        "type": "article"
+      },
+      {
+        "title": "SecBench: A Comprehensive Multi-Dimensional Benchmarking Dataset for LLMs in Cybersecurity",
+        "url": "https://arxiv.org/abs/2412.20787",
+        "type": "article"
+      }
+    ]
   },
   "C1zO2xC0AqyV53p2YEPWg": {
     "title": "Custom Testing Scripts",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers frequently write custom scripts (often in Python) to automate bespoke attacks, interact with specific AI APIs, generate complex prompt sequences, parse model outputs at scale, or implement novel exploit techniques not found in standard tools. Proficiency in scripting is essential for advanced AI red teaming.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Python for Cybersecurity: Key Use Cases and Tools",
+        "url": "https://panther.com/blog/python-for-cybersecurity-key-use-cases-and-tools",
+        "type": "article"
+      },
+      {
+        "title": "Python for cybersecurity: use cases, tools and best practices",
+        "url": "https://softteco.com/blog/python-for-cybersecurity",
+        "type": "article"
+      },
+      {
+        "title": "Scapy",
+        "url": "https://scapy.net/",
+        "type": "article"
+      }
+    ]
   },
   "BLnfNlA0C4yzy1dvifjwx": {
     "title": "Reporting Tools",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers use reporting techniques and potentially tools to clearly document their findings, including discovered vulnerabilities, successful exploit steps (e.g., effective prompts), assessed impact, and actionable recommendations tailored to AI systems. Good reporting translates technical findings into understandable risks for stakeholders.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "The Complete Red Teaming Checklist [PDF]: 5 Key Steps - Mindgard AI",
+        "url": "https://mindgard.ai/blog/red-teaming-checklist",
+        "type": "article"
+      },
+      {
+        "title": "Penetration Testing Report: 6 Key Sections and 4 Best Practices",
+        "url": "https://brightsec.com/blog/penetration-testing-report/",
+        "type": "article"
+      },
+      {
+        "title": "Penetration testing best practices: Strategies for all test types",
+        "url": "https://www.strikegraph.com/blog/pen-testing-best-practices",
+        "type": "article"
+      }
+    ]
   },
   "s1xKK8HL5-QGZpcutiuvj": {
     "title": "Specialized Courses",
-    "description": "",
-    "links": []
+    "description": "Targeted training is crucial for mastering AI Red Teaming. Look for courses covering adversarial ML, prompt hacking, LLM security, ethical hacking for AI, and specific red teaming methodologies applied to AI systems offered by platforms like Learn Prompting, Coursera, or security training providers.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Red Teaming Courses - Learn Prompting",
+        "url": "https://learnprompting.org/blog/ai-red-teaming-courses",
+        "type": "course"
+      },
+      {
+        "title": "AI Security | Coursera",
+        "url": "https://www.coursera.org/learn/ai-security",
+        "type": "course"
+      },
+      {
+        "title": "Free Online Cyber Security Courses with Certificates in 2025",
+        "url": "https://www.eccouncil.org/cybersecurity-exchange/cyber-novice/free-cybersecurity-courses-beginners/",
+        "type": "course"
+      }
+    ]
   },
   "HHjsFR6wRDqUd66PMDE_7": {
     "title": "Industry Credentials",
-    "description": "",
-    "links": []
+    "description": "Beyond formal certifications, recognition in the AI Red Teaming field comes from practical achievements like finding significant vulnerabilities (responsible disclosure), winning AI-focused CTFs or hackathons (like HackAPrompt), contributing to AI security research, or building open-source testing tools.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "HackAPrompt",
+        "url": "https://hackaprompt.com",
+        "type": "article"
+      },
+      {
+        "title": "RedTeam Arena",
+        "url": "https://redarena.ai",
+        "type": "article"
+      }
+    ]
   },
   "MmwwRK4I9aRH_ha7duPqf": {
     "title": "Lab Environments",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers need environments to practice attacking vulnerable systems safely. While traditional labs (HTB, THM, VulnHub) build general pentesting skills, platforms are emerging with labs specifically focused on AI/LLM vulnerabilities, prompt injection, or adversarial ML challenges.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "HackAPrompt Playground",
+        "url": "https://learnprompting.org/hackaprompt-playground",
+        "type": "article"
+      },
+      {
+        "title": "InjectPrompt Playground",
+        "url": "https://playground.injectprompt.com/",
+        "type": "article"
+      },
+      {
+        "title": "Gandalf AI Prompt Injection Lab",
+        "url": "https://gandalf.lakera.ai/",
+        "type": "article"
+      },
+      {
+        "title": "Hack The Box: Hacking Labs",
+        "url": "https://www.hackthebox.com/hacker/hacking-labs",
+        "type": "article"
+      },
+      {
+        "title": "TryHackMe: Learn Cyber Security",
+        "url": "https://tryhackme.com/",
+        "type": "article"
+      }
+    ]
   },
   "2Imb64Px3ZQcBpSQjdc_G": {
     "title": "CTF Challenges",
-    "description": "",
-    "links": []
+    "description": "Capture The Flag competitions increasingly include AI/ML security challenges. Participating in CTFs (tracked on CTFtime) or platforms like picoCTF helps AI Red Teamers hone skills in reverse engineering, web exploitation, and cryptography applied to AI systems, including specialized AI safety CTFs.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "HackAPrompt",
+        "url": "https://www.hackaprompt.com/",
+        "type": "article"
+      },
+      {
+        "title": "Progress from our Frontier Red Team",
+        "url": "https://www.anthropic.com/news/strategic-warning-for-ai-risk-progress-and-insights-from-our-frontier-red-team",
+        "type": "article"
+      },
+      {
+        "title": "CTFtime.org",
+        "url": "https://ctftime.org/",
+        "type": "article"
+      }
+    ]
   },
   "DpYsL0du37n40toH33fIr": {
     "title": "Red Team Simulations",
-    "description": "",
-    "links": []
+    "description": "Participating in or conducting structured red team simulations against AI systems (or components) provides the most realistic practice. This involves applying methodologies, TTPs (Tactics, Techniques, and Procedures), reconnaissance, exploitation, and reporting within a defined scope and objective, specifically targeting AI vulnerabilities.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "A Simple Guide to Successful Red Teaming",
+        "url": "https://www.cobaltstrike.com/resources/guides/a-simple-guide-to-successful-red-teaming",
+        "type": "article"
+      },
+      {
+        "title": "The Complete Guide to Red Teaming: Process, Benefits & More",
+        "url": "https://mindgard.ai/blog/red-teaming",
+        "type": "article"
+      },
+      {
+        "title": "The Complete Red Teaming Checklist [PDF]: 5 Key Steps - Mindgard AI",
+        "url": "https://mindgard.ai/blog/red-teaming-checklist",
+        "type": "article"
+      }
+    ]
   },
   "LuKnmd9nSz9yLbTU_5Yp2": {
     "title": "Conferences",
-    "description": "",
-    "links": []
+    "description": "Attending major cybersecurity conferences (DEF CON, Black Hat, RSA) and increasingly specialized AI Safety/Security conferences allows AI Red Teamers to learn about cutting-edge research, network with peers, and discover new tools and attack/defense techniques.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Black Hat Events",
+        "url": "https://www.blackhat.com/",
+        "type": "article"
+      },
+      {
+        "title": "DEF CON Hacking Conference",
+        "url": "https://defcon.org/",
+        "type": "article"
+      },
+      {
+        "title": "Global Conference on AI, Security and Ethics 2025",
+        "url": "https://unidir.org/event/global-conference-on-ai-security-and-ethics-2025/",
+        "type": "article"
+      },
+      {
+        "title": "RSA Conference",
+        "url": "https://www.rsaconference.com/",
+        "type": "article"
+      }
+    ]
   },
   "ZlR03pM-sqVFZNhD1gMSJ": {
     "title": "Research Groups",
-    "description": "",
-    "links": []
+    "description": "Following and potentially contributing to research groups at universities (like CMU, Stanford, Oxford), non-profits (like OpenAI, Anthropic), or government bodies (like UK's AISI) focused on AI safety, security, and alignment provides deep insights into emerging threats and mitigation strategies relevant to AI Red Teaming.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Cybersecurity | Global Cyber Security Capacity Centre (Oxford)",
+        "url": "https://gcscc.ox.ac.uk/ai-security",
+        "type": "article"
+      },
+      {
+        "title": "Anthropic Research",
+        "url": "https://www.anthropic.com/research",
+        "type": "article"
+      },
+      {
+        "title": "Center for AI Safety",
+        "url": "https://www.safe.ai/",
+        "type": "article"
+      },
+      {
+        "title": "The AI Security Institute (AISI)",
+        "url": "https://www.aisi.gov.uk/",
+        "type": "article"
+      }
+    ]
   },
   "Smncq-n1OlnLAY27AFQOO": {
     "title": "Forums",
-    "description": "",
-    "links": []
+    "description": "Engaging in online forums, mailing lists, Discord servers, or subreddits dedicated to AI security, adversarial ML, prompt engineering, or general cybersecurity helps AI Red Teamers exchange knowledge, ask questions, learn about new tools/techniques, and find collaboration opportunities.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "LearnPrompting Prompt Hacking Discord",
+        "url": "https://discord.com/channels/1046228027434086460/1349689482651369492",
+        "type": "article"
+      },
+      {
+        "title": "Reddit - r/ChatGPTJailbreak",
+        "url": "https://www.reddit.com/r/ChatGPTJailbreak/",
+        "type": "article"
+      },
+      {
+        "title": "Reddit - r/artificial",
+        "url": "https://www.reddit.com/r/artificial/",
+        "type": "article"
+      },
+      {
+        "title": "Reddit - r/cybersecurity",
+        "url": "https://www.reddit.com/r/cybersecurity/",
+        "type": "article"
+      }
+    ]
   },
   "xJYTRbPxMn0Xs5ea0Ygn6": {
     "title": "LLM Security Testing",
-    "description": "",
-    "links": []
+    "description": "The core application area for many AI Red Teamers today involves specifically testing Large Language Models for vulnerabilities like prompt injection, jailbreaking, harmful content generation, bias, and data privacy issues using specialized prompts and evaluation frameworks.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Red Teaming Courses - Learn Prompting",
+        "url": "https://learnprompting.org/blog/ai-red-teaming-courses",
+        "type": "course"
+      },
+      {
+        "title": "SecBench: A Comprehensive Multi-Dimensional Benchmarking Dataset for LLMs in Cybersecurity",
+        "url": "https://arxiv.org/abs/2412.20787",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide to Red Teaming LLMs and Adversarial Prompts (Kili Technology)",
+        "url": "https://kili-technology.com/large-language-models-llms/red-teaming-llms-and-adversarial-prompts",
+        "type": "article"
+      }
+    ]
   },
   "FVsKivsJrIb82B0lpPmgw": {
     "title": "Agentic AI Security",
-    "description": "",
-    "links": []
+    "description": "As AI agents capable of autonomous action become more common, AI Red Teamers must test their unique security implications. This involves assessing risks related to goal hijacking, unintended actions through tool use, exploitation of planning mechanisms, and ensuring agents operate safely within their designated boundaries.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Agents - Learn Prompting",
+        "url": "https://learnprompting.org/docs/intermediate/ai_agents",
+        "type": "article"
+      },
+      {
+        "title": "EmbraceTheRed",
+        "url": "https://embracethered.com/",
+        "type": "article"
+      }
+    ]
   },
   "KAcCZ3zcv25R6HwzAsfUG": {
     "title": "Responsible Disclosure",
-    "description": "",
-    "links": []
+    "description": "A critical practice for AI Red Teamers is responsible disclosure: privately reporting discovered AI vulnerabilities (e.g., a successful jailbreak, data leak method, or severe bias) to the model developers or system owners, allowing them time to remediate before any public discussion, thus preventing malicious exploitation.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "0din.ai Policy",
+        "url": "https://0din.ai/policy",
+        "type": "article"
+      },
+      {
+        "title": "Huntr Guidelines",
+        "url": "https://huntr.com/guidelines",
+        "type": "article"
+      },
+      {
+        "title": "Google Vulnerability Reward Program (VRP)",
+        "url": "https://bughunters.google.com/",
+        "type": "article"
+      }
+    ]
   },
   "-G8v_CNa8wO_g-46_RFQo": {
     "title": "Emerging Threats",
-    "description": "",
-    "links": []
+    "description": "AI Red Teamers must stay informed about potential future threats enabled by more advanced AI, such as highly autonomous attack agents, AI-generated malware that evades detection, sophisticated deepfakes for social engineering, or large-scale exploitation of interconnected AI systems. Anticipating these helps shape current testing priorities.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI Security Risks Uncovered: What You Must Know in 2025",
+        "url": "https://ttms.com/uk/ai-security-risks-explained-what-you-need-to-know-in-2025/",
+        "type": "article"
+      },
+      {
+        "title": "Why Artificial Intelligence is the Future of Cybersecurity",
+        "url": "https://www.darktrace.com/blog/why-artificial-intelligence-is-the-future-of-cybersecurity",
+        "type": "article"
+      },
+      {
+        "title": "AI Index 2024",
+        "url": "https://aiindex.stanford.edu/report/",
+        "type": "article"
+      }
+    ]
   },
   "soC-kcem1ISbnCQMa6BIB": {
     "title": "Advanced Techniques",
-    "description": "",
-    "links": []
+    "description": "The practice of AI Red Teaming itself will evolve. Future techniques may involve using AI adversaries to automatically discover complex vulnerabilities, developing more sophisticated methods for testing AI alignment and safety properties, simulating multi-agent system failures, and creating novel metrics for evaluating AI robustness against unknown future attacks.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "AI red-teaming in critical infrastructure: Boosting security and trust in AI systems",
+        "url": "https://www.dnv.com/article/ai-red-teaming-for-critical-infrastructure-industries/",
+        "type": "article"
+      },
+      {
+        "title": "Advanced Techniques in AI Red Teaming for LLMs",
+        "url": "https://neuraltrust.ai/blog/advanced-techniques-in-ai-red-teaming",
+        "type": "article"
+      },
+      {
+        "title": "Diverse and Effective Red Teaming with Auto-generated Rewards and Multi-step Reinforcement Learning",
+        "url": "https://arxiv.org/html/2412.18693v1",
+        "type": "article"
+      }
+    ]
   },
   "VmaIHVsCpq2um_0cA33V3": {
     "title": "Research Opportunities",
-    "description": "",
-    "links": []
+    "description": "AI Red Teaming relies on ongoing research. Key areas needing further investigation include scalable methods for finding elusive vulnerabilities, understanding emergent behaviors in complex models, developing provable safety guarantees, creating better benchmarks for AI security, and exploring the socio-technical aspects of AI misuse and defense.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Cutting-Edge Research on AI Security bolstered with new Challenge Fund",
+        "url": "https://www.gov.uk/government/news/cutting-edge-research-on-ai-security-bolstered-with-new-challenge-fund-to-ramp-up-public-trust-and-adoption",
+        "type": "article"
+      },
+      {
+        "title": "Careers | The AI Security Institute (AISI)",
+        "url": "https://www.aisi.gov.uk/careers",
+        "type": "article"
+      },
+      {
+        "title": "Research - Anthropic",
+        "url": "https://www.anthropic.com/research",
+        "type": "article"
+      }
+    ]
   },
   "WePO66_4-gNcSdE00WKmw": {
     "title": "Industry Standards",
-    "description": "",
-    "links": []
+    "description": "As AI matures, AI Red Teamers will increasingly need to understand and test against emerging industry standards and regulations for AI safety, security, and risk management, such as the NIST AI RMF, ISO/IEC 42001, and sector-specific guidelines, ensuring AI systems meet compliance requirements.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "ISO 42001: The New Compliance Standard for AI Management Systems",
+        "url": "https://www.brightdefense.com/resources/iso-42001-compliance/",
+        "type": "article"
+      },
+      {
+        "title": "ISO 42001: What it is & why it matters for AI management",
+        "url": "https://www.itgovernance.co.uk/iso-42001",
+        "type": "article"
+      },
+      {
+        "title": "NIST AI Risk Management Framework (AI RMF)",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "type": "article"
+      },
+      {
+        "title": "ISO/IEC 42001: Information technology — Artificial intelligence — Management system",
+        "url": "https://www.iso.org/standard/81230.html",
+        "type": "article"
+      }
+    ]
   }
 }

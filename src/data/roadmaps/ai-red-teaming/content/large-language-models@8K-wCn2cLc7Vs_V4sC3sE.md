@@ -4,6 +4,6 @@ LLMs are a primary target for AI Red Teaming. Understanding their architecture (
 
 Learn more from the following resources:
 
-- [@article@What is an LLM (large language model)? - Cloudflare](https://www.cloudflare.com/learning/ai/what-is-large-language-model/) - Concise explanation from Cloudflare.
-- [@guide@Introduction to Large Language Models - Learn Prompting](https://learnprompting.org/docs/intro_to_llms) - Learn Prompting's introduction.
-- [@guide@What Are Large Language Models? A Beginner's Guide for 2025 - KDnuggets](https://www.kdnuggets.com/large-language-models-beginners-guide-2025) - Overview of LLMs, how they work, strengths, and limitations.
+- [@article@What is an LLM (large language model)?](https://www.cloudflare.com/learning/ai/what-is-large-language-model/)
+- [@guide@ChatGPT For Everyone](https://learnprompting.org/courses/chatgpt-for-everyone)
+- [@guide@What Are Large Language Models? A Beginner's Guide for 2025](https://www.kdnuggets.com/large-language-models-beginners-guide-2025)

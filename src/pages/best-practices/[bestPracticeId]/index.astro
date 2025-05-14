@@ -14,6 +14,7 @@ import {
   type BestPracticeFrontmatter,
   getAllBestPractices,
 } from '../../../lib/best-practice';
+import { CheckSubscriptionVerification } from '../../../components/Billing/CheckSubscriptionVerification';
 
 export const prerender = true;
 
@@ -107,6 +108,7 @@ const ogImageUrl = getOpenGraphImageUrl({
             resourceId={bestPracticeId}
             resourceTitle={bestPracticeData.title}
             resourceType='best-practice'
+            renderer={'balsamiq'}
             client:idle
             canSubmitContribution={true}
           />
@@ -136,6 +138,6 @@ const ogImageUrl = getOpenGraphImageUrl({
   />
 
   {bestPracticeData.isUpcoming && <UpcomingForm />}
-
+  <CheckSubscriptionVerification client:load />
   <div slot='changelog-banner'></div>
 </BaseLayout>

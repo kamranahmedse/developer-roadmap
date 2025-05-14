@@ -4,6 +4,6 @@ The CIA Triad is directly applicable in AI Red Teaming. Confidentiality tests fo
 
 Learn more from the following resources:
 
-- [@article@Confidentiality, Integrity, Availability: Key Examples - DataSunrise](https://www.datasunrise.com/knowledge-center/confidentiality-integrity-availability-examples/) - Explains CIA triad with examples, mentioning AI/ML relevance.
-- [@article@The CIA Triad: Confidentiality, Integrity, Availability - Veeam](https://www.veeam.com/blog/cybersecurity-cia-triad-explained.html) - Breakdown of the three principles and how they apply.
-- [@article@What's The CIA Triad? Confidentiality, Integrity, & Availability, Explained | Splunk](https://www.splunk.com/en_us/blog/learn/cia-triad-confidentiality-integrity-availability.html) - Detailed explanation of the triad, mentioning modern updates and AI context.
+- [@article@Confidentiality, Integrity, Availability: Key Examples](https://www.datasunrise.com/knowledge-center/confidentiality-integrity-availability-examples/)
+- [@article@The CIA Triad: Confidentiality, Integrity, Availability](https://www.veeam.com/blog/cybersecurity-cia-triad-explained.html)
+- [@article@What's The CIA Triad? Confidentiality, Integrity, & Availability, Explained](https://www.splunk.com/en_us/blog/learn/cia-triad-confidentiality-integrity-availability.html)

@@ -4,5 +4,5 @@ Beyond formal certifications, recognition in the AI Red Teaming field comes from
 
 Learn more from the following resources:
 
-- [@community@DEF CON - Wikipedia (Mentions Black Badge)](https://en.wikipedia.org/wiki/DEF_CON#Black_Badge) - Example of a high-prestige credential from CTFs.
-- [@community@HackAPrompt (Learn Prompting)](https://learnprompting.org/hackaprompt) - Example of a major AI Red Teaming competition.
+- [@platform@HackAPrompt](https://hackaprompt.com)
+- [@platform@RedTeam Arena](https://redarena.ai)

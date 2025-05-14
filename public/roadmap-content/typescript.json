@@ -382,7 +382,7 @@
     "description": "`any` is a special type in TypeScript that represents a value of any type. When a value is declared with the any type, the compiler will not perform any type checks or type inference on that value.\n\nFor example:\n\n    let anyValue: any = 42;\n    \n    // we can assign any value to anyValue, regardless of its type\n    anyValue = 'Hello, world!';\n    anyValue = true;\n    \n\nLearn more from the following links:",
     "links": [
       {
-        "title": "Arrays",
+        "title": "any",
         "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any",
         "type": "article"
       }

@@ -5,3 +5,8 @@ The rise in popularity of NoSQL databases provided a flexible and fluidity with 
 - **B**asically **A**vailable
 - **S**oft state
 - **E**ventual consistency
+
+Visit the following resources to learn more:
+
+- [@article@ACID vs. BASE Database Model](https://phoenixnap.com/kb/acid-vs-base)
+- [@article@What Is BASE in Database Engineering?](https://www.lifewire.com/abandoning-acid-in-favor-of-base-1019674)

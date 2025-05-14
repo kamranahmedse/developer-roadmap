@@ -1,8 +1,10 @@
-## Authentication vs Authorization
+# Authentication vs Authorization
 
 **Authentication** is the process of validating the identity of a user, device, or system. It confirms that the entity attempting to access the resource is who or what they claim to be. The most common form of authentication is the use of usernames and passwords. Other methods include:
 
 **Authorization** comes into play after the authentication process is complete. It involves granting or denying access to a resource, based on the authenticated user's privileges. Authorization determines what actions the authenticated user or entity is allowed to perform within a system or application.
+
+Learn more from the following resources:
 
 - [@article@Two-factor authentication (2FA)](https://authy.com/what-is-2fa/)
 - [@article@Biometrics (fingerprint, facial recognition, etc.)](https://me-en.kaspersky.com/resource-center/definitions/biometrics)

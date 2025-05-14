@@ -4,7 +4,6 @@ AI Red Teaming is the practice of simulating adversarial attacks against AI syst
 
 Learn more from the following resources:
 
-- [@article@A Guide to AI Red Teaming - HiddenLayer](https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/) - Discusses AI red teaming concepts and contrasts with traditional methods.
-- [@article@What is AI Red Teaming? (Learn Prompting)](https://learnprompting.org/blog/what-is-ai-red-teaming) - Overview of AI red teaming, its history, and key challenges.
-- [@article@What is AI Red Teaming? The Complete Guide - Mindgard](https://mindgard.ai/blog/what-is-ai-red-teaming) - Guide covering AI red teaming processes, use cases, and benefits.
-- [@podcast@Red Team Podcast | AI Red Teaming Insights & Defense Strategies - Mindgard](https://mindgard.ai/podcast/red-team) - Podcast series covering AI red teaming trends and strategies.
+- [@article@A Guide to AI Red Teaming](https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/)
+- [@article@What is AI Red Teaming? (Learn Prompting)](https://learnprompting.org/blog/what-is-ai-red-teaming)
+- [@article@What is AI Red Teaming? The Complete Guide](https://mindgard.ai/blog/what-is-ai-red-teaming)

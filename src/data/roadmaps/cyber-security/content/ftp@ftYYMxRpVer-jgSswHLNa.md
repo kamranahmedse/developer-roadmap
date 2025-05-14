@@ -6,5 +6,6 @@ FTP operates on a client-server model, where one computer acts as the client (th
 
 Learn more from the following resources:
 
+- [@article@File Transfer Protocol](https://en.wikipedia.org/wiki/File_Transfer_Protocol)
 - [@video@What is FTP?](https://www.youtube.com/watch?v=HI0Oh4NJqcI)
 - [@article@FTP meaning and uses](https://www.investopedia.com/terms/f/ftp-file-transfer-protocol.asp)

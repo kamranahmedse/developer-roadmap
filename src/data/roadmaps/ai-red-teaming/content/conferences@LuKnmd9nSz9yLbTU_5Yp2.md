@@ -4,7 +4,7 @@ Attending major cybersecurity conferences (DEF CON, Black Hat, RSA) and increasi
 
 Learn more from the following resources:
 
-- [@conference@Black Hat Events](https://www.blackhat.com/) - Professional security conference with AI tracks.
-- [@conference@DEF CON Hacking Conference](https://defcon.org/) - Major hacking conference with relevant villages/talks.
-- [@conference@Global Conference on AI, Security and Ethics 2025 - UNIDIR](https://unidir.org/event/global-conference-on-ai-security-and-ethics-2025/) - Example of a specialized AI security/ethics conference.
-- [@conference@RSA Conference](https://www.rsaconference.com/) - Large industry conference covering AI security.
+- [@conference@Black Hat Events](https://www.blackhat.com/)
+- [@conference@DEF CON Hacking Conference](https://defcon.org/)
+- [@conference@Global Conference on AI, Security and Ethics 2025](https://unidir.org/event/global-conference-on-ai-security-and-ethics-2025/)
+- [@conference@RSA Conference](https://www.rsaconference.com/)

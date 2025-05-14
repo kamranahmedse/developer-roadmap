@@ -4,7 +4,5 @@ AI systems introduce novel risks beyond traditional software, such as emergent u
 
 Learn more from the following resources:
 
-@article@What's the Difference Between Traditional Red-Teaming and AI Red-Teaming? - Cranium AI - Compares objectives, techniques, expertise, and attack vectors to highlight why AI needs specialized red teaming.
-@article@What is AI Red Teaming? The Complete Guide - Mindgard - Details specific use cases like identifying bias, ensuring resilience against AI-specific attacks, testing data privacy, and aligning with regulations.
-@article@The Expanding Role of Red Teaming in Defending AI Systems - Protect AI - Explains why the dynamic, adaptive, and often opaque nature of AI necessitates red teaming beyond traditional approaches.
-@article@How red teaming helps safeguard the infrastructure behind AI models - IBM - Focuses on unique AI risks like model IP theft, open-source vulnerabilities, and excessive agency that red teaming addresses.
+- [@course@Introduction to Prompt Hacking](https://learnprompting.org/courses/intro-to-prompt-hacking)
+- [@article@Prompt Hacking Offensive Measures](https://learnprompting.org/docs/prompt_hacking/offensive_measures/introduction)

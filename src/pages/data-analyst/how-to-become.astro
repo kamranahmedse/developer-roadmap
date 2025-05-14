@@ -3,9 +3,8 @@ import GuideContent from '../../components/Guide/GuideContent.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getGuideById } from '../../lib/guide';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
-import { replaceVariables } from '../../lib/markdown';
 
-const guideId = 'frontend-vs-backend-ai';
+const guideId = 'data-analyst-how-to-become';
 const guide = await getGuideById(guideId);
 
 const { frontmatter: guideData } = guide!;
@@ -21,10 +20,10 @@ const ogImageUrl =
 <BaseLayout
   title={guideData.seo.title}
   description={guideData.seo.description}
-  permalink={guideData.excludedBySlug}
+  permalink={`/data-analyst/how-to-become`}
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}
 >
   <GuideContent guide={guide!} />
-  <div slot="changelog-banner" />
+  <div slot='changelog-banner'></div>
 </BaseLayout>

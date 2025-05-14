@@ -15,7 +15,7 @@ export function AITutorLayout(props: AITutorLayoutProps) {
 
   return (
     <>
-      <div className="flex flex-row items-center justify-between border-b border-slate-200 px-4 py-3 lg:hidden">
+      <div className="flex flex-row items-center justify-between border-b border-slate-200 px-4 py-3 lg:hidden sticky top-0 bg-white z-10">
         <a href="/" className="flex flex-row items-center gap-1.5">
           <RoadmapLogoIcon className="size-6 text-gray-500" color="black" />
         </a>
@@ -27,7 +27,7 @@ export function AITutorLayout(props: AITutorLayoutProps) {
         </button>
       </div>
 
-      <div className="flex flex-grow flex-row">
+      <div className="flex flex-grow lg:h-screen flex-row">
         <AITutorSidebar
           onClose={() => setIsSidebarFloating(false)}
           isFloating={isSidebarFloating}
