@@ -6,4 +6,3 @@ Learn more from the following resources:
 
 - [@article@Building Trustworthy AI: Contending with Data Poisoning](https://nisos.com/research/building-trustworthy-ai/)
 - [@article@What Is Adversarial AI in Machine Learning?](https://www.paloaltonetworks.co.uk/cyberpedia/what-are-adversarial-attacks-on-AI-Machine-Learning)
-- [@course@AI Security | Coursera](https://www.coursera.org/learn/ai-security)
