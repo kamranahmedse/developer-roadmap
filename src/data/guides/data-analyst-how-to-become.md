@@ -8,6 +8,8 @@ seo:
   description: "Learn how to become a data analyst with no experience through smart steps, skill-building tips, and my real-world guidance."
   ogImageUrl: 'https://assets.roadmap.sh/guest/become-a-data-analyst-with-no-experience-khk03.jpg'
 isNew: true
+relatedTitle: "Other Guides"
+relatedGuidesId: data-analyst
 type: 'textual'
 date: 2025-05-14
 sitemap:
