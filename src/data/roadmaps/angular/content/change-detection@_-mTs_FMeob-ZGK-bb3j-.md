@@ -4,6 +4,6 @@ Change detection is the process through which Angular checks to see whether your
 
 Visit the following resources to learn more:
 
-- [@official@Runtime performance optimization](https://angular.dev/best-practices/runtime-performance)
+- [@official@Runtime Performance Optimization](https://angular.dev/best-practices/runtime-performance)
 - [@official@ChangeDetectionStrategy](https://angular.dev/guide/components/advanced-configuration#changedetectionstrategy)
 - [@video@4 Runtime Performance Optimizations ( Change detection )](https://www.youtube.com/watch?v=f8sA-i6gkGQ)

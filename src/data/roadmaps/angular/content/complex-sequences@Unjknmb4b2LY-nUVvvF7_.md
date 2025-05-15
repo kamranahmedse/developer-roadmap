@@ -11,5 +11,5 @@ The functions that control complex animation sequences are:
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Complex Sequences](https://angular.dev/guide/animations/complex-sequences)
+- [@official@Complex Sequences](https://angular.dev/guide/animations/complex-sequences)
 - [@video@Angular Animations: Animating multiple items in parallel](https://www.youtube.com/watch?v=RPdR7HzNQIw)

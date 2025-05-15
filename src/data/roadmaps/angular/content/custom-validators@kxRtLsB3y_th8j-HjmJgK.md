@@ -4,5 +4,5 @@ Custom validators in Angular are functions that allow you to define your own val
 
 Learn more from the following resources:
 
-- [@official@Defining custom validators](https://v17.angular.io/guide/form-validation#custom-validators)
+- [@official@Defining Custom Validators](https://v17.angular.io/guide/form-validation#custom-validators)
 - [@video@How to create custom validator in Angular 17](https://youtu.be/3TwmS0Gdg9I?si=1w4EX-HifJ70-CxT)

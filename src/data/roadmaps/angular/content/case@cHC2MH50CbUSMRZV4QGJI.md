@@ -4,5 +4,5 @@ If no `@case` matches the `@switch` condition and there is no `@default` block, 
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - @switch](https://angular.dev/guide/templates/control-flow#switch-block---selection)
+- [@official@\@switch](https://angular.dev/guide/templates/control-flow#switch-block---selection)
 - [@article@Angular @switch: Complete Guide](https://blog.angular-university.io/angular-switch/)
