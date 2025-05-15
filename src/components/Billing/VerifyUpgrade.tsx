@@ -30,10 +30,39 @@ export function VerifyUpgrade(props: VerifyUpgradeProps) {
       userBillingDetails.status === 'active' &&
       (newPriceId ? userBillingDetails.priceId === newPriceId : true)
     ) {
+      if (!newPriceId) {
+        // it means that the user is subscribing for the first time
+        // not changing the plan
+        window?.fireEvent({
+          action: `tutor_purchase_${userBillingDetails.interval === 'month' ? 'mo' : 'an'}`,
+          category: 'ai_tutor',
+          label: `${userBillingDetails.interval} Plan Purchased`,
+        });
+      }
+
       deleteUrlParam('s');
       window.location.reload();
     }
   }, [userBillingDetails]);
+
+  useEffect(() => {
+    // it means that the user is changing the plan
+    // not subscribing for the first time
+    if (newPriceId) {
+      return;
+    }
+
+    window?.fireEvent({
+      action: 'tutor_purchase',
+      category: 'ai_tutor',
+      label: 'Subscription Activated',
+    });
+    window?.fireEvent({
+      action: 'tutor_ty',
+      category: 'ai_tutor',
+      label: 'Thank You Page Visited',
+    });
+  }, [newPriceId]);
 
   return (
     <Modal
@@ -47,11 +76,11 @@ export function VerifyUpgrade(props: VerifyUpgradeProps) {
         <h3 className="text-xl font-bold text-black">Subscription Activated</h3>
       </div>
 
-      <p className="mt-2 text-balance text-center text-gray-600">
+      <p className="mt-2 text-center text-balance text-gray-600">
         Your subscription has been activated successfully.
       </p>
 
-      <p className="mt-4 text-balance text-center text-gray-600">
+      <p className="mt-4 text-center text-balance text-gray-600">
         It might take a minute for the changes to reflect. We will{' '}
         <b className="text-black">reload</b> the page for you.
       </p>

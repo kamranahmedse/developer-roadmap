@@ -136,6 +136,14 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
     setSelectedPlan(currentPlan.interval);
   }, [currentPlan]);
 
+  useEffect(() => {
+    window?.fireEvent({
+      action: 'tutor_pricing',
+      category: 'ai_tutor',
+      label: 'Clicked Upgrade to Pro',
+    });
+  }, []);
+
   if (!user) {
     return null;
   }
@@ -262,18 +270,35 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                         }
                         onClick={() => {
                           setSelectedPlan(plan.interval);
+
                           if (!currentPlanPriceId) {
                             const currentUrlPath = window.location.pathname;
-                            const encodedCurrentUrlPath = encodeURIComponent(
-                              currentUrlPath,
-                            );
+                            const encodedCurrentUrlPath =
+                              encodeURIComponent(currentUrlPath);
                             const successPage = `/thank-you?next=${encodedCurrentUrlPath}&s=1`;
 
-                            createCheckoutSession({
-                              priceId: plan.priceId,
-                              success: success || successPage,
-                              cancel: cancel || `${currentUrlPath}?s=0`,
+                            window?.fireEvent({
+                              action: 'tutor_checkout',
+                              category: 'ai_tutor',
+                              label: 'Checkout Started',
                             });
+
+                            createCheckoutSession(
+                              {
+                                priceId: plan.priceId,
+                                success: success || successPage,
+                                cancel: cancel || `${currentUrlPath}?s=0`,
+                              },
+                              {
+                                onSuccess: () => {
+                                  window?.fireEvent({
+                                    action: `tutor_checkout_${plan.interval === 'month' ? 'mo' : 'an'}`,
+                                    category: 'ai_tutor',
+                                    label: `${plan.interval} Plan Checkout Started`,
+                                  });
+                                },
+                              },
+                            );
                             return;
                           }
                           setIsUpdatingPlan(true);
