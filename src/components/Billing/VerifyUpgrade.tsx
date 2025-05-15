@@ -30,20 +30,18 @@ export function VerifyUpgrade(props: VerifyUpgradeProps) {
       userBillingDetails.status === 'active' &&
       (newPriceId ? userBillingDetails.priceId === newPriceId : true)
     ) {
-      deleteUrlParam('s');
-      window.location.reload();
-
-      if (newPriceId) {
-        return;
+      if (!newPriceId) {
+        // it means that the user is subscribing for the first time
+        // not changing the plan
+        window?.fireEvent({
+          action: `tutor_purchase_${userBillingDetails.interval === 'month' ? 'mo' : 'an'}`,
+          category: 'ai_tutor',
+          label: `${userBillingDetails.interval} Plan Purchased`,
+        });
       }
 
-      // it means that the user is subscribing for the first time
-      // not changing the plan
-      window?.fireEvent({
-        action: `tutor_purchase_${userBillingDetails.interval === 'month' ? 'mo' : 'an'}`,
-        category: 'ai_tutor',
-        label: `${userBillingDetails.interval} Plan Purchased`,
-      });
+      deleteUrlParam('s');
+      window.location.reload();
     }
   }, [userBillingDetails]);
 
