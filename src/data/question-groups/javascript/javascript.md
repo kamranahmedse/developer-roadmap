@@ -4,9 +4,9 @@ briefTitle: 'JavaScript'
 briefDescription: 'Ace your next JavaScript developer interview with our Q&As that are popular among hiring managers.'
 title: 'Top 30 JavaScript Interview Questions and Answers'
 description: 'Ace your next JavaScript developer interview with our Q&As that are popular among hiring managers.'
-isNew: true
 authorId: 'ekene'
 ending: 'javascript-ending.md'
+date: 2025-05-15
 seo:
   title: 'Top 30 JavaScript Interview Questions and Answers'
   description: 'Ace your next JavaScript developer interview with our Q&As that are popular among hiring managers.'
