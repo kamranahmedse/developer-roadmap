@@ -1,0 +1,5 @@
+Java and JavaScript are different programming languages in terms of syntax and uses. [Java](https://roadmap.sh/java) is a programming language that Sun Microsystems created in the '90s and is now owned by Oracle. It is a general-purpose, object-oriented programming language often used for building software. Examples of this software include desktop, web apps, and mobile apps for Android. 
+
+Java is also a statically typed language, meaning a variable's data type must be known at compile time. Before starting the program, you must understand what kind of data you're working with.
+
+In contrast, Brendan Eich created JavaScript, a scripting language, at Netscape in 1995. It is a dynamically typed language, meaning that a variable's data type is determined at runtime. You do not have to declare the data type of a variable before using it. Check out the guide on the [differences between Java and JavaScript](https://roadmap.sh/java/vs-javascript) to learn more. 

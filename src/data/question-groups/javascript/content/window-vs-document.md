@@ -1,0 +1,3 @@
+A window object represents the entire browser or tab. It controls everything on the page, from loading content to responding to your clicks. The window object is a topmost object that helps manage the browser window.
+
+In contrast, the document object is a window property. The document object represents the web page's content **(HTML document)** you're looking at in the browser, such as the text. It enables you to interact with, change, and style web elements such as paragraphs using methods like `getElementById()`. 
