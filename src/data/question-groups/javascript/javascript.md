@@ -10,7 +10,7 @@ ending: 'javascript-ending.md'
 seo:
   title: 'Top 30 JavaScript Interview Questions and Answers'
   description: 'Ace your next JavaScript developer interview with our Q&As that are popular among hiring managers.'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/javascript-questions-x6n2w.jpg'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/javascript-interview-questions-and-answers-itam7.jpg'
   keywords:
     - 'javascript quiz'
     - 'javascript questions'
@@ -218,6 +218,8 @@ questions:
     topics:
       - 'Advanced concepts'
 ---
+
+![JavaScript interview questions](https://assets.roadmap.sh/guest/javascript-interview-questions-and-answers-itam7.jpg)
 
 JavaScript interviews can be rough, even for developers with years of experience. You're expected to understand the language's basics and more complex parts. Interviewers want to see how well you know the language and how you use it to solve problems. It's a good idea to brush up on some common JavaScript interview questions before your interview.
 
