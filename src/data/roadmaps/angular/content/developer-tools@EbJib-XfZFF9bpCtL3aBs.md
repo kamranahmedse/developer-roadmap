@@ -4,7 +4,7 @@ Angular offers a suite of powerful developer tools designed to streamline and en
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - devtools](https://angular.dev/tools/devtools)
-- [@official@Angular Official Docs - CLI](https://angular.dev/tools/cli)
+- [@official@Angular Devtools](https://angular.dev/tools/devtools)
+- [@official@Angular CLI](https://angular.dev/tools/cli)
 - [@official@Language Service Docs](https://angular.dev/tools/language-service)
 - [@opensource@VS Code NG Language Service](https://github.com/angular/vscode-ng-language-service)

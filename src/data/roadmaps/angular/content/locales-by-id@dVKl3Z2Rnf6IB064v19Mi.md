@@ -4,7 +4,7 @@ Angular uses the Unicode locale identifier (Unicode locale ID) to find the corre
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Refer to locales by ID](https://angular.dev/guide/i18n/locale-id)
+- [@official@Refer to Locales by ID](https://angular.dev/guide/i18n/locale-id)
 - [@opensource@Angular locales](https://github.com/angular/angular/tree/main/packages/common/locales)
-- [@official@Codes arranged alphabetically by alpha-3/ISO 639-2 Code](https://www.loc.gov/standards/iso639-2/php/code_list.php)
-- [@official@Unicode CLDR Specifications](https://cldr.unicode.org/index/cldr-spec)
+- [@article@Codes arranged alphabetically by alpha-3/ISO 639-2 Code](https://www.loc.gov/standards/iso639-2/php/code_list.php)
+- [@article@Unicode CLDR Specifications](https://cldr.unicode.org/index/cldr-spec)

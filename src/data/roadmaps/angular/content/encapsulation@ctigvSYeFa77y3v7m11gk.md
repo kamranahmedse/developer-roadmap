@@ -14,6 +14,5 @@ the policy is automatically switched to `ViewEncapsulation.None`.
 
 Visit the following resources to learn more:
 
-- [@official@Style scoping](https://angular.dev/guide/components/styling#style-scoping)
-- [@official@Component - API](https://angular.dev/api/core/Component#encapsulation)
-
+- [@official@Style Scoping](https://angular.dev/guide/components/styling#style-scoping)
+- [@official@Component Encapsulation](https://angular.dev/api/core/Component#encapsulation)
