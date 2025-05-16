@@ -1,8 +1,6 @@
 # Zones
 
-Zone.js is a signaling mechanism that Angular uses to detect when an application state might have changed. 
-It captures asynchronous operations like setTimeout, network requests, and event listeners. 
-Angular schedules change detection based on signals from Zone.js.
+Zone.js is a signaling mechanism that Angular uses to detect when an application state might have changed. It captures asynchronous operations like setTimeout, network requests, and event listeners. Angular schedules change detection based on signals from Zone.js.
 
 Visit the following resources to learn more:
 
