@@ -4,7 +4,7 @@
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Zone Pollution](https://angular.dev/best-practices/zone-pollution)
-- [@official@Angular Official Docs - DevTools](https://angular.dev/tools/devtools)
+- [@official@Zone Pollution](https://angular.dev/best-practices/zone-pollution)
+- [@official@Angular DevTools](https://angular.dev/tools/devtools)
 - [@video@NgZone in Angular - Improve Performance by Running Code Outside Angular](https://www.youtube.com/watch?v=7duYY9IFIuw)
 - [@video@4 Runtime Performance Optimizations](https://www.youtube.com/watch?v=f8sA-i6gkGQ)

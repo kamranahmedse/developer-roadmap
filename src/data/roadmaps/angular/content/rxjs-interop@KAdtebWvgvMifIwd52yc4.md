@@ -4,6 +4,6 @@ Angular's `@angular/core/rxjs-interop` package provides useful utilities to inte
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - RxJS Interop](https://angular.dev/guide/signals/rxjs-interop)
-- [@article@Angular signals RxJS interop from a practical example](https://angular.love/en/angular-signals-rxjs-interop-from-a-practical-example)
+- [@official@RxJS Interop](https://angular.dev/guide/signals/rxjs-interop)
+- [@article@Angular Signals RxJS Interop from a Practical example](https://angular.love/en/angular-signals-rxjs-interop-from-a-practical-example)
 - [@video@Angular Signals RxJs Interoperability: toObservable() (Guess the Behavior)](https://www.youtube.com/watch?v=cam39UyVbpI)

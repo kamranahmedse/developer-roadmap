@@ -6,5 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@Cross Site Request Forgery](https://angular.dev/best-practices/security#cross-site-request-forgery)
 - [@official@HttpClientXsrfModule](https://angular.dev/api/common/http/HttpClientXsrfModule)
+- [@article@Prevent Cross-Site Request Forgery (XSRF/CSRF) Attack](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-9.0)
 - [@video@Configure the CSRF Protection With Spring Security 6 and Angular](https://www.youtube.com/watch?v=tgjLsEmxcuY)
-- [@video@Angular security - CSRF prevention using Double Submit Cookie](https://www.youtube.com/watch?v=lZfF4MOTeNM)
+- [@video@Angular Security - CSRF prevention using Double Submit Cookie](https://www.youtube.com/watch?v=lZfF4MOTeNM)
