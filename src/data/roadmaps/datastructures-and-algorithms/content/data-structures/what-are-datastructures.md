@@ -4,6 +4,6 @@ Data structures are specialized formats for organizing and storing data in a com
 
 Learn more from the following resources:
 
-- [@video@What an Algorithms and More(MIT)](https://youtu.be/Zc54gFhdpLA?si=F_1QRigN_h2t2nSp&t=133)
+- [@video@What Are Algorithms and More(MIT)](https://youtu.be/Zc54gFhdpLA?si=F_1QRigN_h2t2nSp&t=133)
 - [@video@What Are Data Structures?](https://www.youtube.com/watch?v=bum_19loj9A)
 - [@video@Introduction to Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME)
