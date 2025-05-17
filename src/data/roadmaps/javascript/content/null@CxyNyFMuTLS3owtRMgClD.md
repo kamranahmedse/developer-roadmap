@@ -6,6 +6,8 @@ The `null` value in JavaScript signifies the deliberate absence of any object va
 
 In essence, `null` is a way to reset a variable, signalling that it should not reference any object.
 
+Note: Although typeof null returns `object`, this is a historical bug. null is not an object but a primitive value that represents the intentional absence of any object.
+
 Visit the following resources to learn more:
 
 - [@article@What is null in JavaScript](https://www.altcademy.com/blog/what-is-null-in-javascript/)
