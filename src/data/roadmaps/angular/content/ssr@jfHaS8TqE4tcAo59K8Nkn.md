@@ -4,6 +4,6 @@ A normal Angular application executes in the browser, rendering pages in the DOM
 
 Visit the following resources to learn more:
 
-- [@official@Server-side rendering](https://angular.dev/guide/ssr)
+- [@official@Server-side Rendering](https://angular.dev/guide/ssr)
 - [@article@Rendering on the Web](https://web.dev/rendering-on-the-web/)
 - [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)

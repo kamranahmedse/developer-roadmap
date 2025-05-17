@@ -4,4 +4,4 @@ The @for block repeatedly renders content of a block for each item in a collecti
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - @for](https://angular.dev/api/core/@for)
+- [@official@\@for](https://angular.dev/api/core/@for)

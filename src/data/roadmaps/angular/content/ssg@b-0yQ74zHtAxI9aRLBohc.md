@@ -4,6 +4,6 @@ SSG (Static Site Generator) helps in building the HTML full website during the p
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Prerendering (SSG)](https://angular.dev/guide/prerendering)
+- [@official@Prerendering (SSG)](https://angular.dev/guide/prerendering)
 - [@video@Angular 16 Pre Rendering Static Pages - Static Site Generation SSG](https://www.youtube.com/watch?v=vmOWJvm3apA)
 - [@podcast@Angular Air with Alyssa Nicoll - SSR, SSG, ISR, & SOS](https://www.youtube.com/watch?v=b0pUU7RJbBQ)

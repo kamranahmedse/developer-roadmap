@@ -5,5 +5,5 @@ pipes that can be used within its template.
 
 Visit the following resources to learn more:
 
-- [@official@Importing and using components](https://angular.dev/guide/components/importing)
+- [@official@Importing and Using Components](https://angular.dev/guide/components/importing)
 - [@official@Component - API](https://angular.dev/api/core/Component#imports)

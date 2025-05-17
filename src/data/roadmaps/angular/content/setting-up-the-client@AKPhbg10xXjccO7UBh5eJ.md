@@ -4,5 +4,5 @@ Before you can use `HttpClient` in your app, you must configure it using depende
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Setting up HttpClient](https://angular.dev/guide/http/setup)
+- [@official@Setting up HttpClient](https://angular.dev/guide/http/setup)
 - [@video@Setting up HttpClient in Angular (NgModule)](https://www.youtube.com/watch?v=hBFtim1vO3M)

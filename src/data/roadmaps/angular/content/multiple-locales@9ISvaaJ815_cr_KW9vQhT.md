@@ -8,5 +8,5 @@ To deploy an Angular application with multiple locales, follow these steps:
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Deploy Multiple Locales](https://angular.dev/guide/i18n/deploy)
+- [@official@Deploy Multiple Locales](https://angular.dev/guide/i18n/deploy)
 - [@video@How Make Multi-Language Angular Websites - Full Guidance On Angular Localization](https://www.youtube.com/watch?v=vSwYuyH4kMA)

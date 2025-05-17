@@ -4,7 +4,7 @@ It is recommended that you use Trusted Types as a way to help secure your applic
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Enforcing Trusted Types](https://angular.dev/best-practices/security#enforcing-trusted-types)
+- [@official@Enforcing Trusted Types](https://angular.dev/best-practices/security#enforcing-trusted-types)
 - [@official@W3C - Trusted Types](https://w3c.github.io/trusted-types/dist/spec/)
-- [@official@MDN Docs - Trusted Types API](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API)
+- [@official@Trusted Types API](https://developer.mozilla.org/en-US/docs/Web/API/Trusted_Types_API)
 - [@article@How to use Trusted Types](https://web.dev/articles/trusted-types#how-to-use-trusted-types)

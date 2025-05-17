@@ -4,5 +4,5 @@ You can define different named build configurations for your project, such as `d
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Build environments](https://angular.dev/tools/cli/environments#using-environment-specific-variables-in-your-app)
+- [@official@Build Environments](https://angular.dev/tools/cli/environments#using-environment-specific-variables-in-your-app)
 - [@article@Building an Angular application in various environments using Angular CLI and server](https://medium.com/yavar/building-an-angular-application-in-various-environments-using-angular-cli-and-server-18f94067154b)

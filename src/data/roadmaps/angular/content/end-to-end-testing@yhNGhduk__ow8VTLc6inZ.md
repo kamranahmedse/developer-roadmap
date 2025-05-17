@@ -4,8 +4,8 @@ End-to-end or (E2E) testing is a form of testing used to assert your entire appl
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - End to End Testing](https://angular.dev/tools/cli/end-to-end)
-- [@official@Cypress Official Docs - Your First Test with Cypress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
-- [@official@Nightwatch Official Docs - Writing Tests: Introduction](https://nightwatchjs.org/guide/writing-tests/introduction.html)
-- [@official@Webdriver Official Docs - Getting Started](https://webdriver.io/docs/gettingstarted/)
+- [@official@End to End Testing](https://angular.dev/tools/cli/end-to-end)
+- [@official@Your First Test with Cypress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
+- [@official@Writing Tests: Introduction](https://nightwatchjs.org/guide/writing-tests/introduction.html)
+- [@official@Getting Started](https://webdriver.io/docs/gettingstarted/)
 - [@official@Puppeteer Angular Schematic](https://pptr.dev/guides/ng-schematics/#getting-started)
