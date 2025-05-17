@@ -7,6 +7,7 @@ import type { RoadmapFrontmatter } from '../src/lib/roadmap';
 import { slugify } from '../src/lib/slugger';
 import OpenAI from 'openai';
 import { runPromisesInBatchSequentially } from '../src/lib/promise';
+import { httpGet } from '../src/lib/http';
 
 // ERROR: `__dirname` is not defined in ES module scope
 // https://iamwebwiz.medium.com/how-to-fix-dirname-is-not-defined-in-es-module-scope-34d94a86694d
@@ -50,13 +51,16 @@ if (roadmapFrontmatter.renderer !== 'editor') {
   process.exit(1);
 }
 
-const roadmapDir = path.join(
-  ROADMAP_CONTENT_DIR,
-  roadmapId,
-  `${roadmapId}.json`,
+const { response: roadmapContent, error } = await httpGet(
+  `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${roadmapId}`,
 );
-const roadmapContent = await fs.readFile(roadmapDir, 'utf-8');
-let { nodes, edges } = JSON.parse(roadmapContent) as {
+
+if (error) {
+  console.error(error);
+  process.exit(1);
+}
+
+let { nodes, edges } = roadmapContent as {
   nodes: Node[];
   edges: Edge[];
 };
@@ -138,7 +142,7 @@ function writeTopicContent(
 }
 
 async function writeNodeContent(node: Node & { parentTitle?: string }) {
-  const nodeDirPattern = `${slugify(node.data.label)}@${node.id}.md`;
+  const nodeDirPattern = `${slugify(node?.data?.label as string)}@${node.id}.md`;
   if (!roadmapContentFiles.includes(nodeDirPattern)) {
     console.log(`Missing file for: ${nodeDirPattern}`);
     return;
@@ -152,7 +156,7 @@ async function writeNodeContent(node: Node & { parentTitle?: string }) {
     return;
   }
 
-  const topic = node.data.label;
+  const topic = node.data.label as string;
   const parentTopic = node.parentTitle;
 
   console.log(`⏳ Generating content for ${topic}...`);

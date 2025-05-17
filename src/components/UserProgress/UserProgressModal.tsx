@@ -65,8 +65,10 @@ export function UserProgressModal(props: ProgressMapProps) {
   let resourceJsonUrl = import.meta.env.DEV
     ? 'http://localhost:3000'
     : 'https://roadmap.sh';
-  if (resourceType === 'roadmap') {
+  if (resourceType === 'roadmap' && renderer === 'balsamiq') {
     resourceJsonUrl += `/${resourceId}.json`;
+  } else if (resourceType === 'roadmap' && renderer === 'editor') {
+    resourceJsonUrl = `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${resourceId}`;
   } else {
     resourceJsonUrl += `/best-practices/${resourceId}.json`;
   }

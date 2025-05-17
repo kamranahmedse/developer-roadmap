@@ -36,7 +36,9 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
 
     const { response, error } = await httpGet<
       Omit<RoadmapRendererProps, 'resourceId'>
-    >(`/${switchRoadmapId || resourceId}.json`);
+    >(
+      `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${switchRoadmapId || resourceId}`,
+    );
 
     if (error) {
       console.error(error);

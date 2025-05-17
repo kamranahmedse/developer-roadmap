@@ -8,6 +8,7 @@ import { slugify } from '../src/lib/slugger';
 import { markdownToHtml } from '../src/lib/markdown';
 import { HTMLElement, parse } from 'node-html-parser';
 import { htmlToMarkdown } from '../src/lib/html';
+import { httpGet } from '../src/lib/http';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -53,13 +54,16 @@ if (!stats || !stats.isDirectory()) {
 for (const roadmapId of editorRoadmapIds) {
   console.log(`🚀 Starting ${roadmapId}`);
 
-  const roadmapDir = path.join(
-    ROADMAP_CONTENT_DIR,
-    roadmapId,
-    `${roadmapId}.json`,
+  const { response: data, error } = await httpGet(
+    `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${roadmapId}`,
   );
-  const roadmapContent = await fs.readFile(roadmapDir, 'utf-8');
-  let { nodes } = JSON.parse(roadmapContent) as {
+
+  if (error) {
+    console.error(error);
+    continue;
+  }
+
+  let { nodes } = data as {
     nodes: Node[];
   };
   nodes = nodes.filter(
@@ -97,11 +101,11 @@ for (const roadmapId of editorRoadmapIds) {
   > = {};
 
   for (const node of nodes) {
-    const ndoeDirPatterWithoutExt = `${slugify(node.data.label)}@${node.id}`;
-    const nodeDirPattern = `${ndoeDirPatterWithoutExt}.md`;
+    const nodeDirPatternWithoutExt = `${slugify(node?.data?.label as string)}@${node.id}`;
+    const nodeDirPattern = `${nodeDirPatternWithoutExt}.md`;
     if (!roadmapContentFiles.includes(nodeDirPattern)) {
       contentMap[nodeDirPattern] = {
-        title: node.data.label,
+        title: node?.data?.label as string,
         description: '',
         links: [],
       };
@@ -169,7 +173,7 @@ for (const roadmapId of editorRoadmapIds) {
     const description = htmlToMarkdown(htmlStringWithoutLinks);
 
     contentMap[node.id] = {
-      title: node.data.label,
+      title: node.data.label as string,
       description,
       links: listLinks,
     };
