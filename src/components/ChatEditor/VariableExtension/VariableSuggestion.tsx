@@ -25,34 +25,24 @@ export const VariableList = forwardRef((props: VariableListProps, ref) => {
     command(item);
   };
 
-  const upHandler = () => {
-    setSelectedIndex((selectedIndex + items.length - 1) % items.length);
-  };
-
-  const downHandler = () => {
-    setSelectedIndex((selectedIndex + 1) % items.length);
-  };
-
-  const enterHandler = () => {
-    selectItem(selectedIndex);
-  };
-
-  useEffect(() => setSelectedIndex(0), [items]);
+  useEffect(() => {
+    setSelectedIndex(0);
+  }, [items]);
 
   useImperativeHandle(ref, () => ({
     onKeyDown: ({ event }: { event: KeyboardEvent }) => {
       if (event.key === 'ArrowUp') {
-        upHandler();
+        setSelectedIndex((selectedIndex + items.length - 1) % items.length);
         return true;
       }
 
       if (event.key === 'ArrowDown') {
-        downHandler();
+        setSelectedIndex((selectedIndex + 1) % items.length);
         return true;
       }
 
       if (event.key === 'Enter') {
-        enterHandler();
+        selectItem(selectedIndex);
         return true;
       }
 
@@ -61,12 +51,15 @@ export const VariableList = forwardRef((props: VariableListProps, ref) => {
   }));
 
   return (
-    <div className="flex flex-col gap-0.5 overflow-auto rounded-lg border border-gray-200 bg-white p-1 shadow-sm">
+    <div
+      id="variable-suggestion-list"
+      className="flex max-w-[260px] flex-col gap-0.5 overflow-auto rounded-lg border border-gray-200 bg-white p-1 shadow-sm"
+    >
       {items.length ? (
         items.map((item, index) => (
           <button
             className={cn(
-              'rounded-md p-1 px-1.5 text-left text-sm hover:bg-gray-100',
+              'truncate rounded-md p-1 px-1.5 text-left text-sm hover:bg-gray-100',
               index === selectedIndex && 'bg-gray-100',
             )}
             key={index}
@@ -91,7 +84,7 @@ export function variableSuggestion(): Omit<SuggestionOptions, 'editor'> {
 
       return storage.variables
         .filter((variable) =>
-          variable.label.toLowerCase().startsWith(query.toLowerCase()),
+          variable?.label?.toLowerCase().includes(query.toLowerCase()),
         )
         .slice(0, 5);
     },

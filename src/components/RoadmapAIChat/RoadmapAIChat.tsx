@@ -1,10 +1,27 @@
 import { useQuery } from '@tanstack/react-query';
 import { roadmapJSONOptions } from '../../queries/roadmap';
 import { queryClient } from '../../stores/query-client';
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import { Spinner } from '../ReactIcons/Spinner';
-import { BotIcon, SendIcon } from 'lucide-react';
+import { BotIcon, Loader2Icon, SendIcon } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
+import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
+import {
+  AIChatCard,
+  type AIChatHistoryType,
+} from '../GenerateCourse/AICourseLessonChat';
+import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
+import type { JSONContent } from '@tiptap/core';
+import { flushSync } from 'react-dom';
+import type { Editor } from '@tiptap/core';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
+import { readStream } from '../../lib/ai';
+import { useToast } from '../../hooks/use-toast';
+
+export type RoamdapAIChatHistoryType = AIChatHistoryType & {
+  json?: JSONContent;
+};
 
 type RoadmapAIChatProps = {
   roadmapId: string;
@@ -13,54 +30,234 @@ type RoadmapAIChatProps = {
 export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const { roadmapId } = props;
 
+  const toast = useToast();
+  const editorRef = useRef<Editor | null>(null);
+  const scrollareaRef = useRef<HTMLDivElement>(null);
+
   const [isLoading, setIsLoading] = useState(true);
-  const { data } = useQuery(roadmapJSONOptions(roadmapId), queryClient);
+
+  const [aiChatHistory, setAiChatHistory] = useState<
+    RoamdapAIChatHistoryType[]
+  >([]);
+  const [isStreamingMessage, setIsStreamingMessage] = useState(false);
+  const [streamedMessage, setStreamedMessage] = useState('');
+
+  const { data: roadmapJSONData } = useQuery(
+    roadmapJSONOptions(roadmapId),
+    queryClient,
+  );
+  const { data: roadmapTreeData } = useQuery(
+    roadmapTreeMappingOptions(roadmapId),
+    queryClient,
+  );
+
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!data || !roadmapContainerRef.current) {
+    if (!roadmapJSONData || !roadmapContainerRef.current) {
+      return;
+    }
+
+    roadmapContainerRef.current.replaceChildren(roadmapJSONData.svg);
+  }, [roadmapJSONData]);
+
+  useEffect(() => {
+    if (!roadmapTreeData || !roadmapJSONData) {
       return;
     }
 
     setIsLoading(false);
-    roadmapContainerRef.current.replaceChildren(data.svg);
-  }, [data]);
+  }, [roadmapTreeData, roadmapJSONData]);
+
+  const handleChatSubmit = (json: JSONContent) => {
+    if (!json || isStreamingMessage || !isLoggedIn() || isLoading) {
+      return;
+    }
+
+    const newMessages: RoamdapAIChatHistoryType[] = [
+      ...aiChatHistory,
+      {
+        role: 'user',
+        content: '',
+        json,
+      },
+    ];
+
+    flushSync(() => {
+      setAiChatHistory(newMessages);
+      editorRef.current?.commands.setContent('<p></p>');
+    });
+
+    scrollToBottom();
+    completeAITutorChat(newMessages);
+  };
+
+  const scrollToBottom = useCallback(() => {
+    scrollareaRef.current?.scrollTo({
+      top: scrollareaRef.current.scrollHeight,
+      behavior: 'smooth',
+    });
+  }, [scrollareaRef]);
+
+  const completeAITutorChat = async (messages: AIChatHistoryType[]) => {
+    try {
+      setIsStreamingMessage(true);
+
+      const response = await fetch(
+        `${import.meta.env.PUBLIC_API_URL}/v1-chat-roadmap`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          credentials: 'include',
+          body: JSON.stringify({
+            roadmapId,
+            messages: messages.slice(-10),
+          }),
+        },
+      );
+
+      if (!response.ok) {
+        const data = await response.json();
+
+        toast.error(data?.message || 'Something went wrong');
+        setAiChatHistory([...messages].slice(0, messages.length - 1));
+        setIsStreamingMessage(false);
+
+        if (data.status === 401) {
+          removeAuthToken();
+          window.location.reload();
+        }
+
+        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        return;
+      }
+
+      const reader = response.body?.getReader();
+
+      if (!reader) {
+        setIsStreamingMessage(false);
+        toast.error('Something went wrong');
+        return;
+      }
+
+      await readStream(reader, {
+        onStream: async (content) => {
+          flushSync(() => {
+            setStreamedMessage(content);
+          });
+
+          scrollToBottom();
+        },
+        onStreamEnd: async (content) => {
+          const newMessages: AIChatHistoryType[] = [
+            ...messages,
+            {
+              role: 'assistant',
+              content,
+              html: await markdownToHtmlWithHighlighting(content),
+            },
+          ];
+
+          flushSync(() => {
+            setStreamedMessage('');
+            setIsStreamingMessage(false);
+            setAiChatHistory(newMessages);
+          });
+
+          queryClient.invalidateQueries(getAiCourseLimitOptions());
+          scrollToBottom();
+        },
+      });
+
+      setIsStreamingMessage(false);
+    } catch (error) {
+      toast.error('Something went wrong');
+      setIsStreamingMessage(false);
+    }
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, []);
 
   return (
     <div className="grid grow grid-cols-3">
       <div className="relative col-span-2 h-full overflow-y-scroll">
         {isLoading && (
           <div className="absolute inset-0 flex h-full w-full items-center justify-center">
-            <Spinner
-              className="h-6 w-6 animate-spin sm:h-12 sm:w-12"
-              isDualRing={false}
-            />
+            <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
           </div>
         )}
-        <div ref={roadmapContainerRef} />
+        <div ref={roadmapContainerRef} hidden={isLoading} className="p-4" />
       </div>
 
       <div className="flex h-full flex-col border-l border-gray-200 bg-white">
-        <div className="flex min-h-[46px] items-center justify-between gap-2 border-gray-200 px-3 py-2 text-sm">
+        <div className="flex min-h-[46px] items-center justify-between gap-2 border-b border-gray-200 px-3 py-2 text-sm">
           <span className="flex items-center gap-2 text-sm">
             <BotIcon className="size-4 shrink-0 text-black" />
             <span>AI Chat</span>
           </span>
         </div>
 
-        <div className="relative grow overflow-y-auto">
-          <div className="absolute inset-0 flex flex-col">
-            <div className="h-[1000px] w-full bg-red-100" />
-          </div>
+        <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
+          {isLoading && (
+            <div className="absolute inset-0 flex h-full w-full items-center justify-center">
+              <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white p-1.5 px-3 text-sm text-gray-500">
+                <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
+                <span>Loading Roadmap</span>
+              </div>
+            </div>
+          )}
+
+          {!isLoading && (
+            <div className="absolute inset-0 flex flex-col">
+              <div className="relative flex grow flex-col justify-end">
+                <div className="flex flex-col justify-end gap-2 px-3 py-2">
+                  {aiChatHistory.map((chat, index) => {
+                    let content = chat.content;
+
+                    return (
+                      <Fragment key={`chat-${index}`}>
+                        <AIChatCard
+                          role={chat.role}
+                          content={content}
+                          html={
+                            chat.html || htmlFromTiptapJSON(chat.json || {})
+                          }
+                        />
+                      </Fragment>
+                    );
+                  })}
+
+                  {isStreamingMessage && !streamedMessage && (
+                    <AIChatCard role="assistant" content="Thinking..." />
+                  )}
+
+                  {streamedMessage && (
+                    <AIChatCard role="assistant" content={streamedMessage} />
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         <form
           className="relative flex items-start border-t border-gray-200 text-sm"
           onSubmit={(e) => {
             e.preventDefault();
+            handleChatSubmit(editorRef.current?.getJSON() || {});
           }}
         >
-          <ChatEditor />
+          <ChatEditor
+            editorRef={editorRef}
+            roadmapId={roadmapId}
+            onSubmit={(content) => {
+              handleChatSubmit(content);
+            }}
+          />
 
           <button
             type="submit"
@@ -72,4 +269,31 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
       </div>
     </div>
   );
+}
+
+export function htmlFromTiptapJSON(json: JSONContent) {
+  const content = json.content;
+
+  let text = '';
+  for (const child of content || []) {
+    switch (child.type) {
+      case 'text':
+        text += child.text;
+        break;
+      case 'paragraph':
+        // Add a new line before each paragraph
+        // This is to ensure that the text is formatted correctly
+        text += '\n';
+        text += `<p>${htmlFromTiptapJSON(child)}</p>`;
+        break;
+      case 'variable':
+        const label = child?.attrs?.label || '';
+        text += `<span class="chat-variable">${label}</span>`;
+        break;
+      default:
+        break;
+    }
+  }
+
+  return text;
 }
