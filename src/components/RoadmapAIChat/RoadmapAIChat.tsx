@@ -4,8 +4,7 @@ import { queryClient } from '../../stores/query-client';
 import { useEffect, useRef, useState } from 'react';
 import { Spinner } from '../ReactIcons/Spinner';
 import { BotIcon, SendIcon } from 'lucide-react';
-import TextareaAutosize from 'react-textarea-autosize';
-import { cn } from '../../lib/classname';
+import { ChatEditor } from '../ChatEditor/ChatEditor';
 
 type RoadmapAIChatProps = {
   roadmapId: string;
@@ -28,8 +27,8 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   }, [data]);
 
   return (
-    <div className="grid grow grid-cols-2">
-      <div className="h-full overflow-y-auto">
+    <div className="grid grow grid-cols-3">
+      <div className="col-span-2 h-full overflow-y-auto">
         {isLoading && (
           <div className="flex h-full w-full items-center justify-center">
             <Spinner
@@ -41,7 +40,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         <div ref={roadmapContainerRef} />
       </div>
 
-      <div className="flex h-full flex-col">
+      <div className="flex h-full flex-col border-l border-gray-200 bg-white">
         <div className="flex min-h-[46px] items-center justify-between gap-2 border-gray-200 px-3 py-2 text-sm">
           <span className="flex items-center gap-2 text-sm">
             <BotIcon className="size-4 shrink-0 text-black" />
@@ -61,14 +60,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             e.preventDefault();
           }}
         >
-          <TextareaAutosize
-            className="h-full min-h-[41px] grow resize-none bg-transparent px-4 py-2 focus:outline-hidden"
-            placeholder="Ask AI anything about the roadmap..."
-            autoFocus={true}
-          />
+          <ChatEditor />
+
           <button
             type="submit"
-            className="flex aspect-square size-[41px] items-center justify-center text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
+            className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
           >
             <SendIcon className="size-4 stroke-[2.5]" />
           </button>
