@@ -5,6 +5,7 @@ import type { Node } from '@roadmapsh/editor';
 import matter from 'gray-matter';
 import type { RoadmapFrontmatter } from '../src/lib/roadmap';
 import { slugify } from '../src/lib/slugger';
+import { httpGet } from '../src/lib/http';
 
 // ERROR: `__dirname` is not defined in ES module scope
 // https://iamwebwiz.medium.com/how-to-fix-dirname-is-not-defined-in-es-module-scope-34d94a86694d
@@ -48,13 +49,16 @@ if (roadmapFrontmatter.renderer !== 'editor') {
   process.exit(1);
 }
 
-const roadmapDir = path.join(
-  ROADMAP_CONTENT_DIR,
-  roadmapId,
-  `${roadmapId}.json`,
+const { response: roadmapContent, error } = await httpGet(
+  `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${roadmapId}`,
 );
-const roadmapContent = await fs.readFile(roadmapDir, 'utf-8');
-let { nodes } = JSON.parse(roadmapContent) as {
+
+if (error) {
+  console.error(error);
+  process.exit(1);
+}
+
+let { nodes } = roadmapContent as {
   nodes: Node[];
 };
 nodes = nodes.filter(
@@ -73,7 +77,7 @@ const roadmapContentFiles = await fs.readdir(roadmapContentDir, {
 });
 
 nodes.forEach(async (node, index) => {
-  const nodeDirPattern = `${slugify(node.data.label)}@${node.id}.md`;
+  const nodeDirPattern = `${slugify(node.data.label as string)}@${node.id}.md`;
   if (roadmapContentFiles.includes(nodeDirPattern)) {
     console.log(`Skipping ${nodeDirPattern}`);
     return;

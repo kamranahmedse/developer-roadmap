@@ -86,7 +86,7 @@ export function UserProfileRoadmapRenderer(
       <div
         className={cn(
           'bg-white',
-          isCustomResource ? 'w-full' : 'container relative max-w-[1000px]!',
+          isCustomResource ? 'w-full' : 'relative container max-w-[1000px]!',
         )}
       >
         {isCustomResource ? (
@@ -136,7 +136,7 @@ export function UserProfileRoadmapRenderer(
           <div className="flex w-full justify-center">
             <Spinner
               isDualRing={false}
-              className="mb-4 mt-2 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
+              className="mt-2 mb-4 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
             />
           </div>
         )}
