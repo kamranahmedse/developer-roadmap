@@ -28,9 +28,9 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
   return (
     <div className="grid grow grid-cols-3">
-      <div className="col-span-2 h-full overflow-y-auto">
+      <div className="relative col-span-2 h-full overflow-y-scroll">
         {isLoading && (
-          <div className="flex h-full w-full items-center justify-center">
+          <div className="absolute inset-0 flex h-full w-full items-center justify-center">
             <Spinner
               className="h-6 w-6 animate-spin sm:h-12 sm:w-12"
               isDualRing={false}
