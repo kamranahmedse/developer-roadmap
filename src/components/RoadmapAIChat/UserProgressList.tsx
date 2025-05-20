@@ -1,7 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
-import { roadmapDetailsOptions } from '../../queries/roadmap';
-import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
 
 type UserProgressListProps = {
@@ -11,10 +9,6 @@ type UserProgressListProps = {
 export function UserProgressList(props: UserProgressListProps) {
   const { roadmapId } = props;
 
-  const { data: roadmapTreeData } = useQuery(
-    roadmapTreeMappingOptions(roadmapId),
-    queryClient,
-  );
   const { data: userResourceProgressData } = useQuery(
     userResourceProgressOptions('roadmap', roadmapId),
     queryClient,

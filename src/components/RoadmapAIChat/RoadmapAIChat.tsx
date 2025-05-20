@@ -36,6 +36,8 @@ import {
 } from '../../lib/render-chat-message';
 import { RoadmapAIChatCard } from './RoadmapAIChatCard';
 import { UserProgressList } from './UserProgressList';
+import { UserProgressActionList } from './UserProgressActionList';
+import { RoadmapTopicList } from './RoadmapTopicList';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -146,7 +148,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         return <UserProgressList roadmapId={roadmapId} />;
       },
       'update-progress': (options) => {
-        return 'hello';
+        return <UserProgressActionList roadmapId={roadmapId} {...options} />;
+      },
+      'roadmap-topics': (options) => {
+        return <RoadmapTopicList roadmapId={roadmapId} {...options} />;
       },
     };
   }, [roadmapId]);
