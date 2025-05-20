@@ -22,5 +22,6 @@ export function roadmapTreeMappingOptions(roadmapId: string) {
         `${import.meta.env.PUBLIC_API_URL}/v1-roadmap-tree-mapping/${roadmapId}`,
       );
     },
+    refetchOnMount: false,
   });
 }

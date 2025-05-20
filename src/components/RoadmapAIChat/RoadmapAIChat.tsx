@@ -6,30 +6,50 @@ import {
   roadmapJSONOptions,
 } from '../../queries/roadmap';
 import { queryClient } from '../../stores/query-client';
-import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
+import {
+  Fragment,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { BotIcon, Loader2Icon, SendIcon } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import {
   AIChatCard,
-  type AIChatHistoryType,
+  type AllowedAIChatRole,
 } from '../GenerateCourse/AICourseLessonChat';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
-import type { JSONContent } from '@tiptap/core';
+import type { JSONContent, Editor } from '@tiptap/core';
 import { flushSync } from 'react-dom';
-import type { Editor } from '@tiptap/core';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import { readStream } from '../../lib/ai';
 import { useToast } from '../../hooks/use-toast';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
-import { renderTopicProgress } from '../../lib/resource-progress';
-import { EditorRoadmapRenderer } from '../EditorRoadmap/EditorRoadmapRenderer';
 import { ChatRoadmapRenderer } from './ChatRoadmapRenderer';
+import {
+  renderMessage,
+  type MessagePartRenderer,
+} from '../../lib/render-chat-message';
+import { RoadmapAIChatCard } from './RoadmapAIChatCard';
+import { UserProgressList } from './UserProgressList';
 
-export type RoamdapAIChatHistoryType = AIChatHistoryType & {
-  
+export type RoamdapAIChatHistoryType = {
+  role: AllowedAIChatRole;
+  isDefault?: boolean;
+
+  // these two will be used only into the backend
+  // for transforming the raw message into the final message
+  content?: string;
   json?: JSONContent;
+
+  // these two will be used only into the frontend
+  // for rendering the message
+  html?: string;
+  jsx?: React.ReactNode;
 };
 
 type RoadmapAIChatProps = {
@@ -49,7 +69,8 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     RoamdapAIChatHistoryType[]
   >([]);
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
-  const [streamedMessage, setStreamedMessage] = useState('');
+  const [streamedMessage, setStreamedMessage] =
+    useState<React.ReactNode | null>(null);
 
   const { data: roadmapDetailsData } = useQuery(
     roadmapDetailsOptions(roadmapId),
@@ -93,12 +114,13 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
       return;
     }
 
+    const html = htmlFromTiptapJSON(json);
     const newMessages: RoamdapAIChatHistoryType[] = [
       ...aiChatHistory,
       {
         role: 'user',
-        content: '',
         json,
+        html,
       },
     ];
 
@@ -118,7 +140,18 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     });
   }, [scrollareaRef]);
 
-  const completeAITutorChat = async (messages: AIChatHistoryType[]) => {
+  const renderer: Record<string, MessagePartRenderer> = useMemo(() => {
+    return {
+      'user-progress': () => {
+        return <UserProgressList roadmapId={roadmapId} />;
+      },
+      'update-progress': (options) => {
+        return 'hello';
+      },
+    };
+  }, [roadmapId]);
+
+  const completeAITutorChat = async (messages: RoamdapAIChatHistoryType[]) => {
     try {
       setIsStreamingMessage(true);
 
@@ -163,24 +196,27 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
       await readStream(reader, {
         onStream: async (content) => {
+          const jsx = await renderMessage(content, renderer);
+
           flushSync(() => {
-            setStreamedMessage(content);
+            setStreamedMessage(jsx);
           });
 
           scrollToBottom();
         },
         onStreamEnd: async (content) => {
-          const newMessages: AIChatHistoryType[] = [
+          const jsx = await renderMessage(content, renderer);
+          const newMessages: RoamdapAIChatHistoryType[] = [
             ...messages,
             {
               role: 'assistant',
               content,
-              html: await markdownToHtmlWithHighlighting(content),
+              jsx,
             },
           ];
 
           flushSync(() => {
-            setStreamedMessage('');
+            setStreamedMessage(null);
             setIsStreamingMessage(false);
             setAiChatHistory(newMessages);
           });
@@ -241,27 +277,19 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
               <div className="relative flex grow flex-col justify-end">
                 <div className="flex flex-col justify-end gap-2 px-3 py-2">
                   {aiChatHistory.map((chat, index) => {
-                    let content = chat.content;
-
                     return (
                       <Fragment key={`chat-${index}`}>
-                        <AIChatCard
-                          role={chat.role}
-                          content={content}
-                          html={
-                            chat.html || htmlFromTiptapJSON(chat.json || {})
-                          }
-                        />
+                        <RoadmapAIChatCard {...chat} />
                       </Fragment>
                     );
                   })}
 
                   {isStreamingMessage && !streamedMessage && (
-                    <AIChatCard role="assistant" content="Thinking..." />
+                    <RoadmapAIChatCard role="assistant" html="Thinking..." />
                   )}
 
                   {streamedMessage && (
-                    <AIChatCard role="assistant" content={streamedMessage} />
+                    <RoadmapAIChatCard role="assistant" jsx={streamedMessage} />
                   )}
                 </div>
               </div>
