@@ -1,8 +1,12 @@
+import './RoadmapAIChat.css';
+
 import { useQuery } from '@tanstack/react-query';
-import { roadmapJSONOptions } from '../../queries/roadmap';
+import {
+  roadmapDetailsOptions,
+  roadmapJSONOptions,
+} from '../../queries/roadmap';
 import { queryClient } from '../../stores/query-client';
 import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
-import { Spinner } from '../ReactIcons/Spinner';
 import { BotIcon, Loader2Icon, SendIcon } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
@@ -18,8 +22,13 @@ import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import { readStream } from '../../lib/ai';
 import { useToast } from '../../hooks/use-toast';
+import { userResourceProgressOptions } from '../../queries/resource-progress';
+import { renderTopicProgress } from '../../lib/resource-progress';
+import { EditorRoadmapRenderer } from '../EditorRoadmap/EditorRoadmapRenderer';
+import { ChatRoadmapRenderer } from './ChatRoadmapRenderer';
 
 export type RoamdapAIChatHistoryType = AIChatHistoryType & {
+  
   json?: JSONContent;
 };
 
@@ -42,12 +51,22 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] = useState('');
 
+  const { data: roadmapDetailsData } = useQuery(
+    roadmapDetailsOptions(roadmapId),
+    queryClient,
+  );
+
   const { data: roadmapJSONData } = useQuery(
     roadmapJSONOptions(roadmapId),
     queryClient,
   );
   const { data: roadmapTreeData } = useQuery(
     roadmapTreeMappingOptions(roadmapId),
+    queryClient,
+  );
+
+  const { data: userResourceProgressData } = useQuery(
+    userResourceProgressOptions('roadmap', roadmapId),
     queryClient,
   );
 
@@ -62,12 +81,12 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   }, [roadmapJSONData]);
 
   useEffect(() => {
-    if (!roadmapTreeData || !roadmapJSONData) {
+    if (!roadmapTreeData || !roadmapJSONData || !roadmapDetailsData) {
       return;
     }
 
     setIsLoading(false);
-  }, [roadmapTreeData, roadmapJSONData]);
+  }, [roadmapTreeData, roadmapJSONData, roadmapDetailsData]);
 
   const handleChatSubmit = (json: JSONContent) => {
     if (!json || isStreamingMessage || !isLoggedIn() || isLoading) {
@@ -183,17 +202,23 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   }, []);
 
   return (
-    <div className="grid grow grid-cols-3">
-      <div className="relative col-span-2 h-full overflow-y-scroll">
+    <div className="grid grow grid-cols-5">
+      <div className="relative col-span-3 h-full overflow-y-scroll">
         {isLoading && (
           <div className="absolute inset-0 flex h-full w-full items-center justify-center">
             <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
           </div>
         )}
-        <div ref={roadmapContainerRef} hidden={isLoading} className="p-4" />
+        {roadmapJSONData?.json && !isLoading && (
+          <ChatRoadmapRenderer
+            roadmapId={roadmapId}
+            nodes={roadmapJSONData?.json.nodes}
+            edges={roadmapJSONData?.json.edges}
+          />
+        )}
       </div>
 
-      <div className="flex h-full flex-col border-l border-gray-200 bg-white">
+      <div className="col-span-2 flex h-full flex-col border-l border-gray-200 bg-white">
         <div className="flex min-h-[46px] items-center justify-between gap-2 border-b border-gray-200 px-3 py-2 text-sm">
           <span className="flex items-center gap-2 text-sm">
             <BotIcon className="size-4 shrink-0 text-black" />
@@ -281,9 +306,6 @@ export function htmlFromTiptapJSON(json: JSONContent) {
         text += child.text;
         break;
       case 'paragraph':
-        // Add a new line before each paragraph
-        // This is to ensure that the text is formatted correctly
-        text += '\n';
         text += `<p>${htmlFromTiptapJSON(child)}</p>`;
         break;
       case 'variable':

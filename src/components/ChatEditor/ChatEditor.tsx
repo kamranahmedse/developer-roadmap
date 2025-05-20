@@ -16,6 +16,7 @@ import { queryClient } from '../../stores/query-client';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, type RefObject } from 'react';
+import { roadmapDetailsOptions } from '../../queries/roadmap';
 
 const extensions = [
   DocumentExtension,
@@ -42,6 +43,10 @@ export function ChatEditor(props: ChatEditorProps) {
 
   const { data: roadmapTreeData } = useQuery(
     roadmapTreeMappingOptions(roadmapId),
+    queryClient,
+  );
+  const { data: roadmapDetailsData } = useQuery(
+    roadmapDetailsOptions(roadmapId),
     queryClient,
   );
 
@@ -93,17 +98,20 @@ export function ChatEditor(props: ChatEditorProps) {
   });
 
   useEffect(() => {
-    if (!editor || !roadmapTreeData) {
+    if (!editor || !roadmapTreeData || !roadmapDetailsData) {
       return;
     }
 
     editor.storage.variable.variables = roadmapTreeData.map((mapping) => {
       return {
-        id: mapping._id,
-        label: mapping.text,
+        id: mapping.nodeId,
+        // to remove the title of the roadmap
+        // and only keep the path
+        // e.g. "Roadmap > Topic > Subtopic" -> "Topic > Subtopic"
+        label: mapping.text.split(' > ').slice(1).join(' > '),
       };
     });
-  }, [editor, roadmapTreeData]);
+  }, [editor, roadmapTreeData, roadmapDetailsData]);
 
   return (
     <div className="chat-editor w-full">

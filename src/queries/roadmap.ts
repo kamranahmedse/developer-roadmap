@@ -21,3 +21,41 @@ export function roadmapJSONOptions(roadmapId: string) {
     },
   });
 }
+
+export const allowedRoadmapRenderer = [
+  'balsamiq',
+  'editor',
+  'infinite-canvas',
+] as const;
+export type AllowedRoadmapRenderer = (typeof allowedRoadmapRenderer)[number];
+
+export type PagesJSON = {
+  id: string;
+  url: string;
+  title: string;
+  description: string;
+  group: string;
+  authorId?: string;
+  renderer?: AllowedRoadmapRenderer;
+}[];
+
+export function roadmapDetailsOptions(roadmapId: string) {
+  return queryOptions({
+    queryKey: ['roadmap-details', roadmapId],
+    queryFn: async () => {
+      const baseUrl = import.meta.env.PUBLIC_APP_URL;
+      const pagesJSON = await httpGet<PagesJSON>(`${baseUrl}/pages.json`);
+
+      const roadmapDetails = pagesJSON.find(
+        (page) =>
+          page?.group?.toLowerCase() === 'roadmaps' && page.id === roadmapId,
+      );
+
+      if (!roadmapDetails) {
+        throw new Error('Roadmap details not found');
+      }
+
+      return roadmapDetails;
+    },
+  });
+}
