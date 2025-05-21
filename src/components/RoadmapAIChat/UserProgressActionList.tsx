@@ -1,7 +1,12 @@
-import { useMutation, useQuery } from '@tanstack/react-query';
+import {
+  useIsMutating,
+  useMutation,
+  useMutationState,
+  useQuery,
+} from '@tanstack/react-query';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { queryClient } from '../../stores/query-client';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { renderTopicProgress } from '../../lib/resource-progress';
 import { updateResourceProgress } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
@@ -10,6 +15,7 @@ import { userResourceProgressOptions } from '../../queries/resource-progress';
 import { useToast } from '../../hooks/use-toast';
 import { Loader2Icon } from 'lucide-react';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
+import { httpPost } from '../../lib/query-http';
 
 type UpdateUserProgress = {
   id: string;
@@ -47,6 +53,19 @@ function parseUserProgress(content: string): UpdateUserProgress[] {
   return items;
 }
 
+type BulkUpdateResourceProgressBody = {
+  done: string[];
+  learning: string[];
+  skipped: string[];
+  pending: string[];
+};
+
+type BulkUpdateResourceProgressResponse = {
+  done: string[];
+  learning: string[];
+  skipped: string[];
+};
+
 type UserProgressActionListProps = {
   roadmapId: string;
   content: string;
@@ -55,10 +74,43 @@ type UserProgressActionListProps = {
 export function UserProgressActionList(props: UserProgressActionListProps) {
   const { roadmapId, content } = props;
 
+  const toast = useToast();
   const updateUserProgress = parseUserProgress(content);
 
   const { data: roadmapTreeData } = useQuery(
     roadmapTreeMappingOptions(roadmapId),
+    queryClient,
+  );
+
+  const {
+    mutate: bulkUpdateResourceProgress,
+    isPending: isBulkUpdating,
+    isSuccess: isBulkUpdateSuccess,
+  } = useMutation(
+    {
+      mutationFn: (body: BulkUpdateResourceProgressBody) => {
+        return httpPost<BulkUpdateResourceProgressResponse>(
+          `/v1-bulk-update-resource-progress/${roadmapId}`,
+          body,
+        );
+      },
+      onSuccess: () => {
+        return queryClient.invalidateQueries(
+          userResourceProgressOptions('roadmap', roadmapId),
+        );
+      },
+      onMutate: () => {
+        pageProgressMessage.set('Updating progress');
+      },
+      onSettled: () => {
+        pageProgressMessage.set('');
+      },
+      onError: (error) => {
+        toast.error(
+          error?.message ?? 'Something went wrong, please try again.',
+        );
+      },
+    },
     queryClient,
   );
 
@@ -78,17 +130,74 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
     });
   }, [updateUserProgress, roadmapTreeData]);
 
+  const [showAll, setShowAll] = useState(false);
+  const itemCountToShow = 3;
+  const itemsToShow = showAll
+    ? progressItemWithText
+    : progressItemWithText.slice(0, itemCountToShow);
+
   return (
-    <div className="relative my-6 flex flex-col gap-2 rounded-lg border border-gray-200 bg-white p-2 first:mt-0 last:mb-0">
-      {progressItemWithText.map((item) => (
-        <ProgressItem
-          key={item.id}
-          roadmapId={roadmapId}
-          topicId={item.id}
-          text={item.text}
-          action={item.action}
-        />
-      ))}
+    <div className="relative my-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-2 first:mt-0 last:mb-0">
+      <div className="relative flex flex-col gap-2">
+        {itemsToShow.map((item) => (
+          <ProgressItem
+            key={item.id}
+            roadmapId={roadmapId}
+            topicId={item.id}
+            text={item.text}
+            action={item.action}
+            isBulkUpdating={isBulkUpdating}
+            isBulkUpdateSuccess={isBulkUpdateSuccess}
+          />
+        ))}
+
+        {progressItemWithText.length > itemCountToShow && (
+          <div className="absolute inset-x-0 right-0 bottom-0.5 translate-y-1/2">
+            <div className="flex items-center justify-center gap-2">
+              <button
+                className="rounded-md bg-gray-100 px-2 py-1 text-[10px] leading-none font-medium"
+                onClick={() => setShowAll(!showAll)}
+              >
+                {showAll
+                  ? '- Show Less'
+                  : `+${progressItemWithText.length - itemCountToShow} more`}
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className="absolute top-0 right-0">
+        <button
+          className="flex items-center gap-1 rounded-b-md bg-green-100 px-2 py-1 text-[10px] leading-none font-medium text-green-600"
+          disabled={isBulkUpdating}
+          onClick={() => {
+            const done = updateUserProgress
+              .filter((item) => item.action === 'done')
+              .map((item) => item.id);
+            const learning = updateUserProgress
+              .filter((item) => item.action === 'learning')
+              .map((item) => item.id);
+            const skipped = updateUserProgress
+              .filter((item) => item.action === 'skipped')
+              .map((item) => item.id);
+            const pending = updateUserProgress
+              .filter((item) => item.action === 'pending')
+              .map((item) => item.id);
+
+            bulkUpdateResourceProgress({
+              done,
+              learning,
+              skipped,
+              pending,
+            });
+          }}
+        >
+          {isBulkUpdating && <Loader2Icon className="size-2.5 animate-spin" />}
+          {!isBulkUpdating && <CheckIcon additionalClasses="size-2.5" />}
+          Apply All
+        </button>
+      </div>
     </div>
   );
 }
@@ -98,12 +207,22 @@ type ProgressItemProps = {
   topicId: string;
   text: string;
   action: UpdateUserProgress['action'];
+  isBulkUpdating: boolean;
+  isBulkUpdateSuccess: boolean;
 };
 
 function ProgressItem(props: ProgressItemProps) {
-  const { roadmapId, topicId, text, action } = props;
+  const {
+    roadmapId,
+    topicId,
+    text,
+    action,
+    isBulkUpdating,
+    isBulkUpdateSuccess,
+  } = props;
 
   const toast = useToast();
+
   const {
     mutate: updateTopicStatus,
     isSuccess,
@@ -142,11 +261,11 @@ function ProgressItem(props: ProgressItemProps) {
   return (
     <div className="flex items-center justify-between gap-2 rounded-md border border-gray-200 p-2">
       <span className="truncate text-sm text-gray-500">{text}</span>
-      {!isSuccess && (
+      {!isSuccess && !isBulkUpdateSuccess && (
         <button
           className="min-h-[30px] shrink-0 rounded-md border border-gray-200 bg-gray-100 px-2 py-1 text-sm"
           onClick={() => updateTopicStatus(action)}
-          disabled={isUpdating}
+          disabled={isUpdating || isBulkUpdating}
         >
           {isUpdating ? (
             <Loader2Icon className="size-4 animate-spin" />
@@ -155,7 +274,7 @@ function ProgressItem(props: ProgressItemProps) {
           )}
         </button>
       )}
-      {isSuccess && (
+      {(isSuccess || isBulkUpdateSuccess) && (
         <span className="flex size-[30px] items-center justify-center text-green-500">
           <CheckIcon additionalClasses="size-4" />
         </span>

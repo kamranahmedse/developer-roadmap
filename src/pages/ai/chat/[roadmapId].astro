@@ -21,7 +21,8 @@ const { roadmapId } = Astro.params as Props;
     wrapperClassName='flex-row p-0 lg:p-0 overflow-hidden'
     client:load
   >
-    <RoadmapAIChat roadmapId={roadmapId} client:load />
+    <!-- Make it client:load please -->
+    <RoadmapAIChat roadmapId={roadmapId} client:only='react' />
     <CheckSubscriptionVerification client:load />
   </AITutorLayout>
 </SkeletonLayout>
