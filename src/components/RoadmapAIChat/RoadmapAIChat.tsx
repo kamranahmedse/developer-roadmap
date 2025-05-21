@@ -14,7 +14,7 @@ import {
   useRef,
   useState,
 } from 'react';
-import { BotIcon, Loader2Icon, SendIcon } from 'lucide-react';
+import { BotIcon, Loader2Icon, PauseCircleIcon, SendIcon } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import {
@@ -112,10 +112,19 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     setIsLoading(false);
   }, [roadmapTreeData, roadmapJSONData, roadmapDetailsData]);
 
+  const abortControllerRef = useRef<AbortController | null>(null);
   const handleChatSubmit = (json: JSONContent) => {
-    if (!json || isStreamingMessage || !isLoggedIn() || isLoading) {
+    if (
+      !json ||
+      isStreamingMessage ||
+      !isLoggedIn() ||
+      isLoading ||
+      abortControllerRef.current
+    ) {
       return;
     }
+
+    abortControllerRef.current = new AbortController();
 
     const html = htmlFromTiptapJSON(json);
     const newMessages: RoamdapAIChatHistoryType[] = [
@@ -133,7 +142,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     });
 
     scrollToBottom();
-    completeAITutorChat(newMessages);
+    completeAITutorChat(newMessages, abortControllerRef.current);
   };
 
   const scrollToBottom = useCallback(() => {
@@ -160,7 +169,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     };
   }, [roadmapId]);
 
-  const completeAITutorChat = async (messages: RoamdapAIChatHistoryType[]) => {
+  const completeAITutorChat = async (
+    messages: RoamdapAIChatHistoryType[],
+    abortController?: AbortController,
+  ) => {
     try {
       setIsStreamingMessage(true);
 
@@ -172,6 +184,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             'Content-Type': 'application/json',
           },
           credentials: 'include',
+          signal: abortController?.signal,
           body: JSON.stringify({
             roadmapId,
             messages: messages.slice(-10),
@@ -205,6 +218,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
       await readStream(reader, {
         onStream: async (content) => {
+          if (abortController?.signal.aborted) {
+            return;
+          }
+
           const jsx = await renderMessage(content, renderer);
 
           flushSync(() => {
@@ -214,6 +231,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
           scrollToBottom();
         },
         onStreamEnd: async (content) => {
+          if (abortController?.signal.aborted) {
+            return;
+          }
+
           const jsx = await renderMessage(content, renderer);
           const newMessages: RoamdapAIChatHistoryType[] = [
             ...messages,
@@ -236,10 +257,25 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
       });
 
       setIsStreamingMessage(false);
+      abortControllerRef.current = null;
     } catch (error) {
-      toast.error('Something went wrong');
       setIsStreamingMessage(false);
+      setStreamedMessage(null);
+      abortControllerRef.current = null;
+
+      if (abortController?.signal.aborted) {
+        return;
+      }
+      toast.error('Something went wrong');
     }
+  };
+
+  const handleAbort = () => {
+    abortControllerRef.current?.abort();
+    abortControllerRef.current = null;
+    setIsStreamingMessage(false);
+    setStreamedMessage(null);
+    setAiChatHistory([...aiChatHistory].slice(0, aiChatHistory.length - 1));
   };
 
   useEffect(() => {
@@ -310,6 +346,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
           className="relative flex items-start border-t border-gray-200 text-sm"
           onSubmit={(e) => {
             e.preventDefault();
+            if (isStreamingMessage && abortControllerRef.current) {
+              handleAbort();
+              return;
+            }
+
             handleChatSubmit(editorRef.current?.getJSON() || {});
           }}
         >
@@ -317,6 +358,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             editorRef={editorRef}
             roadmapId={roadmapId}
             onSubmit={(content) => {
+              if (isStreamingMessage && abortControllerRef.current) {
+                handleAbort();
+                return;
+              }
+
               handleChatSubmit(content);
             }}
           />
@@ -325,7 +371,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             type="submit"
             className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
           >
-            <SendIcon className="size-4 stroke-[2.5]" />
+            {isStreamingMessage ? (
+              <PauseCircleIcon className="size-4 stroke-[2.5]" />
+            ) : (
+              <SendIcon className="size-4 stroke-[2.5]" />
+            )}
           </button>
         </form>
       </div>

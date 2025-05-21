@@ -113,7 +113,7 @@ export async function renderMessage(
   const parts = await parseMessageParts(content, renderer);
 
   return (
-    <div>
+    <div className="max-w-[calc(100%-38px)]">
       {parts.map((item) => {
         if (
           (item.type === 'html' || item.type === 'text') &&
