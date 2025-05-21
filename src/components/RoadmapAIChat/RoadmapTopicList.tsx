@@ -1,7 +1,8 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { queryClient } from '../../stores/query-client';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
+import { TopicResourcesModal } from './TopicResourcesModal';
 
 type TopicListType = {
   topicId: string;
@@ -40,6 +41,7 @@ export function RoadmapTopicList(props: RoadmapTopicListProps) {
   const { roadmapId, content } = props;
 
   const topicListItems = parseTopicList(content);
+  const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
 
   const { data: roadmapTreeData } = useQuery(
     roadmapTreeMappingOptions(roadmapId),
@@ -63,15 +65,26 @@ export function RoadmapTopicList(props: RoadmapTopicListProps) {
   }, [topicListItems, roadmapTreeData]);
 
   return (
-    <div className="relative my-6 flex flex-wrap gap-1 first:mt-0 last:mb-0">
-      {progressItemWithText.map((item) => (
-        <button
-          key={item.topicId}
-          className="rounded-lg border border-gray-200 bg-white p-1 px-1.5 text-left text-sm"
-        >
-          {item.text}
-        </button>
-      ))}
-    </div>
+    <>
+      {selectedTopicId && (
+        <TopicResourcesModal
+          roadmapId={roadmapId}
+          topicId={selectedTopicId}
+          onClose={() => setSelectedTopicId(null)}
+        />
+      )}
+
+      <div className="relative my-6 flex flex-wrap gap-1 first:mt-0 last:mb-0">
+        {progressItemWithText.map((item) => (
+          <button
+            key={item.topicId}
+            className="rounded-lg border border-gray-200 bg-white p-1 px-1.5 text-left text-sm"
+            onClick={() => setSelectedTopicId(item.topicId)}
+          >
+            {item.text}
+          </button>
+        ))}
+      </div>
+    </>
   );
 }
