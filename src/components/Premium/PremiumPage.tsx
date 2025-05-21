@@ -10,6 +10,7 @@ import {
     Crown,
     Users2,
     Wand2,
+    Play
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -17,12 +18,22 @@ interface FeatureCardProps {
   title: string;
   description: string;
   Icon: LucideIcon;
+  duration?: string;
 }
 
-function FeatureCard({ title, description, Icon }: FeatureCardProps) {
+function FeatureCard({ title, description, Icon, duration = "2:30" }: FeatureCardProps) {
   return (
     <div className="rounded-lg border border-slate-700 bg-slate-800/50 p-8 transition-colors hover:border-blue-400">
-      <Icon className="mb-4 h-6 w-6 text-blue-400" strokeWidth={1.5} />
+      <div className="group relative mb-6 aspect-video w-full overflow-hidden rounded-lg bg-slate-900/50">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
+            <Play className="h-6 w-6 text-white" strokeWidth={2} />
+          </div>
+        </div>
+        <div className="absolute bottom-2 right-2 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
+          {duration}
+        </div>
+      </div>
       <h3 className="mb-2 text-lg font-bold text-white">{title}</h3>
       <p className="leading-relaxed text-slate-400">{description}</p>
     </div>
