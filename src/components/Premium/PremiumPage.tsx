@@ -10,7 +10,8 @@ import {
     Crown,
     Users2,
     Wand2,
-    Play
+    Play,
+    GitPullRequest
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -89,11 +90,11 @@ export function PremiumPage() {
               </span>
             </div>
             <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">
-              Learn Faster with AI Tutor
+              Learn Faster with AI
             </h1>
             <p className="mb-8 text-lg text-balance text-slate-400 md:text-xl">
-              Generate unlimited courses about any topic, get career guidance and instant answers from AI,
-              test your skills and more
+              Generate unlimited courses about any topic, get career guidance
+              and instant answers from AI, test your skills and more
             </p>
             <button
               onClick={handleUpgrade}
@@ -226,32 +227,73 @@ export function PremiumPage() {
           </div>
         </div>
 
-        {/* Why Choose Us Section */}
-        <div className="mb-20 rounded-2xl border border-slate-700 bg-slate-800/50 p-8 md:p-12">
-          <h2 className="mb-12 text-center text-3xl font-bold text-white">
-            Why Choose Our Premium Plan?
-          </h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600/20">
-                <Brain className="h-8 w-8 text-indigo-400" />
-              </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Smart Learning</h3>
-              <p className="text-slate-400">AI adapts to your learning style and pace, ensuring optimal progress</p>
+        {/* Credibility Stats */}
+        <div className="mb-20">
+          <div className="rounded-xl border border-slate-700 bg-slate-800/50 p-8 md:p-12">
+            <div className="mb-8 md:mb-12">
+              <h2 className="text-3xl font-bold text-white md:text-4xl">
+                The Platform Developers Trust
+              </h2>
+              <p className="mt-2 text-lg text-slate-400">
+                Join millions of developers in their learning journey
+              </p>
             </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-600/20">
-                <Users2 className="h-8 w-8 text-purple-400" />
+
+            <div className="grid gap-8 md:grid-cols-4">
+              <div className="group flex flex-col items-center text-center">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
+                  <Star className="h-6 w-6 text-yellow-400" strokeWidth={1.5} />
+                </div>
+                <div className="text-3xl font-bold text-white">#6</div>
+                <div className="mt-1 text-sm font-medium text-slate-400">
+                  Most Starred Project
+                </div>
+                <div className="mt-1 text-xs text-slate-500">
+                  Among 200M+ Repositories
+                </div>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Community Driven</h3>
-              <p className="text-slate-400">Join a thriving community of developers sharing knowledge and experiences</p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-600/20">
-                <Rocket className="h-8 w-8 text-blue-400" />
+
+              <div className="group flex flex-col items-center text-center">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
+                  <Users2 className="h-6 w-6 text-blue-400" strokeWidth={1.5} />
+                </div>
+                <div className="text-3xl font-bold text-white">2.1M+</div>
+                <div className="mt-1 text-sm font-medium text-slate-400">
+                  Active Developers
+                </div>
+                <div className="mt-1 text-xs text-slate-500">
+                  Learning & Growing Daily
+                </div>
               </div>
-              <h3 className="mb-2 text-xl font-bold text-white">Career Growth</h3>
-              <p className="text-slate-400">Get personalized guidance to accelerate your professional development</p>
+
+              <div className="group flex flex-col items-center text-center">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
+                  <Bot className="h-6 w-6 text-indigo-400" strokeWidth={1.5} />
+                </div>
+                <div className="text-3xl font-bold text-white">37K+</div>
+                <div className="mt-1 text-sm font-medium text-slate-400">
+                  Discord Members
+                </div>
+                <div className="mt-1 text-xs text-slate-500">
+                  Active Community Support
+                </div>
+              </div>
+
+              <div className="group flex flex-col items-center text-center">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
+                  <GitPullRequest
+                    className="h-6 w-6 text-purple-400"
+                    strokeWidth={1.5}
+                  />
+                </div>
+                <div className="text-3xl font-bold text-white">1000+</div>
+                <div className="mt-1 text-sm font-medium text-slate-400">
+                  Contributors
+                </div>
+                <div className="mt-1 text-xs text-slate-500">
+                  Community Driven Project
+                </div>
+              </div>
             </div>
           </div>
         </div>
