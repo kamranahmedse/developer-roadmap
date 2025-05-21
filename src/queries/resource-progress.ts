@@ -2,6 +2,7 @@ import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
 
 export type GetUserResourceProgressResponse = {
+  totalTopicCount: number;
   done: string[];
   learning: string[];
   skipped: string[];
