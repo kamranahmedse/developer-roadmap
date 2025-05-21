@@ -41,9 +41,11 @@ seo:
     - 'prompt engineering quiz'
     - 'prompt engineering interview questions'
 relatedRoadmaps:
-  - 'python'
-  - 'backend'
-  - 'devops'
+  - 'ai-engineer'
+  - 'ai-agents'
+  - 'ai-data-scientist'
+  - 'data-analyst'
+  - 'mlops'
 sitemap:
   priority: 1
   changefreq: 'monthly'
