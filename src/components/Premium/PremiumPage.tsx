@@ -89,7 +89,7 @@ export function PremiumPage() {
               onClick={handleUpgrade}
               className="rounded-lg rounded-xl bg-blue-600 px-6 py-3 text-lg font-medium text-white transition-colors hover:bg-blue-700"
             >
-              Upgrade to Premium
+              Upgrade for just <span className='text-white ml-1'>$10/month</span>
             </button>
           </div>
         </div>
