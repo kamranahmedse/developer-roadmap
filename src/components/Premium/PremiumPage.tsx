@@ -3,7 +3,6 @@ import {
     Bot,
     Book,
     Star,
-    Users,
     Rocket,
     CheckCircle2,
     Zap,
@@ -50,9 +49,9 @@ function Testimonial({
   content: string;
 }) {
   return (
-    <div className="rounded-lg border border-slate-700 bg-slate-800/50 p-6">
+    <div className="flex flex-col rounded-lg border border-slate-700 bg-slate-800/50 p-6">
       <StarRating />
-      <p className="mt-4 leading-relaxed text-slate-400">{content}</p>
+      <p className="mt-4 mb-auto leading-relaxed text-slate-400">{content}</p>
       <div className="mt-4">
         <div className="font-medium text-white">{name}</div>
         <div className="text-sm text-slate-500">{role}</div>
@@ -82,15 +81,29 @@ export function PremiumPage() {
               Learn Faster with AI Tutor
             </h1>
             <p className="mb-8 text-lg text-balance text-slate-400 md:text-xl">
-              Get personalized roadmaps, instant answers, and expert guidance to
-              accelerate your learning journey.
+              Generate a course about any topic, get instant answers from AI,
+              and accelerate your learning journey.
             </p>
             <button
               onClick={handleUpgrade}
-              className="rounded-lg rounded-xl bg-blue-600 px-6 py-3 text-lg font-medium text-white transition-colors hover:bg-blue-700"
+              className="group mx-auto block rounded-2xl bg-gradient-to-b from-indigo-600 to-indigo-700 px-8 py-4 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/25"
             >
-              Upgrade for just <span className='text-white ml-1'>$10/month</span>
+              <div className="flex items-center justify-center gap-3 text-lg">
+                <span className="font-medium text-indigo-100">
+                  Upgrade for just
+                </span>
+                <span className="font-bold text-white">$10/month</span>
+                <span className="text-white transition-transform duration-200 group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
             </button>
+            <p className="mt-5 flex items-center justify-center gap-2 text-sm">
+              <Clock className="h-3 w-3 text-white" />
+              <span className="text-indigo-200">
+                2 months free with yearly plan
+              </span>
+            </p>
           </div>
         </div>
 
@@ -115,11 +128,11 @@ export function PremiumPage() {
         </div>
 
         {/* Testimonials */}
-        <div className="mb-20">
+        <div className="-mx-4 mb-20 md:-mx-8 lg:-mx-16 xl:-mx-68">
           <h2 className="mb-12 text-center text-3xl font-bold text-white">
             What others are saying
           </h2>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 px-4 md:grid-cols-4 md:px-8 lg:px-16">
             <Testimonial
               name="Gourav Khunger"
               role="Full Stack Developer"
@@ -134,6 +147,31 @@ export function PremiumPage() {
               name="Mohsin Aheer"
               role="Software Engineer"
               content="The interactive exercises and real-world scenarios have significantly improved my problem-solving skills."
+            />
+            <Testimonial
+              name="Sarah Chen"
+              role="Frontend Developer"
+              content="The AI-powered code reviews have been invaluable. I've learned so many best practices and modern patterns."
+            />
+            <Testimonial
+              name="Alex Rodriguez"
+              role="DevOps Engineer"
+              content="Premium resources helped me master cloud architecture. The roadmaps are incredibly detailed and practical."
+            />
+            <Testimonial
+              name="Priya Sharma"
+              role="Backend Developer"
+              content="Worth every penny! The AI assistant helped me solve complex problems and understand advanced concepts quickly."
+            />
+            <Testimonial
+              name="James Wilson"
+              role="Mobile Developer"
+              content="The cross-platform development guides are exceptional. Helped me transition from native to React Native seamlessly."
+            />
+            <Testimonial
+              name="Emma Thompson"
+              role="UI/UX Designer"
+              content="As a designer learning to code, the visual learning paths and interactive tutorials made the journey much easier."
             />
           </div>
         </div>
@@ -263,17 +301,25 @@ export function PremiumPage() {
 
         {/* Final CTA */}
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-4 text-2xl font-bold text-white">
-            Ready to Take Your Skills to the Next Level?
+          <h2 className="mb-4 text-3xl font-bold text-white">
+            Not Ready to Commit Yet?
           </h2>
-          <p className="mb-8 text-slate-400">
-            Join the community of developers who are accelerating their careers
-            with our premium features.
+          <p className="mb-8 text-lg text-slate-400">
+            Try our AI features for free and experience the power of AI-assisted
+            learning before upgrading.
           </p>
-          <div className="flex items-center justify-center gap-2 text-blue-400">
-            <Users className="h-5 w-5" />
-            <span>50,000+ developers already enrolled</span>
-          </div>
+          <a
+            href="/ai"
+            className="group inline-flex items-center gap-3 rounded-full bg-slate-800/50 px-6 py-3 text-blue-400 ring-1 ring-slate-700/50 transition-all hover:bg-slate-800 hover:text-blue-300 hover:ring-blue-400/50"
+          >
+            <Bot className="h-5 w-5 transition-transform group-hover:scale-110" />
+            <span className="text-lg font-medium">
+              Try AI Features for Free
+            </span>
+            <span className="transform transition-transform group-hover:translate-x-1">
+              →
+            </span>
+          </a>
         </div>
       </div>
     </div>
