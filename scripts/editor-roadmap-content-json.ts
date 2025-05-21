@@ -21,7 +21,7 @@ export const allowedLinkTypes = [
   'podcast',
 ] as const;
 
-async function fetchRoadmapJson(roadmapId: string) {
+export async function fetchRoadmapJson(roadmapId: string) {
   const response = await fetch(
     `https://roadmap.sh/api/v1-official-roadmap/${roadmapId}`,
   );
