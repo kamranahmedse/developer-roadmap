@@ -38,6 +38,7 @@ import { RoadmapAIChatCard } from './RoadmapAIChatCard';
 import { UserProgressList } from './UserProgressList';
 import { UserProgressActionList } from './UserProgressActionList';
 import { RoadmapTopicList } from './RoadmapTopicList';
+import { ShareResourceLink } from './ShareResourceLink';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -152,6 +153,9 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
       },
       'roadmap-topics': (options) => {
         return <RoadmapTopicList roadmapId={roadmapId} {...options} />;
+      },
+      'resource-progress-link': () => {
+        return <ShareResourceLink roadmapId={roadmapId} />;
       },
     };
   }, [roadmapId]);
