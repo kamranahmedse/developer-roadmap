@@ -11,9 +11,10 @@ import {
     Users2,
     Wand2,
     Play,
-    GitPullRequest
+    GitPullRequest,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import { cn } from '../../lib/classname';
 
 interface FeatureCardProps {
   title: string;
@@ -22,7 +23,12 @@ interface FeatureCardProps {
   duration?: string;
 }
 
-function FeatureCard({ title, description, Icon, duration = "2:30" }: FeatureCardProps) {
+function FeatureCard({
+  title,
+  description,
+  Icon,
+  duration = '2:30',
+}: FeatureCardProps) {
   return (
     <div className="rounded-lg border border-slate-700 bg-slate-800/50 p-8 transition-colors hover:border-blue-400">
       <div className="group relative mb-6 aspect-video w-full overflow-hidden rounded-lg bg-slate-900/50">
@@ -31,7 +37,7 @@ function FeatureCard({ title, description, Icon, duration = "2:30" }: FeatureCar
             <Play className="h-6 w-6 text-white" strokeWidth={2} />
           </div>
         </div>
-        <div className="absolute bottom-2 right-2 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
+        <div className="absolute right-2 bottom-2 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
           {duration}
         </div>
       </div>
@@ -68,6 +74,48 @@ function Testimonial({
         <div className="font-medium text-white">{name}</div>
         <div className="text-sm text-slate-500">{role}</div>
       </div>
+    </div>
+  );
+}
+
+interface StatsItemProps {
+  icon: LucideIcon;
+  text: string;
+}
+
+function StatsItem(props: StatsItemProps) {
+  const Icon = props.icon;
+  return (
+    <div className="flex items-center gap-3">
+      <Icon className="h-6 w-6 text-purple-500" strokeWidth={1.5} />
+      <span className="text-gray-300">{props.text}</span>
+    </div>
+  );
+}
+
+interface CredibilityItemProps {
+  icon: LucideIcon;
+  iconClassName: string;
+  value: string;
+  label: string;
+  subLabel: string;
+}
+
+function CredibilityItem(props: CredibilityItemProps) {
+  const Icon = props.icon;
+  return (
+    <div className="group flex flex-col items-center text-center">
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
+        <Icon
+          className={cn(`h-6 w-6`, props.iconClassName)}
+          strokeWidth={1.5}
+        />
+      </div>
+      <div className="text-3xl font-bold text-white">{props.value}</div>
+      <div className="mt-3 text-sm font-medium text-slate-400">
+        {props.label}
+      </div>
+      <div className="mt-1.5 text-xs text-slate-500">{props.subLabel}</div>
     </div>
   );
 }
@@ -121,22 +169,10 @@ export function PremiumPage() {
 
         {/* Stats Section */}
         <div className="mb-20 flex flex-wrap items-center justify-center gap-x-10 gap-y-8">
-          <div className="flex items-center gap-3">
-            <Users2 className="h-6 w-6 text-purple-500" strokeWidth={1.5} />
-            <span className="text-gray-300">+100K Learners</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Bot className="h-6 w-6 text-purple-500" strokeWidth={1.5} />
-            <span className="text-gray-300">+135K Roadmaps</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Book className="h-6 w-6 text-purple-500" strokeWidth={1.5} />
-            <span className="text-gray-300">+90K Courses</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Wand2 className="h-6 w-6 text-purple-500" strokeWidth={1.5} />
-            <span className="text-gray-300">+1M AI Chats</span>
-          </div>
+          <StatsItem icon={Users2} text="+100K Learners" />
+          <StatsItem icon={Bot} text="+135K Roadmaps" />
+          <StatsItem icon={Book} text="+90K Courses" />
+          <StatsItem icon={Wand2} text="+1M AI Chats" />
         </div>
 
         {/* Testimonials */}
@@ -240,60 +276,34 @@ export function PremiumPage() {
             </div>
 
             <div className="grid gap-8 md:grid-cols-4">
-              <div className="group flex flex-col items-center text-center">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
-                  <Star className="h-6 w-6 text-yellow-400" strokeWidth={1.5} />
-                </div>
-                <div className="text-3xl font-bold text-white">#6</div>
-                <div className="mt-1 text-sm font-medium text-slate-400">
-                  Most Starred Project
-                </div>
-                <div className="mt-1 text-xs text-slate-500">
-                  Among 200M+ Repositories
-                </div>
-              </div>
-
-              <div className="group flex flex-col items-center text-center">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
-                  <Users2 className="h-6 w-6 text-blue-400" strokeWidth={1.5} />
-                </div>
-                <div className="text-3xl font-bold text-white">2.1M+</div>
-                <div className="mt-1 text-sm font-medium text-slate-400">
-                  Active Developers
-                </div>
-                <div className="mt-1 text-xs text-slate-500">
-                  Learning & Growing Daily
-                </div>
-              </div>
-
-              <div className="group flex flex-col items-center text-center">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
-                  <Bot className="h-6 w-6 text-indigo-400" strokeWidth={1.5} />
-                </div>
-                <div className="text-3xl font-bold text-white">37K+</div>
-                <div className="mt-1 text-sm font-medium text-slate-400">
-                  Discord Members
-                </div>
-                <div className="mt-1 text-xs text-slate-500">
-                  Active Community Support
-                </div>
-              </div>
-
-              <div className="group flex flex-col items-center text-center">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
-                  <GitPullRequest
-                    className="h-6 w-6 text-purple-400"
-                    strokeWidth={1.5}
-                  />
-                </div>
-                <div className="text-3xl font-bold text-white">1000+</div>
-                <div className="mt-1 text-sm font-medium text-slate-400">
-                  Contributors
-                </div>
-                <div className="mt-1 text-xs text-slate-500">
-                  Community Driven Project
-                </div>
-              </div>
+              <CredibilityItem
+                icon={Star}
+                iconClassName="text-yellow-400 fill-current"
+                value="#6"
+                label="Most Starred Project"
+                subLabel="Among 200M+ Repositories"
+              />
+              <CredibilityItem
+                icon={Users2}
+                iconClassName="text-blue-400"
+                value="2.1M+"
+                label="Active Developers"
+                subLabel="Learning & Growing Daily"
+              />
+              <CredibilityItem
+                icon={Bot}
+                iconClassName="text-indigo-400"
+                value="37K+"
+                label="Discord Members"
+                subLabel="Active Community Support"
+              />
+              <CredibilityItem
+                icon={GitPullRequest}
+                iconClassName="text-purple-400"
+                value="1000+"
+                label="Contributors"
+                subLabel="Community Driven Project"
+              />
             </div>
           </div>
         </div>
