@@ -316,12 +316,17 @@ export function TopicDetail(props: TopicDetailProps) {
           }
 
           topicHtml = topicDom.body.innerHTML;
+          const topicHasContent = otherElems.length > 0;
 
           setLinks(listLinks);
-          setHasContent(otherElems.length > 0);
+          setHasContent(topicHasContent);
           setContributionUrl(contributionUrl);
           setHasEnoughLinks(links.length >= 3);
           setTopicHtmlTitle(titleElem?.textContent || '');
+
+          if (!topicHasContent && renderer === 'editor') {
+            setActiveTab('ai');
+          }
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
           setTopicTitle((response as RoadmapContentDocument)?.title || '');

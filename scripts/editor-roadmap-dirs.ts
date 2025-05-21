@@ -1,11 +1,10 @@
+import type { Node } from '@roadmapsh/editor';
+import matter from 'gray-matter';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Node } from '@roadmapsh/editor';
-import matter from 'gray-matter';
 import type { RoadmapFrontmatter } from '../src/lib/roadmap';
 import { slugify } from '../src/lib/slugger';
-import { httpGet } from '../src/lib/http';
 
 // ERROR: `__dirname` is not defined in ES module scope
 // https://iamwebwiz.medium.com/how-to-fix-dirname-is-not-defined-in-es-module-scope-34d94a86694d
@@ -49,12 +48,27 @@ if (roadmapFrontmatter.renderer !== 'editor') {
   process.exit(1);
 }
 
-const { response: roadmapContent, error } = await httpGet(
-  `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${roadmapId}`,
-);
+export async function fetchRoadmapJson(roadmapId: string) {
+  const response = await fetch(
+    `https://roadmap.sh/api/v1-official-roadmap/${roadmapId}`,
+  );
 
-if (error) {
-  console.error(error);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch roadmap json: ${response.statusText}`);
+  }
+
+  const data = await response.json();
+  if (data.error) {
+    throw new Error(`Failed to fetch roadmap json: ${data.error}`);
+  }
+
+  return data;
+}
+
+const roadmapContent = await fetchRoadmapJson(roadmapId);
+
+if (!roadmapContent) {
+  console.error(`Failed to fetch roadmap json: ${roadmapId}`);
   process.exit(1);
 }
 

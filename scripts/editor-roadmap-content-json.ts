@@ -1,14 +1,13 @@
+import type { Node } from '@roadmapsh/editor';
+import matter from 'gray-matter';
+import { HTMLElement, parse } from 'node-html-parser';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Node } from '@roadmapsh/editor';
-import matter from 'gray-matter';
+import { htmlToMarkdown } from '../src/lib/html';
+import { markdownToHtml } from '../src/lib/markdown';
 import type { RoadmapFrontmatter } from '../src/lib/roadmap';
 import { slugify } from '../src/lib/slugger';
-import { markdownToHtml } from '../src/lib/markdown';
-import { HTMLElement, parse } from 'node-html-parser';
-import { htmlToMarkdown } from '../src/lib/html';
-import { httpGet } from '../src/lib/http';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +20,23 @@ export const allowedLinkTypes = [
   'website',
   'podcast',
 ] as const;
+
+export async function fetchRoadmapJson(roadmapId: string) {
+  const response = await fetch(
+    `https://roadmap.sh/api/v1-official-roadmap/${roadmapId}`,
+  );
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch roadmap json: ${response.statusText}`);
+  }
+
+  const data = await response.json();
+  if (data.error) {
+    throw new Error(`Failed to fetch roadmap json: ${data.error}`);
+  }
+
+  return data;
+}
 
 // Directory containing the roadmaps
 const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
@@ -54,12 +70,13 @@ if (!stats || !stats.isDirectory()) {
 for (const roadmapId of editorRoadmapIds) {
   console.log(`🚀 Starting ${roadmapId}`);
 
-  const { response: data, error } = await httpGet(
-    `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${roadmapId}`,
-  );
-
-  if (error) {
+  const data = await fetchRoadmapJson(roadmapId).catch((error) => {
     console.error(error);
+    return null;
+  });
+
+  if (!data) {
+    console.error(`Failed to fetch roadmap json: ${roadmapId}`);
     continue;
   }
 
