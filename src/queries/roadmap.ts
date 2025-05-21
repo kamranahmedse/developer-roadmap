@@ -40,6 +40,26 @@ export type PagesJSON = {
   renderer?: AllowedRoadmapRenderer;
 }[];
 
+export function listBuiltInRoadmaps() {
+  return queryOptions({
+    queryKey: ['built-in-roadmaps'],
+    queryFn: () => {
+      return httpGet<PagesJSON>(`${import.meta.env.PUBLIC_APP_URL}/pages.json`);
+    },
+    select: (data) => {
+      return data
+        .filter((page) => page?.group?.toLowerCase() === 'roadmaps')
+        .map((page) => ({
+          id: page.id,
+          title: page.title,
+          url: page.url,
+          renderer: page.renderer,
+        }));
+    },
+    refetchOnMount: false,
+  });
+}
+
 export function roadmapDetailsOptions(roadmapId: string) {
   return queryOptions({
     queryKey: ['roadmap-details', roadmapId],
