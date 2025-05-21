@@ -226,6 +226,36 @@ export function PremiumPage() {
           </div>
         </div>
 
+        {/* Why Choose Us Section */}
+        <div className="mb-20 rounded-2xl border border-slate-700 bg-slate-800/50 p-8 md:p-12">
+          <h2 className="mb-12 text-center text-3xl font-bold text-white">
+            Why Choose Our Premium Plan?
+          </h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600/20">
+                <Brain className="h-8 w-8 text-indigo-400" />
+              </div>
+              <h3 className="mb-2 text-xl font-bold text-white">Smart Learning</h3>
+              <p className="text-slate-400">AI adapts to your learning style and pace, ensuring optimal progress</p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-600/20">
+                <Users2 className="h-8 w-8 text-purple-400" />
+              </div>
+              <h3 className="mb-2 text-xl font-bold text-white">Community Driven</h3>
+              <p className="text-slate-400">Join a thriving community of developers sharing knowledge and experiences</p>
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-600/20">
+                <Rocket className="h-8 w-8 text-blue-400" />
+              </div>
+              <h3 className="mb-2 text-xl font-bold text-white">Career Growth</h3>
+              <p className="text-slate-400">Get personalized guidance to accelerate your professional development</p>
+            </div>
+          </div>
+        </div>
+
         {/* Pricing Section */}
         <div className="mb-20">
           <h2 className="mb-12 text-center text-3xl font-bold text-white">
