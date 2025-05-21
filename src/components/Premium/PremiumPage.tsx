@@ -81,8 +81,8 @@ export function PremiumPage() {
               Learn Faster with AI Tutor
             </h1>
             <p className="mb-8 text-lg text-balance text-slate-400 md:text-xl">
-              Generate a course about any topic, get instant answers from AI,
-              and accelerate your learning journey.
+              Generate unlimited courses about any topic, get career guidance and instant answers from AI,
+              test your skills and more
             </p>
             <button
               onClick={handleUpgrade}
