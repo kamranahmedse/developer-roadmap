@@ -471,6 +471,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             )}
           </div>
         )}
+        
         {!isLoggedIn() && (
           <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
             <LockIcon className="size-4 cursor-not-allowed" strokeWidth={2.5} />

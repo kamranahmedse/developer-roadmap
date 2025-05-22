@@ -15,8 +15,10 @@ import {
   BotIcon,
   Frown,
   Loader2Icon,
+  LockIcon,
   PauseCircleIcon,
   SendIcon,
+  Trash2Icon,
 } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
@@ -39,6 +41,10 @@ import { UserProgressActionList } from './UserProgressActionList';
 import { RoadmapTopicList } from './RoadmapTopicList';
 import { ShareResourceLink } from './ShareResourceLink';
 import { RoadmapRecommendations } from './RoadmapRecommendations';
+import { RoadmapAIChatHeader } from './RoadmapAIChatHeader';
+import { showLoginPopup } from '../../lib/popup';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { billingDetailsOptions } from '../../queries/billing';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -67,6 +73,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const scrollareaRef = useRef<HTMLDivElement>(null);
 
   const [isLoading, setIsLoading] = useState(true);
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 
   const [aiChatHistory, setAiChatHistory] = useState<
     RoamdapAIChatHistoryType[]
@@ -79,15 +86,26 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     roadmapJSONOptions(roadmapId),
     queryClient,
   );
-  const { data: roadmapTreeData } = useQuery(
+  const { data: roadmapTreeData, isLoading: roadmapTreeLoading } = useQuery(
     roadmapTreeMappingOptions(roadmapId),
     queryClient,
   );
 
-  const { data: userResourceProgressData } = useQuery(
-    userResourceProgressOptions('roadmap', roadmapId),
+  const {
+    data: userResourceProgressData,
+    isLoading: userResourceProgressLoading,
+  } = useQuery(userResourceProgressOptions('roadmap', roadmapId), queryClient);
+
+  const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
+    getAiCourseLimitOptions(),
     queryClient,
   );
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
@@ -296,6 +314,14 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     );
   }
 
+  const isDataLoading =
+    isLoading ||
+    roadmapTreeLoading ||
+    userResourceProgressLoading ||
+    isTokenUsageLoading ||
+    isBillingDetailsLoading;
+  const hasChatHistory = aiChatHistory.length > 0;
+
   return (
     <div className="flex flex-grow flex-row">
       <div className="relative h-full flex-grow overflow-y-scroll">
@@ -304,6 +330,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
           </div>
         )}
+
         {roadmapDetail?.json && !isLoading && (
           <div>
             <div className="mx-auto max-w-[968px] px-4">
@@ -318,12 +345,21 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
       </div>
 
       <div className="flex h-full max-w-[40%] flex-grow flex-col border-l border-gray-200 bg-white">
-        <div className="flex min-h-[46px] items-center justify-between gap-2 border-b border-gray-200 px-3 py-2 text-sm">
-          <span className="flex items-center gap-2 text-sm">
-            <BotIcon className="size-4 shrink-0 text-black" />
-            <span>AI Chat</span>
-          </span>
-        </div>
+        {showUpgradeModal && (
+          <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+        )}
+
+        <RoadmapAIChatHeader
+          isLoading={isDataLoading}
+          hasChatHistory={hasChatHistory}
+          setAiChatHistory={setAiChatHistory}
+          onLogin={() => {
+            showLoginPopup();
+          }}
+          onUpgrade={() => {
+            setShowUpgradeModal(true);
+          }}
+        />
 
         <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
           {isLoading && (
@@ -365,18 +401,67 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             editorRef={editorRef}
             roadmapId={roadmapId}
             onSubmit={(content) => {
-              if (isStreamingMessage || abortControllerRef.current) {
-                return;
-              }
-
-              if (isEmptyContent(content)) {
-                toast.error('Please enter a message');
+              if (
+                isStreamingMessage ||
+                abortControllerRef.current ||
+                !isLoggedIn() ||
+                isDataLoading ||
+                isEmptyContent(content)
+              ) {
                 return;
               }
 
               handleChatSubmit(content);
             }}
           />
+
+          {isLimitExceeded && isLoggedIn() && (
+            <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+              <LockIcon
+                className="size-4 cursor-not-allowed"
+                strokeWidth={2.5}
+              />
+              <p className="cursor-not-allowed">
+                Limit reached for today
+                {isPaidUser ? '. Please wait until tomorrow.' : ''}
+              </p>
+              {!isPaidUser && (
+                <button
+                  onClick={() => {
+                    setShowUpgradeModal(true);
+                  }}
+                  className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                >
+                  Upgrade for more
+                </button>
+              )}
+            </div>
+          )}
+
+          {!isLoggedIn() && (
+            <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+              <LockIcon
+                className="size-4 cursor-not-allowed"
+                strokeWidth={2.5}
+              />
+              <p className="cursor-not-allowed">Please login to continue</p>
+              <button
+                onClick={() => {
+                  showLoginPopup();
+                }}
+                className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+              >
+                Login / Register
+              </button>
+            </div>
+          )}
+
+          {isDataLoading && (
+            <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+              <Loader2Icon className="size-4 animate-spin" />
+              <p>Loading...</p>
+            </div>
+          )}
 
           <button
             className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
