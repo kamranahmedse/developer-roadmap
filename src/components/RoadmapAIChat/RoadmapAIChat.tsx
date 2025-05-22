@@ -382,7 +382,13 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                 return;
               }
 
-              handleChatSubmit(editorRef.current?.getJSON() || {});
+              const json = editorRef.current?.getJSON();
+              if (!json || isEmptyContent(json)) {
+                toast.error('Please enter a message');
+                return;
+              }
+
+              handleChatSubmit(json);
             }}
           >
             {isStreamingMessage ? (
