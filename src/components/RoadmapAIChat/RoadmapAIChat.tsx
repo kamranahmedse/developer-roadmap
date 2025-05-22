@@ -18,14 +18,12 @@ import { BotIcon, Loader2Icon, PauseCircleIcon, SendIcon } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import {
-  AIChatCard,
-  type AllowedAIChatRole,
+  type AllowedAIChatRole
 } from '../GenerateCourse/AICourseLessonChat';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import type { JSONContent, Editor } from '@tiptap/core';
 import { flushSync } from 'react-dom';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
-import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import { readStream } from '../../lib/ai';
 import { useToast } from '../../hooks/use-toast';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
@@ -287,8 +285,8 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   }, []);
 
   return (
-    <div className="grid grow grid-cols-5">
-      <div className="relative col-span-3 h-full overflow-y-scroll">
+    <div className="flex flex-row flex-grow">
+      <div className="relative flex-grow h-full overflow-y-scroll">
         {isLoading && (
           <div className="absolute inset-0 flex h-full w-full items-center justify-center">
             <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
@@ -303,7 +301,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         )}
       </div>
 
-      <div className="col-span-2 flex h-full flex-col border-l border-gray-200 bg-white">
+      <div className="flex-grow max-w-[40%] flex h-full flex-col border-l border-gray-200 bg-white">
         <div className="flex min-h-[46px] items-center justify-between gap-2 border-b border-gray-200 px-3 py-2 text-sm">
           <span className="flex items-center gap-2 text-sm">
             <BotIcon className="size-4 shrink-0 text-black" />
