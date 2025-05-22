@@ -69,10 +69,11 @@ type BulkUpdateResourceProgressResponse = {
 type UserProgressActionListProps = {
   roadmapId: string;
   content: string;
+  isLoading?: boolean;
 };
 
 export function UserProgressActionList(props: UserProgressActionListProps) {
-  const { roadmapId, content } = props;
+  const { roadmapId, content, isLoading = false } = props;
 
   const toast = useToast();
   const updateUserProgress = parseUserProgress(content);
@@ -157,12 +158,19 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
           <div className="absolute inset-x-0 right-0 bottom-0.5 translate-y-1/2">
             <div className="flex items-center justify-center gap-2">
               <button
-                className="rounded-md bg-gray-100 px-2 py-1 text-[10px] leading-none font-medium"
+                className="rounded-md bg-gray-100 px-2 py-1 text-[10px] leading-none font-medium disabled:cursor-not-allowed disabled:opacity-70"
                 onClick={() => setShowAll(!showAll)}
+                disabled={isLoading}
               >
-                {showAll
-                  ? '- Show Less'
-                  : `+${progressItemWithText.length - itemCountToShow} more`}
+                {isLoading && <Loader2Icon className="size-2.5 animate-spin" />}
+
+                {!isLoading && (
+                  <>
+                    {showAll
+                      ? '- Show Less'
+                      : `+${progressItemWithText.length - itemCountToShow} more`}
+                  </>
+                )}
               </button>
             </div>
           </div>

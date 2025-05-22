@@ -220,7 +220,9 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             return;
           }
 
-          const jsx = await renderMessage(content, renderer);
+          const jsx = await renderMessage(content, renderer, {
+            isLoading: true,
+          });
 
           flushSync(() => {
             setStreamedMessage(jsx);
@@ -233,7 +235,9 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             return;
           }
 
-          const jsx = await renderMessage(content, renderer);
+          const jsx = await renderMessage(content, renderer, {
+            isLoading: false,
+          });
           const newMessages: RoamdapAIChatHistoryType[] = [
             ...messages,
             {

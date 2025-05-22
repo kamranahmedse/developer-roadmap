@@ -10,16 +10,24 @@ type MessagePart = {
 
 type MessagePartRendererProps = {
   content: string;
+  isLoading?: boolean;
 };
 
 export type MessagePartRenderer = (
   props: MessagePartRendererProps,
 ) => React.ReactNode | string;
 
+export type MessagePartRendererOptions = {
+  isLoading?: boolean;
+};
+
 export async function parseMessageParts(
   content: string,
   renderer: Record<string, MessagePartRenderer>,
-): Promise<MessagePart[]> {
+  options: MessagePartRendererOptions = {
+    isLoading: false,
+  },
+) {
   const parts: MessagePart[] = [];
   const regex = /<([a-zA-Z0-9\-]+)>(.*?)<\/\1>/gs;
 
@@ -46,7 +54,10 @@ export async function parseMessageParts(
         });
       }
 
-      const output = renderer[tag]({ content: innerContent });
+      const output = renderer[tag]({
+        content: innerContent,
+        isLoading: options.isLoading,
+      });
       parts.push({
         id: nanoid(),
         type: 'html',
@@ -81,7 +92,10 @@ export async function parseMessageParts(
       }
 
       const innerContent = content.slice(openingIndex + openingTag.length);
-      const output = renderer[tag]({ content: innerContent });
+      const output = renderer[tag]({
+        content: innerContent,
+        isLoading: options.isLoading,
+      });
       parts.push({
         id: nanoid(),
         type: 'html',
@@ -109,8 +123,11 @@ export async function parseMessageParts(
 export async function renderMessage(
   content: string,
   renderer: Record<string, MessagePartRenderer>,
+  options: MessagePartRendererOptions = {
+    isLoading: false,
+  },
 ) {
-  const parts = await parseMessageParts(content, renderer);
+  const parts = await parseMessageParts(content, renderer, options);
 
   return (
     <div className="max-w-[calc(100%-38px)]">
