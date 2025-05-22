@@ -1,9 +1,7 @@
 import './RoadmapAIChat.css';
 
 import { useQuery } from '@tanstack/react-query';
-import {
-  roadmapJSONOptions
-} from '../../queries/roadmap';
+import { roadmapJSONOptions } from '../../queries/roadmap';
 import { queryClient } from '../../stores/query-client';
 import {
   Fragment,
@@ -13,7 +11,13 @@ import {
   useRef,
   useState,
 } from 'react';
-import { BotIcon, Frown, Loader2Icon, PauseCircleIcon, SendIcon } from 'lucide-react';
+import {
+  BotIcon,
+  Frown,
+  Loader2Icon,
+  PauseCircleIcon,
+  SendIcon,
+} from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { type AllowedAIChatRole } from '../GenerateCourse/AICourseLessonChat';
@@ -352,24 +356,17 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
           )}
         </div>
 
-        <form
-          className="relative flex items-start border-t border-gray-200 text-sm"
-          onSubmit={(e) => {
-            e.preventDefault();
-            if (isStreamingMessage && abortControllerRef.current) {
-              handleAbort();
-              return;
-            }
-
-            handleChatSubmit(editorRef.current?.getJSON() || {});
-          }}
-        >
+        <div className="relative flex items-start border-t border-gray-200 text-sm">
           <ChatEditor
             editorRef={editorRef}
             roadmapId={roadmapId}
             onSubmit={(content) => {
-              if (isStreamingMessage && abortControllerRef.current) {
-                handleAbort();
+              if (isStreamingMessage || abortControllerRef.current) {
+                return;
+              }
+
+              if (isEmptyContent(content)) {
+                toast.error('Please enter a message');
                 return;
               }
 
@@ -378,8 +375,15 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
           />
 
           <button
-            type="submit"
             className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
+            onClick={(e) => {
+              if (isStreamingMessage || abortControllerRef.current) {
+                handleAbort();
+                return;
+              }
+
+              handleChatSubmit(editorRef.current?.getJSON() || {});
+            }}
           >
             {isStreamingMessage ? (
               <PauseCircleIcon className="size-4 stroke-[2.5]" />
@@ -387,9 +391,26 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
               <SendIcon className="size-4 stroke-[2.5]" />
             )}
           </button>
-        </form>
+        </div>
       </div>
     </div>
+  );
+}
+
+function isEmptyContent(content: JSONContent) {
+  if (!content) {
+    return true;
+  }
+
+  // because they wrap the content in type doc
+  const firstContent = content.content?.[0];
+  if (!firstContent) {
+    return true;
+  }
+
+  return (
+    firstContent.type === 'paragraph' &&
+    (!firstContent?.content || firstContent?.content?.length === 0)
   );
 }
 

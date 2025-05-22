@@ -136,6 +136,8 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
     ? progressItemWithText
     : progressItemWithText.slice(0, itemCountToShow);
 
+  const hasMoreItemsToShow = progressItemWithText.length > itemCountToShow;
+
   return (
     <div className="relative my-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-2 first:mt-0 last:mb-0">
       <div className="relative flex flex-col gap-2">
@@ -151,7 +153,7 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
           />
         ))}
 
-        {progressItemWithText.length > itemCountToShow && (
+        {hasMoreItemsToShow && (
           <div className="absolute inset-x-0 right-0 bottom-0.5 translate-y-1/2">
             <div className="flex items-center justify-center gap-2">
               <button
@@ -167,37 +169,41 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
         )}
       </div>
 
-      <div className="absolute top-0 right-0">
-        <button
-          className="flex items-center gap-1 rounded-b-md bg-green-100 px-2 py-1 text-[10px] leading-none font-medium text-green-600"
-          disabled={isBulkUpdating}
-          onClick={() => {
-            const done = updateUserProgress
-              .filter((item) => item.action === 'done')
-              .map((item) => item.id);
-            const learning = updateUserProgress
-              .filter((item) => item.action === 'learning')
-              .map((item) => item.id);
-            const skipped = updateUserProgress
-              .filter((item) => item.action === 'skipped')
-              .map((item) => item.id);
-            const pending = updateUserProgress
-              .filter((item) => item.action === 'pending')
-              .map((item) => item.id);
+      {hasMoreItemsToShow && (
+        <div className="absolute top-0 right-0">
+          <button
+            className="flex items-center gap-1 rounded-b-md bg-green-100 px-2 py-1 text-[10px] leading-none font-medium text-green-600"
+            disabled={isBulkUpdating}
+            onClick={() => {
+              const done = updateUserProgress
+                .filter((item) => item.action === 'done')
+                .map((item) => item.id);
+              const learning = updateUserProgress
+                .filter((item) => item.action === 'learning')
+                .map((item) => item.id);
+              const skipped = updateUserProgress
+                .filter((item) => item.action === 'skipped')
+                .map((item) => item.id);
+              const pending = updateUserProgress
+                .filter((item) => item.action === 'pending')
+                .map((item) => item.id);
 
-            bulkUpdateResourceProgress({
-              done,
-              learning,
-              skipped,
-              pending,
-            });
-          }}
-        >
-          {isBulkUpdating && <Loader2Icon className="size-2.5 animate-spin" />}
-          {!isBulkUpdating && <CheckIcon additionalClasses="size-2.5" />}
-          Apply All
-        </button>
-      </div>
+              bulkUpdateResourceProgress({
+                done,
+                learning,
+                skipped,
+                pending,
+              });
+            }}
+          >
+            {isBulkUpdating && (
+              <Loader2Icon className="size-2.5 animate-spin" />
+            )}
+            {!isBulkUpdating && <CheckIcon additionalClasses="size-2.5" />}
+            Apply All
+          </button>
+        </div>
+      )}
     </div>
   );
 }

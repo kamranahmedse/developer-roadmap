@@ -2,8 +2,9 @@ import type { FormEvent } from 'react';
 import { useId, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import {
-  COURSE_PURCHASE_PARAM, FIRST_LOGIN_PARAM,
-  setAuthToken
+  COURSE_PURCHASE_PARAM,
+  FIRST_LOGIN_PARAM,
+  setAuthToken,
 } from '../../lib/jwt';
 
 type EmailLoginFormProps = {
