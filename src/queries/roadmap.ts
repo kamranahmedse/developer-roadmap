@@ -2,15 +2,25 @@ import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
 import { type Node, type Edge, renderFlowJSON } from '@roadmapsh/editor';
 
+type RoadmapJSON = {
+  _id: string;
+  title: string;
+  description: string;
+  slug: string;
+  nodes: Node[];
+  edges: Edge[];
+  createdAt: string;
+  updatedAt: string;
+};
+
 export function roadmapJSONOptions(roadmapId: string) {
   return queryOptions({
     queryKey: ['roadmap-json', roadmapId],
     queryFn: async () => {
       const baseUrl = import.meta.env.PUBLIC_APP_URL;
-      const roadmapJSON = await httpGet<{
-        nodes: Node[];
-        edges: Edge[];
-      }>(`${baseUrl}/${roadmapId}.json`);
+      const roadmapJSON = await httpGet<RoadmapJSON>(
+        `${baseUrl}/${roadmapId}.json`,
+      );
 
       const svg = await renderFlowJSON(roadmapJSON);
 

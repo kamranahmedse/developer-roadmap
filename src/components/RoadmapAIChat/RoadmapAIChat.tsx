@@ -2,8 +2,7 @@ import './RoadmapAIChat.css';
 
 import { useQuery } from '@tanstack/react-query';
 import {
-  roadmapDetailsOptions,
-  roadmapJSONOptions,
+  roadmapJSONOptions
 } from '../../queries/roadmap';
 import { queryClient } from '../../stores/query-client';
 import {
@@ -14,7 +13,7 @@ import {
   useRef,
   useState,
 } from 'react';
-import { BotIcon, Loader2Icon, PauseCircleIcon, SendIcon } from 'lucide-react';
+import { BotIcon, Frown, Loader2Icon, PauseCircleIcon, SendIcon } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { type AllowedAIChatRole } from '../GenerateCourse/AICourseLessonChat';
@@ -72,12 +71,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const [streamedMessage, setStreamedMessage] =
     useState<React.ReactNode | null>(null);
 
-  const { data: roadmapDetailsData } = useQuery(
-    roadmapDetailsOptions(roadmapId),
-    queryClient,
-  );
-
-  const { data: roadmapJSONData } = useQuery(
+  const { data: roadmapDetail, error: roadmapDetailError } = useQuery(
     roadmapJSONOptions(roadmapId),
     queryClient,
   );
@@ -94,20 +88,20 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!roadmapJSONData || !roadmapContainerRef.current) {
+    if (!roadmapDetail || !roadmapContainerRef.current) {
       return;
     }
 
-    roadmapContainerRef.current.replaceChildren(roadmapJSONData.svg);
-  }, [roadmapJSONData]);
+    roadmapContainerRef.current.replaceChildren(roadmapDetail.svg);
+  }, [roadmapDetail]);
 
   useEffect(() => {
-    if (!roadmapTreeData || !roadmapJSONData || !roadmapDetailsData) {
+    if (!roadmapTreeData || !roadmapDetail) {
       return;
     }
 
     setIsLoading(false);
-  }, [roadmapTreeData, roadmapJSONData, roadmapDetailsData]);
+  }, [roadmapTreeData, roadmapDetail]);
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const handleChatSubmit = (json: JSONContent) => {
@@ -282,6 +276,18 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     scrollToBottom();
   }, []);
 
+  if (roadmapDetailError) {
+    return (
+      <div className="flex flex-grow flex-col items-center justify-center">
+        <Frown className="mb-4 size-16" />
+        <h1 className="mb-2 text-2xl font-bold">There was an error</h1>
+        <p className="max-w-sm text-balance text-gray-500">
+          {roadmapDetailError.message}
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-grow flex-row">
       <div className="relative h-full flex-grow overflow-y-scroll">
@@ -290,13 +296,15 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
           </div>
         )}
-        {roadmapJSONData?.json && !isLoading && (
-          <div className="mx-auto max-w-[968px] px-4">
-            <ChatRoadmapRenderer
-              roadmapId={roadmapId}
-              nodes={roadmapJSONData?.json.nodes}
-              edges={roadmapJSONData?.json.edges}
-            />
+        {roadmapDetail?.json && !isLoading && (
+          <div>
+            <div className="mx-auto max-w-[968px] px-4">
+              <ChatRoadmapRenderer
+                roadmapId={roadmapId}
+                nodes={roadmapDetail?.json.nodes}
+                edges={roadmapDetail?.json.edges}
+              />
+            </div>
           </div>
         )}
       </div>
