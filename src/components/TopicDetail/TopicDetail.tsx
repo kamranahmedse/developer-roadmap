@@ -93,6 +93,7 @@ type TopicDetailProps = {
 
   wrapperClassName?: string;
   overlayClassName?: string;
+  closeButtonClassName?: string;
   onClose?: () => void;
   shouldCloseOnBackdropClick?: boolean;
   shouldCloseOnEscape?: boolean;
@@ -106,6 +107,7 @@ export function TopicDetail(props: TopicDetailProps) {
     renderer = 'balsamiq',
     wrapperClassName,
     overlayClassName,
+    closeButtonClassName,
     onClose,
     shouldCloseOnBackdropClick = true,
     shouldCloseOnEscape = true,
@@ -449,7 +451,10 @@ export function TopicDetail(props: TopicDetailProps) {
                   <button
                     type="button"
                     id="close-topic"
-                    className="flex items-center gap-1.5 rounded-lg bg-gray-200 px-1.5 py-1 text-xs text-black hover:bg-gray-300 hover:text-gray-900"
+                    className={cn(
+                      'flex items-center gap-1.5 rounded-lg bg-gray-200 px-1.5 py-1 text-xs text-black hover:bg-gray-300 hover:text-gray-900',
+                      closeButtonClassName,
+                    )}
                     onClick={handleClose}
                   >
                     <X className="size-4" />

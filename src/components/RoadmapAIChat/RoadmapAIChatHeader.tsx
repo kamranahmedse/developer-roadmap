@@ -3,12 +3,16 @@ import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { isLoggedIn } from '../../lib/jwt';
-import { BotIcon, GiftIcon, Trash2Icon } from 'lucide-react';
-import type { RoamdapAIChatHistoryType } from './RoadmapAIChat';
+import { BookIcon, BotIcon, GiftIcon, Trash2Icon, XIcon } from 'lucide-react';
+import type {
+  RoadmapAIChatTab,
+  RoamdapAIChatHistoryType,
+} from './RoadmapAIChat';
 import { useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { getPercentage } from '../../lib/number';
 import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
+import { cn } from '../../lib/classname';
 
 type RoadmapAIChatHeaderProps = {
   isLoading: boolean;
@@ -18,6 +22,11 @@ type RoadmapAIChatHeaderProps = {
 
   onLogin: () => void;
   onUpgrade: () => void;
+
+  activeTab: RoadmapAIChatTab;
+  onTabChange: (tab: RoadmapAIChatTab) => void;
+  onCloseTopic: () => void;
+  selectedTopicId: string | null;
 };
 
 export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
@@ -27,6 +36,11 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
     onLogin,
     onUpgrade,
     isLoading: isDataLoading,
+
+    activeTab,
+    onTabChange,
+    onCloseTopic,
+    selectedTopicId,
   } = props;
 
   const toast = useToast();
@@ -58,11 +72,43 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
         />
       )}
 
-      <div className="flex min-h-[46px] items-center justify-between gap-2 border-b border-gray-200 px-3 py-2 text-sm">
-        <span className="flex items-center gap-2 text-sm">
-          <BotIcon className="size-4 shrink-0 text-black" />
-          <span>AI Chat</span>
-        </span>
+      <div className="flex h-[46px] items-center justify-between gap-2 border-b border-gray-200 text-sm">
+        <div className="flex items-center">
+          <button
+            className={cn(
+              'flex items-center gap-2 px-2 py-3 text-sm',
+              activeTab === 'chat' && selectedTopicId && 'bg-gray-100',
+            )}
+            onClick={() => onTabChange('chat')}
+          >
+            <BotIcon className="size-4 shrink-0 text-black" />
+            <span>AI Chat</span>
+          </button>
+
+          {(activeTab === 'topic' || selectedTopicId) && (
+            <div
+              className={cn(
+                'flex items-center gap-1.5 border-l border-gray-200 px-2 py-3 text-sm',
+                activeTab === 'topic' && selectedTopicId && 'bg-gray-100',
+              )}
+            >
+              <button
+                className="flex items-center gap-2"
+                onClick={() => onTabChange('topic')}
+              >
+                <BookIcon className="size-4 shrink-0 text-black" />
+                <span>Topic Details</span>
+              </button>
+
+              <button
+                className="ml-auto rounded-lg p-1 text-gray-500 hover:bg-gray-200"
+                onClick={onCloseTopic}
+              >
+                <XIcon className="size-4 shrink-0" strokeWidth={2.5} />
+              </button>
+            </div>
+          )}
+        </div>
 
         {!isDataLoading && (
           <div className="flex gap-1.5">

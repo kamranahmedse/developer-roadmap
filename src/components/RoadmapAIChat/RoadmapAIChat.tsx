@@ -65,6 +65,8 @@ export type RoamdapAIChatHistoryType = {
   jsx?: React.ReactNode;
 };
 
+export type RoadmapAIChatTab = 'chat' | 'topic';
+
 type RoadmapAIChatProps = {
   roadmapId: string;
 };
@@ -82,6 +84,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const [selectedTopicTitle, setSelectedTopicTitle] = useState<string | null>(
     null,
   );
+  const [activeTab, setActiveTab] = useState<RoadmapAIChatTab>('chat');
 
   const [aiChatHistory, setAiChatHistory] = useState<
     RoamdapAIChatHistoryType[]
@@ -178,6 +181,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
       flushSync(() => {
         setSelectedTopicId(topicId);
         setSelectedTopicTitle(topicTitle);
+        setActiveTab('topic');
       });
 
       const topicWithSlug = slugify(topicTitle) + '@' + topicId;
@@ -389,52 +393,55 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
       </div>
 
       <div className="relative flex h-full max-w-[40%] flex-grow flex-col border-l border-gray-200 bg-white">
-        {selectedTopicId && (
-          <>
-            <TopicDetail
-              resourceId={selectedTopicId}
-              resourceType="roadmap"
-              renderer="editor"
-              canSubmitContribution={false}
-              wrapperClassName="static mx-auto sm:pt-14 pt-14"
-              overlayClassName="hidden"
-              onClose={() => setSelectedTopicId(null)}
-              shouldCloseOnBackdropClick={false}
-              shouldCloseOnEscape={false}
-            />
-            <div className="absolute top-0 left-0 z-99 flex w-full items-center justify-between gap-2 bg-gray-100 p-1">
-              <div className="flex items-center gap-2 px-4 py-2 text-sm">
-                AI Tutor{' '}
-                <ChevronRightIcon className="size-4 shrink-0 stroke-[2.5] text-gray-500" />{' '}
-                {selectedTopicTitle}
-              </div>
-              <button
-                className="flex cursor-pointer items-center gap-2 rounded-lg p-2 text-black hover:bg-gray-200"
-                onClick={() => setSelectedTopicId(null)}
-              >
-                <XIcon className="size-3 shrink-0" strokeWidth={2.5} />
-              </button>
-            </div>
-          </>
+        <RoadmapAIChatHeader
+          isLoading={isDataLoading}
+          hasChatHistory={hasChatHistory}
+          setAiChatHistory={setAiChatHistory}
+          onLogin={() => {
+            showLoginPopup();
+          }}
+          onUpgrade={() => {
+            setShowUpgradeModal(true);
+          }}
+          activeTab={activeTab}
+          onTabChange={(tab) => {
+            setActiveTab(tab);
+            if (tab === 'topic' && selectedTopicId && selectedTopicTitle) {
+              handleSelectTopic(selectedTopicId, selectedTopicTitle);
+            }
+          }}
+          onCloseTopic={() => {
+            setSelectedTopicId(null);
+            setSelectedTopicTitle(null);
+            setActiveTab('chat');
+          }}
+          selectedTopicId={selectedTopicId}
+        />
+
+        {activeTab === 'topic' && selectedTopicId && (
+          <TopicDetail
+            resourceId={selectedTopicId}
+            resourceType="roadmap"
+            renderer="editor"
+            canSubmitContribution={false}
+            wrapperClassName="static mx-auto h-auto grow"
+            overlayClassName="hidden"
+            closeButtonClassName="hidden"
+            onClose={() => {
+              setSelectedTopicId(null);
+              setSelectedTopicTitle(null);
+              setActiveTab('chat');
+            }}
+            shouldCloseOnBackdropClick={false}
+            shouldCloseOnEscape={false}
+          />
         )}
 
-        {!selectedTopicId && (
+        {activeTab === 'chat' && (
           <>
             {showUpgradeModal && (
               <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
             )}
-
-            <RoadmapAIChatHeader
-              isLoading={isDataLoading}
-              hasChatHistory={hasChatHistory}
-              setAiChatHistory={setAiChatHistory}
-              onLogin={() => {
-                showLoginPopup();
-              }}
-              onUpgrade={() => {
-                setShowUpgradeModal(true);
-              }}
-            />
 
             <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
               {isLoading && (
