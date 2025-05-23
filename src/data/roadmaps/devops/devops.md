@@ -10,7 +10,7 @@ description: 'Step by step guide for DevOps, SRE or any other Operations Role in
 hasTopics: true
 isForkable: false
 partner:
-  description: "Get the latest Frontend news from our sister site"
+  description: "Get the latest DevOps news from our sister site"
   link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
   linkText: "TheNewStack.io"
 question:
