@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Making requests](https://angular.dev/guide/http/making-requests)
+- [@official@Making Requests](https://angular.dev/guide/http/making-requests)
 - [@video@How to make HTTP request in Angular 18](https://www.youtube.com/watch?v=3vQpYKlHmS0)

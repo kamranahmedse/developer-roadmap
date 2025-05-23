@@ -4,4 +4,5 @@ Use the Angular CLI and the npm package manager to build and publish your librar
 
 Visit the following resources to learn more:
 
-- [@official@Angular Website](https://angular.dev/tools/libraries/creating-libraries)
+- [@official@Libraries](https://angular.dev/tools/libraries/creating-libraries)
+- [@official@Angular CLI](https://angular.dev/tools/cli)

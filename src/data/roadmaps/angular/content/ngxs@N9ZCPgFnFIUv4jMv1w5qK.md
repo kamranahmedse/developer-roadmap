@@ -4,6 +4,6 @@ Ngxs is a state management pattern for the Angular framework. It acts as a singl
 
 Visit the following resources to learn more:
 
-- [@official@What is NGXS ? - Ngxs.io ](https://www.ngxs.io/)
-- [@article@Details about NGXS - Medium ](https://medium.com/@knoldus/introduction-to-ngxs-state-management-pattern-library-for-angular-ec76f681ceba)
-- [@video@Practise of NGXS](https://www.youtube.com/watch?v=SGj11j4hxmg)
+- [@official@What is NGXS?](https://www.ngxs.io/)
+- [@article@Details about NGXS](https://medium.com/@knoldus/introduction-to-ngxs-state-management-pattern-library-for-angular-ec76f681ceba)
+- [@video@Practice of NGXS](https://www.youtube.com/watch?v=SGj11j4hxmg)

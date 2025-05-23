@@ -1,4 +1,4 @@
-# Builtin directives
+# Built-in directives
 
 SKDirectives are classes that add additional behavior to elements in your Angular applications. Use Angular's built-in directives to manage forms, lists, styles, and what users see.
 

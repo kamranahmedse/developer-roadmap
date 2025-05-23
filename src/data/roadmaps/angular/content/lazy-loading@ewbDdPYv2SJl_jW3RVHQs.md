@@ -4,5 +4,5 @@ Lazy loading is a technique in Angular that allows you to load JavaScript compon
 
 Visit the following resources to learn more:
 
-- [@official@Lazy-loading feature modules](https://angular.dev/guide/ngmodules/lazy-loading)
+- [@official@Lazy-loading Feature Modules](https://angular.dev/guide/ngmodules/lazy-loading)
 - [@video@Angular Tutorial - Lazy Loading](https://www.youtube.com/watch?v=JjIQq9lh-Bw)
