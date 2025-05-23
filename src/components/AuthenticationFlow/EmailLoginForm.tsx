@@ -66,7 +66,11 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
   const passwordFieldId = `form:${useId()}`;
 
   return (
-    <form className="w-full" onSubmit={handleFormSubmit}>
+    <form
+      className="w-full"
+      onSubmit={handleFormSubmit}
+      suppressHydrationWarning={true} // Hubspot adds data-* attributes which causes hydration errors
+    >
       <label htmlFor={emailFieldId} className="sr-only">
         Email address
       </label>
