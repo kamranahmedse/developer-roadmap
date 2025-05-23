@@ -30,7 +30,26 @@ export async function parseMessageParts(
 ) {
   const parts: MessagePart[] = [];
   const tagNames = Object.keys(renderer);
-  
+
+  // Remove codeblocks around custom tags
+  if (tagNames.length > 0) {
+    const tagPattern = tagNames.join('|');
+
+    // Remove opening codeblock before tags: ```lang\n<tag> -> <tag>
+    // It sometimes puts codeblocks around our tags (despite us asking it not to)
+    // so we manually remove them here
+    content = content.replace(
+      new RegExp(`\`\`\`\\w*?\\n+?<(${tagPattern})>`, 'g'),
+      '<$1>',
+    );
+
+    // Remove closing codeblock after tags: </tag>\n```  -> </tag>
+    content = content.replace(
+      new RegExp(`<\\/(${tagPattern})>\\n+?\`\`\``, 'g'),
+      '</$1>',
+    );
+  }
+
   // If no renderers, just return the content as markdown
   if (tagNames.length === 0) {
     const html = await markdownToHtmlWithHighlighting(content);
