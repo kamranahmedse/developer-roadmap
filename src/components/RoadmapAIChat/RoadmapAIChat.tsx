@@ -12,13 +12,11 @@ import {
   useState,
 } from 'react';
 import {
-  BotIcon,
   Frown,
   Loader2Icon,
   LockIcon,
   PauseCircleIcon,
-  SendIcon,
-  Trash2Icon,
+  SendIcon
 } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
@@ -453,13 +451,6 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
               >
                 Login / Register
               </button>
-            </div>
-          )}
-
-          {isDataLoading && (
-            <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
-              <Loader2Icon className="size-4 animate-spin" />
-              <p>Loading...</p>
             </div>
           )}
 

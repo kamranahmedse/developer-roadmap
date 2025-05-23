@@ -6,7 +6,7 @@
   pointer-events: none;
 }
 
-.chat-editor .tiptap p.is-empty::before {
+.chat-editor .tiptap p:first-child.is-empty::before {
   color: #adb5bd;
   content: attr(data-placeholder);
   float: left;

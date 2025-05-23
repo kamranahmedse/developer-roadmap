@@ -45,6 +45,7 @@ export function ChatEditor(props: ChatEditorProps) {
     roadmapTreeMappingOptions(roadmapId),
     queryClient,
   );
+
   const { data: roadmapDetailsData } = useQuery(
     roadmapDetailsOptions(roadmapId),
     queryClient,
@@ -114,7 +115,7 @@ export function ChatEditor(props: ChatEditorProps) {
   }, [editor, roadmapTreeData, roadmapDetailsData]);
 
   return (
-    <div className="chat-editor w-full">
+    <div className="chat-editor w-full px-2 py-1.5">
       <EditorContent editor={editor} />
     </div>
   );

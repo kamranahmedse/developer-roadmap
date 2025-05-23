@@ -2,9 +2,16 @@ import { ReactRenderer } from '@tiptap/react';
 import type { SuggestionOptions } from '@tiptap/suggestion';
 import tippy, { type GetReferenceClientRect } from 'tippy.js';
 
-import { forwardRef, useEffect, useImperativeHandle, useState } from 'react';
+import {
+  forwardRef,
+  Fragment,
+  useEffect,
+  useImperativeHandle,
+  useState,
+} from 'react';
 import { cn } from '../../../lib/classname';
 import type { VariableStorage, VariableType } from './VariableExtension';
+import { ChevronRight } from 'lucide-react';
 
 export type VariableListProps = {
   command: (variable: VariableType) => void;
@@ -53,21 +60,42 @@ export const VariableList = forwardRef((props: VariableListProps, ref) => {
   return (
     <div
       id="variable-suggestion-list"
-      className="flex max-w-[260px] flex-col gap-0.5 overflow-auto rounded-lg border border-gray-200 bg-white p-1 shadow-sm"
+      className="flex max-w-[300px] flex-col gap-0.5 overflow-auto rounded-lg border border-gray-200 bg-white p-1 shadow-sm"
     >
       {items.length ? (
-        items.map((item, index) => (
-          <button
-            className={cn(
-              'truncate rounded-md p-1 px-1.5 text-left text-sm hover:bg-gray-100',
-              index === selectedIndex && 'bg-gray-100',
-            )}
-            key={index}
-            onClick={() => selectItem(index)}
-          >
-            {item?.label}
-          </button>
-        ))
+        items.map((item, index) => {
+          const labelParts = item?.label.split('>');
+
+          return (
+            <button
+              className={cn(
+                'flex items-center gap-1 truncate rounded-md p-1 px-1.5 text-left text-sm hover:bg-gray-100',
+                index === selectedIndex && 'bg-gray-100',
+              )}
+              key={index}
+              onClick={() => selectItem(index)}
+            >
+              {labelParts.map((labelPart, counter) => {
+                const isLast = counter === labelParts.length - 1;
+                return (
+                  <Fragment key={counter}>
+                    <span
+                      className={cn({
+                        'text-gray-400': !isLast,
+                        'text-gray-900': isLast,
+                      })}
+                    >
+                      {labelPart.trim()}
+                    </span>
+                    {!isLast && (
+                      <ChevronRight className="inline size-3 flex-shrink-0 stroke-[1.5] text-gray-400" />
+                    )}
+                  </Fragment>
+                );
+              })}
+            </button>
+          );
+        })
       ) : (
         <div className="rounded-md p-1 px-1.5 text-left text-sm">No result</div>
       )}
