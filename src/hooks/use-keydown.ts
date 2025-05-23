@@ -7,14 +7,14 @@ export function useKeydown(keyName: string, callback: any, deps: any[] = []) {
         !keyName.startsWith('mod_') &&
         event.key.toLowerCase() === keyName.toLowerCase()
       ) {
-        callback(event);
+        callback?.(event);
       } else if (
         keyName.startsWith('mod_') &&
         event.metaKey &&
         event.key.toLowerCase() === keyName.replace('mod_', '').toLowerCase()
       ) {
         event.preventDefault();
-        callback(event);
+        callback?.(event);
       }
     };
 

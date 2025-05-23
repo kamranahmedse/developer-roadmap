@@ -12,11 +12,15 @@ import {
   useState,
 } from 'react';
 import {
+  BotIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
   Frown,
   Loader2Icon,
   LockIcon,
   PauseCircleIcon,
   SendIcon,
+  XIcon,
 } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
@@ -43,6 +47,8 @@ import { RoadmapAIChatHeader } from './RoadmapAIChatHeader';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { billingDetailsOptions } from '../../queries/billing';
+import { TopicDetail } from '../TopicDetail/TopicDetail';
+import { slugify } from '../../lib/slugger';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -72,6 +78,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
+  const [selectedTopicTitle, setSelectedTopicTitle] = useState<string | null>(
+    null,
+  );
 
   const [aiChatHistory, setAiChatHistory] = useState<
     RoamdapAIChatHistoryType[]
@@ -163,6 +173,28 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     });
   }, [scrollareaRef]);
 
+  const handleSelectTopic = useCallback(
+    (topicId: string, topicTitle: string) => {
+      flushSync(() => {
+        setSelectedTopicId(topicId);
+        setSelectedTopicTitle(topicTitle);
+      });
+
+      const topicWithSlug = slugify(topicTitle) + '@' + topicId;
+      window.dispatchEvent(
+        new CustomEvent('roadmap.node.click', {
+          detail: {
+            resourceType: 'roadmap',
+            resourceId: roadmapId,
+            topicId: topicWithSlug,
+            isCustomResource: false,
+          },
+        }),
+      );
+    },
+    [roadmapId],
+  );
+
   const renderer: Record<string, MessagePartRenderer> = useMemo(() => {
     return {
       'user-progress': () => {
@@ -172,7 +204,20 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         return <UserProgressActionList roadmapId={roadmapId} {...options} />;
       },
       'roadmap-topics': (options) => {
-        return <RoadmapTopicList roadmapId={roadmapId} {...options} />;
+        return (
+          <RoadmapTopicList
+            roadmapId={roadmapId}
+            onTopicClick={(topicId, text) => {
+              const title = text.split(' > ').pop();
+              if (!title) {
+                return;
+              }
+
+              handleSelectTopic(topicId, title);
+            }}
+            {...options}
+          />
+        );
       },
       'resource-progress-link': () => {
         return <ShareResourceLink roadmapId={roadmapId} />;
@@ -181,7 +226,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         return <RoadmapRecommendations roadmapId={roadmapId} {...options} />;
       },
     };
-  }, [roadmapId]);
+  }, [roadmapId, handleSelectTopic]);
 
   const completeAITutorChat = async (
     messages: RoamdapAIChatHistoryType[],
@@ -336,149 +381,191 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                 roadmapId={roadmapId}
                 nodes={roadmapDetail?.json.nodes}
                 edges={roadmapDetail?.json.edges}
+                onSelectTopic={handleSelectTopic}
               />
             </div>
           </div>
         )}
       </div>
 
-      <div className="flex h-full max-w-[40%] flex-grow flex-col border-l border-gray-200 bg-white">
-        {showUpgradeModal && (
-          <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+      <div className="relative flex h-full max-w-[40%] flex-grow flex-col border-l border-gray-200 bg-white">
+        {selectedTopicId && (
+          <>
+            <TopicDetail
+              resourceId={selectedTopicId}
+              resourceType="roadmap"
+              renderer="editor"
+              canSubmitContribution={false}
+              wrapperClassName="static mx-auto sm:pt-14 pt-14"
+              overlayClassName="hidden"
+              onClose={() => setSelectedTopicId(null)}
+              shouldCloseOnBackdropClick={false}
+              shouldCloseOnEscape={false}
+            />
+            <div className="absolute top-0 left-0 z-99 flex w-full items-center justify-between gap-2 bg-gray-100">
+              <div className="flex items-center gap-2 px-4 py-2 text-sm">
+                AI Tutor{' '}
+                <ChevronRightIcon className="size-4 shrink-0 stroke-[2.5] text-gray-500" />{' '}
+                {selectedTopicTitle}
+              </div>
+              <button
+                className="flex cursor-pointer items-center gap-2 rounded-lg p-2 text-black hover:bg-gray-200"
+                onClick={() => setSelectedTopicId(null)}
+              >
+                <XIcon className="size-4 shrink-0" strokeWidth={2.5} />
+              </button>
+            </div>
+          </>
         )}
 
-        <RoadmapAIChatHeader
-          isLoading={isDataLoading}
-          hasChatHistory={hasChatHistory}
-          setAiChatHistory={setAiChatHistory}
-          onLogin={() => {
-            showLoginPopup();
-          }}
-          onUpgrade={() => {
-            setShowUpgradeModal(true);
-          }}
-        />
+        {!selectedTopicId && (
+          <>
+            {showUpgradeModal && (
+              <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+            )}
 
-        <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
-          {isLoading && (
-            <div className="absolute inset-0 flex h-full w-full items-center justify-center">
-              <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white p-1.5 px-3 text-sm text-gray-500">
-                <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
-                <span>Loading Roadmap</span>
-              </div>
-            </div>
-          )}
-
-          {!isLoading && (
-            <div className="absolute inset-0 flex flex-col">
-              <div className="relative flex grow flex-col justify-end">
-                <div className="flex flex-col justify-end gap-2 px-3 py-2">
-                  {aiChatHistory.map((chat, index) => {
-                    return (
-                      <Fragment key={`chat-${index}`}>
-                        <RoadmapAIChatCard {...chat} />
-                      </Fragment>
-                    );
-                  })}
-
-                  {isStreamingMessage && !streamedMessage && (
-                    <RoadmapAIChatCard role="assistant" html="Thinking..." />
-                  )}
-
-                  {streamedMessage && (
-                    <RoadmapAIChatCard role="assistant" jsx={streamedMessage} />
-                  )}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {!isLoading && (
-          <div className="relative flex items-start border-t border-gray-200 text-sm">
-            <ChatEditor
-              editorRef={editorRef}
-              roadmapId={roadmapId}
-              onSubmit={(content) => {
-                if (
-                  isStreamingMessage ||
-                  abortControllerRef.current ||
-                  !isLoggedIn() ||
-                  isDataLoading ||
-                  isEmptyContent(content)
-                ) {
-                  return;
-                }
-
-                handleChatSubmit(content);
+            <RoadmapAIChatHeader
+              isLoading={isDataLoading}
+              hasChatHistory={hasChatHistory}
+              setAiChatHistory={setAiChatHistory}
+              onLogin={() => {
+                showLoginPopup();
+              }}
+              onUpgrade={() => {
+                setShowUpgradeModal(true);
               }}
             />
 
-            {isLimitExceeded && isLoggedIn() && (
-              <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
-                <LockIcon
-                  className="size-4 cursor-not-allowed"
-                  strokeWidth={2.5}
-                />
-                <p className="cursor-not-allowed">
-                  Limit reached for today
-                  {isPaidUser ? '. Please wait until tomorrow.' : ''}
-                </p>
-                {!isPaidUser && (
-                  <button
-                    onClick={() => {
-                      setShowUpgradeModal(true);
-                    }}
-                    className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
-                  >
-                    Upgrade for more
-                  </button>
-                )}
-              </div>
-            )}
+            <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
+              {isLoading && (
+                <div className="absolute inset-0 flex h-full w-full items-center justify-center">
+                  <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white p-1.5 px-3 text-sm text-gray-500">
+                    <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
+                    <span>Loading Roadmap</span>
+                  </div>
+                </div>
+              )}
 
-            {!isLoggedIn() && (
-              <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
-                <LockIcon
-                  className="size-4 cursor-not-allowed"
-                  strokeWidth={2.5}
-                />
-                <p className="cursor-not-allowed">Please login to continue</p>
-                <button
-                  onClick={() => {
-                    showLoginPopup();
+              {!isLoading && (
+                <div className="absolute inset-0 flex flex-col">
+                  <div className="relative flex grow flex-col justify-end">
+                    <div className="flex flex-col justify-end gap-2 px-3 py-2">
+                      {aiChatHistory.map((chat, index) => {
+                        return (
+                          <Fragment key={`chat-${index}`}>
+                            <RoadmapAIChatCard {...chat} />
+                          </Fragment>
+                        );
+                      })}
+
+                      {isStreamingMessage && !streamedMessage && (
+                        <RoadmapAIChatCard
+                          role="assistant"
+                          html="Thinking..."
+                        />
+                      )}
+
+                      {streamedMessage && (
+                        <RoadmapAIChatCard
+                          role="assistant"
+                          jsx={streamedMessage}
+                        />
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {!isLoading && (
+              <div className="relative flex items-start border-t border-gray-200 text-sm">
+                <ChatEditor
+                  editorRef={editorRef}
+                  roadmapId={roadmapId}
+                  onSubmit={(content) => {
+                    if (
+                      isStreamingMessage ||
+                      abortControllerRef.current ||
+                      !isLoggedIn() ||
+                      isDataLoading ||
+                      isEmptyContent(content)
+                    ) {
+                      return;
+                    }
+
+                    handleChatSubmit(content);
                   }}
-                  className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                />
+
+                {isLimitExceeded && isLoggedIn() && (
+                  <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+                    <LockIcon
+                      className="size-4 cursor-not-allowed"
+                      strokeWidth={2.5}
+                    />
+                    <p className="cursor-not-allowed">
+                      Limit reached for today
+                      {isPaidUser ? '. Please wait until tomorrow.' : ''}
+                    </p>
+                    {!isPaidUser && (
+                      <button
+                        onClick={() => {
+                          setShowUpgradeModal(true);
+                        }}
+                        className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                      >
+                        Upgrade for more
+                      </button>
+                    )}
+                  </div>
+                )}
+
+                {!isLoggedIn() && (
+                  <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+                    <LockIcon
+                      className="size-4 cursor-not-allowed"
+                      strokeWidth={2.5}
+                    />
+                    <p className="cursor-not-allowed">
+                      Please login to continue
+                    </p>
+                    <button
+                      onClick={() => {
+                        showLoginPopup();
+                      }}
+                      className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                    >
+                      Login / Register
+                    </button>
+                  </div>
+                )}
+
+                <button
+                  className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
+                  onClick={(e) => {
+                    if (isStreamingMessage || abortControllerRef.current) {
+                      handleAbort();
+                      return;
+                    }
+
+                    const json = editorRef.current?.getJSON();
+                    if (!json || isEmptyContent(json)) {
+                      toast.error('Please enter a message');
+                      return;
+                    }
+
+                    handleChatSubmit(json);
+                  }}
                 >
-                  Login / Register
+                  {isStreamingMessage ? (
+                    <PauseCircleIcon className="size-4 stroke-[2.5]" />
+                  ) : (
+                    <SendIcon className="size-4 stroke-[2.5]" />
+                  )}
                 </button>
               </div>
             )}
-
-            <button
-              className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
-              onClick={(e) => {
-                if (isStreamingMessage || abortControllerRef.current) {
-                  handleAbort();
-                  return;
-                }
-
-                const json = editorRef.current?.getJSON();
-                if (!json || isEmptyContent(json)) {
-                  toast.error('Please enter a message');
-                  return;
-                }
-
-                handleChatSubmit(json);
-              }}
-            >
-              {isStreamingMessage ? (
-                <PauseCircleIcon className="size-4 stroke-[2.5]" />
-              ) : (
-                <SendIcon className="size-4 stroke-[2.5]" />
-              )}
-            </button>
-          </div>
+          </>
         )}
       </div>
     </div>

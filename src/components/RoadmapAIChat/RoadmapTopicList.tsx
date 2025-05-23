@@ -35,13 +35,13 @@ function parseTopicList(content: string): TopicListType[] {
 type RoadmapTopicListProps = {
   roadmapId: string;
   content: string;
+  onTopicClick?: (topicId: string, topicTitle: string) => void;
 };
 
 export function RoadmapTopicList(props: RoadmapTopicListProps) {
-  const { roadmapId, content } = props;
+  const { roadmapId, content, onTopicClick } = props;
 
   const topicListItems = parseTopicList(content);
-  const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
 
   const { data: roadmapTreeData } = useQuery(
     roadmapTreeMappingOptions(roadmapId),
@@ -65,26 +65,18 @@ export function RoadmapTopicList(props: RoadmapTopicListProps) {
   }, [topicListItems, roadmapTreeData]);
 
   return (
-    <>
-      {selectedTopicId && (
-        <TopicResourcesModal
-          roadmapId={roadmapId}
-          topicId={selectedTopicId}
-          onClose={() => setSelectedTopicId(null)}
-        />
-      )}
-
-      <div className="relative my-6 flex flex-wrap gap-1 first:mt-0 last:mb-0">
-        {progressItemWithText.map((item) => (
-          <button
-            key={item.topicId}
-            className="rounded-lg border border-gray-200 bg-white p-1 px-1.5 text-left text-sm"
-            onClick={() => setSelectedTopicId(item.topicId)}
-          >
-            {item.text}
-          </button>
-        ))}
-      </div>
-    </>
+    <div className="relative my-6 flex flex-wrap gap-1 first:mt-0 last:mb-0">
+      {progressItemWithText.map((item) => (
+        <button
+          key={item.topicId}
+          className="rounded-lg border border-gray-200 bg-white p-1 px-1.5 text-left text-sm"
+          onClick={() => {
+            onTopicClick?.(item.topicId, item.text);
+          }}
+        >
+          {item.text}
+        </button>
+      ))}
+    </div>
   );
 }

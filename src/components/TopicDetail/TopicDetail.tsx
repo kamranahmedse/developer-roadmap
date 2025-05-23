@@ -44,16 +44,6 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
 import { TopicProgressButton } from './TopicProgressButton.tsx';
 import { CreateCourseModal } from './CreateCourseModal.tsx';
 
-type TopicDetailProps = {
-  resourceId?: string;
-  resourceTitle?: string;
-  resourceType?: ResourceType;
-  renderer?: AllowedRoadmapRenderer;
-
-  isEmbed?: boolean;
-  canSubmitContribution: boolean;
-};
-
 type PaidResourceType = {
   _id?: string;
   title: string;
@@ -93,13 +83,32 @@ async function fetchRoadmapPaidResources(roadmapId: string) {
 
 const PAID_RESOURCE_DISCLAIMER_HIDDEN = 'paid-resource-disclaimer-hidden';
 
+type TopicDetailProps = {
+  resourceId?: string;
+  resourceType?: ResourceType;
+  renderer?: AllowedRoadmapRenderer;
+
+  isEmbed?: boolean;
+  canSubmitContribution: boolean;
+
+  wrapperClassName?: string;
+  overlayClassName?: string;
+  onClose?: () => void;
+  shouldCloseOnBackdropClick?: boolean;
+  shouldCloseOnEscape?: boolean;
+};
+
 export function TopicDetail(props: TopicDetailProps) {
   const {
     canSubmitContribution,
     resourceId: defaultResourceId,
     isEmbed = false,
     renderer = 'balsamiq',
-    resourceTitle,
+    wrapperClassName,
+    overlayClassName,
+    onClose,
+    shouldCloseOnBackdropClick = true,
+    shouldCloseOnEscape = true,
   } = props;
 
   const [hasEnoughLinks, setHasEnoughLinks] = useState(false);
@@ -138,6 +147,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [paidResources, setPaidResources] = useState<PaidResourceType[]>([]);
 
   const handleClose = () => {
+    onClose?.();
     setIsActive(false);
     setShowUpgradeModal(false);
     setAiChatHistory(defaultChatHistory);
@@ -146,8 +156,11 @@ export function TopicDetail(props: TopicDetailProps) {
   };
 
   // Close the topic detail when user clicks outside the topic detail
-  useOutsideClick(topicRef, handleClose);
-  useKeydown('Escape', handleClose);
+  useOutsideClick(
+    topicRef,
+    shouldCloseOnBackdropClick ? handleClose : undefined,
+  );
+  useKeydown('Escape', shouldCloseOnEscape ? handleClose : undefined);
 
   useEffect(() => {
     if (resourceType !== 'roadmap' || !defaultResourceId) {
@@ -370,11 +383,14 @@ export function TopicDetail(props: TopicDetailProps) {
   const shouldShowAiTab = !isCustomResource && resourceType === 'roadmap';
 
   return (
-    <div className={'relative z-92'}>
+    <div className="relative z-92">
       <div
         ref={topicRef}
         tabIndex={0}
-        className="fixed top-0 right-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
+        className={cn(
+          'fixed top-0 right-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6',
+          wrapperClassName,
+        )}
       >
         {showUpgradeModal && (
           <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
@@ -642,7 +658,9 @@ export function TopicDetail(props: TopicDetailProps) {
           </>
         )}
       </div>
-      <div className="fixed inset-0 z-30 bg-gray-900/50"></div>
+      <div
+        className={cn('fixed inset-0 z-30 bg-gray-900/50', overlayClassName)}
+      ></div>
     </div>
   );
 }

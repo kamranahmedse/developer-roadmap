@@ -61,15 +61,16 @@ export type ChatRoadmapRendererProps = {
   roadmapId: string;
   nodes: Node[];
   edges: Edge[];
+
+  onSelectTopic: (topicId: string, topicTitle: string) => void;
 };
 
 export function ChatRoadmapRenderer(props: ChatRoadmapRendererProps) {
-  const { roadmapId, nodes = [], edges = [] } = props;
+  const { roadmapId, nodes = [], edges = [], onSelectTopic } = props;
   const roadmapRef = useRef<HTMLDivElement>(null);
 
   const toast = useToast();
 
-  const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
   const { data: userResourceProgressData } = useQuery(
     userResourceProgressOptions('roadmap', roadmapId),
     queryClient,
@@ -189,11 +190,11 @@ export function ChatRoadmapRenderer(props: ChatRoadmapRendererProps) {
       return;
     }
 
-    if (!title) {
+    if (!title || !nodeId) {
       return;
     }
 
-    setSelectedTopicId(nodeId);
+    onSelectTopic(nodeId, title);
   }, []);
 
   const handleSvgRightClick = useCallback((e: MouseEvent) => {
@@ -234,39 +235,29 @@ export function ChatRoadmapRenderer(props: ChatRoadmapRendererProps) {
   }, []);
 
   return (
-    <>
-      {selectedTopicId && (
-        <TopicResourcesModal
-          roadmapId={roadmapId}
-          topicId={selectedTopicId}
-          onClose={() => setSelectedTopicId(null)}
-        />
-      )}
+    <Renderer
+      ref={roadmapRef}
+      roadmap={{ nodes, edges }}
+      onRendered={() => {
+        roadmapRef.current?.setAttribute('data-renderer', 'editor');
 
-      <Renderer
-        ref={roadmapRef}
-        roadmap={{ nodes, edges }}
-        onRendered={() => {
-          roadmapRef.current?.setAttribute('data-renderer', 'editor');
+        if (!userResourceProgressData) {
+          return;
+        }
 
-          if (!userResourceProgressData) {
-            return;
-          }
+        const { done, learning, skipped } = userResourceProgressData;
+        done.forEach((topicId) => {
+          renderTopicProgress(topicId, 'done');
+        });
 
-          const { done, learning, skipped } = userResourceProgressData;
-          done.forEach((topicId) => {
-            renderTopicProgress(topicId, 'done');
-          });
+        learning.forEach((topicId) => {
+          renderTopicProgress(topicId, 'learning');
+        });
 
-          learning.forEach((topicId) => {
-            renderTopicProgress(topicId, 'learning');
-          });
-
-          skipped.forEach((topicId) => {
-            renderTopicProgress(topicId, 'skipped');
-          });
-        }}
-      />
-    </>
+        skipped.forEach((topicId) => {
+          renderTopicProgress(topicId, 'skipped');
+        });
+      }}
+    />
   );
 }
