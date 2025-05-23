@@ -29,52 +29,61 @@ export async function parseMessageParts(
   },
 ) {
   const parts: MessagePart[] = [];
-  const regex = /<([a-zA-Z0-9\-]+)>(.*?)<\/\1>/gs;
+  const tagNames = Object.keys(renderer);
+  
+  // If no renderers, just return the content as markdown
+  if (tagNames.length === 0) {
+    const html = await markdownToHtmlWithHighlighting(content);
+    parts.push({
+      id: nanoid(),
+      type: 'html',
+      content: html,
+    });
+    return parts;
+  }
+
+  const tagPattern = tagNames.join('|');
+  const regex = new RegExp(`<(${tagPattern})>(.*?)<\/\\1>`, 'gs');
 
   let lastIndex = 0;
   let match;
 
-  // we will match all tags in the content
+  // we will match only tags that have renderers
   // and then we will render each tag with the corresponding renderer
   // and then we will push the rendered content to the parts array
   while ((match = regex.exec(content)) !== null) {
     const [_, tag, innerContent] = match;
 
-    // check if the tag has a renderer
-    if (renderer[tag]) {
-      // push the text before the tag
-      // so that we can render it later
-      if (match.index > lastIndex) {
-        const rawBefore = content.slice(lastIndex, match.index);
-        const html = await markdownToHtmlWithHighlighting(rawBefore);
-        parts.push({
-          id: nanoid(),
-          type: 'html',
-          content: html,
-        });
-      }
-
-      const output = renderer[tag]({
-        content: innerContent,
-        isLoading: options.isLoading,
-      });
+    // push the text before the tag
+    // so that we can render it later
+    if (match.index > lastIndex) {
+      const rawBefore = content.slice(lastIndex, match.index);
+      const html = await markdownToHtmlWithHighlighting(rawBefore);
       parts.push({
         id: nanoid(),
         type: 'html',
-        content: output,
+        content: html,
       });
-
-      // update the last index
-      // so that we can render the next tag
-      lastIndex = regex.lastIndex;
     }
+
+    const output = renderer[tag]({
+      content: innerContent,
+      isLoading: options.isLoading,
+    });
+    parts.push({
+      id: nanoid(),
+      type: 'html',
+      content: output,
+    });
+
+    // update the last index
+    // so that we can render the next tag
+    lastIndex = regex.lastIndex;
   }
 
   // if there was an opening tag that never closed, check manually
   // search for any known tag that starts but wasn't matched
-  // we have to do this way otherwise we might process html tags
-  // that are not in the renderer
-  for (const tag of Object.keys(renderer)) {
+  for (const tag of tagNames) {
     const openingTag = `<${tag}>`;
     const openingIndex = content.indexOf(openingTag, lastIndex);
     const closingTag = `</${tag}>`;
@@ -105,6 +114,7 @@ export async function parseMessageParts(
       return parts;
     }
   }
+
   // add the remaining content
   if (lastIndex < content.length) {
     const rawRemaining = content.slice(lastIndex);
