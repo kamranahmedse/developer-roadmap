@@ -402,7 +402,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
               shouldCloseOnBackdropClick={false}
               shouldCloseOnEscape={false}
             />
-            <div className="absolute top-0 left-0 z-99 flex w-full items-center justify-between gap-2 bg-gray-100">
+            <div className="absolute top-0 left-0 z-99 flex w-full items-center justify-between gap-2 bg-gray-100 p-1">
               <div className="flex items-center gap-2 px-4 py-2 text-sm">
                 AI Tutor{' '}
                 <ChevronRightIcon className="size-4 shrink-0 stroke-[2.5] text-gray-500" />{' '}
@@ -412,7 +412,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                 className="flex cursor-pointer items-center gap-2 rounded-lg p-2 text-black hover:bg-gray-200"
                 onClick={() => setSelectedTopicId(null)}
               >
-                <XIcon className="size-4 shrink-0" strokeWidth={2.5} />
+                <XIcon className="size-3 shrink-0" strokeWidth={2.5} />
               </button>
             </div>
           </>
