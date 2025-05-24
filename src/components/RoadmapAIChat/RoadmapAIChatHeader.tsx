@@ -72,11 +72,11 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
         />
       )}
 
-      <div className="flex h-[46px] items-center justify-between gap-2 border-b border-gray-200 text-sm">
+      <div className="flex h-[46px] items-center justify-between gap-2 border-b border-gray-200 pr-4 text-sm">
         <div className="flex items-center">
           <button
             className={cn(
-              'flex items-center gap-2 px-2 py-3 text-sm',
+              'flex items-center gap-2 px-4 py-3 text-sm',
               activeTab === 'chat' && selectedTopicId && 'bg-gray-100',
             )}
             onClick={() => onTabChange('chat')}
@@ -88,7 +88,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
           {(activeTab === 'topic' || selectedTopicId) && (
             <div
               className={cn(
-                'flex items-center gap-1.5 border-l border-gray-200 px-2 py-3 text-sm',
+                'flex items-center gap-1.5 border-l border-gray-200 px-4 py-3 text-sm',
                 activeTab === 'topic' && selectedTopicId && 'bg-gray-100',
               )}
             >

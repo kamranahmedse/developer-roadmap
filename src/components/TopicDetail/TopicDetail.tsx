@@ -92,6 +92,7 @@ type TopicDetailProps = {
   canSubmitContribution: boolean;
 
   wrapperClassName?: string;
+  bodyClassName?: string;
   overlayClassName?: string;
   closeButtonClassName?: string;
   onClose?: () => void;
@@ -106,6 +107,7 @@ export function TopicDetail(props: TopicDetailProps) {
     isEmbed = false,
     renderer = 'balsamiq',
     wrapperClassName,
+    bodyClassName,
     overlayClassName,
     closeButtonClassName,
     onClose,
@@ -385,13 +387,13 @@ export function TopicDetail(props: TopicDetailProps) {
   const shouldShowAiTab = !isCustomResource && resourceType === 'roadmap';
 
   return (
-    <div className="relative z-92">
+    <div className={cn('relative z-92', wrapperClassName)}>
       <div
         ref={topicRef}
         tabIndex={0}
         className={cn(
           'fixed top-0 right-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6',
-          wrapperClassName,
+          bodyClassName,
         )}
       >
         {showUpgradeModal && (

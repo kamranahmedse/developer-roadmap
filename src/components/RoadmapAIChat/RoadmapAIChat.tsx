@@ -424,7 +424,8 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             resourceType="roadmap"
             renderer="editor"
             canSubmitContribution={false}
-            wrapperClassName="static mx-auto h-auto grow"
+            wrapperClassName="grow flex flex-col overflow-y-auto"
+            bodyClassName="static mx-auto h-auto grow sm:max-w-full sm:p-10"
             overlayClassName="hidden"
             closeButtonClassName="hidden"
             onClose={() => {
