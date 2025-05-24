@@ -177,8 +177,8 @@ export async function readStream(
     onStream,
     onStreamEnd,
   }: {
-    onStream?: (course: string) => void;
-    onStreamEnd?: (course: string) => void;
+    onStream?: (course: string) => Promise<void>;
+    onStreamEnd?: (course: string) => Promise<void>;
   },
 ) {
   const decoder = new TextDecoder('utf-8');
@@ -196,7 +196,7 @@ export async function readStream(
       for (let i = 0; i < value.length; i++) {
         if (value[i] === NEW_LINE) {
           result += decoder.decode(value.slice(start, i + 1));
-          onStream?.(result);
+          await onStream?.(result);
           start = i + 1;
         }
       }
@@ -206,8 +206,8 @@ export async function readStream(
     }
   }
 
-  onStream?.(result);
-  onStreamEnd?.(result);
+  await onStream?.(result);
+  await onStreamEnd?.(result);
   reader.releaseLock();
 }
 

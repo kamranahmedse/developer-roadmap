@@ -11,7 +11,7 @@ export function ModalLoader(props: ModalLoaderProps) {
   const { isLoading, text, error } = props;
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-100 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+    <div className="fixed top-0 right-0 left-0 z-100 h-full items-center justify-center overflow-x-hidden overflow-y-auto overscroll-contain bg-black/50">
       <div className="relative mx-auto flex h-full w-full items-center justify-center">
         <div className="popup-body relative rounded-lg bg-white p-5 shadow-sm">
           <div className="flex items-center">

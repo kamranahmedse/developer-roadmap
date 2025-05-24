@@ -2,8 +2,9 @@ import type { FormEvent } from 'react';
 import { useId, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import {
-  COURSE_PURCHASE_PARAM, FIRST_LOGIN_PARAM,
-  setAuthToken
+  COURSE_PURCHASE_PARAM,
+  FIRST_LOGIN_PARAM,
+  setAuthToken,
 } from '../../lib/jwt';
 
 type EmailLoginFormProps = {
@@ -65,7 +66,11 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
   const passwordFieldId = `form:${useId()}`;
 
   return (
-    <form className="w-full" onSubmit={handleFormSubmit}>
+    <form
+      className="w-full"
+      onSubmit={handleFormSubmit}
+      suppressHydrationWarning={true} // Hubspot adds data-* attributes which causes hydration errors
+    >
       <label htmlFor={emailFieldId} className="sr-only">
         Email address
       </label>

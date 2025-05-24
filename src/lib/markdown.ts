@@ -66,7 +66,6 @@ export async function markdownToHtmlWithHighlighting(markdown: string) {
     // otherwise default behaviour is to open in same tab
     //
     // SOURCE: https://github.com/markdown-it/markdown-it/blob/master/docs/architecture.md#renderer
-    //
     const defaultRender =
       markdownItAsync.renderer.rules.link_open ||
       function (tokens, idx, options, env, self) {

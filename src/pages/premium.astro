@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PremiumPage } from '../components/Premium/PremiumPage';
+---
+
+<BaseLayout title='Roadmaps for teams' permalink={'/teams'}>
+  <PremiumPage client:load />
+
+  <div slot='changelog-banner'></div>
+  <div slot='open-source-banner'></div>
+</BaseLayout>

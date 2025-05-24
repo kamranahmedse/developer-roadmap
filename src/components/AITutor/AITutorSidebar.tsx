@@ -1,5 +1,13 @@
 import { useEffect, useState } from 'react';
-import { BookOpen, Compass, Plus, Star, X, Zap } from 'lucide-react';
+import {
+  BookOpen,
+  BotMessageSquareIcon,
+  Compass,
+  Plus,
+  Star,
+  X,
+  Zap,
+} from 'lucide-react';
 import { AITutorLogo } from '../ReactIcons/AITutorLogo';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { useIsPaidUser } from '../../queries/billing';
@@ -23,6 +31,12 @@ const sidebarItems = [
     label: 'My Courses',
     href: '/ai/courses',
     icon: BookOpen,
+  },
+  {
+    key: 'chat',
+    label: 'AI Chat',
+    href: '/ai/chat',
+    icon: BotMessageSquareIcon,
   },
   {
     key: 'staff-picks',
