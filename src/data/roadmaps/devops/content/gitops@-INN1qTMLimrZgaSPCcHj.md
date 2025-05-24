@@ -4,6 +4,6 @@ GitOps is a paradigm for managing infrastructure and application deployments usi
 
 Visit the following resources to learn more:
 
-- [@article@Guide to GitOps](https://www.weave.works/technologies/gitops/)
+- [@article@ GitOps](https://www.gitops.tech/)
 - [@video@What is GitOps, How GitOps works and Why it's so useful](https://www.youtube.com/watch?v=f5EpcWp0THw)
 - [@feed@Explore top posts about GitOps](https://app.daily.dev/tags/gitops?ref=roadmapsh)
