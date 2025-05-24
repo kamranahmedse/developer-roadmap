@@ -218,6 +218,32 @@
       }
     ]
   },
+  "z8-556o-PaHXjlytrawaF": {
+    "title": "Writing Semantic HTML",
+    "description": "Semantic HTML refers to the use of HTML markup to reinforce the meaning of web content, rather than merely defining its appearance. It involves using HTML elements that clearly describe their purpose and content. Semantic HTML improves accessibility, SEO, and code readability. Key elements include `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, and `<footer>`. It also encompasses using appropriate heading levels (`<h1>` to `<h6>`), lists (`<ul>`, `<ol>`,`<li>`), and data tables (`<table>`, `<th>`, `<td>`). Semantic HTML helps screen readers interpret page content, enables better browser rendering, and provides clearer structure for developers. By using semantically correct elements, developers create more meaningful, accessible, and maintainable web documents that are easier for both humans and machines to understand and process.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Guide to Writing Semantic HTML",
+        "url": "https://cs.fyi/guide/writing-semantic-html",
+        "type": "article"
+      },
+      {
+        "title": "W3Schools: Semantic HTML",
+        "url": "https://www.w3schools.com/html/html5_semantic_elements.asp",
+        "type": "article"
+      },
+      {
+        "title": "Semantic HTML - web.dev",
+        "url": "https://web.dev/learn/html/semantic-html/",
+        "type": "article"
+      },
+      {
+        "title": "Why & When to Use Semantic HTML Elements over Div(s)",
+        "url": "https://www.youtube.com/watch?v=bOUhq46fd5g",
+        "type": "video"
+      }
+    ]
+  },
   "V5zucKEHnIPPjwHqsMPHF": {
     "title": "Forms and Validations",
     "description": "Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation, and helps ensure data submitted matches the requirements set forth in the various form controls.\n\nVisit the following resources to learn more:",
