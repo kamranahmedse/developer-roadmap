@@ -88,6 +88,8 @@ type TopicDetailProps = {
   resourceType?: ResourceType;
   renderer?: AllowedRoadmapRenderer;
 
+  hasUpgradeButtons?: boolean;
+
   isEmbed?: boolean;
   canSubmitContribution: boolean;
 
@@ -102,6 +104,7 @@ type TopicDetailProps = {
 
 export function TopicDetail(props: TopicDetailProps) {
   const {
+    hasUpgradeButtons = true,
     canSubmitContribution,
     resourceId: defaultResourceId,
     isEmbed = false,
@@ -471,6 +474,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   topicId={topicId}
                   aiChatHistory={aiChatHistory}
                   setAiChatHistory={setAiChatHistory}
+                  hasUpgradeButtons={hasUpgradeButtons}
                   onUpgrade={() => setShowUpgradeModal(true)}
                   onLogin={() => {
                     handleClose();

@@ -39,15 +39,14 @@ type TabButtonProps = {
 };
 
 function TabButton(props: TabButtonProps) {
-  const { icon, label, isActive, onClick, showBorder = false, onClose } = props;
+  const { icon, label, isActive, onClick, onClose } = props;
 
   return (
     <button
       className={cn(
         'flex h-full items-center gap-2 px-4 text-sm',
-        showBorder && 'border-l border-gray-200',
         isActive && 'bg-gray-100',
-        onClose && 'pl-4 pr-2'
+        onClose && 'pr-2 pl-4',
       )}
       onClick={onClick}
     >
@@ -143,7 +142,6 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
               label="Topic Details"
               isActive={activeTab === 'topic' && !!selectedTopicId}
               onClick={() => onTabChange('topic')}
-              showBorder
               onClose={onCloseTopic}
             />
           )}

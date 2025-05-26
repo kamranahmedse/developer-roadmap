@@ -36,6 +36,8 @@ type TopicDetailAIProps = {
   resourceType: ResourceType;
   topicId: string;
 
+  hasUpgradeButtons?: boolean;
+
   aiChatHistory: AIChatHistoryType[];
   setAiChatHistory: (history: AIChatHistoryType[]) => void;
 
@@ -52,6 +54,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     resourceId,
     resourceType,
     topicId,
+    hasUpgradeButtons = true,
     onUpgrade,
     onLogin,
     onShowSubjectSearchModal,
@@ -303,7 +306,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
             <button
               onClick={onShowSubjectSearchModal}
-              className="flex text-gray-400 items-center gap-1.5 rounded-md border border-dashed hover:border-solid border-gray-300 bg-transparent px-2 py-1 hover:bg-gray-200 hover:text-black"
+              className="flex items-center gap-1.5 rounded-md border border-dashed border-gray-300 bg-transparent px-2 py-1 text-gray-400 hover:border-solid hover:bg-gray-200 hover:text-black"
             >
               <WandSparkles className="h-3 w-3" />
               Learn another topic
@@ -351,7 +354,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
               </button>
             )}
 
-            {!isPaidUser && (
+            {!isPaidUser && hasUpgradeButtons && (
               <>
                 <button
                   className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 sm:block"
@@ -471,7 +474,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             )}
           </div>
         )}
-        
+
         {!isLoggedIn() && (
           <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
             <LockIcon className="size-4 cursor-not-allowed" strokeWidth={2.5} />

@@ -423,6 +423,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             resourceId={selectedTopicId}
             resourceType="roadmap"
             renderer="editor"
+            hasUpgradeButtons={false}
             canSubmitContribution={false}
             wrapperClassName="grow flex flex-col overflow-y-auto"
             bodyClassName="static mx-auto h-auto grow sm:max-w-full sm:p-4"
