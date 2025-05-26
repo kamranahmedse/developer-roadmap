@@ -289,7 +289,7 @@ function ProgressItem(props: ProgressItemProps) {
           {!isStreaming && (
             <button
               className={cn(
-                `flex shrink-0 items-center gap-1.5 rounded-md border border-gray-200 px-2 py-1 text-sm disabled:pointer-events-none disabled:opacity-40`,
+                `flex shrink-0 items-center gap-1.5 rounded-md border border-gray-200 px-2 py-1 text-xs disabled:pointer-events-none disabled:opacity-40`,
                 {
                   'bg-green-100 hover:border-green-300 hover:bg-green-200':
                     action === 'done',
@@ -309,7 +309,7 @@ function ProgressItem(props: ProgressItemProps) {
               )}
               {!isUpdating && !isBulkUpdating && (
                 <>
-                  <Check strokeWidth={3} className="size-4" />
+                  <Check strokeWidth={3} className="size-3" />
                   Mark it as {action}
                 </>
               )}

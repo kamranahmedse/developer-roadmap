@@ -40,7 +40,7 @@ function TabButton(props: TabButtonProps) {
   return (
     <button
       className={cn(
-        'flex h-full items-center gap-2 px-4 text-sm',
+        'flex flex-shrink-0 h-full items-center gap-2 px-4 text-sm',
         isActive && 'bg-gray-100',
         onClose && 'pr-2 pl-4',
       )}
@@ -51,7 +51,7 @@ function TabButton(props: TabButtonProps) {
 
       {onClose && (
         <button
-          className="ml-1.5 rounded-lg p-1 text-gray-500 hover:bg-gray-200"
+          className="ml-1 rounded-lg p-1 text-gray-500 hover:bg-gray-200"
           onClick={(e) => {
             e.stopPropagation();
             onClose();
@@ -121,7 +121,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
         />
       )}
 
-      <div className="flex h-[46px] items-center justify-between border-b border-gray-200 text-sm">
+      <div className="flex h-[46px] flex-shrink-0 items-center justify-between border-b border-gray-200 text-sm">
         <div className="flex h-full items-center">
           <TabButton
             icon={<BotIcon className="size-4 shrink-0 text-black" />}
@@ -133,7 +133,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
           {(activeTab === 'topic' || selectedTopicId) && (
             <TabButton
               icon={<BookIcon className="size-4 shrink-0 text-black" />}
-              label="Topic Details"
+              label="Topic"
               isActive={activeTab === 'topic' && !!selectedTopicId}
               onClick={() => onTabChange('topic')}
               onClose={onCloseTopic}
