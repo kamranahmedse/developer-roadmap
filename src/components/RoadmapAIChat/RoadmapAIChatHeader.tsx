@@ -146,11 +146,11 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
             {!isPaidUser && (
               <>
                 <button
-                  className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 sm:block"
+                  className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 2xl:block"
                   onClick={handleCreditsClick}
                 >
                   <span className="font-medium">{usagePercentage}%</span>{' '}
-                  credits used
+                  limit used
                 </button>
                 <button
                   className="flex items-center gap-1 rounded-md bg-yellow-400 px-2 py-1 text-sm text-black hover:bg-yellow-500"
