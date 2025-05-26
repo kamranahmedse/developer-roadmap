@@ -12,15 +12,11 @@ import {
   useState,
 } from 'react';
 import {
-  BotIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
   Frown,
   Loader2Icon,
   LockIcon,
   PauseCircleIcon,
   SendIcon,
-  XIcon,
 } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
@@ -372,6 +368,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   return (
     <div className="flex flex-grow flex-row">
       <div className="relative h-full flex-grow overflow-y-scroll">
+        {showUpgradeModal && (
+          <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+        )}
+
         {isLoading && (
           <div className="absolute inset-0 flex h-full w-full items-center justify-center">
             <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
@@ -425,7 +425,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             renderer="editor"
             canSubmitContribution={false}
             wrapperClassName="grow flex flex-col overflow-y-auto"
-            bodyClassName="static mx-auto h-auto grow sm:max-w-full sm:p-10"
+            bodyClassName="static mx-auto h-auto grow sm:max-w-full sm:p-4"
             overlayClassName="hidden"
             closeButtonClassName="hidden"
             onClose={() => {
@@ -440,10 +440,6 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
         {activeTab === 'chat' && (
           <>
-            {showUpgradeModal && (
-              <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
-            )}
-
             <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
               {isLoading && (
                 <div className="absolute inset-0 flex h-full w-full items-center justify-center">

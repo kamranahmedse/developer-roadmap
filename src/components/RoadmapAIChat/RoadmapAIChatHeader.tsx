@@ -29,6 +29,46 @@ type RoadmapAIChatHeaderProps = {
   selectedTopicId: string | null;
 };
 
+type TabButtonProps = {
+  icon: React.ReactNode;
+  label: string;
+  isActive: boolean;
+  onClick: () => void;
+  showBorder?: boolean;
+  onClose?: () => void;
+};
+
+function TabButton(props: TabButtonProps) {
+  const { icon, label, isActive, onClick, showBorder = false, onClose } = props;
+
+  return (
+    <button
+      className={cn(
+        'flex h-full items-center gap-2 px-4 text-sm',
+        showBorder && 'border-l border-gray-200',
+        isActive && 'bg-gray-100',
+        onClose && 'pl-4 pr-2'
+      )}
+      onClick={onClick}
+    >
+      {icon}
+      <span>{label}</span>
+
+      {onClose && (
+        <button
+          className="ml-1.5 rounded-lg p-1 text-gray-500 hover:bg-gray-200"
+          onClick={(e) => {
+            e.stopPropagation();
+            onClose();
+          }}
+        >
+          <XIcon className="size-4 shrink-0" strokeWidth={2.5} />
+        </button>
+      )}
+    </button>
+  );
+}
+
 export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
   const {
     hasChatHistory,
@@ -60,6 +100,22 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
     tokenUsage?.limit || 0,
   );
 
+  const handleCreditsClick = () => {
+    if (!isLoggedIn()) {
+      onLogin();
+      return;
+    }
+    setShowAILimitsPopup(true);
+  };
+
+  const handleUpgradeClick = () => {
+    if (!isLoggedIn()) {
+      onLogin();
+      return;
+    }
+    onUpgrade();
+  };
+
   return (
     <>
       {showAILimitsPopup && (
@@ -72,52 +128,33 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
         />
       )}
 
-      <div className="flex h-[46px] items-center justify-between gap-2 border-b border-gray-200 pr-4 text-sm">
-        <div className="flex items-center">
-          <button
-            className={cn(
-              'flex items-center gap-2 px-4 py-3 text-sm',
-              activeTab === 'chat' && selectedTopicId && 'bg-gray-100',
-            )}
+      <div className="flex h-[46px] items-center justify-between border-b border-gray-200 text-sm">
+        <div className="flex h-full items-center">
+          <TabButton
+            icon={<BotIcon className="size-4 shrink-0 text-black" />}
+            label="AI Chat"
+            isActive={activeTab === 'chat' && !!selectedTopicId}
             onClick={() => onTabChange('chat')}
-          >
-            <BotIcon className="size-4 shrink-0 text-black" />
-            <span>AI Chat</span>
-          </button>
+          />
 
           {(activeTab === 'topic' || selectedTopicId) && (
-            <div
-              className={cn(
-                'flex items-center gap-1.5 border-l border-gray-200 px-4 py-3 text-sm',
-                activeTab === 'topic' && selectedTopicId && 'bg-gray-100',
-              )}
-            >
-              <button
-                className="flex items-center gap-2"
-                onClick={() => onTabChange('topic')}
-              >
-                <BookIcon className="size-4 shrink-0 text-black" />
-                <span>Topic Details</span>
-              </button>
-
-              <button
-                className="ml-auto rounded-lg p-1 text-gray-500 hover:bg-gray-200"
-                onClick={onCloseTopic}
-              >
-                <XIcon className="size-4 shrink-0" strokeWidth={2.5} />
-              </button>
-            </div>
+            <TabButton
+              icon={<BookIcon className="size-4 shrink-0 text-black" />}
+              label="Topic Details"
+              isActive={activeTab === 'topic' && !!selectedTopicId}
+              onClick={() => onTabChange('topic')}
+              showBorder
+              onClose={onCloseTopic}
+            />
           )}
         </div>
 
         {!isDataLoading && (
-          <div className="flex gap-1.5">
+          <div className="flex gap-1.5 pr-4">
             {hasChatHistory && (
               <button
                 className="rounded-md bg-white px-2 py-2 text-xs font-medium text-black hover:bg-gray-200"
-                onClick={() => {
-                  setAiChatHistory([]);
-                }}
+                onClick={() => setAiChatHistory([])}
               >
                 <Trash2Icon className="size-3.5" />
               </button>
@@ -125,30 +162,16 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
 
             {!isPaidUser && (
               <>
-                <button
+                {/* <button
                   className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 sm:block"
-                  onClick={() => {
-                    if (!isLoggedIn()) {
-                      onLogin();
-                      return;
-                    }
-
-                    setShowAILimitsPopup(true);
-                  }}
+                  onClick={handleCreditsClick}
                 >
                   <span className="font-medium">{usagePercentage}%</span>{' '}
                   credits used
-                </button>
+                </button> */}
                 <button
                   className="flex items-center gap-1 rounded-md bg-yellow-400 px-2 py-1 text-sm text-black hover:bg-yellow-500"
-                  onClick={() => {
-                    if (!isLoggedIn()) {
-                      onLogin();
-                      return;
-                    }
-
-                    onUpgrade();
-                  }}
+                  onClick={handleUpgradeClick}
                 >
                   <GiftIcon className="size-4" />
                   Upgrade
