@@ -17,6 +17,8 @@ import { useToast } from '../../hooks/use-toast';
 import { Spinner } from '../ReactIcons/Spinner';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '../../lib/classname';
+import { queryClient } from '../../stores/query-client';
+import { userResourceProgressOptions } from '../../queries/resource-progress';
 
 const statusColors: Record<ResourceProgressType, string> = {
   done: 'bg-green-500',
@@ -209,6 +211,9 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
       .finally(() => {
         setShowChangeStatus(false);
         setIsUpdatingProgress(false);
+        queryClient.invalidateQueries(
+          userResourceProgressOptions(resourceType, resourceId),
+        );
       });
   };
 
