@@ -1,16 +1,14 @@
-import {
-  useMutation, useQuery
-} from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { queryClient } from '../../stores/query-client';
-import { useMemo, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 import { renderTopicProgress } from '../../lib/resource-progress';
 import { updateResourceProgress } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import type { ResourceProgressType } from '../../lib/resource-progress';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
 import { useToast } from '../../hooks/use-toast';
-import { Loader2Icon } from 'lucide-react';
+import { Check, ChevronRightIcon, Loader2Icon } from 'lucide-react';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { httpPost } from '../../lib/query-http';
 
@@ -126,7 +124,7 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
   }, [updateUserProgress, roadmapTreeData]);
 
   const [showAll, setShowAll] = useState(false);
-  const itemCountToShow = 3;
+  const itemCountToShow = 4;
   const itemsToShow = showAll
     ? progressItemWithText
     : progressItemWithText.slice(0, itemCountToShow);
@@ -134,7 +132,7 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
   const hasMoreItemsToShow = progressItemWithText.length > itemCountToShow;
 
   return (
-    <div className="relative my-6 w-full overflow-hidden rounded-lg border border-gray-200 p-2 first:mt-0 last:mb-0">
+    <div className="relative my-6 w-full first:mt-0 last:mb-0">
       <div className="relative flex flex-col gap-0.5">
         {itemsToShow.map((item) => (
           <ProgressItem
@@ -143,69 +141,69 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
             topicId={item.id}
             text={item.text}
             action={item.action}
+            isStreaming={isLoading}
             isBulkUpdating={isBulkUpdating}
             isBulkUpdateSuccess={isBulkUpdateSuccess}
           />
         ))}
 
         {hasMoreItemsToShow && (
-          <div className="absolute inset-x-0 right-0 bottom-0.5 translate-y-1/2">
-            <div className="flex items-center justify-center gap-2">
-              <button
-                className="rounded-md bg-gray-100 px-2 py-1 text-[10px] leading-none font-medium disabled:cursor-not-allowed disabled:opacity-70"
-                onClick={() => setShowAll(!showAll)}
-                disabled={isLoading}
-              >
-                {isLoading && <Loader2Icon className="size-2.5 animate-spin" />}
+          <div className="relative mt-1 flex items-center justify-between gap-2">
+            <button
+              className="z-50 flex items-center gap-1 rounded-md bg-gray-400 px-2 py-1 text-xs font-medium text-white hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-70"
+              onClick={() => setShowAll(!showAll)}
+              disabled={isLoading}
+            >
+              {isLoading && (
+                <>
+                  <Loader2Icon className="size-3 animate-spin" />
+                  {progressItemWithText.length} loaded ..
+                </>
+              )}
 
-                {!isLoading && (
-                  <>
-                    {showAll
-                      ? '- Show Less'
-                      : `+${progressItemWithText.length - itemCountToShow} more`}
-                  </>
-                )}
-              </button>
-            </div>
+              {!isLoading && (
+                <>
+                  {showAll
+                    ? '- Show Less'
+                    : `+ Show ${progressItemWithText.length - itemCountToShow} More`}
+                </>
+              )}
+            </button>
+
+            <button
+              className="z-50 flex items-center gap-1 rounded-md bg-green-600 px-2 py-1 text-xs font-medium text-white hover:bg-green-700 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-70"
+              disabled={isBulkUpdating || isLoading}
+              onClick={() => {
+                const done = updateUserProgress
+                  .filter((item) => item.action === 'done')
+                  .map((item) => item.id);
+                const learning = updateUserProgress
+                  .filter((item) => item.action === 'learning')
+                  .map((item) => item.id);
+                const skipped = updateUserProgress
+                  .filter((item) => item.action === 'skipped')
+                  .map((item) => item.id);
+                const pending = updateUserProgress
+                  .filter((item) => item.action === 'pending')
+                  .map((item) => item.id);
+
+                bulkUpdateResourceProgress({
+                  done,
+                  learning,
+                  skipped,
+                  pending,
+                });
+              }}
+            >
+              {isBulkUpdating && (
+                <Loader2Icon className="size-3 animate-spin" />
+              )}
+              {!isBulkUpdating && <CheckIcon additionalClasses="size-3" />}
+              Apply All
+            </button>
           </div>
         )}
       </div>
-
-      {hasMoreItemsToShow && (
-        <div className="absolute top-0 right-0">
-          <button
-            className="flex items-center gap-1 rounded-b-md bg-green-100 px-2 py-1 text-[10px] leading-none font-medium text-green-600"
-            disabled={isBulkUpdating}
-            onClick={() => {
-              const done = updateUserProgress
-                .filter((item) => item.action === 'done')
-                .map((item) => item.id);
-              const learning = updateUserProgress
-                .filter((item) => item.action === 'learning')
-                .map((item) => item.id);
-              const skipped = updateUserProgress
-                .filter((item) => item.action === 'skipped')
-                .map((item) => item.id);
-              const pending = updateUserProgress
-                .filter((item) => item.action === 'pending')
-                .map((item) => item.id);
-
-              bulkUpdateResourceProgress({
-                done,
-                learning,
-                skipped,
-                pending,
-              });
-            }}
-          >
-            {isBulkUpdating && (
-              <Loader2Icon className="size-2.5 animate-spin" />
-            )}
-            {!isBulkUpdating && <CheckIcon additionalClasses="size-2.5" />}
-            Apply All
-          </button>
-        </div>
-      )}
     </div>
   );
 }
@@ -215,6 +213,7 @@ type ProgressItemProps = {
   topicId: string;
   text: string;
   action: UpdateUserProgress['action'];
+  isStreaming: boolean;
   isBulkUpdating: boolean;
   isBulkUpdateSuccess: boolean;
 };
@@ -225,6 +224,7 @@ function ProgressItem(props: ProgressItemProps) {
     topicId,
     text,
     action,
+    isStreaming,
     isBulkUpdating,
     isBulkUpdateSuccess,
   } = props;
@@ -247,8 +247,7 @@ function ProgressItem(props: ProgressItemProps) {
           action,
         );
       },
-      onMutate: () => {
-      },
+      onMutate: () => {},
       onSuccess: () => {
         renderTopicProgress(topicId, action);
       },
@@ -265,21 +264,48 @@ function ProgressItem(props: ProgressItemProps) {
     queryClient,
   );
 
+  const textParts = text.split(' > ');
+  const lastIndex = textParts.length - 1;
+
   return (
-    <div className="flex bg-white items-center justify-between gap-2 rounded-lg border border-gray-200 px-3 py-1">
-      <span className="truncate text-sm text-gray-500">{text}</span>
+    <div className="flex items-center justify-between gap-2 rounded-lg border border-gray-200 bg-white py-1 pr-1 pl-3">
+      <span className="flex items-center gap-1 truncate text-sm text-gray-500">
+        {textParts.map((part, index) => {
+          return (
+            <Fragment key={index}>
+              {part}
+              {index !== lastIndex && (
+                <span className="text-gray-500">
+                  <ChevronRightIcon className="size-3 shrink-0" />{' '}
+                </span>
+              )}
+            </Fragment>
+          );
+        })}
+      </span>
       {!isSuccess && !isBulkUpdateSuccess && (
-        <button
-          className="min-h-[30px] shrink-0 rounded-md border border-gray-200 bg-gray-100 px-2 py-1 text-sm"
-          onClick={() => updateTopicStatus(action)}
-          disabled={isUpdating || isBulkUpdating}
-        >
-          {isUpdating ? (
-            <Loader2Icon className="size-4 animate-spin" />
-          ) : (
-            <>Mark it as {action}</>
+        <>
+          {!isStreaming && (
+            <button
+              className="flex shrink-0 items-center gap-1.5 rounded-md border border-gray-200 bg-gray-100 px-2 py-1 text-sm hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-40"
+              onClick={() => updateTopicStatus(action)}
+              disabled={isStreaming || isUpdating || isBulkUpdating}
+            >
+              {(isUpdating || isBulkUpdating) && (
+                <Loader2Icon className="size-4 animate-spin" />
+              )}
+              {!isUpdating && !isBulkUpdating && (
+                <Check strokeWidth={3} className="size-4" />
+              )}
+              Mark it as {action}
+            </button>
           )}
-        </button>
+          {isStreaming && (
+            <span className="flex size-[30px] items-center justify-center text-gray-300">
+              <Loader2Icon className="size-4 animate-spin" />
+            </span>
+          )}
+        </>
       )}
       {(isSuccess || isBulkUpdateSuccess) && (
         <span className="flex size-[30px] items-center justify-center text-green-500">
