@@ -127,7 +127,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
         />
       )}
 
-      <div className="flex h-[46px] items-center justify-between border-b border-gray-200 text-sm">
+      <div className="flex h-[46px] flex-shrink-0 items-center justify-between border-b border-gray-200 text-sm">
         <div className="flex h-full items-center">
           <TabButton
             icon={<BotIcon className="size-4 shrink-0 text-black" />}
