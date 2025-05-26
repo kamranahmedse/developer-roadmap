@@ -11,6 +11,7 @@ import { useToast } from '../../hooks/use-toast';
 import { Check, ChevronRightIcon, Loader2Icon } from 'lucide-react';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { httpPost } from '../../lib/query-http';
+import { cn } from '../../lib/classname';
 
 type UpdateUserProgress = {
   id: string;
@@ -268,7 +269,7 @@ function ProgressItem(props: ProgressItemProps) {
   const lastIndex = textParts.length - 1;
 
   return (
-    <div className="flex items-center justify-between gap-2 rounded-lg border border-gray-200 bg-white py-1 pr-1 pl-3">
+    <div className="flex min-h-[40px] items-center justify-between gap-2 rounded-lg border border-gray-200 bg-white py-1 pr-1 pl-3">
       <span className="flex items-center gap-1 truncate text-sm text-gray-500">
         {textParts.map((part, index) => {
           return (
@@ -287,7 +288,19 @@ function ProgressItem(props: ProgressItemProps) {
         <>
           {!isStreaming && (
             <button
-              className="flex shrink-0 items-center gap-1.5 rounded-md border border-gray-200 bg-gray-100 px-2 py-1 text-sm hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-40"
+              className={cn(
+                `flex shrink-0 items-center gap-1.5 rounded-md border border-gray-200 px-2 py-1 text-sm disabled:pointer-events-none disabled:opacity-40`,
+                {
+                  'bg-green-100 hover:border-green-300 hover:bg-green-200':
+                    action === 'done',
+                  'bg-yellow-100 hover:border-yellow-300 hover:bg-yellow-200':
+                    action === 'learning',
+                  'bg-gray-800 text-white hover:border-black hover:bg-black':
+                    action === 'skipped',
+                  'bg-gray-100 hover:border-gray-300 hover:bg-gray-200':
+                    action === 'pending',
+                },
+              )}
               onClick={() => updateTopicStatus(action)}
               disabled={isStreaming || isUpdating || isBulkUpdating}
             >
@@ -295,9 +308,11 @@ function ProgressItem(props: ProgressItemProps) {
                 <Loader2Icon className="size-4 animate-spin" />
               )}
               {!isUpdating && !isBulkUpdating && (
-                <Check strokeWidth={3} className="size-4" />
+                <>
+                  <Check strokeWidth={3} className="size-4" />
+                  Mark it as {action}
+                </>
               )}
-              Mark it as {action}
             </button>
           )}
           {isStreaming && (

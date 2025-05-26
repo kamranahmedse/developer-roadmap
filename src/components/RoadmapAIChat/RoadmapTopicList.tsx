@@ -69,7 +69,7 @@ export function RoadmapTopicList(props: RoadmapTopicListProps) {
       {progressItemWithText.map((item) => (
         <button
           key={item.topicId}
-          className="rounded-lg border border-gray-200 bg-white p-1 px-1.5 text-left text-sm"
+          className="collapse-if-empty rounded-lg border border-gray-200 bg-white p-1 px-1.5 text-left text-sm"
           onClick={() => {
             onTopicClick?.(item.topicId, item.text);
           }}
