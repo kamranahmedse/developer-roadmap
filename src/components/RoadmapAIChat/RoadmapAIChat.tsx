@@ -45,6 +45,7 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { billingDetailsOptions } from '../../queries/billing';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import { slugify } from '../../lib/slugger';
+import { AIChatActionButtons } from './AIChatActionButtons';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -483,91 +484,102 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             </div>
 
             {!isLoading && (
-              <div className="relative flex items-start border-t border-gray-200 text-sm">
-                <ChatEditor
-                  editorRef={editorRef}
-                  roadmapId={roadmapId}
-                  onSubmit={(content) => {
-                    if (
-                      isStreamingMessage ||
-                      abortControllerRef.current ||
-                      !isLoggedIn() ||
-                      isDataLoading ||
-                      isEmptyContent(content)
-                    ) {
-                      return;
-                    }
+              <div className="flex flex-col border-t border-gray-200">
+                {!isLimitExceeded && (
+                  <AIChatActionButtons
+                    onTellUsAboutYourSelf={() => {}}
+                    onClearChat={() => {
+                      setAiChatHistory([]);
+                    }}
+                  />
+                )}
 
-                    handleChatSubmit(content);
-                  }}
-                />
+                <div className="relative flex items-start text-sm">
+                  <ChatEditor
+                    editorRef={editorRef}
+                    roadmapId={roadmapId}
+                    onSubmit={(content) => {
+                      if (
+                        isStreamingMessage ||
+                        abortControllerRef.current ||
+                        !isLoggedIn() ||
+                        isDataLoading ||
+                        isEmptyContent(content)
+                      ) {
+                        return;
+                      }
 
-                {isLimitExceeded && isLoggedIn() && (
-                  <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
-                    <LockIcon
-                      className="size-4 cursor-not-allowed"
-                      strokeWidth={2.5}
-                    />
-                    <p className="cursor-not-allowed">
-                      Limit reached for today
-                      {isPaidUser ? '. Please wait until tomorrow.' : ''}
-                    </p>
-                    {!isPaidUser && (
+                      handleChatSubmit(content);
+                    }}
+                  />
+
+                  {isLimitExceeded && isLoggedIn() && (
+                    <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+                      <LockIcon
+                        className="size-4 cursor-not-allowed"
+                        strokeWidth={2.5}
+                      />
+                      <p className="cursor-not-allowed">
+                        Limit reached for today
+                        {isPaidUser ? '. Please wait until tomorrow.' : ''}
+                      </p>
+                      {!isPaidUser && (
+                        <button
+                          onClick={() => {
+                            setShowUpgradeModal(true);
+                          }}
+                          className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                        >
+                          Upgrade for more
+                        </button>
+                      )}
+                    </div>
+                  )}
+
+                  {!isLoggedIn() && (
+                    <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+                      <LockIcon
+                        className="size-4 cursor-not-allowed"
+                        strokeWidth={2.5}
+                      />
+                      <p className="cursor-not-allowed">
+                        Please login to continue
+                      </p>
                       <button
                         onClick={() => {
-                          setShowUpgradeModal(true);
+                          showLoginPopup();
                         }}
                         className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
                       >
-                        Upgrade for more
+                        Login / Register
                       </button>
-                    )}
-                  </div>
-                )}
-
-                {!isLoggedIn() && (
-                  <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
-                    <LockIcon
-                      className="size-4 cursor-not-allowed"
-                      strokeWidth={2.5}
-                    />
-                    <p className="cursor-not-allowed">
-                      Please login to continue
-                    </p>
-                    <button
-                      onClick={() => {
-                        showLoginPopup();
-                      }}
-                      className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
-                    >
-                      Login / Register
-                    </button>
-                  </div>
-                )}
-
-                <button
-                  className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
-                  onClick={(e) => {
-                    if (isStreamingMessage || abortControllerRef.current) {
-                      handleAbort();
-                      return;
-                    }
-
-                    const json = editorRef.current?.getJSON();
-                    if (!json || isEmptyContent(json)) {
-                      toast.error('Please enter a message');
-                      return;
-                    }
-
-                    handleChatSubmit(json);
-                  }}
-                >
-                  {isStreamingMessage ? (
-                    <PauseCircleIcon className="size-4 stroke-[2.5]" />
-                  ) : (
-                    <SendIcon className="size-4 stroke-[2.5]" />
+                    </div>
                   )}
-                </button>
+
+                  <button
+                    className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
+                    onClick={(e) => {
+                      if (isStreamingMessage || abortControllerRef.current) {
+                        handleAbort();
+                        return;
+                      }
+
+                      const json = editorRef.current?.getJSON();
+                      if (!json || isEmptyContent(json)) {
+                        toast.error('Please enter a message');
+                        return;
+                      }
+
+                      handleChatSubmit(json);
+                    }}
+                  >
+                    {isStreamingMessage ? (
+                      <PauseCircleIcon className="size-4 stroke-[2.5]" />
+                    ) : (
+                      <SendIcon className="size-4 stroke-[2.5]" />
+                    )}
+                  </button>
+                </div>
               </div>
             )}
           </>

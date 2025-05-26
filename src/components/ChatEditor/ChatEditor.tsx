@@ -56,7 +56,7 @@ export function ChatEditor(props: ChatEditorProps) {
     content,
     editorProps: {
       attributes: {
-        class: 'focus:outline-none w-full p-2',
+        class: 'focus:outline-none w-full px-4 py-2 min-h-[40px]',
       },
       handleKeyDown(_, event) {
         if (!editor) {
@@ -115,7 +115,7 @@ export function ChatEditor(props: ChatEditorProps) {
   }, [editor, roadmapTreeData, roadmapDetailsData]);
 
   return (
-    <div className="chat-editor w-full px-2 py-1.5">
+    <div className="chat-editor w-full py-1.5">
       <EditorContent editor={editor} />
     </div>
   );

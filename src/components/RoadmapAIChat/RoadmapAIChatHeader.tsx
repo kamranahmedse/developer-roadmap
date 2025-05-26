@@ -3,10 +3,9 @@ import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { isLoggedIn } from '../../lib/jwt';
-import { BookIcon, BotIcon, GiftIcon, Trash2Icon, XIcon } from 'lucide-react';
+import { BookIcon, BotIcon, GiftIcon, XIcon } from 'lucide-react';
 import type {
-  RoadmapAIChatTab,
-  RoamdapAIChatHistoryType,
+  RoadmapAIChatTab
 } from './RoadmapAIChat';
 import { useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
@@ -16,9 +15,6 @@ import { cn } from '../../lib/classname';
 
 type RoadmapAIChatHeaderProps = {
   isLoading: boolean;
-
-  hasChatHistory: boolean;
-  setAiChatHistory: (history: RoamdapAIChatHistoryType[]) => void;
 
   onLogin: () => void;
   onUpgrade: () => void;
@@ -70,8 +66,6 @@ function TabButton(props: TabButtonProps) {
 
 export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
   const {
-    hasChatHistory,
-    setAiChatHistory,
     onLogin,
     onUpgrade,
     isLoading: isDataLoading,
@@ -127,7 +121,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
         />
       )}
 
-      <div className="flex h-[46px] flex-shrink-0 items-center justify-between border-b border-gray-200 text-sm">
+      <div className="flex h-[46px] items-center justify-between border-b border-gray-200 text-sm">
         <div className="flex h-full items-center">
           <TabButton
             icon={<BotIcon className="size-4 shrink-0 text-black" />}
@@ -149,24 +143,15 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
 
         {!isDataLoading && (
           <div className="flex gap-1.5 pr-4">
-            {hasChatHistory && (
-              <button
-                className="rounded-md bg-white px-2 py-2 text-xs font-medium text-black hover:bg-gray-200"
-                onClick={() => setAiChatHistory([])}
-              >
-                <Trash2Icon className="size-3.5" />
-              </button>
-            )}
-
             {!isPaidUser && (
               <>
-                {/* <button
+                <button
                   className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 sm:block"
                   onClick={handleCreditsClick}
                 >
                   <span className="font-medium">{usagePercentage}%</span>{' '}
                   credits used
-                </button> */}
+                </button>
                 <button
                   className="flex items-center gap-1 rounded-md bg-yellow-400 px-2 py-1 text-sm text-black hover:bg-yellow-500"
                   onClick={handleUpgradeClick}
