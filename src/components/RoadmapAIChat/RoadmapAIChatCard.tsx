@@ -34,7 +34,7 @@ export function RoadmapAIChatCard(props: RoadmapAIChatCardProps) {
 
         {!!html && (
           <div
-            className="course-content course-ai-content prose prose-sm mt-0.5 max-w-[calc(100%-38px)] overflow-hidden text-sm"
+            className="course-content course-ai-content prose prose-sm mt-0.5 w-full max-w-[calc(100%-38px)] overflow-hidden text-sm"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         )}

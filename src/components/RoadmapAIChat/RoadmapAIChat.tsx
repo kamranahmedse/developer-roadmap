@@ -396,8 +396,6 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
       <div className="relative flex h-full max-w-[40%] flex-grow flex-col border-l border-gray-200 bg-white">
         <RoadmapAIChatHeader
           isLoading={isDataLoading}
-          hasChatHistory={hasChatHistory}
-          setAiChatHistory={setAiChatHistory}
           onLogin={() => {
             showLoginPopup();
           }}

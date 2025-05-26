@@ -1,8 +1,5 @@
 import {
-  useIsMutating,
-  useMutation,
-  useMutationState,
-  useQuery,
+  useMutation, useQuery
 } from '@tanstack/react-query';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { queryClient } from '../../stores/query-client';
@@ -100,9 +97,6 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
           userResourceProgressOptions('roadmap', roadmapId),
         );
       },
-      onMutate: () => {
-        pageProgressMessage.set('Updating progress');
-      },
       onSettled: () => {
         pageProgressMessage.set('');
       },
@@ -140,8 +134,8 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
   const hasMoreItemsToShow = progressItemWithText.length > itemCountToShow;
 
   return (
-    <div className="relative my-6 overflow-hidden rounded-lg border border-gray-200 bg-white p-2 first:mt-0 last:mb-0">
-      <div className="relative flex flex-col gap-2">
+    <div className="relative my-6 w-full overflow-hidden rounded-lg border border-gray-200 p-2 first:mt-0 last:mb-0">
+      <div className="relative flex flex-col gap-0.5">
         {itemsToShow.map((item) => (
           <ProgressItem
             key={item.id}
@@ -273,7 +267,7 @@ function ProgressItem(props: ProgressItemProps) {
   );
 
   return (
-    <div className="flex items-center justify-between gap-2 rounded-md border border-gray-200 p-2">
+    <div className="flex bg-white items-center justify-between gap-2 rounded-lg border border-gray-200 px-3 py-1">
       <span className="truncate text-sm text-gray-500">{text}</span>
       {!isSuccess && !isBulkUpdateSuccess && (
         <button
