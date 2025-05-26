@@ -1,6 +1,6 @@
 # Prettier
 
-Prettier is an opinionated code formatter that supports multiple programming languages, including JavaScript, TypeScript, CSS, and more. It automatically formats code to adhere to a consistent style, eliminating debates about code formatting in development teams. Prettier parses code and reprints it with its own rules, taking maximum line length into account and wrapping code when necessary. It integrates with most editors and can be run as part of the development workflow or in pre-commit hooks. Prettier's main benefits include saving time on code reviews, reducing cognitive load for developers, and maintaining a consistent code style across projects. Its "zero-config" philosophy and wide language support have made it a popular tool in modern development environments.
+Prettier is a tool that automatically formats your code to look consistent. It works with many languages like JavaScript, TypeScript, and CSS. Prettier takes your code and rewrites it following its own style rules, like line length. This stops arguments about code style and saves time. It can be used in code editors or run automatically before you commit code. Prettier is popular because it's easy to use and keeps code looking the same for everyone.
 
 Visit the following resources to learn more:
 

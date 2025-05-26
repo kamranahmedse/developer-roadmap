@@ -1,6 +1,6 @@
 # GitHub
 
-GitHub has become a central hub for open-source projects and is widely used by developers, companies, and organizations for both private and public repositories. It was acquired by Microsoft in 2018 but continues to operate as a relatively independent entity. GitHub's popularity has made it an essential tool in modern software development workflows and a key platform for showcasing coding projects and contributing to open-source software.
+GitHub is a popular website for hosting Git projects. It's a key place for open-source software and is used by developers and companies for both public and private code. Microsoft bought GitHub in 2018. It's a vital tool for modern software development, showing off projects, and contributing to open-source.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # How Does The Internet Work
 
-The internet is a global network that connects computers and devices so they can share information with each other. It’s how you browse websites, send emails, watch videos, and use apps. Think of it like a giant web that links everything together.
+The internet is a global network connecting computers and devices for information sharing, enabling activities like browsing websites, sending emails, and streaming videos. It acts as a vast web linking everything, facilitating communication and access to online resources and services worldwide.
 
 Visit the following resources to learn more:
 
