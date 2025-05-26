@@ -248,7 +248,6 @@ function ProgressItem(props: ProgressItemProps) {
         );
       },
       onMutate: () => {
-        pageProgressMessage.set('Updating progress');
       },
       onSuccess: () => {
         renderTopicProgress(topicId, action);
