@@ -450,7 +450,7 @@ export function TopicDetail(props: TopicDetailProps) {
                       }
                       resourceId={resourceId}
                       resourceType={resourceType}
-                      onClose={handleClose}
+                      onClose={() => null}
                     />
                   )}
                   <button

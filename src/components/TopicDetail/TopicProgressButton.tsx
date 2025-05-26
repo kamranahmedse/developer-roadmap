@@ -14,8 +14,7 @@ import type {
 } from '../../lib/resource-progress';
 import { showLoginPopup } from '../../lib/popup';
 import { useToast } from '../../hooks/use-toast';
-import { Spinner } from '../ReactIcons/Spinner';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Loader2 } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { queryClient } from '../../stores/query-client';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
@@ -181,6 +180,8 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   );
 
   const handleUpdateResourceProgress = (progress: ResourceProgressType) => {
+    setShowChangeStatus(false);
+
     if (isGuest) {
       onClose();
       showLoginPopup();
@@ -230,32 +231,38 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
     progress,
   );
 
-  if (isUpdatingProgress) {
-    return (
-      <button className="inline-flex cursor-default items-center rounded-md border border-gray-300 bg-white p-1 px-2 text-sm text-black">
-        <Spinner isDualRing={false} className="h-4 w-4" />
-        <span className="ml-2">Please wait..</span>
-      </button>
-    );
-  }
-
   return (
     <div className="relative inline-flex">
       <button
+        disabled={isUpdatingProgress}
         className={cn(
-          'flex cursor-default cursor-pointer items-center rounded-md border border-gray-300 p-1 px-2 text-sm text-black hover:border-gray-400',
+          'flex min-w-[135px] cursor-default cursor-pointer items-center rounded-md border border-gray-300 p-1 px-2 text-sm text-black hover:border-gray-400 disabled:pointer-events-none disabled:opacity-50',
         )}
         onClick={() => setShowChangeStatus(true)}
       >
-        <span className="flex h-2 w-2">
-          <span
-            className={`relative inline-flex h-2 w-2 rounded-full ${statusColors[progress]}`}
-          ></span>
-        </span>
-        <span className="ml-2 capitalize">
-          {progress === 'learning' ? 'In Progress' : progress}
-        </span>
-        <ChevronDown className="ml-2 h-4 w-4" />
+        {!isUpdatingProgress && (
+          <>
+            <span className="flex h-2 w-2">
+              <span
+                className={cn(
+                  'relative inline-flex h-2 w-2 rounded-full',
+                  statusColors[progress],
+                  isUpdatingProgress && 'animate-pulse',
+                )}
+              ></span>
+            </span>
+            <span className="ml-2 capitalize">
+              {progress === 'learning' ? 'In Progress' : progress}
+            </span>
+          </>
+        )}
+        {isUpdatingProgress && (
+          <span className="flex items-center">
+            <Loader2 strokeWidth={3} className="size-3 flex-shrink-0 animate-spin" />
+            <span className="ml-2 text-sm">Updating..</span>
+          </span>
+        )}
+        <ChevronDown className="ml-auto h-4 w-4" />
       </button>
 
       {showChangeStatus && (
