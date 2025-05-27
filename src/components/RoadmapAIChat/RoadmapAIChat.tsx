@@ -12,6 +12,7 @@ import {
   useState,
 } from 'react';
 import {
+  Bot,
   Frown,
   Loader2Icon,
   LockIcon,
@@ -46,6 +47,7 @@ import { billingDetailsOptions } from '../../queries/billing';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import { slugify } from '../../lib/slugger';
 import { AIChatActionButtons } from './AIChatActionButtons';
+import { cn } from '../../lib/classname';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -75,6 +77,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const editorRef = useRef<Editor | null>(null);
   const scrollareaRef = useRef<HTMLDivElement>(null);
 
+  const [isChatMobileVisible, setIsChatMobileVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
@@ -364,7 +367,6 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     userResourceProgressLoading ||
     isTokenUsageLoading ||
     isBillingDetailsLoading;
-  const hasChatHistory = aiChatHistory.length > 0;
 
   return (
     <div className="flex flex-grow flex-row">
@@ -380,20 +382,54 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         )}
 
         {roadmapDetail?.json && !isLoading && (
-          <div>
-            <div className="mx-auto max-w-[968px] px-4">
-              <ChatRoadmapRenderer
-                roadmapId={roadmapId}
-                nodes={roadmapDetail?.json.nodes}
-                edges={roadmapDetail?.json.edges}
-                onSelectTopic={handleSelectTopic}
-              />
-            </div>
+          <div className="relative mx-auto max-w-[968px] px-4">
+            <ChatRoadmapRenderer
+              roadmapId={roadmapId}
+              nodes={roadmapDetail?.json.nodes}
+              edges={roadmapDetail?.json.edges}
+              onSelectTopic={handleSelectTopic}
+            />
+
+            {/* floating chat button */}
+            {!isChatMobileVisible && (
+              <div className="fixed bottom-4 left-1/2 z-50 block -translate-x-1/2 xl:hidden">
+                <button
+                  onClick={() => {
+                    setIsChatMobileVisible(true);
+                  }}
+                  className="relative hover:bg-stone-800 overflow-hidden rounded-full bg-stone-900 px-4 py-2 text-center text-white shadow-2xl"
+                >
+                  <span className="relative z-20 flex items-center gap-2 text-sm">
+                    <Bot className="size-5" />
+                    <span>Chat about Roadmap</span>
+                  </span>
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>
 
-      <div className="relative hidden xl:flex h-full max-w-[40%] flex-grow flex-col border-l border-gray-200 bg-white">
+      {isChatMobileVisible && (
+        <div
+          onClick={() => {
+            setIsChatMobileVisible(false);
+          }}
+          className="fixed inset-0 z-50 bg-black/50"
+        />
+      )}
+
+      <div
+        className={cn(
+          'h-full flex-grow flex-col border-l border-gray-200 bg-white',
+          {
+            'relative hidden max-w-[40%] xl:flex': !isChatMobileVisible,
+            'fixed inset-y-0 right-0 z-50 w-full max-w-[520px]':
+              isChatMobileVisible,
+            flex: isChatMobileVisible,
+          },
+        )}
+      >
         <RoadmapAIChatHeader
           isLoading={isDataLoading}
           onLogin={() => {
