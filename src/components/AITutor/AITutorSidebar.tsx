@@ -1,17 +1,15 @@
-import { useEffect, useState } from 'react';
 import {
-  BookOpen,
-  BotMessageSquareIcon,
-  Compass,
+  BookOpen, Compass,
   Plus,
   Star,
   X,
-  Zap,
+  Zap
 } from 'lucide-react';
-import { AITutorLogo } from '../ReactIcons/AITutorLogo';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { useIsPaidUser } from '../../queries/billing';
+import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
+import { useIsPaidUser } from '../../queries/billing';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { AITutorLogo } from '../ReactIcons/AITutorLogo';
 
 type AITutorSidebarProps = {
   isFloating: boolean;
@@ -32,12 +30,12 @@ const sidebarItems = [
     href: '/ai/courses',
     icon: BookOpen,
   },
-  {
-    key: 'chat',
-    label: 'AI Chat',
-    href: '/ai/chat',
-    icon: BotMessageSquareIcon,
-  },
+  // {
+  //   key: 'chat',
+  //   label: 'AI Chat',
+  //   href: '/ai/chat',
+  //   icon: Bot,
+  // },
   {
     key: 'staff-picks',
     label: 'Staff Picks',
