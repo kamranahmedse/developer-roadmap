@@ -57,9 +57,10 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
       bodyClassName="p-4"
     >
       <div className="mb-8 text-left">
-        <h2 className="text-lg font-semibold">Update your persona</h2>
+        <h2 className="text-lg font-semibold">Tell us more about yourself</h2>
         <p className="mt-1 text-sm text-balance text-gray-500">
-          Update your persona to get the best out of the AI Tutor.
+          We'll use this information to help you get the best out of the AI
+          Tutor.
         </p>
       </div>
 
