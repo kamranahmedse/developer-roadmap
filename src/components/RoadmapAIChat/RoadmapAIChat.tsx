@@ -56,6 +56,7 @@ import {
 import { UserPersonaForm } from '../UserPersona/UserPersonaForm';
 import { ChatPersona } from '../UserPersona/ChatPersona';
 import { userPersonaOptions } from '../../queries/user-persona';
+import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -106,6 +107,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] =
     useState<React.ReactNode | null>(null);
+  const [showUpdatePersonaModal, setShowUpdatePersonaModal] = useState(false);
 
   const { data: roadmapDetail, error: roadmapDetailError } = useQuery(
     roadmapJSONOptions(roadmapId),
@@ -402,6 +404,13 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
           <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
         )}
 
+        {showUpdatePersonaModal && (
+          <UpdatePersonaModal
+            roadmapId={roadmapId}
+            onClose={() => setShowUpdatePersonaModal(false)}
+          />
+        )}
+
         {isLoading && (
           <div className="absolute inset-0 flex h-full w-full items-center justify-center">
             <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
@@ -558,7 +567,9 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
               <div className="flex flex-col border-t border-gray-200">
                 {!isLimitExceeded && (
                   <AIChatActionButtons
-                    onTellUsAboutYourSelf={() => {}}
+                    onTellUsAboutYourSelf={() => {
+                      setShowUpdatePersonaModal(true);
+                    }}
                     messageCount={aiChatHistory.length}
                     onClearChat={() => {
                       setAiChatHistory([]);

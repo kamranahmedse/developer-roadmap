@@ -9,6 +9,7 @@ export interface UserPersonaDocument {
     roadmapId: string;
     expertise: string;
     goal: string;
+    commit: string;
   }[];
 
   createdAt: Date;
@@ -24,5 +25,6 @@ export function userPersonaOptions(roadmapId: string) {
       return httpGet<UserPersonaResponse>(`/v1-user-persona/${roadmapId}`);
     },
     enabled: !!roadmapId && isLoggedIn(),
+    refetchOnMount: false,
   });
 }

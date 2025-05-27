@@ -69,7 +69,7 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
         <AutogrowTextarea
           id={goalFieldId}
           className="block min-h-20 w-full resize-none rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm outline-none placeholder:text-gray-500 focus:border-gray-500"
-          placeholder="e.g. I am a beginner in frontend and need to find a job as soon as possible"
+          placeholder={`e.g. I am a beginner in ${roadmapTitle} and need to find a job as soon as possible`}
           value={goal}
           onChange={(e) => setGoal(e.target.value)}
         />
@@ -101,8 +101,17 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
           <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
         ) : (
           <>
-            <PlayIcon className="size-4" />
-            Start Chatting
+            {defaultValues ? (
+              <>
+                <PlayIcon className="size-4" />
+                Update Persona
+              </>
+            ) : (
+              <>
+                <PlayIcon className="size-4" />
+                Start Chatting
+              </>
+            )}
           </>
         )}
       </button>
