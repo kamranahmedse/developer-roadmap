@@ -543,6 +543,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                 {!isLimitExceeded && (
                   <AIChatActionButtons
                     onTellUsAboutYourSelf={() => {}}
+                    messageCount={aiChatHistory.length}
                     onClearChat={() => {
                       setAiChatHistory([]);
                     }}

@@ -11,7 +11,7 @@ function AIChatActionButton(props: AIChatActionButtonProps) {
 
   return (
     <button
-      className="flex hover:bg-gray-100 items-center gap-1 rounded-md border border-gray-200 px-2 py-1.5 text-xs"
+      className="flex items-center gap-1 rounded-md border border-gray-200 px-2 py-1.5 text-xs hover:bg-gray-100"
       onClick={onClick}
     >
       <Icon className="size-3" />
@@ -23,10 +23,11 @@ function AIChatActionButton(props: AIChatActionButtonProps) {
 type AIChatActionButtonsProps = {
   onTellUsAboutYourSelf: () => void;
   onClearChat: () => void;
+  messageCount: number;
 };
 
 export function AIChatActionButtons(props: AIChatActionButtonsProps) {
-  const { onTellUsAboutYourSelf, onClearChat } = props;
+  const { onTellUsAboutYourSelf, onClearChat, messageCount } = props;
 
   return (
     <div className="flex gap-2 px-4 pt-2">
@@ -35,11 +36,13 @@ export function AIChatActionButtons(props: AIChatActionButtonsProps) {
         label="Tell us about your self"
         onClick={onTellUsAboutYourSelf}
       />
-      <AIChatActionButton
-        icon={Trash2}
-        label="Clear chat"
-        onClick={onClearChat}
-      />
+      {messageCount > 0 && (
+        <AIChatActionButton
+          icon={Trash2}
+          label="Clear chat"
+          onClick={onClearChat}
+        />
+      )}
     </div>
   );
 }
