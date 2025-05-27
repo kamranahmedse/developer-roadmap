@@ -229,10 +229,24 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     [roadmapId, deviceType],
   );
 
+  const totalTopicCount = useMemo(() => {
+    const allowedTypes = ['topic', 'subtopic', 'todo'];
+    return (
+      roadmapDetail?.json?.nodes.filter((node) =>
+        allowedTypes.includes(node.type || ''),
+      ).length ?? 0
+    );
+  }, [roadmapDetail]);
+
   const renderer: Record<string, MessagePartRenderer> = useMemo(() => {
     return {
       'user-progress': () => {
-        return <UserProgressList roadmapId={roadmapId} />;
+        return (
+          <UserProgressList
+            totalTopicCount={totalTopicCount}
+            roadmapId={roadmapId}
+          />
+        );
       },
       'update-progress': (options) => {
         return <UserProgressActionList roadmapId={roadmapId} {...options} />;
@@ -260,7 +274,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         return <RoadmapRecommendations roadmapId={roadmapId} {...options} />;
       },
     };
-  }, [roadmapId, handleSelectTopic]);
+  }, [roadmapId, handleSelectTopic, totalTopicCount]);
 
   const completeAITutorChat = async (
     messages: RoamdapAIChatHistoryType[],

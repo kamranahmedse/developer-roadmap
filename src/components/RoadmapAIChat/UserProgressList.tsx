@@ -4,18 +4,18 @@ import { userResourceProgressOptions } from '../../queries/resource-progress';
 import { getPercentage } from '../../lib/number';
 
 type UserProgressListProps = {
+  totalTopicCount: number;
   roadmapId: string;
 };
 
 export function UserProgressList(props: UserProgressListProps) {
-  const { roadmapId } = props;
+  const { totalTopicCount, roadmapId } = props;
 
   const { data: userResourceProgressData } = useQuery(
     userResourceProgressOptions('roadmap', roadmapId),
     queryClient,
   );
 
-  const totalTopicCount = userResourceProgressData?.totalTopicCount ?? 0;
   const doneCount = userResourceProgressData?.done?.length ?? 0;
   const skippedCount = userResourceProgressData?.skipped?.length ?? 0;
 
@@ -31,7 +31,7 @@ export function UserProgressList(props: UserProgressListProps) {
             {progressPercentage}%
           </span>
         </div>
-        <span className="text-sm hidden md:block font-medium text-gray-600">
+        <span className="hidden text-sm font-medium text-gray-600 md:block">
           {totalFinished} / {totalTopicCount} topics
         </span>
       </div>
