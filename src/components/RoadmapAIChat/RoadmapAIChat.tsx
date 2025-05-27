@@ -7,6 +7,7 @@ import {
   Fragment,
   useCallback,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -48,6 +49,9 @@ import { TopicDetail } from '../TopicDetail/TopicDetail';
 import { slugify } from '../../lib/slugger';
 import { AIChatActionButtons } from './AIChatActionButtons';
 import { cn } from '../../lib/classname';
+import {
+  getTailwindScreenDimension, type TailwindScreenDimensions
+} from '../../lib/is-mobile';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -76,6 +80,12 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const toast = useToast();
   const editorRef = useRef<Editor | null>(null);
   const scrollareaRef = useRef<HTMLDivElement>(null);
+
+  const [deviceType, setDeviceType] = useState<TailwindScreenDimensions>();
+
+  useLayoutEffect(() => {
+    setDeviceType(getTailwindScreenDimension());
+  }, []);
 
   const [isChatMobileVisible, setIsChatMobileVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -182,6 +192,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         setSelectedTopicId(topicId);
         setSelectedTopicTitle(topicTitle);
         setActiveTab('topic');
+
+        console.log(deviceType);
+        if (['sm', 'md', 'lg', 'xl'].includes(deviceType || 'xl')) {
+          setIsChatMobileVisible(true);
+        }
       });
 
       const topicWithSlug = slugify(topicTitle) + '@' + topicId;
@@ -196,7 +211,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         }),
       );
     },
-    [roadmapId],
+    [roadmapId, deviceType],
   );
 
   const renderer: Record<string, MessagePartRenderer> = useMemo(() => {
@@ -395,9 +410,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
               <div className="fixed bottom-4 left-1/2 z-50 block -translate-x-1/2 xl:hidden">
                 <button
                   onClick={() => {
+                    setActiveTab('chat');
                     setIsChatMobileVisible(true);
                   }}
-                  className="relative hover:bg-stone-800 overflow-hidden rounded-full bg-stone-900 px-4 py-2 text-center text-white shadow-2xl"
+                  className="relative overflow-hidden rounded-full bg-stone-900 px-4 py-2 text-center text-white shadow-2xl hover:bg-stone-800"
                 >
                   <span className="relative z-20 flex items-center gap-2 text-sm">
                     <Bot className="size-5" />
