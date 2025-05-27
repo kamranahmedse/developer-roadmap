@@ -371,7 +371,9 @@ export function TopicDetail(props: TopicDetailProps) {
   });
 
   useEffect(() => {
-    if (isActive) topicRef?.current?.focus();
+    if (isActive) {
+      topicRef?.current?.focus();
+    }
 
     lockBodyScroll(isActive);
   }, [isActive]);

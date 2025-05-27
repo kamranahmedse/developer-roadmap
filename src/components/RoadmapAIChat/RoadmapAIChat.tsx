@@ -56,6 +56,7 @@ import {
 import { ChatPersona } from '../UserPersona/ChatPersona';
 import { userPersonaOptions } from '../../queries/user-persona';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
+import { lockBodyScroll } from '../../lib/dom';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -134,6 +135,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     userPersonaOptions(roadmapId),
     queryClient,
   );
+
+  useEffect(() => {
+    lockBodyScroll(isChatMobileVisible);
+  }, [isChatMobileVisible]);
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
