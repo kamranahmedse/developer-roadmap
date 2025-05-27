@@ -2,10 +2,12 @@ import type { RoamdapAIChatHistoryType } from './RoadmapAIChat';
 import { cn } from '../../lib/classname';
 import { BotIcon, User2Icon } from 'lucide-react';
 
-type RoadmapAIChatCardProps = RoamdapAIChatHistoryType;
+type RoadmapAIChatCardProps = RoamdapAIChatHistoryType & {
+  isIntro?: boolean;
+};
 
 export function RoadmapAIChatCard(props: RoadmapAIChatCardProps) {
-  const { role, html, jsx } = props;
+  const { role, html, jsx, isIntro = false } = props;
 
   return (
     <div

@@ -57,6 +57,7 @@ import { ChatPersona } from '../UserPersona/ChatPersona';
 import { userPersonaOptions } from '../../queries/user-persona';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 import { lockBodyScroll } from '../../lib/dom';
+import { TutorIntroMessage } from './TutorIntroMessage';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -503,7 +504,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             resourceId={selectedTopicId}
             resourceType="roadmap"
             renderer="editor"
-            defaultActiveTab="ai"
+            defaultActiveTab="content"
             hasUpgradeButtons={false}
             canSubmitContribution={false}
             wrapperClassName="grow flex flex-col overflow-y-auto"
@@ -540,6 +541,14 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                 <div className="absolute inset-0 flex flex-col">
                   <div className="relative flex grow flex-col justify-end">
                     <div className="flex flex-col justify-end gap-2 px-3 py-2">
+                      <RoadmapAIChatCard
+                        role="assistant"
+                        jsx={
+                          <TutorIntroMessage roadmap={roadmapDetail?.json} />
+                        }
+                        isIntro
+                      />
+
                       {aiChatHistory.map((chat, index) => {
                         return (
                           <Fragment key={`chat-${index}`}>

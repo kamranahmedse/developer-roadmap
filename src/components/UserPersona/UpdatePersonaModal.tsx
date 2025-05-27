@@ -56,7 +56,7 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
       wrapperClassName="max-w-[450px]"
       bodyClassName="p-4"
     >
-      <div className="mb-8 text-left">
+      <div className="mb-4 text-left">
         <h2 className="text-lg font-semibold">Tell us more about yourself</h2>
         <p className="mt-1 text-sm text-balance text-gray-500">
           We'll use this information to help you get the best out of the AI
@@ -65,6 +65,7 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
       </div>
 
       <UserPersonaForm
+        className="space-y-4"
         roadmapTitle={roadmapTitle}
         defaultValues={userPersona ?? undefined}
         onSubmit={(data) => {

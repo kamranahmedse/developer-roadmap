@@ -2,7 +2,7 @@ import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
 import { type Node, type Edge, renderFlowJSON } from '@roadmapsh/editor';
 
-type RoadmapJSON = {
+export type RoadmapJSON = {
   _id: string;
   title: string;
   description: string;

@@ -14,11 +14,19 @@ type UserPersonaFormProps = {
   defaultValues?: UserPersonaFormData;
   onSubmit: (data: UserPersonaFormData) => void;
 
+  className?: string;
+
   isLoading?: boolean;
 };
 
 export function UserPersonaForm(props: UserPersonaFormProps) {
-  const { roadmapTitle, defaultValues, onSubmit, isLoading } = props;
+  const {
+    roadmapTitle,
+    defaultValues,
+    className = '',
+    onSubmit,
+    isLoading,
+  } = props;
   const [expertise, setExpertise] = useState(
     defaultValues?.expertise ?? 'no-experience',
   );
@@ -41,7 +49,7 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
   const hasFormCompleted = !!expertise && !!goal && !!commit;
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-8">
+    <form onSubmit={handleSubmit} className={cn('space-y-8', className)}>
       <div className="flex flex-col gap-3">
         <label
           className="text-sm font-medium text-gray-700"
@@ -53,7 +61,7 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
           id={expertiseFieldId}
           value={expertise}
           onChange={(e) => setExpertise(e.target.value)}
-          className="border-gray-300 text-sm h-[40px] focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+          className="h-[40px] border-gray-300 text-sm focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
         >
           <option value="" selected hidden>
             Select your expertise
@@ -77,7 +85,9 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
           htmlFor={goalFieldId}
         >
           What is your goal?{' '}
-          {hasInitialGoal && !defaultValues?.goal && `Tell us more`}
+          {hasInitialGoal &&
+            !defaultValues?.goal &&
+            `Tell us more about yourself`}
         </label>
 
         {!hasInitialGoal && (
@@ -93,10 +103,10 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
             ].map((goalTemplate) => (
               <button
                 key={goalTemplate}
-                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600 transition-all hover:border-gray-300 hover:bg-gray-100 hover:border-gray-400"
+                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600 transition-all hover:border-gray-300 hover:border-gray-400 hover:bg-gray-100"
                 onClick={() => {
                   if (goalTemplate !== 'Other (tell us more)') {
-                    setGoal(goalTemplate);
+                    setGoal(`${goalTemplate}.`);
                   }
 
                   setHasInitialGoal(true);
@@ -135,7 +145,7 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
 
         <input
           id={commitFieldId}
-          className="block w-full resize-none rounded-lg border border-gray-300 bg-white px-4 h-[40px] text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+          className="block h-[40px] w-full resize-none rounded-lg border border-gray-300 bg-white px-4 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
           placeholder="e.g. 10 hours per week"
           value={commit}
           onChange={(e) => setCommit(e.target.value)}
