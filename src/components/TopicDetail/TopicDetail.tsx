@@ -87,6 +87,7 @@ type TopicDetailProps = {
   resourceId?: string;
   resourceType?: ResourceType;
   renderer?: AllowedRoadmapRenderer;
+  defaultActiveTab?: AllowedTopicDetailsTabs;
 
   hasUpgradeButtons?: boolean;
 
@@ -116,6 +117,7 @@ export function TopicDetail(props: TopicDetailProps) {
     onClose,
     shouldCloseOnBackdropClick = true,
     shouldCloseOnEscape = true,
+    defaultActiveTab = 'content',
   } = props;
 
   const [hasEnoughLinks, setHasEnoughLinks] = useState(false);
@@ -130,7 +132,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [topicHtmlTitle, setTopicHtmlTitle] = useState('');
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const [activeTab, setActiveTab] =
-    useState<AllowedTopicDetailsTabs>('content');
+    useState<AllowedTopicDetailsTabs>(defaultActiveTab);
   const [aiChatHistory, setAiChatHistory] =
     useState<AIChatHistoryType[]>(defaultChatHistory);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
@@ -620,7 +622,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   <a
                     href={contributionUrl}
                     target="_blank"
-                    className="hidden transition-all items-center justify-center rounded-md px-2 py-2 text-sm hover:bg-gray-200 sm:flex"
+                    className="hidden items-center justify-center rounded-md px-2 py-2 text-sm transition-all hover:bg-gray-200 sm:flex"
                   >
                     <GitHubIcon className="mr-2 inline-block h-4 w-4 text-current" />
                     Help us Improve this Content

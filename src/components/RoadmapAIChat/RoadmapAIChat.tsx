@@ -416,8 +416,8 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                   className="relative overflow-hidden rounded-full bg-stone-900 px-4 py-2 text-center text-white shadow-2xl hover:bg-stone-800"
                 >
                   <span className="relative z-20 flex items-center gap-2 text-sm">
-                    <Bot className="size-5" />
-                    <span>Chat about Roadmap</span>
+                    <Bot className="size-5 text-yellow-400" />
+                    <span>Chat with Roadmap</span>
                   </span>
                 </button>
               </div>
@@ -478,6 +478,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             resourceId={selectedTopicId}
             resourceType="roadmap"
             renderer="editor"
+            defaultActiveTab="ai"
             hasUpgradeButtons={false}
             canSubmitContribution={false}
             wrapperClassName="grow flex flex-col overflow-y-auto"
