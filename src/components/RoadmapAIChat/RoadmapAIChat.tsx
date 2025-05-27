@@ -417,7 +417,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         )}
 
         {roadmapDetail?.json && !isLoading && (
-          <div className="relative mx-auto max-w-[968px] px-4">
+          <div className="relative mx-auto max-w-[968px] px-4 pb-28 xl:pb-0">
             <ChatRoadmapRenderer
               roadmapId={roadmapId}
               nodes={roadmapDetail?.json.nodes}
