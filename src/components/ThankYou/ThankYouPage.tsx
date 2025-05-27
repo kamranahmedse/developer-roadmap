@@ -22,6 +22,12 @@ export function ThankYouPage() {
 
     if (decodedNextPage === '/courses/sql') {
       decodedNextPage = `${import.meta.env.PUBLIC_COURSE_APP_URL}/sql`;
+
+      window?.fireEvent({
+        action: 'sql_course_purchase_complete',
+        category: 'course',
+        label: 'SQL Course Purchase Completed',
+      });
     }
 
     setNextPage(decodedNextPage);
