@@ -4,6 +4,7 @@ import { cn } from '../lib/classname.ts';
 type TabLinkProps = {
   icon: LucideIcon;
   text: string;
+  mobileText?: string;
   isActive: boolean;
   isExternal?: boolean;
   badgeText?: string;
@@ -19,6 +20,7 @@ export function TabLink(props: TabLinkProps) {
     isExternal = false,
     url,
     text,
+    mobileText,
     isActive,
     hideTextOnMobile = false,
     className: additionalClassName = '',
@@ -75,7 +77,8 @@ export function TabLink(props: TabLinkProps) {
       className={className}
     >
       <Icon className="h-4 w-4 shrink-0" />
-      <span className={textClass}>{text}</span>
+      <span className={cn(textClass, 'hidden sm:inline')}>{text}</span>
+      <span className={cn(textClass, 'inline sm:hidden')}>{mobileText || text}</span>
       {badgeNode}
     </a>
   );
