@@ -150,7 +150,7 @@ const hasProjects = projectCount > 0;
                 icon={BookOpenIcon}
                 text='Courses'
                 isActive={activeTab === 'courses'}
-                badgeText='New'
+                className='hidden md:flex'
               />
             )}
             {hasAIChat && (
@@ -158,7 +158,7 @@ const hasProjects = projectCount > 0;
                 url={`/${roadmapId}/ai`}
                 icon={Bot}
                 text='Chat with AI'
-                mobileText="AI"
+                mobileText='AI'
                 isActive={false}
                 badgeText='New'
               />
