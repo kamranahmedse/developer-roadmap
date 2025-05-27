@@ -6,10 +6,10 @@ import { isLoggedIn } from '../../lib/jwt';
 import { BookIcon, BotIcon, GiftIcon, XIcon } from 'lucide-react';
 import type { RoadmapAIChatTab } from './RoadmapAIChat';
 import { useState } from 'react';
-import { useToast } from '../../hooks/use-toast';
 import { getPercentage } from '../../lib/number';
 import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
 import { cn } from '../../lib/classname';
+import { useKeydown } from '../../hooks/use-keydown';
 
 type RoadmapAIChatHeaderProps = {
   isLoading: boolean;
@@ -78,7 +78,6 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
     selectedTopicId,
   } = props;
 
-  const toast = useToast();
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
   const { data: tokenUsage } = useQuery(getAiCourseLimitOptions(), queryClient);
 
@@ -86,6 +85,8 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
     billingDetailsOptions(),
     queryClient,
   );
+
+  useKeydown('Escape', onCloseChat);
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
