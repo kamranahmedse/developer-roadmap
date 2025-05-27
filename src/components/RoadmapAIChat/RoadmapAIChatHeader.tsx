@@ -144,7 +144,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
           )}
         </div>
 
-        {!isDataLoading && (
+        {!isDataLoading && isLoggedIn() && (
           <div className="flex gap-1.5 pr-4">
             {!isPaidUser && (
               <>
