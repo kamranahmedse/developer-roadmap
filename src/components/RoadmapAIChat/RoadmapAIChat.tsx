@@ -53,6 +53,10 @@ import {
   getTailwindScreenDimension,
   type TailwindScreenDimensions,
 } from '../../lib/is-mobile';
+import { UserPersonaForm } from '../UserPersona/UserPersonaForm';
+import { ChatPersona } from '../UserPersona/ChatPersona';
+import { userPersonaOptions } from '../../queries/user-persona';
+import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -103,6 +107,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] =
     useState<React.ReactNode | null>(null);
+  const [showUpdatePersonaModal, setShowUpdatePersonaModal] = useState(false);
 
   const { data: roadmapDetail, error: roadmapDetailError } = useQuery(
     roadmapJSONOptions(roadmapId),
@@ -113,10 +118,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     queryClient,
   );
 
-  const {
-    data: userResourceProgressData,
-    isLoading: userResourceProgressLoading,
-  } = useQuery(userResourceProgressOptions('roadmap', roadmapId), queryClient);
+  const { isLoading: userResourceProgressLoading } = useQuery(
+    userResourceProgressOptions('roadmap', roadmapId),
+    queryClient,
+  );
 
   const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
     getAiCourseLimitOptions(),
@@ -125,6 +130,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
+
+  const { data: userPersona, isLoading: isUserPersonaLoading } = useQuery(
+    userPersonaOptions(roadmapId),
+    queryClient,
+  );
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -140,12 +150,12 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   }, [roadmapDetail]);
 
   useEffect(() => {
-    if (!roadmapTreeData || !roadmapDetail) {
+    if (!roadmapTreeData || !roadmapDetail || isUserPersonaLoading) {
       return;
     }
 
     setIsLoading(false);
-  }, [roadmapTreeData, roadmapDetail]);
+  }, [roadmapTreeData, roadmapDetail, isUserPersonaLoading]);
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const handleChatSubmit = (json: JSONContent) => {
@@ -381,13 +391,24 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     roadmapTreeLoading ||
     userResourceProgressLoading ||
     isTokenUsageLoading ||
-    isBillingDetailsLoading;
+    isBillingDetailsLoading ||
+    isUserPersonaLoading;
+
+  const shouldShowChatPersona =
+    !isLoading && !isUserPersonaLoading && !userPersona && isLoggedIn();
 
   return (
     <div className="flex flex-grow flex-row">
       <div className="relative h-full flex-grow overflow-y-scroll">
         {showUpgradeModal && (
           <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+        )}
+
+        {showUpdatePersonaModal && (
+          <UpdatePersonaModal
+            roadmapId={roadmapId}
+            onClose={() => setShowUpdatePersonaModal(false)}
+          />
         )}
 
         {isLoading && (
@@ -507,7 +528,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                 </div>
               )}
 
-              {!isLoading && (
+              {shouldShowChatPersona && !isLoading && (
+                <ChatPersona roadmapId={roadmapId} />
+              )}
+
+              {!isLoading && !shouldShowChatPersona && (
                 <div className="absolute inset-0 flex flex-col">
                   <div className="relative flex grow flex-col justify-end">
                     <div className="flex flex-col justify-end gap-2 px-3 py-2">
@@ -538,11 +563,13 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
               )}
             </div>
 
-            {!isLoading && (
+            {!isLoading && !shouldShowChatPersona && (
               <div className="flex flex-col border-t border-gray-200">
                 {!isLimitExceeded && (
                   <AIChatActionButtons
-                    onTellUsAboutYourSelf={() => {}}
+                    onTellUsAboutYourSelf={() => {
+                      setShowUpdatePersonaModal(true);
+                    }}
                     messageCount={aiChatHistory.length}
                     onClearChat={() => {
                       setAiChatHistory([]);
@@ -555,6 +582,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                     editorRef={editorRef}
                     roadmapId={roadmapId}
                     onSubmit={(content) => {
+                      if (!isLoggedIn()) {
+                        showLoginPopup();
+                        return;
+                      }
+
                       if (
                         isStreamingMessage ||
                         abortControllerRef.current ||
@@ -592,29 +624,14 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                     </div>
                   )}
 
-                  {!isLoggedIn() && (
-                    <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
-                      <LockIcon
-                        className="size-4 cursor-not-allowed"
-                        strokeWidth={2.5}
-                      />
-                      <p className="cursor-not-allowed">
-                        Please login to continue
-                      </p>
-                      <button
-                        onClick={() => {
-                          showLoginPopup();
-                        }}
-                        className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
-                      >
-                        Login / Register
-                      </button>
-                    </div>
-                  )}
-
                   <button
                     className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
                     onClick={(e) => {
+                      if (!isLoggedIn()) {
+                        showLoginPopup();
+                        return;
+                      }
+
                       if (isStreamingMessage || abortControllerRef.current) {
                         handleAbort();
                         return;
