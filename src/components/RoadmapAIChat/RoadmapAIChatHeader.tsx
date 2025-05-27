@@ -50,7 +50,8 @@ function TabButton(props: TabButtonProps) {
       <span>{label}</span>
 
       {onClose && (
-        <button
+        <span
+          role="button"
           className="ml-1 rounded-lg p-1 text-gray-500 hover:bg-gray-200"
           onClick={(e) => {
             e.stopPropagation();
@@ -58,7 +59,7 @@ function TabButton(props: TabButtonProps) {
           }}
         >
           <XIcon className="size-4 shrink-0" strokeWidth={2.5} />
-        </button>
+        </span>
       )}
     </button>
   );

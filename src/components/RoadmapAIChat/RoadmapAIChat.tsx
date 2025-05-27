@@ -193,7 +193,6 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         setSelectedTopicTitle(topicTitle);
         setActiveTab('topic');
 
-        console.log(deviceType);
         if (['sm', 'md', 'lg', 'xl'].includes(deviceType || 'xl')) {
           setIsChatMobileVisible(true);
         }
