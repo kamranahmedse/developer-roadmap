@@ -1,19 +1,6 @@
 # Web Security Knowledge
 
-Web security knowledge encompasses understanding and implementing practices to protect websites, web applications, and web services from various cyber threats. Key areas include:
-
-1. HTTPS and TLS for secure data transmission
-2. Cross-Site Scripting (XSS) prevention
-3. SQL injection protection
-4. Cross-Site Request Forgery (CSRF) mitigation
-5. Content Security Policy (CSP) implementation
-6. Secure authentication and session management
-7. Input validation and sanitization
-8. Protection against clickjacking
-9. Secure cookie handling
-10. Regular security updates and patch management
-
-Web security also involves understanding common vulnerabilities listed in the OWASP Top Ten, implementing proper access controls, and using secure coding practices. It requires ongoing education and vigilance as new threats emerge. Effective web security strategies often include a combination of preventive measures, regular security audits, and incident response planning to ensure the confidentiality, integrity, and availability of web resources and user data.
+Web security involves protecting websites and applications from cyber threats through practices like HTTPS/TLS for secure data, XSS/SQL injection/CSRF prevention, CSP implementation, secure authentication/session management, input validation, clickjacking protection, secure cookie handling, and regular updates. It also means understanding OWASP Top Ten vulnerabilities, access controls, secure coding, and staying informed on new threats. A good strategy combines prevention, audits, and incident response to protect web resources and data.
 
 Visit the following resources to learn more:
 

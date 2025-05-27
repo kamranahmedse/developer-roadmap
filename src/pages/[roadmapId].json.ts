@@ -59,7 +59,7 @@ export const GET: APIRoute = async function ({ params, request, props }) {
   );
 
   if (!fs.existsSync(roadmapFilePath)) {
-    return new Response(JSON.stringify({ error: 'Roadmap file not found' }), {
+    return new Response(JSON.stringify({ message: 'Roadmap not found' }), {
       status: 404,
     });
   }

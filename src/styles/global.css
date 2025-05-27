@@ -58,6 +58,12 @@
   scrollbar-width: none; /* Firefox */
 }
 
+@utility collapse-if-empty {
+  &:empty {
+    display: none;
+  }
+}
+
 svg {
   user-select: none;
 }

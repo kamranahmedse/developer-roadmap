@@ -1,6 +1,6 @@
 # HTML Templates
 
-The `<template>` HTML element is a mechanism for holding HTML that is not to be rendered immediately when a page is loaded but may be instantiated subsequently during runtime using JavaScript. Think of a template as a content fragment that is being stored for subsequent use in the document.
+The `<template>` HTML tag holds HTML content that isn't shown right away when a page loads. Instead, JavaScript can use it later to create new elements on the page. It's like a blueprint for HTML parts you want to reuse.
 
 Visit the following resources to learn more:
 

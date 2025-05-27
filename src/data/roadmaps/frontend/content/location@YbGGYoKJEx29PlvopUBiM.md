@@ -1,6 +1,6 @@
 # Location API
 
-The Geolocation API is a web API that provides access to the device's location data, such as latitude and longitude. It allows web developers to build location-based applications, such as mapping and location sharing, by using the device's GPS, Wi-Fi, and other sensors to determine the user's location. To use the Geolocation API, a web page must first request permission from the user to access their location. If permission is granted, the page can then use the `navigator.geolocation` object to access the device's location data. The API provides several methods for getting the user's current location, watching for location changes, and calculating distances between two locations.
+The Geolocation API lets websites know a device's location (like latitude and longitude). This is for apps that use location, like maps. It uses GPS, Wi-Fi, and other sensors. The website must ask for permission first. If given, it can get the current location, watch for changes, or find distances. This helps make location-aware web apps.
 
 Visit the following resources to learn more:
 

@@ -1,16 +1,6 @@
 # Making layouts
 
-Making layouts in web design involves organizing content and visual elements on a page to create an effective and aesthetically pleasing user interface. Modern layout techniques primarily use CSS, with key approaches including:
-
-1. Flexbox for one-dimensional layouts (rows or columns)
-2. CSS Grid for two-dimensional layouts
-3. Responsive design principles for adaptability across devices
-4. CSS frameworks like Bootstrap or Tailwind for rapid development
-5. Custom CSS properties (variables) for consistent styling
-6. Media queries for device-specific adjustments
-7. CSS positioning and float for specific element placement
-
-These tools allow designers to create complex, responsive layouts that maintain consistency and usability across various screen sizes and devices. Effective layouts consider visual hierarchy, user flow, accessibility, and content prioritization to enhance the overall user experience and achieve design goals.
+Making web layouts means arranging content on a page well. Modern CSS uses Flexbox (for rows/columns) and CSS Grid (for 2D layouts). Responsive design makes sites fit all devices. Frameworks like Bootstrap or Tailwind help build faster. Good layouts think about what's important, how users move through the page, and if everyone can use it. This makes the site look good and work well.
 
 Visit the following resources to learn more:
 

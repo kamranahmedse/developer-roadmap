@@ -1,6 +1,6 @@
 # CORS
 
-Cross-Origin Resource Sharing (CORS) is a security mechanism implemented by web browsers to control access to resources (like APIs or fonts) on a web page from a different domain than the one serving the web page. It extends and adds flexibility to the Same-Origin Policy, allowing servers to specify who can access their resources. CORS works through a system of HTTP headers, where browsers send a preflight request to the server hosting the cross-origin resource, and the server responds with headers indicating whether the actual request is allowed. This mechanism helps prevent unauthorized access to sensitive data while enabling legitimate cross-origin requests. CORS is crucial for modern web applications that often integrate services and resources from multiple domains, balancing security needs with the functionality requirements of complex, distributed web systems.
+Cross-Origin Resource Sharing (CORS) is a browser security feature that controls how web pages access resources from different domains. It allows servers to specify who can access their assets (like APIs or fonts). CORS uses HTTP headers; browsers may send a preflight request to check if the actual request is allowed. This prevents unauthorized access while enabling legitimate cross-origin requests, vital for modern apps using multiple domain services.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # SolidJS
 
-SolidJS is a declarative, efficient, and flexible JavaScript library for building user interfaces. It uses a fine-grained reactivity system that updates only what changes, resulting in high performance. SolidJS compiles templates to real DOM nodes and updates them in-place, avoiding the overhead of a virtual DOM. It offers a syntax similar to React, making it familiar to many developers, but with a different underlying mechanism. SolidJS supports JSX, provides built-in state management, and emphasizes composition over inheritance. Its small size and lack of runtime overhead make it particularly suitable for applications requiring high performance. While newer compared to some frameworks, SolidJS is gaining popularity for its simplicity, performance, and developer-friendly approach to reactive programming.
+SolidJS is a JavaScript tool for building website interfaces that is known for being very fast and efficient. It updates only the parts of the page that change, which makes it perform well. SolidJS doesn't use a virtual DOM; instead, it directly changes the real DOM. Its syntax is like React, so many developers find it familiar. It supports JSX, has built-in ways to manage data, and is small in size. SolidJS is getting popular for its speed, simplicity, and smart way of handling updates.
 
 Visit the following resources to learn more:
 

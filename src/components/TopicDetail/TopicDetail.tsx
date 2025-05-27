@@ -44,16 +44,6 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
 import { TopicProgressButton } from './TopicProgressButton.tsx';
 import { CreateCourseModal } from './CreateCourseModal.tsx';
 
-type TopicDetailProps = {
-  resourceId?: string;
-  resourceTitle?: string;
-  resourceType?: ResourceType;
-  renderer?: AllowedRoadmapRenderer;
-
-  isEmbed?: boolean;
-  canSubmitContribution: boolean;
-};
-
 type PaidResourceType = {
   _id?: string;
   title: string;
@@ -93,13 +83,41 @@ async function fetchRoadmapPaidResources(roadmapId: string) {
 
 const PAID_RESOURCE_DISCLAIMER_HIDDEN = 'paid-resource-disclaimer-hidden';
 
+type TopicDetailProps = {
+  resourceId?: string;
+  resourceType?: ResourceType;
+  renderer?: AllowedRoadmapRenderer;
+  defaultActiveTab?: AllowedTopicDetailsTabs;
+
+  hasUpgradeButtons?: boolean;
+
+  isEmbed?: boolean;
+  canSubmitContribution: boolean;
+
+  wrapperClassName?: string;
+  bodyClassName?: string;
+  overlayClassName?: string;
+  closeButtonClassName?: string;
+  onClose?: () => void;
+  shouldCloseOnBackdropClick?: boolean;
+  shouldCloseOnEscape?: boolean;
+};
+
 export function TopicDetail(props: TopicDetailProps) {
   const {
+    hasUpgradeButtons = true,
     canSubmitContribution,
     resourceId: defaultResourceId,
     isEmbed = false,
     renderer = 'balsamiq',
-    resourceTitle,
+    wrapperClassName,
+    bodyClassName,
+    overlayClassName,
+    closeButtonClassName,
+    onClose,
+    shouldCloseOnBackdropClick = true,
+    shouldCloseOnEscape = true,
+    defaultActiveTab = 'content',
   } = props;
 
   const [hasEnoughLinks, setHasEnoughLinks] = useState(false);
@@ -114,7 +132,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [topicHtmlTitle, setTopicHtmlTitle] = useState('');
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const [activeTab, setActiveTab] =
-    useState<AllowedTopicDetailsTabs>('content');
+    useState<AllowedTopicDetailsTabs>(defaultActiveTab);
   const [aiChatHistory, setAiChatHistory] =
     useState<AIChatHistoryType[]>(defaultChatHistory);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
@@ -138,6 +156,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [paidResources, setPaidResources] = useState<PaidResourceType[]>([]);
 
   const handleClose = () => {
+    onClose?.();
     setIsActive(false);
     setShowUpgradeModal(false);
     setAiChatHistory(defaultChatHistory);
@@ -146,8 +165,11 @@ export function TopicDetail(props: TopicDetailProps) {
   };
 
   // Close the topic detail when user clicks outside the topic detail
-  useOutsideClick(topicRef, handleClose);
-  useKeydown('Escape', handleClose);
+  useOutsideClick(
+    topicRef,
+    shouldCloseOnBackdropClick ? handleClose : undefined,
+  );
+  useKeydown('Escape', shouldCloseOnEscape ? handleClose : undefined);
 
   useEffect(() => {
     if (resourceType !== 'roadmap' || !defaultResourceId) {
@@ -349,7 +371,9 @@ export function TopicDetail(props: TopicDetailProps) {
   });
 
   useEffect(() => {
-    if (isActive) topicRef?.current?.focus();
+    if (isActive) {
+      topicRef?.current?.focus();
+    }
 
     lockBodyScroll(isActive);
   }, [isActive]);
@@ -370,11 +394,14 @@ export function TopicDetail(props: TopicDetailProps) {
   const shouldShowAiTab = !isCustomResource && resourceType === 'roadmap';
 
   return (
-    <div className={'relative z-92'}>
+    <div className={cn('relative z-92', wrapperClassName)}>
       <div
         ref={topicRef}
         tabIndex={0}
-        className="fixed top-0 right-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
+        className={cn(
+          'fixed top-0 right-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6',
+          bodyClassName,
+        )}
       >
         {showUpgradeModal && (
           <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
@@ -427,13 +454,16 @@ export function TopicDetail(props: TopicDetailProps) {
                       }
                       resourceId={resourceId}
                       resourceType={resourceType}
-                      onClose={handleClose}
+                      onClose={() => null}
                     />
                   )}
                   <button
                     type="button"
                     id="close-topic"
-                    className="flex items-center gap-1.5 rounded-lg bg-gray-200 px-1.5 py-1 text-xs text-black hover:bg-gray-300 hover:text-gray-900"
+                    className={cn(
+                      'flex items-center gap-1.5 rounded-lg bg-gray-200 px-1.5 py-1 text-xs text-black hover:bg-gray-300 hover:text-gray-900',
+                      closeButtonClassName,
+                    )}
                     onClick={handleClose}
                   >
                     <X className="size-4" />
@@ -448,6 +478,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   topicId={topicId}
                   aiChatHistory={aiChatHistory}
                   setAiChatHistory={setAiChatHistory}
+                  hasUpgradeButtons={hasUpgradeButtons}
                   onUpgrade={() => setShowUpgradeModal(true)}
                   onLogin={() => {
                     handleClose();
@@ -593,7 +624,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   <a
                     href={contributionUrl}
                     target="_blank"
-                    className="hidden transition-all items-center justify-center rounded-md px-2 py-2 text-sm hover:bg-gray-200 sm:flex"
+                    className="hidden items-center justify-center rounded-md px-2 py-2 text-sm transition-all hover:bg-gray-200 sm:flex"
                   >
                     <GitHubIcon className="mr-2 inline-block h-4 w-4 text-current" />
                     Help us Improve this Content
@@ -642,7 +673,9 @@ export function TopicDetail(props: TopicDetailProps) {
           </>
         )}
       </div>
-      <div className="fixed inset-0 z-30 bg-gray-900/50"></div>
+      <div
+        className={cn('fixed inset-0 z-30 bg-gray-900/50', overlayClassName)}
+      ></div>
     </div>
   );
 }

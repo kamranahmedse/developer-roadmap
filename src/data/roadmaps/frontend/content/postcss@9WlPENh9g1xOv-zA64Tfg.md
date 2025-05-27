@@ -1,6 +1,6 @@
 # PostCSS
 
-PostCSS is a tool for transforming CSS with JavaScript plugins. It allows developers to enhance their CSS workflow by automating repetitive tasks, adding vendor prefixes, and implementing future CSS features. PostCSS works as a preprocessor, but unlike Sass or Less, it's highly modular and customizable. Users can choose from a wide range of plugins or create their own to suit specific needs. Popular plugins include Autoprefixer for adding vendor prefixes, cssnext for using future CSS features, and cssnano for minification. PostCSS integrates well with various build tools and can be used alongside traditional CSS preprocessors. Its flexibility and performance make it a popular choice for optimizing CSS in modern web development workflows.
+PostCSS is a tool that uses JavaScript plugins to change CSS. It can automate tasks, add browser prefixes (like `-webkit-`), and let you use future CSS features now. It's like a CSS preprocessor but more flexible, as you pick the plugins you need. Popular plugins include Autoprefixer, cssnext, and cssnano (for making CSS smaller). PostCSS works with many build tools and is liked for its flexibility and speed in modern web development.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Forms and Validations
 
-Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation, and helps ensure data submitted matches the requirements set forth in the various form controls.
+Before sending data from a form to a server, it's important to check if all required fields are filled in correctly. This is called client-side form validation. It helps make sure the data sent matches what the form expects, improving data quality and user experience.
 
 Visit the following resources to learn more:
 
