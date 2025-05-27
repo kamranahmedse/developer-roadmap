@@ -128,23 +128,13 @@ const hasProjects = projectCount > 0;
     {
       (
         <div class='flex justify-between gap-2 sm:gap-0'>
-          <div class='relative top-px flex gap-1 sm:gap-3'>
+          <div class='relative top-px flex gap-1 sm:gap-2'>
             <TabLink
               url={`/${roadmapId}`}
               icon={MapIcon}
               isActive={activeTab === 'roadmap'}
               text='Roadmap'
             />
-            {hasAIChat && (
-              <TabLink
-                url={`/${roadmapId}/ai`}
-                icon={Bot}
-                text='AI Mentor'
-                mobileText='AI'
-                isActive={false}
-                badgeText='New'
-              />
-            )}
             {hasProjects && (
               <TabLink
                 url={`/${roadmapId}/projects`}
@@ -161,6 +151,16 @@ const hasProjects = projectCount > 0;
                 text='Courses'
                 isActive={activeTab === 'courses'}
                 className='hidden md:flex'
+              />
+            )}
+            {hasAIChat && (
+              <TabLink
+                url={`/${roadmapId}/ai`}
+                icon={Bot}
+                text='AI Mentor'
+                mobileText='AI'
+                isActive={false}
+                badgeText='New'
               />
             )}
           </div>
