@@ -571,6 +571,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                     editorRef={editorRef}
                     roadmapId={roadmapId}
                     onSubmit={(content) => {
+                      if (!isLoggedIn()) {
+                        showLoginPopup();
+                        return;
+                      }
+
                       if (
                         isStreamingMessage ||
                         abortControllerRef.current ||
@@ -608,29 +613,14 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                     </div>
                   )}
 
-                  {!isLoggedIn() && (
-                    <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
-                      <LockIcon
-                        className="size-4 cursor-not-allowed"
-                        strokeWidth={2.5}
-                      />
-                      <p className="cursor-not-allowed">
-                        Please login to continue
-                      </p>
-                      <button
-                        onClick={() => {
-                          showLoginPopup();
-                        }}
-                        className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
-                      >
-                        Login / Register
-                      </button>
-                    </div>
-                  )}
-
                   <button
                     className="flex aspect-square size-[36px] items-center justify-center p-2 text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
                     onClick={(e) => {
+                      if (!isLoggedIn()) {
+                        showLoginPopup();
+                        return;
+                      }
+
                       if (isStreamingMessage || abortControllerRef.current) {
                         handleAbort();
                         return;
