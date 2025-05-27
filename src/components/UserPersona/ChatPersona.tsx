@@ -44,10 +44,14 @@ export function ChatPersona(props: ChatPersonaProps) {
   return (
     <div className="relative mx-auto flex h-full max-w-[400px] grow flex-col justify-center p-4">
       <div className="mb-8 text-center">
-        <h2 className="text-lg font-semibold">Welcome to the AI Tutor</h2>
+        <img
+          src="/images/gifs/wave.gif"
+          alt="Wave"
+          className="mx-auto mb-5 h-24 w-24"
+        />
+        <h2 className="text-xl font-semibold">Welcome to the AI Tutor</h2>
         <p className="mt-1 text-sm text-balance text-gray-500">
-          Before we get started, tell me about your current experience with
-          roadmap.
+          Before we start, answer these questions so we can help you better.
         </p>
       </div>
 

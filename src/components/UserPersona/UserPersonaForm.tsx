@@ -1,7 +1,7 @@
-import { useId, useState } from 'react';
+import { useId, useRef, useState } from 'react';
 import { SelectNative } from '../SelectNative';
-import AutogrowTextarea from 'react-textarea-autosize';
-import { Loader2Icon, PlayIcon } from 'lucide-react';
+import { Loader2Icon, MessageCircle, PlayIcon } from 'lucide-react';
+import { cn } from '../../lib/classname';
 
 export type UserPersonaFormData = {
   expertise: string;
@@ -22,6 +22,8 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
   const [expertise, setExpertise] = useState(
     defaultValues?.expertise ?? 'no-experience',
   );
+
+  const [hasInitialGoal, setHasInitialGoal] = useState(!!defaultValues?.goal);
   const [goal, setGoal] = useState(defaultValues?.goal ?? '');
   const [commit, setCommit] = useState(defaultValues?.commit ?? '');
 
@@ -29,16 +31,20 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
   const goalFieldId = useId();
   const commitFieldId = useId();
 
+  const goalRef = useRef<HTMLTextAreaElement>(null);
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onSubmit({ expertise, goal, commit });
   };
 
+  const hasFormCompleted = !!expertise && !!goal && !!commit;
+
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="flex flex-col gap-2.5">
+    <form onSubmit={handleSubmit} className="space-y-8">
+      <div className="flex flex-col gap-3">
         <label
-          className="text-sm leading-none text-gray-500"
+          className="text-sm font-medium text-gray-700"
           htmlFor={expertiseFieldId}
         >
           Rate your expertise in {roadmapTitle}:
@@ -47,45 +53,89 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
           id={expertiseFieldId}
           value={expertise}
           onChange={(e) => setExpertise(e.target.value)}
+          className="border-gray-300 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
         >
           <option value="" selected hidden>
             Select your expertise
           </option>
-          <option value="no-experience">No experience</option>
-          <option value="beginner">Beginner</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="expert">Expert</option>
-          <option value="master">Master</option>
+          {[
+            'No experience (just starting out)',
+            'Beginner (less than 1 year of experience)',
+            'Intermediate (1-3 years of experience)',
+            'Expert (3-5 years of experience)',
+            'Master (5+ years of experience)',
+          ].map((expertise) => (
+            <option key={expertise} value={expertise}>
+              {expertise}
+            </option>
+          ))}
         </SelectNative>
       </div>
-      <div className="mt-4 flex flex-col gap-2.5">
+      <div className="flex flex-col gap-3">
         <label
-          className="text-sm leading-none text-gray-500"
+          className="text-sm font-medium text-gray-700"
           htmlFor={goalFieldId}
         >
-          Define your goal:
+          What is your goal?{' '}
+          {hasInitialGoal && !defaultValues?.goal && `Tell us more (optional)`}
         </label>
 
-        <AutogrowTextarea
+        {!hasInitialGoal && (
+          <div className="flex flex-row flex-wrap gap-2">
+            {[
+              'Finding a job',
+              'Learning for fun',
+              'Building a side project',
+              'Switching careers',
+              'Getting a promotion',
+              'Filling knowledge gaps',
+              'Other (tell us more)',
+            ].map((goalTemplate) => (
+              <button
+                key={goalTemplate}
+                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600 shadow-sm transition-all hover:border-gray-300 hover:bg-gray-100 hover:shadow"
+                onClick={() => {
+                  if (goalTemplate !== 'Other (tell us more)') {
+                    setGoal(goalTemplate);
+                  }
+
+                  setHasInitialGoal(true);
+                  setTimeout(() => {
+                    goalRef.current?.focus();
+                  }, 0);
+                }}
+                type="button"
+              >
+                {goalTemplate}
+              </button>
+            ))}
+          </div>
+        )}
+
+        <textarea
+          ref={goalRef}
           id={goalFieldId}
-          className="block min-h-20 w-full resize-none rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm outline-none placeholder:text-gray-500 focus:border-gray-500"
-          placeholder={`e.g. I am a beginner in ${roadmapTitle} and need to find a job as soon as possible`}
+          className={cn(
+            'block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm shadow-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500',
+            !hasInitialGoal && 'hidden',
+          )}
+          placeholder={`e.g. need to find a job as soon as possible`}
           value={goal}
           onChange={(e) => setGoal(e.target.value)}
         />
       </div>
 
-      <div className="mt-4 flex flex-col gap-2.5">
+      <div className="flex flex-col gap-3">
         <label
-          className="text-sm leading-none text-gray-500"
+          className="text-sm font-medium text-gray-700"
           htmlFor={commitFieldId}
         >
           How many hours per week can you commit to learning?
         </label>
 
-        <AutogrowTextarea
+        <input
           id={commitFieldId}
-          className="block min-h-20 w-full resize-none rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm outline-none placeholder:text-gray-500 focus:border-gray-500"
+          className="block w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm shadow-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
           placeholder="e.g. 10 hours per week"
           value={commit}
           onChange={(e) => setCommit(e.target.value)}
@@ -93,9 +143,9 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
       </div>
 
       <button
-        disabled={isLoading}
+        disabled={isLoading || !hasFormCompleted}
         type="submit"
-        className="mt-4 flex h-9 w-full items-center justify-center gap-2 rounded-lg bg-black px-4 py-2 text-sm text-white"
+        className="mt-6 flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-black px-6 py-2 text-sm text-white shadow-sm transition-all hover:bg-gray-900 disabled:pointer-events-none disabled:opacity-50"
       >
         {isLoading ? (
           <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
@@ -108,7 +158,7 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
               </>
             ) : (
               <>
-                <PlayIcon className="size-4" />
+                <MessageCircle className="size-4" />
                 Start Chatting
               </>
             )}
