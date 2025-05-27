@@ -42,15 +42,15 @@ export function ChatPersona(props: ChatPersonaProps) {
   const roadmapTitle = roadmap?.json.title ?? '';
 
   return (
-    <div className="relative mx-auto flex h-full max-w-[400px] grow flex-col justify-center p-4">
-      <div className="mb-8 text-center">
+    <div className="relative mx-auto flex h-auto px-4 sm:h-full max-w-[400px] grow flex-col justify-center p-4 sm:p-4 px-2">
+      <div className="mb-4 sm:mb-8 text-left sm:text-center">
         <img
           src="/images/gifs/wave.gif"
           alt="Wave"
-          className="mx-auto mb-5 h-24 w-24"
+          className="hidden sm:block mx-auto mb-3 sm:mb-5 h-16 sm:h-24 w-16 sm:w-24"
         />
-        <h2 className="text-xl font-semibold">Welcome to the AI Tutor</h2>
-        <p className="mt-1 text-sm text-balance text-gray-500">
+        <h2 className="text-lg sm:text-xl font-semibold">Welcome to the AI Tutor</h2>
+        <p className="mt-1 text-xs sm:text-sm text-balance text-gray-500 pr-8 sm:px-0">
           Before we start, answer these questions so we can help you better.
         </p>
       </div>

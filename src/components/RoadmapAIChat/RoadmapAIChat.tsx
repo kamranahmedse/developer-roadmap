@@ -53,7 +53,6 @@ import {
   getTailwindScreenDimension,
   type TailwindScreenDimensions,
 } from '../../lib/is-mobile';
-import { UserPersonaForm } from '../UserPersona/UserPersonaForm';
 import { ChatPersona } from '../UserPersona/ChatPersona';
 import { userPersonaOptions } from '../../queries/user-persona';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
@@ -434,7 +433,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                     setActiveTab('chat');
                     setIsChatMobileVisible(true);
                   }}
-                  className="relative overflow-hidden rounded-full bg-stone-900 px-4 py-2 text-center text-white shadow-2xl hover:bg-stone-800"
+                  className="relative w-max overflow-hidden rounded-full bg-stone-900 px-4 py-2 text-center text-white shadow-2xl hover:bg-stone-800"
                 >
                   <span className="relative z-20 flex items-center gap-2 text-sm">
                     <Bot className="size-5 text-yellow-400" />
