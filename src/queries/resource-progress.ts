@@ -1,5 +1,6 @@
 import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
+import { isLoggedIn } from '../lib/jwt';
 
 export type GetUserResourceProgressResponse = {
   totalTopicCount: number;
@@ -24,6 +25,7 @@ export function userResourceProgressOptions(
         },
       );
     },
+    enabled: !!isLoggedIn(),
     refetchOnMount: false,
   });
 }

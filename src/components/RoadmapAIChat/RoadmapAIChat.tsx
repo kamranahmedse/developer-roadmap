@@ -53,6 +53,9 @@ import {
   getTailwindScreenDimension,
   type TailwindScreenDimensions,
 } from '../../lib/is-mobile';
+import { UserPersonaForm } from '../UserPersona/UserPersonaForm';
+import { ChatPersona } from '../UserPersona/ChatPersona';
+import { userPersonaOptions } from '../../queries/user-persona';
 
 export type RoamdapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -113,10 +116,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     queryClient,
   );
 
-  const {
-    data: userResourceProgressData,
-    isLoading: userResourceProgressLoading,
-  } = useQuery(userResourceProgressOptions('roadmap', roadmapId), queryClient);
+  const { isLoading: userResourceProgressLoading } = useQuery(
+    userResourceProgressOptions('roadmap', roadmapId),
+    queryClient,
+  );
 
   const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
     getAiCourseLimitOptions(),
@@ -125,6 +128,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
+
+  const { data: userPersona, isLoading: isUserPersonaLoading } = useQuery(
+    userPersonaOptions(roadmapId),
+    queryClient,
+  );
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -140,12 +148,12 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   }, [roadmapDetail]);
 
   useEffect(() => {
-    if (!roadmapTreeData || !roadmapDetail) {
+    if (!roadmapTreeData || !roadmapDetail || isUserPersonaLoading) {
       return;
     }
 
     setIsLoading(false);
-  }, [roadmapTreeData, roadmapDetail]);
+  }, [roadmapTreeData, roadmapDetail, isUserPersonaLoading]);
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const handleChatSubmit = (json: JSONContent) => {
@@ -381,7 +389,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     roadmapTreeLoading ||
     userResourceProgressLoading ||
     isTokenUsageLoading ||
-    isBillingDetailsLoading;
+    isBillingDetailsLoading ||
+    isUserPersonaLoading;
+
+  const shouldShowChatPersona =
+    !isLoading && !isUserPersonaLoading && !userPersona && isLoggedIn();
 
   return (
     <div className="flex flex-grow flex-row">
@@ -507,7 +519,11 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                 </div>
               )}
 
-              {!isLoading && (
+              {shouldShowChatPersona && !isLoading && (
+                <ChatPersona roadmapId={roadmapId} />
+              )}
+
+              {!isLoading && !shouldShowChatPersona && (
                 <div className="absolute inset-0 flex flex-col">
                   <div className="relative flex grow flex-col justify-end">
                     <div className="flex flex-col justify-end gap-2 px-3 py-2">
@@ -538,7 +554,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
               )}
             </div>
 
-            {!isLoading && (
+            {!isLoading && !shouldShowChatPersona && (
               <div className="flex flex-col border-t border-gray-200">
                 {!isLimitExceeded && (
                   <AIChatActionButtons
