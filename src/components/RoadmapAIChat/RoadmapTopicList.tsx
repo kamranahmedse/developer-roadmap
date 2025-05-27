@@ -1,8 +1,8 @@
-import { useMutation, useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { queryClient } from '../../stores/query-client';
-import { useMemo, useState } from 'react';
-import { TopicResourcesModal } from './TopicResourcesModal';
+import { Fragment, useMemo } from 'react';
+import { ChevronRightIcon } from 'lucide-react';
 
 type TopicListType = {
   topicId: string;
@@ -66,17 +66,34 @@ export function RoadmapTopicList(props: RoadmapTopicListProps) {
 
   return (
     <div className="relative my-6 flex flex-wrap gap-1 first:mt-0 last:mb-0">
-      {progressItemWithText.map((item) => (
-        <button
-          key={item.topicId}
-          className="collapse-if-empty rounded-lg border border-gray-200 bg-white p-1 px-1.5 text-left text-sm"
-          onClick={() => {
-            onTopicClick?.(item.topicId, item.text);
-          }}
-        >
-          {item.text}
-        </button>
-      ))}
+      {progressItemWithText.map((item) => {
+        const labelParts = item.text.split(' > ');
+        const labelPartCount = labelParts.length;
+
+        return (
+          <button
+            key={item.topicId}
+            className="collapse-if-empty flex items-center gap-1 rounded-lg border border-gray-200 bg-white p-1 px-2 text-left text-sm hover:bg-gray-50"
+            onClick={() => {
+              onTopicClick?.(item.topicId, item.text);
+            }}
+          >
+            {labelParts.map((part, index) => {
+              return (
+                <Fragment key={index}>
+                  <span>{part}</span>
+                  {index < labelPartCount - 1 && (
+                    <ChevronRightIcon
+                      className="size-3 text-gray-400"
+                      strokeWidth={2.5}
+                    />
+                  )}
+                </Fragment>
+              );
+            })}
+          </button>
+        );
+      })}
     </div>
   );
 }
