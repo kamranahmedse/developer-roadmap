@@ -135,6 +135,16 @@ const hasProjects = projectCount > 0;
               isActive={activeTab === 'roadmap'}
               text='Roadmap'
             />
+            {hasAIChat && (
+              <TabLink
+                url={`/${roadmapId}/ai`}
+                icon={Bot}
+                text='AI Mentor'
+                mobileText='AI'
+                isActive={false}
+                badgeText='New'
+              />
+            )}
             {hasProjects && (
               <TabLink
                 url={`/${roadmapId}/projects`}
@@ -151,16 +161,6 @@ const hasProjects = projectCount > 0;
                 text='Courses'
                 isActive={activeTab === 'courses'}
                 className='hidden md:flex'
-              />
-            )}
-            {hasAIChat && (
-              <TabLink
-                url={`/${roadmapId}/ai`}
-                icon={Bot}
-                text='Chat with AI'
-                mobileText='AI'
-                isActive={false}
-                badgeText='New'
               />
             )}
           </div>
