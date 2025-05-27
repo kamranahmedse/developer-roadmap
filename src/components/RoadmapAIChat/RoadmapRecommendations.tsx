@@ -1,9 +1,8 @@
-import { useMutation, useQuery } from '@tanstack/react-query';
-import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
+import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
-import { useMemo, useState } from 'react';
-import { TopicResourcesModal } from './TopicResourcesModal';
+import { useMemo } from 'react';
 import { listBuiltInRoadmaps } from '../../queries/roadmap';
+import { SquareArrowOutUpRightIcon } from 'lucide-react';
 
 type RoadmapSlugListType = {
   roadmapSlug: string;
@@ -64,12 +63,15 @@ export function RoadmapRecommendations(props: RoadmapRecommendationsProps) {
     <>
       <div className="relative my-6 flex flex-wrap gap-1 first:mt-0 last:mb-0">
         {progressItemWithText.map((item) => (
-          <button
+          <a
+            href={`/ai/chat/${item.roadmapSlug}`}
+            target="_blank"
             key={item.roadmapSlug}
-            className="rounded-lg border border-gray-200 bg-white p-1 px-1.5 text-left text-sm"
+            className="group flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-2.5 py-1.5 text-left text-sm text-gray-700 transition-all hover:border-gray-300 hover:bg-gray-50 hover:text-gray-900 active:bg-gray-100"
           >
             {item.title}
-          </button>
+            <SquareArrowOutUpRightIcon className="size-3.5 text-gray-400 transition-transform group-hover:text-gray-600" />
+          </a>
         ))}
       </div>
     </>
