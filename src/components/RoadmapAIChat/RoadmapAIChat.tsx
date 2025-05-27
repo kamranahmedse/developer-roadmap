@@ -50,7 +50,8 @@ import { slugify } from '../../lib/slugger';
 import { AIChatActionButtons } from './AIChatActionButtons';
 import { cn } from '../../lib/classname';
 import {
-  getTailwindScreenDimension, type TailwindScreenDimensions
+  getTailwindScreenDimension,
+  type TailwindScreenDimensions,
 } from '../../lib/is-mobile';
 
 export type RoamdapAIChatHistoryType = {
@@ -463,6 +464,10 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
           onCloseTopic={() => {
             setSelectedTopicId(null);
             setSelectedTopicTitle(null);
+            setActiveTab('chat');
+          }}
+          onCloseChat={() => {
+            setIsChatMobileVisible(false);
             setActiveTab('chat');
           }}
           selectedTopicId={selectedTopicId}

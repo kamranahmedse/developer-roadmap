@@ -4,9 +4,7 @@ import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { isLoggedIn } from '../../lib/jwt';
 import { BookIcon, BotIcon, GiftIcon, XIcon } from 'lucide-react';
-import type {
-  RoadmapAIChatTab
-} from './RoadmapAIChat';
+import type { RoadmapAIChatTab } from './RoadmapAIChat';
 import { useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { getPercentage } from '../../lib/number';
@@ -18,6 +16,8 @@ type RoadmapAIChatHeaderProps = {
 
   onLogin: () => void;
   onUpgrade: () => void;
+
+  onCloseChat: () => void;
 
   activeTab: RoadmapAIChatTab;
   onTabChange: (tab: RoadmapAIChatTab) => void;
@@ -40,14 +40,14 @@ function TabButton(props: TabButtonProps) {
   return (
     <button
       className={cn(
-        'flex flex-shrink-0 h-full items-center gap-2 px-4 text-sm',
+        'flex h-full flex-shrink-0 items-center gap-2 px-4 text-sm',
         isActive && 'bg-gray-100',
         onClose && 'pr-2 pl-4',
       )}
       onClick={onClick}
     >
       {icon}
-      <span>{label}</span>
+      <span className="hidden sm:block">{label}</span>
 
       {onClose && (
         <span
@@ -70,6 +70,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
     onLogin,
     onUpgrade,
     isLoading: isDataLoading,
+    onCloseChat,
 
     activeTab,
     onTabChange,
@@ -150,8 +151,8 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
                   className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 2xl:block"
                   onClick={handleCreditsClick}
                 >
-                  <span className="font-medium">{usagePercentage}%</span>{' '}
-                  limit used
+                  <span className="font-medium">{usagePercentage}%</span> limit
+                  used
                 </button>
                 <button
                   className="flex items-center gap-1 rounded-md bg-yellow-400 px-2 py-1 text-sm text-black hover:bg-yellow-500"
@@ -159,6 +160,12 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
                 >
                   <GiftIcon className="size-4" />
                   Upgrade
+                </button>
+                <button
+                  className="hidden items-center gap-1 rounded-md bg-gray-200 px-2 py-1 text-sm text-black hover:bg-gray-300 max-xl:flex"
+                  onClick={onCloseChat}
+                >
+                  <XIcon className="size-3.5" strokeWidth={2.5} />
                 </button>
               </>
             )}
