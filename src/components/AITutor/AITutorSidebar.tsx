@@ -146,7 +146,7 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
         </ul>
 
         {isLoggedIn() && (
-          <div className="mt-auto">
+          <div className="mt-auto mb-2 space-y-1">
             <AITutorSidebarItem
               item={{
                 key: 'billing',
