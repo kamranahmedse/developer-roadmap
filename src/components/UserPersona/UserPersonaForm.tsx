@@ -7,6 +7,7 @@ export type UserPersonaFormData = {
   expertise: string;
   goal: string;
   commit: string;
+  about: string;
 };
 
 type UserPersonaFormProps = {
@@ -58,11 +59,13 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
   const [selectedGoal, setSelectedGoal] = useState(getInitialGoalSelection());
   const [goal, setGoal] = useState(defaultValues?.goal ?? '');
   const [commit, setCommit] = useState(defaultValues?.commit ?? '');
+  const [about, setAbout] = useState(defaultValues?.about ?? '');
 
   const expertiseFieldId = useId();
   const goalFieldId = useId();
   const goalSelectId = useId();
   const commitFieldId = useId();
+  const aboutFieldId = useId();
 
   const goalRef = useRef<HTMLTextAreaElement>(null);
 
@@ -81,7 +84,7 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    onSubmit({ expertise, goal, commit });
+    onSubmit({ expertise, goal, commit, about });
   };
 
   const hasFormCompleted = !!expertise && !!goal && !!commit;
@@ -165,6 +168,23 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
           placeholder="e.g. 10 hours per week"
           value={commit}
           onChange={(e) => setCommit(e.target.value)}
+        />
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <label
+          className="text-sm font-medium text-gray-700"
+          htmlFor={aboutFieldId}
+        >
+          Tell us about yourself (optional but recommended)
+        </label>
+
+        <textarea
+          id={aboutFieldId}
+          className="block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+          placeholder="e.g. I'm a frontend developer with experience in React, looking to expand my backend skills..."
+          value={about}
+          onChange={(e) => setAbout(e.target.value)}
         />
       </div>
 
