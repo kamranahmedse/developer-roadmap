@@ -87,7 +87,7 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
   const hasFormCompleted = !!expertise && !!goal && !!commit;
 
   return (
-    <form onSubmit={handleSubmit} className={cn('space-y-8', className)}>
+    <form onSubmit={handleSubmit} className={cn('space-y-5', className)}>
       <div className="flex flex-col gap-3">
         <label
           className="text-sm font-medium text-gray-700"
