@@ -1,1 +1,3 @@
-# Step-back Prompting
+# Step-Back Prompting
+
+Step-back prompting improves LLM performance by first asking a general question related to the specific task, then using that answer to inform the final response. This technique activates relevant background knowledge before attempting the specific problem. For example, before writing a video game level storyline, first ask "What are key settings for engaging first-person shooter levels?" then use those insights to create the specific storyline. This approach reduces biases and improves accuracy by grounding responses in broader principles.
