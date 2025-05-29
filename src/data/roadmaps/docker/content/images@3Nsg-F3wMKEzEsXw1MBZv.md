@@ -4,5 +4,5 @@ Docker images are lightweight, standalone, and executable software packages that
 
 Learn more from the following resources:
 
-- [@article@What’s the Difference Between Docker Images and Containers?](https://aws.amazon.com/compare/the-difference-between-docker-images-and-containers/)
+- [@article@What's the Difference Between Docker Images and Containers?](https://aws.amazon.com/compare/the-difference-between-docker-images-and-containers/)
 - [@video@What is an image?](https://www.youtube.com/watch?v=NyvT9REqLe4)
