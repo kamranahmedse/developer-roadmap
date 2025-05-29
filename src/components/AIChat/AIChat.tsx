@@ -144,8 +144,8 @@ export function AIChat() {
     message.length === 0 && aiChatHistory.length === 0;
 
   return (
-    <div className="relative flex flex-col gap-2 bg-gray-50">
-      <div className="relative mx-auto w-full max-w-2xl grow pb-52">
+    <div className="relative flex min-h-screen flex-col gap-2 bg-gray-100">
+      <div className="relative mx-auto w-full max-w-2xl grow pb-44">
         {shouldShowQuickHelpPrompts && <QuickHelpPrompts />}
         {!shouldShowQuickHelpPrompts && (
           <ChatHistory
