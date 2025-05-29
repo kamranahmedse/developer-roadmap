@@ -1,6 +1,6 @@
 # Docker Desktop
 
-Docker Desktop is an easy-to-install application for Windows, macOS, and Linux that provides a graphical interface for Docker development. It simplifies container management and running with user-friendly experience and seamless host operating system integration for desktop development environments.
+Docker Desktop is a comprehensive development environment for Windows, macOS, and Linux with a GUI. It includes Docker Engine, CLI, Buildx, Extensions, Compose, Kubernetes, and credentials helper, providing everything needed for container development on desktop platforms.
 
 Learn more from the following resources:
 
