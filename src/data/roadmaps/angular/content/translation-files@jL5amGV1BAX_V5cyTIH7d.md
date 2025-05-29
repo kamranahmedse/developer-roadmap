@@ -4,6 +4,6 @@ After you prepare a component for translation, use the `extract-i18n` Angular CL
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Translation Files](https://angular.dev/guide/i18n/translation-files)
-- [@official@Angular Official Docs - Extract i18n](https://angular.dev/cli/extract-i18n)
+- [@official@Translation Files](https://angular.dev/guide/i18n/translation-files)
+- [@official@Extract i18n](https://angular.dev/cli/extract-i18n)
 - [@article@Angular i18n: internationalization & localization with examples](https://lokalise.com/blog/angular-i18n/)

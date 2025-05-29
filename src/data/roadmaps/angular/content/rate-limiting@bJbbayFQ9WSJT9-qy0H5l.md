@@ -4,7 +4,6 @@ Rate limiting in RxJS refers to the practice of restricting the rate at which ev
 
 Visit the following resources to learn more:
 
-- [@article@throttleTime](https://rxjs.dev/api/operators/throttleTime)
-- [@article@sampleTime](https://rxjs.dev/api/operators/sampleTime)
-- [@article@auditTime](https://rxjs.dev/api/operators/auditTime)
-- [@article@Blogs and tutorials on RxJS](https://blog.angular-university.io/functional-reactive-programming-for-angular-2-developers-rxjs-and-observables/)
+- [@article@throttleTime](https://www.learnrxjs.io/learn-rxjs/operators/filtering/throttletime)
+- [@article@auditTime](https://www.learnrxjs.io/learn-rxjs/operators/filtering/audittime)
+- [@article@Blogs and Tutorials on RxJS](https://blog.angular-university.io/functional-reactive-programming-for-angular-2-developers-rxjs-and-observables/)

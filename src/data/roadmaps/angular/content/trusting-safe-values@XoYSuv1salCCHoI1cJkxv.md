@@ -4,4 +4,4 @@ Sometimes applications genuinely need to include executable code, display an `<i
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Trusting safe values](https://angular.dev/best-practices/security#trusting-safe-values)
+- [@official@Trusting Safe Values](https://angular.dev/best-practices/security#trusting-safe-values)

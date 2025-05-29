@@ -1,7 +1,6 @@
 # ViewChild
 
-View queries retrieve results from the elements in the component's view — the elements defined in the component's own
-template.
+View queries retrieve results from the elements in the component's view — the elements defined in the  component's own template.
 
 Visit the following resources to learn more:
 

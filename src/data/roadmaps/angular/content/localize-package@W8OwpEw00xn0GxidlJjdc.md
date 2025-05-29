@@ -4,6 +4,6 @@ To take advantage of the localization features of Angular, use the Angular CLI t
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Add the localize package](https://angular.dev/guide/i18n/add-package)
+- [@official@Add the localize package](https://angular.dev/guide/i18n/add-package)
 - [@video@Learn to Internationalize Your Angular Apps with @angular/localize](https://www.youtube.com/watch?v=5h7HPY1OMfU)
 - [@video@Multi-Language Support in Angular: A Guide to Localization and Internationalization](https://www.youtube.com/watch?v=ouI21AyJ9tE)

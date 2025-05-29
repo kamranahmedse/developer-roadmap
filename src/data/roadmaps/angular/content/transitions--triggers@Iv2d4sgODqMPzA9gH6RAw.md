@@ -4,6 +4,6 @@ In Angular, transition states can be defined explicitly through the `state()` fu
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Transition and Triggers](https://angular.dev/guide/animations/transition-and-triggers)
+- [@official@Transition and Triggers](https://angular.dev/guide/animations/transition-and-triggers)
 - [@video@Angular Animations: Learn the basics](https://www.youtube.com/watch?v=CGBcIz1tYec)
 - [@video@How to use trigger function in Angular Animations](https://www.youtube.com/watch?v=3_B4OV5M_Ag)

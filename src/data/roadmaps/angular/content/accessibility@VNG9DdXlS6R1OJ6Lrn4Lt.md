@@ -4,6 +4,6 @@ The web is used by a wide variety of people, including those who have visual or 
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Accessibility](https://angular.dev/best-practices/a11y)
-- [@course@Learn Accessibility](https://web.dev/learn/accessibility/)
+- [@official@Accessibility](https://angular.dev/best-practices/a11y)
+- [@article@Learn Accessibility](https://web.dev/learn/accessibility/)
 - [@article@Angular a11y: 11 tips on how to make your apps more accessible](https://angularindepth.com/posts/1152/angular-a11y-11-tips-on-how-to-make-your-apps-more-accessible)
