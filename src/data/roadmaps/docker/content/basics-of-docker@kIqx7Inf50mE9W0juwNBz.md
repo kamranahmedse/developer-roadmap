@@ -1,6 +1,6 @@
 # Docker Basics
 
-Docker is a platform that simplifies the process of building, packaging, and deploying applications in lightweight, portable containers. In this section, we'll cover the basics of Docker, its components, and key commands you'll need to get started.
+Docker is a platform that simplifies building, packaging, and deploying applications in lightweight, portable containers. Key components include Dockerfiles (build instructions), Images (snapshots), and Containers (running instances). Essential commands cover pulling images, building from Dockerfiles, running containers with port mapping, and managing both containers and images.
 
 ## What is a Container?
 

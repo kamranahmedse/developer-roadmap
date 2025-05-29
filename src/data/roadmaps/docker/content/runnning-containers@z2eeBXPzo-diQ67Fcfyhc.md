@@ -1,6 +1,6 @@
 # Running Containers
 
-Running docker containers is typically done with a simple `docker run` command, which is a combination of the `docker create` and `docker start` commands.
+Running Docker containers is done with the `docker run` command, which combines `docker create` and `docker start`. This command creates a new container instance from an image and starts it, allowing you to execute applications in isolated environments.
 
 Visit the following resources to learn more:
 

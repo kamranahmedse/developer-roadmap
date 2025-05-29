@@ -1,6 +1,6 @@
 # Docker Images
 
-Docker images are lightweight, standalone, and executable software packages that include everything needed to run a piece of software, such as the application code, runtime, libraries, and system tools. They serve as the blueprint for creating containers and are built in layers, where each layer represents a file system change, allowing for efficient storage and distribution. Docker images can be stored in and pulled from container registries like Docker Hub, enabling developers to share, deploy, and version their applications consistently across different environments, ensuring reproducibility and simplifying the process of managing dependencies.
+Docker images are lightweight, standalone packages containing everything needed to run software: application code, runtime, libraries, and system tools. Built in layers for efficient storage, they serve as blueprints for containers and can be shared through registries like Docker Hub for consistent deployment across environments.
 
 Learn more from the following resources:
 
