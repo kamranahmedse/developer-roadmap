@@ -117,6 +117,7 @@ export function clearMigratedRoadmapProgress(
     'java',
     'cpp',
     'docker',
+    'prompt-engineering',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
