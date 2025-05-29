@@ -14,7 +14,7 @@ export function QuickActionButton(props: QuickActionButtonProps) {
   return (
     <button
       className={cn(
-        'flex shrink-0 items-center gap-2 rounded-lg border border-gray-200 px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-100 hover:text-black',
+        'pointer-events-auto flex shrink-0 cursor-pointer items-center gap-2 rounded-lg border border-gray-200 bg-white px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-100 hover:text-black',
         className,
       )}
       onClick={onClick}
