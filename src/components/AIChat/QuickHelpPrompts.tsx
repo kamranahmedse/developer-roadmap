@@ -1,6 +1,13 @@
 import { QuickActionButton } from './QuickActionButton';
 
-export function QuickHelpPrompts() {
+type QuickHelpPromptsProps = {
+  onQuickActionClick: (action: string) => void;
+  onPredefinedQuestionClick: (question: string) => void;
+};
+
+export function QuickHelpPrompts(props: QuickHelpPromptsProps) {
+  const { onQuickActionClick, onPredefinedQuestionClick } = props;
+
   const quickActions = [
     'Help select a career path',
     'Help me find a job',
@@ -20,7 +27,12 @@ export function QuickHelpPrompts() {
       <h2 className="text-2xl font-semibold">How can I help you?</h2>
       <div className="mt-6 flex items-center gap-2">
         {quickActions.map((action) => (
-          <QuickActionButton key={action} label={action} className="text-xs" />
+          <QuickActionButton
+            key={action}
+            label={action}
+            className="text-xs"
+            onClick={() => onQuickActionClick(action)}
+          />
         ))}
       </div>
 
@@ -29,6 +41,7 @@ export function QuickHelpPrompts() {
           <button
             key={question}
             className="block w-full cursor-pointer p-2 text-left text-sm text-gray-500 hover:bg-gray-100 hover:text-black"
+            onClick={() => onPredefinedQuestionClick(question)}
           >
             {question}
           </button>

@@ -28,6 +28,8 @@ export function AIChat() {
   const [isPersonalizedResponseFormOpen, setIsPersonalizedResponseFormOpen] =
     useState(false);
 
+  const textareaMessageRef = useRef<HTMLTextAreaElement>(null);
+
   const { data: tokenUsage, isLoading } = useQuery(
     getAiCourseLimitOptions(),
     queryClient,
@@ -155,7 +157,18 @@ export function AIChat() {
   return (
     <div className="ai-chat relative flex min-h-screen flex-col gap-2 bg-gray-100">
       <div className="relative mx-auto w-full max-w-2xl grow pb-55">
-        {shouldShowQuickHelpPrompts && <QuickHelpPrompts />}
+        {shouldShowQuickHelpPrompts && (
+          <QuickHelpPrompts
+            onQuickActionClick={(action) => {
+              textareaMessageRef.current?.focus();
+              setMessage(action);
+            }}
+            onPredefinedQuestionClick={(question) => {
+              textareaMessageRef.current?.focus();
+              setMessage(question);
+            }}
+          />
+        )}
         {!shouldShowQuickHelpPrompts && (
           <ChatHistory
             chatHistory={aiChatHistory}
@@ -190,6 +203,7 @@ export function AIChat() {
           }}
         >
           <AutogrowTextarea
+            ref={textareaMessageRef}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="min-h-10 w-full resize-none bg-transparent text-sm focus:outline-none"
