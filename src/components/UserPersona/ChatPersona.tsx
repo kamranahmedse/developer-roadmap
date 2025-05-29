@@ -4,7 +4,7 @@ import { roadmapJSONOptions } from '../../queries/roadmap';
 import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
 import { useToast } from '../../hooks/use-toast';
-import { userPersonaOptions } from '../../queries/user-persona';
+import { userRoadmapPersonaOptions } from '../../queries/user-persona';
 
 type ChatPersonaProps = {
   roadmapId: string;
@@ -33,7 +33,9 @@ export function ChatPersona(props: ChatPersonaProps) {
           toast.error(error?.message || 'Something went wrong');
         },
         onSettled: () => {
-          return queryClient.invalidateQueries(userPersonaOptions(roadmapId));
+          return queryClient.invalidateQueries(
+            userRoadmapPersonaOptions(roadmapId),
+          );
         },
       },
       queryClient,
@@ -42,15 +44,17 @@ export function ChatPersona(props: ChatPersonaProps) {
   const roadmapTitle = roadmap?.json.title ?? '';
 
   return (
-    <div className="relative mx-auto flex h-auto px-4 sm:h-full max-w-[400px] grow flex-col justify-center p-4 sm:p-4 px-2">
-      <div className="mb-4 sm:mb-8 text-left sm:text-center">
+    <div className="relative mx-auto flex h-auto max-w-[400px] grow flex-col justify-center p-4 px-2 px-4 sm:h-full sm:p-4">
+      <div className="mb-4 text-left sm:mb-8 sm:text-center">
         <img
           src="/images/gifs/wave.gif"
           alt="Wave"
-          className="hidden sm:block mx-auto mb-3 sm:mb-5 h-16 sm:h-24 w-16 sm:w-24"
+          className="mx-auto mb-3 hidden h-16 w-16 sm:mb-5 sm:block sm:h-24 sm:w-24"
         />
-        <h2 className="text-lg sm:text-xl font-semibold">Welcome to the AI Tutor</h2>
-        <p className="mt-1 text-xs sm:text-sm text-balance text-gray-500 pr-8 sm:px-0">
+        <h2 className="text-lg font-semibold sm:text-xl">
+          Welcome to the AI Tutor
+        </h2>
+        <p className="mt-1 pr-8 text-xs text-balance text-gray-500 sm:px-0 sm:text-sm">
           Before we start, answer these questions so we can help you better.
         </p>
       </div>

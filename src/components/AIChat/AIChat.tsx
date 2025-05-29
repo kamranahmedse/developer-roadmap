@@ -15,6 +15,8 @@ import { useToast } from '../../hooks/use-toast';
 import { readStream } from '../../lib/ai';
 import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import { ChatHistory } from './ChatHistory';
+import { PersonalizedResponseForm } from './PersonalizedResponseForm';
+import { userPersonaOptions } from '../../queries/user-persona';
 
 export function AIChat() {
   const toast = useToast();
@@ -23,6 +25,8 @@ export function AIChat() {
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessageHtml, setStreamedMessageHtml] = useState('');
   const [aiChatHistory, setAiChatHistory] = useState<AIChatHistoryType[]>([]);
+  const [isPersonalizedResponseFormOpen, setIsPersonalizedResponseFormOpen] =
+    useState(false);
 
   const { data: tokenUsage, isLoading } = useQuery(
     getAiCourseLimitOptions(),
@@ -31,6 +35,10 @@ export function AIChat() {
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
+  const { data: userPersona, isLoading: isUserPersonaLoading } = useQuery(
+    userPersonaOptions(),
+    queryClient,
+  );
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -157,11 +165,19 @@ export function AIChat() {
         )}
       </div>
 
+      {isPersonalizedResponseFormOpen && (
+        <PersonalizedResponseForm
+          defaultValues={userPersona?.chatPreferences ?? undefined}
+          onClose={() => setIsPersonalizedResponseFormOpen(false)}
+        />
+      )}
+
       <div className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl">
         <div className="mb-2 flex items-center gap-2">
           <QuickActionButton
             icon={PersonStandingIcon}
             label="Personalized Response"
+            onClick={() => setIsPersonalizedResponseFormOpen(true)}
           />
           <QuickActionButton icon={FileUpIcon} label="Upload Resume" />
         </div>

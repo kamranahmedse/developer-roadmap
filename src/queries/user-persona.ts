@@ -10,7 +10,15 @@ export interface UserPersonaDocument {
     expertise: string;
     goal: string;
     commit: string;
+    about?: string;
   }[];
+
+  chatPreferences: {
+    expertise: string;
+    goal: string;
+    about: string;
+    specialInstructions?: string;
+  };
 
   createdAt: Date;
   updatedAt: Date;
@@ -18,13 +26,24 @@ export interface UserPersonaDocument {
 
 type UserPersonaResponse = UserPersonaDocument['roadmaps'][number] | null;
 
-export function userPersonaOptions(roadmapId: string) {
+export function userRoadmapPersonaOptions(roadmapId: string) {
   return queryOptions({
     queryKey: ['user-persona', roadmapId],
     queryFn: async () => {
-      return httpGet<UserPersonaResponse>(`/v1-user-persona/${roadmapId}`);
+      return httpGet<UserPersonaResponse>(
+        `/v1-user-roadmap-persona/${roadmapId}`,
+      );
     },
     enabled: !!roadmapId && isLoggedIn(),
     refetchOnMount: false,
+  });
+}
+
+export function userPersonaOptions() {
+  return queryOptions({
+    queryKey: ['user-persona'],
+    queryFn: async () => {
+      return httpGet<UserPersonaDocument>('/v1-user-persona');
+    },
   });
 }

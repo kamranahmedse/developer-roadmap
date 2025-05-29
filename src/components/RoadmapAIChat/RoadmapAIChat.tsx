@@ -54,7 +54,7 @@ import {
   type TailwindScreenDimensions,
 } from '../../lib/is-mobile';
 import { ChatPersona } from '../UserPersona/ChatPersona';
-import { userPersonaOptions } from '../../queries/user-persona';
+import { userRoadmapPersonaOptions } from '../../queries/user-persona';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 import { lockBodyScroll } from '../../lib/dom';
 import { TutorIntroMessage } from './TutorIntroMessage';
@@ -133,7 +133,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     useQuery(billingDetailsOptions(), queryClient);
 
   const { data: userPersona, isLoading: isUserPersonaLoading } = useQuery(
-    userPersonaOptions(roadmapId),
+    userRoadmapPersonaOptions(roadmapId),
     queryClient,
   );
 

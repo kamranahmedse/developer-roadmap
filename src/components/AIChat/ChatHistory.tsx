@@ -84,7 +84,7 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
       <div
         className={cn(
           'flex items-start gap-2.5 rounded-lg',
-          role === 'user' ? 'bg-gray-200 p-3' : '',
+          role === 'user' ? 'bg-gray-200 p-3 max-w-[70%]' : '',
         )}
       >
         <div
