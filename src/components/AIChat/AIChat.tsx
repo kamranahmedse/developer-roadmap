@@ -1,3 +1,4 @@
+import './AIChat.css';
 import { FileUpIcon, PersonStandingIcon, SendIcon } from 'lucide-react';
 import { useCallback, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
@@ -144,7 +145,7 @@ export function AIChat() {
     message.length === 0 && aiChatHistory.length === 0;
 
   return (
-    <div className="relative flex min-h-screen flex-col gap-2 bg-gray-100">
+    <div className="ai-chat relative flex min-h-screen flex-col gap-2 bg-gray-100">
       <div className="relative mx-auto w-full max-w-2xl grow pb-55">
         {shouldShowQuickHelpPrompts && <QuickHelpPrompts />}
         {!shouldShowQuickHelpPrompts && (
@@ -161,13 +162,8 @@ export function AIChat() {
           <QuickActionButton
             icon={PersonStandingIcon}
             label="Personalized Response"
-            onClick={() => {}}
           />
-          <QuickActionButton
-            icon={FileUpIcon}
-            label="Upload Resume"
-            onClick={() => {}}
-          />
+          <QuickActionButton icon={FileUpIcon} label="Upload Resume" />
         </div>
 
         <form

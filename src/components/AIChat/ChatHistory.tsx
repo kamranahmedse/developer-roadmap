@@ -1,4 +1,4 @@
-import { Fragment, useMemo } from 'react';
+import { Fragment, memo, useMemo } from 'react';
 import type {
   AIChatHistoryType,
   AllowedAIChatRole,
@@ -14,7 +14,7 @@ type ChatHistoryProps = {
   streamedMessageHtml: string;
 };
 
-export function ChatHistory(props: ChatHistoryProps) {
+export const ChatHistory = memo((props: ChatHistoryProps) => {
   const { chatHistory, isStreamingMessage, streamedMessageHtml } = props;
 
   return (
@@ -53,7 +53,7 @@ export function ChatHistory(props: ChatHistoryProps) {
       </div>
     </div>
   );
-}
+});
 
 type AIChatCardProps = {
   role: AllowedAIChatRole;
@@ -62,7 +62,7 @@ type AIChatCardProps = {
   showActions?: boolean;
 };
 
-export function AIChatCard(props: AIChatCardProps) {
+export const AIChatCard = memo((props: AIChatCardProps) => {
   const { role, content, html: defaultHtml, showActions = true } = props;
   const { copyText, isCopied } = useCopyText();
 
@@ -114,4 +114,4 @@ export function AIChatCard(props: AIChatCardProps) {
       )}
     </div>
   );
-}
+});
