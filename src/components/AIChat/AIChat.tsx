@@ -145,7 +145,7 @@ export function AIChat() {
 
   return (
     <div className="relative flex min-h-screen flex-col gap-2 bg-gray-100">
-      <div className="relative mx-auto w-full max-w-2xl grow pb-44">
+      <div className="relative mx-auto w-full max-w-2xl grow pb-55">
         {shouldShowQuickHelpPrompts && <QuickHelpPrompts />}
         {!shouldShowQuickHelpPrompts && (
           <ChatHistory
