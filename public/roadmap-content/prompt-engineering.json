@@ -1,232 +1,232 @@
 {
   "jrH1qE6EnFXL4fTyYU8gR": {
     "title": "Introduction",
-    "description": "",
+    "description": "Prompt engineering is the practice of designing effective inputs for Large Language Models to achieve desired outputs. This roadmap covers fundamental concepts, core techniques, model parameters, and advanced methods. It's a universal skill accessible to anyone, requiring no programming background, yet crucial for unlocking AI potential across diverse applications and domains.",
     "links": []
   },
   "74JxgfJ_1qmVNZ_QRp9Ne": {
     "title": "LLMs and how they work?",
-    "description": "",
+    "description": "LLMs function as sophisticated prediction engines that process text sequentially, predicting the next token based on relationships between previous tokens and patterns from training data. They don't predict single tokens directly but generate probability distributions over possible next tokens, which are then sampled using parameters like temperature and top-K. The model repeatedly adds predicted tokens to the sequence, building responses iteratively. This token-by-token prediction process, combined with massive training datasets, enables LLMs to generate coherent, contextually relevant text across diverse applications and domains.",
     "links": []
   },
   "i4ijY3T5gLgNz0XqRipXe": {
     "title": "What is a Prompt?",
-    "description": "",
+    "description": "A prompt is an input provided to a Large Language Model (LLM) to generate a response or prediction. It serves as the instruction or context that guides the AI model's output generation process. Effective prompts are clear, specific, well-structured, and goal-oriented, directly affecting the accuracy and relevance of AI responses.",
     "links": []
   },
   "43drPbTwPqJQPyzwYUdBT": {
     "title": "What is Prompt Engineering?",
-    "description": "",
+    "description": "Prompt engineering is the practice of crafting effective input text to guide AI language models toward desired outputs. It involves designing prompts that communicate intent clearly to get accurate, relevant responses. This iterative process requires understanding how LLMs work as prediction engines and using techniques to optimize their performance for specific tasks.",
     "links": []
   },
   "Yb5cQiV2ETxPbBYCLOpt2": {
     "title": "OpenAI",
-    "description": "",
+    "description": "OpenAI developed influential language models including GPT-3, GPT-4, and ChatGPT, setting industry standards for prompt engineering practices. Their API provides access to powerful LLMs with configurable parameters like temperature and max tokens. Many prompt engineering techniques and best practices originated from working with OpenAI systems.",
     "links": []
   },
   "o-6UKLZ6oCRbAKgRjH2uI": {
     "title": "Google",
-    "description": "",
+    "description": "Google develops influential LLMs including Gemini, PaLM, and Bard. Through Vertex AI and Google Cloud Platform, they provide enterprise-grade model access with extensive prompt testing via Vertex AI Studio. Google's research has advanced many prompt engineering techniques, including Chain of Thought reasoning methods.",
     "links": []
   },
   "V8pDOwrRKKcHBTd4qlSsH": {
     "title": "Anthropic",
-    "description": "",
+    "description": "Anthropic created Claude, a family of large language models known for safety features and constitutional AI training. Claude models excel at following instructions, maintaining context, and avoiding harmful outputs. Their strong instruction-following capabilities and built-in safety measures make them valuable for reliable, ethical AI applications.",
     "links": []
   },
   "Td2YzDFT4LPGDw8JMmQSQ": {
     "title": "Meta",
-    "description": "",
+    "description": "Meta (formerly Facebook) develops the Llama family of open-source large language models. Llama models are available for research and commercial use, offering strong performance across various tasks. For prompt engineering, Meta's models provide transparency in training data and architecture, allowing developers to fine-tune and customize prompts for specific applications without vendor lock-in.",
     "links": []
   },
   "3wshuH7_DXgbhxsLzzI4D": {
     "title": "xAI",
-    "description": "",
+    "description": "xAI is Elon Musk's AI company that created Grok, a conversational AI model trained on web data with a focus on real-time information and humor. Grok aims to be more truthful and less politically correct than other models. For prompt engineering, xAI offers unique capabilities in accessing current events and generating responses with a distinctive conversational style.",
     "links": []
   },
   "pamV5Z8DRKk2ioZbg6QVK": {
     "title": "LLM",
-    "description": "",
+    "description": "Large Language Models (LLMs) are AI systems trained on vast text data to understand and generate human-like language. They work as prediction engines, analyzing input and predicting the next most likely token. LLMs perform tasks like text generation, translation, summarization, and Q&A. Understanding token processing is key to effective prompt engineering.",
     "links": []
   },
   "NPcaSEteeEA5g22wQ7nL_": {
     "title": "Tokens",
-    "description": "",
+    "description": "Tokens are fundamental units of text that LLMs process, created by breaking down text into smaller components like words, subwords, or characters. Understanding tokens is crucial because models predict the next token in sequences, API costs are based on token count, and models have maximum token limits for input and output.",
     "links": []
   },
   "b-Xtkv6rt8QgzJXSShOX-": {
     "title": "Context Window",
-    "description": "",
+    "description": "Context window refers to the maximum number of tokens an LLM can process in a single interaction, including both input prompt and generated output. When exceeded, older parts are truncated. Understanding this constraint is crucial for prompt engineering—you must balance providing sufficient context with staying within token limits.",
     "links": []
   },
   "SWDa3Su3VS815WQbvvNsa": {
     "title": "Hallucination",
-    "description": "",
+    "description": "Hallucination in LLMs refers to generating plausible-sounding but factually incorrect or fabricated information. This occurs when models fill knowledge gaps or present uncertain information with apparent certainty. Mitigation techniques include requesting sources, asking for confidence levels, providing context, and always verifying critical information independently.",
     "links": []
   },
   "yfsjW1eze8mWT0iHxv078": {
     "title": "Model Weights / Parameters",
-    "description": "",
+    "description": "Model weights and parameters are the learned values that define an LLM's behavior and knowledge. Parameters are the trainable variables adjusted during training, while weights represent their final values. Understanding parameter count helps gauge model capabilities - larger models typically have more parameters and better performance but require more computational resources.",
     "links": []
   },
   "Ke5GT163k_ek9SzbcbBGE": {
     "title": "Fine-Tuning vs Prompt Engg.",
-    "description": "",
+    "description": "Fine-tuning trains models on specific data to specialize behavior, while prompt engineering achieves customization through input design without model modification. Prompt engineering is faster, cheaper, and more accessible. Fine-tuning offers deeper customization but requires significant resources and expertise.",
     "links": []
   },
   "gxydtFKmnXNY9I5kpTwjP": {
     "title": "RAG",
-    "description": "",
+    "description": "Retrieval-Augmented Generation (RAG) combines LLMs with external knowledge retrieval to ground responses in verified, current information. RAG retrieves relevant documents before generating responses, reducing hallucinations and enabling access to information beyond the model's training cutoff. This approach improves accuracy and provides source attribution.",
     "links": []
   },
   "Pw5LWA9vNRY0N2M0FW16f": {
     "title": "Agents",
-    "description": "",
+    "description": "AI agents are autonomous systems that use LLMs to reason, plan, and take actions to achieve specific goals. They combine language understanding with tool usage, memory, and decision-making to perform complex, multi-step tasks. Agents can interact with external APIs and services while maintaining context across interactions.",
     "links": []
   },
   "6W_ONYREbXHwPigoDx1cW": {
     "title": "Prompt Injection",
-    "description": "",
+    "description": "Prompt injection is a security vulnerability where malicious users manipulate LLM inputs to override intended behavior, bypass safety measures, or extract sensitive information. Attackers embed instructions within data to make models ignore original prompts and follow malicious commands. Mitigation requires input sanitization, injection-resistant prompt design, and proper security boundaries.",
     "links": []
   },
   "Sj1CMZzZp8kF-LuHcd_UU": {
     "title": "AI vs AGI",
-    "description": "",
+    "description": "AI (Artificial Intelligence) refers to systems that perform specific tasks intelligently, while AGI (Artificial General Intelligence) represents hypothetical AI with human-level reasoning across all domains. Current LLMs are narrow AI - powerful at language tasks but lacking true understanding or general intelligence like AGI would possess.",
     "links": []
   },
   "JgigM7HvmNOuKnp60v1Ce": {
     "title": "Sampling Parameters",
-    "description": "",
+    "description": "Sampling parameters (temperature, top-K, top-P) control how LLMs select tokens from probability distributions, determining output randomness and creativity. These parameters interact: at extreme settings, one can override others (temperature 0 makes top-K/top-P irrelevant). A balanced starting point is temperature 0.2, top-P 0.95, top-K 30 for coherent but creative results. Understanding their interactions is crucial for optimal prompting—use temperature 0 for factual tasks, higher values for creativity, and combine settings strategically based on your specific use case.",
     "links": []
   },
   "iMwg-I76-Tg5dhu8DGO6U": {
     "title": "Temperature",
-    "description": "",
+    "description": "Temperature controls the randomness in token selection during text generation. Lower values (0-0.3) produce deterministic, factual outputs. Medium values (0.5-0.7) balance creativity and coherence. Higher values (0.8-1.0) generate creative, diverse outputs but may be less coherent. Use low temperature for math/facts, high for creative writing.",
     "links": []
   },
   "FF8ai1v5GDzxXLQhpwuPj": {
     "title": "Top-K",
-    "description": "",
+    "description": "Top-K restricts token selection to the K most likely tokens from the probability distribution. Low values (1-10) produce conservative, factual outputs. Medium values (20-50) balance creativity and quality. High values (50+) enable diverse, creative outputs. Use low K for technical tasks, high K for creative writing.",
     "links": []
   },
   "-G1U1jDN5st1fTUtQmMl1": {
     "title": "Top-P",
-    "description": "",
+    "description": "Top-P (nucleus sampling) selects tokens from the smallest set whose cumulative probability exceeds threshold P. Unlike Top-K's fixed number, Top-P dynamically adjusts based on probability distribution. Low values (0.1-0.5) produce focused outputs, medium (0.6-0.9) balance creativity and coherence, high (0.9-0.99) enable creative diversity.",
     "links": []
   },
   "wSf7Zr8ZYBuKWX0GQX6J3": {
     "title": "Output Control",
-    "description": "",
+    "description": "Output control encompasses techniques and parameters for managing LLM response characteristics including length, format, style, and content boundaries. Key methods include max tokens for length limits, stop sequences for precise boundaries, temperature for creativity control, and structured output requirements for format consistency. Effective output control combines prompt engineering techniques with model parameters to ensure responses meet specific requirements. This is crucial for production applications where consistent, appropriately formatted outputs are essential for user experience and system integration.",
     "links": []
   },
   "vK9Gf8dGu2UvvJJhhuHG9": {
     "title": "Max Tokens",
-    "description": "",
+    "description": "Max tokens setting controls the maximum number of tokens an LLM can generate in response, directly impacting computation cost, response time, and energy consumption. Setting lower limits doesn't make models more concise—it simply stops generation when the limit is reached. This parameter is crucial for techniques like ReAct where models might generate unnecessary tokens after the desired response. Balancing max tokens involves considering cost efficiency, response completeness, and application requirements while ensuring critical information isn't truncated.",
     "links": []
   },
   "v3CylRlojeltcwnE76j8Q": {
     "title": "Stop Sequences",
-    "description": "",
+    "description": "Stop sequences are specific strings that signal the LLM to stop generating text when encountered, providing precise control over output length and format. Common examples include newlines, periods, or custom markers like \"###\" or \"END\". This parameter is particularly useful for structured outputs, preventing models from generating beyond intended boundaries. Stop sequences are essential for ReAct prompting and other scenarios where you need clean, precisely bounded responses. They offer more control than max tokens by stopping at logical breakpoints rather than arbitrary token limits.",
     "links": []
   },
   "g8ylIg4Zh567u-E3yVVY4": {
     "title": "Repetition Penalties",
-    "description": "",
+    "description": "Repetition penalties discourage LLMs from repeating words or phrases by reducing the probability of selecting previously used tokens. This includes frequency penalty (scales with usage count) and presence penalty (applies equally to any used token). These parameters improve output quality by promoting vocabulary diversity and preventing redundant phrasing.",
     "links": []
   },
   "YIVNjkmTOY61VmL0md9Pj": {
     "title": "Frequency Penalty",
-    "description": "",
+    "description": "Frequency penalty reduces token probability based on how frequently they've appeared in the text, with higher penalties for more frequent tokens. This prevents excessive repetition and encourages varied language use. The penalty scales with usage frequency, making overused words less likely to be selected again, improving content diversity.",
     "links": []
   },
   "WpO8V5caudySVehOcuDvK": {
     "title": "Presence Penalty",
-    "description": "",
+    "description": "Presence penalty reduces the likelihood of repeating tokens that have already appeared in the text, encouraging diverse vocabulary usage. Unlike frequency penalty which considers how often tokens appear, presence penalty applies the same penalty to any previously used token, promoting varied content and creativity.",
     "links": []
   },
   "j-PWO-ZmF9Oi9A5bwMRto": {
     "title": "Structured Outputs",
-    "description": "",
+    "description": "Structured outputs involve prompting LLMs to return responses in specific formats like JSON, XML, or other organized structures rather than free-form text. This approach forces models to organize information systematically, reduces hallucinations by imposing format constraints, enables easy programmatic processing, and facilitates integration with applications. For example, requesting movie classification results as JSON with specified schema ensures consistent, parseable responses. Structured outputs are particularly valuable for data extraction, API integration, and applications requiring reliable data formatting.",
     "links": []
   },
   "GRerL9UXN73TwpCW2eTIE": {
     "title": "Zero-Shot Prompting",
-    "description": "",
+    "description": "Zero-shot prompting provides only a task description without examples, relying on the model's training patterns. Simply describe the task clearly, provide input data, and optionally specify output format. Works well for simple classification, text generation, and Q&A, but may produce inconsistent results for complex tasks.",
     "links": []
   },
   "Iufv_LsgUNls-Alx_Btlh": {
     "title": "One-Shot / Few-Shot Prompting",
-    "description": "",
+    "description": "One-shot provides a single example to guide model behavior, while few-shot includes multiple examples (3-5) to demonstrate desired patterns. Examples show output structure, style, and tone, increasing accuracy and consistency. Use few-shot for complex formatting, specialized tasks, and when zero-shot results are inconsistent.",
     "links": []
   },
   "fWo39-hehRgwmx7CF36mM": {
     "title": "System Prompting",
-    "description": "",
+    "description": "System prompting sets the overall context, purpose, and operational guidelines for LLMs. It defines the model's role, behavioral constraints, output format requirements, and safety guardrails. System prompts provide foundational parameters that influence all subsequent interactions, ensuring consistent, controlled, and structured AI responses throughout the session.",
     "links": []
   },
   "XHWKGaSRBYT4MsCHwV-iR": {
     "title": "Role Prompting",
-    "description": "",
+    "description": "Role prompting assigns a specific character, identity, or professional role to the LLM to generate responses consistent with that role's expertise, personality, and communication style. By establishing roles like \"teacher,\" \"travel guide,\" or \"software engineer,\" you provide the model with appropriate domain knowledge, perspective, and tone for more targeted, natural interactions.",
     "links": []
   },
   "5TNK1KcSzh9GTKiEJnM-y": {
     "title": "Contextual Prompting",
-    "description": "",
+    "description": "Contextual prompting provides specific background information or situational details relevant to the current task, helping LLMs understand nuances and tailor responses accordingly. Unlike system or role prompts, contextual prompts supply immediate, task-specific information that's dynamic and changes based on the situation. For example: \"Context: You are writing for a blog about retro 80's arcade video games. Suggest 3 topics to write articles about.\" This technique ensures responses are relevant, accurate, and appropriately framed for the specific context provided.",
     "links": []
   },
   "2MboHh8ugkoH8dSd9d4Mk": {
     "title": "Step-back Prompting",
-    "description": "",
+    "description": "Step-back prompting improves LLM performance by first asking a general question related to the specific task, then using that answer to inform the final response. This technique activates relevant background knowledge before attempting the specific problem. For example, before writing a video game level storyline, first ask \"What are key settings for engaging first-person shooter levels?\" then use those insights to create the specific storyline. This approach reduces biases and improves accuracy by grounding responses in broader principles.",
     "links": []
   },
   "weRaJxEplhKDyFWSMeoyI": {
     "title": "Chain of Thought (CoT) Prompting",
-    "description": "",
+    "description": "Chain of Thought prompting improves LLM reasoning by generating intermediate reasoning steps before providing the final answer. Instead of jumping to conclusions, the model \"thinks through\" problems step by step. Simply adding \"Let's think step by step\" to prompts often dramatically improves accuracy on complex reasoning tasks and mathematical problems.",
     "links": []
   },
   "1EzqCoplXPiHjp9Z-vqn-": {
     "title": "Self-Consistency Prompting",
-    "description": "",
+    "description": "Self-consistency prompting generates multiple reasoning paths for the same problem using higher temperature settings, then selects the most commonly occurring answer through majority voting. This technique combines sampling and voting to improve accuracy and provides pseudo-probability of answer correctness. While more expensive due to multiple API calls, it significantly enhances reliability for complex reasoning tasks by reducing the impact of single incorrect reasoning chains and leveraging diverse problem-solving approaches.",
     "links": []
   },
   "ob9D0W9B9145Da64nbi1M": {
     "title": "Tree of Thoughts (ToT) Prompting",
-    "description": "",
+    "description": "Tree of Thoughts (ToT) generalizes Chain of Thought by allowing LLMs to explore multiple reasoning paths simultaneously rather than following a single linear chain. This approach maintains a tree structure where each thought represents a coherent step toward solving a problem, enabling the model to branch out and explore different reasoning directions. ToT is particularly effective for complex tasks requiring exploration and is well-suited for problems that benefit from considering multiple solution approaches before converging on the best answer.",
     "links": []
   },
   "8Ks6txRSUfMK7VotSQ4sC": {
     "title": "ReAct Prompting",
-    "description": "",
+    "description": "ReAct (Reason and Act) prompting enables LLMs to solve complex tasks by combining reasoning with external tool interactions. It follows a thought-action-observation loop: analyze the problem, perform actions using external APIs, review results, and iterate until solved. Useful for research, multi-step problems, and tasks requiring current data.",
     "links": []
   },
   "diHNCiuKHeMVgvJ4OMwVh": {
     "title": "Automatic Prompt Engineering",
-    "description": "",
+    "description": "Automatic Prompt Engineering (APE) uses LLMs to generate and optimize prompts automatically, reducing human effort while enhancing model performance. The process involves prompting a model to create multiple prompt variants, evaluating them using metrics like BLEU or ROUGE, then selecting the highest-scoring candidate. For example, generating 10 variants of customer order phrases for chatbot training, then testing and refining the best performers. This iterative approach helps discover effective prompts that humans might not consider, automating the optimization process.",
     "links": []
   },
   "Wvu9Q_kNhH1_JlOgxAjP6": {
     "title": "AI Red Teaming",
-    "description": "",
+    "description": "AI red teaming involves deliberately testing AI systems to find vulnerabilities, biases, or harmful behaviors through adversarial prompting. Teams attempt to make models produce undesired outputs, bypass safety measures, or exhibit problematic behaviors. This process helps identify weaknesses and improve AI safety and robustness before deployment.",
     "links": []
   },
   "0H2keZYD8iTNyBgmNVhto": {
     "title": "Prompt Debiasing",
-    "description": "",
+    "description": "Prompt debiasing involves techniques to reduce unwanted biases in LLM outputs by carefully crafting prompts. This includes using neutral language, diverse examples, and explicit instructions to avoid stereotypes or unfair representations. Effective debiasing helps ensure AI outputs are more fair, inclusive, and representative across different groups and perspectives.",
     "links": []
   },
   "HOqWHqAkxLX8f2ImSmZE7": {
     "title": "Prompt Ensembling",
-    "description": "",
+    "description": "Prompt ensembling combines multiple different prompts or prompt variations to improve output quality and consistency. This technique involves running the same query with different prompt formulations and aggregating results through voting, averaging, or selection. Ensembling reduces variance and increases reliability by leveraging diverse prompt perspectives.",
     "links": []
   },
   "CvV3GIvQhsTvE-TQjTpIQ": {
     "title": "LLM Self Evaluation",
-    "description": "",
+    "description": "LLM self-evaluation involves prompting models to assess their own outputs for quality, accuracy, or adherence to criteria. This technique can identify errors, rate confidence levels, or check if responses meet specific requirements. Self-evaluation helps improve output quality through iterative refinement and provides valuable feedback for prompt optimization.",
     "links": []
   },
   "P5nDyQbME53DOEfSkcY6I": {
     "title": "Calibrating LLMs",
-    "description": "",
+    "description": "Calibrating LLMs involves adjusting models so their confidence scores accurately reflect their actual accuracy. Well-calibrated models express appropriate uncertainty - being confident when correct and uncertain when likely wrong. This helps users better trust and interpret model outputs, especially in critical applications where uncertainty awareness is crucial.",
     "links": []
   }
 }
