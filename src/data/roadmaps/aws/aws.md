@@ -6,11 +6,12 @@ briefTitle: 'AWS'
 briefDescription: 'Step by step guide to learning AWS in 2025'
 title: 'AWS Roadmap'
 description: 'Step by step guide to learning AWS in 2025'
+renderer: 'editor'
 isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 2183.87
+  height: 2750
 schema:
   headline: 'AWS Roadmap'
   description: 'Learn how to use AWS with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
