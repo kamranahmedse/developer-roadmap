@@ -4,6 +4,6 @@ Resource management in Kubernetes involves managing CPU, memory, and storage res
 
 Learn more from the following links:
 
-- [@official@Managing Resources - Documentation](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
+- [@official@Managing Workloads - Documentation](https://kubernetes.io/docs/concepts/workloads/management/)
 - [@article@Managing Kubernetes resources: 5 things to remember](https://enterprisersproject.com/article/2020/8/managing-kubernetes-resources-5-things-remember)
 - [@video@Resource Management in Kubernetes](https://www.youtube.com/watch?v=MbgFIQoVh6w)
