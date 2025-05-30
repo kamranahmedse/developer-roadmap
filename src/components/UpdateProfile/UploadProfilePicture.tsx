@@ -1,4 +1,3 @@
-import Cookies from 'js-cookie';
 import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from 'react';
 import { TOKEN_COOKIE_NAME, removeAuthToken } from '../../lib/jwt';
 

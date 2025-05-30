@@ -17,6 +17,8 @@ import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import { ChatHistory } from './ChatHistory';
 import { PersonalizedResponseForm } from './PersonalizedResponseForm';
 import { userPersonaOptions } from '../../queries/user-persona';
+import { UploadResumeModal } from './UploadResumeModal';
+import { userResumeOptions } from '../../queries/user-resume';
 
 export function AIChat() {
   const toast = useToast();
@@ -25,8 +27,10 @@ export function AIChat() {
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessageHtml, setStreamedMessageHtml] = useState('');
   const [aiChatHistory, setAiChatHistory] = useState<AIChatHistoryType[]>([]);
+
   const [isPersonalizedResponseFormOpen, setIsPersonalizedResponseFormOpen] =
     useState(false);
+  const [isUploadResumeModalOpen, setIsUploadResumeModalOpen] = useState(false);
 
   const textareaMessageRef = useRef<HTMLTextAreaElement>(null);
 
@@ -39,6 +43,10 @@ export function AIChat() {
     useQuery(billingDetailsOptions(), queryClient);
   const { data: userPersona, isLoading: isUserPersonaLoading } = useQuery(
     userPersonaOptions(),
+    queryClient,
+  );
+  const { data: userResume, isLoading: isUserResumeLoading } = useQuery(
+    userResumeOptions(),
     queryClient,
   );
 
@@ -185,6 +193,13 @@ export function AIChat() {
         />
       )}
 
+      {isUploadResumeModalOpen && (
+        <UploadResumeModal
+          onClose={() => setIsUploadResumeModalOpen(false)}
+          userResume={userResume}
+        />
+      )}
+
       <div className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl">
         <div className="mb-2 flex items-center gap-2">
           <QuickActionButton
@@ -192,7 +207,11 @@ export function AIChat() {
             label="Personalized Response"
             onClick={() => setIsPersonalizedResponseFormOpen(true)}
           />
-          <QuickActionButton icon={FileUpIcon} label="Upload Resume" />
+          <QuickActionButton
+            icon={FileUpIcon}
+            label="Upload Resume"
+            onClick={() => setIsUploadResumeModalOpen(true)}
+          />
         </div>
 
         <form

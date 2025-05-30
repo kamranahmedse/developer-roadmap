@@ -45,5 +45,7 @@ export function userPersonaOptions() {
     queryFn: async () => {
       return httpGet<UserPersonaDocument>('/v1-user-persona');
     },
+    enabled: !!isLoggedIn(),
+    refetchOnMount: false,
   });
 }
