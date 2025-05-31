@@ -1854,7 +1854,7 @@
       },
       "selected": false,
       "data": {
-        "label": "RecycleView",
+        "label": "RecyclerView",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
