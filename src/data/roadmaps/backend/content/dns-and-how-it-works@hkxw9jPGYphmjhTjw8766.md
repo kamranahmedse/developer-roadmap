@@ -4,6 +4,7 @@ DNS (Domain Name System) is a hierarchical, decentralized naming system for comp
 
 Visit the following resources to learn more:
 
+- [@article@Everything You Need to Know About DNS](https://cs.fyi/guide/everything-you-need-to-know-about-dns)
 - [@article@What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)
 - [@article@How DNS works (comic)](https://howdns.works/)
 - [@video@DNS and How does it Work?](https://www.youtube.com/watch?v=Wj0od2ag5sk)
