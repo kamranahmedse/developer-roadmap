@@ -5,4 +5,5 @@ SQLite is an open-source, lightweight relational database management system (RDB
 Visit the following resources to learn more:
 
 - [@article@sqflite - pub.dev package](https://pub.dev/packages/sqflite)
+- [@article@drift - pub.dev package](https://pub.dev/packages/drift)
 - [@feed@Explore top posts about SQLite](https://app.daily.dev/tags/sqlite?ref=roadmapsh)
