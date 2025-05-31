@@ -1,7 +1,6 @@
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
-
-export const REDIRECT_PAGE_AFTER_AUTH = 'redirect_page_after_auth';
+import { REDIRECT_PAGE_AFTER_AUTH } from '../../lib/auth';
 
 function easeInElement(el: Element) {
   el.classList.add('opacity-0', 'transition-opacity', 'duration-300');
