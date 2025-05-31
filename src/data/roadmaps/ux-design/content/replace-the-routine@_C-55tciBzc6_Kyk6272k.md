@@ -6,7 +6,7 @@ Replacing the routine in UX design is about finding more efficient, delightful, 
 
 Consider the following points when replacing the routine:
 
-- **Understand the user's context**: Study the users’ life cycle and create personas to better comprehend their . This helps you identify their preferences, pain points, and habits, which in turn enables the creation of a meaningful and effective design.
+- **Understand the user's context**: Study the users’ life cycle and create personas to better comprehend their needs. This helps you identify their preferences, pain points, and habits, which in turn enables the creation of a meaningful and effective design.
 
 - **Identify the existing routine**: Analyze the current habits and routines of your users. What are the steps they are used to taking in order to complete the task? This information will be vital in designing a product that smoothly replaces their existing routine with an improved one.
 
