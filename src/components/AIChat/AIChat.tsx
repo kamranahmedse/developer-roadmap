@@ -19,8 +19,7 @@ import { PersonalizedResponseForm } from './PersonalizedResponseForm';
 import { userPersonaOptions } from '../../queries/user-persona';
 import { UploadResumeModal } from './UploadResumeModal';
 import { userResumeOptions } from '../../queries/user-resume';
-import { httpPost } from '../../lib/http';
-import { httpPost as queryHttpPost } from '../../lib/query-http';
+import { httpPost } from '../../lib/query-http';
 
 export function AIChat() {
   const toast = useToast();
@@ -164,7 +163,7 @@ export function AIChat() {
   const { mutate: uploadResume, isPending: isUploading } = useMutation(
     {
       mutationFn: (formData: FormData) => {
-        return queryHttpPost('/v1-upload-resume', formData);
+        return httpPost('/v1-upload-resume', formData);
       },
       onSuccess: () => {
         toast.success('Resume uploaded successfully');
