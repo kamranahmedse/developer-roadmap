@@ -119,6 +119,7 @@ export function clearMigratedRoadmapProgress(
     'docker',
     'prompt-engineering',
     'aws',
+    'datastructures-and-algorithms',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {

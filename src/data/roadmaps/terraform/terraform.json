@@ -125,7 +125,7 @@
         }
       },
       "zIndex": 999,
-      "width": 299,
+      "width": 298,
       "height": 68,
       "positionAbsolute": {
         "x": -82.52142387891507,
@@ -2457,7 +2457,7 @@
         }
       },
       "zIndex": 999,
-      "width": 244,
+      "width": 243,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
