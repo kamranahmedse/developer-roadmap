@@ -184,8 +184,8 @@ export function AIChat() {
     message.length === 0 && aiChatHistory.length === 0;
 
   return (
-    <div className="ai-chat relative flex min-h-screen flex-col gap-2 bg-gray-100">
-      <div className="relative mx-auto w-full max-w-2xl grow pb-55">
+    <div className="ai-chat relative flex min-h-screen w-full flex-col gap-2 overflow-y-auto bg-gray-100">
+      <div className="relative mx-auto w-full max-w-2xl grow px-4 pb-55">
         {shouldShowQuickHelpPrompts && (
           <QuickHelpPrompts
             onQuickActionClick={(action) => {
@@ -223,7 +223,7 @@ export function AIChat() {
         />
       )}
 
-      <div className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl">
+      <div className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4 lg:left-[var(--ai-sidebar-width)]">
         <div className="mb-2 flex items-center gap-2">
           <QuickActionButton
             icon={PersonStandingIcon}
@@ -234,7 +234,7 @@ export function AIChat() {
             icon={FileUpIcon}
             label={
               isUploading
-                ? 'Uploading...'
+                ? 'Processing...'
                 : userResume?.fileName
                   ? 'Upload New Resume'
                   : 'Upload Resume'

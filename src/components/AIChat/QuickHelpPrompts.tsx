@@ -25,7 +25,7 @@ export function QuickHelpPrompts(props: QuickHelpPromptsProps) {
   return (
     <div className="mt-24">
       <h2 className="text-2xl font-semibold">How can I help you?</h2>
-      <div className="mt-6 flex items-center gap-2">
+      <div className="mt-6 flex flex-wrap items-center gap-2">
         {quickActions.map((action) => (
           <QuickActionButton
             key={action}

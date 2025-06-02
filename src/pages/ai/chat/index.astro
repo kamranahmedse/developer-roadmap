@@ -1,6 +1,7 @@
 ---
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 import { AIChat } from '../../../components/AIChat/AIChat';
+import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
 ---
 
 <SkeletonLayout
@@ -8,5 +9,11 @@ import { AIChat } from '../../../components/AIChat/AIChat';
   noIndex={true}
   description='Learn anything with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.'
 >
-  <AIChat client:load />
+  <AITutorLayout
+    activeTab='chat'
+    wrapperClassName='flex-row p-0 lg:p-0 overflow-hidden'
+    client:load
+  >
+    <AIChat client:load />
+  </AITutorLayout>
 </SkeletonLayout>

@@ -71,7 +71,7 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
       )}
 
       <aside
-        className={`w-[255px] shrink-0 border-r border-slate-200 ${
+        className={`w-[var(--ai-sidebar-width)] shrink-0 border-r border-slate-200 ${
           isFloating
             ? 'fixed top-0 bottom-0 left-0 z-50 block border-r-0 bg-white shadow-xl'
             : 'hidden lg:block'

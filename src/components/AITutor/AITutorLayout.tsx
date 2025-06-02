@@ -29,7 +29,14 @@ export function AITutorLayout(props: AITutorLayoutProps) {
         </button>
       </div>
 
-      <div className="flex flex-grow flex-row lg:h-screen">
+      <div
+        className="flex flex-grow flex-row lg:h-screen"
+        style={
+          {
+            '--ai-sidebar-width': '255px',
+          } as React.CSSProperties
+        }
+      >
         <AITutorSidebar
           onClose={() => setIsSidebarFloating(false)}
           isFloating={isSidebarFloating}
