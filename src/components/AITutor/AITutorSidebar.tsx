@@ -1,21 +1,10 @@
-import {
-  BookOpen,
-  Compass,
-  CreditCardIcon,
-  LogOut,
-  LogOutIcon,
-  Plus,
-  Star,
-  X,
-  Zap,
-} from 'lucide-react';
+import { BookOpen, Compass, Plus, Star, X, Zap } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AITutorLogo } from '../ReactIcons/AITutorLogo';
 import { cn } from '../../lib/classname';
-import { logout } from '../../lib/auth';
 import { UserDropdown } from './UserDropdown';
 
 type AITutorSidebarProps = {
@@ -145,36 +134,9 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
               </li>
             )}
         </ul>
-
-        {/* {isLoggedIn() && (
-          <div className="mt-auto mb-2 space-y-1">
-            <AITutorSidebarItem
-              item={{
-                key: 'billing',
-                label: 'Billing',
-                href: '/account/billing',
-                icon: CreditCardIcon,
-              }}
-            />
-            <AITutorSidebarItem
-              item={{
-                key: 'logout',
-                label: 'Logout',
-                icon: LogOutIcon,
-                href: '/logout',
-              }}
-              as="button"
-              isActive={false}
-              onClick={logout}
-              className="hover:text-red-500"
-            />
-          </div>
-        )} */}
-        {isLoggedIn() && (
-          <div className="mx-2 mt-auto mb-2">
-            <UserDropdown />
-          </div>
-        )}
+        <div className="mx-2 mt-auto mb-2">
+          <UserDropdown />
+        </div>
       </aside>
       {isFloating && (
         <div className="fixed inset-0 z-40 bg-black/50" onClick={onClose} />

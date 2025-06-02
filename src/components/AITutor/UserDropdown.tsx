@@ -1,10 +1,16 @@
 import {
-  ChevronsUpDownIcon,
-  CogIcon,
+  ChevronDown,
   CreditCardIcon,
+  LogInIcon,
   LogOutIcon,
-  UserIcon,
+  Settings,
+  User2,
 } from 'lucide-react';
+import { useAuth } from '../../hooks/use-auth';
+import { useClientMount } from '../../hooks/use-client-mount';
+import { logout } from '../../lib/auth';
+import { showLoginPopup } from '../../lib/popup';
+import { useIsPaidUser } from '../../queries/billing';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,16 +18,28 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '../DropdownMenu';
-import { useAuth } from '../../hooks/use-auth';
-import { logout } from '../../lib/auth';
 
 type UserDropdownProps = {};
 
 export function UserDropdown(props: UserDropdownProps) {
   const currentUser = useAuth();
+  const { isPaidUser, isLoading } = useIsPaidUser();
+  const isMounted = useClientMount();
+
+  if (!isMounted || isLoading) {
+    return null;
+  }
 
   if (!currentUser) {
-    return null;
+    return (
+      <button
+        onClick={showLoginPopup}
+        className="animate-fade-in inline-flex h-auto w-full items-center justify-center gap-2 rounded-lg border border-gray-700 bg-black px-4 py-2.5 text-sm font-medium text-white transition-all duration-200 outline-none hover:!opacity-80 disabled:cursor-not-allowed disabled:opacity-60"
+      >
+        <LogInIcon className="size-4" />
+        Free Signup or Login
+      </button>
+    );
   }
 
   const userAvatar = currentUser?.avatar
@@ -31,58 +49,65 @@ export function UserDropdown(props: UserDropdownProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="inline-flex h-auto w-full items-center justify-between gap-2 rounded-lg border border-transparent px-4 py-2 text-sm font-medium outline-none hover:bg-gray-100 hover:text-black focus-visible:border-gray-300 focus-visible:bg-gray-100 focus-visible:text-black disabled:cursor-not-allowed disabled:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0">
-          <div className="flex min-w-0 items-center gap-2.5">
-            <div className="relative size-7 shrink-0 overflow-hidden rounded-full">
-              <img src={userAvatar} className="absolute inset-0 object-cover" />
-            </div>
-
-            <div className="flex min-w-0 flex-col gap-0.5 text-left">
-              <h3 className="truncate text-sm font-medium">
-                {currentUser.name}
-              </h3>
-              <p className="truncate text-xs text-gray-500">
-                {currentUser.email}
-              </p>
-            </div>
+        <button className="group flex w-full items-center gap-3 rounded-lg border border-transparent px-4 py-2.5 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-black focus:outline-none data-[state=open]:bg-gray-100 data-[state=open]:text-black">
+          <div className="relative size-7 shrink-0 overflow-hidden rounded-full">
+            <img
+              src={userAvatar}
+              alt={currentUser.name}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
           </div>
 
-          <ChevronsUpDownIcon className="ml-auto size-3.5" />
+          <div className="flex min-w-0 flex-1 flex-col text-left">
+            <span className="truncate font-medium text-gray-900">
+              {currentUser.name}
+            </span>
+            <span className="truncate text-xs text-gray-500">
+              {isPaidUser ? 'Pro Member' : 'Free User'}
+            </span>
+          </div>
+
+          <ChevronDown className="size-4 text-gray-400 transition-transform duration-200 group-data-[state=open]:rotate-180" />
         </button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-[var(--radix-dropdown-menu-trigger-width)] min-w-full p-0.5">
-        <div className="flex h-auto flex-col justify-between gap-0.5 p-2">
-          <div className="flex min-w-0 items-center gap-2.5">
-            <div className="relative size-8 shrink-0 overflow-hidden rounded-full">
-              <img src={userAvatar} className="absolute inset-0 object-cover" />
-            </div>
 
-            <div className="flex min-w-0 flex-col gap-0.5 text-left">
-              <h3 className="truncate text-sm font-medium">
-                {currentUser.name}
-              </h3>
-              <p className="truncate text-xs text-gray-500">
-                {currentUser.email}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <DropdownMenuSeparator />
-
-        <div className="space-y-0.5">
+      <DropdownMenuContent className="w-[var(--radix-dropdown-menu-trigger-width)] min-w-52 rounded-lg border border-gray-200 bg-white p-1">
+        <div className="space-y-1">
           <DropdownMenuItem asChild>
-            <a href="/account/billing">
+            <a
+              href="/account"
+              className="flex w-full items-center gap-3 rounded px-3 py-2 text-sm font-medium text-gray-500 transition-colors hover:bg-gray-100 hover:text-black"
+            >
+              <User2 className="size-4" />
+              Account
+            </a>
+          </DropdownMenuItem>
+
+          <DropdownMenuItem asChild>
+            <a
+              href="/account/billing"
+              className="flex w-full items-center gap-3 rounded px-3 py-2 text-sm font-medium text-gray-500 transition-colors hover:bg-gray-100 hover:text-black"
+            >
               <CreditCardIcon className="size-4" />
               Billing
             </a>
           </DropdownMenuItem>
+
+          <DropdownMenuItem asChild>
+            <a
+              href="/account/settings"
+              className="flex w-full items-center gap-3 rounded px-3 py-2 text-sm font-medium text-gray-500 transition-colors hover:bg-gray-100 hover:text-black"
+            >
+              <Settings className="size-4" />
+              Settings
+            </a>
+          </DropdownMenuItem>
         </div>
 
-        <DropdownMenuSeparator />
+        <DropdownMenuSeparator className="my-1" />
 
         <DropdownMenuItem
-          className="text-red-600 focus:bg-red-100 focus:text-red-600"
+          className="flex w-full items-center gap-3 rounded px-3 py-2 text-sm font-medium text-red-600 transition-colors hover:bg-red-50 hover:text-red-700"
           onSelect={() => {
             logout();
           }}
