@@ -25,7 +25,7 @@ window.fireEvent = (props) => {
 
   if (['course', 'ai_tutor'].includes(category)) {
     const url = new URL(import.meta.env.PUBLIC_API_URL);
-    url.pathname = '/_t';
+    url.pathname = '/api/_t';
     url.searchParams.set('action', action);
     url.searchParams.set('category', category);
     url.searchParams.set('label', label ?? '');
