@@ -11,7 +11,7 @@ hasTopics: true
 isNew: false
 dimensions:
   width: 968
-  height: 2600
+  height: 2525
 schema:
   headline: 'Data Structures and Algorithms Roadmap'
   description: 'Learn about Data Structures and Algorithms with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
