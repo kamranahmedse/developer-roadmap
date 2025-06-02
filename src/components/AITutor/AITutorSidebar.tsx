@@ -16,6 +16,7 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AITutorLogo } from '../ReactIcons/AITutorLogo';
 import { cn } from '../../lib/classname';
 import { logout } from '../../lib/auth';
+import { UserDropdown } from './UserDropdown';
 
 type AITutorSidebarProps = {
   isFloating: boolean;
@@ -145,7 +146,7 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
             )}
         </ul>
 
-        {isLoggedIn() && (
+        {/* {isLoggedIn() && (
           <div className="mt-auto mb-2 space-y-1">
             <AITutorSidebarItem
               item={{
@@ -167,6 +168,11 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
               onClick={logout}
               className="hover:text-red-500"
             />
+          </div>
+        )} */}
+        {isLoggedIn() && (
+          <div className="mx-2 mt-auto mb-2">
+            <UserDropdown />
           </div>
         )}
       </aside>
