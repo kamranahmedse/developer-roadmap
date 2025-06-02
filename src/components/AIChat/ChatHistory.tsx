@@ -18,9 +18,9 @@ export const ChatHistory = memo((props: ChatHistoryProps) => {
   const { chatHistory, isStreamingMessage, streamedMessageHtml } = props;
 
   return (
-    <div className="flex flex-col">
+    <div className="flex grow flex-col">
       <div className="relative flex grow flex-col justify-end">
-        <div className="flex flex-col justify-end gap-14 py-5">
+        <div className="flex grow flex-col justify-end gap-14 py-5">
           {chatHistory.map((chat, index) => {
             return (
               <Fragment key={`chat-${index}`}>
@@ -83,8 +83,8 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
     >
       <div
         className={cn(
-          'flex items-start gap-2.5 rounded-lg',
-          role === 'user' ? 'bg-gray-200 p-3 max-w-[70%]' : '',
+          'flex max-w-full items-start gap-2.5 rounded-lg',
+          role === 'user' ? 'max-w-[70%] bg-gray-200 p-3' : '',
         )}
       >
         <div

@@ -1,6 +1,12 @@
 import './AIChat.css';
-import { FileUpIcon, PersonStandingIcon, SendIcon } from 'lucide-react';
-import { useCallback, useRef, useState } from 'react';
+import {
+  ArrowDownIcon,
+  FileUpIcon,
+  PersonStandingIcon,
+  SendIcon,
+  TrashIcon,
+} from 'lucide-react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import AutogrowTextarea from 'react-textarea-autosize';
 import { QuickHelpPrompts } from './QuickHelpPrompts';
@@ -33,6 +39,11 @@ export function AIChat() {
     useState(false);
   const [isUploadResumeModalOpen, setIsUploadResumeModalOpen] = useState(false);
 
+  const [showScrollToBottomButton, setShowScrollToBottomButton] =
+    useState(false);
+
+  const scrollableContainerRef = useRef<HTMLDivElement>(null);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
   const textareaMessageRef = useRef<HTMLTextAreaElement>(null);
 
   const { data: tokenUsage, isLoading } = useQuery(
@@ -83,8 +94,13 @@ export function AIChat() {
   };
 
   const scrollToBottom = useCallback(() => {
-    window.scrollTo({
-      top: document.body.scrollHeight,
+    const scrollableContainer = scrollableContainerRef?.current;
+    if (!scrollableContainer) {
+      return;
+    }
+
+    scrollableContainer.scrollTo({
+      top: scrollableContainer.scrollHeight,
       behavior: 'smooth',
     });
   }, []);
@@ -180,12 +196,58 @@ export function AIChat() {
     queryClient,
   );
 
+  useEffect(() => {
+    const scrollableContainer = scrollableContainerRef.current;
+    const chatContainer = chatContainerRef.current;
+
+    if (!scrollableContainer || !chatContainer) {
+      return;
+    }
+
+    const abortController = new AbortController();
+    let timeoutId: NodeJS.Timeout;
+    const debouncedHandleScroll = () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+
+      timeoutId = setTimeout(() => {
+        const paddingBottom = parseInt(
+          getComputedStyle(scrollableContainer).paddingBottom,
+        );
+
+        const distanceFromBottom =
+          scrollableContainer.scrollHeight -
+          // scroll from the top + the container height
+          (scrollableContainer.scrollTop + scrollableContainer.clientHeight) -
+          paddingBottom;
+
+        setShowScrollToBottomButton(distanceFromBottom > 130);
+      }, 100);
+    };
+
+    debouncedHandleScroll();
+    scrollableContainer.addEventListener('scroll', debouncedHandleScroll, {
+      signal: abortController.signal,
+    });
+
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      abortController.abort();
+    };
+  }, [aiChatHistory]);
+
   const shouldShowQuickHelpPrompts =
     message.length === 0 && aiChatHistory.length === 0;
 
   return (
-    <div className="ai-chat relative flex min-h-screen w-full flex-col gap-2 overflow-y-auto bg-gray-100">
-      <div className="relative mx-auto w-full max-w-2xl grow px-4 pb-55">
+    <div
+      className="ai-chat relative flex min-h-screen w-full flex-col gap-2 overflow-y-auto bg-gray-100 pb-55"
+      ref={scrollableContainerRef}
+    >
+      <div className="relative mx-auto w-full max-w-2xl grow px-4">
         {shouldShowQuickHelpPrompts && (
           <QuickHelpPrompts
             onQuickActionClick={(action) => {
@@ -223,25 +285,49 @@ export function AIChat() {
         />
       )}
 
-      <div className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4 lg:left-[var(--ai-sidebar-width)]">
-        <div className="mb-2 flex items-center gap-2">
-          <QuickActionButton
-            icon={PersonStandingIcon}
-            label="Personalized Response"
-            onClick={() => setIsPersonalizedResponseFormOpen(true)}
-          />
-          <QuickActionButton
-            icon={FileUpIcon}
-            label={
-              isUploading
-                ? 'Processing...'
-                : userResume?.fileName
-                  ? 'Upload New Resume'
-                  : 'Upload Resume'
-            }
-            onClick={() => setIsUploadResumeModalOpen(true)}
-            isLoading={isUploading}
-          />
+      <div
+        className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4 lg:left-[var(--ai-sidebar-width)]"
+        ref={chatContainerRef}
+      >
+        <div className="mb-2 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <QuickActionButton
+              icon={PersonStandingIcon}
+              label="Personalized Response"
+              onClick={() => setIsPersonalizedResponseFormOpen(true)}
+            />
+            <QuickActionButton
+              icon={FileUpIcon}
+              label={
+                isUploading
+                  ? 'Processing...'
+                  : userResume?.fileName
+                    ? 'Upload New Resume'
+                    : 'Upload Resume'
+              }
+              onClick={() => setIsUploadResumeModalOpen(true)}
+              isLoading={isUploading}
+            />
+          </div>
+
+          <div className="flex items-center gap-2">
+            {aiChatHistory.length > 0 && (
+              <QuickActionButton
+                icon={TrashIcon}
+                label="Clear Chat"
+                onClick={() => {
+                  setAiChatHistory([]);
+                }}
+              />
+            )}
+            {showScrollToBottomButton && (
+              <QuickActionButton
+                icon={ArrowDownIcon}
+                label="Scroll to Bottom"
+                onClick={scrollToBottom}
+              />
+            )}
+          </div>
         </div>
 
         <form

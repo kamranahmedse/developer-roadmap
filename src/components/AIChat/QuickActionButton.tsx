@@ -3,7 +3,7 @@ import { cn } from '../../lib/classname';
 
 type QuickActionButtonProps = {
   icon?: LucideIcon;
-  label: string;
+  label?: string;
   onClick?: () => void;
   className?: string;
   isLoading?: boolean;
