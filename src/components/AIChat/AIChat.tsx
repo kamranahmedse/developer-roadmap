@@ -263,6 +263,7 @@ export function AIChat() {
         {!shouldShowQuickHelpPrompts && (
           <ChatHistory
             chatHistory={aiChatHistory}
+            setChatHistory={setAiChatHistory}
             isStreamingMessage={isStreamingMessage}
             streamedMessageHtml={streamedMessageHtml}
           />

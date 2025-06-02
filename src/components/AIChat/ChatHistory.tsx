@@ -5,17 +5,23 @@ import type {
 } from '../GenerateCourse/AICourseLessonChat';
 import { markdownToHtml } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
-import { CopyIcon, CheckIcon } from 'lucide-react';
+import { CopyIcon, CheckIcon, TrashIcon } from 'lucide-react';
 import { useCopyText } from '../../hooks/use-copy-text';
 
 type ChatHistoryProps = {
   chatHistory: AIChatHistoryType[];
+  setChatHistory: (chatHistory: AIChatHistoryType[]) => void;
   isStreamingMessage: boolean;
   streamedMessageHtml: string;
 };
 
 export const ChatHistory = memo((props: ChatHistoryProps) => {
-  const { chatHistory, isStreamingMessage, streamedMessageHtml } = props;
+  const {
+    chatHistory,
+    setChatHistory,
+    isStreamingMessage,
+    streamedMessageHtml,
+  } = props;
 
   return (
     <div className="flex grow flex-col">
@@ -28,6 +34,11 @@ export const ChatHistory = memo((props: ChatHistoryProps) => {
                   role={chat.role}
                   content={chat.content}
                   html={chat.html}
+                  onDelete={() => {
+                    setChatHistory(
+                      chatHistory.filter((_, i) => i !== index),
+                    );
+                  }}
                 />
               </Fragment>
             );
@@ -60,10 +71,17 @@ type AIChatCardProps = {
   content: string;
   html?: string;
   showActions?: boolean;
+  onDelete?: () => void;
 };
 
 export const AIChatCard = memo((props: AIChatCardProps) => {
-  const { role, content, html: defaultHtml, showActions = true } = props;
+  const {
+    role,
+    content,
+    html: defaultHtml,
+    showActions = true,
+    onDelete,
+  } = props;
   const { copyText, isCopied } = useCopyText();
 
   const html = useMemo(() => {
@@ -96,7 +114,7 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
       {showActions && (
         <div
           className={cn(
-            'absolute -bottom-2 translate-y-full',
+            'absolute -bottom-2 flex translate-y-full items-center gap-1',
             role === 'user' ? 'right-0' : 'left-0',
           )}
         >
@@ -110,6 +128,15 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
               <CopyIcon className="size-4 stroke-[2.5]" />
             )}
           </button>
+
+          {onDelete && (
+            <button
+              className="flex size-8 items-center justify-center rounded-lg opacity-0 transition-opacity group-hover:opacity-100 hover:bg-gray-200"
+              onClick={onDelete}
+            >
+              <TrashIcon className="size-4 stroke-[2.5]" />
+            </button>
+          )}
         </div>
       )}
     </div>
