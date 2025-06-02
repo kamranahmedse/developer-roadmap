@@ -120,10 +120,11 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
     queryClient,
   );
 
+  const isCanceled = userBillingDetails?.status === 'canceled';
   const selectedPlanDetails = USER_SUBSCRIPTION_PLAN_PRICES.find(
     (plan) => plan.interval === selectedPlan,
   );
-  const currentPlanPriceId = userBillingDetails?.priceId;
+  const currentPlanPriceId = isCanceled ? null : userBillingDetails?.priceId;
   const currentPlan = USER_SUBSCRIPTION_PLAN_PRICES.find(
     (plan) => plan.priceId === currentPlanPriceId,
   );
@@ -202,9 +203,8 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
 
             <div className="mb-6 grid grid-cols-1 gap-4 sm:mb-8 sm:gap-6 md:grid-cols-2">
               {USER_SUBSCRIPTION_PLAN_PRICES.map((plan) => {
-                const isCanceled = userBillingDetails?.status === 'canceled';
                 const isCurrentPlanSelected =
-                  currentPlan?.priceId === plan.priceId && !isCanceled;
+                  currentPlan?.priceId === plan.priceId;
                 const isYearly = plan.interval === 'year';
 
                 return (
