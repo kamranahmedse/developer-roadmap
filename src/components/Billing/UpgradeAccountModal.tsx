@@ -202,8 +202,9 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
 
             <div className="mb-6 grid grid-cols-1 gap-4 sm:mb-8 sm:gap-6 md:grid-cols-2">
               {USER_SUBSCRIPTION_PLAN_PRICES.map((plan) => {
+                const isCanceled = userBillingDetails?.status === 'canceled';
                 const isCurrentPlanSelected =
-                  currentPlan?.priceId === plan.priceId;
+                  currentPlan?.priceId === plan.priceId && !isCanceled;
                 const isYearly = plan.interval === 'year';
 
                 return (

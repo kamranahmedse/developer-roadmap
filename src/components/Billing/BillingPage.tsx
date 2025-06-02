@@ -41,10 +41,7 @@ export function BillingPage() {
     queryClient,
   );
 
-  console.log(billingDetails);
-
   const willBeCanceled = billingDetails?.cancelAtPeriodEnd;
-
   const isCanceled = billingDetails?.status === 'canceled';
 
   const isPastDue = billingDetails?.status === 'past_due';
