@@ -8,7 +8,7 @@ import { QuickActionButton } from './QuickActionButton';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import type { AIChatHistoryType } from '../GenerateCourse/AICourseLessonChat';
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { useToast } from '../../hooks/use-toast';
@@ -19,6 +19,8 @@ import { PersonalizedResponseForm } from './PersonalizedResponseForm';
 import { userPersonaOptions } from '../../queries/user-persona';
 import { UploadResumeModal } from './UploadResumeModal';
 import { userResumeOptions } from '../../queries/user-resume';
+import { httpPost } from '../../lib/http';
+import { httpPost as queryHttpPost } from '../../lib/query-http';
 
 export function AIChat() {
   const toast = useToast();
@@ -159,6 +161,26 @@ export function AIChat() {
     setIsStreamingMessage(false);
   };
 
+  const { mutate: uploadResume, isPending: isUploading } = useMutation(
+    {
+      mutationFn: (formData: FormData) => {
+        return queryHttpPost('/v1-upload-resume', formData);
+      },
+      onSuccess: () => {
+        toast.success('Resume uploaded successfully');
+        setIsUploadResumeModalOpen(false);
+        queryClient.invalidateQueries(userResumeOptions());
+      },
+      onError: (error) => {
+        toast.error(error?.message || 'Failed to upload resume');
+      },
+      onMutate: () => {
+        setIsUploadResumeModalOpen(false);
+      },
+    },
+    queryClient,
+  );
+
   const shouldShowQuickHelpPrompts =
     message.length === 0 && aiChatHistory.length === 0;
 
@@ -197,6 +219,8 @@ export function AIChat() {
         <UploadResumeModal
           onClose={() => setIsUploadResumeModalOpen(false)}
           userResume={userResume}
+          isUploading={isUploading}
+          uploadResume={uploadResume}
         />
       )}
 
@@ -209,8 +233,15 @@ export function AIChat() {
           />
           <QuickActionButton
             icon={FileUpIcon}
-            label="Upload Resume"
+            label={
+              isUploading
+                ? 'Uploading...'
+                : userResume?.fileName
+                  ? 'Upload New Resume'
+                  : 'Upload Resume'
+            }
             onClick={() => setIsUploadResumeModalOpen(true)}
+            isLoading={isUploading}
           />
         </div>
 

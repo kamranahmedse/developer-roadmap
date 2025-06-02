@@ -22,10 +22,17 @@ type OnDrop<T extends File = File> = (
 type UploadResumeModalProps = {
   userResume?: UserResumeDocument;
   onClose: () => void;
+  isUploading: boolean;
+  uploadResume: (formData: FormData) => void;
 };
 
 export function UploadResumeModal(props: UploadResumeModalProps) {
-  const { onClose, userResume: defaultUserResume } = props;
+  const {
+    onClose,
+    userResume: defaultUserResume,
+    isUploading,
+    uploadResume,
+  } = props;
 
   const toast = useToast();
   const [file, setFile] = useState<File | null>(
@@ -48,22 +55,6 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
     maxFiles: 1,
     maxSize: 5 * 1024 * 1024, // 5MB
   });
-
-  const { mutate: uploadResume, isPending: isUploading } = useMutation(
-    {
-      mutationFn: (formData: FormData) => {
-        return httpPost('/v1-upload-resume', formData);
-      },
-      onSuccess: () => {
-        onClose();
-        toast.success('Resume uploaded successfully');
-      },
-      onError: (error) => {
-        toast.error(error?.message || 'Failed to upload resume');
-      },
-    },
-    queryClient,
-  );
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
