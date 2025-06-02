@@ -1,15 +1,11 @@
-import {
-  BookOpen, Compass,
-  Plus,
-  Star,
-  X,
-  Zap
-} from 'lucide-react';
+import { BookOpen, Compass, Plus, Star, X, Zap } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AITutorLogo } from '../ReactIcons/AITutorLogo';
+import { cn } from '../../lib/classname';
+import { UserDropdown } from './UserDropdown';
 
 type AITutorSidebarProps = {
   isFloating: boolean;
@@ -71,11 +67,12 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
       )}
 
       <aside
-        className={`w-[255px] shrink-0 border-r border-slate-200 ${
+        className={cn(
+          'flex w-[255px] shrink-0 flex-col border-r border-slate-200',
           isFloating
-            ? 'fixed top-0 bottom-0 left-0 z-50 block border-r-0 bg-white shadow-xl'
-            : 'hidden lg:block'
-        }`}
+            ? 'fixed top-0 bottom-0 left-0 z-50 flex border-r-0 bg-white shadow-xl'
+            : 'hidden lg:flex',
+        )}
       >
         {isFloating && (
           <button className="absolute top-3 right-3" onClick={onClose}>
@@ -105,22 +102,13 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
           </p>
         </div>
 
-        <ul className="space-y-1">
+        <ul className="list-none space-y-1">
           {sidebarItems.map((item) => (
             <li key={item.key}>
-              <a
-                href={item.href}
-                className={`font-regular flex w-full items-center border-r-2 px-5 py-2 text-sm transition-all ${
-                  activeTab === item.key
-                    ? 'border-r-black bg-gray-100 text-black'
-                    : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
-                }`}
-              >
-                <span className="flex grow items-center">
-                  <item.icon className="mr-2 size-4" />
-                  {item.label}
-                </span>
-              </a>
+              <AITutorSidebarItem
+                item={item}
+                isActive={activeTab === item.key}
+              />
             </li>
           ))}
 
@@ -146,10 +134,46 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
               </li>
             )}
         </ul>
+        <div className="mx-2 mt-auto mb-2">
+          <UserDropdown />
+        </div>
       </aside>
       {isFloating && (
         <div className="fixed inset-0 z-40 bg-black/50" onClick={onClose} />
       )}
     </>
+  );
+}
+
+type AITutorSidebarItemProps = {
+  item: (typeof sidebarItems)[number];
+  as?: 'a' | 'button';
+  onClick?: () => void;
+  className?: string;
+  isActive?: boolean;
+};
+
+function AITutorSidebarItem(props: AITutorSidebarItemProps) {
+  const { item, as = 'a', onClick, className, isActive } = props;
+
+  const Component = as;
+
+  return (
+    <Component
+      {...(as === 'a' ? { href: item.href } : {})}
+      {...(as === 'button' ? { onClick } : {})}
+      className={cn(
+        'font-regular flex w-full items-center border-r-2 px-5 py-2 text-sm transition-all',
+        isActive
+          ? 'border-r-black bg-gray-100 text-black'
+          : 'border-r-transparent text-gray-500 hover:border-r-gray-300',
+        className,
+      )}
+    >
+      <span className="flex grow items-center">
+        <item.icon className="mr-2 size-4" />
+        {item.label}
+      </span>
+    </Component>
   );
 }
