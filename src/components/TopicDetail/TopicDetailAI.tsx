@@ -1,35 +1,37 @@
-import '../GenerateCourse/AICourseLessonChat.css';
 import { useQuery } from '@tanstack/react-query';
-import { useState, useRef, Fragment, useCallback, useEffect } from 'react';
-import { billingDetailsOptions } from '../../queries/billing';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
-import { queryClient } from '../../stores/query-client';
-import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import {
   BotIcon,
   ChevronRightIcon,
   Gift,
   Loader2Icon,
-  LockIcon, SendIcon, Trash2,
-  WandSparkles
+  LockIcon,
+  SendIcon,
+  Trash2,
+  WandSparkles,
 } from 'lucide-react';
-import { showLoginPopup } from '../../lib/popup';
-import { cn } from '../../lib/classname';
-import TextareaAutosize from 'react-textarea-autosize';
+import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
+import TextareaAutosize from 'react-textarea-autosize';
+import { useToast } from '../../hooks/use-toast';
+import { readStream } from '../../lib/ai';
+import { cn } from '../../lib/classname';
+import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
+import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
+import { getPercentage } from '../../lib/number';
+import { showLoginPopup } from '../../lib/popup';
+import type { ResourceType } from '../../lib/resource-progress';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { billingDetailsOptions } from '../../queries/billing';
+import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
+import { queryClient } from '../../stores/query-client';
 import {
   AIChatCard,
   type AIChatHistoryType,
 } from '../GenerateCourse/AICourseLessonChat';
-import { useToast } from '../../hooks/use-toast';
-import { readStream } from '../../lib/ai';
-import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
-import type { ResourceType } from '../../lib/resource-progress';
-import { getPercentage } from '../../lib/number';
-import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
-import { defaultChatHistory } from './TopicDetail';
+import '../GenerateCourse/AICourseLessonChat.css';
 import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
 import { PredefinedActions, promptLabelMapping } from './PredefinedActions';
+import { defaultChatHistory } from './TopicDetail';
 
 type TopicDetailAIProps = {
   resourceId: string;
@@ -290,17 +292,22 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                 href={`/ai/search?term=${roadmapTreeMapping?.text}&difficulty=beginner&src=topic`}
                 className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
               >
-                {nodeTextParts.map((text, index) => (
-                  <>
-                    <span key={text} className="flex items-center">
-                      {text}
-                    </span>
+                {nodeTextParts.slice(1).map((text, index) => {
+                  // -2 because we are removing roadmap title from the list
+                  const isLast = index === nodeTextParts.length - 2;
 
-                    {index !== nodeTextParts.length - 1 && (
-                      <ChevronRightIcon className="h-3 w-3 text-gray-400" />
-                    )}
-                  </>
-                ))}
+                  return (
+                    <>
+                      <span key={text} className="flex items-center">
+                        {text}
+                      </span>
+
+                      {!isLast && (
+                        <ChevronRightIcon className="h-3 w-3 text-gray-400" />
+                      )}
+                    </>
+                  );
+                })}
               </a>
             )}
 
