@@ -120,6 +120,7 @@ export function clearMigratedRoadmapProgress(
     'prompt-engineering',
     'aws',
     'datastructures-and-algorithms',
+    'kubernetes',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
