@@ -271,7 +271,7 @@ export function AIChat() {
 
   const handleRegenerate = useCallback(
     (index: number) => {
-      const filteredChatHistory = aiChatHistory.filter((_, i) => i !== index);
+      const filteredChatHistory = aiChatHistory.slice(0, index);
 
       flushSync(() => {
         setAiChatHistory(filteredChatHistory);
