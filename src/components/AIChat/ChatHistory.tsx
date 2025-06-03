@@ -50,7 +50,8 @@ export const ChatHistory = memo((props: ChatHistoryProps) => {
           {isStreamingMessage && !streamedMessage && (
             <AIChatCard
               role="assistant"
-              content="Thinking..."
+              content=""
+              html="<p>Thinking...</p>"
               showActions={false}
             />
           )}
