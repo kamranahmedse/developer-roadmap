@@ -59,7 +59,7 @@ import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 import { lockBodyScroll } from '../../lib/dom';
 import { TutorIntroMessage } from './TutorIntroMessage';
 
-export type RoamdapAIChatHistoryType = {
+export type RoadmapAIChatHistoryType = {
   role: AllowedAIChatRole;
   isDefault?: boolean;
 
@@ -103,7 +103,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   const [activeTab, setActiveTab] = useState<RoadmapAIChatTab>('chat');
 
   const [aiChatHistory, setAiChatHistory] = useState<
-    RoamdapAIChatHistoryType[]
+    RoadmapAIChatHistoryType[]
   >([]);
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] =
@@ -177,7 +177,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     abortControllerRef.current = new AbortController();
 
     const html = htmlFromTiptapJSON(json);
-    const newMessages: RoamdapAIChatHistoryType[] = [
+    const newMessages: RoadmapAIChatHistoryType[] = [
       ...aiChatHistory,
       {
         role: 'user',
@@ -271,13 +271,13 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         return <ShareResourceLink roadmapId={roadmapId} />;
       },
       'roadmap-recommendations': (options) => {
-        return <RoadmapRecommendations roadmapId={roadmapId} {...options} />;
+        return <RoadmapRecommendations {...options} />;
       },
     };
   }, [roadmapId, handleSelectTopic, totalTopicCount]);
 
   const completeAITutorChat = async (
-    messages: RoamdapAIChatHistoryType[],
+    messages: RoadmapAIChatHistoryType[],
     abortController?: AbortController,
   ) => {
     try {
@@ -347,7 +347,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
           const jsx = await renderMessage(content, renderer, {
             isLoading: false,
           });
-          const newMessages: RoamdapAIChatHistoryType[] = [
+          const newMessages: RoadmapAIChatHistoryType[] = [
             ...messages,
             {
               role: 'assistant',

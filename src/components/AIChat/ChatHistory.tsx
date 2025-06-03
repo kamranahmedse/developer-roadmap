@@ -1,26 +1,21 @@
-import { Fragment, memo, useMemo } from 'react';
-import type {
-  AIChatHistoryType,
-  AllowedAIChatRole,
-} from '../GenerateCourse/AICourseLessonChat';
-import { markdownToHtml } from '../../lib/markdown';
+import { Fragment, memo } from 'react';
 import { cn } from '../../lib/classname';
 import {
   CopyIcon,
   CheckIcon,
   TrashIcon,
   type LucideIcon,
-  Icon,
   RotateCwIcon,
 } from 'lucide-react';
 import { useCopyText } from '../../hooks/use-copy-text';
+import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
 
 type ChatHistoryProps = {
-  chatHistory: AIChatHistoryType[];
+  chatHistory: RoadmapAIChatHistoryType[];
   onDelete?: (index: number) => void;
   onRegenerate?: (index: number) => void;
   isStreamingMessage: boolean;
-  streamedMessageHtml: string;
+  streamedMessage: React.ReactNode;
 };
 
 export const ChatHistory = memo((props: ChatHistoryProps) => {
@@ -28,7 +23,7 @@ export const ChatHistory = memo((props: ChatHistoryProps) => {
     chatHistory,
     onDelete,
     isStreamingMessage,
-    streamedMessageHtml,
+    streamedMessage,
     onRegenerate,
   } = props;
 
@@ -40,9 +35,7 @@ export const ChatHistory = memo((props: ChatHistoryProps) => {
             return (
               <Fragment key={`chat-${index}`}>
                 <AIChatCard
-                  role={chat.role}
-                  content={chat.content}
-                  html={chat.html}
+                  {...chat}
                   onDelete={() => {
                     onDelete?.(index);
                   }}
@@ -54,7 +47,7 @@ export const ChatHistory = memo((props: ChatHistoryProps) => {
             );
           })}
 
-          {isStreamingMessage && !streamedMessageHtml && (
+          {isStreamingMessage && !streamedMessage && (
             <AIChatCard
               role="assistant"
               content="Thinking..."
@@ -62,11 +55,11 @@ export const ChatHistory = memo((props: ChatHistoryProps) => {
             />
           )}
 
-          {streamedMessageHtml && (
+          {streamedMessage && (
             <AIChatCard
               role="assistant"
               content=""
-              html={streamedMessageHtml}
+              jsx={streamedMessage}
               showActions={false}
             />
           )}
@@ -76,33 +69,23 @@ export const ChatHistory = memo((props: ChatHistoryProps) => {
   );
 });
 
-type AIChatCardProps = {
-  role: AllowedAIChatRole;
-  content: string;
-  html?: string;
-  showActions?: boolean;
+type AIChatCardProps = RoadmapAIChatHistoryType & {
   onDelete?: () => void;
   onRegenerate?: () => void;
+  showActions?: boolean;
 };
 
 export const AIChatCard = memo((props: AIChatCardProps) => {
   const {
     role,
     content,
-    html: defaultHtml,
+    jsx,
+    html,
     showActions = true,
     onDelete,
     onRegenerate,
   } = props;
   const { copyText, isCopied } = useCopyText();
-
-  const html = useMemo(() => {
-    if (defaultHtml) {
-      return defaultHtml;
-    }
-
-    return markdownToHtml(content, false);
-  }, [content, defaultHtml]);
 
   return (
     <div
@@ -117,10 +100,14 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
           role === 'user' ? 'max-w-[70%] bg-gray-200 p-3' : '',
         )}
       >
-        <div
-          className="course-content course-ai-content prose prose-sm mt-0.5 max-w-full overflow-hidden text-sm"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        {!!jsx && jsx}
+
+        {!!html && (
+          <div
+            className="course-content course-ai-content prose prose-sm overflow-hidden text-sm"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        )}
       </div>
 
       {showActions && (
@@ -132,7 +119,7 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
         >
           <ActionButton
             icon={isCopied ? CheckIcon : CopyIcon}
-            onClick={() => copyText(content)}
+            onClick={() => copyText(content ?? '')}
           />
 
           {role === 'assistant' && onRegenerate && (
