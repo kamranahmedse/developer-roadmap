@@ -257,7 +257,7 @@ export function AIChat() {
           (scrollableContainer.scrollTop + scrollableContainer.clientHeight) -
           paddingBottom;
 
-        setShowScrollToBottomButton(distanceFromBottom > 130);
+        setShowScrollToBottomButton(distanceFromBottom > -(paddingBottom - 80));
       }, 100);
     };
 
@@ -369,6 +369,13 @@ export function AIChat() {
           </div>
 
           <div className="flex items-center gap-2">
+            {showScrollToBottomButton && (
+              <QuickActionButton
+                icon={ArrowDownIcon}
+                label="Scroll to Bottom"
+                onClick={scrollToBottom}
+              />
+            )}
             {aiChatHistory.length > 0 && (
               <QuickActionButton
                 icon={TrashIcon}
@@ -376,13 +383,6 @@ export function AIChat() {
                 onClick={() => {
                   setAiChatHistory([]);
                 }}
-              />
-            )}
-            {showScrollToBottomButton && (
-              <QuickActionButton
-                icon={ArrowDownIcon}
-                label="Scroll to Bottom"
-                onClick={scrollToBottom}
               />
             )}
           </div>
