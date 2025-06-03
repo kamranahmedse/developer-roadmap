@@ -34,6 +34,7 @@ import {
 } from '../../lib/render-chat-message';
 import { RoadmapRecommendations } from '../RoadmapAIChat/RoadmapRecommendations';
 import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
+import { AIChatCourse } from './AIChatCouse';
 
 export function AIChat() {
   const toast = useToast();
@@ -124,6 +125,9 @@ export function AIChat() {
     return {
       'roadmap-recommendations': (options) => {
         return <RoadmapRecommendations {...options} />;
+      },
+      'generate-course': (options) => {
+        return <AIChatCourse {...options} />;
       },
     };
   }, []);
