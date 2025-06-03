@@ -114,21 +114,6 @@ export function BillingPage() {
     </>
   );
 
-  if (!priceDetails) {
-    return (
-      <div className="p-5">
-        <h1 className="text-2xl font-bold">Uh oh!</h1>
-        <p className="text-sm text-gray-500">
-          We couldn't find your subscription details. Please contact support at
-          <a className="text-blue-500 underline" href="mailto:info@roadmap.sh">
-            info@roadmap.sh
-          </a>
-          .
-        </p>
-      </div>
-    );
-  }
-
   if (billingDetails?.status === 'none' || isIncompleteExpired) {
     return (
       <>
@@ -181,6 +166,21 @@ export function BillingPage() {
 
         <EmptyBillingScreen onUpgrade={() => setShowUpgradeModal(true)} />
       </>
+    );
+  }
+
+  if (!priceDetails) {
+    return (
+      <div className="p-5">
+        <h1 className="text-2xl font-bold">Uh oh!</h1>
+        <p className="text-sm text-gray-500">
+          We couldn't find your subscription details. Please contact support at
+          <a className="text-blue-500 underline" href="mailto:info@roadmap.sh">
+            info@roadmap.sh
+          </a>
+          .
+        </p>
+      </div>
     );
   }
 
