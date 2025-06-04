@@ -8,10 +8,11 @@ type AITutorLayoutProps = {
   children: React.ReactNode;
   activeTab: AITutorTab;
   wrapperClassName?: string;
+  containerClassName?: string;
 };
 
 export function AITutorLayout(props: AITutorLayoutProps) {
-  const { children, activeTab, wrapperClassName } = props;
+  const { children, activeTab, wrapperClassName, containerClassName } = props;
 
   const [isSidebarFloating, setIsSidebarFloating] = useState(false);
 
@@ -30,7 +31,10 @@ export function AITutorLayout(props: AITutorLayoutProps) {
       </div>
 
       <div
-        className="flex flex-grow flex-row lg:h-screen"
+        className={cn(
+          'flex flex-grow flex-row lg:h-screen',
+          containerClassName,
+        )}
         style={
           {
             '--ai-sidebar-width': '255px',

@@ -6,7 +6,14 @@ import {
   SendIcon,
   TrashIcon,
 } from 'lucide-react';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { flushSync } from 'react-dom';
 import AutogrowTextarea from 'react-textarea-autosize';
 import { QuickHelpPrompts } from './QuickHelpPrompts';
@@ -18,10 +25,7 @@ import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { useToast } from '../../hooks/use-toast';
 import { readStream } from '../../lib/ai';
-import {
-  markdownToHtml,
-  markdownToHtmlWithHighlighting,
-} from '../../lib/markdown';
+import { markdownToHtml } from '../../lib/markdown';
 import { ChatHistory } from './ChatHistory';
 import { PersonalizedResponseForm } from './PersonalizedResponseForm';
 import { userPersonaOptions } from '../../queries/user-persona';
@@ -35,9 +39,17 @@ import {
 import { RoadmapRecommendations } from '../RoadmapAIChat/RoadmapRecommendations';
 import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
 import { AIChatCourse } from './AIChatCouse';
+import { getTailwindScreenDimension } from '../../lib/is-mobile';
+import type { TailwindScreenDimensions } from '../../lib/is-mobile';
 
 export function AIChat() {
   const toast = useToast();
+
+  const [deviceType, setDeviceType] = useState<TailwindScreenDimensions>();
+
+  useLayoutEffect(() => {
+    setDeviceType(getTailwindScreenDimension());
+  }, []);
 
   const [message, setMessage] = useState('');
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
@@ -106,6 +118,8 @@ export function AIChat() {
     setTimeout(() => {
       scrollToBottom();
     }, 0);
+
+    textareaMessageRef.current?.focus();
     completeAIChat(newMessages);
   };
 
@@ -233,9 +247,7 @@ export function AIChat() {
 
   useEffect(() => {
     const scrollableContainer = scrollableContainerRef.current;
-    const chatContainer = chatContainerRef.current;
-
-    if (!scrollableContainer || !chatContainer) {
+    if (!scrollableContainer) {
       return;
     }
 
@@ -306,11 +318,7 @@ export function AIChat() {
       <div className="relative mx-auto w-full max-w-2xl grow px-4">
         {shouldShowQuickHelpPrompts && (
           <QuickHelpPrompts
-            onQuickActionClick={(action) => {
-              textareaMessageRef.current?.focus();
-              setMessage(action);
-            }}
-            onPredefinedQuestionClick={(question) => {
+            onQuestionClick={(question) => {
               textareaMessageRef.current?.focus();
               setMessage(question);
             }}
