@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { useCopyText } from '../../hooks/use-copy-text';
 import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
+import { Tooltip } from '../Tooltip';
 
 type ChatHistoryProps = {
   chatHistory: RoadmapAIChatHistoryType[];
@@ -91,7 +92,7 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
   return (
     <div
       className={cn(
-        'group relative flex w-full flex-col',
+        'group/content relative flex w-full flex-col',
         role === 'user' ? 'items-end' : 'items-start',
       )}
     >
@@ -121,13 +122,24 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
           <ActionButton
             icon={isCopied ? CheckIcon : CopyIcon}
             onClick={() => copyText(content ?? '')}
+            tooltip={isCopied ? 'Copied' : 'Copy'}
           />
 
           {role === 'assistant' && onRegenerate && (
-            <ActionButton icon={RotateCwIcon} onClick={onRegenerate} />
+            <ActionButton
+              icon={RotateCwIcon}
+              onClick={onRegenerate}
+              tooltip="Regenerate"
+            />
           )}
 
-          {onDelete && <ActionButton icon={TrashIcon} onClick={onDelete} />}
+          {onDelete && (
+            <ActionButton
+              icon={TrashIcon}
+              onClick={onDelete}
+              tooltip="Delete"
+            />
+          )}
         </div>
       )}
     </div>
@@ -136,17 +148,27 @@ export const AIChatCard = memo((props: AIChatCardProps) => {
 
 type ActionButtonProps = {
   icon: LucideIcon;
+  tooltip?: string;
   onClick: () => void;
 };
 
 function ActionButton(props: ActionButtonProps) {
-  const { icon: Icon, onClick } = props;
+  const { icon: Icon, onClick, tooltip } = props;
+
   return (
-    <button
-      className="flex size-8 items-center justify-center rounded-lg opacity-0 transition-opacity group-hover:opacity-100 hover:bg-gray-200"
-      onClick={onClick}
-    >
-      <Icon className="size-4 stroke-[2.5]" />
-    </button>
+    <div className="group relative">
+      <button
+        className="flex size-8 items-center justify-center rounded-lg opacity-0 transition-opacity group-hover/content:opacity-100 hover:bg-gray-200"
+        onClick={onClick}
+      >
+        <Icon className="size-4 stroke-[2.5]" />
+      </button>
+
+      {tooltip && (
+        <Tooltip position="top-center" additionalClass="-translate-y-1">
+          {tooltip}
+        </Tooltip>
+      )}
+    </div>
   );
 }
