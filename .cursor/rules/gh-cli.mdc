@@ -1,0 +1,389 @@
+---
+description: GitHub pull requests
+globs: 
+alwaysApply: false
+---
+# gh cli
+
+Work seamlessly with GitHub from the command line.
+
+USAGE
+  gh <command> <subcommand> [flags]
+
+CORE COMMANDS
+  auth:          Authenticate gh and git with GitHub
+  browse:        Open repositories, issues, pull requests, and more in the browser
+  codespace:     Connect to and manage codespaces
+  gist:          Manage gists
+  issue:         Manage issues
+  org:           Manage organizations
+  pr:            Manage pull requests
+  project:       Work with GitHub Projects.
+  release:       Manage releases
+  repo:          Manage repositories
+
+GITHUB ACTIONS COMMANDS
+  cache:         Manage GitHub Actions caches
+  run:           View details about workflow runs
+  workflow:      View details about GitHub Actions workflows
+
+ALIAS COMMANDS
+  co:            Alias for "pr checkout"
+
+ADDITIONAL COMMANDS
+  alias:         Create command shortcuts
+  api:           Make an authenticated GitHub API request
+  attestation:   Work with artifact attestations
+  completion:    Generate shell completion scripts
+  config:        Manage configuration for gh
+  extension:     Manage gh extensions
+  gpg-key:       Manage GPG keys
+  label:         Manage labels
+  preview:       Execute previews for gh features
+  ruleset:       View info about repo rulesets
+  search:        Search for repositories, issues, and pull requests
+  secret:        Manage GitHub secrets
+  ssh-key:       Manage SSH keys
+  status:        Print information about relevant issues, pull requests, and notifications across repositories
+  variable:      Manage GitHub Actions variables
+
+HELP TOPICS
+  accessibility: Learn about GitHub CLI's accessibility experiences
+  actions:       Learn about working with GitHub Actions
+  environment:   Environment variables that can be used with gh
+  exit-codes:    Exit codes used by gh
+  formatting:    Formatting options for JSON data exported from gh
+  mintty:        Information about using gh with MinTTY
+  reference:     A comprehensive reference of all gh commands
+
+FLAGS
+  --help      Show help for command
+  --version   Show gh version
+
+EXAMPLES
+  $ gh issue create
+  $ gh repo clone cli/cli
+  $ gh pr checkout 321
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+## gh pr
+
+Work with GitHub pull requests.
+
+USAGE
+  gh pr <command> [flags]
+
+GENERAL COMMANDS
+  create:        Create a pull request
+  list:          List pull requests in a repository
+  status:        Show status of relevant pull requests
+
+TARGETED COMMANDS
+  checkout:      Check out a pull request in git
+  checks:        Show CI status for a single pull request
+  close:         Close a pull request
+  comment:       Add a comment to a pull request
+  diff:          View changes in a pull request
+  edit:          Edit a pull request
+  lock:          Lock pull request conversation
+  merge:         Merge a pull request
+  ready:         Mark a pull request as ready for review
+  reopen:        Reopen a pull request
+  review:        Add a review to a pull request
+  unlock:        Unlock pull request conversation
+  update-branch: Update a pull request branch
+  view:          View a pull request
+
+FLAGS
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+INHERITED FLAGS
+  --help   Show help for command
+
+ARGUMENTS
+  A pull request can be supplied as argument in any of the following formats:
+  - by number, e.g. "123";
+  - by URL, e.g. "https://github.com/OWNER/REPO/pull/123"; or
+  - by the name of its head branch, e.g. "patch-1" or "OWNER:patch-1".
+
+EXAMPLES
+  $ gh pr checkout 353
+  $ gh pr create --fill
+  $ gh pr view --web
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+## gh pr list
+
+List pull requests in a GitHub repository. By default, this only lists open PRs.
+
+The search query syntax is documented here:
+<https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests>
+
+For more information about output formatting flags, see `gh help formatting`.
+
+USAGE
+  gh pr list [flags]
+
+ALIASES
+  gh pr ls
+
+FLAGS
+      --app string        Filter by GitHub App author
+  -a, --assignee string   Filter by assignee
+  -A, --author string     Filter by author
+  -B, --base string       Filter by base branch
+  -d, --draft             Filter by draft state
+  -H, --head string       Filter by head branch ("<owner>:<branch>" syntax not supported)
+  -q, --jq expression     Filter JSON output using a jq expression
+      --json fields       Output JSON with the specified fields
+  -l, --label strings     Filter by label
+  -L, --limit int         Maximum number of items to fetch (default 30)
+  -S, --search query      Search pull requests with query
+  -s, --state string      Filter by state: {open|closed|merged|all} (default "open")
+  -t, --template string   Format JSON output using a Go template; see "gh help formatting"
+  -w, --web               List pull requests in the web browser
+
+INHERITED FLAGS
+      --help                     Show help for command
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+JSON FIELDS
+  additions, assignees, author, autoMergeRequest, baseRefName, baseRefOid, body,
+  changedFiles, closed, closedAt, closingIssuesReferences, comments, commits,
+  createdAt, deletions, files, fullDatabaseId, headRefName, headRefOid,
+  headRepository, headRepositoryOwner, id, isCrossRepository, isDraft, labels,
+  latestReviews, maintainerCanModify, mergeCommit, mergeStateStatus, mergeable,
+  mergedAt, mergedBy, milestone, number, potentialMergeCommit, projectCards,
+  projectItems, reactionGroups, reviewDecision, reviewRequests, reviews, state,
+  statusCheckRollup, title, updatedAt, url
+
+EXAMPLES
+  # List PRs authored by you
+  $ gh pr list --author "@me"
+  
+  # List PRs with a specific head branch name
+  $ gh pr list --head "typo"
+  
+  # List only PRs with all of the given labels
+  $ gh pr list --label bug --label "priority 1"
+  
+  # Filter PRs using search syntax
+  $ gh pr list --search "status:success review:required"
+  
+  # Find a PR that introduced a given commit
+  $ gh pr list --search "<SHA>" --state merged
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+## gh pr diff
+
+View changes in a pull request.
+
+Without an argument, the pull request that belongs to the current branch
+is selected.
+
+With `--web` flag, open the pull request diff in a web browser instead.
+
+
+USAGE
+  gh pr diff [<number> | <url> | <branch>] [flags]
+
+FLAGS
+      --color string   Use color in diff output: {always|never|auto} (default "auto")
+      --name-only      Display only names of changed files
+      --patch          Display diff in patch format
+  -w, --web            Open the pull request diff in the browser
+
+INHERITED FLAGS
+      --help                     Show help for command
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+## gh pr merge
+
+Merge a pull request on GitHub.
+
+Without an argument, the pull request that belongs to the current branch
+is selected.
+
+When targeting a branch that requires a merge queue, no merge strategy is required.
+If required checks have not yet passed, auto-merge will be enabled.
+If required checks have passed, the pull request will be added to the merge queue.
+To bypass a merge queue and merge directly, pass the `--admin` flag.
+
+
+USAGE
+  gh pr merge [<number> | <url> | <branch>] [flags]
+
+FLAGS
+      --admin                   Use administrator privileges to merge a pull request that does not meet requirements
+  -A, --author-email text       Email text for merge commit author
+      --auto                    Automatically merge only after necessary requirements are met
+  -b, --body text               Body text for the merge commit
+  -F, --body-file file          Read body text from file (use "-" to read from standard input)
+  -d, --delete-branch           Delete the local and remote branch after merge
+      --disable-auto            Disable auto-merge for this pull request
+      --match-head-commit SHA   Commit SHA that the pull request head must match to allow merge
+  -m, --merge                   Merge the commits with the base branch
+  -r, --rebase                  Rebase the commits onto the base branch
+  -s, --squash                  Squash the commits into one commit and merge it into the base branch
+  -t, --subject text            Subject text for the merge commit
+
+INHERITED FLAGS
+      --help                     Show help for command
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+## gh pr review 
+
+Add a review to a pull request.
+
+Without an argument, the pull request that belongs to the current branch is reviewed.
+
+
+USAGE
+  gh pr review [<number> | <url> | <branch>] [flags]
+
+FLAGS
+  -a, --approve           Approve pull request
+  -b, --body string       Specify the body of a review
+  -F, --body-file file    Read body text from file (use "-" to read from standard input)
+  -c, --comment           Comment on a pull request
+  -r, --request-changes   Request changes on a pull request
+
+INHERITED FLAGS
+      --help                     Show help for command
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+EXAMPLES
+  # Approve the pull request of the current branch
+  $ gh pr review --approve
+  
+  # Leave a review comment for the current branch
+  $ gh pr review --comment -b "interesting"
+  
+  # Add a review for a specific pull request
+  $ gh pr review 123
+  
+  # Request changes on a specific pull request
+  $ gh pr review 123 -r -b "needs more ASCII art"
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+## gh pr checkout
+
+Check out a pull request in git
+
+USAGE
+  gh pr checkout [<number> | <url> | <branch>] [flags]
+
+FLAGS
+  -b, --branch string        Local branch name to use (default [the name of the head branch])
+      --detach               Checkout PR with a detached HEAD
+  -f, --force                Reset the existing local branch to the latest state of the pull request
+      --recurse-submodules   Update all submodules after checkout
+
+INHERITED FLAGS
+      --help                     Show help for command
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+EXAMPLES
+  # Interactively select a PR from the 10 most recent to check out
+  $ gh pr checkout
+  
+  # Checkout a specific PR
+  $ gh pr checkout 32
+  $ gh pr checkout https://github.com/OWNER/REPO/pull/32
+  $ gh pr checkout feature
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+  ## gh pr close
+
+  Close a pull request
+
+USAGE
+  gh pr close {<number> | <url> | <branch>} [flags]
+
+FLAGS
+  -c, --comment string   Leave a closing comment
+  -d, --delete-branch    Delete the local and remote branch after close
+
+INHERITED FLAGS
+      --help                     Show help for command
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+## gh pr comment
+
+Add a comment to a GitHub pull request.
+
+Without the body text supplied through flags, the command will interactively
+prompt for the comment text.
+
+
+USAGE
+  gh pr comment [<number> | <url> | <branch>] [flags]
+
+FLAGS
+  -b, --body text        The comment body text
+  -F, --body-file file   Read body text from file (use "-" to read from standard input)
+      --create-if-none   Create a new comment if no comments are found. Can be used only with --edit-last
+      --delete-last      Delete the last comment of the current user
+      --edit-last        Edit the last comment of the current user
+  -e, --editor           Skip prompts and open the text editor to write the body in
+  -w, --web              Open the web browser to write the comment
+      --yes              Skip the delete confirmation prompt when --delete-last is provided
+
+INHERITED FLAGS
+      --help                     Show help for command
+  -R, --repo [HOST/]OWNER/REPO   Select another repository using the [HOST/]OWNER/REPO format
+
+EXAMPLES
+  $ gh pr comment 13 --body "Hi from GitHub CLI"
+
+LEARN MORE
+  Use `gh <command> <subcommand> --help` for more information about a command.
+  Read the manual at https://cli.github.com/manual
+  Learn about exit codes using `gh help exit-codes`
+  Learn about accessibility experiences using `gh help accessibility`
+
+
+

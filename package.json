@@ -76,6 +76,7 @@
     "react-calendar-heatmap": "^1.10.0",
     "react-confetti": "^6.4.0",
     "react-dom": "^19.1.0",
+    "react-dropzone": "^14.3.8",
     "react-resizable-panels": "^3.0.2",
     "react-textarea-autosize": "^8.5.9",
     "react-tooltip": "^5.28.1",

@@ -1,18 +1,12 @@
 ---
-import { CheckSubscriptionVerification } from '../../../components/Billing/CheckSubscriptionVerification';
-import { RoadmapAIChat } from '../../../components/RoadmapAIChat/RoadmapAIChat';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
+import { AIChat } from '../../../components/AIChat/AIChat';
 import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
-
-type Props = {
-  roadmapId: string;
-};
-
-const { roadmapId } = Astro.params as Props;
+import { CheckSubscriptionVerification } from '../../../components/Billing/CheckSubscriptionVerification';
 ---
 
 <SkeletonLayout
-  title='Roadmap AI Chat'
+  title='AI Chat'
   noIndex={true}
   description='Learn anything with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.'
 >
@@ -20,8 +14,9 @@ const { roadmapId } = Astro.params as Props;
     activeTab='chat'
     wrapperClassName='flex-row p-0 lg:p-0 overflow-hidden'
     client:load
+    containerClassName='h-[calc(100vh-49px)] overflow-hidden'
   >
-    <h1>Roadmap AI Chat</h1>
+    <AIChat client:load />
     <CheckSubscriptionVerification client:load />
   </AITutorLayout>
 </SkeletonLayout>

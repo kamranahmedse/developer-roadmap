@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 
-import { userPersonaOptions } from '../../queries/user-persona';
+import { userRoadmapPersonaOptions } from '../../queries/user-persona';
 import { queryClient } from '../../stores/query-client';
 import { roadmapJSONOptions } from '../../queries/roadmap';
 import { Modal } from '../Modal';
@@ -22,7 +22,7 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
     queryClient,
   );
   const { data: userPersona } = useQuery(
-    userPersonaOptions(roadmapId),
+    userRoadmapPersonaOptions(roadmapId),
     queryClient,
   );
 
@@ -42,7 +42,9 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
           onClose();
         },
         onSettled: () => {
-          return queryClient.invalidateQueries(userPersonaOptions(roadmapId));
+          return queryClient.invalidateQueries(
+            userRoadmapPersonaOptions(roadmapId),
+          );
         },
       },
       queryClient,

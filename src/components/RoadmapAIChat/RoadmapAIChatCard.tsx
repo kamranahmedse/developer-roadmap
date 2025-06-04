@@ -1,8 +1,8 @@
-import type { RoamdapAIChatHistoryType } from './RoadmapAIChat';
+import type { RoadmapAIChatHistoryType } from './RoadmapAIChat';
 import { cn } from '../../lib/classname';
 import { BotIcon, User2Icon } from 'lucide-react';
 
-type RoadmapAIChatCardProps = RoamdapAIChatHistoryType & {
+type RoadmapAIChatCardProps = RoadmapAIChatHistoryType & {
   isIntro?: boolean;
 };
 
@@ -31,15 +31,6 @@ export function RoadmapAIChatCard(props: RoadmapAIChatCardProps) {
             <BotIcon className="size-4 stroke-[2.5]" />
           )}
         </div>
-
-        {!!jsx && jsx}
-
-        {!!html && (
-          <div
-            className="course-content course-ai-content prose prose-sm mt-0.5 w-full max-w-[calc(100%-38px)] overflow-hidden text-sm"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        )}
       </div>
     </div>
   );

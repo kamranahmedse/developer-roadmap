@@ -4,6 +4,11 @@ import { isLoggedIn } from '../../lib/jwt';
 import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AITutorLogo } from '../ReactIcons/AITutorLogo';
+import { queryClient } from '../../stores/query-client';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { useQuery } from '@tanstack/react-query';
+import { getPercentage } from '../../lib/number';
+import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
 import { cn } from '../../lib/classname';
 import { UserDropdown } from './UserDropdown';
 
@@ -53,12 +58,23 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
 
   const [isInitialLoad, setIsInitialLoad] = useState(true);
 
+  const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+
+  const { data: limits, isLoading: isLimitsLoading } = useQuery(
+    getAiCourseLimitOptions(),
+    queryClient,
+  );
+
+  const { used, limit } = limits ?? { used: 0, limit: 0 };
+  const totalPercentage = getPercentage(used, limit);
 
   useEffect(() => {
     setIsInitialLoad(false);
   }, []);
+
+  const isLoading = isPaidUserLoading || isLimitsLoading;
 
   return (
     <>
@@ -66,9 +82,19 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
         <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
       )}
 
+      {showAILimitsPopup && (
+        <AILimitsPopup
+          onClose={() => setShowAILimitsPopup(false)}
+          onUpgrade={() => {
+            setIsUpgradeModalOpen(true);
+            setShowAILimitsPopup(false);
+          }}
+        />
+      )}
+
       <aside
         className={cn(
-          'flex w-[255px] shrink-0 flex-col border-r border-slate-200',
+          'flex w-[var(--ai-sidebar-width)] shrink-0 flex-col border-r border-slate-200',
           isFloating
             ? 'fixed top-0 bottom-0 left-0 z-50 flex border-r-0 bg-white shadow-xl'
             : 'hidden lg:flex',
@@ -112,27 +138,38 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
             </li>
           ))}
 
-          {!isInitialLoad &&
-            isLoggedIn() &&
-            !isPaidUser &&
-            !isPaidUserLoading && (
-              <li>
-                <button
-                  onClick={() => {
-                    setIsUpgradeModalOpen(true);
-                  }}
-                  className="mx-4 mt-4 rounded-xl bg-amber-100 p-4 text-left transition-colors hover:bg-amber-200/80"
-                >
-                  <span className="mb-2 flex items-center gap-2">
-                    <Zap className="size-4 text-amber-600" />
-                    <span className="font-medium text-amber-900">Upgrade</span>
+          {!isInitialLoad && isLoggedIn() && !isPaidUser && !isLoading && (
+            <li>
+              <button
+                onClick={() => {
+                  setIsUpgradeModalOpen(true);
+                }}
+                className="animate-fade-in mx-4 mt-4 rounded-xl bg-amber-100 p-4 text-left transition-colors hover:bg-amber-200/80"
+              >
+                <span className="mb-2 flex items-center gap-2">
+                  <Zap className="size-4 text-amber-600" />
+                  <span className="font-medium text-amber-900">Upgrade</span>
+                </span>
+                <span className="mt-1 block text-left text-xs leading-4 text-amber-700">
+                  Get access to all features and benefits of the AI Tutor.
+                </span>
+
+                <div className="mt-5">
+                  <div className="relative h-1 w-full rounded-full bg-amber-300/40">
+                    <div
+                      className="absolute inset-0 h-full rounded-full bg-amber-600/80"
+                      style={{
+                        width: `${totalPercentage}%`,
+                      }}
+                    ></div>
+                  </div>
+                  <span className="mt-2 block text-xs text-amber-700">
+                    {totalPercentage}% of the daily limit used
                   </span>
-                  <span className="mt-1 block text-left text-xs leading-4 text-amber-700">
-                    Get access to all features and benefits of the AI Tutor.
-                  </span>
-                </button>
-              </li>
-            )}
+                </div>
+              </button>
+            </li>
+          )}
         </ul>
         <div className="mx-2 mt-auto mb-2">
           <UserDropdown />
