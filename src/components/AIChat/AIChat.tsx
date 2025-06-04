@@ -2,6 +2,7 @@ import './AIChat.css';
 import {
   ArrowDownIcon,
   FileUpIcon,
+  LockIcon,
   PersonStandingIcon,
   SendIcon,
   TrashIcon,
@@ -41,6 +42,8 @@ import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
 import { AIChatCourse } from './AIChatCouse';
 import { getTailwindScreenDimension } from '../../lib/is-mobile';
 import type { TailwindScreenDimensions } from '../../lib/is-mobile';
+import { showLoginPopup } from '../../lib/popup';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 export function AIChat() {
   const toast = useToast();
@@ -59,6 +62,7 @@ export function AIChat() {
     RoadmapAIChatHistoryType[]
   >([]);
 
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isPersonalizedResponseFormOpen, setIsPersonalizedResponseFormOpen] =
     useState(false);
   const [isUploadResumeModalOpen, setIsUploadResumeModalOpen] = useState(false);
@@ -90,13 +94,22 @@ export function AIChat() {
   const isPaidUser = userBillingDetails?.status === 'active';
 
   const handleChatSubmit = () => {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
+    if (isLimitExceeded) {
+      if (!isPaidUser) {
+        setShowUpgradeModal(true);
+      }
+
+      toast.error('Limit reached for today. Please wait until tomorrow.');
+      return;
+    }
+
     const trimmedMessage = message.trim();
-    if (
-      !trimmedMessage ||
-      isStreamingMessage ||
-      !isLoggedIn() ||
-      isLimitExceeded
-    ) {
+    if (!trimmedMessage || isStreamingMessage) {
       return;
     }
 
@@ -288,6 +301,15 @@ export function AIChat() {
 
   const handleRegenerate = useCallback(
     (index: number) => {
+      if (isLimitExceeded) {
+        if (!isPaidUser) {
+          setShowUpgradeModal(true);
+        }
+
+        toast.error('Limit reached for today. Please wait until tomorrow.');
+        return;
+      }
+
       const filteredChatHistory = aiChatHistory.slice(0, index);
 
       flushSync(() => {
@@ -309,6 +331,11 @@ export function AIChat() {
 
   const shouldShowQuickHelpPrompts =
     message.length === 0 && aiChatHistory.length === 0;
+  const isDataLoading =
+    isLoading ||
+    isBillingDetailsLoading ||
+    isUserPersonaLoading ||
+    isUserResumeLoading;
 
   return (
     <div
@@ -351,6 +378,10 @@ export function AIChat() {
         />
       )}
 
+      {showUpgradeModal && (
+        <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+      )}
+
       <div
         className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4 lg:left-[var(--ai-sidebar-width)]"
         ref={chatContainerRef}
@@ -360,12 +391,16 @@ export function AIChat() {
             <QuickActionButton
               icon={PersonStandingIcon}
               label="Personalized"
-              onClick={() => setIsPersonalizedResponseFormOpen(true)}
+              onClick={() => {
+                setIsPersonalizedResponseFormOpen(true);
+              }}
             />
             <QuickActionButton
               icon={FileUpIcon}
               label={isUploading ? 'Processing...' : 'Upload Resume'}
-              onClick={() => setIsUploadResumeModalOpen(true)}
+              onClick={() => {
+                setIsUploadResumeModalOpen(true);
+              }}
               isLoading={isUploading}
             />
           </div>
@@ -391,9 +426,13 @@ export function AIChat() {
         </div>
 
         <form
-          className="pointer-events-auto flex flex-col gap-2 rounded-lg rounded-b-none border border-b-0 border-gray-200 bg-white p-2.5"
+          className="pointer-events-auto relative flex flex-col gap-2 overflow-hidden rounded-lg rounded-b-none border border-b-0 border-gray-200 bg-white p-2.5"
           onSubmit={(e) => {
             e.preventDefault();
+            if (isDataLoading) {
+              return;
+            }
+
             handleChatSubmit();
           }}
         >
@@ -407,15 +446,45 @@ export function AIChat() {
             autoFocus
             onKeyDown={(e) => {
               if (e.key === 'Enter' && !e.shiftKey) {
+                if (isDataLoading) {
+                  return;
+                }
+
                 e.preventDefault();
                 handleChatSubmit();
               }
             }}
           />
+
+          {isLimitExceeded && isLoggedIn() && !isDataLoading && (
+            <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+              <LockIcon
+                className="size-4 cursor-not-allowed"
+                strokeWidth={2.5}
+              />
+              <p className="cursor-not-allowed">
+                Limit reached for today
+                {isPaidUser ? '. Please wait until tomorrow.' : ''}
+              </p>
+              {!isPaidUser && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowUpgradeModal(true);
+                  }}
+                  className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                >
+                  Upgrade for more
+                </button>
+              )}
+            </div>
+          )}
+
           <div className="flex justify-end">
             <button
               type="submit"
-              className="flex size-8 shrink-0 items-center justify-center rounded-md border border-gray-200"
+              className="flex size-8 shrink-0 items-center justify-center rounded-md border border-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+              disabled={isLimitExceeded || isStreamingMessage || isDataLoading}
             >
               <SendIcon className="size-4" />
             </button>

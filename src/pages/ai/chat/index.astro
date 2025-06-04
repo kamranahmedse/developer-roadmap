@@ -2,6 +2,7 @@
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 import { AIChat } from '../../../components/AIChat/AIChat';
 import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
+import { CheckSubscriptionVerification } from '../../../components/Billing/CheckSubscriptionVerification';
 ---
 
 <SkeletonLayout
@@ -16,5 +17,6 @@ import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
     containerClassName='h-[calc(100vh-49px)] overflow-hidden'
   >
     <AIChat client:load />
+    <CheckSubscriptionVerification client:load />
   </AITutorLayout>
 </SkeletonLayout>

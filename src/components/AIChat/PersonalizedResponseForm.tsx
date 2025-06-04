@@ -10,6 +10,8 @@ import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
 import { userPersonaOptions } from '../../queries/user-persona';
 import { useToast } from '../../hooks/use-toast';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 export type ChatPreferencesFormData = {
   expertise: string;
@@ -63,6 +65,11 @@ export const PersonalizedResponseForm = memo(
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
+
+      if (!isLoggedIn()) {
+        showLoginPopup();
+        return;
+      }
 
       setChatPreferences({
         expertise,

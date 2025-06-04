@@ -15,6 +15,8 @@ import {
   userResumeOptions,
   type UserResumeDocument,
 } from '../../queries/user-resume';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 type OnDrop<T extends File = File> = (
   acceptedFiles: T[],
@@ -79,6 +81,11 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
 
     if (!file) {
       return;
