@@ -1,4 +1,4 @@
-import { SquareArrowOutUpRightIcon } from 'lucide-react';
+import { Book } from 'lucide-react';
 
 type AIChatCourseType = {
   keyword: string;
@@ -41,10 +41,10 @@ export function AIChatCourse(props: AIChatCourseProps) {
         href={courseSearchUrl}
         target="_blank"
         key={course?.keyword}
-        className="group flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-2.5 py-1.5 text-left text-sm text-gray-700 transition-all hover:border-gray-300 hover:bg-gray-50 hover:text-gray-900 active:bg-gray-100"
+        className="group flex min-w-[120px] items-center gap-2 rounded-lg border border-gray-200 bg-white px-2.5 py-1.5 text-left text-sm text-gray-700 transition-all hover:border-gray-400 hover:text-black active:bg-gray-100"
       >
+        <Book className="size-4 flex-shrink-0 text-gray-400" />
         {course?.keyword}
-        <SquareArrowOutUpRightIcon className="size-3.5 text-gray-400 transition-transform group-hover:text-gray-600" />
       </a>
     </div>
   );

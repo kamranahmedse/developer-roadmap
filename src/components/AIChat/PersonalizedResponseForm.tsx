@@ -27,23 +27,13 @@ type PersonalizedResponseFormProps = {
 export const PersonalizedResponseForm = memo(
   (props: PersonalizedResponseFormProps) => {
     const { defaultValues, onClose } = props;
-
     const toast = useToast();
 
     const [expertise, setExpertise] = useState(defaultValues?.expertise ?? '');
-    const [hasInitialGoal, setHasInitialGoal] = useState(!!defaultValues?.goal);
-    const [goal, setGoal] = useState(defaultValues?.goal ?? '');
     const [about, setAbout] = useState(defaultValues?.about ?? '');
     const [specialInstructions, setSpecialInstructions] = useState(
-      defaultValues?.specialInstructions ?? '',
+      defaultValues?.specialInstructions ?? ''
     );
-
-    const expertiseFieldId = useId();
-    const goalFieldId = useId();
-    const aboutFieldId = useId();
-    const specialInstructionsFieldId = useId();
-
-    const goalRef = useRef<HTMLTextAreaElement>(null);
 
     const goalOptions = [
       'Finding a job',
@@ -52,8 +42,46 @@ export const PersonalizedResponseForm = memo(
       'Switching careers',
       'Getting a promotion',
       'Filling knowledge gaps',
-      'Other (tell us more)',
+      'Other',
     ];
+
+    const getInitialGoalSelection = () => {
+      if (!defaultValues?.goal) {
+        return '';
+      }
+
+      for (const option of goalOptions.slice(0, -1)) {
+        if (defaultValues.goal.startsWith(option)) {
+          return option;
+        }
+      }
+
+      return 'Other';
+    };
+
+    const [selectedGoal, setSelectedGoal] = useState(getInitialGoalSelection());
+    const [goal, setGoal] = useState(defaultValues?.goal ?? '');
+
+    const expertiseFieldId = useId();
+    const goalFieldId = useId();
+    const goalSelectId = useId();
+    const aboutFieldId = useId();
+    const specialInstructionsFieldId = useId();
+
+    const goalRef = useRef<HTMLTextAreaElement>(null);
+
+    const handleGoalSelectionChange = (value: string) => {
+      setSelectedGoal(value);
+
+      if (value === 'Other') {
+        setGoal('');
+        setTimeout(() => {
+          goalRef.current?.focus();
+        }, 0);
+      } else {
+        setGoal(value);
+      }
+    };
 
     const { mutate: setChatPreferences, isPending } = useMutation(
       {
@@ -68,7 +96,7 @@ export const PersonalizedResponseForm = memo(
           toast.error(error?.message ?? 'Something went wrong');
         },
       },
-      queryClient,
+      queryClient
     );
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -103,12 +131,11 @@ export const PersonalizedResponseForm = memo(
               <SelectNative
                 id={expertiseFieldId}
                 value={expertise}
+                defaultValue={expertise}
                 onChange={(e) => setExpertise(e.target.value)}
                 className="h-[40px] border-gray-300 text-sm focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
               >
-                <option value="" selected hidden>
-                  Select your expertise
-                </option>
+                <option value="">Select your expertise</option>
                 {[
                   'No experience (just starting out)',
                   'Beginner (less than 1 year of experience)',
@@ -122,52 +149,39 @@ export const PersonalizedResponseForm = memo(
                 ))}
               </SelectNative>
             </div>
+
             <div className="flex flex-col gap-3">
               <label
                 className="text-sm font-medium text-gray-700"
-                htmlFor={goalFieldId}
+                htmlFor={goalSelectId}
               >
-                What is your goal?{' '}
-                {hasInitialGoal &&
-                  !defaultValues?.goal &&
-                  `Tell us more about yourself`}
+                What is your goal?
               </label>
 
-              {!hasInitialGoal && (
-                <div className="flex flex-row flex-wrap gap-2">
-                  {goalOptions.map((goalTemplate) => (
-                    <button
-                      key={goalTemplate}
-                      className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600 transition-all hover:border-gray-300 hover:border-gray-400 hover:bg-gray-100"
-                      onClick={() => {
-                        if (goalTemplate !== 'Other (tell us more)') {
-                          setGoal(`${goalTemplate}.`);
-                        }
+              <SelectNative
+                id={goalSelectId}
+                value={selectedGoal}
+                onChange={(e) => handleGoalSelectionChange(e.target.value)}
+                className="h-[40px] border-gray-300 text-sm focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+              >
+                <option value="">Select your goal</option>
+                {goalOptions.map((goalOption) => (
+                  <option key={goalOption} value={goalOption}>
+                    {goalOption}
+                  </option>
+                ))}
+              </SelectNative>
 
-                        setHasInitialGoal(true);
-                        setTimeout(() => {
-                          goalRef.current?.focus();
-                        }, 0);
-                      }}
-                      type="button"
-                    >
-                      {goalTemplate}
-                    </button>
-                  ))}
-                </div>
+              {selectedGoal === 'Other' && (
+                <textarea
+                  ref={goalRef}
+                  id={goalFieldId}
+                  className="block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+                  placeholder="e.g. need to find a job as soon as possible"
+                  value={goal}
+                  onChange={(e) => setGoal(e.target.value)}
+                />
               )}
-
-              <textarea
-                ref={goalRef}
-                id={goalFieldId}
-                className={cn(
-                  'block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500',
-                  !hasInitialGoal && 'hidden'
-                )}
-                placeholder={`e.g. need to find a job as soon as possible`}
-                value={goal}
-                onChange={(e) => setGoal(e.target.value)}
-              />
             </div>
 
             <div className="flex flex-col gap-3">
@@ -222,5 +236,5 @@ export const PersonalizedResponseForm = memo(
         </div>
       </Modal>
     );
-  },
+  }
 );
