@@ -23,7 +23,7 @@ export function QuickActionButton(props: QuickActionButtonProps) {
     >
       {Icon && !isLoading && <Icon className="size-4" />}
       {isLoading && Icon && <Loader2Icon className="size-4 animate-spin" />}
-      {label}
+      <span className="hidden lg:block">{label}</span>
     </button>
   );
 }

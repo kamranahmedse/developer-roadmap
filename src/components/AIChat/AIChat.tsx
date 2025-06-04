@@ -351,18 +351,12 @@ export function AIChat() {
           <div className="flex items-center gap-2">
             <QuickActionButton
               icon={PersonStandingIcon}
-              label="Personalized Response"
+              label="Personalized"
               onClick={() => setIsPersonalizedResponseFormOpen(true)}
             />
             <QuickActionButton
               icon={FileUpIcon}
-              label={
-                isUploading
-                  ? 'Processing...'
-                  : userResume?.fileName
-                    ? 'Upload New Resume'
-                    : 'Upload Resume'
-              }
+              label={isUploading ? 'Processing...' : 'Upload Resume'}
               onClick={() => setIsUploadResumeModalOpen(true)}
               isLoading={isUploading}
             />

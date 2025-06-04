@@ -8,10 +8,13 @@ import {
 import { cn } from '../../lib/classname';
 import { Loader2Icon, PlusIcon, XIcon } from 'lucide-react';
 import { useMutation } from '@tanstack/react-query';
-import { httpPost } from '../../lib/query-http';
+import { httpDelete, httpPost } from '../../lib/query-http';
 import { useToast } from '../../hooks/use-toast';
 import { queryClient } from '../../stores/query-client';
-import type { UserResumeDocument } from '../../queries/user-resume';
+import {
+  userResumeOptions,
+  type UserResumeDocument,
+} from '../../queries/user-resume';
 
 type OnDrop<T extends File = File> = (
   acceptedFiles: T[],
@@ -46,6 +49,24 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
   const onDrop: OnDrop = useCallback((acceptedFiles) => {
     setFile(acceptedFiles[0]);
   }, []);
+
+  const { mutate: deleteResume, isPending: isDeletingResume } = useMutation(
+    {
+      mutationFn: async () => {
+        return httpDelete('/v1-delete-resume');
+      },
+      onSuccess: () => {
+        setFile(null);
+      },
+      onSettled: () => {
+        return queryClient.invalidateQueries(userResumeOptions());
+      },
+      onError: (error) => {
+        toast.error(error?.message || 'Failed to delete resume');
+      },
+    },
+    queryClient,
+  );
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
@@ -94,9 +115,14 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
               <button
                 type="button"
                 className="flex size-8 items-center justify-center rounded-md text-gray-400 hover:bg-red-100 hover:text-red-500"
-                onClick={() => setFile(null)}
+                disabled={isDeletingResume}
+                onClick={() => deleteResume()}
               >
-                <XIcon className="size-4" />
+                {isDeletingResume ? (
+                  <Loader2Icon className="size-4 animate-spin" />
+                ) : (
+                  <XIcon className="size-4" />
+                )}
               </button>
             </div>
           </div>
@@ -128,30 +154,34 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
           </>
         )}
 
-        <button
-          type="submit"
-          className="mt-4 flex w-full cursor-pointer items-center justify-center rounded-lg bg-gray-100 p-1 py-2.5 leading-none tracking-wide text-gray-600 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:text-gray-400 data-[loading=true]:cursor-wait"
-          data-loading={String(isUploading)}
-          disabled={!file || isUploading}
-        >
-          {isUploading ? (
-            <Loader2Icon className="size-4 animate-spin" />
-          ) : (
-            'Upload Resume'
-          )}
-        </button>
+        {!defaultUserResume && (
+          <>
+            <button
+              type="submit"
+              className="mt-4 flex w-full cursor-pointer items-center justify-center rounded-lg bg-gray-100 p-1 py-2.5 leading-none tracking-wide text-gray-600 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:text-gray-400 data-[loading=true]:cursor-wait"
+              data-loading={String(isUploading)}
+              disabled={!file || isUploading || isDeletingResume}
+            >
+              {isUploading ? (
+                <Loader2Icon className="size-4 animate-spin" />
+              ) : (
+                'Upload Resume'
+              )}
+            </button>
 
-        <p className="mt-4 text-center text-xs text-gray-400">
-          You can also export your resume from{' '}
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 underline"
-          >
-            LinkedIn
-          </a>
-        </p>
+            <p className="mt-4 text-center text-xs text-gray-400">
+              You can also export your resume from{' '}
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 underline"
+              >
+                LinkedIn
+              </a>
+            </p>
+          </>
+        )}
       </form>
     </Modal>
   );
