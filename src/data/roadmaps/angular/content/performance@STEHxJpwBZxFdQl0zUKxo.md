@@ -4,4 +4,6 @@ Angular’s performance is enhanced through key strategies such as Deferable Vie
 
 Learn more from the following resources:
 
+- [@official@Performance Overview](https://angular.dev/best-practices/runtime-performance)
+- [@article@The Complete Angular Performance Guide](https://danielk.tech/home/complete-angular-performance-guide)
 - [@video@From Good to Great: Optimizing Angular Performance](https://www.youtube.com/watch?v=tMxrY7IL-Ac)

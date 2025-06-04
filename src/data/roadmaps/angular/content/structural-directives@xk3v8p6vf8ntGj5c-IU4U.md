@@ -10,6 +10,6 @@ In Angular, there are three standard structural directives:
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Structural Directives](https://angular.dev/guide/directives/structural-directives)
+- [@official@Structural Directives](https://angular.dev/guide/directives/structural-directives)
 - [@article@Structural Directives in Angular](https://medium.com/@eugeniyoz/structural-directives-in-angular-61fe522f3427)
 - [@article@Angular Structural Directive Patterns: What they are and how to use them](https://www.freecodecamp.org/news/angular-structural-directive-patterns-what-they-are-and-how-to-use-them/)

@@ -6,7 +6,6 @@ The reactive paradigm can be used in many different languages through the use of
 
 Visit the following resources to learn more:
 
-- [@official@RxJS Docs](https://rxjs.dev/guide/overview)
 - [@article@Learn RxJS](https://www.learnrxjs.io/)
 - [@article@RxJs and Observables for Beginners: A Beginner Friendly Introduction](https://blog.angular-university.io/functional-reactive-programming-for-angular-2-developers-rxjs-and-observables/)
 - [@video@Beginner's RxJS Tutorial: Dive Deep with RxJS Crash Course!](https://www.youtube.com/watch?v=yJdh1_FbtjU)

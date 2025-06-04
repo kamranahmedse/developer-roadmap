@@ -4,5 +4,5 @@ On every change detection cycle, Angular synchronously evaluates all template ex
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Slow Computations](https://angular.dev/best-practices/slow-computations)
+- [@official@Slow Computations](https://angular.dev/best-practices/slow-computations)
 - [@article@Angular Performance Optimization](https://davembush.medium.com/angular-performance-optimization-5ec630d2b8f1)

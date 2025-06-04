@@ -4,5 +4,5 @@ CSS classes applied to active `RouterLink` elements, such as `RouterLinkActive`,
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Accessibility - Active links identification](https://angular.dev/best-practices/a11y#active-links-identification)
-- [@official@MDN Docs - ARIA Current](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current)
+- [@official@Accessibility - Active links identification](https://angular.dev/best-practices/a11y#active-links-identification)
+- [@article@ARIA Current](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current)

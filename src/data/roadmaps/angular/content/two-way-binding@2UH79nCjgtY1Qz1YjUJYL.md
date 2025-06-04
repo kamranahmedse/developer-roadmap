@@ -4,5 +4,5 @@ Two-way binding gives components in your application a way to share data. Use tw
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Two-way binding](https://angular.dev/guide/templates/two-way-binding)
+- [@official@Two-way binding](https://angular.dev/guide/templates/two-way-binding)
 - [@article@How to implement two-way data binding in Angular](https://www.angularminds.com/blog/how-to-implement-two-way-data-binding-in-angular)

@@ -10,5 +10,5 @@ The most used attribute directives are:
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Attribute Directives](https://angular.dev/guide/directives/attribute-directives)
+- [@official@Attribute Directives](https://angular.dev/guide/directives/attribute-directives)
 - [@article@Angular Attribute Directive](https://www.scaler.com/topics/angular/angular-attribute-directive/)
