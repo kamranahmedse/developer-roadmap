@@ -83,3 +83,8 @@ for (auto it = my_vec.begin(); it != my_vec.end(); ++it) {
 ```
 
 This is just a brief overview of the C++ Standard Template Library. There are many other features and functions available in the STL, and familiarizing yourself with them is crucial for efficient C++ programming.
+
+Learn more from the following resources:
+
+- [@video@C++ Standard Template Library (STL) Short Overview](https://www.youtube.com/watch?v=Id6ZEb_Lg58)
+- [@book@Mastering STL in C++23: New Features, Updates, and Best Practices](https://simplifycpp.org/books/Mastering_STL.pdf)
