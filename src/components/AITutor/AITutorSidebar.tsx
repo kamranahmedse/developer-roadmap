@@ -145,43 +145,36 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
           ))}
 
           {!isInitialLoad && isLoggedIn() && !isPaidUser && !isLoading && (
-            <>
-              <li>
-                <button
-                  onClick={() => {
-                    setIsUpgradeModalOpen(true);
-                  }}
-                  className="mx-4 mt-4 rounded-xl bg-amber-100 p-4 text-left transition-colors hover:bg-amber-200/80"
-                >
-                  <span className="mb-2 flex items-center gap-2">
-                    <Zap className="size-4 text-amber-600" />
-                    <span className="font-medium text-amber-900">Upgrade</span>
-                  </span>
-                  <span className="mt-1 block text-left text-xs leading-4 text-amber-700">
-                    Get access to all features and benefits of the AI Tutor.
-                  </span>
-                </button>
-              </li>
+            <li>
+              <button
+                onClick={() => {
+                  setIsUpgradeModalOpen(true);
+                }}
+                className="mx-4 mt-4 rounded-xl bg-amber-100 p-4 text-left transition-colors hover:bg-amber-200/80"
+              >
+                <span className="mb-2 flex items-center gap-2">
+                  <Zap className="size-4 text-amber-600" />
+                  <span className="font-medium text-amber-900">Upgrade</span>
+                </span>
+                <span className="mt-1 block text-left text-xs leading-4 text-amber-700">
+                  Get access to all features and benefits of the AI Tutor.
+                </span>
 
-              <li className="mx-4 mt-4">
-                <button
-                  onClick={() => {
-                    setShowAILimitsPopup(true);
-                  }}
-                  className="relative hidden h-full min-h-[38px] w-full cursor-pointer items-center overflow-hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 lg:flex"
-                >
-                  <span className="relative z-10">
+                <div className="mt-5">
+                  <div className="relative h-1 w-full rounded-full bg-amber-300/40">
+                    <div
+                      className="absolute inset-0 h-full rounded-full bg-amber-600/80"
+                      style={{
+                        width: `${totalPercentage}%`,
+                      }}
+                    ></div>
+                  </div>
+                  <span className="mt-2 block text-xs text-amber-700">
                     {totalPercentage}% of the daily limit used
                   </span>
-                  <div
-                    className="absolute inset-0 h-full bg-gray-200/80"
-                    style={{
-                      width: `${totalPercentage}%`,
-                    }}
-                  ></div>
-                </button>
-              </li>
-            </>
+                </div>
+              </button>
+            </li>
           )}
         </ul>
       </aside>
