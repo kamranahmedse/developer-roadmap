@@ -150,7 +150,7 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
                 onClick={() => {
                   setIsUpgradeModalOpen(true);
                 }}
-                className="mx-4 mt-4 rounded-xl bg-amber-100 p-4 text-left transition-colors hover:bg-amber-200/80"
+                className="mx-4 animate-fade-in mt-4 rounded-xl bg-amber-100 p-4 text-left transition-colors hover:bg-amber-200/80"
               >
                 <span className="mb-2 flex items-center gap-2">
                   <Zap className="size-4 text-amber-600" />
