@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { QuickActionButton } from './QuickActionButton';
 import { cn } from '../../lib/classname';
 
 type QuickHelpPromptsProps = {
@@ -59,10 +58,10 @@ export function QuickHelpPrompts(props: QuickHelpPromptsProps) {
         {quickActions.map((action, index) => (
           <button
             className={cn(
-              'pointer-events-auto flex shrink-0 cursor-pointer items-center gap-2 rounded-lg border border-gray-200 bg-white px-2 py-1.5 text-sm hover:bg-gray-100 hover:text-black',
+              'pointer-events-auto flex shrink-0 cursor-pointer items-center gap-2 rounded-lg border bg-white px-2 py-1.5 text-sm hover:bg-gray-100 hover:text-black',
               selectedActionIndex === index
-                ? 'bg-white text-black'
-                : 'bg-gray-100 text-gray-500',
+                ? 'border-gray-300 bg-white text-black hover:bg-white'
+                : 'border-gray-300 bg-gray-100 text-gray-500 hover:border-gray-300 hover:bg-gray-50',
             )}
             onClick={() => setSelectedActionIndex(index)}
           >

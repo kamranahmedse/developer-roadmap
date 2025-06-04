@@ -342,7 +342,7 @@ export function AIChat() {
       className="ai-chat relative flex min-h-screen w-full flex-col gap-2 overflow-y-auto bg-gray-100 pb-55"
       ref={scrollableContainerRef}
     >
-      <div className="relative mx-auto w-full max-w-2xl grow px-4">
+      <div className="relative mx-auto w-full max-w-3xl grow px-4">
         {shouldShowQuickHelpPrompts && (
           <QuickHelpPrompts
             onQuestionClick={(question) => {
