@@ -1,15 +1,14 @@
-import {
-  BookOpen, Compass,
-  Plus,
-  Star,
-  X,
-  Zap
-} from 'lucide-react';
+import { BookOpen, Compass, Plus, Star, X, Zap } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AITutorLogo } from '../ReactIcons/AITutorLogo';
+import { queryClient } from '../../stores/query-client';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { useQuery } from '@tanstack/react-query';
+import { getPercentage } from '../../lib/number';
+import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
 
 type AITutorSidebarProps = {
   isFloating: boolean;
@@ -57,17 +56,38 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
 
   const [isInitialLoad, setIsInitialLoad] = useState(true);
 
+  const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+
+  const { data: limits, isLoading: isLimitsLoading } = useQuery(
+    getAiCourseLimitOptions(),
+    queryClient,
+  );
+
+  const { used, limit } = limits ?? { used: 0, limit: 0 };
+  const totalPercentage = getPercentage(used, limit);
 
   useEffect(() => {
     setIsInitialLoad(false);
   }, []);
 
+  const isLoading = isPaidUserLoading || isLimitsLoading;
+
   return (
     <>
       {isUpgradeModalOpen && (
         <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
+      )}
+
+      {showAILimitsPopup && (
+        <AILimitsPopup
+          onClose={() => setShowAILimitsPopup(false)}
+          onUpgrade={() => {
+            setIsUpgradeModalOpen(true);
+            setShowAILimitsPopup(false);
+          }}
+        />
       )}
 
       <aside
@@ -124,10 +144,8 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
             </li>
           ))}
 
-          {!isInitialLoad &&
-            isLoggedIn() &&
-            !isPaidUser &&
-            !isPaidUserLoading && (
+          {!isInitialLoad && isLoggedIn() && !isPaidUser && !isLoading && (
+            <>
               <li>
                 <button
                   onClick={() => {
@@ -144,7 +162,27 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
                   </span>
                 </button>
               </li>
-            )}
+
+              <li className="mx-4 mt-4">
+                <button
+                  onClick={() => {
+                    setShowAILimitsPopup(true);
+                  }}
+                  className="relative hidden h-full min-h-[38px] w-full cursor-pointer items-center overflow-hidden rounded-lg border border-gray-300 px-3 py-1.5 text-sm hover:bg-gray-50 lg:flex"
+                >
+                  <span className="relative z-10">
+                    {totalPercentage}% of the daily limit used
+                  </span>
+                  <div
+                    className="absolute inset-0 h-full bg-gray-200/80"
+                    style={{
+                      width: `${totalPercentage}%`,
+                    }}
+                  ></div>
+                </button>
+              </li>
+            </>
+          )}
         </ul>
       </aside>
       {isFloating && (
