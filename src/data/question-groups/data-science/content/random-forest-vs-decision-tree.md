@@ -1,0 +1,5 @@
+This table describes the difference between decision trees and random forests and when to use them based on features like accuracy, training time, etc.
+
+![Decision tree vs random forest](https://assets.roadmap.sh/guest/random-forest-vs-decision-tree-e8js9.png)
+
+A random forest is a collection of multiple decision trees, while a decision tree is just a single model that predicts outcomes based on a series of decisions. For a random forest, each tree is trained on a subset of the data and a subset of features, and both of these are random. A decision tree is a simple, tree-like structure used to represent decisions and the possible outcomes from them. Random forest multiple trees use bootstrapped samples and random feature selection, then average predictions to improve accuracy and reduce overfitting. 

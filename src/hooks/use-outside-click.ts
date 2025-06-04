@@ -6,9 +6,11 @@ export function useOutsideClick(ref: any, callback: any) {
       const isClickedOutside =
         !ref?.current?.contains(event.target) &&
         !document?.getElementById('gtx-trans')?.contains(event.target);
-      if (isClickedOutside) {
-        callback();
+      if (!isClickedOutside) {
+        return;
       }
+
+      callback?.();
     };
 
     document.addEventListener('mousedown', listener);

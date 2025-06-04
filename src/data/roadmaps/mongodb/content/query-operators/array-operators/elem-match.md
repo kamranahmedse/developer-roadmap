@@ -37,14 +37,28 @@ If you want to find all the students who have scored 80 or above in Math and 70 
 
 ```javascript
 db.courseRecords.find({
-  grades: {
-    $elemMatch: {
-      subject: 'Math',
-      score: { $gte: 80 },
-      subject: 'English',
-      score: { $gte: 70 },
+  $and: [
+    {
+      grades: {
+        $elemMatch: {
+          subject: "Math",
+          score: {
+            $gte: 80
+          }
+        }
+      }
     },
-  },
+    {
+      grades: {
+        $elemMatch: {
+          subject: "English",
+          score: {
+            $gte: 70
+          }
+        }
+      }
+    }
+  ]
 });
 ```
 

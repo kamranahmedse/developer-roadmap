@@ -51,6 +51,14 @@ export function AICourse(props: AICourseProps) {
     setCustomInstructions(fineTuneData.customInstructions);
   }, []);
 
+  useEffect(() => {
+    window?.fireEvent({
+      action: 'tutor_user',
+      category: 'ai_tutor',
+      label: 'Visited AI Course Page',
+    });
+  }, []);
+
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && keyword.trim()) {
       onSubmit();

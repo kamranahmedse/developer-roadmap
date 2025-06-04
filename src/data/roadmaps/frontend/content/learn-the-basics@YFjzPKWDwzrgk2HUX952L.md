@@ -1,6 +1,6 @@
 # CSS Basics
 
-CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+CSS (Cascading Style Sheets) is the language for styling websites. It makes the frontend look good. Along with HTML and JavaScript, CSS is a key part of the World Wide Web. It controls colors, fonts, layout, and more to visually design webpages.
 
 Visit the following resources to learn more:
 

@@ -19,6 +19,7 @@ import { CourseAnnouncement } from '../components/SQLCourse/CourseAnnouncement';
 import { Toaster } from '../components/Toast';
 import { siteConfig } from '../lib/config';
 import type { ResourceType } from '../lib/resource-progress';
+import Bluconic from '../components/Analytics/Bluconic.astro';
 
 export interface Props {
   title: string;
@@ -177,7 +178,7 @@ const gaPageIdentifier = Astro.url.pathname
       jsonLd.length > 0 && (
         <script
           type='application/ld+json'
-          set:html={JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd)}
+          set:html={JSON.stringify(jsonLd)}
         />
       )
     }
@@ -187,6 +188,7 @@ const gaPageIdentifier = Astro.url.pathname
     <RedditPixel />
     <GoogleAd />
     <Hubspot />
+    <Bluconic />
   </head>
   <body class='flex min-h-screen flex-col'>
     <!-- Google Tag Manager (noscript) -->

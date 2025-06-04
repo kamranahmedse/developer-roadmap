@@ -2,19 +2,20 @@
 import {
   ArrowLeftIcon,
   BookOpenIcon,
+  Bot,
   FolderKanbanIcon,
   MapIcon,
   MessageCircle,
 } from 'lucide-react';
-import { TabLink } from './TabLink';
-import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
-import { ScheduleButton } from './Schedule/ScheduleButton';
-import ProgressHelpPopup from './ProgressHelpPopup.astro';
-import { MarkFavorite } from './FeaturedItems/MarkFavorite';
 import { type RoadmapFrontmatter } from '../lib/roadmap';
-import { ShareRoadmapButton } from './ShareRoadmapButton';
+import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import { DownloadRoadmapButton } from './DownloadRoadmapButton';
-import { CourseAnnouncement } from './SQLCourse/CourseAnnouncement';
+import { MarkFavorite } from './FeaturedItems/MarkFavorite';
+import ProgressHelpPopup from './ProgressHelpPopup.astro';
+import { ScheduleButton } from './Schedule/ScheduleButton';
+import { ShareRoadmapButton } from './ShareRoadmapButton';
+import { TabLink } from './TabLink';
+
 export interface Props {
   title: string;
   description: string;
@@ -29,6 +30,7 @@ export interface Props {
   hasSearch?: boolean;
   projectCount?: number;
   coursesCount?: number;
+  hasAIChat?: boolean;
   question?: RoadmapFrontmatter['question'];
   hasTopics?: boolean;
   isForkable?: boolean;
@@ -43,6 +45,7 @@ const {
   isUpcoming = false,
   note,
   hasTopics = false,
+  hasAIChat = false,
   projectCount = 0,
   question,
   activeTab = 'roadmap',
@@ -125,7 +128,7 @@ const hasProjects = projectCount > 0;
     {
       (
         <div class='flex justify-between gap-2 sm:gap-0'>
-          <div class='relative top-px flex gap-1 sm:gap-3'>
+          <div class='relative top-px flex gap-1 sm:gap-2'>
             <TabLink
               url={`/${roadmapId}`}
               icon={MapIcon}
@@ -147,6 +150,16 @@ const hasProjects = projectCount > 0;
                 icon={BookOpenIcon}
                 text='Courses'
                 isActive={activeTab === 'courses'}
+                className='hidden md:flex'
+              />
+            )}
+            {hasAIChat && (
+              <TabLink
+                url={`/${roadmapId}/ai`}
+                icon={Bot}
+                text='AI Mentor'
+                mobileText='AI'
+                isActive={false}
                 badgeText='New'
               />
             )}

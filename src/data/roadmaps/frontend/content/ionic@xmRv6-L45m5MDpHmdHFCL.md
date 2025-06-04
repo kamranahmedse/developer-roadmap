@@ -1,6 +1,6 @@
 # Ionic
 
-Ionic is an open-source UI toolkit for building high-quality, cross-platform mobile and desktop applications using web technologies (HTML, CSS, and JavaScript). It leverages popular web frameworks like Angular, React, or Vue.js for application logic, while providing a rich set of pre-built UI components and native device functionalities. Ionic uses Cordova or Capacitor to wrap web apps for native deployment, allowing developers to create hybrid apps that can access device features through plugins. The framework emphasizes performance and native look-and-feel, offering adaptive styling for different platforms. With its focus on web standards and cross-platform compatibility, Ionic enables developers to maintain a single codebase for multiple platforms, making it a popular choice for rapid mobile app development.
+Ionic is a tool for building mobile and desktop apps using web tech (HTML, CSS, JavaScript) and frameworks like Angular, React, or Vue. It gives you ready-made UI parts and access to phone features. Ionic wraps your web app so it can be a native app. It tries to make apps look and feel native on different platforms. Ionic is good for quickly making apps for many platforms with one codebase.
 
 Visit the following resources to learn more:
 

@@ -7,7 +7,7 @@ Linux distributions use various package managers. Some of the commonly used are 
 For instance, to install a package in a Debian-based distribution, you would use the following command in apt:
 
 ```bash
-sudo apt-get install <package-name>
+sudo apt install <package-name>
 ```
 
 Such vital features have made package management systems an integral part of Linux distributions, allowing users to handle applications efficiently.

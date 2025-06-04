@@ -2,18 +2,18 @@ import { Database, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { cn } from '../../lib/classname';
 
-const COURSE_ANNOUNCEMENT_STORAGE_KEY = '__course_announcement_closed_at__';
+const HIDE_ANNOUNCEMENT_END_KEY = '__course_announcement_closed_at__';
 
 export function CourseAnnouncement() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const closedAt = Number(
-      localStorage.getItem(COURSE_ANNOUNCEMENT_STORAGE_KEY) || '0',
+    const hiddenEndAt = Number(
+      localStorage.getItem(HIDE_ANNOUNCEMENT_END_KEY) || '0',
     );
 
-    // only show if the closed at passed 3 days ago
-    const shouldShow = closedAt < Date.now();
+    // only show if the closed at passed 14 days ago
+    const shouldShow = hiddenEndAt < Date.now();
     if (!shouldShow) {
       return;
     }
@@ -56,10 +56,11 @@ export function CourseAnnouncement() {
         onClick={(e) => {
           setIsVisible(false);
 
-          const threeDaysFromNow = Date.now() + 1000 * 60 * 60 * 24 * 3;
+          // 14 days from now
+          const fourteenDaysFromNow = Date.now() + 1000 * 60 * 60 * 24 * 14;
           localStorage.setItem(
-            COURSE_ANNOUNCEMENT_STORAGE_KEY,
-            String(threeDaysFromNow),
+            HIDE_ANNOUNCEMENT_END_KEY,
+            String(fourteenDaysFromNow),
           );
         }}
       >

@@ -1,3 +1,5 @@
+import { httpPost } from '../../lib/query-http';
+
 declare global {
   interface Window {
     gtag: any;
@@ -20,6 +22,18 @@ declare global {
  */
 window.fireEvent = (props) => {
   const { action, category, label, value, callback } = props;
+
+  if (['course', 'ai_tutor'].includes(category)) {
+    const url = new URL(import.meta.env.PUBLIC_API_URL);
+    url.pathname = '/api/_t';
+    url.searchParams.set('action', action);
+    url.searchParams.set('category', category);
+    url.searchParams.set('label', label ?? '');
+    url.searchParams.set('value', value ?? '');
+
+    httpPost(url.toString(), {}).catch(console.error);
+  }
+
   if (!window.gtag) {
     console.warn('Missing GTAG - Analytics disabled');
     return;

@@ -1,0 +1,7 @@
+The difference between supervised, unsupervised, and reinforcement learning lies in how the model learns. This table describes their contrasts and common use cases for each.
+
+| **Type of Learning**       | **Description**                                                                                                                                               | **Common Use Cases**                             |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| **Supervised Learning**    | Models are trained on labeled data, where each example includes an input and a known output. The model learns to predict the output for new, unseen inputs.   | Regression and classification tasks.             |
+| **Unsupervised Learning**  | Models are trained on unlabeled data. The goal is to find hidden patterns or structure in the data without explicit output labels.                            | Clustering, dimensionality, and reduction tasks. |
+| **Reinforcement Learning** | A model learns by trial and error, receiving rewards or penalties based on its actions. It aims to make a sequence of decisions to maximize reward over time. | Games, robotics, and AI decision-making systems. | 

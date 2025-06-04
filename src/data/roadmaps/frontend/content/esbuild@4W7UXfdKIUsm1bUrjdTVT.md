@@ -1,6 +1,6 @@
 # esbuild
 
-esbuild is a high-performance JavaScript bundler and minifier designed for speed and efficiency. Created by Evan Wallace, it's written in Go and compiles to native code, making it significantly faster than traditional JavaScript-based build tools. esbuild supports modern JavaScript features, TypeScript, and JSX out of the box, with near-instant bundling times even for large projects. It offers a simple API and command-line interface, making it easy to integrate into existing build pipelines. While primarily focused on speed, esbuild also provides basic code splitting, tree shaking, and source map generation. Its extreme performance makes it particularly suitable for development environments and as a foundation for other build tools, though it may lack some advanced features found in more mature bundlers.
+esbuild is a very fast JavaScript bundler and minifier. It's written in Go, so it's much quicker than older tools. esbuild handles modern JavaScript, TypeScript, and JSX. It bundles code almost instantly, even for big projects. It's easy to use with a simple API. While super fast, it might not have all the advanced features of older bundlers, but it's great for development and as a base for other tools.
 
 Visit the following resources to learn more:
 

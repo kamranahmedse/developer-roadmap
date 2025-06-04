@@ -1,6 +1,6 @@
 import { type FormEvent, useEffect, useState } from 'react';
 import { httpDelete } from '../../lib/http';
-import { logout } from '../Navigation/navigation';
+import { logout } from '../../lib/auth';
 
 export function DeleteAccountForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -24,7 +24,7 @@ export function DeleteAccountForm() {
     }
 
     const { response, error } = await httpDelete(
-      `${import.meta.env.PUBLIC_API_URL}/v1-delete-account`
+      `${import.meta.env.PUBLIC_API_URL}/v1-delete-account`,
     );
 
     if (error || !response) {

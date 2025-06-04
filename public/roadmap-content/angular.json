@@ -1309,7 +1309,7 @@
     "links": [
       {
         "title": "Defining custom validators",
-        "url": "https://v17.angular.io/guide/form-validation#custom-validators",
+        "url": "https://angular.dev/guide/forms/form-validation#defining-custom-validators",
         "type": "article"
       },
       {

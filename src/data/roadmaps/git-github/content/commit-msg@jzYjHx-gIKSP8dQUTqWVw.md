@@ -1,6 +1,6 @@
 # commit-msg
 
-The commit-msg hook is a client-side hook that runs after you've committed changes to your repository. It's typically used to validate or modify the commit message before it's recorded in the Git history.
+The commit-msg hook is a client-side hook that runs after you enter a commit message, but before the commit is finalized in your repository. It's typically used to validate or modify the commit message before it's recorded in the Git history.
 
 Visit the following resources to learn more:
 

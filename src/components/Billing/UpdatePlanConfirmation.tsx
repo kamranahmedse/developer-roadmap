@@ -62,8 +62,8 @@ export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
       <h3 className="text-xl font-bold text-black">Subscription Update</h3>
       <p className="mt-2 text-balance text-gray-600">
         Your plan will be updated to the{' '}
-        <b className="text-black">{planDetails.interval}</b> plan, and will
-        be charged{' '}
+        <b className="text-black">{planDetails.interval}</b> plan, and will be
+        charged{' '}
         <b className="text-black">
           ${selectedPrice.amount}/{selectedPrice.interval}
         </b>
@@ -72,21 +72,21 @@ export function UpdatePlanConfirmation(props: UpdatePlanConfirmationProps) {
 
       <div className="mt-6 grid grid-cols-2 gap-3">
         <button
-          className="rounded-md border border-gray-200 py-2 text-sm font-semibold hover:bg-gray-50 transition-colors disabled:opacity-50"
+          className="rounded-md border border-gray-200 py-2 text-sm font-semibold transition-colors hover:bg-gray-50 disabled:opacity-50"
           onClick={onCancel}
           disabled={isPending}
         >
           Cancel
         </button>
         <button
-          className="flex items-center justify-center rounded-md bg-purple-600 py-2 text-sm font-semibold text-white hover:bg-purple-500 transition-colors disabled:opacity-50"
+          className="flex items-center justify-center rounded-md bg-purple-600 py-2 text-sm font-semibold text-white transition-colors hover:bg-purple-500 disabled:opacity-50"
           disabled={isPending}
           onClick={() => {
             updatePlan({ priceId: selectedPrice.priceId });
           }}
         >
           {isPending && (
-            <Loader2Icon className="size-4 animate-spin stroke-[2.5] mr-2" />
+            <Loader2Icon className="mr-2 size-4 animate-spin stroke-[2.5]" />
           )}
           {!isPending && 'Confirm'}
         </button>

@@ -1,13 +1,13 @@
+import type { Node } from '@roadmapsh/editor';
+import matter from 'gray-matter';
+import { HTMLElement, parse } from 'node-html-parser';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Node } from '@roadmapsh/editor';
-import matter from 'gray-matter';
+import { htmlToMarkdown } from '../src/lib/html';
+import { markdownToHtml } from '../src/lib/markdown';
 import type { RoadmapFrontmatter } from '../src/lib/roadmap';
 import { slugify } from '../src/lib/slugger';
-import { markdownToHtml } from '../src/lib/markdown';
-import { HTMLElement, parse } from 'node-html-parser';
-import { htmlToMarkdown } from '../src/lib/html';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,6 +20,23 @@ export const allowedLinkTypes = [
   'website',
   'podcast',
 ] as const;
+
+export async function fetchRoadmapJson(roadmapId: string) {
+  const response = await fetch(
+    `https://roadmap.sh/api/v1-official-roadmap/${roadmapId}`,
+  );
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch roadmap json: ${response.statusText}`);
+  }
+
+  const data = await response.json();
+  if (data.error) {
+    throw new Error(`Failed to fetch roadmap json: ${data.error}`);
+  }
+
+  return data;
+}
 
 // Directory containing the roadmaps
 const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
@@ -53,13 +70,17 @@ if (!stats || !stats.isDirectory()) {
 for (const roadmapId of editorRoadmapIds) {
   console.log(`🚀 Starting ${roadmapId}`);
 
-  const roadmapDir = path.join(
-    ROADMAP_CONTENT_DIR,
-    roadmapId,
-    `${roadmapId}.json`,
-  );
-  const roadmapContent = await fs.readFile(roadmapDir, 'utf-8');
-  let { nodes } = JSON.parse(roadmapContent) as {
+  const data = await fetchRoadmapJson(roadmapId).catch((error) => {
+    console.error(error);
+    return null;
+  });
+
+  if (!data) {
+    console.error(`Failed to fetch roadmap json: ${roadmapId}`);
+    continue;
+  }
+
+  let { nodes } = data as {
     nodes: Node[];
   };
   nodes = nodes.filter(
@@ -97,11 +118,11 @@ for (const roadmapId of editorRoadmapIds) {
   > = {};
 
   for (const node of nodes) {
-    const ndoeDirPatterWithoutExt = `${slugify(node.data.label)}@${node.id}`;
-    const nodeDirPattern = `${ndoeDirPatterWithoutExt}.md`;
+    const nodeDirPatternWithoutExt = `${slugify(node?.data?.label as string)}@${node.id}`;
+    const nodeDirPattern = `${nodeDirPatternWithoutExt}.md`;
     if (!roadmapContentFiles.includes(nodeDirPattern)) {
       contentMap[nodeDirPattern] = {
-        title: node.data.label,
+        title: node?.data?.label as string,
         description: '',
         links: [],
       };
@@ -169,7 +190,7 @@ for (const roadmapId of editorRoadmapIds) {
     const description = htmlToMarkdown(htmlStringWithoutLinks);
 
     contentMap[node.id] = {
-      title: node.data.label,
+      title: node.data.label as string,
       description,
       links: listLinks,
     };

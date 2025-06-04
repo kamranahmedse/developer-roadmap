@@ -54,7 +54,7 @@ function TopicDetailsTab(props: TopicDetailsTabProps) {
       <Icon className="h-4 w-4" />
       <span className="hidden sm:block">{label}</span>
       {isNew && !isDisabled && (
-        <span className="hidden rounded-sm bg-yellow-400 px-1 text-xs text-black sm:block">
+        <span className="hidden rounded-sm bg-yellow-400 px-1 text-xs text-black 2xl:block">
           New
         </span>
       )}

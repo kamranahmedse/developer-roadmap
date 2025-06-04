@@ -56,7 +56,7 @@ export function FineTuneCourse(props: FineTuneCourseProps) {
   return (
     <div className="mt-0 flex flex-col">
       <Question
-        label="Tell us about your self"
+        label="Tell us about yourself"
         placeholder="e.g. I am a frontend developer and have good knowledge of HTML, CSS, and JavaScript."
         value={about}
         onChange={setAbout}

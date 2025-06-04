@@ -10,7 +10,7 @@ description: 'Step by step guide for DevOps, SRE or any other Operations Role in
 hasTopics: true
 isForkable: false
 partner:
-  description: "Get the latest Frontend news from our sister site"
+  description: "Get the latest DevOps news from our sister site"
   link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
   linkText: "TheNewStack.io"
 question:
@@ -21,7 +21,7 @@ question:
     DevOps is not a specific job title or role, but rather a set of principles and practices that can be applied across a variety of roles in software development and IT operations. Anyone involved in the software development and delivery process can adopt a DevOps mindset and apply DevOps practices in their work, including developers, testers, operations engineers, product managers, and others.
 
     ## What is a DevOps Engineer?
-    While DevOps is not a specific job title or role, organizations often hire for a "DevOps Engineer" role. A DevOps Engineer is a software engineer who specializes in the practices and [tools](https://roadmap.sh/devops/tools) that enable the continuous delivery of software.
+    While DevOps is not a specific job title or role, organizations often hire for a "DevOps Engineer" role. A DevOps Engineer is a software engineer who specializes in the [best practices](https://roadmap.sh/devops/best-practices) and [tools](https://roadmap.sh/devops/tools) that enable the continuous delivery of software.
 
     DevOps Engineers (usually part of a bigger DevOps team) are responsible for bridging the gap between the development and operations teams,  they work closely with developers, testers, and operations staff to oversee the code releases and provide the tools required to automate and expedite the team’s time-to-market while maintaining the quality of the deliverables.
 
