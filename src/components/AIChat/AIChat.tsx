@@ -390,7 +390,7 @@ export function AIChat() {
           <div className="flex items-center gap-2">
             <QuickActionButton
               icon={PersonStandingIcon}
-              label="Personalized"
+              label="Personalize"
               onClick={() => {
                 setIsPersonalizedResponseFormOpen(true);
               }}
