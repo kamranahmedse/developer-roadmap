@@ -8,7 +8,7 @@ import {
 import { cn } from '../../lib/classname';
 import { Loader2Icon, PlusIcon, XIcon } from 'lucide-react';
 import { useMutation } from '@tanstack/react-query';
-import { httpDelete, httpPost } from '../../lib/query-http';
+import { httpDelete } from '../../lib/query-http';
 import { useToast } from '../../hooks/use-toast';
 import { queryClient } from '../../stores/query-client';
 import {
@@ -106,7 +106,9 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
         encType="multipart/form-data"
         onSubmit={handleSubmit}
       >
-        <h2 className="text-center text-3xl">Upload your resume</h2>
+        <h2 className="text-center text-2xl font-semibold text-black">
+          Upload your resume
+        </h2>
         <p className="mt-2 text-center text-sm text-balance text-gray-500">
           Upload your resume to get personalized responses to your questions.
         </p>
@@ -115,13 +117,15 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
           <div className="mt-8">
             <div className="flex items-center justify-between gap-2 rounded-lg border border-gray-200 p-4">
               <div>
-                <h3 className="text-base font-medium">{file.name}</h3>
-                <p className="mt-0.5 text-sm text-gray-400">{fileSize} MB</p>
+                <h3 className="text-base font-medium text-black">
+                  {file.name}
+                </h3>
+                <p className="mt-0.5 text-sm text-gray-500">{fileSize} MB</p>
               </div>
 
               <button
                 type="button"
-                className="flex size-8 items-center justify-center rounded-md text-gray-400 hover:bg-red-100 hover:text-red-500"
+                className="flex size-8 items-center justify-center rounded-md text-gray-400 transition-colors hover:bg-red-50 hover:text-red-500"
                 disabled={isDeletingResume}
                 onClick={() => deleteResume()}
               >
@@ -140,23 +144,25 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
             <div
               {...getRootProps({
                 className: cn(
-                  'border-[1.5px] border-dashed border-gray-200 min-h-60 flex items-center justify-center rounded-lg p-4 mt-8 bg-gray-50 cursor-pointer',
-                  isDragActive && 'border-gray-400',
+                  'border border-dashed border-gray-300 min-h-60 flex items-center justify-center rounded-lg p-4 mt-8 bg-gray-50 cursor-pointer hover:border-black transition-colors',
+                  isDragActive && 'border-black bg-gray-100',
                 ),
               })}
             >
               <input {...getInputProps()} />
               <div className="mx-auto flex max-w-2xs flex-col items-center text-center text-balance">
-                <PlusIcon className="size-5 text-gray-400" />
-                <p className="mt-3 text-gray-500">
+                <PlusIcon className="size-5 text-gray-500" />
+                <p className="mt-4 text-gray-600">
                   Drag and drop your resume here or{' '}
-                  <span className="text-black">click to browse</span>
+                  <span className="font-semibold text-black">
+                    click to browse
+                  </span>
                 </p>
               </div>
             </div>
 
-            <p className="mt-2 text-center text-xs text-gray-400">
-              Only PDF files are supported at the moment
+            <p className="mt-4 text-center text-xs text-gray-500">
+              Only PDF files (max 2MB in size) are supported
             </p>
           </>
         )}
@@ -165,7 +171,7 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
           <>
             <button
               type="submit"
-              className="mt-4 flex w-full cursor-pointer items-center justify-center rounded-lg bg-gray-100 p-1 py-2.5 leading-none tracking-wide text-gray-600 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:text-gray-400 data-[loading=true]:cursor-wait"
+              className="mt-4 flex w-full cursor-pointer items-center justify-center rounded-lg bg-black p-1 py-3 leading-none tracking-wide text-white transition-colors hover:bg-gray-900 disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none data-[loading=true]:cursor-wait"
               data-loading={String(isUploading)}
               disabled={!file || isUploading || isDeletingResume}
             >
@@ -176,13 +182,13 @@ export function UploadResumeModal(props: UploadResumeModalProps) {
               )}
             </button>
 
-            <p className="mt-4 text-center text-xs text-gray-400">
+            <p className="mt-4 text-center text-xs text-gray-500">
               You can also export your resume from{' '}
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 underline"
+                className="text-black underline underline-offset-2 hover:text-gray-600"
               >
                 LinkedIn
               </a>
