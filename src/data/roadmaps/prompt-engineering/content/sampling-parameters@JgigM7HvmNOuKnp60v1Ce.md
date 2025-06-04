@@ -1,1 +1,3 @@
 # Sampling Parameters
+
+Sampling parameters (temperature, top-K, top-P) control how LLMs select tokens from probability distributions, determining output randomness and creativity. These parameters interact: at extreme settings, one can override others (temperature 0 makes top-K/top-P irrelevant). A balanced starting point is temperature 0.2, top-P 0.95, top-K 30 for coherent but creative results. Understanding their interactions is crucial for optimal prompting—use temperature 0 for factual tasks, higher values for creativity, and combine settings strategically based on your specific use case.

@@ -120,10 +120,11 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
     queryClient,
   );
 
+  const isCanceled = userBillingDetails?.status === 'canceled';
   const selectedPlanDetails = USER_SUBSCRIPTION_PLAN_PRICES.find(
     (plan) => plan.interval === selectedPlan,
   );
-  const currentPlanPriceId = userBillingDetails?.priceId;
+  const currentPlanPriceId = isCanceled ? null : userBillingDetails?.priceId;
   const currentPlan = USER_SUBSCRIPTION_PLAN_PRICES.find(
     (plan) => plan.priceId === currentPlanPriceId,
   );

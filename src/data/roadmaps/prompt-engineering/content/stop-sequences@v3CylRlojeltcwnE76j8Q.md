@@ -1,1 +1,3 @@
 # Stop Sequences
+
+Stop sequences are specific strings that signal the LLM to stop generating text when encountered, providing precise control over output length and format. Common examples include newlines, periods, or custom markers like "###" or "END". This parameter is particularly useful for structured outputs, preventing models from generating beyond intended boundaries. Stop sequences are essential for ReAct prompting and other scenarios where you need clean, precisely bounded responses. They offer more control than max tokens by stopping at logical breakpoints rather than arbitrary token limits.

@@ -1,3 +1,3 @@
 # Language Basics
 
-The "language basics" of Rust encompass the fundamental elements you'll need to grasp to get your programming underway. This commences with understanding Rust's syntax and semantics, followed by grasping variables and data types, which are essential in creating effective code. Rust language basics also incorporate concepts of control flow, such as loops and conditional statements. Lastly, functions are another vital element, providing you the ability to structure your code and reuse segments of it.
+Rust language basics cover fundamental programming concepts including syntax and semantics, variables and data types, control flow (loops and conditionals), and functions. These elements form the foundation for writing effective Rust code and understanding how to structure and reuse code segments.

@@ -9,5 +9,5 @@ Some types of angular guards are `CanActivate`, `CanActivateChild`, `CanDeactiva
 
 Visit the following resources to learn more:
 
-- [@official@Preventing unauthorized access](https://angular.dev/guide/routing/common-router-tasks#preventing-unauthorized-access)
+- [@official@Preventing Unauthorized Access](https://angular.dev/guide/routing/common-router-tasks#preventing-unauthorized-access)
 - [@official@Resolve](https://angular.dev/api/router/Resolve)

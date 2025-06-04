@@ -4,5 +4,5 @@ The Angular CLI can run unit tests and create code coverage reports. Code covera
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - code coverage](https://angular.dev/guide/testing/code-coverage)
-- [@article@Measuring code coverage](https://testing-angular.com/measuring-code-coverage/)
+- [@official@Code Coverage](https://angular.dev/guide/testing/code-coverage)
+- [@article@Measuring Code Coverage](https://testing-angular.com/measuring-code-coverage/)

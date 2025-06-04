@@ -7,6 +7,7 @@ export type UserPersonaFormData = {
   expertise: string;
   goal: string;
   commit: string;
+  about: string;
 };
 
 type UserPersonaFormProps = {
@@ -27,29 +28,69 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
     onSubmit,
     isLoading,
   } = props;
-  const [expertise, setExpertise] = useState(
-    defaultValues?.expertise ?? 'no-experience',
-  );
+  const [expertise, setExpertise] = useState(defaultValues?.expertise ?? '');
 
-  const [hasInitialGoal, setHasInitialGoal] = useState(!!defaultValues?.goal);
+  const goalOptions = [
+    'Finding a job',
+    'Learning for fun',
+    'Building a side project',
+    'Switching careers',
+    'Getting a promotion',
+    'Filling knowledge gaps',
+    'Other',
+  ];
+
+  const getInitialGoalSelection = () => {
+    if (!defaultValues?.goal) {
+      return '';
+    }
+
+    // Check if the goal matches any predefined option
+    for (const option of goalOptions.slice(0, -1)) {
+      // Exclude 'Other'
+      if (defaultValues.goal.startsWith(option)) {
+        return option;
+      }
+    }
+
+    return 'Other';
+  };
+
+  const [selectedGoal, setSelectedGoal] = useState(getInitialGoalSelection());
   const [goal, setGoal] = useState(defaultValues?.goal ?? '');
   const [commit, setCommit] = useState(defaultValues?.commit ?? '');
+  const [about, setAbout] = useState(defaultValues?.about ?? '');
 
   const expertiseFieldId = useId();
   const goalFieldId = useId();
+  const goalSelectId = useId();
   const commitFieldId = useId();
+  const aboutFieldId = useId();
 
   const goalRef = useRef<HTMLTextAreaElement>(null);
 
+  const handleGoalSelectionChange = (value: string) => {
+    setSelectedGoal(value);
+
+    if (value === 'Other') {
+      setGoal('');
+      setTimeout(() => {
+        goalRef.current?.focus();
+      }, 0);
+    } else {
+      setGoal(value);
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    onSubmit({ expertise, goal, commit });
+    onSubmit({ expertise, goal, commit, about });
   };
 
   const hasFormCompleted = !!expertise && !!goal && !!commit;
 
   return (
-    <form onSubmit={handleSubmit} className={cn('space-y-8', className)}>
+    <form onSubmit={handleSubmit} className={cn('space-y-5', className)}>
       <div className="flex flex-col gap-3">
         <label
           className="text-sm font-medium text-gray-700"
@@ -60,12 +101,11 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
         <SelectNative
           id={expertiseFieldId}
           value={expertise}
+          defaultValue={expertise}
           onChange={(e) => setExpertise(e.target.value)}
           className="h-[40px] border-gray-300 text-sm focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
         >
-          <option value="" selected hidden>
-            Select your expertise
-          </option>
+          <option value="">Select your expertise</option>
           {[
             'No experience (just starting out)',
             'Beginner (less than 1 year of experience)',
@@ -79,60 +119,39 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
           ))}
         </SelectNative>
       </div>
+
       <div className="flex flex-col gap-3">
         <label
           className="text-sm font-medium text-gray-700"
-          htmlFor={goalFieldId}
+          htmlFor={goalSelectId}
         >
-          What is your goal?{' '}
-          {hasInitialGoal &&
-            !defaultValues?.goal &&
-            `Tell us more about yourself`}
+          What is your goal?
         </label>
 
-        {!hasInitialGoal && (
-          <div className="flex flex-row flex-wrap gap-2">
-            {[
-              'Finding a job',
-              'Learning for fun',
-              'Building a side project',
-              'Switching careers',
-              'Getting a promotion',
-              'Filling knowledge gaps',
-              'Other (tell us more)',
-            ].map((goalTemplate) => (
-              <button
-                key={goalTemplate}
-                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600 transition-all hover:border-gray-300 hover:border-gray-400 hover:bg-gray-100"
-                onClick={() => {
-                  if (goalTemplate !== 'Other (tell us more)') {
-                    setGoal(`${goalTemplate}.`);
-                  }
+        <SelectNative
+          id={goalSelectId}
+          value={selectedGoal}
+          onChange={(e) => handleGoalSelectionChange(e.target.value)}
+          className="h-[40px] border-gray-300 text-sm focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+        >
+          <option value="">Select your goal</option>
+          {goalOptions.map((goalOption) => (
+            <option key={goalOption} value={goalOption}>
+              {goalOption}
+            </option>
+          ))}
+        </SelectNative>
 
-                  setHasInitialGoal(true);
-                  setTimeout(() => {
-                    goalRef.current?.focus();
-                  }, 0);
-                }}
-                type="button"
-              >
-                {goalTemplate}
-              </button>
-            ))}
-          </div>
+        {selectedGoal === 'Other' && (
+          <textarea
+            ref={goalRef}
+            id={goalFieldId}
+            className="block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+            placeholder="e.g. need to find a job as soon as possible"
+            value={goal}
+            onChange={(e) => setGoal(e.target.value)}
+          />
         )}
-
-        <textarea
-          ref={goalRef}
-          id={goalFieldId}
-          className={cn(
-            'block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500',
-            !hasInitialGoal && 'hidden',
-          )}
-          placeholder={`e.g. need to find a job as soon as possible`}
-          value={goal}
-          onChange={(e) => setGoal(e.target.value)}
-        />
       </div>
 
       <div className="flex flex-col gap-3">
@@ -149,6 +168,23 @@ export function UserPersonaForm(props: UserPersonaFormProps) {
           placeholder="e.g. 10 hours per week"
           value={commit}
           onChange={(e) => setCommit(e.target.value)}
+        />
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <label
+          className="text-sm font-medium text-gray-700"
+          htmlFor={aboutFieldId}
+        >
+          Tell us about yourself (optional but recommended)
+        </label>
+
+        <textarea
+          id={aboutFieldId}
+          className="block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+          placeholder="e.g. I'm a frontend developer with experience in React, looking to expand my backend skills..."
+          value={about}
+          onChange={(e) => setAbout(e.target.value)}
         />
       </div>
 

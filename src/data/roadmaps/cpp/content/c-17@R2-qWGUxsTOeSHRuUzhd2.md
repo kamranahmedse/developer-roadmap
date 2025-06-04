@@ -54,7 +54,7 @@ auto func = [x = std::move(obj)] { /* use x */ };
 
 - Standard file system library: `std::filesystem` as a standardized way to manipulate paths, directories, and files.
 
-- New Standard Library additions: `<string_view>` (non-owning string reference), `<any>` (type-safe discrimination union), `<optional>` (optional value wrapper), `<variant>` (type-safe sum type), and `<memory_resource>` (library for polymorphic allocators).
+- New Standard Library additions: `<string_view>` (non-owning string reference), `<any>` (type-erased container), `<optional>` (optional value wrapper), `<variant>` (type-safe discriminated union / sum type), and `<memory_resource>` (library for polymorphic allocators).
 
 - Parallel Algorithms: Adds support for parallel execution of Standard Library algorithms.
 

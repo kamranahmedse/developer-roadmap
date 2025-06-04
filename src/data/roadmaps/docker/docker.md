@@ -2,6 +2,7 @@
 jsonUrl: '/jsons/roadmaps/docker.json'
 pdfUrl: '/pdfs/roadmaps/docker.pdf'
 order: 14
+renderer: 'editor'
 briefTitle: 'Docker'
 briefDescription: 'Step by step guide to learning Docker in 2025'
 title: 'Docker Roadmap'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 1808.98
+  height: 1830
 schema:
   headline: 'Docker Roadmap'
   description: 'Learn how to use Docker with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

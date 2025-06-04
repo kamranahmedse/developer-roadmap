@@ -1,7 +1,6 @@
 import { Loader2Icon } from 'lucide-react';
 import { MessageCircle } from 'lucide-react';
 import { memo, useId, useRef, useState } from 'react';
-import { flushSync } from 'react-dom';
 import { Modal } from '../Modal';
 import { cn } from '../../lib/classname';
 import { SelectNative } from '../SelectNative';
@@ -32,7 +31,6 @@ export const PersonalizedResponseForm = memo(
     const toast = useToast();
 
     const [expertise, setExpertise] = useState(defaultValues?.expertise ?? '');
-
     const [hasInitialGoal, setHasInitialGoal] = useState(!!defaultValues?.goal);
     const [goal, setGoal] = useState(defaultValues?.goal ?? '');
     const [about, setAbout] = useState(defaultValues?.about ?? '');
@@ -46,6 +44,16 @@ export const PersonalizedResponseForm = memo(
     const specialInstructionsFieldId = useId();
 
     const goalRef = useRef<HTMLTextAreaElement>(null);
+
+    const goalOptions = [
+      'Finding a job',
+      'Learning for fun',
+      'Building a side project',
+      'Switching careers',
+      'Getting a promotion',
+      'Filling knowledge gaps',
+      'Other (tell us more)',
+    ];
 
     const { mutate: setChatPreferences, isPending } = useMutation(
       {
@@ -84,7 +92,7 @@ export const PersonalizedResponseForm = memo(
     return (
       <Modal onClose={onClose}>
         <div className="p-4">
-          <form onSubmit={handleSubmit} className={cn('space-y-3')}>
+          <form onSubmit={handleSubmit} className={cn('space-y-8')}>
             <div className="flex flex-col gap-3">
               <label
                 className="text-sm font-medium text-gray-700"
@@ -127,27 +135,19 @@ export const PersonalizedResponseForm = memo(
 
               {!hasInitialGoal && (
                 <div className="flex flex-row flex-wrap gap-2">
-                  {[
-                    'Finding a job',
-                    'Learning for fun',
-                    'Building a side project',
-                    'Switching careers',
-                    'Getting a promotion',
-                    'Filling knowledge gaps',
-                    'Other (tell us more)',
-                  ].map((goalTemplate) => (
+                  {goalOptions.map((goalTemplate) => (
                     <button
                       key={goalTemplate}
-                      className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600 transition-all hover:border-gray-300 hover:bg-gray-100"
+                      className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-gray-600 transition-all hover:border-gray-300 hover:border-gray-400 hover:bg-gray-100"
                       onClick={() => {
                         if (goalTemplate !== 'Other (tell us more)') {
                           setGoal(`${goalTemplate}.`);
                         }
 
                         setHasInitialGoal(true);
-                        flushSync(() => {
+                        setTimeout(() => {
                           goalRef.current?.focus();
-                        });
+                        }, 0);
                       }}
                       type="button"
                     >
@@ -162,7 +162,7 @@ export const PersonalizedResponseForm = memo(
                 id={goalFieldId}
                 className={cn(
                   'block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500',
-                  !hasInitialGoal && 'hidden',
+                  !hasInitialGoal && 'hidden'
                 )}
                 placeholder={`e.g. need to find a job as soon as possible`}
                 value={goal}
@@ -178,9 +178,9 @@ export const PersonalizedResponseForm = memo(
                 Tell us more about yourself
               </label>
 
-              <input
+              <textarea
                 id={aboutFieldId}
-                className="block h-[40px] w-full resize-none rounded-lg border border-gray-300 bg-white px-4 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+                className="block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
                 placeholder="e.g. I'm a software engineer with 5 years of experience"
                 value={about}
                 onChange={(e) => setAbout(e.target.value)}
@@ -195,9 +195,9 @@ export const PersonalizedResponseForm = memo(
                 Special Instructions
               </label>
 
-              <input
+              <textarea
                 id={specialInstructionsFieldId}
-                className="block h-[40px] w-full resize-none rounded-lg border border-gray-300 bg-white px-4 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
+                className="block min-h-24 w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-500 focus:ring-1 focus:ring-gray-500"
                 placeholder="e.g. Prefer concise responses with code examples"
                 value={specialInstructions}
                 onChange={(e) => setSpecialInstructions(e.target.value)}

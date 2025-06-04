@@ -1,0 +1,1418 @@
+{
+  "y7KjVfSI6CAduyHd4mBFT": {
+    "title": "Introduction",
+    "description": "Kubernetes, also known as k8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a way to abstract the underlying infrastructure and manage applications at scale, while also offering flexibility, portability, and a rich feature set. Kubernetes has become the de facto standard for container orchestration due to its widespread adoption, active community, and ability to handle complex, multi-tiered applications.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Kubernetes Documentation",
+        "url": "https://kubernetes.io/",
+        "type": "article"
+      },
+      {
+        "title": "Introduction of Kubernetes",
+        "url": "https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Kubernetes",
+        "url": "https://app.daily.dev/tags/kubernetes?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=X48VuDVv0do",
+        "type": "video"
+      }
+    ]
+  },
+  "qLeEEwBvlGt1fP5Qcreah": {
+    "title": "Overview of Kubernetes",
+    "description": "Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.\n\nThe name Kubernetes originates from Greek, meaning helmsman or pilot. K8s as an abbreviation results from counting the eight letters between the \"K\" and the \"s\". Google open-sourced the Kubernetes project in 2014. Kubernetes combines over 15 years of Google's experience running production workloads at scale with best-of-breed ideas and practices from the community.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Kubernetes",
+        "url": "https://kubernetes.io/docs/concepts/overview/",
+        "type": "article"
+      },
+      {
+        "title": "What is Kubernetes?",
+        "url": "https://www.redhat.com/en/topics/containers/what-is-kubernetes",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Overview & Essential Reading",
+        "url": "https://thenewstack.io/kubernetes/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Kubernetes",
+        "url": "https://app.daily.dev/tags/kubernetes?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Kubernetes",
+        "url": "https://www.youtube.com/watch?v=VnvRFRk_51k&t=1sn",
+        "type": "video"
+      }
+    ]
+  },
+  "q-Ky0ietZGpyUcBQfh-BJ": {
+    "title": "Why use Kubernetes?",
+    "description": "Kubernetes (k8s) is needed because it provides a powerful and flexible platform for deploying and managing containerized applications at scale. It allows for easy scalability, high resilience, application portability, automation of many tasks, and standardization of the container platform. k8s also helps reduce complexity and workload for operations teams, enabling them to focus on more strategic initiatives.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Why you need Kubernetes and what it can do",
+        "url": "https://kubernetes.io/docs/concepts/overview/#why-you-need-kubernetes-and-what-can-it-do",
+        "type": "article"
+      },
+      {
+        "title": "Why should you use Kubernetes?",
+        "url": "https://www.predicagroup.com/blog/why-kubernetes-2022/",
+        "type": "article"
+      },
+      {
+        "title": "Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care",
+        "url": "https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Kubernetes",
+        "url": "https://app.daily.dev/tags/kubernetes?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "9oo2fxTM2_p0VYPBroqxa": {
+    "title": "Key Concepts and Terminologies",
+    "description": "Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. Here are some important concepts and terminologies in Kubernetes:\n\n*   Cluster Architecture: The architectural concepts behind Kubernetes.\n*   Containers: Technology for packaging an application along with its runtime dependencies.\n*   Workloads: Understand Pods, the smallest deployable compute object in Kubernetes, and the higher-level abstractions that help you to run them.\n*   Services, Load Balancing, and Networking: Concepts and resources behind networking in Kubernetes.\n*   Storage: Ways to provide both long-term and temporary storage to Pods in your cluster.\n*   Configuration: Resources that Kubernetes provides for configuring Pods.\n*   Cluster Administration: Lower-level detail relevant to creating or administering a Kubernetes cluster.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Concepts of Kubernetes",
+        "url": "https://kubernetes.io/docs/concepts/",
+        "type": "article"
+      },
+      {
+        "title": "Understand Kubernetes terminology",
+        "url": "https://about.gitlab.com/blog/2020/07/30/kubernetes-terminology/",
+        "type": "article"
+      },
+      {
+        "title": "What Is Kubernetes?",
+        "url": "https://www.youtube.com/watch?v=QJ4fODH6DXI",
+        "type": "video"
+      },
+      {
+        "title": "Kubernetes Explained by Experts in 2 Minutes",
+        "url": "https://youtu.be/XfBrtNZ2OCw",
+        "type": "video"
+      }
+    ]
+  },
+  "3fzuXKH7az_LVnmnoXB1p": {
+    "title": "Kubernetes Alternatives",
+    "description": "Kubernetes is a popular open-source container orchestration tool that is widely used for managing and deploying containerized applications. While there are other container orchestration tools available, such as Docker Swarm, Mesos, and Nomad, there are some key differences between Kubernetes and these other tools and some of them are mentioned below:\n\n*   Architecture: Kubernetes is designed as a modular system with many components that work together to provide container orchestration, such as the Kubernetes API server, kubelet, kube-proxy, and etcd.\n*   Scalability: Kubernetes is designed to handle large-scale deployments and can scale applications up or down based on demand.\n*   Flexibility: Kubernetes is highly configurable and can be customized to meet specific requirements, whereas other container orchestration tools may have more limited configuration options.\n*   Portability: Kubernetes is designed to be cloud-agnostic and can run on any public or private cloud platform, as well as on-premises.\n*   Community: Kubernetes has a large and active community of developers and users who contribute to its development and provide support.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Compare Apache Mesos vs. Kubernetes",
+        "url": "https://www.techtarget.com/searchitoperations/tip/Compare-container-orchestrators-Apache-Mesos-vs-Kubernetes",
+        "type": "article"
+      },
+      {
+        "title": "Docker Swarm, a User-Friendly Alternative to Kubernetes",
+        "url": "https://thenewstack.io/docker-swarm-a-user-friendly-alternative-to-kubernetes/",
+        "type": "article"
+      },
+      {
+        "title": "Can You Live without Kubernetes?",
+        "url": "https://thenewstack.io/can-you-live-without-kubernetes/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Kubernetes",
+        "url": "https://app.daily.dev/tags/kubernetes?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "HGmeYvRf7_XusZl_K4x9k": {
+    "title": "Containers",
+    "description": "Kubernetes is built on containers, so before learning Kubernetes you should be comfortable running and building containers from scratch.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Official Docker Tutorial",
+        "url": "https://www.docker.com/101-tutorial/",
+        "type": "article"
+      },
+      {
+        "title": "Docker Curriculum",
+        "url": "https://docker-curriculum.com/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Containers",
+        "url": "https://app.daily.dev/tags/containers?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Docker in 100 Seconds (video)",
+        "url": "https://www.youtube.com/watch?v=Gjnup-PuquQ",
+        "type": "video"
+      },
+      {
+        "title": "Free 3 Hour Video Course on Docker for Beginners",
+        "url": "https://www.youtube.com/watch?v=3c-iBn73dDE",
+        "type": "video"
+      }
+    ]
+  },
+  "3OpGaQhyNtk1n1MLp-tlb": {
+    "title": "Setting up Kubernetes",
+    "description": "To deploy your first application in Kubernetes, you need to create a deployment and service manifest in YAML files, apply the manifests to your Kubernetes cluster using the kubectl apply command, verify that your application's pods are running with kubectl get pods, and test the service with kubectl get services and accessing the service using a web browser or a tool like cURL. There are also various tools and platforms available that can simplify application deployment in Kubernetes, such as Helm charts and Kubernetes operators.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Using kubectl to Create a Deployment",
+        "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/",
+        "type": "article"
+      },
+      {
+        "title": "Deploying An Application On Kubernetes From A to Z",
+        "url": "https://web.archive.org/web/20230326150953/https://www.weave.works/blog/deploying-an-application-on-kubernetes-from-a-to-z",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes 101: Deploy Your First Application with MicroK8s",
+        "url": "https://thenewstack.io/kubernetes-101-deploy-your-first-application-with-microk8s/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Tutorial | Your First Kubernetes Application",
+        "url": "https://www.youtube.com/watch?v=Vj6EFnav5Mg",
+        "type": "video"
+      },
+      {
+        "title": "Kubernetes 101: Deploying Your First Application",
+        "url": "https://www.youtube.com/watch?v=XltFOyGanYE",
+        "type": "video"
+      }
+    ]
+  },
+  "zrbSJa3k7a3TE0aYbWi9c": {
+    "title": "Deploying your First Application",
+    "description": "To deploy your first application in Kubernetes, you need to create a deployment and service manifest in YAML files, apply the manifests to your Kubernetes cluster using the kubectl apply command, verify that your application's pods are running with kubectl get pods, and test the service with kubectl get services and accessing the service using a web browser or a tool like cURL. There are also various tools and platforms available that can simplify application deployment in Kubernetes, such as Helm charts and Kubernetes operators.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Using kubectl to Create a Deployment",
+        "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/",
+        "type": "article"
+      },
+      {
+        "title": "Deploying An Application On Kubernetes From A to Z",
+        "url": "https://web.archive.org/web/20230326150953/https://www.weave.works/blog/deploying-an-application-on-kubernetes-from-a-to-z",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes 101: Deploy Your First Application with MicroK8s",
+        "url": "https://thenewstack.io/kubernetes-101-deploy-your-first-application-with-microk8s/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Tutorial | Your First Kubernetes Application",
+        "url": "https://www.youtube.com/watch?v=Vj6EFnav5Mg",
+        "type": "video"
+      },
+      {
+        "title": "Kubernetes 101: Deploying Your First Application",
+        "url": "https://www.youtube.com/watch?v=XltFOyGanYE",
+        "type": "video"
+      }
+    ]
+  },
+  "qSatCdBTDXPu-IFWzUI99": {
+    "title": "Choosing a Managed Provider",
+    "description": "A managed provider is a cloud-based service that provides a managed Kubernetes environment. This means that the provider handles the underlying infrastructure, such as servers, storage, and networking, as well as the installation, configuration, and maintenance of the Kubernetes cluster.\n\nWhen choosing a managed Kubernetes provider, consider the cloud provider you are using, features and capabilities, pricing and billing, support, security and compliance, and the provider's reputation and reviews. By taking these factors into account, you can select a provider that meets your needs and offers the best value for your organization.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Choosing a Managed Kubernetes Provider",
+        "url": "https://containerjournal.com/features/choosing-a-managed-kubernetes-provider/",
+        "type": "article"
+      },
+      {
+        "title": "Amazon Web Services Gears Elastic Kubernetes Service for Batch Work",
+        "url": "https://thenewstack.io/amazon-web-services-gears-elastic-kubernetes-service-for-batch-jobs/",
+        "type": "article"
+      },
+      {
+        "title": "How to Build The Right Platform for Kubernetes",
+        "url": "https://thenewstack.io/kubernetes/kubernetes-infrastructure-architecture/",
+        "type": "article"
+      }
+    ]
+  },
+  "YaIs8lquWIe1D7RCUBZmC": {
+    "title": "Installing a Local Cluster",
+    "description": "To install and configure a Kubernetes cluster on CentOS 7 or Ubuntu, you would need to setup the prerequisites and requirements for setting up a Kubernetes cluster after which you would be installing the Kubernetes components, including Kubeadm, Kubelet, and Kubectl and then you'll need to connect the master and the worker nodes. Once the connection is established you can check it by deploying application on the cluster.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "How to Install a Kubernetes Cluster on CentOS 7",
+        "url": "https://www.tecmint.com/install-kubernetes-cluster-on-centos-7/",
+        "type": "article"
+      },
+      {
+        "title": "How To Create a Kubernetes Cluster Using on Ubuntu",
+        "url": "https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-20-04",
+        "type": "article"
+      },
+      {
+        "title": "Deploy a Kubernetes Cluster on Ubuntu Server with Microk8s",
+        "url": "https://thenewstack.io/deploy-a-kubernetes-cluster-on-ubuntu-server-with-microk8s/",
+        "type": "article"
+      }
+    ]
+  },
+  "1MdrzhktCWjpmxiYYBdz7": {
+    "title": "Running Applications",
+    "description": "A Deployment is a resource object for managing Pods and ReplicaSets via a declarative configuration, which define a desired state that describes the application workload life cycle, number of pods, deployment strategies, container images, and more. The Deployment Controller works to ensure the actual state matches desired state, such as by replacing a failed pod. Out of the box, Deployments support several deployment strategies, like \"recreate\" and \"rolling update\", however can be customized to support more advanced deployment strategies such as blue/green or canary deployments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Deployments Documentation",
+        "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Deployment: From Basic Strategies to Progressive Delivery\n",
+        "url": "https://codefresh.io/learn/kubernetes-deployment/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Deployments | Deployment Strategies",
+        "url": "https://youtu.be/lxc4EXZOOvE",
+        "type": "video"
+      }
+    ]
+  },
+  "-d2PIXm0V_Iehe8cws8zK": {
+    "title": "Pods",
+    "description": "In Kubernetes, a pod is the smallest deployable unit that represents a single instance of a running process in a cluster. A pod can contain one or more containers that share the same network namespace and can access the same storage volumes. Pods are created and managed by Kubernetes, and they are scheduled to run on one of the nodes in the cluster. Pods provide a lightweight and flexible abstraction layer that enables Kubernetes to manage the deployment, scaling, and networking of containerized applications. Pods also facilitate the communication and data exchange between containers running in the same pod.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Pods Documentation",
+        "url": "https://kubernetes.io/docs/concepts/workloads/pods/",
+        "type": "article"
+      },
+      {
+        "title": "The Kubernetes Way: Pods and Services",
+        "url": "https://thenewstack.io/kubernetes-way-part-one/",
+        "type": "article"
+      },
+      {
+        "title": "5 Best Practices for Configuring Kubernetes Pods Running in Production",
+        "url": "https://thenewstack.io/5-best-practices-for-configuring-kubernetes-pods-running-in-production/",
+        "type": "article"
+      },
+      {
+        "title": "What is a Pod in kubernetes ? Why do you need it ?",
+        "url": "https://www.youtube.com/watch?v=k0fzMZgpp14",
+        "type": "video"
+      }
+    ]
+  },
+  "IF09l0-pryGpMbDt__ocr": {
+    "title": "ReplicaSets",
+    "description": "A ReplicaSet is a controller that ensures a specified number of replicas (identical copies) of a pod are running in a cluster at all times. ReplicaSets help to ensure high availability and scalability by automatically scaling the number of pod replicas up or down in response to changes in demand or hardware failures. They are defined by a YAML file that specifies the desired number of replicas, the pod template to use, and other settings. They are responsible for monitoring the status of pods and creating or deleting replicas as necessary to meet the desired state.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "ReplicaSet Documentation",
+        "url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
+        "type": "article"
+      },
+      {
+        "title": "Strategies for Running Stateful Workloads in Kubernetes: Pet Sets",
+        "url": "https://thenewstack.io/strategies-running-stateful-applications-kubernetes-pet-sets/",
+        "type": "article"
+      },
+      {
+        "title": "ReplicaSet in Kubernetes",
+        "url": "https://www.youtube.com/watch?v=1WM-LsH6tKc",
+        "type": "video"
+      }
+    ]
+  },
+  "TUGQX7y1gs-aKPge2F1NU": {
+    "title": "Deployments",
+    "description": "A Deployment is a resource object for managing Pods and ReplicaSets via a declarative configuration, which define a desired state that describes the application workload life cycle, number of pods, deployment strategies, container images, and more. The Deployment Controller works to ensure the actual state matches desired state, such as by replacing a failed pod. Out of the box, Deployments support several deployment strategies, like \"recreate\" and \"rolling update\", however can be customized to support more advanced deployment strategies such as blue/green or canary deployments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Deployments Documentation",
+        "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Deployment: From Basic Strategies to Progressive Delivery\n",
+        "url": "https://codefresh.io/learn/kubernetes-deployment/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Deployments | Deployment Strategies",
+        "url": "https://youtu.be/lxc4EXZOOvE",
+        "type": "video"
+      }
+    ]
+  },
+  "AJiRBEaKU8qYEm0fqN389": {
+    "title": "StatefulSets",
+    "description": "It is a controller that manages the deployment and scaling of a set of stateful pods that require stable network identities and stable storage volumes. StatefulSets are used to run stateful applications such as databases, where the order and uniqueness of each pod is important. StatefulSets provide unique stable network identities and stable storage volumes for each pod, which allows stateful applications to maintain data consistency even when they are scaled up or down, or when nodes fail or are replaced. StatefulSets are defined by a YAML file that includes a pod template, a service to access the pods, and other settings.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "StatefulSets Documentation",
+        "url": "https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/",
+        "type": "article"
+      },
+      {
+        "title": "Different Approaches for Building Stateful Kubernetes Applications",
+        "url": "https://thenewstack.io/different-approaches-for-building-stateful-kubernetes-applications/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes StatefulSet | Tutorial",
+        "url": "https://www.youtube.com/watch?v=pPQKAR1pA9U",
+        "type": "video"
+      }
+    ]
+  },
+  "r3fzAN5DzratAKnnT8hzb": {
+    "title": "Jobs",
+    "description": "a Job is a controller that manages the execution of a finite task or batch job. Jobs are used to run short-lived tasks, such as batch processing, data analysis, or backups, that run to completion and then terminate. Jobs create one or more pods to run the task, and they monitor the completion status of each pod. If a pod fails or terminates, the Job automatically creates a replacement pod to ensure that the task is completed successfully. Jobs are defined by a YAML file that includes a pod template, completion criteria, and other settings.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Jobs Documentation",
+        "url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/",
+        "type": "article"
+      },
+      {
+        "title": "How Kubernetes Is Transforming into a Universal Scheduler",
+        "url": "https://thenewstack.io/how-kubernetes-is-transforming-into-a-universal-scheduler/",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial | Jobs in Kubernetes",
+        "url": "https://www.youtube.com/watch?v=j1EnBbxSz64",
+        "type": "video"
+      }
+    ]
+  },
+  "aUJ_w2L8nxNq3DfAW97Gd": {
+    "title": "Services and Networking",
+    "description": "Networking is crucial for communication between pods and resources in a Kubernetes cluster. Each pod has a unique IP address and can communicate with other pods directly. Container networking interface (CNI) plugins are used to configure pod network interfaces and provide isolation between pods. Kubernetes also provides networking services such as load balancing, service discovery, and ingress, which enable external traffic to access pods and services. These services are implemented using Kubernetes objects such as Services, Ingress, and NetworkPolicies. Networking and pod-to-pod communication are essential for scalability, reliability, and flexibility in Kubernetes clusters.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Cluster Networking - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/cluster-administration/networking/",
+        "type": "article"
+      },
+      {
+        "title": "Job with Pod-to-Pod Communication",
+        "url": "https://kubernetes.io/docs/tasks/job/job-with-pod-to-pod-communication/",
+        "type": "article"
+      },
+      {
+        "title": "How Kubernetes Provides Networking and Storage to Applications",
+        "url": "https://thenewstack.io/how-kubernetes-provides-networking-and-storage-to-applications/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Networking",
+        "url": "https://app.daily.dev/tags/networking?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "jUOlITLqnIvSu97I_3nBz": {
+    "title": "External Access to Services",
+    "description": "External access to Kubernetes (k8s) Services allows external clients to access pods and services running in the cluster. There are multiple ways to enable external access to Services in k8s, including NodePorts, LoadBalancers, and Ingress. Ingress is a Kubernetes object that provides a flexible way to manage external access, routing traffic to Services based on URL or host. External access is essential to ensure the scalability and reliability of Kubernetes deployments.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Ingress - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/services-networking/ingress/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Ingress for Beginners",
+        "url": "https://thenewstack.io/kubernetes-ingress-for-beginners/",
+        "type": "article"
+      },
+      {
+        "title": "How do I provide external access to Kubernetes services",
+        "url": "https://www.youtube.com/watch?v=iBYTFpoXx24",
+        "type": "video"
+      }
+    ]
+  },
+  "Qelo1YvAcUoX5PA-RYbNp": {
+    "title": "Load Balancing",
+    "description": "Load balancing in distributes network traffic across multiple pods or nodes using a Service object. A Service provides a stable network endpoint for a set of pods, allowing other pods or external clients to access them through a single IP address and DNS name. Kubernetes offers three types of load balancing algorithms for Services, which distribute traffic based on round-robin, least connections, or IP hash. Load balancing is an essential part of Kubernetes networking, providing efficient and reliable traffic distribution across a cluster.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Load Balancing - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/services-networking/ingress/#load-balancing",
+        "type": "article"
+      },
+      {
+        "title": "Ingress Controllers: The Swiss Army Knife of Kubernetes",
+        "url": "https://thenewstack.io/ingress-controllers-the-swiss-army-knife-of-kubernetes/",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial | Load Balancing Service in Kubernetes",
+        "url": "https://www.youtube.com/watch?v=xCsz9IOt-fs",
+        "type": "video"
+      }
+    ]
+  },
+  "44rhdieUCWsGFC_1__9kk": {
+    "title": "Networking & Pod-to-Pod Communication",
+    "description": "Kubernetes, also known as K8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It allows developers to focus on writing code while Kubernetes handles the underlying infrastructure. Kubernetes uses declarative configuration files to specify the desired state of an application, and can automatically scale applications based on demand, handle failovers, and manage networking and storage. It is widely used in cloud-native architectures that rely on microservices and containers for production deployments.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Overview of Kubernetes",
+        "url": "https://kubernetes.io/docs/concepts/overview/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Explained in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=PziYflu8cB8",
+        "type": "video"
+      },
+      {
+        "title": "Kubernetes Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=X48VuDVv0do&t=1s",
+        "type": "video"
+      }
+    ]
+  },
+  "dj7Tb2XTX4kxRUYiTjlhM": {
+    "title": "Configuration Management",
+    "description": "Kubernetes secrets store sensitive data such as passwords, tokens, and API keys in a secure manner. They can be created manually or automatically, and stored in etcd. Secrets can be mounted as files or environment variables in a pod, and access can be managed using Kubernetes RBAC. However, they have some limitations, such as size and the inability to be updated once created. Understanding secrets is important for building secure applications in Kubernetes.\n\nLear more from the following links:",
+    "links": [
+      {
+        "title": "Documentation - Secrets",
+        "url": "https://kubernetes.io/docs/concepts/configuration/secret/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Secrets Management: 3 Approaches, 9 Best Practices",
+        "url": "https://thenewstack.io/kubernetes-secrets-management-3-approaches-9-best-practices/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Secrets in 5 Minutes!",
+        "url": "https://www.youtube.com/watch?v=cQAEK9PBY8U",
+        "type": "video"
+      }
+    ]
+  },
+  "u24UlZKI86vaguj_VpMv1": {
+    "title": "Injecting Pod Config with ConfigMaps",
+    "description": "ConfigMaps are a way to store configuration data that can be used by applications running in the cluster. A Config Map is a key-value store that can hold configuration data such as database URLs, credentials, API keys, or any other application configuration data that can be used by the application.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "ConfigMaps Documentation",
+        "url": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes CRDs: What They Are and Why They Are Useful",
+        "url": "https://thenewstack.io/kubernetes-crds-what-they-are-and-why-they-are-useful/",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - ConfigMap in Kubernetes",
+        "url": "https://www.youtube.com/watch?v=BPrC_lgmcHQ",
+        "type": "video"
+      }
+    ]
+  },
+  "S0CwGC2gMG-SqnLNldqBD": {
+    "title": "Using Secrets for Sensitive Data",
+    "description": "Kubernetes secrets store sensitive data such as passwords, tokens, and API keys in a secure manner. They can be created manually or automatically, and stored in etcd. Secrets can be mounted as files or environment variables in a pod, and access can be managed using Kubernetes RBAC. However, they have some limitations, such as size and the inability to be updated once created. Understanding secrets is important for building secure applications in Kubernetes.\n\nLear more from the following links:",
+    "links": [
+      {
+        "title": "Documentation - Secrets",
+        "url": "https://kubernetes.io/docs/concepts/configuration/secret/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Secrets Management: 3 Approaches, 9 Best Practices",
+        "url": "https://thenewstack.io/kubernetes-secrets-management-3-approaches-9-best-practices/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Secrets in 5 Minutes!",
+        "url": "https://www.youtube.com/watch?v=cQAEK9PBY8U",
+        "type": "video"
+      }
+    ]
+  },
+  "eWKkdiBhD5x2sGYajmHEs": {
+    "title": "Resource Management",
+    "description": "Monitoring and optimizing resource usage in Kubernetes (k8s) is crucial for ensuring efficient and effective use of resources. To monitor resource usage, k8s provides a Metrics Server, and Prometheus can be integrated with k8s. The Container Runtime Interface (CRI) can also be used to monitor container-level resource usage data. To optimize resource usage, setting appropriate requests and limits, using Horizontal Pod Autoscaling (HPA), implementing pod affinity and anti-affinity rules, and controlling node selection can all help reduce resource contention and improve resource utilization. By monitoring and optimizing resource usage, k8s can ensure that applications run efficiently and resources are used effectively.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Tools for Monitoring Resources - Documentation",
+        "url": "https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-usage-monitoring/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Resource Optimization: Just The Basics",
+        "url": "https://sequoia.makes.software/kubernetes-resource-optimization-just-the-basics/",
+        "type": "article"
+      },
+      {
+        "title": "How to Choose the Right Kubernetes Monitoring Tool ",
+        "url": "https://thenewstack.io/how-to-choose-the-right-kubernetes-monitoring-tool/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Monitoring",
+        "url": "https://app.daily.dev/tags/monitoring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "8RLR6gRjIyTn6GCugEfgk": {
+    "title": "Setting Resource Requests and Limits",
+    "description": "Resource requests and limits in Kubernetes specify the minimum and maximum amount of CPU and memory a container requires to run. Resource requests are used for scheduling containers on nodes with sufficient resources, while limits enforce resource quotas and prevent containers from consuming too much. These settings can be configured at the pod or container level using the resources field in YAML. It's important to set resource requests and limits correctly to ensure optimal resource utilization in your Kubernetes cluster.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Requests and limits - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits",
+        "type": "article"
+      },
+      {
+        "title": "Motivation for default memory limits and requests",
+        "url": "https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/#motivation-for-default-memory-limits-and-requests",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Kubernetes Resource Types",
+        "url": "https://thenewstack.io/understanding-kubernetes-resource-types/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Requests and Limits Demystified ",
+        "url": "https://thenewstack.io/kubernetes-requests-and-limits-demystified/",
+        "type": "article"
+      }
+    ]
+  },
+  "OHz4QMmA3lqL_C7aWL8Ga": {
+    "title": "Assigning Quotas to Namespaces",
+    "description": "Assigning quotas to namespaces is a way to limit resource usage for specific groups of resources in Kubernetes. Quotas can be set for CPU, memory, and other resources, as well as for the number of objects in a namespace. This can help ensure fair resource distribution across different teams or projects within a cluster. Quotas can be applied to individual namespaces or across the entire cluster. Kubernetes allows for both hard quotas, which enforce strict resource limits, and soft quotas, which allow for overages up to a certain point. Quotas can be managed using the Kubernetes API or through YAML configuration files.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Resource Quotas - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/policy/resource-quotas/",
+        "type": "article"
+      },
+      {
+        "title": "Leveraging Namespaces for Cost Optimization with Kubernetes",
+        "url": "https://thenewstack.io/leveraging-namespaces-for-cost-optimization-with-kubernetes/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Namespaces Explained in 15 mins",
+        "url": "https://www.youtube.com/watch?v=K3jNo4z5Jx8",
+        "type": "video"
+      }
+    ]
+  },
+  "PP4ld_vvjpY3QltBBsXKD": {
+    "title": "Monitoring & Optimizing Resource Usage",
+    "description": "Kubernetes, also known as K8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It allows developers to focus on writing code while Kubernetes handles the underlying infrastructure. Kubernetes uses declarative configuration files to specify the desired state of an application, and can automatically scale applications based on demand, handle failovers, and manage networking and storage. It is widely used in cloud-native architectures that rely on microservices and containers for production deployments.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Overview of Kubernetes",
+        "url": "https://kubernetes.io/docs/concepts/overview/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Explained in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=PziYflu8cB8",
+        "type": "video"
+      },
+      {
+        "title": "Kubernetes Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=X48VuDVv0do&t=1s",
+        "type": "video"
+      }
+    ]
+  },
+  "SG3wtV2rt9nmLEkgrp_zP": {
+    "title": "Security",
+    "description": "Kubernetes security scanners help identify vulnerabilities and potential security threats in container images before deployment. Popular options include Aqua Security, Twistlock, Sysdig Secure, Trivy, Anchore Engine, and OpenSCAP. These scanners offer a variety of features such as vulnerability scanning, compliance checks, and runtime protection for Kubernetes environments. By integrating these scanners into their pipelines, organizations can ensure the security and integrity of their Kubernetes deployments and minimize the risk of security breaches and data loss.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "8+ open-source Kubernetes vulnerability scanners",
+        "url": "https://techbeacon.com/security/8-open-source-kubernetes-vulnerability-scanners-consider",
+        "type": "article"
+      },
+      {
+        "title": "7 Kubernetes Security Scanners",
+        "url": "https://thechief.io/c/editorial/7-kubernetes-security-scanners-to-use-in-your-devsecops-pipeline/",
+        "type": "article"
+      },
+      {
+        "title": "Improve Security With Automated Image Scanning Through CI/CD",
+        "url": "https://thenewstack.io/improve-security-with-automated-image-scanning-through-ci-cd/",
+        "type": "article"
+      },
+      {
+        "title": "Starboard: Putting all the Kubernetes Security Pieces into One Place",
+        "url": "https://thenewstack.io/starboard-putting-all-the-kubernetes-security-pieces-into-one-place/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Security",
+        "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "jOq0WwLrq8tlmOgo64QDc": {
+    "title": "Role Based Access Control (RBAC)",
+    "description": "Role-Based Access Control (RBAC) is a method of controlling access to Kubernetes resources based on the roles assigned to users or groups. RBAC involves creating roles and binding them to users or groups to control access to Kubernetes resources. Roles are defined as a set of rules that determine what actions can be performed on specific resources. By assigning roles to users or groups, access to Kubernetes resources can be restricted or granted based on the permissions defined in the role. RBAC helps ensure the security and integrity of Kubernetes clusters by limiting access to authorized users and groups.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Role Based Access Control Good Practices",
+        "url": "https://kubernetes.io/docs/concepts/security/rbac-good-practices/",
+        "type": "article"
+      },
+      {
+        "title": "A Primer on Kubernetes Access Control",
+        "url": "https://thenewstack.io/a-primer-on-kubernetes-access-control/",
+        "type": "article"
+      },
+      {
+        "title": "A Practical Approach to Understanding Kubernetes Authorization",
+        "url": "https://thenewstack.io/a-practical-approach-to-understanding-kubernetes-authorization/",
+        "type": "article"
+      },
+      {
+        "title": "3 Realistic Approaches to Kubernetes RBAC",
+        "url": "https://thenewstack.io/three-realistic-approaches-to-kubernetes-rbac/",
+        "type": "article"
+      },
+      {
+        "title": "Role-Based Access Control: Five Common Authorization Patterns",
+        "url": "https://thenewstack.io/role-based-access-control-five-common-authorization-patterns/",
+        "type": "article"
+      },
+      {
+        "title": "Securing Kubernetes and Other Resources at Scale Using RBAC",
+        "url": "https://thenewstack.io/securing-kubernetes-and-other-resources-at-scale-using-rbac/",
+        "type": "article"
+      },
+      {
+        "title": "Understand Role Based Access Control in Kubernetes",
+        "url": "https://www.youtube.com/watch?v=G3R24JSlGjY",
+        "type": "video"
+      }
+    ]
+  },
+  "s0gHg8CqwrSylpSPu8arA": {
+    "title": "Network Security",
+    "description": "Network security in Kubernetes involves securing network communication between different components within the cluster and with external networks. This can be achieved through various mechanisms such as Network Policies, Encryption, Authentication, Authorization, and Firewall rules. Network Policies provide fine-grained control over network traffic, while encryption ensures secure communication between pods, nodes, and external systems. Authentication and Authorization mechanisms prevent unauthorized access and provide secure communication between various components. Firewall rules help to protect the cluster against external attacks by limiting access to specific ports and protocols. Overall, network security in Kubernetes is critical to maintaining the confidentiality, integrity, and availability of the cluster.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Network Policies - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+        "type": "article"
+      },
+      {
+        "title": "6 Kubernetes Security Best Practices",
+        "url": "https://thenewstack.io/6-kubernetes-security-best-practices/",
+        "type": "article"
+      },
+      {
+        "title": "The Kubernetes Network Security Effect",
+        "url": "https://thenewstack.io/the-kubernetes-network-security-effect/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Security Best Practices to Keep You out of the News",
+        "url": "https://thenewstack.io/kubernetes-security-best-practices-to-keep-you-out-of-the-news/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Security",
+        "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Security Best Practices",
+        "url": "https://www.youtube.com/watch?v=oBf5lrmquYI",
+        "type": "video"
+      }
+    ]
+  },
+  "Nja7IFWcFTLsPcqbvRNm9": {
+    "title": "Container and Pod Security",
+    "description": "Kubernetes (k8s) can secure containers and pods through measures like using trusted container images, limiting container privileges, enforcing pod-level security policies, implementing network security measures, using access controls with RBAC, and managing sensitive information with Secrets and ConfigMaps. These practices help organizations reduce the risk of security incidents in their k8s clusters.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Configure a Security Context for a Pod or Container",
+        "url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial: Create a Kubernetes Pod Security Policy",
+        "url": "https://thenewstack.io/tutorial-create-a-kubernetes-pod-security-policy/",
+        "type": "article"
+      },
+      {
+        "title": "6 Overlooked Yet Important Kubernetes Features to Secure",
+        "url": "https://thenewstack.io/6-overlooked-yet-important-kubernetes-features-to-secure/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Security",
+        "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Security - Security Context for a Pod or Container",
+        "url": "https://www.youtube.com/watch?v=i8wfvoVf2xs",
+        "type": "video"
+      }
+    ]
+  },
+  "i7qxaFhFHPfe3fGEgsbcE": {
+    "title": "Container and Pod Security",
+    "description": "Kubernetes (k8s) can secure containers and pods through measures like using trusted container images, limiting container privileges, enforcing pod-level security policies, implementing network security measures, using access controls with RBAC, and managing sensitive information with Secrets and ConfigMaps. These practices help organizations reduce the risk of security incidents in their k8s clusters.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Configure a Security Context for a Pod or Container",
+        "url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial: Create a Kubernetes Pod Security Policy",
+        "url": "https://thenewstack.io/tutorial-create-a-kubernetes-pod-security-policy/",
+        "type": "article"
+      },
+      {
+        "title": "6 Overlooked Yet Important Kubernetes Features to Secure",
+        "url": "https://thenewstack.io/6-overlooked-yet-important-kubernetes-features-to-secure/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Security",
+        "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Security - Security Context for a Pod or Container",
+        "url": "https://www.youtube.com/watch?v=i8wfvoVf2xs",
+        "type": "video"
+      }
+    ]
+  },
+  "AgsQnQjyTLUFhFpRdcE13": {
+    "title": "Monitoring and Logging",
+    "description": "Observability in Kubernetes (k8s) refers to the ability to gain insight into the inner workings of your cluster, applications, and services running on top of it. An observability engine in k8s is a tool or platform that facilitates the collection, analysis, and visualization of data from various sources in your k8s environment. Some popular observability engines in k8s include Prometheus, Grafana, Jaeger, and Elastic Stack (ELK).\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "K8sGPT - AI scanner for Kubernetes problems",
+        "url": "https://github.com/k8sgpt-ai/k8sgpt",
+        "type": "opensource"
+      },
+      {
+        "title": "HolmesGPT - AIOps Platform for investigating Kubernetes problems and Prometheus alerts",
+        "url": "https://github.com/robusta-dev/holmesgpt/",
+        "type": "opensource"
+      },
+      {
+        "title": "Kubernetes Observability 101: Tools, Best Practices, And More",
+        "url": "https://www.cloudzero.com/blog/kubernetes-observability",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Observability in KubeSphere",
+        "url": "https://kubesphere.io/observability/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Observability",
+        "url": "https://app.daily.dev/tags/observability?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "-XxQtiLDAkXs7IFM_Ddw6": {
+    "title": "Logs",
+    "description": "Logs are generated by containerized applications running on nodes within the cluster. You can access these logs using the kubectl logs command followed by the name of the pod. By default, this command shows the logs from the most recent container in the pod, but you can specify a specific container within the pod by adding the container name to the command. Adding the -f flag to the command allows you to follow the logs in real-time. There are also third-party logging solutions available for Kubernetes, such as the EFK and Prometheus stacks, that provide more advanced logging capabilities and scalability for large-scale applications.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "System Logs",
+        "url": "https://kubernetes.io/docs/concepts/cluster-administration/system-logs/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes: Log collection explained",
+        "url": "https://www.youtube.com/watch?v=6kmHvXdAzIM",
+        "type": "video"
+      }
+    ]
+  },
+  "nqUBHBFUYFdYqCKZvfXBR": {
+    "title": "Metrics",
+    "description": "Metrics to monitor include CPU usage, memory usage, network usage, disk usage, API server metrics, pod and container metrics, and cluster-level metrics. These metrics provide insights into the performance and health of the cluster, nodes, and applications running on the cluster. Kubernetes provides tools such as Prometheus, Grafana, and Kubernetes Dashboard for collecting and analyzing these metrics. By monitoring these metrics, administrators can identify performance issues and optimize the cluster for better performance and scalability.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Node Metrics Data",
+        "url": "https://kubernetes.io/docs/reference/instrumentation/node-metrics/",
+        "type": "article"
+      },
+      {
+        "title": "How to collect metrics in K8s?",
+        "url": "https://www.youtube.com/watch?v=JQrk6HwlN78",
+        "type": "video"
+      }
+    ]
+  },
+  "ldYTEPt_hI4PXxr3tgJi5": {
+    "title": "Traces",
+    "description": "Tracing in Kubernetes involves monitoring the flow of requests through different components of the system, using tools such as Jaeger or Zipkin. OpenTracing and OpenCensus provide a consistent way of capturing traces across different components and applications running on the cluster. Tracing helps identify performance bottlenecks, debug issues, and optimize the system for better performance and scalability. By monitoring traces in Kubernetes, administrators can identify issues and take corrective actions to ensure efficient system performance.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Traces For Kubernetes System Components",
+        "url": "https://kubernetes.io/docs/concepts/cluster-administration/system-traces/",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Tracing",
+        "url": "https://www.youtube.com/watch?v=idDu_jXqf4E",
+        "type": "video"
+      }
+    ]
+  },
+  "pDjNsK5vI9FmKZbQm0lDP": {
+    "title": "Resource Health",
+    "description": "Resource health monitoring in Kubernetes involves monitoring the health and availability of resources such as pods, nodes, and containers. It helps administrators identify and troubleshoot issues that may affect the system's performance and availability using tools such as Kubernetes Dashboard, Prometheus, or Grafana. Resource health monitoring also helps ensure that the system is resilient to failures and can recover quickly from any disruptions. It is an important part of managing a Kubernetes cluster and ensures the reliability, availability, and scalability of the system.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Dashboards with Grafana and Prometheus",
+        "url": "https://www.youtube.com/watch?v=fzny5uUaAeY",
+        "type": "video"
+      },
+      {
+        "title": "How to Monitor a Kubernetes Cluster with Prometheus & Grafana",
+        "url": "https://www.youtube.com/watch?v=YDtuwlNTzRc",
+        "type": "video"
+      }
+    ]
+  },
+  "FANswgUhUb5Iuah2fni3L": {
+    "title": "Observability Engines",
+    "description": "Observability in Kubernetes (k8s) refers to the ability to gain insight into the inner workings of your cluster, applications, and services running on top of it. An observability engine in k8s is a tool or platform that facilitates the collection, analysis, and visualization of data from various sources in your k8s environment. Some popular observability engines in k8s include Prometheus, Grafana, Jaeger, and Elastic Stack (ELK).\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "K8sGPT - AI scanner for Kubernetes problems",
+        "url": "https://github.com/k8sgpt-ai/k8sgpt",
+        "type": "opensource"
+      },
+      {
+        "title": "HolmesGPT - AIOps Platform for investigating Kubernetes problems and Prometheus alerts",
+        "url": "https://github.com/robusta-dev/holmesgpt/",
+        "type": "opensource"
+      },
+      {
+        "title": "Kubernetes Observability 101: Tools, Best Practices, And More",
+        "url": "https://www.cloudzero.com/blog/kubernetes-observability",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Observability in KubeSphere",
+        "url": "https://kubesphere.io/observability/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Observability",
+        "url": "https://app.daily.dev/tags/observability?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "03mGA5AyL7mpF6y3EMW7A": {
+    "title": "Autoscaling",
+    "description": "Autoscaling in Kubernetes involves adjusting the resources allocated to a deployment or set of pods based on demand. It includes Horizontal Pod Autoscaling (HPA) and Vertical Pod Autoscaling (VPA), which increase or decrease replicas or adjust resource requests and limits, respectively. Autoscaling can be used with Cluster Autoscaling to efficiently allocate resources and ensure application responsiveness. It's useful for handling variable workloads or sudden spikes in traffic.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Autoscaling in Kubernetes",
+        "url": "https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes cluster autoscaling for beginners",
+        "url": "https://www.youtube.com/watch?v=jM36M39MA3I",
+        "type": "video"
+      }
+    ]
+  },
+  "044IUUCgZP4oQ9UxUG2iy": {
+    "title": "Horizontal Pod Autoscaler (HPA)",
+    "description": "It is a feature in Kubernetes that automatically scales the number of replicas of a pod based on the current demand for the workload it is running. The HPA controller monitors the CPU utilization or other metrics of the pod and adjusts the number of replicas of the pod to meet the specified target. This helps to ensure that the workload can handle increases in traffic and demand without overloading the resources of the cluster.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Horizontal Pod Autoscaling - Documentation",
+        "url": "https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/",
+        "type": "article"
+      }
+    ]
+  },
+  "c1KVczGRjh9bhMpbPP6sA": {
+    "title": "Vertical Pod Autoscaler (VPA)",
+    "description": "Vertical Pod Autoscaler (VPA) is a Kubernetes feature that automates the process of adjusting resource limits for containers in pods. Unlike Horizontal Pod Autoscaler (HPA), which scales the number of replicas of a pod, VPA scales the resources allocated to a pod's containers. It adjusts the resource requests and limits for each container based on its actual usage.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is Kubernetes VPA?",
+        "url": "https://www.kubecost.com/kubernetes-autoscaling/kubernetes-vpa/",
+        "type": "article"
+      },
+      {
+        "title": "Vertical Pod Autoscaling: Example",
+        "url": "https://www.youtube.com/watch?v=3h-vDDTZrm8",
+        "type": "video"
+      }
+    ]
+  },
+  "RC5MoYtG2rom-d4FW5qD2": {
+    "title": "Cluster Autoscaling",
+    "description": "Autoscaling in Kubernetes involves adjusting the resources allocated to a deployment or set of pods based on demand. It includes Horizontal Pod Autoscaling (HPA) and Vertical Pod Autoscaling (VPA), which increase or decrease replicas or adjust resource requests and limits, respectively. Autoscaling can be used with Cluster Autoscaling to efficiently allocate resources and ensure application responsiveness. It's useful for handling variable workloads or sudden spikes in traffic.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Autoscaling in Kubernetes",
+        "url": "https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes cluster autoscaling for beginners",
+        "url": "https://www.youtube.com/watch?v=jM36M39MA3I",
+        "type": "video"
+      }
+    ]
+  },
+  "xZDXM_8qb4VL15tNGG0ws": {
+    "title": "Scheduling",
+    "description": "Scheduling in Kubernetes refers to the process of assigning workloads to specific nodes in a cluster. The Kubernetes scheduler makes scheduling decisions based on factors such as resource availability, node suitability, and workload priorities. It balances workloads across the cluster to ensure efficient resource utilization and avoid overloading nodes. Scheduling takes into account factors such as geographic location, hardware requirements, and application-specific needs.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Kubernetes Scheduler",
+        "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/",
+        "type": "article"
+      },
+      {
+        "title": "Scheduling Framework",
+        "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/",
+        "type": "article"
+      }
+    ]
+  },
+  "70lTSIVh0AD6M8fMMuWzY": {
+    "title": "Basics",
+    "description": "Scheduling involves assigning pods to worker nodes based on criteria such as resource availability, labels, affinity/anti-affinity rules, taints, and tolerations. Pods are the smallest deployable units in k8s, consisting of one or more containers that share the same network namespace. The scheduler is responsible for assigning pods to nodes, while labels are used for matching. Affinity and anti-affinity rules dictate how pods are scheduled based on their relationships with other pods or nodes. QoS is used to prioritize pod scheduling based on their resource requirements.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Kubernetes Scheduler",
+        "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/",
+        "type": "article"
+      },
+      {
+        "title": "How Scheduling in Kubernetes Works",
+        "url": "https://www.youtube.com/watch?v=0FvQR-0tK54",
+        "type": "video"
+      }
+    ]
+  },
+  "zXUsHAI1HFhcY2BFAcypv": {
+    "title": "Taints and Tolerations",
+    "description": "Taints and tolerations are used in Kubernetes to restrict or allow pods to be scheduled on certain nodes based on labels. A taint is a label that is applied to a node to indicate certain limitations or requirements. A toleration is a label applied to a pod to indicate that it can tolerate certain taints. When a node has a taint, only pods with the corresponding tolerations can be scheduled on that node. This feature is useful for various purposes, such as ensuring separation of critical and non-critical workloads, reserving nodes for certain tasks, and protecting nodes from overloading.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Taints and Tolerations",
+        "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes For Beginners: Taints & Tolerations",
+        "url": "https://www.youtube.com/watch?v=mo2UrkjA7FE",
+        "type": "video"
+      }
+    ]
+  },
+  "CL0hKTcml40InmyVUXpY2": {
+    "title": "Topology Spread Constraints",
+    "description": "Topology spread constraints ensure even distribution of pods across a cluster's topology. Constraints define rules for the number of pods of a certain type that can run on a given level, such as nodes, zones, or racks. These constraints can be customized to fit specific needs, such as ensuring that critical workloads are spread across multiple zones. They help prevent single points of failure and improve application resilience by preventing resource overloading and promoting balanced distribution of workloads. Constraints can be added using the Kubernetes API or command line interface.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Topology Spread Constraints",
+        "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes | Topology Spread Constraints",
+        "url": "https://www.youtube.com/watch?v=joRrWJ6bwvE",
+        "type": "video"
+      }
+    ]
+  },
+  "_Gva1eGcYqpmZNPyV03lt": {
+    "title": "Pod Priorities",
+    "description": "Pod priorities in Kubernetes determine the order in which pods are scheduled on nodes when there are competing demands for resources. Each pod is assigned a numeric priority value, with higher values indicating higher priority. The scheduler maximizes the total priority of scheduled pods while also considering node suitability, taints and tolerations, and affinity and anti-affinity rules. Priorities can be set manually or automatically based on business logic or application requirements. Priorities help ensure that critical workloads receive necessary resources and are scheduled first, while lower priority workloads are scheduled when resources become available.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Pod priority - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pod-priority",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Pod Priority (Examples)",
+        "url": "https://www.youtube.com/watch?v=sR_Zmvme3-0",
+        "type": "video"
+      }
+    ]
+  },
+  "TRKzlDW2PQN9bWTyz3NWL": {
+    "title": "Evictions",
+    "description": "Evictions terminate or delete running pods from a node due to reasons like resource constraints or pod failures. They can be initiated by the system or administrators manually through the API. Evictions can be graceful, allowing pods to clean up resources, or forceful, immediately terminating them. Kubernetes provides preemption and pod disruption budgets to handle evictions effectively and minimize service disruptions. Evictions are necessary to manage and maintain Kubernetes clusters, and Kubernetes provides tools to handle them.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Node-pressure Eviction",
+        "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/",
+        "type": "article"
+      },
+      {
+        "title": "API-initiated Eviction",
+        "url": "https://kubernetes.io/docs/concepts/scheduling-eviction/api-eviction/",
+        "type": "article"
+      }
+    ]
+  },
+  "URnYf9jMprFz-o26fbU2P": {
+    "title": "Storage and Volumes",
+    "description": "CSI (Container Storage Interface) drivers in Kubernetes provide a standard way for storage providers to integrate with Kubernetes and offer persistent storage for containerized applications. They operate as separate containerized processes and communicate with Kubernetes through a well-defined API. CSI drivers allow Kubernetes to access a wide range of storage systems and provide advanced features like snapshotting and cloning.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Container Storage Interface (CSI) for Kubernetes",
+        "url": "https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/",
+        "type": "article"
+      },
+      {
+        "title": "CSI in Kubernetes",
+        "url": "https://www.youtube.com/watch?v=brXPQ1Qwjl4",
+        "type": "video"
+      }
+    ]
+  },
+  "55RV9psPCmcg8G_P_zQo9": {
+    "title": "CSI Drivers",
+    "description": "CSI (Container Storage Interface) drivers in Kubernetes provide a standard way for storage providers to integrate with Kubernetes and offer persistent storage for containerized applications. They operate as separate containerized processes and communicate with Kubernetes through a well-defined API. CSI drivers allow Kubernetes to access a wide range of storage systems and provide advanced features like snapshotting and cloning.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Container Storage Interface (CSI) for Kubernetes",
+        "url": "https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/",
+        "type": "article"
+      },
+      {
+        "title": "CSI in Kubernetes",
+        "url": "https://www.youtube.com/watch?v=brXPQ1Qwjl4",
+        "type": "video"
+      }
+    ]
+  },
+  "LJUJ1NIUsajb1AUdvJjqW": {
+    "title": "Stateful Applications",
+    "description": "In Kubernetes, storage is a key component for stateful applications, as these applications require persistent data storage that is available across multiple replicas of the application. Kubernetes provides several options for storage, including volumes, persistent volumes, and storage classes.\n\nVolumes are the basic building blocks of storage in Kubernetes. A volume is a directory that is accessible to the container running the application, and it can be backed by different types of storage, such as a host directory, a cloud provider disk, or a network storage system. Volumes are created and managed by Kubernetes, and they can be mounted into containers as part of a pod definition.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Stateful Applications",
+        "url": "https://kubernetes.io/docs/tutorials/stateful-application/",
+        "type": "article"
+      },
+      {
+        "title": "The basics of stateful applications in Kubernetes",
+        "url": "https://www.youtube.com/watch?v=GieXzb91I40",
+        "type": "video"
+      }
+    ]
+  },
+  "0l0xpsabglvs_t6oAP-XG": {
+    "title": "Deployment Patterns",
+    "description": "It is a deployment strategy used in Kubernetes for deploying new versions of an application by running two identical production environments, one with the current version (blue) and the other with the new version (green). After the green environment is fully tested, traffic is routed from the blue environment to the green environment, providing a seamless transition for users and avoiding any downtime or disruption. In Kubernetes, Blue-Green Deployments can be implemented using a variety of tools and techniques, including deployment strategies, traffic routing, and load balancing.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Create a Kubernetes Blue Green Deployment",
+        "url": "https://developer.harness.io/docs/continuous-delivery/cd-execution/kubernetes-executions/create-a-kubernetes-blue-green-deployment/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes - Blue/Green Deployments",
+        "url": "https://www.youtube.com/watch?v=jxhpTGQ484Y",
+        "type": "video"
+      }
+    ]
+  },
+  "Pymc9H-lRHVPy7M9eSaPD": {
+    "title": "CI / CD Integration",
+    "description": "Kubernetes, also known as K8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It allows developers to focus on writing code while Kubernetes handles the underlying infrastructure. Kubernetes uses declarative configuration files to specify the desired state of an application, and can automatically scale applications based on demand, handle failovers, and manage networking and storage. It is widely used in cloud-native architectures that rely on microservices and containers for production deployments.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Overview of Kubernetes",
+        "url": "https://kubernetes.io/docs/concepts/overview/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Explained in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=PziYflu8cB8",
+        "type": "video"
+      },
+      {
+        "title": "Kubernetes Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=X48VuDVv0do&t=1s",
+        "type": "video"
+      }
+    ]
+  },
+  "dATdEyNWlpDNKjedCXLyb": {
+    "title": "GitOps",
+    "description": "GitOps is a set of practices for managing infrastructure and applications using Git repositories as the source of truth for declarative configuration. In Kubernetes, GitOps involves using Git as the single source of truth for both the desired and actual state of the system, automating deployment and management tasks, and often using it in conjunction with Continuous Delivery (CD) practices. The result is a more consistent, reliable, and automated approach to managing infrastructure and applications.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Using GitOps with a Kubernetes cluster",
+        "url": "https://docs.gitlab.com/ee/user/clusters/agent/gitops.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about GitOps",
+        "url": "https://app.daily.dev/tags/gitops?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "DevOps and GitOps for Kubernetes",
+        "url": "https://www.youtube.com/watch?v=PFLimPh5-wo",
+        "type": "video"
+      }
+    ]
+  },
+  "FAEFOhLdp7xrmctHFxiOM": {
+    "title": "Helm Charts",
+    "description": "Helm is a Kubernetes package manager that simplifies the deployment and management of complex applications through the use of reusable and versioned Helm charts. These charts are composed of YAML files that describe related sets of Kubernetes resources and can be customized using values files and templating with Go templates. Helm charts can also have dependencies on other charts and be stored in a centralized repository like Helm Hub for easy sharing and access. By utilizing Helm, teams can streamline application management and reduce duplication of effort.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Helm Docs",
+        "url": "https://helm.sh/docs/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Helm",
+        "url": "https://app.daily.dev/tags/helm?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What is Helm in Kubernetes? Helm and Helm Charts explained",
+        "url": "https://www.youtube.com/watch?v=-ykwb1d0DXU",
+        "type": "video"
+      }
+    ]
+  },
+  "88IGeC3dAopHLGtLozxdY": {
+    "title": "Canary Deployments",
+    "description": "Canary Deployments is a technique used in Kubernetes to gradually roll out new versions of an application by directing a small percentage of users or traffic to the new version while the majority continue using the old version. This approach allows for testing the new version under real-world conditions before fully committing to the update. In Kubernetes, canary deployments can be implemented using tools such as Istio, Linkerd, or Nginx, or by using built-in features like deployment strategies and traffic routing.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Canary deployment for K8s deployments",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/kubernetes/canary-demo?view=azure-devops&tabs=yaml",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes canary deployments Explained",
+        "url": "https://www.youtube.com/watch?v=sCevTD_GtvU",
+        "type": "video"
+      }
+    ]
+  },
+  "yMSXdwDO36CLtp2TBC7aB": {
+    "title": "Rolling Updates / Rollbacks",
+    "description": "Kubernetes, also known as K8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It allows developers to focus on writing code while Kubernetes handles the underlying infrastructure. Kubernetes uses declarative configuration files to specify the desired state of an application, and can automatically scale applications based on demand, handle failovers, and manage networking and storage. It is widely used in cloud-native architectures that rely on microservices and containers for production deployments.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Overview of Kubernetes",
+        "url": "https://kubernetes.io/docs/concepts/overview/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Explained in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=PziYflu8cB8",
+        "type": "video"
+      },
+      {
+        "title": "Kubernetes Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=X48VuDVv0do&t=1s",
+        "type": "video"
+      }
+    ]
+  },
+  "advanced-topics@t8SJbGVXsUDECxePLDk_w.md": {
+    "title": "Advanced Topics",
+    "description": "",
+    "links": []
+  },
+  "L9rVPEEXFwisQOwT_LQ4v": {
+    "title": "Creating Custom Controllers",
+    "description": "Custom controllers in Kubernetes automate the management of custom resources that are not natively supported by Kubernetes. They are implemented as Kubernetes controllers that watch custom resources and react to changes in their state. Custom resources are created by extending the Kubernetes API with new resource types specific to an organization's needs. Custom controllers can be developed using various programming languages and frameworks, such as the Operator Framework. The Operator Framework provides tools and best practices for developing, testing, and deploying custom controllers.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Custom Controllers",
+        "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#custom-controllers",
+        "type": "article"
+      },
+      {
+        "title": "Extending Kubernetes with Custom Controllers",
+        "url": "https://www.youtube.com/results?search_query=Custom+controllers+in+k8s",
+        "type": "video"
+      }
+    ]
+  },
+  "1-Nb8rCMJEZrYm20sEcRJ": {
+    "title": "Custom Schedulers and Extenders",
+    "description": "Custom Scheduler Extenders in Kubernetes enhance the scheduling capabilities of Kubernetes by allowing users to define their own scheduling logic based on custom metrics and constraints. They are implemented as custom Kubernetes controllers that run alongside the Kubernetes scheduler. Custom Scheduler Extenders can be used to implement scheduling policies specific to an organization's needs and can be developed using various programming languages. They intercept scheduling requests, add custom scheduling logic based on user-defined rules, and pass requests back to the Kubernetes scheduler.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Create a custom Kubernetes scheduler",
+        "url": "https://developer.ibm.com/articles/creating-a-custom-kube-scheduler/",
+        "type": "article"
+      },
+      {
+        "title": "Custom Scheduler Kubernetes | Multiple Schedulers Kubernetes",
+        "url": "https://www.youtube.com/watch?v=NiB7sjXmiZc",
+        "type": "video"
+      }
+    ]
+  },
+  "9P7l-RBOkUxs3Z_UpKQO-": {
+    "title": "Custom Resource Definitions (CRDs)",
+    "description": "Custom Resource Definitions (CRDs) in Kubernetes extend the Kubernetes API by defining new resource types specific to an organization's needs. CRDs create custom resources that can manage a wide variety of resources, such as applications, databases, storage, and networking. They are defined using YAML or JSON manifests and can be created and managed using the Kubernetes API server. Once created, custom resources can be managed using Kubernetes controllers and integrated with other Kubernetes components. CRDs are a powerful tool for streamlining operations in Kubernetes and enabling organizations to manage resources in a more efficient and customized way.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Custom Resources - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/",
+        "type": "article"
+      },
+      {
+        "title": "Custom Resource Definition (CRD) Explained with Demo",
+        "url": "https://www.youtube.com/watch?v=u1X5Rf7fWwM",
+        "type": "video"
+      }
+    ]
+  },
+  "UeJcKv3jhenjNzHM-0R86": {
+    "title": "Kubernetes Extensions and APIs",
+    "description": "Kubernetes (k8s) extensions and APIs are used to customize the behavior of Kubernetes and add new capabilities to the system. Kubernetes extensions, including Custom Resource Definitions (CRDs), Custom Controllers, Custom Scheduler Extenders, and Custom Metrics APIs, enhance Kubernetes functionality. Kubernetes APIs are used to manage resources in a Kubernetes cluster and interact with the system. Kubernetes extensions and APIs together provide a powerful toolkit for customizing and extending Kubernetes, enabling users to build custom components and APIs that streamline operations in Kubernetes.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Extensions - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/extend-kubernetes/#extensions",
+        "type": "article"
+      },
+      {
+        "title": "The Kubernetes API - Documentation",
+        "url": "https://kubernetes.io/docs/concepts/overview/kubernetes-api/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Kubernetes",
+        "url": "https://app.daily.dev/tags/kubernetes?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "ZrVhYTw63aVVIFAEJDG5r": {
+    "title": "Should you manage your own Cluster?",
+    "description": "To create your own Kubernetes cluster, you need to choose a cloud provider or set up your own infrastructure, install Kubernetes on your infrastructure, configure your cluster by setting up networking, storage, and security, deploy your applications using Kubernetes manifests, and monitor and manage your cluster using tools like Kubernetes Dashboard, kubectl, and Prometheus. This process can be complex and time-consuming, but it gives you complete control over your infrastructure and allows for customization to meet your specific needs.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Creating a cluster with kubeadm",
+        "url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/",
+        "type": "article"
+      },
+      {
+        "title": "KUBERNETES | Install Kubernetes Cluster",
+        "url": "https://www.youtube.com/watch?v=Ro2qeYeisZQ",
+        "type": "video"
+      }
+    ]
+  },
+  "M-iTb_7EWZIJ3JpdViICx": {
+    "title": "Installing the Control Plane",
+    "description": "The control plane's components make global decisions about the cluster (for example, scheduling), as well as detecting and responding to cluster events (for example, starting up a new pod when a deployment's replicas field is unsatisfied). Control plane components can be run on any machine in the cluster. However, for simplicity, set up scripts typically start all control plane components on the same machine, and do not run user containers on this machine.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Initializing your control-plane node - Documentation",
+        "url": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#initializing-your-control-plane-node",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Install Control Plane Components",
+        "url": "https://www.youtube.com/watch?v=IUwuyZ5ReF0",
+        "type": "video"
+      }
+    ]
+  },
+  "2cQKTxln3dIk5IjX2UZdM": {
+    "title": "Adding and Managing Worker Nodes",
+    "description": "Kubernetes runs your workload by placing containers into Pods to run on Nodes. A node may be a virtual or physical machine, depending on the cluster. Each node is managed by the control plane and contains the services necessary to run Pods.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Node Management",
+        "url": "https://kubernetes.io/docs/concepts/architecture/nodes/#management",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes 101: Nodes Tutorial",
+        "url": "https://www.youtube.com/watch?v=xhwi3zIVR-8",
+        "type": "video"
+      }
+    ]
+  },
+  "auZgEQ6FC3nUjuyx0zANh": {
+    "title": "Multi-Cluster Management",
+    "description": "Multi-Cluster Management in Kubernetes (k8s) refers to the ability to manage multiple Kubernetes clusters using a single control plane. This approach allows administrators to centrally manage and orchestrate resources across multiple clusters, regardless of where they are located, without having to switch between multiple management consoles or tools.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Configure Access to Multiple Clusters - Documentation",
+        "url": "https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes Cluster Management Strategies",
+        "url": "https://www.youtube.com/watch?v=966TJ6mlOYY",
+        "type": "video"
+      }
+    ]
+  },
+  "9-oaTlzKmcxTfaRycz1w3": {
+    "title": "Blue-Green Deployments",
+    "description": "It is a deployment strategy used in Kubernetes for deploying new versions of an application by running two identical production environments, one with the current version (blue) and the other with the new version (green). After the green environment is fully tested, traffic is routed from the blue environment to the green environment, providing a seamless transition for users and avoiding any downtime or disruption. In Kubernetes, Blue-Green Deployments can be implemented using a variety of tools and techniques, including deployment strategies, traffic routing, and load balancing.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Create a Kubernetes Blue Green Deployment",
+        "url": "https://developer.harness.io/docs/continuous-delivery/cd-execution/kubernetes-executions/create-a-kubernetes-blue-green-deployment/",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes - Blue/Green Deployments",
+        "url": "https://www.youtube.com/watch?v=jxhpTGQ484Y",
+        "type": "video"
+      }
+    ]
+  }
+}

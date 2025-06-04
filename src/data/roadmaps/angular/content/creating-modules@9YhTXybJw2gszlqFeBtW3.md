@@ -4,4 +4,4 @@ Creating modules in Angular helps organize your application into manageable, coh
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs (Feature Modules)](https://angular.dev/guide/ngmodules/feature-modules)
+- [@official@Feature Modules](https://angular.dev/guide/ngmodules/feature-modules)

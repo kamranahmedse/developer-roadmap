@@ -38,6 +38,7 @@
     "@microsoft/clarity": "^1.0.0",
     "@nanostores/react": "^1.0.0",
     "@napi-rs/image": "^1.9.2",
+    "@radix-ui/react-dropdown-menu": "^2.1.15",
     "@resvg/resvg-js": "^2.6.2",
     "@roadmapsh/editor": "workspace:*",
     "@tailwindcss/vite": "^4.1.7",
