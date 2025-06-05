@@ -40,20 +40,17 @@ import {
 import { RoadmapRecommendations } from '../RoadmapAIChat/RoadmapRecommendations';
 import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
 import { AIChatCourse } from './AIChatCouse';
-import { getTailwindScreenDimension } from '../../lib/is-mobile';
-import type { TailwindScreenDimensions } from '../../lib/is-mobile';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { readChatStream } from '../../lib/chat';
 
 export function AIChat() {
   const toast = useToast();
 
-  const [deviceType, setDeviceType] = useState<TailwindScreenDimensions>();
-
-  useLayoutEffect(() => {
-    setDeviceType(getTailwindScreenDimension());
-  }, []);
-
+  const [chatDetails, setChatDetails] = useState<{
+    chatHistoryId: string;
+    title: string;
+  } | null>(null);
   const [message, setMessage] = useState('');
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] =
@@ -198,8 +195,8 @@ export function AIChat() {
       return;
     }
 
-    await readStream(reader, {
-      onStream: async (content) => {
+    await readChatStream(reader, {
+      onMessage: async (content) => {
         const jsx = await renderMessage(content, renderer, {
           isLoading: true,
         });
@@ -210,7 +207,7 @@ export function AIChat() {
 
         scrollToBottom();
       },
-      onStreamEnd: async (content) => {
+      onMessageEnd: async (content) => {
         const jsx = await renderMessage(content, renderer, {
           isLoading: false,
         });
@@ -232,6 +229,16 @@ export function AIChat() {
 
         queryClient.invalidateQueries(getAiCourseLimitOptions());
         scrollToBottom();
+      },
+      onDetails: (details) => {
+        const detailsJson = JSON.parse(details);
+        const chatHistoryId = detailsJson?.chatHistoryId;
+        if (!chatHistoryId) {
+          return;
+        }
+
+        setChatDetails(detailsJson);
+        window.history.replaceState({}, '', `/ai/chat/${chatHistoryId}`);
       },
     });
 
