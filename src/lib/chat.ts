@@ -24,7 +24,8 @@ export async function readChatStream(
       break;
     }
 
-    const text = decoder.decode(value);
+    const textWithNewLine = decoder.decode(value);
+    const text = textWithNewLine.replace(/\n$/, '');
 
     if (text.startsWith(CHAT_RESPONSE_PREFIX.message)) {
       const textWithoutPrefix = text.replace(CHAT_RESPONSE_PREFIX.message, '');

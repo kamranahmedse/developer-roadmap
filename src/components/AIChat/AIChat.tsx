@@ -183,6 +183,7 @@ export function AIChat(props: AIChatProps) {
       },
       credentials: 'include',
       body: JSON.stringify({
+        chatHistoryId: chatDetails?.chatHistoryId,
         messages: messages.slice(-10),
         force,
       }),
