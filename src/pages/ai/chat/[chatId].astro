@@ -1,7 +1,12 @@
 ---
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
-import { AIChat } from '../../../components/AIChat/AIChat';
-import { AIChatLayout } from '../../../components/AIChatHistory/AIChatLayout';
+import { AIChatHistory } from '../../../components/AIChatHistory/AIChatHistory';
+
+type Props = {
+  chatId: string;
+};
+
+const { chatId } = Astro.params as Props;
 ---
 
 <SkeletonLayout
@@ -9,7 +14,5 @@ import { AIChatLayout } from '../../../components/AIChatHistory/AIChatLayout';
   noIndex={true}
   description='Learn anything with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.'
 >
-  <AIChatLayout client:load>
-    <AIChat client:load />
-  </AIChatLayout>
+  <AIChatHistory client:load chatHistoryId={chatId} />
 </SkeletonLayout>

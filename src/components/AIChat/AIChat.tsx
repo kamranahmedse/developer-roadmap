@@ -43,21 +43,46 @@ import { AIChatCourse } from './AIChatCouse';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { readChatStream } from '../../lib/chat';
+import type { ChatHistoryDocument } from '../../queries/chat-history';
 
-export function AIChat() {
+export const aiChatRenderer: Record<string, MessagePartRenderer> = {
+  'roadmap-recommendations': (options) => {
+    return <RoadmapRecommendations {...options} />;
+  },
+  'generate-course': (options) => {
+    return <AIChatCourse {...options} />;
+  },
+};
+
+type AIChatProps = {
+  chatHistory?: Pick<ChatHistoryDocument, '_id' | 'title'>;
+  messages?: RoadmapAIChatHistoryType[];
+};
+
+export function AIChat(props: AIChatProps) {
+  const { chatHistory: defaultDetails, messages: defaultMessages } = props;
+
   const toast = useToast();
 
   const [chatDetails, setChatDetails] = useState<{
     chatHistoryId: string;
     title: string;
-  } | null>(null);
+  } | null>(
+    defaultDetails
+      ? {
+          chatHistoryId: defaultDetails._id,
+          title: defaultDetails.title,
+        }
+      : null,
+  );
+
   const [message, setMessage] = useState('');
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] =
     useState<React.ReactNode | null>(null);
   const [aiChatHistory, setAiChatHistory] = useState<
     RoadmapAIChatHistoryType[]
-  >([]);
+  >(defaultMessages ?? []);
 
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isPersonalizedResponseFormOpen, setIsPersonalizedResponseFormOpen] =
@@ -145,17 +170,6 @@ export function AIChat() {
     });
   }, [scrollableContainerRef]);
 
-  const renderer: Record<string, MessagePartRenderer> = useMemo(() => {
-    return {
-      'roadmap-recommendations': (options) => {
-        return <RoadmapRecommendations {...options} />;
-      },
-      'generate-course': (options) => {
-        return <AIChatCourse {...options} />;
-      },
-    };
-  }, []);
-
   const completeAIChat = async (
     messages: RoadmapAIChatHistoryType[],
     force: boolean = false,
@@ -197,7 +211,7 @@ export function AIChat() {
 
     await readChatStream(reader, {
       onMessage: async (content) => {
-        const jsx = await renderMessage(content, renderer, {
+        const jsx = await renderMessage(content, aiChatRenderer, {
           isLoading: true,
         });
 
@@ -208,7 +222,7 @@ export function AIChat() {
         scrollToBottom();
       },
       onMessageEnd: async (content) => {
-        const jsx = await renderMessage(content, renderer, {
+        const jsx = await renderMessage(content, aiChatRenderer, {
           isLoading: false,
         });
 
