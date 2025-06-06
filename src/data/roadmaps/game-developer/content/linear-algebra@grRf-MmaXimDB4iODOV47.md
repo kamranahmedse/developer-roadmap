@@ -5,5 +5,4 @@ Linear Algebra is a vital field in Mathematics that is extensively used in game 
 Visit the following resources to learn more:
 
 - [@article@Linear Algebra](https://en.wikipedia.org/wiki/Linear_algebra)
-- [@video@Linear Algebra Full Course by Kimberly Brehm](https://youtube.com/playlist?list=PLl-gb0E4MII03hiCrZa7YqxUMEeEPmZqK\&si=_r0WDwh94NKJbs_R)
 - [@feed@Explore top posts about Math](https://app.daily.dev/tags/math?ref=roadmapsh)
