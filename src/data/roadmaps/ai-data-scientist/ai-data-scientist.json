@@ -878,8 +878,8 @@
       },
       "selected": true,
       "data": {
-        "label": "Experiment Design Article",
-        "href": "https://towardsdatascience.com/step-by-step-for-planning-an-a-b-test-ef3c93143c0b",
+        "label": "Step by Step Process for Planning an A/B Test",
+        "href": "https://medium.com/data-science/step-by-step-for-planning-an-a-b-test-ef3c93143c0b",
         "style": {
           "fontSize": 17,
           "color": "#000000",
@@ -3142,8 +3142,8 @@
       },
       "selected": true,
       "data": {
-        "label": "Exploratory Data Analysis with Seaborn",
-        "href": "https://imp.i384100.net/ZQmMgR",
+        "label": "Python for Data Visualization: Matplotlib & Seaborn",
+        "href": "https://www.coursera.org/projects/python-for-data-visualization-matplotlib-and-seaborn",
         "style": {
           "fontSize": 17,
           "color": "#000000",
