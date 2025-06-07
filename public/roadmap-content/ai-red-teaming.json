@@ -4,11 +4,6 @@
     "description": "This covers the foundational concepts essential for AI Red Teaming, bridging traditional cybersecurity with AI-specific threats. An AI Red Teamer must understand common vulnerabilities in ML models (like evasion or poisoning), security risks in the AI lifecycle (from data collection to deployment), and how AI capabilities can be misused. This knowledge forms the basis for designing effective tests against AI systems.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "AI Security | Coursera",
-        "url": "https://www.coursera.org/learn/ai-security",
-        "type": "course"
-      },
-      {
         "title": "Building Trustworthy AI: Contending with Data Poisoning",
         "url": "https://nisos.com/research/building-trustworthy-ai/",
         "type": "article"
