@@ -23,13 +23,17 @@ export interface ChatHistoryDocument {
   updatedAt: Date;
 }
 
-export function chatHistoryOptions(chatHistoryId: string) {
+export function chatHistoryOptions(chatHistoryId?: string) {
   return queryOptions({
     queryKey: ['chat-history', chatHistoryId],
     queryFn: async () => {
       const data = await httpGet<ChatHistoryDocument>(
         `/v1-chat-history/${chatHistoryId}`,
       );
+
+      if (data.title) {
+        document.title = data.title;
+      }
 
       const messages: RoadmapAIChatHistoryType[] = [];
       for (const message of data.messages) {
@@ -51,6 +55,40 @@ export function chatHistoryOptions(chatHistoryId: string) {
         ...data,
         messages,
       };
+    },
+    enabled: !!isLoggedIn() && !!chatHistoryId,
+  });
+}
+
+type ListChatHistoryQuery = {
+  perPage?: string;
+  currPage?: string;
+  query?: string;
+};
+
+type ListChatHistoryResponse = {
+  data: Omit<ChatHistoryDocument, 'messages'>[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
+
+export function listChatHistoryOptions(
+  query: ListChatHistoryQuery = {
+    perPage: '20',
+    currPage: '1',
+    query: '',
+  },
+) {
+  return queryOptions({
+    queryKey: ['chat-history', query],
+    queryFn: () => {
+      return httpGet<ListChatHistoryResponse>('/v1-list-chat-history', {
+        ...(query?.query ? { query: query.query } : {}),
+        ...(query?.perPage ? { perPage: query.perPage } : {}),
+        ...(query?.currPage ? { currPage: query.currPage } : {}),
+      });
     },
     enabled: !!isLoggedIn(),
   });

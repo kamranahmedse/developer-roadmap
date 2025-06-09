@@ -43,7 +43,6 @@ import { AIChatCourse } from './AIChatCouse';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { readChatStream } from '../../lib/chat';
-import type { ChatHistoryDocument } from '../../queries/chat-history';
 
 export const aiChatRenderer: Record<string, MessagePartRenderer> = {
   'roadmap-recommendations': (options) => {
@@ -55,26 +54,19 @@ export const aiChatRenderer: Record<string, MessagePartRenderer> = {
 };
 
 type AIChatProps = {
-  chatHistory?: Pick<ChatHistoryDocument, '_id' | 'title'>;
   messages?: RoadmapAIChatHistoryType[];
+  chatHistoryId?: string;
+  setChatHistoryId?: (chatHistoryId: string) => void;
 };
 
 export function AIChat(props: AIChatProps) {
-  const { chatHistory: defaultDetails, messages: defaultMessages } = props;
+  const {
+    messages: defaultMessages,
+    chatHistoryId: defaultChatHistoryId,
+    setChatHistoryId: setDefaultChatHistoryId,
+  } = props;
 
   const toast = useToast();
-
-  const [chatDetails, setChatDetails] = useState<{
-    chatHistoryId: string;
-    title: string;
-  } | null>(
-    defaultDetails
-      ? {
-          chatHistoryId: defaultDetails._id,
-          title: defaultDetails.title,
-        }
-      : null,
-  );
 
   const [message, setMessage] = useState('');
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
@@ -183,7 +175,7 @@ export function AIChat(props: AIChatProps) {
       },
       credentials: 'include',
       body: JSON.stringify({
-        chatHistoryId: chatDetails?.chatHistoryId,
+        chatHistoryId: defaultChatHistoryId,
         messages: messages.slice(-10),
         force,
       }),
@@ -252,7 +244,7 @@ export function AIChat(props: AIChatProps) {
           return;
         }
 
-        setChatDetails(detailsJson);
+        setDefaultChatHistoryId?.(chatHistoryId);
         window.history.replaceState({}, '', `/ai/chat/${chatHistoryId}`);
       },
     });

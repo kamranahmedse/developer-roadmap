@@ -7,13 +7,17 @@ import { useEffect, useState } from 'react';
 import { AIChatLayout } from './AIChatLayout';
 
 type AIChatHistoryProps = {
-  chatHistoryId: string;
+  chatHistoryId?: string;
 };
 
 export function AIChatHistory(props: AIChatHistoryProps) {
-  const { chatHistoryId } = props;
+  const { chatHistoryId: defaultChatHistoryId } = props;
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!!defaultChatHistoryId);
+  const [chatHistoryId, setChatHistoryId] = useState<string | undefined>(
+    defaultChatHistoryId || undefined,
+  );
+
   const { data } = useQuery(chatHistoryOptions(chatHistoryId), queryClient);
 
   useEffect(() => {
@@ -31,7 +35,13 @@ export function AIChatHistory(props: AIChatHistoryProps) {
           <Loader2Icon className="h-4 w-4 animate-spin" />
         </div>
       )}
-      {!isLoading && <AIChat messages={data?.messages} chatHistory={data} />}
+      {!isLoading && (
+        <AIChat
+          messages={data?.messages}
+          chatHistoryId={chatHistoryId}
+          setChatHistoryId={setChatHistoryId}
+        />
+      )}
     </AIChatLayout>
   );
 }
