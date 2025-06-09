@@ -86,7 +86,6 @@ export function useRoadmapAIChat(options: Options) {
     abortController?: AbortController,
   ) => {
     try {
-      setIsStreamingMessage(true);
       const response = await fetch(
         `${import.meta.env.PUBLIC_API_URL}/v1-chat-roadmap`,
         {
@@ -174,6 +173,7 @@ export function useRoadmapAIChat(options: Options) {
         { role: 'user' as AllowedAIChatRole, json, html },
       ];
 
+      setIsStreamingMessage(true);
       flushSync(() => setAiChatHistory(newMessages));
       scrollToBottom();
       completeAITutorChat(newMessages, abortControllerRef.current);
