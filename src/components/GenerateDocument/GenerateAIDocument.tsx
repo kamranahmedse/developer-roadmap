@@ -150,5 +150,9 @@ export function GenerateAIDocument(props: GenerateAIDocumentProps) {
     };
   }, []);
 
+  if (error) {
+    return <div className="text-red-500">{error}</div>;
+  }
+
   return <AIDocumentContent document={document} />;
 }
