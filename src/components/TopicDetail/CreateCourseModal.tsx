@@ -24,7 +24,7 @@ export function CreateCourseModal(props: CreateCourseModalProps) {
           const formData = new FormData(e.target as HTMLFormElement);
           const subject = formData.get('subject');
 
-          window.location.href = `/ai/search?term=${subject}&difficulty=beginner&src=topic`;
+          window.location.href = `/ai/course?term=${subject}&difficulty=beginner&src=topic`;
           onClose();
         }}
       >

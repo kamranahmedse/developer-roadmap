@@ -121,7 +121,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
     const CREATOR_ID_REGEX = new RegExp('@CREATORID:(\\w+)@');
 
     await readStream(reader, {
-      onStream: (result) => {
+      onStream: async (result) => {
         if (result.includes('@COURSEID') || result.includes('@COURSESLUG')) {
           const courseIdMatch = result.match(COURSE_ID_REGEX);
           const courseSlugMatch = result.match(COURSE_SLUG_REGEX);
@@ -166,7 +166,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
           console.error('Error parsing streamed course content:', e);
         }
       },
-      onStreamEnd: (result) => {
+      onStreamEnd: async (result) => {
         result = result
           .replace(COURSE_ID_REGEX, '')
           .replace(COURSE_SLUG_REGEX, '')

@@ -33,7 +33,7 @@ export function AIChatCourse(props: AIChatCourseProps) {
     return null;
   }
 
-  const courseSearchUrl = `/ai/search?term=${course?.keyword}&difficulty=${course?.difficulty}`;
+  const courseSearchUrl = `/ai/course?term=${course?.keyword}&difficulty=${course?.difficulty}`;
 
   return (
     <div className="relative my-6 flex flex-wrap gap-1 first:mt-0 last:mb-0">
