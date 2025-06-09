@@ -1,4 +1,4 @@
-import { queryOptions } from '@tanstack/react-query';
+import { infiniteQueryOptions, queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
 import { isLoggedIn } from '../lib/jwt';
 import type { RoadmapAIChatHistoryType } from '../components/RoadmapAIChat/RoadmapAIChat';
@@ -78,20 +78,24 @@ type ListChatHistoryResponse = {
 
 export function listChatHistoryOptions(
   query: ListChatHistoryQuery = {
-    perPage: '20',
-    currPage: '1',
     query: '',
   },
 ) {
-  return queryOptions({
+  return infiniteQueryOptions({
     queryKey: ['list-chat-history', query],
-    queryFn: () => {
+    queryFn: ({ pageParam }) => {
       return httpGet<ListChatHistoryResponse>('/v1-list-chat-history', {
         ...(query?.query ? { query: query.query } : {}),
-        ...(query?.perPage ? { perPage: query.perPage } : {}),
-        ...(query?.currPage ? { currPage: query.currPage } : {}),
+        ...(pageParam ? { currPage: pageParam } : {}),
+        perPage: '21',
       });
     },
     enabled: !!isLoggedIn(),
+    getNextPageParam: (lastPage, pages) => {
+      return lastPage.currPage < lastPage.totalPages
+        ? lastPage.currPage + 1
+        : undefined;
+    },
+    initialPageParam: 1,
   });
 }

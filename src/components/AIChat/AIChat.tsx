@@ -268,6 +268,11 @@ export function AIChat(props: AIChatProps) {
         });
 
         queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries({
+          predicate: (query) => {
+            return query.queryKey[0] === 'list-chat-history';
+          },
+        });
       },
       onDetails: (details) => {
         const detailsJson = JSON.parse(details);
@@ -378,7 +383,7 @@ export function AIChat(props: AIChatProps) {
   }, []);
 
   return (
-    <div className="ai-chat relative flex min-h-screen grow flex-col gap-2 bg-gray-100">
+    <div className="ai-chat relative flex grow flex-col gap-2 bg-gray-100">
       <div
         className="absolute inset-0 overflow-y-auto pb-55"
         ref={scrollableContainerRef}
@@ -455,7 +460,7 @@ export function AIChat(props: AIChatProps) {
                 onClick={scrollToBottom}
               />
             )}
-            {aiChatHistory.length > 0 && (
+            {aiChatHistory.length > 0 && !isPaidUser && (
               <QuickActionButton
                 icon={TrashIcon}
                 label="Clear Chat"

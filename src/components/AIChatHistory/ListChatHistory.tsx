@@ -1,15 +1,14 @@
-import { useQuery } from '@tanstack/react-query';
+import { useInfiniteQuery } from '@tanstack/react-query';
 import {
   listChatHistoryOptions,
-  type ChatHistoryDocument,
   type ChatHistoryWithoutMessages,
 } from '../../queries/chat-history';
 import { queryClient } from '../../stores/query-client';
-import { cn } from '../../lib/classname';
 import { ChatHistoryItem } from './ChatHistoryItem';
-import { PlusIcon } from 'lucide-react';
+import { Loader2Icon, PlusIcon, SearchIcon } from 'lucide-react';
 import { DateTime } from 'luxon';
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useDebounceValue } from '../../hooks/use-debounce';
 
 type ListChatHistoryProps = {
   activeChatHistoryId?: string;
@@ -20,12 +19,15 @@ type ListChatHistoryProps = {
 export function ListChatHistory(props: ListChatHistoryProps) {
   const { activeChatHistoryId, onChatHistoryClick, onDelete } = props;
 
-  const { data } = useQuery(listChatHistoryOptions(), queryClient);
+  const [query, setQuery] = useState('');
+  const { data, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
+    useInfiniteQuery(listChatHistoryOptions({ query }), queryClient);
 
   const groupedChatHistory = useMemo(() => {
     const today = DateTime.now().startOf('day');
+    const allHistories = data?.pages?.flatMap((page) => page.data);
 
-    return data?.data?.reduce(
+    return allHistories?.reduce(
       (acc, chatHistory) => {
         const updatedAt = DateTime.fromJSDate(
           new Date(chatHistory.updatedAt),
@@ -60,7 +62,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
         { title: string; histories: ChatHistoryWithoutMessages[] }
       >,
     );
-  }, [data?.data]);
+  }, [data?.pages]);
 
   return (
     <div className="w-[255px] shrink-0 border-r border-gray-200 bg-white p-2">
@@ -73,6 +75,8 @@ export function ListChatHistory(props: ListChatHistoryProps) {
         <PlusIcon className="h-4 w-4" />
         <span className="text-sm">New Chat</span>
       </button>
+
+      <SearchInput onSearch={setQuery} isLoading={isLoading} />
 
       <div className="mt-4 space-y-4">
         {Object.entries(groupedChatHistory ?? {}).map(([key, value]) => {
@@ -103,6 +107,71 @@ export function ListChatHistory(props: ListChatHistoryProps) {
           );
         })}
       </div>
+
+      {hasNextPage && (
+        <div className="mt-4">
+          <button
+            className="flex w-full items-center justify-center gap-2 text-sm text-gray-500 hover:text-black"
+            onClick={() => {
+              fetchNextPage();
+            }}
+            disabled={isFetchingNextPage}
+          >
+            {isFetchingNextPage && (
+              <>
+                <Loader2Icon className="h-4 w-4 animate-spin" />
+                Loading more...
+              </>
+            )}
+            {!isFetchingNextPage && 'Load More'}
+          </button>
+        </div>
+      )}
     </div>
+  );
+}
+
+type SearchInputProps = {
+  onSearch: (search: string) => void;
+  isLoading?: boolean;
+};
+
+function SearchInput(props: SearchInputProps) {
+  const { onSearch, isLoading } = props;
+
+  const [search, setSearch] = useState('');
+  const debouncedSearch = useDebounceValue(search, 300);
+
+  useEffect(() => {
+    onSearch(debouncedSearch);
+  }, [debouncedSearch, onSearch]);
+
+  return (
+    <form
+      className="relative mt-2 flex max-w-sm flex-1 grow items-center"
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSearch(search);
+      }}
+    >
+      <input
+        type="text"
+        placeholder="Search folder by name"
+        className="block h-9 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 pl-8 text-sm outline-none placeholder:text-zinc-500 focus:border-zinc-500"
+        required
+        minLength={3}
+        maxLength={255}
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+
+      <div className="absolute top-1/2 left-2.5 -translate-y-1/2">
+        {isLoading ? (
+          <Loader2Icon className="size-4 animate-spin text-gray-500" />
+        ) : (
+          <SearchIcon className="size-4 text-gray-500" />
+        )}
+      </div>
+    </form>
   );
 }
