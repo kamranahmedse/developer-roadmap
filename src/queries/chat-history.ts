@@ -25,7 +25,7 @@ export interface ChatHistoryDocument {
 
 export function chatHistoryOptions(chatHistoryId?: string) {
   return queryOptions({
-    queryKey: ['chat-history', chatHistoryId],
+    queryKey: ['chat-history-details', chatHistoryId],
     queryFn: async () => {
       const data = await httpGet<ChatHistoryDocument>(
         `/v1-chat-history/${chatHistoryId}`,
@@ -82,7 +82,7 @@ export function listChatHistoryOptions(
   },
 ) {
   return queryOptions({
-    queryKey: ['chat-history', query],
+    queryKey: ['list-chat-history', query],
     queryFn: () => {
       return httpGet<ListChatHistoryResponse>('/v1-list-chat-history', {
         ...(query?.query ? { query: query.query } : {}),

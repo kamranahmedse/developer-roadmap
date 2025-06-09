@@ -7,14 +7,7 @@ import {
   SendIcon,
   TrashIcon,
 } from 'lucide-react';
-import {
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import AutogrowTextarea from 'react-textarea-autosize';
 import { QuickHelpPrompts } from './QuickHelpPrompts';
@@ -43,6 +36,7 @@ import { AIChatCourse } from './AIChatCouse';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { readChatStream } from '../../lib/chat';
+import { chatHistoryOptions } from '../../queries/chat-history';
 
 export const aiChatRenderer: Record<string, MessagePartRenderer> = {
   'roadmap-recommendations': (options) => {
@@ -103,6 +97,25 @@ export function AIChat(props: AIChatProps) {
     userResumeOptions(),
     queryClient,
   );
+  const { mutate: deleteChatMessage, isPending: isDeletingChatMessage } =
+    useMutation(
+      {
+        mutationFn: (messages: RoadmapAIChatHistoryType[]) => {
+          return httpPost(`/v1-delete-chat-message/${defaultChatHistoryId}`, {
+            messages,
+          });
+        },
+        onSuccess: () => {
+          queryClient.invalidateQueries(
+            chatHistoryOptions(defaultChatHistoryId),
+          );
+        },
+        onError: (error) => {
+          toast.error(error?.message || 'Failed to delete message');
+        },
+      },
+      queryClient,
+    );
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -150,17 +163,38 @@ export function AIChat(props: AIChatProps) {
     completeAIChat(newMessages);
   };
 
-  const scrollToBottom = useCallback(() => {
+  const canScrollToBottom = useCallback(() => {
     const scrollableContainer = scrollableContainerRef?.current;
     if (!scrollableContainer) {
-      return;
+      return false;
     }
 
-    scrollableContainer.scrollTo({
-      top: scrollableContainer.scrollHeight,
-      behavior: 'smooth',
-    });
-  }, [scrollableContainerRef]);
+    const paddingBottom = parseInt(
+      getComputedStyle(scrollableContainer).paddingBottom,
+    );
+
+    const distanceFromBottom =
+      scrollableContainer.scrollHeight -
+      (scrollableContainer.scrollTop + scrollableContainer.clientHeight) -
+      paddingBottom;
+
+    return distanceFromBottom > -(paddingBottom - 80);
+  }, []);
+
+  const scrollToBottom = useCallback(
+    (behavior: 'instant' | 'smooth' = 'smooth') => {
+      const scrollableContainer = scrollableContainerRef?.current;
+      if (!scrollableContainer) {
+        return;
+      }
+
+      scrollableContainer.scrollTo({
+        top: scrollableContainer.scrollHeight,
+        behavior: behavior === 'instant' ? 'instant' : 'smooth',
+      });
+    },
+    [scrollableContainerRef],
+  );
 
   const completeAIChat = async (
     messages: RoadmapAIChatHistoryType[],
@@ -211,8 +245,7 @@ export function AIChat(props: AIChatProps) {
         flushSync(() => {
           setStreamedMessage(jsx);
         });
-
-        scrollToBottom();
+        setShowScrollToBottomButton(canScrollToBottom());
       },
       onMessageEnd: async (content) => {
         const jsx = await renderMessage(content, aiChatRenderer, {
@@ -235,7 +268,6 @@ export function AIChat(props: AIChatProps) {
         });
 
         queryClient.invalidateQueries(getAiCourseLimitOptions());
-        scrollToBottom();
       },
       onDetails: (details) => {
         const detailsJson = JSON.parse(details);
@@ -245,7 +277,6 @@ export function AIChat(props: AIChatProps) {
         }
 
         setDefaultChatHistoryId?.(chatHistoryId);
-        window.history.replaceState({}, '', `/ai/chat/${chatHistoryId}`);
       },
     });
 
@@ -286,17 +317,7 @@ export function AIChat(props: AIChatProps) {
       }
 
       timeoutId = setTimeout(() => {
-        const paddingBottom = parseInt(
-          getComputedStyle(scrollableContainer).paddingBottom,
-        );
-
-        const distanceFromBottom =
-          scrollableContainer.scrollHeight -
-          // scroll from the top + the container height
-          (scrollableContainer.scrollTop + scrollableContainer.clientHeight) -
-          paddingBottom;
-
-        setShowScrollToBottomButton(distanceFromBottom > -(paddingBottom - 80));
+        setShowScrollToBottomButton(canScrollToBottom());
       }, 100);
     };
 
@@ -339,6 +360,7 @@ export function AIChat(props: AIChatProps) {
     (index: number) => {
       const filteredChatHistory = aiChatHistory.filter((_, i) => i !== index);
       setAiChatHistory(filteredChatHistory);
+      deleteChatMessage(filteredChatHistory);
     },
     [aiChatHistory],
   );
@@ -351,29 +373,35 @@ export function AIChat(props: AIChatProps) {
     isUserPersonaLoading ||
     isUserResumeLoading;
 
+  useEffect(() => {
+    scrollToBottom('instant');
+  }, []);
+
   return (
-    <div
-      className="ai-chat relative flex min-h-screen w-full flex-col gap-2 overflow-y-auto bg-gray-100 pb-55"
-      ref={scrollableContainerRef}
-    >
-      <div className="relative mx-auto w-full max-w-3xl grow px-4">
-        {shouldShowQuickHelpPrompts && (
-          <QuickHelpPrompts
-            onQuestionClick={(question) => {
-              textareaMessageRef.current?.focus();
-              setMessage(question);
-            }}
-          />
-        )}
-        {!shouldShowQuickHelpPrompts && (
-          <ChatHistory
-            chatHistory={aiChatHistory}
-            isStreamingMessage={isStreamingMessage}
-            streamedMessage={streamedMessage}
-            onDelete={handleDelete}
-            onRegenerate={handleRegenerate}
-          />
-        )}
+    <div className="ai-chat relative flex min-h-screen grow flex-col gap-2 bg-gray-100">
+      <div
+        className="absolute inset-0 overflow-y-auto pb-55"
+        ref={scrollableContainerRef}
+      >
+        <div className="relative mx-auto w-full max-w-3xl grow px-4">
+          {shouldShowQuickHelpPrompts && (
+            <QuickHelpPrompts
+              onQuestionClick={(question) => {
+                textareaMessageRef.current?.focus();
+                setMessage(question);
+              }}
+            />
+          )}
+          {!shouldShowQuickHelpPrompts && (
+            <ChatHistory
+              chatHistory={aiChatHistory}
+              isStreamingMessage={isStreamingMessage}
+              streamedMessage={streamedMessage}
+              onDelete={handleDelete}
+              onRegenerate={handleRegenerate}
+            />
+          )}
+        </div>
       </div>
 
       {isPersonalizedResponseFormOpen && (
@@ -397,7 +425,7 @@ export function AIChat(props: AIChatProps) {
       )}
 
       <div
-        className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4 lg:left-[var(--ai-sidebar-width)]"
+        className="pointer-events-none absolute right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4"
         ref={chatContainerRef}
       >
         <div className="mb-2 flex items-center justify-between gap-2">
@@ -433,6 +461,7 @@ export function AIChat(props: AIChatProps) {
                 label="Clear Chat"
                 onClick={() => {
                   setAiChatHistory([]);
+                  deleteChatMessage([]);
                 }}
               />
             )}
