@@ -1,18 +1,24 @@
-import { Wand2, SendIcon, PauseCircleIcon } from 'lucide-react';
-import { useEffect, useRef, useState, useMemo, Fragment } from 'react';
-import { roadmapJSONOptions } from '../../queries/roadmap';
-import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
-import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
-import { lockBodyScroll } from '../../lib/dom';
+import type { JSONContent } from '@tiptap/core';
+import {
+  MessageCirclePlus,
+  PauseCircleIcon,
+  SendIcon,
+  Wand2,
+} from 'lucide-react';
+import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { useKeydown } from '../../hooks/use-keydown';
 import {
   useRoadmapAIChat,
   type RoadmapAIChatHistoryType,
 } from '../../hooks/use-roadmap-ai-chat';
-import { flushSync } from 'react-dom';
-import type { JSONContent } from '@tiptap/core';
+import { cn } from '../../lib/classname';
+import { lockBodyScroll } from '../../lib/dom';
 import { slugify } from '../../lib/slugger';
+import { roadmapJSONOptions } from '../../queries/roadmap';
+import { queryClient } from '../../stores/query-client';
+import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
 
 type RoadmapChatProps = {
   roadmapId: string;
@@ -104,6 +110,8 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     handleChatSubmit(json, isRoadmapDetailLoading);
   };
 
+  const hasMessages = aiChatHistory.length > 0;
+
   return (
     <>
       {isOpen && (
@@ -126,7 +134,11 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
               <div className="flex flex-col gap-2 text-sm">
                 <RoadmapAIChatCard
                   role="assistant"
-                  jsx={<span>Hey, how can I help you?</span>}
+                  jsx={
+                    <span>
+                      Hey, I am your AI tutor. How can I help you today? 👋
+                    </span>
+                  }
                   isIntro
                 />
 
@@ -191,20 +203,33 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
         {!isOpen && (
           <button
-            className="relative mx-auto flex cursor-text items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800"
+            className={cn(
+              'relative mx-auto flex cursor-text items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800',
+              hasMessages && 'cursor-pointer bg-black',
+            )}
             onClick={() => {
               setIsOpen(true);
               setTimeout(() => scrollToBottom(), 0);
             }}
           >
-            <Wand2 className="h-4 w-4 text-yellow-400" />
-            <span className="mr-1 text-sm font-semibold text-yellow-400">
-              AI Tutor
-            </span>
-            <span>
-              Have a question? Type here
-              <span className="relative top-[3px] left-[2px] inline-block h-4 w-1 animate-pulse bg-gray-300"></span>
-            </span>
+            {!hasMessages ? (
+              <>
+                <Wand2 className="h-4 w-4 text-yellow-400" />
+                <span className="mr-1 text-sm font-semibold text-yellow-400">
+                  AI Tutor
+                </span>
+                <span className={'text-zinc-400'}>
+                  Have a question? Type here
+                </span>
+              </>
+            ) : (
+              <>
+                <MessageCirclePlus className="size-5 text-yellow-400" />
+                <span className="mr-1 text-sm font-medium text-white">
+                  Continue chatting..
+                </span>
+              </>
+            )}
           </button>
         )}
       </div>
