@@ -66,8 +66,10 @@ type ListChatHistoryQuery = {
   query?: string;
 };
 
+export type ChatHistoryWithoutMessages = Omit<ChatHistoryDocument, 'messages'>;
+
 type ListChatHistoryResponse = {
-  data: Omit<ChatHistoryDocument, 'messages'>[];
+  data: ChatHistoryWithoutMessages[];
   totalCount: number;
   totalPages: number;
   currPage: number;

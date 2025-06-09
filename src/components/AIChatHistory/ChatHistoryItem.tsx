@@ -13,9 +13,9 @@ export function ChatHistoryItem(props: ChatHistoryItemProps) {
   const { chatHistory, isActive, onChatHistoryClick, onDelete } = props;
 
   return (
-    <li key={chatHistory._id} className="group/item relative">
+    <li key={chatHistory._id} className="group/item relative text-sm">
       <button
-        className="block w-full truncate rounded-lg p-2 py-1.5 pr-10 text-left hover:bg-gray-100 data-[active=true]:bg-gray-100"
+        className="block w-full truncate rounded-lg p-2 pr-10 text-left hover:bg-gray-100 data-[active=true]:bg-gray-100"
         data-active={isActive}
         onClick={() => onChatHistoryClick(chatHistory._id)}
       >

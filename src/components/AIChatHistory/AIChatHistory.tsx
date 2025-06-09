@@ -14,15 +14,13 @@ type AIChatHistoryProps = {
 export function AIChatHistory(props: AIChatHistoryProps) {
   const { chatHistoryId: defaultChatHistoryId } = props;
 
+  const [keyTrigger, setKeyTrigger] = useState(0);
   const [isLoading, setIsLoading] = useState(!!defaultChatHistoryId);
   const [chatHistoryId, setChatHistoryId] = useState<string | undefined>(
     defaultChatHistoryId || undefined,
   );
 
-  const { data, isLoading: isChatHistoryLoading } = useQuery(
-    chatHistoryOptions(chatHistoryId),
-    queryClient,
-  );
+  const { data } = useQuery(chatHistoryOptions(chatHistoryId), queryClient);
 
   useEffect(() => {
     if (!data) {
@@ -32,14 +30,21 @@ export function AIChatHistory(props: AIChatHistoryProps) {
     setIsLoading(false);
   }, [data]);
 
-  const isDataLoading = isLoading || isChatHistoryLoading;
-
   return (
     <AIChatLayout>
       <div className="flex grow">
         <ListChatHistory
           activeChatHistoryId={chatHistoryId}
           onChatHistoryClick={(chatHistoryId) => {
+            setKeyTrigger((keyTrigger) => keyTrigger + 1);
+
+            if (chatHistoryId === null) {
+              setChatHistoryId(undefined);
+              window.history.replaceState(null, '', '/ai/chat');
+              return;
+            }
+
+            setIsLoading(true);
             setChatHistoryId(chatHistoryId);
             window.history.replaceState(null, '', `/ai/chat/${chatHistoryId}`);
           }}
@@ -55,14 +60,14 @@ export function AIChatHistory(props: AIChatHistoryProps) {
         />
 
         <div className="flex grow">
-          {isDataLoading && (
+          {isLoading && (
             <div className="flex flex-1 items-center justify-center">
               <Loader2Icon className="h-4 w-4 animate-spin" />
             </div>
           )}
-          {!isDataLoading && (
+          {!isLoading && (
             <AIChat
-              key={chatHistoryId}
+              key={keyTrigger}
               messages={data?.messages}
               chatHistoryId={chatHistoryId}
               setChatHistoryId={(id) => {
