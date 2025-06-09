@@ -6,7 +6,7 @@ import { cn } from '../../lib/classname';
 
 type AITutorLayoutProps = {
   children: React.ReactNode;
-  activeTab: AITutorTab;
+  activeTab?: AITutorTab;
   wrapperClassName?: string;
   containerClassName?: string;
 };

@@ -83,7 +83,11 @@ export function AICourse(props: AICourseProps) {
       });
     }
 
-    window.location.href = `/ai/course?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}&nature=${nature}`;
+    if (nature === 'course') {
+      window.location.href = `/ai/course?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}&nature=${nature}`;
+    } else {
+      window.location.href = `/ai/document?term=${encodeURIComponent(keyword)}&difficulty=${difficulty}&id=${sessionId}&nature=${nature}`;
+    }
   }
 
   return (

@@ -14,7 +14,7 @@ import { UserDropdown } from './UserDropdown';
 
 type AITutorSidebarProps = {
   isFloating: boolean;
-  activeTab: AITutorTab;
+  activeTab?: AITutorTab;
   onClose: () => void;
 };
 
