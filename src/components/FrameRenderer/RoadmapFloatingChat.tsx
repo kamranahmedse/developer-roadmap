@@ -53,7 +53,7 @@ function ChatHeaderButton(props: ChatHeaderButtonProps) {
     return (
       <span className={classNames}>
         {icon}
-        {children && <span>{children}</span>}
+        {children && <span className="hidden sm:block">{children}</span>}
       </span>
     );
   }
@@ -67,7 +67,7 @@ function ChatHeaderButton(props: ChatHeaderButtonProps) {
         className={classNames}
       >
         {icon}
-        {children && <span>{children}</span>}
+        {children && <span className="hidden sm:block">{children}</span>}
       </a>
     );
   }
@@ -75,7 +75,7 @@ function ChatHeaderButton(props: ChatHeaderButtonProps) {
   return (
     <button onClick={onClick} className={classNames}>
       {icon}
-      {children && <span>{children}</span>}
+      {children && <span className="hidden sm:block">{children}</span>}
     </button>
   );
 }
@@ -123,7 +123,7 @@ function UsageButton(props: UsageButtonProps) {
       onClick={onUpgradeClick}
       className="flex items-center gap-2 rounded-md px-3 py-1.5 text-xs font-medium transition-all hover:bg-yellow-200"
     >
-      <div className="flex items-center gap-1.5">
+      <div className="hidden items-center gap-1.5 sm:flex">
         <div className="h-1.5 w-6 overflow-hidden rounded-full bg-gray-200">
           <div
             className={cn(

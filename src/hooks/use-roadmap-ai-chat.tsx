@@ -114,7 +114,9 @@ export function useRoadmapAIChat(options: Options) {
           roadmapId={roadmapId}
           onTopicClick={(topicId, text) => {
             const title = text.split(' > ').pop();
-            if (title) onSelectTopic(topicId, title);
+            if (title) {
+              onSelectTopic(topicId, title);
+            }
           }}
           {...opts}
         />
