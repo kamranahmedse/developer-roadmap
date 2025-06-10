@@ -101,7 +101,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
   return (
     <div
       className={cn(
-        'w-[255px] shrink-0 border-r border-gray-200 bg-white p-2',
+        'flex w-[255px] shrink-0 flex-col justify-start border-r border-gray-200 bg-white p-2',
         !isOpen && 'hidden',
       )}
     >
@@ -110,31 +110,33 @@ export function ListChatHistory(props: ListChatHistoryProps) {
 
       {!isLoading && !isError && (
         <>
-          <div className="mb-4 flex items-center justify-between">
-            <h1 className="font-medium text-gray-900">Chat History</h1>
+          <div>
+            <div className="mb-4 flex items-center justify-between">
+              <h1 className="font-medium text-gray-900">Chat History</h1>
+              <button
+                className="flex size-8 items-center justify-center rounded-lg p-1 hover:bg-gray-100"
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+              >
+                <PanelLeftCloseIcon className="h-4.5 w-4.5" />
+              </button>
+            </div>
+
             <button
-              className="flex size-8 items-center justify-center rounded-lg p-1 hover:bg-gray-100"
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-black p-2 text-sm text-white"
               onClick={() => {
-                setIsOpen(false);
+                onChatHistoryClick(null);
               }}
             >
-              <PanelLeftCloseIcon className="h-4.5 w-4.5" />
+              <PlusIcon className="h-4 w-4" />
+              <span className="text-sm">New Chat</span>
             </button>
+
+            <SearchInput onSearch={setQuery} isLoading={isLoading} />
           </div>
 
-          <button
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-black p-2 text-sm text-white"
-            onClick={() => {
-              onChatHistoryClick(null);
-            }}
-          >
-            <PlusIcon className="h-4 w-4" />
-            <span className="text-sm">New Chat</span>
-          </button>
-
-          <SearchInput onSearch={setQuery} isLoading={isLoading} />
-
-          <div className="mt-6 space-y-4">
+          <div className="scrollbar-track-transparent scrollbar scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-auto px-2">
             {Object.entries(groupedChatHistory ?? {}).map(([key, value]) => {
               if (value.histories.length === 0) {
                 return null;
@@ -162,27 +164,27 @@ export function ListChatHistory(props: ListChatHistoryProps) {
                 </div>
               );
             })}
-          </div>
 
-          {hasNextPage && (
-            <div className="mt-4">
-              <button
-                className="flex w-full items-center justify-center gap-2 text-sm text-gray-500 hover:text-black"
-                onClick={() => {
-                  fetchNextPage();
-                }}
-                disabled={isFetchingNextPage}
-              >
-                {isFetchingNextPage && (
-                  <>
-                    <Loader2Icon className="h-4 w-4 animate-spin" />
-                    Loading more...
-                  </>
-                )}
-                {!isFetchingNextPage && 'Load More'}
-              </button>
-            </div>
-          )}
+            {hasNextPage && (
+              <div className="mt-4">
+                <button
+                  className="flex w-full items-center justify-center gap-2 text-sm text-gray-500 hover:text-black"
+                  onClick={() => {
+                    fetchNextPage();
+                  }}
+                  disabled={isFetchingNextPage}
+                >
+                  {isFetchingNextPage && (
+                    <>
+                      <Loader2Icon className="h-4 w-4 animate-spin" />
+                      Loading more...
+                    </>
+                  )}
+                  {!isFetchingNextPage && 'Load More'}
+                </button>
+              </div>
+            )}
+          </div>
         </>
       )}
     </div>
