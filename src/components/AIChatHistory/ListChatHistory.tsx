@@ -136,7 +136,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
             <SearchInput onSearch={setQuery} isLoading={isLoading} />
           </div>
 
-          <div className="scrollbar-track-transparent scrollbar-thin scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-auto px-2">
+          <div className="scrollbar-track-transparent scrollbar-thin scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-scroll px-2">
             {Object.entries(groupedChatHistory ?? {}).map(([key, value]) => {
               if (value.histories.length === 0) {
                 return null;
