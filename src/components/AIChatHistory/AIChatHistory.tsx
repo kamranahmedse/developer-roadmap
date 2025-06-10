@@ -18,6 +18,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
 
   const [keyTrigger, setKeyTrigger] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [isChatHistoryLoading, setIsChatHistoryLoading] = useState(true);
   const [chatHistoryId, setChatHistoryId] = useState<string | undefined>(
     defaultChatHistoryId || undefined,
   );
@@ -35,7 +36,8 @@ export function AIChatHistory(props: AIChatHistoryProps) {
 
   useEffect(() => {
     if (!defaultChatHistoryId) {
-      return setIsLoading(false);
+      setIsLoading(false);
+      return;
     }
 
     if (!data) {
@@ -43,6 +45,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
     }
 
     setIsLoading(false);
+    setIsChatHistoryLoading(false);
   }, [data, defaultChatHistoryId]);
 
   const isDataLoading = isLoading || isBillingDetailsLoading;
@@ -85,7 +88,16 @@ export function AIChatHistory(props: AIChatHistoryProps) {
                     return;
                   }
 
-                  setIsLoading(true);
+                  // so that we can show the loading state when the chat history is not fetched yet
+                  // it will help us to avoid the flash of content
+                  const hasAlreadyFetched = queryClient.getQueryData(
+                    chatHistoryOptions(chatHistoryId).queryKey,
+                  );
+
+                  if (!hasAlreadyFetched) {
+                    setIsChatHistoryLoading(true);
+                  }
+
                   setChatHistoryId(chatHistoryId);
                   window.history.replaceState(
                     null,
@@ -106,21 +118,29 @@ export function AIChatHistory(props: AIChatHistoryProps) {
               />
             )}
 
-            <div className="flex grow">
-              <AIChat
-                key={keyTrigger}
-                messages={data?.messages}
-                chatHistoryId={chatHistoryId}
-                setChatHistoryId={(id) => {
-                  setChatHistoryId(id);
-                  window.history.replaceState(null, '', `/ai/chat/${id}`);
-                  queryClient.invalidateQueries({
-                    predicate: (query) => {
-                      return query.queryKey[0] === 'list-chat-history';
-                    },
-                  });
-                }}
-              />
+            <div className="relative flex grow">
+              {isChatHistoryLoading && (
+                <div className="absolute inset-0 z-20 flex items-center justify-center">
+                  <Loader2Icon className="h-8 w-8 animate-spin stroke-[2.5]" />
+                </div>
+              )}
+
+              {!isChatHistoryLoading && (
+                <AIChat
+                  key={keyTrigger}
+                  messages={data?.messages}
+                  chatHistoryId={chatHistoryId}
+                  setChatHistoryId={(id) => {
+                    setChatHistoryId(id);
+                    window.history.replaceState(null, '', `/ai/chat/${id}`);
+                    queryClient.invalidateQueries({
+                      predicate: (query) => {
+                        return query.queryKey[0] === 'list-chat-history';
+                      },
+                    });
+                  }}
+                />
+              )}
             </div>
           </>
         )}

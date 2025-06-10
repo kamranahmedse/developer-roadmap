@@ -8,6 +8,8 @@ import { ChatHistoryItem } from './ChatHistoryItem';
 import {
   AlertCircleIcon,
   Loader2Icon,
+  PanelLeftCloseIcon,
+  PanelLeftIcon,
   PlusIcon,
   SearchIcon,
 } from 'lucide-react';
@@ -16,6 +18,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useDebounceValue } from '../../hooks/use-debounce';
 import { ListChatHistorySkeleton } from './ListChatHistorySkeleton';
 import { ChatHistoryError } from './ChatHistoryError';
+import { cn } from '../../lib/classname';
 
 type ListChatHistoryProps = {
   activeChatHistoryId?: string;
@@ -26,6 +29,7 @@ type ListChatHistoryProps = {
 export function ListChatHistory(props: ListChatHistoryProps) {
   const { activeChatHistoryId, onChatHistoryClick, onDelete } = props;
 
+  const [isOpen, setIsOpen] = useState(true);
   const [query, setQuery] = useState('');
   const {
     data,
@@ -79,13 +83,45 @@ export function ListChatHistory(props: ListChatHistoryProps) {
     );
   }, [data?.pages]);
 
+  if (!isOpen) {
+    return (
+      <div className="absolute top-1 left-1 z-20">
+        <button
+          className="flex size-8 items-center justify-center rounded-lg p-1 hover:bg-gray-200"
+          onClick={() => {
+            setIsOpen(true);
+          }}
+        >
+          <PanelLeftIcon className="h-4.5 w-4.5" />
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <div className="w-[255px] shrink-0 border-r border-gray-200 bg-white p-2">
+    <div
+      className={cn(
+        'w-[255px] shrink-0 border-r border-gray-200 bg-white p-2',
+        !isOpen && 'hidden',
+      )}
+    >
       {isLoading && <ListChatHistorySkeleton />}
       {!isLoading && isError && <ChatHistoryError error={error} />}
 
       {!isLoading && !isError && (
         <>
+          <div className="mb-4 flex items-center justify-between">
+            <h1 className="font-medium text-gray-900">Chat History</h1>
+            <button
+              className="flex size-8 items-center justify-center rounded-lg p-1 hover:bg-gray-100"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <PanelLeftCloseIcon className="h-4.5 w-4.5" />
+            </button>
+          </div>
+
           <button
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-black p-2 text-sm text-white"
             onClick={() => {
