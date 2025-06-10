@@ -222,16 +222,19 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
       <div
         className={cn(
-          'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[49vh] max-w-[968px] -translate-x-1/4 transform flex-row gap-1.5 overflow-hidden px-4 transition-all duration-300 lg:flex',
+          'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-row gap-1.5 overflow-hidden px-4 transition-all duration-300 sm:max-h-[49vh] lg:flex',
           isOpen ? 'w-full' : 'w-auto',
         )}
       >
         {isOpen && (
-          <div className="flex h-full max-h-[49vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
+          <div className="flex h-full max-h-[95vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg sm:max-h-[49vh]">
             {/* Messages area */}
             <div className="flex items-center justify-between px-3 py-2">
               <div className="flex">
-                <ChatHeaderButton icon={<BookOpen className="h-3.5 w-3.5" />}>
+                <ChatHeaderButton
+                  className="hidden sm:flex mr-4"
+                  icon={<BookOpen className="h-3.5 w-3.5" />}
+                >
                   AI Tutor
                 </ChatHeaderButton>
                 <ChatHeaderButton
@@ -239,7 +242,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                     setIsPersonalizeOpen(true);
                   }}
                   icon={<PersonStanding className="h-3.5 w-3.5" />}
-                  className="ml-4 rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+                  className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
                 >
                   Personalize
                 </ChatHeaderButton>
@@ -263,7 +266,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                   href={`/${roadmapId}/ai`}
                   target="_blank"
                   icon={<AppWindow className="h-3.5 w-3.5" />}
-                  className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+                  className="rounded-md hidden sm:flex bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
                 >
                   Open in new tab
                 </ChatHeaderButton>

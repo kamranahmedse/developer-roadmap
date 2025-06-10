@@ -235,7 +235,13 @@ export function useRoadmapAIChat(options: Options) {
     setAiChatHistory(aiChatHistory.slice(0, -1));
   }, [aiChatHistory]);
 
-  const clearChat = useCallback(() => setAiChatHistory([]), []);
+  const clearChat = useCallback(() => {
+    setAiChatHistory([]);
+    setStreamedMessage(null);
+    setIsStreamingMessage(false);
+    scrollToBottom('instant');
+    setShowScrollToBottom(false);
+  }, []);
 
   return {
     aiChatHistory,
