@@ -168,20 +168,16 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     // it means user came back to the AI chat from the topic detail
     const handleCloseTopicDetail = () => {
       lockBodyScroll(isOpen);
-      setTimeout(() => {
-        inputRef.current?.focus();
-      }, 0);
     };
 
     window.addEventListener(CLOSE_TOPIC_DETAIL_EVENT, handleCloseTopicDetail);
     return () => {
-      console.log('remove event listener');
       window.removeEventListener(
         CLOSE_TOPIC_DETAIL_EVENT,
         handleCloseTopicDetail,
       );
     };
-  }, [isOpen]);
+  }, [isOpen, isPersonalizeOpen]);
 
   function textToJSON(text: string): JSONContent {
     return {
