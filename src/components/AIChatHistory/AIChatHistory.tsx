@@ -37,6 +37,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
   useEffect(() => {
     if (!defaultChatHistoryId) {
       setIsLoading(false);
+      setIsChatHistoryLoading(false);
       return;
     }
 
