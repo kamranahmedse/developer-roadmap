@@ -13,7 +13,24 @@ const __dirname = path.dirname(__filename);
 // hack to make it work. TODO: Fix
 const projectRoot = path.resolve(__dirname, '../..').replace(/dist$/, '');
 
-export async function fetchRoadmapJson(roadmapId: string) {
+type RoadmapJson = {
+  _id: string;
+  title: string;
+  description: string;
+  slug: string;
+  nodes: {
+    type: 'topic' | 'subtopic' | 'paragraph';
+    data: { label: string };
+  }[];
+  edges: unknown[];
+  draft: boolean;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export async function fetchRoadmapJson(
+  roadmapId: string,
+): Promise<RoadmapJson> {
   const response = await fetch(
     `https://roadmap.sh/api/v1-official-roadmap/${roadmapId}`,
   );
