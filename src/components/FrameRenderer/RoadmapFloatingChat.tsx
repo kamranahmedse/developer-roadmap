@@ -550,7 +550,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
         {!isOpen && (
           <button
             className={cn(
-              'relative mx-auto flex cursor-pointer items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800',
+              'relative mx-auto flex flex-shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800 w-max',
             )}
             onClick={() => {
               setIsOpen(true);
@@ -566,7 +566,12 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                 <span className="mr-1 text-sm font-semibold text-yellow-400">
                   AI Tutor
                 </span>
-                <span className={'text-white'}>Have a question? Type here</span>
+                <span className={'text-white hidden sm:block'}>
+                  Have a question? Type here
+                </span>
+                <span className={'text-white block sm:hidden'}>
+                  Ask anything
+                </span>
               </>
             ) : (
               <>
