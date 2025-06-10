@@ -82,6 +82,33 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
   const scrollareaRef = useRef<HTMLDivElement>(null);
   const [inputValue, setInputValue] = useState('');
 
+  // Default questions - will be populated from API later
+  const allDefaultQuestions = [
+    'What should I learn next based on my current progress?',
+    'What are the most important topics I should focus on?',
+    'Which topics are prerequisites for advanced concepts?',
+    'Can you recommend other roadmaps related to this field?',
+    'What learning resources are available for specific topics?',
+    'Which topics should I prioritize based on job market demand?',
+    'What are common learning pitfalls I should avoid?',
+    'How can I share my progress with others?',
+    'What projects should I build while following this roadmap?',
+    'Which skills are most valuable for career advancement?',
+    'Give me some project ideas based on my progress',
+    'What are the latest industry trends in this field?',
+    'Can you suggest a study schedule for this roadmap?',
+    'What other roadmaps complement this learning path?',
+    'How should I approach learning complex topics?',
+    "What's the best way to practice what I've learned?",
+    'What are different job roles in this field?',
+  ];
+
+  // Randomly select 4 questions to display
+  const defaultQuestions = useMemo(() => {
+    const shuffled = [...allDefaultQuestions].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, 4);
+  }, []);
+
   const { data: roadmapDetail, isLoading: isRoadmapDetailLoading } = useQuery(
     roadmapJSONOptions(roadmapId),
     queryClient,
@@ -178,7 +205,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
       <div
         className={cn(
-          'animate-fade-slide-up fixed bottom-5 left-1/2 z-[99] max-h-[49vh] max-w-[968px] -translate-x-1/4 transform flex-row gap-1.5 overflow-hidden px-4 transition-all duration-300 lg:flex',
+          'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[49vh] max-w-[968px] -translate-x-1/4 transform flex-row gap-1.5 overflow-hidden px-4 transition-all duration-300 lg:flex',
           isOpen ? 'w-full' : 'w-auto',
         )}
       >
@@ -234,6 +261,35 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                   }
                   isIntro
                 />
+
+                {/* Show default questions only when there's no chat history */}
+                {aiChatHistory.length === 0 && defaultQuestions.length > 0 && (
+                  <div className="mt-0.5 mb-1">
+                    <p className="mb-2 text-xs font-normal text-gray-500">
+                      Some questions you might have about this roadmap:
+                    </p>
+                    <div className="flex flex-col justify-end gap-1">
+                      {defaultQuestions.map((question, index) => (
+                        <button
+                          key={`default-question-${index}`}
+                          className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
+                          onClick={() => {
+                            setInputValue(question);
+                            // Focus the input after setting the value
+                            setTimeout(() => {
+                              const input = document.querySelector(
+                                'input[type="text"]',
+                              ) as HTMLInputElement;
+                              input?.focus();
+                            }, 0);
+                          }}
+                        >
+                          {question}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {aiChatHistory.map(
                   (chat: RoadmapAIChatHistoryType, index: number) => (
