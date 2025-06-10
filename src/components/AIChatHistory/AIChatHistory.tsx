@@ -49,7 +49,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
     setIsChatHistoryLoading(false);
   }, [data, chatHistoryId]);
 
-  const isDataLoading = isLoading || isBillingDetailsLoading;
+  const showGlobalLoader = isLoading || isBillingDetailsLoading;
   const hasError = chatHistoryError || billingDetailsError;
 
   useEffect(() => {
@@ -58,24 +58,19 @@ export function AIChatHistory(props: AIChatHistoryProps) {
     }
 
     setIsLoading(false);
+    setIsChatHistoryLoading(false);
   }, [hasError]);
 
   return (
     <AIChatLayout>
       <div className="relative flex grow">
-        {isDataLoading && !hasError && (
+        {showGlobalLoader && (
           <div className="absolute inset-0 z-20 flex items-center justify-center">
             <Loader2Icon className="h-8 w-8 animate-spin stroke-[2.5]" />
           </div>
         )}
 
-        {!isDataLoading && hasError && (
-          <div className="absolute inset-0 z-20 flex items-center justify-center">
-            <ChatHistoryError error={hasError} className="mt-0" />
-          </div>
-        )}
-
-        {!isDataLoading && !hasError && (
+        {!showGlobalLoader && (
           <>
             {isPaidUser && (
               <ListChatHistory
@@ -120,13 +115,19 @@ export function AIChatHistory(props: AIChatHistoryProps) {
             )}
 
             <div className="relative flex grow">
-              {isChatHistoryLoading && (
+              {isChatHistoryLoading && !hasError && (
                 <div className="absolute inset-0 z-20 flex items-center justify-center">
                   <Loader2Icon className="h-8 w-8 animate-spin stroke-[2.5]" />
                 </div>
               )}
 
-              {!isChatHistoryLoading && (
+              {!isChatHistoryLoading && hasError && (
+                <div className="absolute inset-0 z-20 flex items-center justify-center">
+                  <ChatHistoryError error={hasError} className="mt-0" />
+                </div>
+              )}
+
+              {!isChatHistoryLoading && !hasError && (
                 <AIChat
                   key={keyTrigger}
                   messages={data?.messages}

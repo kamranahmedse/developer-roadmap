@@ -30,17 +30,26 @@ export function ListChatHistory(props: ListChatHistoryProps) {
   const { activeChatHistoryId, onChatHistoryClick, onDelete } = props;
 
   const [isOpen, setIsOpen] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [query, setQuery] = useState('');
+
   const {
     data,
     fetchNextPage,
     hasNextPage,
     isFetchingNextPage,
-    isLoading,
     isError,
     error,
-    refetch,
+    isLoading: isLoadingInfiniteQuery,
   } = useInfiniteQuery(listChatHistoryOptions({ query }), queryClient);
+
+  useEffect(() => {
+    if (!data) {
+      return;
+    }
+
+    setIsLoading(false);
+  }, [data?.pages]);
 
   const groupedChatHistory = useMemo(() => {
     const today = DateTime.now().startOf('day');
@@ -85,7 +94,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
 
   if (!isOpen) {
     return (
-      <div className="absolute top-1 left-1 z-20">
+      <div className="absolute top-2 left-2 z-20">
         <button
           className="flex size-8 items-center justify-center rounded-lg p-1 hover:bg-gray-200"
           onClick={() => {
@@ -133,7 +142,10 @@ export function ListChatHistory(props: ListChatHistoryProps) {
               <span className="text-sm">New Chat</span>
             </button>
 
-            <SearchInput onSearch={setQuery} isLoading={isLoading} />
+            <SearchInput
+              onSearch={setQuery}
+              isLoading={isLoadingInfiniteQuery}
+            />
           </div>
 
           <div className="scrollbar-track-transparent scrollbar-thin scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-scroll px-2">
