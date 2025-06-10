@@ -25,9 +25,8 @@ import { roadmapJSONOptions } from '../../queries/roadmap';
 import { roadmapQuestionsOptions } from '../../queries/roadmap-questions';
 import { queryClient } from '../../stores/query-client';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
-import { PersonalizedResponseForm } from '../AIChat/PersonalizedResponseForm';
-import { UserPersonaForm } from '../UserPersona/UserPersonaForm';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
+import { CLOSE_TOPIC_DETAIL_EVENT } from '../TopicDetail/TopicDetail';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -162,6 +161,25 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     setIsOpen(false);
   });
 
+  useEffect(() => {
+    // it means user came back to the AI chat from the topic detail
+    const handleCloseTopicDetail = () => {
+      lockBodyScroll(isOpen);
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 0);
+    };
+
+    window.addEventListener(CLOSE_TOPIC_DETAIL_EVENT, handleCloseTopicDetail);
+    return () => {
+      console.log('remove event listener');
+      window.removeEventListener(
+        CLOSE_TOPIC_DETAIL_EVENT,
+        handleCloseTopicDetail,
+      );
+    };
+  }, [isOpen]);
+
   function textToJSON(text: string): JSONContent {
     return {
       type: 'doc',
@@ -190,7 +208,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
           onClick={() => {
             setIsOpen(false);
           }}
-          className="fixed inset-0 bg-black opacity-50"
+          className="fixed z-50 inset-0 bg-black opacity-50"
         ></div>
       )}
 

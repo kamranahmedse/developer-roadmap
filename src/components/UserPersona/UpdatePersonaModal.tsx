@@ -8,6 +8,7 @@ import { UserPersonaForm, type UserPersonaFormData } from './UserPersonaForm';
 import { httpPost } from '../../lib/query-http';
 import { useToast } from '../../hooks/use-toast';
 import { Spinner } from '../ReactIcons/Spinner';
+import { X } from 'lucide-react';
 
 type UpdatePersonaModalProps = {
   roadmapId: string;
@@ -59,6 +60,13 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
       wrapperClassName="max-w-[450px]"
       bodyClassName="p-4"
     >
+      <button
+        onClick={onClose}
+        className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+      >
+        <X className="h-5 w-5" />
+      </button>
+
       {isLoadingUserPersona && (
         <div className="absolute inset-0 z-50 flex h-full flex-row items-center justify-center gap-3 bg-white">
           <Spinner isDualRing={false} className="h-4 w-4" />
