@@ -15,6 +15,7 @@ import { DateTime } from 'luxon';
 import { useEffect, useMemo, useState } from 'react';
 import { useDebounceValue } from '../../hooks/use-debounce';
 import { ListChatHistorySkeleton } from './ListChatHistorySkeleton';
+import { ChatHistoryError } from './ChatHistoryError';
 
 type ListChatHistoryProps = {
   activeChatHistoryId?: string;
@@ -81,7 +82,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
   return (
     <div className="w-[255px] shrink-0 border-r border-gray-200 bg-white p-2">
       {isLoading && <ListChatHistorySkeleton />}
-      {!isLoading && isError && <ErrorState error={error} />}
+      {!isLoading && isError && <ChatHistoryError error={error} />}
 
       {!isLoading && !isError && (
         <>
@@ -194,23 +195,5 @@ function SearchInput(props: SearchInputProps) {
         )}
       </div>
     </form>
-  );
-}
-
-type ErrorStateProps = {
-  error: Error | null;
-};
-
-function ErrorState(props: ErrorStateProps) {
-  const { error } = props;
-
-  return (
-    <div className="mt-10 flex flex-col items-center justify-center text-center">
-      <AlertCircleIcon className="h-8 w-8 text-red-500" />
-      <h3 className="mt-4 text-sm font-medium text-gray-900">
-        Something went wrong
-      </h3>
-      <p className="mt-0.5 text-xs text-gray-500">{error?.message}</p>
-    </div>
   );
 }
