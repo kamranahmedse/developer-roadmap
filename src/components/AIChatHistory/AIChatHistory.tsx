@@ -6,6 +6,7 @@ import { Loader2Icon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { AIChatLayout } from './AIChatLayout';
 import { ListChatHistory } from './ListChatHistory';
+import { billingDetailsOptions } from '../../queries/billing';
 
 type AIChatHistoryProps = {
   chatHistoryId?: string;
@@ -15,73 +16,92 @@ export function AIChatHistory(props: AIChatHistoryProps) {
   const { chatHistoryId: defaultChatHistoryId } = props;
 
   const [keyTrigger, setKeyTrigger] = useState(0);
-  const [isLoading, setIsLoading] = useState(!!defaultChatHistoryId);
+  const [isLoading, setIsLoading] = useState(true);
   const [chatHistoryId, setChatHistoryId] = useState<string | undefined>(
     defaultChatHistoryId || undefined,
   );
 
   const { data } = useQuery(chatHistoryOptions(chatHistoryId), queryClient);
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   useEffect(() => {
+    if (!defaultChatHistoryId) {
+      return setIsLoading(false);
+    }
+
     if (!data) {
       return;
     }
 
     setIsLoading(false);
-  }, [data]);
+  }, [data, defaultChatHistoryId]);
+
+  const isDataLoading = isLoading || isBillingDetailsLoading;
 
   return (
     <AIChatLayout>
-      <div className="flex grow">
-        <ListChatHistory
-          activeChatHistoryId={chatHistoryId}
-          onChatHistoryClick={(chatHistoryId) => {
-            setKeyTrigger((keyTrigger) => keyTrigger + 1);
+      <div className="relative flex grow">
+        {isDataLoading && (
+          <div className="absolute inset-0 z-20 flex items-center justify-center">
+            <Loader2Icon className="h-8 w-8 animate-spin stroke-[2.5]" />
+          </div>
+        )}
 
-            if (chatHistoryId === null) {
-              setChatHistoryId(undefined);
-              window.history.replaceState(null, '', '/ai/chat');
-              return;
-            }
+        {!isDataLoading && (
+          <>
+            {isPaidUser && (
+              <ListChatHistory
+                activeChatHistoryId={chatHistoryId}
+                onChatHistoryClick={(chatHistoryId) => {
+                  setKeyTrigger((keyTrigger) => keyTrigger + 1);
 
-            setIsLoading(true);
-            setChatHistoryId(chatHistoryId);
-            window.history.replaceState(null, '', `/ai/chat/${chatHistoryId}`);
-          }}
-          onDelete={(deletedChatHistoryId) => {
-            const isCurrentChatHistory = deletedChatHistoryId === chatHistoryId;
-            if (!isCurrentChatHistory) {
-              return;
-            }
+                  if (chatHistoryId === null) {
+                    setChatHistoryId(undefined);
+                    window.history.replaceState(null, '', '/ai/chat');
+                    return;
+                  }
 
-            setChatHistoryId(undefined);
-            window.history.replaceState(null, '', '/ai/chat');
-          }}
-        />
+                  setIsLoading(true);
+                  setChatHistoryId(chatHistoryId);
+                  window.history.replaceState(
+                    null,
+                    '',
+                    `/ai/chat/${chatHistoryId}`,
+                  );
+                }}
+                onDelete={(deletedChatHistoryId) => {
+                  const isCurrentChatHistory =
+                    deletedChatHistoryId === chatHistoryId;
+                  if (!isCurrentChatHistory) {
+                    return;
+                  }
 
-        <div className="flex grow">
-          {isLoading && (
-            <div className="flex flex-1 items-center justify-center">
-              <Loader2Icon className="h-4 w-4 animate-spin" />
+                  setChatHistoryId(undefined);
+                  window.history.replaceState(null, '', '/ai/chat');
+                }}
+              />
+            )}
+
+            <div className="flex grow">
+              <AIChat
+                key={keyTrigger}
+                messages={data?.messages}
+                chatHistoryId={chatHistoryId}
+                setChatHistoryId={(id) => {
+                  setChatHistoryId(id);
+                  window.history.replaceState(null, '', `/ai/chat/${id}`);
+                  queryClient.invalidateQueries({
+                    predicate: (query) => {
+                      return query.queryKey[0] === 'list-chat-history';
+                    },
+                  });
+                }}
+              />
             </div>
-          )}
-          {!isLoading && (
-            <AIChat
-              key={keyTrigger}
-              messages={data?.messages}
-              chatHistoryId={chatHistoryId}
-              setChatHistoryId={(id) => {
-                setChatHistoryId(id);
-                window.history.replaceState(null, '', `/ai/chat/${id}`);
-                queryClient.invalidateQueries({
-                  predicate: (query) => {
-                    return query.queryKey[0] === 'list-chat-history';
-                  },
-                });
-              }}
-            />
-          )}
-        </div>
+          </>
+        )}
       </div>
     </AIChatLayout>
   );

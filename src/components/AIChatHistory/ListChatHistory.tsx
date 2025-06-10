@@ -78,7 +78,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
 
       <SearchInput onSearch={setQuery} isLoading={isLoading} />
 
-      <div className="mt-4 space-y-4">
+      <div className="mt-6 space-y-4">
         {Object.entries(groupedChatHistory ?? {}).map(([key, value]) => {
           if (value.histories.length === 0) {
             return null;
