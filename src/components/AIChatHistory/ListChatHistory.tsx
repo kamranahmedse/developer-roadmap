@@ -9,6 +9,7 @@ import { Loader2Icon, PlusIcon, SearchIcon } from 'lucide-react';
 import { DateTime } from 'luxon';
 import { useEffect, useMemo, useState } from 'react';
 import { useDebounceValue } from '../../hooks/use-debounce';
+import { ListChatHistorySkeleton } from './ListChatHistorySkeleton';
 
 type ListChatHistoryProps = {
   activeChatHistoryId?: string;
@@ -63,6 +64,10 @@ export function ListChatHistory(props: ListChatHistoryProps) {
       >,
     );
   }, [data?.pages]);
+
+  if (isLoading) {
+    return <ListChatHistorySkeleton />;
+  }
 
   return (
     <div className="w-[255px] shrink-0 border-r border-gray-200 bg-white p-2">
