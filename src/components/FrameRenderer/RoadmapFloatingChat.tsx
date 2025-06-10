@@ -31,6 +31,8 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
 import { CLOSE_TOPIC_DETAIL_EVENT } from '../TopicDetail/TopicDetail';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -181,11 +183,14 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     queryClient,
   );
 
+  const isAuthenticatedUser = isLoggedIn();
+
   const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
     getAiCourseLimitOptions(),
     queryClient,
   );
-  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isLimitExceeded =
+    isAuthenticatedUser && (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const percentageUsed = Math.round(
     ((tokenUsage?.used || 0) / (tokenUsage?.limit || 0)) * 100,
   );
@@ -270,6 +275,12 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
   }
 
   const submitInput = () => {
+    if (!isLoggedIn()) {
+      setIsOpen(false);
+      showLoginPopup();
+      return;
+    }
+
     const trimmed = inputValue.trim();
     if (!trimmed) {
       return;
@@ -376,6 +387,12 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                               key={`default-question-${index}`}
                               className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
                               onClick={() => {
+                                if (!isLoggedIn()) {
+                                  setIsOpen(false);
+                                  showLoginPopup();
+                                  return;
+                                }
+
                                 if (isLimitExceeded) {
                                   setShowUpgradeModal(true);
                                   setIsOpen(false);
@@ -442,6 +459,12 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                     <div className="flex gap-2">
                       <ChatHeaderButton
                         onClick={() => {
+                          if (!isLoggedIn()) {
+                            setIsOpen(false);
+                            showLoginPopup();
+                            return;
+                          }
+
                           setIsPersonalizeOpen(true);
                         }}
                         icon={<PersonStanding className="h-3.5 w-3.5" />}
@@ -449,7 +472,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                       >
                         Personalize
                       </ChatHeaderButton>
-                      {!isPaidUser && (
+                      {!isPaidUser && isAuthenticatedUser && (
                         <UsageButton
                           percentageUsed={percentageUsed}
                           onUpgradeClick={() => {
