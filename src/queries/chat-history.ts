@@ -87,7 +87,7 @@ export function listChatHistoryOptions(
       return httpGet<ListChatHistoryResponse>('/v1-list-chat-history', {
         ...(query?.query ? { query: query.query } : {}),
         ...(pageParam ? { currPage: pageParam } : {}),
-        perPage: '2',
+        perPage: '21',
       });
     },
     enabled: !!isLoggedIn(),

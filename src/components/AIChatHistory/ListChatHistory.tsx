@@ -6,7 +6,6 @@ import {
 import { queryClient } from '../../stores/query-client';
 import { ChatHistoryItem } from './ChatHistoryItem';
 import {
-  AlertCircleIcon,
   Loader2Icon,
   PanelLeftCloseIcon,
   PanelLeftIcon,
@@ -15,11 +14,12 @@ import {
   XIcon,
 } from 'lucide-react';
 import { DateTime } from 'luxon';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { useDebounceValue } from '../../hooks/use-debounce';
 import { ListChatHistorySkeleton } from './ListChatHistorySkeleton';
 import { ChatHistoryError } from './ChatHistoryError';
 import { cn } from '../../lib/classname';
+import { getTailwindScreenDimension } from '../../lib/is-mobile';
 
 type ListChatHistoryProps = {
   activeChatHistoryId?: string;
@@ -32,6 +32,15 @@ export function ListChatHistory(props: ListChatHistoryProps) {
 
   const [isOpen, setIsOpen] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useLayoutEffect(() => {
+    const deviceType = getTailwindScreenDimension();
+    const isMediumSize = ['sm', 'md'].includes(deviceType);
+    setIsOpen(!isMediumSize);
+    setIsMobile(isMediumSize);
+  }, []);
+
   const [query, setQuery] = useState('');
 
   const {
@@ -116,6 +125,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
     <div
       className={cn(
         'flex w-[255px] shrink-0 flex-col justify-start border-r border-gray-200 bg-white p-2',
+        'max-md:absolute max-md:inset-0 max-md:z-20 max-md:w-full',
         !isOpen && 'hidden',
       )}
     >
@@ -140,6 +150,9 @@ export function ListChatHistory(props: ListChatHistoryProps) {
             <button
               className="flex w-full items-center justify-center gap-2 rounded-lg bg-black p-2 text-sm text-white"
               onClick={() => {
+                if (isMobile) {
+                  setIsOpen(false);
+                }
                 onChatHistoryClick(null);
               }}
             >
@@ -176,7 +189,13 @@ export function ListChatHistory(props: ListChatHistoryProps) {
                           key={chatHistory._id}
                           chatHistory={chatHistory}
                           isActive={activeChatHistoryId === chatHistory._id}
-                          onChatHistoryClick={onChatHistoryClick}
+                          onChatHistoryClick={(id) => {
+                            if (isMobile) {
+                              setIsOpen(false);
+                            }
+
+                            onChatHistoryClick(id);
+                          }}
                           onDelete={() => {
                             onDelete?.(chatHistory._id);
                           }}
@@ -231,7 +250,7 @@ function SearchInput(props: SearchInputProps) {
 
   return (
     <form
-      className="relative mt-2 flex max-w-sm flex-1 grow items-center"
+      className="relative mt-2 flex grow items-center"
       onSubmit={(e) => {
         e.preventDefault();
         onSearch(search);
