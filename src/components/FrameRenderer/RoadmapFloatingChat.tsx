@@ -5,6 +5,7 @@ import {
   BookOpen,
   MessageCirclePlus,
   PauseCircleIcon,
+  PersonStanding,
   SendIcon,
   Trash2,
   Wand2,
@@ -24,6 +25,9 @@ import { roadmapJSONOptions } from '../../queries/roadmap';
 import { roadmapQuestionsOptions } from '../../queries/roadmap-questions';
 import { queryClient } from '../../stores/query-client';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
+import { PersonalizedResponseForm } from '../AIChat/PersonalizedResponseForm';
+import { UserPersonaForm } from '../UserPersona/UserPersonaForm';
+import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -83,6 +87,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
   const scrollareaRef = useRef<HTMLDivElement>(null);
   const [inputValue, setInputValue] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+  const [isPersonalizeOpen, setIsPersonalizeOpen] = useState(false);
 
   // Fetch questions from API
   const { data: questionsData } = useQuery(
@@ -189,6 +194,15 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
         ></div>
       )}
 
+      {isPersonalizeOpen && (
+        <UpdatePersonaModal
+          roadmapId={roadmapId}
+          onClose={() => {
+            setIsPersonalizeOpen(false);
+          }}
+        />
+      )}
+
       <div
         className={cn(
           'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[49vh] max-w-[968px] -translate-x-1/4 transform flex-row gap-1.5 overflow-hidden px-4 transition-all duration-300 lg:flex',
@@ -199,9 +213,20 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
           <div className="flex h-full max-h-[49vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
             {/* Messages area */}
             <div className="flex items-center justify-between px-3 py-2">
-              <ChatHeaderButton icon={<BookOpen className="h-3.5 w-3.5" />}>
-                AI Tutor
-              </ChatHeaderButton>
+              <div className="flex">
+                <ChatHeaderButton icon={<BookOpen className="h-3.5 w-3.5" />}>
+                  AI Tutor
+                </ChatHeaderButton>
+                <ChatHeaderButton
+                  onClick={() => {
+                    setIsPersonalizeOpen(true);
+                  }}
+                  icon={<PersonStanding className="h-3.5 w-3.5" />}
+                  className="ml-4 rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+                >
+                  Personalize
+                </ChatHeaderButton>
+              </div>
 
               <div className="flex items-center gap-2">
                 {hasMessages && (

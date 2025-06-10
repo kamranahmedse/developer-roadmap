@@ -7,6 +7,7 @@ import { Modal } from '../Modal';
 import { UserPersonaForm, type UserPersonaFormData } from './UserPersonaForm';
 import { httpPost } from '../../lib/query-http';
 import { useToast } from '../../hooks/use-toast';
+import { Spinner } from '../ReactIcons/Spinner';
 
 type UpdatePersonaModalProps = {
   roadmapId: string;
@@ -21,7 +22,7 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
     roadmapJSONOptions(roadmapId),
     queryClient,
   );
-  const { data: userPersona } = useQuery(
+  const { data: userPersona, isLoading: isLoadingUserPersona } = useQuery(
     userRoadmapPersonaOptions(roadmapId),
     queryClient,
   );
@@ -58,6 +59,13 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
       wrapperClassName="max-w-[450px]"
       bodyClassName="p-4"
     >
+      {isLoadingUserPersona && (
+        <div className="absolute inset-0 z-50 flex h-full flex-row items-center justify-center gap-3 bg-white">
+          <Spinner isDualRing={false} className="h-4 w-4" />
+          <p className="text-base text-gray-500">Loading...</p>
+        </div>
+      )}
+
       <div className="mb-4 text-left">
         <h2 className="text-lg font-semibold">Tell us more about yourself</h2>
         <p className="mt-1 text-sm text-balance text-gray-500">
@@ -67,9 +75,15 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
       </div>
 
       <UserPersonaForm
+        key={userPersona ? 'loaded' : 'loading'}
         className="space-y-4"
         roadmapTitle={roadmapTitle}
-        defaultValues={userPersona ?? undefined}
+        defaultValues={{
+          expertise: userPersona?.expertise ?? '',
+          goal: userPersona?.goal ?? '',
+          commit: userPersona?.commit ?? '',
+          about: userPersona?.about ?? '',
+        }}
         onSubmit={(data) => {
           const trimmedGoal = data?.goal?.trim();
           if (!trimmedGoal) {
