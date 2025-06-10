@@ -346,7 +346,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                   <RoadmapAIChatCard
                     role="assistant"
                     jsx={
-                      <span>
+                      <span className="mt-[2px]">
                         Hey, I am your AI tutor. How can I help you today? 👋
                       </span>
                     }
@@ -513,7 +513,10 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
             )}
             onClick={() => {
               setIsOpen(true);
-              setTimeout(() => scrollToBottom('instant'), 0);
+              setTimeout(() => {
+                scrollToBottom('instant');
+                setShowScrollToBottom(false);
+              }, 0);
             }}
           >
             {!hasMessages ? (
