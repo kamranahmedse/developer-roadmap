@@ -18,7 +18,7 @@ export function ListChatHistorySkeleton() {
         </div>
       </div>
 
-      <div className="scrollbar-track-transparent scrollbar scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-auto px-2">
+      <div className="scrollbar-track-transparent scrollbar-thin scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-auto px-2">
         {['Today', 'Last 7 Days', 'Older'].map((group) => (
           <div key={group}>
             <div className="h-4 w-16 animate-pulse rounded bg-gray-200" />
