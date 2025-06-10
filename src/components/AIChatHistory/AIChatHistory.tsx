@@ -35,7 +35,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
   const isPaidUser = userBillingDetails?.status === 'active';
 
   useEffect(() => {
-    if (!defaultChatHistoryId) {
+    if (!chatHistoryId) {
       setIsLoading(false);
       setIsChatHistoryLoading(false);
       return;
@@ -47,7 +47,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
 
     setIsLoading(false);
     setIsChatHistoryLoading(false);
-  }, [data, defaultChatHistoryId]);
+  }, [data, chatHistoryId]);
 
   const isDataLoading = isLoading || isBillingDetailsLoading;
   const hasError = chatHistoryError || billingDetailsError;
