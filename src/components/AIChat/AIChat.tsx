@@ -37,6 +37,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { readChatStream } from '../../lib/chat';
 import { chatHistoryOptions } from '../../queries/chat-history';
+import { cn } from '../../lib/classname';
 
 export const aiChatRenderer: Record<string, MessagePartRenderer> = {
   'roadmap-recommendations': (options) => {
@@ -382,10 +383,15 @@ export function AIChat(props: AIChatProps) {
     scrollToBottom('instant');
   }, []);
 
+  const shouldShowUpgradeBanner = !isPaidUser && aiChatHistory.length > 0;
+
   return (
     <div className="ai-chat relative flex grow flex-col gap-2 bg-gray-100">
       <div
-        className="absolute inset-0 overflow-y-auto pb-55"
+        className={cn(
+          'scrollbar-none absolute inset-0 overflow-y-auto pb-55',
+          shouldShowUpgradeBanner ? 'pb-60' : 'pb-55',
+        )}
         ref={scrollableContainerRef}
       >
         <div className="relative mx-auto w-full max-w-3xl grow px-4">
@@ -433,6 +439,24 @@ export function AIChat(props: AIChatProps) {
         className="pointer-events-none absolute right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4"
         ref={chatContainerRef}
       >
+        {shouldShowUpgradeBanner && (
+          <div className="mb-2 rounded-lg border border-yellow-200 bg-yellow-50 p-3 text-sm text-yellow-800">
+            <div className="pointer-events-auto flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <LockIcon className="size-4" strokeWidth={2.5} />
+                <p>Upgrade to Pro to keep your conversations.</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowUpgradeModal(true)}
+                className="shrink-0 cursor-pointer rounded-md bg-yellow-200 px-2 py-1 text-xs font-medium text-yellow-800 hover:bg-yellow-200"
+              >
+                Upgrade to Pro
+              </button>
+            </div>
+          </div>
+        )}
+
         <div className="mb-2 flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <QuickActionButton
