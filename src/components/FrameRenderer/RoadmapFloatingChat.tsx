@@ -22,14 +22,15 @@ import {
 import { cn } from '../../lib/classname';
 import { lockBodyScroll } from '../../lib/dom';
 import { slugify } from '../../lib/slugger';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { billingDetailsOptions } from '../../queries/billing';
 import { roadmapJSONOptions } from '../../queries/roadmap';
 import { roadmapQuestionsOptions } from '../../queries/roadmap-questions';
 import { queryClient } from '../../stores/query-client';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
-import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 import { CLOSE_TOPIC_DETAIL_EVENT } from '../TopicDetail/TopicDetail';
-import { billingDetailsOptions } from '../../queries/billing';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -156,6 +157,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
   const [inputValue, setInputValue] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const [isPersonalizeOpen, setIsPersonalizeOpen] = useState(false);
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 
   // Fetch questions from API
   const { data: questionsData } = useQuery(
@@ -292,6 +294,14 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
         ></div>
       )}
 
+      {showUpgradeModal && (
+        <UpgradeAccountModal
+          onClose={() => {
+            setShowUpgradeModal(false);
+          }}
+        />
+      )}
+
       {isPersonalizeOpen && (
         <UpdatePersonaModal
           roadmapId={roadmapId}
@@ -366,6 +376,12 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                               key={`default-question-${index}`}
                               className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
                               onClick={() => {
+                                if (isLimitExceeded) {
+                                  setShowUpgradeModal(true);
+                                  setIsOpen(false);
+                                  return;
+                                }
+
                                 handleChatSubmit(
                                   textToJSON(question),
                                   isRoadmapDetailLoading,
@@ -415,7 +431,8 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
               {isLimitExceeded && (
                 <UpgradeMessage
                   onUpgradeClick={() => {
-                    window.open('/premium', '_blank');
+                    setShowUpgradeModal(true);
+                    setIsOpen(false);
                   }}
                 />
               )}
@@ -436,7 +453,8 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                         <UsageButton
                           percentageUsed={percentageUsed}
                           onUpgradeClick={() => {
-                            window.open('/premium', '_blank');
+                            setShowUpgradeModal(true);
+                            setIsOpen(false);
                           }}
                         />
                       )}
