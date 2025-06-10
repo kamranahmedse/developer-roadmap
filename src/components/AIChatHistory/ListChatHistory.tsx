@@ -12,6 +12,7 @@ import {
   PanelLeftIcon,
   PlusIcon,
   SearchIcon,
+  XIcon,
 } from 'lucide-react';
 import { DateTime } from 'luxon';
 import { useEffect, useMemo, useState } from 'react';
@@ -107,6 +108,10 @@ export function ListChatHistory(props: ListChatHistoryProps) {
     );
   }
 
+  const isEmptyHistory = Object.values(groupedChatHistory ?? {}).every(
+    (group) => group.histories.length === 0,
+  );
+
   return (
     <div
       className={cn(
@@ -149,6 +154,12 @@ export function ListChatHistory(props: ListChatHistoryProps) {
           </div>
 
           <div className="scrollbar-track-transparent scrollbar-thin scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-scroll px-2">
+            {isEmptyHistory && (
+              <div className="flex items-center justify-center">
+                <p className="text-sm text-gray-500">No chat history</p>
+              </div>
+            )}
+
             {Object.entries(groupedChatHistory ?? {}).map(([key, value]) => {
               if (value.histories.length === 0) {
                 return null;
@@ -229,7 +240,7 @@ function SearchInput(props: SearchInputProps) {
       <input
         type="text"
         placeholder="Search folder by name"
-        className="block h-9 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 pl-8 text-sm outline-none placeholder:text-zinc-500 focus:border-zinc-500"
+        className="block h-9 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 pr-7 pl-8 text-sm outline-none placeholder:text-zinc-500 focus:border-zinc-500"
         required
         minLength={3}
         maxLength={255}
@@ -244,6 +255,18 @@ function SearchInput(props: SearchInputProps) {
           <SearchIcon className="size-4 text-gray-500" />
         )}
       </div>
+      {search && (
+        <div className="absolute inset-y-0 right-1 flex items-center">
+          <button
+            onClick={() => {
+              setSearch('');
+            }}
+            className="rounded-lg p-1 hover:bg-gray-100"
+          >
+            <XIcon className="size-4 text-gray-500" />
+          </button>
+        </div>
+      )}
     </form>
   );
 }
