@@ -1,6 +1,6 @@
 export function ListChatHistorySkeleton() {
   return (
-    <div className="w-[255px] shrink-0 border-r border-gray-200 bg-white p-2">
+    <>
       <div className="h-9 w-full animate-pulse rounded-lg bg-gray-200" />
 
       <div className="relative mt-2">
@@ -25,6 +25,6 @@ export function ListChatHistorySkeleton() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
