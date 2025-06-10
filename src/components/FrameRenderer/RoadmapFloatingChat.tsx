@@ -1,13 +1,13 @@
 import { useQuery } from '@tanstack/react-query';
 import type { JSONContent } from '@tiptap/core';
 import {
-  AppWindow,
   BookOpen,
   ChevronDown,
   MessageCirclePlus,
   PauseCircleIcon,
   PersonStanding,
   SendIcon,
+  SquareArrowOutUpRight,
   Trash2,
   Wand2,
   X,
@@ -120,7 +120,7 @@ function UsageButton(props: UsageButtonProps) {
   return (
     <button
       onClick={onUpgradeClick}
-      className="ml-2 flex items-center gap-2 rounded-md px-3 py-1.5 text-xs font-medium transition-all hover:bg-yellow-200"
+      className="flex items-center gap-2 rounded-md px-3 py-1.5 text-xs font-medium transition-all hover:bg-yellow-200"
     >
       <div className="flex items-center gap-1.5">
         <div className="h-1.5 w-6 overflow-hidden rounded-full bg-gray-200">
@@ -303,38 +303,30 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
       <div
         className={cn(
-          'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-col gap-1.5 overflow-hidden px-4 transition-all duration-300 sm:max-h-[55vh] lg:flex',
-          isOpen ? 'w-full' : 'w-auto',
+          'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-col gap-1.5 overflow-hidden px-4 transition-all duration-300 sm:max-h-[50vh] lg:flex',
+          isOpen ? 'h-full w-full' : 'w-auto',
         )}
       >
         {isOpen && (
           <>
-            <div className="flex h-full max-h-[95vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg sm:max-h-[55vh]">
+            <div className="flex h-full w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
               {/* Messages area */}
               <div className="flex items-center justify-between px-3 py-2">
                 <div className="flex">
                   <ChatHeaderButton
                     icon={<BookOpen className="h-3.5 w-3.5" />}
-                    className="mr-2 hidden text-sm sm:flex"
+                    className="text-sm"
                   >
                     AI Tutor
                   </ChatHeaderButton>
-                  {!isPaidUser && (
-                    <UsageButton
-                      percentageUsed={percentageUsed}
-                      onUpgradeClick={() => {
-                        window.open('/premium', '_blank');
-                      }}
-                    />
-                  )}
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex gap-1.5">
                   <ChatHeaderButton
                     href={`/${roadmapId}/ai`}
                     target="_blank"
-                    icon={<AppWindow className="h-3.5 w-3.5" />}
-                    className="hidden rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300 sm:flex"
+                    icon={<SquareArrowOutUpRight className="h-3.5 w-3.5" />}
+                    className="hidden rounded-md py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300 sm:flex"
                   >
                     Open in new tab
                   </ChatHeaderButton>
@@ -429,16 +421,26 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
               )}
               {!isLimitExceeded && (
                 <>
-                  <div className="flex flex-row gap-2 border-t border-gray-200 px-3 pt-2">
-                    <ChatHeaderButton
-                      onClick={() => {
-                        setIsPersonalizeOpen(true);
-                      }}
-                      icon={<PersonStanding className="h-3.5 w-3.5" />}
-                      className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
-                    >
-                      Personalize
-                    </ChatHeaderButton>
+                  <div className="flex flex-row justify-between border-t border-gray-200 px-3 pt-2">
+                    <div className="flex gap-2">
+                      <ChatHeaderButton
+                        onClick={() => {
+                          setIsPersonalizeOpen(true);
+                        }}
+                        icon={<PersonStanding className="h-3.5 w-3.5" />}
+                        className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+                      >
+                        Personalize
+                      </ChatHeaderButton>
+                      {!isPaidUser && (
+                        <UsageButton
+                          percentageUsed={percentageUsed}
+                          onUpgradeClick={() => {
+                            window.open('/premium', '_blank');
+                          }}
+                        />
+                      )}
+                    </div>
                     {hasMessages && (
                       <ChatHeaderButton
                         onClick={() => {
