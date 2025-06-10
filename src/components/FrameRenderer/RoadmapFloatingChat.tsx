@@ -1,10 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
 import type { JSONContent } from '@tiptap/core';
 import {
+  AppWindow,
+  BookOpen,
   MessageCirclePlus,
   PauseCircleIcon,
   SendIcon,
+  Trash2,
   Wand2,
+  X,
 } from 'lucide-react';
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
@@ -19,6 +23,54 @@ import { slugify } from '../../lib/slugger';
 import { roadmapJSONOptions } from '../../queries/roadmap';
 import { queryClient } from '../../stores/query-client';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
+
+type ChatHeaderButtonProps = {
+  onClick?: () => void;
+  href?: string;
+  icon: React.ReactNode;
+  children?: React.ReactNode;
+  className?: string;
+  target?: string;
+};
+
+function ChatHeaderButton(props: ChatHeaderButtonProps) {
+  const { onClick, href, icon, children, className, target } = props;
+
+  const classNames = cn(
+    'flex items-center gap-1.5 text-xs text-gray-600 transition-colors hover:text-gray-900',
+    className,
+  );
+
+  if (!onClick && !href) {
+    return (
+      <span className={classNames}>
+        {icon}
+        {children && <span>{children}</span>}
+      </span>
+    );
+  }
+
+  if (href) {
+    return (
+      <a
+        href={href}
+        target={target}
+        rel="noopener noreferrer"
+        className={classNames}
+      >
+        {icon}
+        {children && <span>{children}</span>}
+      </a>
+    );
+  }
+
+  return (
+    <button onClick={onClick} className={classNames}>
+      {icon}
+      {children && <span>{children}</span>}
+    </button>
+  );
+}
 
 type RoadmapChatProps = {
   roadmapId: string;
@@ -70,6 +122,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     handleChatSubmit,
     handleAbort,
     scrollToBottom,
+    clearChat,
   } = useRoadmapAIChat({
     roadmapId,
     totalTopicCount,
@@ -123,12 +176,52 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
         ></div>
       )}
 
-      <div className="animate-fade-slide-up fixed bottom-5 left-1/2 z-[99] max-h-[49vh] w-full max-w-[968px] -translate-x-1/4 transform flex-row gap-1.5 overflow-hidden px-4 transition-all duration-300 lg:flex">
+      <div
+        className={cn(
+          'animate-fade-slide-up fixed bottom-5 left-1/2 z-[99] max-h-[49vh] max-w-[968px] -translate-x-1/4 transform flex-row gap-1.5 overflow-hidden px-4 transition-all duration-300 lg:flex',
+          isOpen ? 'w-full' : 'w-auto',
+        )}
+      >
         {isOpen && (
           <div className="flex h-full max-h-[49vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
             {/* Messages area */}
+            <div className="flex items-center justify-between px-3 py-2">
+              <ChatHeaderButton icon={<BookOpen className="h-3.5 w-3.5" />}>
+                AI Tutor
+              </ChatHeaderButton>
+
+              <div className="flex items-center gap-2">
+                {hasMessages && (
+                  <ChatHeaderButton
+                    onClick={() => {
+                      setInputValue('');
+                      clearChat();
+                    }}
+                    icon={<Trash2 className="h-3.5 w-3.5" />}
+                    className="mr-2 text-gray-500"
+                  >
+                    Clear
+                  </ChatHeaderButton>
+                )}
+
+                <ChatHeaderButton
+                  href={`/${roadmapId}/ai`}
+                  target="_blank"
+                  icon={<AppWindow className="h-3.5 w-3.5" />}
+                  className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+                >
+                  Open in new tab
+                </ChatHeaderButton>
+
+                <ChatHeaderButton
+                  onClick={() => setIsOpen(false)}
+                  icon={<X className="h-3.5 w-3.5" />}
+                  className="rounded-md bg-red-100 px-1 py-1 text-red-500 hover:bg-red-200"
+                />
+              </div>
+            </div>
             <div
-              className="flex-1 overflow-y-auto px-3 py-2"
+              className="flex flex-1 flex-grow flex-col overflow-y-auto px-3 py-2"
               ref={scrollareaRef}
             >
               <div className="flex flex-col gap-2 text-sm">
@@ -204,8 +297,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
         {!isOpen && (
           <button
             className={cn(
-              'relative mx-auto flex cursor-text items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800',
-              hasMessages && 'cursor-pointer bg-black',
+              'relative mx-auto flex cursor-pointer items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800',
             )}
             onClick={() => {
               setIsOpen(true);
@@ -218,9 +310,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                 <span className="mr-1 text-sm font-semibold text-yellow-400">
                   AI Tutor
                 </span>
-                <span className={'text-zinc-400'}>
-                  Have a question? Type here
-                </span>
+                <span className={'text-white'}>Have a question? Type here</span>
               </>
             ) : (
               <>
