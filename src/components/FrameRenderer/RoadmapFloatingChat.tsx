@@ -157,26 +157,20 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     setIsOpen(false);
   });
 
+  function textToJSON(text: string): JSONContent {
+    return {
+      type: 'doc',
+      content: [{ type: 'paragraph', content: [{ type: 'text', text }] }],
+    };
+  }
+
   const submitInput = () => {
     const trimmed = inputValue.trim();
     if (!trimmed) {
       return;
     }
 
-    const json: JSONContent = {
-      type: 'doc',
-      content: [
-        {
-          type: 'paragraph',
-          content: [
-            {
-              type: 'text',
-              text: trimmed,
-            },
-          ],
-        },
-      ],
-    };
+    const json: JSONContent = textToJSON(trimmed);
 
     setInputValue('');
     handleChatSubmit(json, isRoadmapDetailLoading);
@@ -266,8 +260,10 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                           key={`default-question-${index}`}
                           className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
                           onClick={() => {
-                            setInputValue(question);
-                            inputRef.current?.focus();
+                            handleChatSubmit(
+                              textToJSON(question),
+                              isRoadmapDetailLoading,
+                            );
                           }}
                         >
                           {question}
