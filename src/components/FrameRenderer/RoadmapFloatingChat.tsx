@@ -28,6 +28,8 @@ import { queryClient } from '../../stores/query-client';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 import { CLOSE_TOPIC_DETAIL_EVENT } from '../TopicDetail/TopicDetail';
+import { billingDetailsOptions } from '../../queries/billing';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -77,6 +79,72 @@ function ChatHeaderButton(props: ChatHeaderButtonProps) {
   );
 }
 
+type UpgradeMessageProps = {
+  onUpgradeClick?: () => void;
+};
+
+function UpgradeMessage(props: UpgradeMessageProps) {
+  const { onUpgradeClick } = props;
+
+  return (
+    <div className="border-t border-gray-200 bg-black px-3 py-3">
+      <div className="flex items-center gap-2.5">
+        <Wand2 className="h-4 w-4 flex-shrink-0 text-white" />
+        <div className="flex-1 text-sm">
+          <p className="mb-1 font-medium text-white">
+            You've reached your AI usage limit
+          </p>
+          <p className="text-xs text-gray-300">
+            Upgrade to Pro for relaxed limits and advanced features
+          </p>
+        </div>
+        <button
+          className="flex-shrink-0 rounded-md bg-white px-3 py-1.5 text-xs font-medium text-black transition-colors hover:bg-gray-100"
+          onClick={onUpgradeClick}
+        >
+          Upgrade to Pro
+        </button>
+      </div>
+    </div>
+  );
+}
+
+type UsageButtonProps = {
+  percentageUsed: number;
+  onUpgradeClick?: () => void;
+};
+
+function UsageButton(props: UsageButtonProps) {
+  const { percentageUsed, onUpgradeClick } = props;
+
+  return (
+    <button
+      onClick={onUpgradeClick}
+      className="ml-2 flex items-center gap-2 rounded-md px-3 py-1.5 text-xs font-medium transition-all hover:bg-yellow-200"
+    >
+      <div className="flex items-center gap-1.5">
+        <div className="h-1.5 w-6 overflow-hidden rounded-full bg-gray-200">
+          <div
+            className={cn(
+              'h-full transition-all duration-300',
+              percentageUsed >= 90
+                ? 'bg-red-500'
+                : percentageUsed >= 70
+                  ? 'bg-yellow-500'
+                  : 'bg-green-500',
+            )}
+            style={{ width: `${Math.min(percentageUsed, 100)}%` }}
+          />
+        </div>
+        <span className="text-yellow-700">{percentageUsed}% used</span>
+      </div>
+      <span className="font-semibold text-yellow-800 underline underline-offset-2">
+        Upgrade
+      </span>
+    </button>
+  );
+}
+
 type RoadmapChatProps = {
   roadmapId: string;
 };
@@ -110,6 +178,19 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     roadmapJSONOptions(roadmapId),
     queryClient,
   );
+
+  const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
+    getAiCourseLimitOptions(),
+    queryClient,
+  );
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const percentageUsed = Math.round(
+    ((tokenUsage?.used || 0) / (tokenUsage?.limit || 0)) * 100,
+  );
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   const totalTopicCount = useMemo(() => {
     const allowedTypes = ['topic', 'subtopic', 'todo'];
@@ -222,174 +303,205 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
       <div
         className={cn(
-          'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-row gap-1.5 overflow-hidden px-4 transition-all duration-300 sm:max-h-[49vh] lg:flex',
+          'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-col gap-1.5 overflow-hidden px-4 transition-all duration-300 sm:max-h-[55vh] lg:flex',
           isOpen ? 'w-full' : 'w-auto',
         )}
       >
         {isOpen && (
-          <div className="flex h-full max-h-[95vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg sm:max-h-[49vh]">
-            {/* Messages area */}
-            <div className="flex items-center justify-between px-3 py-2">
-              <div className="flex">
-                <ChatHeaderButton
-                  className="hidden sm:flex mr-4"
-                  icon={<BookOpen className="h-3.5 w-3.5" />}
-                >
-                  AI Tutor
-                </ChatHeaderButton>
-                <ChatHeaderButton
-                  onClick={() => {
-                    setIsPersonalizeOpen(true);
-                  }}
-                  icon={<PersonStanding className="h-3.5 w-3.5" />}
-                  className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
-                >
-                  Personalize
-                </ChatHeaderButton>
-              </div>
-
-              <div className="flex items-center gap-2">
-                {hasMessages && (
+          <>
+            <div className="flex h-full max-h-[95vh] w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg sm:max-h-[55vh]">
+              {/* Messages area */}
+              <div className="flex items-center justify-between px-3 py-2">
+                <div className="flex">
                   <ChatHeaderButton
-                    onClick={() => {
-                      setInputValue('');
-                      clearChat();
-                    }}
-                    icon={<Trash2 className="h-3.5 w-3.5" />}
-                    className="mr-2 text-gray-500"
+                    icon={<BookOpen className="h-3.5 w-3.5" />}
+                    className="mr-2 hidden text-sm sm:flex"
                   >
-                    Clear
+                    AI Tutor
                   </ChatHeaderButton>
-                )}
+                  {!isPaidUser && (
+                    <UsageButton
+                      percentageUsed={percentageUsed}
+                      onUpgradeClick={() => {
+                        window.open('/premium', '_blank');
+                      }}
+                    />
+                  )}
+                </div>
 
-                <ChatHeaderButton
-                  href={`/${roadmapId}/ai`}
-                  target="_blank"
-                  icon={<AppWindow className="h-3.5 w-3.5" />}
-                  className="rounded-md hidden sm:flex bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
-                >
-                  Open in new tab
-                </ChatHeaderButton>
+                <div className="flex items-center gap-2">
+                  <ChatHeaderButton
+                    href={`/${roadmapId}/ai`}
+                    target="_blank"
+                    icon={<AppWindow className="h-3.5 w-3.5" />}
+                    className="hidden rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300 sm:flex"
+                  >
+                    Open in new tab
+                  </ChatHeaderButton>
 
-                <ChatHeaderButton
-                  onClick={() => setIsOpen(false)}
-                  icon={<X className="h-3.5 w-3.5" />}
-                  className="rounded-md bg-red-100 px-1 py-1 text-red-500 hover:bg-red-200"
-                />
+                  <ChatHeaderButton
+                    onClick={() => setIsOpen(false)}
+                    icon={<X className="h-3.5 w-3.5" />}
+                    className="rounded-md bg-red-100 px-1 py-1 text-red-500 hover:bg-red-200"
+                  />
+                </div>
               </div>
-            </div>
-            <div
-              className="flex flex-1 flex-grow flex-col overflow-y-auto px-3 py-2"
-              ref={scrollareaRef}
-            >
-              <div className="flex flex-col gap-2 text-sm">
-                <RoadmapAIChatCard
-                  role="assistant"
-                  jsx={
-                    <span>
-                      Hey, I am your AI tutor. How can I help you today? 👋
-                    </span>
-                  }
-                  isIntro
-                />
+              <div
+                className="flex flex-1 flex-grow flex-col overflow-y-auto px-3 py-2"
+                ref={scrollareaRef}
+              >
+                <div className="flex flex-col gap-2 text-sm">
+                  <RoadmapAIChatCard
+                    role="assistant"
+                    jsx={
+                      <span>
+                        Hey, I am your AI tutor. How can I help you today? 👋
+                      </span>
+                    }
+                    isIntro
+                  />
 
-                {/* Show default questions only when there's no chat history */}
-                {aiChatHistory.length === 0 && defaultQuestions.length > 0 && (
-                  <div className="mt-0.5 mb-1">
-                    <p className="mb-2 text-xs font-normal text-gray-500">
-                      Some questions you might have about this roadmap:
-                    </p>
-                    <div className="flex flex-col justify-end gap-1">
-                      {defaultQuestions.map((question, index) => (
-                        <button
-                          key={`default-question-${index}`}
-                          className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
-                          onClick={() => {
-                            handleChatSubmit(
-                              textToJSON(question),
-                              isRoadmapDetailLoading,
-                            );
-                          }}
-                        >
-                          {question}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
+                  {/* Show default questions only when there's no chat history */}
+                  {aiChatHistory.length === 0 &&
+                    defaultQuestions.length > 0 && (
+                      <div className="mt-0.5 mb-1">
+                        <p className="mb-2 text-xs font-normal text-gray-500">
+                          Some questions you might have about this roadmap:
+                        </p>
+                        <div className="flex flex-col justify-end gap-1">
+                          {defaultQuestions.map((question, index) => (
+                            <button
+                              key={`default-question-${index}`}
+                              className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
+                              onClick={() => {
+                                handleChatSubmit(
+                                  textToJSON(question),
+                                  isRoadmapDetailLoading,
+                                );
+                              }}
+                            >
+                              {question}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    )}
 
-                {aiChatHistory.map(
-                  (chat: RoadmapAIChatHistoryType, index: number) => (
-                    <Fragment key={`chat-${index}`}>
-                      <RoadmapAIChatCard {...chat} />
-                    </Fragment>
-                  ),
-                )}
+                  {aiChatHistory.map(
+                    (chat: RoadmapAIChatHistoryType, index: number) => (
+                      <Fragment key={`chat-${index}`}>
+                        <RoadmapAIChatCard {...chat} />
+                      </Fragment>
+                    ),
+                  )}
 
-                {isStreamingMessage && !streamedMessage && (
-                  <RoadmapAIChatCard role="assistant" html="Thinking..." />
-                )}
+                  {isStreamingMessage && !streamedMessage && (
+                    <RoadmapAIChatCard role="assistant" html="Thinking..." />
+                  )}
 
-                {streamedMessage && (
-                  <RoadmapAIChatCard role="assistant" jsx={streamedMessage} />
+                  {streamedMessage && (
+                    <RoadmapAIChatCard role="assistant" jsx={streamedMessage} />
+                  )}
+                </div>
+
+                {/* Scroll to bottom button */}
+                {showScrollToBottom && (
+                  <button
+                    onClick={() => {
+                      scrollToBottom('instant');
+                      setShowScrollToBottom(false);
+                    }}
+                    className="sticky bottom-0 mx-auto mt-2 flex items-center gap-1.5 rounded-full bg-gray-900 px-3 py-1.5 text-xs text-white shadow-lg transition-all hover:bg-gray-800"
+                  >
+                    <ChevronDown className="h-3 w-3" />
+                    Scroll to bottom
+                  </button>
                 )}
               </div>
 
-              {/* Scroll to bottom button */}
-              {showScrollToBottom && (
-                <button
-                  onClick={() => {
-                    scrollToBottom('instant');
-                    setShowScrollToBottom(false);
+              {/* Input area */}
+              {isLimitExceeded && (
+                <UpgradeMessage
+                  onUpgradeClick={() => {
+                    window.open('/premium', '_blank');
                   }}
-                  className="sticky bottom-0 mx-auto mt-2 flex items-center gap-1.5 rounded-full bg-gray-900 px-3 py-1.5 text-xs text-white shadow-lg transition-all hover:bg-gray-800"
-                >
-                  <ChevronDown className="h-3 w-3" />
-                  Scroll to bottom
-                </button>
+                />
+              )}
+              {!isLimitExceeded && (
+                <>
+                  <div className="flex flex-row gap-2 border-t border-gray-200 px-3 pt-2">
+                    <ChatHeaderButton
+                      onClick={() => {
+                        setIsPersonalizeOpen(true);
+                      }}
+                      icon={<PersonStanding className="h-3.5 w-3.5" />}
+                      className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+                    >
+                      Personalize
+                    </ChatHeaderButton>
+                    {hasMessages && (
+                      <ChatHeaderButton
+                        onClick={() => {
+                          setInputValue('');
+                          clearChat();
+                        }}
+                        icon={<Trash2 className="h-3.5 w-3.5" />}
+                        className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+                      >
+                        Clear
+                      </ChatHeaderButton>
+                    )}
+                  </div>
+                  <div className="relative flex items-center text-sm">
+                    <input
+                      ref={inputRef}
+                      type="text"
+                      value={inputValue}
+                      onChange={(e) => setInputValue(e.target.value)}
+                      autoFocus
+                      disabled={isLimitExceeded}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                          e.preventDefault();
+                          if (isStreamingMessage) {
+                            return;
+                          }
+                          submitInput();
+                        }
+                      }}
+                      placeholder={
+                        isLimitExceeded
+                          ? 'You have reached the usage limit for today..'
+                          : 'Ask me anything about this roadmap...'
+                      }
+                      className={cn(
+                        'w-full resize-none px-3 py-4 outline-none',
+                        isLimitExceeded && 'bg-gray-100 text-gray-400',
+                      )}
+                    />
+
+                    <button
+                      className="absolute top-1/2 right-2 -translate-y-1/2 p-1 text-zinc-500 hover:text-black disabled:opacity-50"
+                      disabled={isRoadmapDetailLoading || isLimitExceeded}
+                      onClick={() => {
+                        if (isStreamingMessage) {
+                          handleAbort();
+                          return;
+                        }
+                        submitInput();
+                      }}
+                    >
+                      {isStreamingMessage ? (
+                        <PauseCircleIcon className="h-4 w-4" />
+                      ) : (
+                        <SendIcon className="h-4 w-4" />
+                      )}
+                    </button>
+                  </div>
+                </>
               )}
             </div>
-
-            {/* Input area */}
-            <div className="relative flex items-center border-t border-gray-200 text-sm">
-              <input
-                ref={inputRef}
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                autoFocus
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') {
-                    e.preventDefault();
-                    if (isStreamingMessage) {
-                      return;
-                    }
-                    submitInput();
-                  }
-                }}
-                placeholder="Ask me anything about this roadmap..."
-                className="w-full resize-none p-3 outline-none"
-              />
-
-              <button
-                className="absolute top-1/2 right-2 -translate-y-1/2 p-1 text-zinc-500 hover:text-black disabled:opacity-50"
-                disabled={isRoadmapDetailLoading}
-                onClick={() => {
-                  if (isStreamingMessage) {
-                    handleAbort();
-                    return;
-                  }
-                  submitInput();
-                }}
-              >
-                {isStreamingMessage ? (
-                  <PauseCircleIcon className="h-4 w-4" />
-                ) : (
-                  <SendIcon className="h-4 w-4" />
-                )}
-              </button>
-            </div>
-          </div>
+          </>
         )}
 
         {!isOpen && (
