@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState, useEffect } from 'react';
 import type { JSONContent } from '@tiptap/core';
 import { flushSync } from 'react-dom';
 import { removeAuthToken } from '../lib/jwt';
@@ -43,14 +43,60 @@ export function useRoadmapAIChat(options: Options) {
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] =
     useState<React.ReactNode | null>(null);
+  const [showScrollToBottom, setShowScrollToBottom] = useState(false);
   const abortControllerRef = useRef<AbortController | null>(null);
 
-  const scrollToBottom = useCallback(() => {
-    scrollareaRef.current?.scrollTo({
-      top: scrollareaRef.current.scrollHeight,
-      behavior: 'instant',
-    });
-  }, [scrollareaRef]);
+  const scrollToBottom = useCallback(
+    (behavior: 'smooth' | 'instant' = 'smooth') => {
+      scrollareaRef.current?.scrollTo({
+        top: scrollareaRef.current.scrollHeight,
+        behavior,
+      });
+    },
+    [scrollareaRef],
+  );
+
+  // Check if user has scrolled away from bottom
+  const checkScrollPosition = useCallback(() => {
+    const scrollArea = scrollareaRef.current;
+    if (!scrollArea) {
+      return;
+    }
+
+    const { scrollTop, scrollHeight, clientHeight } = scrollArea;
+    const isAtBottom = scrollTop + clientHeight >= scrollHeight - 50; // 50px threshold
+    setShowScrollToBottom(!isAtBottom && aiChatHistory.length > 0);
+  }, [aiChatHistory.length]);
+
+  useEffect(() => {
+    const scrollArea = scrollareaRef.current;
+    if (!scrollArea) {
+      return;
+    }
+
+    scrollArea.addEventListener('scroll', checkScrollPosition);
+    return () => scrollArea.removeEventListener('scroll', checkScrollPosition);
+  }, [checkScrollPosition]);
+
+  // When user is already at the bottom and there is new message
+  // being streamed, we keep scrolling to bottom to show the new message
+  // unless user has scrolled up at which point we stop scrolling to bottom
+  useEffect(() => {
+    if (isStreamingMessage || streamedMessage) {
+      const scrollArea = scrollareaRef.current;
+      if (!scrollArea) {
+        return;
+      }
+
+      const { scrollTop, scrollHeight, clientHeight } = scrollArea;
+      const isNearBottom = scrollTop + clientHeight >= scrollHeight - 100;
+
+      if (isNearBottom) {
+        scrollToBottom('instant');
+        setShowScrollToBottom(false);
+      }
+    }
+  }, [isStreamingMessage, streamedMessage, scrollToBottom]);
 
   const renderer: Record<string, MessagePartRenderer> = useMemo(
     () => ({
@@ -175,7 +221,7 @@ export function useRoadmapAIChat(options: Options) {
 
       setIsStreamingMessage(true);
       flushSync(() => setAiChatHistory(newMessages));
-      scrollToBottom();
+      scrollToBottom('instant');
       completeAITutorChat(newMessages, abortControllerRef.current);
     },
     [aiChatHistory, isStreamingMessage, scrollToBottom],
@@ -195,6 +241,8 @@ export function useRoadmapAIChat(options: Options) {
     aiChatHistory,
     isStreamingMessage,
     streamedMessage,
+    showScrollToBottom,
+    setShowScrollToBottom,
     abortControllerRef,
     handleChatSubmit,
     handleAbort,

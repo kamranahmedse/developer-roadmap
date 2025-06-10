@@ -3,6 +3,7 @@ import type { JSONContent } from '@tiptap/core';
 import {
   AppWindow,
   BookOpen,
+  ChevronDown,
   MessageCirclePlus,
   PauseCircleIcon,
   PersonStanding,
@@ -142,6 +143,8 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     aiChatHistory,
     isStreamingMessage,
     streamedMessage,
+    showScrollToBottom,
+    setShowScrollToBottom,
     handleChatSubmit,
     handleAbort,
     scrollToBottom,
@@ -208,7 +211,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
           onClick={() => {
             setIsOpen(false);
           }}
-          className="fixed z-50 inset-0 bg-black opacity-50"
+          className="fixed inset-0 z-50 bg-black opacity-50"
         ></div>
       )}
 
@@ -332,6 +335,20 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                   <RoadmapAIChatCard role="assistant" jsx={streamedMessage} />
                 )}
               </div>
+
+              {/* Scroll to bottom button */}
+              {showScrollToBottom && (
+                <button
+                  onClick={() => {
+                    scrollToBottom('instant');
+                    setShowScrollToBottom(false);
+                  }}
+                  className="sticky bottom-0 mx-auto mt-2 flex items-center gap-1.5 rounded-full bg-gray-900 px-3 py-1.5 text-xs text-white shadow-lg transition-all hover:bg-gray-800"
+                >
+                  <ChevronDown className="h-3 w-3" />
+                  Scroll to bottom
+                </button>
+              )}
             </div>
 
             {/* Input area */}
@@ -383,7 +400,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
             )}
             onClick={() => {
               setIsOpen(true);
-              setTimeout(() => scrollToBottom(), 0);
+              setTimeout(() => scrollToBottom('instant'), 0);
             }}
           >
             {!hasMessages ? (
