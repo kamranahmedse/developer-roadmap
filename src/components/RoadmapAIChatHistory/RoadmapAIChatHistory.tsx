@@ -65,11 +65,11 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
 
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
-      <PopoverTrigger className="flex size-8 items-center justify-center rounded-lg hover:bg-gray-200">
+      <PopoverTrigger className="flex size-8 items-center justify-center rounded-lg text-gray-500 hover:bg-gray-200 hover:text-black">
         <HistoryIcon className="size-4" />
       </PopoverTrigger>
       <PopoverContent
-        className="flex max-h-[400px] w-80 flex-col overflow-hidden p-0"
+        className="z-[999] flex max-h-[400px] w-80 flex-col overflow-hidden p-0"
         align="end"
         sideOffset={4}
       >

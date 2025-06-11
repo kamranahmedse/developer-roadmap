@@ -16,6 +16,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { useKeydown } from '../../hooks/use-keydown';
 import {
+  roadmapAIChatRenderer,
   useRoadmapAIChat,
   type RoadmapAIChatHistoryType,
 } from '../../hooks/use-roadmap-ai-chat';
@@ -33,6 +34,8 @@ import { CLOSE_TOPIC_DETAIL_EVENT } from '../TopicDetail/TopicDetail';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { chatHistoryOptions } from '../../queries/chat-history';
+import { RoadmapAIChatHistory } from '../RoadmapAIChatHistory/RoadmapAIChatHistory';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -47,7 +50,7 @@ function ChatHeaderButton(props: ChatHeaderButtonProps) {
   const { onClick, href, icon, children, className, target } = props;
 
   const classNames = cn(
-    'flex items-center gap-1.5 text-xs text-gray-600 transition-colors hover:text-gray-900',
+    'flex shrink-0 items-center gap-1.5 text-xs text-gray-600 transition-colors hover:text-gray-900 min-w-8',
     className,
   );
 
@@ -227,6 +230,22 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     });
   };
 
+  const [isChatHistoryLoading, setIsChatHistoryLoading] = useState(true);
+  const [activeChatHistoryId, setActiveChatHistoryId] = useState<
+    string | undefined
+  >();
+  const { data: chatHistory } = useQuery(
+    chatHistoryOptions(
+      activeChatHistoryId,
+      roadmapAIChatRenderer({
+        roadmapId,
+        totalTopicCount,
+        onSelectTopic,
+      }),
+    ),
+    queryClient,
+  );
+
   const {
     aiChatHistory,
     isStreamingMessage,
@@ -237,12 +256,38 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     handleAbort,
     scrollToBottom,
     clearChat,
+    setAiChatHistory,
   } = useRoadmapAIChat({
+    activeChatHistoryId,
     roadmapId,
     totalTopicCount,
     scrollareaRef,
     onSelectTopic,
+    onChatHistoryIdChange: (chatHistoryId) => {
+      setActiveChatHistoryId(chatHistoryId);
+    },
   });
+
+  useEffect(() => {
+    if (!chatHistory) {
+      return;
+    }
+
+    setAiChatHistory(chatHistory?.messages ?? []);
+    setIsChatHistoryLoading(false);
+    setTimeout(() => {
+      scrollToBottom('instant');
+    }, 0);
+  }, [chatHistory]);
+
+  useEffect(() => {
+    if (activeChatHistoryId) {
+      return;
+    }
+
+    setAiChatHistory([]);
+    setIsChatHistoryLoading(false);
+  }, [activeChatHistoryId, setAiChatHistory, setIsChatHistoryLoading]);
 
   useEffect(() => {
     lockBodyScroll(isOpen);
@@ -293,6 +338,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
   };
 
   const hasMessages = aiChatHistory.length > 0;
+  const newTabUrl = `/${roadmapId}/ai${activeChatHistoryId ? `?chatId=${activeChatHistoryId}` : ''}`;
 
   return (
     <>
@@ -331,7 +377,6 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
         {isOpen && (
           <>
             <div className="flex h-full w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
-              {/* Messages area */}
               <div className="flex items-center justify-between px-3 py-2">
                 <div className="flex">
                   <ChatHeaderButton
@@ -344,7 +389,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
                 <div className="flex gap-1.5">
                   <ChatHeaderButton
-                    href={`/${roadmapId}/ai`}
+                    href={newTabUrl}
                     target="_blank"
                     icon={<SquareArrowOutUpRight className="h-3.5 w-3.5" />}
                     className="hidden rounded-md py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300 sm:flex"
@@ -352,10 +397,27 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                     Open in new tab
                   </ChatHeaderButton>
 
+                  <RoadmapAIChatHistory
+                    roadmapId={roadmapId}
+                    activeChatHistoryId={activeChatHistoryId}
+                    onChatHistoryClick={(chatHistoryId) => {
+                      setIsChatHistoryLoading(true);
+                      setActiveChatHistoryId(chatHistoryId);
+                    }}
+                    onDelete={(chatHistoryId) => {
+                      if (activeChatHistoryId === chatHistoryId) {
+                        setActiveChatHistoryId(undefined);
+                      }
+                    }}
+                    onNewChat={() => {
+                      setActiveChatHistoryId(undefined);
+                    }}
+                  />
+
                   <ChatHeaderButton
                     onClick={() => setIsOpen(false)}
                     icon={<X className="h-3.5 w-3.5" />}
-                    className="rounded-md bg-red-100 px-1 py-1 text-red-500 hover:bg-red-200"
+                    className="flex items-center justify-center rounded-md bg-red-100 px-1 py-1 text-red-500 hover:bg-red-200"
                   />
                 </div>
               </div>
@@ -412,13 +474,11 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                       </div>
                     )}
 
-                  {aiChatHistory.map(
-                    (chat: RoadmapAIChatHistoryType, index: number) => (
-                      <Fragment key={`chat-${index}`}>
-                        <RoadmapAIChatCard {...chat} />
-                      </Fragment>
-                    ),
-                  )}
+                  {aiChatHistory.map((chat, index) => (
+                    <Fragment key={`chat-${index}`}>
+                      <RoadmapAIChatCard {...chat} />
+                    </Fragment>
+                  ))}
 
                   {isStreamingMessage && !streamedMessage && (
                     <RoadmapAIChatCard role="assistant" html="Thinking..." />
@@ -444,7 +504,6 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                 )}
               </div>
 
-              {/* Input area */}
               {isLimitExceeded && (
                 <UpgradeMessage
                   onUpgradeClick={() => {
@@ -482,7 +541,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                         />
                       )}
                     </div>
-                    {hasMessages && (
+                    {hasMessages && !isPaidUser && (
                       <ChatHeaderButton
                         onClick={() => {
                           setInputValue('');
@@ -550,7 +609,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
         {!isOpen && (
           <button
             className={cn(
-              'relative mx-auto flex flex-shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800 w-max',
+              'relative mx-auto flex w-max flex-shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800',
             )}
             onClick={() => {
               setIsOpen(true);
@@ -566,10 +625,10 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                 <span className="mr-1 text-sm font-semibold text-yellow-400">
                   AI Tutor
                 </span>
-                <span className={'text-white hidden sm:block'}>
+                <span className={'hidden text-white sm:block'}>
                   Have a question? Type here
                 </span>
-                <span className={'text-white block sm:hidden'}>
+                <span className={'block text-white sm:hidden'}>
                   Ask anything
                 </span>
               </>
