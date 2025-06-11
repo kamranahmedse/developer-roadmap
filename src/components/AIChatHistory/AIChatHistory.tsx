@@ -8,6 +8,7 @@ import { AIChatLayout } from './AIChatLayout';
 import { ListChatHistory } from './ListChatHistory';
 import { billingDetailsOptions } from '../../queries/billing';
 import { ChatHistoryError } from './ChatHistoryError';
+import { useClientMount } from '../../hooks/use-client-mount';
 
 type AIChatHistoryProps = {
   chatHistoryId?: string;
@@ -16,8 +17,8 @@ type AIChatHistoryProps = {
 export function AIChatHistory(props: AIChatHistoryProps) {
   const { chatHistoryId: defaultChatHistoryId } = props;
 
+  const isClientMounted = useClientMount();
   const [keyTrigger, setKeyTrigger] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
   const [isChatHistoryLoading, setIsChatHistoryLoading] = useState(true);
   const [chatHistoryId, setChatHistoryId] = useState<string | undefined>(
     defaultChatHistoryId || undefined,
@@ -27,6 +28,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
     chatHistoryOptions(chatHistoryId),
     queryClient,
   );
+
   const {
     data: userBillingDetails,
     isLoading: isBillingDetailsLoading,
@@ -36,7 +38,6 @@ export function AIChatHistory(props: AIChatHistoryProps) {
 
   useEffect(() => {
     if (!chatHistoryId) {
-      setIsLoading(false);
       setIsChatHistoryLoading(false);
       return;
     }
@@ -45,11 +46,9 @@ export function AIChatHistory(props: AIChatHistoryProps) {
       return;
     }
 
-    setIsLoading(false);
     setIsChatHistoryLoading(false);
   }, [data, chatHistoryId]);
 
-  const showGlobalLoader = isLoading || isBillingDetailsLoading;
   const hasError = chatHistoryError || billingDetailsError;
 
   useEffect(() => {
@@ -57,11 +56,10 @@ export function AIChatHistory(props: AIChatHistoryProps) {
       return;
     }
 
-    setIsLoading(false);
     setIsChatHistoryLoading(false);
   }, [hasError]);
 
-  if (isLoading || isBillingDetailsLoading) {
+  if (!isClientMounted || isBillingDetailsLoading) {
     return (
       <AIChatLayout>
         <div className="relative flex grow">
