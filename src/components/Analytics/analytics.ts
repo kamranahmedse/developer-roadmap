@@ -23,6 +23,8 @@ declare global {
 window.fireEvent = (props) => {
   const { action, category, label, value, callback } = props;
 
+  const eventId = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+
   if (['course', 'ai_tutor'].includes(category)) {
     const url = new URL(import.meta.env.PUBLIC_API_URL);
     url.pathname = '/api/_t';
@@ -30,6 +32,7 @@ window.fireEvent = (props) => {
     url.searchParams.set('category', category);
     url.searchParams.set('label', label ?? '');
     url.searchParams.set('value', value ?? '');
+    url.searchParams.set('event_id', eventId);
 
     httpPost(url.toString(), {}).catch(console.error);
   }
@@ -49,6 +52,8 @@ window.fireEvent = (props) => {
     event_category: category,
     event_label: label,
     value: value,
+    event_id: eventId,
+    source: 'client',
     ...(callback ? { event_callback: callback } : {}),
   });
 };
