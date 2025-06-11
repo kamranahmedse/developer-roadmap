@@ -7,3 +7,8 @@ Linux serves as a prevalent OS choice for networking due to its robust, customiz
 - RARP: It is the Reverse Address Resolution Protocol, working in the opposite way to ARP. It converts MAC addresses into IP addresses, which is useful in scenarios when a computer knows its MAC address but needs to find out its IP address.
 
 Knowledge of these components is indispensable in diagnosing and managing networking issues in Linux.
+
+Visit the following resources to learn more:
+
+- [@video@ARP Explained - Address Resolution Protocol](https://www.youtube.com/watch?v=cn8Zxh9bPio)
+- [@video@What is Ethernet?](https://www.youtube.com/watch?v=HLziLmaYsO0)
