@@ -7,12 +7,17 @@ import {
   type MessagePartRenderer,
   renderMessage,
 } from '../lib/render-chat-message';
-import type { RoadmapAIChatHistoryType } from '../hooks/use-roadmap-ai-chat';
+import {
+  htmlFromTiptapJSON,
+  type RoadmapAIChatHistoryType,
+} from '../hooks/use-roadmap-ai-chat';
+import type { JSONContent } from '@tiptap/core';
 
 export type ChatHistoryMessage = {
   _id: string;
   role: 'user' | 'assistant';
   content: string;
+  json?: JSONContent;
 };
 
 export interface ChatHistoryDocument {
@@ -47,9 +52,14 @@ export function chatHistoryOptions(
         messages.push({
           role: message.role,
           content: message.content,
-          ...(message.role === 'user' && {
-            html: markdownToHtml(message.content),
-          }),
+          ...(message.role === 'user' &&
+            !message?.json && {
+              html: markdownToHtml(message.content),
+            }),
+          ...(message.role === 'user' &&
+            message?.json && {
+              html: htmlFromTiptapJSON(message.json),
+            }),
           ...(message.role === 'assistant' && {
             jsx: await renderMessage(message.content, renderer ?? {}, {
               isLoading: false,

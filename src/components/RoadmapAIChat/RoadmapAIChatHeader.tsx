@@ -12,22 +12,6 @@ import { cn } from '../../lib/classname';
 import { useKeydown } from '../../hooks/use-keydown';
 import { RoadmapAIChatHistory } from '../RoadmapAIChatHistory/RoadmapAIChatHistory';
 
-type RoadmapAIChatHeaderProps = {
-  isLoading: boolean;
-
-  onLogin: () => void;
-  onUpgrade: () => void;
-
-  onCloseChat: () => void;
-
-  activeTab: RoadmapAIChatTab;
-  onTabChange: (tab: RoadmapAIChatTab) => void;
-  onCloseTopic: () => void;
-  selectedTopicId: string | null;
-
-  roadmapId: string;
-};
-
 type TabButtonProps = {
   icon: React.ReactNode;
   label: string;
@@ -68,6 +52,26 @@ function TabButton(props: TabButtonProps) {
   );
 }
 
+type RoadmapAIChatHeaderProps = {
+  isLoading: boolean;
+
+  onLogin: () => void;
+  onUpgrade: () => void;
+
+  onCloseChat: () => void;
+
+  activeTab: RoadmapAIChatTab;
+  onTabChange: (tab: RoadmapAIChatTab) => void;
+  onCloseTopic: () => void;
+  selectedTopicId: string | null;
+
+  roadmapId: string;
+  activeChatHistoryId?: string;
+  onChatHistoryClick: (chatHistoryId: string) => void;
+  onNewChat: () => void;
+  onDeleteChatHistory: (chatHistoryId: string) => void;
+};
+
 export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
   const {
     onLogin,
@@ -80,6 +84,10 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
     onCloseTopic,
     selectedTopicId,
     roadmapId,
+    activeChatHistoryId,
+    onChatHistoryClick,
+    onNewChat,
+    onDeleteChatHistory,
   } = props;
 
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
@@ -175,7 +183,13 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
               </>
             )}
 
-            <RoadmapAIChatHistory roadmapId={roadmapId} />
+            <RoadmapAIChatHistory
+              roadmapId={roadmapId}
+              onChatHistoryClick={onChatHistoryClick}
+              activeChatHistoryId={activeChatHistoryId}
+              onNewChat={onNewChat}
+              onDelete={onDeleteChatHistory}
+            />
           </div>
         )}
       </div>
