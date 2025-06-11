@@ -399,6 +399,10 @@ export function TopicDetail(props: TopicDetailProps) {
 
   const shouldShowAiTab = !isCustomResource && resourceType === 'roadmap';
 
+  const hasDataCampResources = paidResources.some((resource) =>
+    resource.title.toLowerCase().includes('datacamp'),
+  );
+
   return (
     <div className={cn('relative z-92', wrapperClassName)}>
       <div
@@ -547,6 +551,29 @@ export function TopicDetail(props: TopicDetailProps) {
                       )}
                     </>
                   )}
+
+                  {resourceId === 'ai-data-scientist' &&
+                    hasDataCampResources && (
+                      <div className="mt-5 rounded-md bg-yellow-100 px-4 py-3 text-sm text-gray-600">
+                        <p className="text-balance">
+                          Follow the resources listed on the roadmap or check
+                          out the premium courses by DataCamp listed below.
+                        </p>
+
+                        <p className="mt-3 text-balance">
+                          They also have an{' '}
+                          <a
+                            href="https://datacamp.pxf.io/POk5PY"
+                            className="font-medium text-blue-600 underline hover:text-blue-800"
+                            target="_blank"
+                          >
+                            Associate Data Scientist in Python
+                          </a>{' '}
+                          track that covers all the key data scientist skills in
+                          one place.
+                        </p>
+                      </div>
+                    )}
 
                   {links.length > 0 && (
                     <>
