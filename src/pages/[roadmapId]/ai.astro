@@ -3,13 +3,21 @@ import { CheckSubscriptionVerification } from '../../components/Billing/CheckSub
 import { RoadmapAIChat } from '../../components/RoadmapAIChat/RoadmapAIChat';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
 import { AITutorLayout } from '../../components/AITutor/AITutorLayout';
-import { getRoadmapById } from '../../lib/roadmap';
-
-export const prerender = false;
+import { getRoadmapById, getRoadmapIds } from '../../lib/roadmap';
 
 type Props = {
   roadmapId: string;
 };
+
+export const prerender = false;
+
+export async function getStaticPaths() {
+  const roadmapIds = await getRoadmapIds();
+
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
+  }));
+}
 
 const { roadmapId } = Astro.params as Props;
 

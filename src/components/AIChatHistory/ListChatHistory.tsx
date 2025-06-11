@@ -36,6 +36,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
   useLayoutEffect(() => {
     const deviceType = getTailwindScreenDimension();
     const isMediumSize = ['sm', 'md'].includes(deviceType);
+
     setIsOpen(!isMediumSize);
     setIsMobile(isMediumSize);
   }, []);
@@ -111,7 +112,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
             </div>
 
             <button
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-black p-2 text-sm text-white"
+              className="flex w-full items-center hover:opacity-80 justify-center gap-2 rounded-lg bg-black p-2 text-sm text-white"
               onClick={() => {
                 if (isMobile) {
                   setIsOpen(false);
@@ -130,7 +131,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
           </div>
 
           <div className="scrollbar-track-transparent scrollbar-thin scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-scroll px-2">
-            {isEmptyHistory && (
+            {isEmptyHistory && !isLoadingInfiniteQuery && (
               <div className="flex items-center justify-center">
                 <p className="text-sm text-gray-500">No chat history</p>
               </div>
