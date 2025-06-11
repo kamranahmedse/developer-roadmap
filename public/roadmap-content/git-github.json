@@ -1694,7 +1694,7 @@
   },
   "jzYjHx-gIKSP8dQUTqWVw": {
     "title": "commit-msg",
-    "description": "The commit-msg hook is a client-side hook that runs after you've committed changes to your repository. It's typically used to validate or modify the commit message before it's recorded in the Git history.\n\nVisit the following resources to learn more:",
+    "description": "The commit-msg hook is a client-side hook that runs after you enter a commit message, but before the commit is finalized in your repository. It's typically used to validate or modify the commit message before it's recorded in the Git history.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "A Git-Hook for Commit Messages Validation - No Husky, Just JS",

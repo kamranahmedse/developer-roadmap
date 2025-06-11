@@ -54,6 +54,8 @@ type PaidResourceType = {
 
 const paidResourcesCache: Record<string, PaidResourceType[]> = {};
 
+export const CLOSE_TOPIC_DETAIL_EVENT = 'close-topic-detail';
+
 export const defaultChatHistory: AIChatHistoryType[] = [
   {
     role: 'assistant',
@@ -158,10 +160,15 @@ export function TopicDetail(props: TopicDetailProps) {
   const handleClose = () => {
     onClose?.();
     setIsActive(false);
+    setIsContributing(false);
     setShowUpgradeModal(false);
     setAiChatHistory(defaultChatHistory);
     setActiveTab('content');
     setShowSubjectSearchModal(false);
+
+    lockBodyScroll(false);
+
+    window.dispatchEvent(new Event(CLOSE_TOPIC_DETAIL_EVENT));
   };
 
   // Close the topic detail when user clicks outside the topic detail
@@ -372,10 +379,9 @@ export function TopicDetail(props: TopicDetailProps) {
 
   useEffect(() => {
     if (isActive) {
+      lockBodyScroll(true);
       topicRef?.current?.focus();
     }
-
-    lockBodyScroll(isActive);
   }, [isActive]);
 
   if (!isActive) {
@@ -660,8 +666,7 @@ export function TopicDetail(props: TopicDetailProps) {
               id="close-topic"
               className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
               onClick={() => {
-                setIsActive(false);
-                setIsContributing(false);
+                handleClose();
               }}
             >
               <X className="h-5 w-5" />

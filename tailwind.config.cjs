@@ -38,13 +38,13 @@ module.exports = {
           },
         },
         spotlight: {
-          "0%": {
+          '0%': {
             opacity: 0,
-            transform: "translate(-72%, -62%) scale(0.5)",
+            transform: 'translate(-72%, -62%) scale(0.5)',
           },
-          "100%": {
+          '100%': {
             opacity: 1,
-            transform: "translate(-50%,-40%) scale(1)",
+            transform: 'translate(-50%,-40%) scale(1)',
           },
         },
         wiggle: {
@@ -60,7 +60,7 @@ module.exports = {
         'fade-slide-up':
           'fade-slide-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
         'fade-in': 'fade-in 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
-        spotlight: "spotlight 2s ease 0.25s 1 forwards",
+        spotlight: 'spotlight 2s ease 0.25s 1 forwards',
         wiggle: 'wiggle 0.5s ease-in-out forwards',
       },
     },
