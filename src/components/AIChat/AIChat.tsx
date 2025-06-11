@@ -18,7 +18,6 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { useToast } from '../../hooks/use-toast';
-import { readStream } from '../../lib/ai';
 import { markdownToHtml } from '../../lib/markdown';
 import { ChatHistory } from './ChatHistory';
 import { PersonalizedResponseForm } from './PersonalizedResponseForm';
@@ -444,7 +443,7 @@ export function AIChat(props: AIChatProps) {
             <div className="pointer-events-auto flex items-center justify-between gap-2">
               <div className="flex items-center gap-2">
                 <LockIcon className="size-4" strokeWidth={2.5} />
-                <p>Upgrade to Pro to keep your conversations.</p>
+                <p>Your chat history is not saved.</p>
               </div>
               <button
                 type="button"

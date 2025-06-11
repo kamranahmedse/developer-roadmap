@@ -68,6 +68,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
 
       setChatHistoryId(undefined);
       window.history.replaceState(null, '', '/ai/chat');
+      setKeyTrigger((key) => key + 1);
     },
     [chatHistoryId],
   );
@@ -76,7 +77,6 @@ export function AIChatHistory(props: AIChatHistoryProps) {
 
   const hasError = chatHistoryError || billingDetailsError;
 
-  // derived UI states to make JSX clearer
   const showLoader = isChatHistoryLoading && !hasError;
   const showError = !isChatHistoryLoading && Boolean(hasError);
 
