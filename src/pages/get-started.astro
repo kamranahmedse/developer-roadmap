@@ -1,46 +1,37 @@
 ---
-import GridItem from '../components/GridItem.astro';
-import SimplePageHeader from '../components/SimplePageHeader.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+Blocks,
+Bot,
+Braces,
+CheckSquare,
+Coins,
+Component,
+FolderKanban,
+Gamepad2,
+GitBranch,
+Globe2,
+GraduationCap,
+Megaphone,
+MessageCircle,
+MessageCircleCode,
+PenSquare,
+Server,
+ServerCog,
+Shield,
+ShieldHalf,
+Smartphone,
+SquareKanban,
+UsersRound,
+Waypoints,
+Workflow,
+} from 'lucide-react';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
 import { RoadmapCard } from '../components/GetStarted/RoadmapCard';
-import { getRoadmapsByTag } from '../lib/roadmap';
 import { RoadmapMultiCard } from '../components/GetStarted/RoadmapMultiCard';
 import { RoleRoadmaps } from '../components/GetStarted/RoleRoadmaps';
-import {
-  Blocks,
-  Code,
-  ExternalLink,
-  Globe2,
-  GraduationCap,
-  MousePointerSquare,
-  ServerCog,
-  ServerCogIcon,
-  ArrowRight,
-  Server,
-  Cloud,
-  Smartphone,
-  Bot,
-  MessageCircleCode,
-  Shield,
-  ShieldHalf,
-  Workflow,
-  Gamepad2,
-  PenSquare,
-  Component,
-  Waypoints,
-  CheckSquare,
-  Braces,
-  FolderKanban,
-  Coins,
-  Megaphone,
-  GitBranch,
-  UsersRoundIcon,
-  UsersRound,
-  SquareKanban,
-} from 'lucide-react';
 import { SectionBadge } from '../components/GetStarted/SectionBadge';
 import { TipItem } from '../components/GetStarted/TipItem';
-import ChangelogBanner from '../components/ChangelogBanner.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
@@ -48,6 +39,30 @@ import ChangelogBanner from '../components/ChangelogBanner.astro';
   description={'Step by step guides and paths to learn different tools or technologies'}
   permalink={'/get-started'}
 >
+  <!-- AI Chat Section -->
+  <div class='border-b bg-linear-to-b from-gray-200 to-white py-12 sm:py-16'>
+    <div class='container'>
+      <div class='max-w-3xl'>
+        <Bot className='mb-4 size-8 text-black sm:size-12' />
+                  <h2 class='mb-3 text-2xl font-bold text-black sm:text-3xl'>
+            Get AI-Powered Learning Guidance
+          </h2>
+        <p class='mb-6 text-sm text-gray-600 sm:text-base'>
+          Our AI Tutor analyzes your experience, suggests relevant roadmaps,
+          and provides detailed answers to help you progress in your tech
+          career.
+        </p>
+        <a
+          href='/ai/chat'
+          class='inline-flex items-center gap-2 rounded-xl bg-black py-2 px-4 sm:px-6 sm:py-3 text-sm font-medium text-white transition-colors hover:opacity-80 sm:text-base'
+        >
+          <MessageCircle className='size-3 sm:size-5 fill-current' />
+          Chat with AI Tutor
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div class='bg-linear-to-b from-gray-200 to-white py-4 sm:py-8 md:py-12'>
     <div class='container'>
       <div class='text-left'>

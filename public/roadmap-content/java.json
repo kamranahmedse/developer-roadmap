@@ -1034,6 +1034,11 @@
         "title": "Java Cryptography Tutorial",
         "url": "https://jenkov.com/tutorials/java-cryptography/index.html",
         "type": "article"
+      },
+      {
+        "title": "Cryptography 101 for Java developers",
+        "url": "https://www.youtube.com/watch?v=itmNhVckTPc",
+        "type": "video"
       }
     ]
   },

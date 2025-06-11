@@ -9,7 +9,9 @@ export function replaceChildren(parentNode: Element, newChild: Element) {
 
 export function lockBodyScroll(shouldLock: boolean) {
   const isClient = document && 'body' in document;
-  if (!isClient) return;
+  if (!isClient) {
+    return;
+  }
 
   if (shouldLock) {
     document.body.classList.add('overflow-hidden');

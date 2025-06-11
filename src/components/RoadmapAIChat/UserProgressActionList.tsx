@@ -92,6 +92,10 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
         );
       },
       onSuccess: () => {
+        updateUserProgress.forEach((item) => {
+          renderTopicProgress(item.id, item.action);
+        });
+
         return queryClient.invalidateQueries(
           userResourceProgressOptions('roadmap', roadmapId),
         );
@@ -173,7 +177,7 @@ export function UserProgressActionList(props: UserProgressActionListProps) {
 
             <button
               className="z-50 flex items-center gap-1 rounded-md bg-green-600 px-2 py-1 text-xs font-medium text-white hover:bg-green-700 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-70"
-              disabled={isBulkUpdating || isLoading}
+              disabled={isBulkUpdating || isLoading || isBulkUpdateSuccess}
               onClick={() => {
                 const done = updateUserProgress
                   .filter((item) => item.action === 'done')
