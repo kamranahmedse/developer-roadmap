@@ -167,7 +167,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
           </div>
 
           <div className="scrollbar-track-transparent scrollbar-thin scrollbar-thumb-gray-300 -mx-2 mt-6 grow space-y-4 overflow-y-scroll px-2">
-            {isEmptyHistory && (
+            {isEmptyHistory && !isLoadingInfiniteQuery && (
               <div className="flex items-center justify-center">
                 <p className="text-sm text-gray-500">No chat history</p>
               </div>

@@ -3,7 +3,7 @@ import { queryClient } from '../../stores/query-client';
 import { chatHistoryOptions } from '../../queries/chat-history';
 import { AIChat } from '../AIChat/AIChat';
 import { Loader2Icon } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { AIChatLayout } from './AIChatLayout';
 import { ListChatHistory } from './ListChatHistory';
 import { billingDetailsOptions } from '../../queries/billing';
@@ -34,7 +34,53 @@ export function AIChatHistory(props: AIChatHistoryProps) {
     isLoading: isBillingDetailsLoading,
     error: billingDetailsError,
   } = useQuery(billingDetailsOptions(), queryClient);
+
+  // extracted callbacks to keep JSX tidy while preserving behaviour
+  const handleChatHistoryClick = useCallback(
+    (nextChatHistoryId: string | null) => {
+      // bump key to force fresh AIChat mount on each history switch
+      setKeyTrigger((key) => key + 1);
+
+      if (nextChatHistoryId === null) {
+        setChatHistoryId(undefined);
+        window.history.replaceState(null, '', '/ai/chat');
+        return;
+      }
+
+      // show loader only if the chat history hasn't been fetched before (avoids UI flash)
+      const hasAlreadyFetched = queryClient.getQueryData(
+        chatHistoryOptions(nextChatHistoryId).queryKey,
+      );
+
+      if (!hasAlreadyFetched) {
+        setIsChatHistoryLoading(true);
+      }
+
+      setChatHistoryId(nextChatHistoryId);
+      window.history.replaceState(null, '', `/ai/chat/${nextChatHistoryId}`);
+    },
+    [],
+  );
+
+  const handleDelete = useCallback(
+    (deletedChatHistoryId: string) => {
+      if (deletedChatHistoryId !== chatHistoryId) {
+        return;
+      }
+
+      setChatHistoryId(undefined);
+      window.history.replaceState(null, '', '/ai/chat');
+    },
+    [chatHistoryId],
+  );
+
   const isPaidUser = userBillingDetails?.status === 'active';
+
+  const hasError = chatHistoryError || billingDetailsError;
+
+  // derived UI states to make JSX clearer
+  const showLoader = isChatHistoryLoading && !hasError;
+  const showError = !isChatHistoryLoading && Boolean(hasError);
 
   useEffect(() => {
     if (!chatHistoryId) {
@@ -48,8 +94,6 @@ export function AIChatHistory(props: AIChatHistoryProps) {
 
     setIsChatHistoryLoading(false);
   }, [data, chatHistoryId]);
-
-  const hasError = chatHistoryError || billingDetailsError;
 
   useEffect(() => {
     if (!hasError) {
@@ -77,59 +121,25 @@ export function AIChatHistory(props: AIChatHistoryProps) {
         {isPaidUser && (
           <ListChatHistory
             activeChatHistoryId={chatHistoryId}
-            onChatHistoryClick={(chatHistoryId) => {
-              setKeyTrigger((keyTrigger) => keyTrigger + 1);
-
-              if (chatHistoryId === null) {
-                setChatHistoryId(undefined);
-                window.history.replaceState(null, '', '/ai/chat');
-                return;
-              }
-
-              // so that we can show the loading state when the chat history is not fetched yet
-              // it will help us to avoid the flash of content
-              const hasAlreadyFetched = queryClient.getQueryData(
-                chatHistoryOptions(chatHistoryId).queryKey,
-              );
-
-              if (!hasAlreadyFetched) {
-                setIsChatHistoryLoading(true);
-              }
-
-              setChatHistoryId(chatHistoryId);
-              window.history.replaceState(
-                null,
-                '',
-                `/ai/chat/${chatHistoryId}`,
-              );
-            }}
-            onDelete={(deletedChatHistoryId) => {
-              const isCurrentChatHistory =
-                deletedChatHistoryId === chatHistoryId;
-              if (!isCurrentChatHistory) {
-                return;
-              }
-
-              setChatHistoryId(undefined);
-              window.history.replaceState(null, '', '/ai/chat');
-            }}
+            onChatHistoryClick={handleChatHistoryClick}
+            onDelete={handleDelete}
           />
         )}
 
         <div className="relative flex grow">
-          {isChatHistoryLoading && !hasError && (
+          {showLoader && (
             <div className="absolute inset-0 z-20 flex items-center justify-center">
-              <Loader2Icon className="h-8 w-8 animate-spin stroke-[2.5]" />
+              <Loader2Icon className="h-8 w-8 animate-spin stroke-[2.5] text-gray-400/80" />
             </div>
           )}
 
-          {!isChatHistoryLoading && hasError && (
+          {showError && (
             <div className="absolute inset-0 z-20 flex items-center justify-center">
               <ChatHistoryError error={hasError} className="mt-0" />
             </div>
           )}
 
-          {!isChatHistoryLoading && !hasError && (
+          {!showLoader && !showError && (
             <AIChat
               key={keyTrigger}
               messages={data?.messages}
