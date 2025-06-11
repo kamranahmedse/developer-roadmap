@@ -10,6 +10,7 @@ import { getPercentage } from '../../lib/number';
 import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
 import { cn } from '../../lib/classname';
 import { useKeydown } from '../../hooks/use-keydown';
+import { RoadmapAIChatHistory } from '../RoadmapAIChatHistory/RoadmapAIChatHistory';
 
 type RoadmapAIChatHeaderProps = {
   isLoading: boolean;
@@ -23,6 +24,8 @@ type RoadmapAIChatHeaderProps = {
   onTabChange: (tab: RoadmapAIChatTab) => void;
   onCloseTopic: () => void;
   selectedTopicId: string | null;
+
+  roadmapId: string;
 };
 
 type TabButtonProps = {
@@ -76,6 +79,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
     onTabChange,
     onCloseTopic,
     selectedTopicId,
+    roadmapId,
   } = props;
 
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
@@ -170,6 +174,8 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
                 </button>
               </>
             )}
+
+            <RoadmapAIChatHistory roadmapId={roadmapId} />
           </div>
         )}
       </div>

@@ -1,8 +1,5 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
-import {
-  listChatHistoryOptions,
-  type ChatHistoryWithoutMessages,
-} from '../../queries/chat-history';
+import { listChatHistoryOptions } from '../../queries/chat-history';
 import { queryClient } from '../../stores/query-client';
 import { ChatHistoryItem } from './ChatHistoryItem';
 import {
@@ -13,13 +10,15 @@ import {
   SearchIcon,
   XIcon,
 } from 'lucide-react';
-import { DateTime } from 'luxon';
 import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { useDebounceValue } from '../../hooks/use-debounce';
 import { ListChatHistorySkeleton } from './ListChatHistorySkeleton';
 import { ChatHistoryError } from './ChatHistoryError';
 import { cn } from '../../lib/classname';
 import { getTailwindScreenDimension } from '../../lib/is-mobile';
+import { groupChatHistory } from '../../helper/grouping';
+import { SearchAIChatHistory } from './SearchAIChatHistory';
+import { ChatHistoryGroup } from './ChatHistoryGroup';
 
 type ListChatHistoryProps = {
   activeChatHistoryId?: string;
@@ -62,44 +61,8 @@ export function ListChatHistory(props: ListChatHistoryProps) {
   }, [data?.pages]);
 
   const groupedChatHistory = useMemo(() => {
-    const today = DateTime.now().startOf('day');
     const allHistories = data?.pages?.flatMap((page) => page.data);
-
-    return allHistories?.reduce(
-      (acc, chatHistory) => {
-        const updatedAt = DateTime.fromJSDate(
-          new Date(chatHistory.updatedAt),
-        ).startOf('day');
-        const diffInDays = Math.abs(updatedAt.diff(today, 'days').days);
-
-        if (diffInDays === 0) {
-          acc.today.histories.push(chatHistory);
-        } else if (diffInDays <= 7) {
-          acc.last7Days.histories.push(chatHistory);
-        } else {
-          acc.older.histories.push(chatHistory);
-        }
-
-        return acc;
-      },
-      {
-        today: {
-          title: 'Today',
-          histories: [],
-        },
-        last7Days: {
-          title: 'Last 7 Days',
-          histories: [],
-        },
-        older: {
-          title: 'Older',
-          histories: [],
-        },
-      } as Record<
-        string,
-        { title: string; histories: ChatHistoryWithoutMessages[] }
-      >,
-    );
+    return groupChatHistory(allHistories ?? []);
   }, [data?.pages]);
 
   if (!isOpen) {
@@ -160,7 +123,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
               <span className="text-sm">New Chat</span>
             </button>
 
-            <SearchInput
+            <SearchAIChatHistory
               onSearch={setQuery}
               isLoading={isLoadingInfiniteQuery}
             />
@@ -179,31 +142,22 @@ export function ListChatHistory(props: ListChatHistoryProps) {
               }
 
               return (
-                <div key={key}>
-                  <h2 className="ml-2 text-xs text-gray-500">{value.title}</h2>
+                <ChatHistoryGroup
+                  key={key}
+                  title={value.title}
+                  histories={value.histories}
+                  activeChatHistoryId={activeChatHistoryId}
+                  onChatHistoryClick={(id) => {
+                    if (isMobile) {
+                      setIsOpen(false);
+                    }
 
-                  <ul className="mt-1 space-y-0.5">
-                    {value.histories.map((chatHistory) => {
-                      return (
-                        <ChatHistoryItem
-                          key={chatHistory._id}
-                          chatHistory={chatHistory}
-                          isActive={activeChatHistoryId === chatHistory._id}
-                          onChatHistoryClick={(id) => {
-                            if (isMobile) {
-                              setIsOpen(false);
-                            }
-
-                            onChatHistoryClick(id);
-                          }}
-                          onDelete={() => {
-                            onDelete?.(chatHistory._id);
-                          }}
-                        />
-                      );
-                    })}
-                  </ul>
-                </div>
+                    onChatHistoryClick(id);
+                  }}
+                  onDelete={(id) => {
+                    onDelete?.(id);
+                  }}
+                />
               );
             })}
 
@@ -230,62 +184,5 @@ export function ListChatHistory(props: ListChatHistoryProps) {
         </>
       )}
     </div>
-  );
-}
-
-type SearchInputProps = {
-  onSearch: (search: string) => void;
-  isLoading?: boolean;
-};
-
-function SearchInput(props: SearchInputProps) {
-  const { onSearch, isLoading } = props;
-
-  const [search, setSearch] = useState('');
-  const debouncedSearch = useDebounceValue(search, 300);
-
-  useEffect(() => {
-    onSearch(debouncedSearch);
-  }, [debouncedSearch, onSearch]);
-
-  return (
-    <form
-      className="relative mt-2 flex grow items-center"
-      onSubmit={(e) => {
-        e.preventDefault();
-        onSearch(search);
-      }}
-    >
-      <input
-        type="text"
-        placeholder="Search folder by name"
-        className="block h-9 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 pr-7 pl-8 text-sm outline-none placeholder:text-zinc-500 focus:border-zinc-500"
-        required
-        minLength={3}
-        maxLength={255}
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-
-      <div className="absolute top-1/2 left-2.5 -translate-y-1/2">
-        {isLoading ? (
-          <Loader2Icon className="size-4 animate-spin text-gray-500" />
-        ) : (
-          <SearchIcon className="size-4 text-gray-500" />
-        )}
-      </div>
-      {search && (
-        <div className="absolute inset-y-0 right-1 flex items-center">
-          <button
-            onClick={() => {
-              setSearch('');
-            }}
-            className="rounded-lg p-1 hover:bg-gray-100"
-          >
-            <XIcon className="size-4 text-gray-500" />
-          </button>
-        </div>
-      )}
-    </form>
   );
 }

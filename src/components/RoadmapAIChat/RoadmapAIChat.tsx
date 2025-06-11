@@ -307,6 +307,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             setActiveTab('chat');
           }}
           selectedTopicId={selectedTopicId}
+          roadmapId={roadmapId}
         />
 
         {activeTab === 'topic' && selectedTopicId && (

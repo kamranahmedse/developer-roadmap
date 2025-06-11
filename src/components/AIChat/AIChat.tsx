@@ -31,13 +31,13 @@ import {
   type MessagePartRenderer,
 } from '../../lib/render-chat-message';
 import { RoadmapRecommendations } from '../RoadmapAIChat/RoadmapRecommendations';
-import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
 import { AIChatCourse } from './AIChatCouse';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { readChatStream } from '../../lib/chat';
 import { chatHistoryOptions } from '../../queries/chat-history';
 import { cn } from '../../lib/classname';
+import type { RoadmapAIChatHistoryType } from '../../hooks/use-roadmap-ai-chat';
 
 export const aiChatRenderer: Record<string, MessagePartRenderer> = {
   'roadmap-recommendations': (options) => {

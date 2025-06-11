@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { chatHistoryOptions } from '../../queries/chat-history';
-import { AIChat } from '../AIChat/AIChat';
+import { AIChat, aiChatRenderer } from '../AIChat/AIChat';
 import { Loader2Icon } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { AIChatLayout } from './AIChatLayout';
@@ -24,7 +24,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
   );
 
   const { data, error: chatHistoryError } = useQuery(
-    chatHistoryOptions(chatHistoryId),
+    chatHistoryOptions(chatHistoryId, aiChatRenderer),
     queryClient,
   );
   const {

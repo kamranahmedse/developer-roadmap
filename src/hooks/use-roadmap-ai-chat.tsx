@@ -17,6 +17,46 @@ import { ShareResourceLink } from '../components/RoadmapAIChat/ShareResourceLink
 import { RoadmapRecommendations } from '../components/RoadmapAIChat/RoadmapRecommendations';
 import type { AllowedAIChatRole } from '../components/GenerateCourse/AICourseLessonChat';
 
+type RoadmapAIChatRendererOptions = {
+  totalTopicCount: number;
+  roadmapId: string;
+  onSelectTopic: (topicId: string, topicTitle: string) => void;
+};
+
+export function roadmapAIChatRenderer(
+  options: RoadmapAIChatRendererOptions,
+): Record<string, MessagePartRenderer> {
+  const { totalTopicCount, roadmapId, onSelectTopic } = options;
+
+  return {
+    'user-progress': () => (
+      <UserProgressList
+        totalTopicCount={totalTopicCount}
+        roadmapId={roadmapId}
+      />
+    ),
+    'update-progress': (opts) => (
+      <UserProgressActionList roadmapId={roadmapId} {...opts} />
+    ),
+    'roadmap-topics': (opts) => (
+      <RoadmapTopicList
+        roadmapId={roadmapId}
+        onTopicClick={(topicId, text) => {
+          const title = text.split(' > ').pop();
+          if (!title) {
+            return;
+          }
+
+          onSelectTopic(topicId, title);
+        }}
+        {...opts}
+      />
+    ),
+    'resource-progress-link': () => <ShareResourceLink roadmapId={roadmapId} />,
+    'roadmap-recommendations': (opts) => <RoadmapRecommendations {...opts} />,
+  };
+}
+
 export type RoadmapAIChatHistoryType = {
   role: AllowedAIChatRole;
   isDefault?: boolean;
@@ -31,15 +71,22 @@ type Options = {
   totalTopicCount: number;
   scrollareaRef: React.RefObject<HTMLDivElement | null>;
   onSelectTopic: (topicId: string, topicTitle: string) => void;
+  defaultMessages?: RoadmapAIChatHistoryType[];
 };
 
 export function useRoadmapAIChat(options: Options) {
-  const { roadmapId, totalTopicCount, scrollareaRef, onSelectTopic } = options;
+  const {
+    roadmapId,
+    totalTopicCount,
+    scrollareaRef,
+    onSelectTopic,
+    defaultMessages,
+  } = options;
   const toast = useToast();
 
   const [aiChatHistory, setAiChatHistory] = useState<
     RoadmapAIChatHistoryType[]
-  >([]);
+  >(defaultMessages ?? []);
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
   const [streamedMessage, setStreamedMessage] =
     useState<React.ReactNode | null>(null);
