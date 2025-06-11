@@ -229,15 +229,14 @@ export function AIChat(props: AIChatProps) {
       }
     }
 
-    const reader = response.body?.getReader();
-
-    if (!reader) {
+    const stream = response.body;
+    if (!stream) {
       setIsStreamingMessage(false);
       toast.error('Something went wrong');
       return;
     }
 
-    await readChatStream(reader, {
+    await readChatStream(stream, {
       onMessage: async (content) => {
         const jsx = await renderMessage(content, aiChatRenderer, {
           isLoading: true,

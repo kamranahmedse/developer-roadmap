@@ -188,14 +188,14 @@ export function useRoadmapAIChat(options: Options) {
         return;
       }
 
-      const reader = response.body?.getReader();
-      if (!reader) {
+      const stream = response.body;
+      if (!stream) {
         setIsStreamingMessage(false);
         toast.error('Something went wrong');
         return;
       }
 
-      await readChatStream(reader, {
+      await readChatStream(stream, {
         onMessage: async (content) => {
           if (abortController?.signal.aborted) {
             return;
