@@ -1,5 +1,13 @@
 ---
-import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
+import { RoadmapAIChat } from '../../components/RoadmapAIChat/RoadmapAIChat';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+import { AITutorLayout } from '../../components/AITutor/AITutorLayout';
+import { getRoadmapById, getRoadmapIds } from '../../lib/roadmap';
+
+type Props = {
+  roadmapId: string;
+};
 
 export const prerender = true;
 
@@ -11,19 +19,25 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Params extends Record<string, string | undefined> {
-  roadmapId: string;
-}
+const { roadmapId } = Astro.params as Props;
 
-const { roadmapId } = Astro.params as Params;
-const roadmapFile = await import(
-  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
-);
+const roadmapDetail = await getRoadmapById(roadmapId);
 
-const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
-if (roadmapData.renderer !== 'editor') {
-  return Astro.rewrite(`/404`);
-}
-
-return Astro.rewrite(`/ai/chat/${roadmapId}`);
+const canonicalUrl = `https://roadmap.sh/${roadmapId}/ai`;
+const roadmapBriefTitle = roadmapDetail.frontmatter.briefTitle;
 ---
+
+<SkeletonLayout
+  title={`${roadmapBriefTitle} AI Mentor`}
+  description=`Learn anything ${roadmapBriefTitle} with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.`
+  canonicalUrl={canonicalUrl}
+>
+  <AITutorLayout
+    activeTab='chat'
+    wrapperClassName='flex-row p-0 lg:p-0 overflow-hidden'
+    client:load
+  >
+    <RoadmapAIChat roadmapId={roadmapId} client:load />
+    <CheckSubscriptionVerification client:load />
+  </AITutorLayout>
+</SkeletonLayout>
