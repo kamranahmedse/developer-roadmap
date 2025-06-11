@@ -35,10 +35,8 @@ export function AIChatHistory(props: AIChatHistoryProps) {
     error: billingDetailsError,
   } = useQuery(billingDetailsOptions(), queryClient);
 
-  // extracted callbacks to keep JSX tidy while preserving behaviour
   const handleChatHistoryClick = useCallback(
     (nextChatHistoryId: string | null) => {
-      // bump key to force fresh AIChat mount on each history switch
       setKeyTrigger((key) => key + 1);
 
       if (nextChatHistoryId === null) {
