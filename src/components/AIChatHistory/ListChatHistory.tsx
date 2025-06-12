@@ -1,18 +1,14 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { listChatHistoryOptions } from '../../queries/chat-history';
 import { queryClient } from '../../stores/query-client';
-import { ChatHistoryItem } from './ChatHistoryItem';
 import {
   Loader2Icon,
   LockIcon,
   PanelLeftCloseIcon,
   PanelLeftIcon,
   PlusIcon,
-  SearchIcon,
-  XIcon,
 } from 'lucide-react';
 import { useEffect, useLayoutEffect, useMemo, useState } from 'react';
-import { useDebounceValue } from '../../hooks/use-debounce';
 import { ListChatHistorySkeleton } from './ListChatHistorySkeleton';
 import { ChatHistoryError } from './ChatHistoryError';
 import { cn } from '../../lib/classname';
@@ -20,6 +16,7 @@ import { getTailwindScreenDimension } from '../../lib/is-mobile';
 import { groupChatHistory } from '../../helper/grouping';
 import { SearchAIChatHistory } from './SearchAIChatHistory';
 import { ChatHistoryGroup } from './ChatHistoryGroup';
+import { isLoggedIn } from '../../lib/jwt';
 
 type ListChatHistoryProps = {
   activeChatHistoryId?: string;
@@ -74,6 +71,10 @@ export function ListChatHistory(props: ListChatHistoryProps) {
     const allHistories = data?.pages?.flatMap((page) => page.data);
     return groupChatHistory(allHistories ?? []);
   }, [data?.pages]);
+
+  if (!isLoggedIn()) {
+    return null;
+  }
 
   if (!isOpen) {
     return (
@@ -221,19 +222,20 @@ export function UpgradeToProMessage(props: UpgradeToProMessageProps) {
   const { className, onUpgrade, closeButton } = props;
 
   return (
-    <div className={cn('relative', className)}>
-      {closeButton && (
-        <div className="absolute top-2 right-2">{closeButton}</div>
-      )}
+    <div className={cn('relative flex flex-col', className)}>
+      <div className="mb-4 flex items-center justify-between">
+        <h1 className="font-medium text-gray-900">Chat History</h1>
+        {closeButton}
+      </div>
 
       <div className="flex grow flex-col items-center justify-center">
-        <LockIcon className="size-8 text-gray-500" />
+        <LockIcon className="size-8 text-gray-400" />
         <p className="mt-4 text-center text-sm text-balance text-gray-500">
           Upgrade to Pro to keep your chat history.
         </p>
         <button
           type="button"
-          className="mt-2 shrink-0 cursor-pointer rounded-md bg-yellow-200 px-2.5 py-1.5 text-sm font-medium text-yellow-800 hover:bg-yellow-200"
+          className="mt-2 shrink-0 cursor-pointer rounded-md bg-yellow-300 px-3 py-1.5 text-sm font-medium text-black hover:bg-yellow-400"
           onClick={() => {
             onUpgrade?.();
           }}
