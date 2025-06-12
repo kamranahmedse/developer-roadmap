@@ -79,7 +79,7 @@ export function ListChatHistory(props: ListChatHistoryProps) {
 
   if (!isOpen) {
     return (
-      <div className="absolute top-2 left-2 z-20">
+      <div className="absolute top-2 left-2 z-20 flex items-center gap-1">
         <button
           className="flex size-8 items-center justify-center rounded-lg p-1 hover:bg-gray-200"
           onClick={() => {
@@ -87,6 +87,17 @@ export function ListChatHistory(props: ListChatHistoryProps) {
           }}
         >
           <PanelLeftIcon className="h-4.5 w-4.5" />
+        </button>
+        <button
+          className="flex size-8 items-center justify-center rounded-lg p-1 hover:bg-gray-200"
+          onClick={() => {
+            if (isMobile) {
+              setIsOpen(false);
+            }
+            onChatHistoryClick(null);
+          }}
+        >
+          <PlusIcon className="h-4.5 w-4.5" />
         </button>
       </div>
     );
