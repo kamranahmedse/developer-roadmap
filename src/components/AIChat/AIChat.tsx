@@ -448,6 +448,11 @@ export function AIChat(props: AIChatProps) {
               icon={PersonStandingIcon}
               label="Personalize"
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsPersonalizedResponseFormOpen(true);
               }}
             />
@@ -455,6 +460,11 @@ export function AIChat(props: AIChatProps) {
               icon={FileUpIcon}
               label={isUploading ? 'Processing...' : 'Upload Resume'}
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsUploadResumeModalOpen(true);
               }}
               isLoading={isUploading}

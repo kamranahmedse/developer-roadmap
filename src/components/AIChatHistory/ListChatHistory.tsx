@@ -44,9 +44,23 @@ export function ListChatHistory(props: ListChatHistoryProps) {
     const deviceType = getTailwindScreenDimension();
     const isMediumSize = ['sm', 'md'].includes(deviceType);
 
-    setIsOpen(!isMediumSize);
+    // Only set initial state from localStorage if not on mobile
+    if (!isMediumSize) {
+      const storedState = localStorage.getItem('chat-history-sidebar-open');
+      setIsOpen(storedState === null ? true : storedState === 'true');
+    } else {
+      setIsOpen(!isMediumSize);
+    }
+
     setIsMobile(isMediumSize);
   }, []);
+
+  // Save state to localStorage when it changes, but only if not on mobile
+  useEffect(() => {
+    if (!isMobile) {
+      localStorage.setItem('chat-history-sidebar-open', isOpen.toString());
+    }
+  }, [isOpen, isMobile]);
 
   const [query, setQuery] = useState('');
 
@@ -236,7 +250,6 @@ export function UpgradeToProMessage(props: UpgradeToProMessageProps) {
   return (
     <div className={cn('relative flex flex-col', className)}>
       <div className="mb-4 flex items-center justify-between">
-        <h1 className="font-medium text-gray-900">Chat History</h1>
         {closeButton}
       </div>
 

@@ -12,9 +12,6 @@ export function ListChatHistorySkeleton() {
 
         <div className="relative mt-2">
           <div className="h-9 w-full animate-pulse rounded-lg bg-gray-200" />
-          <div className="absolute top-1/2 left-2.5 -translate-y-1/2">
-            <div className="h-4 w-4 animate-pulse rounded-full bg-gray-300" />
-          </div>
         </div>
       </div>
 
