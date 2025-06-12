@@ -3,7 +3,7 @@ import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { isLoggedIn } from '../../lib/jwt';
-import { BookIcon, BotIcon, GiftIcon, XIcon } from 'lucide-react';
+import { BookIcon, BotIcon, GiftIcon, PlusIcon, XIcon } from 'lucide-react';
 import type { RoadmapAIChatTab } from './RoadmapAIChat';
 import { useState } from 'react';
 import { getPercentage } from '../../lib/number';
@@ -158,15 +158,18 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
 
         {!isDataLoading && isLoggedIn() && (
           <div className="flex gap-1.5 pr-4">
+            {isPaidUser && (
+              <button
+                className="flex items-center gap-1 rounded-md bg-gray-200 px-2 py-1 text-xs text-black hover:bg-gray-300"
+                onClick={onNewChat}
+              >
+                <PlusIcon className="size-4" />
+                New Chat
+              </button>
+            )}
+
             {!isPaidUser && (
               <>
-                <button
-                  className="hidden rounded-md bg-gray-200 px-2 py-1 text-sm hover:bg-gray-300 2xl:block"
-                  onClick={handleCreditsClick}
-                >
-                  <span className="font-medium">{usagePercentage}%</span> limit
-                  used
-                </button>
                 <button
                   className="flex items-center gap-1 rounded-md bg-yellow-400 px-2 py-1 text-sm text-black hover:bg-yellow-500"
                   onClick={handleUpgradeClick}
@@ -174,23 +177,21 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
                   <GiftIcon className="size-4" />
                   Upgrade
                 </button>
-                <button
-                  className="hidden items-center gap-1 rounded-md bg-gray-200 px-2 py-1 text-sm text-black hover:bg-gray-300 max-xl:flex"
-                  onClick={onCloseChat}
-                >
-                  <XIcon className="size-3.5" strokeWidth={2.5} />
-                </button>
               </>
             )}
-
             <RoadmapAIChatHistory
               roadmapId={roadmapId}
               onChatHistoryClick={onChatHistoryClick}
               activeChatHistoryId={activeChatHistoryId}
-              onNewChat={onNewChat}
               onDelete={onDeleteChatHistory}
               onUpgrade={onUpgrade}
             />
+            <button
+              className="hidden items-center gap-1 rounded-md bg-gray-200 px-2 py-1 text-sm text-black hover:bg-gray-300 max-xl:flex"
+              onClick={onCloseChat}
+            >
+              <XIcon className="size-3.5" strokeWidth={2.5} />
+            </button>
           </div>
         )}
       </div>

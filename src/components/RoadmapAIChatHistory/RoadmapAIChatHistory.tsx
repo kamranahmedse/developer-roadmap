@@ -1,4 +1,4 @@
-import { HistoryIcon, Loader2Icon, PlusIcon } from 'lucide-react';
+import { HistoryIcon, Loader2Icon } from 'lucide-react';
 import { Popover, PopoverContent, PopoverTrigger } from '../Popover';
 import { useEffect, useMemo, useState } from 'react';
 import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
@@ -15,9 +15,9 @@ import { showLoginPopup } from '../../lib/popup';
 type RoadmapAIChatHistoryProps = {
   roadmapId: string;
   activeChatHistoryId?: string;
+  activeChatHistoryTitle?: string;
   onChatHistoryClick: (id: string) => void;
   onDelete?: (id: string) => void;
-  onNewChat?: () => void;
   onUpgrade?: () => void;
 };
 
@@ -25,9 +25,9 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
   const {
     roadmapId,
     activeChatHistoryId,
+    activeChatHistoryTitle,
     onChatHistoryClick,
     onDelete,
-    onNewChat,
     onUpgrade,
   } = props;
 
@@ -50,10 +50,18 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
         roadmapId,
         query,
       }),
-      enabled: !!roadmapId && isLoggedIn() && isOpen,
+      enabled: !!roadmapId && isLoggedIn() && isOpen && isPaidUser,
     },
     queryClient,
   );
+
+  // no initial spinner if not paid user
+  // because we won't fetch the data
+  useEffect(() => {
+    if (!isPaidUser) {
+      setIsLoading(false);
+    }
+  }, [isPaidUser]);
 
   useEffect(() => {
     if (!chatHistory || isBillingDetailsLoading) {
@@ -83,18 +91,18 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
         setIsOpen(open);
       }}
     >
-      <PopoverTrigger className="flex h-8 items-center justify-center gap-2 rounded-md px-2 text-xs text-gray-500 hover:bg-gray-200 hover:text-black">
+      <PopoverTrigger className="flex items-center justify-center gap-2 rounded-md bg-gray-200 px-3 py-1.5 text-xs text-gray-900 hover:bg-gray-300 hover:text-black">
         <HistoryIcon className="size-3.5" />
-        Chat History
+        {activeChatHistoryTitle || 'Chat History'}
       </PopoverTrigger>
       <PopoverContent
-        className="z-[999] flex max-h-[400px] w-80 flex-col overflow-hidden p-0"
+        className="z-[999] flex max-h-[400px] w-80 flex-col overflow-hidden p-0 shadow-lg"
         align="end"
         sideOffset={4}
       >
         {isLoading && (
           <div className="flex items-center justify-center py-10">
-            <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
+            <Loader2Icon className="size-6 animate-spin stroke-[2.5] text-gray-400" />
           </div>
         )}
 
@@ -166,19 +174,6 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
                   </button>
                 </div>
               )}
-            </div>
-
-            <div className="flex items-center justify-center border-t border-gray-200">
-              <button
-                className="flex w-full items-center justify-center gap-2 p-2 text-sm text-gray-500 hover:bg-gray-200 hover:text-black"
-                onClick={() => {
-                  setIsOpen(false);
-                  onNewChat?.();
-                }}
-              >
-                <PlusIcon className="size-4" />
-                New Chat
-              </button>
             </div>
           </>
         )}

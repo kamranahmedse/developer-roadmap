@@ -6,6 +6,7 @@ import {
   MessageCirclePlus,
   PauseCircleIcon,
   PersonStanding,
+  Plus,
   SendIcon,
   SquareArrowOutUpRight,
   Trash2,
@@ -18,24 +19,23 @@ import { useKeydown } from '../../hooks/use-keydown';
 import {
   roadmapAIChatRenderer,
   useRoadmapAIChat,
-  type RoadmapAIChatHistoryType,
 } from '../../hooks/use-roadmap-ai-chat';
 import { cn } from '../../lib/classname';
 import { lockBodyScroll } from '../../lib/dom';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 import { slugify } from '../../lib/slugger';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
+import { chatHistoryOptions } from '../../queries/chat-history';
 import { roadmapJSONOptions } from '../../queries/roadmap';
 import { roadmapQuestionsOptions } from '../../queries/roadmap-questions';
 import { queryClient } from '../../stores/query-client';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
+import { RoadmapAIChatHistory } from '../RoadmapAIChatHistory/RoadmapAIChatHistory';
 import { CLOSE_TOPIC_DETAIL_EVENT } from '../TopicDetail/TopicDetail';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
-import { isLoggedIn } from '../../lib/jwt';
-import { showLoginPopup } from '../../lib/popup';
-import { chatHistoryOptions } from '../../queries/chat-history';
-import { RoadmapAIChatHistory } from '../RoadmapAIChatHistory/RoadmapAIChatHistory';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -381,21 +381,22 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                 <div className="flex">
                   <ChatHeaderButton
                     icon={<BookOpen className="h-3.5 w-3.5" />}
-                    className="text-sm"
+                    className="pointer-events-none text-sm"
                   >
-                    AI Tutor
+                    {chatHistory?.title || 'AI Tutor'}
                   </ChatHeaderButton>
                 </div>
 
                 <div className="flex gap-1.5">
-                  <ChatHeaderButton
-                    href={newTabUrl}
-                    target="_blank"
-                    icon={<SquareArrowOutUpRight className="h-3.5 w-3.5" />}
-                    className="hidden rounded-md py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300 sm:flex"
-                  >
-                    Open in new tab
-                  </ChatHeaderButton>
+                  {isPaidUser && activeChatHistoryId && (
+                    <ChatHeaderButton
+                      onClick={() => {
+                        setActiveChatHistoryId(undefined);
+                      }}
+                      icon={<Plus className="h-3.5 w-3.5" />}
+                      className="justify-center rounded-md bg-gray-200 px-2 py-1 text-xs text-black hover:bg-gray-300"
+                    />
+                  )}
 
                   <RoadmapAIChatHistory
                     roadmapId={roadmapId}
@@ -403,18 +404,23 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                     onChatHistoryClick={(chatHistoryId) => {
                       setIsChatHistoryLoading(true);
                       setActiveChatHistoryId(chatHistoryId);
+                      setShowScrollToBottom(false);
                     }}
                     onDelete={(chatHistoryId) => {
                       if (activeChatHistoryId === chatHistoryId) {
                         setActiveChatHistoryId(undefined);
                       }
                     }}
-                    onNewChat={() => {
-                      setActiveChatHistoryId(undefined);
-                    }}
                     onUpgrade={() => {
                       setShowUpgradeModal(true);
                     }}
+                  />
+
+                  <ChatHeaderButton
+                    href={newTabUrl}
+                    target="_blank"
+                    icon={<SquareArrowOutUpRight className="h-3.5 w-3.5" />}
+                    className="hidden justify-center rounded-md bg-gray-200 px-1 py-1 text-gray-500 hover:bg-gray-300 sm:flex"
                   />
 
                   <ChatHeaderButton
