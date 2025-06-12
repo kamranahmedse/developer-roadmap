@@ -4,6 +4,7 @@ import { queryClient } from '../../stores/query-client';
 import { ChatHistoryItem } from './ChatHistoryItem';
 import {
   Loader2Icon,
+  LockIcon,
   PanelLeftCloseIcon,
   PanelLeftIcon,
   PlusIcon,
@@ -24,10 +25,18 @@ type ListChatHistoryProps = {
   activeChatHistoryId?: string;
   onChatHistoryClick: (chatHistoryId: string | null) => void;
   onDelete?: (chatHistoryId: string) => void;
+  isPaidUser?: boolean;
+  onUpgrade?: () => void;
 };
 
 export function ListChatHistory(props: ListChatHistoryProps) {
-  const { activeChatHistoryId, onChatHistoryClick, onDelete } = props;
+  const {
+    activeChatHistoryId,
+    onChatHistoryClick,
+    onDelete,
+    isPaidUser,
+    onUpgrade,
+  } = props;
 
   const [isOpen, setIsOpen] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
@@ -85,14 +94,49 @@ export function ListChatHistory(props: ListChatHistoryProps) {
     (group) => group.histories.length === 0,
   );
 
-  return (
-    <div
-      className={cn(
-        'flex w-[255px] shrink-0 flex-col justify-start border-r border-gray-200 bg-white p-2',
-        'max-md:absolute max-md:inset-0 max-md:z-20 max-md:w-full',
-        !isOpen && 'hidden',
-      )}
+  const classNames = cn(
+    'flex w-[255px] shrink-0 flex-col justify-start border-r border-gray-200 bg-white p-2',
+    'max-md:absolute max-md:inset-0 max-md:z-20 max-md:w-full',
+    !isOpen && 'hidden',
+  );
+
+  const closeButton = (
+    <button
+      className="flex size-8 items-center justify-center rounded-lg p-1 text-gray-500 hover:bg-gray-100 hover:text-black"
+      onClick={() => {
+        setIsOpen(false);
+      }}
     >
+      <PanelLeftCloseIcon className="h-4.5 w-4.5" />
+    </button>
+  );
+
+  if (!isPaidUser) {
+    return (
+      <div className={cn(classNames, 'relative')}>
+        <div className="absolute top-2 right-2">{closeButton}</div>
+
+        <div className="flex grow flex-col items-center justify-center">
+          <LockIcon className="size-8 text-gray-500" />
+          <p className="mt-4 text-center text-sm text-balance text-gray-500">
+            Upgrade to Pro to keep your chat history.
+          </p>
+          <button
+            type="button"
+            className="mt-2 shrink-0 cursor-pointer rounded-md bg-yellow-200 px-2.5 py-1.5 text-sm font-medium text-yellow-800 hover:bg-yellow-200"
+            onClick={() => {
+              onUpgrade?.();
+            }}
+          >
+            Upgrade to Pro
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className={classNames}>
       {isLoading && <ListChatHistorySkeleton />}
       {!isLoading && isError && <ChatHistoryError error={error} />}
 
@@ -101,18 +145,11 @@ export function ListChatHistory(props: ListChatHistoryProps) {
           <div>
             <div className="mb-4 flex items-center justify-between">
               <h1 className="font-medium text-gray-900">Chat History</h1>
-              <button
-                className="flex size-8 items-center justify-center rounded-lg p-1 hover:bg-gray-100"
-                onClick={() => {
-                  setIsOpen(false);
-                }}
-              >
-                <PanelLeftCloseIcon className="h-4.5 w-4.5" />
-              </button>
+              {closeButton}
             </div>
 
             <button
-              className="flex w-full items-center hover:opacity-80 justify-center gap-2 rounded-lg bg-black p-2 text-sm text-white"
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-black p-2 text-sm text-white hover:opacity-80"
               onClick={() => {
                 if (isMobile) {
                   setIsOpen(false);

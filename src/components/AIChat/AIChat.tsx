@@ -32,7 +32,6 @@ import {
 import { RoadmapRecommendations } from '../RoadmapAIChat/RoadmapRecommendations';
 import { AIChatCourse } from './AIChatCouse';
 import { showLoginPopup } from '../../lib/popup';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { readChatStream } from '../../lib/chat';
 import { chatHistoryOptions } from '../../queries/chat-history';
 import { cn } from '../../lib/classname';
@@ -51,6 +50,7 @@ type AIChatProps = {
   messages?: RoadmapAIChatHistoryType[];
   chatHistoryId?: string;
   setChatHistoryId?: (chatHistoryId: string) => void;
+  onUpgrade?: () => void;
 };
 
 export function AIChat(props: AIChatProps) {
@@ -58,6 +58,7 @@ export function AIChat(props: AIChatProps) {
     messages: defaultMessages,
     chatHistoryId: defaultChatHistoryId,
     setChatHistoryId: setDefaultChatHistoryId,
+    onUpgrade,
   } = props;
 
   const toast = useToast();
@@ -70,7 +71,6 @@ export function AIChat(props: AIChatProps) {
     RoadmapAIChatHistoryType[]
   >(defaultMessages ?? []);
 
-  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isPersonalizedResponseFormOpen, setIsPersonalizedResponseFormOpen] =
     useState(false);
   const [isUploadResumeModalOpen, setIsUploadResumeModalOpen] = useState(false);
@@ -128,7 +128,7 @@ export function AIChat(props: AIChatProps) {
 
     if (isLimitExceeded) {
       if (!isPaidUser) {
-        setShowUpgradeModal(true);
+        onUpgrade?.();
       }
 
       toast.error('Limit reached for today. Please wait until tomorrow.');
@@ -342,7 +342,7 @@ export function AIChat(props: AIChatProps) {
     (index: number) => {
       if (isLimitExceeded) {
         if (!isPaidUser) {
-          setShowUpgradeModal(true);
+          onUpgrade?.();
         }
 
         toast.error('Limit reached for today. Please wait until tomorrow.');
@@ -429,10 +429,6 @@ export function AIChat(props: AIChatProps) {
         />
       )}
 
-      {showUpgradeModal && (
-        <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
-      )}
-
       <div
         className="pointer-events-none absolute right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4"
         ref={chatContainerRef}
@@ -446,7 +442,7 @@ export function AIChat(props: AIChatProps) {
               </div>
               <button
                 type="button"
-                onClick={() => setShowUpgradeModal(true)}
+                onClick={() => onUpgrade?.()}
                 className="shrink-0 cursor-pointer rounded-md bg-yellow-200 px-2 py-1 text-xs font-medium text-yellow-800 hover:bg-yellow-200"
               >
                 Upgrade to Pro
@@ -540,7 +536,7 @@ export function AIChat(props: AIChatProps) {
                 <button
                   type="button"
                   onClick={() => {
-                    setShowUpgradeModal(true);
+                    onUpgrade?.();
                   }}
                   className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
                 >

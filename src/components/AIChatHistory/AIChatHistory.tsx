@@ -9,6 +9,7 @@ import { ListChatHistory } from './ListChatHistory';
 import { billingDetailsOptions } from '../../queries/billing';
 import { ChatHistoryError } from './ChatHistoryError';
 import { useClientMount } from '../../hooks/use-client-mount';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type AIChatHistoryProps = {
   chatHistoryId?: string;
@@ -19,6 +20,7 @@ export function AIChatHistory(props: AIChatHistoryProps) {
 
   const isClientMounted = useClientMount();
   const [keyTrigger, setKeyTrigger] = useState(0);
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isChatHistoryLoading, setIsChatHistoryLoading] = useState(true);
   const [chatHistoryId, setChatHistoryId] = useState<string | undefined>(
     defaultChatHistoryId || undefined,
@@ -116,13 +118,15 @@ export function AIChatHistory(props: AIChatHistoryProps) {
   return (
     <AIChatLayout>
       <div className="relative flex grow">
-        {isPaidUser && (
-          <ListChatHistory
-            activeChatHistoryId={chatHistoryId}
-            onChatHistoryClick={handleChatHistoryClick}
-            onDelete={handleDelete}
-          />
-        )}
+        <ListChatHistory
+          activeChatHistoryId={chatHistoryId}
+          onChatHistoryClick={handleChatHistoryClick}
+          onDelete={handleDelete}
+          isPaidUser={isPaidUser}
+          onUpgrade={() => {
+            setShowUpgradeModal(true);
+          }}
+        />
 
         <div className="relative flex grow">
           {showLoader && (
@@ -151,10 +155,17 @@ export function AIChatHistory(props: AIChatHistoryProps) {
                   },
                 });
               }}
+              onUpgrade={() => {
+                setShowUpgradeModal(true);
+              }}
             />
           )}
         </div>
       </div>
+
+      {showUpgradeModal && (
+        <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+      )}
     </AIChatLayout>
   );
 }
