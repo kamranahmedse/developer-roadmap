@@ -189,6 +189,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
               activeChatHistoryId={activeChatHistoryId}
               onNewChat={onNewChat}
               onDelete={onDeleteChatHistory}
+              onUpgrade={onUpgrade}
             />
           </div>
         )}

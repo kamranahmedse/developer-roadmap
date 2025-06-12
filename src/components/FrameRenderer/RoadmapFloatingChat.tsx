@@ -412,6 +412,9 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                     onNewChat={() => {
                       setActiveChatHistoryId(undefined);
                     }}
+                    onUpgrade={() => {
+                      setShowUpgradeModal(true);
+                    }}
                   />
 
                   <ChatHeaderButton

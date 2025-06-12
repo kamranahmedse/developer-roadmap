@@ -113,25 +113,11 @@ export function ListChatHistory(props: ListChatHistoryProps) {
 
   if (!isPaidUser) {
     return (
-      <div className={cn(classNames, 'relative')}>
-        <div className="absolute top-2 right-2">{closeButton}</div>
-
-        <div className="flex grow flex-col items-center justify-center">
-          <LockIcon className="size-8 text-gray-500" />
-          <p className="mt-4 text-center text-sm text-balance text-gray-500">
-            Upgrade to Pro to keep your chat history.
-          </p>
-          <button
-            type="button"
-            className="mt-2 shrink-0 cursor-pointer rounded-md bg-yellow-200 px-2.5 py-1.5 text-sm font-medium text-yellow-800 hover:bg-yellow-200"
-            onClick={() => {
-              onUpgrade?.();
-            }}
-          >
-            Upgrade to Pro
-          </button>
-        </div>
-      </div>
+      <UpgradeToProMessage
+        className={classNames}
+        closeButton={closeButton}
+        onUpgrade={onUpgrade}
+      />
     );
   }
 
@@ -221,6 +207,40 @@ export function ListChatHistory(props: ListChatHistoryProps) {
           </div>
         </>
       )}
+    </div>
+  );
+}
+
+type UpgradeToProMessageProps = {
+  className?: string;
+  onUpgrade?: () => void;
+  closeButton?: React.ReactNode;
+};
+
+export function UpgradeToProMessage(props: UpgradeToProMessageProps) {
+  const { className, onUpgrade, closeButton } = props;
+
+  return (
+    <div className={cn('relative', className)}>
+      {closeButton && (
+        <div className="absolute top-2 right-2">{closeButton}</div>
+      )}
+
+      <div className="flex grow flex-col items-center justify-center">
+        <LockIcon className="size-8 text-gray-500" />
+        <p className="mt-4 text-center text-sm text-balance text-gray-500">
+          Upgrade to Pro to keep your chat history.
+        </p>
+        <button
+          type="button"
+          className="mt-2 shrink-0 cursor-pointer rounded-md bg-yellow-200 px-2.5 py-1.5 text-sm font-medium text-yellow-800 hover:bg-yellow-200"
+          onClick={() => {
+            onUpgrade?.();
+          }}
+        >
+          Upgrade to Pro
+        </button>
+      </div>
     </div>
   );
 }

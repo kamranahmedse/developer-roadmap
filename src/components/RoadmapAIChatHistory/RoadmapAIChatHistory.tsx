@@ -1,13 +1,15 @@
 import { HistoryIcon, Loader2Icon, PlusIcon } from 'lucide-react';
 import { Popover, PopoverContent, PopoverTrigger } from '../Popover';
 import { useEffect, useMemo, useState } from 'react';
-import { useInfiniteQuery } from '@tanstack/react-query';
+import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
 import { listChatHistoryOptions } from '../../queries/chat-history';
 import { isLoggedIn } from '../../lib/jwt';
 import { groupChatHistory } from '../../helper/grouping';
 import { ChatHistoryGroup } from '../AIChatHistory/ChatHistoryGroup';
 import { queryClient } from '../../stores/query-client';
 import { SearchAIChatHistory } from '../AIChatHistory/SearchAIChatHistory';
+import { billingDetailsOptions } from '../../queries/billing';
+import { UpgradeToProMessage } from '../AIChatHistory/ListChatHistory';
 
 type RoadmapAIChatHistoryProps = {
   roadmapId: string;
@@ -15,6 +17,7 @@ type RoadmapAIChatHistoryProps = {
   onChatHistoryClick: (id: string) => void;
   onDelete?: (id: string) => void;
   onNewChat?: () => void;
+  onUpgrade?: () => void;
 };
 
 export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
@@ -24,12 +27,16 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
     onChatHistoryClick,
     onDelete,
     onNewChat,
+    onUpgrade,
   } = props;
 
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [query, setQuery] = useState('');
 
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+  const isPaidUser = userBillingDetails?.status === 'active';
   const {
     data: chatHistory,
     hasNextPage,
@@ -48,12 +55,12 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
   );
 
   useEffect(() => {
-    if (!chatHistory) {
+    if (!chatHistory || isBillingDetailsLoading) {
       return;
     }
 
     setIsLoading(false);
-  }, [chatHistory]);
+  }, [chatHistory, isBillingDetailsLoading]);
 
   const groupedChatHistory = useMemo(() => {
     const allHistories = chatHistory?.pages?.flatMap((page) => page.data);
@@ -65,8 +72,9 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
 
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
-      <PopoverTrigger className="flex size-8 items-center justify-center rounded-lg text-gray-500 hover:bg-gray-200 hover:text-black">
-        <HistoryIcon className="size-4" />
+      <PopoverTrigger className="flex h-8 items-center justify-center gap-2 rounded-md px-2 text-xs text-gray-500 hover:bg-gray-200 hover:text-black">
+        <HistoryIcon className="size-3.5" />
+        Chat History
       </PopoverTrigger>
       <PopoverContent
         className="z-[999] flex max-h-[400px] w-80 flex-col overflow-hidden p-0"
@@ -78,7 +86,18 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
             <Loader2Icon className="size-6 animate-spin stroke-[2.5]" />
           </div>
         )}
-        {!isLoading && (
+
+        {!isLoading && !isPaidUser && (
+          <UpgradeToProMessage
+            className="mt-0 px-10 py-10"
+            onUpgrade={() => {
+              setIsOpen(false);
+              onUpgrade?.();
+            }}
+          />
+        )}
+
+        {!isLoading && isPaidUser && (
           <>
             <SearchAIChatHistory
               onSearch={setQuery}
