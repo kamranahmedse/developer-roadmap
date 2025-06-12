@@ -229,7 +229,7 @@ export function UpgradeToProMessage(props: UpgradeToProMessageProps) {
         {closeButton}
       </div>
 
-      <div className="flex grow flex-col items-center justify-center px-2">
+      <div className="flex grow flex-col items-center justify-center px-4">
         <div className="flex flex-col items-center">
           <div className="mb-3 rounded-full bg-yellow-100 p-3">
             <LockIcon className="size-6 text-yellow-600" />
@@ -242,7 +242,7 @@ export function UpgradeToProMessage(props: UpgradeToProMessageProps) {
           </p>
         </div>
 
-        <div className="w-full space-y-2 my-5">
+        <div className="my-5 w-full space-y-2">
           <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2">
             <CheckIcon additionalClasses="size-4 text-green-500" />
             <span className="text-sm text-gray-600">Unlimited history</span>

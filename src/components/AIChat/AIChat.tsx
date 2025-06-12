@@ -101,11 +101,20 @@ export function AIChat(props: AIChatProps) {
     useMutation(
       {
         mutationFn: (messages: RoadmapAIChatHistoryType[]) => {
+          if (!defaultChatHistoryId) {
+            return Promise.resolve({
+              status: 200,
+              message: 'Chat history not found',
+            });
+          }
+
           return httpPost(`/v1-delete-chat-message/${defaultChatHistoryId}`, {
             messages,
           });
         },
         onSuccess: () => {
+          textareaMessageRef.current?.focus();
+
           queryClient.invalidateQueries(
             chatHistoryOptions(defaultChatHistoryId),
           );
