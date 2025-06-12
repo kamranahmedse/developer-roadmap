@@ -19,6 +19,7 @@ import {
   LockIcon,
   PauseCircleIcon,
   SendIcon,
+  FileIcon,
 } from 'lucide-react';
 import { ChatEditor } from '../ChatEditor/ChatEditor';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
@@ -402,6 +403,15 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
         {activeTab === 'chat' && (
           <>
+            {!!chatHistory && isPaidUser && !isChatHistoryLoading && (
+              <div className="flex flex-col border-b border-gray-200 px-3 py-2 text-sm text-gray-500">
+                <h3 className="flex min-w-0 items-center gap-2">
+                  <FileIcon className="size-4 shrink-0" />
+                  <span className="truncate">{chatHistory.title}</span>
+                </h3>
+              </div>
+            )}
+
             <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
               {isLoading && <Loader />}
               {isChatHistoryLoading && (
