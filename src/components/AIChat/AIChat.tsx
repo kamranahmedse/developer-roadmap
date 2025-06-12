@@ -433,24 +433,6 @@ export function AIChat(props: AIChatProps) {
         className="pointer-events-none absolute right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4"
         ref={chatContainerRef}
       >
-        {shouldShowUpgradeBanner && (
-          <div className="mb-2 rounded-lg border border-yellow-200 bg-yellow-50 p-3 text-sm text-yellow-800">
-            <div className="pointer-events-auto flex items-center justify-between gap-2">
-              <div className="flex items-center gap-2">
-                <LockIcon className="size-4" strokeWidth={2.5} />
-                <p>Your chat history is not saved.</p>
-              </div>
-              <button
-                type="button"
-                onClick={() => onUpgrade?.()}
-                className="shrink-0 cursor-pointer rounded-md bg-yellow-200 px-2 py-1 text-xs font-medium text-yellow-800 hover:bg-yellow-200"
-              >
-                Upgrade to Pro
-              </button>
-            </div>
-          </div>
-        )}
-
         <div className="mb-2 flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <QuickActionButton

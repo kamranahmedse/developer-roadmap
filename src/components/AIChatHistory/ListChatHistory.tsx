@@ -17,6 +17,7 @@ import { groupChatHistory } from '../../helper/grouping';
 import { SearchAIChatHistory } from './SearchAIChatHistory';
 import { ChatHistoryGroup } from './ChatHistoryGroup';
 import { isLoggedIn } from '../../lib/jwt';
+import { CheckIcon } from '../ReactIcons/CheckIcon';
 
 type ListChatHistoryProps = {
   activeChatHistoryId?: string;
@@ -228,14 +229,33 @@ export function UpgradeToProMessage(props: UpgradeToProMessageProps) {
         {closeButton}
       </div>
 
-      <div className="flex grow flex-col items-center justify-center">
-        <LockIcon className="size-8 text-gray-400" />
-        <p className="mt-4 text-center text-sm text-balance text-gray-500">
-          Upgrade to Pro to keep your chat history.
-        </p>
+      <div className="flex grow flex-col items-center justify-center px-2">
+        <div className="flex flex-col items-center">
+          <div className="mb-3 rounded-full bg-yellow-100 p-3">
+            <LockIcon className="size-6 text-yellow-600" />
+          </div>
+          <h2 className="text-lg font-semibold text-gray-900">
+            Unlock History
+          </h2>
+          <p className="mt-2 text-center text-sm text-balance text-gray-600">
+            Save conversations and pick up right where you left off.
+          </p>
+        </div>
+
+        <div className="w-full space-y-2 my-5">
+          <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2">
+            <CheckIcon additionalClasses="size-4 text-green-500" />
+            <span className="text-sm text-gray-600">Unlimited history</span>
+          </div>
+          <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2">
+            <CheckIcon additionalClasses="size-4 text-green-500" />
+            <span className="text-sm text-gray-600">Search old chats</span>
+          </div>
+        </div>
+
         <button
           type="button"
-          className="mt-2 shrink-0 cursor-pointer rounded-md bg-yellow-300 px-3 py-1.5 text-sm font-medium text-black hover:bg-yellow-400"
+          className="w-full cursor-pointer rounded-lg bg-yellow-400 px-4 py-2 text-sm font-medium text-black hover:bg-yellow-500"
           onClick={() => {
             onUpgrade?.();
           }}
