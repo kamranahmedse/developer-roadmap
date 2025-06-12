@@ -54,7 +54,7 @@ export function ChatHistoryAction(props: ChatHistoryActionProps) {
       <DropdownMenuTrigger className="rounded-lg p-2 opacity-0 group-hover/item:opacity-100 hover:bg-gray-100 focus:outline-none data-[state=open]:bg-gray-100 data-[state=open]:opacity-100">
         <EllipsisVerticalIcon className="h-4 w-4" />
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="z-[9999]">
         {!isDeleting && (
           <DropdownMenuItem
             className="cursor-pointer text-red-500 focus:bg-red-50 focus:text-red-500"
