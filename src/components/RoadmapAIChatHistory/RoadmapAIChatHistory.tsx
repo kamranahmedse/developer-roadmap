@@ -10,6 +10,7 @@ import { queryClient } from '../../stores/query-client';
 import { SearchAIChatHistory } from '../AIChatHistory/SearchAIChatHistory';
 import { billingDetailsOptions } from '../../queries/billing';
 import { UpgradeToProMessage } from '../AIChatHistory/ListChatHistory';
+import { showLoginPopup } from '../../lib/popup';
 
 type RoadmapAIChatHistoryProps = {
   roadmapId: string;
@@ -71,7 +72,17 @@ export function RoadmapAIChatHistory(props: RoadmapAIChatHistoryProps) {
   );
 
   return (
-    <Popover open={isOpen} onOpenChange={setIsOpen}>
+    <Popover
+      open={isOpen}
+      onOpenChange={(open) => {
+        if (!isLoggedIn()) {
+          showLoginPopup();
+          return;
+        }
+
+        setIsOpen(open);
+      }}
+    >
       <PopoverTrigger className="flex h-8 items-center justify-center gap-2 rounded-md px-2 text-xs text-gray-500 hover:bg-gray-200 hover:text-black">
         <HistoryIcon className="size-3.5" />
         Chat History
