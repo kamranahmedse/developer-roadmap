@@ -57,6 +57,7 @@ export function QuickHelpPrompts(props: QuickHelpPromptsProps) {
       <div className="mt-6 flex flex-wrap items-center gap-2">
         {quickActions.map((action, index) => (
           <button
+            key={action.label}
             className={cn(
               'pointer-events-auto flex shrink-0 cursor-pointer items-center gap-2 rounded-lg border bg-white px-2 py-1.5 text-sm hover:bg-gray-100 hover:text-black',
               selectedActionIndex === index
@@ -73,6 +74,7 @@ export function QuickHelpPrompts(props: QuickHelpPromptsProps) {
       <div className="mt-6 divide-y divide-gray-200">
         {selectedAction.questions.map((question) => (
           <button
+            type="button"
             key={question}
             className="block w-full cursor-pointer p-2 text-left text-sm text-gray-500 hover:bg-gray-100 hover:text-black"
             onClick={() => onQuestionClick(question)}

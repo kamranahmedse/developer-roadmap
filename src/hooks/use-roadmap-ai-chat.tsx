@@ -16,6 +16,47 @@ import { RoadmapTopicList } from '../components/RoadmapAIChat/RoadmapTopicList';
 import { ShareResourceLink } from '../components/RoadmapAIChat/ShareResourceLink';
 import { RoadmapRecommendations } from '../components/RoadmapAIChat/RoadmapRecommendations';
 import type { AllowedAIChatRole } from '../components/GenerateCourse/AICourseLessonChat';
+import { readChatStream } from '../lib/chat';
+
+type RoadmapAIChatRendererOptions = {
+  totalTopicCount: number;
+  roadmapId: string;
+  onSelectTopic: (topicId: string, topicTitle: string) => void;
+};
+
+export function roadmapAIChatRenderer(
+  options: RoadmapAIChatRendererOptions,
+): Record<string, MessagePartRenderer> {
+  const { totalTopicCount, roadmapId, onSelectTopic } = options;
+
+  return {
+    'user-progress': () => (
+      <UserProgressList
+        totalTopicCount={totalTopicCount}
+        roadmapId={roadmapId}
+      />
+    ),
+    'update-progress': (opts) => (
+      <UserProgressActionList roadmapId={roadmapId} {...opts} />
+    ),
+    'roadmap-topics': (opts) => (
+      <RoadmapTopicList
+        roadmapId={roadmapId}
+        onTopicClick={(topicId, text) => {
+          const title = text.split(' > ').pop();
+          if (!title) {
+            return;
+          }
+
+          onSelectTopic(topicId, title);
+        }}
+        {...opts}
+      />
+    ),
+    'resource-progress-link': () => <ShareResourceLink roadmapId={roadmapId} />,
+    'roadmap-recommendations': (opts) => <RoadmapRecommendations {...opts} />,
+  };
+}
 
 export type RoadmapAIChatHistoryType = {
   role: AllowedAIChatRole;
@@ -27,14 +68,23 @@ export type RoadmapAIChatHistoryType = {
 };
 
 type Options = {
+  activeChatHistoryId?: string;
   roadmapId: string;
   totalTopicCount: number;
   scrollareaRef: React.RefObject<HTMLDivElement | null>;
   onSelectTopic: (topicId: string, topicTitle: string) => void;
+  onChatHistoryIdChange?: (chatHistoryId: string) => void;
 };
 
 export function useRoadmapAIChat(options: Options) {
-  const { roadmapId, totalTopicCount, scrollareaRef, onSelectTopic } = options;
+  const {
+    activeChatHistoryId,
+    roadmapId,
+    totalTopicCount,
+    scrollareaRef,
+    onSelectTopic,
+    onChatHistoryIdChange,
+  } = options;
   const toast = useToast();
 
   const [aiChatHistory, setAiChatHistory] = useState<
@@ -99,33 +149,7 @@ export function useRoadmapAIChat(options: Options) {
   }, [isStreamingMessage, streamedMessage, scrollToBottom]);
 
   const renderer: Record<string, MessagePartRenderer> = useMemo(
-    () => ({
-      'user-progress': () => (
-        <UserProgressList
-          totalTopicCount={totalTopicCount}
-          roadmapId={roadmapId}
-        />
-      ),
-      'update-progress': (opts) => (
-        <UserProgressActionList roadmapId={roadmapId} {...opts} />
-      ),
-      'roadmap-topics': (opts) => (
-        <RoadmapTopicList
-          roadmapId={roadmapId}
-          onTopicClick={(topicId, text) => {
-            const title = text.split(' > ').pop();
-            if (title) {
-              onSelectTopic(topicId, title);
-            }
-          }}
-          {...opts}
-        />
-      ),
-      'resource-progress-link': () => (
-        <ShareResourceLink roadmapId={roadmapId} />
-      ),
-      'roadmap-recommendations': (opts) => <RoadmapRecommendations {...opts} />,
-    }),
+    () => roadmapAIChatRenderer({ roadmapId, totalTopicCount, onSelectTopic }),
     [roadmapId, onSelectTopic, totalTopicCount],
   );
 
@@ -141,7 +165,13 @@ export function useRoadmapAIChat(options: Options) {
           headers: { 'Content-Type': 'application/json' },
           credentials: 'include',
           signal: abortController?.signal,
-          body: JSON.stringify({ roadmapId, messages: messages.slice(-10) }),
+          body: JSON.stringify({
+            roadmapId,
+            messages,
+            ...(activeChatHistoryId
+              ? { chatHistoryId: activeChatHistoryId }
+              : {}),
+          }),
         },
       );
 
@@ -158,23 +188,31 @@ export function useRoadmapAIChat(options: Options) {
         return;
       }
 
-      const reader = response.body?.getReader();
-      if (!reader) {
+      const stream = response.body;
+      if (!stream) {
         setIsStreamingMessage(false);
         toast.error('Something went wrong');
         return;
       }
 
-      await readStream(reader, {
-        onStream: async (content) => {
-          if (abortController?.signal.aborted) return;
+      await readChatStream(stream, {
+        onMessage: async (content) => {
+          if (abortController?.signal.aborted) {
+            return;
+          }
+
           const jsx = await renderMessage(content, renderer, {
             isLoading: true,
           });
-          flushSync(() => setStreamedMessage(jsx));
+          flushSync(() => {
+            setStreamedMessage(jsx);
+          });
         },
-        onStreamEnd: async (content) => {
-          if (abortController?.signal.aborted) return;
+        onMessageEnd: async (content) => {
+          if (abortController?.signal.aborted) {
+            return;
+          }
+
           const jsx = await renderMessage(content, renderer, {
             isLoading: false,
           });
@@ -188,6 +226,24 @@ export function useRoadmapAIChat(options: Options) {
             setAiChatHistory(newMessages);
           });
           queryClient.invalidateQueries(getAiCourseLimitOptions());
+          queryClient.invalidateQueries({
+            predicate: (query) => {
+              return (
+                query.queryKey[0] === 'list-chat-history' &&
+                (query.queryKey[1] as { roadmapId: string })?.roadmapId ===
+                  roadmapId
+              );
+            },
+          });
+        },
+        onDetails: (details) => {
+          const detailsJson = JSON.parse(details);
+          const chatHistoryId = detailsJson?.chatHistoryId;
+          if (!chatHistoryId) {
+            return;
+          }
+
+          onChatHistoryIdChange?.(chatHistoryId);
         },
       });
 
@@ -256,10 +312,11 @@ export function useRoadmapAIChat(options: Options) {
     handleAbort,
     clearChat,
     scrollToBottom,
+    setAiChatHistory,
   };
 }
 
-function htmlFromTiptapJSON(json: JSONContent): string {
+export function htmlFromTiptapJSON(json: JSONContent): string {
   const content = json.content;
   let text = '';
   for (const child of content || []) {

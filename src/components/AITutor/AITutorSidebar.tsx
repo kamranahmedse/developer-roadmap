@@ -94,7 +94,7 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
 
       <aside
         className={cn(
-          'flex w-[var(--ai-sidebar-width)] shrink-0 flex-col border-r border-slate-200',
+          'flex w-[255px] shrink-0 flex-col border-r border-slate-200',
           isFloating
             ? 'fixed top-0 bottom-0 left-0 z-50 flex border-r-0 bg-white shadow-xl'
             : 'hidden lg:flex',

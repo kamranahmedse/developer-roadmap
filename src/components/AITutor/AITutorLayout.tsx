@@ -35,11 +35,6 @@ export function AITutorLayout(props: AITutorLayoutProps) {
           'flex flex-grow flex-row lg:h-screen',
           containerClassName,
         )}
-        style={
-          {
-            '--ai-sidebar-width': '255px',
-          } as React.CSSProperties
-        }
       >
         <AITutorSidebar
           onClose={() => setIsSidebarFloating(false)}

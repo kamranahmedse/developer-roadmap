@@ -3,9 +3,11 @@ import type { JSONContent } from '@tiptap/core';
 import {
   BookOpen,
   ChevronDown,
+  Loader2Icon,
   MessageCirclePlus,
   PauseCircleIcon,
   PersonStanding,
+  Plus,
   SendIcon,
   SquareArrowOutUpRight,
   Trash2,
@@ -16,23 +18,25 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { useKeydown } from '../../hooks/use-keydown';
 import {
+  roadmapAIChatRenderer,
   useRoadmapAIChat,
-  type RoadmapAIChatHistoryType,
 } from '../../hooks/use-roadmap-ai-chat';
 import { cn } from '../../lib/classname';
 import { lockBodyScroll } from '../../lib/dom';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 import { slugify } from '../../lib/slugger';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
+import { chatHistoryOptions } from '../../queries/chat-history';
 import { roadmapJSONOptions } from '../../queries/roadmap';
 import { roadmapQuestionsOptions } from '../../queries/roadmap-questions';
 import { queryClient } from '../../stores/query-client';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
+import { RoadmapAIChatHistory } from '../RoadmapAIChatHistory/RoadmapAIChatHistory';
 import { CLOSE_TOPIC_DETAIL_EVENT } from '../TopicDetail/TopicDetail';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
-import { isLoggedIn } from '../../lib/jwt';
-import { showLoginPopup } from '../../lib/popup';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -47,7 +51,7 @@ function ChatHeaderButton(props: ChatHeaderButtonProps) {
   const { onClick, href, icon, children, className, target } = props;
 
   const classNames = cn(
-    'flex items-center gap-1.5 text-xs text-gray-600 transition-colors hover:text-gray-900',
+    'flex shrink-0 items-center gap-1.5 text-xs text-gray-600 transition-colors hover:text-gray-900 min-w-8',
     className,
   );
 
@@ -227,6 +231,22 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     });
   };
 
+  const [isChatHistoryLoading, setIsChatHistoryLoading] = useState(true);
+  const [activeChatHistoryId, setActiveChatHistoryId] = useState<
+    string | undefined
+  >();
+  const { data: chatHistory } = useQuery(
+    chatHistoryOptions(
+      activeChatHistoryId,
+      roadmapAIChatRenderer({
+        roadmapId,
+        totalTopicCount,
+        onSelectTopic,
+      }),
+    ),
+    queryClient,
+  );
+
   const {
     aiChatHistory,
     isStreamingMessage,
@@ -237,12 +257,38 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     handleAbort,
     scrollToBottom,
     clearChat,
+    setAiChatHistory,
   } = useRoadmapAIChat({
+    activeChatHistoryId,
     roadmapId,
     totalTopicCount,
     scrollareaRef,
     onSelectTopic,
+    onChatHistoryIdChange: (chatHistoryId) => {
+      setActiveChatHistoryId(chatHistoryId);
+    },
   });
+
+  useEffect(() => {
+    if (!chatHistory) {
+      return;
+    }
+
+    setAiChatHistory(chatHistory?.messages ?? []);
+    setIsChatHistoryLoading(false);
+    setTimeout(() => {
+      scrollToBottom('instant');
+    }, 0);
+  }, [chatHistory]);
+
+  useEffect(() => {
+    if (activeChatHistoryId) {
+      return;
+    }
+
+    setAiChatHistory([]);
+    setIsChatHistoryLoading(false);
+  }, [activeChatHistoryId, setAiChatHistory, setIsChatHistoryLoading]);
 
   useEffect(() => {
     lockBodyScroll(isOpen);
@@ -293,6 +339,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
   };
 
   const hasMessages = aiChatHistory.length > 0;
+  const newTabUrl = `/${roadmapId}/ai${activeChatHistoryId ? `?chatId=${activeChatHistoryId}` : ''}`;
 
   return (
     <>
@@ -330,32 +377,69 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
       >
         {isOpen && (
           <>
-            <div className="flex h-full w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
-              {/* Messages area */}
+            <div className="relative flex h-full w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
+              {isChatHistoryLoading && (
+                <div className="absolute inset-0 z-50 flex items-center justify-center bg-white">
+                  <div className="flex items-center rounded-md border border-gray-200 py-2 pr-3 pl-2">
+                    <Loader2Icon className="size-4 animate-spin stroke-[2.5] text-gray-400" />
+                    <span className="ml-2 text-sm text-gray-500">
+                      Loading history..
+                    </span>
+                  </div>
+                </div>
+              )}
+
               <div className="flex items-center justify-between px-3 py-2">
                 <div className="flex">
                   <ChatHeaderButton
                     icon={<BookOpen className="h-3.5 w-3.5" />}
-                    className="text-sm"
+                    className="pointer-events-none text-sm"
                   >
-                    AI Tutor
+                    {chatHistory?.title || 'AI Tutor'}
                   </ChatHeaderButton>
                 </div>
 
                 <div className="flex gap-1.5">
+                  {isPaidUser && activeChatHistoryId && (
+                    <ChatHeaderButton
+                      onClick={() => {
+                        setActiveChatHistoryId(undefined);
+                        inputRef.current?.focus();
+                      }}
+                      icon={<Plus className="h-3.5 w-3.5" />}
+                      className="justify-center rounded-md bg-gray-200 px-2 py-1 text-xs text-black hover:bg-gray-300"
+                    />
+                  )}
+
+                  <RoadmapAIChatHistory
+                    roadmapId={roadmapId}
+                    activeChatHistoryId={activeChatHistoryId}
+                    onChatHistoryClick={(chatHistoryId) => {
+                      setIsChatHistoryLoading(true);
+                      setActiveChatHistoryId(chatHistoryId);
+                      setShowScrollToBottom(false);
+                    }}
+                    onDelete={(chatHistoryId) => {
+                      if (activeChatHistoryId === chatHistoryId) {
+                        setActiveChatHistoryId(undefined);
+                      }
+                    }}
+                    onUpgrade={() => {
+                      setShowUpgradeModal(true);
+                    }}
+                  />
+
                   <ChatHeaderButton
-                    href={`/${roadmapId}/ai`}
+                    href={newTabUrl}
                     target="_blank"
                     icon={<SquareArrowOutUpRight className="h-3.5 w-3.5" />}
-                    className="hidden rounded-md py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300 sm:flex"
-                  >
-                    Open in new tab
-                  </ChatHeaderButton>
+                    className="hidden justify-center rounded-md bg-gray-200 px-1 py-1 text-gray-500 hover:bg-gray-300 sm:flex"
+                  />
 
                   <ChatHeaderButton
                     onClick={() => setIsOpen(false)}
                     icon={<X className="h-3.5 w-3.5" />}
-                    className="rounded-md bg-red-100 px-1 py-1 text-red-500 hover:bg-red-200"
+                    className="flex items-center justify-center rounded-md bg-red-100 px-1 py-1 text-red-500 hover:bg-red-200"
                   />
                 </div>
               </div>
@@ -412,13 +496,11 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                       </div>
                     )}
 
-                  {aiChatHistory.map(
-                    (chat: RoadmapAIChatHistoryType, index: number) => (
-                      <Fragment key={`chat-${index}`}>
-                        <RoadmapAIChatCard {...chat} />
-                      </Fragment>
-                    ),
-                  )}
+                  {aiChatHistory.map((chat, index) => (
+                    <Fragment key={`chat-${index}`}>
+                      <RoadmapAIChatCard {...chat} />
+                    </Fragment>
+                  ))}
 
                   {isStreamingMessage && !streamedMessage && (
                     <RoadmapAIChatCard role="assistant" html="Thinking..." />
@@ -444,7 +526,6 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                 )}
               </div>
 
-              {/* Input area */}
               {isLimitExceeded && (
                 <UpgradeMessage
                   onUpgradeClick={() => {
@@ -482,7 +563,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                         />
                       )}
                     </div>
-                    {hasMessages && (
+                    {hasMessages && !isPaidUser && (
                       <ChatHeaderButton
                         onClick={() => {
                           setInputValue('');
@@ -550,7 +631,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
         {!isOpen && (
           <button
             className={cn(
-              'relative mx-auto flex flex-shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800 w-max',
+              'relative mx-auto flex w-max flex-shrink-0 cursor-pointer items-center justify-center gap-2 rounded-full bg-stone-900 py-2.5 pr-8 pl-6 text-center text-white shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-stone-800',
             )}
             onClick={() => {
               setIsOpen(true);
@@ -566,10 +647,10 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                 <span className="mr-1 text-sm font-semibold text-yellow-400">
                   AI Tutor
                 </span>
-                <span className={'text-white hidden sm:block'}>
+                <span className={'hidden text-white sm:block'}>
                   Have a question? Type here
                 </span>
-                <span className={'text-white block sm:hidden'}>
+                <span className={'block text-white sm:hidden'}>
                   Ask anything
                 </span>
               </>

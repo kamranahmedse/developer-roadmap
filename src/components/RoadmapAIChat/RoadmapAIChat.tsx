@@ -1,8 +1,17 @@
 import './RoadmapAIChat.css';
 
 import { useQuery } from '@tanstack/react-query';
-import { roadmapJSONOptions } from '../../queries/roadmap';
-import { queryClient } from '../../stores/query-client';
+import type { Editor, JSONContent } from '@tiptap/core';
+import {
+  Bot,
+  Frown,
+  HistoryIcon,
+  Loader2Icon,
+  LockIcon,
+  PauseCircleIcon,
+  SendIcon,
+  XIcon,
+} from 'lucide-react';
 import {
   Fragment,
   useCallback,
@@ -12,45 +21,41 @@ import {
   useRef,
   useState,
 } from 'react';
-import {
-  Bot,
-  Frown,
-  Loader2Icon,
-  LockIcon,
-  PauseCircleIcon,
-  SendIcon,
-} from 'lucide-react';
-import { ChatEditor } from '../ChatEditor/ChatEditor';
-import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
-import { isLoggedIn } from '../../lib/jwt';
-import type { JSONContent, Editor } from '@tiptap/core';
 import { flushSync } from 'react-dom';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import {
+  roadmapAIChatRenderer,
+  useRoadmapAIChat,
+  type RoadmapAIChatHistoryType,
+} from '../../hooks/use-roadmap-ai-chat';
 import { useToast } from '../../hooks/use-toast';
-import { userResourceProgressOptions } from '../../queries/resource-progress';
-import { ChatRoadmapRenderer } from './ChatRoadmapRenderer';
-import { RoadmapAIChatCard } from './RoadmapAIChatCard';
-import { RoadmapAIChatHeader } from './RoadmapAIChatHeader';
-import { showLoginPopup } from '../../lib/popup';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { billingDetailsOptions } from '../../queries/billing';
-import { TopicDetail } from '../TopicDetail/TopicDetail';
-import { slugify } from '../../lib/slugger';
-import { AIChatActionButtons } from './AIChatActionButtons';
+import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { cn } from '../../lib/classname';
+import { lockBodyScroll } from '../../lib/dom';
 import {
   getTailwindScreenDimension,
   type TailwindScreenDimensions,
 } from '../../lib/is-mobile';
-import { ChatPersona } from '../UserPersona/ChatPersona';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
+import { slugify } from '../../lib/slugger';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { billingDetailsOptions } from '../../queries/billing';
+import { chatHistoryOptions } from '../../queries/chat-history';
+import { userResourceProgressOptions } from '../../queries/resource-progress';
+import { roadmapJSONOptions } from '../../queries/roadmap';
+import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { userRoadmapPersonaOptions } from '../../queries/user-persona';
+import { queryClient } from '../../stores/query-client';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { ChatEditor } from '../ChatEditor/ChatEditor';
+import { TopicDetail } from '../TopicDetail/TopicDetail';
+import { ChatPersona } from '../UserPersona/ChatPersona';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
-import { lockBodyScroll } from '../../lib/dom';
+import { AIChatActionButtons } from './AIChatActionButtons';
+import { ChatRoadmapRenderer } from './ChatRoadmapRenderer';
+import { RoadmapAIChatCard } from './RoadmapAIChatCard';
+import { RoadmapAIChatHeader } from './RoadmapAIChatHeader';
 import { TutorIntroMessage } from './TutorIntroMessage';
-import {
-  useRoadmapAIChat,
-  type RoadmapAIChatHistoryType,
-} from '../../hooks/use-roadmap-ai-chat';
 
 export type RoadmapAIChatTab = 'chat' | 'topic';
 
@@ -79,6 +84,9 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     null,
   );
   const [activeTab, setActiveTab] = useState<RoadmapAIChatTab>('chat');
+  const [activeChatHistoryId, setActiveChatHistoryId] = useState<
+    string | undefined
+  >();
 
   const [showUpdatePersonaModal, setShowUpdatePersonaModal] = useState(false);
 
@@ -136,8 +144,17 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   }, [roadmapDetail]);
 
   useEffect(() => {
+    const params = getUrlParams();
+    const queryChatId = params.chatId;
+
     if (!roadmapTreeData || !roadmapDetail || isUserPersonaLoading) {
       return;
+    }
+
+    if (queryChatId) {
+      setIsChatHistoryLoading(true);
+      setActiveChatHistoryId(queryChatId);
+      deleteUrlParam('chatId');
     }
 
     setIsLoading(false);
@@ -170,6 +187,19 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     [roadmapId, deviceType],
   );
 
+  const [isChatHistoryLoading, setIsChatHistoryLoading] = useState(true);
+  const { data: chatHistory } = useQuery(
+    chatHistoryOptions(
+      activeChatHistoryId,
+      roadmapAIChatRenderer({
+        roadmapId,
+        totalTopicCount,
+        onSelectTopic,
+      }),
+    ),
+    queryClient,
+  );
+
   const {
     aiChatHistory,
     isStreamingMessage,
@@ -179,12 +209,38 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
     handleAbort,
     clearChat,
     scrollToBottom,
+    setAiChatHistory,
   } = useRoadmapAIChat({
+    activeChatHistoryId,
     roadmapId,
     totalTopicCount,
     scrollareaRef,
     onSelectTopic,
+    onChatHistoryIdChange: (chatHistoryId) => {
+      setActiveChatHistoryId(chatHistoryId);
+    },
   });
+
+  useEffect(() => {
+    if (!chatHistory) {
+      return;
+    }
+
+    setAiChatHistory(chatHistory?.messages ?? []);
+    setIsChatHistoryLoading(false);
+    setTimeout(() => {
+      scrollToBottom('instant');
+    }, 0);
+  }, [chatHistory]);
+
+  useEffect(() => {
+    if (activeChatHistoryId) {
+      return;
+    }
+
+    setAiChatHistory([]);
+    setIsChatHistoryLoading(false);
+  }, [activeChatHistoryId, setAiChatHistory, setIsChatHistoryLoading]);
 
   if (roadmapDetailError) {
     return (
@@ -307,6 +363,21 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
             setActiveTab('chat');
           }}
           selectedTopicId={selectedTopicId}
+          roadmapId={roadmapId}
+          activeChatHistoryId={activeChatHistoryId}
+          onChatHistoryClick={(chatHistoryId) => {
+            setIsChatHistoryLoading(true);
+            setActiveChatHistoryId(chatHistoryId);
+          }}
+          onNewChat={() => {
+            document.title = 'Roadmap AI Chat';
+            setActiveChatHistoryId(undefined);
+          }}
+          onDeleteChatHistory={(chatHistoryId) => {
+            if (activeChatHistoryId === chatHistoryId) {
+              setActiveChatHistoryId(undefined);
+            }
+          }}
         />
 
         {activeTab === 'topic' && selectedTopicId && (
@@ -333,62 +404,77 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
 
         {activeTab === 'chat' && (
           <>
+            {!!chatHistory && isPaidUser && !isChatHistoryLoading && (
+              <div className="flex flex-row items-center justify-between border-b border-gray-200 bg-gray-100 px-3 py-2 text-sm text-gray-500">
+                <h3 className="flex min-w-0 items-center gap-2">
+                  <HistoryIcon className="size-4 shrink-0" />
+                  <span className="truncate">{chatHistory.title}</span>
+                </h3>
+                <button
+                  onClick={() => {
+                    setActiveChatHistoryId(undefined);
+                  }}
+                  className="text-sm text-gray-500 hover:text-gray-700"
+                >
+                  <XIcon className="size-4" />
+                </button>
+              </div>
+            )}
+
             <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
-              {isLoading && (
-                <div className="absolute inset-0 flex h-full w-full items-center justify-center">
-                  <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white p-1.5 px-3 text-sm text-gray-500">
-                    <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
-                    <span>Loading Roadmap</span>
-                  </div>
-                </div>
+              {isLoading && <Loader />}
+              {isChatHistoryLoading && (
+                <Loader message="Loading chat history" />
               )}
 
-              {shouldShowChatPersona && !isLoading && (
+              {shouldShowChatPersona && !isLoading && !isChatHistoryLoading && (
                 <ChatPersona roadmapId={roadmapId} />
               )}
 
-              {!isLoading && !shouldShowChatPersona && (
-                <div className="absolute inset-0 flex flex-col">
-                  <div className="relative flex grow flex-col justify-end">
-                    <div className="flex flex-col justify-end gap-2 px-3 py-2">
-                      <RoadmapAIChatCard
-                        role="assistant"
-                        jsx={
-                          <TutorIntroMessage roadmap={roadmapDetail?.json!} />
-                        }
-                        isIntro
-                      />
-
-                      {aiChatHistory.map(
-                        (chat: RoadmapAIChatHistoryType, index: number) => {
-                          return (
-                            <Fragment key={`chat-${index}`}>
-                              <RoadmapAIChatCard {...chat} />
-                            </Fragment>
-                          );
-                        },
-                      )}
-
-                      {isStreamingMessage && !streamedMessage && (
+              {!isLoading &&
+                !isChatHistoryLoading &&
+                !shouldShowChatPersona && (
+                  <div className="absolute inset-0 flex flex-col">
+                    <div className="relative flex grow flex-col justify-end">
+                      <div className="flex flex-col justify-end gap-2 px-3 py-2">
                         <RoadmapAIChatCard
                           role="assistant"
-                          html="Thinking..."
+                          jsx={
+                            <TutorIntroMessage roadmap={roadmapDetail?.json!} />
+                          }
+                          isIntro
                         />
-                      )}
 
-                      {streamedMessage && (
-                        <RoadmapAIChatCard
-                          role="assistant"
-                          jsx={streamedMessage}
-                        />
-                      )}
+                        {aiChatHistory.map(
+                          (chat: RoadmapAIChatHistoryType, index: number) => {
+                            return (
+                              <Fragment key={`chat-${index}`}>
+                                <RoadmapAIChatCard {...chat} />
+                              </Fragment>
+                            );
+                          },
+                        )}
+
+                        {isStreamingMessage && !streamedMessage && (
+                          <RoadmapAIChatCard
+                            role="assistant"
+                            html="Thinking..."
+                          />
+                        )}
+
+                        {streamedMessage && (
+                          <RoadmapAIChatCard
+                            role="assistant"
+                            jsx={streamedMessage}
+                          />
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                )}
             </div>
 
-            {!isLoading && !shouldShowChatPersona && (
+            {!isLoading && !isChatHistoryLoading && !shouldShowChatPersona && (
               <div className="flex flex-col border-t border-gray-200">
                 {!isLimitExceeded && (
                   <AIChatActionButtons
@@ -396,6 +482,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
                       setShowUpdatePersonaModal(true);
                     }}
                     messageCount={aiChatHistory.length}
+                    showClearChat={!isPaidUser}
                     onClearChat={clearChat}
                   />
                 )}
@@ -506,5 +593,22 @@ function isEmptyContent(content: JSONContent) {
   return (
     firstContent.type === 'paragraph' &&
     (!firstContent?.content || firstContent?.content?.length === 0)
+  );
+}
+
+type LoaderProps = {
+  message?: string;
+};
+
+function Loader(props: LoaderProps) {
+  const { message } = props;
+
+  return (
+    <div className="absolute inset-0 flex h-full w-full items-center justify-center">
+      <div className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white p-1.5 px-3 text-sm text-gray-500">
+        <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
+        <span>{message ?? 'Loading Roadmap'}</span>
+      </div>
+    </div>
   );
 }

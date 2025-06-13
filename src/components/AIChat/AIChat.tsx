@@ -7,14 +7,7 @@ import {
   SendIcon,
   TrashIcon,
 } from 'lucide-react';
-import {
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import AutogrowTextarea from 'react-textarea-autosize';
 import { QuickHelpPrompts } from './QuickHelpPrompts';
@@ -25,7 +18,6 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { useToast } from '../../hooks/use-toast';
-import { readStream } from '../../lib/ai';
 import { markdownToHtml } from '../../lib/markdown';
 import { ChatHistory } from './ChatHistory';
 import { PersonalizedResponseForm } from './PersonalizedResponseForm';
@@ -38,21 +30,38 @@ import {
   type MessagePartRenderer,
 } from '../../lib/render-chat-message';
 import { RoadmapRecommendations } from '../RoadmapAIChat/RoadmapRecommendations';
-import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
 import { AIChatCourse } from './AIChatCouse';
-import { getTailwindScreenDimension } from '../../lib/is-mobile';
-import type { TailwindScreenDimensions } from '../../lib/is-mobile';
 import { showLoginPopup } from '../../lib/popup';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { readChatStream } from '../../lib/chat';
+import { chatHistoryOptions } from '../../queries/chat-history';
+import { cn } from '../../lib/classname';
+import type { RoadmapAIChatHistoryType } from '../../hooks/use-roadmap-ai-chat';
 
-export function AIChat() {
+export const aiChatRenderer: Record<string, MessagePartRenderer> = {
+  'roadmap-recommendations': (options) => {
+    return <RoadmapRecommendations {...options} />;
+  },
+  'generate-course': (options) => {
+    return <AIChatCourse {...options} />;
+  },
+};
+
+type AIChatProps = {
+  messages?: RoadmapAIChatHistoryType[];
+  chatHistoryId?: string;
+  setChatHistoryId?: (chatHistoryId: string) => void;
+  onUpgrade?: () => void;
+};
+
+export function AIChat(props: AIChatProps) {
+  const {
+    messages: defaultMessages,
+    chatHistoryId: defaultChatHistoryId,
+    setChatHistoryId: setDefaultChatHistoryId,
+    onUpgrade,
+  } = props;
+
   const toast = useToast();
-
-  const [deviceType, setDeviceType] = useState<TailwindScreenDimensions>();
-
-  useLayoutEffect(() => {
-    setDeviceType(getTailwindScreenDimension());
-  }, []);
 
   const [message, setMessage] = useState('');
   const [isStreamingMessage, setIsStreamingMessage] = useState(false);
@@ -60,9 +69,8 @@ export function AIChat() {
     useState<React.ReactNode | null>(null);
   const [aiChatHistory, setAiChatHistory] = useState<
     RoadmapAIChatHistoryType[]
-  >([]);
+  >(defaultMessages ?? []);
 
-  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isPersonalizedResponseFormOpen, setIsPersonalizedResponseFormOpen] =
     useState(false);
   const [isUploadResumeModalOpen, setIsUploadResumeModalOpen] = useState(false);
@@ -89,6 +97,34 @@ export function AIChat() {
     userResumeOptions(),
     queryClient,
   );
+  const { mutate: deleteChatMessage, isPending: isDeletingChatMessage } =
+    useMutation(
+      {
+        mutationFn: (messages: RoadmapAIChatHistoryType[]) => {
+          if (!defaultChatHistoryId) {
+            return Promise.resolve({
+              status: 200,
+              message: 'Chat history not found',
+            });
+          }
+
+          return httpPost(`/v1-delete-chat-message/${defaultChatHistoryId}`, {
+            messages,
+          });
+        },
+        onSuccess: () => {
+          textareaMessageRef.current?.focus();
+
+          queryClient.invalidateQueries(
+            chatHistoryOptions(defaultChatHistoryId),
+          );
+        },
+        onError: (error) => {
+          toast.error(error?.message || 'Failed to delete message');
+        },
+      },
+      queryClient,
+    );
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -101,7 +137,7 @@ export function AIChat() {
 
     if (isLimitExceeded) {
       if (!isPaidUser) {
-        setShowUpgradeModal(true);
+        onUpgrade?.();
       }
 
       toast.error('Limit reached for today. Please wait until tomorrow.');
@@ -136,28 +172,38 @@ export function AIChat() {
     completeAIChat(newMessages);
   };
 
-  const scrollToBottom = useCallback(() => {
+  const canScrollToBottom = useCallback(() => {
     const scrollableContainer = scrollableContainerRef?.current;
     if (!scrollableContainer) {
-      return;
+      return false;
     }
 
-    scrollableContainer.scrollTo({
-      top: scrollableContainer.scrollHeight,
-      behavior: 'smooth',
-    });
-  }, [scrollableContainerRef]);
+    const paddingBottom = parseInt(
+      getComputedStyle(scrollableContainer).paddingBottom,
+    );
 
-  const renderer: Record<string, MessagePartRenderer> = useMemo(() => {
-    return {
-      'roadmap-recommendations': (options) => {
-        return <RoadmapRecommendations {...options} />;
-      },
-      'generate-course': (options) => {
-        return <AIChatCourse {...options} />;
-      },
-    };
+    const distanceFromBottom =
+      scrollableContainer.scrollHeight -
+      (scrollableContainer.scrollTop + scrollableContainer.clientHeight) -
+      paddingBottom;
+
+    return distanceFromBottom > -(paddingBottom - 80);
   }, []);
+
+  const scrollToBottom = useCallback(
+    (behavior: 'instant' | 'smooth' = 'smooth') => {
+      const scrollableContainer = scrollableContainerRef?.current;
+      if (!scrollableContainer) {
+        return;
+      }
+
+      scrollableContainer.scrollTo({
+        top: scrollableContainer.scrollHeight,
+        behavior: behavior === 'instant' ? 'instant' : 'smooth',
+      });
+    },
+    [scrollableContainerRef],
+  );
 
   const completeAIChat = async (
     messages: RoadmapAIChatHistoryType[],
@@ -172,6 +218,7 @@ export function AIChat() {
       },
       credentials: 'include',
       body: JSON.stringify({
+        chatHistoryId: defaultChatHistoryId,
         messages: messages.slice(-10),
         force,
       }),
@@ -190,28 +237,26 @@ export function AIChat() {
       }
     }
 
-    const reader = response.body?.getReader();
-
-    if (!reader) {
+    const stream = response.body;
+    if (!stream) {
       setIsStreamingMessage(false);
       toast.error('Something went wrong');
       return;
     }
 
-    await readStream(reader, {
-      onStream: async (content) => {
-        const jsx = await renderMessage(content, renderer, {
+    await readChatStream(stream, {
+      onMessage: async (content) => {
+        const jsx = await renderMessage(content, aiChatRenderer, {
           isLoading: true,
         });
 
         flushSync(() => {
           setStreamedMessage(jsx);
         });
-
-        scrollToBottom();
+        setShowScrollToBottomButton(canScrollToBottom());
       },
-      onStreamEnd: async (content) => {
-        const jsx = await renderMessage(content, renderer, {
+      onMessageEnd: async (content) => {
+        const jsx = await renderMessage(content, aiChatRenderer, {
           isLoading: false,
         });
 
@@ -231,7 +276,20 @@ export function AIChat() {
         });
 
         queryClient.invalidateQueries(getAiCourseLimitOptions());
-        scrollToBottom();
+        queryClient.invalidateQueries({
+          predicate: (query) => {
+            return query.queryKey[0] === 'list-chat-history';
+          },
+        });
+      },
+      onDetails: (details) => {
+        const detailsJson = JSON.parse(details);
+        const chatHistoryId = detailsJson?.chatHistoryId;
+        if (!chatHistoryId) {
+          return;
+        }
+
+        setDefaultChatHistoryId?.(chatHistoryId);
       },
     });
 
@@ -272,17 +330,7 @@ export function AIChat() {
       }
 
       timeoutId = setTimeout(() => {
-        const paddingBottom = parseInt(
-          getComputedStyle(scrollableContainer).paddingBottom,
-        );
-
-        const distanceFromBottom =
-          scrollableContainer.scrollHeight -
-          // scroll from the top + the container height
-          (scrollableContainer.scrollTop + scrollableContainer.clientHeight) -
-          paddingBottom;
-
-        setShowScrollToBottomButton(distanceFromBottom > -(paddingBottom - 80));
+        setShowScrollToBottomButton(canScrollToBottom());
       }, 100);
     };
 
@@ -303,7 +351,7 @@ export function AIChat() {
     (index: number) => {
       if (isLimitExceeded) {
         if (!isPaidUser) {
-          setShowUpgradeModal(true);
+          onUpgrade?.();
         }
 
         toast.error('Limit reached for today. Please wait until tomorrow.');
@@ -325,6 +373,7 @@ export function AIChat() {
     (index: number) => {
       const filteredChatHistory = aiChatHistory.filter((_, i) => i !== index);
       setAiChatHistory(filteredChatHistory);
+      deleteChatMessage(filteredChatHistory);
     },
     [aiChatHistory],
   );
@@ -337,29 +386,40 @@ export function AIChat() {
     isUserPersonaLoading ||
     isUserResumeLoading;
 
+  useEffect(() => {
+    scrollToBottom('instant');
+  }, []);
+
+  const shouldShowUpgradeBanner = !isPaidUser && aiChatHistory.length > 0;
+
   return (
-    <div
-      className="ai-chat relative flex min-h-screen w-full flex-col gap-2 overflow-y-auto bg-gray-100 pb-55"
-      ref={scrollableContainerRef}
-    >
-      <div className="relative mx-auto w-full max-w-3xl grow px-4">
-        {shouldShowQuickHelpPrompts && (
-          <QuickHelpPrompts
-            onQuestionClick={(question) => {
-              textareaMessageRef.current?.focus();
-              setMessage(question);
-            }}
-          />
+    <div className="ai-chat relative flex grow flex-col gap-2 bg-gray-100">
+      <div
+        className={cn(
+          'scrollbar-none absolute inset-0 overflow-y-auto pb-55',
+          shouldShowUpgradeBanner ? 'pb-60' : 'pb-55',
         )}
-        {!shouldShowQuickHelpPrompts && (
-          <ChatHistory
-            chatHistory={aiChatHistory}
-            isStreamingMessage={isStreamingMessage}
-            streamedMessage={streamedMessage}
-            onDelete={handleDelete}
-            onRegenerate={handleRegenerate}
-          />
-        )}
+        ref={scrollableContainerRef}
+      >
+        <div className="relative mx-auto w-full max-w-3xl grow px-4">
+          {shouldShowQuickHelpPrompts && (
+            <QuickHelpPrompts
+              onQuestionClick={(question) => {
+                textareaMessageRef.current?.focus();
+                setMessage(question);
+              }}
+            />
+          )}
+          {!shouldShowQuickHelpPrompts && (
+            <ChatHistory
+              chatHistory={aiChatHistory}
+              isStreamingMessage={isStreamingMessage}
+              streamedMessage={streamedMessage}
+              onDelete={handleDelete}
+              onRegenerate={handleRegenerate}
+            />
+          )}
+        </div>
       </div>
 
       {isPersonalizedResponseFormOpen && (
@@ -378,12 +438,8 @@ export function AIChat() {
         />
       )}
 
-      {showUpgradeModal && (
-        <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
-      )}
-
       <div
-        className="pointer-events-none fixed right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4 lg:left-[var(--ai-sidebar-width)]"
+        className="pointer-events-none absolute right-0 bottom-0 left-0 mx-auto w-full max-w-3xl px-4"
         ref={chatContainerRef}
       >
         <div className="mb-2 flex items-center justify-between gap-2">
@@ -392,6 +448,11 @@ export function AIChat() {
               icon={PersonStandingIcon}
               label="Personalize"
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsPersonalizedResponseFormOpen(true);
               }}
             />
@@ -399,6 +460,11 @@ export function AIChat() {
               icon={FileUpIcon}
               label={isUploading ? 'Processing...' : 'Upload Resume'}
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsUploadResumeModalOpen(true);
               }}
               isLoading={isUploading}
@@ -413,12 +479,13 @@ export function AIChat() {
                 onClick={scrollToBottom}
               />
             )}
-            {aiChatHistory.length > 0 && (
+            {aiChatHistory.length > 0 && !isPaidUser && (
               <QuickActionButton
                 icon={TrashIcon}
                 label="Clear Chat"
                 onClick={() => {
                   setAiChatHistory([]);
+                  deleteChatMessage([]);
                 }}
               />
             )}
@@ -470,7 +537,7 @@ export function AIChat() {
                 <button
                   type="button"
                   onClick={() => {
-                    setShowUpgradeModal(true);
+                    onUpgrade?.();
                   }}
                   className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
                 >

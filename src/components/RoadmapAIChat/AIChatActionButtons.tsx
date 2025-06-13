@@ -24,10 +24,12 @@ type AIChatActionButtonsProps = {
   onTellUsAboutYourSelf: () => void;
   onClearChat: () => void;
   messageCount: number;
+  showClearChat: boolean;
 };
 
 export function AIChatActionButtons(props: AIChatActionButtonsProps) {
-  const { onTellUsAboutYourSelf, onClearChat, messageCount } = props;
+  const { onTellUsAboutYourSelf, onClearChat, messageCount, showClearChat } =
+    props;
 
   return (
     <div className="flex gap-2 px-4 pt-2">
@@ -36,7 +38,7 @@ export function AIChatActionButtons(props: AIChatActionButtonsProps) {
         label="Tell us about your self"
         onClick={onTellUsAboutYourSelf}
       />
-      {messageCount > 0 && (
+      {showClearChat && messageCount > 0 && (
         <AIChatActionButton
           icon={Trash2}
           label="Clear chat"

@@ -8,8 +8,8 @@ import {
   RotateCwIcon,
 } from 'lucide-react';
 import { useCopyText } from '../../hooks/use-copy-text';
-import type { RoadmapAIChatHistoryType } from '../RoadmapAIChat/RoadmapAIChat';
 import { Tooltip } from '../Tooltip';
+import type { RoadmapAIChatHistoryType } from '../../hooks/use-roadmap-ai-chat';
 
 type ChatHistoryProps = {
   chatHistory: RoadmapAIChatHistoryType[];
