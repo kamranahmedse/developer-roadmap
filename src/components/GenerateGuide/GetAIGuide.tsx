@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
-import { generateDocument } from '../../helper/generate-ai-document';
+import { generateDocument } from '../../helper/generate-ai-guide';
 import { queryClient } from '../../stores/query-client';
 import { getAiDocumentOptions } from '../../queries/ai-document';
 import { AIDocumentContent } from './AIGuideContent';

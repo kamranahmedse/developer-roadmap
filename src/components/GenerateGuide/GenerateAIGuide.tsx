@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
-import { generateDocument } from '../../helper/generate-ai-document';
+import { generateGuide } from '../../helper/generate-ai-guide';
 import { getCourseFineTuneData } from '../../lib/ai';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
@@ -8,9 +8,9 @@ import { getAiCourseOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { AIDocumentContent } from './AIGuideContent';
 
-type GenerateAIDocumentProps = {};
+type GenerateAIGuideProps = {};
 
-export function GenerateAIDocument(props: GenerateAIDocumentProps) {
+export function GenerateAIGuide(props: GenerateAIGuideProps) {
   const [term, setTerm] = useState('');
   const [difficulty, setDifficulty] = useState('');
   const [sessionId, setSessionId] = useState('');
