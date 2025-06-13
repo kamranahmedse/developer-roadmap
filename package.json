@@ -72,6 +72,7 @@
     "npm-check-updates": "^18.0.1",
     "playwright": "^1.52.0",
     "prismjs": "^1.30.0",
+    "radix-ui": "^1.4.2",
     "react": "^19.1.0",
     "react-calendar-heatmap": "^1.10.0",
     "react-confetti": "^6.4.0",
