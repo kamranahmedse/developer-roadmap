@@ -67,7 +67,7 @@ export function RoadmapTopicList(props: RoadmapTopicListProps) {
   return (
     <div className="relative my-6 flex flex-wrap gap-1 first:mt-0 last:mb-0">
       {progressItemWithText.map((item) => {
-        const labelParts = item.text.split(' > ');
+        const labelParts = item.text.split(' > ').slice(-2);
         const labelPartCount = labelParts.length;
 
         return (

@@ -54,6 +54,8 @@ type PaidResourceType = {
 
 const paidResourcesCache: Record<string, PaidResourceType[]> = {};
 
+export const CLOSE_TOPIC_DETAIL_EVENT = 'close-topic-detail';
+
 export const defaultChatHistory: AIChatHistoryType[] = [
   {
     role: 'assistant',
@@ -158,10 +160,15 @@ export function TopicDetail(props: TopicDetailProps) {
   const handleClose = () => {
     onClose?.();
     setIsActive(false);
+    setIsContributing(false);
     setShowUpgradeModal(false);
     setAiChatHistory(defaultChatHistory);
     setActiveTab('content');
     setShowSubjectSearchModal(false);
+
+    lockBodyScroll(false);
+
+    window.dispatchEvent(new Event(CLOSE_TOPIC_DETAIL_EVENT));
   };
 
   // Close the topic detail when user clicks outside the topic detail
@@ -372,10 +379,9 @@ export function TopicDetail(props: TopicDetailProps) {
 
   useEffect(() => {
     if (isActive) {
+      lockBodyScroll(true);
       topicRef?.current?.focus();
     }
-
-    lockBodyScroll(isActive);
   }, [isActive]);
 
   if (!isActive) {
@@ -392,6 +398,10 @@ export function TopicDetail(props: TopicDetailProps) {
   });
 
   const shouldShowAiTab = !isCustomResource && resourceType === 'roadmap';
+
+  const hasDataCampResources = paidResources.some((resource) =>
+    resource.title.toLowerCase().includes('datacamp'),
+  );
 
   return (
     <div className={cn('relative z-92', wrapperClassName)}>
@@ -542,6 +552,29 @@ export function TopicDetail(props: TopicDetailProps) {
                     </>
                   )}
 
+                  {resourceId === 'ai-data-scientist' &&
+                    hasDataCampResources && (
+                      <div className="mt-5 rounded-md bg-yellow-100 px-4 py-3 text-sm text-gray-600">
+                        <p className="text-balance">
+                          Follow the resources listed on the roadmap or check
+                          out the premium courses by DataCamp listed below.
+                        </p>
+
+                        <p className="mt-3 text-balance">
+                          They also have an{' '}
+                          <a
+                            href="https://datacamp.pxf.io/POk5PY"
+                            className="font-medium text-blue-600 underline hover:text-blue-800"
+                            target="_blank"
+                          >
+                            Associate Data Scientist in Python
+                          </a>{' '}
+                          track that covers all the key data scientist skills in
+                          one place.
+                        </p>
+                      </div>
+                    )}
+
                   {links.length > 0 && (
                     <>
                       <ResourceListSeparator
@@ -660,8 +693,7 @@ export function TopicDetail(props: TopicDetailProps) {
               id="close-topic"
               className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
               onClick={() => {
-                setIsActive(false);
-                setIsContributing(false);
+                handleClose();
               }}
             >
               <X className="h-5 w-5" />

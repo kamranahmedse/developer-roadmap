@@ -185,6 +185,7 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
       bodyClassName="p-4 sm:p-6 bg-white"
       wrapperClassName="h-auto rounded-xl max-w-3xl w-full min-h-[540px] mx-2 sm:mx-4"
       overlayClassName="items-start md:items-center"
+      hasCloseButton={true}
     >
       <div onClick={(e) => e.stopPropagation()}>
         {errorContent}

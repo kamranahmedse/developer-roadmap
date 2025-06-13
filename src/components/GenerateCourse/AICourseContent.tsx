@@ -25,6 +25,7 @@ import { AICourseFooter } from './AICourseFooter';
 import { ForkCourseAlert } from './ForkCourseAlert';
 import { ForkCourseConfirmation } from './ForkCourseConfirmation';
 import { useAuth } from '../../hooks/use-auth';
+import { getPercentage } from '../../lib/number';
 
 type AICourseContentProps = {
   courseSlug?: string;
@@ -134,8 +135,9 @@ export function AICourseContent(props: AICourseContentProps) {
   );
 
   const totalDoneLessons = (course?.done || []).length;
-  const finishedPercentage = Math.round(
-    (totalDoneLessons / totalCourseLessons) * 100,
+  const finishedPercentage = getPercentage(
+    totalDoneLessons,
+    totalCourseLessons,
   );
 
   const modals = (
@@ -313,7 +315,7 @@ export function AICourseContent(props: AICourseContentProps) {
                 </span>
               )}
 
-              {finishedPercentage > 0 && (
+              {finishedPercentage > 0 && !isLoading && (
                 <>
                   <span className="text-gray-400">•</span>
                   <span className="font-medium text-green-600">

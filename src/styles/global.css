@@ -2,6 +2,7 @@
 @import '@roadmapsh/editor/style.css';
 
 @config '../../tailwind.config.cjs';
+@plugin 'tailwind-scrollbar';
 
 @font-face {
   font-family: 'Balsamiq Sans';
