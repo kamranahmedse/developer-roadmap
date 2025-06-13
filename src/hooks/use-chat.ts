@@ -4,7 +4,7 @@ import { readChatStream } from '../lib/chat';
 import { markdownToHtmlWithHighlighting } from '../lib/markdown';
 import { flushSync } from 'react-dom';
 
-type ChatMessage = {
+export type ChatMessage = {
   role: 'user' | 'assistant';
   content: string;
   html?: string;
@@ -49,6 +49,7 @@ export function useChat(options: UseChatOptions) {
           },
           body: JSON.stringify({ messages, ...data }),
           signal: abortControllerRef.current?.signal,
+          credentials: 'include',
         });
 
         if (!response.ok) {
@@ -117,6 +118,7 @@ export function useChat(options: UseChatOptions) {
 
   return {
     messages,
+    setMessages,
     sendMessages,
     status,
     streamedMessageHtml,

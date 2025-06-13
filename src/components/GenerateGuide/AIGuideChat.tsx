@@ -1,8 +1,12 @@
-import { useCallback, useRef, useState } from 'react';
-import { useChat } from '../../hooks/use-chat';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { useChat, type ChatMessage } from '../../hooks/use-chat';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
 import { PauseCircleIcon, SendIcon, Trash2Icon } from 'lucide-react';
 import { ChatHeaderButton } from '../FrameRenderer/RoadmapFloatingChat';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
+import { flushSync } from 'react-dom';
+import { markdownToHtml } from '../../lib/markdown';
 
 type AIGuideChatProps = {
   guideSlug?: string;
@@ -13,19 +17,26 @@ export function AIGuideChat(props: AIGuideChatProps) {
 
   const scrollareaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const [inputValue, setInputValue] = useState('');
 
-  const { messages, status, streamedMessageHtml, sendMessages, stop } = useChat(
-    {
-      endpoint: '/v1-ai-guide-chat',
-      onError: (error) => {
-        console.error(error);
-      },
-      data: {
-        guideSlug,
-      },
+  const [inputValue, setInputValue] = useState('');
+  const [showScrollToBottom, setShowScrollToBottom] = useState(false);
+
+  const {
+    messages,
+    status,
+    streamedMessageHtml,
+    sendMessages,
+    setMessages,
+    stop,
+  } = useChat({
+    endpoint: `${import.meta.env.PUBLIC_API_URL}/v1-ai-guide-chat`,
+    onError: (error) => {
+      console.error(error);
     },
-  );
+    data: {
+      guideSlug,
+    },
+  });
 
   const scrollToBottom = useCallback(
     (behavior: 'smooth' | 'instant' = 'smooth') => {
@@ -41,12 +52,50 @@ export function AIGuideChat(props: AIGuideChatProps) {
   const hasMessages = messages.length > 0;
 
   const handleSubmitInput = useCallback(() => {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
     if (isStreamingMessage) {
       return;
     }
 
-    sendMessages([]);
-  }, [inputValue, isStreamingMessage, sendMessages]);
+    const newMessages: ChatMessage[] = [
+      ...messages,
+      {
+        role: 'user',
+        content: inputValue,
+        html: markdownToHtml(inputValue),
+      },
+    ];
+    flushSync(() => {
+      setMessages(newMessages);
+    });
+    sendMessages(newMessages);
+    setInputValue('');
+  }, [inputValue, isStreamingMessage, messages, sendMessages, setMessages]);
+
+  const checkScrollPosition = useCallback(() => {
+    const scrollArea = scrollareaRef.current;
+    if (!scrollArea) {
+      return;
+    }
+
+    const { scrollTop, scrollHeight, clientHeight } = scrollArea;
+    const isAtBottom = scrollTop + clientHeight >= scrollHeight - 50; // 50px threshold
+    setShowScrollToBottom(!isAtBottom && messages.length > 0);
+  }, [messages.length]);
+
+  useEffect(() => {
+    const scrollArea = scrollareaRef.current;
+    if (!scrollArea) {
+      return;
+    }
+
+    scrollArea.addEventListener('scroll', checkScrollPosition);
+    return () => scrollArea.removeEventListener('scroll', checkScrollPosition);
+  }, [checkScrollPosition]);
 
   return (
     <div className="flex h-full w-full max-w-[40%] flex-col overflow-hidden">
@@ -80,10 +129,13 @@ export function AIGuideChat(props: AIGuideChatProps) {
       </div>
 
       {hasMessages && (
-        <div className="flex flex-row justify-end border-t border-gray-200 px-3 pt-2">
+        <div className="flex flex-row justify-end border-t border-gray-200 px-3 py-2">
           <ChatHeaderButton
             icon={<Trash2Icon className="h-3.5 w-3.5" />}
             className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+            onClick={() => {
+              setMessages([]);
+            }}
           >
             Clear
           </ChatHeaderButton>
@@ -106,7 +158,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
               handleSubmitInput();
             }
           }}
-          placeholder="Ask me anything about this roadmap..."
+          placeholder="Ask me anything about this guide..."
           className="w-full resize-none px-3 py-4 outline-none"
         />
 
