@@ -35,13 +35,17 @@ export function AIGuideChat(props: AIGuideChatProps) {
   const [inputValue, setInputValue] = useState('');
   const [showScrollToBottom, setShowScrollToBottom] = useState(false);
 
-  const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
-    getAiCourseLimitOptions(),
-    queryClient,
-  );
+  const {
+    data: tokenUsage,
+    isLoading: isTokenUsageLoading,
+    refetch: refetchTokenUsage,
+  } = useQuery(getAiCourseLimitOptions(), queryClient);
 
-  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
-    useQuery(billingDetailsOptions(), queryClient);
+  const {
+    data: userBillingDetails,
+    isLoading: isBillingDetailsLoading,
+    refetch: refetchBillingDetails,
+  } = useQuery(billingDetailsOptions(), queryClient);
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -60,6 +64,9 @@ export function AIGuideChat(props: AIGuideChatProps) {
     },
     data: {
       guideSlug,
+    },
+    onFinish: () => {
+      refetchTokenUsage();
     },
   });
 
@@ -122,6 +129,9 @@ export function AIGuideChat(props: AIGuideChatProps) {
     return () => scrollArea.removeEventListener('scroll', checkScrollPosition);
   }, [checkScrollPosition]);
 
+  const isLoading =
+    isGuideLoading || isTokenUsageLoading || isBillingDetailsLoading;
+
   return (
     <div className="relative flex h-full w-full max-w-[40%] flex-col overflow-hidden border-l border-gray-200">
       <div className="border-b border-gray-200 bg-white p-2">
@@ -131,13 +141,13 @@ export function AIGuideChat(props: AIGuideChatProps) {
         </h2>
       </div>
 
-      {isGuideLoading && (
+      {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">
           <Loader2Icon className="h-4 w-4 animate-spin" />
         </div>
       )}
 
-      {!isGuideLoading && (
+      {!isLoading && (
         <>
           <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
             <div className="absolute inset-0 flex flex-col">

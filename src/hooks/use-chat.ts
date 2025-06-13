@@ -15,10 +15,11 @@ type UseChatOptions = {
   initialMessages?: ChatMessage[];
   onError?: (error: Error) => void;
   data?: Record<string, any>;
+  onFinish?: () => void;
 };
 
 export function useChat(options: UseChatOptions) {
-  const { endpoint, initialMessages, onError, data = {} } = options;
+  const { endpoint, initialMessages, onError, data = {}, onFinish } = options;
 
   const abortControllerRef = useRef<AbortController | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>(
@@ -100,7 +101,14 @@ export function useChat(options: UseChatOptions) {
         });
 
         abortControllerRef.current = null;
+        onFinish?.();
       } catch (error) {
+        if (abortControllerRef.current?.signal.aborted) {
+          // we don't want to show error if the user stops the chat
+          // so we just return
+          return;
+        }
+
         onError?.(error as Error);
       }
     },
