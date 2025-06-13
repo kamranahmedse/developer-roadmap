@@ -24,10 +24,11 @@ type AIGuideChatProps = {
   guideSlug?: string;
   isGuideLoading?: boolean;
   onUpgrade?: () => void;
+  randomQuestions?: string[];
 };
 
 export function AIGuideChat(props: AIGuideChatProps) {
-  const { guideSlug, isGuideLoading, onUpgrade } = props;
+  const { guideSlug, isGuideLoading, onUpgrade, randomQuestions } = props;
 
   const scrollareaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -46,6 +47,13 @@ export function AIGuideChat(props: AIGuideChatProps) {
     isLoading: isBillingDetailsLoading,
     refetch: refetchBillingDetails,
   } = useQuery(billingDetailsOptions(), queryClient);
+
+  //   const {suggestions}
+  // const randomAiGuideSuggestions = useMemo(() => {
+  //   return aiGuideSuggestions?.relatedTopics[
+  //     Math.floor(Math.random() * aiGuideSuggestions.relatedTopics.length)
+  //   ];
+  // }, [aiGuideSuggestions]);
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -83,30 +91,34 @@ export function AIGuideChat(props: AIGuideChatProps) {
   const isStreamingMessage = status === 'streaming';
   const hasMessages = messages.length > 0;
 
-  const handleSubmitInput = useCallback(() => {
-    if (!isLoggedIn()) {
-      showLoginPopup();
-      return;
-    }
+  const handleSubmitInput = useCallback(
+    (defaultInputValue?: string) => {
+      const message = defaultInputValue || inputValue;
+      if (!isLoggedIn()) {
+        showLoginPopup();
+        return;
+      }
 
-    if (isStreamingMessage) {
-      return;
-    }
+      if (isStreamingMessage) {
+        return;
+      }
 
-    const newMessages: ChatMessage[] = [
-      ...messages,
-      {
-        role: 'user',
-        content: inputValue,
-        html: markdownToHtml(inputValue),
-      },
-    ];
-    flushSync(() => {
-      setMessages(newMessages);
-    });
-    sendMessages(newMessages);
-    setInputValue('');
-  }, [inputValue, isStreamingMessage, messages, sendMessages, setMessages]);
+      const newMessages: ChatMessage[] = [
+        ...messages,
+        {
+          role: 'user',
+          content: message,
+          html: markdownToHtml(message),
+        },
+      ];
+      flushSync(() => {
+        setMessages(newMessages);
+      });
+      sendMessages(newMessages);
+      setInputValue('');
+    },
+    [inputValue, isStreamingMessage, messages, sendMessages, setMessages],
+  );
 
   const checkScrollPosition = useCallback(() => {
     const scrollArea = scrollareaRef.current;
@@ -158,6 +170,28 @@ export function AIGuideChat(props: AIGuideChatProps) {
                     html="Hello, how can I help you today?"
                     isIntro
                   />
+                  {randomQuestions &&
+                    randomQuestions.length > 0 &&
+                    messages.length === 0 && (
+                      <>
+                        <ul className="flex flex-col gap-1">
+                          {randomQuestions?.map((question) => {
+                            return (
+                              <li key={`chat-${question}`}>
+                                <button
+                                  className="w-fit rounded-lg border border-gray-200 bg-white p-2 text-left text-sm text-balance hover:bg-white/40"
+                                  onClick={() => {
+                                    handleSubmitInput(question);
+                                  }}
+                                >
+                                  <p className="text-gray-500">{question}</p>
+                                </button>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </>
+                    )}
 
                   {messages.map((chat, index) => {
                     return (

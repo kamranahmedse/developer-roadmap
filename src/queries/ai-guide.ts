@@ -67,3 +67,21 @@ export function listUserAiDocumentsOptions(
     enabled: !!isLoggedIn(),
   };
 }
+
+type AIGuideSuggestionsResponse = {
+  relatedTopics: string[];
+  deepDiveTopics: string[];
+  questions: string[];
+};
+
+export function aiGuideSuggestionsOptions(guideSlug?: string) {
+  return queryOptions({
+    queryKey: ['ai-guide-suggestions', guideSlug],
+    queryFn: () => {
+      return httpGet<AIGuideSuggestionsResponse>(
+        `/v1-ai-guide-suggestions/${guideSlug}`,
+      );
+    },
+    enabled: !!guideSlug && !!isLoggedIn(),
+  });
+}
