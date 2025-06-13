@@ -2,17 +2,33 @@ import { CheckIcon, CopyIcon, XIcon } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useCopyText } from '../../hooks/use-copy-text';
 import { cn } from '../../lib/classname';
+import { SQL_COURSE_SLUG } from './BuyButton';
+import { queryClient } from '../../stores/query-client';
+import { courseProgressOptions } from '../../queries/course-progress';
+import { useQuery } from '@tanstack/react-query';
+import { useClientMount } from '../../hooks/use-client-mount';
 
 export const sqlCouponCode = 'SQL30';
 
 export function CourseDiscountBanner() {
   const { copyText, isCopied } = useCopyText();
   const [isVisible, setIsVisible] = useState(false);
+  const isClientMounted = useClientMount();
 
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 5000);
     return () => clearTimeout(timer);
   }, []);
+
+  const { data: courseProgress, isLoading: isLoadingCourseProgress } = useQuery(
+    courseProgressOptions(SQL_COURSE_SLUG),
+    queryClient,
+  );
+
+  const isAlreadyEnrolled = !!courseProgress?.enrolledAt;
+  if (!isClientMounted || isLoadingCourseProgress || isAlreadyEnrolled) {
+    return null;
+  }
 
   return (
     <div
