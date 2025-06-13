@@ -219,7 +219,7 @@ export function AIChat(props: AIChatProps) {
       credentials: 'include',
       body: JSON.stringify({
         chatHistoryId: defaultChatHistoryId,
-        messages: messages.slice(-10),
+        messages,
         force,
       }),
     });

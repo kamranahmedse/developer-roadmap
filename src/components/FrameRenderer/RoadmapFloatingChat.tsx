@@ -47,7 +47,7 @@ type ChatHeaderButtonProps = {
   target?: string;
 };
 
-function ChatHeaderButton(props: ChatHeaderButtonProps) {
+export function ChatHeaderButton(props: ChatHeaderButtonProps) {
   const { onClick, href, icon, children, className, target } = props;
 
   const classNames = cn(

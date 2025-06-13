@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import { getAiGuideOptions } from '../../queries/ai-guide';
 import { queryClient } from '../../stores/query-client';
 import { GenerateAIGuide } from './GenerateAIGuide';
+import { AIGuideChat } from './AIGuideChat';
 
 type AIGuideProps = {
   guideSlug?: string;
@@ -27,7 +28,7 @@ export function AIGuide(props: AIGuideProps) {
         {guideSlug && <AIGuideContent html={aiGuide?.html || ''} />}
         {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}
       </div>
-      <div className="w-full max-w-[40%]">Chat Window</div>
+      <AIGuideChat guideSlug={guideSlug} />
     </AITutorLayout>
   );
 }
