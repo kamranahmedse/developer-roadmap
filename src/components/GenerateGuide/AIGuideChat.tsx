@@ -5,6 +5,7 @@ import {
   ArrowDownIcon,
   BotIcon,
   Loader2Icon,
+  LockIcon,
   PauseCircleIcon,
   SendIcon,
   Trash2Icon,
@@ -14,20 +15,36 @@ import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { flushSync } from 'react-dom';
 import { markdownToHtml } from '../../lib/markdown';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { useQuery } from '@tanstack/react-query';
+import { queryClient } from '../../stores/query-client';
+import { billingDetailsOptions } from '../../queries/billing';
 
 type AIGuideChatProps = {
   guideSlug?: string;
   isGuideLoading?: boolean;
+  onUpgrade?: () => void;
 };
 
 export function AIGuideChat(props: AIGuideChatProps) {
-  const { guideSlug, isGuideLoading } = props;
+  const { guideSlug, isGuideLoading, onUpgrade } = props;
 
   const scrollareaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [inputValue, setInputValue] = useState('');
   const [showScrollToBottom, setShowScrollToBottom] = useState(false);
+
+  const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
+    getAiCourseLimitOptions(),
+    queryClient,
+  );
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   const {
     messages,
@@ -180,6 +197,29 @@ export function AIGuideChat(props: AIGuideChatProps) {
           )}
 
           <div className="relative flex items-center border-t border-gray-200 text-sm">
+            {isLimitExceeded && isLoggedIn() && (
+              <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+                <LockIcon
+                  className="size-4 cursor-not-allowed"
+                  strokeWidth={2.5}
+                />
+                <p className="cursor-not-allowed">
+                  Limit reached for today
+                  {isPaidUser ? '. Please wait until tomorrow.' : ''}
+                </p>
+                {!isPaidUser && (
+                  <button
+                    onClick={() => {
+                      onUpgrade?.();
+                    }}
+                    className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                  >
+                    Upgrade for more
+                  </button>
+                )}
+              </div>
+            )}
+
             <input
               ref={inputRef}
               type="text"
@@ -203,6 +243,11 @@ export function AIGuideChat(props: AIGuideChatProps) {
               className="absolute top-1/2 right-2 -translate-y-1/2 p-1 text-zinc-500 hover:text-black disabled:opacity-50"
               disabled={isStreamingMessage}
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 if (isStreamingMessage) {
                   stop();
                   return;

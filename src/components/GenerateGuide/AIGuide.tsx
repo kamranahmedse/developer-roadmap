@@ -6,6 +6,7 @@ import { getAiGuideOptions } from '../../queries/ai-guide';
 import { queryClient } from '../../stores/query-client';
 import { GenerateAIGuide } from './GenerateAIGuide';
 import { AIGuideChat } from './AIGuideChat';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type AIGuideProps = {
   guideSlug?: string;
@@ -14,6 +15,8 @@ type AIGuideProps = {
 export function AIGuide(props: AIGuideProps) {
   const { guideSlug: defaultGuideSlug } = props;
   const [guideSlug, setGuideSlug] = useState(defaultGuideSlug);
+
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
@@ -24,11 +27,19 @@ export function AIGuide(props: AIGuideProps) {
       wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden"
       containerClassName="h-[calc(100vh-49px)] overflow-hidden"
     >
+      {showUpgradeModal && (
+        <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
+      )}
+
       <div className="grow overflow-y-auto p-4 pt-0">
         {guideSlug && <AIGuideContent html={aiGuide?.html || ''} />}
         {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}
       </div>
-      <AIGuideChat guideSlug={guideSlug} isGuideLoading={!aiGuide} />
+      <AIGuideChat
+        guideSlug={guideSlug}
+        isGuideLoading={!aiGuide}
+        onUpgrade={() => setShowUpgradeModal(true)}
+      />
     </AITutorLayout>
   );
 }
