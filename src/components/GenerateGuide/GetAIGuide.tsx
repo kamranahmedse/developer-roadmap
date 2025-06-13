@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { generateDocument } from '../../helper/generate-ai-document';
 import { queryClient } from '../../stores/query-client';
 import { getAiDocumentOptions } from '../../queries/ai-document';
-import { AIDocumentContent } from './AIDocumentContent';
+import { AIDocumentContent } from './AIGuideContent';
 
 type GetAIDocumentProps = {
   slug: string;

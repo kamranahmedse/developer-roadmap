@@ -5,10 +5,19 @@ import {
   SparklesIcon,
   type LucideIcon,
 } from 'lucide-react';
-import { useId, useState } from 'react';
+import { useEffect, useId, useState, type FormEvent } from 'react';
 import { FormatItem } from './FormatItem';
 import { GuideOptions } from './GuideOptions';
 import { FineTuneCourse } from '../GenerateCourse/FineTuneCourse';
+import { CourseOptions } from './CourseOptions';
+import {
+  clearFineTuneData,
+  getCourseFineTuneData,
+  getLastSessionId,
+  storeFineTuneData,
+} from '../../lib/ai';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 type AllowedFormat = (typeof allowedFormats)[number];
@@ -19,6 +28,8 @@ export function ContentGenerator() {
 
   // guide options
   const [depth, setDepth] = useState('essentials');
+  // course options
+  const [difficulty, setDifficulty] = useState('beginner');
 
   // fine-tune options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
@@ -51,8 +62,59 @@ export function ContentGenerator() {
     },
   ];
 
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
+    let sessionId = '';
+    if (showFineTuneOptions) {
+      clearFineTuneData();
+      sessionId = storeFineTuneData({
+        about,
+        goal,
+        customInstructions,
+      });
+    }
+
+    if (selectedFormat === 'course') {
+      window.location.href = `/ai/course?term=${encodeURIComponent(title)}&difficulty=${difficulty}&id=${sessionId}&format=${selectedFormat}`;
+    } else if (selectedFormat === 'guide') {
+      window.location.href = `/ai/guide?term=${encodeURIComponent(title)}&depth=${depth}&id=${sessionId}&format=${selectedFormat}`;
+    }
+  };
+
+  useEffect(() => {
+    window?.fireEvent({
+      action: 'tutor_user',
+      category: 'ai_tutor',
+      label: 'Visited AI Course Page',
+    });
+  }, []);
+
+  useEffect(() => {
+    const lastSessionId = getLastSessionId();
+    if (!lastSessionId) {
+      return;
+    }
+
+    const fineTuneData = getCourseFineTuneData(lastSessionId);
+    if (!fineTuneData) {
+      return;
+    }
+
+    setAbout(fineTuneData.about);
+    setGoal(fineTuneData.goal);
+    setCustomInstructions(fineTuneData.customInstructions);
+  }, []);
+
   return (
-    <form className="mx-auto mt-20 w-full max-w-md space-y-4 rounded-xl bg-white p-4">
+    <form
+      className="mx-auto mt-20 w-full max-w-md space-y-4 rounded-xl bg-white p-4"
+      onSubmit={handleSubmit}
+    >
       <div className="flex flex-col gap-2">
         <label
           htmlFor={titleFieldId}
@@ -67,6 +129,8 @@ export function ContentGenerator() {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           className="block h-9 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm outline-none placeholder:text-gray-500 focus:border-gray-500"
+          required
+          minLength={3}
         />
       </div>
       <div className="flex flex-col gap-2">
@@ -92,6 +156,10 @@ export function ContentGenerator() {
 
       {selectedFormat === 'guide' && (
         <GuideOptions depth={depth} setDepth={setDepth} />
+      )}
+
+      {selectedFormat === 'course' && (
+        <CourseOptions difficulty={difficulty} setDifficulty={setDifficulty} />
       )}
 
       {selectedFormat !== 'roadmap' && (

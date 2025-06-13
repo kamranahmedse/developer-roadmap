@@ -6,7 +6,7 @@ import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
 import { getAiCourseOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
-import { AIDocumentContent } from './AIDocumentContent';
+import { AIDocumentContent } from './AIGuideContent';
 
 type GenerateAIDocumentProps = {};
 
