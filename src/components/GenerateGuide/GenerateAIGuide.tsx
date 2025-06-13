@@ -123,7 +123,7 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center">
+      <div className="flex h-full w-full items-center justify-center">
         <Loader2Icon className="size-6 animate-spin" />
       </div>
     );

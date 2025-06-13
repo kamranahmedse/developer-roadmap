@@ -28,7 +28,7 @@ export function AIGuide(props: AIGuideProps) {
         {guideSlug && <AIGuideContent html={aiGuide?.html || ''} />}
         {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}
       </div>
-      <AIGuideChat guideSlug={guideSlug} />
+      <AIGuideChat guideSlug={guideSlug} isGuideLoading={!aiGuide} />
     </AITutorLayout>
   );
 }
