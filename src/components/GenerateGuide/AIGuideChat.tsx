@@ -1,7 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useChat, type ChatMessage } from '../../hooks/use-chat';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
-import { PauseCircleIcon, SendIcon, Trash2Icon } from 'lucide-react';
+import {
+  ArrowDownIcon,
+  BotIcon,
+  PauseCircleIcon,
+  SendIcon,
+  Trash2Icon,
+} from 'lucide-react';
 import { ChatHeaderButton } from '../FrameRenderer/RoadmapFloatingChat';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
@@ -99,6 +105,13 @@ export function AIGuideChat(props: AIGuideChatProps) {
 
   return (
     <div className="flex h-full w-full max-w-[40%] flex-col overflow-hidden">
+      <div className="border-b border-gray-200 bg-white p-2">
+        <h2 className="flex items-center gap-2 text-sm font-medium">
+          <BotIcon className="h-4 w-4" />
+          AI Guide
+        </h2>
+      </div>
+
       <div className="relative grow overflow-y-auto" ref={scrollareaRef}>
         <div className="absolute inset-0 flex flex-col">
           <div className="relative flex grow flex-col justify-end">
@@ -128,8 +141,20 @@ export function AIGuideChat(props: AIGuideChatProps) {
         </div>
       </div>
 
-      {hasMessages && (
-        <div className="flex flex-row justify-end border-t border-gray-200 px-3 py-2">
+      {(hasMessages || showScrollToBottom) && (
+        <div className="flex flex-row justify-end gap-2 border-t border-gray-200 px-3 py-2">
+          {showScrollToBottom && (
+            <ChatHeaderButton
+              icon={<ArrowDownIcon className="h-3.5 w-3.5" />}
+              className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+              onClick={() => {
+                scrollToBottom('smooth');
+              }}
+            >
+              Scroll to bottom
+            </ChatHeaderButton>
+          )}
+
           <ChatHeaderButton
             icon={<Trash2Icon className="h-3.5 w-3.5" />}
             className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
