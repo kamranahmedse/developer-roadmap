@@ -1,6 +1,7 @@
 ---
 import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
 import { CheckSubscriptionVerification } from '../../../components/Billing/CheckSubscriptionVerification';
+import { AIGuide } from '../../../components/GenerateGuide/AIGuide';
 import { GenerateAIGuide } from '../../../components/GenerateGuide/GenerateAIGuide';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 ---
@@ -13,8 +14,5 @@ import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
   canonicalUrl='/ai/document'
   noIndex={true}
 >
-  <AITutorLayout client:load>
-    <GenerateAIGuide client:load />
-    <CheckSubscriptionVerification client:load />
-  </AITutorLayout>
+  <AIGuide client:load />
 </SkeletonLayout>

@@ -1,6 +1,5 @@
 ---
-import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
-import { GetAIGuide } from '../../../components/GenerateGuide/GetAIGuide';
+import { AIGuide } from '../../../components/GenerateGuide/AIGuide';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 
 export const prerender = false;
@@ -19,8 +18,5 @@ const { slug } = Astro.params as Params;
   keywords={['ai', 'tutor', 'education', 'learning']}
   canonicalUrl={`/ai/document/${slug}`}
 >
-  <AITutorLayout client:load>
-    <div slot='course-announcement'></div>
-    <GetAIGuide client:load slug={slug} />
-  </AITutorLayout>
+  <AIGuide client:load guideSlug={slug} />
 </SkeletonLayout>

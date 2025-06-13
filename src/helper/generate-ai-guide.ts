@@ -4,6 +4,13 @@ import { getAiCourseLimitOptions } from '../queries/ai-course';
 import { readChatStream } from '../lib/chat';
 import { markdownToHtmlWithHighlighting } from '../lib/markdown';
 
+type GuideDetails = {
+  guideId: string;
+  guideSlug: string;
+  creatorId: string;
+  title: string;
+};
+
 type GenerateGuideOptions = {
   term: string;
   depth: string;
@@ -13,14 +20,14 @@ type GenerateGuideOptions = {
   instructions?: string;
   goal?: string;
   about?: string;
-  onGuideIdChange?: (guideId: string) => void;
   onGuideSlugChange?: (guideSlug: string) => void;
   onGuideChange?: (guide: string) => void;
   onLoadingChange?: (isLoading: boolean) => void;
-  onCreatorIdChange?: (creatorId: string) => void;
   onError?: (error: string) => void;
   src?: string;
   onHtmlChange?: (html: string) => void;
+  onStreamingChange?: (isStreaming: boolean) => void;
+  onDetailsChange?: (details: GuideDetails) => void;
 };
 
 export async function generateGuide(options: GenerateGuideOptions) {
@@ -28,12 +35,9 @@ export async function generateGuide(options: GenerateGuideOptions) {
     term,
     slug,
     depth,
-    onGuideIdChange,
-    onGuideSlugChange,
     onGuideChange,
     onLoadingChange,
     onError,
-    onCreatorIdChange,
     isForce = false,
     prompt,
     instructions,
@@ -41,6 +45,8 @@ export async function generateGuide(options: GenerateGuideOptions) {
     about,
     src = 'search',
     onHtmlChange,
+    onStreamingChange,
+    onDetailsChange,
   } = options;
 
   onLoadingChange?.(true);
@@ -107,16 +113,18 @@ export async function generateGuide(options: GenerateGuideOptions) {
       return;
     }
 
+    onLoadingChange?.(false);
+    onStreamingChange?.(true);
     await readChatStream(stream, {
       onMessage: async (message) => {
         onGuideChange?.(message);
         onHtmlChange?.(await markdownToHtmlWithHighlighting(message));
       },
       onMessageEnd: async (message) => {
-        onLoadingChange?.(false);
         onGuideChange?.(message);
         onHtmlChange?.(await markdownToHtmlWithHighlighting(message));
         queryClient.invalidateQueries(getAiCourseLimitOptions());
+        onStreamingChange?.(false);
       },
       onDetails: async (details) => {
         const detailsJson = JSON.parse(details);
@@ -124,9 +132,7 @@ export async function generateGuide(options: GenerateGuideOptions) {
           throw new Error('Invalid details');
         }
 
-        onGuideIdChange?.(detailsJson?.guideId);
-        onGuideSlugChange?.(detailsJson?.guideSlug);
-        onCreatorIdChange?.(detailsJson?.creatorId);
+        onDetailsChange?.(detailsJson);
       },
     });
   } catch (error: any) {

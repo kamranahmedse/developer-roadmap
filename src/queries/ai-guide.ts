@@ -18,7 +18,7 @@ export interface AIGuideDocument {
 
 type GetAIGuideResponse = AIGuideDocument;
 
-export function getAiGuideOptions(guideSlug: string) {
+export function getAiGuideOptions(guideSlug?: string) {
   return queryOptions({
     queryKey: ['ai-guide', guideSlug],
     queryFn: async () => {

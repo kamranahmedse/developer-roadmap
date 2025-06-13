@@ -1,38 +1,29 @@
-import { useQuery } from '@tanstack/react-query';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { generateGuide } from '../../helper/generate-ai-guide';
 import { getCourseFineTuneData } from '../../lib/ai';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
-import { queryClient } from '../../stores/query-client';
 import { AIGuideContent } from './AIGuideContent';
+import { Loader2Icon } from 'lucide-react';
+import { queryClient } from '../../stores/query-client';
 import { getAiGuideOptions } from '../../queries/ai-guide';
 
-type GenerateAIGuideProps = {};
+type GenerateAIGuideProps = {
+  onGuideSlugChange?: (guideSlug: string) => void;
+};
 
 export function GenerateAIGuide(props: GenerateAIGuideProps) {
-  const [term, setTerm] = useState('');
-  const [depth, setDepth] = useState('');
+  const { onGuideSlugChange } = props;
 
   const [isLoading, setIsLoading] = useState(true);
+  const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState('');
 
-  const [documentSlug, setDocumentSlug] = useState('');
+  const [content, setContent] = useState('');
   const [html, setHtml] = useState('');
-
-  // Once the course is generated, we fetch the course from the database
-  // so that we get the up-to-date course data and also so that we
-  // can reload the changes (e.g. progress) etc using queryClient.setQueryData
-  const { data: aiGuide } = useQuery(
-    getAiGuideOptions(documentSlug),
-    queryClient,
-  );
+  const htmlRef = useRef<string>('');
 
   useEffect(() => {
-    if (term || depth) {
-      return;
-    }
-
     const params = getUrlParams();
     const paramsTerm = params?.term;
     const paramsDepth = params?.depth;
@@ -63,7 +54,7 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
       about: paramsAbout,
       src: paramsSrc,
     });
-  }, [term, depth]);
+  }, []);
 
   const handleGenerateDocument = async (options: {
     term: string;
@@ -86,10 +77,29 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
     await generateGuide({
       term,
       depth,
-      slug: documentSlug,
-      onGuideSlugChange: (slug) => {
-        setDocumentSlug(slug);
-        window.history.replaceState(null, '', `/ai/guide/${slug}`);
+      onDetailsChange: (details) => {
+        const { guideId, guideSlug, creatorId, title } = details;
+
+        const guideData = {
+          _id: guideId,
+          userId: creatorId,
+          title,
+          html: htmlRef.current,
+          keyword: term,
+          difficulty: depth,
+          content,
+          viewCount: 0,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        };
+
+        queryClient.setQueryData(
+          getAiGuideOptions(guideSlug).queryKey,
+          guideData,
+        );
+
+        onGuideSlugChange?.(guideSlug);
+        window.history.replaceState(null, '', `/ai/guide/${guideSlug}`);
       },
       onLoadingChange: setIsLoading,
       onError: setError,
@@ -99,12 +109,24 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
       isForce,
       prompt,
       src,
-      onHtmlChange: setHtml,
+      onHtmlChange: (html) => {
+        htmlRef.current = html;
+        setHtml(html);
+      },
+      onStreamingChange: setIsStreaming,
     });
   };
 
   if (error) {
     return <div className="text-red-500">{error}</div>;
+  }
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center">
+        <Loader2Icon className="size-6 animate-spin" />
+      </div>
+    );
   }
 
   return <AIGuideContent html={html} />;
