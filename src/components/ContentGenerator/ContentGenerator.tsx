@@ -8,6 +8,7 @@ import {
 import { useId, useState } from 'react';
 import { FormatItem } from './FormatItem';
 import { GuideOptions } from './GuideOptions';
+import { FineTuneCourse } from '../GenerateCourse/FineTuneCourse';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 type AllowedFormat = (typeof allowedFormats)[number];
@@ -16,7 +17,17 @@ export function ContentGenerator() {
   const [title, setTitle] = useState('');
   const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
 
+  // guide options
+  const [depth, setDepth] = useState('essentials');
+
+  // fine-tune options
+  const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
+  const [about, setAbout] = useState('');
+  const [goal, setGoal] = useState('');
+  const [customInstructions, setCustomInstructions] = useState('');
+
   const titleFieldId = useId();
+  const fineTuneOptionsId = useId();
 
   const allowedFormats: {
     label: string;
@@ -78,7 +89,40 @@ export function ContentGenerator() {
           })}
         </div>
       </div>
-      <GuideOptions />
+
+      {selectedFormat === 'guide' && (
+        <GuideOptions depth={depth} setDepth={setDepth} />
+      )}
+
+      {selectedFormat !== 'roadmap' && (
+        <>
+          <div className="flex h-9 items-center gap-2 rounded-lg border border-gray-200 px-3 text-sm">
+            <input
+              type="checkbox"
+              id={fineTuneOptionsId}
+              checked={showFineTuneOptions}
+              onChange={(e) => setShowFineTuneOptions(e.target.checked)}
+            />
+            <label htmlFor={fineTuneOptionsId} className="text-sm">
+              Show fine-tune options
+            </label>
+          </div>
+
+          {showFineTuneOptions && (
+            <FineTuneCourse
+              hasFineTuneData={showFineTuneOptions}
+              about={about}
+              goal={goal}
+              customInstructions={customInstructions}
+              setAbout={setAbout}
+              setGoal={setGoal}
+              setCustomInstructions={setCustomInstructions}
+              className="overflow-hidden rounded-lg border border-gray-200 [&_div:first-child_label]:border-t-0 [&_textarea]:text-sm"
+            />
+          )}
+        </>
+      )}
+
       <button
         type="submit"
         className="flex h-9 w-full items-center justify-center gap-2 rounded-lg bg-black text-sm text-white focus:outline-none"

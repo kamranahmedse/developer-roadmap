@@ -1,3 +1,6 @@
+import { useId } from 'react';
+import { cn } from '../../lib/classname';
+
 type QuestionProps = {
   label: string;
   placeholder: string;
@@ -8,13 +11,18 @@ type QuestionProps = {
 
 function Question(props: QuestionProps) {
   const { label, placeholder, value, onChange, autoFocus = false } = props;
+  const questionId = useId();
 
   return (
     <div className="flex flex-col">
-      <label className="border-y bg-gray-100 px-4 py-2.5 text-sm font-medium text-gray-700">
+      <label
+        htmlFor={questionId}
+        className="border-y bg-gray-100 px-4 py-2.5 text-sm font-medium text-gray-700"
+      >
         {label}
       </label>
       <textarea
+        id={questionId}
         placeholder={placeholder}
         className="min-h-[80px] w-full resize-none px-4 py-3 text-gray-700 placeholder:text-gray-400 focus:outline-hidden"
         value={value}
@@ -31,10 +39,10 @@ type FineTuneCourseProps = {
   goal: string;
   customInstructions: string;
 
-  setHasFineTuneData: (hasMetadata: boolean) => void;
   setAbout: (about: string) => void;
   setGoal: (goal: string) => void;
   setCustomInstructions: (customInstructions: string) => void;
+  className?: string;
 };
 
 export function FineTuneCourse(props: FineTuneCourseProps) {
@@ -46,7 +54,7 @@ export function FineTuneCourse(props: FineTuneCourseProps) {
     setAbout,
     setGoal,
     setCustomInstructions,
-    setHasFineTuneData,
+    className,
   } = props;
 
   if (!hasFineTuneData) {
@@ -54,7 +62,7 @@ export function FineTuneCourse(props: FineTuneCourseProps) {
   }
 
   return (
-    <div className="mt-0 flex flex-col">
+    <div className={cn('mt-0 flex flex-col', className)}>
       <Question
         label="Tell us about yourself"
         placeholder="e.g. I am a frontend developer and have good knowledge of HTML, CSS, and JavaScript."

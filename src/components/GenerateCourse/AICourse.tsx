@@ -175,7 +175,6 @@ export function AICourse(props: AICourseProps) {
 
           <FineTuneCourse
             hasFineTuneData={hasFineTuneData}
-            setHasFineTuneData={setHasFineTuneData}
             about={about}
             goal={goal}
             customInstructions={customInstructions}

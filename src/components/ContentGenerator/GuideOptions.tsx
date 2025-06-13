@@ -7,8 +7,13 @@ import {
   SelectValue,
 } from '../Select';
 
-export function GuideOptions() {
-  const [depth, setDepth] = useState<string>('essentials');
+type GuideOptionsProps = {
+  depth: string;
+  setDepth: (depth: string) => void;
+};
+
+export function GuideOptions(props: GuideOptionsProps) {
+  const { depth, setDepth } = props;
   const depthSelectId = useId();
 
   const depthOptions = [
@@ -37,7 +42,7 @@ export function GuideOptions() {
         htmlFor={depthSelectId}
         className="inline-block text-sm text-gray-500"
       >
-        Choose the guide options
+        Choose depth of content
       </label>
       <Select value={depth} onValueChange={setDepth}>
         <SelectTrigger id={depthSelectId}>
