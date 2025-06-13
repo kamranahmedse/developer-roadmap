@@ -1,8 +1,17 @@
 import './RoadmapAIChat.css';
 
 import { useQuery } from '@tanstack/react-query';
-import { roadmapJSONOptions } from '../../queries/roadmap';
-import { queryClient } from '../../stores/query-client';
+import type { Editor, JSONContent } from '@tiptap/core';
+import {
+  Bot,
+  Frown,
+  HistoryIcon,
+  Loader2Icon,
+  LockIcon,
+  PauseCircleIcon,
+  SendIcon,
+  XIcon,
+} from 'lucide-react';
 import {
   Fragment,
   useCallback,
@@ -12,49 +21,41 @@ import {
   useRef,
   useState,
 } from 'react';
-import {
-  Bot,
-  Frown,
-  Loader2Icon,
-  LockIcon,
-  PauseCircleIcon,
-  SendIcon,
-  FileIcon,
-} from 'lucide-react';
-import { ChatEditor } from '../ChatEditor/ChatEditor';
-import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
-import { isLoggedIn } from '../../lib/jwt';
-import type { JSONContent, Editor } from '@tiptap/core';
 import { flushSync } from 'react-dom';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
-import { useToast } from '../../hooks/use-toast';
-import { userResourceProgressOptions } from '../../queries/resource-progress';
-import { ChatRoadmapRenderer } from './ChatRoadmapRenderer';
-import { RoadmapAIChatCard } from './RoadmapAIChatCard';
-import { RoadmapAIChatHeader } from './RoadmapAIChatHeader';
-import { showLoginPopup } from '../../lib/popup';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { billingDetailsOptions } from '../../queries/billing';
-import { TopicDetail } from '../TopicDetail/TopicDetail';
-import { slugify } from '../../lib/slugger';
-import { AIChatActionButtons } from './AIChatActionButtons';
-import { cn } from '../../lib/classname';
-import {
-  getTailwindScreenDimension,
-  type TailwindScreenDimensions,
-} from '../../lib/is-mobile';
-import { ChatPersona } from '../UserPersona/ChatPersona';
-import { userRoadmapPersonaOptions } from '../../queries/user-persona';
-import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
-import { lockBodyScroll } from '../../lib/dom';
-import { TutorIntroMessage } from './TutorIntroMessage';
 import {
   roadmapAIChatRenderer,
   useRoadmapAIChat,
   type RoadmapAIChatHistoryType,
 } from '../../hooks/use-roadmap-ai-chat';
-import { chatHistoryOptions } from '../../queries/chat-history';
+import { useToast } from '../../hooks/use-toast';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
+import { cn } from '../../lib/classname';
+import { lockBodyScroll } from '../../lib/dom';
+import {
+  getTailwindScreenDimension,
+  type TailwindScreenDimensions,
+} from '../../lib/is-mobile';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
+import { slugify } from '../../lib/slugger';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { billingDetailsOptions } from '../../queries/billing';
+import { chatHistoryOptions } from '../../queries/chat-history';
+import { userResourceProgressOptions } from '../../queries/resource-progress';
+import { roadmapJSONOptions } from '../../queries/roadmap';
+import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
+import { userRoadmapPersonaOptions } from '../../queries/user-persona';
+import { queryClient } from '../../stores/query-client';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { ChatEditor } from '../ChatEditor/ChatEditor';
+import { TopicDetail } from '../TopicDetail/TopicDetail';
+import { ChatPersona } from '../UserPersona/ChatPersona';
+import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
+import { AIChatActionButtons } from './AIChatActionButtons';
+import { ChatRoadmapRenderer } from './ChatRoadmapRenderer';
+import { RoadmapAIChatCard } from './RoadmapAIChatCard';
+import { RoadmapAIChatHeader } from './RoadmapAIChatHeader';
+import { TutorIntroMessage } from './TutorIntroMessage';
 
 export type RoadmapAIChatTab = 'chat' | 'topic';
 
@@ -404,11 +405,19 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
         {activeTab === 'chat' && (
           <>
             {!!chatHistory && isPaidUser && !isChatHistoryLoading && (
-              <div className="flex flex-col border-b border-gray-200 px-3 py-2 text-sm text-gray-500">
+              <div className="flex flex-row items-center justify-between border-b border-gray-200 bg-gray-100 px-3 py-2 text-sm text-gray-500">
                 <h3 className="flex min-w-0 items-center gap-2">
-                  <FileIcon className="size-4 shrink-0" />
+                  <HistoryIcon className="size-4 shrink-0" />
                   <span className="truncate">{chatHistory.title}</span>
                 </h3>
+                <button
+                  onClick={() => {
+                    setActiveChatHistoryId(undefined);
+                  }}
+                  className="text-sm text-gray-500 hover:text-gray-700"
+                >
+                  <XIcon className="size-4" />
+                </button>
               </div>
             )}
 

@@ -3,6 +3,7 @@ import type { JSONContent } from '@tiptap/core';
 import {
   BookOpen,
   ChevronDown,
+  Loader2Icon,
   MessageCirclePlus,
   PauseCircleIcon,
   PersonStanding,
@@ -376,7 +377,18 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
       >
         {isOpen && (
           <>
-            <div className="flex h-full w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
+            <div className="relative flex h-full w-full flex-col overflow-hidden rounded-lg bg-white shadow-lg">
+              {isChatHistoryLoading && (
+                <div className="absolute inset-0 z-50 flex items-center justify-center bg-white">
+                  <div className="flex items-center rounded-md border border-gray-200 py-2 pr-3 pl-2">
+                    <Loader2Icon className="size-4 animate-spin stroke-[2.5] text-gray-400" />
+                    <span className="ml-2 text-sm text-gray-500">
+                      Loading history..
+                    </span>
+                  </div>
+                </div>
+              )}
+
               <div className="flex items-center justify-between px-3 py-2">
                 <div className="flex">
                   <ChatHeaderButton
@@ -392,6 +404,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                     <ChatHeaderButton
                       onClick={() => {
                         setActiveChatHistoryId(undefined);
+                        inputRef.current?.focus();
                       }}
                       icon={<Plus className="h-3.5 w-3.5" />}
                       className="justify-center rounded-md bg-gray-200 px-2 py-1 text-xs text-black hover:bg-gray-300"
