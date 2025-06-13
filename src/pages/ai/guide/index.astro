@@ -1,7 +1,7 @@
 ---
 import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
 import { CheckSubscriptionVerification } from '../../../components/Billing/CheckSubscriptionVerification';
-import { GenerateAIDocument } from '../../../components/GenerateGuide/GenerateAIGuide';
+import { GenerateAIGuide } from '../../../components/GenerateGuide/GenerateAIGuide';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 ---
 
@@ -14,7 +14,7 @@ import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
   noIndex={true}
 >
   <AITutorLayout client:load>
-    <GenerateAIDocument client:load />
+    <GenerateAIGuide client:load />
     <CheckSubscriptionVerification client:load />
   </AITutorLayout>
 </SkeletonLayout>

@@ -4,85 +4,70 @@ import { generateGuide } from '../../helper/generate-ai-guide';
 import { getCourseFineTuneData } from '../../lib/ai';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
-import { getAiCourseOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
-import { AIDocumentContent } from './AIGuideContent';
+import { AIGuideContent } from './AIGuideContent';
+import { getAiGuideOptions } from '../../queries/ai-guide';
 
 type GenerateAIGuideProps = {};
 
 export function GenerateAIGuide(props: GenerateAIGuideProps) {
   const [term, setTerm] = useState('');
-  const [difficulty, setDifficulty] = useState('');
-  const [sessionId, setSessionId] = useState('');
-  const [goal, setGoal] = useState('');
-  const [about, setAbout] = useState('');
-  const [customInstructions, setCustomInstructions] = useState('');
+  const [depth, setDepth] = useState('');
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const [creatorId, setCreatorId] = useState('');
-  const [documentId, setDocumentId] = useState('');
   const [documentSlug, setDocumentSlug] = useState('');
-  const [document, setDocument] = useState<string>('');
+  const [html, setHtml] = useState('');
 
   // Once the course is generated, we fetch the course from the database
   // so that we get the up-to-date course data and also so that we
   // can reload the changes (e.g. progress) etc using queryClient.setQueryData
-  const { data: aiCourse } = useQuery(
-    getAiCourseOptions({ aiCourseSlug: documentSlug }),
+  const { data: aiGuide } = useQuery(
+    getAiGuideOptions(documentSlug),
     queryClient,
   );
 
   useEffect(() => {
-    if (term || difficulty) {
+    if (term || depth) {
       return;
     }
 
     const params = getUrlParams();
     const paramsTerm = params?.term;
-    const paramsDifficulty = params?.difficulty;
+    const paramsDepth = params?.depth;
     const paramsSrc = params?.src || 'search';
-    if (!paramsTerm || !paramsDifficulty) {
+    if (!paramsTerm || !paramsDepth) {
       return;
     }
-
-    setTerm(paramsTerm);
-    setDifficulty(paramsDifficulty);
-
-    const sessionId = params?.id;
-    setSessionId(sessionId);
 
     let paramsGoal = '';
     let paramsAbout = '';
     let paramsCustomInstructions = '';
 
+    const sessionId = params?.id;
     if (sessionId) {
       const fineTuneData = getCourseFineTuneData(sessionId);
       if (fineTuneData) {
         paramsGoal = fineTuneData.goal;
         paramsAbout = fineTuneData.about;
         paramsCustomInstructions = fineTuneData.customInstructions;
-
-        setGoal(paramsGoal);
-        setAbout(paramsAbout);
-        setCustomInstructions(paramsCustomInstructions);
       }
     }
 
     handleGenerateDocument({
       term: paramsTerm,
-      difficulty: paramsDifficulty,
+      depth: paramsDepth,
       instructions: paramsCustomInstructions,
       goal: paramsGoal,
       about: paramsAbout,
       src: paramsSrc,
     });
-  }, [term, difficulty]);
+  }, [term, depth]);
 
   const handleGenerateDocument = async (options: {
     term: string;
-    difficulty: string;
+    depth: string;
     instructions?: string;
     goal?: string;
     about?: string;
@@ -90,30 +75,22 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
     prompt?: string;
     src?: string;
   }) => {
-    const {
-      term,
-      difficulty,
-      isForce,
-      prompt,
-      instructions,
-      goal,
-      about,
-      src,
-    } = options;
+    const { term, depth, isForce, prompt, instructions, goal, about, src } =
+      options;
 
     if (!isLoggedIn()) {
       window.location.href = '/ai';
       return;
     }
 
-    await generateDocument({
+    await generateGuide({
       term,
-      difficulty,
+      depth,
       slug: documentSlug,
-      onDocumentIdChange: setDocumentId,
-      onDocumentSlugChange: setDocumentSlug,
-      onCreatorIdChange: setCreatorId,
-      onDocumentChange: setDocument,
+      onGuideSlugChange: (slug) => {
+        setDocumentSlug(slug);
+        window.history.replaceState(null, '', `/ai/guide/${slug}`);
+      },
       onLoadingChange: setIsLoading,
       onError: setError,
       instructions,
@@ -122,37 +99,13 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
       isForce,
       prompt,
       src,
+      onHtmlChange: setHtml,
     });
   };
-
-  useEffect(() => {
-    const handlePopState = (e: PopStateEvent) => {
-      const { documentId, documentSlug, term, difficulty } = e.state || {};
-      if (!documentId || !documentSlug) {
-        window.location.reload();
-        return;
-      }
-
-      setDocumentId(documentId);
-      setDocumentSlug(documentSlug);
-      setTerm(term);
-      setDifficulty(difficulty);
-
-      setIsLoading(true);
-      handleGenerateDocument({ term, difficulty }).finally(() => {
-        setIsLoading(false);
-      });
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    return () => {
-      window.removeEventListener('popstate', handlePopState);
-    };
-  }, []);
 
   if (error) {
     return <div className="text-red-500">{error}</div>;
   }
 
-  return <AIDocumentContent document={document} />;
+  return <AIGuideContent html={html} />;
 }

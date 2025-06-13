@@ -1,11 +1,9 @@
 import { httpGet } from '../lib/query-http';
 import { isLoggedIn } from '../lib/jwt';
+import { queryOptions } from '@tanstack/react-query';
+import { markdownToHtmlWithHighlighting } from '../lib/markdown';
 
-type GetAIDocumentParams = {
-  documentSlug: string;
-};
-
-export interface AIDocumentDocument {
+export interface AIGuideDocument {
   _id: string;
   userId: string;
   title: string;
@@ -18,18 +16,23 @@ export interface AIDocumentDocument {
   updatedAt: Date;
 }
 
-type GetAIDocumentResponse = AIDocumentDocument;
+type GetAIGuideResponse = AIGuideDocument;
 
-export function getAiDocumentOptions(params: GetAIDocumentParams) {
-  return {
-    queryKey: ['ai-document', params],
-    queryFn: () => {
-      return httpGet<GetAIDocumentResponse>(
-        `/v1-get-ai-document/${params.documentSlug}`,
+export function getAiGuideOptions(guideSlug: string) {
+  return queryOptions({
+    queryKey: ['ai-guide', guideSlug],
+    queryFn: async () => {
+      const res = await httpGet<GetAIGuideResponse>(
+        `/v1-get-ai-guide/${guideSlug}`,
       );
+
+      return {
+        ...res,
+        html: await markdownToHtmlWithHighlighting(res.content),
+      };
     },
-    enabled: !!params.documentSlug,
-  };
+    enabled: !!guideSlug,
+  });
 }
 
 export type ListUserAiDocumentsQuery = {
@@ -39,7 +42,7 @@ export type ListUserAiDocumentsQuery = {
 };
 
 type ListUserAiDocumentsResponse = {
-  data: AIDocumentDocument[];
+  data: AIGuideDocument[];
   totalCount: number;
   totalPages: number;
   currPage: number;

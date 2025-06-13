@@ -1,33 +1,36 @@
 import { readStream } from '../lib/ai';
 import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from '../queries/ai-course';
+import { readChatStream } from '../lib/chat';
+import { markdownToHtmlWithHighlighting } from '../lib/markdown';
 
 type GenerateGuideOptions = {
   term: string;
-  difficulty: string;
+  depth: string;
   slug?: string;
   isForce?: boolean;
   prompt?: string;
   instructions?: string;
   goal?: string;
   about?: string;
-  onDocumentIdChange?: (documentId: string) => void;
-  onDocumentSlugChange?: (documentSlug: string) => void;
-  onDocumentChange?: (document: string) => void;
+  onGuideIdChange?: (guideId: string) => void;
+  onGuideSlugChange?: (guideSlug: string) => void;
+  onGuideChange?: (guide: string) => void;
   onLoadingChange?: (isLoading: boolean) => void;
   onCreatorIdChange?: (creatorId: string) => void;
   onError?: (error: string) => void;
   src?: string;
+  onHtmlChange?: (html: string) => void;
 };
 
 export async function generateGuide(options: GenerateGuideOptions) {
   const {
     term,
     slug,
-    difficulty,
-    onDocumentIdChange,
-    onDocumentSlugChange,
-    onDocumentChange,
+    depth,
+    onGuideIdChange,
+    onGuideSlugChange,
+    onGuideChange,
     onLoadingChange,
     onError,
     onCreatorIdChange,
@@ -37,10 +40,11 @@ export async function generateGuide(options: GenerateGuideOptions) {
     goal,
     about,
     src = 'search',
+    onHtmlChange,
   } = options;
 
   onLoadingChange?.(true);
-  onDocumentChange?.('');
+  onGuideChange?.('');
   onError?.('');
 
   try {
@@ -48,7 +52,7 @@ export async function generateGuide(options: GenerateGuideOptions) {
 
     if (slug && isForce) {
       response = await fetch(
-        `${import.meta.env.PUBLIC_API_URL}/v1-regenerate-ai-document/${slug}`,
+        `${import.meta.env.PUBLIC_API_URL}/v1-regenerate-ai-guide/${slug}`,
         {
           method: 'POST',
           headers: {
@@ -63,7 +67,7 @@ export async function generateGuide(options: GenerateGuideOptions) {
       );
     } else {
       response = await fetch(
-        `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-document`,
+        `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-guide`,
         {
           method: 'POST',
           headers: {
@@ -71,7 +75,7 @@ export async function generateGuide(options: GenerateGuideOptions) {
           },
           body: JSON.stringify({
             keyword: term,
-            difficulty,
+            depth,
             isForce,
             customPrompt: prompt,
             instructions,
@@ -95,19 +99,6 @@ export async function generateGuide(options: GenerateGuideOptions) {
       return;
     }
 
-    // const reader = response.body?.getReader();
-
-    // if (!reader) {
-    //   console.error('Failed to get reader from response');
-    //   onError?.('Something went wrong');
-    //   onLoadingChange?.(false);
-    //   return;
-    // }
-
-    // const DOCUMENT_ID_REGEX = new RegExp('@DOCID:(\\w+)@');
-    // const DOCUMENT_SLUG_REGEX = new RegExp(/@DOCSLUG:([\w-]+)@/);
-    // const CREATOR_ID_REGEX = new RegExp('@CREATORID:(\\w+)@');
-
     const stream = response.body;
     if (!stream) {
       console.error('Failed to get stream from response');
@@ -116,55 +107,28 @@ export async function generateGuide(options: GenerateGuideOptions) {
       return;
     }
 
-    // await readStream(reader, {
-    //   onStream: async (result) => {
-    //     if (result.includes('@DOCID') || result.includes('@DOCSLUG')) {
-    //       const documentIdMatch = result.match(DOCUMENT_ID_REGEX);
-    //       const documentSlugMatch = result.match(DOCUMENT_SLUG_REGEX);
-    //       const creatorIdMatch = result.match(CREATOR_ID_REGEX);
-    //       const extractedDocumentId = documentIdMatch?.[1] || '';
-    //       const extractedDocumentSlug = documentSlugMatch?.[1] || '';
-    //       const extractedCreatorId = creatorIdMatch?.[1] || '';
+    await readChatStream(stream, {
+      onMessage: async (message) => {
+        onGuideChange?.(message);
+        onHtmlChange?.(await markdownToHtmlWithHighlighting(message));
+      },
+      onMessageEnd: async (message) => {
+        onLoadingChange?.(false);
+        onGuideChange?.(message);
+        onHtmlChange?.(await markdownToHtmlWithHighlighting(message));
+        queryClient.invalidateQueries(getAiCourseLimitOptions());
+      },
+      onDetails: async (details) => {
+        const detailsJson = JSON.parse(details);
+        if (!detailsJson?.guideId || !detailsJson?.guideSlug) {
+          throw new Error('Invalid details');
+        }
 
-    //       if (extractedDocumentSlug) {
-    //         window.history.replaceState(
-    //           {
-    //             documentId: extractedDocumentId,
-    //             documentSlug: extractedDocumentSlug,
-    //             term,
-    //             difficulty,
-    //           },
-    //           '',
-    //           `${origin}/ai/document/${extractedDocumentSlug}`,
-    //         );
-    //       }
-
-    //       result = result
-    //         .replace(DOCUMENT_ID_REGEX, '')
-    //         .replace(DOCUMENT_SLUG_REGEX, '')
-    //         .replace(CREATOR_ID_REGEX, '');
-
-    //       onDocumentIdChange?.(extractedDocumentId);
-    //       onDocumentSlugChange?.(extractedDocumentSlug);
-    //       onCreatorIdChange?.(extractedCreatorId);
-    //     }
-
-    //     try {
-    //       onDocumentChange?.(result);
-    //     } catch (e) {
-    //       console.error('Error parsing streamed course content:', e);
-    //     }
-    //   },
-    //   onStreamEnd: async (result) => {
-    //     result = result
-    //       .replace(DOCUMENT_ID_REGEX, '')
-    //       .replace(DOCUMENT_SLUG_REGEX, '')
-    //       .replace(CREATOR_ID_REGEX, '');
-
-    //     onLoadingChange?.(false);
-    //     queryClient.invalidateQueries(getAiCourseLimitOptions());
-    //   },
-    // });
+        onGuideIdChange?.(detailsJson?.guideId);
+        onGuideSlugChange?.(detailsJson?.guideSlug);
+        onCreatorIdChange?.(detailsJson?.creatorId);
+      },
+    });
   } catch (error: any) {
     onError?.(error?.message || 'Something went wrong');
     console.error('Error in course generation:', error);

@@ -1,36 +1,35 @@
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
-import { generateDocument } from '../../helper/generate-ai-guide';
 import { queryClient } from '../../stores/query-client';
-import { getAiDocumentOptions } from '../../queries/ai-document';
-import { AIDocumentContent } from './AIGuideContent';
+import { AIGuideContent } from './AIGuideContent';
+import { getAiGuideOptions } from '../../queries/ai-guide';
 
-type GetAIDocumentProps = {
+type GetAIGuideProps = {
   slug: string;
 };
 
-export function GetAIDocument(props: GetAIDocumentProps) {
+export function GetAIGuide(props: GetAIGuideProps) {
   const { slug: documentSlug } = props;
 
   const [isLoading, setIsLoading] = useState(true);
   const [isRegenerating, setIsRegenerating] = useState(false);
 
   const [error, setError] = useState('');
-  const { data: aiDocument, error: queryError } = useQuery(
+  const { data: aiGuide, error: queryError } = useQuery(
     {
-      ...getAiDocumentOptions({ documentSlug: documentSlug }),
+      ...getAiGuideOptions(documentSlug),
       enabled: !!documentSlug,
     },
     queryClient,
   );
 
   useEffect(() => {
-    if (!aiDocument) {
+    if (!aiGuide) {
       return;
     }
 
     setIsLoading(false);
-  }, [aiDocument]);
+  }, [aiGuide]);
 
   useEffect(() => {
     if (!queryError) {
@@ -42,46 +41,44 @@ export function GetAIDocument(props: GetAIDocumentProps) {
   }, [queryError]);
 
   const handleRegenerateDocument = async (prompt?: string) => {
-    if (!aiDocument) {
-      return;
-    }
-
-    queryClient.setQueryData(
-      getAiDocumentOptions({ documentSlug: documentSlug }).queryKey,
-      {
-        ...aiDocument,
-        title: '',
-        difficulty: '',
-        modules: [],
-      },
-    );
-
-    await generateDocument({
-      term: aiDocument.keyword,
-      difficulty: aiDocument.difficulty,
-      slug: documentSlug,
-      prompt,
-      onDocumentChange: (document) => {
-        queryClient.setQueryData(
-          getAiDocumentOptions({ documentSlug: documentSlug }).queryKey,
-          {
-            ...aiDocument,
-            title: aiDocument.title,
-            difficulty: aiDocument.difficulty,
-            content: document,
-          },
-        );
-      },
-      onLoadingChange: (isNewLoading) => {
-        setIsRegenerating(isNewLoading);
-        if (!isNewLoading) {
-          // TODO: Update progress
-        }
-      },
-      onError: setError,
-      isForce: true,
-    });
+    // if (!aiDocument) {
+    //   return;
+    // }
+    // queryClient.setQueryData(
+    //   getAiDocumentOptions({ documentSlug: documentSlug }).queryKey,
+    //   {
+    //     ...aiDocument,
+    //     title: '',
+    //     difficulty: '',
+    //     modules: [],
+    //   },
+    // );
+    // await generateDocument({
+    //   term: aiDocument.keyword,
+    //   difficulty: aiDocument.difficulty,
+    //   slug: documentSlug,
+    //   prompt,
+    //   onDocumentChange: (document) => {
+    //     queryClient.setQueryData(
+    //       getAiDocumentOptions({ documentSlug: documentSlug }).queryKey,
+    //       {
+    //         ...aiDocument,
+    //         title: aiDocument.title,
+    //         difficulty: aiDocument.difficulty,
+    //         content: document,
+    //       },
+    //     );
+    //   },
+    //   onLoadingChange: (isNewLoading) => {
+    //     setIsRegenerating(isNewLoading);
+    //     if (!isNewLoading) {
+    //       // TODO: Update progress
+    //     }
+    //   },
+    //   onError: setError,
+    //   isForce: true,
+    // });
   };
 
-  return <AIDocumentContent document={aiDocument?.content || ''} />;
+  return <AIGuideContent html={aiGuide?.html || ''} />;
 }
