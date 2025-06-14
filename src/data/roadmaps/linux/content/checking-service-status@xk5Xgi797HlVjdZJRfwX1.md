@@ -1,0 +1,3 @@
+# Checking Service Status
+
+Checking service status in Linux helps monitor system health and troubleshoot issues. Use `systemctl status service_name` to view detailed service information including active state, process ID, and recent log entries. Commands like `systemctl is-active` and `systemctl is-enabled` provide quick status checks. Service status monitoring is crucial for maintaining system reliability and performance.

@@ -1,0 +1,3 @@
+# Containerization
+
+Containerization is a virtualization method that encapsulates applications in containers with isolated operating environments, enabling reliable deployment across computing environments. Unlike VMs requiring full operating systems, containers share the host system's user space, making them lightweight and faster. Docker is a popular Linux containerization tool for managing complex applications.

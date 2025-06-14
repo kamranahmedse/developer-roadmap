@@ -1,0 +1,3 @@
+# Creating New Services
+
+Creating custom services in Linux involves writing systemd service unit files that define how processes should start, stop, and restart. Service files are placed in `/etc/systemd/system/` and contain sections like [Unit], [Service], and [Install]. Use `systemctl enable` to enable services at boot and `systemctl start` to run them. Custom services allow automation of background processes.

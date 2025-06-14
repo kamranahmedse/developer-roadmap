@@ -1,0 +1,3 @@
+# Container Runtime
+
+Container runtime is software responsible for running containers in Linux, providing image transport, storage, execution, and network interactions. Popular options include Docker (comprehensive ecosystem), Containerd (lightweight standalone), and CRI-O (Kubernetes-optimized). Each runtime offers specific features and benefits for different use cases in containerized application deployment and management.
