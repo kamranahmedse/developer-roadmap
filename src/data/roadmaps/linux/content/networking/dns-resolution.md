@@ -17,3 +17,7 @@ dig www.example.com
 ```
 
 Getting a good understanding of the DNS resolution process provides a solid base for tasks like network troubleshooting and web server setup on a Linux system.
+
+Visit the following resources to learn more:
+
+- [@video@How a DNS Server (Domain Name System) works](https://www.youtube.com/watch?v=mpQZVYPuDGU)
