@@ -10,3 +10,7 @@ kill -SIGSTOP 12345
 This will suspend the execution of the process until a SIGCONT signal is received.
 
 Understanding proc signals is essential for comprehensive process management and resource allocation in Linux.
+
+Learn more from the following resource:
+
+- [@article@Process signals](https://linuxjourney.com/lesson/process-signals)
