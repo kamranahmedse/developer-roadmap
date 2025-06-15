@@ -1,6 +1,6 @@
 # DHCP
 
-Dynamic Host Configuration Protocol (DHCP) automatically allocates IP addresses and network configuration to clients within a network. DHCP servers manage IP distribution ensuring unique addresses for each client machine. In Linux, install with `sudo apt-get install isc-dhcp-server` and configure via `/etc/dhcp/dhcpd.conf`. DHCP servers should have static IPs for effective management.
+DHCP (Dynamic Host Configuration Protocol) automatically allocates IP addresses and network configuration to clients, ensuring unique addresses for each machine. In Linux, install with `sudo apt-get install isc-dhcp-server` and configure via `/etc/dhcp/dhcpd.conf`. DHCP servers require static IPs for effective management and can handle DNS and network data.
 
 The DHCP server effectively manages the IP addresses and information related to them, making sure that each client machine gets a unique IP and all the correct network information.
 

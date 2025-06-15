@@ -1,16 +1,8 @@
 # File Permissions
 
-Linux file permissions control who can read (r), write (w), or execute (x) files and directories. Permissions are set for owner, group, and others using octal notation or symbolic format. The format `-rwxr--r--` shows file type and permissions. Use `chmod` to change permissions, `chown` for ownership, and `chgrp` for group ownership. Proper permissions ensure system security.
+Linux file permissions control read (r), write (w), and execute (x) access for owner, group, and others using octal or symbolic notation. Format `-rwxr--r--` shows file type and permissions. Use `chmod` to change permissions, `chown` for ownership, `chgrp` for group ownership. Essential for system security and proper access control.
 
-Let's have a look at an example:
 
-```bash
--rwxr--r-- 1 root root 4096 Jan 1 12:00 filename
-```
-
-From the above example, the first character `-` indicates if it is a regular file(`-`) or directory(`d`). The following group of three characters(`rwx`) represents the permissions for the file owner. The next three characters(`r--`) represent permissions for the group and the last set of three characters(`r--`) represents permissions for others.
-
-The `r` indicates that the file can be read, `w` indicates that the file can be written to, and `x` indicates that the file can be executed.
 
 Learn more from the following resources:
 
