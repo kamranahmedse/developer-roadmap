@@ -22,3 +22,7 @@ fg
 ``` 
 
 These commands, `bg` and `fg` are part of job control in Unix-like operating systems, which lets you manage multiple tasks simultaneously from a single terminal.
+
+Learn more from following resource:
+
+- [@article@Job Control](https://linuxjourney.com/lesson/job-control)
