@@ -371,8 +371,8 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
       <div
         className={cn(
-          'animate-fade-slide-up fixed bottom-5 left-1/2 z-91 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-col gap-1.5 overflow-hidden px-4 transition-all duration-300 sm:max-h-[50vh] lg:flex',
-          isOpen ? 'h-full w-full' : 'w-auto',
+          'animate-fade-slide-up fixed bottom-5 left-1/2 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-col gap-1.5 overflow-hidden px-4 duration-300 sm:max-h-[50vh] lg:flex',
+          isOpen ? 'z-91 h-full w-full' : 'z-40 w-auto',
         )}
       >
         {isOpen && (
