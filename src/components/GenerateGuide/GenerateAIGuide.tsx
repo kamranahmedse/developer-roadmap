@@ -10,7 +10,7 @@ import { getAiGuideOptions } from '../../queries/ai-guide';
 
 type GenerateAIGuideProps = {
   onGuideSlugChange?: (guideSlug: string) => void;
-};
+}; 
 
 export function GenerateAIGuide(props: GenerateAIGuideProps) {
   const { onGuideSlugChange } = props;

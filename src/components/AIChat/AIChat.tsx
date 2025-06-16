@@ -283,8 +283,7 @@ export function AIChat(props: AIChatProps) {
         });
       },
       onDetails: (details) => {
-        const detailsJson = JSON.parse(details);
-        const chatHistoryId = detailsJson?.chatHistoryId;
+        const chatHistoryId = details?.chatHistoryId;
         if (!chatHistoryId) {
           return;
         }

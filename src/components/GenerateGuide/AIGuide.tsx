@@ -12,6 +12,9 @@ import { AIGuideChat } from './AIGuideChat';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { isLoggedIn } from '../../lib/jwt';
 import { shuffle } from '../../helper/shuffle';
+import { generateGuide } from '../../helper/generate-ai-guide';
+import { useToast } from '../../hooks/use-toast';
+import { flushSync } from 'react-dom';
 
 type AIGuideProps = {
   guideSlug?: string;
@@ -21,7 +24,10 @@ export function AIGuide(props: AIGuideProps) {
   const { guideSlug: defaultGuideSlug } = props;
   const [guideSlug, setGuideSlug] = useState(defaultGuideSlug);
 
+  const toast = useToast();
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const [isRegenerating, setIsRegenerating] = useState(false);
+  const [regeneratedHtml, setRegeneratedHtml] = useState<string | null>(null);
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
@@ -45,6 +51,43 @@ export function AIGuide(props: AIGuideProps) {
     return shuffle(aiGuideSuggestions?.deepDiveTopics || []).slice(0, 2);
   }, [aiGuideSuggestions]);
 
+  const handleRegenerate = async (prompt?: string) => {
+    flushSync(() => {
+      setIsRegenerating(true);
+      setRegeneratedHtml(null);
+    });
+
+    queryClient.cancelQueries(getAiGuideOptions(guideSlug));
+    queryClient.setQueryData(getAiGuideOptions(guideSlug).queryKey, (old) => {
+      if (!old) {
+        return old;
+      }
+
+      return {
+        ...old,
+        content: '',
+        html: '',
+      };
+    });
+
+    await generateGuide({
+      slug: aiGuide?.slug || '',
+      term: aiGuide?.keyword || '',
+      depth: aiGuide?.difficulty || '',
+      prompt,
+      onStreamingChange: setIsRegenerating,
+      onHtmlChange: setRegeneratedHtml,
+      onFinish: () => {
+        setIsRegenerating(false);
+        queryClient.invalidateQueries(getAiGuideOptions(guideSlug));
+      },
+      isForce: true,
+      onError: (error) => {
+        toast.error(error);
+      },
+    });
+  };
+
   return (
     <AITutorLayout
       wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden"
@@ -55,10 +98,16 @@ export function AIGuide(props: AIGuideProps) {
       )}
 
       <div className="grow overflow-y-auto p-4 pt-0">
-        {guideSlug && <AIGuideContent html={aiGuide?.html || ''} />}
+        {guideSlug && (
+          <AIGuideContent
+            html={regeneratedHtml || aiGuide?.html || ''}
+            onRegenerate={handleRegenerate}
+            isRegenerating={isRegenerating}
+          />
+        )}
         {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}
 
-        {!isAiGuideSuggestionsLoading && aiGuide && (
+        {!isAiGuideSuggestionsLoading && aiGuide && !isRegenerating && (
           <div className="mt-4 grid grid-cols-2 divide-x divide-gray-200 rounded-lg border border-gray-200 bg-white">
             <ListSuggestions
               title="Related Topics"

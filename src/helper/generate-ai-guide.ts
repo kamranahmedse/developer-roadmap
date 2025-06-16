@@ -1,4 +1,3 @@
-import { readStream } from '../lib/ai';
 import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from '../queries/ai-course';
 import { readChatStream } from '../lib/chat';
@@ -28,6 +27,7 @@ type GenerateGuideOptions = {
   onHtmlChange?: (html: string) => void;
   onStreamingChange?: (isStreaming: boolean) => void;
   onDetailsChange?: (details: GuideDetails) => void;
+  onFinish?: () => void;
 };
 
 export async function generateGuide(options: GenerateGuideOptions) {
@@ -47,11 +47,11 @@ export async function generateGuide(options: GenerateGuideOptions) {
     onHtmlChange,
     onStreamingChange,
     onDetailsChange,
+    onFinish,
   } = options;
 
   onLoadingChange?.(true);
   onGuideChange?.('');
-  onError?.('');
 
   try {
     let response = null;
@@ -66,8 +66,7 @@ export async function generateGuide(options: GenerateGuideOptions) {
           },
           credentials: 'include',
           body: JSON.stringify({
-            isForce,
-            customPrompt: prompt,
+            prompt,
           }),
         },
       );
@@ -127,14 +126,14 @@ export async function generateGuide(options: GenerateGuideOptions) {
         onStreamingChange?.(false);
       },
       onDetails: async (details) => {
-        const detailsJson = JSON.parse(details);
-        if (!detailsJson?.guideId || !detailsJson?.guideSlug) {
+        if (!details?.guideId || !details?.guideSlug) {
           throw new Error('Invalid details');
         }
 
-        onDetailsChange?.(detailsJson);
+        onDetailsChange?.(details);
       },
     });
+    onFinish?.();
   } catch (error: any) {
     onError?.(error?.message || 'Something went wrong');
     console.error('Error in course generation:', error);

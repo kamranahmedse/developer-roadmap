@@ -48,13 +48,6 @@ export function AIGuideChat(props: AIGuideChatProps) {
     refetch: refetchBillingDetails,
   } = useQuery(billingDetailsOptions(), queryClient);
 
-  //   const {suggestions}
-  // const randomAiGuideSuggestions = useMemo(() => {
-  //   return aiGuideSuggestions?.relatedTopics[
-  //     Math.floor(Math.random() * aiGuideSuggestions.relatedTopics.length)
-  //   ];
-  // }, [aiGuideSuggestions]);
-
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
 
