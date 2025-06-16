@@ -55,11 +55,6 @@ export function ContentGenerator() {
       icon: FileTextIcon,
       value: 'guide',
     },
-    {
-      label: 'Roadmap',
-      icon: MapIcon,
-      value: 'roadmap',
-    },
   ];
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -82,7 +77,7 @@ export function ContentGenerator() {
     if (selectedFormat === 'course') {
       window.location.href = `/ai/course?term=${encodeURIComponent(title)}&difficulty=${difficulty}&id=${sessionId}&format=${selectedFormat}`;
     } else if (selectedFormat === 'guide') {
-      window.location.href = `/ai/guide?term=${encodeURIComponent(title)}&depth=${depth}&id=${sessionId}&format=${selectedFormat}`;
+      window.location.href = `/ai/guides?term=${encodeURIComponent(title)}&depth=${depth}&id=${sessionId}&format=${selectedFormat}`;
     }
   };
 
@@ -137,7 +132,7 @@ export function ContentGenerator() {
         <label className="inline-block text-sm text-gray-500">
           Choose the format
         </label>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-2 gap-2">
           {allowedFormats.map((format) => {
             const isSelected = format.value === selectedFormat;
 

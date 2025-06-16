@@ -10,7 +10,7 @@ import { getAiGuideOptions } from '../../queries/ai-guide';
 
 type GenerateAIGuideProps = {
   onGuideSlugChange?: (guideSlug: string) => void;
-}; 
+};
 
 export function GenerateAIGuide(props: GenerateAIGuideProps) {
   const { onGuideSlugChange } = props;
@@ -86,9 +86,18 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
           title,
           html: htmlRef.current,
           keyword: term,
-          difficulty: depth,
+          depth,
           content,
+          tokens: {
+            prompt: 0,
+            completion: 0,
+            total: 0,
+          },
+          relatedTopics: [],
+          deepDiveTopics: [],
+          questions: [],
           viewCount: 0,
+          lastVisitedAt: new Date(),
           createdAt: new Date(),
           updatedAt: new Date(),
         };
@@ -99,7 +108,7 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
         );
 
         onGuideSlugChange?.(guideSlug);
-        window.history.replaceState(null, '', `/ai/guide/${guideSlug}`);
+        window.history.replaceState(null, '', `/ai/guides/${guideSlug}`);
       },
       onLoadingChange: setIsLoading,
       onError: setError,

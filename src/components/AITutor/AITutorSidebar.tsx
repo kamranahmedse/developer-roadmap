@@ -21,13 +21,13 @@ type AITutorSidebarProps = {
 const sidebarItems = [
   {
     key: 'new',
-    label: 'New Course',
+    label: 'New',
     href: '/ai',
     icon: Plus,
   },
   {
-    key: 'courses',
-    label: 'My Courses',
+    key: 'library',
+    label: 'Library',
     href: '/ai/courses',
     icon: BookOpen,
   },

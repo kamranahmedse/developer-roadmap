@@ -1,5 +1,5 @@
 ---
-import { UserCoursesList } from '../../components/GenerateCourse/UserCoursesList';
+import { ListUserAIGuides } from '../../components/GenerateGuide/ListUserAIGuides';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
 import { AITutorLayout } from '../../components/AITutor/AITutorLayout';
 const ogImage = 'https://roadmap.sh/og-images/ai-tutor.png';
@@ -12,6 +12,6 @@ const ogImage = 'https://roadmap.sh/og-images/ai-tutor.png';
   description='Learn anything with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.'
 >
   <AITutorLayout activeTab='library' client:load>
-    <UserCoursesList client:load />
+    <ListUserAIGuides client:load />
   </AITutorLayout>
 </SkeletonLayout>

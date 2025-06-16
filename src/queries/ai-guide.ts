@@ -9,9 +9,20 @@ export interface AIGuideDocument {
   title: string;
   slug?: string;
   keyword: string;
-  difficulty: string;
+  depth: string;
   content: string;
+  tokens: {
+    prompt: number;
+    completion: number;
+    total: number;
+  };
+
+  relatedTopics: string[];
+  deepDiveTopics: string[];
+  questions: string[];
+
   viewCount: number;
+  lastVisitedAt: Date;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -35,39 +46,6 @@ export function getAiGuideOptions(guideSlug?: string) {
   });
 }
 
-export type ListUserAiDocumentsQuery = {
-  perPage?: string;
-  currPage?: string;
-  query?: string;
-};
-
-type ListUserAiDocumentsResponse = {
-  data: AIGuideDocument[];
-  totalCount: number;
-  totalPages: number;
-  currPage: number;
-  perPage: number;
-};
-
-export function listUserAiDocumentsOptions(
-  params: ListUserAiDocumentsQuery = {
-    perPage: '21',
-    currPage: '1',
-    query: '',
-  },
-) {
-  return {
-    queryKey: ['user-ai-documents', params],
-    queryFn: () => {
-      return httpGet<ListUserAiDocumentsResponse>(
-        `/v1-list-user-ai-documents`,
-        params,
-      );
-    },
-    enabled: !!isLoggedIn(),
-  };
-}
-
 type AIGuideSuggestionsResponse = {
   relatedTopics: string[];
   deepDiveTopics: string[];
@@ -83,5 +61,41 @@ export function aiGuideSuggestionsOptions(guideSlug?: string) {
       );
     },
     enabled: !!guideSlug && !!isLoggedIn(),
+  });
+}
+
+export type ListUserAIGuidesQuery = {
+  perPage?: string;
+  currPage?: string;
+  query?: string;
+};
+
+type ListUserAIGuidesResponse = {
+  data: Omit<
+    AIGuideDocument,
+    'content' | 'tokens' | 'relatedTopics' | 'deepDiveTopics' | 'questions'
+  >[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
+
+export function listUserAIGuidesOptions(
+  params: ListUserAIGuidesQuery = {
+    perPage: '21',
+    currPage: '1',
+    query: '',
+  },
+) {
+  return queryOptions({
+    queryKey: ['ai-guides', params],
+    queryFn: () => {
+      return httpGet<ListUserAIGuidesResponse>(
+        `/v1-list-user-ai-guides`,
+        params,
+      );
+    },
+    enabled: !!isLoggedIn(),
   });
 }

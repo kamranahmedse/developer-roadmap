@@ -73,7 +73,7 @@ export function AIGuide(props: AIGuideProps) {
     await generateGuide({
       slug: aiGuide?.slug || '',
       term: aiGuide?.keyword || '',
-      depth: aiGuide?.difficulty || '',
+      depth: aiGuide?.depth || '',
       prompt,
       onStreamingChange: setIsRegenerating,
       onHtmlChange: setRegeneratedHtml,
@@ -149,7 +149,7 @@ export function ListSuggestions(props: ListSuggestionsProps) {
       </h2>
       <ul className="flex flex-col gap-1 p-1">
         {suggestions?.map((topic) => {
-          const url = `/ai/guide?term=${encodeURIComponent(topic)}&depth=${depth}&id=&format=guide`;
+          const url = `/ai/guides?term=${encodeURIComponent(topic)}&depth=${depth}&id=&format=guide`;
 
           return (
             <li key={topic} className="w-full">
