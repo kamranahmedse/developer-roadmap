@@ -1,0 +1,936 @@
+{
+  "y7KjVfSI6CAduyHd4mBFT": {
+    "title": "Navigation Basics",
+    "description": "In Linux, navigation between directories and files is a fundamental, yet essential function that allows you to exploit the power of the command-line interface (CLI). Mastering the basic Linux navigation commands such as `cd`, `pwd`, `ls`, and `tree` enables you to flawlessly move from one point to another within the filesystem, display the list of files & directories, and understand your position relative to other system components.\n\nHere is how you use these commands:\n\n*   To change directories, use the `cd` command:\n\n    cd /path/to/directory\n    \n\n*   To list the contents of a directory, use the `ls` command:\n\n    ls\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Linux for Noobs (Hands-on)",
+        "url": "https://labex.io/courses/linux-for-noobs",
+        "type": "course"
+      },
+      {
+        "title": "Intro to Linux",
+        "url": "https://www.linkedin.com/pulse/intro-linux-fundamentals-what-hillary-nyakundi-4u7af/",
+        "type": "article"
+      },
+      {
+        "title": "Practice on Linux fundamentals",
+        "url": "https://linuxjourney.com/",
+        "type": "article"
+      },
+      {
+        "title": "Linux fundamentals",
+        "url": "https://www.youtube.com/watch?v=kPylihJRG70&t=1381s&ab_channel=TryHackMe",
+        "type": "video"
+      }
+    ]
+  },
+  "qLeEEwBvlGt1fP5Qcreah": {
+    "title": "Basic Commands",
+    "description": "Linux Navigation Basics is about using simple commands to move around and manage files on your computer. For example, cd lets you go into different folders, ls shows you what files and folders are inside, and pwd tells you where you are currently. These commands help you easily find and organize your files.\n\n    # Change directory\n    cd /path/to/directory  \n    \n    # Lists files and directories in the current directory.\n    ls  \n    \n    # View current working directory\n    pwd  \n    \n    # Displays the mannual page for a command\n    man ls\n    \n\nIn this brief introduction, we will discuss and explore these basic commands and how they aid us in navigation around the Linux environment.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux pwd Command: Directory Displaying",
+        "url": "https://labex.io/tutorials/linux-file-and-directory-operations-17997",
+        "type": "article"
+      }
+    ]
+  },
+  "q-Ky0ietZGpyUcBQfh-BJ": {
+    "title": "Moving Files / Directories",
+    "description": "The `mv` command moves files and directories between locations and can also rename them. Use syntax `mv [options] source destination` where source is the file/directory to move and destination is the target location. This versatile command is essential for file organization and management in Linux systems.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux mv Command: File Moving and Renaming",
+        "url": "https://labex.io/tutorials/linux-linux-mv-command-file-moving-and-renaming-209743",
+        "type": "article"
+      }
+    ]
+  },
+  "9oo2fxTM2_p0VYPBroqxa": {
+    "title": "Creating & Deleting Files / Dirs",
+    "description": "Linux file operations include creating files with `touch` (empty files) or `cat > filename` (with content) and deleting with `rm filename`. Use `rm -i` for confirmation prompts and `rmdir` for empty directories. File deletion is permanent - no recycle bin. Essential commands for basic file management and system administration.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux rm Command: File Removing",
+        "url": "https://labex.io/tutorials/linux-linux-rm-command-file-removing-209741",
+        "type": "article"
+      }
+    ]
+  },
+  "3fzuXKH7az_LVnmnoXB1p": {
+    "title": "Directory Hierarchy Overview",
+    "description": "In Linux, understanding the directory hierarchy is crucial for efficient navigation and file management. A Linux system's directory structure, also known as the Filesystem Hierarchy Standard (FHS), is a defined tree structure that helps to prevent files from being scattered all over the system and instead organise them in a logical and easy-to-navigate manner.\n\n*   `/`: Root directory, the top level of the file system.\n*   `/home`: User home directories.\n*   `/bin`: Essential binary executables.\n*   `/sbin`: System administration binaries.\n*   `/etc`: Configuration files.\n*   `/var`: Variable data (logs, spool files).\n*   `/usr`: User programs and data.\n*   `/lib`: Shared libraries.\n*   `/tmp`: Temporary files.\n*   `/opt`: Third-party applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Overview of File System Hierarchy Standard (FHS)",
+        "url": "https://access.redhat.com/documentation/ru-ru/red_hat_enterprise_linux/4/html/reference_guide/s1-filesystem-fhs#s3-filesystem-usr",
+        "type": "article"
+      },
+      {
+        "title": "The Linux File System explained in 1,233 seconds",
+        "url": "https://youtu.be/A3G-3hp88mo?si=sTJTSzubdb0Vizjr",
+        "type": "video"
+      }
+    ]
+  },
+  "HGmeYvRf7_XusZl_K4x9k": {
+    "title": "Editing Files",
+    "description": "Linux, like other operating systems, allows file editing for numerous purposes, whether you need to configure some system functionality or writing scripts. There's a variety of text editors available in Linux by default, these include: `nano`, `vi/vim`, `emacs`, and `gedit`. Each of these has its own learning curve and set of commands.\n\nFor instance, `nano` is a basic text editor, which is easy to use and perfect for simple text file editing. `Vi/vim`, on the other hand, is more advanced and offers a wide range of features and commands.\n\nTo edit a file you first need to open it using a command like:\n\n    nano [filename]\n    \n\n    vi [filename] or vim [filename]\n    \n\n    gedit [filename]\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to edit a file",
+        "url": "https://www.scaler.com/topics/how-to-edit-a-file-in-linux/",
+        "type": "article"
+      }
+    ]
+  },
+  "8QBMyL8D5jPovxN8jyZW9": {
+    "title": "Shell and Other Basics",
+    "description": "The Linux shell is a command-line interface that acts as an intermediary between users and the system kernel. Common shells include Bash, sh, and csh. Basic operations involve navigating directories, creating/deleting files, and executing commands. Shell knowledge is fundamental for Linux administration, scripting, and automation tasks.\n\nThis is a follow up exercise to make your first bash script. Please run the commands in the terminal one by one and try to understand what they do:\n\n    touch my_first_script.sh\n    chmod +x my_first_script.sh\n    echo \"date\" > my_first_script.sh\n    ./my_first_script.sh",
+    "links": []
+  },
+  "XiZz7EFIey1XKS292GN4t": {
+    "title": "Vim",
+    "description": "Vim (Vi Improved) is a powerful and flexible text editor used in Unix-like systems. It builds on the original Vi editor with additional features and improvements, including multi-level undo, syntax highlighting, and an extensive set of commands for text manipulation.\n\nVim operates primarily in three modes:\n\n*   Normal (for navigation and manipulation).\n*   Insert (for editing text).\n*   Command (for executing commands).\n\nA simple use of Vim to edit a 'example.txt' file would look like this:\n\n    vim example.txt\n    \n\nTo insert new content, press 'i' for 'insert mode'. After editing, press 'ESC' to go back to 'command mode', and type ':wq' to save and quit.\n\nTo learn more, visit this:\n\nCheck out this [Github repo](https://github.com/iggredible/Learn-Vim?tab=readme-ov-file) on Vim from basic to advanced.",
+    "links": [
+      {
+        "title": "Learn Vimscript The Hard Way",
+        "url": "https://learnvimscriptthehardway.stevelosh.com/",
+        "type": "course"
+      },
+      {
+        "title": "Learn Vim Progressively",
+        "url": "https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/",
+        "type": "article"
+      },
+      {
+        "title": "Platform to practice Vim",
+        "url": "https://vim-adventures.com/",
+        "type": "article"
+      },
+      {
+        "title": "Vim Cheat Sheet",
+        "url": "https://vim.rtorr.com/",
+        "type": "article"
+      },
+      {
+        "title": "Vim basics",
+        "url": "https://www.youtube.com/watch?v=wACD8WEnImo&list=PLT98CRl2KxKHy4A5N70jMRYAROzzC2a6x&ab_channel=LearnLinuxTV",
+        "type": "video"
+      }
+    ]
+  },
+  "yqRwmcZThjQuqh2ao0dWK": {
+    "title": "Nano",
+    "description": "Nano is a popular, user-friendly text editor used for creating and editing files directly within the Linux command line interface (CLI). It is an alternative to editors like `Vi` and `Emacs` and is considered more straightforward for beginners due to its simple and intuitive interface.\n\nNano comes pre-installed with many Linux distributions but if it's not installed, here's how to do it for popular Linux distributions.\n\n    # Ubuntu based distributions\n    sudo apt update\n    sudo apt install nano\n    \n\n    # Arch Linux \n    sudo pacman -S nano\n    \n\nTo use Nano to edit or create files in Linux, the following command can be used:\n\n    nano filename\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Blog on nano",
+        "url": "https://ioflood.com/blog/nano-linux-command/",
+        "type": "article"
+      },
+      {
+        "title": "Nano editor fundamentals",
+        "url": "https://www.youtube.com/watch?v=gyKiDczLIZ4&ab_channel=HackerSploit",
+        "type": "video"
+      }
+    ]
+  },
+  "moGMHNR58wFlzhS7je1wc": {
+    "title": "Command Path",
+    "description": "In Linux, the command path is an important concept under shell basics. Simply put, command path is a variable that is used by the shell to determine where to look for the executable files to run. Linux commands are nothing but programs residing in particular directories. But, one does not have to navigate to these directories every time to run these programs. The command path comes to the rescue!\n\nUsually, when you type a command in the terminal, the shell needs to know the absolute path of the command's executable to run it. Instead of typing the full path each time, command paths allow the shell to automatically search the indicated directories in the correct order. These paths are stored in the $PATH environment variable.\n\n    echo $PATH\n    \n\nRunning this command in a Linux terminal will return all the directories that the shell will search, in order, to find the command it has to run. The directories are separated by a colon.\n\nThis feature makes using Linux command-line interface convenient and efficient.",
+    "links": []
+  },
+  "zwXEmpPYjA7_msS43z7I0": {
+    "title": "Environment Variables",
+    "description": "In Linux, environment variables are dynamic named values that can affect the behavior of running processes in a shell. They exist in every shell session. A shell session's environment includes, but is not limited to, the user's home directory, command search path, terminal type, and program preferences.\n\nEnvironment variables help to contribute to the fantastic and customizable flexibility you see in Unix systems. They provide a simple way to share configuration settings between multiple applications and processes in Linux.\n\nYou can use the 'env' command to list all the environment variables in a shell session. If you want to print a particular variable, such as the PATH variable, you can use the 'echo $PATH' command.\n\nHere's an example of how you would do that:\n\n    # List all environment variables\n    $ env\n    \n    # Print a particular variable like PATH\n    $ echo $PATH\n    \n\nRemember, every shell, such as Bourne shell, C shell, or Korn shell in Unix or Linux has different syntax and semantics to define and use environment variables.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Environment Variables in Linux",
+        "url": "https://labex.io/tutorials/linux-environment-variables-in-linux-385274",
+        "type": "article"
+      }
+    ]
+  },
+  "KaMSsQnJzNqGHg0Oia4uy": {
+    "title": "Command Help",
+    "description": "Linux command help provides documentation and usage information for shell commands. Use `man command` for detailed manuals, `help command` for shell built-ins, `command --help` for quick options, and `tldr command` for practical examples. Essential for learning command syntax, parameters, and functionality in Linux terminal environments.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "tldr-pages/tldr",
+        "url": "https://github.com/tldr-pages/tldr",
+        "type": "opensource"
+      },
+      {
+        "title": "How to use the man page",
+        "url": "https://www.baeldung.com/linux/man-command",
+        "type": "article"
+      },
+      {
+        "title": "Get Help on Linux Commands",
+        "url": "https://labex.io/tutorials/linux-get-help-on-linux-commands-18000",
+        "type": "article"
+      }
+    ]
+  },
+  "JgoZzx4BfK7tmosgpZOsf": {
+    "title": "Redirects",
+    "description": "The shell in Linux provides a robust way of managing input and output streams of a command or program, this mechanism is known as Redirection. Linux being a multi-user and multi-tasking operating system, every process typically has 3 streams opened:\n\n*   Standard Input (stdin) - This is where the process reads its input from. The default is the keyboard.\n*   Standard Output (stdout) - The process writes its output to stdout. By default, this means the terminal.\n*   Standard Error (stderr) - The process writes error messages to stderr. This also goes to the terminal by default.\n\nRedirection in Linux allows us to manipulate these streams, advancing the flexibility with which commands or programs are run. Besides the default devices (keyboard for input and terminal for output), the I/O streams can be redirected to files or other devices.\n\nFor example, if you want to store the output of a command into a file instead of printing it to the console, we can use the '>' operator.\n\n    ls -al > file_list.txt\n    \n\nThis command will write the output of 'ls -al' into 'file\\_list.txt', whether or not the file initially existed. It will be created if necessary, and if it already exists – it will be overwritten.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Logical Commands and Redirection",
+        "url": "https://labex.io/tutorials/linux-logical-commands-and-redirection-387332",
+        "type": "article"
+      }
+    ]
+  },
+  "NIBSZGE9PskVrluJpdom0": {
+    "title": "Super User",
+    "description": "The Super User, also known as \"root user\", represents a user account in Linux with extensive powers, privileges, and capabilities. This user has complete control over the system and can access any data stored on it. This includes the ability to modify system configurations, change other user's passwords, install software, and perform more administrative tasks in the shell environment.\n\nThe usage of super user is critical to operating a Linux system properly and safely as it can potentially cause serious damage. The super user can be accessed through the `sudo` or `su` commands.\n\nSpecifically, `su` switches the current user to the root, whereas `sudo` allows you to run a command as another user, default being root. However, they also have a key difference which is `sudo` will log the commands and its arguments which can be a handy audit trail.\n\n    # This would prompt for root password and switch you to root usermode\n    $ su -\n    \n    # To perform a command as superuser (if allowed in sudoers list)\n    $ sudo <command>\n    \n\nNote that super user privileges should be handled with care due to their potential to disrupt the system's functionality. Mistaken changes to key system files or unauthorized access can lead to severe issues.",
+    "links": []
+  },
+  "RsOTPZPZGTEIt1Lk41bQV": {
+    "title": "Working with Files",
+    "description": "Working with files is an essential part of Linux and it's a skill every Linux user must have. In Linux, everything is considered a file: texts, images, systems, devices, and directories. Linux provides multiple command-line utilities to create, view, move or search files. Some of the basic commands for file handling in Linux terminal include `touch` for creating files, `mv` for moving files, `cp` for copying files, `rm` for removing files, and `ls` for listing files and directories.\n\nFor instance, to create a file named \"example.txt\", we use the command:\n\n    touch example.txt\n    \n\nTo list files in the current directory, we use the command:\n\n    ls\n    \n\nKnowing how to effectively manage and manipulate files in Linux is crucial for administering and running a successful Linux machine.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux Basic Files Operations",
+        "url": "https://labex.io/tutorials/linux-basic-files-operations-270248",
+        "type": "article"
+      }
+    ]
+  },
+  "TnrT-cqMA8urew9nLv0Ns": {
+    "title": "File Permissions",
+    "description": "Linux file permissions control read (r), write (w), and execute (x) access for owner, group, and others using octal or symbolic notation. Format `-rwxr--r--` shows file type and permissions. Use `chmod` to change permissions, `chown` for ownership, `chgrp` for group ownership. Essential for system security and proper access control.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux File Permissions",
+        "url": "https://linuxhandbook.com/linux-file-permissions/",
+        "type": "article"
+      },
+      {
+        "title": "Linux Permissions of Files",
+        "url": "https://labex.io/tutorials/linux-permissions-of-files-270252",
+        "type": "article"
+      },
+      {
+        "title": "Linux File Permissions in 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=LnKoncbQBsM",
+        "type": "video"
+      }
+    ]
+  },
+  "iD073xTmpzvQFfXwcwXcY": {
+    "title": "Archiving and Compressing",
+    "description": "Linux archiving combines multiple files into single archives using `tar`, while compression reduces file sizes with `gzip` and `bzip2`. Use `tar cvf` to create archives, `tar xvf` to extract, and `tar cvzf` for gzip-compressed archives. These separate processes are often combined for efficient backup and distribution, with `tar.gz` and `tar.bz2` being common formats.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux File Packaging and Compression",
+        "url": "https://labex.io/tutorials/linux-file-packaging-and-compression-385413",
+        "type": "article"
+      }
+    ]
+  },
+  "abKO6KuuIfl9ruVxBw6t_": {
+    "title": "Copying and Renaming",
+    "description": "Essential Linux file operations use `cp` to copy files and `mv` to move/rename them. The `cp` command copies files from source to destination, while `mv` moves or renames files/directories. Both commands use the syntax `command source destination`. These case-sensitive commands are fundamental for daily file management tasks in Linux systems.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux cp Command: File Copying",
+        "url": "https://labex.io/tutorials/linux-linux-cp-command-file-copying-209744",
+        "type": "article"
+      },
+      {
+        "title": "Linux mv Command: File Moving and Renaming",
+        "url": "https://labex.io/tutorials/linux-linux-mv-command-file-moving-and-renaming-209743",
+        "type": "article"
+      }
+    ]
+  },
+  "KaXHG_EKxI5PUXmcvlJt6": {
+    "title": "Soft Links / Hard Links",
+    "description": "Linux supports two types of file links. Hard links share the same inode and data as the original file - if the original is deleted, data remains accessible. Soft links (symbolic links) are shortcuts pointing to the original file path - they break if the original is removed. Create with `ln` for hard links and `ln -s` for soft links.\n\nBelow is an example of how to create a soft link and a hard link in Linux:\n\n    # Create a hard link\n    ln source_file.txt hard_link.txt\n    \n    # Create a soft link\n    ln -s source_file.txt soft_link.txt\n    \n\nPlease, understand that `source_file.txt` is the original file and `hard_link.txt` & `soft_link.txt` are the hard and soft links respectively.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to understand the difference between hard and symbolic links in Linux",
+        "url": "https://labex.io/tutorials/linux-how-to-understand-the-difference-between-hard-and-symbolic-links-in-linux-409929",
+        "type": "article"
+      }
+    ]
+  },
+  "-B2Dvz7160Er0OBHzS6ro": {
+    "title": "Text Processing",
+    "description": "Text processing is an essential task for system administrators and developers. Linux, being a robust operating system, provides powerful tools for text searching, manipulation, and processing.\n\nUsers can utilize commands like `awk`, `sed`, `grep`, and `cut` for text filtering, substitution, and handling regular expressions. Additionally, the shell scripting and programming languages such as Python and Perl also provide remarkable text processing capabilities in Linux.\n\nAlthough being primarily a command-line operating system, Linux also offers numerous GUI-based text editors including `gedit`, `nano`, and `vim`, which make text editing convenient for both beginners and advanced users.\n\nBelow is a simple example using `grep` command to search for the term \"Linux\" in a file named \"sample.txt\".\n\n    grep 'Linux' sample.txt\n    \n\nThis command will display all the lines in the sample.txt file which contain the word \"Linux\".\n\nOverall, the proficiency in text processing is crucial for Linux users as it allows them to automate tasks, parse files, and mine data efficiently.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Linux Filters",
+        "url": "https://ryanstutorials.net/linuxtutorial/filters.php",
+        "type": "article"
+      },
+      {
+        "title": "Linux Text Processing Command",
+        "url": "https://earthly.dev/blog/linux-text-processing-commands/",
+        "type": "article"
+      },
+      {
+        "title": "Master Linux Text Processing Commands",
+        "url": "https://everythingdevops.dev/linux-text-processing-commands/",
+        "type": "article"
+      }
+    ]
+  },
+  "t3fxSgCgtxuMtHjclPHA6": {
+    "title": "stdout / stdin / stderr",
+    "description": "Linux processes use three standard data streams: STDIN (input), STDOUT (output), and STDERR (error messages). STDOUT handles normal command output while STDERR specifically handles error messages. You can redirect these streams using operators like `>` for stdout and `2>` for stderr, allowing separate handling of normal output and errors for better scripting and debugging.\n\nHere is an example code snippet showing how these channels are used:\n\n    $ command > stdout.txt 2>stderr.txt\n    \n\nIn this example, the \">\" operator redirects the standard output (stdout) into a text file named stdout.txt, while \"2>\" redirects the standard error (stderr) into stderr.txt. This way, normal output and error messages are separately stored in distinct files for further examination or processing.",
+    "links": []
+  },
+  "Z5Mf_e5G24IkmxEHgYBe2": {
+    "title": "cut",
+    "description": "The `cut` command is a text processing utility that allows you to cut out sections of each line from a file or output, and display it on the standard output (usually, the terminal). It's commonly used in scripts and pipelines, especially for file operations and text manipulation.\n\nThis command is extremely helpful when you only need certain parts of the file, such as a column, a range of columns, or a specific field. For example, with Linux system logs or CSV files, you might only be interested in certain bits of information.\n\nA basic syntax of `cut` command is:\n\n    cut OPTION... [FILE]...\n    \n\nHere's an example of how you might use the `cut` command in Linux:\n\n    echo \"one,two,three,four\" | cut -d \",\" -f 2\n    \n\nThis command will output the second field (`two`) by using the comma as a field delimiter (`-d \",\"`).\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux cut Command: Text Cutting",
+        "url": "https://labex.io/tutorials/linux-linux-cut-command-text-cutting-219187",
+        "type": "article"
+      }
+    ]
+  },
+  "5658kdqJw-pIOyyhll80a": {
+    "title": "paste",
+    "description": "In Linux, paste is a powerful text processing utility that is primarily used for merging lines from multiple files. It allows users to combine data by columns rather than rows, adding immense flexibility to textual data manipulation. Users can choose a specific delimiter for separating columns, providing a range of ways to format the output.\n\nA common use case of the paste command in Linux is the combination of two text files into one, like shown in the example snippet below.\n\n    paste file1.txt file2.txt > combined.txt\n    \n\nOver the years, this command has proved to be critical in Linux file processing tasks due to its efficiency, and simplicity.",
+    "links": []
+  },
+  "1WRIy3xHtQfiQFZrprobP": {
+    "title": "sort",
+    "description": "Linux provides a variety of tools for processing and manipulating text files, one of which is the sort command. The `sort` command in Linux is used to sort the contents of a text file, line by line. The command uses ASCII values to sort files. You can use this command to sort the data in a file in a number of different ways such as alphabetically, numerically, reverse order, or even monthly. The sort command takes a file as input and prints the sorted content on the standard output (screen).\n\nHere is a basic usage of the `sort` command:\n\n    sort filename.txt\n    \n\nThis command prints the sorted content of the filename.txt file. The original file content remains unchanged. In order to save the sorted contents back into the file, you can use redirection:\n\n    sort filename.txt > sorted_filename.txt\n    \n\nThis command sorts the content of filename.txt and redirects the sorted content into sorted\\_filename.txt.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux sort Command: Text Sorting",
+        "url": "https://labex.io/tutorials/linux-linux-sort-command-text-sorting-219196",
+        "type": "article"
+      }
+    ]
+  },
+  "6xdkFk_GT93MigeTSSGCp": {
+    "title": "head",
+    "description": "The `head` command in Linux is a text processing utility that allows a user to output the first part (or the \"head\") of files. It is commonly used for previewing the start of a file without loading the entire document into memory, which can act as an efficient way of quickly examining the data in very large files. By default, the `head` command prints the first 10 lines of each file to standard output, which is the terminal in most systems.\n\n    head file.txt\n    \n\nThe number of output lines can be customized using an option. For example, to display first 5 lines, we use `-n` option followed by the number of lines:\n\n    head -n 5 file.txt\n    \n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux head Command: File Beginning Display",
+        "url": "https://labex.io/tutorials/linux-linux-head-command-file-beginning-display-214302",
+        "type": "article"
+      }
+    ]
+  },
+  "O9Vci_WpUY-79AkA4HDx3": {
+    "title": "tr",
+    "description": "The `tr` command in Linux is a command-line utility that translates or substitutes characters. It reads from the standard input and writes to the standard output. Although commonly used for translation applications, `tr` has versatile functionality in the text processing aspect of Linux. Ranging from replacing a list of characters, to deleting or squeezing character repetitions, `tr` presents a robust tool for stream-based text manipulations.\n\nHere's a basic usage example:\n\n    echo 'hello' | tr 'a-z' 'A-Z'\n    \n\nIn this example, `tr` is used to convert the lowercase 'hello' to uppercase 'HELLO'. It's an essential tool for text processing tasks in the Linux environment.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux tr Command: Character Translating",
+        "url": "https://labex.io/tutorials/linux-linux-tr-command-character-translating-388064",
+        "type": "article"
+      }
+    ]
+  },
+  "Yyk28H6TiteZEGv6Aps1h": {
+    "title": "tail",
+    "description": "The `tail` command in Linux is a utility used in text processing. Fundamentally, it's used to output the last part of the files. The command reads data from standard input or from a file and outputs the last `N` bytes, lines, blocks, characters or words to the standard output (or a different file). By default, `tail` returns the last 10 lines of each file to the standard output. This command is common in situations where the user is interested in the most recent entries in a text file, such as log files.\n\nHere is an example of tail command usage:\n\n    tail /var/log/syslog\n    \n\nIn the above example, the `tail` command will print the last 10 lines of the `/var/log/syslog` file. This is particularly useful in checking the most recent system log entries.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux tail Command: File End Display",
+        "url": "https://labex.io/tutorials/linux-linux-tail-command-file-end-display-214303",
+        "type": "article"
+      }
+    ]
+  },
+  "vfcCS1GoyKpU1rQaE8I5r": {
+    "title": "join",
+    "description": "`join` is a powerful text processing command in Linux. It lets you combine lines of two files on a common field, which works similar to the 'Join' operation in SQL. It's particularly useful when you're dealing with large volumes of data. Specifically, `join` uses the lines from two files to form lines that contain pairs of lines related in a meaningful way.\n\nFor instance, if you have two files that have a list of items, one with costs and the other with quantities, you can use `join` to combine these two files so each item has a cost and quantity on the same line.\n\n    # Syntax\n    join file1.txt file2.txt\n    \n\nPlease note that `join` command works properly only when the files are sorted. It's crucial to understand all the provided options and flags to use `join` effectively in text processing tasks.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux join Command: File Joining",
+        "url": "https://labex.io/tutorials/linux-linux-join-command-file-joining-219193",
+        "type": "article"
+      }
+    ]
+  },
+  "Pl9s2ti25hsSEljXJvBTj": {
+    "title": "split",
+    "description": "Linux provides an extensive set of tools for manipulating text data. One of such utilities is the `split` command that is used, as the name suggests, to split large files into smaller files. The `split` command in Linux divides a file into multiple equal parts, based on the lines or bytes specified by the user.\n\nIt's a useful command because of its practical applicability. For instance, if you have a large data file that can't be used efficiently because of its size, then the split command can be used to break up the file into more manageable pieces.\n\nThe basic syntax of the `split` command is:\n\n    split [options] [input [prefix]]\n    \n\nBy default, the `split` command divides the file into smaller files of 1000 lines each. If no input file is provided, or if it is given as -, it reads from standard input.\n\nFor example, to split a file named 'bigfile.txt' into files of 500 lines each, the command would be:\n\n    split -l 500 bigfile.txt",
+    "links": []
+  },
+  "v32PJl4fzIFTOirOm6G44": {
+    "title": "pipe",
+    "description": "The pipe (`|`) is a powerful feature in Linux used to connect two or more commands together. This mechanism allows output of one command to be \"piped\" as input to another. With regards to text processing, using pipe is especially helpful since it allows you to manipulate, analyze, and transform text data without the need to create intermediary files or programs.\n\nHere is a simple example of piping two commands, `ls` and `grep`, to list all the text files in the current directory:\n\n    ls | grep '\\.txt$'\n    \n\nIn this example, `ls` lists the files in the current directory and `grep '\\.txt$'` filters out any files that don't end with `.txt`. The pipe command, `|`, takes the output from `ls` and uses it as the input to `grep '\\.txt$'`. The output of the entire command is the list of text files in the current directory.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Piping and Redirection",
+        "url": "https://ryanstutorials.net/linuxtutorial/piping.php#piping",
+        "type": "article"
+      }
+    ]
+  },
+  "Bo9CdrGJej-QcNmw46k9t": {
+    "title": "tee",
+    "description": "The `tee` command reads from standard input and writes to both standard output and files simultaneously, like a T-splitter in plumbing. It enables users to view results in the terminal while saving output to files concurrently. Syntax: `command | tee file`. Extremely useful for documenting terminal activities and preserving command outputs for later analysis.",
+    "links": []
+  },
+  "YSfGrmT795miIeIZrtC3D": {
+    "title": "nl",
+    "description": "The `nl` command numbers lines in text files, providing an overview of line locations. By default, it numbers only non-empty lines, but this behavior can be modified. Syntax: `nl [options] [file_name]`. If no file is specified, nl reads from stdin. Valuable for text processing when line numbers are needed for reference or debugging purposes.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux nl Command: Line Numbering",
+        "url": "https://labex.io/tutorials/linux-linux-nl-command-line-numbering-210988",
+        "type": "article"
+      }
+    ]
+  },
+  "LIGOJwrXexnIcPyHVlhQ8": {
+    "title": "wc",
+    "description": "The `wc` command is a commonly used tool in Unix or Linux that allows users to count the number of bytes, characters, words, and lines in a file or in data piped from standard input. The name `wc` stands for 'word count', but it can do much more than just count words. Common usage of `wc` includes tracking program output, counting code lines, and more. It's an invaluable tool for analyzing text at both granular and larger scales.\n\nBelow is a basic usage example for `wc` in Linux:\n\n    wc myfile.txt\n    \n\nThis command would output the number of lines, words, and characters in `myfile.txt`. The output is displayed in the following order: line count, word count, character count, followed by the filename.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux wc Command: Text Counting",
+        "url": "https://labex.io/tutorials/linux-linux-wc-command-text-counting-219200",
+        "type": "article"
+      }
+    ]
+  },
+  "TZuDVFS7DZFBgaSYYXoGe": {
+    "title": "expand",
+    "description": "The `expand` command converts tabs to spaces in text files, useful for consistent formatting across different systems and editors. Default conversion is 8 spaces per tab. Use `expand filename` for basic conversion or `expand -t 4 filename` to specify 4 spaces per tab. Essential for maintaining code readability and consistent indentation in shell scripts.",
+    "links": []
+  },
+  "sKduFaX6xZaUUBdXRMKCL": {
+    "title": "unexpand",
+    "description": "The `unexpand` command converts spaces to tabs in text files, making documents more coherent and neat. Commonly used in programming scripts where tab indentation is preferred. Use `unexpand -t 4 file.txt` to replace every four spaces with a tab. Opposite of `expand` command, useful for standardizing indentation formatting in code files.\n\nAn example of using the `unexpand` command:\n\n    unexpand -t 4 file.txt",
+    "links": []
+  },
+  "qnBbzphImflQbEbtFub9x": {
+    "title": "uniq",
+    "description": "In Linux, `uniq` is an extremely useful command-line program for text processing. It aids in the examination and manipulation of text files by comparing or filtering out repeated lines that are adjacent. Whether you're dealing with a list of data or a large text document, the `uniq` command allows you to find and filter out duplicate lines, or even provide a count of each unique line in a file. It's important to remember that `uniq` only removes duplicates that are next to each other, so to get the most out of this command, data is often sorted using the `sort` command first.\n\nAn example of using `uniq` would be:\n\n    sort names.txt | uniq\n    \n\nIn this example, `names.txt` is a file containing a list of names. The `sort` command sorts all the lines in the file, and then the `uniq` command removes all the duplicate lines. The resulting output would be a list of unique names from `names.txt`.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux uniq Command: Duplicate Filtering",
+        "url": "https://labex.io/tutorials/linux-linux-uniq-command-duplicate-filtering-219199",
+        "type": "article"
+      }
+    ]
+  },
+  "umlhxidsvtZG9k40Ca0Ac": {
+    "title": "grep",
+    "description": "GREP (Global Regular Expression Print) is a powerful text search utility that finds and filters text matching specific patterns in files. It searches line by line and prints matching lines to the screen. Essential for shell scripts and command-line operations. Example: `grep \"pattern\" fileName` searches for specified patterns. Alternative: `ripgrep` offers enhanced performance and features.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Ripgrep: Github Repository",
+        "url": "https://github.com/BurntSushi/ripgrep",
+        "type": "opensource"
+      },
+      {
+        "title": "Grep and Regular Expressions for Beginners",
+        "url": "https://ryanstutorials.net/linuxtutorial/grep.php",
+        "type": "article"
+      },
+      {
+        "title": "bgsu.edu: Advanced Grep Topics",
+        "url": "https://caspar.bgsu.edu/~courses/Stats/Labs/Handouts/grepadvanced.htm",
+        "type": "article"
+      },
+      {
+        "title": "Linux grep Command: Pattern Searching",
+        "url": "https://labex.io/tutorials/linux-linux-grep-command-pattern-searching-219192",
+        "type": "article"
+      }
+    ]
+  },
+  "QTmECqpRVMjNgQU70uCF8": {
+    "title": "awk",
+    "description": "AWK is a powerful text-processing language for Unix-like systems, named after its creators Aho, Weinberger, and Kernighan. It reads files line by line, identifies patterns, and executes actions on matches. Commonly used in bash scripts for sorting, filtering, and report generation. Example: `awk '{print $1,$2}' filename` prints first two fields of each line.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "IBM.com: Awk by Example",
+        "url": "https://developer.ibm.com/tutorials/l-awk1/",
+        "type": "article"
+      },
+      {
+        "title": "Linux Handbook: Awk",
+        "url": "https://linuxhandbook.com/awk-command-tutorial/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Bash",
+        "url": "https://app.daily.dev/tags/bash?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Linux awk Command: Text Processing",
+        "url": "https://labex.io/tutorials/linux-linux-awk-command-text-processing-388493",
+        "type": "article"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/watch?v=9YOZmI-zWok",
+        "type": "video"
+      }
+    ]
+  },
+  "jSzfQf0MlnXtWHCc-HYvr": {
+    "title": "Server Review",
+    "description": "Server review in Linux involves assessing performance, security, and configuration to identify improvements and issues. Check security enhancements, log files, user accounts, network configuration, and software versions. Common commands: `free -m` for memory, `df -h` for disk usage, `uptime` for CPU load. Critical task for system administrators and DevOps professionals to ensure optimal performance, security, and reliability.\n\nLinux, known for its stability and security, has become a staple on the back-end of many networks and servers worldwide. Depending on the distribution you are using, Linux offers multiple tools and commands to perform comprehensive server reviews.\n\n    # A command often used for showing memory information\n    free -m\n    \n    # A command for showing disk usage\n    df -h\n    \n    # A command for showing CPU load\n    uptime",
+    "links": []
+  },
+  "19lTWqAvZFT2CDlhLlPSq": {
+    "title": "Uptime and Load",
+    "description": "The `uptime` command shows how long a Linux system has been running and the system load average. Load average indicates computational work and CPU queue length, displayed for 1, 5, and 15-minute intervals. High load averages suggest resource constraints or performance issues. Regular monitoring helps identify usage patterns and plan capacity.\n\nHere is an example of the `uptime` command and its output:\n\n    $ uptime\n     10:58:35 up 2 days, 20 min,  1 user,  load average: 0.00, 0.01, 0.05\n    \n\nIn the output above, \"2 days, 20 min\" tells us how long the system has been up, while \"0.00, 0.01, 0.05\" shows the system's load average over the last one, five, and fifteen minutes, respectively.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux Load Average: What is Load Average in Linux?",
+        "url": "https://www.digitalocean.com/community/tutorials/load-average-in-linux",
+        "type": "article"
+      }
+    ]
+  },
+  "WwybfdKuP9ogCGpT7d3NU": {
+    "title": "Authentication Logs",
+    "description": "Authentication logs in Linux record all auth-related events like logins, password changes, and sudo commands. Located at `/var/log/auth.log` (Debian) or `/var/log/secure` (RHEL/CentOS), these logs help detect brute force attacks and unauthorized access attempts. Use `tail /var/log/auth.log` to view recent entries. Regular log analysis is essential for server security monitoring.\n\nHere is an example of how you can use the `tail` command to view the last few entries of the authentication log:\n\n    tail /var/log/auth.log\n    \n\nGet yourself familiar with reading and understanding auth logs, as it's one essential way to keep your server secure.",
+    "links": []
+  },
+  "ewUuI_x-YhOQIYd3MTgJJ": {
+    "title": "Services Running",
+    "description": "Linux servers run various services including web, database, DNS, and mail servers. System administrators use tools like `systemctl`, `service`, `netstat`, `ss`, and `lsof` to manage and monitor services. Use `systemctl --type=service` to list all active services with their status. Essential for server management, resource monitoring, and troubleshooting.\n\nLinux has a variety of tools to achieve this, such as: `systemctl`, `service`, `netstat`, `ss` and \\`",
+    "links": []
+  },
+  "tx0nh6cbBjVxwNlyrBNYm": {
+    "title": "Available Memory / Disk",
+    "description": "Linux provides tools like `free`, `vmstat`, and `top` to monitor system memory usage and performance. The `free -h` command shows total, used, free, shared, buffer/cache, and available memory in human-readable format. Regular memory monitoring helps maintain optimal server performance, prevent overload, and troubleshoot resource issues effectively.\n\nThe `free` command, for instance, gives a summary of the overall memory usage including total used and free memory, swap memory and buffer/cache memory. Here's an example:\n\n    $ free -h\n                  total        used        free      shared  buff/cache   available\n    Mem:           15Gi       10Gi       256Mi       690Mi       5.3Gi       4.2Gi\n    Swap:         8.0Gi       1.3Gi       6.7Gi\n    \n\nIn this output, the '-h' option is used to present the results in a human-readable format. Understanding the state of memory usage in your Linux server can help maintain optimal server performance and troubleshoot any potential issues.",
+    "links": []
+  },
+  "h01Y6dW09ChidlM2HYoav": {
+    "title": "Process Management",
+    "description": "Linux treats every running program as a process. Process management commands help view, control, and manipulate these processes. Key commands: `ps aux` shows running processes, `top` provides live system view, `kill -SIGTERM pid` gracefully stops processes, `kill -SIGKILL pid` forcefully terminates processes. Essential for understanding and controlling Linux system operations effectively.",
+    "links": []
+  },
+  "mUKoiGUTpIaUgQNF3BND_": {
+    "title": "Background / Foreground Processes",
+    "description": "Linux processes run in foreground (fg) taking direct user input or background (bg) running independently. Start background processes with `command &` or use `Ctrl+Z` then `bg` to pause and resume in background. Use `fg` to bring background processes to foreground. These job control commands enable managing multiple tasks from a single terminal efficiently.\n\nHere's how you can send a running process to background:\n\n    command &\n    \n\nOr if a process is already running:\n\n    CTRL + Z       # This will pause the process\n    bg             # This resumes the paused process in the background\n    \n\nAnd to bring it back to the foreground:\n\n    fg\n    \n\nThese commands, `bg` and `fg` are part of job control in Unix-like operating systems, which lets you manage multiple tasks simultaneously from a single terminal.",
+    "links": []
+  },
+  "lf3_CRyOI2ZXGzz5ff451": {
+    "title": "Listing / Finding Processes",
+    "description": "Linux provides several tools to list and monitor running processes. The `/proc` filesystem contains process information accessible via PID directories. Commands like `ps -ef` show process snapshots, while `top` and `htop` provide real-time process monitoring. Use `cat /proc/{PID}/status` to view specific process details. These tools are essential for system monitoring and troubleshooting.\n\n    # list all running processes\n    ps -ef \n    \n    # display ongoing list of running processes \n    top\n    \n    # alternatively, for a more user-friendly interface\n    htop\n    \n\nExploring the proc directory (`/proc`), we dive even deeper, enabling us to view the system's kernel parameters and each process's specific system details.\n\n    # view specifics of a particular PID\n    cat /proc/{PID}/status\n    \n\nIn short, 'Finding and Listing Processes (proc)' in Linux is not just a core aspect of process management, but also a necessary skill for enhancing system performance and resolution of issues.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The /proc File System",
+        "url": "https://www.kernel.org/doc/html/latest/filesystems/proc.html",
+        "type": "article"
+      }
+    ]
+  },
+  "VkLWTvKnRXzvLGWza2v45": {
+    "title": "Process Signals",
+    "description": "Process signals are communication mechanisms in Linux that notify processes of synchronous or asynchronous events. Common signals include SIGINT, SIGSTOP, SIGKILL for interrupting, pausing, or terminating processes. Use the `kill` command to send signals to processes by PID. Understanding signals is essential for effective process management and system control.\n\nFor instance, to send a SIGSTOP signal to a process with a PID of 12345 you would use `kill` command in terminal as follows:\n\n    kill -SIGSTOP 12345\n    \n\nThis will suspend the execution of the process until a SIGCONT signal is received.\n\nUnderstanding proc signals is essential for comprehensive process management and resource allocation in Linux.",
+    "links": []
+  },
+  "0FLUI9r7znMqi6YKReLzD": {
+    "title": "Killing Processes",
+    "description": "The `kill` command terminates processes in Linux by sending signals to specific Process IDs (PIDs). Use `kill [signal] PID` to terminate processes manually. Different signals provide various termination methods - SIGTERM for graceful shutdown, SIGKILL for forced termination. Process termination is essential for managing unresponsive or unwanted processes.\n\n'Kill' in Linux is a built-in command that is used to terminate processes manually. You can use the `kill` command to send a specific signal to a process. When we use the `kill` command, we basically request a process to stop, pause, or terminate.\n\nHere's a basic illustration on how to use the `kill` command in Linux:\n\n    kill [signal or option] PID(s)\n    \n\nIn practice, you would identify the Process ID (PID) of the process you want to terminate and replace PID(s) in the above command. The signal or option part is optional, but very powerful allowing for specific termination actions.",
+    "links": []
+  },
+  "5anSYRhaKIs3dCLWlvZfT": {
+    "title": "Process Priorities",
+    "description": "Linux assigns priority levels to processes, affecting execution timing and resource allocation. Process priorities use \"nice\" values ranging from -20 (highest priority) to +19 (lowest priority). The `/proc` filesystem contains process information including priorities. You can view priorities with `ps -eo pid,pri,user,comm` and modify them using `renice` command.\n\nHere's a simple command in the Linux terminal to display the process ID, priority, and user for all processes:",
+    "links": []
+  },
+  "Rib7h9lh_ndiXkwNbftz_": {
+    "title": "Process Forking",
+    "description": "Process forking allows a running process (parent) to create a copy of itself (child) using the `fork()` system call. The child process is nearly identical to the parent except for process ID and parent process ID. Both processes execute concurrently and independently - changes in one don't affect the other. This mechanism is fundamental for Linux process creation.\n\nHere's a basic code snippet of proc forking in C:\n\n    #include<sys/types.h>\n    #include<unistd.h>\n    #include<stdio.h>\n    \n    int main()\n    {\n        pid_t child_pid;\n    \n        // Try creating a child process\n        child_pid = fork();\n    \n        // If a child is successfully created\n        if(child_pid >= 0)\n        printf(\"Child created with PID: %d\\n\", child_pid);\n        else\n        printf(\"Fork failed\\n\");\n        return 0;\n    }\n    \n\nIn this snippet, `fork()` is used to created a new child process. If the process creation is successful, fork() returns the process ID of the child process. If unsuccessful, it returns a negative value.",
+    "links": []
+  },
+  "g6n7f1Qi0BPr_BGvisWuz": {
+    "title": "User Management",
+    "description": "Linux user management allows multiple users to interact with the system in isolation. Includes creating, deleting, modifying users and groups, assigning permissions and ownership. Key commands: `adduser`/`useradd` creates users, `deluser`/`userdel` removes users, `passwd` manages passwords, `su` switches users. Essential for providing proper accessibility and maintaining Linux system security.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "User Account Management",
+        "url": "https://labex.io/tutorials/linux-user-account-management-49",
+        "type": "article"
+      }
+    ]
+  },
+  "R9TZfkgVUQNLnMpDhovJa": {
+    "title": "Create / Delete / Update",
+    "description": "Linux user management involves creating, updating, and deleting user accounts for system security and resource management. Use `useradd` or `adduser` to create users, `usermod` to update user details like home directory or shell, and `userdel` to delete users. Effective user management maintains system security and organization in multi-user environments.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to create, update, and delete users account on Linux",
+        "url": "https://linuxconfig.org/how-to-create-modify-and-delete-users-account-on-linux",
+        "type": "article"
+      },
+      {
+        "title": "How to manage users in Linux",
+        "url": "https://www.freecodecamp.org/news/how-to-manage-users-in-linux/",
+        "type": "article"
+      }
+    ]
+  },
+  "h8wc8XEwWYHErna68w7Mg": {
+    "title": "Users and Groups",
+    "description": "User management in Linux uses groups to organize users and manage permissions efficiently. Groups are collections of users that simplify system administration by controlling access to resources like files and directories. Users can belong to multiple groups, enabling precise privilege management. Commands like `groupadd`, `groupdel`, `groupmod`, `usermod`, and `gpasswd` manage groups effectively. Proper group management is crucial for a secure and organized system environment. For detailed instructions, refer to resources on managing Linux groups.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to create, delete, and modify groups in Linux",
+        "url": "https://www.redhat.com/sysadmin/linux-groups",
+        "type": "article"
+      },
+      {
+        "title": "How to manage groups on Linux",
+        "url": "https://linuxconfig.org/how-to-manage-groups-on-linux",
+        "type": "article"
+      }
+    ]
+  },
+  "L6RMExeqi9501y-eCHDt1": {
+    "title": "Managing Permissions",
+    "description": "Linux file permissions control access to files and directories using read, write, and execute rights for user, group, and others. Use `chmod` to change permissions, `chown` to change ownership, and `chgrp` to change group ownership. Proper permission management is essential for system security and prevents unauthorized access to sensitive files and directories.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Linux file permissions explained",
+        "url": "https://www.redhat.com/sysadmin/linux-file-permissions-explained",
+        "type": "article"
+      },
+      {
+        "title": "Linux file permissions in 5 minutes",
+        "url": "https://www.youtube.com/watch?v=LnKoncbQBsM",
+        "type": "video"
+      }
+    ]
+  },
+  "F1sU3O1ouxTOvpidDfN3k": {
+    "title": "Service Management (systemd)",
+    "description": "Service management in Linux controls system daemons during boot/shutdown processes. Modern Linux distributions use systemd for service management with commands like `systemctl start/stop/restart/status/enable/disable`. Services perform various background functions independent of user interfaces. Effective service management is essential for system stability and security.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to Master Linux Service Management with Systemctl",
+        "url": "https://labex.io/tutorials/linux-how-to-master-linux-service-management-with-systemctl-392864",
+        "type": "article"
+      }
+    ]
+  },
+  "34UUrc8Yjc_8lvTL8itc3": {
+    "title": "Creating New Services",
+    "description": "Creating custom services in Linux involves writing systemd service unit files that define how processes should start, stop, and restart. Service files are placed in `/etc/systemd/system/` and contain sections like \\[Unit\\], \\[Service\\], and \\[Install\\]. Use `systemctl enable` to enable services at boot and `systemctl start` to run them. Custom services allow automation of background processes.",
+    "links": []
+  },
+  "FStz-bftQBK0M6zz2Bxl4": {
+    "title": "Checking Service Logs",
+    "description": "Linux service management involves controlling system services like databases, web servers, and network services. Use `systemctl start service_name` to start services, `systemctl stop service_name` to stop them, and `systemctl restart service_name` to restart. These commands require root permissions via sudo and are essential for system administration and configuration management.\n\nHere is a simple example:\n\n    # To start a service\n    sudo systemctl start service_name   \n    \n    # To stop a service\n    sudo systemctl stop service_name   \n    \n    # To restart a service\n    sudo systemctl restart service_name   \n    \n\nReplace `service_name` with the name of the service you want to start, stop or restart. Always make sure to use sudo to execute these commands as they require root permissions. Please note, these commands will vary based on the specific Linux distribution and the init system it uses.",
+    "links": []
+  },
+  "DuEfJNrm4Jfmp8-8Pggrf": {
+    "title": "Starting / Stopping Services",
+    "description": "System logs are essential for troubleshooting and monitoring Linux systems. Most logs are stored in `/var/log` directory and managed by systemd. Use `journalctl` to view system logs and `journalctl -u service_name` for specific service logs. The `dmesg` command displays kernel messages. Regular log monitoring is crucial for system administration.\n\n    journalctl\n    \n\nThis command will show the entire system log from the boot to the moment you're calling the journal.\n\nTo display logs for a specific service, the `-u` option can be used followed by the service's name.\n\n    journalctl -u service_name\n    \n\nRemember, understanding and monitoring your system logs will provide you a clear view of what's going on in your Linux environment. It is a vital skill worth developing to effectively manage and troubleshoot systems.",
+    "links": []
+  },
+  "xk5Xgi797HlVjdZJRfwX1": {
+    "title": "Checking Service Status",
+    "description": "Checking service status in Linux helps monitor system health and troubleshoot issues. Use `systemctl status service_name` to view detailed service information including active state, process ID, and recent log entries. Commands like `systemctl is-active` and `systemctl is-enabled` provide quick status checks. Service status monitoring is crucial for maintaining system reliability and performance.",
+    "links": []
+  },
+  "4eINX8jYMJxfYh7ZV47YI": {
+    "title": "Package Management",
+    "description": "Package management handles software installation, updates, configuration, and removal in Linux. It manages collections of files and tracks software prerequisites automatically. Common package managers include `apt` (Debian-based), `yum`/`dnf` (Red Hat-based), and `pacman` (Arch). Example: `sudo apt install <package-name>` installs packages. Essential for efficient application management.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Software Installation on Linux",
+        "url": "https://labex.io/tutorials/linux-software-installation-on-linux-18005",
+        "type": "article"
+      }
+    ]
+  },
+  "2oQiuQ2j02SCt9t5eV6hg": {
+    "title": "Package Repositories",
+    "description": "Package repositories are storage locations containing software packages for Linux distributions. They enable easy installation, updates, and dependency management through package managers like apt, yum, or dnf. Each distribution has pre-configured repositories with tested, secure packages. Use commands like `apt update` or `yum update` to sync with repositories.\n\n    sudo apt update      # command to update the repository in Ubuntu\n    sudo yum update      # command to update the repository in CentOS or Fedora\n    raco pkg update      # command in Racket to update all installed packages\n    \n\nThese repositories are what make Linux a force to reckon with when it comes to software management with an element of security ensuring that the users only install software that is secure and reliable.",
+    "links": []
+  },
+  "Z23eJZjmWoeXQuezR9AhG": {
+    "title": "Finding & Installing Packages",
+    "description": "Linux package managers like `apt`, `yum`, and `dnf` automate software installation, updates, and removal. Use `apt-get update && apt-get install package-name` on Debian/Ubuntu systems or `dnf install package-name` on Fedora/CentOS. Package management eliminates manual compilation from source code and requires appropriate permissions (usually root access).\n\nFor example, on a Debian-based system like Ubuntu you would use `apt` or `apt-get` to install a new package like so:\n\n    sudo apt-get update\n    sudo apt-get install package-name\n    \n\nWhile in a Fedora or CentOS you would use `dnf` or `yum`:\n\n    sudo dnf update\n    sudo dnf install package-name\n    \n\nNote that you should replace `package-name` with the name of the package you want to install. Remember that you will need appropriate permissions (often root) to install packages in a Linux system.",
+    "links": []
+  },
+  "48wAoAAlCNt3j5mBpKTWC": {
+    "title": "Listing Installed Packages",
+    "description": "Linux distributions use different package managers: `apt` (Debian-based), `dnf` (Fedora), `zypper` (OpenSUSE), `pacman` (Arch). Listing installed packages helps with auditing software and deployment automation. Commands: `sudo apt list --installed` for apt systems, `dnf list installed` for dnf systems. Each distribution has its own syntax for this command.\n\nBelow is the command for listing installed packages in an `apt` package manager:\n\n    sudo apt list --installed\n    \n\nFor `dnf` package manager, you would use:\n\n    dnf list installed\n    \n\nRemember, different distributions will have their own syntax for this command.",
+    "links": []
+  },
+  "xEHiB-egkkcBuZmgMoqHT": {
+    "title": "Install / Remove / Upgrade Packages",
+    "description": "Package management in Linux involves installing, removing, and upgrading software using distribution-specific tools. Use `apt` for Debian/Ubuntu, `yum`/`dnf` for Fedora/RHEL/CentOS, and `zypper` for SUSE. Common operations include `install package-name`, `remove package-name`, and `upgrade` commands. Each package manager has specific syntax but similar functionality for software lifecycle management.\n\nA typical package management task such as installing a new package using `apt` would involve executing a command like:\n\n    sudo apt-get install packagename\n    \n\nHowever, the exact command varies depending on the package manager in use. Similarly, removing and upgrading packages also utilize command-line instructions specific to each package manager. Detailed understanding of these tasks is crucial for effective Linux system administration.",
+    "links": []
+  },
+  "eKyMZn30UxQeBZQ7FxFbF": {
+    "title": "Snap",
+    "description": "Snap is a modern Linux package management system by Canonical providing self-contained packages with all dependencies included. Snaps run consistently across different Linux distributions, install from Snapcraft store, and update automatically. Updates are transactional with automatic rollback on failure. Install packages using `sudo snap install [package-name]` command.\n\nHere is a simple example of a snap command:\n\n    sudo snap install [package-name]",
+    "links": []
+  },
+  "Fn_uYKigJRgb7r_iYGVBr": {
+    "title": "Disks and Filesystems",
+    "description": "Linux supports various filesystems like EXT4, FAT32, NTFS, and Btrfs for organizing data on storage devices. Each filesystem has specific advantages - EXT4 for Linux systems, FAT32 for compatibility across operating systems. The `df -T` command displays mounted filesystems with their types, sizes, and available space information.\n\nHere's an example of how to display the type of filesystems of your mounted devices with the \"df\" command in Linux:\n\n    df -T\n    \n\nThe output shows the names of your disks, their filesystem types, and other additional information such as total space, used space, and available space on the disks.",
+    "links": []
+  },
+  "AwQJYL60NNbA5_z7iLcM7": {
+    "title": "Inodes",
+    "description": "An inode (index node) is a data structure in Linux filesystems that stores metadata about files and directories except their names and actual data. Contains file size, owner, permissions, timestamps, and more. Each file has a unique inode number for identification. Understanding inodes helps with advanced operations like linking and file recovery. Use `ls -i filename` to view inode numbers.\n\n    # Retrieve the inode of a file\n    ls -i filename\n    \n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Introduction to Inodes",
+        "url": "https://linuxjourney.com/lesson/inodes",
+        "type": "article"
+      }
+    ]
+  },
+  "LFPhSHOhUqM98fUxMjQUw": {
+    "title": "Filesystems",
+    "description": "Filesystems define how files are stored and organized on Linux storage disks, ensuring data integrity, reliability, and efficient access. Linux supports various types like EXT4, XFS, BTRFS with different performance and recovery capabilities. All files start from root directory '/'. Use `df -T` to display filesystem types and disk usage status. Essential for Linux administration tasks.\n\nA disk installed in a Linux system can be divided into multiple partitions, each with its own filesystem. Linux supports various types of filesystems, such as EXT4, XFS, BTRFS, etc. Each one of them has their own advantages regarding performance, data integrity and recovery options.\n\nConfiguration of these filesystems relies on a defined hierarchical structure. All the files and directories start from the root directory, presented by '/'.\n\nUnderstanding the concept and management of filesystems is key for the successful administration of Linux systems, as it involves routine tasks like mounting/unmounting drives, checking disk space, managing file permissions, and repairing corrupted filesystems.\n\nCode snippet to display the file system in Linux:\n\n    df -T\n    \n\nThis command will display the type of filesystem, along with the disk usage status.",
+    "links": []
+  },
+  "AWosNs2nvDGV8r6WvgBI1": {
+    "title": "Swap",
+    "description": "Swap space extends physical memory by using disk storage when RAM is full. Inactive memory pages move to swap, freeing RAM but with performance impact due to slower disk access. Swap can exist as dedicated partitions or regular files. Create with `fallocate`, `mkswap`, and `swapon` commands. Critical for memory management and system stability optimization.",
+    "links": [
+      {
+        "title": "Swap - Arch Wiki",
+        "url": "https://wiki.archlinux.org/title/Swap",
+        "type": "article"
+      },
+      {
+        "title": "zram (alternative) - Arch Wiki",
+        "url": "https://wiki.archlinux.org/title/Zram",
+        "type": "article"
+      }
+    ]
+  },
+  "zmb5lK_EGMAChPoPvP9E0": {
+    "title": "Mounts",
+    "description": "Mounting in Linux attaches filesystems to specific directories (mount points) in the directory tree, allowing the OS to access data on storage devices. The `mount` command performs this operation. Example: `mount /dev/sdb1 /mnt` mounts second partition to `/mnt` directory. The `/mnt` directory is conventionally used for temporary mounting operations. Essential for Linux disk and filesystem management.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Mounting, unmounting and the /mnt directory - The Linux Documentation Project",
+        "url": "https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/mnt.html",
+        "type": "article"
+      },
+      {
+        "title": "Linux mount command with Examples",
+        "url": "https://phoenixnap.com/kb/linux-mount-command",
+        "type": "article"
+      },
+      {
+        "title": "The mount command manual page",
+        "url": "https://man7.org/linux/man-pages/man8/mount.8.html",
+        "type": "article"
+      }
+    ]
+  },
+  "4xBaZPk0eSsWG1vK3e2yW": {
+    "title": "Adding Disks",
+    "description": "Adding disks in Linux involves partitioning, creating filesystems, and mounting. Use `lsblk` to list devices, `fdisk /dev/sdX` to create partitions, `mkfs.ext4 /dev/sdX1` to create filesystems, and `mount /dev/sdX1 /mount/point` to mount. This process prepares new storage devices for seamless integration into the Linux filesystem hierarchy.",
+    "links": []
+  },
+  "I3LNa1cM_zRkBy8wKdz3g": {
+    "title": "LVM",
+    "description": "LVM provides logical volume management through device mapper framework, offering flexible disk management with resizing, mirroring, and moving capabilities. Three levels: Physical Volumes (PVs - actual disks), Volume Groups (VGs - storage pools), and Logical Volumes (LVs - carved portions). Create with `pvcreate`, `vgcreate`, and `lvcreate` commands. Essential for enterprise storage systems.",
+    "links": []
+  },
+  "DQEa8LrJ9TVW4ULBE4aHJ": {
+    "title": "Booting Linux",
+    "description": "Linux booting involves several stages: POST, MBR, GRUB, Kernel, Init, and GUI/CLI. The bootloader loads the kernel into memory, which detects hardware, loads drivers, mounts filesystems, starts system processes, and presents login prompts. GRUB configuration is managed through `/etc/default/grub` with settings like timeout and default boot options.",
+    "links": []
+  },
+  "ru7mpLQZKE1QxAdiA1sS3": {
+    "title": "Logs",
+    "description": "Linux maintains logs documenting system activities, errors, and kernel messages. Boot logs record all operations during system startup for troubleshooting. Use `dmesg` to view kernel ring buffer messages in real-time, or access logs in `/var/log`. Systemd uses `journalctl` for logging. Log levels range from emergency (system unusable) to debug messages.",
+    "links": []
+  },
+  "o5lSQFW-V_PqndGqo1mp3": {
+    "title": "Boot Loaders",
+    "description": "Boot loaders load the OS kernel into memory when systems start. Common Linux boot loaders include GRUB (modern, feature-rich with graphical interface) and LILO (older, broader hardware support). Boot loaders initialize hardware, load drivers, start schedulers, and execute init processes. Use `sudo update-grub` to update GRUB configuration. Enable multi-OS booting on single machines.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "comprehensive documentation of Bootloader - archlinux wiki",
+        "url": "https://wiki.archlinux.org/title/Arch_boot_process#Boot_loader",
+        "type": "article"
+      },
+      {
+        "title": "What Is GRUB Bootloader in Linux?",
+        "url": "https://phoenixnap.com/kb/what-is-grub",
+        "type": "article"
+      },
+      {
+        "title": "The GNU GRUB website",
+        "url": "https://www.gnu.org/software/grub/",
+        "type": "article"
+      }
+    ]
+  },
+  "Mb42VFjCzMZn_PovKIfKx": {
+    "title": "Networking",
+    "description": "Linux networking enables system connections and resource sharing across platforms with robust management tools. Network configurations stored in `/etc/network/interfaces`. Key commands include `ifconfig` (deprecated) and `ip` for interface management. Supports various protocols with excellent scalability. Essential for system connectivity and network troubleshooting.\n\nLinux adopts a file-based approach for network configuration, storing network-related settings and configurations in standard files, such as /etc/network/interfaces or /etc/sysconfig/network-scripts/, depending on the Linux distribution.\n\nPerhaps one of the most popular commands related to networking on a Linux system is the `ifconfig` command:\n\n    ifconfig\n    \n\nThis will output information about all network interfaces currently active on the system. However, please note that `ifconfig` is becoming obsolete and being replaced by `ip`, which offers more features and capabilities.",
+    "links": []
+  },
+  "0pciSsiQqIGJh3x8465_s": {
+    "title": "TCP/IP Stack",
+    "description": "TCP/IP (Transmission Control Protocol/Internet Protocol) is the foundational networking protocol suite that enables computer communication over networks. It consists of four layers: Network Interface, Internet, Transport, and Application. In Linux, TCP/IP is integral to the OS functionality, allowing hosts to connect and transfer data across same or different networks.\n\nBelow is a basic command using TCP/IP protocol in Linux:\n\n    # To view all active TCP/IP network connections\n    netstat -at",
+    "links": []
+  },
+  "Xszo9vXuwwXZo26seHehD": {
+    "title": "Subnetting",
+    "description": "Subnetting divides networks into smaller subnets to improve performance and security in Linux networking. It organizes IP addresses within IP addressing schemes, preventing conflicts and efficiently utilizing address ranges. Use `route -n` to view routing tables and `route add -net xxx.xxx.xxx.x/xx gw yyy.yyy.yyy.y` to add subnets. Essential for complex networking environments.",
+    "links": []
+  },
+  "4ees23q281J1DPVAc7iXd": {
+    "title": "Ethernet & arp/rarp",
+    "description": "Key networking protocols in Linux include Ethernet (LAN communication standard), ARP (Address Resolution Protocol - converts IP to MAC addresses), and RARP (Reverse ARP - converts MAC to IP addresses). These protocols enable local network communication and address resolution, essential for network troubleshooting and management in Linux systems.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "ARP Explained - Address Resolution Protocol",
+        "url": "https://www.youtube.com/watch?v=cn8Zxh9bPio",
+        "type": "video"
+      },
+      {
+        "title": "What is Ethernet?",
+        "url": "https://www.youtube.com/watch?v=HLziLmaYsO0",
+        "type": "video"
+      }
+    ]
+  },
+  "X6Jw95kbyPgsDNRhvkQP9": {
+    "title": "DHCP",
+    "description": "DHCP (Dynamic Host Configuration Protocol) automatically allocates IP addresses and network configuration to clients, ensuring unique addresses for each machine. In Linux, install with `sudo apt-get install isc-dhcp-server` and configure via `/etc/dhcp/dhcpd.conf`. DHCP servers require static IPs for effective management and can handle DNS and network data.\n\nThe DHCP server effectively manages the IP addresses and information related to them, making sure that each client machine gets a unique IP and all the correct network information.\n\nIn Linux, DHCP can be configured and managed using terminal commands. This involves the installation of the DHCP server software, editing the configuration files, and managing the server's services.\n\nA traditional DHCP server should have a static IP address to manage the IP distribution effectively. The DHCP in Linux also handles DNS and other related data that your network might require.\n\nHere is an example of a basic command to install a DHCP server in a Debian-based Linux:\n\n    sudo apt-get install isc-dhcp-server\n    \n\nAfter the installation process, all configurations of the DHCP server are done in the configuration file located at `/etc/dhcp/dhcpd.conf` which can be edited using any text editor.",
+    "links": []
+  },
+  "D0yUzzaJsfhtdBWMtquAj": {
+    "title": "IP Routing",
+    "description": "IP routing in Linux involves configuring routing tables and network routes for packet forwarding across networks. The kernel handles route selection to send packets to their destinations. Use the `ip` command (replacing deprecated `ifconfig`) for network configuration. Example: `ip route show` displays all kernel-known routes for network troubleshooting and management.",
+    "links": []
+  },
+  "f5oQYhmjNM2_FD7Qe1zGK": {
+    "title": "DNS Resolution",
+    "description": "DNS (Domain Name System) converts hostnames to IP addresses, enabling users to access websites without remembering numeric addresses. Linux systems use `/etc/resolv.conf` to configure DNS resolution. Applications consult the DNS resolver, which communicates with DNS servers for address translation. Use `nslookup` or `dig` commands to query DNS and troubleshoot network connectivity issues.",
+    "links": []
+  },
+  "bZ8Yj6QfBeDdh8hRM_aZs": {
+    "title": "Netfilter",
+    "description": "Netfilter is a Linux kernel framework for manipulating and filtering network packets with hooks at various stages (prerouting, input, forward, output, postrouting). Used for firewalls and NAT management with iptables configuration. Essential for traffic control, packet modification, logging, and intrusion detection in Linux networking systems.",
+    "links": []
+  },
+  "uk6UMuI8Uhf02TBAGVeLS": {
+    "title": "SSH",
+    "description": "SSH (Secure Shell) is a cryptographic network protocol providing secure remote access, command execution, and data communication between networked computers. Replaces insecure protocols like Telnet with confidentiality, integrity, and security. Use `ssh username@server_ip_address` to connect to remote Linux servers. Essential for secure system administration and remote management.",
+    "links": []
+  },
+  "tVrbVcNEfc11FbEUoO2Dk": {
+    "title": "File Transfer",
+    "description": "Linux file transfer involves copying or moving files between systems over networks. Command-line tools support protocols like FTP, HTTP, SCP, SFTP, and NFS. Common commands include `scp`, `rsync`, and `wget`. Example: `scp /local/file username@remote:/destination` copies files to remote systems. These tools make network file sharing streamlined, easier, and more secure.",
+    "links": []
+  },
+  "4tFZ1PLpz50bddf7zSFrW": {
+    "title": "Shell Programming",
+    "description": "Shell programming (scripting) automates administrative tasks, repetitive operations, and system monitoring in Linux. Bash is the default shell and scripting language in most distributions. Scripts are text files executed by the shell, excellent for system automation. Example: `#!/bin/bash echo \"Hello, World!\"` creates a simple script that prints output to terminal.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Bash Scripting on Linux - YT Playlist",
+        "url": "https://youtube.com/playlist?list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w&si=MSehStqnhSqgoMSj",
+        "type": "video"
+      }
+    ]
+  },
+  "-pW7R76yNIeGf7TQoX4QL": {
+    "title": "Literals",
+    "description": "Shell literals are fixed values in source code including string literals (enclosed in quotes), numeric literals (sequences of digits), and boolean literals (1=true, 0=false). String examples: 'Hello, world!' or \"Hello, world!\". Numeric examples: 25, 100, 1234. Understanding literals is fundamental for shell scripting readability and functionality in Linux programming.",
+    "links": []
+  },
+  "JyxvZOb7iusOSUYSlniGl": {
+    "title": "Variables",
+    "description": "Shell variables store system or user-defined data that can change during script execution. Two categories exist: System Variables (PATH, HOME, PWD) created by Linux, and User-Defined Variables created by users. Define variables with `=` operator and retrieve values with `$` prefix. Example: `MY_VARIABLE=\"Hello World\"` then `echo $MY_VARIABLE` prints the value.",
+    "links": []
+  },
+  "WJT-yrMq8cEI87RHWA2jY": {
+    "title": "Loops",
+    "description": "Shell loops automate repetitive tasks with three types: `for` (iterates over lists), `while` (executes while condition true), `until` (runs until condition true). Example: `for i in 1 2 3; do echo \"$i\"; done` outputs each number. Essential for script efficiency, automation, and effective Linux shell programming.",
+    "links": []
+  },
+  "rQxfp7UWqN72iqewZhOdc": {
+    "title": "Conditionals",
+    "description": "Shell conditionals allow scripts to make decisions based on conditions using `if`, `elif`, and `else` statements. These control process flow by evaluating string variables, arithmetic tests, or process status. Conditions are checked sequentially - if true, the corresponding code block executes; otherwise, it moves to the next condition until finding a match or reaching `else`.",
+    "links": []
+  },
+  "rOGnHbGIr3xPCFdpkqoeK": {
+    "title": "Debugging",
+    "description": "Shell script debugging in Linux uses tools like bash's `-x` option for execution traces, `trap`, `set` commands, and external tools like `shellcheck`. Use `#!/bin/bash -x` in scripts or `bash -x script.sh` from command line for tracing. These debugging options help detect, trace, and fix errors to make scripts more efficient and error-proof.\n\nVisit the following sources to learn more:",
+    "links": [
+      {
+        "title": "Official Bashdb Documentation",
+        "url": "https://bashdb.readthedocs.io/en/latest/",
+        "type": "article"
+      }
+    ]
+  },
+  "bdQNcr1sj94aX_gjwf2Fa": {
+    "title": "Troubleshooting",
+    "description": "Linux troubleshooting involves identifying and resolving system errors, hardware/software issues, network problems, and resource management challenges. Key skills include using command-line tools, inspecting log files, understanding processes, and interpreting error messages. Tools like `top` provide real-time process monitoring to identify resource-heavy processes causing performance issues efficiently.",
+    "links": []
+  },
+  "Ymf3u_sG1dyt8ZR_LbwqJ": {
+    "title": "ICMP",
+    "description": "Internet Control Message Protocol (ICMP) is a supportive protocol used by network devices to communicate error messages and operational information. Essential for Linux network troubleshooting, ICMP enables tools like `ping` and `traceroute` to diagnose network connectivity and routing issues. Use `ping www.google.com` to send ICMP echo requests and test network reachability effectively.",
+    "links": []
+  },
+  "Uc36t92UAlILgM3_XxcMG": {
+    "title": "ping",
+    "description": "The `ping` command is essential for Linux network troubleshooting, checking connectivity between your host and target machines. It sends ICMP ECHO\\_REQUEST packets and listens for ECHO\\_RESPONSE returns, providing insights into connection health and speed. Use `ping <target IP or hostname>` to diagnose network connectivity issues and identify reachability problems efficiently.",
+    "links": []
+  },
+  "BnB3Rirh4R7a7LW7-k-95": {
+    "title": "traceroute",
+    "description": "Traceroute is a Linux network diagnostic tool that displays the path packets take from your system to a destination. It identifies routing problems, measures latency, and reveals network structure as packets traverse the internet. Each hop is tested multiple times with round-trip times displayed. Use `traceroute www.example.com` to discover packet routes and diagnose failures.",
+    "links": []
+  },
+  "yrxNYMluJ9OAQCKuM5W1u": {
+    "title": "netstat",
+    "description": "Netstat is a command-line tool for network troubleshooting and performance measurement in Linux. It provides network statistics, open ports, routing table information, and protocol details. Use options like `-n` for numerical addresses, `-c` for continuous monitoring, and `-t`/`-u` for specific protocols. Example: `netstat -n` lists all connections with numerical values.",
+    "links": []
+  },
+  "7seneb4TWts4v1_x8xlcZ": {
+    "title": "Packet Analysis",
+    "description": "Packet analysis is a key Linux network troubleshooting skill involving capturing and analyzing network traffic to identify performance issues, connectivity problems, and security vulnerabilities. Tools like tcpdump and Wireshark provide packet-level details for network diagnostics. Use `sudo tcpdump -i eth0` to capture packets on the eth0 interface for debugging network protocols.",
+    "links": []
+  },
+  "3OpGaQhyNtk1n1MLp-tlb": {
+    "title": "Containerization",
+    "description": "Containerization is a virtualization method that encapsulates applications in containers with isolated operating environments, enabling reliable deployment across computing environments. Unlike VMs requiring full operating systems, containers share the host system's user space, making them lightweight and faster. Docker is a popular Linux containerization tool for managing complex applications.",
+    "links": []
+  },
+  "QgfenmhMc18cU_JngQ1n0": {
+    "title": "ulimits",
+    "description": "Ulimits (user limits) are Linux kernel features that restrict resources like file handles and memory that processes can consume. In containerization, ulimits prevent rogue processes from exhausting server resources and creating denial-of-service situations. Use `ulimit -a` to view current limits and `ulimit -n 1024` to set specific limits for optimal container performance and security.\n\n    # To see current ulimits:\n    ulimit -a\n    \n    # To set a specific ulimit (soft limit), for example file handles:\n    ulimit -n 1024\n    \n\nProperly configuring and understanding ulimits – especially in containerized environments – is an essential part of system administration in Linux.",
+    "links": []
+  },
+  "23lsrUw8ux6ZP9JlDNNu2": {
+    "title": "cgroups",
+    "description": "Cgroups (control groups) are a Linux kernel feature that organizes processes into hierarchical groups and limits their resource usage (CPU, memory, disk I/O). Essential for containerization, cgroups prevent containers from monopolizing host resources, ensuring system stability and performance. Use `cgcreate` to create groups, assign processes, and set resource limits effectively.\n\nHere's an example of how you might create a new cgroup for a container:\n\n    # Create a new cgroup for a container;\n    sudo cgcreate -g cpu:/my_new_container\n    \n    # Assign the current shell's process to the new cgroup;\n    echo $$ | sudo tee /sys/fs/cgroup/cpu/my_new_container/tasks\n    \n    # Limit the CPU usage of the cgroup to 20%;\n    echo 200000 | sudo tee /sys/fs/cgroup/cpu/my_new_container/cpu.cfs_quota_us\n    \n\nIn this snippet, we are using `cgcreate` to create a new cgroup, then adding the current process to it, and finally setting a CPU limit.",
+    "links": []
+  },
+  "bVCwRoFsYb3HD8X4xuKOo": {
+    "title": "Container Runtime",
+    "description": "Container runtime is software responsible for running containers in Linux, providing image transport, storage, execution, and network interactions. Popular options include Docker (comprehensive ecosystem), Containerd (lightweight standalone), and CRI-O (Kubernetes-optimized). Each runtime offers specific features and benefits for different use cases in containerized application deployment and management.",
+    "links": []
+  },
+  "MfengY3ouz6sSOx3PXYf8": {
+    "title": "Docker",
+    "description": "Docker is an open-source containerization platform that uses OS-level virtualization to package applications with dependencies into lightweight containers. In Linux, Docker containers share the kernel and use features like namespaces and cgroups for isolation. This provides less overhead than traditional VMs while enabling consistent deployment across environments.\n\nHere's a basic example of running an application (for example, hello-world) with Docker on Linux:\n\n    # Pull the Docker image from Docker Hub\n    sudo docker pull hello-world\n    \n    # Run the Docker container\n    sudo docker run hello-world\n    \n\nThe above commands allow you to download a Docker image and run it on your Linux system, providing the foundation for deploying containers in development, testing, and production environments.",
+    "links": []
+  }
+}
