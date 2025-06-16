@@ -22,7 +22,7 @@ export function ListUserAIGuides() {
   const [showUpgradePopup, setShowUpgradePopup] = useState(false);
 
   const [pageState, setPageState] = useState<ListUserAIGuidesQuery>({
-    perPage: '2',
+    perPage: '21',
     currPage: '1',
     query: '',
   });
