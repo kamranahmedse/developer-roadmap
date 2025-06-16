@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [@video@Microkernel Architectural Pattern | Software Architecture](https://www.youtube.com/watch?v=h3icQDMRLd8)
 - [@article@Overview of Microkernel Architecture](https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch03.html)
+- [@article@Software Architecture Patterns — Microkernel Architecture](https://priyalwalpita.medium.com/software-architecture-patterns-microkernel-architecture-97cee200264e)
