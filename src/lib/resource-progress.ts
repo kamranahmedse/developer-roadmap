@@ -122,6 +122,7 @@ export function clearMigratedRoadmapProgress(
     'datastructures-and-algorithms',
     'kubernetes',
     'linux',
+    'software-design-architecture'
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
