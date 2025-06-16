@@ -6,5 +6,5 @@ The YAGNI principle is closely related to the Single Responsibility Principle (S
 
 Learn more from the following resources:
 
-- [@article@YAGNI (You Aren’t Gonna Need It) Principle Helps in Efficiency](https://builtin.com/software-engineering-perspectives/yagni)
+- [@article@YAGNI (You Aren't Gonna Need It) Principle Helps in Efficiency](https://builtin.com/software-engineering-perspectives/yagni)
 - [@video@What is YAGNI coding rule, and Why it helps?](https://www.youtube.com/watch?v=2vys1q1dKc4)

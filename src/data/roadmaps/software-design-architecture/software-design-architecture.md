@@ -6,11 +6,12 @@ briefTitle: 'Design and Architecture'
 briefDescription: 'Guide to learn software design and architecture'
 title: 'Software Design and Architecture'
 description: 'Step by step guide to learn software design and architecture'
+renderer: 'editor'
 isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 1764.66
+  height: 2150
 schema:
   headline: 'Software Design and Architecture Roadmap'
   description: 'Learn Software Design and Architecture with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
