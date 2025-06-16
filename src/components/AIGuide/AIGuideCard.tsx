@@ -19,7 +19,7 @@ export function AIGuideCard(props: AIGuideCardProps) {
   return (
     <div className="relative flex flex-grow flex-col">
       <a
-        href={`/ai/guides/${guide.slug}`}
+        href={`/ai/guide/${guide.slug}`}
         className="hover:border-gray-3 00 group relative flex h-full min-h-[140px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
       >
         <div className="flex items-center justify-between">

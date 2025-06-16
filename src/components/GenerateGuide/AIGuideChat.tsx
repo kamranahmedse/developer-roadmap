@@ -24,11 +24,18 @@ type AIGuideChatProps = {
   guideSlug?: string;
   isGuideLoading?: boolean;
   onUpgrade?: () => void;
+  isQuestionsLoading?: boolean;
   randomQuestions?: string[];
 };
 
 export function AIGuideChat(props: AIGuideChatProps) {
-  const { guideSlug, isGuideLoading, onUpgrade, randomQuestions } = props;
+  const {
+    guideSlug,
+    isGuideLoading,
+    onUpgrade,
+    randomQuestions,
+    isQuestionsLoading,
+  } = props;
 
   const scrollareaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -163,7 +170,18 @@ export function AIGuideChat(props: AIGuideChatProps) {
                     html="Hello, how can I help you today?"
                     isIntro
                   />
-                  {randomQuestions &&
+                  {isQuestionsLoading && (
+                    <div className="flex flex-col gap-1">
+                      {[1, 2, 3, 4].map((i) => (
+                        <div
+                          key={i}
+                          className="h-[38px] w-full animate-pulse rounded-lg bg-gray-200"
+                        ></div>
+                      ))}
+                    </div>
+                  )}
+                  {!isQuestionsLoading &&
+                    randomQuestions &&
                     randomQuestions.length > 0 &&
                     messages.length === 0 && (
                       <>

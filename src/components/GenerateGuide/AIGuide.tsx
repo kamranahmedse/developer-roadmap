@@ -107,18 +107,20 @@ export function AIGuide(props: AIGuideProps) {
         )}
         {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}
 
-        {!isAiGuideSuggestionsLoading && aiGuide && !isRegenerating && (
+        {aiGuide && !isRegenerating && (
           <div className="mt-4 grid grid-cols-2 divide-x divide-gray-200 rounded-lg border border-gray-200 bg-white">
             <ListSuggestions
               title="Related Topics"
               suggestions={relatedTopics}
               depth="essentials"
+              isLoading={isAiGuideSuggestionsLoading}
             />
 
             <ListSuggestions
               title="Dive Deeper"
               suggestions={deepDiveTopics}
               depth="detailed"
+              isLoading={isAiGuideSuggestionsLoading}
             />
           </div>
         )}
@@ -128,6 +130,7 @@ export function AIGuide(props: AIGuideProps) {
         isGuideLoading={!aiGuide}
         onUpgrade={() => setShowUpgradeModal(true)}
         randomQuestions={randomQuestions}
+        isQuestionsLoading={isAiGuideSuggestionsLoading}
       />
     </AITutorLayout>
   );
@@ -137,10 +140,11 @@ type ListSuggestionsProps = {
   title: string;
   suggestions: string[];
   depth: string;
+  isLoading: boolean;
 };
 
 export function ListSuggestions(props: ListSuggestionsProps) {
-  const { title, suggestions, depth } = props;
+  const { title, suggestions, depth, isLoading } = props;
 
   return (
     <div className="flex flex-col">
@@ -148,21 +152,31 @@ export function ListSuggestions(props: ListSuggestionsProps) {
         {title}
       </h2>
       <ul className="flex flex-col gap-1 p-1">
-        {suggestions?.map((topic) => {
-          const url = `/ai/guides?term=${encodeURIComponent(topic)}&depth=${depth}&id=&format=guide`;
+        {isLoading && (
+          <>
+            {[1, 2].map((i) => (
+              <div key={i} className="w-full">
+                <div className="h-7 w-full animate-pulse rounded-md bg-gray-200"></div>
+              </div>
+            ))}
+          </>
+        )}
+        {!isLoading &&
+          suggestions?.map((topic) => {
+            const url = `/ai/guides?term=${encodeURIComponent(topic)}&depth=${depth}&id=&format=guide`;
 
-          return (
-            <li key={topic} className="w-full">
-              <a
-                href={url}
-                target="_blank"
-                className="block truncate rounded-md px-2 py-1 text-sm hover:bg-gray-100"
-              >
-                {topic}
-              </a>
-            </li>
-          );
-        })}
+            return (
+              <li key={topic} className="w-full">
+                <a
+                  href={url}
+                  target="_blank"
+                  className="block truncate rounded-md px-2 py-1 text-sm hover:bg-gray-100"
+                >
+                  {topic}
+                </a>
+              </li>
+            );
+          })}
       </ul>
     </div>
   );

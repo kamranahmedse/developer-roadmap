@@ -108,7 +108,7 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
         );
 
         onGuideSlugChange?.(guideSlug);
-        window.history.replaceState(null, '', `/ai/guides/${guideSlug}`);
+        window.history.replaceState(null, '', `/ai/guide/${guideSlug}`);
       },
       onLoadingChange: setIsLoading,
       onError: setError,
