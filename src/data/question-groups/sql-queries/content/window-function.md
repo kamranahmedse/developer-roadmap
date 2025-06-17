@@ -1,0 +1,1 @@
+A window function is a function that allows you to perform operations on a specific set of rows related to the current row. Unlike aggregate functions that perform calculations on an entire data set, window functions can perform operations on a subset of data. These calculations are valid for aggregates, ranking, and cumulative totals without altering the original dataset. 
