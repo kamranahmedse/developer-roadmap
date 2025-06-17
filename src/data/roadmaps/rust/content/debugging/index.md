@@ -1,3 +1,0 @@
-# Debugging
-
-"Debugging" is a critical process in software development that involves identifying, isolating, and fixing (or "debugging") problems or errors in a computer program or software code. In Rust, the Rust compiler plays a big part in this process because of its strictness and propensity for compile-time error checking. Rust also provides various debugging tools such as `rust-gdb` and `rust-lldb`. Moreover, the language comes with standard library macros like `debug!` and `println!` for tracing and debugging. Additionally, for a thorough debugging experience, there are debugging variables that provide a backtrace of a system's state, and tests that can help you ensure that your system works as expected.

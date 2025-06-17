@@ -1,3 +1,0 @@
-# Cryptography
-
-Cryptography is a method of storing and transmitting data in a particular form so that only those for whom it is intended can read and process it. This practice is widely used in securing modern communications and protecting data from theft or tampering. It bases itself on the fundamentals of mathematics to transform data into a format that is unreadable without a key. In its simplest form, it involves just two steps: encryption and decryption. Encryption is the process of converting readable data into an unreadable format using an algorithm and a key. Decryption is the reverse of encryption; it turns the unreadable data back into its original form with the use of the matching key.

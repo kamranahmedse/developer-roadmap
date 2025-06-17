@@ -1,3 +1,0 @@
-# WebAssembly (WASM)
-
-"Wasm" or WebAssembly is an open standard binary instruction format. It serves as a compact binary format that aims to execute at near-native speed, providing a performance-efficient compilation target for low-level languages like C, C++, and Rust. Wasm was initially developed for efficient execution in web browsers but is designed to be used in other environments as well. WebAssembly aims to maintain a safe, secure, and platform-independent runtime to perform high-performance applications on the web or on other platforms.
