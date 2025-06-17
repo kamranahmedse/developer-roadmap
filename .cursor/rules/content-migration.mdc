@@ -1,5 +1,5 @@
 ---
-description: 
+description: When user requests migrating old roadmap content to new folder from content-old to content folder
 globs: 
 alwaysApply: false
 ---
