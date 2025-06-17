@@ -4,4 +4,5 @@ Port blocking is an essential practice in hardening the security of your network
 
 Learn more from the following resources:
 
-- [@article@What is port blocking with LAN?](https://www.geeksforgeeks.org/what-is-port-blocking-within-lan/)
+- [@article@What is Port Blocking?](https://cyberpedia.reasonlabs.com/EN/port%20blocking.html)
+- [@article@Is Your Router Blocking Your Ports? Here's How to Find Out?](https://softhandtech.com/how-can-i-tell-if-a-port-is-blocked-on-my-router/)

@@ -2,22 +2,11 @@
   "aStaDENn5PhEa-cFvNzXa": {
     "title": "Mathematics",
     "description": "Mathematics is the foundation of AI and Data Science. It is essential to have a good understanding of mathematics to excel in these fields.",
-    "links": [
-      {
-        "title": "Mathematics for Machine Learning",
-        "url": "https://imp.i384100.net/baqMYv",
-        "type": "article"
-      },
-      {
-        "title": "Algebra and Differential Calculus",
-        "url": "https://imp.i384100.net/LX5M7M",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "4WZL_fzJ3cZdWLLDoWN8D": {
     "title": "Statistics",
-    "description": "Statistics is the science of collecting, analyzing, interpreting, presenting, and organizing data. It is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data. It is used in a wide range of fields, including science, engineering, medicine, and social science. Statistics is used to make informed decisions, to predict future events, and to test hypotheses. It is also used to summarize data, to describe relationships between variables, and to make inferences about populations based on samples.\n\nLearn more from the resources given on the roadmap.",
+    "description": "Statistics is the science of collecting, analyzing, interpreting, presenting, and organizing data. It is a branch of mathematics that deals with the collection, analysis, interpretation, presentation, and organization of data. It is used in a wide range of fields, including science, engineering, medicine, and social science. Statistics is used to make informed decisions, to predict future events, and to test hypotheses. It is also used to summarize data, to describe relationships between variables, and to make inferences about populations based on samples.",
     "links": []
   },
   "gWMvD83hVXeTmCuHGIiOL": {
@@ -49,6 +38,11 @@
         "title": "Algebra and Differential Calculus for Data Science",
         "url": "https://imp.i384100.net/LX5M7M",
         "type": "article"
+      },
+      {
+        "title": "Calculus Youtube Course",
+        "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr",
+        "type": "video"
       }
     ]
   },
@@ -106,7 +100,7 @@
       },
       {
         "title": "Step by Step Process for Planning an A/B Test",
-        "url": "https://towardsdatascience.com/step-by-step-for-planning-an-a-b-test-ef3c93143c0b",
+        "url": "https://medium.com/data-science/step-by-step-for-planning-an-a-b-test-ef3c93143c0b",
         "type": "article"
       },
       {
@@ -326,24 +320,8 @@
   },
   "kBdt_t2SvVsY3blfubWIz": {
     "title": "Machine Learning",
-    "description": "Machine learning is a field of artificial intelligence that uses statistical techniques to give computer systems the ability to \"learn\" (e.g., progressively improve performance on a specific task) from data, without being explicitly programmed. The name machine learning was coined in 1959 by Arthur Samuel. Evolved from the study of pattern recognition and computational learning theory in artificial intelligence, machine learning explores the study and construction of algorithms that can learn from and make predictions on data – such algorithms overcome following strictly static program instructions by making data-driven predictions or decisions, through building a model from sample inputs. Machine learning is employed in a range of computing tasks where designing and programming explicit algorithms with good performance is difficult or infeasible; example applications include email filtering, detection of network intruders, and computer vision.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Advantages and Disadvantages of AI",
-        "url": "https://towardsdatascience.com/advantages-and-disadvantages-of-artificial-intelligence-182a5ef6588c",
-        "type": "article"
-      },
-      {
-        "title": "Reinforcement Learning 101",
-        "url": "https://towardsdatascience.com/reinforcement-learning-101-e24b50e1d292",
-        "type": "article"
-      },
-      {
-        "title": "Understanding AUC-ROC Curve",
-        "url": "https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5",
-        "type": "article"
-      }
-    ]
+    "description": "Machine learning is a field of artificial intelligence that uses statistical techniques to give computer systems the ability to \"learn\" (e.g., progressively improve performance on a specific task) from data, without being explicitly programmed. The name machine learning was coined in 1959 by Arthur Samuel. Evolved from the study of pattern recognition and computational learning theory in artificial intelligence, machine learning explores the study and construction of algorithms that can learn from and make predictions on data – such algorithms overcome following strictly static program instructions by making data-driven predictions or decisions, through building a model from sample inputs. Machine learning is employed in a range of computing tasks where designing and programming explicit algorithms with good performance is difficult or infeasible; example applications include email filtering, detection of network intruders, and computer vision.",
+    "links": []
   },
   "FdBih8tlGPPy97YWq463y": {
     "title": "Classic ML (Sup., Unsup.), Advanced ML (Ensembles, NNs)",

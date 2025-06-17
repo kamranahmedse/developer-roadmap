@@ -4,6 +4,6 @@ Cross-site script inclusion, also known as JSON vulnerability, can allow an atta
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Cross Site Script Inclusion](https://angular.dev/best-practices/security#cross-site-script-inclusion-xssi)
+- [@official@Cross Site Script Inclusion](https://angular.dev/best-practices/security#cross-site-script-inclusion-xssi)
 - [@article@XSSI Cross Site Script Inclusion](https://book.hacktricks.xyz/pentesting-web/xssi-cross-site-script-inclusion)
 - [@article@Testing for Cross Site Script Inclusion](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/13-Testing_for_Cross_Site_Script_Inclusion)

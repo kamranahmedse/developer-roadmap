@@ -33,7 +33,7 @@ export function FeaturedGuideList(props: FeaturedGuidesProps) {
 
       <a
         href="/guides"
-        className="hidden rounded-full bg-gradient-to-r from-slate-600 to-black px-3 py-2 text-xs font-medium text-white transition-colors hover:from-blue-600 hover:to-blue-800 sm:inline"
+        className="hidden rounded-full bg-linear-to-r from-slate-600 to-black px-3 py-2 text-xs font-medium text-white transition-colors hover:from-blue-600 hover:to-blue-800 sm:inline"
       >
         View All Guides &rarr;
       </a>

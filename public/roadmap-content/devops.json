@@ -205,11 +205,6 @@
         "type": "article"
       },
       {
-        "title": "All you need to know about OS.",
-        "url": "https://www.javatpoint.com/operating-system",
-        "type": "article"
-      },
-      {
         "title": "Learn Operating Systems",
         "url": "https://www.tutorialspoint.com/operating_system/os_overview.htm",
         "type": "article"
@@ -533,11 +528,6 @@
         "type": "article"
       },
       {
-        "title": "Bash Scripting Tutorial",
-        "url": "https://www.javatpoint.com/bash",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Bash",
         "url": "https://app.daily.dev/tags/bash?ref=roadmapsh",
         "type": "article"
@@ -626,7 +616,7 @@
         "type": "article"
       },
       {
-        "title": "Mecurial",
+        "title": "Mercurial",
         "url": "https://www.mercurial-scm.org/",
         "type": "article"
       },
@@ -2860,8 +2850,8 @@
     "description": "GitOps is a paradigm for managing infrastructure and application deployments using Git as the single source of truth. It extends DevOps practices by using Git repositories to store declarative descriptions of infrastructure and applications. Changes to the desired state are made through pull requests, which trigger automated processes to align the actual state with the desired state. GitOps relies on continuous deployment tools that automatically reconcile the live system with the desired state defined in Git. This approach provides benefits such as version control for infrastructure, improved auditability, easier rollbacks, and enhanced collaboration. GitOps is particularly well-suited for cloud-native applications and Kubernetes environments, offering a streamlined method for managing complex, distributed systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Guide to GitOps",
-        "url": "https://www.weave.works/technologies/gitops/",
+        "title": " GitOps",
+        "url": "https://www.gitops.tech/",
         "type": "article"
       },
       {

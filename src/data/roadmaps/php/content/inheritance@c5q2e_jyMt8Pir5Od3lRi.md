@@ -25,4 +25,4 @@ In the above example, the 'Car' class inherits the drive method from the 'Vehicl
 
 Visit the following resources to learn more:
 
-- [@official@Inheritance](https://www.php.net/manual/en/keyword.extends.php)
+- [@official@Inheritance](https://www.php.net/manual/en/language.oop5.inheritance.php)

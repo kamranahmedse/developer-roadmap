@@ -1,3 +1,0 @@
-# Embedded and Systems
-
-"Embedded" in the world of Rust programming refers to the use of Rust in embedded systems. These are computer systems with a dedicated function within a larger mechanical or electrical system, often with real-time computational constraints. They are used in a wide range of applications from appliances to vehicles to vending machines and all sorts of industrial applications. Rust's zero-cost abstractions, high-level ergonomics, and low-level control make it an excellent language to use for embedded systems. By using Rust, developers can write extremely low-level code, such as operating system kernels or microcontroller applications.

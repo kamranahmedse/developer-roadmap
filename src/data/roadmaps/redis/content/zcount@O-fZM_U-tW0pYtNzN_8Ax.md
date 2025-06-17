@@ -4,4 +4,4 @@ ZCOUNT returns the number of elements in the sorted set at the targetted `key`, 
 
 Learn more from the following resources:
 
-- [@official@ZCOUNT Documentation](https://redis.io/docs/latest/commands/zcount/)
+- [@official@ZCOUNT](https://redis.io/docs/latest/commands/zcount/)

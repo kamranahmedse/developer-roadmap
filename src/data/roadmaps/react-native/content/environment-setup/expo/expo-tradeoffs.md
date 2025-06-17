@@ -1,0 +1,7 @@
+# Expo Tradeoffs
+
+Expo is a powerful tool that simplifies the React Native development process, but it has some tradeoffs to consider. One limitation is the availability of native modules; while Expo provides a set of pre-built modules, it may not cover all functionalities needed for specific apps, requiring developers to eject from the managed workflow for custom solutions. Performance can also be an issue, as the additional layer Expo adds may lead to slower apps, especially for larger projects, whereas the bare workflow offers more control and potentially better performance. Additionally, Expo apps tend to have a larger size due to the inclusion of the entire Expo SDK, which can be inefficient compared to non-Expo apps that only include necessary modules. Developers relying on Expo must also wait for their release cycle for updates, which can delay access to new React Native features or bug fixes. Ejecting from Expo can present challenges, as it may require significant code adjustments and dependency migrations. Lastly, Expo's abstraction limits customizability, meaning that for advanced customizations, developers may need to switch to a bare workflow. Overall, while Expo provides great tooling and simplifies development, its limitations should be carefully weighed before choosing it for app development.
+
+Visit the following resources to learn more:
+
+- [@article@Should you use Expo or Bare React Native?](https://medium.com/@andrew.chester/should-you-use-expo-or-bare-react-native-8dd400f4a468/)

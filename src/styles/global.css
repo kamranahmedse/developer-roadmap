@@ -1,28 +1,67 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@import '@roadmapsh/editor/style.css';
 
-@layer components {
-  .container {
-    @apply mx-auto !max-w-[830px] px-4;
+@config '../../tailwind.config.cjs';
+@plugin 'tailwind-scrollbar';
+
+@font-face {
+  font-family: 'Balsamiq Sans';
+  src: url('/fonts/balsamiq.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-balsamiq: 'Balsamiq Sans', sans-serif;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
 
-  .container-lg {
-    @apply mx-auto !max-w-[968px] px-4;
+  button {
+    @apply cursor-pointer;
   }
+}
 
-  .badge {
-    @apply rounded-sm bg-gray-400 px-1.5 py-0.5 text-xs font-medium uppercase text-white;
-  }
+@utility container {
+  @apply mx-auto max-w-[830px]! px-4;
+}
 
+@utility container-lg {
+  @apply mx-auto max-w-[968px]! px-4;
+}
+
+@utility badge {
+  @apply rounded-xs bg-gray-400 px-1.5 py-0.5 text-xs font-medium text-white uppercase;
+}
+
+@utility no-scrollbar {
   /* Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
   }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+@utility collapse-if-empty {
+  &:empty {
+    display: none;
   }
 }
 
@@ -148,4 +187,14 @@ a > code:before {
   100% {
     background-position: 100% 100%;
   }
+}
+
+/* Hide scrollbars */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }

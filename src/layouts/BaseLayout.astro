@@ -1,5 +1,12 @@
 ---
+import '../styles/global.css';
+
 import Analytics from '../components/Analytics/Analytics.astro';
+import Clarity from '../components/Analytics/Clarity.astro';
+import GoogleAd from '../components/Analytics/GoogleAd.astro';
+import GoogleAdSlot from '../components/Analytics/GoogleAdSlot.astro';
+import Hubspot from '../components/Analytics/Hubspot.astro';
+import RedditPixel from '../components/Analytics/RedditPixel.astro';
 import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
 import { CommandMenu } from '../components/CommandMenu/CommandMenu';
@@ -7,13 +14,12 @@ import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import { PageProgress } from '../components/PageProgress';
-import { Toaster } from '../components/Toast';
-import { PageSponsors } from '../components/PageSponsors/PageSponsors';
-import { siteConfig } from '../lib/config';
-import '../styles/global.css';
 import { PageVisit } from '../components/PageVisit/PageVisit';
+import { CourseAnnouncement } from '../components/SQLCourse/CourseAnnouncement';
+import { Toaster } from '../components/Toast';
+import { siteConfig } from '../lib/config';
 import type { ResourceType } from '../lib/resource-progress';
-import ChangelogBanner from "../components/ChangelogBanner.astro";
+import Bluconic from '../components/Analytics/Bluconic.astro';
 
 export interface Props {
   title: string;
@@ -30,6 +36,7 @@ export interface Props {
   jsonLd?: Record<string, unknown>[];
   resourceId?: string;
   resourceType?: ResourceType;
+  hasVarify?: boolean;
 }
 
 const {
@@ -46,6 +53,7 @@ const {
   initialLoadingMessage = '',
   resourceId,
   resourceType,
+  hasVarify = false,
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
@@ -146,19 +154,56 @@ const gaPageIdentifier = Astro.url.pathname
     <link rel='preconnect' href='https://www.google-analytics.com/' />
     <link rel='preconnect' href='https://api.roadmap.sh/' />
 
+    {
+      hasVarify && (
+        <Fragment>
+          <script is:inline>
+            window.varify = window.varify || {};
+            window.varify.iid = 4013;
+          </script>
+          <script is:inline src='https://app.varify.io/varify.js' />
+        </Fragment>
+      )
+    }
+    <!-- Google Tag Manager Start -->
+    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T66KC7S8');</script>
+    <!-- Google Tag Manager End -->
+
     <slot name='after-header' />
     {
       jsonLd.length > 0 && (
         <script
           type='application/ld+json'
-          set:html={JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd)}
+          set:html={JSON.stringify(jsonLd)}
         />
       )
     }
 
     <Analytics />
+    <Clarity />
+    <RedditPixel />
+    <GoogleAd />
+    <Hubspot />
+    <Bluconic />
   </head>
   <body class='flex min-h-screen flex-col'>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src='https://www.googletagmanager.com/ns.html?id=GTM-T66KC7S8'
+        height='0'
+        width='0'
+        style='display:none;visibility:hidden'></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <slot name='course-announcement'>
+      <CourseAnnouncement client:load />
+    </slot>
     <slot name='page-header'>
       <Navigation />
     </slot>
@@ -166,8 +211,7 @@ const gaPageIdentifier = Astro.url.pathname
     <slot />
 
     <slot name='page-footer'>
-      <slot name='changelog-banner'>
-      </slot>
+      <slot name='changelog-banner' />
       <slot name='open-source-banner'>
         <OpenSourceBanner />
       </slot>
@@ -183,11 +227,7 @@ const gaPageIdentifier = Astro.url.pathname
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
 
-    <PageSponsors
-      gaPageIdentifier={briefTitle || gaPageIdentifier}
-      client:load
-    />
-
+    <GoogleAdSlot />
     <slot name='after-footer' />
 
     <PageVisit

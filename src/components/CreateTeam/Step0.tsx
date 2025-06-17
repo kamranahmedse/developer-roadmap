@@ -76,7 +76,7 @@ export function Step0(props: Step0Props) {
         {validTeamTypes.map((validTeamType) => (
           <button
             key={validTeamType.value}
-            className={`flex flex-grow flex-col items-center rounded-lg border px-5 pb-10 pt-12 ${
+            className={`flex grow flex-col items-center rounded-lg border px-5 pb-10 pt-12 ${
               validTeamType.value == selectedTeamType
                 ? 'border-gray-400 bg-gray-100'
                 : 'border-gray-300 hover:border-gray-400 hover:bg-gray-50'

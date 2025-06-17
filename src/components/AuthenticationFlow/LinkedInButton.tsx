@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
-import Cookies from 'js-cookie';
 import {
   FIRST_LOGIN_PARAM,
   COURSE_PURCHASE_PARAM,
-  TOKEN_COOKIE_NAME,
   setAuthToken,
 } from '../../lib/jwt';
 import { cn } from '../../lib/classname.ts';
@@ -11,7 +9,7 @@ import { httpGet } from '../../lib/http';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
-import { triggerUtmRegistration } from '../../lib/browser.ts';
+import { getLastPath, triggerUtmRegistration, urlToId } from '../../lib/browser.ts';
 
 type LinkedInButtonProps = {
   isDisabled?: boolean;
@@ -40,10 +38,12 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
+    const lastPageBeforeLinkedIn = localStorage.getItem(LINKEDIN_LAST_PAGE);
+
     httpGet<{ token: string; isNewUser: boolean }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-callback${
         window.location.search
-      }`,
+      }&src=${urlToId(lastPageBeforeLinkedIn || getLastPath() || window.location.pathname)}`,
     )
       .then(({ response, error }) => {
         if (!response?.token) {
@@ -58,7 +58,6 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
         let redirectUrl = new URL('/', window.location.origin);
         const linkedInRedirectAt = localStorage.getItem(LINKEDIN_REDIRECT_AT);
-        const lastPageBeforeLinkedIn = localStorage.getItem(LINKEDIN_LAST_PAGE);
 
         // If the social redirect is there and less than 30 seconds old
         // redirect to the page that user was on before they clicked the github login button
@@ -131,7 +130,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
             '/respond-invite',
             '/befriend',
             '/r',
-            '/ai',
+            '/ai-roadmaps',
           ].includes(window.location.pathname)
             ? window.location.pathname + window.location.search
             : window.location.pathname;
@@ -153,7 +152,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
     <>
       <button
         className={cn(
-          'inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none hover:border-gray-400 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
+          'inline-flex h-10 w-full items-center justify-center gap-2 rounded-sm border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-hidden hover:border-gray-400 focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60',
           className,
         )}
         disabled={isLoading || isDisabled}

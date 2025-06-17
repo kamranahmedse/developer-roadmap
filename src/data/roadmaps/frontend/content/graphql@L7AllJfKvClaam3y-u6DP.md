@@ -1,6 +1,6 @@
 # Graphql
 
-GraphQL is a query language and runtime for APIs, developed by Facebook. GraphQL's flexibility and efficiency make it popular for building complex applications, especially those with diverse client requirements. It's particularly useful for mobile applications where bandwidth efficiency is crucial. While it requires a paradigm shift from REST, many developers and organizations find GraphQL's benefits outweigh the learning curve, especially for large-scale or rapidly evolving APIs.
+GraphQL, by Facebook, is a way to get data for apps. Unlike older methods, it lets apps ask for exactly the data they need, no more, no less. This is great for mobile apps where saving data is important. It's different from REST but good for big or changing APIs.
 
 Visit the following resources to learn more:
 

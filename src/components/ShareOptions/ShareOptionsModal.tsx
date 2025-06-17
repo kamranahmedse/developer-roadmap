@@ -231,7 +231,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         {!isTransferringToTeam && (
           <>
             {visibility === 'public' && (
-              <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
+              <div className="flex h-full grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
                 <Globe2 className="mb-3 h-10 w-10 text-gray-300" />
                 <p className="font-medium text-gray-500">
                   Anyone with the link can access.
@@ -239,7 +239,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
               </div>
             )}
             {visibility === 'me' && (
-              <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
+              <div className="flex h-full grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
                 <Lock className="mb-3 h-10 w-10 text-gray-300" />
                 <p className="font-medium text-gray-500">
                   Only you will be able to access.

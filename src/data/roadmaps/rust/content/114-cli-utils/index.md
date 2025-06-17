@@ -1,3 +1,0 @@
-# CLI Utilities
-
-"CLI Utils" in Rust refers to command-line interface utilities. These are tools or programs that allow users to interact with their computer's operating system via command lines, as opposed to graphical user interfaces (GUI). A CLI utility operates based on commands given by the user. In Rust, packages like clap and structopt are typically used to build such CLI tools, thanks to their capability to parse command line arguments. They provide methods to define what arguments a program accepts, handle incorrect input, generate help messages, and more - all things that make a CLI utility very useful and efficient. Rust's efficient memory management and speed make it a popular choice to build fast and reliable CLI utilities.

@@ -8,7 +8,7 @@ seo:
   description: 'Want to build a REST API in Golang? Follow our detailed tutorial to set up, code, and deploy your API with best practices and clear examples.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/build-a-rest-api-in-golang-k3zuq.jpg'
 relatedGuidesTitle: 'Other Guides'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-17
 sitemap:
@@ -105,26 +105,26 @@ package api
 import "github.com/gin-gonic/gin"
 
 type Book struct {
-  ID     uint   `json:"id" gorm:"primaryKey"`
-  Title  string `json:"title"`
-  Author string `json:"author"`
-  Year   int    `json:"year"`
+	ID     uint   `json:"id" gorm:"primaryKey"`
+	Title  string `json:"title"`
+	Author string `json:"author"`
+	Year   int    `json:"year"`
 }
 
 type JsonResponse struct {
-  Status  int    `json:"status"`
-  Message string `json:"message"`
-  Data    any    `json:"data"`
+	Status  int    `json:"status"`
+	Message string `json:"message"`
+	Data    any    `json:"data"`
 }
 
 func ResponseJSON(c *gin.Context, status int, message string, data any) {
-  response := JsonResponse{
-    Status:  status,
-    Message: message,
-    Data:    data,
-  }
+	response := JsonResponse{
+		Status:  status,
+		Message: message,
+		Data:    data,
+	}
 
-  c.JSON(status, response)
+	c.JSON(status, response)
 }
 ```
 
@@ -140,45 +140,45 @@ To create a new book handler function, create an `api/handlers.go` file that wil
 package api
 
 import (
-  "log"
-  "net/http"
-  "os"
-  "github.com/gin-gonic/gin"
-  "github.com/joho/godotenv"
-  "gorm.io/driver/postgres"
-  "gorm.io/gorm"
+	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
+	"log"
+	"net/http"
+	"os"
 )
 
 var DB *gorm.DB
 
 func InitDB() {
-  err := godotenv.Load()
-  if err != nil {
-    log.Fatal("Failed to connect to database:", err)
-  }
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Failed to connect to database:", err)
+	}
 
-  dsn := os.Getenv("DB_URL")
-  DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
-  if err != nil {
-    log.Fatal("Failed to connect to database:", err)
-  }
+	dsn := os.Getenv("DB_URL")
+	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	if err != nil {
+		log.Fatal("Failed to connect to database:", err)
+	}
 
-  // migrate the schema
-  if err := DB.AutoMigrate(&Book{}); err != nil {
-    log.Fatal("Failed to migrate schema:", err)
-  }
+	// migrate the schema
+	if err := DB.AutoMigrate(&Book{}); err != nil {
+		log.Fatal("Failed to migrate schema:", err)
+	}
 }
 
 func CreateBook(c *gin.Context) {
-  var book Book
+	var book Book
 
-  //bind the request body
-  if err := c.ShouldBindJSON(&book); err != nil {
-    ResponseJSON(c, http.StatusBadRequest, "Invalid input", nil)
-    return
-  }
-  DB.Create(&book)
-  ResponseJSON(c, http.StatusCreated, "Book created successfully", book)
+	//bind the request body
+	if err := c.ShouldBindJSON(&book); err != nil {
+		ResponseJSON(c, http.StatusBadRequest, "Invalid input", nil)
+		return
+	}
+	DB.Create(&book)
+	ResponseJSON(c, http.StatusCreated, "Book created successfully", book)
 }
 ```
 
@@ -192,9 +192,9 @@ To retrieve the list of books, create a `GetBooks` handler that uses the `DB` va
 
 ```go
 func GetBooks(c *gin.Context) {
-    var books []Book
-    DB.Find(&books)
-    ResponseJSON(c, http.StatusOK, "Books retrieved successfully", books)
+	var books []Book
+	DB.Find(&books)
+	ResponseJSON(c, http.StatusOK, "Books retrieved successfully", books)
 }
 ```
 
@@ -204,12 +204,12 @@ To retrieve a book, create a `GetBook` handler that uses the `DB` variable to ge
 
 ```go
 func GetBook(c *gin.Context) {
-    var book Book
-    if err := DB.First(&book, c.Param("id")).Error; err != nil {
-            ResponseJSON(c, http.StatusNotFound, "Book not found", nil)
-            return
-        }
-        ResponseJSON(c, http.StatusOK, "Book retrieved successfully", book)
+	var book Book
+	if err := DB.First(&book, c.Param("id")).Error; err != nil {
+		ResponseJSON(c, http.StatusNotFound, "Book not found", nil)
+		return
+	}
+	ResponseJSON(c, http.StatusOK, "Book retrieved successfully", book)
 }
 ```
 
@@ -219,20 +219,20 @@ To update a book, create an `UpdateBook` handler that uses the `DB` variable to 
 
 ```go
 func UpdateBook(c *gin.Context) {
-  var book Book
-  if err := DB.First(&book, c.Param("id")).Error; err != nil {
-    ResponseJSON(c, http.StatusNotFound, "Book not found", nil)
-      return
-  }
+	var book Book
+	if err := DB.First(&book, c.Param("id")).Error; err != nil {
+		ResponseJSON(c, http.StatusNotFound, "Book not found", nil)
+		return
+	}
 
-  // bind the request body
-  if err := c.ShouldBindJSON(&book); err != nil {
-    ResponseJSON(c, http.StatusBadRequest, "Invalid input", nil)
-    return
-  }
+	// bind the request body
+	if err := c.ShouldBindJSON(&book); err != nil {
+		ResponseJSON(c, http.StatusBadRequest, "Invalid input", nil)
+		return
+	}
 
-  DB.Save(&book)
-  ResponseJSON(c, http.StatusOK, "Book updated successfully", book)
+	DB.Save(&book)
+	ResponseJSON(c, http.StatusOK, "Book updated successfully", book)
 }
 ```
 
@@ -242,13 +242,13 @@ To delete a book, create a `DeleteBook` handler that uses the `DB` variable to g
 
 ```go
 func DeleteBook(c *gin.Context) {
-    var book Book
-    if err := DB.Delete(&book, c.Param("id")).Error; err != nil {
-        ResponseJSON(c, http.StatusNotFound, "Book not found", nil)
-            return
-        }
-        ResponseJSON(c, http.StatusOK, "Book deleted successfully", nil)
-    }
+	var book Book
+	if err := DB.Delete(&book, c.Param("id")).Error; err != nil {
+		ResponseJSON(c, http.StatusNotFound, "Book not found", nil)
+		return
+	}
+	ResponseJSON(c, http.StatusOK, "Book deleted successfully", nil)
+}
 ```
 
 ### Putting it all together
@@ -259,22 +259,22 @@ With the handlers set up, you need to create the application entry point and spe
 package main
 
 import (
-    "go_book_api/api"
-    "github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
+	"go_book_api/api"
 )
 
 func main() {
-  api.InitDB()
-  r := gin.Default()
+	api.InitDB()
+	r := gin.Default()
 
-  //routes
-  r.POST("/book", api.CreateBook)
-  r.GET("/books", api.GetBooks)
-  r.GET("/book/:id", api.GetBook)
-  r.PUT("/book/:id", api.UpdateBook)
-  r.DELETE("/book/:id", api.DeleteBook)
+	//routes
+	r.POST("/book", api.CreateBook)
+	r.GET("/books", api.GetBooks)
+	r.GET("/book/:id", api.GetBook)
+	r.PUT("/book/:id", api.UpdateBook)
+	r.DELETE("/book/:id", api.DeleteBook)
 
-  r.Run(":8080")
+	r.Run(":8080")
 }
 ```
 
@@ -366,31 +366,31 @@ Go comes with a testing package that makes it easy to write unit tests, integrat
 package tests
 
 import (
-  "bytes"
-  "encoding/json"
-  "go_book_api/api"
-  "net/http"
-  "net/http/httptest"
-  "strconv"
-  "testing"
-  "github.com/gin-gonic/gin"
-  "gorm.io/driver/sqlite"
-  "gorm.io/gorm"
+	"bytes"
+	"encoding/json"
+	"github.com/gin-gonic/gin"
+	"go_book_api/api"
+	"gorm.io/driver/sqlite"
+	"gorm.io/gorm"
+	"net/http"
+	"net/http/httptest"
+	"strconv"
+	"testing"
 )
 
 func setupTestDB() {
-  var err error
-  api.DB, err = gorm.Open(sqlite.Open(":memory:"), &gorm.Config{})
-  if err != nil {
-    panic("failed to connect test database")
-  }
-  api.DB.AutoMigrate(&api.Book{})
+	var err error
+	api.DB, err = gorm.Open(sqlite.Open(":memory:"), &gorm.Config{})
+	if err != nil {
+		panic("failed to connect test database")
+	}
+	api.DB.AutoMigrate(&api.Book{})
 }
 
 func addBook() api.Book {
-  book := api.Book{Title: "Go Programming", Author: "John Doe", Year: 2023}
-  api.DB.Create(&book)
-  return book
+	book := api.Book{Title: "Go Programming", Author: "John Doe", Year: 2023}
+	api.DB.Create(&book)
+	return book
 }
 ```
 
@@ -404,29 +404,29 @@ Create a `TestCreateBook` test function that sets up a mock HTTP server using Gi
 
 ```go
 func TestCreateBook(t *testing.T) {
-  setupTestDB()
-  router := gin.Default()
-  router.POST("/book", api.CreateBook)
+	setupTestDB()
+	router := gin.Default()
+	router.POST("/book", api.CreateBook)
 
-  book := api.Book{
-    Title: "Demo Book name", Author: "Demo Author name", Year: 2021,
-  }
+	book := api.Book{
+		Title: "Demo Book name", Author: "Demo Author name", Year: 2021,
+	}
 
-  jsonValue, _ := json.Marshal(book)
-  req, _ := http.NewRequest("POST", "/book", bytes.NewBuffer(jsonValue))
+	jsonValue, _ := json.Marshal(book)
+	req, _ := http.NewRequest("POST", "/book", bytes.NewBuffer(jsonValue))
 
-  w := httptest.NewRecorder()
-  router.ServeHTTP(w, req)
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
 
-  if status := w.Code; status != http.StatusCreated {
-    t.Errorf("Expected status %d, got %d", http.StatusCreated, status)
-  }
-  var response api.JsonResponse
-  json.NewDecoder(w.Body).Decode(&response)
+	if status := w.Code; status != http.StatusCreated {
+		t.Errorf("Expected status %d, got %d", http.StatusCreated, status)
+	}
+	var response api.JsonResponse
+	json.NewDecoder(w.Body).Decode(&response)
 
-  if response.Data == nil {
-    t.Errorf("Expected book data, got nil")
-  }
+	if response.Data == nil {
+		t.Errorf("Expected book data, got nil")
+	}
 }
 ```
 
@@ -436,25 +436,25 @@ Similar to the `TestCreateBook` test function, create a `TestGetBooks` that test
 
 ```go
 func TestGetBooks(t *testing.T) {
-  setupTestDB()
-  addBook()
-  router := gin.Default()
-  router.GET("/books", api.GetBooks)
+	setupTestDB()
+	addBook()
+	router := gin.Default()
+	router.GET("/books", api.GetBooks)
 
-  req, _ := http.NewRequest("GET", "/books", nil)
-  w := httptest.NewRecorder()
-  router.ServeHTTP(w, req)
+	req, _ := http.NewRequest("GET", "/books", nil)
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
 
-  if status := w.Code; status != http.StatusOK {
-    t.Errorf("Expected status %d, got %d", http.StatusOK, status)
-  }
+	if status := w.Code; status != http.StatusOK {
+		t.Errorf("Expected status %d, got %d", http.StatusOK, status)
+	}
 
-  var response api.JsonResponse
-  json.NewDecoder(w.Body).Decode(&response)
+	var response api.JsonResponse
+	json.NewDecoder(w.Body).Decode(&response)
 
-  if len(response.Data.([]interface{})) == 0 {
-    t.Errorf("Expected non-empty books list")
-  }
+	if len(response.Data.([]interface{})) == 0 {
+		t.Errorf("Expected non-empty books list")
+	}
 }
 ```
 
@@ -464,25 +464,25 @@ Create a `TestGetBook` test function that tests the `GetBook` handler functional
 
 ```go
 func TestGetBook(t *testing.T) {
-  setupTestDB()
-  book := addBook()
-  router := gin.Default()
-  router.GET("/book/:id", api.GetBook)
+	setupTestDB()
+	book := addBook()
+	router := gin.Default()
+	router.GET("/book/:id", api.GetBook)
 
-  req, _ := http.NewRequest("GET", "/book/"+strconv.Itoa(int(book.ID)), nil)
-  w := httptest.NewRecorder()
-  router.ServeHTTP(w, req)
+	req, _ := http.NewRequest("GET", "/book/"+strconv.Itoa(int(book.ID)), nil)
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
 
-  if status := w.Code; status != http.StatusOK {
-    t.Errorf("Expected status %d, got %d", http.StatusOK, status)
-  }
+	if status := w.Code; status != http.StatusOK {
+		t.Errorf("Expected status %d, got %d", http.StatusOK, status)
+	}
 
-  var response api.JsonResponse
-  json.NewDecoder(w.Body).Decode(&response)
+	var response api.JsonResponse
+	json.NewDecoder(w.Body).Decode(&response)
 
-  if response.Data == nil || response.Data.(map[string]interface{})["id"] != float64(book.ID) {
-    t.Errorf("Expected book ID %d, got nil or wrong ID", book.ID)
-  }
+	if response.Data == nil || response.Data.(map[string]interface{})["id"] != float64(book.ID) {
+		t.Errorf("Expected book ID %d, got nil or wrong ID", book.ID)
+	}
 }
 ```
 
@@ -492,30 +492,30 @@ Create a `TestUpdateBook` test function that tests the `UpdateBook` handler func
 
 ```go
 func TestUpdateBook(t *testing.T) {
-  setupTestDB()
-  book := addBook()
-  router := gin.Default()
-  router.PUT("/book/:id", api.UpdateBook)
+	setupTestDB()
+	book := addBook()
+	router := gin.Default()
+	router.PUT("/book/:id", api.UpdateBook)
 
-  updateBook := api.Book{
-    Title: "Advanced Go Programming", Author: "Demo Author name", Year: 2021,
-  }
-  jsonValue, _ := json.Marshal(updateBook)
+	updateBook := api.Book{
+		Title: "Advanced Go Programming", Author: "Demo Author name", Year: 2021,
+	}
+	jsonValue, _ := json.Marshal(updateBook)
 
-  req, _ := http.NewRequest("PUT", "/book/"+strconv.Itoa(int(book.ID)), bytes.NewBuffer(jsonValue))
-  w := httptest.NewRecorder()
-  router.ServeHTTP(w, req)
+	req, _ := http.NewRequest("PUT", "/book/"+strconv.Itoa(int(book.ID)), bytes.NewBuffer(jsonValue))
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
 
-  if status := w.Code; status != http.StatusOK {
-    t.Errorf("Expected status %d, got %d", http.StatusOK, status)
-  }
+	if status := w.Code; status != http.StatusOK {
+		t.Errorf("Expected status %d, got %d", http.StatusOK, status)
+	}
 
-  var response api.JsonResponse
-  json.NewDecoder(w.Body).Decode(&response)
+	var response api.JsonResponse
+	json.NewDecoder(w.Body).Decode(&response)
 
-  if response.Data == nil || response.Data.(map[string]interface{})["title"] != "Advanced Go Programming" {
-    t.Errorf("Expected updated book title 'Advanced Go Programming', got %v", response.Data)
-  }
+	if response.Data == nil || response.Data.(map[string]interface{})["title"] != "Advanced Go Programming" {
+		t.Errorf("Expected updated book title 'Advanced Go Programming', got %v", response.Data)
+	}
 }
 ```
 
@@ -525,32 +525,32 @@ Create a `TestDeleteBook` test function that tests the `DeleteBook` handler func
 
 ```go
 func TestDeleteBook(t *testing.T) {
-  setupTestDB()
-  book := addBook()
-  router := gin.Default()
-  router.DELETE("/book/:id", api.DeleteBook)
+	setupTestDB()
+	book := addBook()
+	router := gin.Default()
+	router.DELETE("/book/:id", api.DeleteBook)
 
-  req, _ := http.NewRequest("DELETE", "/book/"+strconv.Itoa(int(book.ID)), nil)
-  w := httptest.NewRecorder()
-  router.ServeHTTP(w, req)
+	req, _ := http.NewRequest("DELETE", "/book/"+strconv.Itoa(int(book.ID)), nil)
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
 
-  if status := w.Code; status != http.StatusOK {
-    t.Errorf("Expected status %d, got %d", http.StatusOK, status)
-  }
+	if status := w.Code; status != http.StatusOK {
+		t.Errorf("Expected status %d, got %d", http.StatusOK, status)
+	}
 
-  var response api.JsonResponse
-  json.NewDecoder(w.Body).Decode(&response)
+	var response api.JsonResponse
+	json.NewDecoder(w.Body).Decode(&response)
 
-  if response.Message != "Book deleted successfully" {
-    t.Errorf("Expected delete message 'Book deleted successfully', got %v", response.Message)
-  }
+	if response.Message != "Book deleted successfully" {
+		t.Errorf("Expected delete message 'Book deleted successfully', got %v", response.Message)
+	}
 
-  //verify that the book was deleted
-  var deletedBook api.Book
-  result := api.DB.First(&deletedBook, book.ID)
-  if result.Error == nil {
-    t.Errorf("Expected book to be deleted, but it still exists")
-  }
+	//verify that the book was deleted
+	var deletedBook api.Book
+	result := api.DB.First(&deletedBook, book.ID)
+	if result.Error == nil {
+		t.Errorf("Expected book to be deleted, but it still exists")
+	}
 }
 ```
 
@@ -604,40 +604,40 @@ Next, create a `middleware.go` file inside the `api` folder and add the snippet 
 package api
 
 import (
-  "fmt"
-  "net/http"
-  "os"
-  "github.com/gin-gonic/gin"
-  "github.com/golang-jwt/jwt/v5"
+	"fmt"
+	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt/v5"
+	"net/http"
+	"os"
 )
 
 // Secret key for signing JWT
 var jwtSecret = []byte(os.Getenv("SECRET_TOKEN"))
 
 func JWTAuthMiddleware() gin.HandlerFunc {
-  return func(c *gin.Context) {
-    tokenString := c.GetHeader("Authorization")
-    if tokenString == "" {
-      ResponseJSON(c, http.StatusUnauthorized, "Authorization token required", nil)
-      c.Abort()
-      return
-    }
-    // parse and validate the token
-    _, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
-      // Validate the signing method
-      if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
-        return nil, fmt.Errorf("unexpected signing method: %v", token.Header["alg"])
-      }
-      return jwtSecret, nil
-    })
-    if err != nil {
-      ResponseJSON(c, http.StatusUnauthorized, "Invalid token", nil)
-      c.Abort()
-      return
-    }
-    // Token is valid, proceed to the next handler
-    c.Next()
-  }
+	return func(c *gin.Context) {
+		tokenString := c.GetHeader("Authorization")
+		if tokenString == "" {
+			ResponseJSON(c, http.StatusUnauthorized, "Authorization token required", nil)
+			c.Abort()
+			return
+		}
+		// parse and validate the token
+		_, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
+			// Validate the signing method
+			if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
+				return nil, fmt.Errorf("unexpected signing method: %v", token.Header["alg"])
+			}
+			return jwtSecret, nil
+		})
+		if err != nil {
+			ResponseJSON(c, http.StatusUnauthorized, "Invalid token", nil)
+			c.Abort()
+			return
+		}
+		// Token is valid, proceed to the next handler
+		c.Next()
+	}
 }
 ```
 
@@ -648,33 +648,33 @@ Next, update the `handlers.go` file with a `GenerateJWT` function that generates
 ```go
 package api
 
-  import (
-    //other imports
-    "github.com/golang-jwt/jwt/v5"
-  )
+import (
+	//other imports
+	"github.com/golang-jwt/jwt/v5"
+)
 
-  func GenerateJWT(c *gin.Context)  {
-    var loginRequest LoginRequest
-    if err := c.ShouldBindJSON(&loginRequest); err != nil {
-      ResponseJSON(c, http.StatusBadRequest, "Invalid request payload", nil)
-      return
-    }
-    if loginRequest.Username != "admin" || loginRequest.Password != "password" {
-      ResponseJSON(c, http.StatusUnauthorized, "Invalid credentials", nil)
-      return
-    }
-    expirationTime := time.Now().Add(15 * time.Minute)
-    token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
-      "exp": expirationTime.Unix(),
-    })
-    // Sign the token
-    tokenString, err := token.SignedString(jwtSecret)
-    if err != nil {
-      ResponseJSON(c, http.StatusInternalServerError, "Could not generate token", nil)
-      return
-    }
-    ResponseJSON(c, http.StatusOK, "Token generated successfully", gin.H{"token": tokenString})
-  }
+func GenerateJWT(c *gin.Context) {
+	var loginRequest LoginRequest
+	if err := c.ShouldBindJSON(&loginRequest); err != nil {
+		ResponseJSON(c, http.StatusBadRequest, "Invalid request payload", nil)
+		return
+	}
+	if loginRequest.Username != "admin" || loginRequest.Password != "password" {
+		ResponseJSON(c, http.StatusUnauthorized, "Invalid credentials", nil)
+		return
+	}
+	expirationTime := time.Now().Add(15 * time.Minute)
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
+		"exp": expirationTime.Unix(),
+	})
+	// Sign the token
+	tokenString, err := token.SignedString(jwtSecret)
+	if err != nil {
+		ResponseJSON(c, http.StatusInternalServerError, "Could not generate token", nil)
+		return
+	}
+	ResponseJSON(c, http.StatusOK, "Token generated successfully", gin.H{"token": tokenString})
+}
 ```
 
 > In a real-world application, the credentials used to generate the token will be specific to users and not the default ones.
@@ -685,28 +685,28 @@ Lastly, update the `main.go` file inside the `cmd` folder to add a public route 
 package main
 
 import (
-  "go_book_api/api"
-  "github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
+	"go_book_api/api"
 )
 
 func main() {
-  api.InitDB()
-  r := gin.Default()
+	api.InitDB()
+	r := gin.Default()
 
-  // Public routes
-  r.POST("/token", api.GenerateJWT)
+	// Public routes
+	r.POST("/token", api.GenerateJWT)
 
-  // protected routes
-  protected := r.Group("/", api.JWTAuthMiddleware())
-  {
-    protected.POST("/book", api.CreateBook)
-    protected.GET("/books", api.GetBooks)
-    protected.GET("/book/:id", api.GetBook)
-    protected.PUT("/book/:id", api.UpdateBook)
-    protected.DELETE("/book/:id", api.DeleteBook)
-  }
+	// protected routes
+	protected := r.Group("/", api.JWTAuthMiddleware())
+	{
+		protected.POST("/book", api.CreateBook)
+		protected.GET("/books", api.GetBooks)
+		protected.GET("/book/:id", api.GetBook)
+		protected.PUT("/book/:id", api.UpdateBook)
+		protected.DELETE("/book/:id", api.DeleteBook)
+	}
 
-  r.Run(":8080")
+	r.Run(":8080")
 }
 ```
 
@@ -750,54 +750,54 @@ Since the API route is now protected, you also need to update the unit test to c
 package tests
 
 import (
-  // other imports
-  "github.com/golang-jwt/jwt/v5"
+	// other imports
+	"github.com/golang-jwt/jwt/v5"
 )
 
 var jwtSecret = []byte(os.Getenv("SECRET_TOKEN"))
 
 func setupTestDB() {
-  // setupTestDB goes here
+	// setupTestDB goes here
 }
 
 func addBook() api.Book {
-  // add book code goes here
+	// add book code goes here
 }
 
 func generateValidToken() string {
-  expirationTime := time.Now().Add(15 * time.Minute)
-  token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
-    "exp": expirationTime.Unix(),
-  })
-  tokenString, _ := token.SignedString(jwtSecret)
-  return tokenString
+	expirationTime := time.Now().Add(15 * time.Minute)
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
+		"exp": expirationTime.Unix(),
+	})
+	tokenString, _ := token.SignedString(jwtSecret)
+	return tokenString
 }
 
 func TestGenerateJWT(t *testing.T) {
-  router := gin.Default()
-  router.POST("/token", api.GenerateJWT)
+	router := gin.Default()
+	router.POST("/token", api.GenerateJWT)
 
-  loginRequest := map[string]string{
-    "username": "admin",
-    "password": "password",
-  }
+	loginRequest := map[string]string{
+		"username": "admin",
+		"password": "password",
+	}
 
-  jsonValue, _ := json.Marshal(loginRequest)
-  req, _ := http.NewRequest("POST", "/token", bytes.NewBuffer(jsonValue))
+	jsonValue, _ := json.Marshal(loginRequest)
+	req, _ := http.NewRequest("POST", "/token", bytes.NewBuffer(jsonValue))
 
-  w := httptest.NewRecorder()
-  router.ServeHTTP(w, req)
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
 
-  if status := w.Code; status != http.StatusOK {
-    t.Errorf("Expected status %d, got %d", http.StatusOK, status)
-  }
+	if status := w.Code; status != http.StatusOK {
+		t.Errorf("Expected status %d, got %d", http.StatusOK, status)
+	}
 
-  var response api.JsonResponse
-  json.NewDecoder(w.Body).Decode(&response)
+	var response api.JsonResponse
+	json.NewDecoder(w.Body).Decode(&response)
 
-  if response.Data == nil || response.Data.(map[string]interface{})["token"] == "" {
-    t.Errorf("Expected token in response, got nil or empty")
-  }
+	if response.Data == nil || response.Data.(map[string]interface{})["token"] == "" {
+		t.Errorf("Expected token in response, got nil or empty")
+	}
 }
 ```
 
@@ -807,34 +807,34 @@ Next, use the `generateValidToken` helper function to modify the request object 
 
 ```go
 func TestCreateBook(t *testing.T) {
-  setupTestDB()
-  router := gin.Default()
-  protected := router.Group("/", api.JWTAuthMiddleware()) // add
-  protected.POST("/book", api.CreateBook) // add
+	setupTestDB()
+	router := gin.Default()
+	protected := router.Group("/", api.JWTAuthMiddleware()) // add
+	protected.POST("/book", api.CreateBook)                 // add
 
-  token := generateValidToken() // add
+	token := generateValidToken() // add
 
-  book := api.Book{
-    Title: "Demo Book name", Author: "Demo Author name", Year: 2021,
-  }
-  jsonValue, _ := json.Marshal(book)
+	book := api.Book{
+		Title: "Demo Book name", Author: "Demo Author name", Year: 2021,
+	}
+	jsonValue, _ := json.Marshal(book)
 
-  req, _ := http.NewRequest("POST", "/book", bytes.NewBuffer(jsonValue))
-  req.Header.Set("Authorization", token) // add
+	req, _ := http.NewRequest("POST", "/book", bytes.NewBuffer(jsonValue))
+	req.Header.Set("Authorization", token) // add
 
-  w := httptest.NewRecorder()
-  router.ServeHTTP(w, req)
+	w := httptest.NewRecorder()
+	router.ServeHTTP(w, req)
 
-  if status := w.Code; status != http.StatusCreated {
-    t.Errorf("Expected status %d, got %d", http.StatusCreated, status)
-  }
+	if status := w.Code; status != http.StatusCreated {
+		t.Errorf("Expected status %d, got %d", http.StatusCreated, status)
+	}
 
-  var response api.JsonResponse
-  json.NewDecoder(w.Body).Decode(&response)
+	var response api.JsonResponse
+	json.NewDecoder(w.Body).Decode(&response)
 
-  if response.Data == nil {
-    t.Errorf("Expected book data, got nil")
-  }
+	if response.Data == nil {
+		t.Errorf("Expected book data, got nil")
+	}
 }
 ```
 
@@ -872,54 +872,55 @@ It includes functionality for creating, reading, updating, and deleting books, a
 package api
 
 import (
-  "log"
-  "net/http"
-  "os"
-  "time"
-  "github.com/gin-gonic/gin"
-  "github.com/golang-jwt/jwt/v5"
-  "github.com/joho/godotenv"
-  "gorm.io/driver/postgres"
-  "gorm.io/gorm"
+	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt/v5"
+	"github.com/joho/godotenv"
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
+	"log"
+	"net/http"
+	"os"
+	"time"
 )
+
 var DB *gorm.DB
 
 // InitDB initializes the database connection using environment variables.
 // It loads the database configuration from a .env file and migrates the Book schema.
 func InitDB() {
-  err := godotenv.Load()
-  if err != nil {
-    log.Fatal("Failed to connect to database:", err)
-  }
-  dsn := os.Getenv("DB_URL")
-  DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
-  if err != nil {
-    log.Fatal("Failed to connect to database:", err)
-  }
-  // Migrate the schema
-  if err := DB.AutoMigrate(&Book{}); err != nil {
-    log.Fatal("Failed to migrate schema:", err)
-  }
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Failed to connect to database:", err)
+	}
+	dsn := os.Getenv("DB_URL")
+	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
+	if err != nil {
+		log.Fatal("Failed to connect to database:", err)
+	}
+	// Migrate the schema
+	if err := DB.AutoMigrate(&Book{}); err != nil {
+		log.Fatal("Failed to migrate schema:", err)
+	}
 }
 
 // CreateBook handles the creation of a new book in the database.
 // It expects a JSON payload with book details and responds with the created book.
 func CreateBook(c *gin.Context) {
-  var book Book
-  if err := c.ShouldBindJSON(&book); err != nil {
-    ResponseJSON(c, http.StatusBadRequest, "Invalid input", nil)
-    return
-  }
-  DB.Create(&book)
-  ResponseJSON(c, http.StatusCreated, "Book created successfully", book)
+	var book Book
+	if err := c.ShouldBindJSON(&book); err != nil {
+		ResponseJSON(c, http.StatusBadRequest, "Invalid input", nil)
+		return
+	}
+	DB.Create(&book)
+	ResponseJSON(c, http.StatusCreated, "Book created successfully", book)
 }
 
 // GetBooks retrieves all books from the database.
 // It responds with a list of books.
 func GetBooks(c *gin.Context) {
-  var books []Book
-  DB.Find(&books)
-  ResponseJSON(c, http.StatusOK, "Books retrieved successfully", books)
+	var books []Book
+	DB.Find(&books)
+	ResponseJSON(c, http.StatusOK, "Books retrieved successfully", books)
 }
 
 // other handlers goes below

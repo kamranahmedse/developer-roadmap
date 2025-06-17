@@ -4,5 +4,6 @@
 
 Learn more from the following resources:
 
-- [@article@What is an operating system?](https://www.geeksforgeeks.org/what-is-an-operating-system/)
+- [@article@What is a Operating System?](https://en.wikipedia.org/wiki/Operating_system)
+- [@article@8 Different Types of Operating Systems With Examples](https://techspirited.com/different-types-of-operating-systems)
 - [@video@What is an operating system as fast as possible](https://www.youtube.com/watch?v=pVzRTmdd9j0)

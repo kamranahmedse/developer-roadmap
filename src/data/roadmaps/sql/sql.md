@@ -1,7 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/sql.json'
 pdfUrl: '/pdfs/roadmaps/sql.pdf'
-order: 8
+order: 0.5
 renderer: 'editor'
 briefTitle: 'SQL'
 briefDescription: 'Step by step guide to learning SQL in 2025'
@@ -9,6 +9,20 @@ title: 'SQL Roadmap'
 description: 'Step by step guide to learning SQL in 2025'
 isNew: false
 hasTopics: true
+courses:
+  - title: 'Complete Course to Master SQL'
+    description: 'Learn SQL from scratch with this comprehensive course'
+    link: 'https://roadmap.sh/courses/sql'
+    features:
+      - '55+ Lessons'
+      - 'AI Tutor'
+      - 'Coding Environment'
+      - 'Quizzes'
+      - 'Certification'
+    instructor:
+      name: 'Kamran Ahmed'
+      image: 'https://github.com/kamranahmedse.png'
+      title: 'Founder roadmap.sh'
 dimensions:
   width: 968
   height: 2270

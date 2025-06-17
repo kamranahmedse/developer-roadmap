@@ -6,5 +6,5 @@ On the other hand, **C++** follows the paradigm of both procedural and object-or
 
 Visit the following resources to learn more:
 
-- [@article@The C Programming Language](https://www.iso.org/standard/74528.html)
+- [@article@C Programming Language](https://en.wikipedia.org/wiki/C_%28programming_language%29)
 - [@article@C++ Programming Language](https://en.wikipedia.org/wiki/C%2B%2B)

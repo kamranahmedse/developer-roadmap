@@ -4,6 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@OneDrive Website](https://onedrive.live.com)
+- [@official@Microsoft OneDrive](https://onedrive.live.com)
 - [@video@Microsoft OneDrive Tutorial](https://www.youtube.com/watch?v=qgw01w0iYjA)
-

@@ -1,0 +1,3 @@
+# Troubleshooting
+
+Linux troubleshooting involves identifying and resolving system errors, hardware/software issues, network problems, and resource management challenges. Key skills include using command-line tools, inspecting log files, understanding processes, and interpreting error messages. Tools like `top` provide real-time process monitoring to identify resource-heavy processes causing performance issues efficiently.

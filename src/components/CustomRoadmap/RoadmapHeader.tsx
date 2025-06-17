@@ -196,7 +196,6 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
 
           <RoadmapHint
             roadmapTitle={title!}
-            hasTNSBanner={false}
             roadmapId={roadmapId!}
           />
         </div>

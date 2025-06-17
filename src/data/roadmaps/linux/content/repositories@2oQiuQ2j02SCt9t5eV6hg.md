@@ -1,0 +1,3 @@
+# Repositories
+
+Repositories are storage locations containing collections of software packages for Linux distributions. They store thousands of compiled packages specific to each distribution (.deb for Debian/Ubuntu, .rpm for Fedora/CentOS). Repositories ensure secure, tested software with proper dependencies. Update commands: `sudo apt update` (Ubuntu), `sudo yum update` (CentOS/Fedora). Essential for secure software management.

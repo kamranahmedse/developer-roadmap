@@ -1,3 +1,0 @@
-# Asynchronous Programming
-
-Async programming, short for asynchronous programming, in Rust allows the execution of tasks concurrently instead of sequentially. This means that you don't have to wait for a function to complete all its tasks before another function starts executing. As Rust is a systems programming language and is quite close to the hardware, async programming can provide efficient usage of resources, especially in IO-heavy applications. To facilitate async programming, `async` and `await` were introduced into Rust. `async` annotifies a function is asynchronous and can return `Future`, while `await` is used to pause and resume an `async` function. To manage tasks efficiently, Rust also provides async runtimes such as Tokio and async-std.

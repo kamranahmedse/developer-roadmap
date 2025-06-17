@@ -9,7 +9,7 @@ seo:
   ogImageUrl: 'https://assets.roadmap.sh/guest/become-a-full-stack-developer-54s51.jpg'
 relatedTitle: 'Other Guides'
 relatedGuidesId: full-stack
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-02-04
 sitemap:

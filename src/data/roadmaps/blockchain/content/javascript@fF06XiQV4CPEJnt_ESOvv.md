@@ -8,5 +8,6 @@ Visit the following resources to learn more:
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
 - [@article@Eloquent Javascript - Book](https://eloquentjavascript.net/)
 - [@opensource@You Dont Know JS Yet](https://github.com/getify/You-Dont-Know-JS)
-- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)- [@video@Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
+- [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
+- [@video@Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

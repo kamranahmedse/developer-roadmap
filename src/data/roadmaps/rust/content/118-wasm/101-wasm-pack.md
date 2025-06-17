@@ -1,3 +1,0 @@
-# wasm-pack
-
-`wasm-pack` is a command line tool aimed at assembling and packaging Rust crates that target WebAssembly. It helps to bridge the gap between WebAssembly (written in Rust) and JavaScript. It generates necessary files for publishing a package to `npm`. `wasm-pack` also helps to make sure your rust code is set up correctly to get compiled to `wasm`. The tool aims to seamlessly have packages that work out-of-the-box in most JavaScript environments. `wasm-pack` was designed with a focus on ergonomics, performance, and correctness so as to make a developer's life easier.

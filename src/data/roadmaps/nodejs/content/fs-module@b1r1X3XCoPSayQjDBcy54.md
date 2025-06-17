@@ -4,6 +4,6 @@ File System or `fs` module is a built in module in Node that enables interacting
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation](https://nodejs.org/api/fs.html)
+- [@official@fs module](https://nodejs.org/api/fs.html)
 - [@article@More about fs module](https://www.w3schools.com/nodejs/nodejs_filesystem.asp)
 - [@video@Using fs](https://www.youtube.com/watch?v=ZySsdm576wE)

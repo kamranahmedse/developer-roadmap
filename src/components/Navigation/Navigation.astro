@@ -5,9 +5,8 @@ import { NavigationDropdown } from '../NavigationDropdown';
 import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu';
 import { AccountDropdown } from './AccountDropdown';
 import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
+import { Fragment } from 'react';
 ---
-
-<CourseAnnouncement client:load />
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
   <nav class='container flex items-center justify-between'>
@@ -21,20 +20,10 @@ import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
       </a>
 
       <a
-        href='/teams'
-        class='group relative inline text-blue-300 hover:text-white sm:hidden'
+        href='/ai'
+        class='group relative inline text-gray-400 hover:text-white sm:hidden'
       >
-        Teams
-
-        <span class='absolute -right-[11px] top-0'>
-          <span class='relative flex h-2 w-2'>
-            <span
-              class='absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75'
-            ></span>
-            <span class='relative inline-flex h-2 w-2 rounded-full bg-sky-500'
-            ></span>
-          </span>
-        </span>
+        AI Tutor
       </a>
 
       <!-- Desktop navigation items -->
@@ -44,15 +33,11 @@ import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
           Start Here
         </a>
         <RoadmapDropdownMenu client:load />
-        <a href='/teams' class='group relative text-gray-400 hover:text-white'>
-          Teams
-        </a>
         <a
-          href='/changelog'
-          class='group relative ml-0.5 hidden text-blue-300 hover:text-white md:block'
+          href='/ai'
+          class='group relative mr-3 text-blue-300 hover:text-white'
         >
-          Changelog
-
+          AI Tutor
           <span class='absolute -right-[11px] top-0'>
             <span class='relative flex h-2 w-2'>
               <span
@@ -62,6 +47,12 @@ import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
               ></span>
             </span>
           </span>
+        </a>
+        <a
+          href='/teams'
+          class='group relative hidden text-gray-400 hover:text-white xl:block'
+        >
+          Teams
         </a>
       </div>
     </div>
@@ -76,7 +67,7 @@ import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
 
         <a
           data-guest-required
-          class='flex hidden h-8 w-28 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-4 py-2 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
+          class='flex hidden h-8 w-28 cursor-pointer items-center justify-center rounded-full bg-linear-to-r from-blue-500 to-blue-700 px-4 py-2 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
           href='/signup'
         >
           <span>Sign Up</span>

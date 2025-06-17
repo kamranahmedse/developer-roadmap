@@ -2,7 +2,7 @@ name: Clears Frontend Cloudfront Cache
 on:
   workflow_dispatch:
 jobs:
-  aws_costs:
+  cloudfront_fe_cache:
     runs-on: ubuntu-latest
     steps:
       - name: Clear Cloudfront Caching

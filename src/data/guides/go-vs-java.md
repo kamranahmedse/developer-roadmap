@@ -8,7 +8,7 @@ seo:
   description: 'Comparing Go vs Java for your projects? Explore features like concurrency, memory management, and learning curves to find the right fit for your needs.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/go-vs-java-fo08l.jpg'
 relatedGuidesTitle: 'Other Guides'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-02-04
 sitemap:
@@ -104,16 +104,16 @@ Go and Java are powerful languages with distinct approaches to handling errors. 
 
 ```go
 func divide(a, b int) (int, error) {
-    if b == 0 {
-        return 0, errors.New("division by zero")
-    }
-    return a / b, nil
+	if b == 0 {
+		return 0, errors.New("division by zero")
+	}
+	return a / b, nil
 }
 
 // Usage
 result, err := divide(10, 0)
 if err != nil {
-    log.Fatal(err)
+	log.Fatal(err)
 }
 ```
 

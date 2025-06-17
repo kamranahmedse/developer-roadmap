@@ -1,6 +1,6 @@
 # Sass
 
-Sass (Syntactically Awesome Style Sheets) is a mature, stable, and powerful professional-grade CSS extension language. It extends CSS with features like variables, nested rules, mixins, inline imports, and more, all with fully CSS-compatible syntax. Sass allows for more organized, maintainable, and reusable styles in complex projects. It compiles to clean, standard CSS, supporting two syntaxes: the original indented syntax and the more popular SCSS (Sassy CSS) syntax. Sass provides functionality like control directives for libraries, making it easier to write well-structured, scalable CSS. Its features help reduce repetition in CSS and save time, making it a popular choice among frontend developers for managing large, complex stylesheets.
+Sass (Syntactically Awesome Style Sheets) is a tool that makes writing CSS easier and more powerful. It adds features like variables (to store colors or sizes), nested rules (to organize your styles better), and mixins (to reuse styles). This helps keep your CSS neat and easy to manage, especially in big projects. Sass code gets turned into regular CSS that browsers can understand. It has two ways of writing: the original indented style and the more common SCSS style. Sass is popular because it saves time and makes CSS less repetitive.
 
 Visit the following resources to learn more:
 

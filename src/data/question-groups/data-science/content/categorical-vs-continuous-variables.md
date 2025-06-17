@@ -1,0 +1,5 @@
+A categorical variable is a column with fixed options based on qualities or labels like gender, age group, or education level. You can't do math on them directly, so during preprocessing, I usually apply one-hot encoding to turn those categories into binary columns the model can understand.
+
+![Categorical vs. continuous variables](https://assets.roadmap.sh/guest/categorical-variable-vs-continuous-variable-m1qz5.png)
+
+A continuous variable, on the other hand, can take on any value within a range like height, temperature, or speed. These are numeric, so you can run calculations on them. But before feeding them into a model, I scale them using normalization or standardization to keep all features on a similar range. This prevents one feature from overpowering the rest just because it has larger numbers.

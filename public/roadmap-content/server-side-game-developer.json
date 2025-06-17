@@ -61,28 +61,88 @@
   },
   "1GML0Jsfdb1Fn-0PNryiQ": {
     "title": "Congestion Control",
-    "description": "",
-    "links": []
+    "description": "**Congestion control** is a fundamental mechanism in `TCP` that prevents excessive data transmission from overwhelming the network, ensuring stable and efficient communication. In server-side game development, congestion control helps maintain smooth gameplay by dynamically adjusting the data flow based on network conditions. `TCP` employs various congestion control algorithms, such as `Reno`, `CUBIC`, and `BBR`, to detect congestion and reduce packet loss. These algorithms regulate the senders transmission rate using strategies like slow start, congestion avoidance, and fast recovery. Proper tuning of congestion control mechanisms is critical for minimizing lag, preventing packet drops, and optimizing multiplayer game performance, especially in high-traffic scenarios.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Congestion Control in Linux TCP",
+        "url": "https://www.usenix.org/conference/2002-usenix-annual-technical-conference/congestion-control-linux-tcp",
+        "type": "article"
+      }
+    ]
   },
   "X2KHWgQZDHSVDsTRMUwSj": {
     "title": "Reliable Transmission",
-    "description": "",
-    "links": []
+    "description": "**Reliable transmission** ensures that data sent over a network reaches its destination accurately and in the correct order, a critical requirement for server-side game development. `TCP` achieves this through mechanisms like acknowledgments (ACKs), sequence numbers, and retransmission strategies. When a packet is lost or corrupted, `TCP` retransmits it using algorithms such as automatic repeat request (ARQ) and fast retransmit. Additionally, flow control and congestion control work together to prevent data loss due to network congestion. Reliable transmission is essential for maintaining synchronization in multiplayer games, preventing desynchronization issues, and ensuring a smooth gaming experience.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Reliable Transmission",
+        "url": "https://book.systemsapproach.org/direct/reliable.html",
+        "type": "article"
+      },
+      {
+        "title": "TCP Reliable Transmission (IETF RFC 793)",
+        "url": "https://datatracker.ietf.org/doc/html/rfc793",
+        "type": "article"
+      }
+    ]
   },
   "lDVD-3i64Mk7-KPJrXmFH": {
     "title": "Flow Control",
-    "description": "",
-    "links": []
+    "description": "**Flow control** is a crucial mechanism in `TCP` that regulates data transmission between a sender and a receiver to prevent network congestion and packet loss. In server-side game development, effective flow control ensures smooth data transfer, reducing latency and improving real-time responsiveness for multiplayer games. `TCP` uses techniques like sliding window protocols, where the receiver dictates how much data it can handle at a time, preventing buffer overflows. Additionally, congestion control algorithms like `TCP Reno` and `CUBIC` help dynamically adjust transmission rates based on network conditions. Proper flow control tuning is essential for maintaining stable connections, minimizing lag, and optimizing server performance in high-traffic gaming environments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How Flow Control is Achieved in TCP?",
+        "url": "https://datatracker.ietf.org/doc/html/rfc5681",
+        "type": "article"
+      },
+      {
+        "title": "Flow Control vs. Congestion Control in TCP",
+        "url": "https://www.baeldung.com/cs/tcp-flow-control-vs-congestion-control",
+        "type": "article"
+      },
+      {
+        "title": "TCP Flow Control",
+        "url": "https://www.sanfoundry.com/computer-network-tcp-flow-control/",
+        "type": "article"
+      }
+    ]
   },
   "vFM311xSa5OqNVove2f6j": {
     "title": "Error Detection",
-    "description": "",
-    "links": []
+    "description": "**Error detection** ensures data integrity in `TCP-based` communication, preventing corrupted or altered packets from disrupting server-side game interactions. `TCP` uses checksums to verify data integrity, detecting bit errors during transmission. If an error is found, the corrupted packet is discarded, and retransmission is requested via acknowledgments (ACKs). Additional mechanisms such as cyclic redundancy check (CRC) and parity checks may be used in lower network layers to enhance reliability. Effective error detection minimizes data corruption in multiplayer games, ensuring smooth gameplay and synchronization across players.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Error Detection Code – Checksum",
+        "url": "https://www.geeksforgeeks.org/error-detection-code-checksum/",
+        "type": "article"
+      },
+      {
+        "title": "Error Control in TCP",
+        "url": "https://www.cisco.com/c/en/us/support/docs/ip/tcp/13733-40.html",
+        "type": "article"
+      }
+    ]
   },
   "w6ysmcsBn9jJ8xMvg7hcD": {
     "title": "Max Segment Size",
-    "description": "",
-    "links": []
+    "description": "**Max Segment Size (MSS)** is a crucial concept in `TCP` networking, representing the largest amount of data that can be sent in a single `TCP` segment, excluding the `TCP` header. `MSS` is vital for optimizing performance in server-side game development, as it helps to avoid fragmentation and ensures that data is transmitted efficiently over the network. By adjusting the `MSS`, game servers can minimize packet fragmentation, which can lead to increased latency and reduced throughput. Typically, `MSS` is determined during the `TCP` handshake based on the maximum transmission unit (MTU) of the network, and it can be configured to suit the needs of specific applications or networks. Optimizing `MSS` can improve the overall reliability and performance of data transfers, especially in multiplayer games where real-time communication and high throughput are essential.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "RFC 879 - Maximum Segment Size",
+        "url": "https://tools.ietf.org/html/rfc879",
+        "type": "article"
+      },
+      {
+        "title": "What is MSS (maximum segment size)?",
+        "url": "https://www.cloudflare.com/learning/network-layer/what-is-mss/",
+        "type": "article"
+      },
+      {
+        "title": "TCP Maximum Segment Size tuning",
+        "url": "https://www.ibm.com/docs/en/aix/7.2?topic=tuning-tcp-maximum-segment-size",
+        "type": "article"
+      }
+    ]
   },
   "MwLWDlciJOq_0n5S3GoF-": {
     "title": "Vulnerability",
@@ -257,7 +317,18 @@
   "E4H3hniIW6hKpH3Qr--N5": {
     "title": "C/C++",
     "description": "\"C\" and \"C++\", often written as \"C/CPP\", are two significantly prominent and similar programming languages widely used in server-side game development. \"C\" is a procedural language, which means that it follows a step-by-step procedure to solve a problem, while \"C++\" is both a procedural and object-oriented programming (OOP) language. This dual nature of \"C++\" allows it to handle more complex interrelated data and functions efficiently, which is a beneficial feature in game development. Moreover, \"C++\" is an extension of \"C\", meaning that any legal \"C\" program is also a valid \"C++\" program. Both languages offer a high degree of control over system resources and memory, making them an excellent choice for building fast and efficient server-side applications, such as multiplayer game servers.",
-    "links": []
+    "links": [
+      {
+        "title": "C Programming Language",
+        "url": "https://en.wikipedia.org/wiki/C_%28programming_language%29",
+        "type": "article"
+      },
+      {
+        "title": "C++ Programming Language",
+        "url": "https://en.wikipedia.org/wiki/C%2B%2B",
+        "type": "article"
+      }
+    ]
   },
   "DuyUc9a-47Uz03yr4aeyg": {
     "title": "C#",
@@ -376,8 +447,14 @@
   },
   "DYvzGc_r0SlOArPPc1gNI": {
     "title": "Semaphore",
-    "description": "",
-    "links": []
+    "description": "**Semaphores** are crucial synchronization mechanisms in server-side game development, ensuring controlled access to shared resources and preventing race conditions. They are widely used for managing concurrent processes, such as limiting the number of active players in a session, regulating access to database connections, and synchronizing threads in physics or AI computations. By using semaphores, developers can optimize performance by preventing resource starvation and contention. Implementing them correctly requires careful handling to avoid deadlocks and ensure efficient thread scheduling. Commonly used in conjunction with mutexes and condition variables, semaphores help maintain stability in high-performance multiplayer environments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Semaphores in Process Synchronization",
+        "url": "https://www.geeksforgeeks.org/semaphores-in-process-synchronization/",
+        "type": "article"
+      }
+    ]
   },
   "zbIbPlqTNSbJUkqH9iLQv": {
     "title": "Future & Promises",
@@ -386,13 +463,40 @@
   },
   "o0Y_hM0KXUApfsXG4PvOY": {
     "title": "Coroutine",
-    "description": "",
-    "links": []
+    "description": "**Coroutines** are lightweight, cooperative multitasking constructs that enable efficient asynchronous programming in server-side game development. Unlike traditional threads, coroutines allow functions to be paused and resumed without blocking the entire execution thread, making them ideal for handling game logic, networking, and AI behavior with minimal overhead. They work seamlessly with future & promise mechanisms, simplifying concurrency management by avoiding callback hell and reducing synchronization complexity. Coroutines are widely supported in modern languages like C++ (via `std::coroutine`), Python (`asyncio`), and Kotlin, offering game developers an efficient way to write non-blocking code while maintaining readability and performance.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "C++ Coroutines (cppreference)",
+        "url": "https://en.cppreference.com/w/cpp/language/coroutines",
+        "type": "article"
+      },
+      {
+        "title": "Python Coroutines and Tasks",
+        "url": "https://docs.python.org/3/library/asyncio-task.html",
+        "type": "article"
+      }
+    ]
   },
   "SXOEMkcVYBsRza6BPmmwy": {
     "title": "Channel",
-    "description": "",
-    "links": []
+    "description": "A **channel** is a synchronization primitive used to communicate between concurrent tasks or threads, particularly in asynchronous programming. In server-side game development, channels are frequently used to manage data flow between different components, such as game logic, network communication, and I/O operations. `Channels` provide a thread-safe way to pass messages or data between coroutines or threads without the need for complex locks, reducing the chances of race conditions. This makes them ideal for handling tasks like event propagation, message passing, or coordinating actions in multiplayer game servers. `Channels` often work in conjunction with futures and promises to efficiently manage concurrency and improve overall game performance.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Go Channel Documentation",
+        "url": "https://golang.org/doc/effective_go.html#channels",
+        "type": "article"
+      },
+      {
+        "title": "Rust Channels for Concurrency",
+        "url": "https://doc.rust-lang.org/book/ch16-02-message-passing.html",
+        "type": "article"
+      },
+      {
+        "title": "Comprehensive Guide to Channel",
+        "url": "https://elixir-lang.org/getting-started/processes.html#using-processes-and-messages",
+        "type": "article"
+      }
+    ]
   },
   "xR6pERldq4wPl9GVLHAhT": {
     "title": "Condition Variable",
@@ -586,23 +690,67 @@
   },
   "5-5toy2CblZPCV9d5QPEo": {
     "title": "select",
-    "description": "",
-    "links": []
+    "description": "**select** is a multiplexing system call in Linux used for monitoring multiple file descriptors to check if they are ready for I/O operations. It is commonly used in server-side game development for handling multiple connections asynchronously. However, `select` has limitations, as it scans all file descriptors linearly, making it inefficient for handling a large number of concurrent connections. Despite its drawbacks, it remains useful for simpler applications or legacy systems. Modern alternatives like `epoll` or `kqueue` offer better performance and scalability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Linux select API",
+        "url": "https://man7.org/linux/man-pages/man2/select.2.html",
+        "type": "article"
+      },
+      {
+        "title": "select vs epoll vs poll",
+        "url": "https://devarea.com/linux-io-multiplexing-select-vs-poll-vs-epoll/",
+        "type": "article"
+      }
+    ]
   },
   "D9Yeyn8phDhB1ohMWccgr": {
     "title": "WSA Poll",
-    "description": "",
-    "links": []
+    "description": "**WSA-Poll** is a Windows-specific alternative to `poll`, used for monitoring multiple sockets for readiness in non-blocking network applications. It is commonly utilized in server-side game development to handle multiple client connections efficiently. Unlike `select`, `WSA-Poll` eliminates the limitation of FD\\_SETSIZE, allowing it to scale better for a larger number of connections. However, it is generally less efficient than `epoll` on Linux due to its linear scanning mechanism. For high-performance game servers on Windows, IOCP (I/O Completion Ports) is often preferred over `WSA-Poll`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Microsoft WSA-Poll Documentation",
+        "url": "https://learn.microsoft.com/en-us/windows/win32/api/winsock2/nf-winsock2-wsapoll",
+        "type": "article"
+      }
+    ]
   },
   "qaWv4gxnnj3uX8lEm9KQ4": {
     "title": "epoll",
-    "description": "",
-    "links": []
+    "description": "**epoll** is a high-performance I/O event notification system in Linux, essential for handling large-scale asynchronous network operations in server-side game development. Unlike `select` or `poll`, it uses an event-driven model, reducing CPU overhead and improving scalability. Game servers leverage `epoll` to efficiently manage thousands of concurrent connections, responding only when events occur, minimizing system calls, and optimizing resource usage—making it ideal for multiplayer games and real-time applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Linux epoll API",
+        "url": "https://man7.org/linux/man-pages/man7/epoll.7.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding epoll for Scalable Network Servers",
+        "url": "https://medium.com/@copyconstruct/the-method-to-epolls-madness-d9d2d6378642",
+        "type": "article"
+      },
+      {
+        "title": "epoll vs select vs poll",
+        "url": "https://devarea.com/linux-io-multiplexing-select-vs-poll-vs-epoll/",
+        "type": "article"
+      }
+    ]
   },
   "caK32NMMrn-3BGAXZoPPr": {
     "title": "kqueue",
-    "description": "",
-    "links": []
+    "description": "**kqueue** is an efficient event notification system available on BSD-based operating systems, including macOS and FreeBSD. It is designed to handle large numbers of concurrent connections with minimal CPU overhead, making it well-suited for server-side game development. Similar to `epoll` on Linux, `kqueue` operates in an event-driven manner, allowing game servers to efficiently manage network events, timers, and file system changes. By reducing unnecessary polling and system calls, `kqueue` helps improve the scalability and responsiveness of multiplayer game servers, ensuring low-latency interactions and optimized resource usage.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "FreeBSD kqueue Documentation",
+        "url": "https://man.freebsd.org/cgi/man.cgi?query=kqueue",
+        "type": "article"
+      },
+      {
+        "title": "macOS kqueue API Reference",
+        "url": "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/kqueue.2.html",
+        "type": "article"
+      }
+    ]
   },
   "Tvxe2NemcH21y-eB4bosv": {
     "title": "Proactor",
@@ -611,18 +759,41 @@
   },
   "7pgdOZomhGilBTwfJLMbm": {
     "title": "IOCP",
-    "description": "",
-    "links": []
+    "description": "**I/O Completion Ports (IOCP)** is a high-performance asynchronous I/O mechanism in Windows, designed to efficiently handle large numbers of concurrent network connections. It is widely used in server-side game development to optimize networking performance, making it ideal for MMORPGs and real-time multiplayer games. Unlike `select` or `WSA-Poll`, IOCP uses a thread pool and a queue-based event system to process completed I/O operations asynchronously, minimizing CPU overhead and improving scalability. By leveraging IOCP, game servers can efficiently handle thousands of connections with minimal latency, making it the preferred choice for high-performance Windows-based game networking.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Microsoft IOCP Documentation",
+        "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports",
+        "type": "article"
+      }
+    ]
   },
   "YH7u1FKh85wz78J0stuzS": {
     "title": "io_uring",
-    "description": "",
-    "links": []
+    "description": "**io\\_uring** is a modern asynchronous I/O framework introduced in Linux 5.1, designed to provide high-performance, low-latency I/O operations. It is widely used in server-side game development to efficiently handle network and disk operations, making it ideal for real-time multiplayer games. Unlike `epoll` or traditional polling mechanisms, `io_uring` minimizes system calls by using a shared memory ring buffer between the kernel and user space, reducing context switching overhead. This results in improved scalability and responsiveness, allowing game servers to handle thousands of concurrent connections with minimal CPU usage.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Linux io_uring_enter",
+        "url": "https://man7.org/linux/man-pages/man2/io_uring_enter.2.html",
+        "type": "article"
+      },
+      {
+        "title": "Efficient Networking with io_uring",
+        "url": "https://lwn.net/Articles/776703/",
+        "type": "article"
+      }
+    ]
   },
   "94hJX1iGifDzIuaU3zU5j": {
     "title": "Registered IO",
-    "description": "",
-    "links": []
+    "description": "**Registered I/O** is an optimization technique that enhances the performance of asynchronous I/O operations by pre-registering resources such as file descriptors, memory buffers, or network sockets with the operating system. This reduces the overhead of repeated system calls and resource management, making it highly beneficial for server-side game development, where low-latency and high-throughput are critical. Technologies like `io_uring` and Windows `RIO (Registered I/O)` API leverage this approach to minimize kernel interactions, improving efficiency for handling large-scale multiplayer game servers. By reducing context switching and memory allocation overhead, Registered I/O helps game servers achieve smoother performance and lower latency.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Microsoft Registered I/O (RIO)",
+        "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh997032(v=ws.11)",
+        "type": "article"
+      }
+    ]
   },
   "LKPcEeqBOPhQOztD3cM3T": {
     "title": "Task-Based",

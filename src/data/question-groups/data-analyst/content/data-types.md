@@ -1,0 +1,3 @@
+These two types of data are quite different, on the one hand you have numerical data that represents measurable quantities and includes continuous data (like height, weight, income) and discrete data (like number of children). 
+
+On the other hand, you have the data that represents labels or categories such as product types, departments, or user segments, and may be nominal (unordered) or ordinal (ordered). 

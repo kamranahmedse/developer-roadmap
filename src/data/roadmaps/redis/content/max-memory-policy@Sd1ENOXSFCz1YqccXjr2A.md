@@ -4,3 +4,5 @@ The Max Memory Policy in Redis determines how the server handles data when it re
 
 Learn more from the following resources:
 
+- [@official@Database Memory Limits](https://redis.io/docs/latest/operate/rs/databases/memory-performance/memory-limit/)
+- [@official@Eviction Policy](https://redis.io/docs/latest/operate/rs/databases/memory-performance/eviction-policy/)

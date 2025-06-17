@@ -128,32 +128,32 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
     return allRoadmaps;
   };
 
-  useEffect(() => {
-    if (debouncedSearchValue.length === 0 || isFirstRender.current) {
-      setSearchResults([]);
-      return;
-    }
+  // useEffect(() => {
+  //   if (debouncedSearchValue.length === 0 || isFirstRender.current) {
+  //     setSearchResults([]);
+  //     return;
+  //   }
 
-    setIsActive(true);
-    setIsLoading(true);
-    loadTopAIRoadmapTerm()
-      .then((results) => {
-        const normalizedSearchText = debouncedSearchValue.trim().toLowerCase();
-        const matchingOfficialRoadmaps = officialRoadmaps.filter((roadmap) => {
-          return (
-            roadmap.title.toLowerCase().indexOf(normalizedSearchText) !== -1
-          );
-        });
+  //   setIsActive(true);
+  //   setIsLoading(true);
+  //   loadTopAIRoadmapTerm()
+  //     .then((results) => {
+  //       const normalizedSearchText = debouncedSearchValue.trim().toLowerCase();
+  //       const matchingOfficialRoadmaps = officialRoadmaps.filter((roadmap) => {
+  //         return (
+  //           roadmap.title.toLowerCase().indexOf(normalizedSearchText) !== -1
+  //         );
+  //       });
 
-        setSearchResults(
-          [...matchingOfficialRoadmaps, ...results]?.slice(0, 5) || [],
-        );
-        setActiveCounter(0);
-      })
-      .finally(() => {
-        setIsLoading(false);
-      });
-  }, [debouncedSearchValue]);
+  //       setSearchResults(
+  //         [...matchingOfficialRoadmaps, ...results]?.slice(0, 5) || [],
+  //       );
+  //       setActiveCounter(0);
+  //     })
+  //     .finally(() => {
+  //       setIsLoading(false);
+  //     });
+  // }, [debouncedSearchValue]);
 
   useEffect(() => {
     if (isFirstRender.current) {
@@ -176,7 +176,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
         type="text"
         value={defaultValue}
         className={cn(
-          'w-full rounded-md border border-gray-400 px-3 py-2.5 pr-8 transition-colors focus:border-black focus:outline-none',
+          'w-full rounded-md border border-gray-400 px-3 py-2.5 pr-8 transition-colors focus:border-black focus:outline-hidden',
           inputClassName,
         )}
         placeholder={placeholder}
@@ -240,7 +240,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
         searchResults.length > 0 &&
         searchedText.length > 0 && (
           <div
-            className="absolute top-full z-50 mt-1 w-full rounded-md border bg-white p-1 shadow"
+            className="absolute top-full z-50 mt-1 w-full rounded-md border bg-white p-1 shadow-sm"
             ref={dropdownRef}
           >
             <div className="flex flex-col">
@@ -250,7 +250,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
                     key={result?._id}
                     type="button"
                     className={cn(
-                      'flex w-full items-start rounded p-2 text-left text-sm',
+                      'flex w-full items-start rounded-sm p-2 text-left text-sm',
                       counter === activeCounter ? 'bg-gray-100' : '',
                     )}
                     onMouseOver={() => setActiveCounter(counter)}

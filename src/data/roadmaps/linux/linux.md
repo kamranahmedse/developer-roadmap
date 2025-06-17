@@ -3,6 +3,7 @@ jsonUrl: '/jsons/roadmaps/linux.json'
 pdfUrl: '/pdfs/roadmaps/linux.pdf'
 order: 14
 briefTitle: 'Linux'
+renderer: 'editor'
 briefDescription: 'Step by step guide to learning Linux in 2025'
 title: 'Linux Roadmap'
 description: 'Step by step guide to learning Linux in 2025'
@@ -10,7 +11,7 @@ isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 2070
+  height: 2470
 schema:
   headline: 'Linux Roadmap'
   description: 'Learn how to use Linux with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

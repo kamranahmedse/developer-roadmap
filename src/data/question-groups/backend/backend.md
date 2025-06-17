@@ -10,6 +10,7 @@ date: 2024-05-24
 seo:
   title: '50 Popular Backend Developer Interview Questions and Answers'
   description: 'Nail your backend developer interview with these 50 popularly asked questions and answers. Test your knowledge with our quiz cards!'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/backend-developer-interview-questions-pm9jx.jpg'
   keywords:
     - 'backend quiz'
     - 'backend questions'

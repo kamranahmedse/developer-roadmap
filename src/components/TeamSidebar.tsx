@@ -111,7 +111,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
 
             <li>
               <button
-                className={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200`}
+                className={`flex w-full items-center rounded-sm px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200`}
                 onClick={() => setShowFeedbackPopup(true)}
               >
                 <MessageCircle className="mr-2 h-4 w-4" />
@@ -147,7 +147,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
                           : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
                       }`}
                     >
-                      <span className="flex flex-grow items-center justify-between">
+                      <span className="flex grow items-center justify-between">
                         <span className="flex">
                           {<sidebarLink.icon className="mr-2 h-4 w-4" />}
 

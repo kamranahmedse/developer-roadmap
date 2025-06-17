@@ -7,6 +7,7 @@ Visit the following resources to learn more:
 - [@course@Cyfirn Updraft | Solidity Smart Contract Development](https://updraft.cyfrin.io/courses/solidity)
 - [@article@Smart Contracts](https://www.ibm.com/topics/smart-contracts)
 - [@article@What Are Smart Contracts and How Do They Work?](https://chain.link/education/smart-contracts)
+- [@article@Introduction to smart contracts - Ethereum](https://ethereum.org/en/smart-contracts/)
 - [@video@Smart Contracts - Simply Explained](https://youtu.be/ZE2HxTmxfrI)
 - [@feed@Explore top posts about Smart Contracts](https://app.daily.dev/tags/smart-contracts?ref=roadmapsh)
 

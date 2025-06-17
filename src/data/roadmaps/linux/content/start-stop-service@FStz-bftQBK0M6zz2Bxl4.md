@@ -1,0 +1,3 @@
+# Start and Stop Services
+
+Linux service management controls system services like firewall, network, and database using `systemctl` commands. Basic operations: `sudo systemctl start service_name` (start), `sudo systemctl stop service_name` (stop), `sudo systemctl restart service_name` (restart). Root permissions required. Essential for system administrators managing updates and configuration changes.

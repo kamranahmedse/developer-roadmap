@@ -9,10 +9,13 @@ import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 import { ListProjectSolutions } from '../../../components/Projects/ListProjectSolutions';
 import { ProjectSolutionModal } from '../../../components/Projects/ProjectSolutionModal';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const projects = await getAllProjects();
 
   return projects
+    .filter((project) => !(project?.frontmatter?.hasNoSubmission || false))
     .map((project) => project.id)
     .map((projectId) => ({
       params: { projectId },

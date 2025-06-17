@@ -4,11 +4,6 @@
     "description": "Here is the list of most common CLI tools for React development:",
     "links": [
       {
-        "title": "create-react-app",
-        "url": "https://create-react-app.dev",
-        "type": "article"
-      },
-      {
         "title": "vite",
         "url": "https://vitejs.dev",
         "type": "article"
@@ -674,41 +669,6 @@
         "title": "React Router — Official Website",
         "url": "https://reactrouter.com/",
         "type": "article"
-      },
-      {
-        "title": "Getting Started Guide",
-        "url": "https://reactrouter.com/en/main/start/tutorial",
-        "type": "article"
-      },
-      {
-        "title": "How to use React Router v6",
-        "url": "https://www.robinwieruch.de/react-router/",
-        "type": "article"
-      },
-      {
-        "title": "React Router Cheat Sheet",
-        "url": "https://devhints.io/react-router/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about React",
-        "url": "https://app.daily.dev/tags/react?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Tanstack/Router — Official Website",
-        "url": "https://tanstack.com/router/latest/docs/framework/react/overview",
-        "type": "article"
-      },
-      {
-        "title": "React Router v6 in 1 hour",
-        "url": "https://youtu.be/0cSVuySEB0A",
-        "type": "video"
-      },
-      {
-        "title": "TanStack/Router - Complete Course",
-        "url": "https://www.youtube.com/watch?v=4sslBg8LprE&list=PLOQjd5dsGSxJilh0lBofeY8Qib98kzmF5",
-        "type": "video"
       }
     ]
   },

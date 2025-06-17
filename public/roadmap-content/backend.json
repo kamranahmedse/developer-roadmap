@@ -389,6 +389,11 @@
         "title": "Git & GitHub Crash Course For Beginners",
         "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
         "type": "video"
+      },
+      {
+        "title": "Learn Git - Full Course",
+        "url": "https://www.youtube.com/watch?v=rH3zE7VlIMs",
+        "type": "video"
       }
     ]
   },
@@ -1690,8 +1695,8 @@
         "type": "article"
       },
       {
-        "title": "Architectural Patterns in a nutshell",
-        "url": "https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013",
+        "title": "10 Common Software Architectural Patterns in a nutshell",
+        "url": "https://theiotacademy.medium.com/10-common-software-architectural-patterns-in-a-nutshell-1b1f6cf5036b",
         "type": "article"
       }
     ]
@@ -2723,6 +2728,11 @@
     "description": "DNS (Domain Name System) is a hierarchical, decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It translates human-readable domain names (like `www.example.com`) into IP addresses (like 192.0.2.1) that computers use to identify each other. DNS servers distributed worldwide work together to resolve these queries, forming a global directory service. The system uses a tree-like structure with root servers at the top, followed by top-level domain servers (.com, .org, etc.), authoritative name servers for specific domains, and local DNS servers. DNS is crucial for the functioning of the Internet, enabling users to access websites and services using memorable names instead of numerical IP addresses. It also supports email routing, service discovery, and other network protocols.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Everything You Need to Know About DNS",
+        "url": "https://cs.fyi/guide/everything-you-need-to-know-about-dns",
+        "type": "article"
+      },
+      {
         "title": "What is DNS?",
         "url": "https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/",
         "type": "article"
@@ -2775,23 +2785,8 @@
     "description": "API authentication is the process of verifying the identity of clients attempting to access an API, ensuring that only authorized users or applications can interact with the API's resources. Common methods include API keys, OAuth 2.0, JSON Web Tokens (JWT), basic authentication, and OpenID Connect. These techniques vary in complexity and security level, from simple token-based approaches to more sophisticated protocols that handle both authentication and authorization. API authentication protects sensitive data, prevents unauthorized access, enables usage tracking, and can provide granular control over resource access. The choice of authentication method depends on factors such as security requirements, types of clients, ease of implementation, and scalability needs. Implementing robust API authentication is crucial for maintaining the integrity, security, and controlled usage of web services and applications in modern, interconnected software ecosystems.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "SSO - Single Sign On",
-        "url": "https://roadmap.sh/guides/sso",
-        "type": "article"
-      },
-      {
-        "title": "OAuth - Open Authorization",
-        "url": "https://roadmap.sh/guides/oauth",
-        "type": "article"
-      },
-      {
-        "title": "JWT Authentication",
-        "url": "https://roadmap.sh/guides/jwt-authentication",
-        "type": "article"
-      },
-      {
-        "title": "Token Based Authentication",
-        "url": "https://roadmap.sh/guides/token-authentication",
+        "title": "Basic Authentication",
+        "url": "https://roadmap.sh/guides/basic-authentication",
         "type": "article"
       },
       {
@@ -2800,8 +2795,23 @@
         "type": "article"
       },
       {
-        "title": "Basic Authentication",
-        "url": "https://roadmap.sh/guides/basic-authentication",
+        "title": "Token Based Authentication",
+        "url": "https://roadmap.sh/guides/token-authentication",
+        "type": "article"
+      },
+      {
+        "title": "JWT Authentication",
+        "url": "https://roadmap.sh/guides/jwt-authentication",
+        "type": "article"
+      },
+      {
+        "title": "OAuth - Open Authorization",
+        "url": "https://roadmap.sh/guides/oauth",
+        "type": "article"
+      },
+      {
+        "title": "SSO - Single Sign On",
+        "url": "https://roadmap.sh/guides/sso",
         "type": "article"
       },
       {

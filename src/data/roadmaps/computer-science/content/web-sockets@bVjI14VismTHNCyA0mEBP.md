@@ -4,3 +4,5 @@ Web sockets are a bidirectional communication protocol between a client and a se
 
 Visit the following resources to learn more:
 
+- [@article@WebSockets](https://en.wikipedia.org/wiki/WebSocket)
+- [@article@Web Sockets API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)

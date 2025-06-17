@@ -8,9 +8,10 @@ title: 'Rust Developer'
 description: 'Step by step guide to becoming a Rust developer in 2025'
 hasTopics: true
 isNew: false
+renderer: 'editor'
 dimensions:
   width: 968
-  height: 2220.4
+  height: 3120
 schema:
   headline: 'Rust Developer Roadmap'
   description: 'Learn how to become a Rust Developer with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

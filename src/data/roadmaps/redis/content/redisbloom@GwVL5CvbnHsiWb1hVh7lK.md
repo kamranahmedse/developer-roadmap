@@ -5,4 +5,4 @@ RedisBloom is a Redis module that extends the capabilities of Redis by introduci
 Learn more from the following resources:
 
 - [@official@RedisBloom](https://redis.io/probabilistic/)
-- [@opensource@RedisBloom/RedisBloom - RedisBloom on GitHub](https://github.com/RedisBloom/RedisBloom)
+- [@opensource@RedisBloom/RedisBloom - GitHub](https://github.com/RedisBloom/RedisBloom)

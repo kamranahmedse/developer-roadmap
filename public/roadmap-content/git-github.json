@@ -671,11 +671,6 @@
         "type": "article"
       },
       {
-        "title": "What are github collaborators",
-        "url": "https://www.geeksforgeeks.org/what-are-github-collaborators/",
-        "type": "article"
-      },
-      {
         "title": "How to Add Collaborators to Your GitHub Repository",
         "url": "https://www.blinkops.com/blog/how-to-add-collaborators-to-your-github-repository",
         "type": "article"
@@ -1440,7 +1435,7 @@
   },
   "uxqJzQFRcALqatNRIWR0w": {
     "title": "Unstaged Changes",
-    "description": "For changes that are not yet staged with `git add`, such as untracked new files or modified existing ones, use `git diff --unified`. This command compares your working directory against the latest committed version of each file. It's a useful tool for reviewing any local modifications before deciding whether to stage them for future commits.",
+    "description": "For changes that are not yet staged with `git add`, such as untracked new files or modified existing ones , use `git diff`. This command compares your working directory (your current changes) against the staging area (changes already staged with `git add`). It’s a useful tool for reviewing local modifications before deciding whether to stage them for future commits.\n\nThe `--unified` option (or -U) controls the number of context lines shown in the diff output. By default, Git shows 3 lines of context around each change. For example, `git diff --unified=5` will display 5 lines of context around each change, making it easier to understand the surrounding code or content.",
     "links": [
       {
         "title": "What are unstaged changes in GitHub?",
@@ -1699,7 +1694,7 @@
   },
   "jzYjHx-gIKSP8dQUTqWVw": {
     "title": "commit-msg",
-    "description": "The commit-msg hook is a client-side hook that runs after you've committed changes to your repository. It's typically used to validate or modify the commit message before it's recorded in the Git history.\n\nVisit the following resources to learn more:",
+    "description": "The commit-msg hook is a client-side hook that runs after you enter a commit message, but before the commit is finalized in your repository. It's typically used to validate or modify the commit message before it's recorded in the Git history.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "A Git-Hook for Commit Messages Validation - No Husky, Just JS",

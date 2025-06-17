@@ -9,10 +9,8 @@ import {
   type ResourceType,
 } from '../../lib/resource-progress';
 import { httpGet } from '../../lib/http';
-import { ProgressNudge } from '../FrameRenderer/ProgressNudge';
 import { getUrlParams } from '../../lib/browser.ts';
-import { cn } from '../../lib/classname.ts';
-import { getUser } from '../../lib/jwt.ts';
+import { RoadmapFloatingChat } from '../FrameRenderer/RoadmapFloatingChat.tsx';
 
 type EditorRoadmapProps = {
   resourceId: string;
@@ -38,7 +36,9 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
 
     const { response, error } = await httpGet<
       Omit<RoadmapRendererProps, 'resourceId'>
-    >(`/${switchRoadmapId || resourceId}.json`);
+    >(
+      `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${switchRoadmapId || resourceId}`,
+    );
 
     if (error) {
       console.error(error);
@@ -99,7 +99,7 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
         dimensions={dimensions}
         resourceId={resourceId}
       />
-      <ProgressNudge resourceId={resourceId} resourceType={resourceType} />
+      <RoadmapFloatingChat roadmapId={resourceId} />
     </div>
   );
 }

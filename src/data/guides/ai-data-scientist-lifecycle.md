@@ -7,7 +7,7 @@ seo:
   title: "Data Science Lifecycle 101: A Beginners' Ultimate Guide"
   description: 'Discover the Data Science Lifecycle step-by-step: Learn key phases, tools, and techniques in this beginner-friendly guide.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/data-science-lifecycle-eib3s.jpg'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-29
 sitemap:

@@ -328,6 +328,11 @@
         "title": "What is a Crypto Wallet? A Beginner’s Guide",
         "url": "https://crypto.com/university/crypto-wallets",
         "type": "article"
+      },
+      {
+        "title": "Choose your wallet - Ethereum",
+        "url": "https://ethereum.org/en/wallets/find-wallet/",
+        "type": "article"
       }
     ]
   },
@@ -983,6 +988,11 @@
         "type": "article"
       },
       {
+        "title": "Introduction to smart contracts - Ethereum",
+        "url": "https://ethereum.org/en/smart-contracts/",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Smart Contracts",
         "url": "https://app.daily.dev/tags/smart-contracts?ref=roadmapsh",
         "type": "article"
@@ -1236,6 +1246,11 @@
       {
         "title": "Crypto Wallet? What is it?",
         "url": "https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet",
+        "type": "article"
+      },
+      {
+        "title": "Choose your wallet - Ethereum",
+        "url": "https://ethereum.org/en/wallets/find-wallet/",
         "type": "article"
       },
       {
@@ -1799,6 +1814,16 @@
         "title": "What Is a Dapp? Decentralized Apps Explained",
         "url": "https://www.coindesk.com/learn/what-is-a-dapp-decentralized-apps-explained/",
         "type": "article"
+      },
+      {
+        "title": "Explore Top dApps on Ethereum and its Layer 2s",
+        "url": "https://www.ethereum-ecosystem.com/apps",
+        "type": "article"
+      },
+      {
+        "title": "Explore Top Ethereum dApps",
+        "url": "https://eth.blockscout.com/apps",
+        "type": "article"
       }
     ]
   },
@@ -2355,7 +2380,7 @@
         "type": "article"
       },
       {
-        "title": "dApp Security:All You Need to Know",
+        "title": "dApp Security: All You Need to Know",
         "url": "https://www.immunebytes.com/blog/dapp-security/#Benefits_of_DApps_Security",
         "type": "article"
       },
@@ -2570,6 +2595,11 @@
       {
         "title": "Zero-Knowledge Rollups - Ethereum",
         "url": "https://ethereum.org/en/developers/docs/scaling/zk-rollups",
+        "type": "article"
+      },
+      {
+        "title": "What are Zero-Knowledge proofs? - Ethereum",
+        "url": "https://ethereum.org/en/zero-knowledge-proofs/",
         "type": "article"
       },
       {

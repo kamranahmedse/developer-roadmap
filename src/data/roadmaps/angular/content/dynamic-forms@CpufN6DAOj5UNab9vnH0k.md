@@ -4,5 +4,5 @@ Dynamic forms in Angular are a flexible way to create forms where the structure 
 
 Learn more from the following resources:
 
-- [@offical@Dynamic Forms Documentation](https://angular.dev/guide/forms/dynamic-forms)
+- [@official@Dynamic Forms Documentation](https://angular.dev/guide/forms/dynamic-forms)
 - [@video@Create a Dynamic Reactive Angular Form with JSON](https://www.youtube.com/watch?v=ByHw_RMjkKM)

@@ -1,6 +1,5 @@
 import { useStore } from '@nanostores/react';
 import { useEffect, useState } from 'react';
-import { cn } from '../../../editor/utils/classname';
 import { useParams } from '../../hooks/use-params';
 import { useToast } from '../../hooks/use-toast';
 import { httpGet } from '../../lib/http';
@@ -13,6 +12,7 @@ import { TeamDashboard } from './TeamDashboard';
 import type { QuestionGroupType } from '../../lib/question-group';
 import type { GuideFileType } from '../../lib/guide';
 import type { VideoFileType } from '../../lib/video';
+import { cn } from '../../lib/classname';
 
 type DashboardPageProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];

@@ -38,14 +38,8 @@
   },
   "2sR4KULvAUUoOtopvsEBs": {
     "title": "Levels of Architecture",
-    "description": "Architecture can be done on several “levels” of abstractions. The level influences the importance of necessary skills. As there are many categorizations possible my favorite segmentation includes these 3 levels:\n\n*   **Application Level:** The lowest level of architecture. Focus on one single application. Very detailed, low level design. Communication is usually within one development team.\n*   **Solution Level:** The mid-level of architecture. Focus on one or more applications which fulfill a business need (business solution). Some high, but mainly low-level design. Communication is between multiple development teams.\n*   **Enterprise Level:** The highest level of architecture. Focus on multiple solutions. High level, abstract design, which needs to be detailed out by solution or application architects. Communication is across the organization.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Software Engineering Architecture",
-        "url": "https://www.geeksforgeeks.org/software-engineering-architectural-design/",
-        "type": "article"
-      }
-    ]
+    "description": "Architecture can be done on several “levels” of abstractions. The level influences the importance of necessary skills. As there are many categorizations possible my favorite segmentation includes these 3 levels:\n\n*   **Application Level:** The lowest level of architecture. Focus on one single application. Very detailed, low level design. Communication is usually within one development team.\n*   **Solution Level:** The mid-level of architecture. Focus on one or more applications which fulfill a business need (business solution). Some high, but mainly low-level design. Communication is between multiple development teams.\n*   **Enterprise Level:** The highest level of architecture. Focus on multiple solutions. High level, abstract design, which needs to be detailed out by solution or application architects. Communication is across the organization.",
+    "links": []
   },
   "Lqe47l4j-C4OwkbkwPYry": {
     "title": "Application Architecture",
@@ -103,14 +97,8 @@
   },
   "lBtlDFPEQvQ_xtLtehU0S": {
     "title": "Important Skills to Learn",
-    "description": "To support the laid-out activities specific skills are required. From my experience, read books and discussions we can boil this down to these ten skills every software architect should have:\n\n*   Design\n*   Decide\n*   Simplify\n*   Code\n*   Document\n*   Communicate\n*   Estimate\n*   Balance\n*   Consult\n*   Market\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Software Architect Skills",
-        "url": "https://www.geeksforgeeks.org/software-architects-skills/",
-        "type": "article"
-      }
-    ]
+    "description": "To support the laid-out activities specific skills are required. From my experience, read books and discussions we can boil this down to these ten skills every software architect should have:\n\n*   Design\n*   Decide\n*   Simplify\n*   Code\n*   Document\n*   Communicate\n*   Estimate\n*   Balance\n*   Consult\n*   Market",
+    "links": []
   },
   "fBd2m8tMJmhuNSaakrpg4": {
     "title": "Design & Architecture",
@@ -854,14 +842,8 @@
   },
   "SuMhTyaBS9vwASxAt39DH": {
     "title": "Tools",
-    "description": "Architect tools are software tools that help architects to design, document, and manage software architectures. These tools can be used to create architecture diagrams, generate code, and automate the software development process.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Top 10 Software Architecture Tools in 2024",
-        "url": "https://www.geeksforgeeks.org/software-architecture-tools/",
-        "type": "article"
-      }
-    ]
+    "description": "Architect tools are software tools that help architects to design, document, and manage software architectures. These tools can be used to create architecture diagrams, generate code, and automate the software development process.",
+    "links": []
   },
   "OaLmlfkZid7hKqJ9G8oNV": {
     "title": "Architecture",
@@ -1838,7 +1820,7 @@
   },
   "Mt5W1IvuHevNXVRlh7z26": {
     "title": "OSI",
-    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're are trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
+    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Cloudflare - What is the OSI model",
@@ -1854,11 +1836,6 @@
       {
         "title": "What is Transmission Control Protocol TCP/IP? - Fortinet",
         "url": "https://www.fortinet.com/resources/cyberglossary/tcp-ip#:~:text=The%20TCP%2FIP%20model%20defines,exchanged%20and%20organized%20over%20networks.",
-        "type": "article"
-      },
-      {
-        "title": "TCP/IP Model",
-        "url": "https://www.geeksforgeeks.org/tcp-ip-model/",
         "type": "article"
       },
       {

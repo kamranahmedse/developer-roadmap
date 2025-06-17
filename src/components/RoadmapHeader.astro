@@ -1,51 +1,59 @@
 ---
 import {
   ArrowLeftIcon,
+  BookOpenIcon,
+  Bot,
   FolderKanbanIcon,
   MapIcon,
   MessageCircle,
 } from 'lucide-react';
-import { TabLink } from './TabLink';
-import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
-import { ScheduleButton } from './Schedule/ScheduleButton';
-import ProgressHelpPopup from './ProgressHelpPopup.astro';
-import { MarkFavorite } from './FeaturedItems/MarkFavorite';
 import { type RoadmapFrontmatter } from '../lib/roadmap';
-import { ShareRoadmapButton } from './ShareRoadmapButton';
+import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import { DownloadRoadmapButton } from './DownloadRoadmapButton';
-import { CourseAnnouncement } from './SQLCourse/CourseAnnouncement';
+import { MarkFavorite } from './FeaturedItems/MarkFavorite';
+import ProgressHelpPopup from './ProgressHelpPopup.astro';
+import { ScheduleButton } from './Schedule/ScheduleButton';
+import { ShareRoadmapButton } from './ShareRoadmapButton';
+import { TabLink } from './TabLink';
+
 export interface Props {
   title: string;
   description: string;
   note?: string;
-  tnsBannerLink?: string;
+  partner?: {
+    description: string;
+    link: string;
+    linkText: string;
+  };
   roadmapId: string;
   isUpcoming?: boolean;
   hasSearch?: boolean;
   projectCount?: number;
+  coursesCount?: number;
+  hasAIChat?: boolean;
   question?: RoadmapFrontmatter['question'];
   hasTopics?: boolean;
   isForkable?: boolean;
-  activeTab?: 'roadmap' | 'projects';
+  activeTab?: 'roadmap' | 'projects' | 'courses';
 }
 
 const {
   title,
   description,
   roadmapId,
-  tnsBannerLink,
+  partner,
   isUpcoming = false,
   note,
   hasTopics = false,
+  hasAIChat = false,
   projectCount = 0,
   question,
   activeTab = 'roadmap',
+  coursesCount = 0,
 } = Astro.props;
 
-const roadmapTitle =
-  roadmapId === 'devops'
-    ? 'DevOps'
-    : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
+const hasCourses = coursesCount > 0;
+const hasProjects = projectCount > 0;
 ---
 
 <LoginPopup />
@@ -53,13 +61,13 @@ const roadmapTitle =
 
 <div class='container mt-0 flex flex-col gap-2.5 px-0 sm:mt-3 sm:px-4'>
   {
-    tnsBannerLink && (
+    partner && (
       <div class='hidden rounded-md border bg-white px-2 py-1.5 sm:block'>
         <p class='py-0.5 text-left text-sm'>
           <span class='badge mr-1'>Partner</span>
-          Get the latest {roadmapTitle} news from our sister site{' '}
-          <a href={tnsBannerLink} target='_blank' class='font-medium underline'>
-            TheNewStack.io
+          {partner.description}
+          <a href={partner.link} target='_blank' class='font-medium underline'>
+            {partner.linkText}
           </a>
         </p>
       </div>
@@ -67,7 +75,7 @@ const roadmapTitle =
   }
 
   <div
-    class='relative rounded-none border bg-white px-5 pb-0 pt-4 sm:rounded-lg'
+    class='relative rounded-none border bg-white px-5 pt-4 pb-0 sm:rounded-lg'
   >
     <div class='flex items-start justify-between'>
       <a
@@ -86,12 +94,12 @@ const roadmapTitle =
         &larr;&nbsp;<span>&nbsp;All Roadmaps</span>
       </a>
       <div
-        class='relative right-0 top-0 flex items-center gap-1 sm:-right-2 sm:-top-0.5'
+        class='relative top-0 right-0 flex items-center gap-1 sm:-top-0.5 sm:-right-2'
       >
         <MarkFavorite
           resourceId={roadmapId}
           resourceType='roadmap'
-          className='relative top-px mr-2 text-gray-500 !opacity-100 hover:text-gray-600 focus:outline-0 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:stroke-gray-400 [&>svg]:stroke-[0.4] hover:[&>svg]:stroke-gray-600 sm:[&>svg]:h-4 sm:[&>svg]:w-4'
+          className='relative top-px mr-2 text-gray-500 opacity-100! hover:text-gray-600 focus:outline-0 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:stroke-gray-400 [&>svg]:stroke-[0.4] [&>svg]:hover:stroke-gray-600 sm:[&>svg]:h-4 sm:[&>svg]:w-4'
           client:only='react'
         />
         <ScheduleButton
@@ -108,40 +116,66 @@ const roadmapTitle =
         />
       </div>
     </div>
-    <div class='mb-5 mt-5 sm:mb-12 sm:mt-12'>
+    <div class:list={['mt-5 mb-5 sm:mt-12 sm:mb-12']}>
       <h1 class='mb-0.5 text-2xl font-bold sm:mb-3.5 sm:text-5xl'>
         {title}
       </h1>
-      <p class='text-balance text-sm text-gray-500 sm:text-lg'>
+      <p class='text-sm text-balance text-gray-500 sm:text-lg'>
         {description}
       </p>
     </div>
 
-    <div class='flex justify-between gap-2 sm:gap-0'>
-      <div class='relative top-px flex gap-1 sm:gap-3'>
-        <TabLink
-          url={`/${roadmapId}`}
-          icon={MapIcon}
-          isActive={activeTab === 'roadmap'}
-          text='Roadmap'
-        />
-        <TabLink
-          url={`/${roadmapId}/projects`}
-          icon={FolderKanbanIcon}
-          text='Projects'
-          isActive={activeTab === 'projects'}
-          badgeText={projectCount > 0 ? 'new' : 'soon'}
-        />
-      </div>
+    {
+      (
+        <div class='flex justify-between gap-2 sm:gap-0'>
+          <div class='relative top-px flex gap-1 sm:gap-2'>
+            <TabLink
+              url={`/${roadmapId}`}
+              icon={MapIcon}
+              isActive={activeTab === 'roadmap'}
+              text='Roadmap'
+            />
+            {hasProjects && (
+              <TabLink
+                url={`/${roadmapId}/projects`}
+                icon={FolderKanbanIcon}
+                text='Projects'
+                isActive={activeTab === 'projects'}
+                badgeText={projectCount > 0 ? '' : 'soon'}
+              />
+            )}
+            {hasCourses && (
+              <TabLink
+                url={`/${roadmapId}/courses`}
+                icon={BookOpenIcon}
+                text='Courses'
+                isActive={activeTab === 'courses'}
+                className='hidden md:flex'
+              />
+            )}
+            {hasAIChat && (
+              <TabLink
+                url={`/${roadmapId}/ai`}
+                icon={Bot}
+                text='AI Tutor'
+                mobileText='AI'
+                isActive={false}
+                badgeText='New'
+              />
+            )}
+          </div>
 
-      <TabLink
-        url={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
-        icon={MessageCircle}
-        text='Suggest Changes'
-        isExternal={true}
-        hideTextOnMobile={true}
-        isActive={false}
-      />
-    </div>
+          <TabLink
+            url={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
+            icon={MessageCircle}
+            text='Suggest Changes'
+            isExternal={true}
+            hideTextOnMobile={true}
+            isActive={false}
+            className='hidden sm:flex'
+          />
+        </div>
+      )
+    }
   </div>
 </div>

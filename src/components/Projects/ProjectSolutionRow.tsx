@@ -61,7 +61,7 @@ export function ProjectSolutionRow(props: ProjectSolutionRowProps) {
               : '/images/default-avatar.png'
           }
           alt={solution.user.name}
-          className="h-7 w-7 flex-shrink-0 rounded-full sm:h-8 sm:w-8"
+          className="h-7 w-7 shrink-0 rounded-full sm:h-8 sm:w-8"
         />
         <div className="min-w-0 flex-auto">
           <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">

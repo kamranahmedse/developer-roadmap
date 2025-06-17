@@ -30,10 +30,6 @@ const { resourceId, resourceType, dimensions = null } = Astro.props;
   </div>
 </div>
 
-<ProgressNudge
-  resourceId={resourceId}
-  resourceType={resourceType}
-  client:only='react'
-/>
+<ProgressNudge resourceId={resourceId} resourceType={resourceType} />
 
 <script src='./renderer.ts'></script>

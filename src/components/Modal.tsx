@@ -2,6 +2,7 @@ import { type ReactNode, useRef } from 'react';
 import { useOutsideClick } from '../hooks/use-outside-click';
 import { useKeydown } from '../hooks/use-keydown';
 import { cn } from '../lib/classname';
+import { X } from 'lucide-react';
 
 type ModalProps = {
   onClose: () => void;
@@ -9,6 +10,7 @@ type ModalProps = {
   overlayClassName?: string;
   bodyClassName?: string;
   wrapperClassName?: string;
+  hasCloseButton?: boolean;
 };
 
 export function Modal(props: ModalProps) {
@@ -18,6 +20,7 @@ export function Modal(props: ModalProps) {
     bodyClassName,
     wrapperClassName,
     overlayClassName,
+    hasCloseButton = true,
   } = props;
 
   const popupBodyEl = useRef<HTMLDivElement>(null);
@@ -33,7 +36,7 @@ export function Modal(props: ModalProps) {
   return (
     <div
       className={cn(
-        'fixed left-0 right-0 top-0 z-[99] flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50',
+        'fixed top-0 right-0 left-0 z-99 flex h-full items-center justify-center overflow-x-hidden overflow-y-auto bg-black/50',
         overlayClassName,
       )}
     >
@@ -46,10 +49,18 @@ export function Modal(props: ModalProps) {
         <div
           ref={popupBodyEl}
           className={cn(
-            'relative h-full rounded-lg bg-white shadow',
+            'relative h-full rounded-lg bg-white shadow-sm',
             bodyClassName,
           )}
         >
+          {hasCloseButton && (
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 text-gray-300 hover:text-gray-700"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          )}
           {children}
         </div>
       </div>

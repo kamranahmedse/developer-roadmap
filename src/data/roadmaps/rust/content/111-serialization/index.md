@@ -1,3 +1,0 @@
-# Serialization/Deserialization
-
-Serialization in Rust refers to the process of converting complex data types into a byte stream for transport over a network, storing in a file, or simply for use in a program. It provides a mechanism to maintain the state of an object by saving and restoring its state. To accomplish this, Rust has two prevalent crates known as `serde` and `bincode`. `Serde` is a robust framework for serializing and deserializing data, and `bincode` is one example of a serializer/deserializer that Serde can use. With Serde, we can develop efficient, compact, and customizable representations of Rust data structures.

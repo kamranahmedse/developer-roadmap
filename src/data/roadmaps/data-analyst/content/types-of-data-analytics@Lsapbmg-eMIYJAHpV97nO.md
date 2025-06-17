@@ -11,7 +11,6 @@ Data Analysts, as ambassadors of this domain, employ these types, to answer vari
 
 Visit the following resources to learn more:
 
-- [@article@Data Analytics and its type](https://www.geeksforgeeks.org/data-analytics-and-its-type/)
 - [@article@The 4 Types of Data Analysis: Ultimate Guide](https://careerfoundry.com/en/blog/data-analytics/different-types-of-data-analysis/)
 - [@video@Descriptive vs Diagnostic vs Predictive vs Prescriptive Analytics: What's the Difference?](https://www.youtube.com/watch?v=QoEpC7jUb9k)
 - [@video@Types of Data Analytics](https://www.youtube.com/watch?v=lsZnSgxMwBA)

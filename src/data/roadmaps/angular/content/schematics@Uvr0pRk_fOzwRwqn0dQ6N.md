@@ -4,5 +4,5 @@ A schematic is a template-based code generator that supports complex logic. It i
 
 Visit the following resources to learn more:
 
-- [@official@Generating code using schematics](https://angular.dev/tools/cli/schematics)
+- [@official@Generating Code using Schematics](https://angular.dev/tools/cli/schematics)
 - [@article@Angular Blog](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2?gi=ad9571373944)

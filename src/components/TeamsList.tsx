@@ -40,10 +40,10 @@ export function TeamsList() {
         <ul className="mb-3 flex flex-col gap-1">
           <li>
             <a
-              className="flex w-full cursor-pointer items-center justify-between gap-2 truncate rounded border p-2 text-sm font-medium hover:border-gray-300 hover:bg-gray-50"
+              className="flex w-full cursor-pointer items-center justify-between gap-2 truncate rounded-sm border p-2 text-sm font-medium hover:border-gray-300 hover:bg-gray-50"
               href="/account"
             >
-              <span className="flex flex-grow items-center gap-2">
+              <span className="flex grow items-center gap-2">
                 <img
                   src={
                     user?.avatar
@@ -71,10 +71,10 @@ export function TeamsList() {
             return (
               <li key={team._id}>
                 <a
-                  className="flex w-full cursor-pointer items-center justify-between gap-2 rounded border p-2 text-sm font-medium hover:border-gray-300 hover:bg-gray-50"
+                  className="flex w-full cursor-pointer items-center justify-between gap-2 rounded-sm border p-2 text-sm font-medium hover:border-gray-300 hover:bg-gray-50"
                   href={pageLink}
                 >
-                  <span className="flex flex-grow items-center gap-2">
+                  <span className="flex grow items-center gap-2">
                     <img
                       src={
                         team.avatar
@@ -95,7 +95,7 @@ export function TeamsList() {
           })}
         </ul>
         <a
-          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
           href="/team/new"
         >
           <span className="mr-2">+</span>

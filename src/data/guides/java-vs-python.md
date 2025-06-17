@@ -8,7 +8,7 @@ seo:
   description: 'Wondering which language is right for you? Explore our comprehensive Java vs Python guide to find the best option for your career.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/java-vs-python-xuk2b.jpg'
 relatedTitle: 'Other Guides'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2025-01-17
 sitemap:
@@ -197,6 +197,7 @@ def divide(a, b):
         return f"Result: {result}"
     finally:
         print("Execution completed.")
+
 
 print(divide(10, 2))  # Result: 5.0
 print(divide(10, 0))  # Error: Division by zero is not allowed.

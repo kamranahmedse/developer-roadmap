@@ -1,0 +1,3 @@
+Go's basic data types include booleans, integers, floating-point numbers, and strings. These basic data types in Go are similar to those in other languages; however, Go enforces that all variables share types during operations, in other words, Go is strongly typed. 
+
+This need for explicit type conversion (there is no implicit alternative in Go) requirement minimizes runtime errors and increases code reliability. 

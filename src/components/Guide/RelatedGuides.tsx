@@ -1,6 +1,6 @@
+import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '../../lib/classname';
-import { ChevronDown } from 'lucide-react';
 
 type RelatedGuidesProps = {
   relatedTitle?: string;
@@ -27,7 +27,7 @@ export function RelatedGuides(props: RelatedGuidesProps) {
     <div className={cn('relative min-w-[250px] pt-0 lg:px-5 lg:pt-10')}>
       <h4 className="text-lg font-medium max-lg:hidden">{relatedTitle}</h4>
       <button
-        className="flex border-b w-full items-center justify-between gap-2 bg-gray-300 px-3 py-2 text-sm font-medium lg:hidden"
+        className="flex w-full items-center justify-between gap-2 border-b bg-gray-300 px-3 py-2 text-sm font-medium lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
         {relatedTitle}
@@ -42,7 +42,7 @@ export function RelatedGuides(props: RelatedGuidesProps) {
 
       <ol
         className={cn(
-          'mt-0.5 space-y-0 max-lg:absolute max-lg:top-full max-lg:z-10 max-lg:mt-0 max-lg:w-full max-lg:bg-white max-lg:shadow',
+          'mt-0.5 space-y-0 max-lg:absolute max-lg:top-full max-lg:z-10 max-lg:mt-0 max-lg:w-full max-lg:bg-white max-lg:shadow-sm',
           !isOpen && 'hidden lg:block',
           isOpen && 'block',
         )}

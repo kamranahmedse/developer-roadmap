@@ -1,0 +1,1 @@
+Go does not provide support for method overloading. That said, you can achieve similar functionality by using interfaces, variadic functions (functions that receive a variable amount of attributes), or simply by creating functions with different names that describe their behavior more clearly (like for instance "PrintInt" and "PrintString"). 

@@ -4,5 +4,5 @@ In an Angular template, a binding creates a live connection between a part of th
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Understand Binding](https://angular.dev/guide/templates/binding)
+- [@official@Understand Binding](https://angular.dev/guide/templates/binding)
 - [@article@Data Binding in Angular](https://www.angularminds.com/blog/data-binding-in-angular)

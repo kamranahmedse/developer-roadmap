@@ -7,20 +7,6 @@ import { httpPost } from '../../lib/http.ts';
 import { CheckIcon } from '../ReactIcons/CheckIcon.tsx';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
 
-type StepLabelProps = {
-  label: string;
-};
-
-function StepLabel(props: StepLabelProps) {
-  const { label } = props;
-
-  return (
-    <span className="flex-shrink-0 rounded-full bg-gray-200 px-2 py-1 text-xs text-gray-600">
-      {label}
-    </span>
-  );
-}
-
 type StartProjectModalProps = {
   projectId: string;
   onClose: () => void;
@@ -66,7 +52,7 @@ export function StartProjectModal(props: StartProjectModalProps) {
   if (error) {
     return (
       <Modal onClose={onClose} bodyClassName="h-auto text-red-500">
-        <div className="flex flex-col items-center justify-center gap-2 pb-10 pt-12">
+        <div className="flex flex-col items-center justify-center gap-2 pt-12 pb-10">
           <ServerCrash className={'h-6 w-6'} />
           <p className="font-medium">{error}</p>
         </div>
@@ -77,7 +63,7 @@ export function StartProjectModal(props: StartProjectModalProps) {
   if (isStartingProject) {
     return (
       <Modal onClose={onClose} bodyClassName="h-auto">
-        <div className="flex flex-col items-center justify-center gap-4 pb-10 pt-12">
+        <div className="flex flex-col items-center justify-center gap-4 pt-12 pb-10">
           <Spinner className={'h-6 w-6'} isDualRing={false} />
           <p className="font-medium">Starting project ..</p>
         </div>
@@ -96,7 +82,7 @@ export function StartProjectModal(props: StartProjectModalProps) {
         <span className="mr-1.5 font-normal">Project started</span>{' '}
         <span className="font-semibold">{formattedStartedAt}</span>
       </p>
-      <h2 className="mb-1 mt-5 text-2xl font-semibold text-gray-800">
+      <h2 className="mt-5 mb-1 text-2xl font-semibold text-gray-800">
         Start Building
       </h2>
       <p className="text-gray-700">
@@ -109,8 +95,8 @@ export function StartProjectModal(props: StartProjectModalProps) {
         </p>
 
         <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
-          2. Complete the project according to the requirements and push your code
-          to the GitHub repository.
+          2. Complete the project according to the requirements and push your
+          code to the GitHub repository.
         </p>
 
         <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
@@ -139,13 +125,13 @@ export function StartProjectModal(props: StartProjectModalProps) {
           </button>
         </p>
         <p className="mt-1 rounded-lg bg-gray-200 p-2 text-sm text-gray-900">
-          4. Once done, submit your solution to help the others learn and get feedback
-          from the community.
+          4. Once done, submit your solution to help the others learn and get
+          feedback from the community.
         </p>
       </div>
 
       <div className="mb-5">
-        <p className='text-sm'>
+        <p className="text-sm">
           If you get stuck, you can always ask for help in the community{' '}
           <a
             href="https://roadmap.sh/discord"

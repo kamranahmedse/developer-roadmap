@@ -25,7 +25,6 @@ seo:
     - 'guide to becoming a flutter developer'
     - 'flutter developer'
     - 'flutter engineer'
-    - 'flutter skills'
     - 'guide to flutter'
     - 'flutter roadmap'
     - 'flutter skills'
@@ -38,7 +37,6 @@ seo:
     - 'flutter developer roadmap'
     - 'become a flutter developer'
     - 'flutter developer career path'
-    - 'flutter developer'
     - 'modern flutter developer'
 relatedRoadmaps:
   - 'backend'

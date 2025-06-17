@@ -9,7 +9,24 @@ title: 'Backend Developer'
 description: 'Step by step guide to becoming a modern backend developer in 2025'
 hasTopics: true
 isForkable: false
-tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
+courses:
+  - title: 'Complete Course to Master SQL'
+    description: 'Learn SQL from scratch with this comprehensive course'
+    link: 'https://roadmap.sh/courses/sql'
+    features:
+      - '55+ Lessons'
+      - 'AI Tutor'
+      - 'Coding Environment'
+      - 'Quizzes'
+      - 'Certification'
+    instructor:
+      name: 'Kamran Ahmed'
+      image: 'https://github.com/kamranahmedse.png'
+      title: 'Founder roadmap.sh'
+partner:
+  description: "Get the latest Backend news from our sister site"
+  link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
+  linkText: "TheNewStack.io"
 question:
   title: 'What is Backend Development?'
   description: |

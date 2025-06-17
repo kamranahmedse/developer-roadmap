@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname.ts';
 import { Filter, X } from 'lucide-react';
 import { CategoryFilterButton } from './CategoryFilterButton.tsx';
-import { useOutsideClick } from '../../hooks/use-outside-click.ts';
 import {
   deleteUrlParam,
   getUrlParams,
@@ -390,6 +389,16 @@ const groups: GroupType[] = [
         type: 'role',
       },
       {
+        title: 'AI Agents',
+        link: '/ai-agents',
+        type: 'role',
+      },
+      {
+        title: 'AI Red Teaming',
+        link: '/ai-red-teaming',
+        type: 'skill',
+      },
+      {
         title: 'Data Analyst',
         link: '/data-analyst',
         type: 'role',
@@ -591,7 +600,7 @@ export function RoadmapsPage() {
       <div className="container relative flex flex-col gap-4 sm:flex-row">
         <div
           className={cn(
-            'hidden w-full flex-col from-gray-100 sm:w-[180px] sm:border-r sm:bg-gradient-to-l sm:pt-6',
+            'hidden w-full flex-col from-gray-100 sm:w-[180px] sm:border-r sm:bg-linear-to-l sm:pt-6',
             {
               'hidden sm:flex': !isFilterOpen,
               'z-50 flex': isFilterOpen,
@@ -626,7 +635,7 @@ export function RoadmapsPage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-grow flex-col gap-6 pb-20 pt-2 sm:pt-8">
+        <div className="flex grow flex-col gap-6 pb-20 pt-2 sm:pt-8">
           {visibleGroups.map((group) => (
             <div key={`${group.group}-${group.roadmaps.length}`}>
               <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">

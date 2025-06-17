@@ -4,7 +4,7 @@ Fastify is a web framework highly focused on providing the best developer experi
 
 Visit the following resources to learn more:
 
-- [@official@Fastify Website](https://www.fastify.io/)
-- [@official@Fastify Official Documentations](https://www.fastify.io/docs/latest/)
+- [@official@Fastify](https://www.fastify.io/)
+- [@official@Fastify Documentation](https://www.fastify.io/docs/latest/)
 - [@video@Beginner Fastify Tutorial](https://www.youtube.com/watch?v=Lk-uVEVGxOA)
 - [@feed@Explore top posts about Fastify](https://app.daily.dev/tags/fastify?ref=roadmapsh)

@@ -103,7 +103,7 @@ export function MemberProgressModalHeader(
             isLoading ? 'striped-loader' : ''
           }`}
         >
-          <span className="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+          <span className="mr-2.5 block rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
             <span>{progressPercentage}</span>% Done
           </span>
 
@@ -116,7 +116,7 @@ export function MemberProgressModalHeader(
             isLoading ? 'striped-loader' : ''
           }`}
         >
-          <span className="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+          <span className="mr-2.5 block rounded-xs bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
             <span>{progressPercentage}</span>% Done
           </span>
 

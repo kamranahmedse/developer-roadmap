@@ -4,7 +4,7 @@ As the name indicates itself, a **Data Structure** is a way of organizing the da
 
 Visit the following resources to learn more:
 
-- [@article@Data Structures and Algorithms](https://www.javatpoint.com/data-structure-tutorial)
+- [@roadmap@Visit Dedicated DSA Roadmap](https://roadmap.sh/datastructures-and-algorithms)
 - [@course@Data Structures and Algorithms By Google](https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/)
 - [@video@Data Structures Illustrated](https://www.youtube.com/watch?v=9rhT3P1MDHk\&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)
 - [@video@Data Structures playlist](https://youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu&si=_EEf7x58G6lUcMGG)

@@ -1,37 +1,87 @@
 ---
-import {
-  getRoadmapTopicFiles,
-  type RoadmapTopicFileType,
-} from '../../lib/roadmap-topic';
+import fs from 'node:fs';
+import path from 'node:path';
+import matter from 'gray-matter';
+import MarkdownIt from 'markdown-it-async';
+import { fileURLToPath } from 'node:url';
 
-export async function getStaticPaths() {
-  const topicPathMapping = await getRoadmapTopicFiles();
+export const prerender = false;
 
-  return Object.keys(topicPathMapping).map((topicSlug) => {
-    const topicDetails = topicPathMapping[topicSlug];
-    const roadmapId = topicDetails.roadmapId;
-    const topicId = topicSlug.replace(`/${roadmapId}/`, '');
+const { topicId, roadmapId } = Astro.params;
 
-    return {
-      params: {
-        topicId,
-        roadmapId,
-      },
-      props: topicDetails,
-    };
-  });
+if (!topicId || !roadmapId) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+
+  return Astro.rewrite('/404');
 }
 
-export const partial = true;
+// Handle nested paths by joining the segments
+const topicPath = Array.isArray(topicId) ? topicId.join('/') : topicId;
 
-const { topicId } = Astro.params;
-const { file, url, roadmapId, roadmap, heading } =
-  Astro.props as RoadmapTopicFileType;
+// Get the project root directory
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const fileWithoutBasePath = file.file?.replace(/.+?\/src\/data/, '/src/data');
+// hack to make it work. TODO: Fix
+const projectRoot = path.resolve(__dirname, '../../..').replace(/dist$/, '');
+
+// Construct the path to the markdown file
+let contentPath = path.join(
+  projectRoot,
+  'src',
+  'data',
+  'roadmaps',
+  roadmapId,
+  'content',
+  `${topicPath}.md`,
+);
+
+// Check if file exists
+if (!fs.existsSync(contentPath)) {
+  const indexFilePath = path.join(
+    projectRoot,
+    'src',
+    'data',
+    'roadmaps',
+    roadmapId,
+    'content',
+    `${topicPath}/index.md`,
+  );
+
+  if (!fs.existsSync(indexFilePath)) {
+    Astro.response.status = 404;
+    Astro.response.statusText = 'Not found';
+
+    return Astro.rewrite('/404');
+  }
+
+  contentPath = indexFilePath;
+}
+
+// Read and parse the markdown file
+const fileContent = fs.readFileSync(contentPath, 'utf-8');
+const { data: frontmatter, content } = matter(fileContent);
+
+// Get the roadmap metadata
+const roadmapPath = path.join(
+  projectRoot,
+  'src',
+  'data',
+  'roadmaps',
+  roadmapId,
+  `${roadmapId}.md`,
+);
+const roadmapContent = fs.readFileSync(roadmapPath, 'utf-8');
+const { data: roadmapData } = matter(roadmapContent);
+
+const fileWithoutBasePath = contentPath.replace(/.+?\/src\/data/, '/src/data');
 const gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
+
+const md = MarkdownIt();
+const htmlContent = await md.renderAsync(content);
 ---
 
 <div data-github-url={gitHubUrl}></div>
 
-<file.Content />
+<Fragment set:html={htmlContent} />

@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@PFMERGE Documentation](https://redis.io/docs/latest/commands/pfmerge/)
+- [@official@PFMERGE](https://redis.io/docs/latest/commands/pfmerge/)

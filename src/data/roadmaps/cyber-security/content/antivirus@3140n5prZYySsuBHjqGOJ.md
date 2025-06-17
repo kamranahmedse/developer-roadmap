@@ -4,5 +4,5 @@ Antivirus software is a specialized program designed to detect, prevent, and rem
 
 Learn more from the following resources:
 
-- [@video@What is an antivirus and how does it keep us safe?](https://www.youtube.com/watch?v=jW626WMWNAE)
-- [@article@What is antivirus software?](https://www.webroot.com/gb/en/resources/tips-articles/what-is-anti-virus-software)
+- [@video@What is an Antivirus and how does it keep us safe?](https://www.youtube.com/watch?v=jW626WMWNAE)
+- [@article@What is Antivirus Software?](https://www.webroot.com/gb/en/resources/tips-articles/what-is-anti-virus-software)

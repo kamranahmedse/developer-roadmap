@@ -97,11 +97,6 @@
         "title": "TestLink",
         "url": "https://testlink.org/",
         "type": "article"
-      },
-      {
-        "title": "TestLink Tutorial: A Complete Guide",
-        "url": "https://www.guru99.com/testlink-tutorial-complete-guide.html",
-        "type": "article"
       }
     ]
   },
@@ -553,19 +548,19 @@
     "description": "Regression Testing is a type of software testing to confirm that a recent program or code change has not adversely affected existing features. Regression testing is a black box testing technique. Test cases are re-executed to check the previous functionality of the application is working fine and that the new changes have not produced any bugs.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Regression Testing",
-        "url": "https://www.javatpoint.com/regression-testing",
-        "type": "article"
-      },
-      {
-        "title": "What is Regression Testing with Test Cases",
+        "title": "What is Regression Testing?",
         "url": "https://www.guru99.com/regression-testing.html",
         "type": "article"
       },
       {
-        "title": "Explore top posts about Testing",
-        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
+        "title": "What is Regression Testing? Definition, Tools and Examples",
+        "url": "https://katalon.com/resources-center/blog/regression-testing",
         "type": "article"
+      },
+      {
+        "title": "What is Regression Testing? A Software Testing FAQ - Why? How? When?",
+        "url": "https://www.youtube.com/watch?v=xmQuLTarGI4",
+        "type": "video"
       }
     ]
   },
@@ -675,11 +670,6 @@
         "type": "article"
       },
       {
-        "title": "Agile Model",
-        "url": "https://www.javatpoint.com/software-engineering-agile-model",
-        "type": "article"
-      },
-      {
         "title": "Manifesto for Agile Software Development",
         "url": "https://agilemanifesto.org/",
         "type": "article"
@@ -757,11 +747,6 @@
       {
         "title": "Manual Testing Tutorial: What is, Types, Concepts",
         "url": "https://www.guru99.com/manual-testing.html",
-        "type": "article"
-      },
-      {
-        "title": "Manual Testing",
-        "url": "https://www.javatpoint.com/manual-testing",
         "type": "article"
       },
       {
@@ -1563,11 +1548,6 @@
     "description": "In software QA, accessibility testing is the practice of confirming that an application is usable for as many people as possible, including people with disabilities such as vision impairment, hearing problems and cognitive conditions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Accessibility Testing - Javatpoint",
-        "url": "https://www.javatpoint.com/accessibility-testing",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Accessibility",
         "url": "https://app.daily.dev/tags/accessibility?ref=roadmapsh",
         "type": "article"
@@ -2169,6 +2149,11 @@
       {
         "title": "Git & GitHub Crash Course For Beginners",
         "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+        "type": "video"
+      },
+      {
+        "title": "Complete Git and GitHub Tutorial",
+        "url": "https://www.youtube.com/watch?v=apGV9Kg7ics",
         "type": "video"
       }
     ]

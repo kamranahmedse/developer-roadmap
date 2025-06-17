@@ -4,5 +4,5 @@ A switch is a network device that operates at the data link layer (Layer 2) of t
 
 Learn more from the following resources:
 
-- [@article@What is a network switch?](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-a-network-switch/)
-- [@video@What is a SWITCH?](https://www.youtube.com/watch?v=9eH16Fxeb9o)
+- [@article@What is a Network Switch?](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-a-network-switch/)
+- [@video@What is a Switch?](https://www.youtube.com/watch?v=9eH16Fxeb9o)

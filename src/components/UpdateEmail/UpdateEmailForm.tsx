@@ -126,7 +126,7 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
             name="current-email"
             id="current-email"
             autoComplete="current-email"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             disabled
             value={currentEmail}
@@ -161,7 +161,7 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
             name="current-email"
             id="current-email"
             autoComplete="current-email"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             disabled
             value={currentEmail}
@@ -201,7 +201,7 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
             name="new-email"
             id="new-email"
             autoComplete={'new-email'}
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             placeholder="Enter new email"
             value={newEmail}
@@ -214,7 +214,7 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
               disabled={
                 isLoading || !newEmail || !newEmail.includes('@') || isSubmitted
               }
-              className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+              className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
             >
               {isLoading ? 'Please wait...' : 'Send Verification Link'}
             </button>
@@ -225,7 +225,7 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
                 type="button"
                 onClick={handleCancelEmailVerification}
                 disabled={isLoading}
-                className="font-regular mt-4 w-full rounded-lg border border-red-600 py-2 text-sm text-red-600 outline-none transition-colors hover:bg-red-500 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+                className="font-regular mt-4 w-full rounded-lg border border-red-600 py-2 text-sm text-red-600 outline-hidden transition-colors hover:bg-red-500 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
               >
                 Cancel Update
               </button>

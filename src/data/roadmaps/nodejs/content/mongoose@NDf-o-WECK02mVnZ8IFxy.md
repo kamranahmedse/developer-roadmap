@@ -4,6 +4,7 @@ Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. Mongo
 
 Visit the following resources to learn more:
 
-- [@official@Mongoose Website](https://mongoosejs.com)
+- [@official@Mongoose](https://mongoosejs.com)
+- [@official@Mongoose Documentation](https://mongoosejs.com/docs/guide.html)
 - [@article@Getting Started with MongoDB and Mongoose](https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/)
 - [@feed@Explore top posts about Mongoose](https://app.daily.dev/tags/mongoose?ref=roadmapsh)

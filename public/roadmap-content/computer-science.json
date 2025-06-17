@@ -4,6 +4,11 @@
     "description": "You need to pick a programming language to learn the Computer Science concepts. My personal recommendation would be to pick C++ or C and the reason for that is:\n\n*   They allow you to deal with pointers and memory allocation/deallocation, so you feel the data structures and algorithms in your bones. In higher level languages like Python or Java, these are hidden from you. In day to day work, that's terrific, but when you're learning how these low-level data structures are built, it's great to feel close to the metal.\n*   You will be able to find a lot of resources for the topics listed in this roadmap using C or C++. You can find a lot of resources for Python and Java, but they are not as abundant as C++ and C.\n\nGiven below is the list of resources; pick ones relevant to the language of your choice.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Visit Dedicated C++ Roadmap",
+        "url": "https://roadmap.sh/cpp",
+        "type": "article"
+      },
+      {
         "title": "Learn C++ - W3Schools",
         "url": "https://www.w3schools.com/cpp/",
         "type": "article"
@@ -55,12 +60,12 @@
         "type": "article"
       },
       {
-        "title": "Python Website",
+        "title": "Python",
         "url": "https://www.python.org/",
         "type": "article"
       },
       {
-        "title": "Python Getting Started",
+        "title": "Getting Started with Python",
         "url": "https://www.python.org/about/gettingstarted/",
         "type": "article"
       },
@@ -126,7 +131,7 @@
         "type": "article"
       },
       {
-        "title": "W3Schools Go Tutorial ",
+        "title": "W3Schools Go Tutorial",
         "url": "https://www.w3schools.com/go/",
         "type": "article"
       },
@@ -183,6 +188,11 @@
     "description": "Rust is a modern systems programming language focusing on safety, speed, and concurrency. It accomplishes these goals by being memory safe without using garbage collection.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Visit Dedicated Rust Roadmap",
+        "url": "https://roadmap.sh/rust",
+        "type": "article"
+      },
+      {
         "title": "The Rust Programming Language - online book",
         "url": "https://doc.rust-lang.org/book/",
         "type": "article"
@@ -214,6 +224,11 @@
     "description": "C++ is a powerful general-purpose programming language. It can be used to develop operating systems, browsers, games, and so on. C++ supports different ways of programming like procedural, object-oriented, functional, and so on. This makes C++ powerful as well as flexible.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Visit Dedicated C++ Roadmap",
+        "url": "https://roadmap.sh/cpp",
+        "type": "article"
+      },
+      {
         "title": "Learn C++",
         "url": "https://learncpp.com/",
         "type": "article"
@@ -236,11 +251,6 @@
       {
         "title": "W3Schools C++",
         "url": "https://www.w3schools.com/cpp/default.asp",
-        "type": "article"
-      },
-      {
-        "title": "C++ Roadmap",
-        "url": "https://roadmap.sh/cpp",
         "type": "article"
       },
       {
@@ -296,7 +306,7 @@
         "type": "article"
       },
       {
-        "title": "Java Website",
+        "title": "Java",
         "url": "https://www.java.com/",
         "type": "article"
       },
@@ -327,8 +337,8 @@
         "type": "course"
       },
       {
-        "title": "Data Structures and Algorithms",
-        "url": "https://www.javatpoint.com/data-structure-tutorial",
+        "title": "Visit Dedicated DSA Roadmap",
+        "url": "https://roadmap.sh/datastructures-and-algorithms",
         "type": "article"
       },
       {
@@ -451,6 +461,11 @@
     "description": "Hash Table, Map, HashMap, Dictionary or Associative are all the names of the same data structure. It is one of the most commonly used data structures.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Hash Tables - Princeton University",
+        "url": "https://algs4.cs.princeton.edu/34hash/",
+        "type": "article"
+      },
+      {
         "title": "Hash Table | Illustrated Data Structures",
         "url": "https://www.youtube.com/watch?v=jalSiaIi8j4",
         "type": "video"
@@ -463,26 +478,6 @@
       {
         "title": "Hashing with Chaining",
         "url": "https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=9",
-        "type": "video"
-      },
-      {
-        "title": "Table Doubling, Karp-Rabin",
-        "url": "https://www.youtube.com/watch?v=BRO7mVIFt08&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=10",
-        "type": "video"
-      },
-      {
-        "title": "Open Addressing, Cryptographic Hashing",
-        "url": "https://www.youtube.com/watch?v=rvdJDijO2Ro&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=11",
-        "type": "video"
-      },
-      {
-        "title": "PyCon 2010: The Mighty Dictionary",
-        "url": "https://www.youtube.com/watch?v=C4Kc8xzcA68",
-        "type": "video"
-      },
-      {
-        "title": "PyCon 2017: The Dictionary Even Mightier",
-        "url": "https://www.youtube.com/watch?v=66P5FMkWoVU",
         "type": "video"
       },
       {
@@ -507,9 +502,9 @@
         "type": "course"
       },
       {
-        "title": "Dynamic Arrays - Coursera",
-        "url": "https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV",
-        "type": "course"
+        "title": "What is Array in Data Structure? Types & Syntax",
+        "url": "https://www.simplilearn.com/tutorials/data-structure-tutorial/arrays-in-data-structure",
+        "type": "article"
       },
       {
         "title": "Array Data Structure | Illustrated Data Structures",
@@ -517,8 +512,8 @@
         "type": "video"
       },
       {
-        "title": "UC Berkeley CS61B - Linear and Multi-Dim Arrays (Start watching from 15m 32s)",
-        "url": "https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE",
+        "title": "Jagged Arrays",
+        "url": "https://www.youtube.com/watch?v=1jtrQqYpt7g",
         "type": "video"
       },
       {
@@ -532,8 +527,8 @@
         "type": "video"
       },
       {
-        "title": "Jagged Arrays",
-        "url": "https://www.youtube.com/watch?v=1jtrQqYpt7g",
+        "title": "UC Berkeley CS61B - Linear and Multi-Dim Arrays (Start watching from 15m 32s)",
+        "url": "https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE",
         "type": "video"
       }
     ]
@@ -542,6 +537,11 @@
     "title": "Tree",
     "description": "A tree is non-linear and a hierarchical data structure consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Tree Data Structure",
+        "url": "https://www.programiz.com/dsa/trees",
+        "type": "article"
+      },
       {
         "title": "Tree | Illustrated Data Structures",
         "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU",
@@ -645,6 +645,11 @@
         "title": "Complete Binary Tree - Programiz",
         "url": "https://www.programiz.com/dsa/complete-binary-tree",
         "type": "article"
+      },
+      {
+        "title": "Complete Binary Trees",
+        "url": "https://www.wscubetech.com/resources/dsa/complete-binary-tree",
+        "type": "article"
       }
     ]
   },
@@ -664,8 +669,13 @@
     "description": "An unbalanced binary tree is one that is not balanced.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Balanced Binary Tree",
-        "url": "https://www.programiz.com/dsa/balanced-binary-tree",
+        "title": "Balanced vs Unbalanced Binary Tree",
+        "url": "https://stackoverflow.com/questions/59206128/balanced-vs-unbalanced-binary-tree-clarification-needed",
+        "type": "article"
+      },
+      {
+        "title": "Unbalanced Binary Tree",
+        "url": "https://eng.libretexts.org/Bookshelves/Computer_Science/Databases_and_Data_Structures/Open_Data_Structures_-_An_Introduction_(Morin)/06%3A_Binary_Trees/6.02%3A_BinarySearchTree_-_An_Unbalanced_Binary_Search_Treee",
         "type": "article"
       }
     ]
@@ -771,8 +781,14 @@
   },
   "HZ1kk0TQ13FLC9t13BZl5": {
     "title": "Adjacency Matrix",
-    "description": "",
-    "links": []
+    "description": "An adjacency matrix is a square matrix used to represent a finite graph. It is used to represent the connections between vertices in a graph. The matrix is filled with 0s and 1s, where a 1 represents a connection between two vertices and a 0 represents no connection.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Adjacency Matrix",
+        "url": "https://en.wikipedia.org/wiki/Adjacency_matrix",
+        "type": "article"
+      }
+    ]
   },
   "rTnKJcPniUtqvfOyC88N0": {
     "title": "Adjacency List",
@@ -798,6 +814,11 @@
         "title": "Priority Queue - Introduction",
         "url": "https://www.coursera.org/lecture/data-structures/introduction-2OpTs",
         "type": "course"
+      },
+      {
+        "title": "Heap Data Structure",
+        "url": "https://www.programiz.com/dsa/heap-data-structure",
+        "type": "article"
       },
       {
         "title": "CS 61B Lecture 24: Priority Queues",
@@ -862,7 +883,12 @@
     "description": "The Big O notation can be used to describe how the running time of an algorithm scales with the growth of the input size, ignoring implementation details such as programming language and computer speed. Specifically, it denotes the upper bound of the growth rate of a function that relates the running time of an algorithm to its input size. It can be used to compare algorithms and determine which one is better.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "moviesCS 61B Lecture 19: Asymptotic Analysis",
+        "title": "Big-O Notation: A Simple Explanation with Examples",
+        "url": "https://medium.com/better-programming/big-o-notation-a-simple-explanation-with-examples-a56347d1daca",
+        "type": "article"
+      },
+      {
+        "title": "CS 61B Lecture 19: Asymptotic Analysis",
         "url": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98",
         "type": "article"
       },
@@ -967,6 +993,11 @@
     "description": "Linear algorithms are algorithms that have a runtime that is directly proportional to the size of the input. This means that the runtime of the algorithm will increase linearly with the size of the input. For example, if the input size is 10, the runtime will be 10 times the runtime of the algorithm when the input size is 1. If the input size is 100, the runtime will be 100 times the runtime of the algorithm when the input size is 1.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Linear Search Algorithm",
+        "url": "https://www.geeksforgeeks.org/linear-search/",
+        "type": "article"
+      },
+      {
         "title": "Big O Notation — Calculating Time Complexity",
         "url": "https://www.youtube.com/watch?v=Z0bH0cMY0E8",
         "type": "video"
@@ -1012,13 +1043,30 @@
   },
   "m0umGQNdvg95UiNpQZsQN": {
     "title": "Factorial",
-    "description": "Factorial complexity algorithms have a runtime of `O(n!)`. This is the worst case scenario for an algorithm. Factorial complexity algorithms are very inefficient and should be avoided.\n\n    def generate_permutations(s):\n        # Base case: If the string length is 1, return a list containing the string\n        if len(s) == 1:\n            return [s]\n    \n        # Initialize the result list\n        permutations = []\n    \n        # Recursively generate all permutations\n        for i in range(len(s)):\n            # Current character\n            current_char = s[i]\n            # Remaining characters\n            remaining_chars = s[:i] + s[i+1:]\n            # Generate all permutations of the remaining characters\n            for perm in generate_permutations(remaining_chars):\n                # Add the current character to the front of each generated permutation\n                permutations.append(current_char + perm)\n    \n        return permutations",
-    "links": []
+    "description": "Factorial complexity algorithms have a runtime of `O(n!)`. This is the worst case scenario for an algorithm. Factorial complexity algorithms are very inefficient and should be avoided.\n\n    def generate_permutations(s):\n        # Base case: If the string length is 1, return a list containing the string\n        if len(s) == 1:\n            return [s]\n    \n        # Initialize the result list\n        permutations = []\n    \n        # Recursively generate all permutations\n        for i in range(len(s)):\n            # Current character\n            current_char = s[i]\n            # Remaining characters\n            remaining_chars = s[:i] + s[i + 1 :]\n            # Generate all permutations of the remaining characters\n            for perm in generate_permutations(remaining_chars):\n                # Add the current character to the front of each generated permutation\n                permutations.append(current_char + perm)\n    \n        return permutations\n    \n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Big O Cheat Sheet - Time Complexity Chart",
+        "url": "https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/",
+        "type": "article"
+      },
+      {
+        "title": "Factorial Explained",
+        "url": "https://www.youtube.com/watch?v=pxh__ugRKz8",
+        "type": "video"
+      }
+    ]
   },
   "7a6-AnBI-3tAU1dkOvPkx": {
     "title": "Common Algorithms",
-    "description": "Here are some common algorithms that you should know. You can find more information about them in the [Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms) section of the Computer Science course.\n\n*   Sorting\n*   Recursion\n*   Searching\n*   Cache Algorithms\n*   Tree Algorithms\n*   Graph Algorithms\n*   Greedy Algorithms\n*   Backtracking\n*   Substring Search\n*   Suffix Arrays\n*   Dynamic Programming",
-    "links": []
+    "description": "Here are some common algorithms that you should know. You can find more information about them in the Algorithms section of the Computer Science course.\n\n*   Sorting\n*   Recursion\n*   Searching\n*   Cache Algorithms\n*   Tree Algorithms\n*   Graph Algorithms\n*   Greedy Algorithms\n*   Backtracking\n*   Substring Search\n*   Suffix Arrays\n*   Dynamic Programming\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Top Algorithms and Data Structures",
+        "url": "https://medium.com/data-science/top-algorithms-and-data-structures-you-really-need-to-know-ab9a2a91c7b5",
+        "type": "article"
+      }
+    ]
   },
   "0_qNhprnXU3i8koW3XTdD": {
     "title": "Tail Recursion",
@@ -1143,20 +1191,26 @@
   "XwyqBK9rgP1MMcJrdIzm5": {
     "title": "Linear Search",
     "description": "Linear search is a very simple algorithm that is used to search for a value in an array. It sequentially checks each element of the array until a match is found or until all the elements have been searched.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Linear Search",
+        "url": "https://www.programiz.com/dsa/linear-search",
+        "type": "article"
+      }
+    ]
   },
   "4wGBYFZpcdTt97WTbSazx": {
     "title": "Bubble Sort",
     "description": "Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Bubble Sort",
-        "url": "https://www.youtube.com/watch?v=P00xJgWzz2c&index=1&list=PL89B61F78B552C1AB",
-        "type": "video"
+        "title": "Bubble Sort Algorithm",
+        "url": "https://www.programiz.com/dsa/bubble-sort",
+        "type": "article"
       },
       {
-        "title": "Analyzing Bubble Sort",
-        "url": "https://www.youtube.com/watch?v=ni_zk257Nqo&index=7&list=PL89B61F78B552C1AB",
+        "title": "Bubble Sort",
+        "url": "https://www.youtube.com/watch?v=P00xJgWzz2c&index=1&list=PL89B61F78B552C1AB",
         "type": "video"
       },
       {
@@ -1176,6 +1230,11 @@
         "type": "course"
       },
       {
+        "title": "Selection Sort",
+        "url": "https://en.wikipedia.org/wiki/Selection_sort",
+        "type": "article"
+      },
+      {
         "title": "Selection Sort in 3 Minutes",
         "url": "https://www.youtube.com/watch?v=g-PGLbMth_g",
         "type": "video"
@@ -1187,7 +1246,7 @@
     "description": "Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time by comparisons. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Insertion Sort Algorithm",
+        "title": "Insertion Sort",
         "url": "https://www.programiz.com/dsa/insertion-sort",
         "type": "article"
       },
@@ -1297,6 +1356,11 @@
     "description": "In-order traversal is a tree traversal algorithm that visits the left subtree, the root, and then the right subtree. This is the most common way to traverse a binary search tree. It is also used to create a sorted list of nodes in a binary search tree.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Tree Traversal Techniques",
+        "url": "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/",
+        "type": "article"
+      },
+      {
         "title": "Tree | Illustrated Data Structures",
         "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU",
         "type": "video"
@@ -1307,6 +1371,11 @@
     "title": "Post Order Traversal",
     "description": "Post-order traversal is a type of tree traversal that visits the left subtree, then the right subtree, and finally the root node. This is the opposite of pre-order traversal, which visits the root node first, then the left subtree, and finally the right subtree.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Postorder Traversal of Binary Tree",
+        "url": "https://www.geeksforgeeks.org/postorder-traversal-of-binary-tree/",
+        "type": "article"
+      },
       {
         "title": "Tree | Illustrated Data Structures",
         "url": "https://www.youtube.com/watch?v=S2W3SXGPVyU",
@@ -1375,7 +1444,13 @@
   "Yf5gOIe7oiL19MjEVcpdw": {
     "title": "Depth First Search",
     "description": "Depth first search is a graph traversal algorithm that starts at a root node and explores as far as possible along each branch before backtracking.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Depth-first Search",
+        "url": "https://en.wikipedia.org/wiki/Depth-first_search",
+        "type": "article"
+      }
+    ]
   },
   "eY4nK2lPYsrR-a_8y2sao": {
     "title": "Bellman Ford's Algorithm",
@@ -1442,8 +1517,13 @@
   },
   "aBjBHpq_OajgQjxdCobXD": {
     "title": "Finding Hamiltonian Paths",
-    "description": "Hamiltonian paths are paths that visit every node in a graph exactly once. They are named after the famous mathematician [Hamilton](https://en.wikipedia.org/wiki/William_Rowan_Hamilton). Hamiltonian paths are a special case of [Hamiltonian cycles](https://en.wikipedia.org/wiki/Hamiltonian_cycle), which are cycles that visit every node in a graph exactly once.\n\nVisit the following resources to learn more:",
+    "description": "Hamiltonian paths are paths that visit every node in a graph exactly once. They are named after the famous mathematician Hamilton. Hamiltonian paths are a special case of Hamiltonian cycles, which are cycles that visit every node in a graph exactly once.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Hamiltonian Cycles",
+        "url": "https://en.wikipedia.org/wiki/Hamiltonian_cycle",
+        "type": "article"
+      },
       {
         "title": "Hamiltonian Path",
         "url": "https://www.hackerearth.com/practice/algorithms/graphs/hamiltonian-path/tutorial/",
@@ -1513,7 +1593,7 @@
         "type": "article"
       },
       {
-        "title": "Knights Tour Proble",
+        "title": "Knights Tour Problem",
         "url": "https://www.codesdope.com/course/algorithms-knights-tour-problem/",
         "type": "article"
       },
@@ -1670,6 +1750,11 @@
     "description": "LFU Cache is a data structure that stores key-value pairs. It has a fixed size and when it is full, it removes the least frequently used key-value pair. It is a variation of the LRU Cache and is used in many applications such as caching web pages, caching database queries, and caching images.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Least Frequently Used (LFU) Cache Implementation",
+        "url": "https://www.geeksforgeeks.org/least-frequently-used-lfu-cache-implementation/",
+        "type": "article"
+      },
+      {
         "title": "1117. Data Structure - LFU Cache",
         "url": "https://jojozhuang.github.io/algorithm/data-structure-lfu-cache/",
         "type": "article"
@@ -1681,7 +1766,7 @@
     "description": "String search and manipulation is a very important topic in computer science. It is used in many different applications, such as searching or replacing a specific pattern, word or character in a string.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "String-searching algorithm",
+        "title": "String-searching Algorithm",
         "url": "https://en.wikipedia.org/wiki/String-searching_algorithm",
         "type": "article"
       }
@@ -1695,6 +1780,11 @@
         "title": "Search Pattern in Text",
         "url": "https://www.coursera.org/learn/data-structures/lecture/tAfHI/search-pattern-in-text",
         "type": "course"
+      },
+      {
+        "title": "Pattern Searching",
+        "url": "https://www.geeksforgeeks.org/pattern-searching/",
+        "type": "article"
       }
     ]
   },
@@ -1708,7 +1798,12 @@
         "type": "course"
       },
       {
-        "title": "Suffix array introduction",
+        "title": "Suffix Arrays - Princeton University",
+        "url": "https://algs4.cs.princeton.edu/63suffix/",
+        "type": "article"
+      },
+      {
+        "title": "Suffix Array Introduction",
         "url": "https://www.youtube.com/watch?v=zqKlL3ZpTqs",
         "type": "video"
       },
@@ -1718,7 +1813,7 @@
         "type": "video"
       },
       {
-        "title": "Suffix arrays: building",
+        "title": "Suffix Arrays: building",
         "url": "https://www.youtube.com/watch?v=ZWlbhBjjwyA",
         "type": "video"
       }
@@ -1734,7 +1829,7 @@
         "type": "course"
       },
       {
-        "title": "A beginner guide to Brute Force Algorithm for substring search",
+        "title": "A Beginner Guide to Brute Force Algorithm for Substring Search",
         "url": "https://nulpointerexception.com/2019/02/10/a-beginner-guide-to-brute-force-algorithm-for-substring-search/",
         "type": "article"
       },
@@ -1755,11 +1850,6 @@
         "type": "course"
       },
       {
-        "title": "The Knuth-Morris-Pratt (KMP)Algorithm",
-        "url": "https://www.javatpoint.com/daa-knuth-morris-pratt-algorithm",
-        "type": "article"
-      },
-      {
         "title": "9.1 Knuth-Morris-Pratt KMP String Matching Algorithm",
         "url": "https://www.youtube.com/watch?v=V5-7GzOfADQ",
         "type": "video"
@@ -1776,8 +1866,8 @@
         "type": "course"
       },
       {
-        "title": "The Boyer-Moore Algorithm",
-        "url": "https://www.javatpoint.com/daa-boyer-moore-algorithm",
+        "title": "Boyer-Moore String-search Algorithm",
+        "url": "https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm",
         "type": "article"
       }
     ]
@@ -1892,7 +1982,7 @@
     "description": "Little Endian is a way of storing data in memory. It is the opposite of Big Endian. In Little Endian, the least significant byte is stored first. In Big Endian, the most significant byte is stored first.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Big Endian vs Little Endian.mp4",
+        "title": "Big Endian vs Little Endian",
         "url": "https://www.youtube.com/watch?v=JrNF0KRAlyo",
         "type": "video"
       },
@@ -1907,6 +1997,11 @@
     "title": "Common UML Diagrams",
     "description": "UML is a standard way of visualizing a software system. It is a general-purpose, developmental, modeling language in the field of software engineering that is intended to provide a standard way to visualize the design of a system.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Unified Modeling Language (UML) Description",
+        "url": "https://www.uml-diagrams.org/",
+        "type": "article"
+      },
       {
         "title": "UML Diagrams Full Course (Unified Modeling Language)",
         "url": "https://www.youtube.com/watch?v=WnMQ8HlmeXc",
@@ -1967,13 +2062,13 @@
     "description": "Class Diagrams are used to model the static structure of a system. They are used to show the classes, their attributes, operations (or methods), and the relationships between objects.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "UML Class Diagram Tutorial",
-        "url": "https://www.youtube.com/watch?v=UI6lqHOVHic",
-        "type": "video"
+        "title": "Class Diagrams",
+        "url": "https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/",
+        "type": "article"
       },
       {
         "title": "UML Class Diagram Tutorial",
-        "url": "https://www.youtube.com/watch?v=3cmzqZzwNDM&list=PLfoY2ARMh0hC2FcJKP5voAKCpk6PZXSd5&index=2",
+        "url": "https://www.youtube.com/watch?v=UI6lqHOVHic",
         "type": "video"
       }
     ]
@@ -2062,7 +2157,7 @@
         "type": "opensource"
       },
       {
-        "title": "Design Patterns - Wikipedia",
+        "title": "Design Patterns",
         "url": "https://en.wikipedia.org/wiki/Software_design_pattern",
         "type": "article"
       },
@@ -2285,7 +2380,7 @@
     "description": "Combinatorics is the study of counting. It is a branch of mathematics that is used to solve problems in a variety of fields, including computer science, statistics, and physics. In computer science, combinatorics is used to solve problems related to counting the number of possible outcomes of a given problem. For example, if you are given a set of 10 objects, how many different ways can you arrange them? Or, if you are given a set of 10 objects, how many different ways can you choose 3 objects from that set? These are examples of combinatorial problems.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Probability and Combinatorics Topic",
+        "title": "Probability and Combinatorics",
         "url": "https://www.khanacademy.org/math/probability/probability-and-combinatorics-topic",
         "type": "article"
       },
@@ -2339,41 +2434,6 @@
         "title": "Greedy Algs. II & Intro to NP Completeness",
         "url": "https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=2939",
         "type": "video"
-      },
-      {
-        "title": "NP Completeness II & Reductions",
-        "url": "https://www.youtube.com/watch?v=e0tGC6ZQdQE&index=16&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm",
-        "type": "video"
-      },
-      {
-        "title": "NP Completeness III",
-        "url": "https://www.youtube.com/watch?v=fCX1BGT3wjE&index=17&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm",
-        "type": "video"
-      },
-      {
-        "title": "NP Completeness IV",
-        "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
-        "type": "video"
       }
     ]
   },
@@ -2409,41 +2469,6 @@
       {
         "title": "Greedy Algs. II & Intro to NP Completeness",
         "url": "https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=2939",
-        "type": "video"
-      },
-      {
-        "title": "NP Completeness II & Reductions",
-        "url": "https://www.youtube.com/watch?v=e0tGC6ZQdQE&index=16&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm",
-        "type": "video"
-      },
-      {
-        "title": "NP Completeness III",
-        "url": "https://www.youtube.com/watch?v=fCX1BGT3wjE&index=17&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm",
-        "type": "video"
-      },
-      {
-        "title": "NP Completeness IV",
-        "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
         "type": "video"
       }
     ]
@@ -2496,26 +2521,6 @@
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
         "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
-        "type": "video"
       }
     ]
   },
@@ -2567,26 +2572,6 @@
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
         "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
-        "type": "video"
       }
     ]
   },
@@ -2610,21 +2595,6 @@
         "type": "video"
       },
       {
-        "title": "Complexity: Approximation Algorithms",
-        "url": "https://www.youtube.com/watch?v=MEz1J9wY2iM&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=24",
-        "type": "video"
-      },
-      {
-        "title": "Complexity: Fixed-Parameter Algorithms",
-        "url": "https://www.youtube.com/watch?v=4q-jmGrmxKs&index=25&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp",
-        "type": "video"
-      },
-      {
-        "title": "Lecture 23: Computational Complexity",
-        "url": "https://www.youtube.com/watch?v=moPtwq_cVH8&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=24",
-        "type": "video"
-      },
-      {
         "title": "Greedy Algs. II & Intro to NP Completeness",
         "url": "https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=2939",
         "type": "video"
@@ -2642,26 +2612,6 @@
       {
         "title": "NP Completeness IV",
         "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
         "type": "video"
       }
     ]
@@ -2681,6 +2631,11 @@
     "title": "Travelling Salesman Problem",
     "description": "The Travelling Salesman Problem (TSP) is a classic problem in computer science. It is a problem that is NP-complete, which means that it is a problem that is hard to solve. It is also a problem that is used to test the efficiency of algorithms.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Traveling Salesman Problem",
+        "url": "https://en.wikipedia.org/wiki/Travelling_salesman_problem",
+        "type": "article"
+      },
       {
         "title": "What is the Traveling Salesman Problem?",
         "url": "https://www.youtube.com/watch?v=1pmBjIZ20pE",
@@ -2786,7 +2741,7 @@
     "description": "Balanced search trees are a type of data structure that allow for fast insertion, deletion, and lookup of data. They are a type of self-balancing binary search tree, which means that they are a binary tree that maintains the binary search tree property while also keeping the tree balanced. This means that the tree is always approximately balanced, which allows for fast insertion, deletion, and lookup of data.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Self-balancing binary search tree - Wikipedia",
+        "title": "Self-balancing Binary Search Tree - Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree",
         "type": "article"
       },
@@ -2820,6 +2775,11 @@
         "title": "Split And Merge",
         "url": "https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge",
         "type": "course"
+      },
+      {
+        "title": "AVL Tree - Programiz",
+        "url": "https://www.programiz.com/dsa/avl-tree",
+        "type": "article"
       },
       {
         "title": "MIT AVL Trees / AVL Sort",
@@ -2880,26 +2840,10 @@
       }
     ]
   },
-  "IaPd_zuLbiOCwoSHQLoIG": {
+  "2-3-4-trees@IaPd_zuLbiOCwoSHQLoIG.md": {
     "title": "2 3 4 Trees",
-    "description": "In practice: For every 2-4 tree, there are corresponding red–black trees with data elements in the same order. The insertion and deletion operations on 2-4 trees are also equivalent to color-flipping and rotations in red–black trees. This makes 2-4 trees an important tool for understanding the logic behind red–black trees, and this is why many introductory algorithm texts introduce 2-4 trees just before red–black trees, even though 2-4 trees are not often used in practice.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "CS 61B Lecture 26: Balanced Search Trees",
-        "url": "https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q",
-        "type": "article"
-      },
-      {
-        "title": "Bottom Up 234-Trees",
-        "url": "https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6",
-        "type": "video"
-      },
-      {
-        "title": "Top Down 234-Trees",
-        "url": "https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5",
-        "type": "video"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "UOYeM-hqIKCrB9hGez4Q_": {
     "title": "K-ary / M-ary Tree",
@@ -2942,11 +2886,6 @@
         "type": "video"
       },
       {
-        "title": "MIT 6.851 - Memory Hierarchy Models",
-        "url": "https://www.youtube.com/watch?v=V3omVLzI0WE&index=7&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf",
-        "type": "video"
-      },
-      {
         "title": "B-Trees (playlist) in 26 minutes",
         "url": "https://www.youtube.com/playlist?list=PL9xmBV_5YoZNFPPv98DjTdD9X6UI9KMHz",
         "type": "video"
@@ -2963,7 +2902,7 @@
         "type": "opensource"
       },
       {
-        "title": "System Design: The complete course",
+        "title": "System Design: The Complete Course",
         "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo",
         "type": "article"
       },
@@ -2983,7 +2922,7 @@
         "type": "video"
       },
       {
-        "title": "System design interview: Scale to 1 million users",
+        "title": "System Design interview: Scale to 1 million users",
         "url": "https://www.youtube.com/watch?v=YkGHxOg9d3M",
         "type": "video"
       }
@@ -3014,6 +2953,11 @@
     "title": "Load Balancing",
     "description": "Load balancing is the process of distributing network or application traffic across a cluster of servers. Load balancing is used to improve responsiveness and reliability of applications, maximize throughput, minimize response time, and avoid overload of any single server.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "What is Load Balancing? | How load balancers work",
+        "url": "https://www.cloudflare.com/learning/performance/what-is-load-balancing/",
+        "type": "article"
+      },
       {
         "title": "Load Balancers 101",
         "url": "https://www.youtube.com/watch?v=galcDRNd5Ow",
@@ -3058,6 +3002,11 @@
     "description": "A CDN is a network of servers that are distributed geographically. The servers are connected to each other and to the internet. The servers are used to deliver content to users. The content is delivered to the user from the server that is closest to the user. This is done to reduce latency and improve the performance of the content delivery.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "What is a CDN?",
+        "url": "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/",
+        "type": "article"
+      },
+      {
         "title": "Content Delivery Network (CDN) - System Design",
         "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#content-delivery-network-cdn",
         "type": "article"
@@ -3074,13 +3023,13 @@
     "description": "A proxy server is an intermediary piece of hardware/software sitting between the client and the backend server. It receives requests from clients and relays them to the origin servers. Typically, proxies are used to filter requests, log requests, or sometimes transform requests (by adding/removing headers, encrypting/decrypting, or compression).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Proxy - System Design",
-        "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#proxy",
+        "title": "Proxy Servers",
+        "url": "https://roadmap.sh/guides/proxy-servers",
         "type": "article"
       },
       {
-        "title": "Proxy Servers",
-        "url": "https://roadmap.sh/guides/proxy-servers",
+        "title": "Proxy - System Design",
+        "url": "https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#proxy",
         "type": "article"
       }
     ]
@@ -3090,7 +3039,7 @@
     "description": "The CAP theorem states that it is impossible for a distributed data store to simultaneously provide more than two out of Consistency, Availability and Partition Tolerance.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "CAP Theorem - Wikipedia",
+        "title": "CAP Theorem",
         "url": "https://en.wikipedia.org/wiki/CAP_theorem",
         "type": "article"
       },
@@ -3127,7 +3076,7 @@
     "description": "Architectural patterns are the fundamental organization of a system, defining how the system is composed and how its components interact. Architectural patterns are identified by their name, like client-server, peer-to-peer, and layered.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "List of software architecture styles and patterns",
+        "title": "List of Software Architecture Styles and Patterns",
         "url": "https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns",
         "type": "article"
       }
@@ -3163,6 +3112,21 @@
     "title": "GraphQL",
     "description": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Visit Dedicated GraphQL Roadmap",
+        "url": "https://roadmap.sh/graphql",
+        "type": "article"
+      },
+      {
+        "title": "GraphQL",
+        "url": "https://graphql.org/",
+        "type": "article"
+      },
+      {
+        "title": "GraphQL Documentation",
+        "url": "https://graphql.org/learn/",
+        "type": "article"
+      },
       {
         "title": "Apollo GraphQL Tutorials",
         "url": "https://www.apollographql.com/tutorials/",
@@ -3227,7 +3191,7 @@
     "description": "Long polling is a technique used to implement server push functionality over HTTP. It is a method of opening a request on the server and keeping it open until an event occurs, at which point the server responds. This is in contrast to a regular HTTP request, where the server responds immediately with whatever data is available at the time.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Long polling",
+        "title": "Long Polling",
         "url": "https://javascript.info/long-polling",
         "type": "article"
       },
@@ -3252,7 +3216,18 @@
   "bVjI14VismTHNCyA0mEBP": {
     "title": "Web Sockets",
     "description": "Web sockets are a bidirectional communication protocol between a client and a server. They are used for real-time applications like chat, multiplayer games, and live data updates. Web sockets are also used to establish a connection between a server and a client. This connection is then used to send data in both directions.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "WebSockets",
+        "url": "https://en.wikipedia.org/wiki/WebSocket",
+        "type": "article"
+      },
+      {
+        "title": "Web Sockets API",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+        "type": "article"
+      }
+    ]
   },
   "JckRqZA8C6IqQLPpTCgf4": {
     "title": "SSE",
@@ -3280,12 +3255,12 @@
     "description": "A database is a collection of useful data of one or more related organizations structured in a way to make data an asset to the organization. A database management system is a software designed to assist in maintaining and extracting large collections of data in a timely fashion.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Oracle: What is a Database?",
+        "title": "What is a Database?",
         "url": "https://www.oracle.com/database/what-is-database/",
         "type": "article"
       },
       {
-        "title": "Prisma.io: What are Databases?",
+        "title": "What are Databases?",
         "url": "https://www.prisma.io/dataguide/intro/what-are-databases",
         "type": "article"
       },
@@ -3362,7 +3337,13 @@
   "ii1vF74u3yrFNlw_21b3B": {
     "title": "DDL",
     "description": "DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database. DDL is a set of SQL commands used to create, modify, and delete database structures but not data. These commands are normally not used by a general user, who should be accessing the database via an application.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "DDL",
+        "url": "https://en.wikipedia.org/wiki/Data_definition_language",
+        "type": "article"
+      }
+    ]
   },
   "tcQSH-eAvJUZuePTDjAIb": {
     "title": "DML",
@@ -3383,12 +3364,24 @@
   "05lkb3B86Won7Rkf-8DeD": {
     "title": "DQL",
     "description": "DQL statements are used for performing queries on the data within schema objects. The purpose of the DQL Command is to get some schema relation based on the query passed to it. We can define DQL as follows it is a component of SQL statement that allows getting data from the database and imposing order upon it. It includes the SELECT statement. This command allows getting the data out of the database to perform operations with it. When a SELECT is fired against a table or tables the result is compiled into a further temporary table, which is displayed or perhaps received by the program i.e. a front-end.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "Data Query Language",
+        "url": "https://en.wikipedia.org/wiki/Data_query_language",
+        "type": "article"
+      }
+    ]
   },
   "4bUmfuP2qgcli8I2Vm9zh": {
     "title": "DCL",
     "description": "DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system.\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "DCL",
+        "url": "https://en.wikipedia.org/wiki/Data_Control_Language",
+        "type": "article"
+      }
+    ]
   },
   "_sm63rZNKoibVndeNgOpW": {
     "title": "Locking",
@@ -3435,7 +3428,18 @@
   "q3nRhTYS5wg9tYnQe2sCF": {
     "title": "BASE",
     "description": "The rise in popularity of NoSQL databases provided a flexible and fluidity with ease to manipulate data and as a result, a new database model was designed, reflecting these properties. The acronym BASE is slightly more confusing than ACID but however, the words behind it suggest ways in which the BASE model is different and acronym BASE stands for:-\n\n*   **B**asically **A**vailable\n*   **S**oft state\n*   **E**ventual consistency\n\nVisit the following resources to learn more:",
-    "links": []
+    "links": [
+      {
+        "title": "ACID vs. BASE Database Model",
+        "url": "https://phoenixnap.com/kb/acid-vs-base",
+        "type": "article"
+      },
+      {
+        "title": "What Is BASE in Database Engineering?",
+        "url": "https://www.lifewire.com/abandoning-acid-in-favor-of-base-1019674",
+        "type": "article"
+      }
+    ]
   },
   "uqfeiQ9K--QkGNwks4kjk": {
     "title": "CAP Theorem",
@@ -3484,6 +3488,11 @@
     "description": "An index is a data structure that you build and assign on top of an existing table that basically looks through your table and tries to analyze and summarize so that it can create shortcuts.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Database Indexes Explained",
+        "url": "https://www.essentialsql.com/what-is-a-database-index/",
+        "type": "article"
+      },
+      {
         "title": "Database Indexing Explained",
         "url": "https://www.youtube.com/watch?v=-qNSXK7s7_w",
         "type": "video"
@@ -3513,6 +3522,11 @@
       {
         "title": "What are Transactions?",
         "url": "https://fauna.com/blog/database-transaction",
+        "type": "article"
+      },
+      {
+        "title": "Database Transaction",
+        "url": "https://en.wikipedia.org/wiki/Database_transaction",
         "type": "article"
       }
     ]
@@ -3619,7 +3633,7 @@
   },
   "pZ5x_zDYGzW9VxYycyXtN": {
     "title": "OSI Model",
-    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're are trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
+    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Cloudflare - What is the OSI model",
@@ -3635,7 +3649,7 @@
   },
   "Fed5y1D95WPpqoVg7kmob": {
     "title": "TCP/IP Model",
-    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're are trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
+    "description": "The OSI and TCP/IP model is used to help the developer to design their system for interoperability. The OSI model has 7 layers while the TCP/IP model has a more summarized form of the OSI model only consisting 4 layers. This is important if you're trying to design a system to communicate with other systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Cloudflare - What is the OSI model",
@@ -3726,6 +3740,16 @@
     "description": "TLS (Transport Layer Security) is a cryptographic protocol that provides privacy and data integrity between two communicating applications. It is widely used to secure HTTP, although it can be used with any protocol. TLS is often used in combination with HTTPS, which is HTTP over TLS.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "What is TLS & How Does it Work? - Internet Society",
+        "url": "https://www.internetsociety.org/deploy360/tls/basics/",
+        "type": "article"
+      },
+      {
+        "title": "What is TLS (Transport Layer Security)? - Cloudflare",
+        "url": "https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/",
+        "type": "article"
+      },
+      {
         "title": "SSL and HTTPS",
         "url": "https://www.youtube.com/watch?v=S2iBR2ZlZf0",
         "type": "video"
@@ -3804,7 +3828,7 @@
     "description": "Public-key cryptography, or asymmetric cryptography, is the field of cryptographic systems that use pairs of related keys. Each key pair consists of a public key and a corresponding private key. Key pairs are generated with cryptographic algorithms based on mathematical problems termed one-way functions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Public-key cryptography - Wikipedia",
+        "title": "Public-key Cryptography",
         "url": "https://en.wikipedia.org/wiki/Public-key_cryptography",
         "type": "article"
       },
@@ -3846,6 +3870,11 @@
     "description": "Hashing algorithms are used to generate a unique value for a given input. This value is called a hash. Hashing algorithms are used to verify the integrity of data, to store passwords, and to generate unique identifiers for data.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Hashing Algorithm Overview:",
+        "url": "https://www.okta.com/identity-101/hashing-algorithms/",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Algorithms",
         "url": "https://app.daily.dev/tags/algorithms?ref=roadmapsh",
         "type": "article"
@@ -3877,7 +3906,12 @@
         "type": "opensource"
       },
       {
-        "title": "Wikipedia - OWASP",
+        "title": "OWASP",
+        "url": "https://owasp.org/",
+        "type": "article"
+      },
+      {
+        "title": "OWASP - Wiki",
         "url": "https://en.wikipedia.org/wiki/OWASP",
         "type": "article"
       },
@@ -3898,12 +3932,12 @@
     "description": "Computers are everywhere. They are in our phones, our cars, our homes, and even in our pockets. But how do they actually work? How do they take in information, and how do they output information?\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "How CPU executes a program",
+        "title": "How CPU Executes A Program",
         "url": "https://www.youtube.com/watch?v=XM4lGflQFvA",
         "type": "video"
       },
       {
-        "title": "How computers calculate - ALU",
+        "title": "How Computers Calculate - ALU",
         "url": "https://youtu.be/1I5ZMmrOfnA",
         "type": "video"
       },
@@ -3926,7 +3960,7 @@
   },
   "1eglba39q426Nh0E0qcdj": {
     "title": "How CPU Executes Programs",
-    "description": "Visit the following resources to learn more:",
+    "description": "The CPU executes programs by repeatedly fetching instructions from memory, decoding them to understand the operation, and then executing those operations. This cycle, called the fetch-decode-execute cycle, continues for each instruction in the program, with the CPU using registers for temporary storage and a program counter to keep track of the next instruction. Modern CPUs use techniques like pipelining and caches to speed up this process, enabling them to execute complex programs efficiently.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Explore top posts about Computing",
@@ -3934,7 +3968,7 @@
         "type": "article"
       },
       {
-        "title": "How CPU executes a program",
+        "title": "How CPU Executes a Program",
         "url": "https://www.youtube.com/watch?v=XM4lGflQFvA",
         "type": "video"
       }
@@ -3945,7 +3979,12 @@
     "description": "Computers calculate using the binary system, where all data is represented as 0s and 1s. These binary states correspond to the ON/OFF positions of transistors, which are the building blocks of logic gates (AND, OR, NOT). Numbers, characters, and instructions are broken into binary sequences (bits), and grouped into bytes (8 bits). Arithmetic operations like addition are performed through logic gates, which combine binary values. The CPU executes these calculations by following a fetch-decode-execute cycle. Complex calculations, such as handling decimals, use floating-point representation. Programs written in high-level languages are compiled into machine code for the CPU to execute.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "How computers calculate - ALU",
+        "title": "How Does A Computer Calculate Numbers?",
+        "url": "https://www.sciencing.com/computer-calculate-numbers-4705975/",
+        "type": "article"
+      },
+      {
+        "title": "How Computers Calculate - ALU",
         "url": "https://youtu.be/1I5ZMmrOfnA",
         "type": "video"
       }
@@ -3953,8 +3992,13 @@
   },
   "U3379F4AO1KSmGtVmPr27": {
     "title": "Registers and RAM",
-    "description": "**_Registers_** are the smallest data-holding elements built into the processor itself. Registers are the memory locations that are directly accessible by the processor. The registers hold the instruction or operands currently accessed by the CPU.\n\nRegisters are the high-speed accessible storage elements. The processor accesses the registers within one CPU clock cycle. The processor can decode the instructions and perform operations on the register contents at more than one operation per CPU clock cycle.\n\n**_Memory_** is a hardware device that stores computer programs, instructions, and data. The memory that is internal to the processor is primary memory (RAM), and the memory that is external to the processor is secondary (**Hard Drive**). Primary memory or RAM is a volatile memory, meaning the primary memory data exist when the system's power is on, and the data vanishes as the system is switched off. The primary memory contains the data required by the currently executing program in the CPU. If the data required by the processor is not in primary memory, then the data is transferred from secondary storage to primary memory, and then it is fetched by the processor.\n\nVisit the following resources to learn more:",
+    "description": "**_Registers_** are the smallest data-holding elements built into the processor itself. Registers are the memory locations that are directly accessible by the processor. The registers hold the instruction or operands currently accessed by the CPU.\n\nRegisters are the high-speed accessible storage elements. The processor accesses the registers within one CPU clock cycle. The processor can decode the instructions and perform operations on the register contents at more than one operation per CPU clock cycle.\n\n**_Memory_** is a hardware device that stores computer programs, instructions, and data. The memory that is internal to the processor is primary memory (RAM), and the memory that is external to the processor is secondary (**Hard Drive**).\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "RAM vs. Registers - What's the Difference?",
+        "url": "https://thisvsthat.io/ram-vs-registers",
+        "type": "article"
+      },
       {
         "title": "Registers and RAM",
         "url": "https://youtu.be/fpnE6UAfbtU",
@@ -3964,8 +4008,13 @@
   },
   "AxiGqbteK7ZSXEUt_zckH": {
     "title": "Instructions and Programs",
-    "description": "Visit the following resources to learn more:",
+    "description": "Instructions are the most basic commands a CPU can understand, directing it to perform specific actions like adding numbers or moving data. A program, on the other hand, is a collection of these instructions, organized in a sequence to accomplish a particular task. Think of instructions as individual words and a program as a complete sentence or story; the CPU executes these instructions one by one, following the program's logic, to achieve the desired outcome.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Instruction and Programs",
+        "url": "https://nerdfighteria.info/v/zltgXvg6r3k/",
+        "type": "article"
+      },
       {
         "title": "Instructions and Programs",
         "url": "https://youtu.be/zltgXvg6r3k",
@@ -3975,8 +4024,13 @@
   },
   "DjTQjMbika4_yTzrBpcmB": {
     "title": "CPU Cache",
-    "description": "Visit the following resources to learn more:",
+    "description": "A CPU cache is a hardware cache used by the central processing unit of a computer to reduce the average cost to access data from the main memory. A cache is a smaller, faster memory, located closer to a processor core, which stores copies of the data from frequently used main memory locations.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "What is CPU Cache",
+        "url": "https://www.howtogeek.com/854138/what-is-cpu-cache/",
+        "type": "article"
+      },
       {
         "title": "Explore top posts about Computing",
         "url": "https://app.daily.dev/tags/computing?ref=roadmapsh",
@@ -4019,6 +4073,11 @@
     "title": "Process Forking",
     "description": "Process forking is a way to create a new process from an existing process. The new process is a copy of the existing process. The new process is called a child process and the existing process is called a parent process.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Fork System Call in Operating System",
+        "url": "https://www.geeksforgeeks.org/fork-system-call-in-operating-system/",
+        "type": "article"
+      },
       {
         "title": "Understanding fork() system call for new process creation",
         "url": "https://www.youtube.com/watch?v=PwxTbksJ2fo",
@@ -4070,10 +4129,10 @@
   },
   "xUo5Ox_HTgGyeQMDIkVyK": {
     "title": "Concurrency in Multiple Cores",
-    "description": "Visit the following resources to learn more:",
+    "description": "Concurrency or Parallelism is simultaneous execution of processes on a multiple cores per CPU or multiple CPUs (on a single motherboard). Concurrency is when Parallelism is achieved on a single core/CPU by using scheduling algorithms that divides the CPU's time (time-slice).\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is the difference between multicore and concurrent programming?",
+        "title": "Difference between Multi-core and concurrent Programming?",
         "url": "https://stackoverflow.com/questions/5372861/what-is-the-difference-between-multicore-and-concurrent-programming",
         "type": "article"
       },
@@ -4081,32 +4140,22 @@
         "title": "Concurrency in Multicore systems",
         "url": "https://cs.stackexchange.com/questions/140793/concurrency-in-multiple-core",
         "type": "article"
+      },
+      {
+        "title": "Mastering Concurrency",
+        "url": "https://www.harrisonclarke.com/blog/mastering-concurrency-a-guide-for-software-engineers",
+        "type": "article"
       }
     ]
   },
   "Ge2nagN86ofa2y-yYR1lv": {
     "title": "Scheduling Algorithms",
-    "description": "CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it. The selection of a process is based on a particular scheduling algorithm. The scheduling algorithm is chosen depending on the type of system and the requirements of the processes.\n\nHere is the list of some of the most commonly used scheduling algorithms:\n\n*   **First Come First Serve (FCFS):** The process that arrives first is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Job First (SJF):** The process with the smallest execution time is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Remaining Time First (SRTF):** The process with the smallest remaining execution time is allocated the CPU first. It is a preemptive algorithm.\n*   **Round Robin (RR):** The process is allocated the CPU for a fixed time slice. The time slice is usually 10 milliseconds. It is a preemptive algorithm.\n*   **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.\n*   **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.\n*   **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.\n\nVisit the following resources to learn more :",
+    "description": "CPU Scheduling is the process of selecting a process from the ready queue and allocating the CPU to it. The selection of a process is based on a particular scheduling algorithm. The scheduling algorithm is chosen depending on the type of system and the requirements of the processes.\n\nHere is the list of some of the most commonly used scheduling algorithms:\n\n*   **First Come First Serve (FCFS):** The process that arrives first is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Job First (SJF):** The process with the smallest execution time is allocated the CPU first. It is a non-preemptive algorithm.\n*   **Shortest Remaining Time First (SRTF):** The process with the smallest remaining execution time is allocated the CPU first. It is a preemptive algorithm.\n*   **Round Robin (RR):** The process is allocated the CPU for a fixed time slice. The time slice is usually 10 milliseconds. It is a preemptive algorithm.\n*   **Priority Scheduling:** The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. It is a preemptive algorithm.\n*   **Multi-level Feedback Queue Scheduling:** The processes are divided into different queues based on their priority. The process with the highest priority is allocated the CPU first. If a process is preempted, it is moved to the next queue. It is a preemptive algorithm.\n*   **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.\n*   **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "CPU Scheduling in Operating Systems - geeksforgeeks",
-        "url": "https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/",
+        "title": "CPU Scheduling in Operating System",
+        "url": "https://www.scaler.com/topics/operating-system/cpu-scheduling/",
         "type": "article"
-      },
-      {
-        "title": "Lottery Scheduling for Operating Systems - geeksforgeeks",
-        "url": "https://www.geeksforgeeks.org/lottery-process-scheduling-in-operating-system/",
-        "type": "article"
-      },
-      {
-        "title": "Program for Round Robin Scheduling for the same Arrival time - geeksforgeeks",
-        "url": "https://www.geeksforgeeks.org/program-for-round-robin-scheduling-for-the-same-arrival-time/",
-        "type": "article"
-      },
-      {
-        "title": "Introduction to CPU Scheduling",
-        "url": "https://youtu.be/EWkQl0n0w5M?si=Lb-PxN_t-rDfn4JL",
-        "type": "video"
       }
     ]
   },
@@ -4115,12 +4164,17 @@
     "description": "CPU Interrupts are a way for the CPU to communicate with the rest of the computer. They are a way for the CPU to tell the rest of the computer that it needs to do something. For example, if the CPU is running a program and it needs to read from the keyboard, it will send an interrupt to the keyboard to tell it to send the data to the CPU. The CPU will then wait for the keyboard to send the data and then continue running the program.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "System Interrupts 100% CPU",
+        "url": "https://www.wikihow.com/System-Interrupts-100-Cpu",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Computing",
         "url": "https://app.daily.dev/tags/computing?ref=roadmapsh",
         "type": "article"
       },
       {
-        "title": "Video on Interrupts",
+        "title": "Interrupts",
         "url": "https://youtu.be/iKlAWIKEyuw",
         "type": "video"
       }
@@ -4163,7 +4217,7 @@
     "description": "Skip lists are a data structure that allows you to perform operations on a sorted list in O(log n) time. Skip lists are a probabilistic data structure, which means that the probability of a certain operation taking a certain amount of time is a certain value. In the case of skip lists, the probability of an operation taking O(log n) time is 1.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Skip Lists - Wikipedia",
+        "title": "Skip Lists",
         "url": "https://en.wikipedia.org/wiki/Skip_list",
         "type": "article"
       },
@@ -4206,41 +4260,6 @@
       {
         "title": "Greedy Algs. II & Intro to NP Completeness",
         "url": "https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=2939",
-        "type": "video"
-      },
-      {
-        "title": "NP Completeness II & Reductions",
-        "url": "https://www.youtube.com/watch?v=e0tGC6ZQdQE&index=16&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm",
-        "type": "video"
-      },
-      {
-        "title": "NP Completeness III",
-        "url": "https://www.youtube.com/watch?v=fCX1BGT3wjE&index=17&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm",
-        "type": "video"
-      },
-      {
-        "title": "NP Completeness IV",
-        "url": "https://www.youtube.com/watch?v=NKLDp3Rch3M&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=18",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 23 - NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=ItHp5laE1VE&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=23",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 24 - Satisfiability",
-        "url": "https://www.youtube.com/watch?v=inaFJeCzGxU&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=24",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 25 - More NP-Completeness",
-        "url": "https://www.youtube.com/watch?v=B-bhKxjZLlc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=25",
-        "type": "video"
-      },
-      {
-        "title": "CSE373 2020 - Lecture 26 - NP-Completeness Challenge",
-        "url": "https://www.youtube.com/watch?v=_EzetTkG_Cc&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=26",
         "type": "video"
       }
     ]

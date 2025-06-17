@@ -6,5 +6,3 @@ Learn more from the following resources:
 
 - [@article@Packet Sniffing Explained](https://www.avast.com/c-packet-sniffing)
 - [@video@What is Packet Sniffing?](https://www.youtube.com/watch?v=5oioSbgBQ8I)
-
-

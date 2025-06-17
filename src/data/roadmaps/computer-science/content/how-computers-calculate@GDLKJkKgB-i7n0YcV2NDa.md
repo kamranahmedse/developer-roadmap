@@ -4,4 +4,5 @@ Computers calculate using the binary system, where all data is represented as 0s
 
 Visit the following resources to learn more:
 
-- [@video@How computers calculate - ALU](https://youtu.be/1I5ZMmrOfnA)
+- [@article@How Does A Computer Calculate Numbers?](https://www.sciencing.com/computer-calculate-numbers-4705975/)
+- [@video@How Computers Calculate - ALU](https://youtu.be/1I5ZMmrOfnA)

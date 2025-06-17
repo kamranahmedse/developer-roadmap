@@ -97,7 +97,7 @@ export function UpdateProfileForm() {
             type="text"
             name="name"
             id="name"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             placeholder="John Doe"
             value={name}
@@ -123,7 +123,7 @@ export function UpdateProfileForm() {
             type="email"
             name="email"
             id="email"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             disabled
             placeholder="john@example.com"
@@ -144,7 +144,7 @@ export function UpdateProfileForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
           {isLoading ? 'Please wait...' : 'Update Information'}
         </button>

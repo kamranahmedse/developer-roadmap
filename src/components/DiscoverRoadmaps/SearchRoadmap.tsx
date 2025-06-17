@@ -53,7 +53,7 @@ export function SearchRoadmap(props: SearchRoadmapProps) {
           type="text"
           minLength={3}
           placeholder="Type 3 or more characters to search..."
-          className="w-full rounded-md border border-gray-200 px-3 py-2 pl-9 text-sm transition-colors focus:border-black focus:outline-none"
+          className="w-full rounded-md border border-gray-200 px-3 py-2 pl-9 text-sm transition-colors focus:border-black focus:outline-hidden"
           value={term}
           onChange={(e) => setTerm(e.target.value)}
         />
@@ -64,7 +64,7 @@ export function SearchRoadmap(props: SearchRoadmapProps) {
         )}
       </form>
       {total > 0 && (
-        <p className="hidden flex-shrink-0 text-sm text-gray-500 sm:block">
+        <p className="hidden shrink-0 text-sm text-gray-500 sm:block">
           {Intl.NumberFormat('en-US', {
             notation: 'compact',
           }).format(total)}{' '}

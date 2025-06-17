@@ -1,6 +1,6 @@
 # RAIL Model
 
-The RAIL Model is a user-centric performance model developed by Google that focuses on improving web application responsiveness and user experience. RAIL stands for Response, Animation, Idle, and Load. It provides specific performance goals: Responses to user input should occur within 100ms; Animations should run at 60 frames per second (16ms per frame); Idle time should be used to complete deferred work; and Load time for interactive content should be under 5 seconds. The model emphasizes the importance of perceived performance, encouraging developers to prioritize user interactions and break up long tasks. By adhering to RAIL guidelines, developers can create web applications that feel fast and responsive, enhancing user satisfaction and engagement.
+The RAIL Model from Google helps make websites feel fast. RAIL stands for Response (quick reaction to clicks), Animation (smooth visuals), Idle (using downtime well), and Load (fast page start). It sets goals like responding in 100ms and animations at 60fps. Following RAIL makes users happier because the site feels responsive.
 
 Visit the following resources to learn more:
 

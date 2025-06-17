@@ -334,11 +334,6 @@
         "title": "JavaScript Scope",
         "url": "https://www.w3schools.com/js/js_scope.asp",
         "type": "article"
-      },
-      {
-        "title": "Block Scoping in JavaScript",
-        "url": "https://www.geeksforgeeks.org/javascript-es2015-block-scoping",
-        "type": "article"
       }
     ]
   },
@@ -1349,11 +1344,6 @@
         "title": "JavaScript MDN Docs",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators",
         "type": "article"
-      },
-      {
-        "title": "Comparison operators",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators",
-        "type": "article"
       }
     ]
   },
@@ -1573,7 +1563,7 @@
   },
   "s8wUJivWmetysJ8bt9FBC": {
     "title": "Built-in Functions",
-    "description": "*   A JavaScript **method** is a property containing a **function definition** . In other words, when the data stored on an object is a function we call that a method.\n*   To differentiate between properties and methods, we can think of it this way: **A property is what an object has, while a method is what an object does.**\n*   Since JavaScript methods are actions that can be performed on objects, we first need to have objects to start with. There are several objects built into JavaScript which we can use.\n\nVisit the following resources to learn more:",
+    "description": "JavaScript offers a variety of built-in functions that simplify common tasks, available globally or within specific objects without requiring explicit definition. Functions like parseInt(), setTimeout(), and Math.random() can be used directly, while objects like Array, String, and Date include built-in methods for efficient data manipulation. Understanding these functions enhances development by leveraging JavaScript’s core features without reinventing the wheel.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "JavaScript Built-in Functions",

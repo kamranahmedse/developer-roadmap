@@ -53,7 +53,7 @@ export function EmbedRoadmapModal(props: ShareRoadmapModalProps) {
       <div className="flex items-center justify-between px-4 pb-4 pt-2">
         <button
           className={cn(
-            'flex h-9 w-full items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white outline-none',
+            'flex h-9 w-full items-center justify-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white outline-hidden',
             {
               'bg-green-500 hover:bg-green-600 focus:bg-green-600': isCopied,
               'bg-gray-900 hover:bg-gray-800 focus:bg-gray-800': !isCopied,

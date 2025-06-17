@@ -1,7 +1,11 @@
 ---
 import { getGuideTableOfContent, type HeadingGroupType } from '../../lib/guide';
 import { markdownToHtml } from '../../lib/markdown';
-import { type QuestionGroupType } from '../../lib/question-group';
+import {
+  type QuestionGroupType,
+  type QuestionType,
+} from '../../lib/question-group';
+import { slugify } from '../../lib/slugger';
 import { RelatedGuides } from '../Guide/RelatedGuides';
 import MarkdownFile from '../MarkdownFile.astro';
 import { TableOfContent } from '../TableOfContent/TableOfContent';
@@ -13,8 +17,31 @@ interface Props {
 
 const { questionGroup } = Astro.props;
 
+const { frontmatter: guideFrontmatter, author } = questionGroup;
+
+// Group questions by topics
+const questionsGroupedByTopics = questionGroup.questions.reduce(
+  (acc, question) => {
+    question.topics?.forEach((topic) => {
+      acc[topic] = [...(acc[topic] || []), question];
+    });
+    return acc;
+  },
+  {} as Record<string, QuestionType[]>,
+);
+
+// Get all unique topics in the order they appear in the questions array
+const topicsInOrder: string[] = [];
+questionGroup.questions.forEach((question) => {
+  question.topics?.forEach((topic) => {
+    if (!topicsInOrder.includes(topic)) {
+      topicsInOrder.push(topic);
+    }
+  });
+});
+
 const allHeadings = questionGroup.getHeadings();
-const tableOfContent: HeadingGroupType[] = [
+let tableOfContent: HeadingGroupType[] = [
   ...getGuideTableOfContent(allHeadings),
   {
     depth: 2,
@@ -24,42 +51,39 @@ const tableOfContent: HeadingGroupType[] = [
   },
   {
     depth: 2,
-    children: [
-      {
+    children: topicsInOrder.map((topic) => {
+      let topicText = topic;
+      let topicSlug = slugify(topic);
+      if (topic.toLowerCase() === 'beginners') {
+        topicText = 'Beginner Level';
+        topicSlug = 'beginner-level';
+      } else if (topic.toLowerCase() === 'intermediate') {
+        topicText = 'Intermediate Level';
+        topicSlug = 'intermediate-level';
+      } else if (topic.toLowerCase() === 'advanced') {
+        topicText = 'Advanced Level';
+        topicSlug = 'advanced-level';
+      }
+
+      return {
         depth: 2,
-        title: 'Beginner Level',
         children: [],
-        slug: 'beginner-level',
-        text: 'Beginner Level',
-      } as HeadingGroupType,
-      {
-        depth: 2,
-        title: 'Intermediate Level',
-        children: [],
-        slug: 'intermediate-level',
-        text: 'Intermediate Level',
-      } as HeadingGroupType,
-      {
-        depth: 2,
-        title: 'Advanced Level',
-        children: [],
-        slug: 'advanced-level',
-        text: 'Advanced Level',
-      } as HeadingGroupType,
-    ],
+        slug: topicSlug,
+        text: topicText,
+      };
+    }),
     slug: 'questions-list',
     text: 'Questions List',
   },
 ];
 
 const showTableOfContent = tableOfContent.length > 0;
-const { frontmatter: guideFrontmatter, author } = questionGroup;
 ---
 
 <article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
   {
     showTableOfContent && (
-      <div class='bg-gradient-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
+      <div class='bg-linear-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
         <RelatedGuides
           relatedTitle={guideFrontmatter?.relatedTitle}
           relatedGuides={questionGroup?.relatedGuides || {}}
@@ -79,7 +103,7 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
     ]}
   >
     <MarkdownFile>
-      <h1 class='mb-3 text-balance text-4xl font-bold'>
+      <h1 class='mb-3 text-4xl font-bold text-balance'>
         {guideFrontmatter.title}
       </h1>
       {
@@ -92,7 +116,7 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
               <img
                 alt={author.frontmatter.name}
                 src={author.frontmatter.imageUrl}
-                class='mb-0 mr-2 inline h-5 w-5 rounded-full'
+                class='mr-2 mb-0 inline h-5 w-5 rounded-full'
               />
               {author.frontmatter.name}
             </a>
@@ -129,31 +153,30 @@ const { frontmatter: guideFrontmatter, author } = questionGroup;
       </p>
 
       {
-        ['beginner', 'intermediate', 'advanced'].map((questionLevel) => (
+        topicsInOrder.map((questionLevel) => (
           <div class='mb-5'>
-            <h3 id={`${questionLevel}-level`} class='mb-0 capitalize'>
-              {questionLevel} Level
+            <h3 id={slugify(questionLevel)} class='mb-0 capitalize'>
+              {questionLevel.toLowerCase() === 'beginners' ? 'Beginner Level' :
+               questionLevel.toLowerCase() === 'intermediate' ? 'Intermediate Level' :
+               questionLevel.toLowerCase() === 'advanced' ? 'Advanced Level' :
+               questionLevel}
             </h3>
-            {questionGroup.questions
-              .filter((q) => {
-                return q?.topics
-                  ?.map((t) => t.toLowerCase())
-                  .includes(questionLevel);
-              })
-              .map((q) => (
-                <div class='mb-5'>
-                  <h4>{q.question}</h4>
-                  <div set:html={markdownToHtml(q.answer, false)} />
-                </div>
-              ))}
+            {questionsGroupedByTopics[questionLevel].map((q) => (
+              <div class='mb-5'>
+                <h4>{q.question}</h4>
+                <div set:html={markdownToHtml(q.answer, false)} />
+              </div>
+            ))}
           </div>
         ))
       }
-      {questionGroup.ending && (
-        <div class='mb-5'>
-          <div set:html={markdownToHtml(questionGroup.ending, false)} />
-        </div>
-      )}
+      {
+        questionGroup.ending && (
+          <div class='mb-5'>
+            <div set:html={markdownToHtml(questionGroup.ending, false)} />
+          </div>
+        )
+      }
     </MarkdownFile>
   </div>
 </article>

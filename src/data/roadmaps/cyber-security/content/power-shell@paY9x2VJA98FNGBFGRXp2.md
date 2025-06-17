@@ -5,7 +5,6 @@
 Learn more from the following resources:
 
 - [@official@PowerShell.org](https://powershell.org/)
-- [@article@Microsoft's Official PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
+- [@article@Microsoft's PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
 - [@video@PowerShell Course](https://www.youtube.com/watch?v=ZOoCaWyifmI)
 - [@opensource@Learning PowerShell GitHub Repository](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
-

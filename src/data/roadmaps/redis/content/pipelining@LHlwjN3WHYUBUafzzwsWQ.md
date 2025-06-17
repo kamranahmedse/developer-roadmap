@@ -5,4 +5,3 @@ Pipelining in Redis is a technique that allows clients to send multiple commands
 Learn more from the following resources:
 
 - [@official@Redis Pipelining](https://redis.io/docs/latest/develop/use/pipelining/)
-- [@article@Complete Guide to Redis Pipelining](https://www.geeksforgeeks.org/complete-guide-to-redis-pipelining/)

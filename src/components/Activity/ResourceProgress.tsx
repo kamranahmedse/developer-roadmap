@@ -1,7 +1,7 @@
 import { getUser } from '../../lib/jwt';
-import { getPercentage } from '../../helper/number';
 import { ResourceProgressActions } from './ResourceProgressActions';
 import { cn } from '../../lib/classname';
+import { getPercentage } from '../../lib/number';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -73,7 +73,7 @@ export function ResourceProgress(props: ResourceProgressType) {
           showActions ? 'pr-7' : '',
         )}
       >
-        <span className="flex-grow truncate">{title}</span>
+        <span className="grow truncate">{title}</span>
         <span className="text-xs text-gray-400">
           {parseInt(progressPercentage, 10)}%
         </span>

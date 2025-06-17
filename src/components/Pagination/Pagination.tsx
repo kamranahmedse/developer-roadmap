@@ -11,6 +11,7 @@ type PaginationProps = {
   totalCount: number;
   isDisabled?: boolean;
   onPageChange: (page: number) => void;
+  className?: string;
 };
 
 export function Pagination(props: PaginationProps) {
@@ -22,6 +23,7 @@ export function Pagination(props: PaginationProps) {
     currPage,
     perPage,
     isDisabled = false,
+    className,
   } = props;
 
   if (!totalPages || totalPages === 1) {
@@ -29,13 +31,19 @@ export function Pagination(props: PaginationProps) {
   }
 
   const pages = usePagination(currPage, totalPages, 5);
+  const showingFrom = (currPage - 1) * perPage + 1;
+  const showingTo = Math.min(showingFrom + perPage - 1, totalCount);
 
   return (
     <div
-      className={cn('flex items-center', {
-        'justify-between': variant === 'default',
-        'justify-start': variant === 'minimal',
-      })}
+      className={cn(
+        'flex items-center',
+        {
+          'justify-between': variant === 'default',
+          'justify-start': variant === 'minimal',
+        },
+        className,
+      )}
     >
       <div className="flex items-center gap-1 text-xs font-medium">
         <button
@@ -92,9 +100,9 @@ export function Pagination(props: PaginationProps) {
         </button>
       </div>
       <span className="ml-2 hidden text-sm font-normal text-gray-500 sm:block">
-        Showing {formatCommaNumber((currPage - 1) * perPage)} to{' '}
-        {formatCommaNumber((currPage - 1) * perPage + perPage)} of{' '}
-        {formatCommaNumber(totalCount)} entries
+        Showing {formatCommaNumber(showingFrom)} to{' '}
+        {formatCommaNumber(showingTo)} of {formatCommaNumber(totalCount)}{' '}
+        entries
       </span>
     </div>
   );

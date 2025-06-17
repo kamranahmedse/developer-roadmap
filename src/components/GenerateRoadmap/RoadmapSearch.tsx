@@ -1,12 +1,12 @@
-import { ArrowUpRight, Ban, Cog, Telescope, Wand } from 'lucide-react';
+import { ArrowUpRight, Ban, Telescope, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
 import { useEffect, useState } from 'react';
-import { getOpenAIKey, isLoggedIn } from '../../lib/jwt';
+import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
-import { OpenAISettings } from './OpenAISettings.tsx';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
-import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
+import { useIsPaidUser } from '../../queries/billing.ts';
 
 type RoadmapSearchProps = {
   roadmapTerm: string;
@@ -31,25 +31,23 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
     isKeyOnly,
   } = props;
 
+  const { isPaidUser, isLoading } = useIsPaidUser();
   const canGenerateMore = limitUsed < limit;
   const [isConfiguring, setIsConfiguring] = useState(false);
-  const [openAPIKey, setOpenAPIKey] = useState('');
   const [isAuthenticatedUser, setIsAuthenticatedUser] = useState(false);
   const [isLoadingResults, setIsLoadingResults] = useState(false);
 
   useEffect(() => {
-    setOpenAPIKey(getOpenAIKey() || '');
     setIsAuthenticatedUser(isLoggedIn());
   }, []);
 
   const randomTerms = ['OAuth', 'UI / UX', 'SRE', 'DevRel'];
 
   return (
-    <div className="flex flex-grow flex-col items-center px-4 py-6 sm:px-6 md:my-24 lg:my-32">
+    <div className="flex grow flex-col items-center px-4 py-6 sm:px-6 md:my-24 lg:my-32">
       {isConfiguring && (
-        <IncreaseRoadmapLimit
+        <UpgradeAccountModal
           onClose={() => {
-            setOpenAPIKey(getOpenAIKey()!);
             setIsConfiguring(false);
             loadAIRoadmapLimit();
           }}
@@ -92,7 +90,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           />
           <button
             className={cn(
-              'flex min-w-[154px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+              'flex min-w-[154px] shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
               'disabled:cursor-not-allowed disabled:opacity-50',
             )}
             onClick={(e) => {
@@ -104,10 +102,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             disabled={
               isLoadingResults ||
               (isAuthenticatedUser &&
-                (!limit ||
-                  !roadmapTerm ||
-                  limitUsed >= limit ||
-                  (isKeyOnly && !openAPIKey)))
+                (!limit || !roadmapTerm || limitUsed >= limit || isKeyOnly))
             }
           >
             {isLoadingResults && (
@@ -165,7 +160,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             </button>
           ))}
           <a
-            href="/ai/explore"
+            href="/ai-roadmaps/explore"
             className="flex items-center gap-1.5 rounded-full border border-black bg-gray-700 px-2 py-0.5 text-sm text-white transition-colors hover:border-black hover:bg-black"
           >
             Explore AI Roadmaps <Telescope size={17} />
@@ -186,7 +181,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </p>
           <p className="flex flex-col gap-2 text-center text-gray-500 sm:flex-row">
             <a
-              href="/ai/explore"
+              href="/ai-roadmaps/explore"
               className="flex items-center gap-1.5 rounded-full border border-purple-600 px-2.5 py-0.5 text-sm text-purple-600 transition-colors hover:bg-purple-600 hover:text-white"
             >
               Explore AI Generated Roadmaps <Telescope size={15} />
@@ -200,37 +195,22 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </p>
         </div>
       )}
-      {isKeyOnly && isAuthenticatedUser && (
+      {isKeyOnly && isAuthenticatedUser && !isPaidUser && (
         <div className="mx-auto mt-12 flex max-w-[450px] flex-col items-center gap-4">
-          {!openAPIKey && (
-            <>
-              <p className={'text-center text-red-500'}>
-                We have hit the limit for AI roadmap generation. Please try
-                again later or{' '}
-                <button
-                  onClick={() => setIsConfiguring(true)}
-                  className="font-semibold text-purple-600 underline underline-offset-2"
-                >
-                  add your own OpenAI API key.
-                </button>
-              </p>
-            </>
-          )}
-          {openAPIKey && (
-            <p className={'text-center text-gray-500'}>
-              You have added your own OpenAI API key.{' '}
-              <button
-                onClick={() => setIsConfiguring(true)}
-                className="font-semibold text-purple-600 underline underline-offset-2"
-              >
-                Configure it here if you want.
-              </button>
-            </p>
-          )}
+          <p className={'text-center text-red-500'}>
+            We have hit the limit for AI roadmap generation. Please try again
+            again later or{' '}
+            <button
+              onClick={() => setIsConfiguring(true)}
+              className="font-semibold text-purple-600 underline underline-offset-2"
+            >
+              get more credits.
+            </button>
+          </p>
 
           <p className="flex flex-col gap-2 text-center text-gray-500 sm:flex-row">
             <a
-              href="/ai/explore"
+              href="/ai-roadmaps/explore"
               className="flex items-center gap-1.5 rounded-full border border-purple-600 px-2.5 py-0.5 text-sm text-purple-600 transition-colors hover:bg-purple-600 hover:text-white"
             >
               Explore AI Roadmaps <Telescope size={15} />
@@ -244,7 +224,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </p>
         </div>
       )}
-      {!isKeyOnly && limit > 0 && isAuthenticatedUser && (
+      {!isKeyOnly && limit > 0 && isAuthenticatedUser && !isPaidUser && (
         <div className="mt-12 flex flex-col items-center gap-4">
           <p className="text-center text-gray-500">
             You have generated{' '}
@@ -257,29 +237,15 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             </span>{' '}
             roadmaps today.
           </p>
-          {isAuthenticatedUser && (
-            <p className="flex items-center text-sm">
-              {!openAPIKey && (
-                <button
-                  onClick={() => setIsConfiguring(true)}
-                  className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                >
-                  Need to generate more?{' '}
-                  <span className="font-semibold">Click here.</span>
-                </button>
-              )}
-
-              {openAPIKey && (
-                <button
-                  onClick={() => setIsConfiguring(true)}
-                  className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                >
-                  <Cog size={15} />
-                  Configure OpenAI key
-                </button>
-              )}
-            </p>
-          )}
+          <p className="flex items-center text-sm">
+            <button
+              onClick={() => setIsConfiguring(true)}
+              className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+            >
+              Need to generate more?{' '}
+              <span className="font-semibold">Click here.</span>
+            </button>
+          </p>
         </div>
       )}
     </div>

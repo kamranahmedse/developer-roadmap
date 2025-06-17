@@ -1,6 +1,6 @@
 # Payments
 
-The Payment Request API is a web API that allows web developers to build checkout flows within their web applications. It provides a standardized, browser-based interface for collecting payment and shipping information from the user, and it supports a wide range of payment methods, including credit cards, debit cards, and digital wallets. To use the Payment Request API, a web page must first create a `PaymentRequest` object and specify the payment and shipping options that are available to the user. The page can then invoke the Payment Request UI by calling the `show()` method on the `PaymentRequest` object. The user can then select their preferred payment and shipping options and confirm the payment, at which point the Payment Request API will return a payment response object that can be used to complete the transaction.
+The Payment Request API helps websites build checkout forms. It gives a standard way for browsers to get payment and shipping info from users. It works with credit cards, debit cards, and digital wallets. A webpage creates a `PaymentRequest`, shows options, and then the user confirms. The API then gives a response to finish the payment.
 
 Visit the following resources to learn more:
 

@@ -1,0 +1,3 @@
+There are dozens of commonly used statistical models, and data analysts use several of them with other techniques depending on the analysis objective. 
+
+Common methods include linear and logistic regression, hypothesis testing (t-tests, chi-square tests), ANOVA, time series analysis, and Bayesian inference. These tools help analyze data, identify trends, and validate assumptions during the data analysis process. 

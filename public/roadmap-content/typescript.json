@@ -382,7 +382,7 @@
     "description": "`any` is a special type in TypeScript that represents a value of any type. When a value is declared with the any type, the compiler will not perform any type checks or type inference on that value.\n\nFor example:\n\n    let anyValue: any = 42;\n    \n    // we can assign any value to anyValue, regardless of its type\n    anyValue = 'Hello, world!';\n    anyValue = true;\n    \n\nLearn more from the following links:",
     "links": [
       {
-        "title": "Arrays",
+        "title": "any",
         "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any",
         "type": "article"
       }
@@ -652,14 +652,8 @@
   },
   "lvtTSHH9yBTCiLng8btnI": {
     "title": "Hybrid Types",
-    "description": "In TypeScript, a hybrid type is a type that combines multiple types into a single type. The resulting type is considered a union of those types. This allows you to specify that a value can have multiple types, rather than just one.\n\nFor example, you can create a hybrid type that can accept either a string or a number:\n\n    type StringOrNumber = string | number;\n    \n\nYou can also use hybrid types to create more complex types that can represent a combination of several different types of values. For example:\n\n    type Education = {\n      degree: string;\n      school: string;\n      year: number;\n    };\n    \n    type User = {\n      name: string;\n      age: number;\n      email: string;\n      education: Education;\n    };\n    \n\nLearn more from the following links:",
-    "links": [
-      {
-        "title": "Geeksforgeeks.org - Hybrid Types",
-        "url": "https://www.geeksforgeeks.org/what-are-hybrid-types-in-typescript/#:~:text=Hybrid%20types%20are%20a%20combination,properties%20like%20a%20regular%20object.",
-        "type": "article"
-      }
-    ]
+    "description": "In TypeScript, a hybrid type is a type that combines multiple types into a single type. The resulting type is considered a union of those types. This allows you to specify that a value can have multiple types, rather than just one.\n\nFor example, you can create a hybrid type that can accept either a string or a number:\n\n    type StringOrNumber = string | number;\n    \n\nYou can also use hybrid types to create more complex types that can represent a combination of several different types of values. For example:\n\n    type Education = {\n      degree: string;\n      school: string;\n      year: number;\n    };\n    \n    type User = {\n      name: string;\n      age: number;\n      email: string;\n      education: Education;\n    };",
+    "links": []
   },
   "ib0jfZzukYOZ42AdJqt_W": {
     "title": "Classes",
@@ -799,11 +793,6 @@
       {
         "title": "TypeScript Utility Types Guide",
         "url": "https://camchenry.com/blog/typescript-utility-types",
-        "type": "article"
-      },
-      {
-        "title": "TypeScript Utility Types: Key Concepts And Best Practices",
-        "url": "https://marketsplash.com/tutorials/typescript/typescript-utility-types/",
         "type": "article"
       }
     ]
@@ -1038,11 +1027,6 @@
     "title": "External Modules",
     "description": "In TypeScript, external modules allow you to organize and share code across multiple files. External modules in TypeScript follow the CommonJS or ES modules standards.\n\nHere's an example of how you can use external modules in TypeScript:\n\n    // myModule.ts\n    export function doSomething() {\n      console.log('Doing something...');\n    }\n    \n    // main.ts\n    import { doSomething } from './myModule';\n    doSomething(); // Output: \"Doing something...\"\n    \n\nIn this example, we use the \"export\" keyword in the \"myModule.ts\" file to export the \"doSomething\" function, making it available for other files to use.\n\nLearn more from the following links:",
     "links": [
-      {
-        "title": "External Module",
-        "url": "https://www.javatpoint.com/typescript-module",
-        "type": "article"
-      },
       {
         "title": "TypeScript - External Module",
         "url": "https://learncodeweb.com/typescript/modules-in-typescript-explain-with-an-example/",

@@ -4,4 +4,4 @@ This command retrieves elements from a sorted set stored at the specified key. I
 
 Learn more from the following resources:
 
-- [@official@ZRANGEBYSCORE Documentation](https://redis.io/docs/latest/commands/zrangebyscore/)
+- [@official@ZRANGEBYSCORE](https://redis.io/docs/latest/commands/zrangebyscore/)

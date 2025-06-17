@@ -1,5 +1,5 @@
-import { ChevronDown, Globe, Menu, Sparkles, Map } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
+import { ChevronDown, Globe, Sparkles, Map } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
 import {
@@ -17,7 +17,7 @@ const links = [
     isHighlighted: true,
   },
   {
-    link: '/ai',
+    link: '/ai-roadmaps',
     label: 'AI Roadmaps',
     description: 'Generate roadmaps with AI',
     Icon: Sparkles,
@@ -64,7 +64,7 @@ export function RoadmapDropdownMenu() {
       </button>
       <div
         className={cn(
-          'pointer-events-none invisible absolute left-0 top-full z-[90] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-2xl transition-all duration-100',
+          'pointer-events-none invisible absolute left-0 top-full z-90 mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-2xl transition-all duration-100',
           {
             'pointer-events-auto visible translate-y-2.5 opacity-100':
               $roadmapsDropdownOpen,

@@ -1,0 +1,16 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import { BillingPage } from '../../components/Billing/BillingPage';
+---
+
+<AccountLayout
+  title='Billing'
+  description=''
+  noIndex={true}
+  initialLoadingMessage={'Loading billing details'}
+>
+  <AccountSidebar activePageId='billing' activePageTitle='Billing'>
+    <BillingPage client:load />
+  </AccountSidebar>
+</AccountLayout>

@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@LINDEX Documentation](https://redis.io/docs/latest/commands/lindex/)
+- [@official@LINDEX](https://redis.io/docs/latest/commands/lindex/)

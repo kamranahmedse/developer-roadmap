@@ -4,4 +4,4 @@ The ZRANGE command can perform multiple range queries including by rank, by scor
 
 Learn more from the following resources:
 
-- [@official@ZRANGE Documentation](https://redis.io/docs/latest/commands/zrange/)
+- [@official@ZRANGE](https://redis.io/docs/latest/commands/zrange/)

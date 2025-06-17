@@ -1,22 +1,25 @@
 import { useStore } from '@nanostores/react';
 import {
   ChartColumn,
-  CheckCircle,
   CheckSquare,
   FolderGit2,
-  Pencil,
   SquarePen,
   Zap,
-  type LucideIcon,
+  type LucideIcon
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user.ts';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname.ts';
+import type { GuideFileType } from '../../lib/guide';
 import { httpGet } from '../../lib/http';
+import type { QuestionGroupType } from '../../lib/question-group';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
+import type { VideoFileType } from '../../lib/video';
 import { $accountStreak, type StreakResponse } from '../../stores/streak';
 import type { PageType } from '../CommandMenu/CommandMenu';
+import { FeaturedGuideList } from '../FeaturedGuides/FeaturedGuideList';
+import { FeaturedVideoList } from '../FeaturedVideos/FeaturedVideoList';
 import {
   FavoriteRoadmaps,
   type AIRoadmapType,
@@ -24,12 +27,21 @@ import {
 import { HeroRoadmap } from '../HeroSection/HeroRoadmap.tsx';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
-import { projectGroups } from '../../pages/index.astro';
-import type { QuestionGroupType } from '../../lib/question-group';
-import { FeaturedGuideList } from '../FeaturedGuides/FeaturedGuideList';
-import { FeaturedVideoList } from '../FeaturedVideos/FeaturedVideoList';
-import type { GuideFileType } from '../../lib/guide';
-import type { VideoFileType } from '../../lib/video';
+
+const projectGroups =  [
+  {
+    title: 'Frontend',
+    id: 'frontend',
+  },
+  {
+    title: 'Backend',
+    id: 'backend',
+  },
+  {
+    title: 'DevOps',
+    id: 'devops',
+  },
+];
 
 type UserDashboardResponse = {
   name: string;
@@ -380,7 +392,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
         isLoading={isLoading}
       />
 
-      <div className="bg-gradient-to-b from-slate-900 to-black pb-12">
+      <div className="bg-linear-to-b from-slate-900 to-black pb-12">
         <div className="relative mt-6 border-t border-t-[#1e293c] pt-12">
           <div className="container">
             <h2

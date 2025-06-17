@@ -32,7 +32,7 @@ export function SortProjects(props: SortProjectsProps) {
     sortOptions[0];
 
   return (
-    <div className="relative flex-shrink-0" ref={dropdownRef}>
+    <div className="relative shrink-0" ref={dropdownRef}>
       <button
         className="flex items-center gap-1 rounded-md border border-gray-300 py-1.5 pl-3 pr-2 text-xs font-medium text-gray-900"
         onClick={() => setIsOpen(!isOpen)}

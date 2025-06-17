@@ -1,6 +1,6 @@
 # JavaScript
 
-JavaScript is a high-level, interpreted programming language that is a core technology of the World Wide Web. It allows for dynamic, client-side scripting in web browsers, enabling interactive web pages and user interfaces. JavaScript supports object-oriented, imperative, and functional programming styles. It's also used server-side through Node.js, for desktop application development with frameworks like Electron, and in various other contexts. The language features dynamic typing, first-class functions, and prototype-based object-orientation. JavaScript's ubiquity in web development, coupled with its versatility and continuous evolution through ECMAScript standards, has made it one of the most popular programming languages in use today.
+JavaScript is a key programming language for the web. It makes websites interactive, like when things move or change when you click them. It works in web browsers but also on servers (with Node.js) and for desktop apps. JavaScript is flexible and always updating, making it very popular for all kinds of web development.
 
 Visit the following resources to learn more:
 

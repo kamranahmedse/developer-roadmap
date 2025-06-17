@@ -1,0 +1,3 @@
+Go's approach of using the go.mod file is more straightforward compared to the often complex systems in other languages. For example, go.mod files are much more straightforward to create and maintain than Maven XMLs or NPM's JSON files, which require the creation of verbose configuration files.
+
+In terms of best practices, always try to update dependencies (mostly their version, making sure their internal logic is still compatible with your Go version), using version control systems, and ensuring code documentation is up to date. 

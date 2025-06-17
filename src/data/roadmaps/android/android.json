@@ -19,10 +19,10 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 55,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 55
       },
       "resizing": false,
@@ -32,7 +32,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 55
+      }
     },
     {
       "id": "jgadqKYuchjukSsYXvwf7",
@@ -52,10 +56,10 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 55,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 55
       },
       "resizing": false,
@@ -65,7 +69,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 55
+      }
     },
     {
       "id": "lpSzZRiNu_vB4yNiNK9Yy",
@@ -86,10 +94,10 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 55,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 55
       },
       "resizing": false,
@@ -99,7 +107,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 55
+      }
     },
     {
       "id": "TiI5E5awSHaz5ZhptOdZn",
@@ -119,7 +131,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 59,
       "positionAbsolute": {
         "x": 589.9645995838063,
@@ -127,10 +139,14 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 59
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 21,
+        "height": 59
+      }
     },
     {
       "id": "aDekGDutpYnpNPNS8f4pF",
@@ -151,7 +167,7 @@
         "oldId": "TiI5E5awSHaz5ZhptOdZn"
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 59,
       "positionAbsolute": {
         "x": 706.4645995838063,
@@ -159,10 +175,14 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 59
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 21,
+        "height": 59
+      }
     },
     {
       "id": "f-ZMlUJj5USPMHipd9kAM",
@@ -183,7 +203,7 @@
         "oldId": "TiI5E5awSHaz5ZhptOdZn"
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 59,
       "positionAbsolute": {
         "x": 957.4237456884,
@@ -191,10 +211,14 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 59
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 21,
+        "height": 59
+      }
     },
     {
       "id": "6R1rlADdXShSYwOvN11VK",
@@ -212,7 +236,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 311,
       "positionAbsolute": {
         "x": 957.4237456884,
@@ -220,10 +244,14 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 311
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 21,
+        "height": 311
+      }
     },
     {
       "id": "Yo7mJM0rAN8Rmz_FocBgi",
@@ -244,10 +272,10 @@
         "oldId": "jgadqKYuchjukSsYXvwf7"
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 55,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 55
       },
       "resizing": false,
@@ -257,7 +285,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 55
+      }
     },
     {
       "id": "XmdyFfnM9BlqrEssRjczP",
@@ -276,10 +308,10 @@
         }
       },
       "zIndex": -999,
-      "width": 228,
+      "width": 229,
       "height": 314,
       "style": {
-        "width": 228,
+        "width": 229,
         "height": 314
       },
       "resizing": false,
@@ -289,7 +321,11 @@
       },
       "selectable": true,
       "focusable": true,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 229,
+        "height": 314
+      }
     },
     {
       "id": "cjH8XWlBk0ZBpvxGJ1gsn",
@@ -308,10 +344,10 @@
         }
       },
       "zIndex": -999,
-      "width": 213,
+      "width": 214,
       "height": 187,
       "style": {
-        "width": 213,
+        "width": 214,
         "height": 187
       },
       "positionAbsolute": {
@@ -321,7 +357,11 @@
       "dragging": false,
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 214,
+        "height": 187
+      }
     },
     {
       "id": "PF0TVwzQAg76Z1MdLNQk8",
@@ -342,10 +382,10 @@
         }
       },
       "zIndex": -999,
-      "width": 182,
+      "width": 183,
       "height": 213,
       "style": {
-        "width": 182,
+        "width": 183,
         "height": 213
       },
       "positionAbsolute": {
@@ -355,7 +395,11 @@
       "dragging": false,
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 183,
+        "height": 213
+      }
     },
     {
       "id": "bt3bz2BrOfKDwgYGu6_6S",
@@ -376,10 +420,10 @@
         }
       },
       "zIndex": -999,
-      "width": 210,
+      "width": 211,
       "height": 211,
       "style": {
-        "width": 210,
+        "width": 211,
         "height": 211
       },
       "resizing": false,
@@ -389,7 +433,11 @@
       },
       "selectable": true,
       "focusable": true,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 211,
+        "height": 211
+      }
     },
     {
       "id": "0EZuNys_klW8idbCPmAmP",
@@ -409,7 +457,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 130,
       "positionAbsolute": {
         "x": 1195.8618127280065,
@@ -417,12 +465,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 130
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 130
+      }
     },
     {
       "id": "5Z9o-b3vBA-ITFg86zzYM",
@@ -441,10 +493,10 @@
         }
       },
       "zIndex": 999,
-      "width": 158,
+      "width": 159,
       "height": 68,
       "style": {
-        "width": 158.3046875,
+        "width": 159,
         "height": 68
       },
       "positionAbsolute": {
@@ -453,7 +505,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 159,
+        "height": 68
+      }
     },
     {
       "id": "XgM_I974PlXAu4AbeqHX1",
@@ -473,10 +529,10 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 73,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 73
       },
       "resizing": false,
@@ -486,7 +542,11 @@
       },
       "dragging": false,
       "focusable": true,
-      "selectable": true
+      "selectable": true,
+      "measured": {
+        "width": 21,
+        "height": 73
+      }
     },
     {
       "id": "DyPV3nTZO12NvkYUEiJWc",
@@ -518,7 +578,7 @@
         ]
       },
       "zIndex": 999,
-      "width": 294,
+      "width": 295,
       "height": 161,
       "positionAbsolute": {
         "x": 206.8618127280065,
@@ -528,10 +588,14 @@
       "focusable": true,
       "selectable": true,
       "style": {
-        "width": 294,
+        "width": 295,
         "height": 161
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 295,
+        "height": 161
+      }
     },
     {
       "id": "yHmHXymPNWwu8p1vvqD3o",
@@ -552,7 +616,7 @@
         }
       },
       "zIndex": 999,
-      "width": 353,
+      "width": 354,
       "height": 142,
       "positionAbsolute": {
         "x": 909.4971847919508,
@@ -562,10 +626,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 353,
+        "width": 354,
         "height": 142
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 354,
+        "height": 142
+      }
     },
     {
       "id": "2zqZkyVgigifcRS1H7F_b",
@@ -585,11 +653,11 @@
         }
       },
       "zIndex": 999,
-      "width": 329,
+      "width": 330,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 329,
+        "width": 330,
         "height": 49
       },
       "resizing": false,
@@ -598,7 +666,11 @@
         "y": 165.8344964222742
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 330,
+        "height": 49
+      }
     },
     {
       "id": "Suws-7f_6Z1ChpfcnxX2M",
@@ -617,7 +689,7 @@
         }
       },
       "zIndex": 999,
-      "width": 238,
+      "width": 239,
       "height": 49,
       "positionAbsolute": {
         "x": 624.8618127280065,
@@ -627,10 +699,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 238,
+        "width": 239,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 239,
+        "height": 49
+      }
     },
     {
       "id": "qIzUv8-GgQnkqChEdgD50",
@@ -649,7 +725,7 @@
         }
       },
       "zIndex": 999,
-      "width": 130,
+      "width": 131,
       "height": 49,
       "positionAbsolute": {
         "x": 953.8618127280065,
@@ -659,7 +735,11 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 130,
+        "width": 131,
+        "height": 49
+      },
+      "measured": {
+        "width": 131,
         "height": 49
       }
     },
@@ -680,7 +760,7 @@
         }
       },
       "zIndex": 999,
-      "width": 130,
+      "width": 131,
       "height": 49,
       "positionAbsolute": {
         "x": 953.8618127280065,
@@ -689,10 +769,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 130,
+        "width": 131,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 131,
+        "height": 49
+      }
     },
     {
       "id": "HlUUGj3dOZ68t4gIjerXh",
@@ -711,7 +795,7 @@
         }
       },
       "zIndex": 999,
-      "width": 238,
+      "width": 239,
       "height": 49,
       "positionAbsolute": {
         "x": 624.8618127280065,
@@ -721,10 +805,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 238,
+        "width": 239,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 239,
+        "height": 49
+      }
     },
     {
       "id": "ZRGsokU313Ky-anWbWK6q",
@@ -743,7 +831,7 @@
         }
       },
       "zIndex": 999,
-      "width": 295,
+      "width": 296,
       "height": 49,
       "positionAbsolute": {
         "x": 205.8618127280065,
@@ -752,10 +840,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 295,
+        "width": 296,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 296,
+        "height": 49
+      }
     },
     {
       "id": "jl1FsQ5-WGKeFyaILNt_p",
@@ -774,7 +866,7 @@
         }
       },
       "zIndex": 999,
-      "width": 295,
+      "width": 296,
       "height": 49,
       "dragging": false,
       "positionAbsolute": {
@@ -784,7 +876,11 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 295,
+        "width": 296,
+        "height": 49
+      },
+      "measured": {
+        "width": 296,
         "height": 49
       }
     },
@@ -805,7 +901,7 @@
         }
       },
       "zIndex": 999,
-      "width": 295,
+      "width": 296,
       "height": 49,
       "positionAbsolute": {
         "x": 205.8618127280065,
@@ -814,10 +910,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 295,
+        "width": 296,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 296,
+        "height": 49
+      }
     },
     {
       "id": "cNeT1dJDfgn0ndPzSxhSL",
@@ -836,7 +936,7 @@
         }
       },
       "zIndex": 999,
-      "width": 295,
+      "width": 296,
       "height": 49,
       "positionAbsolute": {
         "x": 205.8618127280065,
@@ -846,7 +946,11 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 295,
+        "width": 296,
+        "height": 49
+      },
+      "measured": {
+        "width": 296,
         "height": 49
       }
     },
@@ -867,7 +971,7 @@
         }
       },
       "zIndex": 999,
-      "width": 295,
+      "width": 296,
       "height": 49,
       "positionAbsolute": {
         "x": 205.8618127280065,
@@ -876,11 +980,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 295,
+        "width": 296,
         "height": 49
       },
       "resizing": false,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 296,
+        "height": 49
+      }
     },
     {
       "id": "5m_7DvInF8C_4Ml1xVI6L",
@@ -899,10 +1007,10 @@
         }
       },
       "zIndex": 999,
-      "width": 295,
+      "width": 296,
       "height": 49,
       "style": {
-        "width": 295,
+        "width": 296,
         "height": 49
       },
       "positionAbsolute": {
@@ -911,7 +1019,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 296,
+        "height": 49
+      }
     },
     {
       "id": "5s1CqsYCOXjNroDHaGKGa",
@@ -930,7 +1042,7 @@
         }
       },
       "zIndex": 999,
-      "width": 165,
+      "width": 166,
       "height": 49,
       "positionAbsolute": {
         "x": 1098.7005592047508,
@@ -938,12 +1050,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 165,
+        "width": 166,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 166,
+        "height": 49
+      }
     },
     {
       "id": "rqSZ2ATeHbOdIQE9Jlb0B",
@@ -962,7 +1078,7 @@
         }
       },
       "zIndex": 999,
-      "width": 90,
+      "width": 91,
       "height": 49,
       "positionAbsolute": {
         "x": 1160.8618127280065,
@@ -972,10 +1088,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 90,
+        "width": 91,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 91,
+        "height": 49
+      }
     },
     {
       "id": "H-2eb8fLwz8IKYXbeSVKK",
@@ -994,7 +1114,7 @@
         }
       },
       "zIndex": 999,
-      "width": 119,
+      "width": 120,
       "height": 49,
       "positionAbsolute": {
         "x": 1146.3618127280065,
@@ -1002,11 +1122,15 @@
       },
       "dragging": false,
       "style": {
-        "width": 119,
+        "width": 120,
         "height": 49
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 120,
+        "height": 49
+      }
     },
     {
       "id": "5LFZdUiFYYU_1sYsouyan",
@@ -1025,11 +1149,11 @@
         }
       },
       "zIndex": 999,
-      "width": 119,
+      "width": 120,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 119,
+        "width": 120,
         "height": 49
       },
       "positionAbsolute": {
@@ -1037,7 +1161,11 @@
         "y": 576.900748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 120,
+        "height": 49
+      }
     },
     {
       "id": "Q47BtQphp59NkkZoeNXmP",
@@ -1056,10 +1184,10 @@
         }
       },
       "zIndex": 999,
-      "width": 119,
+      "width": 120,
       "height": 49,
       "style": {
-        "width": 119,
+        "width": 120,
         "height": 49
       },
       "positionAbsolute": {
@@ -1068,7 +1196,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 120,
+        "height": 49
+      }
     },
     {
       "id": "-IvRbNv2swO63Xb9UqoHf",
@@ -1087,7 +1219,7 @@
         }
       },
       "zIndex": 999,
-      "width": 112,
+      "width": 113,
       "height": 36,
       "positionAbsolute": {
         "x": 1149.8618127280065,
@@ -1095,7 +1227,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 113,
+        "height": 36
+      }
     },
     {
       "id": "5Li8J5iR_ZuyIlxX0LYei",
@@ -1115,7 +1251,7 @@
         "oldId": "4_e76QafrB419S2INOeKd"
       },
       "zIndex": 999,
-      "width": 184,
+      "width": 185,
       "height": 49,
       "positionAbsolute": {
         "x": 875.4237456884,
@@ -1123,12 +1259,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 184,
+        "width": 185,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 185,
+        "height": 49
+      }
     },
     {
       "id": "nwuVlPmzwJ17mtVQ8Hi9w",
@@ -1147,7 +1287,7 @@
         }
       },
       "zIndex": 999,
-      "width": 210,
+      "width": 211,
       "height": 49,
       "positionAbsolute": {
         "x": 592.7670925742796,
@@ -1157,10 +1297,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 210,
+        "width": 211,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 211,
+        "height": 49
+      }
     },
     {
       "id": "PcHmU1c9hqKyzSjwlRPHk",
@@ -1179,7 +1323,7 @@
         }
       },
       "zIndex": 999,
-      "width": 198,
+      "width": 199,
       "height": 49,
       "positionAbsolute": {
         "x": 210.5417587642338,
@@ -1188,11 +1332,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 198,
+        "width": 199,
         "height": 49
       },
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 199,
+        "height": 49
+      }
     },
     {
       "id": "nkcdjrswv0WCzUs48BAt9",
@@ -1211,10 +1359,10 @@
         }
       },
       "zIndex": 999,
-      "width": 198,
+      "width": 199,
       "height": 49,
       "style": {
-        "width": 198,
+        "width": 199,
         "height": 49
       },
       "positionAbsolute": {
@@ -1224,7 +1372,11 @@
       "selectable": true,
       "focusable": true,
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 199,
+        "height": 49
+      }
     },
     {
       "id": "tFuAToid1Fkmu96BDtW7K",
@@ -1243,7 +1395,7 @@
         }
       },
       "zIndex": 999,
-      "width": 198,
+      "width": 199,
       "height": 49,
       "positionAbsolute": {
         "x": 210.5417587642338,
@@ -1252,11 +1404,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 198,
+        "width": 199,
         "height": 49
       },
       "resizing": false,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 199,
+        "height": 49
+      }
     },
     {
       "id": "hv_9imIQpthxEaMLXEUHI",
@@ -1275,10 +1431,10 @@
         }
       },
       "zIndex": 999,
-      "width": 182,
+      "width": 183,
       "height": 49,
       "style": {
-        "width": 182,
+        "width": 183,
         "height": 49
       },
       "dragging": false,
@@ -1288,7 +1444,11 @@
       },
       "selectable": true,
       "focusable": true,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 183,
+        "height": 49
+      }
     },
     {
       "id": "FVg438cVBBzqJFkGWVbQM",
@@ -1307,7 +1467,7 @@
         }
       },
       "zIndex": 999,
-      "width": 189,
+      "width": 190,
       "height": 49,
       "positionAbsolute": {
         "x": 603.2670925742796,
@@ -1316,11 +1476,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 189,
+        "width": 190,
         "height": 49
       },
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 190,
+        "height": 49
+      }
     },
     {
       "id": "oUjetA2eduvQIeLcQlLcu",
@@ -1339,7 +1503,7 @@
         }
       },
       "zIndex": 999,
-      "width": 189,
+      "width": 190,
       "height": 49,
       "dragging": false,
       "positionAbsolute": {
@@ -1347,12 +1511,16 @@
         "y": 741.8587817234683
       },
       "style": {
-        "width": 189,
+        "width": 190,
         "height": 49
       },
       "selectable": true,
       "focusable": true,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 190,
+        "height": 49
+      }
     },
     {
       "id": "-O-G9bg36ut8NnZcdOaop",
@@ -1371,7 +1539,7 @@
         }
       },
       "zIndex": 999,
-      "width": 189,
+      "width": 190,
       "height": 49,
       "positionAbsolute": {
         "x": 603.2670925742796,
@@ -1379,12 +1547,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 189,
+        "width": 190,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 190,
+        "height": 49
+      }
     },
     {
       "id": "gGdz3j33x0gfrFDp_rw8Z",
@@ -1403,7 +1575,7 @@
         }
       },
       "zIndex": 999,
-      "width": 162,
+      "width": 163,
       "height": 49,
       "dragging": false,
       "positionAbsolute": {
@@ -1413,10 +1585,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 162,
+        "width": 163,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 163,
+        "height": 49
+      }
     },
     {
       "id": "TmIeCF3xVCe5Sy3ITmM31",
@@ -1435,7 +1611,7 @@
         }
       },
       "zIndex": 999,
-      "width": 162,
+      "width": 163,
       "height": 49,
       "positionAbsolute": {
         "x": 423.9034669074458,
@@ -1444,11 +1620,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 162,
+        "width": 163,
         "height": 49
       },
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 163,
+        "height": 49
+      }
     },
     {
       "id": "b-sfh6NoS-APqaNKm5L5S",
@@ -1467,10 +1647,10 @@
         }
       },
       "zIndex": 999,
-      "width": 162,
+      "width": 163,
       "height": 49,
       "style": {
-        "width": 162,
+        "width": 163,
         "height": 49
       },
       "dragging": false,
@@ -1480,7 +1660,11 @@
       },
       "selectable": true,
       "focusable": true,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 163,
+        "height": 49
+      }
     },
     {
       "id": "jePGzTejFe4ryA5qFFmjl",
@@ -1500,7 +1684,7 @@
         "oldId": "kc6buUsLAeZeUb4Tk0apM"
       },
       "zIndex": 999,
-      "width": 214,
+      "width": 215,
       "height": 49,
       "positionAbsolute": {
         "x": 860.4237456884,
@@ -1511,7 +1695,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 214,
+        "width": 215,
+        "height": 49
+      },
+      "measured": {
+        "width": 215,
         "height": 49
       }
     },
@@ -1532,7 +1720,7 @@
         }
       },
       "zIndex": 999,
-      "width": 93,
+      "width": 94,
       "height": 49,
       "positionAbsolute": {
         "x": 209.53887898054052,
@@ -1542,10 +1730,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 93,
+        "width": 94,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 94,
+        "height": 49
+      }
     },
     {
       "id": "U8iMGGOd2EgPxSuwSG39Z",
@@ -1564,7 +1756,7 @@
         }
       },
       "zIndex": 999,
-      "width": 93,
+      "width": 94,
       "height": 49,
       "dragging": false,
       "positionAbsolute": {
@@ -1574,10 +1766,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 93,
+        "width": 94,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 94,
+        "height": 49
+      }
     },
     {
       "id": "yE0qAQZiEC9R8WvCdskpr",
@@ -1596,7 +1792,7 @@
         }
       },
       "zIndex": 999,
-      "width": 192,
+      "width": 193,
       "height": 49,
       "positionAbsolute": {
         "x": 209.53887898054052,
@@ -1605,10 +1801,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 192,
+        "width": 193,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 193,
+        "height": 49
+      }
     },
     {
       "id": "3fFNMhQIuuh-NRzSXYpXO",
@@ -1627,7 +1827,7 @@
         }
       },
       "zIndex": 999,
-      "width": 192,
+      "width": 193,
       "height": 49,
       "positionAbsolute": {
         "x": 209.53887898054052,
@@ -1636,10 +1836,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 192,
+        "width": 193,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 193,
+        "height": 49
+      }
     },
     {
       "id": "xIvplWfe-uDr9iHjPT1Mx",
@@ -1650,7 +1854,7 @@
       },
       "selected": false,
       "data": {
-        "label": "RecycleView",
+        "label": "RecyclerView",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
@@ -1658,10 +1862,10 @@
         }
       },
       "zIndex": 999,
-      "width": 192,
+      "width": 193,
       "height": 49,
       "style": {
-        "width": 192,
+        "width": 193,
         "height": 49
       },
       "positionAbsolute": {
@@ -1671,7 +1875,11 @@
       "dragging": false,
       "selectable": true,
       "focusable": true,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 193,
+        "height": 49
+      }
     },
     {
       "id": "ZuT4JTri-tZYmZkAthnH8",
@@ -1688,7 +1896,7 @@
         }
       },
       "zIndex": 999,
-      "width": 205,
+      "width": 206,
       "height": 20,
       "positionAbsolute": {
         "x": 347.5641444978062,
@@ -1696,12 +1904,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 205,
+        "width": 206,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 206,
+        "height": 20
+      }
     },
     {
       "id": "08Fx-PJiotcpN6ylmgI5d",
@@ -1720,7 +1932,7 @@
         }
       },
       "zIndex": 999,
-      "width": 88,
+      "width": 89,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1728,7 +1940,11 @@
         "y": 879.6993520650623
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 89,
+        "height": 36
+      }
     },
     {
       "id": "EfxxpCCgOleZwBW5z4UA8",
@@ -1745,7 +1961,7 @@
         }
       },
       "zIndex": 999,
-      "width": 214,
+      "width": 215,
       "height": 20,
       "positionAbsolute": {
         "x": 648.5641444978062,
@@ -1753,12 +1969,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 214,
+        "width": 215,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 215,
+        "height": 20
+      }
     },
     {
       "id": "znvZp24L-PcQwkSObtixs",
@@ -1777,7 +1997,7 @@
         }
       },
       "zIndex": 999,
-      "width": 130,
+      "width": 131,
       "height": 49,
       "positionAbsolute": {
         "x": 412.2896124351306,
@@ -1786,10 +2006,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 130,
+        "width": 131,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 131,
+        "height": 49
+      }
     },
     {
       "id": "2iDJrxjXOt7o2fPp2HfRl",
@@ -1808,7 +2032,7 @@
         }
       },
       "zIndex": 999,
-      "width": 154,
+      "width": 155,
       "height": 49,
       "positionAbsolute": {
         "x": 658.2896124351307,
@@ -1818,7 +2042,11 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 154,
+        "width": 155,
+        "height": 49
+      },
+      "measured": {
+        "width": 155,
         "height": 49
       }
     },
@@ -1839,7 +2067,7 @@
         }
       },
       "zIndex": 999,
-      "width": 154,
+      "width": 155,
       "height": 49,
       "positionAbsolute": {
         "x": 658.2896124351307,
@@ -1849,7 +2077,11 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 154,
+        "width": 155,
+        "height": 49
+      },
+      "measured": {
+        "width": 155,
         "height": 49
       }
     },
@@ -1870,7 +2102,7 @@
         }
       },
       "zIndex": 999,
-      "width": 130,
+      "width": 131,
       "height": 49,
       "positionAbsolute": {
         "x": 412.2896124351306,
@@ -1879,10 +2111,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 130,
+        "width": 131,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 131,
+        "height": 49
+      }
     },
     {
       "id": "WhfzFOUpm0DFEj7Oeq21R",
@@ -1901,7 +2137,7 @@
         }
       },
       "zIndex": 999,
-      "width": 108,
+      "width": 109,
       "height": 49,
       "positionAbsolute": {
         "x": 546.2896124351307,
@@ -1910,10 +2146,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 108,
+        "width": 109,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 109,
+        "height": 49
+      }
     },
     {
       "id": "BVgO9n7tGlVdiS72-hFSd",
@@ -1932,7 +2172,7 @@
         }
       },
       "zIndex": 999,
-      "width": 108,
+      "width": 109,
       "height": 49,
       "positionAbsolute": {
         "x": 546.2896124351307,
@@ -1942,7 +2182,11 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 108,
+        "width": 109,
+        "height": 49
+      },
+      "measured": {
+        "width": 109,
         "height": 49
       }
     },
@@ -1963,7 +2207,7 @@
         }
       },
       "zIndex": 999,
-      "width": 130,
+      "width": 131,
       "height": 49,
       "positionAbsolute": {
         "x": 412.2896124351306,
@@ -1972,10 +2216,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 130,
+        "width": 131,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 131,
+        "height": 49
+      }
     },
     {
       "id": "Z4Tbd5ClnqCXGPGG09F-G",
@@ -1994,7 +2242,7 @@
         }
       },
       "zIndex": 999,
-      "width": 154,
+      "width": 155,
       "height": 49,
       "positionAbsolute": {
         "x": 658.2896124351307,
@@ -2004,10 +2252,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 154,
+        "width": 155,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 155,
+        "height": 49
+      }
     },
     {
       "id": "EzLjX4iRT7AxkAOsJYnSU",
@@ -2026,7 +2278,7 @@
         }
       },
       "zIndex": 999,
-      "width": 108,
+      "width": 109,
       "height": 49,
       "positionAbsolute": {
         "x": 546.2896124351307,
@@ -2036,7 +2288,11 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 108,
+        "width": 109,
+        "height": 49
+      },
+      "measured": {
+        "width": 109,
         "height": 49
       }
     },
@@ -2057,7 +2313,7 @@
         }
       },
       "zIndex": 999,
-      "width": 130,
+      "width": 131,
       "height": 49,
       "positionAbsolute": {
         "x": 412.2896124351306,
@@ -2067,7 +2323,11 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 130,
+        "width": 131,
+        "height": 49
+      },
+      "measured": {
+        "width": 131,
         "height": 49
       }
     },
@@ -2088,7 +2348,7 @@
         }
       },
       "zIndex": 999,
-      "width": 108,
+      "width": 109,
       "height": 49,
       "positionAbsolute": {
         "x": 546.2896124351307,
@@ -2096,11 +2356,15 @@
       },
       "dragging": false,
       "style": {
-        "width": 108,
+        "width": 109,
         "height": 49
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 109,
+        "height": 49
+      }
     },
     {
       "id": "Xn1VQ-xOT67ZfJJTM4r1p",
@@ -2119,7 +2383,7 @@
         }
       },
       "zIndex": 999,
-      "width": 154,
+      "width": 155,
       "height": 49,
       "positionAbsolute": {
         "x": 658.2896124351307,
@@ -2127,11 +2391,15 @@
       },
       "dragging": false,
       "style": {
-        "width": 154,
+        "width": 155,
         "height": 49
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 155,
+        "height": 49
+      }
     },
     {
       "id": "pntwSBbuIfYb8b7WBVfvI",
@@ -2151,7 +2419,7 @@
         "oldId": "08Fx-PJiotcpN6ylmgI5d"
       },
       "zIndex": 999,
-      "width": 75,
+      "width": 76,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -2159,7 +2427,11 @@
         "y": 879.6993520650623
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 76,
+        "height": 36
+      }
     },
     {
       "id": "qVXAZzZSD9BJBw0ZJsuEm",
@@ -2177,7 +2449,7 @@
         }
       },
       "zIndex": 999,
-      "width": 55,
+      "width": 56,
       "height": 20,
       "positionAbsolute": {
         "x": 209.56414449780618,
@@ -2185,12 +2457,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 55,
+        "width": 56,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 56,
+        "height": 20
+      }
     },
     {
       "id": "60Vm-77rseUqpMiFvp-dA",
@@ -2209,7 +2485,7 @@
         }
       },
       "zIndex": 999,
-      "width": 195,
+      "width": 196,
       "height": 49,
       "positionAbsolute": {
         "x": 1045.3266615963507,
@@ -2219,10 +2495,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 195,
+        "width": 196,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 196,
+        "height": 49
+      }
     },
     {
       "id": "xV475jHTlLuHtpHZeXb7P",
@@ -2241,7 +2521,7 @@
         }
       },
       "zIndex": 999,
-      "width": 233,
+      "width": 234,
       "height": 49,
       "positionAbsolute": {
         "x": 1026.3266615963507,
@@ -2251,10 +2531,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 233,
+        "width": 234,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 234,
+        "height": 49
+      }
     },
     {
       "id": "o5rzmnaQeiSh9ocvfJPpK",
@@ -2273,7 +2557,7 @@
         }
       },
       "zIndex": 999,
-      "width": 233,
+      "width": 234,
       "height": 49,
       "dragging": false,
       "positionAbsolute": {
@@ -2281,12 +2565,16 @@
         "y": 1008.4258772853129
       },
       "style": {
-        "width": 233,
+        "width": 234,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 234,
+        "height": 49
+      }
     },
     {
       "id": "Bz-BkfzsDHAbAw3HD7WCd",
@@ -2305,7 +2593,7 @@
         }
       },
       "zIndex": 999,
-      "width": 100,
+      "width": 101,
       "height": 49,
       "positionAbsolute": {
         "x": 1048.305632371595,
@@ -2314,11 +2602,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 100,
+        "width": 101,
         "height": 49
       },
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 101,
+        "height": 49
+      }
     },
     {
       "id": "pSU-NZtjBh-u0WKTYfjk_",
@@ -2337,7 +2629,7 @@
         }
       },
       "zIndex": 999,
-      "width": 112,
+      "width": 113,
       "height": 49,
       "positionAbsolute": {
         "x": 1150.8813646431793,
@@ -2346,11 +2638,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 112,
+        "width": 113,
         "height": 49
       },
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 113,
+        "height": 49
+      }
     },
     {
       "id": "aF_xFIqTjQbENtC7pkXvJ",
@@ -2369,7 +2665,7 @@
         }
       },
       "zIndex": 999,
-      "width": 100,
+      "width": 101,
       "height": 49,
       "positionAbsolute": {
         "x": 1048.9214711553075,
@@ -2378,11 +2674,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 100,
+        "width": 101,
         "height": 49
       },
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 101,
+        "height": 49
+      }
     },
     {
       "id": "w1A6wPKSd3Yh2luuHV-aE",
@@ -2401,7 +2701,7 @@
         }
       },
       "zIndex": 999,
-      "width": 109,
+      "width": 110,
       "height": 49,
       "positionAbsolute": {
         "x": 1151.8813646431793,
@@ -2409,12 +2709,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 109,
+        "width": 110,
         "height": 49
       },
       "selectable": true,
       "focusable": true,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 110,
+        "height": 49
+      }
     },
     {
       "id": "ZF5XgO7I_J9928bD3CVXo",
@@ -2433,7 +2737,7 @@
         }
       },
       "zIndex": 999,
-      "width": 213,
+      "width": 214,
       "height": 49,
       "positionAbsolute": {
         "x": 1049.3396021840554,
@@ -2443,10 +2747,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 213,
+        "width": 214,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 214,
+        "height": 49
+      }
     },
     {
       "id": "784fiIdKrQDlIm3VIiJQN",
@@ -2465,11 +2773,11 @@
         }
       },
       "zIndex": 999,
-      "width": 213,
+      "width": 214,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 213,
+        "width": 214,
         "height": 49
       },
       "resizing": false,
@@ -2478,7 +2786,11 @@
         "y": 1448.0573321226304
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 214,
+        "height": 49
+      }
     },
     {
       "id": "DeOxj6RzQBYfEWV-M1Ybm",
@@ -2497,11 +2809,11 @@
         }
       },
       "zIndex": 999,
-      "width": 213,
+      "width": 214,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 213,
+        "width": 214,
         "height": 49
       },
       "positionAbsolute": {
@@ -2509,7 +2821,11 @@
         "y": 1501.0573321226304
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 214,
+        "height": 49
+      }
     },
     {
       "id": "N_auRfGKkeIIc-qiHLkR_",
@@ -2528,10 +2844,10 @@
         }
       },
       "zIndex": 999,
-      "width": 213,
+      "width": 214,
       "height": 49,
       "style": {
-        "width": 213,
+        "width": 214,
         "height": 49
       },
       "positionAbsolute": {
@@ -2540,7 +2856,11 @@
       },
       "selectable": true,
       "focusable": true,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 214,
+        "height": 49
+      }
     },
     {
       "id": "W-WTIiQml8dLK6i_V69JK",
@@ -2559,7 +2879,7 @@
         }
       },
       "zIndex": 999,
-      "width": 198,
+      "width": 199,
       "height": 49,
       "positionAbsolute": {
         "x": 1059.3396021840554,
@@ -2568,11 +2888,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 198,
+        "width": 199,
         "height": 49
       },
       "resizing": false,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 199,
+        "height": 49
+      }
     },
     {
       "id": "xk0vnWr7uESdzYRxwFjoK",
@@ -2591,7 +2915,7 @@
         }
       },
       "zIndex": 999,
-      "width": 92,
+      "width": 93,
       "height": 49,
       "positionAbsolute": {
         "x": 1165.3396021840554,
@@ -2599,12 +2923,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 92,
+        "width": 93,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 93,
+        "height": 49
+      }
     },
     {
       "id": "7rbsp1o5bzIJP11BRIoeG",
@@ -2623,7 +2951,7 @@
         }
       },
       "zIndex": 999,
-      "width": 100,
+      "width": 101,
       "height": 49,
       "positionAbsolute": {
         "x": 1059.3396021840554,
@@ -2633,10 +2961,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 100,
+        "width": 101,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 101,
+        "height": 49
+      }
     },
     {
       "id": "TiokceMGU9caqiR0lbFYL",
@@ -2655,11 +2987,11 @@
         }
       },
       "zIndex": 999,
-      "width": 198,
+      "width": 199,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 198,
+        "width": 199,
         "height": 49
       },
       "resizing": false,
@@ -2668,7 +3000,11 @@
         "y": 1719.1260426182998
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 199,
+        "height": 49
+      }
     },
     {
       "id": "ZbuCx3ygIZPRS_9fp0AJg",
@@ -2688,10 +3024,10 @@
         "oldId": "cjH8XWlBk0ZBpvxGJ1gsn"
       },
       "zIndex": -999,
-      "width": 213,
+      "width": 214,
       "height": 187,
       "style": {
-        "width": 213,
+        "width": 214,
         "height": 187
       },
       "positionAbsolute": {
@@ -2701,7 +3037,11 @@
       "dragging": false,
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 214,
+        "height": 187
+      }
     },
     {
       "id": "qtXM9K7wyjOFuEMlZrB3C",
@@ -2721,10 +3061,10 @@
         "oldId": "N_auRfGKkeIIc-qiHLkR_"
       },
       "zIndex": 999,
-      "width": 213,
+      "width": 214,
       "height": 49,
       "style": {
-        "width": 213,
+        "width": 214,
         "height": 49
       },
       "positionAbsolute": {
@@ -2734,7 +3074,11 @@
       "selectable": true,
       "focusable": true,
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 214,
+        "height": 49
+      }
     },
     {
       "id": "CK7Ce632fdTgxeFsRUVvd",
@@ -2754,7 +3098,7 @@
         "oldId": "W-WTIiQml8dLK6i_V69JK"
       },
       "zIndex": 999,
-      "width": 198,
+      "width": 199,
       "height": 49,
       "positionAbsolute": {
         "x": 1059.3396021840554,
@@ -2763,11 +3107,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 198,
+        "width": 199,
         "height": 49
       },
       "resizing": false,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 199,
+        "height": 49
+      }
     },
     {
       "id": "UMqZ-jmXKDXKuu8bzqDH_",
@@ -2787,7 +3135,7 @@
         "oldId": "xk0vnWr7uESdzYRxwFjoK"
       },
       "zIndex": 999,
-      "width": 102,
+      "width": 103,
       "height": 49,
       "positionAbsolute": {
         "x": 1155.3396021840554,
@@ -2795,12 +3143,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 102,
+        "width": 103,
         "height": 49
       },
       "resizing": true,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 103,
+        "height": 49
+      }
     },
     {
       "id": "ooo_k2k_vUBR_jQ7Ke6Et",
@@ -2820,7 +3172,7 @@
         "oldId": "7rbsp1o5bzIJP11BRIoeG"
       },
       "zIndex": 999,
-      "width": 90,
+      "width": 91,
       "height": 49,
       "positionAbsolute": {
         "x": 1060.5878072165665,
@@ -2830,10 +3182,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 90,
+        "width": 91,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 91,
+        "height": 49
+      }
     },
     {
       "id": "dc7k50PjCYZcElHhCk66p",
@@ -2853,11 +3209,11 @@
         "oldId": "TiokceMGU9caqiR0lbFYL"
       },
       "zIndex": 999,
-      "width": 198,
+      "width": 199,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 198,
+        "width": 199,
         "height": 49
       },
       "resizing": false,
@@ -2866,7 +3222,11 @@
         "y": 1949.2934322507172
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 199,
+        "height": 49
+      }
     },
     {
       "id": "0fNQWRxst8xRstIfPaPO6",
@@ -2886,7 +3246,7 @@
         "oldId": "kc6buUsLAeZeUb4Tk0apM"
       },
       "zIndex": 999,
-      "width": 144,
+      "width": 145,
       "height": 49,
       "positionAbsolute": {
         "x": 862.8618127280065,
@@ -2897,7 +3257,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 144,
+        "width": 145,
+        "height": 49
+      },
+      "measured": {
+        "width": 145,
         "height": 49
       }
     },
@@ -2919,7 +3283,7 @@
         "oldId": "ww0fTbdXwVr-QIOClU7ng"
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 546.4645995838063,
@@ -2929,7 +3293,11 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 228,
+        "width": 229,
+        "height": 49
+      },
+      "measured": {
+        "width": 229,
         "height": 49
       }
     },
@@ -2950,7 +3318,7 @@
         }
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 546.4645995838063,
@@ -2960,7 +3328,11 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 228,
+        "width": 229,
+        "height": 49
+      },
+      "measured": {
+        "width": 229,
         "height": 49
       }
     },
@@ -2981,7 +3353,7 @@
         }
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 546.4645995838063,
@@ -2990,10 +3362,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 228,
+        "width": 229,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 229,
+        "height": 49
+      }
     },
     {
       "id": "A4kdaj6AFueUgPI7hwKi5",
@@ -3012,7 +3388,7 @@
         }
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 546.4645995838063,
@@ -3021,10 +3397,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 228,
+        "width": 229,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 229,
+        "height": 49
+      }
     },
     {
       "id": "Yb6aKJMMCxU1QVltWg3Dr",
@@ -3044,7 +3424,7 @@
         "oldId": "kc6buUsLAeZeUb4Tk0apM"
       },
       "zIndex": 999,
-      "width": 148,
+      "width": 149,
       "height": 49,
       "positionAbsolute": {
         "x": 860.4237456884,
@@ -3055,7 +3435,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 148,
+        "width": 149,
+        "height": 49
+      },
+      "measured": {
+        "width": 149,
         "height": 49
       }
     },
@@ -3077,7 +3461,7 @@
         "oldId": "ww0fTbdXwVr-QIOClU7ng"
       },
       "zIndex": 999,
-      "width": 179,
+      "width": 180,
       "height": 49,
       "positionAbsolute": {
         "x": 825.3442487157158,
@@ -3087,10 +3471,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 179,
+        "width": 180,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 180,
+        "height": 49
+      }
     },
     {
       "id": "5pVuwOItAhUxxJX8ysAsn",
@@ -3110,7 +3498,7 @@
         "oldId": "ww0fTbdXwVr-QIOClU7ng"
       },
       "zIndex": 999,
-      "width": 179,
+      "width": 180,
       "height": 49,
       "positionAbsolute": {
         "x": 825.3442487157158,
@@ -3120,10 +3508,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 179,
+        "width": 180,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 180,
+        "height": 49
+      }
     },
     {
       "id": "ww0fTbdXwVr-QIOClU7ng",
@@ -3142,7 +3534,7 @@
         }
       },
       "zIndex": 999,
-      "width": 179,
+      "width": 180,
       "height": 49,
       "positionAbsolute": {
         "x": 825.3442487157158,
@@ -3152,10 +3544,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 179,
+        "width": 180,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 180,
+        "height": 49
+      }
     },
     {
       "id": "cFYZ2C7yNnY6NHKUNP2Z4",
@@ -3175,7 +3571,7 @@
         "oldId": "kc6buUsLAeZeUb4Tk0apM"
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 541.4645995838063,
@@ -3186,7 +3582,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 228,
+        "width": 229,
+        "height": 49
+      },
+      "measured": {
+        "width": 229,
         "height": 49
       }
     },
@@ -3207,7 +3607,7 @@
         }
       },
       "zIndex": 999,
-      "width": 117,
+      "width": 118,
       "height": 49,
       "positionAbsolute": {
         "x": 541.4645995838063,
@@ -3217,10 +3617,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 117,
+        "width": 118,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 118,
+        "height": 49
+      }
     },
     {
       "id": "BeGrA5BDBMZP1Jy7n-wl-",
@@ -3239,7 +3643,7 @@
         }
       },
       "zIndex": 999,
-      "width": 108,
+      "width": 109,
       "height": 49,
       "positionAbsolute": {
         "x": 662.4645995838063,
@@ -3247,7 +3651,11 @@
       },
       "selectable": true,
       "focusable": true,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 109,
+        "height": 49
+      }
     },
     {
       "id": "zXsNEyRbb8UpEOAUv6FpY",
@@ -3266,7 +3674,7 @@
         }
       },
       "zIndex": 999,
-      "width": 117,
+      "width": 118,
       "height": 49,
       "positionAbsolute": {
         "x": 541.4645995838063,
@@ -3276,10 +3684,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 117,
+        "width": 118,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 118,
+        "height": 49
+      }
     },
     {
       "id": "4h37WBpYxRRyw9oH8ge7o",
@@ -3298,7 +3710,7 @@
         }
       },
       "zIndex": 999,
-      "width": 108,
+      "width": 109,
       "height": 49,
       "positionAbsolute": {
         "x": 662.4645995838063,
@@ -3306,7 +3718,11 @@
       },
       "selectable": true,
       "focusable": true,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 109,
+        "height": 49
+      }
     },
     {
       "id": "OAb_JD64uGm2tPoue7w6t",
@@ -3325,7 +3741,7 @@
         }
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 541.4645995838063,
@@ -3335,10 +3751,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 228,
+        "width": 229,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 229,
+        "height": 49
+      }
     },
     {
       "id": "ZEdn2yy-IwHN3kOYr2ZbC",
@@ -3358,7 +3778,7 @@
         "oldId": "kc6buUsLAeZeUb4Tk0apM"
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 209.56414449780618,
@@ -3369,7 +3789,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 228,
+        "width": 229,
+        "height": 49
+      },
+      "measured": {
+        "width": 229,
         "height": 49
       }
     },
@@ -3390,7 +3814,7 @@
         }
       },
       "zIndex": 999,
-      "width": 205,
+      "width": 206,
       "height": 49,
       "positionAbsolute": {
         "x": 223.0349540213482,
@@ -3399,10 +3823,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 205,
+        "width": 206,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 206,
+        "height": 49
+      }
     },
     {
       "id": "xB4evbD07n1VrHOIpowV4",
@@ -3421,7 +3849,7 @@
         }
       },
       "zIndex": 999,
-      "width": 205,
+      "width": 206,
       "height": 49,
       "positionAbsolute": {
         "x": 223.0349540213482,
@@ -3430,10 +3858,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 205,
+        "width": 206,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 206,
+        "height": 49
+      }
     },
     {
       "id": "1Tz-Shj_Tuz2U8llEAcLr",
@@ -3452,7 +3884,7 @@
         }
       },
       "zIndex": 999,
-      "width": 205,
+      "width": 206,
       "height": 49,
       "positionAbsolute": {
         "x": 223.0349540213482,
@@ -3461,10 +3893,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 205,
+        "width": 206,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 206,
+        "height": 49
+      }
     },
     {
       "id": "e3vHFaFFMV7kI9q6yf5e9",
@@ -3483,7 +3919,7 @@
         }
       },
       "zIndex": 999,
-      "width": 205,
+      "width": 206,
       "height": 49,
       "positionAbsolute": {
         "x": 223.0349540213482,
@@ -3493,10 +3929,14 @@
       "focusable": true,
       "resizing": false,
       "style": {
-        "width": 205,
+        "width": 206,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 206,
+        "height": 49
+      }
     },
     {
       "id": "3EEfKAd-ppIQpdQSEhbA1",
@@ -3515,7 +3955,7 @@
         }
       },
       "zIndex": 999,
-      "width": 205,
+      "width": 206,
       "height": 49,
       "positionAbsolute": {
         "x": 223.0349540213482,
@@ -3524,11 +3964,15 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 205,
+        "width": 206,
         "height": 49
       },
       "dragging": false,
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 206,
+        "height": 49
+      }
     },
     {
       "id": "2baqKY9TdQnPS8ydPlXEu",
@@ -3547,7 +3991,7 @@
         }
       },
       "zIndex": 999,
-      "width": 84,
+      "width": 85,
       "height": 36,
       "positionAbsolute": {
         "x": 283.5349540213482,
@@ -3555,7 +3999,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 85,
+        "height": 36
+      }
     },
     {
       "id": "D4ZXQOKJkyFYNZIy-MJ9Y",
@@ -3574,7 +4022,7 @@
         }
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 211.5349540213482,
@@ -3584,7 +4032,11 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 228,
+        "width": 229,
+        "height": 49
+      },
+      "measured": {
+        "width": 229,
         "height": 49
       }
     },
@@ -3605,7 +4057,7 @@
         }
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "positionAbsolute": {
         "x": 211.5349540213482,
@@ -3615,10 +4067,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 228,
+        "width": 229,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 229,
+        "height": 49
+      }
     },
     {
       "id": "S5FVF9rMgVSSDKXJW2GYb",
@@ -3637,11 +4093,11 @@
         }
       },
       "zIndex": 999,
-      "width": 228,
+      "width": 229,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 228,
+        "width": 229,
         "height": 49
       },
       "positionAbsolute": {
@@ -3649,7 +4105,11 @@
         "y": 1589.5309500913381
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 229,
+        "height": 49
+      }
     },
     {
       "id": "77F9F3oI5CPgwgM_hxWfa",
@@ -3669,7 +4129,7 @@
         "oldId": "kc6buUsLAeZeUb4Tk0apM"
       },
       "zIndex": 999,
-      "width": 181,
+      "width": 182,
       "height": 49,
       "positionAbsolute": {
         "x": 541.30410704482,
@@ -3680,7 +4140,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 181,
+        "width": 182,
+        "height": 49
+      },
+      "measured": {
+        "width": 182,
         "height": 49
       }
     },
@@ -3701,7 +4165,7 @@
         }
       },
       "zIndex": 999,
-      "width": 80,
+      "width": 81,
       "height": 49,
       "positionAbsolute": {
         "x": 545.0824885942002,
@@ -3711,10 +4175,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 80,
+        "width": 81,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 81,
+        "height": 49
+      }
     },
     {
       "id": "RUvuCp_JK5MQQT13SSHUV",
@@ -3733,7 +4201,7 @@
         }
       },
       "zIndex": 999,
-      "width": 90,
+      "width": 91,
       "height": 49,
       "positionAbsolute": {
         "x": 633.5824885942002,
@@ -3743,10 +4211,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 90,
+        "width": 91,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 91,
+        "height": 49
+      }
     },
     {
       "id": "6KbSUAoT_jTudFoIbwMpA",
@@ -3766,7 +4238,7 @@
         "oldId": "kc6buUsLAeZeUb4Tk0apM"
       },
       "zIndex": 999,
-      "width": 208,
+      "width": 209,
       "height": 49,
       "positionAbsolute": {
         "x": 799.2599844228607,
@@ -3777,7 +4249,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 208,
+        "width": 209,
+        "height": 49
+      },
+      "measured": {
+        "width": 209,
         "height": 49
       }
     },
@@ -3798,7 +4274,7 @@
         }
       },
       "zIndex": 999,
-      "width": 203,
+      "width": 204,
       "height": 49,
       "positionAbsolute": {
         "x": 801.7599844228607,
@@ -3807,10 +4283,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 203,
+        "width": 204,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 204,
+        "height": 49
+      }
     },
     {
       "id": "3i4g9ZWgLxKb2UMgRJi4Q",
@@ -3829,7 +4309,7 @@
         }
       },
       "zIndex": 999,
-      "width": 203,
+      "width": 204,
       "height": 49,
       "positionAbsolute": {
         "x": 801.7599844228607,
@@ -3838,10 +4318,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 203,
+        "width": 204,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 204,
+        "height": 49
+      }
     },
     {
       "id": "7RKN1FNtRE_BE6QeAQrKb",
@@ -3860,7 +4344,7 @@
         }
       },
       "zIndex": 999,
-      "width": 203,
+      "width": 204,
       "height": 49,
       "positionAbsolute": {
         "x": 801.7599844228607,
@@ -3869,10 +4353,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 203,
+        "width": 204,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 204,
+        "height": 49
+      }
     },
     {
       "id": "ACUJlDDR0jqEohsFzWEoQ",
@@ -3891,7 +4379,7 @@
         }
       },
       "zIndex": 999,
-      "width": 203,
+      "width": 204,
       "height": 49,
       "positionAbsolute": {
         "x": 801.7599844228607,
@@ -3901,10 +4389,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 203,
+        "width": 204,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 204,
+        "height": 49
+      }
     },
     {
       "id": "ZOQm5OlzCA-h_yxywwDrW",
@@ -3924,7 +4416,7 @@
         "oldId": "kc6buUsLAeZeUb4Tk0apM"
       },
       "zIndex": 999,
-      "width": 224,
+      "width": 225,
       "height": 49,
       "positionAbsolute": {
         "x": 210.5417587642338,
@@ -3935,7 +4427,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 224,
+        "width": 225,
+        "height": 49
+      },
+      "measured": {
+        "width": 225,
         "height": 49
       }
     },
@@ -3956,7 +4452,7 @@
         }
       },
       "zIndex": 999,
-      "width": 117,
+      "width": 118,
       "height": 49,
       "positionAbsolute": {
         "x": 207.52041671512893,
@@ -3965,10 +4461,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 117,
+        "width": 118,
         "height": 49
       },
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 118,
+        "height": 49
+      }
     },
     {
       "id": "gvGAwjk_nhEgxzZ_c3f6b",
@@ -3987,7 +4487,7 @@
         }
       },
       "zIndex": 999,
-      "width": 106,
+      "width": 107,
       "height": 49,
       "positionAbsolute": {
         "x": 328.52041671512893,
@@ -3997,10 +4497,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 106,
+        "width": 107,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 107,
+        "height": 49
+      }
     },
     {
       "id": "kc6buUsLAeZeUb4Tk0apM",
@@ -4019,7 +4523,7 @@
         }
       },
       "zIndex": 999,
-      "width": 181,
+      "width": 182,
       "height": 49,
       "positionAbsolute": {
         "x": 603.2670925742796,
@@ -4030,7 +4534,11 @@
       "dragging": false,
       "resizing": false,
       "style": {
-        "width": 181,
+        "width": 182,
+        "height": 49
+      },
+      "measured": {
+        "width": 182,
         "height": 49
       }
     },
@@ -4051,7 +4559,7 @@
         }
       },
       "zIndex": 999,
-      "width": 205,
+      "width": 206,
       "height": 49,
       "positionAbsolute": {
         "x": 878.3250908204957,
@@ -4059,7 +4567,11 @@
       },
       "selectable": true,
       "focusable": true,
-      "dragging": false
+      "dragging": false,
+      "measured": {
+        "width": 206,
+        "height": 49
+      }
     },
     {
       "id": "HgRdgi2Hu4C8YLG5PXfoo",
@@ -4078,7 +4590,7 @@
         }
       },
       "zIndex": 999,
-      "width": 207,
+      "width": 208,
       "height": 49,
       "positionAbsolute": {
         "x": 878.3250908204957,
@@ -4088,10 +4600,14 @@
       "focusable": true,
       "dragging": false,
       "style": {
-        "width": 207,
+        "width": 208,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 208,
+        "height": 49
+      }
     },
     {
       "id": "_FSlD_qTz5Xo0x3pB6sZI",
@@ -4110,7 +4626,7 @@
         }
       },
       "zIndex": 999,
-      "width": 161,
+      "width": 162,
       "height": 49,
       "positionAbsolute": {
         "x": 347.5641444978062,
@@ -4118,11 +4634,15 @@
       },
       "dragging": false,
       "style": {
-        "width": 161,
+        "width": 162,
         "height": 49
       },
       "resizing": false,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 162,
+        "height": 49
+      }
     },
     {
       "id": "Wf9BM0COudf-Wz_ieKqr7",
@@ -4139,7 +4659,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 103,
       "positionAbsolute": {
         "x": 1086.3250908204957,
@@ -4147,11 +4667,15 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 103
       },
       "resizing": false,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 103
+      }
     },
     {
       "id": "FS7mpWrs6zdFRAAsegcyA",
@@ -4170,14 +4694,18 @@
         }
       },
       "zIndex": 999,
-      "width": 152,
+      "width": 153,
       "height": 36,
       "positionAbsolute": {
         "x": 1106.297678604876,
         "y": 2090.8464333036
       },
       "dragging": false,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 153,
+        "height": 36
+      }
     },
     {
       "id": "Ju00mr0KLGN2BV6yEQGPt",
@@ -4197,7 +4725,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 104,
       "positionAbsolute": {
         "x": 683.4983518244453,
@@ -4205,15 +4733,19 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 104
       },
       "resizing": false,
       "focusable": true,
-      "selectable": true
+      "selectable": true,
+      "measured": {
+        "width": 21,
+        "height": 104
+      }
     },
     {
-      "width": 417,
+      "width": 418,
       "height": 124,
       "id": "sVXZrBCsiSzWBBYWTm-nQ",
       "type": "paragraph",
@@ -4240,15 +4772,19 @@
       },
       "dragging": false,
       "style": {
-        "width": 417,
+        "width": 418,
         "height": 124
       },
       "resizing": false,
       "focusable": true,
-      "selectable": true
+      "selectable": true,
+      "measured": {
+        "width": 418,
+        "height": 124
+      }
     },
     {
-      "width": 104,
+      "width": 105,
       "height": 49,
       "id": "gC8lsIdYLRzo3HzwVqtm1",
       "type": "button",
@@ -4275,15 +4811,19 @@
         "y": 2278.65859077644
       },
       "style": {
-        "width": 104,
+        "width": 105,
         "height": 49
       },
       "focusable": true,
       "resizing": false,
-      "selectable": true
+      "selectable": true,
+      "measured": {
+        "width": 105,
+        "height": 49
+      }
     },
     {
-      "width": 157,
+      "width": 158,
       "height": 49,
       "id": "9LKa-YjOMtO1j62Ukt0q0",
       "type": "button",
@@ -4310,15 +4850,19 @@
         "y": 2278.65859077644
       },
       "style": {
-        "width": 157,
+        "width": 158,
         "height": 49
       },
       "focusable": true,
       "resizing": false,
-      "selectable": true
+      "selectable": true,
+      "measured": {
+        "width": 158,
+        "height": 49
+      }
     },
     {
-      "width": 114,
+      "width": 115,
       "height": 49,
       "id": "uSLzfLPXxS5-P7ozscvjZ",
       "type": "button",
@@ -4345,12 +4889,16 @@
         "y": 2278.65859077644
       },
       "style": {
-        "width": 114,
+        "width": 115,
         "height": 49
       },
       "focusable": true,
       "resizing": false,
-      "selectable": true
+      "selectable": true,
+      "measured": {
+        "width": 115,
+        "height": 49
+      }
     },
     {
       "id": "4_e76QafrB419S2INOeKd",
@@ -4369,7 +4917,7 @@
         }
       },
       "zIndex": 999,
-      "width": 223,
+      "width": 224,
       "height": 49,
       "positionAbsolute": {
         "x": 855.9237456884,
@@ -4377,12 +4925,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 223,
+        "width": 224,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 224,
+        "height": 49
+      }
     },
     {
       "id": "RKIW9hDrCd03Bf3djoJvp",
@@ -4406,17 +4958,21 @@
         "oldId": "d1G8QZ82y7ez7rLskMZiv"
       },
       "zIndex": 999,
-      "width": 214,
+      "width": 215,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 214,
+        "width": 215,
         "height": 49
       },
       "resizing": false,
       "positionAbsolute": {
         "x": 1047.0688147107603,
         "y": 1339.8965401994208
+      },
+      "measured": {
+        "width": 215,
+        "height": 49
       }
     },
     {
@@ -4440,17 +4996,21 @@
         }
       },
       "zIndex": 999,
-      "width": 216,
+      "width": 217,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 216,
+        "width": 217,
         "height": 49
       },
       "resizing": false,
       "positionAbsolute": {
         "x": 1047.0688147107603,
         "y": 1174.6339633778666
+      },
+      "measured": {
+        "width": 217,
+        "height": 49
       }
     }
   ],

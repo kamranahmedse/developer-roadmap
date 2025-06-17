@@ -4,4 +4,4 @@ The XREAD command reads data from one or more streams, only returning entired wi
 
 Learn more from the following resources:
 
-- [@official@XREAD Documentation](https://redis.io/docs/latest/commands/xread/)
+- [@official@XREAD](https://redis.io/docs/latest/commands/xread/)

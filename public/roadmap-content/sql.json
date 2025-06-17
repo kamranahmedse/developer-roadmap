@@ -21,12 +21,7 @@
     "links": [
       {
         "title": "Advantages and Disadvantages of DBMS",
-        "url": "https://www.javatpoint.com/advantages-and-disadvantages-of-dbms",
-        "type": "article"
-      },
-      {
-        "title": "ACID Transactions in Databases",
-        "url": "https://www.databricks.com/glossary/acid-transactions",
+        "url": "https://cloud.google.com/learn/what-is-a-relational-database",
         "type": "article"
       }
     ]
@@ -569,7 +564,7 @@
         "type": "article"
       },
       {
-        "title": "SQL Contraints",
+        "title": "SQL Constraints",
         "url": "https://www.programiz.com/sql/constraints",
         "type": "article"
       }
@@ -948,11 +943,6 @@
     "description": "The `CEILING()` function in SQL returns the smallest integer greater than or equal to a given numeric value. It's useful when you need to round up a number to the nearest whole number, regardless of whether the number is already an integer or a decimal. For example, `CEILING(4.2)` would return `5`, and `CEILING(-4.7)` would return `-4`. This function is commonly used in scenarios where rounding up is necessary, such as calculating the number of pages needed to display a certain number of items when each page has a fixed capacity.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "CEILING Function in SQL",
-        "url": "https://www.javatpoint.com/ceiling-function-in-sql",
-        "type": "article"
-      },
-      {
         "title": "SQL CEILING",
         "url": "https://www.w3schools.com/sql/func_sqlserver_ceiling.asp",
         "type": "article"
@@ -1270,7 +1260,7 @@
   },
   "Ps9Yv2s-bKvEegGAbPsiA": {
     "title": "Query Optimization",
-    "description": "Query optimization in SQL involves refining queries to enhance their execution speed and reduce resource consumption. Key strategies include indexing columns used in `WHERE`, `JOIN`, and `ORDER BY` clauses to accelerate data retrieval, minimizing data processed by limiting the number of columns selected and filtering rows early in the query. Using appropriate join types and arranging joins in the most efficient order are crucial. Avoiding inefficient patterns like `SELECT`, replacing subqueries with joins or common table expressions (CTEs), and leveraging query hints or execution plan analysis can also improve performance. Regularly updating statistics and ensuring that queries are structured to take advantage of database-specific optimizations are essential practices for maintaining optimal performance.\n\nLearn more from the following resources:",
+    "description": "Query optimization in SQL involves refining queries to enhance their execution speed and reduce resource consumption. Key strategies include indexing columns used in `WHERE`, `JOIN`, and `ORDER BY` clauses to accelerate data retrieval, minimizing data processed by limiting the number of columns selected and filtering rows early in the query. Using appropriate join types and arranging joins in the most efficient order are crucial. Avoiding inefficient patterns like `SELECT *`, replacing subqueries with joins or common table expressions (CTEs), and leveraging query hints or execution plan analysis can also improve performance. Regularly updating statistics and ensuring that queries are structured to take advantage of database-specific optimizations are essential practices for maintaining optimal performance.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "12 Ways to Optimize SQL Queries",
@@ -1505,7 +1495,7 @@
   },
   "UVTgbZrqpbYl1bQvQejcF": {
     "title": "Reducing Subqueries",
-    "description": "Recursive queries in SQL allow for iterative processing of hierarchical or tree-structured data within a single query. They consist of an anchor member (the base case) and a recursive member that references the query itself, enabling the exploration of parent-child relationships, traversal of graphs, or generation of series data. This powerful feature is particularly useful for tasks like querying organizational hierarchies, bill of materials structures, or navigating complex relationships in data that would otherwise require multiple separate queries or procedural code.\n\nLearn more from the following resources:",
+    "description": "Reducing subqueries is a common SQL optimization technique, especially when dealing with complex logic or large datasets. Correlated subqueries, which are evaluated once for each row in the outer query, can degrade the performance. Subqueries can often be replaced with JOIN operations. In cases where subqueries are reused, consider replacing them with Common Table Expressions (CTEs), which offer modularity and avoid repeated executions of the same logic. Limiting the result set returned by subqueries and storing the results of expensive subqueries in temporary tables for reuse can also improve performance.\n\nLearn more from the following resources:",
     "links": []
   },
   "w53CSY53nAAN0ux-XeJ4c": {

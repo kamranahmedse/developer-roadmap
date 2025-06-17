@@ -26,7 +26,7 @@ export function AIRoadmapsList(props: AIRoadmapsListProps) {
   return (
     <ul className="mb-4 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
       {roadmaps.map((roadmap) => {
-        const roadmapLink = `/ai/${roadmap.slug}`;
+        const roadmapLink = `/ai-roadmaps/${roadmap.slug}`;
 
         return (
           <a
@@ -35,7 +35,7 @@ export function AIRoadmapsList(props: AIRoadmapsListProps) {
             className="flex min-h-[95px] flex-col rounded-md border transition-colors hover:bg-gray-100"
             target={'_blank'}
           >
-            <h2 className="flex-grow px-2.5 py-2.5 text-base font-medium leading-tight">
+            <h2 className="grow px-2.5 py-2.5 text-base font-medium leading-tight">
               {roadmap.title}
             </h2>
             <div className="flex items-center justify-between gap-2 px-2.5 py-2">

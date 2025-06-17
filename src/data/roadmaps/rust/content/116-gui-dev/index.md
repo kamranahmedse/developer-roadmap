@@ -1,3 +1,0 @@
-# GUI Development
-
-"GUI Dev" or Graphical User Interface Development is a significant aspect of software development which focuses on creating visually engaging and intuitive user interfaces. It includes designing the layout, look, and feel of an application through elements such as buttons, icons, images, input fields, and other widgets. In Rust, GUI Development can be done using numerous libraries like 'conrod', 'druid', or 'iced'. Each of these libraries contains unique ways to deal with user input, event handling, and drawing graphics. Ultimately, good GUI design can lead to an improved user experience by making software easy and enjoyable to interact with.
