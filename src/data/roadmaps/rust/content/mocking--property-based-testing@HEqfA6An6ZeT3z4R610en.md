@@ -1,6 +1,6 @@
 # Mocking and Property-based Testing
 
-In Rust, **mocking** is a process that lets you create fake functions, objects, or behaviors to test different conditions and scenarios in your code. Rust does not natively support mocking, however, there are external libraries present to help you perform mocking. Some of the popular libraries for mocking in rust are `mockito`, `mockall`, and `mockall_double`. These libraries give you the ability to create mock structures with the same API as your original code and allow you to set predefined responses from functions or validate function calls, thus helping you test your rust code thoroughly.
+Mocking creates fake functions/objects for testing different scenarios. Rust uses external libraries like `mockito`, `mockall`, and `mockall_double` for mocking capabilities. Property-based testing generates test cases automatically to verify code behavior across a wide range of inputs.
 
 Visit the following resources to learn more:
 

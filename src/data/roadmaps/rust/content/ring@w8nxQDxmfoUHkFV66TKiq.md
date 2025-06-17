@@ -1,6 +1,6 @@
 # ring
 
-`Ring` is a popular cryptography library in Rust providing a safe, fast and easy-to-use platform for handling a broad range of cryptographic operations. The library supports a variety of cryptographic primitives, including RSA, AES, SHA, and many others. `Ring` is focused on the implementation of TLS protocol and cryptographic algorithm fundamentals, hence it doesn't include functionalities like parsing or serialization. This library excels in eliminating many common pitfalls of crypto usage by asserting on compile-time and runtime checks. One key feature is its limitation to safe, reviewed cryptographic algorithms, which enables it to help prevent accidental usage of insecure ones.
+`ring` is a safe, fast cryptography library for Rust focused on TLS and core cryptographic primitives. It includes RSA, AES, SHA, and other algorithms with compile-time and runtime safety checks. Restricts usage to safe, reviewed algorithms to prevent common cryptographic pitfalls and insecure implementations.
 
 Visit the following resources to learn more:
 

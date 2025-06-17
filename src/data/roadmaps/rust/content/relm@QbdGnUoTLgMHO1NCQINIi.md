@@ -1,3 +1,3 @@
 # relm
 
-`relm` is a declarative, event-driven framework for building GUIs in Rust. It is asynchronous and designed to handle complex user interfaces. `relm` uses `gtk-rs`, a wrapper for GTK+3, allowing for the creation of cross-platform GUI applications. Features in `relm` include Widget identification through name instead of Arc<Mutex<>>, asynchronicity framework using Futures, and seamless communication between widgets through the Model-View-Update architecture. The main focus of `relm` is to enable the creation of dynamic desktop applications with complex interactions, using the safe concurrency features of Rust.
+`relm` is a declarative, event-driven GUI framework for Rust built on `gtk-rs` and GTK+3. Uses Model-View-Update architecture with async Futures for complex UI interactions. Features widget identification by name, seamless inter-widget communication, and leverages Rust's safe concurrency for dynamic desktop applications.

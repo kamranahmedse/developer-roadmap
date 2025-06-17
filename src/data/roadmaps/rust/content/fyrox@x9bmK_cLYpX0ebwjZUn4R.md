@@ -1,3 +1,3 @@
 # fyrox
 
-"Fyrox" is a modern, lightweight, highly optimized and fast 3D game engine specifically designed for Rust. Leveraging the safety and concurrency inherent in Rust lang, it offers a high level of performance and reliability in game development. Its lower level of abstraction allows more direct control over the hardware, making it more suitable for performance-critical parts of a game. These aspects combined with a robust feature set, such as support for common 3D formats and advanced lighting and shadowing techniques, make Fyrox an ideal choice for developing games in Rust.
+Fyrox is a modern, highly optimized 3D game engine designed specifically for Rust. Leverages Rust's safety and concurrency for high performance and reliability. Features advanced lighting, shadowing, support for common 3D formats, and low-level hardware control for performance-critical applications.

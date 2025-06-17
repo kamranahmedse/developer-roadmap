@@ -1,3 +1,3 @@
 # rppal
 
-`RPPAL` stands for Raspberry Pi Peripheral Access Library. It's a crate for Raspberry Pi that provides access to the GPIO, I2C, PWM, SPI, and UART peripherals. Developed in Rust, it also includes a comprehensive interrupt handling system, software-based PWM, and I2C/SPI buses. The library supports all models of Raspberry Pi that run a variant of Raspbian/Debian Stretch or newer. While it's primarily designed for the Raspberry Pi's official Linux-based Raspbian OS, parts of the library might work with other Linux distributions or operating systems on the Raspberry Pi.
+`RPPAL` (Raspberry Pi Peripheral Access Library) provides Rust access to Raspberry Pi GPIO, I2C, PWM, SPI, and UART peripherals. Features comprehensive interrupt handling, software-based PWM, and I2C/SPI buses. Supports all Raspberry Pi models running Raspbian/Debian Stretch or newer.

@@ -1,3 +1,3 @@
 # sodiumoxide
 
-"Sodiumoxide" is a Rust binding to the networking and cryptography library, libsodium. It is designed to be easy to use and difficult to misuse. Sodiumoxide follows the design of NaCl for simplicity while allowing the performance benefits of libsodium. It provides cryptographic primitives in a safe, high-level, idiomatic Rust wrapper. It attempts to handle all possible errors, eliminating the possibility of a misuse, a significant advantage over using libsodium directly. Overall, sodiumoxide aims to make high-level cryptographic operations accessible without sacrificing safety or performance.
+`sodiumoxide` is a Rust binding to libsodium cryptography library, designed for easy use and misuse prevention. Provides safe, high-level, idiomatic Rust wrappers for cryptographic primitives with automatic error handling. Follows NaCl design principles for simplicity while offering libsodium performance benefits.
