@@ -20,6 +20,7 @@ import { Toaster } from '../components/Toast';
 import { siteConfig } from '../lib/config';
 import type { ResourceType } from '../lib/resource-progress';
 import Bluconic from '../components/Analytics/Bluconic.astro';
+import OneTrust from '../components/Analytics/OneTrust.astro';
 
 export interface Props {
   title: string;
@@ -184,6 +185,7 @@ const gaPageIdentifier = Astro.url.pathname
     }
 
     <Analytics />
+    <OneTrust />
     <Clarity />
     <RedditPixel />
     <GoogleAd />
