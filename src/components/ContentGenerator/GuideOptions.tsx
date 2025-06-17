@@ -38,14 +38,14 @@ export function GuideOptions(props: GuideOptionsProps) {
 
   return (
     <div className="flex flex-col gap-2">
-      <label
-        htmlFor={depthSelectId}
-        className="inline-block text-sm text-gray-500"
-      >
+      <label htmlFor={depthSelectId} className="inline-block text-gray-500">
         Choose depth of content
       </label>
       <Select value={depth} onValueChange={setDepth}>
-        <SelectTrigger id={depthSelectId}>
+        <SelectTrigger
+          id={depthSelectId}
+          className="h-auto rounded-xl bg-white p-4 text-base"
+        >
           {selectedDepth && (
             <div className="flex flex-col gap-1">
               <span>{selectedDepth.label}</span>
@@ -54,7 +54,7 @@ export function GuideOptions(props: GuideOptionsProps) {
 
           {!selectedDepth && <SelectValue placeholder="Select a depth" />}
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="rounded-xl bg-white">
           {depthOptions.map((option) => (
             <SelectItem key={option.value} value={option.value}>
               <div className="flex flex-col gap-1">

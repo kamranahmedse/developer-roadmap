@@ -42,12 +42,15 @@ export function CourseOptions(props: CourseOptionsProps) {
     <div className="flex flex-col gap-2">
       <label
         htmlFor={difficultySelectId}
-        className="inline-block text-sm text-gray-500"
+        className="inline-block text-gray-500"
       >
         Choose difficulty level
       </label>
       <Select value={difficulty} onValueChange={setDifficulty}>
-        <SelectTrigger id={difficultySelectId}>
+        <SelectTrigger
+          id={difficultySelectId}
+          className="h-auto rounded-xl bg-white p-4 text-base"
+        >
           {selectedDifficulty && (
             <div className="flex flex-col gap-1">
               <span>{selectedDifficulty.label}</span>
@@ -58,7 +61,7 @@ export function CourseOptions(props: CourseOptionsProps) {
             <SelectValue placeholder="Select a difficulty" />
           )}
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="rounded-xl bg-white">
           {difficultyOptions.map((option) => (
             <SelectItem key={option.value} value={option.value}>
               <div className="flex flex-col gap-1">

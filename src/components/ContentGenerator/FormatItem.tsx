@@ -15,10 +15,10 @@ export function FormatItem(props: FormatItemProps) {
     <button
       type="button"
       className={cn(
-        'flex w-full flex-col items-center justify-center gap-2 rounded-lg border border-gray-200 p-2 py-6',
+        'flex w-full flex-col items-center justify-center gap-2 rounded-xl border border-gray-200 p-2 py-6',
         isSelected
-          ? 'border-gray-200 bg-gray-100'
-          : 'text-gray-400 hover:bg-gray-50',
+          ? 'border-gray-200 bg-white'
+          : 'bg-gray-50 text-gray-400 hover:bg-gray-50',
       )}
       onClick={onClick}
     >
