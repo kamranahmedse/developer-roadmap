@@ -1,4 +1,4 @@
-import { BookOpen, type LucideIcon } from 'lucide-react';
+import { BookOpen, FileTextIcon, type LucideIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
 
 type LibraryTabsProps = {
@@ -18,7 +18,7 @@ export function LibraryTabs(props: LibraryTabsProps) {
       />
       <LibraryTabButton
         isActive={activeTab === 'guides'}
-        icon={BookOpen}
+        icon={FileTextIcon}
         label="Guides"
         href="/ai/guides"
       />

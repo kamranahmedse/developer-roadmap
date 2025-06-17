@@ -1,7 +1,10 @@
 import { httpGet } from '../lib/query-http';
 import { isLoggedIn } from '../lib/jwt';
 import { queryOptions } from '@tanstack/react-query';
-import { markdownToHtmlWithHighlighting } from '../lib/markdown';
+import {
+  markdownToHtml,
+  markdownToHtmlWithHighlighting,
+} from '../lib/markdown';
 
 export interface AIGuideDocument {
   _id: string;
@@ -70,10 +73,10 @@ export type ListUserAIGuidesQuery = {
   query?: string;
 };
 
-type ListUserAIGuidesResponse = {
+export type ListUserAIGuidesResponse = {
   data: Omit<
     AIGuideDocument,
-    'content' | 'tokens' | 'relatedTopics' | 'deepDiveTopics' | 'questions'
+    'tokens' | 'relatedTopics' | 'deepDiveTopics' | 'questions'
   >[];
   totalCount: number;
   totalPages: number;
@@ -90,11 +93,23 @@ export function listUserAIGuidesOptions(
 ) {
   return queryOptions({
     queryKey: ['ai-guides', params],
-    queryFn: () => {
-      return httpGet<ListUserAIGuidesResponse>(
+    queryFn: async () => {
+      const response = await httpGet<ListUserAIGuidesResponse>(
         `/v1-list-user-ai-guides`,
         params,
       );
+
+      return {
+        ...response,
+        data: response.data.map((guide) => {
+          const preview = guide.content.slice(0, 500);
+
+          return {
+            ...guide,
+            html: markdownToHtml(preview, false),
+          };
+        }),
+      };
     },
     enabled: !!isLoggedIn(),
   });

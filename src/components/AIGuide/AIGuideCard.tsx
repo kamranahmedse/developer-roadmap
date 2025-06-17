@@ -1,8 +1,10 @@
-import type { AIGuideDocument } from '../../queries/ai-guide';
+import type { ListUserAIGuidesResponse } from '../../queries/ai-guide';
 import { AIGuideActions } from './AIGuideActions';
 
 type AIGuideCardProps = {
-  guide: Pick<AIGuideDocument, 'slug' | 'title' | 'depth'>;
+  guide: ListUserAIGuidesResponse['data'][number] & {
+    html: string;
+  };
   showActions?: boolean;
 };
 
@@ -20,9 +22,9 @@ export function AIGuideCard(props: AIGuideCardProps) {
     <div className="relative flex flex-grow flex-col">
       <a
         href={`/ai/guide/${guide.slug}`}
-        className="hover:border-gray-3 00 group relative flex h-full min-h-[140px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
+        className="group relative flex h-full min-h-[140px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left hover:border-gray-300 hover:bg-gray-50"
       >
-        <div className="flex items-center justify-between">
+        <div className="mb-4 flex items-center justify-between">
           <span
             className={`rounded-full text-xs font-medium capitalize opacity-80 ${guideDepthColor}`}
           >
@@ -30,9 +32,14 @@ export function AIGuideCard(props: AIGuideCardProps) {
           </span>
         </div>
 
-        <h3 className="my-2 text-base font-semibold text-gray-900">
-          {guide.title}
-        </h3>
+        <div className="relative max-h-[290px] min-h-[290px] overflow-y-hidden">
+          <div
+            className="prose prose-sm prose-pre:bg-gray-100 [&_h1]:hidden [&_h1:first-child]:block [&_h1:first-child]:text-lg [&_h1:first-child]:font-bold [&_h1:first-child]:text-pretty [&_h2]:hidden [&_h3]:hidden [&_h4]:hidden [&_h5]:hidden [&_h6]:hidden"
+            dangerouslySetInnerHTML={{ __html: guide.html }}
+          />
+
+          <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white to-transparent group-hover:from-gray-50" />
+        </div>
       </a>
 
       {showActions && guide.slug && (

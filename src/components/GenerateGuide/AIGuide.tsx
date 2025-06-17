@@ -163,7 +163,7 @@ export function ListSuggestions(props: ListSuggestionsProps) {
         )}
         {!isLoading &&
           suggestions?.map((topic) => {
-            const url = `/ai/guides?term=${encodeURIComponent(topic)}&depth=${depth}&id=&format=guide`;
+            const url = `/ai/guide?term=${encodeURIComponent(topic)}&depth=${depth}&id=&format=guide`;
 
             return (
               <li key={topic} className="w-full">
