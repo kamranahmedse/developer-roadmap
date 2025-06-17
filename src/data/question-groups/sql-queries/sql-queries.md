@@ -6,6 +6,7 @@ title: '30 SQL Queries Interview Questions and Answers'
 description: 'Writing SQL queries on the spot is tough. This guide covers 30 common SQL queries interview questions with examples, code snippets, and explanations.'
 authorId: 'ekene'
 ending: 'sql-queries-ending.md'
+isNew: true
 date: 2025-06-17
 seo:
   title: '30 SQL Queries Interview Questions and Answers'
