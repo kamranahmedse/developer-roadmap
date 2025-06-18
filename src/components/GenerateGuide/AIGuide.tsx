@@ -93,11 +93,10 @@ export function AIGuide(props: AIGuideProps) {
     });
   };
 
-  console.log(isLoadingBySlug);
   return (
     <AITutorLayout
       wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden bg-white"
-      containerClassName="h-[calc(100vh-49px)] overflow-hidden"
+      containerClassName="h-[calc(100vh-49px)] overflow-hidden relative"
     >
       {showUpgradeModal && (
         <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />

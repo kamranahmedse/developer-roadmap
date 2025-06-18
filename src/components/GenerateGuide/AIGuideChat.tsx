@@ -1,13 +1,21 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from 'react';
 import { useChat, type ChatMessage } from '../../hooks/use-chat';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
 import {
   ArrowDownIcon,
   BotIcon,
   LockIcon,
+  MessageCircleIcon,
   PauseCircleIcon,
   SendIcon,
   Trash2Icon,
+  XIcon,
 } from 'lucide-react';
 import { ChatHeaderButton } from '../FrameRenderer/RoadmapFloatingChat';
 import { isLoggedIn } from '../../lib/jwt';
@@ -19,6 +27,7 @@ import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { LoadingChip } from '../LoadingChip';
+import { getTailwindScreenDimension } from '../../lib/is-mobile';
 
 type AIGuideChatProps = {
   guideSlug?: string;
@@ -42,6 +51,8 @@ export function AIGuideChat(props: AIGuideChatProps) {
 
   const [inputValue, setInputValue] = useState('');
   const [showScrollToBottom, setShowScrollToBottom] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   const {
     data: tokenUsage,
@@ -144,13 +155,58 @@ export function AIGuideChat(props: AIGuideChatProps) {
   const isLoading =
     isGuideLoading || isTokenUsageLoading || isBillingDetailsLoading;
 
+  useLayoutEffect(() => {
+    const deviceType = getTailwindScreenDimension();
+    const isMediumSize = ['sm', 'md'].includes(deviceType);
+
+    if (!isMediumSize) {
+      const storedState = localStorage.getItem('chat-history-sidebar-open');
+      setIsChatOpen(storedState === null ? true : storedState === 'true');
+    } else {
+      setIsChatOpen(!isMediumSize);
+    }
+
+    setIsMobile(isMediumSize);
+  }, []);
+
+  useEffect(() => {
+    if (!isMobile) {
+      localStorage.setItem('chat-history-sidebar-open', isChatOpen.toString());
+    }
+  }, [isChatOpen, isMobile]);
+
+  if (!isChatOpen) {
+    return (
+      <div className="absolute inset-x-0 bottom-0 flex justify-center p-2">
+        <button
+          className="flex items-center justify-center gap-2 rounded-full bg-black px-4 py-2 text-white shadow"
+          onClick={() => {
+            setIsChatOpen(true);
+          }}
+        >
+          <MessageCircleIcon className="h-4 w-4" />
+          <span className="text-sm">Open Chat</span>
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <div className="relative flex h-full w-full max-w-[40%] flex-col overflow-hidden border-l border-gray-200">
-      <div className="border-b border-gray-200 bg-white p-2">
+    <div className="absolute inset-0 flex h-full w-full max-w-full flex-col overflow-hidden border-l border-gray-200 bg-white md:relative md:max-w-[40%]">
+      <div className="flex items-center justify-between gap-2 border-b border-gray-200 bg-white p-2">
         <h2 className="flex items-center gap-2 text-sm font-medium">
           <BotIcon className="h-4 w-4" />
           AI Guide
         </h2>
+
+        <button
+          className="mr-2 flex size-5 items-center justify-center rounded-md text-gray-500 hover:bg-gray-300 md:hidden"
+          onClick={() => {
+            setIsChatOpen(false);
+          }}
+        >
+          <XIcon className="h-3.5 w-3.5" />
+        </button>
       </div>
 
       {isLoading && (
