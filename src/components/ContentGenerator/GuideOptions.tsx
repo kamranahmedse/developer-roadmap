@@ -1,4 +1,4 @@
-import { useId, useState } from 'react';
+import { useId } from 'react';
 import {
   Select,
   SelectContent,
@@ -20,7 +20,7 @@ export function GuideOptions(props: GuideOptionsProps) {
     {
       label: 'Essentials',
       value: 'essentials',
-      description: 'Just the code concepts',
+      description: 'Just the core concepts',
     },
     {
       label: 'Detailed',

@@ -1,7 +1,6 @@
 import {
   BookOpenIcon,
   FileTextIcon,
-  MapIcon,
   SparklesIcon,
   type LucideIcon,
 } from 'lucide-react';
@@ -20,6 +19,7 @@ import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { useIsPaidUser } from '../../queries/billing';
+import { cn } from '../../lib/classname';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 type AllowedFormat = (typeof allowedFormats)[number];
@@ -111,7 +111,7 @@ export function ContentGenerator() {
   }, []);
 
   return (
-    <div className="mx-auto flex w-full max-w-xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-4">
+    <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-4">
       <div className="relative">
         {isUpgradeModalOpen && (
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
@@ -155,7 +155,7 @@ export function ContentGenerator() {
           <label className="inline-block text-gray-500">
             Choose the format
           </label>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-3">
             {allowedFormats.map((format) => {
               const isSelected = format.value === selectedFormat;
 
@@ -185,18 +185,22 @@ export function ContentGenerator() {
 
         {selectedFormat !== 'roadmap' && (
           <>
-            <div className="flex items-center gap-2 rounded-xl border border-gray-200 bg-white p-4">
+            <label
+              className={cn(
+                'flex items-center gap-2 border border-gray-200 bg-white p-4',
+                showFineTuneOptions && 'rounded-t-xl',
+                !showFineTuneOptions && 'rounded-xl',
+              )}
+              htmlFor={fineTuneOptionsId}
+            >
               <input
                 type="checkbox"
                 id={fineTuneOptionsId}
                 checked={showFineTuneOptions}
                 onChange={(e) => setShowFineTuneOptions(e.target.checked)}
               />
-              <label htmlFor={fineTuneOptionsId} className="text-base">
-                Show fine-tune options
-              </label>
-            </div>
-
+              Explain more for a better result
+            </label>
             {showFineTuneOptions && (
               <FineTuneCourse
                 hasFineTuneData={showFineTuneOptions}
@@ -206,7 +210,7 @@ export function ContentGenerator() {
                 setAbout={setAbout}
                 setGoal={setGoal}
                 setCustomInstructions={setCustomInstructions}
-                className="overflow-hidden rounded-xl border border-gray-200 bg-white [&_div:first-child_label]:border-t-0"
+                className="-mt-4.5 overflow-hidden rounded-b-xl border border-gray-200 bg-white [&_div:first-child_label]:border-t-0"
               />
             )}
           </>
