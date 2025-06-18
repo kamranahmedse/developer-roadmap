@@ -6,17 +6,17 @@ import { LoadingChip } from '../LoadingChip';
 type AIGuideContentProps = {
   html: string;
   onRegenerate?: (prompt?: string) => void;
-  isRegenerating?: boolean;
+  isLoading?: boolean;
 };
 
 export function AIGuideContent(props: AIGuideContentProps) {
-  const { html, onRegenerate, isRegenerating } = props;
+  const { html, onRegenerate, isLoading } = props;
 
   return (
     <div
       className={cn(
         'relative mx-auto w-full max-w-4xl',
-        isRegenerating && 'min-h-full',
+        isLoading && 'min-h-full',
       )}
     >
       <div
@@ -24,13 +24,13 @@ export function AIGuideContent(props: AIGuideContentProps) {
         dangerouslySetInnerHTML={{ __html: html }}
       />
 
-      {isRegenerating && !html && (
+      {isLoading && !html && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <LoadingChip message="Regenerating..." />
+          <LoadingChip message="Please wait..." />
         </div>
       )}
 
-      {onRegenerate && !isRegenerating && (
+      {onRegenerate && !isLoading && (
         <div className="absolute top-4 right-4">
           <AIGuideRegenerate onRegenerate={onRegenerate} />
         </div>

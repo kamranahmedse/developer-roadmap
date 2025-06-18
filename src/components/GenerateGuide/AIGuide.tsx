@@ -31,7 +31,11 @@ export function AIGuide(props: AIGuideProps) {
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
-  const { data: aiGuide } = useQuery(getAiGuideOptions(guideSlug), queryClient);
+  const { data: aiGuide, isLoading: isLoadingBySlug } = useQuery(
+    getAiGuideOptions(guideSlug),
+    queryClient,
+  );
+
   const { data: aiGuideSuggestions, isLoading: isAiGuideSuggestionsLoading } =
     useQuery(
       {
@@ -88,9 +92,10 @@ export function AIGuide(props: AIGuideProps) {
     });
   };
 
+  console.log(isLoadingBySlug);
   return (
     <AITutorLayout
-      wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden"
+      wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden bg-white"
       containerClassName="h-[calc(100vh-49px)] overflow-hidden"
     >
       {showUpgradeModal && (
@@ -102,7 +107,7 @@ export function AIGuide(props: AIGuideProps) {
           <AIGuideContent
             html={regeneratedHtml || aiGuide?.html || ''}
             onRegenerate={handleRegenerate}
-            isRegenerating={isRegenerating}
+            isLoading={isLoadingBySlug || isRegenerating}
           />
         )}
         {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}

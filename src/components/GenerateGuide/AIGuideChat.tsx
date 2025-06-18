@@ -3,12 +3,10 @@ import { useChat, type ChatMessage } from '../../hooks/use-chat';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
 import {
   ArrowDownIcon,
-  BotIcon,
-  Loader2Icon,
-  LockIcon,
+  BotIcon, LockIcon,
   PauseCircleIcon,
   SendIcon,
-  Trash2Icon,
+  Trash2Icon
 } from 'lucide-react';
 import { ChatHeaderButton } from '../FrameRenderer/RoadmapFloatingChat';
 import { isLoggedIn } from '../../lib/jwt';
@@ -19,6 +17,7 @@ import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
+import { LoadingChip } from '../LoadingChip';
 
 type AIGuideChatProps = {
   guideSlug?: string;
@@ -155,7 +154,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
 
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <Loader2Icon className="h-4 w-4 animate-spin" />
+          <LoadingChip message="Loading..." />
         </div>
       )}
 
