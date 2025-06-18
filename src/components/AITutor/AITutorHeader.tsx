@@ -3,15 +3,17 @@ import { AITutorLimits } from './AITutorLimits';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { useIsPaidUser } from '../../queries/billing';
+import { PlusIcon } from 'lucide-react';
 
 type AITutorHeaderProps = {
   title: string;
+  subtitle?: string;
   onUpgradeClick: () => void;
   children?: React.ReactNode;
 };
 
 export function AITutorHeader(props: AITutorHeaderProps) {
-  const { title, onUpgradeClick, children } = props;
+  const { title, subtitle, onUpgradeClick, children } = props;
 
   const { data: limits } = useQuery(getAiCourseLimitOptions(), queryClient);
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
@@ -20,20 +22,29 @@ export function AITutorHeader(props: AITutorHeaderProps) {
 
   return (
     <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
-      <div className="flex items-center gap-2">
-        <h2 className="relative flex-shrink-0 top-0 lg:top-1 text-lg font-semibold">{title}</h2>
-      </div>
-
-      <div className="flex items-center gap-2">
-        <AITutorLimits
-          used={used}
-          limit={limit}
-          isPaidUser={isPaidUser}
-          isPaidUserLoading={isPaidUserLoading}
-          onUpgradeClick={onUpgradeClick}
-        />
-
-        {children}
+      <div className="flex w-full flex-row items-center justify-between gap-2">
+        <div className="gap-2">
+          <h2 className="relative top-0 mb-4 flex-shrink-0 text-3xl font-semibold lg:top-1">
+            {title}
+          </h2>
+          {subtitle && <p className="mb-4 text-sm text-gray-500">{subtitle}</p>}
+        </div>
+        <div className="flex flex-row items-center gap-2">
+          <AITutorLimits
+            used={used}
+            limit={limit}
+            isPaidUser={isPaidUser}
+            isPaidUserLoading={isPaidUserLoading}
+            onUpgradeClick={onUpgradeClick}
+          />
+          <a
+            href="/ai"
+            className="flex flex-row items-center gap-2 rounded-lg bg-black px-4 py-2 text-sm font-medium text-white"
+          >
+            <PlusIcon className="h-4 w-4" />
+            New
+          </a>
+        </div>
       </div>
     </div>
   );

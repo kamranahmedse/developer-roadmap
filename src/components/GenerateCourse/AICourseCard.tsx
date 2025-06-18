@@ -28,62 +28,50 @@ export function AICourseCard(props: AICourseCardProps) {
   const updatedAgo = getRelativeTimeString(course?.updatedAt);
 
   return (
-    <div className="relative flex flex-grow flex-col">
+    <div className="relative flex flex-grow">
       <a
         href={`/ai/${course.slug}`}
-        className="hover:border-gray-3 00 group relative flex h-full min-h-[300px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
+        className="group relative flex h-full w-full flex-col gap-3 overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:border-gray-300 hover:bg-gray-50 sm:flex-row sm:items-center sm:gap-4"
       >
-        <div className="flex items-center justify-between">
-          <span
-            className={`rounded-full text-xs font-medium capitalize opacity-80 ${difficultyColor}`}
-          >
-            {course.difficulty}
-          </span>
+        {/* Title and difficulty section */}
+        <div className="min-w-0 flex-1">
+          <div className="mb-1 flex items-center gap-2">
+            <span
+              className={`rounded-full text-xs font-medium capitalize opacity-80 ${difficultyColor}`}
+            >
+              {course.difficulty}
+            </span>
+          </div>
+
+          <h3 className="line-clamp-2 text-base font-semibold text-balance text-gray-900">
+            {course.title}
+          </h3>
         </div>
 
-        <h3 className="my-2 text-base font-semibold text-balance text-gray-900">
-          {course.title}
-        </h3>
-
-        <div className="flex items-center gap-2 pt-2">
-          <div className="flex items-center text-xs text-gray-600">
+        {/* Course stats section */}
+        <div className="flex mt-7 items-center gap-4 sm:gap-4">
+          <div className="hidden items-center text-xs text-gray-600 sm:flex">
             <BookOpen className="mr-1 h-3.5 w-3.5" />
             <span>{modulesCount} modules</span>
           </div>
 
-          <span className="text-xs text-gray-600">•</span>
-
-          <div className="flex items-center text-xs text-gray-600">
-            <BookOpen className="mr-1 h-3.5 w-3.5" />
-            <span>{totalTopics} lessons</span>
-          </div>
-        </div>
-
-        {showProgress && totalTopics > 0 && (
-          <div className="mt-auto">
-            <div className="flex items-center justify-between gap-2">
-              <span className="text-xs text-gray-600">Progress</span>
-
-              <span className="text-xs font-medium text-gray-700">
-                {progressPercentage}%
-              </span>
+          <div className="flex items-center gap-2 text-xs text-gray-600">
+            <div className="flex items-center">
+              <BookOpen className="mr-1 h-3.5 w-3.5" />
+              <span>{totalTopics} lessons</span>
             </div>
 
-            <div className="mt-2.5 flex items-center">
-              <div className="h-1.5 w-full overflow-hidden rounded-full bg-gray-200">
-                <div
-                  className="h-full rounded-full bg-blue-600"
-                  style={{ width: `${progressPercentage}%` }}
-                />
-              </div>
-            </div>
+            {showProgress && totalTopics > 0 && (
+              <>
+                <span className="hidden text-gray-400 sm:inline">•</span>
+                <div className="flex items-center">
+                  <span className="flex items-center text-xs font-medium text-gray-700">
+                    {progressPercentage}% complete
+                  </span>
+                </div>
+              </>
+            )}
           </div>
-        )}
-
-        <div className="mt-4 flex items-center justify-between gap-2">
-          <span className="text-xs text-gray-600">
-            Last updated {updatedAgo}
-          </span>
         </div>
       </a>
 
