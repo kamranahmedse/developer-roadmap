@@ -100,6 +100,7 @@ export function useChat(options: UseChatOptions) {
           },
         });
 
+        setStatus('idle');
         abortControllerRef.current = null;
         onFinish?.();
       } catch (error) {
@@ -110,6 +111,7 @@ export function useChat(options: UseChatOptions) {
         }
 
         onError?.(error as Error);
+        setStatus('error');
       }
     },
     [endpoint, onError],

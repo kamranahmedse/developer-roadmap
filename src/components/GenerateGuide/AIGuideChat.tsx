@@ -297,14 +297,13 @@ export function AIGuideChat(props: AIGuideChatProps) {
 
             <button
               className="absolute top-1/2 right-2 -translate-y-1/2 p-1 text-zinc-500 hover:text-black disabled:opacity-50"
-              disabled={isStreamingMessage}
               onClick={() => {
                 if (!isLoggedIn()) {
                   showLoginPopup();
                   return;
                 }
 
-                if (isStreamingMessage) {
+                if (status !== 'idle') {
                   stop();
                   return;
                 }
