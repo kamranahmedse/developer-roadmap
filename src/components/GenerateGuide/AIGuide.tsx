@@ -114,6 +114,7 @@ export function AIGuide(props: AIGuideProps) {
               suggestions={relatedTopics}
               depth="essentials"
               isLoading={isAiGuideSuggestionsLoading}
+              currentGuideTitle={aiGuide.title}
             />
 
             <ListSuggestions
@@ -121,6 +122,7 @@ export function AIGuide(props: AIGuideProps) {
               suggestions={deepDiveTopics}
               depth="detailed"
               isLoading={isAiGuideSuggestionsLoading}
+              currentGuideTitle={aiGuide.title}
             />
           </div>
         )}
@@ -137,6 +139,7 @@ export function AIGuide(props: AIGuideProps) {
 }
 
 type ListSuggestionsProps = {
+  currentGuideTitle?: string;
   title: string;
   suggestions: string[];
   depth: string;
@@ -144,7 +147,7 @@ type ListSuggestionsProps = {
 };
 
 export function ListSuggestions(props: ListSuggestionsProps) {
-  const { title, suggestions, depth, isLoading } = props;
+  const { title, suggestions, depth, isLoading, currentGuideTitle } = props;
 
   return (
     <div className="flex flex-col">
@@ -163,7 +166,11 @@ export function ListSuggestions(props: ListSuggestionsProps) {
         )}
         {!isLoading &&
           suggestions?.map((topic) => {
-            const url = `/ai/guide?term=${encodeURIComponent(topic)}&depth=${depth}&id=&format=guide`;
+            const topicTerm =
+              depth === 'essentials'
+                ? `I have covered the basics of ${currentGuideTitle} and want to learn more about ${topic}`
+                : `I have covered the basics of ${currentGuideTitle} and want to dive deeper into ${topic}`;
+            const url = `/ai/guide?term=${encodeURIComponent(topicTerm)}&depth=${depth}&id=&format=guide`;
 
             return (
               <li key={topic} className="w-full">

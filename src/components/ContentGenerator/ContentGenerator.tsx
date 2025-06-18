@@ -82,7 +82,7 @@ export function ContentGenerator() {
     if (selectedFormat === 'course') {
       window.location.href = `/ai/course?term=${encodeURIComponent(title)}&difficulty=${difficulty}&id=${sessionId}&format=${selectedFormat}`;
     } else if (selectedFormat === 'guide') {
-      window.location.href = `/ai/guides?term=${encodeURIComponent(title)}&depth=${depth}&id=${sessionId}&format=${selectedFormat}`;
+      window.location.href = `/ai/guide?term=${encodeURIComponent(title)}&depth=${depth}&id=${sessionId}&format=${selectedFormat}`;
     }
   };
 
