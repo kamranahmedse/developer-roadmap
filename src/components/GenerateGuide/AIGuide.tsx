@@ -1,20 +1,21 @@
-import { useMemo, useState } from 'react';
-import { AITutorLayout } from '../AITutor/AITutorLayout';
-import { AIGuideContent } from './AIGuideContent';
 import { useQuery } from '@tanstack/react-query';
+import { ExternalLink } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { flushSync } from 'react-dom';
+import { generateGuide } from '../../helper/generate-ai-guide';
+import { shuffle } from '../../helper/shuffle';
+import { useToast } from '../../hooks/use-toast';
+import { isLoggedIn } from '../../lib/jwt';
 import {
   aiGuideSuggestionsOptions,
   getAiGuideOptions,
 } from '../../queries/ai-guide';
 import { queryClient } from '../../stores/query-client';
-import { GenerateAIGuide } from './GenerateAIGuide';
-import { AIGuideChat } from './AIGuideChat';
+import { AITutorLayout } from '../AITutor/AITutorLayout';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { isLoggedIn } from '../../lib/jwt';
-import { shuffle } from '../../helper/shuffle';
-import { generateGuide } from '../../helper/generate-ai-guide';
-import { useToast } from '../../hooks/use-toast';
-import { flushSync } from 'react-dom';
+import { AIGuideChat } from './AIGuideChat';
+import { AIGuideContent } from './AIGuideContent';
+import { GenerateAIGuide } from './GenerateAIGuide';
 
 type AIGuideProps = {
   guideSlug?: string;
@@ -157,8 +158,8 @@ export function ListSuggestions(props: ListSuggestionsProps) {
   const { title, suggestions, depth, isLoading, currentGuideTitle } = props;
 
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-gray-300 bg-linear-to-br from-gray-100 to-gray-50 shadow-xs transition-all duration-200 hover:shadow-sm">
-      <div className="border-b border-gray-200/80 bg-white/60 px-5 py-4">
+    <div className="group relative overflow-hidden rounded-xl border border-gray-300 bg-linear-to-br from-gray-100 to-gray-50 shadow-xs transition-all duration-200">
+      <div className="border-b border-gray-200 bg-white px-5 py-4">
         <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
         <p className="mt-1 text-sm text-gray-600">
           {depth === 'essentials'
@@ -173,7 +174,7 @@ export function ListSuggestions(props: ListSuggestionsProps) {
             {[1, 2].map((i) => (
               <div
                 key={i}
-                className="h-10 w-full animate-pulse rounded-lg bg-gray-200/70"
+                className="h-10 w-full animate-pulse rounded-lg bg-white"
               ></div>
             ))}
           </div>
@@ -198,19 +199,7 @@ export function ListSuggestions(props: ListSuggestionsProps) {
                   <span className="flex-1 truncate group-hover/item:text-gray-900">
                     {topic}
                   </span>
-                  <svg
-                    className="ml-2 h-4 w-4 text-gray-400 transition-colors group-hover/item:text-gray-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
+                  <ExternalLink className="ml-2 size-4 text-gray-400 group-hover/item:text-gray-600" />
                 </a>
               );
             })}
