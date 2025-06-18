@@ -154,7 +154,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
       </div>
 
       {isLoading && (
-        <div className="absolute bg-gray-100 inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
           <LoadingChip message="Loading..." />
         </div>
       )}
@@ -228,7 +228,16 @@ export function AIGuideChat(props: AIGuideChatProps) {
           </div>
 
           {(hasMessages || showScrollToBottom) && (
-            <div className="flex flex-row justify-end gap-2 border-t border-gray-200 px-3 py-2">
+            <div className="flex flex-row justify-between gap-2 border-t border-gray-200 px-3 py-2">
+              <ChatHeaderButton
+                icon={<Trash2Icon className="h-3.5 w-3.5" />}
+                className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
+                onClick={() => {
+                  setMessages([]);
+                }}
+              >
+                Clear
+              </ChatHeaderButton>
               {showScrollToBottom && (
                 <ChatHeaderButton
                   icon={<ArrowDownIcon className="h-3.5 w-3.5" />}
@@ -240,16 +249,6 @@ export function AIGuideChat(props: AIGuideChatProps) {
                   Scroll to bottom
                 </ChatHeaderButton>
               )}
-
-              <ChatHeaderButton
-                icon={<Trash2Icon className="h-3.5 w-3.5" />}
-                className="rounded-md bg-gray-200 py-1 pr-2 pl-1.5 text-gray-500 hover:bg-gray-300"
-                onClick={() => {
-                  setMessages([]);
-                }}
-              >
-                Clear
-              </ChatHeaderButton>
             </div>
           )}
 
