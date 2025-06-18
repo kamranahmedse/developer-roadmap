@@ -113,22 +113,24 @@ export function AIGuide(props: AIGuideProps) {
         {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}
 
         {aiGuide && !isRegenerating && (
-          <div className="mt-4 grid grid-cols-2 divide-x divide-gray-200 rounded-lg border border-gray-200 bg-white">
-            <ListSuggestions
-              title="Related Topics"
-              suggestions={relatedTopics}
-              depth="essentials"
-              isLoading={isAiGuideSuggestionsLoading}
-              currentGuideTitle={aiGuide.title}
-            />
+          <div className="mx-auto mt-12 mb-12 max-w-4xl">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <ListSuggestions
+                title="Related Topics"
+                suggestions={relatedTopics}
+                depth="essentials"
+                isLoading={isAiGuideSuggestionsLoading}
+                currentGuideTitle={aiGuide.title}
+              />
 
-            <ListSuggestions
-              title="Dive Deeper"
-              suggestions={deepDiveTopics}
-              depth="detailed"
-              isLoading={isAiGuideSuggestionsLoading}
-              currentGuideTitle={aiGuide.title}
-            />
+              <ListSuggestions
+                title="Dive Deeper"
+                suggestions={deepDiveTopics}
+                depth="detailed"
+                isLoading={isAiGuideSuggestionsLoading}
+                currentGuideTitle={aiGuide.title}
+              />
+            </div>
           </div>
         )}
       </div>
@@ -155,41 +157,87 @@ export function ListSuggestions(props: ListSuggestionsProps) {
   const { title, suggestions, depth, isLoading, currentGuideTitle } = props;
 
   return (
-    <div className="flex flex-col">
-      <h2 className="border-b border-gray-200 p-2 text-sm text-gray-500">
-        {title}
-      </h2>
-      <ul className="flex flex-col gap-1 p-1">
-        {isLoading && (
-          <>
-            {[1, 2].map((i) => (
-              <div key={i} className="w-full">
-                <div className="h-7 w-full animate-pulse rounded-md bg-gray-200"></div>
-              </div>
-            ))}
-          </>
-        )}
-        {!isLoading &&
-          suggestions?.map((topic) => {
-            const topicTerm =
-              depth === 'essentials'
-                ? `I have covered the basics of ${currentGuideTitle} and want to learn more about ${topic}`
-                : `I have covered the basics of ${currentGuideTitle} and want to dive deeper into ${topic}`;
-            const url = `/ai/guide?term=${encodeURIComponent(topicTerm)}&depth=${depth}&id=&format=guide`;
+    <div className="group relative overflow-hidden rounded-xl border border-gray-300 bg-linear-to-br from-gray-100 to-gray-50 shadow-xs transition-all duration-200 hover:shadow-sm">
+      <div className="border-b border-gray-200/80 bg-white/60 px-5 py-4">
+        <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
+        <p className="mt-1 text-sm text-gray-600">
+          {depth === 'essentials'
+            ? 'Explore related concepts to expand your knowledge'
+            : 'Take a deeper dive into specific areas'}
+        </p>
+      </div>
 
-            return (
-              <li key={topic} className="w-full">
+      <div className="p-5">
+        {isLoading && (
+          <div className="space-y-3">
+            {[1, 2].map((i) => (
+              <div
+                key={i}
+                className="h-10 w-full animate-pulse rounded-lg bg-gray-200/70"
+              ></div>
+            ))}
+          </div>
+        )}
+
+        {!isLoading && suggestions?.length > 0 && (
+          <div className="space-y-2">
+            {suggestions.map((topic) => {
+              const topicTerm =
+                depth === 'essentials'
+                  ? `I have covered the basics of ${currentGuideTitle} and want to learn more about ${topic}`
+                  : `I have covered the basics of ${currentGuideTitle} and want to dive deeper into ${topic}`;
+              const url = `/ai/guide?term=${encodeURIComponent(topicTerm)}&depth=${depth}&id=&format=guide`;
+
+              return (
                 <a
+                  key={topic}
                   href={url}
                   target="_blank"
-                  className="block truncate rounded-md px-2 py-1 text-sm hover:bg-gray-100"
+                  className="group/item flex items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-gray-700 transition-all duration-200 hover:border-gray-300 hover:bg-gray-50"
                 >
-                  {topic}
+                  <span className="flex-1 truncate group-hover/item:text-gray-900">
+                    {topic}
+                  </span>
+                  <svg
+                    className="ml-2 h-4 w-4 text-gray-400 transition-colors group-hover/item:text-gray-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
                 </a>
-              </li>
-            );
-          })}
-      </ul>
+              );
+            })}
+          </div>
+        )}
+
+        {!isLoading && suggestions?.length === 0 && (
+          <div className="flex flex-col items-center justify-center py-8 text-center">
+            <div className="mb-3 rounded-full bg-gray-100 p-3">
+              <svg
+                className="h-6 w-6 text-gray-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                />
+              </svg>
+            </div>
+            <p className="text-sm text-gray-500">No suggestions available</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
