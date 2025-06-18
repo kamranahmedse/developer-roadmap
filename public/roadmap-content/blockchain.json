@@ -4,6 +4,11 @@
     "description": "A blockchain is a decentralized, distributed, and oftentimes public, digital ledger consisting of records called blocks that is used to record transactions across many computers so that any involved block cannot be altered retroactively, without the alteration of all subsequent blocks.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Cyfirn Updraft | Blockchain Basics",
+        "url": "https://updraft.cyfrin.io/courses/blockchain-basics",
+        "type": "course"
+      },
+      {
         "title": "Introduction to Blockchain",
         "url": "https://chain.link/education-hub/blockchain",
         "type": "article"
@@ -63,6 +68,16 @@
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Blockchain Architecture Layers: Guide And Topology",
+        "url": "https://www.cyfrin.io/blog/blockchain-architecture-layers-what-is-it",
+        "type": "article"
+      },
+      {
+        "title": "Cyfirn Updraft | How Do Blockchains Work?",
+        "url": "https://updraft.cyfrin.io/courses/blockchain-basics/basics/how-do-blockchains-work?lesson_format=video",
+        "type": "video"
       }
     ]
   },
@@ -133,6 +148,11 @@
     "description": "A blockchain is a decentralized, distributed, and oftentimes public, digital ledger consisting of records called blocks that is used to record transactions across many computers so that any involved block cannot be altered retroactively, without the alteration of all subsequent blocks.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Cyfirn Updraft | Blockchain Basics",
+        "url": "https://updraft.cyfrin.io/courses/blockchain-basics",
+        "type": "course"
+      },
+      {
         "title": "Blockchain Explained",
         "url": "https://www.investopedia.com/terms/b/blockchain.asp",
         "type": "article"
@@ -190,7 +210,7 @@
       }
     ]
   },
-  "Nc9AH6L7EqeQxh0m6Hddz": {
+  "why-it-matters@Nc9AH6L7EqeQxh0m6Hddz.md": {
     "title": "Why it matters?",
     "description": "",
     "links": []
@@ -199,6 +219,11 @@
     "title": "General Blockchain Knowledge",
     "description": "A blockchain is a decentralized, distributed ledger technology that records transactions across many computers in such a way that the registered transactions cannot be altered retroactively. This technology is the backbone of cryptocurrencies like Bitcoin and Ethereum, but its applications extend far beyond digital currencies.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Cyfirn Updraft | Blockchain Basics",
+        "url": "https://updraft.cyfrin.io/courses/blockchain-basics",
+        "type": "course"
+      },
       {
         "title": "The Complete Course On Understanding Blockchain Technology",
         "url": "https://www.udemy.com/course/understanding-blockchain-technology/",
@@ -304,6 +329,11 @@
         "type": "article"
       },
       {
+        "title": "Cyfrin Glossary | Cryptocurrency",
+        "url": "https://www.cyfrin.io/glossary/cryptocurrency",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Crypto",
         "url": "https://app.daily.dev/tags/crypto?ref=roadmapsh",
         "type": "article"
@@ -330,9 +360,9 @@
         "type": "article"
       },
       {
-        "title": "Choose your wallet - Ethereum",
-        "url": "https://ethereum.org/en/wallets/find-wallet/",
-        "type": "article"
+        "title": "Cyfrin Updraft | Settin Up a Wallet",
+        "url": "https://updraft.cyfrin.io/courses/blockchain-basics/basics/setting-up-your-wallet",
+        "type": "video"
       }
     ]
   },
@@ -384,6 +414,11 @@
       {
         "title": "What Is a Consensus Mechanism?",
         "url": "https://www.coindesk.com/learn/what-is-a-consensus-mechanism/",
+        "type": "article"
+      },
+      {
+        "title": "Consensus Algorithm",
+        "url": "https://www.cyfrin.io/glossary/consensus-algorithm",
         "type": "article"
       }
     ]
@@ -833,6 +868,11 @@
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | L1s L2s and Rollups",
+        "url": "https://updraft.cyfrin.io/courses/blockchain-basics/basics/l1s-l2s-and-rollups",
+        "type": "video"
       }
     ]
   },
@@ -944,6 +984,11 @@
         "title": "What Is Chainlink in 5 Minutes",
         "url": "https://www.gemini.com/cryptopedia/what-is-chainlink-and-how-does-it-work",
         "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | Getting real world price data from chainlink",
+        "url": "https://updraft.cyfrin.io/courses/solidity/fund-me/getting-prices-from-chainlink",
+        "type": "video"
       }
     ]
   },
@@ -970,6 +1015,11 @@
         "title": "Explore top posts about Oracle",
         "url": "https://app.daily.dev/tags/oracle?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | Intro to oracles",
+        "url": "https://updraft.cyfrin.io/courses/solidity/fund-me/real-world-price-data",
+        "type": "video"
       }
     ]
   },
@@ -977,6 +1027,11 @@
     "title": "Smart Contracts",
     "description": "A smart contract is a computer program or a transaction protocol that is intended to automatically execute, control or document legally relevant events and actions according to the terms of a contract or an agreement.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Cyfirn Updraft | Solidity Smart Contract Development",
+        "url": "https://updraft.cyfrin.io/courses/solidity",
+        "type": "course"
+      },
       {
         "title": "Smart Contracts",
         "url": "https://www.ibm.com/topics/smart-contracts",
@@ -1008,6 +1063,11 @@
     "title": "Solidity",
     "description": "Solidity is an object-oriented programming language created specifically by Ethereum Network team for constructing smart contracts on various blockchain platforms, most notably, Ethereum. It's used to create smart contracts that implements business logic and generate a chain of transaction records in the blockchain system. It acts as a tool for creating machine-level code and compiling it on the Ethereum Virtual Machine (EVM).\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Cyfirn Updraft | Solidity Smart Contract Development",
+        "url": "https://updraft.cyfrin.io/courses/solidity",
+        "type": "course"
+      },
       {
         "title": "Solidity Programming Language",
         "url": "https://soliditylang.org/",
@@ -1044,6 +1104,11 @@
     "title": "Vyper",
     "description": "Vyper is a contract-oriented, pythonic programming language that targets the Ethereum Virtual Machine (EVM).\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Vyper Smart Contract Development",
+        "url": "https://updraft.cyfrin.io/courses/intro-python-vyper-smart-contract-development",
+        "type": "course"
+      },
       {
         "title": "Vyper Programming Language",
         "url": "https://vyper.readthedocs.io/en/stable/",
@@ -1163,6 +1228,11 @@
         "title": "Explore top posts about CI/CD",
         "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | Deploying Your First Smart Contract",
+        "url": "https://updraft.cyfrin.io/courses/solidity/simple-storage/deploying-solidity-smart-contract",
+        "type": "video"
       }
     ]
   },
@@ -1205,6 +1275,11 @@
         "title": "Upgrading your Smart Contracts | A Tutorial & Introduction",
         "url": "https://youtu.be/bdXJmWajZRY",
         "type": "video"
+      },
+      {
+        "title": "Cyfrin Updraft | Introduction to Upgradable Smart Contracts",
+        "url": "https://updraft.cyfrin.io/courses/advanced-foundry/upgradeable-smart-contracts/introduction-to-upgradeable-smart-contracts",
+        "type": "video"
       }
     ]
   },
@@ -1231,6 +1306,21 @@
         "title": "ERC-1155 Token Standard (Multi-Token)",
         "url": "https://decrypt.co/resources/what-is-erc-1155-ethereums-flexible-token-standard",
         "type": "article"
+      },
+      {
+        "title": "ERC3675",
+        "url": "https://www.cyfrin.io/glossary/erc-3675",
+        "type": "article"
+      },
+      {
+        "title": "ERC4337",
+        "url": "https://www.cyfrin.io/glossary/erc-4337",
+        "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | Introduction To ERC Fundamentals and ERC20",
+        "url": "https://updraft.cyfrin.io/courses/advanced-foundry/How-to-create-an-erc20-crypto-currency/erc-and-erc20-fundamentals",
+        "type": "video"
       }
     ]
   },
@@ -1238,6 +1328,11 @@
     "title": "Crypto Wallets",
     "description": "A cryptocurrency wallet is a device, physical medium, program, or service which stores the public and/or private keys for cryptocurrency transactions. In addition to this basic function of storing the keys, a cryptocurrency wallet more often also offers the functionality of encrypting and/or signing information.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Cyfrin Updraft | Smart Contract DevOps",
+        "url": "https://updraft.cyfrin.io/courses/wallets",
+        "type": "course"
+      },
       {
         "title": "What is a Crypto Wallet?: A Beginner’s Guide",
         "url": "https://crypto.com/university/crypto-wallets",
@@ -1251,11 +1346,6 @@
       {
         "title": "Choose your wallet - Ethereum",
         "url": "https://ethereum.org/en/wallets/find-wallet/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Crypto",
-        "url": "https://app.daily.dev/tags/crypto?ref=roadmapsh",
         "type": "article"
       }
     ]
@@ -1320,6 +1410,11 @@
         "title": "Explore top posts about Decentralized",
         "url": "https://app.daily.dev/tags/decentralized?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | Introduction to IPFS",
+        "url": "https://updraft.cyfrin.io/courses/advanced-foundry/how-to-create-an-NFT-collection/what-is-ipfs",
+        "type": "video"
       }
     ]
   },
@@ -1412,6 +1507,16 @@
     "description": "Foundry is a smart contract development toolchain. Foundry manages your dependencies, compiles your project, runs tests, deploys, and lets you interact with the chain from the command-line and via Solidity scripts.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Cyfrin Updraft | Foundry Fundamentals",
+        "url": "https://updraft.cyfrin.io/courses/foundry",
+        "type": "course"
+      },
+      {
+        "title": "Cyfrin Updraft | Foundry Advanced",
+        "url": "https://updraft.cyfrin.io/courses/advanced-foundry",
+        "type": "course"
+      },
+      {
         "title": "Foundry Overview",
         "url": "https://book.getfoundry.sh/",
         "type": "article"
@@ -1427,6 +1532,11 @@
     "title": "Security",
     "description": "Smart contracts are extremely flexible, capable of both holding large quantities of tokens (often in excess of $1B) and running immutable logic based on previously deployed smart contract code. While this has created a vibrant and creative ecosystem of trustless, interconnected smart contracts, it is also the perfect ecosystem to attract attackers looking to profit by exploiting vulnerabilities\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Cyfrin Updraft | Smart Contract Security",
+        "url": "https://updraft.cyfrin.io/courses/security",
+        "type": "course"
+      },
       {
         "title": "Smart Contract Security",
         "url": "https://ethereum.org/en/developers/docs/smart-contracts/security/",
@@ -1448,6 +1558,11 @@
     "title": "Practices",
     "description": "Smart contract programming requires a different engineering mindset. The cost of failure can be high, and change can be difficult.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Cyfrin Updraft | Smart Contract Security",
+        "url": "https://updraft.cyfrin.io/courses/security",
+        "type": "course"
+      },
       {
         "title": "Ethereum Smart Contract Security Best Practices",
         "url": "https://consensys.github.io/smart-contract-best-practices/",
@@ -1482,6 +1597,11 @@
       {
         "title": "Smart Contract Fuzzing",
         "url": "https://youtu.be/LRyyNzrqgOc",
+        "type": "video"
+      },
+      {
+        "title": "Cyfrin Updraft | Stateful And Stateless Fuzzing",
+        "url": "https://updraft.cyfrin.io/courses/security/tswap/stateful-and-stateless-fuzzing",
         "type": "video"
       }
     ]
@@ -1536,6 +1656,11 @@
         "title": "Top 10 Tools for Blockchain Development",
         "url": "https://www.blockchain-council.org/blockchain/top-10-tools-for-blockchain-development/",
         "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | Security Tools",
+        "url": "https://updraft.cyfrin.io/courses/security/audit/tools",
+        "type": "video"
       }
     ]
   },
@@ -1552,6 +1677,11 @@
         "title": "Slither Framework",
         "url": "https://blog.trailofbits.com/2018/10/19/slither-a-solidity-static-analysis-framework/",
         "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | Slither Walkthrough",
+        "url": "https://updraft.cyfrin.io/courses/security/puppy-raffle/slither-walkthrough",
+        "type": "video"
       }
     ]
   },
@@ -1816,6 +1946,11 @@
         "type": "article"
       },
       {
+        "title": "Cyfrin Glossary | dApp",
+        "url": "https://www.cyfrin.io/glossary/dapp",
+        "type": "article"
+      },
+      {
         "title": "Explore Top dApps on Ethereum and its Layer 2s",
         "url": "https://www.ethereum-ecosystem.com/apps",
         "type": "article"
@@ -1918,6 +2053,11 @@
         "title": "NFT Explained In 5 Minutes | What Is NFT? - Non Fungible Token",
         "url": "https://youtu.be/NNQLJcJEzv0",
         "type": "video"
+      },
+      {
+        "title": "Cyfrin Updraft | What is an NFT",
+        "url": "https://updraft.cyfrin.io/courses/advanced-foundry/how-to-create-an-NFT-collection/what-is-a-nft",
+        "type": "video"
       }
     ]
   },
@@ -1977,6 +2117,11 @@
         "title": "Alchemy",
         "url": "https://www.alchemy.com/",
         "type": "article"
+      },
+      {
+        "title": "Cyfrin Updraft | Introduction to Alchemy",
+        "url": "https://updraft.cyfrin.io/courses/foundry/foundry-simple-storage/introduction-to-alchemy",
+        "type": "video"
       }
     ]
   },
@@ -2611,6 +2756,11 @@
         "title": "Introduction to zk-SNARKs",
         "url": "https://vitalik.eth.limo/general/2021/01/26/snarks.html",
         "type": "article"
+      },
+      {
+        "title": "What Are zk-SNARKs and zkSTARKs: Full Comparison",
+        "url": "https://www.cyfrin.io/blog/a-full-comparison-what-are-zk-snarks-and-zk-starks",
+        "type": "article"
       }
     ]
   },
@@ -2712,6 +2862,11 @@
         "title": "Explore top posts about Blockchain",
         "url": "https://app.daily.dev/tags/blockchain?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "Cyfirn Updraft | The Purpose of Smart Contracts",
+        "url": "https://updraft.cyfrin.io/courses/blockchain-basics/basics/the-purpose-of-smart-contracts",
+        "type": "video"
       }
     ]
   },
@@ -2732,6 +2887,11 @@
       {
         "title": "How IPFS works",
         "url": "https://docs.ipfs.tech/concepts/how-ipfs-works/",
+        "type": "article"
+      },
+      {
+        "title": "Data Locations - Storage, Memory, and Calldata",
+        "url": "https://www.cyfrin.io/glossary/data-locations-storage-memory-and-calldata-solidity-code-example",
         "type": "article"
       },
       {
