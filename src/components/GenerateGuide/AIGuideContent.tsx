@@ -1,7 +1,7 @@
-import { Loader2Icon } from 'lucide-react';
 import './AIGuideContent.css';
 import { AIGuideRegenerate } from './AIGuideRegenerate';
 import { cn } from '../../lib/classname';
+import { LoadingChip } from '../LoadingChip';
 
 type AIGuideContentProps = {
   html: string;
@@ -26,10 +26,7 @@ export function AIGuideContent(props: AIGuideContentProps) {
 
       {isRegenerating && !html && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex items-center gap-2 rounded-lg border bg-white p-2">
-            <Loader2Icon className="size-4 animate-spin" />
-            <span>Regenerating...</span>
-          </div>
+          <LoadingChip message="Regenerating..." />
         </div>
       )}
 

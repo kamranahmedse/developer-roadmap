@@ -4,9 +4,9 @@ import { getCourseFineTuneData } from '../../lib/ai';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
 import { AIGuideContent } from './AIGuideContent';
-import { Loader2Icon } from 'lucide-react';
 import { queryClient } from '../../stores/query-client';
 import { getAiGuideOptions } from '../../queries/ai-guide';
+import { LoadingChip } from '../LoadingChip';
 
 type GenerateAIGuideProps = {
   onGuideSlugChange?: (guideSlug: string) => void;
@@ -133,7 +133,7 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
   if (isLoading) {
     return (
       <div className="flex h-full w-full items-center justify-center">
-        <Loader2Icon className="size-6 animate-spin" />
+        <LoadingChip message="Please wait..." />
       </div>
     );
   }
