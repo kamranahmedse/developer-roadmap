@@ -5,6 +5,5 @@ Kubernetes (k8s) is needed because it provides a powerful and flexible platform 
 Learn more from the following resources:
 
 - [@official@Why you need Kubernetes and what it can do](https://kubernetes.io/docs/concepts/overview/#why-you-need-kubernetes-and-what-can-it-do)
-- [@article@Why should you use Kubernetes?](https://www.predicagroup.com/blog/why-kubernetes-2022/)
 - [@article@Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care](https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/)
 - [@feed@Explore top posts about Kubernetes](https://app.daily.dev/tags/kubernetes?ref=roadmapsh)
