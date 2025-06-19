@@ -6,9 +6,6 @@ import {
 } from 'lucide-react';
 import { useEffect, useId, useState, type FormEvent } from 'react';
 import { FormatItem } from './FormatItem';
-import { GuideOptions } from './GuideOptions';
-import { FineTuneCourse } from '../GenerateCourse/FineTuneCourse';
-import { CourseOptions } from './CourseOptions';
 import {
   clearFineTuneData,
   getCourseFineTuneData,
@@ -20,9 +17,10 @@ import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { useIsPaidUser } from '../../queries/billing';
 import { cn } from '../../lib/classname';
+import { QuestionAnswerChat } from './QuestionAnswerChat';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
-type AllowedFormat = (typeof allowedFormats)[number];
+export type AllowedFormat = (typeof allowedFormats)[number];
 
 export function ContentGenerator() {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
@@ -145,7 +143,10 @@ export function ContentGenerator() {
             id={titleFieldId}
             placeholder="Enter a topic"
             value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => {
+              setTitle(e.target.value);
+              setShowFineTuneOptions(false);
+            }}
             className="block w-full rounded-xl border border-gray-200 bg-white p-4 outline-none placeholder:text-gray-500 focus:border-gray-500"
             required
             minLength={3}
@@ -172,48 +173,21 @@ export function ContentGenerator() {
           </div>
         </div>
 
-        {selectedFormat === 'guide' && (
-          <GuideOptions depth={depth} setDepth={setDepth} />
-        )}
-
-        {selectedFormat === 'course' && (
-          <CourseOptions
-            difficulty={difficulty}
-            setDifficulty={setDifficulty}
+        <label
+          className="flex items-center gap-2 rounded-xl border border-gray-200 bg-white p-4"
+          htmlFor={fineTuneOptionsId}
+        >
+          <input
+            type="checkbox"
+            id={fineTuneOptionsId}
+            checked={showFineTuneOptions}
+            onChange={(e) => setShowFineTuneOptions(e.target.checked)}
           />
-        )}
+          Answer the following questions for a better {selectedFormat}
+        </label>
 
-        {selectedFormat !== 'roadmap' && (
-          <>
-            <label
-              className={cn(
-                'flex items-center gap-2 border border-gray-200 bg-white p-4',
-                showFineTuneOptions && 'rounded-t-xl',
-                !showFineTuneOptions && 'rounded-xl',
-              )}
-              htmlFor={fineTuneOptionsId}
-            >
-              <input
-                type="checkbox"
-                id={fineTuneOptionsId}
-                checked={showFineTuneOptions}
-                onChange={(e) => setShowFineTuneOptions(e.target.checked)}
-              />
-              Explain more for a better result
-            </label>
-            {showFineTuneOptions && (
-              <FineTuneCourse
-                hasFineTuneData={showFineTuneOptions}
-                about={about}
-                goal={goal}
-                customInstructions={customInstructions}
-                setAbout={setAbout}
-                setGoal={setGoal}
-                setCustomInstructions={setCustomInstructions}
-                className="-mt-4.5 overflow-hidden rounded-b-xl border border-gray-200 bg-white [&_div:first-child_label]:border-t-0"
-              />
-            )}
-          </>
+        {showFineTuneOptions && (
+          <QuestionAnswerChat term={title} format={selectedFormat} />
         )}
 
         <button
