@@ -1,5 +1,4 @@
 import { useQuery } from '@tanstack/react-query';
-import { AITutorLimits } from './AITutorLimits';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { useIsPaidUser } from '../../queries/billing';
@@ -30,16 +29,9 @@ export function AITutorHeader(props: AITutorHeaderProps) {
           {subtitle && <p className="mb-4 text-sm text-gray-500">{subtitle}</p>}
         </div>
         <div className="flex flex-row items-center gap-2">
-          <AITutorLimits
-            used={used}
-            limit={limit}
-            isPaidUser={isPaidUser}
-            isPaidUserLoading={isPaidUserLoading}
-            onUpgradeClick={onUpgradeClick}
-          />
           <a
             href="/ai"
-            className="flex flex-row items-center gap-2 rounded-lg bg-black px-4 py-2 text-sm font-medium text-white"
+            className="flex flex-row items-center gap-2 rounded-lg bg-black px-4 py-1.5 text-sm font-medium text-white"
           >
             <PlusIcon className="h-4 w-4" />
             New
