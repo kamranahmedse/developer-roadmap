@@ -57,7 +57,8 @@ export function AICourseCard(props: AICourseCardProps) {
           <h3 className="line-clamp-2 text-base font-semibold text-balance text-gray-900">
             {course.title
               ?.replace(": A Beginner's Guide", '')
-              ?.replace(' for beginners', '')}
+              ?.replace(' for beginners', '')
+              ?.replace(': A Comprehensive Guide', '')}
           </h3>
         </div>
 

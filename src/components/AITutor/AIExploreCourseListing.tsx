@@ -20,7 +20,7 @@ export function AIExploreCourseListing() {
   const [showUpgradePopup, setShowUpgradePopup] = useState(false);
 
   const [pageState, setPageState] = useState<ListExploreAiCoursesQuery>({
-    perPage: '21',
+    perPage: '42',
     currPage: '1',
     query: '',
   });
@@ -63,6 +63,7 @@ export function AIExploreCourseListing() {
 
       <AITutorHeader
         title="Explore Courses"
+        subtitle="Explore the AI courses created by community"
         onUpgradeClick={() => setShowUpgradePopup(true)}
       >
         <AICourseSearch
@@ -93,6 +94,7 @@ export function AIExploreCourseListing() {
                 course={course}
                 showActions={false}
                 showProgress={false}
+                variant="column"
               />
             ))}
           </div>
