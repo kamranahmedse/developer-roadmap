@@ -2,16 +2,8 @@
 
 Linux distributions use different package managers: `apt` (Debian-based), `dnf` (Fedora), `zypper` (OpenSUSE), `pacman` (Arch). Listing installed packages helps with auditing software and deployment automation. Commands: `sudo apt list --installed` for apt systems, `dnf list installed` for dnf systems. Each distribution has its own syntax for this command.
 
-Below is the command for listing installed packages in an `apt` package manager:
+Visit the following resources to learn more:
 
-```shell
-sudo apt list --installed
-```
-
-For `dnf` package manager, you would use:
-
-```shell
-dnf list installed
-```
-
-Remember, different distributions will have their own syntax for this command.
+- [@official@APT Package Manager](https://www.debian.org/doc/manuals/apt-guide/index.en.html)
+- [@article@5 ways to list installed packages in Linux](https://www.howtouselinux.com/post/list-installed-packages-in-linux)
+- [@article@Linux Package Manager Explained](https://geekflare.com/dev/linux-package-manager-explained/)
