@@ -31,7 +31,7 @@ export function AITutorHeader(props: AITutorHeaderProps) {
         <div className="flex flex-row items-center gap-2">
           <a
             href="/ai"
-            className="flex flex-row items-center gap-2 rounded-lg bg-black px-4 py-1.5 text-sm font-medium text-white"
+            className="flex max-sm:hidden flex-row items-center gap-2 rounded-lg bg-black px-4 py-1.5 text-sm font-medium text-white"
           >
             <PlusIcon className="h-4 w-4" />
             New
