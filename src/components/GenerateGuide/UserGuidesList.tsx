@@ -90,7 +90,9 @@ export function UserGuidesList() {
       {!isAnyLoading && (
         <>
           <p className="mb-4 text-sm text-gray-500">
-            You have generated {userAiGuides?.totalCount} guides so far.
+            {isUserAuthenticated
+              ? `You have generated ${userAiGuides?.totalCount} guides so far.`
+              : 'Sign up or login to generate your first guide. Takes 2s to do so.'}
           </p>
 
           {isUserAuthenticated && !isAnyLoading && guides.length > 0 && (

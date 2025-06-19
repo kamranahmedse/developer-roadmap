@@ -89,7 +89,9 @@ export function UserCoursesList() {
       {!isAnyLoading && (
         <>
           <p className="mb-4 text-sm text-gray-500">
-            You have generated {userAiCourses?.totalCount} courses so far.
+            {isUserAuthenticated
+              ? `You have generated ${userAiCourses?.totalCount} courses so far.`
+              : 'Sign up or login to generate your first course. Takes 2s to do so.'}
           </p>
 
           {isUserAuthenticated && !isAnyLoading && courses.length > 0 && (
