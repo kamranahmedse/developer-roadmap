@@ -27,7 +27,7 @@ export async function readChatStream(
   }: {
     onMessage?: (message: string) => Promise<void>;
     onMessageEnd?: (message: string) => Promise<void>;
-    onDetails?: (details: string) => Promise<void> | void;
+    onDetails?: (details: any) => Promise<void> | void;
   },
 ) {
   const reader = stream.getReader();
@@ -73,7 +73,7 @@ export async function readChatStream(
           case CHAT_RESPONSE_PREFIX.message:
             return { type: 'message', content: JSON.parse(content) };
           case CHAT_RESPONSE_PREFIX.details:
-            return { type: 'details', content };
+            return { type: 'details', content: JSON.parse(content) };
           default:
             throw new Error('Invalid prefix: ' + prefix);
         }

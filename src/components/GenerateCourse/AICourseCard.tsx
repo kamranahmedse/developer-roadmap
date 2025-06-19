@@ -2,17 +2,24 @@ import type { AICourseWithLessonCount } from '../../queries/ai-course';
 import type { DifficultyLevel } from './AICourse';
 import { BookOpen } from 'lucide-react';
 import { AICourseActions } from './AICourseActions';
+import { getRelativeTimeString } from '../../lib/date';
+import { cn } from '../../lib/classname';
 
 type AICourseCardProps = {
   course: AICourseWithLessonCount;
   showActions?: boolean;
   showProgress?: boolean;
+  variant?: 'row' | 'column';
 };
 
 export function AICourseCard(props: AICourseCardProps) {
-  const { course, showActions = true, showProgress = true } = props;
+  const {
+    course,
+    showActions = true,
+    showProgress = true,
+    variant = 'row',
+  } = props;
 
-  // Map difficulty to color
   const difficultyColor =
     {
       beginner: 'text-green-700',
@@ -20,49 +27,65 @@ export function AICourseCard(props: AICourseCardProps) {
       advanced: 'text-purple-700',
     }[course.difficulty as DifficultyLevel] || 'text-gray-700';
 
-  // Calculate progress percentage
+  const modulesCount = course.modules?.length || 0;
   const totalTopics = course.lessonCount || 0;
   const completedTopics = course.done?.length || 0;
   const progressPercentage =
     totalTopics > 0 ? Math.round((completedTopics / totalTopics) * 100) : 0;
+  const updatedAgo = getRelativeTimeString(course?.updatedAt);
 
   return (
-    <div className="relative flex flex-grow flex-col">
+    <div className="relative flex flex-grow">
       <a
         href={`/ai/${course.slug}`}
-        className="hover:border-gray-3 00 group relative flex h-full min-h-[140px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:bg-gray-50"
+        className={cn(
+          'group relative flex h-full w-full gap-3 overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:border-gray-300 hover:bg-gray-50 sm:gap-4',
+          variant === 'column' && 'flex-col',
+          variant === 'row' && 'flex-row sm:flex-row sm:items-center',
+        )}
       >
-        <div className="flex items-center justify-between">
-          <span
-            className={`rounded-full text-xs font-medium capitalize opacity-80 ${difficultyColor}`}
-          >
-            {course.difficulty}
-          </span>
-        </div>
-
-        <h3 className="my-2 text-base font-semibold text-gray-900">
-          {course.title}
-        </h3>
-
-        <div className="mt-auto flex items-center justify-between pt-2">
-          <div className="flex items-center text-xs text-gray-600">
-            <BookOpen className="mr-1 h-3.5 w-3.5" />
-            <span>{totalTopics} lessons</span>
+        {/* Title and difficulty section */}
+        <div className="min-w-0 flex-1">
+          <div className="mb-1 flex items-center gap-2">
+            <span
+              className={`rounded-full text-xs font-medium capitalize opacity-80 ${difficultyColor}`}
+            >
+              {course.difficulty}
+            </span>
           </div>
 
-          {showProgress && totalTopics > 0 && (
+          <h3 className="line-clamp-2 text-base font-semibold text-balance text-gray-900">
+            {course.title
+              ?.replace(": A Beginner's Guide", '')
+              ?.replace(' for beginners', '')
+              ?.replace(': A Comprehensive Guide', '')}
+          </h3>
+        </div>
+
+        {/* Course stats section */}
+        <div className="mt-7 flex items-center gap-4 sm:gap-4">
+          <div className="hidden items-center text-xs text-gray-600 sm:flex">
+            <BookOpen className="mr-1 h-3.5 w-3.5" />
+            <span>{modulesCount} modules</span>
+          </div>
+
+          <div className="flex items-center gap-2 text-xs text-gray-600">
             <div className="flex items-center">
-              <div className="mr-2 h-1.5 w-16 overflow-hidden rounded-full bg-gray-200">
-                <div
-                  className="h-full rounded-full bg-blue-600"
-                  style={{ width: `${progressPercentage}%` }}
-                />
-              </div>
-              <span className="text-xs font-medium text-gray-700">
-                {progressPercentage}%
-              </span>
+              <BookOpen className="mr-1 h-3.5 w-3.5" />
+              <span>{totalTopics} lessons</span>
             </div>
-          )}
+
+            {showProgress && totalTopics > 0 && (
+              <>
+                <span className="hidden text-gray-400 sm:inline">•</span>
+                <div className="flex items-center">
+                  <span className="flex items-center text-xs font-medium text-gray-700">
+                    {progressPercentage}% complete
+                  </span>
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </a>
 
