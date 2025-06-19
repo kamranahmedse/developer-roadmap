@@ -23,7 +23,7 @@ export function AITutorHeader(props: AITutorHeaderProps) {
     <div className="mb-3 flex min-h-[35px] items-center justify-between max-sm:mb-1">
       <div className="flex w-full flex-row items-center justify-between gap-2">
         <div className="gap-2">
-          <h2 className="relative top-0 mb-3 flex-shrink-0 text-3xl font-semibold lg:top-1">
+          <h2 className="relative top-0 mb-1 sm:mb-3 flex-shrink-0 text-2xl sm:text-3xl font-semibold lg:top-1">
             {title}
           </h2>
           {subtitle && <p className="mb-4 text-sm text-gray-500">{subtitle}</p>}
