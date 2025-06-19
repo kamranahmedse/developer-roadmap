@@ -65,18 +65,17 @@ export function AIExploreCourseListing() {
         title="Explore Courses"
         subtitle="Explore the AI courses created by community"
         onUpgradeClick={() => setShowUpgradePopup(true)}
-      >
-        <AICourseSearch
-          value={pageState?.query || ''}
-          onChange={(value) => {
-            setPageState({
-              ...pageState,
-              query: value,
-              currPage: '1',
-            });
-          }}
-        />
-      </AITutorHeader>
+      />
+      <AICourseSearch
+        value={pageState?.query || ''}
+        onChange={(value) => {
+          setPageState({
+            ...pageState,
+            query: value,
+            currPage: '1',
+          });
+        }}
+      />
 
       {(isInitialLoading || isExploreAiCoursesLoading) && (
         <AILoadingState
