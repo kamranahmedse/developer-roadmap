@@ -7,6 +7,8 @@ import { AIGuideContent } from './AIGuideContent';
 import { queryClient } from '../../stores/query-client';
 import { getAiGuideOptions } from '../../queries/ai-guide';
 import { LoadingChip } from '../LoadingChip';
+import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnswerChat';
+import { getQuestionAnswerChatMessages } from '../../lib/ai-questions';
 
 type GenerateAIGuideProps = {
   onGuideSlugChange?: (guideSlug: string) => void;
@@ -26,48 +28,32 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
   useEffect(() => {
     const params = getUrlParams();
     const paramsTerm = params?.term;
-    const paramsDepth = params?.depth;
     const paramsSrc = params?.src || 'search';
-    if (!paramsTerm || !paramsDepth) {
+    if (!paramsTerm) {
       return;
     }
 
-    let paramsGoal = '';
-    let paramsAbout = '';
-    let paramsCustomInstructions = '';
-
+    let questionAndAnswers: QuestionAnswerChatMessage[] = [];
     const sessionId = params?.id;
     if (sessionId) {
-      const fineTuneData = getCourseFineTuneData(sessionId);
-      if (fineTuneData) {
-        paramsGoal = fineTuneData.goal;
-        paramsAbout = fineTuneData.about;
-        paramsCustomInstructions = fineTuneData.customInstructions;
-      }
+      questionAndAnswers = getQuestionAnswerChatMessages(sessionId);
     }
 
     handleGenerateDocument({
       term: paramsTerm,
-      depth: paramsDepth,
-      instructions: paramsCustomInstructions,
-      goal: paramsGoal,
-      about: paramsAbout,
       src: paramsSrc,
+      questionAndAnswers,
     });
   }, []);
 
   const handleGenerateDocument = async (options: {
     term: string;
-    depth: string;
-    instructions?: string;
-    goal?: string;
-    about?: string;
     isForce?: boolean;
     prompt?: string;
     src?: string;
+    questionAndAnswers?: QuestionAnswerChatMessage[];
   }) => {
-    const { term, depth, isForce, prompt, instructions, goal, about, src } =
-      options;
+    const { term, isForce, prompt, src, questionAndAnswers } = options;
 
     if (!isLoggedIn()) {
       window.location.href = '/ai';
@@ -76,7 +62,6 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
 
     await generateGuide({
       term,
-      depth,
       onDetailsChange: (details) => {
         const { guideId, guideSlug, creatorId, title } = details;
 
@@ -86,7 +71,6 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
           title,
           html: htmlRef.current,
           keyword: term,
-          depth,
           content,
           tokens: {
             prompt: 0,
@@ -96,6 +80,7 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
           relatedTopics: [],
           deepDiveTopics: [],
           questions: [],
+          questionAndAnswers,
           viewCount: 0,
           lastVisitedAt: new Date(),
           createdAt: new Date(),
@@ -112,12 +97,10 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
       },
       onLoadingChange: setIsLoading,
       onError: setError,
-      instructions,
-      goal,
-      about,
       isForce,
       prompt,
       src,
+      questionAndAnswers,
       onHtmlChange: (html) => {
         htmlRef.current = html;
         setHtml(html);

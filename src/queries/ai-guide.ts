@@ -5,6 +5,7 @@ import {
   markdownToHtml,
   markdownToHtmlWithHighlighting,
 } from '../lib/markdown';
+import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
 
 export interface AIGuideDocument {
   _id: string;
@@ -12,7 +13,6 @@ export interface AIGuideDocument {
   title: string;
   slug?: string;
   keyword: string;
-  depth: string;
   content: string;
   tokens: {
     prompt: number;
@@ -23,6 +23,8 @@ export interface AIGuideDocument {
   relatedTopics: string[];
   deepDiveTopics: string[];
   questions: string[];
+
+  questionAndAnswers?: QuestionAnswerChatMessage[];
 
   viewCount: number;
   lastVisitedAt: Date;

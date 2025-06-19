@@ -2,6 +2,7 @@ import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from '../queries/ai-course';
 import { readChatStream } from '../lib/chat';
 import { markdownToHtmlWithHighlighting } from '../lib/markdown';
+import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
 
 type GuideDetails = {
   guideId: string;
@@ -12,13 +13,9 @@ type GuideDetails = {
 
 type GenerateGuideOptions = {
   term: string;
-  depth: string;
   slug?: string;
   isForce?: boolean;
   prompt?: string;
-  instructions?: string;
-  goal?: string;
-  about?: string;
   onGuideSlugChange?: (guideSlug: string) => void;
   onGuideChange?: (guide: string) => void;
   onLoadingChange?: (isLoading: boolean) => void;
@@ -28,26 +25,24 @@ type GenerateGuideOptions = {
   onStreamingChange?: (isStreaming: boolean) => void;
   onDetailsChange?: (details: GuideDetails) => void;
   onFinish?: () => void;
+  questionAndAnswers?: QuestionAnswerChatMessage[];
 };
 
 export async function generateGuide(options: GenerateGuideOptions) {
   const {
     term,
     slug,
-    depth,
     onGuideChange,
     onLoadingChange,
     onError,
     isForce = false,
     prompt,
-    instructions,
-    goal,
-    about,
     src = 'search',
     onHtmlChange,
     onStreamingChange,
     onDetailsChange,
     onFinish,
+    questionAndAnswers,
   } = options;
 
   onLoadingChange?.(true);
@@ -80,12 +75,9 @@ export async function generateGuide(options: GenerateGuideOptions) {
           },
           body: JSON.stringify({
             keyword: term,
-            depth,
             isForce,
             customPrompt: prompt,
-            instructions,
-            goal,
-            about,
+            questionAndAnswers,
             src,
           }),
           credentials: 'include',
