@@ -88,10 +88,26 @@ export function AIExploreCourseListing() {
 
       {!isAnyLoading && (
         <>
-          <p className="mb-4 text-sm text-gray-500">
-            Community has generated{' '}
-            {humanizeNumber(exploreAiCourses?.totalCount || 0)} courses
-          </p>
+          <div className="mb-4 flex items-center justify-between">
+            <p className="text-sm text-gray-500">
+              Community has generated{' '}
+              {humanizeNumber(exploreAiCourses?.totalCount || 0)} courses
+            </p>
+
+            <div className="hidden lg:block">
+              <Pagination
+                variant="minimal"
+                totalCount={exploreAiCourses?.totalCount || 0}
+                totalPages={exploreAiCourses?.totalPages || 0}
+                currPage={Number(exploreAiCourses?.currPage || 1)}
+                perPage={Number(exploreAiCourses?.perPage || 21)}
+                onPageChange={(page) => {
+                  setPageState({ ...pageState, currPage: String(page) });
+                }}
+                className=""
+              />
+            </div>
+          </div>
 
           {courses && courses.length > 0 && (
             <div className="flex flex-col gap-2">
