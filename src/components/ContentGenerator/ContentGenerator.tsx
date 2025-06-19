@@ -6,18 +6,19 @@ import {
 } from 'lucide-react';
 import { useEffect, useId, useState, type FormEvent } from 'react';
 import { FormatItem } from './FormatItem';
-import {
-  clearFineTuneData,
-  getCourseFineTuneData,
-  getLastSessionId,
-  storeFineTuneData,
-} from '../../lib/ai';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { useIsPaidUser } from '../../queries/billing';
-import { cn } from '../../lib/classname';
-import { QuestionAnswerChat } from './QuestionAnswerChat';
+import {
+  clearQuestionAnswerChatMessages,
+  storeQuestionAnswerChatMessages,
+} from '../../lib/ai-questions';
+import {
+  QuestionAnswerChat,
+  type QuestionAnswerChatMessage,
+} from './QuestionAnswerChat';
+import { useToast } from '../../hooks/use-toast';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -26,19 +27,15 @@ export function ContentGenerator() {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
+  const toast = useToast();
   const [title, setTitle] = useState('');
   const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
 
-  // guide options
-  const [depth, setDepth] = useState('essentials');
-  // course options
-  const [difficulty, setDifficulty] = useState('beginner');
-
-  // fine-tune options
+  // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
-  const [about, setAbout] = useState('');
-  const [goal, setGoal] = useState('');
-  const [customInstructions, setCustomInstructions] = useState('');
+  const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
+    QuestionAnswerChatMessage[]
+  >([]);
 
   const titleFieldId = useId();
   const fineTuneOptionsId = useId();
@@ -69,18 +66,15 @@ export function ContentGenerator() {
 
     let sessionId = '';
     if (showFineTuneOptions) {
-      clearFineTuneData();
-      sessionId = storeFineTuneData({
-        about,
-        goal,
-        customInstructions,
-      });
+      clearQuestionAnswerChatMessages();
+      sessionId = storeQuestionAnswerChatMessages(questionAnswerChatMessages);
     }
 
+    const trimmedTitle = title.trim();
     if (selectedFormat === 'course') {
-      window.location.href = `/ai/course?term=${encodeURIComponent(title)}&difficulty=${difficulty}&id=${sessionId}&format=${selectedFormat}`;
+      window.location.href = `/ai/course?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
     } else if (selectedFormat === 'guide') {
-      window.location.href = `/ai/guide?term=${encodeURIComponent(title)}&depth=${depth}&id=${sessionId}&format=${selectedFormat}`;
+      window.location.href = `/ai/guide?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
     }
   };
 
@@ -92,22 +86,8 @@ export function ContentGenerator() {
     });
   }, []);
 
-  useEffect(() => {
-    const lastSessionId = getLastSessionId();
-    if (!lastSessionId) {
-      return;
-    }
-
-    const fineTuneData = getCourseFineTuneData(lastSessionId);
-    if (!fineTuneData) {
-      return;
-    }
-
-    setAbout(fineTuneData.about);
-    setGoal(fineTuneData.goal);
-    setCustomInstructions(fineTuneData.customInstructions);
-  }, []);
-
+  const trimmedTitle = title.trim();
+  const canGenerate = trimmedTitle && trimmedTitle.length >= 3;
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-4">
       <div className="relative">
@@ -181,18 +161,36 @@ export function ContentGenerator() {
             type="checkbox"
             id={fineTuneOptionsId}
             checked={showFineTuneOptions}
-            onChange={(e) => setShowFineTuneOptions(e.target.checked)}
+            onChange={(e) => {
+              if (!trimmedTitle) {
+                toast.error('Please enter a topic first');
+                return;
+              }
+
+              if (trimmedTitle.length < 3) {
+                toast.error('Topic must be at least 3 characters long');
+                return;
+              }
+
+              setShowFineTuneOptions(e.target.checked);
+            }}
           />
           Answer the following questions for a better {selectedFormat}
         </label>
 
         {showFineTuneOptions && (
-          <QuestionAnswerChat term={title} format={selectedFormat} />
+          <QuestionAnswerChat
+            term={title}
+            format={selectedFormat}
+            questionAnswerChatMessages={questionAnswerChatMessages}
+            setQuestionAnswerChatMessages={setQuestionAnswerChatMessages}
+          />
         )}
 
         <button
           type="submit"
-          className="flex w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none"
+          className="flex w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
+          disabled={!canGenerate}
         >
           <SparklesIcon className="size-4" />
           Generate

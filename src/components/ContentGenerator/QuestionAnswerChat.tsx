@@ -8,12 +8,7 @@ import { cn } from '../../lib/classname';
 import { flushSync } from 'react-dom';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 
-type QuestionAnswerChatProps = {
-  term: string;
-  format: AllowedFormat;
-};
-
-type QuestionAnswerChatMessage =
+export type QuestionAnswerChatMessage =
   | { role: 'user'; answer: string }
   | {
       role: 'assistant';
@@ -21,12 +16,23 @@ type QuestionAnswerChatMessage =
       possibleAnswers: string[];
     };
 
-export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
-  const { term, format } = props;
+type QuestionAnswerChatProps = {
+  term: string;
+  format: AllowedFormat;
+  questionAnswerChatMessages: QuestionAnswerChatMessage[];
+  setQuestionAnswerChatMessages: (
+    messages: QuestionAnswerChatMessage[],
+  ) => void;
+};
 
-  const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
-    QuestionAnswerChatMessage[]
-  >([]);
+export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
+  const {
+    term,
+    format,
+    questionAnswerChatMessages,
+    setQuestionAnswerChatMessages,
+  } = props;
+
   const [activeMessageIndex, setActiveMessageIndex] = useState(0);
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<'answering' | 'done'>('answering');
@@ -56,20 +62,19 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
       return;
     }
 
-    setQuestionAnswerChatMessages((prev) => {
-      return [
-        ...prev,
-        {
-          role: 'assistant',
-          ...activeMessage,
-        },
-        {
-          role: 'user',
-          answer: trimmedAnswer,
-        },
-      ];
-    });
+    const newMessages: QuestionAnswerChatMessage[] = [
+      ...questionAnswerChatMessages,
+      {
+        role: 'assistant',
+        ...activeMessage,
+      },
+      {
+        role: 'user',
+        answer: trimmedAnswer,
+      },
+    ];
 
+    setQuestionAnswerChatMessages(newMessages);
     setMessage('');
 
     const hasMoreMessages =
