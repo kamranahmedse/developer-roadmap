@@ -1,11 +1,10 @@
 # Installing, Removing, and Upgrading Packages
 
-Package management in Linux involves installing, removing, and upgrading software using distribution-specific tools. Use `apt` for Debian/Ubuntu, `yum`/`dnf` for Fedora/RHEL/CentOS, and `zypper` for SUSE. Common operations include `install package-name`, `remove package-name`, and `upgrade` commands. Each package manager has specific syntax but similar functionality for software lifecycle management. 
+Package management in Linux involves installing, removing, and upgrading software using distribution-specific tools. Use `apt` for Debian/Ubuntu, `yum`/`dnf` for Fedora/RHEL/CentOS, and `zypper` for SUSE. Common operations include `install package-name`, `remove package-name`, and `upgrade` commands. Each package manager has specific syntax but similar functionality for software lifecycle management.
 
-A typical package management task such as installing a new package using `apt` would involve executing a command like:
+Visit the following resources to learn more:
 
-```bash
-sudo apt-get install packagename
-```
-
-However, the exact command varies depending on the package manager in use. Similarly, removing and upgrading packages also utilize command-line instructions specific to each package manager. Detailed understanding of these tasks is crucial for effective Linux system administration.
+- [@official@APT Package Manager](https://www.debian.org/doc/manuals/apt-guide/index.en.html)
+- [@official@Yum Package Manager](http://yum.baseurl.org/)
+- [@official@Using the DNF Software Package Manager](https://docs.fedoraproject.org/en-US/quick-docs/dnf/)
+- [@article@Linux Package Manager Explained](https://geekflare.com/dev/linux-package-manager-explained/)
