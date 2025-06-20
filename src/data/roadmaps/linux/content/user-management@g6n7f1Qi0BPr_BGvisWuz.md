@@ -5,3 +5,5 @@ Linux user management allows multiple users to interact with the system in isola
 Learn more from the following resources:
 
 - [@article@User Account Management](https://labex.io/tutorials/linux-user-account-management-49)
+- [@article@Creating, Modifying, and Deleting User Accounts](https://serveracademy.com/courses/linux-server-administration/creating-modifying-and-deleting-user-accounts/)
+- [@article@User Management in Linux: A Beginner's Guide](https://dev.to/austinozor/user-management-in-linux-a-beginners-guide-to-creating-modifying-and-deleting-users-fhf)
