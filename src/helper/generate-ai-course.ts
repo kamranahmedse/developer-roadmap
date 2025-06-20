@@ -5,16 +5,13 @@ import {
 } from '../lib/ai';
 import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from '../queries/ai-course';
+import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
 
 type GenerateCourseOptions = {
   term: string;
-  difficulty: string;
   slug?: string;
   isForce?: boolean;
   prompt?: string;
-  instructions?: string;
-  goal?: string;
-  about?: string;
   onCourseIdChange?: (courseId: string) => void;
   onCourseSlugChange?: (courseSlug: string) => void;
   onCourseChange?: (course: AiCourse, rawData: string) => void;
@@ -22,13 +19,13 @@ type GenerateCourseOptions = {
   onCreatorIdChange?: (creatorId: string) => void;
   onError?: (error: string) => void;
   src?: string;
+  questionAndAnswers?: QuestionAnswerChatMessage[];
 };
 
 export async function generateCourse(options: GenerateCourseOptions) {
   const {
     term,
     slug,
-    difficulty,
     onCourseIdChange,
     onCourseSlugChange,
     onCourseChange,
@@ -37,10 +34,8 @@ export async function generateCourse(options: GenerateCourseOptions) {
     onCreatorIdChange,
     isForce = false,
     prompt,
-    instructions,
-    goal,
-    about,
     src = 'search',
+    questionAndAnswers,
   } = options;
 
   onLoadingChange?.(true);
@@ -48,7 +43,6 @@ export async function generateCourse(options: GenerateCourseOptions) {
     {
       title: '',
       modules: [],
-      difficulty: '',
       done: [],
     },
     '',
@@ -83,12 +77,9 @@ export async function generateCourse(options: GenerateCourseOptions) {
           },
           body: JSON.stringify({
             keyword: term,
-            difficulty,
             isForce,
             customPrompt: prompt,
-            instructions,
-            goal,
-            about,
+            questionAndAnswers,
             src,
           }),
           credentials: 'include',
@@ -136,7 +127,6 @@ export async function generateCourse(options: GenerateCourseOptions) {
                 courseId: extractedCourseId,
                 courseSlug: extractedCourseSlug,
                 term,
-                difficulty,
               },
               '',
               `${origin}/ai/${extractedCourseSlug}`,
@@ -155,13 +145,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
 
         try {
           const aiCourse = generateAiCourseStructure(result);
-          onCourseChange?.(
-            {
-              ...aiCourse,
-              difficulty: difficulty || '',
-            },
-            result,
-          );
+          onCourseChange?.(aiCourse, result);
         } catch (e) {
           console.error('Error parsing streamed course content:', e);
         }
