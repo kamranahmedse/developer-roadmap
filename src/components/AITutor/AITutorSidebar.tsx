@@ -14,20 +14,20 @@ import { UserDropdown } from './UserDropdown';
 
 type AITutorSidebarProps = {
   isFloating: boolean;
-  activeTab: AITutorTab;
+  activeTab?: AITutorTab;
   onClose: () => void;
 };
 
 const sidebarItems = [
   {
     key: 'new',
-    label: 'New Course',
+    label: 'New',
     href: '/ai',
     icon: Plus,
   },
   {
-    key: 'courses',
-    label: 'My Courses',
+    key: 'library',
+    label: 'Library',
     href: '/ai/courses',
     icon: BookOpen,
   },

@@ -1,3 +1,0 @@
-# clap
-
-`clap` is a command line argument parser for Rust. It is used for managing and parsing command line arguments and subcommands for your application. `clap` allows you to set the name, version, author, about info, and other global settings of your application. It also supports auto-generated help messages, custom errors, and is unicode compatible. It is very flexible and highly configurable and allows you to extract the needed values easily with the provided methods.

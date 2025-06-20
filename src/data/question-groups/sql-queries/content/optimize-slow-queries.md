@@ -1,0 +1,9 @@
+To optimize slow-running queries, you need to analyze the query first to know what to optimize. You can perform different optimizations depending on the query. Some of the optimizations include:
+
+- **Using indexes effectively**: Indexes speed up queries by enabling the database to find entries that fit specific criteria quickly. Indexing is the process of mapping the values of one or more columns to a unique value that makes it easy to search for rows that match a search criteria. You can create indexes on columns used frequently in the **WHERE**, **JOIN**, and **ORDER BY** clauses. However, note that creating too many indexes can slow down inserts, updates, and deletions.
+
+- **Avoid SELECT *** : Using the **SELECT** ***** statement can slow down your query performance because it returns all the columns in a table including the ones not needed for the query. You should select only the columns that you need for a query for optimal performance. So when you see a query that selects all columns, you should check if all the columns are really needed and used further down the query chain.
+
+- **Avoid using subqueries**: Subqueries slow down query performance, especially when you use them in the `WHERE` or `HAVING` clauses. You should avoid using subqueries where possible and use JOINs or other techniques instead.
+
+- **Utilize stored procedures**: Stored procedures are precompiled SQL statements stored in a database, and can be called from an application or directly from a query. Using stored procedures can improve your query performance by reducing the amount of data that is sent between the database and your application, and also saves time required to compile the SQL statements. 

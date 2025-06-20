@@ -7,4 +7,5 @@ Visit the following resources to learn more:
 - [@article@Getting Started with Smart Contract Fuzzing](https://www.immunebytes.com/blog/getting-started-with-smart-contract-fuzzing/)
 - [@article@Solidity Smart Contract Static Code Analysis](https://lightrains.com/blogs/solidity-static-analysis-tools/#static-code-analysis)
 - [@video@Smart Contract Fuzzing](https://youtu.be/LRyyNzrqgOc)
+- [@video@Cyfrin Updraft | Stateful And Stateless Fuzzing](https://updraft.cyfrin.io/courses/security/tswap/stateful-and-stateless-fuzzing)
 - [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

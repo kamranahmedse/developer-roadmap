@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Upgrading smart contracts](https://docs.openzeppelin.com/learn/upgrading-smart-contracts)
 - [@article@What are Upgradable Smart Contracts? Full Guide](https://moralis.io/what-are-upgradable-smart-contracts-full-guide/)
 - [@video@Upgrading your Smart Contracts | A Tutorial & Introduction](https://youtu.be/bdXJmWajZRY)
+- [@video@Cyfrin Updraft | Introduction to Upgradable Smart Contracts](https://updraft.cyfrin.io/courses/advanced-foundry/upgradeable-smart-contracts/introduction-to-upgradeable-smart-contracts)
