@@ -4,5 +4,6 @@ Advanced generics in Rust include `where` clauses for complex bounds, `?Sized` f
 
 Visit the following resources to learn more:
 
-- [@article@Book: Generics](https://doc.rust-lang.org/book/ch10-01-syntax.html)
-- [@article@Rust by Example: Generics](https://doc.rust-lang.org/rust-by-example/generics.html)
+- [@official@Generic Types, Traits, and Lifetimes](https://doc.rust-lang.org/book/ch10-00-generics.html)
+- [@official@Generics](https://doc.rust-lang.org/rust-by-example/generics.html)
+- [@official@Generics Data Type](https://doc.rust-lang.org/book/ch10-01-syntax.html)

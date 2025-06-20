@@ -4,4 +4,4 @@ Custom error types use `enum` to define specific error variants with attached da
 
 Visit the following resources to learn more:
 
-- [@article@Rust by Example: Defining an error type](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html)
+- [@official@Defining an Error Type](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html)
