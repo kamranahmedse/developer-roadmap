@@ -4,7 +4,7 @@ import {
   SparklesIcon,
   type LucideIcon,
 } from 'lucide-react';
-import { useEffect, useId, useState, type FormEvent } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { FormatItem } from './FormatItem';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
@@ -57,8 +57,7 @@ export function ContentGenerator() {
     },
   ];
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     if (!isLoggedIn()) {
       showLoginPopup();
       return;
@@ -113,7 +112,13 @@ export function ContentGenerator() {
         </p>
       </div>
 
-      <form className="mt-10 space-y-4" onSubmit={handleSubmit}>
+      <form
+        className="mt-10 space-y-4"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSubmit();
+        }}
+      >
         <div className="flex flex-col gap-2">
           <label htmlFor={titleFieldId} className="inline-block text-gray-500">
             What can I help you learn?
@@ -184,6 +189,9 @@ export function ContentGenerator() {
             format={selectedFormat}
             questionAnswerChatMessages={questionAnswerChatMessages}
             setQuestionAnswerChatMessages={setQuestionAnswerChatMessages}
+            onGenerateNow={() => {
+              handleSubmit();
+            }}
           />
         )}
 
