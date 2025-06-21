@@ -1,6 +1,8 @@
 # Connection Types and their function
 
-There are several types of network connections that enable communication between devices, each serving different functions based on speed, reliability, and purpose. **Ethernet** is a wired connection type commonly used in local area networks (LANs), providing high-speed, stable, and secure data transfer. Ethernet is ideal for businesses and environments where reliability is crucial, offering speeds from 100 Mbps to several Gbps.
+There are several types of network connections that enable communication between devices, each serving different functions based on speed, reliability, and purpose. 
+
+**Ethernet** is a wired connection type commonly used in local area networks (LANs), providing high-speed, stable, and secure data transfer. Ethernet is ideal for businesses and environments where reliability is crucial, offering speeds from 100 Mbps to several Gbps.
 
 **Wi-Fi**, a wireless connection, enables devices to connect to a network without physical cables. It provides flexibility and mobility, making it popular in homes, offices, and public spaces. While Wi-Fi offers convenience, it can be less reliable and slower than Ethernet due to signal interference or distance from the access point.
 
