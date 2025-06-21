@@ -7,4 +7,4 @@ An anemic model is considered an anti-pattern in object-oriented programming (OO
 Learn more from the following links:
 
 - [@article@Overview of Anemic Domain Model](https://en.wikipedia.org/wiki/Anemic_domain_model)
-- [@article@What is an Anaemic Domain Model?](https://www.ensonodigital.com/blog/anaemic-domain-model-vs-rich-domain-model)
+- [@article@What is an Anaemic Domain Model?](https://www.ensono.com/insights-and-news/expert-opinions/anaemic-domain-model-vs-rich-domain-model/)
