@@ -4,4 +4,5 @@ Rocket is a web framework for Rust emphasizing ease of use, expressiveness, and 
 
 Visit the following resources to learn more:
 
-- [@official@Rocket](https://rocket.rs/)
+- [@official@Rocket - Simple, Fast, Type-Safe Web Framework for Rust](https://rocket.rs/)
+- [@article@Getting Started with Rocket in Rust](https://www.shuttle.dev/blog/2023/12/13/using-rocket-rust)
