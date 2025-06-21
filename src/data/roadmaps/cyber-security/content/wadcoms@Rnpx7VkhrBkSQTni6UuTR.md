@@ -1,6 +1,6 @@
 # WADCOMS
 
-WADcoms (Web Application Dangerous Commands) is a comprehensive database of dangerous web application commands and patterns that can be exploited to compromise web security. It offers a catalog of potentially harmful commands and their contexts, helping security professionals identify and mitigate risks associated with web applications by understanding how these commands can be misused for attacks like SQL injection, cross-site scripting (XSS), and remote code execution (RCE).
+WADcoms (Windows/Active Directory Commands) is an interactive cheat sheet, containing a curated list of offensive security tools and their respective commands, to be used against Windows/AD environments. Just select what information you currently have related to the Windows machine (passwords, usernames, services, etc.), and it will display a list of tools you can try against the machine, along with a template command for easy copy/pasting
 
 Learn more from the following resources:
 
