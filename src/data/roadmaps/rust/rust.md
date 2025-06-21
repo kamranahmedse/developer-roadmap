@@ -40,7 +40,6 @@ relatedRoadmaps:
   - 'backend'
   - 'devops'
   - 'golang'
-  - 'java'
   - 'nodejs'
 sitemap:
   priority: 1
