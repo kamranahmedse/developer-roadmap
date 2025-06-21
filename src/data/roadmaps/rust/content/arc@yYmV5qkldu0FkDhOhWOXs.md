@@ -4,4 +4,5 @@
 
 Learn more from the following links:
 
-- [@article@Arc](https://doc.rust-lang.org/rust-by-example/std/arc.html)
+- [@official@Arc in std::sync](https://doc.rust-lang.org/std/sync/struct.Arc.html)
+- [@official@Arc in Rust Lang](https://doc.rust-lang.org/rust-by-example/std/arc.html)

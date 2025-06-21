@@ -4,4 +4,5 @@ Traits define shared behavior as a set of method signatures that types can imple
 
 Visit the following resources to learn more:
 
-- [@article@Rust by Example: Traits](https://doc.rust-lang.org/rust-by-example/trait.html)
+- [@official@Traits](https://doc.rust-lang.org/rust-by-example/trait.html)
+- [@article@Understanding Traits and Trait Bounds in Rust](https://leapcell.medium.com/understanding-traits-and-trait-bounds-in-rust-d575f19dd649)

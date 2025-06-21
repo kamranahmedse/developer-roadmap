@@ -4,4 +4,5 @@ Publishing Rust crates involves creating an account on crates.io, preparing prop
 
 Visit the following resources to learn more:
 
-- [@article@The Cargo Book: Publishing on crates.io](https://doc.rust-lang.org/cargo/reference/publishing.html)
+- [@official@The Cargo Book: Publishing](https://doc.rust-lang.org/cargo/reference/publishing.html)
+- [@article@From Zero to Hero: Your First Rust Crate](https://medium.com/rust-programming-language/from-zero-to-hero-your-first-rust-crate-6f2c084df464)

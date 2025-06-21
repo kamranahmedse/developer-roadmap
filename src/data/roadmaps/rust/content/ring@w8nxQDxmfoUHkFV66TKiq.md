@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@opensource@ring](https://github.com/briansmith/ring)
-- [@article@Docs.rs: ring](https://docs.rs/ring/latest/ring/)
+- [@opensource@briansmith/ring](https://github.com/briansmith/ring)
+- [@article@Ring](https://docs.rs/ring/latest/ring/)

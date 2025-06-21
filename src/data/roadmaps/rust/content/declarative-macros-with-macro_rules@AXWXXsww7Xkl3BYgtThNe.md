@@ -4,5 +4,5 @@ Declarative macros use `macro_rules!` for pattern-based code generation at compi
 
 Visit the following resources to learn more:
 
-- [@article@Rust Book: Macros](https://doc.rust-lang.org/book/ch19-06-macros.html)
-- [@article@Macros by Example](https://doc.rust-lang.org/reference/macros-by-example.html)
+- [@official@Macros](https://doc.rust-lang.org/book/ch20-05-macros.html)
+- [@article@Macros in Rust: A Tutorial with Examples](https://blog.logrocket.com/macros-in-rust-a-tutorial-with-examples/)

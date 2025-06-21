@@ -4,6 +4,7 @@ Rust has built-in testing support through `cargo test` and the `#[test]` attribu
 
 Visit the following resources to learn more:
 
-- [@article@Rust Book: Writing Automated Tests](https://doc.rust-lang.org/book/ch11-00-testing.html)
-- [@video@YouTube](https://www.youtube.com/watch?v=8XaVlL3lObQ)
+- [@official@Writing Automated Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+- [@article@Testing in Rust: A Quick Guide to Unit Tests](https://dev.to/tramposo/testing-in-rust-a-quick-guide-to-unit-tests-integration-tests-and-benchmarks-2bah)
+- [@video@Mocking and Testing Rust](https://www.youtube.com/watch?v=8XaVlL3lObQ)
 - [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

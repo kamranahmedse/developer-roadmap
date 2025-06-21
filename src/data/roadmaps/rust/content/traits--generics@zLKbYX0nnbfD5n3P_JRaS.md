@@ -4,4 +4,4 @@ Traits define shared behavior that types can implement, while generics enable co
 
 Visit the following resources to learn more:
 
-- [@article@Book: Generic Types, Traits, and Lifetimes](https://doc.rust-lang.org/book/ch10-00-generics.html)
+- [@official@Generic Types, Traits, and Lifetimes](https://doc.rust-lang.org/book/ch10-00-generics.html)

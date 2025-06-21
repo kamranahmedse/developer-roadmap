@@ -5,3 +5,5 @@
 Learn more from the following links:
 
 - [@official@BinaryHeap](https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html)
+- [@article@The Rust Guide - BinaryHeap](https://rust-guide.com/en/documentation/collections/BinaryHeap)
+- [@article@Comprehensive Guide to BinaryHeap in Rust](https://www.gyata.ai/rust/binaryheap)

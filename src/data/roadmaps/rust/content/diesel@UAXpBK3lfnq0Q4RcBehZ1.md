@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Diesel](https://diesel.rs/)
 - [@opensource@Repository](https://github.com/diesel-rs/diesel)
-- [@article@Docs.rs: Diesel](https://docs.rs/diesel/latest/diesel/)
-- [@video@YouTube](https://www.youtube.com/watch?v=tRC4EIKhMzw)
+- [@offiial@Docs.rs: Diesel](https://docs.rs/diesel/latest/diesel/)
+- [@video@Rust & SQL Databases (With Diesel)](https://www.youtube.com/watch?v=tRC4EIKhMzw)

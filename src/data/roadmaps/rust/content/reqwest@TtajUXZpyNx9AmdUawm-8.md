@@ -4,4 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [@article@Docs.rs: Reqwest](https://docs.rs/reqwest/latest/reqwest/)
+- [@article@Making HTTP requests in Rust with Reqwest](https://blog.logrocket.com/making-http-requests-rust-reqwest/)
+- [@article@Exploring Reqwest in Rust](https://medium.com/@chetanreddyk394/exploring-reqwest-in-rust-b91c548e69af)
+- [@article@Reqwest Documentation](https://docs.rs/reqwest/latest/reqwest/)

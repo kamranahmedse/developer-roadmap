@@ -4,4 +4,5 @@ The `?` operator provides concise error propagation in functions returning `Resu
 
 Visit the following resources to learn more:
 
-- [@article@Rust Book: Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
+- [@official@Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
+- [@article@Understanding Result, Option, and '?' Operators in Rust](https://howtorust.com/understanding-result-option-and-operators-in-rust/)

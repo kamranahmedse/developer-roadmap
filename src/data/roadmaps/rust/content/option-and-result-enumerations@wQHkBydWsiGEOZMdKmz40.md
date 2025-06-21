@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@Rust by Example: Option & unwrap](https://doc.rust-lang.org/rust-by-example/error/option_unwrap.html)
-- [@article@Rust by Example: Result](https://doc.rust-lang.org/rust-by-example/error/result.html)
+- [@official@Option & unwrap](https://doc.rust-lang.org/rust-by-example/error/option_unwrap.html)
+- [@official@Result](https://doc.rust-lang.org/rust-by-example/error/result.html)

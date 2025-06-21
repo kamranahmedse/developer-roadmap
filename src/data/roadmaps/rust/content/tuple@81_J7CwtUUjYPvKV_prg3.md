@@ -4,6 +4,6 @@ Tuples are fixed-size collections that can hold elements of different types. Acc
 
 Learn more from the following links:
 
-- [@official@Tuple - Rust](https://doc.rust-lang.org/std/primitive.tuple.html)
+- [@official@Tuple](https://doc.rust-lang.org/std/primitive.tuple.html)
 - [@article@The Tuple Type](https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-tuple-type)
 - [@video@Rust Tutorial - Tuples](https://www.youtube.com/watch?v=t047Hseyj_k&t=506s)

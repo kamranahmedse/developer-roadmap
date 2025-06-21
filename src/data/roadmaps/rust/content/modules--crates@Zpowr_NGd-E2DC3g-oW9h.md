@@ -4,4 +4,6 @@ Modules provide namespacing and encapsulation within a crate, organizing code wi
 
 Visit the following resources to learn more:
 
-- [@article@Rust Book: Managing Growing Projects with Packages, Crates, and Modules](https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html)
+- [@official@Crates](https://doc.rust-lang.org/rust-by-example/crates.html)
+- [@official@Managing Growing Projects with Packages, Crates, and Modules](https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html)
+- [@article@How It Works: Rust's Module System Finally Explained](https://confidence.sh/blog/rust-module-system-explained/)

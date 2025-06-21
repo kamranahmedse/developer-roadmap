@@ -4,6 +4,6 @@ Rust's `bool` primitive type represents truth values with two possible states: `
 
 Learn more from the following links:
 
-- [@video@Rust Tutorial - Booleans](https://www.youtube.com/watch?v=t047Hseyj_k&t=388s)
+- [@official@bool](https://doc.rust-lang.org/std/primitive.bool.html)
 - [@article@The Boolean Type](https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-boolean-type)
-- [@official@bool - Rust](https://doc.rust-lang.org/std/primitive.bool.html)
+- [@video@Rust Tutorial - Booleans](https://www.youtube.com/watch?v=t047Hseyj_k&t=388s)

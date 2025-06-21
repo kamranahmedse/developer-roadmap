@@ -4,6 +4,6 @@
 
 Learn more from the following links:
 
-- [@official@HashSet in std::collections - Rust](https://doc.rust-lang.org/std/collections/struct.HashSet.html)
-- [@article@Hashset](https://doc.rust-lang.org/rust-by-example/std/hash/hashset.html)
+- [@official@HashSet in std::collections](https://doc.rust-lang.org/std/collections/struct.HashSet.html)
+- [@official@Hashset](https://doc.rust-lang.org/rust-by-example/std/hash/hashset.html)
 - [@video@Rust HashSet Collection Type](https://www.youtube.com/watch?v=KYw3Lnf0nSY&t=1440s)

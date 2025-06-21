@@ -4,4 +4,5 @@ Procedural macros operate on token streams at compile time, generating new code.
 
 Visit the following resources to learn more:
 
-- [@article@Procedural Macros](https://doc.rust-lang.org/reference/procedural-macros.html)
+- [@official@Procedural Macros](https://doc.rust-lang.org/reference/procedural-macros.html)
+- [@article@Understanding Procedural Macros and Custom Derive](https://www.gyata.ai/rust/procedural-macros-and-custom-derive)

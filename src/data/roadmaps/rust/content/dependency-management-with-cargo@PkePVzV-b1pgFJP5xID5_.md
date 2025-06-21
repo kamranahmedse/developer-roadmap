@@ -4,5 +4,5 @@ Cargo manages Rust projects and dependencies through `Cargo.toml` files. Depende
 
 Visit the following resources to learn more:
 
-- [@article@Rust Blog: Cargo](https://blog.rust-lang.org/2016/05/05/cargo-pillars.html)
-- [@article@Rust by Example: Dependencies](https://doc.rust-lang.org/rust-by-example/cargo/deps.html)
+- [@official@Dependencies](https://doc.rust-lang.org/rust-by-example/cargo/deps.html)
+- [@official@Cargo](https://blog.rust-lang.org/2016/05/05/cargo-pillars.html)

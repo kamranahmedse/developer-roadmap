@@ -4,5 +4,6 @@ SQLx is an async, pure-Rust SQL toolkit providing compile-time query checking fo
 
 Visit the following resources to learn more:
 
-- [@opensource@Repository](https://github.com/launchbadge/sqlx)
-- [@article@Docs.rs: sqlx](https://docs.rs/sqlx/latest/sqlx/)
+- [@opensource@launchbadge/sqlx](https://github.com/launchbadge/sqlx)
+- [@article@sqlx Documentation](https://docs.rs/sqlx/latest/sqlx/)
+- [@article@Getting Started with SQLx and SQLite in Rust](https://medium.com/rustaceans/getting-started-with-sqlx-and-sqlite-in-rust-895ae7fc01ae)

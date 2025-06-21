@@ -4,5 +4,6 @@ Borrowing allows accessing data without taking ownership. Immutable borrows (`&T
 
 Learn more from the following links:
 
-- [@article@References and Borrowing](https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html)
+- [@official@References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
 - [@article@The Slice Type](https://rust-book.cs.brown.edu/ch04-04-slices.html)
+- [@article@Borrowing and References in Rust](https://codeforgeek.com/borrowing-and-references-in-rust/)
