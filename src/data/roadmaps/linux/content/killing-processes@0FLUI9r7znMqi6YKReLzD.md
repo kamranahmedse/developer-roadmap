@@ -4,5 +4,6 @@ The `kill` command terminates processes in Linux by sending signals to specific 
 
 Learn more from the following resources:
 
+- [@article@Killing Processes](https://linuxjourney.com/lesson/killing-processes)
 - [@article@Using Kill Command in Linux](https://linuxhandbook.com/kill-command/)
 - [@article@Kill Command in Linux](https://linuxize.com/post/kill-command-in-linux/)
