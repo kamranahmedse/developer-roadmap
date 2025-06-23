@@ -4,5 +4,6 @@ Process signals are communication mechanisms in Linux that notify processes of s
 
 Visit the following resources to learn more:
 
+- [@article@Process signals](https://linuxjourney.com/lesson/process-signals)
 - [@article@Understanding Linux Process Signals](https://www.ceos3c.com/linux/understanding-linux-process-signals-a-complete/)
 - [@article@Linux Process Signals and their meaning](https://linux-audit.com/processes/linux-process-signals/)
