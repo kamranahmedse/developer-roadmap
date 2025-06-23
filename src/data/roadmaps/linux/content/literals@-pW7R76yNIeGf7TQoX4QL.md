@@ -1,17 +1,8 @@
 # Literals
 
-Shell literals are fixed values in source code including string literals (enclosed in quotes), numeric literals (sequences of digits), and boolean literals (1=true, 0=false). String examples: 'Hello, world!' or "Hello, world!". Numeric examples: 25, 100, 1234. Understanding literals is fundamental for shell scripting readability and functionality in Linux programming. 
+Shell literals are fixed values in source code including string literals (enclosed in quotes), numeric literals (sequences of digits), and boolean literals (1=true, 0=false). String examples: 'Hello, world!' or "Hello, world!". Numeric examples: 25, 100, 1234. Understanding literals is fundamental for shell scripting readability and functionality in Linux programming.
 
-```bash
-#!/bin/bash
-# Example of literals in shell script
- 
-StringLiteral="This is a string literal"
-NumericLiteral=125
-echo $StringLiteral
-echo $NumericLiteral
-```
+Visit the following resources to learn more:
 
-In this example, `StringLiteral` and `NumericLiteral` are literals and `echo` is used to print them.
-
-Always remember, a good understanding of literals is fundamental when it comes to shell scripting in Linux.
+- [@article@Bash Tutorial - Quoting literal text](https://riptutorial.com/bash/example/2465/quoting-literal-text)
+- [@article@Handling Special Characters in Shell Scripts](https://www.baeldung.com/linux/special-characters-in-shell-scripts)

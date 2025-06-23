@@ -2,10 +2,9 @@
 
 Linux file transfer involves copying or moving files between systems over networks. Command-line tools support protocols like FTP, HTTP, SCP, SFTP, and NFS. Common commands include `scp`, `rsync`, and `wget`. Example: `scp /local/file username@remote:/destination` copies files to remote systems. These tools make network file sharing streamlined, easier, and more secure.
 
-For instance, when transferring a file from a local machine to a remote server, the `scp` command can be utilized as follows:
-```bash
-scp /path/to/local/file username@remote:/path/to/destination
-```
-This command would copy the file to the designated remote system.
+Visit the following resources to learn more:
 
-Understanding and efficiently using these tools can make the task of file sharing over networks streamlined, easier, and more secure.
+- [@article@How to Use Linux FTP Command to Transfer Files](https://linuxize.com/post/how-to-use-linux-ftp-command-to-transfer-files/)
+- [@article@Rsync Command in Linux with Examples](https://linuxize.com/post/how-to-use-rsync-for-local-and-remote-data-transfer-and-synchronization/)
+- [@article@Using scp Command in Linux](https://linuxhandbook.com/scp-command/)
+- [@article@Wget Command in Linux with Examples](https://linuxize.com/post/wget-command-examples/)

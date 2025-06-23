@@ -2,12 +2,8 @@
 
 Service status shows the current state of Linux services including network processes, backend servers, and background applications. Use `systemctl status service_name` to check service states through systemd manager. Example: `systemctl status apache2.service` shows Apache web server status. Essential for diagnosing problems, maintaining performance, and preventing service downtimes.
 
-The command `systemctl` is the predominantly used command for controlling the `systemd` system and service manager. The `status` command in conjunction with `systemctl` is particularly useful for checking the state of the service. This command allows administrators to query and control the state of a systemd system and service manager.
+Learn more from the following resources:
 
-Here's a simple example of how to use the `systemctl` command to check the status of a service:
-
-```bash
-systemctl status apache2.service
-```
-This command would give status information about Apache2, the popular web server. 
-By managing service statuses efficiently, Linux administrators can diagnose and rectify system problems, maintain optimum performance levels, and prevent service downtimes.
+- [@article@Service Management in Linux: A Comprehensive Guide](https://medium.com/@thesureshvadde/service-management-in-linux-a-comprehensive-guide-cb4c7e81dfa9)
+- [@article@Use Systemctl Status Command to Check Service Status](https://linuxhandbook.com/systemctl-check-service-status/)
+- [@article@How to Check All Running Services in Linux](https://www.2daygeek.com/how-to-check-all-running-services-in-linux/)

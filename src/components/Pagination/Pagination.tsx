@@ -51,7 +51,7 @@ export function Pagination(props: PaginationProps) {
             onPageChange(currPage - 1);
           }}
           disabled={currPage === 1 || isDisabled}
-          className="rounded-md border px-2 py-1 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-40"
+          className="rounded-md bg-white border px-2 py-1 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-40"
         >
           &larr;
         </button>
@@ -91,7 +91,7 @@ export function Pagination(props: PaginationProps) {
         )}
         <button
           disabled={currPage === totalPages || isDisabled}
-          className="rounded-md border px-2 py-1 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-40"
+          className="rounded-md bg-white border px-2 py-1 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-40"
           onClick={() => {
             onPageChange(currPage + 1);
           }}

@@ -1,6 +1,7 @@
 ---
 import AstroIcon from './AstroIcon.astro';
 import Icon from './AstroIcon.astro';
+import { CookieSettingsButton } from './CookieSettingsButton';
 ---
 
 <div class='bg-slate-900 py-6 pb-10 text-white sm:py-16'>
@@ -35,7 +36,7 @@ import Icon from './AstroIcon.astro';
       >
     </p>
 
-    <div class='flex flex-col justify-between gap-8 lg:gap-2 lg:flex-row'>
+    <div class='flex flex-col justify-between gap-8 lg:flex-row lg:gap-2'>
       <div class='max-w-[425px]'>
         <p class='text-md flex items-center'>
           <a
@@ -56,8 +57,9 @@ import Icon from './AstroIcon.astro';
           </a>
         </p>
         <p class='my-4 text-slate-300/60'>
-          Community created roadmaps, best practices, projects, articles, resources and journeys to help
-          you choose your path and grow in your career.
+          Community created roadmaps, best practices, projects, articles,
+          resources and journeys to help you choose your path and grow in your
+          career.
         </p>
         <div class='text-sm text-gray-400'>
           <p>
@@ -73,7 +75,10 @@ import Icon from './AstroIcon.astro';
               class='hover:text-white'
               target='_blank'
             >
-              <AstroIcon icon='linkedin-2' class='inline-block h-5 w-5 fill-current' />
+              <AstroIcon
+                icon='linkedin-2'
+                class='inline-block h-5 w-5 fill-current'
+              />
             </a>
             <a
               aria-label='Subscribe to YouTube channel'
@@ -114,14 +119,15 @@ import Icon from './AstroIcon.astro';
           <img
             src='/images/tns-sm.png'
             alt='ThewNewStack'
-            class='my-1.5 mr-auto lg:ml-auto lg:mr-0'
+            class='my-1.5 mr-auto lg:mr-0 lg:ml-auto'
             width='200'
             height='24.8'
-            loading="lazy"
+            loading='lazy'
           />
         </a>
         <p class='my-4 text-slate-300/60'>
-          The top DevOps resource for Kubernetes, cloud-native computing, and large-scale development and deployment.
+          The top DevOps resource for Kubernetes, cloud-native computing, and
+          large-scale development and deployment.
         </p>
         <div class='text-sm text-gray-400'>
           <p>
@@ -146,5 +152,7 @@ import Icon from './AstroIcon.astro';
         </div>
       </div>
     </div>
+
+    <CookieSettingsButton client:load />
   </div>
 </div>

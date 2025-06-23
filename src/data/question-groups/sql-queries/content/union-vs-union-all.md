@@ -1,0 +1,1 @@
+UNION is used for removing duplicates while UNION ALL keeps all duplicates. UNION is slower compared to UNION ALL because of de-duplication. You use UNION when you want to obtain unique records and UNION ALL when you want every row even if they are repeated. 

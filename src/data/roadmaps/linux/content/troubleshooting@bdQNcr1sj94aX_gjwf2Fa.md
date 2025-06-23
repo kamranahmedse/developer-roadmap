@@ -1,9 +1,9 @@
 # Troubleshooting
 
-Linux troubleshooting involves identifying and resolving system errors, hardware/software issues, network problems, and resource management challenges. Key skills include using command-line tools, inspecting log files, understanding processes, and interpreting error messages. Tools like `top` provide real-time process monitoring to identify resource-heavy processes causing performance issues efficiently. 
+Linux troubleshooting involves identifying and resolving system errors, hardware/software issues, network problems, and resource management challenges. Key skills include using command-line tools, inspecting log files, understanding processes, and interpreting error messages. Tools like `top` provide real-time process monitoring to identify resource-heavy processes causing performance issues efficiently.
 
-```bash
-# example of using a command-line tool for troubleshooting
-top
-```
-The `top` command is a commonly used troubleshooting tool that provides a dynamic, real-time view of the processes running on a system. It can be particularly useful for identifying resource-heavy processes that could be causing performance issues.
+Learn more from the following resources:
+
+- [@article@Troubleshooting Linux Problems: A Beginner's Guide](https://learn.redhat.com/t5/Platform-Linux/Troubleshooting-Linux-Problems-A-Beginner-s-Guide/td-p/36236)
+- [@article@Linux Top 20 Important Commands for Monitoring and Troubleshooting](https://medium.com/@stepstodevops/linux-top-20-important-commands-for-monitoring-and-troubleshooting-a-comprehensive-guide-for-cd5aaa37da17)
+- [@article@10 Linux Troubleshooting Tips - dummies](https://www.dummies.com/article/technology/computers/operating-systems/linux/10-linux-troubleshooting-tips-274301/)

@@ -1,3 +1,0 @@
-# Database and ORM
-
-ORM stands for Object-Relational Mapping. It's a programming technique used to convert data between incompatible type systems using object-oriented programming languages. In Rust, the database ORM provides an abstraction for dealing with SQL queries, where you don't need to write raw SQL queries. Instead, you can create, delete and manipulate database records using Rust's interface. It transforms data from a relational database model (tables, rows, and columns) into objects that can be used in code. Important database ORMs in Rust include Diesel, sqlx, and others.
