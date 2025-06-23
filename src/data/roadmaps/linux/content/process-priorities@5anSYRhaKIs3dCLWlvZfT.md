@@ -4,4 +4,5 @@ Linux assigns priority levels to processes, affecting execution timing and resou
 
 Visit the following resource to learn more:
 
-- [@article@niceness](https://linuxjourney.com/lesson/process-niceness)
+- [@article@Understanding Process Thread Priorities in Linux](https://blogs.oracle.com/linux/post/task-priority)
+- [@article@How To Manipulate Process Priority In Linux](https://www.itsmarttricks.com/how-to-manipulate-process-priority-in-linux-using-nice-and-renice-commands/)

@@ -278,7 +278,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                       return;
                     }
                   }}
-                  href={`/ai/search?term=${subject}&difficulty=beginner&src=topic`}
+                  href={`/ai/course?term=${subject}&difficulty=beginner&src=topic`}
                   className="flex items-center gap-1 gap-2 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
                 >
                   {subject}
@@ -289,7 +289,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             {roadmapTreeMapping?.subjects?.length === 0 && (
               <a
                 target="_blank"
-                href={`/ai/search?term=${roadmapTreeMapping?.text}&difficulty=beginner&src=topic`}
+                href={`/ai/course?term=${roadmapTreeMapping?.text}&difficulty=beginner&src=topic`}
                 className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
               >
                 {nodeTextParts.slice(1).map((text, index) => {

@@ -1,0 +1,155 @@
+---
+description: When user requests migrating old roadmap content to new folder from content-old to content folder
+globs: 
+alwaysApply: false
+---
+# Content Migration Rule
+
+## Rule Name: content-migration
+
+## Description
+This rule provides a complete process for migrating roadmap content from old structure to new structure using migration mapping files.
+
+## When to Use
+Use this rule when you need to:
+- Migrate content from content-old directories to content directories
+- Use a migration-mapping.json file to map topic paths to content IDs
+- Populate empty content files with existing content from legacy structure
+
+## Process
+
+### 1. Prerequisites Check
+- Verify the roadmap directory has a `migration-mapping.json` file
+- Confirm `content-old/` directory exists with source content
+- Confirm `content/` directory exists with target files
+
+### 2. Migration Script Creation
+Create a Node.js script with the following functionality:
+
+```javascript
+const fs = require('fs');
+const path = require('path');
+
+// Load the migration mapping
+const migrationMapping = JSON.parse(fs.readFileSync('migration-mapping.json', 'utf8'));
+
+// Function to find old content file based on topic path
+function findOldContentFile(topicPath) {
+  const parts = topicPath.split(':');
+  
+  if (parts.length === 1) {
+    // Top level file like "introduction"
+    return path.join('content-old', parts[0], 'index.md');
+  } else if (parts.length === 2) {
+    // Like "introduction:what-is-rust"
+    const [folder, filename] = parts;
+    return path.join('content-old', folder, `${filename}.md`);
+  } else if (parts.length === 3) {
+    // Like "language-basics:syntax:variables"
+    const [folder, subfolder, filename] = parts;
+    return path.join('content-old', folder, subfolder, `${filename}.md`);
+  }
+  
+  return null;
+}
+
+// Function to find new content file based on content ID
+function findNewContentFile(contentId) {
+  const contentDir = 'content';
+  const files = fs.readdirSync(contentDir);
+  
+  // Find file that ends with the content ID
+  const matchingFile = files.find(file => file.includes(`@${contentId}.md`));
+  
+  if (matchingFile) {
+    return path.join(contentDir, matchingFile);
+  }
+  
+  return null;
+}
+
+// Process each mapping
+console.log('Starting content migration...\n');
+
+let migratedCount = 0;
+let skippedCount = 0;
+
+for (const [topicPath, contentId] of Object.entries(migrationMapping)) {
+  const oldFilePath = findOldContentFile(topicPath);
+  const newFilePath = findNewContentFile(contentId);
+  
+  if (!oldFilePath) {
+    console.log(`❌ Could not determine old file path for: ${topicPath}`);
+    skippedCount++;
+    continue;
+  }
+  
+  if (!newFilePath) {
+    console.log(`❌ Could not find new file for content ID: ${contentId} (topic: ${topicPath})`);
+    skippedCount++;
+    continue;
+  }
+  
+  if (!fs.existsSync(oldFilePath)) {
+    console.log(`❌ Old file does not exist: ${oldFilePath} (topic: ${topicPath})`);
+    skippedCount++;
+    continue;
+  }
+  
+  try {
+    // Read old content
+    const oldContent = fs.readFileSync(oldFilePath, 'utf8');
+    
+    // Write to new file
+    fs.writeFileSync(newFilePath, oldContent);
+    
+    console.log(`✅ Migrated: ${topicPath} -> ${path.basename(newFilePath)}`);
+    migratedCount++;
+  } catch (error) {
+    console.log(`❌ Error migrating ${topicPath}: ${error.message}`);
+    skippedCount++;
+  }
+}
+
+console.log(`\n📊 Migration complete:`);
+console.log(`   Migrated: ${migratedCount} files`);
+console.log(`   Skipped: ${skippedCount} files`);
+console.log(`   Total: ${Object.keys(migrationMapping).length} mappings`);
+```
+
+### 3. Execution Steps
+1. Navigate to the roadmap directory (e.g., `src/data/roadmaps/[roadmap-name]`)
+2. Create the migration script as `migrate_content.cjs`
+3. Run: `node migrate_content.cjs`
+4. Review the migration results
+5. Clean up the temporary script file
+
+### 4. Validation
+After migration:
+- Verify a few migrated files have proper content (not just titles)
+- Check that the content structure matches the old content
+- Ensure proper markdown formatting is preserved
+
+## File Structure Expected
+```
+roadmap-directory/
+├── migration-mapping.json
+├── content/
+│   ├── file1@contentId1.md
+│   ├── file2@contentId2.md
+│   └── ...
+└── content-old/
+    ├── section1/
+    │   ├── index.md
+    │   ├── topic1.md
+    │   └── subsection1/
+    │       └── subtopic1.md
+    └── section2/
+        └── ...
+```
+
+## Notes
+- The migration mapping uses colons (`:`) to separate nested paths
+- Content files in the new structure use the pattern `filename@contentId.md`
+- The script handles 1-3 levels of nesting in the old structure
+- Always create the script with `.cjs` extension to avoid ES module issues

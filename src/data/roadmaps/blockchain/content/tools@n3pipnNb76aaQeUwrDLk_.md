@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Best Blockchain Tools](https://101blockchains.com/best-blockchain-tools/)
 - [@article@Top 10 Tools for Blockchain Development](https://www.blockchain-council.org/blockchain/top-10-tools-for-blockchain-development/)
+- [@video@Cyfrin Updraft | Security Tools](https://updraft.cyfrin.io/courses/security/audit/tools)

@@ -12,6 +12,8 @@ const ogImage = 'https://roadmap.sh/og-images/ai-tutor.png';
   description='Learn anything with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.'
 >
   <AITutorLayout activeTab='community' client:load>
-    <AIExploreCourseListing client:load />
+    <div class='mx-auto flex w-full max-w-6xl flex-grow flex-col p-2'>
+      <AIExploreCourseListing client:load />
+    </div>
   </AITutorLayout>
 </SkeletonLayout>

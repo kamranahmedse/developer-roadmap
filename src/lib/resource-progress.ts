@@ -122,6 +122,10 @@ export function clearMigratedRoadmapProgress(
     'datastructures-and-algorithms',
     'kubernetes',
     'linux',
+    'software-design-architecture',
+    'rust',
+    'react-native',
+    'graphql'
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {

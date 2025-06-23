@@ -1,0 +1,22 @@
+---
+import { AIGuide } from '../../../components/GenerateGuide/AIGuide';
+import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
+
+export const prerender = false;
+
+interface Params extends Record<string, string | undefined> {
+  slug: string;
+}
+
+const { slug } = Astro.params as Params;
+---
+
+<SkeletonLayout
+  title='AI Tutor'
+  briefTitle='AI Tutor'
+  description='AI Tutor'
+  keywords={['ai', 'tutor', 'education', 'learning']}
+  canonicalUrl={`/ai/guide/${slug}`}
+>
+  <AIGuide client:load guideSlug={slug} />
+</SkeletonLayout>

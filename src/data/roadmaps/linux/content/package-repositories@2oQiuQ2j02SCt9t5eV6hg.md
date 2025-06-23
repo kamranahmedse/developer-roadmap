@@ -2,10 +2,9 @@
 
 Package repositories are storage locations containing software packages for Linux distributions. They enable easy installation, updates, and dependency management through package managers like apt, yum, or dnf. Each distribution has pre-configured repositories with tested, secure packages. Use commands like `apt update` or `yum update` to sync with repositories.
 
-```
-sudo apt update      # command to update the repository in Ubuntu
-sudo yum update      # command to update the repository in CentOS or Fedora
-raco pkg update      # command in Racket to update all installed packages
-```
+Visit the following resources to learn more:
 
-These repositories are what make Linux a force to reckon with when it comes to software management with an element of security ensuring that the users only install software that is secure and reliable.
+- [@official@APT Package Manager](https://www.debian.org/doc/manuals/apt-guide/index.en.html)
+- [@article@What is Repository in Linux?](https://linuxsimply.com/what-is-repository-in-linux/)
+- [@article@Official Repositories - ArchWiki](https://wiki.archlinux.org/title/Official_repositories)
+- [@article@Understanding Linux Repositories](https://blogs.maalavs.com/linux/understanding-linux-repositories/)

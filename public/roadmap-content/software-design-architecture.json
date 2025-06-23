@@ -1,0 +1,1329 @@
+{
+  "TJZgsxpfOmltUUChMzlEM": {
+    "title": "Clean Code",
+    "description": "Clean code is code that is easy to read, understand, and maintain. It follows a set of principles that are designed to make the code more readable, testable, and less error-prone. Some of the key principles of clean code include:\n\n*   Clarity: The code should be easy to read and understand.\n*   Simplicity: The code should be as simple as possible, avoiding unnecessary complexity.\n*   Comments: Comments should be used sparingly and only when necessary to explain complex or non-obvious code.\n*   Naming: Variables, functions, and classes should have meaningful and descriptive names.\n*   Formatting: The code should be consistently formatted to improve readability.\n*   Functionality: The code should be organized into small, single-purpose functions and classes.\n*   Error handling: The code should handle errors in a consistent and predictable way.\n*   Testing: The code should be testable and have a high test coverage.\n*   Reusability: The code should be designed to be reusable and modular.\n*   Performance: The code should be designed to be efficient and performant.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Introduction to Clean Code & Software Design Principles",
+        "url": "https://workat.tech/machine-coding/tutorial/introduction-clean-code-software-design-principles-nwu4qqc63e09",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "RgYq3YOJhPGSf5in1Rcdp": {
+    "title": "Programming Paradigms",
+    "description": "A programming paradigm is a fundamental style or approach to solving problems using a programming language. Different programming paradigms provide different ways of organizing and structuring code, and have different strengths and weaknesses. Some of the most common programming paradigms include:\n\n*   Imperative programming\n*   Functional programming\n*   Object-oriented programming\n*   Logic programming\n*   Declarative programming\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Programming paradigm",
+        "url": "https://en.wikipedia.org/wiki/Programming_paradigm",
+        "type": "article"
+      }
+    ]
+  },
+  "qZQDOe2MHBh8wNcmvkLQm": {
+    "title": "Object Oriented Programming",
+    "description": "Object-oriented programming (OOP) is a programming paradigm that is based on the concept of \"objects,\" which are instances of a class. In OOP, a class is a blueprint for creating objects, which have both data (attributes) and behavior (methods). The main idea behind OOP is to model real-world objects and their interactions, making it well-suited for creating complex and large-scale software systems.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Discover Object Oriented Programming",
+        "url": "https://opendsa.cs.vt.edu/ODSA/Books/Everything/html/IntroOO.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Software Development Tutorial - What is object-oriented language?s",
+        "url": "https://www.youtube.com/watch?app=desktop&v=SS-9y0H3Si8",
+        "type": "video"
+      }
+    ]
+  },
+  "p96fNXv0Z4rEEXJR9hAYX": {
+    "title": "Design Principles",
+    "description": "",
+    "links": []
+  },
+  "gyQw885dvupmkohzJPg3a": {
+    "title": "Design Patterns",
+    "description": "Design patterns are general solutions to common problems that arise in software development. They provide a way to describe and communicate proven solutions to common design problems and they provide a common vocabulary for design. They are not specific to any particular programming language or technology, but rather describe the problem and the solution in a way that can be applied to many different contexts.\n\nThere are several different types of design patterns, including:\n\n*   Creational patterns\n*   Structural patterns\n*   Behavioral patterns\n*   Architectural patterns\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview - Software Design Pattern",
+        "url": "https://en.wikipedia.org/wiki/Software_design_pattern",
+        "type": "article"
+      },
+      {
+        "title": "Explaining, imaging and simplifying design patterns",
+        "url": "https://refactoring.guru/design-patterns/what-is-pattern",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Design Patterns",
+        "url": "https://app.daily.dev/tags/design-patterns?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What Are Design Patterns?",
+        "url": "https://www.youtube.com/watch?v=BWprw8UHIzA",
+        "type": "video"
+      }
+    ]
+  },
+  "XBCxWdpvQyK2iIG2eEA1K": {
+    "title": "Architectural Principles",
+    "description": "Architectural principles refer to a set of guidelines or rules that are used to guide the design and development of a software architecture. These principles are intended to ensure that the resulting architecture is maintainable, scalable, and easy to understand and modify. Some common architectural principles include the separation of concerns, modularity, loose coupling, and high cohesion. Additionally, architectural principles are often used in conjunction with design patterns, which are reusable solutions to common software design problems.\n\nTo learn more, visit the following links:",
+    "links": [
+      {
+        "title": "Intro to Architectural Principles",
+        "url": "https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles",
+        "type": "article"
+      },
+      {
+        "title": "Principles of Software Design",
+        "url": "https://www.youtube.com/watch?v=TO9igqkPtfc",
+        "type": "video"
+      }
+    ]
+  },
+  "En_hvwRvY6k_itsNCQBYE": {
+    "title": "Architectural Styles",
+    "description": "Architectural styles in software refer to the overall design and organization of a software system, and the principles and patterns that are used to guide the design. These styles provide a general framework for the design of a system, and can be used to ensure that the system is well-structured, maintainable, and scalable.\n\nSome common architectural styles in software include:\n\n*   Microservices: where the system is built as a collection of small, independent, and loosely-coupled services.\n*   Event-Driven: where the system reacts to specific events that occur, rather than being continuously polled for changes.\n*   Layered: where the system is divided into a set of layers, each of which has a specific responsibility and communicates with the other layers through well-defined interfaces.\n*   Service-Oriented: where the system is built as a collection of services that can be accessed over a network.\n*   Data-Centric: where the system is focused on the storage, retrieval and manipulation of data, rather than the processing of data.\n*   Component-Based: where the system is composed of reusable and independent software components.\n*   Domain-Driven: where the system is organized around the core business domain and business entities.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "What is Software Architecture & Styles?",
+        "url": "https://study.com/academy/lesson/software-architecture-styles-patterns-components.html",
+        "type": "article"
+      },
+      {
+        "title": "Types of Architectural Styles in Software Engineering",
+        "url": "https://www.youtube.com/watch?v=2Pp0BcXN9YY",
+        "type": "video"
+      },
+      {
+        "title": "10 Architecture Patterns Used In Enterprise Software Development Today",
+        "url": "https://www.youtube.com/watch?v=brt3ao8bvqy",
+        "type": "video"
+      }
+    ]
+  },
+  "jq916t7svaMw5sFOcqZSi": {
+    "title": "Architectural Patterns",
+    "description": "Architectural patterns are a set of solutions that have been proven to work well for specific types of software systems. They provide a common vocabulary and set of best practices for designing and building software systems, and can help developers make better design decisions. Some common architectural patterns include:\n\n*   Model-View-Controller (MVC): A pattern for separating the user interface, business logic, and data storage components of a system.\n*   Microservices: A pattern for building systems as a collection of small, independently deployable services that communicate over a network.\n*   Event-Driven: A pattern for building systems that respond to events and perform actions in response.\n*   Layered: A pattern for organizing a system into layers, with each layer providing a specific set of services to the layer above it.\n*   Pipe-and-Filter: A pattern for building systems as a series of independent, reusable processing elements that are connected together in a pipeline.\n*   Command-Query Responsibility Segregation (CQRS): A pattern for separating the handling of commands (which change the state of the system) from the handling of queries (which retrieve information from the system)\n*   Blackboard: A pattern for creating a centralized repository of information that can be accessed and modified by multiple independent modules or subsystems.\n*   Microkernel: A pattern that aims to minimize the amount of code running in kernel mode and move as much functionality as possible into user-mode processes.\n*   Serverless: A design pattern that allows developers to build and run applications and services without having to provision and manage servers.\n*   Message Queues and Streams: A pattern that decouples different components of a system and enables asynchronous communication between them.\n*   Event Sourcing: A pattern that stores all changes to the system's state as a sequence of events, rather than just the current state.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview - Architectural Pattern",
+        "url": "https://en.wikipedia.org/wiki/Architectural_pattern",
+        "type": "article"
+      },
+      {
+        "title": "Architecture Patterns Used In Enterprise Software Development",
+        "url": "https://www.youtube.com/watch?v=BrT3AO8bVQY",
+        "type": "video"
+      }
+    ]
+  },
+  "WrzsvLgo7cf2KjvJhtJEC": {
+    "title": "Enterprise Patterns",
+    "description": "Enterprise patterns are a set of design patterns that are commonly used in the development of enterprise software applications. These patterns provide a common vocabulary and a set of best practices for solving common problems that arise in the development of large, complex software systems. Some examples of enterprise patterns include:\n\n*   Domain-Driven Design (DDD)\n*   Model-View-Controller (MVC)\n*   Service Oriented Architecture (SOA)\n*   Command and Query Responsibility Segregation (CQRS)\n*   Event Sourcing\n*   Microservices\n*   Event-Driven Architecture (EDA)\n\nThese patterns can help to improve the maintainability and scalability of the software, by providing a clear separation of concerns and allowing for a more modular and flexible architecture.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Software Architecture Patterns in Enterprise Software",
+        "url": "https://blog.devgenius.io/10-software-architecture-patterns-in-enterprise-software-development-fabacb5ed0c8",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Enterprise",
+        "url": "https://app.daily.dev/tags/enterprise?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What are Enterprise Integration Patterns?",
+        "url": "https://www.youtube.com/watch?v=WNm3QmJadNs",
+        "type": "video"
+      }
+    ]
+  },
+  "08qKtgnhJ3tlb5JKfTDf5": {
+    "title": "Clean Code Principles",
+    "description": "Clean code is code that is easy to read, understand, and maintain. It follows a set of principles that are designed to make the code more readable, testable, and less error-prone. Some of the key principles of clean code include:\n\n*   Clarity: The code should be easy to read and understand.\n*   Simplicity: The code should be as simple as possible, avoiding unnecessary complexity.\n*   Comments: Comments should be used sparingly and only when necessary to explain complex or non-obvious code.\n*   Naming: Variables, functions, and classes should have meaningful and descriptive names.\n*   Formatting: The code should be consistently formatted to improve readability.\n*   Functionality: The code should be organized into small, single-purpose functions and classes.\n*   Error handling: The code should handle errors in a consistent and predictable way.\n*   Testing: The code should be testable and have a high test coverage.\n*   Reusability: The code should be designed to be reusable and modular.\n*   Performance: The code should be designed to be efficient and performant.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Introduction to Clean Code & Software Design Principles",
+        "url": "https://workat.tech/machine-coding/tutorial/introduction-clean-code-software-design-principles-nwu4qqc63e09",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "2SOZvuEcy8Cy8ymN7x4L-": {
+    "title": "Be consistent",
+    "description": "Being consistent refers to maintaining a consistent pattern. This can include using consistent naming conventions, data structures, and interfaces throughout the system, as well as adhering to established design principles and best practices. Consistency can help to make the system more maintainable, understandable, and extendable.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "10 Tips for Writing Clean Code",
+        "url": "https://www.pluralsight.com/blog/software-development/10-steps-to-clean-code",
+        "type": "article"
+      }
+    ]
+  },
+  "6Cd1BbGsmPJs_5jKhumyV": {
+    "title": "Meaningful names over comments",
+    "description": "You should follow the practice of giving clear and descriptive names to different components of a system, such as variables, functions, and classes. This can help to make the system more understandable and maintainable by clearly communicating the purpose of each component and its intended usage.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "A Guide for Naming Things in Programming",
+        "url": "https://levelup.gitconnected.com/a-guide-for-naming-things-in-programming-2dc2d74879f8",
+        "type": "article"
+      }
+    ]
+  },
+  "81WOL1nxb56ZbAOvxJ7NK": {
+    "title": "Indentation and Code Style",
+    "description": "Indentation is the practice of using whitespace to visually group related lines of code together, making it easier to read and understand the structure of the code. Code style refers to the conventions and guidelines used to format and structure code, such as naming conventions, commenting, and use of whitespace.\n\nHaving a consistent indentation and code style can help to make the code more readable and understandable, which can improve the maintainability of the system.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Clean Code – Formatting",
+        "url": "https://www.baeldung.com/cs/clean-code-formatting",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "XEwC6Fyf2DNNHQsoGTrQj": {
+    "title": "Keep methods / classes / files small",
+    "description": "You should design and implement small, focused components that serve a specific purpose, rather than large, monolithic components that try to do everything. This can help to improve the maintainability and scalability of the system by making it easier to understand, test, and modify individual components.",
+    "links": []
+  },
+  "5S5A5wCJUCNPLlHJ5fRjU": {
+    "title": "Pure functions",
+    "description": "A pure function is a specific type of function that meets the following criteria:\n\n*   It takes some input, known as arguments, and returns a value or output.\n*   It does not cause any observable side effects, such as modifying the state of the system or interacting with external resources.\n*   Given the same input, it will always return the same output.\n*   It does not depend on any state or variables that are outside of its scope.\n\nPure functions are considered to be more predictable and easier to test, as their behavior is determined solely by the input they receive and their internal logic. They also make it easier to reason about the behavior of a program, since the output of a pure function is not affected by any external factors. Pure functions are often used in functional programming, where they are considered a key principle. They are also useful in concurrent and parallel programming, as they are less prone to race conditions and other concurrency-related issues.",
+    "links": []
+  },
+  "qZzl0hAD2LkShsPql1IlZ": {
+    "title": "Minimize cyclomatic complexity",
+    "description": "Cyclomatic complexity is a measure of the structural complexity of a program, which is determined by the number of linearly independent paths through a program's control flow. High cyclomatic complexity can make a program difficult to understand, test, and maintain, so it's often desirable to minimize it in system architecture.\n\nHere are some ways to minimize cyclomatic complexity in system architecture:\n\n*   Break down complex functions into smaller, simpler functions that perform specific tasks.\n*   Use control structures, such as if-else statements and loops, in a consistent and predictable way.\n*   Use functional programming concepts and techniques, such as immutability and pure functions, to reduce the need for complex control flow.\n*   Use design patterns, such as the state pattern, to simplify complex control flow.\n*   Regularly review the code and refactor it to simplify the control flow.\n*   Use static code analysis tools that can detect and report high cyclomatic complexity in the code.\n\nBy following these best practices, the system architecture will be more maintainable, testable, and less error-prone.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "How to reduce cyclomatic complexity?",
+        "url": "https://kasp9023.medium.com/how-to-make-your-code-more-readable-focus-on-the-happy-path-and-reduce-cyclomatic-complexity-66802b8897b5",
+        "type": "article"
+      }
+    ]
+  },
+  "yyKvmutbxu3iVHTuqr5q4": {
+    "title": "Avoid passing nulls, booleans",
+    "description": "Passing nulls or Booleans can lead to unexpected behavior and difficult-to-debug errors in a program. Here are some ways to avoid passing nulls or Booleans in system architecture:\n\n*   Use Optionals or Maybe types instead of nulls to indicate the absence of a value. This makes it clear when a value is missing and prevents null reference exceptions.\n*   Use a default value for function arguments instead of allowing them to be null or Boolean. This eliminates the need to check for null or Boolean values and reduces the potential for errors.\n*   Use the Null Object pattern to replace null values with a special object that has a defined behavior. This eliminates the need to check for null values and makes the code more readable.\n*   Use the Ternary operator (?:) instead of if-else statements when working with Booleans. This can make the code more concise and easier to read.\n*   Use the assert function to check the validity of function arguments and throw an exception if they are invalid.\n\nBy following these best practices, the system architecture will be more robust and less error-prone.",
+    "links": []
+  },
+  "OoCCy-3W5y7bUcKz_iyBw": {
+    "title": "Keep framework code distant",
+    "description": "Keeping framework code distant refers to separating the application's code from the framework's code. By doing so, it makes it easier to maintain, test, and upgrade the application's codebase and the framework independently.\n\nHere are some ways to keep framework code distant in system architecture:\n\n1.  Use an abstraction layer to separate the application code from the framework code. This allows the application code to be written without the need to know the specifics of the framework.\n2.  Use dependency injection to decouple the application code from the framework code. This allows the application code to use the framework's functionality without having to instantiate the framework objects directly.\n3.  Avoid using framework-specific libraries or classes in the application code. This makes it easier to switch to a different framework in the future if needed.\n4.  Use a standard interface for the application code to interact with the framework. This allows the application code to be written without the need to know the specifics of the framework.\n5.  Keep the application and the framework code in separate projects and/or repositories.\n\nBy following these best practices, the system architecture will be more maintainable, testable, and less error-prone, and it will be easier to upgrade or switch the framework if needed.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Clean architecture",
+        "url": "https://pusher.com/tutorials/clean-architecture-introduction/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "S1m7ty7Qrzu1rr4Jl-WgM": {
+    "title": "Use correct constructs",
+    "description": "In the context of clean code principles, \"using correct constructs\" refers to using appropriate programming constructs, such as loops, conditionals, and functions, in a way that makes the code easy to understand, maintain, and modify.\n\nWhen using correct constructs, the code should be organized in a logical and intuitive way, making use of appropriate control flow statements and data structures to accomplish the task at hand. This also means that the code should avoid using unnecessary or overly complex constructs that make the code harder to understand or reason about.\n\nAdditionally, correct constructs also means to use the right constructs for the right problem, for example, if you want to iterate over an array, use a for loop instead of recursion and also, you should avoid using global variables and instead use function arguments and return values to pass data between different parts of the code.\n\nBy using correct constructs, the code will be more readable, more maintainable, and less prone to bugs, making it easier for other developers to understand, debug and extend the code.",
+    "links": []
+  },
+  "mzt7fvx6ab3tmG1R1NcLO": {
+    "title": "Tests should be fast and independent",
+    "description": "",
+    "links": []
+  },
+  "kp86Vc3uue3IxTN9B9p59": {
+    "title": "Organize code by actor it belongs to",
+    "description": "",
+    "links": []
+  },
+  "tLbckKmfVxgn59j_dlh8b": {
+    "title": "Command query separation",
+    "description": "Command-Query Separation (CQS) is a software design principle that separates the responsibilities of a method or function into two categories: commands and queries. Commands are methods that change the state of the system, while queries are methods that return information but do not change the state of the system.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "CQS Pattern",
+        "url": "https://martinfowler.com/bliki/CommandQuerySeparation.html",
+        "type": "article"
+      }
+    ]
+  },
+  "9naCfoHF1LW1OEsVZGi8v": {
+    "title": "Keep it simple and refactor often",
+    "description": "Keeping framework code distant refers to separating the application's code from the framework's code. By doing so, it makes it easier to maintain, test, and upgrade the application's codebase and the framework independently.\n\nHere are some ways to keep framework code distant in system architecture:\n\n1.  Use an abstraction layer to separate the application code from the framework code. This allows the application code to be written without the need to know the specifics of the framework.\n2.  Use dependency injection to decouple the application code from the framework code. This allows the application code to use the framework's functionality without having to instantiate the framework objects directly.\n3.  Avoid using framework-specific libraries or classes in the application code. This makes it easier to switch to a different framework in the future if needed.\n4.  Use a standard interface for the application code to interact with the framework. This allows the application code to be written without the need to know the specifics of the framework.\n5.  Keep the application and the framework code in separate projects and/or repositories.\n\nBy following these best practices, the system architecture will be more maintainable, testable, and less error-prone, and it will be easier to upgrade or switch the framework if needed.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Clean architecture",
+        "url": "https://pusher.com/tutorials/clean-architecture-introduction/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "TDhTYdEyBuOnDKcQJzTAk": {
+    "title": "Programming Paradigms",
+    "description": "A programming paradigm is a fundamental style or approach to solving problems using a programming language. Different programming paradigms provide different ways of organizing and structuring code, and have different strengths and weaknesses. Some of the most common programming paradigms include:\n\n*   Imperative programming\n*   Functional programming\n*   Object-oriented programming\n*   Logic programming\n*   Declarative programming\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Programming paradigm",
+        "url": "https://en.wikipedia.org/wiki/Programming_paradigm",
+        "type": "article"
+      }
+    ]
+  },
+  "VhSEH_RoWFt1z2lial7xZ": {
+    "title": "Structured Programming",
+    "description": "Structured programming is a programming paradigm that emphasizes the use of well-structured control flow constructs such as loops, conditionals, and subroutines. It was developed in the 1960s and 1970s as a reaction to the \"spaghetti code\" produced by the widespread use of goto statements.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Structured Programming Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Structured_programming",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "YswaOqZNYcmDwly2IXrTT": {
+    "title": "Functional Programming",
+    "description": "Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. It emphasizes the use of functions to solve problems, often using higher-order functions, immutability, and recursion. Instead of modifying data, functional programming creates new data structures.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "What is Functional Programming?",
+        "url": "https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Functional Programming",
+        "url": "https://app.daily.dev/tags/functional-programming?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "VZrERRRYhmqDx4slnZtdc": {
+    "title": "Object Oriented Programming",
+    "description": "Object-oriented programming (OOP) is a programming paradigm that uses objects and classes to structure and organize code. In OOP, an object is an instance of a class, which is a template that defines the properties and behaviors of the object. OOP is based on the principles of encapsulation, inheritance, and polymorphism.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "What is Object Oriented Programming?",
+        "url": "https://www.freecodecamp.org/news/what-is-object-oriented-programming/",
+        "type": "article"
+      },
+      {
+        "title": "OOP introduction",
+        "url": "https://www.geeksforgeeks.org/introduction-of-object-oriented-programming/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about OOP",
+        "url": "https://app.daily.dev/tags/oop?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "HhYdURE4X-a9GVwJhAyE0": {
+    "title": "Object Oriented Programming",
+    "description": "Object-oriented programming (OOP) is a programming paradigm that is based on the concept of \"objects,\" which are instances of a class. In OOP, a class is a blueprint for creating objects, which have both data (attributes) and behavior (methods). The main idea behind OOP is to model real-world objects and their interactions, making it well-suited for creating complex and large-scale software systems.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Discover Object Oriented Programming",
+        "url": "https://opendsa.cs.vt.edu/ODSA/Books/Everything/html/IntroOO.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Software Development Tutorial - What is object-oriented language?s",
+        "url": "https://www.youtube.com/watch?app=desktop&v=SS-9y0H3Si8",
+        "type": "video"
+      }
+    ]
+  },
+  "0VO_-1g-TS29y0Ji2yCjc": {
+    "title": "Model-Driven Design",
+    "description": "Model-driven design (MDD) is a software development methodology in which the design of a system is represented by a set of models, and the models are used to drive the development of the system. MDD is based on the idea that the design of a system can be represented by a set of models, and that these models can be used to generate the code for the system.\n\nThe main advantage of using MDD is that it allows for a clear separation of concerns between the design and implementation of a system. The models represent the design of the system, and the code is generated from the models, which makes it easier to maintain and evolve the system. Additionally, MDD can also improve the quality of the code, as the models can be used to check for design errors and inconsistencies before the code is generated.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Model Driven Design – theory to practice",
+        "url": "https://www.todaysoftmag.com/article/1529/model-driven-design-theory-to-practice",
+        "type": "article"
+      }
+    ]
+  },
+  "I25ghe8xYWpZ-9pRcHfOh": {
+    "title": "Domain Models",
+    "description": "A domain model is a representation of a specific area of knowledge or business that is used to model the objects and concepts within that domain, and to capture the relationships and constraints between them. In object-oriented programming (OOP), a domain model is typically represented by a set of classes and interfaces, with each class or interface representing a specific concept or object within the domain.\n\nA domain model is used to provide a clear and consistent representation of the problem domain, and to capture the business requirements and constraints of the system. It is also used to guide the design of the system and to ensure that the system accurately reflects the real-world problem it is intended to solve.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Domain model",
+        "url": "https://en.wikipedia.org/wiki/Domain_model",
+        "type": "article"
+      },
+      {
+        "title": "Domain Driven Design",
+        "url": "https://khalilstemmler.com/articles/categories/domain-driven-design/",
+        "type": "article"
+      }
+    ]
+  },
+  "c6n-wOHylTbzpxqgoXtdw": {
+    "title": "Class Variants",
+    "description": "A class invariant is a set of conditions that must be true for any object of a class, at any point in time. In object-oriented programming (OOP), class invariants are used to define the valid states of an object and to ensure that the object always remains in a valid state.\n\nClass invariants are typically defined in the constructor of a class and are enforced through the use of private methods and data members that are used to validate the state of the object. They are also checked in the class's methods before and after any operation that can change the state of the object.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Class invariant",
+        "url": "https://en.wikipedia.org/wiki/Class_invariant",
+        "type": "article"
+      },
+      {
+        "title": "The concept of class invariant in object-oriented programming",
+        "url": "https://arxiv.org/abs/2109.06557",
+        "type": "article"
+      }
+    ]
+  },
+  "HN160YgryBBtVGjnWxNie": {
+    "title": "Layered Architectures",
+    "description": "A layered architecture is a software design pattern in which the functionality of a system is divided into a set of layers, with each layer having a specific responsibility and interacting with the layers above and below it. The main idea behind a layered architecture is to separate the concerns of the system into distinct and independent layers, making the code more modular, easier to understand, test, and modify.\n\nThere are several types of layered architectures, but a common one is the three-layer architecture which consists of:\n\n*   Presentation Layer\n*   Business Layer\n*   Data Access Layer\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Software Architecture Patterns — Layered Architecture",
+        "url": "https://priyalwalpita.medium.com/software-architecture-patterns-layered-architecture-a3b89b71a057",
+        "type": "article"
+      },
+      {
+        "title": "5 Primary Layers in Software Architecture?",
+        "url": "https://www.indeed.com/career-advice/career-development/what-are-the-layers-in-software-architecture",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "kWNQd3paQrhMHMJzM35w8": {
+    "title": "Domain Language",
+    "description": "A domain language is a specific vocabulary and set of concepts used to describe and communicate about a specific area of knowledge or business. In software development, a domain language is used to model the objects and concepts within a specific domain, and to capture the relationships and constraints between them.\n\nA domain language is used to provide a common understanding of the problem domain among all stakeholders, including developers, business analysts, and domain experts. It is also used to ensure that the software system accurately reflects the real-world problem it is intended to solve.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Domain-specific language",
+        "url": "https://en.wikipedia.org/wiki/Domain-specific_language",
+        "type": "article"
+      },
+      {
+        "title": "What are Domain Languages (DSLs)?",
+        "url": "https://www.jetbrains.com/mps/concepts/domain-specific-languages/",
+        "type": "article"
+      }
+    ]
+  },
+  "nVaoI4IDPVEsdtFcjGNRw": {
+    "title": "Anemic Models",
+    "description": "An Anemic model, also known as an anemic domain model, is a type of domain model in which the domain objects only contain data (attributes) and lack behavior. An anemic model often results in the use of data-transfer objects (DTOs) and service layer to handle the behavior.\n\nAn anemic model is considered an anti-pattern in object-oriented programming (OOP) because it violates the principles of encapsulation and separation of concerns. In an anemic model, the behavior is separated from the data, and is typically implemented in a separate service layer, which can lead to a complex, tightly coupled, and hard-to-maintain codebase.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Anemic Domain Model",
+        "url": "https://en.wikipedia.org/wiki/Anemic_domain_model",
+        "type": "article"
+      },
+      {
+        "title": "What is an Anaemic Domain Model?",
+        "url": "https://www.ensonodigital.com/blog/anaemic-domain-model-vs-rich-domain-model",
+        "type": "article"
+      }
+    ]
+  },
+  "RMkEE7c0jdVFqZ4fmjL6Y": {
+    "title": "Abstract Classes",
+    "description": "An abstract class is a class in object-oriented programming (OOP) that cannot be instantiated. Instead, it serves as a template or blueprint for other classes to inherit from. An abstract class can contain both abstract and non-abstract methods (abstract methods are methods that do not have any implementation, they just have a signature).\n\nAbstract classes are used to provide a common interface and implementation for a group of related classes. They are also used to define common behavior that must be implemented by all subclasses. A subclass that inherits from an abstract class is called a concrete class, and it must provide an implementation for all the abstract methods declared in the parent class.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What is an Abstract Class in Object Oriented Programming",
+        "url": "https://computinglearner.com/abstract-class-in-object-oriented-programming/",
+        "type": "article"
+      }
+    ]
+  },
+  "hd6GJ-H4p9I4aaiRTni57": {
+    "title": "Concrete Classes",
+    "description": "A concrete class is a class in object-oriented programming (OOP) that can be instantiated, meaning objects can be created from it. A concrete class is a class that provides an implementation for all of the abstract methods declared in its parent class, if it inherits from an abstract class. A concrete class can also be a class that does not inherit from an abstract class, in that case it can have implementation for all of its methods.\n\nConcrete classes are used to provide specific implementation details for a group of related classes that inherit from a common abstract class. They are also used to define unique behavior for a specific class. A concrete class can have its own methods and variables, and can also override the methods of its parent class.",
+    "links": []
+  },
+  "b-YIbw-r-nESVt_PUFQeq": {
+    "title": "Scope / Visibility",
+    "description": "Scope visibility refers to the accessibility or visibility of variables, functions, and other elements in a program, depending on the context in which they are defined. In object-oriented programming (OOP), scope visibility is controlled through the use of access modifiers, such as \"public,\" \"private,\" and \"protected.\"\n\n*   Public: A public element can be accessed from anywhere in the program, both within the class and outside of it.\n*   Private: A private element can only be accessed within the class in which it is defined. It is not accessible to other classes, even if they inherit from the class.\n*   Protected: A protected element can only be accessed within the class and its subclasses.\n\nThere are variations of scope visibility based on the programming language, but these are the most common.",
+    "links": []
+  },
+  "SrcPhS4F7aT80qNjbv54f": {
+    "title": "Interfaces",
+    "description": "In object-oriented programming (OOP), an interface is a contract or a set of methods that a class must implement. It defines a common set of methods that a class must provide, but it does not provide any implementation details. An interface can include both method signatures and constants.\n\nInterfaces are used to define a common behavior for a group of related classes, and to provide a way for objects of different classes to be treated polymorphically. A class that implements an interface must provide an implementation for all of the methods declared in the interface. A class can implement multiple interfaces, but can only inherit from one base class.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Fundamental concepts: What's an Interface?",
+        "url": "https://www.youtube.com/watch?v=o1jBgdhQsGo",
+        "type": "video"
+      }
+    ]
+  },
+  "Dj36yLBShoazj7SAw6a_A": {
+    "title": "Inheritance",
+    "description": "Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a new class to inherit the properties and methods of an existing class. The class that is inherited from is called the parent or super class, while the class that inherits is called the child or sub class. Inheritance enables code reuse and allows for a hierarchical organization of classes, where a child class can inherit the properties and methods of its parent class and potentially add or override them. The main advantage of inheritance is that it allows for a clean and organized way to reuse code and share functionality among classes.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Inheritance (object-oriented programming)",
+        "url": "https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)",
+        "type": "article"
+      },
+      {
+        "title": "What is inheritance in programming?",
+        "url": "https://www.youtube.com/watch?v=ajOYOxCanhE",
+        "type": "video"
+      }
+    ]
+  },
+  "4DVW4teisMz8-58XttMGt": {
+    "title": "Polymorphism",
+    "description": "Polymorphism is a concept in object-oriented programming (OOP) that allows objects of different classes to be treated as objects of a common parent class. This is achieved by defining a common interface for all classes that need to be treated polymorphically. The word polymorphism is derived from Greek, \"poly\" means many and \"morph\" means form.\n\nThere are two types of polymorphism:\n\n*   Compile-time polymorphism (also called static polymorphism or early binding) occurs when the type of the object that is going to be acted upon is determined at compile-time. This is achieved through method overloading, which allows multiple methods to have the same name but different parameters within the same class.\n*   Run-time polymorphism (also called dynamic polymorphism or late binding) occurs when the type of the object is determined at run-time. This is achieved through method overriding, which allows a child class to provide a specific implementation of a method that is already defined in its parent class.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Polymorphism in programming",
+        "url": "https://www.bmc.com/blogs/polymorphism-programming/",
+        "type": "article"
+      },
+      {
+        "title": "What is polymorphism in programming?",
+        "url": "https://www.youtube.com/watch?v=tIWm3I_Zu7I",
+        "type": "video"
+      }
+    ]
+  },
+  "VA8FMrhF4non9x-J3urY8": {
+    "title": "Abstraction",
+    "description": "Abstraction is a concept in object-oriented programming (OOP) that refers to the process of hiding the implementation details of an object and exposing only its essential features. It enables the use of objects without the need to understand the underlying complexity of their internal structure and behavior.\n\nThere are two types of abstraction:\n\n*   Data abstraction: refers to hiding the internal representation of data and providing a simplified view of the data through a set of well-defined interfaces.\n*   Behavioral abstraction: refers to hiding the internal behavior of an object and providing a simplified view of its capabilities through a set of well-defined interfaces.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Tutorial - Abstraction",
+        "url": "https://www.youtube.com/watch?v=OF55HZPE7lQ",
+        "type": "video"
+      }
+    ]
+  },
+  "GJxfVjhiLuuc36hatx9dP": {
+    "title": "Encapsulation",
+    "description": "Encapsulation is a concept in object-oriented programming (OOP) that refers to the practice of wrapping an object's internal data and behavior within a defined interface, and hiding the implementation details from the outside world. It is one of the fundamental concepts of OOP and is closely related to the concepts of data hiding and information hiding.\n\nEncapsulation is achieved by using access modifiers (such as \"public,\" \"private,\" and \"protected\") to control the visibility and accessibility of an object's data and methods. For example, data members of a class can be declared as private, which means they can only be accessed by methods within the class, while methods can be declared as public, which means they can be called by any code that has a reference to the object.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Encapsulation",
+        "url": "https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about General Programming",
+        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - What is encapsulation in programming?",
+        "url": "https://www.youtube.com/watch?v=sNKKxc4QHqA",
+        "type": "video"
+      }
+    ]
+  },
+  "9dMbo4Q1_Sd9wW6-HSCA9": {
+    "title": "Design Principles",
+    "description": "",
+    "links": []
+  },
+  "Izno7xX7wDvwPEg7f_d1Y": {
+    "title": "Composition over Inheritance",
+    "description": "Composition over inheritance is a programming principle that suggests that it is better to use composition, a mechanism for assembling objects, to create complex objects, rather than using inheritance, which is a mechanism for creating new classes based on existing ones.\n\nInheritance is a powerful mechanism for creating reusable code, but it can also lead to tightly coupled, hard-to-maintain code. This is because inherited classes are tightly bound to their parent classes and any changes made to the parent class will affect all of its child classes. This makes it hard to change or extend the code without affecting the entire class hierarchy.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Composition over Inheritance",
+        "url": "https://en.wikipedia.org/wiki/Composition_over_inheritance",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Composition over Inheritance",
+        "url": "https://www.youtube.com/watch?v=wfMtDGfHWpA",
+        "type": "video"
+      }
+    ]
+  },
+  "DlefJ9JuJ1LdQYC4WSx6y": {
+    "title": "Encapsulate what varies",
+    "description": "Encapsulate what varies is a programming principle that suggests that code should be organized in such a way that the parts that are likely to change in the future are isolated from the parts that are unlikely to change. This is accomplished by creating interfaces and classes that separate the varying parts of the code from the stable parts.\n\nEncapsulating what varies allows for more flexibility in the code. When changes are needed, they can be made to the encapsulated parts without affecting the rest of the code. This makes it easier to understand, test, and maintain the code.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "What does it mean when one says “Encapsulate what varies”?",
+        "url": "https://softwareengineering.stackexchange.com/questions/337413/what-does-it-mean-when-one-says-encapsulate-what-varies",
+        "type": "article"
+      },
+      {
+        "title": "Overview of Encapsulate What Varies",
+        "url": "https://bootcamp.uxdesign.cc/software-design-principles-every-developers-should-know-23d24735518e",
+        "type": "article"
+      }
+    ]
+  },
+  "UZeY36dABmULhsHPhlzn_": {
+    "title": "Program against abstractions",
+    "description": "Programming against abstractions is a programming principle that suggests that code should be written in such a way that it is not tied to specific implementations, but rather to abstractions. This is accomplished by defining interfaces or abstract classes that define the behavior of a group of related classes without specifying their implementation.\n\nProgramming against abstractions allows for more flexibility in the code. When changes are needed, they can be made to the implementation of the abstractions without affecting the code that uses them. This makes it easier to understand, test, and maintain the code.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Overview of Abstraction principle",
+        "url": "https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)",
+        "type": "article"
+      }
+    ]
+  },
+  "WzUhKlmFB9alTlAyV-MWJ": {
+    "title": "Hollywood Principle",
+    "description": "The Hollywood Principle is a software development principle that states: \"Don't call us, we'll call you.\" It suggests that high-level components should dictate the flow of control in an application, rather than low-level components.\n\nThis principle is often used in the context of inversion of control (IoC) and dependency injection. In traditional software development, low-level components are responsible for creating and managing the high-level components that they depend on. With IoC, the high-level components dictate the flow of control, and the low-level components are created and managed by a separate mechanism.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Tutorial - Hollywood Principle",
+        "url": "https://www.youtube.com/watch?v=lRuygpsXE5s",
+        "type": "video"
+      }
+    ]
+  },
+  "vnLhItObDgp_XaDmplBsJ": {
+    "title": "Law of Demeter",
+    "description": "",
+    "links": []
+  },
+  "0rGdh72HjqPZa2bCbY9Gz": {
+    "title": "Tell, don't ask",
+    "description": "",
+    "links": []
+  },
+  "3XckqZA--knUb8IYKOeVy": {
+    "title": "SOLID",
+    "description": "SOLID is an acronym that stands for five principles of object-oriented software development, which were first introduced by Robert C. Martin in the early 2000s. These principles are:\n\n*   Single Responsibility Principle (SRP)\n*   Open/Closed Principle (OCP)\n*   Liskov Substitution Principle (LSP)\n*   Interface Segregation Principle (ISP)\n*   Dependency Inversion Principle (DIP)\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Get Started with SOLID",
+        "url": "https://www.bmc.com/blogs/solid-design-principles/",
+        "type": "article"
+      },
+      {
+        "title": "SOLID Principles",
+        "url": "https://khalilstemmler.com/articles/tags/solid/",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - What are SOLID principle?",
+        "url": "https://www.youtube.com/watch?v=aUCo5cy32kE",
+        "type": "video"
+      }
+    ]
+  },
+  "ltBnVWZ3UMAuUvDkU6o4P": {
+    "title": "DRY",
+    "description": "DRY (Don't Repeat Yourself) is a software development principle that suggests that code should not have duplicate functionality. The idea is to keep the codebase as simple as possible by eliminating redundancy and duplication. The goal is to reduce complexity and improve maintainability by ensuring that each piece of knowledge is expressed in a single, unambiguous way within the system.\n\nThe DRY principle is closely related to the Single Responsibility Principle (SRP) and the Open-Closed Principle (OCP), which are part of the SOLID principles. The DRY principle aims to reduce the amount of duplicate code by creating abstractions that can be reused across the system.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Overview of Don't repeat yourself (DRY)",
+        "url": "https://en.wikipedia.org/wiki/Don%27t_repeat_yourself",
+        "type": "article"
+      },
+      {
+        "title": "What is DRY in programming?",
+        "url": "https://www.youtube.com/watch?v=Rv3RIc_ziOY",
+        "type": "video"
+      }
+    ]
+  },
+  "eEO-WeNIyjErBE53n8JsD": {
+    "title": "YAGNI",
+    "description": "YAGNI (You Ain't Gonna Need It) is a software development principle that suggests that developers should not add functionality to a codebase unless it is immediately necessary. The idea is to avoid creating unnecessary complexity in the codebase by only adding features that are actually needed.\n\nThe YAGNI principle is closely related to the Single Responsibility Principle (SRP) and the Open-Closed Principle (OCP), which are part of the SOLID principles. YAGNI aims to keep the codebase as simple as possible by avoiding the creation of unnecessary abstractions and functionality.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "YAGNI (You Aren't Gonna Need It) Principle Helps in Efficiency",
+        "url": "https://builtin.com/software-engineering-perspectives/yagni",
+        "type": "article"
+      },
+      {
+        "title": "What is YAGNI coding rule, and Why it helps?",
+        "url": "https://www.youtube.com/watch?v=2vys1q1dKc4",
+        "type": "video"
+      }
+    ]
+  },
+  "Jd79KXxZavpnp3mtE1q0n": {
+    "title": "Design Patterns",
+    "description": "Design patterns are general solutions to common problems that arise in software development. They provide a way to describe and communicate proven solutions to common design problems and they provide a common vocabulary for design. They are not specific to any particular programming language or technology, but rather describe the problem and the solution in a way that can be applied to many different contexts.\n\nThere are several different types of design patterns, including:\n\n*   Creational patterns\n*   Structural patterns\n*   Behavioral patterns\n*   Architectural patterns\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview - Software Design Pattern",
+        "url": "https://en.wikipedia.org/wiki/Software_design_pattern",
+        "type": "article"
+      },
+      {
+        "title": "Explaining, imaging and simplifying design patterns",
+        "url": "https://refactoring.guru/design-patterns/what-is-pattern",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Design Patterns",
+        "url": "https://app.daily.dev/tags/design-patterns?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What Are Design Patterns?",
+        "url": "https://www.youtube.com/watch?v=BWprw8UHIzA",
+        "type": "video"
+      }
+    ]
+  },
+  "hlHl00ELlK9YdnzHDGnEW": {
+    "title": "GoF Design Patterns",
+    "description": "The Gang of Four (GoF) design patterns are a set of design patterns for object-oriented software development that were first described in the book \"Design Patterns: Elements of Reusable Object-Oriented Software\" by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides (also known as the Gang of Four).\n\nThe GoF design patterns are divided into three categories: Creational, Structural and Behavioral.\n\n*   Creational Patterns\n*   Structural Patterns\n*   Behavioral Patterns\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Gangs of Four (GoF) Design Patterns",
+        "url": "https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Builder Pattern (Gang of Four Design Patterns Series)",
+        "url": "https://www.youtube.com/watch?v=_sa2WlAFWQos",
+        "type": "video"
+      }
+    ]
+  },
+  "6VoDGFOPHj5p_gvaZ8kTt": {
+    "title": "PoSA Patterns",
+    "description": "POSA (Pattern-Oriented Software Architecture) is a set of design patterns for developing software systems that can scale and adapt to changing requirements. These patterns were first described in the book \"Patterns of Scalable, Reliable Services\" by Kevin Hoffman.\n\nPOSA patterns are divided into four categories:\n\n*   Partitioning Patterns\n*   Placement Patterns\n*   Routing Patterns\n*   Federation Patterns\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Pattern-Oriented Software Architecture",
+        "url": "https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture",
+        "type": "article"
+      },
+      {
+        "title": "POSA Pattern Examples",
+        "url": "https://www.youtube.com/watch?v=iYNa_KcWxCU",
+        "type": "video"
+      }
+    ]
+  },
+  "dBq7ni-of5v1kxpdmh227": {
+    "title": "Architectural Principles",
+    "description": "",
+    "links": []
+  },
+  "8Bm0sRhUg6wZtnvtTmpgY": {
+    "title": "Component Principles",
+    "description": "Component principles in software architecture refer to guidelines for designing and implementing software components that are modular, reusable, and easy to understand, test, and maintain. Some of the key component principles in software architecture include:\n\n*   High cohesion\n*   Low coupling\n*   Separation of concerns\n*   Interface-based design\n*   Reusability\n*   Testability\n*   Modularity\n*   Interoperability\n\nBy following these component principles, software can be developed in a way that is easy to understand, maintain, and extend, and that is less prone to bugs. It also enables better code reuse, and makes it easier to test and change the code, and also enables better code reuse, as components can be reused in different contexts.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Component-Based Architecture",
+        "url": "https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm",
+        "type": "article"
+      }
+    ]
+  },
+  "b_PvjjL2ZpEKETa5_bd0v": {
+    "title": "Policy vs Detail",
+    "description": "In software architecture, the distinction between **policy** and **detail** refers to the separation of high-level decisions and low-level implementation details.\n\nPolicy refers to the high-level decisions that define the overall behavior and structure of the system. These decisions include things like the overall architecture, the system's interface, and the major components and their interactions. Policy decisions are often made by architects and designers, and they set the overall direction for the system.\n\nDetail refers to the low-level implementation details that are required to implement the policy decisions. These include things like the specific algorithms, data structures, and code that make up the system's components. Details are often implemented by developers and are responsible for the actual functioning of the system.",
+    "links": []
+  },
+  "TXus3R5vVQDBeBag6B5qs": {
+    "title": "Coupling and Cohesion",
+    "description": "Coupling and cohesion are two principles in software architecture that are used to measure the degree of interdependence between components in a system.\n\nCoupling refers to the degree to which one component depends on another component. High coupling means that a change in one component will likely affect other components, making the system more difficult to understand, test, and maintain. Low coupling, on the other hand, means that changes to one component have minimal impact on other components, making the system more modular and easier to understand, test, and maintain.\n\nCohesion, on the other hand, refers to the degree to which the responsibilities of a component are related to each other. High cohesion means that a component has a single, well-defined purpose and that all its functionality and data is related to that purpose. Low cohesion, on the other hand, means that a component has multiple, unrelated responsibilities, making it more difficult to understand, test, and maintain.\n\nTo learn more, visit the following links:",
+    "links": [
+      {
+        "title": "Cohesion and Coupling in Software Engineering",
+        "url": "https://www.youtube.com/watch?v=NweTzHYBgYU",
+        "type": "video"
+      }
+    ]
+  },
+  "-Kw8hJhgQH2qInUFj2TUe": {
+    "title": "Boundaries",
+    "description": "In software architecture, boundaries refer to the interfaces or the points of separation between different components or systems. These boundaries can be physical, such as between different microservices in a distributed system, or logical, such as between different layers in an application.\n\nBoundaries are important because they define the points of interaction between different components or systems, and they dictate how those components or systems will communicate with each other. By defining clear boundaries, it makes it easier to understand, test, and maintain the system, as the interactions between components or systems are well-defined and easy to reason about.\n\nTo learn more, visit the following links:",
+    "links": [
+      {
+        "title": "Boundaries in Software Architecture",
+        "url": "https://www.open.edu/openlearn/science-maths-technology/approaches-software-development/content-section-1.1.4",
+        "type": "article"
+      }
+    ]
+  },
+  "37xWxG2D9lVuDsHUgLfzP": {
+    "title": "Architectural Styles",
+    "description": "Architectural styles in software refer to the overall design and organization of a software system, and the principles and patterns that are used to guide the design. These styles provide a general framework for the design of a system, and can be used to ensure that the system is well-structured, maintainable, and scalable.\n\nSome common architectural styles in software include:\n\n*   Microservices: where the system is built as a collection of small, independent, and loosely-coupled services.\n*   Event-Driven: where the system reacts to specific events that occur, rather than being continuously polled for changes.\n*   Layered: where the system is divided into a set of layers, each of which has a specific responsibility and communicates with the other layers through well-defined interfaces.\n*   Service-Oriented: where the system is built as a collection of services that can be accessed over a network.\n*   Data-Centric: where the system is focused on the storage, retrieval and manipulation of data, rather than the processing of data.\n*   Component-Based: where the system is composed of reusable and independent software components.\n*   Domain-Driven: where the system is organized around the core business domain and business entities.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "What is Software Architecture & Styles?",
+        "url": "https://study.com/academy/lesson/software-architecture-styles-patterns-components.html",
+        "type": "article"
+      },
+      {
+        "title": "Types of Architectural Styles in Software Engineering",
+        "url": "https://www.youtube.com/watch?v=2Pp0BcXN9YY",
+        "type": "video"
+      },
+      {
+        "title": "10 Architecture Patterns Used In Enterprise Software Development Today",
+        "url": "https://www.youtube.com/watch?v=brt3ao8bvqy",
+        "type": "video"
+      }
+    ]
+  },
+  "j9j45Auf60kIskyEMUGE3": {
+    "title": "Messaging",
+    "description": "Messaging is a key concept in several architectural styles, including event-driven architecture (EDA), microservices, and message-driven architecture (MDA).\n\n*   Event-driven architecture (EDA)\n*   Microservices\n*   Message-driven architecture (MDA)\n\nIn general, messaging is a powerful concept that allows for the decoupling and scalability of systems and it's used in different architectural styles to improve the flexibility and scalability of the system by allowing for loose coupling between components and making it easier to add new features or modify existing ones.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Architectural Styles in Software Engineering",
+        "url": "https://shapingsoftware.com/2009/02/09/architectural-styles/",
+        "type": "article"
+      },
+      {
+        "title": "Architectural Messaging Patterns",
+        "url": "https://www.redhat.com/architect/architectural-messaging-patterns",
+        "type": "article"
+      }
+    ]
+  },
+  "KtzcJBb6-EcIoXnwYvE7a": {
+    "title": "Event-Driven",
+    "description": "Event-driven architecture (EDA) is a software design pattern in which the system reacts to specific events that occur, rather than being continuously polled for changes. In EDA, events are messages that are sent asynchronously between components, and the components react to the events they are interested in.\n\nThe main advantage of using EDA is that it allows for a clear separation of concerns between the components, and it can improve the scalability and fault-tolerance of the system. Additionally, it allows for loose coupling between components, meaning that the components are not aware of each other's existence, and can be developed, deployed, and scaled independently.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Event-driven programming",
+        "url": "https://en.wikipedia.org/wiki/Event-driven_programming",
+        "type": "article"
+      },
+      {
+        "title": "What is event-driven architecture?",
+        "url": "https://www.redhat.com/en/topics/integration/what-is-event-driven-architecture",
+        "type": "article"
+      }
+    ]
+  },
+  "SX4vOVJY9slOXGwX_q1au": {
+    "title": "Publish-Subscribe",
+    "description": "The publish-subscribe pattern is a messaging pattern in which a publisher sends a message to a topic, and any number of subscribers can subscribe to that topic to receive the message. The publish-subscribe pattern is also known as the \"observer pattern\" and is a way of implementing communication between different parts of an application in a decoupled way.\n\nThe main advantage of using the publish-subscribe pattern is that it allows for a clear separation of concerns between the publisher and the subscribers, and it can improve the flexibility and scalability of the system. Additionally, it allows for loose coupling between components, meaning that the publisher and subscribers are not aware of each other's existence, and can be developed, deployed, and scaled independently.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Tutorial - Publish–subscribe pattern",
+        "url": "https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern",
+        "type": "article"
+      },
+      {
+        "title": "Publish-Subscribe Architecture (Explained by Example)",
+        "url": "https://www.youtube.com/watch?v=O1PgqUqZKTA",
+        "type": "video"
+      }
+    ]
+  },
+  "3V74lLPlcOXFB-QRTUA5j": {
+    "title": "Distributed",
+    "description": "Distributed systems refer to the design and organization of software components that are distributed across multiple devices or locations, connected via a network, and work together to achieve a common goal. The main challenge in designing distributed systems is dealing with the inherent complexity that arises from the distribution of components and the communication between them, and it requires techniques such as load balancing, replication, and partitioning to improve scalability, fault-tolerance, and performance. Additionally, security and coordination are also important aspects of distributed systems.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Distributed Architecture",
+        "url": "https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm",
+        "type": "article"
+      }
+    ]
+  },
+  "ZGIMUaNfBwE5b6O1yexSz": {
+    "title": "Client-Server",
+    "description": "The client-server architecture is a common architecture pattern used in distributed systems, where a client (or multiple clients) send requests to a server, and the server responds to those requests. The client and server are separate entities that communicate over a network, such as the Internet or a local network.\n\nThe client is responsible for presenting the user interface and handling user input, while the server is responsible for processing the requests and returning the appropriate response. The server can also handle tasks such as data storage, security, and business logic.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Intro to Client-server Architecture",
+        "url": "https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/ClientServer.pdf",
+        "type": "article"
+      }
+    ]
+  },
+  "Cf9Z2wxBcbnNg_q9PA6xA": {
+    "title": "Peer-to-Peer",
+    "description": "Peer-to-peer (P2P) architecture is a distributed computing architecture in which each node (peer) in the network acts as both a client and a server. In P2P architecture, there is no central authority or server that manages the network, and each node communicates directly with other nodes to exchange information, share resources, and perform computations.\n\nThe main advantage of using P2P architecture is that it allows for a more decentralized and fault-tolerant system. As there is no central authority, there is no single point of failure, and the network can continue to function even if some nodes fail. Additionally, P2P architecture can also improve scalability as the number of nodes in the network increases.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Peer to Peer Architecture",
+        "url": "https://student.cs.uwaterloo.ca/~cs446/1171/Arch_Design_Activity/Peer2Peer.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Peer-to-Peer",
+        "url": "https://app.daily.dev/tags/peer-to-peer?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "86Jw9kMBD7YP5nTV5jTz-": {
+    "title": "Structural",
+    "description": "Structural architecture in software refers to the organization and design of the components of a software system, and how they interact with each other. It deals with the physical organization of the system, and the relationships between the different components.\n\nThere are several different structural architecture patterns and styles that can be used to design software systems, including:\n\n*   Monolithic: where the system is built as a single, integrated, and self-contained unit.\n*   Layered: where the system is divided into a set of layers, each of which has a specific responsibility and communicates with the other layers through well-defined interfaces.\n*   Microservices: where the system is built as a collection of small, independent, and loosely-coupled services.\n*   Event-driven: where the system reacts to specific events that occur, rather than being continuously polled for changes.\n*   Client-Server: where a client sends requests to a server, and the server responds to those requests\n*   Peer-to-Peer: where each node in the network acts as both a client and a server\n*   Component-based: where the system is composed of reusable and independent software components\n*   Domain-Driven: where the system is organized around the core business domain and business entities.",
+    "links": []
+  },
+  "a0geFJWl-vi3mYytTjYdb": {
+    "title": "Component-Based",
+    "description": "In software architecture, component-based design (CBD) is an approach to designing software systems by composing them from a set of reusable and independent software components. These components encapsulate specific functionality and can be easily integrated into different parts of the system, allowing for a more modular and flexible design.\n\nIn CBD, a software system is divided into a set of components, each of which has a well-defined interface and a specific responsibility. These components can be developed, tested, and deployed independently, making it easier to add new features, modify existing ones, and maintain the system.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Component Based Software architecture",
+        "url": "https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm",
+        "type": "article"
+      }
+    ]
+  },
+  "xYPR_X1KhBwdpqYzNJiuT": {
+    "title": "Monolithic",
+    "description": "In software architecture, monolithic architecture is a design approach in which a software system is built as a single, integrated, and self-contained unit. In a monolithic architecture, all the components of the system are tightly coupled and depend on each other. This means that changes in one part of the system may affect other parts of the system.\n\nA monolithic architecture is often used for small to medium-sized systems, where the complexity of the system is manageable and the need for scalability and flexibility is not as high. In a monolithic architecture, the entire system is typically built, deployed, and executed as a single unit, which can make it easier to understand and manage the system.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Monolithic Architecture",
+        "url": "https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith",
+        "type": "article"
+      },
+      {
+        "title": "What is Monolithic architecture?",
+        "url": "https://www.techtarget.com/whatis/definition/monolithic-architecture",
+        "type": "article"
+      },
+      {
+        "title": "What is Software Architecture? (Monolithic vs. Layered vs. Microservice)s",
+        "url": "https://www.youtube.com/watch?v=_07NtoK-Kns",
+        "type": "video"
+      }
+    ]
+  },
+  "IELEJcKYdZ6VN-UIq-Wln": {
+    "title": "Layered",
+    "description": "In software architecture, layered architecture is a design approach in which a software system is divided into a set of layers, each of which has a specific responsibility and communicates with the other layers through well-defined interfaces. This approach allows for a more modular and flexible design, where each layer can be developed, tested, and deployed independently, making it easier to add new features, modify existing ones, and maintain the system.\n\nA layered architecture is often used for large and complex systems, where the need for scalability and flexibility is high. Each layer in a layered architecture is responsible for a specific functionality and can be thought of as a \"black box\" with a well-defined interface. The layers communicate with each other through these interfaces, allowing for a clear separation of concerns.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Get started with Layered Architecture",
+        "url": "https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/Layered.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Layered Architectures",
+        "url": "https://www.youtube.com/watch?v=0kpTKLTx8f4",
+        "type": "video"
+      }
+    ]
+  },
+  "gJYff_qD6XS3dg3I-jJFK": {
+    "title": "Architectural Patterns",
+    "description": "",
+    "links": []
+  },
+  "CD20zA6k9FxUpMgHnNYRJ": {
+    "title": "Domain-Driven Design",
+    "description": "Domain-Driven Design (DDD) is an architectural pattern that is used to design software systems based on the core business domain and business entities, it's focused on creating a clear and accurate representation of the business domain within the software system, and on aligning the software system with the business goals and objectives. DDD provides several advantages over other architectural patterns, such as alignment with business goals and objectives, improved communication between domain experts and developers, a clear and expressive model of the business domain and improved scalability and maintainability. It's implemented using a set of principles and patterns such as strategic design, subdomains, bounded context, entities, value objects, aggregate, and repository.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Modern Software Architecture (#1): Domain Driven Design",
+        "url": "https://medium.com/modern-software-architecture/modern-software-architecture-1-domain-driven-design-f06fad8695f9",
+        "type": "article"
+      },
+      {
+        "title": "The Concept of Domain-Driven Design Explained",
+        "url": "https://medium.com/microtica/the-concept-of-domain-driven-design-explained-3184c0fd7c3f",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Domain-Driven Design",
+        "url": "https://app.daily.dev/tags/domain-driven-design?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What is DDD (Domain-Driven Design) ?",
+        "url": "https://www.youtube.com/watch?v=Tnecs_7OT74",
+        "type": "video"
+      },
+      {
+        "title": "Domain-Driven Design patterns for a distributed system",
+        "url": "https://www.youtube.com/watch?v=i3d_jzpf0gE",
+        "type": "video"
+      }
+    ]
+  },
+  "-arChRC9zG2DBmuSTHW0J": {
+    "title": "Model-View Controller",
+    "description": "Model-View-Controller (MVC) is an architectural pattern that separates the concerns of a software system into three distinct components: the model, the view, and the controller, where the model represents the data and the business logic of the system, the view represents the user interface of the system and the controller acts as an intermediary between the model and the view. The main goal of MVC is to separate the concerns of the system, making it easier to understand, maintain and evolve, it's widely used in web development.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "MVC Framework - Introduction",
+        "url": "https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - MVC Architectural Pattern",
+        "url": "https://www.youtube.com/watch?v=e9S90R-Y24Q",
+        "type": "video"
+      }
+    ]
+  },
+  "eJsCCURZAURCKnOK-XeQe": {
+    "title": "Microservices",
+    "description": "Microservices is an architectural pattern that is used to design software systems as a collection of small, independent, and loosely-coupled services. Each service is responsible for a specific functionality and can be developed, deployed, and scaled independently. The main advantage of a microservices architecture is that it allows for a more flexible and scalable system, it also improves fault isolation and enables faster deployment. It's often used in combination with other architectural patterns and styles such as event-driven architecture, CQRS, and service-oriented architecture.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Brief of Microservices",
+        "url": "https://microservices.io/patterns/microservices.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Microservices",
+        "url": "https://app.daily.dev/tags/microservices?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Microservices Architectural Pattern",
+        "url": "https://www.youtube.com/watch?v=8BPDv038oMI",
+        "type": "video"
+      },
+      {
+        "title": "Get started with Microservices Design Patterns",
+        "url": "https://www.youtube.com/watch?v=xuH81XGWeGQ",
+        "type": "video"
+      }
+    ]
+  },
+  "Kk7u2B67Fdg2sU8E_PGqr": {
+    "title": "Blackboard Pattern",
+    "description": "The Blackboard architectural pattern is a software design pattern that allows for the creation of a centralized repository of information that can be accessed and modified by multiple independent modules or subsystems. The blackboard serves as a communication and coordination mechanism between these modules, allowing them to share information and collaborate to achieve a common goal. This pattern is often used in artificial intelligence and decision-making systems, where multiple processes or agents need to share and reason over complex data.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Blackboard (design pattern)",
+        "url": "https://en.wikipedia.org/wiki/Blackboard_(design_pattern)",
+        "type": "article"
+      },
+      {
+        "title": "Architectural Patterns: Blackboard",
+        "url": "http://www.openloop.com/softwareEngineering/patterns/architecturePattern/arch_Blackboard.htm",
+        "type": "article"
+      }
+    ]
+  },
+  "r-Yeca-gpdFM8iq7f0lYQ": {
+    "title": "Microkernel",
+    "description": "A microkernel is an architectural pattern in operating system design that aims to minimize the amount of code running in kernel mode (i.e., privileged mode with direct access to hardware resources) and instead move as much functionality as possible into user mode. This is done by providing a small, minimalistic core kernel that only handles basic tasks such as memory management, process scheduling, and inter-process communication (IPC), and leaving all other functionality to be implemented in user-mode processes.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Microkernel Architecture",
+        "url": "https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch03.html",
+        "type": "article"
+      },
+      {
+        "title": "Microkernel Architectural Pattern | Software Architecture",
+        "url": "https://www.youtube.com/watch?v=h3icQDMRLd8",
+        "type": "video"
+      }
+    ]
+  },
+  "5WSvAA3h3lmelL53UJSMy": {
+    "title": "Serverless Architecture",
+    "description": "Serverless architecture is a design pattern that allows developers to build and run applications and services without having to provision and manage servers. Instead, these applications and services are executed in a fully managed environment, such as AWS Lambda, Azure Functions, or Google Cloud Functions, where the infrastructure and scaling are handled automatically by the cloud provider.\n\nThis architecture pattern mainly focuses on the business logic and event-driven execution, rather than on server management. It allows developers to write and deploy code in small, single-purpose functions that are triggered by specific events, such as changes in a database or the arrival of new data in a stream.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Serverless Architecture Patterns in AWS",
+        "url": "https://waswani.medium.com/serverless-architecture-patterns-in-aws-edeab0e46a32",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "GAs6NHBkUgxan3hyPvVs7": {
+    "title": "Message Queues / Streams",
+    "description": "Message queues and streams are architectural patterns that are used to decouple different components of a system and enable asynchronous communication between them.\n\nMessage Queues: A message queue is a software component that allows multiple systems or applications to communicate with each other by passing messages between them. Messages are stored in a queue, and each message is processed by a single consumer. This pattern is useful for systems where there is a high degree of variability in the rate of message production and consumption, and where the sender and receiver do not need to be active at the same time. Examples of message queue systems are Apache Kafka, RabbitMQ, and Amazon SQS.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "System Design — Message Queues",
+        "url": "https://medium.com/must-know-computer-science/system-design-message-queues-245612428a22",
+        "type": "article"
+      },
+      {
+        "title": "Overview of Message Queue pattern",
+        "url": "https://badia-kharroubi.gitbooks.io/microservices-architecture/content/patterns/communication-patterns/message-queue-pattern.html",
+        "type": "article"
+      }
+    ]
+  },
+  "K8X_-bsiy7gboInPzbiEb": {
+    "title": "Event Sourcing",
+    "description": "Event sourcing is an architectural pattern that is used to build systems that need to maintain a history of all the changes that have occurred over time. This pattern stores all changes to the system's state as a sequence of events, rather than just the current state.\n\nIn Event sourcing, all changes to the state of the system are treated as events, and these events are stored in an append-only log, also known as an event store. The current state of the system can be reconstructed from the event log at any given point in time by replaying the events from the log.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Event Sourcing Pattern",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Event Sourcing Example & Explained",
+        "url": "https://www.youtube.com/watch?v=AUj4M-st3ic&list=PLThyvG1mlMzkRKJnhzvxtSAbY8oxENLUQ&ab_channel=CodeOpinion",
+        "type": "video"
+      }
+    ]
+  },
+  "FysFru2FJN4d4gj11gv--": {
+    "title": "SOA",
+    "description": "SOA (Service-Oriented Architecture) is an architectural pattern that is used to design and organize software systems as a collection of services that can be accessed over a network, these services are autonomous, self-contained units of functionality that can be reused and combined to create new functionality. SOA services are designed to be loosely coupled, meaning that they do not depend on the implementation details of other services, they communicate with each other through well-defined interfaces, usually using a protocol such as HTTP or SOAP. SOA provides several advantages over other architectural patterns, such as reusability, modularity, interoperability, and scalability. It can be implemented using a variety of technologies, such as Web Services, REST, and microservices.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Service-Oriented Architecture",
+        "url": "https://medium.com/design-microservices-architecture-with-patterns/service-oriented-architecture-1e4716fbca17",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Service-Oriented Architecture -SOA",
+        "url": "https://www.youtube.com/watch?v=jNiEMmoTDoE",
+        "type": "video"
+      },
+      {
+        "title": "What is Service-Oriented Architecture",
+        "url": "https://www.youtube.com/watch?v=_dFJOSR-aFs",
+        "type": "video"
+      }
+    ]
+  },
+  "IU86cGkLPMXUJKvTBywPu": {
+    "title": "CQRS",
+    "description": "CQRS (Command Query Responsibility Segregation) is an architectural pattern that is used to separate the responsibilities of reading and writing data in a software system. In a CQRS architecture, the system is divided into two separate parts: the command side and the query side.\n\nThe command side is responsible for processing commands and updating the system's state, while the query side is responsible for reading the current state of the system and returning the results to the client. The command and query sides can use different data models, storage mechanisms, and even different technologies.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Get Started with CQRS Pattern",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+        "type": "article"
+      },
+      {
+        "title": "CQRS Software Architecture Pattern: The Good, Bad, and the Ugly",
+        "url": "https://betterprogramming.pub/cqrs-software-architecture-pattern-the-good-the-bad-and-the-ugly-e9d6e7a34daf",
+        "type": "article"
+      }
+    ]
+  },
+  "h0aeBhQRkDxNeFwDxT4Tf": {
+    "title": "Enterprise Patterns",
+    "description": "Enterprise patterns are a set of design patterns that are commonly used in the development of enterprise software applications. These patterns provide a common vocabulary and a set of best practices for solving common problems that arise in the development of large, complex software systems. Some examples of enterprise patterns include:\n\n*   Domain-Driven Design (DDD)\n*   Model-View-Controller (MVC)\n*   Service Oriented Architecture (SOA)\n*   Command and Query Responsibility Segregation (CQRS)\n*   Event Sourcing\n*   Microservices\n*   Event-Driven Architecture (EDA)\n\nThese patterns can help to improve the maintainability and scalability of the software, by providing a clear separation of concerns and allowing for a more modular and flexible architecture.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Software Architecture Patterns in Enterprise Software",
+        "url": "https://blog.devgenius.io/10-software-architecture-patterns-in-enterprise-software-development-fabacb5ed0c8",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Enterprise",
+        "url": "https://app.daily.dev/tags/enterprise?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "What are Enterprise Integration Patterns?",
+        "url": "https://www.youtube.com/watch?v=WNm3QmJadNs",
+        "type": "video"
+      }
+    ]
+  },
+  "y_Qj7KITSB8aUWHwiZ2It": {
+    "title": "DTOs",
+    "description": "The Data Transfer Object Design Pattern is one of the enterprise application architecture patterns that calls for the use of objects that aggregate and encapsulate data for transfer. A Data Transfer Object is, essentially, like a data structure. It should not contain any business logic but should contain serialization and deserialization mechanisms.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Data Transfer Object pattern and Mappers",
+        "url": "https://medium.com/@abdalrhmanalkraien/data-transfer-object-pattern-and-mapper-116508bc9df0",
+        "type": "article"
+      }
+    ]
+  },
+  "tb0X1HtuiGwz7YhQ5xPsV": {
+    "title": "Identity Maps",
+    "description": "Identity Maps is a pattern used in enterprise application development to maintain a map of objects that have been loaded from the database, keyed by their unique identifier. It is used to ensure that multiple copies of the same object are not created in memory when the same data is accessed multiple times.\n\nThe identity map pattern is typically used in conjunction with an ORM (Object-Relational Mapping) tool. When an object is loaded from the database, it is first checked against the identity map to see if it has already been loaded. If it has, the existing object is returned, instead of creating a new copy.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Identity map pattern",
+        "url": "https://en.wikipedia.org/wiki/Identity_map_pattern",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Identity Map Design Pattern",
+        "url": "https://youtube.com/watch?v=erDxkIyNudY",
+        "type": "video"
+      }
+    ]
+  },
+  "gQ7Xj8tsl6IlCcyJgSz46": {
+    "title": "Usecases",
+    "description": "Use Cases are a pattern used in enterprise application development to represent the functional requirements of a system. They describe the interactions between the system and its users, and the steps that are required to accomplish a specific goal. Use cases are a way to capture the requirements of the system in a way that is easily understood by both the development team and the stakeholders.\n\nA use case is a description of a sequence of actions that a system performs in response to a request from a user, in order to achieve a specific goal. A use case typically includes:\n\n*   The actor (user) who initiates the action\n*   The goal that the actor wants to achieve\n*   The steps required to achieve the goal, including any alternative paths or error conditions\n*   The expected outcome of the interaction\n\nUse cases are often used to drive the design and development of the system, as they provide a clear and detailed understanding of the requirements.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Use Case Patterns",
+        "url": "https://caminao.blog/how-to-implement-symbolic-representations/patterns/functional-patterns/use-case-patterns/",
+        "type": "article"
+      }
+    ]
+  },
+  "8y0ot5sbplUIUyXe9gvc8": {
+    "title": "Repositories",
+    "description": "Repositories are a pattern used in enterprise application development to provide a consistent and abstracted way to access data storage. Repositories act as an abstraction layer between the application and the data storage, providing a consistent and simple API for data access and manipulation.\n\nA repository is a pattern that can be used to organize the data access code and encapsulate the logic of retrieving and storing objects. Repositories provide a way to separate the concerns of the data access from the rest of the application, allowing the application code to be written against an interface and not a specific data storage technology.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Introduction to Repository Design Patterns",
+        "url": "https://cubettech.com/resources/blog/introduction-to-repository-design-pattern/",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Repository Design Pattern",
+        "url": "https://www.youtube.com/watch?v=mb6bwnEaZ3U",
+        "type": "video"
+      }
+    ]
+  },
+  "ndUTgl2YBzOdu1MQKJocu": {
+    "title": "Mappers",
+    "description": "Mappers are a pattern used in enterprise application development to provide a consistent and abstracted way to map between different data models. They act as an abstraction layer between the application and the data storage, providing a consistent and simple API for data transformation.\n\nA mapper is a component that can be used to convert data from one format or model to another. For example, a mapper can be used to convert data from a database model to a domain model, or from a domain model to a data transfer object (DTO).\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview of Data Mapper Pattern",
+        "url": "https://en.wikipedia.org/wiki/Data_mapper_pattern",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Mappers",
+        "url": "https://www.youtube.com/watch?v=7noMLStHcTE",
+        "type": "video"
+      }
+    ]
+  },
+  "tyReIY4iO8kmyc_LPafp1": {
+    "title": "Transaction Script",
+    "description": "Transaction Script is a pattern used in enterprise application development that organizes business logic into a single procedural script. It is often used for simple CRUD (create, read, update, delete) operations, where all of the logic for a specific transaction is contained in a single script or function. This pattern is simple to implement and easy to understand, but can become unwieldy as the complexity of the application increases. Alternative patterns such as Domain-Driven Design (DDD) and the Active Record pattern may be more appropriate for more complex applications.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Transaction Script Pattern",
+        "url": "https://gunnarpeipman.com/transaction-script-pattern/",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Transaction Script Design Pattern",
+        "url": "https://www.youtube.com/watch?v=fnsU9cqcY3I",
+        "type": "video"
+      }
+    ]
+  },
+  "j_SUD3SxpKYZstN9LSP82": {
+    "title": "Commands / Queries",
+    "description": "The Command and Query Responsibility Segregation (CQRS) pattern is a technique used in enterprise application development to separate the responsibilities of handling command (write) operations and query (read) operations for performing actions that change the state of the system, such as creating, updating, or deleting data. These operations are handled by Command Handlers, which are responsible for validating the data and executing the appropriate business logic.\n\nQueries are used for retrieving data from the system, such as reading data from a database or a cache. These operations are handled by Query Handlers, which are responsible for executing the appropriate query and returning the data to the caller.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Get Started with CQRS Pattern",
+        "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+        "type": "article"
+      }
+    ]
+  },
+  "Ks6njbfxOHiZ_TrJDnVtk": {
+    "title": "Value Objects",
+    "description": "Value Objects are a pattern used in enterprise application development to represent simple, immutable values that are used to model domain concepts. They are typically used to encapsulate data that is not an entity, but is important to the domain.\n\nA Value Object is defined by its value rather than its identity, meaning that two Value Objects with the same value are considered to be equal, regardless of their identity.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview - Implement Value Objects",
+        "url": "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Value object",
+        "url": "https://en.wikipedia.org/wiki/Value_object",
+        "type": "article"
+      }
+    ]
+  },
+  "NpSfbzYtGebmfrifkKsUf": {
+    "title": "Domain Models",
+    "description": "Domain Models are a pattern used in enterprise application development to represent the business concepts and rules of a specific domain. They are typically used to model the problem domain, or the area of expertise of a specific business.\n\nA Domain Model is a collection of objects that represent the real-world concepts and entities of the domain. These objects are typically modeled as classes or types, and they encapsulate the data and behavior that is specific to the domain. They are responsible for representing the state and behavior of the business concepts they model, and for enforcing the rules and constraints of the domain.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Overview - Domain Models",
+        "url": "https://sparxsystems.com/enterprise_architect_user_guide/14.0/model_domains/specialized_models.html",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial - Domain Model Pattern",
+        "url": "https://www.youtube.com/watch?v=75EGANiqADw",
+        "type": "video"
+      }
+    ]
+  },
+  "VnW_7dl5G0IFL9W3YF_W3": {
+    "title": "Entities",
+    "description": "Entities are a pattern used in enterprise application development to represent the business concepts that have a unique identity and a lifetime. They are typically used to model real-world objects or concepts that have a distinct identity and a lifecycle, such as a customer, an order, or an account.\n\nAn Entity is defined by its identity, meaning that two entities with the same identity are considered to be the same, regardless of their state. Entities usually have a unique identifier, such as a primary key, that is used to identify them. They also have an associated set of properties or attributes that describe their state.",
+    "links": []
+  },
+  "SYYulHfDceIyDkDT5fcqj": {
+    "title": "ORMs",
+    "description": "ORM stands for Object-Relational Mapping, it is a technique used in enterprise application development to map between the object-oriented programming model and the relational database model. It allows developers to work with objects in their code, while the ORM tool takes care of translating those objects into the appropriate database operations.\n\nORMs are designed to abstract away the complexity of working with a relational database and allow developers to interact with the database using a higher-level, object-oriented API. They provide a set of libraries and tools that map the objects in the code to the tables and rows in the database, and vice versa. This allows developers to work with the data using a familiar object-oriented paradigm, rather than having to write complex SQL queries.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Why do you need an ORM?",
+        "url": "https://enterprisecraftsmanship.com/posts/do-you-need-an-orm/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Backend Development",
+        "url": "https://app.daily.dev/tags/backend?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  }
+}

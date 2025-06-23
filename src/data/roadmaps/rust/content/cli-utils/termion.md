@@ -1,3 +1,0 @@
-# termion
-
-`Termion` is a pure Rust, bindless library for low-level handling, manipulating and reading information about terminals. This provides a full-featured solution for cross-terminal compatibility, allowing for features such as color support, input handling, and other terminal specific features. It's completely independent and does not require any third-party libraries or bindings in C, C++ or any other language. As such, `Termion` simplifies the process of writing cross-platform CLI applications or utilities in Rust, while maintaining a lean, zero-dependency codebase.

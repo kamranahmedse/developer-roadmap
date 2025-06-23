@@ -1,3 +1,0 @@
-# Lifetime Elision Rules
-
-"Lifetime Elision" in Rust is an implicit annotation of lifetimes where the compiler tries to make an educated guess about the appropriate lifetimes. Rust compiler has a few rules that it applies in case of lifetime elision. Basic rules include that each parameter passed by reference gets its own lifetime and if there's exactly one input lifetime, that lifetime is assigned to all output lifetime parameters. The rules become more complex when dealing with methods. In these cases, there's a distinction between "self" and other parameters. With lifetime elision, the Rust compiler eliminates the necessity to specify lifetimes in every situation, producing cleaner and less cluttered code.

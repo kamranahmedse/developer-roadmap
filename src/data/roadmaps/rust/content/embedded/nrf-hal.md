@@ -1,3 +1,0 @@
-# nrf-hal
-
-`nrf-hal` is a Rust Language Peripheral Access Crate for the Nordic Semiconductor nRF52 series and nRF91 series. It provides a high-level interface to the features and functionality available on these chips. It abstracts away the specifics of direct register access and allows for more robust and semantic interaction. It includes supports for GPIO, timers, RNG, RTC, TWIM+TWIS (I2C), SPIM+SPIS(SPI), temperature sensor and delay routines. It's an open-source project under the Apache license which means it's completely free to use and modify.

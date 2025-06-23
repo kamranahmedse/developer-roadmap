@@ -17,3 +17,4 @@ Learn more from the following resources:
 - [@article@What is Ethernet?](https://www.techtarget.com/searchnetworking/definition/Ethernet)
 - [@article@What is WiFi and how does it work?](https://computer.howstuffworks.com/wireless-network.htm)
 - [@article@How bluetooth works](https://electronics.howstuffworks.com/bluetooth.htm)
+-.[video@How bluetooth works](https://www.youtube.com/watch?v=1I1vxu5qIUM)
