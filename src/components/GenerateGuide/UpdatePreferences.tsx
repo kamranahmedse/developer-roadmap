@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import type { AIQuestionSuggestionsResponse } from '../../queries/user-ai-session';
 import type { AllowedFormat } from '../ContentGenerator/ContentGenerator';
 import {
@@ -21,7 +21,7 @@ type UpdatePreferencesProps = {
 export function UpdatePreferences(props: UpdatePreferencesProps) {
   const {
     onClose,
-    questionAndAnswers,
+    questionAndAnswers: defaultQuestionAndAnswers,
     term,
     format,
     onUpdatePreferences,
@@ -30,14 +30,21 @@ export function UpdatePreferences(props: UpdatePreferencesProps) {
 
   const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
     QuestionAnswerChatMessage[]
-  >(questionAndAnswers || []);
+  >(defaultQuestionAndAnswers || []);
 
-  const defaultQuestions = questionAndAnswers
+  const defaultQuestions = defaultQuestionAndAnswers
     ?.filter((message) => message.role === 'assistant')
     .map((message) => ({
       question: message.question,
       possibleAnswers: message.possibleAnswers,
     }));
+
+  const hasChangedQuestionAndAnswers = useMemo(() => {
+    return (
+      JSON.stringify(questionAnswerChatMessages) !==
+      JSON.stringify(defaultQuestionAndAnswers)
+    );
+  }, [questionAnswerChatMessages, defaultQuestionAndAnswers]);
 
   return (
     <Modal
@@ -61,17 +68,20 @@ export function UpdatePreferences(props: UpdatePreferencesProps) {
         onGenerateNow={() => {
           onUpdatePreferences(questionAnswerChatMessages);
         }}
+        type="update"
       />
 
-      <button
-        className="rounded-lg bg-black px-4 py-2 text-white disabled:opacity-50"
-        disabled={isUpdating}
-        onClick={() => {
-          onUpdatePreferences(questionAnswerChatMessages);
-        }}
-      >
-        {isUpdating ? 'Updating...' : 'Update Preferences'}
-      </button>
+      {hasChangedQuestionAndAnswers && (
+        <button
+          className="rounded-lg bg-black px-4 py-2 text-white disabled:opacity-50"
+          disabled={isUpdating || !hasChangedQuestionAndAnswers}
+          onClick={() => {
+            onUpdatePreferences(questionAnswerChatMessages);
+          }}
+        >
+          {isUpdating ? 'Updating...' : 'Update Preferences'}
+        </button>
+      )}
     </Modal>
   );
 }

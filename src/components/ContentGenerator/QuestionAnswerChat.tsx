@@ -5,7 +5,12 @@ import {
   type AIQuestionSuggestionsResponse,
 } from '../../queries/user-ai-session';
 import type { AllowedFormat } from './ContentGenerator';
-import { Loader2Icon, RotateCwIcon, SendIcon } from 'lucide-react';
+import {
+  Loader2Icon,
+  RefreshCcwIcon,
+  RotateCwIcon,
+  SendIcon,
+} from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../lib/classname';
 import { flushSync } from 'react-dom';
@@ -28,6 +33,7 @@ type QuestionAnswerChatProps = {
   ) => void;
   onGenerateNow: () => void;
   defaultQuestions?: AIQuestionSuggestionsResponse['questions'];
+  type?: 'create' | 'update';
 };
 
 export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
@@ -38,6 +44,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     questionAnswerChatMessages,
     setQuestionAnswerChatMessages,
     onGenerateNow,
+    type = 'create',
   } = props;
 
   const [activeMessageIndex, setActiveMessageIndex] = useState(
@@ -117,7 +124,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
 
   useEffect(() => {
     scrollToBottom();
-  }, [defaultQuestions]);
+  }, [defaultQuestions, type]);
 
   return (
     <>
@@ -145,7 +152,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
 
         {!isLoadingAiQuestionSuggestions && status === 'answering' && (
           <>
-            {canReset && (
+            {canReset && type === 'create' && (
               <div className="absolute top-2 left-2 z-10">
                 <button
                   className="flex cursor-pointer items-center gap-1.5 rounded-lg bg-gray-50 px-2 py-1 text-xs text-gray-500 hover:bg-gray-200 focus:outline-none"
@@ -189,6 +196,22 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                 </div>
               </div>
 
+              {!activeMessage && type === 'update' && (
+                <div className="p-2">
+                  <button
+                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2"
+                    onClick={() => {
+                      setQuestionAnswerChatMessages([]);
+                      setActiveMessageIndex(0);
+                      setStatus('answering');
+                    }}
+                  >
+                    <RefreshCcwIcon className="size-4" />
+                    Reanswer the questions
+                  </button>
+                </div>
+              )}
+
               {activeMessage && (
                 <div className="p-2">
                   <div className="rounded-lg border border-gray-200 bg-white">
@@ -212,13 +235,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                       </div>
                     </div>
 
-                    <div
-                      className="flex w-full items-center justify-between gap-2 p-2"
-                      onSubmit={(e) => {
-                        e.preventDefault();
-                        handleAnswerSelect(message);
-                      }}
-                    >
+                    <div className="flex w-full items-center justify-between gap-2 p-2">
                       <input
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
