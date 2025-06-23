@@ -6,7 +6,7 @@ import {
 } from '../../queries/user-ai-session';
 import type { AllowedFormat } from './ContentGenerator';
 import { Loader2Icon, RotateCwIcon, SendIcon } from 'lucide-react';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../lib/classname';
 import { flushSync } from 'react-dom';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
@@ -114,6 +114,10 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     setActiveMessageIndex(0);
     setStatus('answering');
   };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [defaultQuestions]);
 
   return (
     <>

@@ -19,6 +19,7 @@ type AICourseOutlineViewProps = {
   viewMode: AICourseViewMode;
   isForkable: boolean;
   onForkCourse: () => void;
+  courseSlug: string;
 };
 
 export function AICourseOutlineView(props: AICourseOutlineViewProps) {
@@ -34,6 +35,7 @@ export function AICourseOutlineView(props: AICourseOutlineViewProps) {
     viewMode,
     isForkable,
     onForkCourse,
+    courseSlug,
   } = props;
 
   const aiCourseProgress = course.done || [];
@@ -48,6 +50,7 @@ export function AICourseOutlineView(props: AICourseOutlineViewProps) {
         setViewMode={setViewMode}
         isForkable={isForkable}
         onForkCourse={onForkCourse}
+        courseSlug={courseSlug}
       />
       {course.title ? (
         <div className="flex flex-col p-6 max-lg:mt-0.5 max-lg:p-4">

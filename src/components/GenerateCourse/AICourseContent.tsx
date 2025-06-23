@@ -499,6 +499,7 @@ export function AICourseContent(props: AICourseContentProps) {
               onForkCourse={() => {
                 setIsForkingCourse(true);
               }}
+              courseSlug={courseSlug!}
             />
           )}
 

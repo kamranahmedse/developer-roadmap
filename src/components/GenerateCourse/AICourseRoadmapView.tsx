@@ -229,6 +229,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
         setViewMode={setViewMode}
         isForkable={isForkable}
         onForkCourse={onForkCourse}
+        courseSlug={courseSlug}
       />
       {isLoading && (
         <div className="absolute inset-0 flex h-full w-full items-center justify-center">

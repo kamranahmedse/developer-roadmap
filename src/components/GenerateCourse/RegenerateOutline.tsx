@@ -1,26 +1,70 @@
-import { PenSquare, RefreshCcw } from 'lucide-react';
+import { PenSquare, RefreshCcw, SettingsIcon } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { ModifyCoursePrompt } from './ModifyCoursePrompt';
+import { queryClient } from '../../stores/query-client';
+import { getAiCourseOptions } from '../../queries/ai-course';
+import { useMutation, useQuery } from '@tanstack/react-query';
+import { httpPost } from '../../lib/query-http';
+import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnswerChat';
+import { getAiGuideOptions } from '../../queries/ai-guide';
+import { UpdatePreferences } from '../GenerateGuide/UpdatePreferences';
 
 type RegenerateOutlineProps = {
   onRegenerateOutline: (prompt?: string) => void;
   isForkable: boolean;
   onForkCourse: () => void;
+  courseSlug: string;
 };
 
 export function RegenerateOutline(props: RegenerateOutlineProps) {
-  const { onRegenerateOutline, isForkable, onForkCourse } = props;
+  const { onRegenerateOutline, isForkable, onForkCourse, courseSlug } = props;
 
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showPromptModal, setShowPromptModal] = useState(false);
+  const [showUpdatePreferencesModal, setShowUpdatePreferencesModal] =
+    useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
 
   useOutsideClick(ref, () => setIsDropdownVisible(false));
+
+  const { data: aiCourse } = useQuery(
+    getAiCourseOptions({ aiCourseSlug: courseSlug }),
+    queryClient,
+  );
+  const { mutate: updatePreferences, isPending: isUpdating } = useMutation(
+    {
+      mutationFn: (questionAndAnswers: QuestionAnswerChatMessage[]) => {
+        return httpPost(`/v1-update-ai-course-preferences/${courseSlug}`, {
+          questionAndAnswers,
+        });
+      },
+      onSuccess: (_, vars) => {
+        queryClient.setQueryData(
+          getAiCourseOptions({ aiCourseSlug: courseSlug }).queryKey,
+          (old) => {
+            if (!old) {
+              return old;
+            }
+
+            return {
+              ...old,
+              questionAndAnswers: vars,
+            };
+          },
+        );
+
+        setShowUpdatePreferencesModal(false);
+        setIsDropdownVisible(false);
+        onRegenerateOutline();
+      },
+    },
+    queryClient,
+  );
 
   return (
     <>
@@ -46,6 +90,19 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
         />
       )}
 
+      {showUpdatePreferencesModal && (
+        <UpdatePreferences
+          onClose={() => setShowUpdatePreferencesModal(false)}
+          questionAndAnswers={aiCourse?.questionAndAnswers}
+          term={aiCourse?.keyword || ''}
+          format="course"
+          onUpdatePreferences={(questionAndAnswers) => {
+            updatePreferences(questionAndAnswers);
+          }}
+          isUpdating={isUpdating}
+        />
+      )}
+
       <div ref={ref} className="relative flex items-stretch">
         <button
           className={cn('rounded-md px-2.5 text-gray-400 hover:text-black', {
@@ -56,7 +113,22 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
           <PenSquare className="text-current" size={16} strokeWidth={2.5} />
         </button>
         {isDropdownVisible && (
-          <div className="absolute top-full right-0 min-w-[170px] translate-y-1 overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
+          <div className="absolute top-full right-0 min-w-[190px] translate-y-1 overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
+            <button
+              onClick={() => {
+                setIsDropdownVisible(false);
+                setShowUpdatePreferencesModal(true);
+              }}
+              className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
+            >
+              <SettingsIcon
+                size={16}
+                className="text-gray-400"
+                strokeWidth={2.5}
+              />
+              Update Preferences
+            </button>
+
             <button
               onClick={() => {
                 setIsDropdownVisible(false);

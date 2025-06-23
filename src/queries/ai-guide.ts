@@ -48,6 +48,7 @@ export function getAiGuideOptions(guideSlug?: string) {
       };
     },
     enabled: !!guideSlug,
+    refetchOnMount: false,
   });
 }
 
@@ -66,6 +67,7 @@ export function aiGuideSuggestionsOptions(guideSlug?: string) {
       );
     },
     enabled: !!guideSlug && !!isLoggedIn(),
+    refetchOnMount: false,
   });
 }
 
