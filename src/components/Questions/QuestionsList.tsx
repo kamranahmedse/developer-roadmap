@@ -1,12 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { QuestionsProgress } from './QuestionsProgress';
 import { CheckCircle, SkipForward, Sparkles } from 'lucide-react';
 import { QuestionCard } from './QuestionCard';
-import { QuestionLoader } from './QuestionLoader';
 import { isLoggedIn } from '../../lib/jwt';
 import type { QuestionType } from '../../lib/question-group';
-import { httpGet, httpPut } from '../../lib/http';
-import { useToast } from '../../hooks/use-toast';
 import { QuestionFinished } from './QuestionFinished';
 import { Confetti } from '../Confetti';
 
@@ -24,142 +21,42 @@ type QuestionsListProps = {
 };
 
 export function QuestionsList(props: QuestionsListProps) {
-  const { questions: defaultQuestions, groupId } = props;
+  const { questions } = props;
 
-  const toast = useToast();
-
-  const [questions, setQuestions] = useState(defaultQuestions);
-  const [isLoading, setIsLoading] = useState(true);
   const [showConfetti, setShowConfetti] = useState(false);
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
 
-  const [userProgress, setUserProgress] = useState<UserQuestionProgress>();
+  const [userProgress, setUserProgress] = useState<UserQuestionProgress>({
+    know: [],
+    dontKnow: [],
+    skip: [],
+  });
   const containerRef = useRef<HTMLDivElement>(null);
 
-  async function fetchUserProgress(): Promise<
-    UserQuestionProgress | undefined
-  > {
-    if (!isLoggedIn()) {
-      return;
-    }
-
-    const { response, error } = await httpGet<UserQuestionProgress>(
-      `${
-        import.meta.env.PUBLIC_API_URL
-      }/v1-get-user-question-progress/${groupId}`,
-    );
-
-    if (error) {
-      toast.error(error.message || 'Error fetching user progress');
-      return;
-    }
-
-    return response;
-  }
-
-  async function prepareProgress() {
-    const userProgress = await fetchUserProgress();
-    setUserProgress(userProgress);
-
-    const knownQuestions = userProgress?.know || [];
-    const didNotKnowQuestions = userProgress?.dontKnow || [];
-    const skipQuestions = userProgress?.skip || [];
-
-    const pendingQuestionIndex = questions.findIndex((question) => {
-      return (
-        !knownQuestions.includes(question.id) &&
-        !didNotKnowQuestions.includes(question.id) &&
-        !skipQuestions.includes(question.id)
-      );
-    });
-
-    setCurrQuestionIndex(pendingQuestionIndex);
-    setIsLoading(false);
-  }
-
   async function resetProgress() {
-    let knownQuestions = userProgress?.know || [];
-    let didNotKnowQuestions = userProgress?.dontKnow || [];
-    let skipQuestions = userProgress?.skip || [];
-
-    if (!isLoggedIn()) {
-      setQuestions(defaultQuestions);
-
-      knownQuestions = [];
-      didNotKnowQuestions = [];
-      skipQuestions = [];
-    } else {
-      setIsLoading(true);
-
-      const { response, error } = await httpPut<UserQuestionProgress>(
-        `${
-          import.meta.env.PUBLIC_API_URL
-        }/v1-reset-question-progress/${groupId}`,
-        {
-          status: 'reset',
-        },
-      );
-
-      if (error) {
-        toast.error(error.message || 'Error resetting progress');
-        return;
-      }
-
-      knownQuestions = response?.know || [];
-      didNotKnowQuestions = response?.dontKnow || [];
-      skipQuestions = response?.skip || [];
-    }
-
     setCurrQuestionIndex(0);
     setUserProgress({
-      know: knownQuestions,
-      dontKnow: didNotKnowQuestions,
-      skip: skipQuestions,
+      know: [],
+      dontKnow: [],
+      skip: [],
     });
-
-    setIsLoading(false);
   }
 
-  async function updateQuestionStatus(
+  function updateQuestionStatus(
     status: QuestionProgressType,
     questionId: string,
   ) {
-    setIsLoading(true);
     let newProgress = userProgress || { know: [], dontKnow: [], skip: [] };
-
-    if (!isLoggedIn()) {
-      if (status === 'know') {
-        newProgress.know.push(questionId);
-      } else if (status == 'dontKnow') {
-        newProgress.dontKnow.push(questionId);
-      } else if (status == 'skip') {
-        newProgress.skip.push(questionId);
-      }
-    } else {
-      const { response, error } = await httpPut<UserQuestionProgress>(
-        `${
-          import.meta.env.PUBLIC_API_URL
-        }/v1-update-question-status/${groupId}`,
-        {
-          status,
-          questionId,
-          questionGroupId: groupId,
-        },
-      );
-
-      if (error || !response) {
-        toast.error(error?.message || 'Error marking question status');
-        return;
-      }
-
-      newProgress = response;
+    if (status === 'know') {
+      newProgress.know.push(questionId);
+    } else if (status == 'dontKnow') {
+      newProgress.dontKnow.push(questionId);
+    } else if (status == 'skip') {
+      newProgress.skip.push(questionId);
     }
 
     const nextQuestionIndex = currQuestionIndex + 1;
-
     setUserProgress(newProgress);
-    setIsLoading(false);
-
     if (!nextQuestionIndex || !questions[nextQuestionIndex]) {
       setShowConfetti(true);
     }
@@ -167,17 +64,13 @@ export function QuestionsList(props: QuestionsListProps) {
     setCurrQuestionIndex(nextQuestionIndex);
   }
 
-  useEffect(() => {
-    prepareProgress().then(() => null);
-  }, [questions]);
-
   const knowCount = userProgress?.know.length || 0;
   const dontKnowCount = userProgress?.dontKnow.length || 0;
   const skipCount = userProgress?.skip.length || 0;
   const hasProgress = knowCount > 0 || dontKnowCount > 0 || skipCount > 0;
 
   const currQuestion = questions[currQuestionIndex];
-  const hasFinished = !isLoading && hasProgress && currQuestionIndex === -1;
+  const hasFinished = hasProgress && currQuestionIndex === -1;
 
   return (
     <div className="mb-0 gap-3 text-center sm:mb-40">
@@ -186,7 +79,6 @@ export function QuestionsList(props: QuestionsListProps) {
         didNotKnowCount={dontKnowCount}
         skippedCount={skipCount}
         totalCount={questions?.length}
-        isLoading={isLoading}
         showLoginAlert={!isLoggedIn() && hasProgress}
         onResetClick={() => {
           resetProgress().finally(() => null);
@@ -196,7 +88,7 @@ export function QuestionsList(props: QuestionsListProps) {
             currQuestionIndex !== -1 &&
             currQuestionIndex < questions.length - 1
           ) {
-            updateQuestionStatus('skip', currQuestion.id).finally(() => null);
+            updateQuestionStatus('skip', currQuestion.id);
           }
         }}
         onPrevClick={() => {
@@ -244,8 +136,7 @@ export function QuestionsList(props: QuestionsListProps) {
             }}
           />
         )}
-        {!isLoading && currQuestion && <QuestionCard question={currQuestion} />}
-        {isLoading && <QuestionLoader />}
+        {currQuestion && <QuestionCard question={currQuestion} />}
       </div>
 
       <div
@@ -254,11 +145,11 @@ export function QuestionsList(props: QuestionsListProps) {
         }`}
       >
         <button
-          disabled={isLoading || !currQuestion}
+          disabled={!currQuestion}
           onClick={(e) => {
             e.stopPropagation();
             e.preventDefault();
-            updateQuestionStatus('know', currQuestion.id).finally(() => null);
+            updateQuestionStatus('know', currQuestion.id);
           }}
           className="flex flex-1 items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
@@ -267,11 +158,9 @@ export function QuestionsList(props: QuestionsListProps) {
         </button>
         <button
           onClick={() => {
-            updateQuestionStatus('dontKnow', currQuestion.id).finally(
-              () => null,
-            );
+            updateQuestionStatus('dontKnow', currQuestion.id);
           }}
-          disabled={isLoading || !currQuestion}
+          disabled={!currQuestion}
           className="flex flex-1 items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
           <Sparkles className="mr-1 h-4 text-current" />
@@ -279,9 +168,9 @@ export function QuestionsList(props: QuestionsListProps) {
         </button>
         <button
           onClick={() => {
-            updateQuestionStatus('skip', currQuestion.id).finally(() => null);
+            updateQuestionStatus('skip', currQuestion.id);
           }}
-          disabled={isLoading || !currQuestion}
+          disabled={!currQuestion}
           data-next-question="skip"
           className="flex flex-1 items-center rounded-md border border-red-600 px-2 py-2 text-sm text-red-600 hover:bg-red-600 hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
