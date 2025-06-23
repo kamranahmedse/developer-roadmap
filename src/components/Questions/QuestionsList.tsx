@@ -79,7 +79,6 @@ export function QuestionsList(props: QuestionsListProps) {
         didNotKnowCount={dontKnowCount}
         skippedCount={skipCount}
         totalCount={questions?.length}
-        showLoginAlert={!isLoggedIn() && hasProgress}
         onResetClick={() => {
           resetProgress().finally(() => null);
         }}
