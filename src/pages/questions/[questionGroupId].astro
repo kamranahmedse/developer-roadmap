@@ -1,9 +1,6 @@
 ---
-import GridItem from '../../components/GridItem.astro';
-import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Footer from '../../components/Footer.astro';
-import AstroIcon from '../../components/AstroIcon.astro';
 import { QuestionsList } from '../../components/Questions/QuestionsList';
 
 import {
@@ -11,8 +8,6 @@ import {
   type QuestionGroupType,
 } from '../../lib/question-group';
 import QuestionGuide from '../../components/Questions/QuestionGuide.astro';
-import { markdownToHtml } from '../../lib/markdown';
-import MarkdownFile from '../../components/MarkdownFile.astro';
 
 export const prerender = true;
 
