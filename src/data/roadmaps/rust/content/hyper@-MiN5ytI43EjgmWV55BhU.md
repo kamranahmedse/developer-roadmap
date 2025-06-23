@@ -4,5 +4,6 @@ Hyper is a fast, safe HTTP client/server library for Rust built on Tokio for asy
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://hyper.rs/)
-- [@article@Docs.rs: Hyper](https://docs.rs/hyper/latest/hyper/)
+- [@official@Hyper.rs](https://hyper.rs/)
+- [@article@Hyper Documentation](https://docs.rs/hyper/latest/hyper/)
+- [@article@Creating a Basic HTTP Server in Rust using Hyper](https://medium.com/@ajay.bhatia/creating-a-basic-http-server-in-rust-using-hyper-a-step-by-step-tutorial-459b48d61151)

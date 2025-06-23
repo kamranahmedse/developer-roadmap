@@ -9,9 +9,9 @@ Rust supports two types of floating-point numbers: `f32` and `f64`. These are 32
 
 Both `f32` and `f64` represent negative, zero and positive floating-point values.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
-- [@video@Rust Tutorial - Floating-Points](https://www.youtube.com/watch?v=t047Hseyj_k&t=335s)
-- [@official@f32 - Rust](https://doc.rust-lang.org/std/primitive.f32.html)
+- [@official@f32](https://doc.rust-lang.org/std/primitive.f32.html)
 - [@article@IEEE-754 Standard](https://en.wikipedia.org/wiki/IEEE_754)
 - [@article@Floating-Point Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html#floating-point-types)
+- [@video@Rust Tutorial - Floating-Points](https://www.youtube.com/watch?v=t047Hseyj_k&t=335s)

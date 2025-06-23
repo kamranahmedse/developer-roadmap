@@ -4,5 +4,5 @@ Tokio is Rust's most popular async runtime for building fast, reliable network a
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://tokio.rs/)
-- [@article@Docs.rs: Tokio](https://docs.rs/tokio/latest/tokio/)
+- [@official@Tokio](https://tokio.rs/)
+- [@article@Tokio Docs](https://docs.rs/tokio/latest/tokio/)
