@@ -78,7 +78,6 @@ export function AIGuide(props: AIGuideProps) {
     await generateGuide({
       slug: aiGuide?.slug || '',
       term: aiGuide?.keyword || '',
-      depth: aiGuide?.depth || '',
       prompt,
       onStreamingChange: setIsRegenerating,
       onHtmlChange: setRegeneratedHtml,
@@ -108,6 +107,7 @@ export function AIGuide(props: AIGuideProps) {
             html={regeneratedHtml || aiGuide?.html || ''}
             onRegenerate={handleRegenerate}
             isLoading={isLoadingBySlug || isRegenerating}
+            guideSlug={guideSlug}
           />
         )}
         {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}

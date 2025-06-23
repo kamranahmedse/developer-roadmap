@@ -15,10 +15,17 @@ export type AIQuestionSuggestionsResponse = {
 
 export function aiQuestionSuggestionsOptions(
   query: AIQuestionSuggestionsQuery,
+  defaultQuestions?: AIQuestionSuggestionsResponse['questions'],
 ) {
   return queryOptions({
     queryKey: ['ai-question-suggestions', query],
     queryFn: () => {
+      if (defaultQuestions) {
+        return {
+          questions: defaultQuestions,
+        };
+      }
+
       return httpGet<AIQuestionSuggestionsResponse>(
         `/v1-ai-question-suggestions`,
         query,

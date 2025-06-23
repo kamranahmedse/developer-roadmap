@@ -1,6 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
-import { aiQuestionSuggestionsOptions } from '../../queries/user-ai-session';
+import {
+  aiQuestionSuggestionsOptions,
+  type AIQuestionSuggestionsResponse,
+} from '../../queries/user-ai-session';
 import type { AllowedFormat } from './ContentGenerator';
 import { Loader2Icon, RotateCwIcon, SendIcon } from 'lucide-react';
 import { useRef, useState } from 'react';
@@ -24,18 +27,22 @@ type QuestionAnswerChatProps = {
     messages: QuestionAnswerChatMessage[],
   ) => void;
   onGenerateNow: () => void;
+  defaultQuestions?: AIQuestionSuggestionsResponse['questions'];
 };
 
 export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
   const {
     term,
     format,
+    defaultQuestions,
     questionAnswerChatMessages,
     setQuestionAnswerChatMessages,
     onGenerateNow,
   } = props;
 
-  const [activeMessageIndex, setActiveMessageIndex] = useState(0);
+  const [activeMessageIndex, setActiveMessageIndex] = useState(
+    defaultQuestions?.length ?? 0,
+  );
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<'answering' | 'done'>('answering');
 
@@ -44,7 +51,10 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
   const {
     data: aiQuestionSuggestions,
     isLoading: isLoadingAiQuestionSuggestions,
-  } = useQuery(aiQuestionSuggestionsOptions({ term, format }), queryClient);
+  } = useQuery(
+    aiQuestionSuggestionsOptions({ term, format }, defaultQuestions),
+    queryClient,
+  );
 
   const activeMessage = aiQuestionSuggestions?.questions[activeMessageIndex];
 
@@ -165,17 +175,19 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                       />
                     ))}
 
-                    <QuestionAnswerChatMessage
-                      role="assistant"
-                      question={activeMessage?.question ?? ''}
-                    />
+                    {activeMessage && (
+                      <QuestionAnswerChatMessage
+                        role="assistant"
+                        question={activeMessage?.question ?? ''}
+                      />
+                    )}
                   </div>
                 </div>
               </div>
 
-              <div className="p-2">
-                <div className="rounded-lg border border-gray-200 bg-white">
-                  {activeMessage && (
+              {activeMessage && (
+                <div className="p-2">
+                  <div className="rounded-lg border border-gray-200 bg-white">
                     <div className="border-b border-gray-200 p-2">
                       <p className="text-sm text-gray-500">
                         Pick an answer from these or write it below
@@ -195,45 +207,45 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                         ))}
                       </div>
                     </div>
-                  )}
 
-                  <div
-                    className="flex w-full items-center justify-between gap-2 p-2"
-                    onSubmit={(e) => {
-                      e.preventDefault();
-                      handleAnswerSelect(message);
-                    }}
-                  >
-                    <input
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                      className="w-full bg-transparent text-sm focus:outline-none"
-                      placeholder="Write your answer here..."
-                      autoFocus
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' && !e.shiftKey) {
-                          e.preventDefault();
-                          handleAnswerSelect(message);
-                          setMessage('');
-                        }
+                    <div
+                      className="flex w-full items-center justify-between gap-2 p-2"
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        handleAnswerSelect(message);
                       }}
-                    />
-
-                    <button
-                      type="button"
-                      className="flex size-7 shrink-0 items-center justify-center rounded-md hover:bg-gray-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
                     >
-                      <SendIcon className="size-4" />
-                    </button>
+                      <input
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        className="w-full bg-transparent text-sm focus:outline-none"
+                        placeholder="Write your answer here..."
+                        autoFocus
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' && !e.shiftKey) {
+                            e.preventDefault();
+                            handleAnswerSelect(message);
+                            setMessage('');
+                          }
+                        }}
+                      />
+
+                      <button
+                        type="button"
+                        className="flex size-7 shrink-0 items-center justify-center rounded-md hover:bg-gray-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                      >
+                        <SendIcon className="size-4" />
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </>
         )}
       </div>
 
-      {canGenerateNow && status !== 'done' && (
+      {canGenerateNow && status !== 'done' && activeMessage && (
         <div className="flex w-full items-center rounded-lg border border-gray-200 bg-white p-2">
           <p className="text-sm">
             Keep answering for better output or{' '}
