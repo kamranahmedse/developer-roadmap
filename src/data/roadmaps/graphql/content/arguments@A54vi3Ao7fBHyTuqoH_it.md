@@ -1,6 +1,6 @@
 # Arguments
 
-In GraphQL, an argument is a value that is passed to a field in a query or mutation. Arguments allow you to filter or modify the data being returned by a field. Arguments are defined within a field in a GraphQL schema, and have a name, a type, and an optional default value.
+Arguments in GraphQL are values passed to fields in queries and mutations to filter or modify returned data. They're defined in the schema with a name, type, and optional default value, enabling dynamic data retrieval.
 
 To learn more, visit the following links:
 

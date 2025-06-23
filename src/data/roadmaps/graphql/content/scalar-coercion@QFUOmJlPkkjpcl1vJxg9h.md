@@ -1,8 +1,6 @@
 # Scalar Coercion
 
-In GraphQL, scalar coercion is the process of converting a value from one type to another, as it flows through the resolvers. This is needed when the input value for a field does not match the expected type, but can still be successfully converted to the correct type.
-
-Scalar coercion can be implemented in the resolvers by using the **GraphQLScalarType** constructor to define a custom scalar type and providing a **coerce** function that can convert the input value to the correct type.
+Scalar coercion in GraphQL converts input values from one type to another when they don't match the expected type but can be successfully converted. This process is implemented using custom scalar types with coerce functions that handle the type conversion.
 
 Learn more from the following links:
 
