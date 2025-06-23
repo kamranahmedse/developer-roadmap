@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Consensus Mechanisms in Blockchain: A Beginner’s Guide](https://crypto.com/university/consensus-mechanisms-explained)
 - [@article@Consensus Mechanisms](https://ethereum.org/en/developers/docs/consensus-mechanisms/)
 - [@article@What Is a Consensus Mechanism?](https://www.coindesk.com/learn/what-is-a-consensus-mechanism/)
+- [@article@Consensus Algorithm](https://www.cyfrin.io/glossary/consensus-algorithm)

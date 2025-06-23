@@ -30,11 +30,15 @@ const questionsGroupedByTopics = questionGroup.questions.reduce(
   {} as Record<string, QuestionType[]>,
 );
 
-// Get all unique topics
-const questionTopics = Object.keys(questionsGroupedByTopics);
-const topicsList = Array.from(
-  new Set(['Beginner', 'Intermediate', 'Advanced', ...questionTopics]),
-).filter((topic) => questionTopics.includes(topic));
+// Get all unique topics in the order they appear in the questions array
+const topicsInOrder: string[] = [];
+questionGroup.questions.forEach((question) => {
+  question.topics?.forEach((topic) => {
+    if (!topicsInOrder.includes(topic)) {
+      topicsInOrder.push(topic);
+    }
+  });
+});
 
 const allHeadings = questionGroup.getHeadings();
 let tableOfContent: HeadingGroupType[] = [
@@ -47,16 +51,16 @@ let tableOfContent: HeadingGroupType[] = [
   },
   {
     depth: 2,
-    children: topicsList.map((topic) => {
+    children: topicsInOrder.map((topic) => {
       let topicText = topic;
       let topicSlug = slugify(topic);
-      if (topic === 'beginner') {
+      if (topic.toLowerCase() === 'beginners') {
         topicText = 'Beginner Level';
         topicSlug = 'beginner-level';
-      } else if (topic === 'intermediate') {
+      } else if (topic.toLowerCase() === 'intermediate') {
         topicText = 'Intermediate Level';
         topicSlug = 'intermediate-level';
-      } else if (topic === 'advanced') {
+      } else if (topic.toLowerCase() === 'advanced') {
         topicText = 'Advanced Level';
         topicSlug = 'advanced-level';
       }
@@ -149,13 +153,13 @@ const showTableOfContent = tableOfContent.length > 0;
       </p>
 
       {
-        Object.keys(questionsGroupedByTopics).map((questionLevel) => (
+        topicsInOrder.map((questionLevel) => (
           <div class='mb-5'>
             <h3 id={slugify(questionLevel)} class='mb-0 capitalize'>
-              {questionLevel}{' '}
-              {['Beginner', 'Intermediate', 'Advanced'].includes(questionLevel)
-                ? 'Level'
-                : ''}
+              {questionLevel.toLowerCase() === 'beginners' ? 'Beginner Level' :
+               questionLevel.toLowerCase() === 'intermediate' ? 'Intermediate Level' :
+               questionLevel.toLowerCase() === 'advanced' ? 'Advanced Level' :
+               questionLevel}
             </h3>
             {questionsGroupedByTopics[questionLevel].map((q) => (
               <div class='mb-5'>

@@ -2,27 +2,8 @@
 
 Linux processes run in foreground (fg) taking direct user input or background (bg) running independently. Start background processes with `command &` or use `Ctrl+Z` then `bg` to pause and resume in background. Use `fg` to bring background processes to foreground. These job control commands enable managing multiple tasks from a single terminal efficiently.
 
-Here's how you can send a running process to background:
+Visit the following resources to learn more:
 
-```bash
-command &
-```
-
-Or if a process is already running:
-
-```bash
-CTRL + Z       # This will pause the process
-bg             # This resumes the paused process in the background
-```
-
-And to bring it back to the foreground:
-
-```bash
-fg
-``` 
-
-These commands, `bg` and `fg` are part of job control in Unix-like operating systems, which lets you manage multiple tasks simultaneously from a single terminal.
-
-Learn more from following resource:
-
-- [@article@Job Control](https://linuxjourney.com/lesson/job-control)
+- [@article@Understanding Foreground and Background Processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
+- [@article@Running Linux Commands in Background and Foreground](https://linuxhandbook.com/run-process-background/)
+- [@article@Foreground and Background Processes - LinuxOPsys](https://linuxopsys.com/foreground-and-background-processes-co11/)

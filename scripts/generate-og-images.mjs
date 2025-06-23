@@ -241,19 +241,19 @@ async function generateGuideOpenGraph() {
     const image =
       author?.imageUrl || 'https://roadmap.sh/images/default-avatar.png';
     const isExternalImage = image?.startsWith('http');
-    let authorImageExtention = '';
+    let authorImageExtension = '';
     let authorAvatar;
     if (!isExternalImage) {
       authorAvatar = await fs.readFile(path.join(ALL_AUTHOR_IMAGE_DIR, image));
-      authorImageExtention = image?.split('.')[1];
+      authorImageExtension = image?.split('.')[1];
     }
 
-    const template = getGuideTemplate({
+    let template = getGuideTemplate({
       ...guide,
       authorName: author.name,
       authorAvatar: isExternalImage
         ? image
-        : `data:image/${authorImageExtention};base64,${authorAvatar.toString('base64')}`,
+        : `data:image/${authorImageExtension};base64,${authorAvatar.toString('base64')}`,
     });
     if (
       hasSpecialCharacters(guide.title) ||

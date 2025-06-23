@@ -1,3 +1,0 @@
-# gtk-rs
-
-`gtk-rs` is a group of Rust bindings for GTK+ 3 and other related libraries. This means you can write your GUI applications in Rust language with GTK+3, a cross-platform widget toolkit for creating graphical user interfaces. It includes bindings for GObject, Glib, and Cairo among others. Meanwhile, the number of bindings for different GTK libraries and components is continuously increasing. It's worth noting that gtk-rs projects are a set of open-source libraries dedicated to providing a Rust-friendly interface for GTK libraries (gtk, gdk, gdk-pixbuf, cairo, pango, etc). This allows developers to create software using Rust and GTK simultaneously.

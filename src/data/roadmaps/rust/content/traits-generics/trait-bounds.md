@@ -1,3 +1,0 @@
-# Trait Bounds and Associated Types
-
-Trait Bounds in Rust is a way of specifying that a generic must satisfy a certain trait. Essentially, a trait bound says something like: "T must support the following behavior". In other words, they allow you to use generic type parameters in your function definitions to specify that the function can accept any type as a parameter, as long as that type implements a certain trait. For instance, `T: Display` would constitute a trait bound, requiring the generic `T` to implement the `Display` trait. These trait bounds add a level of control and safety over the types that are passed as parameters, opening the possibility for a higher level of abstraction and code reuse.
