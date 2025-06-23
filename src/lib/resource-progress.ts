@@ -123,7 +123,8 @@ export function clearMigratedRoadmapProgress(
     'kubernetes',
     'linux',
     'software-design-architecture',
-    'rust'
+    'rust',
+    'react-native',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
