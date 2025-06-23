@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@What are Zero-Knowledge proofs? - Ethereum](https://ethereum.org/en/zero-knowledge-proofs/)
 - [@article@Why and How zk-SNARK Works](https://medium.com/@imolfar/why-and-how-zk-snark-works-1-introduction-the-medium-of-a-proof-d946e931160)
 - [@article@Introduction to zk-SNARKs](https://vitalik.eth.limo/general/2021/01/26/snarks.html)
+- [@article@What Are zk-SNARKs and zkSTARKs: Full Comparison](https://www.cyfrin.io/blog/a-full-comparison-what-are-zk-snarks-and-zk-starks)

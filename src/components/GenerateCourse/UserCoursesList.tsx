@@ -1,21 +1,19 @@
 import { useQuery } from '@tanstack/react-query';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Loader2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
-import { isLoggedIn } from '../../lib/jwt';
-import { showLoginPopup } from '../../lib/popup';
 import {
   listUserAiCoursesOptions,
   type ListUserAiCoursesQuery,
 } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
-import { AITutorHeader } from '../AITutor/AITutorHeader';
 import { AITutorTallMessage } from '../AITutor/AITutorTallMessage';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { Pagination } from '../Pagination/Pagination';
 import { AICourseCard } from './AICourseCard';
 import { AICourseSearch } from './AICourseSearch';
-import { AILoadingState } from '../AITutor/AILoadingState';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 export function UserCoursesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -60,28 +58,8 @@ export function UserCoursesList() {
     }
   }, [pageState]);
 
-  if (isUserAiCoursesLoading || isInitialLoading) {
-    return (
-      <AILoadingState
-        title="Loading your courses"
-        subtitle="This may take a moment..."
-      />
-    );
-  }
-
-  if (!isLoggedIn()) {
-    return (
-      <AITutorTallMessage
-        title="Sign up or login"
-        subtitle="Takes 2s to sign up and generate your first course."
-        icon={BookOpen}
-        buttonText="Sign up or Login"
-        onButtonClick={() => {
-          showLoginPopup();
-        }}
-      />
-    );
-  }
+  const isUserAuthenticated = isLoggedIn();
+  const isAnyLoading = isUserAiCoursesLoading || isInitialLoading;
 
   return (
     <>
@@ -89,60 +67,78 @@ export function UserCoursesList() {
         <UpgradeAccountModal onClose={() => setShowUpgradePopup(false)} />
       )}
 
-      <AITutorHeader
-        title="Your Courses"
-        onUpgradeClick={() => setShowUpgradePopup(true)}
-      >
-        <AICourseSearch
-          value={pageState?.query || ''}
-          onChange={(value) => {
-            setPageState({
-              ...pageState,
-              query: value,
-              currPage: '1',
-            });
-          }}
-        />
-      </AITutorHeader>
+      <AICourseSearch
+        value={pageState?.query || ''}
+        onChange={(value) => {
+          setPageState({
+            ...pageState,
+            query: value,
+            currPage: '1',
+          });
+        }}
+        disabled={isAnyLoading}
+      />
 
-      {(isUserAiCoursesLoading || isInitialLoading) && (
-        <AILoadingState
-          title="Loading your courses"
-          subtitle="This may take a moment..."
-        />
+      {isAnyLoading && (
+        <p className="mb-4 flex flex-row items-center gap-2 text-sm text-gray-500">
+          <Loader2 className="h-4 w-4 animate-spin" />
+          Loading your courses...
+        </p>
       )}
 
-      {!isUserAiCoursesLoading && !isInitialLoading && courses.length > 0 && (
-        <div className="flex flex-col gap-2">
-          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3">
-            {courses.map((course) => (
-              <AICourseCard key={course._id} course={course} />
-            ))}
-          </div>
+      {!isAnyLoading && (
+        <>
+          <p className="mb-4 text-sm text-gray-500">
+            {isUserAuthenticated
+              ? `You have generated ${userAiCourses?.totalCount} courses so far.`
+              : 'Sign up or login to generate your first course. Takes 2s to do so.'}
+          </p>
 
-          <Pagination
-            totalCount={userAiCourses?.totalCount || 0}
-            totalPages={userAiCourses?.totalPages || 0}
-            currPage={Number(userAiCourses?.currPage || 1)}
-            perPage={Number(userAiCourses?.perPage || 10)}
-            onPageChange={(page) => {
-              setPageState({ ...pageState, currPage: String(page) });
-            }}
-            className="rounded-lg border border-gray-200 bg-white p-4"
-          />
-        </div>
-      )}
+          {isUserAuthenticated && !isAnyLoading && courses.length > 0 && (
+            <div className="flex flex-col gap-2">
+              {courses.map((course) => (
+                <AICourseCard key={course._id} course={course} />
+              ))}
 
-      {!isUserAiCoursesLoading && !isInitialLoading && courses.length === 0 && (
-        <AITutorTallMessage
-          title="No courses found"
-          subtitle="You haven't generated any courses yet."
-          icon={BookOpen}
-          buttonText="Create your first course"
-          onButtonClick={() => {
-            window.location.href = '/ai';
-          }}
-        />
+              <Pagination
+                totalCount={userAiCourses?.totalCount || 0}
+                totalPages={userAiCourses?.totalPages || 0}
+                currPage={Number(userAiCourses?.currPage || 1)}
+                perPage={Number(userAiCourses?.perPage || 10)}
+                onPageChange={(page) => {
+                  setPageState({ ...pageState, currPage: String(page) });
+                }}
+                className="rounded-lg border border-gray-200 bg-white p-4"
+              />
+            </div>
+          )}
+
+          {!isAnyLoading && courses.length === 0 && (
+            <AITutorTallMessage
+              title={
+                isUserAuthenticated ? 'No courses found' : 'Sign up or login'
+              }
+              subtitle={
+                isUserAuthenticated
+                  ? "You haven't generated any courses yet."
+                  : 'Takes 2s to sign up and generate your first course.'
+              }
+              icon={BookOpen}
+              buttonText={
+                isUserAuthenticated
+                  ? 'Create your first course'
+                  : 'Sign up or login'
+              }
+              onButtonClick={() => {
+                if (isUserAuthenticated) {
+                  window.location.href = '/ai';
+                } else {
+                  showLoginPopup();
+                }
+              }}
+            />
+          )}
+        </>
       )}
     </>
   );

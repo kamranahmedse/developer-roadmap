@@ -1,0 +1,1 @@
+A foreign key is like a bridge between two tables. A foreign key in one table is the primary key in another. It is the connector between the two tables. 

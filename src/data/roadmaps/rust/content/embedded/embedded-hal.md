@@ -1,3 +1,0 @@
-# embedded-hal
-
-"Embedded-hal" or "Embedded Hardware Abstraction Layer" is a notably robust and highly accommodating platform for the Rust embedded systems domain. It essentially allows for the creation of portable embedded drivers by providing generic device traits. These traits enable users to write hardware-agnostic code, which translates to enhanced efficiency and code reuse. By abstracting hardware specifics into a uniform API, "embedded hal" facilitates unified handling of different hardware abilities such as digital I/O, UART, I2C, and SPI communication, among others. This categorically makes it an invaluable tool in the Rust embedded space.

@@ -35,6 +35,8 @@ window.fireEvent = (props) => {
     url.searchParams.set('event_id', eventId);
 
     httpPost(url.toString(), {}).catch(console.error);
+
+    return;
   }
 
   if (!window.gtag) {

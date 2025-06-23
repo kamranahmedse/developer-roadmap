@@ -1,23 +1,9 @@
 # Linux Navigation Basics: Basic Commands
 
-Linux Navigation Basics is about using simple commands to move around and manage files on your computer. For example, cd lets you go into different folders, ls shows you what files and folders are inside, and pwd tells you where you are currently. These commands help you easily find and organize your files.
-
-```bash
-# Change directory
-cd /path/to/directory  
-
-# Lists files and directories in the current directory.
-ls  
-
-# View current working directory
-pwd  
-
-# Displays the mannual page for a command
-man ls
-```
-
-In this brief introduction, we will discuss and explore these basic commands and how they aid us in navigation around the Linux environment.
+Linux Navigation Basics is about using simple commands to move around and manage files on your computer. For example, `cd` lets you go into different folders, `ls` shows you what files and folders are inside, and `pwd` tells you where you are currently. These commands help you easily find and organize your files.
 
 Learn more from the following resources:
 
-- [@article@Linux pwd Command: Directory Displaying](https://labex.io/tutorials/linux-file-and-directory-operations-17997)
+- [@article@Linux Filesystem Navigation Basics](https://linuxconfig.org/filesystem-basics)
+- [@article@Linux Navigation and File Management](https://www.digitalocean.com/community/tutorials/basic-linux-navigation-and-file-management)
+- [@article@Basic Navigation Commands: `cd`, `ls`, and `pwd` ](https://www.linuxbash.sh/post/basic-navigation-commands-cd-ls-and-pwd)

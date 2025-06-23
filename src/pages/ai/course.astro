@@ -1,0 +1,17 @@
+---
+import { GenerateAICourse } from '../../components/GenerateCourse/GenerateAICourse';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
+---
+
+<SkeletonLayout
+  title='AI Tutor'
+  briefTitle='AI Tutor'
+  description='AI Tutor'
+  keywords={['ai', 'tutor', 'education', 'learning']}
+  canonicalUrl='/ai/course'
+  noIndex={true}
+>
+  <GenerateAICourse client:load />
+  <CheckSubscriptionVerification client:load />
+</SkeletonLayout>

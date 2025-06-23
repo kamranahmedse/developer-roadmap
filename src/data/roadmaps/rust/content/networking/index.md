@@ -1,3 +1,0 @@
-# Networking
-
-In Rust, the `std::net` module provides functionality for networking. This includes types that represent IP addresses (`Ipv4Addr` and `Ipv6Addr`), a socket address (`SocketAddr`), and TCP/UDP networking types (`TcpStream`, `TcpListener`, `UdpSocket`). There's also the `TcpStream` type for connection-oriented sockets, `TcpListener` for a TCP socket that's listening for incoming connections, and `UdpSocket` for connection-less sockets. Rust’s networking interface is built around BSD sockets with methods that closely follow the system's system calls. The types in this module encompass low-level network primitives, which can be used to build networking applications.

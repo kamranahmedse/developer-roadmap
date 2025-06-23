@@ -1,0 +1,1 @@
+# Law of Demeter

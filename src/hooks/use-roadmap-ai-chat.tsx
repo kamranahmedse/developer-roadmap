@@ -237,8 +237,7 @@ export function useRoadmapAIChat(options: Options) {
           });
         },
         onDetails: (details) => {
-          const detailsJson = JSON.parse(details);
-          const chatHistoryId = detailsJson?.chatHistoryId;
+          const chatHistoryId = details?.chatHistoryId;
           if (!chatHistoryId) {
             return;
           }
