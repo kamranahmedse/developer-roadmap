@@ -6,14 +6,15 @@ import {
 } from '../../queries/user-ai-session';
 import type { AllowedFormat } from './ContentGenerator';
 import {
-  Loader2Icon, RefreshCcwIcon,
-  RotateCwIcon,
-  SendIcon
+  Loader2Icon,
+  RefreshCcwIcon,
+  SendIcon, Trash2
 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../lib/classname';
 import { flushSync } from 'react-dom';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
+import { Tooltip } from '../Tooltip';
 
 export type QuestionAnswerChatMessage =
   | { role: 'user'; answer: string }
@@ -127,6 +128,30 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     setStatus('answering');
   };
 
+  const handleEditMessage = (messageIndex: number) => {
+    // Remove the assistant question and user answer pair
+    // Since user messages are at odd indices, we want to remove both
+    // the assistant message (at messageIndex - 1) and the user message (at messageIndex)
+    const assistantMessageIndex = messageIndex - 1;
+    const newMessages = questionAnswerChatMessages.slice(
+      0,
+      assistantMessageIndex,
+    );
+    setQuestionAnswerChatMessages(newMessages);
+
+    // Calculate which question should be active
+    // Since we removed both assistant and user messages, the question index
+    // is simply assistantMessageIndex / 2
+    const questionIndex = Math.floor(assistantMessageIndex / 2);
+    setActiveMessageIndex(questionIndex);
+    setStatus('answering');
+
+    setMessage('');
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 0);
+  };
+
   useEffect(() => {
     scrollToBottom();
   }, [defaultQuestions, type]);
@@ -152,7 +177,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
           <div className="absolute inset-0 flex items-center justify-center bg-white">
             <div className="flex flex-col items-center">
               <CheckIcon additionalClasses="size-12" />
-              <p className="mt-3 font-semibold text-lg">Preferences saved</p>
+              <p className="mt-3 text-lg font-semibold">Preferences saved</p>
               <p className="text-sm text-gray-500">
                 You can now start generating {format}
               </p>
@@ -170,18 +195,6 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
 
         {!isLoadingAiQuestionSuggestions && status === 'answering' && (
           <>
-            {canReset && type === 'create' && (
-              <div className="absolute top-2 left-2 z-10">
-                <button
-                  className="flex cursor-pointer items-center gap-1.5 rounded-lg bg-gray-50 px-2 py-1 text-xs text-gray-500 hover:bg-gray-200 focus:outline-none"
-                  onClick={handleReset}
-                >
-                  <RotateCwIcon className="size-3" />
-                  Reset and Restart Asking
-                </button>
-              </div>
-            )}
-
             <div className="flex h-full w-full flex-col bg-white">
               <div
                 ref={scrollAreaRef}
@@ -201,6 +214,11 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                         answer={
                           message.role === 'user' ? message.answer : undefined
                         }
+                        onEdit={
+                          message.role === 'user'
+                            ? () => handleEditMessage(index)
+                            : undefined
+                        }
                       />
                     ))}
 
@@ -219,15 +237,15 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
               {!activeMessage && type === 'update' && (
                 <div className="p-2">
                   <button
-                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white p-2"
+                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 bg-gray-200 p-2 hover:bg-gray-300"
                     onClick={() => {
                       setQuestionAnswerChatMessages([]);
                       setActiveMessageIndex(0);
                       setStatus('answering');
                     }}
                   >
-                    <RefreshCcwIcon className="size-4" />
-                    Reanswer the questions
+                    <Trash2 className="size-4" />
+                    Reanswer all questions
                   </button>
                 </div>
               )}
@@ -281,10 +299,12 @@ type QuestionAnswerChatMessageProps = {
   answer?: string;
   possibleAnswers?: string[];
   onAnswerSelect?: (answer: string) => void;
+  onEdit?: () => void;
 };
 
 function QuestionAnswerChatMessage(props: QuestionAnswerChatMessageProps) {
-  const { role, question, answer, possibleAnswers, onAnswerSelect } = props;
+  const { role, question, answer, possibleAnswers, onAnswerSelect, onEdit } =
+    props;
 
   const hasAnswers = possibleAnswers && possibleAnswers.length > 0;
 
@@ -319,7 +339,25 @@ function QuestionAnswerChatMessage(props: QuestionAnswerChatMessageProps) {
           )}
         </div>
       )}
-      {role === 'user' && <div className="text-sm">{answer}</div>}
+      {role === 'user' && (
+        <div className="flex items-center gap-2">
+          <div className="text-sm">{answer}</div>
+          {onEdit && (
+            <div className="group relative">
+              <button
+                type="button"
+                className="flex size-6 shrink-0 items-center justify-center rounded-md opacity-70 hover:bg-gray-100 hover:opacity-100 focus:outline-none text-gray-500"
+                onClick={onEdit}
+              >
+                <Trash2 className="size-4" />
+              </button>
+              <Tooltip additionalClass="-translate-y-2" position="top-right">
+                Reanswer after this point
+              </Tooltip>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

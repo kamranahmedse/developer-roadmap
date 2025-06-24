@@ -1,5 +1,4 @@
 import { useMemo, useState } from 'react';
-import type { AIQuestionSuggestionsResponse } from '../../queries/user-ai-session';
 import type { AllowedFormat } from '../ContentGenerator/ContentGenerator';
 import {
   QuestionAnswerChat,
@@ -46,16 +45,20 @@ export function UpdatePreferences(props: UpdatePreferencesProps) {
     );
   }, [questionAnswerChatMessages, defaultQuestionAndAnswers]);
 
+  console.log(questionAnswerChatMessages);
+  console.log(defaultQuestionAndAnswers);
+
   return (
     <Modal
       onClose={onClose}
       bodyClassName="p-4 flex flex-col gap-4"
-      wrapperClassName="max-w-xl"
+      wrapperClassName="max-w-xl  h-auto"
+      overlayClassName="items-start md:items-center"
     >
       <div className="flex flex-col gap-1">
         <h2 className="text-lg font-medium">Update Preferences</h2>
         <p className="text-sm text-gray-500">
-          Update the preferences for the AI to generate a guide.
+          Update your preferences for better content
         </p>
       </div>
 
@@ -68,18 +71,19 @@ export function UpdatePreferences(props: UpdatePreferencesProps) {
         onGenerateNow={() => {
           onUpdatePreferences(questionAnswerChatMessages);
         }}
+        className="-mx-2 h-[400px] border-none p-0"
         type="update"
       />
 
       {hasChangedQuestionAndAnswers && (
         <button
-          className="rounded-lg bg-black px-4 py-2 text-white disabled:opacity-50"
+          className="rounded-lg bg-black px-4 py-2 text-white hover:opacity-80 disabled:opacity-50"
           disabled={isUpdating || !hasChangedQuestionAndAnswers}
           onClick={() => {
             onUpdatePreferences(questionAnswerChatMessages);
           }}
         >
-          {isUpdating ? 'Updating...' : 'Update Preferences'}
+          {isUpdating ? 'Updating...' : 'Apply preferences'}
         </button>
       )}
     </Modal>
