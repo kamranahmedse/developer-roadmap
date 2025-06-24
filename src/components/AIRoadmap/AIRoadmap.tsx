@@ -10,6 +10,7 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { aiRoadmapOptions } from '../../queries/ai-roadmap';
 import { GenerateAIRoadmap } from './GenerateAIRoadmap';
 import { AIRoadmapContent } from './AIRoadmapContent';
+import { AIRoadmapChat } from './AIRoadmapChat';
 
 type AIRoadmapProps = {
   roadmapSlug?: string;
@@ -22,12 +23,11 @@ export function AIRoadmap(props: AIRoadmapProps) {
   const toast = useToast();
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isRegenerating, setIsRegenerating] = useState(false);
-  const containerRef = useRef<HTMLDivElement | null>(null);
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
   const { data: aiRoadmap, isLoading: isLoadingBySlug } = useQuery(
-    aiRoadmapOptions(roadmapSlug, containerRef),
+    aiRoadmapOptions(roadmapSlug),
     queryClient,
   );
 
@@ -62,8 +62,7 @@ export function AIRoadmap(props: AIRoadmapProps) {
       <div className="grow overflow-y-auto p-4 pt-0">
         {roadmapSlug && (
           <AIRoadmapContent
-            svg={aiRoadmap?.svg || null}
-            containerRef={containerRef}
+            svgHtml={aiRoadmap?.svgHtml || ''}
             isLoading={isLoadingBySlug || isRegenerating}
           />
         )}
@@ -71,13 +70,11 @@ export function AIRoadmap(props: AIRoadmapProps) {
           <GenerateAIRoadmap onRoadmapSlugChange={setRoadmapSlug} />
         )}
       </div>
-      {/* <AIGuideChat
-        guideSlug={guideSlug}
-        isGuideLoading={!aiGuide}
+      <AIRoadmapChat
+        roadmapSlug={roadmapSlug}
+        isRoadmapLoading={!aiRoadmap}
         onUpgrade={() => setShowUpgradeModal(true)}
-        randomQuestions={randomQuestions}
-        isQuestionsLoading={isAiGuideSuggestionsLoading}
-      /> */}
+      />
     </AITutorLayout>
   );
 }

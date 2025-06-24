@@ -19,13 +19,10 @@ export interface AIRoadmapDocument {
 }
 
 export type AIRoadmapResponse = AIRoadmapDocument & {
-  svg?: SVGElement | null;
+  svgHtml?: string;
 };
 
-export function aiRoadmapOptions(
-  roadmapSlug?: string,
-  containerRef?: RefObject<HTMLDivElement | null>,
-) {
+export function aiRoadmapOptions(roadmapSlug?: string) {
   return queryOptions<AIRoadmapResponse>({
     queryKey: ['ai-roadmap', roadmapSlug],
     queryFn: async () => {
@@ -36,13 +33,11 @@ export function aiRoadmapOptions(
       const result = generateAICourseRoadmapStructure(res.data);
       const { nodes, edges } = generateAIRoadmapFromText(result);
       const svg = await renderFlowJSON({ nodes, edges });
-      if (containerRef?.current) {
-        replaceChildren(containerRef.current, svg);
-      }
+      const svgHtml = svg.outerHTML;
 
       return {
         ...res,
-        svg,
+        svgHtml,
       };
     },
     enabled: !!roadmapSlug,
@@ -52,10 +47,7 @@ export function aiRoadmapOptions(
 import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from '../queries/ai-course';
 import { readChatStream } from '../lib/chat';
-import { markdownToHtmlWithHighlighting } from '../lib/markdown';
 import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
-import type { RefObject } from 'react';
-import { replaceChildren } from '../lib/dom';
 
 type RoadmapDetails = {
   roadmapId: string;

@@ -1,16 +1,13 @@
 import { cn } from '../../lib/classname';
 import { LoadingChip } from '../LoadingChip';
-import { useEffect, type RefObject } from 'react';
-import { replaceChildren } from '../../lib/dom';
 
 type AIRoadmapContentProps = {
-  svg: SVGElement | null;
   isLoading?: boolean;
-  containerRef: RefObject<HTMLDivElement | null>;
+  svgHtml: string;
 };
 
 export function AIRoadmapContent(props: AIRoadmapContentProps) {
-  const { svg, isLoading, containerRef } = props;
+  const { isLoading, svgHtml } = props;
 
   return (
     <div
@@ -20,12 +17,12 @@ export function AIRoadmapContent(props: AIRoadmapContentProps) {
       )}
     >
       <div
-        ref={containerRef}
         id="roadmap-container"
-        className="relative min-h-[400px] px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
+        className="relative min-h-[400px] [&>svg]:mx-auto"
+        dangerouslySetInnerHTML={{ __html: svgHtml }}
       />
 
-      {isLoading && !svg && (
+      {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">
           <LoadingChip message="Please wait..." />
         </div>

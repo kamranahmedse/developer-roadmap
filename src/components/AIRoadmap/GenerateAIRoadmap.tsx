@@ -6,7 +6,7 @@ import { LoadingChip } from '../LoadingChip';
 import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnswerChat';
 import { getQuestionAnswerChatMessages } from '../../lib/ai-questions';
 import { aiRoadmapOptions, generateAIRoadmap } from '../../queries/ai-roadmap';
-import { replaceChildren } from '../../lib/dom';
+import { AIRoadmapContent } from './AIRoadmapContent';
 
 type GenerateAIRoadmapProps = {
   onRoadmapSlugChange?: (roadmapSlug: string) => void;
@@ -19,9 +19,9 @@ export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
   const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState('');
 
+  const [svgHtml, setSvgHtml] = useState('');
   const [content, setContent] = useState('');
-  const svgRef = useRef<SVGElement | null>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const svgRef = useRef<string | null>(null);
 
   useEffect(() => {
     const params = getUrlParams();
@@ -74,7 +74,7 @@ export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
           data: content,
           questionAndAnswers,
           viewCount: 0,
-          svg: svgRef.current,
+          svgHtml: svgRef.current || '',
           lastVisitedAt: new Date(),
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -92,10 +92,9 @@ export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
       onError: setError,
       onStreamingChange: setIsStreaming,
       onRoadmapSvgChange: (svg) => {
-        svgRef.current = svg;
-        if (containerRef.current) {
-          replaceChildren(containerRef.current, svg);
-        }
+        const svgHtml = svg.outerHTML;
+        svgRef.current = svgHtml;
+        setSvgHtml(svgHtml);
       },
     });
   };
@@ -112,11 +111,5 @@ export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
     );
   }
 
-  return (
-    <div
-      ref={containerRef}
-      id="roadmap-container"
-      className="relative min-h-[400px] px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
-    />
-  );
+  return <AIRoadmapContent isLoading={isLoading} svgHtml={svgHtml} />;
 }
