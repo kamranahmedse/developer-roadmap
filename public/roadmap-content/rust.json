@@ -1,7 +1,7 @@
 {
   "4U-HZQGH7kaWCB94Xy8Mh": {
     "title": "Introduction",
-    "description": "Rust is a modern system programming language focused on performance, safety, and concurrency. It accomplishes these goals without having a garbage collector, making it a useful language for a number of use cases other languages aren’t good at. Its syntax is similar to C++, but Rust offers better memory safety while maintaining high performance.",
+    "description": "Rust is a modern system programming language focused on performance, safety, and concurrency. It accomplishes these goals without having a garbage collector, making it a useful language for a number of use cases other languages aren’t good at. Its syntax is similar to C++, but Rust offers better memory safety while maintaining high performance.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Rust Book",
@@ -14,13 +14,13 @@
         "type": "opensource"
       },
       {
-        "title": "Rust by Example",
-        "url": "https://doc.rust-lang.org/stable/rust-by-example/index.html",
+        "title": "Rust Programming Language",
+        "url": "https://www.rust-lang.org/",
         "type": "article"
       },
       {
-        "title": "Official Website",
-        "url": "https://www.rust-lang.org/",
+        "title": "Rust by Example",
+        "url": "https://doc.rust-lang.org/stable/rust-by-example/index.html",
         "type": "article"
       }
     ]
@@ -30,13 +30,23 @@
     "description": "Rust is a modern system programming language focused on performance, safety, and concurrency. It accomplishes these goals without having a garbage collector, making it a useful language for a number of use cases other languages aren’t good at. Its syntax is similar to C++, but Rust offers better memory safety while maintaining high performance.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Explore top posts about Rust",
-        "url": "https://app.daily.dev/tags/rust?ref=roadmapsh",
+        "title": "Rust? What is it?",
+        "url": "https://doc.rust-lang.org/stable/rust-by-example/index.html",
         "type": "article"
       },
       {
-        "title": "Rust by example",
-        "url": "https://doc.rust-lang.org/stable/rust-by-example/index.html",
+        "title": "Rust Programming Language",
+        "url": "https://www.rust-lang.org/",
+        "type": "article"
+      },
+      {
+        "title": "What is Rust and why is it so popular?",
+        "url": "https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Rust",
+        "url": "https://app.daily.dev/tags/rust?ref=roadmapsh",
         "type": "article"
       },
       {
@@ -48,12 +58,27 @@
   },
   "VhSEH_RoWFt1z2lial7xZ": {
     "title": "Why use Rust?",
-    "description": "Rust is a system programming language that aims to provide memory safety, concurrency, and performance with a focus on zero cost abstractions. It was originally created by Graydon Hoare at Mozilla Research, with contributions from Brendan Eich, the creator of JavaScript. Rust is appreciated for the solutions it provides to common programming language issues. Its emphasis on safety, speed, and support for concurrent programming, as well as its robust type system, are just a few reasons why developers choose Rust.",
+    "description": "Rust is a system programming language that aims to provide memory safety, concurrency, and performance with a focus on zero cost abstractions. It was originally created by Graydon Hoare at Mozilla Research, with contributions from Brendan Eich, the creator of JavaScript. Rust is appreciated for the solutions it provides to common programming language issues. Its emphasis on safety, speed, and support for concurrent programming, as well as its robust type system, are just a few reasons why developers choose Rust.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Rust? What is it?",
+        "url": "https://doc.rust-lang.org/stable/rust-by-example/index.html",
+        "type": "article"
+      },
+      {
+        "title": "Rust Programming Language",
+        "url": "https://www.rust-lang.org/",
+        "type": "article"
+      },
       {
         "title": "Explore top posts about Rust",
         "url": "https://app.daily.dev/tags/rust?ref=roadmapsh",
         "type": "article"
+      },
+      {
+        "title": "What is Rust?",
+        "url": "https://www.youtube.com/watch?v=R33h77nrMqc",
+        "type": "video"
       },
       {
         "title": "Convince your boss to use Rust",
@@ -69,36 +94,125 @@
   },
   "-IqA02ObYvXPW1ot6t_b9": {
     "title": "Installing Rust and Cargo",
-    "description": "To install Rust, navigate to the official website at [https://www.rust-lang.org](https://www.rust-lang.org) and download the appropriate installation file (or run the appropriate terminal command) for your operating system. You'll be installing `rustup`, which is the preferred tool for installing, updating, and managing your core Rust tooling. For UNIX systems like Linux and MacOS, installation is as easy as running a single command in the terminal. For Windows, you'll be provided with an '.exe' installer which you need to execute. Further instructions can be found on the download page of the website.\n\nKeep in mind that for the compiler to create executables, you'll also need a linker on your operating system, such as 'GCC'. Otherwise, you'll encounter errors when you try to run `rustc` or `cargo`. This is one necessary thing that `rustup` doesn't install for you. Such linker components are part of the C standard library, so they may or may not be partially or fully preinstalled on your system. For example, a common error when running `rustc` for the first time in a 64-bit Linux environment is that your system is missing 32-bit support for GCC, which can be solved by installing `gcc-multilib`.\n\nYou can update your Rust version at any time by running `rustup update` in the terminal.",
-    "links": []
+    "description": "To install Rust, navigate to the rust official website and download the appropriate installation file (or run the appropriate terminal command) for your operating system. You'll be installing `rustup`, which is the preferred tool for installing, updating, and managing your core Rust tooling. For UNIX systems like Linux and MacOS, installation is as easy as running a single command in the terminal. For Windows, you'll be provided with an '.exe' installer which you need to execute. Further instructions can be found on the download page of the website.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Rust Programming Language",
+        "url": "https://www.rust-lang.org",
+        "type": "article"
+      },
+      {
+        "title": "Install Rust",
+        "url": "https://www.rust-lang.org/tools/install",
+        "type": "article"
+      },
+      {
+        "title": "Installation - The Rust Programming Language",
+        "url": "https://doc.rust-lang.org/book/ch01-01-installation.html",
+        "type": "article"
+      }
+    ]
   },
   "oyP1ZyOgDC4nYEQXHwdVQ": {
     "title": "IDEs and Rust Toolchains",
-    "description": "For the Rust Programming Language, several Integrated Development Environments (IDEs) and editors provide great support. [Visual Studio Code](https://code.visualstudio.com) is highly preferred among Rust developers due to its support for Rust via the \"Rust Language Server\" or \"rust-analyzer\" plugins. Another popular choice is [RustRover](https://www.jetbrains.com/rust/), a dedicated IDE for Rust development by JetBrains. Additionally, [Sublime Text](https://www.sublimetext.com) and [Atom](https://atom.io) with respective Rust-enhancement plugins are also used. For a more terminal-centric approach, [Vim](https://www.vim.org) and [Emacs](https://www.gnu.org/software/emacs/) are equipped with Rust modes. These IDEs and editors offer various features like auto-completion, syntax highlighting, and debugging tools which prove useful for Rust programming.",
-    "links": []
+    "description": "For the Rust Programming Language, several Integrated Development Environments (IDEs) and editors provide great support. Visual Studio Code is highly preferred among Rust developers due to its support for Rust via the \"Rust Language Server\" or \"rust-analyzer\" plugins. Another popular choice is RustRover, a dedicated IDE for Rust development by JetBrains. Additionally, Sublime Text and Atom with respective Rust-enhancement plugins are also used. For a more terminal-centric approach, Vim and Emacs are equipped with Rust modes. These IDEs and editors offer various features like auto-completion, syntax highlighting, and debugging tools which prove useful for Rust programming.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visual Studio Code",
+        "url": "https://code.visualstudio.com",
+        "type": "article"
+      },
+      {
+        "title": "RustRover",
+        "url": "https://www.jetbrains.com/rust/",
+        "type": "article"
+      },
+      {
+        "title": "Vim",
+        "url": "https://www.vim.org",
+        "type": "article"
+      },
+      {
+        "title": "Emacs",
+        "url": "https://www.gnu.org/software/emacs/",
+        "type": "article"
+      },
+      {
+        "title": "Atom",
+        "url": "https://atom.io",
+        "type": "article"
+      },
+      {
+        "title": "Sublime Text",
+        "url": "https://www.sublimetext.com",
+        "type": "article"
+      }
+    ]
   },
   "eYCNYtwXBjZwcPUe7QYZ-": {
     "title": "Rust REPL (Rust Playground)",
-    "description": "`Rust REPL` (Read-Eval-Print-Loop) is an interactive shell in which you can write and test Rust snippets in real-time. Unlike running a program normally in Rust where you have to manually compile and then run the program, REPL automatically evaluates your inputs, and the result is returned immediately after execution. This is helpful when experimenting with Rust code, learning the language, and debugging. REPL isn't built into Rust directly, but is available via third-party tools such as `evcxr_repl`.",
-    "links": []
+    "description": "`Rust REPL` (Read-Eval-Print-Loop) is an interactive shell in which you can write and test Rust snippets in real-time. Unlike running a program normally in Rust where you have to manually compile and then run the program, REPL automatically evaluates your inputs, and the result is returned immediately after execution. This is helpful when experimenting with Rust code, learning the language, and debugging. REPL isn't built into Rust directly, but is available via third-party tools such as `evcxr_repl`.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Rust Playground",
+        "url": "https://play.rust-lang.org/",
+        "type": "article"
+      },
+      {
+        "title": "Debugging Rust apps with GDB",
+        "url": "https://blog.logrocket.com/debugging-rust-apps-with-gdb/",
+        "type": "article"
+      },
+      {
+        "title": "Debugging Rust with rust-lldb",
+        "url": "https://dev.to/bmatcuk/debugging-rust-with-rust-lldb-j1f",
+        "type": "article"
+      },
+      {
+        "title": "Interactive Rust in a REPL and Jupyter Notebook",
+        "url": "https://depth-first.com/articles/2020/09/21/interactive-rust-in-a-repl-and-jupyter-notebook-with-evcxr/",
+        "type": "article"
+      }
+    ]
   },
   "6E4pGifNfSAq6SbzfzFNT": {
     "title": "Language Basics",
-    "description": "Rust language basics cover fundamental programming concepts including syntax and semantics, variables and data types, control flow (loops and conditionals), and functions. These elements form the foundation for writing effective Rust code and understanding how to structure and reuse code segments.",
-    "links": []
+    "description": "Rust language basics cover fundamental programming concepts including syntax and semantics, variables and data types, control flow (loops and conditionals), and functions. These elements form the foundation for writing effective Rust code and understanding how to structure and reuse code segments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Introduction - Rust By Example",
+        "url": "https://doc.rust-lang.org/stable/rust-by-example/",
+        "type": "article"
+      },
+      {
+        "title": "How to Learn Rust in 2025: A Complete Beginner's Guide",
+        "url": "https://blog.jetbrains.com/rust/2024/09/20/how-to-learn-rust/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Rust",
+        "url": "https://app.daily.dev/tags/rust?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
   },
   "Gw5E21W5zis-RUIgNSEV2": {
     "title": "Variables, DataTypes and Constants",
-    "description": "In Rust, variables are declared using the `let` keyword. All variables are immutable by default, which means once a value is bound to a variable, it cannot be changed. If you want to make a variable mutable, the `mut` keyword is used. So, if you wanted to declare a mutable variable `x` and assign it the value `5`, you would write `let mut x = 5;`. Variables can also be patterned. By default in Rust, variables are block-scoped. Rust also supports several types of variable attributes.\n\nLearn more from the following links:",
+    "description": "In Rust, variables are declared using the `let` keyword. All variables are immutable by default, which means once a value is bound to a variable, it cannot be changed. If you want to make a variable mutable, the `mut` keyword is used. So, if you wanted to declare a mutable variable `x` and assign it the value `5`, you would write `let mut x = 5;`. Variables can also be patterned. By default in Rust, variables are block-scoped. Rust also supports several types of variable attributes.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Variables and Mutability",
-        "url": "https://rust-book.cs.brown.edu/ch03-01-variables-and-mutability.html",
+        "url": "https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html",
         "type": "article"
       },
       {
         "title": "Data Types",
-        "url": "https://rust-book.cs.brown.edu/ch03-02-data-types.html",
+        "url": "https://doc.rust-lang.org/book/ch03-02-data-types.html",
+        "type": "article"
+      },
+      {
+        "title": "Constants",
+        "url": "https://doc.rust-lang.org/rust-by-example/custom_types/constants.html",
         "type": "article"
       }
     ]
@@ -109,38 +223,58 @@
     "links": [
       {
         "title": "Control Flow",
-        "url": "https://rust-book.cs.brown.edu/ch03-05-control-flow.html",
+        "url": "https://doc.rust-lang.org/book/ch03-05-control-flow.html",
         "type": "article"
       },
       {
         "title": "Concise Control Flow with if let",
         "url": "https://rust-book.cs.brown.edu/ch06-03-if-let.html",
         "type": "article"
+      },
+      {
+        "title": "Mastering Control Flow in Rust",
+        "url": "https://dev.to/iamdipankarpaul/mastering-control-flow-in-rust-36fd",
+        "type": "article"
       }
     ]
   },
   "5hKJaMKpeFEUi3S1Hpiyk": {
     "title": "Functions and Method Syntax",
-    "description": "In Rust, functions are declared using the `fn` keyword. Each function can take a set of input variables with their specified types, and may return data of a specified type. The body of a function is contained within curly braces `{}`. Unlike other languages, in Rust, you don't need to end the last statement in a block with a semicolon; omitting the last semicolon of a block in this way turns the last statement into an expression, and the result of this expression becomes the implicit return value of the block. In other words, if we want to return a value, we simply write the expression we want to return.\n\nAn example of a function that returns implicitly in Rust is `fn add(one: i32, two: i32) -> i32 { one + two }`, where `one` and `two` are parameters of type `i32`. This function returns an integer of type `i32`, which is the result of `one + two`. Rust also has an explicit `return` keyword to exit a function with a given value, like so: `fn add(one: i32, two: i32) -> i32 { return one + two; }`. Using a `return` statement versus the implicit return syntax is mostly a matter of preference.\n\nLearn more from the following links:",
+    "description": "In Rust, functions are declared using the `fn` keyword. Each function can take a set of input variables with their specified types, and may return data of a specified type. The body of a function is contained within curly braces `{}`. Unlike other languages, in Rust, you don't need to end the last statement in a block with a semicolon; omitting the last semicolon of a block in this way turns the last statement into an expression, and the result of this expression becomes the implicit return value of the block.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Functions",
-        "url": "https://rust-book.cs.brown.edu/ch03-03-how-functions-work.html",
+        "url": "https://doc.rust-lang.org/book/ch03-03-how-functions-work.html",
+        "type": "article"
+      },
+      {
+        "title": "Rust Functions Explained with Examples",
+        "url": "https://boxoflearn.com/rust-functions-complete-guide/",
         "type": "article"
       }
     ]
   },
   "yqp3UePmSlGyOYpxITis4": {
     "title": "Pattern Matching & Destructuring",
-    "description": "In Rust, \"pattern matching\" is a robust tool that allows you to destructure data types and perform conditional checks in a succinct and clear way. The main structures used for pattern matching are `match` and `if let`. The `match` keyword can be used to compare a value against a series of patterns and then execute code based on which pattern matches. Patterns can be made up of literal values, variable names, wildcards, and many other things. The `if let` structure allows you to combine `if` and `let` into a less verbose way of handling values that match one specific pattern, rather than a series of patterns. It's basically a nice syntax sugar over a `match` statement.\n\nLearn more from the following links:",
+    "description": "In Rust, \"pattern matching\" is a robust tool that allows you to destructure data types and perform conditional checks in a succinct and clear way. The main structures used for pattern matching are `match` and `if let`. The `match` keyword can be used to compare a value against a series of patterns and then execute code based on which pattern matches. Patterns can be made up of literal values, variable names, wildcards, and many other things. The `if let` structure allows you to combine `if` and `let` into a less verbose way of handling values that match one specific pattern, rather than a series of patterns. It's basically a nice syntax sugar over a `match` statement.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "The match Control Flow Construct",
-        "url": "https://rust-book.cs.brown.edu/ch06-02-match.html",
+        "title": "Patterns and Matching",
+        "url": "https://doc.rust-lang.org/book/ch19-00-patterns.html",
         "type": "article"
       },
       {
-        "title": "Concise Control Flow with if let",
+        "title": "Destructuring",
+        "url": "https://doc.rust-lang.org/rust-by-example/flow_control/match/destructuring.html",
+        "type": "article"
+      },
+      {
+        "title": "Matching",
+        "url": "https://doc.rust-lang.org/rust-by-example/flow_control/match.html",
+        "type": "article"
+      },
+      {
+        "title": "Control Flow with if let",
         "url": "https://rust-book.cs.brown.edu/ch06-03-if-let.html",
         "type": "article"
       }
@@ -148,52 +282,92 @@
   },
   "FswpjWqqt8-BzUTsDDjel": {
     "title": "Enums",
-    "description": "An enum, short for enumeration, is a custom data type that allows you to define a type by enumerating (listing out one-by-one) all of its possible variants. In Rust, if something is one of a given set of possibilities (e.g., `Rock` or `Paper` or `Scissors`), it's probably appropriate to represent that data with an enum, like so: `enum RpsChoice { Rock, Paper, Scissors }`.\n\nAn instance of an `enum` can be one and only one of the enum's declared variants at any given time. Unlike enumerations in some other languages, variants in Rust are not restricted to a singular data type. When you define an `enum`, you can decide for each of its possible variants whether or not that variant will hold additional embedded data; each variant of the enum is also allowed to hold data of completely different types and amounts. You can even embed structs and other enums in a variant, making enums incredibly versatile.\n\nEnums in Rust are one way to enable simple pattern matching for a value, which allows you to compare the interior structure of a value to a series of patterns using a `match` block. For example, you can execute different branches of code based on whether an `RpsChoice` value is `Rock`, `Paper`, or `Scissors` without a verbose tree of `if`/`else` blocks. You can also handle whatever data might be embedded within that instance of the enum variant, as you will do frequently with Rust's standard `Option<T>` and `Result<T, E>` enums.\n\nLearn more from the following links:",
+    "description": "An enum, short for enumeration, is a custom data type that allows you to define a type by enumerating (listing out one-by-one) all of its possible variants. In Rust, if something is one of a given set of possibilities (e.g., `Rock` or `Paper` or `Scissors`), it's probably appropriate to represent that data with an enum, like so: `enum RpsChoice { Rock, Paper, Scissors }`.\n\nAn instance of an `enum` can be one and only one of the enum's declared variants at any given time. Unlike enumerations in some other languages, variants in Rust are not restricted to a singular data type. When you define an `enum`, you can decide for each of its possible variants whether or not that variant will hold additional embedded data; each variant of the enum is also allowed to hold data of completely different types and amounts.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Defining an Enum",
-        "url": "https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html",
+        "url": "https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding and Implementing Enums in Rust",
+        "url": "https://towardsdev.com/understanding-and-implementing-enums-in-rust-6eae37b6b5e3",
         "type": "article"
       }
     ]
   },
   "Mi9mQ-8gyDPd8Mbu1zuHt": {
     "title": "Structs",
-    "description": "In Rust, a struct is a custom data type used for grouping related values together into one entity. Structs are similar to classes in other programming languages. Essentially, each `struct` creates a new type that we can use to streamline complex data handling.\n\nThere are three types of `struct` in Rust: classic 'C' structs, tuple structs, and unit structs.\n\n*   **Classic 'C' structs** are named-field structs and are the most commonly used.\n*   **Tuple structs**, while not being common, are useful when you want to couple together just a few data points that don't need field names.\n*   **Unit structs** are useful in situations where you want to implement a **trait** on some type, but don't have any data that you want to store in the type itself.\n\nLearn more from the following links:",
+    "description": "In Rust, a struct is a custom data type used for grouping related values together into one entity. Structs are similar to classes in other programming languages. Essentially, each `struct` creates a new type that we can use to streamline complex data handling.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Defining and Instantiating Structs",
-        "url": "https://rust-book.cs.brown.edu/ch05-01-defining-structs.html",
+        "url": "https://doc.rust-lang.org/book/ch05-01-defining-structs.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Structs in Rust: A Complete Guide with Examples",
+        "url": "https://medium.com/@er.pwndhull07/understanding-structs-in-rust-a-complete-guide-with-examples-621bf9753b88",
         "type": "article"
       }
     ]
   },
   "SJMuIEuHp8X6nfLb0k0TU": {
     "title": "Traits",
-    "description": "Traits in Rust define behaviors that are shared among different data types. Implementing traits for data types is a great way to group method signatures together and define a set of behaviors your types require. Essentially, anything with a certain `trait` applied to it will \"inherit\" the behavior of that trait's methods, but this is not the same thing as inheritance found in object-oriented programming languages.\n\nTraits are abstract; it's not possible to create instances of traits. However, we can define pointers of trait types, and these can hold any data type that implements the `trait`. A `trait` is **implemented** for something else with the syntax `impl TraitAbc for Xyz {...}`, which can be a concrete type or another trait.\n\nYou should read carefully about traits in Rust and understand how some common traits, like `Copy`, are already implemented for various primitive types and how this could affect your program.\n\nLearn more from the following links:",
+    "description": "Traits in Rust define behaviors that are shared among different data types. Implementing traits for data types is a great way to group method signatures together and define a set of behaviors your types require. Essentially, anything with a certain `trait` applied to it will \"inherit\" the behavior of that trait's methods, but this is not the same thing as inheritance found in object-oriented programming languages.\n\nTraits are abstract; it's not possible to create instances of traits. However, we can define pointers of trait types, and these can hold any data type that implements the `trait`. A `trait` is **implemented** for something else with the syntax `impl TraitAbc for Xyz {...}`, which can be a concrete type or another trait.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Traits: Defining Shared Behaviour",
         "url": "https://doc.rust-lang.org/book/ch10-02-traits.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Traits and Trait Bounds in Rust",
+        "url": "https://leapcell.medium.com/understanding-traits-and-trait-bounds-in-rust-d575f19dd649",
         "type": "article"
       }
     ]
   },
   "HzWHDQZjA9OgVZEWrmhKf": {
     "title": "Impl Blocks",
-    "description": "Impl blocks use the `impl` keyword, and are used to **implement** behavior in the form of **methods** for a `struct`, `enum`, or `trait`. If you want your data type or trait to have methods, you need a corresponding `impl` block containing functions for the type or trait.\n\nNote that `self` and `Self` have different meanings in the context of an `impl` block's functions. `self` represents the specific value in your program that's calling the method and passing itself as an argument, while `Self` is syntax sugar for the `impl` block's data type, which is commonly used in constructor methods that return a new instance of the type.\n\nLearn more from the following links:",
+    "description": "Impl blocks use the `impl` keyword, and are used to **implement** behavior in the form of **methods** for a `struct`, `enum`, or `trait`. If you want your data type or trait to have methods, you need a corresponding `impl` block containing functions for the type or trait.\n\nNote that `self` and `Self` have different meanings in the context of an `impl` block's functions. `self` represents the specific value in your program that's calling the method and passing itself as an argument, while `Self` is syntax sugar for the `impl` block's data type, which is commonly used in constructor methods that return a new instance of the type.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Keyword impl",
+        "url": "https://doc.rust-lang.org/std/keyword.impl.html",
+        "type": "article"
+      },
       {
         "title": "Method Syntax",
         "url": "https://rust-book.cs.brown.edu/ch05-03-method-syntax.html",
+        "type": "article"
+      },
+      {
+        "title": "Rust: Understanding Structs and impl Blocks with 10 Examples",
+        "url": "https://medium.com/@TechSavvyScribe/rust-understanding-structs-and-impl-blocks-with-10-examples-20371f90b1ed",
         "type": "article"
       }
     ]
   },
   "FHZSxSiOZYNBEz6tu8wuF": {
     "title": "Integers",
-    "description": "In Rust, integers are a primitive data type that hold whole number values, both positive and negative. Integer types in Rust can be divided into signed and unsigned ones:\n\n*   Signed integers, denoted by \"i\", are those that can hold negative, zero, and positive values.\n*   Unsigned integers, denoted by \"u\", only hold zero and positive values.\n\nEach denotation is followed by a number which represents the number of bits they occupy in memory. The available integer types are:\n\nType\n\nMinimum\n\nMaximum\n\ni8\n\n\\-(2^7)\n\n(2^7)-1\n\ni16\n\n\\-(2^15)\n\n(2^15)-1\n\ni32\n\n\\-(2^31)\n\n(2^31)-1\n\ni64\n\n\\-(2^63)\n\n(2^63)-1\n\ni128\n\n\\-(2^127)\n\n(2^127)-1)\n\nisize\n\n\\-(2^31) or -(2^63)\n\n(2^31)-1 or (2^63)-1\n\nThe unsigned integer types consist of:\n\nType\n\nMinimum\n\nMaximum\n\nu8\n\n0\n\n(2^8)-1\n\nu16\n\n0\n\n(2^16)-1\n\nu32\n\n0\n\n(2^32)-1\n\nu64\n\n0\n\n(2^64)-1\n\nu128\n\n0\n\n(2^128)-1\n\nusize\n\n0\n\n(2^32)-1 or (2^64)-1\n\nIn these types, the number after \"i\" or \"u\" denotes the size of the integer type in bits.\n\nThere's also the `isize` and `usize` integer types. The sizes of these primitive are taken from the computer architecture (32/64 bits). When one of these types is declared, the compiler calculates, so to speak, how many bytes it takes to reference any location in memory. For example, on a 32-bit target, this is 4 bytes, and on a 64-bit target, this is 8 bytes.\n\n*   [@article@Integer Data Type in Rust](https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types)\n    \n*   [@article@Rust Data Types (With Examples)](https://www.programiz.com/rust/data-types#integer-type)\n    \n*   [@article@Machine-dependent Integer Types](https://doc.rust-lang.org/reference/types/numeric.html#machine-dependent-integer-types)\n    \n\nLearn more from the following links:",
+    "description": "In Rust, integers are a primitive data type that hold whole number values, both positive and negative. Integer types in Rust can be divided into signed and unsigned ones:\n\n*   Signed integers, denoted by \"i\", are those that can hold negative, zero, and positive values.\n*   Unsigned integers, denoted by \"u\", only hold zero and positive values.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Integer Data Type in Rust",
+        "url": "https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types",
+        "type": "article"
+      },
+      {
+        "title": "Machine-dependent Integer Types",
+        "url": "https://doc.rust-lang.org/reference/types/numeric.html#machine-dependent-integer-types",
+        "type": "article"
+      },
+      {
+        "title": "Rust Data Types (With Examples)",
+        "url": "https://www.programiz.com/rust/data-types#integer-type",
+        "type": "article"
+      },
       {
         "title": "Integer Types",
         "url": "https://rust-book.cs.brown.edu/ch03-02-data-types.html#integer-types",
@@ -206,13 +380,13 @@
     "description": "Rust's `bool` primitive type represents truth values with two possible states: `true` or `false`. Booleans are used in conditional statements and logical operations like `&&` (AND), `||` (OR), and `!` (NOT). When cast to integers, `true` becomes `1` and `false` becomes `0`. Example: `let is_active: bool = true;`\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "The Boolean Type",
-        "url": "https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-boolean-type",
+        "title": "bool",
+        "url": "https://doc.rust-lang.org/std/primitive.bool.html",
         "type": "article"
       },
       {
-        "title": "bool - Rust",
-        "url": "https://doc.rust-lang.org/std/primitive.bool.html",
+        "title": "The Boolean Type",
+        "url": "https://rust-book.cs.brown.edu/ch03-02-data-types.html#the-boolean-type",
         "type": "article"
       },
       {
@@ -224,10 +398,10 @@
   },
   "rNHHp1GgmRnKIYlZayi59": {
     "title": "Floats",
-    "description": "In Rust, `floats` are a primitive data types used to represent floating-point numbers. They are defined as numerical values with fractional components. Floating-point numbers are represented according to the IEEE-754 standard.\n\nRust supports two types of floating-point numbers: `f32` and `f64`. These are 32-bit and 64-bit in size, respectively.\n\n*   `f32` (_binary32_ type defined in IEEE-754-2008) is a single-precision float, which means is less precise than `f64` type.\n*   `f64` (_binary64_ type defined in IEEE-754-2008) has double precision. The default type is `f64` because on modern CPUs it’s roughly the same speed as `f32` but allows more precision.\n\nBoth `f32` and `f64` represent negative, zero and positive floating-point values.\n\nLearn more from the following links:",
+    "description": "In Rust, `floats` are a primitive data types used to represent floating-point numbers. They are defined as numerical values with fractional components. Floating-point numbers are represented according to the IEEE-754 standard.\n\nRust supports two types of floating-point numbers: `f32` and `f64`. These are 32-bit and 64-bit in size, respectively.\n\n*   `f32` (_binary32_ type defined in IEEE-754-2008) is a single-precision float, which means is less precise than `f64` type.\n*   `f64` (_binary64_ type defined in IEEE-754-2008) has double precision. The default type is `f64` because on modern CPUs it’s roughly the same speed as `f32` but allows more precision.\n\nBoth `f32` and `f64` represent negative, zero and positive floating-point values.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "f32 - Rust",
+        "title": "f32",
         "url": "https://doc.rust-lang.org/std/primitive.f32.html",
         "type": "article"
       },
@@ -279,7 +453,7 @@
     "description": "Tuples are fixed-size collections that can hold elements of different types. Access elements using dot notation with zero-based indexing: `tuple.0`, `tuple.1`, etc. Example: `let data: (i32, f64, char) = (42, 3.14, 'x');`. Useful for grouping related values of different types and multiple variable assignments.\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "Tuple - Rust",
+        "title": "Tuple",
         "url": "https://doc.rust-lang.org/std/primitive.tuple.html",
         "type": "article"
       },
@@ -297,20 +471,20 @@
   },
   "Hu1jf46OpX44nam_UvYqc": {
     "title": "String",
-    "description": "Rust's `String` is a growable, mutable, UTF-8 encoded string type stored on the heap. Unlike string slices (`&str`), `String` owns its data and can be modified. Create with `String::from(\"text\")` or `\"text\".to_string()`. Common operations include `push_str()`, `push()`, and concatenation with `+` or `format!()` macro.\n\nLearn more from the following links:",
+    "description": "Rust's `String` is a growable, mutable, UTF-8 encoded string type stored on the heap. Unlike string slices (`&str`), `String` owns its data and can be modified. Create with `String::from(\"text\")` or `\"text\".to_string()`. Common operations include `push_str()`, `push()`, and concatenation with `+` or `format!()` macro.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "String in std::string - Rust",
+        "title": "String",
         "url": "https://doc.rust-lang.org/std/string/struct.String.html",
         "type": "article"
       },
       {
-        "title": "str - Rust",
+        "title": "str",
         "url": "https://doc.rust-lang.org/std/primitive.str.html",
         "type": "article"
       },
       {
-        "title": "What Is a String?",
+        "title": "What as a String?",
         "url": "https://doc.rust-lang.org/book/ch08-02-strings.html?highlight=String#what-is-a-string",
         "type": "article"
       },
@@ -331,7 +505,7 @@
     "description": "Arrays are fixed-size collections of elements of the same type stored consecutively in memory. Size must be known at compile time and cannot change. Syntax: `let arr: [type; size] = [elements];`. Example: `let nums: [i32; 3] = [1, 2, 3];`. Access elements with zero-based indexing: `arr[0]`.\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "Rust - array",
+        "title": "Array",
         "url": "https://doc.rust-lang.org/std/primitive.array.html",
         "type": "article"
       },
@@ -357,7 +531,7 @@
     "description": "`HashMap<K, V>` stores key-value pairs using hashing for fast lookups, insertions, and removals. Keys must be unique; duplicate keys replace old values. Rust uses cryptographically strong hashing for security. Items are unordered. Example: `HashMap::new()` or `HashMap::from([(\"key\", \"value\")])`.\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "HashMap in std::collections - Rust",
+        "title": "HashMap in std::collections",
         "url": "https://doc.rust-lang.org/std/collections/struct.HashMap.html",
         "type": "article"
       },
@@ -380,10 +554,10 @@
   },
   "PskCueCc9pSxfnSzfdX-u": {
     "title": "Vector",
-    "description": "`Vec<T>` is Rust's growable, heap-allocated array that stores elements of the same type contiguously. Unlike arrays, vectors can resize at runtime. Key methods include `push()` to add elements, `pop()` to remove the last element, and `len()` for size. Example: `let mut v = vec![1, 2, 3];`\n\nLearn more from the following links:",
+    "description": "`Vec<T>` is Rust's growable, heap-allocated array that stores elements of the same type contiguously. Unlike arrays, vectors can resize at runtime. Key methods include `push()` to add elements, `pop()` to remove the last element, and `len()` for size. Example: `let mut v = vec![1, 2, 3];`\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Vec in std::vec - Rust",
+        "title": "Vector",
         "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html",
         "type": "article"
       },
@@ -398,7 +572,7 @@
         "type": "article"
       },
       {
-        "title": "Rust: Vectors",
+        "title": "Rust Vectors",
         "url": "https://www.youtube.com/watch?v=nOKOFYzvvHo&t=97s&pp=ygUMcnVzdCB2ZWN0b3Jz",
         "type": "video"
       },
@@ -414,7 +588,7 @@
     "description": "`HashSet<T>` is a collection of unique elements using hash-based storage for fast lookups, insertions, and deletions. No duplicates are allowed and elements are unordered. Provides methods like `insert()`, `contains()`, and `remove()`. Example: `let mut set = HashSet::new(); set.insert(\"value\");`\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "HashSet in std::collections - Rust",
+        "title": "HashSet in std::collections",
         "url": "https://doc.rust-lang.org/std/collections/struct.HashSet.html",
         "type": "article"
       },
@@ -432,35 +606,55 @@
   },
   "iR0ewc2yURqS7bfMWfoBi": {
     "title": "LinkedList",
-    "description": "`LinkedList<T>` is a doubly-linked list where each node contains a value and pointers to both next and previous nodes. Provides O(1) insertion/removal at both ends but O(n) indexing. Generally slower than `Vec` and rarely needed; `VecDeque` is usually preferred for queue operations.\n\nLearn more from the following links:",
+    "description": "`LinkedList<T>` is a doubly-linked list where each node contains a value and pointers to both next and previous nodes. Provides O(1) insertion/removal at both ends but O(n) indexing. Generally slower than `Vec` and rarely needed; `VecDeque` is usually preferred for queue operations.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "LinkedList in std::collections",
+        "url": "https://doc.rust-lang.org/std/collections/struct.LinkedList.html",
+        "type": "article"
+      },
       {
         "title": "Too Many Linked Lists",
         "url": "https://rust-unofficial.github.io/too-many-lists/",
-        "type": "opensource"
-      },
-      {
-        "title": "LinkedList in std::collections - Rust",
-        "url": "https://doc.rust-lang.org/std/collections/struct.LinkedList.html",
         "type": "article"
       }
     ]
   },
   "B-S1hE-ofNTutnkc2hJBf": {
     "title": "Stack",
-    "description": "Stack is a LIFO (Last-In-First-Out) data structure where elements are added and removed from the same end. In Rust, the call stack manages function calls, with each call pushing a frame and returns popping it. Stack memory is fast but limited in size, with stack overflow occurring when exceeded.\n\nLearn more from the following links:",
+    "description": "Stack is a LIFO (Last-In-First-Out) data structure where elements are added and removed from the same end. In Rust, the call stack manages function calls, with each call pushing a frame and returns popping it. Stack memory is fast but limited in size, with stack overflow occurring when exceeded.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Box, Stack and Heap",
         "url": "https://doc.rust-lang.org/rust-by-example/std/box.html",
+        "type": "article"
+      },
+      {
+        "title": "std::collections",
+        "url": "https://doc.rust-lang.org/std/collections/index.html",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with SQLx and SQLite in Rust",
+        "url": "https://medium.com/rustaceans/getting-started-with-sqlx-and-sqlite-in-rust-895ae7fc01ae",
         "type": "article"
       }
     ]
   },
   "fq2NMV-QV9ayJl82ZWzov": {
     "title": "Queue",
-    "description": "Queue follows FIFO (First-In-First-Out) ordering where elements are added at one end and removed from the other. Rust doesn't have a built-in queue, but `VecDeque` provides queue functionality with `push_back()` for adding and `pop_front()` for removing elements efficiently.\n\nLearn more from the following links:",
+    "description": "Queue follows FIFO (First-In-First-Out) ordering where elements are added at one end and removed from the other. Rust doesn't have a built-in queue, but `VecDeque` provides queue functionality with `push_back()` for adding and `pop_front()` for removing elements efficiently.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "VecDeque in std::collections",
+        "url": "https://doc.rust-lang.org/std/collections/struct.VecDeque.html",
+        "type": "article"
+      },
+      {
+        "title": "Working with Queues in Rust",
+        "url": "https://basillica.medium.com/working-with-queues-in-rust-5a5afe82da46",
+        "type": "article"
+      },
       {
         "title": "Queues",
         "url": "https://docs.rs/queues/latest/queues/",
@@ -476,13 +670,33 @@
         "title": "BinaryHeap",
         "url": "https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html",
         "type": "article"
+      },
+      {
+        "title": "The Rust Guide - BinaryHeap",
+        "url": "https://rust-guide.com/en/documentation/collections/BinaryHeap",
+        "type": "article"
+      },
+      {
+        "title": "Comprehensive Guide to BinaryHeap in Rust",
+        "url": "https://www.gyata.ai/rust/binaryheap",
+        "type": "article"
       }
     ]
   },
   "2UQ3AuGkDbT0-54l0rOGM": {
     "title": "Ownsership Rules & Memory Safety",
-    "description": "Rust's ownership has three key rules: each value has exactly one owner, only one owner exists at a time, and values are dropped when owners go out of scope. This prevents data races, ensures memory safety without garbage collection, and eliminates common bugs like use-after-free and memory leaks.\n\nLearn more from the following links:",
+    "description": "Rust's ownership has three key rules: each value has exactly one owner, only one owner exists at a time, and values are dropped when owners go out of scope. This prevents data races, ensures memory safety without garbage collection, and eliminates common bugs like use-after-free and memory leaks.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "What is Ownership?",
+        "url": "https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html",
+        "type": "article"
+      },
+      {
+        "title": "Rust Ownership & Borrowing - Memory Safety Without Garbage",
+        "url": "https://webreference.com/rust/ownership/",
+        "type": "article"
+      },
       {
         "title": "What Is Ownership?",
         "url": "https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html",
@@ -496,20 +710,35 @@
     "links": [
       {
         "title": "References and Borrowing",
-        "url": "https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html",
+        "url": "https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html",
         "type": "article"
       },
       {
         "title": "The Slice Type",
         "url": "https://rust-book.cs.brown.edu/ch04-04-slices.html",
         "type": "article"
+      },
+      {
+        "title": "Borrowing and References in Rust",
+        "url": "https://codeforgeek.com/borrowing-and-references-in-rust/",
+        "type": "article"
       }
     ]
   },
   "UdXq0H8599cDTKXaIlPqt": {
     "title": "Deep Dive: Stack vs Heap",
-    "description": "Stack memory stores fixed-size data with automatic allocation/deallocation following LIFO order - fast but limited. Heap memory stores dynamic-size data with manual management - slower but flexible. Rust's ownership system ensures memory safety across both, with stack being default and heap accessed via smart pointers.\n\nLearn more from the following links:",
+    "description": "Stack memory stores fixed-size data with automatic allocation/deallocation following LIFO order - fast but limited. Heap memory stores dynamic-size data with manual management - slower but flexible. Rust's ownership system ensures memory safety across both, with stack being default and heap accessed via smart pointers.\n\nLearn more from the following resources:",
     "links": [
+      {
+        "title": "Box, Stack and Heap",
+        "url": "https://doc.rust-lang.org/rust-by-example/std/box.html",
+        "type": "article"
+      },
+      {
+        "title": "Memory Management in Rust: Stack vs. Heap",
+        "url": "https://dev.to/iamdipankarpaul/memory-management-in-rust-stack-vs-heap-3m45",
+        "type": "article"
+      },
       {
         "title": "The Stack and the Heap",
         "url": "https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/the-stack-and-the-heap.html",
@@ -546,8 +775,13 @@
   },
   "U9Bd-GO0QwYVLvESR4PTb": {
     "title": "RC",
-    "description": "`Rc<T>` (Reference Counting) enables multiple owners of the same heap-allocated data in single-threaded contexts. It tracks the number of references and automatically deallocates data when the count reaches zero. Use `Rc::clone()` to create additional references without deep copying data.\n\nLearn more from the following links:",
+    "description": "`Rc<T>` (Reference Counting) enables multiple owners of the same heap-allocated data in single-threaded contexts. It tracks the number of references and automatically deallocates data when the count reaches zero. Use `Rc::clone()` to create additional references without deep copying data.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Rc<T> in std::rc",
+        "url": "https://doc.rust-lang.org/std/rc/struct.Rc.html",
+        "type": "article"
+      },
       {
         "title": "rct - The Reference Counted Smart Pointer",
         "url": "https://doc.rust-lang.org/book/ch15-04-rc.html#rct-the-reference-counted-smart-pointer",
@@ -560,7 +794,12 @@
     "description": "`Arc<T>` (Atomic Reference Counting) is a thread-safe smart pointer for sharing immutable data across multiple threads. It uses atomic operations to track reference counts, allowing multiple ownership of heap-allocated data. When the reference count reaches zero, the data is automatically cleaned up.\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "Arc",
+        "title": "Arc in std::sync",
+        "url": "https://doc.rust-lang.org/std/sync/struct.Arc.html",
+        "type": "article"
+      },
+      {
+        "title": "Arc in Rust Lang",
         "url": "https://doc.rust-lang.org/rust-by-example/std/arc.html",
         "type": "article"
       }
@@ -568,22 +807,37 @@
   },
   "GbbeV3r27IBEKHyiyLqs6": {
     "title": "Mutex",
-    "description": "`Mutex<T>` (Mutual Exclusion) protects shared data from concurrent access by multiple threads. Only one thread can access the protected data at a time through `lock()`. Rust automatically unlocks mutexes when they go out of scope and handles panics to prevent deadlocks.\n\nLearn more from the following links:",
+    "description": "`Mutex<T>` (Mutual Exclusion) protects shared data from concurrent access by multiple threads. Only one thread can access the protected data at a time through `lock()`. Rust automatically unlocks mutexes when they go out of scope and handles panics to prevent deadlocks.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Mutex",
         "url": "https://doc.rust-lang.org/std/sync/struct.Mutex.html",
+        "type": "article"
+      },
+      {
+        "title": "Rust Mutex: From Basics to Advanced Techniques",
+        "url": "https://medium.com/@TechSavvyScribe/rust-mutex-from-basics-to-advanced-techniques-56e1f1389d9b",
+        "type": "article"
+      },
+      {
+        "title": "Rust Concurrency Made Easy: A Guide to Arc and Mutex",
+        "url": "https://www.ruststepbystep.com/rust-concurrency-made-easy-a-guide-to-arc-and-mutex/",
         "type": "article"
       }
     ]
   },
   "WzGl4DkANjUu7VC1AIWI-": {
     "title": "RwLock",
-    "description": "`RwLock<T>` (Read-Write Lock) allows multiple concurrent readers OR one exclusive writer, unlike Mutex which allows only one accessor. Use `read()` for shared access and `write()` for exclusive access. Ideal for read-heavy workloads where data is frequently read but rarely modified.\n\nLearn more from the following links:",
+    "description": "`RwLock<T>` (Read-Write Lock) allows multiple concurrent readers OR one exclusive writer, unlike Mutex which allows only one accessor. Use `read()` for shared access and `write()` for exclusive access. Ideal for read-heavy workloads where data is frequently read but rarely modified.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "RwLock",
         "url": "https://doc.rust-lang.org/std/sync/struct.RwLock.html",
+        "type": "article"
+      },
+      {
+        "title": "Rust Read-Write Locks: Managing Concurrent Read and Write Access",
+        "url": "https://medium.com/@TechSavvyScribe/rust-read-write-locks-managing-concurrent-read-and-write-access-a6ab689bbed3",
         "type": "article"
       }
     ]
@@ -596,25 +850,41 @@
         "title": "Channels",
         "url": "https://doc.rust-lang.org/rust-by-example/std_misc/channels.html",
         "type": "article"
+      },
+      {
+        "title": "Using Channels in Rust: Why and When?",
+        "url": "https://howtorust.com/using-channels-in-rust-why-and-when/",
+        "type": "article"
       }
     ]
   },
   "X2gB0m-ZKSC4TJyIcwsMx": {
     "title": "Error Handling",
-    "description": "Rust handles errors through `Result<T, E>` for operations that may fail and `Option<T>` for values that may be absent. `Result` has `Ok(T)` for success and `Err(E)` for errors, while `Option` has `Some(T)` and `None`. Pattern matching and the `?` operator enable elegant error handling and propagation. Rust doesn't use exceptions, eliminating many common error-handling problems.",
-    "links": []
+    "description": "Rust handles errors through `Result<T, E>` for operations that may fail and `Option<T>` for values that may be absent. `Result` has `Ok(T)` for success and `Err(E)` for errors, while `Option` has `Some(T)` and `None`. Pattern matching and the `?` operator enable elegant error handling and propagation. Rust doesn't use exceptions, eliminating many common error-handling problems.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Error Handling",
+        "url": "https://doc.rust-lang.org/book/ch09-00-error-handling.html",
+        "type": "article"
+      },
+      {
+        "title": "How to Handle Errors in Rust",
+        "url": "https://dev.to/nathan20/how-to-handle-errors-in-rust-a-comprehensive-guide-1cco",
+        "type": "article"
+      }
+    ]
   },
   "wQHkBydWsiGEOZMdKmz40": {
     "title": "Option and Result Enumerations",
     "description": "`Option<T>` handles nullable values with `Some(T)` and `None` variants, replacing null pointers safely. `Result<T, E>` manages error handling with `Ok(T)` for success and `Err(E)` for failures. Both enums enable safe error handling through pattern matching and method chaining.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust by Example: Option & unwrap",
+        "title": "Option & unwrap",
         "url": "https://doc.rust-lang.org/rust-by-example/error/option_unwrap.html",
         "type": "article"
       },
       {
-        "title": "Rust by Example: Result",
+        "title": "Result",
         "url": "https://doc.rust-lang.org/rust-by-example/error/result.html",
         "type": "article"
       }
@@ -625,8 +895,13 @@
     "description": "The `?` operator provides concise error propagation in functions returning `Result` or `Option`. It automatically unwraps `Ok`/`Some` values or early-returns `Err`/`None` to the caller. This eliminates verbose `match` expressions and enables clean, readable error handling patterns.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust Book: Recoverable Errors with Result",
+        "title": "Recoverable Errors with Result",
         "url": "https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Result, Option, and '?' Operators in Rust",
+        "url": "https://howtorust.com/understanding-result-option-and-operators-in-rust/",
         "type": "article"
       }
     ]
@@ -636,7 +911,7 @@
     "description": "Custom error types use `enum` to define specific error variants with attached data. Implement `Debug`, `Display`, and optionally `std::error::Error` traits for proper error handling integration. Libraries like `thiserror` provide derive macros to simplify custom error creation and formatting.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust by Example: Defining an error type",
+        "title": "Defining an Error Type",
         "url": "https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/define_error_type.html",
         "type": "article"
       }
@@ -647,8 +922,18 @@
     "description": "Modules provide namespacing and encapsulation within a crate, organizing code with `mod` keyword and controlling visibility with `pub`. Crates are compilation units (binaries or libraries) that can depend on other crates. The module system organizes code within crates, while crates enable sharing functionality between projects.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust Book: Managing Growing Projects with Packages, Crates, and Modules",
+        "title": "Crates",
+        "url": "https://doc.rust-lang.org/rust-by-example/crates.html",
+        "type": "article"
+      },
+      {
+        "title": "Managing Growing Projects with Packages, Crates, and Modules",
         "url": "https://doc.rust-lang.org/book/ch07-00-managing-growing-projects-with-packages-crates-and-modules.html",
+        "type": "article"
+      },
+      {
+        "title": "How It Works: Rust's Module System Finally Explained",
+        "url": "https://confidence.sh/blog/rust-module-system-explained/",
         "type": "article"
       }
     ]
@@ -658,12 +943,12 @@
     "description": "Rust organizes code through modules (`mod`) for grouping related functionality and crates (binary/library projects). Modules provide namespacing and can be nested. Crates are compilation units with a root file (`main.rs` or `lib.rs`) forming the module tree for libraries or executables.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust by Example: Modules",
+        "title": "Modules",
         "url": "https://doc.rust-lang.org/rust-by-example/mod.html",
         "type": "article"
       },
       {
-        "title": "The Rust Reference: Namespaces",
+        "title": "Namespaces",
         "url": "https://doc.rust-lang.org/reference/names/namespaces.html",
         "type": "article"
       },
@@ -679,13 +964,13 @@
     "description": "Cargo manages Rust projects and dependencies through `Cargo.toml` files. Dependencies are listed in `[dependencies]` sections with crate names and semantic version specifications. Cargo automatically downloads, builds, and manages external libraries (crates) from [crates.io](http://crates.io) or other sources.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust Blog: Cargo",
-        "url": "https://blog.rust-lang.org/2016/05/05/cargo-pillars.html",
+        "title": "Dependencies",
+        "url": "https://doc.rust-lang.org/rust-by-example/cargo/deps.html",
         "type": "article"
       },
       {
-        "title": "Rust by Example: Dependencies",
-        "url": "https://doc.rust-lang.org/rust-by-example/cargo/deps.html",
+        "title": "Cargo",
+        "url": "https://blog.rust-lang.org/2016/05/05/cargo-pillars.html",
         "type": "article"
       }
     ]
@@ -695,21 +980,57 @@
     "description": "Publishing Rust crates involves creating an account on [crates.io](http://crates.io), preparing proper `Cargo.toml` metadata, and using `cargo publish`. Once published, versions cannot be deleted or overwritten, ensuring dependency stability. The registry serves as Rust's central package repository for sharing libraries.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "The Cargo Book: Publishing on crates.io",
+        "title": "The Cargo Book: Publishing",
         "url": "https://doc.rust-lang.org/cargo/reference/publishing.html",
+        "type": "article"
+      },
+      {
+        "title": "From Zero to Hero: Your First Rust Crate",
+        "url": "https://medium.com/rust-programming-language/from-zero-to-hero-your-first-rust-crate-6f2c084df464",
         "type": "article"
       }
     ]
   },
   "pehYc_xLrs6BFUbcpPTiJ": {
     "title": "Concurrency & Parallelism",
-    "description": "Concurrency allows tasks to run in overlapping time periods (interleaved execution), while parallelism executes multiple tasks simultaneously on different cores. Rust provides safe concurrency primitives like channels, mutexes, and atomic operations without data races, enforced at compile time.",
-    "links": []
+    "description": "Concurrency allows tasks to run in overlapping time periods (interleaved execution), while parallelism executes multiple tasks simultaneously on different cores. Rust provides safe concurrency primitives like channels, mutexes, and atomic operations without data races, enforced at compile time.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Fearless Concurrency",
+        "url": "https://doc.rust-lang.org/book/ch16-00-concurrency.html",
+        "type": "article"
+      },
+      {
+        "title": "Rust Concurrency and Parallelism",
+        "url": "https://rustlang.app/article/Rust_concurrency_and_parallelism.html",
+        "type": "article"
+      },
+      {
+        "title": "Concurrency and Parallelism in Rust",
+        "url": "https://sterlingcobb.medium.com/concurrency-and-parallelism-in-rust-an-overview-and-examples-bd811f5a5afe",
+        "type": "article"
+      }
+    ]
   },
   "pJN260pWQVO0gHxi1-_3U": {
     "title": "Threads, Channels and Message Passing",
-    "description": "Rust provides native threading with `std::thread::spawn()` and `join()` for 1:1 OS thread mapping. Channels enable safe message passing between threads, avoiding shared state issues. This model promotes concurrent programming without data races through Rust's ownership system.\n\nLearn more from the following links:",
+    "description": "Rust provides native threading with `std::thread::spawn()` and `join()` for 1:1 OS thread mapping. Channels enable safe message passing between threads, avoiding shared state issues. This model promotes concurrent programming without data races through Rust's ownership system.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "std::thread",
+        "url": "https://doc.rust-lang.org/std/thread/",
+        "type": "article"
+      },
+      {
+        "title": "Using Message Passing to Transfer Data Between Threads",
+        "url": "https://doc.rust-lang.org/book/ch16-02-message-passing.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Threads in Rust: A Comprehensive Guide",
+        "url": "https://blog.stackademic.com/understanding-threads-in-rust-a-comprehensive-guide-7e2d23fb85b0",
+        "type": "article"
+      },
       {
         "title": "Rust Atomics and Locks - Low-Level Concurrency in Practice",
         "url": "https://marabos.nl/atomics/",
@@ -719,27 +1040,48 @@
   },
   "n1Epl_nBuoXW2OE0IKYVR": {
     "title": "Atomic Operations & Memory Barriers",
-    "description": "Atomic operations provide lock-free concurrency through uninterruptible operations like `load`, `store`, `swap`, and `compare_and_swap`. These low-level primitives enable thread-safe data sharing without locks, forming the foundation for higher-level concurrent abstractions and non-blocking data structures.\n\nLearn more from the following links:",
+    "description": "Atomic operations provide lock-free concurrency through uninterruptible operations like `load`, `store`, `swap`, and `compare_and_swap`. These low-level primitives enable thread-safe data sharing without locks, forming the foundation for higher-level concurrent abstractions and non-blocking data structures.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust Atomics and Locks - Low-Level Concurrency in Practice",
-        "url": "https://marabos.nl/atomics/",
+        "title": "fence in std::sync::atomic",
+        "url": "https://doc.rust-lang.org/std/sync/atomic/fn.fence.html",
+        "type": "article"
+      },
+      {
+        "title": "Atomic Operations and Memory Barriers",
+        "url": "https://medium.com/@murataslan1/atomic-operations-and-memory-barriers-43ee6f60ead5",
         "type": "article"
       }
     ]
   },
   "kVfBbsOHoixvqb4dYTG3Q": {
     "title": "Futures and Async/Await Paradigm",
-    "description": "Futures represent asynchronous computations that produce values or errors eventually. The `async/await` syntax provides ergonomic programming over futures, allowing asynchronous code to look synchronous. Futures are lazy and must be polled to make progress, forming the foundation of Rust's async ecosystem.",
-    "links": []
+    "description": "Futures represent asynchronous computations that produce values or errors eventually. The `async/await` syntax provides ergonomic programming over futures, allowing asynchronous code to look synchronous. Futures are lazy and must be polled to make progress, forming the foundation of Rust's async ecosystem.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Fundamentals of Asynchronous Programming",
+        "url": "https://doc.rust-lang.org/book/ch17-00-async-await.html",
+        "type": "article"
+      },
+      {
+        "title": "Async/Await in Rust: A Beginner's Guide",
+        "url": "https://leapcell.medium.com/async-await-in-rust-a-beginners-guide-8752d2c2abbf",
+        "type": "article"
+      }
+    ]
   },
   "08qKtgnhJ3tlb5JKfTDf5": {
     "title": "Testing",
     "description": "Rust has built-in testing support through `cargo test` and the `#[test]` attribute. Test functions use assertion macros like `assert!`, `assert_eq!`, and `assert_ne!` to verify expected behavior. Organize tests with unit tests, integration tests, and documentation tests for comprehensive coverage.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust Book: Writing Automated Tests",
-        "url": "https://doc.rust-lang.org/book/ch11-00-testing.html",
+        "title": "Writing Automated Tests",
+        "url": "https://doc.rust-lang.org/book/ch11-01-writing-tests.html",
+        "type": "article"
+      },
+      {
+        "title": "Testing in Rust: A Quick Guide to Unit Tests",
+        "url": "https://dev.to/tramposo/testing-in-rust-a-quick-guide-to-unit-tests-integration-tests-and-benchmarks-2bah",
         "type": "article"
       },
       {
@@ -748,7 +1090,7 @@
         "type": "article"
       },
       {
-        "title": "YouTube",
+        "title": "Mocking and Testing Rust",
         "url": "https://www.youtube.com/watch?v=8XaVlL3lObQ",
         "type": "video"
       }
@@ -759,14 +1101,24 @@
     "description": "Unit tests verify individual functions using `#[test]` and live alongside code. Integration tests are in separate files/directories and test component interactions. Rust provides `cargo test` to run both types, supporting test organization for comprehensive code verification and quality assurance.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust Book: How to Write Tests",
+        "title": "Unit Testing",
+        "url": "https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html",
+        "type": "article"
+      },
+      {
+        "title": "How to Write Tests",
         "url": "https://doc.rust-lang.org/book/ch11-01-writing-tests.html",
         "type": "article"
       },
       {
-        "title": "Rust by Example: Unit testing",
-        "url": "https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html",
+        "title": "Testing in Rust: A Quick Guide to Unit Tests",
+        "url": "https://dev.to/tramposo/testing-in-rust-a-quick-guide-to-unit-tests-integration-tests-and-benchmarks-2bah",
         "type": "article"
+      },
+      {
+        "title": "Mocking and Testing Rust",
+        "url": "https://www.youtube.com/watch?v=8XaVlL3lObQ",
+        "type": "video"
       }
     ]
   },
@@ -790,6 +1142,11 @@
         "type": "article"
       },
       {
+        "title": "Mocking in Rust: Mockall and alternatives",
+        "url": "https://blog.logrocket.com/mocking-rust-mockall-alternatives/",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Testing",
         "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
         "type": "article"
@@ -801,7 +1158,7 @@
     "description": "Traits define shared behavior that types can implement, while generics enable code reuse with type parameters. Together, they provide trait bounds (`T: Display`) to constrain generic types, ensuring they have required functionality. This enables safe, zero-cost polymorphism and code abstraction.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Book: Generic Types, Traits, and Lifetimes",
+        "title": "Generic Types, Traits, and Lifetimes",
         "url": "https://doc.rust-lang.org/book/ch10-00-generics.html",
         "type": "article"
       }
@@ -812,29 +1169,50 @@
     "description": "Traits define shared behavior as a set of method signatures that types can implement. Define with `trait Name { fn method(&self); }` and implement with `impl TraitName for Type`. Traits enable polymorphism, code reuse, and abstraction while maintaining type safety and zero-cost performance.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust by Example: Traits",
+        "title": "Traits",
         "url": "https://doc.rust-lang.org/rust-by-example/trait.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Traits and Trait Bounds in Rust",
+        "url": "https://leapcell.medium.com/understanding-traits-and-trait-bounds-in-rust-d575f19dd649",
         "type": "article"
       }
     ]
   },
   "pRDgDtRIVpNM2CdhSOS3Q": {
     "title": "Trait Bounds and Associated Types",
-    "description": "Trait bounds constrain generics by requiring types to implement specific traits (`T: Display`). Associated types define type placeholders within traits that implementors must specify. Together, they enable flexible generic programming with type safety and improved API design patterns.",
-    "links": []
+    "description": "Trait bounds constrain generics by requiring types to implement specific traits (`T: Display`). Associated types define type placeholders within traits that implementors must specify. Together, they enable flexible generic programming with type safety and improved API design patterns.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Trait and Lifetime Bounds",
+        "url": "https://doc.rust-lang.org/reference/trait-bounds.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Traits and Trait Bounds in Rust",
+        "url": "https://leapcell.medium.com/understanding-traits-and-trait-bounds-in-rust-d575f19dd649",
+        "type": "article"
+      }
+    ]
   },
   "_hxwo_iAdOwlWBltv7i6i": {
     "title": "Generics & Type-Level Programming",
     "description": "Advanced generics in Rust include `where` clauses for complex bounds, `?Sized` for unsized types, associated types, and higher-kinded types. These enable sophisticated type-level programming, allowing precise control over generic constraints and enabling powerful abstractions while maintaining zero-cost performance.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Book: Generics",
-        "url": "https://doc.rust-lang.org/book/ch10-01-syntax.html",
+        "title": "Generic Types, Traits, and Lifetimes",
+        "url": "https://doc.rust-lang.org/book/ch10-00-generics.html",
         "type": "article"
       },
       {
-        "title": "Rust by Example: Generics",
+        "title": "Generics",
         "url": "https://doc.rust-lang.org/rust-by-example/generics.html",
+        "type": "article"
+      },
+      {
+        "title": "Generics Data Type",
+        "url": "https://doc.rust-lang.org/book/ch10-01-syntax.html",
         "type": "article"
       }
     ]
@@ -844,6 +1222,16 @@
     "description": "Lifetimes define how long references remain valid, preventing dangling references and memory safety issues. The borrow checker enforces these rules at compile time. Lifetime annotations use syntax like `'a` to specify relationships between references in function signatures when the compiler can't infer them automatically.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Lifetimes",
+        "url": "https://doc.rust-lang.org/rust-by-example/scope/lifetime.html",
+        "type": "article"
+      },
+      {
+        "title": "Mastering Lifetimes in Rust: Memory Safety and Borrow Checking",
+        "url": "https://leapcell.medium.com/mastering-lifetimes-in-rust-memory-safety-and-borrow-checking-4a8c082a54ee",
+        "type": "article"
+      },
+      {
         "title": "Crust of Rust: Lifetime Annotations",
         "url": "https://youtu.be/rAl-9HwD858",
         "type": "video"
@@ -852,36 +1240,90 @@
   },
   "R5HIVS-lyCp9b46aXqx2m": {
     "title": "Explicit Lifetime Annotations",
-    "description": "Explicit lifetime annotations use syntax like `'a` to specify relationships between reference lifetimes in function signatures. Required when the compiler can't infer lifetimes automatically. Example: `fn longest<'a>(x: &'a str, y: &'a str) -> &'a str` ensures all references live equally long.",
-    "links": []
+    "description": "Explicit lifetime annotations use syntax like `'a` to specify relationships between reference lifetimes in function signatures. Required when the compiler can't infer lifetimes automatically. Example: `fn longest<'a>(x: &'a str, y: &'a str) -> &'a str` ensures all references live equally long.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Explicit Annotation",
+        "url": "https://doc.rust-lang.org/rust-by-example/scope/lifetime/explicit.html",
+        "type": "article"
+      },
+      {
+        "title": "What are Lifetimes in Rust? Explained with Code Examples",
+        "url": "https://www.freecodecamp.org/news/what-are-lifetimes-in-rust-explained-with-code-examples/",
+        "type": "article"
+      }
+    ]
   },
   "qJI8GObmsxyc_tTtUEOAd": {
     "title": "Lifetime Elision Rules",
-    "description": "Lifetime elision allows the compiler to infer lifetimes in common patterns, reducing explicit annotations. Rules: each reference parameter gets its own lifetime, single input lifetime applies to all outputs, methods with `&self` propagate its lifetime to outputs. Simplifies code while maintaining safety.",
-    "links": []
+    "description": "Lifetime elision allows the compiler to infer lifetimes in common patterns, reducing explicit annotations. Rules: each reference parameter gets its own lifetime, single input lifetime applies to all outputs, methods with `&self` propagate its lifetime to outputs. Simplifies code while maintaining safety.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Lifetime Elision",
+        "url": "https://doc.rust-lang.org/reference/lifetime-elision.html",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Lifetime Elision in Rust",
+        "url": "https://masteringbackend.com/posts/understanding-lifetime-elision-in-rust",
+        "type": "article"
+      }
+    ]
   },
   "7yVvMnvCvLbFa51pESx0j": {
     "title": "Covariant & Contravariant Lifetimes",
-    "description": "Variance describes how subtyping relationships change when types are nested. Covariant types preserve ordering (`&'long T` is subtype of `&'short T`), contravariant reverses it, invariant requires exact matches. Affects how lifetimes work with references, boxes, and function parameters.",
-    "links": []
+    "description": "Variance describes how subtyping relationships change when types are nested. Covariant types preserve ordering (`&'long T` is subtype of `&'short T`), contravariant reverses it, invariant requires exact matches. Affects how lifetimes work with references, boxes, and function parameters.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Subtyping and Variance",
+        "url": "https://doc.rust-lang.org/nomicon/subtyping.html",
+        "type": "article"
+      },
+      {
+        "title": "Demystifying Covariant and Contravariant Lifetimes in Rust",
+        "url": "https://medium.com/@murataslan1/demystifying-covariant-and-contravariant-lifetimes-in-rust-76051484fe1c",
+        "type": "article"
+      }
+    ]
   },
   "eTpZXd8E2jVBmk_aSLZYV": {
     "title": "Macros & Metaprogramming",
-    "description": "Macros are code that writes code, enabling metaprogramming in Rust. Declarative macros use `macro_rules!` for pattern-based code generation, while procedural macros provide custom derives and function-like macros. They're expanded at compile time, offering zero-cost abstractions.",
-    "links": []
+    "description": "Macros are code that writes code, enabling metaprogramming in Rust. Declarative macros use `macro_rules!` for pattern-based code generation, while procedural macros provide custom derives and function-like macros. They're expanded at compile time, offering zero-cost abstractions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Macros",
+        "url": "https://doc.rust-lang.org/book/ch20-05-macros.html",
+        "type": "article"
+      },
+      {
+        "title": "macro_rules!",
+        "url": "https://doc.rust-lang.org/rust-by-example/macros.html",
+        "type": "article"
+      },
+      {
+        "title": "Macros in Rust: A Tutorial with Examples",
+        "url": "https://blog.logrocket.com/macros-in-rust-a-tutorial-with-examples/",
+        "type": "article"
+      },
+      {
+        "title": "Metaprogramming Magic in Rust: The Complete Guide",
+        "url": "https://elitedev.in/rust/metaprogramming-magic-in-rust-the-complete-guide-/",
+        "type": "article"
+      }
+    ]
   },
   "AXWXXsww7Xkl3BYgtThNe": {
     "title": "Declarative Macros with macro_rules!",
     "description": "Declarative macros use `macro_rules!` for pattern-based code generation at compile time. They match syntax patterns and expand into replacement code, enabling code reuse without runtime overhead. More limited than procedural macros but simpler to write and understand.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust Book: Macros",
-        "url": "https://doc.rust-lang.org/book/ch19-06-macros.html",
+        "title": "Macros",
+        "url": "https://doc.rust-lang.org/book/ch20-05-macros.html",
         "type": "article"
       },
       {
-        "title": "Macros by Example",
-        "url": "https://doc.rust-lang.org/reference/macros-by-example.html",
+        "title": "Macros in Rust: A Tutorial with Examples",
+        "url": "https://blog.logrocket.com/macros-in-rust-a-tutorial-with-examples/",
         "type": "article"
       }
     ]
@@ -894,6 +1336,11 @@
         "title": "Procedural Macros",
         "url": "https://doc.rust-lang.org/reference/procedural-macros.html",
         "type": "article"
+      },
+      {
+        "title": "Understanding Procedural Macros and Custom Derive",
+        "url": "https://www.gyata.ai/rust/procedural-macros-and-custom-derive",
+        "type": "article"
       }
     ]
   },
@@ -902,70 +1349,170 @@
     "description": "DSLs are specialized programming languages for specific domains. Rust macros enable creating DSLs by manipulating syntax trees and defining custom syntax patterns. This allows extending Rust's language capabilities for specialized applications like game development, configuration, or domain-specific tasks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rust by Example: Domain Specific Languages (DSLs)",
+        "title": "Domain Specific Languages (DSLs)",
         "url": "https://doc.rust-lang.org/rust-by-example/macros/dsl.html",
+        "type": "article"
+      },
+      {
+        "title": "Crafting Expressive Tools: Domain-Specific Languages (DSLs)",
+        "url": "https://medium.com/@murataslan1/crafting-expressive-tools-domain-specific-languages-dsls-in-rust-94394debe12b",
         "type": "article"
       }
     ]
   },
   "KomYBYxj0FTrJDYB3nU5B": {
     "title": "Web Development",
-    "description": "Rust offers excellent web development capabilities with frameworks like Actix, Rocket, Axum, and Warp. These provide HTTP handling, routing, middleware, and database integration. Rust's performance and safety make it ideal for high-performance web services, APIs, and microservices.",
-    "links": []
+    "description": "Rust offers excellent web development capabilities with frameworks like Actix, Rocket, Axum, and Warp. These provide HTTP handling, routing, middleware, and database integration. Rust's performance and safety make it ideal for high-performance web services, APIs, and microservices.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Rocket - Simple, Fast, Type-Safe Web Framework for Rust",
+        "url": "https://rocket.rs/",
+        "type": "article"
+      },
+      {
+        "title": "Rust for Web Development: A Beginner's Guide",
+        "url": "https://medium.com/@enravishjeni411/rust-for-web-development-a-beginners-guide-fcc994e5c090",
+        "type": "article"
+      },
+      {
+        "title": "How to Write Your First Rust Web App with Rocket and RustRover",
+        "url": "https://blog.jetbrains.com/rust/2024/02/28/how-to-write-your-first-rust-web-app-with-rocket-and-rustrover/",
+        "type": "article"
+      }
+    ]
   },
   "duQ1RO1lqq793mfb5w31P": {
     "title": "Axum",
-    "description": "Axum is a modern, ergonomic web framework built on hyper and designed for async Rust. It features excellent type safety, powerful extractors, middleware support, and seamless Tokio integration. Axum emphasizes developer experience while maintaining high performance for web services and APIs.\n\nVisit the following resources to learn more:\n\n[@official@Axum Documentation](https://docs.rs/axum/latest/axum/)",
-    "links": []
+    "description": "Axum is a modern, ergonomic web framework built on hyper and designed for async Rust. It features excellent type safety, powerful extractors, middleware support, and seamless Tokio integration. Axum emphasizes developer experience while maintaining high performance for web services and APIs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Axum Documentation",
+        "url": "https://docs.rs/axum/latest/axum/",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with Axum - Rust's Most Popular Web Framework",
+        "url": "https://www.shuttle.dev/blog/2023/12/06/using-axum-rust",
+        "type": "article"
+      }
+    ]
   },
   "3Y90v2ysoMcyjDL24H7mC": {
     "title": "Actix",
     "description": "Actix is a high-performance, pragmatic web framework for Rust built on the actor model. It features powerful middleware, WebSocket support, and excellent performance benchmarks. Actix provides a flexible, feature-rich API for building web applications, APIs, and microservices with minimal boilerplate.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Actix",
+        "title": "Actix - Actor framework for Rust",
         "url": "https://actix.rs/",
+        "type": "article"
+      },
+      {
+        "title": "Actix Documentation",
+        "url": "https://docs.rs/actix/latest/actix/",
+        "type": "article"
+      },
+      {
+        "title": "Building a Clean API in Rust with Actix Web",
+        "url": "https://medium.com/@anto18671/building-a-clean-api-in-rust-with-actix-web-a-comprehensive-guide-d084e368a988",
         "type": "article"
       }
     ]
   },
   "n5t3MUqmvrcr36VIIOw0u": {
     "title": "Leptos",
-    "description": "",
-    "links": []
+    "description": "Leptos is a rust based web framework that lets you build reactive UIs with Rust and WebAssembly. It supports SSR and CSR, fine-grained reactivity, and a rich ecosystem of libraries and tools. Leptos lets you build web applications with client-side rendering, server-side rendering, or hydration.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "leptos-rs/leptos: Build fast web applications with Rust",
+        "url": "https://github.com/leptos-rs/leptos",
+        "type": "opensource"
+      },
+      {
+        "title": "Home - Leptos",
+        "url": "https://www.leptos.dev/",
+        "type": "article"
+      },
+      {
+        "title": "Introduction - Leptos Documentation",
+        "url": "https://book.leptos.dev/",
+        "type": "article"
+      }
+    ]
   },
   "GnSBtZoN9mAehRf5Eczng": {
     "title": "Loco",
-    "description": "",
-    "links": []
+    "description": "Loco is a web framework for Rust that is inspired by Ruby on Rails, designed to help developers build MVC-style applications easily. It emphasizes simplicity, rapid development, and integrates features like ORM, background jobs, and templating engines for a productive coding experience.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Loco.rs - Productivity-first Rust Fullstack Web Framework",
+        "url": "https://loco.rs/",
+        "type": "article"
+      },
+      {
+        "title": "The Loco Guide - Loco.rs",
+        "url": "https://loco.rs/docs/getting-started/guide/",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with Loco in Rust",
+        "url": "https://www.shuttle.dev/blog/2023/12/28/using-loco-rust-rails",
+        "type": "article"
+      }
+    ]
   },
   "ApjwY_70OGG_dNIC85oBD": {
     "title": "Rocket",
     "description": "Rocket is a web framework for Rust emphasizing ease of use, expressiveness, and type safety. It features code generation via procedural macros, built-in templating, request guards, and comprehensive error handling. Rocket prioritizes developer productivity with intuitive APIs and detailed error messages.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Rocket",
+        "title": "Rocket - Simple, Fast, Type-Safe Web Framework for Rust",
         "url": "https://rocket.rs/",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with Rocket in Rust",
+        "url": "https://www.shuttle.dev/blog/2023/12/13/using-rocket-rust",
         "type": "article"
       }
     ]
   },
   "yu0f5gALho0e8wzV10yow": {
     "title": "Asynchronous Programming",
-    "description": "Async programming in Rust allows executing tasks concurrently rather than sequentially, enabling efficient resource usage especially in IO-heavy applications. Rust provides `async` and `await` keywords: `async` marks functions that can return `Future` values, while `await` pauses and resumes async functions. Popular async runtimes like Tokio and async-std manage task execution efficiently.",
-    "links": []
+    "description": "Async programming in Rust allows executing tasks concurrently rather than sequentially, enabling efficient resource usage especially in IO-heavy applications. Rust provides `async` and `await` keywords: `async` marks functions that can return `Future` values, while `await` pauses and resumes async functions. Popular async runtimes like Tokio and async-std manage task execution efficiently.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Fundamentals of Asynchronous Programming",
+        "url": "https://doc.rust-lang.org/book/ch17-00-async-await.html",
+        "type": "article"
+      },
+      {
+        "title": "async-std",
+        "url": "https://docs.rs/async-std/latest/async_std/",
+        "type": "article"
+      },
+      {
+        "title": "Demystifying Async Programming in Rust",
+        "url": "https://medium.com/@trek007/demystifying-async-programming-in-rust-a-complete-guide-with-real-world-examples-147079950f8b",
+        "type": "article"
+      },
+      {
+        "title": "Rust Async Programming: Tokio & Async-std",
+        "url": "https://medium.com/@AlexanderObregon/async-programming-in-rust-exploring-tokio-and-async-std-97d4b524cef0",
+        "type": "article"
+      }
+    ]
   },
   "H0mctp3Bj2OYfIGFDWGfz": {
     "title": "Tokio",
     "description": "Tokio is Rust's most popular async runtime for building fast, reliable network applications. It provides an async/await runtime, I/O drivers, timers, and networking primitives. Tokio enables high-performance concurrent applications by efficiently managing thousands of tasks on a small number of threads.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Tokio",
         "url": "https://tokio.rs/",
         "type": "article"
       },
       {
-        "title": "Docs.rs: Tokio",
+        "title": "Tokio Docs",
         "url": "https://docs.rs/tokio/latest/tokio/",
         "type": "article"
       }
@@ -976,8 +1523,13 @@
     "description": "`async-std` provides an asynchronous version of Rust's standard library, offering familiar APIs for async programming. It includes its own runtime, task scheduler, and async I/O primitives, designed as a drop-in replacement for std with async capabilities and intuitive syntax.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Docs.rs: async-std",
+        "title": "async-std",
         "url": "https://docs.rs/async-std/latest/async_std/",
+        "type": "article"
+      },
+      {
+        "title": "Rust Async Programming: Tokio & Async-std",
+        "url": "https://medium.com/@AlexanderObregon/async-programming-in-rust-exploring-tokio-and-async-std-97d4b524cef0",
         "type": "article"
       }
     ]
@@ -987,7 +1539,17 @@
     "description": "`smol` is a small, fast async runtime for Rust with minimal API and clean design. Built on async-std and Tokio, it supports async/await natively with efficient scheduling. Offers essential async functionality including timers, futures, and task management with superior performance in a lightweight package.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Docs.rs: smol",
+        "title": "smol-rs/smol: A small and fast async runtime for Rust",
+        "url": "https://github.com/smol-rs/smol",
+        "type": "opensource"
+      },
+      {
+        "title": "Smol - Gist of Rust",
+        "url": "https://book.gist.rs/rust/r1/smol.html",
+        "type": "article"
+      },
+      {
+        "title": "Smol Documentation",
         "url": "https://docs.rs/smol/latest/smol/",
         "type": "article"
       }
@@ -995,15 +1557,51 @@
   },
   "3pL0ARqk8uRNimopHSalW": {
     "title": "Networking",
-    "description": "Rust's `std::net` module provides networking primitives including `TcpStream`, `TcpListener`, `UdpSocket`, and address types. Built on BSD sockets, it offers low-level network operations for building networking applications. Higher-level crates like Tokio provide async networking capabilities.",
-    "links": []
+    "description": "Rust's `std::net` module provides networking primitives including `TcpStream`, `TcpListener`, `UdpSocket`, and address types. Built on BSD sockets, it offers low-level network operations for building networking applications. Higher-level crates like Tokio provide async networking capabilities.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "std::net",
+        "url": "https://doc.rust-lang.org/std/net/",
+        "type": "article"
+      },
+      {
+        "title": "TcpListener",
+        "url": "https://doc.rust-lang.org/std/net/struct.TcpListener.html",
+        "type": "article"
+      },
+      {
+        "title": "UdpSocket",
+        "url": "https://doc.rust-lang.org/std/net/struct.UdpSocket.html",
+        "type": "article"
+      },
+      {
+        "title": "TcpStream",
+        "url": "https://doc.rust-lang.org/std/net/struct.TcpStream.html",
+        "type": "article"
+      },
+      {
+        "title": "Networking Fundamentals in Rust",
+        "url": "https://medium.com/@murataslan1/networking-fundamentals-in-rust-525dcfbd5058",
+        "type": "article"
+      }
+    ]
   },
   "TtajUXZpyNx9AmdUawm-8": {
     "title": "reqwest",
     "description": "`reqwest` is a popular HTTP client library for Rust that provides both sync and async APIs for making HTTP requests. Built on `hyper` and `tokio`, it supports JSON, forms, cookies, and various authentication methods with an ergonomic, easy-to-use interface for web API interactions.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Docs.rs: Reqwest",
+        "title": "Making HTTP requests in Rust with Reqwest",
+        "url": "https://blog.logrocket.com/making-http-requests-rust-reqwest/",
+        "type": "article"
+      },
+      {
+        "title": "Exploring Reqwest in Rust",
+        "url": "https://medium.com/@chetanreddyk394/exploring-reqwest-in-rust-b91c548e69af",
+        "type": "article"
+      },
+      {
+        "title": "Reqwest Documentation",
         "url": "https://docs.rs/reqwest/latest/reqwest/",
         "type": "article"
       }
@@ -1014,13 +1612,18 @@
     "description": "Hyper is a fast, safe HTTP client/server library for Rust built on Tokio for async I/O. It supports HTTP/1 and HTTP/2 with automatic protocol negotiation. Hyper provides low-level HTTP primitives that power many higher-level web frameworks and serves as the foundation for efficient network programming.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Hyper.rs",
         "url": "https://hyper.rs/",
         "type": "article"
       },
       {
-        "title": "Docs.rs: Hyper",
+        "title": "Hyper Documentation",
         "url": "https://docs.rs/hyper/latest/hyper/",
+        "type": "article"
+      },
+      {
+        "title": "Creating a Basic HTTP Server in Rust using Hyper",
+        "url": "https://medium.com/@ajay.bhatia/creating-a-basic-http-server-in-rust-using-hyper-a-step-by-step-tutorial-459b48d61151",
         "type": "article"
       }
     ]
@@ -1030,7 +1633,17 @@
     "description": "`Quinn` is a high-performance QUIC protocol implementation for Rust built on Tokio. QUIC is a modern transport protocol offering better performance than TCP with multiplexing and security. Quinn provides async, futures-based API supporting both client and server roles for networking applications.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Docs.rs: quinn",
+        "title": "quinn-rs/quinn: Async-friendly QUIC implementation in Rust",
+        "url": "https://github.com/quinn-rs/quinn",
+        "type": "opensource"
+      },
+      {
+        "title": "Quinn — Rust Network Library",
+        "url": "https://lib.rs/crates/quinn",
+        "type": "article"
+      },
+      {
+        "title": "Quinn",
         "url": "https://docs.rs/quinn/latest/quinn/",
         "type": "article"
       }
@@ -1038,21 +1651,42 @@
   },
   "gcmKSLWfBqx4aPZOmyQsg": {
     "title": "Serialization / Deserialization",
-    "description": "Serialization converts Rust data structures into bytes for storage or transmission, while deserialization reverses the process. Serde is the standard framework with support for JSON, YAML, TOML, Binary, and more formats. Provides efficient, type-safe data conversion.",
-    "links": []
+    "description": "Serialization converts Rust data structures into bytes for storage or transmission, while deserialization reverses the process. _Serde_ is the standard framework with support for JSON, YAML, TOML, Binary, and more formats. Provides efficient, type-safe data conversion.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Serde Documentation",
+        "url": "https://docs.rs/serde/latest/serde/",
+        "type": "article"
+      },
+      {
+        "title": "Serialization and Deserialization in Rust: A Comprehensive Guide",
+        "url": "https://rustmeup.com/serialization-in-rust-with-serde",
+        "type": "article"
+      },
+      {
+        "title": "Rust Serialization: Easy Beginner's Guide with Examples",
+        "url": "https://boxoflearn.com/rust-serialization-guide/",
+        "type": "article"
+      }
+    ]
   },
   "EHErECEYws05oi59OsZpC": {
     "title": "Serde",
     "description": "Serde is Rust's most popular serialization framework for converting data structures to/from formats like JSON, YAML, TOML, and Binary. It provides `Serialize` and `Deserialize` traits with derive macros for automatic implementation. Offers high performance with customizable behavior for complex use cases.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Official Website",
+        "title": "Serde",
         "url": "https://serde.rs/",
         "type": "article"
       },
       {
-        "title": "Docs.rs: Serde",
+        "title": "Serde Documentation",
         "url": "https://docs.rs/serde/latest/serde/",
+        "type": "article"
+      },
+      {
+        "title": "Serialization in Rust with Serde",
+        "url": "https://rustmeup.com/serialization-in-rust-with-serde",
         "type": "article"
       }
     ]
@@ -1061,6 +1695,16 @@
     "title": "json-rust",
     "description": "JSON handling in Rust primarily uses `serde` and `serde_json` libraries for high-performance serialization/deserialization. These provide seamless conversion between Rust data structures and JSON, with parsing from strings/files, serialization to JSON, and direct manipulation of JSON values.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "serde-rs/serde: Serialization framework for Rust",
+        "url": "https://github.com/serde-rs/serde",
+        "type": "opensource"
+      },
+      {
+        "title": "Serde",
+        "url": "https://serde.rs/",
+        "type": "article"
+      },
       {
         "title": "Docs.rs: JSON",
         "url": "https://docs.rs/json/latest/json/",
@@ -1073,15 +1717,37 @@
       }
     ]
   },
-  "toml-rust@LmFog_qXrS9e5ARhV6OD_.md": {
+  "LmFog_qXrS9e5ARhV6OD_": {
     "title": "toml-rust",
-    "description": "",
-    "links": []
+    "description": "`toml-rs` parses and serializes TOML (Tom's Obvious, Minimal Language) configuration files in Rust. Uses serde for automatic serialization/deserialization between TOML and Rust types. Leverages Rust's trait system and type inference to convert TOML documents into statically-typed Rust structures.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "TOML",
+        "url": "https://docs.rs/toml/latest/toml/",
+        "type": "article"
+      },
+      {
+        "title": "@opensourcetoml-rs/toml-rs",
+        "url": "https://github.com/toml-rs/toml-rs",
+        "type": "article"
+      }
+    ]
   },
   "_n7emeqzf5UTxVB5-385G": {
     "title": "Database and ORM",
-    "description": "ORMs (Object-Relational Mapping) provide abstraction layers between Rust code and SQL databases. Popular Rust ORMs include Diesel (compile-time safety), SQLx (async with compile-time query checking), and Sea-ORM. They eliminate raw SQL writing while maintaining type safety and performance.",
-    "links": []
+    "description": "ORMs (Object-Relational Mapping) provide abstraction layers between Rust code and SQL databases. Popular Rust ORMs include Diesel (compile-time safety), SQLx (async with compile-time query checking), and Sea-ORM. They eliminate raw SQL writing while maintaining type safety and performance.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Diesel is a Safe, Extensible ORM and Query Builder for Rust",
+        "url": "https://diesel.rs/",
+        "type": "article"
+      },
+      {
+        "title": "Choosing the Right ORM for Rust: A Comparative Analysis",
+        "url": "https://medium.com/@wiederinchristoph/rusts-ecosystem-offers-a-variety-of-object-relational-mapping-orm-libraries-and-database-ce4690a97a61",
+        "type": "article"
+      }
+    ]
   },
   "UAXpBK3lfnq0Q4RcBehZ1": {
     "title": "Diesel",
@@ -1103,7 +1769,7 @@
         "type": "article"
       },
       {
-        "title": "YouTube",
+        "title": "Rust & SQL Databases (With Diesel)",
         "url": "https://www.youtube.com/watch?v=tRC4EIKhMzw",
         "type": "video"
       }
@@ -1114,13 +1780,18 @@
     "description": "SQLx is an async, pure-Rust SQL toolkit providing compile-time query checking for PostgreSQL, MySQL, SQLite, and MSSQL. It features macro-based query validation, strong typing, and compatibility with Tokio/async-std runtimes. SQLx eliminates runtime SQL errors through compile-time verification.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Repository",
+        "title": "launchbadge/sqlx",
         "url": "https://github.com/launchbadge/sqlx",
         "type": "opensource"
       },
       {
-        "title": "Docs.rs: sqlx",
+        "title": "sqlx Documentation",
         "url": "https://docs.rs/sqlx/latest/sqlx/",
+        "type": "article"
+      },
+      {
+        "title": "Getting Started with SQLx and SQLite in Rust",
+        "url": "https://medium.com/rustaceans/getting-started-with-sqlx-and-sqlite-in-rust-895ae7fc01ae",
         "type": "article"
       }
     ]
@@ -1130,43 +1801,86 @@
     "description": "`rusqlite` is an ergonomic SQLite library for Rust built around the sqlite3 C library. It provides simple, efficient database operations with minimal SQL knowledge required. Features seamless `serde` integration for type-safe bidirectional mapping between SQL and Rust data structures.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Repository",
+        "title": "rusqlite/rusqlite",
         "url": "https://github.com/rusqlite/rusqlite",
         "type": "opensource"
       },
       {
-        "title": "Docs.rs: rusqlite",
+        "title": "Rusqlite",
         "url": "https://docs.rs/rusqlite/latest/rusqlite/",
+        "type": "article"
+      },
+      {
+        "title": "Rust | Sqlite Database",
+        "url": "https://medium.com/@mikecode/rust-sqlite-database-rusqlite-162bad63fb5d",
         "type": "article"
       }
     ]
   },
   "Rv_Z-rbtELPZ1Nv0PZQmV": {
     "title": "Cryptography",
-    "description": "Cryptography involves securing data through encryption (making readable data unreadable) and decryption (reversing the process). Rust offers crypto libraries like `ring`, `sodiumoxide`, and `rust-crypto` for hashing, symmetric/asymmetric encryption, and digital signatures with memory-safe implementations.",
-    "links": []
+    "description": "Cryptography involves securing data through encryption (making readable data unreadable) and decryption (reversing the process). Rust offers crypto libraries like `ring`, `sodiumoxide`, and `rust-crypto` for hashing, symmetric/asymmetric encryption, and digital signatures with memory-safe implementations.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Cryptography — list of Rust libraries/crates",
+        "url": "https://lib.rs/cryptography",
+        "type": "article"
+      },
+      {
+        "title": "Awesome Rust Cryptography",
+        "url": "https://cryptography.rs/",
+        "type": "article"
+      }
+    ]
   },
   "f68x7r-qzaQfrzXnjOI2q": {
     "title": "rust-crypto",
-    "description": "`rust-crypto` is a collection of cryptographic algorithms implemented in pure Rust including AES, DES ciphers, SHA, MD5 hash functions, and RSA digital signatures. Known for speed and low memory usage, making it suitable for resource-constrained systems requiring cryptographic functionality.",
-    "links": []
+    "description": "`rust-crypto` is a collection of cryptographic algorithms implemented in pure Rust including AES, DES ciphers, SHA, MD5 hash functions, and RSA digital signatures. Known for speed and low memory usage, making it suitable for resource-constrained systems requiring cryptographic functionality.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Awesome Rust Cryptography",
+        "url": "https://cryptography.rs/",
+        "type": "article"
+      },
+      {
+        "title": "rust-crypto",
+        "url": "https://docs.rs/rust-crypto/latest/crypto/",
+        "type": "article"
+      },
+      {
+        "title": "Rust | Sqlite Database",
+        "url": "https://medium.com/@mikecode/rust-sqlite-database-rusqlite-162bad63fb5d",
+        "type": "article"
+      }
+    ]
   },
   "hzzRFb5cyXkgUdLZxaozB": {
     "title": "sodiumoxide",
-    "description": "`sodiumoxide` is a Rust binding to libsodium cryptography library, designed for easy use and misuse prevention. Provides safe, high-level, idiomatic Rust wrappers for cryptographic primitives with automatic error handling. Follows NaCl design principles for simplicity while offering libsodium performance benefits.",
-    "links": []
+    "description": "`sodiumoxide` is a Rust binding to libsodium cryptography library, designed for easy use and misuse prevention. Provides safe, high-level, idiomatic Rust wrappers for cryptographic primitives with automatic error handling. Follows NaCl design principles for simplicity while offering libsodium performance benefits.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Rust Password Hashing with Argon2id and the Sodiumoxide",
+        "url": "https://blue42.net/code/rust/examples/sodiumoxide-password-hashing/post/",
+        "type": "article"
+      },
+      {
+        "title": "sodiumoxide/sodiumoxide",
+        "url": "https://deepwiki.com/sodiumoxide/sodiumoxide",
+        "type": "article"
+      }
+    ]
   },
   "w8nxQDxmfoUHkFV66TKiq": {
     "title": "ring",
     "description": "`ring` is a safe, fast cryptography library for Rust focused on TLS and core cryptographic primitives. It includes RSA, AES, SHA, and other algorithms with compile-time and runtime safety checks. Restricts usage to safe, reviewed algorithms to prevent common cryptographic pitfalls and insecure implementations.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "ring",
+        "title": "briansmith/ring",
         "url": "https://github.com/briansmith/ring",
         "type": "opensource"
       },
       {
-        "title": "Docs.rs: ring",
+        "title": "Ring",
         "url": "https://docs.rs/ring/latest/ring/",
         "type": "article"
       }
@@ -1174,148 +1888,590 @@
   },
   "2Zyyf9q_CxmOW-z2pipL8": {
     "title": "CLI Utilities",
-    "description": "CLI utilities are command-line tools that allow users to interact with their system through text commands. Rust is excellent for building fast, reliable CLI tools due to its memory safety and performance. Popular crates like clap and structopt help parse command-line arguments, handle input validation, and generate help messages, making CLI development efficient.",
-    "links": []
+    "description": "CLI utilities are command-line tools that allow users to interact with their system through text commands. Rust is excellent for building fast, reliable CLI tools due to its memory safety and performance. Popular crates like clap and structopt help parse command-line arguments, handle input validation, and generate help messages, making CLI development efficient.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "structopt",
+        "url": "https://docs.rs/structopt/latest/structopt/",
+        "type": "article"
+      },
+      {
+        "title": "clap",
+        "url": "https://docs.rs/clap/latest/clap/",
+        "type": "article"
+      },
+      {
+        "title": "Command-line Apps",
+        "url": "https://www.rust-lang.org/what/cli/",
+        "type": "article"
+      },
+      {
+        "title": "Rust CLI Utilities - GitHub",
+        "url": "https://github.com/baldwin-sudo/rusty-utils",
+        "type": "article"
+      }
+    ]
   },
   "AId80IokM7NvGBVutmuGC": {
     "title": "clap",
-    "description": "`clap` is Rust's most popular command-line argument parser library. It provides declarative CLI definition with automatic help generation, subcommands, validation, and error handling. Supports both builder pattern and derive macros for easy CLI app development with comprehensive features.",
-    "links": []
+    "description": "`clap` is Rust's most popular command-line argument parser library. It provides declarative CLI definition with automatic help generation, subcommands, validation, and error handling. Supports both builder pattern and derive macros for easy CLI app development with comprehensive features.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "clap",
+        "url": "https://docs.rs/clap/latest/clap/",
+        "type": "article"
+      },
+      {
+        "title": "Using Clap in Rust for command line (CLI) Argument Parsing",
+        "url": "https://blog.logrocket.com/using-clap-rust-command-line-argument-parsing/",
+        "type": "article"
+      }
+    ]
   },
   "_43912wPdXgLL8v-IMHX_": {
     "title": "structopt",
-    "description": "`StructOpt` is a library for parsing command-line arguments by defining structs where fields represent flags, options, and arguments. Combines `clap`'s parsing power with Rust's type system for declarative CLI definition with automatic help generation, strong typing, and validation.",
-    "links": []
+    "description": "`StructOpt` is a library for parsing command-line arguments by defining structs where fields represent flags, options, and arguments. Combines `clap`'s parsing power with Rust's type system for declarative CLI definition with automatic help generation, strong typing, and validation.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Defining and Instantiating Structs",
+        "url": "https://doc.rust-lang.org/book/ch05-01-defining-structs.html",
+        "type": "article"
+      },
+      {
+        "title": "Parsing Command Line Args with StructOpt",
+        "url": "https://www.tenderisthebyte.com/blog/2019/05/08/parsing-cli-args-with-structopt/",
+        "type": "article"
+      }
+    ]
   },
   "YS0igALDqSanGDWva_vls": {
     "title": "termion",
-    "description": "`termion` is a pure Rust, zero-dependency library for low-level terminal manipulation and information handling. Provides cross-terminal compatibility with features like color support, input handling, and terminal-specific capabilities. Ideal for building cross-platform CLI applications without external bindings.",
-    "links": []
+    "description": "`termion` is a pure Rust, zero-dependency library for low-level terminal manipulation and information handling. Provides cross-terminal compatibility with features like color support, input handling, and terminal-specific capabilities. Ideal for building cross-platform CLI applications without external bindings.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Termion Documentation",
+        "url": "https://docs.rs/termion/latest/termion/",
+        "type": "article"
+      },
+      {
+        "title": "Implementing Terminal I/O in Rust | by Packt",
+        "url": "https://packt.medium.com/implementing-terminal-i-o-in-rust-4a44652b0f11",
+        "type": "article"
+      },
+      {
+        "title": "Making Terminal Applications in Rust with Termion",
+        "url": "https://ticki.github.io/blog/making-terminal-applications-in-rust-with-termion/",
+        "type": "article"
+      }
+    ]
   },
   "uG-EmZVZ-jc3mswOT4-7l": {
     "title": "Game Development",
-    "description": "Rust's performance and memory safety make it excellent for game development. Popular engines and frameworks include Bevy (ECS-based), Macroquad, ggez, and Fyrox. Rust handles both 2D and 3D games efficiently, with growing ecosystem support for graphics, audio, and physics.",
-    "links": []
+    "description": "Rust's performance and memory safety make it excellent for game development. Popular engines and frameworks include Bevy (ECS-based), Macroquad, ggez, and Fyrox. Rust handles both 2D and 3D games efficiently, with growing ecosystem support for graphics, audio, and physics.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Fyrox - A feature-rich game engine built in Rust",
+        "url": "https://fyrox.rs/",
+        "type": "article"
+      },
+      {
+        "title": "5 Rust Game Engines to Consider for your Next Project",
+        "url": "https://blog.logrocket.com/5-rust-game-engines-consider-next-project/",
+        "type": "article"
+      },
+      {
+        "title": "Game Development with Fyrox and Rust",
+        "url": "https://bocksdincoding.com/blog/game-development-with-fyrox-and-rust-pt-1",
+        "type": "article"
+      }
+    ]
   },
   "uyrGki0jB7DXQ0HJe2-vY": {
     "title": "bevy",
-    "description": "Bevy is a modern, data-driven game engine built in Rust featuring an ECS (Entity Component System) architecture. It supports both 2D and 3D games with modular design, custom shaders, and high performance. Bevy emphasizes developer ergonomics and provides comprehensive tools for game development.",
-    "links": []
+    "description": "Bevy is a modern, data-driven game engine built in Rust featuring an ECS (Entity Component System) architecture. It supports both 2D and 3D games with modular design, custom shaders, and high performance. Bevy emphasizes developer ergonomics and provides comprehensive tools for game development.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "bevyengine/bevy",
+        "url": "https://github.com/bevyengine/bevy",
+        "type": "opensource"
+      },
+      {
+        "title": "Bevy Engine",
+        "url": "https://bevy.org/",
+        "type": "article"
+      },
+      {
+        "title": "Bevy Documentation",
+        "url": "https://docs.rs/bevy/latest/bevy/",
+        "type": "article"
+      }
+    ]
   },
   "x9bmK_cLYpX0ebwjZUn4R": {
     "title": "fyrox",
-    "description": "Fyrox is a modern, highly optimized 3D game engine designed specifically for Rust. Leverages Rust's safety and concurrency for high performance and reliability. Features advanced lighting, shadowing, support for common 3D formats, and low-level hardware control for performance-critical applications.",
-    "links": []
+    "description": "Fyrox is a modern, highly optimized 3D game engine designed specifically for Rust. Leverages Rust's safety and concurrency for high performance and reliability. Features advanced lighting, shadowing, support for common 3D formats, and low-level hardware control for performance-critical applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "FyroxEngine/Fyrox: 3D and 2D game engine written in Rust",
+        "url": "https://github.com/FyroxEngine/Fyrox",
+        "type": "opensource"
+      },
+      {
+        "title": "Fyrox - A feature-rich game engine built in Rust",
+        "url": "https://fyrox.rs/",
+        "type": "article"
+      },
+      {
+        "title": "Game Development with Fyrox and Rust",
+        "url": "https://bocksdincoding.com/blog/game-development-with-fyrox-and-rust-pt-1",
+        "type": "article"
+      }
+    ]
   },
   "qquYnrrzUlyd8738jzj1D": {
     "title": "ggez",
-    "description": "`ggez` is a lightweight 2D game framework for Rust inspired by Love2D. Provides facilities for graphics rendering, input handling, audio manipulation, and game timing with an easy, Rusty interface. Enables developers to focus on game logic without worrying about low-level implementation details.",
-    "links": []
+    "description": "`ggez` is a lightweight 2D game framework for Rust inspired by Love2D. Provides facilities for graphics rendering, input handling, audio manipulation, and game timing with an easy, Rusty interface. Enables developers to focus on game logic without worrying about low-level implementation details.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "ggez: Rust Game Thing",
+        "url": "https://ggez.rs/",
+        "type": "article"
+      },
+      {
+        "title": "2D Game Renderer in Rust",
+        "url": "https://dev.to/trish_07/2d-game-renderer-in-rust-lets-make-a-mini-rpg-a9h",
+        "type": "article"
+      }
+    ]
   },
   "EtKhe3lgK3NoiBOjXRb2O": {
     "title": "macroquad",
-    "description": "Macroquad is a simple, cross-platform 2D game engine for Rust focusing on rapid prototyping and development. Features efficient rendering via miniquad, input handling, coroutine-based async programming, and sound support. Portable across Windows, macOS, Linux, WebAssembly, Android, and iOS.",
-    "links": []
+    "description": "Macroquad is a simple, cross-platform 2D game engine for Rust focusing on rapid prototyping and development. Features efficient rendering via miniquad, input handling, coroutine-based async programming, and sound support. Portable across Windows, macOS, Linux, WebAssembly, Android, and iOS.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Macroquad",
+        "url": "https://macroquad.rs/",
+        "type": "article"
+      },
+      {
+        "title": "Macroquad Documentation",
+        "url": "https://macroquad.rs/docs/",
+        "type": "article"
+      },
+      {
+        "title": "Rust: Create A Clicker Game With Macroquad",
+        "url": "https://dev.to/flavius_the_0th/rust-create-a-clicker-game-with-macroquad-1820",
+        "type": "article"
+      }
+    ]
   },
   "6wGShK9WEnXiby_Jm8sTO": {
     "title": "wgpu-rs",
-    "description": "`wgpu-rs` provides safe, idiomatic Rust graphics programming by abstracting over wgpu-core. Offers high-level convenience with low-level control options. Provides unified access to graphics and compute functionality across Vulkan, Metal, DirectX, and WebGPU backends for cross-platform compatibility.",
-    "links": []
+    "description": "`wgpu-rs` provides safe, idiomatic Rust graphics programming by abstracting over wgpu-core. Offers high-level convenience with low-level control options. Provides unified access to graphics and compute functionality across Vulkan, Metal, DirectX, and WebGPU backends for cross-platform compatibility.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "gfx-rs/wgpu",
+        "url": "https://github.com/gfx-rs/wgpu",
+        "type": "opensource"
+      },
+      {
+        "title": "wgpu: portable graphics library for Rust",
+        "url": "https://wgpu.rs/",
+        "type": "article"
+      },
+      {
+        "title": "wpgu docs",
+        "url": "hhttps://docs.rs/wgpu/latest/wgpu/",
+        "type": "article"
+      }
+    ]
   },
   "T1LlJz5m5wnwBvKAEuGnP": {
     "title": "GUI Development",
-    "description": "Rust offers several GUI frameworks for desktop applications including Tauri (web-based), Iced (inspired by Elm), Druid, GTK-rs, and Egui. These provide cross-platform support for creating native desktop applications with modern UI patterns and performance benefits of Rust.",
-    "links": []
+    "description": "Rust offers several GUI frameworks for desktop applications including Tauri (web-based), Iced (inspired by Elm), Druid, GTK-rs, and Egui. These provide cross-platform support for creating native desktop applications with modern UI patterns and performance benefits of Rust.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Rust and GUI Development - Comprehensive Guide",
+        "url": "https://rustmeup.com/rust-and-gui-development",
+        "type": "article"
+      },
+      {
+        "title": "The state of Rust GUI libraries",
+        "url": "https://blog.logrocket.com/state-rust-gui-libraries/",
+        "type": "article"
+      },
+      {
+        "title": "Building Beautiful and Intuitive GUIs with Rust and egui",
+        "url": "https://triophore.com/blogs/content/rust-egui-gui-development/",
+        "type": "article"
+      }
+    ]
   },
   "Q71MnFDQBkZF1c2hj13pU": {
     "title": "tauri",
-    "description": "Tauri is a framework for building lightweight, secure desktop applications using web technologies (HTML, CSS, JS) with a Rust backend. It offers smaller bundle sizes than Electron, enhanced security, and cross-platform support for Windows, macOS, and Linux with native system integration.\n\nLearn more from the following resources:",
+    "description": "Tauri is a framework for building lightweight, secure desktop applications using web technologies (HTML, CSS, JS) with a Rust backend. It offers smaller bundle sizes than Electron, enhanced security, and cross-platform support for Windows, macOS, and Linux with native system integration.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Tauri Website",
+        "title": "Tauri",
         "url": "https://tauri.app",
+        "type": "article"
+      },
+      {
+        "title": "Tauri Guides",
+        "url": "https://v1.tauri.app/v1/guides/",
+        "type": "article"
+      },
+      {
+        "title": "How to Build Cross-Platform GUI Applications with Rust & Tauri",
+        "url": "https://codezup.com/cross-platform-gui-apps-rust-tauri-guide/",
         "type": "article"
       }
     ]
   },
   "2Zp3m3Y7j6R1hK3DIVdkH": {
     "title": "gtk-rs",
-    "description": "`gtk-rs` provides Rust bindings for GTK+3 and related libraries (GObject, Glib, Cairo, Pango) enabling cross-platform GUI application development. These open-source libraries offer a Rust-friendly interface for GTK components, allowing developers to create graphical applications using Rust with native GTK functionality.",
-    "links": []
+    "description": "`gtk-rs` provides Rust bindings for GTK+3 and related libraries (GObject, Glib, Cairo, Pango) enabling cross-platform GUI application development. These open-source libraries offer a Rust-friendly interface for GTK components, allowing developers to create graphical applications using Rust with native GTK functionality.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "gtk-rs/gtk4-rs: Rust Bindings of GTK 4",
+        "url": "https://github.com/gtk-rs/gtk4-rs",
+        "type": "opensource"
+      },
+      {
+        "title": "Unlocking the GNOME stack for Rust",
+        "url": "https://gtk-rs.org/",
+        "type": "article"
+      }
+    ]
   },
   "QbdGnUoTLgMHO1NCQINIi": {
     "title": "relm",
-    "description": "`relm` is a declarative, event-driven GUI framework for Rust built on `gtk-rs` and GTK+3. Uses Model-View-Update architecture with async Futures for complex UI interactions. Features widget identification by name, seamless inter-widget communication, and leverages Rust's safe concurrency for dynamic desktop applications.",
-    "links": []
+    "description": "`relm` is a declarative, event-driven GUI framework for Rust built on `gtk-rs` and GTK+3. Uses Model-View-Update architecture with async Futures for complex UI interactions. Features widget identification by name, seamless inter-widget communication, and leverages Rust's safe concurrency for dynamic desktop applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Relm",
+        "url": "https://relm4.org/",
+        "type": "article"
+      },
+      {
+        "title": "Relm Documentation",
+        "url": "https://relm4.org/book/stable/",
+        "type": "article"
+      },
+      {
+        "title": "Relm, a GUI library, based on GTK+ and futures, written in Rust",
+        "url": "https://relm.antoyo.xyz/relm-intro/",
+        "type": "article"
+      }
+    ]
   },
   "RKXljexmLAceMYwg4D_uP": {
     "title": "Embedded and Systems",
-    "description": "Rust excels in embedded systems programming for microcontrollers and real-time applications. Its zero-cost abstractions, memory safety, and low-level control make it ideal for resource-constrained environments. Popular for IoT devices, firmware, and system-level programming without garbage collection overhead.",
-    "links": []
+    "description": "Rust excels in embedded systems programming for microcontrollers and real-time applications. Its zero-cost abstractions, memory safety, and low-level control make it ideal for resource-constrained environments. Popular for IoT devices, firmware, and system-level programming without garbage collection overhead.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Embedded Devices",
+        "url": "https://www.rust-lang.org/what/embedded",
+        "type": "article"
+      },
+      {
+        "title": "Rust for Embedded Systems",
+        "url": "https://medium.com/@enravishjeni411/rust-for-embedded-systems-a-beginner-friendly-guide-e8c171cfb359",
+        "type": "article"
+      },
+      {
+        "title": "Rust Embedded Systems: Beginner's Guide with Example",
+        "url": "https://boxoflearn.com/rust-embedded-systems-guide/",
+        "type": "article"
+      }
+    ]
   },
   "LzaO2cpDajXERqEYDjMl_": {
     "title": "embedded-hal",
-    "description": "`embedded-hal` (Hardware Abstraction Layer) provides generic traits for creating portable embedded drivers in Rust. Enables hardware-agnostic code by abstracting digital I/O, UART, I2C, SPI, and other communication protocols into a uniform API, promoting code reuse across different hardware platforms.",
-    "links": []
+    "description": "`embedded-hal` (Hardware Abstraction Layer) provides generic traits for creating portable embedded drivers in Rust. Enables hardware-agnostic code by abstracting digital I/O, UART, I2C, SPI, and other communication protocols into a uniform API, promoting code reuse across different hardware platforms.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "A Hardware Abstraction Layer (HAL) for Embedded Systems",
+        "url": "https://github.com/rust-embedded/embedded-hal",
+        "type": "opensource"
+      },
+      {
+        "title": "HALs - The Embedded Rust Book",
+        "url": "https://doc.rust-lang.org/stable/embedded-book/design-patterns/hal/index.html",
+        "type": "article"
+      }
+    ]
   },
   "L01rVq2_H4rWzlKygW5kA": {
     "title": "rppal",
-    "description": "`RPPAL` (Raspberry Pi Peripheral Access Library) provides Rust access to Raspberry Pi GPIO, I2C, PWM, SPI, and UART peripherals. Features comprehensive interrupt handling, software-based PWM, and I2C/SPI buses. Supports all Raspberry Pi models running Raspbian/Debian Stretch or newer.",
-    "links": []
+    "description": "`RPPAL` (Raspberry Pi Peripheral Access Library) provides Rust access to Raspberry Pi GPIO, I2C, PWM, SPI, and UART peripherals. Features comprehensive interrupt handling, software-based PWM, and I2C/SPI buses. Supports all Raspberry Pi models running Raspbian/Debian Stretch or newer.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "golemparts/rppal",
+        "url": "https://github.com/golemparts/rppal",
+        "type": "opensource"
+      },
+      {
+        "title": "RPPAL Documentation",
+        "url": "https://docs.golemparts.com/rppal/0.11.1/rppal/",
+        "type": "article"
+      },
+      {
+        "title": "RPPAL — Embedded dev in Rust",
+        "url": "https://lib.rs/crates/rppal",
+        "type": "article"
+      }
+    ]
   },
   "ETYrk0s5Wn80XyntNG_t1": {
     "title": "nrf-hal",
-    "description": "`nrf-hal` is a Rust Peripheral Access Crate for Nordic Semiconductor nRF52 and nRF91 series chips. Provides high-level, semantic interfaces for GPIO, timers, RNG, RTC, I2C/SPI, temperature sensors, and delay routines. Open-source Apache licensed library abstracting direct register access.",
-    "links": []
+    "description": "`nrf-hal` is a Rust Peripheral Access Crate for Nordic Semiconductor nRF52 and nRF91 series chips. Provides high-level, semantic interfaces for GPIO, timers, RNG, RTC, I2C/SPI, temperature sensors, and delay routines. Open-source Apache licensed library abstracting direct register access.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "nrf-rs/nrf-hal",
+        "url": "https://github.com/nrf-rs/nrf-hal",
+        "type": "opensource"
+      },
+      {
+        "title": "nRF-HAL — embedded dev in Rust",
+        "url": "https://lib.rs/crates/nrf-hal",
+        "type": "article"
+      },
+      {
+        "title": "What the HAL? The Quest for Finding a Suitable Embedded Rust HAL",
+        "url": "https://dev.to/theembeddedrustacean/what-the-hal-the-quest-for-finding-a-suitable-embedded-rust-hal-2i02",
+        "type": "article"
+      }
+    ]
   },
   "fusu4ZHH4-cjoouLr4F9U": {
     "title": "WebAssembly (WASM)",
-    "description": "WebAssembly is a binary instruction format that runs at near-native speed in web browsers and other environments. Rust compiles excellently to WASM with tools like `wasm-pack` and `wasm-bindgen`, enabling high-performance web applications and cross-platform deployment.",
-    "links": []
+    "description": "WebAssembly is a binary instruction format that runs at near-native speed in web browsers and other environments. Rust compiles excellently to WASM with tools like `wasm-pack` and `wasm-bindgen`, enabling high-performance web applications and cross-platform deployment.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Embedding WebAssembly in your Rust Application",
+        "url": "https://blog.wasmer.io/executing-webassembly-in-your-rust-application-d5cd32e8ce46",
+        "type": "article"
+      },
+      {
+        "title": "Writing & Compiling WASM in Rust",
+        "url": "https://www.shuttle.dev/blog/2024/03/06/writing-wasm-rust",
+        "type": "article"
+      },
+      {
+        "title": "Compiling from Rust to WebAssembly",
+        "url": "https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Rust_to_Wasm",
+        "type": "article"
+      },
+      {
+        "title": "wasm-pack",
+        "url": "https://lib.rs/crates/wasm-pack",
+        "type": "article"
+      },
+      {
+        "title": "wasm-bindgen",
+        "url": "https://docs.rs/wasm-bindgen/latest/wasm_bindgen/",
+        "type": "article"
+      }
+    ]
   },
   "SUtBBqqDeR_yAkr669ZvE": {
     "title": "wasm-bindgen",
-    "description": "`wasm-bindgen` facilitates high-level interactions between Rust and JavaScript in WebAssembly. It generates bindings allowing seamless communication, JavaScript API calls from Rust, and vice versa. Handles memory representations and call semantics for complex data types like strings and objects.",
-    "links": []
+    "description": "`wasm-bindgen` facilitates high-level interactions between Rust and JavaScript in WebAssembly. It generates bindings allowing seamless communication, JavaScript API calls from Rust, and vice versa. Handles memory representations and call semantics for complex data types like strings and objects.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "rustwasm/wasm-bindgen",
+        "url": "https://github.com/rustwasm/wasm-bindgen",
+        "type": "opensource"
+      },
+      {
+        "title": "wasm-bindgen",
+        "url": "https://docs.rs/wasm-bindgen/latest/wasm_bindgen/",
+        "type": "article"
+      },
+      {
+        "title": "Compiling from Rust to WebAssembly",
+        "url": "https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Rust_to_Wasm",
+        "type": "article"
+      }
+    ]
   },
   "TSlj7mMUB5CDTy8uMFzKV": {
     "title": "wasm-pack",
-    "description": "`wasm-pack` is a command-line tool for assembling and packaging Rust crates targeting WebAssembly. It bridges Rust/WASM and JavaScript, generating necessary files for npm publishing. Ensures proper Rust-to-WASM compilation setup with focus on ergonomics, performance, and correctness.",
-    "links": []
+    "description": "`wasm-pack` is a command-line tool for assembling and packaging Rust crates targeting WebAssembly. It bridges Rust/WASM and JavaScript, generating necessary files for npm publishing. Ensures proper Rust-to-WASM compilation setup with focus on ergonomics, performance, and correctness.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "rustwasm/wasm-pack",
+        "url": "https://github.com/rustwasm/wasm-pack",
+        "type": "opensource"
+      },
+      {
+        "title": "wasm-pack",
+        "url": "https://lib.rs/crates/wasm-pack",
+        "type": "article"
+      },
+      {
+        "title": "Writing & Compiling WASM in Rust",
+        "url": "https://www.shuttle.dev/blog/2024/03/06/writing-wasm-rust",
+        "type": "article"
+      },
+      {
+        "title": "Compiling from Rust to WebAssembly",
+        "url": "https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Rust_to_Wasm",
+        "type": "article"
+      }
+    ]
   },
   "iyFHvZj_ntr_dX6WlL4E1": {
     "title": "wasmer",
-    "description": "Wasmer is a standalone WebAssembly runtime designed to run WASM files on any platform quickly and efficiently. Features a pluggable system with different compiling strategies, friendly CLI, and embedding APIs for calling WASM functions directly from various programming languages. Lightweight and modular.",
-    "links": []
+    "description": "Wasmer is a standalone WebAssembly runtime designed to run WASM files on any platform quickly and efficiently. Features a pluggable system with different compiling strategies, friendly CLI, and embedding APIs for calling WASM functions directly from various programming languages. Lightweight and modular.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "wasmerio/wasmer",
+        "url": "https://github.com/wasmerio/wasmer",
+        "type": "opensource"
+      },
+      {
+        "title": "Embedding WebAssembly in your Rust Application",
+        "url": "https://blog.wasmer.io/executing-webassembly-in-your-rust-application-d5cd32e8ce46",
+        "type": "article"
+      },
+      {
+        "title": "Wasmer — WebAssembly in Rust",
+        "url": "https://lib.rs/crates/wasmer",
+        "type": "article"
+      },
+      {
+        "title": "Writing & Compiling WASM in Rust",
+        "url": "https://www.shuttle.dev/blog/2024/03/06/writing-wasm-rust",
+        "type": "article"
+      },
+      {
+        "title": "Compiling from Rust to WebAssembly",
+        "url": "https://developer.mozilla.org/en-US/docs/WebAssembly/Guides/Rust_to_Wasm",
+        "type": "article"
+      }
+    ]
   },
   "7YKWYxogJq6X35IAUwcZF": {
     "title": "Debugging",
-    "description": "Rust provides excellent debugging support through `rust-gdb` and `rust-lldb` debuggers, along with built-in macros like `println!`, `dbg!`, and `debug!`. The strict compiler catches many bugs at compile-time, while runtime debugging is enhanced by panic backtraces and comprehensive error messages.",
-    "links": []
+    "description": "Rust provides excellent debugging support through `rust-gdb` and `rust-lldb` debuggers, along with built-in macros like `println!`, `dbg!`, and `debug!`. The strict compiler catches many bugs at compile-time, while runtime debugging is enhanced by panic backtraces and comprehensive error messages.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Debugging Rust apps with GDB",
+        "url": "https://blog.logrocket.com/debugging-rust-apps-with-gdb/",
+        "type": "article"
+      },
+      {
+        "title": "Rust Debugging: Easy Guide with Practical Examples",
+        "url": "https://boxoflearn.com/rust-debugging-guide/",
+        "type": "article"
+      },
+      {
+        "title": "Testing and Debugging in Rust",
+        "url": "https://rustmeup.com/testing-and-debugging-in-rust",
+        "type": "article"
+      },
+      {
+        "title": "Mastering Rust Debugging: Tips & Tools",
+        "url": "https://medium.com/@AlexanderObregon/rust-debugging-strategies-tools-and-best-practices-b18b92e0a921",
+        "type": "article"
+      }
+    ]
   },
   "UkHXsAolmbk-MsJFfqObC": {
     "title": "rust-gdb",
-    "description": "`rust-gdb` is GDB (GNU Project debugger) enhanced for Rust debugging. It provides low-level debugging capabilities including breakpoints, execution tracing, runtime modification, and memory inspection. Designed for command-line debugging with deep system integration for comprehensive Rust application analysis.",
-    "links": []
+    "description": "`rust-gdb` is GDB (GNU Project debugger) enhanced for Rust debugging. It provides low-level debugging capabilities including breakpoints, execution tracing, runtime modification, and memory inspection. Designed for command-line debugging with deep system integration for comprehensive Rust application analysis.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Use rust-gdb and rust-lldb for Improved Debugging",
+        "url": "https://users.rust-lang.org/t/use-rust-gdb-and-rust-lldb-for-improved-debugging-you-already-have-them/756",
+        "type": "article"
+      },
+      {
+        "title": "Debugging Rust apps with GDB",
+        "url": "https://blog.logrocket.com/debugging-rust-apps-with-gdb/",
+        "type": "article"
+      }
+    ]
   },
   "p1w1iljGABgHoJjIRJYLY": {
     "title": "rust-lldb",
-    "description": "`rust-lldb` is LLDB debugger enhanced with Rust-specific modifications for understanding Rust data structures and concepts. It includes pretty-printers for standard library types and comes bundled with the Rust compiler, providing better debugging experience for Rust applications.",
-    "links": []
+    "description": "`rust-lldb` is LLDB debugger enhanced with Rust-specific modifications for understanding Rust data structures and concepts. It includes pretty-printers for standard library types and comes bundled with the Rust compiler, providing better debugging experience for Rust applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Using rust-lldb for Improved Debugging",
+        "url": "https://users.rust-lang.org/t/use-rust-gdb-and-rust-lldb-for-improved-debugging-you-already-have-them/756",
+        "type": "article"
+      },
+      {
+        "title": "Debugging Rust apps with GDB",
+        "url": "https://blog.logrocket.com/debugging-rust-apps-with-gdb/",
+        "type": "article"
+      },
+      {
+        "title": "Debugging Rust with rust-lldb",
+        "url": "https://dev.to/bmatcuk/debugging-rust-with-rust-lldb-j1f",
+        "type": "article"
+      }
+    ]
   },
   "65nbahPj9qAb9y8dF8Jnd": {
     "title": "Documenting with `rustdoc`",
-    "description": "",
-    "links": []
+    "description": "RustDoc is an invaluable tool within the Rust ecosystem for generating comprehensive and user-friendly documentation directly from your source code. By leveraging special documentation comments (starting with `///` for regular comments and `//!` for crate-level comments), developers can embed Markdown-formatted text, code examples, and even doctests directly alongside their functions, modules, and types. RustDoc then processes these comments to produce static HTML pages, making it easy for others (and your future self) to understand how to use your libraries and applications. This integrated approach not only promotes good documentation habits but also ensures that the documentation remains in sync with the codebase.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to Write Documentation",
+        "url": "https://doc.rust-lang.org/rustdoc/how-to-write-documentation.html",
+        "type": "article"
+      },
+      {
+        "title": "Writing Rust Documentation",
+        "url": "https://dev.to/gritmax/writing-rust-documentation-5hn5",
+        "type": "article"
+      }
+    ]
   },
   "WduD9VIcYSs_JTnuMNyxk": {
     "title": "Performance and Profiling",
-    "description": "Performance profiling in Rust identifies bottlenecks using tools like `perf`, `cargo bench`, `criterion`, and `flamegraph`. These tools collect statistical data about runtime performance, helping developers optimize code efficiently by targeting actual problem areas rather than guessing.",
-    "links": []
+    "description": "Performance profiling in Rust identifies bottlenecks using tools like `perf`, `cargo bench`, `criterion`, and `flamegraph`. These tools collect statistical data about runtime performance, helping developers optimize code efficiently by targeting actual problem areas rather than guessing.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Profiling - The Rust Performance Book",
+        "url": "https://nnethercote.github.io/perf-book/profiling.html",
+        "type": "article"
+      },
+      {
+        "title": "How to benchmark Rust code with Criterion",
+        "url": "https://bencher.dev/learn/benchmarking/rust/criterion/",
+        "type": "article"
+      },
+      {
+        "title": "Optimizing Rust Application Performance with Profiling",
+        "url": "https://hemaks.org/posts/optimizing-rust-application-performance-with-profiling/",
+        "type": "article"
+      }
+    ]
   },
   "clQ26LFV_9AdQ4evnaxUK": {
     "title": "Criterion.rs",
-    "description": "`Criterion.rs` is a statistics-driven microbenchmarking library for Rust that provides reliable performance analysis over time. It offers detailed feedback, automatic outlier detection, and statistical methods to compare algorithm performance and track regressions with actionable insights.",
-    "links": []
+    "description": "`Criterion.rs` is a statistics-driven microbenchmarking library for Rust that provides reliable performance analysis over time. It offers detailed feedback, automatic outlier detection, and statistical methods to compare algorithm performance and track regressions with actionable insights.\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Criterion",
+        "url": "https://docs.rs/criterion/latest/criterion/",
+        "type": "article"
+      },
+      {
+        "title": "Rust Benchmarking with Criterion.rs",
+        "url": "https://www.rustfinity.com/blog/rust-benchmarking-with-criterion",
+        "type": "article"
+      },
+      {
+        "title": "Benchmarking Rust Functions Using Criterion",
+        "url": "https://www.slingacademy.com/article/benchmarking-rust-functions-using-criterion/",
+        "type": "article"
+      }
+    ]
   }
 }

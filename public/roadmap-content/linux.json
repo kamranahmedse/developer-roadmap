@@ -975,6 +975,11 @@
     "description": "Process signals are communication mechanisms in Linux that notify processes of synchronous or asynchronous events. Common signals include SIGINT, SIGSTOP, SIGKILL for interrupting, pausing, or terminating processes. Example: `kill -SIGSTOP 12345` suspends process with PID 12345 until `SIGCONT` is received. Essential for comprehensive process management and resource allocation.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Process signals",
+        "url": "https://linuxjourney.com/lesson/process-signals",
+        "type": "article"
+      },
+      {
         "title": "Understanding Linux Process Signals",
         "url": "https://www.ceos3c.com/linux/understanding-linux-process-signals-a-complete/",
         "type": "article"
@@ -991,6 +996,11 @@
     "description": "The `kill` command terminates processes in Linux by sending signals to specific Process IDs (PIDs). Use `kill [signal] PID` to terminate processes manually. Different signals provide various termination methods - SIGTERM for graceful shutdown, SIGKILL for forced termination. Process termination is essential for managing unresponsive or unwanted processes.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "Killing Processes",
+        "url": "https://linuxjourney.com/lesson/killing-processes",
+        "type": "article"
+      },
+      {
         "title": "Using Kill Command in Linux",
         "url": "https://linuxhandbook.com/kill-command/",
         "type": "article"
@@ -1004,7 +1014,7 @@
   },
   "5anSYRhaKIs3dCLWlvZfT": {
     "title": "Process Priorities",
-    "description": "Linux assigns priority levels to processes for efficient resource utilization and execution timing. Priority values (\"nice\" values) range from -20 (highest) to +19 (lowest priority). View priorities with `ps -eo pid,pri,user,comm`. Change priorities using `renice -5 -p [PID]`. Essential for system performance optimization and CPU resource management.\n\nVisit the following resources to learn more:",
+    "description": "Linux assigns priority levels to processes, affecting execution timing and resource allocation. Process priorities use \"nice\" values ranging from -20 (highest priority) to +19 (lowest priority) and only root can set negative nive value. The `/proc` filesystem contains process information including priorities. You can view priorities with `ps -eo pid,pri,user,comm` and modify them using `renice` command.\n\nVisit the following resource to learn more:",
     "links": [
       {
         "title": "Understanding Process Thread Priorities in Linux",

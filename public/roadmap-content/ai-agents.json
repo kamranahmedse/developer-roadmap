@@ -1135,6 +1135,11 @@
     "description": "Model Context Protocol (MCP) is a rulebook that tells an AI agent how to pack background information before it sends a prompt to a language model. It lists what pieces go into the prompt—things like the system role, the user’s request, past memory, tool calls, or code snippets—and fixes their order. Clear tags mark each piece, so both humans and machines can see where one part ends and the next begins. Keeping the format steady cuts confusion, lets different tools work together, and makes it easier to test or swap models later. When agents follow MCP, the model gets a clean, complete prompt and can give better answers.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "MCP: Build Rich-Context AI Apps with Anthropic",
+        "url": "https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/",
+        "type": "course"
+      },
+      {
         "title": "Model Context Protocol",
         "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
         "type": "opensource"
