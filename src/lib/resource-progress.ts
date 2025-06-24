@@ -125,7 +125,8 @@ export function clearMigratedRoadmapProgress(
     'software-design-architecture',
     'rust',
     'react-native',
-    'graphql'
+    'graphql',
+    'spring-boot'
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
