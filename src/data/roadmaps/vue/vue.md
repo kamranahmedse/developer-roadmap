@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Vue Developer Roadmap: Learn to become a Vue developer'
+  title: 'Vue Developer Roadmap: Learn to become a Vue developer in 2025 - roadmap.sh'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for vue development. Learn to become a modern Vue developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming a vue developer'
@@ -27,7 +27,9 @@ seo:
     - 'vue developer roadmap'
     - 'vue.js developer roadmap'
     - 'vue roadmap'
+    - 'vue roadmap 2025'
     - 'vue.js roadmap'
+    - 'vue.js roadmap 2025'
     - 'become vue developer'
     - 'become vue.js developer'
     - 'vue developer skills'

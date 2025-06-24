@@ -19,14 +19,14 @@ schema:
   datePublished: '2023-10-26'
   dateModified: '2023-10-26'
 seo:
-  title: 'Server Side Game Developer Roadmap'
+  title: 'Server Side Game Developer Roadmap - roadmap.sh'
   description: 'Learn what Server Side Game Development is, what server side game developers do and how to become one using our community-driven roadmap.'
   keywords:
     - 'server side game developer roadmap 2024'
     - 'server side game developer roadmap 2024'
     - 'guide to becoming a server side game developer'
-    - 'guide to becoming a server side game developer'
     - 'server side game developer roadmap'
+    - 'server side game developer roadmap 2025'
     - 'server side game developer'
     - 'server side game engineer'
     - 'server side game skills'
@@ -44,6 +44,8 @@ seo:
     - 'server side game developer interview questions'
 relatedRoadmaps:
   - 'backend'
+  - 'game-developer'
+  - 'software-architect'
 sitemap:
   priority: 1
   changefreq: 'monthly'

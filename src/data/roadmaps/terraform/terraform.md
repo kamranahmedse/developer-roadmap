@@ -22,16 +22,17 @@ seo:
   description: 'Step by step guide to learn Terraform in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'terraform tutorial'
+    - 'terraform tutorial 2025'
     - 'step by step guide for terraform'
-    - 'terraform for beginners'
     - 'how to learn terraform'
-    - 'use terraform in production'
-    - 'terraform roadmap 2024'
     - 'guide to learning terraform'
+    - 'use terraform in production'
+    - 'terraform for beginners'
+    - 'terraform roadmap 2024'
+    - 'terraform roadmap 2025'
     - 'terraform roadmap'
     - 'terraform learning path'
     - 'terraform learning roadmap'
-    - 'container roadmap'
     - 'terraform'
     - 'terraform learning guide'
     - 'terraform skills'
@@ -47,6 +48,9 @@ seo:
     - 'terraform interview questions'
 relatedRoadmaps:
   - 'devops'
+  - 'aws'
+  - 'git-github'
+  - 'cloudflare'
   - 'backend'
 sitemap:
   priority: 1

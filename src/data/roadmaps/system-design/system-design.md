@@ -4,8 +4,8 @@ pdfUrl: '/pdfs/roadmaps/system-design.pdf'
 order: 8
 renderer: 'editor'
 briefTitle: 'System Design'
-briefDescription: 'Guide to learn system Design'
-title: 'System Design'
+briefDescription: 'Guide to learn System Design'
+title: 'System Design Roadmap'
 description: 'Everything you need to know about designing large scale systems.'
 isNew: false
 hasTopics: true
@@ -29,7 +29,7 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 dimensions:
   width: 968
   height: 3200
@@ -40,26 +40,26 @@ schema:
   datePublished: '2023-01-17'
   dateModified: '2023-01-17'
 seo:
-  title: 'System Design Roadmap'
-  description: 'Learn system design with this step by step guide and resources.'
+  title: 'System Design Roadmap - roadmap.sh'
+  description: 'Learn system design in 2025 with this step by step guide and resources.'
   keywords:
     - 'guide to learn system design'
-    - 'system design roadmap'
     - 'distributed systems roadmap'
     - 'modern system design roadmap'
     - 'system design roadmap'
+    - 'system design roadmap 2025'
     - 'scalable system roadmap'
     - 'system design patterns roadmap'
-    - 'system design roadmap'
+    - 'systems design roadmap'
     - 'application architectures'
     - 'system design guide'
+    - 'learn systems design'
+    - 'system design guide 2025'
 relatedRoadmaps:
-  - 'backend'
   - 'software-architect'
   - 'devops'
   - 'python'
   - 'java'
-  - 'nodejs'
   - 'golang'
   - 'engineering-manager'
 sitemap:

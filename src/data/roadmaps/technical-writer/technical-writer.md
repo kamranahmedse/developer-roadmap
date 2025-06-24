@@ -18,15 +18,19 @@ schema:
   datePublished: '2023-11-07'
   dateModified: '2023-11-07'
 seo:
-  title: 'Technical Writer Roadmap'
+  title: 'Technical Writer Roadmap - roadmap.sh'
   description: 'Learn what technical writing is, what technical writers do and how to become one using our community-driven roadmap.'
   keywords:
     - 'technical writer roadmap 2024'
+    - 'technical writer roadmap 2025'
     - 'guide to becoming a technical writer'
     - 'technical writer roadmap'
     - 'technical writer'
     - 'technical writing skills'
+    - 'technical writing skills 2025'
     - 'technical writing'
+    - 'technical documentation roadmap
+    - 'technical documentation'
     - 'technical writing test'
     - 'become a technical writer'
     - 'technical writer career path'
@@ -35,6 +39,10 @@ seo:
     - 'what is technical writing'
     - 'technical writer quiz'
     - 'technical writer interview questions'
+relatedRoadmaps:
+  - 'devrel'
+  - 'engineering-manager'
+  - 'git-github'
 sitemap:
   priority: 1
   changefreq: 'monthly'

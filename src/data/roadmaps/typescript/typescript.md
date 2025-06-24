@@ -19,11 +19,13 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'TypeScript Roadmap: Learn to become a TypeScript developer'
+  title: 'TypeScript Roadmap: Learn to become a TypeScript developer - roadmap.sh'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for typescript development. Learn to become a modern TypeScript developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'typescript roadmap 2024'
+    - 'typescript roadmap 2025'
     - 'typescript developer roadmap 2024'
+    - 'typescript developer roadmap 2025'
     - 'guide to becoming a typescript developer'
     - 'guide to learning typescript'
     - 'typescript developer roadmap'
@@ -41,6 +43,7 @@ relatedRoadmaps:
   - 'backend'
   - 'javascript'
   - 'nodejs'
+  - 'react'
 sitemap:
   priority: 1
   changefreq: 'monthly'

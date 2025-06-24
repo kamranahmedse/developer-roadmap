@@ -26,7 +26,7 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 dimensions:
   width: 968
   height: 2525
@@ -37,22 +37,22 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Software Architect Roadmap'
-  description: 'Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.'
+  title: 'Software Architect Roadmap - roadmap.sh'
+  description: 'Community driven, articles, resources, guides, interview questions, quizzes for Software Architect. Learn to become a modern software architect by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'solution architect roadmap'
+    - 'solution architect roadmap 2025'
     - 'enterprise architect roadmap'
     - 'guide to becoming a software architect'
-    - 'guide to becoming a Software Architect'
-    - 'software architect roadmap'
     - 'db administrator roadmap'
+    - 'software architect roadmap 2025'
     - 'software architect roadmap'
+    - 'software architect roadmap 2025'
     - 'software architect skills'
     - 'db administrator skills'
     - 'become software architect'
     - 'modern software architect skills'
     - 'software architect skills test'
-    - 'skills for software architect'
     - 'skills for software architect'
     - 'learn software architect'
     - 'what is software architect'
@@ -62,11 +62,9 @@ relatedRoadmaps:
   - 'backend'
   - 'software-design-architecture'
   - 'python'
-  - 'nodejs'
   - 'golang'
   - 'java'
   - 'devops'
-  - 'engineering-manager'
 sitemap:
   priority: 1
   changefreq: 'monthly'

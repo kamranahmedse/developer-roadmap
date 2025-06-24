@@ -2,7 +2,7 @@
 jsonUrl: '/jsons/roadmaps/software-design-architecture.json'
 pdfUrl: '/pdfs/roadmaps/software-design-architecture.pdf'
 order: 12
-briefTitle: 'Design and Architecture'
+briefTitle: 'Software Design and Architecture'
 briefDescription: 'Guide to learn software design and architecture'
 title: 'Software Design and Architecture'
 description: 'Step by step guide to learn software design and architecture'
@@ -19,18 +19,21 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Software Design and Architecture Roadmap'
+  title: 'Software Design and Architecture Roadmap - roadmap.sh'
   description: 'Learn software design and architecture with this step by step guide and resources.'
   keywords:
     - 'guide to learn software design and architecture'
     - 'software design roadmap'
     - 'software architecture roadmap'
+    - 'software architecture roadmap 2025'
     - 'software design and architecture roadmap'
     - 'modern software design and architecture roadmap'
     - 'fullstack software design and architecture roadmap'
     - 'design and architecture roadmap'
     - 'scalable design roadmap'
+    - 'scalable design roadmap 2025'
     - 'software design patterns roadmap'
+    - 'software design patterns roadmap 2025'
     - 'software architecture patterns roadmap'
     - 'design architecture patterns roadmap'
     - 'application architectures'
@@ -41,7 +44,6 @@ relatedRoadmaps:
   - 'devops'
   - 'python'
   - 'java'
-  - 'nodejs'
   - 'golang'
 sitemap:
   priority: 1
