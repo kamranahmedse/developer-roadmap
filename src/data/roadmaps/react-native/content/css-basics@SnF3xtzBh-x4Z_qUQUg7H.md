@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@CSS - W3.org](https://www.w3.org/Style/CSS/Overview.en.html)
 - [@official@CSS - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [@article@CSS Tutorial - w3schools](https://www.w3schools.com/css/)
 - [@feed@Explore top posts about CSS](https://app.daily.dev/tags/css?ref=roadmapsh)

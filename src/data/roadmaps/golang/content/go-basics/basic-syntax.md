@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Go Tutorial: Getting started](https://go.dev/doc/tutorial/getting-started)
 - [@article@Go by Example: Hello World](https://gobyexample.com/hello-world)
-- [@article@W3schools: Go Syntax](https://www.w3schools.com/go/go_syntax.php)

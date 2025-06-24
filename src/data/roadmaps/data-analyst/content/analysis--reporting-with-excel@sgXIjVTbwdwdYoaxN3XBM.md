@@ -4,5 +4,4 @@ Excel is a powerful tool utilized by data analysts worldwide to store, manipulat
 
 Learn more from the following resources:
 
-- [@article@W3Schools - Excel](https://www.w3schools.com/excel/index.php)
 - [@course@Microsoft Excel Course](https://support.microsoft.com/en-us/office/excel-video-training-9bc05390-e94c-46af-a5b3-d7c22f6990bb)

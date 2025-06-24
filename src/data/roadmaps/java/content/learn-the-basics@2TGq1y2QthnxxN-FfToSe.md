@@ -6,7 +6,6 @@ Learn about the fundamentals of Java such as basic syntax, data types, variables
 
 Visit the following resources to learn more:
 
-- [@article@Java Basics - W3Schools](https://www.w3schools.com/java/)
 - [@video@Java Tutorial for Beginners](https://youtu.be/eIrMbAQSU34)
 - [@video@Java + DSA + Interview Preparation Course (For beginners)](https://youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)
 - [@article@Head First Java](https://www.amazon.co.uk/Head-First-Java-3rd-Brain-Friendly/dp/1491910771)

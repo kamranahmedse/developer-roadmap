@@ -4,5 +4,4 @@ A `RIGHT JOIN` in SQL is a type of outer join that returns all rows from the rig
 
 Learn more from the following resources:
 
-- [@article@SQL RIGHT JOIN](https://www.w3schools.com/sql/sql_join_right.asp)
 - [@article@SQL RIGHT JOIN With Examples](https://www.programiz.com/sql/right-join)

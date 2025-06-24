@@ -5,7 +5,5 @@ C# is a modern coding language that was developed by Microsoft that focuses on a
 Visit the following resources to learn more:
 
 - [@article@C# official website?](https://learn.microsoft.com/en-us/dotnet/csharp//)
-- [@article@The Beginners Guide to C#](https://www.w3schools.com/CS/index.php)
-- [@article@C# Tutorial](https://www.w3schools.com/cs/index.php)
 - [@video@C# Full Course - Learn C# 10 and .NET 6 in 7 hours](https://www.youtube.com/watch?v=q_F4PyW8GTg)
 - [@feed@Explore top posts about C#](https://app.daily.dev/tags/csharp?ref=roadmapsh)

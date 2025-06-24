@@ -5,4 +5,3 @@ With HTML DOM, JavaScript can access and change all the elements of an HTML docu
 Visit the following resources to learn more:
 
 - [@article@DOM- MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
-- [@article@Web APIs- W3schools](https://www.w3schools.com/js/js_api_intro.asp)

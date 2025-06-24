@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@MDN Web Docs: Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 - [@article@Learn Forms by web.dev](https://web.dev/learn/forms/)
-- [@article@W3Schools: JavaScript Form Validation](https://www.w3schools.com/js/js_validation.asp)

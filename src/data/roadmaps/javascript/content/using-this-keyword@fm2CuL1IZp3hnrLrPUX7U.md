@@ -11,6 +11,5 @@ In JavaScript, the `this` keyword is a little different compared to other langua
 
 Visit the following resources to learn more:
 
-- [@article@The JavaScript `this` Keyword](https://www.w3schools.com/js/js_this.asp)
 - [@article@This Keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

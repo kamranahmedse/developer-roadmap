@@ -4,6 +4,5 @@ Comparison operators are used in logical statements to determine equality or dif
 
 Visit the following resources to learn more:
 
-- [@article@JavaScript Comparisons](https://www.w3schools.com/js/js_comparisons.asp)
 - [@article@JavaScript Equality Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#equality_operators)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

@@ -4,5 +4,4 @@ In SQL, columns are used to categorize the data in a table. A column serves as a
 
 Learn more from the following resources:
 
-- [@article@SQL Column](https://www.w3schools.com/sql/sql_ref_column.asp)
 - [@article@Column Types - PostgreSQL](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/)

@@ -4,5 +4,4 @@ Linear search is one of the simplest search algorithms. In this method, every el
 
 Learn more from the following resources:
 
-- [@article@DSA Linear Search - W3Schools](https://www.w3schools.com/dsa/dsa_algo_linearsearch.php)
 - [@video@Learn Linear Search in 3 minutes](https://www.youtube.com/watch?v=246V51AWwZM)

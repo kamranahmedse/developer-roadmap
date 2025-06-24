@@ -4,6 +4,5 @@ A stored procedure is a pre-compiled collection of SQL statements that can be ex
 
 Visit the following resources to learn more:
 
-- [@article@Stored Procedure Tutorial](https://www.w3schools.com/sql/sql_stored_procedures.asp)
 - [@article@Stored Procedure in SQL: Benefits And How to Create It](https://www.simplilearn.com/tutorials/sql-tutorial/stored-procedure-in-sql)
 - [@article@SQL Server stored procedures for beginners](https://www.sqlshack.com/sql-server-stored-procedures-for-beginners/)

@@ -8,7 +8,6 @@ Visit the following resources to learn more:
 
 - [@official@Node.js](https://nodejs.org/en/about/)
 - [@official@Node.js - Getting Started](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
-- [@article@Node.js - Introduction](https://www.w3schools.com/nodejs/nodejs_intro.asp)
 - [@video@What is Node.js?](https://www.youtube.com/watch?v=uVwtVBpw7RQ)
 - [@video@How Node.js Works?](https://www.youtube.com/watch?v=jOupHNvDIq8)
 - [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)

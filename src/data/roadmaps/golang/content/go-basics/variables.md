@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Go Variables](https://go.dev/tour/basics/8)
 - [@article@Go by Example: Variables](https://gobyexample.com/variables)
-- [@article@w3schools Go variables](https://www.w3schools.com/go/go_variables.php)

@@ -5,8 +5,6 @@ JavaScript is a high-level, interpreted programming language primarily used for 
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
-- [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
-- [@article@What is NPM?](https://www.w3schools.com/nodejs/nodejs_npm.asp)
 - [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

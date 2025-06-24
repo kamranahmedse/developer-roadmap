@@ -4,5 +4,4 @@ A `CHECK` constraint in SQL is used to enforce data integrity by specifying a co
 
 Learn more from the following resources:
 
-- [@article@SQL CHECK Constraint](https://www.w3schools.com/sql/sql_check.asp)
 - [@video@CHECK Constraint](https://www.youtube.com/watch?v=EeG2boJCXbc)

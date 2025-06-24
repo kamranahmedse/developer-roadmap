@@ -5,4 +5,3 @@ Joining tables is a fundamental operation in the world of databases. It allows y
 Learn more from the following resources:
 
 - [@official@Joins Between Tables](https://www.postgresql.org/docs/current/tutorial-join.html)
-- [@article@PostgreSQL - Joins](https://www.w3schools.com/postgresql/postgresql_joins.php)
