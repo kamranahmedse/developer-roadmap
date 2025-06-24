@@ -28,6 +28,7 @@ import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { LoadingChip } from '../LoadingChip';
 import { getTailwindScreenDimension } from '../../lib/is-mobile';
+import { useToast } from '../../hooks/use-toast';
 
 type AIRoadmapChatProps = {
   roadmapSlug?: string;
@@ -38,6 +39,7 @@ type AIRoadmapChatProps = {
 export function AIRoadmapChat(props: AIRoadmapChatProps) {
   const { roadmapSlug, isRoadmapLoading, onUpgrade } = props;
 
+  const toast = useToast();
   const scrollareaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -52,11 +54,8 @@ export function AIRoadmapChat(props: AIRoadmapChatProps) {
     refetch: refetchTokenUsage,
   } = useQuery(getAiCourseLimitOptions(), queryClient);
 
-  const {
-    data: userBillingDetails,
-    isLoading: isBillingDetailsLoading,
-    refetch: refetchBillingDetails,
-  } = useQuery(billingDetailsOptions(), queryClient);
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -72,9 +71,10 @@ export function AIRoadmapChat(props: AIRoadmapChatProps) {
     endpoint: `${import.meta.env.PUBLIC_API_URL}/v1-ai-roadmap-chat`,
     onError: (error) => {
       console.error(error);
+      toast.error(error?.message || 'Something went wrong');
     },
     data: {
-      roadmapSlug,
+      aiRoadmapSlug: roadmapSlug,
     },
     onFinish: () => {
       refetchTokenUsage();
