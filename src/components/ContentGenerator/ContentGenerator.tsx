@@ -162,9 +162,6 @@ export function ContentGenerator() {
         <label
           className={cn(
             'flex cursor-pointer items-center gap-2 rounded-xl border border-gray-200 bg-white p-4 transition-all',
-            {
-              'rounded-b-none bg-gray-200 text-black': showFineTuneOptions,
-            },
           )}
           htmlFor={fineTuneOptionsId}
         >
@@ -191,7 +188,6 @@ export function ContentGenerator() {
 
         {showFineTuneOptions && (
           <QuestionAnswerChat
-            className="-mt-4 rounded-t-none border-t-0"
             term={title}
             format={selectedFormat}
             questionAnswerChatMessages={questionAnswerChatMessages}
