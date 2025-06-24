@@ -2,7 +2,7 @@
 A reference can be considered as a constant pointer (not to be confused with a pointer to a constant value) which always points to (references) the same object. They are declared using the `&` (ampersand) symbol.
 
 ## Declaration and Initialization
-To declare a reference, use the `&` symbol followed by the variable type and the reference's name. Note that you must initialize a reference when you declare it.
+To declare a reference, use the variable type followed by the `&` symbol and the reference's name. Note that you must initialize a reference when you declare it.
 
 ```cpp
 int var = 10;        // Declare an integer variable
