@@ -8,4 +8,7 @@ Here is an example of how you can use the `tail` command to view the last few en
 tail /var/log/auth.log
 ```
 
-Get yourself familiar with reading and understanding auth logs, as it's one essential way to keep your server secure.
+Visit the following resources to learn more:
+
+- [@article@Monitoring Linux Authentication Logs](https://betterstack.com/community/guides/logging/monitoring-linux-auth-logs/)
+- [@article@How to Check Linux Login History - Linux Handbook](https://linuxhandbook.com/linux-login-history/)

@@ -5,4 +5,3 @@
 Learn more from the following resources:
 
 - [@article@An overview of the CONCAT function in SQL](https://www.sqlshack.com/an-overview-of-the-concat-function-in-sql-with-examples/)
-- [@article@SQL Server CONCAT](https://www.w3schools.com/sql/func_sqlserver_concat.asp)

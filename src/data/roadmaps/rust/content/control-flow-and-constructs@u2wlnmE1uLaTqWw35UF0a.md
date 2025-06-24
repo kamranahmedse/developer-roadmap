@@ -4,5 +4,6 @@ In Rust, control flow is managed through various structures, like `if`, `else`, 
 
 Learn more from the following links:
 
-- [@article@Control Flow](https://rust-book.cs.brown.edu/ch03-05-control-flow.html)
+- [@official@Control Flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html)
 - [@article@Concise Control Flow with `if let`](https://rust-book.cs.brown.edu/ch06-03-if-let.html)
+- [@article@Mastering Control Flow in Rust](https://dev.to/iamdipankarpaul/mastering-control-flow-in-rust-36fd)

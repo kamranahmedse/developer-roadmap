@@ -4,5 +4,4 @@ UPPER() is a string function in SQL used to convert all characters in a specifie
 
 Learn more from the following resources:
 
-- [@article@SQL Server UPPER Function](https://www.w3schools.com/sql/func_sqlserver_upper.asp)
 - [@article@How to Convert a String to Uppercase in SQL](https://learnsql.com/cookbook/how-to-convert-a-string-to-uppercase-in-sql/)

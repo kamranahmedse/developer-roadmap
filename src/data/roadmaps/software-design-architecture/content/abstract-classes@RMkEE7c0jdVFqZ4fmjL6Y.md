@@ -6,4 +6,4 @@ Abstract classes are used to provide a common interface and implementation for a
 
 Learn more from the following resources:
 
-- [@article@What is an Abstract Class in Object Oriented Programming](https://computinglearner.com/abstract-class-in-object-oriented-programming/)
+- [@article@What is an Abstract Class in Object Oriented Programming](https://www.theserverside.com/definition/abstract-class)

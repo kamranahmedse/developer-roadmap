@@ -4,5 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@DSA Binary Search - W3Schools](https://www.w3schools.com/dsa/dsa_algo_binarysearch.php)
 - [@video@Learn Binary Search in 10 minutes](https://www.youtube.com/watch?v=xrMppTpoqdw)

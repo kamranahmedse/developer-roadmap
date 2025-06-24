@@ -9,6 +9,5 @@ However, to be compliant with the ANSI standard, they all support at least the m
 
 Visit the following resources to learn more:
 
-- [@article@Introduction to SQL](https://www.w3schools.com/sql/sql_intro.asp)
 - [@video@SQL Tutorial - Full Database Course for Beginners](https://www.youtube.com/watch?v=HXV3zeQKqGY)
 - [@feed@Explore top posts about SQL](https://app.daily.dev/tags/sql?ref=roadmapsh)

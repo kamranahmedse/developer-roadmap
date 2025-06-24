@@ -5,5 +5,4 @@ HTTP (Hypertext Transfer Protocol) Methods play a significant role in API design
 Learn more from the following resources:
 
 - [@article@HTTP Methods - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
-- [@article@HTTP Request Methods - W3Schools](https://www.w3schools.com/tags/ref_httpmethods.asp)
 - [@article@What are HTTP Methods? - Postman](https://blog.postman.com/what-are-http-methods/)

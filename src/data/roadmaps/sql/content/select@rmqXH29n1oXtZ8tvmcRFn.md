@@ -4,4 +4,3 @@ SELECT is one of the most fundamental SQL commands, used to retrieve data from o
 
 Learn more from the following resources:
 
-- [@article@SQL_Select](https://www.w3schools.com/sql/sql_select.asp)

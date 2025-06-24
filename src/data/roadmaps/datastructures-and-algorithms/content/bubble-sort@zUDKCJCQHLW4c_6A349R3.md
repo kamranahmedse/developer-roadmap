@@ -4,7 +4,6 @@ Bubble Sort is a simple sorting algorithm that works by repeatedly swapping the 
 
 Learn more from the following resources:
 
-- [@article@Bubble Sort](https://www.w3schools.com/dsa/dsa_algo_bubblesort.php)
 - [@article@Bubble Sort Visualize](https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/)
 - [@video@Bubble Sort](https://www.youtube.com/watch?v=Jdtq5uKz-w4)
 - [@video@Bubble Sort](https://www.youtube.com/watch?v=p__ETf2CKY4)

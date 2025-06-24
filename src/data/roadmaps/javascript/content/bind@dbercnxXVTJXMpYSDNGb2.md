@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
 - [@article@Function binding](https://javascript.info/bind)
-- [@article@Javascript Function Bind()](https://www.w3schools.com/js/js_function_bind.asp)

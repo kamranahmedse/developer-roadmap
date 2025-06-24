@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@JavaScript Versions: How JavaScript has changed over the years](https://www.educative.io/blog/javascript-versions-history)
 - [@roadmap.sh@Brief History of JavaScript](https://roadmap.sh/guides/history-of-javascript)
-- [@article@JavaScript Version](https://www.w3schools.com/js/js_versions.asp)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

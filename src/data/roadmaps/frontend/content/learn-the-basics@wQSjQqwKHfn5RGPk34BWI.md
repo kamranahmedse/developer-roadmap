@@ -4,6 +4,5 @@ JavaScript makes webpages interactive. Think of sliders, what happens when you c
 
 Visit the following resources to learn more:
 
-- [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
 - [@video@JavaScript Tutorial Full Course - Beginner to Pro (2024)](https://www.youtube.com/watch?v=EerdGm-ehJQ)

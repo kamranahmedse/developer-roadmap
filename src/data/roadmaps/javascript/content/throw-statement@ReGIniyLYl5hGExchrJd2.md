@@ -4,7 +4,6 @@ The throw statement throws a user-defined exception. Execution of the current fu
 
 Visit the following resources to learn more:
 
-- [@article@throw statement - w3schools](https://www.w3schools.com/jsref/jsref_throw.asp)
 - [@article@JavaScript MDN Docs](https://developer.mozilla.org/en-us/docs/web/javascript/reference/statements/throw)
 - [@article@Error Handling](https://javascript.info/error-handling)
 - [@article@"Throw" operator](https://javascript.info/try-catch#throw-operator)

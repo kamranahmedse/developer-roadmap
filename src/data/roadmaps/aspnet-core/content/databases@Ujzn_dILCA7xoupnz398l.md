@@ -14,5 +14,4 @@ To learn more, visit the following links:
 
 - [@article@ASP.NET Database Tutorial](https://www.guru99.com/insert-update-delete-asp-net.html)
 - [@article@Introduction to Working with a Database in ASP.NET](https://learn.microsoft.com/en-us/aspnet/web-pages/overview/data/5-working-with-data)
-- [@article@ASP.NET Web Pages - Databases](https://www.w3schools.com/asp/webpages_database.asp)
 - [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

@@ -9,5 +9,4 @@ Visit the following resources to learn more:
 - [@article@Cpp Reference](https://en.cppreference.com/)
 - [@article@CPlusPlus](https://cplusplus.com/)
 - [@article@C++ TutorialsPoint](https://www.tutorialspoint.com/cplusplus/index.htm)
-- [@article@W3Schools C++](https://www.w3schools.com/cpp/default.asp)
 - [@feed@Explore top posts about C++ Programming](https://app.daily.dev/tags/c++?ref=roadmapsh)

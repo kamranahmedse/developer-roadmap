@@ -4,5 +4,4 @@ SQL keywords are reserved words that have special meanings within SQL statements
 
 Learn more from the following resources:
 
-- [@article@SQL Keywords Reference](https://www.w3schools.com/sql/sql_ref_keywords.asp)
 - [@article@SQL Keywords, Operators and Statements](https://blog.hubspot.com/website/sql-keywords-operators-statements)

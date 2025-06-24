@@ -4,5 +4,4 @@ SUM is an aggregate function in SQL used to calculate the total of a set of valu
 
 Learn more from the following resources:
 
-- [@article@SQL SUM Function](https://www.w3schools.com/sql/sql_sum.asp)
 - [@article@SQL SUM](https://www.studysmarter.co.uk/explanations/computer-science/databases/sql-sum/)

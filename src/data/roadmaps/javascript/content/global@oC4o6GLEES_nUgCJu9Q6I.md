@@ -9,4 +9,3 @@ it will automatically become a _GLOBAL_ variable.
 
 Visit the following resources to learn more:
 
-- [@article@JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)

@@ -6,6 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Bitbucket Website](https://bitbucket.org)
 - [@official@Bitbucket Overview](https://bitbucket.org/product/guides/getting-started/overview)
-- [@article@Git and Bitbucket Introduction](https://www.w3schools.com/git/git_intro.asp?remote=bitbucket)
 - [@video@Bitbucket Tutorial | How to use Bitbucket Cloud](https://www.youtube.com/watch?v=M44nEyd_5To)
 - [@feed@Explore top posts about Bitbucket](https://app.daily.dev/tags/bitbucket?ref=roadmapsh)

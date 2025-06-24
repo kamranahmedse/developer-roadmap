@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 
 - [@article@JavaScript MDN Docs - continue statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue)
 - [@article@JavaScript MDN Docs - break statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break)
-- [@article@W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/js_break.asp)

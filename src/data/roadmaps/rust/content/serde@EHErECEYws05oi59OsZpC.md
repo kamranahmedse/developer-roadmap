@@ -4,5 +4,6 @@ Serde is Rust's most popular serialization framework for converting data structu
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://serde.rs/)
-- [@article@Docs.rs: Serde](https://docs.rs/serde/latest/serde/)
+- [@official@Serde](https://serde.rs/)
+- [@article@Serde Documentation](https://docs.rs/serde/latest/serde/)
+- [@article@Serialization in Rust with Serde](https://rustmeup.com/serialization-in-rust-with-serde)

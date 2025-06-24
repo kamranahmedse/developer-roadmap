@@ -4,14 +4,8 @@ The Super User, also known as "root user", represents a user account in Linux wi
 
 The usage of super user is critical to operating a Linux system properly and safely as it can potentially cause serious damage. The super user can be accessed through the `sudo` or `su` commands.
 
-Specifically, `su` switches the current user to the root, whereas `sudo` allows you to run a command as another user, default being root. However, they also have a key difference which is `sudo` will log the commands and its arguments which can be a handy audit trail.
+Learn more from the following resources:
 
-```bash
-# This would prompt for root password and switch you to root usermode
-$ su -
-
-# To perform a command as superuser (if allowed in sudoers list)
-$ sudo <command>
-```
-
-Note that super user privileges should be handled with care due to their potential to disrupt the system's functionality. Mistaken changes to key system files or unauthorized access can lead to severe issues.
+- [@article@Linux Superuser Access, Explained](https://www.redhat.com/en/blog/linux-superuser-access/)
+- [@article@Difference between the root user and super (sudo) user](https://www.computernetworkingnotes.com/linux-tutorials/difference-between-the-root-user-and-super-sudo-user.html)
+- [@article@What is Superuser Access in Linux?](https://www.scaler.com/topics/super-user-in-linux/)

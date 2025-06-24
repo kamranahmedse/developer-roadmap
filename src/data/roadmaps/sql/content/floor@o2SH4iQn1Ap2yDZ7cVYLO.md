@@ -6,5 +6,4 @@ One important aspect to note is that the `FLOOR` function's argument must be a n
 
 Learn more from the following resources:
 
-- [@article@FLOOR](https://www.w3schools.com/sql/func_sqlserver_floor.asp)
 - [@video@How to Round in SQL](https://www.youtube.com/watch?v=AUXw2JRwCFY)

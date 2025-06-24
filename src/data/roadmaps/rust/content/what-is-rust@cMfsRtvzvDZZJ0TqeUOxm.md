@@ -4,6 +4,8 @@ Rust is a modern system programming language focused on performance, safety, and
 
 Visit the following resources to learn more:
 
+- [@official@Rust? What is it?](https://doc.rust-lang.org/stable/rust-by-example/index.html)
+- [@official@Rust Programming Language](https://www.rust-lang.org/)
+- [@article@What is Rust and why is it so popular?](https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular/)
 - [@video@What is Rust?](https://www.youtube.com/watch?v=R33h77nrMqc)
 - [@feed@Explore top posts about Rust](https://app.daily.dev/tags/rust?ref=roadmapsh)
-- [@official@Rust by example](https://doc.rust-lang.org/stable/rust-by-example/index.html) 

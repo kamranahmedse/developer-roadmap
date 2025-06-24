@@ -10,5 +10,4 @@ Few things to consider in case of `INNER JOIN`:
 
 Learn more from the following resources:
 
-- [@article@SQL INNER JOIN](https://www.w3schools.com/sql/sql_join_inner.asp)
 - [@article@SQL INNER JOIN Clause](https://www.programiz.com/sql/inner-join)

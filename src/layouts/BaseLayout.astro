@@ -159,38 +159,48 @@ const gaPageIdentifier = Astro.url.pathname
       hasVarify && (
         <Fragment>
           <script is:inline>
-            window.varify = window.varify || {};
-            window.varify.iid = 4013;
+            window.varify = window.varify || {}; window.varify.iid = 4013;
           </script>
           <script is:inline src='https://app.varify.io/varify.js' />
         </Fragment>
       )
     }
     <!-- Google Tag Manager Start -->
-    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T66KC7S8');</script>
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-T66KC7S8');
+    </script>
     <!-- Google Tag Manager End -->
 
     <slot name='after-header' />
     {
       jsonLd.length > 0 && (
-        <script
-          type='application/ld+json'
-          set:html={JSON.stringify(jsonLd)}
-        />
+        <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />
       )
     }
 
     <Analytics />
-    <OneTrust />
-    <Clarity />
-    <RedditPixel />
     <GoogleAd />
-    <Hubspot />
-    <Bluconic />
+
+    {
+      !import.meta.env.DEV && (
+        <>
+          <OneTrust />
+          <Clarity />
+          <RedditPixel />
+          <Hubspot />
+          <Bluconic />
+        </>
+      )
+    }
   </head>
   <body class='flex min-h-screen flex-col'>
     <!-- Google Tag Manager (noscript) -->

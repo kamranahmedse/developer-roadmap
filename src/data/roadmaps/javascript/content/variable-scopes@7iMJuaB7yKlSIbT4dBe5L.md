@@ -14,6 +14,5 @@ Local Scope: Local variables are only recognized inside their functions, variabl
 
 Visit the following resources to learn more:
 
-- [@article@JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)
 - [@article@javascript scope](https://wesbos.com/javascript/03-the-tricky-bits/scope)
 - [@video@Understanding Global Local Function Block Scope](https://www.youtube.com/watch?v=_E96W6ivHng)

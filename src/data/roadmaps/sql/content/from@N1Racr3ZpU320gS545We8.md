@@ -6,5 +6,4 @@ Typically, `FROM` is followed by space delimited list of tables in which the SEL
 
 Learn more from the following resources:
 
-- [@article@SQL FROM Keyword](https://www.w3schools.com/sql/sql_ref_from.asp)
 - [@video@How to write basic SQL](https://www.youtube.com/watch?v=YfTDBA45PHk)

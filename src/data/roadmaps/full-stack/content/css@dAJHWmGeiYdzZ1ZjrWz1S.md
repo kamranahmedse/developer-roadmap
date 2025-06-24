@@ -6,6 +6,5 @@ Visit the following resources to learn more:
 
 - [@video@CSS Complete Course](https://youtu.be/n4R2E7O-Ngo)
 - [@video@HTML and CSS Tutorial](https://www.youtube.com/watch?v=D-h8L5hgW-w)
-- [@article@W3Schools — Learn CSS](https://www.w3schools.com/css/)
 - [@article@Web.dev by Google — Learn CSS](https://web.dev/learn/css/)
 - [@feed@Explore top posts about CSS](https://app.daily.dev/tags/css?ref=roadmapsh)

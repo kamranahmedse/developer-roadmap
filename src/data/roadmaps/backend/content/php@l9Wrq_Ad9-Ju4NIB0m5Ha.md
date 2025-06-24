@@ -6,7 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@Visit Dedicated PHP Roadmap](https://roadmap.sh/php)
 - [@official@PHP](https://php.net/)
-- [@article@Learn PHP - W3Schools](https://www.w3schools.com/php/)
 - [@article@PHP - The Right Way](https://phptherightway.com/)
 - [@video@PHP for Beginners](https://www.youtube.com/watch?v=zZ6vybT1HQs)
 - [@feed@Explore top posts about PHP](https://app.daily.dev/tags/php?ref=roadmapsh)

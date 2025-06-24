@@ -4,7 +4,6 @@ HTML (Hypertext Markup Language) is the standard for creating web pages, structu
 
 Visit the following resources to learn more:
 
-- [@article@W3Schools: Learn HTML](https://www.w3schools.com/html/html_intro.asp)
 - [@video@HTML Full Course for Beginners](https://youtu.be/mJgBOIoGihA)
 - [@video@HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=pQN-pnXPaVg)
 - [@feed@Explore top posts about HTML](https://app.daily.dev/tags/html?ref=roadmapsh)

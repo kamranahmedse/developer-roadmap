@@ -11,5 +11,4 @@ Visit the following links for more information:
 - [@article@Introduction to C#](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/)
 - [@article@Basics Of C#](https://www.c-sharpcorner.com/UploadFile/e9fdcd/basics-of-C-Sharp/)
 - [@article@C# Tutorials](https://dotnettutorials.net/course/csharp-dot-net-tutorials/)
-- [@article@C# tutorials - W3Schools](https://www.w3schools.com/cs/index.php)
 - [@feed@Explore top posts about C#](https://app.daily.dev/tags/csharp?ref=roadmapsh)

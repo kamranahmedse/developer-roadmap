@@ -4,4 +4,5 @@ Channels enable thread communication via message passing from `std::sync::mpsc` 
 
 Learn more from the following links:
 
-- [@article@Channels](https://doc.rust-lang.org/rust-by-example/std_misc/channels.html)
+- [@official@Channels](https://doc.rust-lang.org/rust-by-example/std_misc/channels.html)
+- [@article@Using Channels in Rust: Why and When?](https://howtorust.com/using-channels-in-rust-why-and-when/)

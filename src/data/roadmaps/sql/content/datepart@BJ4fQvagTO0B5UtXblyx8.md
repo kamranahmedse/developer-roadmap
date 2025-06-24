@@ -4,5 +4,4 @@
 
 Learn more from the following resources:
 
-- [@article@DATEPART](https://www.w3schools.com/sql/func_sqlserver_datepart.asp)
 - [@article@SQL DATEPART](https://hightouch.com/sql-dictionary/sql-datepart)

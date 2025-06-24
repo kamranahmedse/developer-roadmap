@@ -4,5 +4,4 @@ The `MOD` function in SQL calculates the remainder when one number is divided by
 
 Learn more from the following resources:
 
-- [@article@MOD](https://www.w3schools.com/sql/func_mysql_mod.asp)
 - [@video@MOD Function in SQL](https://www.youtube.com/watch?v=f1Rqf7CwjE0)

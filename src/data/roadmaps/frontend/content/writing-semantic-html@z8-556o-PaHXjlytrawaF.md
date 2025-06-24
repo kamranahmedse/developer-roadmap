@@ -5,6 +5,5 @@ Semantic HTML uses markup to convey the meaning of web content, not just its app
 Visit the following resources to learn more:
 
 - [@article@Guide to Writing Semantic HTML](https://cs.fyi/guide/writing-semantic-html)
-- [@article@W3Schools: Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [@article@Semantic HTML - web.dev](https://web.dev/learn/html/semantic-html/)
 - [@video@Why & When to Use Semantic HTML Elements over Div(s)](https://www.youtube.com/watch?v=bOUhq46fd5g)

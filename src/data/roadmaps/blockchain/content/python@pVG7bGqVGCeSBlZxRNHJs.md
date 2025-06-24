@@ -8,6 +8,5 @@ Visit the following resources to learn more:
 - [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
 - [@official@Python Website](https://www.python.org/)
 - [@official@Python Documentation](https://www.docs.python.org/3)
-- [@article@W3Schools - Python Tutorial](https://www.w3schools.com/python/)
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
 - [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

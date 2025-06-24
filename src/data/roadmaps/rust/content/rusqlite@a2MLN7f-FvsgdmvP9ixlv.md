@@ -4,5 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [@opensource@Repository](https://github.com/rusqlite/rusqlite)
-- [@article@Docs.rs: rusqlite](https://docs.rs/rusqlite/latest/rusqlite/)
+- [@article@Rusqlite](https://docs.rs/rusqlite/latest/rusqlite/)
+- [@opensource@rusqlite/rusqlite](https://github.com/rusqlite/rusqlite)
+- [@article@Rust | Sqlite Database](https://medium.com/@mikecode/rust-sqlite-database-rusqlite-162bad63fb5d)

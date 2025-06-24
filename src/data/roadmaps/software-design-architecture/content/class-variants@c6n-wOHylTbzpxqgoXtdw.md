@@ -7,4 +7,5 @@ Class invariants are typically defined in the constructor of a class and are enf
 Learn more from the following links:
 
 - [@article@Overview of Class invariant](https://en.wikipedia.org/wiki/Class_invariant)
+- [@article@Class Invariants](https://course.ccs.neu.edu/cs3500f15/lec_08_notes.html)
 - [@article@The concept of class invariant in object-oriented programming](https://arxiv.org/abs/2109.06557)
