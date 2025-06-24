@@ -25,7 +25,7 @@ export function AIRoadmapContent(props: AIRoadmapContentProps) {
         dangerouslySetInnerHTML={{ __html: svgHtml }}
       />
 
-      {isLoading && (
+      {isLoading && !svgHtml && (
         <div className="absolute inset-0 flex items-center justify-center">
           <LoadingChip message="Please wait..." />
         </div>

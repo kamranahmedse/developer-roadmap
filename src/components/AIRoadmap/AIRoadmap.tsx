@@ -23,7 +23,9 @@ export function AIRoadmap(props: AIRoadmapProps) {
   const toast = useToast();
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isRegenerating, setIsRegenerating] = useState(false);
-  const [regeneratedSvgHtml, setRegeneratedSvgHtml] = useState('');
+  const [regeneratedSvgHtml, setRegeneratedSvgHtml] = useState<string | null>(
+    null,
+  );
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
@@ -35,6 +37,7 @@ export function AIRoadmap(props: AIRoadmapProps) {
   const handleRegenerate = async (prompt?: string) => {
     flushSync(() => {
       setIsRegenerating(true);
+      setRegeneratedSvgHtml(null);
     });
 
     queryClient.cancelQueries(aiRoadmapOptions(roadmapSlug));
@@ -50,6 +53,7 @@ export function AIRoadmap(props: AIRoadmapProps) {
       };
     });
 
+    setRegeneratedSvgHtml('');
     await generateAIRoadmap({
       roadmapSlug: aiRoadmap?.slug || '',
       term: aiRoadmap?.term || '',
@@ -81,7 +85,7 @@ export function AIRoadmap(props: AIRoadmapProps) {
       <div className="grow overflow-y-auto p-4 pt-0">
         {roadmapSlug && (
           <AIRoadmapContent
-            svgHtml={regeneratedSvgHtml || aiRoadmap?.svgHtml || ''}
+            svgHtml={regeneratedSvgHtml ?? aiRoadmap?.svgHtml ?? ''}
             isLoading={isLoadingBySlug || isRegenerating}
             onRegenerate={handleRegenerate}
             roadmapSlug={roadmapSlug}
