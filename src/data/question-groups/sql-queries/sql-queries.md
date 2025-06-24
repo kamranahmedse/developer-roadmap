@@ -148,9 +148,9 @@ questions:
 
 Writing SQL queries during interviews can be tough for beginners and experienced developers. However, with the right preparation and practice, you can ace your next SQL queries interview.
 
-In this guide, I'll walk you through both basic and advanced SQL queries like SELECT, JOIN, GROUP BY, and window functions. Each answer will be short and clear and include SQL code examples for you to understand the concepts better. By the end of this guide, you'll have everything you need to ace your SQL queries interview and build solid skills you can use beyond it.
+In this guide, I'll walk you through both basic and advanced SQL queries like SELECT, JOIN, GROUP BY, and window functions. Each answer will be short and clear and include SQL code examples for you to understand the concepts better. By the end of this guide, you'll be in a much better position to ace your SQL queries interview and build solid skills you can use beyond it.
 
-I have included a set of flashcards to help you study and practice more efficiently. If you are just starting out in your career, checkout roadmap.sh's [SQL roadmap](https://roadmap.sh/sql). Also, feel free to research each question in detail to gain more insight.
+I have included a set of flashcards to help you study and practice more efficiently. If you are just starting out in your career, checkout roadmap.sh's [SQL roadmap](https://roadmap.sh/sql) or take our [SQL queries course](https://roadmap.sh/courses/sql) to master this topic in under 60 hours!
 
 ## Preparing for your SQL queries interview
 
