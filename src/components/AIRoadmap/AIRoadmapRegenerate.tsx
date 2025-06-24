@@ -1,4 +1,11 @@
-import { PenSquare, RefreshCcw, SettingsIcon } from 'lucide-react';
+import {
+  Loader2Icon,
+  PenSquare,
+  RefreshCcw,
+  SaveIcon,
+  SettingsIcon,
+  type LucideIcon,
+} from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
@@ -10,6 +17,8 @@ import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
 import { aiRoadmapOptions } from '../../queries/ai-roadmap';
 import { UpdatePreferences } from '../GenerateGuide/UpdatePreferences';
+import { generateAIRoadmapFromText } from '@roadmapsh/editor';
+import { useToast } from '../../hooks/use-toast';
 
 type AIRoadmapRegenerateProps = {
   onRegenerate: (prompt?: string) => void;
@@ -19,6 +28,7 @@ type AIRoadmapRegenerateProps = {
 export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
   const { onRegenerate, roadmapSlug } = props;
 
+  const toast = useToast();
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [showPromptModal, setShowPromptModal] = useState(false);
@@ -58,6 +68,65 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
         setShowUpdatePreferencesModal(false);
         setIsDropdownVisible(false);
         onRegenerate();
+      },
+    },
+    queryClient,
+  );
+
+  const handleSaveAIRoadmap = async () => {
+    const { nodes, edges } = generateAIRoadmapFromText(aiRoadmap?.data || '');
+    return httpPost<{
+      roadmapId: string;
+      roadmapSlug: string;
+    }>(`/v1-save-ai-roadmap/${aiRoadmap?._id}`, {
+      title: aiRoadmap?.term,
+      nodes: nodes.map((node) => ({
+        ...node,
+
+        // To reset the width and height of the node
+        // so that it can be calculated based on the content in the editor
+        width: undefined,
+        height: undefined,
+        style: {
+          ...node.style,
+          width: undefined,
+          height: undefined,
+        },
+        measured: {
+          width: undefined,
+          height: undefined,
+        },
+      })),
+      edges,
+    });
+  };
+
+  const { mutate: saveAIRoadmap, isPending: isSavingAIRoadmap } = useMutation(
+    {
+      mutationFn: handleSaveAIRoadmap,
+      onSuccess: (data) => {
+        if (!data?.roadmapId) {
+          toast.error('Something went wrong');
+          return;
+        }
+        window.location.href = `/r/${data?.roadmapSlug}`;
+      },
+    },
+    queryClient,
+  );
+
+  const { mutate: editAIRoadmap, isPending: isEditingAIRoadmap } = useMutation(
+    {
+      mutationFn: handleSaveAIRoadmap,
+      onSuccess: (data) => {
+        if (!data?.roadmapId) {
+          toast.error('Something went wrong');
+          return;
+        }
+        window.open(
+          `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${data?.roadmapId}`,
+          '_blank',
+        );
       },
     },
     queryClient,
@@ -108,51 +177,74 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
         </button>
         {isDropdownVisible && (
           <div className="absolute top-full right-0 min-w-[190px] translate-y-1 overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
-            <button
+            <ActionButton
               onClick={() => {
                 setIsDropdownVisible(false);
                 setShowUpdatePreferencesModal(true);
               }}
-              className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
-            >
-              <SettingsIcon
-                size={16}
-                className="text-gray-400"
-                strokeWidth={2.5}
-              />
-              Update Preferences
-            </button>
-            <button
+              icon={SettingsIcon}
+              label="Update Preferences"
+            />
+            <ActionButton
               onClick={() => {
                 setIsDropdownVisible(false);
                 onRegenerate();
               }}
-              className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
-            >
-              <RefreshCcw
-                size={16}
-                className="text-gray-400"
-                strokeWidth={2.5}
-              />
-              Regenerate
-            </button>
-            <button
+              icon={RefreshCcw}
+              label="Regenerate"
+            />
+            <ActionButton
               onClick={() => {
                 setIsDropdownVisible(false);
                 setShowPromptModal(true);
               }}
-              className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
-            >
-              <PenSquare
-                size={16}
-                className="text-gray-400"
-                strokeWidth={2.5}
-              />
-              Modify Prompt
-            </button>
+              icon={PenSquare}
+              label="Modify Prompt"
+            />
+
+            <ActionButton
+              onClick={saveAIRoadmap}
+              icon={SaveIcon}
+              label="Start Learning"
+              isLoading={isSavingAIRoadmap}
+            />
+
+            <ActionButton
+              onClick={editAIRoadmap}
+              icon={PenSquare}
+              label="Edit in Editor"
+              isLoading={isEditingAIRoadmap}
+            />
           </div>
         )}
       </div>
     </>
+  );
+}
+
+type ActionButtonProps = {
+  onClick: () => void;
+  isLoading?: boolean;
+  icon: LucideIcon;
+  label: string;
+};
+
+function ActionButton(props: ActionButtonProps) {
+  const { onClick, isLoading, icon: Icon, label } = props;
+
+  return (
+    <button
+      className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
+      onClick={onClick}
+      disabled={isLoading}
+    >
+      {isLoading ? (
+        <Loader2Icon className="animate-spin" size={16} strokeWidth={2.5} />
+      ) : (
+        <Icon size={16} className="text-gray-400" strokeWidth={2.5} />
+      )}
+
+      {label}
+    </button>
   );
 }

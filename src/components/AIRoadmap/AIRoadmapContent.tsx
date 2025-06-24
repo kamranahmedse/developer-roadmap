@@ -1,13 +1,16 @@
 import { cn } from '../../lib/classname';
+import { AIRoadmapRegenerate } from './AIRoadmapRegenerate';
 import { LoadingChip } from '../LoadingChip';
 
 type AIRoadmapContentProps = {
   isLoading?: boolean;
   svgHtml: string;
+  onRegenerate?: (prompt?: string) => void;
+  roadmapSlug?: string;
 };
 
 export function AIRoadmapContent(props: AIRoadmapContentProps) {
-  const { isLoading, svgHtml } = props;
+  const { isLoading, svgHtml, onRegenerate, roadmapSlug } = props;
 
   return (
     <div
@@ -25,6 +28,15 @@ export function AIRoadmapContent(props: AIRoadmapContentProps) {
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">
           <LoadingChip message="Please wait..." />
+        </div>
+      )}
+
+      {onRegenerate && !isLoading && roadmapSlug && (
+        <div className="absolute top-4 right-4">
+          <AIRoadmapRegenerate
+            onRegenerate={onRegenerate}
+            roadmapSlug={roadmapSlug}
+          />
         </div>
       )}
     </div>
