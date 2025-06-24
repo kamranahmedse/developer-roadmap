@@ -412,6 +412,11 @@
         "type": "article"
       },
       {
+        "title": "Class Invariants",
+        "url": "https://course.ccs.neu.edu/cs3500f15/lec_08_notes.html",
+        "type": "article"
+      },
+      {
         "title": "The concept of class invariant in object-oriented programming",
         "url": "https://arxiv.org/abs/2109.06557",
         "type": "article"
@@ -463,11 +468,6 @@
         "title": "Overview of Anemic Domain Model",
         "url": "https://en.wikipedia.org/wiki/Anemic_domain_model",
         "type": "article"
-      },
-      {
-        "title": "What is an Anaemic Domain Model?",
-        "url": "https://www.ensonodigital.com/blog/anaemic-domain-model-vs-rich-domain-model",
-        "type": "article"
       }
     ]
   },
@@ -477,7 +477,7 @@
     "links": [
       {
         "title": "What is an Abstract Class in Object Oriented Programming",
-        "url": "https://computinglearner.com/abstract-class-in-object-oriented-programming/",
+        "url": "https://www.theserverside.com/definition/abstract-class",
         "type": "article"
       }
     ]

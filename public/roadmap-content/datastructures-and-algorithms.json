@@ -907,8 +907,14 @@
   },
   "NrPO7vF8Z1WzmA9Ca3Y_E": {
     "title": "Depth First Search",
-    "description": "**Depth-First Search (DFS)** is an algorithm used for traversing or searching tree or graph data structures. The process starts at the root node (selecting some arbitrary node as the root in the case of a graph), and explores as far as possible along each branch before backtracking. It uses a last in, first out (LIFO) stack to remember to get the next vertex to start a search when a dead end occurs in any iteration. DFS has been used in a variety of applications including finding connected components, topological sorting, and finding articulation points (or cut vertices) in a graph.",
-    "links": []
+    "description": "**Depth-First Search (DFS)** is an algorithm used for traversing or searching tree or graph data structures. The process starts at the root node (selecting some arbitrary node as the root in the case of a graph), and explores as far as possible along each branch before backtracking. It uses a last in, first out (LIFO) stack to remember to get the next vertex to start a search when a dead end occurs in any iteration. DFS has been used in a variety of applications including finding connected components, topological sorting, and finding articulation points (or cut vertices) in a graph.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Learn Depth First Search in 7 minutes",
+        "url": "https://youtu.be/by93qH4ACxo?si=FXcUfuwB5atV5SIY",
+        "type": "video"
+      }
+    ]
   },
   "N-qvYirxpORcaTslvlOL0": {
     "title": "Shortest Path Algorithms",
@@ -1214,8 +1220,24 @@
   },
   "R3Coq0TG1_cSOXzXWgpuI": {
     "title": "Heap",
-    "description": "",
-    "links": []
+    "description": "A heap is a type of data structure in computer science that is like a tree, where each parent node is always bigger (in a max heap) or smaller (in a min heap) than its child nodes.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "Heap Data Structure",
+        "url": "https://www.programiz.com/dsa/heap-data-structure",
+        "type": "article"
+      },
+      {
+        "title": "Heap Data Structure",
+        "url": "https://www.youtube.com/watch?v=t0Cq6tVNRBA",
+        "type": "video"
+      },
+      {
+        "title": "Heaps and Priority Queues",
+        "url": "https://www.youtube.com/watch?v=B7hVxCmfPtM",
+        "type": "video"
+      }
+    ]
   },
   "AabJqPUwFVBVS02YPDPvL": {
     "title": "A* Algorithm",
