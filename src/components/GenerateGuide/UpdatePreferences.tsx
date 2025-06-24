@@ -55,7 +55,7 @@ export function UpdatePreferences(props: UpdatePreferencesProps) {
       <div className="flex flex-col gap-1">
         <h2 className="text-lg font-medium">Update Preferences</h2>
         <p className="text-sm text-gray-500">
-          Update the preferences for the AI to generate a guide.
+          Update the preferences for the AI to generate a {format}.
         </p>
       </div>
 
