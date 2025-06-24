@@ -132,6 +132,9 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
     queryClient,
   );
 
+  const showUpdatePreferences =
+    aiRoadmap?.questionAndAnswers && aiRoadmap.questionAndAnswers.length > 0;
+
   return (
     <>
       {showUpgradeModal && (
@@ -177,14 +180,17 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
         </button>
         {isDropdownVisible && (
           <div className="absolute top-full right-0 min-w-[190px] translate-y-1 overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
-            <ActionButton
-              onClick={() => {
-                setIsDropdownVisible(false);
-                setShowUpdatePreferencesModal(true);
-              }}
-              icon={SettingsIcon}
-              label="Update Preferences"
-            />
+            {showUpdatePreferences && (
+              <ActionButton
+                onClick={() => {
+                  setIsDropdownVisible(false);
+                  setShowUpdatePreferencesModal(true);
+                }}
+                icon={SettingsIcon}
+                label="Update Preferences"
+              />
+            )}
+
             <ActionButton
               onClick={() => {
                 setIsDropdownVisible(false);

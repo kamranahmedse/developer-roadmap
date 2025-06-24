@@ -65,6 +65,9 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
     queryClient,
   );
 
+  const showUpdatePreferences =
+    aiCourse?.questionAndAnswers && aiCourse.questionAndAnswers.length > 0;
+
   return (
     <>
       {showUpgradeModal && (
@@ -113,21 +116,27 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
         </button>
         {isDropdownVisible && (
           <div className="absolute top-full right-0 min-w-[190px] translate-y-1 overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
-            <button
-              onClick={() => {
-                setIsDropdownVisible(false);
-                setShowUpdatePreferencesModal(true);
-              }}
-              className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
-            >
-              <Settings2Icon
-                size={16}
-                className="text-gray-400"
-                strokeWidth={2.5}
-              />
-              Preferences
-            </button>
+            {showUpdatePreferences && (
+              <button
+                onClick={() => {
+                  setIsDropdownVisible(false);
+                  if (isForkable) {
+                    onForkCourse();
+                    return;
+                  }
 
+                  setShowUpdatePreferencesModal(true);
+                }}
+                className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
+              >
+                <Settings2Icon
+                  size={16}
+                  className="text-gray-400"
+                  strokeWidth={2.5}
+                />
+                Preferences
+              </button>
+            )}
             <button
               onClick={() => {
                 setIsDropdownVisible(false);
