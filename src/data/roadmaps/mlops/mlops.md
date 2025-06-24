@@ -19,11 +19,14 @@ schema:
   datePublished: '2024-02-12'
   dateModified: '2024-07-18'
 seo:
-  title: 'MLOps Roadmap'
-  description: 'Learn about MLOps using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.'
+  title: 'MLOps Roadmap - roadmap.sh'
+  description: 'Learn about MLOps using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern machine learning operations.'
   keywords:
-    - 'mlops roadmap 2024'
+    - 'mlops roadmap 2024
+    - 'mlops roadmap 2025'
+    - 'mlops roadmap'
     - 'mlops engineer'
+    - 'machine learning expert'
     - 'machine learning engineer'
     - 'ai ops engineer'
 relatedRoadmaps:

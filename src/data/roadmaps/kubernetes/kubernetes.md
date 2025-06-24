@@ -29,10 +29,11 @@ seo:
     - 'kubernetes tutorial'
     - 'step by step kubernetes'
     - 'kubernetes roadmap 2024'
+    - 'kubernetes roadmap 2025'
     - 'guide to learning kubernetes'
-    - 'kubernetes roadmap'
     - 'kubernetes'
     - 'kubernetes engineer'
+    - 'kubernetes engineer 2025'
     - 'kubernetes skills'
     - 'kubernetes development'
     - 'kubernetes development skills'
@@ -46,8 +47,9 @@ seo:
     - 'kubernetes quiz'
     - 'kubernetes interview questions'
 relatedRoadmaps:
+  - 'docker'
   - 'devops'
-  - 'system-design'
+  - 'cloudflare'
   - 'backend'
 sitemap:
   priority: 1

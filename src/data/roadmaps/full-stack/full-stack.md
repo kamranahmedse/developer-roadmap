@@ -25,7 +25,7 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 question:
   title: 'What is a Full Stack Developer?'
   description: |
@@ -69,13 +69,13 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Full Stack Developer Roadmap'
+  title: 'Full Stack Developer Roadmap - roadmap.sh'
   description: 'Learn to become a modern full stack developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern full stack development.'
   keywords:
-    - 'javascript roadmap 2024'
-    - 'full stack roadmap 2024'
-    - 'full stack developer roadmap 2024'
-    - 'guide to becoming a developer'
+    - 'javascript roadmap 2025'
+    - 'full stack roadmap 2025'
+    - 'full stack developer roadmap 2025'
+    - 'guide to becoming a mern developer'
     - 'guide to becoming a full stack developer'
     - 'full stack developer'
     - 'full stack engineer'

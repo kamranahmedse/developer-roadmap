@@ -24,6 +24,7 @@ seo:
     - 'mongodb tutorial'
     - 'step by step mongodb'
     - 'mongodb roadmap 2024'
+    - 'mongodb roadmap 2025'
     - 'guide to learning mongodb'
     - 'mongodb roadmap'
     - 'mongodb'
@@ -33,7 +34,6 @@ seo:
     - 'mongodb development skills'
     - 'mongodb development skills test'
     - 'mongodb engineer roadmap'
-    - 'mongodb roadmap'
     - 'mongodb career path'
     - 'learn mongodb development'
     - 'what is mongodb'
@@ -43,7 +43,7 @@ relatedRoadmaps:
   - 'postgresql-dba'
   - 'backend'
   - 'nodejs'
-  - 'system-design'
+  - 'redis'
 sitemap:
   priority: 1
   changefreq: 'monthly'

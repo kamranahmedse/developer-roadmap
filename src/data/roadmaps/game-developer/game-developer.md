@@ -18,11 +18,11 @@ schema:
   datePublished: '2023-10-26'
   dateModified: '2023-10-26'
 seo:
-  title: 'Game Developer Roadmap'
+  title: 'Game Developer Roadmap - roadmap.sh'
   description: 'Learn what game development is, what game developers do and how to become one using our community-driven roadmap.'
   keywords:
     - 'game developer roadmap 2024'
-    - 'game developer roadmap 2024'
+    - 'game developer roadmap 2025'
     - 'guide to becoming a developer'
     - 'guide to becoming a game developer'
     - 'game developer roadmap'
@@ -30,14 +30,11 @@ seo:
     - 'game engineer'
     - 'game skills'
     - 'game development'
-    - 'javascript developer'
     - 'game development skills'
     - 'game development skills test'
     - 'game engineer roadmap'
-    - 'game developer roadmap'
     - 'become a game developer'
     - 'game developer career path'
-    - 'javascript developer'
     - 'modern javascript developer'
     - 'node developer'
     - 'skills for game development'
@@ -47,6 +44,10 @@ seo:
     - 'game developer interview questions'
 relatedRoadmaps:
   - 'backend'
+  - 'server-side-game-developer'
+  - 'react-native'
+  - 'python'
+  - 'javascript'
 sitemap:
   priority: 1
   changefreq: 'monthly'

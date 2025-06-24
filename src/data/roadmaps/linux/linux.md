@@ -50,6 +50,7 @@ relatedRoadmaps:
   - 'devops'
   - 'backend'
   - 'docker'
+  - 'cyber-security'
 sitemap:
   priority: 1
   changefreq: 'monthly'
