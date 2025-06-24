@@ -1,8 +1,6 @@
 ---
-import { aiRoadmapApi } from '../../api/ai-roadmap';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import { GenerateRoadmap } from '../../components/GenerateRoadmap/GenerateRoadmap';
-import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
+import { AIRoadmap } from '../../components/AIRoadmap/AIRoadmap';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
 
 export const prerender = false;
 
@@ -11,26 +9,14 @@ interface Params extends Record<string, string | undefined> {
 }
 
 const { aiRoadmapSlug } = Astro.params as Params;
-if (!aiRoadmapSlug) {
-  return Astro.redirect('/404');
-}
-
-const aiRoadmapClient = aiRoadmapApi(Astro as any);
-const { response: roadmap, error } =
-  await aiRoadmapClient.getAIRoadmapBySlug(aiRoadmapSlug);
-
-let errorMessage = '';
-if (error || !roadmap) {
-  errorMessage = error?.message || 'Error loading AI Roadmap';
-}
-const title = roadmap?.title || 'Roadmap AI';
 ---
 
-<BaseLayout title={title} noIndex={true}>
-  <GenerateRoadmap
-    roadmapId={roadmap?.id}
-    isAuthenticatedUser={roadmap?.isAuthenticatedUser}
-    client:load
-  />
-  <CheckSubscriptionVerification client:load />
-</BaseLayout>
+<SkeletonLayout
+  title='AI Tutor'
+  briefTitle='AI Tutor'
+  description='AI Tutor'
+  keywords={['ai', 'tutor', 'education', 'learning']}
+  canonicalUrl={`/ai-roadmaps/${aiRoadmapSlug}`}
+>
+  <AIRoadmap client:load roadmapSlug={aiRoadmapSlug} />
+</SkeletonLayout>
