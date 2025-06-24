@@ -1,8 +1,8 @@
-import { BookOpen, FileTextIcon, type LucideIcon } from 'lucide-react';
+import { BookOpen, FileTextIcon, MapIcon, type LucideIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
 
 type LibraryTabsProps = {
-  activeTab: 'guides' | 'courses';
+  activeTab: 'guides' | 'courses' | 'roadmaps';
 };
 
 export function LibraryTabs(props: LibraryTabsProps) {
@@ -21,6 +21,12 @@ export function LibraryTabs(props: LibraryTabsProps) {
         icon={FileTextIcon}
         label="Guides"
         href="/ai/guides"
+      />
+      <LibraryTabButton
+        isActive={activeTab === 'roadmaps'}
+        icon={MapIcon}
+        label="Roadmaps"
+        href="/ai/roadmaps"
       />
     </div>
   );

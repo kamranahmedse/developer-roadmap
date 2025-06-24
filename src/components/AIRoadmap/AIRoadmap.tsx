@@ -1,7 +1,7 @@
 import './AIRoadmap.css';
 
 import { useQuery } from '@tanstack/react-query';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { flushSync } from 'react-dom';
 import { useToast } from '../../hooks/use-toast';
 import { queryClient } from '../../stores/query-client';

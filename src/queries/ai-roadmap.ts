@@ -51,6 +51,8 @@ import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from '../queries/ai-course';
 import { readChatStream } from '../lib/chat';
 import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
+import type { AIGuideDocument } from './ai-guide';
+import { isLoggedIn } from '../lib/jwt';
 
 type RoadmapDetails = {
   roadmapId: string;
@@ -175,4 +177,37 @@ export async function generateAIRoadmap(options: GenerateAIRoadmapOptions) {
     onLoadingChange?.(false);
     onStreamingChange?.(false);
   }
+}
+
+export type ListUserAiRoadmapsQuery = {
+  perPage?: string;
+  currPage?: string;
+  query?: string;
+};
+
+export type ListUserAiRoadmapsResponse = {
+  data: Omit<AIRoadmapDocument, 'data' | 'questionAndAnswers'>[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
+
+export function listUserAiRoadmapsOptions(
+  params: ListUserAiRoadmapsQuery = {
+    perPage: '21',
+    currPage: '1',
+    query: '',
+  },
+) {
+  return queryOptions({
+    queryKey: ['user-ai-roadmaps', params],
+    queryFn: () => {
+      return httpGet<ListUserAiRoadmapsResponse>(
+        `/v1-list-user-ai-roadmaps`,
+        params,
+      );
+    },
+    enabled: !!isLoggedIn(),
+  });
 }
