@@ -19,6 +19,7 @@ import {
   type QuestionAnswerChatMessage,
 } from './QuestionAnswerChat';
 import { useToast } from '../../hooks/use-toast';
+import { cn } from '../../lib/classname';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -159,7 +160,12 @@ export function ContentGenerator() {
         </div>
 
         <label
-          className="flex items-center gap-2 rounded-xl border border-gray-200 bg-white p-4"
+          className={cn(
+            'flex cursor-pointer items-center gap-2 rounded-xl border border-gray-200 bg-white p-4 transition-all',
+            {
+              'rounded-b-none bg-gray-200 text-black': showFineTuneOptions,
+            },
+          )}
           htmlFor={fineTuneOptionsId}
         >
           <input
@@ -185,6 +191,7 @@ export function ContentGenerator() {
 
         {showFineTuneOptions && (
           <QuestionAnswerChat
+            className="-mt-4 rounded-t-none border-t-0"
             term={title}
             format={selectedFormat}
             questionAnswerChatMessages={questionAnswerChatMessages}

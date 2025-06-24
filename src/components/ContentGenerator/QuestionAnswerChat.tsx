@@ -34,6 +34,7 @@ type QuestionAnswerChatProps = {
   onGenerateNow: () => void;
   defaultQuestions?: AIQuestionSuggestionsResponse['questions'];
   type?: 'create' | 'update';
+  className?: string;
 };
 
 export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
@@ -45,6 +46,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     setQuestionAnswerChatMessages,
     onGenerateNow,
     type = 'create',
+    className = '',
   } = props;
 
   const [activeMessageIndex, setActiveMessageIndex] = useState(
@@ -128,7 +130,12 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
 
   return (
     <>
-      <div className="relative h-[420px] w-full overflow-hidden rounded-xl border border-gray-200 bg-white">
+      <div
+        className={cn(
+          'relative h-[420px] w-full overflow-hidden rounded-xl border border-gray-200 bg-white',
+          className,
+        )}
+      >
         {isLoadingAiQuestionSuggestions && (
           <div className="absolute inset-0 flex items-center justify-center bg-white">
             <div className="flex animate-pulse items-center gap-2 rounded-full border border-gray-200 bg-gray-50 p-2 px-4 text-sm">
@@ -190,6 +197,8 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                       <QuestionAnswerChatMessage
                         role="assistant"
                         question={activeMessage?.question ?? ''}
+                        possibleAnswers={activeMessage.possibleAnswers}
+                        onAnswerSelect={handleAnswerSelect}
                       />
                     )}
                   </div>
@@ -215,32 +224,12 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
               {activeMessage && (
                 <div className="p-2">
                   <div className="rounded-lg border border-gray-200 bg-white">
-                    <div className="border-b border-gray-200 p-2">
-                      <p className="text-sm text-gray-500">
-                        Pick an answer from these or write it below
-                      </p>
-                      <div className="mt-2 flex flex-wrap gap-2 text-sm text-gray-500">
-                        {activeMessage.possibleAnswers.map((answer) => (
-                          <button
-                            type="button"
-                            key={answer}
-                            className="cursor-pointer rounded-lg bg-gray-100 p-1 px-2 hover:bg-gray-200 focus:outline-none"
-                            onClick={() => {
-                              handleAnswerSelect(answer);
-                            }}
-                          >
-                            {answer}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-
                     <div className="flex w-full items-center justify-between gap-2 p-2">
                       <input
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         className="w-full bg-transparent text-sm focus:outline-none"
-                        placeholder="Write your answer here..."
+                        placeholder="Or type your own answer..."
                         autoFocus
                         onKeyDown={(e) => {
                           if (e.key === 'Enter' && !e.shiftKey) {
@@ -287,10 +276,14 @@ type QuestionAnswerChatMessageProps = {
   role: 'user' | 'assistant';
   question?: string;
   answer?: string;
+  possibleAnswers?: string[];
+  onAnswerSelect?: (answer: string) => void;
 };
 
 function QuestionAnswerChatMessage(props: QuestionAnswerChatMessageProps) {
-  const { role, question, answer } = props;
+  const { role, question, answer, possibleAnswers, onAnswerSelect } = props;
+
+  const hasAnswers = possibleAnswers && possibleAnswers.length > 0;
 
   return (
     <div
@@ -300,7 +293,29 @@ function QuestionAnswerChatMessage(props: QuestionAnswerChatMessageProps) {
         role === 'assistant' && 'border-yellow-200 bg-yellow-300/30',
       )}
     >
-      {role === 'assistant' && <div className="text-sm">{question}</div>}
+      {role === 'assistant' && (
+        <div className="text-sm">
+          <div className={cn(hasAnswers && 'mb-2')}>{question}</div>
+          {hasAnswers && onAnswerSelect && (
+            <div className="mt-2">
+              <div className="flex flex-wrap gap-1.5">
+                {possibleAnswers.map((answer) => (
+                  <button
+                    type="button"
+                    key={answer}
+                    className="cursor-pointer rounded-md bg-white/70 px-2 py-1 text-xs text-gray-700 hover:bg-white hover:shadow-sm focus:outline-none border border-yellow-300/50"
+                    onClick={() => {
+                      onAnswerSelect(answer);
+                    }}
+                  >
+                    {answer}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
       {role === 'user' && <div className="text-sm">{answer}</div>}
     </div>
   );
