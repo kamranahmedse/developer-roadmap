@@ -192,7 +192,10 @@ export function ContentGenerator() {
               setShowFineTuneOptions(e.target.checked);
             }}
           />
-          Answer the following questions for a better {selectedFormat}
+          <span className="max-sm:hidden">
+            Answer the following questions for a better {selectedFormat}
+          </span>
+          <span className="sm:hidden">Customize your {selectedFormat}</span>
         </label>
 
         {showFineTuneOptions && (
