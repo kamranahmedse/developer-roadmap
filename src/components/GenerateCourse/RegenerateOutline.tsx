@@ -1,16 +1,15 @@
-import { PenSquare, RefreshCcw, SettingsIcon } from 'lucide-react';
+import { useMutation, useQuery } from '@tanstack/react-query';
+import { PenSquare, RefreshCcw, Settings2Icon } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { cn } from '../../lib/classname';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { ModifyCoursePrompt } from './ModifyCoursePrompt';
-import { queryClient } from '../../stores/query-client';
-import { getAiCourseOptions } from '../../queries/ai-course';
-import { useMutation, useQuery } from '@tanstack/react-query';
 import { httpPost } from '../../lib/query-http';
+import { getAiCourseOptions } from '../../queries/ai-course';
+import { queryClient } from '../../stores/query-client';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnswerChat';
-import { getAiGuideOptions } from '../../queries/ai-guide';
 import { UpdatePreferences } from '../GenerateGuide/UpdatePreferences';
+import { ModifyCoursePrompt } from './ModifyCoursePrompt';
 
 type RegenerateOutlineProps = {
   onRegenerateOutline: (prompt?: string) => void;
@@ -121,12 +120,12 @@ export function RegenerateOutline(props: RegenerateOutlineProps) {
               }}
               className="flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm text-gray-600 hover:bg-gray-100"
             >
-              <SettingsIcon
+              <Settings2Icon
                 size={16}
                 className="text-gray-400"
                 strokeWidth={2.5}
               />
-              Update Preferences
+              Preferences
             </button>
 
             <button
