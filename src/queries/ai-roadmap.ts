@@ -14,6 +14,9 @@ export interface AIRoadmapDocument {
   viewCount: number;
   lastVisitedAt: Date;
   keyType?: 'system' | 'user';
+
+  questionAndAnswers?: QuestionAnswerChatMessage[];
+
   createdAt: Date;
   updatedAt: Date;
 }

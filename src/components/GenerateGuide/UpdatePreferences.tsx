@@ -48,6 +48,13 @@ export function UpdatePreferences(props: UpdatePreferencesProps) {
   console.log(questionAnswerChatMessages);
   console.log(defaultQuestionAndAnswers);
 
+  const userAnswers = questionAnswerChatMessages.filter(
+    (message) => message.role === 'user',
+  );
+
+  const hasAnsweredAllQuestions =
+    userAnswers.length === defaultQuestions?.length;
+
   return (
     <Modal
       onClose={onClose}
@@ -75,7 +82,7 @@ export function UpdatePreferences(props: UpdatePreferencesProps) {
         type="update"
       />
 
-      {hasChangedQuestionAndAnswers && (
+      {hasChangedQuestionAndAnswers && hasAnsweredAllQuestions && (
         <button
           className="rounded-lg bg-black px-4 py-2 text-white hover:opacity-80 disabled:opacity-50"
           disabled={isUpdating || !hasChangedQuestionAndAnswers}

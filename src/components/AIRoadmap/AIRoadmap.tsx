@@ -7,7 +7,7 @@ import { useToast } from '../../hooks/use-toast';
 import { queryClient } from '../../stores/query-client';
 import { AITutorLayout } from '../AITutor/AITutorLayout';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { aiRoadmapOptions } from '../../queries/ai-roadmap';
+import { aiRoadmapOptions, generateAIRoadmap } from '../../queries/ai-roadmap';
 import { GenerateAIRoadmap } from './GenerateAIRoadmap';
 import { AIRoadmapContent } from './AIRoadmapContent';
 import { AIRoadmapChat } from './AIRoadmapChat';
@@ -23,6 +23,9 @@ export function AIRoadmap(props: AIRoadmapProps) {
   const toast = useToast();
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isRegenerating, setIsRegenerating] = useState(false);
+  const [regeneratedSvgHtml, setRegeneratedSvgHtml] = useState<string | null>(
+    null,
+  );
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
@@ -34,6 +37,7 @@ export function AIRoadmap(props: AIRoadmapProps) {
   const handleRegenerate = async (prompt?: string) => {
     flushSync(() => {
       setIsRegenerating(true);
+      setRegeneratedSvgHtml(null);
     });
 
     queryClient.cancelQueries(aiRoadmapOptions(roadmapSlug));
@@ -45,8 +49,27 @@ export function AIRoadmap(props: AIRoadmapProps) {
       return {
         ...old,
         data: '',
-        svg: null,
+        svgHtml: '',
       };
+    });
+
+    setRegeneratedSvgHtml('');
+    await generateAIRoadmap({
+      roadmapSlug: aiRoadmap?.slug || '',
+      term: aiRoadmap?.term || '',
+      prompt,
+      isForce: true,
+      onStreamingChange: setIsRegenerating,
+      onRoadmapSvgChange: (svg) => {
+        setRegeneratedSvgHtml(svg.outerHTML);
+      },
+      onError: (error) => {
+        toast.error(error);
+      },
+      onFinish: () => {
+        setIsRegenerating(false);
+        queryClient.invalidateQueries(aiRoadmapOptions(roadmapSlug));
+      },
     });
   };
 
@@ -62,8 +85,10 @@ export function AIRoadmap(props: AIRoadmapProps) {
       <div className="grow overflow-y-auto p-4 pt-0">
         {roadmapSlug && (
           <AIRoadmapContent
-            svgHtml={aiRoadmap?.svgHtml || ''}
+            svgHtml={regeneratedSvgHtml ?? aiRoadmap?.svgHtml ?? ''}
             isLoading={isLoadingBySlug || isRegenerating}
+            onRegenerate={handleRegenerate}
+            roadmapSlug={roadmapSlug}
           />
         )}
         {!roadmapSlug && (
