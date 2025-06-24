@@ -29,6 +29,7 @@ seo:
     - 'rust roadmap 2024'
     - 'rust roadmap 2025'
     - 'rustlang roadmap'
+    - 'rustlang roadmap 2025'
     - 'rust skills'
     - 'rust skills test'
     - 'skills for rust'
@@ -41,6 +42,7 @@ relatedRoadmaps:
   - 'devops'
   - 'golang'
   - 'nodejs'
+  - 'cpp'
 sitemap:
   priority: 1
   changefreq: 'monthly'

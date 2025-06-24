@@ -24,7 +24,7 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 schema:
   headline: 'Python Roadmap'
   description: 'Learn Python with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
@@ -38,7 +38,7 @@ question:
     
     In terms of responsibilities, they will vary based on their project, company, and seniority. However, they usually include writing efficient code, managing data structures (especially when doing data science with Python), optimizing algorithms, and working with frameworks such as Pandas, TensorFlow, Django, and others.
     
-    ## How to become a Python developer
+    ## How to become a Python developer?
     
     To become a Python developer, the first step is learning the basics of Python, including data types, functions, and object-oriented programming (you can get away without learning OOP as well since Python allows for a hybrid programming model). 
     
@@ -66,12 +66,14 @@ question:
     
     Finally, even though it's not as popular in these industries, Python can be used in cybersecurity, embedded systems, and even game development. Many companies use Python for cloud computing and backend services because of its simplicity and extensive support for integration with external systems.
 seo:
-  title: 'Learn to become a modern Python developer'
+  title: 'Learn to become a modern Python developer - roadmap.sh'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming an python developer'
     - 'python developer roadmap'
+    - 'python developer roadmap 2025'
     - 'python roadmap'
+    - 'python roadmap 2025'
     - 'become python developer'
     - 'python developer skills'
     - 'python skills test'
@@ -79,12 +81,12 @@ seo:
     - 'learn python development'
     - 'what is python'
     - 'python quiz'
+    - 'python for ai roadmap'
     - 'python interview questions'
 relatedRoadmaps:
   - 'backend'
   - 'devops'
   - 'golang'
-  - 'java'
   - 'javascript'
   - 'nodejs'
 sitemap:

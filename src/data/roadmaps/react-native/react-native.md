@@ -18,7 +18,7 @@ schema:
   datePublished: '2023-06-27'
   dateModified: '2023-06-27'
 seo:
-  title: 'Learn to become a modern React Native developer'
+  title: 'React Native Developer - roadmap.sh'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for react native development. Learn to become a modern React Native developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming a react native developer'
@@ -28,6 +28,7 @@ seo:
     - 'react native skills'
     - 'guide to react native'
     - 'react native roadmap'
+    - 'react native roadmap 2025'
     - 'react native skills'
     - 'react native skills test'
     - 'skills for react native'
@@ -35,10 +36,11 @@ seo:
     - 'react native quiz'
     - 'react native interview questions'
     - 'react native engineer roadmap'
+    - 'react native engineer roadmap 2025'
     - 'react native developer roadmap'
+    - 'react native developer roadmap 2025'
     - 'become a react native developer'
     - 'react native developer career path'
-    - 'react native developer'
     - 'modern react native developer'
 relatedRoadmaps:
   - 'javascript'

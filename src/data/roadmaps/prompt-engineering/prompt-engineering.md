@@ -12,7 +12,7 @@ dimensions:
   width: 968
   height: 2150
 schema:
-  headline: 'Prompt Engineering Roadmap: Step by step guide to learning Prompt Engineering'
+  headline: 'Prompt Engineering Roadmap'
   description: 'Learn how to use Prompt Engineering with this interactive step by step guide. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/prompt-engineering.png'
   datePublished: '2023-05-20'
@@ -24,8 +24,8 @@ seo:
     - 'prompt engineering tutorial'
     - 'step by step prompt engineering'
     - 'prompt engineering roadmap 2024'
+    - 'prompt engineering roadmap 2025'
     - 'guide to learning prompt engineering'
-    - 'prompt engineering roadmap'
     - 'prompt engineering'
     - 'prompt engineering engineer'
     - 'prompt engineering skills'

@@ -25,7 +25,7 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 schema:
   headline: 'PHP Roadmap'
   description: 'Learn how to use PHP with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
@@ -37,16 +37,17 @@ seo:
   description: 'Step by step guide to learn PHP in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'php tutorial'
+    - 'php tutorial 2025'
     - 'step by step guide for php'
     - 'php for beginners'
     - 'how to learn php'
     - 'use php in production'
     - 'php roadmap 2024'
+    - 'php roadmap 2025'
     - 'guide to learning php'
     - 'php roadmap'
     - 'php learning path'
     - 'php learning roadmap'
-    - 'container roadmap'
     - 'php'
     - 'php learning guide'
     - 'php skills'
@@ -64,6 +65,7 @@ relatedRoadmaps:
   - 'devops'
   - 'backend'
   - 'system-design'
+  - 'linux'
   - 'software-design-architecture'
 sitemap:
   priority: 1
