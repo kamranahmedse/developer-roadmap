@@ -158,6 +158,14 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
               <p className="text-sm text-gray-500">
                 You can now start generating {format}
               </p>
+
+              <button
+                className="mt-4 flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-sm text-gray-500 hover:bg-gray-200 focus:outline-none"
+                onClick={handleReset}
+              >
+                <RefreshCcwIcon className="size-4" />
+                Reanswer questions
+              </button>
             </div>
           </div>
         )}
@@ -249,6 +257,11 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                       <button
                         type="button"
                         className="flex size-7 shrink-0 items-center justify-center rounded-md hover:bg-gray-100 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                        disabled={!message}
+                        onClick={() => {
+                          handleAnswerSelect(message);
+                          setMessage('');
+                        }}
                       >
                         <SendIcon className="size-4" />
                       </button>
