@@ -137,7 +137,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     <>
       <div
         className={cn(
-          'relative h-[420px] w-full overflow-hidden rounded-xl border border-gray-200 bg-white',
+          'relative h-[350px] w-full overflow-hidden rounded-xl border border-gray-200 bg-white',
           className,
         )}
       >

@@ -98,7 +98,7 @@ export function ContentGenerator() {
   const canGenerate = trimmedTitle && trimmedTitle.length >= 3;
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-4">
+    <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-28 lg:pb-24">
       <div className="relative">
         {isUpgradeModalOpen && (
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
