@@ -7,6 +7,7 @@ import {
 import type { AllowedFormat } from './ContentGenerator';
 import {
   Loader2Icon,
+  PartyPopper,
   RefreshCcwIcon,
   RotateCwIcon,
   SendIcon,
@@ -56,6 +57,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
   const [status, setStatus] = useState<'answering' | 'done'>('answering');
 
   const scrollAreaRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const {
     data: aiQuestionSuggestions,
@@ -108,6 +110,9 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     flushSync(() => {
       setActiveMessageIndex(activeMessageIndex + 1);
       setStatus('answering');
+
+      // focus the input
+      inputRef.current?.focus();
     });
 
     scrollToBottom();
@@ -226,6 +231,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                   <div className="rounded-lg border border-gray-200 bg-white">
                     <div className="flex w-full items-center justify-between gap-2 p-2">
                       <input
+                        ref={inputRef}
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         className="w-full bg-transparent text-sm focus:outline-none"
@@ -248,26 +254,27 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                       </button>
                     </div>
                   </div>
+
+                  {canGenerateNow && (
+                    <div className="mt-2 hidden w-full items-center gap-2 p-2 md:flex">
+                      <p className="flex items-center gap-2 text-sm">
+                        <PartyPopper className="size-4" />
+                        Answer a few more questions for better output or{' '}
+                        <button
+                          className="rounded-lg bg-black px-2 py-1 text-xs text-white hover:bg-gray-800"
+                          onClick={onGenerateNow}
+                        >
+                          generate now
+                        </button>
+                      </p>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
           </>
         )}
       </div>
-
-      {canGenerateNow && status !== 'done' && activeMessage && (
-        <div className="flex w-full items-center rounded-lg border border-gray-200 bg-white p-2">
-          <p className="text-sm">
-            Keep answering for better output or{' '}
-            <button
-              className="text-blue-500 underline underline-offset-2 hover:no-underline focus:outline-none"
-              onClick={onGenerateNow}
-            >
-              Generate now.
-            </button>
-          </p>
-        </div>
-      )}
     </>
   );
 }
@@ -303,7 +310,7 @@ function QuestionAnswerChatMessage(props: QuestionAnswerChatMessageProps) {
                   <button
                     type="button"
                     key={answer}
-                    className="cursor-pointer rounded-md bg-white/70 px-2 py-1 text-xs text-gray-700 hover:bg-white hover:shadow-sm focus:outline-none border border-yellow-300/50"
+                    className="cursor-pointer rounded-md border border-yellow-300/50 bg-white/70 px-2 py-1 text-xs text-gray-700 hover:bg-white hover:shadow-sm focus:outline-none"
                     onClick={() => {
                       onAnswerSelect(answer);
                     }}
