@@ -1,4 +1,4 @@
-# Spring cloud
+# Spring Cloud
 
 Spring Cloud is a collection of libraries and tools for building cloud-native applications using the Spring Framework. It provides a set of abstractions and implementations for common patterns and best practices used in cloud-based applications, such as service discovery, configuration management, and circuit breaker patterns, among others.
 
