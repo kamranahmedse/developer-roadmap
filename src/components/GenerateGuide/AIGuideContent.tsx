@@ -8,7 +8,7 @@ type AIGuideContentProps = {
   html: string;
   onRegenerate?: (prompt?: string) => void;
   isLoading?: boolean;
-  guideSlug: string;
+  guideSlug?: string;
 };
 
 export function AIGuideContent(props: AIGuideContentProps) {
@@ -32,7 +32,7 @@ export function AIGuideContent(props: AIGuideContentProps) {
         </div>
       )}
 
-      {onRegenerate && !isLoading && (
+      {onRegenerate && !isLoading && guideSlug && (
         <div className="absolute top-4 right-4">
           <AIGuideRegenerate
             onRegenerate={onRegenerate}

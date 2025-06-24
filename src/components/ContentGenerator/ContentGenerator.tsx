@@ -1,6 +1,7 @@
 import {
   BookOpenIcon,
   FileTextIcon,
+  MapIcon,
   SparklesIcon,
   type LucideIcon,
 } from 'lucide-react';
@@ -56,6 +57,11 @@ export function ContentGenerator() {
       icon: FileTextIcon,
       value: 'guide',
     },
+    {
+      label: 'Roadmap',
+      icon: MapIcon,
+      value: 'roadmap',
+    },
   ];
 
   const handleSubmit = () => {
@@ -75,6 +81,8 @@ export function ContentGenerator() {
       window.location.href = `/ai/course?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
     } else if (selectedFormat === 'guide') {
       window.location.href = `/ai/guide?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
+    } else if (selectedFormat === 'roadmap') {
+      window.location.href = `/ai/roadmap?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
     }
   };
 
@@ -88,6 +96,7 @@ export function ContentGenerator() {
 
   const trimmedTitle = title.trim();
   const canGenerate = trimmedTitle && trimmedTitle.length >= 3;
+
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-4">
       <div className="relative">
@@ -142,7 +151,7 @@ export function ContentGenerator() {
           <label className="inline-block text-gray-500">
             Choose the format
           </label>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             {allowedFormats.map((format) => {
               const isSelected = format.value === selectedFormat;
 
