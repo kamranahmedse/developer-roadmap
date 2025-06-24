@@ -6,11 +6,9 @@ import {
 } from '../../queries/user-ai-session';
 import type { AllowedFormat } from './ContentGenerator';
 import {
-  Loader2Icon,
-  PartyPopper,
-  RefreshCcwIcon,
+  Loader2Icon, RefreshCcwIcon,
   RotateCwIcon,
-  SendIcon,
+  SendIcon
 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../lib/classname';
@@ -154,16 +152,16 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
           <div className="absolute inset-0 flex items-center justify-center bg-white">
             <div className="flex flex-col items-center">
               <CheckIcon additionalClasses="size-12" />
-              <p className="mt-3 text-lg">Preferences saved</p>
+              <p className="mt-3 font-semibold text-lg">Preferences saved</p>
               <p className="text-sm text-gray-500">
                 You can now start generating {format}
               </p>
 
               <button
-                className="mt-4 flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-sm text-gray-500 hover:bg-gray-200 focus:outline-none"
+                className="mt-4 flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-1.5 text-sm text-gray-500 hover:bg-gray-200 focus:outline-none"
                 onClick={handleReset}
               >
-                <RefreshCcwIcon className="size-4" />
+                <RefreshCcwIcon className="size-3.5" />
                 Reanswer questions
               </button>
             </div>
@@ -267,21 +265,6 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                       </button>
                     </div>
                   </div>
-
-                  {canGenerateNow && (
-                    <div className="mt-2 hidden w-full items-center gap-2 p-2 md:flex">
-                      <p className="flex items-center gap-2 text-sm">
-                        <PartyPopper className="size-4" />
-                        Answer a few more questions for better output or{' '}
-                        <button
-                          className="rounded-lg bg-black px-2 py-1 text-xs text-white hover:bg-gray-800"
-                          onClick={onGenerateNow}
-                        >
-                          generate now
-                        </button>
-                      </p>
-                    </div>
-                  )}
                 </div>
               )}
             </div>
