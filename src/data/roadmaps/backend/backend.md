@@ -22,7 +22,7 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 partner:
   description: "Get the latest Backend news from our sister site"
   link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
@@ -38,17 +38,17 @@ dimensions:
   width: 968
   height: 3500
 schema:
-  headline: 'Backend Developer Roadmap: What is Backend Development?'
+  headline: 'Backend Developer Roadmap'
   description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven roadmap.'
   imageUrl: 'https://roadmap.sh/roadmaps/backend.png'
   datePublished: '2023-01-05'
   dateModified: '2023-09-16'
 seo:
-  title: 'Backend Developer Roadmap: What is Backend Development?'
-  description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven roadmap.'
+  title: 'Backend Developer Roadmap - roadmap.sh'
+  description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven Backend roadmap.'
   keywords:
-    - 'backend roadmap 2024'
-    - 'backend developer roadmap 2024'
+    - 'backend roadmap 2025'
+    - 'backend developer roadmap 2025'
     - 'guide to becoming a developer'
     - 'guide to becoming a backend developer'
     - 'backend roadmap'
@@ -63,21 +63,20 @@ seo:
     - 'backend developer roadmap'
     - 'become a backend developer'
     - 'backend developer career path'
+    - 'typescript developer'
     - 'javascript developer'
     - 'modern javascript developer'
-    - 'node developer'
+    - 'nodejs developer'
     - 'skills for backend development'
     - 'learn backend development'
     - 'what is backend development'
     - 'backend developer quiz'
     - 'backend developer interview questions'
 relatedRoadmaps:
-  - 'docker'
+  - 'frontend'
   - 'full-stack'
   - 'system-design'
   - 'python'
-  - 'java'
-  - 'golang'
   - 'devops'
   - 'javascript'
   - 'nodejs'

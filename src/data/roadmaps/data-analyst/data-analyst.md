@@ -25,10 +25,10 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 schema:
   headline: 'Data Analyst Roadmap'
-  description: 'Learn how to become an Data Analyst with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to become an Data Analyst with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/data-analyst.png'
   datePublished: '2024-04-02'
   dateModified: '2024-04-02'
@@ -63,13 +63,13 @@ question:
 
     When it comes to skills, understanding and having proficiency in languages such as Python or R, along with expertise in various tools like Power BI, are incredibly valuable here. They enable you to perform predictive modeling and even apply machine learning techniques when needed.
 seo:
-  title: 'Data Analyst Roadmap'
-  description: 'Learn to become an Data Analyst using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.'
+  title: 'Data Analyst Roadmap - roadmap.sh'
+  description: 'Learn to become an Data Analyst using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern data analysts.'
   keywords:
-    - 'data analyst roadmap 2024'
-    - 'data analytics roadmap 2024'
+    - 'data analyst roadmap 2025'
+    - 'data analytics roadmap 2025'
     - 'guide to becoming an data analyst'
-    - 'data analyst roadmap'
+    - 'easy data analyst roadmap'
     - 'data analyst'
     - 'data analyst roadmap'
     - 'data scientist roadmap'

@@ -50,6 +50,7 @@ relatedRoadmaps:
   - 'ai-data-scientist'
   - 'prompt-engineering'
   - 'data-analyst'
+  - 'mlops'
 sitemap:
   priority: 1
   changefreq: 'monthly'

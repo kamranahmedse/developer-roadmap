@@ -23,8 +23,13 @@ seo:
   keywords:
     - 'guide to becoming an android developer'
     - 'android developer roadmap'
+    - 'android developer roadmap 2025'
     - 'android roadmap'
+    - 'android roadmap 2025'
     - 'become android developer'
+    - 'android application development'
+    - 'android application development roadmap'
+    - 'android application development 2025'
     - 'android developer skills'
     - 'android skills test'
     - 'skills for android development'
@@ -35,6 +40,9 @@ seo:
 relatedRoadmaps:
   - 'react-native'
   - 'flutter'
+  - 'java'
+  - 'spring-boot'
+  - 'rust'
 sitemap:
   priority: 1
   changefreq: 'monthly'

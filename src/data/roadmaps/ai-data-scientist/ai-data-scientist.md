@@ -14,7 +14,7 @@ dimensions:
   height: 2140
 schema:
   headline: 'AI and Data Scientist Roadmap'
-  description: 'Learn how to become an AI and Data Scientist with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to become an AI and Data Scientist with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/ai-data-scientist.png'
   datePublished: '2023-08-17'
   dateModified: '2023-08-17'
@@ -65,15 +65,15 @@ question:
 
     With curiosity and practice, anyone can start exploring the world of Data Science.
 seo:
-  title: 'AI and Data Scientist Roadmap'
-  description: 'Learn to become an AI and Data Scientist using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.'
+  title: 'AI and Data Scientist Roadmap - roadmap.sh'
+  description: 'Learn to become an AI and Data Scientist using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern AI and Data Science.'
   keywords:
     - 'ai and data scientist roadmap 2024'
-    - 'ai and data scientist roadmap 2024'
+    - 'ai and data scientist roadmap 2025'
     - 'guide to becoming an ai and data scientist'
     - 'ai and data scientist roadmap'
     - 'ai scientist'
-    - 'ai scientist roadmap'
+    - 'ai scientist roadmap 2025'
     - 'data scientist roadmap'
     - 'ai skills'
     - 'data scientist skills'
@@ -91,6 +91,9 @@ seo:
     - 'ai and data scientist quiz'
     - 'ai and data scientist interview questions'
 relatedRoadmaps:
+  - 'prompt-engineering'
+  - 'data-analyst'
+  - 'ai-engineer'
   - 'python'
   - 'backend'
   - 'devops'
