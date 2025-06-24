@@ -22,7 +22,7 @@ export function AILibraryLayout(props: AILibraryLayoutProps) {
       <div className="mx-auto flex w-full max-w-6xl flex-grow flex-col p-2">
         <AITutorHeader
           title="Library"
-          subtitle="Explore your AI-generated guides and courses"
+          subtitle="Explore your AI-generated guides, courses and roadmaps"
           onUpgradeClick={() => setShowUpgradePopup(true)}
         />
 
