@@ -6,11 +6,12 @@ briefTitle: 'Spring Boot'
 briefDescription: 'Step by step guide to becoming a Spring Boot Developer in 2025'
 title: 'Spring Boot Developer'
 description: 'Step by step guide to becoming a Spring Boot developer in 2025'
+renderer: 'editor'
 hasTopics: true
 isNew: false
 dimensions:
   width: 968
-  height: 1245.52
+  height: 1750
 courses:
   - title: 'Complete Course to Master SQL'
     description: 'Learn SQL from scratch with this comprehensive course'

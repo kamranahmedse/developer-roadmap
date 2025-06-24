@@ -1,4012 +1,2117 @@
 {
-  "mockup": {
-    "controls": {
-      "control": [
-        {
-          "ID": "2603",
-          "typeID": "Arrow",
-          "zOrder": "0",
-          "w": "1",
-          "h": "203",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "731",
-          "y": "1333",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0.48803395698428176,
-              "y": 202.78634832628973
-            },
-            "p1": {
-              "x": 0.4642857142857151,
-              "y": -0.003992113361953184
-            },
-            "p2": {
-              "x": 0.48803395698428176,
-              "y": -0.11897394490631541
-            }
-          }
-        },
-        {
-          "ID": "2604",
-          "typeID": "Arrow",
-          "zOrder": "1",
-          "w": "187",
-          "h": "138",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "504",
-          "y": "1173",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 186.76508709882694,
-              "y": 138.60855066526483
-            },
-            "p1": {
-              "x": 0.531203407215966,
-              "y": 0.08221256395262982
-            },
-            "p2": {
-              "x": -0.2907435011008488,
-              "y": 0.3019153689817813
-            }
-          }
-        },
-        {
-          "ID": "2605",
-          "typeID": "Arrow",
-          "zOrder": "2",
-          "w": "158",
-          "h": "87",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "504",
-          "y": "1224",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 157.7197788618006,
-              "y": 87.60855066526483
-            },
-            "p1": {
-              "x": 0.5113609467455617,
-              "y": 0.06473372781065195
-            },
-            "p2": {
-              "x": -0.2907435011008488,
-              "y": 0.3019153689817813
-            }
-          }
-        },
-        {
-          "ID": "2606",
-          "typeID": "Arrow",
-          "zOrder": "3",
-          "w": "162",
-          "h": "42",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "495",
-          "y": "1275",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 161.27378356735812,
-              "y": 42.054545959707184
-            },
-            "p1": {
-              "x": 0.5113609467455617,
-              "y": 0.06473372781065193
-            },
-            "p2": {
-              "x": -0.2907435011008488,
-              "y": 0.3019153689817813
-            }
-          }
-        },
-        {
-          "ID": "2607",
-          "typeID": "Arrow",
-          "zOrder": "4",
-          "w": "167",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "496",
-          "y": "1329",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 166.5351106266147,
-              "y": 0.6329018604571957
-            },
-            "p1": {
-              "x": 0.4642857142857147,
-              "y": -0.003992113361953187
-            },
-            "p2": {
-              "x": -0.10033385901039082,
-              "y": 0.6329018604571957
-            }
-          }
-        },
-        {
-          "ID": "2608",
-          "typeID": "Arrow",
-          "zOrder": "5",
-          "w": "167",
-          "h": "65",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1094",
-          "y": "1179",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 166.7792612504686,
-              "y": 65.5196518347525
-            },
-            "p1": {
-              "x": 0.41475409836065563,
-              "y": -0.08770491803278692
-            },
-            "p2": {
-              "x": -0.23126111243277592,
-              "y": 0.16770830144309912
-            }
-          }
-        },
-        {
-          "ID": "2609",
-          "typeID": "Arrow",
-          "zOrder": "6",
-          "w": "152",
-          "h": "24",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1110",
-          "y": "1171",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 152.59459301528295,
-              "y": 24.50569418477039
-            },
-            "p1": {
-              "x": 0.41508650519031215,
-              "y": -0.06671280276816575
-            },
-            "p2": {
-              "x": 0.10672477089451604,
-              "y": 0.906381242186626
-            }
-          }
-        },
-        {
-          "ID": "2610",
-          "typeID": "Arrow",
-          "zOrder": "7",
-          "w": "152",
-          "h": "31",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1110",
-          "y": "1127",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 152.59459301528295,
-              "y": -0.47691287816701333
-            },
-            "p1": {
-              "x": 0.4505529477035481,
-              "y": 0.05320032289534493
-            },
-            "p2": {
-              "x": 0.10672477089451604,
-              "y": 30.383727123673452
-            }
-          }
-        },
-        {
-          "ID": "2611",
-          "typeID": "Arrow",
-          "zOrder": "8",
-          "w": "158",
-          "h": "69",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1097",
-          "y": "1079",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 158.33326595602625,
-              "y": 0.3244612366651154
-            },
-            "p1": {
-              "x": 0.4049649217485163,
-              "y": 0.09325418240690724
-            },
-            "p2": {
-              "x": 0.39940241719568803,
-              "y": 69.30706829960263
-            }
-          }
-        },
-        {
-          "ID": "2612",
-          "typeID": "Arrow",
-          "zOrder": "9",
-          "w": "213",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "821",
-          "y": "984",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 212.98029127925827,
-              "y": 0.8810260550936846
-            },
-            "p1": {
-              "x": 0.46428571428571536,
-              "y": -0.003992113361953186
-            },
-            "p2": {
-              "x": -0.2750123853365949,
-              "y": 0.8810260550936846
-            }
-          }
-        },
-        {
-          "ID": "2613",
-          "typeID": "Arrow",
-          "zOrder": "10",
-          "w": "148",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "522",
-          "y": "881",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 148.01679645265642,
-              "y": 1.0707373480713613
-            },
-            "p1": {
-              "x": 0.4642857142857146,
-              "y": -0.003992113361953188
-            },
-            "p2": {
-              "x": -0.10033385901039082,
-              "y": 0.6329018604571957
-            }
-          }
-        },
-        {
-          "ID": "2614",
-          "typeID": "Arrow",
-          "zOrder": "11",
-          "w": "1",
-          "h": "94",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "715",
-          "y": "885",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0.48803395698428176,
-              "y": 94.58144672562196
-            },
-            "p1": {
-              "x": 0.46428571428571475,
-              "y": -0.003992113361953182
-            },
-            "p2": {
-              "x": 0.48803395698428176,
-              "y": 0.4641401455688765
-            }
-          }
-        },
-        {
-          "ID": "2615",
-          "typeID": "Arrow",
-          "zOrder": "12",
-          "w": "1",
-          "h": "98",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "715",
-          "y": "977",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0.48803395698428176,
-              "y": 97.58144672562196
-            },
-            "p1": {
-              "x": 0.46428571428571486,
-              "y": -0.003992113361953183
-            },
-            "p2": {
-              "x": 0.48803395698428176,
-              "y": 0.0027856225734694817
-            },
-            "stroke": "dotted"
-          }
-        },
-        {
-          "ID": "2616",
-          "typeID": "Arrow",
-          "zOrder": "13",
-          "w": "224",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1021",
-          "y": "629",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 223.55584966255435,
-              "y": 0.8810260550936846
-            },
-            "p1": {
-              "x": 0.4642857142857149,
-              "y": -0.003992113361953184
-            },
-            "p2": {
-              "x": -0.2457271352116095,
-              "y": 0.8810260550936846
-            }
-          }
-        },
-        {
-          "ID": "2617",
-          "typeID": "Arrow",
-          "zOrder": "14",
-          "w": "1",
-          "h": "131",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1344",
-          "y": "837",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": -0.2457271352116095,
-              "y": 131.1045059699236
-            },
-            "p1": {
-              "x": 0.4642857142857149,
-              "y": -0.003992113361953185
-            },
-            "p2": {
-              "x": -0.2457271352116095,
-              "y": -0.11897394490631541
-            }
-          }
-        },
-        {
-          "ID": "2618",
-          "typeID": "Arrow",
-          "zOrder": "15",
-          "w": "146",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1106",
-          "y": "848",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 146.7141818215698,
-              "y": 0.8543135727297795
-            },
-            "p1": {
-              "x": 0.46428571428571463,
-              "y": -0.0039921133619531856
-            },
-            "p2": {
-              "x": 0.3878607219769492,
-              "y": 1.1528447227344714
-            }
-          }
-        },
-        {
-          "ID": "2619",
-          "typeID": "Arrow",
-          "zOrder": "16",
-          "w": "119",
-          "h": "49",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1125",
-          "y": "787",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 119.2068375715935,
-              "y": 48.85431357272978
-            },
-            "p1": {
-              "x": 0.5272614687537527,
-              "y": 0.09288510762768885
-            },
-            "p2": {
-              "x": 0.10401807192488377,
-              "y": -0.4882830771329054
-            }
-          }
-        },
-        {
-          "ID": "2620",
-          "typeID": "Arrow",
-          "zOrder": "17",
-          "w": "124",
-          "h": "99",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1123",
-          "y": "732",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 124.60977527158389,
-              "y": 98.74990702274397
-            },
-            "p1": {
-              "x": 0.5272614687537526,
-              "y": 0.09288510762768905
-            },
-            "p2": {
-              "x": 0.40254922192957565,
-              "y": 0.06471372301859901
-            }
-          }
-        },
-        {
-          "ID": "2621",
-          "typeID": "Arrow",
-          "zOrder": "18",
-          "w": "537",
-          "h": "2",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "806",
-          "y": "965",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 536.5558496625544,
-              "y": 1.8810260550936846
-            },
-            "p1": {
-              "x": 0.4642857142857152,
-              "y": -0.0039921133619531856
-            },
-            "p2": {
-              "x": -0.2750123853365949,
-              "y": 1.8810260550936846
-            }
-          }
-        },
-        {
-          "ID": "2622",
-          "typeID": "Arrow",
-          "zOrder": "19",
-          "w": "1",
-          "h": "179",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1020",
-          "y": "451",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0.48803395698428176,
-              "y": 178.58144672562196
-            },
-            "p1": {
-              "x": 0.4642857142857148,
-              "y": -0.003992113361953182
-            },
-            "p2": {
-              "x": 0.48803395698428176,
-              "y": -0.11897394490631541
-            }
-          }
-        },
-        {
-          "ID": "2623",
-          "typeID": "TextArea",
-          "zOrder": "20",
-          "w": "238",
-          "h": "55",
-          "measuredW": "200",
-          "measuredH": "140",
-          "x": "903",
-          "y": "523",
-          "properties": {
-            "borderColor": "16777215"
-          }
-        },
-        {
-          "ID": "2624",
-          "typeID": "Arrow",
-          "zOrder": "21",
-          "w": "164",
-          "h": "147",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1075",
-          "y": "291",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 164.48014075256583,
-              "y": 0.1678668002079462
-            },
-            "p1": {
-              "x": 0.5161401966326553,
-              "y": 0.08687166794711838
-            },
-            "p2": {
-              "x": 0.39767358046537993,
-              "y": 146.97849532261353
-            }
-          }
-        },
-        {
-          "ID": "2625",
-          "typeID": "Arrow",
-          "zOrder": "22",
-          "w": "161",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1081",
-          "y": "340",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 160.20732461753528,
-              "y": -0.4709849806466764
-            },
-            "p1": {
-              "x": 0.5161401966326554,
-              "y": 0.0868716679471183
-            },
-            "p2": {
-              "x": -0.42077482462605076,
-              "y": 99.70567918758297
-            }
-          }
-        },
-        {
-          "ID": "2626",
-          "typeID": "Arrow",
-          "zOrder": "23",
-          "w": "138",
-          "h": "50",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1108",
-          "y": "395",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 138.38887621244385,
-              "y": -0.201101301623396
-            },
-            "p1": {
-              "x": 0.4863185723727692,
-              "y": 0.052478519497686664
-            },
-            "p2": {
-              "x": 0.214167014885561,
-              "y": 49.88723078249143
-            }
-          }
-        },
-        {
-          "ID": "2627",
-          "typeID": "Arrow",
-          "zOrder": "24",
-          "w": "148",
-          "h": "3",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1119",
-          "y": "454",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 148.01679645265642,
-              "y": 0.07073734807136134
-            },
-            "p1": {
-              "x": 0.46428571428571463,
-              "y": -0.003992113361953189
-            },
-            "p2": {
-              "x": -0.42272979529752774,
-              "y": 2.9775178372777873
-            }
-          }
-        },
-        {
-          "ID": "2628",
-          "typeID": "Arrow",
-          "zOrder": "25",
-          "w": "281",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "759",
-          "y": "457",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 281.3020743683919,
-              "y": 0.8810260550936846
-            },
-            "p1": {
-              "x": 0.4642857142857147,
-              "y": -0.003992113361953183
-            },
-            "p2": {
-              "x": 0.48803395698428176,
-              "y": 0.8810260550936846
-            }
-          }
-        },
-        {
-          "ID": "2629",
-          "typeID": "Arrow",
-          "zOrder": "26",
-          "w": "138",
-          "h": "145",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "455",
-          "y": "462",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 138.4250431698665,
-              "y": 0.15906943218618608
-            },
-            "p1": {
-              "x": 0.49351535836177424,
-              "y": -0.09488054607508524
-            },
-            "p2": {
-              "x": 0.25033397230828314,
-              "y": 145.24251408962232
-            }
-          }
-        },
-        {
-          "ID": "2630",
-          "typeID": "Arrow",
-          "zOrder": "27",
-          "w": "128",
-          "h": "93",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "454",
-          "y": "459",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 127.33475611508015,
-              "y": -0.2952982977527654
-            },
-            "p1": {
-              "x": 0.49351535836177457,
-              "y": -0.09488054607508535
-            },
-            "p2": {
-              "x": -0.476849892661221,
-              "y": 92.97263041059898
-            }
-          }
-        },
-        {
-          "ID": "2631",
-          "typeID": "Arrow",
-          "zOrder": "28",
-          "w": "119",
-          "h": "41",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "454",
-          "y": "459",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 118.69883679023269,
-              "y": -0.2952982977527654
-            },
-            "p1": {
-              "x": 0.4935153583617746,
-              "y": -0.09488054607508538
-            },
-            "p2": {
-              "x": -0.3404418251459447,
-              "y": 40.06584992139261
-            }
-          }
-        },
-        {
-          "ID": "2632",
-          "typeID": "Arrow",
-          "zOrder": "29",
-          "w": "116",
-          "h": "57",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "454",
-          "y": "384",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 116.10806099277852,
-              "y": 57.43286305255248
-            },
-            "p1": {
-              "x": 0.5967446581465075,
-              "y": 0.06448697652928094
-            },
-            "p2": {
-              "x": 0.3867420398235595,
-              "y": 0.43579550855969273
-            }
-          }
-        },
-        {
-          "ID": "2633",
-          "typeID": "Arrow",
-          "zOrder": "30",
-          "w": "149",
-          "h": "109",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "461",
-          "y": "334",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 148.8332898870765,
-              "y": 109.16004691752192
-            },
-            "p1": {
-              "x": 0.6360127761511841,
-              "y": 0.09156241682193235
-            },
-            "p2": {
-              "x": 0.2954774997014624,
-              "y": 0.347463424444868
-            }
-          }
-        },
-        {
-          "ID": "2634",
-          "typeID": "Arrow",
-          "zOrder": "31",
-          "w": "177",
-          "h": "214",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "460",
-          "y": "455",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 177.4682317265881,
-              "y": 0.25033397230828314
-            },
-            "p1": {
-              "x": 0.46461829054937476,
-              "y": -0.1088245057213903
-            },
-            "p2": {
-              "x": 0.022661364670909734,
-              "y": 214.50946531263833
-            }
-          }
-        },
-        {
-          "ID": "2635",
-          "typeID": "Arrow",
-          "zOrder": "32",
-          "w": "1",
-          "h": "112",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "686",
-          "y": "451",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0.24143192912038103,
-              "y": 111.61050470611792
-            },
-            "p1": {
-              "x": 0.46428571428571463,
-              "y": -0.003992113361953184
-            },
-            "p2": {
-              "x": 0.24143192912043787,
-              "y": -0.11897394490631541
-            }
-          }
-        },
-        {
-          "ID": "2636",
-          "typeID": "Arrow",
-          "zOrder": "33",
-          "w": "146",
-          "h": "2",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "431",
-          "y": "446",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 146.01679645265642,
-              "y": 2.0707373480713613
-            },
-            "p1": {
-              "x": 0.4642857142857146,
-              "y": -0.003992113361953187
-            },
-            "p2": {
-              "x": 0.24143192912043787,
-              "y": -0.11897394490631541
-            }
-          }
-        },
-        {
-          "ID": "2637",
-          "typeID": "Arrow",
-          "zOrder": "34",
-          "w": "173",
-          "h": "268",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "747",
-          "y": "178",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 172.6216144658764,
-              "y": 0.236415956616014
-            },
-            "p1": {
-              "x": 0.5789624059056846,
-              "y": 0.2176906025812808
-            },
-            "p2": {
-              "x": 0.14440715214993816,
-              "y": 268.6144146474609
-            }
-          }
-        },
-        {
-          "ID": "2638",
-          "typeID": "Label",
-          "zOrder": "35",
-          "measuredW": "149",
-          "measuredH": "36",
-          "x": "843",
-          "y": "126",
-          "properties": {
-            "size": "28",
-            "text": "Spring Boot"
-          }
-        },
-        {
-          "ID": "2639",
-          "typeID": "__group__",
-          "zOrder": "36",
-          "measuredW": "350",
-          "measuredH": "141",
-          "w": "350",
-          "h": "141",
-          "x": "1170",
-          "y": "60",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "350",
-                  "h": "141",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "314",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "17",
-                  "properties": {
-                    "size": "17",
-                    "text": "Find the detailed version of this roadmap"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "319",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "45",
-                  "properties": {
-                    "size": "17",
-                    "text": "along with resources and other roadmaps"
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "320",
-                  "measuredH": "45",
-                  "w": "320",
-                  "h": "45",
-                  "x": "15",
-                  "y": "81",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Canvas",
-                          "zOrder": "0",
-                          "w": "320",
-                          "h": "45",
-                          "measuredW": "100",
-                          "measuredH": "70",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "borderColor": "4273622",
-                            "color": "4273622"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "105",
-                          "measuredH": "28",
-                          "x": "141",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "roadmap.sh"
-                          }
-                        },
-                        {
-                          "ID": "2",
-                          "typeID": "Label",
-                          "zOrder": "2",
-                          "measuredW": "45",
-                          "measuredH": "28",
-                          "x": "66",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "https"
-                          }
-                        },
-                        {
-                          "ID": "3",
-                          "typeID": "Label",
-                          "zOrder": "3",
-                          "measuredW": "5",
-                          "measuredH": "28",
-                          "x": "113",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": ":"
-                          }
-                        },
-                        {
-                          "ID": "4",
-                          "typeID": "Label",
-                          "zOrder": "4",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "120",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        },
-                        {
-                          "ID": "5",
-                          "typeID": "Label",
-                          "zOrder": "5",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "128",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2640",
-          "typeID": "__group__",
-          "zOrder": "37",
-          "measuredW": "391",
-          "measuredH": "55",
-          "w": "391",
-          "h": "55",
-          "x": "710",
-          "y": "239",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/java"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "391",
-                  "h": "55",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "4273622",
-                    "borderColor": "4273622"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "296",
-                  "measuredH": "28",
-                  "x": "48",
-                  "y": "14",
-                  "properties": {
-                    "size": "20",
-                    "color": "16777215",
-                    "text": "Learn Java / Visit Java Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2641",
-          "typeID": "Arrow",
-          "zOrder": "38",
-          "w": "1",
-          "h": "64",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "917",
-          "y": "50",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": -0.3586399639038973,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.32941176470588224,
-              "y": 0
-            },
-            "p2": {
-              "x": -0.3586399639038973,
-              "y": 64
-            },
-            "stroke": "dotted"
-          }
-        },
-        {
-          "ID": "2642",
-          "typeID": "__group__",
-          "zOrder": "39",
-          "measuredW": "408",
-          "measuredH": "202",
-          "w": "408",
-          "h": "202",
-          "x": "235",
-          "y": "60",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "408",
-                  "h": "202",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "__group__",
-                  "zOrder": "1",
-                  "measuredW": "155",
-                  "measuredH": "27",
-                  "w": "155",
-                  "h": "27",
-                  "x": "35",
-                  "y": "75",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh/java"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "122",
-                          "measuredH": "26",
-                          "x": "33",
-                          "y": "0",
-                          "properties": {
-                            "size": "18",
-                            "text": "Java Roadmap"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "__group__",
-                          "zOrder": "1",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "w": "24",
-                          "h": "24",
-                          "x": "0",
-                          "y": "3",
-                          "children": {
-                            "controls": {
-                              "control": [
-                                {
-                                  "ID": "0",
-                                  "typeID": "Icon",
-                                  "zOrder": "0",
-                                  "measuredW": "24",
-                                  "measuredH": "24",
-                                  "x": "0",
-                                  "y": "0",
-                                  "properties": {
-                                    "color": "16777215",
-                                    "icon": {
-                                      "ID": "circle",
-                                      "size": "small"
-                                    }
-                                  }
-                                },
-                                {
-                                  "ID": "1",
-                                  "typeID": "Icon",
-                                  "zOrder": "1",
-                                  "measuredW": "24",
-                                  "measuredH": "24",
-                                  "x": "0",
-                                  "y": "0",
-                                  "properties": {
-                                    "color": "10066329",
-                                    "icon": {
-                                      "ID": "check-circle",
-                                      "size": "small"
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "__group__",
-                  "zOrder": "2",
-                  "measuredW": "189",
-                  "measuredH": "27",
-                  "w": "189",
-                  "h": "27",
-                  "x": "35",
-                  "y": "111",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh/backend"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "156",
-                          "measuredH": "26",
-                          "x": "33",
-                          "y": "0",
-                          "properties": {
-                            "size": "18",
-                            "text": "Backend Roadmap"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "__group__",
-                          "zOrder": "1",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "w": "24",
-                          "h": "24",
-                          "x": "0",
-                          "y": "3",
-                          "children": {
-                            "controls": {
-                              "control": [
-                                {
-                                  "ID": "0",
-                                  "typeID": "Icon",
-                                  "zOrder": "0",
-                                  "measuredW": "24",
-                                  "measuredH": "24",
-                                  "x": "0",
-                                  "y": "0",
-                                  "properties": {
-                                    "color": "16777215",
-                                    "icon": {
-                                      "ID": "circle",
-                                      "size": "small"
-                                    }
-                                  }
-                                },
-                                {
-                                  "ID": "1",
-                                  "typeID": "Icon",
-                                  "zOrder": "1",
-                                  "measuredW": "24",
-                                  "measuredH": "24",
-                                  "x": "0",
-                                  "y": "0",
-                                  "properties": {
-                                    "color": "10066329",
-                                    "icon": {
-                                      "ID": "check-circle",
-                                      "size": "small"
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "183",
-                  "measuredH": "27",
-                  "w": "183",
-                  "h": "27",
-                  "x": "35",
-                  "y": "147",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh/devops"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "150",
-                          "measuredH": "26",
-                          "x": "33",
-                          "y": "0",
-                          "properties": {
-                            "size": "18",
-                            "text": "DevOps Roadmap"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "__group__",
-                          "zOrder": "1",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "w": "24",
-                          "h": "24",
-                          "x": "0",
-                          "y": "3",
-                          "children": {
-                            "controls": {
-                              "control": [
-                                {
-                                  "ID": "0",
-                                  "typeID": "Icon",
-                                  "zOrder": "0",
-                                  "measuredW": "24",
-                                  "measuredH": "24",
-                                  "x": "0",
-                                  "y": "0",
-                                  "properties": {
-                                    "color": "16777215",
-                                    "icon": {
-                                      "ID": "circle",
-                                      "size": "small"
-                                    }
-                                  }
-                                },
-                                {
-                                  "ID": "1",
-                                  "typeID": "Icon",
-                                  "zOrder": "1",
-                                  "measuredW": "24",
-                                  "measuredH": "24",
-                                  "x": "0",
-                                  "y": "0",
-                                  "properties": {
-                                    "color": "10066329",
-                                    "icon": {
-                                      "ID": "check-circle",
-                                      "size": "small"
-                                    }
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "4",
-                  "typeID": "Label",
-                  "zOrder": "4",
-                  "measuredW": "209",
-                  "measuredH": "32",
-                  "x": "35",
-                  "y": "27",
-                  "properties": {
-                    "size": "24",
-                    "text": "Related Roadmaps"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2643",
-          "typeID": "__group__",
-          "zOrder": "40",
-          "measuredW": "238",
-          "measuredH": "50",
-          "w": "238",
-          "h": "50",
-          "x": "538",
-          "y": "425",
-          "properties": {
-            "controlName": "100-spring-core"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "98",
-                  "measuredH": "26",
-                  "x": "70",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Core"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2644",
-          "typeID": "__group__",
-          "zOrder": "41",
-          "measuredW": "180",
-          "measuredH": "215",
-          "w": "180",
-          "h": "215",
-          "x": "597",
-          "y": "522",
-          "properties": {
-            "controlName": "100-spring-core:introduction"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "180",
-                  "h": "215",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "98",
-                  "measuredH": "26",
-                  "x": "41",
-                  "y": "15",
-                  "properties": {
-                    "size": "18",
-                    "text": "Introduction"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2645",
-          "typeID": "__group__",
-          "zOrder": "42",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "568",
-          "y": "573",
-          "properties": {
-            "controlName": "100-spring-core:introduction:terminology"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "99",
-                  "measuredH": "26",
-                  "x": "69",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Terminology"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2646",
-          "typeID": "__group__",
-          "zOrder": "43",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "568",
-          "y": "625",
-          "properties": {
-            "controlName": "101-spring-core:introduction:architecture"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "99",
-                  "measuredH": "26",
-                  "x": "69",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Architecture"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2647",
-          "typeID": "__group__",
-          "zOrder": "44",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "568",
-          "y": "676",
-          "properties": {
-            "controlName": "102-spring-core:introduction:why-spring"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "99",
-                  "measuredH": "26",
-                  "x": "69",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Why Spring?"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2648",
-          "typeID": "__group__",
-          "zOrder": "45",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "229",
-          "y": "314",
-          "properties": {
-            "controlName": "101-spring-core:configuration"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "109",
-                  "measuredH": "26",
-                  "x": "64",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Configuration"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2649",
-          "typeID": "__group__",
-          "zOrder": "46",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "229",
-          "y": "365",
-          "properties": {
-            "controlName": "102-spring-core:dependency-injection"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "178",
-                  "measuredH": "26",
-                  "x": "30",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Dependency Injection"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2650",
-          "typeID": "__group__",
-          "zOrder": "47",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "229",
-          "y": "417",
-          "properties": {
-            "controlName": "103-spring-core:spring-ioc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "90",
-                  "measuredH": "26",
-                  "x": "74",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring IOC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2651",
-          "typeID": "__group__",
-          "zOrder": "48",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "229",
-          "y": "469",
-          "properties": {
-            "controlName": "104-spring-core:spring-aop"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "93",
-                  "measuredH": "26",
-                  "x": "72",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring AOP"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2652",
-          "typeID": "__group__",
-          "zOrder": "49",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "229",
-          "y": "521",
-          "properties": {
-            "controlName": "105-spring-core:spring-mvc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "97",
-                  "measuredH": "26",
-                  "x": "70",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring MVC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2653",
-          "typeID": "__group__",
-          "zOrder": "50",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "229",
-          "y": "573",
-          "properties": {
-            "controlName": "106-spring-core:annotations"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "96",
-                  "measuredH": "26",
-                  "x": "71",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Annotations"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2654",
-          "typeID": "__group__",
-          "zOrder": "51",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "229",
-          "y": "625",
-          "properties": {
-            "controlName": "107-spring-core:spring-bean-scope"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "158",
-                  "measuredH": "26",
-                  "x": "40",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Bean Scope"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2655",
-          "typeID": "__group__",
-          "zOrder": "52",
-          "measuredW": "238",
-          "measuredH": "50",
-          "w": "238",
-          "h": "50",
-          "x": "902",
-          "y": "428",
-          "properties": {
-            "controlName": "101-spring-security"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "123",
-                  "measuredH": "26",
-                  "x": "57",
-                  "y": "12",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Security"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2656",
-          "typeID": "__group__",
-          "zOrder": "53",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1232",
-          "y": "275",
-          "properties": {
-            "controlName": "100-spring-security:authentication"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "117",
-                  "measuredH": "26",
-                  "x": "60",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Authentication"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2657",
-          "typeID": "__group__",
-          "zOrder": "54",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1232",
-          "y": "326",
-          "properties": {
-            "controlName": "101-spring-security:authorization"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "106",
-                  "measuredH": "26",
-                  "x": "66",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Authorization"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2658",
-          "typeID": "__group__",
-          "zOrder": "55",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1232",
-          "y": "377",
-          "properties": {
-            "controlName": "102-spring-security:oauth2"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "61",
-                  "measuredH": "26",
-                  "x": "88",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "OAuth2"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2659",
-          "typeID": "__group__",
-          "zOrder": "56",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1232",
-          "y": "429",
-          "properties": {
-            "controlName": "103-spring-security:jwt-authentication"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "159",
-                  "measuredH": "26",
-                  "x": "39",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "JWT Authentication"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2660",
-          "typeID": "Label",
-          "zOrder": "57",
-          "measuredW": "107",
-          "measuredH": "28",
-          "x": "968",
-          "y": "537",
-          "properties": {
-            "size": "20",
-            "text": "Spring Boot"
-          }
-        },
-        {
-          "ID": "2661",
-          "typeID": "__group__",
-          "zOrder": "58",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1232",
-          "y": "604",
-          "properties": {
-            "controlName": "102-spring-boot-starters"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "165",
-                  "measuredH": "26",
-                  "x": "36",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Boot Starters"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2662",
-          "typeID": "__group__",
-          "zOrder": "59",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1232",
-          "y": "655",
-          "properties": {
-            "controlName": "103-autconfiguration"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "142",
-                  "measuredH": "26",
-                  "x": "48",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Autoconfiguration"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2663",
-          "typeID": "__group__",
-          "zOrder": "60",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1232",
-          "y": "706",
-          "properties": {
-            "controlName": "104-spring-boot-actuators"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "77",
-                  "measuredH": "26",
-                  "x": "80",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Actuators"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2664",
-          "typeID": "__group__",
-          "zOrder": "61",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "1232",
-          "y": "758",
-          "properties": {
-            "controlName": "105-embedded-server"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "148",
-                  "measuredH": "26",
-                  "x": "45",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Embedded Server"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2665",
-          "typeID": "__group__",
-          "zOrder": "62",
-          "measuredW": "240",
-          "measuredH": "47",
-          "w": "240",
-          "h": "47",
-          "x": "1232",
-          "y": "810",
-          "properties": {
-            "controlName": "106-hibernate"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "240",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "82",
-                  "measuredH": "26",
-                  "x": "79",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Hibernate"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2666",
-          "typeID": "__group__",
-          "zOrder": "63",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "939",
-          "y": "712",
-          "properties": {
-            "controlName": "100-hibernate:transactions"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "26",
-                  "x": "46",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Transactions"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2667",
-          "typeID": "__group__",
-          "zOrder": "64",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "939",
-          "y": "764",
-          "properties": {
-            "controlName": "101-hibernate:relationships"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "111",
-                  "measuredH": "26",
-                  "x": "43",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Relationships"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2668",
-          "typeID": "__group__",
-          "zOrder": "65",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "939",
-          "y": "816",
-          "properties": {
-            "controlName": "102-hibernate:entity-lifecycle"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "121",
-                  "measuredH": "26",
-                  "x": "38",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Entity Lifecycle"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2669",
-          "typeID": "__group__",
-          "zOrder": "66",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "598",
-          "y": "952",
-          "properties": {
-            "controlName": "107-spring-data"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "97",
-                  "measuredH": "26",
-                  "x": "70",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Data"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2670",
-          "typeID": "__group__",
-          "zOrder": "67",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "597",
-          "y": "1043",
-          "properties": {
-            "controlName": "100-spring-data:spring-data-jpa"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "131",
-                  "measuredH": "26",
-                  "x": "53",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Data JPA"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2671",
-          "typeID": "__group__",
-          "zOrder": "68",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "597",
-          "y": "1095",
-          "properties": {
-            "controlName": "101-spring-data:spring-data-mongodb"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "183",
-                  "measuredH": "26",
-                  "x": "27",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Data MongoDB"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2672",
-          "typeID": "__group__",
-          "zOrder": "69",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "597",
-          "y": "1147",
-          "properties": {
-            "controlName": "102-spring-data:spring-data-jdbc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "148",
-                  "measuredH": "26",
-                  "x": "45",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Data JDBC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2673",
-          "typeID": "__group__",
-          "zOrder": "70",
-          "measuredW": "238",
-          "measuredH": "47",
-          "w": "238",
-          "h": "47",
-          "x": "597",
-          "y": "858",
-          "properties": {
-            "controlName": "108-microservices"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "238",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "114",
-                  "measuredH": "26",
-                  "x": "70",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Microservices"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2674",
-          "typeID": "__group__",
-          "zOrder": "71",
-          "measuredW": "153",
-          "measuredH": "323",
-          "w": "153",
-          "h": "323",
-          "x": "380",
-          "y": "777",
-          "properties": {
-            "controlName": "100-microservices:spring-cloud"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "153",
-                  "h": "323",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "26",
-                  "x": "24",
-                  "y": "14",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Cloud"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2675",
-          "typeID": "__group__",
-          "zOrder": "72",
-          "measuredW": "284",
-          "measuredH": "47",
-          "w": "284",
-          "h": "47",
-          "x": "230",
-          "y": "826",
-          "properties": {
-            "controlName": "100-microservices:spring-cloud:spring-cloud-gateway"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "284",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "180",
-                  "measuredH": "26",
-                  "x": "52",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Cloud Gateway"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2676",
-          "typeID": "__group__",
-          "zOrder": "73",
-          "measuredW": "284",
-          "measuredH": "47",
-          "w": "284",
-          "h": "47",
-          "x": "230",
-          "y": "878",
-          "properties": {
-            "controlName": "101-microservices:spring-cloud:cloud-config"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "284",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "26",
-                  "x": "89",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Cloud Config"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2677",
-          "typeID": "__group__",
-          "zOrder": "74",
-          "measuredW": "284",
-          "measuredH": "47",
-          "w": "284",
-          "h": "47",
-          "x": "230",
-          "y": "931",
-          "properties": {
-            "controlName": "102-microservices:spring-cloud:spring-cloud-circuit-breaker"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "284",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "232",
-                  "measuredH": "26",
-                  "x": "26",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Cloud Circuit Breaker"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2678",
-          "typeID": "__group__",
-          "zOrder": "75",
-          "measuredW": "284",
-          "measuredH": "47",
-          "w": "284",
-          "h": "47",
-          "x": "230",
-          "y": "983",
-          "properties": {
-            "controlName": "103-microservices:spring-cloud:spring-cloud-openfeign"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "284",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "201",
-                  "measuredH": "26",
-                  "x": "41",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring Cloud OpenFeign"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2680",
-          "typeID": "__group__",
-          "zOrder": "76",
-          "measuredW": "131",
-          "measuredH": "47",
-          "w": "131",
-          "h": "47",
-          "x": "230",
-          "y": "1037",
-          "properties": {
-            "controlName": "105-microservices:spring-cloud:sleuth"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "131",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "51",
-                  "measuredH": "26",
-                  "x": "40",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Sleuth"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2681",
-          "typeID": "__group__",
-          "zOrder": "77",
-          "measuredW": "145",
-          "measuredH": "47",
-          "w": "145",
-          "h": "47",
-          "x": "369",
-          "y": "1037",
-          "properties": {
-            "controlName": "106-microservices:spring-cloud:eureka"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "145",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "57",
-                  "measuredH": "26",
-                  "x": "44",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Eureka"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2682",
-          "typeID": "Arrow",
-          "zOrder": "78",
-          "w": "1",
-          "h": "339",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1035",
-          "y": "985",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0.48803395698428176,
-              "y": 338.4082071365567
-            },
-            "p1": {
-              "x": 0.46428571428571513,
-              "y": -0.003992113361953183
-            },
-            "p2": {
-              "x": 0.48803395698428176,
-              "y": -0.11897394490631541
-            }
-          }
-        },
-        {
-          "ID": "2683",
-          "typeID": "__group__",
-          "zOrder": "79",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "939",
-          "y": "1137",
-          "properties": {
-            "controlName": "109-spring-mvc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "97",
-                  "measuredH": "26",
-                  "x": "48",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Spring MVC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2684",
-          "typeID": "__group__",
-          "zOrder": "80",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "1249",
-          "y": "1060",
-          "properties": {
-            "controlName": "100-spring-mvc:servlet"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "57",
-                  "measuredH": "26",
-                  "x": "68",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Servlet"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2685",
-          "typeID": "__group__",
-          "zOrder": "81",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "1249",
-          "y": "1112",
-          "properties": {
-            "controlName": "101-spring-mvc:jsp-files"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "76",
-                  "measuredH": "26",
-                  "x": "59",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "JSP Files"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2686",
-          "typeID": "__group__",
-          "zOrder": "82",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "1249",
-          "y": "1164",
-          "properties": {
-            "controlName": "102-spring-mvc:architecture"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "99",
-                  "measuredH": "26",
-                  "x": "47",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Architecture"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2687",
-          "typeID": "__group__",
-          "zOrder": "83",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "1249",
-          "y": "1217",
-          "properties": {
-            "controlName": "103-spring-mvc:components"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "104",
-                  "measuredH": "26",
-                  "x": "45",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Components"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2688",
-          "typeID": "Arrow",
-          "zOrder": "84",
-          "w": "213",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "822",
-          "y": "1324",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 212.98029127925827,
-              "y": 0.8810260550936846
-            },
-            "p1": {
-              "x": 0.46428571428571536,
-              "y": -0.003992113361953186
-            },
-            "p2": {
-              "x": -0.2750123853365949,
-              "y": 0.8810260550936846
-            }
-          }
-        },
-        {
-          "ID": "2689",
-          "typeID": "__group__",
-          "zOrder": "85",
-          "measuredW": "193",
-          "measuredH": "47",
-          "w": "193",
-          "h": "47",
-          "x": "642",
-          "y": "1301",
-          "properties": {
-            "controlName": "110-testing"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "193",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "59",
-                  "measuredH": "26",
-                  "x": "67",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Testing"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2690",
-          "typeID": "__group__",
-          "zOrder": "86",
-          "measuredW": "273",
-          "measuredH": "47",
-          "w": "273",
-          "h": "47",
-          "x": "236",
-          "y": "1149",
-          "properties": {
-            "controlName": "100-testing:jpa-test"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "273",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "70",
-                  "measuredH": "26",
-                  "x": "102",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "JPA Test"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2691",
-          "typeID": "__group__",
-          "zOrder": "87",
-          "measuredW": "273",
-          "measuredH": "47",
-          "w": "273",
-          "h": "47",
-          "x": "236",
-          "y": "1201",
-          "properties": {
-            "controlName": "101-testing:mock-mvc"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "273",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "84",
-                  "measuredH": "26",
-                  "x": "95",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "MockMVC"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2692",
-          "typeID": "__group__",
-          "zOrder": "88",
-          "measuredW": "273",
-          "measuredH": "47",
-          "w": "273",
-          "h": "47",
-          "x": "236",
-          "y": "1254",
-          "properties": {
-            "controlName": "102-testing:spring-boot-test-annotation"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "273",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "234",
-                  "measuredH": "26",
-                  "x": "20",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "@SpringBootTest Annotation"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2693",
-          "typeID": "__group__",
-          "zOrder": "89",
-          "measuredW": "273",
-          "measuredH": "47",
-          "w": "273",
-          "h": "47",
-          "x": "236",
-          "y": "1306",
-          "properties": {
-            "controlName": "103-testing:mockbean-annotation"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "273",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "194",
-                  "measuredH": "26",
-                  "x": "40",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "@Mockbean Annotation"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2694",
-          "typeID": "Arrow",
-          "zOrder": "90",
-          "w": "1",
-          "h": "139",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "731",
-          "y": "1575",
-          "properties": {
-            "color": "2848996",
-            "curvature": "-1",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "p0": {
-              "x": 0,
-              "y": 0
-            },
-            "p1": {
-              "x": 0.4438624012549725,
-              "y": -0.00008403832147459167
-            },
-            "p2": {
-              "x": 0,
-              "y": 139
-            },
-            "stroke": "dotted"
-          }
-        },
-        {
-          "ID": "2695",
-          "typeID": "TextArea",
-          "zOrder": "91",
-          "w": "443",
-          "h": "124",
-          "measuredW": "200",
-          "measuredH": "140",
-          "x": "503",
-          "y": "1506"
-        },
-        {
-          "ID": "2696",
-          "typeID": "Label",
-          "zOrder": "92",
-          "measuredW": "303",
-          "measuredH": "25",
-          "x": "573",
-          "y": "1526",
-          "properties": {
-            "size": "17",
-            "text": "Continue Learning with following Tracks"
-          }
-        },
-        {
-          "ID": "2697",
-          "typeID": "__group__",
-          "zOrder": "93",
-          "measuredW": "198",
-          "measuredH": "44",
-          "w": "198",
-          "h": "44",
-          "x": "727",
-          "y": "1561",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/backend"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "198",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "147",
-                  "measuredH": "25",
-                  "x": "25",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "Backend Roadmap"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2698",
-          "typeID": "__group__",
-          "zOrder": "94",
-          "measuredW": "185",
-          "measuredH": "44",
-          "w": "185",
-          "h": "44",
-          "x": "532",
-          "y": "1561",
-          "properties": {
-            "controlName": "ext_link:roadmap.sh/java"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "185",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "116",
-                  "measuredH": "25",
-                  "x": "35",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "Java Roadmap"
-                  }
-                }
-              ]
-            }
-          }
+  "nodes": [
+    {
+      "id": "4qvR1QQzrmoVIVCAsp92H",
+      "type": "vertical",
+      "position": { "x": -225.22890816639756, "y": 1663.454217904046 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
         }
-      ]
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 87,
+      "measured": { "width": 20, "height": 87 },
+      "dragging": false,
+      "resizing": false,
+      "focusable": true
     },
-    "attributes": {
-      "name": "New Wireframe 1 copy 8",
-      "order": 1000000.6428282561,
-      "parentID": null,
-      "notes": ""
+    {
+      "id": "HU7wZWiES3m3xl1-NYP6F",
+      "type": "title",
+      "position": { "x": -309.8175069304428, "y": -32.800633281393 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Boot",
+        "style": {
+          "fontSize": 28,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "measured": { "width": 189, "height": 68 },
+      "dragging": false,
+      "focusable": true
     },
-    "branchID": "Master",
-    "resourceID": "960B5EDB-5533-4531-9B7D-06B4366EBEAE",
-    "mockupH": "1664",
-    "mockupW": "1291",
-    "measuredW": "1520",
-    "measuredH": "1714",
-    "version": "1.0"
-  },
-  "groupOffset": {
-    "x": 0,
-    "y": 0
-  },
-  "dependencies": [],
-  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
+    {
+      "id": "uqyE79OItPOX33E5FoGel",
+      "type": "vertical",
+      "position": { "x": -225.3175069304428, "y": -133.0992517776511 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.75,
+          "stroke": "#2B78E4"
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 81,
+      "measured": { "width": 20, "height": 81 },
+      "dragging": false,
+      "resizing": false,
+      "focusable": true
+    },
+    {
+      "id": "CCmziWV0VnzZxVbjVF_br",
+      "type": "paragraph",
+      "position": { "x": -20.138187271993502, "y": -148.2948532825934 },
+      "selected": true,
+      "data": {
+        "label": "Find the interactive version of this roadmap and more roadmaps at",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "borderColor": "#000000",
+          "backgroundColor": "#FFFFFf"
+        },
+        "oldId": "kpF15oUmlUmk1qVGEBB7Y"
+      },
+      "zIndex": 999,
+      "width": 361,
+      "height": 151,
+      "positionAbsolute": { "x": 548.0942414053277, "y": -133.9615199492601 },
+      "dragging": false,
+      "selectable": true,
+      "focusable": true,
+      "style": { "width": 355, "height": 143 },
+      "resizing": false,
+      "measured": { "width": 361, "height": 151 }
+    },
+    {
+      "id": "if9eTna5NRTMStVwpSwDP",
+      "type": "button",
+      "position": { "x": -5.138187271993502, "y": -62.09925177765109 },
+      "selected": true,
+      "data": {
+        "label": "roadmap.sh",
+        "href": "https://roadmap.sh",
+        "color": "#ffffff",
+        "backgroundColor": "#4136D6",
+        "style": { "fontSize": 17 },
+        "oldId": "2zqZkyVgigifcRS1H7F_b"
+      },
+      "zIndex": 999,
+      "width": 331,
+      "height": 49,
+      "dragging": false,
+      "style": { "width": 330, "height": 49 },
+      "resizing": false,
+      "positionAbsolute": { "x": 560.5942414053277, "y": -52.103402024556615 },
+      "selectable": true,
+      "focusable": true,
+      "measured": { "width": 331, "height": 49 }
+    },
+    {
+      "id": "w_rUaBorHFOY74S0JiEwM",
+      "type": "linksgroup",
+      "position": { "x": -710.4579568300146, "y": -148.2948532825934 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Related Roadmaps",
+        "links": [
+          {
+            "id": "CVNNr97eZmGVFZyNVmR9b",
+            "label": "Backend Roadmap",
+            "href": "",
+            "url": "https://roadmap.sh/backend"
+          },
+          {
+            "id": "GoM0EsaFMzWViwio3BucA",
+            "label": "Java Roadmap",
+            "url": "https://roadmap.sh/java"
+          },
+          {
+            "id": "oWh5sZE3GhIEQKIuWYM0o",
+            "label": "System Design Roadmap",
+            "url": "https://roadmap.sh/system-design"
+          },
+          {
+            "id": "4J2nlL7ZFxXlppmulqenS",
+            "label": "DevOps Roadmap",
+            "url": "https://roadmap.sh/devops"
+          },
+          {
+            "id": "RrEJrR6Wt-XM3bt0_Pp_8",
+            "label": "Docker Roadmap",
+            "url": "https://roadmap.sh/docker"
+          },
+          {
+            "id": "ilTMFM-Ll8Rff6zahDRUz",
+            "label": "Kubernetes Roadmap",
+            "url": "https://roadmap.sh/kubernetes"
+          },
+          {
+            "id": "MqthC0yn8eE6cy3eiGUH-",
+            "label": "Redis Roadmap",
+            "url": "https://roadmap.sh/redis"
+          }
+        ]
+      },
+      "zIndex": 999,
+      "measured": { "width": 299, "height": 295 },
+      "dragging": false,
+      "width": 299,
+      "height": 295,
+      "resizing": false,
+      "focusable": true
+    },
+    {
+      "width": 597,
+      "height": 122,
+      "id": "O5dely89N5UCMBeUfh8ud",
+      "type": "paragraph",
+      "position": { "x": -513.7289081663976, "y": 1541.454217904046 },
+      "selected": true,
+      "data": {
+        "label": "For ecosystem and more, check these other tracks involving GraphQL",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "borderColor": "#000000",
+          "backgroundColor": "WHITe"
+        },
+        "oldId": "0vLaVNJaJSHZ_bHli6Qzs"
+      },
+      "zIndex": 999,
+      "positionAbsolute": { "x": -361.2032366608315, "y": 1810.7906301811447 },
+      "dragging": false,
+      "style": { "width": 410, "height": 119 },
+      "resizing": false,
+      "focusable": true,
+      "selectable": true,
+      "measured": { "width": 597, "height": 122 }
+    },
+    {
+      "width": 278,
+      "height": 49,
+      "id": "6AIUtChWC_gK8Ax0UuBjd",
+      "type": "button",
+      "position": { "x": -499.713703130995, "y": 1596.0998753371555 },
+      "selected": true,
+      "data": {
+        "label": "Frontend Roadmap",
+        "href": "https://roadmap.sh/java",
+        "color": "#FFf",
+        "backgroundColor": "#4136D6",
+        "style": { "fontSize": 17 },
+        "borderColor": "#4136D6",
+        "oldId": "f5WRewBlpeYMf71cPcXs-"
+      },
+      "zIndex": 999,
+      "dragging": false,
+      "positionAbsolute": { "x": -346.2032366608315, "y": 1864.9362876142543 },
+      "style": { "width": 380, "height": 49 },
+      "focusable": true,
+      "resizing": false,
+      "selectable": true,
+      "measured": { "width": 278, "height": 49 }
+    },
+    {
+      "width": 278,
+      "height": 49,
+      "id": "f5WRewBlpeYMf71cPcXs-",
+      "type": "button",
+      "position": { "x": -213.83351566356316, "y": 1596.0998753371555 },
+      "selected": true,
+      "data": {
+        "label": "Backend Roadmap",
+        "href": "https://roadmap.sh/backend",
+        "color": "#FFf",
+        "backgroundColor": "#4136D6",
+        "style": { "fontSize": 17 },
+        "borderColor": "#4136D6",
+        "oldId": "StxLh1r3qXqyRSqfJGird"
+      },
+      "zIndex": 999,
+      "dragging": false,
+      "positionAbsolute": { "x": -346.2032366608315, "y": 1864.9362876142543 },
+      "style": { "width": 380, "height": 49 },
+      "focusable": true,
+      "resizing": false,
+      "selectable": true,
+      "measured": { "width": 278, "height": 49 }
+    },
+    {
+      "id": "WJtVLmJLvKk_vvqhFItZ2",
+      "type": "button",
+      "position": { "x": -329.3175069304428, "y": 147.20083230005372 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Visit Java Roadmap",
+        "style": { "fontSize": 17 },
+        "href": "https://roadmap.sh/java",
+        "color": "#ffffff",
+        "backgroundColor": "#2a79e4"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "jy2heDVZuM6ASCXlI1TDn",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 233.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Introduction",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "C2N5yOxCtdn_R6ceWvQly"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "OB--nMudscm0p6RqqfA7T",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 229.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Configuration",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "KdN62IpNgPFMndXfLaYa1"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 230 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "C2EQ5J1aJYF9e9Rr2KysT",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 282.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Dependency Injection",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "KdN62IpNgPFMndXfLaYa1"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 230 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "PlUU_vzFQ3Xx6Z5XREIYP",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 335.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring IOC",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "KdN62IpNgPFMndXfLaYa1"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 230 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "wV1_I_4czMIxpBionvLs4",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 388.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring AOP",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "KdN62IpNgPFMndXfLaYa1"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 230 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "QiNWE4sMTao3cVzjt3yPp",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 441.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring MVC",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "KdN62IpNgPFMndXfLaYa1"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 230 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "HdCpfGMrMaXxk5QrtYn3X",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 494.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Annotations",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "KdN62IpNgPFMndXfLaYa1"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 230 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "KdN62IpNgPFMndXfLaYa1",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 547.7136130880439 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Bean Scope",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 230 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "WrUCyVfFNUpHB8jyjjKna",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 70.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Terminology",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "WGf3W6bdWL0rK0o6O28G2"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "yuXN-rD4AyyPYUYOR50L_",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 123.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Architecture",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "WGf3W6bdWL0rK0o6O28G2"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "WGf3W6bdWL0rK0o6O28G2",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 176.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Why use Spring?",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "KaUdyVWEiZa6lUDRBlOKt",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 323.0143553645502 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Security",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "C2N5yOxCtdn_R6ceWvQly"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "ssdk2iAt4avhc8B5tnIzQ",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 254.25996814340215 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Authentication",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "c7w7Z3Coa81FKa_yAKTse",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 307.25996814340215 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Authorization",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "p7t3RlIIm9U08GFC6azff",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 360.25996814340215 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "OAuth2",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "1My7mbdwAbRcJoiA50pWW",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 413.25996814340215 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "JWT Authentication",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "Vx7GXHYuM0ZOB9_ovS6sw",
+      "type": "paragraph",
+      "position": { "x": -286.8175069304428, "y": 441.71361308804387 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Boot",
+        "style": {
+          "fontSize": 20,
+          "borderColor": "transparent",
+          "backgroundColor": "transparent",
+          "color": "#000000",
+          "textAlign": "left",
+          "justifyContent": "flex-start",
+          "padding": 16
+        }
+      },
+      "zIndex": 999,
+      "measured": { "width": 143, "height": 67 },
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "JrH2hiu27PhIO1VtrArMa",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 596.7136130880439 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Boot Starters",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "C2N5yOxCtdn_R6ceWvQly"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "88-h3d7kb-VmUBsnUUXW_",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 649.7136130880439 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Autoconfiguration",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "C2N5yOxCtdn_R6ceWvQly"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "N7hd3d_XQtvOgnCqdCFt3",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 702.7136130880439 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Actuators",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "C2N5yOxCtdn_R6ceWvQly"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "ONb0VnSUMY8JBeW3G2mTp",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 755.7136130880439 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Embedded Server",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "ZWFWkB61L8UbG-SREw6SJ"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "h5-HnycxfbJgwalSdXTAz",
+      "type": "topic",
+      "position": { "x": -663.3054618325863, "y": 755.7136130880439 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Hibernate",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "ZWFWkB61L8UbG-SREw6SJ"
+      },
+      "zIndex": 999,
+      "width": 166,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 166, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "H9Z0EvKT_148vD0mR-dUf",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 560.5044010696047 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Transactions",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "D4ybyh0ydvl9W2_xUcvZ_",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 613.5044010696047 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Relationships",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "Ijmy0J3VyaeTGXtu2VkkQ",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 666.5044010696047 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Entity Lifecycle",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "pvVLbFQoT50vz_VRK4VbJ",
+      "type": "topic",
+      "position": { "x": -663.3054618325863, "y": 853.4919152447768 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Data",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "ZWFWkB61L8UbG-SREw6SJ"
+      },
+      "zIndex": 999,
+      "width": 166,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 166, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "6u08QN-pUeFm3o0h5Scfm",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 955.8193989499127 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Data JPA",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "fy-TphbqkLpR1zvFcr7dg",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 1008.8193989499127 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Data MongoDB",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "dd1A-MyzBs_kNOtVG7f1D"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "dd1A-MyzBs_kNOtVG7f1D",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 1061.8193989499127 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Data JDBC",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "jU_KHoPUSU_HoIKk0ZpRF",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 853.4919152447768 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Microservices",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "ZWFWkB61L8UbG-SREw6SJ"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "VWNDYSw83Vzi2UPQprJ5z",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 853.4919152447768 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Cloud",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "colorType": "h"
+        }
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "f-i0NX2KOzCh3JwkaSPFo",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 641.2298102954034 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Cloud Gateway",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "6sLE6gb5Y477SmO2GhQIG"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "9hG3CB8r41bUb_s8-0u73",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 694.2298102954034 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Cloud Config",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "6sLE6gb5Y477SmO2GhQIG"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "kqpSlO--X9-xYxfq1KFVe",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 747.2298102954034 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Cloud Circuit Breaker",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "6sLE6gb5Y477SmO2GhQIG"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "EKSXTMSN2xdaleJ4wOV1A",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 955.2633845627711 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring Cloud Open Feign",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "sgA06Tu9Y4cEHtfI8CyLL"
+      },
+      "zIndex": 999,
+      "width": 277,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 277, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "GsmBGRohWbJ6XOaALFZ8o",
+      "type": "subtopic",
+      "position": { "x": 63.8618127280065, "y": 1008.2633845627711 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Micrometer",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "6sLE6gb5Y477SmO2GhQIG"
+      },
+      "zIndex": 999,
+      "width": 136,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 136, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "6sLE6gb5Y477SmO2GhQIG",
+      "type": "subtopic",
+      "position": { "x": 206.8618127280065, "y": 1008.2633845627711 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Eurkea",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 134,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 134, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "S-BbOoRD7anvoJrprjoKF",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 1216.5088543799602 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Spring MVC",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "7Qqrh_Rz_7uAD49g9sDzi"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "35NTx2eO1j02sjy4m6DPq",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 1162.1076554015908 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Servlet",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "i77NTa0hpGGBjmql9u_CT"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "Lz0GPMiYzb30iFJdv1dL6",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 1215.1076554015908 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "JSP Files",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "sgA06Tu9Y4cEHtfI8CyLL"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "_vS_zdJZegZS6MIKAFyg8",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 1268.1076554015908 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Architecture",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "sgA06Tu9Y4cEHtfI8CyLL"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "sgA06Tu9Y4cEHtfI8CyLL",
+      "type": "subtopic",
+      "position": { "x": -704.3054618325863, "y": 1321.1076554015908 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Components",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "6sLE6gb5Y477SmO2GhQIG"
+      },
+      "zIndex": 999,
+      "width": 248,
+      "height": 49,
+      "style": { "width": 277 },
+      "measured": { "width": 248, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "7Qqrh_Rz_7uAD49g9sDzi",
+      "type": "topic",
+      "position": { "x": -329.3175069304428, "y": 1326.5562767322235 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Testing",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "ZWFWkB61L8UbG-SREw6SJ"
+      },
+      "zIndex": 999,
+      "width": 228,
+      "height": 49,
+      "style": { "width": 248 },
+      "measured": { "width": 228, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "Nhx2QiSD_4pVWD17lsCbu",
+      "type": "subtopic",
+      "position": { "x": 24.5539544766211, "y": 1270.7911348223495 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "JPA Test",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "i77NTa0hpGGBjmql9u_CT"
+      },
+      "zIndex": 999,
+      "width": 156,
+      "height": 49,
+      "style": { "width": 162 },
+      "measured": { "width": 156, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "5d1BERqTKNJMKiBcqa8Ie",
+      "type": "subtopic",
+      "position": { "x": 185.5539544766211, "y": 1270.7911348223495 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "Mock MVC",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "i77NTa0hpGGBjmql9u_CT"
+      },
+      "zIndex": 999,
+      "width": 137,
+      "height": 49,
+      "style": { "width": 162 },
+      "measured": { "width": 137, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "p91CaVPh5GMzFU0yEU_hl",
+      "type": "subtopic",
+      "position": { "x": 24.5539544766211, "y": 1325.2397561529822 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "@SpringBootTest Annotation",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "i77NTa0hpGGBjmql9u_CT"
+      },
+      "zIndex": 999,
+      "width": 298,
+      "height": 49,
+      "style": { "width": 298 },
+      "measured": { "width": 298, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    },
+    {
+      "id": "i77NTa0hpGGBjmql9u_CT",
+      "type": "subtopic",
+      "position": { "x": 24.5539544766211, "y": 1378.2397561529822 },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "deletable": true,
+      "data": {
+        "label": "@MockBean Annotation",
+        "style": {
+          "fontSize": 17,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        },
+        "oldId": "sgA06Tu9Y4cEHtfI8CyLL"
+      },
+      "zIndex": 999,
+      "width": 298,
+      "height": 49,
+      "style": { "width": 298 },
+      "measured": { "width": 298, "height": 49 },
+      "resizing": false,
+      "dragging": false,
+      "focusable": true
+    }
+  ],
+  "edges": [
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "HU7wZWiES3m3xl1-NYP6F",
+      "sourceHandle": "x2",
+      "target": "WJtVLmJLvKk_vvqhFItZ2",
+      "targetHandle": "w2",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__HU7wZWiES3m3xl1-NYP6Fx2-WJtVLmJLvKk_vvqhFItZ2w2",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "WJtVLmJLvKk_vvqhFItZ2",
+      "sourceHandle": "x2",
+      "target": "jy2heDVZuM6ASCXlI1TDn",
+      "targetHandle": "w1",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__WJtVLmJLvKk_vvqhFItZ2x2-C2N5yOxCtdn_R6ceWvQlyw1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "wV1_I_4czMIxpBionvLs4",
+      "targetHandle": "y2",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-wV1_I_4czMIxpBionvLs4y2",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "QiNWE4sMTao3cVzjt3yPp",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-QiNWE4sMTao3cVzjt3yPpy1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "PlUU_vzFQ3Xx6Z5XREIYP",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-PlUU_vzFQ3Xx6Z5XREIYPy1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "C2EQ5J1aJYF9e9Rr2KysT",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-C2EQ5J1aJYF9e9Rr2KysTy1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "OB--nMudscm0p6RqqfA7T",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-OB--nMudscm0p6RqqfA7Ty1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "HdCpfGMrMaXxk5QrtYn3X",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-HdCpfGMrMaXxk5QrtYn3Xy1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "KdN62IpNgPFMndXfLaYa1",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-KdN62IpNgPFMndXfLaYa1y1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "WGf3W6bdWL0rK0o6O28G2",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-WGf3W6bdWL0rK0o6O28G2y1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "yuXN-rD4AyyPYUYOR50L_",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-yuXN-rD4AyyPYUYOR50L_y1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "z2",
+      "target": "WrUCyVfFNUpHB8jyjjKna",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyz2-WrUCyVfFNUpHB8jyjjKnay1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jy2heDVZuM6ASCXlI1TDn",
+      "sourceHandle": "x2",
+      "target": "KaUdyVWEiZa6lUDRBlOKt",
+      "targetHandle": "w1",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__jy2heDVZuM6ASCXlI1TDnx2-C2N5yOxCtdn_R6ceWvQlyw1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "KaUdyVWEiZa6lUDRBlOKt",
+      "sourceHandle": "y2",
+      "target": "ssdk2iAt4avhc8B5tnIzQ",
+      "targetHandle": "z1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyy2-ssdk2iAt4avhc8B5tnIzQz1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "KaUdyVWEiZa6lUDRBlOKt",
+      "sourceHandle": "y2",
+      "target": "c7w7Z3Coa81FKa_yAKTse",
+      "targetHandle": "z1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyy2-c7w7Z3Coa81FKa_yAKTsez1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "KaUdyVWEiZa6lUDRBlOKt",
+      "sourceHandle": "y2",
+      "target": "p7t3RlIIm9U08GFC6azff",
+      "targetHandle": "z1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyy2-p7t3RlIIm9U08GFC6azffz1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "KaUdyVWEiZa6lUDRBlOKt",
+      "sourceHandle": "y2",
+      "target": "1My7mbdwAbRcJoiA50pWW",
+      "targetHandle": "z1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyy2-dd1A-MyzBs_kNOtVG7f1Dz1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "KaUdyVWEiZa6lUDRBlOKt",
+      "sourceHandle": "x2",
+      "target": "Vx7GXHYuM0ZOB9_ovS6sw",
+      "targetHandle": "w1",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__C2N5yOxCtdn_R6ceWvQlyx2-Vx7GXHYuM0ZOB9_ovS6sww1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "Vx7GXHYuM0ZOB9_ovS6sw",
+      "sourceHandle": "x2",
+      "target": "JrH2hiu27PhIO1VtrArMa",
+      "targetHandle": "w2",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__Vx7GXHYuM0ZOB9_ovS6swx2-JrH2hiu27PhIO1VtrArMaw2",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "ONb0VnSUMY8JBeW3G2mTp",
+      "sourceHandle": "y2",
+      "target": "h5-HnycxfbJgwalSdXTAz",
+      "targetHandle": "z2",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__ONb0VnSUMY8JBeW3G2mTpy2-ZWFWkB61L8UbG-SREw6SJz2",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "h5-HnycxfbJgwalSdXTAz",
+      "sourceHandle": "w2",
+      "target": "Ijmy0J3VyaeTGXtu2VkkQ",
+      "targetHandle": "x1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__ZWFWkB61L8UbG-SREw6SJw2-dd1A-MyzBs_kNOtVG7f1Dx1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "h5-HnycxfbJgwalSdXTAz",
+      "sourceHandle": "x2",
+      "target": "pvVLbFQoT50vz_VRK4VbJ",
+      "targetHandle": "w1",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__h5-HnycxfbJgwalSdXTAzx2-ZWFWkB61L8UbG-SREw6SJw1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "pvVLbFQoT50vz_VRK4VbJ",
+      "sourceHandle": "x2",
+      "target": "6u08QN-pUeFm3o0h5Scfm",
+      "targetHandle": "w1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__ZWFWkB61L8UbG-SREw6SJx2-6u08QN-pUeFm3o0h5Scfmw1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "pvVLbFQoT50vz_VRK4VbJ",
+      "sourceHandle": "z2",
+      "target": "jU_KHoPUSU_HoIKk0ZpRF",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__pvVLbFQoT50vz_VRK4VbJz2-ZWFWkB61L8UbG-SREw6SJy1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jU_KHoPUSU_HoIKk0ZpRF",
+      "sourceHandle": "z2",
+      "target": "VWNDYSw83Vzi2UPQprJ5z",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__ZWFWkB61L8UbG-SREw6SJz2-VWNDYSw83Vzi2UPQprJ5zy1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "VWNDYSw83Vzi2UPQprJ5z",
+      "sourceHandle": "w2",
+      "target": "kqpSlO--X9-xYxfq1KFVe",
+      "targetHandle": "x2",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__VWNDYSw83Vzi2UPQprJ5zw2-kqpSlO--X9-xYxfq1KFVex2",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "VWNDYSw83Vzi2UPQprJ5z",
+      "sourceHandle": "x2",
+      "target": "EKSXTMSN2xdaleJ4wOV1A",
+      "targetHandle": "w1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__VWNDYSw83Vzi2UPQprJ5zx2-sgA06Tu9Y4cEHtfI8CyLLw1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "jU_KHoPUSU_HoIKk0ZpRF",
+      "sourceHandle": "x2",
+      "target": "S-BbOoRD7anvoJrprjoKF",
+      "targetHandle": "w2",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__jU_KHoPUSU_HoIKk0ZpRFx2-7Qqrh_Rz_7uAD49g9sDziw2",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "S-BbOoRD7anvoJrprjoKF",
+      "sourceHandle": "y2",
+      "target": "Lz0GPMiYzb30iFJdv1dL6",
+      "targetHandle": "z2",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__7Qqrh_Rz_7uAD49g9sDziy2-Lz0GPMiYzb30iFJdv1dL6z2",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "S-BbOoRD7anvoJrprjoKF",
+      "sourceHandle": "y2",
+      "target": "_vS_zdJZegZS6MIKAFyg8",
+      "targetHandle": "z1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__7Qqrh_Rz_7uAD49g9sDziy2-_vS_zdJZegZS6MIKAFyg8z1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "S-BbOoRD7anvoJrprjoKF",
+      "sourceHandle": "y2",
+      "target": "sgA06Tu9Y4cEHtfI8CyLL",
+      "targetHandle": "z1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__7Qqrh_Rz_7uAD49g9sDziy2-sgA06Tu9Y4cEHtfI8CyLLz1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "S-BbOoRD7anvoJrprjoKF",
+      "sourceHandle": "y2",
+      "target": "35NTx2eO1j02sjy4m6DPq",
+      "targetHandle": "z1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__7Qqrh_Rz_7uAD49g9sDziy2-i77NTa0hpGGBjmql9u_CTz1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "S-BbOoRD7anvoJrprjoKF",
+      "sourceHandle": "x2",
+      "target": "7Qqrh_Rz_7uAD49g9sDzi",
+      "targetHandle": "w1",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__S-BbOoRD7anvoJrprjoKFx2-7Qqrh_Rz_7uAD49g9sDziw1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "7Qqrh_Rz_7uAD49g9sDzi",
+      "sourceHandle": "z2",
+      "target": "i77NTa0hpGGBjmql9u_CT",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__7Qqrh_Rz_7uAD49g9sDziz2-i77NTa0hpGGBjmql9u_CTy1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "7Qqrh_Rz_7uAD49g9sDzi",
+      "sourceHandle": "z2",
+      "target": "p91CaVPh5GMzFU0yEU_hl",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__7Qqrh_Rz_7uAD49g9sDziz2-p91CaVPh5GMzFU0yEU_hly1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "7Qqrh_Rz_7uAD49g9sDzi",
+      "sourceHandle": "z2",
+      "target": "Nhx2QiSD_4pVWD17lsCbu",
+      "targetHandle": "y1",
+      "data": { "edgeStyle": "dashed" },
+      "id": "xy-edge__7Qqrh_Rz_7uAD49g9sDziz2-Nhx2QiSD_4pVWD17lsCbuy1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    },
+    {
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "source": "7Qqrh_Rz_7uAD49g9sDzi",
+      "sourceHandle": "x2",
+      "target": "O5dely89N5UCMBeUfh8ud",
+      "targetHandle": "w1",
+      "data": { "edgeStyle": "solid" },
+      "id": "xy-edge__7Qqrh_Rz_7uAD49g9sDzix2-O5dely89N5UCMBeUfh8udw1",
+      "selected": true,
+      "focusable": true,
+      "selectable": true
+    }
+  ]
 }
