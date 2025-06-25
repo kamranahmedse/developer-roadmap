@@ -259,7 +259,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         className="w-full bg-transparent text-sm focus:outline-none"
-                        placeholder="Or type your own answer..."
+                        placeholder="Type your own answer..."
                         autoFocus
                         onKeyDown={(e) => {
                           if (e.key === 'Enter' && !e.shiftKey) {
