@@ -15,7 +15,7 @@ export function AIRoadmapContent(props: AIRoadmapContentProps) {
   return (
     <div
       className={cn(
-        'relative mx-auto w-full max-w-4xl',
+        'relative mx-auto w-full max-w-7xl',
         isLoading && 'min-h-full',
       )}
     >

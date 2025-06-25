@@ -95,9 +95,9 @@ export function UserCoursesList() {
           </p>
 
           {isUserAuthenticated && !isAnyLoading && courses.length > 0 && (
-            <div className="flex flex-col gap-2">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
               {courses.map((course) => (
-                <AICourseCard key={course._id} course={course} />
+                <AICourseCard variant="column" key={course._id} course={course} />
               ))}
 
               <Pagination

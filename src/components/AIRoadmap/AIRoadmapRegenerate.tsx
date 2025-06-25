@@ -208,6 +208,8 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
               label="Modify Prompt"
             />
 
+            <hr className="my-1 border-gray-200" />
+
             <ActionButton
               onClick={saveAIRoadmap}
               icon={SaveIcon}
