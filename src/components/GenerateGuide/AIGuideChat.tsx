@@ -124,6 +124,10 @@ export function AIGuideChat(props: AIGuideChatProps) {
       });
       sendMessages(newMessages);
       setInputValue('');
+
+      setTimeout(() => {
+        scrollToBottom('smooth');
+      }, 0);
     },
     [inputValue, isStreamingMessage, messages, sendMessages, setMessages],
   );
