@@ -19,6 +19,9 @@ import { aiRoadmapOptions } from '../../queries/ai-roadmap';
 import { UpdatePreferences } from '../GenerateGuide/UpdatePreferences';
 import { generateAIRoadmapFromText } from '@roadmapsh/editor';
 import { useToast } from '../../hooks/use-toast';
+import { showLoginPopup } from '../../lib/popup';
+import { isLoggedIn } from '../../lib/jwt';
+import { useAuth } from '../../hooks/use-auth';
 
 type AIRoadmapRegenerateProps = {
   onRegenerate: (prompt?: string) => void;
@@ -34,6 +37,7 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
   const [showPromptModal, setShowPromptModal] = useState(false);
   const [showUpdatePreferencesModal, setShowUpdatePreferencesModal] =
     useState(false);
+  const currentUser = useAuth();
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -132,8 +136,11 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
     queryClient,
   );
 
+  const isCurrentUserCreator = currentUser?.id === aiRoadmap?.userId;
   const showUpdatePreferences =
-    aiRoadmap?.questionAndAnswers && aiRoadmap.questionAndAnswers.length > 0;
+    aiRoadmap?.questionAndAnswers &&
+    aiRoadmap.questionAndAnswers.length > 0 &&
+    isCurrentUserCreator;
 
   return (
     <>
@@ -180,45 +187,78 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
         </button>
         {isDropdownVisible && (
           <div className="absolute top-full right-0 min-w-[190px] translate-y-1 overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
-            {showUpdatePreferences && (
-              <ActionButton
-                onClick={() => {
-                  setIsDropdownVisible(false);
-                  setShowUpdatePreferencesModal(true);
-                }}
-                icon={SettingsIcon}
-                label="Update Preferences"
-              />
+            {isCurrentUserCreator && (
+              <>
+                {showUpdatePreferences && (
+                  <ActionButton
+                    onClick={() => {
+                      if (!isLoggedIn()) {
+                        showLoginPopup();
+                        return;
+                      }
+
+                      setIsDropdownVisible(false);
+                      setShowUpdatePreferencesModal(true);
+                    }}
+                    icon={SettingsIcon}
+                    label="Update Preferences"
+                  />
+                )}
+
+                <ActionButton
+                  onClick={() => {
+                    if (!isLoggedIn()) {
+                      showLoginPopup();
+                      return;
+                    }
+
+                    setIsDropdownVisible(false);
+                    onRegenerate();
+                  }}
+                  icon={RefreshCcw}
+                  label="Regenerate"
+                />
+                <ActionButton
+                  onClick={() => {
+                    if (!isLoggedIn()) {
+                      showLoginPopup();
+                      return;
+                    }
+
+                    setIsDropdownVisible(false);
+                    setShowPromptModal(true);
+                  }}
+                  icon={PenSquare}
+                  label="Modify Prompt"
+                />
+
+                <hr className="my-1 border-gray-200" />
+              </>
             )}
 
             <ActionButton
               onClick={() => {
-                setIsDropdownVisible(false);
-                onRegenerate();
-              }}
-              icon={RefreshCcw}
-              label="Regenerate"
-            />
-            <ActionButton
-              onClick={() => {
-                setIsDropdownVisible(false);
-                setShowPromptModal(true);
-              }}
-              icon={PenSquare}
-              label="Modify Prompt"
-            />
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
 
-            <hr className="my-1 border-gray-200" />
-
-            <ActionButton
-              onClick={saveAIRoadmap}
+                saveAIRoadmap();
+              }}
               icon={SaveIcon}
               label="Start Learning"
               isLoading={isSavingAIRoadmap}
             />
 
             <ActionButton
-              onClick={editAIRoadmap}
+              onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
+                editAIRoadmap();
+              }}
               icon={PenSquare}
               label="Edit in Editor"
               isLoading={isEditingAIRoadmap}
