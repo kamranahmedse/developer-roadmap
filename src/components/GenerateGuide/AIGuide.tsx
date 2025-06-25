@@ -16,6 +16,9 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AIGuideChat } from './AIGuideChat';
 import { AIGuideContent } from './AIGuideContent';
 import { GenerateAIGuide } from './GenerateAIGuide';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { billingDetailsOptions } from '../../queries/billing';
+import { showLoginPopup } from '../../lib/popup';
 
 type AIGuideProps = {
   guideSlug?: string;
@@ -37,6 +40,18 @@ export function AIGuide(props: AIGuideProps) {
     queryClient,
   );
 
+  const {
+    data: tokenUsage,
+    isLoading: isTokenUsageLoading,
+    refetch: refetchTokenUsage,
+  } = useQuery(getAiCourseLimitOptions(), queryClient);
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isPaidUser = userBillingDetails?.status === 'active';
+
   const { data: aiGuideSuggestions, isLoading: isAiGuideSuggestionsLoading } =
     useQuery(
       {
@@ -57,6 +72,16 @@ export function AIGuide(props: AIGuideProps) {
   }, [aiGuideSuggestions]);
 
   const handleRegenerate = async (prompt?: string) => {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
+    if (!isPaidUser && isLimitExceeded) {
+      setShowUpgradeModal(true);
+      return;
+    }
+
     flushSync(() => {
       setIsRegenerating(true);
       setRegeneratedHtml(null);
@@ -92,6 +117,12 @@ export function AIGuide(props: AIGuideProps) {
     });
   };
 
+  const isLoading =
+    isLoadingBySlug ||
+    isRegenerating ||
+    isTokenUsageLoading ||
+    isBillingDetailsLoading;
+
   return (
     <AITutorLayout
       wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden bg-white"
@@ -106,7 +137,7 @@ export function AIGuide(props: AIGuideProps) {
           <AIGuideContent
             html={regeneratedHtml || aiGuide?.html || ''}
             onRegenerate={handleRegenerate}
-            isLoading={isLoadingBySlug || isRegenerating}
+            isLoading={isLoading}
             guideSlug={guideSlug}
           />
         )}

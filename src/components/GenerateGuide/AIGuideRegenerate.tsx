@@ -10,6 +10,9 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import { getAiGuideOptions } from '../../queries/ai-guide';
 import { queryClient } from '../../stores/query-client';
 import { httpPost } from '../../lib/query-http';
+import { useAuth } from '../../hooks/use-auth';
+import { showLoginPopup } from '../../lib/popup';
+import { isLoggedIn } from '../../lib/jwt';
 
 type AIGuideRegenerateProps = {
   onRegenerate: (prompt?: string) => void;
@@ -24,6 +27,7 @@ export function AIGuideRegenerate(props: AIGuideRegenerateProps) {
   const [showPromptModal, setShowPromptModal] = useState(false);
   const [showUpdatePreferencesModal, setShowUpdatePreferencesModal] =
     useState(false);
+  const currentUser = useAuth();
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -61,7 +65,9 @@ export function AIGuideRegenerate(props: AIGuideRegenerateProps) {
   );
 
   const showUpdatePreferences =
-    aiGuide?.questionAndAnswers && aiGuide.questionAndAnswers.length > 0;
+    aiGuide?.questionAndAnswers &&
+    aiGuide.questionAndAnswers.length > 0 &&
+    currentUser?.id === aiGuide.userId;
 
   return (
     <>
@@ -127,6 +133,11 @@ export function AIGuideRegenerate(props: AIGuideRegenerateProps) {
 
             <button
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsDropdownVisible(false);
                 onRegenerate();
               }}
@@ -141,6 +152,11 @@ export function AIGuideRegenerate(props: AIGuideRegenerateProps) {
             </button>
             <button
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsDropdownVisible(false);
                 setShowPromptModal(true);
               }}

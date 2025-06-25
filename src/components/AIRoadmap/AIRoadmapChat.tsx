@@ -124,6 +124,10 @@ export function AIRoadmapChat(props: AIRoadmapChatProps) {
       });
       sendMessages(newMessages);
       setInputValue('');
+
+      setTimeout(() => {
+        scrollToBottom('smooth');
+      }, 0);
     },
     [inputValue, isStreamingMessage, messages, sendMessages, setMessages],
   );
@@ -174,11 +178,7 @@ export function AIRoadmapChat(props: AIRoadmapChatProps) {
 
   useImperativeHandle(aiChatActionsRef, () => ({
     handleNodeClick: (node: RoadmapNodeDetails) => {
-      flushSync(() => {
-        setInputValue(`Explain what is ${node.nodeTitle} topic in detail.`);
-      });
-
-      inputRef.current?.focus();
+      handleSubmitInput(`Explain what is "${node.nodeTitle}" topic in detail.`);
     },
   }));
 
@@ -301,6 +301,24 @@ export function AIRoadmapChat(props: AIRoadmapChatProps) {
                     Upgrade for more
                   </button>
                 )}
+              </div>
+            )}
+
+            {!isLoggedIn() && (
+              <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+                <LockIcon
+                  className="size-4 cursor-not-allowed"
+                  strokeWidth={2.5}
+                />
+                <p className="cursor-not-allowed">Please login to continue</p>
+                <button
+                  onClick={() => {
+                    showLoginPopup();
+                  }}
+                  className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                >
+                  Login / Register
+                </button>
               </div>
             )}
 

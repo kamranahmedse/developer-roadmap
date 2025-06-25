@@ -19,6 +19,9 @@ import { aiRoadmapOptions } from '../../queries/ai-roadmap';
 import { UpdatePreferences } from '../GenerateGuide/UpdatePreferences';
 import { generateAIRoadmapFromText } from '@roadmapsh/editor';
 import { useToast } from '../../hooks/use-toast';
+import { showLoginPopup } from '../../lib/popup';
+import { isLoggedIn } from '../../lib/jwt';
+import { useAuth } from '../../hooks/use-auth';
 
 type AIRoadmapRegenerateProps = {
   onRegenerate: (prompt?: string) => void;
@@ -34,6 +37,7 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
   const [showPromptModal, setShowPromptModal] = useState(false);
   const [showUpdatePreferencesModal, setShowUpdatePreferencesModal] =
     useState(false);
+  const currentUser = useAuth();
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -133,7 +137,9 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
   );
 
   const showUpdatePreferences =
-    aiRoadmap?.questionAndAnswers && aiRoadmap.questionAndAnswers.length > 0;
+    aiRoadmap?.questionAndAnswers &&
+    aiRoadmap.questionAndAnswers.length > 0 &&
+    currentUser?.id === aiRoadmap.userId;
 
   return (
     <>
@@ -183,6 +189,11 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
             {showUpdatePreferences && (
               <ActionButton
                 onClick={() => {
+                  if (!isLoggedIn()) {
+                    showLoginPopup();
+                    return;
+                  }
+
                   setIsDropdownVisible(false);
                   setShowUpdatePreferencesModal(true);
                 }}
@@ -193,6 +204,11 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
 
             <ActionButton
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsDropdownVisible(false);
                 onRegenerate();
               }}
@@ -201,6 +217,11 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
             />
             <ActionButton
               onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
                 setIsDropdownVisible(false);
                 setShowPromptModal(true);
               }}
@@ -211,14 +232,28 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
             <hr className="my-1 border-gray-200" />
 
             <ActionButton
-              onClick={saveAIRoadmap}
+              onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
+                saveAIRoadmap();
+              }}
               icon={SaveIcon}
               label="Start Learning"
               isLoading={isSavingAIRoadmap}
             />
 
             <ActionButton
-              onClick={editAIRoadmap}
+              onClick={() => {
+                if (!isLoggedIn()) {
+                  showLoginPopup();
+                  return;
+                }
+
+                editAIRoadmap();
+              }}
               icon={PenSquare}
               label="Edit in Editor"
               isLoading={isEditingAIRoadmap}

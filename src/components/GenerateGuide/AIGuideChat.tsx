@@ -60,11 +60,8 @@ export function AIGuideChat(props: AIGuideChatProps) {
     refetch: refetchTokenUsage,
   } = useQuery(getAiCourseLimitOptions(), queryClient);
 
-  const {
-    data: userBillingDetails,
-    isLoading: isBillingDetailsLoading,
-    refetch: refetchBillingDetails,
-  } = useQuery(billingDetailsOptions(), queryClient);
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
@@ -329,6 +326,24 @@ export function AIGuideChat(props: AIGuideChatProps) {
                     Upgrade for more
                   </button>
                 )}
+              </div>
+            )}
+
+            {!isLoggedIn() && (
+              <div className="absolute inset-0 z-10 flex items-center justify-center gap-2 bg-black text-white">
+                <LockIcon
+                  className="size-4 cursor-not-allowed"
+                  strokeWidth={2.5}
+                />
+                <p className="cursor-not-allowed">Please login to continue</p>
+                <button
+                  onClick={() => {
+                    showLoginPopup();
+                  }}
+                  className="rounded-md bg-white px-2 py-1 text-xs font-medium text-black hover:bg-gray-300"
+                >
+                  Login / Register
+                </button>
               </div>
             )}
 

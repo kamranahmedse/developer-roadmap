@@ -12,6 +12,10 @@ import { GenerateAIRoadmap } from './GenerateAIRoadmap';
 import { AIRoadmapContent, type RoadmapNodeDetails } from './AIRoadmapContent';
 import { AIRoadmapChat } from './AIRoadmapChat';
 import { AlertCircleIcon } from 'lucide-react';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { billingDetailsOptions } from '../../queries/billing';
 
 export type AIRoadmapChatActions = {
   handleNodeClick: (node: RoadmapNodeDetails) => void;
@@ -42,7 +46,29 @@ export function AIRoadmap(props: AIRoadmapProps) {
     error: aiRoadmapError,
   } = useQuery(aiRoadmapOptions(roadmapSlug), queryClient);
 
+  const {
+    data: tokenUsage,
+    isLoading: isTokenUsageLoading,
+    refetch: refetchTokenUsage,
+  } = useQuery(getAiCourseLimitOptions(), queryClient);
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isPaidUser = userBillingDetails?.status === 'active';
+
   const handleRegenerate = async (prompt?: string) => {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
+    if (!isPaidUser && isLimitExceeded) {
+      setShowUpgradeModal(true);
+      return;
+    }
+
     flushSync(() => {
       setIsRegenerating(true);
       setRegeneratedSvgHtml(null);
@@ -76,12 +102,17 @@ export function AIRoadmap(props: AIRoadmapProps) {
       },
       onFinish: () => {
         setIsRegenerating(false);
+        refetchTokenUsage();
         queryClient.invalidateQueries(aiRoadmapOptions(roadmapSlug));
       },
     });
   };
 
-  const isLoading = isLoadingBySlug || isRegenerating;
+  const isLoading =
+    isLoadingBySlug ||
+    isRegenerating ||
+    isTokenUsageLoading ||
+    isBillingDetailsLoading;
 
   const handleNodeClick = useCallback(
     (node: RoadmapNodeDetails) => {
