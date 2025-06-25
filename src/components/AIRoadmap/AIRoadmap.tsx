@@ -11,6 +11,7 @@ import { aiRoadmapOptions, generateAIRoadmap } from '../../queries/ai-roadmap';
 import { GenerateAIRoadmap } from './GenerateAIRoadmap';
 import { AIRoadmapContent } from './AIRoadmapContent';
 import { AIRoadmapChat } from './AIRoadmapChat';
+import { AlertCircleIcon } from 'lucide-react';
 
 type AIRoadmapProps = {
   roadmapSlug?: string;
@@ -29,10 +30,11 @@ export function AIRoadmap(props: AIRoadmapProps) {
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
-  const { data: aiRoadmap, isLoading: isLoadingBySlug } = useQuery(
-    aiRoadmapOptions(roadmapSlug),
-    queryClient,
-  );
+  const {
+    data: aiRoadmap,
+    isLoading: isLoadingBySlug,
+    error: aiRoadmapError,
+  } = useQuery(aiRoadmapOptions(roadmapSlug), queryClient);
 
   const handleRegenerate = async (prompt?: string) => {
     flushSync(() => {
@@ -73,28 +75,42 @@ export function AIRoadmap(props: AIRoadmapProps) {
     });
   };
 
+  const isLoading = isLoadingBySlug || isRegenerating;
+
   return (
     <AITutorLayout
-      wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden bg-white"
+      wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden relative bg-white"
       containerClassName="h-[calc(100vh-49px)] overflow-hidden relative"
     >
       {showUpgradeModal && (
         <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
       )}
 
+      {!isLoading && aiRoadmapError && (
+        <div className="absolute inset-0 z-10 flex h-full flex-col items-center justify-center bg-white">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <AlertCircleIcon className="size-10 text-gray-500" />
+            <p className="text-center">
+              {aiRoadmapError?.message || 'Something went wrong'}
+            </p>
+          </div>
+        </div>
+      )}
+
       <div className="grow overflow-y-auto p-4 pt-0">
-        {roadmapSlug && (
+        {roadmapSlug && !aiRoadmapError && (
           <AIRoadmapContent
             svgHtml={regeneratedSvgHtml ?? aiRoadmap?.svgHtml ?? ''}
-            isLoading={isLoadingBySlug || isRegenerating}
+            isLoading={isLoading}
             onRegenerate={handleRegenerate}
             roadmapSlug={roadmapSlug}
           />
         )}
-        {!roadmapSlug && (
+        {!roadmapSlug && !aiRoadmapError && (
           <GenerateAIRoadmap onRoadmapSlugChange={setRoadmapSlug} />
         )}
       </div>
+
       <AIRoadmapChat
         roadmapSlug={roadmapSlug}
         isRoadmapLoading={!aiRoadmap}

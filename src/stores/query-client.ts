@@ -5,6 +5,7 @@ export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       retry: false,
+      refetchOnMount: false,
       enabled: !import.meta.env.SSR,
     },
   },
