@@ -1,9 +1,11 @@
 import {
   useCallback,
   useEffect,
+  useImperativeHandle,
   useLayoutEffect,
   useRef,
   useState,
+  type RefObject,
 } from 'react';
 import { useChat, type ChatMessage } from '../../hooks/use-chat';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
@@ -29,15 +31,18 @@ import { billingDetailsOptions } from '../../queries/billing';
 import { LoadingChip } from '../LoadingChip';
 import { getTailwindScreenDimension } from '../../lib/is-mobile';
 import { useToast } from '../../hooks/use-toast';
+import type { AIRoadmapChatActions } from './AIRoadmap';
+import type { RoadmapNodeDetails } from './AIRoadmapContent';
 
 type AIRoadmapChatProps = {
   roadmapSlug?: string;
   isRoadmapLoading?: boolean;
   onUpgrade?: () => void;
+  aiChatActionsRef?: RefObject<AIRoadmapChatActions | null>;
 };
 
 export function AIRoadmapChat(props: AIRoadmapChatProps) {
-  const { roadmapSlug, isRoadmapLoading, onUpgrade } = props;
+  const { roadmapSlug, isRoadmapLoading, onUpgrade, aiChatActionsRef } = props;
 
   const toast = useToast();
   const scrollareaRef = useRef<HTMLDivElement>(null);
@@ -166,6 +171,16 @@ export function AIRoadmapChat(props: AIRoadmapChatProps) {
       localStorage.setItem('chat-history-sidebar-open', isChatOpen.toString());
     }
   }, [isChatOpen, isMobile]);
+
+  useImperativeHandle(aiChatActionsRef, () => ({
+    handleNodeClick: (node: RoadmapNodeDetails) => {
+      flushSync(() => {
+        setInputValue(`Explain what is ${node.nodeTitle} topic in detail.`);
+      });
+
+      inputRef.current?.focus();
+    },
+  }));
 
   if (!isChatOpen) {
     return (

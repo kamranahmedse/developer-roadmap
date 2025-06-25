@@ -1,7 +1,7 @@
 import './AIRoadmap.css';
 
 import { useQuery } from '@tanstack/react-query';
-import { useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { useToast } from '../../hooks/use-toast';
 import { queryClient } from '../../stores/query-client';
@@ -9,9 +9,13 @@ import { AITutorLayout } from '../AITutor/AITutorLayout';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { aiRoadmapOptions, generateAIRoadmap } from '../../queries/ai-roadmap';
 import { GenerateAIRoadmap } from './GenerateAIRoadmap';
-import { AIRoadmapContent } from './AIRoadmapContent';
+import { AIRoadmapContent, type RoadmapNodeDetails } from './AIRoadmapContent';
 import { AIRoadmapChat } from './AIRoadmapChat';
 import { AlertCircleIcon } from 'lucide-react';
+
+export type AIRoadmapChatActions = {
+  handleNodeClick: (node: RoadmapNodeDetails) => void;
+};
 
 type AIRoadmapProps = {
   roadmapSlug?: string;
@@ -27,6 +31,8 @@ export function AIRoadmap(props: AIRoadmapProps) {
   const [regeneratedSvgHtml, setRegeneratedSvgHtml] = useState<string | null>(
     null,
   );
+
+  const aiChatActionsRef = useRef<AIRoadmapChatActions | null>(null);
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
@@ -77,6 +83,13 @@ export function AIRoadmap(props: AIRoadmapProps) {
 
   const isLoading = isLoadingBySlug || isRegenerating;
 
+  const handleNodeClick = useCallback(
+    (node: RoadmapNodeDetails) => {
+      aiChatActionsRef.current?.handleNodeClick(node);
+    },
+    [aiChatActionsRef],
+  );
+
   return (
     <AITutorLayout
       wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden relative bg-white"
@@ -104,6 +117,7 @@ export function AIRoadmap(props: AIRoadmapProps) {
             isLoading={isLoading}
             onRegenerate={handleRegenerate}
             roadmapSlug={roadmapSlug}
+            onNodeClick={handleNodeClick}
           />
         )}
         {!roadmapSlug && !aiRoadmapError && (
@@ -115,6 +129,7 @@ export function AIRoadmap(props: AIRoadmapProps) {
         roadmapSlug={roadmapSlug}
         isRoadmapLoading={!aiRoadmap}
         onUpgrade={() => setShowUpgradeModal(true)}
+        aiChatActionsRef={aiChatActionsRef}
       />
     </AITutorLayout>
   );
