@@ -22,7 +22,7 @@ export function AIRoadmapCard(props: AIRoadmapCardProps) {
         className={cn(
           'group relative flex h-full w-full gap-3 overflow-hidden rounded-lg border border-gray-200 bg-white p-4 text-left transition-all hover:border-gray-300 hover:bg-gray-50 sm:gap-4',
           variant === 'column' && 'flex-col',
-          variant === 'row' && 'flex-row sm:flex-row sm:items-center',
+          variant === 'row' && 'sm:flex-col sm:items-start',
         )}
       >
         <div className="min-w-0 flex-1">
@@ -31,7 +31,7 @@ export function AIRoadmapCard(props: AIRoadmapCardProps) {
           </h3>
         </div>
 
-        <div className="mt-7 flex items-center gap-4 sm:gap-4">
+        <div className="flex items-center gap-4 sm:gap-4">
           <div className="hidden items-center text-xs text-gray-600 sm:flex">
             <CalendarIcon className="mr-1 h-3.5 w-3.5" />
             <span>{updatedAgo}</span>
