@@ -136,10 +136,11 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
     queryClient,
   );
 
+  const isCurrentUserCreator = currentUser?.id === aiRoadmap?.userId;
   const showUpdatePreferences =
     aiRoadmap?.questionAndAnswers &&
     aiRoadmap.questionAndAnswers.length > 0 &&
-    currentUser?.id === aiRoadmap.userId;
+    isCurrentUserCreator;
 
   return (
     <>
@@ -186,50 +187,54 @@ export function AIRoadmapRegenerate(props: AIRoadmapRegenerateProps) {
         </button>
         {isDropdownVisible && (
           <div className="absolute top-full right-0 min-w-[190px] translate-y-1 overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
-            {showUpdatePreferences && (
-              <ActionButton
-                onClick={() => {
-                  if (!isLoggedIn()) {
-                    showLoginPopup();
-                    return;
-                  }
+            {isCurrentUserCreator && (
+              <>
+                {showUpdatePreferences && (
+                  <ActionButton
+                    onClick={() => {
+                      if (!isLoggedIn()) {
+                        showLoginPopup();
+                        return;
+                      }
 
-                  setIsDropdownVisible(false);
-                  setShowUpdatePreferencesModal(true);
-                }}
-                icon={SettingsIcon}
-                label="Update Preferences"
-              />
+                      setIsDropdownVisible(false);
+                      setShowUpdatePreferencesModal(true);
+                    }}
+                    icon={SettingsIcon}
+                    label="Update Preferences"
+                  />
+                )}
+
+                <ActionButton
+                  onClick={() => {
+                    if (!isLoggedIn()) {
+                      showLoginPopup();
+                      return;
+                    }
+
+                    setIsDropdownVisible(false);
+                    onRegenerate();
+                  }}
+                  icon={RefreshCcw}
+                  label="Regenerate"
+                />
+                <ActionButton
+                  onClick={() => {
+                    if (!isLoggedIn()) {
+                      showLoginPopup();
+                      return;
+                    }
+
+                    setIsDropdownVisible(false);
+                    setShowPromptModal(true);
+                  }}
+                  icon={PenSquare}
+                  label="Modify Prompt"
+                />
+
+                <hr className="my-1 border-gray-200" />
+              </>
             )}
-
-            <ActionButton
-              onClick={() => {
-                if (!isLoggedIn()) {
-                  showLoginPopup();
-                  return;
-                }
-
-                setIsDropdownVisible(false);
-                onRegenerate();
-              }}
-              icon={RefreshCcw}
-              label="Regenerate"
-            />
-            <ActionButton
-              onClick={() => {
-                if (!isLoggedIn()) {
-                  showLoginPopup();
-                  return;
-                }
-
-                setIsDropdownVisible(false);
-                setShowPromptModal(true);
-              }}
-              icon={PenSquare}
-              label="Modify Prompt"
-            />
-
-            <hr className="my-1 border-gray-200" />
 
             <ActionButton
               onClick={() => {

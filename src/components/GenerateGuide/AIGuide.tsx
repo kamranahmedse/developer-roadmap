@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { ExternalLink } from 'lucide-react';
+import { AlertCircleIcon, ExternalLink } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { generateGuide } from '../../helper/generate-ai-guide';
@@ -35,10 +35,11 @@ export function AIGuide(props: AIGuideProps) {
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
-  const { data: aiGuide, isLoading: isLoadingBySlug } = useQuery(
-    getAiGuideOptions(guideSlug),
-    queryClient,
-  );
+  const {
+    data: aiGuide,
+    isLoading: isLoadingBySlug,
+    error: aiGuideError,
+  } = useQuery(getAiGuideOptions(guideSlug), queryClient);
 
   const {
     data: tokenUsage,
@@ -125,15 +126,26 @@ export function AIGuide(props: AIGuideProps) {
 
   return (
     <AITutorLayout
-      wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden bg-white"
+      wrapperClassName="flex-row p-0 lg:p-0 relative overflow-hidden bg-white"
       containerClassName="h-[calc(100vh-49px)] overflow-hidden relative"
     >
       {showUpgradeModal && (
         <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
       )}
 
+      {!isLoading && aiGuideError && (
+        <div className="absolute inset-0 z-10 flex h-full flex-col items-center justify-center bg-white">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <AlertCircleIcon className="size-10 text-gray-500" />
+            <p className="text-center">
+              {aiGuideError?.message || 'Something went wrong'}
+            </p>
+          </div>
+        </div>
+      )}
+
       <div className="grow overflow-y-auto p-4 pt-0">
-        {guideSlug && (
+        {guideSlug && !aiGuideError && (
           <AIGuideContent
             html={regeneratedHtml || aiGuide?.html || ''}
             onRegenerate={handleRegenerate}
@@ -141,7 +153,9 @@ export function AIGuide(props: AIGuideProps) {
             guideSlug={guideSlug}
           />
         )}
-        {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}
+        {!guideSlug && !aiGuideError && (
+          <GenerateAIGuide onGuideSlugChange={setGuideSlug} />
+        )}
 
         {aiGuide && !isRegenerating && (
           <div className="mx-auto mt-12 mb-12 max-w-4xl">
