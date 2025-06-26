@@ -76,7 +76,7 @@ export function ChapterRow(props: ChapterRowProps) {
           </div>
 
           {isExpandable && (
-            <div className="shrink-0 rounded-full bg-zinc-800/80 p-2 text-zinc-400 group-hover:bg-zinc-800 group-hover:text-yellow-500">
+            <div className="shrink-0 rounded-full bg-zinc-800/80 p-2 text-zinc-400 group-hover:bg-zinc-800 group-hover:text-zinc-500">
               <ChevronDown
                 className={cn(
                   'h-4 w-4 transition-transform',
