@@ -11,6 +11,8 @@ import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 import { AuthorCredentials } from './AuthorCredentials';
 import { PlatformDemo } from './PlatformDemo';
 import { PurchaseBanner } from './PurchaseBanner';
+import { ReviewCarousel } from './ReviewCarousel';
+import { CourseFeatures } from './CourseFeatures';
 
 export function SQLCourseVariantPage() {
   return (
@@ -72,6 +74,10 @@ export function SQLCourseVariantPage() {
           </div>
 
           <PurchaseBanner />
+
+          <ReviewCarousel />
+
+          <CourseFeatures />
         </div>
       </div>
     </>
