@@ -10,6 +10,7 @@ import { Spotlight } from '../SQLCourse/Spotlight';
 import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
 import { AuthorCredentials } from './AuthorCredentials';
 import { PlatformDemo } from './PlatformDemo';
+import { PurchaseBanner } from './PurchaseBanner';
 
 export function SQLCourseVariantPage() {
   return (
@@ -69,6 +70,8 @@ export function SQLCourseVariantPage() {
 
             <PlatformDemo />
           </div>
+
+          <PurchaseBanner />
         </div>
       </div>
     </>
