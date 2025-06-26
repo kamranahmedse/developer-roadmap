@@ -44,8 +44,8 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-09-16'
 seo:
-  title: 'Backend Developer Roadmap - roadmap.sh'
-  description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven Backend roadmap.'
+  title: 'Backend Developer Roadmap: What is Backend Development'
+  description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven roadmap.'
   keywords:
     - 'backend roadmap 2025'
     - 'backend developer roadmap 2025'

@@ -24,7 +24,7 @@ schema:
   dateModified: '2024-11-18'
   imageUrl: 'https://roadmap.sh/roadmaps/engineering-manager.png'
 seo:
-  title: 'Engineering Manager - roadmap.sh'
+  title: 'Engineering Manager'
   description: 'Learn what engineering management is, what engineering managers do and how to become one using our community-driven roadmap.'
   keywords:
     - 'engineering manager'

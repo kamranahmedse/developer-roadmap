@@ -69,7 +69,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Full Stack Developer Roadmap - roadmap.sh'
+  title: 'Full Stack Developer Roadmap'
   description: 'Learn to become a modern full stack developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern full stack development.'
   keywords:
     - 'javascript roadmap 2025'

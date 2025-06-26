@@ -25,6 +25,7 @@ seo:
     - 'android developer roadmap'
     - 'android developer roadmap 2025'
     - 'android roadmap'
+    - 'kotlin developer roadmap'
     - 'android roadmap 2025'
     - 'become android developer'
     - 'android application development'

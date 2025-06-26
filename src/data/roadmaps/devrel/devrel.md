@@ -27,7 +27,7 @@ schema:
   datePublished: '2024-07-04'
   dateModified: '2024-07-04'
 seo:
-  title: 'DevRel Roadmap - roadmap.sh'
+  title: 'DevRel Roadmap'
   description: 'Learn what DevRel is, what developer advocates do and how to become one using our community-driven roadmap.'
   keywords:
     - 'devrel roadmap 2024'

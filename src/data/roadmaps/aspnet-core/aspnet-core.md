@@ -33,7 +33,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'ASP.NET Core Roadmap - roadmap.sh'
+  title: 'ASP.NET Core Roadmap'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for asp.net core development. Learn to become a modern ASP.NET core developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming a developer'

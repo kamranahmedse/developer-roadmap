@@ -19,7 +19,7 @@ schema:
   datePublished: '2024-02-20'
   dateModified: '2024-02-20'
 seo:
-  title: 'Data Structures and Algorithms Roadmap - roadmap.sh'
+  title: 'Data Structures and Algorithms Roadmap'
   description: 'Learn about Data Structures and Algorithms using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern data structure and algorithms.'
   keywords:
     - 'dsa'

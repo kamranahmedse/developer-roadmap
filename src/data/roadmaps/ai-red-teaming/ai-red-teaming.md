@@ -20,7 +20,7 @@ schema:
   datePublished: '2025-04-22'
   dateModified: '2025-04-22'
 seo:
-  title: 'AI Red Teaming Roadmap - roadmap.sh'
+  title: 'AI Red Teaming Roadmap'
   description: 'Step by step guide to learn AI Red Teaming in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'ai red teaming tutorial'

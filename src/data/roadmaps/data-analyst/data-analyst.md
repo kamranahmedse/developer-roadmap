@@ -63,7 +63,7 @@ question:
 
     When it comes to skills, understanding and having proficiency in languages such as Python or R, along with expertise in various tools like Power BI, are incredibly valuable here. They enable you to perform predictive modeling and even apply machine learning techniques when needed.
 seo:
-  title: 'Data Analyst Roadmap - roadmap.sh'
+  title: 'Data Analyst Roadmap'
   description: 'Learn to become an Data Analyst using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern data analysts.'
   keywords:
     - 'data analyst roadmap 2025'

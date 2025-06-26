@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-06-01'
   dateModified: '2023-06-01'
 seo:
-  title: 'C++ Developer Roadmap - roadmap.sh'
+  title: 'C++ Developer Roadmap'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for C++ development. Learn to become a modern C++ developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming a c++ developer'

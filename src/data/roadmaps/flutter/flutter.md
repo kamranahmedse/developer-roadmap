@@ -18,7 +18,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Learn to become a modern Flutter developer - roadmap.sh'
+  title: 'Flutter Roadmap: Learn to become a modern Flutter developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for flutter development. Learn to become a modern Flutter developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming a flutter developer'

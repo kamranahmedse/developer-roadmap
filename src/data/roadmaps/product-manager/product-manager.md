@@ -1,5 +1,5 @@
 ---
-pdfUrl: '/jsons/roadmaps/product-manager.json'
+jsonUrl: '/jsons/roadmaps/product-manager.json'
 pdfUrl: '/pdfs/roadmaps/product-manager.pdf'
 order: 19
 renderer: editor

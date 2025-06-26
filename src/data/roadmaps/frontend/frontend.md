@@ -62,7 +62,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Frontend Developer Roadmap - roadmap.sh'
+  title: 'Frontend Developer Roadmap'
   description: 'Learn what Frontend Development is, what frontend developers do and how to become a modern frontend developer using our community-driven roadmap.'
   keywords:
     - 'javascript roadmap 2025'

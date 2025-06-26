@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-19'
 seo:
-  title: 'Design System Roadmap - roadmap.sh'
+  title: 'Design System Roadmap'
   description: 'Learn how to create a design system or become a design system engineer with this step by step guide with resources.'
   keywords:
     - 'guide to create a design system'
