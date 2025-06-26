@@ -18,7 +18,7 @@ schema:
   datePublished: '2024-06-21'
   dateModified: '2024-06-21'
 seo:
-  title: 'Terraform Roadmap - roadmap.sh'
+  title: 'Terraform Roadmap'
   description: 'Step by step guide to learn Terraform in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'terraform tutorial'

@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Software Design and Architecture Roadmap - roadmap.sh'
+  title: 'Software Design and Architecture Roadmap'
   description: 'Learn software design and architecture with this step by step guide and resources.'
   keywords:
     - 'guide to learn software design and architecture'

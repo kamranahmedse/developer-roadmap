@@ -66,7 +66,7 @@ question:
     
     Finally, even though it's not as popular in these industries, Python can be used in cybersecurity, embedded systems, and even game development. Many companies use Python for cloud computing and backend services because of its simplicity and extensive support for integration with external systems.
 seo:
-  title: 'Learn to become a modern Python developer - roadmap.sh'
+  title: 'Learn to become a modern Python developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming an python developer'

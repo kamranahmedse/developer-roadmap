@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'GraphQL Roadmap - roadmap.sh'
+  title: 'GraphQL Roadmap'
   description: 'Learn GraphQL with this step by step guide and resources.'
   keywords:
     - 'guide to learn graphql'

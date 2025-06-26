@@ -37,7 +37,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Software Architect Roadmap - roadmap.sh'
+  title: 'Software Architect Roadmap'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for Software Architect. Learn to become a modern software architect by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'solution architect roadmap'

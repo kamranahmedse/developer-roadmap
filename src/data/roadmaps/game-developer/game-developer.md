@@ -18,7 +18,7 @@ schema:
   datePublished: '2023-10-26'
   dateModified: '2023-10-26'
 seo:
-  title: 'Game Developer Roadmap - roadmap.sh'
+  title: 'Game Developer Roadmap'
   description: 'Learn what game development is, what game developers do and how to become one using our community-driven roadmap.'
   keywords:
     - 'game developer roadmap 2024'

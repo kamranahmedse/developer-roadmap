@@ -40,7 +40,7 @@ schema:
   datePublished: '2023-01-17'
   dateModified: '2023-01-17'
 seo:
-  title: 'System Design Roadmap - roadmap.sh'
+  title: 'System Design Roadmap'
   description: 'Learn system design in 2025 with this step by step guide and resources.'
   keywords:
     - 'guide to learn system design'

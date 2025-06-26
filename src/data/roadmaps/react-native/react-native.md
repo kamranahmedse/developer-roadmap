@@ -18,7 +18,7 @@ schema:
   datePublished: '2023-06-27'
   dateModified: '2023-06-27'
 seo:
-  title: 'React Native Developer - roadmap.sh'
+  title: 'React Native Developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for react native development. Learn to become a modern React Native developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming a react native developer'

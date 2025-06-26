@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-10-26'
   dateModified: '2023-10-26'
 seo:
-  title: 'Server Side Game Developer Roadmap - roadmap.sh'
+  title: 'Server Side Game Developer Roadmap'
   description: 'Learn what Server Side Game Development is, what server side game developers do and how to become one using our community-driven roadmap.'
   keywords:
     - 'server side game developer roadmap 2024'

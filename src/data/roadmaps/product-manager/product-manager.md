@@ -25,7 +25,7 @@ schema:
   dateModified: '2024-06-27'
   imageUrl: 'https://roadmap.sh/roadmaps/product-manager.png'
 seo:
-  title: 'Product Manager - roadmap.sh'
+  title: 'Product Manager'
   description: 'Learn what product management is, what product managers do and how to become one using our community-driven roadmap.'
   keywords: 
     - 'product manager roadmap 2024'

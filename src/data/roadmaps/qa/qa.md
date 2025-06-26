@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'QA Roadmap: Learn to become a modern QA engineer - roadmap.sh'
+  title: 'QA Roadmap: Learn to become a modern QA engineer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for modern QA development. Learn to become a modern QA engineer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'qa engineer 2025'

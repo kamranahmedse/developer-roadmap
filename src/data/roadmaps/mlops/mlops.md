@@ -19,7 +19,7 @@ schema:
   datePublished: '2024-02-12'
   dateModified: '2024-07-18'
 seo:
-  title: 'MLOps Roadmap - roadmap.sh'
+  title: 'MLOps Roadmap'
   description: 'Learn about MLOps using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern machine learning operations.'
   keywords:
     - 'mlops roadmap 2024

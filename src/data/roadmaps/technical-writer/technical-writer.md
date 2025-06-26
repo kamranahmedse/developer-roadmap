@@ -18,7 +18,7 @@ schema:
   datePublished: '2023-11-07'
   dateModified: '2023-11-07'
 seo:
-  title: 'Technical Writer Roadmap - roadmap.sh'
+  title: 'Technical Writer Roadmap'
   description: 'Learn what technical writing is, what technical writers do and how to become one using our community-driven roadmap.'
   keywords:
     - 'technical writer roadmap 2024'

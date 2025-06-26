@@ -19,7 +19,7 @@ schema:
   datePublished: '2024-08-12'
   dateModified: '2024-08-12'
 seo:
-  title: 'Learn Git and GitHub - roadmap.sh'
+  title: 'Learn Git and GitHub'
   description: 'Learn about Git and GitHub using this roadmap. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'learn git and github 2025'
