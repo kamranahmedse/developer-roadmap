@@ -1,4 +1,12 @@
-import { BookOpen, Compass, Plus, Star, X, Zap } from 'lucide-react';
+import {
+  BookOpen,
+  Compass,
+  MessageCircle,
+  Plus,
+  Star,
+  X,
+  Zap,
+} from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { useIsPaidUser } from '../../queries/billing';
@@ -21,22 +29,22 @@ type AITutorSidebarProps = {
 const sidebarItems = [
   {
     key: 'new',
-    label: 'New',
+    label: 'Create with AI',
     href: '/ai',
     icon: Plus,
   },
   {
+    key: 'chat',
+    label: 'Ask AI Tutor',
+    href: '/ai/chat',
+    icon: MessageCircle,
+  },
+  {
     key: 'library',
-    label: 'Library',
+    label: 'My Learning',
     href: '/ai/courses',
     icon: BookOpen,
   },
-  // {
-  //   key: 'chat',
-  //   label: 'AI Chat',
-  //   href: '/ai/chat',
-  //   icon: Bot,
-  // },
   {
     key: 'staff-picks',
     label: 'Staff Picks',

@@ -1,11 +1,11 @@
 ---
+import { Fragment } from 'react';
 import { AccountStreak } from '../AccountStreak/AccountStreak';
 import Icon from '../AstroIcon.astro';
 import { NavigationDropdown } from '../NavigationDropdown';
-import { RoadmapDropdownMenu } from '../RoadmapDropdownMenu/RoadmapDropdownMenu';
+import { RoadmapDropdownMenu } from '../TopNavDropdowns/RoadmapDropdownMenu';
+import { AIDropdownMenu } from '../TopNavDropdowns/AIDropdownMenu';
 import { AccountDropdown } from './AccountDropdown';
-import { CourseAnnouncement } from '../SQLCourse/CourseAnnouncement';
-import { Fragment } from 'react';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -33,21 +33,7 @@ import { Fragment } from 'react';
           Start Here
         </a>
         <RoadmapDropdownMenu client:load />
-        <a
-          href='/ai'
-          class='group relative mr-3 text-blue-300 hover:text-white'
-        >
-          AI Tutor
-          <span class='absolute -right-[11px] top-0'>
-            <span class='relative flex h-2 w-2'>
-              <span
-                class='absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75'
-              ></span>
-              <span class='relative inline-flex h-2 w-2 rounded-full bg-sky-500'
-              ></span>
-            </span>
-          </span>
-        </a>
+        <AIDropdownMenu client:load />
         <a
           href='/teams'
           class='group relative hidden text-gray-400 hover:text-white xl:block'
@@ -86,12 +72,12 @@ import { Fragment } from 'react';
 
     <!-- Mobile Navigation Items -->
     <div
-      class='fixed bottom-0 left-0 right-0 top-0 z-40 flex hidden items-center bg-slate-900'
+      class='fixed top-0 right-0 bottom-0 left-0 z-40 flex hidden items-center bg-slate-900'
       data-mobile-nav
     >
       <button
         data-close-mobile-nav
-        class='absolute right-6 top-6 block cursor-pointer text-gray-400 hover:text-gray-50'
+        class='absolute top-6 right-6 block cursor-pointer text-gray-400 hover:text-gray-50'
         aria-label='Close Menu'
       >
         <Icon icon='close' />

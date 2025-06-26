@@ -97,7 +97,7 @@ export function UserRoadmapsList() {
             <div className="flex flex-col gap-2">
               <div className="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3">
                 {roadmaps.map((roadmap) => (
-                  <AIRoadmapCard key={roadmap._id} roadmap={roadmap} />
+                  <AIRoadmapCard variant="column" key={roadmap._id} roadmap={roadmap} />
                 ))}
               </div>
 

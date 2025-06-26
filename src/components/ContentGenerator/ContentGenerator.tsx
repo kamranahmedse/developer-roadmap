@@ -21,6 +21,8 @@ import {
 } from './QuestionAnswerChat';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
+import { getUrlParams } from '../../lib/browser';
+import { useParams } from '../../hooks/use-params';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -28,10 +30,23 @@ export type AllowedFormat = (typeof allowedFormats)[number];
 export function ContentGenerator() {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const params = useParams<{ format: AllowedFormat }>();
 
   const toast = useToast();
   const [title, setTitle] = useState('');
   const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
+
+  useEffect(() => {
+    const isValidFormat = allowedFormats.find(
+      (format) => format.value === params.format,
+    );
+
+    if (isValidFormat) {
+      setSelectedFormat(isValidFormat.value);
+    } else {
+      setSelectedFormat('course');
+    }
+  }, [params.format]);
 
   // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
@@ -41,6 +56,14 @@ export function ContentGenerator() {
 
   const titleFieldId = useId();
   const fineTuneOptionsId = useId();
+
+  useEffect(() => {
+    const params = getUrlParams();
+    const format = params.format as AllowedFormat;
+    if (format && allowedFormats.includes(format)) {
+      setSelectedFormat(format);
+    }
+  }, []);
 
   const allowedFormats: {
     label: string;

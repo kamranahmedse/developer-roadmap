@@ -32,7 +32,7 @@ export function AIRoadmapCard(props: AIRoadmapCardProps) {
         </div>
 
         <div className="flex items-center gap-4 sm:gap-4">
-          <div className="hidden items-center text-xs text-gray-600 sm:flex">
+          <div className="items-center text-xs text-gray-600 flex">
             <CalendarIcon className="mr-1 h-3.5 w-3.5" />
             <span>{updatedAgo}</span>
           </div>
