@@ -65,7 +65,7 @@ question:
 
     With curiosity and practice, anyone can start exploring the world of Data Science.
 seo:
-  title: 'AI and Data Scientist Roadmap - roadmap.sh'
+  title: 'AI and Data Scientist Roadmap'
   description: 'Learn to become an AI and Data Scientist using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern AI and Data Science.'
   keywords:
     - 'ai and data scientist roadmap 2024'
