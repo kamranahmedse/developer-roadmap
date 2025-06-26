@@ -102,7 +102,12 @@ function CourseFeature(props: CourseFeatureProps) {
 
   return (
     <div>
-      <div className="flex items-center justify-between gap-2 px-5 py-3">
+      <div
+        className={cn(
+          'flex items-center justify-between gap-2 px-5 py-3',
+          !isExpanded && 'bg-zinc-900',
+        )}
+      >
         <div className="flex items-center gap-2">
           <Icon className="h-5 w-5 shrink-0 text-yellow-600" />
           <h3 className={cn('text-lg', isExpanded && 'text-zinc-200')}>
