@@ -1,49 +1,69 @@
 import {
   BookOpenIcon,
   FileTextIcon,
+  MapIcon,
   SparklesIcon,
   type LucideIcon,
 } from 'lucide-react';
-import { useEffect, useId, useState, type FormEvent } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { FormatItem } from './FormatItem';
-import { GuideOptions } from './GuideOptions';
-import { FineTuneCourse } from '../GenerateCourse/FineTuneCourse';
-import { CourseOptions } from './CourseOptions';
-import {
-  clearFineTuneData,
-  getCourseFineTuneData,
-  getLastSessionId,
-  storeFineTuneData,
-} from '../../lib/ai';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { useIsPaidUser } from '../../queries/billing';
+import {
+  clearQuestionAnswerChatMessages,
+  storeQuestionAnswerChatMessages,
+} from '../../lib/ai-questions';
+import {
+  QuestionAnswerChat,
+  type QuestionAnswerChatMessage,
+} from './QuestionAnswerChat';
+import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
+import { getUrlParams } from '../../lib/browser';
+import { useParams } from '../../hooks/use-params';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
-type AllowedFormat = (typeof allowedFormats)[number];
+export type AllowedFormat = (typeof allowedFormats)[number];
 
 export function ContentGenerator() {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const params = useParams<{ format: AllowedFormat }>();
 
+  const toast = useToast();
   const [title, setTitle] = useState('');
   const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
 
-  // guide options
-  const [depth, setDepth] = useState('essentials');
-  // course options
-  const [difficulty, setDifficulty] = useState('beginner');
+  useEffect(() => {
+    const isValidFormat = allowedFormats.find(
+      (format) => format.value === params.format,
+    );
 
-  // fine-tune options
+    if (isValidFormat) {
+      setSelectedFormat(isValidFormat.value);
+    } else {
+      setSelectedFormat('course');
+    }
+  }, [params.format]);
+
+  // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
-  const [about, setAbout] = useState('');
-  const [goal, setGoal] = useState('');
-  const [customInstructions, setCustomInstructions] = useState('');
+  const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
+    QuestionAnswerChatMessage[]
+  >([]);
 
   const titleFieldId = useId();
   const fineTuneOptionsId = useId();
+
+  useEffect(() => {
+    const params = getUrlParams();
+    const format = params.format as AllowedFormat;
+    if (format && allowedFormats.includes(format)) {
+      setSelectedFormat(format);
+    }
+  }, []);
 
   const allowedFormats: {
     label: string;
@@ -60,10 +80,14 @@ export function ContentGenerator() {
       icon: FileTextIcon,
       value: 'guide',
     },
+    {
+      label: 'Roadmap',
+      icon: MapIcon,
+      value: 'roadmap',
+    },
   ];
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     if (!isLoggedIn()) {
       showLoginPopup();
       return;
@@ -71,18 +95,17 @@ export function ContentGenerator() {
 
     let sessionId = '';
     if (showFineTuneOptions) {
-      clearFineTuneData();
-      sessionId = storeFineTuneData({
-        about,
-        goal,
-        customInstructions,
-      });
+      clearQuestionAnswerChatMessages();
+      sessionId = storeQuestionAnswerChatMessages(questionAnswerChatMessages);
     }
 
+    const trimmedTitle = title.trim();
     if (selectedFormat === 'course') {
-      window.location.href = `/ai/course?term=${encodeURIComponent(title)}&difficulty=${difficulty}&id=${sessionId}&format=${selectedFormat}`;
+      window.location.href = `/ai/course?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
     } else if (selectedFormat === 'guide') {
-      window.location.href = `/ai/guide?term=${encodeURIComponent(title)}&depth=${depth}&id=${sessionId}&format=${selectedFormat}`;
+      window.location.href = `/ai/guide?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
+    } else if (selectedFormat === 'roadmap') {
+      window.location.href = `/ai/roadmap?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
     }
   };
 
@@ -94,24 +117,11 @@ export function ContentGenerator() {
     });
   }, []);
 
-  useEffect(() => {
-    const lastSessionId = getLastSessionId();
-    if (!lastSessionId) {
-      return;
-    }
-
-    const fineTuneData = getCourseFineTuneData(lastSessionId);
-    if (!fineTuneData) {
-      return;
-    }
-
-    setAbout(fineTuneData.about);
-    setGoal(fineTuneData.goal);
-    setCustomInstructions(fineTuneData.customInstructions);
-  }, []);
+  const trimmedTitle = title.trim();
+  const canGenerate = trimmedTitle && trimmedTitle.length >= 3;
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-4">
+    <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-28 lg:pb-24">
       <div className="relative">
         {isUpgradeModalOpen && (
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
@@ -135,7 +145,13 @@ export function ContentGenerator() {
         </p>
       </div>
 
-      <form className="mt-10 space-y-4" onSubmit={handleSubmit}>
+      <form
+        className="mt-10 space-y-4"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSubmit();
+        }}
+      >
         <div className="flex flex-col gap-2">
           <label htmlFor={titleFieldId} className="inline-block text-gray-500">
             What can I help you learn?
@@ -145,7 +161,10 @@ export function ContentGenerator() {
             id={titleFieldId}
             placeholder="Enter a topic"
             value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => {
+              setTitle(e.target.value);
+              setShowFineTuneOptions(false);
+            }}
             className="block w-full rounded-xl border border-gray-200 bg-white p-4 outline-none placeholder:text-gray-500 focus:border-gray-500"
             required
             minLength={3}
@@ -155,7 +174,7 @@ export function ContentGenerator() {
           <label className="inline-block text-gray-500">
             Choose the format
           </label>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             {allowedFormats.map((format) => {
               const isSelected = format.value === selectedFormat;
 
@@ -172,53 +191,52 @@ export function ContentGenerator() {
           </div>
         </div>
 
-        {selectedFormat === 'guide' && (
-          <GuideOptions depth={depth} setDepth={setDepth} />
-        )}
+        <label
+          className={cn(
+            'flex cursor-pointer items-center gap-2 rounded-xl border border-gray-200 bg-white p-4 transition-all',
+          )}
+          htmlFor={fineTuneOptionsId}
+        >
+          <input
+            type="checkbox"
+            id={fineTuneOptionsId}
+            checked={showFineTuneOptions}
+            onChange={(e) => {
+              if (!trimmedTitle) {
+                toast.error('Please enter a topic first');
+                return;
+              }
 
-        {selectedFormat === 'course' && (
-          <CourseOptions
-            difficulty={difficulty}
-            setDifficulty={setDifficulty}
+              if (trimmedTitle.length < 3) {
+                toast.error('Topic must be at least 3 characters long');
+                return;
+              }
+
+              setShowFineTuneOptions(e.target.checked);
+            }}
           />
-        )}
+          <span className="max-sm:hidden">
+            Answer the following questions for a better {selectedFormat}
+          </span>
+          <span className="sm:hidden">Customize your {selectedFormat}</span>
+        </label>
 
-        {selectedFormat !== 'roadmap' && (
-          <>
-            <label
-              className={cn(
-                'flex items-center gap-2 border border-gray-200 bg-white p-4',
-                showFineTuneOptions && 'rounded-t-xl',
-                !showFineTuneOptions && 'rounded-xl',
-              )}
-              htmlFor={fineTuneOptionsId}
-            >
-              <input
-                type="checkbox"
-                id={fineTuneOptionsId}
-                checked={showFineTuneOptions}
-                onChange={(e) => setShowFineTuneOptions(e.target.checked)}
-              />
-              Explain more for a better result
-            </label>
-            {showFineTuneOptions && (
-              <FineTuneCourse
-                hasFineTuneData={showFineTuneOptions}
-                about={about}
-                goal={goal}
-                customInstructions={customInstructions}
-                setAbout={setAbout}
-                setGoal={setGoal}
-                setCustomInstructions={setCustomInstructions}
-                className="-mt-4.5 overflow-hidden rounded-b-xl border border-gray-200 bg-white [&_div:first-child_label]:border-t-0"
-              />
-            )}
-          </>
+        {showFineTuneOptions && (
+          <QuestionAnswerChat
+            term={title}
+            format={selectedFormat}
+            questionAnswerChatMessages={questionAnswerChatMessages}
+            setQuestionAnswerChatMessages={setQuestionAnswerChatMessages}
+            onGenerateNow={() => {
+              handleSubmit();
+            }}
+          />
         )}
 
         <button
           type="submit"
-          className="flex w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none"
+          className="flex w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
+          disabled={!canGenerate}
         >
           <SparklesIcon className="size-4" />
           Generate

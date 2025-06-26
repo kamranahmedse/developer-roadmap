@@ -12,6 +12,7 @@ type AICourseOutlineHeaderProps = {
   setViewMode: (mode: AICourseViewMode) => void;
   isForkable: boolean;
   onForkCourse: () => void;
+  courseSlug: string;
 };
 
 export function AICourseOutlineHeader(props: AICourseOutlineHeaderProps) {
@@ -23,6 +24,7 @@ export function AICourseOutlineHeader(props: AICourseOutlineHeaderProps) {
     setViewMode,
     isForkable,
     onForkCourse,
+    courseSlug,
   } = props;
 
   return (
@@ -36,9 +38,6 @@ export function AICourseOutlineHeader(props: AICourseOutlineHeaderProps) {
         <h2 className="mb-1 text-2xl font-bold text-balance max-lg:text-lg max-lg:leading-tight">
           {course.title || 'Loading course ..'}
         </h2>
-        <p className="text-sm text-gray-500 capitalize">
-          {course.title ? course.difficulty : 'Please wait ..'}
-        </p>
       </div>
 
       <div className="absolute top-3 right-3 flex gap-2 max-lg:relative max-lg:top-0 max-lg:right-0 max-lg:w-full max-lg:flex-row-reverse max-lg:justify-between">
@@ -48,6 +47,7 @@ export function AICourseOutlineHeader(props: AICourseOutlineHeaderProps) {
               onRegenerateOutline={onRegenerateOutline}
               isForkable={isForkable}
               onForkCourse={onForkCourse}
+              courseSlug={courseSlug}
             />
             <div className="mr-1 flex rounded-lg border border-gray-200 bg-white p-0.5">
               <button

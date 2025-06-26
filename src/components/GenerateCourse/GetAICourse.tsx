@@ -59,7 +59,6 @@ export function GetAICourse(props: GetAICourseProps) {
 
     await generateCourse({
       term: aiCourse.keyword,
-      difficulty: aiCourse.difficulty,
       slug: courseSlug,
       prompt,
       onCourseChange: (course, rawData) => {
@@ -68,7 +67,6 @@ export function GetAICourse(props: GetAICourseProps) {
           {
             ...aiCourse,
             title: course.title,
-            difficulty: course.difficulty,
             modules: course.modules,
           },
         );
@@ -89,7 +87,6 @@ export function GetAICourse(props: GetAICourseProps) {
       course={{
         title: aiCourse?.title || '',
         modules: aiCourse?.modules || [],
-        difficulty: aiCourse?.difficulty || 'Easy',
         done: aiCourse?.done || [],
       }}
       isLoading={isLoading || isRegenerating}

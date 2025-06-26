@@ -1,9 +1,11 @@
 import {
   useCallback,
   useEffect,
+  useImperativeHandle,
   useLayoutEffect,
   useRef,
   useState,
+  type RefObject,
 } from 'react';
 import { useChat, type ChatMessage } from '../../hooks/use-chat';
 import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
@@ -28,24 +30,21 @@ import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { LoadingChip } from '../LoadingChip';
 import { getTailwindScreenDimension } from '../../lib/is-mobile';
+import { useToast } from '../../hooks/use-toast';
+import type { AIRoadmapChatActions } from './AIRoadmap';
+import type { RoadmapNodeDetails } from './AIRoadmapContent';
 
-type AIGuideChatProps = {
-  guideSlug?: string;
-  isGuideLoading?: boolean;
+type AIRoadmapChatProps = {
+  roadmapSlug?: string;
+  isRoadmapLoading?: boolean;
   onUpgrade?: () => void;
-  isQuestionsLoading?: boolean;
-  randomQuestions?: string[];
+  aiChatActionsRef?: RefObject<AIRoadmapChatActions | null>;
 };
 
-export function AIGuideChat(props: AIGuideChatProps) {
-  const {
-    guideSlug,
-    isGuideLoading,
-    onUpgrade,
-    randomQuestions,
-    isQuestionsLoading,
-  } = props;
+export function AIRoadmapChat(props: AIRoadmapChatProps) {
+  const { roadmapSlug, isRoadmapLoading, onUpgrade, aiChatActionsRef } = props;
 
+  const toast = useToast();
   const scrollareaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -74,12 +73,13 @@ export function AIGuideChat(props: AIGuideChatProps) {
     setMessages,
     stop,
   } = useChat({
-    endpoint: `${import.meta.env.PUBLIC_API_URL}/v1-ai-guide-chat`,
+    endpoint: `${import.meta.env.PUBLIC_API_URL}/v1-ai-roadmap-chat`,
     onError: (error) => {
       console.error(error);
+      toast.error(error?.message || 'Something went wrong');
     },
     data: {
-      guideSlug,
+      aiRoadmapSlug: roadmapSlug,
     },
     onFinish: () => {
       refetchTokenUsage();
@@ -154,7 +154,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
   }, [checkScrollPosition]);
 
   const isLoading =
-    isGuideLoading || isTokenUsageLoading || isBillingDetailsLoading;
+    isRoadmapLoading || isTokenUsageLoading || isBillingDetailsLoading;
 
   useLayoutEffect(() => {
     const deviceType = getTailwindScreenDimension();
@@ -175,6 +175,12 @@ export function AIGuideChat(props: AIGuideChatProps) {
       localStorage.setItem('chat-history-sidebar-open', isChatOpen.toString());
     }
   }, [isChatOpen, isMobile]);
+
+  useImperativeHandle(aiChatActionsRef, () => ({
+    handleNodeClick: (node: RoadmapNodeDetails) => {
+      handleSubmitInput(`Explain what is "${node.nodeTitle}" topic in detail.`);
+    },
+  }));
 
   if (!isChatOpen) {
     return (
@@ -197,7 +203,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
       <div className="flex items-center justify-between gap-2 border-b border-gray-200 bg-white p-2">
         <h2 className="flex items-center gap-2 text-sm font-medium">
           <BotIcon className="h-4 w-4" />
-          AI Guide
+          AI Roadmap
         </h2>
 
         <button
@@ -227,41 +233,6 @@ export function AIGuideChat(props: AIGuideChatProps) {
                     html="Hello, how can I help you today?"
                     isIntro
                   />
-                  {isQuestionsLoading && (
-                    <div className="flex flex-col gap-2">
-                      {[1, 2, 3, 4].map((i) => (
-                        <div
-                          key={i}
-                          className="h-[48px] w-full animate-pulse rounded-lg bg-gray-200"
-                        ></div>
-                      ))}
-                    </div>
-                  )}
-                  {!isQuestionsLoading &&
-                    randomQuestions &&
-                    randomQuestions.length > 0 &&
-                    messages.length === 0 && (
-                      <div className="space-y-2">
-                        <p className="mb-2 text-xs font-normal text-gray-500">
-                          Some questions you might have about this lesson.
-                        </p>
-                        <div className="space-y-1">
-                          {randomQuestions?.map((question) => {
-                            return (
-                              <button
-                                key={`chat-${question}`}
-                                className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
-                                onClick={() => {
-                                  handleSubmitInput(question);
-                                }}
-                              >
-                                {question}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    )}
 
                   {messages.map((chat, index) => {
                     return (
@@ -366,7 +337,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
                   handleSubmitInput();
                 }
               }}
-              placeholder="Ask me anything about this guide..."
+              placeholder="Ask me anything about this roadmap..."
               className="w-full resize-none px-3 py-4 outline-none"
             />
 

@@ -256,12 +256,14 @@ export function AICourseContent(props: AICourseContentProps) {
             </span>
           </a>
           <div className="flex items-center gap-2">
-            <div className="flex flex-row lg:hidden">
-              <AICourseLimit
-                onUpgrade={() => setShowUpgradeModal(true)}
-                onShowLimits={() => setShowAILimitsPopup(true)}
-              />
-            </div>
+            {!isLoading && (
+              <div className="flex flex-row lg:hidden">
+                <AICourseLimit
+                  onUpgrade={() => setShowUpgradeModal(true)}
+                  onShowLimits={() => setShowAILimitsPopup(true)}
+                />
+              </div>
+            )}
 
             {viewMode === 'module' && (
               <button
@@ -326,14 +328,16 @@ export function AICourseContent(props: AICourseContentProps) {
             </div>
           </div>
         </div>
-        <div className="flex gap-2">
-          <div className="hidden gap-2 lg:flex">
-            <AICourseLimit
-              onUpgrade={() => setShowUpgradeModal(true)}
-              onShowLimits={() => setShowAILimitsPopup(true)}
-            />
+        {!isLoading && (
+          <div className="flex gap-2">
+            <div className="hidden gap-2 lg:flex">
+              <AICourseLimit
+                onUpgrade={() => setShowUpgradeModal(true)}
+                onShowLimits={() => setShowAILimitsPopup(true)}
+              />
+            </div>
           </div>
-        </div>
+        )}
       </header>
 
       <div className="flex flex-1 overflow-hidden">
@@ -499,6 +503,7 @@ export function AICourseContent(props: AICourseContentProps) {
               onForkCourse={() => {
                 setIsForkingCourse(true);
               }}
+              courseSlug={courseSlug!}
             />
           )}
 

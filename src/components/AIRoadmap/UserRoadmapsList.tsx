@@ -2,39 +2,37 @@ import { useQuery } from '@tanstack/react-query';
 import { BookOpen, Loader2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
-import {
-  listUserAiCoursesOptions,
-  type ListUserAiCoursesQuery,
-} from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { AITutorTallMessage } from '../AITutor/AITutorTallMessage';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { Pagination } from '../Pagination/Pagination';
-import { AICourseCard } from './AICourseCard';
-import { AICourseSearch } from './AICourseSearch';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { AICourseSearch } from '../GenerateCourse/AICourseSearch';
+import {
+  listUserAiRoadmapsOptions,
+  type ListUserAiRoadmapsQuery,
+} from '../../queries/ai-roadmap';
+import { AIRoadmapCard } from './AIRoadmapCard';
 
-export function UserCoursesList() {
+export function UserRoadmapsList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
   const [showUpgradePopup, setShowUpgradePopup] = useState(false);
 
-  const [pageState, setPageState] = useState<ListUserAiCoursesQuery>({
+  const [pageState, setPageState] = useState<ListUserAiRoadmapsQuery>({
     perPage: '21',
     currPage: '1',
     query: '',
   });
 
-  const { data: userAiCourses, isFetching: isUserAiCoursesLoading } = useQuery(
-    listUserAiCoursesOptions(pageState),
-    queryClient,
-  );
+  const { data: userAiRoadmaps, isFetching: isUserAiRoadmapsLoading } =
+    useQuery(listUserAiRoadmapsOptions(pageState), queryClient);
 
   useEffect(() => {
     setIsInitialLoading(false);
-  }, [userAiCourses]);
+  }, [userAiRoadmaps]);
 
-  const courses = userAiCourses?.data ?? [];
+  const roadmaps = userAiRoadmaps?.data ?? [];
 
   useEffect(() => {
     const queryParams = getUrlParams();
@@ -59,7 +57,7 @@ export function UserCoursesList() {
   }, [pageState]);
 
   const isUserAuthenticated = isLoggedIn();
-  const isAnyLoading = isUserAiCoursesLoading || isInitialLoading;
+  const isAnyLoading = isUserAiRoadmapsLoading || isInitialLoading;
 
   return (
     <>
@@ -76,6 +74,7 @@ export function UserCoursesList() {
             currPage: '1',
           });
         }}
+        placeholder="Search Roadmaps..."
         disabled={isAnyLoading}
       />
 
@@ -90,21 +89,23 @@ export function UserCoursesList() {
         <>
           <p className="mb-4 text-sm text-gray-500">
             {isUserAuthenticated
-              ? `You have generated ${userAiCourses?.totalCount} courses so far.`
-              : 'Sign up or login to generate your first course. Takes 2s to do so.'}
+              ? `You have generated ${userAiRoadmaps?.totalCount} roadmaps so far.`
+              : 'Sign up or login to generate your first roadmap. Takes 2s to do so.'}
           </p>
 
-          {isUserAuthenticated && !isAnyLoading && courses.length > 0 && (
-            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
-              {courses.map((course) => (
-                <AICourseCard variant="column" key={course._id} course={course} />
-              ))}
+          {isUserAuthenticated && !isAnyLoading && roadmaps.length > 0 && (
+            <div className="flex flex-col gap-2">
+              <div className="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3">
+                {roadmaps.map((roadmap) => (
+                  <AIRoadmapCard variant="column" key={roadmap._id} roadmap={roadmap} />
+                ))}
+              </div>
 
               <Pagination
-                totalCount={userAiCourses?.totalCount || 0}
-                totalPages={userAiCourses?.totalPages || 0}
-                currPage={Number(userAiCourses?.currPage || 1)}
-                perPage={Number(userAiCourses?.perPage || 10)}
+                totalCount={userAiRoadmaps?.totalCount || 0}
+                totalPages={userAiRoadmaps?.totalPages || 0}
+                currPage={Number(userAiRoadmaps?.currPage || 1)}
+                perPage={Number(userAiRoadmaps?.perPage || 10)}
                 onPageChange={(page) => {
                   setPageState({ ...pageState, currPage: String(page) });
                 }}
@@ -113,20 +114,20 @@ export function UserCoursesList() {
             </div>
           )}
 
-          {!isAnyLoading && courses.length === 0 && (
+          {!isAnyLoading && roadmaps.length === 0 && (
             <AITutorTallMessage
               title={
-                isUserAuthenticated ? 'No courses found' : 'Sign up or login'
+                isUserAuthenticated ? 'No roadmaps found' : 'Sign up or login'
               }
               subtitle={
                 isUserAuthenticated
-                  ? "You haven't generated any courses yet."
-                  : 'Takes 2s to sign up and generate your first course.'
+                  ? "You haven't generated any roadmaps yet."
+                  : 'Takes 2s to sign up and generate your first roadmap.'
               }
               icon={BookOpen}
               buttonText={
                 isUserAuthenticated
-                  ? 'Create your first course'
+                  ? 'Create your first roadmap'
                   : 'Sign up or login'
               }
               onButtonClick={() => {

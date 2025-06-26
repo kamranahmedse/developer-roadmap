@@ -1,6 +1,7 @@
 import { httpGet } from '../lib/query-http';
 import { isLoggedIn } from '../lib/jwt';
 import { queryOptions } from '@tanstack/react-query';
+import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
 
 export interface AICourseProgressDocument {
   _id: string;
@@ -30,6 +31,7 @@ export interface AICourseDocument {
   difficulty: string;
   modules: AICourseModule[];
   viewCount: number;
+  questionAndAnswers?: QuestionAnswerChatMessage[];
   createdAt: Date;
   updatedAt: Date;
 }
@@ -45,6 +47,7 @@ export function getAiCourseOptions(params: GetAICourseParams) {
       );
     },
     enabled: !!params.aiCourseSlug,
+    refetchOnMount: false,
   };
 }
 

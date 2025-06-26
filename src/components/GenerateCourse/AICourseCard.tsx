@@ -46,15 +46,24 @@ export function AICourseCard(props: AICourseCardProps) {
       >
         {/* Title and difficulty section */}
         <div className="min-w-0 flex-1">
-          <div className="mb-1 flex items-center gap-2">
-            <span
-              className={`rounded-full text-xs font-medium capitalize opacity-80 ${difficultyColor}`}
-            >
-              {course.difficulty}
-            </span>
-          </div>
+          {course.difficulty && (
+            <div className="mb-1 flex items-center gap-2">
+              <span
+                className={`rounded-full text-xs font-medium capitalize opacity-80 ${difficultyColor}`}
+              >
+                {course.difficulty}
+              </span>
+            </div>
+          )}
 
-          <h3 className="line-clamp-2 text-base font-semibold text-balance text-gray-900">
+          <h3
+            className={cn(
+              'line-clamp-2 text-base font-semibold text-balance text-gray-900',
+              {
+                'max-w-[95%]': variant === 'column',
+              },
+            )}
+          >
             {course.title
               ?.replace(": A Beginner's Guide", '')
               ?.replace(' for beginners', '')

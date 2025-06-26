@@ -2,15 +2,17 @@ import './AIGuideContent.css';
 import { AIGuideRegenerate } from './AIGuideRegenerate';
 import { cn } from '../../lib/classname';
 import { LoadingChip } from '../LoadingChip';
+import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnswerChat';
 
 type AIGuideContentProps = {
   html: string;
   onRegenerate?: (prompt?: string) => void;
   isLoading?: boolean;
+  guideSlug?: string;
 };
 
 export function AIGuideContent(props: AIGuideContentProps) {
-  const { html, onRegenerate, isLoading } = props;
+  const { html, onRegenerate, isLoading, guideSlug } = props;
 
   return (
     <div
@@ -30,9 +32,12 @@ export function AIGuideContent(props: AIGuideContentProps) {
         </div>
       )}
 
-      {onRegenerate && !isLoading && (
+      {onRegenerate && !isLoading && guideSlug && (
         <div className="absolute top-4 right-4">
-          <AIGuideRegenerate onRegenerate={onRegenerate} />
+          <AIGuideRegenerate
+            onRegenerate={onRegenerate}
+            guideSlug={guideSlug}
+          />
         </div>
       )}
     </div>

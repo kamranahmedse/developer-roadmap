@@ -1,29 +1,27 @@
 import { useEffect, useRef, useState } from 'react';
-import { generateGuide } from '../../helper/generate-ai-guide';
-import { getCourseFineTuneData } from '../../lib/ai';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
-import { AIGuideContent } from './AIGuideContent';
 import { queryClient } from '../../stores/query-client';
-import { getAiGuideOptions } from '../../queries/ai-guide';
 import { LoadingChip } from '../LoadingChip';
 import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnswerChat';
 import { getQuestionAnswerChatMessages } from '../../lib/ai-questions';
+import { aiRoadmapOptions, generateAIRoadmap } from '../../queries/ai-roadmap';
+import { AIRoadmapContent } from './AIRoadmapContent';
 
-type GenerateAIGuideProps = {
-  onGuideSlugChange?: (guideSlug: string) => void;
+type GenerateAIRoadmapProps = {
+  onRoadmapSlugChange?: (roadmapSlug: string) => void;
 };
 
-export function GenerateAIGuide(props: GenerateAIGuideProps) {
-  const { onGuideSlugChange } = props;
+export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
+  const { onRoadmapSlugChange } = props;
 
   const [isLoading, setIsLoading] = useState(true);
   const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState('');
 
+  const [svgHtml, setSvgHtml] = useState('');
   const [content, setContent] = useState('');
-  const [html, setHtml] = useState('');
-  const htmlRef = useRef<string>('');
+  const svgRef = useRef<string | null>(null);
 
   useEffect(() => {
     const params = getUrlParams();
@@ -60,52 +58,44 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
       return;
     }
 
-    await generateGuide({
+    await generateAIRoadmap({
       term,
+      isForce,
+      prompt,
+      questionAndAnswers,
       onDetailsChange: (details) => {
-        const { guideId, guideSlug, creatorId, title } = details;
+        const { roadmapId, roadmapSlug, title, userId } = details;
 
-        const guideData = {
-          _id: guideId,
-          userId: creatorId,
+        const aiRoadmapData = {
+          _id: roadmapId,
+          userId,
           title,
-          html: htmlRef.current,
-          keyword: term,
-          content,
-          tokens: {
-            prompt: 0,
-            completion: 0,
-            total: 0,
-          },
-          relatedTopics: [],
-          deepDiveTopics: [],
-          questions: [],
+          term,
+          data: content,
           questionAndAnswers,
           viewCount: 0,
+          svgHtml: svgRef.current || '',
           lastVisitedAt: new Date(),
           createdAt: new Date(),
           updatedAt: new Date(),
         };
 
         queryClient.setQueryData(
-          getAiGuideOptions(guideSlug).queryKey,
-          guideData,
+          aiRoadmapOptions(roadmapSlug).queryKey,
+          aiRoadmapData,
         );
 
-        onGuideSlugChange?.(guideSlug);
-        window.history.replaceState(null, '', `/ai/guide/${guideSlug}`);
+        onRoadmapSlugChange?.(roadmapSlug);
+        window.history.replaceState(null, '', `/ai-roadmaps/${roadmapSlug}`);
       },
       onLoadingChange: setIsLoading,
       onError: setError,
-      isForce,
-      prompt,
-      src,
-      questionAndAnswers,
-      onHtmlChange: (html) => {
-        htmlRef.current = html;
-        setHtml(html);
-      },
       onStreamingChange: setIsStreaming,
+      onRoadmapSvgChange: (svg) => {
+        const svgHtml = svg.outerHTML;
+        svgRef.current = svgHtml;
+        setSvgHtml(svgHtml);
+      },
     });
   };
 
@@ -121,5 +111,5 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
     );
   }
 
-  return <AIGuideContent html={html} />;
+  return <AIRoadmapContent isLoading={isLoading} svgHtml={svgHtml} />;
 }

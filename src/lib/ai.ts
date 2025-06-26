@@ -12,13 +12,10 @@ type Module = {
 export type AiCourse = {
   title: string;
   modules: Module[];
-  difficulty: string;
   done: string[];
 };
 
-export function generateAiCourseStructure(
-  data: string,
-): Omit<AiCourse, 'difficulty'> {
+export function generateAiCourseStructure(data: string): AiCourse {
   const lines = data.split('\n');
   let title = '';
   const modules: Module[] = [];

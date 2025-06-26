@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { ExternalLink } from 'lucide-react';
+import { AlertCircleIcon, ExternalLink } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { generateGuide } from '../../helper/generate-ai-guide';
@@ -16,6 +16,9 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AIGuideChat } from './AIGuideChat';
 import { AIGuideContent } from './AIGuideContent';
 import { GenerateAIGuide } from './GenerateAIGuide';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { billingDetailsOptions } from '../../queries/billing';
+import { showLoginPopup } from '../../lib/popup';
 
 type AIGuideProps = {
   guideSlug?: string;
@@ -32,10 +35,23 @@ export function AIGuide(props: AIGuideProps) {
 
   // only fetch the guide if the guideSlug is provided
   // otherwise we are still generating the guide
-  const { data: aiGuide, isLoading: isLoadingBySlug } = useQuery(
-    getAiGuideOptions(guideSlug),
-    queryClient,
-  );
+  const {
+    data: aiGuide,
+    isLoading: isLoadingBySlug,
+    error: aiGuideError,
+  } = useQuery(getAiGuideOptions(guideSlug), queryClient);
+
+  const {
+    data: tokenUsage,
+    isLoading: isTokenUsageLoading,
+    refetch: refetchTokenUsage,
+  } = useQuery(getAiCourseLimitOptions(), queryClient);
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   const { data: aiGuideSuggestions, isLoading: isAiGuideSuggestionsLoading } =
     useQuery(
@@ -57,6 +73,16 @@ export function AIGuide(props: AIGuideProps) {
   }, [aiGuideSuggestions]);
 
   const handleRegenerate = async (prompt?: string) => {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
+    if (!isPaidUser && isLimitExceeded) {
+      setShowUpgradeModal(true);
+      return;
+    }
+
     flushSync(() => {
       setIsRegenerating(true);
       setRegeneratedHtml(null);
@@ -78,7 +104,6 @@ export function AIGuide(props: AIGuideProps) {
     await generateGuide({
       slug: aiGuide?.slug || '',
       term: aiGuide?.keyword || '',
-      depth: aiGuide?.depth || '',
       prompt,
       onStreamingChange: setIsRegenerating,
       onHtmlChange: setRegeneratedHtml,
@@ -93,24 +118,44 @@ export function AIGuide(props: AIGuideProps) {
     });
   };
 
+  const isLoading =
+    isLoadingBySlug ||
+    isRegenerating ||
+    isTokenUsageLoading ||
+    isBillingDetailsLoading;
+
   return (
     <AITutorLayout
-      wrapperClassName="flex-row p-0 lg:p-0 overflow-hidden bg-white"
+      wrapperClassName="flex-row p-0 lg:p-0 relative overflow-hidden bg-white"
       containerClassName="h-[calc(100vh-49px)] overflow-hidden relative"
     >
       {showUpgradeModal && (
         <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
       )}
 
+      {!isLoading && aiGuideError && (
+        <div className="absolute inset-0 z-10 flex h-full flex-col items-center justify-center bg-white">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <AlertCircleIcon className="size-10 text-gray-500" />
+            <p className="text-center">
+              {aiGuideError?.message || 'Something went wrong'}
+            </p>
+          </div>
+        </div>
+      )}
+
       <div className="grow overflow-y-auto p-4 pt-0">
-        {guideSlug && (
+        {guideSlug && !aiGuideError && (
           <AIGuideContent
             html={regeneratedHtml || aiGuide?.html || ''}
             onRegenerate={handleRegenerate}
-            isLoading={isLoadingBySlug || isRegenerating}
+            isLoading={isLoading}
+            guideSlug={guideSlug}
           />
         )}
-        {!guideSlug && <GenerateAIGuide onGuideSlugChange={setGuideSlug} />}
+        {!guideSlug && !aiGuideError && (
+          <GenerateAIGuide onGuideSlugChange={setGuideSlug} />
+        )}
 
         {aiGuide && !isRegenerating && (
           <div className="mx-auto mt-12 mb-12 max-w-4xl">
