@@ -347,7 +347,7 @@ export function BuyButton(props: BuyButtonProps) {
         className={cn(
           'group relative inline-flex min-w-[220px] items-center justify-center overflow-hidden rounded-full bg-[rgb(168,85,247)] px-8 py-3 font-medium text-white transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] focus:outline-hidden',
           (isLoadingPricing || isCreatingCheckoutSession) &&
-            'striped-loader-yellow pointer-events-none bg-yellow-500',
+            'striped-loader pointer-events-none bg-[rgb(168,85,247)]',
         )}
       >
         {isLoadingPricing ? (

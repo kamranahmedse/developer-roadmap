@@ -24,6 +24,8 @@ import { CourseFeatures } from './CourseFeatures';
 import { MeetYourInstructor } from './MeetYourInstructor';
 import { SectionHeader } from './SectionHeader';
 import { ChapterRow } from './ChapterRow';
+import { BuyButton } from './BuyButton';
+import { FAQSection } from './FAQSection';
 
 type ChapterData = {
   icon: React.ReactNode;
@@ -316,6 +318,30 @@ export function SQLCourseVariantPage() {
             {sqlCourseChapters.map((chapter, index) => (
               <ChapterRow key={index} counter={index + 1} {...chapter} />
             ))}
+          </div>
+
+          <SectionHeader
+            title="Ready to master SQL?"
+            description="Start learning SQL queries risk-free with a 7-day money-back guarantee."
+            className="mt-8 md:mt-24"
+          />
+
+          <div className="mx-auto mt-8 w-full">
+            <BuyButton variant="floating" />
+          </div>
+
+          <FAQSection />
+
+          <div className="mx-auto mt-12 w-full max-w-3xl text-left md:mt-9">
+            <p className="flex flex-col items-center justify-center gap-2 text-sm md:flex-row md:gap-0">
+              <a href="/terms" target="_blank" className="text-zinc-500">
+                Terms of Use
+              </a>
+              <span className="mx-4 hidden md:block">&middot;</span>
+              <a href="/privacy" target="_blank" className="text-zinc-500">
+                Privacy Policy
+              </a>
+            </p>
           </div>
         </div>
       </div>
