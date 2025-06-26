@@ -65,6 +65,8 @@ export function CourseFeatures() {
     },
   ];
 
+  const [expandedFeatureIndex, setExpandedFeatureIndex] = useState<number>(0);
+
   return (
     <div>
       <SectionHeader
@@ -77,7 +79,8 @@ export function CourseFeatures() {
           <CourseFeature
             key={feature.title}
             {...feature}
-            isExpanded={index === 0}
+            isExpanded={expandedFeatureIndex === index}
+            onExpand={() => setExpandedFeatureIndex(index)}
           />
         ))}
       </div>
@@ -87,6 +90,7 @@ export function CourseFeatures() {
 
 type CourseFeatureProps = Feature & {
   isExpanded?: boolean;
+  onExpand?: () => void;
 };
 
 function CourseFeature(props: CourseFeatureProps) {
@@ -95,10 +99,9 @@ function CourseFeature(props: CourseFeatureProps) {
     description,
     icon: Icon,
     imgUrl,
-    isExpanded: isDefaultExpanded = false,
+    isExpanded,
+    onExpand,
   } = props;
-
-  const [isExpanded, setIsExpanded] = useState(isDefaultExpanded);
 
   return (
     <div>
@@ -115,16 +118,14 @@ function CourseFeature(props: CourseFeatureProps) {
           </h3>
         </div>
 
-        <button
-          className="text-zinc-400 hover:text-zinc-300"
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          {isExpanded ? (
-            <MinusIcon className="h-5 w-5" />
-          ) : (
+        {!isExpanded && (
+          <button
+            className="text-zinc-400 hover:text-zinc-300"
+            onClick={onExpand}
+          >
             <PlusIcon className="h-5 w-5" />
-          )}
-        </button>
+          </button>
+        )}
       </div>
 
       {isExpanded && (
