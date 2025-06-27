@@ -242,7 +242,7 @@ export const sqlCourseChapters: ChapterData[] = [
 export function SQLCourseVariantPage() {
   return (
     <>
-      <div className="relative flex grow flex-col items-center bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pt-3 pb-52 text-zinc-400 md:px-10 md:pt-8">
+      <div className="relative flex max-w-screen grow flex-col items-center overflow-hidden bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pt-3 pb-52 text-zinc-400 md:px-10 md:pt-8">
         <div className="mt-7 w-full max-w-5xl md:mt-20">
           <div className="relative">
             <Spotlight className="top-[-200px] left-[-170px]" fill="#EAB308" />

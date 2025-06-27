@@ -358,7 +358,7 @@ export function BuyButton(props: BuyButtonProps) {
           </span>
         ) : (
           <span className="relative flex items-center gap-2">
-            Start earning now - ${coursePricing?.regionalPrice}
+            Start learning now - ${coursePricing?.regionalPrice}
             <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
           </span>
         )}

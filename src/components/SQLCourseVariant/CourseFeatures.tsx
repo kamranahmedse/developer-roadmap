@@ -65,7 +65,9 @@ export function CourseFeatures() {
     },
   ];
 
-  const [expandedFeatureIndex, setExpandedFeatureIndex] = useState<number>(0);
+  const [expandedFeatureIndex, setExpandedFeatureIndex] = useState<
+    number | null
+  >(0);
 
   return (
     <div>
@@ -80,7 +82,11 @@ export function CourseFeatures() {
             key={feature.title}
             {...feature}
             isExpanded={expandedFeatureIndex === index}
-            onExpand={() => setExpandedFeatureIndex(index)}
+            onExpand={() =>
+              setExpandedFeatureIndex(
+                expandedFeatureIndex === index ? null : index,
+              )
+            }
           />
         ))}
       </div>
@@ -105,11 +111,12 @@ function CourseFeature(props: CourseFeatureProps) {
 
   return (
     <div>
-      <div
+      <button
         className={cn(
-          'flex items-center justify-between gap-2 px-5 py-3',
+          'flex w-full items-center justify-between gap-2 px-5 py-3 hover:bg-transparent',
           !isExpanded && 'bg-zinc-900',
         )}
+        onClick={onExpand}
       >
         <div className="flex items-center gap-2">
           <Icon className="h-5 w-5 shrink-0 text-yellow-600" />
@@ -118,20 +125,23 @@ function CourseFeature(props: CourseFeatureProps) {
           </h3>
         </div>
 
-        {!isExpanded && (
-          <button
-            className="text-zinc-400 hover:text-zinc-300"
-            onClick={onExpand}
-          >
+        <div className="text-zinc-400 hover:text-zinc-300">
+          {isExpanded ? (
+            <MinusIcon className="h-5 w-5" />
+          ) : (
             <PlusIcon className="h-5 w-5" />
-          </button>
-        )}
-      </div>
+          )}
+        </div>
+      </button>
 
       {isExpanded && (
-        <div className="grid grid-cols-2 gap-4 px-5 py-3">
+        <div className="grid gap-4 px-5 py-3 sm:grid-cols-2">
           <p className="text-lg text-balance text-white">{description}</p>
-          <img src={imgUrl} alt={title} className="h-full w-full rounded-lg" />
+          <img
+            src={imgUrl}
+            alt={title}
+            className="-order-1 h-full w-full rounded-lg sm:order-2"
+          />
         </div>
       )}
     </div>

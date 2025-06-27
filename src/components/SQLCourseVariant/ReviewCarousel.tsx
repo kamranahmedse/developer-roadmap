@@ -141,8 +141,10 @@ export function ReviewCarousel() {
     const size = getTailwindScreenDimension();
     if (size === 'xl' || size === '2xl') {
       setBatchSize(3);
-    } else {
+    } else if (size === 'lg' || size === 'md') {
       setBatchSize(2);
+    } else {
+      setBatchSize(1);
     }
   }, []);
 
@@ -175,13 +177,14 @@ export function ReviewCarousel() {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-3">
           {currentBatch.map((review, index) => (
             <div
               key={index}
               className={cn(
                 'review-testimonial relative overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70',
                 index === 2 && batchSize === 3 && 'hidden xl:block',
+                index === 1 && batchSize === 3 && 'hidden md:block',
               )}
             >
               <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-yellow-500/5" />
