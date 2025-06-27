@@ -17,11 +17,15 @@ type Review = {
   avatarUrl?: string;
   isProminent?: boolean;
   isSecondaryProminent?: boolean;
+  companyName?: string;
+  companyLogo?: string;
 };
 
 export function ReviewCarousel() {
   const reviews: Review[] = [
     {
+      companyName: 'roadmapsh.sh',
+      companyLogo: 'https://roadmap.sh/images/brand.png',
       name: 'Robin Wieruch',
       role: 'Author - Multiple best-selling books',
       rating: 5,
@@ -34,6 +38,8 @@ export function ReviewCarousel() {
       isProminent: true,
     },
     {
+      companyName: 'Maily',
+      companyLogo: 'https://maily.to/brand/logo.png',
       name: 'William Imoh',
       role: 'Founder and Data Enthusiast',
       rating: 5,
@@ -45,6 +51,8 @@ export function ReviewCarousel() {
       isProminent: true,
     },
     {
+      companyName: 'roadmapsh.sh',
+      companyLogo: 'https://roadmap.sh/images/brand.png',
       name: 'Tomáš Janků',
       role: 'Software Engineer',
       rating: 5,
@@ -139,9 +147,10 @@ export function ReviewCarousel() {
 
   useLayoutEffect(() => {
     const size = getTailwindScreenDimension();
-    if (size === 'xl' || size === '2xl') {
+
+    if (size === '2xl') {
       setBatchSize(3);
-    } else if (size === 'lg' || size === 'md') {
+    } else if (size === 'xl' || size === 'lg') {
       setBatchSize(2);
     } else {
       setBatchSize(1);
@@ -188,7 +197,37 @@ export function ReviewCarousel() {
               )}
             >
               <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-yellow-500/5" />
-              <div className="flex items-center gap-4">
+              {review?.companyName && (
+                <div className="mb-4 flex items-center gap-3">
+                  {review?.companyLogo && (
+                    <img
+                      src={review?.companyLogo}
+                      alt={review?.companyName}
+                      className="h-10 w-10 rounded-lg border border-yellow-500/20 object-cover"
+                    />
+                  )}
+
+                  <div className="text-lg font-medium text-zinc-200">
+                    {review?.companyName}
+                  </div>
+                </div>
+              )}
+
+              <div className="flex flex-col gap-3">
+                {(typeof review.text === 'string'
+                  ? [review.text]
+                  : review.text
+                ).map((text, index) => (
+                  <p
+                    key={index}
+                    className="text-zinc-400 [&_strong]:font-semibold! [&_strong]:text-white!"
+                    dangerouslySetInnerHTML={{
+                      __html: markdownToHtml(text),
+                    }}
+                  />
+                ))}
+              </div>
+              <div className="mt-4 flex items-center gap-4">
                 {review.avatarUrl && (
                   <img
                     src={review.avatarUrl}
@@ -215,20 +254,6 @@ export function ReviewCarousel() {
                     ))}
                   </div>
                 </div>
-              </div>
-              <div className="mt-4 flex flex-col gap-3">
-                {(typeof review.text === 'string'
-                  ? [review.text]
-                  : review.text
-                ).map((text, index) => (
-                  <p
-                    key={index}
-                    className="text-zinc-400 [&_strong]:font-semibold! [&_strong]:text-white!"
-                    dangerouslySetInnerHTML={{
-                      __html: markdownToHtml(text),
-                    }}
-                  />
-                ))}
               </div>
             </div>
           ))}
