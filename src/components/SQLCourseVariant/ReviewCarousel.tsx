@@ -4,8 +4,10 @@ import {
   StarIcon,
   User2Icon,
 } from 'lucide-react';
-import { useState } from 'react';
+import { useLayoutEffect, useMemo, useState } from 'react';
 import { markdownToHtml } from '../../lib/markdown';
+import { getTailwindScreenDimension } from '../../lib/is-mobile';
+import { cn } from '../../lib/classname';
 
 type Review = {
   name: string;
@@ -107,14 +109,23 @@ export function ReviewCarousel() {
     },
   ];
 
-  const batchSize = 2;
+  const [batchSize, setBatchSize] = useState(3);
   const maxBatchNumber = Math.ceil(reviews.length / batchSize);
   const [currentBatchNumber, setCurrentBatchNumber] = useState(0);
 
-  const currentBatch = reviews.slice(
-    currentBatchNumber * batchSize,
-    (currentBatchNumber + 1) * batchSize,
-  );
+  const currentBatch = useMemo(() => {
+    const result = reviews.slice(
+      currentBatchNumber * batchSize,
+      (currentBatchNumber + 1) * batchSize,
+    );
+
+    if (result.length < batchSize) {
+      const remaining = batchSize - result.length;
+      return [...result, ...reviews.slice(0, remaining)];
+    }
+
+    return result;
+  }, [currentBatchNumber, batchSize]);
 
   const handleNextBatch = () => {
     setCurrentBatchNumber((prev) => (prev + 1) % maxBatchNumber);
@@ -126,27 +137,52 @@ export function ReviewCarousel() {
     );
   };
 
+  useLayoutEffect(() => {
+    const size = getTailwindScreenDimension();
+    if (size === 'xl' || size === '2xl') {
+      setBatchSize(3);
+    } else {
+      setBatchSize(2);
+    }
+  }, []);
+
   return (
     <div className="mt-24">
       <h3 className="text-center text-2xl font-medium text-zinc-200 md:text-3xl">
         What other learners said
       </h3>
 
-      <div className="mt-10 flex gap-4">
-        <div className="flex shrink-0 flex-col items-center justify-center">
-          <button
+      <div className="mt-10 mb-6 flex items-center justify-end gap-2 xl:hidden">
+        <NavigateButton
+          onClick={handlePreviousBatch}
+          icon={<ChevronLeftIcon className="h-4 w-4 stroke-[2.5] text-white" />}
+        />
+        <NavigateButton
+          onClick={handleNextBatch}
+          icon={
+            <ChevronRightIcon className="h-4 w-4 stroke-[2.5] text-white" />
+          }
+        />
+      </div>
+
+      <div className="relative mt-0 flex gap-4 xl:mt-10">
+        <div className="absolute inset-y-0 -left-2 hidden shrink-0 -translate-x-full flex-col items-center justify-center xl:flex">
+          <NavigateButton
             onClick={handlePreviousBatch}
-            className="flex items-center justify-center rounded-full bg-zinc-800 p-2 hover:bg-zinc-700"
-          >
-            <ChevronLeftIcon className="h-6 w-6 stroke-[2.5] text-white" />
-          </button>
+            icon={
+              <ChevronLeftIcon className="h-5 w-5 stroke-[2.5] text-white" />
+            }
+          />
         </div>
 
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-2 xl:grid-cols-3">
           {currentBatch.map((review, index) => (
             <div
               key={index}
-              className="review-testimonial relative overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70"
+              className={cn(
+                'review-testimonial relative overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70',
+                index === 2 && batchSize === 3 && 'hidden xl:block',
+              )}
             >
               <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-yellow-500/5" />
               <div className="flex items-center gap-4">
@@ -195,15 +231,33 @@ export function ReviewCarousel() {
           ))}
         </div>
 
-        <div className="flex shrink-0 flex-col items-center justify-center">
-          <button
+        <div className="absolute inset-y-0 -right-2 hidden shrink-0 translate-x-full flex-col items-center justify-center xl:flex">
+          <NavigateButton
             onClick={handleNextBatch}
-            className="flex items-center justify-center rounded-full bg-zinc-800 p-2 hover:bg-zinc-700"
-          >
-            <ChevronRightIcon className="h-6 w-6 stroke-[2.5] text-white" />
-          </button>
+            icon={
+              <ChevronRightIcon className="h-5 w-5 stroke-[2.5] text-white" />
+            }
+          />
         </div>
       </div>
     </div>
+  );
+}
+
+type NavigateButtonProps = {
+  onClick: () => void;
+  icon: React.ReactNode;
+};
+
+function NavigateButton(props: NavigateButtonProps) {
+  const { onClick, icon } = props;
+
+  return (
+    <button
+      onClick={onClick}
+      className="flex items-center justify-center rounded-full bg-zinc-800 p-2 hover:bg-zinc-700"
+    >
+      {icon}
+    </button>
   );
 }
