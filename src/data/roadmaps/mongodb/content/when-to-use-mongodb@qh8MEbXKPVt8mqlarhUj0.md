@@ -1,1 +1,3 @@
 # When to use MongoDB?
+
+MongoDB is ideal for applications that require flexible schema design, rapid development cycles, and need to handle large volumes of unstructured or semi-structured data. It's particularly well-suited for content management systems, real-time analytics, IoT applications, mobile app backends, and scenarios where you need to scale horizontally across multiple servers, making it an excellent choice when your data model is likely to evolve frequently or when you're dealing with complex nested data structures that don't fit well into traditional relational database tables.

@@ -1,1 +1,3 @@
 # MongoDB Audit
+
+MongoDB Audit is a security feature that enables comprehensive logging and monitoring of database activities, including authentication attempts, authorization failures, CRUD operations, and administrative actions. It provides detailed audit trails that track who accessed what data, when operations occurred, and whether they succeeded or failed, which is essential for compliance with regulatory requirements like GDPR, HIPAA, or SOX, and helps organizations detect suspicious activities, investigate security incidents, and maintain accountability in their database operations.
