@@ -149,7 +149,7 @@ export function ReviewCarousel() {
   }, []);
 
   return (
-    <div className="mt-24">
+    <div className="mx-auto mt-24 w-full max-w-5xl">
       <h3 className="text-center text-2xl font-medium text-zinc-200 md:text-3xl">
         What other learners said
       </h3>
@@ -184,7 +184,7 @@ export function ReviewCarousel() {
               className={cn(
                 'review-testimonial relative overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70',
                 index === 2 && batchSize === 3 && 'hidden xl:block',
-                index === 1 && batchSize === 3 && 'hidden md:block',
+                index === 1 && batchSize === 3 && 'hidden lg:block',
               )}
             >
               <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-yellow-500/5" />

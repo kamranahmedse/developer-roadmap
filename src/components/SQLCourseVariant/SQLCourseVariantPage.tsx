@@ -242,12 +242,12 @@ export const sqlCourseChapters: ChapterData[] = [
 export function SQLCourseVariantPage() {
   return (
     <>
-      <div className="relative flex max-w-screen grow flex-col items-center overflow-hidden bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pt-3 pb-52 text-zinc-400 md:px-10 md:pt-8">
-        <div className="mt-7 w-full max-w-5xl md:mt-20">
+      <div className="relative flex grow flex-col items-center bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pt-3 pb-52 text-zinc-400 md:px-10 md:pt-8">
+        <div className="mx-auto mt-7 w-full max-w-5xl md:mt-20">
           <div className="relative">
             <Spotlight className="top-[-200px] left-[-170px]" fill="#EAB308" />
 
-            <div className="flex flex-row items-center gap-5">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
               <a
                 href="https://roadmap.sh"
                 target="_blank"
@@ -256,7 +256,7 @@ export function SQLCourseVariantPage() {
                 <RoadmapLogoIcon className="size-18" />
               </a>
               <div className="flex flex-col items-start gap-2.5">
-                <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+                <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
                   Master SQL Queries
                 </h1>
                 <p className="text-left text-xl text-zinc-300 md:text-xl">
@@ -272,8 +272,8 @@ export function SQLCourseVariantPage() {
               7-day money-back guarantee.
             </p>
 
-            <div className="flex gap-14">
-              <div className="flex shrink-0 flex-col gap-3 text-lg">
+            <div className="flex flex-col-reverse gap-14 lg:flex-row">
+              <div className="hidden w-full shrink-0 flex-row-reverse items-start justify-between gap-3 text-lg md:flex lg:w-auto lg:flex-col">
                 <div className="flex flex-col gap-3">
                   <div className="flex flex-row items-center gap-2">
                     <ClipboardIcon className="size-6 text-yellow-600" />

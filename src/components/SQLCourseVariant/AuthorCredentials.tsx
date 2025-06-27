@@ -2,7 +2,7 @@ import { AwardIcon } from 'lucide-react';
 
 export function AuthorCredentials() {
   return (
-    <div className="mt-auto flex gap-4 text-sm text-white">
+    <div className="flex gap-4 text-sm text-white lg:mt-auto">
       <div className="flex items-center gap-4">
         <img
           src="https://assets.roadmap.sh/guest/kamran-lqjta.jpeg"
