@@ -1,0 +1,3 @@
+# Collection Methods
+
+Collection methods in MongoDB provide comprehensive operations for data manipulation including CRUD operations (find, insert, update, delete), index management, and administrative functions. Key methods include createIndex(), drop(), count(), distinct(), and bulkWrite() for batch operations. These methods offer flexible options for data processing, schema validation, and collection maintenance.

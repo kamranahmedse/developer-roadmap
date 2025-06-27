@@ -1,0 +1,3 @@
+# Performance Optimization
+
+Performance optimization in MongoDB involves proper indexing strategies, query optimization, schema design, and hardware configuration. Key techniques include creating appropriate indexes, using explain plans, optimizing aggregation pipelines, proper sharding strategies, and connection pooling. Regular monitoring of query performance, index usage, and database metrics helps identify bottlenecks and improve overall system efficiency.

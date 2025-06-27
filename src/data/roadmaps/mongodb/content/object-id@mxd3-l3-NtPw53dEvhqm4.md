@@ -1,0 +1,3 @@
+# ObjectId
+
+ObjectId is MongoDB's default primary key type, consisting of a 12-byte identifier that includes timestamp, machine identifier, process ID, and counter components. It ensures uniqueness across distributed systems and provides automatic indexing. ObjectIds are automatically generated when documents are inserted without an explicit _id field, enabling efficient sorting by creation time and guaranteed uniqueness across collections.

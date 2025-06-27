@@ -1,0 +1,3 @@
+# Atlas Search Indexes
+
+Atlas Search indexes in MongoDB Atlas provide full-text search capabilities using Apache Lucene technology. They enable sophisticated text search with relevance scoring, autocomplete, faceted search, and synonyms. These indexes support complex search queries across multiple fields, fuzzy matching, and advanced text analysis features for building modern search experiences in applications.

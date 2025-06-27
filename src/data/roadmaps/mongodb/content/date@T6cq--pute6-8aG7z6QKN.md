@@ -1,0 +1,3 @@
+# Date
+
+Date data type in MongoDB stores timestamps as 64-bit integers representing milliseconds since Unix epoch (January 1, 1970 UTC). Dates support range queries, sorting, and date arithmetic operations in aggregation pipelines. MongoDB automatically converts JavaScript Date objects and ISO date strings to BSON dates, providing timezone-aware date manipulation and efficient chronological data querying.

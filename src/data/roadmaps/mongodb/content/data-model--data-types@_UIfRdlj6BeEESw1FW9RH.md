@@ -1,0 +1,3 @@
+# Data Model & Data Types
+
+MongoDB uses a flexible document data model storing data in BSON format with rich data types including strings, numbers, dates, arrays, embedded documents, binary data, and ObjectIds. The schema-less design allows varying document structures within collections while maintaining query performance. Documents can contain nested objects and arrays, enabling complex data relationships without traditional table joins.

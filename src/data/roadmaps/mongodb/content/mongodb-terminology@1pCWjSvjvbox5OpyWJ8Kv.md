@@ -1,0 +1,3 @@
+# MongoDB Terminology
+
+MongoDB terminology includes key concepts: databases contain collections (equivalent to tables), which store documents (equivalent to rows) composed of field-value pairs. Other terms include indexes for performance optimization, replica sets for high availability, shards for horizontal scaling, aggregation pipelines for data processing, and ObjectIds for unique document identifiers. Understanding these terms is fundamental for MongoDB development.

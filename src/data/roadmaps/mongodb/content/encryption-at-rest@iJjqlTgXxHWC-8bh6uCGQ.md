@@ -1,0 +1,3 @@
+# Encryption at Rest
+
+Encryption at Rest in MongoDB protects data stored on disk by encrypting database files, indexes, and logs using industry-standard encryption algorithms. This security feature prevents unauthorized access to physical storage media and ensures compliance with data protection regulations. MongoDB supports both enterprise-grade WiredTiger storage engine encryption and file system-level encryption options.

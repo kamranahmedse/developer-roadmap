@@ -1,0 +1,3 @@
+# find() and Related Methods
+
+The find() method retrieves documents from MongoDB collections using query filters, projections, and modifiers. Related methods include findOne() for single documents, findOneAndUpdate() for atomic updates, findOneAndDelete() for atomic deletions, and cursor methods like limit(), skip(), sort() for result manipulation. These methods support complex queries with operators, field projections, and cursor iteration.

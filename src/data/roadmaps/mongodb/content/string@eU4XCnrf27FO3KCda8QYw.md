@@ -1,0 +1,3 @@
+# String
+
+String data type in MongoDB stores UTF-8 encoded text data with no length restrictions within document size limits. Strings support text indexing for search capabilities, regex pattern matching, and various string manipulation operations in aggregation pipelines. MongoDB strings are case-sensitive by default but support collation options for case-insensitive comparisons and locale-specific sorting requirements.

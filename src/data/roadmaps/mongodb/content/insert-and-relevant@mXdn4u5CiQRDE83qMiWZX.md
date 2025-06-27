@@ -1,0 +1,3 @@
+# insert() and Related Methods
+
+Insert operations add new documents to MongoDB collections using insertOne() for single documents and insertMany() for multiple documents. These methods support options like ordered/unordered inserts, write concerns, and automatic ObjectId generation. MongoDB also provides legacy insert() method and supports upsert operations through update methods when documents don't exist.

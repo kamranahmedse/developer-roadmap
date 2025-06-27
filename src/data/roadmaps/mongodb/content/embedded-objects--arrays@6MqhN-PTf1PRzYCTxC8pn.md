@@ -1,0 +1,3 @@
+# Embedded Objects & Arrays
+
+Embedded objects and arrays in MongoDB enable storing related data within a single document, eliminating the need for separate collections and joins. This design pattern improves query performance and maintains data locality. Embedded structures support nested queries, array operations, and complex data relationships while maintaining document atomicity and enabling efficient retrieval of complete entities.

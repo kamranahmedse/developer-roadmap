@@ -1,0 +1,3 @@
+# x.509 Certificate Authentication
+
+x.509 certificate authentication in MongoDB provides secure, certificate-based client and cluster authentication without passwords. It uses public key infrastructure (PKI) for strong identity verification and supports both client authentication and internal cluster member authentication. This method offers enhanced security through certificate validation, expiration management, and integration with existing PKI infrastructures.

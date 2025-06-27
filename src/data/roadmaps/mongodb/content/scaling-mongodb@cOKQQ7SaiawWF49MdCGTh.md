@@ -1,0 +1,3 @@
+# Scaling MongoDB
+
+Scaling MongoDB involves vertical scaling (upgrading hardware) and horizontal scaling through sharding and replica sets. Horizontal scaling distributes data across multiple servers using shard keys, while replica sets provide high availability and read scaling. Effective scaling strategies include proper shard key selection, monitoring performance metrics, and balancing data distribution for optimal throughput and reliability.

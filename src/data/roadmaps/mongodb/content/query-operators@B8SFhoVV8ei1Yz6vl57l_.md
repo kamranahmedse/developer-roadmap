@@ -1,0 +1,3 @@
+# Query Operators
+
+Query operators in MongoDB enable sophisticated document filtering and selection using comparison, logical, element, evaluation, and array operators. These include equality operators ($eq, $ne), comparison operators ($gt, $lt, $gte, $lte), logical operators ($and, $or, $not), and specialized operators for arrays ($in, $nin, $all) and existence checks ($exists), providing powerful and flexible querying capabilities.

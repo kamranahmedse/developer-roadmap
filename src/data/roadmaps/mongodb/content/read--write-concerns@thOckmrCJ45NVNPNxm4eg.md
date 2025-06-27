@@ -1,0 +1,3 @@
+# Read & Write Concerns
+
+Read and write concerns in MongoDB control data consistency and acknowledgment levels for operations. Write concerns specify acknowledgment requirements from replica set members, while read concerns determine data consistency guarantees for queries. Options range from unacknowledged writes to majority confirmation, and from local reads to causally consistent reads, balancing performance with data reliability requirements.

@@ -2,15 +2,16 @@
 jsonUrl: '/jsons/roadmaps/mongodb.json'
 pdfUrl: '/pdfs/roadmaps/mongodb.pdf'
 order: 14
+renderer: 'editor'
 briefTitle: 'MongoDB'
 briefDescription: 'Step by step guide to learning MongoDB in 2025'
-title: 'MongoDB Roadmap'
+title: 'MongoDB'
 description: 'Step by step guide to learning MongoDB in 2025'
 isNew: false
 hasTopics: true
 dimensions:
   width: 968
-  height: 2123.45
+  height: 2390
 schema:
   headline: 'MongoDB Roadmap: Step by step guide to learning MongoDB in 2025'
   description: 'Learn how to use MongoDB with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

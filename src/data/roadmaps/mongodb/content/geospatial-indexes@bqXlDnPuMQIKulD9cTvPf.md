@@ -1,0 +1,3 @@
+# Geospatial Indexes
+
+Geospatial indexes in MongoDB enable efficient querying of geographic coordinate data using 2d, 2dsphere, and geoHaystack index types. They support location-based queries like finding points within a specific distance, polygon intersection, and nearest neighbor searches. These indexes work with GeoJSON objects and legacy coordinate pairs for mapping applications and location services.

@@ -1,0 +1,3 @@
+# Kerberos Authentication
+
+Kerberos authentication in MongoDB provides enterprise-grade security through ticket-based authentication protocol. It integrates with existing Active Directory or Kerberos infrastructures, allowing centralized user management and single sign-on capabilities. This authentication method eliminates password transmission over networks and provides strong mutual authentication between clients and MongoDB servers using encrypted tickets.

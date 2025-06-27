@@ -1,0 +1,3 @@
+# Sharded Clusters
+
+Sharded Clusters enable horizontal scaling by distributing data across multiple servers based on a shard key. MongoDB automatically partitions collections and balances data distribution across shards, allowing databases to handle massive datasets and high throughput workloads. Sharding includes config servers for metadata management and mongos routers for query distribution across the cluster.
