@@ -23,16 +23,17 @@ schema:
   datePublished: '2023-05-04'
   dateModified: '2023-05-04'
 seo:
-  title: 'Kubernetes Roadmap - roadmap.sh'
+  title: 'Kubernetes Roadmap'
   description: 'Step by step guide to learn Kubernetes in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'kubernetes tutorial'
     - 'step by step kubernetes'
     - 'kubernetes roadmap 2024'
+    - 'kubernetes roadmap 2025'
     - 'guide to learning kubernetes'
-    - 'kubernetes roadmap'
     - 'kubernetes'
     - 'kubernetes engineer'
+    - 'kubernetes engineer 2025'
     - 'kubernetes skills'
     - 'kubernetes development'
     - 'kubernetes development skills'
@@ -46,8 +47,9 @@ seo:
     - 'kubernetes quiz'
     - 'kubernetes interview questions'
 relatedRoadmaps:
+  - 'docker'
   - 'devops'
-  - 'system-design'
+  - 'cloudflare'
   - 'backend'
 sitemap:
   priority: 1

@@ -21,7 +21,7 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 question:
   title: 'What is a Java Developer?'
   description: |
@@ -83,6 +83,7 @@ seo:
     - 'java skills'
     - 'guide to java'
     - 'java roadmap'
+    - 'java roadmap 2025'
     - 'java skills'
     - 'java skills test'
     - 'skills for java'
@@ -91,6 +92,8 @@ seo:
     - 'java quiz'
     - 'java interview questions'
     - 'java engineer roadmap'
+    - 'java engineer roadmap 2025'
+    - 'java developer roadmap 2025'
     - 'java developer roadmap'
     - 'become a java developer'
     - 'java developer career path'
@@ -100,10 +103,8 @@ relatedRoadmaps:
   - 'backend'
   - 'spring-boot'
   - 'devops'
-  - 'python'
   - 'golang'
   - 'javascript'
-  - 'nodejs'
 sitemap:
   priority: 1
   changefreq: 'monthly'

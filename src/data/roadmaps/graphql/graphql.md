@@ -24,7 +24,7 @@ seo:
   keywords:
     - 'guide to learn graphql'
     - 'graphql roadmap'
-    - 'graphql roadmap'
+    - 'graphql roadmap 2025'
     - 'modern graphql roadmap'
     - 'fullstack graphql roadmap'
     - 'design and architecture roadmap'

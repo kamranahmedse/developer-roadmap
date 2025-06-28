@@ -19,14 +19,15 @@ schema:
   datePublished: '2025-02-12'
   dateModified: '2025-02-12'
 seo:
-  title: 'Cloudflare Roadmap - roadmap.sh'
+  title: 'Cloudflare Roadmap'
   description: 'Step by step guide to learn Cloudflare in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'cloudflare tutorial'
     - 'step by step guide for cloudflare'
     - 'how to learn cloudflare'
     - 'use cloudflare in production'
-    - 'cloudflare roadmap 2024'
+    - 'cloudflare roadmap 2025'
+    - 'learn cloudflare tools'
     - 'guide to learning cloudflare'
     - 'cloudflare for beginners'
     - 'cloudflare roadmap'

@@ -57,9 +57,9 @@ seo:
   title: 'DevOps Roadmap: Learn to become a DevOps Engineer or SRE'
   description: 'Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in our community-driven roadmap.'
   keywords:
-    - 'devops roadmap 2024'
-    - 'sre roadmap 2024'
-    - 'operations roadmap 2024'
+    - 'devops roadmap 2025'
+    - 'sre roadmap 2025'
+    - 'operations roadmap 2025'
     - 'guide to becoming a devops engineer'
     - 'devops roadmap'
     - 'sre roadmap'

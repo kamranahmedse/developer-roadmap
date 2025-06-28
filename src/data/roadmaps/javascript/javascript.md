@@ -37,10 +37,13 @@ seo:
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for javascript development. Learn to become a modern JavaScript developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'javascript guide 2024'
+    - 'javascript guide 2025'
     - 'learn javascript'
     - 'step by step javascript guide'
     - 'javascript roadmap 2024'
+    - 'javascript roadmap 2025'
     - 'javascript developer roadmap 2024'
+    - 'javascript developer roadmap 2025'
     - 'guide to becoming a javascript developer'
     - 'javascript developer roadmap'
     - 'javascript roadmap'

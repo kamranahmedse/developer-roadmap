@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-11-14'
   dateModified: '2023-11-14'
 seo:
-  title: 'Learn to become a Rust developer - roadmap.sh'
+  title: 'Learn to become a Rust developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for Rust development. Learn to become a modern Rust developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming a rust developer'
@@ -29,6 +29,7 @@ seo:
     - 'rust roadmap 2024'
     - 'rust roadmap 2025'
     - 'rustlang roadmap'
+    - 'rustlang roadmap 2025'
     - 'rust skills'
     - 'rust skills test'
     - 'skills for rust'
@@ -41,6 +42,7 @@ relatedRoadmaps:
   - 'devops'
   - 'golang'
   - 'nodejs'
+  - 'cpp'
 sitemap:
   priority: 1
   changefreq: 'monthly'
