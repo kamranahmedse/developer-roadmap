@@ -140,7 +140,7 @@ function CourseFeature(props: CourseFeatureProps) {
           <img
             src={imgUrl}
             alt={title}
-            className="-order-1 h-full w-full rounded-lg sm:order-2"
+            className="h-full w-full rounded-lg sm:order-2"
           />
         </div>
       )}
