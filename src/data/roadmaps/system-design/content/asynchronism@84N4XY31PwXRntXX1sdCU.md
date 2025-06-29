@@ -4,7 +4,6 @@ Asynchronous workflows help reduce request times for expensive operations that w
 
 To learn more, visit the following links:
 
-- [@article@Asynchronous Thinking for Microservice System Design](https://www.datamachines.io/blog/asynchronous-thinking-for-microservice-system-design)
 - [@article@Patterns for microservices - Sync vs Async](https://medium.com/inspiredbrilliance/patterns-for-microservices-e57a2d71ff9e)
 - [@video@It's all a numbers game](https://www.youtube.com/watch?v=1KRYH75wgy4)
 - [@article@Applying back pressure when overloaded](http://mechanical-sympathy.blogspot.com/2012/05/apply-back-pressure-when-overloaded.html)
