@@ -197,12 +197,6 @@ Visit the roadmap at https://roadmap.sh/${roadmapId}
       overlayClassName="items-start md:items-center"
     >
       <div className="rounded-xl bg-white px-3">
-        <button
-          className="absolute right-4 top-4 text-gray-400 hover:text-black"
-          onClick={onClose}
-        >
-          <X className="h-4 w-4 stroke-[2.5]" />
-        </button>
 
         <div className="flex flex-col items-center p-4 py-6 text-center">
           {selectedCalendar && (
