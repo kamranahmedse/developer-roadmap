@@ -53,13 +53,6 @@ export function LeavingRoadmapWarningModal(
         <ArrowUpRight className="h-5 w-5" />
         Continue to Solution
       </a>
-
-      <button
-        className="absolute right-2.5 top-2.5 text-gray-600 hover:text-black"
-        onClick={onClose}
-      >
-        <X className="h-5 w-5" />
-      </button>
     </Modal>
   );
 }
