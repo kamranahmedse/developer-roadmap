@@ -16,8 +16,8 @@ export function PurchaseBanner() {
         </span>
       </div>
 
-      <div className="order-2 -translate-x-2 lg:order-0">
-        <BuyButton variant="floating" />
+      <div className="order-2 lg:order-0">
+        <BuyButton variant="floating" floatingClassName="-translate-x-2" />
       </div>
 
       <div className="flex flex-col items-center gap-2">

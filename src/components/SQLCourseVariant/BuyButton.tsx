@@ -41,10 +41,11 @@ type CreateCheckoutSessionResponse = {
 
 type BuyButtonProps = {
   variant?: 'main' | 'floating' | 'top-nav';
+  floatingClassName?: string;
 };
 
 export function BuyButton(props: BuyButtonProps) {
-  const { variant = 'main' } = props;
+  const { variant = 'main', floatingClassName } = props;
 
   const [isFakeLoading, setIsFakeLoading] = useState(true);
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
@@ -248,81 +249,84 @@ export function BuyButton(props: BuyButtonProps) {
 
   if (variant === 'main') {
     return (
-      <div className="relative flex w-full flex-col items-center gap-2 md:w-auto">
+      <>
         {courseLoginPopup}
-        {isVideoModalOpen && (
-          <VideoModal
-            videoId="6S1CcF-ngeQ"
-            onClose={() => setIsVideoModalOpen(false)}
-          />
-        )}
-        <div className="relative flex flex-col gap-2 md:flex-row md:gap-0">
-          {!isLoadingPricing && !isAlreadyEnrolled && mainCouponAlert}
 
-          <button
-            onClick={onBuyClick}
-            disabled={isLoadingPricing}
-            className={cn(
-              'group relative mr-2 inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-linear-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-hidden active:ring-0 md:w-auto md:rounded-full md:text-lg',
-              (isLoadingPricing || isCreatingCheckoutSession) &&
-                'striped-loader-yellow pointer-events-none mr-4 scale-105 bg-yellow-500',
-            )}
-          >
-            {isLoadingPricing ? (
-              <span className="relative flex items-center gap-2">&nbsp;</span>
-            ) : isAlreadyEnrolled ? (
-              <span className="relative flex items-center gap-2">
-                Start Learning
-              </span>
-            ) : (
-              <span className="relative flex items-center gap-2">
-                Buy now for{' '}
-                {coursePricing?.isEligibleForDiscount ? (
-                  <span className="flex items-center gap-2">
-                    <span className="hidden text-base line-through opacity-75 md:inline">
-                      ${coursePricing?.fullPrice}
-                    </span>
-                    <span className="text-base md:text-xl">
-                      ${coursePricing?.regionalPrice}
-                    </span>
-                  </span>
-                ) : (
-                  <span>${coursePricing?.regionalPrice}</span>
-                )}
-                <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
-              </span>
-            )}
-          </button>
-          <button
-            onClick={onReadSampleClick}
-            data-demo-button
-            className={cn(
-              'group relative hidden items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full',
-              {
-                'hidden lg:inline-flex':
-                  !isLoadingPricing && !isAlreadyEnrolled,
-              },
-            )}
-          >
-            <span className="relative flex items-center gap-2">
-              <MousePointerClick className="h-5 w-5" />
-              Access Demo
-            </span>
-          </button>
-        </div>
+        <div className="relative flex w-full flex-col items-center gap-2 md:w-auto">
+          {isVideoModalOpen && (
+            <VideoModal
+              videoId="6S1CcF-ngeQ"
+              onClose={() => setIsVideoModalOpen(false)}
+            />
+          )}
+          <div className="relative flex flex-col gap-2 md:flex-row md:gap-0">
+            {!isLoadingPricing && !isAlreadyEnrolled && mainCouponAlert}
 
-        {!isLoadingPricing && (
-          <span className="absolute top-full z-50 flex w-max translate-y-4 flex-row items-center justify-center text-sm text-yellow-400">
-            Lifetime access <span className="mx-2">&middot;</span>{' '}
             <button
-              onClick={() => setIsVideoModalOpen(true)}
-              className="flex cursor-pointer flex-row items-center gap-1.5 underline underline-offset-4 hover:text-yellow-500"
+              onClick={onBuyClick}
+              disabled={isLoadingPricing}
+              className={cn(
+                'group relative mr-2 inline-flex w-full min-w-[235px] items-center justify-center overflow-hidden rounded-xl bg-linear-to-r from-yellow-500 to-yellow-300 px-8 py-3 text-base font-semibold text-black transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(234,179,8,0.4)] focus:outline-hidden active:ring-0 md:w-auto md:rounded-full md:text-lg',
+                (isLoadingPricing || isCreatingCheckoutSession) &&
+                  'striped-loader-yellow pointer-events-none mr-4 scale-105 bg-yellow-500',
+              )}
             >
-              <Play className="size-3 fill-current" /> Watch Video (3 min)
+              {isLoadingPricing ? (
+                <span className="relative flex items-center gap-2">&nbsp;</span>
+              ) : isAlreadyEnrolled ? (
+                <span className="relative flex items-center gap-2">
+                  Start Learning
+                </span>
+              ) : (
+                <span className="relative flex items-center gap-2">
+                  Buy now for{' '}
+                  {coursePricing?.isEligibleForDiscount ? (
+                    <span className="flex items-center gap-2">
+                      <span className="hidden text-base line-through opacity-75 md:inline">
+                        ${coursePricing?.fullPrice}
+                      </span>
+                      <span className="text-base md:text-xl">
+                        ${coursePricing?.regionalPrice}
+                      </span>
+                    </span>
+                  ) : (
+                    <span>${coursePricing?.regionalPrice}</span>
+                  )}
+                  <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+                </span>
+              )}
             </button>
-          </span>
-        )}
-      </div>
+            <button
+              onClick={onReadSampleClick}
+              data-demo-button
+              className={cn(
+                'group relative hidden items-center justify-center overflow-hidden rounded-xl border border-yellow-500/30 bg-transparent px-6 py-3 text-base font-medium text-yellow-500 transition-all duration-300 ease-out hover:bg-yellow-500/10 focus:outline-hidden active:ring-0 md:rounded-full',
+                {
+                  'hidden lg:inline-flex':
+                    !isLoadingPricing && !isAlreadyEnrolled,
+                },
+              )}
+            >
+              <span className="relative flex items-center gap-2">
+                <MousePointerClick className="h-5 w-5" />
+                Access Demo
+              </span>
+            </button>
+          </div>
+
+          {!isLoadingPricing && (
+            <span className="absolute top-full z-50 flex w-max translate-y-4 flex-row items-center justify-center text-sm text-yellow-400">
+              Lifetime access <span className="mx-2">&middot;</span>{' '}
+              <button
+                onClick={() => setIsVideoModalOpen(true)}
+                className="flex cursor-pointer flex-row items-center gap-1.5 underline underline-offset-4 hover:text-yellow-500"
+              >
+                <Play className="size-3 fill-current" /> Watch Video (3 min)
+              </button>
+            </span>
+          )}
+        </div>
+      </>
     );
   }
 
@@ -339,32 +343,39 @@ export function BuyButton(props: BuyButtonProps) {
   }
 
   return (
-    <div className="relative flex flex-col items-center gap-2">
+    <>
       {courseLoginPopup}
-      <button
-        onClick={onBuyClick}
-        disabled={isLoadingPricing}
+      <div
         className={cn(
-          'group relative inline-flex min-w-[220px] items-center justify-center overflow-hidden rounded-full bg-[rgb(168,85,247)] px-8 py-3 font-medium text-white transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] focus:outline-hidden',
-          (isLoadingPricing || isCreatingCheckoutSession) &&
-            'striped-loader pointer-events-none bg-[rgb(168,85,247)]',
+          'relative flex flex-col items-center gap-2',
+          floatingClassName,
         )}
       >
-        {isLoadingPricing ? (
-          <span className="relative flex items-center gap-2">&nbsp;</span>
-        ) : isAlreadyEnrolled ? (
-          <span className="relative flex items-center gap-2">
-            Start Learning
-          </span>
-        ) : (
-          <span className="relative flex items-center gap-2">
-            <span className="hidden md:inline">Start learning now</span>
-            <span className="inline md:hidden">Start now</span>- $
-            {coursePricing?.regionalPrice}
-            <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
-          </span>
-        )}
-      </button>
-    </div>
+        <button
+          onClick={onBuyClick}
+          disabled={isLoadingPricing}
+          className={cn(
+            'group relative inline-flex min-w-[220px] items-center justify-center overflow-hidden rounded-full bg-[rgb(168,85,247)] px-8 py-3 font-medium text-white transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] focus:outline-hidden',
+            (isLoadingPricing || isCreatingCheckoutSession) &&
+              'striped-loader pointer-events-none bg-[rgb(168,85,247)]',
+          )}
+        >
+          {isLoadingPricing ? (
+            <span className="relative flex items-center gap-2">&nbsp;</span>
+          ) : isAlreadyEnrolled ? (
+            <span className="relative flex items-center gap-2">
+              Start Learning
+            </span>
+          ) : (
+            <span className="relative flex items-center gap-2">
+              <span className="hidden md:inline">Start learning now</span>
+              <span className="inline md:hidden">Start now</span>- $
+              {coursePricing?.regionalPrice}
+              <ArrowRightIcon className="h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+            </span>
+          )}
+        </button>
+      </div>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import { AwardIcon } from 'lucide-react';
+import { RoadmapDetailsPopover } from './RoadmapDetailsPopover';
 
 export function AuthorCredentials() {
   return (
@@ -25,9 +26,10 @@ export function AuthorCredentials() {
             </svg>
             #2 Most Starred Developer
           </span>
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-yellow-500/10 px-3 py-1">
+          <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-yellow-500/10 px-3 py-1">
             <AwardIcon className="size-4 text-yellow-500/80" />
             Founder roadmap.sh
+            <RoadmapDetailsPopover />
           </span>
         </div>
       </div>
