@@ -127,7 +127,8 @@ export function clearMigratedRoadmapProgress(
     'react-native',
     'graphql',
     'spring-boot',
-    'mongodb'
+    'mongodb',
+    'flutter',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
