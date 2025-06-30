@@ -1,6 +1,6 @@
 import { ChevronDown, BookIcon, CodeIcon, CircleDot } from 'lucide-react';
 import { cn } from '../../lib/classname';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 type ChapterRowProps = {
   counter: number;
@@ -100,7 +100,7 @@ export function ChapterRow(props: ChapterRowProps) {
                   {regularLessons.map((lesson, index) => (
                     <div
                       key={index}
-                      className="flex items-center gap-3 text-zinc-400 hover:text-yellow-500"
+                      className="flex items-center gap-3 text-zinc-400 cursor-text"
                     >
                       <BookIcon className="h-4 w-4" />
                       <span>{lesson.title}</span>

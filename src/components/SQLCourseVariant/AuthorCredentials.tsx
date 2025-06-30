@@ -4,48 +4,44 @@ import { Popover, PopoverContent, PopoverTrigger } from '../Popover';
 
 export function AuthorCredentials() {
   return (
-    <div className="flex items-center gap-4 text-white lg:mt-auto">
+    <div className="flex items-center gap-3 text-white lg:mt-auto">
       <img
         src="https://assets.roadmap.sh/guest/kamran-course-pf-agibf.jpg"
-        className="aspect-[4/5] h-[140px] w-[112px] rounded-2xl object-cover shadow-lg"
+        className="aspect-[4/5] h-[110px] w-[88px] rounded-xl object-cover shadow-md"
         alt="Kamran Ahmed"
       />
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         <div>
-          <a
-            href="https://twitter.com/kamrify"
-            target="_blank"
-            className="text-xl font-semibold transition-colors duration-200 hover:text-blue-400"
-          >
-            Kamran Ahmed
-          </a>
-          <p className="mt-1 text-sm text-gray-300">
+          <p className="text-xl font-medium transition-colors duration-200">
+            by Kamran Ahmed
+          </p>
+          <p className="mt-0.5 text-sm text-gray-400">
             Your teacher for this course
           </p>
         </div>
 
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-1">
           <a
             href="https://github.com/kamranahmedse"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-yellow-500/30 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 px-3 py-1.5 backdrop-blur-sm transition-all duration-200 hover:border-yellow-400/50 hover:from-yellow-500/30 hover:to-orange-500/30"
+            className="inline-flex cursor-pointer items-center gap-1 rounded-md bg-gradient-to-r from-yellow-500/15 to-orange-500/15 px-2 py-1.5 backdrop-blur-sm transition-all duration-200 hover:border-yellow-400/40 hover:from-yellow-500/25 hover:to-orange-500/25"
           >
-            <GitHubIcon className="size-3.5 text-yellow-400" />
-            <span className="text-xs font-medium text-yellow-100">
+            <GitHubIcon className="size-3 text-yellow-400" />
+            <span className="text-xs font-medium text-yellow-200">
               #2 Most Starred Developer
             </span>
           </a>
 
           <Popover>
             <PopoverTrigger asChild>
-              <div className="inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-purple-500/30 bg-gradient-to-r from-purple-500/20 to-pink-500/20 px-3 py-1.5 backdrop-blur-sm transition-all duration-200 hover:border-purple-400/50 hover:from-purple-500/30 hover:to-pink-500/30">
-                <AwardIcon className="size-3.5 text-purple-400" />
-                <span className="text-xs font-medium text-purple-100">
+              <div className="inline-flex cursor-pointer items-center gap-1 rounded-md bg-gradient-to-r from-yellow-500/15 to-orange-500/15 px-2 py-1.5 backdrop-blur-sm transition-all duration-200 hover:border-yellow-400/40 hover:from-yellow-500/25 hover:to-orange-500/25">
+                <AwardIcon className="size-3 text-yellow-400" />
+                <span className="text-xs font-medium text-yellow-200">
                   Founder roadmap.sh
                 </span>
-                <InfoIcon className="ml-1 size-3.5 text-purple-400/70 hover:text-purple-300" />
+                <InfoIcon className="ml-auto size-3 text-yellow-400/70 hover:text-yellow-300" />
               </div>
             </PopoverTrigger>
             <PopoverContent
