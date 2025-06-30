@@ -134,11 +134,6 @@
         "type": "article"
       },
       {
-        "title": "Learn PHP - W3Schools",
-        "url": "https://www.w3schools.com/php/",
-        "type": "article"
-      },
-      {
         "title": "PHP - The Right Way",
         "url": "https://phptherightway.com/",
         "type": "article"
@@ -237,11 +232,6 @@
         "type": "article"
       },
       {
-        "title": "W3 Schools Tutorials",
-        "url": "https://www.w3schools.com/java/",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Java",
         "url": "https://app.daily.dev/tags/java?ref=roadmapsh",
         "type": "article"
@@ -301,11 +291,6 @@
       {
         "title": "C# Tour",
         "url": "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/",
-        "type": "article"
-      },
-      {
-        "title": "C# on W3 schools",
-        "url": "https://www.w3schools.com/cs/index.php",
         "type": "article"
       },
       {
@@ -611,11 +596,6 @@
       {
         "title": "MySQL",
         "url": "https://www.mysql.com/",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools - MySQL Tutorial",
-        "url": "https://www.w3schools.com/mySQl/default.asp",
         "type": "article"
       },
       {
@@ -1089,11 +1069,6 @@
     "title": "SOAP",
     "description": "Simple Object Access Protocol (SOAP) is a message protocol for exchanging information between systems and applications. When it comes to application programming interfaces (APIs), a SOAP API is developed in a more structured and formalized way. SOAP messages can be carried over a variety of lower-level protocols, including the web-related Hypertext Transfer Protocol (HTTP).\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "w3school SOAP explanation",
-        "url": "https://www.w3schools.com/xml/xml_soap.asp",
-        "type": "article"
-      },
       {
         "title": "REST vs SOAP",
         "url": "https://www.youtube.com/watch?v=_fq8Ye8kodA",

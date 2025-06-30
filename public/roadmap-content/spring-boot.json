@@ -1,0 +1,982 @@
+{
+  "jy2heDVZuM6ASCXlI1TDn": {
+    "title": "Introduction",
+    "description": "Spring Boot is a framework for building applications based on the Spring Framework, a widely-used, open-source framework for building Java-based enterprise applications. Spring Boot aims to make it easy to create stand-alone, production-grade Spring-based applications that you can \"just run\".\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Boot",
+        "url": "https://spring.io/projects/spring-boot",
+        "type": "article"
+      },
+      {
+        "title": "Spring Boot - Introduction",
+        "url": "https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Spring Boot",
+        "url": "https://medium.com/adessoturkey/introduction-to-spring-boot-458cb814ec14",
+        "type": "article"
+      },
+      {
+        "title": "What-is-Spring-Boot?",
+        "url": "https://www.ibm.com/topics/java-spring-boot",
+        "type": "article"
+      }
+    ]
+  },
+  "OB--nMudscm0p6RqqfA7T": {
+    "title": "Configuration",
+    "description": "Spring Core Configuration is the process of configuring the Spring Framework, which involves specifying the various configuration details required for an application to function properly. This can include setting up beans, specifying bean dependencies, configuring aspect-oriented programming (AOP) aspects, and more. Configuration can be done through Java code, XML files, or using annotations in the code.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Framework Documentation",
+        "url": "https://docs.spring.io/spring/docs/current/spring-framework-reference/",
+        "type": "article"
+      },
+      {
+        "title": "\"Spring Configuration\" tutorial",
+        "url": "https://www.baeldung.com/project-configuration-with-spring",
+        "type": "article"
+      },
+      {
+        "title": "\"Spring Framework\" tutorial",
+        "url": "https://www.tutorialspoint.com/spring/index.htm",
+        "type": "article"
+      },
+      {
+        "title": "\"Spring Core\" video tutorial",
+        "url": "https://www.youtube.com/watch?v=GB8k2-Egfv0",
+        "type": "video"
+      }
+    ]
+  },
+  "C2EQ5J1aJYF9e9Rr2KysT": {
+    "title": "Dependency Injection",
+    "description": "Spring Boot uses the Spring Framework's Inversion of Control (IoC) container to manage objects and their dependencies. The IoC container is responsible for creating objects, wiring them together, and managing their lifecycle. When an object is created, its dependencies are also created and injected into the object.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Dependency Injection",
+        "url": "https://www.baeldung.com/spring-dependency-injection",
+        "type": "article"
+      },
+      {
+        "title": "Dependency Injection Using Spring Boot",
+        "url": "https://medium.com/edureka/what-is-dependency-injection-5006b53af782",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Dependency Injection",
+        "url": "https://app.daily.dev/tags/dependency-injection?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "PlUU_vzFQ3Xx6Z5XREIYP": {
+    "title": "Spring IOC",
+    "description": "Inversion of Control (IoC) is a design pattern that is often used in conjunction with the Dependency Injection (DI) pattern. The basic idea behind IoC is to invert the flow of control in a program, so that instead of the program controlling the flow of logic and the creation of objects, the objects themselves control the flow of logic and the creation of other objects.\n\nSpring is a popular Java framework that uses IoC and DI to provide a more flexible, modular approach to software development. The Spring IoC container is responsible for managing the creation and configuration of objects in a Spring-based application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring IoC, Spring Bean Example Tutorial",
+        "url": "https://www.digitalocean.com/community/tutorials/spring-ioc-bean-example-tutorial",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Inversion of Control with Spring",
+        "url": "https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "wV1_I_4czMIxpBionvLs4": {
+    "title": "Spring AOP",
+    "description": "Spring AOP (Aspect-Oriented Programming) is a feature of the Spring Framework that allows developers to define certain behaviors (i.e., \"aspects\") that cut across multiple classes, such as logging or transaction management. These behaviors, which are called \"advices,\" can be applied to specific \"join points\" (i.e., points in the execution of a program) in the application, using \"pointcuts\" to determine where the advices should be applied.\n\nSpring AOP allows developers to separate the implementation of these cross-cutting concerns from the business logic of the application, making the code more modular and easier to understand. This can also make the application more flexible, since the same advices can be applied to different parts of the code without having to duplicate the code for the advices themselves.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring AOP Tutorial",
+        "url": "https://www.simplilearn.com/tutorials/spring-tutorial/spring-aop-aspect-oriented-programming",
+        "type": "article"
+      },
+      {
+        "title": "AOP with Spring Framework",
+        "url": "https://www.tutorialspoint.com/spring/aop_with_spring.htm",
+        "type": "article"
+      },
+      {
+        "title": "Spring AOP Tutorial",
+        "url": "https://howtodoinjava.com/spring-aop-tutorial/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "QiNWE4sMTao3cVzjt3yPp": {
+    "title": "Spring MVC",
+    "description": "Spring MVC is a framework for building web applications in Java. It is part of the Spring Framework, which is a larger ecosystem of tools for building Java applications. Spring MVC is built on the Model-View-Controller (MVC) design pattern, which helps to separate the concerns of the application into three distinct components: the Model, the View, and the Controller.\n\nSpring MVC provides a powerful and flexible way to build web applications, and it integrates well with other parts of the Spring ecosystem, such as Spring Security for authentication and authorization, and Spring Data for data access.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Web MVC framework",
+        "url": "https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html",
+        "type": "article"
+      },
+      {
+        "title": "Spring - MVC Framework",
+        "url": "https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "HdCpfGMrMaXxk5QrtYn3X": {
+    "title": "Annotations",
+    "description": "One of the key features of Spring Boot is its use of annotations, which are used to configure various aspects of the application and to enable certain features.\n\nSome of the most commonly used annotations in Spring Boot include:\n\n*   `@SpringBootApplication`\n*   `@RestController`\n*   `@Autowired`\n*   `@Value`\n*   `@Enable`\n*   `@Configuration`\n*   `@Bean`\n\nThese are just a few examples of the many annotations that are available in Spring Boot. There are many other annotations that you can use to configure various aspects of your application, such as security, caching, and data access.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Annotations",
+        "url": "https://www.digitalocean.com/community/tutorials/spring-annotations",
+        "type": "article"
+      },
+      {
+        "title": "Annotations in Spring",
+        "url": "https://www.techferry.com/articles/spring-annotations.html",
+        "type": "article"
+      }
+    ]
+  },
+  "KdN62IpNgPFMndXfLaYa1": {
+    "title": "Spring Bean Scope",
+    "description": "In the Spring Framework, a bean is an object that is instantiated, assembled, and managed by the Spring IoC container. One of the key features of the Spring container is its ability to manage the lifecycle of beans, which includes creating, configuring, and destroying beans as necessary. One way the container can control the lifecycle of a bean is by specifying its scope.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring - Bean Scopes",
+        "url": "https://www.tutorialspoint.com/spring/spring_bean_scopes.htm",
+        "type": "article"
+      },
+      {
+        "title": "Quick Guide to Spring Bean Scopes",
+        "url": "https://www.baeldung.com/spring-bean-scopes",
+        "type": "article"
+      },
+      {
+        "title": "Spring Bean Scopes",
+        "url": "https://www.digitalocean.com/community/tutorials/spring-bean-scopes",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "WrUCyVfFNUpHB8jyjjKna": {
+    "title": "Terminology",
+    "description": "Spring Core, the base of the Spring Framework, provides a model for configuring Java applications. Key concepts include **Beans** (Java objects managed by Spring), **Inversion of Control (IoC)** (Spring managing bean lifecycles and dependencies), and **Dependency Injection (DI)** (Spring providing bean dependencies). The **Spring container** (specifically an **ApplicationContext**) creates and manages these beans. Spring also offers **Aspect-Oriented Programming (AOP)** for handling cross-cutting concerns, an **event model** for decoupled communication using **ApplicationEvent** and **listeners**, abstractions for **Data Access** and **Transactions**, and utilities for **Task Execution and Scheduling**.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Boot",
+        "url": "https://spring.io/projects/spring-boot",
+        "type": "article"
+      },
+      {
+        "title": "Spring Boot - Starter Guide",
+        "url": "https://spring.io/quickstart",
+        "type": "article"
+      }
+    ]
+  },
+  "yuXN-rD4AyyPYUYOR50L_": {
+    "title": "Architecture",
+    "description": "Spring Boot follows a layered architecture in which each layer communicates with the layer directly below or above (hierarchical structure) it. There are four layers in Spring Boot are as follows:\n\n*   **Presentation Layer**: handles the HTTP requests, translates the JSON parameter to object, and authenticates the request and transfer it to the business layer.\n*   **Business Layer**: The business layer handles all the business logic. It consists of service classes and uses services provided by data access layers. It also performs authorization and validation.\n*   **Persistence Layer**: The persistence layer contains all the storage logic and translates business objects from and to database rows.\n*   **Database Layer**: In the database layer, CRUD (create, retrieve, update, delete) operations are performed.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Boot Architecture – Detailed Explanation",
+        "url": "https://www.interviewbit.com/blog/spring-boot-architecture",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "WGf3W6bdWL0rK0o6O28G2": {
+    "title": "Why use Spring?",
+    "description": "Spring Boot provides a number of features that make it easier to create a Spring-based application, including:\n\n*   Embedded Application Server\n*   Automatic Configuration\n*   Pre-configured Starters\n*   Ease of Packaging and Distribution\n*   Ease of monitoring through built-in health check endpoint and the ability to customize the management endpoint.\n\nAdditionally, it's come with a lot of best practices and conventions baked in, which reduces the amount of work and boiler plate code developers need to write.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Why Spring?",
+        "url": "https://spring.io/why-spring",
+        "type": "article"
+      },
+      {
+        "title": "Spring vs Spring Boot: Know The Difference",
+        "url": "https://www.interviewbit.com/blog/spring-vs-spring-boot",
+        "type": "article"
+      },
+      {
+        "title": "A Comparison Between Spring and Spring Boot",
+        "url": "https://www.baeldung.com/spring-vs-spring-boot",
+        "type": "article"
+      },
+      {
+        "title": "Advantages of Spring Boot",
+        "url": "https://www.adservio.fr/post/advantages-of-spring-boot",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "KaUdyVWEiZa6lUDRBlOKt": {
+    "title": "Spring Security",
+    "description": "Spring Security is a framework for securing Java-based applications. It is a powerful and highly customizable authentication and access-control framework that can be easily integrated with a wide variety of applications, including web applications and RESTful web services. Spring Security provides a comprehensive security solution for both authentication and authorization, and it can be used to secure applications at both the web and method level.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Security",
+        "url": "https://spring.io/projects/spring-security",
+        "type": "article"
+      },
+      {
+        "title": "What is Spring security",
+        "url": "https://www.javadevjournal.com/spring/what-is-spring-security/",
+        "type": "article"
+      },
+      {
+        "title": "Spring Security: Authentication and Authorization In-Depth",
+        "url": "https://www.marcobehler.com/guides/spring-security",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Security",
+        "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "ssdk2iAt4avhc8B5tnIzQ": {
+    "title": "Authentication",
+    "description": "Spring Security is a framework for securing Java-based applications. One of its core features is authentication, which is the process of verifying that a user is who they claim to be. Spring Security provides a wide range of options for implementing authentication, including support for traditional username/password-based authentication as well as more modern alternatives such as OAuth and JSON Web Tokens (JWT).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Authentication",
+        "url": "https://docs.spring.io/spring-security/reference/features/authentication/index.html",
+        "type": "article"
+      },
+      {
+        "title": "Spring Security Authentication",
+        "url": "https://spring.io/projects/spring-security",
+        "type": "article"
+      },
+      {
+        "title": "Spring Security Basic Authentication",
+        "url": "https://www.baeldung.com/spring-security-basic-authentication",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Authentication",
+        "url": "https://app.daily.dev/tags/authentication?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "c7w7Z3Coa81FKa_yAKTse": {
+    "title": "Authorization",
+    "description": "Spring Security supports a variety of authentication mechanisms, such as username and password authentication, OAuth2, and more. Once a user is authenticated, Spring Security can then be used to authorize that user's access to specific resources or functionality. There are several annotations that can be used to control access to specific methods or classes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Authorization",
+        "url": "https://docs.spring.io/spring-security/reference/servlet/authorization/index.html",
+        "type": "article"
+      },
+      {
+        "title": "Advanced authorization in Spring",
+        "url": "https://docs.spring.io/spring-security/site/docs/5.2.11.RELEASE/reference/html/authorization.html",
+        "type": "article"
+      },
+      {
+        "title": "Spring Security: Authentication and Authorization In-Depth",
+        "url": "https://www.marcobehler.com/guides/spring-security",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Authorization",
+        "url": "https://app.daily.dev/tags/authorization?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "p7t3RlIIm9U08GFC6azff": {
+    "title": "OAuth2",
+    "description": "Spring Security OAuth2 library provides support for both the authorization code grant type (for web apps) and the implicit grant type (for single-page apps). You can also use Spring Security to protect your resources, and to configure your application as an OAuth2 resource server. The OAuth2 authentication process can be complex and time-consuming, but the Spring Security OAuth2 library makes it easy to get started by providing a set of convenient configuration classes and annotations.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Boot and OAuth2",
+        "url": "https://spring.io/guides/tutorials/spring-boot-oauth2/",
+        "type": "article"
+      },
+      {
+        "title": "Spring Boot - OAuth2 with JWT",
+        "url": "https://www.tutorialspoint.com/spring_boot/spring_boot_oauth2_with_jwt.htm",
+        "type": "article"
+      },
+      {
+        "title": "Spring Security",
+        "url": "https://www.tutorialspoint.com/spring_security/spring_security_with_oauth2.htm",
+        "type": "article"
+      }
+    ]
+  },
+  "1My7mbdwAbRcJoiA50pWW": {
+    "title": "JWT Authentication",
+    "description": "Spring Security can be used to implement JWT Authentication and Authorization to your APIs. The library provides a JWT-based authentication filter that you can add to your API endpoints. The filter will check the JWT that is included in the request header, and if it is valid, it will set the authentication information in the security context. You can then use the security context to perform authorization checks on the API endpoints.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "JWT Token Authentication in Spring",
+        "url": "https://springframework.guru/jwt-authentication-in-spring-microservices-jwt-token/",
+        "type": "article"
+      },
+      {
+        "title": "Spring Security with JWT for REST API",
+        "url": "https://www.toptal.com/spring/spring-security-tutorial",
+        "type": "article"
+      },
+      {
+        "title": "Spring Security - JWT",
+        "url": "https://www.tutorialspoint.com/spring_security/spring_security_with_jwt.htm",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Authentication",
+        "url": "https://app.daily.dev/tags/authentication?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "JrH2hiu27PhIO1VtrArMa": {
+    "title": "Spring Boot Starters",
+    "description": "Spring Boot starters are a set of convenient dependency descriptors that you can include in your application. They provide a variety of functionality, such as security, data access, and web services, and help to minimize the amount of boilerplate code and configuration you need to write.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Intro to Spring Boot Starters",
+        "url": "https://www.baeldung.com/spring-boot-starters",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "88-h3d7kb-VmUBsnUUXW_": {
+    "title": "Autoconfiguration",
+    "description": "Spring Boot's Autoconfiguration is a powerful and convenient feature that makes it easy to configure beans and other components in your application based on the presence of certain dependencies and properties. It saves developer's time by reducing the need for boilerplate configuration code, and can be fine-tuned through properties and annotations, to provide a fine-grained control over the auto-configurations.\n\nFor more information, visit the following links:",
+    "links": [
+      {
+        "title": "Auto-configuration using Spring Boot",
+        "url": "https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-auto-configuration.html",
+        "type": "article"
+      }
+    ]
+  },
+  "N7hd3d_XQtvOgnCqdCFt3": {
+    "title": "Actuators",
+    "description": "Spring Boot Actuators are a set of production-ready features in Spring Boot that allow you to monitor and manage your application in various ways. They provide a variety of endpoints that expose information about the health and performance of your application, and allow you to perform various management tasks such as shutting down the application or refreshing its configuration.\n\nSpring Boot Actuators are typically used in production environments to monitor the health and performance of an application and identify any issues that may arise. They can also be used in development and testing environments to gain insight into the internal workings of the application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Building a RESTful Web Service with Spring Boot Actuator",
+        "url": "https://spring.io/guides/gs/actuator-service/",
+        "type": "article"
+      },
+      {
+        "title": "What is Spring Boot Actuator",
+        "url": "https://www.baeldung.com/spring-boot-actuators",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "ONb0VnSUMY8JBeW3G2mTp": {
+    "title": "Embedded Server",
+    "description": "Spring Boot's Embedded Server feature is a convenient and powerful feature that allows you to run a web server directly within your application, without the need to deploy it to a separate standalone web server. This makes it easy to develop, test, and deploy web applications, and it's also lightweight, easy to start and stop, and easy to configure.\n\nFor more resources, visit the following links:",
+    "links": [
+      {
+        "title": "Embedded Web Servers ‘How-to’ guides",
+        "url": "https://docs.spring.io/spring-boot/docs/2.1.9.RELEASE/reference/html/howto-embedded-web-servers.html",
+        "type": "article"
+      },
+      {
+        "title": "Embedded Servers in Spring",
+        "url": "https://subscription.packtpub.com/book/application-development/9781789132588/3/ch03lvl1sec24/embedded-servers",
+        "type": "article"
+      },
+      {
+        "title": "What is an Embedded Server? (Spring Boot)",
+        "url": "https://www.springboottutorial.com/java-programmer-essentials-what-is-an-embedded-server",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Embedded Systems",
+        "url": "https://app.daily.dev/tags/embedded?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "h5-HnycxfbJgwalSdXTAz": {
+    "title": "Hibernate",
+    "description": "Hibernate is a Java framework that provides an object-relational mapping to an object-oriented model to the relational database. It means hibernate provides from Java classes to database tables and also provides data querying and retrieval facility.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Difference Between Spring vs Hibernate",
+        "url": "https://www.educba.com/spring-vs-hibernate/",
+        "type": "article"
+      },
+      {
+        "title": "Spring Hibernate Integration Example",
+        "url": "https://www.digitalocean.com/community/tutorials/spring-hibernate-integration-example-tutorial",
+        "type": "article"
+      }
+    ]
+  },
+  "H9Z0EvKT_148vD0mR-dUf": {
+    "title": "Transactions",
+    "description": "A transaction simply represents a unit of work. In such case, if one step fails, the whole transaction fails (which is termed as atomicity). A transaction can be described by ACID properties (Atomicity, Consistency, Isolation and Durability).\n\nIn hibernate framework, we have Transaction interface that defines the unit of work. It maintains abstraction from the transaction implementation (JTA,JDBC).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Hibernate Transaction Management",
+        "url": "https://www.javaguides.net/2018/12/hibernate-transaction-management-tutorial.html",
+        "type": "article"
+      },
+      {
+        "title": "Hibernate Transaction",
+        "url": "https://www.w3schools.blog/hibernate-transaction-management",
+        "type": "article"
+      }
+    ]
+  },
+  "D4ybyh0ydvl9W2_xUcvZ_": {
+    "title": "Relationships",
+    "description": "Using hibernate, if we want to have relationship between two entities, there must exist a foreign key relationship between the tables, we call it as Referential integrity. The main advantage of having relationship between objects is, we can do operation on one object, and the same operation can transfer onto the other object in the database.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Hibernate Relationships In Depth",
+        "url": "https://www.java4s.com/hibernate/hibernate-relationships-in-depth/",
+        "type": "article"
+      },
+      {
+        "title": "Guide to JPA with Hibernate - Relationship Mapping",
+        "url": "https://stackabuse.com/a-guide-to-jpa-with-hibernate-relationship-mapping/",
+        "type": "article"
+      },
+      {
+        "title": "Hibernate Mapping",
+        "url": "https://dzone.com/articles/hibernate-mapping",
+        "type": "article"
+      }
+    ]
+  },
+  "Ijmy0J3VyaeTGXtu2VkkQ": {
+    "title": "Entity Lifecycle",
+    "description": "In Hibernate, we can either create a new object of an entity and store it into the database, or we can fetch the existing data of an entity from the database. These entity is connected with the lifecycle and each object of entity passes through the various stages of the lifecycle.\n\nThere are mainly four states of the Hibernate Lifecycle :\n\n*   Transient State\n*   Persistent State\n*   Detached State\n*   Removed State\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Hibernate Entity Lifecycle & and its state",
+        "url": "https://www.baeldung.com/hibernate-entity-lifecycle",
+        "type": "article"
+      }
+    ]
+  },
+  "pvVLbFQoT50vz_VRK4VbJ": {
+    "title": "Spring Data",
+    "description": "Spring Data is a collection of projects for data access in Spring-based applications. It provides a common interface for working with various types of data stores, including relational databases, NoSQL data stores, and cloud-based data services. The goal of Spring Data is to simplify data access in Spring applications by providing a consistent, high-level repository programming model across different data stores and data access technologies. This can help developers write less boilerplate code and focus on business logic, while still being able to take advantage of the full power of the underlying data store.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Data",
+        "url": "https://spring.io/projects/spring-data",
+        "type": "article"
+      },
+      {
+        "title": "Spring Data – One API To Rule Them All?",
+        "url": "https://www.infoq.com/articles/spring-data-intro/",
+        "type": "article"
+      },
+      {
+        "title": "What is JPA, Spring Data and Spring Data JPA",
+        "url": "https://www.amitph.com/jpa-and-spring-data-jpa/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "6u08QN-pUeFm3o0h5Scfm": {
+    "title": "Spring Data JPA",
+    "description": "Spring Data JPA is a library that makes it easy to implement Java Persistence API (JPA) based repositories (a fancy word for \"DAO\") for Spring applications. It's an abstraction on top of JPA that allows you to use a simpler and more convenient API for performing CRUD (Create, Read, Update, Delete) operations on databases. Spring Data JPA also provides additional functionality such as pagination, dynamic query generation, and more.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Data JPA",
+        "url": "https://spring.io/projects/spring-data-jpa",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Spring Data JPA",
+        "url": "https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "fy-TphbqkLpR1zvFcr7dg": {
+    "title": "Spring Data MongoDB",
+    "description": "Spring Data for MongoDB is part of the umbrella Spring Data project which aims to provide a familiar and consistent Spring-based programming model for new datastores while retaining store-specific features and capabilities\n\nThe Spring Data MongoDB project provides integration with the MongoDB document database. Key functional areas of Spring Data MongoDB are a POJO centric model for interacting with a MongoDB DBCollection and easily writing a Repository style data access layer.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Data MongoDB",
+        "url": "https://spring.io/projects/spring-data-mongodb",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Spring Data MongoDB",
+        "url": "https://www.baeldung.com/spring-data-mongodb-tutorial",
+        "type": "article"
+      },
+      {
+        "title": "Spring Boot Integration with MongoDB Tutorial",
+        "url": "https://www.mongodb.com/compatibility/spring-boot",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about MongoDB",
+        "url": "https://app.daily.dev/tags/mongodb?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "dd1A-MyzBs_kNOtVG7f1D": {
+    "title": "Spring Data JDBC",
+    "description": "Spring Data JDBC is a part of the Spring Data project that provides support for using JDBC (Java Database Connectivity) to interact with relational databases. It is designed to provide a simple and consistent programming model for interacting with databases using JDBC, while still allowing for the full power of JDBC to be used if needed. Spring Data JDBC provides a set of abstraction and utility classes that simplify the task of working with databases, such as a simple template class for executing SQL queries, a repository abstraction for implementing data access objects (DAOs), and support for pagination and sorting of query results. It works with both Java and Kotlin.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Data JDBC",
+        "url": "https://spring.io/projects/spring-data-jdbc",
+        "type": "article"
+      },
+      {
+        "title": "Spring Data JDBC - Reference Documentation",
+        "url": "https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Spring Data JDBC",
+        "url": "https://www.baeldung.com/spring-data-jdbc-intro",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "jU_KHoPUSU_HoIKk0ZpRF": {
+    "title": "Microservices",
+    "description": "Spring Microservices is a framework that makes it easier to build and manage microservices-based applications using the Spring Framework. Microservices is an architectural style in which a large application is built as a collection of small, independently deployable services. Each service has a narrowly defined responsibility and communicates with other services through APIs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Microservices with Spring",
+        "url": "https://spring.io/microservices",
+        "type": "article"
+      },
+      {
+        "title": "Microservices with Spring Boot ",
+        "url": "https://medium.com/omarelgabrys-blog/microservices-with-spring-boot-intro-to-microservices-part-1-c0d24cd422c3",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Microservices",
+        "url": "https://app.daily.dev/tags/microservices?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "VWNDYSw83Vzi2UPQprJ5z": {
+    "title": "Spring Cloud",
+    "description": "Spring Cloud is a collection of libraries and tools for building cloud-native applications using the Spring Framework. It provides a set of abstractions and implementations for common patterns and best practices used in cloud-based applications, such as service discovery, configuration management, and circuit breaker patterns, among others.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Cloud",
+        "url": "https://spring.io/projects/spring-cloud",
+        "type": "article"
+      },
+      {
+        "title": "Spring Cloud – Bootstrapping",
+        "url": "https://www.baeldung.com/spring-cloud-bootstrapping",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Cloud",
+        "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "f-i0NX2KOzCh3JwkaSPFo": {
+    "title": "Spring Cloud Gateway",
+    "description": "Spring Cloud Gateway is a Spring Framework library for building API gateways. An API gateway is a service that acts as an intermediary between an application and a set of microservices. The API gateway is responsible for request routing, composition, and protocol translation, among other things. It can also perform tasks such as authentication, rate limiting, and caching.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Cloud Gateway",
+        "url": "https://spring.io/projects/spring-cloud-gateway",
+        "type": "article"
+      },
+      {
+        "title": "What is Spring Cloud Gateway?",
+        "url": "https://tanzu.vmware.com/developer/guides/scg-what-is/",
+        "type": "article"
+      },
+      {
+        "title": "Exploring the New Spring Cloud Gateway",
+        "url": "https://www.baeldung.com/spring-cloud-gateway",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Cloud",
+        "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "9hG3CB8r41bUb_s8-0u73": {
+    "title": "Cloud Config",
+    "description": "Spring Cloud Config is a library for managing configuration properties for distributed applications. It allows developers to externalize configuration properties for an application, so that they can be easily changed without modifying the application's code. It also provides a centralized server for storing and managing configuration properties for multiple applications, making it easy to update and rollback configurations across different environments.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Cloud Config",
+        "url": "https://spring.io/projects/spring-cloud-config",
+        "type": "article"
+      },
+      {
+        "title": "Quick Intro to Spring Cloud Configuration",
+        "url": "https://www.baeldung.com/spring-cloud-configuration",
+        "type": "article"
+      },
+      {
+        "title": "Spring Boot - Cloud Configuration Server",
+        "url": "https://www.tutorialspoint.com/spring_boot/spring_boot_cloud_configuration_server.htm",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Cloud",
+        "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "kqpSlO--X9-xYxfq1KFVe": {
+    "title": "Spring Cloud Circuit Breaker",
+    "description": "Spring Cloud Circuit Breaker is a library for managing the fault tolerance of microservices-based applications using the Circuit Breaker pattern. The Circuit Breaker pattern is a design pattern that helps to prevent cascading failures and improve the resilience of distributed systems. It does this by introducing a \"circuit breaker\" proxy in front of a service that can detect when the service is unresponsive or has failed, and stop routing traffic to it temporarily, in order to allow the service to recover.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Cloud Circuit Breaker",
+        "url": "https://spring.io/projects/spring-cloud-circuitbreaker",
+        "type": "article"
+      },
+      {
+        "title": "Quick Guide to Spring Cloud Circuit Breaker",
+        "url": "https://www.baeldung.com/spring-cloud-circuit-breaker",
+        "type": "article"
+      },
+      {
+        "title": "Spring Cloud - Circuit Breaker using Hystrix",
+        "url": "https://www.tutorialspoint.com/spring_cloud/spring_cloud_circuit_breaker_using_hystrix.htm",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Cloud",
+        "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "EKSXTMSN2xdaleJ4wOV1A": {
+    "title": "Spring Cloud Open Feign",
+    "description": "Spring Cloud OpenFeign is a library for creating declarative REST clients in Spring applications. It allows developers to easily make HTTP requests to other microservices or remote services, without having to manually write the low-level code to handle the requests and responses. OpenFeign is built on top of the OpenFeign declarative HTTP client, which is a simple, lightweight library for creating HTTP clients in Java.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Introduction to Spring Cloud OpenFeign",
+        "url": "https://www.baeldung.com/spring-cloud-openfeign",
+        "type": "article"
+      },
+      {
+        "title": "Spring Cloud OpenFeign",
+        "url": "https://spring.io/projects/spring-cloud-openfeign",
+        "type": "article"
+      },
+      {
+        "title": "Simple Implementation of Spring Cloud OpenFeign",
+        "url": "https://medium.com/javarevisited/simple-implementation-of-spring-cloud-openfeign-7f022630d01d",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Cloud",
+        "url": "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "GsmBGRohWbJ6XOaALFZ8o": {
+    "title": "Micrometer",
+    "description": "",
+    "links": []
+  },
+  "6sLE6gb5Y477SmO2GhQIG": {
+    "title": "Eurkea",
+    "description": "Spring Cloud Eureka is a library for service discovery in a microservices-based architecture. Service discovery is a technique that allows services to find and communicate with each other, without having to hardcode their addresses.\n\nEureka is a service registry that allows service instances to register themselves and to discover other services by name. It provides a simple, consistent way for services to find and communicate with each other, and it integrates with other Spring Cloud libraries such as Ribbon and Feign to provide load balancing and declarative REST clients.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Introduction to Spring Cloud Netflix – Eureka",
+        "url": "https://www.baeldung.com/spring-cloud-netflix-eureka",
+        "type": "article"
+      },
+      {
+        "title": "Spring Boot - Eureka Server",
+        "url": "https://www.tutorialspoint.com/spring_boot/spring_boot_eureka_server.htm",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Backend Development",
+        "url": "https://app.daily.dev/tags/backend?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Introducing Spring Cloud EUREKA",
+        "url": "https://www.youtube.com/watch?v=1uNo1NrqsX4",
+        "type": "video"
+      }
+    ]
+  },
+  "S-BbOoRD7anvoJrprjoKF": {
+    "title": "Spring MVC",
+    "description": "Spring MVC is a web application framework that is part of the Spring Framework. It is designed to make it easy to build web applications using the Model-View-Controller (MVC) design pattern.\n\nIn Spring MVC, the application is divided into three main components: the Model, the View, and the Controller. The Model represents the data and the business logic of the application, the View is responsible for generating the HTML that is sent to the client's web browser, and the Controller acts as an intermediary between the Model and the View, handling incoming HTTP requests and generating the appropriate response.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring - MVC Framework",
+        "url": "https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm",
+        "type": "article"
+      },
+      {
+        "title": "Spring MVC Tutorial – Everything You Need To Know",
+        "url": "https://www.edureka.co/blog/spring-mvc-tutorial/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "35NTx2eO1j02sjy4m6DPq": {
+    "title": "Servlet",
+    "description": "A Spring servlet is a Java class that serves as the central point for handling requests and managing the lifecycle of the Spring IoC container. The Spring Framework provides a class called DispatcherServlet, which acts as the front controller in a Spring-based web application. When a user makes a request to a Spring web application, the DispatcherServlet is responsible for handling the request, delegating responsibility to other components, and ultimately returning a response to the user. The DispatcherServlet also manages the lifecycle of the Spring IoC container, including creating and initializing the container and making its beans available for use by other components in the application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The DispatcherServlet",
+        "url": "https://docs.spring.io/spring-framework/docs/3.0.0.M4/spring-framework-reference/html/ch15s02.html",
+        "type": "article"
+      },
+      {
+        "title": "DispatcherServlet and web.xml in Spring Boot",
+        "url": "https://www.baeldung.com/spring-boot-dispatcherservlet-web-xml",
+        "type": "article"
+      }
+    ]
+  },
+  "Lz0GPMiYzb30iFJdv1dL6": {
+    "title": "JSP Files",
+    "description": "JSP (JavaServer Pages) is a technology for building dynamic web pages using Java.\n\nIn a Spring MVC application that uses JSPs, the view component of the MVC pattern is implemented using JSP files. The JSP files contain the presentation logic for the application and are responsible for generating the HTML that is sent to the client's web browser. When a user makes a request to a Spring MVC application, the DispatcherServlet, which acts as the front controller, handles the request and delegates responsibility for generating the response to the appropriate JSP file.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring Boot With JavaServer Pages (JSP)",
+        "url": "https://www.baeldung.com/spring-boot-jsp",
+        "type": "article"
+      },
+      {
+        "title": "Spring MVC: from JSP and Tiles to Thymeleaf",
+        "url": "https://spring.io/blog/2012/10/30/spring-mvc-from-jsp-and-tiles-to-thymeleaf/",
+        "type": "article"
+      }
+    ]
+  },
+  "_vS_zdJZegZS6MIKAFyg8": {
+    "title": "Architecture",
+    "description": "The Spring MVC (Model-View-Controller) is a web application framework that is part of the Spring Framework. It is designed to make it easy to build web applications using the MVC design pattern.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Overview of Spring MVC Architecture",
+        "url": "https://terasolunaorg.github.io/guideline/1.0.1.RELEASE/en/Overview/SpringMVCOverview.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Architecture",
+        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "sgA06Tu9Y4cEHtfI8CyLL": {
+    "title": "Components",
+    "description": "The Spring MVC (Model-View-Controller) framework has several key components that work together to handle the requests and generate the appropriate responses in a web application.\n\nThere are other supporting components that are used to manage the lifecycle of the application's objects, such as the Spring IoC container and different interceptors that provides additional functionality, such as caching and security.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Web MVC Framework",
+        "url": "https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html",
+        "type": "article"
+      }
+    ]
+  },
+  "7Qqrh_Rz_7uAD49g9sDzi": {
+    "title": "Testing",
+    "description": "Spring provides a set of testing utilities that make it easy to test the various components of a Spring application, including controllers, services, repositories, and other components. It has a rich set of testing annotations, utility classes and other features to aid in unit testing, integration testing and more.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Spring Testing?",
+        "url": "https://www.developer.com/design/what-is-spring-testing/",
+        "type": "article"
+      },
+      {
+        "title": "Complete Guide To Spring Testing",
+        "url": "https://www.lambdatest.com/blog/spring-testing/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Testing",
+        "url": "https://app.daily.dev/tags/testing?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "Nhx2QiSD_4pVWD17lsCbu": {
+    "title": "JPA Test",
+    "description": "Spring JPA (Java Persistence API) is a library that makes it easy to work with databases and other data stores in a Spring application. Spring JPA uses the Java Persistence API (JPA) to interact with databases and provides an abstraction layer to work with different data stores.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Testing JPA Queries with Spring Boot and @DataJpaTest",
+        "url": "https://reflectoring.io/spring-boot-data-jpa-test/",
+        "type": "article"
+      },
+      {
+        "title": "@DataJpaTest example for Spring Data Repository Unit Test",
+        "url": "https://www.bezkoder.com/spring-boot-unit-test-jpa-repo-datajpatest/",
+        "type": "article"
+      },
+      {
+        "title": "Testing in Spring Boot",
+        "url": "https://www.baeldung.com/spring-boot-testing",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Java",
+        "url": "https://app.daily.dev/tags/java?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "5d1BERqTKNJMKiBcqa8Ie": {
+    "title": "Mock MVC",
+    "description": "Spring's MockMvc is a class that allows you to test Spring MVC controllers without the need for an actual web server. It is part of the Spring Test module, which provides a set of testing utilities for Spring applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Spring MockMVC tutorial",
+        "url": "https://zetcode.com/spring/mockmvc/",
+        "type": "article"
+      },
+      {
+        "title": "Spring Boot MockMVC Example",
+        "url": "https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/",
+        "type": "article"
+      },
+      {
+        "title": "Integration Testing in Spring",
+        "url": "https://baeldung.com/integration-testing-in-spring",
+        "type": "article"
+      }
+    ]
+  },
+  "p91CaVPh5GMzFU0yEU_hl": {
+    "title": "@SpringBootTest Annotation",
+    "description": "`@SpringBootTest` This annotation is used to create a fully-configured instance of the Spring ApplicationContext for testing. It can be used to test the application's components, including controllers, services, and repositories, in a real application environment.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Testing with Spring Boot and @SpringBootTest",
+        "url": "https://reflectoring.io/spring-boot-test/",
+        "type": "article"
+      },
+      {
+        "title": "Annotation Interface SpringBootTest",
+        "url": "https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/context/SpringBootTest.html",
+        "type": "article"
+      },
+      {
+        "title": "Testing in Spring Boot",
+        "url": "https://www.baeldung.com/spring-boot-testing",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Spring Framework",
+        "url": "https://app.daily.dev/tags/spring?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
+  },
+  "i77NTa0hpGGBjmql9u_CT": {
+    "title": "@MockBean Annotation",
+    "description": "`MockBean` is a Spring annotation that can be used to create a mock implementation of a bean in the Spring application context. When a test is annotated with MockBean, Spring creates a mock implementation of the specified bean and adds it to the application context. The mock bean can then be used to replace the real bean during testing.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Annotation Interface MockBean",
+        "url": "https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/mock/mockito/MockBean.html",
+        "type": "article"
+      },
+      {
+        "title": "Mockito.mock() vs @Mock vs @MockBean",
+        "url": "https://www.baeldung.com/java-spring-mockito-mock-mockbean",
+        "type": "article"
+      },
+      {
+        "title": "Spring Boot @MockBean Example",
+        "url": "https://howtodoinjava.com/spring-boot2/testing/spring-mockbean-annotation/",
+        "type": "article"
+      }
+    ]
+  }
+}

@@ -383,11 +383,6 @@
         "title": "v-on Documentation",
         "url": "https://vuejs.org/api/built-in-directives.html#v-on",
         "type": "article"
-      },
-      {
-        "title": "v-on Directive",
-        "url": "https://www.w3schools.com/vue/ref_v-on.php",
-        "type": "article"
       }
     ]
   },
@@ -1256,11 +1251,6 @@
       {
         "title": "Fetch - MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
-        "type": "article"
-      },
-      {
-        "title": "Fetch W3school Docs",
-        "url": "https://www.w3schools.com/jsref/api_fetch.asp",
         "type": "article"
       },
       {

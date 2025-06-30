@@ -734,11 +734,6 @@
         "title": "Joins Between Tables",
         "url": "https://www.postgresql.org/docs/current/tutorial-join.html",
         "type": "article"
-      },
-      {
-        "title": "PostgreSQL - Joins",
-        "url": "https://www.w3schools.com/postgresql/postgresql_joins.php",
-        "type": "article"
       }
     ]
   },
