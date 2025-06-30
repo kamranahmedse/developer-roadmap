@@ -46,7 +46,7 @@ relatedRoadmaps:
   - 'javascript'
   - 'react'
   - 'nodejs'
-  - 'software-architect
+  - 'software-architect'
   - 'system-design'
 sitemap:
   priority: 1

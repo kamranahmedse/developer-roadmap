@@ -29,7 +29,7 @@ seo:
     - 'technical writing skills'
     - 'technical writing skills 2025'
     - 'technical writing'
-    - 'technical documentation roadmap
+    - 'technical documentation roadmap'
     - 'technical documentation'
     - 'technical writing test'
     - 'become a technical writer'
