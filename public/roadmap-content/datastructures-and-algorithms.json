@@ -14,23 +14,8 @@
         "type": "article"
       },
       {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
-        "type": "article"
-      },
-      {
         "title": "The Modern JavaScript Tutorial",
         "url": "https://javascript.info/",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools – Node.js Tutorial",
-        "url": "https://www.w3schools.com/nodejs/",
-        "type": "article"
-      },
-      {
-        "title": "What is NPM?",
-        "url": "https://www.w3schools.com/nodejs/nodejs_npm.asp",
         "type": "article"
       },
       {
@@ -75,11 +60,6 @@
         "type": "article"
       },
       {
-        "title": "W3 Schools Tutorials",
-        "url": "https://www.w3schools.com/java/",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Java",
         "url": "https://app.daily.dev/tags/java?ref=roadmapsh",
         "type": "article"
@@ -121,11 +101,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools Go Tutorial ",
-        "url": "https://www.w3schools.com/go/",
-        "type": "article"
-      },
-      {
         "title": "Making a RESTful JSON API in Go",
         "url": "https://thenewstack.io/make-a-restful-json-api-go/",
         "type": "article"
@@ -149,11 +124,6 @@
       {
         "title": "C# Learning Path",
         "url": "https://docs.microsoft.com/en-us/learn/paths/csharp-first-steps/?WT.mc_id=dotnet-35129-website",
-        "type": "article"
-      },
-      {
-        "title": "C# on W3 schools",
-        "url": "https://www.w3schools.com/cs/index.php",
         "type": "article"
       },
       {
@@ -226,11 +196,6 @@
       {
         "title": "Python principles - Python basics",
         "url": "https://pythonprinciples.com/",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools - Python Tutorial ",
-        "url": "https://www.w3schools.com/python/",
         "type": "article"
       },
       {
@@ -633,11 +598,6 @@
     "description": "Bubble Sort is a simple sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. It gets its name because with each iteration the largest element \"bubbles\" up to its proper location. It continues this process of swapping until the entire list is sorted in ascending order. The main steps of the algorithm are: starting from the beginning of the list, compare every pair of adjacent items and swap them if they are in the wrong order, and then pass through the list until no more swaps are needed. However, despite being simple, Bubble Sort is not suited for large datasets as it has a worst-case and average time complexity of O(n²), where n is the number of items being sorted.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Bubble Sort",
-        "url": "https://www.w3schools.com/dsa/dsa_algo_bubblesort.php",
-        "type": "article"
-      },
-      {
         "title": "Bubble Sort Visualize",
         "url": "https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/",
         "type": "article"
@@ -674,11 +634,6 @@
     "title": "Insertion Sort",
     "description": "Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It's much less efficient on large lists than more advanced algorithms like quicksort, heapsort, or merge sort. Still, it provides several advantages such as it's easy to understand the algorithm, it performs well with small lists or lists that are already partially sorted and it can sort the list as it receives it. The algorithm iterates, consuming one input element each repetition and growing a sorted output list. At each iteration, it removes one element from the input data, finds the location it belongs within the sorted list and inserts it there. It repeats until no input elements remain.",
     "links": [
-      {
-        "title": "Insertion Sort - W3Schools",
-        "url": "https://www.w3schools.com/dsa/dsa_algo_insertionsort.php",
-        "type": "article"
-      },
       {
         "title": "Insertion Sort Visualization",
         "url": "https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/visualize/",
@@ -717,11 +672,6 @@
     "description": "Selection Sort is a simple and intuitive sorting algorithm. It works by dividing the array into two parts - sorted and unsorted. Initially, the sorted part is empty and the unsorted part contains all the elements. The algorithm repeatedly selects the smallest (or largest, if sorting in descending order) element from the unsorted part and moves that to the end of the sorted part. The process continues until the unsorted part becomes empty and the sorted part contains all the elements. Selection sort is not efficient on large lists, as its time complexity is O(n²) where n is the number of items.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Selection Sort - W3Schools",
-        "url": "https://www.w3schools.com/dsa/dsa_algo_selectionsort.php",
-        "type": "article"
-      },
-      {
         "title": "Selection Sort Visualize",
         "url": "https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/practice-problems/",
         "type": "article"
@@ -759,11 +709,6 @@
     "description": "Linear search is one of the simplest search algorithms. In this method, every element in an array is checked sequentially starting from the first until a match is found or all elements have been checked. It is also known as sequential search. It works on both sorted and unsorted lists, and does not need any preconditioned list for the operation. However, its efficiency is lesser as compared to other search algorithms since it checks all elements one by one.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "DSA Linear Search - W3Schools",
-        "url": "https://www.w3schools.com/dsa/dsa_algo_linearsearch.php",
-        "type": "article"
-      },
-      {
         "title": "Learn Linear Search in 3 minutes",
         "url": "https://www.youtube.com/watch?v=246V51AWwZM",
         "type": "video"
@@ -774,11 +719,6 @@
     "title": "Binary Search",
     "description": "`Binary Search` is a type of search algorithm that follows the divide and conquer strategy. It works on a sorted array by repeatedly dividing the search interval in half. Initially, the search space is the entire array and the target is compared with the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target, and repeating this until the target is found. If the search ends with the remaining half being empty, the target is not in the array. Binary Search is log(n) as it cuts down the search space by half each step.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "DSA Binary Search - W3Schools",
-        "url": "https://www.w3schools.com/dsa/dsa_algo_binarysearch.php",
-        "type": "article"
-      },
       {
         "title": "Learn Binary Search in 10 minutes",
         "url": "https://www.youtube.com/watch?v=xrMppTpoqdw",
@@ -830,11 +770,6 @@
     "title": "Binary Trees",
     "description": "A **Binary Tree** is a type of tree data structure in which each node has at most two children, referred to as the left child and the right child. This distinguishes it from trees in which nodes can have any number of children. A binary tree is further classified as a strictly binary tree if every non-leaf node in the tree has non-empty left and right child nodes. A binary tree is complete if all levels of the tree, except possibly the last, are fully filled, and all nodes are as left-justified as possible. Multiple algorithms and functions employ binary trees due to their suitable properties for mathematical operations and data organization.\n\nLearn more from the following links:",
     "links": [
-      {
-        "title": "Binary Tree",
-        "url": "https://www.w3schools.com/dsa/dsa_data_binarytrees.php",
-        "type": "article"
-      },
       {
         "title": "Binary Tree",
         "url": "https://youtu.be/4r_XR9fUPhQ?si=PBsRjix_Z9kVHgMM",

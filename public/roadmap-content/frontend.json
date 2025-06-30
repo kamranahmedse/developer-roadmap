@@ -176,11 +176,6 @@
         "type": "course"
       },
       {
-        "title": "W3Schools: Learn HTML",
-        "url": "https://www.w3schools.com/html/html_intro.asp",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about HTML",
         "url": "https://app.daily.dev/tags/html?ref=roadmapsh",
         "type": "article"
@@ -202,11 +197,6 @@
     "description": "HTML (HyperText Markup Language) is the backbone of webpages. It structures the content you see online. You use CSS to style this HTML structure and JavaScript to make it interactive. Think of HTML as the skeleton of a website.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "W3Schools: Learn HTML",
-        "url": "https://www.w3schools.com/html/html_intro.asp",
-        "type": "article"
-      },
-      {
         "title": "web.dev: Learn HTML",
         "url": "https://web.dev/learn/html",
         "type": "article"
@@ -225,11 +215,6 @@
       {
         "title": "Guide to Writing Semantic HTML",
         "url": "https://cs.fyi/guide/writing-semantic-html",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools: Semantic HTML",
-        "url": "https://www.w3schools.com/html/html5_semantic_elements.asp",
         "type": "article"
       },
       {
@@ -256,11 +241,6 @@
       {
         "title": "Learn Forms by web.dev",
         "url": "https://web.dev/learn/forms/",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools: JavaScript Form Validation",
-        "url": "https://www.w3schools.com/js/js_validation.asp",
         "type": "article"
       }
     ]
@@ -347,11 +327,6 @@
     "title": "Learn the basics",
     "description": "CSS (Cascading Style Sheets) is the language for styling websites. It makes the frontend look good. Along with HTML and JavaScript, CSS is a key part of the World Wide Web. It controls colors, fonts, layout, and more to visually design webpages.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "W3Schools — Learn CSS",
-        "url": "https://www.w3schools.com/css/",
-        "type": "article"
-      },
       {
         "title": "web.dev — Learn CSS",
         "url": "https://web.dev/learn/css/",
@@ -508,11 +483,6 @@
     "title": "Learn the Basics",
     "description": "JavaScript makes webpages interactive. Think of sliders, what happens when you click something, or pop-up messages – that's often JavaScript at work. It adds dynamic behavior to the static structure created by HTML and styled by CSS.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
-        "type": "article"
-      },
       {
         "title": "The Modern JavaScript Tutorial",
         "url": "https://javascript.info/",
@@ -1735,11 +1705,6 @@
       {
         "title": "Using Templates and Slots - MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots",
-        "type": "article"
-      },
-      {
-        "title": "HTML Template Tag",
-        "url": "https://www.w3schools.com/tags/tag_template.asp",
         "type": "article"
       },
       {

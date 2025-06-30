@@ -128,11 +128,6 @@
         "type": "article"
       },
       {
-        "title": "JSX in React on w3school",
-        "url": "https://www.w3schools.com/react/react_jsx.asp",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about JSX",
         "url": "https://app.daily.dev/tags/jsx?ref=roadmapsh",
         "type": "article"
@@ -503,11 +498,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools",
-        "url": "https://www.w3schools.com/react/react_useref.asp",
-        "type": "article"
-      },
-      {
         "title": "WebDevSimplified",
         "url": "https://www.youtube.com/watch?v=t2ypzz6gJm0",
         "type": "video"
@@ -695,11 +685,6 @@
       {
         "title": "Passing Data Deeply with Context",
         "url": "https://react.dev/learn/passing-data-deeply-with-context",
-        "type": "article"
-      },
-      {
-        "title": "Basic useContext Guide",
-        "url": "https://www.w3schools.com/react/react_usecontext.asp",
         "type": "article"
       },
       {
