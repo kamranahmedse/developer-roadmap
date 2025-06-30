@@ -27,11 +27,10 @@ export function ReviewCarousel() {
       companyName: 'roadmapsh.sh',
       companyLogo: 'https://roadmap.sh/images/brand.png',
       name: 'Robin Wieruch',
-      role: 'Author - Multiple best-selling books',
+      role: 'Author - Multiple Best-Sellers',
       rating: 5,
       text: [
         'Kamran has been in the **educative space for a long time**, and it shows in the way he teaches SQL: clear, structured, and straight to the point.',
-        "He breaks down SQL fundamentals in a way that's both **intuitive and practical**, helping you not just write queries, but truly understand how databases work.",
         "Even if you've used SQL before, this **course will fill in gaps you didn't even realize you had**. Get ready to level up your database skills!",
       ],
       avatarUrl: 'https://assets.roadmap.sh/guest/robin.jpeg',
@@ -44,7 +43,7 @@ export function ReviewCarousel() {
       role: 'Founder and Data Enthusiast',
       rating: 5,
       text: [
-        'I have been working with SQL and databases for a long time, I bought this course for the advanced chapters but ended up completing the entire course. I learned a lot of new things and it was **well worth the investment**.',
+        'I bought this course for the advanced chapters but ended up completing the entire course. I learned a lot of new things and it was **well worth the investment**.',
         'No matter your SQL experience, this course is **a must-have** if you want to level up your SQL and data analysis skills. Highly recommended!',
       ],
       avatarUrl: 'https://assets.roadmap.sh/guest/william-imoh-sd2dk.jpg',
@@ -186,14 +185,14 @@ export function ReviewCarousel() {
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-3 items-stretch auto-rows-fr">
           {currentBatch.map((review, index) => (
             <div
               key={index}
               className={cn(
-                'review-testimonial relative overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70',
-                index === 2 && batchSize === 3 && 'hidden xl:block',
-                index === 1 && batchSize === 3 && 'hidden lg:block',
+                'review-testimonial relative flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70',
+                index === 2 && batchSize === 3 && 'hidden xl:flex',
+                index === 1 && batchSize === 3 && 'hidden lg:flex',
               )}
             >
               <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-yellow-500/5" />
@@ -213,7 +212,7 @@ export function ReviewCarousel() {
                 </div>
               )}
 
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-1 flex-col gap-3">
                 {(typeof review.text === 'string'
                   ? [review.text]
                   : review.text
@@ -227,7 +226,7 @@ export function ReviewCarousel() {
                   />
                 ))}
               </div>
-              <div className="mt-4 flex items-center gap-4">
+              <div className="mt-10 flex items-center gap-4">
                 {review.avatarUrl && (
                   <img
                     src={review.avatarUrl}
