@@ -38,7 +38,7 @@ dimensions:
   width: 968
   height: 3500
 schema:
-  headline: 'Backend Developer Roadmap'
+  headline: 'Backend Developer Roadmap: What is Backend Development?'
   description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven roadmap.'
   imageUrl: 'https://roadmap.sh/roadmaps/backend.png'
   datePublished: '2023-01-05'
