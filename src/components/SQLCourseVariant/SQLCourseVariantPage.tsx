@@ -31,13 +31,13 @@ export function SQLCourseVariantPage() {
                 target="_blank"
                 className="transition-opacity hover:opacity-100"
               >
-                <RoadmapLogoIcon className="size-22" />
+                <RoadmapLogoIcon className="size-12 sm:size-22" />
               </a>
               <div className="flex flex-col items-start gap-2.5">
                 <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-6xl">
                   Master SQL Queries
                 </h1>
-                <p className="text-left text-xl text-zinc-300 md:text-2xl">
+                <p className="text-left text-balance text-xl text-zinc-300 md:text-2xl">
                   Complete course with AI Tutor, real-world challenges and more
                 </p>
               </div>
@@ -50,25 +50,20 @@ export function SQLCourseVariantPage() {
               7-day money-back guarantee.
             </p>
 
-            <div className="flex flex-col-reverse gap-14 lg:flex-row">
-              <div className="hidden w-full shrink-0 flex-row-reverse items-start justify-between gap-3 text-lg md:flex lg:w-auto lg:flex-col">
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-row items-center gap-2 text-xl text-zinc-300">
-                    <NotebookTextIcon className="size-6 text-yellow-400" />
-                    <span>55+ Lessons</span>
-                  </div>
-                  <div className="flex flex-row items-center gap-2 text-xl text-zinc-300">
-                    <FileQuestionIcon className="size-6 text-yellow-400" />
-                    <span>100+ Challenges</span>
-                  </div>
-                  <div className="flex flex-row items-center gap-2 text-xl text-zinc-300">
-                    <BrainIcon className="size-6 text-yellow-400" />
-                    <span>AI Tutor</span>
-                  </div>
-                  <div className="flex flex-row items-center gap-2 text-xl text-zinc-300">
-                    <CodeIcon className="size-6 text-yellow-400" />
-                    <span>Integrated IDE</span>
-                  </div>
+            <div className="flex flex-col-reverse gap-7 lg:gap-14 lg:flex-row">
+              <div className="w-full shrink-0 flex-row-reverse items-start justify-between gap-3 text-lg md:flex lg:w-auto lg:flex-col">
+                <div className="flex flex-col gap-2 lg:gap-4 mb-7 lg:mb-0">
+                  {[
+                    { Icon: NotebookTextIcon, text: '55+ Lessons' },
+                    { Icon: FileQuestionIcon, text: '100+ Challenges' },
+                    { Icon: BrainIcon, text: 'AI Tutor' },
+                    { Icon: CodeIcon, text: 'Integrated IDE' },
+                  ].map(({ Icon, text }, index) => (
+                    <div key={index} className="flex flex-row items-center gap-2 text-base lg:text-xl text-zinc-300">
+                      <Icon className="size-5 lg:size-6 text-yellow-400" />
+                      <span>{text}</span>
+                    </div>
+                  ))}
                 </div>
 
                 <AuthorCredentials />
