@@ -2,7 +2,7 @@
 
 Git offers several advanced features to manage complex scenarios, including hard resets with `git reset`, reverting changes with `git revert`, reordering commits with `git rebase`, merging in new changes with `git merge`, squashing commits into a single change, temporarily saving uncommitted changes with `git stash` and then applying them with `git stash apply`, and selectively picking specific commits from one branch to apply on another with `git cherry-pick`.
 
-Learn more from the the following resources:
+Learn more from the following resources:
 
 - [article@Resetting, checking out & reverting](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
 - [@article@Git Reset and Revert Tutorial for Beginners](https://www.datacamp.com/tutorial/git-reset-revert-tutorial)
