@@ -22,18 +22,22 @@ seo:
   keywords:
     - 'guide to becoming an ios developer'
     - 'ios developer roadmap'
+    - 'ios developer roadmap 2025'
     - 'ios roadmap'
+    - 'ios roadmap 2025'
     - 'become ios developer'
     - 'ios developer skills'
     - 'ios skills test'
     - 'skills for ios development'
     - 'learn ios development'
+    - 'apple developer roadmap'
     - 'what is ios'
     - 'ios quiz'
     - 'ios interview questions'
 relatedRoadmaps:
   - 'react-native'
   - 'flutter'
+  - 'rust'
 sitemap:
   priority: 1
   changefreq: 'monthly'

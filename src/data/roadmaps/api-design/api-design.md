@@ -9,6 +9,7 @@ title: 'API Design'
 description: 'Step by step guide to learn how to design and build robust APIs.'
 isNew: false
 hasTopics: true
+renderer: 'editor'
 dimensions:
   width: 968
   height: 2317.91
@@ -25,7 +26,7 @@ courses:
     instructor:
       name: 'Kamran Ahmed'
       image: 'https://github.com/kamranahmedse.png'
-      title: 'Founder roadmap.sh'
+      title: 'Founder - roadmap.sh'
 schema:
   headline: 'API Design'
   description: 'Step by step guide to learn how to design and build robust APIs.'
@@ -39,12 +40,12 @@ seo:
     - 'guide to becoming a api designer'
     - 'guide to becoming an api engineer'
     - 'api developer'
+    - 'api design roadmap 2025'
+    - 'api design roadmap'
     - 'api engineer'
+    - 'api design engineer roadmap'
     - 'api skills'
     - 'guide to api'
-    - 'asp.net developer roadmap'
-    - 'asp net developer roadmap'
-    - 'asp developer roadmap'
     - 'api roadmap'
     - 'api skills'
     - 'api skills test'
@@ -55,6 +56,7 @@ seo:
     - 'api interview questions'
     - 'api engineer roadmap'
     - 'api developer roadmap'
+    - 'api developer roadmap 2025'
     - 'become an api developer'
     - 'api developer career path'
     - 'api developer'
@@ -64,7 +66,7 @@ relatedRoadmaps:
   - 'devops'
   - 'python'
   - 'golang'
-  - 'java'
+  - 'design-system'
   - 'nodejs'
 sitemap:
   priority: 1
@@ -73,5 +75,4 @@ tags:
   - 'roadmap'
   - 'main-sitemap'
   - 'skill-roadmap'
-renderer: 'editor'
 ---

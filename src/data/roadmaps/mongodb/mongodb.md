@@ -19,12 +19,13 @@ schema:
   datePublished: '2023-03-16'
   dateModified: '2023-03-16'
 seo:
-  title: 'MongoDB Roadmap - roadmap.sh'
+  title: 'MongoDB Roadmap'
   description: 'Step by step guide to learn MongoDB in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'mongodb tutorial'
     - 'step by step mongodb'
     - 'mongodb roadmap 2024'
+    - 'mongodb roadmap 2025'
     - 'guide to learning mongodb'
     - 'mongodb roadmap'
     - 'mongodb'
@@ -34,7 +35,6 @@ seo:
     - 'mongodb development skills'
     - 'mongodb development skills test'
     - 'mongodb engineer roadmap'
-    - 'mongodb roadmap'
     - 'mongodb career path'
     - 'learn mongodb development'
     - 'what is mongodb'
@@ -44,7 +44,7 @@ relatedRoadmaps:
   - 'postgresql-dba'
   - 'backend'
   - 'nodejs'
-  - 'system-design'
+  - 'redis'
 sitemap:
   priority: 1
   changefreq: 'monthly'

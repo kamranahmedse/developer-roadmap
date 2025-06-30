@@ -19,7 +19,7 @@ schema:
   datePublished: '2023-05-10'
   dateModified: '2023-05-10'
 seo:
-  title: 'Docker Roadmap - roadmap.sh'
+  title: 'Docker Roadmap'
   description: 'Step by step guide to learn Docker in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   keywords:
     - 'docker tutorial'
@@ -27,12 +27,14 @@ seo:
     - 'docker for beginners'
     - 'how to learn docker'
     - 'use docker in production'
-    - 'docker roadmap 2024'
+    - 'docker roadmap 2025'
     - 'guide to learning docker'
     - 'docker roadmap'
     - 'docker learning path'
     - 'docker learning roadmap'
+    - 'docker learning roadmap 2025'
     - 'container roadmap'
+    - 'container roadmap 2025'
     - 'docker'
     - 'docker learning guide'
     - 'docker skills'
@@ -49,6 +51,9 @@ seo:
 relatedRoadmaps:
   - 'devops'
   - 'backend'
+  - 'kubernetes'
+  - 'linux'
+  - 'aws'
 sitemap:
   priority: 1
   changefreq: 'monthly'

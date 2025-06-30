@@ -19,15 +19,16 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Learn to become a modern Flutter developer'
+  title: 'Flutter Roadmap: Learn to become a modern Flutter developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for flutter development. Learn to become a modern Flutter developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
     - 'guide to becoming a flutter developer'
-    - 'guide to becoming a flutter developer'
+    - 'guide to becoming a flutter developer 2025'
     - 'flutter developer'
     - 'flutter engineer'
     - 'guide to flutter'
     - 'flutter roadmap'
+    - 'flutter roadmap 2025'
     - 'flutter skills'
     - 'flutter skills test'
     - 'skills for flutter'
@@ -40,12 +41,12 @@ seo:
     - 'flutter developer career path'
     - 'modern flutter developer'
 relatedRoadmaps:
+  - 'react-native'
+  - 'android'
   - 'backend'
   - 'devops'
   - 'python'
   - 'golang'
-  - 'java'
-  - 'nodejs'
 sitemap:
   priority: 1
   changefreq: 'monthly'

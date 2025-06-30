@@ -25,8 +25,8 @@ seo:
     - 'server side game developer roadmap 2024'
     - 'server side game developer roadmap 2024'
     - 'guide to becoming a server side game developer'
-    - 'guide to becoming a server side game developer'
     - 'server side game developer roadmap'
+    - 'server side game developer roadmap 2025'
     - 'server side game developer'
     - 'server side game engineer'
     - 'server side game skills'
@@ -44,6 +44,8 @@ seo:
     - 'server side game developer interview questions'
 relatedRoadmaps:
   - 'backend'
+  - 'game-developer'
+  - 'software-architect'
 sitemap:
   priority: 1
   changefreq: 'monthly'

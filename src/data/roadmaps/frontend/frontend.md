@@ -65,9 +65,9 @@ seo:
   title: 'Frontend Developer Roadmap: What is Frontend Development?'
   description: 'Learn what Frontend Development is, what frontend developers do and how to become a modern frontend developer using our community-driven roadmap.'
   keywords:
-    - 'javascript roadmap 2024'
-    - 'frontend roadmap 2024'
-    - 'frontend developer roadmap 2024'
+    - 'javascript roadmap 2025'
+    - 'frontend roadmap 2025'
+    - 'frontend developer roadmap 2025'
     - 'guide to becoming a developer'
     - 'guide to becoming a frontend developer'
     - 'frontend developer'
