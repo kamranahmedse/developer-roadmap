@@ -24,8 +24,8 @@ type Review = {
 export function ReviewCarousel() {
   const reviews: Review[] = [
     {
-      companyName: 'roadmapsh.sh',
-      companyLogo: 'https://roadmap.sh/images/brand.png',
+      companyName: 'Cloud Camping',
+      companyLogo: 'https://assets.roadmap.sh/guest/cloudcamping-mcpl6.jpeg',
       name: 'Robin Wieruch',
       role: 'Author - Multiple Best-Sellers',
       rating: 5,
@@ -37,8 +37,8 @@ export function ReviewCarousel() {
       isProminent: true,
     },
     {
-      companyName: 'Maily',
-      companyLogo: 'https://maily.to/brand/logo.png',
+      companyName: 'Hack Mamba',
+      companyLogo: 'https://assets.roadmap.sh/guest/hackmbamba-h0ivr.jpeg',
       name: 'William Imoh',
       role: 'Founder and Data Enthusiast',
       rating: 5,
@@ -50,22 +50,42 @@ export function ReviewCarousel() {
       isProminent: true,
     },
     {
-      companyName: 'roadmapsh.sh',
-      companyLogo: 'https://roadmap.sh/images/brand.png',
-      name: 'Tomáš Janků',
+      companyName: 'GlobalLogic',
+      companyLogo:
+        'https://assets.roadmap.sh/guest/globallogic_logo-3m3ho.jpeg',
+      name: 'Martina Milagros',
       role: 'Software Engineer',
+      rating: 5,
+      text: [
+        'Thanks to Kamran Ahmed for the **incredible Master SQL course!** I truly appreciate the way you break down complex topics with such clarity and ease.',
+        '**Highly recommend this course** to anyone looking to level up their SQL game!',
+      ],
+      avatarUrl: 'https://assets.roadmap.sh/guest/martina-awc4x.jpeg',
+    },
+    {
+      companyName: 'Cisco',
+      companyLogo: 'https://assets.roadmap.sh/guest/cisco-gyw5b.jpeg',
+      name: 'Tomáš Janků',
+      role: 'Sr. Software Engineer',
       rating: 5,
       text: "The course and it's interactivity is excellent and I'd honestly say it's **one of the best** on the SQL theme I've seen out there.",
       avatarUrl: 'https://assets.roadmap.sh/guest/tomas-janku-6bg89.jpeg',
     },
     {
+      companyName: 'Beyond Works',
+      companyLogo:
+        'https://assets.roadmap.sh/guest/beyondwordsio_logo-xia4m.jpeg',
       name: 'Gourav Khunger',
       role: 'Software Engineer',
       rating: 5,
-      text: 'This course was **absolutely brilliant!** The integrated database environment to practice what I learned was the best part.',
+      text: [
+        'This course was **absolutely brilliant!** The integrated database environment to practice what I learned was the best part. Being able to **run queries immediately** and see results in real-time made everything click so much faster than traditional learning methods.',
+      ],
       avatarUrl: 'https://assets.roadmap.sh/guest/gourav-h2f3a.png',
     },
     {
+      companyName: 'xpertSea',
+      companyLogo: 'https://assets.roadmap.sh/guest/xpertsea-y24hu.jpeg',
       name: 'Meabed',
       role: 'CTO',
       rating: 5,
@@ -73,6 +93,8 @@ export function ReviewCarousel() {
       avatarUrl: 'https://assets.roadmap.sh/guest/meabed-fu83q.jpeg',
     },
     {
+      companyName: 'Powersoft19',
+      companyLogo: 'https://assets.roadmap.sh/guest/powersoft19-sk4t1.jpeg',
       name: 'Mohsin Aheer',
       role: 'Sr. Software Engineer',
       rating: 5,
@@ -80,20 +102,27 @@ export function ReviewCarousel() {
       avatarUrl: 'https://assets.roadmap.sh/guest/mohsinaheer-szchu.jpeg',
     },
     {
-      name: 'Reeve Tee',
-      role: 'Software Engineer',
-      rating: 5,
-      text: 'I found the course **highly comprehensive and incredibly valuable**. I would love to see more courses like this!',
-      avatarUrl: '',
-    },
-    {
+      companyName: 'xpertSea',
+      companyLogo: 'https://assets.roadmap.sh/guest/xpertsea-y24hu.jpeg',
       name: 'Zeeshan',
       role: 'Sr. Software Engineer',
       rating: 5,
-      text: 'Loved the teaching style and the way the course was structured. The **AI tutor was a great help** when I got stuck.',
+      text: 'Loved the teaching style and the way the course was structured. The **AI tutor was a great help** when I wanted some extra help.',
       avatarUrl: 'https://assets.roadmap.sh/guest/ziishaned-qjepj.png',
     },
     {
+      companyName: 'University of Regensburg',
+      companyLogo:
+        'https://assets.roadmap.sh/guest/university_of_regensburg_logo-01784.jpeg',
+      name: 'Faisal Ahsan',
+      role: 'Software Engineer',
+      rating: 5,
+      text: 'The course and the learning experience was great. What I really liked was the **no-fluff explanations** and **practical examples**.',
+      avatarUrl: 'https://assets.roadmap.sh/guest/faisal-q78p2.jpeg',
+    },
+    {
+      companyName: 'xpertSea',
+      companyLogo: 'https://assets.roadmap.sh/guest/xpertsea-y24hu.jpeg',
       name: 'Adnan Ahmed',
       role: 'Engineering Manager',
       rating: 5,
@@ -106,13 +135,6 @@ export function ReviewCarousel() {
       rating: 5,
       text: "Best SQL course I've taken. The progression from basic to advanced concepts is **well thought out**, and the challenges are **excellent**.",
       avatarUrl: 'https://assets.roadmap.sh/guest/kalvin-d65ol.jpeg',
-    },
-    {
-      name: 'Faisal Ahsan',
-      role: 'Software Engineer',
-      rating: 5,
-      text: 'The course and the learning experience was great. What I really liked was the **no-fluff explanations** and **practical examples**.',
-      avatarUrl: 'https://assets.roadmap.sh/guest/faisal-q78p2.jpeg',
     },
   ];
 
@@ -185,48 +207,18 @@ export function ReviewCarousel() {
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-3 items-stretch auto-rows-fr">
+        <div className="grid auto-rows-fr grid-cols-1 items-stretch gap-2 sm:grid-cols-2 xl:grid-cols-3">
           {currentBatch.map((review, index) => (
             <div
               key={index}
               className={cn(
-                'review-testimonial relative flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm [&_strong]:font-normal [&_strong]:text-yellow-300/70',
+                'review-testimonial relative flex h-full flex-col overflow-hidden rounded-2xl bg-linear-to-br from-yellow-500/10 via-yellow-500/5 to-transparent p-8 backdrop-blur-sm lg:min-h-[456px] [&_strong]:font-normal [&_strong]:text-yellow-300/70',
                 index === 2 && batchSize === 3 && 'hidden xl:flex',
                 index === 1 && batchSize === 3 && 'hidden lg:flex',
               )}
             >
               <div className="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-yellow-500/5" />
-              {review?.companyName && (
-                <div className="mb-4 flex items-center gap-3">
-                  {review?.companyLogo && (
-                    <img
-                      src={review?.companyLogo}
-                      alt={review?.companyName}
-                      className="h-10 w-10 rounded-lg border border-yellow-500/20 object-cover"
-                    />
-                  )}
-
-                  <div className="text-lg font-medium text-zinc-200">
-                    {review?.companyName}
-                  </div>
-                </div>
-              )}
-
-              <div className="flex flex-1 flex-col gap-3">
-                {(typeof review.text === 'string'
-                  ? [review.text]
-                  : review.text
-                ).map((text, index) => (
-                  <p
-                    key={index}
-                    className="text-zinc-400 [&_strong]:font-semibold! [&_strong]:text-white!"
-                    dangerouslySetInnerHTML={{
-                      __html: markdownToHtml(text),
-                    }}
-                  />
-                ))}
-              </div>
-              <div className="mt-10 flex items-center gap-4">
+              <div className="mb-4 flex items-center gap-4">
                 {review.avatarUrl && (
                   <img
                     src={review.avatarUrl}
@@ -254,6 +246,36 @@ export function ReviewCarousel() {
                   </div>
                 </div>
               </div>
+
+              <div className="flex flex-1 flex-col gap-3">
+                {(typeof review.text === 'string'
+                  ? [review.text]
+                  : review.text
+                ).map((text, index) => (
+                  <p
+                    key={index}
+                    className="text-zinc-400 [&_strong]:font-semibold! [&_strong]:text-white!"
+                    dangerouslySetInnerHTML={{
+                      __html: markdownToHtml(text),
+                    }}
+                  />
+                ))}
+              </div>
+
+              {review?.companyName && (
+                <div className="mt-10 flex items-center gap-3">
+                  {review?.companyLogo && (
+                    <img
+                      src={review?.companyLogo}
+                      alt={review?.companyName}
+                      className="h-10 w-10 rounded-lg border border-yellow-500/20 object-cover"
+                    />
+                  )}
+                  <div className="text-lg font-medium text-zinc-200">
+                    {review?.companyName}
+                  </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
