@@ -1,12 +1,13 @@
 import {
   BookOpenIcon,
   FileTextIcon,
+  ListCheckIcon,
+  ListTodoIcon,
   MapIcon,
   SparklesIcon,
   type LucideIcon,
 } from 'lucide-react';
 import { useEffect, useId, useState } from 'react';
-import { FormatItem } from './FormatItem';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
@@ -18,35 +19,23 @@ import {
 import {
   QuestionAnswerChat,
   type QuestionAnswerChatMessage,
-} from './QuestionAnswerChat';
+} from '../ContentGenerator/QuestionAnswerChat';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
 import { useParams } from '../../hooks/use-params';
+import { FormatItem } from '../ContentGenerator/FormatItem';
 
-const allowedFormats = ['course', 'guide', 'roadmap'] as const;
+const allowedFormats = ['mcq', 'open-ended', 'mixed'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
 
-export function ContentGenerator() {
+export function AIQuizGenerator() {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
-  const params = useParams<{ format: AllowedFormat }>();
 
   const toast = useToast();
   const [title, setTitle] = useState('');
-  const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
-
-  useEffect(() => {
-    const isValidFormat = allowedFormats.find(
-      (format) => format.value === params.format,
-    );
-
-    if (isValidFormat) {
-      setSelectedFormat(isValidFormat.value);
-    } else {
-      setSelectedFormat('course');
-    }
-  }, [params.format]);
+  const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('mcq');
 
   // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
@@ -71,19 +60,19 @@ export function ContentGenerator() {
     value: AllowedFormat;
   }[] = [
     {
-      label: 'Course',
-      icon: BookOpenIcon,
-      value: 'course',
+      label: 'MCQ',
+      icon: ListTodoIcon,
+      value: 'mcq',
     },
     {
-      label: 'Guide',
+      label: 'Open-Ended',
       icon: FileTextIcon,
-      value: 'guide',
+      value: 'open-ended',
     },
     {
-      label: 'Roadmap',
+      label: 'Mixed',
       icon: MapIcon,
-      value: 'roadmap',
+      value: 'mixed',
     },
   ];
 
@@ -98,22 +87,13 @@ export function ContentGenerator() {
       clearQuestionAnswerChatMessages();
       sessionId = storeQuestionAnswerChatMessages(questionAnswerChatMessages);
     }
-
-    const trimmedTitle = title.trim();
-    if (selectedFormat === 'course') {
-      window.location.href = `/ai/course?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
-    } else if (selectedFormat === 'guide') {
-      window.location.href = `/ai/guide?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
-    } else if (selectedFormat === 'roadmap') {
-      window.location.href = `/ai/roadmap?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
-    }
   };
 
   useEffect(() => {
     window?.fireEvent({
       action: 'tutor_user',
       category: 'ai_tutor',
-      label: 'Visited AI Course Page',
+      label: 'Visited AI Quiz Generator Page',
     });
   }, []);
 
@@ -221,7 +201,7 @@ export function ContentGenerator() {
           <span className="sm:hidden">Customize your {selectedFormat}</span>
         </label>
 
-        {showFineTuneOptions && (
+        {/* {showFineTuneOptions && (
           <QuestionAnswerChat
             term={title}
             format={selectedFormat}
@@ -231,7 +211,7 @@ export function ContentGenerator() {
               handleSubmit();
             }}
           />
-        )}
+        )} */}
 
         <button
           type="submit"
