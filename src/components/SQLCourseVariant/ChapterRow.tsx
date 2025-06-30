@@ -119,7 +119,7 @@ export function ChapterRow(props: ChapterRowProps) {
                   {challenges.map((challenge, index) => (
                     <div
                       key={index}
-                      className="flex items-center gap-3 text-zinc-400 hover:text-yellow-500"
+                      className="flex items-center gap-3 text-zinc-400 cursor-text"
                     >
                       {challenge.type === 'challenge' ? (
                         <CodeIcon className="h-4 w-4" />
