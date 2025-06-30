@@ -35,16 +35,6 @@
         "type": "article"
       },
       {
-        "title": "The Beginners Guide to C#",
-        "url": "https://www.w3schools.com/CS/index.php",
-        "type": "article"
-      },
-      {
-        "title": "C# Tutorial",
-        "url": "https://www.w3schools.com/cs/index.php",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about C#",
         "url": "https://app.daily.dev/tags/csharp?ref=roadmapsh",
         "type": "article"
@@ -115,11 +105,6 @@
       {
         "title": "C# Tutorials",
         "url": "https://dotnettutorials.net/course/csharp-dot-net-tutorials/",
-        "type": "article"
-      },
-      {
-        "title": "C# tutorials - W3Schools",
-        "url": "https://www.w3schools.com/cs/index.php",
         "type": "article"
       },
       {
@@ -299,11 +284,6 @@
     "description": "SQL stands for Structured Query Language. SQL lets you access and manipulate databases SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.\n\nAlthough SQL is an ANSI/ISO standard, there are different versions of the SQL language.\n\nHowever, to be compliant with the ANSI standard, they all support at least the major commands (such as SELECT, UPDATE, DELETE, INSERT, WHERE) in a similar manner.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Introduction to SQL",
-        "url": "https://www.w3schools.com/sql/sql_intro.asp",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about SQL",
         "url": "https://app.daily.dev/tags/sql?ref=roadmapsh",
         "type": "article"
@@ -341,11 +321,6 @@
     "description": "A stored procedure is a pre-compiled collection of SQL statements that can be executed on a database server. Stored procedures are typically used to perform specific tasks, such as retrieving data from a database, inserting or updating data, or performing complex calculations. They are stored on the database server and can be called or executed from a client application or other stored procedures. Stored procedures can improve database performance by reducing the amount of SQL code needed to be executed and allowing developers to reuse common pieces of code. They can also provide security by allowing database administrators to control which users have access to specific stored procedures.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Stored Procedure Tutorial",
-        "url": "https://www.w3schools.com/sql/sql_stored_procedures.asp",
-        "type": "article"
-      },
-      {
         "title": "Stored Procedure in SQL: Benefits And How to Create It",
         "url": "https://www.simplilearn.com/tutorials/sql-tutorial/stored-procedure-in-sql",
         "type": "article"
@@ -361,11 +336,6 @@
     "title": "Constraints",
     "description": "Database constraints are rules that are used to limit the data that can be stored in a database table. These constraints can be used to ensure the integrity and accuracy of the data in the table, and they can be used to enforce business rules or other requirements. For example, a constraint might be used to ensure that a column only contains positive numbers, or to ensure that a column always has a unique value. Constraints can be specified at the time a table is created, or they can be added to an existing table. Some common types of constraints include primary keys, foreign keys, and NOT NULL constraints.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "SQL Constraints",
-        "url": "https://www.w3schools.com/sql/sql_constraints.asp",
-        "type": "article"
-      },
       {
         "title": "Constraints of SQL",
         "url": "https://www.educative.io/courses/database-design-fundamentals/m7JnY9Xm6Qp",
@@ -1132,11 +1102,6 @@
         "type": "article"
       },
       {
-        "title": "ASP.NET Web Pages - Databases",
-        "url": "https://www.w3schools.com/asp/webpages_database.asp",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Backend Development",
         "url": "https://app.daily.dev/tags/backend?ref=roadmapsh",
         "type": "article"
@@ -1328,11 +1293,6 @@
       {
         "title": "Tutorials for SQL Server",
         "url": "https://docs.microsoft.com/en-us/sql/sql-server/tutorials-for-sql-server-2016?view=sql-server-ver15",
-        "type": "article"
-      },
-      {
-        "title": "Getting started with SQL",
-        "url": "https://www.w3schools.com/sql/default.asp",
         "type": "article"
       },
       {
@@ -2716,11 +2676,6 @@
     "title": "Razor",
     "description": "Razor is a markup syntax for embedding server-side code in web pages. It was introduced with [ASP.NET](http://ASP.NET) MVC 3 and later became a part of [ASP.NET](http://ASP.NET) Web Pages. It allows developers to write server-side code using C# or Visual Basic and embed it in HTML markup. Its syntax is designed to be compact and easy to read. It provides a rich set of features for building web applications, such as a component model for building reusable UI, a routing system for navigation, and support for dependency injection, it also allows you to use the same libraries, frameworks, and tools that you're already familiar with from building traditional [ASP.NET](http://ASP.NET) web applications.\n\nTo learn more, visit the following links:",
     "links": [
-      {
-        "title": "Complete Guide to ASP.NET Razor",
-        "url": "https://w3schools.com/asp/razor_intro.asp",
-        "type": "article"
-      },
       {
         "title": "Introduction to ASP.NET Web Programming Using Razor",
         "url": "https://learn.microsoft.com/en-us/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c",

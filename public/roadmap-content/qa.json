@@ -836,21 +836,6 @@
     "description": "HTML stands for HyperText Markup Language. It is used on the front and gives structure to the webpage, which you can style using CSS and make interactive using JavaScript.\n\nCSS or Cascading Style Sheets is the language used to style the front end of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.\n\nJavaScript allows you to add interactivity to your pages. You may have seen common examples on the websites: sliders, click interactions, popups, and so on.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "W3Schools - Learn HTML",
-        "url": "https://www.w3schools.com/html/html_intro.asp",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools — Learn CSS",
-        "url": "https://www.w3schools.com/css/",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about CSS",
         "url": "https://app.daily.dev/tags/css?ref=roadmapsh",
         "type": "article"
@@ -877,11 +862,6 @@
     "title": "Ajax",
     "description": "AJAX stands for Asynchronous JavaScript And XML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with servers. It can send and receive information in various formats, including JSON, XML, HTML, and text files.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "What is AJAX?",
-        "url": "https://www.w3schools.com/whatis/whatis_ajax.asp",
-        "type": "article"
-      },
       {
         "title": "Getting Started with AJAX",
         "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started",

@@ -169,18 +169,8 @@
         "type": "article"
       },
       {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
-        "type": "article"
-      },
-      {
         "title": "The Modern JavaScript Tutorial",
         "url": "https://javascript.info/",
-        "type": "article"
-      },
-      {
-        "title": "What is NPM?",
-        "url": "https://www.w3schools.com/nodejs/nodejs_npm.asp",
         "type": "article"
       },
       {
@@ -768,11 +758,6 @@
       {
         "title": "Bitbucket Overview",
         "url": "https://bitbucket.org/product/guides/getting-started/overview",
-        "type": "article"
-      },
-      {
-        "title": "Git and Bitbucket Introduction",
-        "url": "https://www.w3schools.com/git/git_intro.asp?remote=bitbucket",
         "type": "article"
       },
       {

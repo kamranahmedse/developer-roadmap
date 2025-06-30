@@ -30,11 +30,6 @@
         "type": "article"
       },
       {
-        "title": "Learn Kotlin - w3schools",
-        "url": "https://www.w3schools.com/kotlin/",
-        "type": "article"
-      },
-      {
         "title": "Learn Kotlin Programming for Beginners - Free Code Camp",
         "url": "https://youtu.be/EExSSotojVI?si=4VPW8ZHa2UMX0HH1",
         "type": "video"
@@ -106,11 +101,6 @@
       {
         "title": "Kotlin Docs",
         "url": "https://kotlinlang.org/docs/getting-started.html",
-        "type": "article"
-      },
-      {
-        "title": "Kotlin Tutorial for Beginners",
-        "url": "https://www.w3schools.com/kotlin/index.php",
         "type": "article"
       }
     ]

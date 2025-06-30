@@ -9,18 +9,8 @@
         "type": "article"
       },
       {
-        "title": "Learn C++ - W3Schools",
-        "url": "https://www.w3schools.com/cpp/",
-        "type": "article"
-      },
-      {
         "title": "Learn C++ - Tutorials Point",
         "url": "https://www.tutorialspoint.com/cplusplus/index.htm",
-        "type": "article"
-      },
-      {
-        "title": "Learn C - W3Schools",
-        "url": "https://www.w3schools.com/c/",
         "type": "article"
       },
       {
@@ -80,11 +70,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools - Python Tutorial ",
-        "url": "https://www.w3schools.com/python/",
-        "type": "article"
-      },
-      {
         "title": "Python Crash Course",
         "url": "https://ehmatthes.github.io/pcc/",
         "type": "article"
@@ -131,11 +116,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools Go Tutorial",
-        "url": "https://www.w3schools.com/go/",
-        "type": "article"
-      },
-      {
         "title": "Making a RESTful JSON API in Go",
         "url": "https://thenewstack.io/make-a-restful-json-api-go/",
         "type": "article"
@@ -159,11 +139,6 @@
       {
         "title": "C# Learning Path",
         "url": "https://docs.microsoft.com/en-us/learn/paths/csharp-first-steps/?WT.mc_id=dotnet-35129-website",
-        "type": "article"
-      },
-      {
-        "title": "C# on W3 schools",
-        "url": "https://www.w3schools.com/cs/index.php",
         "type": "article"
       },
       {
@@ -249,11 +224,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools C++",
-        "url": "https://www.w3schools.com/cpp/default.asp",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about C++ Programming",
         "url": "https://app.daily.dev/tags/c++?ref=roadmapsh",
         "type": "article"
@@ -264,11 +234,6 @@
     "title": "C",
     "description": "C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Learn C - W3Schools",
-        "url": "https://www.w3schools.com/c/",
-        "type": "article"
-      },
       {
         "title": "Learn C - Tutorials Point",
         "url": "https://www.tutorialspoint.com/cprogramming/index.htm",
@@ -308,11 +273,6 @@
       {
         "title": "Java",
         "url": "https://www.java.com/",
-        "type": "article"
-      },
-      {
-        "title": "W3 Schools Tutorials",
-        "url": "https://www.w3schools.com/java/",
         "type": "article"
       },
       {

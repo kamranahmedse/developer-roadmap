@@ -2250,11 +2250,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools - Python Tutorial",
-        "url": "https://www.w3schools.com/python/",
-        "type": "article"
-      },
-      {
         "title": "Python Crash Course",
         "url": "https://ehmatthes.github.io/pcc/",
         "type": "article"
@@ -2288,11 +2283,6 @@
       {
         "title": "Go by Example - annotated example programs",
         "url": "https://gobyexample.com/",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools Go Tutorial",
-        "url": "https://www.w3schools.com/go/",
         "type": "article"
       },
       {

@@ -24,11 +24,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools - Python Tutorial",
-        "url": "https://www.w3schools.com/python",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Python",
         "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
         "type": "article"
@@ -44,11 +39,6 @@
     "title": "Basic Syntax",
     "description": "Setup the environment for python and get started with the basics.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "W3Schools - Python",
-        "url": "https://www.w3schools.com/python/",
-        "type": "article"
-      },
       {
         "title": "Python Basics",
         "url": "https://www.tutorialspoint.com/python/python_basic_syntax.htm",
@@ -73,16 +63,6 @@
       {
         "title": "Variables in Python",
         "url": "https://realpython.com/python-variables",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools — Python Variables",
-        "url": "https://www.w3schools.com/python/python_variables.asp",
-        "type": "article"
-      },
-      {
-        "title": "Python Data Types",
-        "url": "https://www.w3schools.com/python/python_datatypes.asp",
         "type": "article"
       },
       {
@@ -170,11 +150,6 @@
         "type": "article"
       },
       {
-        "title": "Python Functions - W3Schools",
-        "url": "https://www.w3schools.com/python/python_functions.asp",
-        "type": "article"
-      },
-      {
         "title": "Defining Python Functions",
         "url": "https://realpython.com/defining-your-own-python-function/",
         "type": "article"
@@ -243,11 +218,6 @@
         "type": "article"
       },
       {
-        "title": "An W3Schools - Python Sets",
-        "url": "https://www.w3schools.com/python/python_sets.asp",
-        "type": "article"
-      },
-      {
         "title": "Python Sets tutorial for Beginners",
         "url": "https://www.youtube.com/watch?v=t9j8lCUGZXo",
         "type": "video"
@@ -261,11 +231,6 @@
       {
         "title": "Dictionaries in Python",
         "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
-        "type": "article"
-      },
-      {
-        "title": "W3 Schools - Dictionaries",
-        "url": "https://www.w3schools.com/python/python_dictionaries.asp",
         "type": "article"
       },
       {
@@ -526,11 +491,6 @@
     "description": "Python Lambda Functions are anonymous function means that the function is without a name. As we already know that the def keyword is used to define a normal function in Python. Similarly, the lambda keyword is used to define an anonymous function in Python.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Lambdas in Python",
-        "url": "https://www.w3schools.com/python/python_lambda.asp",
-        "type": "article"
-      },
-      {
         "title": "How to use Lambda functions",
         "url": "https://realpython.com/python-lambda/",
         "type": "article"
@@ -572,11 +532,6 @@
     "title": "Iterators",
     "description": "An iterator is an object that contains a countable number of values. An iterator is an object that can be iterated upon, meaning that you can traverse through all the values. Technically, in Python, an iterator is an object which implements the iterator protocol, which consist of the methods **iter**() and **next**() .\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Iterators in Python",
-        "url": "https://www.w3schools.com/python/python_iterators.asp",
-        "type": "article"
-      },
       {
         "title": "Python Iterators",
         "url": "https://www.programiz.com/python-programming/iterator",
@@ -646,11 +601,6 @@
         "type": "article"
       },
       {
-        "title": "Python Classes and Objects",
-        "url": "https://www.w3schools.com/python/python_classes.asp",
-        "type": "article"
-      },
-      {
         "title": "Python OOP Tutorial",
         "url": "https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc",
         "type": "video"
@@ -660,13 +610,7 @@
   "S0FLE70szSVUPI0CDEQK7": {
     "title": "Inheritance",
     "description": "Inheritance is a fundamental concept in object-oriented programming (OOP) that allows one class to inherit the properties and behavior of another class.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Python Inheritance",
-        "url": "https://www.w3schools.com/python/python_inheritance.asp",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "zAS4YiEJ6VPsyABrkIG8i": {
     "title": "Methods, Dunder",
@@ -741,11 +685,6 @@
         "type": "article"
       },
       {
-        "title": "Python PIP Introduction",
-        "url": "https://www.w3schools.com/python/python_pip.asp",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about PIP",
         "url": "https://app.daily.dev/tags/pip?ref=roadmapsh",
         "type": "article"
@@ -786,11 +725,6 @@
       {
         "title": "Python List Comprehensions",
         "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions",
-        "type": "article"
-      },
-      {
-        "title": "Python - List Comprehension",
-        "url": "https://www.w3schools.com/python/python_lists_comprehension.asp",
         "type": "article"
       },
       {

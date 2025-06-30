@@ -35,11 +35,6 @@
         "type": "article"
       },
       {
-        "title": "Node.js - Introduction",
-        "url": "https://www.w3schools.com/nodejs/nodejs_intro.asp",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about Node.js",
         "url": "https://app.daily.dev/tags/nodejs?ref=roadmapsh",
         "type": "article"
@@ -682,11 +677,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools – JavaScript - setTimeOut",
-        "url": "https://www.w3schools.com/jsref/met_win_settimeout.asp",
-        "type": "article"
-      },
-      {
         "title": "setInterval and setTimeout: timing events",
         "url": "https://www.youtube.com/watch?v=kOcFZV3c75I",
         "type": "video"
@@ -863,11 +853,6 @@
       {
         "title": "fs module",
         "url": "https://nodejs.org/api/fs.html",
-        "type": "article"
-      },
-      {
-        "title": "More about fs module",
-        "url": "https://www.w3schools.com/nodejs/nodejs_filesystem.asp",
         "type": "article"
       },
       {

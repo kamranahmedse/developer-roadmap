@@ -14,11 +14,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
-        "type": "article"
-      },
-      {
         "title": "The Modern JavaScript Tutorial",
         "url": "https://javascript.info/",
         "type": "article"
@@ -57,11 +52,6 @@
       {
         "title": "JavaScript MDN Docs",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/",
         "type": "article"
       },
       {
@@ -134,11 +124,6 @@
       {
         "title": "Brief History of JavaScript",
         "url": "https://roadmap.sh/guides/history-of-javascript",
-        "type": "article"
-      },
-      {
-        "title": "JavaScript Version",
-        "url": "https://www.w3schools.com/js/js_versions.asp",
         "type": "article"
       },
       {
@@ -247,11 +232,6 @@
     "description": "In JavaScript, scope refers to the visibility of a variable or how it can be used after it is declared. The scope of a variable depends on the keyword that was used to declare it.\n\nThe three types of Scope are Global Scope, Function Scope, and Block Scope. Before ES6 (2015), JavaScript had only Global Scope and Function Scope with the `var` keyword. ES6 introduced `let` and `const` which allow Block Scope in JavaScript.\n\nGlobal Scope: Variables declared outside any function or curly braces '{}' have Global Scope, and can be accessed from anywhere within the same Javascript code. `var`, `let` and `const` all provide this Scope.\n\nFunction Scope: Variables declared within a function can only be used within that same function. Outside that function, they are undefined. `var`, `let` and `const` all provide this Scope.\n\nBlock Scope: A block is any part of JavaScript code bounded by '{}'. Variables declared within a block can not be accessed outside that block. This Scope is only provided by the `let` and `const` keywords. If you declare a variable within a block using the `var` keyword, it will NOT have Block Scope.\n\nLocal Scope: Local variables are only recognized inside their functions, variables with the same name can be used in different functions. Local variables are created when a function starts, and deleted when the function is completed. `var`, `let` and `const` all provide this Scope.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "JavaScript Scope",
-        "url": "https://www.w3schools.com/js/js_scope.asp",
-        "type": "article"
-      },
-      {
         "title": "javascript scope",
         "url": "https://wesbos.com/javascript/03-the-tricky-bits/scope",
         "type": "article"
@@ -275,11 +255,6 @@
       {
         "title": "JavaScript Variables",
         "url": "https://javascript.info/variables",
-        "type": "article"
-      },
-      {
-        "title": "JavaScript Variables - W3Schools",
-        "url": "https://www.w3schools.com/js/js_variables.asp",
         "type": "article"
       },
       {
@@ -342,11 +317,6 @@
     "description": "When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "JavaScript Scope",
-        "url": "https://www.w3schools.com/js/js_scope.asp",
-        "type": "article"
-      },
-      {
         "title": "Function Scope & Block Scope in JS",
         "url": "https://medium.com/nerd-for-tech/function-scope-block-scope-in-js-d29c8e7cd216",
         "type": "article"
@@ -356,13 +326,7 @@
   "oC4o6GLEES_nUgCJu9Q6I": {
     "title": "Global",
     "description": "Variables declared Globally (outside any function) have Global Scope. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with `var`, `let` and `const` are quite similar when declared outside a block.\n\nNote\n----\n\nIf you assign a value to a variable that has not been declared i.e `potato = true` it will automatically become a _GLOBAL_ variable.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "JavaScript Scope",
-        "url": "https://www.w3schools.com/js/js_scope.asp",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "kvActjpU4FUJdrmuFoFEe": {
     "title": "All about Variables",
@@ -397,11 +361,6 @@
       {
         "title": "JavaScript data types and data structures",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures",
-        "type": "article"
-      },
-      {
-        "title": "JavaScript Data Types",
-        "url": "https://www.w3schools.com/js/js_datatypes.asp",
         "type": "article"
       },
       {
@@ -535,11 +494,6 @@
         "title": "Working with Objects",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects",
         "type": "article"
-      },
-      {
-        "title": "JavaScript Object Definition",
-        "url": "https://www.w3schools.com/js/js_object_definition.asp",
-        "type": "article"
       }
     ]
   },
@@ -593,11 +547,6 @@
         "title": "typeof Reference",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
         "type": "article"
-      },
-      {
-        "title": "typeof Live Examples",
-        "url": "https://www.w3schools.com/js/tryit.asp?filename=tryjs_typeof_all",
-        "type": "article"
       }
     ]
   },
@@ -624,11 +573,6 @@
       {
         "title": "Type Conversions",
         "url": "https://javascript.info/type-conversions",
-        "type": "article"
-      },
-      {
-        "title": "JavaScript Type Conversion",
-        "url": "https://www.w3schools.com/js/js_type_conversion.asp",
         "type": "article"
       },
       {
@@ -694,11 +638,6 @@
     "title": "Implicit Type Casting",
     "description": "Implicit type conversion happens when the compiler or runtime automatically converts data types. JavaScript is loosely typed language and most of the time operators automatically convert a value to the right type.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "W3Schools - JavaScript Tutorials",
-        "url": "https://www.w3schools.com/js/js_type_conversion.asp",
-        "type": "article"
-      },
       {
         "title": "TutorialsPoint - JavaScript Tutorials",
         "url": "https://www.tutorialspoint.com/explain-typecasting-in-javascript",
@@ -927,11 +866,6 @@
     "description": "Comparison operators are used in logical statements to determine equality or difference between variables or values. Comparison operators can be used in conditional statements to compare values and take action depending on the result.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "JavaScript Comparisons",
-        "url": "https://www.w3schools.com/js/js_comparisons.asp",
-        "type": "article"
-      },
-      {
         "title": "JavaScript Equality Operators",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#equality_operators",
         "type": "article"
@@ -1059,11 +993,6 @@
         "title": "do...while - MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while",
         "type": "article"
-      },
-      {
-        "title": "JavaScript do...while Loop - W3Schools",
-        "url": "https://www.w3schools.com/jsref/jsref_dowhile.asp",
-        "type": "article"
       }
     ]
   },
@@ -1122,11 +1051,6 @@
       {
         "title": "JavaScript MDN Docs - break statement",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools – JavaScript Tutorial",
-        "url": "https://www.w3schools.com/js/js_break.asp",
         "type": "article"
       }
     ]
@@ -1221,11 +1145,6 @@
     "description": "The throw statement throws a user-defined exception. Execution of the current function will stop (the statements after throw won't be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate. (excerpt from MDN)\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "throw statement - w3schools",
-        "url": "https://www.w3schools.com/jsref/jsref_throw.asp",
-        "type": "article"
-      },
-      {
         "title": "JavaScript MDN Docs",
         "url": "https://developer.mozilla.org/en-us/docs/web/javascript/reference/statements/throw",
         "type": "article"
@@ -1245,13 +1164,7 @@
   "rbjEZe5vxCJ8reI1oZ-jf": {
     "title": "try/catch/finally",
     "description": "These are ways of handling errors in your JavaScript code. Inside the try code block we have the code to run, inside the catch block we handle the errors, and inside the finally block we have code that runs after the execution of the previous code blocks, regardless of the result.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "JavaScript Errors",
-        "url": "https://www.w3schools.com/js/js_errors.asp",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "-z-4VTaC3tOThqChgyoMs": {
     "title": "Error Objects",
@@ -1336,11 +1249,6 @@
     "description": "Comparison operators are the operators that compare values and return true or false. The operators include: `>`, `<`, `>=`, `<=`, `==`, `===`, `!=` and `!==`\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "W3Schools - JavaScript Tutorials",
-        "url": "https://www.w3schools.com/js/js_comparisons.asp",
-        "type": "article"
-      },
-      {
         "title": "JavaScript MDN Docs",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators",
         "type": "article"
@@ -1359,11 +1267,6 @@
       {
         "title": "Arithmetic Operators - JavaScript.info",
         "url": "https://javascript.info/operators#maths",
-        "type": "article"
-      },
-      {
-        "title": "JavaScript Arithmetic Operators",
-        "url": "https://www.w3schools.com/js/js_arithmetic.asp",
         "type": "article"
       }
     ]
@@ -1429,11 +1332,6 @@
       {
         "title": "JavaScript MDN Docs",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#conditional_operator",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools - JavaScript Tutorials",
-        "url": "https://www.w3schools.com/js/js_comparisons.asp",
         "type": "article"
       }
     ]
@@ -1509,11 +1407,6 @@
       {
         "title": "MDN - Arrow Function Expressions",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
-        "type": "article"
-      },
-      {
-        "title": "JavaScript Arrow Function",
-        "url": "https://www.w3schools.com/js/js_arrow_function.asp",
         "type": "article"
       }
     ]
@@ -1693,11 +1586,6 @@
     "description": "In JavaScript, the `this` keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences between strict mode and non-strict mode.\n\n*   In an object method, `this` refers to the object\n*   Alone, `this` refers to the global object\n*   In a function, `this` refers to the global object\n*   In a function, in strict mode, `this` is undefined\n*   In an event, `this` refers to the element that received the event\n*   Methods like call(), apply(), and bind() can refer `this` to any object\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "The JavaScript this Keyword",
-        "url": "https://www.w3schools.com/js/js_this.asp",
-        "type": "article"
-      },
-      {
         "title": "This Keyword",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
         "type": "article"
@@ -1717,46 +1605,23 @@
         "title": "this in methods",
         "url": "https://javascript.info/object-methods#this-in-methods",
         "type": "article"
-      },
-      {
-        "title": "Short and clear post about the this keyword",
-        "url": "https://www.w3schools.com/js/js_this.asp",
-        "type": "article"
       }
     ]
   },
   "azsXq6Y5iCvQDgTWZpWQ3": {
     "title": "in a function",
     "description": "The keyword `this` when used in a function refers to the global object.\n\n_Note: in a browser window the global object is the `window` object._\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "this in a function",
-        "url": "https://www.w3schools.com/js/js_this.asp",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "qps2Mdm-lwa4Wr0IxKm0C": {
     "title": "using it alone",
     "description": "The keyword `this` when used alone refers to the global object.\n\n_Note: in a browser window the global object is the `window` object._\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "this Alone",
-        "url": "https://www.w3schools.com/js/js_this.asp",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "JVbEBtVrTTFnTF3_yUIAC": {
     "title": "in event handlers",
     "description": "The keyword `this` when used in an event handler refers to the element that received the event.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "this in Event handlers",
-        "url": "https://www.w3schools.com/js/js_this.asp",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "P0190rTm2wLQmCzWOKour": {
     "title": "in arrow functions",
@@ -1836,11 +1701,6 @@
         "title": "Function binding",
         "url": "https://javascript.info/bind",
         "type": "article"
-      },
-      {
-        "title": "Javascript Function Bind()",
-        "url": "https://www.w3schools.com/js/js_function_bind.asp",
-        "type": "article"
       }
     ]
   },
@@ -1906,11 +1766,6 @@
         "type": "article"
       },
       {
-        "title": "W3Schools – JavaScript - setTimeOut",
-        "url": "https://www.w3schools.com/jsref/met_win_settimeout.asp",
-        "type": "article"
-      },
-      {
         "title": "setInterval and setTimeout: timing events",
         "url": "https://www.youtube.com/watch?v=kOcFZV3c75I",
         "type": "video"
@@ -1945,11 +1800,6 @@
       {
         "title": "Callback Functions",
         "url": "https://developer.mozilla.org/en-US/docs/Glossary/Callback_function",
-        "type": "article"
-      },
-      {
-        "title": "W3School CallBack Function",
-        "url": "https://www.w3schools.com/js/js_callback.asp",
         "type": "article"
       }
     ]
@@ -2058,11 +1908,6 @@
         "type": "article"
       },
       {
-        "title": "Fetch W3school Docs",
-        "url": "https://www.w3schools.com/jsref/api_fetch.asp",
-        "type": "article"
-      },
-      {
         "title": "Network request - Fetch",
         "url": "https://javascript.info/fetch",
         "type": "article"
@@ -2086,11 +1931,6 @@
       {
         "title": "Network request - XMLHttpRequest",
         "url": "https://javascript.info/xmlhttprequest",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools",
-        "url": "https://www.w3schools.com/xml/xml_http.asp",
         "type": "article"
       }
     ]
@@ -2259,11 +2099,6 @@
       {
         "title": "DOM- MDN Docs",
         "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",
-        "type": "article"
-      },
-      {
-        "title": "Web APIs- W3schools",
-        "url": "https://www.w3schools.com/js/js_api_intro.asp",
         "type": "article"
       }
     ]

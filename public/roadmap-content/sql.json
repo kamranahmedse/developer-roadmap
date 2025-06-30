@@ -39,11 +39,6 @@
         "title": "SQL Tutorial",
         "url": "https://www.sqltutorial.org/",
         "type": "article"
-      },
-      {
-        "title": "SQL Tutorial - W3Schools",
-        "url": "https://www.w3schools.com/sql/default.asp",
-        "type": "article"
       }
     ]
   },
@@ -76,11 +71,6 @@
         "title": "SQL Tutorial",
         "url": "https://www.sqltutorial.org/",
         "type": "article"
-      },
-      {
-        "title": "SQL Tutorial - W3Schools",
-        "url": "https://www.w3schools.com/sql/default.asp",
-        "type": "article"
       }
     ]
   },
@@ -88,11 +78,6 @@
     "title": "SQL Keywords",
     "description": "SQL keywords are reserved words that have special meanings within SQL statements. These include commands (like `SELECT`, `INSERT`, `UPDATE`), clauses (such as `WHERE`, `GROUP BY`, `HAVING`), and other syntax elements that form the structure of SQL queries. Understanding SQL keywords is fundamental to writing correct and effective database queries. Keywords are typically case-insensitive but are often written in uppercase by convention for better readability.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL Keywords Reference",
-        "url": "https://www.w3schools.com/sql/sql_ref_keywords.asp",
-        "type": "article"
-      },
       {
         "title": "SQL Keywords, Operators and Statements",
         "url": "https://blog.hubspot.com/website/sql-keywords-operators-statements",
@@ -121,11 +106,6 @@
     "description": "SQL operators are symbols or keywords used to perform operations on data within a database. They are essential for constructing queries that filter, compare, and manipulate data. Common types of operators include arithmetic operators (e.g., `+`, `-`, `*`, `/`), which perform mathematical calculations; comparison operators (e.g., `=`, `!=`, `<`, `>`), used to compare values; logical operators (e.g., `AND`, `OR`, `NOT`), which combine multiple conditions in a query; and set operators (e.g., `UNION`, `INTERSECT`, `EXCEPT`), which combine results from multiple queries. These operators enable precise control over data retrieval and modification.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL Operators",
-        "url": "https://www.w3schools.com/sql/sql_operators.asp",
-        "type": "article"
-      },
-      {
         "title": "SQL Operators: 6 Different Types",
         "url": "https://www.dataquest.io/blog/sql-operators/",
         "type": "article"
@@ -135,23 +115,12 @@
   "rmqXH29n1oXtZ8tvmcRFn": {
     "title": "SELECT",
     "description": "SELECT is one of the most fundamental SQL commands, used to retrieve data from one or more tables in a database. It allows you to specify which columns to fetch, apply filtering conditions, sort results, and perform various operations on the data. The SELECT statement is versatile, supporting joins, subqueries, aggregations, and more, making it essential for data querying and analysis in relational databases.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "SQL_Select",
-        "url": "https://www.w3schools.com/sql/sql_select.asp",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "mPj6BiK5FKKkIQ9WsWEo6": {
     "title": "INSERT",
     "description": "The \"INSERT\" statement is used to add new rows of data to a table in a database. There are two main forms of the INSERT command: `INSERT INTO` which, if columns are not named, expects a full set of columns, and `INSERT INTO table_name (column1, column2, ...)` where only named columns will be filled with data.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL INSERT",
-        "url": "https://www.w3schools.com/sql/sql_insert.asp",
-        "type": "article"
-      },
       {
         "title": "SQL INSERT Statement",
         "url": "https://www.youtube.com/watch?v=Yp1MKeIG-M4",
@@ -163,11 +132,6 @@
     "title": "UPDATE",
     "description": "The UPDATE statement in SQL is used to modify existing records in a table. It allows you to change the values of one or more columns based on specified conditions. The basic syntax includes specifying the table name, the columns to be updated with their new values, and optionally, a WHERE clause to filter which rows should be affected. UPDATE can be used in conjunction with subqueries, joins, and CTEs (Common Table Expressions) for more complex data modifications. It's important to use UPDATE carefully, especially with the WHERE clause, to avoid unintended changes to data. In transactional databases, UPDATE operations can be rolled back if they're part of a transaction that hasn't been committed.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL UPDATE Statement",
-        "url": "https://www.w3schools.com/sql/sql_update.asp",
-        "type": "article"
-      },
       {
         "title": "Efficient column updates in SQL",
         "url": "https://www.atlassian.com/data/sql/how-to-update-a-column-based-on-a-filter-of-another-column",
@@ -255,11 +219,6 @@
     "description": "The `DROP TABLE` statement is a Data Definition Language (DDL) operation that is used to **completely remove** a table from the database. This operation deletes the table structure along with **all the data in** it, effectively removing the table from the database system.\n\nWhen you execute the `DROP TABLE` statement, it eliminates both the table and its data, as well as any associated indexes, constraints, and triggers. Unlike the `TRUNCATE TABLE` statement, which only removes data but keeps the table structure, `DROP TABLE` removes everything associated with the table.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "DROP TABLE",
-        "url": "https://www.w3schools.com/sql/sql_drop_table.asp",
-        "type": "article"
-      },
-      {
         "title": "Drop a Table",
         "url": "https://www.coginiti.co/tutorials/beginner/drop-a-table/",
         "type": "article"
@@ -290,23 +249,12 @@
   "i8u8E_sne6XiKJo2FXDog": {
     "title": "Select",
     "description": "SELECT is one of the most fundamental SQL commands, used to retrieve data from one or more tables in a database. It allows you to specify which columns to fetch, apply filtering conditions, sort results, and perform various operations on the data. The SELECT statement is versatile, supporting joins, subqueries, aggregations, and more, making it essential for data querying and analysis in relational databases.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "SQL_Select",
-        "url": "https://www.w3schools.com/sql/sql_select.asp",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "N1Racr3ZpU320gS545We8": {
     "title": "FROM",
     "description": "The `FROM` clause in SQL specifies the tables from which the retrieval should be made. It is an integral part of `SELECT` statements and variants of `SELECT` like `SELECT INTO` and `SELECT WHERE`. `FROM` can be used to join tables as well.\n\nTypically, `FROM` is followed by space delimited list of tables in which the SELECT operation is to be executed. If you need to pull data from multiple tables, you would separate each table with a comma.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL FROM Keyword",
-        "url": "https://www.w3schools.com/sql/sql_ref_from.asp",
-        "type": "article"
-      },
       {
         "title": "How to write basic SQL",
         "url": "https://www.youtube.com/watch?v=YfTDBA45PHk",
@@ -334,11 +282,6 @@
     "title": "ORDER BY",
     "description": "The `ORDER BY` clause in SQL is used to sort the result set of a query by one or more columns. By default, the sorting is in ascending order, but you can specify descending order using the `DESC` keyword. The clause can sort by numeric, date, or text values, and multiple columns can be sorted by listing them in the `ORDER BY` clause, each with its own sorting direction. This clause is crucial for organizing data in a meaningful sequence, such as ordering by a timestamp to show the most recent records first, or alphabetically by name.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL ORDER BY Keyword",
-        "url": "https://www.w3schools.com/sql/sql_orderby.asp",
-        "type": "article"
-      },
       {
         "title": "SQL ORDER BY Sorting Clause",
         "url": "https://www.youtube.com/watch?v=h_HHTNjAgS8",
@@ -399,11 +342,6 @@
     "description": "The \"INSERT\" statement is used to add new rows of data to a table in a database. There are two main forms of the INSERT command: `INSERT INTO` which, if columns are not named, expects a full set of columns, and `INSERT INTO table_name (column1, column2, ...)` where only named columns will be filled with data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL INSERT",
-        "url": "https://www.w3schools.com/sql/sql_insert.asp",
-        "type": "article"
-      },
-      {
         "title": "SQL INSERT Statement",
         "url": "https://www.youtube.com/watch?v=Yp1MKeIG-M4",
         "type": "video"
@@ -414,11 +352,6 @@
     "title": "UPDATE",
     "description": "The UPDATE statement in SQL is used to modify existing records in a table. It allows you to change the values of one or more columns based on specified conditions. The basic syntax includes specifying the table name, the columns to be updated with their new values, and optionally, a WHERE clause to filter which rows should be affected. UPDATE can be used in conjunction with subqueries, joins, and CTEs (Common Table Expressions) for more complex data modifications. It's important to use UPDATE carefully, especially with the WHERE clause, to avoid unintended changes to data. In transactional databases, UPDATE operations can be rolled back if they're part of a transaction that hasn't been committed.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL UPDATE Statement",
-        "url": "https://www.w3schools.com/sql/sql_update.asp",
-        "type": "article"
-      },
       {
         "title": "Efficient column updates in SQL",
         "url": "https://www.atlassian.com/data/sql/how-to-update-a-column-based-on-a-filter-of-another-column",
@@ -447,11 +380,6 @@
     "description": "SUM is an aggregate function in SQL used to calculate the total of a set of values. It's commonly used with numeric columns in combination with GROUP BY clauses to compute totals for different categories or groups within the data. SUM is essential for financial calculations, statistical analysis, and generating summary reports from database tables. It ignores NULL values and can be used in conjunction with other aggregate functions for complex data analysis.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL SUM Function",
-        "url": "https://www.w3schools.com/sql/sql_sum.asp",
-        "type": "article"
-      },
-      {
         "title": "SQL SUM",
         "url": "https://www.studysmarter.co.uk/explanations/computer-science/databases/sql-sum/",
         "type": "article"
@@ -462,11 +390,6 @@
     "title": "COUNT",
     "description": "`COUNT` is an SQL aggregate function that returns the number of rows that match the specified criteria. It can be used to count all rows in a table, non-null values in a specific column, or rows that meet certain conditions when combined with a `WHERE` clause. `COUNT` is often used in data analysis, reporting, and performance optimization queries to determine the size of datasets or the frequency of particular values.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "COUNT",
-        "url": "https://www.w3schools.com/sql/sql_count.asp",
-        "type": "article"
-      },
       {
         "title": "COUNT SQL Function",
         "url": "https://www.datacamp.com/tutorial/count-sql-function",
@@ -559,11 +482,6 @@
     "description": "Data constraints in SQL are rules applied to columns or tables to enforce data integrity and consistency. They include primary key, foreign key, unique, check, and not null constraints. These constraints define limitations on the data that can be inserted, updated, or deleted in a database, ensuring that the data meets specific criteria and maintains relationships between tables. By implementing data constraints, database designers can prevent invalid data entry, maintain referential integrity, and enforce business rules directly at the database level.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Data Constraints",
-        "url": "https://www.w3schools.com/sql/sql_constraints.asp",
-        "type": "article"
-      },
-      {
         "title": "SQL Constraints",
         "url": "https://www.programiz.com/sql/constraints",
         "type": "article"
@@ -574,11 +492,6 @@
     "title": "Primary Key",
     "description": "A primary key in SQL is a unique identifier for each record in a database table. It ensures that each row in the table is uniquely identifiable, meaning no two rows can have the same primary key value. A primary key is composed of one or more columns, and it must contain unique values without any `NULL` entries. The primary key enforces entity integrity by preventing duplicate records and ensuring that each record can be precisely located and referenced, often through foreign key relationships in other tables. Using a primary key is fundamental for establishing relationships between tables and maintaining the integrity of the data model.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL PRIMARY KEY Constraint",
-        "url": "https://www.w3schools.com/sql/sql_primarykey.ASP",
-        "type": "article"
-      },
       {
         "title": "SQL Primary Key",
         "url": "https://www.tutorialspoint.com/sql/sql-primary-key.htm",
@@ -634,11 +547,6 @@
     "description": "A `CHECK` constraint in SQL is used to enforce data integrity by specifying a condition that must be true for each row in a table. It allows you to define custom rules or restrictions on the values that can be inserted or updated in one or more columns. `CHECK` constraints help maintain data quality by preventing invalid or inconsistent data from being added to the database, ensuring that only data meeting specified criteria is accepted.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL CHECK Constraint",
-        "url": "https://www.w3schools.com/sql/sql_check.asp",
-        "type": "article"
-      },
-      {
         "title": "CHECK Constraint",
         "url": "https://www.youtube.com/watch?v=EeG2boJCXbc",
         "type": "video"
@@ -666,11 +574,6 @@
     "description": "An `INNER JOIN` in SQL is a type of join that returns the records with matching values in both tables. This operation compares each row of the first table with each row of the second table to find all pairs of rows that satisfy the join predicate.\n\nFew things to consider in case of `INNER JOIN`:\n\n*   It is a default join in SQL. If you mention `JOIN` in your query without specifying the type, SQL considers it as an `INNER JOIN`.\n*   It returns only the matching rows from both the tables.\n*   If there is no match, the returned is an empty result.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL INNER JOIN",
-        "url": "https://www.w3schools.com/sql/sql_join_inner.asp",
-        "type": "article"
-      },
-      {
         "title": "SQL INNER JOIN Clause",
         "url": "https://www.programiz.com/sql/inner-join",
         "type": "article"
@@ -681,11 +584,6 @@
     "title": "LEFT JOIN",
     "description": "A `LEFT JOIN` in SQL returns all rows from the left (first) table and the matching rows from the right (second) table. If there's no match in the right table, `NULL` values are returned for those columns. This join type is useful when you want to see all records from one table, regardless of whether they have corresponding entries in another table. `LEFT JOIN`s are commonly used for finding missing relationships, creating reports that include all primary records, or when working with data where not all entries have corresponding matches in related tables.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL LEFT JOIN",
-        "url": "https://www.w3schools.com/sql/sql_join_left.asp",
-        "type": "article"
-      },
       {
         "title": "SQL LEFT JOIN - SQL Tutorial",
         "url": "https://www.youtube.com/watch?v=giKwmtsz1U8",
@@ -698,11 +596,6 @@
     "description": "A `RIGHT JOIN` in SQL is a type of outer join that returns all rows from the right (second) table and the matching rows from the left (first) table. If there's no match in the left table, `NULL` values are returned for the left table's columns. This join type is less commonly used than LEFT JOIN but is particularly useful when you want to ensure all records from the second table are included in the result set, regardless of whether they have corresponding matches in the first table. `RIGHT JOIN` is often used to identify missing relationships or to include all possible values from a lookup table.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL RIGHT JOIN",
-        "url": "https://www.w3schools.com/sql/sql_join_right.asp",
-        "type": "article"
-      },
-      {
         "title": "SQL RIGHT JOIN With Examples",
         "url": "https://www.programiz.com/sql/right-join",
         "type": "article"
@@ -713,11 +606,6 @@
     "title": "FULL OUTER JOIN",
     "description": "A `FULL OUTER JOIN` in SQL combines the results of both `LEFT` and `RIGHT OUTER JOIN`s. It returns all rows from both tables, matching records where the join condition is met and including unmatched rows from both tables with `NULL` values in place of missing data. This join type is useful when you need to see all data from both tables, regardless of whether there are matching rows, and is particularly valuable for identifying missing relationships or performing data reconciliation between two tables.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "FULL OUTER JOIN",
-        "url": "https://www.w3schools.com/sql/sql_join_full.asp",
-        "type": "article"
-      },
       {
         "title": "SQL FULL OUTER JOIN",
         "url": "https://www.youtube.com/watch?v=XpBkXo3DCEg",
@@ -745,11 +633,6 @@
     "title": "Cross Join",
     "description": "The cross join in SQL is used to combine every row of the first table with every row of the second table. It's also known as the Cartesian product of the two tables. The most important aspect of performing a cross join is that it does not require any condition to join.\n\nThe issue with cross join is it returns the Cartesian product of the two tables, which can result in large numbers of rows and heavy resource usage. It's hence critical to use them wisely and only when necessary.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "CROSS JOIN",
-        "url": "https://www.w3schools.com/mysql/mysql_join_cross.asp",
-        "type": "article"
-      },
       {
         "title": "SQL CROSS JOIN With Examples",
         "url": "https://www.sqlshack.com/sql-cross-join-with-examples/",
@@ -793,11 +676,6 @@
     "title": "Column",
     "description": "In SQL, columns are used to categorize the data in a table. A column serves as a structure that stores a specific type of data (ints, str, bool, etc.) in a table. Each column in a table is designed with a type, which configures the data that it can hold. Using the right column types and size can help to maintain data integrity and optimize performance.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL Column",
-        "url": "https://www.w3schools.com/sql/sql_ref_column.asp",
-        "type": "article"
-      },
       {
         "title": "Column Types - PostgreSQL",
         "url": "https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/",
@@ -879,11 +757,6 @@
     "description": "The SQL `FLOOR` function is used to round down any specific decimal or numeric value to its nearest whole integer. The returned number will be less than or equal to the number given as an argument.\n\nOne important aspect to note is that the `FLOOR` function's argument must be a number and it always returns an integer.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "FLOOR",
-        "url": "https://www.w3schools.com/sql/func_sqlserver_floor.asp",
-        "type": "article"
-      },
-      {
         "title": "How to Round in SQL",
         "url": "https://www.youtube.com/watch?v=AUXw2JRwCFY",
         "type": "video"
@@ -911,11 +784,6 @@
     "description": "The `MOD` function in SQL calculates the remainder when one number is divided by another. It takes two arguments: the dividend and the divisor. `MOD` returns the remainder of the division operation, which is useful for various mathematical operations, including checking for odd/even numbers, implementing cyclic behaviors, or distributing data evenly. The syntax and exact behavior may vary slightly between different database systems, with some using the % operator instead of the `MOD` keyword.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "MOD",
-        "url": "https://www.w3schools.com/sql/func_mysql_mod.asp",
-        "type": "article"
-      },
-      {
         "title": "MOD Function in SQL",
         "url": "https://www.youtube.com/watch?v=f1Rqf7CwjE0",
         "type": "video"
@@ -926,11 +794,6 @@
     "title": "ROUND",
     "description": "The `ROUND` function in SQL is used to round a numeric value to a specified number of decimal places. It takes two arguments: the number to be rounded and the number of decimal places to round to. If the second argument is omitted, the function rounds the number to the nearest whole number. For positive values of the second argument, the number is rounded to the specified decimal places; for negative values, it rounds to the nearest ten, hundred, thousand, etc. The `ROUND` function is useful for formatting numerical data for reporting or ensuring consistent precision in calculations.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL ROUND",
-        "url": "https://www.w3schools.com/sql/func_sqlserver_round.asp",
-        "type": "article"
-      },
       {
         "title": "What is the SQL ROUND Function and how does it work?",
         "url": "https://www.datacamp.com/tutorial/mastering-sql-round",
@@ -956,11 +819,6 @@
       {
         "title": "An overview of the CONCAT function in SQL",
         "url": "https://www.sqlshack.com/an-overview-of-the-concat-function-in-sql-with-examples/",
-        "type": "article"
-      },
-      {
-        "title": "SQL Server CONCAT",
-        "url": "https://www.w3schools.com/sql/func_sqlserver_concat.asp",
         "type": "article"
       }
     ]
@@ -1002,11 +860,6 @@
     "description": "The `REPLACE` function in SQL is used to substitute all occurrences of a specified substring within a string with a new substring. It takes three arguments: the original string, the substring to be replaced, and the substring to replace it with. If the specified substring is found in the original string, `REPLACE` returns the modified string with all instances of the old substring replaced by the new one. If the substring is not found, the original string is returned unchanged. This function is particularly useful for data cleaning tasks, such as correcting typos, standardizing formats, or replacing obsolete data.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL REPLACE Function",
-        "url": "https://www.w3schools.com/sql/func_sqlserver_replace.asp",
-        "type": "article"
-      },
-      {
         "title": "How to use the SQL REPLACE Function",
         "url": "https://www.datacamp.com/tutorial/sql-replace",
         "type": "article"
@@ -1017,11 +870,6 @@
     "title": "UPPER",
     "description": "UPPER() is a string function in SQL used to convert all characters in a specified string to uppercase. This function is particularly useful for data normalization, case-insensitive comparisons, or formatting output. UPPER() typically works on alphabetic characters and leaves non-alphabetic characters unchanged. It's often used in SELECT statements to display data, in WHERE clauses for case-insensitive searches, or in data manipulation operations. Most SQL databases also provide a complementary LOWER() function for converting to lowercase. When working with international character sets, it's important to be aware of potential locale-specific behavior of UPPER().\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "SQL Server UPPER Function",
-        "url": "https://www.w3schools.com/sql/func_sqlserver_upper.asp",
-        "type": "article"
-      },
       {
         "title": "How to Convert a String to Uppercase in SQL",
         "url": "https://learnsql.com/cookbook/how-to-convert-a-string-to-uppercase-in-sql/",
@@ -1050,11 +898,6 @@
     "description": "The CASE statement in SQL is used to create conditional logic within a query, allowing you to perform different actions based on specific conditions. It operates like an if-else statement, returning different values depending on the outcome of each condition. The syntax typically involves specifying one or more WHEN conditions, followed by the result for each condition, and an optional ELSE clause for a default outcome if none of the conditions are met.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL CASE Expression",
-        "url": "https://www.w3schools.com/sql/sql_case.asp",
-        "type": "article"
-      },
-      {
         "title": "SQL CASE - Intermediate SQL",
         "url": "https://mode.com/sql-tutorial/sql-case",
         "type": "article"
@@ -1065,11 +908,6 @@
     "title": "NULLIF",
     "description": "`NULLIF` is an SQL function that compares two expressions and returns NULL if they are equal, otherwise it returns the first expression. It's particularly useful for avoiding division by zero errors or for treating specific values as `NULL` in calculations or comparisons. `NULLIF` takes two arguments and is often used in combination with aggregate functions or in `CASE` statements to handle special cases in data processing or reporting.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "NULLIF",
-        "url": "https://www.w3schools.com/sql/func_sqlserver_nullif.asp",
-        "type": "article"
-      },
       {
         "title": "What is NULLIF in SQL?",
         "url": "https://www.youtube.com/watch?v=Jaw53T__RRY",
@@ -1098,11 +936,6 @@
     "description": "The DATE data type in SQL is used to store calendar dates (typically in the format YYYY-MM-DD). It represents a specific day without any time information. DATE columns are commonly used for storing birthdates, event dates, or any other data that requires only day-level precision. SQL provides various functions to manipulate and format DATE values, allowing for date arithmetic, extraction of date components, and comparison between dates. The exact range of valid dates may vary depending on the specific database management system being used.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "SQL DATE",
-        "url": "https://www.w3schools.com/sql/sql_dates.asp",
-        "type": "article"
-      },
-      {
         "title": "Working with Dates",
         "url": "https://www.youtube.com/watch?v=XyZ9HwXoR7o",
         "type": "video"
@@ -1119,11 +952,6 @@
     "description": "SQL `TIMESTAMP` is a data type that allows you to store both date and time. It is typically used to track updates and changes made to a record, providing a chronological time of happenings.\n\nDepending on the SQL platform, the format and storage size can slightly vary. For instance, MySQL uses the 'YYYY-MM-DD HH:MI:SS' format and in PostgreSQL, it's stored as a 'YYYY-MM-DD HH:MI:SS' format but it additionally can store microseconds.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "MYSQL TIMESTAMP function",
-        "url": "https://www.w3schools.com/mysql/func_mysql_timestamp.asp",
-        "type": "article"
-      },
-      {
         "title": "Different SQL TimeStamp functions in SQL Server",
         "url": "https://www.sqlshack.com/different-sql-timestamp-functions-in-sql-server/",
         "type": "article"
@@ -1134,11 +962,6 @@
     "title": "DATEPART",
     "description": "`DATEPART` is a useful function in SQL that allows you to extract a specific part of a date or time field. You can use it to get the year, quarter, month, day of the year, day, week, weekday, hour, minute, second, or millisecond from any date or time expression.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "DATEPART",
-        "url": "https://www.w3schools.com/sql/func_sqlserver_datepart.asp",
-        "type": "article"
-      },
       {
         "title": "SQL DATEPART",
         "url": "https://hightouch.com/sql-dictionary/sql-datepart",
@@ -1230,11 +1053,6 @@
     "title": "Indexes",
     "description": "Indexes in SQL are database objects that improve the speed of data retrieval operations on database tables. They work similarly to book indexes, providing a quick lookup mechanism for finding rows with specific column values. Indexes create a separate data structure that allows the database engine to locate data without scanning the entire table. While they speed up `SELECT` queries, indexes can slow down `INSERT`, `UPDATE`, and `DELETE` operations because the index structure must be updated. Proper index design is crucial for optimizing database performance, especially for large tables or frequently queried columns.\n\nLearn more from the following resources:",
     "links": [
-      {
-        "title": "Create SQL Index Statement",
-        "url": "https://www.w3schools.com/sql/sql_create_index.asp",
-        "type": "article"
-      },
       {
         "title": "SQL Indexing Best Practices",
         "url": "https://www.youtube.com/watch?v=BIlFTFrEFOI",
