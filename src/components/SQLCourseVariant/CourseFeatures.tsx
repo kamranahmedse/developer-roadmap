@@ -76,7 +76,7 @@ export function CourseFeatures() {
         description="Built around a text-based interactive approach and packed with practical challenges, this comprehensive SQL bootcamp stands out with features that make it truly unique."
       />
 
-      <div className="mx-auto mt-10 w-full max-w-3xl divide-y divide-zinc-800 overflow-hidden rounded-xl border border-zinc-800">
+      <div className="mx-auto mt-10 w-full max-w-2xl divide-y divide-zinc-800 overflow-hidden rounded-xl border border-zinc-800">
         {features.map((feature, index) => (
           <CourseFeature
             key={feature.title}
