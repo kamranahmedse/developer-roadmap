@@ -4,7 +4,7 @@ import { Rating } from '../Rating/Rating';
 
 export function PurchaseBanner() {
   return (
-    <div className="sticky top-4 z-50 mt-20 flex w-full flex-col gap-4 rounded-2xl bg-yellow-950 p-5 shadow-lg ring-1 ring-yellow-500/40 lg:flex-row lg:items-center lg:justify-between">
+    <div className="sticky top-4 z-50 mt-16.5 flex w-full flex-col gap-4 rounded-2xl bg-yellow-950 p-5 shadow-lg ring-1 ring-yellow-500/40 lg:flex-row lg:items-center lg:justify-between">
       <div className="order-3 flex w-full flex-col items-center gap-2 lg:order-0 lg:w-fit lg:items-start">
         <span className="inline-flex items-center gap-1.5 text-yellow-500">
           <CheckIcon className="size-5 stroke-[2.5]" />
