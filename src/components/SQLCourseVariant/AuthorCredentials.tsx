@@ -1,36 +1,72 @@
-import { AwardIcon } from 'lucide-react';
-import { RoadmapDetailsPopover } from './RoadmapDetailsPopover';
+import { AwardIcon, InfoIcon } from 'lucide-react';
+import { GitHubIcon } from '../ReactIcons/GitHubIcon';
+import { Popover, PopoverContent, PopoverTrigger } from '../Popover';
 
 export function AuthorCredentials() {
   return (
-    <div className="flex gap-4 text-sm text-white lg:mt-auto">
+    <div className="flex gap-6 text-white lg:mt-auto">
       <div className="flex items-center gap-4">
         <img
-          src="https://assets.roadmap.sh/guest/kamran-lqjta.jpeg"
-          className="size-24 rounded-full object-cover"
+          src="https://assets.roadmap.sh/guest/kamran-course-pf-agibf.jpg"
+          className="aspect-[4/5] h-[140px] rounded-2xl object-cover shadow-lg"
           alt="Kamran Ahmed"
         />
 
-        <div className="flex flex-col gap-2">
-          <a
-            href="https://twitter.com/kamrify"
-            target="_blank"
-            className="text-lg font-medium"
-          >
-            Kamran Ahmed
-          </a>
+        <div className="flex flex-col gap-3">
+          <div>
+            <a
+              href="https://twitter.com/kamrify"
+              target="_blank"
+              className="text-xl font-semibold transition-colors duration-200 hover:text-blue-400"
+            >
+              Kamran Ahmed
+            </a>
+            <p className="mt-1 text-sm text-gray-300">
+              Your teacher for this course
+            </p>
+          </div>
 
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-yellow-500/10 px-3 py-1">
-            <svg className="size-4 fill-yellow-500/80" viewBox="0 0 24 24">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.022A9.607 9.607 0 0 1 12 6.82c.85.004 1.705.114 2.504.336 1.909-1.291 2.747-1.022 2.747-1.022.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
-            </svg>
-            #2 Most Starred Developer
-          </span>
-          <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-yellow-500/10 px-3 py-1">
-            <AwardIcon className="size-4 text-yellow-500/80" />
-            Founder roadmap.sh
-            <RoadmapDetailsPopover />
-          </span>
+          <div className="flex flex-col gap-1.5">
+            <a
+              href="https://github.com/kamranahmedse"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-yellow-500/30 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 px-3 py-1.5 backdrop-blur-sm transition-all duration-200 hover:border-yellow-400/50 hover:from-yellow-500/30 hover:to-orange-500/30"
+            >
+              <GitHubIcon className="size-3.5 text-yellow-400" />
+              <span className="text-xs font-medium text-yellow-100">
+                #2 Most Starred Developer
+              </span>
+            </a>
+
+            <Popover>
+              <PopoverTrigger asChild>
+                <div className="inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-purple-500/30 bg-gradient-to-r from-purple-500/20 to-pink-500/20 px-3 py-1.5 backdrop-blur-sm transition-all duration-200 hover:border-purple-400/50 hover:from-purple-500/30 hover:to-pink-500/30">
+                  <AwardIcon className="size-3.5 text-purple-400" />
+                  <span className="text-xs font-medium text-purple-100">
+                    Founder roadmap.sh
+                  </span>
+                  <InfoIcon className="ml-1 size-3.5 text-purple-400/70 hover:text-purple-300" />
+                </div>
+              </PopoverTrigger>
+              <PopoverContent
+                className="border-zinc-700 bg-zinc-900 px-2.5 text-sm text-zinc-200"
+                side="top"
+                align="start"
+              >
+                <a
+                  href="/"
+                  className="text-blue-400 underline hover:text-blue-500 focus:text-blue-500"
+                >
+                  roadmap.sh
+                </a>{' '}
+                provides community-curated roadmaps, study plans, paths, and
+                resources for developers and IT professionals. Serving 2M+
+                registered users, it is the 6th most-starred open source project
+                on GitHub
+              </PopoverContent>
+            </Popover>
+          </div>
         </div>
       </div>
     </div>

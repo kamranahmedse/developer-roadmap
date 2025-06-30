@@ -1,9 +1,5 @@
 import {
-  BrainIcon,
-  ClipboardIcon,
-  CodeIcon,
-  Eye,
-  FileCheckIcon,
+  BrainIcon, CodeIcon,
   FileQuestionIcon,
   DatabaseIcon,
   TableIcon,
@@ -13,6 +9,7 @@ import {
   BarChartIcon,
   GitBranchIcon,
   ArrowUpDownIcon,
+  NotebookTextIcon
 } from 'lucide-react';
 import { Spotlight } from '../SQLCourse/Spotlight';
 import { RoadmapLogoIcon } from '../ReactIcons/RoadmapLogo';
@@ -247,25 +244,25 @@ export function SQLCourseVariantPage() {
           <div className="relative">
             <Spotlight className="top-[-200px] left-[-170px]" fill="#EAB308" />
 
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
+            <div className="flex flex-col gap-7 sm:flex-row sm:items-center">
               <a
                 href="https://roadmap.sh"
                 target="_blank"
                 className="transition-opacity hover:opacity-100"
               >
-                <RoadmapLogoIcon className="size-18" />
+                <RoadmapLogoIcon className="size-22" />
               </a>
               <div className="flex flex-col items-start gap-2.5">
-                <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
+                <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-6xl">
                   Master SQL Queries
                 </h1>
-                <p className="text-left text-xl text-zinc-300 md:text-xl">
+                <p className="text-left text-xl text-zinc-300 md:text-2xl">
                   Complete course with AI Tutor, real-world challenges and more
                 </p>
               </div>
             </div>
 
-            <p className="my-5 text-xl text-balance text-zinc-300 md:my-14 lg:text-2xl">
+            <p className="my-5 text-xl leading-relaxed text-zinc-300 md:my-14 lg:text-xl">
               Get certified for SQL queries and ready to deploy your
               newly-gained skill in 30 days. Perfect for developers, data
               analysts, and anyone working with data. Level up risk-free with a
@@ -274,21 +271,21 @@ export function SQLCourseVariantPage() {
 
             <div className="flex flex-col-reverse gap-14 lg:flex-row">
               <div className="hidden w-full shrink-0 flex-row-reverse items-start justify-between gap-3 text-lg md:flex lg:w-auto lg:flex-col">
-                <div className="flex flex-col gap-3">
-                  <div className="flex flex-row items-center gap-2">
-                    <ClipboardIcon className="size-6 text-yellow-600" />
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-row items-center gap-2 text-zinc-300 text-xl">
+                    <NotebookTextIcon className="size-6 text-yellow-400" />
                     <span>55+ Lessons</span>
                   </div>
-                  <div className="flex flex-row items-center gap-2">
-                    <FileQuestionIcon className="size-6 text-yellow-600" />
+                  <div className="flex flex-row items-center gap-2 text-zinc-300 text-xl">
+                    <FileQuestionIcon className="size-6 text-yellow-400" />
                     <span>100+ Challenges</span>
                   </div>
-                  <div className="flex flex-row items-center gap-2">
-                    <BrainIcon className="size-6 text-yellow-600" />
+                  <div className="flex flex-row items-center gap-2 text-zinc-300 text-xl">
+                    <BrainIcon className="size-6 text-yellow-400" />
                     <span>AI Tutor</span>
                   </div>
-                  <div className="flex flex-row items-center gap-2">
-                    <CodeIcon className="size-6 text-yellow-600" />
+                  <div className="flex flex-row items-center gap-2 text-zinc-300 text-xl">
+                    <CodeIcon className="size-6 text-yellow-400" />
                     <span>Integrated IDE</span>
                   </div>
                 </div>
