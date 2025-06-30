@@ -8,5 +8,4 @@ Visit the following resources to learn more:
 - [@official@Gradle Documentation](https://docs.gradle.org/current/userguide/getting_started_eng.html)
 - [@video@Gradle Course for Beginners - 55minutes](https://www.youtube.com/watch?v=R6Z-Sxb837I)
 - [@video@Introduction to Gradle for Complete Beginners - 25minutes](https://youtu.be/-dtcEMLNmn0?si=NuIP-3wNpUrxfTxA)
-- [@article@Get going with Gradle - PDF](https://assets.gradlehero.com/get-going-with-gradle/get-going-with-gradle-book.pdf)
 - [@feed@Explore top posts about Gradle](https://app.daily.dev/tags/gradle?ref=roadmapsh)
