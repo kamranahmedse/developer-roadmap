@@ -22,8 +22,8 @@ export function AIQuizContent(props: AIQuizContentProps) {
   const hasPreviousQuestions = activeQuestionIndex > 0;
 
   return (
-    <div className="py-10">
-      <div className="mb-4 flex items-center gap-3">
+    <div className="mx-auto w-full max-w-lg py-10">
+      <div className="mb-10 flex items-center gap-3">
         <NavigationButton
           disabled={!hasPreviousQuestions}
           onClick={() => setActiveQuestionIndex(activeQuestionIndex - 1)}
