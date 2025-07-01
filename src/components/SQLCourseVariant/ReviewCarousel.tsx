@@ -179,7 +179,7 @@ export function ReviewCarousel() {
   }, []);
 
   return (
-    <div className="mx-auto mt-24 w-full max-w-5xl">
+    <div className="mx-auto mt-16 w-full max-w-5xl">
       <h3 className="text-center text-2xl font-medium text-zinc-200 md:text-3xl">
         What other learners said
       </h3>

@@ -7,17 +7,20 @@ import { useEffect, useRef, useState } from 'react';
 export function PurchaseBanner() {
   const bannerRef = useRef<HTMLDivElement>(null);
 
-  const [isOutOfView, setIsOutOfView] = useState(false);
+  const [isFullyInView, setIsFullyInView] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!bannerRef.current) return;
       
       const bannerRect = bannerRef.current.getBoundingClientRect();
+      const bannerTop = bannerRect.top;
       const bannerBottom = bannerRect.bottom;
+      const scrollTop = window.scrollY;
       
-      // Banner is out of view when its bottom is above the viewport
-      setIsOutOfView(bannerBottom < 0);
+      // Banner is fully in view when both top and bottom are within viewport
+      const fullyVisible = bannerTop >= 0 && bannerBottom <= window.innerHeight;
+      setIsFullyInView(fullyVisible || scrollTop > bannerRect.top);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -36,7 +39,7 @@ export function PurchaseBanner() {
       <div
         ref={props.ref}
         className={cn(
-          'top-4 z-50 mt-16.5 flex w-full flex-col gap-4 rounded-2xl bg-yellow-950 p-5 shadow-lg ring-1 ring-yellow-500/40 lg:sticky lg:flex-row lg:items-center lg:justify-between',
+          'top-4 z-50 mt-14 flex w-full flex-col gap-4 rounded-2xl bg-yellow-950 p-5 shadow-lg ring-1 ring-yellow-500/40 lg:sticky lg:flex-row lg:items-center lg:justify-between',
           props.className,
         )}
       >
@@ -77,7 +80,7 @@ export function PurchaseBanner() {
       <Banner
         className={cn(
           'fixed top-[unset] right-0 bottom-0 left-0 rounded-none lg:hidden',
-          isOutOfView ? 'flex' : 'hidden',
+          isFullyInView ? 'flex' : 'hidden',
         )}
       />
     </>

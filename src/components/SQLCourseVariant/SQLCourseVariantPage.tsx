@@ -20,7 +20,7 @@ import { sqlCourseChapters } from '../SQLCourse/SQLCoursePage';
 
 export function SQLCourseVariantPage() {
   return (
-    <div className="relative flex grow flex-col items-center bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pt-3 pb-52 text-zinc-400 md:px-10 md:pt-8">
+    <div className="relative flex grow flex-col items-center bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pb-52 text-zinc-400 md:px-10">
       <div className="mx-auto mt-7 w-full max-w-5xl md:mt-20">
         <div className="relative">
           <Spotlight className="top-[-200px] left-[-170px]" fill="#EAB308" />
@@ -43,7 +43,7 @@ export function SQLCourseVariantPage() {
             </div>
           </div>
 
-          <p className="my-5 text-xl leading-relaxed text-zinc-300 md:my-14 lg:text-xl">
+          <p className="my-5 text-xl leading-relaxed text-zinc-300 md:my-10 lg:text-xl">
             Get certified for SQL queries and ready to deploy your newly-gained
             skill in 30 days. Perfect for developers, data analysts, and anyone
             working with data. Level up risk-free with a 7-day money-back
