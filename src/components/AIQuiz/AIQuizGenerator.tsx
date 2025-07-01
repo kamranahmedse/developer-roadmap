@@ -2,6 +2,7 @@ import {
   BookOpenIcon,
   FileTextIcon,
   ListCheckIcon,
+  ListIcon,
   ListTodoIcon,
   MapIcon,
   SparklesIcon,
@@ -25,6 +26,7 @@ import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
 import { useParams } from '../../hooks/use-params';
 import { FormatItem } from '../ContentGenerator/FormatItem';
+import { AIQuizLayout } from './AIQuizLayout';
 
 const allowedFormats = ['mcq', 'open-ended', 'mixed'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -56,22 +58,26 @@ export function AIQuizGenerator() {
 
   const allowedFormats: {
     label: string;
+    formatTitle: string;
     icon: LucideIcon;
     value: AllowedFormat;
   }[] = [
     {
       label: 'MCQ',
+      formatTitle: 'Multiple Choice Question',
       icon: ListTodoIcon,
       value: 'mcq',
     },
     {
       label: 'Open-Ended',
+      formatTitle: 'Open-Ended Question',
       icon: FileTextIcon,
       value: 'open-ended',
     },
     {
       label: 'Mixed',
-      icon: MapIcon,
+      formatTitle: 'Mixed Question (MCQ + Open-Ended)',
+      icon: ListIcon,
       value: 'mixed',
     },
   ];
@@ -99,6 +105,9 @@ export function AIQuizGenerator() {
 
   const trimmedTitle = title.trim();
   const canGenerate = trimmedTitle && trimmedTitle.length >= 3;
+  const selectedFormatTitle = allowedFormats.find(
+    (f) => f.value === selectedFormat,
+  )?.formatTitle;
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-28 lg:pb-24">
@@ -118,10 +127,10 @@ export function AIQuizGenerator() {
           </div>
         )}
         <h1 className="mb-0.5 text-center text-4xl font-semibold max-md:text-left max-md:text-xl lg:mb-3">
-          What can I help you learn?
+          Test your Knowledge
         </h1>
         <p className="text-center text-lg text-balance text-gray-600 max-md:text-left max-md:text-sm">
-          Enter a topic below to generate a personalized course for it
+          Create a personalized quiz to test your understanding of any topic
         </p>
       </div>
 
@@ -134,12 +143,12 @@ export function AIQuizGenerator() {
       >
         <div className="flex flex-col gap-2">
           <label htmlFor={titleFieldId} className="inline-block text-gray-500">
-            What can I help you learn?
+            What topic would you like to quiz yourself on?
           </label>
           <input
             type="text"
             id={titleFieldId}
-            placeholder="Enter a topic"
+            placeholder="e.g., JavaScript fundamentals, Machine Learning basics"
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
@@ -196,22 +205,22 @@ export function AIQuizGenerator() {
             }}
           />
           <span className="max-sm:hidden">
-            Answer the following questions for a better {selectedFormat}
+            Answer the following questions for a better result
           </span>
-          <span className="sm:hidden">Customize your {selectedFormat}</span>
+          <span className="sm:hidden">Customize your quiz</span>
         </label>
 
-        {/* {showFineTuneOptions && (
+        {showFineTuneOptions && (
           <QuestionAnswerChat
             term={title}
-            format={selectedFormat}
+            format={selectedFormatTitle || selectedFormat}
             questionAnswerChatMessages={questionAnswerChatMessages}
             setQuestionAnswerChatMessages={setQuestionAnswerChatMessages}
             onGenerateNow={() => {
               handleSubmit();
             }}
           />
-        )} */}
+        )}
 
         <button
           type="submit"
@@ -219,7 +228,7 @@ export function AIQuizGenerator() {
           disabled={!canGenerate}
         >
           <SparklesIcon className="size-4" />
-          Generate
+          Generate Quiz
         </button>
       </form>
     </div>

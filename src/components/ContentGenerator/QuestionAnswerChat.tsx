@@ -5,11 +5,7 @@ import {
   type AIQuestionSuggestionsResponse,
 } from '../../queries/user-ai-session';
 import type { AllowedFormat } from './ContentGenerator';
-import {
-  Loader2Icon,
-  RefreshCcwIcon,
-  SendIcon, Trash2
-} from 'lucide-react';
+import { Loader2Icon, RefreshCcwIcon, SendIcon, Trash2 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../lib/classname';
 import { flushSync } from 'react-dom';
@@ -26,7 +22,7 @@ export type QuestionAnswerChatMessage =
 
 type QuestionAnswerChatProps = {
   term: string;
-  format: AllowedFormat;
+  format: AllowedFormat | (string & {});
   questionAnswerChatMessages: QuestionAnswerChatMessage[];
   setQuestionAnswerChatMessages: (
     messages: QuestionAnswerChatMessage[],
@@ -259,7 +255,11 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         className="w-full bg-transparent text-sm focus:outline-none"
-                        placeholder={activeMessage.possibleAnswers ? "Type your answer..." : "Or type your own answer..."}
+                        placeholder={
+                          activeMessage.possibleAnswers
+                            ? 'Type your answer...'
+                            : 'Or type your own answer...'
+                        }
                         autoFocus
                         onKeyDown={(e) => {
                           if (e.key === 'Enter' && !e.shiftKey) {
@@ -346,7 +346,7 @@ function QuestionAnswerChatMessage(props: QuestionAnswerChatMessageProps) {
             <div className="group relative">
               <button
                 type="button"
-                className="flex size-6 shrink-0 items-center justify-center rounded-md opacity-70 hover:bg-gray-100 hover:opacity-100 focus:outline-none text-gray-500"
+                className="flex size-6 shrink-0 items-center justify-center rounded-md text-gray-500 opacity-70 hover:bg-gray-100 hover:opacity-100 focus:outline-none"
                 onClick={onEdit}
               >
                 <Trash2 className="size-4" />

@@ -1,5 +1,6 @@
 ---
-import { AIQuiz } from '../../../components/AIQuiz/AIQuiz';
+import { AIQuizGenerator } from '../../../components/AIQuiz/AIQuizGenerator';
+import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 ---
 
@@ -11,5 +12,7 @@ import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
   canonicalUrl='/ai/quiz'
   noIndex={true}
 >
-  <AIQuiz client:load />
+  <AITutorLayout activeTab='quiz' client:load>
+    <AIQuizGenerator client:load />
+  </AITutorLayout>
 </SkeletonLayout>
