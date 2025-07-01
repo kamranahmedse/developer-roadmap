@@ -28,7 +28,6 @@ import { PlatformDemo } from './PlatformDemo';
 import { ReviewsSection } from './ReviewsSection';
 import { SectionHeader } from './SectionHeader';
 import { Spotlight } from './Spotlight';
-import { CourseDiscountBanner } from './CourseDiscountBanner';
 
 type ChapterData = {
   icon: React.ReactNode;
@@ -245,7 +244,6 @@ export const sqlCourseChapters: ChapterData[] = [
 export function SQLCoursePage() {
   return (
     <>
-      <CourseDiscountBanner />
       <div className="relative flex grow flex-col items-center bg-linear-to-b from-zinc-900 to-zinc-950 px-4 pt-3 pb-52 text-zinc-400 md:px-10 md:pt-8">
         <div className="flex w-full items-center justify-between">
           <a
