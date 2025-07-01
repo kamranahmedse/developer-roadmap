@@ -2,13 +2,15 @@ import type { QuizQuestion } from '../../queries/ai-quiz';
 import { useState } from 'react';
 import { cn } from '../../lib/classname';
 import { CheckIcon, XIcon, InfoIcon } from 'lucide-react';
+import { markdownToHtml } from '../../lib/markdown';
 
 type AIMCQQuestionProps = {
   question: QuizQuestion;
+  onNextQuestion?: () => void;
 };
 
 export function AIMCQQuestion(props: AIMCQQuestionProps) {
-  const { question } = props;
+  const { question, onNextQuestion } = props;
   const { title: questionText, options, answerExplanation } = question;
 
   const [selectedOptions, setSelectedOptions] = useState<number[]>([]);
@@ -32,18 +34,29 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
   };
 
   const handleSubmit = () => {
+    if (isSubmitted) {
+      onNextQuestion?.();
+      setSelectedOptions([]);
+      setIsSubmitted(false);
+      return;
+    }
+
     setIsSubmitted(true);
   };
 
   const canSubmit = selectedOptions.length > 0;
+  const titleHtml = markdownToHtml(questionText, false);
 
   return (
     <div>
-      <h3 className="text-4xl font-medium">{questionText}</h3>
+      <div
+        className="prose prose-lg prose-p:text-4xl prose-p:font-medium prose-p:my-4 prose-pre:my-0 prose-p:prose-code:text-4xl! prose-p:prose-code:px-3 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-black"
+        dangerouslySetInnerHTML={{ __html: titleHtml }}
+      />
+
       <div className="mt-6 space-y-3">
         {options.map((option, index) => {
           const isSelected = selectedOptions.includes(index);
-          const showCorrectness = isSubmitted && isSelected;
           const isCorrectOption = option.isCorrect;
 
           const isSelectedAndCorrect =
@@ -52,6 +65,8 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
             isSubmitted && isSelected && !isCorrectOption;
           const isNotSelectedAndCorrect =
             isSubmitted && !isSelected && isCorrectOption;
+
+          const html = markdownToHtml(option.title, false);
 
           return (
             <button
@@ -93,7 +108,10 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
 
                 {isNotSelectedAndCorrect && <CheckIcon className="size-4" />}
               </div>
-              <p className="text-left">{option.title}</p>
+              <div
+                className="prose prose-lg prose-p:text-lg prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-lg! prose-p:prose-code:px-2 prose-p:prose-code:py-0.5 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black mt-0.5 text-left text-black"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
             </button>
           );
         })}
@@ -116,7 +134,7 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
         onClick={handleSubmit}
         disabled={!canSubmit}
       >
-        Submit Answer
+        {isSubmitted ? 'Next Question' : 'Submit Answer'}
       </button>
     </div>
   );

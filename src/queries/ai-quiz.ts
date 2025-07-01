@@ -148,7 +148,7 @@ export type QuizQuestion = {
 
 export function generateAiQuizQuestions(questionData: string): QuizQuestion[] {
   const questions: QuizQuestion[] = [];
-  const lines = questionData.split('\n').map((line) => line.trim());
+  const lines = questionData.split('\n');
 
   let currentQuestion: QuizQuestion | null = null;
   let context: 'question' | 'explanation' | 'option' | null = null;
@@ -213,6 +213,11 @@ export function generateAiQuizQuestions(questionData: string): QuizQuestion[] {
       if (!currentQuestion) {
         continue;
       }
+
+      console.log('-'.repeat(20));
+      console.log('CONTEXT:', context);
+      console.log('LINE:', line);
+      console.log('-'.repeat(20));
 
       if (context === 'question') {
         currentQuestion.title += `\n${line}`;

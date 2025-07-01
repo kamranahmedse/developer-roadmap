@@ -21,6 +21,10 @@ export function AIQuizContent(props: AIQuizContentProps) {
   const hasMoreQuestions = activeQuestionIndex < questions.length - 1;
   const hasPreviousQuestions = activeQuestionIndex > 0;
 
+  console.log('-'.repeat(20));
+  console.log(questions);
+  console.log('-'.repeat(20));
+
   return (
     <div className="mx-auto w-full max-w-lg py-10">
       <div className="mb-10 flex items-center gap-3">
@@ -40,7 +44,10 @@ export function AIQuizContent(props: AIQuizContentProps) {
       </div>
 
       {activeQuestion && activeQuestion.type === 'mcq' && (
-        <AIMCQQuestion question={activeQuestion} />
+        <AIMCQQuestion
+          question={activeQuestion}
+          onNextQuestion={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
+        />
       )}
     </div>
   );
