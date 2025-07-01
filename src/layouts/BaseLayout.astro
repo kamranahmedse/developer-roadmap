@@ -156,7 +156,7 @@ const gaPageIdentifier = Astro.url.pathname
     <link rel='preconnect' href='https://api.roadmap.sh/' />
 
     {
-      hasVarify && (
+      hasVarify && !import.meta.env.DEV && (
         <Fragment>
           <script is:inline>
             window.varify = window.varify || {}; window.varify.iid = 4013;
