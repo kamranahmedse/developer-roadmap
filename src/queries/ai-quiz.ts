@@ -3,6 +3,8 @@ import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/Q
 import { readChatStream } from '../lib/chat';
 import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from './ai-course';
+import { queryOptions } from '@tanstack/react-query';
+import { httpGet } from '../lib/query-http';
 
 type QuizDetails = {
   quizId: string;
@@ -228,4 +230,48 @@ export function generateAiQuizQuestions(questionData: string): QuizQuestion[] {
 
   addCurrentQuestion();
   return questions;
+}
+
+export interface AIQuizDocument {
+  _id: string;
+  userId: string;
+  title: string;
+  slug: string;
+  keyword: string;
+  format: string;
+  content: string;
+
+  tokens?: {
+    prompt: number;
+    completion: number;
+    total: number;
+  };
+
+  questionAndAnswers: QuestionAnswerChatMessage[];
+
+  viewCount: number;
+  lastVisitedAt: Date;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+type GetAIQuizResponse = AIQuizDocument & {
+  questions: QuizQuestion[];
+};
+
+export function aiQuizOptions(quizSlug?: string) {
+  return queryOptions({
+    queryKey: ['ai-quiz', quizSlug],
+    queryFn: async () => {
+      const res = await httpGet<GetAIQuizResponse>(
+        `/v1-get-ai-quiz/${quizSlug}`,
+      );
+
+      return {
+        ...res,
+        questions: generateAiQuizQuestions(res.content),
+      };
+    },
+    enabled: !!quizSlug,
+  });
 }

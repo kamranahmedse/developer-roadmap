@@ -1,12 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import { getUrlParams } from '../../lib/browser';
 import { isLoggedIn } from '../../lib/jwt';
-import { queryClient } from '../../stores/query-client';
 import { LoadingChip } from '../LoadingChip';
 import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnswerChat';
 import { getQuestionAnswerChatMessages } from '../../lib/ai-questions';
-import { aiRoadmapOptions, generateAIRoadmap } from '../../queries/ai-roadmap';
-import { generateAIQuiz, type QuizQuestion } from '../../queries/ai-quiz';
+import {
+  aiQuizOptions,
+  generateAIQuiz,
+  type QuizQuestion,
+} from '../../queries/ai-quiz';
+import { queryClient } from '../../stores/query-client';
+import { AIQuizContent } from './AIQuizContent';
 
 type GenerateAIQuizProps = {
   onQuizSlugChange?: (quizSlug: string) => void;
@@ -20,6 +24,7 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
   const [error, setError] = useState('');
 
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
+  const questionsRef = useRef<QuizQuestion[]>([]);
 
   useEffect(() => {
     const params = getUrlParams();
@@ -66,31 +71,33 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
       prompt,
       questionAndAnswers,
       onDetailsChange: (details) => {
-        // const { quizId, quizSlug, title, userId } = details;
-        // const aiRoadmapData = {
-        //   _id: quizId,
-        //   userId,
-        //   title,
-        //   term,
-        //   data: content,
-        //   questionAndAnswers,
-        //   viewCount: 0,
-        //   svgHtml: svgRef.current || '',
-        //   lastVisitedAt: new Date(),
-        //   createdAt: new Date(),
-        //   updatedAt: new Date(),
-        // };
-        // queryClient.setQueryData(
-        //   aiRoadmapOptions(roadmapSlug).queryKey,
-        //   aiRoadmapData,
-        // );
-        // onQuizSlugChange?.(roadmapSlug);
-        // window.history.replaceState(null, '', `/ai-roadmaps/${roadmapSlug}`);
+        const { quizId, quizSlug, title, userId } = details;
+        const aiQuizData = {
+          _id: quizId,
+          userId,
+          title,
+          slug: quizSlug,
+          keyword: term,
+          format,
+          content: '',
+          questionAndAnswers: questionAndAnswers || [],
+          questions: questionsRef.current || [],
+          viewCount: 0,
+          lastVisitedAt: new Date(),
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        };
+        queryClient.setQueryData(aiQuizOptions(quizSlug).queryKey, aiQuizData);
+        onQuizSlugChange?.(quizSlug);
+        window.history.replaceState(null, '', `/ai/quiz/${quizSlug}`);
       },
       onLoadingChange: setIsLoading,
       onError: setError,
       onStreamingChange: setIsStreaming,
-      onQuestionsChange: setQuestions,
+      onQuestionsChange: (questions) => {
+        setQuestions(questions);
+        questionsRef.current = questions;
+      },
     });
   };
 
@@ -106,5 +113,5 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
     );
   }
 
-  return <div>GenerateAIQuiz</div>;
+  return <AIQuizContent questions={questions} />;
 }
