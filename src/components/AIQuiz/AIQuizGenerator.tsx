@@ -93,6 +93,8 @@ export function AIQuizGenerator() {
       clearQuestionAnswerChatMessages();
       sessionId = storeQuestionAnswerChatMessages(questionAnswerChatMessages);
     }
+
+    window.location.href = `/ai/quiz/search?term=${title}&format=${selectedFormat}&id=${sessionId}`;
   };
 
   useEffect(() => {
