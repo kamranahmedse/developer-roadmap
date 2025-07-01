@@ -732,11 +732,6 @@
     "description": "Asynchronous workflows help reduce request times for expensive operations that would otherwise be performed in-line. They can also help by doing time-consuming work in advance, such as periodic aggregation of data.\n\nTo learn more, visit the following links:",
     "links": [
       {
-        "title": "Asynchronous Thinking for Microservice System Design",
-        "url": "https://www.datamachines.io/blog/asynchronous-thinking-for-microservice-system-design",
-        "type": "article"
-      },
-      {
         "title": "Patterns for microservices - Sync vs Async",
         "url": "https://medium.com/inspiredbrilliance/patterns-for-microservices-e57a2d71ff9e",
         "type": "article"
