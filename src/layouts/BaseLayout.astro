@@ -21,10 +21,13 @@ import { siteConfig } from '../lib/config';
 import type { ResourceType } from '../lib/resource-progress';
 import Bluconic from '../components/Analytics/Bluconic.astro';
 import OneTrust from '../components/Analytics/OneTrust.astro';
+import { cn } from '../lib/classname';
 
 export interface Props {
   title: string;
   ogImageUrl?: string;
+  htmlClassName?: string;
+  bodyClassName?: string;
   // This isn't used anywhere except for the sponsor event labels
   briefTitle?: string;
   redirectUrl?: string;
@@ -42,6 +45,8 @@ export interface Props {
 
 const {
   title = siteConfig.title,
+  htmlClassName,
+  bodyClassName,
   briefTitle,
   description = siteConfig.description,
   ogImageUrl = 'https://roadmap.sh/images/og-img.png',
@@ -72,7 +77,7 @@ const gaPageIdentifier = Astro.url.pathname
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='en' class={htmlClassName}>
   <head>
     <meta charset='UTF-8' />
     <meta name='generator' content={Astro.generator} />
@@ -156,10 +161,17 @@ const gaPageIdentifier = Astro.url.pathname
     <link rel='preconnect' href='https://api.roadmap.sh/' />
 
     {
-      hasVarify && !import.meta.env.DEV && (
+      hasVarify && (
         <Fragment>
+          <style is:inline>.varify-antiflicker{opacity:0 !important}</style>
           <script is:inline>
-            window.varify = window.varify || {}; window.varify.iid = 4013;
+            window.setTimeout(() => {
+              document.querySelectorAll('.varify-antiflicker').forEach((el) => {
+                el.classList.remove('varify-antiflicker');
+              });
+            }, 4000);
+            window.varify = window.varify || {};
+            window.varify.iid = 4013;
           </script>
           <script is:inline src='https://app.varify.io/varify.js' />
         </Fragment>
@@ -202,7 +214,7 @@ const gaPageIdentifier = Astro.url.pathname
       )
     }
   </head>
-  <body class='flex min-h-screen flex-col'>
+  <body class={cn('flex min-h-screen flex-col', bodyClassName)}>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
