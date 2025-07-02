@@ -1256,10 +1256,31 @@
       }
     ]
   },
-  "advanced-topics@t8SJbGVXsUDECxePLDk_w.md": {
+  "t8SJbGVXsUDECxePLDk_w": {
     "title": "Advanced Topics",
-    "description": "",
-    "links": []
+    "description": "Advanced Kubernetes concepts cover production-grade techniques for DevOps, Docker, and backend development. These include GitOps deployments, container optimization, stateful workloads management, secure cloud-native applications and service scalable implementations.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Kubernetes Production Best Practices",
+        "url": "https://kubernetes.io/docs/setup/production-environment/",
+        "type": "article"
+      },
+      {
+        "title": "Top Kubernetes design patterns",
+        "url": "https://www.wallarm.com/what/top-kubernetes-design-patterns",
+        "type": "article"
+      },
+      {
+        "title": "The Role of Kubernetes in DevOps",
+        "url": "https://spacelift.io/blog/kubernetes-devops",
+        "type": "article"
+      },
+      {
+        "title": "Kubernetes for Docker Users",
+        "url": "https://www.youtube.com/watch?v=keNQ6V_W4VE&ab_channel=Rancher",
+        "type": "video"
+      }
+    ]
   },
   "L9rVPEEXFwisQOwT_LQ4v": {
     "title": "Creating Custom Controllers",
