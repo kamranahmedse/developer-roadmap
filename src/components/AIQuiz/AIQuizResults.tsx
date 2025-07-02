@@ -1,21 +1,15 @@
 import {
-  CheckCircle,
   PartyPopper,
-  RefreshCcw,
   RotateCcw,
   XCircle,
   SkipForward,
   CheckCircle2Icon,
   PlusIcon,
-  CheckCircleIcon,
-  XCircleIcon,
-  SkipForwardIcon,
-  CheckIcon,
-  XIcon,
 } from 'lucide-react';
 import type { QuestionState } from './AIQuizContent';
 import { getPercentage } from '../../lib/number';
 import { cn } from '../../lib/classname';
+import { QuizStateButton } from './AIQuizStripe';
 
 type AIQuizResultsProps = {
   questionStates: Record<number, QuestionState>;
@@ -61,27 +55,15 @@ export function AIQuizResults(props: AIQuizResultsProps) {
 
       <div className="mb-6 grid w-full grid-cols-5 gap-2">
         {states.map((state, quizIndex) => {
-          const { status } = state;
-
-          const isCorrect = status === 'correct';
-          const isIncorrect = status === 'incorrect';
-          const isSkipped = status === 'skipped';
-
           return (
-            <button
+            <QuizStateButton
               key={quizIndex}
-              onClick={() => onReview?.(quizIndex)}
-              className={cn(
-                'flex aspect-square flex-col items-center justify-center rounded-xl border border-gray-200 p-2 hover:opacity-80',
-                isCorrect && 'bg-green-700 text-white',
-                isIncorrect && 'bg-red-700 text-white',
-                isSkipped && 'bg-gray-700 text-white',
-              )}
-            >
-              {isCorrect && <CheckIcon className="h-6 w-6" />}
-              {isIncorrect && <XIcon className="h-6 w-6" />}
-              {isSkipped && <SkipForwardIcon className="h-6 w-6" />}
-            </button>
+              state={state}
+              quizIndex={quizIndex}
+              isActive={true}
+              onReview={onReview}
+              className="p-2"
+            />
           );
         })}
       </div>
