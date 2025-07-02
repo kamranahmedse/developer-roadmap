@@ -6,9 +6,16 @@ import {
   XCircle,
   SkipForward,
   CheckCircle2Icon,
+  PlusIcon,
+  CheckCircleIcon,
+  XCircleIcon,
+  SkipForwardIcon,
+  CheckIcon,
+  XIcon,
 } from 'lucide-react';
 import type { QuestionState } from './AIQuizContent';
 import { getPercentage } from '../../lib/number';
+import { cn } from '../../lib/classname';
 
 type AIQuizResultsProps = {
   questionStates: Record<number, QuestionState>;
@@ -36,54 +43,130 @@ export function AIQuizResults(props: AIQuizResultsProps) {
   const accuracy = getPercentage(correctCount, totalQuestions);
 
   return (
-    <div className="flex flex-col items-center justify-center p-8 text-center">
+    <div className="mx-auto mt-10 flex max-w-sm flex-col items-center justify-center text-center">
       <PartyPopper className="mb-6 h-16 w-16 text-gray-400" />
 
       <div className="mb-2 text-4xl font-bold">
         {correctCount}/{totalQuestions}
       </div>
 
-      <p className="mb-8 text-lg text-gray-600">
-        Great job! You answered {correctCount} out of {totalQuestions} questions
-        correctly — that's {accuracy}% accuracy!
+      <p className="mb-8 text-lg text-balance text-gray-600">
+        Great job! You answered{' '}
+        <span className="font-bold">{correctCount}</span> out of{' '}
+        <span className="font-bold">{totalQuestions}</span> questions correctly
+        with <span className="font-bold">{accuracy}%</span> accuracy.
       </p>
 
-      <div className="mb-8 grid w-full max-w-sm grid-cols-3 gap-4">
-        <div className="flex flex-col items-center rounded-xl bg-green-50 p-4 text-green-700">
-          <CheckCircle2Icon className="mb-2 h-6 w-6" />
-          <div className="text-xl font-semibold">{correctCount}</div>
-          <div className="text-sm">Correct</div>
-        </div>
+      <div className="mb-6 grid w-full grid-cols-5 gap-2">
+        {states.map((state, quizIndex) => {
+          const { status } = state;
 
-        <div className="flex flex-col items-center rounded-xl bg-red-50 p-4 text-red-700">
-          <XCircle className="mb-2 h-6 w-6" />
-          <div className="text-xl font-semibold">{incorrectCount}</div>
-          <div className="text-sm">Incorrect</div>
-        </div>
+          const isCorrect = status === 'correct';
+          const isIncorrect = status === 'incorrect';
+          const isSkipped = status === 'skipped';
 
-        <div className="flex flex-col items-center rounded-xl bg-gray-50 p-4 text-gray-700">
-          <SkipForward className="mb-2 h-6 w-6" />
-          <div className="text-xl font-semibold">{skippedCount}</div>
-          <div className="text-sm">Skipped</div>
-        </div>
+          return (
+            <div
+              key={quizIndex}
+              className={cn(
+                'flex aspect-square flex-col items-center justify-center rounded-xl border border-gray-200 p-2',
+                isCorrect && 'bg-green-700 text-white',
+                isIncorrect && 'bg-red-700 text-white',
+                isSkipped && 'bg-gray-700 text-white',
+              )}
+            >
+              {isCorrect && <CheckIcon className="h-6 w-6" />}
+              {isIncorrect && <XIcon className="h-6 w-6" />}
+              {isSkipped && <SkipForwardIcon className="h-6 w-6" />}
+            </div>
+          );
+        })}
       </div>
 
-      <div className="flex gap-4">
-        <button
+      <div className="mb-8 grid w-full grid-cols-3 gap-4">
+        <ResultCard
+          count={correctCount}
+          label="Correct"
+          icon={<CheckCircle2Icon className="mb-2 h-6 w-6" />}
+          className="bg-green-50 text-green-700"
+        />
+
+        <ResultCard
+          count={incorrectCount}
+          label="Incorrect"
+          icon={<XCircle className="mb-2 h-6 w-6" />}
+          className="bg-red-50 text-red-700"
+        />
+
+        <ResultCard
+          count={skippedCount}
+          label="Skipped"
+          icon={<SkipForward className="mb-2 h-6 w-6" />}
+          className="bg-gray-50 text-gray-700"
+        />
+      </div>
+
+      <div className="flex gap-2">
+        <ResultAction
+          label="Try Again"
+          icon={<RotateCcw className="h-4 w-4" />}
           onClick={onRetry}
-          className="flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
-        >
-          <RotateCcw className="h-4 w-4" />
-          Try Again
-        </button>
-        <button
+          className="border border-gray-300 bg-white text-gray-700"
+        />
+        <ResultAction
+          label="New Quiz"
+          icon={<PlusIcon className="h-4 w-4" />}
           onClick={onNewQuiz}
-          className="flex items-center gap-2 rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-900"
-        >
-          <RefreshCcw className="h-4 w-4" />
-          New Quiz
-        </button>
+        />
       </div>
     </div>
+  );
+}
+
+type ResultCardProps = {
+  count: number;
+  label: string;
+  icon: React.ReactNode;
+  className?: string;
+};
+
+export function ResultCard(props: ResultCardProps) {
+  const { count, label, icon, className } = props;
+
+  return (
+    <div
+      className={cn(
+        'flex flex-col items-center rounded-xl bg-gray-50 p-4 text-gray-700',
+        className,
+      )}
+    >
+      {icon}
+      <div className="text-xl font-semibold">{count}</div>
+      <div className="text-sm">{label}</div>
+    </div>
+  );
+}
+
+type ResultActionProps = {
+  label: string;
+  icon: React.ReactNode;
+  onClick: () => void;
+  className?: string;
+};
+
+export function ResultAction(props: ResultActionProps) {
+  const { label, icon, onClick, className } = props;
+
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        'flex h-10 items-center gap-2 rounded-xl bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-900',
+        className,
+      )}
+    >
+      {icon}
+      {label}
+    </button>
   );
 }

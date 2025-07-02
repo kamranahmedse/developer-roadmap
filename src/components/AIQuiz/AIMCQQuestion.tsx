@@ -21,7 +21,7 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
     props;
   const { title: questionText, options, answerExplanation } = question;
 
-  const { isSubmitted, selectedOptions = [], status } = questionState;
+  const { isSubmitted, selectedOptions = [] } = questionState;
 
   const canSubmitMultipleAnswers =
     options.filter((option) => option.isCorrect).length > 1;
@@ -32,9 +32,7 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
     }
 
     if (!canSubmitMultipleAnswers) {
-      const newSelectedOptions = selectedOptions.includes(index)
-        ? selectedOptions.filter((id) => id !== index)
-        : [...selectedOptions, index];
+      const newSelectedOptions = [index];
       setSelectedOptions(newSelectedOptions);
       return;
     }

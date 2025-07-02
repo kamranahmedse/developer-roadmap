@@ -27,11 +27,10 @@ type AIQuizContentProps = {
   quizSlug?: string;
   questions: QuizQuestion[];
   isLoading?: boolean;
-  onNewQuiz?: () => void;
 };
 
 export function AIQuizContent(props: AIQuizContentProps) {
-  const { quizSlug, questions, isLoading, onNewQuiz } = props;
+  const { quizSlug, questions, isLoading } = props;
 
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const activeQuestion = questions[activeQuestionIndex];
@@ -140,14 +139,18 @@ export function AIQuizContent(props: AIQuizContentProps) {
         />
       )}
 
-      {isAllQuestionsSubmitted ? (
+      {isAllQuestionsSubmitted && (
         <AIQuizResults
           questionStates={questionStates}
           totalQuestions={totalQuestions}
           onRetry={handleRetry}
-          onNewQuiz={onNewQuiz ?? (() => {})}
+          onNewQuiz={() => {
+            window.location.href = '/ai/quiz';
+          }}
         />
-      ) : (
+      )}
+
+      {!isAllQuestionsSubmitted && (
         <>
           {activeQuestion && activeQuestion.type === 'mcq' && (
             <AIMCQQuestion
