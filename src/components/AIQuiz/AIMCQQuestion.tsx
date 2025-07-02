@@ -2,13 +2,17 @@ import type { QuizQuestion } from '../../queries/ai-quiz';
 import { cn } from '../../lib/classname';
 import { CheckIcon, XIcon, InfoIcon } from 'lucide-react';
 import { markdownToHtml } from '../../lib/markdown';
+import type { QuestionState } from './AIQuizContent';
+
+export const markdownClassName =
+  'prose prose-lg prose-p:text-lg prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-base! prose-p:prose-code:px-2 prose-p:prose-code:py-0.5 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-left text-black';
 
 type AIMCQQuestionProps = {
   question: QuizQuestion;
   selectedOptions: number[];
   setSelectedOptions: (options: number[]) => void;
   isSubmitted: boolean;
-  onSubmit: () => void;
+  onSubmit: (status: QuestionState['status']) => void;
   onNext: () => void;
 };
 
@@ -51,21 +55,19 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
       return;
     }
 
-    onSubmit();
+    const isCorrect =
+      selectedOptions.every((index) => options[index].isCorrect) &&
+      selectedOptions.length ===
+        options.filter((option) => option.isCorrect).length;
+
+    onSubmit(isCorrect ? 'correct' : 'incorrect');
   };
 
   const canSubmit = selectedOptions.length > 0;
-  const titleHtml = markdownToHtml(questionText, false);
-
-  const markdownClassName =
-    'prose prose-lg prose-p:text-lg prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-base! prose-p:prose-code:px-2 prose-p:prose-code:py-0.5 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-left text-black';
 
   return (
     <div>
-      <div
-        className="prose prose-lg prose-p:text-4xl prose-p:font-medium prose-p:my-4 prose-pre:my-0 prose-p:prose-code:text-3xl! prose-p:prose-code:px-3 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-black"
-        dangerouslySetInnerHTML={{ __html: titleHtml }}
-      />
+      <QuestionTitle title={questionText} />
 
       <div className="mt-6 space-y-3">
         {options.map((option, index) => {
@@ -137,18 +139,7 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
       </div>
 
       {isSubmitted && answerExplanation && (
-        <div className="mt-4 rounded-xl bg-gray-100 p-4">
-          <p className="flex items-center gap-2 text-lg text-gray-600">
-            <InfoIcon className="size-4" />
-            Explanation
-          </p>
-          <p
-            className={cn(markdownClassName, 'mt-0.5')}
-            dangerouslySetInnerHTML={{
-              __html: markdownToHtml(answerExplanation, false),
-            }}
-          />
-        </div>
+        <QuestionExplanation explanation={answerExplanation} />
       )}
 
       <button
@@ -160,6 +151,46 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
       >
         {isSubmitted ? 'Next Question' : 'Submit Answer'}
       </button>
+    </div>
+  );
+}
+
+type QuestionTitleProps = {
+  title: string;
+};
+
+export function QuestionTitle(props: QuestionTitleProps) {
+  const { title } = props;
+
+  const titleHtml = markdownToHtml(title, false);
+
+  return (
+    <div
+      className="prose prose-lg prose-p:text-4xl prose-p:font-medium prose-p:my-4 prose-pre:my-0 prose-p:prose-code:text-3xl! prose-p:prose-code:px-3 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-black"
+      dangerouslySetInnerHTML={{ __html: titleHtml }}
+    />
+  );
+}
+
+type QuestionExplanationProps = {
+  explanation: string;
+};
+
+export function QuestionExplanation(props: QuestionExplanationProps) {
+  const { explanation } = props;
+
+  const explanationHtml = markdownToHtml(explanation, false);
+
+  return (
+    <div className="mt-4 rounded-xl bg-gray-100 p-4">
+      <p className="flex items-center gap-2 text-lg text-gray-600">
+        <InfoIcon className="size-4" />
+        Explanation
+      </p>
+      <div
+        className={cn(markdownClassName, 'mt-0.5')}
+        dangerouslySetInnerHTML={{ __html: explanationHtml }}
+      />
     </div>
   );
 }

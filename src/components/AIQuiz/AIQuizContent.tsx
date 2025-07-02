@@ -6,43 +6,98 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { AIMCQQuestion } from './AIMCQQuestion';
+import { AIOpenEndedQuestion } from './AIOpenEndedQuestion';
+
+export type QuestionState = {
+  isSubmitted: boolean;
+  selectedOptions?: number[];
+  userAnswer?: string;
+  correctAnswer?: string;
+  status: 'correct' | 'incorrect' | 'skipped' | 'pending';
+};
+
+const DEFAULT_QUESTION_STATE: QuestionState = {
+  isSubmitted: false,
+  selectedOptions: [],
+  userAnswer: '',
+  correctAnswer: '',
+  status: 'pending',
+};
 
 type AIQuizContentProps = {
+  quizSlug?: string;
   questions: QuizQuestion[];
   isLoading?: boolean;
 };
 
 export function AIQuizContent(props: AIQuizContentProps) {
-  const { questions, isLoading } = props;
+  const { quizSlug, questions, isLoading } = props;
 
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const activeQuestion = questions[activeQuestionIndex];
 
   const [selectedOptions, setSelectedOptions] = useState<
-    Record<
-      number,
-      {
-        selectedOptions: number[];
-        isSubmitted: boolean;
-      }
-    >
+    Record<number, QuestionState>
   >({});
 
   const hasMoreQuestions = activeQuestionIndex < questions.length - 1;
   const hasPreviousQuestions = activeQuestionIndex > 0;
 
-  const activeQuestionSelectedOptions =
-    selectedOptions[activeQuestionIndex]?.selectedOptions ?? [];
-  const activeQuestionIsSubmitted =
-    selectedOptions[activeQuestionIndex]?.isSubmitted ?? false;
+  const activeQuestionState =
+    selectedOptions[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
 
-  const handleSubmit = (questionIndex: number) => {
+  const activeQuestionSelectedOptions =
+    activeQuestionState.selectedOptions ?? [];
+  const activeQuestionIsSubmitted = activeQuestionState.isSubmitted ?? false;
+
+  const handleSubmit = (
+    questionIndex: number,
+    status: QuestionState['status'],
+  ) => {
     setSelectedOptions((prev) => {
+      const oldState = prev[questionIndex] ?? DEFAULT_QUESTION_STATE;
+
       const newSelectedOptions = {
         ...prev,
         [questionIndex]: {
-          selectedOptions: prev[questionIndex].selectedOptions,
+          ...oldState,
           isSubmitted: true,
+          status,
+        },
+      };
+
+      return newSelectedOptions;
+    });
+  };
+
+  const handleSetUserAnswer = (questionIndex: number, userAnswer: string) => {
+    setSelectedOptions((prev) => {
+      const oldState = prev[questionIndex] ?? DEFAULT_QUESTION_STATE;
+
+      const newSelectedOptions = {
+        ...prev,
+        [questionIndex]: {
+          ...oldState,
+          userAnswer,
+        },
+      };
+
+      return newSelectedOptions;
+    });
+  };
+
+  const handleSetCorrectAnswer = (
+    questionIndex: number,
+    correctAnswer: string,
+  ) => {
+    setSelectedOptions((prev) => {
+      const oldState = prev[questionIndex] ?? DEFAULT_QUESTION_STATE;
+
+      const newSelectedOptions = {
+        ...prev,
+        [questionIndex]: {
+          ...oldState,
+          correctAnswer,
         },
       };
 
@@ -52,9 +107,15 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSelectOptions = (questionIndex: number, options: number[]) => {
     setSelectedOptions((prev) => {
+      const oldState = prev[questionIndex] ?? DEFAULT_QUESTION_STATE;
+
       const newSelectedOptions = {
         ...prev,
-        [questionIndex]: { selectedOptions: options, isSubmitted: false },
+        [questionIndex]: {
+          ...oldState,
+          selectedOptions: options,
+          isSubmitted: true,
+        },
       };
 
       return newSelectedOptions;
@@ -72,7 +133,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
           Question {activeQuestionIndex + 1} of {questions.length}
         </span>
 
-        <div className="relative h-1.5 mx-2 grow rounded-full bg-gray-200">
+        <div className="relative mx-2 h-1.5 grow rounded-full bg-gray-200">
           <div
             className="absolute inset-0 rounded-full bg-black"
             style={{
@@ -101,8 +162,27 @@ export function AIQuizContent(props: AIQuizContentProps) {
           setSelectedOptions={(options) =>
             handleSelectOptions(activeQuestionIndex, options)
           }
-          onSubmit={() => handleSubmit(activeQuestionIndex)}
+          onSubmit={(status) => handleSubmit(activeQuestionIndex, status)}
           onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
+        />
+      )}
+
+      {activeQuestion && activeQuestion.type === 'open-ended' && (
+        <AIOpenEndedQuestion
+          quizSlug={quizSlug ?? ''}
+          question={activeQuestion}
+          isSubmitted={activeQuestionIsSubmitted}
+          onSubmit={(status) => handleSubmit(activeQuestionIndex, status)}
+          onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
+          userAnswer={activeQuestionState.userAnswer ?? ''}
+          setUserAnswer={(userAnswer) =>
+            handleSetUserAnswer(activeQuestionIndex, userAnswer)
+          }
+          correctAnswer={activeQuestionState.correctAnswer ?? ''}
+          setCorrectAnswer={(correctAnswer) =>
+            handleSetCorrectAnswer(activeQuestionIndex, correctAnswer)
+          }
+          status={activeQuestionState.status}
         />
       )}
     </div>

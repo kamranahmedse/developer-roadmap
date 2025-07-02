@@ -113,5 +113,5 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
     );
   }
 
-  return <AIQuizContent questions={questions} />;
+  return <AIQuizContent  questions={questions} />;
 }
