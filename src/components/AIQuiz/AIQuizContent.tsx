@@ -5,6 +5,7 @@ import { AIOpenEndedQuestion } from './AIOpenEndedQuestion';
 import { QuizTopNavigation } from './QuizTopNavigation';
 import { getPercentage } from '../../lib/number';
 import { AIQuizResults } from './AIQuizResults';
+import { flushSync } from 'react-dom';
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -45,10 +46,12 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSubmit = (status: QuestionState['status']) => {
     setQuestionStates((prev) => {
+      const oldState = prev[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
+
       const newSelectedOptions = {
         ...prev,
         [activeQuestionIndex]: {
-          ...activeQuestionState,
+          ...oldState,
           isSubmitted: true,
           status,
         },
@@ -62,10 +65,12 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSetUserAnswer = (userAnswer: string) => {
     setQuestionStates((prev) => {
+      const oldState = prev[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
+
       const newSelectedOptions = {
         ...prev,
         [activeQuestionIndex]: {
-          ...activeQuestionState,
+          ...oldState,
           userAnswer,
         },
       };
@@ -75,25 +80,31 @@ export function AIQuizContent(props: AIQuizContentProps) {
   };
 
   const handleSetCorrectAnswer = (correctAnswer: string) => {
-    setQuestionStates((prev) => {
-      const newSelectedOptions = {
-        ...prev,
-        [activeQuestionIndex]: {
-          ...activeQuestionState,
-          correctAnswer,
-        },
-      };
+    flushSync(() => {
+      setQuestionStates((prev) => {
+        const oldState = prev[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
 
-      return newSelectedOptions;
+        const newSelectedOptions = {
+          ...prev,
+          [activeQuestionIndex]: {
+            ...oldState,
+            correctAnswer,
+          },
+        };
+
+        return newSelectedOptions;
+      });
     });
   };
 
   const handleSelectOptions = (options: number[]) => {
     setQuestionStates((prev) => {
+      const oldState = prev[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
+
       const newSelectedOptions = {
         ...prev,
         [activeQuestionIndex]: {
-          ...activeQuestionState,
+          ...oldState,
           selectedOptions: options,
         },
       };
