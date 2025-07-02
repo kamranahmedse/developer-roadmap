@@ -1,17 +1,13 @@
-import type { QuizQuestion } from '../../queries/ai-quiz';
+import { type QuizQuestion } from '../../queries/ai-quiz';
 import { cn } from '../../lib/classname';
-import { InfoIcon, Loader2Icon } from 'lucide-react';
-import { markdownToHtml } from '../../lib/markdown';
+import { Loader2Icon } from 'lucide-react';
 import { QuestionExplanation, QuestionTitle } from './AIMCQQuestion';
-import { useState } from 'react';
-import { useMutation } from '@tanstack/react-query';
-import { httpPost } from '../../lib/query-http';
-import { queryClient } from '../../stores/query-client';
 import type { QuestionState } from './AIQuizContent';
+import { useVerifyAnswer } from '../../hooks/use-verify-answer';
 
-type VerifyQuizAnswerResponse = {
-  isCorrect?: boolean;
-  correctAnswer?: string;
+export type VerifyQuizAnswerResponse = {
+  status: 'correct' | 'incorrect' | 'can_be_improved';
+  feedback: string;
 };
 
 type AIOpenEndedQuestionProps = {
@@ -46,41 +42,39 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
   } = questionState;
 
   const {
-    mutate: verifyAnswer,
-    isPending: isVerifying,
-    data: verifyAnswerData,
-  } = useMutation(
-    {
-      mutationFn: (answer: string) => {
-        return httpPost<VerifyQuizAnswerResponse>(
-          `/v1-verify-quiz-answer/${quizSlug}`,
-          {
-            question: question.title,
-            userAnswer,
-          },
-        );
-      },
-      onSuccess: (data) => {
-        setCorrectAnswer(data.correctAnswer ?? '');
-        onSubmit?.(data.isCorrect ? 'correct' : 'incorrect');
-      },
-    },
-    queryClient,
-  );
+    verifyAnswer,
+    data: verificationData,
+    status: verifyStatus,
+  } = useVerifyAnswer({
+    quizSlug,
+    question: questionText,
+    userAnswer,
+    onFinish: (data) => {
+      if (!data || !data.status) {
+        console.error('No data or status', data);
+        onSubmit('incorrect');
+        return;
+      }
 
-  const handleSubmit = () => {
+      setCorrectAnswer(data.feedback || '');
+      onSubmit(data.status);
+    },
+  });
+
+  const handleSubmit = async () => {
     if (isSubmitted) {
       onNext?.();
       return;
     }
 
-    verifyAnswer(userAnswer);
+    await verifyAnswer();
   };
 
   const canSubmit = userAnswer.trim().length > 0;
-
-  const markdownClassName =
-    'prose prose-lg prose-p:text-lg prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-base! prose-p:prose-code:px-2 prose-p:prose-code:py-0.5 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-left text-black';
+  const isVerifying =
+    verifyStatus === 'loading' || verifyStatus === 'streaming';
+  const feedback = verificationData?.feedback || correctAnswer;
+  const feedbackStatus = verificationData?.status || status;
 
   return (
     <div>
@@ -93,9 +87,14 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
             'focus:border-gray-400 focus:ring-0 focus:outline-none',
             isSubmitted && 'bg-gray-50',
             isSubmitted &&
-              status === 'correct' &&
+              feedbackStatus === 'correct' &&
               'border-green-500 bg-green-50',
-            isSubmitted && status === 'incorrect' && 'border-red-500 bg-red-50',
+            isSubmitted &&
+              feedbackStatus === 'incorrect' &&
+              'border-red-500 bg-red-50',
+            isSubmitted &&
+              feedbackStatus === 'can_be_improved' &&
+              'border-yellow-500 bg-yellow-50',
           )}
           placeholder="Type your answer here..."
           value={userAnswer}
@@ -104,8 +103,15 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
         />
       </div>
 
-      {!isVerifying && correctAnswer && (
-        <QuestionExplanation explanation={correctAnswer} />
+      {feedback && (
+        <QuestionExplanation
+          title={
+            feedbackStatus === 'can_be_improved'
+              ? 'Can be improved'
+              : 'Feedback'
+          }
+          explanation={feedback}
+        />
       )}
 
       <button

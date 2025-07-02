@@ -14,7 +14,7 @@ export type QuestionState = {
   selectedOptions?: number[];
   userAnswer?: string;
   correctAnswer?: string;
-  status: 'correct' | 'incorrect' | 'skipped' | 'pending';
+  status: 'correct' | 'incorrect' | 'skipped' | 'pending' | 'can_be_improved';
 };
 
 const DEFAULT_QUESTION_STATE: QuestionState = {

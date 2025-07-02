@@ -168,10 +168,11 @@ export function QuestionTitle(props: QuestionTitleProps) {
 
 type QuestionExplanationProps = {
   explanation: string;
+  title?: string;
 };
 
 export function QuestionExplanation(props: QuestionExplanationProps) {
-  const { explanation } = props;
+  const { explanation, title } = props;
 
   const explanationHtml = markdownToHtml(explanation, false);
 
@@ -179,7 +180,7 @@ export function QuestionExplanation(props: QuestionExplanationProps) {
     <div className="mt-4 rounded-xl bg-gray-100 p-4">
       <p className="flex items-center gap-2 text-lg text-gray-600">
         <InfoIcon className="size-4" />
-        Explanation
+        {title || 'Explanation'}
       </p>
       <div
         className={cn(markdownClassName, 'mt-0.5')}

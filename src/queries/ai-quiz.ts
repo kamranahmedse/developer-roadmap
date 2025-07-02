@@ -5,6 +5,7 @@ import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from './ai-course';
 import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
+import type { VerifyQuizAnswerResponse } from '../components/AIQuiz/AIOpenEndedQuestion';
 
 type QuizDetails = {
   quizId: string;
@@ -113,7 +114,6 @@ export async function generateAIQuiz(options: GenerateAIQuizOptions) {
         onQuestionsChange?.(questions);
       },
       onMessageEnd: async (result) => {
-        console.log('FINAL RESULT:', result);
         queryClient.invalidateQueries(getAiCourseLimitOptions());
         onStreamingChange?.(false);
       },
