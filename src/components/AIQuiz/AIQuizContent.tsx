@@ -4,6 +4,7 @@ import { AIMCQQuestion } from './AIMCQQuestion';
 import { AIOpenEndedQuestion } from './AIOpenEndedQuestion';
 import { QuizTopNavigation } from './QuizTopNavigation';
 import { getPercentage } from '../../lib/number';
+import { AIQuizResults } from './AIQuizResults';
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -25,10 +26,11 @@ type AIQuizContentProps = {
   quizSlug?: string;
   questions: QuizQuestion[];
   isLoading?: boolean;
+  onNewQuiz?: () => void;
 };
 
 export function AIQuizContent(props: AIQuizContentProps) {
-  const { quizSlug, questions, isLoading } = props;
+  const { quizSlug, questions, isLoading, onNewQuiz } = props;
 
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const activeQuestion = questions[activeQuestionIndex];
@@ -43,12 +45,10 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSubmit = (status: QuestionState['status']) => {
     setQuestionStates((prev) => {
-      const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
-
       const newSelectedOptions = {
         ...prev,
         [activeQuestionIndex]: {
-          ...oldState,
+          ...activeQuestionState,
           isSubmitted: true,
           status,
         },
@@ -62,12 +62,10 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSetUserAnswer = (userAnswer: string) => {
     setQuestionStates((prev) => {
-      const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
-
       const newSelectedOptions = {
         ...prev,
         [activeQuestionIndex]: {
-          ...oldState,
+          ...activeQuestionState,
           userAnswer,
         },
       };
@@ -78,12 +76,10 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSetCorrectAnswer = (correctAnswer: string) => {
     setQuestionStates((prev) => {
-      const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
-
       const newSelectedOptions = {
         ...prev,
         [activeQuestionIndex]: {
-          ...oldState,
+          ...activeQuestionState,
           correctAnswer,
         },
       };
@@ -94,12 +90,10 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSelectOptions = (options: number[]) => {
     setQuestionStates((prev) => {
-      const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
-
       const newSelectedOptions = {
         ...prev,
         [activeQuestionIndex]: {
-          ...oldState,
+          ...activeQuestionState,
           selectedOptions: options,
         },
       };
@@ -112,6 +106,12 @@ export function AIQuizContent(props: AIQuizContentProps) {
     setActiveQuestionIndex(activeQuestionIndex + 1);
   };
 
+  const handleRetry = () => {
+    setActiveQuestionIndex(0);
+    setQuestionStates({});
+    setIsAllQuestionsSubmitted(false);
+  };
+
   const totalQuestions = questions?.length ?? 0;
   const progressPercentage = isLoading
     ? 0
@@ -119,15 +119,24 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   return (
     <div className="mx-auto w-full max-w-lg py-10">
-      <QuizTopNavigation
-        activeQuestionIndex={activeQuestionIndex}
-        totalQuestions={totalQuestions}
-        progressPercentage={progressPercentage}
-        onPrevious={() => setActiveQuestionIndex(activeQuestionIndex - 1)}
-        onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
-      />
-
       {!isAllQuestionsSubmitted && (
+        <QuizTopNavigation
+          activeQuestionIndex={activeQuestionIndex}
+          totalQuestions={totalQuestions}
+          progressPercentage={progressPercentage}
+          onPrevious={() => setActiveQuestionIndex(activeQuestionIndex - 1)}
+          onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
+        />
+      )}
+
+      {isAllQuestionsSubmitted ? (
+        <AIQuizResults
+          questionStates={questionStates}
+          totalQuestions={totalQuestions}
+          onRetry={handleRetry}
+          onNewQuiz={onNewQuiz ?? (() => {})}
+        />
+      ) : (
         <>
           {activeQuestion && activeQuestion.type === 'mcq' && (
             <AIMCQQuestion

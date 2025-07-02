@@ -214,11 +214,6 @@ export function generateAiQuizQuestions(questionData: string): QuizQuestion[] {
         continue;
       }
 
-      console.log('-'.repeat(20));
-      console.log('CONTEXT:', context);
-      console.log('LINE:', line);
-      console.log('-'.repeat(20));
-
       if (context === 'question') {
         currentQuestion.title += `\n${line}`;
       } else if (context === 'explanation') {
