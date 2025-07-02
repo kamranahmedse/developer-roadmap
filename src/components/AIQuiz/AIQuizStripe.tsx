@@ -15,6 +15,36 @@ type AIQuizStripeProps = {
   onComplete?: () => void;
 };
 
+export function AIQuizStripe(props: AIQuizStripeProps) {
+  const { activeQuestionIndex, questionStates, onReview, onComplete } = props;
+  const states = Object.values(questionStates);
+
+  return (
+    <div className="fixed right-0 bottom-0 w-[calc(100vw-255px)] border-t border-gray-200 bg-white p-3">
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex w-full gap-2">
+          {states.map((state, quizIndex) => (
+            <QuizStateButton
+              key={quizIndex}
+              state={state}
+              quizIndex={quizIndex}
+              isActive={quizIndex === activeQuestionIndex}
+              onReview={onReview}
+            />
+          ))}
+        </div>
+
+        <button
+          className="flex shrink-0 items-center gap-2 rounded-xl bg-black px-4 py-2 text-white hover:bg-gray-900 disabled:opacity-70"
+          onClick={onComplete}
+        >
+          Show Results <ArrowRightIcon className="h-4 w-4" />
+        </button>
+      </div>
+    </div>
+  );
+}
+
 type QuizStateButtonProps = {
   state: QuestionState;
   quizIndex: number;
@@ -51,35 +81,5 @@ export function QuizStateButton(props: QuizStateButtonProps) {
       {isSkipped && <SkipForwardIcon className="h-6 w-6" />}
       {isCanBeImproved && <CircleAlertIcon className="h-6 w-6" />}
     </button>
-  );
-}
-
-export function AIQuizStripe(props: AIQuizStripeProps) {
-  const { activeQuestionIndex, questionStates, onReview, onComplete } = props;
-  const states = Object.values(questionStates);
-
-  return (
-    <div className="fixed right-0 bottom-0 w-[calc(100vw-255px)] border-t border-gray-200 bg-white p-3">
-      <div className="flex items-center justify-between gap-2">
-        <div className="flex w-full gap-2">
-          {states.map((state, quizIndex) => (
-            <QuizStateButton
-              key={quizIndex}
-              state={state}
-              quizIndex={quizIndex}
-              isActive={quizIndex === activeQuestionIndex}
-              onReview={onReview}
-            />
-          ))}
-        </div>
-
-        <button
-          className="flex shrink-0 items-center gap-2 rounded-xl bg-black px-4 py-2 text-white hover:bg-gray-900 disabled:opacity-70"
-          onClick={onComplete}
-        >
-          Show Results <ArrowRightIcon className="h-4 w-4" />
-        </button>
-      </div>
-    </div>
   );
 }
