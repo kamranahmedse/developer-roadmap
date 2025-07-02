@@ -17,32 +17,33 @@ type VerifyQuizAnswerResponse = {
 type AIOpenEndedQuestionProps = {
   quizSlug: string;
   question: QuizQuestion;
-  isSubmitted: boolean;
+  questionState: QuestionState;
+
   onSubmit: (status: QuestionState['status']) => void;
   onNext: () => void;
 
-  userAnswer: string;
   setUserAnswer: (answer: string) => void;
-  correctAnswer: string;
   setCorrectAnswer: (answer: string) => void;
-
-  status: QuestionState['status'];
 };
 
 export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
   const {
     quizSlug,
     question,
-    isSubmitted,
+    questionState,
     onSubmit,
     onNext,
-    userAnswer,
     setUserAnswer,
-    correctAnswer,
     setCorrectAnswer,
-    status,
   } = props;
   const { title: questionText } = question;
+
+  const {
+    isSubmitted,
+    userAnswer = '',
+    correctAnswer = '',
+    status,
+  } = questionState;
 
   const {
     mutate: verifyAnswer,

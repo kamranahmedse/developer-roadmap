@@ -9,23 +9,19 @@ export const markdownClassName =
 
 type AIMCQQuestionProps = {
   question: QuizQuestion;
-  selectedOptions: number[];
+  questionState: QuestionState;
+
   setSelectedOptions: (options: number[]) => void;
-  isSubmitted: boolean;
   onSubmit: (status: QuestionState['status']) => void;
   onNext: () => void;
 };
 
 export function AIMCQQuestion(props: AIMCQQuestionProps) {
-  const {
-    question,
-    selectedOptions,
-    setSelectedOptions,
-    isSubmitted,
-    onSubmit,
-    onNext,
-  } = props;
+  const { question, questionState, setSelectedOptions, onSubmit, onNext } =
+    props;
   const { title: questionText, options, answerExplanation } = question;
+
+  const { isSubmitted, selectedOptions = [], status } = questionState;
 
   const canSubmitMultipleAnswers =
     options.filter((option) => option.isCorrect).length > 1;

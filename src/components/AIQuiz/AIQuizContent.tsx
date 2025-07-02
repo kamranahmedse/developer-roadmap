@@ -1,12 +1,8 @@
 import { useState } from 'react';
 import type { QuizQuestion } from '../../queries/ai-quiz';
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  type LucideIcon,
-} from 'lucide-react';
 import { AIMCQQuestion } from './AIMCQQuestion';
 import { AIOpenEndedQuestion } from './AIOpenEndedQuestion';
+import { QuizTopNavigation } from './QuizTopNavigation';
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -39,27 +35,18 @@ export function AIQuizContent(props: AIQuizContentProps) {
   const [selectedOptions, setSelectedOptions] = useState<
     Record<number, QuestionState>
   >({});
-
-  const hasMoreQuestions = activeQuestionIndex < questions.length - 1;
-  const hasPreviousQuestions = activeQuestionIndex > 0;
+  const [isAllQuestionsSubmitted, setIsAllQuestionsSubmitted] = useState(false);
 
   const activeQuestionState =
     selectedOptions[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
 
-  const activeQuestionSelectedOptions =
-    activeQuestionState.selectedOptions ?? [];
-  const activeQuestionIsSubmitted = activeQuestionState.isSubmitted ?? false;
-
-  const handleSubmit = (
-    questionIndex: number,
-    status: QuestionState['status'],
-  ) => {
+  const handleSubmit = (status: QuestionState['status']) => {
     setSelectedOptions((prev) => {
       const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
         ...prev,
-        [questionIndex]: {
+        [activeQuestionIndex]: {
           ...oldState,
           isSubmitted: true,
           status,
@@ -68,15 +55,17 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
       return newSelectedOptions;
     });
+
+    setIsAllQuestionsSubmitted(activeQuestionIndex === questions.length - 1);
   };
 
-  const handleSetUserAnswer = (questionIndex: number, userAnswer: string) => {
+  const handleSetUserAnswer = (userAnswer: string) => {
     setSelectedOptions((prev) => {
       const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
         ...prev,
-        [questionIndex]: {
+        [activeQuestionIndex]: {
           ...oldState,
           userAnswer,
         },
@@ -86,16 +75,13 @@ export function AIQuizContent(props: AIQuizContentProps) {
     });
   };
 
-  const handleSetCorrectAnswer = (
-    questionIndex: number,
-    correctAnswer: string,
-  ) => {
+  const handleSetCorrectAnswer = (correctAnswer: string) => {
     setSelectedOptions((prev) => {
       const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
         ...prev,
-        [questionIndex]: {
+        [activeQuestionIndex]: {
           ...oldState,
           correctAnswer,
         },
@@ -105,13 +91,13 @@ export function AIQuizContent(props: AIQuizContentProps) {
     });
   };
 
-  const handleSelectOptions = (questionIndex: number, options: number[]) => {
+  const handleSelectOptions = (options: number[]) => {
     setSelectedOptions((prev) => {
       const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
         ...prev,
-        [questionIndex]: {
+        [activeQuestionIndex]: {
           ...oldState,
           selectedOptions: options,
         },
@@ -121,88 +107,50 @@ export function AIQuizContent(props: AIQuizContentProps) {
     });
   };
 
+  const handleNext = () => {
+    setActiveQuestionIndex(activeQuestionIndex + 1);
+  };
+
+  const totalQuestions = questions?.length ?? 0;
   const progressPercentage = isLoading
     ? 0
-    : Math.min(((activeQuestionIndex + 1) / questions.length) * 100, 100);
+    : Math.min(((activeQuestionIndex + 1) / totalQuestions) * 100, 100);
 
   return (
     <div className="mx-auto w-full max-w-lg py-10">
-      <div className="mb-10 flex items-center gap-2">
-        <span className="text-sm text-gray-500">
-          Question {activeQuestionIndex + 1} of {questions.length}
-        </span>
+      <QuizTopNavigation
+        activeQuestionIndex={activeQuestionIndex}
+        totalQuestions={totalQuestions}
+        progressPercentage={progressPercentage}
+        onPrevious={() => setActiveQuestionIndex(activeQuestionIndex - 1)}
+        onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
+      />
 
-        <div className="relative mx-2 h-1.5 grow rounded-full bg-gray-200">
-          <div
-            className="absolute inset-0 rounded-full bg-black"
-            style={{
-              width: `${progressPercentage}%`,
-            }}
-          />
-        </div>
+      {!isAllQuestionsSubmitted && (
+        <>
+          {activeQuestion && activeQuestion.type === 'mcq' && (
+            <AIMCQQuestion
+              question={activeQuestion}
+              questionState={activeQuestionState}
+              setSelectedOptions={handleSelectOptions}
+              onSubmit={handleSubmit}
+              onNext={handleNext}
+            />
+          )}
 
-        <NavigationButton
-          disabled={!hasPreviousQuestions}
-          onClick={() => setActiveQuestionIndex(activeQuestionIndex - 1)}
-          icon={ChevronLeftIcon}
-        />
-        <NavigationButton
-          disabled={!hasMoreQuestions}
-          onClick={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
-          icon={ChevronRightIcon}
-        />
-      </div>
-
-      {activeQuestion && activeQuestion.type === 'mcq' && (
-        <AIMCQQuestion
-          question={activeQuestion}
-          selectedOptions={activeQuestionSelectedOptions}
-          isSubmitted={activeQuestionIsSubmitted}
-          setSelectedOptions={(options) =>
-            handleSelectOptions(activeQuestionIndex, options)
-          }
-          onSubmit={(status) => handleSubmit(activeQuestionIndex, status)}
-          onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
-        />
-      )}
-
-      {activeQuestion && activeQuestion.type === 'open-ended' && (
-        <AIOpenEndedQuestion
-          quizSlug={quizSlug ?? ''}
-          question={activeQuestion}
-          isSubmitted={activeQuestionIsSubmitted}
-          onSubmit={(status) => handleSubmit(activeQuestionIndex, status)}
-          onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
-          userAnswer={activeQuestionState.userAnswer ?? ''}
-          setUserAnswer={(userAnswer) =>
-            handleSetUserAnswer(activeQuestionIndex, userAnswer)
-          }
-          correctAnswer={activeQuestionState.correctAnswer ?? ''}
-          setCorrectAnswer={(correctAnswer) =>
-            handleSetCorrectAnswer(activeQuestionIndex, correctAnswer)
-          }
-          status={activeQuestionState.status}
-        />
+          {activeQuestion && activeQuestion.type === 'open-ended' && (
+            <AIOpenEndedQuestion
+              quizSlug={quizSlug ?? ''}
+              question={activeQuestion}
+              questionState={activeQuestionState}
+              onSubmit={handleSubmit}
+              onNext={handleNext}
+              setUserAnswer={handleSetUserAnswer}
+              setCorrectAnswer={handleSetCorrectAnswer}
+            />
+          )}
+        </>
       )}
     </div>
-  );
-}
-
-type NavigationButtonProps = {
-  disabled: boolean;
-  onClick: () => void;
-  icon: LucideIcon;
-};
-
-function NavigationButton(props: NavigationButtonProps) {
-  const { disabled, onClick, icon: Icon } = props;
-  return (
-    <button
-      className="flex size-7 items-center justify-center rounded-lg border border-gray-200 text-gray-500 hover:text-black disabled:opacity-50"
-      disabled={disabled}
-      onClick={onClick}
-    >
-      <Icon className="size-4" />
-    </button>
   );
 }
