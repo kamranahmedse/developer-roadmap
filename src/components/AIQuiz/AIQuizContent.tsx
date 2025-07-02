@@ -6,6 +6,8 @@ import { QuizTopNavigation } from './QuizTopNavigation';
 import { getPercentage } from '../../lib/number';
 import { AIQuizResults } from './AIQuizResults';
 import { flushSync } from 'react-dom';
+import { AIQuizStripe } from './AIQuizStripe';
+import { cn } from '../../lib/classname';
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -146,7 +148,12 @@ export function AIQuizContent(props: AIQuizContentProps) {
   };
 
   return (
-    <div className="mx-auto w-full max-w-lg py-10">
+    <div
+      className={cn(
+        'mx-auto w-full max-w-lg py-10',
+        quizStatus === 'reviewing' && 'pb-24',
+      )}
+    >
       {shouldShowQuestions && (
         <QuizTopNavigation
           activeQuestionIndex={activeQuestionIndex}
@@ -202,6 +209,20 @@ export function AIQuizContent(props: AIQuizContentProps) {
             />
           )}
         </>
+      )}
+
+      {quizStatus === 'reviewing' && (
+        <AIQuizStripe
+          activeQuestionIndex={activeQuestionIndex}
+          questionStates={questionStates}
+          onReview={(questionIndex) => {
+            setActiveQuestionIndex(questionIndex);
+            setQuizStatus('reviewing');
+          }}
+          onComplete={() => {
+            setQuizStatus('submitted');
+          }}
+        />
       )}
     </div>
   );
