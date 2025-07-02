@@ -1,56 +1,69 @@
 import type { QuizQuestion } from '../../queries/ai-quiz';
-import { useState } from 'react';
 import { cn } from '../../lib/classname';
 import { CheckIcon, XIcon, InfoIcon } from 'lucide-react';
 import { markdownToHtml } from '../../lib/markdown';
 
 type AIMCQQuestionProps = {
   question: QuizQuestion;
-  onNextQuestion?: () => void;
+  selectedOptions: number[];
+  setSelectedOptions: (options: number[]) => void;
+  isSubmitted: boolean;
+  onSubmit: () => void;
+  onNext: () => void;
 };
 
 export function AIMCQQuestion(props: AIMCQQuestionProps) {
-  const { question, onNextQuestion } = props;
+  const {
+    question,
+    selectedOptions,
+    setSelectedOptions,
+    isSubmitted,
+    onSubmit,
+    onNext,
+  } = props;
   const { title: questionText, options, answerExplanation } = question;
-
-  const [selectedOptions, setSelectedOptions] = useState<number[]>([]);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const canSubmitMultipleAnswers =
     options.filter((option) => option.isCorrect).length > 1;
 
   const handleSelectOption = (index: number) => {
-    if (!canSubmitMultipleAnswers) {
-      setSelectedOptions((prev) => (prev.includes(index) ? [] : [index]));
+    if (isSubmitted) {
       return;
     }
 
-    setSelectedOptions((prev) => {
-      if (prev.includes(index)) {
-        return prev.filter((id) => id !== index);
-      }
-      return [...prev, index];
-    });
+    if (!canSubmitMultipleAnswers) {
+      const newSelectedOptions = selectedOptions.includes(index)
+        ? selectedOptions.filter((id) => id !== index)
+        : [...selectedOptions, index];
+      setSelectedOptions(newSelectedOptions);
+      return;
+    }
+
+    const newSelectedOptions = selectedOptions.includes(index)
+      ? selectedOptions.filter((id) => id !== index)
+      : [...selectedOptions, index];
+    setSelectedOptions(newSelectedOptions);
   };
 
   const handleSubmit = () => {
     if (isSubmitted) {
-      onNextQuestion?.();
-      setSelectedOptions([]);
-      setIsSubmitted(false);
+      onNext?.();
       return;
     }
 
-    setIsSubmitted(true);
+    onSubmit();
   };
 
   const canSubmit = selectedOptions.length > 0;
   const titleHtml = markdownToHtml(questionText, false);
 
+  const markdownClassName =
+    'prose prose-lg prose-p:text-lg prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-base! prose-p:prose-code:px-2 prose-p:prose-code:py-0.5 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-left text-black';
+
   return (
     <div>
       <div
-        className="prose prose-lg prose-p:text-4xl prose-p:font-medium prose-p:my-4 prose-pre:my-0 prose-p:prose-code:text-4xl! prose-p:prose-code:px-3 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-black"
+        className="prose prose-lg prose-p:text-4xl prose-p:font-medium prose-p:my-4 prose-pre:my-0 prose-p:prose-code:text-3xl! prose-p:prose-code:px-3 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-black"
         dangerouslySetInnerHTML={{ __html: titleHtml }}
       />
 
@@ -68,11 +81,14 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
 
           const html = markdownToHtml(option.title, false);
 
+          const isOptionDisabled =
+            isSubmitted && !isSelected && !isCorrectOption;
+
           return (
             <button
               key={option.id}
               className={cn(
-                'flex w-full items-start gap-2 rounded-xl border border-gray-200 p-2 text-lg hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50',
+                'text-l flex w-full items-start gap-2 rounded-xl border border-gray-200 p-2',
                 isSelected && !isSubmitted && 'border-gray-400 bg-gray-50',
                 isSubmitted &&
                   isSelectedAndCorrect &&
@@ -83,9 +99,12 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
                 isSubmitted &&
                   isNotSelectedAndCorrect &&
                   'border-green-500 bg-green-50',
+                !isSelected && !isCorrectOption
+                  ? 'hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50'
+                  : '',
               )}
               onClick={() => handleSelectOption(index)}
-              disabled={isSubmitted && !isSelected && !isCorrectOption}
+              disabled={isOptionDisabled}
             >
               <div
                 className={cn(
@@ -109,7 +128,7 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
                 {isNotSelectedAndCorrect && <CheckIcon className="size-4" />}
               </div>
               <div
-                className="prose prose-lg prose-p:text-lg prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-lg! prose-p:prose-code:px-2 prose-p:prose-code:py-0.5 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black mt-0.5 text-left text-black"
+                className={cn(markdownClassName, 'mt-0.5')}
                 dangerouslySetInnerHTML={{ __html: html }}
               />
             </button>
@@ -117,13 +136,18 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
         })}
       </div>
 
-      {isSubmitted && (
+      {isSubmitted && answerExplanation && (
         <div className="mt-4 rounded-xl bg-gray-100 p-4">
           <p className="flex items-center gap-2 text-lg text-gray-600">
             <InfoIcon className="size-4" />
             Explanation
           </p>
-          <p className="mt-1">{answerExplanation}</p>
+          <p
+            className={cn(markdownClassName, 'mt-0.5')}
+            dangerouslySetInnerHTML={{
+              __html: markdownToHtml(answerExplanation, false),
+            }}
+          />
         </div>
       )}
 

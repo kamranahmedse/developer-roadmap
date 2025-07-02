@@ -18,24 +18,74 @@ export function AIQuizContent(props: AIQuizContentProps) {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const activeQuestion = questions[activeQuestionIndex];
 
+  const [selectedOptions, setSelectedOptions] = useState<
+    Record<
+      number,
+      {
+        selectedOptions: number[];
+        isSubmitted: boolean;
+      }
+    >
+  >({});
+
   const hasMoreQuestions = activeQuestionIndex < questions.length - 1;
   const hasPreviousQuestions = activeQuestionIndex > 0;
 
-  console.log('-'.repeat(20));
-  console.log(questions);
-  console.log('-'.repeat(20));
+  const activeQuestionSelectedOptions =
+    selectedOptions[activeQuestionIndex]?.selectedOptions ?? [];
+  const activeQuestionIsSubmitted =
+    selectedOptions[activeQuestionIndex]?.isSubmitted ?? false;
+
+  const handleSubmit = (questionIndex: number) => {
+    setSelectedOptions((prev) => {
+      const newSelectedOptions = {
+        ...prev,
+        [questionIndex]: {
+          selectedOptions: prev[questionIndex].selectedOptions,
+          isSubmitted: true,
+        },
+      };
+
+      return newSelectedOptions;
+    });
+  };
+
+  const handleSelectOptions = (questionIndex: number, options: number[]) => {
+    setSelectedOptions((prev) => {
+      const newSelectedOptions = {
+        ...prev,
+        [questionIndex]: { selectedOptions: options, isSubmitted: false },
+      };
+
+      return newSelectedOptions;
+    });
+  };
+
+  const progressPercentage = isLoading
+    ? 0
+    : Math.min(((activeQuestionIndex + 1) / questions.length) * 100, 100);
 
   return (
     <div className="mx-auto w-full max-w-lg py-10">
-      <div className="mb-10 flex items-center gap-3">
+      <div className="mb-10 flex items-center gap-2">
+        <span className="text-sm text-gray-500">
+          Question {activeQuestionIndex + 1} of {questions.length}
+        </span>
+
+        <div className="relative h-1.5 mx-2 grow rounded-full bg-gray-200">
+          <div
+            className="absolute inset-0 rounded-full bg-black"
+            style={{
+              width: `${progressPercentage}%`,
+            }}
+          />
+        </div>
+
         <NavigationButton
           disabled={!hasPreviousQuestions}
           onClick={() => setActiveQuestionIndex(activeQuestionIndex - 1)}
           icon={ChevronLeftIcon}
         />
-        <span className="text-sm text-gray-500">
-          Question {activeQuestionIndex + 1} of {questions.length}
-        </span>
         <NavigationButton
           disabled={!hasMoreQuestions}
           onClick={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
@@ -46,7 +96,13 @@ export function AIQuizContent(props: AIQuizContentProps) {
       {activeQuestion && activeQuestion.type === 'mcq' && (
         <AIMCQQuestion
           question={activeQuestion}
-          onNextQuestion={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
+          selectedOptions={activeQuestionSelectedOptions}
+          isSubmitted={activeQuestionIsSubmitted}
+          setSelectedOptions={(options) =>
+            handleSelectOptions(activeQuestionIndex, options)
+          }
+          onSubmit={() => handleSubmit(activeQuestionIndex)}
+          onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
         />
       )}
     </div>
