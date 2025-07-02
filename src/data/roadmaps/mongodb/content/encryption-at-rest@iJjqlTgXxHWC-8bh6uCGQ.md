@@ -5,4 +5,5 @@ Encryption at Rest in MongoDB protects data stored on disk by encrypting databas
 Visit the following resources to learn more:
 
 - [@official@Encryption at Rest](https://www.mongodb.com/docs/manual/core/security-encryption-at-rest/)
+- [@official@Encrypted Fields and Enabled Queries](https://www.mongodb.com/docs/manual/core/queryable-encryption/fundamentals/encrypt-and-query/)
 - [@article@Encryption at Rest and In Transit in MongoDB](https://syskool.com/encryption-at-rest-and-in-transit-in-mongodb/)
