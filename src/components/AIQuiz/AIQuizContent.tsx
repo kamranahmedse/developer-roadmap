@@ -55,7 +55,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
     status: QuestionState['status'],
   ) => {
     setSelectedOptions((prev) => {
-      const oldState = prev[questionIndex] ?? DEFAULT_QUESTION_STATE;
+      const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
         ...prev,
@@ -72,7 +72,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSetUserAnswer = (questionIndex: number, userAnswer: string) => {
     setSelectedOptions((prev) => {
-      const oldState = prev[questionIndex] ?? DEFAULT_QUESTION_STATE;
+      const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
         ...prev,
@@ -91,7 +91,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
     correctAnswer: string,
   ) => {
     setSelectedOptions((prev) => {
-      const oldState = prev[questionIndex] ?? DEFAULT_QUESTION_STATE;
+      const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
         ...prev,
@@ -107,14 +107,13 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSelectOptions = (questionIndex: number, options: number[]) => {
     setSelectedOptions((prev) => {
-      const oldState = prev[questionIndex] ?? DEFAULT_QUESTION_STATE;
+      const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
         ...prev,
         [questionIndex]: {
           ...oldState,
           selectedOptions: options,
-          isSubmitted: true,
         },
       };
 
