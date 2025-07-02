@@ -22,7 +22,6 @@ export function AIQuiz(props: AIQuizProps) {
   const { quizSlug: defaultQuizSlug } = props;
   const [quizSlug, setQuizSlug] = useState(defaultQuizSlug);
 
-  const toast = useToast();
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isRegenerating, setIsRegenerating] = useState(false);
 
@@ -42,55 +41,6 @@ export function AIQuiz(props: AIQuizProps) {
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
-
-  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
-  const isPaidUser = userBillingDetails?.status === 'active';
-
-  const handleRegenerate = async (prompt?: string) => {
-    if (!isLoggedIn()) {
-      showLoginPopup();
-      return;
-    }
-
-    if (!isPaidUser && isLimitExceeded) {
-      setShowUpgradeModal(true);
-      return;
-    }
-
-    flushSync(() => {
-      setIsRegenerating(true);
-    });
-
-    queryClient.cancelQueries(aiQuizOptions(quizSlug));
-    queryClient.setQueryData(aiQuizOptions(quizSlug).queryKey, (old) => {
-      if (!old) {
-        return old;
-      }
-
-      return {
-        ...old,
-        data: '',
-        svgHtml: '',
-      };
-    });
-
-    await generateAIQuiz({
-      quizSlug: aiQuiz?.slug || '',
-      term: aiQuiz?.keyword || '',
-      format: aiQuiz?.format || '',
-      prompt,
-      isForce: true,
-      onStreamingChange: setIsRegenerating,
-      onError: (error) => {
-        toast.error(error);
-      },
-      onFinish: () => {
-        setIsRegenerating(false);
-        refetchTokenUsage();
-        queryClient.invalidateQueries(aiQuizOptions(quizSlug));
-      },
-    });
-  };
 
   const isLoading =
     isLoadingBySlug ||
