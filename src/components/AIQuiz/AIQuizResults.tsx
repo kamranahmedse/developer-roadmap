@@ -22,10 +22,12 @@ type AIQuizResultsProps = {
   totalQuestions: number;
   onRetry: () => void;
   onNewQuiz: () => void;
+  onReview?: (questionIndex: number) => void;
 };
 
 export function AIQuizResults(props: AIQuizResultsProps) {
-  const { questionStates, totalQuestions, onRetry, onNewQuiz } = props;
+  const { questionStates, totalQuestions, onRetry, onNewQuiz, onReview } =
+    props;
 
   const states = Object.values(questionStates);
   const correctCount = states.filter(
@@ -66,10 +68,11 @@ export function AIQuizResults(props: AIQuizResultsProps) {
           const isSkipped = status === 'skipped';
 
           return (
-            <div
+            <button
               key={quizIndex}
+              onClick={() => onReview?.(quizIndex)}
               className={cn(
-                'flex aspect-square flex-col items-center justify-center rounded-xl border border-gray-200 p-2',
+                'flex aspect-square flex-col items-center justify-center rounded-xl border border-gray-200 p-2 hover:opacity-80',
                 isCorrect && 'bg-green-700 text-white',
                 isIncorrect && 'bg-red-700 text-white',
                 isSkipped && 'bg-gray-700 text-white',
@@ -78,7 +81,7 @@ export function AIQuizResults(props: AIQuizResultsProps) {
               {isCorrect && <CheckIcon className="h-6 w-6" />}
               {isIncorrect && <XIcon className="h-6 w-6" />}
               {isSkipped && <SkipForwardIcon className="h-6 w-6" />}
-            </div>
+            </button>
           );
         })}
       </div>

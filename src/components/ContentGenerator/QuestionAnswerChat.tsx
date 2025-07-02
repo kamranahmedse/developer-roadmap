@@ -27,9 +27,11 @@ type QuestionAnswerChatProps = {
   setQuestionAnswerChatMessages: (
     messages: QuestionAnswerChatMessage[],
   ) => void;
-  onGenerateNow: () => void;
   defaultQuestions?: AIQuestionSuggestionsResponse['questions'];
   type?: 'create' | 'update';
+
+  from?: 'content' | 'quiz';
+
   className?: string;
 };
 
@@ -40,9 +42,9 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     defaultQuestions,
     questionAnswerChatMessages,
     setQuestionAnswerChatMessages,
-    onGenerateNow,
     type = 'create',
     className = '',
+    from = 'content',
   } = props;
 
   const [activeMessageIndex, setActiveMessageIndex] = useState(
@@ -58,7 +60,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     data: aiQuestionSuggestions,
     isLoading: isLoadingAiQuestionSuggestions,
   } = useQuery(
-    aiQuestionSuggestionsOptions({ term, format }, defaultQuestions),
+    aiQuestionSuggestionsOptions({ term, format, from }, defaultQuestions),
     queryClient,
   );
 
@@ -113,11 +115,6 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
     scrollToBottom();
   };
 
-  const canGenerateNow =
-    // user can generate after answering 5 questions -> 5 * 2 messages (user and assistant)
-    !isLoadingAiQuestionSuggestions && questionAnswerChatMessages.length >= 10;
-
-  const canReset = questionAnswerChatMessages.length >= 2;
   const handleReset = () => {
     setQuestionAnswerChatMessages([]);
     setActiveMessageIndex(0);

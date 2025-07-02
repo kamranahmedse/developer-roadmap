@@ -23,6 +23,8 @@ const DEFAULT_QUESTION_STATE: QuestionState = {
   status: 'pending',
 };
 
+type QuizStatus = 'answering' | 'submitted' | 'reviewing';
+
 type AIQuizContentProps = {
   quizSlug?: string;
   questions: QuizQuestion[];
@@ -38,7 +40,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
   const [questionStates, setQuestionStates] = useState<
     Record<number, QuestionState>
   >({});
-  const [isAllQuestionsSubmitted, setIsAllQuestionsSubmitted] = useState(false);
+  const [quizStatus, setQuizStatus] = useState<QuizStatus>('answering');
 
   const activeQuestionState =
     questionStates[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
@@ -59,7 +61,9 @@ export function AIQuizContent(props: AIQuizContentProps) {
       return newSelectedOptions;
     });
 
-    setIsAllQuestionsSubmitted(activeQuestionIndex === questions.length - 1);
+    setQuizStatus(
+      activeQuestionIndex === questions.length - 1 ? 'submitted' : 'answering',
+    );
   };
 
   const handleSetUserAnswer = (userAnswer: string) => {
@@ -112,34 +116,54 @@ export function AIQuizContent(props: AIQuizContentProps) {
     });
   };
 
-  const handleNext = () => {
-    setActiveQuestionIndex(activeQuestionIndex + 1);
-  };
-
   const handleRetry = () => {
     setActiveQuestionIndex(0);
     setQuestionStates({});
-    setIsAllQuestionsSubmitted(false);
+    setQuizStatus('answering');
   };
 
+  const hasNextQuestion = activeQuestionIndex < questions.length - 1;
+  const hasPreviousQuestion = activeQuestionIndex > 0;
   const totalQuestions = questions?.length ?? 0;
+  const isAllQuestionsSubmitted =
+    Object.values(questionStates).filter((state) => state.status !== 'pending')
+      .length === totalQuestions;
+
   const progressPercentage = isLoading
     ? 0
     : getPercentage(activeQuestionIndex + 1, totalQuestions);
 
+  const shouldShowQuestions =
+    quizStatus === 'answering' || quizStatus === 'reviewing';
+
+  const handleNextQuestion = () => {
+    if (!hasNextQuestion) {
+      setQuizStatus(isAllQuestionsSubmitted ? 'submitted' : 'reviewing');
+      return;
+    }
+
+    setActiveQuestionIndex(activeQuestionIndex + 1);
+  };
+
   return (
     <div className="mx-auto w-full max-w-lg py-10">
-      {!isAllQuestionsSubmitted && (
+      {shouldShowQuestions && (
         <QuizTopNavigation
           activeQuestionIndex={activeQuestionIndex}
           totalQuestions={totalQuestions}
           progressPercentage={progressPercentage}
-          onPrevious={() => setActiveQuestionIndex(activeQuestionIndex - 1)}
-          onNext={() => setActiveQuestionIndex(activeQuestionIndex + 1)}
+          onPrevious={() => {
+            if (!hasPreviousQuestion) {
+              return;
+            }
+
+            setActiveQuestionIndex(activeQuestionIndex - 1);
+          }}
+          onNext={handleNextQuestion}
         />
       )}
 
-      {isAllQuestionsSubmitted && (
+      {quizStatus === 'submitted' && (
         <AIQuizResults
           questionStates={questionStates}
           totalQuestions={totalQuestions}
@@ -147,10 +171,14 @@ export function AIQuizContent(props: AIQuizContentProps) {
           onNewQuiz={() => {
             window.location.href = '/ai/quiz';
           }}
+          onReview={(questionIndex) => {
+            setActiveQuestionIndex(questionIndex);
+            setQuizStatus('reviewing');
+          }}
         />
       )}
 
-      {!isAllQuestionsSubmitted && (
+      {shouldShowQuestions && (
         <>
           {activeQuestion && activeQuestion.type === 'mcq' && (
             <AIMCQQuestion
@@ -158,7 +186,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
               questionState={activeQuestionState}
               setSelectedOptions={handleSelectOptions}
               onSubmit={handleSubmit}
-              onNext={handleNext}
+              onNext={handleNextQuestion}
             />
           )}
 
@@ -168,7 +196,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
               question={activeQuestion}
               questionState={activeQuestionState}
               onSubmit={handleSubmit}
-              onNext={handleNext}
+              onNext={handleNextQuestion}
               setUserAnswer={handleSetUserAnswer}
               setCorrectAnswer={handleSetCorrectAnswer}
             />

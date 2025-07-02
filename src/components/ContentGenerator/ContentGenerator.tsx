@@ -227,9 +227,6 @@ export function ContentGenerator() {
             format={selectedFormat}
             questionAnswerChatMessages={questionAnswerChatMessages}
             setQuestionAnswerChatMessages={setQuestionAnswerChatMessages}
-            onGenerateNow={() => {
-              handleSubmit();
-            }}
           />
         )}
 

@@ -218,9 +218,7 @@ export function AIQuizGenerator() {
             format={selectedFormatTitle || selectedFormat}
             questionAnswerChatMessages={questionAnswerChatMessages}
             setQuestionAnswerChatMessages={setQuestionAnswerChatMessages}
-            onGenerateNow={() => {
-              handleSubmit();
-            }}
+            from="quiz"
           />
         )}
 
