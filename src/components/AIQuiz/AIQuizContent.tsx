@@ -3,6 +3,7 @@ import type { QuizQuestion } from '../../queries/ai-quiz';
 import { AIMCQQuestion } from './AIMCQQuestion';
 import { AIOpenEndedQuestion } from './AIOpenEndedQuestion';
 import { QuizTopNavigation } from './QuizTopNavigation';
+import { getPercentage } from '../../lib/number';
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -32,16 +33,16 @@ export function AIQuizContent(props: AIQuizContentProps) {
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const activeQuestion = questions[activeQuestionIndex];
 
-  const [selectedOptions, setSelectedOptions] = useState<
+  const [questionStates, setQuestionStates] = useState<
     Record<number, QuestionState>
   >({});
   const [isAllQuestionsSubmitted, setIsAllQuestionsSubmitted] = useState(false);
 
   const activeQuestionState =
-    selectedOptions[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
+    questionStates[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
 
   const handleSubmit = (status: QuestionState['status']) => {
-    setSelectedOptions((prev) => {
+    setQuestionStates((prev) => {
       const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
@@ -60,7 +61,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
   };
 
   const handleSetUserAnswer = (userAnswer: string) => {
-    setSelectedOptions((prev) => {
+    setQuestionStates((prev) => {
       const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
@@ -76,7 +77,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
   };
 
   const handleSetCorrectAnswer = (correctAnswer: string) => {
-    setSelectedOptions((prev) => {
+    setQuestionStates((prev) => {
       const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
@@ -92,7 +93,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
   };
 
   const handleSelectOptions = (options: number[]) => {
-    setSelectedOptions((prev) => {
+    setQuestionStates((prev) => {
       const oldState = activeQuestionState ?? DEFAULT_QUESTION_STATE;
 
       const newSelectedOptions = {
@@ -114,7 +115,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
   const totalQuestions = questions?.length ?? 0;
   const progressPercentage = isLoading
     ? 0
-    : Math.min(((activeQuestionIndex + 1) / totalQuestions) * 100, 100);
+    : getPercentage(activeQuestionIndex + 1, totalQuestions);
 
   return (
     <div className="mx-auto w-full max-w-lg py-10">
