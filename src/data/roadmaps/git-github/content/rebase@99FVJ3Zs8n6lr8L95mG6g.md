@@ -5,3 +5,4 @@ Rebasing in Git is a powerful and potentially complex feature used to reorganize
 Visit the following resources to learn more:
 
 - [@official@Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+- [@video@What is Git Rebase?](https://youtu.be/nHcfoHOW4uA?si=ZubFfA9_Un_arqxL)
