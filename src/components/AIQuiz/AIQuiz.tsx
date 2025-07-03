@@ -65,7 +65,7 @@ export function AIQuiz(props: AIQuizProps) {
         </div>
       )}
 
-      <div className="grow overflow-y-auto p-4 pt-0">
+      <div className="grow">
         {quizSlug && !aiQuizError && (
           <AIQuizContent
             quizSlug={quizSlug}

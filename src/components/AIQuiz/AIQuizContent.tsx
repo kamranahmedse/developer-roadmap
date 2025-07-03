@@ -148,69 +148,70 @@ export function AIQuizContent(props: AIQuizContentProps) {
   };
 
   return (
-    <div
-      className={cn(
-        'mx-auto w-full max-w-lg py-10',
-        quizStatus === 'reviewing' && 'pb-24',
-      )}
-    >
-      {shouldShowQuestions && (
-        <QuizTopNavigation
-          activeQuestionIndex={activeQuestionIndex}
-          totalQuestions={totalQuestions}
-          progressPercentage={progressPercentage}
-          onPrevious={() => {
-            if (!hasPreviousQuestion) {
-              return;
-            }
+    <div className="flex h-full w-full flex-col">
+      <div className="relative flex h-full flex-col overflow-y-auto">
+        <div className="absolute inset-0 z-10">
+          <div className="mx-auto max-w-lg bg-white px-4 py-10">
+            {shouldShowQuestions && (
+              <QuizTopNavigation
+                activeQuestionIndex={activeQuestionIndex}
+                totalQuestions={totalQuestions}
+                progressPercentage={progressPercentage}
+                onPrevious={() => {
+                  if (!hasPreviousQuestion) {
+                    return;
+                  }
 
-            setActiveQuestionIndex(activeQuestionIndex - 1);
-          }}
-          onNext={handleNextQuestion}
-        />
-      )}
+                  setActiveQuestionIndex(activeQuestionIndex - 1);
+                }}
+                onNext={handleNextQuestion}
+              />
+            )}
 
-      {quizStatus === 'submitted' && (
-        <AIQuizResults
-          questionStates={questionStates}
-          totalQuestions={totalQuestions}
-          onRetry={handleRetry}
-          onNewQuiz={() => {
-            window.location.href = '/ai/quiz';
-          }}
-          onReview={(questionIndex) => {
-            setActiveQuestionIndex(questionIndex);
-            setQuizStatus('reviewing');
-          }}
-        />
-      )}
+            {quizStatus === 'submitted' && (
+              <AIQuizResults
+                questionStates={questionStates}
+                totalQuestions={totalQuestions}
+                onRetry={handleRetry}
+                onNewQuiz={() => {
+                  window.location.href = '/ai/quiz';
+                }}
+                onReview={(questionIndex) => {
+                  setActiveQuestionIndex(questionIndex);
+                  setQuizStatus('reviewing');
+                }}
+              />
+            )}
 
-      {shouldShowQuestions && (
-        <>
-          {activeQuestion && activeQuestion.type === 'mcq' && (
-            <AIMCQQuestion
-              question={activeQuestion}
-              questionState={activeQuestionState}
-              setSelectedOptions={handleSelectOptions}
-              onSubmit={handleSubmit}
-              onNext={handleNextQuestion}
-            />
-          )}
+            {shouldShowQuestions && (
+              <>
+                {activeQuestion && activeQuestion.type === 'mcq' && (
+                  <AIMCQQuestion
+                    question={activeQuestion}
+                    questionState={activeQuestionState}
+                    setSelectedOptions={handleSelectOptions}
+                    onSubmit={handleSubmit}
+                    onNext={handleNextQuestion}
+                  />
+                )}
 
-          {activeQuestion && activeQuestion.type === 'open-ended' && (
-            <AIOpenEndedQuestion
-              key={activeQuestion.id}
-              quizSlug={quizSlug ?? ''}
-              question={activeQuestion}
-              questionState={activeQuestionState}
-              onSubmit={handleSubmit}
-              onNext={handleNextQuestion}
-              setUserAnswer={handleSetUserAnswer}
-              setCorrectAnswer={handleSetCorrectAnswer}
-            />
-          )}
-        </>
-      )}
+                {activeQuestion && activeQuestion.type === 'open-ended' && (
+                  <AIOpenEndedQuestion
+                    key={activeQuestion.id}
+                    quizSlug={quizSlug ?? ''}
+                    question={activeQuestion}
+                    questionState={activeQuestionState}
+                    onSubmit={handleSubmit}
+                    onNext={handleNextQuestion}
+                    setUserAnswer={handleSetUserAnswer}
+                    setCorrectAnswer={handleSetCorrectAnswer}
+                  />
+                )}
+              </>
+            )}
+          </div>
+        </div>
+      </div>
 
       {quizStatus === 'reviewing' && (
         <AIQuizStripe

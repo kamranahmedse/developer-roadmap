@@ -57,7 +57,6 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
       }
 
       setCorrectAnswer(data.feedback || '');
-      onSubmit(data.status);
     },
   });
 

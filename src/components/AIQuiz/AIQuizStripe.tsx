@@ -20,9 +20,9 @@ export function AIQuizStripe(props: AIQuizStripeProps) {
   const states = Object.values(questionStates);
 
   return (
-    <div className="fixed right-0 bottom-0 w-[calc(100vw-255px)] border-t border-gray-200 bg-white p-3">
-      <div className="flex items-center justify-between gap-2">
-        <div className="flex w-full gap-2">
+    <div className="border-t border-gray-200 bg-white p-3">
+      <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
+        <div className="flex w-full flex-wrap gap-2">
           {states.map((state, quizIndex) => (
             <QuizStateButton
               key={quizIndex}
@@ -35,7 +35,7 @@ export function AIQuizStripe(props: AIQuizStripeProps) {
         </div>
 
         <button
-          className="flex shrink-0 items-center gap-2 rounded-xl bg-black px-4 py-2 text-white hover:bg-gray-900 disabled:opacity-70"
+          className="flex w-full shrink-0 items-center justify-center gap-2 rounded-xl bg-black px-4 py-2 text-white hover:bg-gray-900 disabled:opacity-70 md:w-auto md:justify-start"
           onClick={onComplete}
         >
           Show Results <ArrowRightIcon className="h-4 w-4" />
