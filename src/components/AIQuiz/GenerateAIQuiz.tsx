@@ -11,6 +11,7 @@ import {
 } from '../../queries/ai-quiz';
 import { queryClient } from '../../stores/query-client';
 import { AIQuizContent } from './AIQuizContent';
+import { AlertCircleIcon } from 'lucide-react';
 
 type GenerateAIQuizProps = {
   onQuizSlugChange?: (quizSlug: string) => void;
@@ -102,7 +103,14 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
   };
 
   if (error) {
-    return <div className="text-red-500">{error}</div>;
+    return (
+      <div className="absolute inset-0 z-20 flex h-full flex-col items-center justify-center bg-white">
+        <div className="flex flex-col items-center justify-center gap-2">
+          <AlertCircleIcon className="size-10 text-gray-500" />
+          <p className="text-center">{error}</p>
+        </div>
+      </div>
+    );
   }
 
   if (isLoading) {
@@ -113,5 +121,5 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
     );
   }
 
-  return <AIQuizContent  questions={questions} />;
+  return <AIQuizContent questions={questions} />;
 }

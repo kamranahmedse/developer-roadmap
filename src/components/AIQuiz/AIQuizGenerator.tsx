@@ -12,7 +12,7 @@ import { useEffect, useId, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { useIsPaidUser } from '../../queries/billing';
+import { billingDetailsOptions, useIsPaidUser } from '../../queries/billing';
 import {
   clearQuestionAnswerChatMessages,
   storeQuestionAnswerChatMessages,
@@ -27,23 +27,36 @@ import { getUrlParams } from '../../lib/browser';
 import { useParams } from '../../hooks/use-params';
 import { FormatItem } from '../ContentGenerator/FormatItem';
 import { AIQuizLayout } from './AIQuizLayout';
+import { queryClient } from '../../stores/query-client';
+import { useQuery } from '@tanstack/react-query';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
 
 const allowedFormats = ['mcq', 'open-ended', 'mixed'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
 
 export function AIQuizGenerator() {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
-  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
   const toast = useToast();
   const [title, setTitle] = useState('');
   const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('mcq');
 
-  // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
   const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
     QuestionAnswerChatMessage[]
   >([]);
+
+  const {
+    data: tokenUsage,
+    isLoading: isTokenUsageLoading,
+    refetch: refetchTokenUsage,
+  } = useQuery(getAiCourseLimitOptions(), queryClient);
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   const titleFieldId = useId();
   const fineTuneOptionsId = useId();
@@ -88,6 +101,11 @@ export function AIQuizGenerator() {
       return;
     }
 
+    if (!isPaidUser && isLimitExceeded) {
+      setIsUpgradeModalOpen(true);
+      return;
+    }
+
     let sessionId = '';
     if (showFineTuneOptions) {
       clearQuestionAnswerChatMessages();
@@ -117,7 +135,8 @@ export function AIQuizGenerator() {
         {isUpgradeModalOpen && (
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
         )}
-        {!isPaidUser && !isPaidUserLoading && isLoggedIn() && (
+
+        {!isPaidUser && !isBillingDetailsLoading && isLoggedIn() && (
           <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500 max-md:hidden">
             You are on the free plan
             <button
@@ -193,6 +212,16 @@ export function AIQuizGenerator() {
             id={fineTuneOptionsId}
             checked={showFineTuneOptions}
             onChange={(e) => {
+              if (!isLoggedIn()) {
+                showLoginPopup();
+                return;
+              }
+
+              if (!isPaidUser && isLimitExceeded) {
+                setIsUpgradeModalOpen(true);
+                return;
+              }
+
               if (!trimmedTitle) {
                 toast.error('Please enter a topic first');
                 return;
