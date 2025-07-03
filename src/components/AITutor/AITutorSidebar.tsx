@@ -1,6 +1,7 @@
 import {
   BookOpen,
   Compass,
+  ListTodoIcon,
   MessageCircle,
   Plus,
   Star,
@@ -38,6 +39,12 @@ const sidebarItems = [
     label: 'Ask AI Tutor',
     href: '/ai/chat',
     icon: MessageCircle,
+  },
+  {
+    key: 'quiz',
+    label: 'Test my Knowledge',
+    href: '/ai/quiz',
+    icon: ListTodoIcon,
   },
   {
     key: 'library',

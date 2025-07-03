@@ -4,6 +4,7 @@ import { httpGet } from '../lib/query-http';
 type AIQuestionSuggestionsQuery = {
   term: string;
   format: string;
+  from?: 'content' | 'quiz';
 };
 
 export type AIQuestionSuggestionsResponse = {
@@ -31,7 +32,7 @@ export function aiQuestionSuggestionsOptions(
         query,
       );
     },
-    enabled: !!query.term && !!query.format,
+    enabled: !!query.term && !!query.format && !!query.from,
     refetchOnMount: false,
   });
 }
