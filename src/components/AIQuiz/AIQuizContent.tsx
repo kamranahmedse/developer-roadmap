@@ -199,6 +199,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
           {activeQuestion && activeQuestion.type === 'open-ended' && (
             <AIOpenEndedQuestion
+              key={activeQuestion.id}
               quizSlug={quizSlug ?? ''}
               question={activeQuestion}
               questionState={activeQuestionState}
