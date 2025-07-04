@@ -4,7 +4,7 @@ import { REDIRECT_PAGE_AFTER_AUTH } from '../../lib/auth';
 
 function easeInElement(el: Element) {
   el.classList.add('opacity-0', 'transition-opacity', 'duration-300');
-  el.classList.remove('hidden');
+  el.classList.remove('hidden', 'hidden!');
   setTimeout(() => {
     el.classList.remove('opacity-0');
   });
