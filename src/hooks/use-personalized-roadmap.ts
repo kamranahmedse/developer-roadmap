@@ -35,7 +35,7 @@ export function usePersonalizedRoadmap(options: UsePersonalizedRoadmapOptions) {
         abortControllerRef.current = new AbortController();
 
         const response = await fetch(
-          `${import.meta.env.PUBLIC_API_URL}/v1-personalize-roadmap`,
+          `${import.meta.env.PUBLIC_API_URL}/v1-personalized-roadmap`,
           {
             method: 'POST',
             headers: {
