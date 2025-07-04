@@ -1,0 +1,48 @@
+import { PersonStandingIcon } from 'lucide-react';
+import { useId, useState, type FormEvent } from 'react';
+
+type PersonalizedRoadmapFormProps = {
+  info?: string;
+  onSubmit: (info: string) => void;
+};
+
+export function PersonalizedRoadmapForm(props: PersonalizedRoadmapFormProps) {
+  const { info: defaultInfo, onSubmit } = props;
+
+  const [info, setInfo] = useState(defaultInfo || '');
+  const infoFieldId = useId();
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    onSubmit(info);
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="p-4">
+      <h2 className="text-lg font-semibold">Personalize Roadmap</h2>
+      <div className="mt-0.5 flex flex-col gap-2">
+        <label htmlFor={infoFieldId} className="text-balance text-gray-600">
+          Tell us about yourself to personlize this roadmap as per your goals
+          and experience
+        </label>
+        <textarea
+          id={infoFieldId}
+          className="h-[150px] w-full resize-none rounded-xl border border-gray-200 p-3 focus:border-gray-500 focus:outline-none"
+          placeholder="I already know about HTML, CSS, and JavaScript..."
+          value={info}
+          onChange={(e) => setInfo(e.target.value)}
+        />
+      </div>
+
+      <div className="mt-2 flex items-center justify-end">
+        <button
+          type="submit"
+          className="flex items-center gap-2 rounded-xl bg-black p-2 px-4 text-white hover:opacity-90 focus:outline-none"
+        >
+          <PersonStandingIcon className="h-4 w-4" />
+          Personalize
+        </button>
+      </div>
+    </form>
+  );
+}
