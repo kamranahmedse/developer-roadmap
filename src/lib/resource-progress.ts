@@ -206,7 +206,7 @@ export async function getResourceProgress(
   return progress;
 }
 
-async function loadFreshProgress(
+export async function loadFreshProgress(
   resourceType: ResourceType,
   resourceId: string,
 ) {

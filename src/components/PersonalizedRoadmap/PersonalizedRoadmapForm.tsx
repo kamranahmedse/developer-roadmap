@@ -1,13 +1,14 @@
-import { PersonStandingIcon } from 'lucide-react';
+import { PersonStandingIcon, XIcon } from 'lucide-react';
 import { useId, useState, type FormEvent } from 'react';
 
 type PersonalizedRoadmapFormProps = {
   info?: string;
   onSubmit: (info: string) => void;
+  onClearProgress: () => void;
 };
 
 export function PersonalizedRoadmapForm(props: PersonalizedRoadmapFormProps) {
-  const { info: defaultInfo, onSubmit } = props;
+  const { info: defaultInfo, onSubmit, onClearProgress } = props;
 
   const [info, setInfo] = useState(defaultInfo || '');
   const infoFieldId = useId();
@@ -34,7 +35,15 @@ export function PersonalizedRoadmapForm(props: PersonalizedRoadmapFormProps) {
         />
       </div>
 
-      <div className="mt-2 flex items-center justify-end">
+      <div className="mt-2 grid grid-cols-2 gap-2">
+        <button
+          type="button"
+          className="flex items-center gap-2 rounded-xl border border-gray-200 p-2 px-4 text-gray-600 hover:bg-gray-100 focus:outline-none"
+          onClick={onClearProgress}
+        >
+          <XIcon className="h-4 w-4" />
+          Clear Progress
+        </button>
         <button
           type="submit"
           className="flex items-center gap-2 rounded-xl bg-black p-2 px-4 text-white hover:opacity-90 focus:outline-none"

@@ -4,17 +4,20 @@ import { Modal } from '../Modal';
 import { PersonalizedRoadmapForm } from './PersonalizedRoadmapForm';
 
 type PersonalizedRoadmapModalProps = {
-  roadmapId: string;
   onClose: () => void;
   onSubmit: (information: string) => void;
+  onClearProgress: () => void;
 };
 
 export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
-  const { roadmapId, onClose, onSubmit } = props;
+  const { onClose, onSubmit, onClearProgress } = props;
 
   return (
     <Modal onClose={onClose} bodyClassName="rounded-2xl">
-      <PersonalizedRoadmapForm onSubmit={onSubmit} />
+      <PersonalizedRoadmapForm
+        onSubmit={onSubmit}
+        onClearProgress={onClearProgress}
+      />
     </Modal>
   );
 }
