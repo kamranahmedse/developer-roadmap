@@ -8,7 +8,7 @@ Code editors and IDEs are programs specifically designed for editing, managing a
 
 - **Sublime Text**: Sublime Text is a cross-platform text editor that is quite popular among developers due to its speed and minimalist design. It supports C++ with the help of plugins and has a variety of themes and packages available for customization.
 
-- **CLion**: CLion is an Integrated Development Environment (IDE) developed by JetBrains specifically for C and C++ developers. It provides advanced features like code completion, refactoring support, debugging, and more. It's worth noting that CLion is a commercial IDE, and there is no community version available; users are required to purchase a license for usage.
+- **CLion**: CLion is an Integrated Development Environment (IDE) developed by JetBrains specifically for C and C++ developers. It provides advanced features like code completion, refactoring support, debugging, and more. It's worth noting that CLion is a commercial IDE, but there is community version available.
 
 These are just a few examples, and there are many other code editors available, including Atom, Notepad++, and Geany. They all have their features and may suit different developers' needs. Finding the right code editor is often a matter of personal preference and workflow.
 
