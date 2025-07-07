@@ -1,1 +1,3 @@
 # Avatar
+
+Avatars are visual representations of users or entities, commonly used to personalize interfaces and help with identification. They should support multiple shapes like circular or rounded square variants, provide predefined sizes for different contexts, handle missing images gracefully with initials or default icons, include status indicators for online/offline states, maintain consistent image quality standards, ensure proper accessibility with alt text and sufficient contrast, provide skeleton loading states, support group avatar arrangements, and include interactive states with appropriate visual feedback for clickable elements.

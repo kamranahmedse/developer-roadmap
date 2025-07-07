@@ -1,1 +1,3 @@
 # Cards
+
+Cards are flexible content containers that group related information and actions in a visually digestible format, serving as building blocks for complex layouts. They require clear content structure with defined hierarchy, consistent elevation systems for visual hierarchy, responsive behavior that adapts across screen sizes, distinct interactive states with appropriate feedback, support for various media types with proper aspect ratios, clearly defined action areas without interaction conflicts, content variants for different use cases, loading states that maintain layout stability, proper accessibility with semantic markup and keyboard navigation, and consistent spacing that aligns with the design system's grid and typography scale.
