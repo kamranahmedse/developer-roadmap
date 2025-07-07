@@ -1,13 +1,12 @@
 import {
   BookOpen,
-  Compass,
-  ListTodoIcon,
-  Map,
+  Compass, Map,
   MessageCircle,
   Plus,
   Star,
+  Swords,
   X,
-  Zap,
+  Zap
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
@@ -43,10 +42,10 @@ const sidebarItems = [
   },
   {
     key: 'quiz',
-    label: 'Test my Knowledge',
+    label: 'Test my Skills',
     href: '/ai/quiz',
-    icon: ListTodoIcon,
-  }, 
+    icon: Swords,
+  },
   {
     key: 'roadmap-chat',
     label: 'Roadmap Chat',
