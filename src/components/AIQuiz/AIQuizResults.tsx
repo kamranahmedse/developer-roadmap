@@ -96,7 +96,7 @@ export function AIQuizResults(props: AIQuizResultsProps) {
           label="Try Again"
           icon={<RotateCcw className="h-4 w-4" />}
           onClick={onRetry}
-          className="border border-gray-300 bg-white text-gray-700"
+          className="border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
         />
         <ResultAction
           label="New Quiz"
