@@ -5,7 +5,7 @@ import { queryClient } from '../stores/query-client';
 import { getAiCourseLimitOptions } from './ai-course';
 import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
-import type { VerifyQuizAnswerResponse } from '../components/AIQuiz/AIOpenEndedQuestion';
+import { isLoggedIn } from '../lib/jwt';
 
 type QuizDetails = {
   quizId: string;
@@ -273,5 +273,38 @@ export function aiQuizOptions(quizSlug?: string) {
       };
     },
     enabled: !!quizSlug,
+  });
+}
+
+export type ListUserAiQuizzesQuery = {
+  perPage?: string;
+  currPage?: string;
+  query?: string;
+};
+
+export type ListUserAiQuizzesResponse = {
+  data: Omit<AIQuizDocument, 'content' | 'questionAndAnswers'>[];
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
+};
+
+export function listUserAiQuizzesOptions(
+  params: ListUserAiQuizzesQuery = {
+    perPage: '21',
+    currPage: '1',
+    query: '',
+  },
+) {
+  return queryOptions({
+    queryKey: ['user-ai-quizzes', params],
+    queryFn: () => {
+      return httpGet<ListUserAiQuizzesResponse>(
+        `/v1-list-user-ai-quizzes`,
+        params,
+      );
+    },
+    enabled: !!isLoggedIn(),
   });
 }
