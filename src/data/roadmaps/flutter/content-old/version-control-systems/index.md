@@ -4,7 +4,7 @@ Version control systems allow you to track changes to your codebase/files over t
 
 Visit the following resources to learn more:
 
-- [@article@What is Version Control? - Github](https://github.com/resources/articles/software-development/what-is-version-control)
+- [@article@What is Version Control? - GitHub](https://github.com/resources/articles/software-development/what-is-version-control)
 - [@article@What is Version Control? - Atlassian](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [@video@Version Control System Introduction](https://www.youtube.com/watch?v=zbKdDsNNOhg)
 - [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
