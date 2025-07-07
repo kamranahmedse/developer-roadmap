@@ -20,6 +20,9 @@ type AIOpenEndedQuestionProps = {
 
   setUserAnswer: (answer: string) => void;
   setCorrectAnswer: (answer: string) => void;
+
+  isLastQuestion: boolean;
+  onComplete: () => void;
 };
 
 export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
@@ -31,6 +34,8 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
     onNext,
     setUserAnswer,
     setCorrectAnswer,
+    isLastQuestion,
+    onComplete,
   } = props;
   const { title: questionText } = question;
 
@@ -63,7 +68,11 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
 
   const handleSubmit = async () => {
     if (isSubmitted) {
-      onNext?.();
+      if (isLastQuestion) {
+        onComplete();
+      } else {
+        onNext();
+      }
       return;
     }
 
@@ -126,7 +135,11 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
         {isVerifying ? (
           <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
         ) : isSubmitted ? (
-          'Next Question'
+          isLastQuestion ? (
+            'Finish Quiz'
+          ) : (
+            'Next Question'
+          )
         ) : (
           'Submit Answer'
         )}

@@ -14,11 +14,20 @@ type AIMCQQuestionProps = {
   setSelectedOptions: (options: number[]) => void;
   onSubmit: (status: QuestionState['status']) => void;
   onNext: () => void;
+  isLastQuestion: boolean;
+  onComplete: () => void;
 };
 
 export function AIMCQQuestion(props: AIMCQQuestionProps) {
-  const { question, questionState, setSelectedOptions, onSubmit, onNext } =
-    props;
+  const {
+    question,
+    questionState,
+    setSelectedOptions,
+    onSubmit,
+    onNext,
+    isLastQuestion,
+    onComplete,
+  } = props;
   const { title: questionText, options, answerExplanation } = question;
 
   const { isSubmitted, selectedOptions = [] } = questionState;
@@ -45,7 +54,11 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
 
   const handleSubmit = () => {
     if (isSubmitted) {
-      onNext?.();
+      if (isLastQuestion) {
+        onComplete();
+      } else {
+        onNext();
+      }
       return;
     }
 
@@ -143,7 +156,11 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
         onClick={handleSubmit}
         disabled={!canSubmit}
       >
-        {isSubmitted ? 'Next Question' : 'Submit Answer'}
+        {isSubmitted
+          ? isLastQuestion
+            ? 'Finish Quiz'
+            : 'Next Question'
+          : 'Submit Answer'}
       </button>
     </div>
   );

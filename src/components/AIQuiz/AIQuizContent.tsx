@@ -46,6 +46,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const activeQuestionState =
     questionStates[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
+  const isLastQuestion = activeQuestionIndex === questions.length - 1;
 
   const handleSubmit = (status: QuestionState['status']) => {
     setQuestionStates((prev) => {
@@ -62,10 +63,6 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
       return newSelectedOptions;
     });
-
-    setQuizStatus(
-      activeQuestionIndex === questions.length - 1 ? 'submitted' : 'answering',
-    );
   };
 
   const handleSetUserAnswer = (userAnswer: string) => {
@@ -147,6 +144,10 @@ export function AIQuizContent(props: AIQuizContentProps) {
     setActiveQuestionIndex(activeQuestionIndex + 1);
   };
 
+  const handleComplete = () => {
+    setQuizStatus('submitted');
+  };
+
   return (
     <div className="flex h-full w-full flex-col">
       <div className="relative flex h-full flex-col overflow-y-auto">
@@ -192,6 +193,8 @@ export function AIQuizContent(props: AIQuizContentProps) {
                     setSelectedOptions={handleSelectOptions}
                     onSubmit={handleSubmit}
                     onNext={handleNextQuestion}
+                    isLastQuestion={isLastQuestion}
+                    onComplete={handleComplete}
                   />
                 )}
 
@@ -205,6 +208,8 @@ export function AIQuizContent(props: AIQuizContentProps) {
                     onNext={handleNextQuestion}
                     setUserAnswer={handleSetUserAnswer}
                     setCorrectAnswer={handleSetCorrectAnswer}
+                    isLastQuestion={isLastQuestion}
+                    onComplete={handleComplete}
                   />
                 )}
               </>
