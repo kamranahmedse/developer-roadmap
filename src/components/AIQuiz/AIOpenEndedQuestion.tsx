@@ -57,6 +57,7 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
       }
 
       setCorrectAnswer(data.feedback || '');
+      onSubmit(data?.status || 'incorrect');
     },
   });
 
@@ -107,7 +108,9 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
           title={
             feedbackStatus === 'can_be_improved'
               ? 'Can be improved'
-              : 'Feedback'
+              : feedbackStatus === 'correct'
+                ? 'Correct'
+                : 'Incorrect'
           }
           explanation={feedback}
         />
