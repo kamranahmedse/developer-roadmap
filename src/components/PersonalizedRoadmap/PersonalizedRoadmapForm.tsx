@@ -32,13 +32,14 @@ export function PersonalizedRoadmapForm(props: PersonalizedRoadmapFormProps) {
           placeholder="I already know about HTML, CSS, and JavaScript..."
           value={info}
           onChange={(e) => setInfo(e.target.value)}
+          autoFocus
         />
       </div>
 
       <div className="mt-2 grid grid-cols-2 gap-2">
         <button
           type="button"
-          className="flex items-center gap-2 rounded-xl border border-gray-200 p-2 px-4 text-gray-600 hover:bg-gray-100 focus:outline-none"
+          className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 p-2 px-4 text-gray-600 hover:bg-gray-100 focus:outline-none"
           onClick={onClearProgress}
         >
           <XIcon className="h-4 w-4" />
@@ -46,7 +47,7 @@ export function PersonalizedRoadmapForm(props: PersonalizedRoadmapFormProps) {
         </button>
         <button
           type="submit"
-          className="flex items-center gap-2 rounded-xl bg-black p-2 px-4 text-white hover:opacity-90 focus:outline-none"
+          className="flex items-center justify-center gap-2 rounded-xl bg-black p-2 px-4 text-white hover:opacity-90 focus:outline-none"
         >
           <PersonStandingIcon className="h-4 w-4" />
           Personalize

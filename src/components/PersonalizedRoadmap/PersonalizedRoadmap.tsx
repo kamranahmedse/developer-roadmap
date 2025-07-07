@@ -1,10 +1,7 @@
 import { Loader2Icon, PersonStandingIcon } from 'lucide-react';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { usePersonalizedRoadmap } from '../../hooks/use-personalized-roadmap';
-import {
-  loadFreshProgress,
-  renderTopicProgress,
-} from '../../lib/resource-progress';
+import { renderTopicProgress } from '../../lib/resource-progress';
 import { PersonalizedRoadmapModal } from './PersonalizedRoadmapModal';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { httpPost } from '../../lib/query-http';
@@ -12,6 +9,7 @@ import { useToast } from '../../hooks/use-toast';
 import { queryClient } from '../../stores/query-client';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
 import { useAuth } from '../../hooks/use-auth';
+import { roadmapJSONOptions } from '../../queries/roadmap';
 
 type BulkUpdateResourceProgressBody = {
   done: string[];
@@ -31,10 +29,18 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
   const currentUser = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const { data: userResourceProgress } = useQuery(
-    userResourceProgressOptions('roadmap', roadmapId),
+  const { data: roadmap } = useQuery(
+    roadmapJSONOptions(roadmapId),
     queryClient,
   );
+
+  const allClickableNodes = useMemo(() => {
+    return (
+      roadmap?.json?.nodes?.filter((node) =>
+        ['topic', 'subtopic'].includes(node?.type ?? ''),
+      ) ?? []
+    );
+  }, [roadmap]);
 
   const { mutate: bulkUpdateResourceProgress, isPending: isBulkUpdating } =
     useMutation(
@@ -67,16 +73,17 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
     onData: (data) => {
       const { topicIds } = data;
       topicIds.forEach((topicId) => {
-        renderTopicProgress(topicId, 'skipped');
+        renderTopicProgress(topicId, 'pending');
       });
     },
     onFinish: (data) => {
-      console.log('-'.repeat(20));
-      console.log('onFinish', data);
-      console.log('-'.repeat(20));
+      const { topicIds } = data;
+      const remainingTopicIds = allClickableNodes
+        .filter((node) => !topicIds.includes(node?.id ?? ''))
+        .map((node) => node?.id ?? '');
 
       bulkUpdateResourceProgress({
-        skipped: data.topicIds,
+        skipped: remainingTopicIds,
         learning: [],
         done: [],
         pending: [],
@@ -119,9 +126,8 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
         <PersonalizedRoadmapModal
           onClose={() => setIsModalOpen(false)}
           onSubmit={(information) => {
-            const { skipped = [] } = userResourceProgress ?? {};
-            for (const topicId of skipped) {
-              renderTopicProgress(topicId, 'pending');
+            for (const node of allClickableNodes) {
+              renderTopicProgress(node?.id, 'skipped');
             }
 
             generatePersonalizedRoadmap(information);
