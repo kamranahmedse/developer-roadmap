@@ -1,12 +1,12 @@
-import { ChevronDown, MessageCircle, Plus } from 'lucide-react';
+import { useStore } from '@nanostores/react';
+import { ChevronDown, Map, MessageCircle, Plus } from 'lucide-react';
 import { useEffect } from 'react';
-import { NavigationDropdownMenu } from '../NavigationDropdownMenu.tsx';
 import {
-  navigationDropdownOpen,
   aiDropdownOpen,
+  navigationDropdownOpen,
   roadmapsDropdownOpen,
 } from '../../stores/page.ts';
-import { useStore } from '@nanostores/react';
+import { NavigationDropdownMenu } from '../NavigationDropdownMenu.tsx';
 
 const links = [
   {
@@ -20,6 +20,12 @@ const links = [
     label: 'Ask AI Tutor',
     description: 'Career, resume guidance, and more',
     Icon: MessageCircle,
+  },
+  {
+    link: '/ai/roadmap-chat',
+    label: 'Roadmap Chat',
+    description: 'Chat with AI Tutor about a roadmap',
+    Icon: Map,
   },
 ];
 

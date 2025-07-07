@@ -1,10 +1,7 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 import {
-  ArrowRightIcon,
-  CheckIcon,
-  CopyIcon,
-  MousePointerClick,
-  Play,
+  ArrowRightIcon, MousePointerClick,
+  Play
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname';
@@ -24,7 +21,6 @@ import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/query-http';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { VideoModal } from '../VideoModal';
-import { sqlCouponCode } from './CourseDiscountBanner';
 import { useCopyText } from '../../hooks/use-copy-text';
 
 export const SQL_COURSE_SLUG = 'sql';
@@ -218,31 +214,6 @@ export function BuyButton(props: BuyButtonProps) {
     <CourseLoginPopup onClose={() => setIsLoginPopupOpen(false)} />
   );
 
-  const mainCouponAlert = (
-    <div data-coupon-alert className="absolute top-1/2 -left-59 z-50 hidden -translate-y-1/2 md:block">
-      <div className="relative flex items-center rounded-xl bg-yellow-50 px-3 py-1.5 shadow-lg">
-        <div className="absolute top-1/2 -right-0.5 h-1.5 w-1.5 -translate-y-1/2 rotate-45 bg-yellow-50"></div>
-        <span className="text-xs font-bold text-black">
-          🎁 30% OFF with code{' '}
-          <button
-            onClick={() => {
-              copyText(sqlCouponCode);
-            }}
-            className="inline-block rounded bg-black px-1.5 py-0.5 font-mono text-white hover:opacity-75"
-          >
-            {sqlCouponCode}
-            {isCopied && (
-              <CheckIcon className="relative -top-[2px] ml-1.5 inline-block size-3" />
-            )}
-            {!isCopied && (
-              <CopyIcon className="relative -top-px ml-1.5 inline-block size-3 text-gray-500" />
-            )}
-          </button>
-        </span>
-      </div>
-    </div>
-  );
-
   if (variant === 'main') {
     return (
       <div className="relative flex w-full flex-col items-center gap-2 md:w-auto">
@@ -254,8 +225,6 @@ export function BuyButton(props: BuyButtonProps) {
           />
         )}
         <div className="relative flex flex-col gap-2 md:flex-row md:gap-0">
-          {!isLoadingPricing && !isAlreadyEnrolled && mainCouponAlert}
-
           <button
             onClick={onBuyClick}
             disabled={isLoadingPricing}

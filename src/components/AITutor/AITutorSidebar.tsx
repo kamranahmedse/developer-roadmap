@@ -2,6 +2,7 @@ import {
   BookOpen,
   Compass,
   ListTodoIcon,
+  Map,
   MessageCircle,
   Plus,
   Star,
@@ -45,6 +46,12 @@ const sidebarItems = [
     label: 'Test my Knowledge',
     href: '/ai/quiz',
     icon: ListTodoIcon,
+  }, 
+  {
+    key: 'roadmap-chat',
+    label: 'Roadmap Chat',
+    href: '/ai/roadmap-chat',
+    icon: Map,
   },
   {
     key: 'library',
