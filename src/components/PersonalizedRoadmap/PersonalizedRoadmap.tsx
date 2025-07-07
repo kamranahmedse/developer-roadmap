@@ -1,7 +1,10 @@
 import { Loader2Icon, PersonStandingIcon } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { usePersonalizedRoadmap } from '../../hooks/use-personalized-roadmap';
-import { renderTopicProgress } from '../../lib/resource-progress';
+import {
+  refreshProgressCounters,
+  renderTopicProgress,
+} from '../../lib/resource-progress';
 import { PersonalizedRoadmapModal } from './PersonalizedRoadmapModal';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { httpPost } from '../../lib/query-http';
@@ -34,36 +37,59 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
     queryClient,
   );
 
-  const allClickableNodes = useMemo(() => {
-    return (
+  const { data: userProgress, refetch: refetchUserProgress } = useQuery(
+    userResourceProgressOptions('roadmap', roadmapId),
+    queryClient,
+  );
+
+  const alreadyInProgressNodeIds = useMemo(() => {
+    return new Set([
+      ...(userProgress?.learning ?? []),
+      ...(userProgress?.done ?? []),
+    ]);
+  }, [userProgress]);
+
+  const allPendingNodeIds = useMemo(() => {
+    const nodes =
       roadmap?.json?.nodes?.filter((node) =>
         ['topic', 'subtopic'].includes(node?.type ?? ''),
-      ) ?? []
-    );
-  }, [roadmap]);
+      ) ?? [];
 
-  const { mutate: bulkUpdateResourceProgress, isPending: isBulkUpdating } =
-    useMutation(
-      {
-        mutationFn: (body: BulkUpdateResourceProgressBody) => {
-          return httpPost(
-            `/v1-bulk-update-resource-progress/${roadmapId}`,
-            body,
-          );
-        },
-        onError: (error) => {
-          toast.error(
-            error?.message ?? 'Something went wrong, please try again.',
-          );
-        },
-        onSuccess: () => {
-          queryClient.invalidateQueries(
-            userResourceProgressOptions('roadmap', roadmapId),
-          );
-        },
+    return nodes
+      .filter((node) => {
+        const topicId = node?.id;
+        return !alreadyInProgressNodeIds.has(topicId);
+      })
+      .map((node) => node?.id);
+  }, [roadmap, alreadyInProgressNodeIds]);
+
+  const clearResourceProgressLocalStorage = useCallback(() => {
+    localStorage.removeItem(`roadmap-${roadmapId}-${currentUser?.id}-progress`);
+    localStorage.removeItem(`roadmap-${roadmapId}-${currentUser?.id}-favorite`);
+  }, [roadmapId, currentUser]);
+
+  const {
+    mutate: bulkUpdateResourceProgress,
+    isPending: isBulkUpdating,
+    mutateAsync: bulkUpdateResourceProgressAsync,
+  } = useMutation(
+    {
+      mutationFn: (body: BulkUpdateResourceProgressBody) => {
+        return httpPost(`/v1-bulk-update-resource-progress/${roadmapId}`, body);
       },
-      queryClient,
-    );
+      onError: (error) => {
+        toast.error(
+          error?.message ?? 'Something went wrong, please try again.',
+        );
+      },
+      onSuccess: () => {
+        clearResourceProgressLocalStorage();
+        refetchUserProgress();
+        refreshProgressCounters();
+      },
+    },
+    queryClient,
+  );
 
   const { generatePersonalizedRoadmap, status } = usePersonalizedRoadmap({
     roadmapId,
@@ -73,14 +99,18 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
     onData: (data) => {
       const { topicIds } = data;
       topicIds.forEach((topicId) => {
+        if (alreadyInProgressNodeIds.has(topicId)) {
+          return;
+        }
+
         renderTopicProgress(topicId, 'pending');
       });
     },
     onFinish: (data) => {
       const { topicIds } = data;
-      const remainingTopicIds = allClickableNodes
-        .filter((node) => !topicIds.includes(node?.id ?? ''))
-        .map((node) => node?.id ?? '');
+      const remainingTopicIds = allPendingNodeIds.filter(
+        (nodeId) => !topicIds.includes(nodeId),
+      );
 
       bulkUpdateResourceProgress({
         skipped: remainingTopicIds,
@@ -93,10 +123,12 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
 
   const { mutate: clearResourceProgress, isPending: isClearing } = useMutation(
     {
-      mutationFn: () => {
-        return httpPost(`/v1-clear-resource-progress`, {
-          resourceId: roadmapId,
-          resourceType: 'roadmap',
+      mutationFn: (pendingTopicIds: string[]) => {
+        return bulkUpdateResourceProgressAsync({
+          skipped: [],
+          learning: [],
+          done: [],
+          pending: pendingTopicIds,
         });
       },
       onError: (error) => {
@@ -104,15 +136,15 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
           error?.message ?? 'Something went wrong, please try again.',
         );
       },
-      onSuccess: () => {
+      onSuccess: (_, pendingTopicIds) => {
+        for (const topicId of pendingTopicIds) {
+          renderTopicProgress(topicId, 'pending');
+        }
+
         toast.success('Progress cleared successfully.');
-        localStorage.removeItem(
-          `roadmap-${roadmapId}-${currentUser?.id}-progress`,
-        );
-        localStorage.removeItem(
-          `roadmap-${roadmapId}-${currentUser?.id}-favorite`,
-        );
-        window.location.reload();
+        clearResourceProgressLocalStorage();
+        refreshProgressCounters();
+        refetchUserProgress();
       },
     },
     queryClient,
@@ -126,15 +158,16 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
         <PersonalizedRoadmapModal
           onClose={() => setIsModalOpen(false)}
           onSubmit={(information) => {
-            for (const node of allClickableNodes) {
-              renderTopicProgress(node?.id, 'skipped');
+            for (const nodeId of allPendingNodeIds) {
+              renderTopicProgress(nodeId, 'skipped');
             }
 
             generatePersonalizedRoadmap(information);
           }}
           onClearProgress={() => {
             setIsModalOpen(false);
-            clearResourceProgress();
+            const prevSkipped = userProgress?.skipped ?? [];
+            clearResourceProgress(prevSkipped);
           }}
         />
       )}
@@ -145,11 +178,16 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
         disabled={isGenerating}
       >
         {isGenerating ? (
-          <Loader2Icon className="h-4 w-4 shrink-0 animate-spin" />
+          <>
+            <Loader2Icon className="h-4 w-4 shrink-0 animate-spin" />
+            <span>Personalizing...</span>
+          </>
         ) : (
-          <PersonStandingIcon className="h-4 w-4 shrink-0" />
+          <>
+            <PersonStandingIcon className="h-4 w-4 shrink-0" />
+            <span>Personalize</span>
+          </>
         )}
-        <span>Personalized</span>
       </button>
     </>
   );

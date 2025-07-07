@@ -26,84 +26,81 @@ export function usePersonalizedRoadmap(options: UsePersonalizedRoadmapOptions) {
     'idle' | 'streaming' | 'loading' | 'ready' | 'error'
   >('idle');
 
-  const generatePersonalizedRoadmap = useCallback(
-    async (information: string) => {
-      try {
-        onStart?.();
-        setStatus('loading');
-        abortControllerRef.current?.abort();
-        abortControllerRef.current = new AbortController();
+  const generatePersonalizedRoadmap = async (information: string) => {
+    try {
+      onStart?.();
+      setStatus('loading');
+      abortControllerRef.current?.abort();
+      abortControllerRef.current = new AbortController();
 
-        const response = await fetch(
-          `${import.meta.env.PUBLIC_API_URL}/v1-personalized-roadmap`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              roadmapId,
-              information,
-            }),
-            signal: abortControllerRef.current?.signal,
-            credentials: 'include',
+      const response = await fetch(
+        `${import.meta.env.PUBLIC_API_URL}/v1-personalized-roadmap`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
           },
-        );
+          body: JSON.stringify({
+            roadmapId,
+            information,
+          }),
+          signal: abortControllerRef.current?.signal,
+          credentials: 'include',
+        },
+      );
 
-        if (!response.ok) {
-          const data = await response.json();
-          setStatus('error');
-          if (data.status === 401) {
-            removeAuthToken();
-            window.location.reload();
-          }
-
-          throw new Error(data?.message || 'Something went wrong');
-        }
-
-        const stream = response.body;
-        if (!stream) {
-          setStatus('error');
-          throw new Error('Something went wrong');
-        }
-
-        await readChatStream(stream, {
-          onMessage: async (content) => {
-            flushSync(() => {
-              setStatus('streaming');
-              contentRef.current = parsePersonalizedRoadmapResponse(content);
-              onData?.(contentRef.current);
-            });
-          },
-          onMessageEnd: async () => {
-            flushSync(() => {
-              setStatus('ready');
-            });
-          },
-        });
-
-        setStatus('idle');
-        abortControllerRef.current = null;
-
-        if (!contentRef.current) {
-          setStatus('error');
-          throw new Error('Something went wrong');
-        }
-
-        onFinish?.(contentRef.current);
-      } catch (error) {
-        if (abortControllerRef.current?.signal.aborted) {
-          // we don't want to show error if the user stops the chat
-          // so we just return
-          return;
-        }
-
-        onError?.(error as Error);
+      if (!response.ok) {
+        const data = await response.json();
         setStatus('error');
+        if (data.status === 401) {
+          removeAuthToken();
+          window.location.reload();
+        }
+
+        throw new Error(data?.message || 'Something went wrong');
       }
-    },
-    [roadmapId, onError],
-  );
+
+      const stream = response.body;
+      if (!stream) {
+        setStatus('error');
+        throw new Error('Something went wrong');
+      }
+
+      await readChatStream(stream, {
+        onMessage: async (content) => {
+          flushSync(() => {
+            setStatus('streaming');
+            contentRef.current = parsePersonalizedRoadmapResponse(content);
+            onData?.(contentRef.current);
+          });
+        },
+        onMessageEnd: async () => {
+          flushSync(() => {
+            setStatus('ready');
+          });
+        },
+      });
+
+      setStatus('idle');
+      abortControllerRef.current = null;
+
+      if (!contentRef.current) {
+        setStatus('error');
+        throw new Error('Something went wrong');
+      }
+
+      onFinish?.(contentRef.current);
+    } catch (error) {
+      if (abortControllerRef.current?.signal.aborted) {
+        // we don't want to show error if the user stops the chat
+        // so we just return
+        return;
+      }
+
+      onError?.(error as Error);
+      setStatus('error');
+    }
+  };
 
   const stop = useCallback(() => {
     if (!abortControllerRef.current) {

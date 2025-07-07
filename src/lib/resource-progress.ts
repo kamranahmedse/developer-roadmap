@@ -4,6 +4,8 @@ import { TOKEN_COOKIE_NAME, getUser } from './jwt';
 import { roadmapProgress, totalRoadmapNodes } from '../stores/roadmap.ts';
 // @ts-ignore
 import Element = astroHTML.JSX.Element;
+import { queryClient } from '../stores/query-client.ts';
+import { userResourceProgressOptions } from '../queries/resource-progress.ts';
 
 export type ResourceType = 'roadmap' | 'best-practice';
 export type ResourceProgressType =
@@ -76,6 +78,22 @@ export async function updateResourceProgress(
     response.done,
     response.learning,
     response.skipped,
+  );
+
+  queryClient.setQueryData(
+    userResourceProgressOptions(resourceType, resourceId).queryKey,
+    (oldData) => {
+      if (!oldData) {
+        return undefined;
+      }
+
+      return {
+        ...oldData,
+        done: response.done,
+        learning: response.learning,
+        skipped: response.skipped,
+      };
+    },
   );
 
   return response;
