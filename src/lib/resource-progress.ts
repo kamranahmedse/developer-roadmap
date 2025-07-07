@@ -129,6 +129,7 @@ export function clearMigratedRoadmapProgress(
     'spring-boot',
     'mongodb',
     'flutter',
+    'design-system',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
