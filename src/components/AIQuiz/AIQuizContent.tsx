@@ -166,6 +166,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
                 activeQuestionIndex={activeQuestionIndex}
                 totalQuestions={totalQuestions}
                 progressPercentage={progressPercentage}
+                onSkip={handleSkip}
                 onPrevious={() => {
                   if (!hasPreviousQuestion) {
                     return;
