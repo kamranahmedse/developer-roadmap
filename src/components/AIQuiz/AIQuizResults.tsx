@@ -1,14 +1,14 @@
 import {
+  CheckSquare,
   PartyPopper,
-  RotateCcw,
-  XCircle,
-  SkipForward,
-  CheckCircle2Icon,
   PlusIcon,
+  RotateCcw,
+  SkipForward,
+  XCircle,
 } from 'lucide-react';
-import type { QuestionState } from './AIQuizContent';
-import { getPercentage } from '../../lib/number';
 import { cn } from '../../lib/classname';
+import { getPercentage } from '../../lib/number';
+import type { QuestionState } from './AIQuizContent';
 import { QuizStateButton } from './AIQuizResultStrip';
 
 type AIQuizResultsProps = {
@@ -72,26 +72,26 @@ export function AIQuizResults(props: AIQuizResultsProps) {
         <ResultCard
           count={correctCount}
           label="Correct"
-          icon={<CheckCircle2Icon className="mb-2 h-6 w-6" />}
-          className="bg-green-50 text-green-700"
+          icon={<CheckSquare className="mb-2 h-6 w-6" />}
+          className="bg-green-100 text-green-700"
         />
 
         <ResultCard
           count={incorrectCount}
           label="Incorrect"
           icon={<XCircle className="mb-2 h-6 w-6" />}
-          className="bg-red-50 text-red-700"
+          className="bg-red-100 text-red-700"
         />
 
         <ResultCard
           count={skippedCount}
           label="Skipped"
           icon={<SkipForward className="mb-2 h-6 w-6" />}
-          className="bg-gray-50 text-gray-700"
+          className="bg-gray-200 text-gray-700"
         />
       </div>
 
-      <div className="flex gap-2">
+      <div className="flex w-full gap-2">
         <ResultAction
           label="Try Again"
           icon={<RotateCcw className="h-4 w-4" />}
@@ -121,7 +121,7 @@ export function ResultCard(props: ResultCardProps) {
   return (
     <div
       className={cn(
-        'flex flex-col items-center rounded-xl bg-gray-50 p-4 text-gray-700',
+        'flex flex-col items-center rounded-xl bg-gray-50 py-6 px-4 text-gray-700',
         className,
       )}
     >
@@ -146,7 +146,7 @@ export function ResultAction(props: ResultActionProps) {
     <button
       onClick={onClick}
       className={cn(
-        'flex h-10 items-center gap-2 rounded-xl bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-900',
+        'flex flex-grow items-center justify-center gap-2 rounded-xl bg-black px-4 py-3 text-sm font-medium text-white hover:bg-gray-900',
         className,
       )}
     >
