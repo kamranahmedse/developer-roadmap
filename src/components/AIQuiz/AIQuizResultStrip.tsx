@@ -8,21 +8,21 @@ import {
 } from 'lucide-react';
 import type { QuestionState } from './AIQuizContent';
 
-type AIQuizStripeProps = {
+type AIQuizResultStripProps = {
   activeQuestionIndex: number;
   questionStates: Record<number, QuestionState>;
   onReview?: (questionIndex: number) => void;
   onComplete?: () => void;
 };
 
-export function AIQuizStripe(props: AIQuizStripeProps) {
+export function AIQuizResultStrip(props: AIQuizResultStripProps) {
   const { activeQuestionIndex, questionStates, onReview, onComplete } = props;
   const states = Object.values(questionStates);
 
   return (
     <div className="border-t border-gray-200 bg-white p-3">
       <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
-        <div className="flex w-full flex-wrap gap-2">
+        <div className="flex w-full flex-wrap gap-1">
           {states.map((state, quizIndex) => (
             <QuizStateButton
               key={quizIndex}
@@ -30,6 +30,7 @@ export function AIQuizStripe(props: AIQuizStripeProps) {
               quizIndex={quizIndex}
               isActive={quizIndex === activeQuestionIndex}
               onReview={onReview}
+              variant="small"
             />
           ))}
         </div>
@@ -51,10 +52,18 @@ type QuizStateButtonProps = {
   isActive: boolean;
   onReview?: (questionIndex: number) => void;
   className?: string;
+  variant?: 'default' | 'small';
 };
 
 export function QuizStateButton(props: QuizStateButtonProps) {
-  const { state, quizIndex, isActive, onReview, className } = props;
+  const {
+    state,
+    quizIndex,
+    isActive,
+    onReview,
+    className,
+    variant = 'default',
+  } = props;
   const { status } = state;
 
   const isCorrect = status === 'correct';
@@ -70,16 +79,29 @@ export function QuizStateButton(props: QuizStateButtonProps) {
         'flex aspect-square flex-col items-center justify-center rounded-xl border p-1 hover:opacity-80',
         isCorrect && 'border-green-700 bg-green-700 text-white',
         isIncorrect && 'border-red-700 bg-red-700 text-white',
-        isSkipped && 'border-gray-700 bg-gray-700 text-white',
+        isSkipped && 'border-gray-500 bg-gray-500 text-white',
         isCanBeImproved && 'border-yellow-700 bg-yellow-700 text-white',
         !isActive && 'opacity-50',
+        variant === 'small' && 'rounded-lg',
         className,
       )}
     >
-      {isCorrect && <CheckIcon className="h-6 w-6" />}
-      {isIncorrect && <XIcon className="h-6 w-6" />}
-      {isSkipped && <SkipForwardIcon className="h-6 w-6" />}
-      {isCanBeImproved && <CircleAlertIcon className="h-6 w-6" />}
+      {isCorrect && (
+        <CheckIcon className={cn('size-6.5', variant === 'small' && 'size-5')} />
+      )}
+      {isIncorrect && (
+        <XIcon className={cn('size-6.5', variant === 'small' && 'size-5')} />
+      )}
+      {isSkipped && (
+        <SkipForwardIcon
+          className={cn('size-6.5 fill-current', variant === 'small' && 'size-5')}
+        />
+      )}
+      {isCanBeImproved && (
+        <CircleAlertIcon
+          className={cn('size-6.5', variant === 'small' && 'size-5')}
+        />
+      )}
     </button>
   );
 }

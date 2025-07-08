@@ -78,14 +78,14 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
     onSubmit(isCorrect ? 'correct' : 'incorrect');
   };
 
-  const canSubmit =
-    selectedOptions.length > 0 || questionState.status === 'skipped';
+  const hasAnySelected = selectedOptions.length > 0;
+  const canSubmit = hasAnySelected || questionState.status === 'skipped';
 
   return (
     <div className="mx-auto max-w-4xl">
       <QuestionTitle title={questionText} />
 
-      <div className="mt-8 space-y-4">
+      <div className="mt-8">
         {options.map((option, index) => {
           const isSelected = selectedOptions.includes(index);
           const isCorrectOption = option.isCorrect;
@@ -106,21 +106,18 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
             <button
               key={option.id}
               className={cn(
-                'flex w-full items-start gap-4 rounded-xl border-2 border-gray-200 px-4 py-3.5 text-left',
-                isSelected && !isSubmitted && 'border-black bg-gray-50',
+                'group flex w-full items-start gap-4 rounded-lg py-2 text-left',
+                isSelected && !isSubmitted && '',
                 isSubmitted &&
                   isSelectedAndCorrect &&
-                  'border-green-500 bg-green-50',
+                  'border-green-500 text-green-700',
                 isSubmitted &&
                   isSelectedAndIncorrect &&
-                  'border-red-500 bg-red-50',
+                  'border-red-500 text-red-700',
                 isSubmitted &&
                   isNotSelectedAndCorrect &&
-                  'border-green-500 bg-green-50',
-                !isSelected && !isCorrectOption && !isSubmitted
-                  ? 'hover:border-gray-300 hover:bg-gray-50'
-                  : '',
-                isOptionDisabled && 'cursor-not-allowed opacity-60',
+                  'border-green-500 text-green-700',
+                isOptionDisabled && 'cursor-not-allowed opacity-50',
               )}
               onClick={() => handleSelectOption(index)}
               disabled={isOptionDisabled}
@@ -137,9 +134,14 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
                     'border-red-500 bg-red-500 text-white',
                   isNotSelectedAndCorrect &&
                     'border-green-500 bg-green-500 text-white',
+                  !isSelected &&
+                    !isSubmitted &&
+                    'group-hover:border-gray-300 group-hover:bg-gray-200',
                 )}
               >
-                {isSelected && !isSubmitted && <CheckIcon className="size-5" />}
+                {isSelected && !isSubmitted && (
+                  <div className="size-5 bg-black" />
+                )}
                 {isSelectedAndCorrect && <CheckIcon className="size-5" />}
 
                 {isSelectedAndIncorrect && <XIcon className="size-5" />}
@@ -181,7 +183,7 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
             ? isLastQuestion
               ? 'Finish Quiz'
               : 'Next Question'
-            : 'Submit Answer'}
+            : 'Check Answer'}
         </button>
       </div>
     </div>
@@ -199,7 +201,7 @@ export function QuestionTitle(props: QuestionTitleProps) {
 
   return (
     <div
-      className="prose prose-xl prose-headings:text-3xl prose-headings:font-bold prose-headings:text-black prose-headings:mb-6 prose-p:text-3xl prose-p:font-semibold prose-p:leading-relaxed prose-p:text-black prose-p:mb-0 prose-pre:my-0 prose-p:prose-code:text-xl prose-p:prose-code:px-3 prose-p:prose-code:py-1 prose-p:prose-code:rounded-md prose-p:prose-code:border prose-p:prose-code:border-gray-300 prose-p:prose-code:bg-gray-100 prose-p:prose-code:font-medium mb-2 text-left"
+      className="prose prose-xl prose-headings:text-3xl prose-headings:font-bold prose-headings:text-black prose-headings:mb-6 prose-p:text-3xl prose-p:font-semibold prose-p:leading-normal prose-p:text-black prose-p:mb-0 prose-pre:my-0 prose-p:prose-code:text-xl prose-p:prose-code:px-3 prose-p:prose-code:py-1 prose-p:prose-code:rounded-md prose-p:prose-code:border prose-p:prose-code:border-gray-300 prose-p:prose-code:bg-gray-100 prose-p:prose-code:font-medium mb-2 text-left"
       dangerouslySetInnerHTML={{ __html: titleHtml }}
     />
   );

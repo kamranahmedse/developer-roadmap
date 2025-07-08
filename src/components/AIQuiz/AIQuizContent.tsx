@@ -6,7 +6,7 @@ import { QuizTopNavigation } from './QuizTopNavigation';
 import { getPercentage } from '../../lib/number';
 import { AIQuizResults } from './AIQuizResults';
 import { flushSync } from 'react-dom';
-import { AIQuizStripe } from './AIQuizStripe';
+import { AIQuizResultStrip } from './AIQuizResultStrip';
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -229,7 +229,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
       </div>
 
       {quizStatus === 'reviewing' && (
-        <AIQuizStripe
+        <AIQuizResultStrip
           activeQuestionIndex={activeQuestionIndex}
           questionStates={questionStates}
           onReview={(questionIndex) => {

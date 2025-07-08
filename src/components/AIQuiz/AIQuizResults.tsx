@@ -9,7 +9,7 @@ import {
 import type { QuestionState } from './AIQuizContent';
 import { getPercentage } from '../../lib/number';
 import { cn } from '../../lib/classname';
-import { QuizStateButton } from './AIQuizStripe';
+import { QuizStateButton } from './AIQuizResultStrip';
 
 type AIQuizResultsProps = {
   questionStates: Record<number, QuestionState>;
