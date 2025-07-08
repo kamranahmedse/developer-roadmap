@@ -5,7 +5,7 @@ import { markdownToHtml } from '../../lib/markdown';
 import type { QuestionState } from './AIQuizContent';
 
 export const markdownClassName =
-  'prose prose-lg prose-p:text-lg prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-base! prose-p:prose-code:px-2 prose-p:prose-code:py-0.5 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-left text-black';
+  'prose prose-base prose-p:text-base prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-sm prose-p:prose-code:px-2 prose-p:prose-code:py-1 prose-p:prose-code:rounded-md prose-p:prose-code:border prose-p:prose-code:border-gray-300 prose-p:prose-code:bg-gray-50 text-left text-gray-800';
 
 type AIMCQQuestionProps = {
   question: QuizQuestion;
@@ -73,10 +73,10 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
   const canSubmit = selectedOptions.length > 0;
 
   return (
-    <div>
+    <div className="mx-auto max-w-4xl">
       <QuestionTitle title={questionText} />
 
-      <div className="mt-6 space-y-3">
+      <div className="mt-8 space-y-4">
         {options.map((option, index) => {
           const isSelected = selectedOptions.includes(index);
           const isCorrectOption = option.isCorrect;
@@ -97,8 +97,8 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
             <button
               key={option.id}
               className={cn(
-                'text-l flex w-full items-start gap-2 rounded-xl border border-gray-200 p-2',
-                isSelected && !isSubmitted && 'border-gray-400 bg-gray-50',
+                'flex w-full items-start gap-4 rounded-xl border-2 border-gray-200 px-4 py-3.5 text-left',
+                isSelected && !isSubmitted && 'border-black bg-gray-50',
                 isSubmitted &&
                   isSelectedAndCorrect &&
                   'border-green-500 bg-green-50',
@@ -108,16 +108,17 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
                 isSubmitted &&
                   isNotSelectedAndCorrect &&
                   'border-green-500 bg-green-50',
-                !isSelected && !isCorrectOption
-                  ? 'hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50'
+                !isSelected && !isCorrectOption && !isSubmitted
+                  ? 'hover:border-gray-300 hover:bg-gray-50'
                   : '',
+                isOptionDisabled && 'cursor-not-allowed opacity-60',
               )}
               onClick={() => handleSelectOption(index)}
               disabled={isOptionDisabled}
             >
               <div
                 className={cn(
-                  'flex size-7 shrink-0 items-center justify-center rounded-lg border border-gray-200',
+                  'flex size-6.5 shrink-0 items-center justify-center rounded-lg border-2 border-gray-300',
                   isSelected &&
                     !isSubmitted &&
                     'border-black bg-black text-white',
@@ -129,15 +130,15 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
                     'border-green-500 bg-green-500 text-white',
                 )}
               >
-                {isSelected && !isSubmitted && <CheckIcon className="size-4" />}
-                {isSelectedAndCorrect && <CheckIcon className="size-4" />}
+                {isSelected && !isSubmitted && <CheckIcon className="size-5" />}
+                {isSelectedAndCorrect && <CheckIcon className="size-5" />}
 
-                {isSelectedAndIncorrect && <XIcon className="size-4" />}
+                {isSelectedAndIncorrect && <XIcon className="size-5" />}
 
-                {isNotSelectedAndCorrect && <CheckIcon className="size-4" />}
+                {isNotSelectedAndCorrect && <CheckIcon className="size-5" />}
               </div>
               <div
-                className={cn(markdownClassName, 'mt-0.5')}
+                className={cn(markdownClassName, 'flex-1')}
                 dangerouslySetInnerHTML={{ __html: html }}
               />
             </button>
@@ -149,19 +150,21 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
         <QuestionExplanation explanation={answerExplanation} />
       )}
 
-      <button
-        className={cn(
-          'mt-4 rounded-xl bg-black px-4 py-2 text-white hover:bg-gray-900 disabled:opacity-70',
-        )}
-        onClick={handleSubmit}
-        disabled={!canSubmit}
-      >
-        {isSubmitted
-          ? isLastQuestion
-            ? 'Finish Quiz'
-            : 'Next Question'
-          : 'Submit Answer'}
-      </button>
+      <div className="mt-8 flex justify-center">
+        <button
+          className={cn(
+            'rounded-lg bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50',
+          )}
+          onClick={handleSubmit}
+          disabled={!canSubmit}
+        >
+          {isSubmitted
+            ? isLastQuestion
+              ? 'Finish Quiz'
+              : 'Next Question'
+            : 'Submit Answer'}
+        </button>
+      </div>
     </div>
   );
 }
@@ -177,7 +180,7 @@ export function QuestionTitle(props: QuestionTitleProps) {
 
   return (
     <div
-      className="prose prose-lg prose-p:text-4xl prose-p:font-medium prose-p:my-4 prose-pre:my-0 prose-p:prose-code:text-3xl! prose-p:prose-code:px-3 prose-p:prose-code:rounded-lg prose-p:prose-code:border prose-p:prose-code:border-black text-black"
+      className="prose prose-xl prose-headings:text-3xl prose-headings:font-bold prose-headings:text-black prose-headings:mb-6 prose-p:text-3xl prose-p:font-semibold prose-p:leading-relaxed prose-p:text-black prose-p:mb-0 prose-pre:my-0 prose-p:prose-code:text-xl prose-p:prose-code:px-3 prose-p:prose-code:py-1 prose-p:prose-code:rounded-md prose-p:prose-code:border prose-p:prose-code:border-gray-300 prose-p:prose-code:bg-gray-100 prose-p:prose-code:font-medium mb-2 text-left"
       dangerouslySetInnerHTML={{ __html: titleHtml }}
     />
   );
@@ -194,13 +197,13 @@ export function QuestionExplanation(props: QuestionExplanationProps) {
   const explanationHtml = markdownToHtml(explanation, false);
 
   return (
-    <div className="mt-4 rounded-xl bg-gray-100 p-4">
-      <p className="flex items-center gap-2 text-lg text-gray-600">
-        <InfoIcon className="size-4" />
+    <div className="mt-6 rounded-lg border border-blue-200 bg-blue-50 p-5">
+      <p className="mb-3 flex items-center gap-2 text-base font-medium text-blue-800">
+        <InfoIcon className="size-5" />
         {title || 'Explanation'}
       </p>
       <div
-        className={cn(markdownClassName, 'mt-0.5')}
+        className={cn(markdownClassName, 'text-blue-900')}
         dangerouslySetInnerHTML={{ __html: explanationHtml }}
       />
     </div>
