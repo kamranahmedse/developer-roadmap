@@ -160,7 +160,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
     <div className="flex h-full w-full flex-col">
       <div className="relative flex h-full flex-col overflow-y-auto">
         <div className="absolute inset-0 z-10">
-          <div className="mx-auto max-w-lg bg-white px-4 py-10">
+          <div className="mx-auto max-w-2xl bg-white px-4 py-10">
             {shouldShowQuestions && (
               <QuizTopNavigation
                 activeQuestionIndex={activeQuestionIndex}

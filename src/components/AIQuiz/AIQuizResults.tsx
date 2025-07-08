@@ -1,10 +1,11 @@
 import {
-  CheckSquare,
-  PartyPopper,
-  PlusIcon,
   RotateCcw,
-  SkipForward,
-  XCircle,
+  BarChart3,
+  Clock,
+  Zap,
+  Check,
+  X,
+  Minus,
 } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { getPercentage } from '../../lib/number';
@@ -38,76 +39,294 @@ export function AIQuizResults(props: AIQuizResultsProps) {
 
   const accuracy = getPercentage(correctCount, totalQuestions);
 
+  const getPerformanceLevel = () => {
+    if (accuracy >= 90) return { level: 'Excellent', color: 'emerald' };
+    if (accuracy >= 75) return { level: 'Great', color: 'green' };
+    if (accuracy >= 60) return { level: 'Good', color: 'blue' };
+    if (accuracy >= 40) return { level: 'Fair', color: 'orange' };
+    return { level: 'Needs Work', color: 'red' };
+  };
+
+  const performance = getPerformanceLevel();
+  const circumference = 2 * Math.PI * 45;
+  const strokeDashoffset = circumference - (accuracy / 100) * circumference;
+
+  const canReview = onReview && states.some((state) => state.isSubmitted);
+
   return (
-    <div className="mx-auto mt-10 flex max-w-sm flex-col items-center justify-center text-center">
-      <PartyPopper className="mb-6 h-16 w-16 text-gray-400" />
+    <div className="mx-auto mt-8 max-w-4xl space-y-6">
+      {/* Header Card with Performance Overview */}
+      <div className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white p-6 md:p-8">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <div className="space-y-2">
+            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
+              Quiz Complete!
+            </h2>
+            <p
+              className={cn(
+                'text-lg font-semibold',
+                performance.color === 'emerald' && 'text-emerald-600',
+                performance.color === 'green' && 'text-green-600',
+                performance.color === 'blue' && 'text-blue-600',
+                performance.color === 'orange' && 'text-orange-600',
+                performance.color === 'red' && 'text-red-600',
+              )}
+            >
+              {performance.level}
+            </p>
+            <p className="text-sm text-gray-600 md:text-base">
+              You scored {correctCount} out of {totalQuestions} questions
+              correctly
+            </p>
+          </div>
 
-      <div className="mb-2 text-4xl font-bold">
-        {correctCount}/{totalQuestions}
+          {/* Circular Progress */}
+          <div className="relative flex-shrink-0 self-center">
+            <svg
+              className="h-20 w-20 -rotate-90 transform md:h-24 md:w-24"
+              viewBox="0 0 100 100"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                stroke="currentColor"
+                strokeWidth="8"
+                fill="transparent"
+                className="text-gray-200"
+              />
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                stroke="currentColor"
+                strokeWidth="8"
+                fill="transparent"
+                strokeDasharray={circumference}
+                strokeDashoffset={strokeDashoffset}
+                className={cn(
+                  'transition-all duration-1000 ease-out',
+                  performance.color === 'emerald' && 'text-emerald-500',
+                  performance.color === 'green' && 'text-green-500',
+                  performance.color === 'blue' && 'text-blue-500',
+                  performance.color === 'orange' && 'text-orange-500',
+                  performance.color === 'red' && 'text-red-500',
+                )}
+                strokeLinecap="round"
+              />
+            </svg>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-lg font-bold text-gray-900 md:text-xl">
+                {accuracy}%
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <p className="mb-8 text-lg text-balance text-gray-600">
-        Great job! You answered{' '}
-        <span className="font-bold">{correctCount}</span> out of{' '}
-        <span className="font-bold">{totalQuestions}</span> questions correctly
-        with <span className="font-bold">{accuracy}%</span> accuracy.
-      </p>
-
-      <div className="mb-6 grid w-full grid-cols-5 gap-2">
-        {states.map((state, quizIndex) => {
-          return (
-            <QuizStateButton
-              key={quizIndex}
-              state={state}
-              quizIndex={quizIndex}
-              isActive={true}
-              onReview={onReview}
-              className="p-2"
-            />
-          );
-        })}
+      {/* Compact Stats */}
+      <div className="rounded-xl border border-gray-200 bg-white p-4 md:p-6">
+        <h3 className="mb-4 text-sm font-semibold text-gray-900 md:text-base">
+          Results Breakdown
+        </h3>
+        <div className="space-y-3">
+          <StatRow
+            icon={<Check className="h-4 w-4" />}
+            label="Correct"
+            value={correctCount}
+            total={totalQuestions}
+            color="green"
+          />
+          <StatRow
+            icon={<X className="h-4 w-4" />}
+            label="Incorrect"
+            value={incorrectCount}
+            total={totalQuestions}
+            color="red"
+          />
+          <StatRow
+            icon={<Minus className="h-4 w-4" />}
+            label="Skipped"
+            value={skippedCount}
+            total={totalQuestions}
+            color="gray"
+          />
+        </div>
       </div>
 
-      <div className="mb-8 grid w-full grid-cols-3 gap-4">
-        <ResultCard
-          count={correctCount}
-          label="Correct"
-          icon={<CheckSquare className="mb-2 h-6 w-6" />}
-          className="bg-green-100 text-green-700"
-        />
+      {/* Question Review Section */}
+      {canReview && totalQuestions <= 20 && (
+        <div className="rounded-xl border border-gray-200 bg-white p-4 md:p-6">
+          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center">
+            <div className="flex items-center gap-2">
+              <BarChart3 className="h-5 w-5 text-gray-600" />
+              <h3 className="text-sm font-semibold text-gray-900 md:text-base">
+                Question Breakdown
+              </h3>
+            </div>
+            <span className="text-sm text-gray-500 sm:ml-auto">
+              Click to review
+            </span>
+          </div>
+          <div
+            className={cn(
+              'grid gap-2',
+              totalQuestions <= 8
+                ? 'grid-cols-4 sm:grid-cols-8'
+                : totalQuestions <= 12
+                  ? 'grid-cols-4 sm:grid-cols-6'
+                  : 'grid-cols-5',
+            )}
+          >
+            {states.map((state, quizIndex) => (
+              <QuizStateButton
+                key={quizIndex}
+                state={state}
+                quizIndex={quizIndex}
+                isActive={true}
+                onReview={onReview}
+                className="p-2 transition-transform duration-200"
+              />
+            ))}
+          </div>
+        </div>
+      )}
 
-        <ResultCard
-          count={incorrectCount}
-          label="Incorrect"
-          icon={<XCircle className="mb-2 h-6 w-6" />}
-          className="bg-red-100 text-red-700"
-        />
-
-        <ResultCard
-          count={skippedCount}
-          label="Skipped"
-          icon={<SkipForward className="mb-2 h-6 w-6" />}
-          className="bg-gray-200 text-gray-700"
-        />
-      </div>
-
-      <div className="flex w-full gap-2">
-        <ResultAction
-          label="Try Again"
+      {/* Action Buttons */}
+      <div className="flex flex-col gap-3 sm:flex-row">
+        <ActionButton
+          variant="secondary"
           icon={<RotateCcw className="h-4 w-4" />}
           onClick={onRetry}
-          className="border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
-        />
-        <ResultAction
-          label="New Quiz"
-          icon={<PlusIcon className="h-4 w-4" />}
+        >
+          Try Again
+        </ActionButton>
+        <ActionButton
+          variant="primary"
+          icon={<Zap className="h-4 w-4" />}
           onClick={onNewQuiz}
-        />
+        >
+          New Quiz
+        </ActionButton>
+      </div>
+
+      {/* Performance Insights */}
+      <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 md:p-6">
+        <div className="flex items-start gap-3">
+          <div
+            className={cn(
+              'flex-shrink-0 rounded-lg p-2',
+              performance.color === 'emerald' &&
+                'bg-emerald-100 text-emerald-600',
+              performance.color === 'green' && 'bg-green-100 text-green-600',
+              performance.color === 'blue' && 'bg-blue-100 text-blue-600',
+              performance.color === 'orange' && 'bg-orange-100 text-orange-600',
+              performance.color === 'red' && 'bg-red-100 text-red-600',
+            )}
+          >
+            <Clock className="h-5 w-5" />
+          </div>
+          <div>
+            <h4 className="mb-1 text-sm font-semibold text-gray-900 md:text-base">
+              Performance Insight
+            </h4>
+            <p className="text-sm leading-relaxed text-gray-600">
+              {accuracy >= 90 &&
+                "Outstanding work! You've mastered this topic. Consider challenging yourself with more advanced questions."}
+              {accuracy >= 75 &&
+                accuracy < 90 &&
+                'Great job! You have a solid understanding. A few more practice sessions could get you to mastery.'}
+              {accuracy >= 60 &&
+                accuracy < 75 &&
+                "Good progress! You're on the right track. Focus on reviewing the questions you missed."}
+              {accuracy >= 40 &&
+                accuracy < 60 &&
+                'Keep practicing! Consider reviewing the fundamentals before attempting another quiz.'}
+              {accuracy < 40 &&
+                "Don't give up! Learning takes time. Review the material thoroughly and try again when you're ready."}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
 
+type StatRowProps = {
+  icon: React.ReactNode;
+  label: string;
+  value: number;
+  total: number;
+  color: 'green' | 'red' | 'gray';
+};
+
+function StatRow(props: StatRowProps) {
+  const { icon, label, value, total, color } = props;
+  const percentage = total > 0 ? Math.round((value / total) * 100) : 0;
+
+  return (
+    <div className="flex items-center justify-between">
+      <div className="flex items-center gap-3">
+        <div
+          className={cn(
+            'rounded-md p-1.5',
+            color === 'green' && 'bg-green-100 text-green-600',
+            color === 'red' && 'bg-red-100 text-red-600',
+            color === 'gray' && 'bg-gray-100 text-gray-600',
+          )}
+        >
+          {icon}
+        </div>
+        <span className="text-sm font-medium text-gray-700">{label}</span>
+      </div>
+      <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1 text-sm text-gray-500">
+          <span className="font-semibold text-gray-900">{value}</span>
+          <span>({percentage}%)</span>
+        </div>
+        <div className="h-2 w-16 rounded-full bg-gray-200">
+          <div
+            className={cn(
+              'h-2 rounded-full transition-all duration-500',
+              color === 'green' && 'bg-green-500',
+              color === 'red' && 'bg-red-500',
+              color === 'gray' && 'bg-gray-400',
+            )}
+            style={{ width: `${percentage}%` }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type ActionButtonProps = {
+  variant: 'primary' | 'secondary';
+  icon: React.ReactNode;
+  onClick: () => void;
+  children: React.ReactNode;
+};
+
+function ActionButton(props: ActionButtonProps) {
+  const { variant, icon, onClick, children } = props;
+
+  return (
+    <button
+      onClick={onClick}
+      className={cn(
+        'flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-3 font-medium transition-all duration-200 md:px-6',
+        variant === 'primary' && 'bg-black text-white hover:bg-gray-800',
+        variant === 'secondary' &&
+          'border-2 border-gray-300 bg-white text-gray-700 hover:border-gray-400 hover:bg-gray-50',
+      )}
+    >
+      {icon}
+      {children}
+    </button>
+  );
+}
+
+// Keep the old components for backward compatibility
 type ResultCardProps = {
   count: number;
   label: string;
@@ -121,7 +340,7 @@ export function ResultCard(props: ResultCardProps) {
   return (
     <div
       className={cn(
-        'flex flex-col items-center rounded-xl bg-gray-50 py-6 px-4 text-gray-700',
+        'flex flex-col items-center rounded-xl bg-gray-50 px-4 py-6 text-gray-700 transition-all duration-200',
         className,
       )}
     >
@@ -146,7 +365,7 @@ export function ResultAction(props: ResultActionProps) {
     <button
       onClick={onClick}
       className={cn(
-        'flex flex-grow items-center justify-center gap-2 rounded-xl bg-black px-4 py-3 text-sm font-medium text-white hover:bg-gray-900',
+        'flex flex-grow items-center justify-center gap-2 rounded-xl bg-black px-4 py-3 text-sm font-medium text-white transition-all duration-200 hover:bg-gray-800',
         className,
       )}
     >
