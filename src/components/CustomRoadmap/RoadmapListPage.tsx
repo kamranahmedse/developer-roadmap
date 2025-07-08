@@ -86,7 +86,7 @@ export function RoadmapListPage() {
   }
 
   const totalRoadmaps = allRoadmaps.personalRoadmaps.length;
-  const hasCrossedLimit = totalRoadmaps >= 3;
+  const hasCrossedLimit = !isPaidUser && totalRoadmaps >= 3;
 
   return (
     <div>
@@ -117,7 +117,7 @@ export function RoadmapListPage() {
         <button
           className={`relative flex w-full items-center justify-center rounded-md border p-1 px-3 text-sm sm:w-auto`}
           onClick={() => {
-            if (hasCrossedLimit && !isPaidUser) {
+            if (hasCrossedLimit) {
               setShowUpgradeModal(true);
               return;
             }
@@ -130,7 +130,7 @@ export function RoadmapListPage() {
         </button>
       </div>
 
-      {hasCrossedLimit && !isPaidUser && (
+      {hasCrossedLimit && (
         <div className="mt-4 flex flex-col gap-2 rounded-lg border border-yellow-300 bg-yellow-50 p-2.5 text-yellow-800">
           <p className="text-sm">
             You have reached the limit of 3 roadmaps.{' '}
