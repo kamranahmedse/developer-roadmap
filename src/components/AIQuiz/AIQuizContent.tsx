@@ -7,7 +7,6 @@ import { getPercentage } from '../../lib/number';
 import { AIQuizResults } from './AIQuizResults';
 import { flushSync } from 'react-dom';
 import { AIQuizStripe } from './AIQuizStripe';
-import { cn } from '../../lib/classname';
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -144,6 +143,15 @@ export function AIQuizContent(props: AIQuizContentProps) {
     setActiveQuestionIndex(activeQuestionIndex + 1);
   };
 
+  const handleSkip = () => {
+    handleSubmit('skipped');
+    if (hasNextQuestion) {
+      handleNextQuestion();
+    } else {
+      handleComplete();
+    }
+  };
+
   const handleComplete = () => {
     setQuizStatus('submitted');
   };
@@ -193,6 +201,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
                     setSelectedOptions={handleSelectOptions}
                     onSubmit={handleSubmit}
                     onNext={handleNextQuestion}
+                    onSkip={handleSkip}
                     isLastQuestion={isLastQuestion}
                     onComplete={handleComplete}
                   />

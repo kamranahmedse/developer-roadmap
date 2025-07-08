@@ -14,6 +14,7 @@ type AIMCQQuestionProps = {
   setSelectedOptions: (options: number[]) => void;
   onSubmit: (status: QuestionState['status']) => void;
   onNext: () => void;
+  onSkip: () => void;
   isLastQuestion: boolean;
   onComplete: () => void;
 };
@@ -24,6 +25,7 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
     questionState,
     setSelectedOptions,
     onSubmit,
+    onSkip,
     onNext,
     isLastQuestion,
     onComplete,
@@ -150,10 +152,17 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
         <QuestionExplanation explanation={answerExplanation} />
       )}
 
-      <div className="mt-8 flex justify-center">
+      <div className="mt-8 flex justify-between">
+        <button
+          onClick={onSkip}
+          disabled={isSubmitted}
+          className="rounded-xl bg-gray-100 px-8 py-3 text-base font-medium text-gray-800 hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          Skip Question
+        </button>
         <button
           className={cn(
-            'rounded-lg bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50',
+            'rounded-xl bg-black px-8 py-3 text-base font-medium text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50',
           )}
           onClick={handleSubmit}
           disabled={!canSubmit}

@@ -22,9 +22,6 @@ export function QuizTopNavigation(props: QuizTopNavigationProps) {
     onNext,
   } = props;
 
-  const hasPreviousQuestions = activeQuestionIndex > 0;
-  const hasMoreQuestions = activeQuestionIndex < totalQuestions - 1;
-
   return (
     <div className="mb-10 flex items-center gap-2">
       <span className="text-sm text-gray-500">
@@ -39,17 +36,6 @@ export function QuizTopNavigation(props: QuizTopNavigationProps) {
           }}
         />
       </div>
-
-      <NavigationButton
-        disabled={!hasPreviousQuestions}
-        onClick={onPrevious}
-        icon={ChevronLeftIcon}
-      />
-      <NavigationButton
-        disabled={!hasMoreQuestions}
-        onClick={onNext}
-        icon={ChevronRightIcon}
-      />
     </div>
   );
 }
