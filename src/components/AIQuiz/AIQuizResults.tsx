@@ -3,6 +3,7 @@ import { cn } from '../../lib/classname';
 import { getPercentage } from '../../lib/number';
 import type { QuestionState } from './AIQuizContent';
 import { QuizStateButton } from './AIQuizResultStrip';
+import { CircularProgress } from './CircularProgress';
 
 type AIQuizResultsProps = {
   questionStates: Record<number, QuestionState>;
@@ -31,7 +32,10 @@ export function AIQuizResults(props: AIQuizResultsProps) {
 
   const accuracy = getPercentage(correctCount, totalQuestions);
 
-  const getPerformanceLevel = () => {
+  const getPerformanceLevel = (): {
+    level: string;
+    color: 'emerald' | 'green' | 'blue' | 'orange' | 'red';
+  } => {
     if (accuracy >= 90) return { level: 'Excellent', color: 'emerald' };
     if (accuracy >= 75) return { level: 'Great', color: 'green' };
     if (accuracy >= 60) return { level: 'Good', color: 'blue' };
@@ -40,8 +44,6 @@ export function AIQuizResults(props: AIQuizResultsProps) {
   };
 
   const performance = getPerformanceLevel();
-  const circumference = 2 * Math.PI * 45;
-  const strokeDashoffset = circumference - (accuracy / 100) * circumference;
 
   const canReview = onReview && states.some((state) => state.isSubmitted);
 
@@ -72,47 +74,7 @@ export function AIQuizResults(props: AIQuizResultsProps) {
             </p>
           </div>
 
-          {/* Circular Progress */}
-          <div className="relative flex-shrink-0 self-center">
-            <svg
-              className="h-20 w-20 -rotate-90 transform md:h-24 md:w-24"
-              viewBox="0 0 100 100"
-            >
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                stroke="currentColor"
-                strokeWidth="8"
-                fill="transparent"
-                className="text-gray-200"
-              />
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                stroke="currentColor"
-                strokeWidth="8"
-                fill="transparent"
-                strokeDasharray={circumference}
-                strokeDashoffset={strokeDashoffset}
-                className={cn(
-                  'transition-all duration-1000 ease-out',
-                  performance.color === 'emerald' && 'text-emerald-500',
-                  performance.color === 'green' && 'text-green-500',
-                  performance.color === 'blue' && 'text-blue-500',
-                  performance.color === 'orange' && 'text-orange-500',
-                  performance.color === 'red' && 'text-red-500',
-                )}
-                strokeLinecap="round"
-              />
-            </svg>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-lg font-bold text-gray-900 md:text-xl">
-                {accuracy}%
-              </span>
-            </div>
-          </div>
+          <CircularProgress accuracy={accuracy} color={performance.color} />
         </div>
       </div>
 
