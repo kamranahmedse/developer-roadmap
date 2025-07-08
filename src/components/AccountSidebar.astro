@@ -3,6 +3,7 @@ import AstroIcon from './AstroIcon.astro';
 import { TeamDropdown } from './TeamDropdown/TeamDropdown';
 import { SidebarFriendsCounter } from './Friends/SidebarFriendsCounter';
 import { Map } from 'lucide-react';
+import { AccountSidebarUpgrade } from './AccounSidebar/AccountSidebarUpgrade';
 
 export interface Props {
   activePageId: string;
@@ -97,7 +98,7 @@ const sidebarLinks = [
   </button>
   <ul
     id='settings-menu-dropdown'
-    class='absolute left-0 right-0 z-10 mt-1 hidden space-y-1.5 bg-white p-2 shadow-lg'
+    class='absolute right-0 left-0 z-10 mt-1 hidden space-y-1.5 bg-white p-2 shadow-lg'
   >
     <li>
       <a
@@ -180,7 +181,7 @@ const sidebarLinks = [
                     {sidebarLink.isNew && !isActive && (
                       <span class='relative mr-1 flex items-center'>
                         <span class='relative rounded-full bg-gray-200 p-1 text-xs' />
-                        <span class='absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs' />
+                        <span class='absolute top-0 right-0 bottom-0 left-0 animate-ping rounded-full bg-gray-400 p-1 text-xs' />
                       </span>
                     )}
 
@@ -191,6 +192,8 @@ const sidebarLinks = [
                 </li>
               );
             })}
+
+            <AccountSidebarUpgrade client:load />
           </ul>
         </nav>
       </aside>
