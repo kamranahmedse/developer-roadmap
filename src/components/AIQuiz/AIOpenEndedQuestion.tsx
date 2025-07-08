@@ -113,16 +113,7 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
       </div>
 
       {feedback && (
-        <QuestionExplanation
-          title={
-            feedbackStatus === 'can_be_improved'
-              ? 'Can be improved'
-              : feedbackStatus === 'correct'
-                ? 'Correct'
-                : 'Incorrect'
-          }
-          explanation={feedback}
-        />
+        <QuestionExplanation explanation={feedback} status={feedbackStatus} />
       )}
 
       <button

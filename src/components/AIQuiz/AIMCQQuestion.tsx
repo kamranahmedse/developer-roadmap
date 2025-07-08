@@ -1,6 +1,12 @@
 import type { QuizQuestion } from '../../queries/ai-quiz';
 import { cn } from '../../lib/classname';
-import { CheckIcon, XIcon, InfoIcon } from 'lucide-react';
+import {
+  CheckIcon,
+  XIcon,
+  InfoIcon,
+  AlertTriangleIcon,
+  SkipForwardIcon,
+} from 'lucide-react';
 import { markdownToHtml } from '../../lib/markdown';
 import type { QuestionState } from './AIQuizContent';
 
@@ -72,7 +78,8 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
     onSubmit(isCorrect ? 'correct' : 'incorrect');
   };
 
-  const canSubmit = selectedOptions.length > 0;
+  const canSubmit =
+    selectedOptions.length > 0 || questionState.status === 'skipped';
 
   return (
     <div className="mx-auto max-w-4xl">
@@ -149,7 +156,10 @@ export function AIMCQQuestion(props: AIMCQQuestionProps) {
       </div>
 
       {isSubmitted && answerExplanation && (
-        <QuestionExplanation explanation={answerExplanation} />
+        <QuestionExplanation
+          explanation={answerExplanation}
+          status={questionState.status}
+        />
       )}
 
       <div className="mt-8 flex justify-between">
@@ -198,21 +208,91 @@ export function QuestionTitle(props: QuestionTitleProps) {
 type QuestionExplanationProps = {
   explanation: string;
   title?: string;
+  status?: 'correct' | 'incorrect' | 'can_be_improved' | 'skipped' | 'pending';
 };
 
 export function QuestionExplanation(props: QuestionExplanationProps) {
-  const { explanation, title } = props;
+  const { explanation, title, status } = props;
 
   const explanationHtml = markdownToHtml(explanation, false);
 
+  const getStatusConfig = () => {
+    switch (status) {
+      case 'correct':
+        return {
+          bgColor: 'bg-green-50',
+          borderColor: 'border-green-200',
+          iconBgColor: 'bg-green-500',
+          textColor: 'text-green-800',
+          icon: CheckIcon,
+          defaultTitle: 'Correct Answer',
+        };
+      case 'incorrect':
+        return {
+          bgColor: 'bg-red-50',
+          borderColor: 'border-red-200',
+          iconBgColor: 'bg-red-500',
+          textColor: 'text-red-800',
+          icon: XIcon,
+          defaultTitle: 'Incorrect Answer',
+        };
+      case 'can_be_improved':
+        return {
+          bgColor: 'bg-yellow-50',
+          borderColor: 'border-yellow-200',
+          iconBgColor: 'bg-yellow-500',
+          textColor: 'text-yellow-800',
+          icon: AlertTriangleIcon,
+          defaultTitle: 'Can Be Improved',
+        };
+      case 'skipped':
+        return {
+          bgColor: 'bg-gray-50',
+          borderColor: 'border-gray-200',
+          iconBgColor: 'bg-gray-500',
+          textColor: 'text-gray-800',
+          icon: SkipForwardIcon,
+          defaultTitle: 'Question Skipped',
+        };
+      default:
+        return {
+          bgColor: 'bg-blue-50',
+          borderColor: 'border-blue-200',
+          iconBgColor: 'bg-blue-500',
+          textColor: 'text-blue-800',
+          icon: InfoIcon,
+          defaultTitle: 'Explanation',
+        };
+    }
+  };
+
+  const config = getStatusConfig();
+  const IconComponent = config.icon;
+  const displayTitle = title || config.defaultTitle;
+
   return (
-    <div className="mt-6 rounded-lg border border-blue-200 bg-blue-50 p-5">
-      <p className="mb-3 flex items-center gap-2 text-base font-medium text-blue-800">
-        <InfoIcon className="size-5" />
-        {title || 'Explanation'}
-      </p>
+    <div
+      className={cn(
+        'mt-6 rounded-xl border-2 p-6 transition-all duration-200',
+        config.bgColor,
+        config.borderColor,
+      )}
+    >
+      <div className="mb-4 flex items-center gap-3">
+        <div
+          className={cn(
+            'flex size-8 items-center justify-center rounded-full text-white',
+            config.iconBgColor,
+          )}
+        >
+          <IconComponent className="size-4" strokeWidth={2.5} />
+        </div>
+        <h3 className={cn('text-lg font-semibold', config.textColor)}>
+          {displayTitle}
+        </h3>
+      </div>
       <div
-        className={cn(markdownClassName, 'text-blue-900')}
+        className={cn(markdownClassName, 'leading-relaxed text-gray-700')}
         dangerouslySetInnerHTML={{ __html: explanationHtml }}
       />
     </div>
