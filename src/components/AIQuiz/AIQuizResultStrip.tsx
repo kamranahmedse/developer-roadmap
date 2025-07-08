@@ -3,8 +3,7 @@ import {
   ArrowRightIcon,
   CheckIcon,
   CircleAlertIcon,
-  SkipForwardIcon,
-  XIcon,
+  Minus, XIcon
 } from 'lucide-react';
 import type { QuestionState } from './AIQuizContent';
 
@@ -79,7 +78,7 @@ export function QuizStateButton(props: QuizStateButtonProps) {
         'flex aspect-square flex-col items-center justify-center rounded-xl border p-1 hover:opacity-80',
         isCorrect && 'border-green-700 bg-green-700 text-white',
         isIncorrect && 'border-red-700 bg-red-700 text-white',
-        isSkipped && 'border-gray-500 bg-gray-500 text-white',
+        isSkipped && 'border-gray-400 bg-gray-400 text-white',
         isCanBeImproved && 'border-yellow-700 bg-yellow-700 text-white',
         !isActive && 'opacity-50',
         variant === 'small' && 'rounded-lg',
@@ -87,14 +86,19 @@ export function QuizStateButton(props: QuizStateButtonProps) {
       )}
     >
       {isCorrect && (
-        <CheckIcon className={cn('size-6.5', variant === 'small' && 'size-5')} />
+        <CheckIcon
+          className={cn('size-6.5', variant === 'small' && 'size-5')}
+        />
       )}
       {isIncorrect && (
         <XIcon className={cn('size-6.5', variant === 'small' && 'size-5')} />
       )}
       {isSkipped && (
-        <SkipForwardIcon
-          className={cn('size-6.5 fill-current', variant === 'small' && 'size-5')}
+        <Minus
+          className={cn(
+            'size-6.5 fill-current',
+            variant === 'small' && 'size-5',
+          )}
         />
       )}
       {isCanBeImproved && (

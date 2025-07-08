@@ -1,12 +1,4 @@
-import {
-  RotateCcw,
-  BarChart3,
-  Clock,
-  Zap,
-  Check,
-  X,
-  Minus,
-} from 'lucide-react';
+import { RotateCcw, BarChart3, Zap, Check, X, Minus } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { getPercentage } from '../../lib/number';
 import type { QuestionState } from './AIQuizContent';
@@ -202,7 +194,7 @@ export function AIQuizResults(props: AIQuizResultsProps) {
           Try Again
         </ActionButton>
         <ActionButton
-          variant="primary"
+          variant="secondary"
           icon={<Zap className="h-4 w-4" />}
           onClick={onNewQuiz}
         >
@@ -212,25 +204,12 @@ export function AIQuizResults(props: AIQuizResultsProps) {
 
       {/* Performance Insights */}
       <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 md:p-6">
-        <div className="flex items-start gap-3">
-          <div
-            className={cn(
-              'flex-shrink-0 rounded-lg p-2',
-              performance.color === 'emerald' &&
-                'bg-emerald-100 text-emerald-600',
-              performance.color === 'green' && 'bg-green-100 text-green-600',
-              performance.color === 'blue' && 'bg-blue-100 text-blue-600',
-              performance.color === 'orange' && 'bg-orange-100 text-orange-600',
-              performance.color === 'red' && 'bg-red-100 text-red-600',
-            )}
-          >
-            <Clock className="h-5 w-5" />
-          </div>
+        <div className="space-y-4">
           <div>
-            <h4 className="mb-1 text-sm font-semibold text-gray-900 md:text-base">
+            <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
               Performance Insight
             </h4>
-            <p className="text-sm leading-relaxed text-gray-600">
+            <p className="text-sm leading-relaxed text-balance text-gray-600">
               {accuracy >= 90 &&
                 "Outstanding work! You've mastered this topic. Consider challenging yourself with more advanced questions."}
               {accuracy >= 75 &&
@@ -245,6 +224,33 @@ export function AIQuizResults(props: AIQuizResultsProps) {
               {accuracy < 40 &&
                 "Don't give up! Learning takes time. Review the material thoroughly and try again when you're ready."}
             </p>
+          </div>
+
+          {/* Action Items */}
+          <div className="mt-5 border-t border-gray-200 pt-5 -mx-6 px-6">
+            <h5 className="mb-3 text-sm font-medium text-gray-900">
+              Here's what you can do next
+            </h5>
+            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              <ActionLink
+                href="/ai"
+                label="Learn a Topic"
+                description="Create a course or guide"
+                variant="secondary"
+              />
+              <ActionLink
+                href="/ai/chat"
+                label="Chat with AI Tutor"
+                description="Learn while you chat"
+                variant="secondary"
+              />
+              <ActionLink
+                href="/ai/quiz"
+                label="Take another Quiz"
+                description="Challenge yourself"
+                variant="secondary"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -323,6 +329,41 @@ function ActionButton(props: ActionButtonProps) {
       {icon}
       {children}
     </button>
+  );
+}
+
+type ActionLinkProps = {
+  href: string;
+  label: string;
+  description: string;
+  variant: 'primary' | 'secondary';
+};
+
+function ActionLink(props: ActionLinkProps) {
+  const { href, label, description, variant } = props;
+
+  return (
+    <a
+      href={href}
+      className={cn(
+        'block rounded-lg border p-3 text-left transition-all duration-200',
+        variant === 'primary' &&
+          'border-black bg-black text-white hover:bg-gray-800',
+        variant === 'secondary' &&
+          'border-gray-300 bg-white text-gray-900 hover:border-gray-400 hover:bg-gray-50',
+      )}
+    >
+      <div className="text-sm font-medium">{label}</div>
+      <div
+        className={cn(
+          'text-xs',
+          variant === 'primary' && 'text-gray-300',
+          variant === 'secondary' && 'text-gray-600',
+        )}
+      >
+        {description}
+      </div>
+    </a>
   );
 }
 
