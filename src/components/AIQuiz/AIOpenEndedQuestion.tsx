@@ -120,7 +120,7 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
 
       <button
         className={cn(
-          'mt-4 flex h-10 min-w-[142px] items-center justify-center rounded-xl bg-black px-4 py-2 text-white hover:bg-gray-900 disabled:opacity-70',
+          'mt-4 flex h-10 min-w-[142px] items-center justify-center rounded-xl bg-black px-4 py-2 text-white hover:bg-gray-900 disabled:opacity-70 disabled:cursor-not-allowed',
         )}
         onClick={handleSubmit}
         disabled={!canSubmit || isVerifying}

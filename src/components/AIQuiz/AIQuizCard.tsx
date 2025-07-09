@@ -1,6 +1,6 @@
-import { CalendarIcon } from 'lucide-react';
-import { getRelativeTimeString } from '../../lib/date';
+import { CalendarIcon, ClipboardCheck } from 'lucide-react';
 import { cn } from '../../lib/classname';
+import { getRelativeTimeString } from '../../lib/date';
 import type { AIQuizDocument } from '../../queries/ai-quiz';
 import { AIQuizActions } from './AIQuizActions';
 
@@ -29,15 +29,19 @@ export function AIQuizCard(props: AIQuizCardProps) {
           <h3 className="line-clamp-2 text-base font-semibold text-balance text-gray-900">
             {quiz.title}
           </h3>
-          <p className="mt-1 text-sm text-gray-600 capitalize">
-            {quiz.format} • {quiz.keyword}
-          </p>
         </div>
 
-        <div className="flex items-center gap-4 sm:gap-4">
+        <div className="mt-4 flex items-center gap-4 sm:gap-4">
           <div className="flex items-center text-xs text-gray-600">
             <CalendarIcon className="mr-1 h-3.5 w-3.5" />
             <span>{updatedAgo}</span>
+
+            <div className="ml-3 flex items-center text-xs text-gray-600">
+              <ClipboardCheck className="mr-1 h-3.5 w-3.5" />
+              <span className="capitalize">
+                {quiz.format === 'mcq' ? 'MCQ' : quiz.format}
+              </span>
+            </div>
           </div>
         </div>
       </a>
