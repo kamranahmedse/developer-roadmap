@@ -8,10 +8,23 @@ import { cn } from '../../lib/classname';
 type UpgradeSidebarCardProps = {
   onUpgrade: () => void;
   className?: string;
+  descriptionClassName?: string;
+  titleClassName?: string;
+  title?: string;
+  description?: string;
+  showLimit?: boolean;
 };
 
 export function UpgradeSidebarCard(props: UpgradeSidebarCardProps) {
-  const { onUpgrade, className } = props;
+  const {
+    onUpgrade,
+    title = 'Upgrade',
+    description = 'Get access to all features and benefits of the AI Tutor.',
+    descriptionClassName,
+    titleClassName,
+    className,
+    showLimit = true,
+  } = props;
 
   const { data: limits, isLoading: isLimitsLoading } = useQuery(
     getAiCourseLimitOptions(),
@@ -31,25 +44,34 @@ export function UpgradeSidebarCard(props: UpgradeSidebarCardProps) {
     >
       <span className="mb-2 flex items-center gap-2">
         <Zap className="size-4 text-amber-600" />
-        <span className="font-medium text-amber-900">Upgrade</span>
+        <span className={cn('font-medium text-amber-900', titleClassName)}>
+          {title}
+        </span>
       </span>
-      <span className="mt-1 block text-left text-xs leading-4 text-amber-700">
-        Get access to all features and benefits of the AI Tutor.
+      <span
+        className={cn(
+          'mt-1 block text-left text-xs leading-4 text-amber-700',
+          descriptionClassName,
+        )}
+      >
+        {description}
       </span>
 
-      <div className="mt-5">
-        <div className="relative h-1 w-full rounded-full bg-amber-300/40">
-          <div
-            className="absolute inset-0 h-full rounded-full bg-amber-600/80"
-            style={{
-              width: `${totalPercentage}%`,
-            }}
-          ></div>
+      {showLimit && (
+        <div className="mt-5">
+          <div className="relative h-1 w-full rounded-full bg-amber-300/40">
+            <div
+              className="absolute inset-0 h-full rounded-full bg-amber-600/80"
+              style={{
+                width: `${totalPercentage}%`,
+              }}
+            ></div>
+          </div>
+          <span className="mt-2 block text-xs text-amber-700">
+            {totalPercentage}% of the daily limit used
+          </span>
         </div>
-        <span className="mt-2 block text-xs text-amber-700">
-          {totalPercentage}% of the daily limit used
-        </span>
-      </div>
+      )}
     </button>
   );
 }

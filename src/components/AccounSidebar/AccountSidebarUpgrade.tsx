@@ -22,7 +22,11 @@ export function AccountSidebarUpgrade() {
 
       <UpgradeSidebarCard
         onUpgrade={() => setIsUpgradeModalOpen(true)}
-        className="m-1"
+        className="mt-4 -mr-px rounded-r-none ml-0"
+        descriptionClassName="leading-normal"
+        title="Upgrade"
+        description="Unlock premium features including AI tutor and more."
+        showLimit={false}
       />
     </>
   );
