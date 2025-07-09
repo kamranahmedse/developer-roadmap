@@ -201,7 +201,7 @@ export function QuestionTitle(props: QuestionTitleProps) {
 
   return (
     <div
-      className="prose prose-xl prose-headings:text-3xl prose-headings:font-bold prose-headings:text-black prose-headings:mb-6 prose-p:text-3xl prose-p:font-semibold prose-p:leading-normal prose-p:text-black prose-p:mb-0 prose-pre:my-0 prose-p:prose-code:text-xl prose-p:prose-code:px-3 prose-p:prose-code:py-1 prose-p:prose-code:rounded-md prose-p:prose-code:border prose-p:prose-code:border-gray-300 prose-p:prose-code:bg-gray-100 prose-p:prose-code:font-medium mb-2 text-left"
+      className="prose prose-xl prose-headings:text-3xl prose-headings:font-bold prose-headings:text-black prose-headings:mb-6 prose-p:text-3xl prose-p:font-semibold prose-p:leading-normal prose-p:text-black prose-p:mb-0 prose-pre:my-5 prose-p:prose-code:whitespace-nowrap prose-p:prose-code:relative prose-p:prose-code:top-[-5px] prose-p:prose-code:text-xl prose-p:prose-code:px-3 prose-p:prose-code:py-1 prose-p:prose-code:rounded-md prose-p:prose-code:border prose-p:prose-code:border-gray-300 prose-p:prose-code:bg-gray-100 prose-p:prose-code:font-medium mb-2 text-left"
       dangerouslySetInnerHTML={{ __html: titleHtml }}
     />
   );
