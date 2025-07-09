@@ -67,7 +67,7 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
   });
 
   const handleSubmit = async () => {
-    if (isSubmitted) {
+    if (isSubmittedAndNotSkipped) {
       if (isLastQuestion) {
         onComplete();
       } else {
@@ -85,6 +85,8 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
   const feedback = verificationData?.feedback || correctAnswer;
   const feedbackStatus = verificationData?.status || status;
 
+  const isSubmittedAndNotSkipped = isSubmitted && status !== 'skipped';
+
   return (
     <div>
       <QuestionTitle title={questionText} />
@@ -94,21 +96,21 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
           className={cn(
             'min-h-[200px] w-full resize-none rounded-xl border border-gray-200 p-4 text-lg',
             'focus:border-gray-400 focus:ring-0 focus:outline-none',
-            isSubmitted && 'bg-gray-50',
-            isSubmitted &&
+            isSubmittedAndNotSkipped && 'bg-gray-50',
+            isSubmittedAndNotSkipped &&
               feedbackStatus === 'correct' &&
               'border-green-500 bg-green-50',
-            isSubmitted &&
+            isSubmittedAndNotSkipped &&
               feedbackStatus === 'incorrect' &&
               'border-red-500 bg-red-50',
-            isSubmitted &&
+            isSubmittedAndNotSkipped &&
               feedbackStatus === 'can_be_improved' &&
               'border-yellow-500 bg-yellow-50',
           )}
           placeholder="Type your answer here..."
           value={userAnswer}
           onChange={(e) => setUserAnswer(e.target.value)}
-          disabled={isSubmitted || isVerifying}
+          disabled={isSubmittedAndNotSkipped || isVerifying}
         />
       </div>
 
@@ -125,14 +127,14 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
       >
         {isVerifying ? (
           <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
-        ) : isSubmitted ? (
+        ) : isSubmittedAndNotSkipped ? (
           isLastQuestion ? (
             'Finish Quiz'
           ) : (
             'Next Question'
           )
         ) : (
-          'Submit Answer'
+          'Verify Answer'
         )}
       </button>
     </div>

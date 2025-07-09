@@ -11,7 +11,7 @@ import { markdownToHtml } from '../../lib/markdown';
 import type { QuestionState } from './AIQuizContent';
 
 export const markdownClassName =
-  'prose prose-base prose-p:text-base prose-p:font-normal prose-p:my-0 prose-pre:my-0 prose-p:prose-code:text-sm prose-p:prose-code:px-2 prose-p:prose-code:py-1 prose-p:prose-code:rounded-md prose-p:prose-code:border prose-p:prose-code:border-gray-300 prose-p:prose-code:bg-gray-50 text-left text-gray-800';
+  'prose prose-base prose-p:text-base prose-p:font-normal prose-p:my-0 prose-pre:my-5 prose-p:prose-code:whitespace-nowrap prose-p:prose-code:text-sm prose-p:prose-code:px-2 prose-p:prose-code:py-1 prose-p:prose-code:rounded-md prose-p:prose-code:border prose-p:prose-code:border-gray-300 prose-p:prose-code:bg-gray-50 text-left text-gray-800';
 
 type AIMCQQuestionProps = {
   question: QuizQuestion;
