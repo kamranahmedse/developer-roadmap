@@ -5,6 +5,7 @@ import {
   MessageCircle,
   Plus,
   Star,
+  Swords,
   X,
   Zap,
 } from 'lucide-react';
@@ -33,6 +34,12 @@ const sidebarItems = [
     label: 'Create with AI',
     href: '/ai',
     icon: Plus,
+  },
+  {
+    key: 'quiz',
+    label: 'Test my Skills',
+    href: '/ai/quiz',
+    icon: Swords,
   },
   {
     key: 'chat',

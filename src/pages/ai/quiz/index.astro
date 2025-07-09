@@ -1,0 +1,18 @@
+---
+import { AIQuizGenerator } from '../../../components/AIQuiz/AIQuizGenerator';
+import { AITutorLayout } from '../../../components/AITutor/AITutorLayout';
+import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
+---
+
+<SkeletonLayout
+  title='AI Quiz'
+  briefTitle='AI Quiz'
+  description='AI Quiz'
+  keywords={['ai', 'quiz', 'education', 'learning']}
+  canonicalUrl='/ai/quiz'
+  noIndex={true}
+>
+  <AITutorLayout activeTab='quiz' client:load>
+    <AIQuizGenerator client:load />
+  </AITutorLayout>
+</SkeletonLayout>

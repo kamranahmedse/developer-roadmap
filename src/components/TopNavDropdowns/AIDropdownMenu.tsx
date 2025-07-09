@@ -1,5 +1,5 @@
 import { useStore } from '@nanostores/react';
-import { ChevronDown, Map, MessageCircle, Plus } from 'lucide-react';
+import { ChevronDown, Map, MessageCircle, Plus, Swords } from 'lucide-react';
 import { useEffect } from 'react';
 import {
   aiDropdownOpen,
@@ -14,6 +14,12 @@ const links = [
     label: 'Create with AI',
     description: 'Learn something new with AI',
     Icon: Plus,
+  },
+  {
+    link: '/ai/quiz',
+    label: 'Test my Skills',
+    description: 'Test your skills with AI',
+    Icon: Swords,
   },
   {
     link: '/ai/chat',
