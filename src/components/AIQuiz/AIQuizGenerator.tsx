@@ -1,18 +1,13 @@
 import {
-  BookOpenIcon,
-  FileTextIcon,
-  ListCheckIcon,
-  ListIcon,
-  ListTodoIcon,
-  MapIcon,
-  SparklesIcon,
-  type LucideIcon,
+  FileTextIcon, ListIcon,
+  ListTodoIcon, SparklesIcon,
+  type LucideIcon
 } from 'lucide-react';
 import { useEffect, useId, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { billingDetailsOptions, useIsPaidUser } from '../../queries/billing';
+import { billingDetailsOptions } from '../../queries/billing';
 import {
   clearQuestionAnswerChatMessages,
   storeQuestionAnswerChatMessages,
@@ -24,9 +19,7 @@ import {
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
-import { useParams } from '../../hooks/use-params';
 import { FormatItem } from '../ContentGenerator/FormatItem';
-import { AIQuizLayout } from './AIQuizLayout';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
 import { getAiCourseLimitOptions } from '../../queries/ai-course';
@@ -76,7 +69,7 @@ export function AIQuizGenerator() {
     value: AllowedFormat;
   }[] = [
     {
-      label: 'MCQ',
+      label: 'Multi-Choice',
       formatTitle: 'Multiple Choice Question',
       icon: ListTodoIcon,
       value: 'mcq',
