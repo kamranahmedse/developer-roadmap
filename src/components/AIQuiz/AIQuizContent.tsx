@@ -146,7 +146,9 @@ export function AIQuizContent(props: AIQuizContentProps) {
   };
 
   const handleSkip = () => {
-    handleSubmit('skipped');
+    const prevStatus = questionStates[activeQuestionIndex]?.status ?? 'pending';
+    handleSubmit(prevStatus === 'pending' ? 'skipped' : prevStatus);
+
     if (hasNextQuestion) {
       handleNextQuestion();
     } else {
@@ -231,6 +233,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
                     setCorrectAnswer={handleSetCorrectAnswer}
                     isLastQuestion={isLastQuestion}
                     onComplete={handleComplete}
+                    onSkip={handleSkip}
                   />
                 )}
               </>

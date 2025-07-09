@@ -1,7 +1,9 @@
 import {
-  FileTextIcon, ListIcon,
-  ListTodoIcon, SparklesIcon,
-  type LucideIcon
+  FileTextIcon,
+  ListIcon,
+  ListTodoIcon,
+  SparklesIcon,
+  type LucideIcon,
 } from 'lucide-react';
 import { useEffect, useId, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
@@ -246,7 +248,7 @@ export function AIQuizGenerator() {
 
         <button
           type="submit"
-          className="flex w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
+          className="flex h-[56px] w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
           disabled={!canGenerate}
         >
           <SparklesIcon className="size-4" />
