@@ -233,6 +233,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
                     setCorrectAnswer={handleSetCorrectAnswer}
                     isLastQuestion={isLastQuestion}
                     onComplete={handleComplete}
+                    onSkip={handleSkip}
                   />
                 )}
               </>
