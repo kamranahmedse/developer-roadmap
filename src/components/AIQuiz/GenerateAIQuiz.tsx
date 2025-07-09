@@ -42,7 +42,7 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
       questionAndAnswers = getQuestionAnswerChatMessages(sessionId);
     }
 
-    handleGenerateDocument({
+    handleGenerateQuiz({
       term: paramsTerm,
       format: paramsFormat,
       src: paramsSrc,
@@ -50,7 +50,7 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
     });
   }, []);
 
-  const handleGenerateDocument = async (options: {
+  const handleGenerateQuiz = async (options: {
     term: string;
     format: string;
     isForce?: boolean;
@@ -121,5 +121,5 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
     );
   }
 
-  return <AIQuizContent questions={questions} />;
+  return <AIQuizContent isStreaming={isStreaming} questions={questions} />;
 }

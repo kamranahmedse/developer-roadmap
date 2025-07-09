@@ -1,8 +1,10 @@
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
+  Loader2Icon,
   type LucideIcon,
 } from 'lucide-react';
+import { cn } from '../../lib/classname';
 
 type QuizTopNavigationProps = {
   activeQuestionIndex: number;
@@ -11,6 +13,7 @@ type QuizTopNavigationProps = {
   onSkip: () => void;
   onPrevious: () => void;
   onNext: () => void;
+  isStreaming?: boolean;
 };
 
 export function QuizTopNavigation(props: QuizTopNavigationProps) {
@@ -21,19 +24,20 @@ export function QuizTopNavigation(props: QuizTopNavigationProps) {
     onPrevious,
     onNext,
     onSkip,
+    isStreaming = false,
   } = props;
 
   return (
     <div className="mb-8 space-y-4">
       {/* Header with question count and navigation */}
       <div className="flex items-center justify-center lg:justify-between">
-        <div className="flex items-center w-full gap-3">
+        <div className="flex w-full items-center gap-3">
           <NavigationButton
             disabled={activeQuestionIndex === 0}
             onClick={onPrevious}
             icon={ChevronLeftIcon}
           />
-          <span className="text-sm font-medium max-lg:w-full text-center text-gray-600">
+          <span className="text-center text-sm font-medium text-gray-600 max-lg:w-full">
             Question{' '}
             <span className="text-black">{activeQuestionIndex + 1}</span> of{' '}
             {totalQuestions}
@@ -45,9 +49,20 @@ export function QuizTopNavigation(props: QuizTopNavigationProps) {
           />
         </div>
 
-        <div className="hidden text-sm flex-shrink-0 font-medium text-gray-500 min-lg:flex">
-          {Math.round(progressPercentage)}% complete
-        </div>
+        {!isStreaming && (
+          <div
+            className={cn(
+              'hidden flex-shrink-0 text-sm font-medium text-gray-500 min-lg:flex',
+            )}
+          >
+            {Math.round(progressPercentage)}% complete
+          </div>
+        )}
+        {isStreaming && (
+          <div className="text-sm font-medium text-gray-500">
+            <Loader2Icon className="size-4 animate-spin stroke-[2.5]" />
+          </div>
+        )}
       </div>
 
       {/* Enhanced progress bar */}

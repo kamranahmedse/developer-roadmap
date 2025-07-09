@@ -7,6 +7,7 @@ import { getPercentage } from '../../lib/number';
 import { AIQuizResults } from './AIQuizResults';
 import { flushSync } from 'react-dom';
 import { AIQuizResultStrip } from './AIQuizResultStrip';
+import { cn } from '../../lib/classname';
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -30,10 +31,11 @@ type AIQuizContentProps = {
   quizSlug?: string;
   questions: QuizQuestion[];
   isLoading?: boolean;
+  isStreaming?: boolean;
 };
 
 export function AIQuizContent(props: AIQuizContentProps) {
-  const { quizSlug, questions, isLoading } = props;
+  const { quizSlug, questions, isLoading, isStreaming = false } = props;
 
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
   const activeQuestion = questions[activeQuestionIndex];
@@ -157,8 +159,16 @@ export function AIQuizContent(props: AIQuizContentProps) {
   };
 
   return (
-    <div className="flex h-full w-full flex-col">
-      <div className="relative flex h-full flex-col overflow-y-auto">
+    <div
+      className={cn('flex h-full w-full flex-col', {
+        'animate-pulse cursor-progress': isStreaming,
+      })}
+    >
+      <div
+        className={cn('relative flex h-full flex-col overflow-y-auto', {
+          'pointer-events-none': isStreaming,
+        })}
+      >
         <div className="absolute inset-0 z-10">
           <div className="mx-auto max-w-2xl bg-white px-4 py-10">
             {shouldShowQuestions && (
@@ -167,6 +177,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
                 totalQuestions={totalQuestions}
                 progressPercentage={progressPercentage}
                 onSkip={handleSkip}
+                isStreaming={isStreaming}
                 onPrevious={() => {
                   if (!hasPreviousQuestion) {
                     return;
