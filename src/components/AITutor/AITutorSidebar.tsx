@@ -1,12 +1,13 @@
 import {
   BookOpen,
-  Compass, Map,
+  Compass,
+  Map,
   MessageCircle,
   Plus,
   Star,
   Swords,
   X,
-  Zap
+  Zap,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
@@ -35,16 +36,16 @@ const sidebarItems = [
     icon: Plus,
   },
   {
-    key: 'chat',
-    label: 'Ask AI Tutor',
-    href: '/ai/chat',
-    icon: MessageCircle,
-  },
-  {
     key: 'quiz',
     label: 'Test my Skills',
     href: '/ai/quiz',
     icon: Swords,
+  },
+  {
+    key: 'chat',
+    label: 'Ask AI Tutor',
+    href: '/ai/chat',
+    icon: MessageCircle,
   },
   {
     key: 'roadmap-chat',
