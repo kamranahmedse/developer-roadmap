@@ -39,6 +39,8 @@ const tabTypes: TabType[] = [
   { label: 'Shared by Friends', value: 'shared' },
 ];
 
+const MAX_ROADMAP_LIMIT = 3;
+
 export function RoadmapListPage() {
   const toast = useToast();
 
@@ -86,7 +88,7 @@ export function RoadmapListPage() {
   }
 
   const totalRoadmaps = allRoadmaps.personalRoadmaps.length;
-  const hasCrossedLimit = !isPaidUser && totalRoadmaps >= 3;
+  const hasCrossedLimit = !isPaidUser && totalRoadmaps >= MAX_ROADMAP_LIMIT;
 
   return (
     <div>
@@ -130,26 +132,15 @@ export function RoadmapListPage() {
         </button>
       </div>
 
-      {hasCrossedLimit && (
-        <div className="mt-4 flex flex-col gap-2 rounded-lg border border-yellow-300 bg-yellow-50 p-2.5 text-yellow-800">
-          <p className="text-sm">
-            You have reached the limit of 3 roadmaps.{' '}
-            <button
-              className="cursor-pointer text-yellow-800 underline underline-offset-2 hover:text-yellow-900 hover:no-underline"
-              onClick={() => setShowUpgradeModal(true)}
-            >
-              Upgrade
-            </button>{' '}
-            to create more.
-          </p>
-        </div>
-      )}
-
       <div className="mt-4">
         {activeTab === 'personal' && (
           <PersonalRoadmapList
+            maxLimit={
+              isPaidUser ? -1 : Math.max(MAX_ROADMAP_LIMIT, totalRoadmaps)
+            }
             roadmaps={allRoadmaps?.personalRoadmaps}
             setAllRoadmaps={setAllRoadmaps}
+            onUpgrade={() => setShowUpgradeModal(true)}
             onDelete={(roadmapId) => {
               setAllRoadmaps({
                 ...allRoadmaps,
