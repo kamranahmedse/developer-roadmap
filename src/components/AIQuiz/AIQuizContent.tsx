@@ -18,10 +18,10 @@ type AIQuizResultFeedbackBody = {
 
 type AIQuizResultFeedbackQuery = {};
 
-type AIQuizResultFeedbackResponse = {
-  topics?: string[];
-  resourcesType?: 'course' | 'guide';
-  resources?: string[];
+export type AIQuizResultFeedbackResponse = {
+  quizTopics?: string[];
+  guideTopics?: string[];
+  courseTopics?: string[];
 };
 
 export type QuestionState = {
@@ -68,6 +68,8 @@ export function AIQuizContent(props: AIQuizContentProps) {
     mutate: userQuizResultFeedback,
     isPending: isUserQuizResultFeedbackPending,
     data: userQuizResultFeedbackData,
+    status: userQuizResultFeedbackStatus,
+    reset: resetUserQuizResultFeedback,
   } = useMutation(
     {
       mutationKey: ['user-quiz-result-feedback', quizSlug],
@@ -82,20 +84,20 @@ export function AIQuizContent(props: AIQuizContentProps) {
   );
 
   const handleSubmit = (status: QuestionState['status']) => {
-    setQuestionStates((prev) => {
-      const oldState = prev[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
+    const oldState =
+      questionStates[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
 
-      const newSelectedOptions = {
-        ...prev,
-        [activeQuestionIndex]: {
-          ...oldState,
-          isSubmitted: true,
-          status,
-        },
-      };
+    const newQuestionStates = {
+      ...questionStates,
+      [activeQuestionIndex]: {
+        ...oldState,
+        isSubmitted: true,
+        status,
+      },
+    };
 
-      return newSelectedOptions;
-    });
+    setQuestionStates(newQuestionStates);
+    return newQuestionStates;
   };
 
   const handleSetUserAnswer = (userAnswer: string) => {
@@ -152,6 +154,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
     setActiveQuestionIndex(0);
     setQuestionStates({});
     setQuizStatus('answering');
+    resetUserQuizResultFeedback();
   };
 
   const hasNextQuestion = activeQuestionIndex < questions.length - 1;
@@ -179,21 +182,26 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSkip = () => {
     const prevStatus = questionStates[activeQuestionIndex]?.status ?? 'pending';
-    handleSubmit(prevStatus === 'pending' ? 'skipped' : prevStatus);
+    const newQuestionStates = handleSubmit(
+      prevStatus === 'pending' ? 'skipped' : prevStatus,
+    );
 
     if (hasNextQuestion) {
       handleNextQuestion();
     } else {
-      handleComplete();
+      handleComplete(newQuestionStates);
     }
   };
 
-  const handleComplete = () => {
+  const handleComplete = (
+    newQuestionStates?: Record<number, QuestionState>,
+  ) => {
+    const states = newQuestionStates ?? questionStates;
     setQuizStatus('submitted');
 
     const questionsWithAnswers = questions
       .map((question, index) => {
-        const questionState = questionStates[index];
+        const questionState = states[index];
 
         let questionWithAnswer = `## Question ${index + 1} (${question.type === 'mcq' ? 'MCQ' : 'Open Ended'}): ${question.title}`;
         if (question.type === 'mcq') {
@@ -224,10 +232,9 @@ export function AIQuizContent(props: AIQuizContentProps) {
       })
       .join('\n\n');
 
-    console.log('-'.repeat(20));
-    console.log(questionStates);
-    console.log(questionsWithAnswers);
-    console.log('-'.repeat(20));
+    if (userQuizResultFeedbackStatus === 'idle') {
+      userQuizResultFeedback({ questionsWithAnswers });
+    }
   };
 
   return (

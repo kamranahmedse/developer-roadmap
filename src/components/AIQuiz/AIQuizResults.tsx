@@ -1,7 +1,10 @@
 import { RotateCcw, BarChart3, Zap, Check, X, Minus } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { getPercentage } from '../../lib/number';
-import type { QuestionState } from './AIQuizContent';
+import type {
+  AIQuizResultFeedbackResponse,
+  QuestionState,
+} from './AIQuizContent';
 import { QuizStateButton } from './AIQuizResultStrip';
 import { CircularProgress } from './CircularProgress';
 
@@ -11,11 +14,21 @@ type AIQuizResultsProps = {
   onRetry: () => void;
   onNewQuiz: () => void;
   onReview?: (questionIndex: number) => void;
+
+  isFeedbackLoading?: boolean;
+  feedback?: AIQuizResultFeedbackResponse;
 };
 
 export function AIQuizResults(props: AIQuizResultsProps) {
-  const { questionStates, totalQuestions, onRetry, onNewQuiz, onReview } =
-    props;
+  const {
+    questionStates,
+    totalQuestions,
+    onRetry,
+    onNewQuiz,
+    onReview,
+    isFeedbackLoading,
+    feedback,
+  } = props;
 
   const states = Object.values(questionStates);
   const correctCount = states.filter(
@@ -189,7 +202,7 @@ export function AIQuizResults(props: AIQuizResultsProps) {
           </div>
 
           {/* Action Items */}
-          <div className="mt-5 border-t border-gray-200 pt-5 -mx-6 px-6">
+          <div className="-mx-6 mt-5 border-t border-gray-200 px-6 pt-5">
             <h5 className="mb-3 text-sm font-medium text-gray-900">
               Here's what you can do next
             </h5>
