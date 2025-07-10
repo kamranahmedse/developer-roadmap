@@ -16,6 +16,8 @@ import type {
 } from './AIQuizContent';
 import { QuizStateButton } from './AIQuizResultStrip';
 import { CircularProgress } from './CircularProgress';
+import { markdownToHtml } from '../../lib/markdown';
+import { markdownClassName } from './AIMCQQuestion';
 
 type AIQuizResultsProps = {
   questionStates: Record<number, QuestionState>;
@@ -185,72 +187,67 @@ export function AIQuizResults(props: AIQuizResultsProps) {
         </ActionButton>
       </div>
 
-      {feedback &&
-        (feedback.quizTopics?.length ||
-          feedback.guideTopics?.length ||
-          feedback.courseTopics?.length) && (
+      {feedback && (
+        <>
           <div className="rounded-xl border border-gray-200 bg-gray-50">
-            {feedback.quizTopics && feedback.quizTopics.length > 0 && (
+            {feedback.summary && (
               <div className="border-b border-gray-200 p-4 md:p-6">
-                <div className="mb-4">
-                  <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
-                    Topics to Focus on
-                  </h4>
+                <h4 className="mb-2 flex items-center text-sm font-semibold text-gray-900 md:text-base">
+                  Summary of your quiz
+                </h4>
 
-                  <p className="text-sm leading-relaxed text-balance text-gray-600">
-                    You should focus on following topics to improve your
-                    understanding of the quiz
-                  </p>
-                </div>
-                <ul className="space-y-2">
-                  {feedback.quizTopics.map((topic, index) => (
-                    <li key={index} className="flex items-start gap-2">
-                      <div className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gray-400" />
-                      <span className="text-sm text-gray-700">{topic}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: markdownToHtml(feedback.summary, false),
+                  }}
+                  className={cn(
+                    markdownClassName,
+                    'prose-sm prose-p:text-sm prose-p:leading-relaxed prose-p:text-balance',
+                  )}
+                />
               </div>
             )}
 
-            {(feedback.guideTopics?.length ||
-              feedback.courseTopics?.length) && (
-              <div className="p-4 md:p-6">
-                <div className="mb-4">
-                  <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
-                    Suggested Resources
-                  </h4>
+            {feedback.guideTopics?.length && feedback.courseTopics?.length && (
+              <>
+                <div className="p-4 md:p-6">
+                  <div className="mb-4">
+                    <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
+                      Suggested Resources
+                    </h4>
 
-                  <p className="text-sm leading-relaxed text-balance text-gray-600">
-                    You can follow these courses or guides to improve your
-                    understanding of the topic you missed in the quiz
-                  </p>
-                </div>
+                    <p className="text-sm leading-relaxed text-balance text-gray-600">
+                      You can follow these courses or guides to improve your
+                      understanding of the topic you missed in the quiz
+                    </p>
+                  </div>
 
-                <div className="grid gap-2 sm:grid-cols-2">
-                  {feedback.guideTopics?.map((topic, index) => (
-                    <ResourceCard
-                      key={`guide-${index}`}
-                      icon={<FileTextIcon className="h-5 w-5" />}
-                      title={topic}
-                      type="guide"
-                      href={`/ai/guide?term=${encodeURIComponent(topic)}&format=guide`}
-                    />
-                  ))}
-                  {feedback.courseTopics?.map((topic, index) => (
-                    <ResourceCard
-                      key={`course-${index}`}
-                      icon={<BookOpenIcon className="h-5 w-5" />}
-                      title={topic}
-                      type="course"
-                      href={`/ai/course?term=${encodeURIComponent(topic)}&format=course`}
-                    />
-                  ))}
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    {feedback.guideTopics?.map((topic, index) => (
+                      <ResourceCard
+                        key={`guide-${index}`}
+                        icon={<FileTextIcon className="h-5 w-5" />}
+                        title={topic}
+                        type="guide"
+                        href={`/ai/guide?term=${encodeURIComponent(topic)}&format=guide`}
+                      />
+                    ))}
+                    {feedback.courseTopics?.map((topic, index) => (
+                      <ResourceCard
+                        key={`course-${index}`}
+                        icon={<BookOpenIcon className="h-5 w-5" />}
+                        title={topic}
+                        type="course"
+                        href={`/ai/course?term=${encodeURIComponent(topic)}&format=course`}
+                      />
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </>
             )}
           </div>
-        )}
+        </>
+      )}
 
       {isFeedbackLoading && (
         <div className="rounded-xl border border-gray-200 bg-white p-4 md:p-6">

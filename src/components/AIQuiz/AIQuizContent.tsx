@@ -19,7 +19,7 @@ type AIQuizResultFeedbackBody = {
 type AIQuizResultFeedbackQuery = {};
 
 export type AIQuizResultFeedbackResponse = {
-  quizTopics?: string[];
+  summary?: string;
   guideTopics?: string[];
   courseTopics?: string[];
 };
