@@ -190,6 +190,44 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleComplete = () => {
     setQuizStatus('submitted');
+
+    const questionsWithAnswers = questions
+      .map((question, index) => {
+        const questionState = questionStates[index];
+
+        let questionWithAnswer = `## Question ${index + 1} (${question.type === 'mcq' ? 'MCQ' : 'Open Ended'}): ${question.title}`;
+        if (question.type === 'mcq') {
+          questionWithAnswer += `\n### Options:`;
+          question?.options?.forEach((option, optionIndex) => {
+            questionWithAnswer += `\n${optionIndex + 1}. ${option.title} (${option.isCorrect ? 'Correct' : 'Incorrect'})`;
+          });
+
+          if (questionState?.selectedOptions?.length) {
+            questionWithAnswer += `\n### User Selected Answer:`;
+            questionState?.selectedOptions?.forEach((optionIndex) => {
+              questionWithAnswer += `\n${optionIndex + 1}. ${question.options[optionIndex].title}`;
+            });
+          }
+        } else {
+          if (questionState?.userAnswer) {
+            questionWithAnswer += `\n### User Answer: ${questionState?.userAnswer}`;
+          }
+
+          if (questionState?.correctAnswer) {
+            questionWithAnswer += `\n### AI Feedback: ${questionState?.correctAnswer}`;
+          }
+        }
+
+        questionWithAnswer += `\n### Final Status: ${questionState?.status}`;
+
+        return questionWithAnswer;
+      })
+      .join('\n\n');
+
+    console.log('-'.repeat(20));
+    console.log(questionStates);
+    console.log(questionsWithAnswers);
+    console.log('-'.repeat(20));
   };
 
   return (
