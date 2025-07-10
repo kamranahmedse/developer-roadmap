@@ -280,6 +280,8 @@ export function AIQuizContent(props: AIQuizContentProps) {
                   setActiveQuestionIndex(questionIndex);
                   setQuizStatus('reviewing');
                 }}
+                isFeedbackLoading={isUserQuizResultFeedbackPending}
+                feedback={userQuizResultFeedbackData}
               />
             )}
 

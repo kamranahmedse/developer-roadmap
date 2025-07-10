@@ -1,4 +1,13 @@
-import { RotateCcw, BarChart3, Zap, Check, X, Minus } from 'lucide-react';
+import {
+  RotateCcw,
+  BarChart3,
+  Zap,
+  Check,
+  X,
+  Minus,
+  BookOpenIcon,
+  FileTextIcon,
+} from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { getPercentage } from '../../lib/number';
 import type {
@@ -159,7 +168,6 @@ export function AIQuizResults(props: AIQuizResultsProps) {
         </div>
       )}
 
-      {/* Action Buttons */}
       <div className="flex flex-col gap-3 sm:flex-row">
         <ActionButton
           variant="secondary"
@@ -177,7 +185,86 @@ export function AIQuizResults(props: AIQuizResultsProps) {
         </ActionButton>
       </div>
 
-      {/* Performance Insights */}
+      {feedback &&
+        (feedback.quizTopics?.length ||
+          feedback.guideTopics?.length ||
+          feedback.courseTopics?.length) && (
+          <div className="rounded-xl border border-gray-200 bg-gray-50">
+            {feedback.quizTopics && feedback.quizTopics.length > 0 && (
+              <div className="border-b border-gray-200 p-4 md:p-6">
+                <div className="mb-4">
+                  <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
+                    Topics to Focus on
+                  </h4>
+
+                  <p className="text-sm leading-relaxed text-balance text-gray-600">
+                    You should focus on following topics to improve your
+                    understanding of the quiz
+                  </p>
+                </div>
+                <ul className="space-y-2">
+                  {feedback.quizTopics.map((topic, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <div className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gray-400" />
+                      <span className="text-sm text-gray-700">{topic}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {(feedback.guideTopics?.length ||
+              feedback.courseTopics?.length) && (
+              <div className="p-4 md:p-6">
+                <div className="mb-4">
+                  <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
+                    Suggested Resources
+                  </h4>
+
+                  <p className="text-sm leading-relaxed text-balance text-gray-600">
+                    You can follow these courses or guides to improve your
+                    understanding of the topic you missed in the quiz
+                  </p>
+                </div>
+
+                <div className="grid gap-2 sm:grid-cols-2">
+                  {feedback.guideTopics?.map((topic, index) => (
+                    <ResourceCard
+                      key={`guide-${index}`}
+                      icon={<FileTextIcon className="h-5 w-5" />}
+                      title={topic}
+                      type="guide"
+                      href={`/ai/guide?term=${encodeURIComponent(topic)}&format=guide`}
+                    />
+                  ))}
+                  {feedback.courseTopics?.map((topic, index) => (
+                    <ResourceCard
+                      key={`course-${index}`}
+                      icon={<BookOpenIcon className="h-5 w-5" />}
+                      title={topic}
+                      type="course"
+                      href={`/ai/course?term=${encodeURIComponent(topic)}&format=course`}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+      {isFeedbackLoading && (
+        <div className="rounded-xl border border-gray-200 bg-white p-4 md:p-6">
+          <div className="flex items-center justify-center py-8">
+            <div className="flex items-center gap-3 text-gray-600">
+              <div className="h-5 w-5 animate-spin rounded-full border-2 border-gray-300 border-t-gray-600" />
+              <span className="text-sm md:text-base">
+                Generating personalized feedback...
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 md:p-6">
         <div className="space-y-4">
           <div>
@@ -388,5 +475,28 @@ export function ResultAction(props: ResultActionProps) {
       {icon}
       {label}
     </button>
+  );
+}
+
+type ResourceCardProps = {
+  icon: React.ReactNode;
+  title: string;
+  type: 'guide' | 'course';
+  href: string;
+};
+
+function ResourceCard(props: ResourceCardProps) {
+  const { icon, title, type, href } = props;
+
+  return (
+    <a
+      href={href}
+      className="block rounded-lg border border-gray-200 bg-white p-2.5 text-left hover:border-gray-400 hover:bg-gray-100"
+    >
+      <div className="flex items-center gap-2">
+        <div className="text-gray-500">{icon}</div>
+        <div className="truncate text-sm text-gray-900">{title}</div>
+      </div>
+    </a>
   );
 }
