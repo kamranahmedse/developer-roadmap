@@ -164,7 +164,7 @@ export function AIQuizGenerator() {
           <input
             type="text"
             id={titleFieldId}
-            placeholder="e.g., JavaScript fundamentals, Machine Learning basics"
+            placeholder="e.g., JavaScript Variables, Go Routines, System Design"
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
