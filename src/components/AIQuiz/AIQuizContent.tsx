@@ -8,6 +8,21 @@ import { AIQuizResults } from './AIQuizResults';
 import { flushSync } from 'react-dom';
 import { AIQuizResultStrip } from './AIQuizResultStrip';
 import { cn } from '../../lib/classname';
+import { httpPost } from '../../lib/query-http';
+import { useMutation } from '@tanstack/react-query';
+import { queryClient } from '../../stores/query-client';
+
+type AIQuizResultFeedbackBody = {
+  questionsWithAnswers: string;
+};
+
+type AIQuizResultFeedbackQuery = {};
+
+type AIQuizResultFeedbackResponse = {
+  topics?: string[];
+  resourcesType?: 'course' | 'guide';
+  resources?: string[];
+};
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -48,6 +63,23 @@ export function AIQuizContent(props: AIQuizContentProps) {
   const activeQuestionState =
     questionStates[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
   const isLastQuestion = activeQuestionIndex === questions.length - 1;
+
+  const {
+    mutate: userQuizResultFeedback,
+    isPending: isUserQuizResultFeedbackPending,
+    data: userQuizResultFeedbackData,
+  } = useMutation(
+    {
+      mutationKey: ['user-quiz-result-feedback', quizSlug],
+      mutationFn: (body: AIQuizResultFeedbackBody) => {
+        return httpPost<AIQuizResultFeedbackResponse>(
+          `/v1-ai-quiz-result-feedback/${quizSlug}`,
+          body,
+        );
+      },
+    },
+    queryClient,
+  );
 
   const handleSubmit = (status: QuestionState['status']) => {
     setQuestionStates((prev) => {
