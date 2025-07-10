@@ -5,7 +5,7 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { LibraryTabs } from '../Library/LibraryTab';
 
 type AILibraryLayoutProps = {
-  activeTab: 'courses' | 'guides' | 'roadmaps';
+  activeTab: 'courses' | 'guides' | 'roadmaps' | 'quizzes';
   children: React.ReactNode;
 };
 

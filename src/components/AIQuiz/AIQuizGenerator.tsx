@@ -1,16 +1,15 @@
 import {
-  BookOpenIcon,
   FileTextIcon,
-  MapIcon,
+  ListIcon,
+  ListTodoIcon,
   SparklesIcon,
   type LucideIcon,
 } from 'lucide-react';
 import { useEffect, useId, useState } from 'react';
-import { FormatItem } from './FormatItem';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { useIsPaidUser } from '../../queries/billing';
+import { billingDetailsOptions } from '../../queries/billing';
 import {
   clearQuestionAnswerChatMessages,
   storeQuestionAnswerChatMessages,
@@ -18,41 +17,41 @@ import {
 import {
   QuestionAnswerChat,
   type QuestionAnswerChatMessage,
-} from './QuestionAnswerChat';
+} from '../ContentGenerator/QuestionAnswerChat';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
-import { useParams } from '../../hooks/use-params';
+import { FormatItem } from '../ContentGenerator/FormatItem';
+import { queryClient } from '../../stores/query-client';
+import { useQuery } from '@tanstack/react-query';
+import { getAiCourseLimitOptions } from '../../queries/ai-course';
 
-const allowedFormats = ['course', 'guide', 'roadmap'] as const;
+const allowedFormats = ['mcq', 'open-ended', 'mixed'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
 
-export function ContentGenerator() {
+export function AIQuizGenerator() {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
-  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
-  const params = useParams<{ format: AllowedFormat }>();
 
   const toast = useToast();
   const [title, setTitle] = useState('');
-  const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
+  const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('mcq');
 
-  useEffect(() => {
-    const isValidFormat = allowedFormats.find(
-      (format) => format.value === params.format,
-    );
-
-    if (isValidFormat) {
-      setSelectedFormat(isValidFormat.value);
-    } else {
-      setSelectedFormat('course');
-    }
-  }, [params.format]);
-
-  // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
   const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
     QuestionAnswerChatMessage[]
   >([]);
+
+  const {
+    data: tokenUsage,
+    isLoading: isTokenUsageLoading,
+    refetch: refetchTokenUsage,
+  } = useQuery(getAiCourseLimitOptions(), queryClient);
+
+  const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
+    useQuery(billingDetailsOptions(), queryClient);
+
+  const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
+  const isPaidUser = userBillingDetails?.status === 'active';
 
   const titleFieldId = useId();
   const fineTuneOptionsId = useId();
@@ -67,23 +66,27 @@ export function ContentGenerator() {
 
   const allowedFormats: {
     label: string;
+    formatTitle: string;
     icon: LucideIcon;
     value: AllowedFormat;
   }[] = [
     {
-      label: 'Course',
-      icon: BookOpenIcon,
-      value: 'course',
+      label: 'Multi-Choice',
+      formatTitle: 'Multiple Choice Question',
+      icon: ListTodoIcon,
+      value: 'mcq',
     },
     {
-      label: 'Guide',
+      label: 'Open-Ended',
+      formatTitle: 'Open-Ended Question',
       icon: FileTextIcon,
-      value: 'guide',
+      value: 'open-ended',
     },
     {
-      label: 'Roadmap',
-      icon: MapIcon,
-      value: 'roadmap',
+      label: 'Mixed',
+      formatTitle: 'Mixed Question (MCQ + Open-Ended)',
+      icon: ListIcon,
+      value: 'mixed',
     },
   ];
 
@@ -93,32 +96,33 @@ export function ContentGenerator() {
       return;
     }
 
+    if (!isPaidUser && isLimitExceeded) {
+      setIsUpgradeModalOpen(true);
+      return;
+    }
+
     let sessionId = '';
     if (showFineTuneOptions) {
       clearQuestionAnswerChatMessages();
       sessionId = storeQuestionAnswerChatMessages(questionAnswerChatMessages);
     }
 
-    const trimmedTitle = title.trim();
-    if (selectedFormat === 'course') {
-      window.location.href = `/ai/course?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
-    } else if (selectedFormat === 'guide') {
-      window.location.href = `/ai/guide?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
-    } else if (selectedFormat === 'roadmap') {
-      window.location.href = `/ai/roadmap?term=${encodeURIComponent(trimmedTitle)}&id=${sessionId}&format=${selectedFormat}`;
-    }
+    window.location.href = `/ai/quiz/search?term=${title}&format=${selectedFormat}&id=${sessionId}`;
   };
 
   useEffect(() => {
     window?.fireEvent({
       action: 'tutor_user',
       category: 'ai_tutor',
-      label: 'Visited AI Course Page',
+      label: 'Visited AI Quiz Generator Page',
     });
   }, []);
 
   const trimmedTitle = title.trim();
   const canGenerate = trimmedTitle && trimmedTitle.length >= 3;
+  const selectedFormatTitle = allowedFormats.find(
+    (f) => f.value === selectedFormat,
+  )?.formatTitle;
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-grow flex-col pt-4 md:justify-center md:pt-10 lg:pt-28 lg:pb-24">
@@ -126,7 +130,8 @@ export function ContentGenerator() {
         {isUpgradeModalOpen && (
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
         )}
-        {!isPaidUser && !isPaidUserLoading && isLoggedIn() && (
+
+        {!isPaidUser && !isBillingDetailsLoading && isLoggedIn() && (
           <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500 max-md:hidden">
             You are on the free plan
             <button
@@ -138,10 +143,10 @@ export function ContentGenerator() {
           </div>
         )}
         <h1 className="mb-0.5 text-center text-4xl font-semibold max-md:text-left max-md:text-xl lg:mb-3">
-          What can I help you learn?
+          Test your Knowledge
         </h1>
         <p className="text-center text-lg text-balance text-gray-600 max-md:text-left max-md:text-sm">
-          Enter a topic below to generate a personalized course for it
+          Create a personalized quiz to test your understanding of any topic
         </p>
       </div>
 
@@ -154,12 +159,12 @@ export function ContentGenerator() {
       >
         <div className="flex flex-col gap-2">
           <label htmlFor={titleFieldId} className="inline-block text-gray-500">
-            What can I help you learn?
+            What topic would you like to quiz yourself on?
           </label>
           <input
             type="text"
             id={titleFieldId}
-            placeholder="Enter a topic"
+            placeholder="e.g., JavaScript Variables, Go Routines, System Design"
             value={title}
             onChange={(e) => {
               setTitle(e.target.value);
@@ -202,6 +207,16 @@ export function ContentGenerator() {
             id={fineTuneOptionsId}
             checked={showFineTuneOptions}
             onChange={(e) => {
+              if (!isLoggedIn()) {
+                showLoginPopup();
+                return;
+              }
+
+              if (!isPaidUser && isLimitExceeded) {
+                setIsUpgradeModalOpen(true);
+                return;
+              }
+
               if (!trimmedTitle) {
                 toast.error('Please enter a topic first');
                 return;
@@ -216,27 +231,28 @@ export function ContentGenerator() {
             }}
           />
           <span className="max-sm:hidden">
-            Answer the following questions for a better {selectedFormat}
+            Answer the following questions for a better result
           </span>
-          <span className="sm:hidden">Customize your {selectedFormat}</span>
+          <span className="sm:hidden">Customize your quiz</span>
         </label>
 
         {showFineTuneOptions && (
           <QuestionAnswerChat
             term={title}
-            format={selectedFormat}
+            format={selectedFormatTitle || selectedFormat}
             questionAnswerChatMessages={questionAnswerChatMessages}
             setQuestionAnswerChatMessages={setQuestionAnswerChatMessages}
+            from="quiz"
           />
         )}
 
         <button
           type="submit"
-          className="flex w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
+          className="flex h-[56px] w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
           disabled={!canGenerate}
         >
           <SparklesIcon className="size-4" />
-          Generate
+          Generate Quiz
         </button>
       </form>
     </div>

@@ -32,5 +32,5 @@ export function getPercentage(portion: number, total: number): number {
   }
 
   const percentage = (portion / total) * 100;
-  return Math.round(percentage);
+  return Math.min(Math.round(percentage), 100);
 }

@@ -2,6 +2,11 @@ import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
 import { generateAICourseRoadmapStructure } from '../lib/ai';
 import { generateAIRoadmapFromText, renderFlowJSON } from '@roadmapsh/editor';
+import { queryClient } from '../stores/query-client';
+import { getAiCourseLimitOptions } from '../queries/ai-course';
+import { readChatStream } from '../lib/chat';
+import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
+import { isLoggedIn } from '../lib/jwt';
 
 export interface AIRoadmapDocument {
   _id: string;
@@ -46,13 +51,6 @@ export function aiRoadmapOptions(roadmapSlug?: string) {
     enabled: !!roadmapSlug,
   });
 }
-
-import { queryClient } from '../stores/query-client';
-import { getAiCourseLimitOptions } from '../queries/ai-course';
-import { readChatStream } from '../lib/chat';
-import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
-import type { AIGuideDocument } from './ai-guide';
-import { isLoggedIn } from '../lib/jwt';
 
 type RoadmapDetails = {
   roadmapId: string;
