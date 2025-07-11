@@ -3,7 +3,7 @@ import { httpGet } from '../lib/query-http';
 import { generateAICourseRoadmapStructure } from '../lib/ai';
 import { generateAIRoadmapFromText, renderFlowJSON } from '@roadmapsh/editor';
 import { queryClient } from '../stores/query-client';
-import { getAiCourseLimitOptions } from '../queries/ai-course';
+import { aiLimitOptions } from '../queries/ai-course';
 import { readChatStream } from '../lib/chat';
 import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
 import { isLoggedIn } from '../lib/jwt';
@@ -157,7 +157,7 @@ export async function generateAIRoadmap(options: GenerateAIRoadmapOptions) {
         onRoadmapSvgChange?.(svg);
       },
       onMessageEnd: async () => {
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
         onStreamingChange?.(false);
       },
       onDetails: async (details) => {

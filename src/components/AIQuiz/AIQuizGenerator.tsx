@@ -24,7 +24,7 @@ import { getUrlParams } from '../../lib/browser';
 import { FormatItem } from '../ContentGenerator/FormatItem';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 
 const allowedFormats = ['mcq', 'open-ended', 'mixed'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -45,7 +45,7 @@ export function AIQuizGenerator() {
     data: tokenUsage,
     isLoading: isTokenUsageLoading,
     refetch: refetchTokenUsage,
-  } = useQuery(getAiCourseLimitOptions(), queryClient);
+  } = useQuery(aiLimitOptions(), queryClient);
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);

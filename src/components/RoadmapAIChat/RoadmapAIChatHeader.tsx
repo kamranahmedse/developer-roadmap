@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { isLoggedIn } from '../../lib/jwt';
@@ -91,7 +91,7 @@ export function RoadmapAIChatHeader(props: RoadmapAIChatHeaderProps) {
   } = props;
 
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
-  const { data: tokenUsage } = useQuery(getAiCourseLimitOptions(), queryClient);
+  const { data: tokenUsage } = useQuery(aiLimitOptions(), queryClient);
 
   const { data: userBillingDetails } = useQuery(
     billingDetailsOptions(),

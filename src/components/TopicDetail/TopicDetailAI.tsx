@@ -20,7 +20,7 @@ import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import { getPercentage } from '../../lib/number';
 import { showLoginPopup } from '../../lib/popup';
 import type { ResourceType } from '../../lib/resource-progress';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { queryClient } from '../../stores/query-client';
@@ -76,7 +76,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   const [streamedMessage, setStreamedMessage] = useState('');
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
   const { data: tokenUsage, isLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
 
@@ -170,7 +170,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           window.location.reload();
         }
 
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
         return;
       }
 
@@ -206,7 +206,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             setAiChatHistory(newMessages);
           });
 
-          queryClient.invalidateQueries(getAiCourseLimitOptions());
+          queryClient.invalidateQueries(aiLimitOptions());
           scrollToBottom();
         },
       });

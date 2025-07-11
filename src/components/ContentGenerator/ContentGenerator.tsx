@@ -23,6 +23,9 @@ import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
 import { useParams } from '../../hooks/use-params';
+import { useQuery } from '@tanstack/react-query';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { queryClient } from '../../stores/query-client';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -36,6 +39,11 @@ export function ContentGenerator() {
   const [title, setTitle] = useState('');
   const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
 
+  const { data: limit, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
   useEffect(() => {
     const isValidFormat = allowedFormats.find(
       (format) => format.value === params.format,
@@ -48,7 +56,6 @@ export function ContentGenerator() {
     }
   }, [params.format]);
 
-  // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
   const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
     QuestionAnswerChatMessage[]

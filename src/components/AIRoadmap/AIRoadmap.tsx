@@ -14,7 +14,7 @@ import { AIRoadmapChat } from './AIRoadmapChat';
 import { AlertCircleIcon } from 'lucide-react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 
 export type AIRoadmapChatActions = {
@@ -50,7 +50,7 @@ export function AIRoadmap(props: AIRoadmapProps) {
     data: tokenUsage,
     isLoading: isTokenUsageLoading,
     refetch: refetchTokenUsage,
-  } = useQuery(getAiCourseLimitOptions(), queryClient);
+  } = useQuery(aiLimitOptions(), queryClient);
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);

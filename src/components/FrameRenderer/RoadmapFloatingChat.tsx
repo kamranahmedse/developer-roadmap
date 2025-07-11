@@ -26,7 +26,7 @@ import { lockBodyScroll } from '../../lib/dom';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { slugify } from '../../lib/slugger';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { chatHistoryOptions } from '../../queries/chat-history';
 import { roadmapJSONOptions } from '../../queries/roadmap';
@@ -190,7 +190,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
   const isAuthenticatedUser = isLoggedIn();
 
   const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
   const isLimitExceeded =

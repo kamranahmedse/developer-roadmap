@@ -4,7 +4,7 @@ import { flushSync } from 'react-dom';
 import { removeAuthToken } from '../lib/jwt';
 import { readStream } from '../lib/ai';
 import { useToast } from './use-toast';
-import { getAiCourseLimitOptions } from '../queries/ai-course';
+import { aiLimitOptions } from '../queries/ai-course';
 import { queryClient } from '../stores/query-client';
 import {
   renderMessage,
@@ -184,7 +184,7 @@ export function useRoadmapAIChat(options: Options) {
           removeAuthToken();
           window.location.reload();
         }
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
         return;
       }
 
@@ -225,7 +225,7 @@ export function useRoadmapAIChat(options: Options) {
             setIsStreamingMessage(false);
             setAiChatHistory(newMessages);
           });
-          queryClient.invalidateQueries(getAiCourseLimitOptions());
+          queryClient.invalidateQueries(aiLimitOptions());
           queryClient.invalidateQueries({
             predicate: (query) => {
               return (
