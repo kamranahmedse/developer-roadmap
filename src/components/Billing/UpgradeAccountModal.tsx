@@ -1,6 +1,14 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 import type { LucideIcon } from 'lucide-react';
-import { Archive, Crown, Loader2, Map, MessageCircleIcon, X, Zap } from 'lucide-react';
+import {
+  Archive,
+  Crown,
+  Loader2,
+  Map,
+  MessageCircleIcon,
+  X,
+  Zap,
+} from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { getUser } from '../../lib/jwt';
@@ -261,9 +269,9 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
               const Icon = perk.icon;
               return (
                 <div key={index} className="flex items-start space-x-3">
-                  <Icon className="size-4 mt-1 top-[0.5px] relative text-gray-600" />
+                  <Icon className="relative top-[0.5px] mt-1 size-4 text-gray-600" />
                   <div className="min-w-0 flex-1">
-                    <p className="text-sm font-medium text-gray-900 mb-0.5">
+                    <p className="mb-0.5 text-sm font-medium text-gray-900">
                       {perk.title}
                     </p>
                     <p className="text-xs text-gray-600">{perk.description}</p>
@@ -284,23 +292,29 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                 disabled={
                   isCreatingCheckoutSession || currentPlan?.interval === 'year'
                 }
-                className={`w-full h-11 rounded-lg px-4 text-sm font-medium transition-colors flex items-center justify-center disabled:opacity-50 ${
+                className={`flex h-11 w-full items-center justify-center rounded-lg px-4 text-sm font-medium transition-colors disabled:opacity-50 ${
                   currentPlan?.interval === 'year'
-                    ? 'bg-yellow-300 text-gray-700 cursor-not-allowed'
+                    ? 'cursor-not-allowed bg-yellow-300 text-gray-700'
                     : 'bg-yellow-400 text-black hover:bg-yellow-500'
                 }`}
               >
                 {isCreatingCheckoutSession && selectedPlan === 'year' ? (
                   <Loader2 className="mx-auto h-4 w-4 animate-spin" />
                 ) : (
-                  <div className="flex items-center justify-between text-left w-full">
+                  <div className="flex w-full items-center justify-between text-left">
                     <span>Yearly Plan - ${yearlyPlan.amount}/year</span>
                     {currentPlan?.interval === 'year' ? (
-                      <span className="rounded bg-green-600 px-2 py-1 text-xs text-white">Current Plan</span>
+                      <span className="rounded bg-green-600 px-2 py-1 text-xs text-white">
+                        Current Plan
+                      </span>
                     ) : (
                       monthlyPlan && (
                         <span className="rounded bg-yellow-600 px-2 py-1 text-xs text-white">
-                          {Math.round((monthlyPlan.amount * 12 - yearlyPlan.amount) / monthlyPlan.amount)} months free
+                          {Math.round(
+                            (monthlyPlan.amount * 12 - yearlyPlan.amount) /
+                              monthlyPlan.amount,
+                          )}{' '}
+                          months free
                         </span>
                       )
                     )}
@@ -316,19 +330,21 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
                 disabled={
                   isCreatingCheckoutSession || currentPlan?.interval === 'month'
                 }
-                className={`w-full h-11 rounded-lg border px-4 text-sm font-medium transition-colors flex items-center justify-center disabled:opacity-50 ${
+                className={`flex h-11 w-full items-center justify-center rounded-lg border px-4 text-sm font-medium transition-colors disabled:opacity-50 ${
                   currentPlan?.interval === 'month'
-                    ? 'border-yellow-300 bg-yellow-50 text-gray-700 cursor-not-allowed'
+                    ? 'cursor-not-allowed border-yellow-300 bg-yellow-50 text-gray-700'
                     : 'border-yellow-400 bg-yellow-50 text-black hover:bg-yellow-100'
                 }`}
               >
                 {isCreatingCheckoutSession && selectedPlan === 'month' ? (
                   <Loader2 className="mx-auto h-4 w-4 animate-spin" />
                 ) : (
-                  <div className="flex items-center justify-between text-left w-full">
+                  <div className="flex w-full items-center justify-between text-left">
                     <span>Monthly Plan - ${monthlyPlan.amount}/month</span>
                     {currentPlan?.interval === 'month' && (
-                      <span className="rounded bg-black px-2 py-1 text-xs text-white">Current Plan</span>
+                      <span className="rounded bg-black px-2 py-1 text-xs text-white">
+                        Current Plan
+                      </span>
                     )}
                   </div>
                 )}
@@ -339,7 +355,10 @@ export function UpgradeAccountModal(props: UpgradeAccountModalProps) {
           {/* Trust indicators */}
           <div className="mt-4 text-center">
             <p className="text-xs text-gray-500">
-              By upgrading you agree to our terms and conditions
+              By upgrading you agree to our{' '}
+              <a href="/terms" className="text-yellow-600 hover:underline">
+                terms and conditions
+              </a>
             </p>
           </div>
         </div>
