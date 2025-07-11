@@ -14,6 +14,8 @@ import {
   type ListUserAiRoadmapsQuery,
 } from '../../queries/ai-roadmap';
 import { AIRoadmapCard } from './AIRoadmapCard';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { useIsPaidUser } from '../../queries/billing';
 
 export function UserRoadmapsList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -24,6 +26,14 @@ export function UserRoadmapsList() {
     currPage: '1',
     query: '',
   });
+
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const selectedLimit = limits?.roadmap;
 
   const { data: userAiRoadmaps, isFetching: isUserAiRoadmapsLoading } =
     useQuery(listUserAiRoadmapsOptions(pageState), queryClient);
@@ -57,7 +67,11 @@ export function UserRoadmapsList() {
   }, [pageState]);
 
   const isUserAuthenticated = isLoggedIn();
-  const isAnyLoading = isUserAiRoadmapsLoading || isInitialLoading;
+  const isAnyLoading =
+    isUserAiRoadmapsLoading ||
+    isInitialLoading ||
+    isPaidUserLoading ||
+    isLimitLoading;
 
   return (
     <>
@@ -81,16 +95,33 @@ export function UserRoadmapsList() {
       {isAnyLoading && (
         <p className="mb-4 flex flex-row items-center gap-2 text-sm text-gray-500">
           <Loader2 className="h-4 w-4 animate-spin" />
-          Loading your courses...
+          Loading your roadmaps...
         </p>
       )}
 
       {!isAnyLoading && (
         <>
           <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated
-              ? `You have generated ${userAiRoadmaps?.totalCount} roadmaps so far.`
-              : 'Sign up or login to generate your first roadmap. Takes 2s to do so.'}
+            {isUserAuthenticated ? (
+              isPaidUser ? (
+                `You have generated ${userAiRoadmaps?.totalCount} roadmaps so far.`
+              ) : (
+                <>
+                  <span className="text-gray-500">You have used</span>{' '}
+                  <span className="text-gray-500">
+                    {selectedLimit?.used} of {selectedLimit?.limit} roadmaps
+                  </span>
+                  <button
+                    onClick={() => setShowUpgradePopup(true)}
+                    className="ml-2 text-blue-600 underline underline-offset-2 hover:text-blue-700"
+                  >
+                    Need more? Upgrade
+                  </button>
+                </>
+              )
+            ) : (
+              'Sign up or login to generate your first roadmap. Takes 2s to do so.'
+            )}
           </p>
 
           {isUserAuthenticated && !isAnyLoading && roadmaps.length > 0 && (

@@ -14,6 +14,8 @@ import {
   type ListUserAiQuizzesQuery,
 } from '../../queries/ai-quiz';
 import { AIQuizCard } from './AIQuizCard';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { useIsPaidUser } from '../../queries/billing';
 
 export function UserQuizzesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -24,6 +26,14 @@ export function UserQuizzesList() {
     currPage: '1',
     query: '',
   });
+
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const selectedLimit = limits?.quiz;
 
   const { data: userAiQuizzes, isFetching: isUserAiQuizzesLoading } = useQuery(
     listUserAiQuizzesOptions(pageState),
@@ -59,7 +69,11 @@ export function UserQuizzesList() {
   }, [pageState]);
 
   const isUserAuthenticated = isLoggedIn();
-  const isAnyLoading = isUserAiQuizzesLoading || isInitialLoading;
+  const isAnyLoading =
+    isUserAiQuizzesLoading ||
+    isInitialLoading ||
+    isPaidUserLoading ||
+    isLimitLoading;
 
   return (
     <>
@@ -90,9 +104,26 @@ export function UserQuizzesList() {
       {!isAnyLoading && (
         <>
           <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated
-              ? `You have generated ${userAiQuizzes?.totalCount} quizzes so far.`
-              : 'Sign up or login to generate your first quiz. Takes 2s to do so.'}
+            {isUserAuthenticated ? (
+              isPaidUser ? (
+                `You have generated ${userAiQuizzes?.totalCount} quizzes so far.`
+              ) : (
+                <>
+                  <span className="text-gray-500">You have used</span>{' '}
+                  <span className="text-gray-500">
+                    {selectedLimit?.used} of {selectedLimit?.limit} quizzes
+                  </span>
+                  <button
+                    onClick={() => setShowUpgradePopup(true)}
+                    className="ml-2 text-blue-600 underline underline-offset-2 hover:text-blue-700"
+                  >
+                    Need more? Upgrade
+                  </button>
+                </>
+              )
+            ) : (
+              'Sign up or login to generate your first quiz. Takes 2s to do so.'
+            )}
           </p>
 
           {isUserAuthenticated && !isAnyLoading && quizzes.length > 0 && (
