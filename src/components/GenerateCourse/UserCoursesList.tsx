@@ -16,6 +16,7 @@ import { AICourseSearch } from './AICourseSearch';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { useIsPaidUser } from '../../queries/billing';
+import { AIUsageWarning } from '../AIUsageWarning/AIUsageWarning';
 
 export function UserCoursesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -102,28 +103,14 @@ export function UserCoursesList() {
 
       {!isAnyLoading && (
         <>
-          <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated ? (
-              isPaidUser ? (
-                `You have generated ${userAiCourses?.totalCount} courses so far.`
-              ) : (
-                <>
-                  <span className="text-gray-500">You have used</span>{' '}
-                  <span className="text-gray-500">
-                    {selectedLimit?.used} of {selectedLimit?.limit} courses
-                  </span>
-                  <button
-                    onClick={() => setShowUpgradePopup(true)}
-                    className="ml-2 text-blue-600 underline underline-offset-2 hover:text-blue-700"
-                  >
-                    Need more? Upgrade
-                  </button>
-                </>
-              )
-            ) : (
-              'Sign up or login to generate your first course. Takes 2s to do so.'
-            )}
-          </p>
+          <AIUsageWarning
+            type="course"
+            totalCount={userAiCourses?.totalCount}
+            isPaidUser={isPaidUser}
+            usedCount={selectedLimit?.used}
+            limitCount={selectedLimit?.limit}
+            onUpgrade={() => setShowUpgradePopup(true)}
+          />
 
           {isUserAuthenticated && !isAnyLoading && courses.length > 0 && (
             <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">

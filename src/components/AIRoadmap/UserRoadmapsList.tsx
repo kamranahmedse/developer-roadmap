@@ -16,6 +16,7 @@ import {
 import { AIRoadmapCard } from './AIRoadmapCard';
 import { aiLimitOptions } from '../../queries/ai-course';
 import { useIsPaidUser } from '../../queries/billing';
+import { AIUsageWarning } from '../AIUsageWarning/AIUsageWarning';
 
 export function UserRoadmapsList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -101,34 +102,24 @@ export function UserRoadmapsList() {
 
       {!isAnyLoading && (
         <>
-          <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated ? (
-              isPaidUser ? (
-                `You have generated ${userAiRoadmaps?.totalCount} roadmaps so far.`
-              ) : (
-                <>
-                  <span className="text-gray-500">You have used</span>{' '}
-                  <span className="text-gray-500">
-                    {selectedLimit?.used} of {selectedLimit?.limit} roadmaps
-                  </span>
-                  <button
-                    onClick={() => setShowUpgradePopup(true)}
-                    className="ml-2 text-blue-600 underline underline-offset-2 hover:text-blue-700"
-                  >
-                    Need more? Upgrade
-                  </button>
-                </>
-              )
-            ) : (
-              'Sign up or login to generate your first roadmap. Takes 2s to do so.'
-            )}
-          </p>
+          <AIUsageWarning
+            type="roadmap"
+            totalCount={userAiRoadmaps?.totalCount}
+            isPaidUser={isPaidUser}
+            usedCount={selectedLimit?.used}
+            limitCount={selectedLimit?.limit}
+            onUpgrade={() => setShowUpgradePopup(true)}
+          />
 
           {isUserAuthenticated && !isAnyLoading && roadmaps.length > 0 && (
             <div className="flex flex-col gap-2">
               <div className="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3">
                 {roadmaps.map((roadmap) => (
-                  <AIRoadmapCard variant="column" key={roadmap._id} roadmap={roadmap} />
+                  <AIRoadmapCard
+                    variant="column"
+                    key={roadmap._id}
+                    roadmap={roadmap}
+                  />
                 ))}
               </div>
 

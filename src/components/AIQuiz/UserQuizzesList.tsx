@@ -16,6 +16,7 @@ import {
 import { AIQuizCard } from './AIQuizCard';
 import { aiLimitOptions } from '../../queries/ai-course';
 import { useIsPaidUser } from '../../queries/billing';
+import { AIUsageWarning } from '../AIUsageWarning/AIUsageWarning';
 
 export function UserQuizzesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -103,28 +104,14 @@ export function UserQuizzesList() {
 
       {!isAnyLoading && (
         <>
-          <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated ? (
-              isPaidUser ? (
-                `You have generated ${userAiQuizzes?.totalCount} quizzes so far.`
-              ) : (
-                <>
-                  <span className="text-gray-500">You have used</span>{' '}
-                  <span className="text-gray-500">
-                    {selectedLimit?.used} of {selectedLimit?.limit} quizzes
-                  </span>
-                  <button
-                    onClick={() => setShowUpgradePopup(true)}
-                    className="ml-2 text-blue-600 underline underline-offset-2 hover:text-blue-700"
-                  >
-                    Need more? Upgrade
-                  </button>
-                </>
-              )
-            ) : (
-              'Sign up or login to generate your first quiz. Takes 2s to do so.'
-            )}
-          </p>
+          <AIUsageWarning
+            type="quiz"
+            totalCount={userAiQuizzes?.totalCount}
+            isPaidUser={isPaidUser}
+            usedCount={selectedLimit?.used}
+            limitCount={selectedLimit?.limit}
+            onUpgrade={() => setShowUpgradePopup(true)}
+          />
 
           {isUserAuthenticated && !isAnyLoading && quizzes.length > 0 && (
             <div className="flex flex-col gap-2">
