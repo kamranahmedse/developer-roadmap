@@ -27,12 +27,15 @@ if (error || !userDetails) {
 const projectDetails = await getProjectList();
 const origin = Astro.url.origin;
 const ogImage = `${origin}/og/user/${username}`;
+
+const hasAnyRoadmaps = (userDetails?.roadmaps || []).length > 0;
 ---
 
 <BaseLayout
   title={`${userDetails?.name || 'Unknown'} - Skill Profile at roadmap.sh`}
   description='Check out my skill profile at roadmap.sh'
   ogImageUrl={ogImage}
+  noIndex={!hasAnyRoadmaps}
 >
   {
     !errorMessage && (
