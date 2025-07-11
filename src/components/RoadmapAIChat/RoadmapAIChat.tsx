@@ -38,7 +38,7 @@ import {
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { slugify } from '../../lib/slugger';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { chatHistoryOptions } from '../../queries/chat-history';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
@@ -105,7 +105,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   );
 
   const { data: tokenUsage, isLoading: isTokenUsageLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
 

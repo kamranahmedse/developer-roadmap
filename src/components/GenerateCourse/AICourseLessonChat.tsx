@@ -30,7 +30,7 @@ import {
   markdownToHtml,
   markdownToHtmlWithHighlighting,
 } from '../../lib/markdown';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
 import { ResizablePanel } from './Resizeable';
@@ -93,7 +93,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
   const [streamedMessage, setStreamedMessage] = useState('');
 
   const { data: tokenUsage, isLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
 
@@ -205,7 +205,7 @@ export function AICourseLessonChat(props: AICourseLessonChatProps) {
           setCourseAIChatHistory(newMessages);
         });
 
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
         scrollToBottom();
       },
     });

@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { Gift, Info } from 'lucide-react';
 import { getPercentage } from '../../lib/number';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
 import { isLoggedIn } from '../../lib/jwt';
@@ -14,10 +14,7 @@ type AICourseLimitProps = {
 export function AICourseLimit(props: AICourseLimitProps) {
   const { onUpgrade, onShowLimits } = props;
 
-  const { data: limits, isLoading } = useQuery(
-    getAiCourseLimitOptions(),
-    queryClient,
-  );
+  const { data: limits, isLoading } = useQuery(aiLimitOptions(), queryClient);
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);

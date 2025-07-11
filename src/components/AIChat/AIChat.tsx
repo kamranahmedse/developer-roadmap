@@ -12,7 +12,7 @@ import { flushSync } from 'react-dom';
 import AutogrowTextarea from 'react-textarea-autosize';
 import { QuickHelpPrompts } from './QuickHelpPrompts';
 import { QuickActionButton } from './QuickActionButton';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
@@ -83,7 +83,7 @@ export function AIChat(props: AIChatProps) {
   const textareaMessageRef = useRef<HTMLTextAreaElement>(null);
 
   const { data: tokenUsage, isLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
 
@@ -275,7 +275,7 @@ export function AIChat(props: AIChatProps) {
           setAiChatHistory(newMessages);
         });
 
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
         queryClient.invalidateQueries({
           predicate: (query) => {
             return query.queryKey[0] === 'list-chat-history';

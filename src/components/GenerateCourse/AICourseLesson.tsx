@@ -21,10 +21,7 @@ import {
 } from '../../lib/markdown';
 import { httpPatch } from '../../lib/query-http';
 import { slugify } from '../../lib/slugger';
-import {
-  getAiCourseLimitOptions,
-  getAiCourseOptions,
-} from '../../queries/ai-course';
+import { aiLimitOptions, getAiCourseOptions } from '../../queries/ai-course';
 import { useIsPaidUser } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
 import './AICourseLessonChat.css';
@@ -229,7 +226,7 @@ export function AICourseLesson(props: AICourseLessonProps) {
           });
 
           setLessonHtml(markdownHtml);
-          queryClient.invalidateQueries(getAiCourseLimitOptions());
+          queryClient.invalidateQueries(aiLimitOptions());
           setIsGenerating(false);
         },
       });

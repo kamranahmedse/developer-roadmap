@@ -54,9 +54,25 @@ export function getAiCourseOptions(params: GetAICourseParams) {
 export type GetAICourseLimitResponse = {
   used: number;
   limit: number;
+  course: {
+    used: number;
+    limit: number;
+  };
+  guide: {
+    used: number;
+    limit: number;
+  };
+  roadmap: {
+    used: number;
+    limit: number;
+  };
+  quiz: {
+    used: number;
+    limit: number;
+  };
 };
 
-export function getAiCourseLimitOptions() {
+export function aiLimitOptions() {
   return queryOptions({
     queryKey: ['ai-course-limit'],
     queryFn: () => {

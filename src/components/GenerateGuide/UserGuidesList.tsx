@@ -14,6 +14,9 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { Pagination } from '../Pagination/Pagination';
 import { AICourseSearch } from '../GenerateCourse/AICourseSearch';
 import { AIGuideCard } from '../AIGuide/AIGuideCard';
+import { useIsPaidUser } from '../../queries/billing';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { AIUsageWarning } from '../AIUsageWarning/AIUsageWarning';
 
 export function UserGuidesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -24,6 +27,14 @@ export function UserGuidesList() {
     currPage: '1',
     query: '',
   });
+
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const selectedLimit = limits?.guide;
 
   const { data: userAiGuides, isFetching: isUserAiGuidesLoading } = useQuery(
     listUserAIGuidesOptions(pageState),
@@ -59,7 +70,11 @@ export function UserGuidesList() {
   }, [pageState]);
 
   const isUserAuthenticated = isLoggedIn();
-  const isAnyLoading = isUserAiGuidesLoading || isInitialLoading;
+  const isAnyLoading =
+    isUserAiGuidesLoading ||
+    isInitialLoading ||
+    isPaidUserLoading ||
+    isLimitLoading;
 
   return (
     <>
@@ -89,11 +104,14 @@ export function UserGuidesList() {
 
       {!isAnyLoading && (
         <>
-          <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated
-              ? `You have generated ${userAiGuides?.totalCount} guides so far.`
-              : 'Sign up or login to generate your first guide. Takes 2s to do so.'}
-          </p>
+          <AIUsageWarning
+            type="guide"
+            totalCount={userAiGuides?.totalCount}
+            isPaidUser={isPaidUser}
+            usedCount={selectedLimit?.used}
+            limitCount={selectedLimit?.limit}
+            onUpgrade={() => setShowUpgradePopup(true)}
+          />
 
           {isUserAuthenticated && !isAnyLoading && guides.length > 0 && (
             <div className="flex flex-col gap-2">
