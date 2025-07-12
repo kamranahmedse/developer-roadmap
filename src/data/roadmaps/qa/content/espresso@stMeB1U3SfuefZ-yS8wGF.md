@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Espresso Documentation](https://developer.android.com/training/testing/espresso#kotlin)
 - [@article@Espresso Testing Tutorial](https://www.tutorialspoint.com/espresso_testing/index.htm)
-- [@opensource@Espresso Code Samples on Github](https://github.com/android/testing-samples)
+- [@opensource@Espresso Code Samples on GitHub](https://github.com/android/testing-samples)

@@ -4,7 +4,7 @@ Git is a free and open source distributed version control system designed to han
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Git & Github Roadmap](https://roadmap.sh/git-github)
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
 - [@official@Git Documentation](https://git-scm.com/)
 - [@video@Git & GitHub Crash Course For Beginners 2025](https://youtu.be/vA5TTz6BXhY?si=GvKMbLL4UBtOq6fh)
 - [@article@Learn Git with Tutorials, News and Tips - Atlassian](https://www.atlassian.com/git)

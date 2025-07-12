@@ -4,5 +4,5 @@ GitHub Essentials refers to the core features and functionalities that form the 
 
 Visit the following resources to learn more:
 
-- [@official@Github Essentials - Microsoft](https://learn.microsoft.com/en-us/contribute/content/git-github-fundamentals)
+- [@official@GitHub Essentials - Microsoft](https://learn.microsoft.com/en-us/contribute/content/git-github-fundamentals)
 - [@official@Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world)

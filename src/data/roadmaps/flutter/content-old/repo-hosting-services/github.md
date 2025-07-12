@@ -1,4 +1,4 @@
-# Github
+# GitHub
 
 GitHub is a web-based platform that provides hosting for software development and version control using Git. It is widely used by developers and organizations around the world to manage and collaborate on software projects.
 
