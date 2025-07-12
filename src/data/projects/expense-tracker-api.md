@@ -26,7 +26,7 @@ roadmapIds:
 
 Build an API for an expense tracker application. This API should allow users to create, read, update, and delete expenses. Users should be able to sign up and log in to the application. Each user should have their own set of expenses.
 
-![Expense Tracker API](https://assets.roadmap.sh/guest/expense-tracker-api-m72p5.png)
+![Expense Tracker API](https://github.com/user-attachments/assets/e60e08c2-c89e-4796-a48e-fe78d6afdada)
 
 ## Features
 
