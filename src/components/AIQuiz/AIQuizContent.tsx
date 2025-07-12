@@ -8,6 +8,21 @@ import { AIQuizResults } from './AIQuizResults';
 import { flushSync } from 'react-dom';
 import { AIQuizResultStrip } from './AIQuizResultStrip';
 import { cn } from '../../lib/classname';
+import { httpPost } from '../../lib/query-http';
+import { useMutation } from '@tanstack/react-query';
+import { queryClient } from '../../stores/query-client';
+
+type AIQuizResultFeedbackBody = {
+  questionsWithAnswers: string;
+};
+
+type AIQuizResultFeedbackQuery = {};
+
+export type AIQuizResultFeedbackResponse = {
+  summary?: string;
+  guideTopics?: string[];
+  courseTopics?: string[];
+};
 
 export type QuestionState = {
   isSubmitted: boolean;
@@ -49,21 +64,40 @@ export function AIQuizContent(props: AIQuizContentProps) {
     questionStates[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
   const isLastQuestion = activeQuestionIndex === questions.length - 1;
 
+  const {
+    mutate: userQuizResultFeedback,
+    isPending: isUserQuizResultFeedbackPending,
+    data: userQuizResultFeedbackData,
+    status: userQuizResultFeedbackStatus,
+    reset: resetUserQuizResultFeedback,
+  } = useMutation(
+    {
+      mutationKey: ['user-quiz-result-feedback', quizSlug],
+      mutationFn: (body: AIQuizResultFeedbackBody) => {
+        return httpPost<AIQuizResultFeedbackResponse>(
+          `/v1-ai-quiz-result-feedback/${quizSlug}`,
+          body,
+        );
+      },
+    },
+    queryClient,
+  );
+
   const handleSubmit = (status: QuestionState['status']) => {
-    setQuestionStates((prev) => {
-      const oldState = prev[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
+    const oldState =
+      questionStates[activeQuestionIndex] ?? DEFAULT_QUESTION_STATE;
 
-      const newSelectedOptions = {
-        ...prev,
-        [activeQuestionIndex]: {
-          ...oldState,
-          isSubmitted: true,
-          status,
-        },
-      };
+    const newQuestionStates = {
+      ...questionStates,
+      [activeQuestionIndex]: {
+        ...oldState,
+        isSubmitted: true,
+        status,
+      },
+    };
 
-      return newSelectedOptions;
-    });
+    setQuestionStates(newQuestionStates);
+    return newQuestionStates;
   };
 
   const handleSetUserAnswer = (userAnswer: string) => {
@@ -120,6 +154,7 @@ export function AIQuizContent(props: AIQuizContentProps) {
     setActiveQuestionIndex(0);
     setQuestionStates({});
     setQuizStatus('answering');
+    resetUserQuizResultFeedback();
   };
 
   const hasNextQuestion = activeQuestionIndex < questions.length - 1;
@@ -147,17 +182,59 @@ export function AIQuizContent(props: AIQuizContentProps) {
 
   const handleSkip = () => {
     const prevStatus = questionStates[activeQuestionIndex]?.status ?? 'pending';
-    handleSubmit(prevStatus === 'pending' ? 'skipped' : prevStatus);
+    const newQuestionStates = handleSubmit(
+      prevStatus === 'pending' ? 'skipped' : prevStatus,
+    );
 
     if (hasNextQuestion) {
       handleNextQuestion();
     } else {
-      handleComplete();
+      handleComplete(newQuestionStates);
     }
   };
 
-  const handleComplete = () => {
+  const handleComplete = (
+    newQuestionStates?: Record<number, QuestionState>,
+  ) => {
+    const states = newQuestionStates ?? questionStates;
     setQuizStatus('submitted');
+
+    const questionsWithAnswers = questions
+      .map((question, index) => {
+        const questionState = states[index];
+
+        let questionWithAnswer = `## Question ${index + 1} (${question.type === 'mcq' ? 'MCQ' : 'Open Ended'}): ${question.title}`;
+        if (question.type === 'mcq') {
+          questionWithAnswer += `\n### Options:`;
+          question?.options?.forEach((option, optionIndex) => {
+            questionWithAnswer += `\n${optionIndex + 1}. ${option.title} (${option.isCorrect ? 'Correct' : 'Incorrect'})`;
+          });
+
+          if (questionState?.selectedOptions?.length) {
+            questionWithAnswer += `\n### User Selected Answer:`;
+            questionState?.selectedOptions?.forEach((optionIndex) => {
+              questionWithAnswer += `\n${optionIndex + 1}. ${question.options[optionIndex].title}`;
+            });
+          }
+        } else {
+          if (questionState?.userAnswer) {
+            questionWithAnswer += `\n### User Answer: ${questionState?.userAnswer}`;
+          }
+
+          if (questionState?.correctAnswer) {
+            questionWithAnswer += `\n### AI Feedback: ${questionState?.correctAnswer}`;
+          }
+        }
+
+        questionWithAnswer += `\n### Final Status: ${questionState?.status}`;
+
+        return questionWithAnswer;
+      })
+      .join('\n\n');
+
+    if (userQuizResultFeedbackStatus === 'idle') {
+      userQuizResultFeedback({ questionsWithAnswers });
+    }
   };
 
   return (
@@ -203,6 +280,8 @@ export function AIQuizContent(props: AIQuizContentProps) {
                   setActiveQuestionIndex(questionIndex);
                   setQuizStatus('reviewing');
                 }}
+                isFeedbackLoading={isUserQuizResultFeedbackPending}
+                feedback={userQuizResultFeedbackData}
               />
             )}
 
