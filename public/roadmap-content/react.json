@@ -1717,5 +1717,26 @@
         "type": "video"
       }
     ]
+  },
+  "redux-toolkit": {
+    "title": "Redux Toolkit",
+    "description": "Redux Toolkit is the official, recommended way to use Redux for writing scalable and maintainable state management logic. It reduces boilerplate and includes built-in support for slices, async logic, middleware, and dev tools.",
+    "links": [
+      {
+        "title": "Redux Toolkit Docs",
+        "url": "https://redux-toolkit.js.org/",
+        "type": "article"
+      },
+      {
+        "title": "Redux Essentials Tutorial",
+        "url": "https://redux.js.org/tutorials/essentials/part-1-overview-concepts",
+        "type": "article"
+      },
+      {
+        "title": "Redux Toolkit Crash Course",
+        "url": "https://www.youtube.com/watch?v=9zySeP5vH9c",
+        "type": "video"
+      }
+    ]
   }
 }
