@@ -67,7 +67,10 @@ const videos = await getAllVideos();
           text:
             roadmapItem.frontmatter.briefTitle === 'Go'
               ? 'Go Roadmap'
-              : roadmapItem.frontmatter.briefTitle,
+              : roadmapItem.frontmatter.briefTitle.replace(
+                  'Software Design',
+                  'Design',
+                ),
           url: `/${roadmapItem.id}`,
           isNew: roadmapItem.frontmatter.isNew,
           isUpcoming: roadmapItem.frontmatter.isUpcoming,
