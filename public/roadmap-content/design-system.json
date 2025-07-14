@@ -1,29 +1,8 @@
 {
-  "uvnV1IjE8RV-FKDxHntUU": {
-    "title": "Understand he Basics",
-    "description": "A design system is a set of standards to manage design at scale by reducing redundancy while creating a shared language and visual consistency across different pages and channels.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Design Systems 101",
-        "url": "https://www.nngroup.com/articles/design-systems-101/",
-        "type": "article"
-      },
-      {
-        "title": "How to build your design system",
-        "url": "https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/",
-        "type": "article"
-      },
-      {
-        "title": "Everything you need to know about Design Systems",
-        "url": "https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969",
-        "type": "article"
-      },
-      {
-        "title": "What is a Design System? Design Systems 101 for Designers",
-        "url": "https://www.youtube.com/watch?v=wc5krC28ynQ",
-        "type": "video"
-      }
-    ]
+  "understand-the-basics@uvnV1IjE8RV-FKDxHntUU.md": {
+    "title": "Understand the Basics",
+    "description": "",
+    "links": []
   },
   "4PrkkoZ5fY-oow0O-bVhu": {
     "title": "What is a Design System?",
