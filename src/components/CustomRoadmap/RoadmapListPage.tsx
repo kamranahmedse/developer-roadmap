@@ -39,7 +39,7 @@ const tabTypes: TabType[] = [
   { label: 'Shared by Friends', value: 'shared' },
 ];
 
-const MAX_ROADMAP_LIMIT = 3;
+export const MAX_ROADMAP_LIMIT = 3;
 
 export function RoadmapListPage() {
   const toast = useToast();

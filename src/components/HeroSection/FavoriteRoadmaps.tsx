@@ -2,9 +2,9 @@ import {
   FolderKanban,
   MapIcon,
   Plus,
-  Sparkle,
   Eye,
-  EyeOff, SquareCheckBig
+  EyeOff,
+  SquareCheckBig,
 } from 'lucide-react';
 import { useState } from 'react';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions.tsx';
@@ -28,12 +28,11 @@ type FavoriteRoadmapsProps = {
     title: string;
   })[];
   customRoadmaps: UserProgress[];
-  aiRoadmaps: AIRoadmapType[];
   isLoading: boolean;
 };
 
 export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
-  const { progress, isLoading, customRoadmaps, aiRoadmaps, projects } = props;
+  const { progress, isLoading, customRoadmaps, projects } = props;
   const [showCompleted, setShowCompleted] = useState(false);
   const [isCreatingCustomRoadmap, setIsCreatingCustomRoadmap] = useState(false);
 
@@ -131,49 +130,7 @@ export function FavoriteRoadmaps(props: FavoriteRoadmapsProps) {
             allowFavorite={false}
           />
         ))}
-        <CreateRoadmapButton />
-      </HeroItemsGroup>
-
-      <HeroItemsGroup
-        icon={<Sparkle className="mr-1.5 h-[14px] w-[14px]" />}
-        isLoading={isLoading}
-        title="Your AI roadmaps"
-        isEmpty={!isLoading && aiRoadmaps.length === 0}
-        emptyTitle={
-          <>
-            No AI roadmaps found
-            <a
-              href="/ai-roadmaps"
-              className="ml-1.5 inline-flex items-center gap-1 font-medium text-blue-500 underline-offset-2 hover:underline"
-            >
-              <SquareCheckBig className="size-3.5" strokeWidth={2.5} />
-              Generate AI roadmap
-            </a>
-          </>
-        }
-      >
-        {aiRoadmaps.map((aiRoadmap) => (
-          <HeroRoadmap
-            key={aiRoadmap.id}
-            resourceId={aiRoadmap.id}
-            resourceType={'roadmap'}
-            resourceTitle={aiRoadmap.title}
-            url={`/ai-roadmaps/${aiRoadmap.slug}`}
-            percentageDone={0}
-            allowFavorite={false}
-            isTrackable={false}
-          />
-        ))}
-
-        <a
-          href="/ai-roadmaps"
-          className={
-            'flex h-full w-full items-center justify-center gap-1 overflow-hidden rounded-md border border-dashed border-gray-800 p-3 text-sm text-gray-400 hover:border-gray-600 hover:bg-gray-900 hover:text-gray-300'
-          }
-        >
-          <Plus size={16} />
-          Generate New
-        </a>
+        <CreateRoadmapButton existingRoadmapCount={customRoadmaps.length} />
       </HeroItemsGroup>
 
       <HeroItemsGroup
