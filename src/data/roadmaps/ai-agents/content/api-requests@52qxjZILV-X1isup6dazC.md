@@ -4,5 +4,5 @@ API requests let an AI agent ask another service for data or for an action. The 
 
 Visit the following resources to learn more:
 
-- [@article@Introduction to APIs - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Introduction_to_APIs)
+- [@article@Introduction to APIs - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction)
 - [@article@How APIs Power AI Agents: A Comprehensive Guide](https://blog.treblle.com/api-guide-for-ai-agents/)
