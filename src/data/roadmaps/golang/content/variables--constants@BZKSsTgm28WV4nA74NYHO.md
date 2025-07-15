@@ -1,1 +1,3 @@
 # Variables & Constants
+
+Variables and constants are fundamental building blocks for storing and managing data in Go programs. Variables hold values that can change during program execution and are declared using `var` keyword or the short declaration operator `:=`. Constants hold values that cannot change and are declared using the `const` keyword. Go supports various declaration styles, type inference, zero values (default values for uninitialized variables), and block-level scope. Understanding how to properly declare, initialize, and use variables and constants is essential for writing any Go program and managing data effectively.

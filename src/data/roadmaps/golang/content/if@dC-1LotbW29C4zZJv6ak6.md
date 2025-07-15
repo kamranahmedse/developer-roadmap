@@ -1,1 +1,3 @@
 # if
+
+The if statement in Go provides conditional execution of code blocks based on boolean expressions. Go's if statements don't require parentheses around conditions but must have braces around the body, even for single statements. A unique feature is the ability to include an initialization statement before the condition, which is useful for declaring variables with limited scope. If statements can be chained with else if and else clauses to handle multiple conditions. They're fundamental for controlling program flow, implementing business logic, and making decisions based on runtime conditions. Understanding if statements is essential for any Go program with conditional behavior.

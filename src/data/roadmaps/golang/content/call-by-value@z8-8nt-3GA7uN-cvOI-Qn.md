@@ -1,1 +1,3 @@
 # Call by Value
+
+Go uses call by value for function arguments, meaning that when you pass a variable to a function, Go creates a copy of the value rather than passing the original variable. This applies to all types including integers, strings, structs, and arrays. For large data structures, this copying can be expensive, which is why pointers, slices, and maps (which contain references) are often used instead. Call by value provides safety by preventing functions from accidentally modifying the caller's data, but it also means that functions cannot modify the original values unless you explicitly pass pointers. Understanding this behavior is crucial for effective Go programming and performance optimization.

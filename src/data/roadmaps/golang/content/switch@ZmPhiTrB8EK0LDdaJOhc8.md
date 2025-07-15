@@ -1,1 +1,3 @@
 # switch
+
+The switch statement in Go provides a clean way to compare a variable against multiple values and execute corresponding code blocks. Go's switch is more powerful than in many languages - it doesn't require break statements (no fall-through by default), can switch on any comparable type, supports multiple values per case, and includes expression switches and type switches. Switch statements can also work without an expression, acting like a series of if-else statements. They're more readable than long if-else chains and are essential for clean conditional logic, especially when checking many possible values or implementing state machines.

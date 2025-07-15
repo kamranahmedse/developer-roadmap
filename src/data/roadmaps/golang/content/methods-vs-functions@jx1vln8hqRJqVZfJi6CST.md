@@ -1,1 +1,3 @@
 # Methods vs Functions
+
+In Go, functions are standalone code blocks that can be called independently, while methods are functions associated with a specific type (called a receiver). Methods are defined by adding a receiver parameter between the `func` keyword and the method name. This allows you to call the method on instances of that type using dot notation. Methods enable object-oriented programming patterns in Go, allowing types to have behavior associated with them. Understanding the distinction between methods and functions is crucial for designing clean, maintainable Go code that follows idiomatic patterns.

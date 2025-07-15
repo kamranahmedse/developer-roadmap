@@ -1,1 +1,3 @@
 # go mod
+
+The `go mod` command is the primary tool for managing Go modules and dependencies. It provides subcommands for initializing modules (`init`), adding dependencies (`get`), removing unused dependencies (`tidy`), creating vendor directories (`vendor`), and verifying dependencies (`verify`). The command works with `go.mod` and `go.sum` files to track module requirements and ensure reproducible builds. Understanding `go mod` is essential for modern Go development, as it handles dependency management, version resolution, and module publishing. It replaced the older GOPATH-based workflow and is fundamental for building maintainable Go projects.

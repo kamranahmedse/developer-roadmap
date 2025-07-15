@@ -1,1 +1,3 @@
 # Data Types
+
+Go has a rich set of built-in data types that form the foundation of all Go programs. These include basic types like integers (int8, int16, int32, int64), unsigned integers (uint8, uint16, uint32, uint64), floating-point numbers (float32, float64), complex numbers (complex64, complex128), booleans, strings, and runes (Unicode characters). Go is statically typed, meaning variable types are determined at compile time, which helps catch errors early and improves performance. Understanding Go's type system is crucial for writing efficient and reliable programs, as it affects memory usage, performance, and how you structure your data.

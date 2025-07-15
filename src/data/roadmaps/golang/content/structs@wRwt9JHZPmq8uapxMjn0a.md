@@ -1,1 +1,3 @@
 # Structs
+
+Structs in Go are custom data types that group together related data fields under a single name. They are similar to classes in other languages but without methods (methods are defined separately). Structs allow you to create complex data models, organize related information, and define the structure of your application's data. You can create instances of structs, access their fields using dot notation, and pass them to functions. Structs are fundamental to Go programming and are often used with interfaces to create flexible, object-oriented designs while maintaining Go's simplicity.

@@ -1,1 +1,3 @@
 # Empty Interfaces
+
+Empty interfaces (`interface{}`) in Go can hold values of any type since they specify no methods. While powerful for creating flexible APIs and generic containers, they sacrifice compile-time type safety for runtime flexibility. With Go 1.18+, generics often provide a better alternative to empty interfaces for type-safe generic programming. Empty interfaces are still useful for scenarios like JSON unmarshaling, building general-purpose containers, implementing reflection-based libraries, and interfacing with dynamic systems. When using empty interfaces, you typically need type assertions or type switches to work with the actual values, so they should be used judiciously and with proper error handling.

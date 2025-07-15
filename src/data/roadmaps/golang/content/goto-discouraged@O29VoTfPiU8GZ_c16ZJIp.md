@@ -1,1 +1,3 @@
 # goto (discouraged)
+
+The `goto` statement in Go allows jumping to labeled statements within the same function, but its use is strongly discouraged in modern Go programming. While goto exists for specific use cases like breaking out of nested loops or handling complex cleanup scenarios, it generally makes code harder to read, maintain, and debug. Go provides better alternatives like labeled break/continue statements, proper function decomposition, and structured control flow. Most situations where goto might seem necessary can be solved more elegantly with Go's other control structures. Understanding why goto is discouraged helps you write cleaner, more maintainable code that follows Go's philosophy of simplicity and clarity.

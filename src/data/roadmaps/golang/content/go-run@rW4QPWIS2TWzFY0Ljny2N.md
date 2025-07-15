@@ -1,1 +1,3 @@
 # go run
+
+The `go run` command compiles and executes Go programs in a single step without creating a persistent binary file. It's perfect for development, testing small programs, and running scripts. When you use `go run main.go`, Go compiles the code to a temporary executable and runs it immediately, then cleans up the temporary files. This command is ideal for quick iterations during development, running one-off scripts, or testing code changes without the overhead of separate build steps. It accepts the same flags as `go build` and can run multiple files or entire packages.

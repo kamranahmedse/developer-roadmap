@@ -1,1 +1,3 @@
 # fan-in
+
+Fan-in is a concurrency pattern where multiple input channels are merged into a single output channel. This pattern is useful for aggregating results from multiple goroutines, combining data streams, or centralizing processing from various sources. Implementation typically involves a function that starts goroutines to read from each input channel and forward values to a shared output channel. Fan-in helps simplify complex systems by providing a single point to collect distributed work results. It's commonly used in scenarios like distributed processing, load balancing, and event aggregation where you need to merge multiple concurrent data streams into one.

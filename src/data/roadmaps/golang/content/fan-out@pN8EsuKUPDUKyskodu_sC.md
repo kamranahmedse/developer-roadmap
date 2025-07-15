@@ -1,1 +1,3 @@
 # fan-out
+
+Fan-out is a concurrency pattern where work from a single input channel is distributed to multiple worker goroutines for parallel processing. This pattern is effective for distributing computationally intensive tasks across multiple processors or handling high-throughput scenarios. Implementation involves multiple goroutines reading from the same input channel, with Go's runtime automatically distributing the work among available workers. Fan-out improves performance by leveraging parallelism and is particularly useful for CPU-bound tasks, batch processing, and scenarios where work can be processed independently. It's often combined with fan-in to collect results after parallel processing.

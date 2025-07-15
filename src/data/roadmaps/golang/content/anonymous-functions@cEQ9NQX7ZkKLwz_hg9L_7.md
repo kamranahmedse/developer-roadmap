@@ -1,1 +1,3 @@
 # Anonymous Functions
+
+Anonymous functions in Go are functions declared without a name, also known as function literals or lambda functions. They can be assigned to variables, passed as arguments to other functions, or executed immediately. Anonymous functions are useful for short-lived operations, callback implementations, goroutine creation, and situations where defining a named function would be overkill. They have access to variables in their enclosing scope, making them effective for creating closures. Common use cases include event handlers, sorting custom comparisons, and implementing functional programming patterns. Anonymous functions help keep code concise and localized when full function definitions aren't necessary.

@@ -1,1 +1,3 @@
 # Functions Basics
+
+Function basics in Go cover the fundamental syntax and concepts for creating reusable code blocks. Functions are declared with the `func` keyword, followed by name, parameters in parentheses, optional return types, and the function body in braces. Go functions can have zero or more parameters, each with a specified type, and can return zero or more values. Function names that start with capital letters are exported (public), while lowercase names are unexported (private) to the package. Understanding function basics is essential for organizing code, creating modular programs, and following Go's conventions for code structure and visibility.

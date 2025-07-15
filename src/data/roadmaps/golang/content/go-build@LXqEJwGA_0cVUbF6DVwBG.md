@@ -1,1 +1,3 @@
 # go build
+
+The `go build` command compiles Go packages and creates executable binaries. It reads Go source files, resolves dependencies, and produces optimized machine code for the target platform. The command can build single files, packages, or entire modules. By default, it creates an executable with the package name in the current directory. You can specify output names with `-o flag`, target different platforms with `GOOS` and `GOARCH` environment variables, and control various compilation options. Understanding `go build` is essential for creating deployable applications and optimizing build processes for different environments.

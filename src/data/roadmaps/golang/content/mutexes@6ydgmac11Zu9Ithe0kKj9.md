@@ -1,1 +1,3 @@
 # Mutexes
+
+Mutexes (mutual exclusion locks) in Go's sync package provide a way to protect shared resources from concurrent access, preventing race conditions. A mutex ensures that only one goroutine can access a protected section of code at a time. Go provides `sync.Mutex` for exclusive access and `sync.RWMutex` for scenarios where you want to allow multiple concurrent readers but exclusive writers. Mutexes should be used sparingly in Go, as channels are often a better choice for communication between goroutines. However, mutexes are essential for protecting shared state that doesn't fit the channel communication model, such as caches, counters, or complex data structures.

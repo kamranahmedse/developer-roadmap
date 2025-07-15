@@ -1,1 +1,3 @@
 # Loops
+
+Go has only one looping construct: the `for` loop, but it's flexible enough to handle all looping scenarios. The basic `for` loop has three components: initialization, condition, and post statement. Go also supports `for range` loops for iterating over arrays, slices, maps, strings, and channels. You can create infinite loops by omitting conditions, and while-style loops by omitting initialization and post statements. Loop control statements like `break` and `continue` provide additional flow control. The simplicity of having just one loop construct makes Go code more consistent and easier to read.

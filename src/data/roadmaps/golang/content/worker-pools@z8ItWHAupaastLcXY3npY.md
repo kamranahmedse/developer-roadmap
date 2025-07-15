@@ -1,1 +1,3 @@
 # Worker Pools
+
+Worker pools are a concurrency pattern in Go that uses a fixed number of goroutines (workers) to process jobs from a shared queue. This pattern is useful for controlling resource usage, limiting concurrent operations, and efficiently processing large numbers of tasks. Worker pools typically consist of job channels, result channels, and a predetermined number of worker goroutines that continuously process jobs. This approach prevents resource exhaustion that could occur with unlimited goroutine creation and provides predictable performance characteristics. Understanding worker pools is essential for building scalable applications that need to process many concurrent tasks while maintaining control over system resources.

@@ -1,1 +1,3 @@
 # Building CLIs
+
+Go is an excellent choice for building command-line interface (CLI) applications due to its fast compilation, single binary distribution, and rich ecosystem of CLI libraries. You can build CLIs using the standard `flag` package for simple cases, or leverage powerful frameworks like Cobra (used by kubectl, Hugo), urfave/cli, or Bubble Tea for interactive applications. Go CLIs benefit from cross-compilation support, allowing you to build binaries for different platforms easily. Building CLIs is a great way to learn Go while creating useful tools for automation, development workflows, and system administration.

@@ -1,1 +1,3 @@
 # echo
+
+Echo is a high-performance, minimalist web framework for Go that focuses on ease of use and speed. It provides essential features for building APIs and web applications including optimized routing, middleware support, data binding, validation, and rendering. Echo's API is designed to be intuitive and requires minimal learning curve while offering powerful features like automatic TLS support, HTTP/2 support, and WebSocket handling. The framework includes built-in middleware for CORS, JWT authentication, logging, and compression. Echo is particularly popular for building RESTful APIs and microservices due to its excellent performance characteristics and comprehensive feature set.

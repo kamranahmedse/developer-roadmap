@@ -1,1 +1,3 @@
 # slog
+
+The `slog` package, introduced in Go 1.21, is the standard library's structured logging solution. It provides fast, structured logging with support for different output formats (text, JSON), log levels (debug, info, warn, error), and contextual attributes. Slog is designed for high performance with minimal allocations and supports both simple and structured logging patterns. It includes features like log level filtering, custom handlers, and integration with the context package for request-scoped logging. Understanding slog is important for building production applications that require comprehensive logging, monitoring, and debugging capabilities while maintaining excellent performance characteristics.

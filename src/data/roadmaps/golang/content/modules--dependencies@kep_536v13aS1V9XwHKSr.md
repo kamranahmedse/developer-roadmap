@@ -1,1 +1,3 @@
 # Modules & Dependencies
+
+Go modules are the standard way to manage dependencies in Go projects. A module is a collection of related Go packages stored together with go.mod and go.sum files that track dependencies and their versions. Modules enable reproducible builds, version management, and dependency resolution. The `go.mod` file defines the module path and lists dependencies, while `go.sum` contains checksums for security. Modules replaced the older GOPATH-based approach and are essential for building reliable, maintainable Go applications that depend on external libraries and packages.

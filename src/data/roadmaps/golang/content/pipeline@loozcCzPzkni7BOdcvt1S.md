@@ -1,1 +1,3 @@
 # pipeline
+
+The pipeline pattern in Go connects multiple stages of processing where each stage runs concurrently and communicates through channels. Data flows from one stage to the next, with each stage performing a specific transformation or operation. Pipelines enable efficient streaming processing, memory efficiency (since you don't need to store all data at once), and natural parallelism. Each stage can run at its own pace, with channels providing buffering between stages. This pattern is excellent for data processing workflows, stream processing, and any scenario where you can break down complex operations into sequential, composable steps. Pipelines promote clean, modular code that's easy to test and reason about.

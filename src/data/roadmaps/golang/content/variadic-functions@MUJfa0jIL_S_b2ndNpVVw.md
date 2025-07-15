@@ -1,1 +1,3 @@
 # Variadic Functions
+
+Variadic functions in Go can accept a variable number of arguments of the same type using the `...` syntax. The variadic parameter must be the last parameter and is treated as a slice within the function. Examples include `fmt.Printf()` and `append()`. To call a variadic function with a slice, you use the `...` operator to "expand" the slice. Variadic functions are useful for creating flexible APIs, utility functions that work with varying amounts of data, and building wrapper functions. They provide convenience and flexibility while maintaining type safety, making function calls more natural when the number of arguments isn't known at compile time.

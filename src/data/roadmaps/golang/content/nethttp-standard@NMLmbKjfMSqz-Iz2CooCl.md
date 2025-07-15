@@ -1,1 +1,3 @@
 # net/http (standard)
+
+The `net/http` package is Go's powerful standard library for building HTTP clients and servers without external dependencies. It provides everything needed to create web servers, make HTTP requests, handle routing, process form data, manage cookies, and implement middleware. The package includes types like `http.Server`, `http.Client`, `http.Request`, and `http.Response` for comprehensive HTTP functionality. You can build production-ready web applications using only the standard library, though many developers choose frameworks for additional convenience. Understanding `net/http` is fundamental for Go web development and provides the foundation that most Go web frameworks build upon.

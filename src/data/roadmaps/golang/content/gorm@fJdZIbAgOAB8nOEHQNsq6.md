@@ -1,1 +1,3 @@
 # GORM
+
+GORM is a feature-rich Object-Relational Mapping (ORM) library for Go that simplifies database interactions. It provides an intuitive API for database operations, automatic migrations, associations (belongs to, has one, has many, many to many), hooks (before/after create/save/update/delete), transactions, and connection pooling. GORM supports multiple databases including PostgreSQL, MySQL, SQLite, and SQL Server. It includes advanced features like soft deletes, composite primary keys, database resolver for read/write splitting, and plugin system for extensibility. While ORMs add abstraction overhead, GORM is excellent for rapid development and complex data relationships.

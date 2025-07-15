@@ -1,1 +1,3 @@
 # Logging
+
+Logging is essential for monitoring, debugging, and maintaining Go applications in production. Go's standard library includes a basic `log` package, and Go 1.21 introduced the structured `slog` package for more advanced logging needs. Popular third-party logging libraries include Zap (high-performance), Zerolog (zero-allocation), and Logrus (feature-rich). Effective logging involves choosing appropriate log levels (debug, info, warn, error), structuring log messages for easy parsing, and configuring outputs for different environments. Good logging practices help with troubleshooting issues, monitoring application behavior, and maintaining system health.

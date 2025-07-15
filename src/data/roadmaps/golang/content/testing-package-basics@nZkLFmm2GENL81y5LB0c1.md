@@ -1,1 +1,3 @@
 # `testing` package basics
+
+The `testing` package is Go's built-in framework for writing and running unit tests, benchmarks, and examples. Tests in Go are written in files ending with `_test.go` and test functions must start with `Test` followed by a capitalized name. The testing package provides a simple yet powerful API with the `*testing.T` type for tests and `*testing.B` for benchmarks. Tests are run using the `go test` command, which automatically discovers and executes test functions. Go's testing philosophy emphasizes simplicity and clarity, making it easy to write comprehensive test suites that ensure code reliability and facilitate refactoring.

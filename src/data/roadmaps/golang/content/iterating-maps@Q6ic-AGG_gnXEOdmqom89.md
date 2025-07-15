@@ -1,1 +1,3 @@
 # Iterating Maps
+
+Iterating over maps in Go is done using the `for range` loop, which provides access to both keys and values. The iteration order is not guaranteed and can vary between runs, making maps unsuitable when order matters. You can iterate over keys only, values only, or both depending on your needs. Common patterns include checking if keys exist, building new collections from map data, and processing key-value pairs. When you need ordered iteration, you typically collect keys in a slice, sort them, and then iterate through the sorted keys to access map values in order.

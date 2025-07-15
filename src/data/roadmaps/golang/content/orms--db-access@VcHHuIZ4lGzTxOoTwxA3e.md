@@ -1,1 +1,3 @@
 # ORMs & DB Access
+
+Go provides several approaches for database access, ranging from low-level database drivers to full-featured Object-Relational Mapping (ORM) libraries. The standard `database/sql` package offers a consistent interface for working with SQL databases, while libraries like GORM provide higher-level ORM functionality and pgx offers PostgreSQL-specific optimizations. ORMs can simplify database operations by mapping database records to Go structs, handling relationships, and providing query builders. However, they may introduce overhead, so choosing between raw SQL, lightweight query builders, or full ORMs depends on your application's complexity and performance requirements.

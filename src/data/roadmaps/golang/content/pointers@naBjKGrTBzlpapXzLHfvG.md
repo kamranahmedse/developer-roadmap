@@ -1,1 +1,3 @@
 # Pointers
+
+Pointers in Go store the memory address of a variable rather than the value itself. They are declared using the `*` operator and you can get the address of a variable using the `&` operator. Pointers allow you to directly modify values in memory, share large data structures efficiently without copying, and enable functions to modify variables passed as arguments. While Go pointers are safer than those in languages like C (no pointer arithmetic), they are essential for understanding how Go manages memory and for writing efficient programs that avoid unnecessary data copying.

@@ -1,1 +1,3 @@
 # WaitGroups
+
+WaitGroups in Go's sync package provide a way to wait for a collection of goroutines to finish executing. A WaitGroup maintains a counter that represents the number of goroutines to wait for. You increment the counter with `Add()`, decrement it with `Done()` (typically called with `defer` in each goroutine), and block until the counter reaches zero with `Wait()`. This is essential for coordinating goroutine completion, ensuring all work is finished before proceeding, and preventing main function exit before goroutines complete. WaitGroups are commonly used in scenarios where you need to process multiple items concurrently and wait for all processing to complete.

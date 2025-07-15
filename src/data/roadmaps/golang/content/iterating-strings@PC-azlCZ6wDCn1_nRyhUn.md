@@ -1,1 +1,3 @@
 # Iterating Strings
+
+Iterating over strings in Go using `for range` automatically handles UTF-8 decoding and provides Unicode code points (runes) rather than individual bytes. This is important for properly handling international characters and emojis. The loop gives you the byte index and the rune value at each position. If you need to work with individual bytes instead of runes, you can convert the string to a byte slice first. Understanding string iteration is crucial for text processing, validation, and building applications that work correctly with international text and various character encodings.

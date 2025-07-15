@@ -1,1 +1,3 @@
 # Closures
+
+Closures in Go are functions that capture and access variables from their surrounding scope, even after the outer function returns. They're created when a function references variables declared outside its body, "closing over" those variables. Closures are useful for creating specialized functions, implementing callbacks, maintaining state between function calls, and building factories or configuration functions. Since the captured variables remain accessible to the closure, they can be modified across multiple calls. This makes closures powerful for event handling, iterator patterns, and functional programming techniques. Understanding closures is important for writing flexible, reusable code and working with higher-order functions.

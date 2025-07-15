@@ -1,1 +1,3 @@
 # Goroutines
+
+Goroutines are lightweight threads managed by the Go runtime that enable concurrent execution of functions. They are one of Go's most powerful features, allowing you to run thousands or even millions of concurrent operations with minimal memory overhead. Goroutines are created simply by prefixing a function call with the `go` keyword. The Go runtime automatically handles scheduling goroutines across available CPU cores, making concurrent programming much easier than traditional threading models. Goroutines communicate through channels and are fundamental to Go's approach to concurrency and parallelism.

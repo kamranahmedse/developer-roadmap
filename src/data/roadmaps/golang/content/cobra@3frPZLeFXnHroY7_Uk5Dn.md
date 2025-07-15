@@ -1,1 +1,3 @@
 # Cobra
+
+Cobra is a powerful library for creating modern CLI applications in Go. It's used by many popular projects including Kubernetes (kubectl), Hugo, and GitHub CLI. Cobra provides features like nested subcommands, global and local flags, intelligent suggestions, automatic help generation, and shell completion. It follows POSIX standards and offers a clean API for building complex command-line interfaces. Cobra also includes a command generator to bootstrap CLI applications quickly. The library handles argument parsing, flag management, and help text generation automatically, allowing developers to focus on implementing command logic rather than CLI infrastructure.

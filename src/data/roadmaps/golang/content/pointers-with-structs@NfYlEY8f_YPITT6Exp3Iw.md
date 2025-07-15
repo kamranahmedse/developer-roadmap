@@ -1,1 +1,3 @@
 # Pointers with Structs 
+
+Pointers with structs in Go are commonly used to avoid copying large structures and to enable methods to modify struct values. When you have a pointer to a struct, Go provides automatic dereferencing, so you can access fields using dot notation directly (`ptr.field` instead of `(*ptr).field`). Struct pointers are essential for implementing methods that modify the receiver, sharing structs between functions efficiently, and building data structures where structs need to reference each other. Methods can have either value receivers or pointer receivers, with pointer receivers being necessary when the method needs to modify the struct or when the struct is large and copying would be expensive. 

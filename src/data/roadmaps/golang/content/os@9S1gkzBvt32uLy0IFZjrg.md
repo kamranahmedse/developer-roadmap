@@ -1,1 +1,3 @@
 # os
+
+The `os` package provides a platform-independent interface to operating system functionality including file operations, environment variables, process management, and system information. It includes functions for creating, reading, writing, and deleting files and directories, working with file permissions, and executing system commands. The package also provides access to command-line arguments, environment variables, and process signals. Understanding the `os` package is fundamental for building system tools, CLI applications, and any program that needs to interact with the file system or operating system services. It's essential for creating portable applications that work across different operating systems.

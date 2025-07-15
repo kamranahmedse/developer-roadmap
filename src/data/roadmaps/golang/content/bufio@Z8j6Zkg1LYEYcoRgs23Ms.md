@@ -1,1 +1,3 @@
 # bufio
+
+The `bufio` package provides buffered I/O operations that wrap around existing `io.Reader` and `io.Writer` interfaces to improve performance. Buffered I/O reduces the number of system calls by reading or writing data in larger chunks. The package includes `Scanner` for convenient line-by-line reading, `Reader` for buffered reading with methods like `ReadLine()` and `ReadString()`, and `Writer` for buffered writing. It's particularly useful for processing large files, network operations, and any scenario where frequent small I/O operations would be inefficient. Understanding buffered I/O is important for building efficient applications that handle substantial amounts of data.

@@ -1,1 +1,3 @@
 # Race Detection
+
+Race detection is a powerful feature in Go that helps identify race conditions in concurrent programs. A race condition occurs when multiple goroutines access shared memory simultaneously and at least one access is a write. Go's race detector is enabled using the `-race` flag with commands like `go run -race` or `go test -race`. It instruments your code at compile time to detect races at runtime, reporting detailed information about conflicting accesses. The race detector is essential for developing reliable concurrent applications and should be used regularly during development and testing.

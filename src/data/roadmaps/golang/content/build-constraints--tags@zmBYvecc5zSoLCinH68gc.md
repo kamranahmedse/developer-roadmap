@@ -1,1 +1,3 @@
 # Build Constraints & Tags
+
+Build constraints (also known as build tags) are special comments that control which files are included when building Go programs. They allow you to create platform-specific code, environment-specific builds, or feature toggles. Build constraints are placed at the top of Go files and use the `//go:build` directive (or the older `// +build` format). Common use cases include building different versions for different operating systems, architectures, or creating debug vs production builds. Understanding build constraints is essential for creating portable Go applications that can adapt to different environments and requirements.

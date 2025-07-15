@@ -1,1 +1,3 @@
 # With Maps & Slices
+
+Maps and slices in Go are reference types, meaning they contain pointers to underlying data structures. When you pass maps or slices to functions, you're passing references rather than copies, so modifications inside functions affect the original data. However, for slices, operations that change length or capacity (like append) may create new underlying arrays, so if you need to modify a slice's length from within a function, you typically need to return the modified slice or pass a pointer to the slice. Understanding this behavior is crucial for effective data manipulation and avoiding common pitfalls when working with these fundamental Go data structures.

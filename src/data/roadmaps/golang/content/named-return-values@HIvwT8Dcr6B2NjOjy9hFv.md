@@ -1,1 +1,3 @@
 # Named Return Values
+
+Named return values in Go allow you to specify names for return parameters in the function signature, creating variables that are automatically initialized to zero values and returned when the function ends. Using named returns can make code more readable by documenting what each return value represents, simplify complex functions with multiple return statements, and enable "naked" returns (just `return` without specifying values). However, they should be used judiciously as they can sometimes reduce clarity, especially in short functions. Named returns are most beneficial in longer functions where the return values' purpose might not be immediately clear from context.

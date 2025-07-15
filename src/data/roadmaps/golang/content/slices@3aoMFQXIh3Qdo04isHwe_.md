@@ -1,1 +1,3 @@
 # Slices
+
+Slices are dynamic arrays in Go that provide a flexible way to work with sequences of data. Unlike arrays which have a fixed size, slices can grow and shrink as needed. A slice consists of three components: a pointer to an underlying array, a length (number of elements), and a capacity (maximum number of elements). Slices are created using `make()`, slice literals, or by slicing existing arrays or slices. They are reference types, meaning multiple slices can share the same underlying array. Understanding slices is crucial as they are one of the most commonly used data structures in Go.

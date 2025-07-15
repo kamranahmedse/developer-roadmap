@@ -1,1 +1,3 @@
 # Error Handling Basics
+
+Error handling in Go follows an explicit approach where functions return an error as their last return value. Unlike languages that use exceptions, Go treats errors as values that must be explicitly checked and handled. The conventional pattern is to check if an error is nil (no error occurred) or handle the error appropriately. This approach makes error handling visible in the code flow and encourages developers to think about and handle potential failures at each step. Go's error handling philosophy emphasizes clarity and forces you to consider what should happen when things go wrong.

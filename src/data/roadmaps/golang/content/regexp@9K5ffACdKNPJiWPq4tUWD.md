@@ -1,1 +1,3 @@
 # regexp
+
+The `regexp` package provides regular expression functionality for pattern matching and text processing in Go. It implements the RE2 syntax, which is both powerful and safe (guarantees linear time execution). The package supports pattern compilation for performance, various matching methods (match, find, replace), submatch extraction, and both string and byte slice operations. Regular expressions are compiled once and can be reused for better performance. Understanding regular expressions is valuable for text validation, parsing, data extraction, and string manipulation tasks. The Go regexp package prioritizes safety and predictable performance over some advanced features found in other regex engines.

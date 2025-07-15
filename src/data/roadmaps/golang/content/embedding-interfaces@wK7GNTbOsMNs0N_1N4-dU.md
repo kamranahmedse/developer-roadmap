@@ -1,1 +1,3 @@
 # Embedding Interfaces
+
+Interface embedding in Go allows you to create new interfaces by combining existing ones, promoting interface composition and reusability. When you embed an interface in another interface, the new interface automatically includes all methods from the embedded interface. This creates interface hierarchies and enables building complex interfaces from simpler, focused ones. Interface embedding supports the principle of composition over inheritance, allows for incremental interface definition, and helps create more maintainable and flexible designs. It's commonly used in standard library interfaces and is essential for building modular, extensible systems where interfaces can grow organically while maintaining backward compatibility.
