@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@CompTIA Linux+](https://www.comptia.org/certifications/linux)
 - [@video@Linux+ Exam Prep](https://www.youtube.com/watch?v=niPWk7tgD2Q&list=PL78ppT-_wOmuwT9idLvuoKOn6UYurFKCp)
+- [@article@CompTIA Linux+ Certification Training Labs](https://github.com/labex-labs/comptia-linux-plus-training-labs)
