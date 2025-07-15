@@ -2,27 +2,7 @@
 
 A public key infrastructure (PKI) is a set of roles, policies, hardware, software, and procedures to create, manage, distribute, use, store and revoke digital certificates and public-key encryption. The purpose of a PKI is to facilitate the secure electronic transfer of information for a range of network activities such as e-commerce, internet banking, and confidential email. It is required for activities where simple passwords are an inadequate authentication method, and the more rigorous proof is required to confirm the identity of the parties involved in the communication and to validate the information being transferred.
 
-### Components of PKI
+Visit the following resources to learn more:
 
-- **Digital certificates:** digital "identities" issued by trusted third parties, that identify users and machines. They may be securely stored in wallets or in directories.
-- **Public and private keys:** form the basis of a PKI for secure communications, based on a secret private key and a mathematically related public key
-- **Secure sockets layer (SSL):** An Internet-standard secure protocol
-- **Certificate Authority (CA):** acts as a trusted, independent provider of digital certificates
-
-### What is PKI used for?
-
-- Providing a recovery key for an encrypted hard drive
-- Securing internal communications with database servers
-- Signing documents
-- Securing local networks: PKI capacities are built into Microsoft's Active Directory, for instance, and can work with physical keycards that store digital certificates to ensure that users are who they say they are.
-- Secure messaging: the Signal protocol uses PKI, for instance
-- Email Encryption
-- Securing access to internet of things (IoT) devices
-
-### Advantages of the PKI Approach
-
-- PKI is a standards-based technology.
-- It allows the choice of trust provider.
-- It is highly scalable. Users maintain their own certificates, and certificate authentication only involves the data exchange between the client and server. This means that no third-party authentication server needs to be online. There is, thus, no limit to the number of users who can be supported using PKI.
-- PKI allows delegated trust. A user who has obtained a certificate from a recognized and trusted certificate authority can authenticate himself to a server the first time he connects to that server without having previously been registered with the system.
-- Although PKI is not notably a single sign-on service, it can be implemented in such a way as to enable single sign-on.
+- [@article@PKI - Wikipedia](https://en.wikipedia.org/wiki/Public_key_infrastructure)
+- [@article@PKI - DoD Cyber Exchange](https://public.cyber.mil/pki-pke/)

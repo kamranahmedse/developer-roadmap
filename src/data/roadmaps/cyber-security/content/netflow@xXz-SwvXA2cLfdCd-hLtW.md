@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@Cisco NetFlow Website](https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html)
+- [@official@Cisco NetFlow](https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-netflow/index.html)
 - [@video@What is NetFlow?](https://www.youtube.com/watch?v=aqTpUmUibB8)

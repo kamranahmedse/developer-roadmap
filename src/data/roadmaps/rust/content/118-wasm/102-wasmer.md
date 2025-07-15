@@ -1,3 +1,0 @@
-# wasmer
-
-Wasmer is a popular standalone WebAssembly (WASM) runtime that aims to run any WASM file on any platform swiftly. It's designed to be lightweight and simple to use. The project supports features of WASM like linear memory and tables, while also providing a friendly command line interface (CLI). It ships with a pluggable, modular system that allows for different compiling and runtime strategies. Wasmer can be integrated into different programming languages through its embedding API, which enables calling WASM functions directly as pure functions in the host language.

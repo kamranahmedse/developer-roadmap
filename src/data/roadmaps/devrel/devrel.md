@@ -4,9 +4,9 @@ jsonUrl: '/jsons/roadmaps/devrel.json'
 pdfUrl: '/pdfs/roadmaps/devrel.pdf'
 order: 21
 briefTitle: 'Developer Relations'
-briefDescription: 'Step by step guide to becoming a Developer Advocate in 2024'
+briefDescription: 'Step by step guide to becoming a Developer Advocate in 2025'
 title: 'Developer Relations'
-description: 'Step by step guide to becoming a Developer Advocate in 2024'
+description: 'Step by step guide to becoming a Developer Advocate in 2025'
 hasTopics: true
 isForkable: false
 isNew: false
@@ -27,29 +27,24 @@ schema:
   datePublished: '2024-07-04'
   dateModified: '2024-07-04'
 seo:
-  title: 'DevRel Roadmap: What is DevRel Engineering?'
+  title: 'DevRel Roadmap'
   description: 'Learn what DevRel is, what developer advocates do and how to become one using our community-driven roadmap.'
   keywords:
     - 'devrel roadmap 2024'
+    - 'devrel roadmap 2025'
     - 'devrel enginer roadmap 2024'
-    - 'devrel roadmap 2024'
+    - 'devrel enginer roadmap 2025'
     - 'guide to becoming a developer'
     - 'guide to becoming a devrel'
     - 'devrel roadmap'
     - 'devrel'
     - 'developer relations engineer'
     - 'devrel skills'
-    - 'devrel'
-    - 'javascript developer'
-    - 'devrel skills'
     - 'devrel skills test'
     - 'developer relations roadmap'
-    - 'devrel roadmap'
+    - 'developer relations roadmap 2025'
     - 'become a devrel'
     - 'devrel career path'
-    - 'javascript developer'
-    - 'modern javascript developer'
-    - 'node developer'
     - 'skills for devrel'
     - 'learn devrel'
     - 'what is devrel'
@@ -61,6 +56,7 @@ relatedRoadmaps:
   - 'backend'
   - 'full-stack'
   - 'product-manager'
+  - 'qa'
 sitemap:
   priority: 1
   changefreq: 'monthly'

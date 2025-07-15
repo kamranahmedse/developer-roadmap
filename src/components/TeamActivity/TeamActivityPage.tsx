@@ -192,7 +192,7 @@ export function TeamActivityPage(props: TeamActivityPageProps) {
   const sectionHeading = (
     <h3 className="mb-3 flex h-[20px] w-full items-center justify-between text-xs uppercase text-gray-400">
       Team Activity
-      <span className="mx-3 h-[1px] flex-grow bg-gray-200" />
+      <span className="mx-3 h-[1px] grow bg-gray-200" />
       {canManageCurrentTeam && (
         <a
           href={`/team/progress?t=${teamId}`}

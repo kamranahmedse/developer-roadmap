@@ -4,4 +4,5 @@ Caching ensures that the resources downloaded once are reused instead of doing a
 
 Visit the following resources to learn more:
 
+- [@article@What is Caching and How it Works | AWS](https://aws.amazon.com/caching/)
 - [@video@Caching - Simply Explained](https://www.youtube.com/watch?v=6FyXURRVmR0)

@@ -4,7 +4,7 @@ Passport.js is authentication middleware for Node.js. It makes implementing auth
 
 Visit the following resources to learn more:
 
-- [@official@PassportJS Website](https://www.passportjs.org/)
-- [@official@PassportJS Official Documentation](https://www.passportjs.org/docs/)
+- [@official@PassportJS](https://www.passportjs.org/)
+- [@official@PassportJS Documentation](https://www.passportjs.org/docs/)
 - [@video@Implementation of OAuth using passportjs](https://www.youtube.com/watch?v=sakQbeRjgwg\&list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

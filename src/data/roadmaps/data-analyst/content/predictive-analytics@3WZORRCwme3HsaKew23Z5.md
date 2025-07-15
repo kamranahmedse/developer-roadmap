@@ -4,5 +4,5 @@ Predictive analysis is a crucial type of data analytics that any competent data 
 
 Learn more from the following resources:
 
-- [@video@What is predictive analytics?](https://www.youtube.com/watch?v=cVibCHRSxB0)
-- [@article@What is predictive analytics? - Google](https://cloud.google.com/learn/what-is-predictive-analytics)
+- [@video@What is Predictive Analytics?](https://www.youtube.com/watch?v=cVibCHRSxB0)
+- [@article@What is Predictive Analytics? - Google](https://cloud.google.com/learn/what-is-predictive-analytics)

@@ -1,6 +1,6 @@
 # Flutter
 
-Flutter is an open-source UI software development kit created by Google for building natively compiled, multi-platform applications from a single codebase. It uses the Dart programming language and provides a rich set of pre-designed widgets for creating responsive and visually appealing user interfaces. Flutter's architecture allows for fast development with hot reload, enabling developers to see changes instantly. It supports iOS, Android, web, and desktop platforms, offering true cross-platform development. Flutter uses a custom rendering engine, Skia, to draw UI components, ensuring consistent appearance across devices. While known for mobile app development, Flutter's expanding ecosystem and performance improvements have increased its adoption for web and desktop applications as well.
+Flutter, by Google, is a tool for building apps for many platforms (iOS, Android, web, desktop) from one set of code. It uses the Dart language and has many ready-made UI parts (widgets) for making good-looking apps. Flutter is fast to develop with because of its hot reload (see changes instantly). It draws its own UI, so apps look the same everywhere. It's very popular for mobile apps and growing for web and desktop too.
 
 Visit the following resources to learn more:
 

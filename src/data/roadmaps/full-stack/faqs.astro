@@ -3,9 +3,71 @@ import type { FAQType } from '../../../components/FAQs/FAQs.astro';
 
 export const faqs: FAQType[] = [
   {
-    question: 'What does a Full Stack Developer do?',
+    question: 'Can I learn Full Stack Development in 3 months?',
     answer: [
-      'A Full Stack Developer is a developer who is comfortable working with both the front-end and back-end of a web application. They are responsible for developing and maintaining the entire application, from the user interface to the server-side logic and a [full stack developer job description](https://roadmap.sh/full-stack/job-description) can vary depending on the company and the project they are working on.',
+      'You can learn full stack development in 3 months, but only if you are already proficient in either front-end or back-end development, and you just need to pick up the missing half. Otherwise, expecting to learn the ins and outs of web development (both front and back end) in such a short amount of time is too much for a single developer.',
+      "Usually mastering full stack development takes more time and a lot of hands-on experience. If you only have a 3-month span of time to learn the skill and assuming you already have programming experience, the best thing you can do is to quickly run through [the full stack developer roadmap](https://roadmap.sh/full-stack). While you won't learn everything you need to be a proficient full stack developer, you'll have a basic notion of everything that entails the role.",
+    ],
+  },
+  {
+    question:
+      'What does a Full Stack Developer job description typically look like?',
+    answer: [
+      "A typical full stack developer job description will look for proficiency in both front-end and back-end technologies. You'll often see requirements for HTML, CSS, and JavaScript (and related frameworks like React or Angular) alongside server-side languages such as Python, Ruby, or Java.",
+      'With these technologies, employers will also look for experience with databases (either some flavor of SQL or some more exotic noSQL option), API integration (usually RESTful, although there is always someone asking for GraphQL experience), version control systems like Git, and a knack for problem-solving, but then again, that last one is critical for any dev role.',
+      'They might even mention collaborative skills and a willingness to adapt to new technologies as projects evolve.',
+    ],
+  },
+  {
+    question: 'How should I prepare for a Full Stack Developer Interview?',
+    answer: [
+      'To prepare for a full stack developer interview you should start by refreshing all web development basics. Starting with HTML, CSS and JavaScript of course, and then moving on to other topics such as the DOM, event bubbling, error handling, HTTP protocol, the client-server pattern and finally making the jump into back-end land, covering topics such as server-side rendering, REST, database base management and SQL just to name a few.',
+      'On top of that, try to practice common coding challenges, review algorithms and data structures, and brush up on system design principles.',
+      'In the end, for full stack developers having a well-rounded portfolio can really help illustrate your experience, so consider working on some small but hyper-focused personal projects to showcase different aspects of your full stack skillset.',
+    ],
+  },
+  {
+    question:
+      'How is a Full Stack Developer different from a Software Engineer?',
+    answer: [
+      'A full stack developer is different from a software engineer because while all full stack devs are software engineers, not all software engineers are full stack devs.',
+      "You can think of a Full Stack Developer as a specialized software developer that's focused on web applications, handling everything from the visual design on the front-end to server-side logic and databases on the back-end.",
+      'On the other hand, a Software Engineer has a larger scope and can work on a range of systems and projects, from mobile apps and desktop software to embedded systems and large-scale distributed platforms.',
+    ],
+  },
+  {
+    question: 'What is a Full Stack Engineer?',
+    answer: [
+      'A Full Stack Engineer is usually a term used interchangeably with that of full stack developer. However, the "engineer" portion of the name could imply a deeper understanding of system designs, architecture (both in the back-end and front-end), and scalability.',
+      'On the other hand, the full stack "developer" might signal a more code-oriented role, where there is less strategy involved and more problem solving through code.',
+      'In the end, the difference might be barely noticeable, depending on the company and the project.',
+    ],
+  },
+  {
+    question: 'Is Learning Full Stack Development Difficult?',
+    answer: [
+      "Learning full stack development can be difficult if you're not already versed in one of the two areas tackled by this role, because that means having to learn how the entire web ecosystem works, starting with the browser and its DOM API, all the way down to server-side programming, and the communication between both environments.",
+      "While learning full stack development, you'll be mastering multiple technologies, but you have to keep the learning path structured to avoid losing yourself halfway through. This is why using the [full stack roadmap](https://roadmap.sh/full-stack) is such a great idea, it'll help you keep the goal in sight while taking you through all the technologies you'll be using (HTML, JavaScript, CSS, server-side scripting languages, SQL, etc).",
+      "If you're just getting started, this process can take anywhere from 6 months to 2 years, depending on the level of experience you already have and your learning pace.",
+    ],
+  },
+  {
+    question: 'What are the most popular stacks in Full Stack Development?',
+    answer: [
+      "The most popular stacks in full stack development have become industry standards for a while now. While it is true that you're completely free to pick the best stack that suits your particular needs and context (project timeline, team's experience, etc), there are options that have already been proven to work great together.",
+      "Some of the most popular ones include the [MERN stack](https://www.code-clash.net/stacks/MERN) using MongoDB (for a quick and versatile database), Express.js (as the backend framework), React (frontend), and Node.js (server). If you're an Angular developer, you can try the [MEAN stack](https://www.mongodb.com/resources/languages/mean-stack), which is similar to MERN but uses Angular instead of React.",
+      "And there are others; for PHP, you have the battle-tested LAMP stack; if you're more into Python, you can try to use Django + React, and if you're into Ruby on Rails, you have the ROR stack (just to name a few).",
+      "If you're just getting started and don't know what technologies to focus on, trying a few of these industry-standard tech stacks might be a great starting point.",
+    ],
+  },
+  {
+    question: 'What are the most common frameworks for full stack development?',
+    answer: [
+      "For full stack development, the most common frameworks will vary based on your technology preferences. However, for each major tech, there are some industry standards that you can go with if you don't have any other preferences.",
+      'If JavaScript is your main programming language, then you can use frameworks like ExpressJS, NestJS, or even Hono for the backend, and a front-end library like React (with React router for instance) for all your UI needs. This combo gives you all you need to develop efficient web applications.',
+      'If you\'re into Python, the Django + DRF (Django REST Framework) will give you all you need to get started. This is a high-level Python framework that follows the "batteries-included" philosophy (meaning it comes with everything you need). It has a built-in ORM (great for dealing with that relational database), authentication, and an admin panel, which solves 95% of all your web development needs. And, paired with DRF, you can build a great API-based scalable backend with minimum effort.',
+      "And finally, if you're more of a Ruby developer, you can always go with Ruby on Rails (RoR), which is built with the convention-over-configuration framework that simplifies full stack development. It works great with the MVC pattern, also comes with an included ORM (ActiveRecord), and has scaffolding tools to help speed up development.",
+      "There are plenty of options around, so make sure you do your research before picking the one you'll go with.",
     ],
   },
 ];

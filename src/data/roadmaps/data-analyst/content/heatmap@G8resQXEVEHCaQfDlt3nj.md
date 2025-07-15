@@ -4,5 +4,5 @@ Heatmaps are a crucial component of data visualization that Data Analysts regula
 
 Learn more from the following resources:
 
-- [@article@A complete guide to heatmaps](https://www.hotjar.com/heatmaps/)
-- [@article@What is a heatmap?](https://www.atlassian.com/data/charts/heatmap-complete-guide)
+- [@article@A Complete Guide to Heatmaps](https://www.hotjar.com/heatmaps/)
+- [@article@What is a Heatmap?](https://www.atlassian.com/data/charts/heatmap-complete-guide)

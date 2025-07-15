@@ -4,4 +4,4 @@ Anomaly detection with embeddings works by transforming data, such as text, imag
 
 Learn more from the following resources:
 
-- [@article@Anomoly in Embeddings](https://ai.google.dev/gemini-api/tutorials/anomaly_detection)
+- [@article@Anomaly in Embeddings](https://ai.google.dev/gemini-api/tutorials/anomaly_detection)

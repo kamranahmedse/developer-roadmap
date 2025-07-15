@@ -13,5 +13,4 @@ The `TCP/IP model` defines how devices should transmit data between them and ena
 Visit the following resources to learn more:
 
 - [@article@What is Transmission Control Protocol TCP/IP? - Fortinet](https://www.fortinet.com/resources/cyberglossary/tcp-ip#:~:text=The%20TCP%2FIP%20model%20defines,exchanged%20and%20organized%20over%20networks.)
-- [@article@TCP/IP Model](https://www.geeksforgeeks.org/tcp-ip-model/)
 - [@article@What is TCP/IP and How Does it Work?](https://www.techtarget.com/searchnetworking/definition/TCP-IP)git reset

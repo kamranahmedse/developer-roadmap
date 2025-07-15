@@ -2,7 +2,7 @@
 title: 'Number Guessing Game'
 description: 'Build a simple number guessing game to test your luck.'
 isNew: false
-sort: 4
+sort: 400
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
@@ -17,6 +17,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

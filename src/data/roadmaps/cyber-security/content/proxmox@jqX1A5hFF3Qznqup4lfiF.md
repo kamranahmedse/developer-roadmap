@@ -4,5 +4,6 @@
 
 Learn more from the following resources:
 
+- [@official@Proxmox](https://www.proxmox.com/en/)
+- [@article@Proxmox Virtual Environment](https://en.wikipedia.org/wiki/Proxmox_Virtual_Environment)
 - [@video@What is Proxmox virtualization?](https://www.youtube.com/watch?v=GMAvmHEWAMU)
-- [@article@Proxmox Website](https://www.proxmox.com/en/)

@@ -25,7 +25,7 @@ export function DashboardProjectCard(props: DashboardProjectCardProps) {
     >
       <span
         className={cn(
-          'flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full',
+          'flex h-5 w-5 shrink-0 items-center justify-center rounded-full',
           {
             'border border-green-500 bg-green-500 group-hover:border-green-600 group-hover:bg-green-600':
               status === 'submitted',
@@ -41,8 +41,8 @@ export function DashboardProjectCard(props: DashboardProjectCardProps) {
           />
         )}
       </span>
-      <span className="flex-grow truncate group-hover:underline">{title.replace(/(System)|(Service)/, '')}</span>
-      <span className="flex-shrink-0 bg-transparent text-xs text-gray-400 no-underline">
+      <span className="grow truncate group-hover:underline">{title.replace(/(System)|(Service)/, '')}</span>
+      <span className="shrink-0 bg-transparent text-xs text-gray-400 no-underline">
         {!!startedAt &&
           status === 'started' &&
           getRelativeTimeString(startedAt)}

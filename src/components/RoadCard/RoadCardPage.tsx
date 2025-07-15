@@ -132,7 +132,7 @@ export function RoadCardPage() {
 
       <div className="mx-0 flex items-start gap-4 border-b px-0 py-4 sm:-mx-10 sm:px-10">
         <StepCounter step={4} />
-        <div className="flex-grow">
+        <div className="grow">
           <StepLabel label="Share your #RoadCard with others" />
           <div className={'rounded-md border bg-gray-50 p-2 text-center'}>
             <a
@@ -149,7 +149,7 @@ export function RoadCardPage() {
 
           <div className="mt-3 grid grid-cols-2 gap-2">
             <button
-              className="flex items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium"
+              className="flex items-center justify-center rounded-sm border border-gray-300 p-1.5 px-2 text-sm font-medium"
               onClick={() => {
                 downloadImage({
                   url: badgeUrl.toString(),
@@ -163,7 +163,7 @@ export function RoadCardPage() {
             </button>
             <button
               disabled={isCopied}
-              className="flex cursor-pointer items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium disabled:bg-blue-50"
+              className="flex cursor-pointer items-center justify-center rounded-sm border border-gray-300 p-1.5 px-2 text-sm font-medium disabled:bg-blue-50"
               onClick={() => {
                 copyText(badgeUrl.toString());
                 markRoadCardDone();

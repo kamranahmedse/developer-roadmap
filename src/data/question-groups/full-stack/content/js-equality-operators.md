@@ -1,0 +1,2 @@
+* **`==`**: Compares values with each other directly, performing type conversion if required first (example: `'5' == 5` → `true`).  
+* **`===`**: This operator strictly compares values and types with each other. There is no type conversion performed with this operator. For example, if you try to compare a string and a number, the result will always be false, no matter what: `'5' === 5` → `false`.

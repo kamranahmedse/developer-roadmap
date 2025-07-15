@@ -1,6 +1,6 @@
 # Service Workers
 
-Service Workers are a type of web worker that acts as a proxy between a web page and the network, allowing web developers to build offline-first and reliable applications. Service Workers can intercept network requests, access the cache, and make decisions on how to respond to a request based on the available resources. Service Workers are written in JavaScript and are registered by a web page. Once registered, they can control the page and all its requests, even when the page is not open in a browser. This allows Service Workers to enable features such as push notifications, background synchronization, and offline support. Service Workers are supported by most modern web browsers, and they are an essential component of progressive web applications (PWAs).
+Service Workers are special JavaScript files that act like a middleman between a webpage and the internet. They help build apps that work offline. Service Workers can catch network requests, use stored (cached) data, and decide how to respond, even if the webpage isn't open. This allows for features like push notifications, background updates, and offline use. Most modern browsers support them, and they are key for Progressive Web Apps (PWAs).
 
 Visit the following resources to learn more:
 

@@ -4,4 +4,7 @@ Redis is an open-source, in-memory data structure store, primarily used as a dat
 
 Visit the following resources to learn more:
 
-- [@official@What is redis?](https://redis.io/docs/latest/get-started/)
+- [@official@What is Redis?](https://redis.io/docs/latest/get-started/)
+- [@official@Introduction to Redis](https://redis.io/about/)
+- [@article@Redis - Wikipedia](https://en.wikipedia.org/wiki/Redis)
+- [@article@What is Redis Explained? - IBM](https://www.ibm.com/think/topics/redis)

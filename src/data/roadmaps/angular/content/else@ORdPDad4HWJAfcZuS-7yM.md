@@ -4,5 +4,5 @@ While the `@if` block can be helpful in many situations, it's common to also sho
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - @else block](https://angular.dev/essentials/conditionals-and-loops#else-block)
+- [@official@Angular Official Docs - @else block](https://angular.dev/guide/templates/control-flow#conditionally-display-content-with-if-else-if-and-else)
 - [@article@Angular If Else Control Flow Blocks Explained](https://ultimatecourses.com/blog/angular-if-else-control-flow-blocks-explained)

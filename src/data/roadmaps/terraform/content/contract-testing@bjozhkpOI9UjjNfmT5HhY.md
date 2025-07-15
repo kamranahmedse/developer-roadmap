@@ -4,6 +4,6 @@ Terraform contract testing focuses on verifying the interfaces and interactions 
 
 Learn more from the following resources:
 
-- [@article@Terraform Contract Tests](https://www.hashicorp.com/blog/testing-hashicorp-terraform#contract-tests)
+- [@official@Terraform Contract Tests](https://www.hashicorp.com/blog/testing-hashicorp-terraform#contract-tests)
 - [@article@Contract Testing: An Introduction and Guide](https://www.blazemeter.com/blog/contract-testing#:~:text=Contract%20testing%20focuses%20on%20verifying,services%20that%20rely%20on%20it.)
 - [@video@Contract testing for microservices is a must!](https://www.youtube.com/watch?v=Fh8CqZtghQw)

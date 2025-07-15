@@ -1,3 +1,0 @@
-# Criterion.rs
-
-`Criterion.rs` is a statistics-driven micro-benchmarking library in Rust programming language. It provides you with a reliable way to analyze your code's performance over time with statistical methods. The library provides you with zero-cost setup. It delivers detailed, actionable feedback to help you understand what caused performance improvements or regressions. Additionally, it provides automatic outlier detection and can compare the performance of several algorithms or different versions of the same algorithm.

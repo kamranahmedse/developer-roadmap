@@ -2,7 +2,7 @@
 title: 'Personal Blog'
 description: 'Build a personal blog to write and publish articles on various topics.'
 isNew: false
-sort: 5
+sort: 600
 difficulty: 'beginner'
 nature: 'Web App'
 skills:
@@ -19,6 +19,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

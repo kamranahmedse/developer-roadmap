@@ -4,7 +4,7 @@ Grafana is an open-source analytics and interactive visualization web applicatio
 
 Visit the following resources to learn more:
 
-- [@official@Grafana Website](https://grafana.com/)
+- [@official@Grafana](https://grafana.com/)
 - [@official@Grafana Webinars and Videos](https://grafana.com/videos/)
 - [@video@Server Monitoring // Prometheus and Grafana Tutorial](https://www.youtube.com/watch?v=9TJx7QTrTyo)
 - [@feed@Explore top posts about Grafana](https://app.daily.dev/tags/grafana?ref=roadmapsh)

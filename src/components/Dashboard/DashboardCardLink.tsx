@@ -15,7 +15,7 @@ export function DashboardCardLink(props: DashboardCardLinkProps) {
   return (
     <a
       className={cn(
-        'relative mt-4 flex min-h-[220px] flex-col justify-end rounded-lg border border-gray-300 bg-gradient-to-br from-white to-gray-50 py-5 px-6 hover:border-gray-400 hover:from-white hover:to-gray-100',
+        'relative mt-4 flex min-h-[220px] flex-col justify-end rounded-lg border border-gray-300 bg-linear-to-br from-white to-gray-50 py-5 px-6 hover:border-gray-400 hover:from-white hover:to-gray-100',
         className,
       )}
       href={href}

@@ -2,5 +2,13 @@
   "prettier.documentSelectors": ["**/*.astro"],
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["\\b\\w+[cC]lassName\\s*=\\s*[\"']([^\"']*)[\"']"],
+    ["\\b\\w+[cC]lassName\\s*=\\s*`([^`]*)`"],
+    ["[\\w]+[cC]lassName[\"']?\\s*:\\s*[\"']([^\"']*)[\"']"],
+    ["[\\w]+[cC]lassName[\"']?\\s*:\\s*`([^`]*)`"],
+    ["cva\\(((?:[^()]|\\([^()]*\\))*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(((?:[^()]|\\([^()]*\\))*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ]
 }

@@ -112,7 +112,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
   const { users: usersToShow, emptyIcon, emptyText } = activeTab;
 
   return (
-    <div className="flex min-h-[450px] flex-col overflow-hidden rounded-xl border bg-white shadow-sm">
+    <div className="flex min-h-[450px] flex-col overflow-hidden rounded-xl border bg-white shadow-xs">
       <div className="mb-3 flex items-center justify-between gap-2 px-3 py-3">
         <h3 className="text-sm font-medium">
           {title}{' '}
@@ -149,7 +149,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
       </div>
 
       {usersToShow.length === 0 && emptyText && (
-        <div className="flex flex-grow flex-col items-center justify-center p-8">
+        <div className="flex grow flex-col items-center justify-center p-8">
           {emptyIcon}
           <p className="mt-4 text-sm text-gray-500">{emptyText}</p>
         </div>

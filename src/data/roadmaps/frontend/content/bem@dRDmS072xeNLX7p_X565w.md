@@ -1,6 +1,6 @@
 # BEM
 
-The Block, Element, Modifier methodology (commonly referred to as BEM) is a popular naming convention for classes in HTML and CSS. Developed by the team at Yandex, its goal is to help developers better understand the relationship between the HTML and CSS in a given project.
+BEM (Block, Element, Modifier) is a way to name CSS classes in HTML. It helps developers see how HTML and CSS relate in a project. The goal is to make CSS more modular, reusable, and easier to understand, especially in large projects, by creating clear, consistent naming rules.
 
 Visit the following resources to learn more:
 

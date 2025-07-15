@@ -4,7 +4,7 @@ Deferrable views can be used in component template to defer the loading of selec
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Deferrable Views](https://angular.dev/guide/defer)
-- [@article@Unlocking performance with deferrable views](https://medium.com/@kashif_khan/exploring-angular-17-unlocking-performance-with-deferrable-views-580b1977f430)
-- [@video@Angular 17 Defer Block |Lazy Loading in Angular 17|Angular 17 Deferrable Views |Angular 17 Tutorial](https://www.youtube.com/watch?v=h2rEGoqwr6o)
+- [@official@Deferrable Views](https://angular.dev/guide/defer)
+- [@article@Unlocking Performance with Deferrable views](https://medium.com/@kashif_khan/exploring-angular-17-unlocking-performance-with-deferrable-views-580b1977f430)
+- [@video@Angular 17 Defer Block](https://www.youtube.com/watch?v=h2rEGoqwr6o)
 - [@article@Learn how to unit test deferrable views](https://angular.love/en/learn-how-to-unit-test-the-deferrable-views)

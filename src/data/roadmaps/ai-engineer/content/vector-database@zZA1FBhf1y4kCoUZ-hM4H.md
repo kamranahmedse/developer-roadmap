@@ -5,4 +5,4 @@ When implementing Retrieval-Augmented Generation (RAG), a vector database is use
 Learn more from the following resources:
 
 - [@article@How to Implement Graph RAG Using Knowledge Graphs and Vector Databases](https://towardsdatascience.com/how-to-implement-graph-rag-using-knowledge-graphs-and-vector-databases-60bb69a22759)
-- [@article@Retrieval Augmented Generation (RAG) with vector databases: Expanding AI Capabilities](https://objectbox.io/retrieval-augmented-generation-rag-with-vector-databases-expanding-ai-capabilities/)
+- [@article@Retrieval Augmented Generation (RAG) with Vector Databases: Expanding AI Capabilities](https://objectbox.io/retrieval-augmented-generation-rag-with-vector-databases-expanding-ai-capabilities/)

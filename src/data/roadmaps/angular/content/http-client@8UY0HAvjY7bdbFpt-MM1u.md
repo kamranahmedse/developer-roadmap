@@ -4,6 +4,6 @@ Most front-end applications need to communicate with a server over the HTTP prot
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - HTTP Client](https://angular.dev/guide/http)
+- [@official@HTTP Client](https://angular.dev/guide/http)
 - [@article@Angular HTTP Client - Quickstart Guide](https://blog.angular-university.io/angular-http/)
 - [@article@Using HTTP Client in modern Angular applications](https://www.thisdot.co/blog/using-httpclient-in-modern-angular-applications)

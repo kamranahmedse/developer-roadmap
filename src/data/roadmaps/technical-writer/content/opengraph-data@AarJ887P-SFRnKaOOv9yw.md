@@ -4,4 +4,3 @@ OpenGraph is a technology first introduced by Facebook in 2010 that allows integ
 ## OpenGraph Data
 
 OpenGraph data is a protocol that enables any web page to become a rich object in a social graph. It was introduced by Facebook to allow for an integration between the user's website, Facebook, and any shared content. OpenGraph involves adding basic metadata to a page, enabling it to be used as part of a social graph. This metadata can control how URLs are presented when shared on social media, encompassing details such as the title, description, URL, and corresponding image of the content.
-```

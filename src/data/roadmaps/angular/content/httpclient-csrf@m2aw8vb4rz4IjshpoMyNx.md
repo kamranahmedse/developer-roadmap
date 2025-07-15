@@ -6,6 +6,6 @@ However, HttpClient only handles the client-side aspect of XSRF protection. Your
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Security](https://angular.dev/best-practices/security#httpclient-xsrf-csrf-security)
+- [@official@Angular Security](https://angular.dev/best-practices/security#httpclient-xsrf-csrf-security)
 - [@article@How can you protect Angular Web app from cross site request forgery?](https://www.linkedin.com/advice/3/how-can-you-protect-angular-web-app-from-cross-site-pyqwc)
 - [@article@Cross Site Request Forgery: XSRF protection in Angular](https://borstch.com/blog/development/cross-site-request-forgery-xsrf-protection-in-angular)

@@ -4,5 +4,5 @@ Morgan is a NodeJS and express.js middleware to log the HTTP request and error, 
 
 Visit the following resources to learn more:
 
-- [@official@Official Website](https://www.npmjs.com/package/morgan)
-- [@article@How to use Morgan|DigitalOcean](https://www.digitalocean.com/community/tutorials/nodejs-getting-started-morgan)
+- [@official@morgan package](https://www.npmjs.com/package/morgan)
+- [@article@How to Use Morgan | DigitalOcean](https://www.digitalocean.com/community/tutorials/nodejs-getting-started-morgan)

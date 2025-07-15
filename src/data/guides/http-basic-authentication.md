@@ -17,9 +17,9 @@ tags:
   - 'guide-sitemap'
 ---
 
-Our last guide was about the [basics of authentication](/guides/basics-of-authentication), where we discussed authentication, authorization, types of authentication, authentication factors, authentication strategies, and so on.
+Our last guide was about the [basics of authentication](https://roadmap.sh/guides/basics-of-authentication), where we discussed authentication, authorization, types of authentication, authentication factors, authentication strategies, and so on.
 
-In this guide today, we will be learning about basic authentication, and we will see how we can implement Basic Authentication in Node.js. We have a [visual guide on the basic authentication](/guides/basic-authentication) and an illustrative video, watch the video below or continue reading:
+In this guide today, we will be learning about basic authentication, and we will see how we can implement Basic Authentication in Node.js. We have a [visual guide on the basic authentication](https://roadmap.sh/guides/basic-authentication) and an illustrative video, watch the video below or continue reading:
 
 <iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/mwccHwUn7Gc" title="HTTP Basic Authentication"></iframe>
 

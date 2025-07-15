@@ -4,6 +4,6 @@ Bamboo is a CI/CD service provided by Atlassian. Bamboo is primarily used for au
 
 Visit the following resources to learn more:
 
-- [@article@Bamboo Website](https://www.atlassian.com/software/bamboo)
-- [@article@Official Documentation](https://confluence.atlassian.com/bamboo/bamboo-documentation-289276551.html)
+- [@official@Bamboo](https://www.atlassian.com/software/bamboo)
+- [@official@Bamboo Documentation](https://confluence.atlassian.com/bamboo/bamboo-documentation-289276551.html)
 - [@article@Bamboo Getting Started Guide](https://confluence.atlassian.com/bamboo/getting-started-with-bamboo-289277283.html)

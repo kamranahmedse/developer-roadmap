@@ -4,6 +4,5 @@ Software as a Service (SaaS) is a cloud-based model where software applications 
 
 Learn more from the following resources:
 
-- [@article@iWhat is SaaS? Microsoft](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-saas)
+- [@article@Software as a Service?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-saas)
 - [@video@What is SaaS?](https://www.youtube.com/watch?v=UEHdYNXiIUU)
-

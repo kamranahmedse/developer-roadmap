@@ -4,5 +4,5 @@ A legal department within an organization is responsible for handling all legal 
 
 Learn more from the following resources:
 
-- [@article@Key functions of a legal team](https://uk.practicallaw.thomsonreuters.com/w-009-3932?transitionType=Default&contextData=(sc.Default)&firstPage=true)
+- [@article@Key Functions of a Legal Team](https://uk.practicallaw.thomsonreuters.com/w-009-3932?transitionType=Default&contextData=(sc.Default)&firstPage=true)
 - [@article@The Legal Team’s Responsibility in Corporate Cybersecurity](https://www.trustwave.com/en-us/resources/blogs/trustwave-blog/expert-insight-the-legal-teams-responsibility-in-corporate-cybersecurity/)

@@ -4,5 +4,5 @@ LlamaIndex enables multi-modal apps by linking language models (LLMs) to diverse
 
 Learn more from the following resources:
 
-- [@official@LlamaIndex Multy-modal](https://docs.llamaindex.ai/en/stable/use_cases/multimodal/)
+- [@official@LlamaIndex Multi-modal](https://docs.llamaindex.ai/en/stable/use_cases/multimodal/)
 - [@video@Multi-modal Retrieval Augmented Generation with LlamaIndex](https://www.youtube.com/watch?v=35RlrrgYDyU)

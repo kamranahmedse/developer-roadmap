@@ -4,5 +4,5 @@ Skip lists are a data structure that allows you to perform operations on a sorte
 
 Visit the following resources to learn more:
 
+- [@article@Skip Lists](https://en.wikipedia.org/wiki/Skip_list)
 - [@video@Randomization: Skip Lists](https://www.youtube.com/watch?v=2g9OSRKJuzM&index=10&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
-- [@article@Skip Lists - Wikipedia](https://en.wikipedia.org/wiki/Skip_list)

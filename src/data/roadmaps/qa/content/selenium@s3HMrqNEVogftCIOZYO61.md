@@ -4,6 +4,6 @@ Selenium is an open-source tool that automates web browsers. It provides a singl
 
 Visit the following resources to learn more:
 
-- [@official@Seleniums Official Website](https://www.selenium.dev/)
+- [@official@Selenium](https://www.selenium.dev/)
 - [@article@Selenium Tutorial](https://www.browserstack.com/selenium)
 - [@feed@Explore top posts about Selenium](https://app.daily.dev/tags/selenium?ref=roadmapsh)

@@ -4,5 +4,5 @@ Watering Hole Attack is a type of cyberattack where the attacker targets a speci
 
 Visit the following resources to learn more:
 
-- [@article@What is a watering hole attack?](https://www.techtarget.com/searchsecurity/definition/watering-hole-attack)
+- [@article@What is a Watering Hole Attack?](https://www.techtarget.com/searchsecurity/definition/watering-hole-attack)
 - [@video@Watering Hole Attacks](https://www.youtube.com/watch?v=uBoVWqkfZjk)

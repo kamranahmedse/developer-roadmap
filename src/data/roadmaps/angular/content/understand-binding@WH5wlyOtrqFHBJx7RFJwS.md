@@ -9,4 +9,4 @@ In an Angular template, a binding creates a live connection between view and the
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Website](https://angular.dev/guide/templates/binding)
+- [@official@Binding](https://angular.dev/guide/templates/binding)

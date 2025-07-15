@@ -10,6 +10,7 @@ date: 2024-08-20
 seo:
   title: 'Top 50 Popular DevOps Interview Questions (and Answers)'
   description: 'Get ready for your DevOps interview with 50 popular questions and answers that cover tools, pipelines, and key practices.'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/devops-interview-questions-x6n2w.jpg'
   keywords:
     - 'devops quiz'
     - 'devops questions'
@@ -230,7 +231,9 @@ But becoming a successful DevOps engineer is not a trivial task, especially beca
 
 Either way, DevOps engineers work between the development and operations teams, understanding enough about each area to be able to work towards improving their interactions.
 
-Because of this strange situation, while detailed roadmaps (be sure to check out our DevOps roadmap!) help a lot, getting ready for a DevOps interview requires a lot of work.
+Because of this strange situation, while detailed roadmaps (be sure to check out our [DevOps roadmap](https://roadmap.sh/devops)!) help a lot, getting ready for a DevOps interview requires a lot of work.
+
+Lastly, Checkout our Devops [Projects](https://roadmap.sh/devops/projects) to test your real world knowledge.
 
 Here are the most relevant DevOps interview questions you’ll likely get asked during a DevOps interview, plus a few more that will push your skills to the next level.
 
@@ -238,7 +241,7 @@ Here are the most relevant DevOps interview questions you’ll likely get asked 
 
 Before diving into your DevOps technical interview, keep these key points in mind:
 
-1.  **Understand the core concepts**: Familiarize yourself with the essentials of DevOps practices, including continuous integration/continuous deployment (CI/CD), infrastructure as code (IaC), the software development lifecycle, and containerization. Understand how these concepts contribute to the overall development lifecycle.
+1. **Understand the core concepts**: Familiarize yourself with the essentials of DevOps practices, including continuous integration/continuous deployment (CI/CD), infrastructure as code (IaC), the software development lifecycle, and containerization. Understand how these concepts contribute to the overall development lifecycle.
 2. **Practice hands-on skills**: There is a lot of practical knowledge involved in the DevOps practice, so make sure you try what you read about. Set up some CI/CD pipelines for your pet projects, understand containerization, and pick a tool to get started. The more you practice, the more prepared you’ll be for real-world problems.
 3. **Study software architecture**: While you may not have the responsibilities of an architect, having a solid understanding of software architecture principles can be a huge help. Being able to discuss the different components of a system with architects would make you a huge asset to any team.
 4. **Research the Company**: In general, it’s always a great idea to research the company you’re interviewing for. In this case, investigate the company’s DevOps practices, the technologies they use, and their overall approach to software development. This will help you demonstrate a genuine interest in their operations and come prepared with thoughtful questions.

@@ -4,6 +4,5 @@ A **public cloud** is a computing service offered by third-party providers over 
 
 Learn more from the following resources:
 
-- [@video@What is a public cloud?](https://www.youtube.com/watch?v=KaCyfQ7luVY)
-- [@article@What is a public cloud? Microsoft](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-a-public-cloud)
-
+- [@article@A Public Cloud?](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-a-public-cloud)
+- [@video@What is a Public Cloud](https://www.youtube.com/watch?v=KaCyfQ7luVY)

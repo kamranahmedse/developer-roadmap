@@ -14,4 +14,6 @@ To understand the necessary skills an architect needs, we first need to understa
 - Play a key part in reviewing code
 - Detail out and refine higher level design into lower level design
 
-_Note: Architecture is a continuous activity, especially when it is applied in agile software development. Therefore, these activities are done over and over again._
+Visit the following resources to learn more:
+
+- [@article@Software Architect](https://en.wikipedia.org/wiki/Software_architect)

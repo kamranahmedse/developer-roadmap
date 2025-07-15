@@ -1,6 +1,6 @@
 # PRPL Pattern
 
-The PRPL pattern is a web application architecture strategy designed to improve performance, especially on mobile devices. PRPL stands for Push, Render, Pre-cache, and Lazy-load. It focuses on optimizing the initial load time and subsequent navigation speed. The pattern involves pushing critical resources for the initial route, rendering the initial route as quickly as possible, pre-caching remaining routes, and lazy-loading other routes and non-critical assets. This approach aims to deliver a near-instant loading experience for users, particularly on slower networks and less powerful devices. PRPL is often implemented using modern web technologies like service workers and is commonly associated with Progressive Web Apps (PWAs), though it can be applied to various web application architectures.
+The PRPL pattern helps websites load fast, especially on mobile. PRPL means: Push critical resources, Render the first page quickly, Pre-cache other pages, and Lazy-load non-essential stuff. This makes the site feel instant, even on slow connections. It often uses service workers and is common in Progressive Web Apps (PWAs).
 
 Visit the following resources to learn more:
 

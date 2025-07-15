@@ -4,5 +4,5 @@ Firewall logs are detailed records of network traffic and security events captur
 
 Learn more from the following resources:
 
-- [@article@What is firewall logging and why is it important?](https://cybriant.com/what-is-firewall-logging-and-why-is-it-important/)
-- [@video@Reviewing firewall logs](https://www.youtube.com/watch?v=XiJ30f8V_T4)
+- [@article@What is Firewall Logging and Why is it Important?](https://cybriant.com/what-is-firewall-logging-and-why-is-it-important/)
+- [@video@Reviewing Firewall Logs](https://www.youtube.com/watch?v=XiJ30f8V_T4)

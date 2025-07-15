@@ -5,5 +5,4 @@ Throttling is a technique used to control the rate at which requests or operatio
 Visit the following resources to learn more:
 
 - [@article@Throttling - AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/rel_mitigate_interaction_failure_throttle_requests.html)
-- [@article@Throttling and Debouncing](https://dev.to/aneeqakhan/throttling-and-debouncing-explained-1ocb)
 - [@video@Throttling vs Debouncing](https://www.youtube.com/watch?v=tJhA0DrH5co)

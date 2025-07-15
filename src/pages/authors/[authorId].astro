@@ -1,12 +1,14 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
 import AstroIcon from '../../components/AstroIcon.astro';
-import { getGuidesByAuthor } from '../../lib/guide';
-import { getVideosByAuthor } from '../../lib/video';
-import GuideListItem from '../../components/GuideListItem.astro';
+import { GuideListItem } from '../../components/FeaturedGuides/GuideListItem';
+import { VideoListItem } from '../../components/FeaturedVideos/VideoListItem';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAuthorById, getAuthorIds } from '../../lib/author';
-import VideoListItem from '../../components/VideoListItem.astro';
+import { getGuidesByAuthor } from '../../lib/guide';
 import { getAllQuestionGroups } from '../../lib/question-group';
+import { getVideosByAuthor } from '../../lib/video';
+
+export const prerender = true;
 
 interface Params extends Record<string, string | undefined> {}
 
@@ -62,7 +64,7 @@ const videos = await getVideosByAuthor(authorId);
   <div class='container pb-0 pt-4 md:pb-16 md:pt-8'>
     <div class=''>
       <div class='mb-5 flex items-center gap-8 rounded-3xl py-0 md:py-8'>
-        <div class='flex-grow'>
+        <div class='grow'>
           <h1 class='text-2xl font-bold md:text-3xl'>
             {authorFrontmatter.name}
           </h1>
@@ -121,7 +123,7 @@ const videos = await getVideosByAuthor(authorId);
             </div>
           </div>
         </div>
-        <div class='hidden flex-shrink-0 flex-col md:flex'>
+        <div class='hidden shrink-0 flex-col md:flex'>
           <img
             alt="Kamran Ahmed's profile picture"
             class='block h-[175px] w-[175px] rounded-full bg-gray-100'
@@ -131,14 +133,17 @@ const videos = await getVideosByAuthor(authorId);
       </div>
     </div>
     <div
-      class='rounded-t-xl bg-gradient-to-b from-gray-100 to-white px-3 py-2 md:px-6 md:py-3 [&>*:last-child]:border-b-0'
+      class='rounded-t-xl bg-linear-to-b from-gray-100 to-white px-3 py-2 md:px-6 md:py-3 [&>*:last-child]:border-b-0'
     >
       {
         [...guides, ...questionGuides]
           .sort((a, b) => {
-            const aDate = a.frontmatter.date || a.frontmatter.publishedAt;
-            const bDate = b.frontmatter.date || b.frontmatter.publishedAt;
-            return new Date(bDate) - new Date(aDate);
+            const aFrontmatter = a.frontmatter as any;
+            const bFrontmatter = b.frontmatter as any;
+
+            const aDate = aFrontmatter.date || aFrontmatter.publishedAt;
+            const bDate = bFrontmatter.date || bFrontmatter.publishedAt;
+            return new Date(bDate).getTime() - new Date(aDate).getTime();
           })
           .map((guide) => <GuideListItem guide={guide} />)
       }

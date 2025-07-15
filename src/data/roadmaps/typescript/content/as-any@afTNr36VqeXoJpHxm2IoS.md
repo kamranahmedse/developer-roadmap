@@ -14,4 +14,4 @@ anyValue = true;
 
 Learn more from the following links:
 
-- [@official@Arrays](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)
+- [@official@any](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)

@@ -4,5 +4,5 @@ Embeddings are used for semantic search by converting text, such as queries and 
 
 Learn more from the following resources:
 
-- [@article@What is semantic search?](https://www.elastic.co/what-is/semantic-search)
-- [@video@What is Semantic Search? Cohere](https://www.youtube.com/watch?v=fFt4kR4ntAA)
+- [@article@What is Semantic Search?](https://www.elastic.co/what-is/semantic-search)
+- [@video@What is Semantic Search? - Cohere](https://www.youtube.com/watch?v=fFt4kR4ntAA)

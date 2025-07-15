@@ -4,5 +4,5 @@ Event logs are digital records that document activities and occurrences within c
 
 Learn more from the following resources:
 
-- [@article@What is an event log?](https://www.crowdstrike.com/cybersecurity-101/observability/event-log/)
+- [@article@What is an Event Log?](https://www.crowdstrike.com/cybersecurity-101/observability/event-log/)
 - [@article@What are event logs and why do they matter?](https://www.blumira.com/blog/what-are-event-logs-and-why-do-they-matter)

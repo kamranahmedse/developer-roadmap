@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@MULTI Command](https://redis.io/docs/latest/commands/multi/)
+- [@official@MULTI](https://redis.io/docs/latest/commands/multi/)

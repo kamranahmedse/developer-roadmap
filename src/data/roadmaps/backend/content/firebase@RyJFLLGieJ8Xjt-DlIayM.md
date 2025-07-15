@@ -4,6 +4,7 @@ Firebase is a comprehensive mobile and web application development platform owne
 
 Learn more from the following resources:
 
-- [@official@Firebase Website](https://firebase.google.com/)
+- [@official@Firebase](https://firebase.google.com/)
+- [@official@Firebase Documentation](https://firebase.google.com/docs)
 - [@video@Firebase in 100 seconds](https://www.youtube.com/watch?v=vAoB4VbhRzM)
 - [@course@The Ultimate Guide to Firebase](https://fireship.io/lessons/the-ultimate-beginners-guide-to-firebase/)

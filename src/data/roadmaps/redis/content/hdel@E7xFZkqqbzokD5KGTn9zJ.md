@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@HDEL Documentation](https://redis.io/docs/latest/commands/hdel/)
+- [@official@HDEL](https://redis.io/docs/latest/commands/hdel/)

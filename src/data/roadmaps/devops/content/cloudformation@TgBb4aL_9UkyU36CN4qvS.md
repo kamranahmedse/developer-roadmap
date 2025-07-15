@@ -4,6 +4,6 @@ AWS CloudFormation is a infrastructure-as-code service that allows users to defi
 
 Visit the following resources to learn more:
 
-- [@official@AWS CloudFormation Website](https://aws.amazon.com/cloudformation/)
+- [@official@AWS CloudFormation](https://aws.amazon.com/cloudformation/)
 - [@video@Create and Delete an AWS CloudFormation Stack](https://www.youtube.com/watch?v=fmDG-W5TFp4)
 - [@feed@Explore top posts about AWS CloudFormation](https://app.daily.dev/tags/aws-cloudformation?ref=roadmapsh)

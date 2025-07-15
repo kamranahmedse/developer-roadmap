@@ -5,6 +5,7 @@ Solidity is an object-oriented programming language created specifically by Ethe
 Visit the following resources to learn more:
 
 - [@official@Solidity Programming Language](https://soliditylang.org/)
+- [@course@Cyfirn Updraft | Solidity Smart Contract Development](https://updraft.cyfrin.io/courses/solidity)
 - [@article@Solidity Tutorial](https://www.tutorialspoint.com/solidity/index.htm)
 - [@video@Solidity Course by FreeCodeCamp](https://www.youtube.com/watch?v=ipwxYa-F1uY)
 - [@video@Solidity Course by Dapp University](https://www.youtube.com/watch?v=EhPeHeoKF88)

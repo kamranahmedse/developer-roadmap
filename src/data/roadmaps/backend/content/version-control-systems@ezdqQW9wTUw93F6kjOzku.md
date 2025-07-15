@@ -4,7 +4,7 @@ Version Control Systems (VCS) are tools that manage and track changes to code or
 
 Visit the following resources to learn more:
 
-- [@roadmap@Learn Git & GitHub](https://roadmap.sh/git-github)
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
 - [@official@Git Documentation](https://git-scm.com/doc)
 - [@article@What is Version Control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [@video@Version Control System (VCS) - Everything you need to know](https://www.youtube.com/watch?v=SVkuliabq4g)

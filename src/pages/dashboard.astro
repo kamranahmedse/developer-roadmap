@@ -2,11 +2,17 @@
 import { DashboardPage } from '../components/Dashboard/DashboardPage';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllBestPractices } from '../lib/best-practice';
+import { getAllQuestionGroups } from '../lib/question-group';
 import { getRoadmapsByTag } from '../lib/roadmap';
+import { getAllGuides } from '../lib/guide';
+import { getAllVideos } from '../lib/video';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
 const bestPractices = await getAllBestPractices();
+const questionGroups = await getAllQuestionGroups();
+const guides = await getAllGuides();
+const videos = await getAllVideos();
 
 const enrichedRoleRoadmaps = roleRoadmaps
   .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
@@ -20,6 +26,7 @@ const enrichedRoleRoadmaps = roleRoadmaps
       description: frontmatter.briefDescription,
       relatedRoadmapIds: frontmatter.relatedRoadmaps,
       renderer: frontmatter.renderer,
+      isNew: frontmatter.isNew,
       metadata: {
         tags: frontmatter.tags,
       },
@@ -38,6 +45,7 @@ const enrichedSkillRoadmaps = skillRoadmaps
       description: frontmatter.briefDescription,
       relatedRoadmapIds: frontmatter.relatedRoadmaps,
       renderer: frontmatter.renderer,
+      isNew: frontmatter.isNew,
       metadata: {
         tags: frontmatter.tags,
       },
@@ -56,13 +64,16 @@ const enrichedBestPractices = bestPractices.map((bestPractice) => {
 });
 ---
 
-<BaseLayout title='Dashboard' noIndex={true} permalink="/dashboard">
+<BaseLayout title='Dashboard' noIndex={true} permalink='/dashboard'>
   <DashboardPage
     builtInRoleRoadmaps={enrichedRoleRoadmaps}
     builtInSkillRoadmaps={enrichedSkillRoadmaps}
     builtInBestPractices={enrichedBestPractices}
+    questionGroups={questionGroups}
+    guides={guides.slice(0, 7)}
+    videos={videos.slice(0, 7)}
     client:load
   />
   <div slot='open-source-banner'></div>
-  <div slot="changelog-banner" />
+  <div slot='changelog-banner'></div>
 </BaseLayout>

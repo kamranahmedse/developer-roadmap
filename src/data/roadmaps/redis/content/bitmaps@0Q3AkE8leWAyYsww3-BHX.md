@@ -4,5 +4,5 @@ In Redis, Bitmaps are a data structure that allows you to manipulate individual 
 
 Learn more from the following resources:
 
-- [@official@Redis Bitmap docs](https://redis.io/docs/latest/develop/data-types/bitmaps/)
-- [@video@Redis bitmap explained](https://youtu.be/oj8LdJQjhJo?si=jem54LfPbZtrpnEP)
+- [@official@Bitmap](https://redis.io/docs/latest/develop/data-types/bitmaps/)
+- [@video@Redis Bitmap Explained](https://youtu.be/oj8LdJQjhJo?si=jem54LfPbZtrpnEP)

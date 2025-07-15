@@ -4,6 +4,6 @@ The terraform state mv command is used to move resources within a Terraform stat
 
 Learn more from the following resources:
 
-- [@official@Terraform state mv](https://developer.hashicorp.com/terraform/cli/commands/state/mv)
+- [@official@Terraform State mv](https://developer.hashicorp.com/terraform/cli/commands/state/mv)
+- [@official@Moving Resources](https://developer.hashicorp.com/terraform/cli/state/move)
 - [@video@Terraform — Terraform State MV ](https://www.youtube.com/watch?v=i10IMXn3l0o)
-- [@article@Moving resoureces](https://developer.hashicorp.com/terraform/cli/state/move)

@@ -5,4 +5,4 @@ Data partitioning is a technique that divides a large table into smaller, more m
 Learn more from the following resources:
 
 - [@official@Table Partitioning](https://www.postgresql.org/docs/current/ddl-partitioning.html)
-- [@article@How to use table partitioning to scale PostgreSQL](https://www.enterprisedb.com/postgres-tutorials/how-use-table-partitioning-scale-postgresql)
+- [@article@How to use Table Partitioning to Scale PostgreSQL](https://www.enterprisedb.com/postgres-tutorials/how-use-table-partitioning-scale-postgresql)

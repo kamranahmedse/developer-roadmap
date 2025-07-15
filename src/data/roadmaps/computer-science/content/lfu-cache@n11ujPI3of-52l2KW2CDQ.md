@@ -4,4 +4,5 @@ LFU Cache is a data structure that stores key-value pairs. It has a fixed size a
 
 Visit the following resources to learn more:
 
+- [@article@Least Frequently Used (LFU) Cache Implementation](https://www.geeksforgeeks.org/least-frequently-used-lfu-cache-implementation/)
 - [@article@1117. Data Structure - LFU Cache](https://jojozhuang.github.io/algorithm/data-structure-lfu-cache/)

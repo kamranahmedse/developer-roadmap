@@ -4,5 +4,5 @@ Anthropic's Claude is an AI language model designed to facilitate safe and scala
 
 Learn more from the following resources:
 
-- [@official@Claude Website](https://claude.ai)
+- [@official@Claude](https://claude.ai)
 - [@video@How To Use Claude Pro For Beginners](https://www.youtube.com/watch?v=J3X_JWQkvo8)

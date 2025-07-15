@@ -1,6 +1,6 @@
 # React Native
 
-React Native is an open-source mobile application development framework created by Facebook. It allows developers to build native mobile apps for iOS and Android using JavaScript and React. React Native translates JavaScript code into native components, providing near-native performance and a genuine native user interface. It enables code reuse across platforms, speeding up development and reducing costs. The framework offers hot reloading for quick iterations, access to native APIs, and a large ecosystem of third-party plugins. React Native's "learn once, write anywhere" philosophy and its ability to bridge web and mobile development make it popular for creating cross-platform mobile applications, especially among teams already familiar with React for web development.
+React Native, by Facebook, lets you build real mobile apps for iOS and Android using JavaScript and React. It turns your code into native app parts, so apps look and feel native and run fast. You can share code between iOS and Android, saving time and money. It has features like hot reloading (see changes instantly) and access to phone features. It's great for web developers who know React and want to make mobile apps.
 
 Visit the following resources to learn more:
 

@@ -5,4 +5,4 @@ Endpoint security focuses on protecting individual devices that connect to a net
 Learn more from the following resources:
 
 - [@article@What is Endpoint Security?](https://www.crowdstrike.com/cybersecurity-101/endpoint-security/)
-- [@video@Endpoints are the IT frontdoor - Gaurd them!](https://www.youtube.com/watch?v=Njqid_JpqTs)
+- [@video@Endpoints are the IT Frontdoor - Guard them!](https://www.youtube.com/watch?v=Njqid_JpqTs)

@@ -4,4 +4,5 @@ The `route` command is a network utility used to view and manipulate the IP rout
 
 Learn more from the following resources:
 
-- [@article@How to check the routing table in Linux](https://www.geeksforgeeks.org/route-command-in-linux-with-examples/)
+- [@article@route command](https://www.man7.org/linux/man-pages/man8/route.8.html)
+- [@video@route command explained](https://www.youtube.com/watch?v=uOqBollh_x4)

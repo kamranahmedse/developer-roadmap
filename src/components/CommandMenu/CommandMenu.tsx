@@ -194,13 +194,13 @@ export function CommandMenu() {
   return (
     <div className="fixed left-0 right-0 top-0 z-50 flex h-full justify-center overflow-y-auto overflow-x-hidden bg-black/50">
       <div className="relative top-0 h-full w-full max-w-lg p-2 sm:mt-20 md:h-auto">
-        <div className="relative rounded-lg bg-white shadow" ref={modalRef}>
+        <div className="relative rounded-lg bg-white shadow-sm" ref={modalRef}>
           <input
             ref={inputRef}
             autoFocus={true}
             type="text"
             value={searchedText}
-            className="w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-none"
+            className="w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-hidden"
             placeholder="Search roadmaps, guides or pages .."
             autoComplete="off"
             onInput={(e) => {
@@ -249,7 +249,7 @@ export function CommandMenu() {
                     )}
                     <a
                       className={cn(
-                        'flex w-full items-center rounded p-2 text-sm',
+                        'flex w-full items-center rounded-sm p-2 text-sm',
                         counter === activeCounter ? 'bg-gray-100' : '',
                       )}
                       onMouseOver={() => setActiveCounter(counter)}

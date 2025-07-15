@@ -23,11 +23,19 @@ import { RoadmapIcon } from '../ReactIcons/RoadmapIcon.tsx';
 type PersonalRoadmapListType = {
   roadmaps: GetRoadmapListResponse['personalRoadmaps'];
   onDelete: (roadmapId: string) => void;
+  onUpgrade: () => void;
   setAllRoadmaps: Dispatch<SetStateAction<GetRoadmapListResponse>>;
+  maxLimit?: number;
 };
 
 export function PersonalRoadmapList(props: PersonalRoadmapListType) {
-  const { roadmaps: roadmapList, onDelete, setAllRoadmaps } = props;
+  const {
+    roadmaps: roadmapList,
+    onDelete,
+    setAllRoadmaps,
+    onUpgrade,
+    maxLimit = -1,
+  } = props;
 
   const toast = useToast();
 
@@ -105,10 +113,19 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
   return (
     <div>
       {shareSettingsModal}
-      <div className="mb-3 flex items-center justify-between">
-        <span className={'text-sm text-gray-400'}>
-          {roadmapList.length} custom roadmap(s)
-        </span>
+      <div className="mb-3 flex items-center text-sm text-gray-400">
+        {maxLimit === -1 && <>{roadmapList.length} custom roadmap(s)</>}
+        {maxLimit !== -1 && (
+          <>
+            {roadmapList.length} of {maxLimit} roadmaps{' '}
+            <button
+              onClick={onUpgrade}
+              className="ml-2 text-blue-600 underline underline-offset-2 hover:text-blue-700"
+            >
+              Need more? Upgrade
+            </button>
+          </>
+        )}
       </div>
       <ul className="flex flex-col divide-y rounded-md border">
         {roadmapList.map((roadmap) => {
@@ -145,7 +162,7 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
       key={roadmap._id!}
     >
       <div className="mb-3 grid grid-cols-1 sm:mb-0">
-        <p className="mb-1.5 truncate text-base font-medium leading-tight text-black">
+        <p className="mb-1.5 truncate text-base leading-tight font-medium text-black">
           {roadmap.title}
         </p>
         <span className="flex items-center text-xs leading-none text-gray-400">
@@ -176,7 +193,7 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
         <a
           href={editorLink}
           className={
-            'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-xs text-black hover:bg-gray-50 focus:outline-none'
+            'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-xs text-black hover:bg-gray-50 focus:outline-hidden'
           }
           target={'_blank'}
         >
@@ -186,7 +203,7 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
         <a
           href={`/r/${roadmap?.slug}`}
           className={
-            'ml-2 flex items-center gap-2 rounded-md border border-blue-400 bg-white px-2 py-1.5 text-xs text-blue-600 hover:bg-blue-50 focus:outline-none'
+            'ml-2 flex items-center gap-2 rounded-md border border-blue-400 bg-white px-2 py-1.5 text-xs text-blue-600 hover:bg-blue-50 focus:outline-hidden'
           }
           target={'_blank'}
         >
@@ -235,7 +252,7 @@ function VisibilityBadge(props: VisibilityLabelProps) {
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-normal`}
+      className={`inline-flex items-center gap-1.5 text-xs font-normal whitespace-nowrap`}
     >
       <Icon className="inline-block h-3 w-3" />
       <div className="flex items-center">

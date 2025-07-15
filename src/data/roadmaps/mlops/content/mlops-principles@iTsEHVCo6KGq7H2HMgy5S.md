@@ -17,3 +17,7 @@ MLOps (Machine Learning Operations) principles focus on streamlining the deploym
 7. **Reproducibility**: Ensure that experiments can be reliably reproduced by standardizing environments and workflows, making it easier to validate and iterate on models.
 
 These principles help organizations efficiently manage the lifecycle of machine learning models, from development to deployment and beyond.
+
+Visit the following resources to learn more:
+
+- [@article@MLOps Principles](https://ml-ops.org/content/mlops-principles)

@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/mlops.pdf'
 renderer: 'editor'
 order: 18
 briefTitle: 'MLOps'
-briefDescription: 'Step by step guide to learn MLOps in 2024'
+briefDescription: 'Step by step guide to learn MLOps in 2025'
 title: 'MLOps Roadmap'
-description: 'Step by step guide to learn MLOps in 2024'
+description: 'Step by step guide to learn MLOps in 2025'
 hasTopics: true
 isNew: false
 dimensions:
@@ -20,10 +20,13 @@ schema:
   dateModified: '2024-07-18'
 seo:
   title: 'MLOps Roadmap'
-  description: 'Learn about MLOps using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.'
+  description: 'Learn about MLOps using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern machine learning operations.'
   keywords:
     - 'mlops roadmap 2024'
+    - 'mlops roadmap 2025'
+    - 'mlops roadmap'
     - 'mlops engineer'
+    - 'machine learning expert'
     - 'machine learning engineer'
     - 'ai ops engineer'
 relatedRoadmaps:

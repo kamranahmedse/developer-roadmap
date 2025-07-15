@@ -1,0 +1,1 @@
+Maps in Go store key value pairs, making them ideal for tasks like caching, configuration, or counting frequencies. Anything that requires efficient data access either regarding CPU cycles (speed) or efficient management of the memory space is generally a great target for maps. 

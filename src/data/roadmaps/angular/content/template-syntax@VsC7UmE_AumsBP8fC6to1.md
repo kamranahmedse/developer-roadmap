@@ -4,6 +4,6 @@ In Angular, a *template* is a chunk of HTML. Use special syntax within a templat
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Template Syntax](https://angular.dev/guide/templates)
+- [@official@Template Syntax](https://angular.dev/guide/templates)
 - [@article@An Introduction to Angular Template Syntax](https://angularstart.com/modules/basic-angular-concepts/3/)
 - [@video@Craft Dynamic Templates with Angular's Template Syntax](https://www.youtube.com/watch?v=uSnUTcf8adI)

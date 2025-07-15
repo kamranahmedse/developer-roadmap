@@ -4,6 +4,6 @@ Message brokers are intermediaries that facilitate communication between distrib
 
 Visit the following resources to learn more:
 
-- [@article@What are message brokers?](https://www.ibm.com/topics/message-brokers)
+- [@article@What are Message Brokers?](https://www.ibm.com/topics/message-brokers)
 - [@video@Introduction to Message Brokers](https://www.youtube.com/watch?v=57Qr9tk6Uxc)
 - [@video@Kafka vs RabbitMQ](https://www.youtube.com/watch?v=_5mu7lZz5X4)

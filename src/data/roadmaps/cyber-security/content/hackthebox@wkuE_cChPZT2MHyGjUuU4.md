@@ -4,5 +4,5 @@ Hack The Box (HTB) is a popular online platform designed for security enthusiast
 
 Learn more from the following resources:
 
-- [@official@Hack The Box Website](https://www.hackthebox.com/)
+- [@official@Hack The Box](https://www.hackthebox.com/)
 - [@video@I played HTB for 30 days, heres what I learnt](https://www.youtube.com/watch?v=bPv5pb7AcYs)

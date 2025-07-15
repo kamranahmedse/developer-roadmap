@@ -1,3 +1,0 @@
-# Performance and Profiling
-
-`Perf profiling` is a type of software performance analysis tool that helps to identify the performance bottlenecks in a program. It is derived from the Linux `perf` tool, and is specifically designed for use with Rust programs. Perf profiling works by collecting statistical data about the running system and software, which can then be analyzed to determine where the most time is being spent in your code. This makes it easier to target optimizations effectively, rather than relying on intuition or guesswork.

@@ -4,4 +4,4 @@ Removes the specified members from the sorted set stored at key. Non existing me
 
 Learn more from the following resources:
 
-- [@official@ZREM Documentation](https://redis.io/docs/latest/commands/zrem/)
+- [@official@ZREM](https://redis.io/docs/latest/commands/zrem/)

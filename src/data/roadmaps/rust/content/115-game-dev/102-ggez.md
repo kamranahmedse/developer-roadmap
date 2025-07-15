@@ -1,3 +1,0 @@
-# ggez
-
-`ggez` is a lightweight game framework for making 2D games using Rust programming language. It provides various facilities to make game development easier, such as drawing graphics, handling user input, manipulating audio, and handling game timing. It is inspired by libraries like Love2D and aims to present an easy and Rusty interface to the underlying Web platform. With `ggez`, developers can focus more on their game logic without worrying too much about the behind-the-scenes details.

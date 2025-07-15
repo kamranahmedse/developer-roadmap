@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@HGET Documentation](https://redis.io/docs/latest/commands/hget/)
+- [@official@HGET](https://redis.io/docs/latest/commands/hget/)

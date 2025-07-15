@@ -8,14 +8,7 @@ seo:
   description: 'Master these 12 in-demand front end developer skills and become a standout candidate in the web development field.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/frontend-developer-skills-zdpyd.jpg'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
-  "What Front End Programming Languages Should You Learn?": "/frontend/languages"
-  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
-  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
-  "Top 10 Web Developer Portfolio Templates - A Pro’s Pick": "/frontend/web-developer-portfolio"
-  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
-  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
+relatedGuidesId: frontend
 isNew: false
 type: 'textual'
 date: 2024-07-04
@@ -38,9 +31,9 @@ In this article, we’ll try to help guide you through the constantly growing fr
 
 ## Understanding Front End Development
 
-But before we move forward, let’s first understand what front end development is.
+But before we move forward, let’s first understand [what front end development is](https://roadmap.sh/frontend).
 
-Front end development involves creating the parts of a website or application that users interact with directly. This includes designing layouts, implementing visual elements, and ensuring a seamless user experience by coding the interactions through the use of three basic technologies: HTML, CSS, and JavaScript.
+Front end development involves creating the parts of a website or application that users interact with directly. This includes designing layouts, implementing visual elements, and ensuring a seamless user experience by coding the interactions through the use of three basic [frontend technologies](https://roadmap.sh/frontend/technologies): HTML, CSS, and JavaScript.
 
 Unlike backend development, which deals with server-side logic, front end development focuses exclusively on client-side logic.
 
@@ -50,7 +43,7 @@ With that said, HTML, CSS, and JavaScript aren’t the only three front end deve
 
 ![html css and javascript layers](https://assets.roadmap.sh/guest/html-css-javascript-layers-7agjb.png)
 
-HTML, CSS, and JavaScript are the foundational technologies for front end development. Mind you, they’re not the only skills that matter, but they’re definitely the three skills you should focus on first.
+HTML, CSS, and JavaScript are the foundational [programming languages for front end development](https://roadmap.sh/frontend/languages). Mind you, they’re not the only skills that matter, but they’re definitely the three skills you should focus on first.
 
 ### HTML (HyperText Markup Language):
 
@@ -60,8 +53,9 @@ HTML, CSS, and JavaScript are the foundational technologies for front end develo
 ### CSS (Cascading Style Sheets):
 
 - **Role**: CSS is responsible for the visual presentation of the web page. It controls the layout, colors, fonts, and overall style. While HTML lays out the foundational work for the page, CSS is a big component in making it look “good” for the users.
-- **Key Features**: CSS3 introduces features like Flexbox, Grid Layout, animations, and transitions, which enable complex designs with less code. While trying to build responsive designs (which everyone should be doing by now), media queries, flexbox and grid are your friends, making web pages look good on all devices.                                                                                            
-### JavaScript:
+- **Key Features**: CSS3 introduces features like Flexbox, Grid Layout, animations, and transitions, which enable complex designs with less code. While trying to build responsive designs (which everyone should be doing by now), media queries, flexbox and grid are your friends, making web pages look good on all devices.
+
+### JavaScript
 
 - **Role**: JavaScript adds interactivity and dynamic behavior to web pages. It enables features like form validation, content updates without page reloads, and interactive elements like sliders and carousels. In other words, while CSS makes it look “good”, JavaScript makes it interactive and reactive to the user’s actions.
 - **Key Features**: Modern JavaScript (ES6+) introduces features like arrow functions, template literals, destructuring, modules, and promises. These features make the code more concise and readable. Whether you’re an old developer looking to become a front end developer, or a new one just getting started, adopting these features is key to your success as a JavaScript developer.
@@ -143,7 +137,7 @@ The answer to that question is “yes, there should be”, however, as a front e
 - **Increased visibility and traffic**: Good SEO practices improve a website’s ranking on search engine results pages (SERPs). As a front end developer you have control over how the page is rendered, including how fast it does it and the information that is provided to search engines In other words, you have full control over the traffic and visibility of the project you’re working on.
 - **Career advancement**: As businesses increasingly recognize the importance of online presence, the demand for developers with SEO expertise is growing. Front End developers who can implement SEO best practices are more valuable to employers and clients, leading to better - job opportunities and career growth.
 - **Improved code quality**: SEO-friendly code is usually cleaner, more organized, and easier to maintain (there are no guarantees though). By adhering to SEO best practices, front end developers tend to produce code that is well-structured and follows industry standards, leading to fewer bugs and more scalable projects.
-			
+
 ## 7. RESTful APIs
 
 ![RESTful API](https://assets.roadmap.sh/guest/restfulapi-from-frontend-dev-8msjn.png)
@@ -201,11 +195,11 @@ While in theory, all you need to be a front end developer is JavaScript + HTML +
 
 And in fact, those tools will also let you focus on the actual application you’re building, leaving the extra, presentation-related logic to the framework.
 
-We are, of course, talking about modern front end frameworks (or libraries) such as React, Vue, or Angular.
+We are, of course, talking about modern [front end frameworks](https://roadmap.sh/frontend/frameworks) (or libraries) such as React, Vue, or Angular.
 
-Of course, there are other options out there, such as Svelte, Solid, or even just the native Web Components that all major browsers support nowadays. However, while those are very valid options, the main 3 still remain the most used options and if you’re looking to become a front end developer, you’ll want to first focus on one of them.
+Of course, there are other options out there, such as Svelte, Solid, or even just the native Web Components that all major browsers support nowadays. However, while those are very valid options, the main 3 still remain the most used options and if you’re [looking to become a front end developer](https://roadmap.sh/frontend/how-to-become-frontend-developer), you’ll want to first focus on one of them.
 
-Each framework has its own strengths and use cases, so understanding their core concepts and ecosystems can significantly enhance a developer's productivity. 
+Each framework has its own strengths and use cases, so understanding their core concepts and ecosystems can significantly enhance a developer's productivity.
 
 Now the question remains: which one is the right one for you? That’s entirely up to you to decide, but here are some of the highlights of each framework:
 
@@ -263,8 +257,8 @@ Is your code going to be automatically better because of this? No, it’s not. Y
 
 ## Conclusion
 
-Understanding the importance and relevance of these 12 essential front end developer skills can equip front end developers with the tools and knowledge needed to create high-quality, performant, and accessible web applications.
+Understanding the importance and relevance of these essential front end developer skills can equip front end developers with the tools and knowledge needed to create high-quality, performant, and accessible web applications.
 
-That said, this is only a high-level overview of these skills, if you want to know more about how to tackle each of every one of these skills, check out this front end roadmap.
+That said, this is only a high-level overview of these skills, if you want to know more about how to tackle each of every one of these skills, check out **[this front end roadmap](https://roadmap.sh/frontend)**.
 
-In the end, staying updated with these core skills ensures developers can effectively tackle new challenges while remaining competitive in the industry.
+In the end, staying updated with these core skills ensures that you can effectively tackle new challenges while remaining competitive in the industry. Plus, the stronger your skillset, the better your chances are of ticking requirements on a [front end developer job description](https://roadmap.sh/frontend/job-description).

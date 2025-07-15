@@ -46,8 +46,8 @@ export function ProjectCard(props: ProjectCardProps) {
       <span className="flex min-h-[22px] items-center justify-between gap-2 text-xs text-gray-400">
         {isLoadingStatus ? (
           <>
-            <span className="h-5 w-24 animate-pulse rounded bg-gray-200" />{' '}
-            <span className="h-5 w-20 animate-pulse rounded bg-gray-200" />{' '}
+            <span className="h-5 w-24 animate-pulse rounded-sm bg-gray-200" />{' '}
+            <span className="h-5 w-20 animate-pulse rounded-sm bg-gray-200" />{' '}
           </>
         ) : (
           <>

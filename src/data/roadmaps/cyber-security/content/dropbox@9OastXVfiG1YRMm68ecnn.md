@@ -4,4 +4,6 @@ Dropbox is a widely used cloud storage service that allows you to store, access,
 
 Learn more from the following resources:
 
-- [@official@Dropbox Website](https://dropbox.com)
+- [@official@Dropbox](https://dropbox.com)
+- [@official@How to Use Dropbox - a guide to your account](https://learn.dropbox.com/self-guided-learning/dropbox-fundamentals-course/how-to-use-dropbox)
+- [@video@Dropbox Tutorial for Beginners](https://www.youtube.com/watch?v=b0Nk9muiUcQ)

@@ -4,5 +4,5 @@ Image Recognition has become a significant domain because of its diverse applica
 
 Learn more from the following resources:
 
-- [@article@What is image recognition?](https://www.techtarget.com/searchenterpriseai/definition/image-recognition)
+- [@article@What is Image Recognition?](https://www.techtarget.com/searchenterpriseai/definition/image-recognition)
 - [@article@Image Recognition: Definition, Algorithms & Uses](https://www.v7labs.com/blog/image-recognition-guide)

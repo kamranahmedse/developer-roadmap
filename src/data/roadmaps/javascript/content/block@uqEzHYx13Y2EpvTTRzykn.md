@@ -5,4 +5,3 @@ This scope restricts the variable that is declared inside a specific block, from
 Visit the following resources to learn more:
 
 - [@article@JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)
-- [@article@Block Scoping in JavaScript](https://www.geeksforgeeks.org/javascript-es2015-block-scoping)

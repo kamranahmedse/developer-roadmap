@@ -5,6 +5,7 @@ import GridItem from '../components/GridItem.astro';
 import SimplePageHeader from '../components/SimplePageHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getRoadmapsByTag } from '../lib/roadmap';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
 ---
 
 <BaseLayout
@@ -14,4 +15,5 @@ import { getRoadmapsByTag } from '../lib/roadmap';
 >
   <RoadmapsPageHeader client:load />
   <RoadmapsPage client:load />
+  <ChangelogBanner slot='changelog-banner' />
 </BaseLayout>

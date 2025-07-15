@@ -4,5 +4,4 @@ The DATE data type in SQL is used to store calendar dates (typically in the form
 
 Learn more from the following resources:
 
-- [@article@SQL DATE](https://www.w3schools.com/sql/sql_dates.asp)
 - [@video@Working with Dates](https://www.youtube.com/watch?v=XyZ9HwXoR7o)

@@ -1,0 +1,62 @@
+---
+import type { FAQType } from '../../components/FAQs/FAQs.astro';
+
+export const faqs: FAQType[] = [
+  {
+    question: 'What skills does a Python developer need?',
+    answer: [
+      "The skills that a Python developer needs are highly dependent on the industry they'd like to focus on.",
+      'For example, developers interested in backend web development should be familiar with web frameworks such as Django and Flask. They should also spend some time learning about RESTful design, API management, system architecture, and most likely, some SQL for database querying.',
+      "On the other hand, for a Python developer who's more interested in data science (also known as a data scientist), expertise in NumPy, Pandas, and machine learning tools becomes necessary.",
+      'If automation is their focus, developers should look into IaC (Infrastructure as Code) tools and configuration management and delve a bit deeper into cloud platforms and deployment strategies.',
+      'Universally speaking (now outside the domains of Python alone), writing efficient and clean code along with strong problem-solving skills are essential for any development-related role. And you can boost that up with knowledge of data structures and algorithms and understanding object-oriented programming (or functional programming) to top it all up.',
+    ],
+  },
+  {
+    question: 'Is Python easy to learn?',
+    answer: [
+      "Python is considered one of the easiest programming languages to learn because of its simple and readable syntax. To many, Python reads a lot like the English language, greatly reducing the cognitive load involved with understanding other people's code.",
+      'Unlike other languages, Python code requires fewer lines, making it a great choice for beginners. Many universities and coding bootcamps use Python as an introduction to programming because of its logical structure and extensive documentation.',
+      'But in the end, it\'s also important to mention that "easy" is relative, and everyone learns in their own way, and what might be considered simple or easy for the majority of developers doesn\'t automatically make it easy for the rest.',
+      "If you're looking to become a Python developer, the best thing you can do is to focus on following a pre-defined [Python roadmap](https://roadmap.sh/python) and avoid comparing your progress with that of others.",
+    ],
+  },
+  {
+    question: 'Why do beginners use Python?',
+    answer: [
+      'Beginners choose Python because, generally speaking, it tends to be easier to read, write, and understand than many other programming languages.',
+      'Python removes the need for complex syntax rules found in languages like C++ or Java (like the use of squirrely braces, or "&&" and "||" to represent a logical AND or a logical OR operator), allowing developers to focus on solving problems rather than debugging syntax errors.',
+      'On top of that, Python has a vast ecosystem of libraries and frameworks that simplify tasks in web development, data science, and automation, making it very "beginner-friendly" from that POV.',
+      'Finally, the very active and large community around the language (which helps answer questions and provide learning resources to newcomers) is a very appealing characteristic that attracts beginners to Python.',
+    ],
+  },
+  {
+    question: 'Is Python easier than C++?',
+    answer: [
+      'Python is easier than C++ because of its simplified syntax and dynamic typing, making it a more appealing option for new developers.',
+      'Looking at both languages, C++ can be considered to be "lower level" when compared to Python because the former provides an interface that is closer to the actual hardware than the API provided by Python.',
+      'A classic example that shows how C++ is closer to the machine is the language requiring manual memory management. That allows developers to directly interact with hardware components by letting them fine-tune CPU records and more.',
+      'On the other hand, Python handles memory allocation automatically and has a more flexible approach to programming. This higher level of abstraction is what allows Python developers to focus on building software rather than on learning how the machine works so they can build the software on top of it.',
+      'Of course, there are downsides to this approach as well, but when considering ease of adoption, especially for new developers, abstraction helps keep problems at bay.',
+    ],
+  },
+  {
+    question: 'How is Python different from Java?',
+    answer: [
+      'Python is different from Java in many ways. Looking at the syntax alone, Python has a simpler syntax and is dynamically typed, whereas Java is more verbose (and much more similar to that of C or C++) and statically typed.',
+      'In terms of execution, Java requires its code to be compiled so it can be executed inside its virtual machine (known as JVM or Java Virtual Machine), while Python is interpreted, which makes Python a more flexible but often slower option.',
+      'Finally, when considering the best use cases for each language, Python is widely used in data science, automation, and backend development, while Java is more common in enterprise applications, Android development, and large-scale system architectures.',
+      "In the end, there is no best choice between both languages, it's all about your use case and project needs.",
+    ],
+  },
+  {
+    question: 'How long does it take to learn Python?',
+    answer: [
+      'The time it takes to learn Python depends on several things, including your past programming experience, how much you want to learn about the language, and the field in which you want to use Python.',
+      'Generally, most developers going through the learning process can pick up basic Python skills in a few weeks, while mastering the language for professional development could take several months or even years.',
+      'If, on the other hand, you have no prior experience with programming, it can take somewhere between 6 to 8 weeks to learn the basics of Python and programming, as long as you keep the learning consistent.',
+      "Finally, if you're hoping to work as a Python developer, chances are you'll need 6 months to a year of consistent learning and practice on top of having all the programming basics covered.",
+    ],
+  },
+];
+---

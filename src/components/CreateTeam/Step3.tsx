@@ -109,7 +109,7 @@ export function Step3(props: Step3Props) {
 
                   setUsers(newUsers);
                 }}
-                className="flex-grow rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-900"
+                className="grow rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-900"
               />
               <RoleDropdown
                 selectedRole={user.role}
@@ -180,7 +180,7 @@ export function Step3(props: Step3Props) {
             onClick={onNext}
             disabled={users.filter((u) => u.email).length !== 0}
             className={
-              'rounded-md flex-grow md:flex-auto border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black disabled:opacity-50 disabled:pointer-events-none'
+              'rounded-md grow md:flex-auto border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black disabled:opacity-50 disabled:pointer-events-none'
             }
           >
             Skip for Now

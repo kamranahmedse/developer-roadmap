@@ -1,37 +1,37 @@
 ---
-import GridItem from '../components/GridItem.astro';
-import SimplePageHeader from '../components/SimplePageHeader.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+Blocks,
+Bot,
+Braces,
+CheckSquare,
+Coins,
+Component,
+FolderKanban,
+Gamepad2,
+GitBranch,
+Globe2,
+GraduationCap,
+Megaphone,
+MessageCircle,
+MessageCircleCode,
+PenSquare,
+Server,
+ServerCog,
+Shield,
+ShieldHalf,
+Smartphone,
+SquareKanban,
+UsersRound,
+Waypoints,
+Workflow,
+} from 'lucide-react';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
 import { RoadmapCard } from '../components/GetStarted/RoadmapCard';
-import { getRoadmapsByTag } from '../lib/roadmap';
 import { RoadmapMultiCard } from '../components/GetStarted/RoadmapMultiCard';
 import { RoleRoadmaps } from '../components/GetStarted/RoleRoadmaps';
-import {
-  Blocks,
-  Code,
-  ExternalLink,
-  Globe2,
-  GraduationCap,
-  MousePointerSquare,
-  ServerCog,
-  ServerCogIcon,
-  ArrowRight,
-  Server,
-  Cloud,
-  Smartphone,
-  Bot,
-  MessageCircleCode,
-  Shield,
-  ShieldHalf,
-  Workflow,
-  Gamepad2,
-  PenSquare,
-  Component,
-  Waypoints,
-  CheckSquare, Braces, FolderKanban, Coins, Megaphone, GitBranch,
-} from 'lucide-react';
 import { SectionBadge } from '../components/GetStarted/SectionBadge';
 import { TipItem } from '../components/GetStarted/TipItem';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
@@ -39,7 +39,31 @@ import { TipItem } from '../components/GetStarted/TipItem';
   description={'Step by step guides and paths to learn different tools or technologies'}
   permalink={'/get-started'}
 >
-  <div class='bg-gradient-to-b from-gray-200 to-white py-4 sm:py-8 md:py-12'>
+  <!-- AI Chat Section -->
+  <div class='border-b bg-linear-to-b from-gray-200 to-white py-12 sm:py-16'>
+    <div class='container'>
+      <div class='max-w-3xl'>
+        <Bot className='mb-4 size-8 text-black sm:size-12' />
+                  <h2 class='mb-3 text-2xl font-bold text-black sm:text-3xl'>
+            Get AI-Powered Learning Guidance
+          </h2>
+        <p class='mb-6 text-sm text-gray-600 sm:text-base'>
+          Our AI Tutor analyzes your experience, suggests relevant roadmaps,
+          and provides detailed answers to help you progress in your tech
+          career.
+        </p>
+        <a
+          href='/ai/chat'
+          class='inline-flex items-center gap-2 rounded-xl bg-black py-2 px-4 sm:px-6 sm:py-3 text-sm font-medium text-white transition-colors hover:opacity-80 sm:text-base'
+        >
+          <MessageCircle className='size-3 sm:size-5 fill-current' />
+          Chat with AI Tutor
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class='bg-linear-to-b from-gray-200 to-white py-4 sm:py-8 md:py-12'>
     <div class='container'>
       <div class='text-left'>
         <SectionBadge title='Beginner Roadmaps' />
@@ -223,16 +247,17 @@ import { TipItem } from '../components/GetStarted/TipItem';
       />
 
       <RoadmapCard
-          icon={Braces}
-          title='API Design'
-          link='/api-design'
-          description='Learn all you need to know to design robust APIs.'
+        icon={Braces}
+        title='API Design'
+        link='/api-design'
+        description='Learn all you need to know to design robust APIs.'
       />
     </div>
 
     <RoadmapMultiCard
       roadmaps={[
         { title: 'Node.js', link: '/nodejs' },
+        { title: 'PHP', link: '/php' },
         { title: 'Rust', link: '/rust' },
         { title: 'Go', link: '/golang' },
         { title: 'Python', link: '/python' },
@@ -274,11 +299,14 @@ import { TipItem } from '../components/GetStarted/TipItem';
       description='Learn all you need to know to become a DevOps Engineer.'
     />
 
-    <RoadmapCard
-      icon={Cloud}
-      title='AWS'
-      link='/aws'
-      description='Learn all you need to know to become an AWS Engineer.'
+    <RoadmapMultiCard
+      roadmaps={[
+        { title: 'AWS', link: '/aws' },
+        { title: 'Cloudflare', link: '/cloudflare' },
+      ]}
+      description='or perhaps you want to learn AWS or Cloudflare?'
+      secondaryRoadmaps={[{ title: 'Terraform', link: '/terraform' }]}
+      secondaryDescription='Or learn to automate your infrastructure using Terraform?'
     />
 
     <RoadmapMultiCard
@@ -286,9 +314,8 @@ import { TipItem } from '../components/GetStarted/TipItem';
         { title: 'Docker', link: '/docker' },
         { title: 'Kubernetes', link: '/kubernetes' },
         { title: 'Linux', link: '/linux' },
-        { title: 'Terraform', link: '/terraform' },
       ]}
-      description='or perhaps you want to learn Docker, Kubernetes, Terraform or Linux?'
+      description='or perhaps you want to learn Docker, Kubernetes or Linux?'
       secondaryRoadmaps={[
         { title: 'Python', link: '/python' },
         { title: 'Go', link: '/golang' },
@@ -338,10 +365,17 @@ import { TipItem } from '../components/GetStarted/TipItem';
     />
 
     <RoadmapCard
-        icon={Bot}
-        title='AI Engineer'
-        link='/ai-engineer'
-        description='Learn all you need to become an AI Engineer.'
+      icon={Bot}
+      title='AI Engineer'
+      link='/ai-engineer'
+      description='Learn all you need to become an AI Engineer.'
+    />
+
+    <RoadmapCard
+      icon={ServerCog}
+      title='AI Agents'
+      link='/ai-agents'
+      description='Learn how to design, build and ship AI agents in 2025.'
     />
 
     <RoadmapCard
@@ -359,11 +393,37 @@ import { TipItem } from '../components/GetStarted/TipItem';
     />
 
     <RoadmapCard
+      icon={Shield}
+      title='AI Red Teaming'
+      link='/ai-red-teaming'
+      description='Learn how to red team your AI applications with this interactive step by step guide.'
+    />
+
+    <RoadmapCard
       icon={Bot}
       icon2={ServerCog}
       title='MLOps'
       link='/mlops'
       description='Learn how to deploy and manage machine learning models.'
+    />
+  </RoleRoadmaps>
+  <RoleRoadmaps
+    badge='Product or Engineering Management'
+    title='Thinking about a career in management?'
+    description='How about diving into our product or engineering management roadmaps?'
+  >
+    <RoadmapCard
+      icon={SquareKanban}
+      title='Product Manager'
+      link='/product-manager'
+      description='Learn all you need to know to become a Product Manager.'
+    />
+
+    <RoadmapCard
+      icon={UsersRound}
+      title='Engineering Manager'
+      link='/engineering-manager'
+      description='Learn all you need to become an Engineering Manager.'
     />
   </RoleRoadmaps>
   <RoleRoadmaps
@@ -385,10 +445,10 @@ import { TipItem } from '../components/GetStarted/TipItem';
         description='Learn all you need to know to become a UX Designer.'
       />
       <RoadmapCard
-          icon={Coins}
-          title='Blockchain'
-          link='/blockchain'
-          description='Learn all you need to know to become a Blockchain Developer.'
+        icon={Coins}
+        title='Blockchain'
+        link='/blockchain'
+        description='Learn all you need to know to become a Blockchain Developer.'
       />
     </div>
     <div class='flex flex-col justify-start gap-3'>
@@ -405,18 +465,18 @@ import { TipItem } from '../components/GetStarted/TipItem';
         description='Learn all you need to know to become a Technical Writer.'
       />
       <RoadmapCard
-          icon={Megaphone}
-          title='DevRel Engineer'
-          link='/devrel'
-          description='Learn all you need to know to become a DevRel Engineer.'
+        icon={Megaphone}
+        title='DevRel Engineer'
+        link='/devrel'
+        description='Learn all you need to know to become a DevRel Engineer.'
       />
     </div>
     <div class='flex flex-col justify-start gap-3'>
       <RoadmapCard
-          icon={FolderKanban}
-          title='Product Manager'
-          link='/product-manager'
-          description='Learn all you need to know to become a Project Manager.'
+        icon={FolderKanban}
+        title='Product Manager'
+        link='/product-manager'
+        description='Learn all you need to know to become a Project Manager.'
       />
       <RoadmapCard
         icon={Component}
@@ -447,21 +507,21 @@ import { TipItem } from '../components/GetStarted/TipItem';
       >
         <a
           href='/roadmaps'
-          class='flex-grow rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
+          class='grow rounded-lg bg-linear-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
         >
           <Waypoints className='mb-3 h-5 w-5 text-gray-500 sm:mb-2' />
           Explore all Roadmaps
         </a>
         <a
           href='/best-practices'
-          class='flex-grow rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
+          class='grow rounded-lg bg-linear-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
         >
           <CheckSquare className='mb-3 h-5 w-5 text-gray-500 sm:mb-2' />
           Explore Best Practices
         </a>
         <a
           href='/questions'
-          class='flex-grow rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
+          class='grow rounded-lg bg-linear-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
         >
           <CheckSquare className='mb-3 h-5 w-5 text-gray-500 sm:mb-2' />
           Explore Questions
@@ -480,4 +540,5 @@ import { TipItem } from '../components/GetStarted/TipItem';
       </p>
     </div>
   </div>
+  <ChangelogBanner slot='changelog-banner' />
 </BaseLayout>

@@ -4,4 +4,4 @@ The v-on directive is placed on an element to attach an event listener. To attac
 
 Visit the following resources to learn more:
 
-- [@article@v-on Directive](https://www.w3schools.com/vue/ref_v-on.php)
+- [@official@v-on Documentation](https://vuejs.org/api/built-in-directives.html#v-on)

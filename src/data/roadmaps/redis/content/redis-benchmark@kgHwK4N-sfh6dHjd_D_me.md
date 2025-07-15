@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@Redis Benchmark Documentation](https://redis.io/docs/latest/operate/oss_and_stack/management/optimization/benchmarks/)
+- [@official@Redis Benchmark](https://redis.io/docs/latest/operate/oss_and_stack/management/optimization/benchmarks/)
 - [@article@How to benchmark the performance of a Redis server](https://www.digitalocean.com/community/tutorials/how-to-perform-redis-benchmark-tests)

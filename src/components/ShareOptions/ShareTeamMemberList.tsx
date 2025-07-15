@@ -91,8 +91,8 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
         >
           <div className="h-8 w-8 shrink-0 rounded-full bg-gray-200" />
           <div className="inline-grid w-full">
-            <div className="h-5 w-2/4 rounded bg-gray-200" />
-            <div className="mt-1 h-5 w-3/4 rounded bg-gray-200" />
+            <div className="h-5 w-2/4 rounded-sm bg-gray-200" />
+            <div className="mt-1 h-5 w-3/4 rounded-sm bg-gray-200" />
           </div>
         </li>
       ))}

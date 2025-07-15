@@ -128,20 +128,20 @@ export function AccountStreakHeatmap(props: AccountStreakHeatmapProps) {
         ]}
         classForValue={(value) => {
           if (!value) {
-            return 'fill-slate-700 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-slate-700 rounded-md [rx:2px] focus:outline-hidden';
           }
 
           const { count } = value;
           if (count >= 20) {
-            return 'fill-slate-200 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-slate-200 rounded-md [rx:2px] focus:outline-hidden';
           } else if (count >= 10) {
-            return 'fill-slate-300 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-slate-300 rounded-md [rx:2px] focus:outline-hidden';
           } else if (count >= 5) {
-            return 'fill-slate-400 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-slate-400 rounded-md [rx:2px] focus:outline-hidden';
           } else if (count >= 3) {
-            return 'fill-slate-500 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-slate-500 rounded-md [rx:2px] focus:outline-hidden';
           } else {
-            return 'fill-slate-600 rounded-md [rx:2px] focus:outline-none';
+            return 'fill-slate-600 rounded-md [rx:2px] focus:outline-hidden';
           }
         }}
         tooltipDataAttrs={(value: any) => {
@@ -159,7 +159,7 @@ export function AccountStreakHeatmap(props: AccountStreakHeatmapProps) {
 
       <ReactTooltip
         id="user-activity-tip"
-        className="!rounded-lg !bg-slate-900 !p-1 !px-2 !text-xs"
+        className="rounded-lg! bg-slate-900! p-1! px-2! text-xs!"
       />
 
       <div className="mt-2 flex items-center justify-end">
@@ -173,14 +173,14 @@ export function AccountStreakHeatmap(props: AccountStreakHeatmapProps) {
               data-tooltip-content={`${legend.count} Updates`}
             >
               <div
-                className={`h-2.5 w-2.5 ${legend.color} mr-1 rounded-sm`}
+                className={`h-2.5 w-2.5 ${legend.color} mr-1 rounded-xs`}
               ></div>
             </div>
           ))}
           <span className="ml-2 text-xs text-slate-500">More</span>
           <ReactTooltip
             id="user-activity-tip"
-            className="!rounded-lg !bg-slate-900 !p-1 !px-2 !text-sm"
+            className="rounded-lg! bg-slate-900! p-1! px-2! text-sm!"
           />
         </div>
       </div>

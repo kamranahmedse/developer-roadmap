@@ -5,7 +5,5 @@ Variables are used to store information to be referenced and manipulated in a co
 Visit the following resources to learn more:
 
 - [@article@Variables in Python](https://realpython.com/python-variables)
-- [@article@W3Schools — Python Variables](https://www.w3schools.com/python/python_variables.asp)
-- [@article@Python Data Types](https://www.w3schools.com/python/python_datatypes.asp)
 - [@article@Python for Beginners: Data Types](https://thenewstack.io/python-for-beginners-data-types/)
 - [@video@Python Variables and Data Types](https://www.youtube.com/playlist?list=PLBlnK6fEyqRhN-sfWgCU1z_Qhakc1AGOn)

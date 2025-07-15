@@ -20,7 +20,7 @@ export function RoadmapCard(props: RoadmapCardProps) {
 
   if (isUpcoming) {
     return (
-      <div className="group relative block rounded-xl border border-gray-300 bg-gradient-to-br from-gray-100 to-gray-50 p-5 overflow-hidden">
+      <div className="group relative block rounded-xl border border-gray-300 bg-linear-to-br from-gray-100 to-gray-50 p-5 overflow-hidden">
         <div className="mb-2 sm:mb-5 flex flex-row items-center">
           <div className="flex h-7 w-7 sm:h-9 sm:w-9 items-center justify-center rounded-full bg-gray-900 text-white">
             <Icon className="h-3 sm:h-5" />
@@ -52,8 +52,8 @@ export function RoadmapCard(props: RoadmapCardProps) {
     <a
       href={link}
       target={'_blank'}
-      className="group relative block rounded-xl border border-gray-300 bg-gradient-to-br from-gray-100 to-gray-50
-       p-3.5 sm:p-5 transition-colors duration-200 ease-in-out hover:cursor-pointer hover:border-black/30 hover:bg-gray-50/70 hover:shadow-sm"
+      className="group relative block rounded-xl border border-gray-300 bg-linear-to-br from-gray-100 to-gray-50
+       p-3.5 sm:p-5 transition-colors duration-200 ease-in-out hover:cursor-pointer hover:border-black/30 hover:bg-gray-50/70 hover:shadow-xs"
     >
       <div className="mb-2 sm:mb-5 flex flex-row items-center">
         <div className="flex h-7 w-7 sm:h-9 sm:w-9 items-center justify-center rounded-full bg-gray-900 text-white">

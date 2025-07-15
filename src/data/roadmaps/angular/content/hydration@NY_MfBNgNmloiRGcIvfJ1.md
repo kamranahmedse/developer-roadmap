@@ -4,7 +4,7 @@ Hydration is the process that restores the server-side rendered application on t
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Hydration](https://angular.dev/guide/hydration)
-- [@official@Angular Official Docs - provideClientHydration](https://angular.dev/api/platform-browser/provideClientHydration)
+- [@official@Hydration](https://angular.dev/guide/hydration)
+- [@official@provideClientHydration](https://angular.dev/api/platform-browser/provideClientHydration)
 - [@article@Angular Hydration](https://www.bacancytechnology.com/blog/angular-hydration)
 - [@video@Angular SSR Deep Dive (With Client HYDRATION)](https://www.youtube.com/watch?v=U1MP4uCuUVI)

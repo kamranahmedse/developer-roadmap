@@ -1,0 +1,54 @@
+---
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+import { AITutorLayout } from '../../components/AITutor/AITutorLayout';
+import RoadmapChatListing from '../../components/RoadmapAIChat/RoadmapChatListing';
+import {
+  getRoadmapIds,
+  getRoadmapById,
+  resourceTitleFromId,
+} from '../../lib/roadmap';
+
+const ids = await getRoadmapIds();
+const roadmapsRaw = await Promise.all(ids.map((id) => getRoadmapById(id)));
+
+const roadmaps = roadmapsRaw.map((rm) => {
+  const tags = rm.frontmatter.tags || [];
+  const category = tags.includes('role-roadmap')
+    ? 'role'
+    : tags.includes('skill-roadmap')
+      ? 'skill'
+      : 'other';
+
+  return {
+    id: rm.id,
+    title: rm.frontmatter.title || resourceTitleFromId(rm.id),
+    description:
+      rm.frontmatter.briefDescription || rm.frontmatter.description || '',
+    category,
+  };
+});
+
+const ogImage = 'https://roadmap.sh/og-images/ai-tutor.png';
+---
+
+<SkeletonLayout
+  title='Roadmap AI Chat'
+  noIndex={true}
+  ogImageUrl={ogImage}
+  description='Chat with AI Tutor on any roadmap. Pick a roadmap to start chatting.'
+>
+  <AITutorLayout activeTab='roadmap-chat' client:load>
+    <div class='mx-auto flex w-full max-w-3xl flex-grow flex-col p-4'>
+      <div class='mb-6 text-left'>
+        <h1 class='mb-2 text-4xl font-semibold max-md:text-xl'>
+          Chat with a Roadmap
+        </h1>
+        <p class='text-base text-gray-600 max-md:text-sm'>
+          Select a roadmap and start learning with AI as a guide.
+        </p>
+      </div>
+      <RoadmapChatListing client:load roadmaps={roadmaps} />
+    </div>
+  </AITutorLayout>
+</SkeletonLayout>
+

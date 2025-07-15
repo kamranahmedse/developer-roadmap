@@ -4,5 +4,5 @@ The `EVAL` command in Redis allows the execution of Lua scripts directly on the 
 
 Learn more from the following resources:
 
-- [@official@EVAL Documentation](https://redis.io/docs/latest/commands/eval/)
+- [@official@EVAL](https://redis.io/docs/latest/commands/eval/)
 - [@article@Redis EVAL Command](https://www.tutorialspoint.com/redis/scripting_eval.htm)

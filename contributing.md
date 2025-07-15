@@ -55,6 +55,8 @@ Find [the content directory inside the relevant roadmap](https://github.com/kamr
 - Maximum of 8 links per topic.
 - Follow the below style guide for content.
 
+Please note that we are intentionally keeping the content under the topic popup concise. You MUST always aim to explain the topic simply in a **single paragraph** or so and provide external resources where users can learn more about the topic.
+
 ### How To Structure Content
 
 Please adhere to the following style when adding content to a topic:
@@ -77,6 +79,7 @@ Visit the following resources to learn more:
 - `@course@`
 - `@podcast@`
 - `@video@`
+- `@book@`
 
 It's important to add a valid type, this will help us categorize the content and display it properly on the roadmap. The order of the links based on type is same as above.
 
@@ -122,6 +125,22 @@ It's important to add a valid type, this will help us categorize the content and
 - Non-English content.
 - PR's that don't follow our style guide, have no description, and a default title.
 - Links to your own blog articles.
+
+## Local Development
+
+For local development, you can use the following commands:
+
+```bash
+git clone git@github.com:kamranahmedse/developer-roadmap.git --depth 1
+cd developer-roadmap
+pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
+pnpm install
+```
+Run the development server with:
+
+```bash
+pnpm dev
+```
 
 ***
 

@@ -1,0 +1,1 @@
+Go allows functions to return multiple values, which is particularly useful for returning a result along with an error value. This feature simplifies how developers can handle errors and exceptions and ensures that your code directly manages outcomes from function executions. 

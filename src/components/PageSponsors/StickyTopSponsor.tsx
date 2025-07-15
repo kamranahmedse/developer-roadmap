@@ -55,7 +55,7 @@ export function StickyTopSponsor(props: StickyTopSponsorProps) {
       href={sponsor.url}
       onClick={onSponsorClick}
       className={cn(
-        'fixed left-0 right-0 top-0 z-[91] flex min-h-[45px] w-full flex-row items-center justify-center px-14 pb-2 pt-1.5 text-base font-medium text-yellow-950',
+        'fixed left-0 right-0 top-0 z-91 flex min-h-[45px] w-full flex-row items-center justify-center px-14 pb-2 pt-1.5 text-base font-medium text-yellow-950',
       )}
       style={{
         backgroundImage: `linear-gradient(to bottom, ${sponsor.style?.fromColor}, ${sponsor.style?.toColor})`,

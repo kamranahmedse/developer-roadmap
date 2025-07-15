@@ -77,7 +77,7 @@ export default function UpdatePasswordForm(props: UpdatePasswordFormProps) {
               name="current-password"
               id="current-password"
               autoComplete={'current-password'}
-              className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-100"
+              className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-100"
               required
               minLength={6}
               placeholder="Current password"
@@ -101,7 +101,7 @@ export default function UpdatePasswordForm(props: UpdatePasswordFormProps) {
             name="new-password"
             id="new-password"
             autoComplete={'new-password'}
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             minLength={6}
             placeholder="New password"
@@ -122,7 +122,7 @@ export default function UpdatePasswordForm(props: UpdatePasswordFormProps) {
             type="password"
             name="new-password-confirmation"
             id="new-password-confirmation"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-xs outline-hidden placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             autoComplete={'new-password'}
             required
             minLength={6}
@@ -139,7 +139,7 @@ export default function UpdatePasswordForm(props: UpdatePasswordFormProps) {
           disabled={
             isLoading || !newPassword || newPassword !== newPasswordConfirmation
           }
-          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
           {isLoading ? 'Please wait...' : 'Update Password'}
         </button>

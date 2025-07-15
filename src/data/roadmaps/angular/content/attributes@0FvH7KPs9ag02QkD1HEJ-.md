@@ -4,6 +4,6 @@ Building accessible web experience often involves setting Accessible Rich Intern
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - accessibility attributes](https://angular.dev/best-practices/a11y#accessibility-attributes)
+- [@official@Accessibility Attributes](https://angular.dev/best-practices/a11y#accessibility-attributes)
 - [@article@ARIA HTML](https://web.dev/learn/accessibility/aria-html/)
-- [@article@Comprehensive accessibility strayegies for Angular apps leveraging aria-label for dynamic content](https://yasikahivin.medium.com/comprehensive-accessibility-strategies-for-angular-apps-leveraging-aria-label-for-dynamic-content-fdf114834317)
+- [@article@Comprehensive accessibility strategies for Angular apps leveraging aria-label for dynamic content](https://yasikahivin.medium.com/comprehensive-accessibility-strategies-for-angular-apps-leveraging-aria-label-for-dynamic-content-fdf114834317)

@@ -4,5 +4,5 @@ As a vital tool in the data analyst's arsenal, bar charts are essential for anal
 
 Learn more from the following resources:
 
-- [@article@A complete guide to bar charts](https://www.atlassian.com/data/charts/bar-chart-complete-guide)
-- [@video@What is a bar chart?](https://www.youtube.com/watch?v=WTVdncVCvKo)
+- [@article@A Complete Guide to Bar Charts](https://www.atlassian.com/data/charts/bar-chart-complete-guide)
+- [@video@What is a Bar Chart?](https://www.youtube.com/watch?v=WTVdncVCvKo)

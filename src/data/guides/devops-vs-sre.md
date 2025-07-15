@@ -27,7 +27,7 @@ In fact, companies and individuals seeking to deliver applications and services 
 
 Despite their shared goal of improving the software delivery process, some nuances set DevOps and SRE apart.
 
-This guide provides an in-depth discussion of the key differences between each approach, what they entail, similarities, and the tools and technologies involved.Finally, it offers roadmaps for your DevOps or SRE journey.
+This guide provides an in-depth discussion of the key differences between each approach, what they entail, similarities, and the [tools](https://roadmap.sh/devops/tools) and technologies involved. Finally, it offers roadmaps for your DevOps or SRE journey.
 
 ## Differences between DevOps and SRE
 
@@ -153,9 +153,9 @@ DevOps and SRE principles have become popular and widely adopted by organization
 - Provision resources, deploy, and manage applications on cloud platforms like [AWS](https://roadmap.sh/aws), Azure, Google Cloud, etc.
 - Creates standards and manages configuration to enforce and maintain system integrity across multiple environments.
 - Creates a plan to optimize system performance and resource utilization.
-- Promotes knowledge sharing by carefully documenting processes, procedures, and best practices.
+- Promotes knowledge sharing by carefully documenting processes, procedures, and [best practices](https://roadmap.sh/devops/best-practices).
 
-To perform these responsibilities, the DevOps team uses many tools to automate and improve their workflow. Here are some of the DevOps tools commonly used:
+To perform these responsibilities, the DevOps team uses many tools to automate and improve their workflow. Here are some of the [DevOps automation tools](https://roadmap.sh/devops/automation-tools) commonly used:
 
 - **Docker**: [Docker](https://roadmap.sh/docker) is an open-source platform that enables developers to build, deploy, and run containerized applications.
 - **Kubernetes**: [Kubernetes](https://roadmap.sh/kubernetes) is an open-source orchestration platform for automating the deployment processes, scaling, and managing containerized applications.

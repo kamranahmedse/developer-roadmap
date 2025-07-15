@@ -1,29 +1,13 @@
 # Combination
 
-Combination operators in RxJS are used to combine multiple observables into a single observable. There are several types of combination operators, including:
+RxJS combination operators merge multiple observables into a single one using various strategies. Key operators include: `Merge` (emits items from all sources as they arrive), `Concat` (emits items from sources sequentially, one after another), `Zip` (pairs emissions from sources based on index), `CombineLatest` (emits based on the latest values from all sources whenever any source emits), `WithLatestFrom` (combines the value of one observable with the latest values of others when the first observable emits), and `ForkJoin` (emits the last value from each source only after all sources complete).
 
-- Merge: merges multiple observables into a single observable that emits items from each source observable in a sequence.
+Visit the following resources to learn more:
 
-- Concat: concatenates multiple observables into a single observable that emits the items from each source observable in sequence, one after the other.
-
-- Zip: combines the items from multiple observables into a single observable by combining the items from each observable at a corresponding index.
-
-- CombineLatest: combines the latest values from multiple observables into a single observable by emitting an item whenever any of the source observables emit an item.
-
-- WithLatestFrom: combines the latest value from one observable with the latest values from multiple other observables.
-
-- ForkJoin: combines the items from multiple observables into a single observable by emitting an item only after all of the source observables have emitted an item.
-
-Further documentation can be found in the official RxJS documentation:
-
-- Merge: https://rxjs.dev/api/operators/merge
-
-- Concat: https://rxjs.dev/api/operators/concat
-
-- Zip: https://rxjs.dev/api/operators/zip
-
-- CombineLatest: https://rxjs.dev/api/operators/combineLatest
-
-- WithLatestFrom: https://rxjs.dev/api/operators/withLatestFrom
-
-- ForkJoin: https://rxjs.dev/api/index/function/forkJoin
+- [@official@The RxJS Library](https://v17.angular.io/guide/rx-library)
+- [@official@Merge](https://www.learnrxjs.io/learn-rxjs/operators/combination/merge)
+- [@official@Concat](https://www.learnrxjs.io/learn-rxjs/operators/combination/concat)
+- [@official@Zip](https://www.learnrxjs.io/learn-rxjs/operators/combination/zip)
+- [@official@CombineLatest](https://www.learnrxjs.io/learn-rxjs/operators/combination/combineLatest)
+- [@official@WithLatestFrom](https://www.learnrxjs.io/learn-rxjs/operators/combination/withLatestFrom)
+- [@official@ForkJoin](https://www.learnrxjs.io/learn-rxjs/operators/combination/forkJoin)

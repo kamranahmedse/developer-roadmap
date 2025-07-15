@@ -4,6 +4,6 @@ Zabbix is an open-source monitoring software for networks, servers, virtual mach
 
 Learn more from the following resources:
 
-- [@official@Zabbix Website](https://www.zabbix.com/)
+- [@official@Zabbix](https://www.zabbix.com/)
 - [@opensource@zabbix/zabbix](https://github.com/zabbix/zabbix)
-- [@article@Using Zabbix to monitor your home network](https://jswheeler.medium.com/using-zabbix-to-monitor-your-home-network-71ed2b1181ae)
+- [@article@Using Zabbix to Monitor your Home Network](https://jswheeler.medium.com/using-zabbix-to-monitor-your-home-network-71ed2b1181ae)

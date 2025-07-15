@@ -4,6 +4,6 @@ DMARC (Domain-based Message Authentication, Reporting, and Conformance) is an em
 
 Visit the following resources to learn more:
 
-- [@official@DMARC Official Website](https://dmarc.org/)
+- [@official@DMARC](https://dmarc.org/)
 - [@video@What is DMARC: Email Security You Need to Know About](https://www.youtube.com/watch?v=zLxJLKf-ua8)
 - [@feed@Explore top posts about Security](https://app.daily.dev/tags/security?ref=roadmapsh)

@@ -30,11 +30,6 @@
         "type": "article"
       },
       {
-        "title": "Learn Kotlin - w3schools",
-        "url": "https://www.w3schools.com/kotlin/",
-        "type": "article"
-      },
-      {
         "title": "Learn Kotlin Programming for Beginners - Free Code Camp",
         "url": "https://youtu.be/EExSSotojVI?si=4VPW8ZHa2UMX0HH1",
         "type": "video"
@@ -107,11 +102,6 @@
         "title": "Kotlin Docs",
         "url": "https://kotlinlang.org/docs/getting-started.html",
         "type": "article"
-      },
-      {
-        "title": "Kotlin Tutorial for Beginners",
-        "url": "https://www.w3schools.com/kotlin/index.php",
-        "type": "article"
       }
     ]
   },
@@ -154,11 +144,6 @@
       {
         "title": "Gradle Documentation",
         "url": "https://docs.gradle.org/current/userguide/getting_started_eng.html",
-        "type": "article"
-      },
-      {
-        "title": "Get going with Gradle - PDF",
-        "url": "https://assets.gradlehero.com/get-going-with-gradle/get-going-with-gradle-book.pdf",
         "type": "article"
       },
       {
@@ -460,7 +445,7 @@
   },
   "U8iMGGOd2EgPxSuwSG39Z": {
     "title": "Linear",
-    "description": "**LinearLayout** is a view group that aligns all children in a single directioni, vertically or horizontally. You can specify the layout direction with the `android:orientation` attribute.\n\n**LinearLayout** was commonly used in earlier Android development, but with the introduction of ConstraintLayout, it’s less frequently used in modern apps.\n\nVisit the following resources to learn more:",
+    "description": "**LinearLayout** is a view group that aligns all children in a single direction, vertically or horizontally. You can specify the layout direction with the `android:orientation` attribute.\n\n**LinearLayout** was commonly used in earlier Android development, but with the introduction of ConstraintLayout, it’s less frequently used in modern apps.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Linear Layout",
@@ -496,16 +481,10 @@
       }
     ]
   },
-  "xIvplWfe-uDr9iHjPT1Mx": {
+  "recycleview@xIvplWfe-uDr9iHjPT1Mx.md": {
     "title": "RecycleView",
-    "description": "RecyclerView is the most commonly used and powerful list management tool in Android development. Witch makes it easy to efficiently display large sets of data. You supply the data and define how each item looks, and the RecyclerView library dynamically creates the elements when they're needed.\n\nAs the name implies, RecyclerView recycles those individual elements. When an item scrolls off the screen, RecyclerView doesn't destroy its view. Instead, RecyclerView reuses the view for new items that have scrolled onscreen. RecyclerView improves performance and your app's responsiveness, and it reduces power consumption.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Create Dynamic Lists with RecyclerView",
-        "url": "https://developer.android.com/develop/ui/views/layout/recyclerview",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "znvZp24L-PcQwkSObtixs": {
     "title": "TextView",
@@ -791,6 +770,11 @@
       {
         "title": "Observer Pattern",
         "url": "https://en.wikipedia.org/wiki/Observer_pattern",
+        "type": "article"
+      },
+      {
+        "title": "Observer Pattern",
+        "url": "https://refactoring.guru/design-patterns/observer",
         "type": "article"
       }
     ]

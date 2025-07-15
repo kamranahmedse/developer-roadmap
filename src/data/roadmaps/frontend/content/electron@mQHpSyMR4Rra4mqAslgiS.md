@@ -1,6 +1,6 @@
 # Electron
 
-Electron is an open-source framework developed by GitHub that enables developers to build cross-platform desktop applications using web technologies. It combines the Chromium rendering engine with the Node.js runtime, allowing applications to be written in HTML, CSS, and JavaScript. Electron provides APIs to access native operating system functions, bridging the gap between web and desktop development. It's widely used for creating popular applications like Visual Studio Code, Atom, and Discord. Electron apps benefit from rapid development cycles, cross-platform compatibility, and access to a vast ecosystem of web technologies and Node.js modules. However, they can face challenges with resource usage and performance compared to native applications. Despite these trade-offs, Electron remains a popular choice for developers seeking to leverage web skills for desktop app development.
+Electron is a framework for building cross-platform desktop apps with web tech (HTML, CSS, JavaScript). It uses Chromium and Node.js, allowing access to native OS functions. Popular apps like VS Code use Electron. It enables fast development and cross-platform use, but can be resource-intensive. Still, it's a go-to for web developers creating desktop apps.
 
 Visit the following resources to learn more:
 

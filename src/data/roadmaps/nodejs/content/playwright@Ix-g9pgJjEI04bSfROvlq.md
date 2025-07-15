@@ -6,6 +6,6 @@ Playwright provides a high-level API to interact with web pages. You can write s
 
 Visit the following resources to learn more:
 
-- [@official@Playwright Website](https://playwright.dev/)
+- [@official@Playwright](https://playwright.dev/)
 - [@official@Playwright Docs](https://playwright.dev/docs/getting-started-vscode)
 - [@article@Getting Started with Playwright](https://learn.microsoft.com/en-us/shows/getting-started-with-end-to-end-testing-with-playwright/)

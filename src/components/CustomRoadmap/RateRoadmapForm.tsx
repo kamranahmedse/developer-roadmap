@@ -231,7 +231,7 @@ export function RateRoadmapForm(props: RateRoadmapFormProps) {
               </label>
               <textarea
                 id="rating-feedback"
-                className="min-h-24 rounded-md border p-2 text-sm outline-none focus:border-gray-500"
+                className="min-h-24 rounded-md border p-2 text-sm outline-hidden focus:border-gray-500"
                 placeholder="Share your thoughts with the roadmap creator"
                 value={userFeedback}
                 onChange={(e) => {

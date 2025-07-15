@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@official@MEMORY USAGE Command](https://redis.io/docs/latest/commands/memory-usage/)
 - [@official@MEMORY STATS Command](https://redis.io/docs/latest/commands/memory-stats/)
-- [@article@Memory Management best practices](https://cloud.google.com/memorystore/docs/redis/memory-management-best-practices)
+- [@article@Memory Management Best Practices](https://cloud.google.com/memorystore/docs/redis/memory-management-best-practices)

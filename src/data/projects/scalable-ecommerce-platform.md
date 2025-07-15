@@ -2,7 +2,7 @@
 title: 'Scalable E-Commerce Platform'
 description: 'Build an e-commerce platform using microservices architecture.'
 isNew: false
-sort: 19
+sort: 2200
 difficulty: 'advanced'
 nature: 'API'
 skills:
@@ -18,6 +18,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

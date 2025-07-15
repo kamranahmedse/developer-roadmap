@@ -5,4 +5,3 @@ A Replay Attack is a type of network attack where an attacker intercepts and ret
 Visit the following resources to learn more:
 
 - [@article@What Is a Replay Attack?](https://usa.kaspersky.com/resource-center/definitions/replay-attack)
-

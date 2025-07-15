@@ -4,5 +4,5 @@ The `DEL` command in Redis is used to delete one or more keys from the database.
 
 Learn more from the following resources:
 
-- [@official@DEL Documentation](https://redis.io/docs/latest/commands/del/)
+- [@official@DEL](https://redis.io/docs/latest/commands/del/)
 - [@article@Redis DEL Command](https://www.tutorialspoint.com/redis/keys_del.htm)

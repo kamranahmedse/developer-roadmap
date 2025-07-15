@@ -4,6 +4,6 @@ The Angular Router raises events when it navigates from one route to another rou
 
 Visit the following resources to learn more:
 
-- [@official@Router reference - Router events](https://angular.dev/guide/routing/router-reference#router-events)
-- [@official@Router event - API](https://angular.dev/api/router/RouterEvent)
+- [@official@Router Reference - Router events](https://angular.dev/guide/routing/router-reference#router-events)
+- [@official@Router Event - API](https://angular.dev/api/router/RouterEvent)
 - [@article@Router events in Angular](https://medium.com/@gurunadhpukkalla/router-events-in-angular-3112a3968660)

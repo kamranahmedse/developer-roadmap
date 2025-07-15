@@ -4,5 +4,4 @@ Indexes in SQL are database objects that improve the speed of data retrieval ope
 
 Learn more from the following resources:
 
-- [@article@Create SQL Index Statement](https://www.w3schools.com/sql/sql_create_index.asp)
 - [@video@SQL Indexing Best Practices](https://www.youtube.com/watch?v=BIlFTFrEFOI)

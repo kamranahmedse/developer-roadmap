@@ -4,5 +4,5 @@ Wave is a suite of evaluation tools that helps authors make their web content mo
 
 Visit the following resources to learn more:
 
-- [@article@Wave Website](https://wave.webaim.org/)
+- [@official@Wave](https://wave.webaim.org/)
 - [@article@WAVE Accessibility Testing Tool Tutorial](https://www.softwaretestinghelp.com/web-accessibility-testing-tools/)

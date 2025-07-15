@@ -1,6 +1,6 @@
 # Git
 
-Git is a distributed version control system designed to handle projects of any size with speed and efficiency. Created by Linus Torvalds in 2005, Git tracks changes in source code during software development, allowing multiple developers to work together on non-linear development. It provides strong support for branching, merging, and distributed development workflows. Git maintains a complete history of all changes, enabling easy rollbacks and comparisons between versions. Its distributed nature means each developer has a full copy of the repository, allowing for offline work and backup. Git's speed, flexibility, and robust branching and merging capabilities have made it the most widely used version control system in software development, particularly for open-source projects.
+Git is a tool for tracking code changes in software projects. It lets many developers work together by keeping a history of all changes. Git is great for branching (working on different features at once) and merging (combining changes). Everyone has a full copy of the project, so they can work offline. Git is fast, flexible, and the most popular version control system, especially for open-source projects.
 
 Visit the following resources to learn more:
 

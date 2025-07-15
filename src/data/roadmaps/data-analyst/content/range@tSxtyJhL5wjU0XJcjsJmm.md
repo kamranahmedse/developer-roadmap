@@ -4,4 +4,4 @@ The concept of Range refers to the spread of a dataset, primarily in the realm o
 
 Learn more from the following resources:
 
-- [@article@How to find the range of a data set](https://www.scribbr.co.uk/stats/range-statistics/)
+- [@article@How to Find the Range of a Data Set](https://www.scribbr.co.uk/stats/range-statistics/)

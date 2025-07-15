@@ -43,6 +43,7 @@ With that foundation in mind, let's dive into the specific skills you need to ma
 Let’s start with the basics: understanding HTTP. HTTP, or HyperText Transfer Protocol, is the foundation of any interaction on the web. It’s what allows clients (like your web browser) and servers to communicate with each other. As a full-stack developer, having a solid grasp of HTTP is crucial for building, debugging, and maintaining web applications. It’s your bread and butter, and you’ll need to internalize it if you hope to become great at your job.
 
 ### Why HTTP Matters for Full Stack Developers?
+
 Without HTTP, the internet as we know it wouldn’t function, it’s that simple. For a full-stack developer, understanding HTTP means you can effectively manage how your frontend communicates with your backend.
 
 ### Key Concepts to understand in HTTP
@@ -86,7 +87,7 @@ JavaScript adds interactivity and dynamic behavior to web pages. In other words,
 
 ## 3. Writing Modern JavaScript
 
-![modern javascript](https://assets.roadmap.sh/guest/modern-javascript-js84y.jpg)
+![Modern Javascript](https://assets.roadmap.sh/guest/modern-javascript-js84y.jpg)
 
 Modern JavaScript is a key element for full stack development, bringing not just new syntax but powerful tools that make development more efficient and scalable. Mastering this involves understanding how to stay up-to-date with the latest developments in the JS-world, and it also involves technologies such as: npm, build-tools, and bundlers that streamline the development process.
 
@@ -115,7 +116,7 @@ Build tools and bundlers to automate many repetitive tasks, optimize performance
 
 ## 4. At least One Frontend Framework (React, Vue, Angular)
 
-![react, angular & vue](https://assets.roadmap.sh/guest/react-angular-vue-logos-se584.png)
+![React, Angular & Vue](https://assets.roadmap.sh/guest/react-angular-vue-logos-se584.png)
 
 Although HTML, CSS, and JavaScript form the core of front-end development, there are many frameworks and libraries that can significantly enhance your development workflow. Among the most popular front-end frameworks and libraries are React, Vue, and Angular.
 
@@ -214,7 +215,7 @@ In the end, like with many other technologies, there is not one single option th
 
 ## 8. Hosting and Infrastructure
 
-![deployment insfrastructure](https://assets.roadmap.sh/guest/deployment-infrastructures-jrvr9.png)
+![deployment infrastructure](https://assets.roadmap.sh/guest/deployment-infrastructures-jrvr9.png)
 
 For full stack developers, understanding hosting and infrastructure is essential for deploying and managing their web applications. This involves knowing where to host your applications, how to set up servers, and how to ensure your application runs smoothly and efficiently. Here’s a breakdown of key concepts and services in this area:
 

@@ -1,0 +1,111 @@
+---
+import type { FAQType } from '../../components/FAQs/FAQs.astro';
+
+export const faqs: FAQType[] = [
+  {
+    question: 'Do Go and Golang refer to the same language?',
+    answer: [
+      'Go and Golang refer to the same programming language, yes. Although the official name is Go, the term Golang has become a popular nickname since the language was created back in 2009.',
+      'That said, both terms are used interchangeably in the industry, and developers around the world recognize them as representing the same open-source programming language that emphasizes efficiency, scalability, and simplicity.',
+      'Also, it doesn\'t hurt to have a longer, less common word when it comes to trying to find information online about the language (as you can probably guess, searching for "go" would not return the most relevant results immediately).',
+    ],
+  },
+  {
+    question: 'Is Go difficult to learn?',
+    answer: [
+      'Go is not difficult to learn, in fact, by design it was built with simplicity in mind, featuring a minimalistic and clear syntax that reduces the learning curve.',
+      'Its mature and extensive standard library and built-in garbage collector contribute to making the language accessible to developers regardless of their skill levels. Although every new programming language requires some adjustment, many find that Go is less challenging to learn compared to more complex alternatives.',
+      'Of course, all of that changes if you\'re coming into the language without any prior programming knowledge, in that case, you have to learn Go, and other core programming concepts like memory access, data structures, etc. In this scenario, the difficulty would increase considerably.',
+    ],
+  },
+  {
+    question: 'Is Golang good for beginners?',
+    answer: [
+      'Golang is good for beginners, in fact, it\'s considered to be an excellent starting point for those who are entering the world of software development.',
+      'Its straightforward syntax and robust standard library provide a clear framework that allows new programmers to focus on understanding essential coding concepts without being overwhelmed by unnecessary complexity.',
+      'The language is designed to help developers quickly understand how to use it, and this makes Golang an attractive option for those new to programming, as it balances ease of learning with the potential for working on advanced projects.',
+      'Finally, the existing resources, including tutorials, documentation, and community forums, provide support for beginners in their journey toward becoming skilled Go developers.',
+    ],
+  },
+  {
+    question: 'Is it still worth learning Go?',
+    answer: [
+      'Learning Go is still very much worth your time, especially if you\'re interested in building efficient and scalable services.',
+      'The language\'s growing adoption (going from barely 10% of professional usage in 2021 according to StackOverflow\'s survey, to almost 15% in 2024), especially around building scalable backend services, microservices, and performance systems proves that Go is not only still relevant but that its relevance in the industry is in continuous growth.',
+    ],
+  },
+  {
+    question: 'Is Golang backend or frontend?',
+    answer: [
+      'Golang is a backend language designed for building server-side applications and services. Its strengths lie in efficiently handling concurrent operations and high-throughput workloads, making it an excellent choice for developing APIs, microservices, and scalable systems.',
+      'While Golang is not typically used for frontend development, its role in creating reliable and performance backend services is crucial for supporting full-stack projects. And while not considered a "core" technology for web development, there are Golang frameworks such as Iris or Beego that allow developers to create fullstack apps.',
+      'That said, to increase the gap and prove that Go is a backend language, its design focuses on resource management and robust support for network operations, which are essential for ensuring that backend services perform well under heavy loads.',
+    ],
+  },
+  {
+    question: 'Is Golang developer a high-paying role?',
+    answer: [
+      'Golang developer is a very high-paying role when compared to others, such as JavaScript devs for example.',
+      'The role of a Golang developer is often associated with competitive salaries due to its efficiency and scalability, which are highly valued in large enterprise projects.',
+      'As businesses continue to invest in backend services and platform development, the need for skilled Golang developers grows. This demand is reflected in the career prospects and remuneration offered in this field, making it a lucrative option for software engineers who specialize in the Go language and its modern development practices.',
+      'According to Glassdor, an entry-level Go developer role in the United States pays on average 90,000 USD, and it can go up to 200,000 USD for developers with more than 10 years of experience.',
+    ],
+  },
+  {
+    question: 'Is Golang used in AI?',
+    answer: [
+      'Golang is not used in AI as much as other languages such as Python. While it is not the primary language used in artificial intelligence, it does have applications within the AI ecosystem.',
+      'Python remains the dominant language in AI and machine learning due to its extensive libraries and frameworks that are specifically designed for data science. However, Golang is sometimes employed to build performance backends that support AI applications.',
+      'Its efficient execution, concurrency model, and built-in garbage collection make it suitable for developing projects that require rapid processing and robust performance.',
+      'In this way, while Golang is not part of the main AI stack, it can still serve as a critical component in a larger AI architecture, handling tasks that demand scalability and efficient resource management.',
+    ],
+  },
+  {
+    question: 'Is Golang better than Python?',
+    answer: [
+      'Golang is not intrinsically better than Python, just like any other language is not better than any available alternative. This is because when we\'re comparing programming languages, we need to add context to that comparison to understand how those languages are going to be used, what systems are they going to be running in, and many other questions that you need to ask before emitting judgment.',
+      'That said, if we\'re trying to compare apples to apples, then we gotta think that comparing Golang and Python involves evaluating the specific strengths and applications of each language.',
+      'Golang is designed for efficiency, concurrency, and robust system-level programming, making it ideal for building scalable backend services and high-efficiency tools. Its straightforward syntax and built-in features enable developers to create optimized applications. Python, on the other hand, excels in rapid prototyping, data science, and machine learning, thanks to its extensive libraries and ease of use for complex analytical tasks.',
+      'The decision on whether Golang is better than Python depends on the project requirements (that "context" we mentioned before): Go may be preferable for building concurrent, performant services, while Python is often chosen for its flexibility in scientific computing and AI development.',
+    ],
+  },
+  {
+    question: 'Is Go better than JavaScript?',
+    answer: [
+      'Go outperforms JavaScript in terms of execution efficiency, but the two languages generally serve distinct purposes, making a direct comparison difficult.',
+      'Go is tailored for backend work, where its focus on performance, concurrency, and scalability addresses the needs of complex server-side applications.',
+      'JavaScript, on the other hand, is the cornerstone of frontend development and one of the leaders of the backend, enabling the creation of interactive websites and dynamic user interfaces.',
+      'The strengths of each language lie in their respective domains, so the choice between Go and JavaScript depends largely on the specific needs of the project, the previous expertise of the team.',
+    ],
+  },
+  {
+    question: 'Is Golang as fast as C++?',
+    answer: [
+      'Golang is not as fast as C++. While Golang is, indeed, engineered for efficiency and performance, offering an amazing speed for many applications, it can\'t match the raw speed achieved by a lower-level language such as C++.',
+      'Generally speaking, C++ excels in raw speed and low-level control over system resources, making it the preferred choice for scenarios requiring maximum efficiency. However, this comes at the cost of complexity, as lower-level languages offer fewer abstraction layers compared to higher-level ones like Go. In the end, it\'s all about trade-offs.',
+      'Despite this, Golang strikes an excellent balance between efficiency and ease of development, which is a notable achievement for a high-level language.',
+      'Its built-in garbage collection, clear syntax, and comprehensive standard library make it a practical alternative for developers who seek a more accessible yet high-performing programming language.',
+      'This balance allows Golang to provide competitive performance for most modern software development needs while avoiding the steep learning curve and complexity associated with C++.',
+    ],
+  },
+  {
+    question: 'Is Go better than Rust?',
+    answer: [
+      'Go is not better than Rust, nor is Rust intrinsically better than Go. If you think about it, neither Go nor Rust is universally better. Each has its own set of strengths, coming into their own under different circumstances.',
+      'For instance, Go, with its crisp, simple syntax and a suite of built-in tools, is great for fast problem solving. Its design, simple and avoiding complexity at all costs, allows teams to adopt it for service deployment and efficient code resolution.',
+      'On the other side you have Rust, which merits its own place in the podium for its focus on memory safety and detailed control over system resources. Its lower abstraction level (Rust is closer to the machine) explains its steeper learning curve, however, that also makes it a more challenging technology to pick up.',
+      'In the end, the choice between Go and Rust reflects the specific needs of a project and the unique expertise of a team. For those seeking rapid, straightforward development, Go might be the path forward; and for applications where granular control and increased efficiency are paramount, Rust could very well be the preferred tool.',
+    ],
+  },
+  {
+    question: 'Does Golang work on Windows?',
+    answer: [
+      'Golang works on Windows without any issues. The language is designed to extend across multiple operating systems, including the main three: Windows, Linux, and macOS.',
+      'Its robust built-in functions allow developers to compile and run applications on Windows without needing to change much of the underlying code.',
+      'This cross-platform capability means that whether you\'re working on a small job or a large-scale project, you can use Golang to solve pretty much any challenges.',
+      'Developers can easily manage file operations and use logging features to tag errors or important events, ensuring that the application behaves consistently across different environments. It is a very versatile language.',
+      'In the end, Golang\'s support on Windows makes it a practical choice for those looking to build performant and reliable software.',
+    ],
+  },
+];
+---

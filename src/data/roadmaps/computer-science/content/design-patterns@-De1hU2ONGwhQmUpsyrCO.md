@@ -4,7 +4,7 @@ Design patterns are solutions to common problems in software design. They are fo
 
 Visit the following resources to learn more:
 
-- [@article@Design Patterns - Wikipedia](https://en.wikipedia.org/wiki/Software_design_pattern)
+- [@article@Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
 - [@opensource@Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
 - [@article@Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns/)
 - [@feed@Explore top posts about Design Patterns](https://app.daily.dev/tags/design-patterns?ref=roadmapsh)

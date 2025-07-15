@@ -1,18 +1,16 @@
-The IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+Immediately invoked function expressions, or IIFEs, run as soon as they're created. It creates a local scope for variables so they don't mess with other parts of the code. You make an IIFE by placing your code inside the parentheses (). Also, adding another set of parentheses () at the function's end will make it run immediately.
 
-```js
+```javascript
+// Syntax
+
 (function () {
-  console.log('Hello Roadmap!');
-})();
-```
+        // write your code here
+}());
 
-The IIFE is frequently used to create a new scope to avoid variable hoisting from within blocks.
+// Example
 
-```js
 (function () {
-  var roadmap = 'JavaScript';
-  console.log(roadmap);
-})();
-
-console.log(roadmap); // ReferenceError: name is not defined
-```
+  console.log(
+    "roadmap.sh helps prepare for  JavaScript job interview questions"
+  );
+})(); 

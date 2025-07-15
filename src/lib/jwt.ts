@@ -3,6 +3,9 @@ import Cookies from 'js-cookie';
 import type { AllowedOnboardingStatus } from '../api/user';
 
 export const TOKEN_COOKIE_NAME = '__roadmapsh_jt__';
+export const FIRST_LOGIN_PARAM = 'fl' as const;
+export const COURSE_PURCHASE_PARAM = 't';
+export const COURSE_PURCHASE_SUCCESS_PARAM = 'success';
 
 export type TokenPayload = {
   id: string;
@@ -65,27 +68,6 @@ export function visitAIRoadmap(roadmapId: string) {
     secure: !import.meta.env.DEV,
     domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
   });
-}
-
-export function deleteOpenAIKey() {
-  Cookies.remove('oak', {
-    path: '/',
-    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-  });
-}
-
-export function saveOpenAIKey(apiKey: string) {
-  Cookies.set('oak', apiKey, {
-    path: '/',
-    expires: 365,
-    sameSite: 'lax',
-    secure: true,
-    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-  });
-}
-
-export function getOpenAIKey() {
-  return Cookies.get('oak');
 }
 
 const AI_REFERRAL_COOKIE_NAME = 'referral_code';

@@ -8,7 +8,10 @@ import {
 } from '../../../lib/project';
 import AstroIcon from '../../../components/AstroIcon.astro';
 import { ProjectStepper } from '../../../components/Projects/StatusStepper/ProjectStepper';
+import { ProjectTrackingActions } from '../../../components/Projects/StatusStepper/ProjectTrackingActions';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
+
+export const prerender = true;
 
 export async function getStaticPaths() {
   const projects = await getAllProjects();
@@ -49,10 +52,15 @@ const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
 >
   <div class='bg-gray-50'>
     <div class='container'>
-      <ProjectTabs parentRoadmapId={parentRoadmapId} projectId={projectId} activeTab='details' />
+      <ProjectTabs
+        parentRoadmapId={parentRoadmapId}
+        projectId={projectId}
+        activeTab='details'
+        hasNoSubmission={projectData?.hasNoSubmission}
+      />
 
       <div
-        class='mb-4 rounded-lg border bg-gradient-to-b from-gray-100 to-white to-10% p-4 py-2 sm:p-5'
+        class='mb-4 rounded-lg border bg-linear-to-b from-gray-100 to-white to-10% p-4 py-2 sm:p-5'
       >
         <div class='relative'>
           <div class='mb-4 hidden items-center justify-between sm:flex'>
@@ -65,20 +73,31 @@ const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
             </div>
             <Badge variant='yellow' text={projectData.difficulty} />
           </div>
-          <div class='my-2 sm:my-7'>
-            <h1 class='mb-1 text-xl font-semibold sm:mb-2 sm:text-3xl'>
-              {projectData.title}
-            </h1>
-            <p class='text-balance text-sm text-gray-500'>
-              {projectData.description}
-            </p>
+          <div class='my-2 flex items-center justify-between gap-2 sm:my-7'>
+            <div class=''>
+              <h1 class='mb-1 text-xl font-semibold sm:mb-2 sm:text-3xl'>
+                {projectData.title}
+              </h1>
+              <p class='text-sm text-balance text-gray-500'>
+                {projectData.description}
+              </p>
+            </div>
+            {
+              projectData?.hasNoSubmission && (
+                <ProjectTrackingActions projectId={projectId} client:load />
+              )
+            }
           </div>
         </div>
 
-        <ProjectStepper projectId={projectId} client:load />
+        {
+          !projectData?.hasNoSubmission && (
+            <ProjectStepper projectId={projectId} client:load />
+          )
+        }
 
         <div
-          class='prose max-w-full prose-h2:mb-3 prose-h2:mt-5 prose-h3:mb-1 prose-h3:mt-5 prose-p:mb-2 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-pre:my-3 prose-ul:my-3.5 prose-hr:my-5 [&>ul>li]:my-1'
+          class='prose prose-h2:mb-3 prose-h2:mt-5 prose-h3:mb-1 prose-h3:mt-5 prose-p:mb-2 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-pre:my-3 prose-ul:my-3.5 prose-hr:my-5 max-w-full [&>ul>li]:my-1'
         >
           <project.Content />
         </div>

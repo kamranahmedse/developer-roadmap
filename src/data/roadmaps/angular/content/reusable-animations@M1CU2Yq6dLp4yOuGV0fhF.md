@@ -4,6 +4,6 @@ To create a reusable animation, use the `animation()` function to define an anim
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Reusable Animations](https://angular.dev/guide/animations/reusable-animations)
+- [@official@Reusable Animations](https://angular.dev/guide/animations/reusable-animations)
 - [@article@Reusable Animations with Angular](https://catalincodes.com/posts/reusable-animations-with-angular)
 - [@video@Angular Animations: Creating reusable animations!](https://www.youtube.com/watch?v=ObYCutiBOTo)

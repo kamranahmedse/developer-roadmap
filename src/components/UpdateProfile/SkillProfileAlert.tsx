@@ -27,7 +27,7 @@ export function SkillProfileAlert() {
             key={idea}
             className="flex flex-row items-start gap-1.5 sm:items-center"
           >
-            <CheckCircle className="relative top-[3px] h-3.5 w-3.5 flex-shrink-0 stroke-[2.5] sm:top-0" />
+            <CheckCircle className="relative top-[3px] h-3.5 w-3.5 shrink-0 stroke-[2.5] sm:top-0" />
             <span>{idea}</span>
           </p>
         ))}

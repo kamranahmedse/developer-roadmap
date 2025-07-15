@@ -6,5 +6,5 @@ Digital certificates provide a crucial layer of security and trust for online co
 
 Learn more from the following resources:
 
-- [@article@What is an SSL certificate?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-an-ssl-certificate/)
-- [@article@What is a certificate authority](https://www.ssl.com/article/what-is-a-certificate-authority-ca/)
+- [@article@What is an SSL Certificate?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-an-ssl-certificate/)
+- [@article@What is a Certificate Authority](https://www.ssl.com/article/what-is-a-certificate-authority-ca/)

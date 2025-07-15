@@ -4,4 +4,4 @@ Google Workspace, formerly known as G Suite, is a collection of cloud-based prod
 
 Learn more from the following resources:
 
-- [@official@Google Workspace Website](https://workspace.google.com/intl/en_uk/)
+- [@official@Google Workspace](https://workspace.google.com/intl/en_uk/)

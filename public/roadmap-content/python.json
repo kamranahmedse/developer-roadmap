@@ -1,18 +1,44 @@
 {
   "GISOFMKvnBys0O0IMpz2J": {
     "title": "Learn the Basics",
-    "description": "",
-    "links": []
+    "description": "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Python Website",
+        "url": "https://www.python.org/",
+        "type": "article"
+      },
+      {
+        "title": "Python - Wiki",
+        "url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+        "type": "article"
+      },
+      {
+        "title": "Tutorial Series: How to Code in Python",
+        "url": "https://www.digitalocean.com/community/tutorials/how-to-write-your-first-python-3-program",
+        "type": "article"
+      },
+      {
+        "title": "Google's Python Class",
+        "url": "https://developers.google.com/edu/python",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Python",
+        "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Learn Python - Full Course",
+        "url": "https://www.youtube.com/watch?v=4M87qBgpafk",
+        "type": "video"
+      }
+    ]
   },
   "6xRncUs3_vxVbDur567QA": {
     "title": "Basic Syntax",
     "description": "Setup the environment for python and get started with the basics.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "W3Schools - Python",
-        "url": "https://www.w3schools.com/python/",
-        "type": "article"
-      },
       {
         "title": "Python Basics",
         "url": "https://www.tutorialspoint.com/python/python_basic_syntax.htm",
@@ -37,16 +63,6 @@
       {
         "title": "Variables in Python",
         "url": "https://realpython.com/python-variables",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools — Python Variables",
-        "url": "https://www.w3schools.com/python/python_variables.asp",
-        "type": "article"
-      },
-      {
-        "title": "Python Data Types",
-        "url": "https://www.w3schools.com/python/python_datatypes.asp",
         "type": "article"
       },
       {
@@ -126,16 +142,11 @@
   },
   "-DJgS6l2qngfwurExlmmT": {
     "title": "Functions, Builtin Functions",
-    "description": "In programming, a function is a reusable block of code that executes a certain functionality when it is called. Functions are integral parts of every programming language because they help make your code more modular and reusable. In Python, we define a function with the `def` keyword, then write the function identifier (name) followed by parentheses and a colon.\n\nExample\n-------\n\n    def greet(name):\n        print(f\"Hello, {name}!\")\n    \n    greet(\"Roadmap.sh\")     \n    \n\nVisit the following resources to learn more:",
+    "description": "In programming, a function is a reusable block of code that executes a certain functionality when it is called. Functions are integral parts of every programming language because they help make your code more modular and reusable. In Python, we define a function with the `def` keyword, then write the function identifier (name) followed by parentheses and a colon.\n\nExample\n-------\n\n    def greet(name):\n        print(f\"Hello, {name}!\")\n    \n    \n    greet(\"Roadmap.sh\")\n    \n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Built-in Functions in Python",
         "url": "https://docs.python.org/3/library/functions.html",
-        "type": "article"
-      },
-      {
-        "title": "Python Functions - W3Schools",
-        "url": "https://www.w3schools.com/python/python_functions.asp",
         "type": "article"
       },
       {
@@ -179,6 +190,21 @@
         "title": "Tuples Documentation",
         "url": "https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences",
         "type": "article"
+      },
+      {
+        "title": "When and How to Use Tuples",
+        "url": "https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/",
+        "type": "article"
+      },
+      {
+        "title": "Python's tuple Data Type: A Deep Dive With Examples",
+        "url": "https://realpython.com/python-tuple/#getting-started-with-pythons-tuple-data-type",
+        "type": "article"
+      },
+      {
+        "title": "why are Tuples even a thing?",
+        "url": "https://www.youtube.com/watch?v=fR_D_KIAYrE",
+        "type": "video"
       }
     ]
   },
@@ -192,11 +218,6 @@
         "type": "article"
       },
       {
-        "title": "An W3Schools - Python Sets",
-        "url": "https://www.w3schools.com/python/python_sets.asp",
-        "type": "article"
-      },
-      {
         "title": "Python Sets tutorial for Beginners",
         "url": "https://www.youtube.com/watch?v=t9j8lCUGZXo",
         "type": "video"
@@ -205,7 +226,7 @@
   },
   "bc9CL_HMT-R6nXO1eR-gP": {
     "title": "Dictionaries",
-    "description": "In Python, a dictionary is a built-in data type that allows you to store key-value pairs. Each key in the dictionary is unique, and each key is associated with a value. Dictionaries are unordered collections, meaning the order of items is not guaranteed.\n\nLearn more from the following resources:",
+    "description": "In Python, a dictionary is a built-in data type that allows you to store key-value pairs. Each key in the dictionary is unique, and each key is associated with a value. Starting from Python 3.7, dictionaries maintain the order of items as they were added.\n\nLearn more from the following resources:",
     "links": [
       {
         "title": "Dictionaries in Python",
@@ -213,8 +234,8 @@
         "type": "article"
       },
       {
-        "title": "W3 Schools - Dictionaries",
-        "url": "https://www.w3schools.com/python/python_dictionaries.asp",
+        "title": "Dictionaries in Python",
+        "url": "https://realpython.com/python-dicts/",
         "type": "article"
       }
     ]
@@ -223,11 +244,6 @@
     "title": "Loops",
     "description": "Loops are used to execute a block of code repeatedly.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Loops in Python",
-        "url": "https://www.geeksforgeeks.org/loops-in-python/",
-        "type": "article"
-      },
       {
         "title": "Python \"while\" Loops (Indefinite Iteration)",
         "url": "https://realpython.com/python-while-loop/",
@@ -246,119 +262,6 @@
     ]
   },
   "OPD4WdMO7q4gRZMcRCQh1": {
-    "title": "Arrays and Linked Lists",
-    "description": "",
-    "links": []
-  },
-  "0NlRczh6ZEaFLlT6LORWz": {
-    "title": "Heaps, Stacks and Queues",
-    "description": "",
-    "links": []
-  },
-  "DG4fi1e5ec2BVckPLsTJS": {
-    "title": "Hash Tables",
-    "description": "",
-    "links": []
-  },
-  "uJIqgsqUbE62Tyo3K75Qx": {
-    "title": "Binary Search Tree",
-    "description": "",
-    "links": []
-  },
-  "kLBgy_nxxjE8SxdVi04bq": {
-    "title": "Recursion",
-    "description": "",
-    "links": []
-  },
-  "vvTmjcWCVclOPY4f_5uB0": {
-    "title": "Sorting Algorithms",
-    "description": "",
-    "links": []
-  },
-  "274uk28wzxn6EKWQzLpHs": {
-    "title": "Modules",
-    "description": "Modules refer to a file containing Python statements and definitions. A file containing Python code, for example: `example.py`, is called a module, and its module name would be example. We use modules to break down large programs into small manageable and organized files. Furthermore, modules provide reusability of code.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Python Modules",
-        "url": "https://docs.python.org/3/tutorial/modules.html",
-        "type": "article"
-      },
-      {
-        "title": "Modules in Python",
-        "url": "https://www.programiz.com/python-programming/modules",
-        "type": "article"
-      }
-    ]
-  },
-  "JDDG4KfhtIlw1rkNCzUli": {
-    "title": "Learn the Basics",
-    "description": "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically-typed and garbage-collected.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Python Website",
-        "url": "https://www.python.org/",
-        "type": "article"
-      },
-      {
-        "title": "Python - Wiki",
-        "url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
-        "type": "article"
-      },
-      {
-        "title": "Tutorial Series: How to Code in Python",
-        "url": "https://www.digitalocean.com/community/tutorials/how-to-write-your-first-python-3-program",
-        "type": "article"
-      },
-      {
-        "title": "Google's Python Class",
-        "url": "https://developers.google.com/edu/python",
-        "type": "article"
-      },
-      {
-        "title": "W3Schools - Python Tutorial",
-        "url": "https://www.w3schools.com/python",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Python",
-        "url": "https://app.daily.dev/tags/python?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Learn Python - Full Course",
-        "url": "https://www.youtube.com/watch?v=4M87qBgpafk",
-        "type": "video"
-      }
-    ]
-  },
-  "VJSIbYJcy2MC6MOFBrqXi": {
-    "title": "Data Structures & Algorithms",
-    "description": "A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem. Learning data structures and algorithms allow us to write efficient and optimized computer programs.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Visit Dedicated DSA Roadmap",
-        "url": "https://roadmap.sh/datastructures-and-algorithms",
-        "type": "article"
-      },
-      {
-        "title": "Learn DS & Algorithms",
-        "url": "https://www.programiz.com/dsa",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Algorithms",
-        "url": "https://app.daily.dev/tags/algorithms?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Data Structures Illustrated",
-        "url": "https://www.youtube.com/playlist?list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY",
-        "type": "video"
-      }
-    ]
-  },
-  "kIuns7FOwapwtFLKo1phQ": {
     "title": "Arrays and Linked Lists",
     "description": "Arrays store elements in contiguous memory locations, resulting in easily calculable addresses for the elements stored and this allows faster access to an element at a specific index. Linked lists are less rigid in their storage structure and elements are usually not stored in contiguous locations, hence they need to be stored with additional tags giving a reference to the next element. This difference in the data storage scheme decides which data structure would be more suitable for a given situation.\n\nVisit the following resources to learn more:",
     "links": [
@@ -384,7 +287,7 @@
       }
     ]
   },
-  "rSfg5M65LyZldhrdWOr90": {
+  "0NlRczh6ZEaFLlT6LORWz": {
     "title": "Heaps, Stacks and Queues",
     "description": "**Stacks:** Operations are performed LIFO (last in, first out), which means that the last element added will be the first one removed. A stack can be implemented using an array or a linked list. If the stack runs out of memory, it’s called a stack overflow.\n\n**Queue:** Operations are performed FIFO (first in, first out), which means that the first element added will be the first one removed. A queue can be implemented using an array.\n\n**Heap:** A tree-based data structure in which the value of a parent node is ordered in a certain way with respect to the value of its child node(s). A heap can be either a min heap (the value of a parent node is less than or equal to the value of its children) or a max heap (the value of a parent node is greater than or equal to the value of its children).\n\nVisit the following resources to learn more:",
     "links": [
@@ -420,7 +323,7 @@
       }
     ]
   },
-  "0-m8jVuDKE8hX1QorKGTM": {
+  "DG4fi1e5ec2BVckPLsTJS": {
     "title": "Hash Tables",
     "description": "Hash Table, Map, HashMap, Dictionary or Associative are all the names of the same data structure. It is a data structure that implements a set abstract data type, a structure that can map keys to values.\n\nVisit the following resources to learn more:",
     "links": [
@@ -441,7 +344,7 @@
       }
     ]
   },
-  "7NZlydjm4432vLY1InBS7": {
+  "uJIqgsqUbE62Tyo3K75Qx": {
     "title": "Binary Search Tree",
     "description": "A binary search tree, also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree\n\nVisit the following resources to learn more:",
     "links": [
@@ -462,7 +365,7 @@
       }
     ]
   },
-  "94KnPMQdNTOwQkUv37tAk": {
+  "kLBgy_nxxjE8SxdVi04bq": {
     "title": "Recursion",
     "description": "Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem. Recursion solves such recursive problems by using functions that call themselves from within their own code.\n\nVisit the following resources to learn more:",
     "links": [
@@ -478,7 +381,7 @@
       }
     ]
   },
-  "YNptpfK9qv2ovmkUXLkJT": {
+  "vvTmjcWCVclOPY4f_5uB0": {
     "title": "Sorting Algorithms",
     "description": "Sorting refers to arranging data in a particular format. Sorting algorithm specifies the way to arrange data in a particular order. Most common orders are in numerical or lexicographical order. The importance of sorting lies in the fact that data searching can be optimized to a very high level, if data is stored in a sorted manner.\n\nVisit the following resources to learn more:",
     "links": [
@@ -496,6 +399,48 @@
         "title": "Explore top posts about Algorithms",
         "url": "https://app.daily.dev/tags/algorithms?ref=roadmapsh",
         "type": "article"
+      }
+    ]
+  },
+  "274uk28wzxn6EKWQzLpHs": {
+    "title": "Modules",
+    "description": "Modules refer to a file containing Python statements and definitions. A file containing Python code, for example: `example.py`, is called a module, and its module name would be example. We use modules to break down large programs into small manageable and organized files. Furthermore, modules provide reusability of code.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Python Modules",
+        "url": "https://docs.python.org/3/tutorial/modules.html",
+        "type": "article"
+      },
+      {
+        "title": "Modules in Python",
+        "url": "https://www.programiz.com/python-programming/modules",
+        "type": "article"
+      }
+    ]
+  },
+  "VJSIbYJcy2MC6MOFBrqXi": {
+    "title": "Data Structures & Algorithms",
+    "description": "A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem. Learning data structures and algorithms allow us to write efficient and optimized computer programs.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated DSA Roadmap",
+        "url": "https://roadmap.sh/datastructures-and-algorithms",
+        "type": "article"
+      },
+      {
+        "title": "Learn DS & Algorithms",
+        "url": "https://www.programiz.com/dsa",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Algorithms",
+        "url": "https://app.daily.dev/tags/algorithms?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Data Structures Illustrated",
+        "url": "https://www.youtube.com/playlist?list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY",
+        "type": "video"
       }
     ]
   },
@@ -533,6 +478,11 @@
         "title": "Modules in Python",
         "url": "https://www.programiz.com/python-programming/modules",
         "type": "article"
+      },
+      {
+        "title": "Python Modules and Packages",
+        "url": "https://realpython.com/python-modules-packages/",
+        "type": "article"
       }
     ]
   },
@@ -540,11 +490,6 @@
     "title": "Lambdas",
     "description": "Python Lambda Functions are anonymous function means that the function is without a name. As we already know that the def keyword is used to define a normal function in Python. Similarly, the lambda keyword is used to define an anonymous function in Python.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "Lambdas in Python",
-        "url": "https://www.w3schools.com/python/python_lambda.asp",
-        "type": "article"
-      },
       {
         "title": "How to use Lambda functions",
         "url": "https://realpython.com/python-lambda/",
@@ -588,13 +533,13 @@
     "description": "An iterator is an object that contains a countable number of values. An iterator is an object that can be iterated upon, meaning that you can traverse through all the values. Technically, in Python, an iterator is an object which implements the iterator protocol, which consist of the methods **iter**() and **next**() .\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Iterators in Python",
-        "url": "https://www.w3schools.com/python/python_iterators.asp",
+        "title": "Python Iterators",
+        "url": "https://www.programiz.com/python-programming/iterator",
         "type": "article"
       },
       {
-        "title": "Python Iterators",
-        "url": "https://www.programiz.com/python-programming/iterator",
+        "title": "Iterators and Iterables in Python",
+        "url": "https://realpython.com/python-iterators-iterables/",
         "type": "article"
       }
     ]
@@ -622,7 +567,7 @@
   },
   "P_Di-XPSDITmU3xKQew8G": {
     "title": "Object Oriented Programming",
-    "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.\n\nVisit the following resources to learn more:",
+    "description": "In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphism, encapsulation, etc., in programming. The main concept of OOPs is to bind the data and the functions that work on that together as a single unit so that no other part of the code can access this data.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Object Oriented Programming in Python",
@@ -656,11 +601,6 @@
         "type": "article"
       },
       {
-        "title": "Python Classes and Objects",
-        "url": "https://www.w3schools.com/python/python_classes.asp",
-        "type": "article"
-      },
-      {
         "title": "Python OOP Tutorial",
         "url": "https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc",
         "type": "video"
@@ -670,22 +610,11 @@
   "S0FLE70szSVUPI0CDEQK7": {
     "title": "Inheritance",
     "description": "Inheritance is a fundamental concept in object-oriented programming (OOP) that allows one class to inherit the properties and behavior of another class.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Python Inheritance",
-        "url": "https://www.w3schools.com/python/python_inheritance.asp",
-        "type": "article"
-      },
-      {
-        "title": "Inheritance in Python",
-        "url": "https://www.javatpoint.com/inheritance-in-python",
-        "type": "article"
-      }
-    ]
+    "links": []
   },
   "zAS4YiEJ6VPsyABrkIG8i": {
     "title": "Methods, Dunder",
-    "description": "A method in python is somewhat similar to a function, except it is associated with object/classes. Methods in python are very similar to functions except for two major differences.\n\n*   The method is implicitly used for an object for which it is called.\n*   The method is accessible to data that is contained within the class.\n\nDunder or magic methods in Python are the methods having two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading. Few examples for magic methods are: **`__init__`**, **`__add__`**, **`__len__`**, **`__repr__`** etc.\n\nVisit the following resources to learn more:",
+    "description": "A method in python is somewhat similar to a function, except it is associated with object/classes. Methods in python are very similar to functions except for two major differences.\n\n*   The method is implicitly used for an object for which it is called.\n*   The method is accessible to data that is contained within the class.\n\nDunder or magic methods in Python are the methods that have two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading. Few examples for magic methods are: **`__init__`**, **`__add__`**, **`__len__`**, **`__repr__`** etc.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Method vs Function in Python",
@@ -756,11 +685,6 @@
         "type": "article"
       },
       {
-        "title": "Python PIP Introduction",
-        "url": "https://www.w3schools.com/python/python_pip.asp",
-        "type": "article"
-      },
-      {
         "title": "Explore top posts about PIP",
         "url": "https://app.daily.dev/tags/pip?ref=roadmapsh",
         "type": "article"
@@ -786,6 +710,11 @@
         "title": "Poetry Docs",
         "url": "https://python-poetry.org/docs/",
         "type": "article"
+      },
+      {
+        "title": "Python Poetry - Basics",
+        "url": "https://www.youtube.com/watch?v=Ji2XDxmXSOM",
+        "type": "video"
       }
     ]
   },
@@ -796,11 +725,6 @@
       {
         "title": "Python List Comprehensions",
         "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions",
-        "type": "article"
-      },
-      {
-        "title": "Python - List Comprehension",
-        "url": "https://www.w3schools.com/python/python_lists_comprehension.asp",
         "type": "article"
       },
       {
@@ -839,6 +763,11 @@
         "title": "Python Paradigms",
         "url": "https://opensource.com/article/19/10/python-programming-paradigms",
         "type": "article"
+      },
+      {
+        "title": "Learn Functional Programming - Python Course",
+        "url": "https://www.youtube.com/watch?v=5QZYGU0C2OA",
+        "type": "video"
       }
     ]
   },
@@ -1279,7 +1208,7 @@
     "description": "An extremely fast Python linter and code formatter, written in Rust.",
     "links": [
       {
-        "title": "ruff documentation",
+        "title": "Ruff documentation",
         "url": "https://docs.astral.sh/ruff/",
         "type": "article"
       }
@@ -1317,7 +1246,7 @@
     "description": "Sphinx is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Shpinx Website",
+        "title": "Sphinx Website",
         "url": "https://www.sphinx-doc.org/en/master/",
         "type": "article"
       }

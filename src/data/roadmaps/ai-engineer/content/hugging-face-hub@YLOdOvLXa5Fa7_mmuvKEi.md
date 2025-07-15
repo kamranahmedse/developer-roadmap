@@ -4,5 +4,5 @@ The Hugging Face Hub is a comprehensive platform that hosts over 900,000 machine
 
 Learn more from the following resources:
 
-- [@official@Documentation](https://huggingface.co/docs/hub/en/index)
+- [@official@Hugging Face Documentation](https://huggingface.co/docs/hub/en/index)
 - [@course@nlp-official](https://huggingface.co/learn/nlp-course/en/chapter4/1)

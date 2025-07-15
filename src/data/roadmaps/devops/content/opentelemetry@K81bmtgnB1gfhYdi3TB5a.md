@@ -5,6 +5,6 @@ OpenTelemetry is an open-source observability framework for cloud-native softwar
 Visit the following resources to learn more:
 
 - [@official@OpenTelemetry Website](https://opentelemetry.io/)
-- [@official@Official Documentation](https://opentelemetry.io/docs/)
+- [@official@OpenTelemetry Documentation](https://opentelemetry.io/docs/)
 - [@video@What is OpenTelemetry?](https://www.youtube.com/watch?v=mUA-uzk94ro)
 - [@video@OpenTelemetry Course - Understand Software Performance](https://www.youtube.com/watch?v=r8UvWSX3KA8)

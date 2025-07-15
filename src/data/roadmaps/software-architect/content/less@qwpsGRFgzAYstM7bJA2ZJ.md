@@ -5,4 +5,4 @@
 Visit the following resources to learn more:
 
 - [@official@LeSS Framework](https://less.works/less/framework)
-- [@video@Introductio to LeSS](https://www.youtube.com/watch?v=1BZf_Oa7W94)
+- [@video@Introduction to LeSS](https://www.youtube.com/watch?v=1BZf_Oa7W94)

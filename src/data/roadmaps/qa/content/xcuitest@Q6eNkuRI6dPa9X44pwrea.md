@@ -4,6 +4,6 @@ Mobile app testing, and more specifically, app UI testing involves checking how 
 
 Visit the following resources to learn more:
 
-- [@article@Official Documentation](https://developer.apple.com/documentation/xctest/)
+- [@official@XCUITest Documentation](https://developer.apple.com/documentation/xctest/)
 - [@article@Getting Started with XCUITest](https://www.browserstack.com/guide/getting-started-xcuitest-framework)
 - [@article@Xcuitest - End to End Testing](https://testautomationu.applitools.com/learningpaths.html?id=mobile-swift-path)

@@ -4,7 +4,8 @@ Bitbucket is a web-based version control repository hosting service owned by Atl
 
 Visit the following resources to learn more:
 
-- [@official@Bitbucket Website](https://bitbucket.org/product)
+- [@official@Bitbucket](https://bitbucket.org/product)
+- [@official@Overview of Bitbucket](https://bitbucket.org/product/guides/getting-started/overview#a-brief-overview-of-bitbucket)
 - [@article@Using Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
 - [@video@Bitbucket tutorial | How to use Bitbucket Cloud](https://www.youtube.com/watch?v=M44nEyd_5To)
 - [@feed@Explore top posts about Bitbucket](https://app.daily.dev/tags/bitbucket?ref=roadmapsh)

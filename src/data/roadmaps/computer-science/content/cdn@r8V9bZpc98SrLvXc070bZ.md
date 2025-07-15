@@ -4,5 +4,6 @@ A CDN is a network of servers that are distributed geographically. The servers a
 
 Visit the following resources to learn more:
 
+- [@article@What is a CDN?](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/)
 - [@article@Content Delivery Network (CDN) - System Design](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#content-delivery-network-cdn)
 - [@video@Content Delivery Networks](https://www.youtube.com/watch?v=6DXEPcXKQNY)

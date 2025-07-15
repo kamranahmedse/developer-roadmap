@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Kotlin](https://kotlinlang.org/)
 - [@official@Kotlin Docs](https://kotlinlang.org/docs/getting-started.html)
-- [@article@Kotlin Tutorial for Beginners](https://www.w3schools.com/kotlin/index.php)

@@ -1,3 +1,0 @@
-# Covariant and Contravariant Lifetimes
-
-In Rust, lifetime, type, and function parameter types can be covariant, invariant, or contravariant. Specifically, covariant describes the relationship between a complex type and a simpler type when the simpler type varies. Covariant occurs when the ordering of types is preserved, i.e., changing a type T to a subtype T' in a complex type C<T>, changes the complex type to a subtype C<T'>. In simpler terms, if type B is a subtype of type A, then a collection of B is a subtype of a collection of A, providing the collection type is covariant. This applies to `&T`, `*const T`, `Box<T>`, `[T]`, `[T; n]`, and `T` when they are function return types in Rust.

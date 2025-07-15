@@ -4,4 +4,5 @@ Batch operations in Redis allow you to execute multiple commands efficiently in 
 
 Learn more from the following resources:
 
-- [@article@Using pipelining to batch issue commands](https://www.alibabacloud.com/help/en/redis/use-cases/use-pipelining-to-batch-issue-commands#:~:text=You%20can%20use%20the%20Redis,network%20latency%20and%20improving%20performance.)
+- [@article@Batch Operations in Redis](https://www.compilenrun.com/docs/middleware/redis/redis-operations/redis-batch-operations/)
+- [@article@Using Pipelining to Batch Issue Commands](https://www.alibabacloud.com/help/en/redis/use-cases/use-pipelining-to-batch-issue-commands#:~:text=You%20can%20use%20the%20Redis,network%20latency%20and%20improving%20performance.)

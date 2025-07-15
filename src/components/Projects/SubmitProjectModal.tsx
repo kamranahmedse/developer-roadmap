@@ -273,7 +273,7 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
       <form className="mt-4" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="w-full rounded-lg border border-gray-300 p-2 text-sm focus:border-gray-500 focus:outline-none"
+          className="w-full rounded-lg border border-gray-300 p-2 text-sm focus:border-gray-500 focus:outline-hidden"
           placeholder="https://github.com/you/solution-repo"
           value={repoUrl}
           onChange={(e) => setRepoUrl(e.target.value)}
@@ -290,13 +290,6 @@ export function SubmitProjectModal(props: SubmitProjectModalProps) {
           <p className="mt-2 text-sm font-medium text-red-500">{error}</p>
         )}
       </form>
-
-      <button
-        className="absolute right-2.5 top-2.5 text-gray-600 hover:text-black"
-        onClick={onClose}
-      >
-        <X className="h-5 w-5" />
-      </button>
     </Modal>
   );
 }

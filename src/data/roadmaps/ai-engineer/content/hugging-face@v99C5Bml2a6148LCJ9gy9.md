@@ -4,6 +4,6 @@ Hugging Face is a leading AI company and open-source platform that provides tool
 
 Learn more from the following resources:
 
-- [@official@Hugging Face Website](https://huggingface.co)
+- [@official@Hugging Face](https://huggingface.co)
 - [@video@What is Hugging Face? - Machine Learning Hub Explained](https://www.youtube.com/watch?v=1AUjKfpRZVo)
 - [@course@Hugging Face Official Video Course](https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o)

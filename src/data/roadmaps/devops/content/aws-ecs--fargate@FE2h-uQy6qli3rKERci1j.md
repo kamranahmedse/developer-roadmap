@@ -5,7 +5,7 @@ ECS is a container orchestration service that allows you to run Docker container
 Visit the following resources to learn more:
 
 - [@official@AWS - Fargate Docs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)
-- [@offcial@AWS - ECS Docs](https://docs.aws.amazon.com/ecs/)
+- [@official@AWS - ECS Docs](https://docs.aws.amazon.com/ecs/)
 - [@video@Amazon ECS: AWS Fargate Overview](https://www.youtube.com/watch?v=yi22xrvPnPk)
 - [@video@AWS ECS Tutorial](https://www.youtube.com/watch?v=esISkPlnxL0)
 

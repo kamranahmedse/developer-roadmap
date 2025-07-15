@@ -4,5 +4,5 @@ Got is a lighter, human-friendly, and powerful HTTP request library explicitly d
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation](https://www.npmjs.com/package/got)
+- [@official@Got Documentation](https://www.npmjs.com/package/got)
 - [@article@How to consume APIs using GOT in Node.js?](https://rapidapi.com/guides/call-apis-got)

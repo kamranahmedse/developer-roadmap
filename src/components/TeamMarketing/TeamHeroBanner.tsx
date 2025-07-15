@@ -28,7 +28,7 @@ export function TeamHeroBanner() {
     <div className="bg-white py-8 lg:py-12">
       <div className="container">
         <div className="flex flex-row items-center justify-start text-left lg:justify-between">
-          <div className="flex flex-grow flex-col">
+          <div className="flex grow flex-col">
             <h1 className="mb-0.5 text-2xl font-bold sm:mb-2.5 sm:text-4xl lg:mb-4 lg:text-5xl">
               Roadmaps for Teams
             </h1>

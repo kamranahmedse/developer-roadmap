@@ -4,5 +4,5 @@ VMware is a leading provider of virtualization and cloud computing software. Its
 
 Learn more from the following resources:
 
-- [@official@VMWare Website](https://www.vmware.com/)
+- [@official@VMWare](https://www.vmware.com/)
 - [@video@What is VMWare](https://www.youtube.com/watch?v=zPNCp9AV-vA)

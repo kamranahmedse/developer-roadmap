@@ -4,12 +4,29 @@ jsonUrl: '/jsons/roadmaps/backend.json'
 pdfUrl: '/pdfs/roadmaps/backend.pdf'
 order: 2
 briefTitle: 'Backend'
-briefDescription: 'Step by step guide to becoming a backend developer in 2024'
+briefDescription: 'Step by step guide to becoming a backend developer in 2025'
 title: 'Backend Developer'
-description: 'Step by step guide to becoming a modern backend developer in 2024'
+description: 'Step by step guide to becoming a modern backend developer in 2025'
 hasTopics: true
 isForkable: false
-tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
+courses:
+  - title: 'Complete Course to Master SQL'
+    description: 'Learn SQL from scratch with this comprehensive course'
+    link: 'https://roadmap.sh/courses/sql'
+    features:
+      - '55+ Lessons'
+      - 'AI Tutor'
+      - 'Coding Environment'
+      - 'Quizzes'
+      - 'Certification'
+    instructor:
+      name: 'Kamran Ahmed'
+      image: 'https://github.com/kamranahmedse.png'
+      title: 'Founder - roadmap.sh'
+partner:
+  description: "Get the latest Backend news from our sister site"
+  link: "https://thenewstack.io/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
+  linkText: "TheNewStack.io"
 question:
   title: 'What is Backend Development?'
   description: |
@@ -27,11 +44,11 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-09-16'
 seo:
-  title: 'Backend Developer Roadmap: What is Backend Development?'
+  title: 'Backend Developer Roadmap: What is Backend Development'
   description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven roadmap.'
   keywords:
-    - 'backend roadmap 2024'
-    - 'backend developer roadmap 2024'
+    - 'backend roadmap 2025'
+    - 'backend developer roadmap 2025'
     - 'guide to becoming a developer'
     - 'guide to becoming a backend developer'
     - 'backend roadmap'
@@ -46,21 +63,20 @@ seo:
     - 'backend developer roadmap'
     - 'become a backend developer'
     - 'backend developer career path'
+    - 'typescript developer'
     - 'javascript developer'
     - 'modern javascript developer'
-    - 'node developer'
+    - 'nodejs developer'
     - 'skills for backend development'
     - 'learn backend development'
     - 'what is backend development'
     - 'backend developer quiz'
     - 'backend developer interview questions'
 relatedRoadmaps:
-  - 'docker'
+  - 'frontend'
   - 'full-stack'
   - 'system-design'
   - 'python'
-  - 'java'
-  - 'golang'
   - 'devops'
   - 'javascript'
   - 'nodejs'

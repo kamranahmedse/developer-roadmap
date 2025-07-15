@@ -11,9 +11,8 @@ import { useAuth } from '../../hooks/use-auth';
 import { ModalLoader } from './ModalLoader.tsx';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 import { X } from 'lucide-react';
-import type { PageType } from '../CommandMenu/CommandMenu.tsx';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
-import { renderFlowJSON } from '../../../editor/renderer/renderer.ts';
+import { renderFlowJSON } from '@roadmapsh/editor';
 
 export type ProgressMapProps = {
   userId?: string;
@@ -66,8 +65,10 @@ export function UserProgressModal(props: ProgressMapProps) {
   let resourceJsonUrl = import.meta.env.DEV
     ? 'http://localhost:3000'
     : 'https://roadmap.sh';
-  if (resourceType === 'roadmap') {
+  if (resourceType === 'roadmap' && renderer === 'balsamiq') {
     resourceJsonUrl += `/${resourceId}.json`;
+  } else if (resourceType === 'roadmap' && renderer === 'editor') {
+    resourceJsonUrl = `${import.meta.env.PUBLIC_API_URL}/v1-official-roadmap/${resourceId}`;
   } else {
     resourceJsonUrl += `/best-practices/${resourceId}.json`;
   }
@@ -209,12 +210,12 @@ export function UserProgressModal(props: ProgressMapProps) {
   return (
     <div
       id={'user-progress-modal'}
-      className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
+      className="fixed left-0 right-0 top-0 z-100 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
     >
       <div className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          className={`popup-body relative rounded-lg bg-white pt-[1px] shadow`}
+          className={`popup-body relative rounded-lg bg-white pt-[1px] shadow-sm`}
         >
           <UserProgressModalHeader
             isLoading={isLoading}

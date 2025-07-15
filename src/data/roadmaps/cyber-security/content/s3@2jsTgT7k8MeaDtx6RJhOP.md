@@ -4,5 +4,6 @@ Amazon Simple Storage Service (S3) is a scalable, object-based cloud storage ser
 
 Learn more from the following resources:
 
-- [@article@AWS S3 Website](https://aws.amazon.com/pm/serv-s3/?gclid=Cj0KCQjwrp-3BhDgARIsAEWJ6SyhAtgc3NJbsxaAXVbWEOW5gG-XFH51jIc8SxahYSxNJ501l9soUA0aAnEjEALw_wcB&trk=777b3ec4-de01-41fb-aa63-cde3d034a89e&sc_channel=ps&ef_id=Cj0KCQjwrp-3BhDgARIsAEWJ6SyhAtgc3NJbsxaAXVbWEOW5gG-XFH51jIc8SxahYSxNJ501l9soUA0aAnEjEALw_wcB:G:s&s_kwcid=AL!4422!3!638364429346!e!!g!!aws%20s3!19096959014!142655567183)
+- [@official@Amazon Web Services S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+- [@official@Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)
 - [@video@Getting started with AWS S3](https://www.youtube.com/watch?v=e6w9LwZJFIA)

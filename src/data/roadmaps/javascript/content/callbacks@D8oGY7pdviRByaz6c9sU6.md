@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Callbacks in JavaScript](https://javascript.info/callbacks)
 - [@article@Callback Functions](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
-- [@article@W3School CallBack Function](https://www.w3schools.com/js/js_callback.asp)

@@ -13,7 +13,7 @@ Key elements of Scrum:
 
 Visit the following resources to learn more:
 
-- [@article@What is scrum and how to get started](https://www.atlassian.com/agile/scrum.)
+- [@article@What is Scrum and How to Get Started](https://www.atlassian.com/agile/scrum.)
 - [@article@Scrum Methodology: The Complete Guide & Best Practices](https://thedigitalprojectmanager.com/projects/pm-methodology/scrum-methodology-complete-guide/)
 - [@article@Essential Topics for the Scrum Product Owner](https://www.scrum.org/resources/blog/essential-topics-scrum-product-owner)
 - [@article@Scrum • Topics - Thriving Technologist](https://thrivingtechnologist.com/topics/scrum/)

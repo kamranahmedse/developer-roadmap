@@ -1,16 +1,15 @@
+import { useStore } from '@nanostores/react';
 import { useEffect, useState } from 'react';
+import { useAuth } from '../../hooks/use-auth';
+import { useToast } from '../../hooks/use-toast';
+import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { httpGet } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
-import { MemberProgressItem } from './MemberProgressItem';
-import { useToast } from '../../hooks/use-toast';
-import { useStore } from '@nanostores/react';
 import { $currentTeam } from '../../stores/team';
 import { GroupRoadmapItem } from './GroupRoadmapItem';
-import { getUrlParams, setUrlParams } from '../../lib/browser';
-import { useAuth } from '../../hooks/use-auth';
-import { MemberProgressModal } from './MemberProgressModal';
 import { MemberCustomProgressModal } from './MemberCustomProgressModal';
-import { canManageCurrentRoadmap } from '../../stores/roadmap.ts';
+import { MemberProgressItem } from './MemberProgressItem';
+import { MemberProgressModal } from './MemberProgressModal';
 
 export type UserProgress = {
   resourceTitle: string;

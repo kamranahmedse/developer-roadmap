@@ -37,10 +37,10 @@ export function Stepper(props: StepperProps) {
               {!isComplete && (
                 <span className="mr-2 font-semibold">{stepCounter + 1}</span>
               )}
-              <span className="flex flex-grow">{step.label}</span>
+              <span className="flex grow">{step.label}</span>
             </li>
             {!isLast && (
-              <li className={'mx-5 flex flex-grow rounded-md bg-gray-200'}>
+              <li className={'mx-5 flex grow rounded-md bg-gray-200'}>
                 <span className={'h-1 w-full'} />
               </li>
             )}

@@ -86,7 +86,7 @@ export function TeamDropdown() {
           <span>Choose Team</span>
         </span>
         <button
-          className="relative flex w-full cursor-pointer items-center justify-between rounded border p-2 text-sm hover:bg-gray-100"
+          className="relative flex w-full cursor-pointer items-center justify-between rounded-sm border p-2 text-sm hover:bg-gray-100"
           onClick={() => setShowDropdown(!showDropdown)}
         >
           {pendingTeamIds.length > 0 && (
@@ -125,7 +125,7 @@ export function TeamDropdown() {
             <ul>
               <li>
                 <a
-                  className="flex w-full cursor-pointer items-center gap-2 truncate rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  className="flex w-full cursor-pointer items-center gap-2 truncate rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                   href="/account"
                 >
                   <span className="truncate">Personal Account</span>
@@ -142,10 +142,10 @@ export function TeamDropdown() {
                 return (
                   <li key={team?._id}>
                     <a
-                      className="flex w-full cursor-pointer items-center gap-2 rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                      className="flex w-full cursor-pointer items-center gap-2 rounded-sm p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                       href={`${pageLink}`}
                     >
-                      <span className="min-w-0 flex-grow truncate">
+                      <span className="min-w-0 grow truncate">
                         {team.name}
                       </span>
                       {pendingTeamIds.includes(team._id) && (
@@ -159,7 +159,7 @@ export function TeamDropdown() {
               })}
             </ul>
             <a
-              className="mt-2 flex w-full cursor-pointer items-center justify-center gap-2 rounded bg-gray-100 p-2 text-sm font-medium text-slate-800 hover:opacity-90"
+              className="mt-2 flex w-full cursor-pointer items-center justify-center gap-2 rounded-sm bg-gray-100 p-2 text-sm font-medium text-slate-800 hover:opacity-90"
               href="/team/new"
             >
               <span>+</span>

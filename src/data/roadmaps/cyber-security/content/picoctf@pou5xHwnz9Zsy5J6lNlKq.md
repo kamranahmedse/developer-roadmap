@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@picoCTF Website](https://picoctf.org/)
+- [@official@picoCTF](https://picoctf.org/)
 - [@video@BEGINNER Capture The Flag - PicoCTF 2021 001 "Obedient Cat"](https://www.youtube.com/watch?v=P07NH5F-t3s)

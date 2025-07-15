@@ -4,5 +4,5 @@ Puppet is an open-source software configuration management tool that enables sys
 
 Learn more from the following resources:
 
-- [@official@Puppet documentation](https://puppet.com/docs/puppet/latest/index.html)
-- [@official@Puppet PostgreSQL module documentation](https://forge.puppet.com/modules/puppetlabs/postgresql/)
+- [@official@Puppet Documentation](https://puppet.com/docs/puppet/latest/index.html)
+- [@official@Puppet PostgreSQL Module Documentation](https://forge.puppet.com/modules/puppetlabs/postgresql/)

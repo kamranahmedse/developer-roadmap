@@ -13,3 +13,9 @@ User personas are fictional representations of your target users, created to hel
 - **Share and Refine**: Share your personas with your team and gather feedback. Make any necessary changes to ensure that the personas accurately represent your target users.
 
 Remember, user personas are not static, and should be updated as you gather more user data and insights. Keep them in mind throughout the design process, and always consider their needs and goals when making design decisions.
+
+Visit the following resources to learn more:
+
+- [@article@Personas – A Simple Introduction](https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them)
+- [@article@Personas Make Users Memorable for Product Team Members](https://www.nngroup.com/articles/persona/)
+- [@video@Personas in UX](https://youtube.com/playlist?list=PLJOFJ3Ok_ids-oEPCltCVtmdDOXiyttpq&si=v7ZaI65bQNTfXKHJ)

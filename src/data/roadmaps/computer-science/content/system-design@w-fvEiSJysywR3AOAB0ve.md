@@ -5,8 +5,8 @@ System design is the process of defining the architecture, modules, interfaces, 
 Visit the following resources to learn more:
 
 - [@opensource@System Design Primer](https://github.com/donnemartin/system-design-primer)
-- [@article@System Design: The complete course](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo)
+- [@article@System Design: The Complete Course](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo)
 - [@video@System Design 101](https://www.youtube.com/watch?v=Y-Gl4HEyeUQ)
 - [@video@Scaling the Unscalable](https://www.youtube.com/watch?v=a2rcgzludDU)
-- [@video@System design interview: Scale to 1 million users](https://www.youtube.com/watch?v=YkGHxOg9d3M)
+- [@video@System Design interview: Scale to 1 million users](https://www.youtube.com/watch?v=YkGHxOg9d3M)
 - [@feed@Explore top posts about Career](https://app.daily.dev/tags/career?ref=roadmapsh)

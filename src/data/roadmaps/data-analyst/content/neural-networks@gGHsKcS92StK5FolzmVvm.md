@@ -4,5 +4,5 @@ Neural Networks play a pivotal role in the landscape of deep learning, offering 
 
 Learn more from the following resources:
 
-- [@article@What is a neural network?](https://aws.amazon.com/what-is/neural-network/)
+- [@article@What is a Neural Network?](https://aws.amazon.com/what-is/neural-network/)
 - [@article@Explained: Neural networks](https://news.mit.edu/2017/explained-neural-networks-deep-learning-0414)

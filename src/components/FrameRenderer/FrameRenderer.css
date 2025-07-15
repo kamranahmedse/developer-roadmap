@@ -4,7 +4,7 @@ svg text tspan {
   text-rendering: optimizeSpeed;
 }
 
-code {
+code:not(pre code) {
   background: #1e1e3f;
   color: #9efeff;
   padding: 3px 5px;

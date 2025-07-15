@@ -4,4 +4,4 @@ The terraform list command is used to display a list of resources within the Ter
 
 Learn more from the following resources:
 
-- [@official@Terraform state list](https://developer.hashicorp.com/terraform/cli/commands/state/list)
+- [@official@Terraform State List](https://developer.hashicorp.com/terraform/cli/commands/state/list)

@@ -4,5 +4,5 @@ Redis key expiration allows you to set a time-to-live (TTL) for keys, automatica
 
 Learn more from the following resources:
 
-- [@official@PEXPIRE Documentation](https://redis.io/docs/latest/commands/pexpire/)
-- [@official@EXPIRE Documentation](https://redis.io/docs/latest/commands/expire/)
+- [@official@PEXPIRE](https://redis.io/docs/latest/commands/pexpire/)
+- [@official@EXPIRE](https://redis.io/docs/latest/commands/expire/)

@@ -1,0 +1,5 @@
+In Go, memory allocation is managed automatically by the runtime. It determines whether to place a variable on the stack or the heap based on how the variable is declared and used. For instance, short-lived variables might be stored on the stack, while data that needs to persist longer is allocated on the heap. To determine this, the Go compiler uses a process called "escape analysis", which examines how and where a variable is used. 
+
+If the compiler determines that a variable doesn't "escape" its current scope (i.e., it is not used outside the function or block in which it's declared), it can be safely allocated on the stack. On the other hand, if a variable does escape, it's moved to the heap, where the garbage collector manages its memory.
+
+This system removes the need for devs to manually allocate or free memory, which helps reduce common errors like leaks and improper deallocation. 

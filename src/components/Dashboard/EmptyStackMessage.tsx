@@ -17,7 +17,7 @@ export function EmptyStackMessage(props: EmptyStackMessageProps) {
     <div className="absolute inset-0 flex items-center justify-center rounded-md bg-black/50">
       <div
         className={cn(
-          'flex max-w-[200px] flex-col items-center justify-center rounded-md bg-white p-4 shadow-sm',
+          'flex max-w-[200px] flex-col items-center justify-center rounded-md bg-white p-4 shadow-xs',
           bodyClassName,
         )}
       >

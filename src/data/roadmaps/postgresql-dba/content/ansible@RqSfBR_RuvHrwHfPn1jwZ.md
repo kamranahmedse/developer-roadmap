@@ -4,6 +4,6 @@ Ansible is a widely used open-source configuration management and provisioning t
 
 Learn more from the following resources:
 
-- [@official@Ansible Website](https://www.ansible.com/)
+- [@official@Ansible](https://www.ansible.com/)
 - [@opensource@ansible/ansible](https://github.com/ansible/ansible)
 - [@article@Ansible Tutorial for Beginners: Ultimate Playbook & Examples](https://spacelift.io/blog/ansible-tutorial)

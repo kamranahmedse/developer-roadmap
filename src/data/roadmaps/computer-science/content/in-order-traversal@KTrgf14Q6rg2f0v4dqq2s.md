@@ -4,4 +4,5 @@ In-order traversal is a tree traversal algorithm that visits the left subtree, t
 
 Visit the following resources to learn more:
 
+- [@article@Tree Traversal Techniques](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)
 - [@video@Tree | Illustrated Data Structures](https://www.youtube.com/watch?v=S2W3SXGPVyU)

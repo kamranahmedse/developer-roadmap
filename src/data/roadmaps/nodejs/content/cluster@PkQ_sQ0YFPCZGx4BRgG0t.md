@@ -4,4 +4,4 @@ The Cluster module allows you to easily create child processes that each runs si
 
 Visit the following resources to learn more:
 
-- [@official@Cluster Docs](https://nodejs.org/api/cluster.html#cluster)
+- [@official@Node.js Cluster](https://nodejs.org/api/cluster.html#cluster)

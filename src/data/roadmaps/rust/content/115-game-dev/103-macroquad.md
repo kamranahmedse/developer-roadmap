@@ -1,3 +1,0 @@
-# macroquad
-
-Macroquad is a Rust library that offers a festive and straightforward way to prototype and develop games quickly. It is an ultra-efficient and flexible cross-platform game engine that specializes in 2D game development. Macroquad features a 2D rendering engine driven by the powerful metal-based miniquad, and includes support for inputs, random number generation, coroutine-based async programming, and sound. It is also portable across various platforms such as Windows, MacOS, Linux, WebAssembly, Android, and iOS.

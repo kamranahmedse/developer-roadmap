@@ -4,4 +4,5 @@ An index is a data structure that you build and assign on top of an existing tab
 
 Visit the following resources to learn more:
 
+- [@article@Database Indexes Explained](https://www.essentialsql.com/what-is-a-database-index/)
 - [@video@Database Indexing Explained](https://www.youtube.com/watch?v=-qNSXK7s7_w)

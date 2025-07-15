@@ -4,7 +4,7 @@ HashiCorp Vault is a tool designed for securely managing secrets and protecting 
 
 Visit the following resources to learn more:
 
-- [@official@Vault - Official Website](https://www.vaultproject.io/)
+- [@official@HashiCorp Vault](https://www.vaultproject.io/)
 - [@opensource@hashicorp/vault](https://github.com/hashicorp/vault)
 - [@video@HashiCorp Vault Explained in 180 seconds](https://www.youtube.com/watch?v=nG8fCdWkLzc)
 - [@video@HashiCorp Vault Tutorial for Beginners](https://www.youtube.com/watch?v=ae72pKpXe-s)

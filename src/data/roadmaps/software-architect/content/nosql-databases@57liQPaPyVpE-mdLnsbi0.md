@@ -11,5 +11,6 @@ Types of NoSQL databases
 
 Visit the following resources to learn more:
 
-- [@article@NoSQL Databases](https://www.mongodb.com/nosql-explained)
+- [@article@NoSQL Database - AWS](https://aws.amazon.com/nosql/)
+- [@article@NoSQL Databases](https://www.mongodb.com/resources/basics/databases/nosql-explained)
 - [@feed@Explore top posts about NoSQL](https://app.daily.dev/tags/nosql?ref=roadmapsh)

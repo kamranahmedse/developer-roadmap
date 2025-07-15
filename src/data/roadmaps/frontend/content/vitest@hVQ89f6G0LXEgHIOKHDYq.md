@@ -1,6 +1,6 @@
 # Vitest
 
-Vitest is a fast and lightweight testing framework for JavaScript and TypeScript projects, designed as a Vite-native alternative to Jest. It leverages Vite's transformation pipeline and config resolution, offering near-instant test execution and hot module replacement (HMR) for tests. Vitest provides a Jest-compatible API, making migration easier for projects already using Jest. It supports features like snapshot testing, mocking, and code coverage out of the box. Vitest's architecture allows for parallel test execution and watch mode, significantly speeding up the testing process. Its integration with Vite's ecosystem makes it particularly well-suited for projects already using Vite, but it can be used in any JavaScript project. Vitest's focus on speed and developer experience has made it an increasingly popular choice for modern web development workflows.
+Vitest is a speedy testing tool for JavaScript and TypeScript, made to work well with Vite (a build tool). It runs tests very quickly and updates them live as you code. Vitest is similar to Jest (another testing tool), so it's easy to switch if you're used to Jest. It includes features like snapshot testing, mocking, and checking code coverage. Vitest can run multiple tests at once and watch for changes, making testing faster. It's great for Vite projects but works with any JavaScript project too.
 
 Visit the following resources to learn more:
 

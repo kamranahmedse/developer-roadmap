@@ -33,7 +33,7 @@ export function SubmitSuccessModal(props: SubmitSuccessModalProps) {
             type="text"
             readOnly={true}
             value={projectSolutionUrl}
-            className="w-full rounded-md border bg-gray-50 px-2.5 py-2 text-sm text-gray-700 focus:outline-none"
+            className="w-full rounded-md border bg-gray-50 px-2.5 py-2 text-sm text-gray-700 focus:outline-hidden"
             onClick={(e) => {
               e.currentTarget.select();
             }}

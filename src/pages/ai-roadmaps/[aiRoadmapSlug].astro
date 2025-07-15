@@ -1,0 +1,22 @@
+---
+import { AIRoadmap } from '../../components/AIRoadmap/AIRoadmap';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+
+export const prerender = false;
+
+interface Params extends Record<string, string | undefined> {
+  aiRoadmapSlug: string;
+}
+
+const { aiRoadmapSlug } = Astro.params as Params;
+---
+
+<SkeletonLayout
+  title='AI Tutor'
+  briefTitle='AI Tutor'
+  description='AI Tutor'
+  keywords={['ai', 'tutor', 'education', 'learning']}
+  canonicalUrl={`/ai-roadmaps/${aiRoadmapSlug}`}
+>
+  <AIRoadmap client:load roadmapSlug={aiRoadmapSlug} />
+</SkeletonLayout>

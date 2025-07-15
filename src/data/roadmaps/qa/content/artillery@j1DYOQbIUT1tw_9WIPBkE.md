@@ -16,5 +16,5 @@ Artillery prioritizes developer productivity and happiness, and follows the "bat
 
 Visit the following resources to learn more:
 
-- [@official@Artillery Website](https://www.artillery.io/)
+- [@official@Artillery](https://www.artillery.io/)
 - [@video@Learn Artillery](https://www.youtube.com/playlist?list=PLJ9A48W0kpRJh1_uW2mVNhSIVCMYmNlm7)

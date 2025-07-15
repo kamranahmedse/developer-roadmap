@@ -8,5 +8,5 @@ NOTE: This isn't a chrome-specific feature, and most browsers (Chromium based or
 
 Visit the following resources to learn more:
 
-- [@article@Official Docs](https://developer.chrome.com/docs/devtools/overview/)
+- [@official@Chrome Dev Tools](https://developer.chrome.com/docs/devtools/overview/)
 - [@feed@Explore top posts about DevTools](https://app.daily.dev/tags/devtools?ref=roadmapsh)

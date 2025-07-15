@@ -6,11 +6,9 @@ import {
   SkipForward,
   Sparkles,
 } from 'lucide-react';
-import { showLoginPopup } from '../../lib/popup';
 
 type QuestionsProgressProps = {
   isLoading?: boolean;
-  showLoginAlert?: boolean;
   knowCount?: number;
   didNotKnowCount?: number;
   totalCount?: number;
@@ -22,7 +20,6 @@ type QuestionsProgressProps = {
 
 export function QuestionsProgress(props: QuestionsProgressProps) {
   const {
-    showLoginAlert,
     isLoading = false,
     knowCount = 0,
     didNotKnowCount = 0,
@@ -41,7 +38,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
       <div className="mb-3 flex items-center text-gray-600">
         <div className="relative w-full flex-1 rounded-xl bg-gray-200 p-1">
           <div
-            className="duration-400 absolute bottom-0 left-0 top-0 rounded-xl bg-slate-800 transition-[width]"
+            className="absolute top-0 bottom-0 left-0 rounded-xl bg-slate-800 transition-[width] duration-400"
             style={{
               width: `${donePercentage}%`,
             }}
@@ -101,20 +98,6 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <span className="inline lg:hidden">Progress</span>
         </button>
       </div>
-
-      {showLoginAlert && (
-        <p className="-mx-6 -mb-6 mt-6 border-t bg-yellow-100 py-3 text-sm text-yellow-900">
-          You progress is not saved. Please{' '}
-          <button
-            onClick={() => {
-              showLoginPopup();
-            }}
-            className="underline-offset-3 font-medium underline hover:text-black"
-          >
-            login to save your progress.
-          </button>
-        </p>
-      )}
     </div>
   );
 }

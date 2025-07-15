@@ -1,7 +1,7 @@
 Setting up a CI/CD pipeline from scratch involves several steps. Assuming you’ve already set up your project on a version control system, and everyone in your team has proper access to it, then the next steps would help:
 
 1. **Set up the Continuous Integration (CI)**:
-- Select a continuous integration tool (there are many, like Jenkins, GitLab CI, CircleCI, pick one).
+- Select a continuous integration tool (there are many, like [Jenkins](https://jenkins.io), [GitLab CI](https://about.gitlab.com), [CircleCI](https://circleci.com), pick one).
 - Connect the CI tool to your version control system.
 - Write a build script that defines the build process, including steps like code checkout, dependency installation, compiling the code, and running tests.
 - Set up automated testing to run on every code commit or pull request.
@@ -18,7 +18,7 @@ Define deployment scripts that specify how to deploy your application to differe
 Remember that this system should be able to pull the artifacts from the continuous integration pipeline, so set up that access as well.
 
 4. **Infrastructure Setup**:
-- Provision infrastructure using IaC tools (e.g., Terraform, CloudFormation).
+- Provision infrastructure using IaC tools (e.g., [Terraform](https://terraform.io), [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)).
 - Ensure environments are consistent and reproducible to reduce times if there is a need to create new ones or destroy and recreate existing ones. This should be as easy as executing a command without any human intervention.
 
 5. **Set up your monitoring and logging solutions**:

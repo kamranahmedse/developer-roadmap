@@ -4,5 +4,5 @@ As a data analyst, it's crucial to understand various model evaluation technique
 
 Learn more from the following resources:
 
-- [@article@What is model evaluation](https://domino.ai/data-science-dictionary/model-evaluation)
-- [@article@Model evaluation metrics](https://www.markovml.com/blog/model-evaluation-metrics)
+- [@article@What is Model Evaluation](https://domino.ai/data-science-dictionary/model-evaluation)
+- [@article@Model Evaluation Metrics](https://www.markovml.com/blog/model-evaluation-metrics)

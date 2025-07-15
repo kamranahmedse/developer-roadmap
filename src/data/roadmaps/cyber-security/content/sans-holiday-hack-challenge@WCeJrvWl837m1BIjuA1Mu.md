@@ -4,5 +4,5 @@ The SANS Holiday Hack Challenge is an annual cybersecurity event that offers par
 
 Learn more from the following resources:
 
-- [@official@SANS Holiday Hack Website](https://www.sans.org/mlp/holiday-hack-challenge-2023/)
+- [@official@SANS Holiday Hack](https://www.sans.org/mlp/holiday-hack-challenge-2023/)
 - [@video@Official SANS Holiday Hack Challenge Video](https://www.youtube.com/watch?v=zfhhLi8jZzI)

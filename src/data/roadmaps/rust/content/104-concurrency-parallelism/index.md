@@ -1,3 +1,0 @@
-# Concurrency and Parallelism
-
-Concurrency and parallelism are two terms related to multitasking. In **concurrency**, tasks have the ability to run in an overlapping manner, which does not necessarily mean they run at the same exact time. It means the start and end times of the tasks intersect. On the other hand, **parallelism** is the process where several tasks are executed simultaneously. In the context of programming, especially in systems such as Rust, these concepts are exceptionally important. Understanding them is crucial to implementing complex algorithms and systems that benefit from the efficient use of resources, and most importantly, time.

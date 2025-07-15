@@ -4,6 +4,6 @@ Brute force search is a simple algorithm that checks for a pattern in a string b
 
 Visit the following resources to learn more:
 
-- [@article@A beginner guide to Brute Force Algorithm for substring search](https://nulpointerexception.com/2019/02/10/a-beginner-guide-to-brute-force-algorithm-for-substring-search/)
+- [@article@A Beginner Guide to Brute Force Algorithm for Substring Search](https://nulpointerexception.com/2019/02/10/a-beginner-guide-to-brute-force-algorithm-for-substring-search/)
 - [@article@Brute Force Algorithm in Cybersecurity and String Search](https://www.baeldung.com/cs/brute-force-cybersecurity-string-search)
 - [@course@Brute-Force Substring Search](https://www.coursera.org/learn/algorithms-part2/lecture/2Kn5i/brute-force-substring-search)

@@ -8,14 +8,7 @@ seo:
   description: 'Build an impressive online presence with these 10 handpicked web developer portfolio templates.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/roammap-18-xvyn0.jpg'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "How to Become a Front-End Developer in 7 Steps": "/frontend/how-to-become-frontend-developer"
-  "What Front End Programming Languages Should You Learn?": "/frontend/languages"
-  "Top 7 Frontend Frameworks to Use in 2024: Pro Advice": "/frontend/frameworks"
-  "12 In-Demand Front End Developer Skills to Master": "/frontend/developer-skills"
-  "Top 30 Popular Front End Developer Interview Questions": "/questions/frontend"
-  "Frontend vs. Backend in AI Development": "/frontend/vs-backend-ai"
-  "Frontend Developer Job Description [2024 Template]": "/frontend/job-description"
+relatedGuidesId: frontend
 isNew: false
 type: 'textual'
 date: 2024-10-18
@@ -229,7 +222,7 @@ Having a well-structured web development portfolio is crucial for showcasing you
 
 1. **Personal brand**: The portfolio should have a personal bio or summary that gives a clear representation of who the developer is.
 
-2. **Showcase skills and expertise**: The portfolio should highlight the owner's competencies. Demonstrates proficiency in various technologies, frameworks, libraries, and tools used in [frontend](https://roadmap.sh/frontend) or [backend](https://roadmap.sh/backend) development. In addition, consider showcasing your professional certifications, companies worked for, and years of experience.
+2. **Showcase skills and expertise**: The portfolio should highlight the owner's competencies. Demonstrates proficiency in various [technologies](https://roadmap.sh/frontend/technologies), frameworks, libraries, and tools used in [frontend](https://roadmap.sh/frontend) or [backend](https://roadmap.sh/backend) development. In addition, consider showcasing your professional certifications, companies worked for, and years of experience.
 
 3. **Highlight project and contribution**: The portfolio should contain work or project sections to demonstrate real-world impact. It can also include community engagement, like open source projects, technical writing, and public speaking.
 

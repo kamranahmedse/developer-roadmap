@@ -4,4 +4,4 @@ The SET command sets the defined key to hold a value, if the key already holds a
 
 Learn more from the following resources:
 
-- [@official@SET Command](https://redis.io/docs/latest/commands/set/)
+- [@official@SET](https://redis.io/docs/latest/commands/set/)

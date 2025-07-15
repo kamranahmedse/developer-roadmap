@@ -5,5 +5,5 @@ Knight's Tour Problem is a problem where we have to find a path for a knight to 
 Visit the following resources to learn more:
 
 - [@article@Knights Tour](https://bradfieldcs.com/algos/graphs/knights-tour/)
-- [@article@Knights Tour Proble](https://www.codesdope.com/course/algorithms-knights-tour-problem/)
+- [@article@Knights Tour Problem](https://www.codesdope.com/course/algorithms-knights-tour-problem/)
 - [@article@Backtracking: The Knight’s Tour Problem](https://www.codingninjas.com/codestudio/library/backtracking-the-knights-tour-problem)

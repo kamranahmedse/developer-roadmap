@@ -1,6 +1,5 @@
 ---
 import GuideContent from '../../components/Guide/GuideContent.astro';
-import GuideHeader from '../../components/GuideHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getGuideById } from '../../lib/guide';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
@@ -26,6 +25,6 @@ const ogImageUrl =
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}
 >
-  <GuideHeader guide={guide!} />
   <GuideContent guide={guide!} />
+  <div slot="changelog-banner" />
 </BaseLayout>

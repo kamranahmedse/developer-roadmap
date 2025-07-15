@@ -4,5 +4,6 @@
 
 Learn more from the following resources:
 
-- [@article@What is cloud computing?](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing)
-- [@video@What is Cloud Computing? | Amazon Web Services](https://www.youtube.com/watch?v=mxT233EdY5c)
+- [@article@Cloud Computing - IBM](https://www.ibm.com/think/topics/cloud-computing)
+- [@article@What is Cloud Computing? - Azure](https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing)
+- [@video@What is Cloud Computing? - Amazon Web Services](https://www.youtube.com/watch?v=mxT233EdY5c)

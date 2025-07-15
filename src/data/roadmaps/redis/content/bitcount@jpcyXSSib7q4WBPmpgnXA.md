@@ -4,5 +4,5 @@ The BITCOUNT command in Redis is used to count the number of bits set to 1 (i.e.
 
 Learn more from the following resources:
 
-- [@official@BITCOUNT - Docs](https://redis.io/docs/latest/commands/bitcount/)
+- [@official@BITCOUNT](https://redis.io/docs/latest/commands/bitcount/)
 - [@article@BITCOUNT](https://upstash.com/docs/redis/sdks/ts/commands/bitmap/bitcount)

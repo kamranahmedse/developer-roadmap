@@ -1,6 +1,6 @@
 # Notifications API
 
-The Notifications API is a web API that allows web pages to display system-level notifications to the user. These notifications can be used to alert the user of important events, such as new messages or updates, even when the web page is not open in the browser. To use the Notifications API, a web page must first request permission from the user to display notifications. If permission is granted, the page can then use the `Notification` constructor to create a new notification and display it to the user. The notification can include a title, body text, and an icon, and it can be customized with options such as a timeout and a click action.
+The Notifications API lets websites show system alerts to users, like for new messages or updates, even if the site isn't open. The site must ask for permission first. If allowed, it can create notifications with a title, text, and icon. These can also have a timeout or an action when clicked. It helps keep users informed about important events from the website.
 
 Visit the following resources to learn more:
 

@@ -5,8 +5,7 @@ MySQL is an open-source relational database management system (RDBMS) known for 
 Visit the following resources to learn more:
 
 - [@official@MySQL](https://www.mysql.com/)
-- [@article@W3Schools - MySQL Tutorial](https://www.w3schools.com/mySQl/default.asp)
 - [@article@MySQL for Developers](https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction)
 - [@article@MySQL Tutorial](https://www.mysqltutorial.org/)
-- [@video@MySQL Full Course for free](https://www.youtube.com/watch?v=5OdVJbNCSso)
+- [@video@MySQL Complete Course](https://www.youtube.com/watch?v=5OdVJbNCSso)
 - [@feed@Explore top posts about MySQL](https://app.daily.dev/tags/mysql?ref=roadmapsh)

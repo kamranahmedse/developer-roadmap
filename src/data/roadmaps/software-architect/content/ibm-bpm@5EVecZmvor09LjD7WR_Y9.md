@@ -4,6 +4,6 @@ IBM BPM is a comprehensive business process management platform. It provides a r
 
 Visit the following resources to learn more:
 
-- [@official@BPM overview](https://www.ibm.com/docs/en/bpm/8.5.5?topic=manager-business-process-overview)
+- [@official@Overview BPM](https://www.ibm.com/docs/en/bpm/8.5.5?topic=manager-business-process-overview)
 - [@video@BPM Demo](https://www.youtube.com/watch?v=6yn4nCWMNLI)
 - [@feed@Explore top posts about IBM](https://app.daily.dev/tags/ibm?ref=roadmapsh)

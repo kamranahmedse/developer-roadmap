@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@LPOP Documentation](https://redis.io/docs/latest/commands/lpop/)
+- [@official@LPOP](https://redis.io/docs/latest/commands/lpop/)

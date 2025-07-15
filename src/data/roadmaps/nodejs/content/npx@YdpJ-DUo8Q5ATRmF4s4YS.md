@@ -4,5 +4,5 @@ npx is a very powerful command that's been available in npm starting version 5.2
 
 Visit the following resources to learn more:
 
+- [@official@npx](https://docs.npmjs.com/cli/commands/npx/)
 - [@article@Introduction to the npx Node.js Package Runner](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
-- [@official@Official Documentation](https://docs.npmjs.com/cli/commands/npx/)

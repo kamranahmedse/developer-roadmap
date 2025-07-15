@@ -8,11 +8,11 @@ In programming, a function is a reusable block of code that executes a certain f
 def greet(name):
     print(f"Hello, {name}!")
 
-greet("Roadmap.sh")     
+
+greet("Roadmap.sh")
 ```
 
 Visit the following resources to learn more:
 
 - [@official@Built-in Functions in Python](https://docs.python.org/3/library/functions.html)
-- [@article@Python Functions - W3Schools](https://www.w3schools.com/python/python_functions.asp)
 - [@article@Defining Python Functions](https://realpython.com/defining-your-own-python-function/)

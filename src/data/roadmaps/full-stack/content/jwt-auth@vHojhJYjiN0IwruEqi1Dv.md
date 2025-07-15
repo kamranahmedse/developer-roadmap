@@ -4,7 +4,7 @@ JWT stands for JSON Web Token is a token-based encryption open standard/methodol
 
 Visit the following resources to learn more:
 
-- [@official@jwt.io Website](https://jwt.io/)
+- [@official@jwt.io](https://jwt.io/)
 - [@official@Introduction to JSON Web Tokens](https://jwt.io/introduction)
 - [@article@What is JWT?](https://www.akana.com/blog/what-is-jwt)
 - [@video@What Is JWT and Why Should You Use JWT](https://www.youtube.com/watch?v=7Q17ubqLfaM)

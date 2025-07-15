@@ -1,0 +1,5 @@
+When looking for problems with how you manage your dependencies in your code and when you're looking for leaks in your memory consumption, some of the key factors to look out for include examining how external resources and dependencies are handled.  
+
+The reliance (or over-reliance) on global variables for storing data may also lead to excessive use of memory, so that would be a point to look out of, if data accumulates over time without proper management or synchronization, especially in a concurrent setting.
+
+From a dependency perspective, it is important to verify that external packages are used correctly and that their versions are managed through Go Modules. While the code snippet does not show a go.mod file, best practices involve pinning specific vesions in go.mod and go.sum, ensuring reproducible builds and guarding against breaking changes from dependency updates. This integration with version control allows for a clear history of dependency changes, facilitates rollbacks if issues arise, and promotes consistent builds across different environments. 

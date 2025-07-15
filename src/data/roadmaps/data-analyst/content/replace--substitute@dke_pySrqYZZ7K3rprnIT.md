@@ -8,5 +8,5 @@ The REPLACE function is used to replace part of a text string with another text 
 
 Learn more from the following resources:
 
-- [@article@Replace Function](https://support.microsoft.com/en-us/office/replace-function-6acf209b-01b7-4078-b4b8-e0a4ef67d181)
+- [@article@Replace Function](https://support.microsoft.com/en-us/office/replace-function-8d799074-2425-4a8a-84bc-82472868878a)
 - [@article@Substitute Function](https://support.microsoft.com/en-us/office/substitute-function-6434944e-a904-4336-a9b0-1e58df3bc332)

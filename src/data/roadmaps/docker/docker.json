@@ -2496,7 +2496,7 @@
                   "y": "10",
                   "properties": {
                     "size": "17",
-                    "text": "Others (ghcr, ecr, gcr, act, etc)"
+                    "text": "Others (ghcr, ecr, gcr, acr, etc)"
                   }
                 }
               ]

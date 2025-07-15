@@ -18,15 +18,17 @@ schema:
   datePublished: '2023-06-03'
   dateModified: '2023-06-03'
 seo:
-  title: 'Code Review - roadmap.sh'
+  title: 'Code Review Guide'
   description: 'Learn what to review when conducting code reviews. We also have questions to ask yourself under each node of the pyramid to guide you further.'
   keywords:
     - 'code review tutorial'
     - 'code review guide'
     - 'code review for beginners'
     - 'code reviews'
+    - 'code review 2025'
     - 'code review best practices'
     - 'code review roadmap 2024'
+    - 'code review roadmap 2025'
     - 'guide to learning code review'
     - 'code review roadmap'
     - 'code review learning path'
@@ -36,6 +38,7 @@ relatedRoadmaps:
   - 'backend'
   - 'frontend'
   - 'devops'
+  - 'engineering-manager'
   - 'system-design'
 sitemap:
   priority: 1

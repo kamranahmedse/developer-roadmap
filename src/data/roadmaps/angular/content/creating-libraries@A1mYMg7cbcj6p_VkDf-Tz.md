@@ -4,6 +4,6 @@ If you have developed features that are suitable for reuse, you can create your 
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Creating Libraries](https://angular.dev/tools/libraries/creating-libraries)
-- [@official@Angular Official Docs - File Structure: Library project files](https://angular.dev/reference/configs/file-structure#library-project-files)
+- [@official@Creating Libraries](https://angular.dev/tools/libraries/creating-libraries)
+- [@official@File Structure: Library project files](https://angular.dev/reference/configs/file-structure#library-project-files)
 - [@opensource@NG Packagr](https://github.com/ng-packagr/ng-packagr)

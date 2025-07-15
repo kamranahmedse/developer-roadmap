@@ -4,4 +4,4 @@ The XRANGE command used for retrieving messages from a stream. It allows you to 
 
 Learn more from the following resources:
 
-- [@official@XRANGE Documentation](https://redis.io/docs/latest/commands/xrange/)
+- [@official@XRANGE](https://redis.io/docs/latest/commands/xrange/)

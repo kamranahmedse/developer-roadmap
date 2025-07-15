@@ -4,7 +4,7 @@ GitLab is a web-based DevOps lifecycle tool that provides a Git repository manag
 
 Visit the following resources to learn more:
 
-- [@opensource@GitLab Website](https://gitlab.com/)
+- [@official@GitLab Website](https://gitlab.com/)
 - [@official@GitLab Documentation](https://docs.gitlab.com/)
 - [@video@Gitlab Explained: What is Gitlab and Why Use It?](https://www.youtube.com/watch?v=bnF7f1zGpo4)
 - [@feed@Explore top posts about GitLab](https://app.daily.dev/tags/gitlab?ref=roadmapsh)

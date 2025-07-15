@@ -4,5 +4,5 @@ PostgreSQL supports various authentication models to control access, including t
 
 Learn more from the following resources:
 
-- [@official@Authentication methods](https://www.postgresql.org/docs/current/auth-methods.html)
-- [@article@An introduction to authorization and authentication in PostgreSQL](https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/intro-to-authn-and-authz)
+- [@official@Authentication Methods](https://www.postgresql.org/docs/current/auth-methods.html)
+- [@article@An Introduction to Authorization and Authentication in PostgreSQL](https://www.prisma.io/dataguide/postgresql/authentication-and-authorization/intro-to-authn-and-authz)

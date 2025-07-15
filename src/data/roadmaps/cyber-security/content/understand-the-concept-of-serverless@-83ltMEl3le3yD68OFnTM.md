@@ -4,5 +4,5 @@ Serverless computing is a cloud execution model where the cloud provider dynamic
 
 Learn more from the following resources:
 
-- [@article@What is serverless computing?](https://www.cloudflare.com/en-gb/learning/serverless/what-is-serverless/)
+- [@article@What is Serverless Computing?](https://www.cloudflare.com/en-gb/learning/serverless/what-is-serverless/)
 - [@video@What is serverless?](https://www.youtube.com/watch?v=vxJobGtqKVM)

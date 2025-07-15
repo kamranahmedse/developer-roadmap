@@ -6,5 +6,4 @@ The issue with cross join is it returns the Cartesian product of the two tables,
 
 Learn more from the following resources:
 
-- [@article@CROSS JOIN](https://www.w3schools.com/mysql/mysql_join_cross.asp)
 - [@article@SQL CROSS JOIN With Examples](https://www.sqlshack.com/sql-cross-join-with-examples/)

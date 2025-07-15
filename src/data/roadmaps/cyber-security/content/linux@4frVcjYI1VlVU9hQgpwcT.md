@@ -4,7 +4,7 @@ Linux is an open-source, Unix-like operating system kernel first released by Lin
 
 Learn more from the following resources:
 
-- [@roadmap@Linux Roadmap](https://roadmap.sh/linux)
+- [@roadmap@Visit Linux Roadmap](https://roadmap.sh/linux)
 - [@article@Linux Commands Cheat Sheet](https://cdn.hostinger.com/tutorials/pdf/Linux-Commands-Cheat-Sheet.pdf)
 - [@course@Linux from scratch - Cisco](https://www.netacad.com/courses/os-it/ndg-linux-unhatched)
 - [@video@Linux in 100 Seconds](https://www.youtube.com/watch?v=rrB13utjYV4)

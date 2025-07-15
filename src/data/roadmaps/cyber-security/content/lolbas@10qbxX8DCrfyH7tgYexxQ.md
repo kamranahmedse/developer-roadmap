@@ -4,6 +4,6 @@
 
 Learn more from the following resources:
 
-- [@official@LOLBAS project](https://lolbas-project.github.io/#)
+- [@official@LOLBAS Project](https://lolbas-project.github.io/#)
 - [@article@Understanding the risks of LOLBAS in security](https://pentera.io/blog/the-lol-isnt-so-funny-when-it-bites-you-in-the-bas/)
 - [@video@LOLBAS T1105, MS Process Abuse](https://www.youtube.com/watch?v=fq2_VvAU29g)

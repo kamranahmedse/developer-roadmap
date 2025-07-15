@@ -8,14 +8,7 @@ seo:
   description: 'Looking for the best backend technologies in @currentYear@? Check out our expert list of top tools for developers.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-technologies-pnof4.jpg'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "The 5 Best Backend Development Languages to Master (2024)": "/backend/languages"
-  "Top 7 Backend Frameworks to Use in 2024: Pro Advice": "/backend/frameworks"
-  "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
-  "50 Popular Backend Developer Interview Questions and Answers": "/questions/backend"
-  "25 Essential Backend Development Tools for 2024": "/backend/developer-tools"
-  "20 Backend Project Ideas to take you from Beginner to Pro": "/backend/project-ideas"
-  "Backend Developer Job Description [2024 Template]": "/backend/job-description"
+relatedGuidesId: backend
 isNew: false
 type: 'textual'
 date: 2024-08-27
@@ -87,8 +80,7 @@ SQL Server's integration with Visual Studio and other Microsoft development tool
 
 #### SQLite
 
-SQLite is a self-contained, serverless, and zero-configuration database engine known for its simplicity and ease of use. It is lightweight and efficient, making it perfect for small to medium-sized applications, mobile apps, desktop applications, and prototyping. SQLite is embedded within the application, eliminating the need for a separate database server, which simplifies deployment and maintenance.
-Its single-disk file format makes it highly portable across various operating systems and platforms. 
+SQLite is a self-contained, serverless, and zero-configuration database engine known for its simplicity and ease of use. It is lightweight and efficient, making it perfect for small to medium-sized applications, mobile apps, desktop applications, and prototyping. SQLite is embedded within the application, eliminating the need for a separate database server, which simplifies deployment and maintenance. Its single-disk file format makes it highly portable across various operating systems and platforms.
 SQLite's efficient memory and disk usage allow it to perform well even on devices with limited resources, such as IoT devices and embedded systems.
 
 This makes SQLite an excellent choice for applications where simplicity, reliability, and low overhead are essential.
@@ -170,15 +162,16 @@ GitHub is a web-based platform that leverages Git for version control. It provid
 GitHub’s extensive features and strong community support make it the de facto choice for many companies and developers, both for open-source and private projects.
 
 ### GitLab
+
 GitLab is a web-based platform for version control using Git, known for its robust CI/CD pipeline integration. It offers a comprehensive set of tools for the entire DevOps lifecycle, making it suitable for continuous integration, deployment, and monitoring.
 
 #### Key Features and Benefits
 
-**Integrated CI/CD**: Built-in continuous integration and continuous deployment pipelines allow backend developers to automate building, testing, and deploying code changes. With Gitlabs they can even automatically configure CI/CD pipelines, deploy applications, and monitor performance, all through the same platform.
+**Integrated CI/CD**: Built-in continuous integration and continuous deployment pipelines allow backend developers to automate building, testing, and deploying code changes. With Gitlab they can even automatically configure CI/CD pipelines, deploy applications, and monitor performance, all through the same platform.
 
-**Security and Compliance**: Gitlabs provides key security capabilities for backend development: built-in static and dynamic application security testing (SAST/DAST).
+**Security and Compliance**: Gitlab provides key security capabilities for backend development: built-in static and dynamic application security testing (SAST/DAST).
 
-**Collaboration and Communication**: Instead of Pull Requests like Github, Gitlabs provides the concept of “Merge Requests”:  a simplified code review process with inline comments and suggestions.
+**Collaboration and Communication**: Instead of Pull Requests like Github, Gitlab provides the concept of “Merge Requests”:  a simplified code review process with inline comments and suggestions.
 
 GitLab’s all-in-one platform makes it an excellent choice for teams looking to streamline their DevOps processes and improve collaboration and productivity.
 
@@ -295,7 +288,7 @@ REST is ideal for web applications and services due to its ease of implementatio
 
 **Layered System**: REST allows for a layered system architecture, enabling intermediaries like load balancers and proxy servers to enhance security, performance, and scalability.
 
-If you’d like to know more about REST, you can read the full definition directly from [its source here](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
+If you’d like to know more about REST, you can read the full definition directly from [its source](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
 
 ### GraphQL
 
@@ -458,4 +451,4 @@ As backend developers, focusing on a backend programming language and a backend 
 
 This is why you need to stay up-to-date and look at the trends that develop within each area to make sure you’re still working with and focusing on the right solutions.
 
-If you'd like more details on the type of backend development technologies you should be focusing on to excel at your role as a backend developer, check out our [Backend Developer roadmap](https://roadmap.sh/backend).
+If you'd like more details on the type of backend development technologies you should be focusing on to excel at your role as a backend developer, check out our [Backend Developer Roadmap](https://roadmap.sh/backend).

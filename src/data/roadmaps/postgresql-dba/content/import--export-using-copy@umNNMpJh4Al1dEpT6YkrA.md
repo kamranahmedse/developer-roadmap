@@ -7,4 +7,4 @@ If you can't use the `COPY` command due to lack of privileges, consider using th
 Learn more from the following resources:
 
 - [@official@COPY](https://www.postgresql.org/docs/current/sql-copy.html)
-- [@article@Copying data between tables in PostgreSQL](https://www.atlassian.com/data/sql/copying-data-between-tables)
+- [@article@Copying Data Between Tables in PostgreSQL](https://www.atlassian.com/data/sql/copying-data-between-tables)

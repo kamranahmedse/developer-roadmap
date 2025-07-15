@@ -4,6 +4,6 @@ Windows is Microsoft's widely-used operating system for personal computers and s
 
 Learn more from the following resources:
 
-- [@article@Windows Security](https://learn.microsoft.com/en-us/windows/security/)
-- [@youtube@Windows 11 Full Tutorial - A 2 Hour Course to Learn and Master Windows 11](https://www.youtube.com/watch?v=UKn-r3X2CLk)
+- [@official@Windows Security](https://learn.microsoft.com/en-us/windows/security/)
+- [@video@Windows 11 Full Tutorial - A 2 Hour Course to Learn and Master Windows 11](https://www.youtube.com/watch?v=UKn-r3X2CLk)
 - [@feed@Explore top posts about Windows](https://app.daily.dev/tags/windows?ref=roadmapsh)

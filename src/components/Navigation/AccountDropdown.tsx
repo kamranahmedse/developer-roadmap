@@ -105,7 +105,7 @@ export function AccountDropdown() {
         />
       )}
 
-      <div className="relative z-[90] animate-fade-in">
+      <div className="relative z-90 animate-fade-in">
         {isOnboardingModalOpen && onboardingConfig && (
           <OnboardingModal
             onboardingConfig={onboardingConfig}
@@ -126,7 +126,7 @@ export function AccountDropdown() {
         )}
 
         <button
-          className="relative flex h-8 w-40 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600"
+          className="relative flex h-8 w-40 items-center justify-center gap-1.5 rounded-full bg-linear-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600"
           onClick={() => {
             setIsTeamsOpen(false);
             setShowDropdown(!showDropdown);

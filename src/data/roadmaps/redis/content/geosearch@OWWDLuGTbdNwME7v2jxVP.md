@@ -4,5 +4,5 @@ The `GEOSEARCH` command in Redis is used to query geospatial data by finding mem
 
 Learn more from the following resources:
 
-- [@official@GEOADD Documentation](https://redis.io/docs/latest/commands/geoadd/)
+- [@official@GEOADD](https://redis.io/docs/latest/commands/geoadd/)
 - [@article@Getting Started with Geospatial Search in Redis](https://redis.io/learn/howtos/solutions/geo/getting-started)

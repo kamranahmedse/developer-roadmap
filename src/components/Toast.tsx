@@ -51,7 +51,7 @@ export function Toaster(props: Props) {
       onClick={() => {
         $toastMessage.set(undefined);
       }}
-      className={`fixed bottom-5 left-1/2 z-[9999] min-w-[375px] max-w-[375px] animate-fade-slide-up sm:min-w-[auto]`}
+      className={`fixed bottom-5 left-1/2 z-9999 min-w-[375px] max-w-[375px] animate-fade-slide-up sm:min-w-[auto]`}
     >
       <div
         className={`flex -translate-x-1/2 transform cursor-pointer items-center gap-2 rounded-md border border-gray-200 bg-white py-3 pl-4 pr-5 text-black shadow-md hover:bg-gray-50`}
@@ -74,7 +74,7 @@ export function Toaster(props: Props) {
 
         {toastMessage.type === 'loading' && <Spinner isDualRing={false} />}
 
-        <span className="flex-grow text-base">{toastMessage.message}</span>
+        <span className="grow text-base">{toastMessage.message}</span>
       </div>
     </div>
   );

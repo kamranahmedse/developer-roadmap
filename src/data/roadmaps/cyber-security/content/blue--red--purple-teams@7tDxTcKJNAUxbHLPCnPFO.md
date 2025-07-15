@@ -4,6 +4,7 @@ In the context of cybersecurity, Blue Team, Red Team, and Purple Team are terms 
 
 Learn more from the following resources:
 
-- [@article@What is a blue team?](https://www.checkpoint.com/cyber-hub/cyber-security/what-is-a-blue-team/)
-- [@article@What is red teaming?](https://www.ibm.com/think/topics/red-teaming)
-- [@article@Purple teaming explained](https://www.crowdstrike.com/cybersecurity-101/purple-teaming/)
+- [@article@What is a Blue Team?](https://www.checkpoint.com/cyber-hub/cyber-security/what-is-a-blue-team/)
+- [@article@What is Red Teaming?](https://www.ibm.com/think/topics/red-teaming)
+- [@article@Purple Teaming Explained](https://www.crowdstrike.com/cybersecurity-101/purple-teaming/)
+- [@article@Red Team VS Blue Team: What's the Difference?](https://www.crowdstrike.com/en-us/cybersecurity-101/advisory-services/red-team-vs-blue-team/)

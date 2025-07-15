@@ -83,10 +83,10 @@ export function AccountStreak(props: AccountStreakProps) {
   const totalCircles = leftCircleCount + currentCircleCount + remainingCount;
 
   return (
-    <div className="relative z-[90] animate-fade-in">
+    <div className="relative z-90 animate-fade-in">
       <button
         className={cn(
-          'flex items-center justify-center rounded-lg p-1.5 px-2 text-purple-400 hover:bg-purple-100/10 focus:outline-none',
+          'flex items-center justify-center rounded-lg p-1.5 px-2 text-purple-400 hover:bg-purple-100/10 focus:outline-hidden',
           {
             'bg-purple-100/10': showDropdown,
           },

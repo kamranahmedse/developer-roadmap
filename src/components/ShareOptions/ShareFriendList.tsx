@@ -85,8 +85,8 @@ export function ShareFriendList(props: ShareFriendListProps) {
         >
           <div className="relative top-[1px] h-10 w-10 shrink-0 rounded-full bg-gray-200" />
           <div className="inline-grid w-full">
-            <div className="h-5 w-2/4 rounded bg-gray-200" />
-            <div className="mt-1 h-5 w-3/4 rounded bg-gray-200" />
+            <div className="h-5 w-2/4 rounded-sm bg-gray-200" />
+            <div className="mt-1 h-5 w-3/4 rounded-sm bg-gray-200" />
           </div>
         </li>
       ))}
@@ -204,7 +204,7 @@ export function ShareFriendList(props: ShareFriendListProps) {
       )}
 
       {friends.length === 0 && !isLoading && (
-        <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
+        <div className="flex h-full grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
           <Users2 className="mb-3 h-10 w-10 text-gray-300" />
           <p className="font-medium text-gray-500">
             You do not have any friends yet. <br />{' '}

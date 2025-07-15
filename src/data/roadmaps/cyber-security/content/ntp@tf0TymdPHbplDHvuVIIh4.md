@@ -6,4 +6,3 @@ Learn more from the following resources:
 
 - [@video@Network Time Protocol (NTP)](https://www.youtube.com/watch?v=BAo5C2qbLq8)
 - [@article@What is NTP?](https://www.pubnub.com/learn/glossary/ntp-protocol/)
-

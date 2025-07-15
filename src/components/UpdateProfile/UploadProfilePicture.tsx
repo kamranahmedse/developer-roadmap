@@ -1,4 +1,3 @@
-import Cookies from 'js-cookie';
 import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from 'react';
 import { TOKEN_COOKIE_NAME, removeAuthToken } from '../../lib/jwt';
 
@@ -174,7 +173,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
             <button
               disabled={isDisabled}
               type="button"
-              className="absolute bottom-1 right-0 rounded bg-gray-600 px-2 py-1 text-xs leading-none text-gray-50 ring-2 ring-white"
+              className="absolute bottom-1 right-0 rounded-sm bg-gray-600 px-2 py-1 text-xs leading-none text-gray-50 ring-2 ring-white"
               onClick={() => {
                 if (isLoading) return;
                 inputRef.current?.click();

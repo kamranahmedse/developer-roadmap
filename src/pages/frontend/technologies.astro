@@ -1,0 +1,32 @@
+---
+import GuideContent from '../../components/Guide/GuideContent.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getGuideById } from '../../lib/guide';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+
+const guideId = 'frontend-technologies';
+const guide = await getGuideById(guideId).catch(() => null);
+if (!guide) {
+  return Astro.redirect('/404');
+}
+
+const { frontmatter: guideData } = guide!;
+
+const ogImageUrl =
+  guideData.seo.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'guide',
+    resourceId: guideId,
+  });
+---
+
+<BaseLayout
+  title={guideData.seo.title}
+  description={guideData.seo.description}
+  permalink={guideData.excludedBySlug}
+  canonicalUrl={guideData.canonicalUrl}
+  ogImageUrl={ogImageUrl}
+>
+  <GuideContent guide={guide!} />
+  <div slot="changelog-banner" />
+</BaseLayout>

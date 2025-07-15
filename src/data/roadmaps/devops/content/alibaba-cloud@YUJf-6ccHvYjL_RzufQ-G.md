@@ -4,6 +4,6 @@ Alibaba Cloud is the cloud computing arm of Alibaba Group, offering a broad rang
 
 Visit the following resources to learn more:
 
-- [@official@Alibaba Cloud Website](https://www.alibabacloud.com/)
-- [@article@Alibaba Cloud Getting Started Guide](https://www.alibabacloud.com/getting-started)
+- [@official@Alibaba Cloud](https://www.alibabacloud.com/)
+- [@official@Getting Started with Alibaba Cloud](https://www.alibabacloud.com/getting-started)
 - [@feed@Explore top posts about Cloud](https://app.daily.dev/tags/cloud?ref=roadmapsh)

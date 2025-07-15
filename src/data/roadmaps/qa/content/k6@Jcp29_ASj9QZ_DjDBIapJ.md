@@ -6,5 +6,5 @@ Using k6, you can test the reliability and performance of your systems and catch
 
 Visit the following resources to learn more:
 
-- [@article@k6 Website](https://k6.io/)
+- [@official@Grafana k6 Website](https://k6.io/)
 - [@video@Learn k6](https://www.youtube.com/playlist?list=PLJ9A48W0kpRJKmVeurt7ltKfrOdr8ZBdt)

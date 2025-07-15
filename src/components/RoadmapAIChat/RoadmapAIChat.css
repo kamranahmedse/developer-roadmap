@@ -1,0 +1,141 @@
+.prose ul li > code,
+.prose ol li > code,
+p code,
+a > code,
+strong > code,
+em > code,
+h1 > code,
+h2 > code,
+h3 > code {
+  background: #ebebeb !important;
+  color: currentColor !important;
+  font-size: 14px;
+  font-weight: normal !important;
+}
+
+.course-ai-content.course-content.prose ul li > code,
+.course-ai-content.course-content.prose ol li > code,
+.course-ai-content.course-content.prose p code,
+.course-ai-content.course-content.prose a > code,
+.course-ai-content.course-content.prose strong > code,
+.course-ai-content.course-content.prose em > code,
+.course-ai-content.course-content.prose h1 > code,
+.course-ai-content.course-content.prose h2 > code,
+.course-ai-content.course-content.prose h3 > code,
+.course-notes-content.prose ul li > code,
+.course-notes-content.prose ol li > code,
+.course-notes-content.prose p code,
+.course-notes-content.prose a > code,
+.course-notes-content.prose strong > code,
+.course-notes-content.prose em > code,
+.course-notes-content.prose h1 > code,
+.course-notes-content.prose h2 > code,
+.course-notes-content.prose h3 > code {
+  font-size: 12px !important;
+}
+
+.course-ai-content pre {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.course-ai-content pre::-webkit-scrollbar {
+  display: none;
+}
+
+.course-ai-content pre,
+.course-notes-content pre {
+  overflow: scroll;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.prose ul li > code:before,
+p > code:before,
+.prose ul li > code:after,
+.prose ol li > code:before,
+p > code:before,
+.prose ol li > code:after,
+.course-content h1 > code:after,
+.course-content h1 > code:before,
+.course-content h2 > code:after,
+.course-content h2 > code:before,
+.course-content h3 > code:after,
+.course-content h3 > code:before,
+.course-content h4 > code:after,
+.course-content h4 > code:before,
+p > code:after,
+a > code:after,
+a > code:before {
+  content: '' !important;
+}
+
+.course-content.prose ul li > code,
+.course-content.prose ol li > code,
+.course-content p code,
+.course-content a > code,
+.course-content strong > code,
+.course-content em > code,
+.course-content h1 > code,
+.course-content h2 > code,
+.course-content h3 > code,
+.course-content table code {
+  background: #f4f4f5 !important;
+  border: 1px solid #282a36 !important;
+  color: #282a36 !important;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-size: 16px !important;
+  white-space: pre;
+  font-weight: normal;
+}
+
+.course-content blockquote {
+  font-style: normal;
+}
+
+.course-content.prose blockquote h1,
+.course-content.prose blockquote h2,
+.course-content.prose blockquote h3,
+.course-content.prose blockquote h4 {
+  font-style: normal;
+  margin-bottom: 8px;
+}
+
+.course-content.prose ul li > code:before,
+.course-content p > code:before,
+.course-content.prose ul li > code:after,
+.course-content p > code:after,
+.course-content h2 > code:after,
+.course-content h2 > code:before,
+.course-content table code:before,
+.course-content table code:after,
+.course-content a > code:after,
+.course-content a > code:before,
+.course-content h2 code:after,
+.course-content h2 code:before,
+.course-content h2 code:after,
+.course-content h2 code:before {
+  content: '' !important;
+}
+
+.course-content table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.course-content table td,
+.course-content table th {
+  padding: 5px 10px;
+}
+
+.course-ai-content .chat-variable {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 2px 4px;
+  border-radius: 8px;
+  background-color: #f0f5ff;
+  color: #2c5df1;
+}

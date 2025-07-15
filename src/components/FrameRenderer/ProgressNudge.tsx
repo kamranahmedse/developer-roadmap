@@ -1,8 +1,7 @@
 import { cn } from '../../lib/classname.ts';
 import { roadmapProgress, totalRoadmapNodes } from '../../stores/roadmap.ts';
 import { useStore } from '@nanostores/react';
-import { Calendar, Info, X } from 'lucide-react';
-import { Tooltip } from '../Tooltip.tsx';
+import { Calendar, X } from 'lucide-react';
 import { useState } from 'react';
 import { ScheduleEventModal } from '../Schedule/ScheduleEventModal.tsx';
 
@@ -42,7 +41,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
       )}
       <div
         className={
-          'fixed bottom-5 left-1/2 z-30 hidden -translate-x-1/2 transform animate-fade-slide-up flex-row gap-1.5 transition-all duration-300 lg:flex'
+          'fixed bottom-5 left-1/2 -translate-x-1/4 z-30 hidden transform animate-fade-slide-up flex-row gap-1.5 transition-all duration-300 lg:flex'
         }
       >
         <div
@@ -88,7 +87,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
             }}
             className="group relative flex items-center gap-2 rounded-full bg-stone-900 px-3 text-sm text-yellow-400"
           >
-            <Calendar className="h-4 w-4 flex-shrink-0" strokeWidth={2.5} />
+            <Calendar className="h-4 w-4 shrink-0" strokeWidth={2.5} />
           </button>
         )}
         <button
@@ -97,7 +96,7 @@ export function ProgressNudge(props: ProgressNudgeProps) {
           }}
           className="group relative flex items-center gap-2 rounded-full bg-stone-900 px-3 text-sm text-yellow-400"
         >
-          <X className="h-4 w-4 flex-shrink-0" strokeWidth={2.5} />
+          <X className="h-4 w-4 shrink-0" strokeWidth={2.5} />
         </button>
       </div>
     </>

@@ -4,5 +4,5 @@ Libraries are published as `npm packages`, usually together with schematics that
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Using Libraries](https://angular.dev/tools/libraries/using-libraries)
+- [@official@Using Libraries](https://angular.dev/tools/libraries/using-libraries)
 - [@official@npm](https://www.npmjs.com/)

@@ -4,5 +4,5 @@ Angular has built-in support to help prevent two common HTTP vulnerabilities, cr
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Security](https://angular.dev/best-practices/security)
+- [@official@Angular Security](https://angular.dev/best-practices/security)
 - [@article@Angular | HackTricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/angular)

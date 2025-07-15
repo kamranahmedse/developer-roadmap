@@ -4,4 +4,4 @@ Template reference variables help you use data from one part of a template in an
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Website](https://angular.dev/guide/templates/reference-variables)
+- [@official@Reference Variables](https://angular.dev/guide/templates/reference-variables)

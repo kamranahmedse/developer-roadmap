@@ -4,4 +4,4 @@ The `GEOADD` command in Redis is used to add geospatial data to a sorted set, wh
 
 Learn more from the following resources:
 
-- [@official@GEOADD Documentation](https://redis.io/docs/latest/commands/geoadd/)
+- [@official@GEOADD](https://redis.io/docs/latest/commands/geoadd/)

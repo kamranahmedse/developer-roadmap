@@ -4,5 +4,5 @@ Mesh topology is a network architecture where devices or nodes are interconnecte
 
 Learn more from the following resources:
 
-- [@article@What is mesh topology?](https://www.lenovo.com/gb/en/glossary/mesh-topology)
-- [@article@Mesh topology explained](https://www.computerhope.com/jargon/m/mesh.htm)
+- [@article@What is Mesh Topology?](https://www.lenovo.com/gb/en/glossary/mesh-topology)
+- [@article@Mesh Topology explained](https://www.computerhope.com/jargon/m/mesh.htm)

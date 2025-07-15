@@ -1,0 +1,3 @@
+It helps define how data is structured and related, laying the foundation for efficient querying and data analytics. Usually data analysts perform the modeling ahead of time, giving them direction, something to work towards when they start with the wrangling phase.
+
+Data management, on the other hand, ensures data integrity, accessibility, and security throughout its lifecycle. Together, they enable scalable, accurate, and consistent data analysis, supporting better decision-making and long-term analytical success. 

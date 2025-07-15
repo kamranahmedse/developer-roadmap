@@ -4,4 +4,4 @@ The `GETBIT` command in Redis retrieves the value of a specific bit at a given o
 
 Learn more from the following resources:
 
-- [@official@GETBIT Documentation](https://redis.io/docs/latest/commands/getbit/)
+- [@official@GETBIT](https://redis.io/docs/latest/commands/getbit/)

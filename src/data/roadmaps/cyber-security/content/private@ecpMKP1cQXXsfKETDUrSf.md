@@ -4,5 +4,5 @@ A **private cloud** is a cloud computing environment dedicated to a single organ
 
 Learn more from the following resources:
 
-- [@article@What is a private cloud?](https://aws.amazon.com/what-is/private-cloud/)
-- [@video@Private cloud rules](https://www.youtube.com/watch?v=Tzqy8lW0bk4)
+- [@article@What is a Private Cloud?](https://aws.amazon.com/what-is/private-cloud/)
+- [@video@Private Cloud Rules](https://www.youtube.com/watch?v=Tzqy8lW0bk4)

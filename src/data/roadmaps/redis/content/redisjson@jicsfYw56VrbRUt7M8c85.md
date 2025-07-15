@@ -5,4 +5,4 @@ RedisJSON is a Redis module that enables the storage, retrieval, and manipulatio
 Learn more from the following resources:
 
 - [@official@RedisJSON](https://redis.io/json/)
-- [@opensource@RedisJSON/RedisJSON - RedisJSON Module on GitHub](https://github.com/RedisJSON/RedisJSON)
+- [@opensource@RedisJSON/RedisJSON - GitHub](https://github.com/RedisJSON/RedisJSON)

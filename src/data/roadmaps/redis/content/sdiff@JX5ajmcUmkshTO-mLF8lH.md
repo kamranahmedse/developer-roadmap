@@ -4,4 +4,4 @@ The SDIFF coimmand returns the members of a set resulting from the difference be
 
 Learn more from the following resources:
 
-- [@official@SDIFF Documentation](https://redis.io/docs/latest/commands/sdiff/)
+- [@official@SDIFF](https://redis.io/docs/latest/commands/sdiff/)

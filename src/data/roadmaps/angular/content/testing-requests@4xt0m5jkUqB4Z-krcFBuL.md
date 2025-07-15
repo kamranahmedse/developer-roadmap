@@ -4,6 +4,6 @@ As for any external dependency, you must mock the HTTP backend so your tests can
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Testing Requests](https://angular.dev/guide/http/testing)
+- [@official@Testing Requests](https://angular.dev/guide/http/testing)
 - [@video@Import Http Client Testing Module and make Test call with the HttpClient](https://www.youtube.com/watch?v=Sgy_RRXC9As)
 - [@video@HTTP | Angular Unit Testing Made Easy: Comprehensive Guide to HTTP Testing](https://www.youtube.com/watch?v=7rlwryYhGzs)

@@ -71,7 +71,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
               </a>
             )}
             {isMyProgress && (
-              <div className="inline-grid grid-cols-[auto,32px] items-center gap-1.5">
+              <div className="inline-grid grid-cols-[auto_32px] items-center gap-1.5">
                 <a
                   href={memberDetailsUrl}
                   className={cn(
@@ -108,7 +108,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                       progress.isCustomResource!,
                     )
                   }
-                  className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
+                  className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-hidden"
                   key={progress.resourceId}
                 >
                   <span className="relative z-10 flex items-center justify-between text-sm">

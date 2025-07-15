@@ -5,4 +5,4 @@ The EXPIRE command is used to set a time-to-live (TTL) for a key in seconds, aft
 Learn more from the following resources:
 
 - [@official@Expiring Keys](https://redis.io/ebook/part-2-core-concepts/chapter-3-commands-in-redis/3-7-other-commands/3-7-3-expiring-keys/)
-- [@official@EXPIRE Documentation](https://redis.io/docs/latest/commands/expire/)
+- [@official@EXPIRE](https://redis.io/docs/latest/commands/expire/)

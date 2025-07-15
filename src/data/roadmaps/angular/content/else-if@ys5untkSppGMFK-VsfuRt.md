@@ -4,5 +4,5 @@ With the new control flow syntax, you gain `@else if` conditional blocks, someth
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - @if](https://angular.dev/api/core/@if)
+- [@official@\@if](https://angular.dev/api/core/@if)
 - [@article@Angular @if: Complete Guide](https://blog.angular-university.io/angular-if/)

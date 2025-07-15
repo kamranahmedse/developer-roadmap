@@ -4,7 +4,7 @@ Travis CI is a CI/CD service that is primarily used for building and testing pro
 
 Visit the following resources to learn more:
 
-- [@article@Travis CI Website](https://www.travis-ci.com/)
-- [@article@Travis CI Documentation](https://docs.travis-ci.com/)
-- [@article@Travis CI Tutorial](https://docs.travis-ci.com/user/tutorial/)
+- [@official@Travis CI Website](https://www.travis-ci.com/)
+- [@official@Travis CI Documentation](https://docs.travis-ci.com/)
+- [@official@Travis CI Tutorial](https://docs.travis-ci.com/user/tutorial/)
 - [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

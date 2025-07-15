@@ -3,13 +3,8 @@ import { DashboardCustomProgressCard } from './DashboardCustomProgressCard';
 import { DashboardCardLink } from './DashboardCardLink';
 import { useState } from 'react';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
-import { Simulate } from 'react-dom/test-utils';
 import {
-  ArrowUpRight,
-  Bot,
-  BrainCircuit,
-  Map,
-  PencilRuler,
+  BrainCircuit, PencilRuler
 } from 'lucide-react';
 
 type ListDashboardCustomProgressProps = {
@@ -63,7 +58,7 @@ export function ListDashboardCustomProgress(
         <DashboardCardLink
           className="mt-0"
           icon={BrainCircuit}
-          href="/ai"
+          href="/ai-roadmaps"
           title="Generate Roadmaps with AI"
           description="You can generate your own roadmap with AI"
         />
@@ -99,7 +94,7 @@ export function ListDashboardCustomProgress(
 
             <a
               className="flex min-h-[80px] items-center justify-center rounded-lg border border-dashed border-gray-300 bg-white p-4 text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-600"
-              href={'/ai'}
+              href={'/ai-roadmaps'}
               onClick={(e) => {
                 if (!isAIGeneratedRoadmaps) {
                   e.preventDefault();

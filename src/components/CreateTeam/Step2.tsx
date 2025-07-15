@@ -50,7 +50,7 @@ export function Step2(props: Step2Props) {
             onClick={onNext}
             disabled={teamResourceConfig.length !== 0}
             className={
-              'flex-grow rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black md:flex-auto disabled:opacity-50 disabled:pointer-events-none'
+              'grow rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black md:flex-auto disabled:opacity-50 disabled:pointer-events-none'
             }
           >
             Skip for Now

@@ -4,7 +4,7 @@ To install Angular CLI on your local system, you need to install `Node.js`. Angu
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Local set-up](https://angular.dev/tools/cli/setup-local)
-- [@official@Angular Official Docs - Version compatibility guide](https://angular.dev/reference/versions)
+- [@official@Local set-up](https://angular.dev/tools/cli/setup-local)
+- [@official@Version Compatibility Guide](https://angular.dev/reference/versions)
 - [@video@How To Install Angular CLI In Windows 10 | In Under 2 Minutes!](https://www.youtube.com/watch?v=vjgACKkPENg)
 - [@video@How to Install Multiple Versions of Angular in Your Development Environment](https://www.youtube.com/watch?v=LYNG3kcKRQ8)

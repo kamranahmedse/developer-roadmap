@@ -8,15 +8,8 @@ seo:
   description: 'Understand why DevOps emphasizes shift-left testing to boost early bug detection, reduce costs, and improve release cycles.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/devops-shift-left-testing-16zah.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-  'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
-  'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-  '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
-  'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
-  '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
-  'What Are the 7 Key Phases of the DevOps Lifecycle?': '/devops/lifecycle'
-  'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
-isNew: true
+relatedGuidesId: devops
+isNew: false
 type: 'textual'
 date: 2024-11-04
 sitemap:
@@ -40,7 +33,7 @@ In this guide, you’ll learn what Shift-Left testing is, its benefits, things t
 
 ## What is Shift-Left testing?
 
-Shift-Left testing is a principle in DevOps that involves incorporating quality assurance and other testing activities **earlier** in the software development lifecycle (SDLC).
+Shift-Left testing is a [principle in DevOps](https://roadmap.sh/devops/principles) that involves incorporating quality assurance and other testing activities **earlier** in the software development lifecycle (SDLC).
 
 Over the years, testing has been somewhat considered an afterthought of the development process. The traditional approach waits for the development cycle to end or at least waits until 50% of the development process is done before testing the application. This approach can be slow, costly, and does not maximize resources because bugs found during the tests can’t be easily fixed during the development cycle.
 
@@ -48,7 +41,7 @@ Over the years, testing has been somewhat considered an afterthought of the deve
 
 The main idea is to move testing to the **left side** of the development process so that it can happen earlier and more often during the design and development phase.
 
-Shift-Left testing aligns with the DevOps principle of continuous integration and continuous delivery (CI/CD) because automated tests can be written alongside the code and executed as part of the development pipeline. This approach ensures that issues are caught early, developers receive immediate feedback, and overall software quality is improved.
+Shift-Left testing aligns with the DevOps principle of continuous integration and continuous delivery (CI/CD) because [automated tests](https://roadmap.sh/devops/test-automation) can be written alongside the code and executed as part of the development pipeline. This approach ensures that issues are caught early, developers receive immediate feedback, and overall software quality is improved.
 
 To implement Shift-Left testing, organizations often rely on a variety of automated testing tools. While the choice of tools may vary based on team preference and specific projects, below are some popular tools for performing Shift-Left testing:
 
@@ -95,7 +88,7 @@ While Shift-Right testing comes with its own benefits when dealing with producti
 
 It’s important to understand that Shift-Left testing is not a “magic wand” that solves all your testing problems. It also comes with its own challenges. Below are some challenges you might encounter when adopting it:
 
-1. **Required skills**: Developers, testers, and other stakeholders may need to acquire new skills like test automation, continuous integration, and more. Training can be challenging for teams with limited resources.
+1. **Required skills**: Developers, testers, and other stakeholders may need to acquire new skills like test [automation](https://roadmap.sh/devops/automation), continuous integration, and more. Training can be challenging for teams with limited resources.
 2. **Cultural shift**: Adopting continuous testing on the left side of the development process requires a cultural change for all the stakeholders. Developers may need to take on additional testing responsibilities, while testers may need to acquire new skills. This can lead to resistance, adding to their workload and responsibilities.
 3. **Cost implication**: The implementation process requires new toolsets and automation frameworks, which can be time-consuming and costly to set up. Additionally, teams must overcome the learning curve associated with these tools.
 4. **Integration complexity**: Integrating testing in the early stage of SDLC can be complex, particularly in legacy and large systems. This is because it requires that all team members are aligned and willing to adjust their roles and responsibilities to accommodate the new testing approach.
@@ -106,8 +99,8 @@ It’s important to understand that Shift-Left testing is not a “magic wand”
 Adopting Shift-Left testing in your development process comes with several challenges, particularly related to resources and cultural resistance, which may overshadow the advantages it offers. To successfully implement Shift-Left testing, consider the following strategies:
 
 - **Promote a testing-first mindset** and encourage cross-functional collaboration between your teams with an emphasis on shared ownership of the product.
-- **Invest in training and skill development** focused on test automation, CI/CD, and other DevOps practices.
-- **Choose tools that align with your organization’s needs** and integrate seamlessly within your budget.
+- **Invest in training and skill development** focused on test automation, CI/CD, and other [best practices in DevOps](https://roadmap.sh/devops/best-practices).
+- **Choose [DevOps tools](https://roadmap.sh/devops/tools) that align with your organization’s needs** and integrate seamlessly within your budget.
 - **Start small** with a feature or pilot project, then gradually scale across the entire product chain. This approach will give your team the flexibility and the time to learn and refine strategies.
 - **Regularly conduct risk assessments** to identify areas for improvement and implement corresponding mitigation strategies.
 
@@ -118,7 +111,7 @@ Below are some best practices to consider:
 ![Shift-Left best practices](https://assets.roadmap.sh/guest/shift-left-testing-devops-principles-0yrp4.png)
 
 1. **Adopt early test plans**: Create a plan that clearly outlines the testing goals and scope of the project. Also, ensure that testing is integrated into the early stages of your SDLC.
-2. **Test automation**: Use test automation tools to automate unit tests, integration tests, functional tests, and other necessary test cases. Additionally, regularly update and maintain test scripts to keep them relevant and accurate when running CI/CD pipeline.
+2. **Test automation**: Use test [automation tools](https://roadmap.sh/devops/automation-tools) to automate unit tests, integration tests, functional tests, and other necessary test cases. Additionally, regularly update and maintain test scripts to keep them relevant and accurate when running CI/CD pipeline.
 3. **Collaboration and communication**: Use project management tools like Jira and Linear, along with traditional methods such as meetings, check-ins, and stand-ups, to facilitate communication and collaboration between developers, testers, and other stakeholders.
 4. **Continuous learning**: Encourage your team to keep up-to-date with the latest testing techniques and tools, participate in industry events to learn from experts, and share knowledge and best practices within the team.
 

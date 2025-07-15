@@ -1,3 +1,0 @@
-# structopt
-
-`StructOpt` is a third-party library in Rust designed to parse command-line arguments by defining a struct. It brings together the capabilities of `clap` for command-line parsing with Rust's powerful type system. With `StructOpt`, you can define a struct for your command-line program where each field represents a flag, switch, option, or positional argument. This allows a highly declarative and expressive means of handling command-line inputs, including automatic help message generation, strongly-typed values, default values, validators, and more.

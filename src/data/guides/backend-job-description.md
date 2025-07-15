@@ -1,22 +1,15 @@
 ---
-title: "Backend Developer Job Description [2024 Template]"
+title: "Backend Developer Job Description [@currentYear@ Template]"
 description: 'Learn how to write the perfect backend developer job description and get my best tips on how to recruit backend dev talent effectively.'
 authorId: ekene
 excludedBySlug: '/backend/job-description'
 seo:
-  title: "Backend Developer Job Description [2024 Template]"
+  title: "Backend Developer Job Description [@currentYear@ Template]"
   description: ''
   ogImageUrl: 'https://assets.roadmap.sh/guest/backend-job-description-nn3ja.png'
 relatedTitle: "Other Guides"
-relatedGuides:
-  "The 5 Best Backend Development Languages to Master (2024)": "/backend/languages"
-  "Top 7 Backend Frameworks to Use in 2024: Pro Advice": "/backend/frameworks"
-  "Top 10+ Backend Technologies to Use in 2024: Expert Advice": "/backend/technologies"
-  "8 In-Demand Backend Developer Skills to Master": "/backend/developer-skills"
-  "50 Popular Backend Developer Interview Questions and Answers": "/questions/backend"
-  "25 Essential Backend Development Tools for 2024": "/backend/developer-tools"
-  "20 Backend Project Ideas to take you from Beginner to Pro": "/backend/project-ideas"
-isNew: true
+relatedGuidesId: backend
+isNew: false
 type: 'textual'
 date: 2024-11-12
 sitemap:
@@ -162,7 +155,7 @@ A backend engineer needs a combination of soft and technical skills to excel. So
 
 ### Knowledge of at least one backend programming language
 
-A [backend developer](https://roadmap.sh/backend/developer-skills) should have an in-depth knowledge of at least one backend programming language, such as [Java](https://roadmap.sh/java), C#, [Python](https://roadmap.sh/python), [JavaScript (Node.js)](https://roadmap.sh/nodejs), etc. It is also beneficial for a backend engineer to be familiar with some backend frameworks such as Django, [ASP.NET](https://roadmap.sh/aspnet-core), Ruby on Rails, [Sprint Boot](https://roadmap.sh/spring-boot), etc.
+A [backend developer](https://roadmap.sh/backend/developer-skills) should have an in-depth knowledge of at least one backend programming language, such as [Java](https://roadmap.sh/java), C#, [Python](https://roadmap.sh/python), [Node.js](https://roadmap.sh/nodejs), etc. It is also beneficial for a backend engineer to be familiar with some [backend frameworks](https://roadmap.sh/backend/frameworks) such as Django, [ASP.NET](https://roadmap.sh/aspnet-core), Ruby on Rails, [Sprint Boot](https://roadmap.sh/spring-boot), etc.
 
 ![Backend languages](https://assets.roadmap.sh/guest/backend-languages.png)
 
@@ -226,7 +219,7 @@ Engineers sometimes have chaotic workloads, which often lead to burnout and affe
 
 ### DevOps skills
 
-Knowledge of [docker](https://roadmap.sh/docker) and container orchestration technologies, such as [Kubernetes,](https://roadmap.sh/kubernetes) is another skill that makes a backend developer stand out. A firm understanding of continuous integration and continuous deployment (CI/CD) setups is a plus. Consider a candidate with this basic DevOps skill for the role.
+Knowledge of [docker](https://roadmap.sh/docker) and container orchestration technologies, such as [Kubernetes](https://roadmap.sh/kubernetes) is another skill that makes a backend developer stand out. A firm understanding of continuous integration and continuous deployment (CI/CD) setups is a plus. Consider a candidate with this basic DevOps skill for the role.
 
 ## Common backend engineer job interview questions
 

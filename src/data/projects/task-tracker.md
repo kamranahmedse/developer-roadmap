@@ -2,7 +2,7 @@
 title: 'Task Tracker'
 description: 'Build a CLI app to track your tasks and manage your to-do list.'
 isNew: false
-sort: 1
+sort: 100
 difficulty: 'beginner'
 nature: 'CLI'
 skills:
@@ -17,6 +17,7 @@ seo:
     - 'backend project idea'
 roadmapIds:
   - 'backend'
+  - 'php'
   - 'nodejs'
   - 'python'
   - 'java'

@@ -4,5 +4,5 @@ As a business enterprise expands, so does its data. For data analysts, the surge
 
 Learn more from the following resources:
 
-- [@official@SQL Roadmap](https://roadmap.sh/sql)
-- [@official@PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)
+- [@roadmap@Visit Dedicated SQL Roadmap](https://roadmap.sh/sql)
+- [@roadmap@Visit Dedicated PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)

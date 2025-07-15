@@ -26,5 +26,6 @@ These commands form the foundation of interacting with and managing an OS via th
 
 Learn more from the following resources:
 
+- [@article@Essential Unix Commands](https://www.geeksforgeeks.org/essential-linuxunix-commands/)
 - [@video@60 Linux commands you must know](https://www.youtube.com/watch?v=gd7BXuUQ91w)
 - [@video@Top 40 Windows commands to know](https://www.youtube.com/watch?v=Jfvg3CS1X3A)

@@ -4,7 +4,7 @@ Angular 18 introduced an experimental feature called zoneless change detection. 
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Zoneless](https://angular.dev/guide/experimental/zoneless)
+- [@official@Zoneless](https://angular.dev/guide/experimental/zoneless)
 - [@article@Zoneless Change Detection Angular 18](https://blog.logrocket.com/zoneless-change-detection-angular-18/)
 - [@article@From Zone JS to Zoneless Angular and back: How it all works](https://angularindepth.com/posts/1513/from-zone-js-to-zoneless-angular-and-back-how-it-all-works)
 - [@article@A New Era for Angular: Zoneless Change Detection](https://justangular.com/blog/a-new-era-for-angular-zoneless-change-detection)

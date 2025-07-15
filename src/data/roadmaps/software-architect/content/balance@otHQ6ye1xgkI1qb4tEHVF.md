@@ -1,7 +1,7 @@
 # Balance
 
-- **Quality comes at a price**: Earlier I talked about quality and non-functional requirements. If you overdo architecture it will increase costs and probably lower speed of development. You need to balance architectural and functional requirements. Over engineering should be avoided.
-- **Solve contradicting goals**: A classic example of contradicting goals are short- and long-term goals. Projects often tend to build the simplest solution whereas an architect has the long-term vision in mind. Often, the simple solution does not fit into the long-term solution and is at risk to be thrown away later (sunk costs). To avoid implementation into the wrong direction, two things need to be considered:
-  1. Developers and business need to understand the long term vision and their benefits in order to adapt their solution and
-  2. managers who are responsible for budget need to be involved to understand the financial impact. It is not necessary to have 100% of the long term vision in place directly, but the developed piece should fit into it.
-- **Conflict management**: Architects are often the glue between multiple groups with different backgrounds. This may lead to conflicts on different levels of communication. To find a balanced solution which also reflect long-term, strategic goals, it is often the role of architects to help overcome the conflict. My starting point regarding communication theory was the “Four-Ears Model” of Schulze von Thun. Based on this model a lot can be shown and deducted. But this theory needs some practice, which should be experienced during communication seminars.
+Achieving balance in architecture requires managing trade-offs between quality, cost, and development speed, avoiding over-engineering while aligning functional and non-functional requirements. Architects must navigate conflicting goals, like balancing short-term simplicity with long-term vision, ensuring solutions fit future needs while involving developers, businesses, and managers in understanding the financial and strategic impact. Additionally, architects often mediate between diverse groups, resolving conflicts and aligning strategies through effective communication, such as the “Four-Ears Model” by Schulze von Thun, which aids in fostering collaboration and achieving balanced, strategic outcomes.
+
+Visit the following resources to learn more:
+
+- [@article@Wikipedia](https://en.wikipedia.org/wiki/Balance_(architecture))

@@ -5,6 +5,6 @@ Papertrail is a cloud-hosted log management service that simplifies the collecti
 Visit the following resources to learn more:
 
 - [@official@Papertrail Website](https://www.papertrail.com/)
-- [@official@Official Guides](https://www.papertrail.com/solution/guides/)
-- [@official@Official Blog](https://www.papertrail.com/blog/)
+- [@official@Papertrail Guides](https://www.papertrail.com/solution/guides/)
+- [@official@Papertrail Blog](https://www.papertrail.com/blog/)
 - [@video@SolarWinds Papertrail Overview](https://www.youtube.com/watch?v=gFFtrzoQEfI)

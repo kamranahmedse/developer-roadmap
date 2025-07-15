@@ -4,5 +4,5 @@ A default gateway is a network node, typically a router or a firewall, that serv
 
 Learn more from the following resources:
 
-- [@article@What is a default gateway?](https://nordvpn.com/blog/what-is-a-default-gateway/?srsltid=AfmBOoosi5g4acnT9Gv_B86FMGr72hWDhk8J-4jr1HvxPCSu96FikCyw)
+- [@article@What is a Default Gateway?](https://nordvpn.com/blog/what-is-a-default-gateway/?srsltid=AfmBOoosi5g4acnT9Gv_B86FMGr72hWDhk8J-4jr1HvxPCSu96FikCyw)
 - [@video@Routers and Default Gateways](https://www.youtube.com/watch?v=JOomC1wFrbU)

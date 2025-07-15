@@ -4,4 +4,5 @@ Mouse button modifiers are a type of modifier that can be used with event handle
 
 Visit the following resources to learn more:
 
+- [@official@Mouse Button Modifiers](https://vuejs.org/guide/essentials/event-handling#mouse-button-modifiers)
 - [@article@Button Modifiers](https://medium.com/evolve-you/vue-3-keyboard-and-mouse-a4866d7d0e8)

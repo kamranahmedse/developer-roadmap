@@ -1,19 +1,19 @@
 import { Flag, Play, Send, Share, Square, StopCircle, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import { cn } from '../../../lib/classname.ts';
-import { useStickyStuck } from '../../../hooks/use-sticky-stuck.tsx';
-import { StepperAction } from './StepperAction.tsx';
-import { StepperStepSeparator } from './StepperStepSeparator.tsx';
-import { MilestoneStep } from './MilestoneStep.tsx';
-import { httpGet, httpPost } from '../../../lib/http.ts';
-import { StartProjectModal } from '../StartProjectModal.tsx';
-import { getRelativeTimeString } from '../../../lib/date.ts';
-import { getUser, isLoggedIn } from '../../../lib/jwt.ts';
-import { showLoginPopup } from '../../../lib/popup.ts';
-import { SubmitProjectModal } from '../SubmitProjectModal.tsx';
-import { useCopyText } from '../../../hooks/use-copy-text.ts';
-import { CheckIcon } from '../../ReactIcons/CheckIcon.tsx';
-import { pageProgressMessage } from '../../../stores/page.ts';
+import { cn } from '../../../lib/classname';
+import { useStickyStuck } from '../../../hooks/use-sticky-stuck';
+import { StepperAction } from './StepperAction';
+import { StepperStepSeparator } from './StepperStepSeparator';
+import { MilestoneStep } from './MilestoneStep';
+import { httpGet, httpPost } from '../../../lib/http';
+import { StartProjectModal } from '../StartProjectModal';
+import { getRelativeTimeString } from '../../../lib/date';
+import { getUser, isLoggedIn } from '../../../lib/jwt';
+import { showLoginPopup } from '../../../lib/popup';
+import { SubmitProjectModal } from '../SubmitProjectModal';
+import { useCopyText } from '../../../hooks/use-copy-text';
+import { CheckIcon } from '../../ReactIcons/CheckIcon';
+import { pageProgressMessage } from '../../../stores/page';
 
 type ProjectStatusResponse = {
   id?: string;
@@ -287,28 +287,32 @@ export function ProjectStepper(props: ProjectStepperProps) {
             number={2}
           />
 
-          <span className="text-gray-600 sm:hidden">&middot;</span>
-          <button
-            className={cn(
-              'flex items-center gap-2 text-sm sm:hidden',
-              isCopied ? 'text-green-500' : 'text-gray-600',
-            )}
-            onClick={() => {
-              copyText(projectSolutionUrl);
-            }}
-          >
-            {isCopied ? (
-              <>
-                <CheckIcon additionalClasses="h-3 w-3" />
-                URL Copied
-              </>
-            ) : (
-              <>
-                <Share className="h-3 w-3 stroke-[2.5px]" />
-                Share your Solution
-              </>
-            )}
-          </button>
+          {activeStep > 1 && (
+            <>
+              <span className="text-gray-600 sm:hidden">&middot;</span>
+              <button
+                className={cn(
+                  'flex items-center gap-2 text-sm sm:hidden',
+                  isCopied ? 'text-green-500' : 'text-gray-600',
+                )}
+                onClick={() => {
+                  copyText(projectSolutionUrl);
+                }}
+              >
+                {isCopied ? (
+                  <>
+                    <CheckIcon additionalClasses="h-3 w-3" />
+                    URL Copied
+                  </>
+                ) : (
+                  <>
+                    <Share className="h-3 w-3 stroke-[2.5px]" />
+                    Share your Solution
+                  </>
+                )}
+              </button>
+            </>
+          )}
         </div>
         <StepperStepSeparator isActive={activeStep > 1} />
         <MilestoneStep

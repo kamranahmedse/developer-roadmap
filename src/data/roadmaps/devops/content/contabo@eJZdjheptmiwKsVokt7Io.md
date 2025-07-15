@@ -4,4 +4,4 @@ Contabo is a German web hosting and dedicated server provider known for offering
 
 Visit the following link to learn more:
 
-- [@official@Contabo - Official Website](https://contabo.com/)
+- [@official@Contabo](https://contabo.com/)

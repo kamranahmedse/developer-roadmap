@@ -4,5 +4,5 @@ Attribute binding in Angular helps you set values for attributes directly. With 
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Attribute Binding](https://angular.dev/guide/templates/attribute-binding)
+- [@official@Attribute Binding](https://angular.dev/guide/templates/attribute-binding)
 - [@article@What is difference between binding to attribute and binding to property in Angular?](https://stackoverflow.com/questions/76967327/what-is-difference-between-binding-to-attribute-and-binding-to-property-in-angul)

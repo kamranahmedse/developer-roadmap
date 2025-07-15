@@ -4,5 +4,5 @@ A stacked chart is an essential tool for a data analyst in the field of data vis
 
 Learn more from the following resources:
 
-- [@article@What is a stacked chart?](https://www.spotfire.com/glossary/what-is-a-stacked-chart)
+- [@article@What is a Stacked Chart?](https://www.spotfire.com/glossary/what-is-a-stacked-chart)
 - [@article@A Complete Guide to Stacked Bar Charts](https://www.atlassian.com/data/charts/stacked-bar-chart-complete-guide)

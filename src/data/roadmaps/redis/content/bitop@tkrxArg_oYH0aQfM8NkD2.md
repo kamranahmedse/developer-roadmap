@@ -4,5 +4,5 @@ The `BITOP` command in Redis performs bitwise operations (AND, OR, XOR, and NOT)
 
 Learn more from the following resources:
 
-- [@official@BITOP Documentation](https://redis.io/docs/latest/commands/bitop/)
+- [@official@BITOP](https://redis.io/docs/latest/commands/bitop/)
 - [@article@BITOP Explained](https://www.dragonflydb.io/docs/command-reference/strings/bitop)

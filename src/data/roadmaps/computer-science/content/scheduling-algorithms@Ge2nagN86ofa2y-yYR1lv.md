@@ -14,8 +14,6 @@ Here is the list of some of the most commonly used scheduling algorithms:
 - **Highest Response Ratio Next(HRRN):** CPU is allotted to the next process which has the highest response ratio and not to the process having less burst time. It is a Non-Preemptive algorithm.
 - **Lottery Scheduling:** The process is allocated the CPU based on a lottery system. It is a preemptive algorithm.
 
-Visit the following resources to learn more : 
-- [@video@Introduction to CPU Scheduling](https://youtu.be/EWkQl0n0w5M?si=Lb-PxN_t-rDfn4JL)
-- [@article@CPU Scheduling in Operating Systems - geeksforgeeks](https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/)
-- [@article@Lottery Scheduling for Operating Systems - geeksforgeeks](https://www.geeksforgeeks.org/lottery-process-scheduling-in-operating-system/)
-- [@article@Program for Round Robin Scheduling for the same Arrival time - geeksforgeeks](https://www.geeksforgeeks.org/program-for-round-robin-scheduling-for-the-same-arrival-time/)
+Visit the following resources to learn more:
+
+- [@article@CPU Scheduling in Operating System](https://www.scaler.com/topics/operating-system/cpu-scheduling/)

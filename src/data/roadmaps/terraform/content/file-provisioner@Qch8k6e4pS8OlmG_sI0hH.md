@@ -4,5 +4,5 @@ The Terraform file provisioner is used to copy files or directories from the mac
 
 Learn more from the following resources:
 
-- [@official@Terraform file provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/file)
-- [@article@The file provisioner](https://learning-ocean.com/tutorials/terraform/terraform-file-provisioner/)
+- [@official@Terraform File Provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/file)
+- [@article@The File Provisioner](https://learning-ocean.com/tutorials/terraform/terraform-file-provisioner/)

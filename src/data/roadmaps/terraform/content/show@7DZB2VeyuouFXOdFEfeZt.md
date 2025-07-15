@@ -4,5 +4,5 @@ The terraform show command displays a human-readable view of the current state o
 
 Learn more from the following resources:
 
-- [@official@Terrform show](https://developer.hashicorp.com/terraform/cli/commands/show)
+- [@official@Terraform show](https://developer.hashicorp.com/terraform/cli/commands/show)
 - [@official@Terraform state show](https://developer.hashicorp.com/terraform/cli/commands/state/show)

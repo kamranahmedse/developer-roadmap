@@ -4,5 +4,5 @@ Bulk load process data involves transferring large volumes of data from external
 
 Learn more from the following resources:
 
-- [@article@7 Best Practice Tips for PostgreSQL Bulk Data Loading](https://www.enterprisedb.com/blog/7-best-practice-tips-postgresql-bulk-data-loading)
 - [@official@Populating a Database](https://www.postgresql.org/docs/current/populate.html)
+- [@article@7 Best Practice Tips for PostgreSQL Bulk Data Loading](https://www.enterprisedb.com/blog/7-best-practice-tips-postgresql-bulk-data-loading)

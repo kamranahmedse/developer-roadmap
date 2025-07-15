@@ -4,5 +4,4 @@ The `ORDER BY` clause in SQL is used to sort the result set of a query by one or
 
 Learn more from the following resources:
 
-- [@article@SQL ORDER BY Keyword](https://www.w3schools.com/sql/sql_orderby.asp)
 - [@video@SQL ORDER BY Sorting Clause](https://www.youtube.com/watch?v=h_HHTNjAgS8)

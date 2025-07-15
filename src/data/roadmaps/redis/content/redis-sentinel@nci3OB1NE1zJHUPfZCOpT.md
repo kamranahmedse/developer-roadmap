@@ -4,4 +4,4 @@ Redis Sentinel serves as a robust high-availability solution for Redis deploymen
 
 Learn more from the following resources:
 
-- [@official@High Availability with Redis Sentinal](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/)
+- [@official@High Availability with Redis Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/)

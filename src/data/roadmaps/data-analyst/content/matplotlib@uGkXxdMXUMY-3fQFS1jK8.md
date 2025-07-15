@@ -4,5 +4,5 @@ Matplotlib is a paramount data visualization library used extensively by data an
 
 Learn more from the following resources:
 
+- [@official@Matplotlib](https://matplotlib.org/)
 - [@video@Learn Matplotlib in 6 minutes](https://www.youtube.com/watch?v=nzKy9GY12yo)
-- [@article@Matplotlib Website](https://matplotlib.org/)

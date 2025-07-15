@@ -4,5 +4,6 @@ Load balancing is the process of distributing network or application traffic acr
 
 Visit the following resources to learn more:
 
+- [@article@What is Load Balancing? | How load balancers work](https://www.cloudflare.com/learning/performance/what-is-load-balancing/)
 - [@video@Load Balancers 101](https://www.youtube.com/watch?v=galcDRNd5Ow)
 - [@video@What is Load Balancing?](https://www.youtube.com/watch?v=gGLophKzJs8)

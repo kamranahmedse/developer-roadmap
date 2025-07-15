@@ -4,6 +4,6 @@ Data Analysts recurrently find the need to summarize, investigate, and analyze t
 
 Learn more from the following resources:
 
-- [@articles@Create a pivot table](https://support.microsoft.com/en-gb/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576)
-- [@article@Pivot tables in excel](https://www.excel-easy.com/data-analysis/pivot-tables.html)
-- [@video@How to create a pivot table in excel](https://www.youtube.com/watch?v=PdJzy956wo4)
+- [@articles@Create a Pivot Table](https://support.microsoft.com/en-gb/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576)
+- [@article@Pivot Tables in Excel](https://www.excel-easy.com/data-analysis/pivot-tables.html)
+- [@video@How to Create a Pivot Table in Excel](https://www.youtube.com/watch?v=PdJzy956wo4)

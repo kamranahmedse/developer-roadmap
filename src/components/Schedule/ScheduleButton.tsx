@@ -32,7 +32,7 @@ export function ScheduleButton(props: ScheduleButtonProps) {
           setIsModalOpen(true);
         }}
       >
-        <Calendar className="h-4 w-4 flex-shrink-0" />
+        <Calendar className="h-4 w-4 shrink-0" />
         <span className="hidden sm:inline">Schedule Learning Time</span>
       </button>
     </>

@@ -1,0 +1,1 @@
+Yes, you can nest subqueries multiple levels deep when you want to perform complex logic. A nested subquery is a subquery inside another subquery, forming layers of subqueries. Many SQL engines allow multiple layers of subqueries, but this causes poor readability and degrades performance. 

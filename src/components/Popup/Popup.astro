@@ -15,10 +15,10 @@ const { id, title, subtitle } = Astro.props;
 <div
   id={id}
   tabindex='-1'
-  class='hidden bg-black/50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[999] h-full items-center justify-center popup'
+  class='hidden bg-black/50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-999 h-full items-center justify-center popup'
 >
   <div class='relative p-4 w-full max-w-md h-full md:h-auto'>
-    <div class='relative bg-white rounded-lg shadow popup-body'>
+    <div class='relative bg-white rounded-lg shadow-sm popup-body'>
       <button
         type='button'
         class='absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close'

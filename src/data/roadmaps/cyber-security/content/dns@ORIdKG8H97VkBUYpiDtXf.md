@@ -4,6 +4,6 @@ The Domain Name System (DNS) is a fundamental protocol of the internet that tran
 
 Learn more from the following resources:
 
+- [@article@What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)
 - [@video@DNS Explained in 100 Seconds](https://www.youtube.com/watch?v=UVR9lhUGAyU)
 - [@video@What is DNS?](https://www.youtube.com/watch?v=nyH0nYhMW9M)
-- [@article@What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)

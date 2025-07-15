@@ -1,6 +1,6 @@
 # Browsers
 
-A web browser is a software application that enables a user to access and display web pages or other online content through its graphical user interface.
+Web browsers are apps that let you view websites. When you type a web address, the browser asks a server for the page. It then reads the HTML (structure), CSS (style), and JavaScript (interactivity) to show you the webpage. Browsers have rendering engines (like Blink in Chrome or Gecko in Firefox) to display content and JavaScript engines (like V8 in Chrome) to run code. They also handle things like security, bookmarks, and history.
 
 Visit the following resources to learn more:
 

@@ -4,7 +4,7 @@ Git is a distributed version control system designed to track changes in source 
 
 Visit the following resources to learn more:
 
-- [@roadmap@Learn Git & GitHub](https://roadmap.sh/git-github)
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
 - [@course@Git by Example - Learn Version Control with Bite-sized Lessons](https://antonz.org/git-by-example/)
 - [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 - [@article@Learn Git with Tutorials, News and Tips - Atlassian](https://www.atlassian.com/git)

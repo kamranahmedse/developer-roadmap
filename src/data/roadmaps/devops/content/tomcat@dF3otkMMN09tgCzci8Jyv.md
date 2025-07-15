@@ -5,5 +5,5 @@ Apache Tomcat is an open-source web server and servlet container that implements
 Visit the following resources to learn more:
 
 - [@official@Tomcat Website](https://tomcat.apache.org/)
-- [@article@Official Documentation(Tomcat 10.0)](https://tomcat.apache.org/tomcat-10.0-doc/index.html)
+- [@official@Tomcat Documentation](https://tomcat.apache.org/tomcat-10.0-doc/index.html)
 - [@video@Apache Tomcat Full Tutorial](https://www.youtube.com/watch?v=rElJIPRw5iM)

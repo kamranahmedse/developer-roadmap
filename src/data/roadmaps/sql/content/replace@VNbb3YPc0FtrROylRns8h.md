@@ -4,5 +4,4 @@ The `REPLACE` function in SQL is used to substitute all occurrences of a specifi
 
 Learn more from the following resources:
 
-- [@article@SQL REPLACE Function](https://www.w3schools.com/sql/func_sqlserver_replace.asp)
 - [@article@How to use the SQL REPLACE Function](https://www.datacamp.com/tutorial/sql-replace)

@@ -4,5 +4,4 @@ In networking and cybersecurity, a handshake is a process of establishing a secu
 
 Learn more from the following resources:
 
-- [@article@TCP 3-Way Handshake Process](https://www.geeksforgeeks.org/tcp-3-way-handshake-process/)
 - [@video@TLS Handshake Explained](https://www.youtube.com/watch?v=86cQJ0MMses)

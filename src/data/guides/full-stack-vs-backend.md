@@ -156,6 +156,7 @@ Full stack and backend development share several similarities as they both work 
 - Collaborate with other team members and business stakeholders to ensure project success.
 - Both handle errors, edge cases, and other difficult technical aspects of the application.
 - Both are involved in designing and architecting scalable systems.
+
 ## Web development in the modern era: Full stack vs Backend
 
 While the web's possibilities are exciting and fascinating, they have also changed the roles and responsibilities of developers building applications for it. Let's consider the points below as a case study of how these changes might affect full stack and backend development:
@@ -180,4 +181,4 @@ The new possibilities offered by the web will undoubtedly reshape job descriptio
 
 The possibilities offered by the web, coupled with evolving business requirements, require developers to upskill and stay updated continuously with the latest changes. A reliable source of truth is important for this journey. The [full](https://roadmap.sh/full-stack) [](https://roadmap.sh/full-stack)[stack development](https://roadmap.sh/full-stack) and [backend development](https://roadmap.sh/backend) roadmap are valuable resources for experienced and beginner developers looking to explore a career in web development.
 
-Additionally, these roadmaps allow you to track your progress, showcase your skills to potential employers, and become [part of a supportive communit](https://discord.com/invite/cJpEt5Qbwa)[y](https://discord.com/invite/cJpEt5Qbwa).
+Additionally, these roadmaps allow you to track your progress, showcase your skills to potential employers, and become [part of a supportive community](https://discord.com/invite/cJpEt5Qbwa)

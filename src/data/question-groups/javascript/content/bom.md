@@ -1,0 +1,3 @@
+The BOM is a set of tools that allows JavaScript to interact with the browser. It controls browser functionalities without needing to interact with the HTML document. You can open and close a browser window, access a browsing history, and more. Examples of the BOM include window, browser, and history objects.
+
+![JavaScript interview questions: Types of web storage](https://assets.roadmap.sh/guest/types-of-web-storage-17ceh.png) 

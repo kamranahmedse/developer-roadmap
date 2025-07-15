@@ -4,4 +4,4 @@
 
 Learn more from the following resources:
 
-- [@official@LPUSH Documentation](https://redis.io/docs/latest/commands/lpush/)
+- [@official@LPUSH](https://redis.io/docs/latest/commands/lpush/)

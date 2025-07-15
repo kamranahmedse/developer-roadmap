@@ -6,3 +6,5 @@ Learn more from the following resources:
 
 - [@video@Hashing Explained](https://www.youtube.com/watch?v=EOe1XUykdP4)
 - [@article@What is hashing and how does it work?](https://www.techtarget.com/searchdatamanagement/definition/hashing)
+- [@article@Hashing Algorithm Overview: Types, Methodologies & Usage](https://www.okta.com/identity-101/hashing-algorithms/)
+- [@article@Understanding Cryptography Types:](https://geekflare.com/cybersecurity/cryptography-types/)

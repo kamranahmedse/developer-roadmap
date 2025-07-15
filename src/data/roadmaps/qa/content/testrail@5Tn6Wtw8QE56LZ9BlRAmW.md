@@ -4,5 +4,5 @@ TestRail is a web-based test case management tool. It is used by testers, develo
 
 Visit the following resources to learn more:
 
-- [@article@TestRail Website](https://www.gurock.com/testrail/)
+- [@official@TestRail](https://www.gurock.com/testrail/)
 - [@article@TestRail Review Tutorial: Learn End-To-End Test Case Management](https://www.softwaretestinghelp.com/testrail-tutorial/)

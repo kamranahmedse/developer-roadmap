@@ -1,3 +1,0 @@
-# rust-crypto
-
-`Rust Crypto` is a set of cryptographic algorithms implemented in the Rust programming language. Users can utilize these algorithms for encryption, decryption, hashing, and digital signature applications, among others. Notable features in Rust Crypto include ciphers like AES and DES, hash functions like SHA and MD5, and digital signatures such as RSA. It is recognized for its speed and low memory usage, thus making it a suitable option for systems with limited resources.

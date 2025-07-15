@@ -68,11 +68,11 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
   );
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-[100] h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+    <div className="fixed left-0 right-0 top-0 z-100 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div className="relative mx-auto h-full w-full max-w-2xl p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          className="popup-body relative mt-4 overflow-hidden rounded-lg bg-white shadow"
+          className="popup-body relative mt-4 overflow-hidden rounded-lg bg-white shadow-sm"
         >
           <button
             type="button"
@@ -86,7 +86,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             ref={searchInputEl}
             type="text"
             placeholder="Search roadmaps"
-            className="block w-full border-b px-5 pb-3.5 pt-4 outline-none placeholder:text-gray-400"
+            className="block w-full border-b px-5 pb-3.5 pt-4 outline-hidden placeholder:text-gray-400"
             value={searchText}
             onInput={(e) => setSearchText((e.target as HTMLInputElement).value)}
           />

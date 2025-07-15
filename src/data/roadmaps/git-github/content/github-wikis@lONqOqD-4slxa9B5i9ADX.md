@@ -5,4 +5,4 @@ GitHub Wikis are collaborative documentation spaces integrated directly into Git
 Visit the following resources to learn more:
 
 - [@official@About Wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)
-- [@article@Documenting your project with Wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis)
+- [@official@Documenting your project with Wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis)

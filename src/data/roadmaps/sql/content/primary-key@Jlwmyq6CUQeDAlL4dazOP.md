@@ -4,5 +4,4 @@ A primary key in SQL is a unique identifier for each record in a database table.
 
 Learn more from the following resources:
 
-- [@article@SQL PRIMARY KEY Constraint](https://www.w3schools.com/sql/sql_primarykey.ASP)
 - [@article@SQL Primary Key](https://www.tutorialspoint.com/sql/sql-primary-key.htm)

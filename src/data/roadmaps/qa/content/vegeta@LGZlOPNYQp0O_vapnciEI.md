@@ -4,4 +4,4 @@ Vegeta is a versatile HTTP load testing tool built out of a need to drill HTTP s
 
 Visit the following resources to learn more:
 
-- [@opensource@Vegeta Website](https://github.com/tsenart/vegeta)
+- [@opensource@Vegeta](https://github.com/tsenart/vegeta)

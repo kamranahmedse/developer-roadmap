@@ -4,7 +4,7 @@ The Elastic Stack, formerly known as ELK Stack, is a set of open-source tools fo
 
 Visit the following resources to learn more:
 
-- [@official@Elastic Stack Website](https://www.elastic.co/elastic-stack/)
+- [@official@Elastic Stack](https://www.elastic.co/elastic-stack/)
 - [@article@Logstash vs Fluentd](https://logz.io/blog/fluentd-logstash/)
 - [@video@Master the Elastic Stack: Elastic Stack Overview](https://www.youtube.com/watch?v=CfCTWVAwFbQ)
 - [@feed@Explore top posts about ELK](https://app.daily.dev/tags/elk?ref=roadmapsh)

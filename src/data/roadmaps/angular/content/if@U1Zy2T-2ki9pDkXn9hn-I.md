@@ -4,5 +4,5 @@ The @if block conditionally displays its content when its condition expression i
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - @if](https://angular.dev/api/core/@if)
+- [@official@\@if](https://angular.dev/api/core/@if)
 - [@video@Narrow Down signal value type within an if statement](https://egghead.io/lessons/angular-narrow-down-angular-s-signal-value-type-within-an-if-statement)

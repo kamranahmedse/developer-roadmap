@@ -6,5 +6,5 @@ CISA was established by the Information Systems Audit and Control Association (I
 
 Learn more from the following resources:
 
-- [@official@CISA Website](https://www.isaca.org/credentialing/cisa)
+- [@official@CISA](https://www.isaca.org/credentialing/cisa)
 - [@article@What is a Certified Information Systems Auditor?](https://www.investopedia.com/terms/c/certified-information-systems-auditor.asp)

@@ -1,0 +1,13 @@
+---
+import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
+import { AIChatLayout } from '../../../components/AIChatHistory/AIChatLayout';
+import { AIChatHistory } from '../../../components/AIChatHistory/AIChatHistory';
+---
+
+<SkeletonLayout
+  title='AI Chat'
+  noIndex={true}
+  description='Learn anything with AI Tutor. Pick a topic, choose a difficulty level and the AI will guide you through the learning process.'
+>
+  <AIChatHistory client:load />
+</SkeletonLayout>

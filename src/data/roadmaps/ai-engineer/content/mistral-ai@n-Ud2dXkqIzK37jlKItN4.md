@@ -4,5 +4,5 @@ Mistral AI is a company focused on developing open-weight, large language models
 
 Learn more from the resources:
 
-- [@official@Minstral AI Website](https://mistral.ai/)
+- [@official@Mistral AI](https://mistral.ai/)
 - [@video@Mistral AI: The Gen AI Start-up you did not know existed](https://www.youtube.com/watch?v=vzrRGd18tAg)

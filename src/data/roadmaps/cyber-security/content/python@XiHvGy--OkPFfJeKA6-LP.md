@@ -4,7 +4,6 @@
 
 Learn more from the following resources:
 
-- [@roadmap@Python Roadmap](https://roadmap.sh/python)
+- [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
 - [@course@Python Full Course 2024](https://www.youtube.com/watch?v=ix9cRaBkVe0)
 - [@video@Python in 100 Seconds](https://www.youtube.com/watch?v=x7X9w_GIm1s)
-

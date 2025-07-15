@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@oficial@Documentation](https://www.axelos.com/certifications/itil-service-management/itil-4-foundation)
+- [@official@ITIL Documentation](https://www.axelos.com/certifications/itil-service-management/itil-4-foundation)
 - [@video@What is ITIL?](https://www.youtube.com/watch?v=wgnpfMK8vDk)

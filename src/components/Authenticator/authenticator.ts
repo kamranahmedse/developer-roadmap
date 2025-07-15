@@ -1,9 +1,10 @@
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { REDIRECT_PAGE_AFTER_AUTH } from '../../lib/auth';
 
 function easeInElement(el: Element) {
   el.classList.add('opacity-0', 'transition-opacity', 'duration-300');
-  el.classList.remove('hidden');
+  el.classList.remove('hidden', 'hidden!');
   setTimeout(() => {
     el.classList.remove('opacity-0');
   });
@@ -56,7 +57,8 @@ function handleGuest() {
 
   // If the user is on an authenticated route, redirect them to the home page
   if (authenticatedRoutes.includes(window.location.pathname)) {
-    window.location.href = '/';
+    localStorage.setItem(REDIRECT_PAGE_AFTER_AUTH, window.location.pathname);
+    window.location.href = '/login';
   }
 }
 
@@ -86,6 +88,14 @@ function handleAuthenticated() {
 export function handleAuthRequired() {
   const token = Cookies.get(TOKEN_COOKIE_NAME);
   if (token) {
+    const pageAfterAuth = localStorage.getItem(REDIRECT_PAGE_AFTER_AUTH);
+    if (pageAfterAuth) {
+      localStorage.removeItem(REDIRECT_PAGE_AFTER_AUTH);
+      window.location.href = pageAfterAuth;
+
+      return;
+    }
+
     handleAuthenticated();
   } else {
     handleGuest();

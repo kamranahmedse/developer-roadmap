@@ -4,6 +4,6 @@ FluxCD is a GitOps-based continuous delivery tool for Kubernetes. It automates t
 
 Visit the following resources to learn more:
 
-- [@official@Flux CD Docs](https://docs.fluxcd.io/)
+- [@official@Flux CD](https://docs.fluxcd.io/)
 - [@video@Introduction to Flux CD on Kubernetes](https://www.youtube.com/watch?v=X5W_706-jSY)
 - [@feed@Explore top posts about Flux](https://app.daily.dev/tags/flux?ref=roadmapsh)

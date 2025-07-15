@@ -43,7 +43,7 @@ jobs:
             ## Updated all Dependencies to Latest Versions.
 
             > [!IMPORTANT]
-            > This PR Upgrades the Dependencies to the Latest Their Versions.
+            > This PR Upgrades the Dependencies to the their latest versions.
             >
             > Commit: ${{ github.sha }}
             > Workflow Path: ${{ github.workflow_ref }}

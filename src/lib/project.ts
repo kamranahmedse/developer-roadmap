@@ -1,5 +1,5 @@
 import type { MarkdownFileType } from './file';
-import { getRoadmapById, type RoadmapFileType } from './roadmap.ts';
+import { getRoadmapById, type RoadmapFileType } from './roadmap';
 
 export const projectDifficulties = [
   'beginner',
@@ -22,6 +22,7 @@ export interface ProjectFrontmatter {
     keywords: string[];
     ogImageUrl: string;
   };
+  hasNoSubmission: boolean;
   roadmapIds: string[];
 }
 

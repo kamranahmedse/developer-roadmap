@@ -4,4 +4,6 @@ In Redis, setting keys refers to the operation of storing keys by associating th
 
 Learn more from the following resources:
 
+- [@official@Keys](https://redis.io/docs/latest/commands/keys/)
+- [@official@SET](https://redis.io/docs/latest/commands/set/)
 - [@article@Set key values](https://www.w3resource.com/redis/redis-set-key-value.php)

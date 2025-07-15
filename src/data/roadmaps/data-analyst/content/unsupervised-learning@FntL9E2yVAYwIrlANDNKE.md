@@ -4,5 +4,5 @@ Unsupervised learning, as a fundamental aspect of Machine Learning, holds great 
 
 Learn more from the following resources:
 
-- [@article@What is unsupervised learning?](https://cloud.google.com/discover/what-is-unsupervised-learning)
-- [@article@Introduction to unsupervised learning](https://www.datacamp.com/blog/introduction-to-unsupervised-learning)
+- [@article@What is Unsupervised Learning?](https://cloud.google.com/discover/what-is-unsupervised-learning)
+- [@article@Introduction to Unsupervised Learning](https://www.datacamp.com/blog/introduction-to-unsupervised-learning)

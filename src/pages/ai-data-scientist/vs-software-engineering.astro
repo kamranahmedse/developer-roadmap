@@ -1,0 +1,29 @@
+---
+import GuideContent from '../../components/Guide/GuideContent.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getGuideById } from '../../lib/guide';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+
+const guideId = 'ai-data-scientist-vs-software-engineering';
+const guide = await getGuideById(guideId);
+
+const { frontmatter: guideData } = guide!;
+
+const ogImageUrl =
+  guideData.seo.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'guide',
+    resourceId: guideId,
+  });
+---
+
+<BaseLayout
+  title={guideData.seo.title}
+  description={guideData.seo.description}
+  permalink={`/ai-data-scientist/vs-software-engineering`}
+  canonicalUrl={guideData.canonicalUrl}
+  ogImageUrl={ogImageUrl}
+>
+  <GuideContent guide={guide!} />
+  <div slot='changelog-banner'></div>
+</BaseLayout>

@@ -1,4 +1,4 @@
-import { ReadonlyEditor } from '../../../editor/readonly-editor';
+import { ReadonlyEditor } from '@roadmapsh/editor';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import {
   refreshProgressCounters,
@@ -9,7 +9,7 @@ import {
 } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
-import type { Node } from 'reactflow';
+import type { Node } from '@roadmapsh/editor';
 import { type MouseEvent, useCallback, useRef, useState } from 'react';
 import { EmptyRoadmap } from './EmptyRoadmap';
 import { cn } from '../../lib/classname';
@@ -17,7 +17,9 @@ import { totalRoadmapNodes } from '../../stores/roadmap.ts';
 
 type FlowRoadmapRendererProps = {
   isEmbed?: boolean;
-  roadmap: RoadmapDocument;
+  roadmap: RoadmapDocument & {
+    canManage?: boolean
+  };
 };
 
 export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
@@ -159,7 +161,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
       {hideRenderer && (
         <EmptyRoadmap
           roadmapId={roadmapId}
-          canManage={roadmap.canManage}
+          canManage={roadmap.canManage || false}
           className="grow"
         />
       )}

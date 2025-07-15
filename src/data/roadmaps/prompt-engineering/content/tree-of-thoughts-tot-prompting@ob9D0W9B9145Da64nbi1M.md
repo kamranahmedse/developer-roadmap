@@ -1,0 +1,3 @@
+# Tree of Thoughts (ToT) Prompting
+
+Tree of Thoughts (ToT) generalizes Chain of Thought by allowing LLMs to explore multiple reasoning paths simultaneously rather than following a single linear chain. This approach maintains a tree structure where each thought represents a coherent step toward solving a problem, enabling the model to branch out and explore different reasoning directions. ToT is particularly effective for complex tasks requiring exploration and is well-suited for problems that benefit from considering multiple solution approaches before converging on the best answer.

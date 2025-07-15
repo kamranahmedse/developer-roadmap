@@ -7,7 +7,7 @@
         "x": 481.39029212267985,
         "y": 1925.5843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "q_oYxEPUvEylwjAyDA5FL",
@@ -16,7 +16,7 @@
         }
       },
       "zIndex": 999,
-      "width": 289,
+      "width": 290,
       "height": 20,
       "positionAbsolute": {
         "x": 481.39029212267985,
@@ -24,12 +24,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 289,
+        "width": 290,
         "height": 20
       },
       "resizing": true,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 290,
+        "height": 20
+      }
     },
     {
       "id": "0dVq5C16sFyWglWitQQdD",
@@ -38,7 +42,7 @@
         "x": 542.8902921226799,
         "y": 1266.7340815556822
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "ofcYD3hTVEMeRptkHsVer",
@@ -47,7 +51,7 @@
         }
       },
       "zIndex": 999,
-      "width": 243,
+      "width": 244,
       "height": 20,
       "positionAbsolute": {
         "x": 542.8902921226799,
@@ -55,12 +59,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 243,
+        "width": 244,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 244,
+        "height": 20
+      }
     },
     {
       "id": "Vdw0GAnxhDCj_C3XDxNDF",
@@ -69,7 +77,7 @@
         "x": 192.89029212267985,
         "y": 1266.7340815556822
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "q_oYxEPUvEylwjAyDA5FL",
@@ -78,7 +86,7 @@
         }
       },
       "zIndex": 999,
-      "width": 77,
+      "width": 78,
       "height": 20,
       "positionAbsolute": {
         "x": 192.89029212267985,
@@ -86,12 +94,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 77,
+        "width": 78,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 78,
+        "height": 20
+      }
     },
     {
       "id": "Z4MOOqNXpHkxWe0PJ7hjt",
@@ -100,7 +112,7 @@
         "x": -82.10970787732015,
         "y": 132.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "3_CBtQLv0X6GzUEtq7jyp",
@@ -109,10 +121,10 @@
         }
       },
       "zIndex": 999,
-      "width": 343,
+      "width": 344,
       "height": 20,
       "style": {
-        "width": 343,
+        "width": 344,
         "height": 20
       },
       "positionAbsolute": {
@@ -122,7 +134,11 @@
       "dragging": false,
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 344,
+        "height": 20
+      }
     },
     {
       "id": "JHqi_gjATUrPtewn-cdGo",
@@ -131,7 +147,7 @@
         "x": -164.10970787732015,
         "y": 46.40074822234891
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "style": {
@@ -139,7 +155,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 109,
       "positionAbsolute": {
         "x": -164.10970787732015,
@@ -147,12 +163,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 109
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 109
+      }
     },
     {
       "id": "I7PI9n8QfW9_tCWOdw7yY",
@@ -161,7 +181,7 @@
         "x": -144.10970787732015,
         "y": 1174.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "deHK6yEdytCu2ACvVC0bs",
@@ -170,7 +190,7 @@
         }
       },
       "zIndex": 999,
-      "width": 337,
+      "width": 338,
       "height": 20,
       "positionAbsolute": {
         "x": -144.10970787732015,
@@ -178,12 +198,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 337,
+        "width": 338,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 338,
+        "height": 20
+      }
     },
     {
       "id": "3_CBtQLv0X6GzUEtq7jyp",
@@ -192,7 +216,7 @@
         "x": 434.89029212267985,
         "y": 133.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "style": {
@@ -200,10 +224,10 @@
         }
       },
       "zIndex": 999,
-      "width": 353,
+      "width": 354,
       "height": 20,
       "style": {
-        "width": 353,
+        "width": 354,
         "height": 20
       },
       "positionAbsolute": {
@@ -213,7 +237,11 @@
       "dragging": false,
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 354,
+        "height": 20
+      }
     },
     {
       "id": "aq0gNWINbAQFG28HLJgCF",
@@ -222,7 +250,7 @@
         "x": -82.10970787732015,
         "y": 453.9007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "ofcYD3hTVEMeRptkHsVer",
@@ -231,7 +259,7 @@
         }
       },
       "zIndex": 999,
-      "width": 330,
+      "width": 331,
       "height": 20,
       "positionAbsolute": {
         "x": -82.10970787732015,
@@ -239,12 +267,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 330,
+        "width": 331,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 331,
+        "height": 20
+      }
     },
     {
       "id": "c58fcsthBlVfzfr-MHdpF",
@@ -253,7 +285,7 @@
         "x": -164.10970787732015,
         "y": -107.59925177765109
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "style": {
@@ -264,7 +296,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 86,
       "positionAbsolute": {
         "x": -164.10970787732015,
@@ -272,12 +304,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 86
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 86
+      }
     },
     {
       "id": "Ji35JsKgUQXN4DJGEgTAC",
@@ -286,7 +322,7 @@
         "x": -271.10970787732015,
         "y": -21.59925177765109
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "AI and Data Scientist",
         "style": {
@@ -305,7 +341,11 @@
       "dragging": false,
       "selectable": true,
       "focusable": true,
-      "style": {}
+      "style": {},
+      "measured": {
+        "width": 305,
+        "height": 68
+      }
     },
     {
       "id": "aStaDENn5PhEa-cFvNzXa",
@@ -314,7 +354,7 @@
         "x": -196.10970787732015,
         "y": 118.90074822234891
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Mathematics",
         "style": {
@@ -325,7 +365,7 @@
         "oldId": "kBdt_t2SvVsY3blfubWIz"
       },
       "zIndex": 999,
-      "width": 144,
+      "width": 145,
       "height": 49,
       "positionAbsolute": {
         "x": -196.10970787732015,
@@ -333,7 +373,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 145,
+        "height": 49
+      }
     },
     {
       "id": "4WZL_fzJ3cZdWLLDoWN8D",
@@ -342,7 +386,7 @@
         "x": 304.89029212267985,
         "y": 118.90074822234891
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Statistics",
         "style": {
@@ -352,7 +396,7 @@
         }
       },
       "zIndex": 999,
-      "width": 160,
+      "width": 161,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -362,10 +406,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 160,
+        "width": 161,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 161,
+        "height": 49
+      }
     },
     {
       "id": "gWMvD83hVXeTmCuHGIiOL",
@@ -374,7 +422,7 @@
         "x": -226.10970787732015,
         "y": 200.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Linear Algebra, Calculus, Mathematical Analysis",
         "style": {
@@ -384,7 +432,7 @@
         "oldId": "eOFoGKveaHaBm_6ppJUtA"
       },
       "zIndex": 999,
-      "width": 416,
+      "width": 417,
       "height": 38,
       "positionAbsolute": {
         "x": -226.10970787732015,
@@ -394,10 +442,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 416,
+        "width": 417,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 417,
+        "height": 38
+      }
     },
     {
       "id": "HclEU3v8OdC_Oq7ONvApt",
@@ -406,7 +458,7 @@
         "x": -196.10970787732015,
         "y": 238.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Mathematics for Machine Learning",
         "href": "https://imp.i384100.net/baqMYv",
@@ -420,7 +472,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 432,
+      "width": 433,
       "height": 49,
       "positionAbsolute": {
         "x": -196.10970787732015,
@@ -428,12 +480,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 432,
+        "width": 433,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 433,
+        "height": 49
+      }
     },
     {
       "id": "mwPJh33MEUQ4Co_LiVEOb",
@@ -442,24 +498,33 @@
         "x": -226.10970787732015,
         "y": 307.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
-        "label": "Differential Calculus",
+        "label": "Differential Calculus ",
         "style": {
           "fontSize": 17,
           "padding": 0
         }
       },
       "zIndex": 999,
-      "width": 200,
-      "height": 40,
+      "width": 247,
+      "height": 38,
       "positionAbsolute": {
         "x": -226.10970787732015,
         "y": 307.4007482223489
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "style": {
+        "width": 247,
+        "height": 38
+      },
+      "resizing": false,
+      "measured": {
+        "width": 247,
+        "height": 38
+      }
     },
     {
       "id": "Py2ZgxmPRQ620cuOj_Cig",
@@ -468,7 +533,7 @@
         "x": -196.10970787732015,
         "y": 349.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Coursera: Algebra and Differential Calculus",
         "href": "https://imp.i384100.net/LX5M7M",
@@ -481,7 +546,7 @@
         "badge": "Course"
       },
       "zIndex": 999,
-      "width": 428,
+      "width": 429,
       "height": 49,
       "positionAbsolute": {
         "x": -196.10970787732015,
@@ -489,12 +554,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 428,
+        "width": 429,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 429,
+        "height": 49
+      }
     },
     {
       "id": "Y9YJdARIRqqCBCy3GVYdA",
@@ -503,7 +572,7 @@
         "x": 279.89029212267985,
         "y": 200.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Statistics, CLT",
         "style": {
@@ -513,7 +582,7 @@
         "oldId": "n2JFGwFxTuOviW6kHO1Uv"
       },
       "zIndex": 999,
-      "width": 154,
+      "width": 155,
       "height": 38,
       "positionAbsolute": {
         "x": 279.89029212267985,
@@ -523,10 +592,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 154,
+        "width": 155,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 155,
+        "height": 38
+      }
     },
     {
       "id": "O-9EsoKrMpfkcGIBKnSty",
@@ -535,7 +608,7 @@
         "x": 304.89029212267985,
         "y": 238.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Coursera: Introduction to Statistics",
         "href": "https://imp.i384100.net/3eRv4v",
@@ -549,7 +622,7 @@
         "oldId": "R0lIHKW2JmXQp79hoGU6x"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -557,12 +630,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "XJXIkWVDIrPJ-bVIvX0ZO",
@@ -571,7 +648,7 @@
         "x": 279.89029212267985,
         "y": 307.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Hypothesis Testing",
         "style": {
@@ -581,7 +658,7 @@
         "oldId": "n2JFGwFxTuOviW6kHO1Uv"
       },
       "zIndex": 999,
-      "width": 198,
+      "width": 199,
       "height": 38,
       "positionAbsolute": {
         "x": 279.89029212267985,
@@ -591,10 +668,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 198,
+        "width": 199,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 199,
+        "height": 38
+      }
     },
     {
       "id": "5_wxpYdzweUkSMugiKV94",
@@ -603,7 +684,7 @@
         "x": 304.89029212267985,
         "y": 344.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Coursera: Hypothesis Testing",
         "href": "https://imp.i384100.net/vN0JAA",
@@ -617,7 +698,7 @@
         "oldId": "R0lIHKW2JmXQp79hoGU6x"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -625,12 +706,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "jxJtwbiCvxHqmkWkE7zdx",
@@ -639,7 +724,7 @@
         "x": 279.89029212267985,
         "y": 408.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Probability and Sampling",
         "style": {
@@ -649,7 +734,7 @@
         "oldId": "n2JFGwFxTuOviW6kHO1Uv"
       },
       "zIndex": 999,
-      "width": 245,
+      "width": 246,
       "height": 38,
       "positionAbsolute": {
         "x": 279.89029212267985,
@@ -659,10 +744,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 245,
+        "width": 246,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 246,
+        "height": 38
+      }
     },
     {
       "id": "jIeLbbE0KYjoQo0t0CVXm",
@@ -671,7 +760,7 @@
         "x": 304.89029212267985,
         "y": 439.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Coursera: Probability and Statistics",
         "href": "https://imp.i384100.net/daDM6Q",
@@ -685,7 +774,7 @@
         "oldId": "R0lIHKW2JmXQp79hoGU6x"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -693,12 +782,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "mJq9b50MJM9o9dLhx40iN",
@@ -707,7 +800,7 @@
         "x": 279.89029212267985,
         "y": 511.40074822234897
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "AB Testing",
         "style": {
@@ -717,7 +810,7 @@
         "oldId": "n2JFGwFxTuOviW6kHO1Uv"
       },
       "zIndex": 999,
-      "width": 149,
+      "width": 150,
       "height": 38,
       "positionAbsolute": {
         "x": 279.89029212267985,
@@ -727,10 +820,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 149,
+        "width": 150,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 150,
+        "height": 38
+      }
     },
     {
       "id": "lrDei3AUInJZ1ISDxOxdT",
@@ -739,7 +836,7 @@
         "x": 304.89029212267985,
         "y": 549.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Practitioner's Guide to Statistical Tests",
         "href": "https://vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f#1e3b",
@@ -753,7 +850,7 @@
         "oldId": "bdAl2ne0fsE1R02wWdIK9"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -761,12 +858,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "R0lIHKW2JmXQp79hoGU6x",
@@ -775,10 +876,10 @@
         "x": 304.89029212267985,
         "y": 603.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
-        "label": "Experiment Design Article",
-        "href": "https://towardsdatascience.com/step-by-step-for-planning-an-a-b-test-ef3c93143c0b",
+        "label": "Step by Step Process for Planning an A/B Test",
+        "href": "https://medium.com/data-science/step-by-step-for-planning-an-a-b-test-ef3c93143c0b",
         "style": {
           "fontSize": 17,
           "color": "#000000",
@@ -789,7 +890,7 @@
         "oldId": "Py2ZgxmPRQ620cuOj_Cig"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -797,12 +898,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "v68nwX914qCwHDSwY_ZhG",
@@ -811,7 +916,7 @@
         "x": 282.89029212267985,
         "y": 669.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Increasing Test Sensitivity",
         "style": {
@@ -821,7 +926,7 @@
         "oldId": "n2JFGwFxTuOviW6kHO1Uv"
       },
       "zIndex": 999,
-      "width": 255,
+      "width": 256,
       "height": 38,
       "positionAbsolute": {
         "x": 282.89029212267985,
@@ -831,10 +936,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 255,
+        "width": 256,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 256,
+        "height": 38
+      }
     },
     {
       "id": "G6wxStgN1ShtD6RR2xVc-",
@@ -843,7 +952,7 @@
         "x": 304.89029212267985,
         "y": 700.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Minimum Detectable Effect",
         "href": "https://splitmetrics.com/resources/minimum-detectable-effect-mde/",
@@ -857,7 +966,7 @@
         "oldId": "bdAl2ne0fsE1R02wWdIK9"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -865,12 +974,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "Pu6kiJ0YOvtD6AypKWkfJ",
@@ -879,7 +992,7 @@
         "x": 304.89029212267985,
         "y": 753.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Paper: Improving Test Sensitivity",
         "href": "https://kdd.org/kdd2016/papers/files/adp0945-xieA.pdf",
@@ -893,7 +1006,7 @@
         "oldId": "bdAl2ne0fsE1R02wWdIK9"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -901,12 +1014,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "usXkw57ukCuc9gAw6E5Td",
@@ -915,7 +1032,7 @@
         "x": 304.89029212267985,
         "y": 806.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Paper: Improving Sensitivity (CUPED)",
         "href": "https://exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf",
@@ -929,7 +1046,7 @@
         "oldId": "bdAl2ne0fsE1R02wWdIK9"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -937,12 +1054,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "T0suD_0uw6nSq7NOFBoNQ",
@@ -951,7 +1072,7 @@
         "x": 304.89029212267985,
         "y": 859.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "CUPED at Booking.com",
         "href": "https://booking.ai/how-booking-com-increases-the-power-of-online-experiments-with-cuped-995d186fff1d",
@@ -965,7 +1086,7 @@
         "oldId": "bdAl2ne0fsE1R02wWdIK9"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -973,12 +1094,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "Vx5zD4Y-6yLxorD8kNvop",
@@ -987,7 +1112,7 @@
         "x": 304.89029212267985,
         "y": 912.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Doordash: CUPAC",
         "href": "https://doordash.engineering/2020/06/08/improving-experimental-power-through-control-using-predictions-as-covariate-cupac/",
@@ -1001,7 +1126,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -1009,12 +1134,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "bdAl2ne0fsE1R02wWdIK9",
@@ -1023,7 +1152,7 @@
         "x": 304.89029212267985,
         "y": 965.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Netflix: Stratification",
         "href": "https://www.researchgate.net/publication/305997925_Improving_the_Sensitivity_of_Online_Controlled_Experiments_Case_Studies_at_Netflix",
@@ -1037,7 +1166,7 @@
         "oldId": "R0lIHKW2JmXQp79hoGU6x"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -1045,12 +1174,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "n2JFGwFxTuOviW6kHO1Uv",
@@ -1059,7 +1192,7 @@
         "x": 282.89029212267985,
         "y": 1036.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Ratio Metrics",
         "style": {
@@ -1069,7 +1202,7 @@
         "oldId": "mwPJh33MEUQ4Co_LiVEOb"
       },
       "zIndex": 999,
-      "width": 179,
+      "width": 180,
       "height": 38,
       "positionAbsolute": {
         "x": 282.89029212267985,
@@ -1079,10 +1212,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 179,
+        "width": 180,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 180,
+        "height": 38
+      }
     },
     {
       "id": "nW_wSh-PoSlmOONP48UDD",
@@ -1091,7 +1228,7 @@
         "x": 304.89029212267985,
         "y": 1072.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Microsoft: Delta Method in Metric Analytics",
         "href": "https://arxiv.org/pdf/1803.06336",
@@ -1105,7 +1242,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -1113,12 +1250,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "KiaiatCPngkVem7Bw3s0T",
@@ -1127,7 +1268,7 @@
         "x": 304.89029212267985,
         "y": 1125.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Paper: Ratio Metrics",
         "href": "https://stat.cmu.edu/~hseltman/files/ratio.pdf",
@@ -1141,7 +1282,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 440,
+      "width": 441,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -1149,12 +1290,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 440,
+        "width": 441,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 441,
+        "height": 49
+      }
     },
     {
       "id": "o_Ddc5iv9y4ZLUjmUTvP-",
@@ -1163,7 +1308,7 @@
         "x": -232.71752171424652,
         "y": 125.40074822234891
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "1",
         "href": "",
@@ -1175,7 +1320,7 @@
         "oldId": "wOqfPAZ24GxUrkxVRRyT5"
       },
       "zIndex": 999,
-      "width": 23,
+      "width": 24,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1183,7 +1328,11 @@
         "y": 125.40074822234891
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 24,
+        "height": 36
+      }
     },
     {
       "id": "B3ZzcZspEctJ2kX6At0tb",
@@ -1192,7 +1341,7 @@
         "x": 273.89029212267985,
         "y": 125.40074822234891
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "2",
         "href": "",
@@ -1204,7 +1353,7 @@
         "oldId": "qRxvTDjpoW1GuQ771syXb"
       },
       "zIndex": 999,
-      "width": 26,
+      "width": 27,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1212,7 +1361,11 @@
         "y": 125.40074822234891
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 27,
+        "height": 36
+      }
     },
     {
       "id": "Io-XP7K1_siYDrlwFmbEx",
@@ -1221,7 +1374,7 @@
         "x": -200.10970787732015,
         "y": 445.78255589147204
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "3",
         "href": "",
@@ -1233,7 +1386,7 @@
         "oldId": "wOqfPAZ24GxUrkxVRRyT5"
       },
       "zIndex": 999,
-      "width": 26,
+      "width": 27,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1241,7 +1394,11 @@
         "y": 445.78255589147204
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 27,
+        "height": 36
+      }
     },
     {
       "id": "Gd2egqKZPnbPW1W2jw4j8",
@@ -1250,7 +1407,7 @@
         "x": -163.75449749114952,
         "y": 439.28255589147204
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Econometrics",
         "style": {
@@ -1261,7 +1418,7 @@
         "oldId": "kBdt_t2SvVsY3blfubWIz"
       },
       "zIndex": 999,
-      "width": 143,
+      "width": 144,
       "height": 49,
       "positionAbsolute": {
         "x": -163.75449749114952,
@@ -1271,10 +1428,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 143,
+        "width": 144,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 144,
+        "height": 49
+      }
     },
     {
       "id": "EqgwFsJqejdABpTBoxOix",
@@ -1283,7 +1444,7 @@
         "x": 236.89029212267985,
         "y": 463.9007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "oldId": "rKb8lqYH0GC_6R5qybzzM",
@@ -1292,7 +1453,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 747,
       "positionAbsolute": {
         "x": 236.89029212267985,
@@ -1300,12 +1461,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 747
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 747
+      }
     },
     {
       "id": "GFlPWkEVwPlxPhOitG1xH",
@@ -1314,7 +1479,7 @@
         "x": 245,
         "y": 1200.900748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "style": {
@@ -1322,7 +1487,7 @@
         }
       },
       "zIndex": 999,
-      "width": 543,
+      "width": 544,
       "height": 20,
       "positionAbsolute": {
         "x": 245,
@@ -1330,12 +1495,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 543,
+        "width": 544,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 544,
+        "height": 20
+      }
     },
     {
       "id": "h9_7FHMPipHVN7C4ErKHU",
@@ -1344,7 +1513,7 @@
         "x": 778,
         "y": 141.9007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "style": {
@@ -1353,7 +1522,7 @@
         "oldId": "FsU7_B1LCULtlVQg7gEPR"
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 1069,
       "positionAbsolute": {
         "x": 778,
@@ -1361,12 +1530,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 1069
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 1069
+      }
     },
     {
       "id": "_uOgVh3d8lAlbTgYNJFpt",
@@ -1375,7 +1548,7 @@
         "x": 45.89029212267985,
         "y": 125
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": ">",
         "href": "",
@@ -1387,7 +1560,7 @@
         "oldId": "Xd_mdvQdbCWcucpSTcDz1"
       },
       "zIndex": 999,
-      "width": 34,
+      "width": 35,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1395,7 +1568,11 @@
         "y": 125
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 35,
+        "height": 36
+      }
     },
     {
       "id": "qRxvTDjpoW1GuQ771syXb",
@@ -1404,7 +1581,7 @@
         "x": 578.5569587893465,
         "y": 125
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": ">",
         "href": "",
@@ -1415,7 +1592,7 @@
         }
       },
       "zIndex": 999,
-      "width": 31,
+      "width": 32,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1423,7 +1600,11 @@
         "y": 125
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 32,
+        "height": 36
+      }
     },
     {
       "id": "TAN0BhW1tm0t3eNHOmOZ8",
@@ -1432,7 +1613,7 @@
         "x": 771,
         "y": 398.4007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -1444,7 +1625,7 @@
         "oldId": "93tag4KlRPagkbdpY4lVT"
       },
       "zIndex": 999,
-      "width": 31,
+      "width": 32,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1452,7 +1633,11 @@
         "y": 398.4007482223489
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 32,
+        "height": 36
+      }
     },
     {
       "id": "5wqI-L_vEpqtvXZEAbfqE",
@@ -1461,7 +1646,7 @@
         "x": 771,
         "y": 835.900748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -1473,7 +1658,7 @@
         "oldId": "93tag4KlRPagkbdpY4lVT"
       },
       "zIndex": 999,
-      "width": 31,
+      "width": 32,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1481,7 +1666,11 @@
         "y": 835.900748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 32,
+        "height": 36
+      }
     },
     {
       "id": "hvFSTxMfMXPysDinI0oH8",
@@ -1490,7 +1679,7 @@
         "x": 695.2536071965056,
         "y": 1192.900748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "<",
         "href": "",
@@ -1502,7 +1691,7 @@
         "oldId": "SG6DkcQM4NdgTSu2MR8Q5"
       },
       "zIndex": 999,
-      "width": 33,
+      "width": 34,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1510,7 +1699,11 @@
         "y": 1192.900748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 34,
+        "height": 36
+      }
     },
     {
       "id": "YT5_iofe0kQ-wVjd54RT8",
@@ -1519,7 +1712,7 @@
         "x": 331.89029212267985,
         "y": 1192.900748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "<",
         "href": "",
@@ -1530,7 +1723,7 @@
         }
       },
       "zIndex": 999,
-      "width": 33,
+      "width": 34,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1538,7 +1731,11 @@
         "y": 1192.900748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 34,
+        "height": 36
+      }
     },
     {
       "id": "ct0yUXFnbSXCw4HGIh3hh",
@@ -1547,7 +1744,7 @@
         "x": 229,
         "y": 799.900748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "^",
         "href": "",
@@ -1559,7 +1756,7 @@
         "oldId": "Jsyv0X1BPlP0Vi_oklxHA"
       },
       "zIndex": 999,
-      "width": 31,
+      "width": 32,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1567,7 +1764,11 @@
         "y": 799.900748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 32,
+        "height": 36
+      }
     },
     {
       "id": "_-qXa7MhA16X2BBdaWw4f",
@@ -1576,7 +1777,7 @@
         "x": 229,
         "y": 1131.900748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "^",
         "href": "",
@@ -1587,7 +1788,7 @@
         }
       },
       "zIndex": 999,
-      "width": 31,
+      "width": 32,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1595,7 +1796,11 @@
         "y": 1131.900748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 32,
+        "height": 36
+      }
     },
     {
       "id": "EyjiTmb9kck4OoNtbde1x",
@@ -1604,7 +1809,7 @@
         "x": 229,
         "y": 501.40074822234897
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "^",
         "href": "",
@@ -1616,7 +1821,7 @@
         "oldId": "Jsyv0X1BPlP0Vi_oklxHA"
       },
       "zIndex": 999,
-      "width": 31,
+      "width": 32,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1624,7 +1829,11 @@
         "y": 501.40074822234897
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 32,
+        "height": 36
+      }
     },
     {
       "id": "WmbvaP_zRGs_WhYK30YqM",
@@ -1633,7 +1842,7 @@
         "x": 45.89029212267985,
         "y": 445.9007482223489
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "<",
         "href": "",
@@ -1645,7 +1854,7 @@
         "oldId": "qRxvTDjpoW1GuQ771syXb"
       },
       "zIndex": 999,
-      "width": 33,
+      "width": 34,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -1653,7 +1862,11 @@
         "y": 445.9007482223489
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 34,
+        "height": 36
+      }
     },
     {
       "id": "y6xXsc-uSAmRDnNuyhqH2",
@@ -1662,7 +1875,7 @@
         "x": -226.10970787732018,
         "y": 517.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Pre-requisites of Econometrics",
         "style": {
@@ -1672,7 +1885,7 @@
         "oldId": "eOFoGKveaHaBm_6ppJUtA"
       },
       "zIndex": 999,
-      "width": 303,
+      "width": 304,
       "height": 38,
       "positionAbsolute": {
         "x": -226.10970787732018,
@@ -1682,10 +1895,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 303,
+        "width": 304,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 304,
+        "height": 38
+      }
     },
     {
       "id": "2rt4WE9cE93K6vDM-c-IL",
@@ -1694,7 +1911,7 @@
         "x": -196.10970787732018,
         "y": 548.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Fundamentals of Econometrics",
         "href": "https://bookdown.org/ts_robinson1994/10EconometricTheorems/",
@@ -1708,7 +1925,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -196.10970787732018,
@@ -1716,12 +1933,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "h19k9Fn5XPh3_pKEC8Ftp",
@@ -1730,7 +1951,7 @@
         "x": -226.10970787732018,
         "y": 621.1026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Regression, Timeseries, Fitting Distributions",
         "style": {
@@ -1740,7 +1961,7 @@
         "oldId": "eOFoGKveaHaBm_6ppJUtA"
       },
       "zIndex": 999,
-      "width": 383,
+      "width": 384,
       "height": 38,
       "positionAbsolute": {
         "x": -226.10970787732018,
@@ -1750,10 +1971,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 383,
+        "width": 384,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 384,
+        "height": 38
+      }
     },
     {
       "id": "Eu7OT0Q7mtrMseUVumGXA",
@@ -1762,7 +1987,7 @@
         "x": -191.10970787732018,
         "y": 658.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Intro to Econometrics",
         "href": "https://academia.edu/33062577/Dougherty_Intro_to_Econometrics_4th_ed_small",
@@ -1776,7 +2001,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -191.10970787732018,
@@ -1784,12 +2009,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "hVOt_Ya86r_SIXJBkLXBj",
@@ -1798,7 +2027,7 @@
         "x": -191.10970787732018,
         "y": 711.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Coursera: Econometrics",
         "href": "https://imp.i384100.net/k0krYL",
@@ -1812,7 +2041,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -191.10970787732018,
@@ -1820,12 +2049,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "YU_5XufdA-zfhM0fXxGYs",
@@ -1834,7 +2067,7 @@
         "x": -191.10970787732018,
         "y": 784.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Kaggle: Learn Time Series",
         "href": "https://www.kaggle.com/learn/time-series",
@@ -1848,7 +2081,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -191.10970787732018,
@@ -1856,12 +2089,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "9mB3u8st5yhM7HfVWWqFZ",
@@ -1870,7 +2107,7 @@
         "x": -191.10970787732018,
         "y": 837.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Kaggle: Time Series Basics",
         "href": "https://kaggle.com/code/jagangupta/time-series-basics-exploring-traditional-ts#Hierarchical-time-series",
@@ -1884,7 +2121,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -191.10970787732018,
@@ -1892,12 +2129,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "FwuC8d9ocHeDxi8MSIPH6",
@@ -1906,7 +2147,7 @@
         "x": -191.10970787732018,
         "y": 890.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "ARIMA model for Time Series",
         "href": "https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python",
@@ -1920,7 +2161,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -191.10970787732018,
@@ -1928,12 +2169,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "53Z3qm-zP4u7_KqSD_XlB",
@@ -1942,7 +2187,7 @@
         "x": -191.10970787732006,
         "y": 943.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Time Series Models",
         "href": "https://machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/",
@@ -1956,7 +2201,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -191.10970787732006,
@@ -1964,12 +2209,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "LVLv69h57rnKPKpa0Cj4h",
@@ -1978,7 +2227,7 @@
         "x": -191.10970787732006,
         "y": 996.6026955968633
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Forecasting Task with Solution",
         "href": "https://github.com/stalkermustang/bcdc_ds_takehome",
@@ -1992,7 +2241,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -191.10970787732006,
@@ -2000,12 +2249,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "FrY1Yl6yvLYA5zjBNKRVx",
@@ -2014,7 +2267,7 @@
         "x": -191.10970787732018,
         "y": 1063.6026955968632
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Coursera: Linear Regression",
         "href": "https://imp.i384100.net/9g97Ke",
@@ -2028,7 +2281,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 418,
+      "width": 419,
       "height": 49,
       "positionAbsolute": {
         "x": -191.10970787732018,
@@ -2036,12 +2289,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 418,
+        "width": 419,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 419,
+        "height": 49
+      }
     },
     {
       "id": "XLDWuSt4tI4gnmqMFdpmy",
@@ -2050,7 +2307,7 @@
         "x": -153.75449749114952,
         "y": 1159.900748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Coding",
         "style": {
@@ -2061,7 +2318,7 @@
         "oldId": "Qa85hEVe2kz62k9Pj4QCA"
       },
       "zIndex": 999,
-      "width": 100,
+      "width": 101,
       "height": 49,
       "positionAbsolute": {
         "x": -153.75449749114952,
@@ -2069,7 +2326,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 101,
+        "height": 49
+      }
     },
     {
       "id": "HVHYJ8gWHCZMACuvKP7gK",
@@ -2078,7 +2339,7 @@
         "x": -188.75449749114966,
         "y": 1166.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "4",
         "href": "",
@@ -2090,7 +2351,7 @@
         "oldId": "Sehg_WX_mnMCRlKrvwWzc"
       },
       "zIndex": 999,
-      "width": 26,
+      "width": 27,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -2098,7 +2359,11 @@
         "y": 1166.400748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 27,
+        "height": 36
+      }
     },
     {
       "id": "27CsPu77wfCw4uI0Tu45e",
@@ -2107,7 +2372,7 @@
         "x": -266.2175217142465,
         "y": 463.28255589147204
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "style": {
@@ -2116,7 +2381,7 @@
         "oldId": "kBQV71KwuVxpUi0nFj17X"
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 722,
       "positionAbsolute": {
         "x": -266.2175217142465,
@@ -2124,12 +2389,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 722
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 722
+      }
     },
     {
       "id": "z9R4_7UWeLz66RptYvcEI",
@@ -2138,7 +2407,7 @@
         "x": -273,
         "y": 555.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -2150,7 +2419,7 @@
         "oldId": "Jsyv0X1BPlP0Vi_oklxHA"
       },
       "zIndex": 999,
-      "width": 28,
+      "width": 29,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -2158,7 +2427,11 @@
         "y": 555.400748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 29,
+        "height": 36
+      }
     },
     {
       "id": "AIFkyjgGB7AXmCG6D1bzs",
@@ -2167,7 +2440,7 @@
         "x": -273,
         "y": 812.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -2179,7 +2452,7 @@
         "oldId": "Jsyv0X1BPlP0Vi_oklxHA"
       },
       "zIndex": 999,
-      "width": 28,
+      "width": 29,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -2187,7 +2460,11 @@
         "y": 812.400748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 29,
+        "height": 36
+      }
     },
     {
       "id": "Jsyv0X1BPlP0Vi_oklxHA",
@@ -2196,7 +2473,7 @@
         "x": -273,
         "y": 1039.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -2208,7 +2485,7 @@
         "oldId": "_-qXa7MhA16X2BBdaWw4f"
       },
       "zIndex": 999,
-      "width": 28,
+      "width": 29,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -2216,7 +2493,11 @@
         "y": 1039.400748222349
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 29,
+        "height": 36
+      }
     },
     {
       "id": "MVrAqizgkoAs2aghN8TgV",
@@ -2225,7 +2506,7 @@
         "x": -253.75449749114952,
         "y": 1233.900748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Learn Python Programming Language",
         "style": {
@@ -2235,7 +2516,7 @@
         "oldId": "uPzzUpI0--7OWDfNeBIjt"
       },
       "zIndex": 999,
-      "width": 343,
+      "width": 344,
       "height": 38,
       "positionAbsolute": {
         "x": -253.75449749114952,
@@ -2245,10 +2526,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 343,
+        "width": 344,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 344,
+        "height": 38
+      }
     },
     {
       "id": "aRYOzyqvWmarRmNaPKqxI",
@@ -2257,7 +2542,7 @@
         "x": -227.93697112052075,
         "y": 1273.94348613687
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Learn Python: Kaggle",
         "href": "https://www.kaggle.com/learn/python",
@@ -2271,7 +2556,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 386,
+      "width": 387,
       "height": 49,
       "positionAbsolute": {
         "x": -227.93697112052075,
@@ -2279,12 +2564,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 386,
+        "width": 387,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 387,
+        "height": 49
+      }
     },
     {
       "id": "eUQRHOSQq0hjwH0LuGDqY",
@@ -2293,7 +2582,7 @@
         "x": -227.93697112052075,
         "y": 1327.94348613687
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Google's Python Class",
         "href": "https://developers.google.com/edu/python",
@@ -2307,7 +2596,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 386,
+      "width": 387,
       "height": 49,
       "positionAbsolute": {
         "x": -227.93697112052075,
@@ -2315,12 +2604,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 386,
+        "width": 387,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 387,
+        "height": 49
+      }
     },
     {
       "id": "R2WD0NKP7oM27aHr9SpO6",
@@ -2329,7 +2622,7 @@
         "x": -257.93697112052075,
         "y": 453.78255589147204
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "iJv3Ii5B5TK8i5mN2mLs2",
@@ -2338,7 +2631,7 @@
         }
       },
       "zIndex": 999,
-      "width": 50,
+      "width": 51,
       "height": 20,
       "positionAbsolute": {
         "x": -257.93697112052075,
@@ -2346,12 +2639,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 50,
+        "width": 51,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 51,
+        "height": 20
+      }
     },
     {
       "id": "36wmSfRpWOnprqPo4C7QA",
@@ -2360,7 +2657,7 @@
         "x": -257.93697112052075,
         "y": 1174.400748222349
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "style": {
@@ -2369,7 +2666,7 @@
         "oldId": "iJv3Ii5B5TK8i5mN2mLs2"
       },
       "zIndex": 999,
-      "width": 65,
+      "width": 66,
       "height": 20,
       "positionAbsolute": {
         "x": -257.93697112052075,
@@ -2377,12 +2674,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 65,
+        "width": 66,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 66,
+        "height": 20
+      }
     },
     {
       "id": "StBCykpzpM4g9PRFeSNXa",
@@ -2391,7 +2692,7 @@
         "x": -252.60970787732018,
         "y": 1405.2347754827133
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Data Structures and Algorithms (Python)",
         "style": {
@@ -2401,7 +2702,7 @@
         "oldId": "eOFoGKveaHaBm_6ppJUtA"
       },
       "zIndex": 999,
-      "width": 361,
+      "width": 362,
       "height": 38,
       "positionAbsolute": {
         "x": -252.60970787732018,
@@ -2411,10 +2712,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 361,
+        "width": 362,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 362,
+        "height": 38
+      }
     },
     {
       "id": "lhLL1ycUWgeX_d5gd-g8g",
@@ -2423,7 +2728,7 @@
         "x": -227.93697112052075,
         "y": 1497.72719179845
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Study Plans - Leetcode",
         "href": "https://leetcode.com/studyplan/",
@@ -2437,7 +2742,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 386,
+      "width": 387,
       "height": 49,
       "positionAbsolute": {
         "x": -227.93697112052075,
@@ -2445,12 +2750,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 386,
+        "width": 387,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 387,
+        "height": 49
+      }
     },
     {
       "id": "4_5Q9PesKAtnLlT-NAm3z",
@@ -2459,7 +2768,7 @@
         "x": -227.93697112052075,
         "y": 1442.932766177383
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Algorithmic Excercises",
         "href": "https://leetcode.com/explore/learn/",
@@ -2473,7 +2782,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 386,
+      "width": 387,
       "height": 49,
       "positionAbsolute": {
         "x": -227.93697112052075,
@@ -2481,12 +2790,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 386,
+        "width": 387,
         "height": 49
       },
       "resizing": true,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 387,
+        "height": 49
+      }
     },
     {
       "id": "Bh3vUHjY9So8vWli_464_",
@@ -2495,7 +2808,7 @@
         "x": -227.93697112052075,
         "y": 1551.72719179845
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Algorithms Specialization",
         "href": "https://imp.i384100.net/5gqv4n",
@@ -2509,7 +2822,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 386,
+      "width": 387,
       "height": 49,
       "positionAbsolute": {
         "x": -227.93697112052075,
@@ -2517,12 +2830,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 386,
+        "width": 387,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 387,
+        "height": 49
+      }
     },
     {
       "id": "Im0tXXn3GC-FUq2aMHgwm",
@@ -2531,7 +2848,7 @@
         "x": -252.60970787732018,
         "y": 1625.613764362119
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Learn SQL",
         "style": {
@@ -2541,7 +2858,7 @@
         "oldId": "eOFoGKveaHaBm_6ppJUtA"
       },
       "zIndex": 999,
-      "width": 133,
+      "width": 134,
       "height": 38,
       "positionAbsolute": {
         "x": -252.60970787732018,
@@ -2551,10 +2868,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 133,
+        "width": 134,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 134,
+        "height": 38
+      }
     },
     {
       "id": "22XRxoVJX-hIdinkFICPU",
@@ -2563,7 +2884,7 @@
         "x": -227.93697112052075,
         "y": 1667.4659358409885
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "SQL Tutorial",
         "href": "https://sqltutorial.org/",
@@ -2577,7 +2898,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 386,
+      "width": 387,
       "height": 49,
       "positionAbsolute": {
         "x": -227.93697112052075,
@@ -2585,12 +2906,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 386,
+        "width": 387,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 387,
+        "height": 49
+      }
     },
     {
       "id": "Sx6HhmEozlX7CEXQoVkTf",
@@ -2599,7 +2924,7 @@
         "x": 182.89029212267985,
         "y": 1183
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "oldId": "rKb8lqYH0GC_6R5qybzzM",
@@ -2608,7 +2933,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 96,
       "positionAbsolute": {
         "x": 182.89029212267985,
@@ -2616,12 +2941,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 96
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 96
+      }
     },
     {
       "id": "l1027SBZxTHKzqWw98Ee-",
@@ -2630,7 +2959,7 @@
         "x": 304.89029212267985,
         "y": 1252.2340815556822
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Exploratory Data Analysis",
         "style": {
@@ -2641,7 +2970,7 @@
         "oldId": "kBdt_t2SvVsY3blfubWIz"
       },
       "zIndex": 999,
-      "width": 238,
+      "width": 239,
       "height": 49,
       "positionAbsolute": {
         "x": 304.89029212267985,
@@ -2649,7 +2978,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 239,
+        "height": 49
+      }
     },
     {
       "id": "YJ2fIGILZJjobx5CAD6QW",
@@ -2658,7 +2991,7 @@
         "x": 273.89029212267985,
         "y": 1258.7340815556822
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "5",
         "href": "",
@@ -2670,7 +3003,7 @@
         "oldId": "wOqfPAZ24GxUrkxVRRyT5"
       },
       "zIndex": 999,
-      "width": 26,
+      "width": 27,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -2678,7 +3011,11 @@
         "y": 1258.7340815556822
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 27,
+        "height": 36
+      }
     },
     {
       "id": "JaN8YhMeN3whAe2TCXvw9",
@@ -2687,7 +3024,7 @@
         "x": 245,
         "y": 1327.94348613687
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Data understanding, Data Analysis and Visualization",
         "style": {
@@ -2697,7 +3034,7 @@
         "oldId": "uPzzUpI0--7OWDfNeBIjt"
       },
       "zIndex": 999,
-      "width": 460,
+      "width": 461,
       "height": 38,
       "positionAbsolute": {
         "x": 245,
@@ -2707,10 +3044,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 460,
+        "width": 461,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 461,
+        "height": 38
+      }
     },
     {
       "id": "wG3LU8181BGihDVYJVI09",
@@ -2719,7 +3060,7 @@
         "x": 278,
         "y": 1366.2347754827133
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Exploratory Data Analysis with Python and Pandas",
         "href": "https://imp.i384100.net/AWAv4R",
@@ -2733,7 +3074,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 477,
+      "width": 478,
       "height": 49,
       "positionAbsolute": {
         "x": 278,
@@ -2741,12 +3082,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 477,
+        "width": 478,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 478,
+        "height": 49
+      }
     },
     {
       "id": "R4MhS5WFGaGOLNq6SRpy0",
@@ -2755,7 +3100,7 @@
         "x": 278,
         "y": 1419.2347754827133
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Exploratory Data Analysis for Machine Learning",
         "href": "https://imp.i384100.net/GmQMLE",
@@ -2769,7 +3114,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 477,
+      "width": 478,
       "height": 49,
       "positionAbsolute": {
         "x": 278,
@@ -2777,12 +3122,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 477,
+        "width": 478,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 478,
+        "height": 49
+      }
     },
     {
       "id": "mpPs2k7oT7EWrhQwaoPXr",
@@ -2791,10 +3140,10 @@
         "x": 278,
         "y": 1472.2347754827133
       },
-      "selected": false,
+      "selected": true,
       "data": {
-        "label": "Exploratory Data Analysis with Seaborn",
-        "href": "https://imp.i384100.net/ZQmMgR",
+        "label": "Python for Data Visualization: Matplotlib & Seaborn",
+        "href": "https://imp.i384100.net/55xvzn",
         "style": {
           "fontSize": 17,
           "color": "#000000",
@@ -2805,7 +3154,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 477,
+      "width": 478,
       "height": 49,
       "positionAbsolute": {
         "x": 278,
@@ -2813,12 +3162,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 477,
+        "width": 478,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 478,
+        "height": 49
+      }
     },
     {
       "id": "FsU7_B1LCULtlVQg7gEPR",
@@ -2827,7 +3180,7 @@
         "x": 776,
         "y": 1275.5
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "style": {
@@ -2835,7 +3188,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 288,
       "positionAbsolute": {
         "x": 776,
@@ -2843,12 +3196,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 288
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 288
+      }
     },
     {
       "id": "ofcYD3hTVEMeRptkHsVer",
@@ -2857,7 +3214,7 @@
         "x": 525.8902921226799,
         "y": 1551.72719179845
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "GFlPWkEVwPlxPhOitG1xH",
@@ -2866,7 +3223,7 @@
         }
       },
       "zIndex": 999,
-      "width": 260,
+      "width": 261,
       "height": 20,
       "positionAbsolute": {
         "x": 525.8902921226799,
@@ -2874,12 +3231,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 260,
+        "width": 261,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 261,
+        "height": 20
+      }
     },
     {
       "id": "kBdt_t2SvVsY3blfubWIz",
@@ -2888,7 +3249,7 @@
         "x": 336.89029212267985,
         "y": 1537.22719179845
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Machine Learning",
         "style": {
@@ -2899,7 +3260,7 @@
         "oldId": "4WZL_fzJ3cZdWLLDoWN8D"
       },
       "zIndex": 999,
-      "width": 206,
+      "width": 207,
       "height": 49,
       "positionAbsolute": {
         "x": 336.89029212267985,
@@ -2909,10 +3270,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 206,
+        "width": 207,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 207,
+        "height": 49
+      }
     },
     {
       "id": "wOqfPAZ24GxUrkxVRRyT5",
@@ -2921,7 +3286,7 @@
         "x": 299.89029212267985,
         "y": 1543.72719179845
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "6",
         "href": "",
@@ -2933,7 +3298,7 @@
         "oldId": "qRxvTDjpoW1GuQ771syXb"
       },
       "zIndex": 999,
-      "width": 26,
+      "width": 27,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -2941,7 +3306,11 @@
         "y": 1543.72719179845
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 27,
+        "height": 36
+      }
     },
     {
       "id": "oeNjgke33Daibit1E6Rqr",
@@ -2950,7 +3319,7 @@
         "x": 211.89029212267985,
         "y": 1551.72719179845
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "q_oYxEPUvEylwjAyDA5FL",
@@ -2959,7 +3328,7 @@
         }
       },
       "zIndex": 999,
-      "width": 87,
+      "width": 88,
       "height": 20,
       "positionAbsolute": {
         "x": 211.89029212267985,
@@ -2967,12 +3336,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 87,
+        "width": 88,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 88,
+        "height": 20
+      }
     },
     {
       "id": "FdBih8tlGPPy97YWq463y",
@@ -2981,7 +3354,7 @@
         "x": 245,
         "y": 1619.1289204774196
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Classic ML (Sup., Unsup.), Advanced ML (Ensembles, NNs)",
         "style": {
@@ -2991,7 +3364,7 @@
         "oldId": "uPzzUpI0--7OWDfNeBIjt"
       },
       "zIndex": 999,
-      "width": 535,
+      "width": 536,
       "height": 38,
       "positionAbsolute": {
         "x": 245,
@@ -3001,10 +3374,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 535,
+        "width": 536,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 536,
+        "height": 38
+      }
     },
     {
       "id": "MyBAdtFSNVOnpw1BPQNky",
@@ -3013,7 +3390,7 @@
         "x": 272,
         "y": 1657.1289204774196
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Open Machine Learning Course - Open Data Science",
         "href": "https://mlcourse.ai/book/topic01/topic01_intro.html",
@@ -3027,7 +3404,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 515,
+      "width": 516,
       "height": 49,
       "positionAbsolute": {
         "x": 272,
@@ -3035,12 +3412,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 515,
+        "width": 516,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 516,
+        "height": 49
+      }
     },
     {
       "id": "qCjcQWK1RGUU6K3dljow2",
@@ -3049,7 +3430,7 @@
         "x": 272,
         "y": 1709
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Machine Learning Specialization",
         "href": "https://imp.i384100.net/oqGkrg",
@@ -3063,7 +3444,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 515,
+      "width": 516,
       "height": 49,
       "positionAbsolute": {
         "x": 272,
@@ -3071,12 +3452,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 515,
+        "width": 516,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 516,
+        "height": 49
+      }
     },
     {
       "id": "erDpbh0iRTfoUQrU4uEMs",
@@ -3085,7 +3470,7 @@
         "x": 272,
         "y": 1779.259275392802
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Pattern Recognition & ML by Christopher m. Bishop",
         "href": "https://microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf",
@@ -3099,7 +3484,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 515,
+      "width": 516,
       "height": 49,
       "positionAbsolute": {
         "x": 272,
@@ -3107,12 +3492,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 515,
+        "width": 516,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 516,
+        "height": 49
+      }
     },
     {
       "id": "9yKXxruT8s9KBEFf_Twd0",
@@ -3121,7 +3510,7 @@
         "x": 272,
         "y": 1832.1050525886042
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "GitHub repository with notes & code from the eBook above",
         "href": "https://github.com/gerdm/prml",
@@ -3135,7 +3524,7 @@
         "oldId": "bsj2IHFXur-qqDSI4B1wg"
       },
       "zIndex": 999,
-      "width": 515,
+      "width": 516,
       "height": 49,
       "positionAbsolute": {
         "x": 272,
@@ -3143,12 +3532,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 515,
+        "width": 516,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 516,
+        "height": 49
+      }
     },
     {
       "id": "uCZ6_FKeaY0lCkrNttNhz",
@@ -3157,7 +3550,7 @@
         "x": 201.89029212267982,
         "y": 1561.1289204774196
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "oldId": "rKb8lqYH0GC_6R5qybzzM",
@@ -3166,7 +3559,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 204,
       "positionAbsolute": {
         "x": 201.89029212267982,
@@ -3174,12 +3567,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 204
       },
       "resizing": true,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 204
+      }
     },
     {
       "id": "41yv5UhFw3kHIrAMQb6qy",
@@ -3188,7 +3585,7 @@
         "x": 24.890292122679853,
         "y": 1754.1289204774196
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "deHK6yEdytCu2ACvVC0bs",
@@ -3197,7 +3594,7 @@
         }
       },
       "zIndex": 999,
-      "width": 187,
+      "width": 188,
       "height": 20,
       "positionAbsolute": {
         "x": 24.890292122679853,
@@ -3205,12 +3602,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 187,
+        "width": 188,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 188,
+        "height": 20
+      }
     },
     {
       "id": "cjvVLN0XjrKPn6o20oMmc",
@@ -3219,7 +3620,7 @@
         "x": -153.75449749114952,
         "y": 1739.6289204774196
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Deep Learning",
         "style": {
@@ -3230,7 +3631,7 @@
         "oldId": "Qa85hEVe2kz62k9Pj4QCA"
       },
       "zIndex": 999,
-      "width": 181,
+      "width": 182,
       "height": 49,
       "positionAbsolute": {
         "x": -153.75449749114952,
@@ -3240,10 +3641,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 181,
+        "width": 182,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 182,
+        "height": 49
+      }
     },
     {
       "id": "rarV0SS26NyqAHkYeqsfa",
@@ -3252,7 +3657,7 @@
         "x": -188.75449749114966,
         "y": 1746.1289204774196
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "7",
         "href": "",
@@ -3264,7 +3669,7 @@
         "oldId": "Sehg_WX_mnMCRlKrvwWzc"
       },
       "zIndex": 999,
-      "width": 24,
+      "width": 25,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -3272,7 +3677,11 @@
         "y": 1746.1289204774196
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 25,
+        "height": 36
+      }
     },
     {
       "id": "iJv3Ii5B5TK8i5mN2mLs2",
@@ -3281,7 +3690,7 @@
         "x": -270.93697112052075,
         "y": 1754.1289204774196
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "style": {
@@ -3289,7 +3698,7 @@
         }
       },
       "zIndex": 999,
-      "width": 78,
+      "width": 79,
       "height": 20,
       "positionAbsolute": {
         "x": -270.93697112052075,
@@ -3297,12 +3706,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 78,
+        "width": 79,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 79,
+        "height": 20
+      }
     },
     {
       "id": "kBQV71KwuVxpUi0nFj17X",
@@ -3311,7 +3724,7 @@
         "x": -281,
         "y": 1763
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "style": {
@@ -3319,7 +3732,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 360,
       "positionAbsolute": {
         "x": -281,
@@ -3327,12 +3740,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 360
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 360
+      }
     },
     {
       "id": "eOFoGKveaHaBm_6ppJUtA",
@@ -3341,7 +3758,7 @@
         "x": -254.10970787732015,
         "y": 1823.259275392802
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Fully Connected, CNN, RNN, LSTM, Transformers, TL",
         "style": {
@@ -3351,7 +3768,7 @@
         "oldId": "n2JFGwFxTuOviW6kHO1Uv"
       },
       "zIndex": 999,
-      "width": 449,
+      "width": 450,
       "height": 38,
       "positionAbsolute": {
         "x": -254.10970787732015,
@@ -3361,10 +3778,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 449,
+        "width": 450,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 450,
+        "height": 38
+      }
     },
     {
       "id": "4TyV6lDCVCOIOhmY9bgPC",
@@ -3373,7 +3794,7 @@
         "x": -231.10970787732015,
         "y": 1862.0843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Deep Learning Specialization",
         "href": "https://imp.i384100.net/Wq9MV3",
@@ -3387,7 +3808,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 405,
+      "width": 406,
       "height": 49,
       "positionAbsolute": {
         "x": -231.10970787732015,
@@ -3395,12 +3816,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 405,
+        "width": 406,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 406,
+        "height": 49
+      }
     },
     {
       "id": "-rl87TRJZTWqbQmW95NAi",
@@ -3409,7 +3834,7 @@
         "x": -231.10970787732015,
         "y": 1915.0843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Deep Learning Book",
         "href": "https://www.deeplearningbook.org/",
@@ -3423,7 +3848,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 405,
+      "width": 406,
       "height": 49,
       "positionAbsolute": {
         "x": -231.10970787732015,
@@ -3431,12 +3856,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 405,
+        "width": 406,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 406,
+        "height": 49
+      }
     },
     {
       "id": "54pd0lYYLvuNYmuaOZbrT",
@@ -3445,7 +3874,7 @@
         "x": -231.10970787732015,
         "y": 1968.0843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Attention is all you need",
         "href": "https://arxiv.org/pdf/1706.03762",
@@ -3459,7 +3888,7 @@
         "oldId": "lm3BCmHTcd-_cOIc_dDmU"
       },
       "zIndex": 999,
-      "width": 405,
+      "width": 406,
       "height": 49,
       "positionAbsolute": {
         "x": -231.10970787732015,
@@ -3467,12 +3896,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 405,
+        "width": 406,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 406,
+        "height": 49
+      }
     },
     {
       "id": "lm3BCmHTcd-_cOIc_dDmU",
@@ -3481,7 +3914,7 @@
         "x": -231.10970787732015,
         "y": 2021.0843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "The Illustrated Transformer",
         "href": "https://jalammar.github.io/illustrated-transformer/",
@@ -3495,7 +3928,7 @@
         "oldId": "R0lIHKW2JmXQp79hoGU6x"
       },
       "zIndex": 999,
-      "width": 405,
+      "width": 406,
       "height": 49,
       "positionAbsolute": {
         "x": -231.10970787732015,
@@ -3503,12 +3936,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 405,
+        "width": 406,
         "height": 49
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 406,
+        "height": 49
+      }
     },
     {
       "id": "deHK6yEdytCu2ACvVC0bs",
@@ -3517,7 +3954,7 @@
         "x": -271.10970787732015,
         "y": 2112
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "ofcYD3hTVEMeRptkHsVer",
@@ -3526,7 +3963,7 @@
         }
       },
       "zIndex": 999,
-      "width": 514,
+      "width": 515,
       "height": 20,
       "positionAbsolute": {
         "x": -271.10970787732015,
@@ -3534,12 +3971,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 514,
+        "width": 515,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 515,
+        "height": 20
+      }
     },
     {
       "id": "Nn5ZjuUG_uEbCxcIcYY9U",
@@ -3548,7 +3989,7 @@
         "x": 231.89029212267985,
         "y": 1935
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "oldId": "jVVrvW1PCXEKz5IfJMXKo",
@@ -3557,7 +3998,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 188,
       "positionAbsolute": {
         "x": 231.89029212267985,
@@ -3565,12 +4006,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 188
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 188
+      }
     },
     {
       "id": "C85MXDnb-d0eVur0DLGr-",
@@ -3579,7 +4024,7 @@
         "x": 242.89029212267985,
         "y": 1925.5843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "q_oYxEPUvEylwjAyDA5FL",
@@ -3588,7 +4033,7 @@
         }
       },
       "zIndex": 999,
-      "width": 87,
+      "width": 88,
       "height": 20,
       "positionAbsolute": {
         "x": 242.89029212267985,
@@ -3596,12 +4041,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 87,
+        "width": 88,
         "height": 20
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 88,
+        "height": 20
+      }
     },
     {
       "id": "Sehg_WX_mnMCRlKrvwWzc",
@@ -3610,7 +4059,7 @@
         "x": 339.89029212267985,
         "y": 1918.0843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "8",
         "href": "",
@@ -3622,7 +4071,7 @@
         "oldId": "wOqfPAZ24GxUrkxVRRyT5"
       },
       "zIndex": 999,
-      "width": 26,
+      "width": 27,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -3630,7 +4079,11 @@
         "y": 1918.0843010493045
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 27,
+        "height": 36
+      }
     },
     {
       "id": "Qa85hEVe2kz62k9Pj4QCA",
@@ -3639,7 +4092,7 @@
         "x": 369.89029212267985,
         "y": 1911.5843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "MLOps",
         "style": {
@@ -3650,7 +4103,7 @@
         "oldId": "kBdt_t2SvVsY3blfubWIz"
       },
       "zIndex": 999,
-      "width": 123,
+      "width": 124,
       "height": 49,
       "positionAbsolute": {
         "x": 369.89029212267985,
@@ -3660,10 +4113,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 123,
+        "width": 124,
         "height": 49
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 124,
+        "height": 49
+      }
     },
     {
       "id": "bsj2IHFXur-qqDSI4B1wg",
@@ -3672,7 +4129,7 @@
         "x": 287,
         "y": 2017.0843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "MLOps Specialization",
         "href": "https://imp.i384100.net/nLA5mx",
@@ -3686,7 +4143,7 @@
         "oldId": "bdAl2ne0fsE1R02wWdIK9"
       },
       "zIndex": 999,
-      "width": 451,
+      "width": 452,
       "height": 49,
       "positionAbsolute": {
         "x": 287,
@@ -3694,12 +4151,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 451,
+        "width": 452,
         "height": 49
       },
       "resizing": true,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 452,
+        "height": 49
+      }
     },
     {
       "id": "uPzzUpI0--7OWDfNeBIjt",
@@ -3708,7 +4169,7 @@
         "x": 259.89029212267985,
         "y": 1979.0843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Deployment Models, CI/CD",
         "style": {
@@ -3718,7 +4179,7 @@
         "oldId": "eOFoGKveaHaBm_6ppJUtA"
       },
       "zIndex": 999,
-      "width": 535,
+      "width": 536,
       "height": 38,
       "positionAbsolute": {
         "x": 259.89029212267985,
@@ -3728,10 +4189,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 535,
+        "width": 536,
         "height": 38
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 536,
+        "height": 38
+      }
     },
     {
       "id": "rKb8lqYH0GC_6R5qybzzM",
@@ -3740,7 +4205,7 @@
         "x": 760,
         "y": 1935
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "oldId": "FsU7_B1LCULtlVQg7gEPR",
@@ -3749,7 +4214,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 217,
       "positionAbsolute": {
         "x": 760,
@@ -3757,12 +4222,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 217
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 217
+      }
     },
     {
       "id": "q_oYxEPUvEylwjAyDA5FL",
@@ -3771,7 +4240,7 @@
         "x": 277.39029212267985,
         "y": 2142
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "horizontal node",
         "oldId": "ofcYD3hTVEMeRptkHsVer",
@@ -3780,7 +4249,7 @@
         }
       },
       "zIndex": 999,
-      "width": 493,
+      "width": 494,
       "height": 20,
       "positionAbsolute": {
         "x": 277.39029212267985,
@@ -3788,12 +4257,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 493,
+        "width": 494,
         "height": 20
       },
       "resizing": true,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 494,
+        "height": 20
+      }
     },
     {
       "id": "jVVrvW1PCXEKz5IfJMXKo",
@@ -3802,7 +4275,7 @@
         "x": 269.89029212267985,
         "y": 2152
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "oldId": "rKb8lqYH0GC_6R5qybzzM",
@@ -3811,7 +4284,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 75,
       "positionAbsolute": {
         "x": 269.89029212267985,
@@ -3819,12 +4292,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 75
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 21,
+        "height": 75
+      }
     },
     {
       "id": "kpF15oUmlUmk1qVGEBB7Y",
@@ -3833,7 +4310,7 @@
         "x": 443.3036441730079,
         "y": -71.532769530855
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Find the detailed version of this roadmap along with other similar roadmaps",
         "style": {
@@ -3846,7 +4323,7 @@
         "oldId": "yHmHXymPNWwu8p1vvqD3o"
       },
       "zIndex": 999,
-      "width": 354,
+      "width": 355,
       "height": 143,
       "positionAbsolute": {
         "x": 443.3036441730079,
@@ -3856,10 +4333,14 @@
       "selectable": true,
       "focusable": true,
       "style": {
-        "width": 354,
+        "width": 355,
         "height": 143
       },
-      "resizing": false
+      "resizing": false,
+      "measured": {
+        "width": 355,
+        "height": 143
+      }
     },
     {
       "id": "2zqZkyVgigifcRS1H7F_b",
@@ -3868,7 +4349,7 @@
         "x": 456.50701858580805,
         "y": 10.452793886890277
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "roadmap.sh",
         "href": "https://roadmap.sh",
@@ -3879,11 +4360,11 @@
         }
       },
       "zIndex": 999,
-      "width": 329,
+      "width": 330,
       "height": 49,
       "dragging": false,
       "style": {
-        "width": 329,
+        "width": 330,
         "height": 49
       },
       "resizing": false,
@@ -3892,7 +4373,11 @@
         "y": 10.452793886890277
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 330,
+        "height": 49
+      }
     },
     {
       "id": "qnjDifLlSYoxWd5GmuQXd",
@@ -3901,7 +4386,7 @@
         "x": 114.89029212267985,
         "y": -67.532769530855
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Related Roadmaps",
         "links": [
@@ -3919,7 +4404,7 @@
         ]
       },
       "zIndex": 999,
-      "width": 315,
+      "width": 316,
       "height": 139,
       "positionAbsolute": {
         "x": 114.89029212267985,
@@ -3927,12 +4412,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 315,
+        "width": 316,
         "height": 139
       },
       "resizing": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 316,
+        "height": 139
+      }
     },
     {
       "id": "0bn7U-9YoeOqPXTnrMpfz",
@@ -3941,7 +4430,7 @@
         "x": -287,
         "y": 1875.0843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -3953,7 +4442,7 @@
         "oldId": "FGJcnSeI5Fgn2bxfY9DEd"
       },
       "zIndex": 999,
-      "width": 28,
+      "width": 29,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -3961,7 +4450,11 @@
         "y": 1875.0843010493045
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 29,
+        "height": 36
+      }
     },
     {
       "id": "13tRO2lYWb0m8LwjAcdIY",
@@ -3970,7 +4463,7 @@
         "x": -287,
         "y": 1999.8462240428494
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -3982,7 +4475,7 @@
         "oldId": "FGJcnSeI5Fgn2bxfY9DEd"
       },
       "zIndex": 999,
-      "width": 28,
+      "width": 29,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -3990,7 +4483,11 @@
         "y": 1999.8462240428494
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 29,
+        "height": 36
+      }
     },
     {
       "id": "uBSNhZB4PuEKY1bkzoZGG",
@@ -3999,7 +4496,7 @@
         "x": 41.890292122679824,
         "y": 1167
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": ">",
         "href": "",
@@ -4011,7 +4508,7 @@
         "oldId": "Xd_mdvQdbCWcucpSTcDz1"
       },
       "zIndex": 999,
-      "width": 34,
+      "width": 35,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4019,7 +4516,11 @@
         "y": 1167
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 35,
+        "height": 36
+      }
     },
     {
       "id": "-5YUJmODVX62RchBu-G0y",
@@ -4028,7 +4529,7 @@
         "x": 621.8902921226799,
         "y": 1258.7340815556822
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": ">",
         "href": "",
@@ -4040,7 +4541,7 @@
         "oldId": "Xd_mdvQdbCWcucpSTcDz1"
       },
       "zIndex": 999,
-      "width": 34,
+      "width": 35,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4048,7 +4549,11 @@
         "y": 1258.7340815556822
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 35,
+        "height": 36
+      }
     },
     {
       "id": "wt-ifu9mv7Ydc_-Gaqv-V",
@@ -4057,7 +4562,7 @@
         "x": 609.3902921226799,
         "y": 1543.72719179845
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "<",
         "href": "",
@@ -4069,7 +4574,7 @@
         "oldId": "SG6DkcQM4NdgTSu2MR8Q5"
       },
       "zIndex": 999,
-      "width": 33,
+      "width": 34,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4077,7 +4582,11 @@
         "y": 1543.72719179845
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 34,
+        "height": 36
+      }
     },
     {
       "id": "93tag4KlRPagkbdpY4lVT",
@@ -4086,7 +4595,7 @@
         "x": 768.5,
         "y": 1383.2347754827133
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -4098,7 +4607,7 @@
         "oldId": "qRxvTDjpoW1GuQ771syXb"
       },
       "zIndex": 999,
-      "width": 31,
+      "width": 32,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4106,7 +4615,11 @@
         "y": 1383.2347754827133
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 32,
+        "height": 36
+      }
     },
     {
       "id": "DEW_GsNVEf75P63SvEQwB",
@@ -4115,7 +4628,7 @@
         "x": 223.89029212267985,
         "y": 1543.72719179845
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "<",
         "href": "",
@@ -4127,7 +4640,7 @@
         "oldId": "SG6DkcQM4NdgTSu2MR8Q5"
       },
       "zIndex": 999,
-      "width": 33,
+      "width": 34,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4135,7 +4648,11 @@
         "y": 1543.72719179845
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 34,
+        "height": 36
+      }
     },
     {
       "id": "nAi-ndQiOiYCuAMqtDZ1I",
@@ -4144,7 +4661,7 @@
         "x": 106.89029212267982,
         "y": 1746.1289204774196
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "<",
         "href": "",
@@ -4156,7 +4673,7 @@
         "oldId": "SG6DkcQM4NdgTSu2MR8Q5"
       },
       "zIndex": 999,
-      "width": 33,
+      "width": 34,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4164,7 +4681,11 @@
         "y": 1746.1289204774196
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 34,
+        "height": 36
+      }
     },
     {
       "id": "ftUWZ9y0YFc4geCEaCEAq",
@@ -4173,7 +4694,7 @@
         "x": 561.8902921226799,
         "y": 1917.5843010493045
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": ">",
         "href": "",
@@ -4185,7 +4706,7 @@
         "oldId": "Xd_mdvQdbCWcucpSTcDz1"
       },
       "zIndex": 999,
-      "width": 34,
+      "width": 35,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4193,7 +4714,11 @@
         "y": 1917.5843010493045
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 35,
+        "height": 36
+      }
     },
     {
       "id": "SG6DkcQM4NdgTSu2MR8Q5",
@@ -4202,7 +4727,7 @@
         "x": 509.89029212267985,
         "y": 2134
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "<",
         "href": "",
@@ -4214,7 +4739,7 @@
         "oldId": "YT5_iofe0kQ-wVjd54RT8"
       },
       "zIndex": 999,
-      "width": 33,
+      "width": 34,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4222,7 +4747,11 @@
         "y": 2134
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 34,
+        "height": 36
+      }
     },
     {
       "id": "FGJcnSeI5Fgn2bxfY9DEd",
@@ -4231,7 +4760,7 @@
         "x": 754,
         "y": 2035.8462240428494
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "V",
         "href": "",
@@ -4243,7 +4772,7 @@
         "oldId": "Jsyv0X1BPlP0Vi_oklxHA"
       },
       "zIndex": 999,
-      "width": 28,
+      "width": 29,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4251,7 +4780,11 @@
         "y": 2035.8462240428494
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 29,
+        "height": 36
+      }
     },
     {
       "id": "PV5ACkfJLhJOUZ2qnobhZ",
@@ -4260,7 +4793,7 @@
         "x": 27.24550250885048,
         "y": 2104
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": ">",
         "href": "",
@@ -4272,7 +4805,7 @@
         "oldId": "Xd_mdvQdbCWcucpSTcDz1"
       },
       "zIndex": 999,
-      "width": 34,
+      "width": 35,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4280,7 +4813,11 @@
         "y": 2104
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 35,
+        "height": 36
+      }
     },
     {
       "id": "Xd_mdvQdbCWcucpSTcDz1",
@@ -4289,7 +4826,7 @@
         "x": -164.75449749114966,
         "y": 2104
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": ">",
         "href": "",
@@ -4301,7 +4838,7 @@
         "oldId": "WmbvaP_zRGs_WhYK30YqM"
       },
       "zIndex": 999,
-      "width": 34,
+      "width": 35,
       "height": 36,
       "dragging": false,
       "positionAbsolute": {
@@ -4309,7 +4846,11 @@
         "y": 2104
       },
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 35,
+        "height": 36
+      }
     },
     {
       "id": "Ju00mr0KLGN2BV6yEQGPt",
@@ -4318,7 +4859,7 @@
         "x": 272,
         "y": 2284.5820625712176
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "vertical node",
         "style": {
@@ -4329,7 +4870,7 @@
         }
       },
       "zIndex": 999,
-      "width": 20,
+      "width": 21,
       "height": 55,
       "positionAbsolute": {
         "x": 272,
@@ -4337,12 +4878,16 @@
       },
       "dragging": false,
       "style": {
-        "width": 20,
+        "width": 21,
         "height": 55
       },
       "resizing": false,
       "focusable": true,
-      "selectable": true
+      "selectable": true,
+      "measured": {
+        "width": 21,
+        "height": 55
+      }
     },
     {
       "id": "IDGTOlC_h3rt_3ZF4x8bG",
@@ -4351,7 +4896,7 @@
         "x": 205.39029212267985,
         "y": 2236.300845579272
       },
-      "selected": false,
+      "selected": true,
       "data": {
         "label": "Keep Learning",
         "href": "",
@@ -4361,7 +4906,7 @@
         }
       },
       "zIndex": 999,
-      "width": 149,
+      "width": 150,
       "height": 36,
       "positionAbsolute": {
         "x": 205.39029212267985,
@@ -4369,7 +4914,11 @@
       },
       "dragging": false,
       "selectable": true,
-      "focusable": true
+      "focusable": true,
+      "measured": {
+        "width": 150,
+        "height": 36
+      }
     }
   ],
   "edges": [
@@ -4388,7 +4937,7 @@
         "edgeStyle": "solid"
       },
       "id": "XX0I26JoVMVXIe_7bVMix",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4407,7 +4956,7 @@
         "edgeStyle": "dashed"
       },
       "id": "dFn6kGOoJ-0BzJJEb9DSG",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4426,7 +4975,7 @@
         "edgeStyle": "dashed"
       },
       "id": "arkF7QJJRbCBYWp0crqa2",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4445,7 +4994,7 @@
         "edgeStyle": "dashed"
       },
       "id": "HNVw8OboycWKLEtEbG2bn",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4464,7 +5013,7 @@
         "edgeStyle": "dashed"
       },
       "id": "auB7Png72XjmhcLr3IJA7",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4483,7 +5032,7 @@
         "edgeStyle": "solid"
       },
       "id": "2aoDIr80lXSJLW1hIGUkb",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4501,7 +5050,7 @@
         "edgeStyle": "dashed"
       },
       "id": "m-_y7nLeYFkUKGiacxWA0",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4519,7 +5068,7 @@
         "edgeStyle": "dashed"
       },
       "id": "G7pXuJfkyt2nWAOHU8yV0",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4538,7 +5087,7 @@
         "edgeStyle": "dashed"
       },
       "id": "2_6Yz3-Agx9_rEN5xW86c",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4557,7 +5106,7 @@
         "edgeStyle": "dashed"
       },
       "id": "kgMI98fg2-mKMgUs0wnjD",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4575,7 +5124,7 @@
       "data": {
         "edgeStyle": "solid"
       },
-      "selected": false,
+      "selected": true,
       "id": "ts38Q2ceHs60TJscUBZVE",
       "focusable": true,
       "selectable": true
@@ -4595,7 +5144,7 @@
         "edgeStyle": "dashed"
       },
       "id": "ZiMV7umyPdhy3JJDcopR-",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4614,7 +5163,7 @@
         "edgeStyle": "dashed"
       },
       "id": "WI-MhbxrehFcVwyGJ5CQJ",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4633,7 +5182,7 @@
         "edgeStyle": "solid"
       },
       "id": "qUrLBzvXvJOg53HBfjrOI",
-      "selected": false,
+      "selected": true,
       "focusable": true,
       "selectable": true
     },
@@ -4652,7 +5201,7 @@
         "edgeStyle": "dashed"
       },
       "id": "reactflow__edge-wOqfPAZ24GxUrkxVRRyT5z2-wOqfPAZ24GxUrkxVRRyT5z1",
-      "selected": false,
+      "selected": true,
       "selectable": true,
       "focusable": true
     }

@@ -6,5 +6,5 @@ A data analyst leveraging RNNs can effectively charter the intrinsic complexity 
 
 Learn more from the following resources:
 
-- [@article@What is a recurrent neural network (RNN)?](https://www.ibm.com/topics/recurrent-neural-networks)
-- [@article@Recurrent Neural Networks cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
+- [@article@What is a Recurrent Neural Network (RNN)?](https://www.ibm.com/topics/recurrent-neural-networks)
+- [@article@Recurrent Neural Networks Cheat-sheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)

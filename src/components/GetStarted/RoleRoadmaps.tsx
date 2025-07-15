@@ -12,7 +12,7 @@ export function RoleRoadmaps(props: RoleRoadmapsProps) {
   const { badge, title, description, children } = props;
 
   return (
-    <div className="bg-gradient-to-b from-gray-100 to-white py-5 sm:py-8 md:py-12">
+    <div className="bg-linear-to-b from-gray-100 to-white py-5 sm:py-8 md:py-12">
       <div className="container">
         <div className="text-left">
           <SectionBadge title={badge} />

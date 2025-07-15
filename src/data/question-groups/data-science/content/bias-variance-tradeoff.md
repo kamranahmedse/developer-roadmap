@@ -1,0 +1,3 @@
+The bias-variance tradeoff refers to the balance between a model's ability to learn patterns (low bias) and its ability to generalize to new data (low variance). Bias is the error made when the model makes strong assumptions about the data: high bias could lead to underfitting. Variance is the model's sensitivity to small fluctuations in the data, and high variance could lead to overfitting.
+
+![Bias-variance tradeoff](https://assets.roadmap.sh/guest/bias-variance-tradeoff-jc0mj.png) 

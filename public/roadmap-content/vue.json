@@ -141,7 +141,7 @@
   },
   "OpJ2NMKCGXQezpzURE45R": {
     "title": "API Styles",
-    "description": "Up until Vue 2, there was one way to create components in Vue. With Vue 3, a new methodology was introduced called the Composition API. Now, if we want to make a component in Vue, we have two ways to do it. You might be wondering what the difference is, exactly, so let’s take a look at how the newer Composition API differs from the Vue 2 methodology, which is now known as the Options API\n\nVisit the following resources to learn more:",
+    "description": "Though Vue 2 supported many approaches to writing components, only one approach, the \"Options API\", was built in and accessible without plugins. Vue 3, retains the Options API (OAPI), and adds in the Composition API (CAPI). Composition API itself is actually a part of the Options API, but moves most of the component logic into a setup function. This led to a 3rd approach to writing components being built in called \"script/setup\", which removes much of the boilerplate from Composition API. These approaches are not mutually exclusive. Each component in your project can use any of these approaches, however for consistency it is recommended to stick primarily to one, and only deviate to one of the others when you have a good reason.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "The Difference Between the Composition API and Options API in Vue",
@@ -152,7 +152,7 @@
   },
   "PPUU3Rb73aCpT4zcyvlJE": {
     "title": "Options API",
-    "description": "We use Options API in a Vue application to write and define different components. With this API, we can use options such as data, methods, and mounted. To state it simply, Options API is an old way to structure a Vue.JS application. Due to some limitations in this API, Composition API was introduced in Vue 3.\n\nVisit the following resources to learn more:",
+    "description": "Vue offers many approaches for how to write components, including the Options API. It is the only API that is available in all versions of Vue. Its primary focus is on providing a consistent, clean, and organized aproach to writing component logic. Each part of a component's logic is given a dedicated section (data, methods, computed, props, life-cycle hooks, etc). By putting the logic in the correct section it has access to the features of the framework automatically. With the official Vue ESLint plugin the order of these sections can be enforced across all components allowing developers to predicatably locate any part of the component, even if they've never looked at the file before.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "TypeScript with Options API",
@@ -168,7 +168,7 @@
   },
   "a0qwdQTunxEjQ9A5wpF-q": {
     "title": "Composition API",
-    "description": "With the release of Vue 3, developers now have access to the Composition API, a new way to write Vue components. This API allows features to be grouped together logically, rather than having to organize your single-file components by function. Using the Composition API can lead to more readable code, and gives the developer more flexibility when developing their applications.\n\nVisit the following resources to learn more:",
+    "description": "Vue offers many approaches for how to write components, including the \"Composition API\", which is most commonly used via \"Script Setup\". This approach is based around pulling in low level atomic functions used by Vue's reactivity engine. By composing these low level functions together, you can craft your own system for writing components. One feature this allows for is extending reactivity outside of components. This means you can extract your custom functions for reuse in multiple components. When reusing reactive logic, your functions are called \"composables\".\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "TypeScript with Composition API",
@@ -235,6 +235,11 @@
     "description": "Global properties allows you to add properties or methods that can be accessed throughout your application. This is particularly useful for sharing functionality or data across components without the need to pass props explicitly.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Application API - globalProperties",
+        "url": "https://vuejs.org/api/application.html#app-config-globalproperties",
+        "type": "article"
+      },
+      {
         "title": "Vue.js Global Properties",
         "url": "https://blog.logrocket.com/vue-js-globalproperties/",
         "type": "article"
@@ -243,8 +248,44 @@
   },
   "f7N4pAp_jBlT8_8owAcbG": {
     "title": "Performance",
-    "description": "",
-    "links": []
+    "description": "Key areas to improve Vue.js performance include lazy loading components to minimize initial load times, optimizing rendering to prevent unnecessary re-renders, implementing efficient state management using modern libraries like Pinia, reducing the bundle size by code splitting and tree shaking, utilizing virtual scrolling for large lists and tables, continuously monitoring performance to detect potential bottlenecks, and minimizing dependencies to decrease overall load.\n\nLearn more from the following resources:",
+    "links": [
+      {
+        "title": "How to Optimize Performance in Vue.js Applications: Beginner to Advanced Guide",
+        "url": "https://dev.to/delia_code/how-to-optimize-performance-in-vuejs-applications-beginner-to-advanced-guide-53db",
+        "type": "article"
+      },
+      {
+        "title": "Vue Directives Basics",
+        "url": "https://vuejs.org/guide/best-practices/performance.html",
+        "type": "article"
+      },
+      {
+        "title": "Pinia Documentation",
+        "url": "https://pinia.vuejs.org/",
+        "type": "article"
+      },
+      {
+        "title": "Webpack Documentation",
+        "url": "https://webpack.js.org/",
+        "type": "article"
+      },
+      {
+        "title": "Vue Virtual Scroller",
+        "url": "https://github.com/Akryum/vue-virtual-scroller",
+        "type": "article"
+      },
+      {
+        "title": "Vue Devtools Documentation",
+        "url": "https://devtools.vuejs.org/",
+        "type": "article"
+      },
+      {
+        "title": "Vue Best Practices",
+        "url": "https://vuejs.org/guide/best-practices/overview.html",
+        "type": "article"
+      }
+    ]
   },
   "tU4Umtnfu01t9gLlnlK6b": {
     "title": "Conditional Rendering",
@@ -339,8 +380,8 @@
     "description": "The v-on directive is placed on an element to attach an event listener. To attach an event listener with v-on we need to provide the event type, and any modifier, and a method or expression that should run when that event occurs.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "v-on Directive",
-        "url": "https://www.w3schools.com/vue/ref_v-on.php",
+        "title": "v-on Documentation",
+        "url": "https://vuejs.org/api/built-in-directives.html#v-on",
         "type": "article"
       }
     ]
@@ -503,7 +544,7 @@
     "links": [
       {
         "title": "Modifiers",
-        "url": "https://v2.vuejs.org/v2/guide/components-custom-events.html",
+        "url": "https://vuejs.org/guide/essentials/forms.html#modifiers",
         "type": "article"
       }
     ]
@@ -527,11 +568,6 @@
         "title": "Binding Events",
         "url": "https://vuejs.org/guide/essentials/event-handling",
         "type": "article"
-      },
-      {
-        "title": "Vue.js Event Handling",
-        "url": "https://www.geeksforgeeks.org/vue-js-event-handling/",
-        "type": "article"
       }
     ]
   },
@@ -540,8 +576,13 @@
     "description": "In Vue.js, **inline handlers** are defined directly in the template using expressions, making them suitable for simple tasks. For example, you might use an inline handler to increment a counter. **Method handlers**, on the other hand, are defined in the `methods` option and are better for more complex logic or when reusing functionality across multiple components. They improve code readability and maintainability.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Inline Handlers",
+        "url": "https://vuejs.org/guide/essentials/event-handling#inline-handlers",
+        "type": "article"
+      },
+      {
         "title": "Method Handlers",
-        "url": "https://v1.vuejs.org/guide/events.html",
+        "url": "https://vuejs.org/guide/essentials/event-handling#method-handlers",
         "type": "article"
       }
     ]
@@ -550,6 +591,11 @@
     "title": "Event Modifiers",
     "description": "In Vue.js, event modifiers are special postfixes that you can add to event handlers to control the behavior of events more easily. They help simplify common tasks such as stopping propagation, preventing default actions, and ensuring that the event is triggered only under certain conditions.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Event Modifiers",
+        "url": "https://vuejs.org/guide/essentials/event-handling#event-modifiers",
+        "type": "article"
+      },
       {
         "title": "Event Modifiers in Vue.js",
         "url": "https://www.freecodecamp.org/news/how-event-handling-works-in-vue-3-guide-for-devs/",
@@ -562,8 +608,8 @@
     "description": "Input bindings are a way to bind user input to a component's data. This allows the component to react to user input and update its state accordingly. Input bindings are typically used with form elements such as text inputs, checkboxes, and select dropdowns.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Input Bindings",
-        "url": "https://vuejs.org/guide/essentials/forms",
+        "title": "Key Modifiers",
+        "url": "https://vuejs.org/guide/essentials/event-handling#key-modifiers",
         "type": "article"
       }
     ]
@@ -572,6 +618,11 @@
     "title": "Mouse Button Modifiers",
     "description": "Mouse button modifiers are a type of modifier that can be used with event handlers to specify which mouse button or buttons should trigger the event. These modifiers allow you to customize the behavior of event handlers, such as v-on:click, to respond to specific mouse button clicks.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "Mouse Button Modifiers",
+        "url": "https://vuejs.org/guide/essentials/event-handling#mouse-button-modifiers",
+        "type": "article"
+      },
       {
         "title": "Button Modifiers",
         "url": "https://medium.com/evolve-you/vue-3-keyboard-and-mouse-a4866d7d0e8",
@@ -1200,11 +1251,6 @@
       {
         "title": "Fetch - MDN",
         "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
-        "type": "article"
-      },
-      {
-        "title": "Fetch W3school Docs",
-        "url": "https://www.w3schools.com/jsref/api_fetch.asp",
         "type": "article"
       },
       {

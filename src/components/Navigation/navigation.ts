@@ -1,12 +1,4 @@
-import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME, removeAuthToken } from '../../lib/jwt';
-
-export function logout() {
-  removeAuthToken();
-
-  // Reloading will automatically redirect the user if required
-  window.location.reload();
-}
+import { logout } from '../../lib/auth';
 
 function bindEvents() {
   document.addEventListener('click', (e) => {

@@ -4,4 +4,4 @@ The TTL command returns the remaining time left to live of a key that is specifi
 
 Learn more from the following resources:
 
-- [@official@TTL Documentation](https://redis.io/docs/latest/commands/ttl/)
+- [@official@TTL](https://redis.io/docs/latest/commands/ttl/)

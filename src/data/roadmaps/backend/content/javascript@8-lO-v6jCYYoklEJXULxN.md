@@ -6,6 +6,6 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
 - [@article@The Modern JavaScript Tutorial](https://javascript.info/)
-- [@article@Build 30 Javascript projects in 30 days](https://javascript30.com/)
+- [@article@Build 30 Javascript Projects in 30 days](https://javascript30.com/)
 - [@video@JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

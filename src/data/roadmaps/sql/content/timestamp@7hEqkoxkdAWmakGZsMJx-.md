@@ -6,5 +6,4 @@ Depending on the SQL platform, the format and storage size can slightly vary. Fo
 
 Learn more from the following resources:
 
-- [@article@MYSQL TIMESTAMP function](https://www.w3schools.com/mysql/func_mysql_timestamp.asp)
 - [@article@Different SQL TimeStamp functions in SQL Server](https://www.sqlshack.com/different-sql-timestamp-functions-in-sql-server/)

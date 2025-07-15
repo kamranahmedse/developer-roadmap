@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@article@Why are rules of engagement important to a Penetration Test?](https://www.triaxiomsecurity.com/rules-of-engagement-important-to-penetration-test/)
+- [@article@Why are Rules of Engagement Important to a Penetration Test?](https://www.triaxiomsecurity.com/rules-of-engagement-important-to-penetration-test/)
 - [@video@CompTIA Pentest+ : Rules of Engagement](https://www.youtube.com/watch?v=Rt-4j8k6J2U)

@@ -8,14 +8,7 @@ seo:
   description: 'Master the DevOps lifecycle by exploring its 7 phases, designed to enhance collaboration, streamline processes, and deliver software with agility.'
   ogImageUrl: 'https://assets.roadmap.sh/guest/key-phases-of-devops-lifecycle-788fa.jpg'
 relatedGuidesTitle: 'Other Guides'
-relatedGuides:
-   'How to become a DevOps Engineer in 2024': '/devops/how-to-become-devops-engineer'
-   'Is DevOps engineering a good career path in 2024?': '/devops/career-path'
-   '10+ In-Demand DevOps Engineer Skills to Master': '/devops/skills'
-   'DevOps engineer vs Full stack developer: Which is best?': '/devops/vs-full-stack'
-   '11 DevOps Principles and Practices to Master: Pro Advice': '/devops/principles'
-   'Why Does DevOps Recommend Shift-Left Testing Principles?': '/devops/shift-left-testing'
-   'What is DevOps Automation? 8 Best Practices & Advice': '/devops/automation'
+relatedGuidesId: devops
 isNew: false
 type: 'textual'
 date: 2024-11-01
@@ -34,7 +27,7 @@ Whether you’re an experienced DevOps engineer or trying to expand your experti
 
 But what are these phases, and do they really need to be followed in a specific order to truly matter?
 
-As a [DevOps engineer](https://roadmap.sh/devops), your primary role is to help the development and operations teams operate better. You’ll do this by collaborating closely with software engineers, quality assurance teams, and other stakeholders to set up **processes**, implement tools, and create standards to achieve the overall goal of the project.
+As a [DevOps engineer](https://roadmap.sh/devops), your primary role is to help the development and operations teams operate better. You’ll do this by collaborating closely with software engineers, quality assurance teams, and other stakeholders to set up **processes**, implement **[tools](https://roadmap.sh/devops/tools)**, and create standards to achieve the overall goal of the project.
 
 In this guide, you’ll learn about these phases, how they're implemented, and the sequence in which they are applied in software development.
 
@@ -94,7 +87,7 @@ This is particularly important because the development team will continue to pus
 
 **Tools used**
 
-Jenkins, CircleCI, Travis CI, and GitHub Actions are some automation tools DevOps teams use to build, test, and deploy code changes.
+Jenkins, CircleCI, Travis CI, and GitHub Actions are some [automation tools](https://roadmap.sh/devops/automation-tools) DevOps teams use to build, test, and deploy code changes.
 
 ### 3. Continuous testing
 
@@ -168,9 +161,9 @@ The DevOps lifecycle is a continuous process that involves development, integrat
 
 Let’s explore some of these extensions and how they’re changing the development process.
 
-## Key DevOps extensions to watch in 2024
+## Key DevOps extensions to watch in 2025
 
-Below are some extensions that build on the core principles of DevOps, like automation, collaboration, and continuous improvement:
+Below are some extensions that build on the core principles of DevOps, like [automation](https://roadmap.sh/devops/automation), collaboration, and continuous improvement:
 
 - DevSecOps
 - GitOps

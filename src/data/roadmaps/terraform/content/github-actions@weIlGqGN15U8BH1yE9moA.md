@@ -4,6 +4,7 @@ Using Terraform with GitHub Actions allows for automated infrastructure manageme
 
 Learn more from the following resources:
 
+- [@official@GitHub Actions](https://docs.github.com/en/actions)
 - [@official@Automate Terraform with GitHub Actions](https://developer.hashicorp.com/terraform/tutorials/automation/github-actions)
 - [@article@Terraform with GitHub Actions : How to Manage & Scale](https://spacelift.io/blog/github-actions-terraform)
 - [@opensource@setup-terraform](https://github.com/hashicorp/setup-terraform)

@@ -4,5 +4,8 @@ Relational databases are a type of database management system (DBMS) that stores
 
 Learn more from the following resources:
 
-- [@article@Relational Databases: concept and history](https://www.ibm.com/topics/relational-databases)
+- [@article@Relational Databases](https://www.ibm.com/cloud/learn/relational-databases)
+- [@article@Intro To Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
+- [@article@Relational Databases: Concept and History](https://www.ibm.com/topics/relational-databases)
+- [@course@Databases and SQL](https://www.edx.org/course/databases-5-sql)
 - [@feed@Explore top posts about Relational Databases](https://app.daily.dev/tags/relational-databases?ref=roadmapsh)

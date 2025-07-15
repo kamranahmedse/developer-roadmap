@@ -4,5 +4,5 @@ Network security in Redis involves implementing measures to protect the server f
 
 Learn more from the following resources:
 
-- [@official@Redis Authentication Documentation](https://redis.io/docs/latest/operate/oss_and_stack/management/security/#authentication)
-- [@official@Redis Network Security Documentation](https://redis.io/docs/latest/operate/rc/security/database-security/network-security/)
+- [@official@Redis Authentication](https://redis.io/docs/latest/operate/oss_and_stack/management/security/#authentication)
+- [@official@Redis Network Security](https://redis.io/docs/latest/operate/rc/security/database-security/network-security/)

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What Is Buffer Overflow?](https://www.fortinet.com/resources/cyberglossary/buffer-overflow)
 - [@article@Buffer Overflow Attack](https://www.imperva.com/learn/application-security/buffer-overflow/)
+- [@video@Buffer Overflows Made Easy](https://www.youtube.com/watch?v=qSnPayW6F7U)

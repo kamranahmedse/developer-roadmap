@@ -4,5 +4,5 @@ The **Preparation** phase in incident response involves establishing and maintai
 
 Learn more from the following resources:
 
-- [@article@](https://www.microsoft.com/en-gb/security/business/security-101/what-is-incident-response)
-- [@video@](https://www.youtube.com/watch?v=ePZGqlcB1O8)
+- [@article@What is Incident Response](https://www.microsoft.com/en-gb/security/business/security-101/what-is-incident-response)
+- [@video@Cyber Security Incident Response Explained](https://www.youtube.com/watch?v=ePZGqlcB1O8)

@@ -4,4 +4,4 @@ A Man-in-the-Middle (MITM) attack occurs when a malicious actor intercepts commu
 
 Visit the following resources to learn more:
 
-- [@article@Wikipedia - Man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)
+- [@article@Man-in-the-middle attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack)

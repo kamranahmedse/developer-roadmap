@@ -4,5 +4,6 @@ Cloud security encompasses the measures, controls, policies, and technologies im
 
 Learn more from the following resources:
 
-- [@article@What is cloud security](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/)
+- [@article@What Is Cloud Security? - Google Cloud](https://cloud.google.com/learn/what-is-cloud-security)
+- [@article@Cloud Security](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/)
 - [@video@What is cloud security](https://www.youtube.com/watch?v=jI8IKpjiCSM)

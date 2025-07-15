@@ -4,4 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@CEH Website](https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/)
+- [@official@CEH](https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/)
+- [@article@Certified Ethical Hacker Online Training](https://iclass.eccouncil.org/our-courses/certified-ethical-hacker-ceh/)

@@ -4,4 +4,4 @@ The RUP (**Rational Unified Process**) is not a widely recognized certification 
 
 Visit the following resources to learn more:
 
-- [@official@IBM certified solution designer RUP](https://www.ibm.com/training/certification/ibm-certified-solution-designer-ibm-rational-unified-process-v70-38008003)
+- [@official@IBM Certified Solution Designer RUP](https://www.ibm.com/training/certification/ibm-certified-solution-designer-ibm-rational-unified-process-v70-38008003)

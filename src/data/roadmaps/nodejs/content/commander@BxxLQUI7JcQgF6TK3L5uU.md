@@ -4,5 +4,5 @@ Commander is a light-weight, expressive, and powerful command-line framework for
 
 Visit the following resources to learn more:
 
-- [@official@Official Documentation](https://www.npmjs.com/package/commander)
+- [@official@commander package](https://www.npmjs.com/package/commander)
 - [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

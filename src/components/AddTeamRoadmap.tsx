@@ -69,7 +69,7 @@ export function AddTeamRoadmap(props: AddTeamRoadmapProps) {
       <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          className="popup-body relative rounded-lg bg-white p-4 shadow"
+          className="popup-body relative rounded-lg bg-white p-4 shadow-sm"
         >
           {isLoading && (
             <>
@@ -99,7 +99,7 @@ export function AddTeamRoadmap(props: AddTeamRoadmapProps) {
                 <button
                   onClick={onClose}
                   type="button"
-                  className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center hover:bg-gray-300"
+                  className="grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center hover:bg-gray-300"
                 >
                   Done
                 </button>
@@ -110,7 +110,7 @@ export function AddTeamRoadmap(props: AddTeamRoadmapProps) {
                     setIsLoading(false);
                   }}
                   type="button"
-                  className="flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white"
+                  className="grow cursor-pointer rounded-lg bg-black py-2 text-center text-white"
                 >
                   + Add More
                 </button>
@@ -126,7 +126,7 @@ export function AddTeamRoadmap(props: AddTeamRoadmapProps) {
                 <button
                   onClick={onClose}
                   type="button"
-                  className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center hover:bg-gray-300"
+                  className="grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center hover:bg-gray-300"
                 >
                   Cancel
                 </button>
@@ -152,7 +152,7 @@ export function AddTeamRoadmap(props: AddTeamRoadmapProps) {
                     setSelectedRoadmap(roadmapId);
                   });
                 }}
-                inputClassName="mt-2 mb-2 block w-full rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:border-gray-400"
+                inputClassName="mt-2 mb-2 block w-full rounded-md border border-gray-300 px-3 py-2 outline-hidden placeholder:text-gray-400 focus:border-gray-400"
                 placeholder={'Search for roadmap'}
               />
 
@@ -160,7 +160,7 @@ export function AddTeamRoadmap(props: AddTeamRoadmapProps) {
                 <button
                   onClick={onClose}
                   type="button"
-                  className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center hover:bg-gray-300"
+                  className="grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center hover:bg-gray-300"
                 >
                   Cancel
                 </button>

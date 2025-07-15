@@ -6,4 +6,4 @@ Create simple monitors with dynamic data for even the most complex use cases. Mo
 
 Visit the following resources to learn more:
 
-- [@official@Runscope Website](https://www.runscope.com)
+- [@official@Runscope](https://www.runscope.com)

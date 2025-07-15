@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@article@What Is a Wireless LAN?](https://www.cisco.com/c/en/us/products/wireless/wireless-lan.html)
 - [@video@Wireless Networking Explained | Cisco CCNA 200-301](https://www.youtube.com/watch?v=Uz-RTurph3c)
 - [@video@Wireless Technologies](https://www.youtube.com/watch?v=_VwpcLiBkAQ)
-

@@ -4,7 +4,7 @@ The Angular CLI command `ng deploy` executes the deploy CLI builder associated w
 
 Visit the following resources to learn more:
 
-- [@official@Angular Official Docs - Deployment](https://angular.dev/tools/cli/deployment)
+- [@official@Deployment](https://angular.dev/tools/cli/deployment)
 - [@official@Firebase Hosting](https://firebase.google.com/docs/hosting)
 - [@official@Vercel: Angular Solutions](https://vercel.com/solutions/angular)
 - [@official@Netlify](https://docs.netlify.com/frameworks/angular/)

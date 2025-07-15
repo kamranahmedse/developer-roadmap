@@ -4,5 +4,5 @@ The `BITPOS` command in Redis is used to find the position of the first bit set 
 
 Learn more from the following resources:
 
-- [@official@BITPOS Documentation](https://redis.io/docs/latest/commands/bitpos/)
-- [@article@BITPOS](https://upstash.com/docs/redis/sdks/py/commands/bitmap/bitpos)
+- [@official@BITPOS](https://redis.io/docs/latest/commands/bitpos/)
+- [@article@BITPOS Documentation](https://upstash.com/docs/redis/sdks/py/commands/bitmap/bitpos)

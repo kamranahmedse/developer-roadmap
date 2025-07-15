@@ -21,7 +21,7 @@ function ProgressStatLabel(props: ProgressStatButtonProps) {
   return (
     <span className="group relative flex flex-1 items-center overflow-hidden rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors disabled:opacity-50 sm:rounded-xl sm:px-4 sm:py-3 sm:text-base">
       {icon}
-      <span className="flex flex-grow justify-between">
+      <span className="flex grow justify-between">
         <span>{label}</span>
         <span>{count}</span>
       </span>
@@ -41,7 +41,7 @@ export function QuestionFinished(props: QuestionFinishedProps) {
   const { knowCount, didNotKnowCount, skippedCount, onReset } = props;
 
   return (
-    <div className="relative flex flex-grow flex-col items-center justify-center px-4 sm:px-0">
+    <div className="relative flex grow flex-col items-center justify-center px-4 sm:px-0">
       <PartyPopper className="mb-4 mt-10 h-14 w-14 text-gray-300 sm:mt-0 sm:h-24 sm:w-24" />
       <h1 className="text-lg font-semibold text-gray-700 sm:text-2xl">
         Questions Finished

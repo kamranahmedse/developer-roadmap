@@ -1,3 +1,0 @@
-# wasm-bindgen
-
-`wasm-bindgen` is a library and command line tool designed to facilitate high-level interactions between Rust and JavaScript. It provides a seamless way for the two languages to communicate with each other, permitting the call of JavaScript APIs directly from Rust and vice versa. `wasm-bindgen` achieves this by generating an interoperability layer that 'translates' between the semantics of JavaScript and Rust. It handles differences in memory representations and call semantics for complex data types, such as strings and objects, allowing developers to focus on implementing their applications without worrying about the low-level details.

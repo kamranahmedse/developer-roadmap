@@ -4,6 +4,6 @@ Qdrant is an open-source vector database designed for efficient similarity searc
 
 Learn more from the following resources:
 
-- [@official@Qdrant Website](https://qdrant.tech/)
+- [@official@Qdrant](https://qdrant.tech/)
 - [@opensource@Qdrant on GitHub](https://github.com/qdrant/qdrant)
 - [@video@Getting started with Qdrant](https://www.youtube.com/watch?v=LRcZ9pbGnno)

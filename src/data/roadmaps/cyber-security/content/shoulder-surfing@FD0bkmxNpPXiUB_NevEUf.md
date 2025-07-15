@@ -4,7 +4,6 @@ In a Shoulder Surfing Attack, an attacker tries to get information when you are 
 
 Visit the following resources to learn more:
 
-- [@article@What is shoulder surfing, and how can you avoid it?](https://nordvpn.com/blog/shoulder-surfing/?srsltid=AfmBOorl5NPpW_Tnhas9gB2HiblorqwXyK0NJae7uaketrnDwbjJmiYV)
+- [@article@What is Shoulder Surfing, and How can you avoid it?](https://nordvpn.com/blog/shoulder-surfing/?srsltid=AfmBOorl5NPpW_Tnhas9gB2HiblorqwXyK0NJae7uaketrnDwbjJmiYV)
 - [@article@What is Shoulder Surfing?](https://www.mcafee.com/learn/what-is-shoulder-surfing/)
 - [@article@What is Shoulder Surfing? 9 ways to protect yourself](https://www.bigrock.in/blog/products/security/what-is-shoulder-surfing-9-ways-to-protect-yourself-from-shoulder-surfing/)
-

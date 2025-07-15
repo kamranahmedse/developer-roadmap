@@ -1,6 +1,6 @@
 # Progressive Web Apps
 
-Progressive Web Apps (PWAs) are web applications that use modern web capabilities to deliver an app-like experience to users. They combine the best features of web and native apps, offering reliability, speed, and engagement. PWAs are built using web technologies (HTML, CSS, JavaScript) but provide features typically associated with native apps, such as offline functionality, push notifications, and home screen installation. They are responsive, work across different devices and browsers, and are discoverable through search engines. PWAs use service workers for background processing and caching, enabling faster load times and offline access. This approach allows developers to create cross-platform applications that are both cost-effective to develop and easy to maintain, while providing users with a seamless, app-like experience directly through their web browser.
+Progressive Web Apps (PWAs) are websites that act like native apps. They use web tech (HTML, CSS, JavaScript) but offer features like offline use, push alerts, and home screen icons. PWAs work on many devices and browsers, load fast, and can be found on search engines. They use service workers for background tasks and caching. PWAs are a cost-effective way to build cross-platform apps with a smooth user experience.
 
 Visit the following resources to learn more:
 

@@ -4,3 +4,4 @@ DDL or Data Definition Language actually consists of the SQL commands that can b
 
 Visit the following resources to learn more:
 
+- [@article@DDL](https://en.wikipedia.org/wiki/Data_definition_language)

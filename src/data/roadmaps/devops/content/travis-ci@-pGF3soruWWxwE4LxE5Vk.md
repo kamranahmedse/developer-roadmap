@@ -5,6 +5,6 @@ Travis CI is a cloud-based continuous integration (CI) service that automaticall
 Visit the following resources to learn more:
 
 - [@official@Travis CI Documentation](https://docs.travis-ci.com/)
-- [@article@Travis CI Tutorial](https://docs.travis-ci.com/user/tutorial/)
+- [@official@Travis CI Tutorial](https://docs.travis-ci.com/user/tutorial/)
 - [@video@Travis CI Complete Tutorial for DevOps Engineers](https://www.youtube.com/watch?v=xLWDOLhTH38)
 - [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

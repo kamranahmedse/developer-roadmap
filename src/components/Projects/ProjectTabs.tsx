@@ -1,13 +1,5 @@
 import { cn } from '../../lib/classname';
-import {
-  ArrowLeft,
-  Blocks,
-  BoxSelect,
-  type LucideIcon,
-  StepBackIcon,
-  StickyNote,
-  Text,
-} from 'lucide-react';
+import { ArrowLeft, Blocks, type LucideIcon, Text } from 'lucide-react';
 
 export const allowedProjectTabs = ['details', 'solutions'] as const;
 export type AllowedProjectTab = (typeof allowedProjectTabs)[number];
@@ -36,7 +28,7 @@ function TabButton(props: TabButtonProps) {
       {smText && <span className="sm:hidden">{smText}</span>}
 
       {isActive && (
-        <span className="absolute bottom-0 left-0 right-0 h-0.5 translate-y-1/2 rounded-t-md bg-black"></span>
+        <span className="absolute right-0 bottom-0 left-0 h-0.5 translate-y-1/2 rounded-t-md bg-black"></span>
       )}
     </a>
   );
@@ -46,10 +38,16 @@ type ProjectTabsProps = {
   activeTab: AllowedProjectTab;
   projectId: string;
   parentRoadmapId?: string;
+  hasNoSubmission?: boolean;
 };
 
 export function ProjectTabs(props: ProjectTabsProps) {
-  const { activeTab, parentRoadmapId, projectId } = props;
+  const {
+    activeTab,
+    parentRoadmapId,
+    projectId,
+    hasNoSubmission = false,
+  } = props;
 
   return (
     <div className="my-3 flex flex-row flex-wrap items-center gap-1.5 overflow-hidden rounded-md border bg-white px-2.5 text-sm">
@@ -69,13 +67,15 @@ export function ProjectTabs(props: ProjectTabsProps) {
         isActive={activeTab === 'details'}
         href={`/projects/${projectId}`}
       />
-      <TabButton
-        text={'Community Solutions'}
-        icon={Blocks}
-        smText={'Solutions'}
-        isActive={activeTab === 'solutions'}
-        href={`/projects/${projectId}/solutions`}
-      />
+      {!hasNoSubmission && (
+        <TabButton
+          text={'Community Solutions'}
+          icon={Blocks}
+          smText={'Solutions'}
+          isActive={activeTab === 'solutions'}
+          href={`/projects/${projectId}/solutions`}
+        />
+      )}
     </div>
   );
 }

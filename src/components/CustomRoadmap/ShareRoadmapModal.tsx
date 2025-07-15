@@ -128,7 +128,7 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
       <div className="flex items-center justify-between p-4">
         <button
           disabled={isLoading}
-          className="flex h-9 items-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:border-gray-300 hover:bg-gray-50 focus:border-gray-300 focus:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-70"
+          className="flex h-9 items-center rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-black outline-hidden hover:border-gray-300 hover:bg-gray-50 focus:border-gray-300 focus:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-70"
           onClick={onClose}
         >
           {isLoading ? (
@@ -141,7 +141,7 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
           )}
         </button>
         <button
-          className="flex h-9 items-center justify-center rounded-md border border-transparent bg-gray-900 px-4 py-2 text-sm font-medium text-white outline-none hover:bg-gray-800 focus:bg-gray-800"
+          className="flex h-9 items-center justify-center rounded-md border border-transparent bg-gray-900 px-4 py-2 text-sm font-medium text-white outline-hidden hover:bg-gray-800 focus:bg-gray-800"
           onClick={handleCopy}
         >
           {isCopied ? (

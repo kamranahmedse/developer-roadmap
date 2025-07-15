@@ -8,6 +8,7 @@ isNew: false
 seo:
   title: 'Node.js Questions'
   description: 'Curated list of Node.js questions to test, rate and improve your knowledge. Questions are based on real world experience and knowledge.'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/nodejs-questions-x6n2w.jpg'
   keywords:
     - 'node.js quiz'
     - 'node.js questions'

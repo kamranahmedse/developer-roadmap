@@ -4,4 +4,4 @@ Angular templates support control flow blocks that let you conditionally show, h
 
 Visit the following resources to learn more:
 
-- [@official@Built-in control flow](https://angular.dev/guide/templates/control-flow)
+- [@official@Built-in Control Flow](https://angular.dev/guide/templates/control-flow)

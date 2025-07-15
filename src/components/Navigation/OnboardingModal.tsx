@@ -232,7 +232,7 @@ export function OnboardingModal(props: OnboardingModalProps) {
 
       <div className="mt-2 px-11 pb-5">
         <button
-          className="w-full rounded-md bg-gradient-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600"
+          className="w-full rounded-md bg-linear-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600"
           onClick={onClose}
         >
           Do it later

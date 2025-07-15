@@ -4,7 +4,7 @@ Combinatorics is the study of counting. It is a branch of mathematics that is us
 
 Visit the following resources to learn more:
 
+- [@article@Probability and Combinatorics](https://www.khanacademy.org/math/probability/probability-and-combinatorics-topic)
 - [@video@Math Skills: How to find Factorial, Permutation and Combination](https://www.youtube.com/watch?v=8RRo6Ti9d0U)
 - [@video@Make School: Probability](https://www.youtube.com/watch?v=sZkAAk9Wwa4)
 - [@video@Make School: More Probability and Markov Chains](https://www.youtube.com/watch?v=dNaJg-mLobQ)
-- [@article@Probability and Combinatorics Topic](https://www.khanacademy.org/math/probability/probability-and-combinatorics-topic)

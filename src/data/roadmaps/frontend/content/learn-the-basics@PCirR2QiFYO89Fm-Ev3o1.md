@@ -1,9 +1,8 @@
 # HTML Basics
 
-HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.
+HTML (HyperText Markup Language) is the backbone of webpages. It structures the content you see online. You use CSS to style this HTML structure and JavaScript to make it interactive. Think of HTML as the skeleton of a website.
 
 Visit the following resources to learn more:
 
-- [@article@W3Schools: Learn HTML](https://www.w3schools.com/html/html_intro.asp)
 - [@article@web.dev: Learn HTML](https://web.dev/learn/html)
 - [@video@HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=kUMe1FH4CHE)

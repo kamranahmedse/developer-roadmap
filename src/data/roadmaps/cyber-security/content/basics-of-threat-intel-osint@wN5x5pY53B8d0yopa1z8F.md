@@ -4,5 +4,6 @@ Threat Intelligence (Threat Intel) and Open-Source Intelligence (OSINT) are both
 
 Learn more from the following resources:
 
-- [@article@OSINT Framework](https://osintframework.com/)
+- [@official@OSINT Framework](https://osintframework.com/)
+- [@article@Threat Intelligence](https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/)
 - [@course@Open-Source Intelligence (OSINT) in 5 Hours](https://www.youtube.com/watch?v=qwA6MmbeGNo&t=457s)

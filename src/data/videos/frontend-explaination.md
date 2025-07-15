@@ -13,4 +13,4 @@ tags:
   - 'video-sitemap'
 ---
 
-<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/watch?v=w3nt4k2jZUo" title="The Ultimate Frontend Developer Roadmap"></iframe>
+<iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/w3nt4k2jZUo?si=j8l7o0ZcfmMy7zAs" title="The Ultimate Frontend Developer Roadmap"></iframe>

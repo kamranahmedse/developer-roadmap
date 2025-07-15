@@ -4,5 +4,6 @@ PyTorch, an open-source machine learning library, has gained considerable popula
 
 Learn more from the following resources:
 
-- [@official@PyTorch Website](https://pytorch.org/)
+- [@official@PyTorch](https://pytorch.org/)
+- [@official@PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
 - [@video@PyTorch in 100 seconds](https://www.youtube.com/watch?v=ORMx45xqWkA)

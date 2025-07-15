@@ -4,4 +4,4 @@ The RPUSH command will insert all the specified values at the tail end o the lis
 
 Learn more from the following resources:
 
-- [@official@RPUSH Documentation](https://redis.io/docs/latest/commands/rpush/)
+- [@official@RPUSH](https://redis.io/docs/latest/commands/rpush/)

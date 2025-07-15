@@ -4,5 +4,5 @@ Long polling is a technique used to implement server push functionality over HTT
 
 Visit the following resources to learn more:
 
-- [@article@Long polling](https://javascript.info/long-polling)
+- [@article@Long Polling](https://javascript.info/long-polling)
 - [@article@What are Long-Polling, Websockets, Server-Sent Events (SSE) and Comet?](https://stackoverflow.com/questions/11077857/what-are-long-polling-websockets-server-sent-events-sse-and-comet)

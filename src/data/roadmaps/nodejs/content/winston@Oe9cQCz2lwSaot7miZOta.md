@@ -4,5 +4,5 @@ winston is designed to be a simple and universal logging library with support fo
 
 Visit the following resources to learn more:
 
-- [@opensource@winston Website](https://github.com/winstonjs/winston)
-- -[@article@A Complete Guide to Winston Logging in Node.js](https://betterstack.com/community/guides/logging/how-to-install-setup-and-use-winston-and-morgan-to-log-node-js-applications/)
+- [@opensource@winston](https://github.com/winstonjs/winston?tab=readme-ov-file#readme)
+- [@article@A Complete Guide to Winston Logging in Node.js](https://betterstack.com/community/guides/logging/how-to-install-setup-and-use-winston-and-morgan-to-log-node-js-applications/)

@@ -4,4 +4,4 @@ The **No Persistence** option in Redis disables all data persistence mechanisms,
 
 Learn more from the following resources:
 
-- [@official@Redis Persistence Documentation](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)
+- [@official@Redis Persistence](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/)

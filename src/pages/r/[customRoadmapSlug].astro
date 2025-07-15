@@ -16,7 +16,11 @@ const { response, error } = await roadmapClient.isShowcaseRoadmap(
 );
 ---
 
-<BaseLayout title='Roadmaps' noIndex={!response?.isShowcase}>
+<BaseLayout
+  title='Roadmaps'
+  noIndex={!response?.isShowcase}
+  permalink={`/r/${customRoadmapSlug}`}
+>
   <ProgressHelpPopup />
   <div>
     <div class='flex min-h-[550px] flex-col'>

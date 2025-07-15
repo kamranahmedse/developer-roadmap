@@ -4,5 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@NIST Website](https://www.nist.gov/)
+- [@official@NIST](https://www.nist.gov/)
 - [@article@What is NIST?](https://www.encryptionconsulting.com/education-center/nist/)

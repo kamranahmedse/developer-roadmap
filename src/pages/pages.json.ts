@@ -5,6 +5,18 @@ import { getAllVideos } from '../lib/video';
 import { getAllQuestionGroups } from '../lib/question-group';
 import { getAllProjects } from '../lib/project';
 
+// Add utility to fetch beginner roadmap file IDs
+function getBeginnerRoadmapIds() {
+  const files = import.meta.glob('/src/data/roadmaps/*/*-beginner.json', {
+    eager: true,
+  });
+
+  return Object.keys(files).map((filePath) => {
+    const fileName = filePath.split('/').pop() || '';
+    return fileName.replace('.json', '');
+  });
+}
+
 export async function GET() {
   const guides = await getAllGuides();
   const videos = await getAllVideos();
@@ -13,19 +25,42 @@ export async function GET() {
   const bestPractices = await getAllBestPractices();
   const projects = await getAllProjects();
 
+  // Transform main roadmaps into page objects first so that we can reuse their meta for beginner variants
+  const roadmapPages = roadmaps.map((roadmap) => ({
+    id: roadmap.id,
+    url: `/${roadmap.id}`,
+    title: roadmap.frontmatter.briefTitle,
+    description: roadmap.frontmatter.briefDescription,
+    group: 'Roadmaps',
+    metadata: {
+      tags: roadmap.frontmatter.tags,
+    },
+    renderer: roadmap?.frontmatter?.renderer || 'balsamiq',
+  }));
+
+  // Generate beginner roadmap page objects
+  const beginnerRoadmapPages = getBeginnerRoadmapIds()
+    .map((beginnerId) => {
+      const parentId = beginnerId.replace('-beginner', '');
+      const parentMeta = roadmapPages.find((page) => page.id === parentId);
+
+      if (!parentMeta) {
+        return null;
+      }
+
+      return {
+        ...parentMeta,
+        id: beginnerId,
+        url: `/${parentId}?r=${beginnerId}`,
+        title: `${parentMeta.title} Beginner`,
+      };
+    })
+    .filter(Boolean);
+
   return new Response(
     JSON.stringify([
-      ...roadmaps.map((roadmap) => ({
-        id: roadmap.id,
-        url: `/${roadmap.id}`,
-        title: roadmap.frontmatter.briefTitle,
-        description: roadmap.frontmatter.briefDescription,
-        group: 'Roadmaps',
-        metadata: {
-          tags: roadmap.frontmatter.tags,
-        },
-        renderer: roadmap?.frontmatter?.renderer || 'balsamiq',
-      })),
+      ...roadmapPages,
+      ...beginnerRoadmapPages,
       ...bestPractices.map((bestPractice) => ({
         id: bestPractice.id,
         url: `/best-practices/${bestPractice.id}`,

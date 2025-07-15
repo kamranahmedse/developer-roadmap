@@ -4,6 +4,5 @@
 
 Learn more from the following resources:
 
-- [@official@MacOS Website](https://www.apple.com/uk/macos/macos-sequoia/)
+- [@official@macOS](https://www.apple.com/macos/macos-sequoia/)
 - [@video@Mac Tutorial for Beginners 2024](https://www.youtube.com/watch?v=3jeeFc2Vo1U)
-
