@@ -130,6 +130,7 @@ export function clearMigratedRoadmapProgress(
     'mongodb',
     'flutter',
     'design-system',
+    'golang',
   ];
 
   if (!migratedRoadmaps.includes(resourceId)) {
