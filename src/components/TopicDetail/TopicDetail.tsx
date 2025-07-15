@@ -26,8 +26,7 @@ import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import {
-  resourceTitleFromId,
-  type AllowedRoadmapRenderer,
+  type AllowedRoadmapRenderer
 } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
@@ -660,26 +659,7 @@ export function TopicDetail(props: TopicDetailProps) {
                     className="hidden items-center justify-center rounded-md px-2 py-2 text-sm transition-all hover:bg-gray-200 sm:flex"
                   >
                     <GitHubIcon className="mr-2 inline-block h-4 w-4 text-current" />
-                    Help us Improve this Content
-                  </a>
-
-                  <a
-                    href={tnsLink}
-                    className="hidden rounded-md border bg-gray-200 px-2 py-1.5 text-sm hover:bg-gray-300 min-[390px]:block sm:hidden"
-                    onClick={() => {
-                      window.fireEvent({
-                        category: 'PartnerClick',
-                        action: 'TNS Redirect',
-                        label: 'Roadmap Topic / TNS Link',
-                      });
-                    }}
-                  >
-                    <span className="badge mr-1.5">Partner</span>
-                    Visit{' '}
-                    <span className="font-medium underline underline-offset-1">
-                      TheNewStack.io
-                    </span>{' '}
-                    for {resourceTitleFromId(resourceId)} news
+                    Help us add resources to this topic
                   </a>
                 </div>
               )}
