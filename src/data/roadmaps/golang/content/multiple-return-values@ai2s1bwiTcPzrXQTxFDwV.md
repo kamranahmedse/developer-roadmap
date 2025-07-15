@@ -1,3 +1,3 @@
 # Multiple Return Values
 
-Go functions can return multiple values, which is commonly used for returning both a result and an error. This pattern eliminates the need for exceptions and makes error handling explicit and visible in the code flow. Functions can return any number of values of different types, and callers can capture all values or ignore some using the blank identifier `_`. Multiple return values are essential for Go's error handling idiom, make functions more expressive, and reduce the need for complex data structures just to return multiple pieces of information. This feature contributes to Go's clean, readable code style and explicit error handling philosophy.
+Go functions can return multiple values, commonly used for returning result and error. Syntax: `func name() (Type1, Type2)`. Caller receives all returned values or uses blank identifier `_` to ignore unwanted values. Idiomatic for error handling pattern.

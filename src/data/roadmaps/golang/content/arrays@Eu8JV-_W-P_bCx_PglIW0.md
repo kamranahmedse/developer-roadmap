@@ -1,3 +1,3 @@
 # Arrays
 
-Arrays in Go are fixed-size sequences of elements of the same type. The size of an array is part of its type, meaning arrays of different sizes are considered different types. Arrays are declared with a specific length and all elements are initialized to the zero value of the element type. While arrays have their uses, slices are more commonly used in Go because of their flexibility. Arrays are value types, meaning they are copied when assigned or passed to functions. Understanding arrays is important for grasping Go's type system and the foundation for slices.
+Fixed-size sequences of same-type elements. Size is part of the type, so different sizes are different types. Declared with specific length, initialized to zero values. Value types (copied when assigned/passed). Slices are more commonly used due to flexibility. Foundation for understanding Go's type system.

@@ -1,3 +1,3 @@
 # Channels
 
-Channels are Go's primary mechanism for communication between goroutines, following the principle "Don't communicate by sharing memory; share memory by communicating." Channels are typed conduits that allow you to send and receive values between goroutines safely. They can be created using the `make()` function and come in two varieties: buffered and unbuffered. Channels can be used to synchronize goroutine execution, pass data between concurrent processes, and coordinate complex concurrent operations. Understanding channels is essential for writing effective concurrent programs in Go.
+Primary mechanism for goroutine communication following "share memory by communicating" principle. Typed conduits created with `make()`. Come in buffered and unbuffered varieties. Used for synchronization, data passing, and coordinating concurrent operations. Essential for concurrent programming.

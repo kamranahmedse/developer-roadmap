@@ -1,3 +1,3 @@
 # continue
 
-The `continue` statement in Go skips the rest of the current iteration and jumps to the next iteration of the loop. It only affects the innermost loop unless used with labels to specify which loop to continue. Continue is useful for skipping processing of certain elements that don't meet specific criteria, implementing filtering logic within loops, and avoiding deeply nested conditional structures. It helps make loops more readable by handling special cases early and allowing the main logic to flow naturally. Understanding continue enables you to write cleaner, more efficient loops that focus on the elements that actually need processing.
+Skips rest of current iteration and jumps to next loop iteration. Only affects innermost loop unless used with labels. Useful for filtering elements, handling special cases early, avoiding nested conditionals. Makes loops cleaner and more efficient.

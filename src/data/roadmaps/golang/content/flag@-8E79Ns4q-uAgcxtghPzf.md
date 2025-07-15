@@ -1,3 +1,3 @@
 # flag
 
-The `flag` package provides command-line flag parsing functionality for Go programs. It supports various flag types including strings, integers, booleans, and durations, with automatic help generation and error handling. Flags can be defined using functions like `flag.String()`, `flag.Int()`, and `flag.Bool()`, and are parsed with `flag.Parse()`. The package handles both short and long flag formats, provides default values, and generates usage information automatically. While suitable for simple CLI applications, more complex command-line interfaces often benefit from libraries like Cobra or urfave/cli. Understanding the flag package is essential for creating basic command-line tools and scripts.
+Standard library package for parsing command-line flags. Supports string, int, bool, duration flags with default values and descriptions. Automatically generates help text. Simple API for basic CLI argument parsing before using frameworks like Cobra.

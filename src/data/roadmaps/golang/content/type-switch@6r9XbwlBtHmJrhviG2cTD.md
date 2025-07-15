@@ -1,3 +1,3 @@
 # Type Switch
 
-Type switches in Go provide a clean way to perform different actions based on the dynamic type of an interface value. Using the syntax `switch v := interfaceVar.(type)`, you can check multiple types in a single construct and execute type-specific code for each case. Type switches are more efficient and readable than multiple type assertions, especially when handling many possible types. They're commonly used in functions that accept empty interfaces, implementing polymorphic behavior, serialization/deserialization logic, and building flexible APIs that can handle various input types. Type switches make Go's static typing more flexible while maintaining safety and performance.
+Special form of switch statement that operates on types rather than values. Syntax: `switch v := i.(type)`. Used with interfaces to determine underlying concrete type. Each case specifies types to match. Essential for handling interface{} and polymorphic code.

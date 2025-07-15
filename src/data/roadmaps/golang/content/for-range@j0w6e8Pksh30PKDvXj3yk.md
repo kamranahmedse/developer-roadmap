@@ -1,3 +1,3 @@
-# for range
+# for-range
 
-The `for range` loop in Go provides a convenient way to iterate over arrays, slices, maps, strings, and channels. It automatically handles iteration logic and provides access to both index/key and value for each element. When ranging over slices or arrays, you get index and value; over maps, you get key and value; over strings, you get byte index and rune value; and over channels, you get the received values. You can use the blank identifier `_` to ignore index/key if you only need values. The range loop is essential for processing collections and is more idiomatic and safer than manual index-based iteration in most cases.
+Special form of for loop for iterating over arrays, slices, maps, strings, and channels. Returns index/key and value. For strings, returns rune index and rune value. For channels, returns only values. Use blank identifier `_` to ignore unwanted return values.

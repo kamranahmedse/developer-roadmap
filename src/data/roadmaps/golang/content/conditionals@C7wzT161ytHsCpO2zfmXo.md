@@ -1,3 +1,3 @@
 # Conditionals
 
-Conditionals in Go allow your program to make decisions and execute different code paths based on certain conditions. Go provides `if` statements for basic conditional logic, `if-else` for binary decisions, and `switch` statements for multiple condition checking. The `if` statement can include an optional initialization statement, and conditions don't require parentheses but the body must be enclosed in braces. Go's `switch` statement is more powerful than in many languages, supporting expression switches, type switches, and fallthrough behavior. Conditionals are fundamental for controlling program flow and implementing business logic.
+Control program flow based on conditions. `if` for basic logic, `if-else` for binary decisions, `switch` for multiple conditions. `if` supports optional initialization, no parentheses needed but braces required. `switch` supports expressions, type switches, fallthrough. Fundamental for business logic.

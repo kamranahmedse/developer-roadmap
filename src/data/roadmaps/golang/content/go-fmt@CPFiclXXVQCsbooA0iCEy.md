@@ -1,3 +1,3 @@
 # go fmt
 
-The `go fmt` command automatically formats Go source code according to Go's official style guidelines. It standardizes indentation, spacing, alignment, and other formatting aspects to ensure consistent code style across all Go projects. The tool is opinionated and non-configurable, which eliminates debates about code formatting and ensures uniformity in the Go ecosystem. Most editors can be configured to run `go fmt` automatically on save. Using `go fmt` regularly keeps your code clean, readable, and consistent with Go community standards, making collaboration easier and code reviews more focused on logic rather than style.
+Automatically formats Go source code according to official style guidelines. Standardizes indentation, spacing, alignment for consistent code style. Opinionated and non-configurable, eliminating formatting debates. Essential for clean, readable, community-standard code.

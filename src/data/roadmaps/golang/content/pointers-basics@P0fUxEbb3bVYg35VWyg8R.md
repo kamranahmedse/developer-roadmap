@@ -1,3 +1,3 @@
-# Pointers Basics
+# Pointer Basics
 
-Pointer basics in Go involve understanding how to declare, initialize, and use pointers to store memory addresses. A pointer is declared with `*Type` and you get a pointer to a variable using the address operator `&`. To access the value at a pointer's address, you use the dereference operator `*`. Pointers enable efficient passing of large data structures, allow functions to modify original values, and are essential for dynamic memory allocation. Unlike C, Go pointers don't support arithmetic operations, making them safer. Understanding pointer basics is crucial for efficient memory usage and implementing data structures like linked lists and trees.
+Variables storing memory addresses of other variables. Declared with `*Type`, dereferenced with `*ptr`, address obtained with `&var`. Enable efficient memory usage and allow functions to modify caller's data. Essential for performance and reference semantics.

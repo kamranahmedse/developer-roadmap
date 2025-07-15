@@ -1,3 +1,3 @@
 # Generics
 
-Generics, introduced in Go 1.18, allow you to write functions and types that can work with different data types while maintaining type safety. They enable you to create reusable code that doesn't sacrifice performance or type checking. With generics, you can write a single function or data structure that works with multiple types instead of having to duplicate code for each type. Generics use type parameters (written in square brackets) and type constraints to define which types are acceptable. This feature makes Go code more flexible and reduces code duplication while preserving the language's strong typing system.
+Introduced in Go 1.18, allow functions and types to work with different data types while maintaining type safety. Enable reusable code without sacrificing performance. Use type parameters (square brackets) and constraints. Reduce code duplication while preserving strong typing.

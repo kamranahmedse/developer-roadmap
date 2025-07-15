@@ -1,3 +1,3 @@
 # `context` Package
 
-The `context` package provides a way to carry deadlines, cancellation signals, and request-scoped values across API boundaries and between processes. Context is essential for building robust concurrent applications, especially web services and APIs. It allows you to cancel long-running operations, set timeouts, and pass request-specific data through your application. The context is typically the first parameter of functions and is passed down through the call stack. Understanding context is crucial for writing production-ready Go applications that can handle cancellation, timeouts, and cleanup gracefully.
+Carries deadlines, cancellation signals, and request-scoped values across API boundaries. Essential for robust concurrent applications, especially web services. Enables cancelling long-running operations, setting timeouts, passing request data. Typically first parameter passed down call stack.

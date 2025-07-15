@@ -1,3 +1,3 @@
 # go test
 
-The `go test` command is Go's built-in tool for running tests, benchmarks, and examples. It automatically discovers test files (ending with `_test.go`), compiles them with the package code, and executes test functions. The command supports various flags for controlling test behavior, including `-v` for verbose output, `-run` for running specific tests, `-bench` for benchmarks, and `-cover` for coverage analysis. It can run tests in parallel, generate test coverage reports, and integrate with continuous integration systems. Mastering `go test` is crucial for maintaining code quality and implementing test-driven development practices.
+Command for running tests in Go packages. Automatically finds and executes functions starting with `Test`. Supports benchmarks (`Benchmark`), examples (`Example`), and sub-tests. Includes coverage analysis, parallel execution, and various output formats. Essential for TDD and quality assurance.

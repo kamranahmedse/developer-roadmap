@@ -1,3 +1,3 @@
 # break
 
-The `break` statement in Go immediately exits the innermost loop (for) or switch statement. In nested loops, break only exits the immediate loop unless used with a label to break out of outer loops. Labels allow you to specify which loop to break from, providing more control in complex nested structures. Break is essential for early loop termination when certain conditions are met, implementing search algorithms, and controlling loop flow based on runtime conditions. Understanding break helps you write more efficient loops that don't continue processing unnecessarily once their purpose is fulfilled.
+Immediately exits innermost loop or switch statement. In nested loops, only exits immediate loop unless used with labels to break outer loops. Essential for early termination when conditions are met. Helps write efficient loops that don't continue unnecessarily.

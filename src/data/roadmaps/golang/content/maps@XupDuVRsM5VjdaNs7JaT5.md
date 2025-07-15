@@ -1,3 +1,3 @@
 # Maps
 
-Maps in Go are built-in data structures that store key-value pairs, similar to hash tables or dictionaries in other languages. They provide fast lookups, insertions, and deletions based on unique keys. Maps are reference types and must be initialized before use, either with `make(map[KeyType]ValueType)` or with map literals. Keys must be comparable types (strings, numbers, booleans, arrays, structs with comparable fields), while values can be any type. Maps are essential for many programming tasks including caching, counting, grouping data, and implementing lookup tables.
+Built-in associative data type mapping keys to values. Reference types created with `make(map[KeyType]ValueType)` or map literals. Keys must be comparable types. Support insertion, deletion, lookup operations. Check existence with comma ok idiom: `value, ok := map[key]`.

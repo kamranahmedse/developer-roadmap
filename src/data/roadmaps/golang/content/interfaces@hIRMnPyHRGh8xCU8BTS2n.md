@@ -1,3 +1,3 @@
 # Interfaces
 
-Interfaces in Go define a contract by specifying a set of method signatures that a type must implement. Unlike many other languages, Go interfaces are implemented implicitly - a type implements an interface simply by implementing all the methods declared in the interface. This approach promotes loose coupling and makes code more flexible and testable. Interfaces are central to Go's type system and enable polymorphism, allowing different types to be used interchangeably as long as they satisfy the same interface. They are essential for writing modular, extensible Go programs.
+Define contracts specifying method signatures without implementation. Types satisfy interfaces implicitly by implementing required methods. Enable polymorphism and loose coupling. Empty interface `interface{}` accepts any type. Foundation of Go's type system and composition patterns.

@@ -1,3 +1,3 @@
 # for loop
 
-The for loop is Go's only looping construct, but it's flexible enough to handle all iteration scenarios. The traditional three-component form `for init; condition; post` works like loops in other languages, while you can omit components for different behaviors. For example, omitting init and post creates a while-style loop, and omitting all components creates an infinite loop. The for loop is essential for repetitive operations, iterating over data structures, and implementing algorithms that require repeated execution. Its simplicity and versatility make it a fundamental tool for controlling program flow and processing collections of data.
+Go's only looping construct, incredibly flexible for all iteration needs. Classic form: initialization, condition, post statements. Omit components for different behaviors (infinite, while-like). Use with `break`, `continue`, labels for nested loops. `for range` for convenient collection iteration.

@@ -1,3 +1,3 @@
-# `sync` Package
+# sync Package
 
-The `sync` package provides basic synchronization primitives for coordinating goroutines and protecting shared resources from race conditions. Key components include Mutex (mutual exclusion locks), RWMutex (read-write locks), WaitGroup (waiting for goroutines to complete), Once (ensuring functions run only once), and Cond (condition variables). These tools are essential for writing safe concurrent programs when channels alone aren't sufficient. While Go encourages communication through channels, the sync package is crucial for scenarios requiring traditional locking mechanisms or synchronizing goroutine lifecycles.
+Provides synchronization primitives for coordinating goroutines and safe concurrent access. Includes Mutex (mutual exclusion), RWMutex (reader-writer locks), WaitGroup (waiting on goroutines), Once (one-time init). Essential for avoiding race conditions.

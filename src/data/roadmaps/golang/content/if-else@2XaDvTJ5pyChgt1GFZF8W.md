@@ -1,3 +1,3 @@
 # if-else
 
-The if-else statement in Go extends the basic if statement by providing an alternative code path when the condition is false. You can chain multiple conditions using else if to handle complex decision logic. Go's if-else maintains the same syntax rules as if statements - no parentheses required around conditions, but braces are mandatory around bodies. The else clause must be on the same line as the closing brace of the if block. If-else statements are essential for binary decisions, error handling patterns, and implementing branching logic where you need to choose between different execution paths based on conditions.
+Basic conditional statements for binary decision making. `if` tests condition, `else` handles alternative path. Can include optional initialization statement. No parentheses needed around condition but braces required. Foundation of program control flow.
