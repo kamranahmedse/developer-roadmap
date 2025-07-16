@@ -1,9 +1,23 @@
-import { RotateCcw, BarChart3, Zap, Check, X, Minus } from 'lucide-react';
+import {
+  RotateCcw,
+  BarChart3,
+  Zap,
+  Check,
+  X,
+  Minus,
+  BookOpenIcon,
+  FileTextIcon,
+} from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { getPercentage } from '../../lib/number';
-import type { QuestionState } from './AIQuizContent';
+import type {
+  AIQuizResultFeedbackResponse,
+  QuestionState,
+} from './AIQuizContent';
 import { QuizStateButton } from './AIQuizResultStrip';
 import { CircularProgress } from './CircularProgress';
+import { markdownToHtml } from '../../lib/markdown';
+import { markdownClassName } from './AIMCQQuestion';
 
 type AIQuizResultsProps = {
   questionStates: Record<number, QuestionState>;
@@ -11,11 +25,21 @@ type AIQuizResultsProps = {
   onRetry: () => void;
   onNewQuiz: () => void;
   onReview?: (questionIndex: number) => void;
+
+  isFeedbackLoading?: boolean;
+  feedback?: AIQuizResultFeedbackResponse;
 };
 
 export function AIQuizResults(props: AIQuizResultsProps) {
-  const { questionStates, totalQuestions, onRetry, onNewQuiz, onReview } =
-    props;
+  const {
+    questionStates,
+    totalQuestions,
+    onRetry,
+    onNewQuiz,
+    onReview,
+    isFeedbackLoading,
+    feedback,
+  } = props;
 
   const states = Object.values(questionStates);
   const correctCount = states.filter(
@@ -146,7 +170,6 @@ export function AIQuizResults(props: AIQuizResultsProps) {
         </div>
       )}
 
-      {/* Action Buttons */}
       <div className="flex flex-col gap-3 sm:flex-row">
         <ActionButton
           variant="secondary"
@@ -164,58 +187,80 @@ export function AIQuizResults(props: AIQuizResultsProps) {
         </ActionButton>
       </div>
 
-      {/* Performance Insights */}
-      <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 md:p-6">
-        <div className="space-y-4">
-          <div>
-            <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
-              Performance Insight
-            </h4>
-            <p className="text-sm leading-relaxed text-balance text-gray-600">
-              {accuracy >= 90 &&
-                "Outstanding work! You've mastered this topic. Consider challenging yourself with more advanced questions."}
-              {accuracy >= 75 &&
-                accuracy < 90 &&
-                'Great job! You have a solid understanding. A few more practice sessions could get you to mastery.'}
-              {accuracy >= 60 &&
-                accuracy < 75 &&
-                "Good progress! You're on the right track. Focus on reviewing the questions you missed."}
-              {accuracy >= 40 &&
-                accuracy < 60 &&
-                'Keep practicing! Consider reviewing the fundamentals before attempting another quiz.'}
-              {accuracy < 40 &&
-                "Don't give up! Learning takes time. Review the material thoroughly and try again when you're ready."}
-            </p>
-          </div>
+      {feedback && (
+        <>
+          <div className="rounded-xl border border-gray-200 bg-gray-50">
+            {feedback.summary && (
+              <div className="border-b border-gray-200 p-4 md:p-6">
+                <h4 className="mb-2 flex items-center text-sm font-semibold text-gray-900 md:text-base">
+                  Summary of your quiz
+                </h4>
 
-          {/* Action Items */}
-          <div className="mt-5 border-t border-gray-200 pt-5 -mx-6 px-6">
-            <h5 className="mb-3 text-sm font-medium text-gray-900">
-              Here's what you can do next
-            </h5>
-            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-              <ActionLink
-                href="/ai"
-                label="Learn a Topic"
-                description="Create a course or guide"
-                variant="secondary"
-              />
-              <ActionLink
-                href="/ai/chat"
-                label="Chat with AI Tutor"
-                description="Learn while you chat"
-                variant="secondary"
-              />
-              <ActionLink
-                href="/ai/quiz"
-                label="Take another Quiz"
-                description="Challenge yourself"
-                variant="secondary"
-              />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: markdownToHtml(feedback.summary, false),
+                  }}
+                  className={cn(
+                    markdownClassName,
+                    'prose-sm prose-p:text-sm prose-p:leading-relaxed prose-p:text-balance',
+                  )}
+                />
+              </div>
+            )}
+
+            {feedback.guideTopics?.length && feedback.courseTopics?.length && (
+              <>
+                <div className="p-4 md:p-6">
+                  <div className="mb-4">
+                    <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
+                      Suggested Resources
+                    </h4>
+
+                    <p className="text-sm leading-relaxed text-balance text-gray-600">
+                      You can follow these courses or guides to improve your
+                      understanding of the topic you missed in the quiz
+                    </p>
+                  </div>
+
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    {feedback.courseTopics?.map((topic, index) => (
+                      <ResourceCard
+                        key={`course-${index}`}
+                        icon={<BookOpenIcon className="h-5 w-5" />}
+                        title={topic}
+                        type="course"
+                        href={`/ai/course?term=${encodeURIComponent(topic)}&format=course`}
+                      />
+                    ))}
+                    {feedback.guideTopics?.map((topic, index) => (
+                      <ResourceCard
+                        key={`guide-${index}`}
+                        icon={<FileTextIcon className="h-5 w-5" />}
+                        title={topic}
+                        type="guide"
+                        href={`/ai/guide?term=${encodeURIComponent(topic)}&format=guide`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+        </>
+      )}
+
+      {isFeedbackLoading && (
+        <div className="rounded-xl border border-gray-200 bg-white p-4 md:p-6">
+          <div className="flex items-center justify-center py-8">
+            <div className="flex items-center gap-3 text-gray-600">
+              <div className="h-5 w-5 animate-spin rounded-full border-2 border-gray-300 border-t-gray-600" />
+              <span className="text-sm md:text-base">
+                Generating personalized feedback...
+              </span>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -375,5 +420,28 @@ export function ResultAction(props: ResultActionProps) {
       {icon}
       {label}
     </button>
+  );
+}
+
+type ResourceCardProps = {
+  icon: React.ReactNode;
+  title: string;
+  type: 'guide' | 'course';
+  href: string;
+};
+
+function ResourceCard(props: ResourceCardProps) {
+  const { icon, title, type, href } = props;
+
+  return (
+    <a
+      href={href}
+      className="block rounded-lg border border-gray-200 bg-white p-2.5 text-left hover:border-gray-400 hover:bg-gray-100"
+    >
+      <div className="flex items-center gap-2">
+        <div className="text-gray-500">{icon}</div>
+        <div className="truncate text-sm text-gray-900">{title}</div>
+      </div>
+    </a>
   );
 }
