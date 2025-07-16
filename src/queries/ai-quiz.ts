@@ -110,7 +110,6 @@ export async function generateAIQuiz(options: GenerateAIQuizOptions) {
     await readChatStream(stream, {
       onMessage: async (message) => {
         const questions = generateAiQuizQuestions(message);
-        console.log(questions);
         onQuestionsChange?.(questions);
       },
       onMessageEnd: async (result) => {
@@ -156,6 +155,12 @@ export function generateAiQuizQuestions(questionData: string): QuizQuestion[] {
   const addCurrentQuestion = () => {
     if (!currentQuestion) {
       return;
+    }
+
+    if (currentQuestion.type === 'mcq') {
+      currentQuestion.options = currentQuestion.options.sort(
+        () => Math.random() - 0.5,
+      );
     }
 
     questions.push(currentQuestion);

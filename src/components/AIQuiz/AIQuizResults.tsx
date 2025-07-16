@@ -223,15 +223,6 @@ export function AIQuizResults(props: AIQuizResultsProps) {
                   </div>
 
                   <div className="grid gap-2 sm:grid-cols-2">
-                    {feedback.guideTopics?.map((topic, index) => (
-                      <ResourceCard
-                        key={`guide-${index}`}
-                        icon={<FileTextIcon className="h-5 w-5" />}
-                        title={topic}
-                        type="guide"
-                        href={`/ai/guide?term=${encodeURIComponent(topic)}&format=guide`}
-                      />
-                    ))}
                     {feedback.courseTopics?.map((topic, index) => (
                       <ResourceCard
                         key={`course-${index}`}
@@ -239,6 +230,15 @@ export function AIQuizResults(props: AIQuizResultsProps) {
                         title={topic}
                         type="course"
                         href={`/ai/course?term=${encodeURIComponent(topic)}&format=course`}
+                      />
+                    ))}
+                    {feedback.guideTopics?.map((topic, index) => (
+                      <ResourceCard
+                        key={`guide-${index}`}
+                        icon={<FileTextIcon className="h-5 w-5" />}
+                        title={topic}
+                        type="guide"
+                        href={`/ai/guide?term=${encodeURIComponent(topic)}&format=guide`}
                       />
                     ))}
                   </div>
@@ -261,58 +261,6 @@ export function AIQuizResults(props: AIQuizResultsProps) {
           </div>
         </div>
       )}
-
-      <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 md:p-6">
-        <div className="space-y-4">
-          <div>
-            <h4 className="mb-1 flex items-center text-sm font-semibold text-gray-900 md:text-base">
-              Performance Insight
-            </h4>
-            <p className="text-sm leading-relaxed text-balance text-gray-600">
-              {accuracy >= 90 &&
-                "Outstanding work! You've mastered this topic. Consider challenging yourself with more advanced questions."}
-              {accuracy >= 75 &&
-                accuracy < 90 &&
-                'Great job! You have a solid understanding. A few more practice sessions could get you to mastery.'}
-              {accuracy >= 60 &&
-                accuracy < 75 &&
-                "Good progress! You're on the right track. Focus on reviewing the questions you missed."}
-              {accuracy >= 40 &&
-                accuracy < 60 &&
-                'Keep practicing! Consider reviewing the fundamentals before attempting another quiz.'}
-              {accuracy < 40 &&
-                "Don't give up! Learning takes time. Review the material thoroughly and try again when you're ready."}
-            </p>
-          </div>
-
-          {/* Action Items */}
-          <div className="-mx-6 mt-5 border-t border-gray-200 px-6 pt-5">
-            <h5 className="mb-3 text-sm font-medium text-gray-900">
-              Here's what you can do next
-            </h5>
-            <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-              <ActionLink
-                href="/ai"
-                label="Learn a Topic"
-                description="Create a course or guide"
-                variant="secondary"
-              />
-              <ActionLink
-                href="/ai/chat"
-                label="Chat with AI Tutor"
-                description="Learn while you chat"
-                variant="secondary"
-              />
-              <ActionLink
-                href="/ai/quiz"
-                label="Take another Quiz"
-                description="Challenge yourself"
-                variant="secondary"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
