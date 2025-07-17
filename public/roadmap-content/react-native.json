@@ -854,8 +854,24 @@
   },
   "dckRzKDKj-mLB3-OxwjPh": {
     "title": "DeepLinking",
-    "description": "",
-    "links": []
+    "description": "Deep linking in React Native allows your app to navigate directly to specific screens using URLs. This is essential for handling links from emails, notifications, websites, or other apps that should open a particular screen within your app (e.g., `myapp://profile/42`).\n\nThere are two types of deep links:\n\nCustom URL Schemes – Works with schemes like `myapp://`. Requires configuration in `AndroidManifest.xml` and `Info.plist`.\n\nUniversal Links / App Links – Use `https://` links tied to your domain. They require domain verification and provide a better user experience, especially on iOS.\n\nReact Native provides the Linking API to handle incoming URLs, and React Navigation simplifies the process with built-in support. You can define a linking configuration with URL prefixes and screen mappings, then pass it to the NavigationContainer.\n\nBasic setup steps:\n\nConfigure native deep link support (scheme or domain).\n\nDefine a linking object in React Navigation.\n\nUse `Linking.getInitialURL()` and listeners to handle URLs manually if needed.\n\nThis setup ensures users are routed to the right screen whether the app is open, in the background, or completely closed.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding deep linking in React Native",
+        "url": "https://blog.logrocket.com/understanding-deep-linking-in-react-native/",
+        "type": "article"
+      },
+      {
+        "title": "Deep Linking in React Native: Navigating to Specific App Screens",
+        "url": "https://clouddevs.com/react-native/deep-linking/",
+        "type": "article"
+      },
+      {
+        "title": "A Complete Guide to Deep Linking with Custom domain in React Native",
+        "url": "https://dev.to/amitkumar13/a-complete-guide-to-deep-linking-with-custom-domain-in-react-native-bj3",
+        "type": "article"
+      }
+    ]
   },
   "CGtVwhVGc8Vea5RfzJvQG": {
     "title": "Security",
