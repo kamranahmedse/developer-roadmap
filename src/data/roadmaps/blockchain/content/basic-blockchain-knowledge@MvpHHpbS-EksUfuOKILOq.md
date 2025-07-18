@@ -10,5 +10,6 @@ Visit the following resources to learn more:
 - [@video@How does a blockchain work?](https://youtu.be/SSo_EIwHSd4)
 - [@video@What Is a Blockchain? | Blockchain Basics for Developers](https://youtu.be/4ff9esY_4aU)
 - [@video@Blockchain 101 - A Visual Demo : part 1](https://youtu.be/_160oMzblY8?si=mklNBWboNvZMRKs6)
+- [@video@Blockchain 101 - A Visual Demo : part 2](https://youtu.be/xIDL_akeras?si=jEB9xE9oy9HUCdej)
 - [@article@An Elementary and Slightly Distilled Introduction to Blockchain](https://markpetherbridge.co.uk/blog/an-elementary-and-slightly-distilled-introduction-to-blockchain/)
 - [@feed@Explore top posts about Blockchain](https://app.daily.dev/tags/blockchain?ref=roadmapsh)
