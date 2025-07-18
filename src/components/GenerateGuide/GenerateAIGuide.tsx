@@ -9,6 +9,10 @@ import { getAiGuideOptions } from '../../queries/ai-guide';
 import { LoadingChip } from '../LoadingChip';
 import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnswerChat';
 import { getQuestionAnswerChatMessages } from '../../lib/ai-questions';
+import { useIsPaidUser } from '../../queries/billing';
+import { useQuery } from '@tanstack/react-query';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type GenerateAIGuideProps = {
   onGuideSlugChange?: (guideSlug: string) => void;
@@ -20,12 +24,32 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState('');
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 
   const [content, setContent] = useState('');
   const [html, setHtml] = useState('');
   const htmlRef = useRef<string>('');
 
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const isLimitDataLoading = isPaidUserLoading || isLimitLoading;
+
   useEffect(() => {
+    if (isLimitDataLoading) {
+      return;
+    }
+
+    if (!isPaidUser && limits && limits?.guide?.used >= limits?.guide?.limit) {
+      setError('You have reached the limit for this format');
+      setIsLoading(false);
+      setShowUpgradeModal(true);
+      return;
+    }
+
     const params = getUrlParams();
     const paramsTerm = params?.term;
     const paramsSrc = params?.src || 'search';
@@ -44,7 +68,7 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
       src: paramsSrc,
       questionAndAnswers,
     });
-  }, []);
+  }, [isLimitDataLoading, isPaidUser]);
 
   const handleGenerateDocument = async (options: {
     term: string;
@@ -109,17 +133,38 @@ export function GenerateAIGuide(props: GenerateAIGuideProps) {
     });
   };
 
+  const upgradeModal = showUpgradeModal ? (
+    <UpgradeAccountModal
+      onClose={() => {
+        window.location.href = '/ai';
+      }}
+    />
+  ) : null;
+
   if (error) {
-    return <div className="text-red-500">{error}</div>;
+    return (
+      <>
+        {upgradeModal}
+        <div className="text-red-500">{error}</div>
+      </>
+    );
   }
 
   if (isLoading) {
     return (
-      <div className="flex h-full w-full items-center justify-center">
-        <LoadingChip message="Please wait..." />
-      </div>
+      <>
+        {upgradeModal}
+        <div className="flex h-full w-full items-center justify-center">
+          <LoadingChip message="Please wait..." />
+        </div>
+      </>
     );
   }
 
-  return <AIGuideContent html={html} />;
+  return (
+    <>
+      {upgradeModal}
+      <AIGuideContent html={html} />
+    </>
+  );
 }

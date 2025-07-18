@@ -4,7 +4,7 @@ import { formatCommaNumber } from '../../lib/number';
 import { billingDetailsOptions } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 
 type AILimitsPopupProps = {
   onClose: () => void;
@@ -14,10 +14,7 @@ type AILimitsPopupProps = {
 export function AILimitsPopup(props: AILimitsPopupProps) {
   const { onClose, onUpgrade } = props;
 
-  const { data: limits, isLoading } = useQuery(
-    getAiCourseLimitOptions(),
-    queryClient,
-  );
+  const { data: limits, isLoading } = useQuery(aiLimitOptions(), queryClient);
 
   const { used, limit } = limits ?? { used: 0, limit: 0 };
 

@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { Zap } from 'lucide-react';
 import { queryClient } from '../../stores/query-client';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { getPercentage } from '../../lib/number';
 import { cn } from '../../lib/classname';
 
@@ -27,7 +27,7 @@ export function UpgradeSidebarCard(props: UpgradeSidebarCardProps) {
   } = props;
 
   const { data: limits, isLoading: isLimitsLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
 

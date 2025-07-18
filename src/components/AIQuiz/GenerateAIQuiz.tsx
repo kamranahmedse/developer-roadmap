@@ -12,6 +12,10 @@ import {
 import { queryClient } from '../../stores/query-client';
 import { AIQuizContent } from './AIQuizContent';
 import { AlertCircleIcon } from 'lucide-react';
+import { useIsPaidUser } from '../../queries/billing';
+import { useQuery } from '@tanstack/react-query';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type GenerateAIQuizProps = {
   onQuizSlugChange?: (quizSlug: string) => void;
@@ -27,7 +31,27 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const questionsRef = useRef<QuizQuestion[]>([]);
 
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const isLimitDataLoading = isPaidUserLoading || isLimitLoading;
+
   useEffect(() => {
+    if (isLimitDataLoading) {
+      return;
+    }
+
+    if (!isPaidUser && limits && limits?.quiz?.used >= limits?.quiz?.limit) {
+      setError('You have reached the limit for this format');
+      setIsLoading(false);
+      setShowUpgradeModal(true);
+      return;
+    }
+
     const params = getUrlParams();
     const paramsTerm = params?.term;
     const paramsFormat = params?.format;
@@ -48,7 +72,7 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
       src: paramsSrc,
       questionAndAnswers,
     });
-  }, []);
+  }, [isLimitDataLoading, isPaidUser]);
 
   const handleGenerateQuiz = async (options: {
     term: string;
@@ -102,24 +126,43 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
     });
   };
 
+  const upgradeModal = showUpgradeModal ? (
+    <UpgradeAccountModal
+      onClose={() => {
+        window.location.href = '/ai/quiz';
+      }}
+    />
+  ) : null;
+
   if (error) {
     return (
-      <div className="absolute inset-0 z-20 flex h-full flex-col items-center justify-center bg-white">
-        <div className="flex flex-col items-center justify-center gap-2">
-          <AlertCircleIcon className="size-10 text-gray-500" />
-          <p className="text-center">{error}</p>
+      <>
+        {upgradeModal}
+        <div className="absolute inset-0 z-20 flex h-full flex-col items-center justify-center bg-white">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <AlertCircleIcon className="size-10 text-gray-500" />
+            <p className="text-center">{error}</p>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 
   if (isLoading) {
     return (
-      <div className="flex h-full w-full items-center justify-center">
-        <LoadingChip message="Please wait..." />
-      </div>
+      <>
+        {upgradeModal}
+        <div className="flex h-full w-full items-center justify-center">
+          <LoadingChip message="Please wait..." />
+        </div>
+      </>
     );
   }
 
-  return <AIQuizContent isStreaming={isStreaming} questions={questions} />;
+  return (
+    <>
+      {upgradeModal}
+      <AIQuizContent isStreaming={isStreaming} questions={questions} />
+    </>
+  );
 }

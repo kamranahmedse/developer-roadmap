@@ -4,7 +4,7 @@ import {
   type AiCourse,
 } from '../lib/ai';
 import { queryClient } from '../stores/query-client';
-import { getAiCourseLimitOptions } from '../queries/ai-course';
+import { aiLimitOptions } from '../queries/ai-course';
 import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
 
 type GenerateCourseOptions = {
@@ -157,7 +157,7 @@ export async function generateCourse(options: GenerateCourseOptions) {
           .replace(CREATOR_ID_REGEX, '');
 
         onLoadingChange?.(false);
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
       },
     });
   } catch (error: any) {

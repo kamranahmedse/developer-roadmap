@@ -3,6 +3,7 @@ import { BookOpen, Loader2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
 import {
+  aiLimitOptions,
   listUserAiCoursesOptions,
   type ListUserAiCoursesQuery,
 } from '../../queries/ai-course';
@@ -14,6 +15,8 @@ import { AICourseCard } from './AICourseCard';
 import { AICourseSearch } from './AICourseSearch';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { useIsPaidUser } from '../../queries/billing';
+import { AIUsageWarning } from '../AIUsageWarning/AIUsageWarning';
 
 export function UserCoursesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -24,6 +27,14 @@ export function UserCoursesList() {
     currPage: '1',
     query: '',
   });
+
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const selectedLimit = limits?.course;
 
   const { data: userAiCourses, isFetching: isUserAiCoursesLoading } = useQuery(
     listUserAiCoursesOptions(pageState),
@@ -59,7 +70,11 @@ export function UserCoursesList() {
   }, [pageState]);
 
   const isUserAuthenticated = isLoggedIn();
-  const isAnyLoading = isUserAiCoursesLoading || isInitialLoading;
+  const isAnyLoading =
+    isUserAiCoursesLoading ||
+    isInitialLoading ||
+    isPaidUserLoading ||
+    isLimitLoading;
 
   return (
     <>
@@ -88,16 +103,23 @@ export function UserCoursesList() {
 
       {!isAnyLoading && (
         <>
-          <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated
-              ? `You have generated ${userAiCourses?.totalCount} courses so far.`
-              : 'Sign up or login to generate your first course. Takes 2s to do so.'}
-          </p>
+          <AIUsageWarning
+            type="course"
+            totalCount={userAiCourses?.totalCount}
+            isPaidUser={isPaidUser}
+            usedCount={selectedLimit?.used}
+            limitCount={selectedLimit?.limit}
+            onUpgrade={() => setShowUpgradePopup(true)}
+          />
 
           {isUserAuthenticated && !isAnyLoading && courses.length > 0 && (
-            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
               {courses.map((course) => (
-                <AICourseCard variant="column" key={course._id} course={course} />
+                <AICourseCard
+                  variant="column"
+                  key={course._id}
+                  course={course}
+                />
               ))}
 
               <Pagination

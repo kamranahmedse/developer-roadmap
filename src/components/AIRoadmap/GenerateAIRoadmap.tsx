@@ -7,6 +7,10 @@ import type { QuestionAnswerChatMessage } from '../ContentGenerator/QuestionAnsw
 import { getQuestionAnswerChatMessages } from '../../lib/ai-questions';
 import { aiRoadmapOptions, generateAIRoadmap } from '../../queries/ai-roadmap';
 import { AIRoadmapContent } from './AIRoadmapContent';
+import { useIsPaidUser } from '../../queries/billing';
+import { useQuery } from '@tanstack/react-query';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type GenerateAIRoadmapProps = {
   onRoadmapSlugChange?: (roadmapSlug: string) => void;
@@ -18,12 +22,36 @@ export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [isStreaming, setIsStreaming] = useState(false);
   const [error, setError] = useState('');
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 
   const [svgHtml, setSvgHtml] = useState('');
   const [content, setContent] = useState('');
   const svgRef = useRef<string | null>(null);
 
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const isLimitDataLoading = isPaidUserLoading || isLimitLoading;
+
   useEffect(() => {
+    if (isLimitDataLoading) {
+      return;
+    }
+
+    if (
+      !isPaidUser &&
+      limits &&
+      limits?.roadmap?.used >= limits?.roadmap?.limit
+    ) {
+      setError('You have reached the limit for this format');
+      setIsLoading(false);
+      setShowUpgradeModal(true);
+      return;
+    }
+
     const params = getUrlParams();
     const paramsTerm = params?.term;
     const paramsSrc = params?.src || 'search';
@@ -42,7 +70,7 @@ export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
       src: paramsSrc,
       questionAndAnswers,
     });
-  }, []);
+  }, [isLimitDataLoading, isPaidUser]);
 
   const handleGenerateDocument = async (options: {
     term: string;
@@ -99,17 +127,39 @@ export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
     });
   };
 
+  const upgradeModal = showUpgradeModal ? (
+    <UpgradeAccountModal
+      onClose={() => {
+        window.location.href = '/ai';
+      }}
+    />
+  ) : null;
+
   if (error) {
-    return <div className="text-red-500">{error}</div>;
+    return (
+      <>
+        {upgradeModal}
+        <div className="text-red-500">{error}</div>
+      </>
+    );
   }
 
   if (isLoading) {
     return (
-      <div className="flex h-full w-full items-center justify-center">
-        <LoadingChip message="Please wait..." />
-      </div>
+      <>
+        {upgradeModal}
+        <div className="flex h-full w-full items-center justify-center">
+          <LoadingChip message="Please wait..." />
+        </div>
+      </>
     );
   }
 
-  return <AIRoadmapContent isLoading={isLoading} svgHtml={svgHtml} />;
+  return (
+    <>
+      {upgradeModal}
+
+      <AIRoadmapContent isLoading={isLoading} svgHtml={svgHtml} />
+    </>
+  );
 }

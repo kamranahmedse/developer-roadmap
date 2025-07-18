@@ -14,7 +14,7 @@ import { useIsPaidUser } from '../../queries/billing';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AITutorLogo } from '../ReactIcons/AITutorLogo';
 import { queryClient } from '../../stores/query-client';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { useQuery } from '@tanstack/react-query';
 import { getPercentage } from '../../lib/number';
 import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
@@ -85,7 +85,7 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
   const { data: limits, isLoading: isLimitsLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
 
