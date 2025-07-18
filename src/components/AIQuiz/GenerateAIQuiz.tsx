@@ -12,6 +12,10 @@ import {
 import { queryClient } from '../../stores/query-client';
 import { AIQuizContent } from './AIQuizContent';
 import { AlertCircleIcon } from 'lucide-react';
+import { useIsPaidUser } from '../../queries/billing';
+import { useQuery } from '@tanstack/react-query';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type GenerateAIQuizProps = {
   onQuizSlugChange?: (quizSlug: string) => void;
@@ -27,7 +31,27 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const questionsRef = useRef<QuizQuestion[]>([]);
 
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const isLimitDataLoading = isPaidUserLoading || isLimitLoading;
+
   useEffect(() => {
+    if (isLimitDataLoading) {
+      return;
+    }
+
+    if (!isPaidUser && limits && limits?.quiz?.used >= limits?.quiz?.limit) {
+      setError('You have reached the limit for this format');
+      setIsLoading(false);
+      setShowUpgradeModal(true);
+      return;
+    }
+
     const params = getUrlParams();
     const paramsTerm = params?.term;
     const paramsFormat = params?.format;
@@ -48,7 +72,7 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
       src: paramsSrc,
       questionAndAnswers,
     });
-  }, []);
+  }, [isLimitDataLoading, isPaidUser]);
 
   const handleGenerateQuiz = async (options: {
     term: string;
@@ -121,5 +145,17 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
     );
   }
 
-  return <AIQuizContent isStreaming={isStreaming} questions={questions} />;
+  return (
+    <>
+      {showUpgradeModal && (
+        <UpgradeAccountModal
+          onClose={() => {
+            window.location.href = '/ai/quiz';
+          }}
+        />
+      )}
+
+      <AIQuizContent isStreaming={isStreaming} questions={questions} />
+    </>
+  );
 }
