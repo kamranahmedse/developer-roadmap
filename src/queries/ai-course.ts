@@ -79,6 +79,8 @@ export function aiLimitOptions() {
       return httpGet<GetAICourseLimitResponse>(`/v1-get-ai-course-limit`);
     },
     enabled: !!isLoggedIn(),
+    retryOnMount: false,
+    refetchOnMount: false,
   });
 }
 

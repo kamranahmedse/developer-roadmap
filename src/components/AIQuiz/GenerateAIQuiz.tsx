@@ -126,35 +126,42 @@ export function GenerateAIQuiz(props: GenerateAIQuizProps) {
     });
   };
 
+  const upgradeModal = showUpgradeModal ? (
+    <UpgradeAccountModal
+      onClose={() => {
+        window.location.href = '/ai/quiz';
+      }}
+    />
+  ) : null;
+
   if (error) {
     return (
-      <div className="absolute inset-0 z-20 flex h-full flex-col items-center justify-center bg-white">
-        <div className="flex flex-col items-center justify-center gap-2">
-          <AlertCircleIcon className="size-10 text-gray-500" />
-          <p className="text-center">{error}</p>
+      <>
+        {upgradeModal}
+        <div className="absolute inset-0 z-20 flex h-full flex-col items-center justify-center bg-white">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <AlertCircleIcon className="size-10 text-gray-500" />
+            <p className="text-center">{error}</p>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 
   if (isLoading) {
     return (
-      <div className="flex h-full w-full items-center justify-center">
-        <LoadingChip message="Please wait..." />
-      </div>
+      <>
+        {upgradeModal}
+        <div className="flex h-full w-full items-center justify-center">
+          <LoadingChip message="Please wait..." />
+        </div>
+      </>
     );
   }
 
   return (
     <>
-      {showUpgradeModal && (
-        <UpgradeAccountModal
-          onClose={() => {
-            window.location.href = '/ai/quiz';
-          }}
-        />
-      )}
-
+      {upgradeModal}
       <AIQuizContent isStreaming={isStreaming} questions={questions} />
     </>
   );

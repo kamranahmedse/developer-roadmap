@@ -127,27 +127,37 @@ export function GenerateAIRoadmap(props: GenerateAIRoadmapProps) {
     });
   };
 
+  const upgradeModal = showUpgradeModal ? (
+    <UpgradeAccountModal
+      onClose={() => {
+        window.location.href = '/ai';
+      }}
+    />
+  ) : null;
+
   if (error) {
-    return <div className="text-red-500">{error}</div>;
+    return (
+      <>
+        {upgradeModal}
+        <div className="text-red-500">{error}</div>
+      </>
+    );
   }
 
   if (isLoading) {
     return (
-      <div className="flex h-full w-full items-center justify-center">
-        <LoadingChip message="Please wait..." />
-      </div>
+      <>
+        {upgradeModal}
+        <div className="flex h-full w-full items-center justify-center">
+          <LoadingChip message="Please wait..." />
+        </div>
+      </>
     );
   }
 
   return (
     <>
-      {showUpgradeModal && (
-        <UpgradeAccountModal
-          onClose={() => {
-            window.location.href = '/ai';
-          }}
-        />
-      )}
+      {upgradeModal}
 
       <AIRoadmapContent isLoading={isLoading} svgHtml={svgHtml} />
     </>
