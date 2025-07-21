@@ -1,49 +1,64 @@
 import {
-    Brain,
-    Bot,
-    Book,
-    Star,
-    Rocket,
-    CheckCircle2,
-    Zap,
-    Clock,
-    Crown,
-    Users2,
-    Wand2,
-    Play,
-    GitPullRequest,
+  Brain,
+  Bot,
+  Book,
+  Star,
+  CheckCircle2,
+  Zap,
+  Clock,
+  Users2,
+  Wand2,
+  Play,
+  GitPullRequest,
+  Rocket,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
+import { useState } from 'react';
+import { VideoModal } from '../VideoModal';
 
 interface FeatureCardProps {
   title: string;
   description: string;
   Icon: LucideIcon;
   duration?: string;
+  videoId: string;
+  thumbnail: string;
+  onClick: () => void;
 }
 
-function FeatureCard({
-  title,
-  description,
-  Icon,
-  duration = '2:30',
-}: FeatureCardProps) {
+function FeatureCard(props: FeatureCardProps) {
+  const {
+    title,
+    description,
+    Icon,
+    duration = '2:30',
+    videoId,
+    thumbnail,
+    onClick,
+  } = props;
+
   return (
-    <div className="rounded-lg border border-slate-700 bg-slate-800/50 p-8 transition-colors hover:border-blue-400">
-      <div className="group relative mb-6 aspect-video w-full overflow-hidden rounded-lg bg-slate-900/50">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
-            <Play className="h-6 w-6 text-white" strokeWidth={2} />
-          </div>
-        </div>
-        <div className="absolute right-2 bottom-2 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
-          {duration}
-        </div>
-      </div>
-      <h3 className="mb-2 text-lg font-bold text-white">{title}</h3>
-      <p className="leading-relaxed text-slate-400">{description}</p>
-    </div>
+    <button
+      onClick={onClick}
+      className="group relative overflow-hidden rounded-lg border border-slate-700 bg-[#151F33] py-4 hover:border-blue-400"
+    >
+      <span className="group relative block aspect-video w-full cursor-pointer overflow-hidden rounded-lg bg-slate-900/50">
+        <img
+          src={thumbnail}
+          alt={title}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      </span>
+      <span className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100">
+        <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
+          <Play className="h-6 w-6 text-white" strokeWidth={2} />
+        </span>
+      </span>
+      <span className="absolute right-2 bottom-2 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
+        {duration}
+      </span>
+    </button>
   );
 }
 
@@ -121,6 +136,79 @@ function CredibilityItem(props: CredibilityItemProps) {
 }
 
 export function PremiumPage() {
+  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+
+  const features = [
+    {
+      icon: CheckCircle2,
+      title: 'Chat with Roadmaps',
+      description:
+        "Chat popup on every roadmap page let's you ask questions and get answers instantly",
+      videoId: 'fq0UgNcj3Ek',
+      thumbnail: 'https://assets.roadmap.sh/guest/chat-with-roadmaps-ew2l9.png',
+      duration: '2:17',
+    },
+    {
+      icon: Bot,
+      title: 'Unlimited AI Courses',
+      description:
+        'No more paying for expensive courses, use the course creator to create unlimited courses',
+      videoId: 'uCcQNhdVUVQ',
+      thumbnail: 'https://assets.roadmap.sh/guest/ai-courses-m07ra.png',
+      duration: '3:07',
+    },
+    {
+      icon: Brain,
+      title: 'In-depth Guides',
+      description:
+        'Create in-depth learning guides tailored to your needs using AI',
+      videoId: '5kwYjCg2Lu4',
+      thumbnail: 'https://assets.roadmap.sh/guest/ai-guides-s4bjj.png',
+      duration: '1:33',
+    },
+    {
+      icon: Rocket,
+      title: 'AI as Learning Companion',
+      description: 'Learn even faster and perform actions on roadmaps using AI',
+      videoId: 'Jso_HRviEOE',
+      thumbnail: 'https://assets.roadmap.sh/guest/roadmap-ai-tools-adhqq.png',
+      duration: '2:45',
+      startTime: '18',
+    },
+    {
+      icon: Wand2,
+      title: 'Your Personal Coach',
+      description:
+        'Get personalized career advice, roadmap suggestions and more to accelerate your growth',
+      videoId: '77VwAeFmoIw',
+      thumbnail: 'https://assets.roadmap.sh/guest/career-guidance-t2mpu.png',
+      duration: '3:45',
+      startTime: '4',
+    },
+    {
+      icon: Book,
+      title: 'Learn Roadmap Topics',
+      description:
+        'AI Tutor inside roadmap nodes can help you learn things without leaving the roadmap',
+      videoId: '0jZ1Lse1Y3E',
+      thumbnail: 'https://assets.roadmap.sh/guest/smarter-roadmaps-f46ku.png',
+      duration: '3:11',
+    },
+    {
+      icon: Book,
+      title: 'Test Yourself',
+      description:
+        'Use AI to test your knowledge and prepare yourself for interviews',
+      videoId: 'ScruGC8uzjo',
+      thumbnail: 'https://assets.roadmap.sh/guest/test-yourself-uwzqo.png',
+      duration: '2:15',
+    },
+  ];
+
+  const activeVideoStartTime =
+    features.find((feature) => feature.videoId === activeVideoId)?.startTime ||
+    '0';
+
   const handleUpgrade = () => {
     alert('Upgrade functionality coming soon!');
   };
@@ -170,96 +258,26 @@ export function PremiumPage() {
         {/* Stats Section */}
         <div className="mb-20 flex flex-wrap items-center justify-center gap-x-10 gap-y-8">
           <StatsItem icon={Users2} text="+100K Learners" />
-          <StatsItem icon={Bot} text="+135K Roadmaps" />
-          <StatsItem icon={Book} text="+90K Courses" />
+          <StatsItem icon={Bot} text="+160K Roadmaps" />
+          <StatsItem icon={Book} text="+150K Courses" />
           <StatsItem icon={Wand2} text="+1M AI Chats" />
-        </div>
-
-        {/* Testimonials */}
-        <div className="-mx-4 mb-20 md:-mx-8 lg:-mx-16 xl:-mx-68">
-          <h2 className="mb-12 text-center text-3xl font-bold text-white">
-            What others are saying
-          </h2>
-          <div className="grid gap-6 px-4 md:grid-cols-4 md:px-8 lg:px-16">
-            <Testimonial
-              name="Gourav Khunger"
-              role="Full Stack Developer"
-              content="The AI tutor is absolutely brilliant! It's like having a senior developer available 24/7 to answer my questions."
-            />
-            <Testimonial
-              name="Meabed"
-              role="Tech Lead"
-              content="The personalized learning paths and premium resources have helped my entire team stay up-to-date with the latest tech."
-            />
-            <Testimonial
-              name="Mohsin Aheer"
-              role="Software Engineer"
-              content="The interactive exercises and real-world scenarios have significantly improved my problem-solving skills."
-            />
-            <Testimonial
-              name="Sarah Chen"
-              role="Frontend Developer"
-              content="The AI-powered code reviews have been invaluable. I've learned so many best practices and modern patterns."
-            />
-            <Testimonial
-              name="Alex Rodriguez"
-              role="DevOps Engineer"
-              content="Premium resources helped me master cloud architecture. The roadmaps are incredibly detailed and practical."
-            />
-            <Testimonial
-              name="Priya Sharma"
-              role="Backend Developer"
-              content="Worth every penny! The AI assistant helped me solve complex problems and understand advanced concepts quickly."
-            />
-            <Testimonial
-              name="James Wilson"
-              role="Mobile Developer"
-              content="The cross-platform development guides are exceptional. Helped me transition from native to React Native seamlessly."
-            />
-            <Testimonial
-              name="Emma Thompson"
-              role="UI/UX Designer"
-              content="As a designer learning to code, the visual learning paths and interactive tutorials made the journey much easier."
-            />
-          </div>
         </div>
 
         {/* Features Grid */}
         <div className="mb-20">
-          <h2 className="mb-12 text-center text-3xl font-bold text-white">
-            Everything You Need to Succeed
-          </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <FeatureCard
-              Icon={Brain}
-              title="AI Learning Assistant"
-              description="Get instant answers and personalized guidance from our advanced AI tutor, available 24/7."
-            />
-            <FeatureCard
-              Icon={Bot}
-              title="Custom Learning Paths"
-              description="Follow AI-generated roadmaps tailored to your career goals and current skill level."
-            />
-            <FeatureCard
-              Icon={Crown}
-              title="Premium Resources"
-              description="Access exclusive learning materials, guides, and best practices curated by experts."
-            />
-            <FeatureCard
-              Icon={Clock}
-              title="Time-Saving Tools"
-              description="Save hours with AI-generated summaries and quick reference guides."
-            />
-            <FeatureCard
-              Icon={Book}
-              title="Interactive Exercises"
-              description="Practice with real-world scenarios and get instant feedback on your solutions."
-            />
-            <FeatureCard
-              Icon={Rocket}
-              title="Career Acceleration"
-              description="Get guidance on industry best practices and trending technologies."
-            />
+            {features.map((feature) => (
+              <FeatureCard
+                key={feature.videoId}
+                Icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+                videoId={feature.videoId}
+                thumbnail={feature.thumbnail}
+                duration={feature.duration}
+                onClick={() => setActiveVideoId(feature.videoId)}
+              />
+            ))}
           </div>
         </div>
 
@@ -415,6 +433,14 @@ export function PremiumPage() {
           </a>
         </div>
       </div>
+
+      {activeVideoId && (
+        <VideoModal
+          videoId={activeVideoId}
+          startTime={activeVideoStartTime}
+          onClose={() => setActiveVideoId(null)}
+        />
+      )}
     </div>
   );
 }
