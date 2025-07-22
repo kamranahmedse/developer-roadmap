@@ -1,27 +1,29 @@
+import type { LucideIcon } from 'lucide-react';
 import {
-  Bot,
   Book,
-  Star,
+  Bot,
   CheckCircle2,
-  Zap,
   Clock,
+  GitPullRequest,
+  Lock,
+  Play,
+  Star,
   Users2,
   Wand2,
-  Play,
-  GitPullRequest,
+  Zap,
 } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
-import { cn } from '../../lib/classname';
 import { useState } from 'react';
+import { cn } from '../../lib/classname';
 import { VideoModal } from '../VideoModal';
 
 interface FeatureCardProps {
   title: string;
   description: string;
   duration?: string;
-  videoId: string;
-  thumbnail: string;
-  onClick: () => void;
+  videoId?: string;
+  thumbnail?: string;
+  onClick?: () => void;
+  isComingSoon?: boolean;
 }
 
 function FeatureCard(props: FeatureCardProps) {
@@ -32,7 +34,26 @@ function FeatureCard(props: FeatureCardProps) {
     videoId,
     thumbnail,
     onClick,
+    isComingSoon = false,
   } = props;
+
+  if (isComingSoon) {
+    return (
+      <div className="group relative overflow-hidden rounded-lg border border-dashed border-slate-600/50 bg-slate-800/30 p-4 text-left opacity-90">
+        <div className="relative block aspect-video w-full overflow-hidden rounded-lg bg-gradient-to-br from-indigo-900/20 to-purple-900/20">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500/20 to-purple-500/20 backdrop-blur-sm">
+              <Lock className="h-6 w-6 text-indigo-400/70" strokeWidth={1.5} />
+            </div>
+          </div>
+        </div>
+        <div className="mt-4">
+          <h3 className="mb-1 text-sm font-medium text-slate-100">{title}</h3>
+          <p className="text-xs leading-relaxed text-slate-500">{description}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <button
@@ -205,6 +226,12 @@ export function PremiumPage() {
         'https://assets.roadmap.sh/guest/ai-based-roadmap-editor-ochm8.png',
       duration: '1:30',
     },
+    {
+      title: 'Early Access to New Features',
+      description:
+        'We have more amazing features coming soon! Be the first to try them out!',
+      isComingSoon: true,
+    },
   ];
 
   const activeVideoStartTime =
@@ -273,15 +300,16 @@ export function PremiumPage() {
             Click any card below to watch a quick demo of our AI features
           </p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature) => (
+            {features.map((feature, index) => (
               <FeatureCard
-                key={feature.videoId}
+                key={feature.videoId || `coming-soon-${index}`}
                 title={feature.title}
                 description={feature.description}
                 videoId={feature.videoId}
                 thumbnail={feature.thumbnail}
                 duration={feature.duration}
-                onClick={() => setActiveVideoId(feature.videoId)}
+                isComingSoon={feature.isComingSoon}
+                onClick={feature.videoId ? () => setActiveVideoId(feature.videoId) : undefined}
               />
             ))}
           </div>
