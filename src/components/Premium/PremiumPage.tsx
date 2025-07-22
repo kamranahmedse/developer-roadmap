@@ -9,11 +9,12 @@ import {
   Zap,
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { useMutation } from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 import { useToast } from '../../hooks/use-toast';
 import { httpPost } from '../../lib/query-http';
 import {
   USER_SUBSCRIPTION_PLAN_PRICES,
+  billingDetailsOptions,
   type AllowedSubscriptionInterval,
 } from '../../queries/billing';
 import { queryClient } from '../../stores/query-client';
@@ -24,11 +25,16 @@ import { StatsItem } from './StatsItem';
 import { features, paidFeaturesList } from './constants';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { UpdatePlanConfirmation } from '../Billing/UpdatePlanConfirmation';
 
 export function PremiumPage() {
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
   const [selectedPlan, setSelectedPlan] =
     useState<AllowedSubscriptionInterval | null>(null);
+
+  // State for plan switching confirmation modal
+  const [switchPlanDetails, setSwitchPlanDetails] =
+    useState<(typeof USER_SUBSCRIPTION_PLAN_PRICES)[number] | null>(null);
 
   const toast = useToast();
 
@@ -73,6 +79,20 @@ export function PremiumPage() {
     (p) => p.interval === 'year',
   );
 
+  const { data: billingDetails } = useQuery(
+    billingDetailsOptions(),
+    queryClient,
+  );
+
+  const isSubscriptionCanceled = ['canceled', 'incomplete_expired'].includes(
+    billingDetails?.status || '',
+  );
+  const currentPriceId = isSubscriptionCanceled ? null : billingDetails?.priceId;
+
+  const currentPlan = USER_SUBSCRIPTION_PLAN_PRICES.find(
+    (plan) => plan.priceId === currentPriceId,
+  );
+
   const activeVideoStartTime =
     features.find((feature) => feature.videoId === activeVideoId)?.startTime ||
     '0';
@@ -88,6 +108,12 @@ export function PremiumPage() {
     }
 
     setSelectedPlan(plan.interval);
+
+    // If user already has an active subscription and is selecting a different plan, initiate switch flow
+    if (currentPriceId && plan.priceId !== currentPriceId) {
+      setSwitchPlanDetails(plan);
+      return;
+    }
 
     const currentUrlPath = window.location.pathname;
     const encodedCurrentUrlPath = encodeURIComponent(currentUrlPath);
@@ -219,14 +245,24 @@ export function PremiumPage() {
               </div>
               <button
                 onClick={() => handleUpgrade(monthlyPlan!)}
-                disabled={isCreatingCheckoutSession}
-                className="mb-8 w-full rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
+                disabled={
+                  isCreatingCheckoutSession || currentPlan?.interval === 'month'
+                }
+                className={`mb-8 w-full rounded-lg px-6 py-3 font-medium transition-colors disabled:opacity-50  ${
+                  currentPlan?.interval === 'month'
+                    ? 'bg-gray-800 text-white cursor-not-allowed'
+                    : 'bg-blue-600 text-white hover:bg-blue-700'
+                }`}
               >
                 {isCreatingCheckoutSession && selectedPlan === 'month' ? (
                   <span className="flex items-center justify-center gap-2">
                     <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent"></span>
                     Processing...
                   </span>
+                ) : currentPlan?.interval === 'month' ? (
+                  'Current Plan'
+                ) : currentPlan ? (
+                  'Switch to Monthly Plan'
                 ) : (
                   'Start Monthly Plan'
                 )}
@@ -262,14 +298,24 @@ export function PremiumPage() {
               </div>
               <button
                 onClick={() => handleUpgrade(yearlyPlan!)}
-                disabled={isCreatingCheckoutSession}
-                className="mb-8 w-full rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
+                disabled={
+                  isCreatingCheckoutSession || currentPlan?.interval === 'year'
+                }
+                className={`mb-8 w-full rounded-lg px-6 py-3 font-medium transition-colors disabled:opacity-50  ${
+                  currentPlan?.interval === 'year'
+                    ? 'bg-green-600 text-white cursor-not-allowed'
+                    : 'bg-blue-600 text-white hover:bg-blue-700'
+                }`}
               >
                 {isCreatingCheckoutSession && selectedPlan === 'year' ? (
                   <span className="flex items-center justify-center gap-2">
                     <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent"></span>
                     Processing...
                   </span>
+                ) : currentPlan?.interval === 'year' ? (
+                  'Current Plan'
+                ) : currentPlan ? (
+                  'Switch to Yearly Plan'
                 ) : (
                   'Start Yearly Plan'
                 )}
@@ -289,27 +335,6 @@ export function PremiumPage() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-4 text-3xl font-bold text-white">
-            Not Ready to Commit Yet?
-          </h2>
-          <p className="mb-8 text-lg text-slate-400">
-            Try our AI features for free and experience the power of AI-assisted
-            learning before upgrading.
-          </p>
-          <a
-            href="/ai"
-            className="group inline-flex items-center gap-3 rounded-full bg-slate-800/50 px-6 py-3 text-blue-400 ring-1 ring-slate-700/50 transition-all hover:bg-slate-800 hover:text-blue-300 hover:ring-blue-400/50"
-          >
-            <Bot className="h-5 w-5 transition-transform group-hover:scale-110" />
-            <span className="text-lg font-medium">
-              Try AI Features for Free
-            </span>
-            <span className="transform transition-transform group-hover:translate-x-1">
-              →
-            </span>
-          </a>
-        </div>
       </div>
 
       {activeVideoId && (
@@ -317,6 +342,14 @@ export function PremiumPage() {
           videoId={activeVideoId}
           startTime={activeVideoStartTime}
           onClose={() => setActiveVideoId(null)}
+        />
+      )}
+
+      {switchPlanDetails && (
+        <UpdatePlanConfirmation
+          planDetails={switchPlanDetails}
+          onClose={() => setSwitchPlanDetails(null)}
+          onCancel={() => setSwitchPlanDetails(null)}
         />
       )}
     </div>
