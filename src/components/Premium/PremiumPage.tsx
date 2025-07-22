@@ -196,6 +196,15 @@ export function PremiumPage() {
       thumbnail: 'https://assets.roadmap.sh/guest/test-yourself-uwzqo.png',
       duration: '2:15',
     },
+    {
+      title: 'Powerful Roadmap Editor',
+      description:
+        'Create and edit roadmaps with ease using our powerful roadmap editor',
+      videoId: 'L2HZIHIgwOI',
+      thumbnail:
+        'https://assets.roadmap.sh/guest/ai-based-roadmap-editor-ochm8.png',
+      duration: '1:30',
+    },
   ];
 
   const activeVideoStartTime =
