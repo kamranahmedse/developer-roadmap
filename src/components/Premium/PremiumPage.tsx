@@ -1,5 +1,4 @@
 import {
-  Brain,
   Bot,
   Book,
   Star,
@@ -9,8 +8,7 @@ import {
   Users2,
   Wand2,
   Play,
-  GitPullRequest,
-  Rocket,
+  GitPullRequest
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
@@ -20,7 +18,6 @@ import { VideoModal } from '../VideoModal';
 interface FeatureCardProps {
   title: string;
   description: string;
-  Icon: LucideIcon;
   duration?: string;
   videoId: string;
   thumbnail: string;
@@ -31,7 +28,6 @@ function FeatureCard(props: FeatureCardProps) {
   const {
     title,
     description,
-    Icon,
     duration = '2:30',
     videoId,
     thumbnail,
@@ -41,7 +37,7 @@ function FeatureCard(props: FeatureCardProps) {
   return (
     <button
       onClick={onClick}
-      className="group relative overflow-hidden rounded-lg border border-slate-700 bg-[#151F33] py-4 hover:border-blue-400"
+      className="group relative overflow-hidden rounded-lg border border-slate-700 bg-[#151F33] p-4 text-left hover:border-blue-400"
     >
       <span className="group relative block aspect-video w-full cursor-pointer overflow-hidden rounded-lg bg-slate-900/50">
         <img
@@ -52,12 +48,16 @@ function FeatureCard(props: FeatureCardProps) {
       </span>
       <span className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100">
         <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
-          <Play className="h-6 w-6 text-white" strokeWidth={2} />
+          <Play className="h-6 w-6 fill-current text-white" strokeWidth={2} />
         </span>
       </span>
-      <span className="absolute right-2 bottom-2 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
+      <span className="absolute right-1 top-1 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
         {duration}
       </span>
+      <div className="mt-4">
+        <h3 className="font-medium text-white text-sm mb-1">{title}</h3>
+        <p className="text-xs text-slate-400 leading-relaxed">{description}</p>
+      </div>
     </button>
   );
 }
@@ -140,65 +140,58 @@ export function PremiumPage() {
 
   const features = [
     {
-      icon: CheckCircle2,
       title: 'Chat with Roadmaps',
       description:
-        "Chat popup on every roadmap page let's you ask questions and get answers instantly",
+        'Ask questions and get instant answers on any roadmap',
       videoId: 'fq0UgNcj3Ek',
       thumbnail: 'https://assets.roadmap.sh/guest/chat-with-roadmaps-ew2l9.png',
       duration: '2:17',
     },
     {
-      icon: Bot,
       title: 'Unlimited AI Courses',
       description:
-        'No more paying for expensive courses, use the course creator to create unlimited courses',
+        'Create unlimited AI-powered courses on any topic',
       videoId: 'uCcQNhdVUVQ',
       thumbnail: 'https://assets.roadmap.sh/guest/ai-courses-m07ra.png',
       duration: '3:07',
     },
     {
-      icon: Brain,
       title: 'In-depth Guides',
       description:
-        'Create in-depth learning guides tailored to your needs using AI',
+        'Generate personalized learning guides with AI',
       videoId: '5kwYjCg2Lu4',
       thumbnail: 'https://assets.roadmap.sh/guest/ai-guides-s4bjj.png',
       duration: '1:33',
     },
     {
-      icon: Rocket,
       title: 'AI as Learning Companion',
-      description: 'Learn even faster and perform actions on roadmaps using AI',
+      description: 'Use AI-powered learning companion to accelerate your roadmap progress',
       videoId: 'Jso_HRviEOE',
       thumbnail: 'https://assets.roadmap.sh/guest/roadmap-ai-tools-adhqq.png',
       duration: '2:45',
       startTime: '18',
     },
     {
-      icon: Wand2,
       title: 'Your Personal Coach',
       description:
-        'Get personalized career advice, roadmap suggestions and more to accelerate your growth',
+        'Get personalized career advice and growth recommendations',
       videoId: '77VwAeFmoIw',
       thumbnail: 'https://assets.roadmap.sh/guest/career-guidance-t2mpu.png',
       duration: '3:45',
       startTime: '4',
     },
     {
-      icon: Book,
       title: 'Learn Roadmap Topics',
       description:
-        'AI Tutor inside roadmap nodes can help you learn things without leaving the roadmap',
+        'Learn topics directly within roadmap nodes using AI tutoring',
       videoId: '0jZ1Lse1Y3E',
       thumbnail: 'https://assets.roadmap.sh/guest/smarter-roadmaps-f46ku.png',
       duration: '3:11',
     },
     {
-      icon: Book,
       title: 'Test Yourself',
       description:
-        'Use AI to test your knowledge and prepare yourself for interviews',
+        'Test your knowledge and prepare for interviews',
       videoId: 'ScruGC8uzjo',
       thumbnail: 'https://assets.roadmap.sh/guest/test-yourself-uwzqo.png',
       duration: '2:15',
@@ -269,7 +262,6 @@ export function PremiumPage() {
             {features.map((feature) => (
               <FeatureCard
                 key={feature.videoId}
-                Icon={feature.icon}
                 title={feature.title}
                 description={feature.description}
                 videoId={feature.videoId}
