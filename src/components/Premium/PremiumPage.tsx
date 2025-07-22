@@ -6,6 +6,7 @@ import {
   Clock,
   GitPullRequest,
   Lock,
+  PartyPopper,
   Play,
   Star,
   Users2,
@@ -49,7 +50,9 @@ function FeatureCard(props: FeatureCardProps) {
         </div>
         <div className="mt-4">
           <h3 className="mb-1 text-sm font-medium text-slate-100">{title}</h3>
-          <p className="text-xs leading-relaxed text-slate-500">{description}</p>
+          <p className="text-xs leading-relaxed text-slate-500">
+            {description}
+          </p>
         </div>
       </div>
     );
@@ -297,7 +300,12 @@ export function PremiumPage() {
         {/* Features Grid */}
         <div className="mb-20">
           <p className="mb-8 text-center text-sm text-slate-400">
-            Click any card below to watch a quick demo of our AI features
+            <PartyPopper className="h-4 w-4 inline-block text-blue-400 mr-2 relative -top-0.5" />
+            Paid users{' '}
+            <span className="font-bold text-blue-400">
+              get unlimited access
+            </span>{' '}
+            to all the features below.
           </p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, index) => (
@@ -309,7 +317,11 @@ export function PremiumPage() {
                 thumbnail={feature.thumbnail}
                 duration={feature.duration}
                 isComingSoon={feature.isComingSoon}
-                onClick={feature.videoId ? () => setActiveVideoId(feature.videoId) : undefined}
+                onClick={
+                  feature.videoId
+                    ? () => setActiveVideoId(feature.videoId)
+                    : undefined
+                }
               />
             ))}
           </div>
