@@ -8,7 +8,7 @@ import {
   Users2,
   Wand2,
   Play,
-  GitPullRequest
+  GitPullRequest,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { cn } from '../../lib/classname';
@@ -51,12 +51,12 @@ function FeatureCard(props: FeatureCardProps) {
           <Play className="h-6 w-6 fill-current text-white" strokeWidth={2} />
         </span>
       </span>
-      <span className="absolute right-1 top-1 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
+      <span className="absolute top-1 right-1 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
         {duration}
       </span>
       <div className="mt-4">
-        <h3 className="font-medium text-white text-sm mb-1">{title}</h3>
-        <p className="text-xs text-slate-400 leading-relaxed">{description}</p>
+        <h3 className="mb-1 text-sm font-medium text-white">{title}</h3>
+        <p className="text-xs leading-relaxed text-slate-400">{description}</p>
       </div>
     </button>
   );
@@ -165,7 +165,8 @@ export function PremiumPage() {
     },
     {
       title: 'AI as Learning Companion',
-      description: 'Use AI-powered learning companion to accelerate your roadmap progress',
+      description:
+        'Use AI-powered learning companion to accelerate your roadmap progress',
       videoId: 'Jso_HRviEOE',
       thumbnail: 'https://assets.roadmap.sh/guest/roadmap-ai-tools-adhqq.png',
       duration: '2:45',
@@ -190,8 +191,7 @@ export function PremiumPage() {
     },
     {
       title: 'Test Yourself',
-      description:
-        'Test your knowledge and prepare for interviews with AI',
+      description: 'Test your knowledge and prepare for interviews with AI',
       videoId: 'ScruGC8uzjo',
       thumbnail: 'https://assets.roadmap.sh/guest/test-yourself-uwzqo.png',
       duration: '2:15',
@@ -225,20 +225,22 @@ export function PremiumPage() {
               Generate unlimited courses about any topic, get career guidance
               and instant answers from AI, test your skills and more
             </p>
-            <button
-              onClick={handleUpgrade}
-              className="group mx-auto block rounded-2xl bg-gradient-to-b from-indigo-600 to-indigo-700 px-8 py-4 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/25"
-            >
-              <div className="flex items-center justify-center gap-3 text-lg">
-                <span className="font-medium text-indigo-100">
-                  Upgrade for just
-                </span>
-                <span className="font-bold text-white">$10/month</span>
-                <span className="text-white transition-transform duration-200 group-hover:translate-x-1">
-                  →
-                </span>
-              </div>
-            </button>
+            <div className="flex justify-center">
+              <a
+                href="#pricing"
+                className="group mx-auto block rounded-2xl bg-gradient-to-b from-indigo-600 to-indigo-700 px-8 py-4 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/25"
+              >
+                <div className="flex items-center justify-center gap-3 text-lg">
+                  <span className="font-medium text-indigo-100">
+                    Upgrade for just
+                  </span>
+                  <span className="font-bold text-white">$10/month</span>
+                  <span className="text-white transition-transform duration-200 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
+              </a>
+            </div>
             <p className="mt-5 flex items-center justify-center gap-2 text-sm">
               <Clock className="h-3 w-3 text-white" />
               <span className="text-indigo-200">
@@ -277,7 +279,7 @@ export function PremiumPage() {
         </div>
 
         {/* Credibility Stats */}
-        <div className="mb-20">
+        <div className="mb-10">
           <div className="rounded-xl border border-slate-700 bg-slate-800/50 p-8 md:p-12">
             <div className="mb-8 md:mb-12">
               <h2 className="text-3xl font-bold text-white md:text-4xl">
@@ -322,7 +324,7 @@ export function PremiumPage() {
         </div>
 
         {/* Pricing Section */}
-        <div className="mb-20">
+        <div className="mb-20 pt-10" id="pricing">
           <h2 className="mb-12 text-center text-3xl font-bold text-white">
             Choose Your Plan
           </h2>
