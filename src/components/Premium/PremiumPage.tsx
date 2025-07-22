@@ -74,7 +74,6 @@ export function PremiumPage() {
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="mb-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-8 lg:mb-20">
           <StatsItem icon={Users2} text="+100K Learners" />
           <StatsItem icon={Bot} text="+160K Roadmaps" />
@@ -82,7 +81,6 @@ export function PremiumPage() {
           <StatsItem icon={Wand2} text="+1M AI Chats" />
         </div>
 
-        {/* Features Grid */}
         <div className="mb-10 lg:mb-20">
           <p className="mb-8 text-center text-sm text-slate-400">
             <PartyPopper className="relative -top-0.5 mr-2 inline-block h-4 w-4 text-blue-400" />
@@ -112,10 +110,8 @@ export function PremiumPage() {
           </div>
         </div>
 
-        {/* Credibility Stats */}
         <CredibilityStats />
 
-        {/* Pricing Section */}
         <div className="mb-20 pt-10" id="pricing">
           <h2 className="mb-6 text-center text-3xl font-bold text-white lg:mb-12">
             Choose Your Plan
@@ -188,7 +184,6 @@ export function PremiumPage() {
           </div>
         </div>
 
-        {/* Final CTA */}
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-4 text-3xl font-bold text-white">
             Not Ready to Commit Yet?

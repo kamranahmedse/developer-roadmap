@@ -6,6 +6,7 @@ excludedBySlug: '/sql/how-long-to-learn'
 seo:
   title: How Long Does It Take to Learn SQL? (An Expert's Take)
   description: How long does it take to learn SQL? A seasoned expert shares what to expect, from basics to job-ready skills.
+  ogImageUrl: https://assets.roadmap.sh/guest/how-long-does-it-take-to-learn-sql-4o4jz.jpg
 isNew: true
 type: 'textual'
 date: 2025-06-26
@@ -17,6 +18,8 @@ tags:
   - 'textual-guide'
   - 'guide-sitemap'
 ---
+
+![How Long Does It Take to Learn SQL? (An Expert's Take)](https://assets.roadmap.sh/guest/how-long-does-it-take-to-learn-sql-4o4jz.jpg)
 
 With steady practice, you can start grasping basic SQL concepts in just a few days, grow confident writing queries within a month, and reach proficiency in advanced SQL concepts in three to six months.
 
