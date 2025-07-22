@@ -142,7 +142,7 @@ export function PremiumPage() {
     {
       title: 'Chat with Roadmaps',
       description:
-        'Ask questions and get instant answers on any roadmap',
+        'Ask questions and get instant answers on any roadmap through AI',
       videoId: 'fq0UgNcj3Ek',
       thumbnail: 'https://assets.roadmap.sh/guest/chat-with-roadmaps-ew2l9.png',
       duration: '2:17',
@@ -150,7 +150,7 @@ export function PremiumPage() {
     {
       title: 'Unlimited AI Courses',
       description:
-        'Create unlimited AI-powered courses on any topic',
+        'No more paying for expensive courses, create unlimited courses with AI',
       videoId: 'uCcQNhdVUVQ',
       thumbnail: 'https://assets.roadmap.sh/guest/ai-courses-m07ra.png',
       duration: '3:07',
@@ -158,7 +158,7 @@ export function PremiumPage() {
     {
       title: 'In-depth Guides',
       description:
-        'Generate personalized learning guides with AI',
+        'Create unlimited personalized in-depth learning guides with AI',
       videoId: '5kwYjCg2Lu4',
       thumbnail: 'https://assets.roadmap.sh/guest/ai-guides-s4bjj.png',
       duration: '1:33',
@@ -174,7 +174,7 @@ export function PremiumPage() {
     {
       title: 'Your Personal Coach',
       description:
-        'Get personalized career advice and growth recommendations',
+        'Get career guidance, roadmap and personalized growth suggestions',
       videoId: '77VwAeFmoIw',
       thumbnail: 'https://assets.roadmap.sh/guest/career-guidance-t2mpu.png',
       duration: '3:45',
@@ -183,7 +183,7 @@ export function PremiumPage() {
     {
       title: 'Learn Roadmap Topics',
       description:
-        'Learn topics directly within roadmap nodes using AI tutoring',
+        'Learn roadmap topics directly from within the nodes without leaving the roadmap',
       videoId: '0jZ1Lse1Y3E',
       thumbnail: 'https://assets.roadmap.sh/guest/smarter-roadmaps-f46ku.png',
       duration: '3:11',
@@ -191,7 +191,7 @@ export function PremiumPage() {
     {
       title: 'Test Yourself',
       description:
-        'Test your knowledge and prepare for interviews',
+        'Test your knowledge and prepare for interviews with AI',
       videoId: 'ScruGC8uzjo',
       thumbnail: 'https://assets.roadmap.sh/guest/test-yourself-uwzqo.png',
       duration: '2:15',
@@ -258,6 +258,9 @@ export function PremiumPage() {
 
         {/* Features Grid */}
         <div className="mb-20">
+          <p className="mb-8 text-center text-sm text-slate-400">
+            Click any card below to watch a quick demo of our AI features
+          </p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
               <FeatureCard
