@@ -8,25 +8,114 @@ import {
   Wand2,
   Zap,
 } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useMutation } from '@tanstack/react-query';
+import { useToast } from '../../hooks/use-toast';
+import { httpPost } from '../../lib/query-http';
+import {
+  USER_SUBSCRIPTION_PLAN_PRICES,
+  type AllowedSubscriptionInterval,
+} from '../../queries/billing';
+import { queryClient } from '../../stores/query-client';
 import { VideoModal } from '../VideoModal';
 import { CredibilityStats } from './CredibilityStats';
 import { FeatureCard } from './FeatureCard';
 import { StatsItem } from './StatsItem';
 import { features, paidFeaturesList } from './constants';
-
-
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 export function PremiumPage() {
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+  const [selectedPlan, setSelectedPlan] =
+    useState<AllowedSubscriptionInterval | null>(null);
+
+  const toast = useToast();
+
+  useEffect(() => {
+    window?.fireEvent?.({
+      action: 'tutor_pricing',
+      category: 'ai_tutor',
+      label: 'Clicked Upgrade to Pro',
+    });
+  }, []);
+
+  const {
+    mutate: createCheckoutSession,
+    isPending: isCreatingCheckoutSession,
+  } = useMutation(
+    {
+      mutationFn: (body: {
+        priceId: string;
+        success?: string;
+        cancel?: string;
+      }) => {
+        return httpPost<{ checkoutUrl: string }>(
+          '/v1-create-subscription-checkout-session',
+          body,
+        );
+      },
+      onSuccess: (data) => {
+        window.location.href = data.checkoutUrl;
+      },
+      onError: (error: any) => {
+        console.error(error);
+        toast.error(error?.message || 'Failed to create checkout session');
+      },
+    },
+    queryClient,
+  );
+
+  const monthlyPlan = USER_SUBSCRIPTION_PLAN_PRICES.find(
+    (p) => p.interval === 'month',
+  );
+  const yearlyPlan = USER_SUBSCRIPTION_PLAN_PRICES.find(
+    (p) => p.interval === 'year',
+  );
 
   const activeVideoStartTime =
     features.find((feature) => feature.videoId === activeVideoId)?.startTime ||
     '0';
 
-  const handleUpgrade = () => {
-    alert('Upgrade functionality coming soon!');
-  };
+  function handleUpgrade(plan: (typeof USER_SUBSCRIPTION_PLAN_PRICES)[number]) {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
+    if (!plan) {
+      return;
+    }
+
+    setSelectedPlan(plan.interval);
+
+    const currentUrlPath = window.location.pathname;
+    const encodedCurrentUrlPath = encodeURIComponent(currentUrlPath);
+    const successPage = `/thank-you?next=${encodedCurrentUrlPath}&s=1`;
+
+    window?.fireEvent?.({
+      action: 'tutor_checkout',
+      category: 'ai_tutor',
+      label: 'Checkout Started',
+    });
+
+    createCheckoutSession(
+      {
+        priceId: plan.priceId,
+        success: successPage,
+        cancel: `${currentUrlPath}?s=0`,
+      },
+      {
+        onSuccess: () => {
+          window?.fireEvent?.({
+            action: `tutor_checkout_${plan.interval === 'month' ? 'mo' : 'an'}`,
+            category: 'ai_tutor',
+            label: `${plan.interval} Plan Checkout Started`,
+          });
+        },
+      },
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 to-black">
@@ -129,10 +218,18 @@ export function PremiumPage() {
                 </p>
               </div>
               <button
-                onClick={handleUpgrade}
-                className="mb-8 w-full rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700"
+                onClick={() => handleUpgrade(monthlyPlan!)}
+                disabled={isCreatingCheckoutSession}
+                className="mb-8 w-full rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
               >
-                Start Monthly Plan
+                {isCreatingCheckoutSession && selectedPlan === 'month' ? (
+                  <span className="flex items-center justify-center gap-2">
+                    <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent"></span>
+                    Processing...
+                  </span>
+                ) : (
+                  'Start Monthly Plan'
+                )}
               </button>
               <ul className="space-y-4 text-slate-300">
                 {paidFeaturesList.map((feature) => (
@@ -164,10 +261,18 @@ export function PremiumPage() {
                 </p>
               </div>
               <button
-                onClick={handleUpgrade}
-                className="mb-8 w-full rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700"
+                onClick={() => handleUpgrade(yearlyPlan!)}
+                disabled={isCreatingCheckoutSession}
+                className="mb-8 w-full rounded-lg bg-blue-600 px-6 py-3 font-medium text-white transition-colors hover:bg-blue-700 disabled:opacity-50"
               >
-                Start Yearly Plan
+                {isCreatingCheckoutSession && selectedPlan === 'year' ? (
+                  <span className="flex items-center justify-center gap-2">
+                    <span className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent"></span>
+                    Processing...
+                  </span>
+                ) : (
+                  'Start Yearly Plan'
+                )}
               </button>
               <ul className="space-y-4 text-slate-300">
                 {paidFeaturesList.map((feature) => (
