@@ -27,6 +27,54 @@ interface FeatureCardProps {
   isComingSoon?: boolean;
 }
 
+function CredibilityStats() {
+  return (
+    <div className="mb-10 hidden md:block">
+      <div className="rounded-xl border border-slate-700 bg-slate-800/50 p-8 md:p-12">
+        <div className="mb-8 md:mb-12">
+          <h2 className="text-3xl font-bold text-white md:text-4xl">
+            The Platform Developers Trust
+          </h2>
+          <p className="mt-2 text-lg text-slate-400">
+            Join millions of developers in their learning journey
+          </p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-4">
+          <CredibilityItem
+            icon={Star}
+            iconClassName="text-yellow-400 fill-current"
+            value="#6"
+            label="Most Starred Project"
+            subLabel="Among 200M+ Repositories"
+          />
+          <CredibilityItem
+            icon={Users2}
+            iconClassName="text-blue-400"
+            value="2.1M+"
+            label="Active Developers"
+            subLabel="Learning & Growing Daily"
+          />
+          <CredibilityItem
+            icon={Bot}
+            iconClassName="text-indigo-400"
+            value="37K+"
+            label="Discord Members"
+            subLabel="Active Community Support"
+          />
+          <CredibilityItem
+            icon={GitPullRequest}
+            iconClassName="text-purple-400"
+            value="1000+"
+            label="Contributors"
+            subLabel="Community Driven Project"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function FeatureCard(props: FeatureCardProps) {
   const {
     title,
@@ -248,8 +296,7 @@ export function PremiumPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 to-black">
       <div className="mx-auto max-w-4xl px-4 py-20">
-        {/* Hero Section */}
-        <div className="mx-auto mb-20 max-w-4xl">
+        <div className="mx-auto mb-10 max-w-4xl lg:mb-20">
           <div className="text-center">
             <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-slate-800/50 px-4 py-2 text-blue-400">
               <Zap className="h-4 w-4" />
@@ -257,7 +304,7 @@ export function PremiumPage() {
                 Unlock All Premium Features
               </span>
             </div>
-            <h1 className="mb-6 text-4xl font-bold text-white md:text-5xl">
+            <h1 className="mb-6 text-4xl font-bold text-balance text-white md:text-5xl">
               Learn Faster with AI
             </h1>
             <p className="mb-8 text-lg text-balance text-slate-400 md:text-xl">
@@ -269,7 +316,10 @@ export function PremiumPage() {
                 href="#pricing"
                 className="group mx-auto block rounded-2xl bg-gradient-to-b from-indigo-600 to-indigo-700 px-8 py-4 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/25"
               >
-                <div className="flex items-center justify-center gap-3 text-lg">
+                <span className="flex items-center justify-center gap-3 text-lg text-white sm:hidden">
+                  Upgrade now
+                </span>
+                <span className="hidden items-center justify-center gap-3 text-lg sm:flex">
                   <span className="font-medium text-indigo-100">
                     Upgrade for just
                   </span>
@@ -277,7 +327,7 @@ export function PremiumPage() {
                   <span className="text-white transition-transform duration-200 group-hover:translate-x-1">
                     →
                   </span>
-                </div>
+                </span>
               </a>
             </div>
             <p className="mt-5 flex items-center justify-center gap-2 text-sm">
@@ -290,7 +340,7 @@ export function PremiumPage() {
         </div>
 
         {/* Stats Section */}
-        <div className="mb-20 flex flex-wrap items-center justify-center gap-x-10 gap-y-8">
+        <div className="mb-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-8 lg:mb-20">
           <StatsItem icon={Users2} text="+100K Learners" />
           <StatsItem icon={Bot} text="+160K Roadmaps" />
           <StatsItem icon={Book} text="+150K Courses" />
@@ -298,16 +348,16 @@ export function PremiumPage() {
         </div>
 
         {/* Features Grid */}
-        <div className="mb-20">
+        <div className="mb-10 lg:mb-20">
           <p className="mb-8 text-center text-sm text-slate-400">
-            <PartyPopper className="h-4 w-4 inline-block text-blue-400 mr-2 relative -top-0.5" />
+            <PartyPopper className="relative -top-0.5 mr-2 inline-block h-4 w-4 text-blue-400" />
             Paid users{' '}
             <span className="font-bold text-blue-400">
               get unlimited access
             </span>{' '}
             to all the features below.
           </p>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
             {features.map((feature, index) => (
               <FeatureCard
                 key={feature.videoId || `coming-soon-${index}`}
@@ -328,53 +378,11 @@ export function PremiumPage() {
         </div>
 
         {/* Credibility Stats */}
-        <div className="mb-10">
-          <div className="rounded-xl border border-slate-700 bg-slate-800/50 p-8 md:p-12">
-            <div className="mb-8 md:mb-12">
-              <h2 className="text-3xl font-bold text-white md:text-4xl">
-                The Platform Developers Trust
-              </h2>
-              <p className="mt-2 text-lg text-slate-400">
-                Join millions of developers in their learning journey
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-4">
-              <CredibilityItem
-                icon={Star}
-                iconClassName="text-yellow-400 fill-current"
-                value="#6"
-                label="Most Starred Project"
-                subLabel="Among 200M+ Repositories"
-              />
-              <CredibilityItem
-                icon={Users2}
-                iconClassName="text-blue-400"
-                value="2.1M+"
-                label="Active Developers"
-                subLabel="Learning & Growing Daily"
-              />
-              <CredibilityItem
-                icon={Bot}
-                iconClassName="text-indigo-400"
-                value="37K+"
-                label="Discord Members"
-                subLabel="Active Community Support"
-              />
-              <CredibilityItem
-                icon={GitPullRequest}
-                iconClassName="text-purple-400"
-                value="1000+"
-                label="Contributors"
-                subLabel="Community Driven Project"
-              />
-            </div>
-          </div>
-        </div>
+        <CredibilityStats />
 
         {/* Pricing Section */}
         <div className="mb-20 pt-10" id="pricing">
-          <h2 className="mb-12 text-center text-3xl font-bold text-white">
+          <h2 className="mb-6 lg:mb-12 text-center text-3xl font-bold text-white">
             Choose Your Plan
           </h2>
           <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
@@ -383,7 +391,7 @@ export function PremiumPage() {
               <div className="mb-6">
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-bold text-white">$10</span>
-                  <span className="text-slate-400">/month</span>
+                  <span className="text-slate-400">/ month</span>
                 </div>
                 <p className="mt-2 text-slate-400">
                   Perfect for continuous learning
@@ -423,7 +431,7 @@ export function PremiumPage() {
               <div className="mb-6">
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-bold text-white">$100</span>
-                  <span className="text-slate-400">/year</span>
+                  <span className="text-slate-400">/ year</span>
                 </div>
                 <p className="mt-2 font-medium text-blue-400">
                   Save $20 (2 months free)
