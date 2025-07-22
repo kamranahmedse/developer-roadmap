@@ -29,16 +29,14 @@ import { AccountDropdown } from './AccountDropdown';
       <!-- Desktop navigation items -->
       <div class='hidden gap-5 sm:flex sm:items-center'>
         <NavigationDropdown client:load />
-        <a href='/get-started' class='text-gray-400 hover:text-white'>
-          Start Here
-        </a>
         <RoadmapDropdownMenu client:load />
         <AIDropdownMenu client:load />
         <a
-          href='/teams'
-          class='group relative hidden text-gray-400 hover:text-white xl:block'
+          href='/premium'
+          class='group relative hidden items-center gap-1.5 font-medium text-yellow-400 transition-all duration-200 hover:text-yellow-300 xl:flex'
         >
-          Teams
+          <Icon icon='bolt' />
+          Upgrade to Pro
         </a>
       </div>
     </div>
@@ -89,10 +87,7 @@ import { AccountDropdown } from './AccountDropdown';
           </a>
         </li>
         <li>
-          <a
-            href='/ai'
-            class='text-xl hover:text-blue-300 md:text-lg'
-          >
+          <a href='/ai' class='text-xl hover:text-blue-300 md:text-lg'>
             AI Tutor
           </a>
         </li>

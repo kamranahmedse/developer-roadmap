@@ -49,7 +49,7 @@ export function AIDropdownMenu() {
     <NavigationDropdownMenu
       links={links}
       trigger={
-        <span className="group relative mr-3 flex items-center gap-1 text-blue-300 hover:text-white">
+        <span className="group relative flex items-center gap-1 hover:text-white">
           AI Tutor
           <ChevronDown className="inline-block h-3 w-3" strokeWidth={4} />
         </span>
