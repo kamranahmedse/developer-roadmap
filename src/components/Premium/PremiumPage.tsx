@@ -1,289 +1,24 @@
-import type { LucideIcon } from 'lucide-react';
 import {
   Book,
   Bot,
-  CheckCircle2,
+  CheckCircle,
   Clock,
-  GitPullRequest,
-  Lock,
   PartyPopper,
-  Play,
-  Star,
   Users2,
   Wand2,
   Zap,
 } from 'lucide-react';
 import { useState } from 'react';
-import { cn } from '../../lib/classname';
 import { VideoModal } from '../VideoModal';
+import { CredibilityStats } from './CredibilityStats';
+import { FeatureCard } from './FeatureCard';
+import { StatsItem } from './StatsItem';
+import { features, paidFeaturesList } from './constants';
 
-interface FeatureCardProps {
-  title: string;
-  description: string;
-  duration?: string;
-  videoId?: string;
-  thumbnail?: string;
-  onClick?: () => void;
-  isComingSoon?: boolean;
-}
 
-function CredibilityStats() {
-  return (
-    <div className="mb-10 hidden md:block">
-      <div className="rounded-xl border border-slate-700 bg-slate-800/50 p-8 md:p-12">
-        <div className="mb-8 md:mb-12">
-          <h2 className="text-3xl font-bold text-white md:text-4xl">
-            The Platform Developers Trust
-          </h2>
-          <p className="mt-2 text-lg text-slate-400">
-            Join millions of developers in their learning journey
-          </p>
-        </div>
-
-        <div className="grid gap-8 md:grid-cols-4">
-          <CredibilityItem
-            icon={Star}
-            iconClassName="text-yellow-400 fill-current"
-            value="#6"
-            label="Most Starred Project"
-            subLabel="Among 200M+ Repositories"
-          />
-          <CredibilityItem
-            icon={Users2}
-            iconClassName="text-blue-400"
-            value="2.1M+"
-            label="Active Developers"
-            subLabel="Learning & Growing Daily"
-          />
-          <CredibilityItem
-            icon={Bot}
-            iconClassName="text-indigo-400"
-            value="37K+"
-            label="Discord Members"
-            subLabel="Active Community Support"
-          />
-          <CredibilityItem
-            icon={GitPullRequest}
-            iconClassName="text-purple-400"
-            value="1000+"
-            label="Contributors"
-            subLabel="Community Driven Project"
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function FeatureCard(props: FeatureCardProps) {
-  const {
-    title,
-    description,
-    duration = '2:30',
-    videoId,
-    thumbnail,
-    onClick,
-    isComingSoon = false,
-  } = props;
-
-  if (isComingSoon) {
-    return (
-      <div className="group relative overflow-hidden rounded-lg border border-dashed border-slate-600/50 bg-slate-800/30 p-4 text-left opacity-90">
-        <div className="relative block aspect-video w-full overflow-hidden rounded-lg bg-gradient-to-br from-indigo-900/20 to-purple-900/20">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500/20 to-purple-500/20 backdrop-blur-sm">
-              <Lock className="h-6 w-6 text-indigo-400/70" strokeWidth={1.5} />
-            </div>
-          </div>
-        </div>
-        <div className="mt-4">
-          <h3 className="mb-1 text-sm font-medium text-slate-100">{title}</h3>
-          <p className="text-xs leading-relaxed text-slate-500">
-            {description}
-          </p>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <button
-      onClick={onClick}
-      className="group relative overflow-hidden rounded-lg border border-slate-700 bg-[#151F33] p-4 text-left hover:border-blue-400"
-    >
-      <span className="group relative block aspect-video w-full cursor-pointer overflow-hidden rounded-lg bg-slate-900/50">
-        <img
-          src={thumbnail}
-          alt={title}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-      </span>
-      <span className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100">
-        <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
-          <Play className="h-6 w-6 fill-current text-white" strokeWidth={2} />
-        </span>
-      </span>
-      <span className="absolute top-1 right-1 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
-        {duration}
-      </span>
-      <div className="mt-4">
-        <h3 className="mb-1 text-sm font-medium text-white">{title}</h3>
-        <p className="text-xs leading-relaxed text-slate-400">{description}</p>
-      </div>
-    </button>
-  );
-}
-
-function StarRating() {
-  return (
-    <div className="flex items-center">
-      {[...Array(5)].map((_, i) => (
-        <Star key={i} className="h-4 w-4 fill-current text-yellow-400" />
-      ))}
-    </div>
-  );
-}
-
-function Testimonial({
-  name,
-  role,
-  content,
-}: {
-  name: string;
-  role: string;
-  content: string;
-}) {
-  return (
-    <div className="flex flex-col rounded-lg border border-slate-700 bg-slate-800/50 p-6">
-      <StarRating />
-      <p className="mt-4 mb-auto leading-relaxed text-slate-400">{content}</p>
-      <div className="mt-4">
-        <div className="font-medium text-white">{name}</div>
-        <div className="text-sm text-slate-500">{role}</div>
-      </div>
-    </div>
-  );
-}
-
-interface StatsItemProps {
-  icon: LucideIcon;
-  text: string;
-}
-
-function StatsItem(props: StatsItemProps) {
-  const Icon = props.icon;
-  return (
-    <div className="flex items-center gap-3">
-      <Icon className="h-6 w-6 text-purple-500" strokeWidth={1.5} />
-      <span className="text-gray-300">{props.text}</span>
-    </div>
-  );
-}
-
-interface CredibilityItemProps {
-  icon: LucideIcon;
-  iconClassName: string;
-  value: string;
-  label: string;
-  subLabel: string;
-}
-
-function CredibilityItem(props: CredibilityItemProps) {
-  const Icon = props.icon;
-  return (
-    <div className="group flex flex-col items-center text-center">
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-slate-900/50">
-        <Icon
-          className={cn(`h-6 w-6`, props.iconClassName)}
-          strokeWidth={1.5}
-        />
-      </div>
-      <div className="text-3xl font-bold text-white">{props.value}</div>
-      <div className="mt-3 text-sm font-medium text-slate-400">
-        {props.label}
-      </div>
-      <div className="mt-1.5 text-xs text-slate-500">{props.subLabel}</div>
-    </div>
-  );
-}
 
 export function PremiumPage() {
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
-
-  const features = [
-    {
-      title: 'Chat with Roadmaps',
-      description:
-        'Ask questions and get instant answers on any roadmap through AI',
-      videoId: 'fq0UgNcj3Ek',
-      thumbnail: 'https://assets.roadmap.sh/guest/chat-with-roadmaps-ew2l9.png',
-      duration: '2:17',
-    },
-    {
-      title: 'Unlimited AI Courses',
-      description:
-        'No more paying for expensive courses, create unlimited courses with AI',
-      videoId: 'uCcQNhdVUVQ',
-      thumbnail: 'https://assets.roadmap.sh/guest/ai-courses-m07ra.png',
-      duration: '3:07',
-    },
-    {
-      title: 'In-depth Guides',
-      description:
-        'Create unlimited personalized in-depth learning guides with AI',
-      videoId: '5kwYjCg2Lu4',
-      thumbnail: 'https://assets.roadmap.sh/guest/ai-guides-s4bjj.png',
-      duration: '1:33',
-    },
-    {
-      title: 'AI as Learning Companion',
-      description:
-        'Use AI-powered learning companion to accelerate your roadmap progress',
-      videoId: 'Jso_HRviEOE',
-      thumbnail: 'https://assets.roadmap.sh/guest/roadmap-ai-tools-adhqq.png',
-      duration: '2:45',
-      startTime: '18',
-    },
-    {
-      title: 'Your Personal Coach',
-      description:
-        'Get career guidance, roadmap and personalized growth suggestions',
-      videoId: '77VwAeFmoIw',
-      thumbnail: 'https://assets.roadmap.sh/guest/career-guidance-t2mpu.png',
-      duration: '3:45',
-      startTime: '4',
-    },
-    {
-      title: 'Learn Roadmap Topics',
-      description:
-        'Learn roadmap topics directly from within the nodes without leaving the roadmap',
-      videoId: '0jZ1Lse1Y3E',
-      thumbnail: 'https://assets.roadmap.sh/guest/smarter-roadmaps-f46ku.png',
-      duration: '3:11',
-    },
-    {
-      title: 'Test Yourself',
-      description: 'Test your knowledge and prepare for interviews with AI',
-      videoId: 'ScruGC8uzjo',
-      thumbnail: 'https://assets.roadmap.sh/guest/test-yourself-uwzqo.png',
-      duration: '2:15',
-    },
-    {
-      title: 'Powerful Roadmap Editor',
-      description:
-        'Create and edit roadmaps with ease using our powerful roadmap editor',
-      videoId: 'L2HZIHIgwOI',
-      thumbnail:
-        'https://assets.roadmap.sh/guest/ai-based-roadmap-editor-ochm8.png',
-      duration: '1:30',
-    },
-    {
-      title: 'Early Access to New Features',
-      description:
-        'We have more amazing features coming soon! Be the first to try them out!',
-      isComingSoon: true,
-    },
-  ];
 
   const activeVideoStartTime =
     features.find((feature) => feature.videoId === activeVideoId)?.startTime ||
@@ -382,7 +117,7 @@ export function PremiumPage() {
 
         {/* Pricing Section */}
         <div className="mb-20 pt-10" id="pricing">
-          <h2 className="mb-6 lg:mb-12 text-center text-3xl font-bold text-white">
+          <h2 className="mb-6 text-center text-3xl font-bold text-white lg:mb-12">
             Choose Your Plan
           </h2>
           <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
@@ -404,14 +139,9 @@ export function PremiumPage() {
                 Start Monthly Plan
               </button>
               <ul className="space-y-4 text-slate-300">
-                {[
-                  'AI Learning Assistant',
-                  'Personalized Learning Paths',
-                  'Interactive Exercises',
-                  'Premium Resources',
-                ].map((feature) => (
+                {paidFeaturesList.map((feature) => (
                   <li key={feature} className="flex items-start">
-                    <CheckCircle2
+                    <CheckCircle
                       className="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 text-blue-400"
                       strokeWidth={2}
                     />
@@ -444,15 +174,9 @@ export function PremiumPage() {
                 Start Yearly Plan
               </button>
               <ul className="space-y-4 text-slate-300">
-                {[
-                  'Everything in Monthly',
-                  'Priority Support',
-                  'Early Access Features',
-                  'Team Collaboration Tools',
-                  'Advanced Analytics',
-                ].map((feature) => (
+                {paidFeaturesList.map((feature) => (
                   <li key={feature} className="flex items-start">
-                    <CheckCircle2
+                    <CheckCircle
                       className="mt-0.5 mr-3 h-5 w-5 flex-shrink-0 text-blue-400"
                       strokeWidth={2}
                     />
