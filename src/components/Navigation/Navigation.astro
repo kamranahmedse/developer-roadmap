@@ -6,6 +6,7 @@ import { NavigationDropdown } from '../NavigationDropdown';
 import { RoadmapDropdownMenu } from '../TopNavDropdowns/RoadmapDropdownMenu';
 import { AIDropdownMenu } from '../TopNavDropdowns/AIDropdownMenu';
 import { AccountDropdown } from './AccountDropdown';
+import { UpgradeProButton } from '../TopNavDropdowns/UpgradeProButton';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -31,13 +32,7 @@ import { AccountDropdown } from './AccountDropdown';
         <NavigationDropdown client:load />
         <RoadmapDropdownMenu client:load />
         <AIDropdownMenu client:load />
-        <a
-          href='/premium'
-          class='group relative hidden items-center gap-1.5 font-medium text-yellow-400 transition-all duration-200 hover:text-yellow-300 xl:flex'
-        >
-          <Icon icon='bolt' />
-          Upgrade to Pro
-        </a>
+        <UpgradeProButton client:only='react' />
       </div>
     </div>
 
