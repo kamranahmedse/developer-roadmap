@@ -26,6 +26,7 @@ import { useParams } from '../../hooks/use-params';
 import { useQuery } from '@tanstack/react-query';
 import { aiLimitOptions } from '../../queries/ai-course';
 import { queryClient } from '../../stores/query-client';
+import { showUpgradeModal } from '../../stores/subscription';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -109,7 +110,7 @@ export function ContentGenerator() {
       selectedLimit &&
       selectedLimit?.used >= selectedLimit?.limit
     ) {
-      toast.error('You have reached the limit for this format');
+      showUpgradeModal();
       return;
     }
 
@@ -148,7 +149,7 @@ export function ContentGenerator() {
         )}
         {showLimitWarning && (
           <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500 max-md:hidden">
-            {selectedLimit?.used} of {selectedLimit?.limit} used
+            {selectedLimit?.used} of {selectedLimit?.limit} {selectedFormat}s
             <button
               onClick={() => setIsUpgradeModalOpen(true)}
               className="ml-2 rounded-xl bg-yellow-600 px-2 py-1 text-sm text-white hover:opacity-80"

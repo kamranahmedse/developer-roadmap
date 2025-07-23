@@ -22,6 +22,7 @@ import type { ResourceType } from '../lib/resource-progress';
 import Bluconic from '../components/Analytics/Bluconic.astro';
 import OneTrust from '../components/Analytics/OneTrust.astro';
 import { cn } from '../lib/classname';
+import { GlobalUpgradeModal } from '../components/Billing/GlobalUpgradeModal';
 
 export interface Props {
   title: string;
@@ -250,6 +251,7 @@ const gaPageIdentifier = Astro.url.pathname
     <Toaster client:only='react' />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
+    <GlobalUpgradeModal client:only='react' />
 
     <GoogleAdSlot />
     <slot name='after-footer' />
