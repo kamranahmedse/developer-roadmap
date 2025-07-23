@@ -1,5 +1,5 @@
 import { queryClient } from '../stores/query-client';
-import { getAiCourseLimitOptions } from '../queries/ai-course';
+import { aiLimitOptions } from '../queries/ai-course';
 import { readChatStream } from '../lib/chat';
 import { markdownToHtmlWithHighlighting } from '../lib/markdown';
 import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
@@ -114,7 +114,7 @@ export async function generateGuide(options: GenerateGuideOptions) {
       onMessageEnd: async (message) => {
         onGuideChange?.(message);
         onHtmlChange?.(await markdownToHtmlWithHighlighting(message));
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
         onStreamingChange?.(false);
       },
       onDetails: async (details) => {

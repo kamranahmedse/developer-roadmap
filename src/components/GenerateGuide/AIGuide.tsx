@@ -16,7 +16,7 @@ import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AIGuideChat } from './AIGuideChat';
 import { AIGuideContent } from './AIGuideContent';
 import { GenerateAIGuide } from './GenerateAIGuide';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { showLoginPopup } from '../../lib/popup';
 
@@ -45,7 +45,7 @@ export function AIGuide(props: AIGuideProps) {
     data: tokenUsage,
     isLoading: isTokenUsageLoading,
     refetch: refetchTokenUsage,
-  } = useQuery(getAiCourseLimitOptions(), queryClient);
+  } = useQuery(aiLimitOptions(), queryClient);
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);

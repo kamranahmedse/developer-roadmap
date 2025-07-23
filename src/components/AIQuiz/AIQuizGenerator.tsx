@@ -24,7 +24,8 @@ import { getUrlParams } from '../../lib/browser';
 import { FormatItem } from '../ContentGenerator/FormatItem';
 import { queryClient } from '../../stores/query-client';
 import { useQuery } from '@tanstack/react-query';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { showUpgradeModal } from '../../stores/subscription';
 
 const allowedFormats = ['mcq', 'open-ended', 'mixed'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -45,13 +46,20 @@ export function AIQuizGenerator() {
     data: tokenUsage,
     isLoading: isTokenUsageLoading,
     refetch: refetchTokenUsage,
-  } = useQuery(getAiCourseLimitOptions(), queryClient);
+  } = useQuery(aiLimitOptions(), queryClient);
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
 
   const isLimitExceeded = (tokenUsage?.used || 0) >= (tokenUsage?.limit || 0);
   const isPaidUser = userBillingDetails?.status === 'active';
+
+  const selectedLimit = tokenUsage?.quiz;
+  const showLimitWarning =
+    !isPaidUser &&
+    !isBillingDetailsLoading &&
+    !isTokenUsageLoading &&
+    isLoggedIn();
 
   const titleFieldId = useId();
   const fineTuneOptionsId = useId();
@@ -101,6 +109,15 @@ export function AIQuizGenerator() {
       return;
     }
 
+    if (
+      !isPaidUser &&
+      selectedLimit &&
+      selectedLimit?.used >= selectedLimit?.limit
+    ) {
+      showUpgradeModal();
+      return;
+    }
+
     let sessionId = '';
     if (showFineTuneOptions) {
       clearQuestionAnswerChatMessages();
@@ -131,14 +148,14 @@ export function AIQuizGenerator() {
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
         )}
 
-        {!isPaidUser && !isBillingDetailsLoading && isLoggedIn() && (
+        {showLimitWarning && (
           <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500 max-md:hidden">
-            You are on the free plan
+            {selectedLimit?.used} of {selectedLimit?.limit} quizzes
             <button
               onClick={() => setIsUpgradeModalOpen(true)}
               className="ml-2 rounded-xl bg-yellow-600 px-2 py-1 text-sm text-white hover:opacity-80"
             >
-              Upgrade to Pro
+              Need more? Upgrade
             </button>
           </div>
         )}
@@ -249,7 +266,9 @@ export function AIQuizGenerator() {
         <button
           type="submit"
           className="flex h-[56px] w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
-          disabled={!canGenerate}
+          disabled={
+            !canGenerate || isTokenUsageLoading || isBillingDetailsLoading
+          }
         >
           <SparklesIcon className="size-4" />
           Generate Quiz

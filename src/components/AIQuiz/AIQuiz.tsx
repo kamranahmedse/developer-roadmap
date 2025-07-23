@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { queryClient } from '../../stores/query-client';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 import { AlertCircleIcon } from 'lucide-react';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { AIQuizLayout } from './AIQuizLayout';
 import { GenerateAIQuiz } from './GenerateAIQuiz';
@@ -34,7 +34,7 @@ export function AIQuiz(props: AIQuizProps) {
     data: tokenUsage,
     isLoading: isTokenUsageLoading,
     refetch: refetchTokenUsage,
-  } = useQuery(getAiCourseLimitOptions(), queryClient);
+  } = useQuery(aiLimitOptions(), queryClient);
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);

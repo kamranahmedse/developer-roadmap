@@ -14,6 +14,9 @@ import {
   type ListUserAiRoadmapsQuery,
 } from '../../queries/ai-roadmap';
 import { AIRoadmapCard } from './AIRoadmapCard';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { useIsPaidUser } from '../../queries/billing';
+import { AIUsageWarning } from '../AIUsageWarning/AIUsageWarning';
 
 export function UserRoadmapsList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -24,6 +27,14 @@ export function UserRoadmapsList() {
     currPage: '1',
     query: '',
   });
+
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const selectedLimit = limits?.roadmap;
 
   const { data: userAiRoadmaps, isFetching: isUserAiRoadmapsLoading } =
     useQuery(listUserAiRoadmapsOptions(pageState), queryClient);
@@ -57,7 +68,11 @@ export function UserRoadmapsList() {
   }, [pageState]);
 
   const isUserAuthenticated = isLoggedIn();
-  const isAnyLoading = isUserAiRoadmapsLoading || isInitialLoading;
+  const isAnyLoading =
+    isUserAiRoadmapsLoading ||
+    isInitialLoading ||
+    isPaidUserLoading ||
+    isLimitLoading;
 
   return (
     <>
@@ -81,23 +96,30 @@ export function UserRoadmapsList() {
       {isAnyLoading && (
         <p className="mb-4 flex flex-row items-center gap-2 text-sm text-gray-500">
           <Loader2 className="h-4 w-4 animate-spin" />
-          Loading your courses...
+          Loading your roadmaps...
         </p>
       )}
 
       {!isAnyLoading && (
         <>
-          <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated
-              ? `You have generated ${userAiRoadmaps?.totalCount} roadmaps so far.`
-              : 'Sign up or login to generate your first roadmap. Takes 2s to do so.'}
-          </p>
+          <AIUsageWarning
+            type="roadmap"
+            totalCount={userAiRoadmaps?.totalCount}
+            isPaidUser={isPaidUser}
+            usedCount={selectedLimit?.used}
+            limitCount={selectedLimit?.limit}
+            onUpgrade={() => setShowUpgradePopup(true)}
+          />
 
           {isUserAuthenticated && !isAnyLoading && roadmaps.length > 0 && (
             <div className="flex flex-col gap-2">
               <div className="grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3">
                 {roadmaps.map((roadmap) => (
-                  <AIRoadmapCard variant="column" key={roadmap._id} roadmap={roadmap} />
+                  <AIRoadmapCard
+                    variant="column"
+                    key={roadmap._id}
+                    roadmap={roadmap}
+                  />
                 ))}
               </div>
 

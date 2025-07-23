@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 import type { QuestionAnswerChatMessage } from '../components/ContentGenerator/QuestionAnswerChat';
 import { readChatStream } from '../lib/chat';
 import { queryClient } from '../stores/query-client';
-import { getAiCourseLimitOptions } from './ai-course';
+import { aiLimitOptions } from './ai-course';
 import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
 import { isLoggedIn } from '../lib/jwt';
@@ -113,7 +113,7 @@ export async function generateAIQuiz(options: GenerateAIQuizOptions) {
         onQuestionsChange?.(questions);
       },
       onMessageEnd: async (result) => {
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
         onStreamingChange?.(false);
       },
       onDetails: async (details) => {

@@ -14,6 +14,9 @@ import {
   type ListUserAiQuizzesQuery,
 } from '../../queries/ai-quiz';
 import { AIQuizCard } from './AIQuizCard';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { useIsPaidUser } from '../../queries/billing';
+import { AIUsageWarning } from '../AIUsageWarning/AIUsageWarning';
 
 export function UserQuizzesList() {
   const [isInitialLoading, setIsInitialLoading] = useState(true);
@@ -24,6 +27,14 @@ export function UserQuizzesList() {
     currPage: '1',
     query: '',
   });
+
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const selectedLimit = limits?.quiz;
 
   const { data: userAiQuizzes, isFetching: isUserAiQuizzesLoading } = useQuery(
     listUserAiQuizzesOptions(pageState),
@@ -59,7 +70,11 @@ export function UserQuizzesList() {
   }, [pageState]);
 
   const isUserAuthenticated = isLoggedIn();
-  const isAnyLoading = isUserAiQuizzesLoading || isInitialLoading;
+  const isAnyLoading =
+    isUserAiQuizzesLoading ||
+    isInitialLoading ||
+    isPaidUserLoading ||
+    isLimitLoading;
 
   return (
     <>
@@ -89,11 +104,14 @@ export function UserQuizzesList() {
 
       {!isAnyLoading && (
         <>
-          <p className="mb-4 text-sm text-gray-500">
-            {isUserAuthenticated
-              ? `You have generated ${userAiQuizzes?.totalCount} quizzes so far.`
-              : 'Sign up or login to generate your first quiz. Takes 2s to do so.'}
-          </p>
+          <AIUsageWarning
+            type="quiz"
+            totalCount={userAiQuizzes?.totalCount}
+            isPaidUser={isPaidUser}
+            usedCount={selectedLimit?.used}
+            limitCount={selectedLimit?.limit}
+            onUpgrade={() => setShowUpgradePopup(true)}
+          />
 
           {isUserAuthenticated && !isAnyLoading && quizzes.length > 0 && (
             <div className="flex flex-col gap-2">

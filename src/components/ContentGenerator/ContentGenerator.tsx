@@ -23,6 +23,10 @@ import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
 import { getUrlParams } from '../../lib/browser';
 import { useParams } from '../../hooks/use-params';
+import { useQuery } from '@tanstack/react-query';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { queryClient } from '../../stores/query-client';
+import { showUpgradeModal } from '../../stores/subscription';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -36,6 +40,11 @@ export function ContentGenerator() {
   const [title, setTitle] = useState('');
   const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
 
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
   useEffect(() => {
     const isValidFormat = allowedFormats.find(
       (format) => format.value === params.format,
@@ -48,7 +57,6 @@ export function ContentGenerator() {
     }
   }, [params.format]);
 
-  // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
   const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
     QuestionAnswerChatMessage[]
@@ -87,9 +95,22 @@ export function ContentGenerator() {
     },
   ];
 
+  const selectedLimit = limits?.[selectedFormat];
+  const showLimitWarning =
+    !isPaidUser && !isPaidUserLoading && !isLimitLoading && isLoggedIn();
+
   const handleSubmit = () => {
     if (!isLoggedIn()) {
       showLoginPopup();
+      return;
+    }
+
+    if (
+      !isPaidUser &&
+      selectedLimit &&
+      selectedLimit?.used >= selectedLimit?.limit
+    ) {
+      showUpgradeModal();
       return;
     }
 
@@ -126,17 +147,18 @@ export function ContentGenerator() {
         {isUpgradeModalOpen && (
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
         )}
-        {!isPaidUser && !isPaidUserLoading && isLoggedIn() && (
+        {showLimitWarning && (
           <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500 max-md:hidden">
-            You are on the free plan
+            {selectedLimit?.used} of {selectedLimit?.limit} {selectedFormat}s
             <button
               onClick={() => setIsUpgradeModalOpen(true)}
               className="ml-2 rounded-xl bg-yellow-600 px-2 py-1 text-sm text-white hover:opacity-80"
             >
-              Upgrade to Pro
+              Need more? Upgrade
             </button>
           </div>
         )}
+
         <h1 className="mb-0.5 text-center text-4xl font-semibold max-md:text-left max-md:text-xl lg:mb-3">
           What can I help you learn?
         </h1>
@@ -233,7 +255,7 @@ export function ContentGenerator() {
         <button
           type="submit"
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
-          disabled={!canGenerate}
+          disabled={!canGenerate || isLimitLoading}
         >
           <SparklesIcon className="size-4" />
           Generate
