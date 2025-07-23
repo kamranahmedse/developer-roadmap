@@ -59,6 +59,7 @@ export const features = [
     videoId: '0jZ1Lse1Y3E',
     thumbnail: 'https://assets.roadmap.sh/guest/smarter-roadmaps-f46ku.png',
     duration: '3:11',
+    startTime: '5'
   },
   {
     title: 'Test Yourself',

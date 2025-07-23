@@ -27,6 +27,7 @@ import { PremiumPage } from '../components/Premium/PremiumPage';
       '@type': 'Product',
       name: 'roadmap.sh Premium',
       description: 'AI-powered learning platform for developers with unlimited courses, career guidance, and instant AI support.',
+      image: 'https://assets.roadmap.sh/guest/ai-tutor-og-6hm9j.png',
       brand: {
         '@type': 'Brand',
         name: 'roadmap.sh'
@@ -39,7 +40,20 @@ import { PremiumPage } from '../components/Premium/PremiumPage';
           priceCurrency: 'USD',
           priceValidUntil: '2025-12-31',
           availability: 'https://schema.org/InStock',
-          url: 'https://roadmap.sh/premium'
+          url: 'https://roadmap.sh/premium',
+          seller: {
+            '@type': 'Organization',
+            name: 'roadmap.sh'
+          },
+          priceSpecification: {
+            '@type': 'PriceSpecification',
+            price: '10.00',
+            priceCurrency: 'USD'
+          },
+          eligibleRegion: {
+            '@type': 'Place',
+            name: 'Worldwide'
+          }
         },
         {
           '@type': 'Offer',
@@ -48,12 +62,25 @@ import { PremiumPage } from '../components/Premium/PremiumPage';
           priceCurrency: 'USD',
           priceValidUntil: '2025-12-31',
           availability: 'https://schema.org/InStock',
-          url: 'https://roadmap.sh/premium'
+          url: 'https://roadmap.sh/premium',
+          seller: {
+            '@type': 'Organization',
+            name: 'roadmap.sh'
+          },
+          priceSpecification: {
+            '@type': 'PriceSpecification',
+            price: '100.00',
+            priceCurrency: 'USD'
+          },
+          eligibleRegion: {
+            '@type': 'Place',
+            name: 'Worldwide'
+          }
         }
       ],
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '4.8',
+        ratingValue: '4.9',
         bestRating: '5',
         ratingCount: '1000'
       }
