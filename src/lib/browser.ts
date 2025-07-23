@@ -221,7 +221,7 @@ export function getPageTrackingData() {
     page_path: window.location.pathname,
     page_referrer: document.referrer || undefined,
     page_title: document.title,
-    user_agent: navigator.userAgent,
+    user_agent: navigator?.userAgent || '',
     screen_resolution: `${screen.width}x${screen.height}`,
     viewport_size: `${window.innerWidth}x${window.innerHeight}`,
     session_id: generateSessionId(),
