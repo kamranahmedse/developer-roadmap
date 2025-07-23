@@ -190,7 +190,7 @@ export function PremiumPage() {
         </div>
 
         <div className="mb-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-8 lg:mb-20">
-          <StatsItem icon={Users2} text="+100K Learners" />
+          <StatsItem icon={Users2} text="+2.1M Learners" />
           <StatsItem icon={Bot} text="+160K Roadmaps" />
           <StatsItem icon={Book} text="+150K Courses" />
           <StatsItem icon={Wand2} text="+1M AI Chats" />
