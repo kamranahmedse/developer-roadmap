@@ -1,4 +1,5 @@
 import {
+  ArrowUpRightIcon,
   Book,
   Bot,
   CheckCircle,
@@ -33,8 +34,9 @@ export function PremiumPage() {
     useState<AllowedSubscriptionInterval | null>(null);
 
   // State for plan switching confirmation modal
-  const [switchPlanDetails, setSwitchPlanDetails] =
-    useState<(typeof USER_SUBSCRIPTION_PLAN_PRICES)[number] | null>(null);
+  const [switchPlanDetails, setSwitchPlanDetails] = useState<
+    (typeof USER_SUBSCRIPTION_PLAN_PRICES)[number] | null
+  >(null);
 
   const toast = useToast();
 
@@ -87,7 +89,9 @@ export function PremiumPage() {
   const isSubscriptionCanceled = ['canceled', 'incomplete_expired'].includes(
     billingDetails?.status || '',
   );
-  const currentPriceId = isSubscriptionCanceled ? null : billingDetails?.priceId;
+  const currentPriceId = isSubscriptionCanceled
+    ? null
+    : billingDetails?.priceId;
 
   const currentPlan = USER_SUBSCRIPTION_PLAN_PRICES.find(
     (plan) => plan.priceId === currentPriceId,
@@ -161,24 +165,25 @@ export function PremiumPage() {
               Generate unlimited courses about any topic, get career guidance
               and instant answers from AI, test your skills and more
             </p>
-            <div className="flex justify-center">
+            <div className="flex items-center justify-center gap-4">
               <a
                 href="#pricing"
-                className="group mx-auto block rounded-2xl bg-gradient-to-b from-indigo-600 to-indigo-700 px-8 py-4 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/25"
+                className="group block rounded-2xl bg-gradient-to-b from-indigo-600 to-indigo-700 px-8 py-4 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/25"
               >
                 <span className="flex items-center justify-center gap-3 text-lg text-white sm:hidden">
                   Upgrade now
                 </span>
                 <span className="hidden items-center justify-center gap-3 text-lg sm:flex">
-                  <span className="font-medium text-indigo-100">
-                    Upgrade for just
-                  </span>
+                  <span className="font-medium text-indigo-100">Upgrade</span>
                   <span className="font-bold text-white">$10/month</span>
-                  <span className="text-white transition-transform duration-200 group-hover:translate-x-1">
-                    →
-                  </span>
                 </span>
               </a>
+              <button className="group block rounded-2xl bg-gradient-to-b from-slate-600 to-slate-700 px-8 py-4 opacity-70 shadow-lg transition-all hover:-translate-y-0.5 hover:opacity-100 hover:shadow-xl hover:shadow-slate-500/25">
+                <span className="flex items-center justify-center gap-3 text-lg text-white">
+                  Try for free
+                  <ArrowUpRightIcon className="h-5 w-5" />
+                </span>
+              </button>
             </div>
             <p className="mt-5 flex items-center justify-center gap-2 text-sm">
               <Clock className="h-3 w-3 text-white" />
@@ -215,6 +220,7 @@ export function PremiumPage() {
                 thumbnail={feature.thumbnail}
                 duration={feature.duration}
                 isComingSoon={feature.isComingSoon}
+                link={feature.link}
                 onClick={
                   feature.videoId
                     ? () => setActiveVideoId(feature.videoId)
@@ -248,9 +254,9 @@ export function PremiumPage() {
                 disabled={
                   isCreatingCheckoutSession || currentPlan?.interval === 'month'
                 }
-                className={`mb-8 w-full rounded-lg px-6 py-3 font-medium transition-colors disabled:opacity-50  ${
+                className={`mb-8 w-full rounded-lg px-6 py-3 font-medium transition-colors disabled:opacity-50 ${
                   currentPlan?.interval === 'month'
-                    ? 'bg-gray-800 text-white cursor-not-allowed'
+                    ? 'cursor-not-allowed bg-gray-800 text-white'
                     : 'bg-blue-600 text-white hover:bg-blue-700'
                 }`}
               >
@@ -301,9 +307,9 @@ export function PremiumPage() {
                 disabled={
                   isCreatingCheckoutSession || currentPlan?.interval === 'year'
                 }
-                className={`mb-8 w-full rounded-lg px-6 py-3 font-medium transition-colors disabled:opacity-50  ${
+                className={`mb-8 w-full rounded-lg px-6 py-3 font-medium transition-colors disabled:opacity-50 ${
                   currentPlan?.interval === 'year'
-                    ? 'bg-green-600 text-white cursor-not-allowed'
+                    ? 'cursor-not-allowed bg-green-600 text-white'
                     : 'bg-blue-600 text-white hover:bg-blue-700'
                 }`}
               >
@@ -334,7 +340,6 @@ export function PremiumPage() {
             </div>
           </div>
         </div>
-
       </div>
 
       {activeVideoId && (

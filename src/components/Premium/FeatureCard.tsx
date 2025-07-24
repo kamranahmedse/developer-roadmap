@@ -1,4 +1,4 @@
-import { Lock, Play } from 'lucide-react';
+import { ArrowUpRightIcon, Lock, Play } from 'lucide-react';
 
 interface FeatureCardProps {
   title: string;
@@ -8,6 +8,7 @@ interface FeatureCardProps {
   thumbnail?: string;
   onClick?: () => void;
   isComingSoon?: boolean;
+  link?: string;
 }
 
 export function FeatureCard(props: FeatureCardProps) {
@@ -19,6 +20,7 @@ export function FeatureCard(props: FeatureCardProps) {
     thumbnail,
     onClick,
     isComingSoon = false,
+    link,
   } = props;
 
   if (isComingSoon) {
@@ -58,13 +60,29 @@ export function FeatureCard(props: FeatureCardProps) {
           <Play className="h-6 w-6 fill-current text-white" strokeWidth={2} />
         </span>
       </span>
-      <span className="absolute top-1 right-1 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
-        {duration}
-      </span>
+
+      <div className="absolute top-1 right-1 flex items-center gap-2">
+        {link && (
+          <a
+            target="_blank"
+            href={link}
+            className="hidden rounded bg-white/20 px-1 py-1 text-xs text-white backdrop-blur-sm group-hover:block hover:bg-white/30"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          >
+            <ArrowUpRightIcon className="h-4 w-4" />
+          </a>
+        )}
+
+        <span className="rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
+          {duration}
+        </span>
+      </div>
       <div className="mt-4">
         <h3 className="mb-1 text-sm font-medium text-white">{title}</h3>
         <p className="text-xs leading-relaxed text-slate-400">{description}</p>
       </div>
     </button>
   );
-} 
+}
