@@ -25,7 +25,7 @@ export function UserItem(props: UserItemProps) {
         src={
           user.avatar
             ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
-            : '/images/default-avatar.png'
+            : '/img/default-avatar.png'
         }
         alt={user.name || ''}
         className="relative top-[1px] h-10 w-10 shrink-0 rounded-full"

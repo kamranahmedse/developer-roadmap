@@ -109,7 +109,7 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
                         ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
                             team.avatar
                           }`
-                        : '/images/default-avatar.png'
+                        : '/img/default-avatar.png'
                     }
                     alt={team.name || ''}
                     className="h-6 w-6 shrink-0 rounded-full"

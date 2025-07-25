@@ -166,7 +166,7 @@ export function TeamVersions(props: TeamVersionsProps) {
                   ? `${
                       import.meta.env.PUBLIC_AVATAR_BASE_URL
                     }/${selectedAvatar}`
-                  : '/images/default-avatar.png'
+                  : '/img/default-avatar.png'
               }
               alt={`${selectedLabel} Avatar`}
               className="h-5 w-5 rounded-full object-cover"

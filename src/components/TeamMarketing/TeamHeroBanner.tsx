@@ -87,7 +87,7 @@ export function TeamHeroBanner() {
           <img
             alt={'team roadmaps'}
             className="hidden h-64 md:block lg:h-80"
-            src="/images/team-promo/hero-img.png"
+            src="/img/team-promo/hero-img.png"
           />
         </div>
       </div>

@@ -117,7 +117,7 @@ export function ListRoadmapRatings(props: ListRoadmapRatingsProps) {
             {ratings.map((rating) => {
               const userAvatar = rating?.avatar
                 ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${rating.avatar}`
-                : '/images/default-avatar.png';
+                : '/img/default-avatar.png';
 
               const isLastRating =
                 ratings[ratings.length - 1]._id === rating._id;

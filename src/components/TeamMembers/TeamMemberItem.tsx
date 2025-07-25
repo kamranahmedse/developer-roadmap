@@ -57,7 +57,7 @@ export function TeamMemberItem(props: TeamMemberProps) {
           src={
             member.avatar
               ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${member.avatar}`
-              : '/images/default-avatar.png'
+              : '/img/default-avatar.png'
           }
           alt={member.name || ''}
           className="hidden h-10 w-10 rounded-full sm:block"

@@ -72,7 +72,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
 
   const avatarUrl = creator?.avatar
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${creator?.avatar}`
-    : '/images/default-avatar.png';
+    : '/img/default-avatar.png';
 
   return (
     <>

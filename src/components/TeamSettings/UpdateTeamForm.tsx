@@ -115,7 +115,7 @@ export function UpdateTeamForm() {
         avatarUrl={
           avatar
             ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-            : '/images/default-avatar.png'
+            : '/img/default-avatar.png'
         }
         teamId={teamId!}
       />

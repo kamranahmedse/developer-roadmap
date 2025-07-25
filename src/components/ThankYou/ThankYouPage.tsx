@@ -58,7 +58,7 @@ export function ThankYouPage() {
       <div className="flex flex-grow flex-col items-center justify-center px-4">
         <div className="flex max-w-2xl flex-col items-center text-center">
           <img
-            src="/images/gifs/party-popper.gif"
+            src="/img/gifs/party-popper.gif"
             alt="Thank you"
             className="relative left-6 mb-6 aspect-square w-24"
           />
