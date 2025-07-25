@@ -50,7 +50,7 @@ export function TeamsList() {
                       ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
                           user?.avatar
                         }`
-                      : '/images/default-avatar.png'
+                      : '/img/default-avatar.png'
                   }
                   alt={user?.name || ''}
                   className="h-6 w-6 rounded-full"
@@ -81,7 +81,7 @@ export function TeamsList() {
                           ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
                               team.avatar
                             }`
-                          : '/images/default-avatar.png'
+                          : '/img/default-avatar.png'
                       }
                       alt={team.name || ''}
                       className="h-6 w-6 rounded-full"

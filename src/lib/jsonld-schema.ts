@@ -33,7 +33,7 @@ export function generateArticleSchema(article: ArticleSchemaProps) {
       name: 'roadmap.sh',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://roadmap.sh/images/brand-square.png',
+        url: 'https://roadmap.sh/img/brand-square.png',
       },
     },
     datePublished: datePublished,

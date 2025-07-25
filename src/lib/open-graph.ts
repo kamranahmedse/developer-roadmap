@@ -8,7 +8,7 @@ export function getOpenGraphImageUrl(params: RoadmapOpenGraphQuery) {
 }
 
 export async function getDefaultOpenGraphImageBuffer() {
-  const defaultImageUrl = `${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/images/og-img.png`;
+  const defaultImageUrl = `${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/img/og-img.png`;
   return fetch(defaultImageUrl).then((response) => response.arrayBuffer());
 }
 

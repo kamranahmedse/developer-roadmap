@@ -162,7 +162,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
               ? user?.avatar?.startsWith('http')
                 ? user?.avatar
                 : `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
-              : '/images/default-avatar.png';
+              : '/img/default-avatar.png';
 
             const rank = counter + 1;
             const isGitHubUser = avatar?.indexOf('github') > -1;

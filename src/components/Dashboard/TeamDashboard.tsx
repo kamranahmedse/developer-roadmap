@@ -128,7 +128,7 @@ export function TeamDashboard(props: TeamDashboardProps) {
           {allMembersWithoutCurrentUser.map((member) => {
             const avatar = member?.avatar
               ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${member.avatar}`
-              : '/images/default-avatar.png';
+              : '/img/default-avatar.png';
             return (
               <a
                 className="group relative"

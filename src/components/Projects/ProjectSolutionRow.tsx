@@ -58,7 +58,7 @@ export function ProjectSolutionRow(props: ProjectSolutionRowProps) {
           src={
             avatar
               ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-              : '/images/default-avatar.png'
+              : '/img/default-avatar.png'
           }
           alt={solution.user.name}
           className="h-7 w-7 shrink-0 rounded-full sm:h-8 sm:w-8"

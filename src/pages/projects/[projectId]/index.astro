@@ -34,7 +34,7 @@ const projectData = project.frontmatter as ProjectFrontmatter;
 
 let jsonLdSchema: any[] = [];
 
-const ogImageUrl = projectData?.seo?.ogImageUrl || '/images/og-img.png';
+const ogImageUrl = projectData?.seo?.ogImageUrl || '/img/og-img.png';
 const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/projects/${projectId}.md`;
 
 const parentRoadmapId = projectData?.roadmapIds?.[0] || '';

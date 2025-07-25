@@ -26,7 +26,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
         src={
           avatar
             ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-            : '/images/default-avatar.png'
+            : '/img/default-avatar.png'
         }
         alt={name}
         className="h-32 w-32 rounded-full object-cover"
