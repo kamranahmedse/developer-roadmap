@@ -1,0 +1,862 @@
+{
+  "WwLLyHL5psm0GOI9bmOne": {
+    "title": "Introduction to Go",
+    "description": "Statically typed, compiled programming language developed at Google. Designed for simplicity, concurrency, and performance. Features garbage collection, strong typing, efficient compilation, built-in concurrency with goroutines and channels. Excellent for backend services, CLI tools, and distributed systems.",
+    "links": []
+  },
+  "4PrkkoZ5fY-oow0O-bVhu": {
+    "title": "Why use Go",
+    "description": "Go offers exceptional performance with single binary deployment, built-in concurrency, fast compilation, and comprehensive standard library. Simple language that's easy to learn and maintain. Excels at web services, microservices, CLI tools, and system software.",
+    "links": []
+  },
+  "2rlmLn_yQQV-7DpX1qT98": {
+    "title": "History of Go",
+    "description": "Created at Google in 2007 by Griesemer, Pike, and Thompson. Announced publicly in 2009, version 1.0 in 2012. Key milestones include modules (Go 1.11) and generics (Go 1.18). Designed for large-scale software development combining efficiency and simplicity.",
+    "links": []
+  },
+  "J5mU0v491qrm-mr1W3Msd": {
+    "title": "Setting up the Environment",
+    "description": "Install Go from official website, configure PATH, and set up workspace. Configure editor with Go support (VS Code, GoLand, Vim/Emacs). Use modules for dependency management. Verify installation with `go version` and test with simple program.",
+    "links": []
+  },
+  "PHHviBSqhYDSNuHBFbw3l": {
+    "title": "Hello World in Go",
+    "description": "Traditional first program demonstrating basic structure: `package main`, importing `fmt`, and `main()` function using `fmt.Println()`. Teaches Go syntax, compilation, execution, and verifies development environment setup. Entry point for learning Go.",
+    "links": []
+  },
+  "_3_tFOpQisx6DSP4Yc2E2": {
+    "title": "`go` command",
+    "description": "Primary tool for managing Go source code with unified interface for compiling, testing, formatting, and managing dependencies. Includes subcommands like `build`, `run`, `test`, `fmt`, `mod`. Handles the entire development workflow automatically.",
+    "links": []
+  },
+  "BZKSsTgm28WV4nA74NYHO": {
+    "title": "Variables & Constants",
+    "description": "Variables store changeable values declared with `var` or `:=` (short declaration). Constants store unchangeable values declared with `const`. Variables can be explicitly typed or use type inference. Constants must be compile-time determinable. Both support block declarations and package/function scope.",
+    "links": []
+  },
+  "pJUkMcrUvcxuR_w89-eEq": {
+    "title": "var vs :=",
+    "description": "",
+    "links": []
+  },
+  "QWixUXjC8YG-i1gsKVY1v": {
+    "title": "Zero Values",
+    "description": "Default values for uninitialized variables: `0` for numbers, `false` for booleans, `\"\"` for strings, `nil` for pointers/slices/maps. Ensures predictable initial state and reduces initialization errors. Fundamental for reliable Go code.",
+    "links": []
+  },
+  "-M-qrXwVt7HfJv0CSRNGS": {
+    "title": "const and iota",
+    "description": "Constants declared with `const` represent unchanging compile-time values. `iota` creates successive integer constants starting from zero, resetting per `const` block. Useful for enumerations, bit flags, and constant sequences without manual values.",
+    "links": []
+  },
+  "xUKsD2eTP9-RszHvKYp9Y": {
+    "title": "Scope and Shadowing",
+    "description": "Scope determines variable accessibility from universe to block level. Shadowing occurs when inner scope variables hide outer ones with same names. Go has package, function, and block scopes. Understanding prevents bugs from accidentally creating new variables.",
+    "links": []
+  },
+  "0FJxELyk7_IiVHvZFFVm2": {
+    "title": "Data Types",
+    "description": "Rich set of built-in types: integers (int8-64), unsigned integers (uint8-64), floats (float32/64), complex numbers, booleans, strings, runes. Statically typed - types determined at compile time for early error detection and performance. Crucial for efficient, reliable programs.",
+    "links": []
+  },
+  "PRTou83_rD0u7p2elGG4s": {
+    "title": "Boolean",
+    "description": "The `bool` type represents `true` or `false` values with default zero value of `false`. Essential for conditional logic, control flow, and binary states. Results from comparison (`==`, `!=`) and logical operations (`&&`, `||`, `!`).",
+    "links": []
+  },
+  "EAqL8Up3J63AWCZnqQph0": {
+    "title": "Integers (Signed, Unsigned)",
+    "description": "Signed integers (int8, int16, int32, int64) handle positive/negative numbers. Unsigned (uint8, uint16, uint32, uint64) handle only non-negative but larger positive range. `int`/`uint` are platform-dependent. Choose based on range and memory needs.",
+    "links": []
+  },
+  "EzaH378F3kOdQbczhVjhA": {
+    "title": "Floating Points",
+    "description": "Two types: `float32` (single precision) and `float64` (double precision, default). Represent real numbers using IEEE 754 standard. Can introduce precision errors, not suitable for exact financial calculations. Essential for scientific computing and graphics.",
+    "links": []
+  },
+  "Mn-M7kxOKEublJGitgjNA": {
+    "title": "Complex Numbers",
+    "description": "Built-in support with `complex64` and `complex128` types. Create using `complex()` function or literals like `3+4i`. Provides `real()`, `imag()`, `abs()` functions. Useful for mathematical computations, signal processing, and scientific applications.",
+    "links": []
+  },
+  "IAXI7OAAAG4fU6JvVNSZI": {
+    "title": "Runes",
+    "description": "Represent Unicode code points as `int32` type. Enable proper handling of international characters and emojis. Use single quotes like `'A'` or `'中'`. Essential for internationalized applications and correctly processing global text content beyond ASCII.",
+    "links": []
+  },
+  "nzPe6XVqhtOZFbea6f2Hg": {
+    "title": "Raw String Literals",
+    "description": "Enclosed in backticks (\\`) and interpret characters literally without escape sequences. Preserve formatting including newlines. Ideal for regex, file paths, SQL queries, JSON templates, and multi-line text where escaping would be extensive.",
+    "links": []
+  },
+  "7h08RUNC_uAMI6vnGdcZ1": {
+    "title": "Interpreted String Literals",
+    "description": "Enclosed in double quotes (`\"`) and process escape sequences like `\\n`, `\\t`, `\\\"`. Support Unicode characters and formatting. Most common string type, ideal for text needing control characters but requiring escaping of special characters.",
+    "links": []
+  },
+  "2IFxz3sFqDvUvzWNVwlWC": {
+    "title": "Type Conversion",
+    "description": "Convert values between different types using `Type(value)` syntax. Go requires explicit conversion even between related types like `int` and `int64`. Essential for working with different data types and ensuring type compatibility in programs.",
+    "links": []
+  },
+  "ywiNCAAvpSVXTwWwguxSZ": {
+    "title": "Commands & Docs",
+    "description": "Go provides built-in documentation tools including `go doc` for terminal documentation and `godoc` for web interface. Documentation uses special comments. `go help` provides command information. Essential for exploring standard library and writing well-documented code.",
+    "links": []
+  },
+  "Eu8JV-_W-P_bCx_PglIW0": {
+    "title": "Arrays",
+    "description": "Fixed-size sequences of same-type elements. Size is part of the type, so different sizes are different types. Declared with specific length, initialized to zero values. Value types (copied when assigned/passed). Slices are more commonly used due to flexibility. Foundation for understanding Go's type system.",
+    "links": []
+  },
+  "3aoMFQXIh3Qdo04isHwe_": {
+    "title": "Slices",
+    "description": "Dynamic arrays built on top of arrays. Reference types with length and capacity. Created with `make()` or slice literals. Support append, copy operations. More flexible than arrays - most commonly used sequence type in Go.",
+    "links": []
+  },
+  "qUykEUH1-9Dzotc_ltV3g": {
+    "title": "Capacity and Growth",
+    "description": "Slice capacity determines when reallocation occurs during append operations. Go typically doubles capacity for smaller slices. Pre-allocate with `make([]T, length, capacity)` to optimize memory usage and minimize allocations in performance-critical code.",
+    "links": []
+  },
+  "PWrfmYnOJRlwgdFat91bC": {
+    "title": "make()",
+    "description": "Creates and initializes slices, maps, and channels. Unlike `new()`, returns usable values. Examples: `make([]int, 5, 10)` for slices, `make(map[string]int)` for maps, `make(chan int)` for channels. Essential for initializing reference types.",
+    "links": []
+  },
+  "j0zmfpaufr5TAZa_Bh8Vu": {
+    "title": "Slice to Array Conversion",
+    "description": "Convert slice to array using `[N]T(slice)` (Go 1.17+). Copies data from slice to fixed-size array. Panics if slice has fewer than N elements. Useful when array semantics or specific size guarantees are needed.",
+    "links": []
+  },
+  "s1E4PQVVSlBeyNn7xBikW": {
+    "title": "Array to Slice Conversion",
+    "description": "Convert arrays to slices using expressions like `array[:]` or `array[start:end]`. Creates slice header pointing to array memory - no data copying. Modifications through slice affect original array. Efficient way to use arrays with slice-based APIs.",
+    "links": []
+  },
+  "ZxZpReGdPq8ziSlYmf2nj": {
+    "title": "Strings",
+    "description": "Immutable sequences of bytes representing UTF-8 encoded text. String operations create new strings rather than modifying existing ones. Iterate by bytes (indexing) or runes (for range). Convert between strings and byte slices. Understanding strings helps with text manipulation and performance.",
+    "links": []
+  },
+  "XupDuVRsM5VjdaNs7JaT5": {
+    "title": "Maps",
+    "description": "Built-in associative data type mapping keys to values. Reference types created with `make(map[KeyType]ValueType)` or map literals. Keys must be comparable types. Support insertion, deletion, lookup operations. Check existence with comma ok idiom: `value, ok := map[key]`.",
+    "links": []
+  },
+  "dMdOz2kUc8If3LcLZEfYf": {
+    "title": "Comma-Ok Idiom",
+    "description": "Pattern for safely testing map key existence or type assertion success using `value, ok := map[key]` or `value, ok := interface.(Type)`. Returns both value and boolean status, preventing panics and distinguishing zero values from missing keys.",
+    "links": []
+  },
+  "wRwt9JHZPmq8uapxMjn0a": {
+    "title": "Structs",
+    "description": "Custom data types grouping related fields under single name. Similar to classes but methods defined separately. Create complex data models, organize information, define application data structure. Access fields with dot notation, pass to functions. Fundamental for object-oriented designs.",
+    "links": []
+  },
+  "SW2uMlhfC-dnQakShs2km": {
+    "title": "Struct Tags & JSON",
+    "description": "Struct tags provide metadata about fields using backticks with key-value pairs. JSON tags control field names, omit empty fields, or skip fields. Example: `json:\"name,omitempty\"`. Essential for APIs and data serialization formats.",
+    "links": []
+  },
+  "XLj16RmCe4-nKHW52Ebhf": {
+    "title": "Embedding Structs",
+    "description": "Struct embedding includes one struct inside another without field names, making embedded fields directly accessible. Provides composition-based design following Go's philosophy of composition over inheritance. Enables flexible, reusable components.",
+    "links": []
+  },
+  "C7wzT161ytHsCpO2zfmXo": {
+    "title": "Conditionals",
+    "description": "Control program flow based on conditions. `if` for basic logic, `if-else` for binary decisions, `switch` for multiple conditions. `if` supports optional initialization, no parentheses needed but braces required. `switch` supports expressions, type switches, fallthrough. Fundamental for business logic.",
+    "links": []
+  },
+  "dC-1LotbW29C4zZJv6ak6": {
+    "title": "if",
+    "description": "Basic conditional statement for executing code based on boolean conditions. Supports optional initialization statement before condition check. No parentheses required around condition but braces mandatory. Can be chained with else if for multiple conditions. Foundation of control flow.",
+    "links": []
+  },
+  "2XaDvTJ5pyChgt1GFZF8W": {
+    "title": "if-else",
+    "description": "Basic conditional statements for binary decision making. `if` tests condition, `else` handles alternative path. Can include optional initialization statement. No parentheses needed around condition but braces required. Foundation of program control flow.",
+    "links": []
+  },
+  "ZmPhiTrB8EK0LDdaJOhc8": {
+    "title": "switch",
+    "description": "Clean way to compare variable against multiple values and execute corresponding code blocks. No break statements needed (no fall-through by default). Works with any comparable type, supports multiple values per case, expression/type switches. More readable than if-else chains.",
+    "links": []
+  },
+  "orpxzKHFcf1BDQSefHl6O": {
+    "title": "Loops",
+    "description": "Go has only one looping construct: the flexible `for` loop. Basic form has initialization, condition, post statement. Supports `for range` for arrays, slices, maps, strings, channels. Can create infinite loops or while-style loops. Control with `break` and `continue`.",
+    "links": []
+  },
+  "ijS-b400c9BldRO6PlrC1": {
+    "title": "for loop",
+    "description": "Go's only looping construct, incredibly flexible for all iteration needs. Classic form: initialization, condition, post statements. Omit components for different behaviors (infinite, while-like). Use with `break`, `continue`, labels for nested loops. `for range` for convenient collection iteration.",
+    "links": []
+  },
+  "j0w6e8Pksh30PKDvXj3yk": {
+    "title": "for range",
+    "description": "Special form of for loop for iterating over arrays, slices, maps, strings, and channels. Returns index/key and value. For strings, returns rune index and rune value. For channels, returns only values. Use blank identifier `_` to ignore unwanted return values.",
+    "links": []
+  },
+  "Q6ic-AGG_gnXEOdmqom89": {
+    "title": "Iterating Maps",
+    "description": "Use `for range` to iterate over maps, returns key and value pairs. Iteration order is random for security reasons. Use blank identifier `_` to ignore key or value. Cannot modify map during iteration unless creating new map. Safe to delete during iteration.",
+    "links": []
+  },
+  "PC-azlCZ6wDCn1_nRyhUn": {
+    "title": "Iterating Strings",
+    "description": "Iterate over strings with `for range` to get runes (Unicode code points) not bytes. Returns index and rune value. Direct indexing `str[i]` gives bytes. Use `[]rune(str)` to convert to rune slice for random access. Important for Unicode handling.",
+    "links": []
+  },
+  "IWdAJ1BXqJv8EMYvFWRaH": {
+    "title": "break",
+    "description": "Immediately exits innermost loop or switch statement. In nested loops, only exits immediate loop unless used with labels to break outer loops. Essential for early termination when conditions are met. Helps write efficient loops that don't continue unnecessarily.",
+    "links": []
+  },
+  "BRKryB5HawXyXeBWM4QqU": {
+    "title": "continue",
+    "description": "Skips rest of current iteration and jumps to next loop iteration. Only affects innermost loop unless used with labels. Useful for filtering elements, handling special cases early, avoiding nested conditionals. Makes loops cleaner and more efficient.",
+    "links": []
+  },
+  "O29VoTfPiU8GZ_c16ZJIp": {
+    "title": "goto (discouraged)",
+    "description": "Go includes `goto` statement but discourages its use. Can only jump to labels within same function. Creates unstructured code flow making programs hard to read, debug, and maintain. Use structured control flow (loops, functions, conditionals) instead. Rarely needed in modern Go programming.",
+    "links": []
+  },
+  "axhcEfCEoFkLey4AbA84A": {
+    "title": "Functions",
+    "description": "First-class citizens in Go. Declared with `func` keyword, support parameters and return values. Can be assigned to variables, passed as arguments, returned from other functions. Support multiple return values, named returns, and variadic parameters. Building blocks of modular code.",
+    "links": []
+  },
+  "MBafBhpEV_7qgDNPOIBBs": {
+    "title": "Functions Basics",
+    "description": "Reusable code blocks declared with `func` keyword. Support parameters, return values, multiple returns. First-class citizens - can be assigned to variables, passed as arguments. Fundamental building blocks for organizing code logic.",
+    "links": []
+  },
+  "MUJfa0jIL_S_b2ndNpVVw": {
+    "title": "Variadic Functions",
+    "description": "Functions accepting variable number of arguments of same type. Syntax: `func name(args ...Type)`. Arguments treated as slice inside function. Call with multiple args or slice with `...` operator. Common in functions like `fmt.Printf()` and `append()`.",
+    "links": []
+  },
+  "ai2s1bwiTcPzrXQTxFDwV": {
+    "title": "Multiple Return Values",
+    "description": "Go functions can return multiple values, commonly used for returning result and error. Syntax: `func name() (Type1, Type2)`. Caller receives all returned values or uses blank identifier `_` to ignore unwanted values. Idiomatic for error handling pattern.",
+    "links": []
+  },
+  "cEQ9NQX7ZkKLwz_hg9L_7": {
+    "title": "Anonymous Functions",
+    "description": "Functions declared without names, also called function literals or lambdas. Can be assigned to variables, passed as arguments, or executed immediately. Useful for short operations, callbacks, goroutines, and closures. Access enclosing scope variables. Common in event handlers and functional patterns.",
+    "links": []
+  },
+  "ZSiNvYDTW2RYyPttls5iz": {
+    "title": "Closures",
+    "description": "Functions capturing variables from surrounding scope, accessible even after outer function returns. \"Close over\" external variables for specialized functions, callbacks, state maintenance. Useful for event handling, iterators, functional programming. Important for flexible, reusable code.",
+    "links": []
+  },
+  "HIvwT8Dcr6B2NjOjy9hFv": {
+    "title": "Named Return Values",
+    "description": "Function return parameters can be named and treated as variables within function. Initialized to zero values. `return` statement without arguments returns current values of named parameters. Improves readability and enables easier refactoring but use judiciously.",
+    "links": []
+  },
+  "z8-8nt-3GA7uN-cvOI-Qn": {
+    "title": "Call by Value",
+    "description": "Go creates copies of values when passing to functions, not references to originals. Applies to all types including structs and arrays. Provides safety but can be expensive for large data. Use pointers, slices, maps for references. Critical for performance optimization.",
+    "links": []
+  },
+  "naBjKGrTBzlpapXzLHfvG": {
+    "title": "Pointers",
+    "description": "Variables storing memory addresses of other variables. Enable efficient memory usage and allow functions to modify values. Declared with `*Type`, address obtained with `&`. No pointer arithmetic for safety. Essential for performance and building data structures.",
+    "links": []
+  },
+  "P0fUxEbb3bVYg35VWyg8R": {
+    "title": "Pointers Basics",
+    "description": "Variables storing memory addresses of other variables. Declared with `*Type`, dereferenced with `*ptr`, address obtained with `&var`. Enable efficient memory usage and allow functions to modify caller's data. Essential for performance and reference semantics.",
+    "links": []
+  },
+  "NfYlEY8f_YPITT6Exp3Iw": {
+    "title": "Pointers with Structs ",
+    "description": "Pointers to structs enable efficient passing of large structures and allow modification of struct fields. Access fields with `(*ptr).field` or shorthand `ptr.field`. Common for method receivers and when structs need to be modified by functions. Essential for memory efficiency.",
+    "links": []
+  },
+  "oAvCO3GOKktkbmPahkPlT": {
+    "title": "With Maps & Slices",
+    "description": "Maps and slices are reference types - passing them to functions doesn't copy underlying data. Modifications inside functions affect original. No need for explicit pointers. However, reassigning the slice/map variable itself won't affect caller unless using pointer.",
+    "links": []
+  },
+  "ItMgLOzaUCCdiTk221pAF": {
+    "title": "Memory Management",
+    "description": "Largely automatic through garbage collection. Runtime decides stack (fast, auto-cleaned) vs heap (slower, GC required) allocation via escape analysis. Understanding allocation patterns and avoiding memory leaks helps write efficient, scalable Go programs.",
+    "links": []
+  },
+  "GG0j6MNVudvITHEOXUxim": {
+    "title": "Garbage Collection",
+    "description": "Go's GC automatically reclaims unreachable memory using concurrent, tri-color mark-and-sweep collector designed for minimal pause times. Runs concurrently with your program. Understanding GC helps write efficient programs that work well with automatic memory management.",
+    "links": []
+  },
+  "jx1vln8hqRJqVZfJi6CST": {
+    "title": "Methods vs Functions",
+    "description": "Methods are functions with receiver arguments, defined outside type declaration. Enable object-like behavior on types. Functions are standalone, methods belong to specific types. Methods can have value or pointer receivers. Both can accept parameters and return values.",
+    "links": []
+  },
+  "6NKgb-OjGdT3QsMrDU05b": {
+    "title": "Pointer Receivers",
+    "description": "Methods receive pointer to struct rather than copy using `func (p *Type) methodName()` syntax. Necessary when method modifies receiver state or struct is large. Go automatically handles value/pointer conversion when calling methods.",
+    "links": []
+  },
+  "99a4irV044ybZN-boMgHv": {
+    "title": "Value Receivers",
+    "description": "Methods receive copy of struct rather than pointer. Use `func (v Type) methodName()` syntax. Appropriate when method doesn't modify receiver or struct is small. Can be called on both values and pointers with Go automatically dereferencing.",
+    "links": []
+  },
+  "hIRMnPyHRGh8xCU8BTS2n": {
+    "title": "Interfaces",
+    "description": "Define contracts specifying method signatures without implementation. Types satisfy interfaces implicitly by implementing required methods. Enable polymorphism and loose coupling. Empty interface `interface{}` accepts any type. Foundation of Go's type system and composition patterns.",
+    "links": []
+  },
+  "ueJ7ndK2SKniDVjN2aUlO": {
+    "title": "Empty Interfaces",
+    "description": "The empty interface `interface{}` can hold values of any type since every type implements at least zero methods. Used for generic programming before Go 1.18 generics. Requires type assertions or type switches to access underlying values. Common in APIs handling unknown data types.",
+    "links": []
+  },
+  "wK7GNTbOsMNs0N_1N4-dU": {
+    "title": "Embedding Interfaces",
+    "description": "Create new interfaces by combining existing ones, promoting composition and reusability. Embedded interface methods automatically included. Enables interface hierarchies from simpler, focused interfaces. Supports composition over inheritance for modular, extensible systems.",
+    "links": []
+  },
+  "4EJ4WnH2HA3ci2uoqmNex": {
+    "title": "Type Assertions",
+    "description": "Extract underlying concrete value from interface. Syntax: `value.(Type)` or `value, ok := value.(Type)` for safe assertion. Panics if type assertion fails without ok form. Essential for working with interfaces and empty interfaces.",
+    "links": []
+  },
+  "6r9XbwlBtHmJrhviG2cTD": {
+    "title": "Type Switch",
+    "description": "Special form of switch statement that operates on types rather than values. Syntax: `switch v := i.(type)`. Used with interfaces to determine underlying concrete type. Each case specifies types to match. Essential for handling interface{} and polymorphic code.",
+    "links": []
+  },
+  "nkONsPlFYCMqzWHTm_EPB": {
+    "title": "Interfaces Basics",
+    "description": "Define contracts through method signatures. Types automatically satisfy interfaces by implementing required methods. Declared with `type InterfaceName interface{}` syntax. Enable polymorphism and flexible, testable code depending on behavior rather than concrete types.",
+    "links": []
+  },
+  "uEpTANOBHlFwCg5p44Lh0": {
+    "title": "Generics",
+    "description": "Introduced in Go 1.18, allow functions and types to work with different data types while maintaining type safety. Enable reusable code without sacrificing performance. Use type parameters (square brackets) and constraints. Reduce code duplication while preserving strong typing.",
+    "links": []
+  },
+  "9EdDI0vJaEmz3XxXMrpX9": {
+    "title": "Why Generics?",
+    "description": "Introduced in Go 1.18 to solve code duplication when working with multiple types. Before generics: separate functions per type, empty interfaces (losing type safety), or code generation. Enable type-safe, reusable code maintaining compile-time checking.",
+    "links": []
+  },
+  "p7L4EUsjMnJlrbb-oDvlf": {
+    "title": "Generic Functions",
+    "description": "Write functions working with multiple types using type parameters in square brackets like `func FunctionName[T any](param T) T`. Enable reusable algorithms maintaining type safety. Particularly useful for utility functions and data processing that don't depend on specific types.",
+    "links": []
+  },
+  "eWZzradMaH57H4mI7Qw6n": {
+    "title": "Generic Types / Interfaces",
+    "description": "Create reusable data structures and interface definitions working with multiple types. Define with type parameters like `type Container[T any] struct { value T }`. Enable type-safe containers, generic slices, maps, and custom structures while maintaining Go's strong typing.",
+    "links": []
+  },
+  "8o6A2kGnupGYaaTwgsTDp": {
+    "title": "Type Constraints",
+    "description": "Specify which types can be used as type arguments for generics. Defined using interfaces with method signatures or type sets. Common constraints include `any`, `comparable`, and custom constraints. Enable writing generic code that safely operates on type parameters.",
+    "links": []
+  },
+  "36gt0FmNDxuIIV47aqBeH": {
+    "title": "Type Inference",
+    "description": "Allows compiler to automatically determine generic type arguments based on function arguments or context. Reduces need for explicit type specification while maintaining type safety. Makes generic functions cleaner and more readable by eliminating redundant type specifications.",
+    "links": []
+  },
+  "7EKUfKx7_7lZOs3d84iyL": {
+    "title": "Error Handling Basics",
+    "description": "Go uses explicit error handling with error return values. Functions return error as last value. Check `if err != nil` pattern. Create errors with `errors.New()` or `fmt.Errorf()`. No exceptions - errors are values to be handled explicitly.",
+    "links": []
+  },
+  "0mMP6QR0V-Zi25njD1TFT": {
+    "title": "`error` interface",
+    "description": "Built-in interface with single `Error() string` method. Any type implementing this method can represent an error. Central to Go's error handling philosophy, providing consistent error representation across all Go code. Fundamental for effective error handling.",
+    "links": []
+  },
+  "dHk6Y0zFqxtCuDiQcHQsi": {
+    "title": "errors.New",
+    "description": "Simplest way to create error values by taking a string message and returning an error implementing the error interface. Useful for simple, static error messages. Often combined with error wrapping or used for predefined error constants.",
+    "links": []
+  },
+  "LVaWjZfij6-z_uwkAc0MK": {
+    "title": "fmt.Errorf",
+    "description": "Creates formatted error messages using printf-style verbs. Supports `%w` verb for error wrapping (Go 1.13+) to create error chains preserving original errors while adding context. Essential for descriptive errors with dynamic values and debugging information.",
+    "links": []
+  },
+  "s2WlOMMKNXf6O2Qiqcm_m": {
+    "title": "Wrapping/Unwrapping Errors",
+    "description": "Create error chains preserving original errors while adding context using `fmt.Errorf()` with `%w` verb. Use `errors.Unwrap()`, `errors.Is()`, and `errors.As()` to work with wrapped errors. Enables rich error contexts for easier debugging.",
+    "links": []
+  },
+  "vjfqq1XVS25FVe9smtel0": {
+    "title": "Sentinel Errors",
+    "description": "Predefined error values representing specific conditions, defined as package-level variables. Check using `errors.Is()` or direct comparison. Examples: `io.EOF`. Enable predictable APIs where callers handle specific errors differently.",
+    "links": []
+  },
+  "2KyzUjcMiMgo_AvlPjYbx": {
+    "title": "`panic` and `recover`",
+    "description": "`panic()` stops execution and unwinds stack, `recover()` catches panics in deferred functions. Use sparingly for unrecoverable errors. While Go emphasizes explicit errors, panic/recover serve as safety net for exceptional situations.",
+    "links": []
+  },
+  "rR_BIgiSR63rVlO2Igzin": {
+    "title": "Stack Traces & Debugging",
+    "description": "Go automatically prints stack traces on panic showing call chain. Tools include Delve debugger, pprof profiling, and race detection. Stack traces show function calls, file locations, and line numbers for effective troubleshooting.",
+    "links": []
+  },
+  "kep_536v13aS1V9XwHKSr": {
+    "title": "Modules & Dependencies",
+    "description": "Go modules are the dependency management system introduced in Go 1.11. Define module with `go.mod` file containing module path and dependencies. Use `go get` to add dependencies, `go mod tidy` to clean up. Supports semantic versioning and replacement directives. Essential for modern Go development.",
+    "links": []
+  },
+  "zWXJOXo8dRnuTvYlWOL6r": {
+    "title": "go mod init",
+    "description": "Initializes new Go module by creating `go.mod` file with specified module path (typically repository URL). Marks directory as module root and enables module-based dependency management. First step for any new Go project.",
+    "links": []
+  },
+  "6rwVq1bMSHoGatEfm9hkp": {
+    "title": "go mod tidy",
+    "description": "Ensures `go.mod` matches source code by adding missing requirements and removing unused dependencies. Updates `go.sum` with checksums. Essential for maintaining clean dependency management and ensuring reproducible builds before production deployment.",
+    "links": []
+  },
+  "jOiAk5coeDNVXP2QiwQis": {
+    "title": "go mod vendor",
+    "description": "Creates `vendor` directory with dependency copies for bundling with source code. Ensures builds work without internet access. Useful for deployment, air-gapped environments, and complete control over dependency availability.",
+    "links": []
+  },
+  "AcYzrGFrwmeVYFEfhEiSZ": {
+    "title": "Packages",
+    "description": "Fundamental unit of code organization in Go. Group related functions, types, and variables. Defined by package declaration at file top. Exported names start with capital letters. Import with `import` statement. Enable modularity, reusability, and namespace management.",
+    "links": []
+  },
+  "dA8SMhCev1NWNM1Tsxu57": {
+    "title": "Package Import Rules",
+    "description": "Key rules: no circular imports, main package for executables, lowercase package names, exported identifiers start with capitals. Import paths are unique identifiers. Understanding ensures proper structure and follows Go conventions.",
+    "links": []
+  },
+  "eBv3i2cNA7vc01jLAbB8m": {
+    "title": "Using 3rd Party Packages",
+    "description": "Import external libraries using `go get package-url` which updates `go.mod`. Consider maintenance status, documentation, license, and security when choosing packages. Go modules handle version management and ensure reproducible builds.",
+    "links": []
+  },
+  "CysLmwRqmQzOGAKM01AKF": {
+    "title": "Publishing Modules",
+    "description": "Share Go code through version control systems using semantic versioning tags. Go proxy system automatically discovers and serves modules. Follow Go conventions, maintain documentation, and ensure backward compatibility to contribute to the ecosystem.",
+    "links": []
+  },
+  "08QOxnF3rKEDekrkX7w1j": {
+    "title": "Goroutines",
+    "description": "Lightweight threads managed by Go runtime enabling concurrent function execution. Created with `go` keyword prefix. Minimal memory overhead, can run thousands/millions concurrently. Runtime handles scheduling across CPU cores. Communicate through channels, fundamental to Go's concurrency.",
+    "links": []
+  },
+  "EgXagvLpJkXUI2od5K1FD": {
+    "title": "Channels",
+    "description": "Primary mechanism for goroutine communication following \"share memory by communicating\" principle. Typed conduits created with `make()`. Come in buffered and unbuffered varieties. Used for synchronization, data passing, and coordinating concurrent operations. Essential for concurrent programming.",
+    "links": []
+  },
+  "4_nvU_YOs9Psey5TZLQFb": {
+    "title": "Buffered vs Unbuffered",
+    "description": "Unbuffered channels provide synchronous communication - sender blocks until receiver ready. Buffered channels allow asynchronous communication up to capacity. Unbuffered for coordination/sequencing, buffered for performance/decoupling. Critical distinction for concurrent system design.",
+    "links": []
+  },
+  "RBr1uAdngIsvSpIdHHOyV": {
+    "title": "Select Statement",
+    "description": "Multiplexer for channel operations. Waits on multiple channel operations simultaneously, executing first one ready. Supports send/receive operations, default case for non-blocking behavior. Essential for coordinating multiple goroutines and implementing timeouts.",
+    "links": []
+  },
+  "z8ItWHAupaastLcXY3npY": {
+    "title": "Worker Pools",
+    "description": "Concurrency pattern using fixed number of goroutines to process tasks from shared queue. Controls resource usage while maintaining parallelism. Typically implemented with buffered channels for task distribution and WaitGroups for synchronization. Ideal for CPU-bound tasks and rate limiting.",
+    "links": []
+  },
+  "nOI0juYhqJXNTiJBU4bKH": {
+    "title": "`sync` Package",
+    "description": "Provides synchronization primitives for coordinating goroutines and safe concurrent access. Includes Mutex (mutual exclusion), RWMutex (reader-writer locks), WaitGroup (waiting on goroutines), Once (one-time init). Essential for avoiding race conditions.",
+    "links": []
+  },
+  "6ydgmac11Zu9Ithe0kKj9": {
+    "title": "Mutexes",
+    "description": "Mutual exclusion locks from sync package ensuring only one goroutine accesses shared resource at a time. Use `Lock()` before and `Unlock()` after critical section. RWMutex allows multiple readers or single writer. Essential for protecting shared data from race conditions.",
+    "links": []
+  },
+  "amqOwSgVFDymAsDIobwiK": {
+    "title": "WaitGroups",
+    "description": "Synchronization primitive from sync package for waiting on multiple goroutines to complete. Use `Add()` to increment counter, `Done()` when goroutine finishes, `Wait()` to block until counter reaches zero. Essential for coordinating goroutine completion in concurrent programs.",
+    "links": []
+  },
+  "vxB3aGreqWBrNhiu8hcPE": {
+    "title": "`context` Package",
+    "description": "Carries deadlines, cancellation signals, and request-scoped values across API boundaries. Essential for robust concurrent applications, especially web services. Enables cancelling long-running operations, setting timeouts, passing request data. Typically first parameter passed down call stack.",
+    "links": []
+  },
+  "p5u2tWRmRtyfBgKcSUHFU": {
+    "title": "Deadlines & Cancellations",
+    "description": "Context package mechanisms for controlling operation lifetime and propagating cancellation signals. Supports deadlines (absolute time) or timeouts (duration). Functions should check `ctx.Done()` and return early when cancelled. Essential for robust concurrent applications.",
+    "links": []
+  },
+  "gChqUzY3SbPJH0H0jcoAp": {
+    "title": "Common Usecases",
+    "description": "Context package common uses: HTTP timeouts, database deadlines, goroutine cancellation coordination, and request-scoped values. Essential for web servers, microservices, circuit breakers, and building responsive APIs that handle cancellation gracefully.",
+    "links": []
+  },
+  "2yKVKaCXrcv5X4o2d6oqm": {
+    "title": "Concurrency Patterns",
+    "description": "Established design approaches for structuring concurrent programs using goroutines and channels. Key patterns: fan-in (merging inputs), fan-out (distributing work), pipelines (chaining operations), worker pools, pub-sub communication. Help build efficient, scalable apps while avoiding race conditions and deadlocks.",
+    "links": []
+  },
+  "8BrnnM7HM-bijbUDgnW49": {
+    "title": "fan-in",
+    "description": "Concurrency pattern merging multiple input channels into single output channel. Allows collecting results from multiple goroutines. Typically implemented with select statement or separate goroutines for each input. Useful for aggregating parallel processing results.",
+    "links": []
+  },
+  "pN8EsuKUPDUKyskodu_sC": {
+    "title": "fan-out",
+    "description": "Concurrency pattern distributing work from single source to multiple workers. Typically uses one input channel feeding multiple goroutines. Each worker processes items independently. Useful for parallelizing CPU-intensive tasks and increasing throughput through parallel processing.",
+    "links": []
+  },
+  "loozcCzPzkni7BOdcvt1S": {
+    "title": "pipeline",
+    "description": "Concurrency pattern chaining processing stages where output of one stage becomes input of next. Each stage runs concurrently using goroutines and channels. Enables parallel processing and separation of concerns. Common in data processing, transformation workflows, and streaming applications.",
+    "links": []
+  },
+  "GoV8yaQARJmO47e0_l_GY": {
+    "title": "Race Detection",
+    "description": "Built-in tool for detecting race conditions in concurrent programs. Enabled with `-race` flag during build/test/run. Detects unsynchronized access to shared variables from multiple goroutines. Performance overhead in race mode. Essential for debugging concurrent code safety.",
+    "links": []
+  },
+  "-Qy9DEWVYUNRHWiXXhIWU": {
+    "title": "Standard Library",
+    "description": "Comprehensive collection of packages providing core functionality. Includes I/O, networking, text processing, cryptography, testing, JSON handling, HTTP client/server. Rich ecosystem reducing need for external dependencies. Well-documented, tested, and performance-optimized packages.",
+    "links": []
+  },
+  "7SYEXD5r9WKEDfecQdO5d": {
+    "title": "I/O & File Handling",
+    "description": "Go's I/O system provides comprehensive file and stream handling through `io` package interfaces (Reader, Writer, Closer) and `os` package file operations. The interface-based design allows working with files, network connections, and buffers using consistent patterns.",
+    "links": []
+  },
+  "-8E79Ns4q-uAgcxtghPzf": {
+    "title": "flag",
+    "description": "Standard library package for parsing command-line flags. Supports string, int, bool, duration flags with default values and descriptions. Automatically generates help text. Simple API for basic CLI argument parsing before using frameworks like Cobra.",
+    "links": []
+  },
+  "aK9EQO1JR9hYIMkS3mdai": {
+    "title": "time",
+    "description": "Standard library package for time and date operations. Handles parsing, formatting, arithmetic, timers, tickers, and timezone operations. Key types: Time, Duration, Location. Supports RFC3339 format, custom layouts, time zones. Essential for scheduling, timeouts, timestamps.",
+    "links": []
+  },
+  "uB1fE15OprBcwN7p7ffJF": {
+    "title": "encoding/json",
+    "description": "",
+    "links": []
+  },
+  "9S1gkzBvt32uLy0IFZjrg": {
+    "title": "os",
+    "description": "Standard library package providing operating system interface. Handles file operations, environment variables, process management, and system information. Includes functions for file I/O, directory operations, process control, and cross-platform OS interactions. Essential for system programming.",
+    "links": []
+  },
+  "Z8j6Zkg1LYEYcoRgs23Ms": {
+    "title": "bufio",
+    "description": "Provides buffered I/O operations wrapping io.Reader/Writer interfaces for better performance. Reduces system calls by reading/writing larger chunks. Includes Scanner for line reading, Reader for buffered reading, Writer for buffered writing. Essential for efficient large file/network operations.",
+    "links": []
+  },
+  "hFlbSSBMcJtjXNL8jAcbc": {
+    "title": "slog",
+    "description": "Structured logging package introduced in Go 1.21. Provides leveled, structured logging with JSON output support. Better than basic log package for production use. Supports custom handlers, context integration, and performance optimization. Modern replacement for traditional logging.",
+    "links": []
+  },
+  "9K5ffACdKNPJiWPq4tUWD": {
+    "title": "regexp",
+    "description": "Standard library package for regular expression functionality. Implements RE2 syntax for safe, efficient pattern matching. Provides functions for matching, finding, replacing text patterns. Supports compiled expressions for performance. Essential for text processing, validation, parsing.",
+    "links": []
+  },
+  "iIPk-jK1vBCG_rKI_MPiu": {
+    "title": "go:embed for embedding",
+    "description": "The `go:embed` directive embeds files and directories into Go binaries at compile time using `//go:embed` comments. Useful for including static assets, configs, and templates directly in executables, creating self-contained binaries that don't require external files.",
+    "links": []
+  },
+  "nZkLFmm2GENL81y5LB0c1": {
+    "title": "`testing` package basics",
+    "description": "Standard library package for writing tests. Test functions start with `Test` and take `*testing.T` parameter. Use `t.Error()`, `t.Fatal()` for failures. Test files end with `_test.go`. Run with `go test`. Supports benchmarks and examples.",
+    "links": []
+  },
+  "6-mr65JzXbRzIukE7jzoZ": {
+    "title": "Table-driven Tests",
+    "description": "Table-driven tests use slices of test cases to test multiple scenarios with the same logic. Each case contains inputs and expected outputs. Makes adding test cases easy and provides comprehensive coverage with minimal code duplication.",
+    "links": []
+  },
+  "LjLbm4JEZ19howOkju7zQ": {
+    "title": "Mocks and Stubs",
+    "description": "Mocks and stubs replace dependencies with controlled implementations for isolated testing. Stubs provide predefined responses while mocks verify method calls. Go's interfaces make mocking natural. Essential for testing without external dependencies.",
+    "links": []
+  },
+  "Zt4FpqCEVlpMzclJeDiMs": {
+    "title": "`httptest`  for HTTP Tests",
+    "description": "The `httptest` package provides utilities for testing HTTP servers and clients without network connections. Includes `httptest.Server`, `ResponseRecorder`, and helpers for creating test requests. Essential for testing handlers, middleware, and HTTP services.",
+    "links": []
+  },
+  "t9xOuLBrAzEvv2-bOU2hF": {
+    "title": "Benchmarks",
+    "description": "Benchmarks measure code performance by timing repeated executions. Functions start with `Benchmark` and use `*testing.B` parameter. Run with `go test -bench=.` to identify bottlenecks, compare implementations, and track performance changes over time.",
+    "links": []
+  },
+  "27lhNAdKwRrc2S2ha3QNG": {
+    "title": "Coverage",
+    "description": "Test coverage measures code execution during testing using `go test -cover` and `-coverprofile`. Visualize with `go tool cover -html` to identify untested code paths. Helps maintain quality standards and guide testing efforts for more reliable applications.",
+    "links": []
+  },
+  "2fk1ewM42WnFlDejVETys": {
+    "title": "Building CLIs",
+    "description": "Go excels at CLI development due to fast compilation, single binary distribution, and rich ecosystem. Use standard `flag` package or frameworks like Cobra, urfave/cli, Bubble Tea. Cross-compilation support for multiple platforms. Great for learning Go while building useful tools.",
+    "links": []
+  },
+  "3frPZLeFXnHroY7_Uk5Dn": {
+    "title": "Cobra",
+    "description": "Powerful library for modern CLI applications. Used by kubectl, Hugo, GitHub CLI. Provides nested subcommands, flags, intelligent suggestions, auto help generation, shell completion. Follows POSIX standards with clean API. Includes command generator for quick bootstrapping.",
+    "links": []
+  },
+  "bmNLSk-XuK2EuLxPR1Sxh": {
+    "title": "urfave/cli",
+    "description": "urfave/cli is a simple package for building command-line applications with intuitive API for commands, flags, and arguments. Features automatic help generation, bash completion, nested subcommands, and environment variable integration for lightweight CLI tools.",
+    "links": []
+  },
+  "x9hDkF73rmvbewrgRgyOv": {
+    "title": "bubbletea",
+    "description": "Bubble Tea is a framework for building terminal UIs based on The Elm Architecture. Uses model-update-view pattern for interactive CLI applications with keyboard input, styling, and component composition. Excellent for sophisticated terminal tools and dashboards.",
+    "links": []
+  },
+  "CwGw3CDVLqErQGTwjzhmL": {
+    "title": "Web Development",
+    "description": "Excellent for web development with built-in HTTP server support, efficient concurrency, rich ecosystem. Standard `net/http` package provides powerful tools for servers, requests/responses, RESTful APIs. Performance, simple deployment (single binary), and concurrency make it ideal for scalable web apps.",
+    "links": []
+  },
+  "NMLmbKjfMSqz-Iz2CooCl": {
+    "title": "net/http (standard)",
+    "description": "Standard library package for HTTP client/server functionality. Provides HTTP server with routing, middleware support, client for making requests. Handles TLS, HTTP/2, cookies, multipart forms. Foundation for web development without external frameworks.",
+    "links": []
+  },
+  "xM1uUCXNrJwfTgi9E75KV": {
+    "title": "gin",
+    "description": "Popular HTTP web framework emphasizing performance and productivity. Lightweight foundation for APIs/web services with minimal boilerplate. Fast routing, middleware, JSON validation, error management, built-in rendering. Clean API for RESTful services. Includes parameter binding, uploads, static files.",
+    "links": []
+  },
+  "1qhqEYf6wYf5sfXgTUnmi": {
+    "title": "echo",
+    "description": "High-performance, minimalist web framework focusing on ease and speed. Provides routing, middleware, data binding, validation, rendering. Features automatic TLS, HTTP/2, WebSocket support. Built-in middleware for CORS, JWT, logging, compression. Popular for RESTful APIs and microservices.",
+    "links": []
+  },
+  "5lJPsJwgy0_T7Xl6eQxuB": {
+    "title": "fiber",
+    "description": "Fiber is an Express-inspired web framework built on fasthttp for exceptional performance. Provides familiar API with middleware, routing, templates, and WebSocket support. Popular for high-performance REST APIs and microservices requiring speed and simplicity.",
+    "links": []
+  },
+  "p7yeYkbQKAjr2aA_eUno4": {
+    "title": "beego",
+    "description": "Beego is a full-stack web framework providing MVC architecture, ORM, session management, caching, and admin interface generation. Follows convention over configuration with extensive tooling for rapid development of enterprise applications requiring comprehensive features.",
+    "links": []
+  },
+  "tBY6UB3gWZAxHPCFHoU_d": {
+    "title": "gRPC & Protocol Buffers",
+    "description": "gRPC is a high-performance RPC framework using Protocol Buffers for serialization. Provides streaming, authentication, load balancing, and code generation from `.proto` files. Excellent for microservices with type safety, efficient binary format, and cross-language compatibility.",
+    "links": []
+  },
+  "VcHHuIZ4lGzTxOoTwxA3e": {
+    "title": "ORMs & DB Access",
+    "description": "Go offers multiple database access approaches: raw SQL with database/sql, ORMs like GORM/Ent, and query builders. Choose based on complexity needs - raw SQL for performance, ORMs for rapid development, query builders for balance. Consider connection pooling and migrations.",
+    "links": []
+  },
+  "cOj6klfBzTQQ8G75umLQZ": {
+    "title": "pgx",
+    "description": "pgx is a pure Go PostgreSQL driver providing both database/sql compatibility and native PostgreSQL features. Offers better performance than lib/pq, includes arrays, JSON support, connection pooling, and PostgreSQL-specific features like LISTEN/NOTIFY.",
+    "links": []
+  },
+  "fJdZIbAgOAB8nOEHQNsq6": {
+    "title": "GORM",
+    "description": "Popular Object-Relational Mapping library for Go. Provides database abstraction with struct-based models, automatic migrations, associations, and query building. Supports multiple databases (MySQL, PostgreSQL, SQLite, SQL Server). Features hooks, transactions, and connection pooling.",
+    "links": []
+  },
+  "mGia5cJ7HFVXM0Fx5xhQE": {
+    "title": "Logging",
+    "description": "Essential for monitoring, debugging, maintaining production applications. Standard `log` package and `slog` (Go 1.21+) for structured logging. Popular libraries: Zap (high-performance), Zerolog (zero-allocation), Logrus (feature-rich). Use appropriate log levels and structured messages.",
+    "links": []
+  },
+  "TR7N68_evDMu3qWHbGJcz": {
+    "title": "Zerolog",
+    "description": "Zerolog is a zero-allocation JSON logger focusing on performance and simplicity. Provides structured logging with fluent API, various log levels, and no memory allocations during operations, making it ideal for high-throughput production applications.",
+    "links": []
+  },
+  "4D8QsZVAUB9vGbVFgRHt4": {
+    "title": "Zap",
+    "description": "Zap is a high-performance structured logging library by Uber offering both structured and printf-style APIs. Features include JSON/console formats, configurable levels, sampling, and production-optimized performance through careful memory management.",
+    "links": []
+  },
+  "o2EYfm1WSd8Eq_ZcXYreo": {
+    "title": "Realtime Communication",
+    "description": "Realtime communication in Go enables instant bidirectional updates using WebSockets, Server-Sent Events, and messaging patterns. Go's concurrency makes it ideal for handling multiple connections. Essential for chat apps, live dashboards, and interactive applications requiring immediate synchronization.",
+    "links": []
+  },
+  "N0EG-7sU9lGFwgidXuPkV": {
+    "title": "Melody",
+    "description": "Melody is a minimalist WebSocket framework for Go providing simple session management, message broadcasting, and connection handling. Features include rooms, automatic ping/pong, message limits, and clean integration with existing web frameworks for real-time apps.",
+    "links": []
+  },
+  "LOl-7BtdmYrBS0PTtHI1I": {
+    "title": "Centrifugo",
+    "description": "Centrifugo is a real-time messaging server providing WebSocket services for Go applications. It offers channels, presence info, message history, and Redis scalability. Supports WebSocket, Server-Sent Events, and HTTP streaming while handling complex real-time patterns.",
+    "links": []
+  },
+  "rW4QPWIS2TWzFY0Ljny2N": {
+    "title": "go run",
+    "description": "Compiles and executes Go programs in one step without creating executable files. Useful for testing, development, and running scripts. Takes Go source files as arguments. Convenient for quick execution during development without build artifacts.",
+    "links": []
+  },
+  "LXqEJwGA_0cVUbF6DVwBG": {
+    "title": "go build",
+    "description": "Compiles Go packages and dependencies into executable binaries. Supports cross-compilation for different OS/architectures via GOOS/GOARCH. Includes build constraints, custom flags, optimization levels. Produces statically linked binaries by default. Essential for deployment and distribution.",
+    "links": []
+  },
+  "k35Ogbvr9yTdJPo4RV4tM": {
+    "title": "go install",
+    "description": "Compiles and installs packages and dependencies. Creates executables in `$GOPATH/bin` for main packages. Use `go install package@version` to install specific versions of tools. Commonly used for installing CLI tools system-wide.",
+    "links": []
+  },
+  "CPFiclXXVQCsbooA0iCEy": {
+    "title": "go fmt",
+    "description": "Automatically formats Go source code according to official style guidelines. Standardizes indentation, spacing, alignment for consistent code style. Opinionated and non-configurable, eliminating formatting debates. Essential for clean, readable, community-standard code.",
+    "links": []
+  },
+  "5hnaPrYSBzxEIxFeg5tCK": {
+    "title": "go mod",
+    "description": "Command-line tool for module management. `go mod init` creates module, `go mod tidy` cleans dependencies, `go mod download` fetches modules. Manages go.mod and go.sum files. Essential commands for dependency management and version control.",
+    "links": []
+  },
+  "EskFmwCwOmZHcVzedPOJI": {
+    "title": "go test",
+    "description": "Command for running tests in Go packages. Automatically finds and executes functions starting with `Test`. Supports benchmarks (`Benchmark`), examples (`Example`), and sub-tests. Includes coverage analysis, parallel execution, and various output formats. Essential for TDD and quality assurance.",
+    "links": []
+  },
+  "bxXzXM0zUm1vux1DKOLyf": {
+    "title": "go clean",
+    "description": "Removes object files and cached files from build process. Options include `-cache` for build cache and `-modcache` for module downloads. Useful for troubleshooting build issues, freeing disk space, and ensuring clean builds.",
+    "links": []
+  },
+  "SoD0P5k4aSVRN96XxR5on": {
+    "title": "go doc",
+    "description": "Prints documentation for Go packages, types, functions, and methods extracted from specially formatted comments. Use `go doc package` or `go doc package.Function` to view specific documentation. Essential for exploring APIs and verifying documentation formatting.",
+    "links": []
+  },
+  "LnhQJVsEaS_gSijCUqAMq": {
+    "title": "go version",
+    "description": "Displays the currently installed Go version, target OS, and architecture. Essential for verifying installation, troubleshooting environment issues, and ensuring compatibility across different development environments and teams.",
+    "links": []
+  },
+  "TstTkc_-2RZMOqtSIklEM": {
+    "title": "go generate",
+    "description": "The `go generate` command executes commands specified in `//go:generate` directives to generate Go source code. Used for code generation from templates, string methods, embedded resources, and running tools like protobuf compilers for build automation.",
+    "links": []
+  },
+  "Jxt4HD2iA6lRXNRJIVCLs": {
+    "title": "Build Tags",
+    "description": "Build tags control file inclusion using `//go:build` directives based on conditions like OS, architecture, or custom tags. Enable conditional compilation for platform-specific code, feature flags, and environment-specific builds without runtime overhead.",
+    "links": []
+  },
+  "qoQ6_5MgTu3ur1mkEgqG5": {
+    "title": "go vet",
+    "description": "Built-in tool analyzing Go source code for suspicious constructs likely to be bugs. Checks for unreachable code, incorrect printf formats, struct tag mistakes, and potential nil pointer dereferences. Automatically run by `go test`.",
+    "links": []
+  },
+  "6RpfXYHnOGmM6pZ6ZBb29": {
+    "title": "goimports",
+    "description": "Tool automatically managing Go import statements by adding missing imports and removing unused ones while formatting code. More convenient than manual import management, integrates with editors for automatic execution on save.",
+    "links": []
+  },
+  "ksimJz7uvSh80ZIekSn_-": {
+    "title": "revive",
+    "description": "Fast, configurable Go linter providing rich formatting and many rules for code analysis. Drop-in replacement for golint with better performance, configurable rules, and various output formats. Helps maintain consistent code quality across projects.",
+    "links": []
+  },
+  "954ffF8CmXYX-L36Lfl44": {
+    "title": "staticcheck",
+    "description": "State-of-the-art Go linter catching bugs, performance issues, and style problems through static analysis. Provides more comprehensive checking than go vet with very few false positives. Detects unused code, incorrect API usage, and subtle bugs.",
+    "links": []
+  },
+  "hgiNcGh3ggf8dBJ8C0HCL": {
+    "title": "golangci-lint",
+    "description": "Fast, parallel runner for multiple Go linters including staticcheck, go vet, and revive. Provides unified configuration, output formatting, and performance optimization. Streamlines code quality workflows through a single comprehensive tool.",
+    "links": []
+  },
+  "K__satcG2ETNRFBpPqrLw": {
+    "title": "govulncheck",
+    "description": "Go's official vulnerability scanner checking code and dependencies for known security vulnerabilities. Reports packages with vulnerabilities from Go database, provides severity info and remediation advice. Essential for maintaining secure applications.",
+    "links": []
+  },
+  "Blz9cpgKhuqtY75oUQw6I": {
+    "title": "pprof",
+    "description": "Built-in profiling tool for analyzing program performance. Profiles CPU usage, memory allocation, goroutines, blocking operations. Import `net/http/pprof` for web interface or use `go tool pprof` for analysis. Essential for performance optimization and bottleneck identification.",
+    "links": []
+  },
+  "RE2jfECHkWvy3ldDZL938": {
+    "title": "trace",
+    "description": "The Go trace tool captures execution traces showing goroutine execution, system calls, GC, and scheduling. Generate traces with `runtime/trace` package, analyze with `go tool trace`. Provides web interface for diagnosing concurrency issues and performance bottlenecks.",
+    "links": []
+  },
+  "7aTYeCd915F3UHqb6j0Az": {
+    "title": "Race Detector",
+    "description": "Runtime tool detecting data races in concurrent programs using the `-race` flag. Tracks memory accesses and reports conflicts with detailed information including stack traces. Essential for finding concurrency bugs during development and testing.",
+    "links": []
+  },
+  "mvcWcecHA_jyQY1txFgL_": {
+    "title": "Cross-compilation",
+    "description": "Build executables for different OS and architectures using `GOOS` and `GOARCH` environment variables. Example: `GOOS=linux GOARCH=amd64 go build` creates Linux binaries. Enables multi-platform development without separate build environments.",
+    "links": []
+  },
+  "zCUmPIGVslLfECqfUgAr2": {
+    "title": "Building Executables",
+    "description": "The `go build` command compiles source code into standalone native executables with static linking. Creates self-contained binaries including all dependencies, requiring no Go installation on target systems. Control builds with various optimization flags.",
+    "links": []
+  },
+  "_2JpTdzmXxszFCauJONCi": {
+    "title": "Memory Mgmt. in Depth",
+    "description": "Deep memory management involves understanding garbage collection, escape analysis, allocation patterns, and optimization techniques. Covers stack vs heap allocation, memory pooling, reducing allocations, and GC interaction for high-performance applications.",
+    "links": []
+  },
+  "ixoXVtRlrvTittqQq-Bgo": {
+    "title": "Escape Analysis",
+    "description": "Compile-time optimization determining whether variables are allocated on stack (fast) or heap (GC required). Variables that \"escape\" their scope need heap allocation. Use `go build -gcflags=\"-m\"` to view decisions. Understanding helps minimize heap allocations and reduce GC pressure.",
+    "links": []
+  },
+  "GO50AoBOjO-EaK3s36jSS": {
+    "title": "Reflection",
+    "description": "Reflection allows runtime inspection and manipulation of types and values using the `reflect` package. Enables dynamic method calls and type examination but has performance overhead. Used in JSON marshaling, ORMs, and frameworks.",
+    "links": []
+  },
+  "tM-AAWqMJsYZ1i6DCfBeD": {
+    "title": "Unsafe Package",
+    "description": "The `unsafe` package bypasses Go's type and memory safety for direct memory manipulation and pointer arithmetic. Powerful but dangerous - can cause crashes and vulnerabilities. Used for systems programming and performance-critical code. Use with extreme caution.",
+    "links": []
+  },
+  "zmBYvecc5zSoLCinH68gc": {
+    "title": "Build Constraints & Tags",
+    "description": "Special comments controlling which files are included when building. Use `//go:build` directive for platform-specific code, environment builds, or feature toggles. Common for different OS/architectures or debug vs production builds. Essential for portable Go applications.",
+    "links": []
+  },
+  "mxbs96wFJ5XGDoETA0fU_": {
+    "title": "CGO Basics",
+    "description": "CGO allows Go programs to call C code and vice versa using special comments. Enables C library integration but disables cross-compilation, reduces performance, and complicates deployment. Useful for legacy integration but pure Go is preferred.",
+    "links": []
+  },
+  "xsjUeyxweN2GbcjknDjT8": {
+    "title": "Compiler & Linker Flags",
+    "description": "Build flags control compilation and linking. Common flags include `-ldflags` for linker options, `-gcflags` for compiler settings, `-tags` for build tags, and `-race` for race detection. Help optimize builds, reduce binary size, and embed build information.",
+    "links": []
+  },
+  "NlkrCAdUCJ7kU9meQJM5_": {
+    "title": "Plugins & Dynamic Loading",
+    "description": "Go's plugin system allows loading shared libraries (.so files) at runtime using the `plugin` package. Built with `go build -buildmode=plugin`. Enables modular architectures but has limitations: Unix-only, version compatibility issues, and complexity.",
+    "links": []
+  }
+}
