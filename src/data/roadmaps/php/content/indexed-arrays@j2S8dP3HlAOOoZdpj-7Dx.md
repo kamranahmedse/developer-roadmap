@@ -5,7 +5,7 @@ Indexed arrays in PHP store values that are accessed through numerical indexes, 
 Here's an Example:
 
 ```php
-$books = array("The Great Gatsby", "Moby Dick", "To Kill a Mockingbird");
+$books = ["The Great Gatsby", "Moby Dick", "To Kill a Mockingbird"];
 echo $books[0]; //Outputs "The Great Gatsby"
 ```
 
