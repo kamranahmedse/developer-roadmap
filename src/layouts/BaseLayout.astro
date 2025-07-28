@@ -21,6 +21,7 @@ import { siteConfig } from '../lib/config';
 import type { ResourceType } from '../lib/resource-progress';
 import Bluconic from '../components/Analytics/Bluconic.astro';
 import OneTrust from '../components/Analytics/OneTrust.astro';
+import LinkedIn from '../components/Analytics/LinkedIn.astro';
 import { cn } from '../lib/classname';
 import { GlobalUpgradeModal } from '../components/Billing/GlobalUpgradeModal';
 
@@ -261,5 +262,7 @@ const gaPageIdentifier = Astro.url.pathname
       resourceType={resourceType}
       client:load
     />
+
+    {!import.meta.env.DEV && <LinkedIn />}
   </body>
 </html>
