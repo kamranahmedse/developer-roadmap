@@ -118,7 +118,7 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
 
   useEffect(() => {
     const { format } = getUrlParams();
-    setFormat(format);
+    setFormat(format || 'course');
     setIsInitialLoad(false);
   }, []);
 
