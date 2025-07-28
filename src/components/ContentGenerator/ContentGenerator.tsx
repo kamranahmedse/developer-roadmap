@@ -21,7 +21,7 @@ import {
 } from './QuestionAnswerChat';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
-import { getUrlParams } from '../../lib/browser';
+import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { useParams } from '../../hooks/use-params';
 import { useQuery } from '@tanstack/react-query';
 import { aiLimitOptions } from '../../queries/ai-course';
@@ -205,7 +205,10 @@ export function ContentGenerator() {
                 <FormatItem
                   key={format.value}
                   label={format.label}
-                  onClick={() => setSelectedFormat(format.value)}
+                  onClick={() => {
+                    setSelectedFormat(format.value);
+                    setUrlParams({ format: format.value });
+                  }}
                   icon={format.icon}
                   isSelected={isSelected}
                 />
