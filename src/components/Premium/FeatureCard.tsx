@@ -1,4 +1,5 @@
 import { Lock, Play } from 'lucide-react';
+import { markdownToHtml } from '../../lib/markdown';
 
 interface FeatureCardProps {
   title: string;
@@ -63,7 +64,10 @@ export function FeatureCard(props: FeatureCardProps) {
       </span>
       <div className="mt-4">
         <h3 className="mb-1 text-sm font-medium text-white">{title}</h3>
-        <p className="text-xs leading-relaxed text-slate-400">{description}</p>
+        <p
+          className="text-xs [&_a]:text-blue-400 [&_a]:underline-offset-2 [&_a]:underline leading-relaxed text-slate-400"
+          dangerouslySetInnerHTML={{ __html: markdownToHtml(description) }}
+        />
       </div>
     </div>
   );
