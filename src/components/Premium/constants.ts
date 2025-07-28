@@ -11,20 +11,20 @@ export const paidFeaturesList = [
 
 export const features = [
   {
-    title: 'Chat with Roadmaps',
-    description:
-      'Ask questions and get instant answers on any roadmap through AI',
-    videoId: 'fq0UgNcj3Ek',
-    thumbnail: 'https://assets.roadmap.sh/guest/chat-with-roadmaps-ew2l9.png',
-    duration: '2:17',
-  },
-  {
     title: 'Unlimited AI Courses',
     description:
       'No more paying for expensive courses, create unlimited courses with AI',
     videoId: 'uCcQNhdVUVQ',
     thumbnail: 'https://assets.roadmap.sh/guest/ai-courses-m07ra.png',
     duration: '3:07',
+  },
+  {
+    title: 'Chat with Roadmaps',
+    description:
+      'Ask questions and get instant answers on any roadmap through AI',
+    videoId: 'fq0UgNcj3Ek',
+    thumbnail: 'https://assets.roadmap.sh/guest/chat-with-roadmaps-ew2l9.png',
+    duration: '2:17',
   },
   {
     title: 'In-depth Guides',
@@ -59,7 +59,7 @@ export const features = [
     videoId: '0jZ1Lse1Y3E',
     thumbnail: 'https://assets.roadmap.sh/guest/smarter-roadmaps-f46ku.png',
     duration: '3:11',
-    startTime: '5'
+    startTime: '5',
   },
   {
     title: 'Test Yourself',
@@ -83,4 +83,4 @@ export const features = [
       'We have more amazing features coming soon! Be the first to try them out!',
     isComingSoon: true,
   },
-]; 
+];
