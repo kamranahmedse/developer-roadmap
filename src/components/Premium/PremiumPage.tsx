@@ -3,6 +3,7 @@ import {
   Bot,
   CheckCircle,
   Clock,
+  MousePointerClick,
   PartyPopper,
   Users2,
   Wand2,
@@ -161,10 +162,10 @@ export function PremiumPage() {
               Generate unlimited courses about any topic, get career guidance
               and instant answers from AI, test your skills and more
             </p>
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
                 href="#pricing"
-                className="group mx-auto block rounded-2xl bg-gradient-to-b from-indigo-600 to-indigo-700 px-8 py-4 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/25"
+                className="group block rounded-2xl bg-gradient-to-b from-indigo-600 to-indigo-700 px-8 py-4 shadow-sm transition-all hover:-translate-y-0.5"
               >
                 <span className="flex items-center justify-center gap-3 text-lg text-white sm:hidden">
                   Upgrade now
@@ -179,6 +180,21 @@ export function PremiumPage() {
                   </span>
                 </span>
               </a>
+              <button
+                data-demo-button="true"
+                onClick={() => {
+                  if (isLoggedIn()) {
+                    window.location.href = '/ai';
+                  } else {
+                    showLoginPopup();
+                  }
+                }}
+                className="group relative flex items-center justify-center gap-2 overflow-hidden rounded-2xl border border-purple-500/30 bg-transparent px-6 py-4 text-base font-medium text-purple-500 shadow-sm transition-all hover:-translate-y-0.5 hover:bg-purple-500/10 hover:text-purple-400 hover:border-purple-300/30 focus:outline-none active:ring-0"
+              >
+                <MousePointerClick className="h-5 w-5" aria-hidden="true" />
+                <span className="lg:hidden">Try Demo</span>
+                <span className="hidden lg:inline">Try for Free</span>
+              </button>
             </div>
             <p className="mt-5 flex items-center justify-center gap-2 text-sm">
               <Clock className="h-3 w-3 text-white" />
