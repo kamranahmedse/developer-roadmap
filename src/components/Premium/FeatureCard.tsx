@@ -42,28 +42,22 @@ export function FeatureCard(props: FeatureCardProps) {
   }
 
   return (
-    <div className="relative overflow-hidden rounded-lg border border-slate-700 bg-[#151F33] p-4 hover:border-blue-400">
-      <div className="relative">
-        <button
-          onClick={onClick}
-          className="group relative block aspect-video w-full cursor-pointer overflow-hidden rounded-lg bg-slate-900/50"
-        >
-          <img
-            src={thumbnail}
-            alt={title}
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-
-          <span className="absolute inset-0 -m-4 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100">
-            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
-              <Play
-                className="h-6 w-6 fill-current text-white"
-                strokeWidth={2}
-              />
-            </span>
+    <div className="group relative overflow-hidden rounded-lg border border-slate-700 bg-[#151F33] p-4 hover:border-blue-400">
+      <button
+        onClick={onClick}
+        className="relative block aspect-video w-full cursor-pointer overflow-hidden rounded-lg bg-slate-900/50"
+      >
+        <img
+          src={thumbnail}
+          alt={title}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <span className="absolute inset-0 -m-4 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100">
+          <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
+            <Play className="h-6 w-6 fill-current text-white" strokeWidth={2} />
           </span>
-        </button>
-      </div>
+        </span>
+      </button>
       <span className="absolute top-1 right-1 rounded bg-black/60 px-2 py-1 text-xs text-white backdrop-blur-sm">
         {duration}
       </span>

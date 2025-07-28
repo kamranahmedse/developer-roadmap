@@ -19,20 +19,20 @@ export const features = [
     duration: '3:07',
   },
   {
-    title: 'Chat with Roadmaps',
-    description:
-      'Ask questions and get instant answers on any roadmap through AI',
-    videoId: 'fq0UgNcj3Ek',
-    thumbnail: 'https://assets.roadmap.sh/guest/chat-with-roadmaps-ew2l9.png',
-    duration: '2:17',
-  },
-  {
     title: 'In-depth Guides',
     description:
       'Create unlimited personalized in-depth learning guides with AI',
     videoId: '5kwYjCg2Lu4',
     thumbnail: 'https://assets.roadmap.sh/guest/ai-guides-s4bjj.png',
     duration: '1:33',
+  },
+  {
+    title: 'Chat with Roadmaps',
+    description:
+      'Ask questions and get instant answers on any roadmap through AI',
+    videoId: 'fq0UgNcj3Ek',
+    thumbnail: 'https://assets.roadmap.sh/guest/chat-with-roadmaps-ew2l9.png',
+    duration: '2:17',
   },
   {
     title: 'AI as Learning Companion',
