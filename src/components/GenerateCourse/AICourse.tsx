@@ -132,6 +132,7 @@ export function AICourse(props: AICourseProps) {
             placeholder="e.g. JavaScript Promises, React Hooks, Go Routines etc"
             className="w-full rounded-md border-none bg-transparent px-4 pt-4 pb-8 text-gray-900 focus:outline-hidden max-sm:placeholder:text-base"
             maxLength={50}
+            data-clarity-unmask="true"
           />
 
           <div className="flex flex-col items-start justify-between gap-2 px-4 pb-4 md:flex-row md:items-center">

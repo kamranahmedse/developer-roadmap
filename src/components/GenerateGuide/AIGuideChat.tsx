@@ -357,6 +357,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               autoFocus
+              data-clarity-unmask="true"
               onKeyDown={(e) => {
                 if (e.key === 'Enter') {
                   e.preventDefault();

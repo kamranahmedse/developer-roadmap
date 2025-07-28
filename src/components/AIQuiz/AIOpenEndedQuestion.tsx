@@ -96,6 +96,7 @@ export function AIOpenEndedQuestion(props: AIOpenEndedQuestionProps) {
 
       <div className="mt-6">
         <textarea
+          data-clarity-unmask="true"
           className={cn(
             'min-h-[200px] w-full resize-none rounded-xl border border-gray-200 p-4 text-lg',
             'focus:border-gray-400 focus:ring-0 focus:outline-none',

@@ -55,6 +55,7 @@ export default function RoadmapChatListing(props: RoadmapChatListingProps) {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         className="mb-6 w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm placeholder-gray-400 focus:border-gray-300 focus:outline-none"
+        data-clarity-unmask="true"
       />
 
       <div className="flex flex-col gap-8">

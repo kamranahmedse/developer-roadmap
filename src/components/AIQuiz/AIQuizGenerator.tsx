@@ -190,6 +190,7 @@ export function AIQuizGenerator() {
             className="block w-full rounded-xl border border-gray-200 bg-white p-4 outline-none placeholder:text-gray-500 focus:border-gray-500"
             required
             minLength={3}
+            data-clarity-unmask="true"
           />
         </div>
         <div className="flex flex-col gap-2">

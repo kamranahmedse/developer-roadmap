@@ -44,6 +44,7 @@ export function ModifyCoursePrompt(props: ModifyCoursePromptProps) {
             onChange={(e) => setPrompt(e.target.value)}
             className="w-full rounded-md border border-gray-200 p-2 placeholder:text-sm focus:outline-black"
             placeholder="e.g. make sure to add a section on React hooks"
+            data-clarity-unmask="true"
           />
 
           <p className="text-sm text-gray-500">

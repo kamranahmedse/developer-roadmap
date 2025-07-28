@@ -43,6 +43,7 @@ export function AICourseSearch(props: AICourseSearchProps) {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         disabled={disabled}
+        data-clarity-unmask="true"
       />
     </div>
   );

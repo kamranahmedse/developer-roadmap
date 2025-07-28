@@ -257,6 +257,7 @@ export function QuestionAnswerChat(props: QuestionAnswerChatProps) {
                             ? 'Type your answer...'
                             : 'Or type your own answer...'
                         }
+                        data-clarity-unmask="true"
                         autoFocus
                         onKeyDown={(e) => {
                           if (e.key === 'Enter' && !e.shiftKey) {
