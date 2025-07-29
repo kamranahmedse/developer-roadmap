@@ -35,7 +35,7 @@ export function MeetYourInstructor() {
           <div className="flex shrink-0 flex-col items-center">
             <div className="relative">
               <img
-                src="https://assets.roadmap.sh/guest/kamran-lqjta.jpeg"
+                src="https://github.com/kamranahmedse.png"
                 alt="Kamran Ahmed"
                 className="h-40 w-40 rounded-full object-cover ring-4 ring-yellow-500/40 transition-all duration-300 hover:ring-yellow-500/60"
               />
@@ -43,9 +43,7 @@ export function MeetYourInstructor() {
             <h5 className="mt-6 text-xl font-semibold text-zinc-100">
               Kamran Ahmed
             </h5>
-            <span className="text-yellow-400">
-              Founder of roadmap.sh
-            </span>
+            <span className="text-yellow-400">Founder of roadmap.sh</span>
           </div>
 
           <div className="flex-1 space-y-8">
@@ -54,7 +52,10 @@ export function MeetYourInstructor() {
                 {features.map((feature, index) => {
                   const IconComponent = feature.icon;
                   return (
-                    <div key={index} className="flex items-center gap-3 rounded-lg border border-yellow-500/20 bg-gradient-to-r from-yellow-500/10 to-yellow-500/5 p-3">
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 rounded-lg border border-yellow-500/20 bg-gradient-to-r from-yellow-500/10 to-yellow-500/5 p-3"
+                    >
                       <IconComponent className="size-4 shrink-0 text-yellow-400" />
                       <span className="text-sm font-medium text-zinc-300">
                         {feature.text}

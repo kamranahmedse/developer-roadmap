@@ -104,6 +104,11 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
     onStart: () => {
       setIsModalOpen(false);
     },
+    onError: (error) => {
+      for (const nodeId of allPendingNodeIds) {
+        renderTopicProgress(nodeId, 'pending');
+      }
+    },
     onData: (data) => {
       const { topicIds } = data;
       topicIds.forEach((topicId) => {
