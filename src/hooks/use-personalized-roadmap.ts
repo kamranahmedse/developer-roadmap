@@ -5,6 +5,7 @@ import { flushSync } from 'react-dom';
 
 type PersonalizedRoadmapResponse = {
   topicIds: string[];
+  information: string;
 };
 
 type UsePersonalizedRoadmapOptions = {
@@ -26,8 +27,11 @@ export function usePersonalizedRoadmap(options: UsePersonalizedRoadmapOptions) {
     'idle' | 'streaming' | 'loading' | 'ready' | 'error'
   >('idle');
 
+  const informationRef = useRef<string>('');
+
   const generatePersonalizedRoadmap = async (information: string) => {
     try {
+      informationRef.current = information;
       onStart?.();
       setStatus('loading');
       abortControllerRef.current?.abort();
@@ -70,7 +74,11 @@ export function usePersonalizedRoadmap(options: UsePersonalizedRoadmapOptions) {
         onMessage: async (content) => {
           flushSync(() => {
             setStatus('streaming');
-            contentRef.current = parsePersonalizedRoadmapResponse(content);
+            const parsed = parsePersonalizedRoadmapResponse(content);
+            contentRef.current = {
+              ...parsed,
+              information: informationRef.current
+            };
             onData?.(contentRef.current);
           });
         },
@@ -120,7 +128,7 @@ export function usePersonalizedRoadmap(options: UsePersonalizedRoadmapOptions) {
 
 export function parsePersonalizedRoadmapResponse(
   response: string,
-): PersonalizedRoadmapResponse {
+): Omit<PersonalizedRoadmapResponse, 'information'> {
   const topicIds: Set<string> = new Set();
   const lines = response.split('\n');
   for (const line of lines) {

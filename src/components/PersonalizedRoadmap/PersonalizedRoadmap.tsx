@@ -1,11 +1,12 @@
 import { Loader2Icon, PersonStandingIcon } from 'lucide-react';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { usePersonalizedRoadmap } from '../../hooks/use-personalized-roadmap';
 import {
   refreshProgressCounters,
   renderTopicProgress,
 } from '../../lib/resource-progress';
 import { PersonalizedRoadmapModal } from './PersonalizedRoadmapModal';
+import { PersonalizedRoadmapSwitcher } from './PersonalizedRoadmapSwitcher';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { httpPost } from '../../lib/query-http';
 import { useToast } from '../../hooks/use-toast';
@@ -13,13 +14,6 @@ import { queryClient } from '../../stores/query-client';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
 import { useAuth } from '../../hooks/use-auth';
 import { roadmapJSONOptions } from '../../queries/roadmap';
-
-type BulkUpdateResourceProgressBody = {
-  done: string[];
-  learning: string[];
-  skipped: string[];
-  pending: string[];
-};
 
 type PersonalizedRoadmapProps = {
   roadmapId: string;
@@ -31,6 +25,7 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
   const toast = useToast();
   const currentUser = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPersonalized, setIsPersonalized] = useState(false);
 
   const { data: roadmap } = useQuery(
     roadmapJSONOptions(roadmapId),
@@ -41,6 +36,12 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
     userResourceProgressOptions('roadmap', roadmapId),
     queryClient,
   );
+
+  useEffect(() => {
+    if (userProgress?.personalized) {
+      setIsPersonalized(true);
+    }
+  }, [userProgress]);
 
   const alreadyInProgressNodeIds = useMemo(() => {
     return new Set([
@@ -68,28 +69,33 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
     localStorage.removeItem(`roadmap-${roadmapId}-${currentUser?.id}-favorite`);
   }, [roadmapId, currentUser]);
 
-  const {
-    mutate: bulkUpdateResourceProgress,
-    isPending: isBulkUpdating,
-    mutateAsync: bulkUpdateResourceProgressAsync,
-  } = useMutation(
-    {
-      mutationFn: (body: BulkUpdateResourceProgressBody) => {
-        return httpPost(`/v1-bulk-update-resource-progress/${roadmapId}`, body);
+  const { mutate: savePersonalization, isPending: isSavingPersonalization } =
+    useMutation(
+      {
+        mutationFn: (data: { topicIds: string[]; information: string }) => {
+          const remainingTopicIds = allPendingNodeIds.filter(
+            (nodeId) => !data.topicIds.includes(nodeId),
+          );
+
+          return httpPost(`/v1-save-personalization/${roadmapId}`, {
+            personalized: {
+              ...data,
+              topicIds: remainingTopicIds,
+            },
+          });
+        },
+        onError: (error) => {
+          toast.error(error?.message ?? 'Failed to save personalization');
+        },
+        onSuccess: () => {
+          clearResourceProgressLocalStorage();
+          refetchUserProgress();
+          refreshProgressCounters();
+          toast.success('Personalization saved successfully');
+        },
       },
-      onError: (error) => {
-        toast.error(
-          error?.message ?? 'Something went wrong, please try again.',
-        );
-      },
-      onSuccess: () => {
-        clearResourceProgressLocalStorage();
-        refetchUserProgress();
-        refreshProgressCounters();
-      },
-    },
-    queryClient,
-  );
+      queryClient,
+    );
 
   const { generatePersonalizedRoadmap, status } = usePersonalizedRoadmap({
     roadmapId,
@@ -107,55 +113,67 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
       });
     },
     onFinish: (data) => {
-      const { topicIds } = data;
-      const remainingTopicIds = allPendingNodeIds.filter(
-        (nodeId) => !topicIds.includes(nodeId),
-      );
-
-      bulkUpdateResourceProgress({
-        skipped: remainingTopicIds,
-        learning: [],
-        done: [],
-        pending: [],
-      });
+      const { topicIds, information } = data;
+      savePersonalization({ topicIds, information });
     },
   });
 
-  const { mutate: clearResourceProgress, isPending: isClearing } = useMutation(
+  const { mutate: clearPersonalization, isPending: isClearing } = useMutation(
     {
-      mutationFn: (pendingTopicIds: string[]) => {
-        return bulkUpdateResourceProgressAsync({
-          skipped: [],
-          learning: [],
-          done: [],
-          pending: pendingTopicIds,
-        });
+      mutationFn: () => {
+        return httpPost(`/v1-clear-roadmap-personalization/${roadmapId}`, {});
       },
       onError: (error) => {
-        toast.error(
-          error?.message ?? 'Something went wrong, please try again.',
-        );
+        toast.error(error?.message ?? 'Failed to clear personalization');
       },
-      onSuccess: (_, pendingTopicIds) => {
-        for (const topicId of pendingTopicIds) {
+      onSuccess: () => {
+        // Reset all topics to pending state
+        allPendingNodeIds.forEach((topicId) => {
           renderTopicProgress(topicId, 'pending');
-        }
+        });
 
-        toast.success('Progress cleared successfully.');
-        clearResourceProgressLocalStorage();
-        refreshProgressCounters();
+        setIsPersonalized(false);
+        toast.success('Personalization cleared successfully.');
         refetchUserProgress();
       },
     },
     queryClient,
   );
 
-  const isGenerating = status !== 'idle' || isBulkUpdating || isClearing;
+  const isGenerating =
+    status !== 'idle' || isClearing || isSavingPersonalization;
+
+  const handleTogglePersonalization = (showPersonalized: boolean) => {
+    setIsPersonalized(showPersonalized);
+
+    if (!showPersonalized) {
+      const allTopicIds = allPendingNodeIds;
+      allTopicIds.forEach((topicId) => {
+        renderTopicProgress(topicId, 'pending');
+      });
+    } else if (userProgress?.personalized) {
+      const { topicIds } = userProgress.personalized;
+      const remainingTopicIds = allPendingNodeIds.filter(
+        (nodeId) => !topicIds.includes(nodeId),
+      );
+
+      remainingTopicIds.forEach((topicId) => {
+        renderTopicProgress(topicId, 'skipped');
+      });
+
+      topicIds.forEach((topicId) => {
+        if (!alreadyInProgressNodeIds.has(topicId)) {
+          renderTopicProgress(topicId, 'pending');
+        }
+      });
+    }
+  };
 
   return (
     <>
       {isModalOpen && (
         <PersonalizedRoadmapModal
+          info={userProgress?.personalized?.information ?? ''}
           onClose={() => setIsModalOpen(false)}
           onSubmit={(information) => {
             for (const nodeId of allPendingNodeIds) {
@@ -166,29 +184,41 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
           }}
           onClearProgress={() => {
             setIsModalOpen(false);
-            const prevSkipped = userProgress?.skipped ?? [];
-            clearResourceProgress(prevSkipped);
+            clearPersonalization();
           }}
         />
       )}
 
-      <button
-        className="group inline-flex items-center gap-1.5 border-b-2 border-b-transparent px-2 pb-2.5 text-sm font-normal text-gray-400 transition-colors hover:text-gray-700"
-        onClick={() => setIsModalOpen(true)}
-        disabled={isGenerating}
-      >
-        {isGenerating ? (
-          <>
-            <Loader2Icon className="h-4 w-4 shrink-0 animate-spin" />
-            <span>Personalizing...</span>
-          </>
-        ) : (
-          <>
-            <PersonStandingIcon className="h-4 w-4 shrink-0" />
-            <span>Personalize</span>
-          </>
-        )}
-      </button>
+      {userProgress?.personalized?.information ? (
+        <PersonalizedRoadmapSwitcher
+          isPersonalized={isPersonalized}
+          onToggle={handleTogglePersonalization}
+          onEdit={() => setIsModalOpen(true)}
+          onRemove={() => {
+            if (confirm('Are you sure you want to remove personalization?')) {
+              clearPersonalization();
+            }
+          }}
+        />
+      ) : (
+        <button
+          className="group inline-flex items-center gap-1.5 border-b-2 border-b-transparent px-2 pb-2.5 text-sm font-normal text-gray-400 transition-colors hover:text-gray-700"
+          onClick={() => setIsModalOpen(true)}
+          disabled={isGenerating}
+        >
+          {isGenerating ? (
+            <>
+              <Loader2Icon className="h-4 w-4 shrink-0 animate-spin" />
+              <span>Personalizing...</span>
+            </>
+          ) : (
+            <>
+              <PersonStandingIcon className="h-4 w-4 shrink-0" />
+              <span>Personalize</span>
+            </>
+          )}
+        </button>
+      )}
     </>
   );
 }

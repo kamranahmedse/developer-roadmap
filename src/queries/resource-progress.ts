@@ -8,6 +8,10 @@ export type GetUserResourceProgressResponse = {
   learning: string[];
   skipped: string[];
   isFavorite: boolean;
+  personalized?: {
+    topicIds: string[];
+    information: string;
+  };
 };
 
 export function userResourceProgressOptions(

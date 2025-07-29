@@ -12,7 +12,12 @@ export const canManageCurrentRoadmap = computed(
 );
 
 export const roadmapProgress = atom<
-  { done: string[]; learning: string[]; skipped: string[] } | undefined
+  | {
+      done: string[];
+      learning: string[];
+      skipped: string[];
+      personalized: { topicIds: string[]; information: string };
+    }
+  | undefined
 >();
 export const totalRoadmapNodes = atom<number | undefined>();
-
