@@ -16,6 +16,7 @@ import { useAuth } from '../../hooks/use-auth';
 import { roadmapJSONOptions } from '../../queries/roadmap';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { cn } from '../../lib/classname';
 
 type PersonalizedRoadmapProps = {
   roadmapId: string;
@@ -206,7 +207,7 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
         />
       ) : (
         <button
-          className="group inline-flex items-center gap-1.5 border-b-2 border-b-transparent px-2 pb-2.5 text-sm font-normal text-gray-400 transition-colors hover:text-gray-700"
+          className="group inline-flex items-center gap-1.5 border-b-2 border-b-transparent px-2 pb-2.5 text-sm font-normal text-gray-500 transition-colors hover:text-black"
           onClick={() => {
             if (!isLoggedIn()) {
               showLoginPopup();
@@ -226,6 +227,16 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
             <>
               <PersonStandingIcon className="h-4 w-4 shrink-0" />
               <span>Personalize</span>
+              <span
+                className={cn(
+                  'ml-0.5 hidden items-center gap-0.5 rounded-full bg-yellow-200 px-2 py-0.5 text-xs font-medium text-black transition-colors sm:flex',
+                  {
+                    'bg-yellow-200 text-black group-hover:bg-yellow-300': true,
+                  },
+                )}
+              >
+                New
+              </span>
             </>
           )}
         </button>
