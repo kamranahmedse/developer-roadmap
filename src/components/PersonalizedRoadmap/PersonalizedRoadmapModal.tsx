@@ -54,7 +54,7 @@ export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
           <textarea
             id={infoFieldId}
             className="h-[150px] w-full resize-none rounded-xl border border-gray-200 p-3 focus:border-gray-500 focus:outline-none"
-            placeholder="I am a beginner, give me a simpler version of the roadmap"
+            placeholder="e.g. I am a beginner, give me a simpler version of the roadmap"
             value={info}
             onChange={(e) => setInfo(e.target.value)}
             autoFocus
