@@ -153,16 +153,13 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
       });
     } else if (userProgress?.personalized) {
       const { topicIds } = userProgress.personalized;
-      const remainingTopicIds = allPendingNodeIds.filter(
-        (nodeId) => !topicIds.includes(nodeId),
-      );
-
-      remainingTopicIds.forEach((topicId) => {
-        renderTopicProgress(topicId, 'skipped');
-      });
-
-      topicIds.forEach((topicId) => {
-        if (!alreadyInProgressNodeIds.has(topicId)) {
+      // user is asking for personalized roadmap, we need to
+      // mark all the pending ids which are in the personalized roadmap
+      // as skipped and mark the rest as pending
+      allPendingNodeIds.forEach((topicId) => {
+        if (topicIds.includes(topicId)) {
+          renderTopicProgress(topicId, 'skipped');
+        } else {
           renderTopicProgress(topicId, 'pending');
         }
       });
