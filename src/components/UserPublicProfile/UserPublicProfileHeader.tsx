@@ -26,7 +26,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
         src={
           avatar
             ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-            : '/images/default-avatar.png'
+            : '/img/default-avatar.png'
         }
         alt={name}
         className="h-32 w-32 rounded-full object-cover"
@@ -80,6 +80,7 @@ export function UserLink(props: UserLinkProps) {
       target="_blank"
       href={href}
       className="flex h-6 w-6 items-center justify-center rounded-md border"
+      rel="nofollow noopener noreferrer"
     >
       <Icon className="h-3.5 w-3.5 shrink-0 stroke-2" />
     </a>

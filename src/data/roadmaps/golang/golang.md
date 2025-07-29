@@ -3,13 +3,14 @@ jsonUrl: '/jsons/roadmaps/golang.json'
 pdfUrl: '/pdfs/roadmaps/golang.pdf'
 order: 11
 briefTitle: 'Go'
+renderer: 'editor'
 briefDescription: 'Step by step guide to becoming a Go developer in 2025'
 title: 'Go Developer'
 description: 'Step by step guide to becoming a Go developer in 2025'
 hasTopics: true
 dimensions:
   width: 968
-  height: 1495.21
+  height: 4275
 question:
   title: What is Golang?
   description: |

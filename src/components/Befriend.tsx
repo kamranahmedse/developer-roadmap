@@ -136,7 +136,7 @@ export function Befriend() {
 
   const userAvatar = user.avatar
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
-    : '/images/default-avatar.png';
+    : '/img/default-avatar.png';
 
   const isMe = currentUser?.id === user.id;
 

@@ -21,7 +21,9 @@ import { siteConfig } from '../lib/config';
 import type { ResourceType } from '../lib/resource-progress';
 import Bluconic from '../components/Analytics/Bluconic.astro';
 import OneTrust from '../components/Analytics/OneTrust.astro';
+import LinkedIn from '../components/Analytics/LinkedIn.astro';
 import { cn } from '../lib/classname';
+import { GlobalUpgradeModal } from '../components/Billing/GlobalUpgradeModal';
 
 export interface Props {
   title: string;
@@ -49,7 +51,7 @@ const {
   bodyClassName,
   briefTitle,
   description = siteConfig.description,
-  ogImageUrl = 'https://roadmap.sh/images/og-img.png',
+  ogImageUrl = 'https://roadmap.sh/img/og-img.png',
   keywords = siteConfig.keywords,
   noIndex = false,
   permalink = '',
@@ -104,7 +106,7 @@ const gaPageIdentifier = Astro.url.pathname
     <meta property='og:image:height' content='630' />
     <meta
       property='og:image'
-      content={ogImageUrl || 'https://roadmap.sh/images/og-img.png'}
+      content={ogImageUrl || 'https://roadmap.sh/img/og-img.png'}
     />
     <meta property='og:image:alt' content='roadmap.sh' />
     <meta property='og:site_name' content='roadmap.sh' />
@@ -250,6 +252,7 @@ const gaPageIdentifier = Astro.url.pathname
     <Toaster client:only='react' />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
+    <GlobalUpgradeModal client:only='react' />
 
     <GoogleAdSlot />
     <slot name='after-footer' />
@@ -259,5 +262,7 @@ const gaPageIdentifier = Astro.url.pathname
       resourceType={resourceType}
       client:load
     />
+
+    {!import.meta.env.DEV && <LinkedIn />}
   </body>
 </html>

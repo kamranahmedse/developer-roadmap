@@ -64,7 +64,7 @@ export function TeamPricing() {
           <div className="flex grow flex-col items-center justify-center rounded-md border border-gray-300 py-8">
             <img
               alt={'waving hand'}
-              src={'/images/team-promo/contact.png'}
+              src={'/img/team-promo/contact.png'}
               className="mb-3 h-40"
             />
             <p className="mb-2 font-medium text-gray-500">

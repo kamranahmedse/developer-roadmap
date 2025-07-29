@@ -8,43 +8,43 @@ const demoItems = [
     title: 'Roadmap Editor',
     description:
       '<span class="font-semibold">Powerful editor</span> to create custom roadmaps and other trackable documents',
-    image: '/images/team-promo/roadmap-editor.png',
+    image: '/img/team-promo/roadmap-editor.png',
   },
   {
     title: 'Invite Members',
     description:
       'Invite your <span class="font-semibold">team members and assign roles</span>',
-    image: '/images/team-promo/invite-members.png',
+    image: '/img/team-promo/invite-members.png',
   },
   {
     title: 'Track Progress',
     description:
       'You and your team can <span class="font-semibold">track progress</span> on the roadmaps',
-    image: '/images/team-promo/update-progress.png',
+    image: '/img/team-promo/update-progress.png',
   },
   {
     title: 'Team Dashboard',
     description:
       'Keep an eye on the team progress through <span class="font-semibold">team dashboards</span>',
-    image: '/images/team-promo/team-dashboard.png',
+    image: '/img/team-promo/team-dashboard.png',
   },
   {
     title: 'Roadmaps and Documents',
     description:
       'Create as many <span class="font-semibold">roadmaps or trackable documents</span> as you want',
-    image: '/images/team-promo/many-roadmaps.png',
+    image: '/img/team-promo/many-roadmaps.png',
   },
   {
     title: 'Community Roadmaps',
     description:
       'Create custom roadmaps or customize <span class="font-semibold">community roadmaps</span> to fit your needs',
-    image: '/images/team-promo/our-roadmaps.png',
+    image: '/img/team-promo/our-roadmaps.png',
   },
   {
     title: 'Sharing Settings',
     description:
       'Share a roadmap or trackable document with <span class="font-semibold">everyone or specific people</span>',
-    image: '/images/team-promo/sharing-settings.png',
+    image: '/img/team-promo/sharing-settings.png',
   },
   {
     title: 'More Coming Soon!',

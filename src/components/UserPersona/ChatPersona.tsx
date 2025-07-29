@@ -47,7 +47,7 @@ export function ChatPersona(props: ChatPersonaProps) {
     <div className="relative mx-auto flex h-auto max-w-[400px] grow flex-col justify-center p-4 px-2 px-4 sm:h-full sm:p-4">
       <div className="mb-4 text-left sm:mb-8 sm:text-center">
         <img
-          src="/images/gifs/wave.gif"
+          src="/img/gifs/wave.gif"
           alt="Wave"
           className="mx-auto mb-3 hidden h-16 w-16 sm:mb-5 sm:block sm:h-24 sm:w-24"
         />

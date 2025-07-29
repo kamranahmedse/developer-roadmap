@@ -66,7 +66,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                           ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
                               member.member.avatar
                             }`
-                          : '/images/default-avatar.png'
+                          : '/img/default-avatar.png'
                       }
                       alt={member.member.name || ''}
                       className="h-5 w-5 shrink-0 rounded-full"

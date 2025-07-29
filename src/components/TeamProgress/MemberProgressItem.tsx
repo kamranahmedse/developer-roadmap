@@ -45,7 +45,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             src={
               member.avatar
                 ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${member.avatar}`
-                : '/images/default-avatar.png'
+                : '/img/default-avatar.png'
             }
             alt={member.name || ''}
             className="h-8 min-h-[32px] w-8 min-w-[32px] rounded-full"

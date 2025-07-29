@@ -103,7 +103,7 @@ export function TeamDropdown() {
                     ? `${
                         import.meta.env.PUBLIC_AVATAR_BASE_URL
                       }/${selectedAvatar}`
-                    : '/images/default-avatar.png'
+                    : '/img/default-avatar.png'
                 }
                 alt=""
                 className="h-4 w-4 rounded-full object-cover"

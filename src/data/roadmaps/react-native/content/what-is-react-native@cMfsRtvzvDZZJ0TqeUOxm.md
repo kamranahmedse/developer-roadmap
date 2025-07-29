@@ -6,4 +6,4 @@ With React Native, you write components with JSX, a syntax that combines JavaScr
 
 Visit the following resources to learn more:
 
-- [@official@Getting Started with React Native](https://reactnative.dev/docs/getting-started))
+- [@official@Getting Started with React Native](https://reactnative.dev/docs/getting-started)

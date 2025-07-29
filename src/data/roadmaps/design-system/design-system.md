@@ -5,13 +5,14 @@ order: 13
 briefTitle: 'Design System'
 briefDescription: 'Step by step guide to building a modern Design System'
 title: 'Design System'
+renderer: 'editor'
 description: 'Learn how to create a design system with this step by step guide'
 isNew: false
 hasTopics: true
 note: '**Note:** System Design is a different topic, visit [System Design roadmap](/system-design) for that.'
 dimensions:
   width: 968
-  height: 2309.7
+  height: 2900
 schema:
   headline: 'Design System Roadmap'
   description: 'Learn how to create a Design System with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

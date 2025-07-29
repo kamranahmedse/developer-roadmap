@@ -1,24 +1,28 @@
+import { useQuery } from '@tanstack/react-query';
 import {
   BookOpen,
+  ChevronDown,
+  ChevronRight,
   Compass,
+  FileText,
   Map,
   MessageCircle,
-  Plus,
   Star,
+  Swords,
   X,
-  Zap,
+  Zap
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { isLoggedIn } from '../../lib/jwt';
-import { useIsPaidUser } from '../../queries/billing';
-import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { AITutorLogo } from '../ReactIcons/AITutorLogo';
-import { queryClient } from '../../stores/query-client';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
-import { useQuery } from '@tanstack/react-query';
-import { getPercentage } from '../../lib/number';
-import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
+import { getUrlParams } from '../../lib/browser';
 import { cn } from '../../lib/classname';
+import { isLoggedIn } from '../../lib/jwt';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { useIsPaidUser } from '../../queries/billing';
+import { queryClient } from '../../stores/query-client';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
+import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
+import { AITutorLogo } from '../ReactIcons/AITutorLogo';
+import { UpgradeSidebarCard } from './UpgradeSidebarCard';
 import { UserDropdown } from './UserDropdown';
 
 type AITutorSidebarProps = {
@@ -32,7 +36,33 @@ const sidebarItems = [
     key: 'new',
     label: 'Create with AI',
     href: '/ai',
-    icon: Plus,
+    icon: Zap,
+    children: [
+      {
+        key: 'create-course',
+        label: 'Course',
+        href: '/ai?format=course',
+        icon: BookOpen,
+      },
+      {
+        key: 'create-guide',
+        label: 'Guide',
+        href: '/ai?format=guide',
+        icon: FileText,
+      },
+      {
+        key: 'create-roadmap',
+        label: 'Roadmap',
+        href: '/ai?format=roadmap',
+        icon: Map,
+      },
+      {
+        key: 'quiz',
+        label: 'Quiz',
+        href: '/ai/quiz',
+        icon: Swords,
+      },
+    ],
   },
   {
     key: 'chat',
@@ -71,25 +101,35 @@ export type AITutorTab = (typeof sidebarItems)[number]['key'];
 export function AITutorSidebar(props: AITutorSidebarProps) {
   const { activeTab, isFloating, onClose } = props;
 
+  const [format, setFormat] = useState('');
   const [isInitialLoad, setIsInitialLoad] = useState(true);
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({
+    new: true, // Keep "Create with AI" expanded by default
+  });
 
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
 
   const { data: limits, isLoading: isLimitsLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
 
-  const { used, limit } = limits ?? { used: 0, limit: 0 };
-  const totalPercentage = getPercentage(used, limit);
-
   useEffect(() => {
+    const { format } = getUrlParams();
+    setFormat(format || 'course');
     setIsInitialLoad(false);
   }, []);
 
   const isLoading = isPaidUserLoading || isLimitsLoading;
+
+  const toggleExpanded = (key: string) => {
+    setExpandedItems((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
 
   return (
     <>
@@ -149,40 +189,35 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
               <AITutorSidebarItem
                 item={item}
                 isActive={activeTab === item.key}
+                isExpanded={expandedItems[item.key] || false}
+                onToggleExpanded={() => toggleExpanded(item.key)}
               />
+              {item.children && expandedItems[item.key] && (
+                <ul className="relative list-none">
+                  <div className="absolute top-0 bottom-0 left-7 w-px bg-gray-200" />
+                  {item.children.map((child) => (
+                    <li key={child.key}>
+                      <AITutorSidebarItem
+                        item={child}
+                        isActive={
+                          (activeTab === item.key &&
+                            `create-${format}` === child.key) ||
+                          activeTab === child.key
+                        }
+                        isChild={true}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
 
           {!isInitialLoad && isLoggedIn() && !isPaidUser && !isLoading && (
             <li>
-              <button
-                onClick={() => {
-                  setIsUpgradeModalOpen(true);
-                }}
-                className="animate-fade-in mx-4 mt-4 rounded-xl bg-amber-100 p-4 text-left transition-colors hover:bg-amber-200/80"
-              >
-                <span className="mb-2 flex items-center gap-2">
-                  <Zap className="size-4 text-amber-600" />
-                  <span className="font-medium text-amber-900">Upgrade</span>
-                </span>
-                <span className="mt-1 block text-left text-xs leading-4 text-amber-700">
-                  Get access to all features and benefits of the AI Tutor.
-                </span>
-
-                <div className="mt-5">
-                  <div className="relative h-1 w-full rounded-full bg-amber-300/40">
-                    <div
-                      className="absolute inset-0 h-full rounded-full bg-amber-600/80"
-                      style={{
-                        width: `${totalPercentage}%`,
-                      }}
-                    ></div>
-                  </div>
-                  <span className="mt-2 block text-xs text-amber-700">
-                    {totalPercentage}% of the daily limit used
-                  </span>
-                </div>
-              </button>
+              <UpgradeSidebarCard
+                onUpgrade={() => setIsUpgradeModalOpen(true)}
+              />
             </li>
           )}
         </ul>
@@ -197,35 +232,83 @@ export function AITutorSidebar(props: AITutorSidebarProps) {
   );
 }
 
+type SidebarItem = {
+  key: string;
+  label: string;
+  href: string;
+  icon: any;
+  children?: {
+    key: string;
+    label: string;
+    href: string;
+    icon: any;
+  }[];
+};
+
+type ChildItem = {
+  key: string;
+  label: string;
+  href: string;
+  icon: any;
+};
+
 type AITutorSidebarItemProps = {
-  item: (typeof sidebarItems)[number];
+  item: SidebarItem | ChildItem;
   as?: 'a' | 'button';
   onClick?: () => void;
   className?: string;
   isActive?: boolean;
+  isExpanded?: boolean;
+  onToggleExpanded?: () => void;
+  isChild?: boolean;
 };
 
 function AITutorSidebarItem(props: AITutorSidebarItemProps) {
-  const { item, as = 'a', onClick, className, isActive } = props;
+  const {
+    item,
+    as = 'a',
+    onClick,
+    className,
+    isActive,
+    isExpanded,
+    onToggleExpanded,
+    isChild,
+  } = props;
 
-  const Component = as;
+  const hasChildren = 'children' in item && item.children;
+  const Component = hasChildren ? 'button' : as;
 
   return (
     <Component
-      {...(as === 'a' ? { href: item.href } : {})}
-      {...(as === 'button' ? { onClick } : {})}
+      {...(Component === 'a' && !hasChildren ? { href: item.href } : {})}
+      {...(Component === 'button'
+        ? { onClick: hasChildren ? onToggleExpanded : onClick }
+        : {})}
       className={cn(
         'font-regular flex w-full items-center border-r-2 px-5 py-2 text-sm transition-all',
-        isActive
+        isActive && !hasChildren
           ? 'border-r-black bg-gray-100 text-black'
-          : 'border-r-transparent text-gray-500 hover:border-r-gray-300',
+          : 'border-r-transparent text-gray-500',
+        !isActive && !hasChildren && 'hover:bg-gray-50 hover:text-gray-700',
+        !isActive && hasChildren && 'hover:text-gray-700',
+        isChild && 'border-r-transparent py-1.5 pl-11',
+        isChild && isActive && 'border-r-black border-r-2 bg-gray-100 text-black',
         className,
       )}
     >
       <span className="flex grow items-center">
-        <item.icon className="mr-2 size-4" />
+        {!isChild && <item.icon className="mr-2 size-4" />}
         {item.label}
       </span>
+      {hasChildren && (
+        <span className="ml-auto">
+          {isExpanded ? (
+            <ChevronDown className="size-4" />
+          ) : (
+            <ChevronRight className="size-4" />
+          )}
+        </span>
+      )}
     </Component>
   );
 }

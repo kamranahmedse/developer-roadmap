@@ -39,6 +39,7 @@ export function SearchAIChatHistory(props: SearchAIChatHistoryProps) {
         minLength={3}
         maxLength={255}
         value={search}
+        data-clarity-unmask="true"
         onChange={(e) => setSearch(e.target.value)}
       />
 

@@ -22,7 +22,7 @@ import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { flushSync } from 'react-dom';
 import { markdownToHtml } from '../../lib/markdown';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { useQuery } from '@tanstack/react-query';
 import { queryClient } from '../../stores/query-client';
 import { billingDetailsOptions } from '../../queries/billing';
@@ -58,7 +58,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
     data: tokenUsage,
     isLoading: isTokenUsageLoading,
     refetch: refetchTokenUsage,
-  } = useQuery(getAiCourseLimitOptions(), queryClient);
+  } = useQuery(aiLimitOptions(), queryClient);
 
   const { data: userBillingDetails, isLoading: isBillingDetailsLoading } =
     useQuery(billingDetailsOptions(), queryClient);
@@ -357,6 +357,7 @@ export function AIGuideChat(props: AIGuideChatProps) {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               autoFocus
+              data-clarity-unmask="true"
               onKeyDown={(e) => {
                 if (e.key === 'Enter') {
                   e.preventDefault();

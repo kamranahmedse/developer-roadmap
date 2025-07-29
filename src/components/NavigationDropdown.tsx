@@ -1,12 +1,8 @@
 import {
-  BookOpenText,
-  CheckSquare,
-  FileQuestion,
-  FolderKanban,
-  Menu,
-  Shirt,
-  Video,
-  Database,
+  BookOpenText, FolderKanban,
+  Menu, Database,
+  ArrowRight,
+  Users
 } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { cn } from '../lib/classname.ts';
@@ -27,24 +23,17 @@ const links = [
     isNew: true,
   },
   {
+    link: '/get-started',
+    label: 'Get Started',
+    description: 'Pick a path and get started',
+    Icon: ArrowRight,
+    isHighlighted: false,
+  },
+  {
     link: '/projects',
     label: 'Projects',
     description: 'Skill-up with real-world projects',
     Icon: FolderKanban,
-    isHighlighted: false,
-  },
-  {
-    link: '/best-practices',
-    label: 'Best Practices',
-    description: "Do's and don'ts",
-    Icon: CheckSquare,
-    isHighlighted: false,
-  },
-  {
-    link: '/questions',
-    label: 'Questions',
-    description: 'Test and Practice your knowledge',
-    Icon: FileQuestion,
     isHighlighted: false,
   },
   {
@@ -55,19 +44,11 @@ const links = [
     isHighlighted: false,
   },
   {
-    link: 'https://youtube.com/@roadmapsh',
-    label: 'Videos',
-    description: 'Animated and interactive content',
-    Icon: Video,
-    isExternal: true,
-    isHighlighted: false,
-  },
-  {
-    link: 'https://cottonbureau.com/people/roadmapsh',
-    label: 'Shop',
-    description: 'Get some cool swag',
-    Icon: Shirt,
-    isExternal: true,
+    link: '/teams',
+    label: 'Teams',
+    description: 'Collaborate with your team',
+    Icon: Users,
+    isExternal: false,
     isHighlighted: false,
   },
   {

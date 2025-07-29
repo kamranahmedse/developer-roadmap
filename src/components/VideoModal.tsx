@@ -3,10 +3,11 @@ import { Modal } from './Modal';
 type VideoModalProps = {
   videoId: string;
   onClose: () => void;
+  startTime?: string;
 };
 
 export function VideoModal(props: VideoModalProps) {
-  const { videoId, onClose } = props;
+  const { videoId, onClose, startTime = '0' } = props;
 
   return (
     <Modal
@@ -18,7 +19,7 @@ export function VideoModal(props: VideoModalProps) {
       <div className="relative w-full pt-[56.25%]">
         <iframe
           className="absolute inset-0 h-full w-full"
-          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}`}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />

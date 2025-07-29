@@ -70,7 +70,7 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
                         ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
                             creator.avatar
                           }`
-                        : '/images/default-avatar.png'
+                        : '/img/default-avatar.png'
                     }
                     alt={creator.name || ''}
                     className="h-8 w-8 rounded-full"

@@ -1,12 +1,4 @@
-import { useStore } from '@nanostores/react';
-import {
-  ChartColumn,
-  CheckSquare,
-  FolderGit2,
-  SquarePen,
-  Zap,
-  type LucideIcon
-} from 'lucide-react';
+import { CheckSquare, Gift, SquarePen } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user.ts';
 import { useToast } from '../../hooks/use-toast';
@@ -16,7 +8,7 @@ import { httpGet } from '../../lib/http';
 import type { QuestionGroupType } from '../../lib/question-group';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
 import type { VideoFileType } from '../../lib/video';
-import { $accountStreak, type StreakResponse } from '../../stores/streak';
+import { type StreakResponse } from '../../stores/streak';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import { FeaturedGuideList } from '../FeaturedGuides/FeaturedGuideList';
 import { FeaturedVideoList } from '../FeaturedVideos/FeaturedVideoList';
@@ -27,8 +19,10 @@ import {
 import { HeroRoadmap } from '../HeroSection/HeroRoadmap.tsx';
 import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
+import { useIsPaidUser } from '../../queries/billing.ts';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
 
-const projectGroups =  [
+const projectGroups = [
   {
     title: 'Frontend',
     id: 'frontend',
@@ -53,7 +47,6 @@ type UserDashboardResponse = {
   progresses: UserProgress[];
   projects: ProjectStatusDocument[];
   aiRoadmaps: AIRoadmapType[];
-  topicDoneToday: number;
 };
 
 export type BuiltInRoadmap = {
@@ -78,34 +71,40 @@ type PersonalDashboardProps = {
 };
 
 type DashboardStatItemProps = {
-  icon: LucideIcon;
-  iconClassName: string;
-  value: number;
-  label: string;
   isLoading: boolean;
 };
 
-function DashboardStatItem(props: DashboardStatItemProps) {
-  const { icon: Icon, iconClassName, value, label, isLoading } = props;
+function UpgradeAccountButton(props: DashboardStatItemProps) {
+  const { isLoading } = props;
+
+  const { isPaidUser, isLoading: isPaidUserLoading } = useIsPaidUser();
+  const [showUpgradeModal, setShowUpgradeModal] = useState(false);
+
+  if (isPaidUser) {
+    return null;
+  }
 
   return (
-    <div
-      className={cn(
-        'flex items-center gap-1.5 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3',
-        {
-          'striped-loader-slate striped-loader-slate-fast text-transparent':
-            isLoading,
-        },
+    <>
+      {showUpgradeModal && (
+        <UpgradeAccountModal onClose={() => setShowUpgradeModal(false)} />
       )}
-    >
-      <Icon
-        size={16}
-        className={cn(iconClassName, { 'text-transparent': isLoading })}
-      />
-      <span>
-        <span className="tabular-nums">{value}</span> {label}
-      </span>
-    </div>
+
+      <button
+        onClickCapture={() => setShowUpgradeModal(true)}
+        className={cn(
+          'flex items-center gap-1.5 rounded-lg bg-white py-1.5 pr-3 pl-2.5 text-xs text-purple-700 duration-200 hover:bg-purple-600 hover:text-white',
+          {
+            'striped-loader-slate striped-loader-slate-fast border-transparent bg-slate-800/50 text-transparent hover:bg-transparent hover:text-transparent hover:shadow-none':
+              isLoading || isPaidUserLoading,
+          },
+        )}
+        onClick={() => {}}
+      >
+        <Gift size={16} className={cn({ 'text-transparent': isLoading })} />
+        <span>Upgrade Account</span>
+      </button>
+    </>
   );
 }
 
@@ -124,7 +123,7 @@ function PersonalProfileButton(props: ProfileButtonProps) {
       <a
         href="/account/update-profile"
         className={cn(
-          'flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 font-medium outline-slate-700 hover:bg-slate-800 hover:outline-slate-400',
+          'flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pr-3 pl-3 font-medium outline-slate-700 hover:bg-slate-800 hover:outline-slate-400',
           {
             'striped-loader-slate striped-loader-slate-fast text-transparent':
               isLoading,
@@ -142,7 +141,7 @@ function PersonalProfileButton(props: ProfileButtonProps) {
     <div className="flex gap-1.5">
       <a
         href={`/u/${username}`}
-        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 text-slate-300 transition-colors hover:bg-slate-800/70"
+        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pr-3 pl-3 text-slate-300 transition-colors hover:bg-slate-800/70"
       >
         <img
           src={avatar}
@@ -153,7 +152,7 @@ function PersonalProfileButton(props: ProfileButtonProps) {
       </a>
       <a
         href="/account/update-profile"
-        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pl-3 pr-3 text-slate-400 transition-colors hover:bg-slate-800/70 hover:text-slate-300"
+        className="flex items-center gap-2 rounded-lg bg-slate-800/50 py-2 pr-3 pl-3 text-slate-400 transition-colors hover:bg-slate-800/70 hover:text-slate-300"
         title="Edit Profile"
       >
         <SquarePen className="h-4 w-4" />
@@ -165,22 +164,15 @@ function PersonalProfileButton(props: ProfileButtonProps) {
 type DashboardStatsProps = {
   profile: ProfileButtonProps;
   accountStreak?: StreakResponse;
-  topicsDoneToday?: number;
   finishedProjectsCount?: number;
   isLoading: boolean;
 };
 
 function DashboardStats(props: DashboardStatsProps) {
-  const {
-    accountStreak,
-    topicsDoneToday = 0,
-    finishedProjectsCount = 0,
-    isLoading,
-    profile,
-  } = props;
+  const { isLoading, profile } = props;
 
   return (
-    <div className="container mb-3 flex flex-col gap-4 pb-2 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+    <div className="container mb-3 flex flex-col gap-4 pt-6 pb-2 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
       <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <PersonalProfileButton
           isLoading={isLoading}
@@ -189,27 +181,7 @@ function DashboardStats(props: DashboardStatsProps) {
           avatar={profile.avatar}
         />
         <div className="hidden flex-wrap items-center gap-2 md:flex">
-          <DashboardStatItem
-            icon={Zap}
-            iconClassName="text-yellow-500"
-            value={accountStreak?.count || 0}
-            label="day streak"
-            isLoading={isLoading}
-          />
-          <DashboardStatItem
-            icon={ChartColumn}
-            iconClassName="text-green-500"
-            value={topicsDoneToday}
-            label="learnt today"
-            isLoading={isLoading}
-          />
-          <DashboardStatItem
-            icon={FolderGit2}
-            iconClassName="text-blue-500"
-            value={finishedProjectsCount}
-            label="projects finished"
-            isLoading={isLoading}
-          />
+          <UpgradeAccountButton isLoading={isLoading} />
         </div>
       </div>
     </div>
@@ -232,25 +204,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   const [personalDashboardDetails, setPersonalDashboardDetails] =
     useState<UserDashboardResponse>();
   const [projectDetails, setProjectDetails] = useState<PageType[]>([]);
-  const accountStreak = useStore($accountStreak);
-
-  const loadAccountStreak = async () => {
-    if (accountStreak) {
-      return;
-    }
-
-    setIsLoading(true);
-    const { response, error } = await httpGet<StreakResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-streak`,
-    );
-
-    if (error || !response) {
-      toast.error(error?.message || 'Failed to load account streak');
-      return;
-    }
-
-    $accountStreak.set(response);
-  };
 
   async function loadProgress() {
     const { response: progressList, error } =
@@ -293,11 +246,9 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   }
 
   useEffect(() => {
-    Promise.allSettled([
-      loadProgress(),
-      loadAllProjectDetails(),
-      loadAccountStreak(),
-    ]).finally(() => setIsLoading(false));
+    Promise.allSettled([loadProgress(), loadAllProjectDetails()]).finally(() =>
+      setIsLoading(false),
+    );
   }, []);
 
   useEffect(() => {
@@ -324,8 +275,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       return updatedAtB.getTime() - updatedAtA.getTime();
     });
 
-  const aiGeneratedRoadmaps = personalDashboardDetails?.aiRoadmaps || [];
-
   const customRoadmaps: UserProgress[] = (
     personalDashboardDetails?.progresses || []
   )
@@ -339,7 +288,7 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
   const { avatar, name } = personalDashboardDetails || {};
   const avatarLink = avatar
     ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-    : '/images/default-avatar.png';
+    : '/img/default-avatar.png';
 
   const enrichedProjects = personalDashboardDetails?.projects
     .map((project) => {
@@ -376,18 +325,11 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
           isLoading,
         }}
         isLoading={isLoading}
-        accountStreak={accountStreak}
-        topicsDoneToday={personalDashboardDetails?.topicDoneToday}
-        finishedProjectsCount={
-          enrichedProjects?.filter((p) => p.submittedAt && p.repositoryUrl)
-            .length
-        }
       />
 
       <FavoriteRoadmaps
         progress={learningRoadmapsToShow}
         customRoadmaps={customRoadmaps}
-        aiRoadmaps={aiGeneratedRoadmaps}
         projects={enrichedProjects || []}
         isLoading={isLoading}
       />

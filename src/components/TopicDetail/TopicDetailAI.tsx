@@ -20,7 +20,7 @@ import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
 import { getPercentage } from '../../lib/number';
 import { showLoginPopup } from '../../lib/popup';
 import type { ResourceType } from '../../lib/resource-progress';
-import { getAiCourseLimitOptions } from '../../queries/ai-course';
+import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { queryClient } from '../../stores/query-client';
@@ -76,7 +76,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   const [streamedMessage, setStreamedMessage] = useState('');
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
   const { data: tokenUsage, isLoading } = useQuery(
-    getAiCourseLimitOptions(),
+    aiLimitOptions(),
     queryClient,
   );
 
@@ -170,7 +170,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
           window.location.reload();
         }
 
-        queryClient.invalidateQueries(getAiCourseLimitOptions());
+        queryClient.invalidateQueries(aiLimitOptions());
         return;
       }
 
@@ -206,7 +206,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
             setAiChatHistory(newMessages);
           });
 
-          queryClient.invalidateQueries(getAiCourseLimitOptions());
+          queryClient.invalidateQueries(aiLimitOptions());
           scrollToBottom();
         },
       });
@@ -290,21 +290,16 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
               <a
                 target="_blank"
                 href={`/ai/course?term=${roadmapTreeMapping?.text}&difficulty=beginner&src=topic`}
-                className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
+                className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black [&>svg:last-child]:hidden"
               >
-                {nodeTextParts.slice(1).map((text, index) => {
-                  // -2 because we are removing roadmap title from the list
-                  const isLast = index === nodeTextParts.length - 2;
-
+                {nodeTextParts.slice(-2).map((text, index) => {
                   return (
                     <>
                       <span key={text} className="flex items-center">
                         {text}
                       </span>
 
-                      {!isLast && (
-                        <ChevronRightIcon className="h-3 w-3 text-gray-400" />
-                      )}
+                      <ChevronRightIcon className="h-3 w-3 text-gray-400" />
                     </>
                   );
                 })}

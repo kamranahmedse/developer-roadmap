@@ -21,8 +21,12 @@ import {
 } from './QuestionAnswerChat';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
-import { getUrlParams } from '../../lib/browser';
+import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { useParams } from '../../hooks/use-params';
+import { useQuery } from '@tanstack/react-query';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { queryClient } from '../../stores/query-client';
+import { showUpgradeModal } from '../../stores/subscription';
 
 const allowedFormats = ['course', 'guide', 'roadmap'] as const;
 export type AllowedFormat = (typeof allowedFormats)[number];
@@ -36,6 +40,11 @@ export function ContentGenerator() {
   const [title, setTitle] = useState('');
   const [selectedFormat, setSelectedFormat] = useState<AllowedFormat>('course');
 
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
   useEffect(() => {
     const isValidFormat = allowedFormats.find(
       (format) => format.value === params.format,
@@ -48,7 +57,6 @@ export function ContentGenerator() {
     }
   }, [params.format]);
 
-  // question answer chat options
   const [showFineTuneOptions, setShowFineTuneOptions] = useState(false);
   const [questionAnswerChatMessages, setQuestionAnswerChatMessages] = useState<
     QuestionAnswerChatMessage[]
@@ -60,7 +68,7 @@ export function ContentGenerator() {
   useEffect(() => {
     const params = getUrlParams();
     const format = params.format as AllowedFormat;
-    if (format && allowedFormats.includes(format)) {
+    if (format && allowedFormats.find((f) => f.value === format)) {
       setSelectedFormat(format);
     }
   }, []);
@@ -87,9 +95,22 @@ export function ContentGenerator() {
     },
   ];
 
+  const selectedLimit = limits?.[selectedFormat];
+  const showLimitWarning =
+    !isPaidUser && !isPaidUserLoading && !isLimitLoading && isLoggedIn();
+
   const handleSubmit = () => {
     if (!isLoggedIn()) {
       showLoginPopup();
+      return;
+    }
+
+    if (
+      !isPaidUser &&
+      selectedLimit &&
+      selectedLimit?.used >= selectedLimit?.limit
+    ) {
+      showUpgradeModal();
       return;
     }
 
@@ -126,17 +147,18 @@ export function ContentGenerator() {
         {isUpgradeModalOpen && (
           <UpgradeAccountModal onClose={() => setIsUpgradeModalOpen(false)} />
         )}
-        {!isPaidUser && !isPaidUserLoading && isLoggedIn() && (
+        {showLimitWarning && (
           <div className="absolute bottom-full left-1/2 -translate-x-1/2 -translate-y-8 text-gray-500 max-md:hidden">
-            You are on the free plan
+            {selectedLimit?.used} of {selectedLimit?.limit} {selectedFormat}s
             <button
               onClick={() => setIsUpgradeModalOpen(true)}
               className="ml-2 rounded-xl bg-yellow-600 px-2 py-1 text-sm text-white hover:opacity-80"
             >
-              Upgrade to Pro
+              Need more? Upgrade
             </button>
           </div>
         )}
+
         <h1 className="mb-0.5 text-center text-4xl font-semibold max-md:text-left max-md:text-xl lg:mb-3">
           What can I help you learn?
         </h1>
@@ -168,6 +190,7 @@ export function ContentGenerator() {
             className="block w-full rounded-xl border border-gray-200 bg-white p-4 outline-none placeholder:text-gray-500 focus:border-gray-500"
             required
             minLength={3}
+            data-clarity-unmask="true"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -182,7 +205,10 @@ export function ContentGenerator() {
                 <FormatItem
                   key={format.value}
                   label={format.label}
-                  onClick={() => setSelectedFormat(format.value)}
+                  onClick={() => {
+                    setSelectedFormat(format.value);
+                    setUrlParams({ format: format.value });
+                  }}
                   icon={format.icon}
                   isSelected={isSelected}
                 />
@@ -227,16 +253,13 @@ export function ContentGenerator() {
             format={selectedFormat}
             questionAnswerChatMessages={questionAnswerChatMessages}
             setQuestionAnswerChatMessages={setQuestionAnswerChatMessages}
-            onGenerateNow={() => {
-              handleSubmit();
-            }}
           />
         )}
 
         <button
           type="submit"
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-black p-4 text-white focus:outline-none disabled:cursor-not-allowed disabled:opacity-80"
-          disabled={!canGenerate}
+          disabled={!canGenerate || isLimitLoading}
         >
           <SparklesIcon className="size-4" />
           Generate

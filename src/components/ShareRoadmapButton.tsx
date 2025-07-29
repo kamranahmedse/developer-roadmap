@@ -124,7 +124,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
               <div className="flex w-[20px] items-center justify-center">
                 <img
                   alt={'hackernews logo'}
-                  src={'/images/hackernews.svg'}
+                  src={'/img/hackernews.svg'}
                   className="h-5 w-5"
                 />
               </div>
@@ -138,7 +138,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
               <div className="flex w-[20px] items-center justify-center">
                 <img
                   alt={'reddit logo'}
-                  src={'/images/reddit.svg'}
+                  src={'/img/reddit.svg'}
                   className="h-5 w-5"
                 />
               </div>

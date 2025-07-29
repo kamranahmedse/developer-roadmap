@@ -27,7 +27,7 @@ export const actions: PredefinedActionType[] = [
       {
         icon: NotebookPenIcon,
         label: 'Explain the topic',
-        prompt: 'Explain this topic in detail and include examples',
+        prompt: 'Explain this topic in detail',
       },
       {
         icon: ListIcon,

@@ -27,6 +27,7 @@ function Question(props: QuestionProps) {
         className="min-h-[80px] w-full resize-none px-4 py-3 text-gray-700 placeholder:text-gray-400 focus:outline-hidden"
         value={value}
         onChange={(e) => onChange(e.target.value)}
+        data-clarity-unmask="true"
         autoFocus={autoFocus}
       />
     </div>

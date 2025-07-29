@@ -1,0 +1,15 @@
+---
+import { AIQuiz } from '../../../components/AIQuiz/AIQuiz';
+import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
+---
+
+<SkeletonLayout
+  title='AI Quiz'
+  briefTitle='AI Quiz'
+  description='AI Quiz'
+  keywords={['ai', 'quiz', 'education', 'learning']}
+  canonicalUrl='/ai/quiz'
+  noIndex={true}
+>
+  <AIQuiz client:load />
+</SkeletonLayout>
