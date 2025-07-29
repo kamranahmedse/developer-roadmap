@@ -14,6 +14,8 @@ import { queryClient } from '../../stores/query-client';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
 import { useAuth } from '../../hooks/use-auth';
 import { roadmapJSONOptions } from '../../queries/roadmap';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 type PersonalizedRoadmapProps = {
   roadmapId: string;
@@ -200,7 +202,14 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
       ) : (
         <button
           className="group inline-flex items-center gap-1.5 border-b-2 border-b-transparent px-2 pb-2.5 text-sm font-normal text-gray-400 transition-colors hover:text-gray-700"
-          onClick={() => setIsModalOpen(true)}
+          onClick={() => {
+            if (!isLoggedIn()) {
+              showLoginPopup();
+              return;
+            }
+
+            setIsModalOpen(true);
+          }}
           disabled={isGenerating}
         >
           {isGenerating ? (

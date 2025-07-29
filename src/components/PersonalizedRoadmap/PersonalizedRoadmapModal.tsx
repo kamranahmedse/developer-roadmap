@@ -1,6 +1,10 @@
 import { PersonStandingIcon, Trash2 } from 'lucide-react';
 import { useId, useState, type FormEvent } from 'react';
 import { Modal } from '../Modal';
+import { queryClient } from '../../stores/query-client';
+import { aiLimitOptions } from '../../queries/ai-course';
+import { useQuery } from '@tanstack/react-query';
+import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
 
 type PersonalizedRoadmapModalProps = {
   onClose: () => void;
@@ -10,15 +14,33 @@ type PersonalizedRoadmapModalProps = {
 };
 
 export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
-  const { onClose, info: infoProp, onSubmit: onSubmitProp, onClearProgress } = props;
+  const {
+    onClose,
+    info: infoProp,
+    onSubmit: onSubmitProp,
+    onClearProgress,
+  } = props;
 
   const [info, setInfo] = useState(infoProp);
   const infoFieldId = useId();
+
+  const { data: limits, isLoading: isLimitLoading } = useQuery(
+    aiLimitOptions(),
+    queryClient,
+  );
+
+  const hasReachedLimit =
+    limits?.used && limits?.limit ? limits.used >= limits.limit : false;
+  console.log(limits);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onSubmitProp(info);
   };
+
+  if (hasReachedLimit) {
+    return <UpgradeAccountModal onClose={onClose} />;
+  }
 
   return (
     <Modal onClose={onClose} bodyClassName="rounded-2xl">
@@ -42,7 +64,7 @@ export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
         <div className="mt-2 grid grid-cols-2 gap-2">
           <button
             type="button"
-            className="flex text-sm items-center justify-center gap-2 rounded-xl border border-red-200 p-2 px-2 text-red-600 hover:bg-red-50 focus:outline-none"
+            className="flex items-center justify-center gap-2 rounded-xl border border-red-200 p-2 px-2 text-sm text-red-600 hover:bg-red-50 focus:outline-none"
             onClick={onClearProgress}
           >
             <Trash2 className="h-4 w-4" />
@@ -51,7 +73,7 @@ export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
           <button
             type="submit"
             disabled={!info.trim()}
-            className="flex disabled:opacity-50 disabled:cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-black p-2 px-2 text-white hover:opacity-90 focus:outline-none"
+            className="flex items-center justify-center gap-2 rounded-xl bg-black p-2 px-2 text-white hover:opacity-90 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
           >
             <PersonStandingIcon className="h-4 w-4" />
             Personalize
