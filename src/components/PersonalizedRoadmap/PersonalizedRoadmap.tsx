@@ -35,10 +35,11 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
     queryClient,
   );
 
-  const { data: userProgress, refetch: refetchUserProgress } = useQuery(
-    userResourceProgressOptions('roadmap', roadmapId),
-    queryClient,
-  );
+  const {
+    data: userProgress,
+    isLoading: isUserProgressLoading,
+    refetch: refetchUserProgress,
+  } = useQuery(userResourceProgressOptions('roadmap', roadmapId), queryClient);
 
   useEffect(() => {
     if (userProgress?.personalized) {
@@ -207,7 +208,7 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
         />
       ) : (
         <button
-          className="group inline-flex items-center gap-1.5 border-b-2 border-b-transparent px-2 pb-2.5 text-sm font-normal text-gray-500 transition-colors hover:text-black"
+          className="group hidden sm:inline-flex items-center gap-1.5 border-b-2 border-b-transparent pb-2.5 text-sm font-normal text-gray-500 transition-colors hover:text-black"
           onClick={() => {
             if (!isLoggedIn()) {
               showLoginPopup();

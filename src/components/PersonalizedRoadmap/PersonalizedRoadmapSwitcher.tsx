@@ -69,7 +69,7 @@ export function PersonalizedRoadmapSwitcher(
             </div>
           )}
         </div>
-        <div className="flex">
+        <div className="flex bg-gray-200 rounded-full">
           <button
             className={cn(
               'rounded-full px-2.5 py-1 text-xs font-medium transition-all',

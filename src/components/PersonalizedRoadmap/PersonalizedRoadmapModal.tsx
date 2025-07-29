@@ -43,7 +43,12 @@ export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
   }
 
   return (
-    <Modal onClose={onClose} bodyClassName="rounded-2xl">
+    <Modal
+      onClose={onClose}
+      wrapperClassName="h-auto"
+      overlayClassName="items-start md:items-center"
+      bodyClassName="rounded-2xl"
+    >
       <form onSubmit={handleSubmit} className="p-4">
         <h2 className="text-lg font-semibold">Personalize Roadmap</h2>
         <div className="mt-0.5 flex flex-col gap-2">
