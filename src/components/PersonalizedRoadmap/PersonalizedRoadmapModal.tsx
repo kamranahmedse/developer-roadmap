@@ -1,4 +1,4 @@
-import { PersonStandingIcon, XIcon } from 'lucide-react';
+import { PersonStandingIcon, Trash2 } from 'lucide-react';
 import { useId, useState, type FormEvent } from 'react';
 import { Modal } from '../Modal';
 
@@ -32,7 +32,7 @@ export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
           <textarea
             id={infoFieldId}
             className="h-[150px] w-full resize-none rounded-xl border border-gray-200 p-3 focus:border-gray-500 focus:outline-none"
-            placeholder="I already know about HTML, CSS, and JavaScript..."
+            placeholder="I am a beginner, give me a simpler version of the roadmap"
             value={info}
             onChange={(e) => setInfo(e.target.value)}
             autoFocus
@@ -42,15 +42,16 @@ export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
         <div className="mt-2 grid grid-cols-2 gap-2">
           <button
             type="button"
-            className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 p-2 px-2 text-gray-600 hover:bg-gray-100 focus:outline-none"
+            className="flex text-sm items-center justify-center gap-2 rounded-xl border border-red-200 p-2 px-2 text-red-600 hover:bg-red-50 focus:outline-none"
             onClick={onClearProgress}
           >
-            <XIcon className="h-4 w-4" />
-            Clear Personalized
+            <Trash2 className="h-4 w-4" />
+            Reset
           </button>
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 rounded-xl bg-black p-2 px-2 text-white hover:opacity-90 focus:outline-none"
+            disabled={!info.trim()}
+            className="flex disabled:opacity-50 disabled:cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-black p-2 px-2 text-white hover:opacity-90 focus:outline-none"
           >
             <PersonStandingIcon className="h-4 w-4" />
             Personalize
