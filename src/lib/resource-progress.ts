@@ -2,6 +2,8 @@ import Cookies from 'js-cookie';
 import { httpGet, httpPost } from './http';
 import { TOKEN_COOKIE_NAME, getUser } from './jwt';
 import { roadmapProgress, totalRoadmapNodes } from '../stores/roadmap.ts';
+import { queryClient } from '../stores/query-client.ts';
+import { userResourceProgressOptions } from '../queries/resource-progress.ts';
 // @ts-ignore
 import Element = astroHTML.JSX.Element;
 
@@ -59,6 +61,7 @@ export async function updateResourceProgress(
     learning: string[];
     skipped: string[];
     isFavorite: boolean;
+    personalized: { topicIds: string[]; information: string };
   }>(`${import.meta.env.PUBLIC_API_URL}/v1-update-resource-progress`, {
     topicId,
     resourceType,
@@ -70,12 +73,27 @@ export async function updateResourceProgress(
     throw new Error(error?.message || 'Something went wrong');
   }
 
-  setResourceProgress(
-    resourceType,
-    resourceId,
-    response.done,
-    response.learning,
-    response.skipped,
+  roadmapProgress.set({
+    done: response.done,
+    learning: response.learning,
+    skipped: response.skipped,
+    personalized: response.personalized,
+  });
+
+  queryClient.setQueryData(
+    userResourceProgressOptions(resourceType, resourceId).queryKey,
+    (oldData) => {
+      if (!oldData) {
+        return undefined;
+      }
+
+      return {
+        ...oldData,
+        done: response.done,
+        learning: response.learning,
+        skipped: response.skipped,
+      };
+    },
   );
 
   return response;
@@ -158,65 +176,31 @@ export function clearMigratedRoadmapProgress(
 export async function getResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string,
-): Promise<{ done: string[]; learning: string[]; skipped: string[] }> {
+): Promise<{
+  done: string[];
+  learning: string[];
+  skipped: string[];
+  personalized: { topicIds: string[]; information: string };
+}> {
   // No need to load progress if user is not logged in
   if (!Cookies.get(TOKEN_COOKIE_NAME)) {
     return {
       done: [],
       learning: [],
       skipped: [],
+      personalized: {
+        topicIds: [],
+        information: '',
+      },
     };
   }
 
-  const userId = getUser()?.id;
-  const progressKey = `${resourceType}-${resourceId}-${userId}-progress`;
-  const isFavoriteKey = `${resourceType}-${resourceId}-favorite`;
-
-  const rawIsFavorite = localStorage.getItem(isFavoriteKey);
-  const isFavorite = JSON.parse(rawIsFavorite || '0') === 1;
-
-  const rawProgress = localStorage.getItem(progressKey);
-  const progress = JSON.parse(rawProgress || 'null');
-
-  const progressTimestamp = progress?.timestamp;
-  const diff = new Date().getTime() - parseInt(progressTimestamp || '0', 10);
-  const isProgressExpired = diff > 15 * 60 * 1000; // 15 minutes
-
-  if (!progress || isProgressExpired) {
-    return loadFreshProgress(resourceType, resourceId);
-  } else {
-    setResourceProgress(
-      resourceType,
-      resourceId,
-      progress?.done || [],
-      progress?.learning || [],
-      progress?.skipped || [],
-    );
-  }
-
-  // Dispatch event to update favorite status in the MarkFavorite component
-  window.dispatchEvent(
-    new CustomEvent('mark-favorite', {
-      detail: {
-        resourceType,
-        resourceId,
-        isFavorite,
-      },
-    }),
-  );
-
-  return progress;
-}
-
-async function loadFreshProgress(
-  resourceType: ResourceType,
-  resourceId: string,
-) {
   const { response, error } = await httpGet<{
     done: string[];
     learning: string[];
     skipped: string[];
     isFavorite: boolean;
+    personalized: { topicIds: string[]; information: string };
   }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-user-resource-progress`, {
     resourceType,
     resourceId,
@@ -228,16 +212,19 @@ async function loadFreshProgress(
       done: [],
       learning: [],
       skipped: [],
+      personalized: {
+        topicIds: [],
+        information: '',
+      },
     };
   }
 
-  setResourceProgress(
-    resourceType,
-    resourceId,
-    response?.done || [],
-    response?.learning || [],
-    response?.skipped || [],
-  );
+  roadmapProgress.set({
+    done: response.done,
+    learning: response.learning,
+    skipped: response.skipped,
+    personalized: response.personalized,
+  });
 
   // Dispatch event to update favorite status in the MarkFavorite component
   window.dispatchEvent(
@@ -251,31 +238,6 @@ async function loadFreshProgress(
   );
 
   return response;
-}
-
-export function setResourceProgress(
-  resourceType: 'roadmap' | 'best-practice',
-  resourceId: string,
-  done: string[],
-  learning: string[],
-  skipped: string[],
-): void {
-  roadmapProgress.set({
-    done,
-    learning,
-    skipped,
-  });
-
-  const userId = getUser()?.id;
-  localStorage.setItem(
-    `${resourceType}-${resourceId}-${userId}-progress`,
-    JSON.stringify({
-      done,
-      learning,
-      skipped,
-      timestamp: new Date().getTime(),
-    }),
-  );
 }
 
 export function topicSelectorAll(
@@ -365,6 +327,10 @@ export async function renderResourceProgress(
     done = [],
     learning = [],
     skipped = [],
+    personalized = {
+      topicIds: [],
+      information: '',
+    },
   } = (await getResourceProgress(resourceType, resourceId)) || {};
 
   done.forEach((topicId) => {
@@ -376,6 +342,10 @@ export async function renderResourceProgress(
   });
 
   skipped.forEach((topicId) => {
+    renderTopicProgress(topicId, 'skipped');
+  });
+
+  personalized.topicIds.forEach((topicId: string) => {
     renderTopicProgress(topicId, 'skipped');
   });
 

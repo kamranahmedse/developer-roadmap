@@ -15,6 +15,7 @@ import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { ScheduleButton } from './Schedule/ScheduleButton';
 import { ShareRoadmapButton } from './ShareRoadmapButton';
 import { TabLink } from './TabLink';
+import { PersonalizedRoadmap } from './PersonalizedRoadmap/PersonalizedRoadmap';
 
 export interface Props {
   title: string;
@@ -160,20 +161,11 @@ const hasProjects = projectCount > 0;
                 text='AI Tutor'
                 mobileText='AI'
                 isActive={false}
-                badgeText='New'
               />
             )}
           </div>
 
-          <TabLink
-            url={`https://github.com/kamranahmedse/developer-roadmap/issues/new/choose`}
-            icon={MessageCircle}
-            text='Suggest Changes'
-            isExternal={true}
-            hideTextOnMobile={true}
-            isActive={false}
-            className='hidden sm:flex'
-          />
+          <PersonalizedRoadmap roadmapId={roadmapId} client:load />
         </div>
       )
     }

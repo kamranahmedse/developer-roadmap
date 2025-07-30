@@ -6,7 +6,7 @@ export function AuthorCredentials() {
   return (
     <div className="flex items-center gap-3 text-white lg:mt-auto">
       <img
-        src="https://assets.roadmap.sh/guest/kamran-course-pf-agibf.jpg"
+        src="https://github.com/kamranahmedse.png"
         className="aspect-[4/5] h-[110px] w-[88px] rounded-xl object-cover shadow-md"
         alt="Kamran Ahmed"
       />

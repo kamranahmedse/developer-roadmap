@@ -1,4 +1,4 @@
-import { Award, QuoteIcon, Trophy } from 'lucide-react';
+import { Award, Trophy } from 'lucide-react';
 
 export function AuthorQuoteMessage() {
   return (
@@ -45,7 +45,7 @@ export function AuthorQuoteMessage() {
 
           <div className="mt-8 flex items-center gap-4">
             <img
-              src="https://assets.roadmap.sh/guest/kamran-lqjta.jpeg"
+              src="https://github.com/kamranahmedse.png"
               alt="Kamran Ahmed"
               className="size-14 rounded-full ring-2 ring-yellow-500/20"
             />
