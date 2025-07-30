@@ -5,5 +5,5 @@ create-vue is a CLI tool that helps you create a new Vue project with a single c
 Learn more using the following resources:
 
 - [@opensource@vuejs/create-vue](https://github.com/vuejs/create-vue)
-- [@official@Creating a Vue Project](https://cli.vuejs.org/guide/creating-a-project.html)
+- [@official@Quick Start | Vue.js](https://vuejs.org/guide/quick-start.html)
 - [@feed@Explore top posts about Vue.js](https://app.daily.dev/tags/vuejs?ref=roadmapsh)
