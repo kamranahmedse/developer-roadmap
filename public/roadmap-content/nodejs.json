@@ -1104,11 +1104,6 @@
         "title": "Chalk Docs",
         "url": "https://github.com/chalk/chalk#readme",
         "type": "opensource"
-      },
-      {
-        "title": "Style Command Line Output with Chalk Package in Node.js",
-        "url": "https://www.positronx.io/style-command-line-output-with-chalk-library-in-node-js/",
-        "type": "article"
       }
     ]
   },
