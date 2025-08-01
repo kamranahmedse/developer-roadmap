@@ -82,7 +82,7 @@ export function DashboardPage(props: DashboardPageProps) {
           'striped-loader-slate': isLoading,
         })}
       >
-        <div className="bg-slate-800/30 py-5 min-h-[70px]">
+        <div className="min-h-[70px] bg-slate-800/30 py-5">
           <div className="container flex flex-wrap items-center gap-1.5">
             {!isLoading && (
               <>
@@ -107,7 +107,7 @@ export function DashboardPage(props: DashboardPageProps) {
                             href: `/respond-invite?i=${team.memberId}`,
                           }
                         : {
-                            href: `/team?t=${team._id}`,
+                            href: `/teams/${team._id}/activity`,
                           })}
                       avatar={avatarUrl}
                     />
@@ -116,8 +116,8 @@ export function DashboardPage(props: DashboardPageProps) {
                 <DashboardTabButton
                   label="+ Create Team"
                   isActive={false}
-                  href="/team/new"
-                  className="border border-dashed border-slate-700 bg-transparent px-3 text-[13px] text-sm text-gray-500 hover:border-solid hover:border-slate-700 hover:text-gray-400"
+                  href="/teams/new"
+                  className="border border-dashed border-slate-700 bg-transparent px-3 text-sm text-[13px] text-gray-500 hover:border-solid hover:border-slate-700 hover:text-gray-400"
                 />
               </>
             )}

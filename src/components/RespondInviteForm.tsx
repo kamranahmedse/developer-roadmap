@@ -34,7 +34,7 @@ export function RespondInviteForm() {
 
   async function loadInvitation(inviteId: string) {
     const { response, error } = await httpGet<InvitationResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-invitation/${inviteId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-invitation/${inviteId}`,
     );
     if (error || !response) {
       setError(error?.message || 'Something went wrong');
@@ -64,7 +64,7 @@ export function RespondInviteForm() {
       `${import.meta.env.PUBLIC_API_URL}/v1-respond-invite/${inviteId}`,
       {
         status,
-      }
+      },
     );
     if (error || !response) {
       setError(error?.message || 'Something went wrong');
@@ -75,7 +75,7 @@ export function RespondInviteForm() {
       window.location.href = '/';
       return;
     }
-    window.location.href = `/team/activity?t=${response.teamId}`;
+    window.location.href = `/teams/${response.teamId}/activity`;
   }
 
   if (isLoadingInvite) {
@@ -85,7 +85,7 @@ export function RespondInviteForm() {
   if (!invite) {
     return (
       <div className="container text-center">
-        <ErrorIcon2 className="mx-auto mb-4 mt-24 w-20 opacity-20" />
+        <ErrorIcon2 className="mx-auto mt-24 mb-4 w-20 opacity-20" />
 
         <h2 className={'mb-1 text-2xl font-bold'}>Error</h2>
         <p className="mb-4 text-base leading-6 text-gray-600">
@@ -106,7 +106,7 @@ export function RespondInviteForm() {
 
   return (
     <div className="container text-center">
-      <BuildingIcon className="mx-auto mb-4 mt-24 w-20 h-20 opacity-20" />
+      <BuildingIcon className="mx-auto mt-24 mb-4 h-20 w-20 opacity-20" />
 
       <h2 className={'mb-1 text-2xl font-bold'}>Join Team</h2>
       <p className="mb-3 text-base leading-6 text-gray-600">
@@ -139,7 +139,7 @@ export function RespondInviteForm() {
                   pageProgressMessage.set('');
                 })
               }
-              className="grow cursor-pointer rounded-lg hover:bg-gray-300 bg-gray-200 px-3 py-2 text-center"
+              className="grow cursor-pointer rounded-lg bg-gray-200 px-3 py-2 text-center hover:bg-gray-300"
             >
               Accept
             </button>
@@ -150,7 +150,7 @@ export function RespondInviteForm() {
                   pageProgressMessage.set('');
                 })
               }
-              className="grow cursor-pointer rounded-lg bg-red-500 hover:bg-red-600 px-3 py-2 text-white disabled:opacity-40"
+              className="grow cursor-pointer rounded-lg bg-red-500 px-3 py-2 text-white hover:bg-red-600 disabled:opacity-40"
             >
               Reject
             </button>
