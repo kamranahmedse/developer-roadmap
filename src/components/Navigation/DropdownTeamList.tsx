@@ -26,7 +26,7 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
 
     setIsLoading(true);
     const { response, error } = await httpGet<TeamListResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
@@ -73,7 +73,7 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
             if (team.status === 'invited') {
               pageLink = `/respond-invite?i=${team.memberId}`;
             } else if (team.status === 'joined') {
-              pageLink = `/team/activity?t=${team._id}`;
+              pageLink = `/teams/${team._id}/activity`;
             }
 
             return (
@@ -95,7 +95,7 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
                 No teams found.{' '}
                 <a
                   className="font-medium text-slate-400 underline underline-offset-2 hover:text-slate-300"
-                  href="/team/new"
+                  href="/teams/new"
                 >
                   Create a team
                 </a>
