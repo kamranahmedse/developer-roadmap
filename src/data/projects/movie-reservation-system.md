@@ -26,46 +26,66 @@ roadmapIds:
   - 'spring-boot'
 ---
 
-You are required to build backend system for a movie reservation service. The service will allow users to sign up, log in, browse movies, reserve seats for specific showtimes, and manage their reservations. The system will feature user authentication, movie and showtime management, seat reservation functionality, and reporting on reservations.
+You are required to build a backend system for a movie reservation service. The service will allow users to sign up, log in, browse movies, reserve seats for specific showtimes, and manage their reservations. The system will feature user authentication, movie and showtime management, seat reservation functionality, and reporting on reservations.
 
 ## Goal
 
-The goal of this project is to help you understand how to implement complex business logic i.e. seat reservation and scheduling, thinking about the data model and relationships, and complex queries.
+The goal of this project is to help you understand how to implement complex business logic such as seat reservation and showtime scheduling. You will learn to design an efficient data model, manage entity relationships, and implement complex queries to support real-world functionality.
 
 ## Requirements
 
-We have intentionally left out the implementation details to encourage you to think about the design and implementation of the system. However here are some requirements that you can consider:
+We have intentionally left out detailed implementation instructions to encourage independent design thinking. However, here are some functional requirements to guide you:
 
 ### User Authentication and Authorization
 
-- Users should be able to sign up and log in.
-- You also need roles for users, such as admin and regular user. Admins should be able to manage movies and showtimes.
-- Regular users should be able to reserve seats for a showtime.
-
-> You can create the initial admin using seed data. Only admins should be able to promote other users to admin and be able to do things related to movie management, reporting, etc.
+* Users should be able to sign up and log in.
+* Support roles for users: **admin** and **regular user**. Admins can manage movies and showtimes, while regular users can browse and reserve.
+* The initial admin can be created using seed data. Only admins can promote users to admin and access features like movie management and reporting.
 
 ### Movie Management
 
-- Admins should be able to add, update, and delete movies.
-- Each movie should have a title, description, and poster image.
-- Movies should be categorized by genre.
-- Movies should have showtimes.
+* Admins should be able to add, update, and delete movies.
+* Each movie should include a title, description, poster image, and genre classification.
+* Movies should have associated showtimes, which users can browse and reserve seats for.
 
 ### Reservation Management
 
-- Users should be able to get the movies and their show times for a specific date.
-- Users should be able to reserve seats for a showtime, see the available seats, and select the seats they want.
-- Users should be able to see their reservations and cancel them (only upcoming ones).
-- Admins should be able to see all reservations, capacity, and revenue.
+* Users should be able to view a list of movies and their showtimes for a specific date.
+* Users should be able to see available seats for a selected showtime and reserve specific seats.
+* Users can view and cancel their **upcoming reservations**.
+* Admins can access all reservation data, including seat capacity per showtime and total revenue.
 
 ## Implementation Considerations
 
-- Think about the data model and relationships between entities.
-- Think about how you will avoid overbooking, and how you will handle seat reservations.
-- Think about how you will handle the scheduling of showtimes.
-- Think about how you will handle the reporting of reservations.
-- Think about how you will handle the authentication and authorization of users.
+* **Data Modeling**: Identify core entities such as `Users`, `Movies`, `Showtimes`, `Seats`, and `Reservations`. Model relationships such as:
+
+  * One-to-Many: Movie → Showtimes
+  * Many-to-Many: Showtimes ↔ Seats via Reservations
+  * One-to-Many: User → Reservations
+
+* **Avoid Overbooking**: Use **database transactions**, **row-level locking**, or **atomic seat reservations** to prevent double booking. Ensure only available seats can be reserved.
+
+* **Scheduling Showtimes**:
+
+  * Validate showtimes to prevent **overlapping schedules for the same screen**.
+  * Ensure showtimes have accurate start/end times and consider **time zone handling** for correct display and booking.
+
+* **Reporting and Analytics**:
+
+  * Admins should be able to generate **reports on reservation trends**, **seat occupancy**, and **revenue per movie/showtime/date**.
+  * Consider storing timestamps for reservation creation and cancellation to support analytics.
+
+* **Authentication & Authorization**:
+
+  * Implement secure user authentication (e.g., JWT or session-based).
+  * Protect admin routes with role-based authorization checks.
 
 <hr />
 
-This project is quite complex and will require you to think about the design and implementation of the system. You can use any programming language and database of your choice. I would recommend using a relational database such as MySQL or PostgreSQL. Once you have finished this project, you will have a good understanding of how to implement complex business logic, think about the data model and relationships, and complex queries. You can also extend this project by adding more features such as payment processing, email notifications, etc.
+This project is designed to challenge your ability to manage real-world backend complexity. You can use any programming language and database of your choice; relational databases like **MySQL** or **PostgreSQL** are recommended for robust data integrity and relational mapping.
+
+Once completed, this project will enhance your understanding of authentication, database design, and business logic. You can extend this project by integrating **payment gateways**, **email/SMS notifications**, **seat maps with visual selection**, and more.
+
+---
+
+Let me know if you’d like help creating a **basic data model diagram** or a **starter code structure** suggestion for this!
