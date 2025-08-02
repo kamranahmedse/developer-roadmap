@@ -228,7 +228,7 @@
   },
   "j2S8dP3HlAOOoZdpj-7Dx": {
     "title": "Indexed Arrays",
-    "description": "Indexed arrays in PHP store values that are accessed through numerical indexes, which start at 0 by default. This might be particularly useful when you have a list of items in a specific order. For example, you might use an indexed array to represent a list of your favorite books, where each book is numbered starting from 0. Each individual item in the array, book in this case, can be accessed by their specific index. You can use the array() function or the short array syntax \\[\\] to declare an indexed array.\n\nHere's an Example:\n\n    $books = array(\"The Great Gatsby\", \"Moby Dick\", \"To Kill a Mockingbird\");\n    echo $books[0]; //Outputs \"The Great Gatsby\"\n    \n\nVisit the following resources to learn more:",
+    "description": "Indexed arrays in PHP store values that are accessed through numerical indexes, which start at 0 by default. This might be particularly useful when you have a list of items in a specific order. For example, you might use an indexed array to represent a list of your favorite books, where each book is numbered starting from 0. Each individual item in the array, book in this case, can be accessed by their specific index. You can use the array() function or the short array syntax \\[\\] to declare an indexed array.\n\nHere's an Example:\n\n    $books = [\"The Great Gatsby\", \"Moby Dick\", \"To Kill a Mockingbird\"];\n    echo $books[0]; //Outputs \"The Great Gatsby\"\n    \n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Indexed Arrays",
@@ -239,7 +239,7 @@
   },
   "i_NRsOJNNp7AOqMgu5Jg8": {
     "title": "Associative Arrays",
-    "description": "Associative arrays in PHP are a type of array that uses named keys instead of numeric ones. This provides a more human-readable way to store data where each value can be accessed by its corresponding string key. An example of an associative array could be storing names as keys and their corresponding ages as values. Here's a brief example:\n\n    $ages = array(\n       \"Peter\" => 35,\n       \"John\" => 42,\n       \"Mary\" => 27\n    );\n    \n\nIn this case, to find out John's age, you would simply use `echo $ages['John']` where 'John' is the key. Associative arrays are also easy to loop through using the `foreach` construct.\n\nVisit the following resources to learn more:",
+    "description": "Associative arrays in PHP are a type of array that uses named keys instead of numeric ones. This provides a more human-readable way to store data where each value can be accessed by its corresponding string key. An example of an associative array could be storing names as keys and their corresponding ages as values. Here's a brief example:\n\n    $ages = [\n       \"Peter\" => 35,\n       \"John\" => 42,\n       \"Mary\" => 27\n    ];\n    \n\nIn this case, to find out John's age, you would simply use `echo $ages['John']` where 'John' is the key. Associative arrays are also easy to loop through using the `foreach` construct.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "PHP Documentation - Associative Arrays",
@@ -250,7 +250,7 @@
   },
   "uARTOZ-ZwugSmbCJoRS5Y": {
     "title": "Multi-dimensional Arrays",
-    "description": "Multi-dimensional arrays in PHP are a type of array that contains one or more arrays. Essentially, it's an array of arrays. This allows you to store data in a structured manner, much like a table or a matrix. The fundamental idea is that each array value can, in turn, be another array. For instance, you can store information about various users, where each user (a primary array element) contains several details about them (in a secondary array like email, username etc.).\n\nHere's an example:\n\n    $users = array(\n           array(\"John\", \"john@example.com\", \"john123\"),\n           array(\"Jane\", \"jane@example.com\", \"jane123\"),\n           array(\"Doe\", \"doe@example.com\", \"doe123\")\n    );\n    \n\nVisit the following resources to learn more:",
+    "description": "Multi-dimensional arrays in PHP are a type of array that contains one or more arrays. Essentially, it's an array of arrays. This allows you to store data in a structured manner, much like a table or a matrix. The fundamental idea is that each array value can, in turn, be another array. For instance, you can store information about various users, where each user (a primary array element) contains several details about them (in a secondary array like email, username etc.).\n\nHere's an example:\n\n    $users = [\n           [\"John\", \"john@example.com\", \"john123\"],\n           [\"Jane\", \"jane@example.com\", \"jane123\"],\n           [\"Doe\", \"doe@example.com\", \"doe123\"]\n    ];\n    \n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Multi-dimensional Arrays",
