@@ -30,6 +30,7 @@ export async function GET() {
     id: roadmap.id,
     url: `/${roadmap.id}`,
     title: roadmap.frontmatter.briefTitle,
+    shortTitle: roadmap.frontmatter.title,
     description: roadmap.frontmatter.briefDescription,
     group: 'Roadmaps',
     metadata: {
@@ -53,6 +54,7 @@ export async function GET() {
         id: beginnerId,
         url: `/${parentId}?r=${beginnerId}`,
         title: `${parentMeta.title} Beginner`,
+        shortTitle: `${parentMeta.shortTitle} Beginner`,
       };
     })
     .filter(Boolean);
@@ -65,6 +67,7 @@ export async function GET() {
         id: bestPractice.id,
         url: `/best-practices/${bestPractice.id}`,
         title: bestPractice.frontmatter.briefTitle,
+        shortTitle: bestPractice.frontmatter.briefTitle,
         description: bestPractice.frontmatter.briefDescription,
         group: 'Best Practices',
       })),
@@ -72,6 +75,7 @@ export async function GET() {
         id: questionGroup.id,
         url: `/questions/${questionGroup.id}`,
         title: questionGroup.frontmatter.briefTitle,
+        shortTitle: questionGroup.frontmatter.briefTitle,
         group: 'Questions',
       })),
       ...guides.map((guide) => ({
@@ -82,12 +86,14 @@ export async function GET() {
         title: guide.frontmatter.title,
         description: guide.frontmatter.description,
         authorId: guide.frontmatter.authorId,
+        shortTitle: guide.frontmatter.title,
         group: 'Guides',
       })),
       ...videos.map((video) => ({
         id: video.id,
         url: `/videos/${video.id}`,
         title: video.frontmatter.title,
+        shortTitle: video.frontmatter.title,
         group: 'Videos',
       })),
       ...projects.map((project) => ({
@@ -95,6 +101,7 @@ export async function GET() {
         url: `/projects/${project.id}`,
         title: project.frontmatter.title,
         description: project.frontmatter.description,
+        shortTitle: project.frontmatter.title,
         group: 'Projects',
       })),
     ]),
