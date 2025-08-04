@@ -4,4 +4,4 @@ GraphQL allows multiple mutations in a single query by including multiple mutati
 
 Learn more from the following links:
 
-- [@official@Guide to Multiple fields in mutations](https://graphql.org/learn/queries/#multiple-fields-in-mutations)
+- [@official@Guide to Multiple fields in mutations](https://graphql.org/learn/mutations/#multiple-fields-in-mutations)
