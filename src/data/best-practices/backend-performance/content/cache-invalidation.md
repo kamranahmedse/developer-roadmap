@@ -4,6 +4,5 @@ In the realm of backend performance, adopting proper cache-invalidation strategi
 
 Visit the following resources to learn more:
 
-- [@article@Cache Invalidation - GeeksforGeeks](https://www.geeksforgeeks.org/system-design/cache-invalidation-and-the-methods-to-invalidate-cache/)
 - [@official@Cache Invalidation - Redis](https://redis.io/glossary/cache-invalidation/)
 - [@official@Cache invalidation overview - Google Cloud](https://cloud.google.com/cdn/docs/cache-invalidation-overview)
