@@ -926,21 +926,10 @@
       }
     ]
   },
-  "4ZbGj54WR5iuk0V8X_cpL": {
+  "remote-config@4ZbGj54WR5iuk0V8X_cpL.md": {
     "title": "Remote Config",
-    "description": "Firebase Remote Config, accessed in Flutter via the `firebase_remote_config` plugin, enables dynamic app behavior and appearance changes without app updates. This involves adding the plugin, initializing the service, defining default parameter values in the console or code, fetching and retrieving remote parameters, and updating those parameters either through the console or by activating fetched values, allowing for A/B testing and feature control.\n\nLearn more from the following:",
-    "links": [
-      {
-        "title": "Remote Config",
-        "url": "https://firebase.google.com/docs/remote-config",
-        "type": "article"
-      },
-      {
-        "title": "Firebase Remote Config",
-        "url": "https://www.youtube.com/watch?v=34ExOdNEMXI",
-        "type": "video"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "bVeHBEoR_4kfPsEHmVYbp": {
     "title": "Cloud Functions",
