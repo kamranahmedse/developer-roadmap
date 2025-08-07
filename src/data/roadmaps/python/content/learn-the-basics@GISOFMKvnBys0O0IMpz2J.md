@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@article@Google's Python Class](https://developers.google.com/edu/python)
 - [@video@Learn Python - Full Course](https://www.youtube.com/watch?v=4M87qBgpafk)
 - [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)
+- [@video@Python - Basic to Advance](https://youtube.com/playlist?list=PLdo5W4Nhv31bZSiqiOL5ta39vSnBxpOPT&si=DpUdgjCXdLnCvk9j)
