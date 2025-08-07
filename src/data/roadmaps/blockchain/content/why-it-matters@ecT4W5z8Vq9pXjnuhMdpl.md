@@ -5,7 +5,6 @@ The nature of blockchain allows for trustless systems to be built on top of it. 
 Visit the following resources to learn more:
 
 - [@article@Why Blockchain?](https://chain.link/education-hub/blockchain)
-- [@article@Blockchain and Digital Transformation](https://hedera.com/learning/distributed-ledger-technologies/digital-transformation)
 - [@article@Web3/Crypto: Why Bother?](https://continuations.com/post/671863718643105792/web3crypto-why-bother)
 - [@article@Why is Blockchain Important and Why Does it Matter](https://www.simplilearn.com/tutorials/blockchain-tutorial/why-is-blockchain-important)
 - [@video@Cyfirn Updraft | The Purpose of Smart Contracts](https://updraft.cyfrin.io/courses/blockchain-basics/basics/the-purpose-of-smart-contracts)
