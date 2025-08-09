@@ -4,4 +4,4 @@ SQL operators are symbols or keywords used to perform operations on data within 
 
 Learn more from the following resources:
 
-- [@article@SQL Operators: 6 Different Types](https://www.dataquest.io/blog/sql-operators/)
+- [@article@SQL Operators: 6 Different Types](https://dataengineeracademy.com/blog/sql-operators-6-different-types-code-examples/)
