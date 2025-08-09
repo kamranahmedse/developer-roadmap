@@ -4,7 +4,7 @@
     "description": "Fundamental IT skills form the backbone of cybersecurity proficiency and encompass a broad range of technical knowledge. These skills include understanding computer hardware and software, networking concepts, and operating systems (particularly Windows and Linux). Proficiency in at least one programming language, such as Python or JavaScript, is increasingly important for automation and scripting tasks. Database management, including SQL, is crucial for handling and securing data. Knowledge of cloud computing platforms like AWS or Azure is becoming essential as organizations migrate to cloud environments. Familiarity with basic cybersecurity concepts such as encryption, access control, and common attack vectors provides a foundation for more advanced security work. Additionally, troubleshooting skills, the ability to interpret logs, and a basic understanding of web technologies are vital. These fundamental IT skills enable cybersecurity professionals to effectively protect systems, identify vulnerabilities, and respond to incidents in increasingly complex technological landscapes.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "7 In-Demand IT Skills to Boost Your Resume in 2025",
+        "title": "8 In-Demand IT Skills to Boost Your Resume in 2025",
         "url": "https://www.coursera.org/articles/key-it-skills-for-your-career",
         "type": "article"
       },
@@ -340,6 +340,11 @@
       {
         "title": "CompTIA Linux+",
         "url": "https://www.comptia.org/certifications/linux",
+        "type": "article"
+      },
+      {
+        "title": "CompTIA Linux+ Certification Training Labs",
+        "url": "https://github.com/labex-labs/comptia-linux-plus-training-labs",
         "type": "article"
       },
       {

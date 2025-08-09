@@ -137,6 +137,11 @@
         "title": "Anatomy of a Component",
         "url": "https://angular.dev/guide/components",
         "type": "article"
+      },
+      {
+        "title": "Anatomy of a Component - Interactive Tutorial",
+        "url": "https://angular.dev/tutorials/learn-angular/1-components-in-angular",
+        "type": "article"
       }
     ]
   },
