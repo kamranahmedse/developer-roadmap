@@ -276,19 +276,8 @@
   },
   "9naCfoHF1LW1OEsVZGi8v": {
     "title": "Keep it simple and refactor often",
-    "description": "Keeping framework code distant refers to separating the application's code from the framework's code. By doing so, it makes it easier to maintain, test, and upgrade the application's codebase and the framework independently.\n\nHere are some ways to keep framework code distant in system architecture:\n\n1.  Use an abstraction layer to separate the application code from the framework code. This allows the application code to be written without the need to know the specifics of the framework.\n2.  Use dependency injection to decouple the application code from the framework code. This allows the application code to use the framework's functionality without having to instantiate the framework objects directly.\n3.  Avoid using framework-specific libraries or classes in the application code. This makes it easier to switch to a different framework in the future if needed.\n4.  Use a standard interface for the application code to interact with the framework. This allows the application code to be written without the need to know the specifics of the framework.\n5.  Keep the application and the framework code in separate projects and/or repositories.\n\nBy following these best practices, the system architecture will be more maintainable, testable, and less error-prone, and it will be easier to upgrade or switch the framework if needed.\n\nLearn more from the following links:",
-    "links": [
-      {
-        "title": "Clean architecture",
-        "url": "https://pusher.com/tutorials/clean-architecture-introduction/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about General Programming",
-        "url": "https://app.daily.dev/tags/general-programming?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "TDhTYdEyBuOnDKcQJzTAk": {
     "title": "Programming Paradigms",

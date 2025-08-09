@@ -378,22 +378,6 @@
       }
     ]
   },
-  "HlTxLqKNFMhghtKF6AcWu": {
-    "title": "Interactive Test Environments",
-    "description": "Docker allows you to create isolated, disposable environments that can be deleted once you're done with testing. This makes it much easier to work with third party software, test different dependencies or versions, and quickly experiment without the risk of damaging your local setup.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Launch a Dev Environment",
-        "url": "https://docs.docker.com/desktop/dev-environments/create-dev-env/",
-        "type": "article"
-      },
-      {
-        "title": "Test Environments - Medium",
-        "url": "https://manishsaini74.medium.com/containerized-testing-orchestrating-test-environments-with-docker-5201bfadfdf2",
-        "type": "article"
-      }
-    ]
-  },
   "YzpB7rgSR4ueQRLa0bRWa": {
     "title": "Command Line Utilities",
     "description": "Docker images can include command line utilities or standalone applications that we can run inside containers.\n\nVisit the following resources to learn more:",
