@@ -12,6 +12,8 @@ import {
   type RoadmapAIChatHistoryType,
 } from '../hooks/use-roadmap-ai-chat';
 import type { JSONContent } from '@tiptap/core';
+import type { UIMessage } from 'ai';
+import type { ChatUIMessage } from '../lib/ai';
 
 export type ChatHistoryMessage = {
   _id: string;
@@ -26,16 +28,13 @@ export interface ChatHistoryDocument {
   userId: string;
   roadmapId?: string;
   title: string;
-  messages: ChatHistoryMessage[];
+  messages: ChatUIMessage[];
 
   createdAt: Date;
   updatedAt: Date;
 }
 
-export function chatHistoryOptions(
-  chatHistoryId?: string,
-  renderer?: Record<string, MessagePartRenderer>,
-) {
+export function chatHistoryOptions(chatHistoryId?: string) {
   return queryOptions({
     queryKey: ['chat-history-details', chatHistoryId],
     queryFn: async () => {
@@ -47,31 +46,7 @@ export function chatHistoryOptions(
         document.title = data.title;
       }
 
-      const messages: RoadmapAIChatHistoryType[] = [];
-      for (const message of data.messages) {
-        messages.push({
-          role: message.role,
-          content: message.content,
-          ...(message.role === 'user' &&
-            !message?.json && {
-              html: markdownToHtml(message.content),
-            }),
-          ...(message.role === 'user' &&
-            message?.json && {
-              html: htmlFromTiptapJSON(message.json),
-            }),
-          ...(message.role === 'assistant' && {
-            jsx: await renderMessage(message.content, renderer ?? {}, {
-              isLoading: false,
-            }),
-          }),
-        });
-      }
-
-      return {
-        ...data,
-        messages,
-      };
+      return data;
     },
     enabled: !!isLoggedIn() && !!chatHistoryId,
   });

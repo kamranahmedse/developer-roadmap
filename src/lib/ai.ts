@@ -1,4 +1,8 @@
+import Cookies from 'js-cookie';
 import { nanoid } from 'nanoid';
+import { TOKEN_COOKIE_NAME } from './jwt';
+import { FetchError } from './query-http';
+import { DefaultChatTransport, type UIMessage } from 'ai';
 
 export const IS_KEY_ONLY_ROADMAP_GENERATION = false;
 
@@ -352,4 +356,57 @@ export function generateAICourseRoadmapStructure(
   }
 
   return result;
+}
+
+export type ChatUIMessage = UIMessage<
+  never,
+  {
+    redirect: {
+      title: string;
+      chatId: string;
+    };
+  }
+>;
+
+export const chatRoadmapTransport = new DefaultChatTransport({
+  api: import.meta.env.PUBLIC_API_URL + '/v1-chat-roadmap',
+  credentials: 'include',
+  fetch: fetchWithAuthHandling,
+});
+
+export const topicDetailAiChatTransport = new DefaultChatTransport({
+  api: import.meta.env.PUBLIC_API_URL + '/v1-topic-detail-chat',
+  credentials: 'include',
+  fetch: fetchWithAuthHandling,
+});
+
+export async function fetchWithAuthHandling(
+  input: RequestInfo | URL,
+  init?: RequestInit,
+) {
+  try {
+    const response = await fetch(input, init);
+    if (response.status === 401) {
+      Cookies.remove(TOKEN_COOKIE_NAME);
+      window?.location?.reload();
+      return null as unknown as Response;
+    }
+
+    if (!response.ok) {
+      const data = await response.json();
+      if (data?.errors) {
+        throw new FetchError(response.status, data.message);
+      } else {
+        throw new Error('An unexpected error occurred');
+      }
+    }
+
+    return response;
+  } catch (error: unknown) {
+    if (typeof navigator !== 'undefined' && !navigator.onLine) {
+      throw new FetchError(503, 'Service Unavailable');
+    }
+
+    throw error;
+  }
 }
