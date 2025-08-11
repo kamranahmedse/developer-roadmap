@@ -25,9 +25,7 @@ import { Ban, FileText, HeartHandshake, Star, X } from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
-import {
-  type AllowedRoadmapRenderer
-} from '../../lib/roadmap.ts';
+import { type AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
 import { lockBodyScroll } from '../../lib/dom.ts';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
 import { ResourceListSeparator } from './ResourceListSeparator.tsx';
@@ -42,6 +40,8 @@ import type { AIChatHistoryType } from '../GenerateCourse/AICourseLessonChat.tsx
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
 import { TopicProgressButton } from './TopicProgressButton.tsx';
 import { CreateCourseModal } from './CreateCourseModal.tsx';
+import { useChat } from '@ai-sdk/react';
+import { topicDetailAiChatTransport } from '../../lib/ai.ts';
 
 type PaidResourceType = {
   _id?: string;
@@ -134,8 +134,6 @@ export function TopicDetail(props: TopicDetailProps) {
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const [activeTab, setActiveTab] =
     useState<AllowedTopicDetailsTabs>(defaultActiveTab);
-  const [aiChatHistory, setAiChatHistory] =
-    useState<AIChatHistoryType[]>(defaultChatHistory);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
   const [isCustomResource, setIsCustomResource] = useState(false);
 
@@ -156,14 +154,20 @@ export function TopicDetail(props: TopicDetailProps) {
   const [resourceType, setResourceType] = useState<ResourceType>('roadmap');
   const [paidResources, setPaidResources] = useState<PaidResourceType[]>([]);
 
+  const chatId = `${resourceType}-${resourceId}-${topicId}`;
+  const { messages, sendMessage, setMessages, status } = useChat({
+    id: chatId,
+    transport: topicDetailAiChatTransport,
+  });
+
   const handleClose = () => {
     onClose?.();
     setIsActive(false);
     setIsContributing(false);
     setShowUpgradeModal(false);
-    setAiChatHistory(defaultChatHistory);
     setActiveTab('content');
     setShowSubjectSearchModal(false);
+    setMessages([]);
 
     lockBodyScroll(false);
 
@@ -485,8 +489,10 @@ export function TopicDetail(props: TopicDetailProps) {
                   resourceId={resourceId}
                   resourceType={resourceType}
                   topicId={topicId}
-                  aiChatHistory={aiChatHistory}
-                  setAiChatHistory={setAiChatHistory}
+                  messages={messages}
+                  setMessages={setMessages}
+                  status={status}
+                  sendMessage={sendMessage}
                   hasUpgradeButtons={hasUpgradeButtons}
                   onUpgrade={() => setShowUpgradeModal(true)}
                   onLogin={() => {

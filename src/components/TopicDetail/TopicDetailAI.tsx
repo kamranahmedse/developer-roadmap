@@ -1,3 +1,5 @@
+import '../ChatMessages/AIChat.css';
+
 import { useQuery } from '@tanstack/react-query';
 import {
   BotIcon,
@@ -9,14 +11,11 @@ import {
   Trash2,
   WandSparkles,
 } from 'lucide-react';
-import { Fragment, useCallback, useEffect, useRef, useState } from 'react';
-import { flushSync } from 'react-dom';
+import { useEffect, useRef, useState } from 'react';
 import TextareaAutosize from 'react-textarea-autosize';
 import { useToast } from '../../hooks/use-toast';
-import { readStream } from '../../lib/ai';
 import { cn } from '../../lib/classname';
-import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
-import { markdownToHtmlWithHighlighting } from '../../lib/markdown';
+import { isLoggedIn } from '../../lib/jwt';
 import { getPercentage } from '../../lib/number';
 import { showLoginPopup } from '../../lib/popup';
 import type { ResourceType } from '../../lib/resource-progress';
@@ -24,14 +23,12 @@ import { aiLimitOptions } from '../../queries/ai-course';
 import { billingDetailsOptions } from '../../queries/billing';
 import { roadmapTreeMappingOptions } from '../../queries/roadmap-tree';
 import { queryClient } from '../../stores/query-client';
-import {
-  AIChatCard,
-  type AIChatHistoryType,
-} from '../GenerateCourse/AICourseLessonChat';
-import '../GenerateCourse/AICourseLessonChat.css';
 import { AILimitsPopup } from '../GenerateCourse/AILimitsPopup';
-import { PredefinedActions, promptLabelMapping } from './PredefinedActions';
-import { defaultChatHistory } from './TopicDetail';
+import { PredefinedActions } from './PredefinedActions';
+import type { ChatStatus, UIMessage } from 'ai';
+import type { UseChatHelpers } from '@ai-sdk/react';
+import { useAIChatScroll } from '../../hooks/use-ai-chat-scroll';
+import { TopicChatMessages } from '../ChatMessages/TopicChatMessages';
 
 type TopicDetailAIProps = {
   resourceId: string;
@@ -40,8 +37,10 @@ type TopicDetailAIProps = {
 
   hasUpgradeButtons?: boolean;
 
-  aiChatHistory: AIChatHistoryType[];
-  setAiChatHistory: (history: AIChatHistoryType[]) => void;
+  messages: UIMessage[];
+  sendMessage: UseChatHelpers<UIMessage>['sendMessage'];
+  setMessages: UseChatHelpers<UIMessage>['setMessages'];
+  status: ChatStatus;
 
   onUpgrade: () => void;
   onLogin: () => void;
@@ -51,8 +50,11 @@ type TopicDetailAIProps = {
 
 export function TopicDetailAI(props: TopicDetailAIProps) {
   const {
-    aiChatHistory,
-    setAiChatHistory,
+    messages,
+    sendMessage,
+    setMessages,
+    status,
+
     resourceId,
     resourceType,
     topicId,
@@ -63,7 +65,6 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   } = props;
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
-  const scrollareaRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
 
   const sanitizedTopicId = topicId?.includes('@')
@@ -72,8 +73,6 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
   const toast = useToast();
   const [message, setMessage] = useState('');
-  const [isStreamingMessage, setIsStreamingMessage] = useState(false);
-  const [streamedMessage, setStreamedMessage] = useState('');
   const [showAILimitsPopup, setShowAILimitsPopup] = useState(false);
   const { data: tokenUsage, isLoading } = useQuery(
     aiLimitOptions(),
@@ -105,7 +104,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
     if (
       !trimmedMessage ||
-      isStreamingMessage ||
+      status !== 'ready' ||
       !isLoggedIn() ||
       isLimitExceeded ||
       isLoading
@@ -113,110 +112,30 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
       return;
     }
 
-    const newMessages: AIChatHistoryType[] = [
-      ...aiChatHistory,
+    sendMessage(
       {
-        role: 'user',
-        content: trimmedMessage,
+        text: trimmedMessage,
       },
-    ];
+      {
+        body: {
+          resourceId,
+          resourceType,
+          topicId: sanitizedTopicId,
+        },
+      },
+    );
 
-    flushSync(() => {
-      setAiChatHistory(newMessages);
-      setMessage('');
-    });
-
-    scrollToBottom();
-    completeAITutorChat(newMessages);
+    setMessage('');
+    setTimeout(() => {
+      scrollToBottom();
+      textareaRef.current?.focus();
+    }, 0);
   };
 
-  const scrollToBottom = useCallback(() => {
-    scrollareaRef.current?.scrollTo({
-      top: scrollareaRef.current.scrollHeight,
-      behavior: 'smooth',
+  const { scrollToBottom, scrollableContainerRef, showScrollToBottomButton } =
+    useAIChatScroll({
+      messages,
     });
-  }, [scrollareaRef]);
-
-  const completeAITutorChat = async (messages: AIChatHistoryType[]) => {
-    try {
-      setIsStreamingMessage(true);
-
-      const response = await fetch(
-        `${import.meta.env.PUBLIC_API_URL}/v1-topic-detail-chat`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          credentials: 'include',
-          body: JSON.stringify({
-            resourceId,
-            resourceType,
-            topicId: sanitizedTopicId,
-            messages: messages.slice(-10),
-          }),
-        },
-      );
-
-      if (!response.ok) {
-        const data = await response.json();
-
-        toast.error(data?.message || 'Something went wrong');
-        setAiChatHistory([...messages].slice(0, messages.length - 1));
-        setIsStreamingMessage(false);
-
-        if (data.status === 401) {
-          removeAuthToken();
-          window.location.reload();
-        }
-
-        queryClient.invalidateQueries(aiLimitOptions());
-        return;
-      }
-
-      const reader = response.body?.getReader();
-
-      if (!reader) {
-        setIsStreamingMessage(false);
-        toast.error('Something went wrong');
-        return;
-      }
-
-      await readStream(reader, {
-        onStream: async (content) => {
-          flushSync(() => {
-            setStreamedMessage(content);
-          });
-
-          scrollToBottom();
-        },
-        onStreamEnd: async (content) => {
-          const newMessages: AIChatHistoryType[] = [
-            ...messages,
-            {
-              role: 'assistant',
-              content,
-              html: await markdownToHtmlWithHighlighting(content),
-            },
-          ];
-
-          flushSync(() => {
-            setStreamedMessage('');
-            setIsStreamingMessage(false);
-            setAiChatHistory(newMessages);
-          });
-
-          queryClient.invalidateQueries(aiLimitOptions());
-          scrollToBottom();
-        },
-      });
-
-      setIsStreamingMessage(false);
-    } catch (error) {
-      toast.error('Something went wrong');
-      setIsStreamingMessage(false);
-    }
-  };
 
   useEffect(() => {
     scrollToBottom();
@@ -228,7 +147,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     tokenUsage?.used || 0,
     tokenUsage?.limit || 0,
   );
-  const hasChatHistory = aiChatHistory.length > 1;
+  const hasChatHistory = messages.length > 0;
   const nodeTextParts = roadmapTreeMapping?.text?.split('>') || [];
   const hasSubjects =
     (roadmapTreeMapping?.subjects &&
@@ -236,7 +155,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
     nodeTextParts.length > 1;
 
   return (
-    <div className="relative mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
+    <div className="ai-chat relative mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
       {isDataLoading && (
         <div className="absolute inset-0 z-20 flex items-center justify-center gap-2 bg-white text-black">
           <Loader2Icon className="size-8 animate-spin stroke-3 text-gray-500" />
@@ -279,7 +198,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                     }
                   }}
                   href={`/ai/course?term=${subject}&difficulty=beginner&src=topic`}
-                  className="flex items-center gap-1 gap-2 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
+                  className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
                 >
                   {subject}
                 </a>
@@ -349,7 +268,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
               <button
                 className="rounded-md bg-white px-2 py-2 text-xs font-medium text-black hover:bg-gray-200"
                 onClick={() => {
-                  setAiChatHistory(defaultChatHistory);
+                  setMessages([]);
                 }}
               >
                 <Trash2 className="size-3.5" />
@@ -416,39 +335,9 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
 
       <div
         className="scrollbar-thumb-gray-300 scrollbar-track-transparent scrollbar-thin relative grow overflow-y-auto"
-        ref={scrollareaRef}
+        ref={scrollableContainerRef}
       >
-        <div className="absolute inset-0 flex flex-col">
-          <div className="relative flex grow flex-col justify-end">
-            <div className="flex flex-col justify-end gap-2 px-3 py-2">
-              {aiChatHistory.map((chat, index) => {
-                let content = chat.content;
-
-                if (chat.role === 'user' && promptLabelMapping[chat.content]) {
-                  content = promptLabelMapping[chat.content];
-                }
-
-                return (
-                  <Fragment key={`chat-${index}`}>
-                    <AIChatCard
-                      role={chat.role}
-                      content={content}
-                      html={chat.html}
-                    />
-                  </Fragment>
-                );
-              })}
-
-              {isStreamingMessage && !streamedMessage && (
-                <AIChatCard role="assistant" content="Thinking..." />
-              )}
-
-              {streamedMessage && (
-                <AIChatCard role="assistant" content={streamedMessage} />
-              )}
-            </div>
-          </div>
-        </div>
+        <TopicChatMessages messages={messages} status={status} />
       </div>
 
       <form
@@ -517,7 +406,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         />
         <button
           type="submit"
-          disabled={isStreamingMessage || isLimitExceeded}
+          disabled={status !== 'ready' || isLimitExceeded}
           className="flex aspect-square size-[41px] items-center justify-center text-zinc-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
         >
           <SendIcon className="size-4 stroke-[2.5]" />

@@ -1,3 +1,5 @@
+import '../ChatMessages/AIChat.css';
+
 import { useQuery } from '@tanstack/react-query';
 import type { JSONContent } from '@tiptap/core';
 import {
@@ -14,13 +16,9 @@ import {
   Wand2,
   X,
 } from 'lucide-react';
-import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { useKeydown } from '../../hooks/use-keydown';
-import {
-  roadmapAIChatRenderer,
-  useRoadmapAIChat,
-} from '../../hooks/use-roadmap-ai-chat';
 import { cn } from '../../lib/classname';
 import { lockBodyScroll } from '../../lib/dom';
 import { isLoggedIn } from '../../lib/jwt';
@@ -33,10 +31,14 @@ import { roadmapJSONOptions } from '../../queries/roadmap';
 import { roadmapQuestionsOptions } from '../../queries/roadmap-questions';
 import { queryClient } from '../../stores/query-client';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal';
-import { RoadmapAIChatCard } from '../RoadmapAIChat/RoadmapAIChatCard';
 import { RoadmapAIChatHistory } from '../RoadmapAIChatHistory/RoadmapAIChatHistory';
 import { CLOSE_TOPIC_DETAIL_EVENT } from '../TopicDetail/TopicDetail';
 import { UpdatePersonaModal } from '../UserPersona/UpdatePersonaModal';
+import { shuffle } from '../../helper/shuffle';
+import { useChat } from '@ai-sdk/react';
+import { chatRoadmapTransport } from '../../lib/ai';
+import { useAIChatScroll } from '../../hooks/use-ai-chat-scroll';
+import { RoadmapChatMessages } from '../ChatMessages/RoadmapChatMessages';
 
 type ChatHeaderButtonProps = {
   onClick?: () => void;
@@ -158,10 +160,12 @@ type RoadmapChatProps = {
 
 export function RoadmapFloatingChat(props: RoadmapChatProps) {
   const { roadmapId } = props;
+
   const [isOpen, setIsOpen] = useState(false);
-  const scrollareaRef = useRef<HTMLDivElement>(null);
   const [inputValue, setInputValue] = useState('');
+
   const inputRef = useRef<HTMLInputElement>(null);
+
   const [isPersonalizeOpen, setIsPersonalizeOpen] = useState(false);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 
@@ -176,9 +180,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     if (!questionsData?.questions || questionsData.questions.length === 0) {
       return [];
     }
-    const shuffled = [...questionsData.questions].sort(
-      () => 0.5 - Math.random(),
-    );
+    const shuffled = shuffle([...questionsData.questions]);
     return shuffled.slice(0, 4);
   }, [questionsData]);
 
@@ -236,45 +238,36 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     string | undefined
   >();
   const { data: chatHistory } = useQuery(
-    chatHistoryOptions(
-      activeChatHistoryId,
-      roadmapAIChatRenderer({
-        roadmapId,
-        totalTopicCount,
-        onSelectTopic,
-      }),
-    ),
+    chatHistoryOptions(activeChatHistoryId),
     queryClient,
   );
 
-  const {
-    aiChatHistory,
-    isStreamingMessage,
-    streamedMessage,
-    showScrollToBottom,
-    setShowScrollToBottom,
-    handleChatSubmit,
-    handleAbort,
-    scrollToBottom,
-    clearChat,
-    setAiChatHistory,
-  } = useRoadmapAIChat({
-    activeChatHistoryId,
-    roadmapId,
-    totalTopicCount,
-    scrollareaRef,
-    onSelectTopic,
-    onChatHistoryIdChange: (chatHistoryId) => {
-      setActiveChatHistoryId(chatHistoryId);
+  const { messages, sendMessage, status, stop, setMessages } = useChat({
+    transport: chatRoadmapTransport,
+    onData: (data) => {
+      if (data.type === 'data-redirect') {
+        const { title, chatId } = data.data as {
+          title: string;
+          chatId: string;
+        };
+
+        document.title = title;
+        setActiveChatHistoryId(chatId);
+      }
     },
   });
+
+  const { scrollToBottom, scrollableContainerRef, showScrollToBottomButton } =
+    useAIChatScroll({
+      messages,
+    });
 
   useEffect(() => {
     if (!chatHistory) {
       return;
     }
 
-    setAiChatHistory(chatHistory?.messages ?? []);
+    setMessages(chatHistory?.messages ?? []);
     setIsChatHistoryLoading(false);
     setTimeout(() => {
       scrollToBottom('instant');
@@ -286,9 +279,9 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
       return;
     }
 
-    setAiChatHistory([]);
+    setMessages([]);
     setIsChatHistoryLoading(false);
-  }, [activeChatHistoryId, setAiChatHistory, setIsChatHistoryLoading]);
+  }, [activeChatHistoryId]);
 
   useEffect(() => {
     lockBodyScroll(isOpen);
@@ -320,26 +313,45 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     };
   }
 
-  const submitInput = () => {
+  const clearChat = () => {
+    setMessages([]);
+    setInputValue('');
+  };
+
+  const submitInput = (message?: string) => {
     if (!isLoggedIn()) {
       setIsOpen(false);
       showLoginPopup();
       return;
     }
 
-    const trimmed = inputValue.trim();
+    const trimmed = (message ?? inputValue).trim();
     if (!trimmed) {
       return;
     }
 
-    const json: JSONContent = textToJSON(trimmed);
+    sendMessage(
+      { text: trimmed, metadata: { json: textToJSON(trimmed) } },
+      {
+        body: {
+          roadmapId,
+          ...(activeChatHistoryId
+            ? { chatHistoryId: activeChatHistoryId }
+            : {}),
+        },
+      },
+    );
 
-    setInputValue('');
-    handleChatSubmit(json, isRoadmapDetailLoading);
+    setTimeout(() => {
+      scrollToBottom('smooth');
+      setInputValue('');
+      inputRef.current?.focus();
+    }, 0);
   };
 
-  const hasMessages = aiChatHistory.length > 0;
-  const newTabUrl = `/${roadmapId}/ai${activeChatHistoryId ? `?chatId=${activeChatHistoryId}` : ''}`;
+  const isStreamingMessage = status !== 'ready';
+  const hasMessages = messages.length > 0;
+  const newTabUrl = `/ai/r/${roadmapId}${activeChatHistoryId ? `?chatId=${activeChatHistoryId}` : ''}`;
 
   return (
     <>
@@ -371,7 +383,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
       <div
         className={cn(
-          'animate-fade-slide-up fixed bottom-5 left-1/2 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-col gap-1.5 overflow-hidden px-4 duration-300 sm:max-h-[50vh] lg:flex',
+          'animate-fade-slide-up ai-chat fixed bottom-5 left-1/2 max-h-[95vh] max-w-[968px] -translate-x-1/4 transform flex-col gap-1.5 overflow-hidden px-4 duration-300 sm:max-h-[50vh] lg:flex',
           isOpen ? 'z-91 h-full w-full' : 'z-40 w-auto',
         )}
       >
@@ -417,7 +429,6 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                     onChatHistoryClick={(chatHistoryId) => {
                       setIsChatHistoryLoading(true);
                       setActiveChatHistoryId(chatHistoryId);
-                      setShowScrollToBottom(false);
                     }}
                     onDelete={(chatHistoryId) => {
                       if (activeChatHistoryId === chatHistoryId) {
@@ -443,82 +454,27 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                   />
                 </div>
               </div>
-              <div
-                className="flex flex-1 flex-grow flex-col overflow-y-auto px-3 py-2"
-                ref={scrollareaRef}
-              >
-                <div className="flex flex-col gap-2 text-sm">
-                  <RoadmapAIChatCard
-                    role="assistant"
-                    jsx={
-                      <span className="mt-[2px]">
-                        Hey, I am your AI tutor. How can I help you today? 👋
-                      </span>
-                    }
-                    isIntro
+              <div className="relative flex grow flex-col">
+                <div
+                  className="relative grow overflow-y-auto"
+                  ref={scrollableContainerRef}
+                >
+                  <RoadmapChatMessages
+                    messages={messages}
+                    status={status}
+                    roadmapId={roadmapId}
+                    defaultQuestions={defaultQuestions}
+                    onTopicClick={onSelectTopic}
+                    onDefaultQuestionClick={submitInput}
                   />
-
-                  {/* Show default questions only when there's no chat history */}
-                  {aiChatHistory.length === 0 &&
-                    defaultQuestions.length > 0 && (
-                      <div className="mt-0.5 mb-1">
-                        <p className="mb-2 text-xs font-normal text-gray-500">
-                          Some questions you might have about this roadmap:
-                        </p>
-                        <div className="flex flex-col justify-end gap-1">
-                          {defaultQuestions.map((question, index) => (
-                            <button
-                              key={`default-question-${index}`}
-                              className="flex h-full self-start rounded-md bg-yellow-500/10 px-3 py-2 text-left text-sm text-black hover:bg-yellow-500/20"
-                              onClick={() => {
-                                if (!isLoggedIn()) {
-                                  setIsOpen(false);
-                                  showLoginPopup();
-                                  return;
-                                }
-
-                                if (isLimitExceeded) {
-                                  setShowUpgradeModal(true);
-                                  setIsOpen(false);
-                                  return;
-                                }
-
-                                handleChatSubmit(
-                                  textToJSON(question),
-                                  isRoadmapDetailLoading,
-                                );
-                              }}
-                            >
-                              {question}
-                            </button>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-
-                  {aiChatHistory.map((chat, index) => (
-                    <Fragment key={`chat-${index}`}>
-                      <RoadmapAIChatCard {...chat} />
-                    </Fragment>
-                  ))}
-
-                  {isStreamingMessage && !streamedMessage && (
-                    <RoadmapAIChatCard role="assistant" html="Thinking..." />
-                  )}
-
-                  {streamedMessage && (
-                    <RoadmapAIChatCard role="assistant" jsx={streamedMessage} />
-                  )}
                 </div>
 
-                {/* Scroll to bottom button */}
-                {showScrollToBottom && (
+                {showScrollToBottomButton && (
                   <button
                     onClick={() => {
                       scrollToBottom('instant');
-                      setShowScrollToBottom(false);
                     }}
-                    className="sticky bottom-0 mx-auto mt-2 flex items-center gap-1.5 rounded-full bg-gray-900 px-3 py-1.5 text-xs text-white shadow-lg transition-all hover:bg-gray-800"
+                    className="absolute inset-x-0 bottom-2 mx-auto mt-2 flex w-fit items-center gap-1.5 rounded-full bg-gray-900 px-3 py-1.5 text-xs text-white shadow-lg transition-all hover:bg-gray-800"
                   >
                     <ChevronDown className="h-3 w-3" />
                     Scroll to bottom
@@ -534,6 +490,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                   }}
                 />
               )}
+
               {!isLimitExceeded && (
                 <>
                   <div className="flex flex-row justify-between border-t border-gray-200 px-3 pt-2">
@@ -587,9 +544,10 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                       onKeyDown={(e) => {
                         if (e.key === 'Enter') {
                           e.preventDefault();
-                          if (isStreamingMessage) {
+                          if (status !== 'ready') {
                             return;
                           }
+
                           submitInput();
                         }
                       }}
@@ -609,9 +567,10 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                       disabled={isRoadmapDetailLoading || isLimitExceeded}
                       onClick={() => {
                         if (isStreamingMessage) {
-                          handleAbort();
+                          stop();
                           return;
                         }
+
                         submitInput();
                       }}
                     >
@@ -637,7 +596,6 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
               setIsOpen(true);
               setTimeout(() => {
                 scrollToBottom('instant');
-                setShowScrollToBottom(false);
               }, 0);
             }}
           >
