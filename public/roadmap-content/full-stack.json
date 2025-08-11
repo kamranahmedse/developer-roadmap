@@ -448,7 +448,7 @@
   },
   "SHTSvMDqI7X1_ZT7-m--n": {
     "title": "Linux Basics",
-    "description": "Knowledge of UNIX is a must for almost all kind of development as most of the codes that you write is most likely going to be finally deployed on a UNIX/Linux machine. Linux has been the backbone of the free and open source software movement, providing a simple and elegant operating system for almost all your needs.\n\nVisit the following resources to learn more:",
+    "description": "Knowledge of UNIX is a must for almost all kind of development as most of the code that you write is most likely going to be finally deployed on a UNIX/Linux machine. Linux has been the backbone of the free and open source software movement, providing a simple and elegant operating system for almost all your needs.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Coursera - Unix Courses",

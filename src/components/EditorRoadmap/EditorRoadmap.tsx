@@ -15,6 +15,7 @@ import { RoadmapFloatingChat } from '../FrameRenderer/RoadmapFloatingChat.tsx';
 type EditorRoadmapProps = {
   resourceId: string;
   resourceType?: ResourceType;
+  hasChat?: boolean;
   dimensions: {
     width: number;
     height: number;
@@ -22,7 +23,7 @@ type EditorRoadmapProps = {
 };
 
 export function EditorRoadmap(props: EditorRoadmapProps) {
-  const { resourceId, resourceType = 'roadmap', dimensions } = props;
+  const { resourceId, resourceType = 'roadmap', dimensions, hasChat = true } = props;
 
   const [hasSwitchedRoadmap, setHasSwitchedRoadmap] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -99,7 +100,7 @@ export function EditorRoadmap(props: EditorRoadmapProps) {
         dimensions={dimensions}
         resourceId={resourceId}
       />
-      <RoadmapFloatingChat roadmapId={resourceId} />
+      {hasChat && <RoadmapFloatingChat roadmapId={resourceId} />}
     </div>
   );
 }

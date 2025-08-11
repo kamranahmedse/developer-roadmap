@@ -215,7 +215,7 @@
     "links": [
       {
         "title": "Guide to Multiple fields in mutations",
-        "url": "https://graphql.org/learn/queries/#multiple-fields-in-mutations",
+        "url": "https://graphql.org/learn/mutations/#multiple-fields-in-mutations",
         "type": "article"
       }
     ]

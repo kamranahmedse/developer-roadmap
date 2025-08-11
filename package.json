@@ -16,6 +16,7 @@
     "roadmap-links": "node scripts/roadmap-links.cjs",
     "roadmap-dirs": "node scripts/roadmap-dirs.cjs",
     "roadmap-assets": "tsx scripts/editor-roadmap-assets.ts",
+    "refresh-assets": "tsx scripts/refresh-assets.ts",
     "editor-roadmap-dirs": "tsx scripts/editor-roadmap-dirs.ts",
     "editor-roadmap-content": "tsx scripts/editor-roadmap-content.ts",
     "roadmap-content": "node scripts/roadmap-content.cjs",

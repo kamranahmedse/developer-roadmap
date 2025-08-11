@@ -246,7 +246,12 @@
     "links": [
       {
         "title": "Design Systems: Pilots & Scorecards",
-        "url": "https://superfriendly.com/design-systems/articles/design-systems-pilots-scorecards/",
+        "url": "https://danmall.com/posts/design-systems-pilots-scorecards/",
+        "type": "article"
+      },
+      {
+        "title": "How to run a design system pilot",
+        "url": "https://university.obvious.in/product-design/design-system/how-to-run-a-design-system-pilot",
         "type": "article"
       }
     ]

@@ -1251,11 +1251,6 @@
     "description": "Backend Testing is a testing method that checks the server side or database of web applications or software. Backend testing aims to test the application layer or database layer to ensure that the web application or software is free from database defects like deadlock, data corruption, or data loss.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is Backend Testing?",
-        "url": "https://testinggenez.com/what-is-backend-testing-and-types/",
-        "type": "article"
-      },
-      {
         "title": "Backend Testing Tutorial",
         "url": "https://www.guru99.com/what-is-backend-testing.html",
         "type": "article"

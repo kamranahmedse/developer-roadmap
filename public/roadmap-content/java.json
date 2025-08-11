@@ -306,11 +306,6 @@
     "description": "Method chaining is a programming technique where multiple method calls are made sequentially on the same object, one after another, in a single statement. Each method in the chain returns an object, allowing the next method to be called on that returned object. This approach enhances code readability and conciseness by reducing the need for temporary variables and intermediate steps.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Java Method Chaining - Java Explained",
-        "url": "https://bito.ai/resources/java-method-chaining-java-explained",
-        "type": "article"
-      },
-      {
         "title": "How to achieve method chaining in Java",
         "url": "https://stackoverflow.com/questions/21180269/how-to-achieve-method-chaining-in-java",
         "type": "article"
