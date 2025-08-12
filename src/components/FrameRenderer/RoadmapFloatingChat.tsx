@@ -351,7 +351,7 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
 
   const isStreamingMessage = status !== 'ready';
   const hasMessages = messages.length > 0;
-  const newTabUrl = `/ai/r/${roadmapId}${activeChatHistoryId ? `?chatId=${activeChatHistoryId}` : ''}`;
+  const newTabUrl = `/ai/roadmap-chat/${roadmapId}${activeChatHistoryId ? `?chatId=${activeChatHistoryId}` : ''}`;
 
   return (
     <>
