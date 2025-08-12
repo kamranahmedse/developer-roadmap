@@ -1,0 +1,198 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { httpGet } from '../../lib/http';
+
+export async function getStaticPaths() {
+  const apiUrl = import.meta.env.PUBLIC_API_URL || 'http://localhost:8080';
+  
+  const { response: guidesData } = await httpGet(
+    `${apiUrl}/v1-list-guides`,
+    {
+      perPage: 100,
+      sortBy: '-publishedAt',
+    }
+  );
+
+  const guides = guidesData?.data || [];
+
+  return guides.map((guide: any) => ({
+    params: { guideSlug: guide.slug },
+    props: { guideSlug: guide.slug },
+  }));
+}
+
+const { guideSlug } = Astro.params;
+const apiUrl = import.meta.env.PUBLIC_API_URL || 'http://localhost:8080';
+
+const { response: guide, error } = await httpGet(
+  `${apiUrl}/v1-get-guide/${guideSlug}`
+);
+
+if (error || !guide) {
+  return Astro.redirect('/404');
+}
+
+// Convert content to HTML if needed
+const renderContent = (content: any) => {
+  if (typeof content === 'string') {
+    return content;
+  }
+  // If content is JSON from tiptap editor, we'll need to convert it
+  // For now, return a placeholder
+  return '<div>Guide content will be rendered here</div>';
+};
+---
+
+<BaseLayout
+  title={`${guide.title} - roadmap.sh`}
+  description={guide.description || guide.seo?.metaDescription}
+  permalink={`/guides/${guide.slug}`}
+>
+  <div class='bg-white py-8'>
+    <div class='container'>
+      <div class='mx-auto max-w-4xl'>
+        <!-- Guide Header -->
+        <div class='mb-8 border-b pb-8'>
+          <h1 class='mb-4 text-3xl font-bold text-gray-900 sm:text-4xl'>
+            {guide.title}
+          </h1>
+          
+          {guide.description && (
+            <p class='text-lg text-gray-600'>
+              {guide.description}
+            </p>
+          )}
+          
+          <div class='mt-4 flex items-center space-x-4 text-sm text-gray-500'>
+            {guide.author && (
+              <a 
+                href={`/authors/${guide.author.slug}`}
+                class='flex items-center hover:text-blue-600'
+              >
+                {guide.author.avatar && (
+                  <img 
+                    src={guide.author.avatar} 
+                    alt={guide.author.name}
+                    class='mr-2 h-6 w-6 rounded-full'
+                  />
+                )}
+                <span>By {guide.author.name}</span>
+              </a>
+            )}
+            
+            {guide.publishedAt && (
+              <span>
+                {new Date(guide.publishedAt).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
+                })}
+              </span>
+            )}
+            
+            {guide.viewCount && (
+              <span>{guide.viewCount.toLocaleString()} views</span>
+            )}
+          </div>
+          
+          {guide.tags && guide.tags.length > 0 && (
+            <div class='mt-4 flex flex-wrap gap-2'>
+              {guide.tags.map((tag: string) => (
+                <span class='rounded-full bg-gray-100 px-3 py-1 text-xs text-gray-600'>
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+        
+        <!-- Featured Image -->
+        {guide.featuredImage && (
+          <div class='mb-8'>
+            <img 
+              src={guide.featuredImage} 
+              alt={guide.title}
+              class='w-full rounded-lg'
+            />
+          </div>
+        )}
+        
+        <!-- Guide Content -->
+        <div class='prose prose-lg max-w-none'>
+          <Fragment set:html={renderContent(guide.content)} />
+        </div>
+        
+        <!-- Author Bio -->
+        {guide.author && guide.author.bio && (
+          <div class='mt-12 border-t pt-8'>
+            <h3 class='mb-4 text-xl font-semibold'>About the Author</h3>
+            <div class='flex items-start space-x-4'>
+              {guide.author.avatar && (
+                <img 
+                  src={guide.author.avatar} 
+                  alt={guide.author.name}
+                  class='h-16 w-16 rounded-full'
+                />
+              )}
+              <div>
+                <a 
+                  href={`/authors/${guide.author.slug}`}
+                  class='text-lg font-medium text-gray-900 hover:text-blue-600'
+                >
+                  {guide.author.name}
+                </a>
+                <p class='mt-1 text-gray-600'>{guide.author.bio}</p>
+                
+                {guide.author.socialLinks && (
+                  <div class='mt-2 flex space-x-3'>
+                    {guide.author.socialLinks.twitter && (
+                      <a 
+                        href={guide.author.socialLinks.twitter}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-500 hover:text-blue-600'
+                      >
+                        Twitter
+                      </a>
+                    )}
+                    {guide.author.socialLinks.github && (
+                      <a 
+                        href={guide.author.socialLinks.github}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-500 hover:text-blue-600'
+                      >
+                        GitHub
+                      </a>
+                    )}
+                    {guide.author.socialLinks.linkedin && (
+                      <a 
+                        href={guide.author.socialLinks.linkedin}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-500 hover:text-blue-600'
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+                    {guide.author.socialLinks.website && (
+                      <a 
+                        href={guide.author.socialLinks.website}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-500 hover:text-blue-600'
+                      >
+                        Website
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+  <div slot='changelog-banner'></div>
+</BaseLayout>

@@ -1,0 +1,194 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SimplePageHeader from '../../components/SimplePageHeader.astro';
+import { httpGet } from '../../lib/http';
+
+export async function getStaticPaths() {
+  // For now, return an empty array for static generation
+  // In production, you'd fetch all authors here
+  return [];
+}
+
+const { authorSlug } = Astro.params;
+const apiUrl = import.meta.env.PUBLIC_API_URL || 'http://localhost:8080';
+
+// Fetch author details
+const { response: author, error: authorError } = await httpGet(
+  `${apiUrl}/v1-get-author/${authorSlug}`
+);
+
+if (authorError || !author) {
+  return Astro.redirect('/404');
+}
+
+// Fetch author's guides
+const { response: guidesData, error: guidesError } = await httpGet(
+  `${apiUrl}/v1-list-guides`,
+  {
+    authorId: author._id,
+    perPage: 100,
+    sortBy: '-publishedAt',
+  }
+);
+
+const guides = guidesData?.data || [];
+
+// Check if guide is within the last 15 days
+const isNew = (publishedAt: string) => {
+  if (!publishedAt) return false;
+  const daysDiff = Math.floor((Date.now() - new Date(publishedAt).getTime()) / (1000 * 60 * 60 * 24));
+  return daysDiff < 15;
+};
+---
+
+<BaseLayout
+  title={`${author.name} - Author at roadmap.sh`}
+  description={author.bio || `Guides and articles by ${author.name}`}
+  permalink={`/authors/${author.slug}`}
+>
+  <div class='bg-white py-8'>
+    <div class='container'>
+      <div class='mx-auto max-w-4xl'>
+        <!-- Author Header -->
+        <div class='mb-8 border-b pb-8'>
+          <div class='flex items-start space-x-6'>
+            {author.avatar && (
+              <img 
+                src={author.avatar} 
+                alt={author.name}
+                class='h-24 w-24 rounded-full'
+              />
+            )}
+            <div class='flex-1'>
+              <h1 class='mb-2 text-3xl font-bold text-gray-900'>
+                {author.name}
+              </h1>
+              
+              {author.bio && (
+                <p class='mb-4 text-lg text-gray-600'>
+                  {author.bio}
+                </p>
+              )}
+              
+              <div class='flex items-center space-x-4 text-sm'>
+                <span class='text-gray-500'>
+                  {author.guideCount} {author.guideCount === 1 ? 'guide' : 'guides'} published
+                </span>
+                
+                {author.socialLinks && (
+                  <div class='flex space-x-3'>
+                    {author.socialLinks.twitter && (
+                      <a 
+                        href={author.socialLinks.twitter}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-500 hover:text-blue-600'
+                      >
+                        Twitter
+                      </a>
+                    )}
+                    {author.socialLinks.github && (
+                      <a 
+                        href={author.socialLinks.github}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-500 hover:text-blue-600'
+                      >
+                        GitHub
+                      </a>
+                    )}
+                    {author.socialLinks.linkedin && (
+                      <a 
+                        href={author.socialLinks.linkedin}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-500 hover:text-blue-600'
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+                    {author.socialLinks.website && (
+                      <a 
+                        href={author.socialLinks.website}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        class='text-gray-500 hover:text-blue-600'
+                      >
+                        Website
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Author's Guides -->
+        <div>
+          <h2 class='mb-6 text-2xl font-semibold text-gray-900'>
+            Guides by {author.name}
+          </h2>
+          
+          {guides.length === 0 ? (
+            <p class='text-gray-600'>No guides published yet.</p>
+          ) : (
+            <div class='space-y-4'>
+              {guides.map((guide: any) => (
+                <article class='border-b pb-4'>
+                  <a 
+                    href={`/guides/${guide.slug}`}
+                    class='group block'
+                  >
+                    <h3 class='mb-2 text-xl font-medium text-gray-900 group-hover:text-blue-600'>
+                      {guide.title}
+                      
+                      {isNew(guide.publishedAt) && (
+                        <span class='ml-2 rounded-xs bg-green-300 px-1.5 py-0.5 text-xs font-medium text-green-900 uppercase'>
+                          New
+                        </span>
+                      )}
+                    </h3>
+                    
+                    {guide.description && (
+                      <p class='mb-2 text-gray-600'>
+                        {guide.description}
+                      </p>
+                    )}
+                    
+                    <div class='flex items-center space-x-4 text-sm text-gray-500'>
+                      {guide.publishedAt && (
+                        <span>
+                          {new Date(guide.publishedAt).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                          })}
+                        </span>
+                      )}
+                      
+                      {guide.viewCount && (
+                        <span>{guide.viewCount.toLocaleString()} views</span>
+                      )}
+                      
+                      {guide.tags && guide.tags.length > 0 && (
+                        <div class='flex flex-wrap gap-2'>
+                          {guide.tags.slice(0, 3).map((tag: string) => (
+                            <span class='rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-600'>
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </a>
+                </article>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div slot='changelog-banner'></div>
+</BaseLayout>

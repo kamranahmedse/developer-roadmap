@@ -1,0 +1,81 @@
+---
+import SimplePageHeader from '../components/SimplePageHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { httpGet } from '../lib/http';
+
+const apiUrl = import.meta.env.PUBLIC_API_URL || 'http://localhost:8080';
+
+// Fetch guides from the new v2 API
+const { response: guidesData, error } = await httpGet(
+  `${apiUrl}/v1-list-guides`,
+  {
+    perPage: 100,
+    sortBy: '-publishedAt',
+  }
+);
+
+const guides = guidesData?.data || [];
+const sortedGuides = guides.sort((a: any, b: any) => {
+  const aDate = new Date(a.publishedAt as string);
+  const bDate = new Date(b.publishedAt as string);
+  return bDate.getTime() - aDate.getTime();
+});
+
+const getGuideType = (guide: any) => {
+  if (guide.roadmapId) {
+    return 'Roadmap Guide';
+  }
+  return 'Guide';
+};
+
+// Check if guide is within the last 15 days
+const isNew = (publishedAt: string) => {
+  if (!publishedAt) return false;
+  const daysDiff = Math.floor((Date.now() - new Date(publishedAt).getTime()) / (1000 * 60 * 60 * 24));
+  return daysDiff < 15;
+};
+---
+
+<BaseLayout
+  title='Guides - roadmap.sh'
+  description={'Detailed guides on Software Engineering Topics'}
+  permalink={`/guides`}
+>
+  <SimplePageHeader
+    title='Guides'
+    description='Succinct graphical explanations to engineering topics.'
+  />
+
+  <div class='bg-gray-50 pb-20 pt-2'>
+    <div class='container'>
+      <div class='mt-3 sm:my-5'>
+        {sortedGuides.map((guide: any) => (
+          <a
+            class="text-md group block flex items-center justify-between border-b py-2 text-gray-600 no-underline hover:text-blue-600"
+            href={`/guides/${guide.slug}`}
+          >
+            <span class="text-sm transition-transform group-hover:translate-x-2 md:text-base">
+              {guide.title}
+              
+              {isNew(guide.publishedAt) && (
+                <span class="ml-2.5 rounded-xs bg-green-300 px-1.5 py-0.5 text-xs font-medium text-green-900 uppercase">
+                  New
+                  <span class="hidden sm:inline">
+                    &nbsp;&middot;&nbsp;
+                    {new Date(guide.publishedAt).toLocaleDateString('en-US', { month: 'long' })}
+                  </span>
+                </span>
+              )}
+            </span>
+            <span class="hidden text-xs text-gray-500 capitalize sm:block">
+              {getGuideType(guide)}
+            </span>
+            
+            <span class="block text-xs text-gray-400 sm:hidden"> &raquo;</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+  <div slot='changelog-banner'></div>
+</BaseLayout>
