@@ -153,6 +153,11 @@
         "title": "Underlying Technologies - Medium",
         "url": "https://medium.com/@furkan.turkal/how-does-docker-actually-work-the-hard-way-a-technical-deep-diving-c5b8ea2f0422",
         "type": "article"
+      },
+      {
+        "title": "Containers - Namespaces, Cgroups and Overlay Filesystem",
+        "url": "https://www.youtube.com/watch?v=wJdDWc6zO4U",
+        "type": "video"
       }
     ]
   },
