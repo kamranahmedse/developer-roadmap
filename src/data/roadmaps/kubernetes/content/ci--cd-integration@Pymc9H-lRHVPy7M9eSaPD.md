@@ -1,9 +1,8 @@
-# Kuberenetes
+# CI/CD Integration
 
-Kubernetes, also known as K8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It allows developers to focus on writing code while Kubernetes handles the underlying infrastructure. Kubernetes uses declarative configuration files to specify the desired state of an application, and can automatically scale applications based on demand, handle failovers, and manage networking and storage. It is widely used in cloud-native architectures that rely on microservices and containers for production deployments.
+In CI/CD pattern, the build, test, and deployment of applications to Kubernetes are fully automated. The CI pipeline creates the container image, runs tests, and pushes it to a registry. The CD pipeline then updates Kubernetes manifests or Helm charts and applies them to the cluster using tools like Argo CD, Flux, or kubectl. This makes deployments consistent, repeatable, and fast.
 
 Learn more from the following resources:
 
-- [@official@Overview of Kubernetes](https://kubernetes.io/docs/concepts/overview/)
-- [@video@Kubernetes Explained in 100 Seconds](https://www.youtube.com/watch?v=PziYflu8cB8)
-- [@video@Kubernetes Tutorial for Beginners](https://www.youtube.com/watch?v=X48VuDVv0do&t=1s)
+- [@article@Kubernetes CI/CD Pipelines – 8 Best Practices and Tools](https://spacelift.io/blog/kubernetes-ci-cd)
+- [@article@Octopus - Deploying to Kubernetes](https://octopus.com/use-case/kubernetes)
