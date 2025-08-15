@@ -24,4 +24,5 @@ export function studyJs(course) {
 
 import { studyJs } from './app.js';
 
-console.log(studyJs("roadmap.sh")); // Read the JavaScript guide on, roadmap.sh 
+console.log(studyJs("roadmap.sh")); // Read the JavaScript guide on, roadmap.sh
+``` 

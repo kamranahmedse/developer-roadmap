@@ -14,4 +14,5 @@ function App() {
       <LazyComponent />
     </Suspense>
   );
-} 
+}
+``` 
