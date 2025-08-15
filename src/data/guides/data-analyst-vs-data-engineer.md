@@ -229,3 +229,4 @@ Start here:
 - [SQL basic to advanced course](https://roadmap.sh/courses/sql)
 - [SQL roadmap](https://roadmap.sh/sql)
 - [Data analyst roadmap](https://roadmap.sh/data-analyst)
+- [Data engineer roadmap](https://roadmap.sh/data-engineer)
