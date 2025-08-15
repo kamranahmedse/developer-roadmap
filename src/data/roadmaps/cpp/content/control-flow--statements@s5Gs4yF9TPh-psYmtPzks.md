@@ -8,8 +8,6 @@ Here’s your complete content as a **single, ready-to-submit Markdown file** fo
 The main types of control flow statements are:
 
 - **Conditional Statements**: `if`, `if...else`, `if...else if...else`, `switch...case`  
-  *(e.g., "If it’s raining, take an umbrella. Else, take sunglasses.")*
-
 ```cpp
   bool raining = true;
   if (raining) {
@@ -20,7 +18,6 @@ The main types of control flow statements are:
 ```
 
 * **Looping Statements**: `for` loop, `while` loop, `do...while` loop, range-based `for` loop (C++11+)
-  *(e.g., "While there’s pizza left, keep eating. Stop when the box is empty.")*
 
   ```cpp
   int pizzaSlices = 3;
@@ -31,7 +28,6 @@ The main types of control flow statements are:
   ```
 
 * **Jump Statements**: `break` (exit loop/switch early), `continue` (skip current iteration), `return` (exit a function), `goto` (jump to a labeled statement — generally discouraged)
-  *(e.g., "Return home immediately if you forgot your wallet.")*
 
   ```cpp
   for (int i = 1; i <= 5; i++) {
@@ -46,7 +42,7 @@ The main types of control flow statements are:
   }
   ```
 
-* [@video@C++ Control Flow Statements – ProgrammingKnowledge](https://youtu.be/a3IZ8WaIFAA?si=XRjNMilgGJxYoYIL)
-* [@article@C++ Jump Statements – GeeksforGeeks](https://www.geeksforgeeks.org/cpp/jump-statements-in-c/)
+- [@video@C++ Control Flow Statements – ProgrammingKnowledge](https://youtu.be/a3IZ8WaIFAA?si=XRjNMilgGJxYoYIL)
+- [@article@C++ Jump Statements – GeeksforGeeks](https://www.geeksforgeeks.org/cpp/jump-statements-in-c/)
 
 
