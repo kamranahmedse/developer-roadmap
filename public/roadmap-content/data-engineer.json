@@ -1,0 +1,937 @@
+{
+  "WSYIFni7G2C9Jr0pwuami": {
+    "title": "Introduction",
+    "description": "",
+    "links": []
+  },
+  "WB2PRVI9C6RIbJ6l9zdbd": {
+    "title": "What is Data Engineering?",
+    "description": "",
+    "links": []
+  },
+  "jJukG4XxfFcID_VlQKqe-": {
+    "title": "Data Engineering vs Data Science",
+    "description": "",
+    "links": []
+  },
+  "3BxbkrBp8veZj38zdwN8s": {
+    "title": "Skills and Responsibilities",
+    "description": "",
+    "links": []
+  },
+  "Ouph2bHeLQsrHl45ar4Cs": {
+    "title": "Data Engineering Lifecycle",
+    "description": "",
+    "links": []
+  },
+  "_MpdVlvvkrsgzigYMZ_P8": {
+    "title": "Choosing the Right Technologies",
+    "description": "",
+    "links": []
+  },
+  "_2Ofq3Df-VRXDgKyveZ0U": {
+    "title": "Programming Skills",
+    "description": "",
+    "links": []
+  },
+  "ILs5azr4L_uLK0CDFKVaz": {
+    "title": "Python",
+    "description": "",
+    "links": []
+  },
+  "LZ4t8CoCjGWMzE0hScTGZ": {
+    "title": "Java",
+    "description": "",
+    "links": []
+  },
+  "WHJXJ5ukJd-tK_3LFLJBg": {
+    "title": "Scala",
+    "description": "",
+    "links": []
+  },
+  "4z2i5NXTo9h3YY0kJvRrz": {
+    "title": "Go",
+    "description": "",
+    "links": []
+  },
+  "fqmn6DPOA5MH7UWYv6ayn": {
+    "title": "Data Structures and Algorithms",
+    "description": "",
+    "links": []
+  },
+  "02TADW_PPVtTU_rWV3jf1": {
+    "title": "Git and GitHub",
+    "description": "",
+    "links": []
+  },
+  "FXQ_QsljK59zDULLgTqCB": {
+    "title": "Linux Basics",
+    "description": "",
+    "links": []
+  },
+  "cgkzFMmQils2sYj4NW8VW": {
+    "title": "Networking Fundamentals",
+    "description": "",
+    "links": []
+  },
+  "c1dadtQgbqXwcsQhI6de0": {
+    "title": "Distributed Systems Basics",
+    "description": "",
+    "links": []
+  },
+  "AWf1y87pd1JFW71cZ_iE1": {
+    "title": "Data Generation",
+    "description": "",
+    "links": []
+  },
+  "wydtifF3ZhMWCbVt8Hd2t": {
+    "title": "Data Storage",
+    "description": "",
+    "links": []
+  },
+  "CvCOkyWcgzaUJec_v5F4L": {
+    "title": "Data Ingestion",
+    "description": "",
+    "links": []
+  },
+  "RspQLpkICyHUmthLlxQ84": {
+    "title": "Data Serving",
+    "description": "",
+    "links": []
+  },
+  "w3cfuNC-IdUKA7CEXs0fT": {
+    "title": "Data Engineering Lifecycle",
+    "description": "",
+    "links": []
+  },
+  "zGKTlMUzhrbVbqpLZBsMZ": {
+    "title": "Sources of Data",
+    "description": "",
+    "links": []
+  },
+  "qRHeaD2udDaItAxmiIiUg": {
+    "title": "Database",
+    "description": "",
+    "links": []
+  },
+  "cxTriSZvrmXP4axKynIZW": {
+    "title": "APIs",
+    "description": "",
+    "links": []
+  },
+  "s-wUPMaagyRupT2RdfHks": {
+    "title": "Logs",
+    "description": "",
+    "links": []
+  },
+  "dJZqe47kzRqYIG-4AZTlz": {
+    "title": "Mobile Apps",
+    "description": "",
+    "links": []
+  },
+  "KeGCHoJRHp-mBX-P5to4Y": {
+    "title": "IoT",
+    "description": "",
+    "links": []
+  },
+  "wDDWQgMVBYK4WcmHq_d6l": {
+    "title": "Data Collection Considerations",
+    "description": "",
+    "links": []
+  },
+  "g4UC0go7OPCJYJlac9w-i": {
+    "title": "Database Fundamentals",
+    "description": "",
+    "links": []
+  },
+  "kVPEoUX-ZAGwstieD20Qa": {
+    "title": "Data Normalization",
+    "description": "",
+    "links": []
+  },
+  "SlQHO8n97F7-_fc6EUXlj": {
+    "title": "Data Modelling Techniques",
+    "description": "",
+    "links": []
+  },
+  "AslPFjoakcC44CmPB5nuw": {
+    "title": "CAP Theorem",
+    "description": "",
+    "links": []
+  },
+  "-VQQmIUGesnrT1N6kH5et": {
+    "title": "OLTP vs OLAP",
+    "description": "",
+    "links": []
+  },
+  "5KgPfywItqLFQRnIZldZH": {
+    "title": "Slowly Changing Dimension - SCD",
+    "description": "",
+    "links": []
+  },
+  "k_XSLLwb0Jk0Dd1sw-MpR": {
+    "title": "Horizontal vs Vertical Scaling",
+    "description": "",
+    "links": []
+  },
+  "OfH_UXnxvGQgwlNQwOEfS": {
+    "title": "Star vs Snowflake Schema",
+    "description": "",
+    "links": []
+  },
+  "cslVSSKBMO7I6CpO7vG1H": {
+    "title": "Relational Databases",
+    "description": "",
+    "links": []
+  },
+  "2rRVWPON-o3MvpgZmrU_A": {
+    "title": "Learn SQL",
+    "description": "",
+    "links": []
+  },
+  "ilbFKqhfYyykjJ7cOngwx": {
+    "title": "Indexing",
+    "description": "",
+    "links": []
+  },
+  "1BJGXWax6CONuFkaYR4Jm": {
+    "title": "Transactions",
+    "description": "",
+    "links": []
+  },
+  "_bFj6rbLuqeQB5MjJZpd6": {
+    "title": "MySQL",
+    "description": "",
+    "links": []
+  },
+  "__JFgwxeDLvz8p7DAJnsc": {
+    "title": "PostgreSQL",
+    "description": "",
+    "links": []
+  },
+  "p7S_6O9Qq722r-F4bl6G3": {
+    "title": "MariaDB",
+    "description": "",
+    "links": []
+  },
+  "YZ4G1-6VJ7VdsphdcBTf9": {
+    "title": "Aurora DB",
+    "description": "",
+    "links": []
+  },
+  "PJcxM60h85Po0AAkSj7nr": {
+    "title": "Oracle",
+    "description": "",
+    "links": []
+  },
+  "YxnIQh6Y5ic795-YsajB8": {
+    "title": "MS SQL",
+    "description": "",
+    "links": []
+  },
+  "uZYQ8tqTriXt_JIOjcM9_": {
+    "title": "NoSQL Databsases",
+    "description": "",
+    "links": []
+  },
+  "sGkAOVl3C-xIIAdtDH9jq": {
+    "title": "Document",
+    "description": "",
+    "links": []
+  },
+  "04V0Bcgjusfqdw0b-Aw4W": {
+    "title": "MongoDB",
+    "description": "",
+    "links": []
+  },
+  "_F53cV3ln2yu0ics5BFfx": {
+    "title": "ElasticSearch",
+    "description": "",
+    "links": []
+  },
+  "goL_GqVVTVxXQMGBw992b": {
+    "title": "CosmosDB",
+    "description": "",
+    "links": []
+  },
+  "-IesOBWPSIlbgvTjBqHcb": {
+    "title": "CouchDB",
+    "description": "",
+    "links": []
+  },
+  "fBD6ZQoMac8w4kMJw_Jrd": {
+    "title": "Column",
+    "description": "",
+    "links": []
+  },
+  "QYR8ESN7xhi4ZxcoiZbgn": {
+    "title": "Cassandra",
+    "description": "",
+    "links": []
+  },
+  "ltZftFsiOo12AkQ-04N3B": {
+    "title": "BigTable",
+    "description": "",
+    "links": []
+  },
+  "Uho9OOWSG0bUpyH4P6hKk": {
+    "title": "HBase",
+    "description": "",
+    "links": []
+  },
+  "W6RnhoD7fW2xzVwnyJEDr": {
+    "title": "Graph",
+    "description": "",
+    "links": []
+  },
+  "TG63YRbSKL1F9vlUVF1VY": {
+    "title": "Neo4j",
+    "description": "",
+    "links": []
+  },
+  "atAK4zGXIbxZvfBTzFEIe": {
+    "title": "Neptune",
+    "description": "",
+    "links": []
+  },
+  "fSlBjoNVKstJjWO7rS69V": {
+    "title": "Key-Value",
+    "description": "",
+    "links": []
+  },
+  "dW_eC4vR8BrvKG9wxmEBc": {
+    "title": "Redis",
+    "description": "",
+    "links": []
+  },
+  "KYUh29Ok1aeOviboGDS_i": {
+    "title": "Memcached",
+    "description": "",
+    "links": []
+  },
+  "BDfpCDOxXZ-Tp0Abj_CVW": {
+    "title": "DynamoDB",
+    "description": "",
+    "links": []
+  },
+  "dc3lJI27hJ3zZ45UCVqM1": {
+    "title": "What is Data Warehouse?",
+    "description": "",
+    "links": []
+  },
+  "J854xPM1X0BWlhtJw7Hs_": {
+    "title": "Data Warehousing Architectures",
+    "description": "",
+    "links": []
+  },
+  "ArOoKuf9scAURs8NRjAru": {
+    "title": "Data Warehouse",
+    "description": "",
+    "links": []
+  },
+  "Je2in1n8bMaknyeH79Zbv": {
+    "title": "Google BigQuery",
+    "description": "",
+    "links": []
+  },
+  "W3l1_66fsIqR3MqgBJUmU": {
+    "title": "Snowflake",
+    "description": "",
+    "links": []
+  },
+  "omrg8QcYmTdQLBKV47b7o": {
+    "title": "Amazon Redshift",
+    "description": "",
+    "links": []
+  },
+  "c6Pf3kFcC4iV4a7mPc-WH": {
+    "title": "Data Mart",
+    "description": "",
+    "links": []
+  },
+  "y0Lxz_wVyQ6lr1hvCsufa": {
+    "title": "Data Lake",
+    "description": "",
+    "links": []
+  },
+  "fhfyoWekmYvEs-jdP2mJo": {
+    "title": "Databricks Delta Lake",
+    "description": "",
+    "links": []
+  },
+  "Pf0_CBGkmSEfWDQ2_iFXr": {
+    "title": "Snowflake",
+    "description": "",
+    "links": []
+  },
+  "senZEYC9k-C_C4EAYDNeU": {
+    "title": "Onehouse",
+    "description": "",
+    "links": []
+  },
+  "D7qtosIbsQuIY3OWl_Hwc": {
+    "title": "Data Mesh",
+    "description": "",
+    "links": []
+  },
+  "-x3QLMYhC67VJQ6EW6BrJ": {
+    "title": "Data Fabric",
+    "description": "",
+    "links": []
+  },
+  "OiWleAdMbPtisrJpk2eSJ": {
+    "title": "Data Hub",
+    "description": "",
+    "links": []
+  },
+  "14CycunRC1p2qTRn-ncoy": {
+    "title": "Metadata-first Architecture",
+    "description": "",
+    "links": []
+  },
+  "ZnGX8pg4GagdSalg_P0oq": {
+    "title": "Serverless Options",
+    "description": "",
+    "links": []
+  },
+  "lDeSL9qvgQgyAMcWXF7Fr": {
+    "title": "Cloud Computing",
+    "description": "",
+    "links": []
+  },
+  "YLfyb_ycgz1hu0yW8SPNE": {
+    "title": "Cloud Architectures",
+    "description": "",
+    "links": []
+  },
+  "AHLsBfPfBJOhLlJ-64GcK": {
+    "title": "Amazon EC2 ( Compute)",
+    "description": "",
+    "links": []
+  },
+  "tbut25IZI2aU7TkI9fFYV": {
+    "title": "S3 (Storage)",
+    "description": "",
+    "links": []
+  },
+  "GtFk7phYGfXUhxanicYNQ": {
+    "title": "Amazon RDS (Database)",
+    "description": "",
+    "links": []
+  },
+  "glue-etl@nD36-PXHzOXePM7j9u_O_.md": {
+    "title": "Glue (ETL)",
+    "description": "",
+    "links": []
+  },
+  "-yi-xk-kv0njW9GdytiAQ": {
+    "title": "Azure Virtual Machines",
+    "description": "",
+    "links": []
+  },
+  "gzbEGCUwMsD1gL4nW668g": {
+    "title": "Azure Blob Storage",
+    "description": "",
+    "links": []
+  },
+  "iIZ3g70KRwEJCBNaONd2d": {
+    "title": "Azure SQL Database",
+    "description": "",
+    "links": []
+  },
+  "BNGdJSmrNE90rwPa4JoWj": {
+    "title": "Data Factory (ETL)",
+    "description": "",
+    "links": []
+  },
+  "-cU86vJWJmlmPHXDCo31o": {
+    "title": "Compute Engine (Compute)",
+    "description": "",
+    "links": []
+  },
+  "2lqvArZdwRX0t3P3yovEH": {
+    "title": "Google Cloud Storage",
+    "description": "",
+    "links": []
+  },
+  "9-wQWQIdAxQmMaJC9ojPg": {
+    "title": "Cloud SQL (Database)",
+    "description": "",
+    "links": []
+  },
+  "YWgVUyIvBRW8eTVR5y73P": {
+    "title": "Dataflow",
+    "description": "",
+    "links": []
+  },
+  "GN1Xh3kA25ge-wTbdiSio": {
+    "title": "Types of Data Ingestion",
+    "description": "",
+    "links": []
+  },
+  "f-a3Hy1ldnvSv8W2mFiJK": {
+    "title": "Batch",
+    "description": "",
+    "links": []
+  },
+  "4fugNG5sEDl0kgmN3Mezk": {
+    "title": "Hybrid",
+    "description": "",
+    "links": []
+  },
+  "wwPO5Uc6qnwYgibrbPn7y": {
+    "title": "Streaming",
+    "description": "",
+    "links": []
+  },
+  "oqxNr0Lj34mgRi5Z5wJt_": {
+    "title": "Realtime",
+    "description": "",
+    "links": []
+  },
+  "fqTPu70MJyXBmqYUgCJ_r": {
+    "title": "Data Pipelines",
+    "description": "",
+    "links": []
+  },
+  "nShDMih1HmubBczxu4cfU": {
+    "title": "Extract Data",
+    "description": "",
+    "links": []
+  },
+  "TjsxMNyWO3YGwg6zEIid4": {
+    "title": "Transform Data",
+    "description": "",
+    "links": []
+  },
+  "y5Aaxe-P68HC5kNsIi88q": {
+    "title": "Load Data",
+    "description": "",
+    "links": []
+  },
+  "vfO5Dz6ppsNtbGiQwpUs7": {
+    "title": "Apache Airflow",
+    "description": "",
+    "links": []
+  },
+  "SgYLIkMtLVPlw8Qo5j0Fb": {
+    "title": "dbt",
+    "description": "",
+    "links": []
+  },
+  "_IiKTZDF_b57l79X6lsq6": {
+    "title": "Luigi",
+    "description": "",
+    "links": []
+  },
+  "TAh4__7U58J7fduU9a1Ol": {
+    "title": "Perfect",
+    "description": "",
+    "links": []
+  },
+  "hB0y8A2U3owpAbTUb7LN5": {
+    "title": "Cluster Computing Basics",
+    "description": "",
+    "links": []
+  },
+  "Ad10evrGQuYRl5GaMhQwu": {
+    "title": "What is Cluster Computing",
+    "description": "",
+    "links": []
+  },
+  "1LLF4466grFDlT9p_WLsi": {
+    "title": "Distributed File Systems",
+    "description": "",
+    "links": []
+  },
+  "ccc6_SzDwXpCL1WbFuPNA": {
+    "title": "Job Scheduling",
+    "description": "",
+    "links": []
+  },
+  "wpZfbIFtfiUSLMASk4t7f": {
+    "title": "Cluster Management Tools",
+    "description": "",
+    "links": []
+  },
+  "I_IueX1DFp-LmBwr1-suX": {
+    "title": "Kubernetes",
+    "description": "",
+    "links": []
+  },
+  "pjm_qShAiFk3JsX4Z2d8G": {
+    "title": "Apache Hadoop YARN",
+    "description": "",
+    "links": []
+  },
+  "9lSjQBM2hWrkujxZjhQHE": {
+    "title": "HDFS",
+    "description": "",
+    "links": []
+  },
+  "03BHmPhYkZrJwRvQdmxxr": {
+    "title": "Big Data Tools",
+    "description": "",
+    "links": []
+  },
+  "0pH2U4GOj8zK3lgkh_r5M": {
+    "title": "HDFS",
+    "description": "",
+    "links": []
+  },
+  "__tWu5uZYnmnuR-qO9SOR": {
+    "title": "MapReduce",
+    "description": "",
+    "links": []
+  },
+  "KcW4z48pk2x6IjQhZs_Ub": {
+    "title": "YARN",
+    "description": "",
+    "links": []
+  },
+  "qHMtJFYcGmESiz_VwRwiI": {
+    "title": "Apache Spark",
+    "description": "",
+    "links": []
+  },
+  "eTHitN2erd6z8-MZiXE9s": {
+    "title": "Containers & Orchestration",
+    "description": "",
+    "links": []
+  },
+  "OQ3RqVgWEMxpAtrrjOG5U": {
+    "title": "Docker",
+    "description": "",
+    "links": []
+  },
+  "kcgDW6AFW7WXzXMTPE6J-": {
+    "title": "Kubernetes",
+    "description": "",
+    "links": []
+  },
+  "8qEgXYZEbDWC73SQSflDY": {
+    "title": "Google Cloud GKE",
+    "description": "",
+    "links": []
+  },
+  "eVqcYI2Sy2Dldl3SfxB2C": {
+    "title": "AWS EKS",
+    "description": "",
+    "links": []
+  },
+  "k2SJ4ELGa4B2ZERDAk1uj": {
+    "title": "CI/CD",
+    "description": "",
+    "links": []
+  },
+  "IYIO4S3DO5xkLD__XT5Dp": {
+    "title": "GitLab CI",
+    "description": "",
+    "links": []
+  },
+  "CewITBPtfVs32LD5Acb2E": {
+    "title": "Circle CI",
+    "description": "",
+    "links": []
+  },
+  "N8vpCfSdZCADwO_qceWBK": {
+    "title": "GitHub Actions",
+    "description": "",
+    "links": []
+  },
+  "PUzHbjwntTSj1REL_dAov": {
+    "title": "ArgoCD",
+    "description": "",
+    "links": []
+  },
+  "dk5FQl7Pk3-O5eF7dKwmp": {
+    "title": "Monitoring",
+    "description": "",
+    "links": []
+  },
+  "3QsgoKKxAoyj2LWJ8ad-7": {
+    "title": "Prometheus",
+    "description": "",
+    "links": []
+  },
+  "Zoa4JEGrSKjVwUNer4Go1": {
+    "title": "Datadog",
+    "description": "",
+    "links": []
+  },
+  "i54fx-NV6nWzQVCdi0aKL": {
+    "title": "Sentry",
+    "description": "",
+    "links": []
+  },
+  "r1KmASWAa_MOqQOC9gvvF": {
+    "title": "New Relic",
+    "description": "",
+    "links": []
+  },
+  "DZoxLu-j1vq5leoXLRZqt": {
+    "title": "Testing",
+    "description": "",
+    "links": []
+  },
+  "NIG53tyoEiLtwf6LvBZId": {
+    "title": "Integration Testing",
+    "description": "",
+    "links": []
+  },
+  "8dXD4ddR_USEbAJhUMcB6": {
+    "title": "Unit Testing",
+    "description": "",
+    "links": []
+  },
+  "mC9sWeC_wYHeJJHJAvxpI": {
+    "title": "End-to-End Testing",
+    "description": "",
+    "links": []
+  },
+  "E4ND5XaMDGDLtlV7wTzi6": {
+    "title": "Functional Testing",
+    "description": "",
+    "links": []
+  },
+  "5qe0q_llTzzNVudbONMYo": {
+    "title": "A/B Testing",
+    "description": "",
+    "links": []
+  },
+  "qoMRpAITA7R_KOrwGDPAb": {
+    "title": "Load Testing",
+    "description": "",
+    "links": []
+  },
+  "woa5K4Dt9L6aBzlJMNS31": {
+    "title": "Smoke Testing",
+    "description": "",
+    "links": []
+  },
+  "dAvizeYvv92KMeAvSDmey": {
+    "title": "Messaging Systems",
+    "description": "",
+    "links": []
+  },
+  "1qju7UlcMo2Ebp4a3BGxH": {
+    "title": "What and why use them?",
+    "description": "",
+    "links": []
+  },
+  "VefHaP7rIOcZVFzglyn66": {
+    "title": "Async vs Sync Communication",
+    "description": "",
+    "links": []
+  },
+  "IZvL-1Xi0R9IuwJ30FDm4": {
+    "title": "Messages vs Streams",
+    "description": "",
+    "links": []
+  },
+  "yyJJGinOv3M21MFuqJs0j": {
+    "title": "Best Practices",
+    "description": "",
+    "links": []
+  },
+  "fTpx6m8U0506ZLCdDU5OG": {
+    "title": "Apache Kafka",
+    "description": "",
+    "links": []
+  },
+  "ERcgPTACqYo9BXoRdLjbd": {
+    "title": "RabbitMQ",
+    "description": "",
+    "links": []
+  },
+  "uIU5Yncp6hGDcNO1fpjUS": {
+    "title": "AWS SQS",
+    "description": "",
+    "links": []
+  },
+  "uFeiTRobSymkvCinhwmZV": {
+    "title": "AWS SNS",
+    "description": "",
+    "links": []
+  },
+  "jgz7L8OSuqRNcf9buuMTj": {
+    "title": "Infrastructure as Code - IaC",
+    "description": "",
+    "links": []
+  },
+  "GyC2JctG-Gi0R_qx1lTeg": {
+    "title": "Declarative vs Imperative",
+    "description": "",
+    "links": []
+  },
+  "9xoBZgKT9uAGsjc1soelY": {
+    "title": "Idempotency",
+    "description": "",
+    "links": []
+  },
+  "Rzk6HlMosx3FN_JD5kELZ": {
+    "title": "Reusability",
+    "description": "",
+    "links": []
+  },
+  "WUfJCLTajyLNK19gAAvoW": {
+    "title": "Environmental Management",
+    "description": "",
+    "links": []
+  },
+  "N-xRhdOTHijAymcTWPXPJ": {
+    "title": "Terraform",
+    "description": "",
+    "links": []
+  },
+  "WdlC0HhJ5YESfjXmdMnLU": {
+    "title": "OpenTofu",
+    "description": "",
+    "links": []
+  },
+  "OKJ3HTfreitk2JdrfeLIK": {
+    "title": "AWS CDK",
+    "description": "",
+    "links": []
+  },
+  "1A98uTo8l_GQSrFxu5N2X": {
+    "title": "Google Deployment  Mgr.",
+    "description": "",
+    "links": []
+  },
+  "V30v5RLQrWSMBUIsZQG1o": {
+    "title": "Data Analytics",
+    "description": "",
+    "links": []
+  },
+  "zA5QqqBMsqymdiPGFdUnt": {
+    "title": "Business Intelligence",
+    "description": "",
+    "links": []
+  },
+  "6Nr5FAGT_oOPZwZWdv7hl": {
+    "title": "Microsoft Power BI",
+    "description": "",
+    "links": []
+  },
+  "FfU6Vwf0PXva91FoqxFgp": {
+    "title": "Streamlit",
+    "description": "",
+    "links": []
+  },
+  "gqEAOwHFrQiYSejNUdV7-": {
+    "title": "Tableu",
+    "description": "",
+    "links": []
+  },
+  "fY0eZzz0aTXm2lelk8l3g": {
+    "title": "Looker",
+    "description": "",
+    "links": []
+  },
+  "JpuiYsipNWBcrjmn2ji6b": {
+    "title": "Reverse ETL",
+    "description": "",
+    "links": []
+  },
+  "LMFREK9dH_7qzx_s2xCjI": {
+    "title": "ETL vs Reverse ETL",
+    "description": "",
+    "links": []
+  },
+  "mBOGrJIUaatBe2PnJM2NK": {
+    "title": "Reverse ETL Usecases",
+    "description": "",
+    "links": []
+  },
+  "vZGDtlyt_yj4szcPTw3cv": {
+    "title": "Census",
+    "description": "",
+    "links": []
+  },
+  "8vqjI-uFwJIr_TBEVyM_3": {
+    "title": "Segment",
+    "description": "",
+    "links": []
+  },
+  "8NTe5-XQ5tKAWUyg1rnzb": {
+    "title": "Hightouch",
+    "description": "",
+    "links": []
+  },
+  "HDVhttLNMLmIAVEOBCOQ3": {
+    "title": "Authentication vs Authorization",
+    "description": "",
+    "links": []
+  },
+  "2PqRgrYuJi_pPhOS0AkoP": {
+    "title": "Encryption",
+    "description": "",
+    "links": []
+  },
+  "ZAKo9Svb8TQ6KkmOnfB5x": {
+    "title": "Tokenization",
+    "description": "",
+    "links": []
+  },
+  "2Wu1Ufm2l1nrytz1mAxmJ": {
+    "title": "Data Masking",
+    "description": "",
+    "links": []
+  },
+  "rUiYUV4ps6NYYYRwUnjuM": {
+    "title": "Data Obfuscation",
+    "description": "",
+    "links": []
+  },
+  "cStrYgFZA2NuYq8TdWWP_": {
+    "title": "Data Quality",
+    "description": "",
+    "links": []
+  },
+  "pKewO7Ef3GBXL4MDK62QG": {
+    "title": "Data Lineage",
+    "description": "",
+    "links": []
+  },
+  "a5gzM8msXibxD58eVDkM-": {
+    "title": "Metadata Management",
+    "description": "",
+    "links": []
+  },
+  "ghAbtfB5KtbboNjijL1Zf": {
+    "title": "Data Interoperability",
+    "description": "",
+    "links": []
+  },
+  "iuNP6W0A2GLTE2PK5y68u": {
+    "title": "Data Quality",
+    "description": "",
+    "links": []
+  },
+  "MuPHohc7mJzcH5QdJ-K46": {
+    "title": "GDPR",
+    "description": "",
+    "links": []
+  },
+  "g1VwuSupohuDAT2O4hTXx": {
+    "title": "ECPA",
+    "description": "",
+    "links": []
+  },
+  "tdqhFFvQ2dQVeQh1qTHjV": {
+    "title": "EU AI Act",
+    "description": "",
+    "links": []
+  },
+  "S8XMtFKWlnUqADElFp0Zw": {
+    "title": "Machine Learning",
+    "description": "",
+    "links": []
+  },
+  "VQv-c7buU2l-IDzRZBMRo": {
+    "title": "MLOps",
+    "description": "",
+    "links": []
+  }
+}

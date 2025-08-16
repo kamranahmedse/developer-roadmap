@@ -1158,22 +1158,17 @@
   },
   "Pymc9H-lRHVPy7M9eSaPD": {
     "title": "CI / CD Integration",
-    "description": "Kubernetes, also known as K8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It allows developers to focus on writing code while Kubernetes handles the underlying infrastructure. Kubernetes uses declarative configuration files to specify the desired state of an application, and can automatically scale applications based on demand, handle failovers, and manage networking and storage. It is widely used in cloud-native architectures that rely on microservices and containers for production deployments.\n\nLearn more from the following resources:",
+    "description": "In CI/CD pattern, the build, test, and deployment of applications to Kubernetes are fully automated. The CI pipeline creates the container image, runs tests, and pushes it to a registry. The CD pipeline then updates Kubernetes manifests or Helm charts and applies them to the cluster using tools like Argo CD, Flux, or kubectl. This makes deployments consistent, repeatable, and fast.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "Overview of Kubernetes",
-        "url": "https://kubernetes.io/docs/concepts/overview/",
+        "title": "Kubernetes CI/CD Pipelines – 8 Best Practices and Tools",
+        "url": "https://spacelift.io/blog/kubernetes-ci-cd",
         "type": "article"
       },
       {
-        "title": "Kubernetes Explained in 100 Seconds",
-        "url": "https://www.youtube.com/watch?v=PziYflu8cB8",
-        "type": "video"
-      },
-      {
-        "title": "Kubernetes Tutorial for Beginners",
-        "url": "https://www.youtube.com/watch?v=X48VuDVv0do&t=1s",
-        "type": "video"
+        "title": "Octopus - Deploying to Kubernetes",
+        "url": "https://octopus.com/use-case/kubernetes",
+        "type": "article"
       }
     ]
   },

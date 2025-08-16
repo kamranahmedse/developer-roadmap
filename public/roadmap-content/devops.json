@@ -2097,21 +2097,16 @@
   },
   "JnWVCS1HbAyfCJzGt-WOH": {
     "title": "GitHub Actions",
-    "description": "GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform integrated directly into GitHub repositories. It allows developers to automate software workflows, including building, testing, and deploying applications. Actions are defined in YAML files and triggered by various GitHub events such as pushes, pull requests, or scheduled tasks. The platform provides a marketplace of pre-built actions and supports custom actions. GitHub Actions offers matrix builds, parallel job execution, and supports multiple operating systems and languages. It integrates seamlessly with GitHub's ecosystem, facilitating automated code review, issue tracking, and project management. This tool enables developers to implement DevOps practices efficiently within their GitHub workflow, enhancing productivity and code quality.\n\nVisit the following resources to learn more:",
+    "description": "GitHub Actions is GitHub’s built-in automation platform that lets you run workflows directly from your repository, such as building, testing, and deploying code, triggered by events like pushes, pull requests, or schedules.\n\nVisit the following resources to learn more:",
     "links": [
-      {
-        "title": "GitHub Actions Certification – Full Course to PASS the Exam",
-        "url": "https://www.youtube.com/watch?v=Tz7FsunBbfQ",
-        "type": "course"
-      },
       {
         "title": "GitHub Actions Documentation",
         "url": "https://docs.github.com/en/actions",
         "type": "article"
       },
       {
-        "title": "Explore top posts about GitHub",
-        "url": "https://app.daily.dev/tags/github?ref=roadmapsh",
+        "title": "GitHub Actions Guide",
+        "url": "https://octopus.com/devops/github-actions/",
         "type": "article"
       },
       {
@@ -2141,8 +2136,8 @@
         "type": "article"
       },
       {
-        "title": "Explore top posts about GitLab",
-        "url": "https://app.daily.dev/tags/gitlab?ref=roadmapsh",
+        "title": "GitLab CI/CD Pipeline Tutorial",
+        "url": "https://octopus.com/devops/gitlab/gitlab-cicd-tutorial/",
         "type": "article"
       },
       {
@@ -2154,7 +2149,7 @@
   },
   "dUapFp3f0Rum-rf_Vk_b-": {
     "title": "Jenkins",
-    "description": "Jenkins is an open-source automation server widely used for building, testing, and deploying software. It facilitates continuous integration and continuous delivery (CI/CD) by automating various stages of the development pipeline. Jenkins supports numerous plugins, allowing integration with virtually any tool in the software development lifecycle. It features a web interface for configuration and monitoring, supports distributed builds across multiple machines, and offers extensibility through a plugin architecture. Jenkins can be used to create complex workflows, automate repetitive tasks, and orchestrate job sequences. Its flexibility, broad community support, and ability to integrate with a wide range of tools make it a popular choice for implementing DevOps practices in organizations of all sizes.\n\nVisit the following resources to learn more:",
+    "description": "Jenkins is an open-source automation server used to build, test, and deploy software, offering a wide range of plugins to support continuous integration and continuous delivery (CI/CD).\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Jenkins Website",
@@ -2167,6 +2162,11 @@
         "type": "article"
       },
       {
+        "title": "Jenkins Tutorial",
+        "url": "https://octopus.com/devops/jenkins/jenkins-tutorial/",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about Jenkins",
         "url": "https://app.daily.dev/tags/jenkins?ref=roadmapsh",
         "type": "article"
@@ -2174,32 +2174,6 @@
       {
         "title": "Learn Jenkins! Complete Jenkins Course - Zero to Hero",
         "url": "https://www.youtube.com/watch?v=6YZvp2GwT0A",
-        "type": "video"
-      }
-    ]
-  },
-  "-pGF3soruWWxwE4LxE5Vk": {
-    "title": "Travis CI",
-    "description": "Travis CI is a cloud-based continuous integration (CI) service that automatically builds and tests code changes in GitHub repositories. It helps streamline the software development process by automatically running tests and building applications whenever code is pushed or a pull request is made. Travis CI supports a variety of programming languages and provides integration with other tools and services, offering features like build matrix configurations, deployment pipelines, and notifications. Its ease of setup and integration with GitHub makes it a popular choice for open-source and private projects looking to implement CI/CD practices.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Travis CI Documentation",
-        "url": "https://docs.travis-ci.com/",
-        "type": "article"
-      },
-      {
-        "title": "Travis CI Tutorial",
-        "url": "https://docs.travis-ci.com/user/tutorial/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about CI/CD",
-        "url": "https://app.daily.dev/tags/cicd?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Travis CI Complete Tutorial for DevOps Engineers",
-        "url": "https://www.youtube.com/watch?v=xLWDOLhTH38",
         "type": "video"
       }
     ]
@@ -2226,23 +2200,18 @@
     ]
   },
   "TsXFx1wWikVBVoFUUDAMx": {
-    "title": "Drone",
-    "description": "Drone is an open-source continuous integration (CI) platform built on container technology. It automates building, testing, and deploying code using a simple, YAML-based pipeline configuration stored alongside the source code. Drone executes each step of the CI/CD process in isolated Docker containers, ensuring consistency and reproducibility. It supports multiple version control systems, offers parallel execution of pipeline steps, and provides plugins for integrating with various tools and services. Drone's lightweight, scalable architecture makes it suitable for projects of all sizes, from small teams to large enterprises. Its focus on simplicity and containerization aligns well with modern DevOps practices and microservices architectures.\n\nVisit the following resources to learn more:",
+    "title": "Octopus Deploy",
+    "description": "Octopus Deploy is a deployment automation tool that helps teams release applications reliably and consistently. It manages the deployment process, handles configuration, and automates releases across different environments like development, testing, and production, reducing manual errors and saving time.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Drone",
-        "url": "https://www.drone.io/",
+        "title": "Octopus Deploy",
+        "url": "https://octopus.com/",
         "type": "article"
       },
       {
-        "title": "Drone Documentation",
-        "url": "https://docs.drone.io/",
+        "title": "Official Documentation",
+        "url": "https://octopus.com/docs",
         "type": "article"
-      },
-      {
-        "title": "Drone CI Quickstart",
-        "url": "https://www.youtube.com/watch?v=Qf8EHRzAgHQ",
-        "type": "video"
       }
     ]
   },
@@ -2832,11 +2801,21 @@
   },
   "-INN1qTMLimrZgaSPCcHj": {
     "title": "GitOps",
-    "description": "GitOps is a paradigm for managing infrastructure and application deployments using Git as the single source of truth. It extends DevOps practices by using Git repositories to store declarative descriptions of infrastructure and applications. Changes to the desired state are made through pull requests, which trigger automated processes to align the actual state with the desired state. GitOps relies on continuous deployment tools that automatically reconcile the live system with the desired state defined in Git. This approach provides benefits such as version control for infrastructure, improved auditability, easier rollbacks, and enhanced collaboration. GitOps is particularly well-suited for cloud-native applications and Kubernetes environments, offering a streamlined method for managing complex, distributed systems.\n\nVisit the following resources to learn more:",
+    "description": "GitOps is a way of managing infrastructure and application deployments by storing the desired state in a Git repository and using automation to apply changes. It treats Git as the single source of truth, so updates are made by committing changes to the repo, and automated tools reconcile the actual system state with what’s in Git.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": " GitOps",
-        "url": "https://www.gitops.tech/",
+        "title": "What is GitOps",
+        "url": "https://octopus.com/devops/gitops/",
+        "type": "article"
+      },
+      {
+        "title": "GitOps Interactive Benefits Diagram",
+        "url": "https://octopus.com/devops/gitops/interactive-diagrams/",
+        "type": "article"
+      },
+      {
+        "title": "GitOps Maturity Model",
+        "url": "https://octopus.com/devops/gitops/gitops-maturity-model/",
         "type": "article"
       },
       {
