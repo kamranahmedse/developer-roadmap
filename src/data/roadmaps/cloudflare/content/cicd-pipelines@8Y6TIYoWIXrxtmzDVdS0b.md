@@ -5,6 +5,6 @@ CI/CD (Continuous Integration/Continuous Deployment) pipelines automate the proc
 Visit the following resources to learn more:
 
 - [@official@Automate your workflow - Github Actions](https://github.com/features/actions)
-- [@official@CI/CD Pipelines - Gitlab](https://docs.gitlab.com/ee/ci/pipelines/)
+- [@official@CI/CD Pipelines - GitLab](https://docs.gitlab.com/ee/ci/pipelines/)
 - [@official@Continuous Integration and Delivery - CircleCI](https://circleci.com/)
 - [@official@Simple, Flexible, Trustworthy CI/CD Tools - Travis CI](https://www.travis-ci.com/)

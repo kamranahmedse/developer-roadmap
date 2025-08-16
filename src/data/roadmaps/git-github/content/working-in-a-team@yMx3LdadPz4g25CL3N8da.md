@@ -7,4 +7,4 @@ GitHub also offers an organization and team management interface, allowing teams
 Learn more from the following resources:
 
 - [@official@Getting Started with Teams](https://docs.github.com/en/get-started/onboarding/getting-started-with-github-team)
-- [@official@Github Team Docs](https://docs.github.com/organizations/organizing-members-into-teams/about-teams)
+- [@official@GitHub Team Docs](https://docs.github.com/organizations/organizing-members-into-teams/about-teams)

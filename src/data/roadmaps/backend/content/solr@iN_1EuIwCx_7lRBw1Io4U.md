@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@Solr Website](https://solr.apache.org/)
 - [@article@Solr Documentation](https://solr.apache.org/resources.html#documentation)
-- [@opensource@Solr on Github](https://github.com/apache/solr)
+- [@opensource@Solr on GitHub](https://github.com/apache/solr)
 - [@video@Apache Solr vs Elasticsearch Differences](https://www.youtube.com/watch?v=MMWBdSdbu5k)

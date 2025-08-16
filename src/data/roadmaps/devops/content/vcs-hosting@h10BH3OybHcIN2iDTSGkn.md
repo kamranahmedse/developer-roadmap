@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [@official@GitHub](https://github.com)
 - [@official@GitLab](https://about.gitlab.com/)
 - [@official@BitBucket](https://bitbucket.org/product/guides/getting-started/overview)
-- [@video@Github vs Gitlab vs Bitbucket - Which Is Better?](https://www.youtube.com/watch?v=FQGXIIqziQg)
+- [@video@GitHub vs GitLab vs Bitbucket - Which Is Better?](https://www.youtube.com/watch?v=FQGXIIqziQg)

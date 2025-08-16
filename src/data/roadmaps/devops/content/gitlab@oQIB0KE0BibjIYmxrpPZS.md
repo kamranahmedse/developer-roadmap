@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@GitLab Website](https://gitlab.com/)
 - [@official@GitLab Documentation](https://docs.gitlab.com/)
-- [@video@Gitlab Explained: What is Gitlab and Why Use It?](https://www.youtube.com/watch?v=bnF7f1zGpo4)
+- [@video@GitLab Explained: What is GitLab and Why Use It?](https://www.youtube.com/watch?v=bnF7f1zGpo4)
 - [@feed@Explore top posts about GitLab](https://app.daily.dev/tags/gitlab?ref=roadmapsh)
