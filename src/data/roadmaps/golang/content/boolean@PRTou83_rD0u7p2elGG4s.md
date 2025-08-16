@@ -4,5 +4,5 @@ The `bool` type represents `true` or `false` values with default zero value of `
 
 Visit the following resources to learn more:
 
-- [@official@Booleans in Golang](https://golangdocs.com/booleans-in-golang)
+- [@article@Booleans in Golang](https://golangdocs.com/booleans-in-golang)
 - [@article@Understanding Boolean Logic in Go](https://www.digitalocean.com/community/tutorials/understanding-boolean-logic-in-go)
