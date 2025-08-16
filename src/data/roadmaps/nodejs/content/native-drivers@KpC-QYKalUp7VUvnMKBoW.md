@@ -1,3 +1,3 @@
 # Native drivers
 
-NativeDriver is an implementation of the WebDriver API which drives the UI of a native application rather than a web application. It extends the WebDriver API in a few key places, and re-interprets the existing API for native applications.
+Another way to connect to different databases in Node.js is to use the official native drivers provided by the database.
