@@ -34,5 +34,5 @@ You can use the [Visual Crossing Weather API](https://www.visualcrossing.com/wea
 
 ## Stretch Goals
 
-- Animation libraries such as framer can used to make the loading of weather more visually appealing
+- Animation libraries such as framer can be used to make the loading of weather more visually appealing
 - The default weather view is the Users current location.
