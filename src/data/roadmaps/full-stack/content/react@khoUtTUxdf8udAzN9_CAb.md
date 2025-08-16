@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@video@React Course - Beginners Tutorial for React](https://www.youtube.com/watch?v=bMknfKXIFA8)
 - [@video@Understanding Reacts UI Rendering Process](https://www.youtube.com/watch?v=i793Qm6kv3U)
 - [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)
+- [@Article@Explore a great documentation to learn React]([https://app.daily.dev/tags/react?ref=roadmapsh](https://www.w3schools.com/react/default.asp)
