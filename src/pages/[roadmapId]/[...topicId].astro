@@ -4,6 +4,13 @@ import path from 'node:path';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it-async';
 import { fileURLToPath } from 'node:url';
+import {
+  getOfficialGuide,
+  type OfficialGuideResponse,
+} from '../../queries/official-guide';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { GuideContent } from '../../components/Guide/GuideContent';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
 
 export const prerender = false;
 
@@ -16,72 +23,108 @@ if (!topicId || !roadmapId) {
   return Astro.rewrite('/404');
 }
 
-// Handle nested paths by joining the segments
-const topicPath = Array.isArray(topicId) ? topicId.join('/') : topicId;
+const isTopic = topicId?.includes('@') || topicId?.includes('/');
+let gitHubUrl = '';
+let htmlContent = '';
+let guide: OfficialGuideResponse | null = null;
+let permalink = '';
+let ogImageUrl = '';
 
-// Get the project root directory
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+if (isTopic) {
+  // Handle nested paths by joining the segments
+  const topicPath = Array.isArray(topicId) ? topicId.join('/') : topicId;
 
-// hack to make it work. TODO: Fix
-const projectRoot = path.resolve(__dirname, '../../..').replace(/dist$/, '');
+  // Get the project root directory
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
 
-// Construct the path to the markdown file
-let contentPath = path.join(
-  projectRoot,
-  'src',
-  'data',
-  'roadmaps',
-  roadmapId,
-  'content',
-  `${topicPath}.md`,
-);
+  // hack to make it work. TODO: Fix
+  const projectRoot = path.resolve(__dirname, '../../..').replace(/dist$/, '');
 
-// Check if file exists
-if (!fs.existsSync(contentPath)) {
-  const indexFilePath = path.join(
+  // Construct the path to the markdown file
+  let contentPath = path.join(
     projectRoot,
     'src',
     'data',
     'roadmaps',
     roadmapId,
     'content',
-    `${topicPath}/index.md`,
+    `${topicPath}.md`,
   );
 
-  if (!fs.existsSync(indexFilePath)) {
+  // Check if file exists
+  if (!fs.existsSync(contentPath)) {
+    const indexFilePath = path.join(
+      projectRoot,
+      'src',
+      'data',
+      'roadmaps',
+      roadmapId,
+      'content',
+      `${topicPath}/index.md`,
+    );
+
+    if (!fs.existsSync(indexFilePath)) {
+      Astro.response.status = 404;
+      Astro.response.statusText = 'Not found';
+
+      return Astro.rewrite('/404');
+    }
+
+    contentPath = indexFilePath;
+  }
+
+  // Read and parse the markdown file
+  const fileContent = fs.readFileSync(contentPath, 'utf-8');
+  const { content } = matter(fileContent);
+
+  const fileWithoutBasePath = contentPath.replace(
+    /.+?\/src\/data/,
+    '/src/data',
+  );
+
+  const md = MarkdownIt();
+
+  gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
+  htmlContent = await md.renderAsync(content);
+} else {
+  guide = await getOfficialGuide(topicId, roadmapId);
+  if (!guide) {
     Astro.response.status = 404;
     Astro.response.statusText = 'Not found';
-
     return Astro.rewrite('/404');
   }
 
-  contentPath = indexFilePath;
+  permalink = `/${roadmapId}/${topicId}`;
+  ogImageUrl =
+    guide?.featuredImage ||
+    getOpenGraphImageUrl(
+      {
+        group: 'guide',
+        resourceId: topicId,
+      },
+      {
+        roadmapId,
+      },
+    );
 }
-
-// Read and parse the markdown file
-const fileContent = fs.readFileSync(contentPath, 'utf-8');
-const { data: frontmatter, content } = matter(fileContent);
-
-// Get the roadmap metadata
-const roadmapPath = path.join(
-  projectRoot,
-  'src',
-  'data',
-  'roadmaps',
-  roadmapId,
-  `${roadmapId}.md`,
-);
-const roadmapContent = fs.readFileSync(roadmapPath, 'utf-8');
-const { data: roadmapData } = matter(roadmapContent);
-
-const fileWithoutBasePath = contentPath.replace(/.+?\/src\/data/, '/src/data');
-const gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
-
-const md = MarkdownIt();
-const htmlContent = await md.renderAsync(content);
 ---
 
-<div data-github-url={gitHubUrl}></div>
-
-<Fragment set:html={htmlContent} />
+{
+  isTopic ? (
+    <>
+      <div data-github-url={gitHubUrl} />
+      <Fragment set:html={htmlContent} />
+    </>
+  ) : (
+    <BaseLayout
+      title={guide?.seo?.metaTitle ?? guide?.title ?? ''}
+      description={guide?.seo?.metaDescription ?? guide?.description ?? ''}
+      permalink={permalink}
+      ogImageUrl={ogImageUrl}
+    >
+      <GuideContent guide={guide!} client:load />
+      <div slot='changelog-banner' />
+    </BaseLayout>
+  )
+}

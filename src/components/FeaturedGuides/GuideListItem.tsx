@@ -1,52 +1,46 @@
-import type { GuideFileType, GuideFrontmatter } from '../../lib/guide';
-import { type QuestionGroupType } from '../../lib/question-group';
-import dayjs from 'dayjs';
+import { DateTime } from 'luxon';
+import {
+  getOfficialGuideHref,
+  type OfficialGuideDocument,
+} from '../../queries/official-guide';
 
 export interface GuideListItemProps {
-  guide: GuideFileType | QuestionGroupType;
-}
-
-function isQuestionGroupType(
-  guide: GuideFileType | QuestionGroupType,
-): guide is QuestionGroupType {
-  return (guide as QuestionGroupType).questions !== undefined;
+  guide: OfficialGuideDocument;
 }
 
 export function GuideListItem(props: GuideListItemProps) {
   const { guide } = props;
-  const { frontmatter, id } = guide;
+  const { title, slug, publishedAt, roadmapId } = guide;
 
-  let pageUrl = '';
-  let guideType = '';
-
-  if (isQuestionGroupType(guide)) {
-    pageUrl = `/questions/${id}`;
-    guideType = 'Questions';
-  } else {
-    const excludedBySlug = (frontmatter as GuideFrontmatter).excludedBySlug;
-    pageUrl = excludedBySlug ? excludedBySlug : `/guides/${id}`;
-    guideType = (frontmatter as GuideFrontmatter).type;
+  let guideType = 'Textual';
+  if (roadmapId === 'questions') {
+    guideType = 'Question';
   }
 
-  // Check if article is within the last 15 days
-  const isNew = frontmatter.date
-    ? dayjs().diff(dayjs(frontmatter.date), 'day') < 15
-    : false;
+  const publishedAtDate = publishedAt
+    ? DateTime.fromJSDate(new Date(publishedAt))
+    : null;
+
+  const isNew =
+    publishedAtDate && DateTime.now().diff(publishedAtDate, 'days').days < 15;
+  const publishedAtMonth = publishedAtDate
+    ? publishedAtDate.toFormat('MMMM')
+    : '';
 
   return (
     <a
-      className="text-md group block flex items-center justify-between border-b py-2 text-gray-600 no-underline hover:text-blue-600"
-      href={pageUrl}
+      className="text-md group flex items-center justify-between border-b py-2 text-gray-600 no-underline hover:text-blue-600"
+      href={getOfficialGuideHref(slug, roadmapId)}
     >
       <span className="text-sm transition-transform group-hover:translate-x-2 md:text-base">
-        {frontmatter.title}
+        {title}
 
         {isNew && (
           <span className="ml-2.5 rounded-xs bg-green-300 px-1.5 py-0.5 text-xs font-medium text-green-900 uppercase">
             New
             <span className="hidden sm:inline">
               &nbsp;&middot;&nbsp;
-              {frontmatter.date ? dayjs(frontmatter.date).format('MMMM') : ''}
+              {publishedAtMonth}
             </span>
           </span>
         )}

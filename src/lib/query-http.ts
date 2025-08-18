@@ -43,15 +43,19 @@ export async function httpCall<ResponseType = AppResponse>(
     ? url
     : `${import.meta.env.PUBLIC_API_URL}${url}`;
   try {
-    const fingerprintPromise = await fp.load();
-    const fingerprint = await fingerprintPromise.get();
+    let visitorId = '';
+    if (typeof window !== 'undefined') {
+      const fingerprintPromise = await fp.load();
+      const fingerprint = await fingerprintPromise.get();
+      visitorId = fingerprint.visitorId;
+    }
 
     const isMultiPartFormData = options?.body instanceof FormData;
 
     const headers = new Headers({
       Accept: 'application/json',
       Authorization: `Bearer ${Cookies.get(TOKEN_COOKIE_NAME)}`,
-      fp: fingerprint.visitorId,
+      ...(visitorId ? { fp: visitorId } : {}),
       ...(options?.headers ?? {}),
     });
 
