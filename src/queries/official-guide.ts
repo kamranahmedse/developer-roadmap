@@ -32,6 +32,7 @@ export interface OfficialGuideDocument {
 
 type ListOfficialGuidesQuery = {
   authorSlug?: string;
+  roadmapId?: string;
 };
 
 export async function listOfficialGuides(query: ListOfficialGuidesQuery = {}) {
@@ -100,4 +101,13 @@ export async function getOfficialGuide(slug: string, roadmapId?: string) {
 
     throw error;
   }
+}
+
+export function getOfficialGuideHref(slug: string, roadmapId?: string) {
+  const isExternal = roadmapId && roadmapId !== 'questions';
+  return isExternal
+    ? `${import.meta.env.PUBLIC_APP_URL}/${roadmapId}/${slug}`
+    : roadmapId
+      ? `/${roadmapId}/${slug}`
+      : `/guides/${slug}`;
 }
