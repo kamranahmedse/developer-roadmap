@@ -16,8 +16,6 @@ export interface OfficialGuideDocument {
   status: AllowedOfficialGuideStatus;
   publishedAt?: Date;
   seo?: {
-    ogImageUrl?: string;
-    canonicalUrl?: string;
     metaTitle?: string;
     metaDescription?: string;
     keywords?: string[];
