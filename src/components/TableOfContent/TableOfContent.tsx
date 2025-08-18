@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { HeadingGroupType } from '../../lib/guide';
+import type { HeadingGroupType } from '../../lib/guide-renderer';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '../../lib/classname';
 
@@ -23,7 +23,7 @@ export function TableOfContent(props: TableOfContentProps) {
   return (
     <div
       className={cn(
-        'relative min-w-[250px] px-5 pt-0 max-lg:min-w-full max-lg:max-w-full max-lg:border-none max-lg:px-0 lg:pt-5',
+        'relative min-w-[250px] px-5 pt-0 max-lg:max-w-full max-lg:min-w-full max-lg:border-none max-lg:px-0 lg:pt-5',
         {
           'top-0 lg:sticky!': totalRows <= 20,
         },
@@ -68,7 +68,7 @@ export function TableOfContent(props: TableOfContentProps) {
             </a>
 
             {heading.children.length > 0 && (
-              <ol className="my-0 ml-4 mt-1 space-y-0 max-lg:ml-0 max-lg:mt-0 max-lg:list-none">
+              <ol className="my-0 mt-1 ml-4 space-y-0 max-lg:mt-0 max-lg:ml-0 max-lg:list-none">
                 {heading.children.map((children) => {
                   return (
                     <li key={children.slug}>

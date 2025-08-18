@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
+import type { QuestionType } from '../../lib/guide-renderer';
 import { QuestionsProgress } from './QuestionsProgress';
-import { CheckCircle, SkipForward, Sparkles } from 'lucide-react';
-import { QuestionCard } from './QuestionCard';
-import { isLoggedIn } from '../../lib/jwt';
-import type { QuestionType } from '../../lib/question-group';
+import { cn } from '../../lib/classname';
 import { QuestionFinished } from './QuestionFinished';
+import { QuestionCard } from './QuestionCard';
+import { CheckCircleIcon, SkipForwardIcon, SparklesIcon } from 'lucide-react';
 import { Confetti } from '../Confetti';
 
 type UserQuestionProgress = {
@@ -16,12 +16,12 @@ type UserQuestionProgress = {
 export type QuestionProgressType = keyof UserQuestionProgress;
 
 type QuestionsListProps = {
-  groupId: string;
   questions: QuestionType[];
+  className?: string;
 };
 
 export function QuestionsList(props: QuestionsListProps) {
-  const { questions } = props;
+  const { questions, className } = props;
 
   const [showConfetti, setShowConfetti] = useState(false);
   const [currQuestionIndex, setCurrQuestionIndex] = useState(0);
@@ -73,7 +73,7 @@ export function QuestionsList(props: QuestionsListProps) {
   const hasFinished = hasProgress && currQuestionIndex === -1;
 
   return (
-    <div className="mb-0 gap-3 text-center sm:mb-40">
+    <div className={cn('mb-0 gap-3 text-center sm:mb-40', className)}>
       <QuestionsProgress
         knowCount={knowCount}
         didNotKnowCount={dontKnowCount}
@@ -139,9 +139,10 @@ export function QuestionsList(props: QuestionsListProps) {
       </div>
 
       <div
-        className={`flex flex-col gap-1 transition-opacity duration-300 sm:flex-row sm:gap-3 ${
-          hasFinished ? 'opacity-0' : 'opacity-100'
-        }`}
+        className={cn(
+          'flex flex-col gap-1 transition-opacity duration-300 sm:flex-row sm:gap-3',
+          hasFinished ? 'opacity-0' : 'opacity-100',
+        )}
       >
         <button
           disabled={!currQuestion}
@@ -152,7 +153,7 @@ export function QuestionsList(props: QuestionsListProps) {
           }}
           className="flex flex-1 items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
-          <CheckCircle className="mr-1 h-4 text-current" />
+          <CheckCircleIcon className="mr-1 h-4 text-current" />
           Already Know that
         </button>
         <button
@@ -162,7 +163,7 @@ export function QuestionsList(props: QuestionsListProps) {
           disabled={!currQuestion}
           className="flex flex-1 items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
-          <Sparkles className="mr-1 h-4 text-current" />
+          <SparklesIcon className="mr-1 h-4 text-current" />
           Didn't Know that
         </button>
         <button
@@ -173,7 +174,7 @@ export function QuestionsList(props: QuestionsListProps) {
           data-next-question="skip"
           className="flex flex-1 items-center rounded-md border border-red-600 px-2 py-2 text-sm text-red-600 hover:bg-red-600 hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
-          <SkipForward className="mr-1 h-4" />
+          <SkipForwardIcon className="mr-1 h-4" />
           Skip Question
         </button>
       </div>

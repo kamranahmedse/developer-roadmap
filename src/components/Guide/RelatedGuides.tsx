@@ -1,10 +1,11 @@
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import type { OfficialGuideDocument } from '../../queries/official-guide';
 import { cn } from '../../lib/classname';
 
 type RelatedGuidesProps = {
   relatedTitle?: string;
-  relatedGuides: Record<string, string>;
+  relatedGuides: Pick<OfficialGuideDocument, 'title' | 'slug' | 'roadmapId'>[];
 };
 
 export function RelatedGuides(props: RelatedGuidesProps) {
@@ -12,14 +13,7 @@ export function RelatedGuides(props: RelatedGuidesProps) {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const relatedGuidesArray = Object.entries(relatedGuides).map(
-    ([title, url]) => ({
-      title,
-      url,
-    }),
-  );
-
-  if (relatedGuidesArray.length === 0) {
+  if (relatedGuides.length === 0) {
     return null;
   }
 
@@ -47,23 +41,32 @@ export function RelatedGuides(props: RelatedGuidesProps) {
           isOpen && 'block',
         )}
       >
-        {relatedGuidesArray.map((relatedGuide) => (
-          <li key={relatedGuide.url}>
-            <a
-              href={relatedGuide.url}
-              className="text-sm text-gray-500 no-underline hover:text-black max-lg:block max-lg:border-b max-lg:px-3 max-lg:py-1"
-              onClick={() => {
-                if (!isOpen) {
-                  return;
-                }
+        {relatedGuides.map((relatedGuide) => {
+          const { roadmapId, slug, title } = relatedGuide;
+          const href = roadmapId ? `/${roadmapId}/${slug}` : `/guides/${slug}`;
 
-                setIsOpen(false);
-              }}
-            >
-              {relatedGuide.title}
-            </a>
-          </li>
-        ))}
+          const className = cn(
+            'text-sm text-gray-500 no-underline hover:text-black max-lg:block max-lg:border-b max-lg:px-3 max-lg:py-1',
+          );
+
+          return (
+            <li key={slug}>
+              <a
+                href={href}
+                className={className}
+                onClick={() => {
+                  if (!isOpen) {
+                    return;
+                  }
+
+                  setIsOpen(false);
+                }}
+              >
+                {title}
+              </a>
+            </li>
+          );
+        })}
       </ol>
     </div>
   );

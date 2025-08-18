@@ -81,7 +81,7 @@ const showTableOfContent = tableOfContent.length > 0;
 ---
 
 <article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
-  {
+  <!-- {
     showTableOfContent && (
       <div class='bg-linear-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
         <RelatedGuides
@@ -92,7 +92,7 @@ const showTableOfContent = tableOfContent.length > 0;
         <TableOfContent toc={tableOfContent} client:load />
       </div>
     )
-  }
+  } -->
 
   <div
     class:list={[
@@ -138,13 +138,13 @@ const showTableOfContent = tableOfContent.length > 0;
         You can either use these flashcards or jump to the questions list
         section below to see them in a list format.
       </p>
-      <div class='mx-0 sm:-mb-32'>
+      <!-- <div class='mx-0 sm:-mb-32'>
         <QuestionsList
           groupId={questionGroup.id}
           questions={questionGroup.questions}
           client:load
         />
-      </div>
+      </div> -->
 
       <h2 id='questions-list'>Questions List</h2>
       <p>
