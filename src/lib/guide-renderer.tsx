@@ -69,12 +69,6 @@ export class GuideRenderer {
         }
       });
 
-    if (toc.length > 5) {
-      toc.forEach((group) => {
-        group.children = [];
-      });
-    }
-
     const qaSection = node.content?.find((node) => node.type === 'qaSection');
     if (hasQASection && qaSection) {
       toc.push({
@@ -119,6 +113,12 @@ export class GuideRenderer {
             text: topicText,
           };
         }),
+      });
+    }
+
+    if (toc.length > 5) {
+      toc.forEach((group) => {
+        group.children = [];
       });
     }
 
