@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@CCNA Certification](https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html)
 - [@video@Network Chuck Free CCNA Course](https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P)
+- [@video@Jeremy's IT Lab](https://www.youtube.com/@JeremysITLab)
