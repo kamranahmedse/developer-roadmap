@@ -129,8 +129,10 @@ export class GuideRenderer {
     const nodes = node.content || [];
     const headlines: Array<HeadingType> = [];
 
+    let hasFoundQASection = false;
     const extractHeadlines = (node: JSONContent) => {
-      if (node.type === 'qaSection') {
+      if (node.type === 'qaSection' || hasFoundQASection) {
+        hasFoundQASection = true;
         return;
       }
 
@@ -231,7 +233,6 @@ export class GuideRenderer {
       node.content?.every(
         (child) => child.type === 'text' && child.text === '',
       );
-
     if (isEmpty) {
       return <></>;
     }
@@ -368,7 +369,7 @@ export class GuideRenderer {
     return <blockquote>{this.content(node)}</blockquote>;
   }
 
-  private questions(node: JSONContent) {
+  questions(node: JSONContent) {
     const content = node.content || [];
     const questions: QuestionType[] = [];
     let currentTopic: string | null = null;

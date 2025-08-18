@@ -34,7 +34,7 @@ export function GuideContent(props: GuideContentProps) {
           showTableOfContent && 'lg:border-r',
         )}
       >
-        <div className="prose prose-xl prose-h2:mb-3 prose-h2:mt-10 prose-h2:scroll-mt-5 prose-h2:text-balance prose-h2:text-3xl prose-h3:mt-2 prose-h4:text-2xl prose-h3:scroll-mt-5 prose-h3:text-balance prose-h4:text-balance prose-h5:text-balance prose-h5:font-medium prose-blockquote:font-normal prose-code:bg-transparent prose-img:mt-1 sm:prose-h2:scroll-mt-10 sm:prose-h3:scroll-mt-10 container">
+        <div className="prose prose-xl prose-h2:mb-3 prose-h2:mt-10 prose-h2:scroll-mt-5 prose-h2:text-balance prose-h2:text-3xl prose-h3:mt-2 prose-h4:text-2xl prose-h3:scroll-mt-5 prose-h3:text-balance prose-h4:text-balance prose-h5:text-balance prose-h5:font-medium prose-blockquote:font-normal prose-code:bg-transparent prose-img:mt-1 sm:prose-h2:scroll-mt-10 sm:prose-h3:scroll-mt-10 prose-li:[&>p]:m-0 container">
           <h1 className="mb-3 text-4xl font-bold text-balance">
             {guide.title}
           </h1>
