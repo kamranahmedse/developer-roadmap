@@ -6,7 +6,9 @@ Learn more from the following resources:
 
 - [@course@Microsoft Learn: Introduction to GitHub Actions](https://learn.microsoft.com/en-us/collections/n5p4a5z7keznp5)
 - [@course@YouTube: GitHub Actions Playlist](https://www.youtube.com/watch?v=-hVG9z0fCac&list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY&pp=iAQB)
-- [@official@GitHub CLI](https://cli.github.com/)
+- [@course@YouTube: Advanced Security Certification by freeCodeCamp.org]([https://cli.github.com/](https://youtu.be/i740xlsqxEM)) 
+- [@official@GitHub CLI](https://cli.github.com)
 - [@official@GitHub CLI quickstart](https://docs.github.com/en/github-cli/github-cli/quickstart)
 - [@official@Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [@article@Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [@official@YouTube: GitHub Copilot 101 | Tutorial](https://youtu.be/b5xcWdzAB5c)
