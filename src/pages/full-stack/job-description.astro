@@ -10,10 +10,15 @@ const guide = await getOfficialGuide(guideId, roadmapId);
 
 const ogImageUrl =
   guide?.seo?.ogImageUrl ||
-  getOpenGraphImageUrl({
-    group: 'guide',
-    resourceId: guideId,
-  });
+  getOpenGraphImageUrl(
+    {
+      group: 'guide',
+      resourceId: guideId,
+    },
+    {
+      roadmapId,
+    },
+  );
 
 const permalink = `/${roadmapId}/${guideId}`;
 ---
