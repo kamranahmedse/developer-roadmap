@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user.ts';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname.ts';
-import type { GuideFileType } from '../../lib/guide';
 import { httpGet } from '../../lib/http';
 import type { QuestionGroupType } from '../../lib/question-group';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
@@ -21,6 +20,7 @@ import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 import { useIsPaidUser } from '../../queries/billing.ts';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
+import type { OfficialGuideDocument } from '../../queries/official-guide.ts';
 
 const projectGroups = [
   {
@@ -66,7 +66,7 @@ type PersonalDashboardProps = {
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
   questionGroups?: QuestionGroupType[];
-  guides?: GuideFileType[];
+  guides?: OfficialGuideDocument[];
   videos?: VideoFileType[];
 };
 

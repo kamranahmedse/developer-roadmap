@@ -10,9 +10,9 @@ import { DashboardTabButton } from './DashboardTabButton';
 import { PersonalDashboard, type BuiltInRoadmap } from './PersonalDashboard';
 import { TeamDashboard } from './TeamDashboard';
 import type { QuestionGroupType } from '../../lib/question-group';
-import type { GuideFileType } from '../../lib/guide';
 import type { VideoFileType } from '../../lib/video';
 import { cn } from '../../lib/classname';
+import type { OfficialGuideDocument } from '../../queries/official-guide';
 
 type DashboardPageProps = {
   builtInRoleRoadmaps?: BuiltInRoadmap[];
@@ -20,7 +20,7 @@ type DashboardPageProps = {
   builtInBestPractices?: BuiltInRoadmap[];
   isTeamPage?: boolean;
   questionGroups?: QuestionGroupType[];
-  guides?: GuideFileType[];
+  guides?: OfficialGuideDocument[];
   videos?: VideoFileType[];
 };
 

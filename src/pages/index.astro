@@ -31,8 +31,9 @@ export const projectGroups = [
 
 const guides = await listOfficialGuides();
 const questionGuides = guides.filter(
-  (guide) => guide.roadmapId === 'questions' && !!guide?.authorId,
+  (guide) => guide.roadmapId === 'questions',
 );
+
 const videos = await getAllVideos();
 ---
 
