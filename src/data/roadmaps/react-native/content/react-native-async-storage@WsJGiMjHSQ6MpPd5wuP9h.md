@@ -5,4 +5,4 @@ React Native AsyncStorage is an unencrypted, asynchronous, persistent key-value 
 Visit the following resources to learn more:
 
 - [@official@Async Storage](https://reactnative.dev/docs/asyncstorage)
-- [@opensource@Async Storage - Github](https://github.com/react-native-async-storage/async-storage)
+- [@opensource@Async Storage - GitHub](https://github.com/react-native-async-storage/async-storage)
