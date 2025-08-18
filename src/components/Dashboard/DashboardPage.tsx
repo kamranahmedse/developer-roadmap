@@ -30,7 +30,6 @@ export function DashboardPage(props: DashboardPageProps) {
     builtInBestPractices,
     builtInSkillRoadmaps,
     isTeamPage = false,
-    questionGroups,
     guides,
     videos,
   } = props;
@@ -132,7 +131,6 @@ export function DashboardPage(props: DashboardPageProps) {
               builtInRoleRoadmaps={builtInRoleRoadmaps}
               builtInSkillRoadmaps={builtInSkillRoadmaps}
               builtInBestPractices={builtInBestPractices}
-              questionGroups={questionGroups}
               guides={guides}
               videos={videos}
             />
