@@ -38,7 +38,7 @@ export function GuideContent(props: GuideContentProps) {
           <h1 className="mb-3 text-4xl font-bold text-balance">
             {guide.title}
           </h1>
-          <p className="my-0 flex items-center justify-start text-sm text-gray-400">
+          <p className="my-0 mb-6 flex items-center justify-start text-sm text-gray-400">
             <a
               href={`/authors/${guide.author?.slug}`}
               className="inline-flex items-center font-medium underline-offset-2 hover:text-gray-600 hover:underline"

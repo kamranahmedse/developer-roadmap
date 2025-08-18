@@ -21,6 +21,10 @@ export interface OfficialGuideDocument {
     keywords?: string[];
   };
   tags?: string[];
+
+  questionCount?: number;
+  questionTopicCount?: number;
+
   viewCount?: number;
   createdAt: Date;
   updatedAt: Date;

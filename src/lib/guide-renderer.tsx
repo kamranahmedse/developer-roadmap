@@ -226,7 +226,17 @@ export class GuideRenderer {
   }
 
   private paragraph(node: JSONContent): JSX.Element {
-    return <p>{node.content ? this.content(node) : <>&nbsp;</>}</p>;
+    const isEmpty =
+      !node.content ||
+      node.content?.every(
+        (child) => child.type === 'text' && child.text === '',
+      );
+
+    if (isEmpty) {
+      return <></>;
+    }
+
+    return <p>{this.content(node)}</p>;
   }
 
   private text(node: JSONContent): JSX.Element {
