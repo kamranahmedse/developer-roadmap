@@ -1,9 +1,12 @@
 import { getAllBestPractices } from '../lib/best-practice';
-import { getAllGuides } from '../lib/guide';
 import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
 import { getAllQuestionGroups } from '../lib/question-group';
 import { getAllProjects } from '../lib/project';
+import {
+  listOfficialAuthors,
+  listOfficialGuides,
+} from '../queries/official-guide';
 
 // Add utility to fetch beginner roadmap file IDs
 function getBeginnerRoadmapIds() {
@@ -18,7 +21,8 @@ function getBeginnerRoadmapIds() {
 }
 
 export async function GET() {
-  const guides = await getAllGuides();
+  const guides = await listOfficialGuides();
+  const authors = await listOfficialAuthors();
   const videos = await getAllVideos();
   const questionGroups = await getAllQuestionGroups();
   const roadmaps = await getRoadmapsByTag('roadmap');
@@ -78,17 +82,22 @@ export async function GET() {
         shortTitle: questionGroup.frontmatter.briefTitle,
         group: 'Questions',
       })),
-      ...guides.map((guide) => ({
-        id: guide.id,
-        url: guide.frontmatter.excludedBySlug
-          ? guide.frontmatter.excludedBySlug
-          : `/guides/${guide.id}`,
-        title: guide.frontmatter.title,
-        description: guide.frontmatter.description,
-        authorId: guide.frontmatter.authorId,
-        shortTitle: guide.frontmatter.title,
-        group: 'Guides',
-      })),
+      ...guides.map((guide) => {
+        const author = authors.find((author) => author._id === guide.authorId);
+        const authorSlug = author?.slug || guide?.authorId;
+
+        return {
+          id: guide.slug,
+          url: guide?.roadmapId
+            ? `/${guide.roadmapId}/${guide.slug}`
+            : `/guides/${guide.slug}`,
+          title: guide.title,
+          description: guide.description,
+          authorId: authorSlug,
+          shortTitle: guide.title,
+          group: 'Guides',
+        };
+      }),
       ...videos.map((video) => ({
         id: video.id,
         url: `/videos/${video.id}`,
