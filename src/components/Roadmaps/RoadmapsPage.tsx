@@ -379,6 +379,11 @@ const groups: GroupType[] = [
     group: 'Machine Learning',
     roadmaps: [
       {
+        title: 'Machine Learning',
+        link: '/machine-learning',
+        type: 'role',
+      },
+      {
         title: 'AI and Data Scientist',
         link: '/ai-data-scientist',
         type: 'role',
