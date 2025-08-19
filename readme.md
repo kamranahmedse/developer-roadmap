@@ -48,6 +48,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Terraform Roadmap](https://roadmap.sh/terraform)
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [Data Engineer Roadmap](https://roadmap.sh/data-engineer)
+- [Machine Learning Roadmap](https://roadmap.sh/machine-learning)
 - [MLOps Roadmap](https://roadmap.sh/mlops)
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
 - [Engineering Manager Roadmap](https://roadmap.sh/engineering-manager)

@@ -470,10 +470,10 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       <div className="grid grid-cols-1 gap-5 bg-gray-50 px-4 py-5 sm:gap-16 sm:px-0 sm:py-16">
         <FeaturedGuideList
           heading="Guides"
-          guides={guides.slice(0, 7)}
+          guides={guides.slice(0, 15)}
           questions={guides
             .filter((guide) => guide.roadmapId === 'questions')
-            .slice(0, 7)}
+            .slice(0, 15)}
         />
         <FeaturedVideoList heading="Videos" videos={videos} />
       </div>
