@@ -1,29 +1,29 @@
 ---
 import {
-Blocks,
-Bot,
-Braces,
-CheckSquare,
-Coins,
-Component,
-FolderKanban,
-Gamepad2,
-GitBranch,
-Globe2,
-GraduationCap,
-Megaphone,
-MessageCircle,
-MessageCircleCode,
-PenSquare,
-Server,
-ServerCog,
-Shield,
-ShieldHalf,
-Smartphone,
-SquareKanban,
-UsersRound,
-Waypoints,
-Workflow,
+  Blocks,
+  Bot,
+  Braces,
+  CheckSquare,
+  Coins,
+  Component,
+  FolderKanban,
+  Gamepad2,
+  GitBranch,
+  Globe2,
+  GraduationCap,
+  Megaphone,
+  MessageCircle,
+  MessageCircleCode,
+  PenSquare,
+  Server,
+  ServerCog,
+  Shield,
+  ShieldHalf,
+  Smartphone,
+  SquareKanban,
+  UsersRound,
+  Waypoints,
+  Workflow,
 } from 'lucide-react';
 import ChangelogBanner from '../components/ChangelogBanner.astro';
 import { RoadmapCard } from '../components/GetStarted/RoadmapCard';
@@ -44,19 +44,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class='container'>
       <div class='max-w-3xl'>
         <Bot className='mb-4 size-8 text-black sm:size-12' />
-                  <h2 class='mb-3 text-2xl font-bold text-black sm:text-3xl'>
-            Get AI-Powered Learning Guidance
-          </h2>
+        <h2 class='mb-3 text-2xl font-bold text-black sm:text-3xl'>
+          Get AI-Powered Learning Guidance
+        </h2>
         <p class='mb-6 text-sm text-gray-600 sm:text-base'>
-          Our AI Tutor analyzes your experience, suggests relevant roadmaps,
-          and provides detailed answers to help you progress in your tech
-          career.
+          Our AI Tutor analyzes your experience, suggests relevant roadmaps, and
+          provides detailed answers to help you progress in your tech career.
         </p>
         <a
           href='/ai/chat'
-          class='inline-flex items-center gap-2 rounded-xl bg-black py-2 px-4 sm:px-6 sm:py-3 text-sm font-medium text-white transition-colors hover:opacity-80 sm:text-base'
+          class='inline-flex items-center gap-2 rounded-xl bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:opacity-80 sm:px-6 sm:py-3 sm:text-base'
         >
-          <MessageCircle className='size-3 sm:size-5 fill-current' />
+          <MessageCircle className='size-3 fill-current sm:size-5' />
           Chat with AI Tutor
         </a>
       </div>
@@ -383,6 +382,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       title='Data Analyst'
       link='/data-analyst'
       description='Learn all you need to know to become a Data Analyst.'
+    />
+
+    <RoadmapCard
+      icon={Bot}
+      title='Data Engineer'
+      link='/data-engineer'
+      description='Learn all you need to know to become a Data Engineer.'
     />
 
     <RoadmapCard
