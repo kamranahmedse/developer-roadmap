@@ -404,6 +404,11 @@ const groups: GroupType[] = [
         type: 'role',
       },
       {
+        title: 'Data Engineer',
+        link: '/data-engineer',
+        type: 'role',
+      },
+      {
         title: 'MLOps',
         link: '/mlops',
         type: 'role',
@@ -597,7 +602,7 @@ export function RoadmapsPage() {
         {isFilterOpen && <X size={13} className="mr-1" />}
         Categories
       </button>
-      <div className="container relative flex flex-col gap-4 sm:flex-row">
+      <div className="relative container flex flex-col gap-4 sm:flex-row">
         <div
           className={cn(
             'hidden w-full flex-col from-gray-100 sm:w-[180px] sm:border-r sm:bg-linear-to-l sm:pt-6',
@@ -635,10 +640,10 @@ export function RoadmapsPage() {
             </div>
           </div>
         </div>
-        <div className="flex grow flex-col gap-6 pb-20 pt-2 sm:pt-8">
+        <div className="flex grow flex-col gap-6 pt-2 pb-20 sm:pt-8">
           {visibleGroups.map((group) => (
             <div key={`${group.group}-${group.roadmaps.length}`}>
-              <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
+              <h2 className="mb-2 text-xs tracking-wide text-gray-400 uppercase">
                 {group.group}
               </h2>
 
