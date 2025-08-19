@@ -103,6 +103,22 @@ export async function getOfficialGuide(slug: string, roadmapId?: string) {
   }
 }
 
+export async function listOfficialAuthors() {
+  try {
+    const authors = await httpGet<OfficialAuthorDocument[]>(
+      `/v1-list-official-authors`,
+    );
+
+    return authors;
+  } catch (error) {
+    if (FetchError.isFetchError(error) && error.status === 404) {
+      return [];
+    }
+
+    throw error;
+  }
+}
+
 export function getOfficialGuideHref(slug: string, roadmapId?: string) {
   const isExternal = roadmapId && roadmapId !== 'questions';
   return isExternal
