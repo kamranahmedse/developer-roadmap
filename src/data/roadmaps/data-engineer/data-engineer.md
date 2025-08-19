@@ -1,7 +1,7 @@
 ---
 jsonUrl: '/jsons/roadmaps/data-engineer.json'
 pdfUrl: '/pdfs/roadmaps/data-engineer.pdf'
-order: 4
+order: 4.6
 renderer: "editor"
 briefTitle: 'Data Engineer'
 briefDescription: 'Step by step guide to becoming an Data Engineer in 2025'
