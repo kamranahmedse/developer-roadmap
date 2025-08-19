@@ -5,4 +5,4 @@ In CI/CD pattern, the build, test, and deployment of applications to Kubernetes 
 Learn more from the following resources:
 
 - [@article@Kubernetes CI/CD Pipelines – 8 Best Practices and Tools](https://spacelift.io/blog/kubernetes-ci-cd)
-- [@article@Octopus - Deploying to Kubernetes](https://octopus.com/use-case/kubernetes)
+- [@article@8 Kubernetes CI/CD tools every developer should know](https://octopus.com/devops/kubernetes-deployments/kubernetes-ci-cd-tools-for-developers/)
