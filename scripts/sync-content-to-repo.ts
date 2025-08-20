@@ -44,7 +44,6 @@ export interface OfficialRoadmapTopicContentDocument {
   _id?: string;
   roadmapSlug: string;
   nodeId: string;
-  title: string;
   description: string;
   resources: OfficialRoadmapTopicResource[];
   createdAt: Date;
