@@ -77,7 +77,10 @@ export async function httpCall<ResponseType = AppResponse>(
     // Logout user if token is invalid
     if (data?.status === 401) {
       removeAuthToken();
-      window.location.href = '/login';
+      if (typeof window !== 'undefined') {
+        window.location.href = '/login';
+      }
+
       return null as unknown as ApiReturn<ResponseType>;
     }
 

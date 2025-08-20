@@ -120,7 +120,7 @@ export async function getRoadmapsByTag(
 
   const roadmapFiles: RoadmapFileType[] = Object.values(roadmapFilesMap);
   const filteredRoadmaps = roadmapFiles
-    .filter((roadmapFile) => roadmapFile.frontmatter.tags.includes(tag))
+    .filter((roadmapFile) => roadmapFile.frontmatter.tags?.includes(tag))
     .map((roadmapFile) => ({
       ...roadmapFile,
       id: roadmapPathToId(roadmapFile.file),
