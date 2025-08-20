@@ -11,12 +11,10 @@ const roadmapSlug = args?.[0]?.replace('--roadmap-slug=', '');
 const secret = args?.[1]?.replace('--secret=', '');
 if (!secret) {
   throw new Error('Secret is required');
-  process.exit(1);
 }
 
 if (!roadmapSlug || roadmapSlug === '__default__') {
   throw new Error('Roadmap slug is required');
-  process.exit(1);
 }
 
 console.log(`🚀 Starting ${roadmapSlug}`);
@@ -54,7 +52,7 @@ export async function roadmapTopics(
   roadmapId: string,
   secret: string,
 ): Promise<OfficialRoadmapTopicContentDocument[]> {
-  const path = `https://api.chit.fun/v1-official-roadmap-topics/${roadmapId}?secret=${secret}`;
+  const path = `https://roadmap.sh/api/v1-list-official-roadmap-topics/${roadmapId}?secret=${secret}`;
   const response = await fetch(path);
   if (!response.ok) {
     throw new Error(`Failed to fetch roadmap topics: ${response.statusText}`);
