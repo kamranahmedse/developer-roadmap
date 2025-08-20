@@ -29,6 +29,7 @@
     "compress:images": "tsx ./scripts/compress-images.ts",
     "generate:roadmap-content-json": "tsx ./scripts/editor-roadmap-content-json.ts",
     "migrate:editor-roadmaps": "tsx ./scripts/migrate-editor-roadmap.ts",
+    "sync:content-to-repo": "tsx ./scripts/sync-content-to-repo.ts",
     "test:e2e": "playwright test"
   },
   "dependencies": {
