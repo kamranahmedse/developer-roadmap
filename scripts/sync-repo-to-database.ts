@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { slugify } from '../src/lib/slugger';
 import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
 import { parse } from 'node-html-parser';
 import { markdownToHtml } from '../src/lib/markdown';
@@ -192,9 +191,8 @@ try {
     const htmlStringWithoutLinks = rootHtml.toString();
     const description = htmlToMarkdown(htmlStringWithoutLinks);
 
-    const updatedDescription = `# ${title?.textContent}
-
-${description}`.trim();
+    const updatedDescription =
+      `# ${title?.textContent}\n\n${description}`.trim();
 
     const label = node?.data?.label as string;
     if (!label) {
@@ -205,7 +203,6 @@ ${description}`.trim();
     topics.push({
       roadmapSlug,
       nodeId,
-      title: label,
       description: updatedDescription,
       resources: listLinks,
     });
