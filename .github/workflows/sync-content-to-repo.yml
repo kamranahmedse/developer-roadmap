@@ -31,7 +31,7 @@ jobs:
           echo "Installing Dependencies"
           pnpm install
           echo "Syncing Content to Repo"
-          npm run sync:content-to-repo -- --roadmap-slug=${{ inputs.roadmap_slug }} --secret=${{ secrets.GITHUB_SYNC_SECRET }}
+          npm run sync:content-to-repo -- --roadmap-slug=${{ inputs.roadmap_slug }} --secret=${{ secrets.GH_SYNC_SECRET }}
 
       - name: Check for changes
         id: verify-changed-files
