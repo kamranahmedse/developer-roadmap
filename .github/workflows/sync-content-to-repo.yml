@@ -54,7 +54,7 @@ jobs:
             automated pr
           reviewers: arikchakma
           commit-message: "chore: sync content to repo"
-          title: "chore: sync content to repository"
+          title: "chore: sync content to repository - ${{ inputs.roadmap_slug }}"
           body: |
             ## Sync Content to Repo
             

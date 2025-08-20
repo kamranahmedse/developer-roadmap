@@ -5,19 +5,49 @@ import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
 import { parse } from 'node-html-parser';
 import { markdownToHtml } from '../src/lib/markdown';
 import { htmlToMarkdown } from '../src/lib/html';
-import {
-  allowedOfficialRoadmapTopicResourceType,
-  type AllowedOfficialRoadmapTopicResourceType,
-  type OfficialRoadmapTopicContentDocument,
-  type OfficialRoadmapTopicResource,
-} from './sync-content-to-repo';
+
+export const allowedOfficialRoadmapTopicResourceType = [
+  'roadmap',
+  'official',
+  'opensource',
+  'article',
+  'course',
+  'podcast',
+  'video',
+  'book',
+  'feed',
+] as const;
+export type AllowedOfficialRoadmapTopicResourceType =
+  (typeof allowedOfficialRoadmapTopicResourceType)[number];
+
+export type OfficialRoadmapTopicResource = {
+  _id?: string;
+  type: AllowedOfficialRoadmapTopicResourceType;
+  title: string;
+  url: string;
+};
+
+export interface OfficialRoadmapTopicContentDocument {
+  _id?: string;
+  roadmapSlug: string;
+  nodeId: string;
+  description: string;
+  resources: OfficialRoadmapTopicResource[];
+  createdAt: Date;
+  updatedAt: Date;
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const args = process.argv.slice(2);
-const allFiles = args?.[0]?.replace('--files=', '');
-const secret = args?.[1]?.replace('--secret=', '');
+const allFiles = args
+  .find((arg) => arg.startsWith('--files='))
+  ?.replace('--files=', '');
+const secret = args
+  .find((arg) => arg.startsWith('--secret='))
+  ?.replace('--secret=', '');
+
 if (!secret) {
   throw new Error('Secret is required');
 }
@@ -35,12 +65,16 @@ export async function fetchRoadmapJson(
   );
 
   if (!response.ok) {
-    throw new Error(`Failed to fetch roadmap json: ${response.statusText}`);
+    throw new Error(
+      `Failed to fetch roadmap json: ${response.statusText} for ${roadmapId}`,
+    );
   }
 
   const data = await response.json();
   if (data.error) {
-    throw new Error(`Failed to fetch roadmap json: ${data.error}`);
+    throw new Error(
+      `Failed to fetch roadmap json: ${data.error} for ${roadmapId}`,
+    );
   }
 
   roadmapJsonCache.set(roadmapId, data);
@@ -57,6 +91,9 @@ export async function syncContentToDatabase(
     `https://roadmap.sh/api/v1-sync-official-roadmap-topics`,
     {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify({
         topics,
         secret,
@@ -65,17 +102,26 @@ export async function syncContentToDatabase(
   );
 
   if (!response.ok) {
+    const error = await response.json();
     throw new Error(
-      `Failed to sync content to database: ${response.statusText}`,
+      `Failed to sync content to database: ${response.statusText} ${JSON.stringify(error, null, 2)}`,
     );
   }
 
   return response.json();
 }
 
-const files = allFiles.split(' ');
-console.log(`🚀 Starting ${files.length} files`);
+const files =
+  allFiles
+    ?.split(',')
+    .map((file) => file.trim())
+    .filter(Boolean) || [];
+if (files.length === 0) {
+  console.log('No files to sync');
+  process.exit(0);
+}
 
+console.log(`🚀 Starting ${files.length} files`);
 const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
 
 try {
@@ -123,6 +169,15 @@ try {
       'content',
       `${nodeSlug}.md`,
     );
+
+    const fileExists = await fs
+      .stat(filePath)
+      .then(() => true)
+      .catch(() => false);
+    if (!fileExists) {
+      console.log(`🚨 File not found: ${filePath}`);
+      continue;
+    }
 
     const content = await fs.readFile(filePath, 'utf8');
     const html = markdownToHtml(content, false);
