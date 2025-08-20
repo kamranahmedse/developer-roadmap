@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify } from '../src/lib/slugger';
+import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -68,6 +69,25 @@ export async function roadmapTopics(
   return data;
 }
 
+export async function fetchRoadmapJson(
+  roadmapId: string,
+): Promise<OfficialRoadmapDocument> {
+  const response = await fetch(
+    `https://roadmap.sh/api/v1-official-roadmap/${roadmapId}`,
+  );
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch roadmap json: ${response.statusText}`);
+  }
+
+  const data = await response.json();
+  if (data.error) {
+    throw new Error(`Failed to fetch roadmap json: ${data.error}`);
+  }
+
+  return data;
+}
+
 // Directory containing the roadmaps
 const ROADMAP_CONTENT_DIR = path.join(
   __dirname,
@@ -76,10 +96,25 @@ const ROADMAP_CONTENT_DIR = path.join(
 );
 
 const allTopics = await roadmapTopics(roadmapSlug, secret);
-for (const topic of allTopics) {
-  const { title, nodeId } = topic;
+const roadmap = await fetchRoadmapJson(roadmapSlug);
+const { nodes } = roadmap;
 
-  const topicSlug = `${slugify(title)}@${nodeId}.md`;
+for (const topic of allTopics) {
+  const { nodeId } = topic;
+
+  const node = nodes.find((node) => node.id === nodeId);
+  if (!node) {
+    console.error(`Node not found: ${nodeId}`);
+    continue;
+  }
+
+  const label = node?.data?.label as string;
+  if (!label) {
+    console.error(`Label not found: ${nodeId}`);
+    continue;
+  }
+
+  const topicSlug = `${slugify(label)}@${nodeId}.md`;
 
   const topicPath = path.join(ROADMAP_CONTENT_DIR, topicSlug);
   const topicDir = path.dirname(topicPath);
@@ -99,12 +134,10 @@ for (const topic of allTopics) {
 function prepareTopicContent(topic: OfficialRoadmapTopicContentDocument) {
   const { description, resources = [] } = topic;
 
-  const content = `${description}
-
-Visit the following resources to learn more:
-
-${resources.map((resource) => `- [@${resource.type}@${resource.title}](${resource.url})`).join('\n')}
-  `.trim();
+  let content = description;
+  if (resources.length > 0) {
+    content += `\n\nVisit the following resources to learn more:\n\n${resources.map((resource) => `- [@${resource.type}@${resource.title}](${resource.url})`).join('\n')}`;
+  }
 
   return content;
 }
