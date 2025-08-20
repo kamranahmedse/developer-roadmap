@@ -54,7 +54,7 @@ jobs:
             automated pr
           reviewers: arikchakma
           commit-message: "chore: sync content to repo"
-          title: "Sync Content to Repo - Automated"
+          title: "chore: sync content to repository"
           body: |
             ## Sync Content to Repo
             
