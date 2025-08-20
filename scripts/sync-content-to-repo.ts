@@ -115,7 +115,7 @@ for (const topic of allTopics) {
 
   const topicSlug = `${slugify(label)}@${nodeId}.md`;
 
-  const topicPath = path.join(ROADMAP_CONTENT_DIR, topicSlug);
+  const topicPath = path.join(ROADMAP_CONTENT_DIR, 'content', topicSlug);
   const topicDir = path.dirname(topicPath);
   const topicDirExists = await fs
     .stat(topicDir)
