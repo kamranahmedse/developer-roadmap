@@ -46,7 +46,7 @@ jobs:
           echo "$CHANGED_FILES"
           
           # Convert to space-separated list for the script
-          CHANGED_FILES_LIST=$(echo "$CHANGED_FILES" | tr '\n' ' ')
+          CHANGED_FILES_LIST=$(echo "$CHANGED_FILES" | tr '\n' ',')
           
           echo "has_changes=true" >> $GITHUB_OUTPUT
           echo "changed_files=$CHANGED_FILES_LIST" >> $GITHUB_OUTPUT
