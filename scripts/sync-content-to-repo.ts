@@ -19,6 +19,7 @@ if (!roadmapSlug || roadmapSlug === '__default__') {
 
 console.log(`🚀 Starting ${roadmapSlug}`);
 export const allowedOfficialRoadmapTopicResourceType = [
+  'roadmap',
   'official',
   'opensource',
   'article',
@@ -26,11 +27,12 @@ export const allowedOfficialRoadmapTopicResourceType = [
   'podcast',
   'video',
   'book',
+  'feed',
 ] as const;
 export type AllowedOfficialRoadmapTopicResourceType =
   (typeof allowedOfficialRoadmapTopicResourceType)[number];
 
-type OfficialRoadmapTopicResource = {
+export type OfficialRoadmapTopicResource = {
   _id?: string;
   type: AllowedOfficialRoadmapTopicResourceType;
   title: string;
@@ -97,8 +99,7 @@ for (const topic of allTopics) {
 function prepareTopicContent(topic: OfficialRoadmapTopicContentDocument) {
   const { description, resources = [] } = topic;
 
-  const content = `
-${description}
+  const content = `${description}
 
 Visit the following resources to learn more:
 

@@ -1,13 +1,14 @@
 import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
+import type { Node, Edge } from '@roadmapsh/editor';
 
 export interface OfficialRoadmapDocument {
   _id: string;
   title: string;
   description?: string;
   slug: string;
-  nodes: any[];
-  edges: any[];
+  nodes: Node[];
+  edges: Edge[];
 
   createdAt: Date;
   updatedAt: Date;

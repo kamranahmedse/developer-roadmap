@@ -28,14 +28,26 @@ jobs:
 
       - name: Install Dependencies and Sync Content
         run: |
+          echo "Installing Dependencies"
           pnpm install
-          npm run sync:content-to-repo --roadmap-slug=${{ inputs.roadmap_slug }} --secret=${{ secrets.SYNC_CONTENT_TO_REPO_SECRET }}
+          echo "Syncing Content to Repo"
+          npm run sync:content-to-repo -- --roadmap-slug=${{ inputs.roadmap_slug }} --secret=${{ secrets.TOPIC_CONTENT_SYNC_SECRET }}
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
       
       - name: Create PR
+        if: steps.verify-changed-files.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
           delete-branch: false
-          branch: "chore/sync-content-to-repo"
+          branch: "chore/sync-content-to-repo-${{ inputs.roadmap_slug }}"
           base: "master"
           labels: |
             dependencies
