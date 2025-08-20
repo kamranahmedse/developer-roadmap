@@ -4,9 +4,9 @@ pdfUrl: '/pdfs/roadmaps/data-engineer.pdf'
 order: 4.6
 renderer: "editor"
 briefTitle: 'Data Engineer'
-briefDescription: 'Step by step guide to becoming an Data Engineer in 2025'
+briefDescription: 'Step by step guide to becoming a Data Engineer in 2025'
 title: 'Data Engineer Roadmap'
-description: 'Step by step guide to becoming an Data Engineer in 2025'
+description: 'Step by step guide to becoming a Data Engineer in 2025'
 hasTopics: true
 isNew: true
 dimensions:
@@ -28,17 +28,17 @@ courses:
       title: 'Founder - roadmap.sh'
 schema:
   headline: 'Data Engineer Roadmap'
-  description: 'Learn how to become an Data Engineer with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to become a Data Engineer with this interactive step by step guide in 2025. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/data-engineer.png'
   datePublished: '2025-08-13'
   dateModified: '2025-08-13'
 seo:
   title: 'Data Engineer Roadmap'
-  description: 'Learn to become an Data Engineer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern data engineers.'
+  description: 'Learn to become a Data Engineer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern data engineers.'
   keywords:
     - 'data engineer roadmap 2025'
     - 'data engineering roadmap 2025'
-    - 'guide to becoming an data engineer'
+    - 'guide to becoming a data engineer'
     - 'easy data engineer roadmap'
     - 'data engineer'
     - 'data engineer roadmap'
