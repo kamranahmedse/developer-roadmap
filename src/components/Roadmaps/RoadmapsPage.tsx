@@ -409,6 +409,11 @@ const groups: GroupType[] = [
         type: 'role',
       },
       {
+        title: 'BI Analyst',
+        link: '/bi-analyst',
+        type: 'role',
+      },
+      {
         title: 'Data Engineer',
         link: '/data-engineer',
         type: 'role',

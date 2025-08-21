@@ -47,6 +47,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Linux Roadmap](https://roadmap.sh/linux)
 - [Terraform Roadmap](https://roadmap.sh/terraform)
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
+- [BI Analyst Roadmap](https://roadmap.sh/bi-analyst)
 - [Data Engineer Roadmap](https://roadmap.sh/data-engineer)
 - [Machine Learning Roadmap](https://roadmap.sh/machine-learning)
 - [MLOps Roadmap](https://roadmap.sh/mlops)
