@@ -55,26 +55,32 @@ if (isTopic) {
     `${topicPath}.md`,
   );
 
+  const nodeId = topicPath.split('@')?.[1];
+  if (!nodeId) {
+    Astro.response.status = 404;
+    Astro.response.statusText = 'Not found';
+    return Astro.rewrite('/404');
+  }
+
   const topic = await getOfficialRoadmapTopic({
     roadmapSlug: roadmapId,
-    nodeId: topicPath,
+    nodeId,
   });
 
-  // Check if file exists
-  if (!fs.existsSync(contentPath) || !topic) {
+  if (!topic) {
     Astro.response.status = 404;
     Astro.response.statusText = 'Not found';
 
     return Astro.rewrite('/404');
   }
 
+  const md = MarkdownIt();
+  htmlContent = await md.renderAsync(prepareOfficialRoadmapTopicContent(topic));
+
   const fileWithoutBasePath = contentPath.replace(
     /.+?\/src\/data/,
     '/src/data',
   );
-
-  const md = MarkdownIt();
-  htmlContent = await md.renderAsync(prepareOfficialRoadmapTopicContent(topic));
   gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
 } else {
   guide = await getOfficialGuide(topicId, roadmapId);

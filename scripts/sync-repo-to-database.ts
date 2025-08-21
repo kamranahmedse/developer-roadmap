@@ -5,37 +5,11 @@ import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
 import { parse } from 'node-html-parser';
 import { markdownToHtml } from '../src/lib/markdown';
 import { htmlToMarkdown } from '../src/lib/html';
-
-export const allowedOfficialRoadmapTopicResourceType = [
-  'roadmap',
-  'official',
-  'opensource',
-  'article',
-  'course',
-  'podcast',
-  'video',
-  'book',
-  'feed',
-] as const;
-export type AllowedOfficialRoadmapTopicResourceType =
-  (typeof allowedOfficialRoadmapTopicResourceType)[number];
-
-export type OfficialRoadmapTopicResource = {
-  _id?: string;
-  type: AllowedOfficialRoadmapTopicResourceType;
-  title: string;
-  url: string;
-};
-
-export interface OfficialRoadmapTopicContentDocument {
-  _id?: string;
-  roadmapSlug: string;
-  nodeId: string;
-  description: string;
-  resources: OfficialRoadmapTopicResource[];
-  createdAt: Date;
-  updatedAt: Date;
-}
+import {
+  allowedOfficialRoadmapTopicResourceType,
+  type AllowedOfficialRoadmapTopicResourceType,
+  type SyncToDatabaseTopicContent,
+} from '../src/queries/official-roadmap-topic';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -82,10 +56,7 @@ export async function fetchRoadmapJson(
 }
 
 export async function syncContentToDatabase(
-  topics: Omit<
-    OfficialRoadmapTopicContentDocument,
-    'createdAt' | 'updatedAt' | '_id'
-  >[],
+  topics: SyncToDatabaseTopicContent[],
 ) {
   const response = await fetch(
     `https://roadmap.sh/api/v1-sync-official-roadmap-topics`,
@@ -125,10 +96,7 @@ console.log(`🚀 Starting ${files.length} files`);
 const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
 
 try {
-  const topics: Omit<
-    OfficialRoadmapTopicContentDocument,
-    'createdAt' | 'updatedAt' | '_id'
-  >[] = [];
+  const topics: SyncToDatabaseTopicContent[] = [];
 
   for (const file of files) {
     const isContentFile = file.endsWith('.md') && file.includes('content/');
@@ -198,7 +166,7 @@ try {
       }
     });
 
-    const listLinks: Omit<OfficialRoadmapTopicResource, '_id'>[] =
+    const listLinks: SyncToDatabaseTopicContent['resources'] =
       ulWithLinks !== undefined
         ? Array.from(ulWithLinks.querySelectorAll('li > a'))
             .map((link) => {

@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify } from '../src/lib/slugger';
 import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
+import type { OfficialRoadmapTopicContentDocument } from '../src/queries/official-roadmap-topic';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -19,36 +20,6 @@ if (!roadmapSlug || roadmapSlug === '__default__') {
 }
 
 console.log(`🚀 Starting ${roadmapSlug}`);
-export const allowedOfficialRoadmapTopicResourceType = [
-  'roadmap',
-  'official',
-  'opensource',
-  'article',
-  'course',
-  'podcast',
-  'video',
-  'book',
-  'feed',
-] as const;
-export type AllowedOfficialRoadmapTopicResourceType =
-  (typeof allowedOfficialRoadmapTopicResourceType)[number];
-
-export type OfficialRoadmapTopicResource = {
-  _id?: string;
-  type: AllowedOfficialRoadmapTopicResourceType;
-  title: string;
-  url: string;
-};
-
-export interface OfficialRoadmapTopicContentDocument {
-  _id?: string;
-  roadmapSlug: string;
-  nodeId: string;
-  description: string;
-  resources: OfficialRoadmapTopicResource[];
-  createdAt: Date;
-  updatedAt: Date;
-}
 
 export async function roadmapTopics(
   roadmapId: string,
