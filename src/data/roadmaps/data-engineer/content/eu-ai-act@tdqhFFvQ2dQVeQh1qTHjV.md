@@ -6,7 +6,7 @@
 
 Visit the following resources to learn more:
 
+- [@official@The EU AI Act Explorer](https://artificialintelligenceact.eu/ai-act-explorer/)
 - [@article@AI Act - European Commission](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
-- [@article@The EU AI Act Explorer](https://artificialintelligenceact.eu/ai-act-explorer/)
 - [@article@Artificial Intelligence Act](https://en.wikipedia.org/wiki/Artificial_Intelligence_Act)
 - [@video@The EU AI Act Explained](https://www.youtube.com/watch?v=s_rxOnCt3HQ)
