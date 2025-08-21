@@ -1,7 +1,6 @@
 ---
 import fs from 'node:fs';
 import path from 'node:path';
-import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it-async';
 import { fileURLToPath } from 'node:url';
 import {
@@ -11,6 +10,10 @@ import {
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { GuideContent } from '../../components/Guide/GuideContent';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import {
+  getOfficialRoadmapTopic,
+  prepareOfficialRoadmapTopicContent,
+} from '../../queries/official-roadmap-topic';
 
 export const prerender = false;
 
@@ -52,31 +55,18 @@ if (isTopic) {
     `${topicPath}.md`,
   );
 
+  const topic = await getOfficialRoadmapTopic({
+    roadmapSlug: roadmapId,
+    nodeId: topicPath,
+  });
+
   // Check if file exists
-  if (!fs.existsSync(contentPath)) {
-    const indexFilePath = path.join(
-      projectRoot,
-      'src',
-      'data',
-      'roadmaps',
-      roadmapId,
-      'content',
-      `${topicPath}/index.md`,
-    );
+  if (!fs.existsSync(contentPath) || !topic) {
+    Astro.response.status = 404;
+    Astro.response.statusText = 'Not found';
 
-    if (!fs.existsSync(indexFilePath)) {
-      Astro.response.status = 404;
-      Astro.response.statusText = 'Not found';
-
-      return Astro.rewrite('/404');
-    }
-
-    contentPath = indexFilePath;
+    return Astro.rewrite('/404');
   }
-
-  // Read and parse the markdown file
-  const fileContent = fs.readFileSync(contentPath, 'utf-8');
-  const { content } = matter(fileContent);
 
   const fileWithoutBasePath = contentPath.replace(
     /.+?\/src\/data/,
@@ -84,9 +74,8 @@ if (isTopic) {
   );
 
   const md = MarkdownIt();
-
+  htmlContent = await md.renderAsync(prepareOfficialRoadmapTopicContent(topic));
   gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
-  htmlContent = await md.renderAsync(content);
 } else {
   guide = await getOfficialGuide(topicId, roadmapId);
   if (!guide) {
