@@ -679,7 +679,7 @@
     ]
   },
   "2UQ3AuGkDbT0-54l0rOGM": {
-    "title": "Ownsership Rules & Memory Safety",
+    "title": "Ownership Rules & Memory Safety",
     "description": "Rust's ownership has three key rules: each value has exactly one owner, only one owner exists at a time, and values are dropped when owners go out of scope. This prevents data races, ensures memory safety without garbage collection, and eliminates common bugs like use-after-free and memory leaks.\n\nVisit the following resources to learn more:",
     "links": [
       {
