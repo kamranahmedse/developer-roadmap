@@ -14,7 +14,7 @@ export const allowedOfficialRoadmapTopicResourceType = [
 export type AllowedOfficialRoadmapTopicResourceType =
   (typeof allowedOfficialRoadmapTopicResourceType)[number];
 
-type OfficialRoadmapTopicResource = {
+export type OfficialRoadmapTopicResource = {
   _id: string;
   type: AllowedOfficialRoadmapTopicResourceType;
   title: string;
@@ -34,6 +34,13 @@ export interface OfficialRoadmapTopicContentDocument {
 type GetOfficialRoadmapTopicOptions = {
   roadmapSlug: string;
   nodeId: string;
+};
+
+export type SyncToDatabaseTopicContent = Omit<
+  OfficialRoadmapTopicContentDocument,
+  'createdAt' | 'updatedAt' | '_id' | 'resources'
+> & {
+  resources: Omit<OfficialRoadmapTopicResource, '_id'>[];
 };
 
 export async function getOfficialRoadmapTopic(
