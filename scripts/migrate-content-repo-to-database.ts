@@ -57,8 +57,7 @@ export async function syncContentToDatabase(
   topics: SyncToDatabaseTopicContent[],
 ) {
   const response = await fetch(
-    // `https://roadmap.sh/api/v1-sync-official-roadmap-topics`,
-    `http://localhost:8080/v1-sync-official-roadmap-topics`,
+    `https://roadmap.sh/api/v1-sync-official-roadmap-topics`,
     {
       method: 'POST',
       headers: {
