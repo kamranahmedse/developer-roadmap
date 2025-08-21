@@ -51,7 +51,9 @@ jobs:
           base: "master"
           labels: |
             automated pr
-          reviewers: jcanalesluna
+          reviewers:
+            - jcanalesluna
+            - kamranahmedse
           commit-message: "chore: sync content to repo"
           title: "chore: sync content to repository - ${{ inputs.roadmap_slug }}"
           body: |
