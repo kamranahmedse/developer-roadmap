@@ -50,9 +50,8 @@ jobs:
           branch: "chore/sync-content-to-repo-${{ inputs.roadmap_slug }}"
           base: "master"
           labels: |
-            dependencies
             automated pr
-          reviewers: arikchakma
+          reviewers: jcanalesluna
           commit-message: "chore: sync content to repo"
           title: "chore: sync content to repository - ${{ inputs.roadmap_slug }}"
           body: |
