@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@The DispatcherServlet](https://docs.spring.io/spring-framework/docs/3.0.0.M4/spring-framework-reference/html/ch15s02.html)
 - [@article@DispatcherServlet and web.xml in Spring Boot](https://www.baeldung.com/spring-boot-dispatcherservlet-web-xml)
+- [@article@Spring Boot Dispatcher Servlet](https://medium.com/@myggona/spring-boot-dispatcher-servlet-705353e3496a)
