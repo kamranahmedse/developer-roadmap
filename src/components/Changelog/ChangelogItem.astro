@@ -39,7 +39,7 @@ const formattedDate = DateTime.fromISO(changelog.createdAt).toFormat(
     }
 
     <div
-      class='prose prose-sm prose-h2:mt-3 prose-h2:text-lg prose-h2:font-medium prose-p:mb-0 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-ul:my-0 prose-ul:rounded-lg prose-ul:bg-gray-100 prose-ul:px-4 prose-ul:py-4 prose-ul:pl-7 prose-img:mt-0 prose-img:rounded-lg [&>blockquote>p]:mt-0 [&>ul]:mt-3 [&>ul>li]:my-0 [&>ul>li]:mb-1'
+      class='prose prose-sm [&_li_p]:my-0 prose-h2:mt-3 prose-h2:text-lg prose-h2:font-medium prose-p:mb-0 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-ul:my-0 prose-ul:rounded-lg prose-ul:bg-gray-100 prose-ul:px-4 prose-ul:py-4 prose-ul:pl-7 prose-img:mt-0 prose-img:rounded-lg [&>blockquote>p]:mt-0 [&>ul]:mt-3 [&>ul>li]:my-0 [&>ul>li]:mb-1'
       set:html={changelog.description}
     />
   </div>
