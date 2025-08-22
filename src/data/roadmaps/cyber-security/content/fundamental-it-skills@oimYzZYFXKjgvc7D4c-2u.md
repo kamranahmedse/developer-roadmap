@@ -5,5 +5,5 @@ Fundamental IT skills form the backbone of cybersecurity proficiency and encompa
 Learn more from the following resources:
 
 - [@article@8 In-Demand IT Skills to Boost Your Resume in 2025](https://www.coursera.org/articles/key-it-skills-for-your-career)
-- [@article@Top 10 in Demand IT Skills](https://www.comptia.org/blog/top-it-skills-in-demand)
+- [@article@Top IT Skills in Demand](https://www.comptia.org/en/blog/top-it-skills-in-demand)
 - [@article@IT Skills: Definition and Examples](https://www.indeed.com/career-advice/finding-a-job/it-skills)
