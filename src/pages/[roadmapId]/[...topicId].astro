@@ -67,15 +67,14 @@ if (isTopic) {
     nodeId,
   });
 
-  if (!topic) {
-    Astro.response.status = 404;
-    Astro.response.statusText = 'Not found';
-
-    return Astro.rewrite('/404');
+  if (topic) {
+    const md = MarkdownIt();
+    htmlContent = await md.renderAsync(
+      prepareOfficialRoadmapTopicContent(topic),
+    );
+  } else {
+    htmlContent = '<h1>Not found</h1>';
   }
-
-  const md = MarkdownIt();
-  htmlContent = await md.renderAsync(prepareOfficialRoadmapTopicContent(topic));
 
   const fileWithoutBasePath = contentPath.replace(
     /.+?\/src\/data/,
