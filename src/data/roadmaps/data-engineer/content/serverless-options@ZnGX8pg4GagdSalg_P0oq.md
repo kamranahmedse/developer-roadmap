@@ -5,4 +5,4 @@ Serverless data storage involves using cloud provider services for databases and
 
 Visit the following resources to learn more:
 
-- [@official@What Is Serverless Computing?](https://www.ibm.com/think/topics/serverless)
+- [@article@What Is Serverless Computing?](https://www.ibm.com/think/topics/serverless)
