@@ -1434,7 +1434,7 @@
     "description": "Espresso is a native testing framework for Android to write reliable UI tests. Google released the Espresso framework in October 2013 and, as of release version 2.0, Espresso is part of the Android Support Repository. One of the important features in Espresso is that it automatically synchronizes your test actions with the user interface of your application. The framework also ensures that your activity is started before the test runs. It can also force a test to wait until all observer background activities have finished, which is sometimes a problem with other testing frameworks.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Espresso Code Samples on Github",
+        "title": "Espresso Code Samples on GitHub",
         "url": "https://github.com/android/testing-samples",
         "type": "opensource"
       },
@@ -1476,7 +1476,7 @@
     "description": "Appium is an open-source framework that allows QAs to conduct automated app testing on different platforms like Android, iOS, and Windows. It is developed and supported by Sauce Labs to automate native and hybrid mobile apps. It is a cross-platform mobile automation tool, which means that it allows the same test to be run on multiple platforms.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Appium example tests on Github",
+        "title": "Appium example tests on GitHub",
         "url": "https://github.com/appium/appium/tree/1.x/sample-code",
         "type": "opensource"
       },
@@ -2143,7 +2143,7 @@
     "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Github Roadmap",
+        "title": "Visit Dedicated GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },

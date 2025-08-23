@@ -660,7 +660,7 @@
     "description": "Git is a distributed version control system designed to handle projects of any size with speed and efficiency. Created by Linus Torvalds in 2005, Git tracks changes in source code during software development, allowing multiple developers to work together on non-linear development. It provides strong support for branching, merging, and distributed development workflows. Git maintains a complete history of all changes, enabling easy rollbacks and comparisons between versions. Its distributed nature means each developer has a full copy of the repository, allowing for offline work and backup. Git's speed, flexibility, and robust branching and merging capabilities have made it the most widely used version control system in software development, particularly for open-source projects.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Git & Github Roadmap",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -789,7 +789,7 @@
     "description": "GitHub has become a central hub for open-source projects and is widely used by developers, companies, and organizations for both private and public repositories. It was acquired by Microsoft in 2018 but continues to operate as a relatively independent entity. GitHub's popularity has made it an essential tool in modern software development workflows and a key platform for showcasing coding projects and contributing to open-source software.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Git & Github Roadmap",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -2058,7 +2058,7 @@
     "description": "CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams (AKA \"integration hell\").\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "CI/CID - Github",
+        "title": "CI/CID - GitHub",
         "url": "https://github.com/resources/articles/devops/ci-cd",
         "type": "article"
       },

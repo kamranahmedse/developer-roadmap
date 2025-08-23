@@ -882,6 +882,16 @@
         "title": "Result",
         "url": "https://doc.rust-lang.org/rust-by-example/error/result.html",
         "type": "article"
+      },
+      {
+        "title": "Error Handling in Rust - Andrew Gallant's Blog",
+        "url": "https://burntsushi.net/rust-error-handling",
+        "type": "article"
+      },
+      {
+        "title": "Using unwrap() in Rust is Okay - Andrew Gallant's Blog",
+        "url": "https://burntsushi.net/unwrap/",
+        "type": "article"
       }
     ]
   },
