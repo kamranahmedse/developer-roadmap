@@ -1,0 +1,752 @@
+{
+  "MEL6y3vwiqwAV6FQihF34": {
+    "title": "Introduction",
+    "description": "Machine learning is about creating computer programs that can learn from data. Instead of being explicitly programmed to perform a task, these programs improve their performance on a specific task as they are exposed to more data. This learning process allows them to make predictions or decisions without being directly told how to do so.",
+    "links": []
+  },
+  "GHO6lN3GTiIRH1P70IRaZ": {
+    "title": "ML Engineer vs AI Engineer",
+    "description": "An ML Engineer primarily concentrates on building, deploying, and maintaining machine learning models in production environments. An AI Engineer, on the other hand, typically has a broader scope, encompassing the design and development of entire AI systems, which may include components beyond just machine learning, such as natural language processing, computer vision, and robotics.",
+    "links": []
+  },
+  "BzZd-d5t63dY97SRSIb0J": {
+    "title": "Skills and Responsibilities",
+    "description": "Machine learning roles require a blend of technical expertise and practical abilities. These roles involve designing, developing, and deploying machine learning models to solve real-world problems. Key skills include proficiency in programming languages like Python, a strong understanding of statistical concepts, and experience with machine learning frameworks. Responsibilities often encompass data collection and preprocessing, model selection and training, performance evaluation, and continuous model improvement.",
+    "links": []
+  },
+  "FgzPlLUfGdlZPvPku0-Xl": {
+    "title": "What is an ML Engineer?",
+    "description": "An ML Engineer focuses on building, deploying, and maintaining machine learning systems in production. They bridge the gap between data science and software engineering, taking models developed by data scientists and making them scalable, reliable, and efficient for real-world applications. This involves tasks like data pipeline construction, model deployment, performance monitoring, and infrastructure management.",
+    "links": []
+  },
+  "83UDoO1vC0LjL-qpI0Jh-": {
+    "title": "Linear Algebra",
+    "description": "Linear algebra is a branch of mathematics that deals with vector spaces and linear transformations between those spaces. It involves concepts like vectors, matrices, and systems of linear equations, and provides tools for manipulating and solving problems involving these entities. Operations such as matrix multiplication, decomposition, and eigenvalue analysis are fundamental to this field.",
+    "links": []
+  },
+  "wHlEinHuRARp5OfSulpA-": {
+    "title": "Calculus",
+    "description": "",
+    "links": []
+  },
+  "jJukG4XxfFcID_VlQKqe-": {
+    "title": "Chain rule of derivation",
+    "description": "",
+    "links": []
+  },
+  "3BxbkrBp8veZj38zdwN8s": {
+    "title": "Gradient, Jacobian, Hessian",
+    "description": "",
+    "links": []
+  },
+  "GN6SnI7RXIeW8JeD-qORW": {
+    "title": "Derivatives, Partial Derivatives",
+    "description": "",
+    "links": []
+  },
+  "d7J8GEkut61NDGRzROJoP": {
+    "title": "Scalars, Vectors, Tensors",
+    "description": "",
+    "links": []
+  },
+  "yGs2h10gZcO4GMaWfI3uW": {
+    "title": "Singular Value Decomposition",
+    "description": "",
+    "links": []
+  },
+  "1IhaXJxNREq2HA1nT-lMM": {
+    "title": "Matrix & Matrix Operations",
+    "description": "A matrix is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns. Matrix operations are the rules and procedures for manipulating these matrices. These operations include addition, subtraction, multiplication, transposition (flipping rows and columns), and finding the inverse of a matrix, each with specific rules about the dimensions of the matrices involved.",
+    "links": []
+  },
+  "3p98Uwf8gyALDr-89lBEZ": {
+    "title": "Eigenvalues, Diagonalization",
+    "description": "",
+    "links": []
+  },
+  "XmnWnPE1sVXheuc-M_Ew7": {
+    "title": "Determinants, inverse of Matrix",
+    "description": "",
+    "links": []
+  },
+  "5DiaZkljhHAGPi9DkaH3b": {
+    "title": "Statistics",
+    "description": "",
+    "links": []
+  },
+  "p8q1Gtt9x19jw5_-YjAGh": {
+    "title": "Basics of Probability",
+    "description": "",
+    "links": []
+  },
+  "ZaoZ2XxicKuTDn4uxe52L": {
+    "title": "Descriptive Statistics",
+    "description": "",
+    "links": []
+  },
+  "P32Rmnln5NCFWz4LP0k05": {
+    "title": "Basic concepts",
+    "description": "",
+    "links": []
+  },
+  "WLlZE_vto-CYY5GLV_w7o": {
+    "title": "Types of Distribution",
+    "description": "",
+    "links": []
+  },
+  "P576TdYcbE6v3RpJntiKw": {
+    "title": "Random Variances, PDFs",
+    "description": "",
+    "links": []
+  },
+  "7o6g0wQxHH9i9MMCoDq2C": {
+    "title": "Bayes Theorem",
+    "description": "",
+    "links": []
+  },
+  "DUIrJwuYHlhJvZJT2acaY": {
+    "title": "Inferential Statistics",
+    "description": "",
+    "links": []
+  },
+  "MYZUJ1uHIaRd1Gb4ORzwG": {
+    "title": "Graphs & Charts",
+    "description": "",
+    "links": []
+  },
+  "tP0oBkjvJC9hrtARkgLon": {
+    "title": "Linear Algebra",
+    "description": "",
+    "links": []
+  },
+  "N_vLjBVdsGsoePtqlqh2w": {
+    "title": "Discrete Mathematics",
+    "description": "",
+    "links": []
+  },
+  "qDn1elMoPIBgQSCWiYkLI": {
+    "title": "Python",
+    "description": "",
+    "links": []
+  },
+  "hWA7RtuqltMTmHdcCnmES": {
+    "title": "Basic Syntax",
+    "description": "",
+    "links": []
+  },
+  "dEFLBGpiH6nbSMeR7ecaT": {
+    "title": "Variables and Data Types",
+    "description": "",
+    "links": []
+  },
+  "NP1kjSk0ujU0Gx-ajNHlR": {
+    "title": "Conditionals",
+    "description": "",
+    "links": []
+  },
+  "R9DQNc0AyAQ2HLpP4HOk6": {
+    "title": "Data Structures",
+    "description": "",
+    "links": []
+  },
+  "fNTb9y3zs1HPYclAmu_Wv": {
+    "title": "Exceptions",
+    "description": "",
+    "links": []
+  },
+  "-DJgS6l2qngfwurExlmmT": {
+    "title": "Functions, Builtin Functions",
+    "description": "",
+    "links": []
+  },
+  "Dvy7BnNzK55qbh_SgOk8m": {
+    "title": "Loops",
+    "description": "",
+    "links": []
+  },
+  "nN9BumBHi-c9HKFlgL2GH": {
+    "title": "Object Oriented Programming",
+    "description": "",
+    "links": []
+  },
+  "ybqwtlHG4HMm5lyUKW2SO": {
+    "title": "Essential libraries",
+    "description": "",
+    "links": []
+  },
+  "nKE9sO-f2fdMiuLu2xby1": {
+    "title": "Numpy",
+    "description": "",
+    "links": []
+  },
+  "PnOoShqB3z4LuUvp0Gh2e": {
+    "title": "Pandas",
+    "description": "",
+    "links": []
+  },
+  "OXbATvlhBXTQ1iRGwPUfb": {
+    "title": "Matplotlib",
+    "description": "",
+    "links": []
+  },
+  "VYVLUxhp3XxxknNr5V966": {
+    "title": "Seaborn",
+    "description": "",
+    "links": []
+  },
+  "-oRH7LgigHcfBkNF1xwxh": {
+    "title": "Data Sources",
+    "description": "",
+    "links": []
+  },
+  "VdMhrAi48V-JXw544YTKI": {
+    "title": "Databases (SQL, No-SQL)",
+    "description": "",
+    "links": []
+  },
+  "cxTriSZvrmXP4axKynIZW": {
+    "title": "Internet",
+    "description": "",
+    "links": []
+  },
+  "s-wUPMaagyRupT2RdfHks": {
+    "title": "APIs",
+    "description": "",
+    "links": []
+  },
+  "dJZqe47kzRqYIG-4AZTlz": {
+    "title": "Mobile Apps",
+    "description": "",
+    "links": []
+  },
+  "KeGCHoJRHp-mBX-P5to4Y": {
+    "title": "IoT",
+    "description": "",
+    "links": []
+  },
+  "U4LGIEE3igeE5Ed3EWzsu": {
+    "title": "Data Formats",
+    "description": "",
+    "links": []
+  },
+  "kagKVPUyLtx8UPAFjRvbN": {
+    "title": "JSON",
+    "description": "",
+    "links": []
+  },
+  "tq6WRwUpaCok9fX-0bY7m": {
+    "title": "Parquet",
+    "description": "",
+    "links": []
+  },
+  "MWfdLCb_w06A0jqwUJUxl": {
+    "title": "CSV",
+    "description": "",
+    "links": []
+  },
+  "K9Si7kJe946CcGWBGmDsZ": {
+    "title": "Excel",
+    "description": "",
+    "links": []
+  },
+  "qRHeaD2udDaItAxmiIiUg": {
+    "title": "Other Data Formats",
+    "description": "",
+    "links": []
+  },
+  "MdhfkuKWTDCE73hczzG3D": {
+    "title": "Preprocessing Techniques",
+    "description": "",
+    "links": []
+  },
+  "5v0jRBYrRuVXQC90IseRG": {
+    "title": "Data Cleaning",
+    "description": "",
+    "links": []
+  },
+  "y3-nWiDjlY6ZwqmxBUvhd": {
+    "title": "Dimensionality Reduction",
+    "description": "",
+    "links": []
+  },
+  "UmGdV94afOIbAL8MaxOWv": {
+    "title": "Feature Engineering",
+    "description": "",
+    "links": []
+  },
+  "cigwKoltemM0q-M5O50Is": {
+    "title": "Feature Selection",
+    "description": "",
+    "links": []
+  },
+  "iBkTNbk8Xz626F_a3Bo5J": {
+    "title": "Feature Scaling & Normalization",
+    "description": "",
+    "links": []
+  },
+  "Ns2zKn8BL_kTEI6O65pCp": {
+    "title": "Types of Machine Learning",
+    "description": "",
+    "links": []
+  },
+  "36ryjK5isV1MD4MgZP2Jn": {
+    "title": "Unsupervised Learning",
+    "description": "",
+    "links": []
+  },
+  "Yho0zf9F-ROhEnTxRMq_M": {
+    "title": "Semi-supervised Learning",
+    "description": "",
+    "links": []
+  },
+  "5MUwKGfSTKlam8KCG0A1U": {
+    "title": "Supervised Learning",
+    "description": "",
+    "links": []
+  },
+  "NC1A2SQVyc1n-KEf6yl-4": {
+    "title": "Reinforcement Learning",
+    "description": "",
+    "links": []
+  },
+  "lgO7luG7-R_FY5nwFjRE0": {
+    "title": "Self-supervised Learning",
+    "description": "",
+    "links": []
+  },
+  "rzhVFzl5H5MWtcvr8ayRk": {
+    "title": "What is Machine Learning?",
+    "description": "",
+    "links": []
+  },
+  "ajKU5CPlbn7BbWHEhUNaB": {
+    "title": "What is Supervised Learning?",
+    "description": "",
+    "links": []
+  },
+  "cffITx6oAcnvJlK1VLdi8": {
+    "title": "Classification",
+    "description": "",
+    "links": []
+  },
+  "aHOjajXwkDMOssqW1VGrm": {
+    "title": " Logistic Regression ",
+    "description": "",
+    "links": []
+  },
+  "_jS66rGAWecXH3zVF-5ds": {
+    "title": "Support Vector Machines",
+    "description": "",
+    "links": []
+  },
+  "x7vlCNAxfJzobj9HcTaJy": {
+    "title": "K-Nearest Neighbors (KNN)",
+    "description": "",
+    "links": []
+  },
+  "JuTTbL_pm1ltGvhUsIzQd": {
+    "title": "Gradient Boosting Machines",
+    "description": "",
+    "links": []
+  },
+  "arlmRF5pYglsbHb-HR-2x": {
+    "title": "Decision Trees, Random Forest",
+    "description": "",
+    "links": []
+  },
+  "gKu6tnpTO2PhDDMYp2u7F": {
+    "title": "Regression",
+    "description": "",
+    "links": []
+  },
+  "xGO1X9aZRgKcgzi6r1xq8": {
+    "title": "Linear Regression",
+    "description": "",
+    "links": []
+  },
+  "hfr2MU8QkVt9KhVi1Okpv": {
+    "title": "Polynomial Regression",
+    "description": "",
+    "links": []
+  },
+  "9oWdnQd-vwVJi62JQLgJ5": {
+    "title": "What is Unsupervised Learning?",
+    "description": "",
+    "links": []
+  },
+  "CBSGvGPoI53p7BezXNm6M": {
+    "title": "Clustering",
+    "description": "",
+    "links": []
+  },
+  "vQI-4uFQJ6694nm1SCpDR": {
+    "title": "Dimensionality Reduction",
+    "description": "",
+    "links": []
+  },
+  "BzUunjJrUMlh6K1NOOD87": {
+    "title": "Overlapping",
+    "description": "",
+    "links": []
+  },
+  "jJ8cXfHV2LG5PJGZRTHxB": {
+    "title": "Hierarchical",
+    "description": "",
+    "links": []
+  },
+  "eErzKbR8sRNlrYcwNSRSh": {
+    "title": "Exclusive",
+    "description": "",
+    "links": []
+  },
+  "VrLaUipVKWvwnFF0ZbIlo": {
+    "title": "Probabilistic",
+    "description": "",
+    "links": []
+  },
+  "owSUO9Ut9sggd1OiWr3O7": {
+    "title": "Autoencoders",
+    "description": "",
+    "links": []
+  },
+  "K-x_L3z8JTSHwtTeHm4EG": {
+    "title": "Principal Component Analysis ",
+    "description": "",
+    "links": []
+  },
+  "EtU_9MOklVBvnvyg30Yfx": {
+    "title": "What is Reinforcement Learning?",
+    "description": "",
+    "links": []
+  },
+  "PZ-WxKGTcWTrXmYI_inD_": {
+    "title": "Policy Gradient",
+    "description": "",
+    "links": []
+  },
+  "4Vy6lW9vF_SWwbKLU0qno": {
+    "title": "Actor-Critic Methods",
+    "description": "",
+    "links": []
+  },
+  "9o-ZT9oZIE3hCXD6eWZI0": {
+    "title": "Deep-Q Networks",
+    "description": "",
+    "links": []
+  },
+  "wxq5dkrpgvs3axmLmeHCk": {
+    "title": "Q-Learning",
+    "description": "",
+    "links": []
+  },
+  "99TI95HVGrXIYr-PIDxhC": {
+    "title": "What is Model Evaluation?",
+    "description": "",
+    "links": []
+  },
+  "5dKl6SUQhOsZfUtVR5hzw": {
+    "title": "Metrics to Evaluate",
+    "description": "",
+    "links": []
+  },
+  "3wib9UH0_OLhKjqKoZEMv": {
+    "title": "Accuracy",
+    "description": "",
+    "links": []
+  },
+  "mja35tndhAT5z_ysv-hDe": {
+    "title": "Precision",
+    "description": "",
+    "links": []
+  },
+  "DH33Na9zz_WGmbD-Dxvq1": {
+    "title": "Recall",
+    "description": "",
+    "links": []
+  },
+  "FdNY8QUbPPpeHFgD8TTaD": {
+    "title": "F1-Score",
+    "description": "",
+    "links": []
+  },
+  "anEGWHVpcp75e3jQrj_LZ": {
+    "title": "ROC-AUC",
+    "description": "",
+    "links": []
+  },
+  "7fOp3t283GeOn6Tf4kEuN": {
+    "title": "Log Loss",
+    "description": "",
+    "links": []
+  },
+  "oyL0M2OP4NTNbIO3zq-Hz": {
+    "title": "Confusion Matrix",
+    "description": "",
+    "links": []
+  },
+  "LWLqa61GK5ukYzHpjinYi": {
+    "title": "Forward propagation",
+    "description": "",
+    "links": []
+  },
+  "0meihv22e11GwqnRdSJ9g": {
+    "title": "Back Propagation",
+    "description": "",
+    "links": []
+  },
+  "8425N_E43Dv5mcmEcXRIa": {
+    "title": "Perceptron, Multi-layer Perceptrons",
+    "description": "",
+    "links": []
+  },
+  "RXTci1N6i6D9HqTbsLYIy": {
+    "title": "Activation Functions",
+    "description": "",
+    "links": []
+  },
+  "4dxZmLg0UEaaVEORupOOC": {
+    "title": "Neural Network (NN) Basics",
+    "description": "",
+    "links": []
+  },
+  "KcfFjpxFTFxI6HR6hBPrl": {
+    "title": "Loss Functions",
+    "description": "",
+    "links": []
+  },
+  "ZVbnAF9I1r8qWFFYG6nXv": {
+    "title": "Scikit-learn",
+    "description": "",
+    "links": []
+  },
+  "1aX_vO5zxfTV8_kUIFHkR": {
+    "title": "Ridge",
+    "description": "",
+    "links": []
+  },
+  "EXogp25SPW1bBfb1gRDAe": {
+    "title": "Lasso",
+    "description": "",
+    "links": []
+  },
+  "0hi0LdCtj9Paimgfc-l1O": {
+    "title": "Validation Techniques",
+    "description": "",
+    "links": []
+  },
+  "GKMhIXEuSKdW75-24Zopb": {
+    "title": "LOOCV",
+    "description": "",
+    "links": []
+  },
+  "vRS7DW2WUaXiHk9oJgg3z": {
+    "title": "K-Fold Cross Validation",
+    "description": "",
+    "links": []
+  },
+  "_Z2miSW4PwILMRtBFajBn": {
+    "title": "Deep Learning Architectures",
+    "description": "",
+    "links": []
+  },
+  "BtO2wH7YYqE25HShI6sd9": {
+    "title": "Convolutional Neural Network",
+    "description": "",
+    "links": []
+  },
+  "I-GEE7PvpQmhQSfZmxqwA": {
+    "title": "Pooling",
+    "description": "",
+    "links": []
+  },
+  "a2PGTDnXKp759vFZzkjSF": {
+    "title": "Padding",
+    "description": "",
+    "links": []
+  },
+  "MtoYStcZBduLSbjRuPjq0": {
+    "title": "Convolution",
+    "description": "",
+    "links": []
+  },
+  "YWxSI45e5K_4YOrvmh6LV": {
+    "title": "Strides",
+    "description": "",
+    "links": []
+  },
+  "gCGHtxqD4V_Ite_AXMspf": {
+    "title": "Applications of CNNs",
+    "description": "",
+    "links": []
+  },
+  "E4k6WgNXdnNoApR675VKb": {
+    "title": "Image Classification",
+    "description": "",
+    "links": []
+  },
+  "iSX9YExs1gS4L2CBQux5w": {
+    "title": "Image Segmentation",
+    "description": "",
+    "links": []
+  },
+  "jPvZdgye7cBf0bPMVGf7a": {
+    "title": "Image & Video Recognition",
+    "description": "",
+    "links": []
+  },
+  "_eKuBhCCwUHnEGwHNQY-g": {
+    "title": "Recommendation Systems",
+    "description": "",
+    "links": []
+  },
+  "H0cscBaExZPNZuFubBUv7": {
+    "title": "Recurrent Neural Networks",
+    "description": "",
+    "links": []
+  },
+  "LpggrF1MMvAxtO9EJe3wY": {
+    "title": "RNN",
+    "description": "",
+    "links": []
+  },
+  "ZWDSLqxmfg3aPBZFH479q": {
+    "title": "GRU",
+    "description": "",
+    "links": []
+  },
+  "LdUwTWfCIcowwC-e6q3ac": {
+    "title": "LSMT",
+    "description": "",
+    "links": []
+  },
+  "-tzeA13f2jYDm4aO5JciT": {
+    "title": "Attention Mechanisms",
+    "description": "",
+    "links": []
+  },
+  "kvf2CUKBe4qSbZla4Brh3": {
+    "title": "Autoencoders",
+    "description": "",
+    "links": []
+  },
+  "rDIg16eb6B6um1P8uMy51": {
+    "title": "Transformers",
+    "description": "",
+    "links": []
+  },
+  "J1aGPkZqDZfUwpVmC88AL": {
+    "title": "Multi-head Attention",
+    "description": "",
+    "links": []
+  },
+  "oTKC1o1OOnPiTh60a8yVc": {
+    "title": "Self-Attention",
+    "description": "",
+    "links": []
+  },
+  "IR0wVIcu1MxOOBiLBnn8S": {
+    "title": "Generative Adversarial Networks",
+    "description": "",
+    "links": []
+  },
+  "JVXe2QDQaqiJYPupIMhWe": {
+    "title": "Natural Language Processing",
+    "description": "",
+    "links": []
+  },
+  "QbftToskhtBlTz1jyiRkb": {
+    "title": "Tokenization",
+    "description": "",
+    "links": []
+  },
+  "pP0VeUSK9CDodgz-BQmrP": {
+    "title": "Lemmatization",
+    "description": "",
+    "links": []
+  },
+  "UO1GEUe8e22uRB6DAxfpe": {
+    "title": "Stemming",
+    "description": "",
+    "links": []
+  },
+  "CaHbAXDIJQXcQ9DZqziod": {
+    "title": "Embeddings",
+    "description": "",
+    "links": []
+  },
+  "sChxcuQ2OruKVx8P4wAK_": {
+    "title": "Attention Models",
+    "description": "",
+    "links": []
+  },
+  "Tv3sZvus76dmu0X9AqCIU": {
+    "title": "Explainable AI",
+    "description": "",
+    "links": []
+  },
+  "5xxAg18h74pDAUPy6P8NQ": {
+    "title": "Train - Test Data",
+    "description": "",
+    "links": []
+  },
+  "-W2uAccH7Y2XIwhfl9mDF": {
+    "title": "Data Preparation",
+    "description": "",
+    "links": []
+  },
+  "bIhGv4886V4RWJD3tX0a0": {
+    "title": "Data Loading",
+    "description": "",
+    "links": []
+  },
+  "m4vmnxRMBf7zwNnwrMEnk": {
+    "title": "Tuning",
+    "description": "",
+    "links": []
+  },
+  "vBnqnIh_xSn0OuY9oQ5e-": {
+    "title": "Prediction",
+    "description": "",
+    "links": []
+  },
+  "Ddhph9saFgfMi-uUFGK75": {
+    "title": "Model Selection",
+    "description": "",
+    "links": []
+  },
+  "A_Kx3pEj0jpnLJzdOpcQ9": {
+    "title": "Deep Learning Libraries",
+    "description": "",
+    "links": []
+  },
+  "Ru8_xMyFxye1hyzCUYvnj": {
+    "title": "TensorFlow",
+    "description": "",
+    "links": []
+  },
+  "zoXnXI4Wf5sxddHqYwQjP": {
+    "title": "Keras",
+    "description": "",
+    "links": []
+  },
+  "7RSW-Pypf3QpZp4O21AGl": {
+    "title": "PyTorch",
+    "description": "",
+    "links": []
+  },
+  "yKtRmgwrJ75VVz7_txZ-S": {
+    "title": "Scikit-learn",
+    "description": "",
+    "links": []
+  },
+  "0-6BV-MggAyD7g3JH45B7": {
+    "title": "ElasticNet Regularization",
+    "description": "",
+    "links": []
+  },
+  "vmERbhRIevLLNc7Ny2pWp": {
+    "title": "Why is it important?",
+    "description": "",
+    "links": []
+  }
+}

@@ -500,7 +500,7 @@
     "description": "Repo hosting services, like GitHub, GitLab, and Bitbucket, are platforms for storing, managing, and collaborating on software projects using version control systems, mainly Git. They facilitate teamwork, code sharing, and project tracking in software development.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Git & Github Roadmap",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -531,7 +531,7 @@
     "description": "Version Control Systems (VCS) like Git, Subversion, and Mercurial track code changes, enabling multiple developers to collaborate by maintaining a history of modifications. Git is popular for its distributed model and branching. VCS features include branching for parallel work, merging changes, reverting to past states, remote repositories, pull requests, and code reviews. They also offer backup, recovery, conflict resolution, and tagging. VCS is crucial in modern software development for productivity, code quality, and collaboration.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Git & Github Roadmap",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -557,7 +557,7 @@
     "description": "Git is a tool for tracking code changes in software projects. It lets many developers work together by keeping a history of all changes. Git is great for branching (working on different features at once) and merging (combining changes). Everyone has a full copy of the project, so they can work offline. Git is fast, flexible, and the most popular version control system, especially for open-source projects.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Git & Github Roadmap",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -619,7 +619,7 @@
     "description": "GitHub is a popular website for hosting Git projects. It's a key place for open-source software and is used by developers and companies for both public and private code. Microsoft bought GitHub in 2018. It's a vital tool for modern software development, showing off projects, and contributing to open-source.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Git & Github Roadmap",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
