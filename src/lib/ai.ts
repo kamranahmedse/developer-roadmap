@@ -395,6 +395,14 @@ export async function fetchWithAuthHandling(
     if (!response.ok) {
       const data = await response.json();
       if (data?.errors) {
+        if (data?.type && data?.type === 'ai_tutor_limit_exceeded') {
+          window?.fireEvent?.({
+            action: 'tutor_credit_limit',
+            category: 'ai_tutor',
+            label: 'Tutor Credit Limit Exceeded',
+          });
+        }
+
         throw new FetchError(response.status, data.message);
       } else {
         throw new Error('An unexpected error occurred');

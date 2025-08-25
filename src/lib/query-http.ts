@@ -86,6 +86,14 @@ export async function httpCall<ResponseType = AppResponse>(
 
     if (!response.ok) {
       if (data.errors) {
+        if (data?.type && data?.type === 'ai_tutor_limit_exceeded') {
+          window?.fireEvent?.({
+            action: 'tutor_credit_limit',
+            category: 'ai_tutor',
+            label: 'Tutor Credit Limit Exceeded',
+          });
+        }
+
         throw new FetchError(response?.status, data.message);
       } else if (data.message) {
         throw new FetchError(response?.status, data.message);
