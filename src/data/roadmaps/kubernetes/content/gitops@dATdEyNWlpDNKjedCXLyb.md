@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Using GitOps with a Kubernetes cluster](https://docs.gitlab.com/ee/user/clusters/agent/gitops.html)
 - [@video@DevOps and GitOps for Kubernetes](https://www.youtube.com/watch?v=PFLimPh5-wo)
 - [@feed@Explore top posts about GitOps](https://app.daily.dev/tags/gitops?ref=roadmapsh)
+- [@video@Deploy Microservices Application: Gitlab and ArgoCD Deployment in Docker and Kubernetes](https://www.youtube.com/watch?v=i2SS9a6BrT4)
