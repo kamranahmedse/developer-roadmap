@@ -5,4 +5,4 @@
 Learn more from the following resources:
 
 - [@article@What Is a Data Warehouse?](https://www.oracle.com/database/what-is-a-data-warehouse/)
-- [@video@@hat is a Data Warehouse?](https://www.youtube.com/watch?v=k4tK2ttdSDg)
+- [@video@What is a Data Warehouse?](https://www.youtube.com/watch?v=k4tK2ttdSDg)
