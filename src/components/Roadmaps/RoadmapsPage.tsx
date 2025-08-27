@@ -152,6 +152,12 @@ const groups: GroupType[] = [
         otherGroups: ['Web Development'],
       },
       {
+        title: 'Next.js',
+        link: '/nextjs',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+      {
         title: 'Spring Boot',
         link: '/spring-boot',
         type: 'skill',
