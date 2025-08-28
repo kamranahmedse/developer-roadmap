@@ -75,7 +75,6 @@ const { response: userCounts } =
   resourceType='roadmap'
 >
   <div class='bg-gray-50'>
-    <!-- // TODO: get courses count -->
     <RoadmapHeader
       title={title}
       description={description}
@@ -84,7 +83,7 @@ const { response: userCounts } =
       isForkable={true}
       activeTab='projects'
       projectCount={projects.length}
-      coursesCount={0}
+      coursesCount={roadmapData.courses?.length || 0}
       hasAIChat={true}
     />
 
