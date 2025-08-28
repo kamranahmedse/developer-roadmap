@@ -1,4 +1,4 @@
-# Github Actions
+# GitHub Actions
 
 GitHub Actions is a powerful and flexible automation platform that enables developers to create custom workflows for their software development lifecycle (SDLC) directly in their GitHub repository. It allows developers to automate various tasks, such as building, testing, and deploying code, directly from their GitHub repository.
 

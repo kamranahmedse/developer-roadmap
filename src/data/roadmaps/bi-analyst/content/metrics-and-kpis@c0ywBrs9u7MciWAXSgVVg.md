@@ -1,0 +1,3 @@
+# Metrics and KPIs
+
+Metrics are quantifiable measurements used to track and assess the status of a specific business process. Key Performance Indicators (KPIs) are a subset of metrics that are critical to the success of an organization and are used to measure progress toward strategic goals. For example, website traffic is a metric, while the conversion rate of website visitors into paying customers is a KPI. Another example is that the number of customer service calls is a metric, while the average resolution time for those calls is a KPI.

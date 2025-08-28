@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user.ts';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname.ts';
-import type { GuideFileType } from '../../lib/guide';
 import { httpGet } from '../../lib/http';
 import type { QuestionGroupType } from '../../lib/question-group';
 import type { AllowedRoadmapRenderer } from '../../lib/roadmap.ts';
@@ -21,6 +20,7 @@ import type { ProjectStatusDocument } from '../Projects/ListProjectSolutions';
 import type { UserProgress } from '../TeamProgress/TeamProgressPage';
 import { useIsPaidUser } from '../../queries/billing.ts';
 import { UpgradeAccountModal } from '../Billing/UpgradeAccountModal.tsx';
+import type { OfficialGuideDocument } from '../../queries/official-guide.ts';
 
 const projectGroups = [
   {
@@ -66,7 +66,7 @@ type PersonalDashboardProps = {
   builtInSkillRoadmaps?: BuiltInRoadmap[];
   builtInBestPractices?: BuiltInRoadmap[];
   questionGroups?: QuestionGroupType[];
-  guides?: GuideFileType[];
+  guides?: OfficialGuideDocument[];
   videos?: VideoFileType[];
 };
 
@@ -193,7 +193,6 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
     builtInRoleRoadmaps = [],
     builtInBestPractices = [],
     builtInSkillRoadmaps = [],
-    questionGroups = [],
     guides = [],
     videos = [],
   } = props;
@@ -466,40 +465,15 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
             </div>
           </div>
         </div>
-
-        <div className="relative mt-12 border-t border-t-[#1e293c] pt-12">
-          <div className="container">
-            <h2 className="text-md font-regular absolute -top-[17px] left-4 flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2">
-              Questions
-            </h2>
-
-            <div className="grid grid-cols-1 gap-3 px-2 sm:grid-cols-2 sm:px-0 lg:grid-cols-3">
-              {questionGroups.map((questionGroup) => {
-                return (
-                  <HeroRoadmap
-                    percentageDone={0}
-                    key={questionGroup.id}
-                    resourceId={questionGroup.id}
-                    resourceType="roadmap"
-                    resourceTitle={questionGroup.frontmatter.briefTitle}
-                    url={`/questions/${questionGroup.id}`}
-                    allowFavorite={false}
-                    isNew={questionGroup.frontmatter.isNew}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div>
       </div>
 
       <div className="grid grid-cols-1 gap-5 bg-gray-50 px-4 py-5 sm:gap-16 sm:px-0 sm:py-16">
         <FeaturedGuideList
           heading="Guides"
-          guides={guides}
-          questions={questionGroups
-            .filter((questionGroup) => questionGroup.frontmatter.authorId)
-            .slice(0, 7)}
+          guides={guides.slice(0, 15)}
+          questions={guides
+            .filter((guide) => guide.roadmapId === 'questions')
+            .slice(0, 15)}
         />
         <FeaturedVideoList heading="Videos" videos={videos} />
       </div>

@@ -4,14 +4,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllBestPractices } from '../lib/best-practice';
 import { getAllQuestionGroups } from '../lib/question-group';
 import { getRoadmapsByTag } from '../lib/roadmap';
-import { getAllGuides } from '../lib/guide';
 import { getAllVideos } from '../lib/video';
+import { listOfficialGuides } from '../queries/official-guide';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
 const bestPractices = await getAllBestPractices();
 const questionGroups = await getAllQuestionGroups();
-const guides = await getAllGuides();
+const guides = await listOfficialGuides();
 const videos = await getAllVideos();
 
 const enrichedRoleRoadmaps = roleRoadmaps
@@ -70,8 +70,8 @@ const enrichedBestPractices = bestPractices.map((bestPractice) => {
     builtInSkillRoadmaps={enrichedSkillRoadmaps}
     builtInBestPractices={enrichedBestPractices}
     questionGroups={questionGroups}
-    guides={guides.slice(0, 7)}
-    videos={videos.slice(0, 7)}
+    guides={guides.slice(0, 10)}
+    videos={videos.slice(0, 10)}
     client:load
   />
   <div slot='open-source-banner'></div>

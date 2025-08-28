@@ -30,4 +30,5 @@ console.log(courseNumber ); // code won't run
 
 } 
 
-strictExample(); // ReferenceError 
+strictExample(); // ReferenceError
+``` 

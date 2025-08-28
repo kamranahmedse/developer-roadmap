@@ -1,22 +1,18 @@
-import type { GuideFileType } from '../../lib/guide';
-import type { QuestionGroupType } from '../../lib/question-group';
+import type { OfficialGuideDocument } from '../../queries/official-guide';
 import { GuideListItem } from './GuideListItem';
 
 export interface FeaturedGuidesProps {
   heading: string;
-  guides: GuideFileType[];
-  questions: QuestionGroupType[];
+  guides: OfficialGuideDocument[];
+  questions: OfficialGuideDocument[];
 }
 
 export function FeaturedGuideList(props: FeaturedGuidesProps) {
   const { heading, guides, questions = [] } = props;
 
-  const sortedGuides: (QuestionGroupType | GuideFileType)[] = [
-    ...guides,
-    ...questions,
-  ].sort((a, b) => {
-    const aDate = new Date(a.frontmatter.date as string);
-    const bDate = new Date(b.frontmatter.date as string);
+  const sortedGuides = [...guides, ...questions].sort((a, b) => {
+    const aDate = new Date(a.publishedAt ?? new Date());
+    const bDate = new Date(b.publishedAt ?? new Date());
 
     return bDate.getTime() - aDate.getTime();
   });
@@ -27,7 +23,7 @@ export function FeaturedGuideList(props: FeaturedGuidesProps) {
 
       <div className="mt-3 sm:my-5">
         {sortedGuides.map((guide) => (
-          <GuideListItem key={guide.id} guide={guide} />
+          <GuideListItem key={guide._id} guide={guide} />
         ))}
       </div>
 
@@ -48,4 +44,4 @@ export function FeaturedGuideList(props: FeaturedGuidesProps) {
       </div>
     </div>
   );
-} 
+}

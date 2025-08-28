@@ -43,15 +43,19 @@ export async function httpCall<ResponseType = AppResponse>(
     ? url
     : `${import.meta.env.PUBLIC_API_URL}${url}`;
   try {
-    const fingerprintPromise = await fp.load();
-    const fingerprint = await fingerprintPromise.get();
+    let visitorId = '';
+    if (typeof window !== 'undefined') {
+      const fingerprintPromise = await fp.load();
+      const fingerprint = await fingerprintPromise.get();
+      visitorId = fingerprint.visitorId;
+    }
 
     const isMultiPartFormData = options?.body instanceof FormData;
 
     const headers = new Headers({
       Accept: 'application/json',
       Authorization: `Bearer ${Cookies.get(TOKEN_COOKIE_NAME)}`,
-      fp: fingerprint.visitorId,
+      ...(visitorId ? { fp: visitorId } : {}),
       ...(options?.headers ?? {}),
     });
 
@@ -73,12 +77,23 @@ export async function httpCall<ResponseType = AppResponse>(
     // Logout user if token is invalid
     if (data?.status === 401) {
       removeAuthToken();
-      window.location.href = '/login';
+      if (typeof window !== 'undefined') {
+        window.location.href = '/login';
+      }
+
       return null as unknown as ApiReturn<ResponseType>;
     }
 
     if (!response.ok) {
       if (data.errors) {
+        if (data?.type && data?.type === 'ai_tutor_limit_exceeded') {
+          window?.fireEvent?.({
+            action: 'tutor_credit_limit',
+            category: 'ai_tutor',
+            label: 'Tutor Credit Limit Exceeded',
+          });
+        }
+
         throw new FetchError(response?.status, data.message);
       } else if (data.message) {
         throw new FetchError(response?.status, data.message);

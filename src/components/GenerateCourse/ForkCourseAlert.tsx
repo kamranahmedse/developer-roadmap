@@ -25,7 +25,7 @@ export function ForkCourseAlert(props: ForkCourseAlertProps) {
       )}
     >
       <p className="text-sm text-balance">
-        Fork the course to track progress and make changes to the course.
+        Fork the course to track you progress and make changes to the course.
       </p>
 
       <button

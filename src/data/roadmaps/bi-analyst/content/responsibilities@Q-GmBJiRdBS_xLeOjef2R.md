@@ -1,0 +1,3 @@
+# Responsibilities of a BI Analyst
+
+A BI Analyst is responsible for analyzing data to identify trends, patterns, and insights that can help organizations make better business decisions. This involves collecting data from various sources, cleaning and transforming it into a usable format, and then using statistical techniques and data visualization tools to interpret the data and communicate findings to stakeholders. Ultimately, the goal is to provide actionable recommendations that improve performance, efficiency, and profitability.

@@ -19,4 +19,5 @@ const styleP = document.getElementById("styleP");
 styleP.style.color = "red"; 
 styleP.style.border = "3px solid black";
 
-console.log(styleP.style); 
+console.log(styleP.style);
+``` 

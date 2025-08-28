@@ -4,6 +4,6 @@ GitLab is a comprehensive DevOps platform that provides source code management, 
 
 Learn more from the following resources:
 
-- [@official@Gitlab Website](https://about.gitlab.com/)
+- [@official@GitLab Website](https://about.gitlab.com/)
 - [@article@Tutorial: iOS CI/CD with GitLab](https://about.gitlab.com/blog/2023/06/07/ios-cicd-with-gitlab/)
 - [@video@Mobile DevOps - Apple App Store Integration Demo](https://www.youtube.com/watch?v=CwzAWVgJeK8)

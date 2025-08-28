@@ -1,9 +1,9 @@
-# Distributed Systems Basics
+# Distributed Systems
 
-Distributed systems are a type of computing architecture where components located on networked computers communicate and coordinate their actions by passing messages. These systems are designed to work together to achieve a common goal, often providing services or processing data in a collaborative manner.
+A distributed system is a collection of independent computers that communicate and coordinate to appear as a single unified system. They are widely used for scalability, fault tolerance, and high availability in modern applications. However, they bring challenges such as synchronization, consistency trade-offs (CAP theorem), concurrency, and network latency.
 
 Visit the following resources to learn more:
 
-- [@article@Free Distributed Systems book from Maarten van Steen](https://www.distributed-systems.net/index.php/books/ds3/)
-- [@article@Distributed Architectures](https://estuary.dev/distributed-architecture/)
-- [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)
+- [@video@Quick overview](https://www.youtube.com/watch?v=IJWwfMyPu1c)
+- [@article@Introduction to Distributed Systems](https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/)
+- [@article@Distributed Systems Guide](https://www.baeldung.com/cs/distributed-systems-guide)

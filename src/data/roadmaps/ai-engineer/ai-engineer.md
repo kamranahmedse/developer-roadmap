@@ -8,7 +8,7 @@ briefDescription: 'Step by step guide to becoming an AI Engineer in 2025'
 title: 'AI Engineer'
 description: 'Step by step guide to becoming an AI Engineer in 2025'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 3200

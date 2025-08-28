@@ -6,7 +6,7 @@ briefTitle: 'Cloudflare'
 briefDescription: 'Learn to deploy your applications on Cloudflare'
 title: 'Cloudflare'
 description: 'Learn to deploy your applications on Cloudflare'
-isNew: true
+isNew: false
 hasTopics: true
 renderer: editor
 dimensions:

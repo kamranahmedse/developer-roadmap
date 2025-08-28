@@ -1,0 +1,3 @@
+# Matrix & Matrix Operations
+
+A matrix is a rectangular array of numbers, symbols, or expressions, arranged in rows and columns. Matrix operations are the rules and procedures for manipulating these matrices. These operations include addition, subtraction, multiplication, transposition (flipping rows and columns), and finding the inverse of a matrix, each with specific rules about the dimensions of the matrices involved.

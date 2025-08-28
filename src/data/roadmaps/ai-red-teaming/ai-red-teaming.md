@@ -6,7 +6,7 @@ briefTitle: 'AI Red Teaming'
 briefDescription: 'Learn to become a red teaming expert in AI'
 title: 'AI Red Teaming'
 description: 'Learn to become a red teaming expert in AI'
-isNew: true
+isNew: false
 isHidden: false
 hasTopics: true
 renderer: editor

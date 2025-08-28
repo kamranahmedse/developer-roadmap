@@ -1,0 +1,3 @@
+# BI Analyst vs. Other Roles
+
+A BI Analyst focuses on analyzing data to provide insights and recommendations for business improvements. This role differs from other data-related roles like Data Scientists, who build predictive models, or Data Engineers, who focus on building and maintaining data infrastructure. While a BI Analyst uses data to understand past and current performance, other roles might focus on predicting future outcomes or ensuring the data is readily available for analysis.

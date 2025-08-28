@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [@official@GitLab Website](https://gitlab.com/)
 - [@official@GitLab Documentation](https://docs.gitlab.com/)
 - [@video@GitLab CI/CD Pipeline Tutorial for Beginners (2024)](https://www.youtube.com/watch?v=z7nLsJvEyMY)
-- [@feed@Explore top posts about GitLab](https://app.daily.dev/tags/gitlab?ref=roadmapsh)
+- [@article@GitLab CI/CD Pipeline Tutorial](https://octopus.com/devops/gitlab/gitlab-cicd-tutorial/)
