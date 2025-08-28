@@ -52,10 +52,7 @@ const nounTitle =
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance your skills? Explore our top free and paid courses to help you become a ${nounTitle} expert!`;
 
 const projects = await getProjectsByRoadmapId(roadmapId);
-const courses = roadmapData.courses || [];
-const question = roadmapData?.questions?.find(
-  (question) => question.type === 'main',
-);
+const courses = roadmapData?.courses || [];
 ---
 
 <BaseLayout
