@@ -83,7 +83,7 @@ if (faqs.length) {
 }
 
 const projects = await getProjectsByRoadmapId(roadmapId);
-// const courses = roadmapData.courses || [];
+const courses = roadmapData.courses || [];
 ---
 
 <BaseLayout
@@ -123,7 +123,7 @@ const projects = await getProjectsByRoadmapId(roadmapId);
       roadmapId={roadmapId}
       isForkable={true}
       projectCount={projects.length}
-      coursesCount={0}
+      coursesCount={courses.length}
       hasAIChat={true}
     />
 
