@@ -76,13 +76,9 @@ const { response: userCounts } =
     <RoadmapHeader
       title={title}
       description={description}
-      note={roadmapData.note}
       partner={roadmapData.partner}
       roadmapId={roadmapId}
-      hasTopics={roadmapData.hasTopics}
-      isUpcoming={roadmapData.isUpcoming}
       isForkable={roadmapData.isForkable}
-      question={roadmapData.question}
       activeTab='projects'
       projectCount={projects.length}
       coursesCount={roadmapData.courses?.length || 0}
