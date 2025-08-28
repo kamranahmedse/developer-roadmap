@@ -72,24 +72,33 @@ export interface OfficialRoadmapDocument {
 
   questions?: OfficialRoadmapQuestion[];
   relatedRoadmaps?: string[];
-  courses?: OfficialRoadmapCourse[];
+  courses?: string[];
 
   createdAt: Date;
   updatedAt: Date;
 }
 
+export type OfficialRoadmapWithCourses = Omit<
+  OfficialRoadmapDocument,
+  'courses'
+> & {
+  courses: OfficialRoadmapCourse[];
+};
+
 export function officialRoadmapOptions(slug: string) {
   return queryOptions({
     queryKey: ['official-roadmap', slug],
     queryFn: () => {
-      return httpGet<OfficialRoadmapDocument>(`/v1-official-roadmap/${slug}`);
+      return httpGet<OfficialRoadmapWithCourses>(
+        `/v1-official-roadmap/${slug}`,
+      );
     },
   });
 }
 
 export async function officialRoadmapDetails(roadmapSlug: string) {
   try {
-    const roadmap = await httpGet<OfficialRoadmapDocument>(
+    const roadmap = await httpGet<OfficialRoadmapWithCourses>(
       `/v1-official-roadmap/${roadmapSlug}`,
     );
 
