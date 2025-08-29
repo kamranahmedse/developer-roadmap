@@ -2,20 +2,9 @@
 import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
-import {
-  listOfficialRoadmaps,
-  officialRoadmapDetails,
-} from '../../queries/official-roadmap';
+import { officialRoadmapDetails } from '../../queries/official-roadmap';
 
-export const prerender = true;
-
-export async function getStaticPaths() {
-  const roadmapIds = await listOfficialRoadmaps();
-
-  return roadmapIds.map((roadmap) => ({
-    params: { roadmapId: roadmap.slug },
-  }));
-}
+export const prerender = false;
 
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
@@ -24,6 +13,8 @@ interface Params extends Record<string, string | undefined> {
 const { roadmapId } = Astro.params as Params;
 const roadmapData = await officialRoadmapDetails(roadmapId);
 if (!roadmapData) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
   return Astro.rewrite('/404');
 }
 
