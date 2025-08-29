@@ -16,21 +16,10 @@ import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
 import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
 import { getProjectsByRoadmapId } from '../../lib/project';
 import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
-import {
-  listOfficialRoadmaps,
-  officialRoadmapDetails,
-} from '../../queries/official-roadmap';
+import { officialRoadmapDetails } from '../../queries/official-roadmap';
 import { DateTime } from 'luxon';
 
-export const prerender = true;
-
-export async function getStaticPaths() {
-  const officialRoadmaps = await listOfficialRoadmaps();
-
-  return officialRoadmaps.map((roadmap) => ({
-    params: { roadmapId: roadmap.slug },
-  }));
-}
+export const prerender = false;
 
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
@@ -39,6 +28,8 @@ interface Params extends Record<string, string | undefined> {
 const { roadmapId } = Astro.params as Params;
 const roadmapData = await officialRoadmapDetails(roadmapId);
 if (!roadmapData) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
   return Astro.rewrite('/404');
 }
 

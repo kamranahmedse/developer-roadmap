@@ -6,6 +6,8 @@ import { ProjectsPage } from '../../components/Projects/ProjectsPage';
 import { projectApi } from '../../api/project';
 import { listOfficialRoadmaps } from '../../queries/official-roadmap';
 
+export const prerender = false;
+
 const roadmapProjects = await getRoadmapsProjects();
 const allRoadmapIds = Object.keys(roadmapProjects);
 
