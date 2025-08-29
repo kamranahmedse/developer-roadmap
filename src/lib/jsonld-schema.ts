@@ -1,4 +1,5 @@
-import type { FAQType } from '../components/FAQs/FAQs.astro';
+import type { OfficialRoadmapQuestion } from '../queries/official-roadmap';
+import { renderMarkdownFromJson } from './markdown-renderer';
 
 type ArticleSchemaProps = {
   url: string;
@@ -41,16 +42,16 @@ export function generateArticleSchema(article: ArticleSchemaProps) {
   };
 }
 
-export function generateFAQSchema(faqs: FAQType[]) {
+export function generateFAQSchema(faqs: OfficialRoadmapQuestion[]) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
-      name: faq.question,
+      name: faq.title,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer.join(' '),
+        text: renderMarkdownFromJson(faq.description, { join: ' ' }),
       },
     })),
   };

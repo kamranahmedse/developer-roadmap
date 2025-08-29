@@ -1,5 +1,8 @@
+import {
+  officialRoadmapDetails,
+  type OfficialRoadmapDocument,
+} from '../queries/official-roadmap';
 import type { MarkdownFileType } from './file';
-import { getRoadmapById, type RoadmapFileType } from './roadmap';
 
 export const projectDifficulties = [
   'beginner',
@@ -28,7 +31,7 @@ export interface ProjectFrontmatter {
 
 export type ProjectFileType = MarkdownFileType<ProjectFrontmatter> & {
   id: string;
-  roadmaps: RoadmapFileType[];
+  roadmaps: OfficialRoadmapDocument[];
 };
 
 /**
@@ -85,7 +88,7 @@ export async function getProjectById(
   const project = await import(`../data/projects/${groupId}.md`);
   const roadmapIds = project.frontmatter.roadmapIds || [];
   const roadmaps = await Promise.all(
-    roadmapIds.map((roadmapId: string) => getRoadmapById(roadmapId)),
+    roadmapIds.map((roadmapId: string) => officialRoadmapDetails(roadmapId)),
   );
 
   return {

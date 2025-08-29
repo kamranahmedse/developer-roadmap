@@ -11,17 +11,7 @@ import { ProjectStepper } from '../../../components/Projects/StatusStepper/Proje
 import { ProjectTrackingActions } from '../../../components/Projects/StatusStepper/ProjectTrackingActions';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 
-export const prerender = true;
-
-export async function getStaticPaths() {
-  const projects = await getAllProjects();
-
-  return projects
-    .map((project) => project.id)
-    .map((projectId) => ({
-      params: { projectId },
-    }));
-}
+export const prerender = false;
 
 interface Params extends Record<string, string | undefined> {
   projectId: string;
@@ -30,6 +20,12 @@ interface Params extends Record<string, string | undefined> {
 const { projectId } = Astro.params as Params;
 
 const project = await getProjectById(projectId);
+if (!project) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+
 const projectData = project.frontmatter as ProjectFrontmatter;
 
 let jsonLdSchema: any[] = [];

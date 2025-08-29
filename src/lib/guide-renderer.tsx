@@ -30,10 +30,12 @@ export interface MarkType {
   attrs?: Record<string, any> | undefined;
 }
 
+export type GuideRendererOptions = {};
+
 export class GuideRenderer {
   private marksOrder = ['underline', 'bold', 'italic', 'textStyle', 'link'];
 
-  render(content: JSONContent): JSX.Element[] {
+  render(content: JSONContent) {
     const nodes = content.content || [];
     const jsxNodes = nodes
       .map((node, index) => {

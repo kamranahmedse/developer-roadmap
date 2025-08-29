@@ -23,7 +23,12 @@ type EditorRoadmapProps = {
 };
 
 export function EditorRoadmap(props: EditorRoadmapProps) {
-  const { resourceId, resourceType = 'roadmap', dimensions, hasChat = true } = props;
+  const {
+    resourceId,
+    resourceType = 'roadmap',
+    dimensions,
+    hasChat = true,
+  } = props;
 
   const [hasSwitchedRoadmap, setHasSwitchedRoadmap] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
