@@ -687,19 +687,21 @@
         "links": [
           {
             "id": "lqPv6L8d6CyHcC0Yvk6Wh",
-            "label": "AI Engineer Roadmap",
-            "href": "",
-            "url": "https://roadmap.sh/ai-engineer"
+              "label": "AI Engineer Roadmap",
+              "href": "https://roadmap.sh/ai-engineer",
+              "url": "https://roadmap.sh/ai-engineer"
           },
           {
             "id": "JgDMCkyrhYOqMWSQpf8XB",
-            "label": "MLOps Roadmap",
-            "url": "https://roadmap.sh/mlops"
+              "label": "MLOps Roadmap",
+              "href": "https://roadmap.sh/mlops",
+              "url": "https://roadmap.sh/mlops"
           },
           {
             "id": "zQY2A8kksRwc7J98ijx52",
-            "label": "AI and Data Scientist Roadmap",
-            "url": "https://roadmap.sh/ai-data-scientist"
+              "label": "AI and Data Scientist Roadmap",
+              "href": "https://roadmap.sh/ai-data-scientist",
+              "url": "https://roadmap.sh/ai-data-scientist"
           }
         ]
       },
@@ -4596,7 +4598,7 @@
       "selected": true,
       "data": {
         "label": "AI & Data Scientist",
-        "href": "https://roadmap.sh/devops",
+        "href": "https://roadmap.sh/ai-data-scientist",
         "color": "#FFf",
         "backgroundColor": "#4136D6",
         "style": { "fontSize": 17 },
@@ -4621,7 +4623,7 @@
       "selected": true,
       "data": {
         "label": "MLOps",
-        "href": "https://roadmap.sh/sql",
+        "href": "https://roadmap.sh/mlops",
         "color": "#FFf",
         "backgroundColor": "#4136D6",
         "style": { "fontSize": 17 },
@@ -4646,7 +4648,7 @@
       "selected": true,
       "data": {
         "label": "AI Engineer",
-        "href": "https://roadmap.sh/data-analyst",
+        "href": "https://roadmap.sh/ai-engineer",
         "color": "#FFf",
         "backgroundColor": "#4136D6",
         "style": { "fontSize": 17 },
@@ -4671,7 +4673,7 @@
       "selected": true,
       "data": {
         "label": "AI Agents",
-        "href": "https://roadmap.sh/mlops",
+        "href": "https://roadmap.sh/ai-agents",
         "color": "#FFf",
         "backgroundColor": "#4136D6",
         "style": { "fontSize": 17 },
