@@ -765,7 +765,7 @@
     "description": "GREP (Global Regular Expression Print) is a powerful text search utility that finds and filters text matching specific patterns in files. It searches line by line and prints matching lines to the screen. Essential for shell scripts and command-line operations. Example: `grep \"pattern\" fileName` searches for specified patterns. Alternative: `ripgrep` offers enhanced performance and features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Ripgrep: Github Repository",
+        "title": "Ripgrep: GitHub Repository",
         "url": "https://github.com/BurntSushi/ripgrep",
         "type": "opensource"
       },

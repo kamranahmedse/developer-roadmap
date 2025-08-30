@@ -30,6 +30,11 @@
         "type": "article"
       },
       {
+        "title": "CSS: Cascading Style Sheets | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about CSS",
         "url": "https://app.daily.dev/tags/css?ref=roadmapsh",
         "type": "article"
@@ -128,7 +133,7 @@
     "description": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Git & Github Roadmap",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -741,17 +746,17 @@
     "description": "GitHub Actions is a workflow automation tool provided by GitHub that can be used to automate various tasks in the app development process.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Git & Github Roadmap",
+        "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
       {
-        "title": "Github Actions",
+        "title": "GitHub Actions",
         "url": "https://github.com/features/actions",
         "type": "article"
       },
       {
-        "title": "Github Actions Documentation",
+        "title": "GitHub Actions Documentation",
         "url": "https://docs.github.com/en/actions",
         "type": "article"
       },
