@@ -4,6 +4,7 @@ A domain name is a human-readable address used to identify a specific location o
 
 Visit the following resources to learn more:
 
+- [@article@Domain Name System (DNS)](https://www.karanpratapsingh.com/courses/system-design/domain-name-system)
 - [@article@What is a Domain Name?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name)
 - [@article@What is a Domain Name? | Domain name vs. URL](https://www.cloudflare.com/en-gb/learning/dns/glossary/what-is-a-domain-name/)
 - [@video@A Beginners Guide to How Domain Names Work](https://www.youtube.com/watch?v=Y4cRx19nhJk)
