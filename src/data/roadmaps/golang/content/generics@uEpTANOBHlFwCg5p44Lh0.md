@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Generic Functions](https://go.dev/doc/tutorial/generics)
 - [@article@Understanding Generics](https://blog.logrocket.com/understanding-generics-go-1-18/)
+- [@article@Demystifying Generics in Go: From Basics to Advanced Real-Life Use Cases](https://medium.com/@raihanur.rahman.2022/tackling-code-duplication-in-go-how-generics-saved-my-sanity-and-can-save-yours-too-b5ebcf9759cf)
