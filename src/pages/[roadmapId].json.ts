@@ -3,7 +3,6 @@ import path from 'node:path';
 import fs from 'node:fs';
 import matter from 'gray-matter';
 import { fileURLToPath } from 'node:url';
-import type { OfficialRoadmapDocument } from '../queries/official-roadmap';
 
 export const prerender = false;
 
@@ -31,16 +30,10 @@ type RoadmapJson = {
 
 export async function fetchRoadmapJson(
   roadmapId: string,
-): Promise<OfficialRoadmapDocument> {
-  const isDev = import.meta.env.DEV;
-  const baseUrl = new URL(
-    isDev ? 'http://localhost:8080' : 'https://roadmap.sh',
+): Promise<RoadmapJson> {
+  const response = await fetch(
+    `https://roadmap.sh/api/v1-official-roadmap/${roadmapId}`,
   );
-  baseUrl.pathname = isDev
-    ? `/v1-official-roadmap/${roadmapId}`
-    : `/api/v1-official-roadmap/${roadmapId}`;
-
-  const response = await fetch(String(baseUrl));
 
   if (!response.ok) {
     throw new Error(`Failed to fetch roadmap json: ${response.statusText}`);
@@ -63,7 +56,48 @@ export const GET: APIRoute = async function ({ params, request, props }) {
     });
   }
 
+  // Construct the path to the markdown file
+  let roadmapFilePath = path.join(
+    projectRoot,
+    'src',
+    'data',
+    'roadmaps',
+    roadmapId,
+    `${roadmapId}.md`,
+  );
+
+  let roadmapJsonPath = path.join(
+    projectRoot,
+    'src',
+    'data',
+    'roadmaps',
+    roadmapId,
+    `${roadmapId}.json`,
+  );
+
+  if (!fs.existsSync(roadmapFilePath)) {
+    return new Response(JSON.stringify({ message: 'Roadmap not found' }), {
+      status: 404,
+    });
+  }
+
+  // Read and parse the markdown file
+  const fileContent = fs.readFileSync(roadmapFilePath, 'utf-8');
+  const { data: frontmatter, content } = matter(fileContent);
+
+  if (frontmatter.renderer !== 'editor') {
+    const roadmapJson = JSON.parse(fs.readFileSync(roadmapJsonPath, 'utf-8'));
+
+    return new Response(JSON.stringify(roadmapJson), {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  }
+
   const roadmapJson = await fetchRoadmapJson(roadmapId);
+
   return new Response(JSON.stringify(roadmapJson), {
     status: 200,
     headers: {
