@@ -1,5 +1,5 @@
 import { queryOptions } from '@tanstack/react-query';
-import { FetchError, httpGet } from '../lib/query-http';
+import { httpGet } from '../lib/query-http';
 import type { Node, Edge } from '@roadmapsh/editor';
 
 export const allowedOfficialRoadmapType = ['skill', 'role'] as const;
@@ -42,9 +42,6 @@ export interface OfficialRoadmapDocument {
     description: string;
     keywords: string[];
   };
-  openGraph?: {
-    image?: string;
-  };
   partner?: {
     description: string;
     linkText: string;
@@ -70,36 +67,4 @@ export function officialRoadmapOptions(slug: string) {
       return httpGet<OfficialRoadmapDocument>(`/v1-official-roadmap/${slug}`);
     },
   });
-}
-
-export async function officialRoadmapDetails(roadmapSlug: string) {
-  try {
-    const roadmap = await httpGet<OfficialRoadmapDocument>(
-      `/v1-official-roadmap/${roadmapSlug}`,
-    );
-
-    return roadmap;
-  } catch (error) {
-    if (FetchError.isFetchError(error) && error.status === 404) {
-      return null;
-    }
-
-    throw error;
-  }
-}
-
-export async function listOfficialRoadmaps() {
-  try {
-    const roadmaps = await httpGet<OfficialRoadmapDocument[]>(
-      `/v1-list-official-roadmaps`,
-    );
-
-    return roadmaps;
-  } catch (error) {
-    if (FetchError.isFetchError(error) && error.status === 404) {
-      return [];
-    }
-
-    throw error;
-  }
 }

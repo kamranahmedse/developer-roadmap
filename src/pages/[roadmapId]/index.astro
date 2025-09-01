@@ -1,6 +1,7 @@
 ---
 import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
-import { FAQs } from '../../components/FAQs/FAQs';
+import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
+import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import { ShareIcons } from '../../components/ShareIcons/ShareIcons';
@@ -12,23 +13,20 @@ import {
   generateFAQSchema,
 } from '../../lib/jsonld-schema';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import RoadmapNote from '../../components/RoadmapNote.astro';
 import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
 import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
 import { getProjectsByRoadmapId } from '../../lib/project';
 import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
-import {
-  listOfficialRoadmaps,
-  officialRoadmapDetails,
-} from '../../queries/official-roadmap';
-import { DateTime } from 'luxon';
 
 export const prerender = true;
 
 export async function getStaticPaths() {
-  const officialRoadmaps = await listOfficialRoadmaps();
+  const roadmapIds = await getRoadmapIds();
 
-  return officialRoadmaps.map((roadmap) => ({
-    params: { roadmapId: roadmap.slug },
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
   }));
 }
 
@@ -37,67 +35,60 @@ interface Params extends Record<string, string | undefined> {
 }
 
 const { roadmapId } = Astro.params as Params;
-const roadmapData = await officialRoadmapDetails(roadmapId);
-if (!roadmapData) {
-  return Astro.rewrite('/404');
-}
+const roadmapFile = await import(
+  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
+);
+const { faqs: roadmapFAQs = [] } = await import(
+  `../../data/roadmaps/${roadmapId}/faqs.astro`
+);
+const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 let jsonLdSchema = [];
 
-const datePublished = DateTime.fromJSDate(
-  new Date(roadmapData?.createdAt),
-).toFormat('yyyy-MM-dd');
-const dateModified = DateTime.fromJSDate(
-  new Date(roadmapData?.updatedAt),
-).toFormat('yyyy-MM-dd');
+if (roadmapData.schema) {
+  const roadmapSchema = roadmapData.schema;
+  jsonLdSchema.push(
+    generateArticleSchema({
+      url: `https://roadmap.sh/${roadmapId}`,
+      headline: roadmapSchema.headline,
+      description: roadmapSchema.description,
+      datePublished: roadmapSchema.datePublished,
+      dateModified: roadmapSchema.dateModified,
+      imageUrl: roadmapSchema.imageUrl,
+    }),
+  );
+}
 
-const baseUrl = import.meta.env.DEV
-  ? `http://localhost:8080`
-  : `https://roadmap.sh`;
-
-jsonLdSchema.push(
-  generateArticleSchema({
-    url: `https://roadmap.sh/${roadmapId}`,
-    headline: roadmapData?.seo?.title || roadmapData?.title?.page,
-    description: roadmapData?.description,
-    datePublished,
-    dateModified,
-    imageUrl: `${baseUrl}/roadmaps/${roadmapId}.png`,
-  }),
-);
+if (roadmapFAQs.length) {
+  jsonLdSchema.push(generateFAQSchema(roadmapFAQs as unknown as FAQType[]));
+}
 
 const ogImageUrl =
-  roadmapData?.openGraph?.image ||
+  roadmapData?.seo?.ogImageUrl ||
   getOpenGraphImageUrl({
     group: 'roadmap',
     resourceId: roadmapId,
   });
 
-const question = roadmapData?.questions?.find(
-  (question) => question.type === 'main',
-);
-const faqs =
-  roadmapData?.questions?.filter((question) => question.type === 'faq') || [];
-if (faqs.length) {
-  jsonLdSchema.push(generateFAQSchema(faqs));
-}
-
+const question = roadmapData?.question;
+const note = roadmapData.note;
 const projects = await getProjectsByRoadmapId(roadmapId);
-// const courses = roadmapData.courses || [];
+const courses = roadmapData.courses || [];
 ---
 
 <BaseLayout
   permalink={`/${roadmapId}`}
-  title={roadmapData?.seo?.title || roadmapData?.title.page}
-  briefTitle={roadmapData.title.card}
+  title={roadmapData?.seo?.title}
+  briefTitle={roadmapData.briefTitle}
   ogImageUrl={ogImageUrl}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
-  noIndex={false}
+  noIndex={roadmapData.isUpcoming}
   jsonLd={jsonLdSchema}
   resourceId={roadmapId}
   resourceType='roadmap'
 >
+  <!-- Preload the font being used in the renderer -->
   <link
     rel='preload'
     href='/fonts/balsamiq.woff2'
@@ -110,21 +101,25 @@ const projects = await getProjectsByRoadmapId(roadmapId);
   <TopicDetail
     resourceId={roadmapId}
     resourceType='roadmap'
-    renderer='editor'
+    renderer={roadmapData.renderer}
     client:idle
     canSubmitContribution={true}
   />
 
   <div class='bg-gray-50'>
     <RoadmapHeader
-      title={roadmapData.title.page}
+      title={roadmapData.title}
       description={roadmapData.description}
+      note={roadmapData.note}
       partner={roadmapData.partner}
       roadmapId={roadmapId}
-      isForkable={true}
+      hasTopics={roadmapData.hasTopics}
+      isUpcoming={roadmapData.isUpcoming}
+      isForkable={roadmapData.isForkable}
+      question={roadmapData.question}
       projectCount={projects.length}
-      coursesCount={0}
-      hasAIChat={true}
+      coursesCount={courses.length}
+      hasAIChat={roadmapData.renderer === 'editor'}
     />
 
     <div class='container mt-2.5'>
@@ -147,23 +142,33 @@ const projects = await getProjectsByRoadmapId(roadmapId);
       <ShareIcons
         resourceId={roadmapId}
         resourceType='roadmap'
-        description={roadmapData.description}
+        description={roadmapData.briefDescription}
         pageUrl={`https://roadmap.sh/${roadmapId}`}
         client:load
       />
 
-      <EditorRoadmap
-        resourceId={roadmapId}
-        resourceType='roadmap'
-        dimensions={roadmapData.dimensions!}
-        client:load
-      />
+      {
+        roadmapData?.renderer === 'editor' ? (
+          <EditorRoadmap
+            resourceId={roadmapId}
+            resourceType='roadmap'
+            dimensions={roadmapData.dimensions!}
+            client:load
+          />
+        ) : (
+          <FrameRenderer
+            resourceType={'roadmap'}
+            resourceId={roadmapId}
+            dimensions={roadmapData.dimensions}
+          />
+        )
+      }
     </div>
 
     <UserProgressModal
       resourceId={roadmapId}
       resourceType='roadmap'
-      renderer='editor'
+      renderer={roadmapData?.renderer}
       client:only='react'
     />
 
@@ -175,8 +180,9 @@ const projects = await getProjectsByRoadmapId(roadmapId);
       )
     }
 
-    <FAQs faqs={faqs} client:load />
-    <RelatedRoadmaps relatedRoadmaps={roadmapData?.relatedRoadmaps || []} />
+    <FAQs faqs={roadmapFAQs as unknown as FAQType[]} />
+
+    <RelatedRoadmaps roadmap={roadmapData} />
   </div>
 
   <CheckSubscriptionVerification client:load />

@@ -1,0 +1,42 @@
+---
+import { markdownToHtml } from '../../lib/markdown';
+import Answer from './Answer.astro';
+import Question from './Question.astro';
+
+export type FAQType = {
+  question: string;
+  answer: string[];
+};
+
+export interface Props {
+  faqs: FAQType[];
+}
+
+const { faqs } = Astro.props;
+
+if (faqs.length === 0) {
+  return '';
+}
+---
+
+<div class='border-t bg-gray-100 mt-8'>
+  <div class='container'>
+    <div class='flex justify-between relative -top-5'>
+      <h2 class='text-sm sm:text-base font-medium py-1 px-3 border bg-white rounded-md'>Frequently Asked Questions</h2>
+    </div>
+
+    <div class='flex flex-col gap-1 pb-14'>
+      {
+        faqs.map((faq, questionIndex) => (
+          <Question isActive={questionIndex === 0} question={faq.question}>
+            <Answer>
+              {faq.answer.map((answer) => (
+                <p set:html={markdownToHtml(answer)} />
+              ))}
+            </Answer>
+          </Question>
+        ))
+      }
+    </div>
+  </div>
+</div>
