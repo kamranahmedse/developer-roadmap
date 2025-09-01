@@ -56,6 +56,7 @@ export function CourseAnnouncement() {
         onClick={(e) => {
           setIsVisible(false);
 
+          // 14 days from now
           const fourteenDaysFromNow = Date.now() + 1000 * 60 * 60 * 24 * 14;
           localStorage.setItem(
             HIDE_ANNOUNCEMENT_END_KEY,
