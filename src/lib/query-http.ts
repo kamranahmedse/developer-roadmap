@@ -44,7 +44,9 @@ export async function httpCall<ResponseType = AppResponse>(
     : `${import.meta.env.PUBLIC_API_URL}${url}`;
   try {
     let visitorId = '';
-    if (typeof window !== 'undefined') {
+
+    const isServer = typeof window === 'undefined';
+    if (!isServer) {
       const fingerprintPromise = await fp.load();
       const fingerprint = await fingerprintPromise.get();
       visitorId = fingerprint.visitorId;
@@ -58,6 +60,10 @@ export async function httpCall<ResponseType = AppResponse>(
       ...(visitorId ? { fp: visitorId } : {}),
       ...(options?.headers ?? {}),
     });
+
+    if (isServer) {
+      headers.set('Roadmap-Key', import.meta.env.ROADMAP_KEY);
+    }
 
     if (!isMultiPartFormData) {
       headers.set('Content-Type', 'application/json');
