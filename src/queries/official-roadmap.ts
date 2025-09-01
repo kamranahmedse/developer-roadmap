@@ -19,21 +19,8 @@ export type OfficialRoadmapQuestion = {
   description: any;
 };
 
-export type OfficialRoadmapCourse = {
-  _id: string;
-  title: string;
-  description: string;
-  link: string;
-  instructor: {
-    name: string;
-    image: string;
-    title: string;
-  };
-  features: string[];
-};
-
 export interface OfficialRoadmapDocument {
-  _id?: string;
+  _id: string;
   order: number;
 
   title: {
@@ -43,12 +30,12 @@ export interface OfficialRoadmapDocument {
   description: string;
 
   slug: string;
-  nodes: any[];
-  edges: any[];
+  nodes: Node[];
+  edges: Edge[];
 
   draft: {
-    nodes: any[];
-    edges: any[];
+    nodes: Node[];
+    edges: Edge[];
   };
 
   seo: {
@@ -72,7 +59,6 @@ export interface OfficialRoadmapDocument {
 
   questions?: OfficialRoadmapQuestion[];
   relatedRoadmaps?: string[];
-  courses?: OfficialRoadmapCourse[];
 
   createdAt: Date;
   updatedAt: Date;

@@ -1,20 +1,19 @@
----
+<!-- ---
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import CourseStep from '../../components/courses/CourseStep.astro';
+import Milestone from '../../components/courses/Milestone.astro';
 import { getProjectsByRoadmapId } from '../../lib/project';
-import {
-  listOfficialRoadmaps,
-  officialRoadmapDetails,
-} from '../../queries/official-roadmap';
 
 export const prerender = true;
 
 export async function getStaticPaths() {
-  const roadmaps = await listOfficialRoadmaps();
+  const roadmapIds = await getRoadmapIds();
 
-  return roadmaps.map((roadmap) => ({
-    params: { roadmapId: roadmap.slug },
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
   }));
 }
 
@@ -23,14 +22,15 @@ interface Params extends Record<string, string | undefined> {
 }
 
 const { roadmapId } = Astro.params as Params;
-const roadmapData = await officialRoadmapDetails(roadmapId);
-if (!roadmapData) {
-  return Astro.redirect('/404', 404);
-}
+const roadmapFile = await import(
+  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
+);
+
+const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 // update og for projects
 const ogImageUrl =
-  roadmapData?.openGraph?.image ||
+  roadmapData?.seo?.ogImageUrl ||
   getOpenGraphImageUrl({
     group: 'roadmap',
     resourceId: roadmapId,
@@ -43,26 +43,23 @@ const descriptionNoun: Record<string, string> = {
   'Product Manager': 'Product Management',
 };
 
-const title = `${roadmapData?.title.card} Courses`;
-const description = `Premium courses to help you master ${descriptionNoun[roadmapData?.title.card] || roadmapData?.title.card}`;
+const title = `${roadmapData.briefTitle} Courses`;
+const description = `Premium courses to help you master ${descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle}`;
 
-const seoTitle = `${roadmapData?.title.card} Courses`;
+const seoTitle = `${roadmapData.briefTitle} Courses`;
 const nounTitle =
-  descriptionNoun[roadmapData.title.card] || roadmapData.title.card;
+  descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle;
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance your skills? Explore our top free and paid courses to help you become a ${nounTitle} expert!`;
 
 const projects = await getProjectsByRoadmapId(roadmapId);
 const courses = roadmapData.courses || [];
-const question = roadmapData?.questions?.find(
-  (question) => question.type === 'main',
-);
 ---
 
 <BaseLayout
   permalink={`/${roadmapId}`}
   title={seoTitle}
   description={seoDescription}
-  briefTitle={roadmapData.title.card}
+  briefTitle={roadmapData.briefTitle}
   ogImageUrl={ogImageUrl}
   keywords={roadmapData.seo.keywords}
   resourceId={roadmapId}
@@ -75,7 +72,10 @@ const question = roadmapData?.questions?.find(
       description={description}
       partner={roadmapData.partner}
       roadmapId={roadmapId}
-      isForkable={true}
+      hasTopics={roadmapData.hasTopics}
+      isUpcoming={roadmapData.isUpcoming}
+      isForkable={roadmapData.isForkable}
+      question={roadmapData.question}
       coursesCount={courses.length}
       projectCount={projects.length}
       activeTab='courses'
@@ -163,4 +163,4 @@ const question = roadmapData?.questions?.find(
       </div>
     </div>
   </div>
-</BaseLayout>
+</BaseLayout> -->
