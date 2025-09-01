@@ -1,19 +1,17 @@
 ---
 import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
+import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
-import {
-  listOfficialRoadmaps,
-  officialRoadmapDetails,
-} from '../../queries/official-roadmap';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
 export const prerender = true;
 
 export async function getStaticPaths() {
-  const roadmapIds = await listOfficialRoadmaps();
+  const roadmapIds = await getRoadmapIds();
 
-  return roadmapIds.map((roadmap) => ({
-    params: { roadmapId: roadmap.slug },
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
   }));
 }
 
@@ -22,13 +20,13 @@ interface Params extends Record<string, string | undefined> {
 }
 
 const { roadmapId } = Astro.params as Params;
-const roadmapData = await officialRoadmapDetails(roadmapId);
-if (!roadmapData) {
-  return Astro.rewrite('/404');
-}
+const roadmapFile = await import(
+  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
+);
+const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 const ogImageUrl =
-  roadmapData?.openGraph?.image ||
+  roadmapData?.seo?.ogImageUrl ||
   getOpenGraphImageUrl({
     group: 'roadmap',
     resourceId: roadmapId,
@@ -37,8 +35,8 @@ const ogImageUrl =
 
 <SkeletonLayout
   permalink={`/${roadmapId}`}
-  title={roadmapData?.seo?.title || roadmapData.title.page}
-  briefTitle={roadmapData.title.card}
+  title={roadmapData?.seo?.title}
+  briefTitle={roadmapData.briefTitle}
   ogImageUrl={ogImageUrl}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
@@ -46,13 +44,23 @@ const ogImageUrl =
   resourceType='roadmap'
   noIndex={true}
 >
-  <div class='relative container max-w-[1000px]!'>
-    <EditorRoadmap
-      resourceId={roadmapId}
-      resourceType='roadmap'
-      dimensions={roadmapData.dimensions!}
-      client:load
-      hasChat={false}
-    />
+  <div class='container relative max-w-[1000px]!'>
+    {
+      roadmapData?.renderer === 'editor' ? (
+        <EditorRoadmap
+          resourceId={roadmapId}
+          resourceType='roadmap'
+          dimensions={roadmapData.dimensions!}
+          client:load
+          hasChat={false}
+        />
+      ) : (
+        <FrameRenderer
+          resourceType={'roadmap'}
+          resourceId={roadmapId}
+          dimensions={roadmapData.dimensions}
+        />
+      )
+    }
   </div>
 </SkeletonLayout>

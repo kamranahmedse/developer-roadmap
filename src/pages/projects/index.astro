@@ -1,27 +1,23 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getRoadmapsProjects } from '../../lib/project';
+import { getRoadmapsByIds } from '../../lib/roadmap';
 import { ProjectsPageHeader } from '../../components/Projects/ProjectsPageHeader';
 import { ProjectsPage } from '../../components/Projects/ProjectsPage';
 import { projectApi } from '../../api/project';
-import { listOfficialRoadmaps } from '../../queries/official-roadmap';
 
 const roadmapProjects = await getRoadmapsProjects();
 const allRoadmapIds = Object.keys(roadmapProjects);
 
-const roadmaps = await listOfficialRoadmaps();
-const allRoadmaps = roadmaps.filter((roadmap) =>
-  allRoadmapIds.includes(roadmap.slug),
-);
-
+const allRoadmaps = await getRoadmapsByIds(allRoadmapIds);
 const enrichedRoadmaps = allRoadmaps.map((roadmap) => {
-  const projects = (roadmapProjects[roadmap.slug] || []).sort((a, b) => {
+  const projects = (roadmapProjects[roadmap.id] || []).sort((a, b) => {
     return a.frontmatter.sort - b.frontmatter.sort;
   });
 
   return {
-    id: roadmap.slug,
-    title: roadmap.title.card,
+    id: roadmap.id,
+    title: roadmap.frontmatter.briefTitle,
     projects,
   };
 });
@@ -46,5 +42,5 @@ const { response: userCounts } =
     userCounts={userCounts || {}}
     client:load
   />
-  <div slot='changelog-banner'></div>
+  <div slot="changelog-banner" />
 </BaseLayout>
