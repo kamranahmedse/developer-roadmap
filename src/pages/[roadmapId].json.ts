@@ -11,6 +11,9 @@ export const prerender = false;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// hack to make it work. TODO: Fix
+const projectRoot = path.resolve(__dirname, '../..').replace(/dist$/, '');
+
 type RoadmapJson = {
   _id: string;
   title: string;

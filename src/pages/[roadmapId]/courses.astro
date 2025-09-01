@@ -3,9 +3,20 @@ import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { getProjectsByRoadmapId } from '../../lib/project';
-import { officialRoadmapDetails } from '../../queries/official-roadmap';
+import {
+  listOfficialRoadmaps,
+  officialRoadmapDetails,
+} from '../../queries/official-roadmap';
 
-export const prerender = false;
+export const prerender = true;
+
+export async function getStaticPaths() {
+  const roadmaps = await listOfficialRoadmaps();
+
+  return roadmaps.map((roadmap) => ({
+    params: { roadmapId: roadmap.slug },
+  }));
+}
 
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
@@ -14,9 +25,7 @@ interface Params extends Record<string, string | undefined> {
 const { roadmapId } = Astro.params as Params;
 const roadmapData = await officialRoadmapDetails(roadmapId);
 if (!roadmapData) {
-  Astro.response.status = 404;
-  Astro.response.statusText = 'Not found';
-  return Astro.rewrite('/404');
+  return Astro.redirect('/404', 404);
 }
 
 // update og for projects
