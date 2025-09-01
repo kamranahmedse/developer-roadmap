@@ -1,7 +1,6 @@
 import { queryOptions } from '@tanstack/react-query';
 import { FetchError, httpGet } from '../lib/query-http';
 import type { Node, Edge } from '@roadmapsh/editor';
-import { DateTime } from 'luxon';
 
 export const allowedOfficialRoadmapType = ['skill', 'role'] as const;
 export type AllowedOfficialRoadmapType =
@@ -103,12 +102,4 @@ export async function listOfficialRoadmaps() {
 
     throw error;
   }
-}
-
-export function isNewRoadmap(createdAt: Date) {
-  return (
-    createdAt &&
-    DateTime.now().diff(DateTime.fromJSDate(new Date(createdAt)), 'days').days <
-      45
-  );
 }

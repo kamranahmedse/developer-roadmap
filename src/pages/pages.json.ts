@@ -1,4 +1,5 @@
 import { getAllBestPractices } from '../lib/best-practice';
+import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
 import { getAllQuestionGroups } from '../lib/question-group';
 import { getAllProjects } from '../lib/project';
@@ -6,7 +7,6 @@ import {
   listOfficialAuthors,
   listOfficialGuides,
 } from '../queries/official-guide';
-import { listOfficialRoadmaps } from '../queries/official-roadmap';
 
 // Add utility to fetch beginner roadmap file IDs
 function getBeginnerRoadmapIds() {
@@ -25,49 +25,40 @@ export async function GET() {
   const authors = await listOfficialAuthors();
   const videos = await getAllVideos();
   const questionGroups = await getAllQuestionGroups();
-  const roadmaps = await listOfficialRoadmaps();
-
+  const roadmaps = await getRoadmapsByTag('roadmap');
   const bestPractices = await getAllBestPractices();
   const projects = await getAllProjects();
 
   // Transform main roadmaps into page objects first so that we can reuse their meta for beginner variants
-  const roadmapPages = roadmaps
-    .map((roadmap) => {
-      const isBeginner = roadmap.slug.endsWith('-beginner');
-      if (!isBeginner) {
-        return {
-          id: roadmap.slug,
-          url: `/${roadmap.slug}`,
-          title: roadmap.title.card,
-          shortTitle: roadmap.title.card,
-          description: roadmap.description,
-          group: 'Roadmaps',
-          metadata: {
-            tags:
-              roadmap.type === 'role' ? ['role-roadmap'] : ['skill-roadmap'],
-          },
-          renderer: 'editor',
-        };
-      }
+  const roadmapPages = roadmaps.map((roadmap) => ({
+    id: roadmap.id,
+    url: `/${roadmap.id}`,
+    title: roadmap.frontmatter.briefTitle,
+    shortTitle: roadmap.frontmatter.title,
+    description: roadmap.frontmatter.briefDescription,
+    group: 'Roadmaps',
+    metadata: {
+      tags: roadmap.frontmatter.tags,
+    },
+    renderer: roadmap?.frontmatter?.renderer || 'balsamiq',
+  }));
 
-      const parentSlug = roadmap.slug.replace('-beginner', '');
-      const parentMeta = roadmaps.find((r) => r.slug === parentSlug);
+  // Generate beginner roadmap page objects
+  const beginnerRoadmapPages = getBeginnerRoadmapIds()
+    .map((beginnerId) => {
+      const parentId = beginnerId.replace('-beginner', '');
+      const parentMeta = roadmapPages.find((page) => page.id === parentId);
 
       if (!parentMeta) {
         return null;
       }
 
       return {
-        id: roadmap.slug,
-        url: `/${parentSlug}?r=${roadmap.slug}`,
-        title: `${parentMeta.title.page} Beginner`,
-        shortTitle: `${parentMeta.title.page} Beginner`,
-        description: parentMeta.description,
-        group: 'Roadmaps',
-        metadata: {
-          tags: ['beginner-roadmap'],
-        },
-        renderer: 'editor',
+        ...parentMeta,
+        id: beginnerId,
+        url: `/${parentId}?r=${beginnerId}`,
+        title: `${parentMeta.title} Beginner`,
+        shortTitle: `${parentMeta.shortTitle} Beginner`,
       };
     })
     .filter(Boolean);
@@ -75,6 +66,7 @@ export async function GET() {
   return new Response(
     JSON.stringify([
       ...roadmapPages,
+      ...beginnerRoadmapPages,
       ...bestPractices.map((bestPractice) => ({
         id: bestPractice.id,
         url: `/best-practices/${bestPractice.id}`,
