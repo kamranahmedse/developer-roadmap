@@ -5,7 +5,9 @@ import {
   Bot,
   FolderKanbanIcon,
   MapIcon,
+  MessageCircle,
 } from 'lucide-react';
+import { type RoadmapFrontmatter } from '../lib/roadmap';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import { DownloadRoadmapButton } from './DownloadRoadmapButton';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
@@ -18,16 +20,20 @@ import { PersonalizedRoadmap } from './PersonalizedRoadmap/PersonalizedRoadmap';
 export interface Props {
   title: string;
   description: string;
+  note?: string;
   partner?: {
     description: string;
     link: string;
     linkText: string;
   };
   roadmapId: string;
+  isUpcoming?: boolean;
   hasSearch?: boolean;
   projectCount?: number;
   coursesCount?: number;
   hasAIChat?: boolean;
+  question?: RoadmapFrontmatter['question'];
+  hasTopics?: boolean;
   isForkable?: boolean;
   activeTab?: 'roadmap' | 'projects' | 'courses';
 }
@@ -37,8 +43,12 @@ const {
   description,
   roadmapId,
   partner,
+  isUpcoming = false,
+  note,
+  hasTopics = false,
   hasAIChat = false,
   projectCount = 0,
+  question,
   activeTab = 'roadmap',
   coursesCount = 0,
 } = Astro.props;
