@@ -5,16 +5,19 @@ import { ProjectsList } from '../../components/Projects/ProjectsList';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getProjectsByRoadmapId } from '../../lib/project';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
-import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 import { projectApi } from '../../api/project';
+import {
+  listOfficialRoadmaps,
+  officialRoadmapDetails,
+} from '../../queries/official-roadmap';
 
 export const prerender = true;
 
 export async function getStaticPaths() {
-  const roadmapIds = await getRoadmapIds();
+  const roadmapIds = await listOfficialRoadmaps();
 
-  return roadmapIds.map((roadmapId) => ({
-    params: { roadmapId },
+  return roadmapIds.map((roadmap) => ({
+    params: { roadmapId: roadmap.slug },
   }));
 }
 
@@ -23,15 +26,14 @@ interface Params extends Record<string, string | undefined> {
 }
 
 const { roadmapId } = Astro.params as Params;
-const roadmapFile = await import(
-  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
-);
-
-const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
+const roadmapData = await officialRoadmapDetails(roadmapId);
+if (!roadmapData) {
+  return Astro.rewrite('/404');
+}
 
 // update og for projects
 const ogImageUrl =
-  roadmapData?.seo?.ogImageUrl ||
+  roadmapData?.openGraph?.image ||
   getOpenGraphImageUrl({
     group: 'roadmap',
     resourceId: roadmapId,
@@ -44,13 +46,13 @@ const descriptionNoun: Record<string, string> = {
   'Product Manager': 'Product Management',
 };
 
-const title = `${roadmapData.briefTitle} Projects`;
-const description = `Project ideas to take you from beginner to advanced in ${descriptionNoun[roadmapData.briefTitle] || roadmapData.briefTitle}`;
+const title = `${roadmapData.title.card} Projects`;
+const description = `Project ideas to take you from beginner to advanced in ${descriptionNoun[roadmapData.title.card] || roadmapData.title.card}`;
 
 // `Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`
-const seoTitle = `${roadmapData.briefTitle} Projects`;
+const seoTitle = `${roadmapData.title.card} Projects`;
 const nounTitle =
-  descriptionNoun[roadmapData?.briefTitle] || roadmapData.briefTitle;
+  descriptionNoun[roadmapData?.title.card] || roadmapData.title.card;
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`;
 
 const projects = await getProjectsByRoadmapId(roadmapId);
@@ -65,7 +67,7 @@ const { response: userCounts } =
   permalink={`/${roadmapId}/projects`}
   title={seoTitle}
   description={seoDescription}
-  briefTitle={roadmapData.briefTitle}
+  briefTitle={roadmapData.title.card}
   ogImageUrl={ogImageUrl}
   keywords={roadmapData.seo.keywords}
   noIndex={projects.length === 0}
@@ -73,15 +75,16 @@ const { response: userCounts } =
   resourceType='roadmap'
 >
   <div class='bg-gray-50'>
+    <!-- // TODO: get courses count -->
     <RoadmapHeader
       title={title}
       description={description}
       partner={roadmapData.partner}
       roadmapId={roadmapId}
-      isForkable={roadmapData.isForkable}
+      isForkable={true}
       activeTab='projects'
       projectCount={projects.length}
-      coursesCount={roadmapData.courses?.length || 0}
+      coursesCount={0}
       hasAIChat={true}
     />
 

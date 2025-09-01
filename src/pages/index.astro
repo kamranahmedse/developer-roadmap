@@ -1,4 +1,5 @@
 ---
+import { DateTime } from 'luxon';
 import ChangelogBanner from '../components/ChangelogBanner.astro';
 import { FeaturedGuideList } from '../components/FeaturedGuides/FeaturedGuideList';
 import FeaturedItems from '../components/FeaturedItems/FeaturedItems.astro';
@@ -6,12 +7,16 @@ import { FeaturedVideoList } from '../components/FeaturedVideos/FeaturedVideoLis
 import HeroSection from '../components/HeroSection/HeroSection.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllBestPractices } from '../lib/best-practice';
-import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
 import { listOfficialGuides } from '../queries/official-guide';
+import {
+  isNewRoadmap,
+  listOfficialRoadmaps,
+} from '../queries/official-roadmap';
 
-const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
-const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
+const roadmaps = await listOfficialRoadmaps();
+const roleRoadmaps = roadmaps.filter((roadmap) => roadmap.type === 'role');
+const skillRoadmaps = roadmaps.filter((roadmap) => roadmap.type === 'skill');
 const bestPractices = await getAllBestPractices();
 
 export const projectGroups = [
@@ -47,33 +52,32 @@ const videos = await getAllVideos();
 
     <FeaturedItems
       heading='Role-based Roadmaps'
-      featuredItems={roleRoadmaps
-        .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
-        .map((roadmapItem) => ({
-          text: roadmapItem.frontmatter.briefTitle,
-          url: `/${roadmapItem.id}`,
-          isNew: roadmapItem.frontmatter.isNew,
-          isUpcoming: roadmapItem.frontmatter.isUpcoming,
-        }))}
+      featuredItems={roleRoadmaps.map((roadmapItem) => {
+        const isNew = isNewRoadmap(roadmapItem.createdAt);
+
+        return {
+          text: roadmapItem.title.card,
+          url: `/${roadmapItem.slug}`,
+          isNew,
+        };
+      })}
       showCreateRoadmap={true}
     />
 
     <FeaturedItems
       heading='Skill-based Roadmaps'
-      featuredItems={skillRoadmaps
-        .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
-        .map((roadmapItem) => ({
+      featuredItems={skillRoadmaps.map((roadmapItem) => {
+        const isNew = isNewRoadmap(roadmapItem.createdAt);
+
+        return {
           text:
-            roadmapItem.frontmatter.briefTitle === 'Go'
+            roadmapItem.title.card === 'Go'
               ? 'Go Roadmap'
-              : roadmapItem.frontmatter.briefTitle.replace(
-                  'Software Design',
-                  'Design',
-                ),
-          url: `/${roadmapItem.id}`,
-          isNew: roadmapItem.frontmatter.isNew,
-          isUpcoming: roadmapItem.frontmatter.isUpcoming,
-        }))}
+              : roadmapItem.title.card.replace('Software Design', 'Design'),
+          url: `/${roadmapItem.slug}`,
+          isNew,
+        };
+      })}
       showCreateRoadmap={true}
     />
 
