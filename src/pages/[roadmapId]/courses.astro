@@ -2,7 +2,7 @@
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
-import { getProjectsByRoadmapId } from '../../lib/project';
+import { listOfficialProjects } from '../../queries/official-project';
 import { officialRoadmapDetails } from '../../queries/official-roadmap';
 
 export const prerender = false;
@@ -42,7 +42,7 @@ const nounTitle =
   descriptionNoun[roadmapData.title.card] || roadmapData.title.card;
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} courses to enhance your skills? Explore our top free and paid courses to help you become a ${nounTitle} expert!`;
 
-const projects = await getProjectsByRoadmapId(roadmapId);
+const projects = await listOfficialProjects({ roadmapId });
 const courses = roadmapData?.courses || [];
 ---
 

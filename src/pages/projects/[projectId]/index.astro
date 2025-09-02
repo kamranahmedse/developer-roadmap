@@ -1,15 +1,10 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { Badge } from '../../../components/Badge';
-import {
-  getAllProjects,
-  getProjectById,
-  type ProjectFrontmatter,
-} from '../../../lib/project';
-import AstroIcon from '../../../components/AstroIcon.astro';
 import { ProjectStepper } from '../../../components/Projects/StatusStepper/ProjectStepper';
-import { ProjectTrackingActions } from '../../../components/Projects/StatusStepper/ProjectTrackingActions';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
+import { officialProjectDetails } from '../../../queries/official-project';
+import { ProjectContent } from '../../../components/Projects/ProjectContent';
 
 export const prerender = false;
 
@@ -19,31 +14,22 @@ interface Params extends Record<string, string | undefined> {
 
 const { projectId } = Astro.params as Params;
 
-const project = await getProjectById(projectId);
+const project = await officialProjectDetails(projectId);
 if (!project) {
   Astro.response.status = 404;
   Astro.response.statusText = 'Not found';
   return Astro.rewrite('/404');
 }
 
-const projectData = project.frontmatter as ProjectFrontmatter;
-
-let jsonLdSchema: any[] = [];
-
-const ogImageUrl = projectData?.seo?.ogImageUrl || '/img/og-img.png';
-const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/projects/${projectId}.md`;
-
-const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
+const parentRoadmapId = project?.roadmapIds?.[0] || '';
 ---
 
 <BaseLayout
   permalink={`/projects/${projectId}`}
-  title={projectData?.seo?.title}
-  briefTitle={projectData.title}
-  ogImageUrl={ogImageUrl}
-  description={projectData.seo.description}
-  keywords={projectData.seo.keywords}
-  jsonLd={jsonLdSchema}
+  title={project?.seo?.title || project?.title}
+  briefTitle={project?.title}
+  description={project?.seo?.description || project?.description}
+  keywords={project?.seo?.keywords || []}
   resourceId={projectId}
 >
   <div class='bg-gray-50'>
@@ -52,7 +38,6 @@ const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
         parentRoadmapId={parentRoadmapId}
         projectId={projectId}
         activeTab='details'
-        hasNoSubmission={projectData?.hasNoSubmission}
       />
 
       <div
@@ -62,55 +47,27 @@ const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
           <div class='mb-4 hidden items-center justify-between sm:flex'>
             <div class='flex flex-row flex-wrap gap-1.5'>
               {
-                projectData.skills.map((skill) => (
+                project?.skills.map((skill) => (
                   <Badge variant='green' text={skill} />
                 ))
               }
             </div>
-            <Badge variant='yellow' text={projectData.difficulty} />
+            <Badge variant='yellow' text={project?.difficulty} />
           </div>
           <div class='my-2 flex items-center justify-between gap-2 sm:my-7'>
             <div class=''>
               <h1 class='mb-1 text-xl font-semibold sm:mb-2 sm:text-3xl'>
-                {projectData.title}
+                {project?.title}
               </h1>
               <p class='text-sm text-balance text-gray-500'>
-                {projectData.description}
+                {project?.description}
               </p>
             </div>
-            {
-              projectData?.hasNoSubmission && (
-                <ProjectTrackingActions projectId={projectId} client:load />
-              )
-            }
           </div>
         </div>
 
-        {
-          !projectData?.hasNoSubmission && (
-            <ProjectStepper projectId={projectId} client:load />
-          )
-        }
-
-        <div
-          class='prose prose-h2:mb-3 prose-h2:mt-5 prose-h3:mb-1 prose-h3:mt-5 prose-p:mb-2 prose-blockquote:font-normal prose-blockquote:text-gray-500 prose-pre:my-3 prose-ul:my-3.5 prose-hr:my-5 max-w-full [&>ul>li]:my-1'
-        >
-          <project.Content />
-        </div>
-
-        <div
-          class='mt-5 flex flex-wrap items-center justify-center rounded-lg p-2.5 text-sm'
-        >
-          <AstroIcon class='mr-2 inline-block h-5 w-5' icon='github' />
-          Found a mistake?
-          <a
-            class='ml-1 underline underline-offset-2'
-            href={githubUrl}
-            target='_blank'
-          >
-            Help us improve.
-          </a>
-        </div>
+        <ProjectStepper projectId={projectId} client:load />
+        <ProjectContent project={project} client:load />
       </div>
     </div>
   </div>

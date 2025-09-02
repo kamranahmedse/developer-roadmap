@@ -7,16 +7,16 @@ import {
   setUrlParams,
 } from '../../lib/browser.ts';
 import { CategoryFilterButton } from '../Roadmaps/CategoryFilterButton.tsx';
-import {
-  projectDifficulties,
-  type ProjectFileType,
-} from '../../lib/project.ts';
 import { ProjectCard } from './ProjectCard.tsx';
+import {
+  allowedOfficialProjectDifficulty,
+  type OfficialProjectDocument,
+} from '../../queries/official-project.ts';
 
 type ProjectGroup = {
   id: string;
   title: string;
-  projects: ProjectFileType[];
+  projects: OfficialProjectDocument[];
 };
 
 type ProjectsPageProps = {
@@ -28,7 +28,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
   const { roadmapsProjects, userCounts } = props;
   const allUniqueProjectIds = new Set<string>(
     roadmapsProjects.flatMap((group) =>
-      group.projects.map((project) => project.id),
+      group.projects.map((project) => project.slug),
     ),
   );
   const allUniqueProjects = useMemo(
@@ -37,15 +37,15 @@ export function ProjectsPage(props: ProjectsPageProps) {
         .map((id) =>
           roadmapsProjects
             .flatMap((group) => group.projects)
-            .find((project) => project.id === id),
+            .find((project) => project.slug === id),
         )
-        .filter(Boolean) as ProjectFileType[],
+        .filter(Boolean) as OfficialProjectDocument[],
     [allUniqueProjectIds],
   );
 
   const [activeGroup, setActiveGroup] = useState<string>('');
   const [visibleProjects, setVisibleProjects] =
-    useState<ProjectFileType[]>(allUniqueProjects);
+    useState<OfficialProjectDocument[]>(allUniqueProjects);
 
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
@@ -67,11 +67,11 @@ export function ProjectsPage(props: ProjectsPageProps) {
   const sortedVisibleProjects = useMemo(
     () =>
       visibleProjects.sort((a, b) => {
-        const projectADifficulty = a?.frontmatter.difficulty || 'beginner';
-        const projectBDifficulty = b?.frontmatter.difficulty || 'beginner';
+        const projectADifficulty = a?.difficulty || 'beginner';
+        const projectBDifficulty = b?.difficulty || 'beginner';
         return (
-          projectDifficulties.indexOf(projectADifficulty) -
-          projectDifficulties.indexOf(projectBDifficulty)
+          allowedOfficialProjectDifficulty.indexOf(projectADifficulty) -
+          allowedOfficialProjectDifficulty.indexOf(projectBDifficulty)
         );
       }),
     [visibleProjects],
@@ -111,7 +111,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
         {isFilterOpen && <X size={13} className="mr-1" />}
         Categories
       </button>
-      <div className="container relative flex flex-col gap-4 sm:flex-row">
+      <div className="relative container flex flex-col gap-4 sm:flex-row">
         <div
           className={cn(
             'hidden w-full flex-col from-gray-100 sm:w-[160px] sm:shrink-0 sm:border-r sm:bg-linear-to-l sm:pt-6',
@@ -171,7 +171,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
             </div>
           </div>
         </div>
-        <div className="flex grow flex-col pb-20 pt-2 sm:pt-6">
+        <div className="flex grow flex-col pt-2 pb-20 sm:pt-6">
           <div className="mb-4 flex items-center justify-between text-sm text-gray-500">
             <h3 className={'flex items-center'}>
               <Box size={15} className="mr-1" strokeWidth={2} />
@@ -187,9 +187,9 @@ export function ProjectsPage(props: ProjectsPageProps) {
           <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
             {sortedVisibleProjects.map((project) => (
               <ProjectCard
-                key={project.id}
+                key={project.slug}
                 project={project}
-                userCount={userCounts[project.id] || 0}
+                userCount={userCounts[project.slug] || 0}
                 status={'none'}
               />
             ))}

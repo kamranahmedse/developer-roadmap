@@ -1,20 +1,19 @@
 import { Badge } from '../Badge.tsx';
-import type {
-  ProjectDifficultyType,
-  ProjectFileType,
-} from '../../lib/project.ts';
 import { Users } from 'lucide-react';
 import { formatCommaNumber } from '../../lib/number.ts';
 import { cn } from '../../lib/classname.ts';
-import { isLoggedIn } from '../../lib/jwt.ts';
+import type {
+  AllowedOfficialProjectDifficulty,
+  OfficialProjectDocument,
+} from '../../queries/official-project.ts';
 
 type ProjectCardProps = {
-  project: ProjectFileType;
+  project: OfficialProjectDocument;
   userCount?: number;
   status?: 'completed' | 'started' | 'none';
 };
 
-const badgeVariants: Record<ProjectDifficultyType, string> = {
+const badgeVariants: Record<AllowedOfficialProjectDifficulty, string> = {
   beginner: 'yellow',
   intermediate: 'green',
   advanced: 'blue',
@@ -22,26 +21,24 @@ const badgeVariants: Record<ProjectDifficultyType, string> = {
 
 export function ProjectCard(props: ProjectCardProps) {
   const { project, userCount = 0, status } = props;
-  const { frontmatter, id } = project;
+  const { difficulty, title, description, slug, topics = [] } = project;
 
   const isLoadingStatus = status === undefined;
-  const userStartedCount = status !== 'none' && userCount === 0 ? userCount + 1 : userCount;
+  const userStartedCount =
+    status !== 'none' && userCount === 0 ? userCount + 1 : userCount;
 
   return (
     <a
-      href={`/projects/${id}`}
+      href={`/projects/${slug}`}
       className="flex flex-col rounded-md border bg-white p-3 transition-colors hover:border-gray-300 hover:bg-gray-50"
     >
       <span className="flex justify-between gap-1.5">
-        <Badge
-          variant={badgeVariants[frontmatter.difficulty] as any}
-          text={frontmatter.difficulty}
-        />
-        <Badge variant={'grey'} text={frontmatter.nature} />
+        <Badge variant={badgeVariants[difficulty] as any} text={difficulty} />
+        {topics?.map((topic) => <Badge variant={'grey'} text={topic} />)}
       </span>
       <span className="my-3 flex min-h-[100px] flex-col">
-        <span className="mb-1 font-medium">{frontmatter.title}</span>
-        <span className="text-sm text-gray-500">{frontmatter.description}</span>
+        <span className="mb-1 font-medium">{title}</span>
+        <span className="text-sm text-gray-500">{description}</span>
       </span>
       <span className="flex min-h-[22px] items-center justify-between gap-2 text-xs text-gray-400">
         {isLoadingStatus ? (

@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getRoadmapsProjects } from '../../lib/project';
 import { ProjectsPageHeader } from '../../components/Projects/ProjectsPageHeader';
 import { ProjectsPage } from '../../components/Projects/ProjectsPage';
 import { projectApi } from '../../api/project';
 import { listOfficialRoadmaps } from '../../queries/official-roadmap';
+import { getRoadmapsProjects } from '../../queries/official-project';
 
 export const prerender = false;
 
@@ -18,7 +18,7 @@ const allRoadmaps = roadmaps.filter((roadmap) =>
 
 const enrichedRoadmaps = allRoadmaps.map((roadmap) => {
   const projects = (roadmapProjects[roadmap.slug] || []).sort((a, b) => {
-    return a.frontmatter.sort - b.frontmatter.sort;
+    return a.order - b.order;
   });
 
   return {
@@ -31,7 +31,7 @@ const enrichedRoadmaps = allRoadmaps.map((roadmap) => {
 const projectIds = allRoadmapIds
   .map((id) => roadmapProjects[id])
   .flat()
-  .map((project) => project.id);
+  .map((project) => project.slug);
 const projectApiClient = projectApi(Astro);
 const { response: userCounts } =
   await projectApiClient.listProjectsUserCount(projectIds);

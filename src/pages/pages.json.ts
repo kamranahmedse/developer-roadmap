@@ -1,12 +1,12 @@
 import { getAllBestPractices } from '../lib/best-practice';
 import { getAllVideos } from '../lib/video';
 import { getAllQuestionGroups } from '../lib/question-group';
-import { getAllProjects } from '../lib/project';
 import {
   listOfficialAuthors,
   listOfficialGuides,
 } from '../queries/official-guide';
 import { listOfficialRoadmaps } from '../queries/official-roadmap';
+import { listOfficialProjects } from '../queries/official-project';
 
 // Add utility to fetch beginner roadmap file IDs
 function getBeginnerRoadmapIds() {
@@ -28,7 +28,7 @@ export async function GET() {
   const roadmaps = await listOfficialRoadmaps();
 
   const bestPractices = await getAllBestPractices();
-  const projects = await getAllProjects();
+  const projects = await listOfficialProjects();
 
   // Transform main roadmaps into page objects first so that we can reuse their meta for beginner variants
   const roadmapPages = roadmaps
@@ -114,11 +114,11 @@ export async function GET() {
         group: 'Videos',
       })),
       ...projects.map((project) => ({
-        id: project.id,
-        url: `/projects/${project.id}`,
-        title: project.frontmatter.title,
-        description: project.frontmatter.description,
-        shortTitle: project.frontmatter.title,
+        id: project.slug,
+        url: `/projects/${project.slug}`,
+        title: project.title,
+        description: project.description,
+        shortTitle: project.title,
         group: 'Projects',
       })),
     ]),

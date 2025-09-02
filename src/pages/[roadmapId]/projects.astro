@@ -3,10 +3,10 @@ import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import { EmptyProjects } from '../../components/Projects/EmptyProjects';
 import { ProjectsList } from '../../components/Projects/ProjectsList';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getProjectsByRoadmapId } from '../../lib/project';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { projectApi } from '../../api/project';
 import { officialRoadmapDetails } from '../../queries/official-roadmap';
+import { listOfficialProjects } from '../../queries/official-project';
 
 export const prerender = false;
 
@@ -46,8 +46,8 @@ const nounTitle =
   descriptionNoun[roadmapData?.title.card] || roadmapData.title.card;
 const seoDescription = `Seeking ${nounTitle.toLowerCase()} projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`;
 
-const projects = await getProjectsByRoadmapId(roadmapId);
-const projectIds = projects.map((project) => project.id);
+const projects = await listOfficialProjects({ roadmapId });
+const projectIds = projects.map((project) => project.slug);
 
 const projectApiClient = projectApi(Astro);
 const { response: userCounts } =

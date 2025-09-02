@@ -2,11 +2,7 @@ import { ProjectCard } from './ProjectCard.tsx';
 import { HeartHandshake, Trash2 } from 'lucide-react';
 import { cn } from '../../lib/classname.ts';
 import { useEffect, useMemo, useState } from 'react';
-import {
-  projectDifficulties,
-  type ProjectDifficultyType,
-  type ProjectFileType,
-} from '../../lib/project.ts';
+
 import {
   deleteUrlParam,
   getUrlParams,
@@ -14,9 +10,14 @@ import {
 } from '../../lib/browser.ts';
 import { httpPost } from '../../lib/http.ts';
 import { isLoggedIn } from '../../lib/jwt.ts';
+import {
+  allowedOfficialProjectDifficulty,
+  type AllowedOfficialProjectDifficulty,
+  type OfficialProjectDocument,
+} from '../../queries/official-project.ts';
 
 type DifficultyButtonProps = {
-  difficulty: ProjectDifficultyType;
+  difficulty: AllowedOfficialProjectDifficulty;
   isActive?: boolean;
   onClick?: () => void;
 };
@@ -46,7 +47,7 @@ export type ListProjectStatusesResponse = Record<
 >;
 
 type ProjectsListProps = {
-  projects: ProjectFileType[];
+  projects: OfficialProjectDocument[];
   userCounts: Record<string, number>;
 };
 
@@ -55,7 +56,7 @@ export function ProjectsList(props: ProjectsListProps) {
 
   const { difficulty: urlDifficulty } = getUrlParams();
   const [difficulty, setDifficulty] = useState<
-    ProjectDifficultyType | undefined
+    AllowedOfficialProjectDifficulty | undefined
   >(urlDifficulty);
   const [projectStatuses, setProjectStatuses] =
     useState<ListProjectStatusesResponse>();
@@ -66,7 +67,7 @@ export function ProjectsList(props: ProjectsListProps) {
       return;
     }
 
-    const projectIds = projects.map((project) => project.id);
+    const projectIds = projects.map((project) => project.slug);
     const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-list-project-statuses`,
       {
@@ -82,22 +83,27 @@ export function ProjectsList(props: ProjectsListProps) {
     setProjectStatuses(response);
   };
 
-  const projectsByDifficulty: Map<ProjectDifficultyType, ProjectFileType[]> =
-    useMemo(() => {
-      const result = new Map<ProjectDifficultyType, ProjectFileType[]>();
+  const projectsByDifficulty: Map<
+    AllowedOfficialProjectDifficulty,
+    OfficialProjectDocument[]
+  > = useMemo(() => {
+    const result = new Map<
+      AllowedOfficialProjectDifficulty,
+      OfficialProjectDocument[]
+    >();
 
-      for (const project of projects) {
-        const difficulty = project.frontmatter.difficulty;
+    for (const project of projects) {
+      const difficulty = project.difficulty;
 
-        if (!result.has(difficulty)) {
-          result.set(difficulty, []);
-        }
-
-        result.get(difficulty)?.push(project);
+      if (!result.has(difficulty)) {
+        result.set(difficulty, []);
       }
 
-      return result;
-    }, [projects]);
+      result.get(difficulty)?.push(project);
+    }
+
+    return result;
+  }, [projects]);
 
   const matchingProjects = difficulty
     ? projectsByDifficulty.get(difficulty) || []
@@ -111,7 +117,7 @@ export function ProjectsList(props: ProjectsListProps) {
     <div className="flex flex-col">
       <div className="my-2.5 flex items-center justify-between">
         <div className="flex flex-wrap gap-1">
-          {projectDifficulties.map((projectDifficulty) => (
+          {allowedOfficialProjectDifficulty.map((projectDifficulty) => (
             <DifficultyButton
               key={projectDifficulty}
               onClick={() => {
@@ -122,6 +128,7 @@ export function ProjectsList(props: ProjectsListProps) {
               isActive={projectDifficulty === difficulty}
             />
           ))}
+
           {difficulty && (
             <button
               onClick={() => {
@@ -155,25 +162,25 @@ export function ProjectsList(props: ProjectsListProps) {
 
         {matchingProjects
           .sort((project) => {
-            return project.frontmatter.difficulty === 'beginner'
+            return project.difficulty === 'beginner'
               ? -1
-              : project.frontmatter.difficulty === 'intermediate'
+              : project.difficulty === 'intermediate'
                 ? 0
                 : 1;
           })
           .sort((a, b) => {
-            return a.frontmatter.sort - b.frontmatter.sort;
+            return a.order - b.order;
           })
           .map((matchingProject) => {
-            const count = userCounts[matchingProject?.id] || 0;
+            const count = userCounts[matchingProject?.slug] || 0;
             return (
               <ProjectCard
-                key={matchingProject.id}
+                key={matchingProject.slug}
                 project={matchingProject}
                 userCount={count}
                 status={
                   projectStatuses
-                    ? (projectStatuses?.[matchingProject.id] || 'none')
+                    ? projectStatuses?.[matchingProject.slug] || 'none'
                     : undefined
                 }
               />
