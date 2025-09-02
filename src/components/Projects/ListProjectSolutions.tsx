@@ -3,21 +3,16 @@ import { useToast } from '../../hooks/use-toast';
 import { httpGet, httpPost } from '../../lib/http';
 import { LoadingSolutions } from './LoadingSolutions';
 import { EmptySolutions } from './EmptySolutions';
-import { ThumbsDown, ThumbsUp } from 'lucide-react';
-import { getRelativeTimeString } from '../../lib/date';
 import { Pagination } from '../Pagination/Pagination';
 import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
 import { pageProgressMessage } from '../../stores/page';
 import { LeavingRoadmapWarningModal } from './LeavingRoadmapWarningModal';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
-import { VoteButton } from './VoteButton.tsx';
-import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { SelectLanguages } from './SelectLanguages.tsx';
-import type { ProjectFrontmatter } from '../../lib/project.ts';
-import { ProjectSolutionModal } from './ProjectSolutionModal.tsx';
 import { SortProjects } from './SortProjects.tsx';
 import { ProjectSolutionRow } from './ProjectSolutionRow';
+import type { OfficialProjectDocument } from '../../queries/official-project.ts';
 
 export interface ProjectStatusDocument {
   _id?: string;
@@ -69,12 +64,12 @@ type PageState = {
 };
 
 type ListProjectSolutionsProps = {
-  project: ProjectFrontmatter;
+  project: OfficialProjectDocument;
   projectId: string;
 };
 
 export function ListProjectSolutions(props: ListProjectSolutionsProps) {
-  const { projectId, project: projectData } = props;
+  const { projectId, project } = props;
 
   const toast = useToast();
   const [pageState, setPageState] = useState<PageState>({
@@ -226,7 +221,7 @@ export function ListProjectSolutions(props: ListProjectSolutionsProps) {
       <div className="relative mb-5 hidden items-center justify-between sm:flex">
         <div>
           <h1 className="mb-1 text-xl font-semibold">
-            {projectData.title} Solutions
+            {project.title} Solutions
           </h1>
           <p className="text-sm text-gray-500">
             Solutions submitted by the community

@@ -14,10 +14,10 @@ import {
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
 import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
-import { getProjectsByRoadmapId } from '../../lib/project';
 import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
 import { officialRoadmapDetails } from '../../queries/official-roadmap';
 import { DateTime } from 'luxon';
+import { listOfficialProjects } from '../../queries/official-project';
 
 export const prerender = false;
 
@@ -73,7 +73,7 @@ if (faqs.length) {
   jsonLdSchema.push(generateFAQSchema(faqs));
 }
 
-const projects = await getProjectsByRoadmapId(roadmapId);
+const projects = await listOfficialProjects({ roadmapId });
 const courses = roadmapData.courses || [];
 ---
 

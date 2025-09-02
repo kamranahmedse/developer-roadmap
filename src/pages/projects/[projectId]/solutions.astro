@@ -1,13 +1,9 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import {
-  getAllProjects,
-  getProjectById,
-  type ProjectFrontmatter,
-} from '../../../lib/project';
 import { ProjectTabs } from '../../../components/Projects/ProjectTabs';
 import { ListProjectSolutions } from '../../../components/Projects/ListProjectSolutions';
 import { ProjectSolutionModal } from '../../../components/Projects/ProjectSolutionModal';
+import { officialProjectDetails } from '../../../queries/official-project';
 
 export const prerender = false;
 
@@ -17,31 +13,22 @@ interface Params extends Record<string, string | undefined> {
 
 const { projectId } = Astro.params as Params;
 
-const project = await getProjectById(projectId);
+const project = await officialProjectDetails(projectId);
 if (!project) {
   Astro.response.status = 404;
   Astro.response.statusText = 'Not found';
   return Astro.rewrite('/404');
 }
 
-const projectData = project.frontmatter as ProjectFrontmatter;
-
-let jsonLdSchema: any[] = [];
-
-const parentRoadmapId = projectData?.roadmapIds?.[0] || '';
-
-const ogImageUrl = projectData?.seo?.ogImageUrl || '/img/og-img.png';
-const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/projects/${projectId}.md`;
+const parentRoadmapId = project?.roadmapIds?.[0] || '';
 ---
 
 <BaseLayout
   permalink={`/projects/${projectId}/solutions`}
-  title={projectData?.seo?.title}
-  briefTitle={projectData.title}
-  ogImageUrl={ogImageUrl}
-  description={projectData.seo.description}
-  keywords={projectData.seo.keywords}
-  jsonLd={jsonLdSchema}
+  title={project?.seo?.title || project.title}
+  briefTitle={project.title}
+  description={project.seo.description || project.description}
+  keywords={project.seo.keywords}
   resourceId={projectId}
 >
   <div class='bg-gray-50'>
@@ -53,15 +40,15 @@ const githubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/maste
       />
 
       <ListProjectSolutions
-        project={projectData}
+        project={project}
         projectId={projectId}
         client:load
       />
 
       <ProjectSolutionModal
         projectId={projectId}
-        projectTitle={projectData.title}
-        projectDescription={projectData.description}
+        projectTitle={project.title}
+        projectDescription={project.description}
         client:only='react'
       />
     </div>
