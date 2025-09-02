@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is data engineering?](https://www.ibm.com/think/topics/data-engineering)
 - [@article@How to Become a Data Engineer in 2025: 5 Steps for Career Success](https://www.datacamp.com/blog/how-to-become-a-data-engineer)
-- [@video@WHow Data Engineering Works?](https://www.youtube.com/watch?v=qWru-b6m030)
+- [@video@How Data Engineering Works?](https://www.youtube.com/watch?v=qWru-b6m030)
