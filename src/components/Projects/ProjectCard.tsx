@@ -2,10 +2,7 @@ import { Badge } from '../Badge.tsx';
 import { Users } from 'lucide-react';
 import { formatCommaNumber } from '../../lib/number.ts';
 import { cn } from '../../lib/classname.ts';
-import type {
-  AllowedOfficialProjectDifficulty,
-  OfficialProjectDocument,
-} from '../../queries/official-project.ts';
+import type { OfficialProjectDocument } from '../../queries/official-project.ts';
 
 type ProjectCardProps = {
   project: OfficialProjectDocument;
@@ -13,11 +10,11 @@ type ProjectCardProps = {
   status?: 'completed' | 'started' | 'none';
 };
 
-const badgeVariants: Record<AllowedOfficialProjectDifficulty, string> = {
+const badgeVariants = {
   beginner: 'yellow',
   intermediate: 'green',
   advanced: 'blue',
-};
+} as const;
 
 export function ProjectCard(props: ProjectCardProps) {
   const { project, userCount = 0, status } = props;
@@ -33,8 +30,10 @@ export function ProjectCard(props: ProjectCardProps) {
       className="flex flex-col rounded-md border bg-white p-3 transition-colors hover:border-gray-300 hover:bg-gray-50"
     >
       <span className="flex justify-between gap-1.5">
-        <Badge variant={badgeVariants[difficulty] as any} text={difficulty} />
-        {topics?.map((topic) => <Badge variant={'grey'} text={topic} />)}
+        <Badge variant={badgeVariants[difficulty]} text={difficulty} />
+        {topics?.map((topic, index) => (
+          <Badge key={`${topic}-${index}`} variant={'grey'} text={topic} />
+        ))}
       </span>
       <span className="my-3 flex min-h-[100px] flex-col">
         <span className="mb-1 font-medium">{title}</span>
