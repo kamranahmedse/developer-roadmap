@@ -5,31 +5,24 @@ import {
   listOfficialAuthors,
   listOfficialGuides,
 } from '../queries/official-guide';
-import { listOfficialRoadmaps } from '../queries/official-roadmap';
+import {
+  listOfficialBeginnerRoadmaps,
+  listOfficialRoadmaps,
+} from '../queries/official-roadmap';
 import { listOfficialProjects } from '../queries/official-project';
-
-// Add utility to fetch beginner roadmap file IDs
-function getBeginnerRoadmapIds() {
-  const files = import.meta.glob('/src/data/roadmaps/*/*-beginner.json', {
-    eager: true,
-  });
-
-  return Object.keys(files).map((filePath) => {
-    const fileName = filePath.split('/').pop() || '';
-    return fileName.replace('.json', '');
-  });
-}
 
 export async function GET() {
   const guides = await listOfficialGuides();
   const authors = await listOfficialAuthors();
   const videos = await getAllVideos();
   const questionGroups = await getAllQuestionGroups();
-  const roadmaps = await listOfficialRoadmaps();
+  const mainRoadmaps = await listOfficialRoadmaps();
+  const beginnerRoadmaps = await listOfficialBeginnerRoadmaps();
 
   const bestPractices = await getAllBestPractices();
   const projects = await listOfficialProjects();
 
+  const roadmaps = [...mainRoadmaps, ...beginnerRoadmaps];
   // Transform main roadmaps into page objects first so that we can reuse their meta for beginner variants
   const roadmapPages = roadmaps
     .map((roadmap) => {

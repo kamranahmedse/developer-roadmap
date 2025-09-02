@@ -128,6 +128,22 @@ export async function listOfficialRoadmaps() {
   }
 }
 
+export async function listOfficialBeginnerRoadmaps() {
+  try {
+    const roadmaps = await httpGet<OfficialRoadmapDocument[]>(
+      `/v1-list-official-beginner-roadmaps`,
+    );
+
+    return roadmaps;
+  } catch (error) {
+    if (FetchError.isFetchError(error) && error.status === 404) {
+      return [];
+    }
+
+    throw error;
+  }
+}
+
 export function isNewRoadmap(createdAt: Date) {
   return (
     createdAt &&
