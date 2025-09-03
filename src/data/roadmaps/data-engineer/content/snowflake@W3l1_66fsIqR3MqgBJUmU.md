@@ -1,6 +1,6 @@
 # Snowflake
 
-Snowflake is a cloud-based data platform that provides a data warehouse as a service. It allows organizations to store, analyze, and share data, offering features like data engineering, data governance, and collaboration capabilities. Snowflake is known for its scalability, ease of use, and ability to handle diverse workloads, including data warehousing, data lakes, and machine learning. 
+Snowflake is a cloud-based data platform that provides a data warehouse as a service. It allows organizations to store, analyze, and share data, offering features like data engineering, data governance, and collaboration capabilities. Snowflake is known for its scalability, ease of use, and ability to handle diverse workloads, including data warehousing, data lakes, and machine learning.
 
 Visit the following resources to learn more:
 

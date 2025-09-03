@@ -5,6 +5,6 @@ Apache Cassandra is a highly scalable, distributed NoSQL database designed to ha
 Visit the following resources to learn more:
 
 - [@official@Apache Cassandra](https://cassandra.apache.org/_/index.html)
-- [article@Cassandra - Quick Guide](https://www.tutorialspoint.com/cassandra/cassandra_quick_guide.htm)
+- [@article@article@Cassandra - Quick Guide](https://www.tutorialspoint.com/cassandra/cassandra_quick_guide.htm)
 - [@video@Apache Cassandra - Course for Beginners](https://www.youtube.com/watch?v=J-cSy5MeMOA)
 - [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)

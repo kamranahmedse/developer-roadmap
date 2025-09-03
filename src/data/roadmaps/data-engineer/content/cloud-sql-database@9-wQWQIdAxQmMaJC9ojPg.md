@@ -4,6 +4,6 @@ Google Cloud SQL is a fully-managed, cost-effective and scalable database servic
 
 Visit the following resources to learn more:
 
+- [@course@Cloud SQL](https://www.cloudskillsboost.google/course_templates/701)
 - [@official@Cloud SQL](https://cloud.google.com/sql)
 - [@official@Cloud SQL overview](https://cloud.google.com/sql/docs/introduction)
-- [@course@Cloud SQL](https://www.cloudskillsboost.google/course_templates/701)

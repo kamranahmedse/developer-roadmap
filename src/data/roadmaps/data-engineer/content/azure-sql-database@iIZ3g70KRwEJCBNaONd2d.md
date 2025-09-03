@@ -1,6 +1,6 @@
 # Azure SQL Database
 
-Azure SQL Database is a fully managed Platform as a Service (PaaS) offering. It abstracts the underlying infrastructure, enabling developers to focus on building and deploying applications without worrying about database maintenance tasks. 
+Azure SQL Database is a fully managed Platform as a Service (PaaS) offering. It abstracts the underlying infrastructure, enabling developers to focus on building and deploying applications without worrying about database maintenance tasks.
 
 Visit the following resources to learn more:
 
