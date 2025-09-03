@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@SAmazon Aurora](https://aws.amazon.com/rds/aurora/)
 - [@article@SAmazon Aurora: What It Is, How It Works, and How to Get Started](https://www.datacamp.com/tutorial/amazon-aurora)
-

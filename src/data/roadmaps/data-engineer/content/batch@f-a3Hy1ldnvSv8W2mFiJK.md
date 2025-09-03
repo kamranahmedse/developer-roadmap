@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@What is Batch Processing?](https://aws.amazon.com/what-is/batch-processing/)
 - [@article@Batch And Streaming Demystified For Unification](https://towardsdatascience.com/batch-and-streaming-demystified-for-unification-dee0b48f921d/)
-

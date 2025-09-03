@@ -4,6 +4,6 @@ dbt, also known as the data build tool, is designed to simplify the management o
 
 Visit the following resources to learn more:
 
+- [@course@dbt Official Courses](https://learn.getdbt.com/catalog)
 - [@official@dbt](https://www.getdbt.com/product/what-is-dbt)
 - [@official@dbt Documentation](https://docs.getdbt.com/docs/build/documentation)
-- [@course@dbt Official Courses](https://learn.getdbt.com/catalog)

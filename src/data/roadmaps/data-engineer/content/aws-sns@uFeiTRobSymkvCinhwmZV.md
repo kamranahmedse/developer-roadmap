@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@Amazon Simple Notification Service (SNS) ](http://aws.amazon.com/sns/)
 - [@official@Send Fanout Event Notifications](https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/)
 - [@article@What is Pub/Sub Messaging?](https://aws.amazon.com/what-is/pub-sub-messaging/)
-

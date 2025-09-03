@@ -6,8 +6,7 @@
 
 Visit the following resources to learn more:
 
-- [@video@Data Structures Illustrated](https://www.youtube.com/watch?v=9rhT3P1MDHk\&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)
 - [@article@Interview Questions about Data Structures](https://www.csharpstar.com/csharp-algorithms/)
+- [@video@Data Structures Illustrated](https://www.youtube.com/watch?v=9rhT3P1MDHk&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)
 - [@video@Intro to Algorithms](https://www.youtube.com/watch?v=rL8X2mlNHPM)
 - [@feed@Explore top posts about Algorithms](https://app.daily.dev/tags/algorithms?ref=roadmapsh)
-
