@@ -34,10 +34,11 @@ export const projectGroups = [
   },
 ];
 
-const guides = await listOfficialGuides();
-const questionGuides = guides.filter(
+const allGuides = await listOfficialGuides();
+const questionGuides = allGuides.filter(
   (guide) => guide.roadmapId === 'questions',
 );
+const guides = allGuides.filter((guide) => guide.roadmapId !== 'questions');
 
 const videos = await getAllVideos();
 ---
