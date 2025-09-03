@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@What is reinforcement learning?](https://online.york.ac.uk/resources/what-is-reinforcement-learning/)
 - [@article@Resources to Learn Reinforcement Learning](https://towardsdatascience.com/best-free-courses-and-resources-to-learn-reinforcement-learning-ed6633608cb2/)
-- [@course@Deep Reinforcement Learning Course by HuggingFace]](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
+- [@article@https://huggingface.co/learn/deep-rl-course/unit0/introduction](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
 - [@video@Reinforcement Learning in 3 Hours | Full Course using Python](https://www.youtube.com/watch?v=Mut_u40Sqz4)

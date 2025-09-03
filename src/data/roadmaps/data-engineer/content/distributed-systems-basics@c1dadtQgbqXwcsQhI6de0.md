@@ -4,6 +4,6 @@ A distributed system is a collection of independent computers that communicate a
 
 Visit the following resources to learn more:
 
-- [@video@Quick overview](https://www.youtube.com/watch?v=IJWwfMyPu1c)
 - [@article@Introduction to Distributed Systems](https://www.freecodecamp.org/news/a-thorough-introduction-to-distributed-systems-3b91562c9b3c/)
 - [@article@Distributed Systems Guide](https://www.baeldung.com/cs/distributed-systems-guide)
+- [@video@Quick overview](https://www.youtube.com/watch?v=IJWwfMyPu1c)

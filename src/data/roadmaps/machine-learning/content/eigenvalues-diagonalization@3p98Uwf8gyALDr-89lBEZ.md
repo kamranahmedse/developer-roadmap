@@ -5,6 +5,6 @@ Eigenvalues are special numbers associated with a square matrix that, when multi
 Visit the following resources to learn more:
 
 - [@article@Eigenvalues and eigenvectors](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors)
-- [@video@Finding Eigenvalues and Eigenvectors](https://www.youtube.com/watch?v=TQvxWaQnrqI)
 - [@article@Matrix Diagonalization](https://www.statlect.com/matrix-algebra/matrix-diagonalization)
+- [@video@Finding Eigenvalues and Eigenvectors](https://www.youtube.com/watch?v=TQvxWaQnrqI)
 - [@video@Diagonalization](https://www.youtube.com/watch?v=WTLl03D4TNA)

@@ -4,7 +4,7 @@ Generative Adversarial Networks (GANs) are a type of neural network architecture
 
 Visit the following resources to learn more:
 
+- [@course@GANs | Google](https://developers.google.com/machine-learning/gan)
 - [@article@What is a GAN? | AWS](https://aws.amazon.com/what-is/gan/)
 - [@article@Generative Adversarial Networks | HuggingFace](https://huggingface.co/learn/computer-vision-course/en/unit5/generative-models/gans)
-- [@course@GANs | Google](https://developers.google.com/machine-learning/gan)
 - [@video@What are GANs (Generative Adversarial Networks)?](https://www.youtube.com/watch?v=TpMIssRdhco)

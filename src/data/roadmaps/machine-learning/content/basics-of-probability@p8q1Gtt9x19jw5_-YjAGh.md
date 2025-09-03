@@ -4,7 +4,7 @@ Probability is a way to quantify the likelihood of an event occurring. It provid
 
 Visit the following resources to learn more:
 
+- [@book@Probability and Statistics: The Science of Uncertainty](https://utstat.utoronto.ca/mikevans/jeffrosenthal/book.pdf)
 - [@article@Probability](https://en.wikipedia.org/wiki/Probability)
 - [@article@Probability](https://www.mathsisfun.com/data/probability.html)
 - [@video@Probability Bootcamp](https://www.youtube.com/playlist?list=PLMrJAkhIeNNR3sNYvfgiKgcStwuPSts9V)
-- [@book@Probability and Statistics: The Science of Uncertainty](https://utstat.utoronto.ca/mikevans/jeffrosenthal/book.pdf)

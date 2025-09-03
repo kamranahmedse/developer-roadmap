@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@What is a Key Value Database? - AWS](https://aws.amazon.com/nosql/key-value/)
 - [@article@What Is A Key-Value Database? - MongoDB](https://www.mongodb.com/resources/basics/databases/key-value-database)
-

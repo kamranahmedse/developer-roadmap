@@ -1,7 +1,6 @@
 # CosmosDB
 
-Azure Cosmos DB is a native No-SQL database service and vector database for working with the document data model. It can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. It also supports vector search. You can access the API using SDKs for popular frameworks such as.NET, Python, Java, and Node.js.
-
+Azure Cosmos DB is a native No-SQL database service and vector database for working with the document data model. It can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. It also supports vector search. You can access the API using SDKs for popular frameworks such [as.NET](http://as.NET), Python, Java, and Node.js.
 
 Visit the following resources to learn more:
 

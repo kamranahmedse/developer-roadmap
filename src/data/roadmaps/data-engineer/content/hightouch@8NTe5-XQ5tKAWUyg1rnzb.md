@@ -6,6 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Hightouch Docs](https://hightouch.com/docs)
 - [@video@What is Hightouch? - The Data Activation Platform](https://www.youtube.com/watch?v=vMm87-MC7og)
-
-
-

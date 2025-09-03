@@ -7,5 +7,3 @@ Visit the following resources to learn more:
 - [@official@BigQuery overview](https://cloud.google.com/bigquery/docs/introduction)
 - [@official@From data warehouse to autonomous data and AI platform](https://cloud.google.com/bigquery)
 - [@video@What is BigQuery?](https://www.youtube.com/watch?v=d3MDxC_iuaw)
-
-

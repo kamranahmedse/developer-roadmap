@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@article@What is Infrastructure as Code?](https://aws.amazon.com/what-is/iac/)
 - [@article@Infrastructure as Code](https://en.wikipedia.org/wiki/Infrastructure_as_code)
 - [@video@What is Infrastructure as Code?](https://www.youtube.com/watch?v=zWw2wuiKd5o)
-

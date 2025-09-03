@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@Amazon Simple Queue Service](https://aws.amazon.com/sqs/)
 - [@official@What is Amazon Simple Queue Service?](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
 - [@article@Amazon Simple Queue Service (SQS): A Comprehensive Tutorial](https://www.datacamp.com/tutorial/amazon-sqs)
-

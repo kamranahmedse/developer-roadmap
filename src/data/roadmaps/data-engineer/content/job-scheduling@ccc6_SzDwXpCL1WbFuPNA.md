@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Job scheduler](https://en.wikipedia.org/wiki/Job_scheduler)
 - [@article@Cluster Resources — Job Scheduling](https://supun-kamburugamuve.medium.com/cluster-resources-job-scheduling-bb63644476bc)
-

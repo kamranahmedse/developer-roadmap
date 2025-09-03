@@ -4,5 +4,5 @@ Authentication and authorization are popular terms in modern computer systems th
 
 Visit the following resources to learn more:
 
-- [@roadmap.sh@Basic Authentication](https://roadmap.sh/guides/basic-authentication)
+- [@article@Basic Authentication](https://roadmap.sh/guides/basic-authentication)
 - [@article@What is Authentication vs Authorization?](https://auth0.com/intro-to-iam/authentication-vs-authorization)

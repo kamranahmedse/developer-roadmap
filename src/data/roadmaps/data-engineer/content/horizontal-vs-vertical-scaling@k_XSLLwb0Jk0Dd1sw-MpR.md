@@ -8,7 +8,3 @@ Visit the following resources to learn more:
 
 - [@article@Horizontal Vs. Vertical Scaling: Which Should You Choose?](https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling/)
 - [@video@Vertical Vs Horizontal Scaling: Key Differences You Should Know](https://www.youtube.com/watch?v=dvRFHG2-uYs)
-
-
-
-
