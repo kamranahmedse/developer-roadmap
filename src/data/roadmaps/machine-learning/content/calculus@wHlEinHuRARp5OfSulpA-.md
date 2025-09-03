@@ -4,6 +4,6 @@ Calculus is a branch of mathematics that deals with continuous change. It provid
 
 Visit the following resources to learn more:
 
-- [@article@Calculus](https://en.wikipedia.org/wiki/Calculus)
 - [@book@Calculus Online Textbook](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/pages/textbook/)
+- [@article@Calculus](https://en.wikipedia.org/wiki/Calculus)
 - [@video@Calculus](https://www.youtube.com/playlist?list=PLybg94GvOJ9ELZEe9s2NXTKr41Yedbw7M)

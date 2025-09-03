@@ -4,5 +4,5 @@ A neural network is a computational model inspired by the structure and function
 
 Visit the following resources to learn more:
 
-- [@video@Neural Networks Explained in 5 minutes](https://www.youtube.com/watch?v=jmmW0F0biz0)
 - [@course@Practical Deep Learning](https://course.fast.ai/)
+- [@video@Neural Networks Explained in 5 minutes](https://www.youtube.com/watch?v=jmmW0F0biz0)

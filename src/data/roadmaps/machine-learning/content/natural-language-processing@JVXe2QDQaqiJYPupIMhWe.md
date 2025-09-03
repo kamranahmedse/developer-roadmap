@@ -4,7 +4,7 @@ Natural Language Processing (NLP) is a field focused on enabling computers to un
 
 Visit the following resources to learn more:
 
+- [@book@Natural Language Processing with Python](https://tjzhifei.github.io/resources/NLTK.pdf)
 - [@article@Natural Language Processing](https://www.deeplearning.ai/resources/natural-language-processing/)
 - [@article@What is Natural Language Processing (NLP)? | AWS](https://aws.amazon.com/what-is/nlp/)
 - [@video@Stanford’s Natural Language Processing with Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4)
-- [@book@Natural Language Processing with Python](https://tjzhifei.github.io/resources/NLTK.pdf)

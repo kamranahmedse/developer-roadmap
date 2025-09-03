@@ -4,6 +4,6 @@ Singular Value Decomposition (SVD) is a matrix factorization technique that deco
 
 Visit the following resources to learn more:
 
+- [@book@Singular Value Decomposition](https://www.cs.cmu.edu/~venkatg/teaching/CStheory-infoage/book-chapter-4.pdf)
 - [@article@Singular Value Decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition)
 - [@video@Singular Value Decomposition (SVD): Overview](https://www.youtube.com/watch?v=gXbThCXjZFM)
-- [@book@Singular Value Decomposition](https://www.cs.cmu.edu/~venkatg/teaching/CStheory-infoage/book-chapter-4.pdf)
