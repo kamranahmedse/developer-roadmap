@@ -4,7 +4,7 @@ Keras is a high-level, user-friendly neural networks API written in Python. It a
 
 Visit the following resources to learn more:
 
+- [@course@Getting Familiar with Keras](https://towardsdatascience.com/getting-familiar-with-keras-dd17a110652d/)
 - [@official@Keras](https://keras.io/)
 - [@opensource@Keras](https://github.com/keras-team/keras)
-- [@course@Getting Familiar with Keras](https://towardsdatascience.com/getting-familiar-with-keras-dd17a110652d/)
 - [@article@Keras Crash Course | Deep Learning, Image Modelling, RNNs and More](https://www.youtube.com/watch?v=a8op1jBG7oM)

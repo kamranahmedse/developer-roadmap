@@ -4,6 +4,6 @@ Statistics is the science of collecting, analyzing, interpreting, presenting, an
 
 Visit the following resources to learn more:
 
-- [@article@Introduction to Statistics](https://imp.i384100.net/3eRv4v)
 - [@book@Introductory Statistics](https://assets.openstax.org/oscms-prodcms/media/documents/IntroductoryStatistics-OP_i6tAI7e.pdf)
+- [@article@Introduction to Statistics](https://imp.i384100.net/3eRv4v)
 - [@video@Statistics - A Full University Course on Data Science Basics](https://www.youtube.com/watch?v=xxpc-HPKN28)
