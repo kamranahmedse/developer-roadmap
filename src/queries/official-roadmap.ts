@@ -105,6 +105,7 @@ export async function officialRoadmapDetails(roadmapSlug: string) {
     return roadmap;
   } catch (error) {
     if (FetchError.isFetchError(error) && error.status === 404) {
+      console.log('Roadmap not found', roadmapSlug);
       return null;
     }
 
