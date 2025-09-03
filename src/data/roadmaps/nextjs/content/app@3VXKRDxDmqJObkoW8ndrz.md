@@ -4,5 +4,5 @@ The App Router is a file-system based router that uses React's latest features, 
 
 Visit the following resources to learn more:
 
-- [@article@App Router Tutorial](https://nextjs.org/learn/dashboard-app)
-- [@article@Next js Tutorial for Beginners | Nextjs 13 (App Router) with TypeScript](https://www.youtube.com/watch?v=ZVnjOPwW4ZA)
+- [@official@App Router Tutorial](https://nextjs.org/learn/dashboard-app)
+- [@video@Next js Tutorial for Beginners | Nextjs 13 (App Router) with TypeScript](https://www.youtube.com/watch?v=ZVnjOPwW4ZA)
