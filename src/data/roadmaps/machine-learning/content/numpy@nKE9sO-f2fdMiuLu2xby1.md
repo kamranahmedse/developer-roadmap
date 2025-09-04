@@ -4,7 +4,7 @@ NumPy is a fundamental Python library used for numerical computing. It provides 
 
 Visit the following resources to learn more:
 
-- [@official@Numpy](https://numpy.org/)
-- [@opensource@Numpy](https://github.com/numpy/numpy)
-- [@article@Python Numpy Array Tutorial](https://www.datacamp.com/tutorial/python-numpy-tutorial)
+- [@official@NumPy](https://numpy.org/)
+- [@opensource@NumPy](https://github.com/numpy/numpy)
+- [@article@Python NumPy Array Tutorial](https://www.datacamp.com/tutorial/python-numpy-tutorial)
 - [@video@Learn NumPy in 1 hour!](https://www.youtube.com/watch?v=VXU4LSAQDSc)
