@@ -19,7 +19,7 @@ export function GuideContent(props: GuideContentProps) {
   return (
     <article className="lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]">
       {(showTableOfContent || hasRelatedGuides) && (
-        <div className="sticky top-0 bg-linear-to-r from-gray-50 py-0 lg:relative lg:col-start-3 lg:col-end-4 lg:row-start-1">
+        <div className="sticky top-[36px] bg-linear-to-r from-gray-50 py-0 lg:relative lg:col-start-3 lg:col-end-4 lg:row-start-1">
           {hasRelatedGuides && (
             <RelatedGuides relatedGuides={guide?.relatedGuides || []} />
           )}
