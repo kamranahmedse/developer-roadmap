@@ -42,7 +42,6 @@ export interface Props {
   jsonLd?: Record<string, unknown>[];
   resourceId?: string;
   resourceType?: ResourceType;
-  hasVarify?: boolean;
 }
 
 const {
@@ -61,7 +60,6 @@ const {
   initialLoadingMessage = '',
   resourceId,
   resourceType,
-  hasVarify = false,
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
@@ -162,23 +160,6 @@ const gaPageIdentifier = Astro.url.pathname
     <link rel='preconnect' href='https://www.google-analytics.com/' />
     <link rel='preconnect' href='https://api.roadmap.sh/' />
 
-    {
-      hasVarify && (
-        <Fragment>
-          <style is:inline>.varify-antiflicker{opacity:0 !important}</style>
-          <script is:inline>
-            window.setTimeout(() => {
-              document.querySelectorAll('.varify-antiflicker').forEach((el) => {
-                el.classList.remove('varify-antiflicker');
-              });
-            }, 4000);
-            window.varify = window.varify || {};
-            window.varify.iid = 4013;
-          </script>
-          <script is:inline src='https://app.varify.io/varify.js' />
-        </Fragment>
-      )
-    }
     <!-- Google Tag Manager Start -->
     <script is:inline>
       (function (w, d, s, l, i) {
