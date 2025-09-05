@@ -1,3 +1,4 @@
+
 # Videos
 To use and optimize videos in a Next.js application, serve modern formats like MP4 or WebM through the video tag with attributes such as controls, muted, and preload="metadata", lazy-load them to improve performance, provide multiple resolutions or adaptive streaming for responsiveness, deliver them via a CDN with proper caching, and include captions or fallback text for accessibility.
 
