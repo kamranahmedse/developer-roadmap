@@ -62,7 +62,7 @@ export async function httpCall<ResponseType = AppResponse>(
     });
 
     if (isServer) {
-      headers.set('roadmap-api-key', import.meta.env.ROADMAP_API_KEY);
+      headers.set('roadmap-api-key', import.meta?.env?.ROADMAP_API_KEY);
     }
 
     if (!isMultiPartFormData) {
