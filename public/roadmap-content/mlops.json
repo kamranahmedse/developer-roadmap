@@ -583,7 +583,7 @@
     "description": "CI/CD (Continuous Integration and Continuous Deployment/Delivery) is a software development practice that automates the process of integrating code changes, running tests, and deploying updates. Continuous Integration focuses on regularly merging code changes into a shared repository, followed by automated testing to ensure code quality. Continuous Deployment extends this by automatically releasing every validated change to production, while Continuous Delivery ensures code is always in a deployable state, but requires manual approval for production releases. CI/CD pipelines improve code reliability, reduce integration risks, and speed up the development lifecycle.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "What is CI/CD? - Gitlab",
+        "title": "What is CI/CD? - GitLab",
         "url": "https://about.gitlab.com/topics/ci-cd/",
         "type": "article"
       },

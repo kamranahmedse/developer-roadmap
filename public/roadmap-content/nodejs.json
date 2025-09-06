@@ -905,7 +905,7 @@
     "description": "_User-friendly glob matching_\n\nBased on fast-glob but adds a bunch of useful features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Github Globby",
+        "title": "GitHub Globby",
         "url": "https://github.com/sindresorhus/globby",
         "type": "opensource"
       },
@@ -1674,7 +1674,7 @@
     "description": "Drizzle lets you build your project the way you want, without interfering with your project or structure. Using Drizzle you can define and manage database schemas in TypeScript, access your data in a SQL-like or relational way, and take advantage of opt-in tools to make your developer experience amazing.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Drizzle Github",
+        "title": "Drizzle GitHub",
         "url": "https://github.com/drizzle-team/drizzle-orm",
         "type": "opensource"
       },
