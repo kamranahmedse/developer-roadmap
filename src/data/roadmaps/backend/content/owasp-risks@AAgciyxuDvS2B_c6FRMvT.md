@@ -1,6 +1,6 @@
 # OWASP Security Risks
 
-OWASP or Open Web Application Security Project is an online community that produces freely-available articles, methodologies, documentation, tools, and technologies in the field of web application security.
+OWASP (Open Web Application Security Project) is an online community producing freely-available articles, methodologies, documentation, tools, and technologies for web application security.
 
 Visit the following resources to learn more:
 

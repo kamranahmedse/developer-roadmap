@@ -1,6 +1,6 @@
 # MS IIS
 
-Microsoft Internet Information Services (IIS) is a flexible, secure, and high-performance web server developed by Microsoft for hosting and managing web applications and services on Windows Server. IIS supports a variety of web technologies, including ASP.NET, PHP, and static content. It provides features such as request handling, authentication, SSL/TLS encryption, and URL rewriting. IIS also offers robust management tools, including a graphical user interface and command-line options, for configuring and monitoring web sites and applications. It is commonly used for deploying enterprise web applications and services in a Windows-based environment, offering integration with other Microsoft technologies and services.
+Microsoft IIS is a flexible, secure web server for hosting web applications on Windows Server. Supports ASP.NET, PHP, static content with features like authentication, SSL/TLS, URL rewriting. Offers GUI and command-line management tools for enterprise Windows-based deployments.
 
 Visit the following resources to learn more:
 

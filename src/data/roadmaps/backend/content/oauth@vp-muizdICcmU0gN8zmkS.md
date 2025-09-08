@@ -1,6 +1,6 @@
 # OAuth
 
-OAuth is an open standard for authorization that allows third-party applications to access a user's resources without exposing their credentials. It works by issuing access tokens after users grant permission, which applications then use to interact with resource servers on behalf of the user. This process involves a resource owner (the user), a resource server (which holds the data), and an authorization server (which issues tokens). OAuth enables secure, token-based access management, commonly used for granting applications permissions to interact with services like social media accounts or cloud storage.
+OAuth is an open authorization standard allowing third-party applications to access user resources without exposing credentials. Uses access tokens issued after user permission, involving resource owner, resource server, and authorization server. Enables secure token-based access management for services.
 
 Visit the following resources to learn more:
 

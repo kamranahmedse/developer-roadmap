@@ -1,6 +1,6 @@
 # Observability
 
-Observability refers to the ability to understand and monitor the internal state of a system based on its external outputs, such as metrics, logs, and traces. It encompasses collecting, analyzing, and visualizing data to gain insights into system performance, detect anomalies, and troubleshoot issues. Effective observability involves integrating these data sources to provide a comprehensive view of system behavior, enabling proactive management and rapid response to problems. It helps in understanding complex systems, improving reliability, and optimizing performance by making it easier to identify and address issues before they impact users.
+Observability monitors system internal state through external outputs like metrics, logs, and traces. Involves collecting, analyzing, and visualizing data for performance insights, anomaly detection, and troubleshooting. Enables proactive management and rapid issue response.
 
 Visit the following resources to learn more:
 
