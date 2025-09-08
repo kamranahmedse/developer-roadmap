@@ -8,4 +8,5 @@ Visit the following resources to learn more:
 - [@video@C Programming Tutorial for Beginners](https://www.youtube.com/watch?v=KJgsSFOSQv0)
 - [@video@Learn C Programming with Dr. Chuck](https://www.youtube.com/watch?v=j-_s8f5K30I)
 - [@video@C Programming Full Course (Bro Code)](https://youtu.be/87SH2Cn0s9A)
+- [@book@Beej's Guide to C Programming](https://beej.us/guide/bgc/)
 - [@feed@Explore top posts about C Programming](https://app.daily.dev/tags/c?ref=roadmapsh)
