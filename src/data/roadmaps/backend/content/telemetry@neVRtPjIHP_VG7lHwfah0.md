@@ -1,6 +1,6 @@
 # Telemetry
 
-Telemetry involves the automated collection, transmission, and analysis of data from remote or distributed systems to monitor their performance and health. It provides real-time insights into system operations, helping to identify and diagnose issues, optimize performance, and ensure reliability. Telemetry systems collect metrics such as resource usage, error rates, and system events, which are then analyzed to detect anomalies, track trends, and inform decision-making. This data-driven approach is crucial for maintaining and improving the performance and stability of software applications, networks, and hardware systems.
+Telemetry automates collection, transmission, and analysis of data from distributed systems to monitor performance and health. Provides real-time insights, identifies issues, optimizes performance. Collects metrics like resource usage and error rates for anomaly detection and decision-making.
 
 Learn more from the following resources:
 

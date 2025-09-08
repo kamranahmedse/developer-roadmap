@@ -1,6 +1,6 @@
 # Open API Spec
 
-The OpenAPI Specification (OAS), formerly known as Swagger, is a standard for defining and documenting RESTful APIs. It provides a structured format in YAML or JSON to describe API endpoints, request and response formats, authentication methods, and other metadata. By using OAS, developers can create a comprehensive and machine-readable API description that facilitates client generation, automated documentation, and testing. This specification promotes consistency and clarity in API design, enhances interoperability between different systems, and enables tools to generate client libraries, server stubs, and interactive API documentation.
+OpenAPI Specification (OAS), formerly Swagger, is a standard for defining and documenting RESTful APIs in YAML/JSON format. Describes endpoints, formats, authentication, and metadata. Enables client generation, automated documentation, testing, and promotes API design consistency.
 
 Visit the following resources to learn more:
 

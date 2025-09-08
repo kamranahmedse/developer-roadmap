@@ -1,6 +1,6 @@
 # What is HTTP?
 
-HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting hypertext via the World Wide Web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands. HTTP operates on a request-response model: a client (usually a web browser) sends an HTTP request to a server for resources, such as web pages or files, and the server responds with the requested content and an HTTP status code indicating the result of the request. HTTP is stateless, meaning each request from a client to a server is independent and does not retain information about previous interactions. It forms the foundation of data communication on the web and is typically used with secure HTTP (HTTPS) for encrypted communication.
+HTTP (Hypertext Transfer Protocol) transmits hypertext over the web using request-response model. Defines message formatting and server-browser communication. Stateless protocol where each request is independent. Forms foundation of web communication, often used with HTTPS for encryption.
 
 Visit the following resources to learn more:
 

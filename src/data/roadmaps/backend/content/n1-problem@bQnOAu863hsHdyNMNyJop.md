@@ -1,6 +1,6 @@
 # N plus one problem
 
-The N+1 problem occurs in database querying when an application performs a query to retrieve a list of items and then issues additional queries to fetch related data for each item individually. This often results in inefficiencies and performance issues because the number of queries issued grows proportionally with the number of items retrieved. For example, if an application retrieves 10 items and then performs an additional query for each item to fetch related details, it ends up executing 11 queries (1 for the list and 10 for the details), leading to a total of 11 queries instead of 2. This can severely impact performance, especially with larger datasets. Solutions to the N+1 problem typically involve optimizing queries to use joins or batching techniques to retrieve related data in fewer, more efficient queries.
+The N+1 problem occurs when an application retrieves a list then performs additional queries for each item's related data. Results in inefficient query multiplication (1 + N queries instead of optimized joins). Severely impacts performance with larger datasets. Solved through query optimization, joins, or batching techniques.
 
 Visit the following resources to learn more:
 

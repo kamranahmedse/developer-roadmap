@@ -1,6 +1,6 @@
 # HTTPS
 
-HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP designed to secure data transmission between a client (e.g., browser) and a server. It uses encryption through SSL/TLS protocols to ensure data confidentiality, integrity, and authenticity. This prevents sensitive information, like login credentials or payment details, from being intercepted or tampered with by attackers. HTTPS is essential for securing web applications and has become a standard for most websites, especially those handling user data, as it helps protect against man-in-the-middle attacks and eavesdropping.
+HTTPS (Hypertext Transfer Protocol Secure) extends HTTP with SSL/TLS encryption for secure data transmission. Ensures confidentiality, integrity, and authenticity, protecting against interception and tampering. Essential standard for web applications handling sensitive user data.
 
 Visit the following resources to learn more:
 

@@ -1,17 +1,6 @@
 # Design and Development Principles
 
-Design and Development Principles are fundamental guidelines that inform the creation of software systems. Key principles include:
-
-- SOLID (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)
-- DRY (Don't Repeat Yourself)
-- KISS (Keep It Simple, Stupid)
-- YAGNI (You Aren't Gonna Need It)
-- Separation of Concerns
-- Modularity
-- Encapsulation
-- Composition over Inheritance
-- Loose Coupling and High Cohesion
-- Principle of Least Astonishment
+Design and development principles guide software creation. Key principles include SOLID, DRY (Don't Repeat Yourself), KISS (Keep It Simple), YAGNI (You Aren't Gonna Need It), separation of concerns, modularity, encapsulation, composition over inheritance, and loose coupling.
 
 Visit the following resources to learn more:
 
