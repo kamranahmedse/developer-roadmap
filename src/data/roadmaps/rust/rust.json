@@ -2819,7 +2819,7 @@
       "draggable": true,
       "deletable": true,
       "data": {
-        "label": "Ownsership System",
+        "label": "Ownership System",
         "style": {
           "fontSize": 17
         },
@@ -2853,7 +2853,7 @@
       "draggable": true,
       "deletable": true,
       "data": {
-        "label": "Ownsership Rules & Memory Safety",
+        "label": "Ownership Rules & Memory Safety",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
