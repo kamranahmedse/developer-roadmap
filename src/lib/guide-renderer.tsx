@@ -102,10 +102,10 @@ export class GuideRenderer {
             topicSlug = 'beginner-level';
           } else if (topic.toLowerCase() === 'intermediate') {
             topicText = 'Intermediate Level';
-            topicSlug = 'intermediate-level';
+            topicSlug = 'intermediate';
           } else if (topic.toLowerCase() === 'advanced') {
             topicText = 'Advanced Level';
-            topicSlug = 'advanced-level';
+            topicSlug = 'advanced';
           }
 
           return {
