@@ -4,7 +4,7 @@ Environment variables are dynamic named values that can affect the behavior of r
 
 Environment variables help to contribute to the fantastic and customizable flexibility you see in Unix systems. They provide a simple way to share configuration settings between multiple applications and processes in Linux.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Environment Variables in Linux](https://labex.io/tutorials/linux-environment-variables-in-linux-385274)
 - [@article@Linux Environment Variables List, Set, Create & Remove](https://www.computernetworkingnotes.com/linux-tutorials/linux-environment-variables-list-set-create-remove.html)

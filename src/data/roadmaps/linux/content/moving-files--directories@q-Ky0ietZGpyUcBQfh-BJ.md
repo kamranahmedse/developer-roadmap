@@ -1,8 +1,8 @@
-# Moving Files and Directories
+# Moving Files
 
-The `mv` command moves files and directories between locations and can also rename them. Use syntax `mv [options] source destination` where source is the file/directory to move and destination is the target location. This versatile command is essential for file organization and management in Linux systems.
+In Linux, moving files is an essential task that you will need to perform quite frequently. The `mv` command, short for move, is used to move files and directories from one location to another. The `mv` command can also be used for renaming files in Linux.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@mv command](https://linuxhandbook.com/mv-command/)
 - [@article@mv Cheat Sheet](https://www.commandinline.com/cheat-sheet/mv/)

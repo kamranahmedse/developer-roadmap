@@ -1,6 +1,6 @@
 # Disks and Filesystems
 
-Linux supports various filesystems like EXT4, FAT32, NTFS, and Btrfs for organizing data on storage devices. Each filesystem has specific advantages - EXT4 for Linux systems, FAT32 for compatibility across operating systems. The `df -T` command displays mounted filesystems with their types, sizes, and available space information.
+Linux uses various filesystems to organize, store, and retrieve data from storage devices. Popular filesystems include EXT4 (robust for Linux volumes), FAT32 (compatible with all OS for removable media), NTFS, and Btrfs. Each has specific advantages and use cases. Use `df -T` command to display filesystem types, disk space usage, and mounted device information.
 
 Visit the following resources to learn more:
 

@@ -2,9 +2,9 @@
 
 The shell in Linux provides a robust way of managing input and output streams of a command or program, this mechanism is known as Redirection. Linux being a multi-user and multi-tasking operating system, every process typically has 3 streams opened:
 
-- Standard Input (stdin) - This is where the process reads its input from. The default is the keyboard.
-- Standard Output (stdout) - The process writes its output to stdout. By default, this means the terminal.
-- Standard Error (stderr) - The process writes error messages to stderr. This also goes to the terminal by default.
+*   Standard Input (stdin) - This is where the process reads its input from. The default is the keyboard.
+*   Standard Output (stdout) - The process writes its output to stdout. By default, this means the terminal.
+*   Standard Error (stderr) - The process writes error messages to stderr. This also goes to the terminal by default.
 
 Visit the following resources to learn more:
 

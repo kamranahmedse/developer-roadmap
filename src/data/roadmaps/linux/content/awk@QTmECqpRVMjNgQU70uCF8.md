@@ -8,6 +8,6 @@ Visit the following resources to learn more:
 
 - [@article@IBM.com: Awk by Example](https://developer.ibm.com/tutorials/l-awk1/)
 - [@article@AWK Tutorial](https://linuxhandbook.com/awk-command-tutorial/)
-- [@video@Learning Awk Is Essential For Linux Users](https://www.youtube.com/watch?v=9YOZmI-zWok)
 - [@article@Linux awk Command: Text Processing](https://labex.io/tutorials/linux-linux-awk-command-text-processing-388493)
+- [@video@Learning Awk Is Essential For Linux Users](https://www.youtube.com/watch?v=9YOZmI-zWok)
 - [@feed@Explore top posts about Bash](https://app.daily.dev/tags/bash?ref=roadmapsh)

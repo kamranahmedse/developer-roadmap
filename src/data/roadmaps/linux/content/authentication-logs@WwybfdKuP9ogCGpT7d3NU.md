@@ -4,9 +4,7 @@ Authentication logs in Linux record all auth-related events like logins, passwor
 
 Here is an example of how you can use the `tail` command to view the last few entries of the authentication log:
 
-```bash
-tail /var/log/auth.log
-```
+    tail /var/log/auth.log
 
 Visit the following resources to learn more:
 
