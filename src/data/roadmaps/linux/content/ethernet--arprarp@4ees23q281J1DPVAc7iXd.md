@@ -1,6 +1,6 @@
-# Ethernet, ARP, and RARP
+# Ethernet, ARP and RARP
 
-Key networking protocols in Linux include Ethernet (LAN communication standard), ARP (Address Resolution Protocol - converts IP to MAC addresses), and RARP (Reverse ARP - converts MAC to IP addresses). These protocols enable local network communication and address resolution, essential for network troubleshooting and management in Linux systems.
+Three crucial Linux networking components: Ethernet enables LAN device communication, ARP (Address Resolution Protocol) translates IP addresses to MAC addresses for direct network communication, and RARP (Reverse ARP) converts MAC addresses to IP addresses when devices know their MAC but need their IP. Essential for diagnosing and managing Linux networking issues.
 
 Visit the following resources to learn more:
 

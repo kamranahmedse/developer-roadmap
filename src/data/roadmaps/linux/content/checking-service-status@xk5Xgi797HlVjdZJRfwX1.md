@@ -1,9 +1,8 @@
-# Checking Service Status
+# Creating Services
 
-Checking service status in Linux helps monitor system health and troubleshoot issues. Use `systemctl status service_name` to view detailed service information including active state, process ID, and recent log entries. Commands like `systemctl is-active` and `systemctl is-enabled` provide quick status checks. Service status monitoring is crucial for maintaining system reliability and performance.
+Creating Linux services involves setting up background applications using systemd service files. Services run continuously performing essential tasks like web servers, databases, and mail servers. Create `.service` files in `/etc/systemd/system/` with Unit, Service, and Install sections. Control services using `systemctl` commands. Best practice: avoid running services as root for security.
 
 Visit the following resources to learn more:
 
-- [@article@Use systemctl Status Command to Check Service Status](https://linuxhandbook.com/systemctl-check-service-status/)
-- [@article@systemctl - [15 Examples] - Linux Handbook](https://linuxhandbook.com/systemctl-commands/)
-- [@article@Start, Restart, and Stop Service Linux: 3 Effective Ways](https://linuxier.com/start-stop-and-restart-services-in-linux/)
+- [@article@How to Create a systemd Service in Linux](https://linuxhandbook.com/create-systemd-services/)
+- [@article@A Beginner's Guide to Creating Linux Services](https://www.fosslinux.com/111815/a-guide-to-creating-linux-services-with-systemd.htm)

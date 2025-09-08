@@ -1,8 +1,8 @@
 # Uptime and Load
 
-The `uptime` command shows how long a Linux system has been running and the system load average. Load average indicates computational work and CPU queue length, displayed for 1, 5, and 15-minute intervals. High load averages suggest resource constraints or performance issues. Regular monitoring helps identify usage patterns and plan capacity.
+The `uptime` command shows system running time and load averages for 1, 5, and 15-minute intervals. Load average indicates computational work and processes waiting for CPU time. High load suggests insufficient resources or misconfigurations. Example: `uptime` shows "2 days, 20 min" uptime and "0.00, 0.01, 0.05" load averages. Essential for performance monitoring and capacity planning.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Linux Uptime Command With Usage Examples](https://www.tecmint.com/linux-uptime-command-examples/)
 - [@article@How to Check Uptime in Linux Command Line](https://linuxhandbook.com/uptime-command/)

@@ -4,7 +4,7 @@ Linux command help provides documentation and usage information for shell comman
 
 Visit the following resources to learn more:
 
+- [@opensource@tldr-pages/tldr](https://github.com/tldr-pages/tldr)
 - [@article@Using the Help Command in Linux](https://linuxhandbook.com/help-command/)
 - [@article@Chapter 10: Getting Help in Linux Terminal](https://itsfoss.com/linux-command-help/)
-- [@opensource@tldr-pages/tldr](https://github.com/tldr-pages/tldr)
 - [@article@Get Help on Linux Commands](https://labex.io/tutorials/linux-get-help-on-linux-commands-18000)

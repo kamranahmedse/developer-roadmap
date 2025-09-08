@@ -4,7 +4,7 @@ GREP (Global Regular Expression Print) is a powerful text search utility that fi
 
 Visit the following resources to learn more:
 
+- [@opensource@Ripgrep: GitHub Repository](https://github.com/BurntSushi/ripgrep)
 - [@article@Grep and Regular Expressions for Beginners](https://ryanstutorials.net/linuxtutorial/grep.php)
 - [@article@bgsu.edu: Advanced Grep Topics](https://caspar.bgsu.edu/~courses/Stats/Labs/Handouts/grepadvanced.htm)
-- [@opensource@Ripgrep: GitHub Repository](https://github.com/BurntSushi/ripgrep)
 - [@article@Linux grep Command: Pattern Searching](https://labex.io/tutorials/linux-linux-grep-command-pattern-searching-219192)
