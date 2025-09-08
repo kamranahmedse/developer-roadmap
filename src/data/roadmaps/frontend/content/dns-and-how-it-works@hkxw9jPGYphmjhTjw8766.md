@@ -1,6 +1,6 @@
 # DNS
 
-DNS (Domain Name System) translates human-readable domain names (e.g., www.example.com) into IP addresses computers use. It's a global, decentralized system of servers. When you enter a domain name, DNS servers find the corresponding IP address, letting your browser connect to the website. This makes navigating the internet easy, as you don't need to remember numeric IP addresses.
+DNS (Domain Name System) translates human-readable domain names into IP addresses through a global, decentralized server network. Enables easy internet navigation by converting names like www.example.com to numeric addresses browsers can connect to.
 
 Visit the following resources to learn more:
 

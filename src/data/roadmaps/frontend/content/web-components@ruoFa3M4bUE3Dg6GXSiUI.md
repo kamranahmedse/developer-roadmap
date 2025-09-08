@@ -1,6 +1,6 @@
 # Web Components
 
-Web Components are a way to create your own reusable HTML elements that work in any browser and with any JavaScript framework. They use three main ideas: Custom Elements (making new HTML tags), Shadow DOM (keeping styles and structure separate and private), and HTML Templates (bits of HTML you can reuse). This helps make code modular and shareable, and reduces conflicts between styles. Web Components are a standard way to build parts of websites, aiming for long-term use and working well together.
+Web Components create reusable HTML elements using Custom Elements, Shadow DOM, and HTML Templates. Work across browsers and frameworks with encapsulated styles and structure. Enable modular, shareable code with reduced style conflicts. Standard for building interoperable web parts.
 
 Visit the following resources to learn more:
 

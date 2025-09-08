@@ -1,6 +1,6 @@
 # Type Checkers
 
-Type checkers are tools that look at your code to find and stop errors related to data types (like numbers, strings, etc.) before you run the program. They help make sure your code uses types correctly, catching mistakes early. Examples include TypeScript and Flow for JavaScript, and mypy for Python. These tools add static typing (checking types before running) to languages that usually check types while running. This makes code more reliable, easier to understand, and helps with refactoring. While they add a bit of work, type checkers are great for big projects to improve code quality.
+Type checkers analyze code for type-related errors before runtime, ensuring correct type usage and catching mistakes early. Examples: TypeScript, Flow (JavaScript), mypy (Python). Add static typing to dynamic languages, improving reliability, readability, and refactoring support for large projects.
 
 Visit the following resources to learn more:
 

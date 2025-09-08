@@ -1,6 +1,6 @@
 # Vite
 
-Vite is a modern build tool by Evan You (creator of Vue.js) that offers rapid web development through native ES modules, enabling instant server starts and fast Hot Module Replacement (HMR). It supports frameworks like Vue, React, and Svelte, uses Rollup for optimized production builds, and includes features like CSS pre-processor support and TypeScript integration. Vite enhances developer experience, especially for large projects, by separating development and build processes for faster cycles.
+Vite is a modern build tool using native ES modules for instant server starts and fast Hot Module Replacement. Supports Vue, React, Svelte with Rollup for production builds. Features CSS pre-processors and TypeScript integration. Enhances developer experience with faster development cycles.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # PRPL Pattern
 
-The PRPL pattern helps websites load fast, especially on mobile. PRPL means: Push critical resources, Render the first page quickly, Pre-cache other pages, and Lazy-load non-essential stuff. This makes the site feel instant, even on slow connections. It often uses service workers and is common in Progressive Web Apps (PWAs).
+PRPL pattern optimizes web performance: Push critical resources, Render initial route, Pre-cache remaining routes, Lazy-load non-essential resources. Creates instant-feeling experiences on slow connections using service workers. Common in Progressive Web Apps (PWAs) for optimal loading strategies.
 
 Visit the following resources to learn more:
 

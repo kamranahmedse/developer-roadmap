@@ -1,6 +1,6 @@
 # Eleventy
 
-Eleventy (or 11ty) is a tool for building fast websites that don't change often (static sites). It's easy to use and change to fit your needs. You can write pages using many different template languages like HTML, Markdown, or JavaScript. Eleventy can also create pages from data you have or from other websites when you build your site. A big plus is that it doesn't add any extra JavaScript to the user's browser, making sites load quickly. It also has helpful plugins for things like navigation or changing images.
+Eleventy (11ty) is a flexible static site generator supporting multiple template languages (HTML, Markdown, JavaScript). Creates pages from data sources, adds no client-side JavaScript for fast loading. Highly customizable with useful plugins for navigation and image processing.
 
 Visit the following resources to learn more:
 

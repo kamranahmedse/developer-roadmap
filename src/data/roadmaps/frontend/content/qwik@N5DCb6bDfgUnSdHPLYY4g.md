@@ -1,6 +1,6 @@
 # Qwik
 
-Qwik is a new front-end tool for making websites load super fast. It uses a "resumable" idea, meaning apps start with very little JavaScript. Qwik only loads code for interactive parts when you need them. This makes even big websites feel quick. It's getting noticed for its smart way of making sites fast.
+Qwik is a frontend framework optimizing for fast loading through "resumable" architecture. Apps start with minimal JavaScript, loading interactive code only when needed. Makes large websites feel instantly fast through intelligent code delivery. Gaining attention for performance innovations.
 
 Learn more from the following resources:
 

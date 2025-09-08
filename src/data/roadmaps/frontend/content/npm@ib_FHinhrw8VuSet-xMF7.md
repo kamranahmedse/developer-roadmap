@@ -1,6 +1,6 @@
 # npm
 
-npm (Node Package Manager) is the main tool for managing code packages in Node.js. It helps developers find, share, and use JavaScript code easily. Think of it as a big library where you can get tools and code bits for your projects. npm uses a file called `package.json` to keep track of what your project needs, making it easy to build your project anywhere. Even with other tools like Yarn, npm is still the most popular choice for JavaScript developers.
+npm (Node Package Manager) is the primary JavaScript package manager for finding, sharing, and managing code dependencies. Uses package.json to track project requirements and enables consistent builds across environments. Remains the most popular choice despite alternatives like Yarn and pnpm.
 
 Visit the following resources to learn more:
 

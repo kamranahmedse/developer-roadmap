@@ -1,6 +1,6 @@
 # Shadow DOM
 
-The Shadow DOM is a way to keep the HTML, CSS, and JavaScript of a web component separate from the rest of the webpage. Think of it as creating a private little DOM (Document Object Model) inside an element. This stops styles and scripts from accidentally affecting other parts of the page, and vice-versa. It helps make code cleaner and easier to manage, especially for custom elements that you want to reuse. It's mainly for web components but can be used anytime you want to keep code self-contained.
+Shadow DOM creates private, encapsulated DOM trees inside elements, isolating HTML, CSS, and JavaScript from the main page. Prevents style and script conflicts, enabling cleaner, reusable components. Essential for web components requiring self-contained functionality.
 
 Visit the following resources to learn more:
 

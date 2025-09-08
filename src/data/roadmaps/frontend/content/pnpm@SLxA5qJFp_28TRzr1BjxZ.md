@@ -1,6 +1,6 @@
 # pnpm
 
-pnpm (performant npm) is a fast and disk-space-saving package manager for JavaScript. It's different from npm and Yarn because it stores packages in one global place and links to them. This means less disk space used and faster installs. pnpm follows `package.json` strictly, making sure installs are consistent. It supports monorepos and is more secure by keeping dependencies separate. It's gaining popularity for its speed and efficiency.
+pnpm (performant npm) is a fast, disk-efficient JavaScript package manager using global storage with symlinks. Saves disk space, ensures strict package.json compliance, supports monorepos, and provides better security through dependency isolation. Growing popularity for speed and efficiency.
 
 Visit the following resources to learn more:
 

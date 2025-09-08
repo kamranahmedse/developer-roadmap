@@ -1,6 +1,6 @@
 # Accessibility
 
-Website accessibility means making sites usable by everyone, including those with disabilities. This involves clear design, like text for images, keyboard navigation, good color contrast, and captions. Following accessibility rules helps all users, not just those with disabilities, and can also help with legal compliance and reaching more people.
+Website accessibility ensures sites are usable by everyone, including people with disabilities. Involves alt text for images, keyboard navigation, color contrast, and captions. Benefits all users, supports legal compliance, and expands audience reach.
 
 Visit the following resources to learn more:
 

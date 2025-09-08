@@ -1,6 +1,6 @@
 # Cypress
 
-Cypress is a tool for testing websites from start to finish, just like a user would. It's written in JavaScript and based on Mocha (another JavaScript testing tool). Cypress runs tests directly in the browser, which makes testing things that happen over time (asynchronous testing) easier. It also uses common testing approaches like BDD/TDD and can work with other JavaScript testing tools.
+Cypress is a JavaScript end-to-end testing framework running tests directly in browsers. Built on Mocha with excellent asynchronous testing support. Features time-travel debugging, automatic waiting, and real-time reloading. Supports BDD/TDD approaches for comprehensive web application testing.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Making layouts
 
-Making web layouts means arranging content on a page well. Modern CSS uses Flexbox (for rows/columns) and CSS Grid (for 2D layouts). Responsive design makes sites fit all devices. Frameworks like Bootstrap or Tailwind help build faster. Good layouts think about what's important, how users move through the page, and if everyone can use it. This makes the site look good and work well.
+Web layouts arrange content effectively using modern CSS techniques like Flexbox (1D) and CSS Grid (2D). Responsive design adapts to all devices. Frameworks like Bootstrap and Tailwind accelerate development. Good layouts prioritize content hierarchy, user flow, and accessibility.
 
 Visit the following resources to learn more:
 
