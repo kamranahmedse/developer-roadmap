@@ -1,6 +1,6 @@
 # React
 
-React is a JavaScript tool from Facebook for building UIs, especially for single-page apps. It lets you create reusable UI parts that update when data changes. React uses a virtual DOM for speed and has a one-way data flow. This component style makes code neat and reusable. React also works with tools like Redux for data management and React Native for mobile apps. It's popular because it's clear, fast, and has a big community.
+React is Facebook's JavaScript library for building user interfaces with reusable components. Uses virtual DOM for performance and one-way data flow. Features component-based architecture, works with Redux for state management and React Native for mobile. Popular for its clarity, speed, and ecosystem.
 
 Visit the following resources to learn more:
 

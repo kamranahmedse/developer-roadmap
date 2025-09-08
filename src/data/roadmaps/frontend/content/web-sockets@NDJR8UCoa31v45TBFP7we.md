@@ -1,6 +1,6 @@
 # Web Sockets
 
-WebSockets enable real-time, two-way communication between a client and server over a single, persistent TCP connection. This is ideal for applications needing fast, low-latency data exchange, like online games or live data streams, as it avoids repeated HTTP requests. Most modern browsers support WebSockets, and it integrates with various programming languages and frameworks.
+WebSockets enable real-time, bidirectional communication over persistent TCP connections. Ideal for low-latency applications like gaming, live streams, and chat systems. Avoids HTTP request overhead with broad browser support and framework integration.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Astro
 
-Astro is a static site generator for fast, content-focused websites. It lets you use various frontend frameworks (like React, Vue, Svelte) and renders components to static HTML. Astro's "partial hydration" only sends JavaScript when needed, leading to smaller bundles and quicker loads. It supports file-based routing and markdown, making it great for blogs, docs, and marketing sites.
+Astro is a static site generator supporting multiple frameworks (React, Vue, Svelte) with partial hydration. Renders components to static HTML, sending JavaScript only when needed. Features file-based routing and markdown support. Ideal for blogs, documentation, and marketing sites.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # RAIL Model
 
-The RAIL Model from Google helps make websites feel fast. RAIL stands for Response (quick reaction to clicks), Animation (smooth visuals), Idle (using downtime well), and Load (fast page start). It sets goals like responding in 100ms and animations at 60fps. Following RAIL makes users happier because the site feels responsive.
+RAIL Model is Google's performance framework: Response (<100ms to user input), Animation (60fps smooth visuals), Idle (efficient downtime usage), Load (fast initial rendering). Provides specific performance targets for creating responsive, user-friendly web experiences.
 
 Visit the following resources to learn more:
 

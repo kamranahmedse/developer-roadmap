@@ -1,6 +1,6 @@
 # Credentials API
 
-The Credential Management API helps websites work with the browser's password manager. It lets sites store and get user logins securely, making sign-in and sign-up easier (like auto sign-in). It supports passwords and other login types. This API improves login experience and security by working with password managers and platform authenticators, making logins smoother across devices.
+Credential Management API integrates websites with browser password managers for secure credential storage and retrieval. Enables auto sign-in, supports various authentication methods, and works with platform authenticators. Improves login experience and security across devices.
 
 Visit the following resources to learn more:
 

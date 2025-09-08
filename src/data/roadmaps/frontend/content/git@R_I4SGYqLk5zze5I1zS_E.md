@@ -1,6 +1,6 @@
 # Git
 
-Git is a tool for tracking code changes in software projects. It lets many developers work together by keeping a history of all changes. Git is great for branching (working on different features at once) and merging (combining changes). Everyone has a full copy of the project, so they can work offline. Git is fast, flexible, and the most popular version control system, especially for open-source projects.
+Git is a distributed version control system tracking code changes and enabling collaborative development. Features branching, merging, and complete project history. Allows offline work with local repositories. Fast, flexible, and the most popular VCS for software projects.
 
 Visit the following resources to learn more:
 

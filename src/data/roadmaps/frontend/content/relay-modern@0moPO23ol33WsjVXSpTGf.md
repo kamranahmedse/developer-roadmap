@@ -1,6 +1,6 @@
 # Relay Modern
 
-Relay is a Facebook JavaScript library for React apps that use a lot of data. It works with GraphQL to get and manage data efficiently. Relay puts data needs next to components, so it only fetches what's needed and updates well. It handles caching, live updates, and quick UI changes. Relay helps big apps perform better by managing data smartly. It's a bit harder to learn but great for complex data needs with React and GraphQL.
+Relay is Facebook's JavaScript library for data-heavy React applications using GraphQL. Co-locates data requirements with components, enabling efficient fetching and updates. Handles caching, real-time updates, and optimistic UI changes. Ideal for complex applications requiring sophisticated data management.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Responsive Web Design
 
-Responsive web design makes websites look good on all devices, from big desktops to small phones. It uses flexible layouts, images that resize, and CSS media queries to change how the site appears based on screen size. This way, users get a great experience no matter what device they use, and developers don't need to make separate sites for each gadget.
+Responsive web design ensures websites adapt to all device sizes using flexible layouts, scalable images, and CSS media queries. Provides optimal user experience across desktop, tablet, and mobile devices without requiring separate sites for each platform.
 
 Visit the following resources to learn more:
 

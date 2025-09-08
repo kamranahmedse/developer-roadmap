@@ -1,6 +1,6 @@
 # Mobile applications
 
-Mobile apps are programs for phones and tablets, usually from app stores. They can be native (for one OS like iOS or Android), hybrid (web tech in a native shell), or cross-platform (like React Native). Apps use phone features like GPS and cameras. They do many things from games to shopping. Good mobile apps focus on easy use, speed, offline working, and security.
+Mobile applications run on phones and tablets through app stores. Types: native (platform-specific), hybrid (web in native shell), cross-platform (React Native, Flutter). Access device features like GPS, cameras. Focus on usability, performance, offline capability, and security.
 
 - [@official@React Native](https://reactnative.dev/)
 - [@official@Flutter](https://flutter.dev)

@@ -1,6 +1,6 @@
 # Next.js
 
-Next.js is a React framework for building websites that can be server-rendered (built on the server) or static (built beforehand). It offers features like auto code splitting, fast performance, and easy page routing. You can choose how each page is made. Next.js has CSS support, API routes (for backend tasks), and simple deployment. It's known for being developer-friendly, with live updates and smart preloading. It's great for big, SEO-friendly sites.
+Next.js is a React framework supporting server-side rendering and static site generation. Features automatic code splitting, file-based routing, CSS support, API routes, and optimized performance. Includes live updates, smart preloading, and easy deployment. Ideal for SEO-friendly applications.
 
 Visit the following resources to learn more:
 
