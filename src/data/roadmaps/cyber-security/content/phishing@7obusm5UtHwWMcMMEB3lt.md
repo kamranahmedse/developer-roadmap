@@ -1,6 +1,6 @@
 # Phishing
 
-The technique where scammers pretend to be trusted organizations like your *bank*, *online retailers* or a *government office* in order to trick you into sharing your personal information like bank passcode, credit card number, Paypal password etc.
+The technique where scammers pretend to be trusted organizations like your _bank_, _online retailers_ or a _government office_ in order to trick you into sharing your personal information like bank passcode, credit card number, Paypal password etc.
 
 Visit the following resources to learn more:
 
