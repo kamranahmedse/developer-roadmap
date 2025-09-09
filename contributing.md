@@ -6,8 +6,10 @@ First of all, thank you for considering to contribute. Please look at the detail
 - [Existing Roadmaps](#existing-roadmaps)
 - [Adding Projects](#adding-projects)
 - [Adding Content](#adding-content)
+  - [How To Structure Content](#how-to-structure-content)
 - [Guidelines](#guidelines)
 - [Good vs. Not So Good Contributions](#good-vs-not-so-good-contributions)
+- [Local Development](#local-development)
 
 ## New Roadmaps
 
@@ -53,6 +55,7 @@ Find [the content directory inside the relevant roadmap](https://github.com/kamr
 
 - Content must be in English.
 - Maximum of 8 links per topic.
+- **No GeeksforGeeks links** — Links to geeksforgeeks.org are not accepted.
 - Follow the below style guide for content.
 
 Please note that we are intentionally keeping the content under the topic popup concise. You MUST always aim to explain the topic simply in a **single paragraph** or so and provide external resources where users can learn more about the topic.
