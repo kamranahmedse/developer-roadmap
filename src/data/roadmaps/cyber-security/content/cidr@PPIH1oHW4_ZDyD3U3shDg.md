@@ -6,7 +6,7 @@ CIDR achieves its goals by replacing the traditional Class A, B, and C addressin
 
 A CIDR notation looks like this: `192.168.1.0/24`. Here, `192.168.1.0` is the IP address, and `/24` represents the subnet mask. The number after the slash (/) is called the _prefix length_, which indicates how many bits of the subnet mask should be set to 1 (bitmask). The remaining bits of the subnet mask are set to 0.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What is CIDR?](https://aws.amazon.com/what-is/cidr/)
 - [@video@What is Network CIDR Notation?](https://www.youtube.com/watch?v=tpa9QSiiiUo)

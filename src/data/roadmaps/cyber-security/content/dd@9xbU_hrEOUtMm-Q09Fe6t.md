@@ -4,7 +4,7 @@
 
 This command-line utility is available on Unix-based systems such as Linux, BSD, and macOS. It can perform tasks like data duplication, data conversion, and error correction. Most importantly, it's an invaluable tool for obtaining a bit-by-bit copy of a disk or file, which can then be analyzed using forensic tools.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
-- [@video@How to use the dd command in Linux](https://www.youtube.com/watch?v=hsDxcJhCRLI)
 - [@article@When and how to use the dd command](https://www.baeldung.com/linux/dd-command)
+- [@video@How to use the dd command in Linux](https://www.youtube.com/watch?v=hsDxcJhCRLI)

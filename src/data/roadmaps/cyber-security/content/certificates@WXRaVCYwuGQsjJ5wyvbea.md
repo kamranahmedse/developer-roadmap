@@ -4,7 +4,7 @@ Certificates, also known as digital certificates or SSL/TLS certificates, play a
 
 Digital certificates provide a crucial layer of security and trust for online communications. Understanding their role in cybersecurity, the different types of certificates, and the importance of acquiring certificates from trusted CAs can greatly enhance your organization's online security posture and reputation.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What is an SSL Certificate?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-an-ssl-certificate/)
 - [@article@What is a Certificate Authority](https://www.ssl.com/article/what-is-a-certificate-authority-ca/)

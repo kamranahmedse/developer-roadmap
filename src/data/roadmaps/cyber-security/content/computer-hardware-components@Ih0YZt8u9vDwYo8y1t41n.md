@@ -4,7 +4,7 @@ Computer hardware components are the physical parts of a computer system that wo
 
 The **storage device**, such as a hard disk drive (HDD) or solid-state drive (SSD), is where data is permanently stored, including the operating system, applications, and files. The **power supply unit (PSU)** provides the necessary electrical power to run the components. **Graphics processing units (GPU)**, dedicated for rendering images and videos, are important for tasks like gaming, video editing, and machine learning. Additionally, **input devices** like keyboards and mice, and **output devices** like monitors and printers, enable users to interact with the system. Together, these components make up the essential hardware of a computer, enabling it to perform various computing functions.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
-- [@video@Computer Components for Dummies](https://www.youtube.com/watch?v=cZs6kh0WFRY)
 - [@article@What is computer hardware?](https://uk.crucial.com/articles/pc-builders/what-is-computer-hardware)
+- [@video@Computer Components for Dummies](https://www.youtube.com/watch?v=cZs6kh0WFRY)
