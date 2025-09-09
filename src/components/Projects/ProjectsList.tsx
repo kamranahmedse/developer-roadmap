@@ -1,5 +1,5 @@
 import { ProjectCard } from './ProjectCard.tsx';
-import { HeartHandshake, Trash2 } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
 import { cn } from '../../lib/classname.ts';
 import { useEffect, useMemo, useState } from 'react';
 
@@ -142,16 +142,6 @@ export function ProjectsList(props: ProjectsListProps) {
             </button>
           )}
         </div>
-        <a
-          href={
-            'https://github.com/kamranahmedse/developer-roadmap/issues/new?assignees=&labels=project+contribution&projects=&template=05-project-contribution.yml'
-          }
-          target={'_blank'}
-          className="hidden items-center gap-2 rounded-md border border-transparent px-2 py-0.5 text-sm underline underline-offset-2 hover:bg-black hover:text-white hover:no-underline sm:flex"
-        >
-          <HeartHandshake className="h-4 w-4" />
-          Submit a Project Idea
-        </a>
       </div>
       <div className="mb-24 grid grid-cols-1 gap-1.5 sm:grid-cols-2 lg:grid-cols-3">
         {matchingProjects.length === 0 && (
