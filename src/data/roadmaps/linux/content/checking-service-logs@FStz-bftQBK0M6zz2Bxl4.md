@@ -1,9 +1,9 @@
-# Starting and Stopping Services
+# Checking Service Logs
 
-Linux service management involves controlling system services like databases, web servers, and network services. Use `systemctl start service_name` to start services, `systemctl stop service_name` to stop them, and `systemctl restart service_name` to restart. These commands require root permissions via sudo and are essential for system administration and configuration management.
+System logs are essential for troubleshooting and monitoring Linux systems. Most logs are stored in `/var/log` directory and managed by systemd. Use `journalctl` to view system logs and `journalctl -u service_name` for specific service logs. The `dmesg` command displays kernel messages. Regular log monitoring is crucial for system administration.
 
 Visit the following resources to learn more:
 
-- [@article@Using systemctl Command [15 Examples] - Linux Handbook](https://linuxhandbook.com/systemctl-commands/)
-- [@article@Start, Stop & Restart Services in Ubuntu and Other Linux](https://itsfoss.com/start-stop-restart-services-linux/)
-- [@article@Start, Restart, and Stop Service Linux: 3 Effective Ways](https://linuxier.com/start-stop-and-restart-services-in-linux/)
+- [@article@How to Use journalctl Command to Analyze Logs in Linux](https://linuxhandbook.com/journalctl-command/)
+- [@article@journalctl — Linux manual page](https://www.man7.org/linux/man-pages/man1/journalctl.1.html)
+- [@article@Linux Log Files Location & How To View Logs Files](https://www.cyberciti.biz/faq/linux-log-files-location-and-how-do-i-view-logs-files/)

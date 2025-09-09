@@ -1,6 +1,6 @@
 # Tailwind CSS
 
-Tailwind CSS is a special kind of CSS framework that gives you lots of small, ready-to-use style classes. You use these classes directly in your HTML to build custom designs quickly, without writing much custom CSS. It's very flexible and lets you create unique looks. Tailwind is designed for mobile first and automatically removes unused styles to keep your website files small. It's popular because it helps build and try out responsive designs fast.
+Tailwind CSS is a utility-first CSS framework providing small, composable classes for rapid custom design development. Features mobile-first approach, automatic unused style removal (purging), and flexible customization. Enables quick responsive design prototyping without writing custom CSS.
 
 Visit the following resources to learn more:
 

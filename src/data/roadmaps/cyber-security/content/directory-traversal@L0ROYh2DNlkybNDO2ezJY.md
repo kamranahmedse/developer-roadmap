@@ -6,8 +6,8 @@ While Directory Traversal is sometimes combined with other vulnerabilities like 
 
 Visit the following resources to learn more:
 
-- [@article@Portswigger's guide on File Path Traversal](https://portswigger.net/web-security/file-path-traversal)
-- [@official@OWASP's article on Path Traversal](https://owasp.org/www-community/attacks/Path_Traversal)
 - [@course@TryHackMe's room on Path Traversal & File Inclusion](https://tryhackme.com/r/room/filepathtraversal)
-- [@article@Acunetix's article on directory traversal](https://www.acunetix.com/websitesecurity/directory-traversal/)
 - [@course@HackTheBox Academy's module on File Inclusion & Path Traversal](https://academy.hackthebox.com/course/preview/file-inclusion)
+- [@official@OWASP's article on Path Traversal](https://owasp.org/www-community/attacks/Path_Traversal)
+- [@article@Portswigger's guide on File Path Traversal](https://portswigger.net/web-security/file-path-traversal)
+- [@article@Acunetix's article on directory traversal](https://www.acunetix.com/websitesecurity/directory-traversal/)

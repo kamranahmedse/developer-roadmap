@@ -4,7 +4,6 @@ import { getPageTrackingData } from '../../lib/browser';
 declare global {
   interface Window {
     gtag: any;
-    varify: any;
     fireEvent: (props: {
       action: string;
       category: string;
@@ -68,7 +67,7 @@ window.fireEvent = (props) => {
   }
 
   const trackingData = getPageTrackingData();
-  
+
   window.gtag('event', action, {
     event_category: category,
     event_label: label,

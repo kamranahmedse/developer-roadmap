@@ -1,0 +1,66 @@
+name: Sync Content to Repo
+
+on:
+  workflow_dispatch:
+    inputs:
+      roadmap_slug:
+        description: "The ID of the roadmap to sync"
+        required: true
+        default: "__default__"
+
+jobs:
+  sync-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm@v9
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Setup Node.js Version 20 (LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install Dependencies and Sync Content
+        run: |
+          echo "Installing Dependencies"
+          pnpm install
+          echo "Syncing Content to Repo"
+          npm run sync:content-to-repo -- --roadmap-slug=${{ inputs.roadmap_slug }} --secret=${{ secrets.GH_SYNC_SECRET }}
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create PR
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          delete-branch: false
+          branch: "chore/sync-content-to-repo-${{ inputs.roadmap_slug }}"
+          base: "master"
+          labels: |
+            automated pr
+          reviewers: jcanalesluna,kamranahmedse
+          commit-message: "chore: sync content to repo"
+          title: "chore: sync content to repository - ${{ inputs.roadmap_slug }}"
+          body: |
+            ## Sync Content to Repo
+            
+            > [!IMPORTANT]
+            > This PR Syncs the Content to the Repo for the Roadmap: ${{ inputs.roadmap_slug }}
+            >
+            > Commit: ${{ github.sha }}
+            > Workflow Path: ${{ github.workflow_ref }}
+
+            **Please Review the Changes and Merge the PR if everything is fine.** 

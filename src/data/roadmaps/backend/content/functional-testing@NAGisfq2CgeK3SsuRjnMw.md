@@ -1,6 +1,6 @@
 # Functional Testing
 
-Functional testing is where software is tested to ensure functional requirements are met. Usually, it is a form of black box testing in which the tester has no understanding of the source code; testing is performed by providing input and comparing expected/actual output. It contrasts with non-functional testing, which includes performance, load, scalability, and penetration testing.
+Functional testing ensures software meets functional requirements through black box testing. Testers provide input and compare expected vs actual output without understanding source code. Contrasts with non-functional testing (performance, load, scalability).
 
 Visit the following resources to learn more:
 

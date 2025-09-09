@@ -4,7 +4,7 @@ A True Positive occurs when a security system correctly identifies a genuine thr
 
 Both True Positives and True Negatives represent correct assessments by security systems, contributing to effective threat detection and minimizing false alarms. Balancing these with minimizing false positives and false negatives is crucial for optimal security system performance.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@False Positives and False Negatives in Information Security](https://www.guardrails.io/blog/false-positives-and-false-negatives-in-information-security/)
 - [@video@False Positives and False Negatives](https://www.youtube.com/watch?v=bUNBzMnfHLw)

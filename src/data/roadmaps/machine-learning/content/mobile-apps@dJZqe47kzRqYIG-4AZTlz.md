@@ -1,0 +1,3 @@
+# Mobile App Data
+
+Mobile app data refers to the information generated and collected from applications running on mobile devices like smartphones and tablets. This data encompasses a wide range of user interactions, device characteristics, and app performance metrics. It can include user demographics, in-app behavior, location data, device type, operating system, and network information, among other things.

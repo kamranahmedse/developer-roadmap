@@ -1,0 +1,3 @@
+# Semistructured Data
+
+Semistructured data doesn't conform to the rigid structure of a relational database but still has some organizational properties, like tags or markers, that separate data elements and enforce hierarchies of records and fields within the data. It's not raw data, but it also doesn't fit neatly into tables with rows and columns. Examples include JSON and XML files, where data is organized using tags and attributes, making it easier to parse and understand than completely unstructured data.

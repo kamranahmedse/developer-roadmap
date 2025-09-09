@@ -5,4 +5,4 @@ Standard library package providing operating system interface. Handles file oper
 Visit the following resources to learn more:
 
 - [@official@os package](https://pkg.go.dev/os)
-- [@article@An Overview of Go's `os` and `io` Packages](https://reintech.io/blog/an-overview-of-gos-os-and-io-packages)
+- [@article@An Overview of Go's os and io Packages](https://reintech.io/blog/an-overview-of-gos-os-and-io-packages)

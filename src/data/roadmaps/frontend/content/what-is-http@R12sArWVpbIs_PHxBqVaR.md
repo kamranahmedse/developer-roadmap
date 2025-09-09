@@ -1,6 +1,6 @@
 # What is HTTP?
 
-HTTP (Hypertext Transfer Protocol) is the main way information is sent and received on the internet. It's like the language web browsers and servers use to talk to each other. When you visit a website, your browser sends an HTTP request to the server, and the server sends back the website data. Each request is separate, so the server doesn't remember past requests. HTTP has different commands (like GET for getting data, POST for sending it). HTTPS is a secure version of HTTP that encrypts information. Newer versions like HTTP/2 and HTTP/3 are faster. Knowing HTTP is important for anyone building websites.
+HTTP (Hypertext Transfer Protocol) enables browser-server communication through requests and responses. Stateless protocol using methods like GET and POST. HTTPS provides encrypted security. Newer versions (HTTP/2, HTTP/3) offer improved performance. Fundamental for web development understanding.
 
 Visit the following resources to learn more:
 

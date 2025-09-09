@@ -1,6 +1,6 @@
 # Domain Name
 
-A domain name is a human-friendly web address (e.g., google.com) that acts as a memorable substitute for numerical IP addresses. It comprises a second-level domain (like "google") and a top-level domain (like ".com"). Registered via domain registrars, these unique names are key for branding and online presence. The Domain Name System (DNS) translates these names into IP addresses, enabling easy website access. Domain names are vital for web structure and accessibility.
+Domain names are human-friendly web addresses (e.g., google.com) substituting numerical IP addresses. Comprise second-level ("google") and top-level (".com") domains. Registered through registrars, essential for branding and online presence. DNS translates names to IP addresses for accessibility.
 
 Visit the following resources to learn more:
 

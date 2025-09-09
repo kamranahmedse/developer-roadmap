@@ -1,0 +1,3 @@
+# Data Formats
+
+Data formats define the structure in which data is organized and stored. These formats dictate how information is encoded, allowing computers to interpret and process it effectively. Common examples include CSV (Comma Separated Values) for tabular data, JSON (JavaScript Object Notation) for structured data with key-value pairs, and image formats like JPEG and PNG for visual data. The choice of data format impacts storage efficiency, data accessibility, and the compatibility with different machine learning tools and algorithms.

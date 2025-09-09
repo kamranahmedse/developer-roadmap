@@ -1,6 +1,6 @@
 # InfluxDB
 
-InfluxDB is a high-performance, open-source time-series database designed for handling large volumes of timestamped data, such as metrics, events, and real-time analytics. It is optimized for use cases like monitoring, IoT, and application performance management, where data arrives in continuous streams. InfluxDB supports SQL-like queries through its query language (Flux), and it can handle high write and query loads efficiently. Key features include support for retention policies, downsampling, and automatic data compaction, making it ideal for environments that require fast and scalable time-series data storage and retrieval.
+InfluxDB is a high-performance, open-source time-series database for handling timestamped data like metrics and events. Optimized for monitoring, IoT, and APM with SQL-like Flux queries. Features retention policies, downsampling, and automatic compaction for scalable time-series storage.
 
 Visit the following resources to learn more:
 

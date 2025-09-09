@@ -1,0 +1,3 @@
+# Public Health Data Analytics
+
+Data analytics in public health uses information to understand and tackle health issues affecting large groups of people. During events like pandemics, analyzing data on disease spread, patient demographics, and resource availability helps identify hotspots, predict future outbreaks, and optimize the distribution of medical supplies. This allows public health officials to make informed decisions, implement targeted interventions, and ultimately improve health outcomes for the population.

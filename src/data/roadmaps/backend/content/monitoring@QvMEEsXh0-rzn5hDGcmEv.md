@@ -1,8 +1,6 @@
 # Monitoring
 
-Monitoring involves continuously observing and tracking the performance, availability, and health of systems, applications, and infrastructure. It typically includes collecting and analyzing metrics, logs, and events to ensure systems are operating within desired parameters. Monitoring helps detect anomalies, identify potential issues before they escalate, and provides insights into system behavior. It often involves tools and platforms that offer dashboards, alerts, and reporting features to facilitate real-time visibility and proactive management. Effective monitoring is crucial for maintaining system reliability, performance, and for supporting incident response and troubleshooting.
-
-A few popular tools are Grafana, Sentry, Mixpanel, NewRelic.
+Monitoring continuously tracks system performance, availability, and health through metrics, logs, and events. Detects anomalies, prevents issues, and provides system behavior insights via dashboards and alerts. Essential for reliability and incident response. Popular tools: Grafana, Sentry, Mixpanel, NewRelic.
 
 - [@article@Top Monitoring Tools](https://thectoclub.com/tools/best-application-monitoring-software/)
 - [@video@Grafana Explained in 5 Minutes](https://www.youtube.com/watch?v=lILY8eSspEo)

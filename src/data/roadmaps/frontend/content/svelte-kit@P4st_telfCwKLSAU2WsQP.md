@@ -1,6 +1,6 @@
 # Svelte Kit
 
-SvelteKit is a framework for building websites and apps with Svelte (a JavaScript framework). It helps you build both the parts that run on a server and the parts that run in the user's browser. SvelteKit comes with useful things like easy page routing (how you go from one page to another), making sure only needed code is loaded, and server-side rendering (building pages on the server for faster loading). You can make static sites (pages that don't change much) or dynamic ones. It's designed to be simple and fast, thanks to Svelte's smart way of compiling code. SvelteKit also has good tools for developers and makes deploying your site easy.
+SvelteKit is a full-stack framework for building websites and applications with Svelte. Features file-based routing, code splitting, server-side rendering, and static site generation. Designed for simplicity and performance with excellent developer experience and easy deployment options.
 
 Visit the following resources to learn more:
 

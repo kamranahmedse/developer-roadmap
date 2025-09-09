@@ -1,6 +1,6 @@
 # Transactions
 
-In database systems, a transaction is a series of operations that are executed as a single, atomic unit to ensure data integrity and consistency. Transactions adhere to the ACID properties: Atomicity ensures all operations complete successfully or none are applied; Consistency maintains the database's valid state; Isolation prevents transactions from interfering with each other; and Durability guarantees that once a transaction is committed, its changes are permanent. These properties collectively ensure that databases handle concurrent operations reliably and maintain accurate and consistent data even in the face of failures.
+Database transactions are series of operations executed as atomic units to ensure data integrity. Follow ACID properties: Atomicity (all-or-nothing), Consistency (valid state), Isolation (no interference), Durability (permanent changes). Ensure reliable concurrent operations and data consistency.
 
 Visit the following resources to learn more:
 

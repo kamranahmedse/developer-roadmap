@@ -1,6 +1,6 @@
 # Rollup
 
-Rollup is a tool that bundles JavaScript code, making small pieces into bigger ones. It's good at making small, efficient bundles, especially for ES modules (a modern way to organize JavaScript). Rollup is great at "tree-shaking," which means it removes unused code to make files smaller. It can output code in different formats, so it's flexible. While it might need more setup, Rollup is liked for its small bundles and focus on modern JavaScript.
+Rollup is a JavaScript bundler creating efficient bundles from ES modules. Excels at tree-shaking to remove unused code and supports multiple output formats. Produces smaller bundles than alternatives, ideal for libraries and modern JavaScript projects requiring optimization.
 
 Visit the following resources to learn more:
 

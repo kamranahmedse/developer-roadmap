@@ -1,0 +1,67 @@
+name: Sync on Roadmap Changes
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'src/data/roadmaps/**'
+
+jobs:
+  sync-on-changes:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]' && github.actor != 'dependabot[bot]'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # Fetch previous commit to compare changes
+
+      - name: Setup pnpm@v9
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Setup Node.js Version 20 (LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Get changed files
+        id: changed-files
+        run: |
+          echo "Getting changed files in /src/data/roadmaps/"
+          
+          # Get changed files between HEAD and previous commit
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- src/data/roadmaps/)
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No changes found in roadmaps directory"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          echo "Changed files:"
+          echo "$CHANGED_FILES"
+          
+          # Convert to space-separated list for the script
+          CHANGED_FILES_LIST=$(echo "$CHANGED_FILES" | tr '\n' ',')
+          
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "changed_files=$CHANGED_FILES_LIST" >> $GITHUB_OUTPUT
+
+      - name: Install Dependencies
+        if: steps.changed-files.outputs.has_changes == 'true'
+        run: |
+          echo "Installing Dependencies"
+          pnpm install
+
+      - name: Run sync script with changed files
+        if: steps.changed-files.outputs.has_changes == 'true'
+        run: |
+          echo "Running sync script for changed roadmap files"
+          echo "Changed files: ${{ steps.changed-files.outputs.changed_files }}"
+          
+          # Run your script with the changed file paths
+          npm run sync:repo-to-database -- --files="${{ steps.changed-files.outputs.changed_files }}" --secret=${{ secrets.GH_SYNC_SECRET }}

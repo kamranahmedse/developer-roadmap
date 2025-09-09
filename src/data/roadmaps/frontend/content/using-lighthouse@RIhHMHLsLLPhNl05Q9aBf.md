@@ -1,6 +1,6 @@
 # Lighthouse
 
-Lighthouse, a Google open-source tool, audits web page performance, accessibility, and SEO. Available as a browser extension and CLI tool, it simulates page load/interaction to measure metrics like load time and TTI, and checks for issues like incorrect image sizes or broken links. It offers comprehensive reports with improvement recommendations, widely used by developers and integrated into many dev tools for identifying and fixing web page issues.
+Lighthouse is Google's open-source web auditing tool measuring performance, accessibility, and SEO. Available as browser extension and CLI. Provides comprehensive reports with improvement recommendations by simulating page loads and checking for optimization issues.
 
 Visit the following resources to learn more:
 

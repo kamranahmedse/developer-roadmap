@@ -4,6 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [@roadmap@Git and Github Roadmap](https://roadmap.sh/git-github)
+- [@roadmap@Git and GitHub Roadmap](https://roadmap.sh/git-github)
 - [@official@Git](https://git-scm.com/)
 - [@official@Git Documentation](https://git-scm.com/docs)

@@ -4,5 +4,5 @@ This package provides robust and efficient functionalities for marshaling (encod
 
 Visit the following resources to learn more:
 
-- [@article@Empty Interface](https://go.dev/tour/methods/14)
+- [@official@Empty Interface](https://go.dev/tour/methods/14)
 - [@article@Understanding the empty interface in Go](https://dev.to/flrnd/understanding-the-empty-interface-in-go-4652)

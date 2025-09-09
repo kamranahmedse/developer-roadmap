@@ -1,9 +1,10 @@
-# Managing Permissions
+# Permissions
 
-Linux file permissions control access to files and directories using read, write, and execute rights for user, group, and others. Use `chmod` to change permissions, `chown` to change ownership, and `chgrp` to change group ownership. Proper permission management is essential for system security and prevents unauthorized access to sensitive files and directories.
+Linux permissions control file and directory access for users, groups, and others with read, write, and execute types. Commands include `chmod` (change permissions), `chown` (change owner), and `chgrp` (change group). Proper permission management is crucial for system security and organization. Essential for maintaining controlled access to system resources.
 
 Visit the following resources to learn more:
 
-- [@article@Linux File Permissions and Ownership Explained](https://linuxhandbook.com/linux-file-permissions/)
-- [@article@Linux File Permissions Explained](https://www.redhat.com/sysadmin/linux-file-permissions-explained)
-- [@video@Linux File Permissions in 5 minutes](https://www.youtube.com/watch?v=LnKoncbQBsM)
+- [@article@Understanding Linux File Permissions](https://linuxize.com/post/understanding-linux-file-permissions/)
+- [@article@Linux File Permissions](https://linuxhandbook.com/linux-file-permissions/)
+- [@article@Linux Permissions of Files](https://labex.io/tutorials/linux-permissions-of-files-270252)
+- [@video@Linux File Permissions in 5 Minutes](https://www.youtube.com/watch?v=LnKoncbQBsM)

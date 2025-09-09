@@ -1,9 +1,9 @@
 ---
-import { getAllChangelogs } from '../lib/changelog';
+import { listChangelog } from '../queries/changelog';
 import { DateTime } from 'luxon';
 import AstroIcon from './AstroIcon.astro';
-const allChangelogs = await getAllChangelogs();
-const top10Changelogs = allChangelogs.slice(0, 10);
+
+const changelogs = await listChangelog({ limit: 10 });
 ---
 
 <div class='border-t bg-white py-6 text-left sm:py-16 sm:text-center'>
@@ -17,7 +17,7 @@ const top10Changelogs = allChangelogs.slice(0, 10);
       Actively Maintained
     </p>
     <p
-      class='mb-2 mt-1 text-sm leading-relaxed text-gray-600 sm:my-2 sm:my-5 sm:text-lg'
+      class='mt-1 mb-2 text-sm leading-relaxed text-gray-600 sm:my-5 sm:text-lg'
     >
       We are always improving our content, adding new resources and adding
       features to enhance your learning experience.
@@ -25,27 +25,27 @@ const top10Changelogs = allChangelogs.slice(0, 10);
 
     <div class='relative mt-2 text-left sm:mt-8'>
       <div
-        class='absolute inset-y-0 left-[120px] hidden w-px -translate-x-[0.5px] translate-x-[5.75px] bg-gray-300 sm:block'
+        class='absolute inset-y-0 left-[120px] hidden w-px translate-x-[5.75px] bg-gray-300 sm:block'
       >
       </div>
       <ul class='relative flex flex-col gap-4 py-4'>
         {
-          top10Changelogs.map((changelog) => {
+          changelogs.map((changelog) => {
             const formattedDate = DateTime.fromISO(
-              changelog.frontmatter.date,
+              changelog.createdAt,
             ).toFormat('dd LLL, yyyy');
             return (
               <li class='relative'>
                 <a
-                  href={`/changelog#${changelog.id}`}
+                  href={`/changelog#${changelog._id}`}
                   class='flex flex-col items-start sm:flex-row sm:items-center'
                 >
                   <span class='shrink-0 pr-0 text-right text-sm tracking-wide text-gray-400 sm:w-[120px] sm:pr-4'>
                     {formattedDate}
                   </span>
                   <span class='hidden h-3 w-3 shrink-0 rounded-full bg-gray-300 sm:block' />
-                  <span class='text-balance text-base font-medium text-gray-900 sm:pl-8'>
-                    {changelog.frontmatter.title}
+                  <span class='text-base font-medium text-balance text-gray-900 sm:pl-8'>
+                    {changelog.title}
                   </span>
                 </a>
               </li>
@@ -55,7 +55,7 @@ const top10Changelogs = allChangelogs.slice(0, 10);
       </ul>
     </div>
     <div
-      class='mt-2 flex flex-col gap-2 sm:flex-row sm:mt-8 sm:items-center sm:justify-center'
+      class='mt-2 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:items-center sm:justify-center'
     >
       <a
         href='/changelog'
@@ -66,7 +66,7 @@ const top10Changelogs = allChangelogs.slice(0, 10);
       <button
         data-guest-required
         data-popup='login-popup'
-        class='flex flex-row items-center gap-2 rounded-lg border border-black bg-white px-4 py-2 text-sm text-black transition-all hover:bg-black hover:text-white sm:rounded-full sm:pl-4 sm:pr-5 sm:text-base'
+        class='flex flex-row items-center gap-2 rounded-lg border border-black bg-white px-4 py-2 text-sm text-black transition-all hover:bg-black hover:text-white sm:rounded-full sm:pr-5 sm:pl-4 sm:text-base'
       >
         <AstroIcon icon='bell' class='h-5 w-5' />
         Subscribe for Notifications

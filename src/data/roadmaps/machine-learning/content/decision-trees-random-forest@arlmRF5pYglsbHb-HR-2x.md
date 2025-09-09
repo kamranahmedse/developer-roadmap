@@ -1,0 +1,3 @@
+# Decision Trees and Random Forests
+
+Decision Trees are a way to make predictions by learning decision rules from data features. Imagine a flowchart where each internal node represents a test on an attribute (like "Is the color red?"), each branch represents the outcome of the test, and each leaf node represents a class label (like "apple" or "banana"). Random Forests improve upon this by creating multiple decision trees on different subsets of the data and features, then combining their predictions to get a more accurate and robust result.

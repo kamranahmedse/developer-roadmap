@@ -2,6 +2,7 @@ import { Download } from 'lucide-react';
 import { isLoggedIn } from '../lib/jwt.ts';
 import { useEffect, useState } from 'react';
 import { showLoginPopup } from '../lib/popup.ts';
+import { getUrlParams } from '../lib/browser.ts';
 
 type DownloadRoadmapButtonProps = {
   roadmapId: string;
@@ -13,8 +14,11 @@ export function DownloadRoadmapButton(props: DownloadRoadmapButtonProps) {
   const [url, setUrl] = useState<string>('#');
 
   useEffect(() => {
+    const params = getUrlParams();
+    const roadmapSlug = params?.r || roadmapId;
+
     if (isLoggedIn()) {
-      setUrl(`/pdfs/roadmaps/${roadmapId}.pdf`);
+      setUrl(`/pdfs/roadmaps/${roadmapSlug}.pdf`);
     }
   }, []);
 

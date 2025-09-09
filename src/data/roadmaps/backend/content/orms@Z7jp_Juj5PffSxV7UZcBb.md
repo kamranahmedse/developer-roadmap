@@ -1,6 +1,6 @@
 # ORMs
 
-Object-Relational Mapping (ORM) is a programming technique that allows developers to interact with a relational database using object-oriented programming concepts. ORM frameworks map database tables to classes and rows to objects, enabling developers to perform database operations through objects rather than writing raw SQL queries. This abstraction simplifies data manipulation and improves code maintainability by aligning database interactions with the application's object model. ORM tools handle the translation between objects and database schemas, manage relationships, and often provide features like lazy loading and caching. Popular ORM frameworks include Hibernate for Java, Entity Framework for .NET, and SQLAlchemy for Python.
+ORM (Object-Relational Mapping) allows developers to interact with databases using object-oriented concepts. Maps database tables to classes and rows to objects, eliminating raw SQL queries. Simplifies data manipulation and improves maintainability. Popular ORMs: Hibernate (Java), Entity Framework (.NET), SQLAlchemy (Python).
 
 Visit the following resources to learn more:
 

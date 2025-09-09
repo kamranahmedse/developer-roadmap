@@ -12,9 +12,9 @@ There are several types of network connections that enable communication between
 
 Each connection type plays a specific role, balancing factors like speed, distance, and convenience to meet the varying needs of users and organizations.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What is Ethernet?](https://www.techtarget.com/searchnetworking/definition/Ethernet)
 - [@article@What is WiFi and how does it work?](https://computer.howstuffworks.com/wireless-network.htm)
 - [@article@How bluetooth works](https://electronics.howstuffworks.com/bluetooth.htm)
--.[video@How bluetooth works](https://www.youtube.com/watch?v=1I1vxu5qIUM)
+- [@article@video@How bluetooth works](https://www.youtube.com/watch?v=1I1vxu5qIUM)

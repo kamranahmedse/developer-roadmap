@@ -1,6 +1,6 @@
 # GraphQL
 
-GraphQL is a query language for APIs and a runtime for executing those queries, developed by Facebook. Unlike REST, where fixed endpoints return predefined data, GraphQL allows clients to request exactly the data they need, making API interactions more flexible and efficient. It uses a single endpoint and relies on a schema that defines the types and structure of the available data. This approach reduces over-fetching and under-fetching of data, making it ideal for complex applications with diverse data needs across multiple platforms (e.g., web, mobile).
+GraphQL is Facebook's query language for APIs allowing clients to request exactly the data they need. Uses single endpoint with schema-defined data structure, reducing over-fetching and under-fetching. More flexible than REST for complex applications with diverse platform needs.
 
 Visit the following resources to learn more:
 

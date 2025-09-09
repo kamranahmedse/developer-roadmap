@@ -1,8 +1,6 @@
 import type { MarkdownFileType } from './file';
 import type { AuthorFileType } from './author.ts';
 import { getAllAuthors } from './author.ts';
-import type { GuideFileType } from './guide.ts';
-import { getAllGuides } from './guide.ts';
 
 export interface VideoFrontmatter {
   title: string;

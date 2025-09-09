@@ -1,7 +1,7 @@
 ---
 pdfUrl: '/pdfs/roadmaps/android.pdf'
 renderer: 'editor'
-order: 5
+order: 4.7
 briefTitle: 'Android'
 briefDescription: 'Step by step guide to becoming an Android Developer in 2025'
 title: 'Android Developer'

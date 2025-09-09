@@ -1,6 +1,6 @@
 # Sass
 
-Sass (Syntactically Awesome Style Sheets) is a tool that makes writing CSS easier and more powerful. It adds features like variables (to store colors or sizes), nested rules (to organize your styles better), and mixins (to reuse styles). This helps keep your CSS neat and easy to manage, especially in big projects. Sass code gets turned into regular CSS that browsers can understand. It has two ways of writing: the original indented style and the more common SCSS style. Sass is popular because it saves time and makes CSS less repetitive.
+Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor adding variables, nested rules, mixins, and functions. Compiles to regular CSS with two syntaxes: indented Sass and SCSS. Helps organize styles, reduces repetition, and improves maintainability in large projects.
 
 Visit the following resources to learn more:
 

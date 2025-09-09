@@ -1,6 +1,6 @@
 # CouchDB
 
-Apache CouchDB is an open-source document-oriented NoSQL database. It uses JSON to store data, JavaScript as its query language using MapReduce, and HTTP for an API. Unlike a relational database, a CouchDB database does not store data and relationships in tables. Instead, each database is a collection of independent documents. Each document maintains its own data and self-contained schema.
+Apache CouchDB is a document-oriented NoSQL database using JSON for data storage, JavaScript MapReduce for queries, and HTTP for API access. Stores independent documents with self-contained schemas instead of relational tables.
 
 Visit the following resources to learn more:
 

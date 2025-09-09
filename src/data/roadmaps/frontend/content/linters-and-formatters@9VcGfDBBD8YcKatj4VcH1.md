@@ -1,6 +1,6 @@
 # Linters formatters
 
-Linters and formatters boost code quality. Linters find errors, bugs, and style issues by checking code against rules. Formatters automatically fix style, like indents and spacing. They help keep code consistent, readable, and catch errors early. ESLint and Prettier are popular examples, often used in code editors for live feedback.
+Linters and formatters improve code quality by finding errors, bugs, and style issues (linters) and automatically fixing formatting like indentation and spacing (formatters). Ensure consistency, readability, and early error detection. Examples: ESLint, Prettier.
 
 Visit the following resources to learn more:
 

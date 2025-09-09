@@ -1,7 +1,6 @@
 # Working with Files
 
-Working with files is an essential part of Linux and it's a skill every Linux user must have. In Linux, everything is considered a file: texts, images, systems, devices, and directories.
-Linux provides multiple command-line utilities to create, view, move or search files. Some of the basic commands for file handling in Linux terminal include `touch` for creating files, `mv` for moving files, `cp` for copying files, `rm` for removing files, and `ls` for listing files and directories.
+Working with files is an essential part of Linux and it's a skill every Linux user must have. In Linux, everything is considered a file: texts, images, systems, devices, and directories. Linux provides multiple command-line utilities to create, view, move or search files. Some of the basic commands for file handling in Linux terminal include `touch` for creating files, `mv` for moving files, `cp` for copying files, `rm` for removing files, and `ls` for listing files and directories.
 
 Visit the following resources to learn more:
 

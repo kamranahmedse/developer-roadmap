@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [@official@Appium](https://appium.io/)
 - [@official@Appium Documentation](https://appium.io/docs/en/2.0/intro/)
 - [@article@Appium Tutorial for Mobile Application Testing](https://www.browserstack.com/guide/appium-tutorial-for-testing)
-- [@opensource@Appium example tests on Github](https://github.com/appium/appium/tree/1.x/sample-code)
+- [@opensource@Appium example tests on GitHub](https://github.com/appium/appium/tree/1.x/sample-code)

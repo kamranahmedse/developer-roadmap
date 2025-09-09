@@ -5,5 +5,5 @@ Creates and initializes slices, maps, and channels. Unlike `new()`, returns usab
 Visit the following resources to learn more:
 
 - [@official@make](https://go.dev/tour/moretypes/13)
-- [@article@The new() vs make() Functions in Go](https://nitish08.medium.com/loops-in-golang-d44fb39b08e)
+- [@article@The new() vs make() Functions in Go](https://www.freecodecamp.org/news/new-vs-make-functions-in-go/)
 - [@article@Understanding the make Function in Golang](https://www.zetcode.com/golang/builtins-make/)

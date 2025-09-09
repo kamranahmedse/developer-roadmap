@@ -1,6 +1,6 @@
 # Electron
 
-Electron is a framework for building cross-platform desktop apps with web tech (HTML, CSS, JavaScript). It uses Chromium and Node.js, allowing access to native OS functions. Popular apps like VS Code use Electron. It enables fast development and cross-platform use, but can be resource-intensive. Still, it's a go-to for web developers creating desktop apps.
+Electron builds cross-platform desktop apps using web technologies (HTML, CSS, JavaScript) with Chromium and Node.js. Provides native OS access and powers apps like VS Code. Enables rapid development but can be resource-intensive. Popular choice for web developers.
 
 Visit the following resources to learn more:
 
