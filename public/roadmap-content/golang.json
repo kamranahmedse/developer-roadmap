@@ -479,7 +479,7 @@
       },
       {
         "title": "The new() vs make() Functions in Go",
-        "url": "https://nitish08.medium.com/loops-in-golang-d44fb39b08e",
+        "url": "https://www.freecodecamp.org/news/new-vs-make-functions-in-go/",
         "type": "article"
       },
       {
@@ -2615,13 +2615,13 @@
         "type": "article"
       },
       {
-        "title": "Exploring Golang and Beego: A Beginner's Guide with Examples",
-        "url": "https://medium.com/@vijeshomen/exploring-golang-and-beego-a-beginners-guide-with-examples-part-1-79619f0db1ac",
+        "title": "beego package",
+        "url": "https://pkg.go.dev/github.com/beego/beego",
         "type": "article"
       },
       {
-        "title": "beego package",
-        "url": "https://pkg.go.dev/github.com/beego/beego",
+        "title": "Exploring Golang and Beego: A Beginner's Guide with Examples",
+        "url": "https://medium.com/@vijeshomen/exploring-golang-and-beego-a-beginners-guide-with-examples-part-1-79619f0db1ac",
         "type": "article"
       }
     ]

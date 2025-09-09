@@ -678,26 +678,10 @@
       }
     ]
   },
-  "2UQ3AuGkDbT0-54l0rOGM": {
-    "title": "Ownership Rules & Memory Safety",
-    "description": "Rust's ownership has three key rules: each value has exactly one owner, only one owner exists at a time, and values are dropped when owners go out of scope. This prevents data races, ensures memory safety without garbage collection, and eliminates common bugs like use-after-free and memory leaks.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What is Ownership?",
-        "url": "https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html",
-        "type": "article"
-      },
-      {
-        "title": "Rust Ownership & Borrowing - Memory Safety Without Garbage",
-        "url": "https://webreference.com/rust/ownership/",
-        "type": "article"
-      },
-      {
-        "title": "What Is Ownership?",
-        "url": "https://rust-book.cs.brown.edu/ch04-01-what-is-ownership.html",
-        "type": "article"
-      }
-    ]
+  "ownsership-rules--memory-safety@2UQ3AuGkDbT0-54l0rOGM.md": {
+    "title": "Ownsership Rules & Memory Safety",
+    "description": "",
+    "links": []
   },
   "-onH5vPffdcZFjjVcnEpk": {
     "title": "Borrowing, References and Slices",
@@ -881,6 +865,16 @@
       {
         "title": "Result",
         "url": "https://doc.rust-lang.org/rust-by-example/error/result.html",
+        "type": "article"
+      },
+      {
+        "title": "Error Handling in Rust - Andrew Gallant's Blog",
+        "url": "https://burntsushi.net/rust-error-handling",
+        "type": "article"
+      },
+      {
+        "title": "Using unwrap() in Rust is Okay - Andrew Gallant's Blog",
+        "url": "https://burntsushi.net/unwrap/",
         "type": "article"
       }
     ]

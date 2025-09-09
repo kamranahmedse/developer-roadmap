@@ -1080,6 +1080,11 @@
         "title": "astral-sh/uv",
         "url": "https://github.com/astral-sh/uv",
         "type": "opensource"
+      },
+      {
+        "title": "@UV for Python",
+        "url": "https://www.youtube.com/watch?v=qh98qOND6MI&t",
+        "type": "article"
       }
     ]
   },
@@ -1178,11 +1183,11 @@
   },
   "9mFR_ueXbIB2IrkqU2s85": {
     "title": "pyre",
-    "description": "pyre is a static type checker for Python. It is a tool that helps you find type errors in your Python code. Pyre is designed to be fast, scalable, and easy to use. It is used at Facebook to help developers catch type errors before they make it to production.\n\nLearn more from the following resources:",
+    "description": "pyrefly is a static type checker for Python. It is a tool that helps you find type errors in your Python code. Pyre is designed to be fast, scalable, and easy to use. It is used at Facebook to help developers catch type errors before they make it to production.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "pyre Documentation",
-        "url": "https://pyre-check.org/",
+        "title": "pyrefly Documentation",
+        "url": "https://pyre-check.org/%5D(https://pyrefly.org)",
         "type": "article"
       }
     ]

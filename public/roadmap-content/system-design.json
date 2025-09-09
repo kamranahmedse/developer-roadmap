@@ -405,8 +405,14 @@
   },
   "MpM9rT1-_LGD7YbnBjqOk": {
     "title": "Layer 4 Load Balancing",
-    "description": "Layer 4 load balancers look at info at the transport layer to decide how to distribute requests. Generally, this involves the source, destination IP addresses, and ports in the header, but not the contents of the packet. Layer 4 load balancers forward network packets to and from the upstream server, performing Network Address Translation (NAT).",
-    "links": []
+    "description": "Layer 4 load balancers look at info at the transport layer to decide how to distribute requests. Generally, this involves the source, destination IP addresses, and ports in the header, but not the contents of the packet. Layer 4 load balancers forward network packets to and from the upstream server, performing Network Address Translation (NAT).\n\nLearn more from the following links:",
+    "links": [
+      {
+        "title": "Layer 4 Load Balancing",
+        "url": "https://www.f5.com/glossary/layer-4-load-balancing",
+        "type": "article"
+      }
+    ]
   },
   "IkUCfSWNY-02wg2WCo1c6": {
     "title": "Horizontal Scaling",

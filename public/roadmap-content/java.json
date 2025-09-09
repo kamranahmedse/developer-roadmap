@@ -202,6 +202,11 @@
         "title": "How the JVM Executes Java Code",
         "url": "https://www.cesarsotovalero.net/blog/how-the-jvm-executes-java-code.html",
         "type": "article"
+      },
+      {
+        "title": "JIT vs. AOT Compilation in Java",
+        "url": "https://bell-sw.com/blog/compilation-in-java-jit-vs-aot/",
+        "type": "article"
       }
     ]
   },
@@ -305,6 +310,11 @@
     "title": "Method Chaining",
     "description": "Method chaining is a programming technique where multiple method calls are made sequentially on the same object, one after another, in a single statement. Each method in the chain returns an object, allowing the next method to be called on that returned object. This approach enhances code readability and conciseness by reducing the need for temporary variables and intermediate steps.\n\nVisit the following resources to learn more:",
     "links": [
+      {
+        "title": "@GeeksforGeeks@Method Chaining In Java with Examples",
+        "url": "https://www.geeksforgeeks.org/java/method-chaining-in-java-with-examples/",
+        "type": "article"
+      },
       {
         "title": "How to achieve method chaining in Java",
         "url": "https://stackoverflow.com/questions/21180269/how-to-achieve-method-chaining-in-java",
@@ -698,6 +708,11 @@
       {
         "title": "Understanding Java Exceptions",
         "url": "https://www.youtube.com/watch?v=W-N2ltgU-X4",
+        "type": "video"
+      },
+      {
+        "title": "Java Exception Handling",
+        "url": "https://www.youtube.com/watch?v=1XAfapkBQjk",
         "type": "video"
       }
     ]

@@ -369,7 +369,7 @@
     "description": "GitHub Essentials refers to the core features and functionalities that form the foundation of GitHub's version control and collaboration platform. These essentials include repositories for storing and managing code, branches for parallel development, pull requests for code review and merging, issues for tracking tasks and bugs, and collaborative tools like project boards and wikis. Understanding and mastering these fundamental components allows developers to effectively manage their projects, collaborate with team members, and contribute to open-source initiatives, making GitHub an indispensable tool in modern software development workflows.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Github Essentials - Microsoft",
+        "title": "GitHub Essentials - Microsoft",
         "url": "https://learn.microsoft.com/en-us/contribute/content/git-github-fundamentals",
         "type": "article"
       },
@@ -676,7 +676,7 @@
         "type": "article"
       },
       {
-        "title": "Using Github for Team collaboration",
+        "title": "Using GitHub for Team collaboration",
         "url": "https://youtu.be/4nyIS58ORWw?si=yK5LCONNVm9OIUK5",
         "type": "video"
       }
@@ -703,7 +703,7 @@
         "type": "article"
       },
       {
-        "title": "Walkthrough: Using Github’s “Saved Replies” to make life consistent and easy",
+        "title": "Walkthrough: Using GitHub’s “Saved Replies” to make life consistent and easy",
         "url": "https://prowe214.medium.com/walkthrough-using-githubs-saved-replies-to-make-life-consistent-and-easy-80f23efe6a0",
         "type": "article"
       }
@@ -1042,7 +1042,7 @@
         "type": "article"
       },
       {
-        "title": "Github Team Docs",
+        "title": "GitHub Team Docs",
         "url": "https://docs.github.com/organizations/organizing-members-into-teams/about-teams",
         "type": "article"
       }
@@ -1857,7 +1857,7 @@
         "type": "article"
       },
       {
-        "title": "Efficient GitHub Operations: Simplifying Repository Management using Github CLI",
+        "title": "Efficient GitHub Operations: Simplifying Repository Management using GitHub CLI",
         "url": "https://dev.to/yutee_okon/efficient-github-operations-simplifying-repository-management-using-github-cli-190l",
         "type": "article"
       },
@@ -1915,12 +1915,12 @@
         "type": "course"
       },
       {
-        "title": "Github Actions",
+        "title": "GitHub Actions",
         "url": "https://docs.github.com/en/actions",
         "type": "article"
       },
       {
-        "title": "What are Github Actions",
+        "title": "What are GitHub Actions",
         "url": "https://www.youtube.com/watch?v=URmeTqglS58",
         "type": "video"
       }
@@ -2255,7 +2255,7 @@
     "description": "The GitHub API is a powerful tool that allows developers to interact with the GitHub platform programmatically. It provides access to various GitHub features, such as user data, repository information, and commit history, through both REST and GraphQL interfaces. The API supports authentication, implements rate limiting, and offers webhooks for real-time notifications, enabling developers to automate tasks, create custom integrations, and build applications that leverage GitHub's functionality.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Github API Docs",
+        "title": "GitHub API Docs",
         "url": "https://docs.github.com/en/rest?apiVersion=2022-11-28",
         "type": "article"
       },
@@ -2436,7 +2436,7 @@
     "description": "Deploying static websites on GitHub Pages involves uploading and serving website content that is generated beforehand, without dynamic functionality. This approach allows for fast deployment, low maintenance, and improved security.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "How to Deploy a Static Website for Free Using Github Pages",
+        "title": "How to Deploy a Static Website for Free Using GitHub Pages",
         "url": "https://medium.com/flycode/how-to-deploy-a-static-website-for-free-using-github-pages-8eddc194853b",
         "type": "article"
       },

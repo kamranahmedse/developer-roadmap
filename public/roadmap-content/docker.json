@@ -875,7 +875,7 @@
     "links": [
       {
         "title": "Docker Deployment",
-        "url": "https://docs.docker.com/get-started/deployment/",
+        "url": "https://docs.docker.com/guides/orchestration/",
         "type": "article"
       },
       {
