@@ -1,6 +1,6 @@
 # Internet
 
-The Internet, a global network of interconnected computer networks using TCP/IP, facilitates worldwide data exchange, connecting billions of devices. It has revolutionized communication, commerce, education, and entertainment, supporting diverse applications from web browsing to streaming. While offering vast information access, it also presents privacy, security, and digital divide challenges.
+The Internet is a global network of interconnected computers using TCP/IP protocols, connecting billions of devices worldwide. Revolutionized communication, commerce, education, and entertainment. Enables web browsing, streaming, and diverse applications while presenting privacy and security challenges.
 
 Visit the following resources to learn more:
 

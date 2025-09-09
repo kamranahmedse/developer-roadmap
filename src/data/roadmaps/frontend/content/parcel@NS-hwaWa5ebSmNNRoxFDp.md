@@ -1,6 +1,6 @@
 # Parcel
 
-Parcel is a web app bundler that needs no setup. It makes building websites easy by handling many file types like JavaScript, CSS, and HTML automatically. Parcel figures out dependencies, changes code, and optimizes files without needing a config file. It has features like live updates, code splitting, and removing unused code by default. It's known for being easy and fast, great for quick projects or smaller sites.
+Parcel is a zero-configuration web app bundler handling JavaScript, CSS, HTML automatically. Features dependency resolution, code transformation, optimization, live reloading, code splitting, and tree-shaking by default. Known for simplicity and speed, ideal for rapid prototyping.
 
 Visit the following resources to learn more:
 

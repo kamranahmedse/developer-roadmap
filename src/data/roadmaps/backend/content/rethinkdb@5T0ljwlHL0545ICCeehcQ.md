@@ -1,6 +1,6 @@
 # RethinkDB
 
-RethinkDB is an open-source, distributed NoSQL database designed for real-time applications. It focuses on providing real-time capabilities by allowing applications to automatically receive updates when data changes, using its changefeed feature. RethinkDB's data model is based on JSON documents, and it supports rich queries, including joins, aggregations, and filtering. It offers a flexible schema and supports horizontal scaling through sharding and replication for high availability. Although development on RethinkDB ceased in 2016, its approach to real-time data and powerful querying capabilities make it notable for applications needing immediate data updates and responsiveness.
+RethinkDB is an open-source, distributed NoSQL database for real-time applications. Features changefeed for automatic data update notifications, JSON document model, rich queries with joins and aggregations. Supports horizontal scaling through sharding and replication. Development ceased in 2016.
 
 Learn more from the following resources:
 

@@ -1,6 +1,6 @@
 # Notifications API
 
-The Notifications API lets websites show system alerts to users, like for new messages or updates, even if the site isn't open. The site must ask for permission first. If allowed, it can create notifications with a title, text, and icon. These can also have a timeout or an action when clicked. It helps keep users informed about important events from the website.
+Notifications API displays system alerts for messages, updates, and events even when site isn't active. Requires user permission and supports title, text, icons, timeouts, and click actions. Keeps users informed of important website events.
 
 Visit the following resources to learn more:
 

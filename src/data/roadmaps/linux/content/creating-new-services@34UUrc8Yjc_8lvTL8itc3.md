@@ -1,8 +1,9 @@
-# Creating New Services
+# Service Status
 
-Creating custom services in Linux involves writing systemd service unit files that define how processes should start, stop, and restart. Service files are placed in `/etc/systemd/system/` and contain sections like [Unit], [Service], and [Install]. Use `systemctl enable` to enable services at boot and `systemctl start` to run them. Custom services allow automation of background processes.
+Service status shows the current state of Linux services including network processes, backend servers, and background applications. Use `systemctl status service_name` to check service states through systemd manager. Example: `systemctl status apache2.service` shows Apache web server status. Essential for diagnosing problems, maintaining performance, and preventing service downtimes.
 
 Visit the following resources to learn more:
 
-- [@article@How to Create a systemd Service in Linux](https://linuxhandbook.com/create-systemd-services/)
-- [@article@A Beginner's Guide to Creating Linux Services](https://www.fosslinux.com/111815/a-guide-to-creating-linux-services-with-systemd.htm)
+- [@article@Service Management in Linux: A Comprehensive Guide](https://medium.com/@thesureshvadde/service-management-in-linux-a-comprehensive-guide-cb4c7e81dfa9)
+- [@article@Use Systemctl Status Command to Check Service Status](https://linuxhandbook.com/systemctl-check-service-status/)
+- [@article@How to Check All Running Services in Linux](https://www.2daygeek.com/how-to-check-all-running-services-in-linux/)

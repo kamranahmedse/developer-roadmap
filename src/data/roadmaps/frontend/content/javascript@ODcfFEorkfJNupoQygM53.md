@@ -1,6 +1,6 @@
 # JavaScript
 
-JavaScript is a key programming language for the web. It makes websites interactive, like when things move or change when you click them. It works in web browsers but also on servers (with Node.js) and for desktop apps. JavaScript is flexible and always updating, making it very popular for all kinds of web development.
+JavaScript is a versatile programming language that makes websites interactive. Runs in browsers, servers (Node.js), and desktop applications. Features dynamic typing, event-driven programming, and constant evolution. Essential for modern web development across frontend and backend.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Flutter
 
-Flutter, by Google, is a tool for building apps for many platforms (iOS, Android, web, desktop) from one set of code. It uses the Dart language and has many ready-made UI parts (widgets) for making good-looking apps. Flutter is fast to develop with because of its hot reload (see changes instantly). It draws its own UI, so apps look the same everywhere. It's very popular for mobile apps and growing for web and desktop too.
+Flutter is Google's cross-platform framework building apps for iOS, Android, web, desktop from single Dart codebase. Features rich widget library, hot reload, and custom rendering engine for consistent UI. Popular for mobile development, expanding to web and desktop platforms.
 
 Visit the following resources to learn more:
 

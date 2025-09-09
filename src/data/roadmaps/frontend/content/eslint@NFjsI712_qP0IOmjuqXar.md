@@ -1,6 +1,6 @@
 # ESLint
 
-ESLint is a tool that checks JavaScript code for problems. It helps keep code style consistent and finds errors. ESLint is very flexible; you can set your own rules or use ready-made ones. It works with modern JavaScript, JSX, and TypeScript. You can use ESLint in your code editor or when you build your project to get live feedback. It can even fix many issues automatically, which is great for team projects.
+ESLint is a JavaScript linter checking code for problems, maintaining consistent style, and finding errors. Highly configurable with custom or preset rules. Supports modern JavaScript, JSX, TypeScript. Integrates with editors and build tools, offers automatic fixing for team consistency.
 
 Visit the following resources to learn more:
 

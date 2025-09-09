@@ -1,0 +1,3 @@
+# Cloud Data Sources
+
+Cloud data sources refer to data that is stored and accessed through a network of remote servers hosted on the internet, rather than on local servers or personal devices. These sources can include databases, data warehouses, data lakes, and various applications offered by cloud providers like AWS, Azure, and Google Cloud. They offer scalability, accessibility, and often cost-effectiveness for storing and processing large volumes of data.

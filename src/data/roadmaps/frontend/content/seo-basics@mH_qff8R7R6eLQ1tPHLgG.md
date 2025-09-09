@@ -1,6 +1,6 @@
 # Basics of SEO
 
-SEO (Search Engine Optimization) helps websites show up higher in search results. This means using good keywords, creating quality content, making sure your site is fast and mobile-friendly, and getting links from other trusted sites. Good navigation and design also help. Technical things like sitemaps and secure HTTPS are important too. SEO aims to get more visitors from search engines by improving your site both on the page and technically.
+SEO (Search Engine Optimization) improves website visibility in search results through keywords, quality content, fast loading, mobile-friendliness, and trusted backlinks. Includes technical elements like sitemaps, HTTPS, and good navigation to increase organic traffic.
 
 Visit the following resources to learn more:
 

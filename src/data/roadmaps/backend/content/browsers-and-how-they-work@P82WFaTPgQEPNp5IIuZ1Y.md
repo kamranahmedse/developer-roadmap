@@ -1,6 +1,6 @@
 # Browsers
 
-Web browsers are software applications that enable users to access, retrieve, and navigate information on the World Wide Web. They interpret and display HTML, CSS, and JavaScript to render web pages. Modern browsers like Google Chrome, Mozilla Firefox, Apple Safari, and Microsoft Edge offer features such as tabbed browsing, bookmarks, extensions, and synchronization across devices. They incorporate rendering engines (e.g., Blink, Gecko, WebKit) to process web content, and JavaScript engines for executing code. Browsers also manage security through features like sandboxing, HTTPS enforcement, and pop-up blocking. They support various web standards and technologies, including HTML5, CSS3, and Web APIs, enabling rich, interactive web experiences. With the increasing complexity of web applications, browsers have evolved to become powerful platforms, balancing performance, security, and user experience in the ever-changing landscape of the internet.
+Web browsers interpret HTML, CSS, and JavaScript to render web pages. Modern browsers use rendering engines (Blink, Gecko, WebKit) and JavaScript engines, offering features like tabs, bookmarks, extensions, and security through sandboxing and HTTPS enforcement.
 
 Visit the following resources to learn more:
 

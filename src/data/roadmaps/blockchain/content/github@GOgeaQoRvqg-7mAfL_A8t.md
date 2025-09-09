@@ -4,7 +4,7 @@ GitHub is a provider of Internet hosting for software development and version co
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Github Roadmap](https://roadmap.sh/git-github)
+- [@roadmap@Visit Dedicated GitHub Roadmap](https://roadmap.sh/git-github)
 - [@official@GitHub](https://github.com)
 - [@official@GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
 - [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)

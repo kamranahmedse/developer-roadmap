@@ -1,6 +1,6 @@
 # Server Sent Events
 
-Server-Sent Events (SSE) is a technology for sending real-time updates from a server to a web client over a single, persistent HTTP connection. It enables servers to push updates to clients efficiently and automatically reconnects if the connection is lost. SSE is ideal for applications needing one-way communication, such as live notifications or real-time data feeds, and uses a simple text-based format for transmitting event data, which can be easily handled by clients using the `EventSource` API in JavaScript.
+Server-Sent Events (SSE) sends real-time updates from server to client over persistent HTTP connection. Enables efficient server push with automatic reconnection. Ideal for one-way communication like live notifications using simple text-based format and EventSource API.
 
 Visit the following resources to learn more:
 

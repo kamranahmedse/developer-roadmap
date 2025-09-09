@@ -1,6 +1,6 @@
 # Web Security Knowledge
 
-Web security involves protecting websites and applications from cyber threats through practices like HTTPS/TLS for secure data, XSS/SQL injection/CSRF prevention, CSP implementation, secure authentication/session management, input validation, clickjacking protection, secure cookie handling, and regular updates. It also means understanding OWASP Top Ten vulnerabilities, access controls, secure coding, and staying informed on new threats. A good strategy combines prevention, audits, and incident response to protect web resources and data.
+Web security protects websites from cyber threats through HTTPS/TLS, XSS/SQL injection/CSRF prevention, CSP, secure authentication, input validation, and regular updates. Involves understanding OWASP Top Ten vulnerabilities, access controls, secure coding practices, and threat awareness for comprehensive protection.
 
 Visit the following resources to learn more:
 

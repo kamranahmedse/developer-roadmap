@@ -1,6 +1,6 @@
 # CSS
 
-CSS (Cascading Style Sheets) is what makes websites look good. It's a language used to style HTML documents, controlling things like layout, colors, and fonts. CSS keeps the design separate from the HTML content, which makes websites easier to manage. It uses "selectors" to pick HTML elements and apply styles. CSS also helps make websites responsive, meaning they look good on any device, thanks to media queries. Important ideas in CSS are the cascade (how styles override each other), inheritance (how styles pass from parent to child elements), and specificity (which style rule wins). Modern CSS has cool tools like Flexbox and Grid for layout, plus animations and transitions for interactive designs.
+CSS (Cascading Style Sheets) styles HTML documents, controlling layout, colors, and fonts. Separates design from content using selectors to target elements. Features responsive design with media queries, cascade rules, inheritance, and specificity. Modern CSS includes Flexbox, Grid, animations, and transitions.
 
 Visit the following resources to learn more:
 

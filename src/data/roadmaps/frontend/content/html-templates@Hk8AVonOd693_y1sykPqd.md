@@ -1,6 +1,6 @@
 # HTML Templates
 
-The `<template>` HTML tag holds HTML content that isn't shown right away when a page loads. Instead, JavaScript can use it later to create new elements on the page. It's like a blueprint for HTML parts you want to reuse.
+The `<template>` HTML element holds hidden content for later use by JavaScript. Acts as a reusable blueprint for creating dynamic page elements. Enables efficient content templating and component-based development patterns in web applications.
 
 Visit the following resources to learn more:
 

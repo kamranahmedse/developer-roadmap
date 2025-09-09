@@ -1,6 +1,6 @@
 # React Native
 
-React Native, by Facebook, lets you build real mobile apps for iOS and Android using JavaScript and React. It turns your code into native app parts, so apps look and feel native and run fast. You can share code between iOS and Android, saving time and money. It has features like hot reloading (see changes instantly) and access to phone features. It's great for web developers who know React and want to make mobile apps.
+React Native enables building native mobile apps for iOS and Android using JavaScript and React. Compiles to native components for authentic look and performance. Features code sharing, hot reloading, and device API access. Ideal for React developers transitioning to mobile development.
 
 Visit the following resources to learn more:
 

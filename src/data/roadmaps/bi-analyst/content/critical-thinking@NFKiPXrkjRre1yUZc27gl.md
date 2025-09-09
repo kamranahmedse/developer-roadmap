@@ -1,0 +1,3 @@
+# Critical Thinking
+
+Critical thinking involves analyzing information objectively and forming a reasoned judgment. It's about evaluating evidence, identifying assumptions, and considering different perspectives to arrive at well-supported conclusions. This process helps in problem-solving and decision-making by ensuring that conclusions are logical and based on facts rather than emotions or biases.

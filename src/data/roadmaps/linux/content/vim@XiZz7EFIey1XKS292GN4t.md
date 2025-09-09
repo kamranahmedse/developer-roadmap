@@ -4,14 +4,14 @@ Vim (Vi Improved) is a powerful and flexible text editor used in Unix-like syste
 
 Vim operates primarily in three modes:
 
-- Normal (for navigation and manipulation).
-- Insert (for editing text).
-- Command (for executing commands).
+*   Normal (for navigation and manipulation).
+*   Insert (for editing text).
+*   Command (for executing commands).
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
+- [@course@Learn Vimscript The Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
 - [@article@Vim Cheat Sheet](https://vim.rtorr.com/)
 - [@article@Learn Vim Progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
 - [@article@Platform to practice Vim](https://vim-adventures.com/)
 - [@video@Vim Basics](https://www.youtube.com/watch?v=wACD8WEnImo&list=PLT98CRl2KxKHy4A5N70jMRYAROzzC2a6x&ab_channel=LearnLinuxTV)
-- [@course@Learn Vimscript The Hard Way](https://learnvimscriptthehardway.stevelosh.com/)

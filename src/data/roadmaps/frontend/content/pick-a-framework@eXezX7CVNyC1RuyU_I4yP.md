@@ -1,6 +1,6 @@
 # Pick a Framework
 
-Web frameworks are toolkits for building web applications. They are sets of libraries that help create software or websites. Different frameworks have different features, depending on what you need to do. They give structure, rules, and tools for development. Examples are React, Angular, and Vue.
+Web frameworks are development toolkits providing libraries, structure, rules, and tools for building applications. Different frameworks offer varying features based on project needs. Popular examples include React, Angular, and Vue, each with unique strengths and capabilities.
 
 Visit the following resources to learn more:
 

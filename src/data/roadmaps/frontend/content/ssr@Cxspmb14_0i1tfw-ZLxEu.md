@@ -1,6 +1,6 @@
 # Server-side rendering
 
-Server-side rendering (SSR) means websites are built on the server before being sent to your browser as complete HTML. This is different from client-side rendering, where the browser builds the page. SSR helps pages load faster at first and is better for search engines. It's good for sites with lots of content. Frameworks like Next.js (for React) and Nuxt.js (for Vue) use SSR. It can make servers busier but improves performance, especially on slow devices.
+Server-side rendering (SSR) generates complete HTML on the server before sending to browsers. Improves initial load times, SEO, and performance on slow devices. Frameworks: Next.js (React), Nuxt.js (Vue). Increases server load but enhances user experience.
 
 Visit the following resources to learn more:
 

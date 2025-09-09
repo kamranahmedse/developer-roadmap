@@ -1,0 +1,3 @@
+# CNNs for Recommendation Systems
+
+Convolutional Neural Networks (CNNs), typically used for image processing, can also enhance recommendation systems. They do this by extracting features from user-item interaction data, like purchase history or ratings. For example, a CNN can analyze a matrix representing user preferences for different movie genres to identify patterns. These patterns help predict what movies a user might enjoy, even if they haven't explicitly rated them. By learning these complex relationships, CNNs can provide more personalized and accurate recommendations.

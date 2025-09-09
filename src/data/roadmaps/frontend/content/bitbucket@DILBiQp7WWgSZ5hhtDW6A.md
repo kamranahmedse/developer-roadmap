@@ -1,6 +1,6 @@
 # BitBucket
 
-Bitbucket, by Atlassian, hosts Git and Mercurial code projects. It’s for both open-source and private work. Bitbucket has features like pull requests and code review comments. It works well with other Atlassian tools like Jira for project management. You can use it online or host it yourself. Bitbucket also supports CI/CD (automating build and release) with Bitbucket Pipelines.
+Bitbucket is Atlassian's Git and Mercurial repository hosting platform supporting open-source and private projects. Features pull requests, code reviews, and integrates with Atlassian tools like Jira. Offers cloud and self-hosted options with CI/CD through Bitbucket Pipelines.
 
 Visit the following resources to learn more:
 

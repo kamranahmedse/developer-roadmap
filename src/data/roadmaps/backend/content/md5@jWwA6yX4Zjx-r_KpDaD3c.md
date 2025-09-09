@@ -1,6 +1,6 @@
 # MD5
 
-MD5 (Message-Digest Algorithm 5) is a widely used cryptographic hash function that produces a 128-bit hash value, typically represented as a 32-character hexadecimal number. It was designed to provide a unique identifier for data by generating a fixed-size output (the hash) for any input. While MD5 was once popular for verifying data integrity and storing passwords, it is now considered cryptographically broken and unsuitable for security-sensitive applications due to vulnerabilities that allow for collision attacks (where two different inputs produce the same hash). As a result, MD5 has largely been replaced by more secure hash functions like SHA-256.
+MD5 (Message-Digest Algorithm 5) produces 128-bit hash values as 32-character hexadecimal strings. Once popular for data integrity and passwords, now considered cryptographically broken due to collision vulnerabilities. Largely replaced by secure alternatives like SHA-256.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # TypeScript
 
-TypeScript, by Microsoft, is a strongly-typed language that extends JavaScript with optional static typing. It compiles to plain JavaScript, running anywhere JavaScript does. TypeScript enhances IDE support with better code completion, refactoring, and error detection. It introduces interfaces, generics, and decorators for robust software architecture, proving valuable for large apps by improving maintainability and readability. Its type system catches errors early, reducing runtime issues. TypeScript is a standard in modern web development.
+TypeScript is Microsoft's strongly-typed language extending JavaScript with static typing. Compiles to plain JavaScript with enhanced IDE support, interfaces, generics, and decorators. Catches errors early, improves maintainability, and reduces runtime issues. Standard for large-scale applications.
 
 Visit the following resources to learn more:
 

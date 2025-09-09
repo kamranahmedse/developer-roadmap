@@ -1,6 +1,6 @@
 # Hateoas
 
-HATEOAS (Hypermedia As The Engine Of Application State) is a constraint of RESTful architecture that allows clients to navigate an API dynamically through hypermedia links provided in responses. Instead of hard-coding URLs or endpoints, the client discovers available actions through these links, much like a web browser following links on a webpage. This enables greater flexibility and decouples clients from server-side changes, making the system more adaptable and scalable without breaking existing clients. It's a key element of REST's principle of statelessness and self-descriptive messages.
+HATEOAS (Hypermedia As The Engine Of Application State) is a REST constraint enabling clients to navigate APIs dynamically through hypermedia links in responses. Clients discover actions through links instead of hard-coded URLs, providing flexibility and decoupling from server changes.
 
 Learn more from the following resources:
 

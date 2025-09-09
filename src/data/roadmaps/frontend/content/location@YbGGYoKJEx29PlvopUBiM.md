@@ -1,6 +1,6 @@
 # Location API
 
-The Geolocation API lets websites know a device's location (like latitude and longitude). This is for apps that use location, like maps. It uses GPS, Wi-Fi, and other sensors. The website must ask for permission first. If given, it can get the current location, watch for changes, or find distances. This helps make location-aware web apps.
+Geolocation API provides device location (latitude/longitude) using GPS, Wi-Fi, and sensors. Requires user permission for privacy. Enables current location access, position tracking, and distance calculations for location-aware web applications like maps and navigation.
 
 Visit the following resources to learn more:
 

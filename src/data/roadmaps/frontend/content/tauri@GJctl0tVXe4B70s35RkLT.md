@@ -1,6 +1,6 @@
 # Tauri
 
-Tauri is a tool for building small, secure desktop apps using web technologies like HTML, CSS, and JavaScript. It uses a Rust backend for the main logic. Unlike Electron, Tauri uses the computer's built-in web viewer, making apps smaller. It has strong security features and works with many JavaScript frameworks. Tauri is good for making fast, secure desktop apps with web skills, focusing on small app size and good performance.
+Tauri builds small, secure desktop apps using web technologies with Rust backend. Uses system webview instead of bundled browser, resulting in smaller apps. Features strong security and JavaScript framework compatibility. Focuses on performance and minimal resource usage compared to Electron.
 
 Visit the following resources to learn more:
 

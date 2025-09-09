@@ -1,6 +1,6 @@
 # Unit Testing
 
-Unit testing is a software testing method where individual components or units of a program are tested in isolation to ensure they function correctly. This approach focuses on verifying the smallest testable parts of an application, such as functions or methods, by executing them with predefined inputs and comparing the results to expected outcomes. Unit tests are typically automated and written by developers during the coding phase to catch bugs early, facilitate code refactoring, and ensure that each unit of code performs as intended. By isolating and testing each component, unit testing helps improve code reliability and maintainability.
+Unit testing tests individual components or units in isolation to ensure correct functionality. Focuses on smallest testable parts like functions with predefined inputs and expected outcomes. Automated tests written by developers during coding to catch bugs early and improve reliability.
 
 Visit the following resources to learn more:
 

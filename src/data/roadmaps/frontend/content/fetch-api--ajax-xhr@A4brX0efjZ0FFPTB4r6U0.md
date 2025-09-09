@@ -1,6 +1,6 @@
 # Fetch API
 
-The Fetch API is a new way for JavaScript in browsers to make HTTP requests (getting or sending data online). It's better and more flexible than older ways like XMLHttpRequest. Fetch uses Promises, making code that waits for data cleaner. It handles different data types and request methods (GET, POST). It's now the standard way for websites to talk to servers and is supported by most browsers.
+Fetch API is the modern JavaScript interface for making HTTP requests, replacing XMLHttpRequest. Uses Promises for cleaner asynchronous code, supports various data types and HTTP methods. Now the standard for client-server communication with broad browser support.
 
 Visit the following resources to learn more:
 

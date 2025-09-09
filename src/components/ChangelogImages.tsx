@@ -1,13 +1,14 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useState, useEffect, useCallback } from 'react';
+import type { ChangelogImage } from '../queries/changelog';
 
 interface ChangelogImagesProps {
-  images: { [key: string]: string };
+  images: ChangelogImage[];
 }
 
 const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
-  const imageArray = Object.entries(images);
+  const imageArray = images.map((image) => [image.title, image.url]);
 
   const handleImageClick = (src: string) => {
     setEnlargedImage(src);
@@ -63,10 +64,10 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
               alt={title}
               className="h-[120px] w-full object-cover object-left-top"
             />
-            <span className="absolute group-hover:opacity-0 inset-0 bg-linear-to-b from-transparent to-black/40" />
+            <span className="absolute inset-0 bg-linear-to-b from-transparent to-black/40 group-hover:opacity-0" />
 
-            <div className="absolute font-medium inset-x-0 top-full group-hover:inset-y-0 flex items-center justify-center px-2 text-center text-xs bg-black/50 text-white py-0.5 opacity-0 group-hover:opacity-100 cursor-pointer">
-              <span className='bg-black py-0.5 rounded-sm px-1'>{title}</span>
+            <div className="absolute inset-x-0 top-full flex cursor-pointer items-center justify-center bg-black/50 px-2 py-0.5 text-center text-xs font-medium text-white opacity-0 group-hover:inset-y-0 group-hover:opacity-100">
+              <span className="rounded-sm bg-black px-1 py-0.5">{title}</span>
             </div>
           </div>
         ))}
@@ -82,7 +83,7 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
             className="max-h-[90%] max-w-[90%] rounded-xl object-contain"
           />
           <button
-            className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/50 hover:bg-white/100 p-2"
+            className="absolute top-1/2 left-4 -translate-y-1/2 transform rounded-full bg-white/50 p-2 hover:bg-white/100"
             onClick={(e) => {
               e.stopPropagation();
               handleNavigation('prev');
@@ -91,7 +92,7 @@ const ChangelogImages: React.FC<ChangelogImagesProps> = ({ images }) => {
             <ChevronLeft size={24} />
           </button>
           <button
-            className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/50 hover:bg-white/100 p-2"
+            className="absolute top-1/2 right-4 -translate-y-1/2 transform rounded-full bg-white/50 p-2 hover:bg-white/100"
             onClick={(e) => {
               e.stopPropagation();
               handleNavigation('next');

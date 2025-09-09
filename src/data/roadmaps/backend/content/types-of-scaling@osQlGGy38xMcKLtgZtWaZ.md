@@ -1,8 +1,6 @@
 # Horizontal/Vertical Scaling
 
-Horizontal scaling (scaling out/in) involves adding or removing instances of resources, such as servers or containers, to handle increased or decreased loads. It distributes the workload across multiple instances to improve performance and redundancy. This method enhances the system's capacity by expanding the number of nodes in a distributed system.
-
-Vertical scaling (scaling up/down) involves increasing or decreasing the resources (CPU, memory, storage) of a single instance or server to handle more load or reduce capacity. This method improves performance by upgrading the existing hardware or virtual machine but has limits based on the maximum capacity of the individual resource.
+Horizontal scaling (scaling out/in) adds/removes resource instances like servers to distribute workload across multiple nodes for performance and redundancy. Vertical scaling (scaling up/down) increases/decreases single instance resources (CPU, memory, storage) but has hardware capacity limits.
 
 Visit the following resources to learn more:
 

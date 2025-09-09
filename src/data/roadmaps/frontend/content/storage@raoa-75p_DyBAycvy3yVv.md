@@ -1,6 +1,6 @@
 # Web Storage API
 
-The Web Storage API lets websites store information directly in your web browser. It has two main types: `localStorage` (keeps data even after you close the browser) and `sessionStorage` (keeps data only while the browser tab is open). This is useful for saving things like user preferences or items in a shopping cart. It's simpler and can hold more data than traditional cookies, and most modern browsers support it.
+Web Storage API stores data in browsers with localStorage (persistent) and sessionStorage (tab-specific). Useful for user preferences, shopping carts, and application state. Simpler and higher capacity than cookies with broad browser support.
 
 Visit the following resources to learn more:
 

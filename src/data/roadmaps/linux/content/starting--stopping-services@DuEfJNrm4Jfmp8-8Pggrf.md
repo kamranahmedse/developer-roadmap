@@ -1,9 +1,9 @@
-# Checking Service Logs
+# Starting / Stopping Services
 
-System logs are essential for troubleshooting and monitoring Linux systems. Most logs are stored in `/var/log` directory and managed by systemd. Use `journalctl` to view system logs and `journalctl -u service_name` for specific service logs. The `dmesg` command displays kernel messages. Regular log monitoring is crucial for system administration.
+Linux service management controls system services like firewall, network, and database using `systemctl` commands. Basic operations: `sudo systemctl start service_name` (start), `sudo systemctl stop service_name` (stop), `sudo systemctl restart service_name` (restart). Root permissions required. Essential for system administrators managing updates and configuration changes.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
-- [@article@How to Use journalctl Command to Analyze Logs in Linux](https://linuxhandbook.com/journalctl-command/)
-- [@article@journalctl — Linux manual page](https://www.man7.org/linux/man-pages/man1/journalctl.1.html)
-- [@article@Linux Log Files Location & How To View Logs Files](https://www.cyberciti.biz/faq/linux-log-files-location-and-how-do-i-view-logs-files/)
+- [@article@Service Management in Linux: A Comprehensive Guide](https://medium.com/@thesureshvadde/service-management-in-linux-a-comprehensive-guide-cb4c7e81dfa9)
+- [@article@How to Master Linux Service Management with Systemctl](https://labex.io/tutorials/linux-how-to-master-linux-service-management-with-systemctl-392864)
+- [@article@How to Manage Services in Linux: systemd and SysVinit](https://dev.to/iaadidev/how-to-manage-services-in-linux-systemd-and-sysvinit-essentials-devops-prerequisite-8-1jop)
