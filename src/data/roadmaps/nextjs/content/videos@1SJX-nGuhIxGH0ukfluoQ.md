@@ -5,3 +5,4 @@ Next.js provides various approaches and techniques to store and display video fi
 Visit the following resources to learn more:
 
 - [@official@How to use and optimize videos](https://nextjs.org/docs/app/guides/videos)
+- [@video@Add high-performance video to your Nextjs app](https://next-video.dev/docs)
