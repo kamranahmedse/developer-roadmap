@@ -1,0 +1,1017 @@
+{
+  "jVXwlHRGgVpcoWCYzSB5W": {
+    "title": "What is BI?",
+    "description": "Business Intelligence (BI) involves using data to understand past and present business performance and to predict future trends. It encompasses the processes and technologies used to collect, analyze, and visualize data, ultimately helping organizations make better, data-driven decisions. This includes reporting, online analytical processing (OLAP), data mining, process mining, complex event processing, business performance management, benchmarking, and predictive analytics.",
+    "links": []
+  },
+  "iRgtog5A13CTNDxnbGN9x": {
+    "title": "Skills",
+    "description": "A BI Analyst needs a mix of technical and soft skills to effectively gather, analyze, and present data insights. This includes proficiency in data analysis tools like SQL and Excel, data visualization software such as Tableau or Power BI, and statistical analysis techniques. Strong communication skills are also essential for translating complex data findings into understandable reports and presentations for stakeholders. Furthermore, problem-solving, critical thinking, and a solid understanding of business principles are crucial for identifying trends, patterns, and opportunities within data.",
+    "links": []
+  },
+  "NX-YaB_FVjoHYsR6z9QIL": {
+    "title": "Why BI Matters?",
+    "description": "In today's data-driven world, organizations need to make informed decisions quickly and efficiently. Business Intelligence (BI) analysis and the role of a Business Analyst are crucial for transforming raw data into actionable insights. By identifying trends, patterns, and anomalies, BI helps organizations understand their performance, optimize processes, and gain a competitive edge. A skilled Business Analyst bridges the gap between data and business strategy, ensuring that insights are translated into tangible improvements and strategic advantages.",
+    "links": []
+  },
+  "Q-GmBJiRdBS_xLeOjef2R": {
+    "title": "Responsibilities",
+    "description": "A BI Analyst is responsible for analyzing data to identify trends, patterns, and insights that can help organizations make better business decisions. This involves collecting data from various sources, cleaning and transforming it into a usable format, and then using statistical techniques and data visualization tools to interpret the data and communicate findings to stakeholders. Ultimately, the goal is to provide actionable recommendations that improve performance, efficiency, and profitability.",
+    "links": []
+  },
+  "JFNCITtE1YtcYmLfGfF5T": {
+    "title": "BI Analyst vs Other Roles",
+    "description": "A BI Analyst focuses on analyzing data to provide insights and recommendations for business improvements. This role differs from other data-related roles like Data Scientists, who build predictive models, or Data Engineers, who focus on building and maintaining data infrastructure. While a BI Analyst uses data to understand past and current performance, other roles might focus on predicting future outcomes or ensuring the data is readily available for analysis.",
+    "links": []
+  },
+  "PxOEfMSQYA2jy3zrMZXjZ": {
+    "title": "Introduction",
+    "description": "A Business Intelligence (BI) Analyst interprets data to identify patterns and trends, providing insights that help organizations make better decisions. They work with data from various sources, clean and transform it, and then use tools and techniques to analyze it. The goal is to translate complex data into actionable recommendations for improving business performance.",
+    "links": []
+  },
+  "c0ywBrs9u7MciWAXSgVVg": {
+    "title": "Metrics and KPIs",
+    "description": "Metrics are quantifiable measurements used to track and assess the status of a specific business process. Key Performance Indicators (KPIs) are a subset of metrics that are critical to the success of an organization and are used to measure progress toward strategic goals. For example, website traffic is a metric, while the conversion rate of website visitors into paying customers is a KPI. Another example is that the number of customer service calls is a metric, while the average resolution time for those calls is a KPI.",
+    "links": []
+  },
+  "LjeipkY01Hlkp22kmlAMh": {
+    "title": "Types of BI Operations",
+    "description": "",
+    "links": []
+  },
+  "e3SdmNpVcvy3k_-JIO6OK": {
+    "title": "Stakeholder Identification",
+    "description": "",
+    "links": []
+  },
+  "PkzUqwT21Owk_TfepFPDm": {
+    "title": "Key Business Functions",
+    "description": "",
+    "links": []
+  },
+  "vTW3jSZ1bvc0OrP_bl22t": {
+    "title": "Descriptive Analysis",
+    "description": "",
+    "links": []
+  },
+  "4zpVE3R0lLyWpHePdBVpl": {
+    "title": "Predictive Analysis",
+    "description": "",
+    "links": []
+  },
+  "m5aC9aNy9mwLXz0xXBp40": {
+    "title": "Diagnostic Analysis",
+    "description": "",
+    "links": []
+  },
+  "NnbtaO2MiqsHeJ-ds0Q5m": {
+    "title": "Prescriptive Analysis",
+    "description": "",
+    "links": []
+  },
+  "3DVF8zo-_WM_9GTuzQFO8": {
+    "title": "Types of Data Analysis",
+    "description": "",
+    "links": []
+  },
+  "yXz6MkU3-HnlkmRmYh-Ev": {
+    "title": "Categorical vs Numerical",
+    "description": "",
+    "links": []
+  },
+  "YSxvg2HrfGoGtpkwY0kGc": {
+    "title": "Discrete vs Continuous",
+    "description": "",
+    "links": []
+  },
+  "HM1w6JJquaV6Vq4mjxM7p": {
+    "title": "Variables and Data Types",
+    "description": "",
+    "links": []
+  },
+  "DQtznxvW5x4s-zGLpUpNY": {
+    "title": "Mode",
+    "description": "",
+    "links": []
+  },
+  "S4XEOd2-PHIHOiiGgKVLJ": {
+    "title": "Mean",
+    "description": "",
+    "links": []
+  },
+  "mfLRVcxvAjqmSG-KBpJ4J": {
+    "title": "Median",
+    "description": "",
+    "links": []
+  },
+  "xc1hm_XTyiMUVtWiTKXWG": {
+    "title": "Descriptive Statistics",
+    "description": "",
+    "links": []
+  },
+  "JXYmXAYuA-zxrkl4PRLQd": {
+    "title": "Correlation vs Causation",
+    "description": "",
+    "links": []
+  },
+  "ASHk2LOjlhwpwpWSRs_Bi": {
+    "title": "Correlation Analysis",
+    "description": "",
+    "links": []
+  },
+  "xgP3zIiSEr9dtYcCQikPb": {
+    "title": "Confidence Intervals",
+    "description": "",
+    "links": []
+  },
+  "7DNtRMBZ_F0K1FQk-UCM4": {
+    "title": "Inferential Statistics",
+    "description": "",
+    "links": []
+  },
+  "kb216tShKrRPWv7mE9sVa": {
+    "title": "Analog vs Digital Data",
+    "description": "",
+    "links": []
+  },
+  "qHcRrxenhogymMQ6EPiMa": {
+    "title": "Semistructured",
+    "description": "",
+    "links": []
+  },
+  "H1s1PQj8CHQ_VBQIy1VtJ": {
+    "title": "Types of data",
+    "description": "",
+    "links": []
+  },
+  "DJKXgelIxuahxJiqvwP6I": {
+    "title": "Unstructured",
+    "description": "",
+    "links": []
+  },
+  "jnIn3_2fI2k97oALPZkt7": {
+    "title": "Structured",
+    "description": "",
+    "links": []
+  },
+  "g5j_mbjx2yZUIK5lfN3eT": {
+    "title": "What is Data?",
+    "description": "",
+    "links": []
+  },
+  "g44bQY90HOeI_dZ8gK2Uj": {
+    "title": "Databases",
+    "description": "",
+    "links": []
+  },
+  "xQLsuJ3uohVzOxGfFLyFw": {
+    "title": "Web",
+    "description": "",
+    "links": []
+  },
+  "1cC6LKxcncaKg4Jm53pUy": {
+    "title": "Mobile Apps",
+    "description": "",
+    "links": []
+  },
+  "WXk0-vebMUQC25he2lmbh": {
+    "title": "Cloud",
+    "description": "",
+    "links": []
+  },
+  "xQDGmVwUkrmGdviOdG8Hu": {
+    "title": "APIs",
+    "description": "",
+    "links": []
+  },
+  "GrwdQldCWu2zWAaNj6LFk": {
+    "title": "IoT",
+    "description": "",
+    "links": []
+  },
+  "VUgxDDkoxkOcLxqpTDXzt": {
+    "title": "Data Sources",
+    "description": "",
+    "links": []
+  },
+  "LcLfC6BiOxJAkk2p424wL": {
+    "title": "CSV",
+    "description": "",
+    "links": []
+  },
+  "ytgK7van84j5DsfD0JyZ3": {
+    "title": "XML",
+    "description": "",
+    "links": []
+  },
+  "Dh62zxyyUHh0galD472p8": {
+    "title": "Excel",
+    "description": "",
+    "links": []
+  },
+  "k80q5FPNiIUdxn5A8R3Hu": {
+    "title": "Other formats",
+    "description": "",
+    "links": []
+  },
+  "p21d2mEUnTQgWhKFTGS9F": {
+    "title": "JSON",
+    "description": "",
+    "links": []
+  },
+  "GsZWvJPNzN6XLDp2G1db4": {
+    "title": "Data Formats",
+    "description": "",
+    "links": []
+  },
+  "s8LZgRwrlm1V4meGM7gj0": {
+    "title": "SQL Fundamentals",
+    "description": "",
+    "links": []
+  },
+  "gJBaVERU3prru-qRksxN4": {
+    "title": "Popular Databases",
+    "description": "",
+    "links": []
+  },
+  "ETT9eATuyLHQe2jPqaF5I": {
+    "title": "Exploratory Data Analysis (EDA)",
+    "description": "",
+    "links": []
+  },
+  "xjgqmJmetKpWXSWZHPwaL": {
+    "title": "Duplicates",
+    "description": "",
+    "links": []
+  },
+  "fhreEuoT8ZBRwJqbSGrEZ": {
+    "title": "Missing Values",
+    "description": "",
+    "links": []
+  },
+  "OqolfBQRQvwg6PI_t8Mrt": {
+    "title": "Outliers",
+    "description": "",
+    "links": []
+  },
+  "hrkMVMYWCedRxhNd2N9wE": {
+    "title": "Data Transformation Techniques",
+    "description": "",
+    "links": []
+  },
+  "sltVKaKKjmzu17jDv9OFF": {
+    "title": "Visualization Fundamentals",
+    "description": "",
+    "links": []
+  },
+  "BUizLtQ7vpdyBRjS8KyIl": {
+    "title": "Barplot",
+    "description": "",
+    "links": []
+  },
+  "SNkYi2VZsCRG31v63v8_x": {
+    "title": "Heatmap",
+    "description": "",
+    "links": []
+  },
+  "BVDaFmDat48nN3hj5NE71": {
+    "title": "Lineplot",
+    "description": "",
+    "links": []
+  },
+  "hCSZo7jT9arBLUbtCVFfD": {
+    "title": "Scatterplot",
+    "description": "",
+    "links": []
+  },
+  "7_5PBCrsukv81mm7yTpDf": {
+    "title": "Map",
+    "description": "",
+    "links": []
+  },
+  "wqLcUFVsLa_l9yQIee9MG": {
+    "title": "Histogram",
+    "description": "",
+    "links": []
+  },
+  "SJGEkoTSPK2ck4IvaK6Gz": {
+    "title": "Color theory",
+    "description": "",
+    "links": []
+  },
+  "qGVDuU9RA9Y5g5vlPd-xq": {
+    "title": "Misleading charts",
+    "description": "",
+    "links": []
+  },
+  "wtEzdO_ZNu9jHJrFS3CrG": {
+    "title": "Accessibility",
+    "description": "",
+    "links": []
+  },
+  "7t0WfLLqrD5VJQwIAmXMo": {
+    "title": "Mobile-responsiveness",
+    "description": "",
+    "links": []
+  },
+  "EDQjtoTd01ftwXxYkV9it": {
+    "title": "Design principles",
+    "description": "",
+    "links": []
+  },
+  "eqGsO6ZGk2jdG0z9-cHzz": {
+    "title": "Power BI",
+    "description": "",
+    "links": []
+  },
+  "GoMIAQwusbT7fqJ-VnCrq": {
+    "title": "Qlik",
+    "description": "",
+    "links": []
+  },
+  "WzPj94lYxQCjFx5YW4X9x": {
+    "title": "Tableau",
+    "description": "",
+    "links": []
+  },
+  "f4MDT1RUfaICAWzyG2E6T": {
+    "title": "Looker",
+    "description": "",
+    "links": []
+  },
+  "kpRqKLtAd3IO3nbs8Yxrh": {
+    "title": "BI Platforms",
+    "description": "",
+    "links": []
+  },
+  "vQQSYPpcGO7ri0RFSWi0h": {
+    "title": "Python",
+    "description": "",
+    "links": []
+  },
+  "0OTmTRHlR3ImNU0zyLt8G": {
+    "title": "R",
+    "description": "",
+    "links": []
+  },
+  "KSxjcWV6C325kZITzAhWs": {
+    "title": "Programming Languages",
+    "description": "",
+    "links": []
+  },
+  "JHGV0V78GXubiSY9P3nTw": {
+    "title": "Risk Analytics",
+    "description": "",
+    "links": []
+  },
+  "OqHNW0PzIRsw7IBgh5U5Q": {
+    "title": "CLV",
+    "description": "",
+    "links": []
+  },
+  "j-GXKpMnsVuUUUdRxAXLe": {
+    "title": "Compliance Reporting",
+    "description": "",
+    "links": []
+  },
+  "aJLGan5dkMefvkspFlcYo": {
+    "title": "Fraud Detection",
+    "description": "",
+    "links": []
+  },
+  "xftv5BiyoVrFjpSN0tjsw": {
+    "title": "Finance",
+    "description": "",
+    "links": []
+  },
+  "VPu8vn7-baZQ5ORJ6ViW0": {
+    "title": "Sales Performance",
+    "description": "",
+    "links": []
+  },
+  "0qRm81lJX_Eb6aJkJMjeL": {
+    "title": "Marketing Campaigns",
+    "description": "",
+    "links": []
+  },
+  "LkbB0rpS3Du2K7_ogoc34": {
+    "title": "Inventory Optimization",
+    "description": "",
+    "links": []
+  },
+  "7jrzQogTOc6lHXfpYLCsx": {
+    "title": "Supply Chain Analytics",
+    "description": "",
+    "links": []
+  },
+  "7LbhfkmS7oFoSF1k5ZR1U": {
+    "title": "Retail & E-commerce",
+    "description": "",
+    "links": []
+  },
+  "LI09SvvUUCQxLZZee_j0n": {
+    "title": "Patient management",
+    "description": "",
+    "links": []
+  },
+  "omvGuhou7_63k-Fwcc7Mu": {
+    "title": "Compliance Reporting",
+    "description": "",
+    "links": []
+  },
+  "ku3m0ZmNg23F0Z5CEb4JI": {
+    "title": "Hospital Efficiency",
+    "description": "",
+    "links": []
+  },
+  "VpGVezYr9O6puhAF12PN2": {
+    "title": "Healthcare",
+    "description": "",
+    "links": []
+  },
+  "L50rpcgGjsQU3S0zRn6xh": {
+    "title": "Production Efficiency",
+    "description": "",
+    "links": []
+  },
+  "yimCxOdNtyGcbd6ZxHsBQ": {
+    "title": "Predictive Maintenance",
+    "description": "",
+    "links": []
+  },
+  "Xe9zK8xhkkr4fsh3HOzAY": {
+    "title": "Quality Control",
+    "description": "",
+    "links": []
+  },
+  "-hNguvT6SQCqAgVpoQByr": {
+    "title": "Supply chain optimization",
+    "description": "",
+    "links": []
+  },
+  "zEGmDHaFa-F81tWqa3i9E": {
+    "title": "Manufacturing",
+    "description": "",
+    "links": []
+  },
+  "qKlo90-Cy8t_off5Qv8-6": {
+    "title": "A/B Testing",
+    "description": "",
+    "links": []
+  },
+  "R2zg0Ql-RsnIkV5Gmc1vN": {
+    "title": "Cohort Analysis",
+    "description": "",
+    "links": []
+  },
+  "ExHCSUDxDBwsJtTelvxjP": {
+    "title": "Forecasting",
+    "description": "",
+    "links": []
+  },
+  "yseEaLsEzIcqJ0YIoGujl": {
+    "title": "Time Series Analysis",
+    "description": "",
+    "links": []
+  },
+  "ZGazuCNruu09bd7C-aSFC": {
+    "title": "Basic Machine Learning",
+    "description": "",
+    "links": []
+  },
+  "t_J0MZTMWMnrImGHjXYov": {
+    "title": "Storytelling Framework",
+    "description": "",
+    "links": []
+  },
+  "KXhNou5nlekbSTfLYPs_8": {
+    "title": "Dashboard Design",
+    "description": "",
+    "links": []
+  },
+  "9G-pI5NsRCq4p0FLfaMR_": {
+    "title": "Presentation Design",
+    "description": "",
+    "links": []
+  },
+  "Slg3fXGPTa-Z4sdZY86XK": {
+    "title": "Writing Executive Summaries",
+    "description": "",
+    "links": []
+  },
+  "r-m88g8xrUnuEpV2lHJfN": {
+    "title": "Stakeholder Management",
+    "description": "",
+    "links": []
+  },
+  "vDQF2oaybSewNu3EMs6zG": {
+    "title": "Change Management",
+    "description": "",
+    "links": []
+  },
+  "NFKiPXrkjRre1yUZc27gl": {
+    "title": "Critical Thinking",
+    "description": "",
+    "links": []
+  },
+  "OmhvVSTtzH5sxOIZRVYfQ": {
+    "title": "Business Acumen",
+    "description": "",
+    "links": []
+  },
+  "r8NoX426-ngu6ZQZe06oK": {
+    "title": "Project Management",
+    "description": "",
+    "links": []
+  },
+  "UhcniUDKmi7KNuXlolf5O": {
+    "title": "Relevance",
+    "description": "",
+    "links": []
+  },
+  "5USjYdAVJs0gSXxE1j8Xu": {
+    "title": "Timeliness",
+    "description": "",
+    "links": []
+  },
+  "BiyrAHB34evej_0cnDzOa": {
+    "title": "Accesibility",
+    "description": "",
+    "links": []
+  },
+  "uP8MWZqM9Z0i3eDF4Ldxv": {
+    "title": "Interpretability",
+    "description": "",
+    "links": []
+  },
+  "M1H3Fh09v8udCJIPSJPic": {
+    "title": "Accuracy",
+    "description": "",
+    "links": []
+  },
+  "4U66ZrBZqg7-ckOTmxAQj": {
+    "title": "Coherence",
+    "description": "",
+    "links": []
+  },
+  "F21ypKzpziLCXkiKG1S5Z": {
+    "title": "Data Lineage",
+    "description": "",
+    "links": []
+  },
+  "fuxGZx3WGjP2TzzVV29ux": {
+    "title": "Privacy",
+    "description": "",
+    "links": []
+  },
+  "9aNVqEyygNGeicdce5X8b": {
+    "title": "Bias Recognition",
+    "description": "",
+    "links": []
+  },
+  "Vb06K0D2vWAlSe95QJrth": {
+    "title": "Ethical Data Use",
+    "description": "",
+    "links": []
+  },
+  "wJiKBbTMLhIzelUtKn7jl": {
+    "title": "Data Warehouse",
+    "description": "",
+    "links": []
+  },
+  "iqpVtvoebAaoB_Dj9-gdw": {
+    "title": "Data Lake",
+    "description": "",
+    "links": []
+  },
+  "5x4NfuP6dAgjISlB-esIW": {
+    "title": "Data Mart",
+    "description": "",
+    "links": []
+  },
+  "zGU6DyEm6xEYf1_73cbjL": {
+    "title": "Cloud BI Ecosystem",
+    "description": "",
+    "links": []
+  },
+  "Zxuvc9F3bINLTdfbsx_S_": {
+    "title": "Data Architectures",
+    "description": "",
+    "links": []
+  },
+  "iYe42G31fhkAO0MBaHutF": {
+    "title": "Star vs Snowflake Schema",
+    "description": "",
+    "links": []
+  },
+  "Prfa0LUmgxcp52IEObFom": {
+    "title": "Normalization vs Denormalization",
+    "description": "",
+    "links": []
+  },
+  "hcbS18cpVxd55hVlUeLLT": {
+    "title": "Fact vs Dimension Tables",
+    "description": "",
+    "links": []
+  },
+  "fFzCnLfZ_vSbhQjdAKLlJ": {
+    "title": "Calculated Fields & Measures",
+    "description": "",
+    "links": []
+  },
+  "Dk31XtS7wWRzO31sdsEDo": {
+    "title": "Data Modeling for BI",
+    "description": "",
+    "links": []
+  },
+  "lAK9QVs97hL3ysjz2blp8": {
+    "title": "ETL Tools",
+    "description": "",
+    "links": []
+  },
+  "Du4GD-6pxbWYl4uSJRnOE": {
+    "title": "ETL basics",
+    "description": "",
+    "links": []
+  },
+  "3xDVJwdl3uu5EcjlZ1ytA": {
+    "title": "End-to-end Analytics Project",
+    "description": "",
+    "links": []
+  },
+  "yvSf7sGEd7QiaVoetalHc": {
+    "title": "Data Pipeline Design",
+    "description": "",
+    "links": []
+  },
+  "qvPTiDbsY5ol_K-BNLmzk": {
+    "title": "Dashboard Design",
+    "description": "",
+    "links": []
+  },
+  "UIdwl_KLELI8xL2VxYJmX": {
+    "title": "Building Your Portfolio",
+    "description": "",
+    "links": []
+  },
+  "tUxwKTml2Go8zR9tR3cjn": {
+    "title": "Professional Development",
+    "description": "",
+    "links": []
+  },
+  "X8U-NQD0rYqFr_xgDWL2s": {
+    "title": "BI Communities",
+    "description": "",
+    "links": []
+  },
+  "YovS5Dbcr6g_8PMr8jp5t": {
+    "title": "Open-Source Projects",
+    "description": "",
+    "links": []
+  },
+  "aTGsJj7Ntv5BWIzjaqvu_": {
+    "title": "BI Competitions",
+    "description": "",
+    "links": []
+  },
+  "UDF8wyYT8127wfFHcq37P": {
+    "title": "Conferences & Webinars",
+    "description": "",
+    "links": []
+  },
+  "Q98GaitxocEha4zZ9d254": {
+    "title": "Networking",
+    "description": "",
+    "links": []
+  },
+  "m9EwcekZ_l0XHiKeQ8emr": {
+    "title": "Resume optimization",
+    "description": "",
+    "links": []
+  },
+  "4XM5ikPiHVehEtT4AB-Ea": {
+    "title": "Interview preparation",
+    "description": "",
+    "links": []
+  },
+  "qsCWo1CmR4mvy7E7qlPv5": {
+    "title": "Portfolio presentation",
+    "description": "",
+    "links": []
+  },
+  "k3F9Tdqo3XYgMLOKGjpxA": {
+    "title": "Salary negotiation strategies",
+    "description": "",
+    "links": []
+  },
+  "TojDB4o0i2rs7Qcb10k1r": {
+    "title": "Job Preparation",
+    "description": "",
+    "links": []
+  },
+  "jJukG4XxfFcID_VlQKqe-": {
+    "title": "Tactical BI",
+    "description": "",
+    "links": []
+  },
+  "3BxbkrBp8veZj38zdwN8s": {
+    "title": "Strategic BI",
+    "description": "",
+    "links": []
+  },
+  "GN6SnI7RXIeW8JeD-qORW": {
+    "title": "Operational BI",
+    "description": "",
+    "links": []
+  },
+  "cxTriSZvrmXP4axKynIZW": {
+    "title": "Finance",
+    "description": "",
+    "links": []
+  },
+  "s-wUPMaagyRupT2RdfHks": {
+    "title": "Marketing",
+    "description": "",
+    "links": []
+  },
+  "dJZqe47kzRqYIG-4AZTlz": {
+    "title": "Operations",
+    "description": "",
+    "links": []
+  },
+  "KeGCHoJRHp-mBX-P5to4Y": {
+    "title": "HR",
+    "description": "",
+    "links": []
+  },
+  "F-fC2JWOuEeDbOHH1O6EB": {
+    "title": "Central Tendency",
+    "description": "",
+    "links": []
+  },
+  "1D98k1HNCaaiaI20euVwA": {
+    "title": "Dispersion",
+    "description": "",
+    "links": []
+  },
+  "jll2iRbjdx7iiNwY13KYD": {
+    "title": "Range",
+    "description": "",
+    "links": []
+  },
+  "ZmSwDn0sP7HvLKYVzRwPJ": {
+    "title": "Variance",
+    "description": "",
+    "links": []
+  },
+  "vqtzg9bydAqHMwZhPHo1a": {
+    "title": "STD",
+    "description": "",
+    "links": []
+  },
+  "LEHK7ohKIzKhlGebd0k_j": {
+    "title": "IQR",
+    "description": "",
+    "links": []
+  },
+  "JSqwWsfojjZTe8ynmA7fc": {
+    "title": "Distribution",
+    "description": "",
+    "links": []
+  },
+  "X0DBG0mEWk25PEbLHhs7v": {
+    "title": "Skewness",
+    "description": "",
+    "links": []
+  },
+  "jvU1iu2M_y1IH62oUpAeU": {
+    "title": "Kurtosis",
+    "description": "",
+    "links": []
+  },
+  "7VDxA9bQ1P1fym4eQVKkN": {
+    "title": "Population & Sample",
+    "description": "",
+    "links": []
+  },
+  "01k_mfsp0eW6TX9yp8PDE": {
+    "title": "Statistical tests",
+    "description": "",
+    "links": []
+  },
+  "rkEdx_mZBoDjMhiluJl7O": {
+    "title": "p-value",
+    "description": "",
+    "links": []
+  },
+  "SosOXxErMn0t2KCoHoxvS": {
+    "title": "Types of Errors",
+    "description": "",
+    "links": []
+  },
+  "6xfQic8dMwUsMQa7VtS8_": {
+    "title": "Hypothesis Testing",
+    "description": "",
+    "links": []
+  },
+  "m9ejACzRBJza0v-fpdfkn": {
+    "title": "Regression Analysis",
+    "description": "",
+    "links": []
+  },
+  "4-fpZx8p5iSNI3n4Qtacl": {
+    "title": "Linear Regression",
+    "description": "",
+    "links": []
+  },
+  "_QyIZ2_vH3e3yic5NTuak": {
+    "title": "Beyond Linear Regression",
+    "description": "",
+    "links": []
+  },
+  "nhl9FM79femgqENNR0HbE": {
+    "title": "PostgreSQL",
+    "description": "",
+    "links": []
+  },
+  "uoQS4g-c6QndacUeiaWrq": {
+    "title": "Oracle",
+    "description": "",
+    "links": []
+  },
+  "eqnAEp2VT7FD2VDy5WVDP": {
+    "title": "MySQL",
+    "description": "",
+    "links": []
+  },
+  "lrksz861rE5m2XzOQPwgh": {
+    "title": "SQLite",
+    "description": "",
+    "links": []
+  },
+  "y9Fnjnbiqt7WkrhjPITpW": {
+    "title": "Performance",
+    "description": "",
+    "links": []
+  },
+  "TuBJ2yUz1c5KMRGVHdvU5": {
+    "title": "Basic Queries",
+    "description": "",
+    "links": []
+  },
+  "-gbb16Wl--Rjx5aoM0krL": {
+    "title": "Advanced Queries",
+    "description": "",
+    "links": []
+  },
+  "1toMuRZResgse1AtwEck6": {
+    "title": "Window Functions",
+    "description": "",
+    "links": []
+  },
+  "Vo7LJ_W-DBvxvVrnz33BM": {
+    "title": "Data Cleaning",
+    "description": "",
+    "links": []
+  },
+  "_iV_5O5Rq07P9qRGrraTM": {
+    "title": "SQL",
+    "description": "",
+    "links": []
+  },
+  "ZAhjB_ghHukD4RPAtNDxh": {
+    "title": "dplyr",
+    "description": "",
+    "links": []
+  },
+  "9BWyA0b4WrmQetSMph_mY": {
+    "title": "Excel",
+    "description": "",
+    "links": []
+  },
+  "25f76eB9-vy3Usta-Pbsi": {
+    "title": "Pandas",
+    "description": "",
+    "links": []
+  },
+  "GVgfPajmSqIgFZ6u2I1tK": {
+    "title": "Chart Categories",
+    "description": "",
+    "links": []
+  },
+  "eKBORkRU6HCH-D4GWHyKR": {
+    "title": "Visualization Best Practices",
+    "description": "",
+    "links": []
+  },
+  "TCYG6vmFqq1zAPNQWoOH8": {
+    "title": "Standardisation",
+    "description": "",
+    "links": []
+  },
+  "LLK3_hudKDX5d-fd98vlx": {
+    "title": "Excel",
+    "description": "",
+    "links": []
+  },
+  "1T2PyytlmndHreWgueD55": {
+    "title": "Financial Performance",
+    "description": "",
+    "links": []
+  },
+  "Cydlrtg_FClBUkjezqGie": {
+    "title": "Public Health",
+    "description": "",
+    "links": []
+  },
+  "On6kznZxLTCpBPskdZtgT": {
+    "title": "Trends",
+    "description": "",
+    "links": []
+  },
+  "moWrEfuKE06QwbznsH3V-": {
+    "title": "Seasonality",
+    "description": "",
+    "links": []
+  },
+  "eZN_ty8VDX9mi5KtCWTFL": {
+    "title": "Supervised Learning",
+    "description": "",
+    "links": []
+  },
+  "6l_tHC1R5zgABHMc_G6RD": {
+    "title": "Unsupervised Learning",
+    "description": "",
+    "links": []
+  },
+  "KFONHuJNnCuSOH7-8Ndvm": {
+    "title": "Reinforcement Learning",
+    "description": "",
+    "links": []
+  },
+  "TBcLXYtKs7_j_h_m2pAyh": {
+    "title": "Communication & Storytelling",
+    "description": "",
+    "links": []
+  },
+  "mi88uLdJBXaxJ2yVOSqqo": {
+    "title": "Soft Skills",
+    "description": "",
+    "links": []
+  },
+  "bGCMAgaenZ0t3WeO5joyP": {
+    "title": "Data Quality",
+    "description": "",
+    "links": []
+  },
+  "CWf_vL78f8-mSUQbPnU8e": {
+    "title": "GDPR",
+    "description": "",
+    "links": []
+  },
+  "IwnXDA-f3FHK4EEeFuToC": {
+    "title": "CCPA",
+    "description": "",
+    "links": []
+  },
+  "_uLtsnyNNNRcz5A29Zpjl": {
+    "title": "Algorithmic Bias",
+    "description": "",
+    "links": []
+  },
+  "5MUwKGfSTKlam8KCG0A1U": {
+    "title": "Mitigation Strategies",
+    "description": "",
+    "links": []
+  },
+  "qnUHw2f2VmTPU3-NMnoLl": {
+    "title": "Airflow",
+    "description": "",
+    "links": []
+  },
+  "-KzusmyDQ1NgqOADpqmEX": {
+    "title": "dbt",
+    "description": "",
+    "links": []
+  },
+  "hqpFbDhAvyT9_4hcoSLhC": {
+    "title": "Certifications",
+    "description": "",
+    "links": []
+  },
+  "_KYKLd-RNhVy-Sn1A-G5j": {
+    "title": "Cloud Computing Basics",
+    "description": "",
+    "links": []
+  },
+  "D94743lQ1fAerVSpJWXfP": {
+    "title": "Cloud data warehouses",
+    "description": "",
+    "links": []
+  },
+  "Z4pAe4FpnCkUJt8RuOhC6": {
+    "title": "Providers: AWS, GCP, Azure",
+    "description": "",
+    "links": []
+  }
+}

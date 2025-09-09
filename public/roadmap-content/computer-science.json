@@ -240,6 +240,11 @@
         "type": "article"
       },
       {
+        "title": "Beej's Guide to C Programming",
+        "url": "https://beej.us/guide/bgc/",
+        "type": "article"
+      },
+      {
         "title": "Explore top posts about C Programming",
         "url": "https://app.daily.dev/tags/c?ref=roadmapsh",
         "type": "article"

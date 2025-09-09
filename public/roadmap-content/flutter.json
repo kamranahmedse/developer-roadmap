@@ -171,8 +171,29 @@
   },
   "HMDsgljLshA63XX-hhAxV": {
     "title": "VS Code",
-    "description": "To use VS Code for Flutter development, you must install the Flutter and Dart plugins for VS Code. These plugins support Flutter-specific features such as syntax highlighting, debugging, and hot reloading.",
-    "links": []
+    "description": "VS Code is a lightweight, fast, and highly customizable code editor that provides excellent support for Flutter development. To use VS Code for Flutter development, you must install the Flutter and Dart plugins for VS Code. These plugins support Flutter-specific features such as syntax highlighting, debugging, and hot reloading.\n\nWith the Flutter extension, VS Code provides essential development tools including:\n\n*   Flutter widget inspector\n*   Hot reload and hot restart\n*   Integrated debugging\n*   Code completion and IntelliSense\n*   Flutter outline view\n*   Device management\n*   Integrated terminal\n\nVS Code is particularly popular among developers who prefer a lightweight IDE with fast performance, extensive customization options, and cross-platform availability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "VS Code for Flutter",
+        "url": "https://docs.flutter.dev/development/tools/vs-code",
+        "type": "article"
+      },
+      {
+        "title": "Flutter extension for VS Code",
+        "url": "https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter",
+        "type": "article"
+      },
+      {
+        "title": "Dart extension for VS Code",
+        "url": "https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Flutter",
+        "url": "https://app.daily.dev/tags/flutter?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
   },
   "QHPiMRg4IJXDErrEYamrJ": {
     "title": "Android Studio",
@@ -298,8 +319,34 @@
   },
   "wBSdmrVPv3Zuys3X8VvBm": {
     "title": "Styled Widgets",
-    "description": "",
-    "links": []
+    "description": "Styled widgets in Flutter refer to widgets that are decorated with custom styles, such as colors, fonts, shapes, and visual properties. They help create consistent and visually appealing user interfaces by applying themes and styling across your application.\n\nFlutter provides two main design systems for styled widgets:\n\n*   **Material Widgets** - Google's Material Design components with built-in styling, animations, and theming\n*   **Cupertino Widgets** - Apple's iOS design language widgets that provide native iOS look and feel\n\nYou can customize styled widgets through:\n\n*   **ThemeData** for app-wide styling and color schemes\n*   **Individual widget properties** like color, padding, and decoration\n*   **Custom themes** using ThemeExtension for reusable component styles\n*   **BoxDecoration** for borders, shadows, gradients, and backgrounds\n*   **TextStyles** for typography and font customization\n\nStyled widgets can be created by wrapping existing widgets with styling containers like Container, DecoratedBox, or Theme widgets, or by using the built-in styling properties of Material and Cupertino widgets.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Use themes to share colors and font styles",
+        "url": "https://docs.flutter.dev/cookbook/design/themes",
+        "type": "article"
+      },
+      {
+        "title": "Styling widgets",
+        "url": "https://docs.flutter.dev/ui/widgets/styling",
+        "type": "article"
+      },
+      {
+        "title": "Material theming",
+        "url": "https://docs.flutter.dev/ui/design/material",
+        "type": "article"
+      },
+      {
+        "title": "Cupertino theming",
+        "url": "https://docs.flutter.dev/ui/design/cupertino",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Flutter",
+        "url": "https://app.daily.dev/tags/flutter?ref=roadmapsh",
+        "type": "article"
+      }
+    ]
   },
   "DrQqq-C8XdiXVXBMLS4Wy": {
     "title": "Material Widgets",
@@ -407,7 +454,7 @@
     "description": "Version control systems allow you to track changes to your codebase/files over time. They allow you to go back to some previous version of the codebase without any issues. Also, they help in collaborating with people working on the same code – if you’ve ever collaborated with other people on a project, you might already know the frustration of copying and merging the changes from someone else into your codebase; version control systems allow you to get rid of this issue.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What is Version Control? - Github",
+        "title": "What is Version Control? - GitHub",
         "url": "https://github.com/resources/articles/software-development/what-is-version-control",
         "type": "article"
       },
@@ -474,12 +521,12 @@
     "description": "Several popular repository hosting services, including GitHub, GitLab, Bitbucket, AWS CodeCommit, and Azure DevOps, support Flutter development by offering Git repository management, issue tracking, and collaboration tools. When selecting a service, developers should consider factors like project needs, scalability, cost, ease of use, integrations, and third-party tool support to ensure the chosen platform aligns with their specific requirements.\n\nLearn more from the following links:",
     "links": [
       {
-        "title": "Github",
+        "title": "GitHub",
         "url": "https://github.com/",
         "type": "article"
       },
       {
-        "title": "Gitlab",
+        "title": "GitLab",
         "url": "https://gitlab.com/",
         "type": "article"
       },
@@ -563,7 +610,7 @@
       },
       {
         "title": "Dependency Injection In Flutter",
-        "url": "https://medium.com/flutter-community/dependency-injection-in-flutter-f19fb66a0740",
+        "url": "https://medium.com/@rk0936626/dependency-injection-in-flutter-3e489ba1b988",
         "type": "article"
       },
       {
@@ -1757,12 +1804,12 @@
     "description": "GitHub Actions is a workflow automation tool provided by GitHub that can be used to automate various tasks in a Flutter mobile app development process. With GitHub Actions, developers can create custom workflows to automate tasks such as building the app, running tests, and deploying the app to various app stores. These workflows are defined as a series of actions in a YAML file, which can be committed to the repository.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Flutter - Github Actions",
+        "title": "Flutter - GitHub Actions",
         "url": "https://github.com/nabilnalakath/flutter-githubaction",
         "type": "opensource"
       },
       {
-        "title": "Github Actions",
+        "title": "GitHub Actions",
         "url": "https://github.com/features/actions",
         "type": "article"
       },

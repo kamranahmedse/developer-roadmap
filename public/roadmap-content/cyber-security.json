@@ -4,13 +4,18 @@
     "description": "Fundamental IT skills form the backbone of cybersecurity proficiency and encompass a broad range of technical knowledge. These skills include understanding computer hardware and software, networking concepts, and operating systems (particularly Windows and Linux). Proficiency in at least one programming language, such as Python or JavaScript, is increasingly important for automation and scripting tasks. Database management, including SQL, is crucial for handling and securing data. Knowledge of cloud computing platforms like AWS or Azure is becoming essential as organizations migrate to cloud environments. Familiarity with basic cybersecurity concepts such as encryption, access control, and common attack vectors provides a foundation for more advanced security work. Additionally, troubleshooting skills, the ability to interpret logs, and a basic understanding of web technologies are vital. These fundamental IT skills enable cybersecurity professionals to effectively protect systems, identify vulnerabilities, and respond to incidents in increasingly complex technological landscapes.\n\nLearn more from the following resources:",
     "links": [
       {
+        "title": "Cisco Networking Academy: Introduction to Cybersecurity",
+        "url": "https://www.netacad.com/courses/introduction-to-cybersecurity?courseLang=en-US",
+        "type": "course"
+      },
+      {
         "title": "8 In-Demand IT Skills to Boost Your Resume in 2025",
         "url": "https://www.coursera.org/articles/key-it-skills-for-your-career",
         "type": "article"
       },
       {
-        "title": "Top 10 in Demand IT Skills",
-        "url": "https://www.comptia.org/blog/top-it-skills-in-demand",
+        "title": "Top IT Skills in Demand",
+        "url": "https://www.comptia.org/en/blog/top-it-skills-in-demand",
         "type": "article"
       },
       {
@@ -382,6 +387,11 @@
       {
         "title": "Network Chuck Free CCNA Course",
         "url": "https://www.youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P",
+        "type": "video"
+      },
+      {
+        "title": "Jeremy's IT Lab",
+        "url": "https://www.youtube.com/@JeremysITLab",
         "type": "video"
       }
     ]
@@ -1743,7 +1753,7 @@
     "links": [
       {
         "title": "How to look up DNS records with dig",
-        "url": "https://www.youtube.com/watch?v=3AOKomsmeUY",
+        "url": "https://www.youtube.com/watch?v=iESSCDnC74k",
         "type": "video"
       }
     ]
@@ -2727,7 +2737,7 @@
     "description": "**memdump** is a tool or process used to capture the contents of a computer's physical memory (RAM) for analysis. This \"memory dump\" can be useful in digital forensics, debugging, or incident response to identify active processes, open files, network connections, or potentially malicious code running in memory. By analyzing a memory dump, security professionals can investigate malware, recover encryption keys, or gather evidence in case of a breach. Tools like `memdump` (Linux utility) or `DumpIt` (Windows) are commonly used to perform this process.\n\nLearn more from the following resources:",
     "links": [
       {
-        "title": "memdump - Github",
+        "title": "memdump - GitHub",
         "url": "https://github.com/tchebb/memdump",
         "type": "opensource"
       },

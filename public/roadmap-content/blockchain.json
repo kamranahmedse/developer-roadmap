@@ -1838,7 +1838,7 @@
     "description": "GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Visit Dedicated Github Roadmap",
+        "title": "Visit Dedicated GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },

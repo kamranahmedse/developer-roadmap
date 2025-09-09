@@ -190,7 +190,7 @@
     "description": "`Git` is a highly efficient and flexible distributed version control system that was created by **Linus Torvalds**, the creator of Linux. It allows multiple developers to work on a project concurrently, providing tools for non-linear development and tracking changes in any set of files. Git has a local repository with a complete history and version-tracking capabilities, allowing offline operations, unlike SVN. It ensures data integrity and provides strong support for non-linear development with features such as branching and merging.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Git and Github Roadmap",
+        "title": "Git and GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -211,7 +211,7 @@
     "description": "**GitHub** is a cloud-based hosting service for managing software version control using Git. It provides a platform for enabling multiple developers to work together on the same project at the same time. With GitHub, codes can be stored publicly, allowing for collaboration with other developers or privately for individual projects. Key features of GitHub include code sharing, task management, and version control, among others. GitHub also offers functionalities such as bug tracking, feature requests, and task management for the project.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Git and Github Roadmap",
+        "title": "Git and GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
         "type": "article"
       },
@@ -221,7 +221,7 @@
         "type": "article"
       },
       {
-        "title": "Github Documentation",
+        "title": "GitHub Documentation",
         "url": "https://docs.github.com/",
         "type": "article"
       }
@@ -245,15 +245,15 @@
   },
   "Q47BtQphp59NkkZoeNXmP": {
     "title": "GitLab",
-    "description": "`Gitlab` is a web-based DevOps lifecycle tool which provides a Git-repository manager, along with continuous integration and deployment pipeline features, using an open-source license, developed by GitLab Inc. Users can manage and create their software projects and repositories, and collaborate on these projects with other members. `Gitlab` also allows users to view analytics and open issues of their project. It stands next to other version control tools like `GitHub` and `Bitbucket`, but comes with its own set of additional features and nuances. For Android development, `Gitlab` can be particularly useful owing to its continuous integration and deployment system which can automate large parts of the app testing and deployment.\n\nVisit the following resources to learn more:",
+    "description": "`GitLab` is a web-based DevOps lifecycle tool which provides a Git-repository manager, along with continuous integration and deployment pipeline features, using an open-source license, developed by GitLab Inc. Users can manage and create their software projects and repositories, and collaborate on these projects with other members. `GitLab` also allows users to view analytics and open issues of their project. It stands next to other version control tools like `GitHub` and `Bitbucket`, but comes with its own set of additional features and nuances. For Android development, `GitLab` can be particularly useful owing to its continuous integration and deployment system which can automate large parts of the app testing and deployment.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Gitlab",
+        "title": "GitLab",
         "url": "https://about.gitlab.com/",
         "type": "article"
       },
       {
-        "title": "Gitlab Documentation",
+        "title": "GitLab Documentation",
         "url": "https://docs.gitlab.com/",
         "type": "article"
       }
