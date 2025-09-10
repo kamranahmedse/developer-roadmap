@@ -21,7 +21,17 @@ import type {
   RoadmapContentDocument,
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
-import { Ban, BookOpen, FileText, HeartHandshake, Star, X } from 'lucide-react';
+import {
+  Ban,
+  BookOpen,
+  BookOpenIcon,
+  BotIcon,
+  FileText,
+  FileTextIcon,
+  HeartHandshake,
+  Star,
+  X,
+} from 'lucide-react';
 import { getUrlParams, parseUrl } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
@@ -434,7 +444,9 @@ export function TopicDetail(props: TopicDetailProps) {
 
   const shouldShowAiTab = !isCustomResource && resourceType === 'roadmap';
   const subjects = roadmapTreeMapping?.subjects || [];
+  const guides = roadmapTreeMapping?.guides || [];
   const hasSubjects = subjects.length > 0;
+  const hasGuides = guides.length > 0;
 
   const hasDataCampResources = paidResources.some((resource) =>
     resource.title.toLowerCase().includes('datacamp'),
@@ -649,12 +661,12 @@ export function TopicDetail(props: TopicDetailProps) {
                     </>
                   )}
 
-                  {hasSubjects && (
+                  {(hasSubjects || hasGuides) && (
                     <>
                       <ResourceListSeparator
-                        text="AI Tutor Courses"
+                        text="AI Tutor"
                         className="text-blue-600"
-                        icon={BookOpen}
+                        icon={BotIcon}
                       />
                       <ul className="mt-4 ml-3 flex flex-wrap gap-1 text-sm">
                         {subjects.map((subject) => {
@@ -677,9 +689,38 @@ export function TopicDetail(props: TopicDetailProps) {
                                   }
                                 }}
                                 href={`/ai/course/search?term=${subject}&src=topic`}
-                                className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
+                                className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
                               >
+                                <BookOpenIcon className="size-3.5" />
                                 {subject}
+                              </a>
+                            </li>
+                          );
+                        })}
+                        {guides.map((guide) => {
+                          return (
+                            <li key={guide}>
+                              <a
+                                key={guide}
+                                target="_blank"
+                                onClick={(e) => {
+                                  if (!isLoggedIn()) {
+                                    e.preventDefault();
+                                    showLoginPopup();
+                                    return;
+                                  }
+
+                                  if (isLimitExceeded && !isPaidUser) {
+                                    e.preventDefault();
+                                    setShowUpgradeModal(true);
+                                    return;
+                                  }
+                                }}
+                                href={`/ai/guide/search?term=${guide}&src=topic`}
+                                className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
+                              >
+                                <FileTextIcon className="size-3.5" />
+                                {guide}
                               </a>
                             </li>
                           );
