@@ -1,6 +1,6 @@
 # Conditionals
 
-Conditional Statements in Python perform different actions depending on whether a specific condition evaluates to true or false. Conditional Statements are handled by *if-elif-else* statements and MATCH-CASE statements in Python.
+Conditional Statements in Python perform different actions depending on whether a specific condition evaluates to true or false. Conditional Statements are handled by _if-elif-else_ statements and MATCH-CASE statements in Python.
 
 Visit the following resources to learn more:
 
