@@ -8,3 +8,4 @@ Learn more from the following resources:
 - [@article@Throttle](https://developer.mozilla.org/en-US/docs/Glossary/Throttle)
 - [@article@Debounce](https://developer.mozilla.org/en-US/docs/Glossary/Debounce)
 - [@article@What is rate limiting? | Rate limiting and bots](https://www.cloudflare.com/en-gb/learning/bots/what-is-rate-limiting/)
+- [@video@Rate Limiting techniques visualization](https://smudge.ai/blog/ratelimit-algorithms)
