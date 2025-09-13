@@ -346,8 +346,8 @@
     "description": "Enclosed in backticks (\\`) and interpret characters literally without escape sequences. Preserve formatting including newlines. Ideal for regex, file paths, SQL queries, JSON templates, and multi-line text where escaping would be extensive.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Carriage Returns",
-        "url": "https://go.dev/ref/spec",
+        "title": "Strings in Go",
+        "url": "https://go.dev/blog/strings#what-is-a-string",
         "type": "article"
       },
       {

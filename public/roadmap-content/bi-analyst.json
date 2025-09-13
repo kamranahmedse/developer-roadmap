@@ -1,8 +1,24 @@
 {
   "jVXwlHRGgVpcoWCYzSB5W": {
     "title": "What is BI?",
-    "description": "Business Intelligence (BI) involves using data to understand past and present business performance and to predict future trends. It encompasses the processes and technologies used to collect, analyze, and visualize data, ultimately helping organizations make better, data-driven decisions. This includes reporting, online analytical processing (OLAP), data mining, process mining, complex event processing, business performance management, benchmarking, and predictive analytics.",
-    "links": []
+    "description": "Business Intelligence (BI) involves using data to understand past and present business performance and to predict future trends. It encompasses the processes and technologies used to collect, analyze, and visualize data, ultimately helping organizations make better, data-driven decisions. This includes reporting, online analytical processing (OLAP), data mining, process mining, complex event processing, business performance management, benchmarking, and predictive analytics.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Business Intelligence Fundamentals",
+        "url": "https://www.simplilearn.com/free-business-intelligence-course-online-skillup",
+        "type": "course"
+      },
+      {
+        "title": "What Is Business Intelligence - Microsoft",
+        "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi/topics/business-intelligence/what-is-business-intelligence",
+        "type": "article"
+      },
+      {
+        "title": "What Is Business Intelligence (BI)? - IBM",
+        "url": "https://www.ibm.com/think/topics/business-intelligence",
+        "type": "article"
+      }
+    ]
   },
   "iRgtog5A13CTNDxnbGN9x": {
     "title": "Skills",
@@ -11,18 +27,36 @@
   },
   "NX-YaB_FVjoHYsR6z9QIL": {
     "title": "Why BI Matters?",
-    "description": "In today's data-driven world, organizations need to make informed decisions quickly and efficiently. Business Intelligence (BI) analysis and the role of a Business Analyst are crucial for transforming raw data into actionable insights. By identifying trends, patterns, and anomalies, BI helps organizations understand their performance, optimize processes, and gain a competitive edge. A skilled Business Analyst bridges the gap between data and business strategy, ensuring that insights are translated into tangible improvements and strategic advantages.",
-    "links": []
+    "description": "In today's data-driven world, organizations need to make informed decisions quickly and efficiently. Business Intelligence (BI) analysis and the role of a Business Analyst are crucial for transforming raw data into actionable insights. By identifying trends, patterns, and anomalies, BI helps organizations understand their performance, optimize processes, and gain a competitive edge. A skilled Business Analyst bridges the gap between data and business strategy, ensuring that insights are translated into tangible improvements and strategic advantages.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Business Intelligence Fundamentals",
+        "url": "https://www.simplilearn.com/free-business-intelligence-course-online-skillup",
+        "type": "course"
+      }
+    ]
   },
   "Q-GmBJiRdBS_xLeOjef2R": {
     "title": "Responsibilities",
-    "description": "A BI Analyst is responsible for analyzing data to identify trends, patterns, and insights that can help organizations make better business decisions. This involves collecting data from various sources, cleaning and transforming it into a usable format, and then using statistical techniques and data visualization tools to interpret the data and communicate findings to stakeholders. Ultimately, the goal is to provide actionable recommendations that improve performance, efficiency, and profitability.",
-    "links": []
+    "description": "As a BI Analyst, you're the bridge between raw data and actionable insights. You transform complex information into clear, understandable reports and dashboards that drive strategic decision-making. Your work empowers stakeholders to identify trends, optimize performance, and achieve business goals.\n\nHere are 5 main responsibilities of a BI Analyst:\n\n*   **Data Collection & Cleaning:** Gathering data from various sources and ensuring its accuracy and consistency.\n*   **Data Analysis & Modeling:** Analyzing data to identify trends, patterns, and insights, and creating data models for reporting.\n*   **Report & Dashboard Development:** Designing and building interactive dashboards and reports to visualize data and communicate findings.\n*   **Stakeholder Communication:** Presenting findings and recommendations to stakeholders in a clear and concise manner.\n*   **Performance Monitoring:** Tracking key performance indicators (KPIs) and identifying areas for improvement.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "So What Do You Actually Do As A BI Analyst?",
+        "url": "https://www.youtube.com/watch?v=TaRuzC8RSZU",
+        "type": "article"
+      }
+    ]
   },
   "JFNCITtE1YtcYmLfGfF5T": {
     "title": "BI Analyst vs Other Roles",
-    "description": "A BI Analyst focuses on analyzing data to provide insights and recommendations for business improvements. This role differs from other data-related roles like Data Scientists, who build predictive models, or Data Engineers, who focus on building and maintaining data infrastructure. While a BI Analyst uses data to understand past and current performance, other roles might focus on predicting future outcomes or ensuring the data is readily available for analysis.",
-    "links": []
+    "description": "A BI Analyst focuses on analyzing data (normally, structured data stored in a data warehouse) and leverage it to create insights and recommendations for business improvements. This role differs from other data-related roles like **Data Scientists**, who build predictive models, or **Data Engineers**, who focus on building and maintaining data infrastructure. While a BI Analyst uses data to understand past and current performance, other roles might focus on predicting future outcomes or ensuring the data is readily available for analysis.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The Types of Data Science Roles Explained",
+        "url": "https://365datascience.com/career-advice/types-of-data-science-roles-explained/",
+        "type": "article"
+      }
+    ]
   },
   "PxOEfMSQYA2jy3zrMZXjZ": {
     "title": "Introduction",
@@ -31,987 +65,2640 @@
   },
   "c0ywBrs9u7MciWAXSgVVg": {
     "title": "Metrics and KPIs",
-    "description": "Metrics are quantifiable measurements used to track and assess the status of a specific business process. Key Performance Indicators (KPIs) are a subset of metrics that are critical to the success of an organization and are used to measure progress toward strategic goals. For example, website traffic is a metric, while the conversion rate of website visitors into paying customers is a KPI. Another example is that the number of customer service calls is a metric, while the average resolution time for those calls is a KPI.",
-    "links": []
+    "description": "Metrics are quantifiable measurements used to track and assess the status of a specific business process. Key Performance Indicators (KPIs) are a subset of metrics that are critical to the success of an organization and are used to measure progress toward strategic goals. For example, website traffic is a metric, while the conversion rate of website visitors into paying customers is a KPI. Another example is that the number of customer service calls is a metric, while the average resolution time for those calls is a KPI.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "KPIs vs Metrics: Learn The Difference With Tips & Examples",
+        "url": "https://www.rib-software.com/en/blogs/kpis-vs-metrics-differences",
+        "type": "article"
+      },
+      {
+        "title": "What are KPIs and Metrics? | Data Fundamental for Beginners",
+        "url": "https://www.youtube.com/watch?v=ItZlTixh6Bs&vl=en",
+        "type": "video"
+      }
+    ]
   },
   "LjeipkY01Hlkp22kmlAMh": {
     "title": "Types of BI Operations",
-    "description": "",
+    "description": "Business operations are traditionally grouped in 3 hierarchical levels of management: strategic, tactical, and operational operations, each with a different scope, time frame, and purpose.",
     "links": []
   },
   "e3SdmNpVcvy3k_-JIO6OK": {
     "title": "Stakeholder Identification",
-    "description": "",
-    "links": []
+    "description": "**Stakeholder identification** is the process of determining who the key individuals or groups are that have an interest in, or are affected by, a project or business initiative. This involves understanding their roles, influence, and potential impact on the project's success. Identifying stakeholders early and accurately is crucial for effective communication, managing expectations, and ensuring that the project aligns with the needs and goals of all relevant parties.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "4 Most Common Stakeholders in Business Intelligence",
+        "url": "https://www.youtube.com/watch?v=iPfwEjRhm7w",
+        "type": "video"
+      }
+    ]
   },
   "PkzUqwT21Owk_TfepFPDm": {
     "title": "Key Business Functions",
-    "description": "",
+    "description": "Key business functions are the specialized activities that a company undertakes to operate effectively and achieve its goals. These functions typically include areas like finance, marketing, operations, human resources, sales, nd research & development, each playing a distinct role in the overall success of the organization. Understanding how these functions interact and contribute to the business is crucial for analyzing performance and identifying areas for improvement.",
     "links": []
   },
   "vTW3jSZ1bvc0OrP_bl22t": {
     "title": "Descriptive Analysis",
-    "description": "",
-    "links": []
+    "description": "Descriptive Analytics is one of the fundamental types of Data Analytics that provides insight into the past. As a Data Analyst, utilizing Descriptive Analytics involves the technique of using historical data to understand changes that have occurred in a business over time. Primarily concerned with the “what has happened” aspect, it analyzes raw data from the past to draw inferences and identify patterns and trends. This helps companies understand their strengths, weaknesses and pinpoint operational problems, setting the stage for accurate Business Intelligence and decision-making processes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Descriptive Analytics: What They Are and Related Terms",
+        "url": "https://www.investopedia.com/terms/d/descriptive-analytics.asp",
+        "type": "article"
+      },
+      {
+        "title": "What are Descriptive Analytics?",
+        "url": "https://www.youtube.com/watch?v=DlFqQy10aCs",
+        "type": "article"
+      }
+    ]
   },
   "4zpVE3R0lLyWpHePdBVpl": {
     "title": "Predictive Analysis",
-    "description": "",
-    "links": []
+    "description": "Predictive analysis is a crucial type of data analytics that any competent data analyst should comprehend. It refers to the practice of extracting information from existing data sets in order to determine patterns and forecast future outcomes and trends. Data analysts apply statistical algorithms, machine learning techniques, and artificial intelligence to the data to anticipate future results. Predictive analysis enables organizations to be proactive, forward-thinking, and strategic by providing them valuable insights on future occurrences. It's a powerful tool that gives companies a significant competitive edge by enabling risk management, opportunity identification, and strategic decision-making.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Predictive Analytics? - Google",
+        "url": "https://cloud.google.com/learn/what-is-predictive-analytics",
+        "type": "article"
+      },
+      {
+        "title": "hat is Predictive Analytics?",
+        "url": "https://www.youtube.com/watch?v=cVibCHRSxB0",
+        "type": "video"
+      }
+    ]
   },
   "m5aC9aNy9mwLXz0xXBp40": {
     "title": "Diagnostic Analysis",
-    "description": "",
-    "links": []
+    "description": "Diagnostic analytics, as a crucial type of data analytics, is focused on studying past performance to understand why something happened. This is an integral part of the work done by data analysts. Through techniques such as drill-down, data discovery, correlations, and cause-effect analysis, data analysts utilizing diagnostic analytics can look beyond general trends and identify the root cause of changes observed in the data. Consequently, this enables businesses to address operational and strategic issues effectively, by allowing them to grasp the reasons behind such issues. For every data analyst, the skill of performing diagnostic data analytics is a must-have asset that enhances their analysis capability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "hat is Diagnostic Analytics?",
+        "url": "https://amplitude.com/explore/analytics/what-diagnostic-analytics",
+        "type": "article"
+      },
+      {
+        "title": "What is Diagnostic Analytics? | Understanding Data-Driven Decision Making",
+        "url": "https://www.youtube.com/watch?v=ikZjeAC1yJ0",
+        "type": "video"
+      }
+    ]
   },
   "NnbtaO2MiqsHeJ-ds0Q5m": {
     "title": "Prescriptive Analysis",
-    "description": "",
-    "links": []
+    "description": "Prescriptive analytics, a crucial type of data analytics, is essential for making data-driven decisions in business and organizational contexts. As a data analyst, the goal of prescriptive analytics is to recommend various actions using predictions on the basis of known parameters to help decision makers understand likely outcomes. Prescriptive analytics employs a blend of techniques and tools such as algorithms, machine learning, computational modelling procedures, and decision-tree structures to enable automated decision making. Therefore, prescriptive analytics not only anticipates what will happen and when it will happen, but also explains why it will happen, contributing to the significance of a data analyst’s role in an organization.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Prescriptive Analysis?",
+        "url": "https://www.investopedia.com/terms/p/prescriptive-analytics.asp",
+        "type": "article"
+      },
+      {
+        "title": "Examples of Prescriptive Analysis",
+        "url": "https://www.youtube.com/watch?v=NOo8Nc9zG20",
+        "type": "video"
+      }
+    ]
   },
   "3DVF8zo-_WM_9GTuzQFO8": {
     "title": "Types of Data Analysis",
-    "description": "",
-    "links": []
+    "description": "Data Analytics has proven to be a critical part of decision-making in modern business ventures. It is responsible for discovering, interpreting, and transforming data into valuable information. Different types of data analytics look at past, present, or predictive views of business operations.\n\nBI Analysts, as ambassadors of this domain, employ these types, to answer various questions:\n\nDescriptive Analytics (what happened in the past?) Diagnostic Analytics (why did it happened in the past?) Predictive Analytics (what will happen in the future?) Prescriptive Analytics (how can we make it happen?)\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The 4 Types of Data Analysis: Ultimate Guide",
+        "url": "https://careerfoundry.com/en/blog/data-analytics/different-types-of-data-analysis/",
+        "type": "article"
+      },
+      {
+        "title": "Descriptive vs Diagnostic vs Predictive vs Prescriptive Analytics: What's the Difference?",
+        "url": "https://www.youtube.com/watch?v=QoEpC7jUb9k",
+        "type": "video"
+      },
+      {
+        "title": "Types of Data Analytics",
+        "url": "https://www.youtube.com/watch?v=lsZnSgxMwBA",
+        "type": "video"
+      }
+    ]
   },
   "yXz6MkU3-HnlkmRmYh-Ev": {
     "title": "Categorical vs Numerical",
-    "description": "",
-    "links": []
+    "description": "Categorical data describes groups or qualities and uses words or labels (e.g., hair color), while numerical data represents measurable quantities with numbers (e.g., height). Numerical data can be discrete (countable, like the number of books) or continuous (measurable within a range, like temperature), whereas categorical data can be nominal (unordered categories, like gender) or ordinal (ordered categories, like shirt sizes).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Intro to Statistics",
+        "url": "https://www.udacity.com/course/intro-to-statistics--st101",
+        "type": "article"
+      }
+    ]
   },
   "YSxvg2HrfGoGtpkwY0kGc": {
     "title": "Discrete vs Continuous",
-    "description": "",
-    "links": []
+    "description": "Discrete variables represent countable items, meaning they can only take on specific, separate values (like whole numbers). Continuous variables, on the other hand, can take on any value within a given range, including fractions and decimals. Understanding the difference is crucial for choosing the right statistical methods and interpreting data accurately.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Continuous or discrete variable",
+        "url": "https://en.wikipedia.org/wiki/Continuous_or_discrete_variable",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Statistics",
+        "url": "https://www.udacity.com/course/intro-to-statistics--st101",
+        "type": "article"
+      }
+    ]
   },
   "HM1w6JJquaV6Vq4mjxM7p": {
     "title": "Variables and Data Types",
-    "description": "",
-    "links": []
+    "description": "Variables are characteristics or attributes that can be measured or counted, and they can take on different values. Data types classify these variables based on the kind of values they can hold, such as numbers (integers, decimals), text (strings), or logical values (true/false). Understanding variables and their data types is fundamental for organizing, analyzing, and interpreting data effectively.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Variable Data Types Explained",
+        "url": "https://www.freecodecamp.org/news/variable-data-types-explained/",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Statistics",
+        "url": "https://www.udacity.com/course/intro-to-statistics--st101",
+        "type": "article"
+      }
+    ]
   },
   "DQtznxvW5x4s-zGLpUpNY": {
     "title": "Mode",
-    "description": "",
-    "links": []
+    "description": "The mode, in essence, represents the most frequently occurring value in a dataset. While it may appear simplistic, the mode's ability to identify the most common value can be instrumental in a wide range of scenarios, like market research, customer behavior analysis, or trend identification. For instance, a BI analyst can use the mode to determine the most popular product in a sales dataset or identify the most commonly reported bug in a software bug log.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Mode: What is it and how to calculate it",
+        "url": "https://www.investopedia.com/terms/m/mode.asp",
+        "type": "article"
+      },
+      {
+        "title": "Mean Median Mode Formula",
+        "url": "https://www.cuemath.com/mean-median-mode-formula/",
+        "type": "article"
+      }
+    ]
   },
   "S4XEOd2-PHIHOiiGgKVLJ": {
     "title": "Mean",
-    "description": "",
-    "links": []
+    "description": "Central tendency refers to the statistical measure that identifies a single value as representative of an entire distribution. The mean or average is one of the most popular and widely used measures of central tendency. For a BI analyst, calculating the mean is a routine task. This single value provides an analyst with a quick snapshot of the data and could be useful for further data manipulation or statistical analysis. Mean is particularly helpful in predicting trends and patterns within voluminous data sets or adjusting influencing factors that may distort the 'true' representation of the data. It is the arithmetic average of a range of values or quantities, computed as the total sum of all the values divided by the total number of values.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Arithmetic mean",
+        "url": "https://en.wikipedia.org/wiki/Arithmetic_mean",
+        "type": "article"
+      }
+    ]
   },
   "mfLRVcxvAjqmSG-KBpJ4J": {
     "title": "Median",
-    "description": "",
-    "links": []
+    "description": "Median signifies the middle value in a data set when arranged in ascending or descending order. As a data analyst, understanding, calculating, and interpreting the median is crucial. It is especially helpful when dealing with outliers in a dataset as the median is less sensitive to extreme values. Thus, providing a more realistic 'central' value for skewed distributions. This measure is a reliable reflection of the dataset and is widely used in fields like real estate, economics, and finance for data interpretation and decision-making.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to find the median value",
+        "url": "https://www.mathsisfun.com/median.html",
+        "type": "article"
+      },
+      {
+        "title": "Median: What It Is and How to Calculate It",
+        "url": "https://www.investopedia.com/terms/m/median.asp",
+        "type": "article"
+      }
+    ]
   },
   "xc1hm_XTyiMUVtWiTKXWG": {
     "title": "Descriptive Statistics",
-    "description": "",
-    "links": []
+    "description": "Descriptive statistics are methods used to summarize and describe the main features of a dataset. This involves calculating measures like mean, median, and mode to represent central tendency, as well as measures like standard deviation and range to describe the spread or variability of the data. These techniques help to gain initial insights into the data's distribution and characteristics without making inferences beyond the observed sample.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Descriptive Statistics: Definition, Overview, Types, and Examples",
+        "url": "https://www.investopedia.com/terms/d/descriptive_statistics.asp",
+        "type": "article"
+      },
+      {
+        "title": "Descriptive statistics",
+        "url": "https://en.wikipedia.org/wiki/Descriptive_statistics",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Statistics",
+        "url": "https://www.udacity.com/course/intro-to-statistics--st101",
+        "type": "article"
+      }
+    ]
   },
   "JXYmXAYuA-zxrkl4PRLQd": {
     "title": "Correlation vs Causation",
-    "description": "",
-    "links": []
+    "description": "Correlation describes the degree to which two variables tend to move together, indicating a statistical relationship. Causation, on the other hand, implies that one variable directly influences another, meaning a change in one variable produces a change in the other. While correlation can suggest a possible causal relationship, it does not prove it, as other factors might be involved. Essentially, correlation is about association, while causation is about a direct influence\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Intro to Inferential Statistics",
+        "url": "http://udacity.com/course/intro-to-inferential-statistics--ud201",
+        "type": "course"
+      },
+      {
+        "title": "Correlation vs. Causation | Difference, Designs & Examples",
+        "url": "https://www.scribbr.com/methodology/correlation-vs-causation/",
+        "type": "article"
+      },
+      {
+        "title": "Correlation does not imply causation",
+        "url": "https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation",
+        "type": "article"
+      }
+    ]
   },
   "ASHk2LOjlhwpwpWSRs_Bi": {
     "title": "Correlation Analysis",
-    "description": "",
-    "links": []
+    "description": "Correlation analysis is a statistical method used to determine the strength and direction of a linear relationship between two variables. It helps to understand how changes in one variable are associated with changes in another, indicating whether they tend to increase or decrease together. The correlation coefficient, typically ranging from -1 to +1, quantifies this relationship, with values closer to -1 or +1 indicating a stronger correlation and 0 indicating no linear relationship.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Intro to Inferential Statistics",
+        "url": "https://www.udacity.com/course/intro-to-inferential-statistics--ud201",
+        "type": "course"
+      },
+      {
+        "title": "Correlation Analysis",
+        "url": "https://datatab.net/tutorial/correlation",
+        "type": "article"
+      },
+      {
+        "title": "Correlation",
+        "url": "https://en.wikipedia.org/wiki/Correlation",
+        "type": "article"
+      }
+    ]
   },
   "xgP3zIiSEr9dtYcCQikPb": {
     "title": "Confidence Intervals",
-    "description": "",
-    "links": []
+    "description": "Confidence intervals provide a range of values that are likely to contain the true value of a population parameter, such as a mean or proportion. They are calculated from sample data and are associated with a confidence level, indicating the probability that the interval captures the true parameter. A wider interval suggests more uncertainty, while a narrower interval suggests more precision in estimating the parameter. A 95% confidence interval, for example, means that if the same sampling method were repeated many times, 95% of the calculated intervals would contain the true population parameter.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is a Confidence Interval and How Do You Calculate It?",
+        "url": "https://www.investopedia.com/terms/c/confidenceinterval.asp",
+        "type": "article"
+      },
+      {
+        "title": "Confidence interval",
+        "url": "https://en.wikipedia.org/wiki/Confidence_interval",
+        "type": "article"
+      }
+    ]
   },
   "7DNtRMBZ_F0K1FQk-UCM4": {
     "title": "Inferential Statistics",
-    "description": "",
-    "links": []
+    "description": "Inferential statistics uses sample data to make inferences or predictions about a larger population. It involves techniques like hypothesis testing, confidence intervals, and regression analysis to draw conclusions beyond the immediate data set. The goal is to estimate population parameters and assess the likelihood of certain outcomes based on the observed sample.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Intro to Inferential Statistics",
+        "url": "https://www.udacity.com/course/intro-to-inferential-statistics--ud201",
+        "type": "course"
+      },
+      {
+        "title": "Inferential Statistics | An Easy Introduction & Examples",
+        "url": "https://www.scribbr.com/statistics/inferential-statistics/",
+        "type": "article"
+      },
+      {
+        "title": "Statistical inference",
+        "url": "https://en.wikipedia.org/wiki/Statistical_inference",
+        "type": "article"
+      },
+      {
+        "title": "Inferential Statistics FULL Tutorial",
+        "url": "https://www.youtube.com/watch?v=6E6pB5JFLgM",
+        "type": "video"
+      }
+    ]
   },
   "kb216tShKrRPWv7mE9sVa": {
     "title": "Analog vs Digital Data",
-    "description": "",
-    "links": []
+    "description": "Analog data is continuous information represented by physical quantities, like sound waves or temperature, that vary smoothly over time. Digital data, on the other hand, is discrete information represented by numerical values, typically binary digits (0s and 1s), allowing for precise storage and manipulation by computers.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Analog vs. Digital",
+        "url": "https://www.diffen.com/difference/Analog_vs_Digital",
+        "type": "article"
+      }
+    ]
   },
   "qHcRrxenhogymMQ6EPiMa": {
     "title": "Semistructured",
-    "description": "",
+    "description": "Semistructured data doesn't conform to the rigid structure of a relational database but still has some organizational properties, like tags or markers, that separate data elements and enforce hierarchies of records and fields within the data. It's not raw data, but it also doesn't fit neatly into tables with rows and columns. Examples include JSON and XML files, where data is organized using tags and attributes, making it easier to parse and understand than completely unstructured data.",
     "links": []
   },
   "H1s1PQj8CHQ_VBQIy1VtJ": {
     "title": "Types of data",
-    "description": "",
-    "links": []
+    "description": "Data types are categorized into structured, unstructured, and semi-structured data, differing in their organization and format\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Basics: Structured, Unstructured, and Semi-structured Data",
+        "url": "https://www.alation.com/blog/structured-unstructured-semi-structured-data/",
+        "type": "article"
+      }
+    ]
   },
   "DJKXgelIxuahxJiqvwP6I": {
     "title": "Unstructured",
-    "description": "",
+    "description": "Unstructured data refers to information that doesn't have a predefined format or organization. This type of data is typically text-heavy but can also include multimedia like images, audio, and video files. Because it lacks a structured format, it's more challenging to process and analyze directly compared to structured data.",
     "links": []
   },
   "jnIn3_2fI2k97oALPZkt7": {
     "title": "Structured",
-    "description": "",
+    "description": "Structured data refers to information organized in a predefined format, typically stored in relational databases. This data has a defined length and type, making it easily searchable and analyzable. Common examples include data found in spreadsheets or SQL databases, where information is organized into rows and columns.",
     "links": []
   },
   "g5j_mbjx2yZUIK5lfN3eT": {
     "title": "What is Data?",
-    "description": "",
+    "description": "Data are facts or pieces of information. They are often measurements or observations, or opinions. Usually, data is collected to be analyzed to find insights, draw a conclusion, or make a decision.",
     "links": []
   },
   "g44bQY90HOeI_dZ8gK2Uj": {
     "title": "Databases",
-    "description": "",
-    "links": []
+    "description": "A database is a collection of useful data of one or more related organizations structured in a way to make data an asset to the organization. A database management system is a software designed to assist in maintaining and extracting large collections of data in a timely fashion. Some of the most commonly used databases include:\n\n*   Relational databases\n*   NoSQL databases\n*   In-memory databases\n*   Embedded databases\n*   Cloud-based databases\n\nEach database type has its own set of features and use cases, and the choice of which database to use will depend on the specific requirements of the application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a Database?",
+        "url": "ttps://www.oracle.com/database/what-is-database/",
+        "type": "article"
+      }
+    ]
   },
   "xQLsuJ3uohVzOxGfFLyFw": {
     "title": "Web",
-    "description": "",
+    "description": "Web data sources refer to information collected from the internet. This includes data scraped from websites, data from APIs (Application Programming Interfaces) that websites expose, and data collected through web analytics tools. This information can range from website traffic and user behavior to product pricing and social media trends.",
     "links": []
   },
   "1cC6LKxcncaKg4Jm53pUy": {
     "title": "Mobile Apps",
-    "description": "",
+    "description": "Mobile apps generate a wealth of data, encompassing user interactions, device information, and app performance metrics. This data is collected through various methods, including tracking user behavior within the app, monitoring device characteristics like operating system and model, and logging app performance indicators such as crash reports and load times. This information provides valuable insights into user engagement, app functionality, and potential areas for improvement.",
     "links": []
   },
   "WXk0-vebMUQC25he2lmbh": {
     "title": "Cloud",
-    "description": "",
+    "description": "Cloud data sources refer to data that is stored and accessed through a network of remote servers hosted on the internet, rather than on local servers or personal devices. These sources can include databases, data warehouses, data lakes, and various applications offered by cloud providers like AWS, Azure, and Google Cloud. They offer scalability, accessibility, and often cost-effectiveness for storing and processing large volumes of data.",
     "links": []
   },
   "xQDGmVwUkrmGdviOdG8Hu": {
     "title": "APIs",
-    "description": "",
+    "description": "APIs (Application Programming Interfaces) are sets of rules and specifications that software programs can follow to communicate with each other. In essence, they allow different applications to exchange data and functionality. As data sources, APIs provide a structured way to access information from various online services, databases, and applications, enabling BI analysts to integrate real-time or near real-time data into their analyses and reports.",
     "links": []
   },
   "GrwdQldCWu2zWAaNj6LFk": {
     "title": "IoT",
-    "description": "",
+    "description": "IoT (Internet of Things) data sources refer to the vast array of devices and sensors connected to the internet that generate data. These devices, ranging from smart home appliances and wearable fitness trackers to industrial sensors and connected vehicles, continuously collect and transmit information about their environment or usage. This data can include measurements like temperature, location, pressure, speed, and a multitude of other variables, providing a rich stream of real-time insights.",
     "links": []
   },
   "VUgxDDkoxkOcLxqpTDXzt": {
     "title": "Data Sources",
-    "description": "",
+    "description": "Data sources are the origins from which data is collected. These sources can be varied, ranging from databases and spreadsheets to web APIs and social media feeds. They provide the raw material that is then processed, analyzed, and transformed into meaningful insights. Understanding the different types of data sources and how to access them is crucial for effective data analysis.",
     "links": []
   },
   "LcLfC6BiOxJAkk2p424wL": {
     "title": "CSV",
-    "description": "",
-    "links": []
+    "description": "CSV (Comma Separated Values) is a plain text file format used to store tabular data, such as spreadsheets or databases. Each line in a CSV file represents a row of data, and the values within each row are separated by commas. It's a simple and widely supported format for exchanging data between different applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Comma-Separated Values",
+        "url": "https://en.wikipedia.org/wiki/Comma-separated_values",
+        "type": "article"
+      }
+    ]
   },
   "ytgK7van84j5DsfD0JyZ3": {
     "title": "XML",
-    "description": "",
-    "links": []
+    "description": "XML (Extensible Markup Language) is a markup language designed for encoding documents in a format that is both human-readable and machine-readable. It uses tags to define elements and attributes to describe the properties of those elements, allowing for structured data representation and exchange between different systems and applications. XML's hierarchical structure makes it suitable for representing complex data relationships.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "XML",
+        "url": "https://en.wikipedia.org/wiki/XML",
+        "type": "article"
+      }
+    ]
   },
   "Dh62zxyyUHh0galD472p8": {
     "title": "Excel",
-    "description": "",
+    "description": "Excel files are a common way to store and organize data in a spreadsheet format. They use rows and columns to arrange information, allowing for easy viewing and manipulation. These files can contain various data types like text, numbers, dates, and formulas to perform calculations. Excel files are widely used for data entry, analysis, and reporting due to their user-friendly interface and versatility.",
     "links": []
   },
   "k80q5FPNiIUdxn5A8R3Hu": {
     "title": "Other formats",
-    "description": "",
+    "description": "Data comes in many forms beyond the common Excel, CSV, JSON, and XML files. These formats are structured ways to store information, but other formats exist to handle different types of data. For example, you might encounter formats like Parquet and Avro, which are optimized for efficient storage and retrieval in big data environments. Databases themselves, like SQL Server or MongoDB, represent structured data formats. Image files (JPEG, PNG), audio files (MP3, WAV), and video files (MP4, MOV) are also data formats, albeit unstructured ones. Understanding the variety of data formats is crucial for accessing and integrating diverse data sources.",
     "links": []
   },
   "p21d2mEUnTQgWhKFTGS9F": {
     "title": "JSON",
-    "description": "",
-    "links": []
+    "description": "JSON (JavaScript Object Notation) is a lightweight, human-readable format for storing and transporting data. It uses a text-based format to represent data objects as attribute-value pairs and arrays, making it easy for both humans and machines to parse and generate. JSON is commonly used for transmitting data in web applications (e.g., sending data from a server to a web browser) and is supported by many programming languages.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "JSON",
+        "url": "https://www.json.org/",
+        "type": "article"
+      }
+    ]
   },
   "GsZWvJPNzN6XLDp2G1db4": {
     "title": "Data Formats",
-    "description": "",
+    "description": "Data formats define the structure in which data is stored and organized. These formats dictate how information is encoded, interpreted, and used by different systems and applications. Common examples include CSV (Comma Separated Values) for tabular data, JSON (JavaScript Object Notation) for structured data, and XML (Extensible Markup Language) for hierarchical data. Understanding data formats is crucial for effectively extracting, transforming, and loading (ETL) data, as well as for ensuring data compatibility and integrity across various platforms.",
     "links": []
   },
   "s8LZgRwrlm1V4meGM7gj0": {
     "title": "SQL Fundamentals",
-    "description": "",
-    "links": []
+    "description": "SQL stands for Structured Query Language. It is a standardized programming language designed to manage and interact with relational database management systems (RDBMS). SQL allows you to create, read, edit, and delete data stored in database tables by writing specific queries.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Tutorial - Essential SQL For The Beginners",
+        "url": "https://www.sqltutorial.org/",
+        "type": "article"
+      },
+      {
+        "title": "SQL Roadmap",
+        "url": "https://roadmap.sh/sql",
+        "type": "article"
+      }
+    ]
   },
   "gJBaVERU3prru-qRksxN4": {
     "title": "Popular Databases",
-    "description": "",
+    "description": "Relational databases are a common way to store and organize data in tables with rows and columns. They use relationships between these tables to efficiently manage information. Some popular examples include MySQL, a widely used open-source database; PostgreSQL, known for its robustness and adherence to standards; SQLite, a lightweight database often embedded in applications; and Oracle, a commercial database known for its scalability and features.",
     "links": []
   },
   "ETT9eATuyLHQe2jPqaF5I": {
     "title": "Exploratory Data Analysis (EDA)",
-    "description": "",
-    "links": []
+    "description": "Exploratory Data Analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. It's used to discover patterns, spot anomalies, test hypotheses, and check assumptions with the help of summary statistics and graphical representations. The goal of EDA is to gain a deeper understanding of the data before formal modelling or hypothesis testing.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Exploratory Data Analysis?",
+        "url": "https://www.ibm.com/think/topics/exploratory-data-analysis",
+        "type": "article"
+      },
+      {
+        "title": "Exploratory Data Analysis",
+        "url": "https://www.youtube.com/watch?v=QiqZliDXCCg",
+        "type": "video"
+      }
+    ]
   },
   "xjgqmJmetKpWXSWZHPwaL": {
     "title": "Duplicates",
-    "description": "",
-    "links": []
+    "description": "Duplicate data refers to instances where the same piece of information is repeated within a dataset. This can occur due to various reasons, such as human error during data entry, system glitches, or integration of data from multiple sources. Identifying and removing or merging these duplicates is crucial for ensuring data accuracy and reliability.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Duplication Implications and Solutions",
+        "url": "https://www.oracle.com/uk/data-duplication/",
+        "type": "article"
+      }
+    ]
   },
   "fhreEuoT8ZBRwJqbSGrEZ": {
     "title": "Missing Values",
-    "description": "",
-    "links": []
+    "description": "Missing values are data points that are absent from a dataset. These gaps can occur for various reasons, such as errors during data collection, incomplete surveys, or system malfunctions. Handling missing values is a crucial step in data cleaning to ensure the accuracy and reliability of subsequent analyses and reporting.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Standardization: How It's Done & Why It's Important",
+        "url": "https://www.scribbr.com/statistics/missing-data/",
+        "type": "article"
+      },
+      {
+        "title": "Missing data",
+        "url": "https://en.wikipedia.org/wiki/Missing_data",
+        "type": "article"
+      }
+    ]
   },
   "OqolfBQRQvwg6PI_t8Mrt": {
     "title": "Outliers",
-    "description": "",
-    "links": []
+    "description": "Outliers are unusual or surprising data points that deviate significantly from the rest of the data. While they may be the result of mere variability or error, they will often pull the aggregate data towards them, skewing the results and impeding the accuracy of data analysis. Therefore, identifying and appropriately handling these outliers is crucial to ensure the reliability of subsequent data analysis tasks.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Outliers",
+        "url": "https://www.mathsisfun.com/data/outliers.html",
+        "type": "article"
+      },
+      {
+        "title": "Outliers in Data Analysis... and how to deal with them!",
+        "url": "https://www.youtube.com/watch?v=3lQydBqWYk0&pp=0gcJCfwAo7VqN5tD",
+        "type": "article"
+      }
+    ]
   },
   "hrkMVMYWCedRxhNd2N9wE": {
     "title": "Data Transformation Techniques",
-    "description": "",
-    "links": []
+    "description": "Data transformation techniques involve changing data from one format or structure to another. Common techniques include:\n\n*   **Cleaning:** Handling missing values, correcting errors, and removing duplicates.\n*   **Filtering:** Selecting specific data based on defined criteria.\n*   **Aggregation:** Summarizing data (e.g., calculating sums, averages, counts).\n*   **Joining:** Combining data from multiple sources based on related fields.\n*   **Pivoting:** Rotating data to change rows into columns or vice versa.\n*   **Normalization/Standardization:** Scaling numerical data to a specific range.\n*   **Data Type Conversion:** Changing the data type of a field (e.g., string to integer).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Transformation",
+        "url": "https://www.qlik.com/us/data-management/data-transformation",
+        "type": "article"
+      },
+      {
+        "title": "What is Data Transformation? (Types of Data Transformations and Examples!)",
+        "url": "https://www.youtube.com/watch?v=TY0NAPAWR3M",
+        "type": "video"
+      }
+    ]
   },
   "sltVKaKKjmzu17jDv9OFF": {
     "title": "Visualization Fundamentals",
-    "description": "",
-    "links": []
+    "description": "Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data. It transforms raw data into meaningful insights, making it easier to identify relationships and draw conclusions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Business Intelligence Fundamentals",
+        "url": "https://www.simplilearn.com/free-business-intelligence-course-online-skillup",
+        "type": "course"
+      },
+      {
+        "title": "What Is Data Visualization? Definition, Examples, And Learning Resources",
+        "url": "https://www.tableau.com/visualization/what-is-data-visualization",
+        "type": "article"
+      },
+      {
+        "title": "Fundamentals of Data Visualization",
+        "url": "https://clauswilke.com/dataviz/introduction.html",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Data Visualization Handbook for Designers",
+        "url": "https://uxmag.medium.com/the-ultimate-data-visualization-handbook-for-designers-efa7d6e0b6fe",
+        "type": "article"
+      }
+    ]
   },
   "BUizLtQ7vpdyBRjS8KyIl": {
     "title": "Barplot",
-    "description": "",
+    "description": "A barplot, also known as a bar chart or bar graph, is a visual representation of data that uses rectangular bars to compare different categories or groups. The length or height of each bar corresponds to the value it represents, allowing for easy comparison of quantities across different categories. Barplots can be oriented vertically (column charts) or horizontally (bar charts), and are commonly used to display frequencies, averages, or other summary statistics.",
     "links": []
   },
   "SNkYi2VZsCRG31v63v8_x": {
     "title": "Heatmap",
-    "description": "",
+    "description": "A heatmap is a graphical representation of data where values are depicted using color. It allows you to quickly identify patterns, correlations, and variations in large datasets by representing data points as colored cells in a matrix. The color intensity typically corresponds to the magnitude of the value, making it easy to spot high and low values at a glance.",
     "links": []
   },
   "BVDaFmDat48nN3hj5NE71": {
     "title": "Lineplot",
-    "description": "",
+    "description": "Line plots are a type of data visualization that displays data points connected by straight lines. They are used to show trends and changes in data over a continuous interval, such as time. Each point on the line represents a specific data value, and the lines connecting the points illustrate the relationship between consecutive values.",
     "links": []
   },
   "hCSZo7jT9arBLUbtCVFfD": {
     "title": "Scatterplot",
-    "description": "",
+    "description": "A scatterplot is a type of data visualization that uses dots to represent values for two different variables. Each dot's position on the horizontal and vertical axes indicates the values for an individual data point. Scatterplots are primarily used to observe and display the relationship or correlation between these two variables, revealing patterns, clusters, and outliers in the data.",
     "links": []
   },
   "7_5PBCrsukv81mm7yTpDf": {
     "title": "Map",
-    "description": "",
+    "description": "Maps are visual representations of geographical data, used to display information across different locations. They allow you to see spatial patterns and relationships, such as population density, sales distribution, or resource locations. Different types of maps, like choropleth maps (using color shading) or point maps (using markers), can highlight specific aspects of the data and provide valuable insights based on location.",
     "links": []
   },
   "wqLcUFVsLa_l9yQIee9MG": {
     "title": "Histogram",
-    "description": "",
+    "description": "A histogram is a type of bar chart that visually represents the distribution of numerical data. It groups data into bins (or intervals) and displays the frequency (or count) of data points falling within each bin. This allows you to quickly understand the underlying frequency distribution, identify patterns like skewness or outliers, and gain insights into the central tendency and spread of the data.",
     "links": []
   },
   "SJGEkoTSPK2ck4IvaK6Gz": {
     "title": "Color theory",
-    "description": "",
-    "links": []
+    "description": "Color theory is a set of principles that guide how colors are mixed, combined, and used to create visually appealing and effective designs. It encompasses understanding the color wheel, color harmonies, and the psychological effects of different colors. Applying color theory helps ensure that visualizations are not only aesthetically pleasing but also communicate data accurately and effectively.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to choose colors for data visualizations",
+        "url": "https://www.atlassian.com/data/charts/how-to-choose-colors-data-visualization",
+        "type": "article"
+      },
+      {
+        "title": "Why Colors Matter in Data Visualization? What is Color Theory?",
+        "url": "https://www.youtube.com/watch?v=Zs-Rbkr9LVI",
+        "type": "video"
+      }
+    ]
   },
   "qGVDuU9RA9Y5g5vlPd-xq": {
     "title": "Misleading charts",
-    "description": "",
-    "links": []
+    "description": "Misleading charts are visualizations that distort or misrepresent data, intentionally or unintentionally, leading to incorrect interpretations and flawed conclusions. These charts often employ techniques like truncated axes, inconsistent scales, selective data presentation, or inappropriate chart types to exaggerate or downplay certain trends or comparisons, ultimately undermining the integrity of the data being presented.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How To Spot Misleading Charts: Check the Axes",
+        "url": "https://www.tableau.com/blog/how-spot-misleading-charts-check-axes",
+        "type": "article"
+      },
+      {
+        "title": "https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/misleading-graphs/",
+        "url": "https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/misleading-graphs/",
+        "type": "article"
+      }
+    ]
   },
   "wtEzdO_ZNu9jHJrFS3CrG": {
     "title": "Accessibility",
-    "description": "",
-    "links": []
+    "description": "Accessibility in data visualization focuses on designing charts and graphs that are usable by everyone, including people with disabilities. This involves considering factors like color contrast, alternative text for screen readers, keyboard navigation, and clear data labels to ensure that the information presented is understandable and interpretable regardless of a user's abilities or assistive technology.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "10 Guidelines for DataViz Accessibility",
+        "url": "https://www.highcharts.com/blog/tutorials/10-guidelines-for-dataviz-accessibility/",
+        "type": "article"
+      },
+      {
+        "title": "Accessibility in Data Visualisation",
+        "url": "https://www.youtube.com/watch?v=OOPeS_xWoKQ",
+        "type": "video"
+      }
+    ]
   },
   "7t0WfLLqrD5VJQwIAmXMo": {
     "title": "Mobile-responsiveness",
-    "description": "",
-    "links": []
+    "description": "Mobile-responsive visualizations are designed to adapt and display correctly on various screen sizes and devices, particularly smartphones and tablets. This ensures that data insights are accessible and easily understandable regardless of the device used to view them, maintaining readability and functionality across different platforms. This involves using techniques like flexible layouts, scalable images, and touch-friendly controls to optimize the viewing experience on smaller screens.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "4 Key Tips: Creating Mighty Mobile Data Visualizations",
+        "url": "https://pagely.com/blog/4-key-tips-creating-mighty-mobile-data-visualizations/",
+        "type": "article"
+      }
+    ]
   },
   "EDQjtoTd01ftwXxYkV9it": {
     "title": "Design principles",
-    "description": "",
-    "links": []
+    "description": "Effective data visualization design principles include Clarity, Simplicity, Accuracy, and Consistency, ensuring your visuals are easy to understand and don't mislead the audience. Also important are the context (i.e. providing enough information to understand the data); choosing the right chart type to best tell the story; and applying Design Principles like balance, contrast, and emphasis to create engaging and effective visuals.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "10 Essential Data Visualization Design Principles for Clearer Insights",
+        "url": "https://www.tenscope.com/post/data-visualization-design-principles-for-clarity",
+        "type": "article"
+      }
+    ]
   },
   "eqGsO6ZGk2jdG0z9-cHzz": {
     "title": "Power BI",
-    "description": "",
-    "links": []
+    "description": "PowerBI, an interactive data visualization and business analytics tool developed by Microsoft, plays a crucial role in the field of a data analyst's work. It helps data analysts to convert raw data into meaningful insights through it's easy-to-use dashboards and reports function. This tool provides a unified view of business data, allowing analysts to track and visualize key performance metrics and make better-informed business decisions. With PowerBI, data analysts also have the ability to manipulate and produce visualizations of large data sets that can be shared across an organization, making complex statistical information more digestible.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Power BI",
+        "url": "https://www.microsoft.com/en-us/power-platform/products/power-bi",
+        "type": "article"
+      },
+      {
+        "title": "Power BI for beginners",
+        "url": "https://www.youtube.com/watch?v=NNSHu0rkew8",
+        "type": "video"
+      },
+      {
+        "title": "Power BI Full Course for Free in 20 Hours",
+        "url": "https://www.youtube.com/watch?v=cyWVzAQF9YU",
+        "type": "video"
+      }
+    ]
   },
   "GoMIAQwusbT7fqJ-VnCrq": {
     "title": "Qlik",
-    "description": "",
-    "links": []
+    "description": "Qlik is a data analytics platform that allows users to explore data, discover insights, and make data-driven decisions. It uses associative technology, which enables users to explore relationships within data regardless of where it's stored. Qlik offers self-service analytics, data visualization, and data integration capabilities, empowering users to analyze data without relying solely on IT or data science teams.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Qlik",
+        "url": "https://www.qlik.com/",
+        "type": "article"
+      },
+      {
+        "title": "Qlik Sense Tutorial: 3.5 Hours of Beginner to Advanced Qlik Sense Training",
+        "url": "https://www.youtube.com/watch?v=ny8d2XlTWsQ",
+        "type": "video"
+      }
+    ]
   },
   "WzPj94lYxQCjFx5YW4X9x": {
     "title": "Tableau",
-    "description": "",
-    "links": []
+    "description": "Tableau is a powerful data visualization tool utilized extensively by data analysts worldwide. Its primary role is to transform raw, unprocessed data into an understandable format without any technical skills or coding. Data analysts use Tableau to create data visualizations, reports, and dashboards that help businesses make more informed, data-driven decisions. They also use it to perform tasks like trend analysis, pattern identification, and forecasts, all within a user-friendly interface. Moreover, Tableau's data visualization capabilities make it easier for stakeholders to understand complex data and act on insights quickly.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Tableau",
+        "url": "https://www.tableau.com/en-gb",
+        "type": "article"
+      },
+      {
+        "title": "What is Tableau?",
+        "url": "https://www.youtube.com/watch?v=NLCzpPRCc7U",
+        "type": "video"
+      },
+      {
+        "title": "Learn Tableau in Under 2 hours",
+        "url": "https://www.youtube.com/watch?v=j8FSP8XuFyk",
+        "type": "video"
+      }
+    ]
   },
   "f4MDT1RUfaICAWzyG2E6T": {
     "title": "Looker",
-    "description": "",
-    "links": []
+    "description": "Looker is a Google cloud-based business intelligence and data analytics platform. It allows users to explore, analyze, and visualize data to gain insights and make data-driven decisions. Looker is known for its ability to connect to various data sources, create custom dashboards, and generate reports. It also facilitates the integration of analytics, visualizations, and relevant information into business processes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "ooker business intelligence platform embedded analytics",
+        "url": "https://cloud.google.com/looker",
+        "type": "article"
+      },
+      {
+        "title": "What is Looker?",
+        "url": "ttps://www.youtube.com/watch?v=EmkNPAzla0Y&pp=0gcJCfwAo7VqN5tD",
+        "type": "article"
+      }
+    ]
   },
   "kpRqKLtAd3IO3nbs8Yxrh": {
     "title": "BI Platforms",
-    "description": "",
-    "links": []
+    "description": "BI Platforms are software systems that provide a range of tools and capabilities for business intelligence, including data integration, data analysis, reporting, dashboarding, and data visualization. They enable users to access, analyze, and share insights from data to support better decision-making across an organization. These platforms often support various data sources and offer features for collaboration and data governance.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Analytics and Business Intelligence Platforms Reviews and Ratings",
+        "url": "https://www.gartner.com/reviews/market/analytics-business-intelligence-platforms",
+        "type": "article"
+      }
+    ]
   },
   "vQQSYPpcGO7ri0RFSWi0h": {
     "title": "Python",
-    "description": "",
-    "links": []
+    "description": "Python is a versatile and widely-used programming language known for its readability and extensive libraries. Learning Python as a BI analyst is crucial because it allows you to automate tasks like data cleaning and transformation, perform advanced statistical analysis beyond the capabilities of standard BI tools, and create custom visualizations. It empowers you to work with larger and more complex datasets, ultimately leading to deeper insights and more effective data-driven decision-making.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit Dedicated Python Roadmap",
+        "url": "https://roadmap.sh/python",
+        "type": "article"
+      },
+      {
+        "title": "Python",
+        "url": "https://www.python.org/",
+        "type": "article"
+      },
+      {
+        "title": "Real Python",
+        "url": "https://realpython.com/",
+        "type": "article"
+      },
+      {
+        "title": "Python for Data Analysis",
+        "url": "https://datapot.vn/wp-content/uploads/2023/12/datapot.vn-Python-for-Data-Analysis.pdf?srsltid=AfmBOopeeuwebcpwD9crBjnMo3wchpUtvkz-g1T2Phi7FFyjkx7l5t9e",
+        "type": "article"
+      },
+      {
+        "title": "Ultimate Data Analyst Bootcamp [24 Hours!]",
+        "url": "https://www.youtube.com/watch?v=wQQR60KtnFY",
+        "type": "video"
+      }
+    ]
   },
   "0OTmTRHlR3ImNU0zyLt8G": {
     "title": "R",
-    "description": "",
-    "links": []
+    "description": "R is a programming language and free software environment widely used for statistical computing and graphics. For BI analysts, R is valuable because it allows for advanced data analysis, statistical modeling, and the creation of custom visualizations beyond the capabilities of many standard BI tools. It empowers analysts to uncover deeper insights, build predictive models, and communicate findings effectively.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "R",
+        "url": "https://www.r-project.org/",
+        "type": "article"
+      },
+      {
+        "title": "R for Data Science",
+        "url": "https://r4ds.hadley.nz/",
+        "type": "article"
+      },
+      {
+        "title": "What is R? - An Introduction to The Statistical Computing Powerhouse",
+        "url": "https://www.datacamp.com/blog/all-about-r",
+        "type": "article"
+      },
+      {
+        "title": "R Programming For Beginners",
+        "url": "https://www.youtube.com/watch?v=KlsYCECWEWE&list=PLEiEAq2VkUUKAw0aAJ1W4jpZ1q9LpX4yG",
+        "type": "video"
+      }
+    ]
   },
   "KSxjcWV6C325kZITzAhWs": {
     "title": "Programming Languages",
-    "description": "",
+    "description": "Programming languages are sets of instructions that tell computers what to do. For BI Analysts, learning a programming language unlocks powerful capabilities beyond standard BI tools. It allows you to automate tasks, clean and transform data in complex ways, build custom visualizations, and integrate different data sources. By learning a programming language, BI Analysts can solve more complex problems and gain deeper insights from data.",
     "links": []
   },
   "JHGV0V78GXubiSY9P3nTw": {
     "title": "Risk Analytics",
-    "description": "",
-    "links": []
+    "description": "Risk analytics involves identifying, assessing, and mitigating potential risks that could impact an organization's financial stability and overall performance. It uses data analysis techniques to understand the likelihood and potential consequences of various risks, such as market volatility, credit defaults, and operational failures. The goal is to provide insights that enable informed decision-making and proactive risk management strategies.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What are financial risk analytics?",
+        "url": "http://stripe.com/en-es/resources/more/what-are-financial-risk-analytics-what-businesses-need-to-know",
+        "type": "article"
+      },
+      {
+        "title": "Risk Analysis: Definition, Types, Limitations, and Examples",
+        "url": "https://www.investopedia.com/terms/r/risk-analysis.asp",
+        "type": "article"
+      }
+    ]
   },
   "OqHNW0PzIRsw7IBgh5U5Q": {
     "title": "CLV",
-    "description": "",
-    "links": []
+    "description": "Customer Lifetime Value (CLV) predicts the total revenue a business can expect from a single customer account throughout their relationship. It considers factors like purchase frequency, average order value, and customer lifespan to estimate the long-term profitability of each customer. This metric helps businesses understand which customer segments are most valuable and informs decisions about customer acquisition, retention, and marketing strategies.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Customer Lifetime Value (CLV) Is and How to Calculate It",
+        "url": "https://www.netsuite.com/portal/resource/articles/ecommerce/customer-lifetime-value-clv.shtml",
+        "type": "article"
+      }
+    ]
   },
   "j-GXKpMnsVuUUUdRxAXLe": {
     "title": "Compliance Reporting",
-    "description": "",
-    "links": []
+    "description": "Compliance reporting involves creating reports that demonstrate an organization's adherence to laws, regulations, policies, and industry standards. These reports provide evidence of compliance to regulatory bodies, stakeholders, and internal management, ensuring transparency and accountability. They often include key performance indicators (KPIs), metrics, and data visualizations to highlight compliance status and identify areas for improvement.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Streamlining Financial Compliance with AI-Powered BI",
+        "url": "https://www.strategysoftware.com/blog/streamlining-financial-compliance-with-ai-powered-bi",
+        "type": "article"
+      }
+    ]
   },
   "aJLGan5dkMefvkspFlcYo": {
     "title": "Fraud Detection",
-    "description": "",
-    "links": []
+    "description": "Fraud detection involves identifying and preventing deceptive or illegal activities in financial transactions. It uses data analysis techniques to spot patterns and anomalies that deviate from normal behavior, helping organizations minimize financial losses and maintain integrity. This process often involves analyzing large datasets of transactions, customer information, and other relevant data to flag suspicious activities for further investigation.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Fraud Analytics and How to Use Data for Fraud Detection?",
+        "url": "https://www.feedzai.com/blog/fraud-data-analytics/",
+        "type": "article"
+      },
+      {
+        "title": "Data analysis for fraud detection",
+        "url": "https://en.wikipedia.org/wiki/Data_analysis_for_fraud_detection",
+        "type": "article"
+      }
+    ]
   },
   "xftv5BiyoVrFjpSN0tjsw": {
     "title": "Finance",
-    "description": "",
+    "description": "Business Intelligence tools help analyze large datasets to improve decision-making in the finance sector. They are used to track financial performance, identify trends, manage risk, and detect fraud. BI applications provide insights into profitability, customer behavior, and operational efficiency, enabling financial institutions to optimize their strategies and improve their bottom line.",
     "links": []
   },
   "VPu8vn7-baZQ5ORJ6ViW0": {
     "title": "Sales Performance",
-    "description": "",
+    "description": "Sales performance refers to how well a company or individual is doing in terms of generating revenue through sales activities. It involves tracking, analyzing, and improving various metrics like sales volume, revenue growth, conversion rates, and customer acquisition cost to understand what's working and what's not in the sales process. This understanding helps businesses make informed decisions to optimize their sales strategies and achieve their revenue targets.",
     "links": []
   },
   "0qRm81lJX_Eb6aJkJMjeL": {
     "title": "Marketing Campaigns",
-    "description": "",
-    "links": []
+    "description": "Marketing campaigns are organized efforts to promote a specific business goal, such as increasing brand awareness, driving sales, or launching a new product. These campaigns involve a series of coordinated activities, including advertising, promotions, content creation, and customer engagement, all designed to reach a target audience and achieve measurable results. The success of a marketing campaign is typically evaluated based on key performance indicators (KPIs) like conversion rates, return on investment (ROI), and customer acquisition cost (CAC).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is campaign analytics?",
+        "url": "https://hightouch.com/blog/campaign-analytics",
+        "type": "article"
+      }
+    ]
   },
   "LkbB0rpS3Du2K7_ogoc34": {
     "title": "Inventory Optimization",
-    "description": "",
-    "links": []
+    "description": "Inventory optimization is the process of strategically managing and controlling the flow of goods to minimize costs while meeting customer demand. It involves analyzing historical sales data, forecasting future demand, and considering factors like lead times, storage costs, and potential obsolescence to determine the optimal quantity of each product to keep in stock. The goal is to strike a balance between avoiding stockouts and minimizing excess inventory, ultimately improving profitability and customer satisfaction.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "6 effective inventory optimization techniques your team should be using",
+        "url": "https://www.thoughtspot.com/data-trends/analytics/inventory-optimization-techniques",
+        "type": "article"
+      },
+      {
+        "title": "What Is Inventory Optimization? Benefits and Techniques",
+        "url": "https://www.netsuite.com/portal/resource/articles/inventory-management/inventory-optimization.shtml",
+        "type": "article"
+      }
+    ]
   },
   "7jrzQogTOc6lHXfpYLCsx": {
     "title": "Supply Chain Analytics",
-    "description": "",
-    "links": []
+    "description": "Supply Chain Analytics involves using data to understand and improve all aspects of a company's supply chain, from sourcing raw materials to delivering finished products to customers. This includes analyzing data related to inventory levels, transportation costs, supplier performance, and demand forecasting to identify bottlenecks, optimize processes, and reduce costs. The goal is to create a more efficient, responsive, and resilient supply chain.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Supply Chain Analytics?",
+        "url": "https://www.ibm.com/think/topics/supply-chain-analytics",
+        "type": "article"
+      }
+    ]
   },
   "7LbhfkmS7oFoSF1k5ZR1U": {
     "title": "Retail & E-commerce",
-    "description": "",
+    "description": "Business intelligence in retail and e-commerce helps companies understand their sales trends, customer behavior, and operational efficiency. By analyzing data from various sources like point-of-sale systems, website analytics, and customer databases, retailers can identify top-selling products, optimize pricing strategies, personalize marketing campaigns, and improve inventory management. This data-driven approach enables them to make informed decisions, enhance customer experiences, and ultimately increase profitability.",
     "links": []
   },
   "LI09SvvUUCQxLZZee_j0n": {
     "title": "Patient management",
-    "description": "",
-    "links": []
+    "description": "Data analytics helps healthcare providers manage patients more effectively. By analyzing patient data like medical history, appointments, and treatment outcomes, hospitals and clinics can identify trends and patterns. This information allows them to improve scheduling, reduce wait times, personalize treatment plans, and ultimately provide better care for each patient.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Top 8 Use Cases of Healthcare Business Intelligence",
+        "url": "https://kms-healthcare.com/blog/healthcare-business-intelligence/",
+        "type": "article"
+      }
+    ]
   },
   "omvGuhou7_63k-Fwcc7Mu": {
     "title": "Compliance Reporting",
-    "description": "",
+    "description": "Compliance reporting in healthcare involves creating reports that demonstrate adherence to regulations and standards set by healthcare organizations. These reports track key performance indicators (KPIs) related to patient safety, data security, financial integrity, and quality of care. They are used to identify areas of non-compliance, mitigate risks, and ensure that healthcare providers meet legal and ethical obligations.",
     "links": []
   },
   "ku3m0ZmNg23F0Z5CEb4JI": {
     "title": "Hospital Efficiency",
-    "description": "",
-    "links": []
+    "description": "Data analytics can help hospitals run smoother and provide better care. By looking at data on patient flow, staffing levels, and resource usage, hospitals can identify bottlenecks and areas for improvement. For example, analyzing wait times in the emergency room can reveal patterns that suggest the need for more staff during peak hours. Similarly, tracking the use of medical equipment can help hospitals optimize inventory and reduce waste. Ultimately, data-driven insights enable hospitals to make informed decisions that improve efficiency, reduce costs, and enhance patient outcomes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Improving Hospital Efficiency with Health Data Analytics",
+        "url": "https://futuramo.com/blog/improving-hospital-efficiency-with-health-data-analytics/",
+        "type": "article"
+      }
+    ]
   },
   "VpGVezYr9O6puhAF12PN2": {
     "title": "Healthcare",
-    "description": "",
-    "links": []
+    "description": "Business Intelligence can be a game-changer in healthcare, helping hospitals, clinics, and other medical organizations make better decisions. It involves collecting and analyzing data from various sources, like patient records, insurance claims, and operational systems. This data is then used to identify trends, improve patient care, optimize resource allocation, reduce costs, and enhance overall efficiency within the healthcare system.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Health Care Business Intelligence?",
+        "url": "https://www.coursera.org/articles/healthcare-business-intelligence",
+        "type": "article"
+      }
+    ]
   },
   "L50rpcgGjsQU3S0zRn6xh": {
     "title": "Production Efficiency",
-    "description": "",
+    "description": "Production efficiency measures how well a manufacturing process converts inputs (like raw materials, labor, and energy) into outputs (finished goods). It focuses on minimizing waste, optimizing resource utilization, and streamlining workflows to produce the maximum possible output with the least amount of input. Analyzing production efficiency involves tracking key performance indicators (KPIs) such as throughput, cycle time, and defect rates to identify areas for improvement and ultimately reduce costs and increase profitability.",
     "links": []
   },
   "yimCxOdNtyGcbd6ZxHsBQ": {
     "title": "Predictive Maintenance",
-    "description": "",
-    "links": []
+    "description": "Predictive maintenance uses data analysis and machine learning to forecast when equipment failures are likely to occur. This allows manufacturers to schedule maintenance proactively, minimizing downtime and reducing costs associated with unexpected breakdowns. By analyzing sensor data, historical maintenance records, and other relevant information, predictive maintenance models can identify patterns and anomalies that indicate potential problems before they lead to significant disruptions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Predictive Maintenance?",
+        "url": "https://www.ibm.com/think/topics/predictive-maintenance",
+        "type": "article"
+      },
+      {
+        "title": "Predictive Maintenance Explained",
+        "url": "https://www.youtube.com/watch?v=2_o1SDy6__U",
+        "type": "video"
+      }
+    ]
   },
   "Xe9zK8xhkkr4fsh3HOzAY": {
     "title": "Quality Control",
-    "description": "",
-    "links": []
+    "description": "Quality control in manufacturing involves systematically monitoring and evaluating products or processes to ensure they meet predefined standards and specifications. This includes identifying defects, analyzing their root causes, and implementing corrective actions to improve product quality and process efficiency. The goal is to minimize errors, reduce waste, and consistently deliver high-quality products to customers.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Quality Control in Manufacturing: Methods, Best Practices, and Implementation",
+        "url": "https://www.starrapid.com/blog/quality-control-in-manufacturing/",
+        "type": "article"
+      }
+    ]
   },
   "-hNguvT6SQCqAgVpoQByr": {
     "title": "Supply chain optimization",
-    "description": "",
-    "links": []
+    "description": "Supply chain optimization involves streamlining the processes of sourcing, production, and distribution to maximize efficiency and minimize costs. It focuses on improving the flow of goods, information, and finances across the entire supply chain, from raw materials to the end customer. This includes strategies for inventory management, transportation, warehousing, and demand forecasting to ensure the right products are available at the right place, at the right time, and at the right cost.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How supply chain analytics keeps processes and products moving",
+        "url": "https://www.teradata.com/insights/data-analytics/supply-chain-analytics",
+        "type": "article"
+      },
+      {
+        "title": "Enhance Efficiency: Supply Chain Analytics in Manufacturing",
+        "url": "https://www.scatterpie.io/blogs/supply-chain-analytics-in-manufacturing",
+        "type": "article"
+      }
+    ]
   },
   "zEGmDHaFa-F81tWqa3i9E": {
     "title": "Manufacturing",
-    "description": "",
-    "links": []
+    "description": "Data analytics and BI in manufacturing involves using data to understand and improve how things are made in industrial settings. It's about collecting information from different parts of the manufacturing process – like production lines, supply chains, and sales – and then analyzing it to find patterns and insights. This helps manufacturers make smarter decisions about things like optimizing production, reducing costs, improving quality, and predicting future demand.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Manufacturing Analytics?",
+        "url": "http://oracle.com/au/scm/manufacturing/manufacturing-analytics/",
+        "type": "article"
+      },
+      {
+        "title": "The future of manufacturing is powered by data and analytics. Here's why",
+        "url": "https://www.weforum.org/stories/2022/09/manufacturing-data-advanced-analytics/",
+        "type": "article"
+      }
+    ]
   },
   "qKlo90-Cy8t_off5Qv8-6": {
     "title": "A/B Testing",
-    "description": "",
-    "links": []
+    "description": "A/B testing, also known as split testing, is a method of comparing two versions of something to determine which one performs better. This is done by showing the two versions (A and B) to similar audiences and measuring which version achieves a specific goal, such as a higher click-through rate or conversion rate. The version that performs better is then implemented.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "A/B Testing",
+        "url": "https://en.wikipedia.org/wiki/A/B_testing",
+        "type": "article"
+      },
+      {
+        "title": "A Refresher on A/B Testing",
+        "url": "https://hbr.org/2017/06/a-refresher-on-ab-testing",
+        "type": "article"
+      },
+      {
+        "title": "How to Do A/B Testing: 15 Steps for the Perfect Split Test",
+        "url": "https://www.youtube.com/watch?v=vV3g5VuSrIQ",
+        "type": "video"
+      }
+    ]
   },
   "R2zg0Ql-RsnIkV5Gmc1vN": {
     "title": "Cohort Analysis",
-    "description": "",
-    "links": []
+    "description": "Cohort analysis is a behavioral analytics technique that groups users with shared characteristics over a specific time span. These groups, or cohorts, are then tracked and compared to understand how their behavior evolves over time. This helps identify patterns, trends, and insights related to user engagement, retention, and other key metrics.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Cohort Analysis: A Comprehensive Guide 101",
+        "url": "https://hevodata.com/learn/understanding-cohort-analysis-a-guide/",
+        "type": "article"
+      },
+      {
+        "title": "Cohort analysis",
+        "url": "https://en.wikipedia.org/wiki/Cohort_analysis",
+        "type": "article"
+      }
+    ]
   },
   "ExHCSUDxDBwsJtTelvxjP": {
     "title": "Forecasting",
-    "description": "",
-    "links": []
+    "description": "Forecasting is a technique used to predict future values based on historical data. It involves analyzing past trends and patterns to estimate what is likely to happen in the future. This can be done using various statistical methods and algorithms, taking into account factors like seasonality, trends, and cyclical patterns to generate informed predictions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Complete Time Series Analysis and Forecasting with Python",
+        "url": "https://www.youtube.com/watch?v=eKiXtGzEjos",
+        "type": "video"
+      }
+    ]
   },
   "yseEaLsEzIcqJ0YIoGujl": {
     "title": "Time Series Analysis",
-    "description": "",
-    "links": []
+    "description": "Time series analysis is a statistical method used to analyze data points collected over time to identify patterns, trends, and seasonal variations. It involves examining a sequence of data points indexed in time order, allowing for forecasting future values based on historical observations. This analysis helps in understanding the underlying processes that generate the data and predicting future behavior.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Time series",
+        "url": "https://en.wikipedia.org/wiki/Time_series",
+        "type": "article"
+      },
+      {
+        "title": "Time Series Analysis: Definition, Types & Techniques",
+        "url": "https://www.tableau.com/analytics/what-is-time-series-analysis",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Time Series Analysis",
+        "url": "https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm",
+        "type": "article"
+      },
+      {
+        "title": "What is Time Series Analysis?",
+        "url": "https://www.youtube.com/watch?v=GE3JOFwTWVM",
+        "type": "video"
+      },
+      {
+        "title": "Complete Time Series Analysis and Forecasting with Python",
+        "url": "https://www.youtube.com/watch?v=eKiXtGzEjos",
+        "type": "video"
+      }
+    ]
   },
   "ZGazuCNruu09bd7C-aSFC": {
     "title": "Basic Machine Learning",
-    "description": "",
-    "links": []
+    "description": "Machine learning fundamentals encompass the key concepts and techniques that enable systems to learn from data and make predictions or decisions without being explicitly programmed. At its core, machine learning involves algorithms that can identify patterns in data and improve over time with experience. Key areas include supervised learning (where models are trained on labeled data), unsupervised learning (where models identify patterns in unlabeled data), and reinforcement learning (where agents learn to make decisions based on feedback from their actions). Essential components also include data preprocessing, feature selection, model training, evaluation metrics, and the importance of avoiding overfitting. Understanding these fundamentals is crucial for developing effective machine learning applications across various domains.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Fundamentals of Machine Learning - Microsoft",
+        "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/",
+        "type": "course"
+      },
+      {
+        "title": "MLCourse.ai",
+        "url": "https://mlcourse.ai/",
+        "type": "course"
+      },
+      {
+        "title": "What Is Machine Learning (ML)?",
+        "url": "https://www.ibm.com/think/topics/machine-learning",
+        "type": "article"
+      }
+    ]
   },
   "t_J0MZTMWMnrImGHjXYov": {
     "title": "Storytelling Framework",
-    "description": "",
-    "links": []
+    "description": "A storytelling framework provides a structured approach to crafting narratives from data insights. It typically involves defining the audience, identifying the key message, structuring the narrative with a clear beginning, middle, and end, and using visuals to support the story. This framework helps to present data in a compelling and easily understandable way, ensuring the audience grasps the significance of the findings.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "3 Storytelling Frameworks I Am Using To Transform My Content Writing",
+        "url": "https://writingcooperative.com/3-storytelling-frameworks-i-am-using-to-transform-my-content-writing-8433c83ce87e",
+        "type": "article"
+      },
+      {
+        "title": "Visual storytelling 101: elevating presentations with data visualization",
+        "url": "https://www.youtube.com/watch?v=NXx0xQn7OXI",
+        "type": "video"
+      }
+    ]
   },
   "KXhNou5nlekbSTfLYPs_8": {
     "title": "Dashboard Design",
-    "description": "",
-    "links": []
+    "description": "Dashboard design involves creating visual displays of data that are easy to understand and interpret. It focuses on arranging key performance indicators (KPIs), charts, and other data visualizations in a way that tells a clear and concise story about the underlying data, enabling users to quickly identify trends, patterns, and insights. Effective dashboard design prioritizes clarity, usability, and relevance to the intended audience.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visual storytelling 101: elevating presentations with data visualization",
+        "url": "https://medium.com/@mokkup/8-essential-dashboard-design-principles-for-effective-data-visualization-40653c5fd135",
+        "type": "article"
+      }
+    ]
   },
   "9G-pI5NsRCq4p0FLfaMR_": {
     "title": "Presentation Design",
-    "description": "",
-    "links": []
+    "description": "Presentation design involves creating visually appealing and engaging slides or materials to effectively communicate information to an audience. It encompasses elements like layout, color schemes, typography, imagery, and data visualization to ensure the message is clear, concise, and memorable. A well-designed presentation helps to capture attention, maintain interest, and facilitate understanding of the key insights being presented.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visual storytelling 101: elevating presentations with data visualization",
+        "url": "https://www.youtube.com/watch?v=NXx0xQn7OXI",
+        "type": "video"
+      }
+    ]
   },
   "Slg3fXGPTa-Z4sdZY86XK": {
     "title": "Writing Executive Summaries",
-    "description": "",
-    "links": []
+    "description": "Executive summaries are concise overviews of longer reports or analyses, designed to quickly inform decision-makers. The best executive summaries clearly state the problem or opportunity, the key findings, the recommended actions, and the expected benefits. They should be brief, typically no more than one page, and written in plain language, avoiding technical jargon. Prioritize clarity and focus on the most important information, ensuring the summary is easily understood and actionable.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to write an executive summary, with examples",
+        "url": "https://asana.com/resources/executive-summary-examples",
+        "type": "article"
+      }
+    ]
   },
   "r-m88g8xrUnuEpV2lHJfN": {
     "title": "Stakeholder Management",
-    "description": "",
+    "description": "Stakeholder management involves identifying individuals or groups who have an interest in a project or business outcome and then developing strategies to effectively communicate with and manage their expectations. This includes understanding their needs, addressing their concerns, and ensuring their involvement throughout the project lifecycle to achieve successful results and maintain positive relationships.",
     "links": []
   },
   "vDQF2oaybSewNu3EMs6zG": {
     "title": "Change Management",
-    "description": "",
+    "description": "Change management is the process, tools, and techniques used to manage the people-side of change to achieve the required business outcome. It involves helping individuals and teams understand, accept, and adapt to changes in their work environment, processes, technologies, or organizational structure. Effective change management minimizes disruption, resistance, and negative impacts, while maximizing adoption and realizing the benefits of the change initiative.",
     "links": []
   },
   "NFKiPXrkjRre1yUZc27gl": {
     "title": "Critical Thinking",
-    "description": "",
+    "description": "Critical thinking involves analyzing information objectively and forming a reasoned judgment. It's about evaluating evidence, identifying assumptions, and considering different perspectives to arrive at well-supported conclusions. This process helps in problem-solving and decision-making by ensuring that conclusions are logical and based on facts rather than emotions or biases.",
     "links": []
   },
   "OmhvVSTtzH5sxOIZRVYfQ": {
     "title": "Business Acumen",
-    "description": "",
-    "links": []
+    "description": "Business acumen is the ability to quickly understand how a business operates and makes money. It involves grasping the key financial drivers, competitive landscape, and strategic priorities of an organization. This understanding allows individuals to make informed decisions and contribute effectively to achieving business goals.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Business acumen",
+        "url": "https://en.wikipedia.org/wiki/Business_acumen",
+        "type": "article"
+      },
+      {
+        "title": "Business Acumen 101",
+        "url": "https://www.youtube.com/watch?v=JwhPhS26Mos",
+        "type": "video"
+      }
+    ]
   },
   "r8NoX426-ngu6ZQZe06oK": {
     "title": "Project Management",
-    "description": "",
+    "description": "Project management involves planning, organizing, and overseeing the completion of specific goals. It encompasses defining project objectives, creating timelines, allocating resources, and managing risks to ensure projects are delivered on time, within budget, and to the required quality. Effective project management relies on clear communication, collaboration, and problem-solving skills to navigate challenges and keep stakeholders aligned.",
     "links": []
   },
   "UhcniUDKmi7KNuXlolf5O": {
     "title": "Relevance",
-    "description": "",
+    "description": "Relevance, in the context of data quality, refers to the degree to which data is useful and applicable for its intended purpose. Data is considered relevant if it directly addresses the needs of the analysis or decision-making process it's being used for. Irrelevant data can lead to inaccurate insights, wasted resources, and ultimately, poor business outcomes.",
     "links": []
   },
   "5USjYdAVJs0gSXxE1j8Xu": {
     "title": "Timeliness",
-    "description": "",
+    "description": "Timeliness, in the context of data quality, refers to how up-to-date data is when it's needed. It measures the gap between when data is expected and when it's actually available for use. Data that is too old or delayed can lead to inaccurate analysis and poor decision-making.",
     "links": []
   },
   "BiyrAHB34evej_0cnDzOa": {
     "title": "Accesibility",
-    "description": "",
+    "description": "Data accessibility refers to the ease with which individuals or systems can locate, retrieve, and utilize data. It encompasses factors like data discoverability, format compatibility, and the presence of appropriate permissions and tools. Ensuring data is accessible is crucial for effective analysis, reporting, and decision-making, as it allows users to readily leverage available information.",
     "links": []
   },
   "uP8MWZqM9Z0i3eDF4Ldxv": {
     "title": "Interpretability",
-    "description": "",
+    "description": "Interpretability refers to the degree to which a human can understand the cause of a decision. In the context of data quality, it means that data should be clear, understandable, and easily interpreted by users. This ensures that insights derived from the data are accurate and can be confidently used for decision-making.",
     "links": []
   },
   "M1H3Fh09v8udCJIPSJPic": {
     "title": "Accuracy",
-    "description": "",
+    "description": "Accuracy refers to the degree to which data correctly reflects the real-world object or event it is intended to represent. It ensures that the data values are correct, reliable, and free from errors, misrepresentations, or inconsistencies. High accuracy is crucial for making sound business decisions and generating trustworthy insights.",
     "links": []
   },
   "4U66ZrBZqg7-ckOTmxAQj": {
     "title": "Coherence",
-    "description": "",
+    "description": "Coherence, within the realm of data quality, refers to the logical consistency and understandability of data across different datasets or within a single dataset. It ensures that data elements relate to each other in a meaningful and expected way, avoiding contradictions and ambiguities. High coherence means the data tells a clear and consistent story, making it reliable for analysis and decision-making.",
     "links": []
   },
   "F21ypKzpziLCXkiKG1S5Z": {
     "title": "Data Lineage",
-    "description": "",
-    "links": []
+    "description": "Data lineage is the process of understanding and documenting the journey of data, from its origin to its destination. It tracks how data is transformed, moved, and used throughout its lifecycle. This includes identifying the sources of data, the transformations applied to it (e.g., cleaning, aggregation), and the systems and users that access or modify it.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Data Lineage?",
+        "url": "https://www.ibm.com/think/topics/data-lineage",
+        "type": "article"
+      },
+      {
+        "title": "The Ultimate Guide To Data Lineage",
+        "url": "http://montecarlodata.com/blog-data-lineage/",
+        "type": "article"
+      }
+    ]
   },
   "fuxGZx3WGjP2TzzVV29ux": {
     "title": "Privacy",
-    "description": "",
-    "links": []
+    "description": "Privacy refers to the right of individuals to control how their personal information is collected, used, and shared. It encompasses various aspects, including data security, confidentiality, and compliance with regulations like GDPR and CCPA. Protecting privacy involves implementing policies and procedures to safeguard sensitive data and ensuring transparency in data handling practices.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Data Privacy?",
+        "url": "https://www.ibm.com/think/topics/data-privacy",
+        "type": "article"
+      }
+    ]
   },
   "9aNVqEyygNGeicdce5X8b": {
     "title": "Bias Recognition",
-    "description": "",
-    "links": []
+    "description": "Bias recognition involves identifying and understanding systematic errors in data or analysis that can lead to unfair or inaccurate conclusions. These biases can arise from various sources, including data collection methods, sampling techniques, or even the assumptions made during analysis. Recognizing these biases is crucial for ensuring that data-driven insights are reliable and equitable.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Data Bias?",
+        "url": "https://www.ibm.com/think/topics/data-bias",
+        "type": "article"
+      }
+    ]
   },
   "Vb06K0D2vWAlSe95QJrth": {
     "title": "Ethical Data Use",
-    "description": "",
-    "links": []
+    "description": "Ethical data use refers to the responsible and morally sound application of data in decision-making processes. It involves considering the potential impact of data analysis and insights on individuals, groups, and society as a whole, ensuring fairness, transparency, and accountability. This includes respecting privacy, avoiding bias, and using data in ways that promote positive outcomes while minimizing harm.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "An Introduction to Data Ethics: What is the Ethical Use of Data?",
+        "url": "https://www.datacamp.com/blog/introduction-to-data-ethics",
+        "type": "article"
+      },
+      {
+        "title": "5 Principles of Data Ethics for Business",
+        "url": "https://online.hbs.edu/blog/post/data-ethics",
+        "type": "article"
+      }
+    ]
   },
   "wJiKBbTMLhIzelUtKn7jl": {
     "title": "Data Warehouse",
-    "description": "",
-    "links": []
+    "description": "**Data Warehouses** are data storage systems which are designed for analyzing, reporting and integrating with transactional systems. The data in a warehouse is clean, consistent, and often transformed to meet wide-range of business requirements. Hence, data warehouses provide structured data but require more processing and management compared to data lakes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is a Data Warehouse?",
+        "url": "https://www.oracle.com/database/what-is-a-data-warehouse/",
+        "type": "article"
+      },
+      {
+        "title": "What is a Data Warehouse?",
+        "url": "https://www.youtube.com/watch?v=k4tK2ttdSDg",
+        "type": "video"
+      },
+      {
+        "title": "Data Lake VS Data Warehouse VS Data Marts",
+        "url": "https://www.youtube.com/watch?v=w9-WoReNKHk",
+        "type": "video"
+      }
+    ]
   },
   "iqpVtvoebAaoB_Dj9-gdw": {
     "title": "Data Lake",
-    "description": "",
-    "links": []
+    "description": "**Data Lakes** are large-scale data repository systems that store raw, untransformed data, in various formats, from multiple sources. They're often used for big data and real-time analytics requirements. Data lakes preserve the original data format and schema which can be modified as necessary.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Lake Definition",
+        "url": "https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-a-data-lake",
+        "type": "article"
+      },
+      {
+        "title": "What is a Data Lake?",
+        "url": "https://www.youtube.com/watch?v=LxcH6z8TFpI",
+        "type": "video"
+      },
+      {
+        "title": "Data Lake VS Data Warehouse VS Data Marts",
+        "url": "https://www.youtube.com/watch?v=w9-WoReNKHk",
+        "type": "video"
+      }
+    ]
   },
   "5x4NfuP6dAgjISlB-esIW": {
     "title": "Data Mart",
-    "description": "",
-    "links": []
+    "description": "A data mart is a subset of a data warehouse, focused on a specific business function or department. A data mart is streamlined for quicker querying and a more straightforward setup, catering to the specialized needs of a particular team, or function. Data marts only hold data relevant to a specific department or business unit, enabling quicker access to specific datasets, and simpler management\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a Data Mart?",
+        "url": "https://www.ibm.com/think/topics/data-mart",
+        "type": "article"
+      },
+      {
+        "title": "Data Mart vs Data Warehouse: a Detailed Comparison",
+        "url": "https://www.datacamp.com/blog/data-mart-vs-data-warehouse",
+        "type": "article"
+      },
+      {
+        "title": "Data Lake VS Data Warehouse VS Data Marts",
+        "url": "https://www.youtube.com/watch?v=w9-WoReNKHk",
+        "type": "article"
+      }
+    ]
   },
   "zGU6DyEm6xEYf1_73cbjL": {
     "title": "Cloud BI Ecosystem",
-    "description": "",
+    "description": "A Cloud BI Ecosystem refers to the collection of cloud-based services, tools, and technologies that work together to enable business intelligence (BI) and analytics. This ecosystem typically includes data storage, data integration, data processing, data visualization, and reporting capabilities, all hosted and managed in the cloud. It allows organizations to leverage the scalability, flexibility, and cost-effectiveness of the cloud to gain insights from their data.",
     "links": []
   },
   "Zxuvc9F3bINLTdfbsx_S_": {
     "title": "Data Architectures",
-    "description": "",
-    "links": []
+    "description": "Data architecture defines how data is collected, stored, transformed, distributed, and consumed within an organization. It provides a blueprint for managing data assets, ensuring data quality, accessibility, and security. This framework encompasses various components, including databases, data warehouses, data lakes, and data pipelines, working together to support business intelligence and analytics.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is a Data Architecture?",
+        "url": "https://www.ibm.com/think/topics/data-architecture",
+        "type": "article"
+      }
+    ]
   },
   "iYe42G31fhkAO0MBaHutF": {
     "title": "Star vs Snowflake Schema",
-    "description": "",
-    "links": []
+    "description": "Star vs Snowflake Schema\n========================\n\nA star schema is a way to organize data in a database, namely in data warehouses, to make it easier and faster to analyze. At the center, there's a main table called the **fact table**, which holds measurable data like sales or revenue. Around it are **dimension tables**, which add details like product names, customer info, or dates. This layout forms a star-like shape.\n\nA snowflake schema is another way of organizing data. In this schema, dimension tables are split into smaller sub-dimensions to keep data more organized and detailed, just like snowflakes in a large lake.\n\nThe star schema is simple and fast -ideal when you need to extract data for analysis quickly. On the other hand, the snowflake schema is more detailed. It prioritizes storage efficiency and managing complex data relationships.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Star Schema vs Snowflake Schema: Differences & Use Cases",
+        "url": "https://www.datacamp.com/blog/star-schema-vs-snowflake-schema",
+        "type": "article"
+      }
+    ]
   },
   "Prfa0LUmgxcp52IEObFom": {
     "title": "Normalization vs Denormalization",
-    "description": "",
-    "links": []
+    "description": "Database normalization is a process used to organize a database into tables and columns. The idea is that a table should be about a specific topic and that only those columns which support that topic are included. This limits the number of duplicate data contained within your database. This makes the database more flexible by eliminating issues stemming from database modifications.\n\nDenormalization is the opposite of normalization. It is the process of adding redundant data to a database to improve read performance. This is done by adding duplicate data into multiple tables to avoid expensive joins. This is done at the expense of increased storage and decreased write performance.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Normalization vs. Denormalization in databases",
+        "url": "https://codilime.com/blog/normalization-vs-denormalization-in-databases/",
+        "type": "article"
+      },
+      {
+        "title": "Normalization vs. Denormalization | Events and Event Streaming",
+        "url": "https://www.youtube.com/watch?v=sDU94hraq8g",
+        "type": "video"
+      }
+    ]
   },
   "hcbS18cpVxd55hVlUeLLT": {
     "title": "Fact vs Dimension Tables",
-    "description": "",
-    "links": []
+    "description": "Fact tables store quantitative data (facts) about business events, like sales or website visits. These tables are typically large and contain foreign keys referencing dimension tables. Dimension tables, on the other hand, store descriptive attributes about the facts, such as customer details, product information, or dates. They provide context for analyzing the facts in the fact table.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Fact Table vs Dimension Table: What's the Difference",
+        "url": "https://www.simplilearn.com/fact-table-vs-dimension-table-article",
+        "type": "article"
+      }
+    ]
   },
   "fFzCnLfZ_vSbhQjdAKLlJ": {
     "title": "Calculated Fields & Measures",
-    "description": "",
+    "description": "Calculated fields and measures are custom computations derived from existing data within a data model. They allow you to create new insights and metrics by applying formulas, functions, and logic to raw data. These calculations can involve aggregations, arithmetic operations, conditional statements, and more, enabling you to analyze data in ways not directly available from the original dataset. Modern BI tools usually come with capabilities to create custom calculated fields and measures.",
     "links": []
   },
   "Dk31XtS7wWRzO31sdsEDo": {
     "title": "Data Modeling for BI",
-    "description": "",
-    "links": []
+    "description": "Data modeling involves structuring and organizing data in a way that's optimized for reporting, analysis, and decision-making. It focuses on creating a simplified and efficient representation of data, often using techniques like star or snowflake schemas, to facilitate quick querying and insightful visualizations. The goal is to transform raw data into a format that's easily understood and readily accessible for BI tools and users.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Data Modeling? | IBM",
+        "url": "https://www.ibm.com/think/topics/data-modeling",
+        "type": "article"
+      },
+      {
+        "title": "Data Modeling Explained: Techniques, Examples, and Best Practices",
+        "url": "https://www.datacamp.com/blog/data-modeling",
+        "type": "article"
+      }
+    ]
   },
   "lAK9QVs97hL3ysjz2blp8": {
     "title": "ETL Tools",
-    "description": "",
+    "description": "ETL (Extract, Transform, Load) tools are software applications used to move data from various source systems into a data warehouse or other target system. These tools extract data from different sources, transform it into a consistent and usable format, and then load it into the destination system for analysis and reporting. This process ensures data quality and consistency, making it easier for business intelligence analysts to derive meaningful insights.",
     "links": []
   },
   "Du4GD-6pxbWYl4uSJRnOE": {
     "title": "ETL basics",
-    "description": "",
-    "links": []
+    "description": "ETL, which stands for Extract, Transform, and Load, is a process used to move data from various source systems into a data warehouse or other data repository. It involves extracting data from different sources, transforming it into a consistent and usable format, and then loading it into the target system for analysis and reporting. This process ensures data quality and consistency, making it easier to derive meaningful insights.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is ETL?",
+        "url": "https://www.snowflake.com/guides/what-etl",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about ETL",
+        "url": "https://app.daily.dev/tags/etl?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "ETL Explained",
+        "url": "https://www.youtube.com/watch?v=OW5OgsLpDCQ",
+        "type": "video"
+      }
+    ]
   },
   "3xDVJwdl3uu5EcjlZ1ytA": {
     "title": "End-to-end Analytics Project",
-    "description": "",
-    "links": []
+    "description": "An end-to-end analytics project encompasses the entire process of solving a business problem using data. This involves defining the problem, gathering and cleaning data, performing exploratory data analysis, building and deploying a model or visualization, and communicating the results and recommendations to stakeholders. It demonstrates a comprehensive understanding of the analytics lifecycle.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "20 Data Analytics Projects for All Levels",
+        "url": "https://www.datacamp.com/blog/data-analytics-projects-all-levels",
+        "type": "article"
+      },
+      {
+        "title": "End to End Data Analytics Project (Python + SQL)",
+        "url": "https://www.youtube.com/watch?v=uL0-6kfiH3g",
+        "type": "video"
+      }
+    ]
   },
   "yvSf7sGEd7QiaVoetalHc": {
     "title": "Data Pipeline Design",
-    "description": "",
-    "links": []
+    "description": "Data pipeline design involves creating a structured flow for data, from its initial sources to its final destination for analysis and reporting. This process includes extracting data from various sources, transforming it into a usable format, and loading it into a data warehouse or other storage system. A well-designed data pipeline ensures data quality, reliability, and efficiency, enabling timely and accurate insights.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Engineering Project: Quickly Build a Complex Data Pipeline",
+        "url": "https://www.youtube.com/watch?v=IQxhutCbN7A",
+        "type": "video"
+      }
+    ]
   },
   "qvPTiDbsY5ol_K-BNLmzk": {
     "title": "Dashboard Design",
-    "description": "",
-    "links": []
+    "description": "Dashboard design involves creating visual interfaces that present key performance indicators (KPIs) and other important data in an easily understandable format. This process includes selecting appropriate charts and graphs, arranging them logically, and ensuring the overall design is clear, concise, and visually appealing to help users quickly gain insights and make informed decisions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "ES  Saltar navegación power bi dashboard design project     Crear   Imagen del avatar POWER BI Tutorial From BEGINNER to Pro Level",
+        "url": "https://www.youtube.com/watch?v=0BKlUySopU4",
+        "type": "video"
+      }
+    ]
   },
   "UIdwl_KLELI8xL2VxYJmX": {
     "title": "Building Your Portfolio",
-    "description": "",
-    "links": []
+    "description": "A portfolio showcases your BI skills and experience to potential employers. It's a collection of projects, visualizations, and analyses that demonstrate your ability to solve business problems using data. A strong portfolio highlights your technical proficiency, analytical thinking, and communication skills, giving tangible evidence of your capabilities beyond a resume.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to Build a Data Analyst Portfolio: Tips for Success",
+        "url": "https://www.coursera.org/articles/how-to-build-a-data-analyst-portfolio",
+        "type": "article"
+      }
+    ]
   },
   "tUxwKTml2Go8zR9tR3cjn": {
     "title": "Professional Development",
-    "description": "",
+    "description": "Professional development encompasses activities that enhance an individual's skills, knowledge, and expertise within their field. It involves continuous learning and growth through various avenues such as training courses, certifications, conferences, mentorship, and self-directed study. The goal is to stay current with industry trends, improve performance, and advance one's career.",
     "links": []
   },
   "X8U-NQD0rYqFr_xgDWL2s": {
     "title": "BI Communities",
-    "description": "",
-    "links": []
+    "description": "BI communities are groups of people who share an interest in business intelligence. These communities provide a space for BI professionals to connect, share knowledge, and learn from each other. They often host events, online forums, and other resources to help members grow their skills and advance their careers. Some of the most popular BI communities include the Data Visualization Society, the Tableau Community, and the Power BI Forums.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Tableau Community",
+        "url": "https://community.tableau.com/s/",
+        "type": "article"
+      },
+      {
+        "title": "Power Bi Forums",
+        "url": "https://community.fabric.microsoft.com/t5/Power-BI-forums/ct-p/powerbi",
+        "type": "article"
+      },
+      {
+        "title": "Data Visualization Society",
+        "url": "https://www.datavisualizationsociety.org/",
+        "type": "article"
+      }
+    ]
   },
   "YovS5Dbcr6g_8PMr8jp5t": {
     "title": "Open-Source Projects",
-    "description": "",
-    "links": []
+    "description": "Open-source projects are collaborative software development initiatives where the source code is freely available for anyone to use, modify, and distribute. This allows for community-driven innovation and improvement. Two popular open-source BI projects are Metabase, a user-friendly data exploration and visualization tool, and Apache Superset, a modern, enterprise-ready BI web application.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Metabase",
+        "url": "https://github.com/metabase/metabase",
+        "type": "opensource"
+      },
+      {
+        "title": "Superset",
+        "url": "https://github.com/apache/superset",
+        "type": "opensource"
+      }
+    ]
   },
   "aTGsJj7Ntv5BWIzjaqvu_": {
     "title": "BI Competitions",
-    "description": "",
-    "links": []
+    "description": "BI competitions are events where individuals or teams use data analysis and visualization skills to solve business problems. Participants analyze datasets, build dashboards, and present insights to judges. These competitions offer a chance to showcase skills, learn new techniques, and gain recognition in the field. Popular examples include the Microsoft Fabric Community Conference Hackathon, Kaggle competitions focused on business intelligence, and the Data Visualization Society's challenges.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Kaggle Competitions",
+        "url": "https://www.kaggle.com/competitions",
+        "type": "article"
+      },
+      {
+        "title": "Microsoft Fabric & AI Learning Hackathon",
+        "url": "https://developer.microsoft.com/en-us/reactor/series/s-1393/",
+        "type": "article"
+      }
+    ]
   },
   "UDF8wyYT8127wfFHcq37P": {
     "title": "Conferences & Webinars",
-    "description": "",
+    "description": "BI conferences and webinars are events where professionals in the business intelligence field gather to learn about the latest trends, technologies, and best practices. These events offer opportunities to network with peers, hear from industry experts, and discover new tools and techniques for data analysis and visualization.\n\nHere are 4 popular BI conferences:\n\n*   **Gartner Data & Analytics Summit:** A leading conference covering a wide range of data and analytics topics.\n*   **TDWI Conferences:** Focused on data warehousing, business intelligence, and analytics.\n*   **Data Council:** A community-powered conference for data scientists, engineers, and analysts.\n*   **Big Data LDN:** A UK-based event showcasing big data and analytics solutions.",
     "links": []
   },
   "Q98GaitxocEha4zZ9d254": {
     "title": "Networking",
-    "description": "",
+    "description": "Networking involves building and maintaining relationships with other professionals. It's about connecting with people in your field, sharing information, and offering support. This can involve attending industry events, joining online communities, or simply reaching out to individuals whose work you admire.",
     "links": []
   },
   "m9EwcekZ_l0XHiKeQ8emr": {
     "title": "Resume optimization",
-    "description": "",
-    "links": []
+    "description": "Resume optimization is the process of refining your resume to make it more appealing to potential employers. This involves tailoring your resume to match specific job descriptions, using relevant keywords, highlighting your accomplishments with quantifiable results, and ensuring a clear and concise format. You can optimize your resume by carefully reviewing job postings, identifying key skills and experiences, and then rewriting your resume to emphasize those areas. Also, new AI-powered tools are emerging to help you optimize your resume.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Top 10 AI Tools for Resumes and Job Applications",
+        "url": "https://www.quantumanalyticsco.org/blog/top-10-ai-tools-for-resumes-and-job-applications",
+        "type": "article"
+      }
+    ]
   },
   "4XM5ikPiHVehEtT4AB-Ea": {
     "title": "Interview preparation",
-    "description": "",
-    "links": []
+    "description": "Interview preparation involves actively preparing for job interviews by practicing common questions, researching the company and role, and refining your communication skills. This process helps you present yourself effectively, demonstrate your qualifications, and increase your confidence during the interview, ultimately improving your chances of landing the job.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "BI Analyst Interview Questions and Answers (2025)",
+        "url": "https://365datascience.com/career-advice/job-interview-tips/bi-analyst-interview-questions/",
+        "type": "article"
+      },
+      {
+        "title": "2 Hour Data Analyst Interview Masterclass",
+        "url": "https://www.youtube.com/watch?v=F5v2dRYU5IA",
+        "type": "video"
+      }
+    ]
   },
   "qsCWo1CmR4mvy7E7qlPv5": {
     "title": "Portfolio presentation",
-    "description": "",
+    "description": "A portfolio presentation is a structured way to showcase your skills and experience to potential employers. It involves selecting relevant projects, highlighting your contributions and the impact of your work, and presenting them in a clear and compelling manner. The goal is to demonstrate your abilities and how you can add value to their organization.",
     "links": []
   },
   "k3F9Tdqo3XYgMLOKGjpxA": {
     "title": "Salary negotiation strategies",
-    "description": "",
-    "links": []
+    "description": "Salary negotiation strategies involve preparing for and engaging in discussions with potential employers to secure the best possible compensation package. This includes researching industry benchmarks, understanding your worth, practicing your negotiation skills, and knowing when to compromise or walk away. The goal is to confidently advocate for your value and achieve a salary that reflects your skills and experience.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "15 Rules for Negotiating a Job Offer",
+        "url": "https://hbr.org/2014/04/15-rules-for-negotiating-a-job-offer",
+        "type": "article"
+      }
+    ]
   },
   "TojDB4o0i2rs7Qcb10k1r": {
     "title": "Job Preparation",
-    "description": "",
+    "description": "Job preparation involves the steps you take to get ready for the job application and interview process. This includes activities like researching potential employers, tailoring your resume and cover letter to specific job descriptions, practicing common interview questions, and developing your professional network. The goal is to present yourself as a qualified and compelling candidate, increasing your chances of landing a job offer.",
     "links": []
   },
   "jJukG4XxfFcID_VlQKqe-": {
     "title": "Tactical BI",
-    "description": "",
+    "description": "Tactical planning is responsible for establishing goals and conditions for the actions to be carried out outlined in strategic planning. Moreover, assessing and monitoring risks to address them effectively is essential.\n\nWhile strategic planning covers the entire organization, tactical planning operates on a more limited scale. It is implemented at the departmental level, sometimes focusing on specific end-to-end processes, and usually covers a period of 1 to 3 years.",
     "links": []
   },
   "3BxbkrBp8veZj38zdwN8s": {
     "title": "Strategic BI",
-    "description": "",
+    "description": "Strategic planning defines an organization's long-term vision and high-level goals, while operational planning breaks these goals into short-term, detailed tasks and daily actions to achieve them. Strategic actions, designed for the long term, generally cover a period of 5 to 10 years.",
     "links": []
   },
   "GN6SnI7RXIeW8JeD-qORW": {
     "title": "Operational BI",
-    "description": "",
+    "description": "Operational planning is the starting point for implementing the actions and goals outlined by tactical planning; aiming to achieve the objectives established in strategic decisions. Operational planning focuses on short-term activities, typically with a 3-6 month horizon. All sectors of the organization are involved in this process, dedicating themselves to monitoring daily activities to ensure execution.",
     "links": []
   },
   "cxTriSZvrmXP4axKynIZW": {
     "title": "Finance",
-    "description": "",
+    "description": "Finance encompasses the activities related to managing money and investments. It involves planning, organizing, controlling, and monitoring financial resources to achieve organizational goals. Key areas within finance include budgeting, financial planning, investment management, and risk management, all aimed at ensuring the financial health and stability of a business.",
     "links": []
   },
   "s-wUPMaagyRupT2RdfHks": {
     "title": "Marketing",
-    "description": "",
+    "description": "Marketing encompasses the strategies and tactics organizations use to promote and sell their products or services. It involves understanding customer needs, creating compelling messaging, choosing the right channels to reach target audiences, and measuring the effectiveness of campaigns to optimize for better results. Ultimately, marketing aims to drive revenue and build brand awareness.",
     "links": []
   },
   "dJZqe47kzRqYIG-4AZTlz": {
     "title": "Operations",
-    "description": "",
+    "description": "Operations encompass all the activities involved in producing and delivering a company's products or services. This includes managing resources, processes, and people to ensure efficiency, quality, and customer satisfaction. It focuses on the day-to-day activities that keep the business running smoothly and meeting its objectives.",
     "links": []
   },
   "KeGCHoJRHp-mBX-P5to4Y": {
     "title": "HR",
-    "description": "",
+    "description": "Human Resources (HR) is the area within a company responsible for managing employees. This includes recruiting, hiring, training, and developing employees, as well as handling compensation, benefits, and employee relations. HR ensures legal compliance with labor laws and company policies, and aims to create a positive and productive work environment.",
     "links": []
   },
   "F-fC2JWOuEeDbOHH1O6EB": {
     "title": "Central Tendency",
-    "description": "",
-    "links": []
+    "description": "Measures of central tendency focus on the average or middle values of datasets. They aim to provide a summary of the entire dataset with one representative number.The most common measures of central tendency are the arithmetic mean, the median, and the mode. A middle tendency can be calculated for either a finite set of values or for a theoretical distribution, such as the normal distribution.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Central tendency",
+        "url": "https://en.wikipedia.org/wiki/Central_tendency",
+        "type": "article"
+      }
+    ]
   },
   "1D98k1HNCaaiaI20euVwA": {
     "title": "Dispersion",
-    "description": "",
-    "links": []
+    "description": "Dispersion measures offers a crucial way to understand the variability or spread in a set of data. Distinct measures of dispersion such as range, variance, standard deviation, and interquartile range gives BI analysts insight into how spread out data points are, and how reliable any patterns detected may be. This understanding of dispersion helps data analysts in identifying outliers, drawing meaningful conclusions, and making informed predictions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is dispersion?",
+        "url": "https://www.investopedia.com/terms/d/dispersion.asp",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Statistics",
+        "url": "https://www.udacity.com/course/intro-to-statistics--st101",
+        "type": "article"
+      },
+      {
+        "title": "Statistics 101 - Measures of Dispersion",
+        "url": "https://www.youtube.com/watch?v=goXdWMZxlqM",
+        "type": "video"
+      }
+    ]
   },
   "jll2iRbjdx7iiNwY13KYD": {
     "title": "Range",
-    "description": "",
-    "links": []
+    "description": "The range is a simple measure of dispersion that indicates the spread of data in a dataset. It's calculated by subtracting the smallest value from the largest value. The range provides a quick and easy way to understand the variability within a dataset, showing the total distance covered by the data points.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How to Find the Range of a Data Set",
+        "url": "https://www.scribbr.co.uk/stats/range-statistics/",
+        "type": "article"
+      }
+    ]
   },
   "ZmSwDn0sP7HvLKYVzRwPJ": {
     "title": "Variance",
-    "description": "",
-    "links": []
+    "description": "The variance measures the spread between numbers in a dataset. Simply put, it measures how far each number in the set is from the mean (average). It helps us understand how spread out or consistent the values are in a dataset.\n\nVariance is calculated by averaging the squared differences from the mean. First, find the mean of your data set. Then, subtract the mean from each data point, square those differences, sum them up, and finally, divide by either (n-1) for a sample or n for a population, where n is the number of data points.\n\nVariance can't be interpreted in the original units of measurement due to its squared nature, which is why it is often used in conjunction with its square root, the standard deviation.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Variance?",
+        "url": "https://www.investopedia.com/terms/v/variance.asp",
+        "type": "article"
+      },
+      {
+        "title": "How to Calculate Variance",
+        "url": "https://www.scribbr.co.uk/stats/variance-meaning",
+        "type": "article"
+      }
+    ]
   },
   "vqtzg9bydAqHMwZhPHo1a": {
     "title": "STD",
-    "description": "",
-    "links": []
+    "description": "The sample standard deviation is a statistical measure used to quantify the variation within a dataset. Specifically, it tells us how much individual data points in a sample differ from the sample mean. It's calculated as the square root of the variance. A low standard deviation indicates that the data points are generally close to the mean, while a high standard deviation implies that the data points are spread out over a wider range\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Standard Deviation Formula and Uses vs. Variance",
+        "url": "https://www.investopedia.com/terms/s/standarddeviation.asp",
+        "type": "article"
+      },
+      {
+        "title": "Standard Deviation",
+        "url": "https://www.youtube.com/watch?v=esskJJF8pCc",
+        "type": "article"
+      }
+    ]
   },
   "LEHK7ohKIzKhlGebd0k_j": {
     "title": "IQR",
-    "description": "",
-    "links": []
+    "description": "The Interquartile Range (IQR) is a measure of statistical dispersion, representing the spread of the middle 50% of a dataset. It's calculated as the difference between the third quartile (Q3) and the first quartile (Q1). The IQR is resistant to outliers, making it a robust measure of variability when extreme values are present.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Interquartile range",
+        "url": "https://en.wikipedia.org/wiki/Interquartile_range",
+        "type": "article"
+      },
+      {
+        "title": "How to Find Interquartile Range (IQR)",
+        "url": "https://www.scribbr.com/statistics/interquartile-range/",
+        "type": "article"
+      }
+    ]
   },
   "JSqwWsfojjZTe8ynmA7fc": {
     "title": "Distribution",
-    "description": "",
-    "links": []
+    "description": "Two additional statistics to better understand the distribution of your datasets are skewness and kurtosis, which measures distribution asymetry, whereas kurtosis measurs the \"tailedness\" and peakedness of a distribution.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Understanding Skewness And Kurtosis And How to Plot Them",
+        "url": "https://www.datacamp.com/tutorial/understanding-skewness-and-kurtosis",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Statistics",
+        "url": "https://www.udacity.com/course/intro-to-statistics--st101",
+        "type": "article"
+      }
+    ]
   },
   "X0DBG0mEWk25PEbLHhs7v": {
     "title": "Skewness",
-    "description": "",
-    "links": []
+    "description": "Skewness is a measure of the asymmetry of a distribution. A distribution is asymmetrical when its left and right side are not mirror images. A distribution can have right (or positive), left (or negative), or zero skewness, where the tails are roughly equal. A right-skewed distribution is longer on the right side of its peak, and a left-skewed distribution is longer on the left side of its peak. This measure helps understand data structure, the presence of outliers, and its suitability for statistical analyses.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Skewness",
+        "url": "https://en.wikipedia.org/wiki/Skewness",
+        "type": "article"
+      },
+      {
+        "title": "Skewness | Definition, Examples & Formula",
+        "url": "https://www.scribbr.com/statistics/skewness/",
+        "type": "article"
+      }
+    ]
   },
   "jvU1iu2M_y1IH62oUpAeU": {
     "title": "Kurtosis",
-    "description": "",
-    "links": []
+    "description": "Kurtosis is a statistical measure of a probability distribution's \"tailedness,\" indicating the extent to which extreme values (outliers) are present compared to a normal distribution. It assesses the presence of both peakedness and heavy/light tails, categorizing distributions as leptokurtic (heavy, long tails and a sharp peak), platykurtic (light, short tails and a flat top), or mesokurtic (similar to a normal distribution).\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Kurtosis",
+        "url": "https://en.wikipedia.org/wiki/Kurtosis",
+        "type": "article"
+      },
+      {
+        "title": "What Is Kurtosis? | Definition, Examples & Formula",
+        "url": "https://www.scribbr.com/statistics/kurtosis/",
+        "type": "article"
+      }
+    ]
   },
   "7VDxA9bQ1P1fym4eQVKkN": {
     "title": "Population & Sample",
-    "description": "",
-    "links": []
+    "description": "In statistics, a population refers to the entire group you want to draw conclusions about, while a sample is a smaller, manageable subset of that population that you actually collect data from. Because it's often impractical or impossible to study an entire population, we use samples to make inferences or generalizations about the larger group. The goal is to ensure the sample is representative of the population so that the conclusions drawn from the sample data are accurate and reliable for the entire population.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Population vs. Sample | Definitions, Differences & Examples",
+        "url": "https://www.scribbr.com/methodology/population-vs-sample/",
+        "type": "article"
+      },
+      {
+        "title": "Difference Between Population And Sample",
+        "url": "https://www.simplilearn.com/tutorials/machine-learning-tutorial/population-vs-sample",
+        "type": "article"
+      }
+    ]
   },
   "01k_mfsp0eW6TX9yp8PDE": {
     "title": "Statistical tests",
-    "description": "",
-    "links": []
+    "description": "Statistical tests are methods used to determine if there's enough evidence to reject a null hypothesis. They help us decide whether observed differences or relationships in data are likely due to a real effect or simply due to random chance. These tests involve calculating a test statistic and comparing it to a critical value or calculating a p-value to assess the strength of the evidence against the null hypothesis. The choice of a specific statistical test, like a t-test or chi-square test, depends on the research design, data type (e.g., normal distribution), and the variables being analyzed.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Choosing the Right Statistical Test | Types & Examples",
+        "url": "https://www.scribbr.com/statistics/statistical-tests/",
+        "type": "article"
+      },
+      {
+        "title": "List of statistical tests",
+        "url": "https://en.wikipedia.org/wiki/List_of_statistical_tests",
+        "type": "article"
+      }
+    ]
   },
   "rkEdx_mZBoDjMhiluJl7O": {
     "title": "p-value",
-    "description": "",
-    "links": []
+    "description": "The p-value is a number that tells you how likely it is that your data could have occurred under the null hypothesis. It represents the probability of observing a test statistic as extreme as, or more extreme than, the one computed from your sample data, assuming the null hypothesis is true. A small p-value (typically ≤ 0.05) suggests strong evidence against the null hypothesis, so you reject the null hypothesis. A large p-value (> 0.05) suggests weak evidence against the null hypothesis, so you fail to reject the null hypothesis.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "P-value",
+        "url": "https://en.wikipedia.org/wiki/P-value",
+        "type": "article"
+      },
+      {
+        "title": "P-Value: What It Is, How to Calculate It, and Examples",
+        "url": "https://www.investopedia.com/terms/p/p-value.asp",
+        "type": "article"
+      },
+      {
+        "title": "What Is A P-Value? - Clearly Explained",
+        "url": "https://www.youtube.com/watch?v=ukcFrzt6cHk",
+        "type": "video"
+      }
+    ]
   },
   "SosOXxErMn0t2KCoHoxvS": {
     "title": "Types of Errors",
-    "description": "",
-    "links": []
+    "description": "In hypothesis testing, a Type I error (false positive) occurs when you incorrectly reject a true null hypothesis, while a Type II error (false negative) happens when you fail to reject a false null hypothesis. These are the two types of mistakes that can be made when deciding whether to accept or reject the null hypothesis, with their probabilities denoted by alpha (α) and beta (β), respectively.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Type I & Type II Errors | Differences, Examples, Visualizations",
+        "url": "https://www.scribbr.com/statistics/type-i-and-type-ii-errors/",
+        "type": "article"
+      }
+    ]
   },
   "6xfQic8dMwUsMQa7VtS8_": {
     "title": "Hypothesis Testing",
-    "description": "",
-    "links": []
+    "description": "Hypothesis testing is a statistical method used to determine whether there is enough evidence in a sample of data to infer that a certain condition is true for an entire population. It involves formulating a null hypothesis (a statement of no effect or no difference) and an alternative hypothesis (a statement that contradicts the null hypothesis), then using sample data to assess the likelihood of observing the data if the null hypothesis were true. Based on this likelihood, a decision is made to either reject the null hypothesis in favor of the alternative or fail to reject the null hypothesis.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Hypothesis Testing",
+        "url": "https://latrobe.libguides.com/maths/hypothesis-testing",
+        "type": "article"
+      },
+      {
+        "title": "Hypothesis Testing - 4 Steps",
+        "url": "https://www.investopedia.com/terms/h/hypothesistesting.asp",
+        "type": "article"
+      },
+      {
+        "title": "Intro to Inferential Statistics",
+        "url": "https://www.udacity.com/course/intro-to-inferential-statistics--ud201",
+        "type": "article"
+      }
+    ]
   },
   "m9ejACzRBJza0v-fpdfkn": {
     "title": "Regression Analysis",
-    "description": "",
-    "links": []
+    "description": "Regression analysis is a form of predictive modelling technique which investigates the relationship between dependent and independent variables. It is used for forecast, time series modelling and finding the causal effect relationship between variables. In essence, Regression techniques are used by BI analysts to predict a continuous outcome variable (dependent variable) based on one or more predictor variables (independent variables). The main goal is to understand how the typical value of the dependent variable changes when any one of the independent variables is varied, while the other independent variables are held fixed.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Intro to Inferential Statistics",
+        "url": "https://www.udacity.com/course/intro-to-inferential-statistics--ud201",
+        "type": "course"
+      },
+      {
+        "title": "Regression: Definition, Analysis, Calculation, and Example",
+        "url": "https://www.investopedia.com/terms/r/regression.asp",
+        "type": "article"
+      },
+      {
+        "title": "A Refresher on Regression Analysis - Harvard",
+        "url": "https://hbr.org/2015/11/a-refresher-on-regression-analysis",
+        "type": "article"
+      }
+    ]
   },
   "4-fpZx8p5iSNI3n4Qtacl": {
     "title": "Linear Regression",
-    "description": "",
-    "links": []
+    "description": "Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. It aims to find the best-fitting line (in simple linear regression) or plane (in multiple linear regression) that minimizes the difference between the predicted values and the actual values of the dependent variable. This allows for predicting future values or understanding the influence of the independent variables on the dependent variable.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Intro to Inferential Statistics",
+        "url": "https://www.udacity.com/course/intro-to-inferential-statistics--ud201",
+        "type": "course"
+      },
+      {
+        "title": "What Is Linear Regression?",
+        "url": "https://www.ibm.com/think/topics/linear-regression",
+        "type": "article"
+      },
+      {
+        "title": "Linear regression",
+        "url": "https://en.wikipedia.org/wiki/Linear_regression",
+        "type": "article"
+      }
+    ]
   },
   "_QyIZ2_vH3e3yic5NTuak": {
     "title": "Beyond Linear Regression",
-    "description": "",
-    "links": []
+    "description": "While linear regressions are widely popular in predictive modelling, they don't always work. Fortunately, there's a wide array of statistical methods that can be to model relationships between variables when the assumption of a linear relationship is not appropriate. These techniques, such as polynomial, exponential, logarithmic, and logistic regression allow for capturing more complex and non-linear patterns in data, leading to more accurate predictions and insights. They are essential when the relationship between the independent and dependent variables curves or changes direction.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Intro to Inferential Statistics",
+        "url": "https://www.udacity.com/course/intro-to-inferential-statistics--ud201",
+        "type": "course"
+      },
+      {
+        "title": "Nonlinear regression",
+        "url": "https://en.wikipedia.org/wiki/Nonlinear_regression",
+        "type": "article"
+      },
+      {
+        "title": "Nonlinear regression - the basics",
+        "url": "https://www.youtube.com/watch?v=4hYGiG4qVf4",
+        "type": "video"
+      }
+    ]
   },
   "nhl9FM79femgqENNR0HbE": {
     "title": "PostgreSQL",
-    "description": "",
-    "links": []
+    "description": "PostgreSQL is an advanced, open-source relational database management system (RDBMS) known for its robustness, extensibility, and standards compliance. It supports a wide range of data types and advanced features, including complex queries, foreign keys, and full-text search. PostgreSQL is highly extensible, allowing users to define custom data types, operators, and functions. It supports ACID (Atomicity, Consistency, Isolation, Durability) properties for reliable transaction processing and offers strong support for concurrency and data integrity. Its capabilities make it suitable for various applications, from simple web apps to large-scale data warehousing and analytics solutions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "PostgreSQL: Become an SQL developer",
+        "url": "https://www.simplilearn.com/free-postgresql-course-skillup",
+        "type": "course"
+      },
+      {
+        "title": "Visit Dedicated PostgreSQL DBA Roadmap",
+        "url": "https://roadmap.sh/postgresql-dba",
+        "type": "article"
+      },
+      {
+        "title": "Official Website",
+        "url": "https://www.postgresql.org/",
+        "type": "article"
+      },
+      {
+        "title": "Learn PostgreSQL - Full Tutorial for Beginners",
+        "url": "ttps://www.postgresqltutorial.com/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about PostgreSQL",
+        "url": "https://app.daily.dev/tags/postgresql?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "ostgres tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=SpfIwlAYaKk",
+        "type": "video"
+      }
+    ]
   },
   "uoQS4g-c6QndacUeiaWrq": {
     "title": "Oracle",
-    "description": "",
-    "links": []
+    "description": "Oracle Database is a highly robust, enterprise-grade relational database management system (RDBMS) developed by Oracle Corporation. Known for its scalability, reliability, and comprehensive features, Oracle Database supports complex data management tasks and mission-critical applications. It provides advanced functionalities like SQL querying, transaction management, high availability through clustering, and data warehousing. Oracle's database solutions include support for various data models, such as relational, spatial, and graph, and offer tools for security, performance optimization, and data integration. It is widely used in industries requiring large-scale, secure, and high-performance data processing.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Oracle",
+        "url": "https://www.oracle.com/database/",
+        "type": "article"
+      },
+      {
+        "title": "Oracle Docs",
+        "url": "https://docs.oracle.com/en/database/index.html",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Oracle",
+        "url": "https://app.daily.dev/tags/oracle?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Oracle SQL Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=ObbNGhcxXJA",
+        "type": "video"
+      }
+    ]
   },
   "eqnAEp2VT7FD2VDy5WVDP": {
     "title": "MySQL",
-    "description": "",
-    "links": []
+    "description": "MySQL is an open-source relational database management system (RDBMS) known for its speed, reliability, and ease of use. It uses SQL (Structured Query Language) for database interactions and supports a range of features for data management, including transactions, indexing, and stored procedures. MySQL is widely used for web applications, data warehousing, and various other applications due to its scalability and flexibility. It integrates well with many programming languages and platforms, and is often employed in conjunction with web servers and frameworks in popular software stacks like LAMP (Linux, Apache, MySQL, PHP/Python/Perl). MySQL is maintained by Oracle Corporation and has a large community and ecosystem supporting its development and use.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "MySQL",
+        "url": "https://www.mysql.com/",
+        "type": "article"
+      },
+      {
+        "title": "MySQL for Developers",
+        "url": "ttps://planetscale.com/courses/mysql-for-developers/introduction/course-introduction",
+        "type": "article"
+      },
+      {
+        "title": "MySQL Tutorial",
+        "url": "https://www.mysqltutorial.org/",
+        "type": "article"
+      },
+      {
+        "title": "MySQL Complete Course",
+        "url": "https://www.youtube.com/watch?v=5OdVJbNCSso",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about MySQL",
+        "url": "https://app.daily.dev/tags/mysql?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "MySQL Full Course",
+        "url": "https://www.youtube.com/watch?v=5OdVJbNCSso",
+        "type": "video"
+      }
+    ]
   },
   "lrksz861rE5m2XzOQPwgh": {
     "title": "SQLite",
-    "description": "",
-    "links": []
+    "description": "SQLite is a lightweight, serverless, self-contained SQL database engine that is designed for simplicity and efficiency. It is widely used in embedded systems and applications where a full-featured database server is not required, such as mobile apps, desktop applications, and small to medium-sized websites. SQLite stores data in a single file, which makes it easy to deploy and manage. It supports standard SQL queries and provides ACID (Atomicity, Consistency, Isolation, Durability) compliance to ensure data integrity. SQLite’s small footprint, minimal configuration, and ease of use make it a popular choice for applications needing a compact, high-performance database solution.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SQLite",
+        "url": "https://www.sqlite.org/index.html",
+        "type": "article"
+      },
+      {
+        "title": "SQLite Tutorial",
+        "url": "https://www.sqlitetutorial.net/",
+        "type": "article"
+      },
+      {
+        "title": "SQLite Introduction",
+        "url": "https://www.youtube.com/watch?v=8Xyn8R9eKB8",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about SQLite",
+        "url": "https://app.daily.dev/tags/sqlite?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "SQLite Introduction - Beginners Guide to SQL and Databases",
+        "url": "https://www.youtube.com/watch?v=8Xyn8R9eKB8",
+        "type": "video"
+      }
+    ]
   },
   "y9Fnjnbiqt7WkrhjPITpW": {
     "title": "Performance",
-    "description": "",
-    "links": []
+    "description": "SQL performance tuning involves optimizing SQL queries and database structures to improve the speed and efficiency of data retrieval and manipulation. This includes techniques like indexing, query optimization, and database configuration adjustments to reduce query execution time and minimize resource consumption. The goal is to ensure that SQL queries run quickly and efficiently, providing timely and accurate data for analysis and reporting.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SQL Query Optimization: 15 Techniques for Better Performance",
+        "url": "https://www.datacamp.com/blog/sql-query-optimization",
+        "type": "article"
+      },
+      {
+        "title": "Performance Tuning SQL Queries",
+        "url": "https://mode.com/sql-tutorial/sql-performance-tuning",
+        "type": "article"
+      },
+      {
+        "title": "SQL Roadmap",
+        "url": "https://roadmap.sh/sql",
+        "type": "article"
+      }
+    ]
   },
   "TuBJ2yUz1c5KMRGVHdvU5": {
     "title": "Basic Queries",
-    "description": "",
-    "links": []
+    "description": "Learning how to make basic SQL queries in esencial for BI analysts. Queries are the foundation for retrieving data from a SQL database. They involve using the `SELECT` statement to specify which columns to retrieve, the `FROM` clause to indicate the table to retrieve data from, and optionally, the `WHERE` clause to filter the data based on specific conditions. These queries allow you to extract specific information from a database, forming the basis for more complex data analysis and reporting.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SQL Basics Cheat Sheet",
+        "url": "https://www.datacamp.com/cheat-sheet/sql-basics-cheat-sheet?utm_cid=19589720821&utm_aid=152984012854&utm_campaign=230119_1-ps-other~dsa~tofu_2-b2c_3-emea_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na&utm_loc=20296-&utm_mtd=-c&utm_kw=&utm_source=google&utm_medium=paid_search&utm_content=ps-other~emea-en~dsa~tofu~cheat-sheet-sql&gad_source=1&gad_campaignid=19589720821&gbraid=0AAAAADQ9WsHi-NrpYc5jD1jwOcO6JW2ib&gclid=CjwKCAjwk7DFBhBAEiwAeYbJsaTs85KOpxx2r27-znQYfeTOvKItMJ2YK6xamy5KiqyFRewGTE-AzRoCLXwQAvD_BwE",
+        "type": "article"
+      },
+      {
+        "title": "Basic SQL Commands",
+        "url": "https://www.freecodecamp.org/news/basic-sql-commands/",
+        "type": "article"
+      },
+      {
+        "title": "SQL Roadmap",
+        "url": "https://roadmap.sh/sql",
+        "type": "article"
+      }
+    ]
   },
   "-gbb16Wl--Rjx5aoM0krL": {
     "title": "Advanced Queries",
-    "description": "",
-    "links": []
+    "description": "Advanced SQL queries go beyond basic data retrieval and manipulation. They involve using more complex techniques like subqueries, window functions, common table expressions (CTEs), and stored procedures to analyze data in greater depth. These techniques allow you to perform sophisticated calculations, compare rows, and organize data for more meaningful insights.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "25 Advanced SQL Query Examples",
+        "url": "https://learnsql.com/blog/25-advanced-sql-query-examples/",
+        "type": "article"
+      },
+      {
+        "title": "SQL Roadmap",
+        "url": "https://roadmap.sh/sql",
+        "type": "article"
+      }
+    ]
   },
   "1toMuRZResgse1AtwEck6": {
     "title": "Window Functions",
-    "description": "",
-    "links": []
+    "description": "Window functions in SQL perform calculations across a set of table rows that are related to the current row. Unlike aggregate functions that group rows into a single output row, window functions retain the individual rows while adding calculated values based on the window frame defined for each row. This allows you to compute things like running totals, moving averages, or rank values within a partition of your data without collapsing the original dataset.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "SQL Window Functions",
+        "url": "https://mode.com/sql-tutorial/sql-window-functions",
+        "type": "article"
+      },
+      {
+        "title": "SQL Window Functions Cheat Sheet",
+        "url": "https://www.datacamp.com/cheat-sheet/sql-window-functions-cheat-sheet",
+        "type": "article"
+      },
+      {
+        "title": "SQL Roadmap",
+        "url": "https://roadmap.sh/sql",
+        "type": "article"
+      }
+    ]
   },
   "Vo7LJ_W-DBvxvVrnz33BM": {
     "title": "Data Cleaning",
-    "description": "",
-    "links": []
+    "description": "Data cleaning, which is often referred as data cleansing or data scrubbing, is one of the most important and initial steps in the data analysis process. As a BI analyst, the bulk of your work often revolves around understanding, cleaning, and standardizing raw data before analysis. Data cleaning involves identifying, correcting or removing any errors or inconsistencies in datasets in order to improve their quality. The process is crucial because it directly determines the accuracy of the insights you generate - garbage in, garbage out. Even the most sophisticated models and visualizations would not be of much use if they're based on dirty data.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Cleaning",
+        "url": "https://www.tableau.com/learn/articles/what-is-data-cleaning",
+        "type": "article"
+      }
+    ]
   },
   "_iV_5O5Rq07P9qRGrraTM": {
     "title": "SQL",
-    "description": "",
-    "links": []
+    "description": "SQL is a powerful tool for exploring data because it lets you quickly look at large datasets. You can use SQL to filter data based on specific conditions, calculate summary statistics like averages and counts, and group data to see patterns. Its simple syntax makes it easy to write queries to understand the characteristics of your data, identify potential issues, and prepare it for further analysis.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "51:14 YouTube · Data with Baraa SQL Exploratory Data Analysis (EDA) Project",
+        "url": "https://www.youtube.com/watch?v=6cJ5Ji8zSDg",
+        "type": "video"
+      }
+    ]
   },
   "ZAhjB_ghHukD4RPAtNDxh": {
     "title": "dplyr",
-    "description": "",
-    "links": []
+    "description": "dplyr is an R package that makes data manipulation and exploration easier. It provides a consistent set of verbs, like `filter`, `select`, `mutate`, `summarize`, and `arrange`, that allow you to quickly perform common data analysis tasks. These functions are designed to be intuitive and work together seamlessly, letting you chain operations to efficiently clean, transform, and gain insights from your data. This streamlined approach helps you understand your data's structure, identify patterns, and prepare it for further analysis or visualization.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "dplyr",
+        "url": "https://dplyr.tidyverse.org/",
+        "type": "article"
+      },
+      {
+        "title": "Exploratory Data Analysis with dplyr",
+        "url": "https://www.gastonsanchez.com/intro2cwd/eda-dplyr.html",
+        "type": "article"
+      }
+    ]
   },
   "9BWyA0b4WrmQetSMph_mY": {
     "title": "Excel",
-    "description": "",
-    "links": []
+    "description": "Excel is a readily available and user-friendly tool that's great for getting a first look at your data. It allows you to quickly sort, filter, and calculate basic statistics like averages and sums. You can also create simple charts and graphs to visualize trends and patterns, helping you understand your data's main characteristics and identify potential areas for deeper investigation, all without needing specialized programming knowledge.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Exploratory Data Analysis in Excel",
+        "url": "https://www.scaler.com/topics/exploratory-data-analysis-projects/",
+        "type": "article"
+      },
+      {
+        "title": "Exploratory Data Analysis With Excel",
+        "url": "https://www.youtube.com/watch?v=1zEFJHbG0aE&list=PLTJTBoU5HOCRFQhfU1gg2ciNpS_evWKR7",
+        "type": "video"
+      }
+    ]
   },
   "25f76eB9-vy3Usta-Pbsi": {
     "title": "Pandas",
-    "description": "",
-    "links": []
+    "description": "Pandas is a powerful Python library that makes exploring and understanding data much easier. It provides data structures like DataFrames, which are like spreadsheets but much more versatile. With Pandas, you can quickly clean, transform, and analyze your data. It allows you to easily filter rows, select columns, calculate summary statistics (like mean and median), and handle missing values. This makes it a go-to tool for getting a feel for your data and uncovering initial insights before diving into more complex analysis.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Pandas Docs",
+        "url": "https://pandas.pydata.org/docs/index.html",
+        "type": "article"
+      },
+      {
+        "title": "Python pandas Tutorial: The Ultimate Guide for Beginners",
+        "url": "https://www.datacamp.com/tutorial/pandas",
+        "type": "article"
+      },
+      {
+        "title": "Exploratory Data Analysis in Pandas | Python Pandas Tutorials",
+        "url": "https://www.youtube.com/watch?v=Liv6eeb1VfE",
+        "type": "video"
+      }
+    ]
   },
   "GVgfPajmSqIgFZ6u2I1tK": {
     "title": "Chart Categories",
-    "description": "",
-    "links": []
+    "description": "Charts are visual representations of data, used to identify patterns, trends, and relationships. They generally fall into a few main categories: **comparison** charts (like bar charts and column charts) which show differences between values; **relationship** charts (such as scatter plots) that reveal correlations between variables; **composition** charts (like pie charts and stacked area charts) which display parts of a whole; and **distribution** charts (histograms and box plots) that illustrate the spread and frequency of data. Choosing the right chart type depends on the data you have and the story you want to tell.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The Python Graph Gallery",
+        "url": "https://python-graph-gallery.com/",
+        "type": "article"
+      },
+      {
+        "title": "The Data Visualisation Catalogue",
+        "url": "https://datavizcatalogue.com/",
+        "type": "article"
+      }
+    ]
   },
   "eKBORkRU6HCH-D4GWHyKR": {
     "title": "Visualization Best Practices",
-    "description": "",
-    "links": []
+    "description": "Visualization best practices are a set of guidelines and principles that help you create effective and informative data visualizations. These practices focus on clarity, accuracy, and aesthetics to ensure that your visualizations communicate insights clearly and avoid misleading interpretations. They cover aspects like choosing the right chart type, using color effectively, and designing layouts that are easy to understand.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Visualization Tips and Best Practices",
+        "url": "https://www.tableau.com/visualization/data-visualization-best-practices",
+        "type": "article"
+      },
+      {
+        "title": "Visual Best Practices",
+        "url": "https://help.tableau.com/current/blueprint/en-us/bp_visual_best_practices.htm",
+        "type": "article"
+      }
+    ]
   },
   "TCYG6vmFqq1zAPNQWoOH8": {
     "title": "Standardisation",
-    "description": "",
-    "links": []
+    "description": "Data standardisation is the process of transforming data into a consistent and uniform format. This involves converting data values to a common unit, format, or scale, ensuring that different data sources can be easily compared and analysed. This process helps to eliminate inconsistencies and ambiguities, leading to more accurate and reliable insights.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Data Standardization: How It's Done & Why It's Important",
+        "url": "https://www.simplilearn.com/what-is-data-standardization-article",
+        "type": "article"
+      }
+    ]
   },
   "LLK3_hudKDX5d-fd98vlx": {
     "title": "Excel",
-    "description": "",
-    "links": []
+    "description": "Excel is a spreadsheet program used for organizing, analyzing, and storing data in tables. It allows users to perform calculations, create charts and graphs, and automate tasks using formulas and macros. It is widely used for data entry, data cleaning, and basic data analysis.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Microsoft Excel",
+        "url": "https://www.microsoft.com/microsoft-365/",
+        "type": "article"
+      },
+      {
+        "title": "Excel Full Course Tutorial (4+ Hours)",
+        "url": "https://www.youtube.com/watch?v=rro5t8eHXaY",
+        "type": "video"
+      }
+    ]
   },
   "1T2PyytlmndHreWgueD55": {
     "title": "Financial Performance",
-    "description": "",
-    "links": []
+    "description": "Financial performance refers to how well a company uses its assets to generate revenue. It's measured through various financial metrics and ratios that provide insights into a company's profitability, efficiency, solvency, and liquidity. Analyzing financial performance helps stakeholders understand the overall health and sustainability of a business.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Financial Performance: Definition, How It Works, and Example",
+        "url": "https://www.investopedia.com/terms/f/financialperformance.asp#:~:text=A%20financial%20performance%20analysis%20examines,statements%20used%20in%20performance%20analysis.",
+        "type": "article"
+      }
+    ]
   },
   "Cydlrtg_FClBUkjezqGie": {
     "title": "Public Health",
-    "description": "",
+    "description": "Data analytics in public health uses information to understand and tackle health issues affecting large groups of people. During events like pandemics, analyzing data on disease spread, patient demographics, and resource availability helps identify hotspots, predict future outbreaks, and optimize the distribution of medical supplies. This allows public health officials to make informed decisions, implement targeted interventions, and ultimately improve health outcomes for the population.",
     "links": []
   },
   "On6kznZxLTCpBPskdZtgT": {
     "title": "Trends",
-    "description": "",
-    "links": []
+    "description": "Trends in time series analysis refer to the long-term movement or direction of data points in a dataset over a period of time. Identifying trends helps to understand the underlying patterns and predict future values. These trends can be upward (increasing), downward (decreasing), or stationary (relatively constant) and are often analyzed to make informed decisions and forecasts.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Complete Time Series Analysis and Forecasting with Python",
+        "url": "https://www.youtube.com/watch?v=eKiXtGzEjos",
+        "type": "article"
+      }
+    ]
   },
   "moWrEfuKE06QwbznsH3V-": {
     "title": "Seasonality",
-    "description": "",
-    "links": []
+    "description": "Seasonality refers to predictable, recurring patterns within a time series dataset that occur over a fixed period. These patterns repeat regularly, such as daily, weekly, monthly, or yearly. Identifying and understanding seasonality is crucial for accurate forecasting and analysis, as it allows you to account for these repeating fluctuations and make more informed predictions about future trends.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Complete Time Series Analysis and Forecasting with Python",
+        "url": "https://www.youtube.com/watch?v=eKiXtGzEjos",
+        "type": "video"
+      }
+    ]
   },
   "eZN_ty8VDX9mi5KtCWTFL": {
     "title": "Supervised Learning",
-    "description": "",
-    "links": []
+    "description": "Supervised machine learning forms an integral part of the toolset for a Data Analyst. With a direct focus on building predictive models from labeled datasets, it involves training an algorithm based on these known inputs and outputs, helping Data Analysts establish correlations and make reliable predictions. Fortifying a Data Analyst's role, supervised machine learning enables the accurate interpretation of complex data, enhancing decision-making processes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Supervised Learning?",
+        "url": "https://cloud.google.com/discover/what-is-supervised-learning",
+        "type": "article"
+      },
+      {
+        "title": "Supervised Learning",
+        "url": "ttps://www.datacamp.com/blog/supervised-machine-learning",
+        "type": "article"
+      },
+      {
+        "title": "Supervised Machine Learning Explained For Beginners",
+        "url": "https://www.youtube.com/watch?v=Mu3POlNoLdc&pp=0gcJCf8Ao7VqN5tD",
+        "type": "video"
+      }
+    ]
   },
   "6l_tHC1R5zgABHMc_G6RD": {
     "title": "Unsupervised Learning",
-    "description": "",
-    "links": []
+    "description": "Unsupervised learning, as a fundamental aspect of Machine Learning, holds great implications in the realm of data analytics. It is an approach where a model learns to identify patterns and relationships within a dataset that isn't labelled or classified. It is especially useful for a Data Analyst as it can assist in recognizing unforeseen trends, providing new insights or preparing data for other machine learning tasks. This ability to infer without direct supervision allows a vast potential for latent structure discovery and new knowledge derivation from raw data.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Unsupervised Learning?",
+        "url": "https://cloud.google.com/discover/what-is-unsupervised-learning",
+        "type": "article"
+      },
+      {
+        "title": "Introduction to Unsupervised Learning",
+        "url": "https://www.datacamp.com/blog/introduction-to-unsupervised-learning",
+        "type": "article"
+      },
+      {
+        "title": "Unsupervised Machine Learning Explained For Beginners",
+        "url": "https://www.youtube.com/watch?v=yteYU_QpUxs&pp=ygUbI3doYXRpc3Vuc3VwZXJ2aXNlZGxlYXJuaW5n",
+        "type": "video"
+      }
+    ]
   },
   "KFONHuJNnCuSOH7-8Ndvm": {
     "title": "Reinforcement Learning",
-    "description": "",
-    "links": []
+    "description": "Reinforcement learning is a type of machine learning where an agent learns to make decisions in an environment to maximize a cumulative reward. It involves the agent taking actions, receiving feedback in the form of rewards or penalties, and adjusting its strategy to improve its performance over time. Unlike supervised learning, it doesn't rely on labeled data but rather learns through trial and error.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Deep Reinforcement Learning Course by HuggingFace",
+        "url": "https://huggingface.co/learn/deep-rl-course/unit0/introduction",
+        "type": "course"
+      },
+      {
+        "title": "What is reinforcement learning?",
+        "url": "https://online.york.ac.uk/resources/what-is-reinforcement-learning/",
+        "type": "article"
+      },
+      {
+        "title": "Resources to Learn Reinforcement Learning",
+        "url": "https://towardsdatascience.com/best-free-courses-and-resources-to-learn-reinforcement-learning-ed6633608cb2/",
+        "type": "article"
+      },
+      {
+        "title": "Reinforcement Learning in 3 Hours | Full Course using Python",
+        "url": "https://www.youtube.com/watch?v=Mut_u40Sqz4",
+        "type": "video"
+      }
+    ]
   },
   "TBcLXYtKs7_j_h_m2pAyh": {
     "title": "Communication & Storytelling",
-    "description": "",
-    "links": []
+    "description": "Communication and storytelling involve conveying insights and findings from data analysis in a clear, concise, and engaging manner. It's about transforming complex data into understandable narratives that resonate with the audience, enabling them to grasp the significance of the information and make informed decisions. This includes using visuals, language, and structure to effectively present data-driven insights.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is data storytelling?",
+        "url": "http://microsoft.com/en-us/power-platform/products/power-bi/topics/data-storytelling",
+        "type": "article"
+      },
+      {
+        "title": "Data Storytelling: How to Effectively Tell a Story with Data",
+        "url": "https://online.hbs.edu/blog/post/data-storytelling",
+        "type": "article"
+      },
+      {
+        "title": "Effective Data Storytelling: How to drive change with data, narrative, and visuals",
+        "url": "https://dl.nemoudar.com/effective-data-storytelling-how-to-drive-change-with-data-narrative-and-visuals-1nbsped-1119615712-9781119615712_compress.pdf",
+        "type": "article"
+      },
+      {
+        "title": "Telling Stories with Data in 3 Steps (Quick Study)",
+        "url": "https://www.youtube.com/watch?v=r5_34YnCmMY",
+        "type": "video"
+      }
+    ]
   },
   "mi88uLdJBXaxJ2yVOSqqo": {
     "title": "Soft Skills",
-    "description": "",
-    "links": []
+    "description": "Soft skills are personal attributes that enable someone to interact effectively and harmoniously with other people. These skills, like communication, teamwork, and problem-solving, are crucial for building strong relationships, navigating complex situations, and achieving shared goals. They complement technical abilities and contribute significantly to overall professional success by fostering collaboration, understanding, and a positive work environment.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "The Skills You Need to Work in Business Intelligence Analytics",
+        "url": "https://tripleten.com/blog/posts/the-skills-you-need-to-work-in-business-intelligence-analytics",
+        "type": "article"
+      },
+      {
+        "title": "10 Essential Soft Skills for Data Analysts",
+        "url": "https://bigblue.academy/en/soft-skills-for-data-analysts",
+        "type": "article"
+      }
+    ]
   },
   "bGCMAgaenZ0t3WeO5joyP": {
     "title": "Data Quality",
-    "description": "",
-    "links": []
+    "description": "Data quality refers to the overall usability and reliability of data. It encompasses various dimensions like accuracy, completeness, consistency, timeliness, validity, and uniqueness. High-quality data is essential for making informed decisions and drawing accurate insights, while poor data quality can lead to flawed analyses and incorrect conclusions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Data Quality?",
+        "url": "https://www.ibm.com/think/topics/data-quality",
+        "type": "article"
+      }
+    ]
   },
   "CWf_vL78f8-mSUQbPnU8e": {
     "title": "GDPR",
-    "description": "",
-    "links": []
+    "description": "The General Data Protection Regulation (GDPR) is a European Union law focused on protecting the privacy and personal data of individuals within the EU and the European Economic Area (EEA). It dictates how organizations collect, use, and store personal information, giving individuals more control over their data and imposing strict rules on data processing activities. GDPR aims to standardize data protection laws across Europe and applies to any organization that processes the personal data of EU residents, regardless of the organization's location.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "GPDR",
+        "url": "https://gdpr-info.eu/",
+        "type": "article"
+      },
+      {
+        "title": "What is GDPR, the EU’s new data protection law?",
+        "url": "https://gdpr.eu/what-is-gdpr/",
+        "type": "article"
+      },
+      {
+        "title": "EU GDPR summary |What is the GDPR?",
+        "url": "https://www.youtube.com/watch?v=I-VuonciKWk",
+        "type": "article"
+      }
+    ]
   },
   "IwnXDA-f3FHK4EEeFuToC": {
     "title": "CCPA",
-    "description": "",
-    "links": []
+    "description": "The California Consumer Privacy Act (CCPA) is a California state law that grants consumers specific rights regarding their personal information held by businesses. These rights include the right to know what personal information is being collected about them, the right to request deletion of their personal information, and the right to opt-out of the sale of their personal information. CCPA aims to give consumers more control over their data and increase transparency in data handling practices.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "California Consumer Privacy Act (CCPA)",
+        "url": "https://oag.ca.gov/privacy/ccpa",
+        "type": "article"
+      },
+      {
+        "title": "What is the CCPA?",
+        "url": "https://www.cloudflare.com/en-gb/learning/privacy/what-is-the-ccpa/",
+        "type": "article"
+      }
+    ]
   },
   "_uLtsnyNNNRcz5A29Zpjl": {
     "title": "Algorithmic Bias",
-    "description": "",
-    "links": []
+    "description": "Algorithmic bias occurs when a computer system reflects the implicit values of the humans who created the algorithm or the data used to train it. This can lead to unfair or discriminatory outcomes for certain groups of people, even if the algorithm is not explicitly designed to be biased. It arises from flawed assumptions, incomplete data, or biased data used in the development process, ultimately perpetuating and amplifying existing societal biases.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is Algorithmic Bias?",
+        "url": "https://www.ibm.com/think/topics/algorithmic-bias",
+        "type": "article"
+      },
+      {
+        "title": "AI: Training Data & Bias",
+        "url": "https://www.youtube.com/watch?v=x2mRoFNm22g",
+        "type": "video"
+      }
+    ]
   },
   "5MUwKGfSTKlam8KCG0A1U": {
     "title": "Mitigation Strategies",
-    "description": "",
-    "links": []
+    "description": "Mitigation strategies for bias are the proactive steps taken to reduce or eliminate unfair prejudices within data, algorithms, and decision-making processes. These strategies involve identifying potential sources of bias, implementing techniques to correct or compensate for them, and continuously monitoring outcomes to ensure fairness and equity. The goal is to create more accurate, reliable, and just results by addressing and minimizing the impact of bias.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Addressing AI bias: a human-centric approach to fairness",
+        "url": "https://www.ey.com/en_us/insights/emerging-technologies/addressing-ai-bias-a-human-centric-approach-to-fairness",
+        "type": "article"
+      },
+      {
+        "title": "When AI Gets It Wrong: Addressing AI Hallucinations and Bias",
+        "url": "https://mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias/",
+        "type": "article"
+      },
+      {
+        "title": "Algorithmic Bias in AI: What It Is and How to Fix It",
+        "url": "https://www.youtube.com/watch?v=og67qeTZPYs",
+        "type": "video"
+      }
+    ]
   },
   "qnUHw2f2VmTPU3-NMnoLl": {
     "title": "Airflow",
-    "description": "",
-    "links": []
+    "description": "Airflow is a platform to programmatically author, schedule and monitor workflows. Use airflow to author workflows as directed acyclic graphs (DAGs) of tasks. The airflow scheduler executes your tasks on an array of workers while following the specified dependencies. Rich command line utilities make performing complex surgeries on DAGs a snap. The rich user interface makes it easy to visualize pipelines running in production, monitor progress, and troubleshoot issues when needed. When workflows are defined as code, they become more maintainable, versionable, testable, and collaborative.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Airflow",
+        "url": "https://airflow.apache.org/",
+        "type": "article"
+      },
+      {
+        "title": "Airflow Documentation",
+        "url": "https://airflow.apache.org/docs",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Apache Airflow",
+        "url": "https://app.daily.dev/tags/apache-airflow?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Apache Airflow Tutorial for Data Engineers",
+        "url": "https://www.youtube.com/watch?v=y5rYZLBZ_Fw",
+        "type": "video"
+      }
+    ]
   },
   "-KzusmyDQ1NgqOADpqmEX": {
     "title": "dbt",
-    "description": "",
-    "links": []
+    "description": "dbt, also known as the data build tool, is designed to simplify the management of data warehouses and transform the data within. This is primarily the T, or transformation, within ELT (or sometimes ETL) processes. It allows for easy transition between data warehouse types, such as Snowflake, BigQuery, Postgres, or DuckDB. dbt also provides the ability to use SQL across teams of multiple users, simplifying interaction. In addition, dbt translates between SQL dialects as appropriate to connect to different data sources and warehouses.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "dbt Official Course",
+        "url": "https://learn.getdbt.com/catalog",
+        "type": "course"
+      },
+      {
+        "title": "dbt",
+        "url": "https://www.getdbt.com/product/what-is-dbt",
+        "type": "article"
+      },
+      {
+        "title": "dbt Docs",
+        "url": "https://docs.getdbt.com/docs/build/documentation",
+        "type": "article"
+      }
+    ]
   },
   "hqpFbDhAvyT9_4hcoSLhC": {
     "title": "Certifications",
-    "description": "",
-    "links": []
+    "description": "Certifications for BI Analysts are credentials that validate a professional's skills and knowledge in business intelligence tools, techniques, and methodologies. These certifications often cover areas like data analysis, data visualization, data warehousing, and specific software platforms such as Tableau, Power BI, or SQL. Earning a certification can demonstrate expertise to employers and clients, potentially leading to career advancement and increased earning potential.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "16 Top Business Intelligence Certifications for a Successful Career",
+        "url": "https://onlinedegrees.sandiego.edu/business-intelligence-certifications/",
+        "type": "article"
+      },
+      {
+        "title": "9 Popular Data Analyst Certifications 2025 Guide",
+        "url": "https://www.onlc.com/blog/popular-data-analyst-certifications/",
+        "type": "article"
+      }
+    ]
   },
   "_KYKLd-RNhVy-Sn1A-G5j": {
     "title": "Cloud Computing Basics",
-    "description": "",
-    "links": []
+    "description": "**Cloud Computing** refers to the delivery of computing services over the internet rather than using local servers or personal devices. These services include servers, storage, databases, networking, software, analytics, and intelligence. Cloud Computing enables faster innovation, flexible resources, and economies of scale. There are various types of cloud computing such as public clouds, private clouds, and hybrids clouds. Furthermore, it's divided into different services like Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). These services differ mainly in the level of control an organization has over their data and infrastructures.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Cloud Computing - IBM",
+        "url": "https://www.ibm.com/think/topics/cloud-computing",
+        "type": "article"
+      },
+      {
+        "title": "What is Cloud Computing? - Azure",
+        "url": "https://azure.microsoft.com/en-gb/resources/cloud-computing-dictionary/what-is-cloud-computing",
+        "type": "article"
+      },
+      {
+        "title": "hat is Cloud Computing?",
+        "url": "https://www.youtube.com/watch?v=mxT233EdY5c",
+        "type": "video"
+      }
+    ]
   },
   "D94743lQ1fAerVSpJWXfP": {
     "title": "Cloud data warehouses",
-    "description": "",
-    "links": []
+    "description": "Cloud data warehouses are databases designed for analytical workloads that are hosted on cloud computing platforms. They allow businesses to store and analyze large volumes of data from various sources in a centralized, scalable, and cost-effective manner. These warehouses are optimized for read-heavy operations, enabling fast query performance for business intelligence and reporting.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a Data Warehouse?",
+        "url": "https://cloud.google.com/learn/what-is-a-data-warehouse",
+        "type": "article"
+      }
+    ]
   },
   "Z4pAe4FpnCkUJt8RuOhC6": {
     "title": "Providers: AWS, GCP, Azure",
-    "description": "",
-    "links": []
+    "description": "Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure are the leading cloud providers, offering a wide range of services. These services include computing power, data storage, networking, databases, analytics, machine learning, and more, all accessible over the internet. They allow businesses to avoid the upfront costs and complexities of owning and managing their own IT infrastructure, providing scalable and on-demand resources.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Amazon Web Services",
+        "url": "https://aws.amazon.com/",
+        "type": "article"
+      },
+      {
+        "title": "Microsoft Azure",
+        "url": "https://azure.microsoft.com/",
+        "type": "article"
+      },
+      {
+        "title": "Google Cloud",
+        "url": "https://cloud.google.com/",
+        "type": "article"
+      },
+      {
+        "title": "The Basics You Need to Know about AWS, Azure, and Google Cloud",
+        "url": "https://www.youtube.com/watch?v=wFsOjHgvUfM",
+        "type": "video"
+      }
+    ]
   }
 }
