@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [@official@FreeBSD Documentation](https://docs.freebsd.org/en/)
 - [@official@FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/)
 - [@video@FreeBSD in 100 Seconds](https://www.youtube.com/watch?v=NKHzcXwTdB4)
-

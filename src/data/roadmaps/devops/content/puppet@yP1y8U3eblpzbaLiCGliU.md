@@ -4,6 +4,6 @@ Puppet is an open-source configuration management tool that automates the provis
 
 Visit the following resources to learn more:
 
-- [@official@Puppet Website](https://puppet.com/)
 - [@course@Puppet Full Course | Learn Puppet Training](https://www.youtube.com/watch?v=Ns_tRKD20c4)
+- [@official@Puppet Website](https://puppet.com/)
 - [@feed@Explore top posts about Puppet](https://app.daily.dev/tags/puppet?ref=roadmapsh)
