@@ -4,9 +4,9 @@ Amazon Web Services has been the market leading cloud computing platform since 2
 
 Visit the following resources to learn more:
 
+- [@course@100 hour AWS Complete Course 2024](https://www.youtube.com/watch?v=zA8guDqfv40)
 - [@official@AWS Website](https://aws.amazon.com/)
 - [@official@AWS Cloud Essentials](https://aws.amazon.com/getting-started/cloud-essentials/)
 - [@official@Overview of Amazon Web Services](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html)
 - [@article@Create an AWS account](https://grapplingdev.com/tutorials/how-to-create-aws-account)
-- [@course@100 hour AWS Complete Course 2024](https://www.youtube.com/watch?v=zA8guDqfv40)
 - [@feed@Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)
