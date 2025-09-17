@@ -1,4 +1,4 @@
-# Common Pipes
+# Pure Pipes
 
 Angular provides built-in pipes for typical data transformations, including transformations for internationalization (i18n), which use locale information to format data. The following are commonly used built-in pipes for data formatting:
 
