@@ -44,3 +44,26 @@ const allChangelogs = await listChangelog();
   </div>
   <div slot="changelog-banner"></div>
 </BaseLayout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<script>
+  // Handle smooth scrolling to anchored elements on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if there's a hash in the URL and scroll to it
+    if (window.location.hash) {
+      const targetId = window.location.hash.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        // Small delay to ensure the page is fully loaded
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  });
+</script>
