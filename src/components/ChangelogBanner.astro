@@ -38,7 +38,7 @@ const changelogs = await listChangelog({ limit: 10 });
               <li class='relative'>
                 <a
                   href={`/changelog#${changelog._id}`}
-                  class='flex flex-col items-start sm:flex-row sm:items-center'
+                  class='flex flex-col items-start sm:flex-row sm:items-center rounded-lg p-2 -m-2 transition-colors hover:bg-gray-50 hover:shadow-sm'
                 >
                   <span class='shrink-0 pr-0 text-right text-sm tracking-wide text-gray-400 sm:w-[120px] sm:pr-4'>
                     {formattedDate}
@@ -74,3 +74,36 @@ const changelogs = await listChangelog({ limit: 10 });
     </div>
   </div>
 </div>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<script>
+  // Ensure smooth scrolling works for changelog links
+  document.addEventListener('DOMContentLoaded', function() {
+    const changelogLinks = document.querySelectorAll('a[href^="/changelog#"]');
+    
+    changelogLinks.forEach(link => {
+      link.addEventListener('click', function(e: Event) {
+        const target = e.currentTarget as HTMLAnchorElement;
+        const href = target.getAttribute('href');
+        if (!href) return;
+        
+        const hash = href.split('#')[1];
+        
+        if (hash && window.location.pathname === '/changelog') {
+          // If we're already on the changelog page, just scroll to the element
+          e.preventDefault();
+          const targetElement = document.getElementById(hash);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+        // If we're not on the changelog page, let the default navigation happen
+      });
+    });
+  });
+</script>
