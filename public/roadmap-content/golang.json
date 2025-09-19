@@ -932,11 +932,6 @@
     "description": "Go functions can return multiple values, commonly used for returning result and error. Syntax: `func name() (Type1, Type2)`. Caller receives all returned values or uses blank identifier `_` to ignore unwanted values. Idiomatic for error handling pattern.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Multiple Return Values in Go",
-        "url": "https://engineerpalsu.medium.com/multiple-return-values-in-go-7aa5511d3050",
-        "type": "article"
-      },
-      {
         "title": "How to manage Go function multiple returns",
         "url": "https://labex.io/tutorials/go-how-to-manage-go-function-multiple-returns-419825",
         "type": "article"
