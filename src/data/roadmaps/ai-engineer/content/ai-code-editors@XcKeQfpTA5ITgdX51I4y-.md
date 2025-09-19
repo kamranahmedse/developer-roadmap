@@ -4,8 +4,8 @@ AI code editors are development tools that leverage artificial intelligence to a
 
 Visit the following resources to learn more:
 
-- [@website@Cursor - The AI Code Editor](https://www.cursor.com/)
-- [@website@PearAI - The Open Source, Extendable AI Code Editor](https://trypear.ai/)
-- [@website@Bolt - Prompt, run, edit, and deploy full-stack web apps](https://bolt.new)
-- [@website@Replit - Build Apps using AI](https://replit.com/ai)
-- [@website@v0 - Build Apps with AI](https://v0.dev)
+- [@article@Cursor - The AI Code Editor](https://www.cursor.com/)
+- [@article@PearAI - The Open Source, Extendable AI Code Editor](https://trypear.ai/)
+- [@article@Bolt - Prompt, run, edit, and deploy full-stack web apps](https://bolt.new)
+- [@article@Replit - Build Apps using AI](https://replit.com/ai)
+- [@article@v0 - Build Apps with AI](https://v0.dev)
