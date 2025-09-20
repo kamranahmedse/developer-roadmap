@@ -789,6 +789,11 @@
         "title": "How to use and optimize videos",
         "url": "https://nextjs.org/docs/app/guides/videos",
         "type": "article"
+      },
+      {
+        "title": "Add high-performance video to your Nextjs app",
+        "url": "https://next-video.dev/docs",
+        "type": "video"
       }
     ]
   },

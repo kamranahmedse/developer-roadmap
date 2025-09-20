@@ -1,7 +1,7 @@
 {
   "v5FGKQc-_7NYEsWjmTEuq": {
     "title": "Learn a Programming Language",
-    "description": "It doesn't matter what language you pick, but it is important to learn at least one. You will be able to use that language to write automation scripts.",
+    "description": "Learning a programming language is a valuable skill in today's world, opening doors to various opportunities, including automation, web development, data analysis, and more. Choosing the right language depends on your specific goals and interests. For beginners, Python is often recommended due to its easy-to-read syntax and wide range of applications. Learning a programming language is a rewarding journey. Start with a language that interests you and explore!\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Guide to Picking a Language for DevOps",
@@ -411,7 +411,7 @@
   },
   "x-JWvG1iw86ULL9KrQmRu": {
     "title": "Process Monitoring",
-    "description": "Process monitoring is the continuous observation and analysis of processes within an IT system or organization to ensure optimal performance, efficiency, and compliance. It involves tracking key metrics, resource utilization, and behaviors of individual processes or applications running on a system. This practice helps identify anomalies, bottlenecks, or potential issues before they impact overall system performance or user experience. Process monitoring tools typically provide real-time data on CPU usage, memory consumption, I/O operations, and thread activity. They often include features for alerting, logging, and visualization of process data. In modern IT environments, process monitoring is crucial for maintaining system stability, optimizing resource allocation, troubleshooting performance issues, and supporting capacity planning in complex, distributed systems.\n\nLsof lists on its standard output file information about files opened by processes.",
+    "description": "Process monitoring is the continuous observation and analysis of processes within an IT system or organization to ensure optimal performance, efficiency, and compliance. It involves tracking key metrics, resource utilization, and behaviors of individual processes or applications running on a system. This practice helps identify anomalies, bottlenecks, or potential issues before they impact overall system performance or user experience. Process monitoring tools typically provide real-time data on CPU usage, memory consumption, I/O operations, and thread activity. They often include features for alerting, logging, and visualization of process data. In modern IT environments, process monitoring is crucial for maintaining system stability, optimizing resource allocation, troubleshooting performance issues, and supporting capacity planning in complex, distributed systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "lsof Cheat Sheet",
@@ -437,7 +437,7 @@
   },
   "gIEQDgKOsoEnSv8mpEzGH": {
     "title": "Performance Monitoring",
-    "description": "Performance monitoring is the systematic observation and measurement of an IT system's operational efficiency and effectiveness. It involves collecting, analyzing, and reporting on key performance indicators (KPIs) across various components including applications, networks, servers, and databases. This process uses specialized tools to track metrics such as response time, throughput, resource utilization, and error rates. Performance monitoring helps identify bottlenecks, predict potential issues, and optimize system resources. It's crucial for maintaining service level agreements (SLAs), ensuring user satisfaction, and supporting capacity planning. In modern IT environments, performance monitoring often incorporates real-time analytics, AI-driven insights, and automated alerting systems, enabling proactive management of complex, distributed systems and supporting continuous improvement in IT operations and service delivery.\n\nLearn more from the following resources:",
+    "description": "Performance monitoring is the systematic observation and measurement of an IT system's operational efficiency and effectiveness. It involves collecting, analyzing, and reporting on key performance indicators (KPIs) across various components including applications, networks, servers, and databases. This process uses specialized tools to track metrics such as response time, throughput, resource utilization, and error rates. Performance monitoring helps identify bottlenecks, predict potential issues, and optimize system resources. It's crucial for maintaining service level agreements (SLAs), ensuring user satisfaction, and supporting capacity planning. In modern IT environments, performance monitoring often incorporates real-time analytics, AI-driven insights, and automated alerting systems, enabling proactive management of complex, distributed systems and supporting continuous improvement in IT operations and service delivery.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Linux Commands: Exploring Virtual Memory with vmstat",
@@ -463,7 +463,7 @@
   },
   "OaqKLZe-XnngcDhDzCtRt": {
     "title": "Networking Tools",
-    "description": "Networking tools are essential software utilities used for monitoring, analyzing, troubleshooting, and managing computer networks. They include a wide range of applications such as Wireshark for deep packet analysis, Nmap for network scanning and security auditing, Ping for testing basic connectivity, Traceroute for visualizing network paths, Netstat for displaying network connections, Tcpdump for command-line packet capture, Iperf for performance testing, Netcat for various network operations, Nslookup/Dig for DNS queries, and PuTTY for remote access via SSH or telnet. These tools collectively enable network administrators and security professionals to diagnose issues, optimize performance, conduct security assessments, and maintain the overall health and efficiency of network infrastructures, ranging from small local networks to large-scale enterprise environments.\n\nLearn more from the following resources:",
+    "description": "Networking tools are essential software utilities used for monitoring, analyzing, troubleshooting, and managing computer networks. They include a wide range of applications such as Wireshark for deep packet analysis, Nmap for network scanning and security auditing, Ping for testing basic connectivity, Traceroute for visualizing network paths, Netstat for displaying network connections, Tcpdump for command-line packet capture, Iperf for performance testing, Netcat for various network operations, Nslookup/Dig for DNS queries, and PuTTY for remote access via SSH or telnet. These tools collectively enable network administrators and security professionals to diagnose issues, optimize performance, conduct security assessments, and maintain the overall health and efficiency of network infrastructures, ranging from small local networks to large-scale enterprise environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "10 SCP command examples",
@@ -489,7 +489,7 @@
   },
   "cUifrP7v55psTb20IZndf": {
     "title": "Text Manipulation",
-    "description": "Text manipulation tools are utilities or software that enable users to modify, process, and transform text data efficiently. These tools are often used in scripting, data cleaning, and automation tasks. Common text manipulation tools include `sed` (stream editor) for search and replace, `awk` for pattern scanning and data extraction, and `grep` for searching text using regular expressions. Other popular tools include `cut`, `sort`, `tr`, and `uniq` for various text processing functions. These command-line tools are commonly used in UNIX/Linux environments to handle large text files, automate workflows, and perform complex text transformations.\n\nLearn more from the following resources:",
+    "description": "Text manipulation tools are utilities or software that enable users to modify, process, and transform text data efficiently. These tools are often used in scripting, data cleaning, and automation tasks. Common text manipulation tools include `sed` (stream editor) for search and replace, `awk` for pattern scanning and data extraction, and `grep` for searching text using regular expressions. Other popular tools include `cut`, `sort`, `tr`, and `uniq` for various text processing functions. These command-line tools are commonly used in UNIX/Linux environments to handle large text files, automate workflows, and perform complex text transformations.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Linux Text Processing Command",
@@ -531,7 +531,7 @@
   },
   "z6IBekR8Xl-6f8WEb05Nw": {
     "title": "Power Shell",
-    "description": "PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. Built on the .NET framework, PowerShell provides full access to COM and WMI, enabling administrators to perform administrative tasks on both local and remote Windows systems. It uses cmdlets (pronounced \"command-lets\") for performing actions, and a pipe system for chaining these commands together. PowerShell's object-based nature, as opposed to text-based output, allows for more efficient data manipulation. With its extensive scripting capabilities, support for aliases, and integration with various Microsoft and third-party products, PowerShell has become a powerful tool for automating system administration tasks, managing cloud resources, and developing DevOps practices in Windows-centric environments.\n\nLearn more from the following resources:",
+    "description": "PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language. Built on the .NET framework, PowerShell provides full access to COM and WMI, enabling administrators to perform administrative tasks on both local and remote Windows systems. It uses cmdlets (pronounced \"command-lets\") for performing actions, and a pipe system for chaining these commands together. PowerShell's object-based nature, as opposed to text-based output, allows for more efficient data manipulation. With its extensive scripting capabilities, support for aliases, and integration with various Microsoft and third-party products, PowerShell has become a powerful tool for automating system administration tasks, managing cloud resources, and developing DevOps practices in Windows-centric environments.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "PowerShell Documentation",
@@ -555,6 +555,11 @@
     "description": "Text editors are software tools used for creating, editing, and managing text files. They range from simple editors with basic features to complex Integrated Development Environments (IDEs). Popular text editors include:\n\n*   **Notepad**: A basic editor for Windows, suitable for simple text files.\n*   **Vim**: A highly configurable and powerful editor known for its efficiency and modal interface.\n*   **Emacs**: A versatile editor with extensive customization options and a wide range of plugins.\n*   **Sublime Text**: A feature-rich editor with a focus on speed and a user-friendly interface.\n*   **Visual Studio Code**: A modern, open-source editor with built-in support for debugging, extensions, and integration with various development tools.\n\nVisit the following resources to learn more:",
     "links": [
       {
+        "title": "Practical Vim 2nd Edition",
+        "url": "https://dokumen.pub/practical-vim-2nd-edition-2nd-edition-9781680501278.html",
+        "type": "article"
+      },
+      {
         "title": "Vim",
         "url": "https://www.vim.org",
         "type": "article"
@@ -567,11 +572,6 @@
       {
         "title": "GNU Emacs",
         "url": "https://www.gnu.org/software/emacs/",
-        "type": "article"
-      },
-      {
-        "title": "Practical Vim 2nd Edition",
-        "url": "https://dokumen.pub/practical-vim-2nd-edition-2nd-edition-9781680501278.html",
         "type": "article"
       },
       {
@@ -691,16 +691,16 @@
   },
   "ot9I_IHdnq2yAMffrSrbN": {
     "title": "GitHub",
-    "description": "GitHub is a web-based platform for version control and collaboration using Git. It provides cloud-based Git repository hosting, offering features like bug tracking, task management, and project wikis. GitHub facilitates code review through pull requests, supports issue tracking, and enables social coding with features like forking and starring repositories. It offers both public and private repositories, making it popular for open-source projects and private development. GitHub's ecosystem includes integrations with various development tools and CI/CD platforms. With features like GitHub Actions for automation, GitHub Packages for package management, and GitHub Pages for web hosting, it serves as a comprehensive platform for software development workflows, fostering collaboration among developers worldwide. Visit the following resources to learn more:",
+    "description": "Visit the following resources to learn more:",
     "links": [
-      {
-        "title": "GitHub",
-        "url": "https://github.com",
-        "type": "article"
-      },
       {
         "title": "Visit Dedicated Git & GitHub Roadmap",
         "url": "https://roadmap.sh/git-github",
+        "type": "article"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com",
         "type": "article"
       },
       {
@@ -1273,7 +1273,7 @@
   },
   "I327qPYGMcdayRR5WT0Ek": {
     "title": "Hetzner",
-    "description": "Hetzner is a German web hosting company and data center operator known for offering high-quality, cost-effective dedicated servers, virtual private servers (VPS), and cloud solutions. They provide a range of hosting services including shared hosting, managed servers, and colocation. Hetzner is particularly popular among developers and small to medium-sized businesses for its competitive pricing on powerful hardware. Their cloud platform offers flexible, scalable resources with a straightforward pricing model. Hetzner is recognized for its robust infrastructure, reliable network connectivity, and customer-friendly approach. While not as feature-rich as some larger cloud providers, Hetzner's focus on providing high-performance hardware at affordable prices has earned it a strong reputation in the hosting community.\n\nVisit the following resources to learn more about Hetzner:",
+    "description": "Hetzner is a German web hosting company and data center operator known for offering high-quality, cost-effective dedicated servers, virtual private servers (VPS), and cloud solutions. They provide a range of hosting services including shared hosting, managed servers, and colocation. Hetzner is particularly popular among developers and small to medium-sized businesses for its competitive pricing on powerful hardware. Their cloud platform offers flexible, scalable resources with a straightforward pricing model. Hetzner is recognized for its robust infrastructure, reliable network connectivity, and customer-friendly approach. While not as feature-rich as some larger cloud providers, Hetzner's focus on providing high-performance hardware at affordable prices has earned it a strong reputation in the hosting community.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Hetzner Website",
@@ -1315,7 +1315,7 @@
   },
   "eJZdjheptmiwKsVokt7Io": {
     "title": "Contabo",
-    "description": "Contabo is a German web hosting and dedicated server provider known for offering affordable virtual private servers (VPS) and dedicated servers with high performance specifications. They provide a range of hosting solutions, including shared hosting, VPS, dedicated servers, and storage solutions, catering to both individual developers and businesses. Contabo is particularly popular among budget-conscious users for its competitive pricing on high-resource VPS plans. Their services include features like SSD storage, DDoS protection, and data centers in multiple locations. While not as well-known as some larger cloud providers, Contabo has gained a reputation in the hosting community for offering good value for money, especially for users requiring substantial computing resources at lower costs.\n\nVisit the following link to learn more:",
+    "description": "Contabo is a German web hosting and dedicated server provider known for offering affordable virtual private servers (VPS) and dedicated servers with high performance specifications. They provide a range of hosting solutions, including shared hosting, VPS, dedicated servers, and storage solutions, catering to both individual developers and businesses. Contabo is particularly popular among budget-conscious users for its competitive pricing on high-resource VPS plans. Their services include features like SSD storage, DDoS protection, and data centers in multiple locations. While not as well-known as some larger cloud providers, Contabo has gained a reputation in the hosting community for offering good value for money, especially for users requiring substantial computing resources at lower costs.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Contabo",
@@ -1464,13 +1464,13 @@
     "description": "SSH (Secure Shell) is a cryptographic network protocol used to securely access and manage remote machines over an unsecured network. It provides encrypted communication, ensuring confidentiality and integrity, and allows for secure file transfers, command execution, and tunneling. SSH is widely used for remote administration of servers, cloud infrastructure, and networking devices, typically employing key-based authentication or passwords. Tools like OpenSSH are commonly used to establish SSH connections, providing a secure alternative to older, less secure protocols like Telnet.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "SSH Intro",
-        "url": "https://www.baeldung.com/cs/ssh-intro",
+        "title": "What is SSH?",
+        "url": "https://www.ssh.com/academy/ssh/protocol",
         "type": "article"
       },
       {
-        "title": "What is SSH?",
-        "url": "https://www.ssh.com/academy/ssh/protocol",
+        "title": "SSH Intro",
+        "url": "https://www.baeldung.com/cs/ssh-intro",
         "type": "article"
       },
       {
@@ -1645,7 +1645,7 @@
   },
   "w5d24Sf8GDkLDLGUPxzS9": {
     "title": "Networking & Protocols",
-    "description": "Networking protocols are standardized rules and procedures that govern how data is transmitted, received, and interpreted across computer networks. They define the format, timing, sequencing, and error control in data communication. Key protocols include:\n\n1.  TCP/IP (Transmission Control Protocol/Internet Protocol): The fundamental suite for Internet communication.\n2.  HTTP/HTTPS: For web browsing and secure data transfer on the web.\n3.  FTP/SFTP: File transfer protocols.\n4.  SMTP/POP3/IMAP: Email communication protocols.\n5.  DNS: For domain name resolution.\n6.  DHCP: For automatic IP address assignment.\n7.  SSL/TLS: For secure, encrypted communication.\n8.  UDP: For fast, connectionless data transmission.\n\nHere are some of the resources to learn about SSH:",
+    "description": "Networking protocols are standardized rules and procedures that govern how data is transmitted, received, and interpreted across computer networks. They define the format, timing, sequencing, and error control in data communication. Key protocols include:\n\n1.  TCP/IP (Transmission Control Protocol/Internet Protocol): The fundamental suite for Internet communication.\n2.  HTTP/HTTPS: For web browsing and secure data transfer on the web.\n3.  FTP/SFTP: File transfer protocols.\n4.  SMTP/POP3/IMAP: Email communication protocols.\n5.  DNS: For domain name resolution.\n6.  DHCP: For automatic IP address assignment.\n7.  SSL/TLS: For secure, encrypted communication.\n8.  UDP: For fast, connectionless data transmission.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Cloudflare - What is SSL?",
@@ -1842,7 +1842,7 @@
   },
   "1oYvpFG8LKT1JD6a_9J0m": {
     "title": "Provisioning",
-    "description": "Provisioning refers to the process of setting up and configuring the necessary IT infrastructure to support an application or service. This includes allocating and preparing resources such as servers, storage, networking, and software environments. Provisioning can be done manually, but in modern DevOps practices, it's typically automated using tools like Terraform, Pulumi, or CloudFormation. These tools allow for infrastructure-as-code, where the entire provisioning process is defined in version-controlled scripts or templates. This approach enables consistent, repeatable deployments across different environments, reduces human error, and facilitates rapid scaling and disaster recovery.\n\nLearn more from the following resources:",
+    "description": "Provisioning refers to the process of setting up and configuring the necessary IT infrastructure to support an application or service. This includes allocating and preparing resources such as servers, storage, networking, and software environments. Provisioning can be done manually, but in modern DevOps practices, it's typically automated using tools like Terraform, Pulumi, or CloudFormation. These tools allow for infrastructure-as-code, where the entire provisioning process is defined in version-controlled scripts or templates. This approach enables consistent, repeatable deployments across different environments, reduces human error, and facilitates rapid scaling and disaster recovery.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is provisioning? - RedHat",
@@ -2111,7 +2111,7 @@
       },
       {
         "title": "GitHub Actions Guide",
-        "url": "https://octopus.com/devops/github-actions/",
+        "url": "https://octopus.com/devops/github-actions/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-ci-cd-github-actions",
         "type": "article"
       },
       {
@@ -2142,7 +2142,7 @@
       },
       {
         "title": "GitLab CI/CD Pipeline Tutorial",
-        "url": "https://octopus.com/devops/gitlab/gitlab-cicd-tutorial/",
+        "url": "https://octopus.com/devops/gitlab/gitlab-cicd-tutorial/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-ci-cd-gitlab-ci",
         "type": "article"
       },
       {
@@ -2168,7 +2168,7 @@
       },
       {
         "title": "Jenkins Tutorial",
-        "url": "https://octopus.com/devops/jenkins/jenkins-tutorial/",
+        "url": "https://octopus.com/devops/jenkins/jenkins-tutorial/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-ci-cd-gitlab-ci",
         "type": "article"
       },
       {
@@ -2210,12 +2210,12 @@
     "links": [
       {
         "title": "Octopus Deploy",
-        "url": "https://octopus.com/",
+        "url": "https://octopus.com/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-ci-cd-tools",
         "type": "article"
       },
       {
         "title": "Official Documentation",
-        "url": "https://octopus.com/docs",
+        "url": "https://octopus.com/docs?utm_source=roadmap&utm_medium=link&utm_campaign=devops-ci-cd-tools",
         "type": "article"
       }
     ]
@@ -2486,13 +2486,13 @@
     "description": "Log management is the process of handling log events generated by all software applications and infrastructure on which they run. It involves log collection, aggregation, parsing, storage, analysis, search, archiving, and disposal, with the ultimate goal of using the data for troubleshooting and gaining business insights, while also ensuring the compliance and security of applications and infrastructure.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Introduction to Logs Management",
-        "url": "https://sematext.com/guides/log-management",
+        "title": "Log Management: What DevOps Teams Need to Know",
+        "url": "https://devops.com/log-management-what-devops-teams-need-to-know/",
         "type": "article"
       },
       {
-        "title": "Log Management: What DevOps Teams Need to Know",
-        "url": "https://devops.com/log-management-what-devops-teams-need-to-know/",
+        "title": "Introduction to Logs Management",
+        "url": "https://sematext.com/guides/log-management",
         "type": "article"
       },
       {
@@ -2810,17 +2810,17 @@
     "links": [
       {
         "title": "What is GitOps",
-        "url": "https://octopus.com/devops/gitops/",
+        "url": "https://octopus.com/devops/gitops/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-gitops",
         "type": "article"
       },
       {
         "title": "GitOps Interactive Benefits Diagram",
-        "url": "https://octopus.com/devops/gitops/interactive-diagrams/",
+        "url": "https://octopus.com/devops/gitops/interactive-diagrams/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-gitops",
         "type": "article"
       },
       {
         "title": "GitOps Maturity Model",
-        "url": "https://octopus.com/devops/gitops/gitops-maturity-model/",
+        "url": "https://octopus.com/devops/gitops/gitops-maturity-model/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-gitops",
         "type": "article"
       },
       {
@@ -3166,7 +3166,7 @@
   },
   "JXsctlXUUS1ie8nNEgIk9": {
     "title": "GCP Functions",
-    "description": "Google Cloud Functions is a serverless execution environment for building and connecting cloud services. It allows developers to write single-purpose, standalone functions that respond to cloud events without the need to manage a server or runtime environment. These functions can be triggered by various events from Google Cloud services, HTTP requests, or Firebase features. Cloud Functions automatically scale based on the workload, and users are charged only for the compute time used. They support multiple programming languages including Node.js, Python, and Go. Cloud Functions are commonly used for real-time data processing, webhooks, lightweight APIs, and integrating systems in a microservices architecture. This service enables rapid development and deployment of code in the Google Cloud ecosystem.",
+    "description": "Visit the following resources to learn more:",
     "links": [
       {
         "title": "GCP Cloud Functions Overview",
