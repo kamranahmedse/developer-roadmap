@@ -568,11 +568,6 @@
     "description": "Pattern for safely testing map key existence or type assertion success using `value, ok := map[key]` or `value, ok := interface.(Type)`. Returns both value and boolean status, preventing panics and distinguishing zero values from missing keys.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "Comma Ok",
-        "url": "https://go.dev/tour/basics/10",
-        "type": "article"
-      },
-      {
         "title": "The Comma Ok Idiom ",
         "url": "https://dev.to/saurabh975/comma-ok-in-go-l4f",
         "type": "article"
