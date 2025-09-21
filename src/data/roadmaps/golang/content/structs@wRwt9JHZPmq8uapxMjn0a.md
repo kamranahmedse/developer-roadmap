@@ -5,5 +5,4 @@ Custom data types grouping related fields under single name. Similar to classes 
 Visit the following resources to learn more:
 
 - [@official@Structs](https://go.dev/tour/moretypes/2)
-- [@article@Working with JSON and Struct Tags](https://medium.com/@sanyamdubey28/working-with-json-and-struct-tags-in-go-0e6a7c4fc6b0)
-- [@article@Understanding Struct Tags and JSON Encoding in Go](https://towardsdev.com/understanding-struct-tags-and-json-encoding-in-go-9e51d551c0ce)
+- [@article@Go Struct: A Deep Dive](https://leapcell.medium.com/deep-dive-into-go-struct-103961431c64)

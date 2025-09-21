@@ -599,13 +599,8 @@
         "type": "article"
       },
       {
-        "title": "Working with JSON and Struct Tags",
-        "url": "https://medium.com/@sanyamdubey28/working-with-json-and-struct-tags-in-go-0e6a7c4fc6b0",
-        "type": "article"
-      },
-      {
-        "title": "Understanding Struct Tags and JSON Encoding in Go",
-        "url": "https://towardsdev.com/understanding-struct-tags-and-json-encoding-in-go-9e51d551c0ce",
+        "title": "Go Struct: A Deep Dive",
+        "url": "https://leapcell.medium.com/deep-dive-into-go-struct-103961431c64",
         "type": "article"
       }
     ]
@@ -622,6 +617,11 @@
       {
         "title": "Working with JSON and Struct Tags",
         "url": "https://medium.com/@sanyamdubey28/working-with-json-and-struct-tags-in-go-0e6a7c4fc6b0",
+        "type": "article"
+      },
+      {
+        "title": "Understanding Struct Tags and JSON Encoding in Go",
+        "url": "https://towardsdev.com/understanding-struct-tags-and-json-encoding-in-go-9e51d551c0ce",
         "type": "article"
       }
     ]
