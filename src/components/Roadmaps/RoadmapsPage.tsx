@@ -175,10 +175,16 @@ const groups: GroupType[] = [
     group: 'Languages / Platforms',
     roadmaps: [
       {
+        title: 'HTML',
+        link: '/html',
+        type: 'skill',
+        otherGroups: ['Web Development', 'Absolute Beginners'],
+      },
+      {
         title: 'JavaScript',
         link: '/javascript',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps', 'Mobile Development'],
+        otherGroups: ['Web Development', 'DevOps', 'Mobile Development', 'Absolute Beginners'],
       },
       {
         title: 'Kotlin',
@@ -196,13 +202,13 @@ const groups: GroupType[] = [
         title: 'Node.js',
         link: '/nodejs',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps'],
+        otherGroups: ['Web Development', 'DevOps', 'Absolute Beginners'],
       },
       {
         title: 'PHP',
         link: '/php',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps'],
+        otherGroups: ['Web Development', 'DevOps', 'Absolute Beginners'],
       },
       {
         title: 'C++',
@@ -213,7 +219,7 @@ const groups: GroupType[] = [
         title: 'Go',
         link: '/golang',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps'],
+        otherGroups: ['Web Development', 'DevOps', 'Absolute Beginners'],
       },
       {
         title: 'Rust',
