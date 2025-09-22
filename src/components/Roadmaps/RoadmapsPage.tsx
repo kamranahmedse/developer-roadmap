@@ -181,6 +181,12 @@ const groups: GroupType[] = [
         otherGroups: ['Web Development', 'DevOps', 'Mobile Development'],
       },
       {
+        title: 'Kotlin',
+        link: '/kotlin',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps', 'Mobile Development'],
+      },
+      {
         title: 'TypeScript',
         link: '/typescript',
         type: 'skill',

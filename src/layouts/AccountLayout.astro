@@ -7,6 +7,9 @@ const props = Astro.props;
 ---
 
 <BaseLayout {...props} noIndex={true}>
+  <div slot='ad-slot-script'></div>
+  <div slot='ad-slot'></div>
+
   <slot />
   <div slot='login-popup'></div>
   <div slot='page-footer'></div>

@@ -75,6 +75,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Go Roadmap](https://roadmap.sh/golang)
 - [Rust Roadmap](https://roadmap.sh/rust)
 - [Java Roadmap](https://roadmap.sh/java)
+- [Kotlin Roadmap](https://roadmap.sh/kotlin)
 - [Spring Boot Roadmap](https://roadmap.sh/spring-boot)
 - [Design System Roadmap](https://roadmap.sh/design-system)
 - [PostgreSQL Roadmap](https://roadmap.sh/postgresql-dba)
