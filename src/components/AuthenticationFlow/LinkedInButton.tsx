@@ -9,7 +9,12 @@ import { httpGet } from '../../lib/http';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
-import { getLastPath, triggerUtmRegistration, urlToId } from '../../lib/browser.ts';
+import {
+  getLastPath,
+  triggerUtmRegistration,
+  urlToId,
+} from '../../lib/browser.ts';
+import { getPlatformFromState, redirectToMobileApp } from '../../lib/auth.ts';
 
 type LinkedInButtonProps = {
   isDisabled?: boolean;
@@ -38,6 +43,13 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
+
+    const platform = getPlatformFromState(state);
+    if (platform === 'mobile') {
+      redirectToMobileApp(urlParams);
+      return;
+    }
+
     const lastPageBeforeLinkedIn = localStorage.getItem(LINKEDIN_LAST_PAGE);
 
     httpGet<{ token: string; isNewUser: boolean }>(
@@ -166,7 +178,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         Continue with LinkedIn
       </button>
       {error && (
-        <p className="mb-2 mt-1 text-sm font-medium text-red-600">{error}</p>
+        <p className="mt-1 mb-2 text-sm font-medium text-red-600">{error}</p>
       )}
     </>
   );

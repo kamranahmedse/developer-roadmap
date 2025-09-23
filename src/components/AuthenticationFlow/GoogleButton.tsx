@@ -5,8 +5,13 @@ import { COURSE_PURCHASE_PARAM } from '../../lib/jwt';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { CHECKOUT_AFTER_LOGIN_KEY } from './CourseLoginPopup.tsx';
-import { triggerUtmRegistration, urlToId, getLastPath } from '../../lib/browser.ts';
+import {
+  triggerUtmRegistration,
+  urlToId,
+  getLastPath,
+} from '../../lib/browser.ts';
 import { cn } from '../../lib/classname.ts';
+import { getPlatformFromState, redirectToMobileApp } from '../../lib/auth.ts';
 
 type GoogleButtonProps = {
   isDisabled?: boolean;
@@ -35,6 +40,13 @@ export function GoogleButton(props: GoogleButtonProps) {
 
     setIsLoading(true);
     setIsDisabled?.(true);
+
+    const platform = getPlatformFromState(state);
+    if (platform === 'mobile') {
+      redirectToMobileApp(urlParams);
+      return;
+    }
+
     const lastPageBeforeGoogle = localStorage.getItem(GOOGLE_LAST_PAGE);
 
     httpGet<{ token: string; isNewUser: boolean }>(
@@ -161,7 +173,7 @@ export function GoogleButton(props: GoogleButtonProps) {
         Continue with Google
       </button>
       {error && (
-        <p className="mb-2 mt-1 text-sm font-medium text-red-600">{error}</p>
+        <p className="mt-1 mb-2 text-sm font-medium text-red-600">{error}</p>
       )}
     </>
   );
