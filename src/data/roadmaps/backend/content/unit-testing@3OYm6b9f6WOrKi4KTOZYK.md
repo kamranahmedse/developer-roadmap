@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@Unit Testing](https://en.wikipedia.org/wiki/Unit_testing)
 - [@article@What is Unit Testing?](https://www.guru99.com/unit-testing-guide.html)
-- [@video@What is Unit Testing?](https://www.youtube.com/watch?v=W2KOSaetWBk)
+- [@video@What is Unit Testing?](https://youtu.be/x95ez7_V7rA?si=JhCVhcEN7zZOkxdp)
 - [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)
