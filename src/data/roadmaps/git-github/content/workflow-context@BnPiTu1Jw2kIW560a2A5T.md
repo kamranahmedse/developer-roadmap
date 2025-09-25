@@ -4,5 +4,6 @@ Workflow context in GitHub Actions refers to the environment and variables that 
 
 Learn more from the following resources:
 
-- [@official@GitHub Actions Contexts](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/contexts)
+- [@official@GitHub Actions Contexts](https://docs.github.com/en/actions/concepts/workflows-and-actions/contexts)
+- [@official@GitHub Actions Contexts Example](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/contexts)
 - [@video@Working with contexts in GitHub Actions](https://www.youtube.com/watch?v=16WT_r0zjYE)
