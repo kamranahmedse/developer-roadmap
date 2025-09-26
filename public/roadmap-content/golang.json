@@ -595,6 +595,22 @@
     "links": [
       {
         "title": "Structs",
+        "url": "https://go.dev/tour/moretypes/2",
+        "type": "article"
+      },
+      {
+        "title": "Go Struct: A Deep Dive",
+        "url": "https://leapcell.medium.com/deep-dive-into-go-struct-103961431c64",
+        "type": "article"
+      }
+    ]
+  },
+  "SW2uMlhfC-dnQakShs2km": {
+    "title": "Struct Tags & JSON",
+    "description": "Struct tags provide metadata about fields using backticks with key-value pairs. JSON tags control field names, omit empty fields, or skip fields. Example: `json:\"name,omitempty\"`. Essential for APIs and data serialization formats.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Well known struct tags",
         "url": "https://go.dev/wiki/Well-known-struct-tags",
         "type": "article"
       },
@@ -606,22 +622,6 @@
       {
         "title": "Understanding Struct Tags and JSON Encoding in Go",
         "url": "https://towardsdev.com/understanding-struct-tags-and-json-encoding-in-go-9e51d551c0ce",
-        "type": "article"
-      }
-    ]
-  },
-  "SW2uMlhfC-dnQakShs2km": {
-    "title": "Struct Tags & JSON",
-    "description": "Struct tags provide metadata about fields using backticks with key-value pairs. JSON tags control field names, omit empty fields, or skip fields. Example: `json:\"name,omitempty\"`. Essential for APIs and data serialization formats.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Structs",
-        "url": "https://go.dev/wiki/Well-known-struct-tags",
-        "type": "article"
-      },
-      {
-        "title": "Working with JSON and Struct Tags",
-        "url": "https://medium.com/@sanyamdubey28/working-with-json-and-struct-tags-in-go-0e6a7c4fc6b0",
         "type": "article"
       }
     ]
