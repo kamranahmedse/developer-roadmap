@@ -39,13 +39,15 @@ export async function httpCall<ResponseType = AppResponse>(
   url: string,
   options?: HttpOptionsType,
 ): Promise<ApiReturn<ResponseType>> {
-  const fullUrl = url.startsWith('http')
-    ? url
-    : `${import.meta.env.PUBLIC_API_URL}${url}`;
+  const isAbsolute = url.startsWith('http');
+  // Fallbacks to avoid undefined base URL during local/dev or scripts
+  const isServer = typeof window === 'undefined';
+  // Note: avoid dynamic access to import.meta.env
+  const PUBLIC_API_URL: string | undefined = import.meta.env.PUBLIC_API_URL as any;
+  const baseUrl = PUBLIC_API_URL || (isServer ? 'https://roadmap.sh/api' : '/api');
+  const fullUrl = isAbsolute ? url : `${baseUrl}${url}`;
   try {
     let visitorId = '';
-
-    const isServer = typeof window === 'undefined';
     if (!isServer) {
       const fingerprintPromise = await fp.load();
       const fingerprint = await fingerprintPromise.get();
@@ -62,7 +64,10 @@ export async function httpCall<ResponseType = AppResponse>(
     });
 
     if (isServer) {
-      headers.set('roadmap-api-key', import.meta?.env?.ROADMAP_API_KEY);
+      const ROADMAP_API_KEY: string | undefined = import.meta.env.ROADMAP_API_KEY as any;
+      if (ROADMAP_API_KEY) {
+        headers.set('roadmap-api-key', ROADMAP_API_KEY);
+      }
     }
 
     if (!isMultiPartFormData) {
