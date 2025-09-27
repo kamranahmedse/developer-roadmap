@@ -1,0 +1,700 @@
+{
+  "4gst44L8-ps9YFMHzucfN": {
+    "title": "What are markup languages?",
+    "description": "Markup languages are systems for annotating text in a way that makes it readable by both humans and computers. They use tags to define elements within a document, specifying how the text should be structured, formatted, and displayed. For example, HTML uses tags like `<p>` for paragraphs and `<h1>` for headings to structure web content, while XML uses custom tags to define data structures for various applications.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What Is a Markup Language?",
+        "url": "https://www.semrush.com/blog/markup-language/",
+        "type": "article"
+      },
+      {
+        "title": "Theory - Markup Languages",
+        "url": "https://www.youtube.com/watch?v=6PWOswN4lgg",
+        "type": "video"
+      }
+    ]
+  },
+  "Xy15NSxlS0QXYNzEvgocK": {
+    "title": "Frontend Development",
+    "description": "Frontend development is the practice of creating the user interface and user experience of a website or web application. It focuses on the parts of a website that users directly interact with, such as buttons, text, images, and navigation menus. Frontend developers use languages like HTML, CSS, and JavaScript to build these interactive elements and ensure they are visually appealing and function correctly across different devices and browsers.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Visit the dedicated Frontend Developer Roadmap",
+        "url": "https://roadmap.sh/frontend",
+        "type": "article"
+      },
+      {
+        "title": "What Is Front-End Development?",
+        "url": "https://cloudinary.com/guides/front-end-development/front-end-development-the-complete-guide",
+        "type": "article"
+      },
+      {
+        "title": "Frontend web development - a complete overview",
+        "url": "https://www.youtube.com/watch?v=WG5ikvJ2TKA",
+        "type": "video"
+      }
+    ]
+  },
+  "JkLec2vSBMFAUc1Dzra-L": {
+    "title": "Introduction",
+    "description": "HTML, or HyperText Markup Language, is the standard language for creating web pages. It uses a system of tags to structure content, such as headings, paragraphs, images, and links, so that web browsers can display them correctly. These tags tell the browser how to present the text, images, and other forms of multimedia on a webpage.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "HTML MDN Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "type": "article"
+      },
+      {
+        "title": "What is HTML – Definition and Meaning of Hypertext Markup Language",
+        "url": "https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/",
+        "type": "article"
+      },
+      {
+        "title": "HTML & CSS: design and build websites",
+        "url": "https://sites.math.duke.edu/courses/math_everywhere/assets/techRefs/HTML%20and%20CSS-%20Design%20and%20Build%20Websites_Jon%20Duckett_2011.pdf",
+        "type": "article"
+      },
+      {
+        "title": "HTML Tutorial for Beginners: HTML Crash Course",
+        "url": "https://www.youtube.com/watch?v=qz0aGYrrlhU",
+        "type": "video"
+      }
+    ]
+  },
+  "nXRjahYSDqfEqY26yfLEt": {
+    "title": "What is HTTP?",
+    "description": "HTTP (Hypertext Transfer Protocol) enables browser-server communication through requests and responses. Stateless protocol using methods like GET and POST. HTTPS provides encrypted security. Newer versions (HTTP/2, HTTP/3) offer improved performance. Fundamental for web development understanding.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Everything you need to know about HTTP",
+        "url": "https://cs.fyi/guide/http-in-depth",
+        "type": "article"
+      },
+      {
+        "title": "What is HTTP?",
+        "url": "https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/",
+        "type": "article"
+      },
+      {
+        "title": "How HTTPS Works",
+        "url": "https://howhttps.works/",
+        "type": "article"
+      },
+      {
+        "title": "HTTP/3 Is Now a Standard: Why Use It and How to Get Started",
+        "url": "https://thenewstack.io/http-3-is-now-a-standard-why-use-it-and-how-to-get-started/",
+        "type": "article"
+      }
+    ]
+  },
+  "0Q41Bm_TZqsC7X-MH8uFe": {
+    "title": "DNS",
+    "description": "DNS (Domain Name System) translates human-readable domain names into IP addresses through a global, decentralized server network. Enables easy internet navigation by converting names like [www.example.com](http://www.example.com) to numeric addresses browsers can connect to.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is DNS?",
+        "url": "https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/",
+        "type": "article"
+      },
+      {
+        "title": "Mess with DNS - DNS Playground",
+        "url": "https://messwithdns.net/",
+        "type": "article"
+      },
+      {
+        "title": "How DNS works (comic)",
+        "url": "https://howdns.works/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about DNS",
+        "url": "https://app.daily.dev/tags/dns?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "DNS and How does it Work?",
+        "url": "https://www.youtube.com/watch?v=Wj0od2ag5sk",
+        "type": "video"
+      }
+    ]
+  },
+  "oRjacb1OqAlsP-YB16Nuy": {
+    "title": "Domain names",
+    "description": "Domain names are human-friendly web addresses (e.g., [google.com](http://google.com)) substituting numerical IP addresses. Comprise second-level (\"google\") and top-level (\".com\") domains. Registered through registrars, essential for branding and online presence. DNS translates names to IP addresses for accessibility.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is a Domain Name?",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name",
+        "type": "article"
+      },
+      {
+        "title": "What is a domain name? | Domain name vs. URL",
+        "url": "https://www.cloudflare.com/en-gb/learning/dns/glossary/what-is-a-domain-name/",
+        "type": "article"
+      },
+      {
+        "title": "What Is a Domain Name | Domain Names Explained",
+        "url": "https://www.youtube.com/watch?v=lMHzpBwPuG8",
+        "type": "video"
+      }
+    ]
+  },
+  "4gvPprSH7hRS4gtXNMcCF": {
+    "title": "Browsers",
+    "description": "Web browsers request and display websites by interpreting HTML, CSS, and JavaScript. Use rendering engines (Blink, Gecko) for display and JavaScript engines (V8) for code execution. Handle security, bookmarks, history, and user interactions for web navigation.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "How Browsers Work",
+        "url": "https://www.ramotion.com/blog/what-is-web-browser/",
+        "type": "article"
+      },
+      {
+        "title": "Populating the Page: How Browsers Work",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Browsers",
+        "url": "https://app.daily.dev/tags/browsers?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "How Do Web Browsers Work?",
+        "url": "https://www.youtube.com/watch?v=5rLFYtXHo9s",
+        "type": "video"
+      }
+    ]
+  },
+  "t9KmPbRh6pkfouPi1mBqJ": {
+    "title": "Hosting",
+    "description": "Web hosting stores website files on servers, making sites accessible online. Types include shared (multiple sites per server) and dedicated (exclusive server) hosting. Providers offer additional services like email, domains, and security certificates. Critical for website performance and accessibility.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "What is Web Hosting?",
+        "url": "https://www.namecheap.com/guru-guides/what-is-web-hosting/",
+        "type": "article"
+      },
+      {
+        "title": "Different Types of Web Hosting Explained",
+        "url": "https://www.youtube.com/watch?v=AXVZYzw8geg",
+        "type": "video"
+      },
+      {
+        "title": "Where to Host a Fullstack Project on a Budget",
+        "url": "https://www.youtube.com/watch?v=Kx_1NYYJS7Q",
+        "type": "video"
+      }
+    ]
+  },
+  "6vGbvRsmQgOpRh8JJ3RF_": {
+    "title": "What is SEO?",
+    "description": "Search Engine Optimization, or SEO, is the practice of improving your website to increase its visibility when people search for products or services related to your business in search engines like Google. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your business. A related concept, Generative Engine Optimization (GEO), focuses on optimizing content for AI-powered search experiences, ensuring your information is accurately and effectively presented in AI-generated summaries and responses.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Search Engine Optimization (SEO) Starter Guide",
+        "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        "type": "article"
+      },
+      {
+        "title": "What Is SEO?",
+        "url": "https://exposureninja.com/blog/what-is-seo/",
+        "type": "article"
+      },
+      {
+        "title": "GEO (Generative Engine Optimization) vs SEO (Search Engine Optimization): What’s The Difference?",
+        "url": "https://writesonic.com/blog/geo-vs-seo",
+        "type": "article"
+      },
+      {
+        "title": "SEO In 5 Minutes | What Is SEO And How Does It Work",
+        "url": "https://www.youtube.com/watch?v=MYE6T_gd7H0",
+        "type": "video"
+      },
+      {
+        "title": "Why Generative Engine Optimisation (GEO) is the FUTURE of SEO",
+        "url": "https://www.youtube.com/watch?v=FoIc8LkSETo",
+        "type": "video"
+      }
+    ]
+  },
+  "0CHn_ubTBRWgrYGy0moZh": {
+    "title": "How the web works",
+    "description": "The internet is a global network connecting computers and devices for information sharing. Enables browsing, email, streaming, and communication through interconnected systems. Acts as worldwide infrastructure facilitating access to online resources and services.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Introduction to the Internet",
+        "url": "https://roadmap.sh/guides/what-is-internet",
+        "type": "article"
+      },
+      {
+        "title": "How does the Internet Work?",
+        "url": "https://cs.fyi/guide/how-does-internet-work",
+        "type": "article"
+      },
+      {
+        "title": "How does the Internet work? | MDN Dcos",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work",
+        "type": "article"
+      },
+      {
+        "title": "How the Internet Works in 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=7_LPdttKXPc",
+        "type": "video"
+      }
+    ]
+  },
+  "nOIijMH-3TvcO1KL6qzwf": {
+    "title": "Tags and Attributes",
+    "description": "",
+    "links": []
+  },
+  "-ME4w8Bm5krSH14Yno4E5": {
+    "title": "HTML Comments",
+    "description": "",
+    "links": []
+  },
+  "qXcn_AGcGWjT8GgjaW5WN": {
+    "title": "Case Insensitivity",
+    "description": "",
+    "links": []
+  },
+  "IUsaaRxiuOn3y9uYbpsJ0": {
+    "title": "Whitespaces",
+    "description": "",
+    "links": []
+  },
+  "VscH3rVqpX29vaKmdCMop": {
+    "title": "!DOCTYPE",
+    "description": "",
+    "links": []
+  },
+  "93tSk4RwWfkfOyaA7I9Gn": {
+    "title": "body",
+    "description": "",
+    "links": []
+  },
+  "fP2cPskF9KzppZUhfyB8U": {
+    "title": "html",
+    "description": "",
+    "links": []
+  },
+  "ceAHMWQeaqURKWy628QBH": {
+    "title": "meta",
+    "description": "",
+    "links": []
+  },
+  "Ufgy4-kC2drCov4MqEhjy": {
+    "title": "head",
+    "description": "",
+    "links": []
+  },
+  "MjGfRzhVZRxu545TbJ1AJ": {
+    "title": "Basic Tags",
+    "description": "",
+    "links": []
+  },
+  "AmIRWclu6IYViWHXnGA8U": {
+    "title": "h1 to h6",
+    "description": "",
+    "links": []
+  },
+  "efddQv5AZqvGmIyuYuCr7": {
+    "title": "b / strong",
+    "description": "",
+    "links": []
+  },
+  "SS7JmTrySRmRlzInvRJxw": {
+    "title": "title",
+    "description": "",
+    "links": []
+  },
+  "9EGwQalXfVGpVcMpTeD4V": {
+    "title": "i / em",
+    "description": "",
+    "links": []
+  },
+  "czmIvZYONFDxB2UNpT8U1": {
+    "title": "p",
+    "description": "",
+    "links": []
+  },
+  "9S2IUUWVv_Q7ZfD7VqfhH": {
+    "title": "mark",
+    "description": "",
+    "links": []
+  },
+  "Bdu0_AcAADs7YiCaHte1g": {
+    "title": "hr",
+    "description": "",
+    "links": []
+  },
+  "JU8Ff3DSCn_db0K7-P-Op": {
+    "title": "sub",
+    "description": "",
+    "links": []
+  },
+  "cBKw3jiAvdXVwUryV1aJl": {
+    "title": "br",
+    "description": "",
+    "links": []
+  },
+  "o1rSXBsjhD-sN0FdOK_dm": {
+    "title": "sup",
+    "description": "",
+    "links": []
+  },
+  "-2BvwJsqa5K8Tb8oSDUC8": {
+    "title": "pre",
+    "description": "",
+    "links": []
+  },
+  "wmAps9IeAvOxcqBqgUAXN": {
+    "title": "Links",
+    "description": "",
+    "links": []
+  },
+  "ksKI4TDz4_9IcmNORczWo": {
+    "title": "Textual Tags",
+    "description": "",
+    "links": []
+  },
+  "ihP3FIRMr8iQTdOja_CxV": {
+    "title": "div",
+    "description": "",
+    "links": []
+  },
+  "f7-umBvAzDZxHtHgJMCj6": {
+    "title": "span",
+    "description": "",
+    "links": []
+  },
+  "Wu3oW_gnjKTYV8QJHdNxi": {
+    "title": "Grouping text",
+    "description": "",
+    "links": []
+  },
+  "PikSDs0EZ93RauZc_GDEw": {
+    "title": "id",
+    "description": "",
+    "links": []
+  },
+  "GpaI2IDHDOZjyT3AZMbYD": {
+    "title": "style",
+    "description": "",
+    "links": []
+  },
+  "R0mDuO5V5NJI8Yupc_i8i": {
+    "title": "class",
+    "description": "",
+    "links": []
+  },
+  "7iDMmYQ-2Q6hrrFnUgRuP": {
+    "title": "Data Attributes",
+    "description": "",
+    "links": []
+  },
+  "xgw2ux-2Poml1fjWxjFsu": {
+    "title": "Standard attributes",
+    "description": "",
+    "links": []
+  },
+  "ePOzN3Sh5tCYlAbsweWU0": {
+    "title": "Ordered lists",
+    "description": "",
+    "links": []
+  },
+  "pEcxDj3dSgAwxydwKWU7d": {
+    "title": "Definition lists",
+    "description": "",
+    "links": []
+  },
+  "LKn40uz56vYrPnLG3I-CY": {
+    "title": "Unordered lists",
+    "description": "",
+    "links": []
+  },
+  "wDBnbKni0SamOqNhnp87B": {
+    "title": "Nested lists",
+    "description": "",
+    "links": []
+  },
+  "B-Bv4aY_tGgWakyT8TgEe": {
+    "title": "blockquote",
+    "description": "",
+    "links": []
+  },
+  "PE_WoH4nbGAJSJT14Qli0": {
+    "title": "cite",
+    "description": "",
+    "links": []
+  },
+  "Xprekf2SY1fevcR2P5gRw": {
+    "title": "q",
+    "description": "",
+    "links": []
+  },
+  "jfC0Og9340AK7b3Fhp4WI": {
+    "title": "dfn",
+    "description": "",
+    "links": []
+  },
+  "aeovzlUV4oWwZCMcAoRVC": {
+    "title": "abbr",
+    "description": "",
+    "links": []
+  },
+  "PGKWhfXEd3Iv0AIhL7y4_": {
+    "title": "address",
+    "description": "",
+    "links": []
+  },
+  "v3Uf4LTfCbyasNJ-2Vfj9": {
+    "title": "del",
+    "description": "",
+    "links": []
+  },
+  "Hx8mfbfkvRrBqLypE_NL3": {
+    "title": "s",
+    "description": "",
+    "links": []
+  },
+  "G_hZBbIGOLn1-sh1jROL3": {
+    "title": "ins",
+    "description": "",
+    "links": []
+  },
+  "0AF0Xs2nWVZav9t5Eh9NX": {
+    "title": "header",
+    "description": "",
+    "links": []
+  },
+  "99wo0cNHe0sU63_aDBrxY": {
+    "title": "article",
+    "description": "",
+    "links": []
+  },
+  "4uKQubirOgXz9ZvfR9cWa": {
+    "title": "nav",
+    "description": "",
+    "links": []
+  },
+  "VahoGEC6I3jX1916MsmUY": {
+    "title": "aside",
+    "description": "",
+    "links": []
+  },
+  "InNY2DPYlnZaeBG9X_sMI": {
+    "title": "main",
+    "description": "",
+    "links": []
+  },
+  "rjE1yjFZ6KBWXgXDRIZc1": {
+    "title": "footer",
+    "description": "",
+    "links": []
+  },
+  "1WvHjkclwT-LUGdeuygzV": {
+    "title": "section",
+    "description": "",
+    "links": []
+  },
+  "ievbuvgPKo261hM-9F117": {
+    "title": "Inline CSS",
+    "description": "",
+    "links": []
+  },
+  "PhC4amuHcgxujOJisNsIr": {
+    "title": "External CSS",
+    "description": "",
+    "links": []
+  },
+  "1uhThwxjHgXPu_i1__1eE": {
+    "title": "Internal CSS",
+    "description": "",
+    "links": []
+  },
+  "YHoag7UR40OeIVUjfhQg_": {
+    "title": "Accesibility",
+    "description": "",
+    "links": []
+  },
+  "yEl77JIN5-ixN5Ay247qp": {
+    "title": "Basics of SEO",
+    "description": "",
+    "links": []
+  },
+  "b83npHc-R9M03hEGzA9Ha": {
+    "title": "HTML",
+    "description": "HTML (HyperText Markup Language) is the standard markup language for creating web pages. It provides the structure of a webpage, defining elements like headings, paragraphs, images, and links using tags. Web browsers interpret these tags to display the content to users.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "HTML MDN Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "type": "article"
+      },
+      {
+        "title": "HTML | Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/HTML",
+        "type": "article"
+      }
+    ]
+  },
+  "fX71CXA26cUxY5WX_zABi": {
+    "title": "CSS",
+    "description": "CSS, or Cascading Style Sheets, is a language used to describe the look and formatting of a document written in HTML. It controls things like the layout, colors, fonts, and overall visual presentation of web pages, ensuring a consistent and appealing user experience across different devices and screen sizes.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "CSS MDN Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS",
+        "type": "article"
+      },
+      {
+        "title": "CSS | Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/CSS",
+        "type": "article"
+      },
+      {
+        "title": "HTML & CSS: design and build websites",
+        "url": "https://sites.math.duke.edu/courses/math_everywhere/assets/techRefs/HTML%20and%20CSS-%20Design%20and%20Build%20Websites_Jon%20Duckett_2011.pdf",
+        "type": "article"
+      },
+      {
+        "title": "CSS Tutorial – Full Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=OXGznpKZ_sA",
+        "type": "video"
+      }
+    ]
+  },
+  "F-9uI39S9oYVGA8hi7aZI": {
+    "title": "JavaScript",
+    "description": "JavaScript is a programming language primarily used to create interactive and dynamic effects within web browsers. It allows developers to implement complex features on web pages, updating content dynamically, controlling multimedia, animating images, and much more, enhancing the user experience beyond static HTML and CSS.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "You Don't Know JS Yet (book series)",
+        "url": "https://github.com/getify/You-Dont-Know-JS",
+        "type": "opensource"
+      },
+      {
+        "title": "Visit the dedicated JavaScript Roadmap",
+        "url": "https://roadmap.sh/javascript",
+        "type": "article"
+      },
+      {
+        "title": "JavaScript MDN Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "type": "article"
+      },
+      {
+        "title": "The Modern JavaScript Tutorial",
+        "url": "https://javascript.info/",
+        "type": "article"
+      },
+      {
+        "title": "Eloquent JavaScript textbook",
+        "url": "https://eloquentjavascript.net/",
+        "type": "article"
+      },
+      {
+        "title": "JavaScript Crash Course for Beginners",
+        "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+        "type": "video"
+      }
+    ]
+  },
+  "Ego3XwBDgqlXOj6jSNvpy": {
+    "title": "HTML Entities",
+    "description": "",
+    "links": []
+  },
+  "94HB2gvHgcEIeFQTlbVDu": {
+    "title": "Images",
+    "description": "",
+    "links": []
+  },
+  "mWc4HuNQACXGpJjEPa79j": {
+    "title": "Video",
+    "description": "",
+    "links": []
+  },
+  "k8FZPxFcDPVnXBONWUhME": {
+    "title": "Audio",
+    "description": "",
+    "links": []
+  },
+  "W0pWVr4cdxSan9Ceu5t7i": {
+    "title": "iframe",
+    "description": "",
+    "links": []
+  },
+  "oHbzYpFInyr5aKCe-NWkC": {
+    "title": "Lists and Types",
+    "description": "",
+    "links": []
+  },
+  "3P9p18a9EjbjjMtzpoVRN": {
+    "title": "Table Tag",
+    "description": "",
+    "links": []
+  },
+  "UevJNi2HHNzpCAx7Icd0k": {
+    "title": "Embedding Media",
+    "description": "",
+    "links": []
+  },
+  "f5O_U9dt0b73ZhLrWWz2L": {
+    "title": "img vs figure",
+    "description": "",
+    "links": []
+  },
+  "znqYy9Tgfpe-qakjRr7KU": {
+    "title": "Priority Hints",
+    "description": "",
+    "links": []
+  },
+  "P_wR4dwto2NKrvTRbdBIX": {
+    "title": "Using Forms",
+    "description": "",
+    "links": []
+  },
+  "9R5WYPxlChmz6bevJUwsT": {
+    "title": "Labels and Inputs",
+    "description": "",
+    "links": []
+  },
+  "6NvYDlYYLZzf4IHXu0dWs": {
+    "title": "Form Validation",
+    "description": "",
+    "links": []
+  },
+  "HxgDw9gh1vHiMIMyZW8H2": {
+    "title": "Limitations",
+    "description": "",
+    "links": []
+  },
+  "-UlDLjC8VsrKB9yexMtlr": {
+    "title": "File Uploads",
+    "description": "",
+    "links": []
+  },
+  "aJTXstcrsINdov7yrH8cE": {
+    "title": "Semantic Markup",
+    "description": "",
+    "links": []
+  },
+  "9FAlTHlRj_DVjbpuiGRzD": {
+    "title": "CSP",
+    "description": "",
+    "links": []
+  },
+  "51NlCt5pvWNfa70WaE2M4": {
+    "title": "Styling Basics",
+    "description": "",
+    "links": []
+  },
+  "5Ze6iqSnZLpQWnhUSGQOE": {
+    "title": "Including JavaScript",
+    "description": "",
+    "links": []
+  }
+}

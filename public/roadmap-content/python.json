@@ -111,7 +111,7 @@
   },
   "fNTb9y3zs1HPYclAmu_Wv": {
     "title": "Exceptions",
-    "description": "Python exceptions are events that occur during the execution of a program and disrupt the normal flow of the program's instructions. When an exception is raised, it indicates that an error has occurred. Python provides a way to handle these exceptions using try-except blocks, allowing developers to manage errors gracefully and ensure the program can continue or exit smoothly.",
+    "description": "Visit the following resources to learn more:",
     "links": [
       {
         "title": "Exceptions Documentation",
@@ -184,7 +184,7 @@
   },
   "i7xIGiXU-k5UIKHIhQPjE": {
     "title": "Tuples",
-    "description": "Tuples are immutable sequences, meaning that once a tuple is created, its elements cannot be changed. Tuples are often used to store related pieces of information. They are defined by placing the elements inside parentheses () separated by commas.",
+    "description": "Visit the following resources to learn more:",
     "links": [
       {
         "title": "Tuples Documentation",
@@ -226,7 +226,7 @@
   },
   "bc9CL_HMT-R6nXO1eR-gP": {
     "title": "Dictionaries",
-    "description": "In Python, a dictionary is a built-in data type that allows you to store key-value pairs. Each key in the dictionary is unique, and each key is associated with a value. Starting from Python 3.7, dictionaries maintain the order of items as they were added.\n\nLearn more from the following resources:",
+    "description": "In Python, a dictionary is a built-in data type that allows you to store key-value pairs. Each key in the dictionary is unique, and each key is associated with a value. Starting from Python 3.7, dictionaries maintain the order of items as they were added.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Dictionaries in Python",
@@ -440,6 +440,11 @@
       {
         "title": "Data Structures Illustrated",
         "url": "https://www.youtube.com/playlist?list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY",
+        "type": "video"
+      },
+      {
+        "title": "DSA Python Playlist",
+        "url": "https://www.youtube.com/playlist?list=PLKYEe2WisBTFEr6laH5bR2J19j7sl5O8R",
         "type": "video"
       }
     ]
@@ -921,7 +926,7 @@
   },
   "XeQSmvAsGSTi8dd7QVHxn": {
     "title": "Fast API",
-    "description": "FastAPI is a Web framework for developing RESTful APIs in Python. FastAPI is based on Pydantic and type hints to validate, serialize, and deserialize data and automatically auto-generate OpenAPI documents.",
+    "description": "Visit the following resources to learn more:",
     "links": [
       {
         "title": "FastAPI Documentation",
@@ -994,7 +999,7 @@
   },
   "u4nRzWQ4zhDFMOrZ2I_uJ": {
     "title": "Concurrency",
-    "description": "Concurrency in Python allows multiple tasks to be executed simultaneously using different approaches. GIL (Global Interpreter Lock) limits thread execution, making multithreading less efficient for computational tasks, but suitable for I/O. Multiprocessing, using the multiprocessing module, allows multiple cores to be utilized, providing true parallelism. Asynchrony via asyncio is optimal for I/O operations, allowing thousands of connections to be processed simultaneously without blocking. The choice of approach depends on the nature of the task.\n\nLearn more about concurrency using the following resources:",
+    "description": "Concurrency in Python allows multiple tasks to be executed simultaneously using different approaches. GIL (Global Interpreter Lock) limits thread execution, making multithreading less efficient for computational tasks, but suitable for I/O. Multiprocessing, using the multiprocessing module, allows multiple cores to be utilized, providing true parallelism. Asynchrony via asyncio is optimal for I/O operations, allowing thousands of connections to be processed simultaneously without blocking. The choice of approach depends on the nature of the task.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Concurrent Execution",
@@ -1010,7 +1015,7 @@
   },
   "bS7WeVKm2kEElu3sBKcIC": {
     "title": "GIL",
-    "description": "GIL is a mechanism that allows only one thread to execute Python code at a time. This limitation is related to memory management in CPython and can reduce the efficiency of multithreaded applications on multi-core systems.\n\nLearn more about it using the following resources:",
+    "description": "GIL is a mechanism that allows only one thread to execute Python code at a time. This limitation is related to memory management in CPython and can reduce the efficiency of multithreaded applications on multi-core systems.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "What is GIL?",
@@ -1021,7 +1026,7 @@
   },
   "UIx0XYaOgXXlYbbQtjiPq": {
     "title": "Threading",
-    "description": "Multithreading allows multiple threads within a single process. However, because of GIL, threads cannot run in parallel on different cores, which makes multithreading suitable for I/O tasks (e.g., network requests) but not for computational tasks.\n\nLearn more from the following resources:",
+    "description": "Multithreading allows multiple threads within a single process. However, because of GIL, threads cannot run in parallel on different cores, which makes multithreading suitable for I/O tasks (e.g., network requests) but not for computational tasks.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Python Threading Library",
@@ -1037,7 +1042,7 @@
   },
   "HSY5OUc_M5S6OcFXPRtkx": {
     "title": "Multiprocessing",
-    "description": "Multiprocessing utilizes multiple processes, each with its own GIL. This allows full utilization of multiple processor cores, which is effective for computationally intensive tasks. Python's multiprocessing module supports creating processes and exchanging data between them.\n\nLearn more about multiprocessing with the following resources:",
+    "description": "Multiprocessing utilizes multiple processes, each with its own GIL. This allows full utilization of multiple processor cores, which is effective for computationally intensive tasks. Python's multiprocessing module supports creating processes and exchanging data between them.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Python Documentation",
@@ -1058,7 +1063,7 @@
   },
   "Mow7RvropbC4ZGDpcGZmw": {
     "title": "Asynchrony",
-    "description": "Asynchronous programming, supported by asyncio, allows code to be executed without blocking, using async and await. This is especially useful for I/O tasks such as networking or file manipulation, allowing thousands of connections to be handled without blocking the main thread.\n\nLearn more from the following resources:",
+    "description": "Asynchronous programming, supported by asyncio, allows code to be executed without blocking, using async and await. This is especially useful for I/O tasks such as networking or file manipulation, allowing thousands of connections to be handled without blocking the main thread.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Python AsyncIO library",
@@ -1074,7 +1079,7 @@
   },
   "p3Frfs6oxpuciUzeCEsvb": {
     "title": "uv",
-    "description": "uv is an \"extremely fast\" python package installer and resolver.\n\nLearn more from the following resources:",
+    "description": "uv is an \"extremely fast\" python package installer and resolver.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "astral-sh/uv",
@@ -1090,7 +1095,7 @@
   },
   "GHKAY9gOykEbxkEeR30wL": {
     "title": "pyproject.toml",
-    "description": "This file is used to define the project configuration and dependencies. It is a configuration file that contains metadata about the project, such as its name, version, dependencies, and build settings. The `pyproject.toml` file is used by tools like `poetry` and `flit` to manage Python projects and their dependencies.\n\nLearn more from the following resources:",
+    "description": "This file is used to define the project configuration and dependencies. It is a configuration file that contains metadata about the project, such as its name, version, dependencies, and build settings. The `pyproject.toml` file is used by tools like `poetry` and `flit` to manage Python projects and their dependencies.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Writing pyproject.toml files",
@@ -1101,7 +1106,7 @@
   },
   "IWq-tfkz-pSC1ztZl60vM": {
     "title": "Pipenv",
-    "description": "Pipeline Environment (pipenv) is a tool that aims to bring the best of all packaging worlds (bundled, requirements.txt, [setup.py](http://setup.py), setup.cfg, etc.) to the Python world. It automatically creates and manages a virtualenv for your projects, as well as adds/removes packages from your Pipfile as you install/uninstall packages. It also generates the ever-important Pipfile.lock, which is used to produce deterministic builds.\n\nLearn more from the following resources:",
+    "description": "Pipeline Environment (pipenv) is a tool that aims to bring the best of all packaging worlds (bundled, requirements.txt, [setup.py](http://setup.py), setup.cfg, etc.) to the Python world. It automatically creates and manages a virtualenv for your projects, as well as adds/removes packages from your Pipfile as you install/uninstall packages. It also generates the ever-important Pipfile.lock, which is used to produce deterministic builds.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Pipenv Documentation",
@@ -1112,7 +1117,7 @@
   },
   "_IXXTSwQOgYzYIUuKVWNE": {
     "title": "virtualenv",
-    "description": "`virtualenv` is a tool to create isolated Python environments. It creates a folder which contains all the necessary executables to use the packages that a Python project would need.\n\nLearn more from the following resources:",
+    "description": "`virtualenv` is a tool to create isolated Python environments. It creates a folder which contains all the necessary executables to use the packages that a Python project would need.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Virtual Environments",
@@ -1123,7 +1128,7 @@
   },
   "N5VaKMbgQ0V_BC5tadV65": {
     "title": "pyenv",
-    "description": "pyenv is a tool for managing multiple versions of the Python programming language on Unix-like systems. It works by setting environment variables to point to the directory where the desired version of Python is installed. This allows you to switch between different versions of Python without having to modify your system's default Python installation.\n\nLearn more from the following resources:",
+    "description": "pyenv is a tool for managing multiple versions of the Python programming language on Unix-like systems. It works by setting environment variables to point to the directory where the desired version of Python is installed. This allows you to switch between different versions of Python without having to modify your system's default Python installation.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "pyenv/pyenv",
@@ -1134,7 +1139,7 @@
   },
   "1PXApuUpPmJjgi12cmWo4": {
     "title": "Static Typing",
-    "description": "Static typing can be a powerful tool to help you catch bugs before they happen. It can also help you understand the code you're working with, and make it easier to maintain and refactor.\n\nLearn more from the following resources:",
+    "description": "Static typing can be a powerful tool to help you catch bugs before they happen. It can also help you understand the code you're working with, and make it easier to maintain and refactor.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Static Typing in Python",
@@ -1145,7 +1150,7 @@
   },
   "W3VALz5evFo1qqkQbMN1R": {
     "title": "Pydantic",
-    "description": "Pydantic is a python library for data validation and settings management using python type annotations.\n\nLearn more from the following resources:",
+    "description": "Pydantic is a python library for data validation and settings management using python type annotations.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Pydantic Documentation",
@@ -1172,7 +1177,7 @@
   },
   "1q9HWgu9jDTK757hTNOmE": {
     "title": "pyright",
-    "description": "pyright is a static type checker for Python. It is a Microsoft product and is written in TypeScript. It is a language server that uses the Language Server Protocol (LSP) to communicate with the editor. It is a good alternative to mypy and pytype.\n\nLearn more from the following resources:",
+    "description": "pyright is a static type checker for Python. It is a Microsoft product and is written in TypeScript. It is a language server that uses the Language Server Protocol (LSP) to communicate with the editor. It is a good alternative to mypy and pytype.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Pyright Documentation",
@@ -1183,7 +1188,7 @@
   },
   "9mFR_ueXbIB2IrkqU2s85": {
     "title": "pyre",
-    "description": "pyrefly is a static type checker for Python. It is a tool that helps you find type errors in your Python code. Pyre is designed to be fast, scalable, and easy to use. It is used at Facebook to help developers catch type errors before they make it to production.\n\nLearn more from the following resources:",
+    "description": "pyrefly is a static type checker for Python. It is a tool that helps you find type errors in your Python code. Pyre is designed to be fast, scalable, and easy to use. It is used at Facebook to help developers catch type errors before they make it to production.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "pyrefly Documentation",
@@ -1210,7 +1215,7 @@
   },
   "6cB0pvUO1-gvCtgqozP-Q": {
     "title": "ruff",
-    "description": "An extremely fast Python linter and code formatter, written in Rust.",
+    "description": "Visit the following resources to learn more:",
     "links": [
       {
         "title": "Ruff documentation",
@@ -1221,7 +1226,7 @@
   },
   "DS6nuAUhUYcqiJDmQisKM": {
     "title": "black",
-    "description": "black is a code formatter for Python. It is a tool that automatically formats Python code to adhere to the PEP 8 style guide. It is a great tool to use in your Python projects to ensure that your code is formatted consistently and correctly.",
+    "description": "Visit the following resources to learn more:",
     "links": [
       {
         "title": "Getting Started with Black",
@@ -1237,7 +1242,7 @@
   },
   "tsh_vbhzKz1-H9Vh69tsK": {
     "title": "yapf",
-    "description": "yapf is a formatter for Python files. It is a tool that automatically formats Python code to conform to the PEP 8 style guide. It is similar to black but has more configuration options.\n\nLearn more from the following resources:",
+    "description": "yapf is a formatter for Python files. It is a tool that automatically formats Python code to conform to the PEP 8 style guide. It is similar to black but has more configuration options.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "google/yapf",
@@ -1395,7 +1400,7 @@
   },
   "o1wi39VnjnFfWIC8XcuAK": {
     "title": "typing",
-    "description": "Typing is a module in Python that provides runtime support for type hints. The typing module defines a standard set of names that can be used to describe types in the Python language. The typing module was added to the standard library in Python 3.5.",
+    "description": "Visit the following resources to learn more:",
     "links": [
       {
         "title": "Typing Module",
@@ -1406,7 +1411,7 @@
   },
   "jPFOiwbqfaGshaGDBWb5x": {
     "title": "tox",
-    "description": "Tox is a tool for automating test environment management and testing against multiple interpreter configurations. It is particularly useful for Python codebase that need to support multiple versions of Python.\n\nLearn more about tox from the following resources:",
+    "description": "Tox is a tool for automating test environment management and testing against multiple interpreter configurations. It is particularly useful for Python codebase that need to support multiple versions of Python.\n\nVisit the following resources to learn more:",
     "links": [
       {
         "title": "Tox Documentation",

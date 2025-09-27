@@ -1,0 +1,767 @@
+{
+  "Lod4cyZLuaCMmQ3-GkH8Z": {
+    "title": "Introduction to Kotlin",
+    "description": "",
+    "links": []
+  },
+  "4PrkkoZ5fY-oow0O-bVhu": {
+    "title": "Why use Kotlin",
+    "description": "",
+    "links": []
+  },
+  "SLF_-a7Uwsl-fEqYiCIvF": {
+    "title": "History of Kotlin",
+    "description": "",
+    "links": []
+  },
+  "id1ai__oCcB32i2hsiesC": {
+    "title": "Java Interoperability",
+    "description": "",
+    "links": []
+  },
+  "vDWwBv0KF_S88cQFtnDVB": {
+    "title": "val vs var",
+    "description": "",
+    "links": []
+  },
+  "s7hNf7C-IO-EoEtzbg3qb": {
+    "title": "Variables",
+    "description": "",
+    "links": []
+  },
+  "uMTIONS6pAxrdh7zoDHIz": {
+    "title": "Integers",
+    "description": "",
+    "links": []
+  },
+  "mY6B8kIe6dGjHes-qm0jp": {
+    "title": "Strings",
+    "description": "",
+    "links": []
+  },
+  "liEMxRi675sNpqf950GXS": {
+    "title": "Floats",
+    "description": "",
+    "links": []
+  },
+  "eoV8P756JUNC87FhsA2DG": {
+    "title": "Arrays",
+    "description": "",
+    "links": []
+  },
+  "g0bGnHk9WoSF6GsHLSicv": {
+    "title": "Unsigned Integers",
+    "description": "",
+    "links": []
+  },
+  "YX5BhDgJ5NjASPc7kYySG": {
+    "title": "Type Inference",
+    "description": "",
+    "links": []
+  },
+  "Z0NaGuewAo9QO-T4BGBr4": {
+    "title": "Booleans",
+    "description": "",
+    "links": []
+  },
+  "3ihCc-dNSKb_32qj0EF5j": {
+    "title": "Type Checks & Casts",
+    "description": "",
+    "links": []
+  },
+  "vTAV9gzVDTJdnQ-BNktT_": {
+    "title": "Characters",
+    "description": "",
+    "links": []
+  },
+  "0K0aFQPi3CnB8BAAA2pIs": {
+    "title": "Data types",
+    "description": "",
+    "links": []
+  },
+  "vk146kvcjWYdweOeJIM9h": {
+    "title": "print & println",
+    "description": "",
+    "links": []
+  },
+  "oQe1JVwYnLDNfvi-s7BQX": {
+    "title": "String Templates",
+    "description": "",
+    "links": []
+  },
+  "Yr7DSqmOAOe15574qBrIT": {
+    "title": "Printing data",
+    "description": "",
+    "links": []
+  },
+  "0iZ9qfst8yw08cTW8d-Nx": {
+    "title": "Lists",
+    "description": "",
+    "links": []
+  },
+  "KeZhyjPFuuBwWPLXgyGs2": {
+    "title": "Maps",
+    "description": "",
+    "links": []
+  },
+  "GKRPXFLWsnLIXw8OS_DlK": {
+    "title": "Sets",
+    "description": "",
+    "links": []
+  },
+  "x7Ok7RObQOQPTS3fBTHaF": {
+    "title": "Collections",
+    "description": "",
+    "links": []
+  },
+  "LZlkx9YYylodmjUXxnj7a": {
+    "title": "Ranges",
+    "description": "",
+    "links": []
+  },
+  "o-iGCtrwA3AVbrBJW_7u3": {
+    "title": "Progressions",
+    "description": "",
+    "links": []
+  },
+  "2oS2FhszadxPm9eg2VTUV": {
+    "title": "if",
+    "description": "",
+    "links": []
+  },
+  "zJT9KVWYIbDTsGp5tTJEh": {
+    "title": "when",
+    "description": "",
+    "links": []
+  },
+  "-fp4xlFS4iAzRxXKIaiIO": {
+    "title": "Conditional Expressions",
+    "description": "",
+    "links": []
+  },
+  "-JmIDPedgVOw2RpIhYNv2": {
+    "title": "for",
+    "description": "",
+    "links": []
+  },
+  "Lfdvpef2gXVdqr4e1dCHw": {
+    "title": "Label Loops",
+    "description": "",
+    "links": []
+  },
+  "qNupY4DnTFYZrGEQJPXcw": {
+    "title": "while",
+    "description": "",
+    "links": []
+  },
+  "hRcMw3NHSOy2TVympIYaf": {
+    "title": "Loops",
+    "description": "",
+    "links": []
+  },
+  "8_u8eKhWHESek7pfpaOln": {
+    "title": "Throwing Exceptions",
+    "description": "",
+    "links": []
+  },
+  "VKDnV_Xlmj3lurkN_ZirD": {
+    "title": "Catching Exceptions",
+    "description": "",
+    "links": []
+  },
+  "zYmuAlJVJbDEU9qJo-n8p": {
+    "title": "Exceptions",
+    "description": "",
+    "links": []
+  },
+  "cFExAjlc_ATE8V9EWE5on": {
+    "title": "Lambda Functions",
+    "description": "",
+    "links": []
+  },
+  "9IIvovotEnTiNzVovWOiW": {
+    "title": "parameters",
+    "description": "",
+    "links": []
+  },
+  "HrjELmsiLAyxK6ru3ifgb": {
+    "title": "Local Functions",
+    "description": "",
+    "links": []
+  },
+  "EXFJKm3FLX3OehSX8mBFO": {
+    "title": "Member Functions",
+    "description": "",
+    "links": []
+  },
+  "B2cxzgsEpeSzGATX4WNeO": {
+    "title": "varargs",
+    "description": "",
+    "links": []
+  },
+  "Q9MQRfJuvXL3YluwJ1CfF": {
+    "title": "Higher-order Functions﻿",
+    "description": "",
+    "links": []
+  },
+  "0lUpMxlIXOuze0-cOgyHp": {
+    "title": "Standard functions",
+    "description": "",
+    "links": []
+  },
+  "gVXXMYVlZZ5CHPBwGlGmZ": {
+    "title": "return",
+    "description": "",
+    "links": []
+  },
+  "Ikv5K8lKG0vlA7WheGQHY": {
+    "title": "Tail-recursive Functions",
+    "description": "",
+    "links": []
+  },
+  "7BYTt5_wILzkbYmQW1Xny": {
+    "title": "Anonymous Functions",
+    "description": "",
+    "links": []
+  },
+  "jpijY-Wbe6yNXZeNodpNt": {
+    "title": "Extension Functions",
+    "description": "",
+    "links": []
+  },
+  "WoPaR-IylckAixqAAwkeg": {
+    "title": "Function Types",
+    "description": "",
+    "links": []
+  },
+  "D4G8DOX5b39Rxw2FtgnjQ": {
+    "title": "read-only vs mutable",
+    "description": "",
+    "links": []
+  },
+  "LLC--5n2K19hVvMuQ5nIO": {
+    "title": "Sequences",
+    "description": "",
+    "links": []
+  },
+  "H1794CAM_XqNJVT1LkXRG": {
+    "title": "Iterators",
+    "description": "",
+    "links": []
+  },
+  "gR2pyEoMFPg6ha3YULRAR": {
+    "title": "Transformations",
+    "description": "",
+    "links": []
+  },
+  "l4-AiY4mfwstDzxIASESe": {
+    "title": "Retrieving Collection Parts",
+    "description": "",
+    "links": []
+  },
+  "kHebnqaFOWOPgycYJCdyL": {
+    "title": "Filtering",
+    "description": "",
+    "links": []
+  },
+  "_L6O23eo-oYsxA3pNXhC-": {
+    "title": "Retrieving single elements",
+    "description": "",
+    "links": []
+  },
+  "A0wxD3ih-r8w2NAd2dOgS": {
+    "title": "plus & minus Operators",
+    "description": "",
+    "links": []
+  },
+  "95fcqMEswDxcIcdFjr81M": {
+    "title": "Ordering",
+    "description": "",
+    "links": []
+  },
+  "oVq4WYOC5U-uHMDeufN2L": {
+    "title": "Grouping",
+    "description": "",
+    "links": []
+  },
+  "nRpmP5Nd2r4YKRNsmoscJ": {
+    "title": "Aggregate Operations",
+    "description": "",
+    "links": []
+  },
+  "oQaxtbqUb1jub9yfuyKTc": {
+    "title": "main  Function",
+    "description": "",
+    "links": []
+  },
+  "G3SKq-A6CBSzY7kMJIkHk": {
+    "title": "Comments",
+    "description": "",
+    "links": []
+  },
+  "PfXvx1jxcuR31Nm1Pia5M": {
+    "title": "Lists",
+    "description": "",
+    "links": []
+  },
+  "_4_NXfG-9jzLv9tNHP74E": {
+    "title": "Maps",
+    "description": "",
+    "links": []
+  },
+  "XbsKQ7192Kvze-6Un_W2q": {
+    "title": "Sets",
+    "description": "",
+    "links": []
+  },
+  "AW03C8g40fm5RUdVmAaZe": {
+    "title": "Creating Instances",
+    "description": "",
+    "links": []
+  },
+  "2DNh4oQet17AUQWvJ64fb": {
+    "title": "Class Members",
+    "description": "",
+    "links": []
+  },
+  "uiK2GDDnLzVbhq5erNxFL": {
+    "title": "Defining Classess",
+    "description": "",
+    "links": []
+  },
+  "8jkUleKbxXSxPHbeFUTGK": {
+    "title": "Abstract Class",
+    "description": "",
+    "links": []
+  },
+  "0bQsJ-CAOo7srxjSocc6Y": {
+    "title": "Extension Functions",
+    "description": "",
+    "links": []
+  },
+  "UYOkP-AYKf8aw92pGSXl_": {
+    "title": "Interfaces",
+    "description": "",
+    "links": []
+  },
+  "xkT2UmeP9c37giF169aWD": {
+    "title": "Constructors",
+    "description": "",
+    "links": []
+  },
+  "9tLiTYbNf9WnisvwBhObC": {
+    "title": "Methods",
+    "description": "",
+    "links": []
+  },
+  "2wbXYUOx1f4rmD5EHuzOw": {
+    "title": "Properties",
+    "description": "",
+    "links": []
+  },
+  "tjCG72uQt87-fIoBBzy0s": {
+    "title": "Nested & Inner Classes",
+    "description": "",
+    "links": []
+  },
+  "migCYrzhAQ4keUk1MHPpZ": {
+    "title": "Object Declarations",
+    "description": "",
+    "links": []
+  },
+  "rOpgM--1Q1mBYmK5AlYAY": {
+    "title": "Property Delegates",
+    "description": "",
+    "links": []
+  },
+  "aDgV966VKxzN0_vZ_oxRW": {
+    "title": "Inheritance",
+    "description": "",
+    "links": []
+  },
+  "yAT8zsAb-iJLFzTTYVJ4v": {
+    "title": "Visibility Modifiers",
+    "description": "",
+    "links": []
+  },
+  "aCOWSt8oeJD7jxnmHggiN": {
+    "title": "Data Classes",
+    "description": "",
+    "links": []
+  },
+  "HIy-sN0veS5atkJI2ffSu": {
+    "title": "Sealed Class",
+    "description": "",
+    "links": []
+  },
+  "yQx5zVNvsit5AnRlDJsZu": {
+    "title": "Class Generics",
+    "description": "",
+    "links": []
+  },
+  "qsDphbFvDu7PEDKt7k0JC": {
+    "title": "Enum Class",
+    "description": "",
+    "links": []
+  },
+  "rCNP0MYQhLgYRMzu3JTxP": {
+    "title": "Inline Class",
+    "description": "",
+    "links": []
+  },
+  "d2KZMmwOG29uLnTP3tU_o": {
+    "title": "Type Aliases",
+    "description": "",
+    "links": []
+  },
+  "7xmKy-sipKYv8k-WYTulA": {
+    "title": "Nullable vs Non-nullable",
+    "description": "",
+    "links": []
+  },
+  "xId8W3jQNhGJJvXFCcXir": {
+    "title": "Nullability Check Operators",
+    "description": "",
+    "links": []
+  },
+  "Vh_rxz7BsX6ZB777fTkXz": {
+    "title": "What is Null Safety?",
+    "description": "",
+    "links": []
+  },
+  "QmfR2rJMP7o_meBR8wIpK": {
+    "title": "Safe Casts",
+    "description": "",
+    "links": []
+  },
+  "lV108QhOIYF_6CW-UKybx": {
+    "title": "Coroutines",
+    "description": "",
+    "links": []
+  },
+  "kVHtQQGhgIdJcQO0yynqG": {
+    "title": "Suspending Functions",
+    "description": "",
+    "links": []
+  },
+  "hvApxzNV0ly2Ck7_UuX3J": {
+    "title": "Coroutines Builders",
+    "description": "",
+    "links": []
+  },
+  "x5KaFoEEYNjR1a-4KlIcd": {
+    "title": "Coroutines Behavior",
+    "description": "",
+    "links": []
+  },
+  "e6h0Xi4ReqLa6VJc1VJYG": {
+    "title": "Asynchronous Flow",
+    "description": "",
+    "links": []
+  },
+  "ftCSs-gbgOdzZ2QFbEpEF": {
+    "title": "Coroutines Best practices ",
+    "description": "",
+    "links": []
+  },
+  "jcXt2Op2VDy6BbHzrqVyr": {
+    "title": "Understanding Packages",
+    "description": "",
+    "links": []
+  },
+  "sCmAS0uEg2rZbNITYII5i": {
+    "title": "Importing Packages",
+    "description": "",
+    "links": []
+  },
+  "FhBQsozNCYTaWwCsDDVyq": {
+    "title": "Standard Library",
+    "description": "",
+    "links": []
+  },
+  "cPiTsuFCkMZciOr9Wp9ID": {
+    "title": "Default Imports",
+    "description": "",
+    "links": []
+  },
+  "s900IAqx50Pg7ngDmGLLG": {
+    "title": "Opt-in Requirements",
+    "description": "",
+    "links": []
+  },
+  "GC4hGG4v8F-8bHQTdlDWG": {
+    "title": "Gradle",
+    "description": "",
+    "links": []
+  },
+  "fln83FunYP4v_0jNfNtXx": {
+    "title": "Kotlin Libraries",
+    "description": "",
+    "links": []
+  },
+  "2_jmtc-zIQ7SuPNccHyXw": {
+    "title": "Test Library",
+    "description": "",
+    "links": []
+  },
+  "y14epi1_XqCPHJBZecq_M": {
+    "title": "Coroutines",
+    "description": "",
+    "links": []
+  },
+  "TyuUD4479UXsbRY9nOGno": {
+    "title": "Serialization",
+    "description": "",
+    "links": []
+  },
+  "oTHsTW8zVcamI1DcqH2o9": {
+    "title": "I/O Library",
+    "description": "",
+    "links": []
+  },
+  "bohaQpYQH9kMssn4kVDxA": {
+    "title": "Date & Time",
+    "description": "",
+    "links": []
+  },
+  "rvPHK5Je3y4hPUKeaO00Q": {
+    "title": "JVM Metadata",
+    "description": "",
+    "links": []
+  },
+  "mkGY2gTa5_ykZnoRMEvnm": {
+    "title": "Gradle Pluggins",
+    "description": "",
+    "links": []
+  },
+  "B1PAHsUITg5NtxllZ1OsR": {
+    "title": "Build Tools",
+    "description": "",
+    "links": []
+  },
+  "7j55MuqI7BqRtwvTAQU6D": {
+    "title": "Maven",
+    "description": "",
+    "links": []
+  },
+  "JP4S5PgiWS7_WF_JFWvas": {
+    "title": "Build Tool API",
+    "description": "",
+    "links": []
+  },
+  "wDBRLUYhlnkPr-rIpnY8G": {
+    "title": "Documentation",
+    "description": "",
+    "links": []
+  },
+  "vlMxe68Xp-YrC3gUXfzwr": {
+    "title": "Dokka",
+    "description": "",
+    "links": []
+  },
+  "ipV1RoEkn9-yKD98nB4dC": {
+    "title": "KDoc",
+    "description": "",
+    "links": []
+  },
+  "zlyP0oCA5I5x5fHphutmd": {
+    "title": "CI/CD Tools",
+    "description": "",
+    "links": []
+  },
+  "aIG_7-igm_LSR3ybAPz0j": {
+    "title": "TeamCity",
+    "description": "",
+    "links": []
+  },
+  "aj_yIDgFpBOfoSs2kYBBT": {
+    "title": "Server-side Apps",
+    "description": "",
+    "links": []
+  },
+  "IiWY4HhtDRj3N9D-o4fAd": {
+    "title": "Kotlin/JavaScript",
+    "description": "",
+    "links": []
+  },
+  "naVzP9xVnnVu47DieEfBU": {
+    "title": "Kotlin/WASM",
+    "description": "",
+    "links": []
+  },
+  "e24E1zTPdr6tNnlKitCys": {
+    "title": "Kotlin Multiplatform",
+    "description": "",
+    "links": []
+  },
+  "RSufL2bzKXZhz9M98oGTA": {
+    "title": "AI Development",
+    "description": "",
+    "links": []
+  },
+  "2z9t6nLOZuiyGi6DAhNmI": {
+    "title": "IntelliJ IDEA ",
+    "description": "",
+    "links": []
+  },
+  "dBn3sAg2sey3zQNRwdMq2": {
+    "title": "Android Studio",
+    "description": "",
+    "links": []
+  },
+  "Ee6XleWvK-v9fCxbz9a1n": {
+    "title": "IDEs",
+    "description": "",
+    "links": []
+  },
+  "PHHviBSqhYDSNuHBFbw3l": {
+    "title": "Kotline Notebook",
+    "description": "",
+    "links": []
+  },
+  "KbmJGmWEr_kxFYoFb-JC9": {
+    "title": "Setting up the Environment",
+    "description": "",
+    "links": []
+  },
+  "Obf1lA3vl0F6HVMMQDeNz": {
+    "title": "Code Organization",
+    "description": "",
+    "links": []
+  },
+  "yi0SCKL2sgqKlDGwT7Fmo": {
+    "title": "break & continue ",
+    "description": "",
+    "links": []
+  },
+  "jzJNHdc4tamjjdRpj-tsH": {
+    "title": "Competitive Programming",
+    "description": "",
+    "links": []
+  },
+  "If4Lv0M03ALLpQ88Vwp6i": {
+    "title": "I/O",
+    "description": "",
+    "links": []
+  },
+  "D56NrdWDFS-vQdALQOKXV": {
+    "title": "Writing & Reading Files",
+    "description": "",
+    "links": []
+  },
+  "xCfSwvrdrSOYdEIdsxEuw": {
+    "title": "Buffered Streams",
+    "description": "",
+    "links": []
+  },
+  "4xn_kz-HcOoXTFGNLTPgv": {
+    "title": "Creating Files",
+    "description": "",
+    "links": []
+  },
+  "E0ooAe-E-RQ6WRjFLuYK7": {
+    "title": "Kotlin/Java",
+    "description": "",
+    "links": []
+  },
+  "I_Ecet4Q1QQXHoIvt2OqK": {
+    "title": "Java from Kotlin",
+    "description": "",
+    "links": []
+  },
+  "qBuo_kgC-0ugiRCvR5JwQ": {
+    "title": "Kotlin from Java",
+    "description": "",
+    "links": []
+  },
+  "By2b4Ukz6QjAUPFvqBx6g": {
+    "title": "Spring Boot",
+    "description": "",
+    "links": []
+  },
+  "gwD16v8OnLvgfsn2zx780": {
+    "title": "Compose Multiplatform",
+    "description": "",
+    "links": []
+  },
+  "nCaPm0PSeS5rztRWiBL2s": {
+    "title": "Kotlin/Native",
+    "description": "",
+    "links": []
+  },
+  "_88wF-lAkqW41C6FRmCHO": {
+    "title": "Kotlin Scripting",
+    "description": "",
+    "links": []
+  },
+  "7ybzwy7g4HSQYPUGFTD4q": {
+    "title": "C Interoperability",
+    "description": "",
+    "links": []
+  },
+  "aEvbW7AtLvvtol4qEQofe": {
+    "title": "Swift/Objective-C Interop.",
+    "description": "",
+    "links": []
+  },
+  "xpALRb8KUT-i4Lj0EjI7o": {
+    "title": "Android SDK",
+    "description": "",
+    "links": []
+  },
+  "SzGLbXgW6Z6UHPoTjI-pB": {
+    "title": "Android Studio",
+    "description": "",
+    "links": []
+  },
+  "3bzq_ZWCVoe3KiKJPTLGR": {
+    "title": "Android Jetpack",
+    "description": "",
+    "links": []
+  },
+  "q546Dq42Z3-WN-FOll4K1": {
+    "title": "Ktor",
+    "description": "",
+    "links": []
+  },
+  "uIYjaX5WlKooyK-i1lGz5": {
+    "title": "Spring",
+    "description": "",
+    "links": []
+  },
+  "MzV6A_0Sa9LhgalNmhwq8": {
+    "title": "Quarkus",
+    "description": "",
+    "links": []
+  },
+  "MCZaiTrPBrIMouBdyBD0y": {
+    "title": "Vert.x",
+    "description": "",
+    "links": []
+  },
+  "nNGeY4qnJfuK5xmmiY6La": {
+    "title": "Data Analysis",
+    "description": "",
+    "links": []
+  },
+  "n4AFoCcKqnGRRWuD0Ud-9": {
+    "title": "Kotlin Notebooks",
+    "description": "",
+    "links": []
+  },
+  "AarV0h4U6Ol3auLGOW3iZ": {
+    "title": "Kotlin DataFrame",
+    "description": "",
+    "links": []
+  },
+  "JIivSHQvSotmFIpqUc5rJ": {
+    "title": "Kandy",
+    "description": "",
+    "links": []
+  },
+  "a5IDGzg8-FppJWCmhcq9q": {
+    "title": "Koog",
+    "description": "",
+    "links": []
+  }
+}
