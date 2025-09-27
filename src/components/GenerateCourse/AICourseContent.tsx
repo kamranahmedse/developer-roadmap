@@ -158,6 +158,34 @@ export function AICourseContent(props: AICourseContentProps) {
     </>
   );
 
+  const handleBackToTutor = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => {
+    e.preventDefault();
+
+    // If currently inside a lesson view, switch to outline instead of navigating away
+    if (viewMode === 'module') {
+      setViewMode('outline');
+      return;
+    }
+
+    try {
+      const { origin } = window.location;
+      const ref = document.referrer || '';
+      const isSameOrigin = ref.startsWith(origin);
+      const cameFromAiSection = ref.includes('/ai/');
+
+      // Prefer browser back if user arrived from any AI section page (preserves filters/search)
+      if (isSameOrigin && cameFromAiSection && window.history.length > 1) {
+        window.history.back();
+        return;
+      }
+    } catch (_) {
+      // no-op; fallback will handle
+    }
+
+    // Fallback: go to AI Courses library
+    window.location.href = '/ai/courses';
+  };
+
   useEffect(() => {
     if (window && window?.innerWidth < 1024 && isAIChatsOpen) {
       setIsAIChatsOpen(false);
@@ -205,7 +233,8 @@ export function AICourseContent(props: AICourseContentProps) {
 
               <p className="mt-5 text-sm text-black">
                 <a
-                  href="/ai"
+                  href="/ai/courses"
+                  onClick={handleBackToTutor}
                   className="font-medium underline underline-offset-2"
                 >
                   Back to AI Tutor
@@ -239,13 +268,8 @@ export function AICourseContent(props: AICourseContentProps) {
       <div className="border-b border-gray-200 bg-gray-100">
         <div className="flex items-center justify-between px-4 py-2">
           <a
-            href="/ai"
-            onClick={(e) => {
-              if (isViewingLesson) {
-                e.preventDefault();
-                setViewMode('outline');
-              }
-            }}
+            href="/ai/courses"
+            onClick={handleBackToTutor}
             className="flex flex-row items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-gray-900"
             aria-label="Back to generator"
           >
