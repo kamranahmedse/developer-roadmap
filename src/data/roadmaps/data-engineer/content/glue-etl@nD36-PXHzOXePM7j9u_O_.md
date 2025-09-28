@@ -1,7 +1,7 @@
-# Amazon RDS (Database)
+# Glue (ETL)
 
-Amazon RDS (Relational Database Service) is a web service from Amazon Web Services. It's designed to simplify the setup, operation, and scaling of relational databases in the cloud. This service provides cost-efficient, resizable capacity for an industry-standard relational database and manages common database administration tasks. RDS supports six database engines: Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server. These engines give you the ability to run instances ranging from 5GB to 6TB of memory, accommodating your specific use case. It also ensures the database is up-to-date with the latest patches, automatically backs up your data and offers encryption at rest and in transit.
+AWS Glue is a serverless data integration service from Amazon Web Services. It helps you discover, prepare, and combine data from different sources for analytics, machine learning, and application development. With Glue, you can build and run extract, transform, and load (ETL) pipelines without managing any infrastructure. It supports automatic schema discovery, job scheduling, and integrates with services like Amazon S3, Redshift, and RDS. You pay only for the resources used while your jobs run, making it a flexible and cost-efficient solution.
 
 Visit the following resources to learn more:
 
-- [@official@Amazon RDS](https://aws.amazon.com/rds/)
+- [@official@Amazon Glue](https://aws.amazon.com/glue/)
