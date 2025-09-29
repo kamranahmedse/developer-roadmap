@@ -1,15 +1,11 @@
-# Tell, don't ask
+# Tell, Don’t Ask
 
-## 🔹 What is “Tell, Don’t Ask”?
+The Tell, Don’t Ask principle emphasizes that objects should be told what to do rather than being queried for their state and having decisions made externally. This promotes encapsulation and reduces coupling by keeping logic within the objects that own the data.
 
-It means:
+## Key Concepts
 
-👉 Instead of asking an object for data and then making decisions outside of it, tell the object what to do and let it handle the logic.
-
-- Don’t pull data out of objects to make decisions.
-- Do push behavior into the object itself.
-
-This keeps logic encapsulated and objects more responsible for themselves.
+- Instead of pulling data out of objects to make decisions, push the behavior into the object itself.
+- Objects should be responsible for their own logic and state management.
 
 Asking style (bad):
 
@@ -27,8 +23,6 @@ if (user.canCheckout()) {
 }
 ```
 
-## 🔹 Why It Matters
+Learn more from the following resources:
 
-- **Encourages encapsulation** (objects protect their own data).
-- **Reduces coupling** (outside code doesn’t need to know internals).
-- **Makes code easier to extend** → just change the class behavior, not every caller.
+- [@Article - Tell, Don’t Ask](https://martinfowler.com/bliki/TellDontAsk.html)
