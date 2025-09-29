@@ -1,26 +1,22 @@
 # Law of Demeter
 
-# What is the Law of Demeter?
+Also called “Principle of Least Knowledge”, it states:
 
-Also called “Principle of Least Knowledge”, it says:
-
-A method should only talk to its immediate friends, not strangers.
+A method should only interact with its immediate dependencies, not deeply nested objects.
 
 ## In Practice
 
-- Don’t chain deep calls into other objects’ internals.
-- Keep communication local to what you directly own.
+- Avoid chaining calls deep into the internals of other objects.
+- Restrict communication to objects you directly manage.
 
-## 🔹 ❌ Bad Example (Violation)
+### 🔹 ❌ Bad Example (Violation)
 
 ```
 // Controller
 total = order.customer.address.getRegionTaxRate() * order.amount
 ```
 
-## 🔹 ✅ Good Example (Following LoD)
-
-Controller becomes simple:
+### 🔹 ✅ Good Example 
 
 ```
 // Controller
@@ -30,5 +26,9 @@ total = order.calculateTotal()
 ## 🔹 Why It Matters
 
 - **Reduces coupling** → fewer dependencies between classes.
-- **Increases maintainability** → changes in one class don’t break faraway classes.
-- **Improves readability** → you know who talks to who.
+- **Increases maintainability** → changes in one class don’t affect distant classes.
+- **Improves readability** → clear boundaries of responsibility.
+
+## 🔹 Resources
+
+- [@Article: Law of Demeter Explained](https://en.wikipedia.org/wiki/Law_of_Demeter)
