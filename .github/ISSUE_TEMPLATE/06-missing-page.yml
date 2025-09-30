@@ -1,0 +1,30 @@
+name: Missing Page
+description: Report a page that was supposed to exist but is missing
+title: "[Missing Page] This page is supposed to exist"
+labels: [bug, missing-page]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: The URL you tried to access
+      placeholder: https://roadmap.sh/missing-page
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to see?
+      description: Describe what you expected the page to contain or do
+      placeholder: For example, I expected to see the roadmap for Docker
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots here
+    validations:
+      required: false
