@@ -129,6 +129,8 @@ Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the va
 
 Clone the repository, install the dependencies and start the application
 
+- uses SSH (requires you to set up SSH keys with GitHub)  ex.[git@github.com:...]
+
 ```bash
 git clone git@github.com:kamranahmedse/developer-roadmap.git
 cd developer-roadmap
@@ -136,7 +138,20 @@ npm install
 npm run dev
 ```
 
+- uses HTTPS (works out of the box, no keys needed ex.[https://github.com/...]
+
+```bash
+git clone https://github.com/kamranahmedse/developer-roadmap.git
+cd developer-roadmap
+npm install
+npm run dev
+```
+
 Note: use the `depth` parameter to reduce the clone size and speed up the clone.
+
+```sh
+git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
+```
 
 ```sh
 git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
