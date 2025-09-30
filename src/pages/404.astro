@@ -11,7 +11,7 @@ const legacyRoadmapUrls = [
 
 const siteUrl = "https://roadmap.sh"; // Replace with your real domain
 const fullPath = siteUrl + Astro.url.pathname;
-const issueUrl = `https://github.com/roadmapsh/roadmap.sh/issues/new?template=missing-page.yaml&title=${encodeURIComponent("This page is supposed to exist")}&body=${encodeURIComponent("I tried to access: " + fullPath + "\n\nBut the page doesn't exist.")}`;
+const issueUrl = `https://github.com/roadmapsh/roadmap.sh/issues/new?template=06-missing-page.yaml&title=${encodeURIComponent("This page is supposed to exist")}&body=${encodeURIComponent("I tried to access: " + fullPath + "\n\nBut the page doesn't exist.")}`;
 ---
 
 <BaseLayout title='Page not found' permalink={'/404'} noIndex={true}>
