@@ -19,6 +19,10 @@
 </p>
 
 <br>
+<p align="center">
+  <a href="https://free-palestine.amrebada.com"><img src="https://free-palestine.amrebada.com/free-palestine-banner.svg" height="128"></a>
+</p>
+<br>
 
 ![](https://i.imgur.com/waxVImv.png)
 
