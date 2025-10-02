@@ -8,6 +8,9 @@ import tailwindcss from '@tailwindcss/vite';
 
 import react from '@astrojs/react';
 
+import { minify } from '@zokki/astro-minify'
+import compressor from 'astro-compressor'
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://roadmap.sh/',
@@ -66,6 +69,13 @@ export default defineConfig({
       serialize: serializeSitemap,
     }),
     react(),
+    minify({
+      logAllFiles: false,
+    }),
+    compressor({
+      gzip: false,
+      brotli: true,
+    }),
   ],
   vite: {
     plugins: [tailwindcss()],
