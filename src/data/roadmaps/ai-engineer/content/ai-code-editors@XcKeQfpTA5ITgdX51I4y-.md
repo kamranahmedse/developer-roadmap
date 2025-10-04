@@ -1,6 +1,6 @@
 # AI Code Editors
 
-AI code editors are development tools that leverage artificial intelligence to assist software developers in writing, debugging, and optimizing code. These editors go beyond traditional syntax highlighting and code completion by incorporating machine learning models, natural language processing, and data analysis to understand code context, generate suggestions, and even automate portions of the software development process.
+AI code editors are development tools that leverage artificial intelligence to assist software developers in writing, debugging, and optimizing code. These editors go beyond traditional syntax highlighting and code completion by incorporating machine learning models, natural language processing, and data analysis to understand code context, generate suggestions, and even automate portions of the software development process. This includes both GUI-based editors and terminal-based CLI tools for developers who prefer command-line workflows.
 
 Visit the following resources to learn more:
 
@@ -9,3 +9,6 @@ Visit the following resources to learn more:
 - [@website@Bolt - Prompt, run, edit, and deploy full-stack web apps](https://bolt.new)
 - [@website@Replit - Build Apps using AI](https://replit.com/ai)
 - [@website@v0 - Build Apps with AI](https://v0.dev)
+- [@official@GitHub Copilot CLI - AI-powered command line tool](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line)
+- [@opensource@Aider - AI pair programming in your terminal](https://aider.chat/)
+- [@article@Amazon CodeWhisperer CLI - AI coding companion for the command line](https://aws.amazon.com/codewhisperer/)
