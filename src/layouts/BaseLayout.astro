@@ -87,7 +87,43 @@ const gaPageIdentifier = Astro.url.pathname
     <title>{title}</title>
     <link rel='preconnect' href='https://www.google-analytics.com/' />
     <link rel='preconnect' href='https://api.roadmap.sh/' />
+    <!-- Google Tag Manager Start -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;``
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-T66KC7S8');
+    </script>
+    
+    <Analytics />
 
+    <slot name='ad-slot-script'>
+      <GoogleAd />
+    </slot>
+
+        {
+      !import.meta.env.DEV && (
+        <>
+          <Hubspot />
+          <Bluconic />
+          <OneTrust />
+          <Clarity />
+          <RedditPixel />
+        </>
+      )
+    }
+    <slot name='after-header' />
+    {
+      jsonLd.length > 0 && (
+        <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />
+      )
+    }
     <meta name='generator' content={Astro.generator} />
     <meta name='commit' content={commitUrl} />
     <meta name='description' content={description} />
@@ -160,46 +196,11 @@ const gaPageIdentifier = Astro.url.pathname
     />
 
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
-    <!-- Google Tag Manager Start -->
-    <script is:inline>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;``
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-T66KC7S8');
-    </script>
 
-    <slot name='after-header' />
-    {
-      jsonLd.length > 0 && (
-        <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />
-      )
-    }
 
-    <Analytics />
 
-    <slot name='ad-slot-script'>
-      <GoogleAd />
-    </slot>
-
-        {
-      !import.meta.env.DEV && (
-        <>
-          <OneTrust />
-          <Clarity />
-          <RedditPixel />
-          <Hubspot />
-          <Bluconic />
-        </>
-      )
-    }
   </head>
-  <body class={cn('flex min-h-screen flex-col', bodyClassName)}>
+  <body style={{contentVisibility: "auto", containIntrinsicSize: 1000, contain: "paint"}} class={cn('flex min-h-screen flex-col', bodyClassName)}>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
