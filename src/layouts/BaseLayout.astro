@@ -80,9 +80,16 @@ const gaPageIdentifier = Astro.url.pathname
 <html lang='en' class={htmlClassName}>
   <head>
     <meta charset='UTF-8' />
+    <meta
+      name='viewport'
+      content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0'
+    />
+    <title>{title}</title>
+    <link rel='preconnect' href='https://www.google-analytics.com/' />
+    <link rel='preconnect' href='https://api.roadmap.sh/' />
+
     <meta name='generator' content={Astro.generator} />
     <meta name='commit' content={commitUrl} />
-    <title>{title}</title>
     <meta name='description' content={description} />
     <meta name='keywords' content={keywords.join(', ')} />
     {
@@ -91,10 +98,7 @@ const gaPageIdentifier = Astro.url.pathname
       )
     }
     {noIndex && <meta name='robots' content='noindex' />}
-    <meta
-      name='viewport'
-      content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0'
-    />
+
     <meta http-equiv='Content-Language' content='en' />
 
     <meta name='twitter:card' content='summary_large_image' />
@@ -156,10 +160,6 @@ const gaPageIdentifier = Astro.url.pathname
     />
 
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
-
-    <link rel='preconnect' href='https://www.google-analytics.com/' />
-    <link rel='preconnect' href='https://api.roadmap.sh/' />
-
     <!-- Google Tag Manager Start -->
     <script is:inline>
       (function (w, d, s, l, i) {
@@ -168,12 +168,11 @@ const gaPageIdentifier = Astro.url.pathname
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
+        j.async = true;``
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-T66KC7S8');
     </script>
-    <!-- Google Tag Manager End -->
 
     <slot name='after-header' />
     {
@@ -188,7 +187,7 @@ const gaPageIdentifier = Astro.url.pathname
       <GoogleAd />
     </slot>
 
-    {
+        {
       !import.meta.env.DEV && (
         <>
           <OneTrust />
@@ -204,6 +203,7 @@ const gaPageIdentifier = Astro.url.pathname
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
+        loading="lazy"
         src='https://www.googletagmanager.com/ns.html?id=GTM-T66KC7S8'
         height='0'
         width='0'

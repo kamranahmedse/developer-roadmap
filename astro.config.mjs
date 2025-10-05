@@ -11,6 +11,8 @@ import react from '@astrojs/react';
 import { minify } from '@zokki/astro-minify'
 import compressor from 'astro-compressor'
 
+import partytown from '@astrojs/partytown';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://roadmap.sh/',
@@ -63,20 +65,15 @@ export default defineConfig({
     mode: 'standalone',
   }),
   trailingSlash: 'never',
-  integrations: [
-    sitemap({
-      filter: shouldIndexPage,
-      serialize: serializeSitemap,
-    }),
-    react(),
-    minify({
-      logAllFiles: false,
-    }),
-    compressor({
-      gzip: false,
-      brotli: true,
-    }),
-  ],
+  integrations: [sitemap({
+    filter: shouldIndexPage,
+    serialize: serializeSitemap,
+  }), react(), minify({
+    logAllFiles: false,
+  }), compressor({
+    gzip: false,
+    brotli: true,
+  }), partytown()],
   vite: {
     plugins: [tailwindcss()],
     ssr: {

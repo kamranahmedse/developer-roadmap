@@ -38,6 +38,7 @@
   "dependencies": {
     "@ai-sdk/react": "2.0.0-beta.34",
     "@astrojs/node": "^9.2.1",
+    "@astrojs/partytown": "^2.1.4",
     "@astrojs/react": "^4.2.7",
     "@astrojs/sitemap": "^3.4.0",
     "@fingerprintjs/fingerprintjs": "^4.6.2",
