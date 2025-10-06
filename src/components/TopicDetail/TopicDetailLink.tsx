@@ -48,7 +48,7 @@ function TopicLinkBadge(props: TopicLinkBadgeProps) {
 
 type TopicDetailLinkProps = {
   url: string;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
   type: AllowedLinkTypes;
   title: string;
   isPaid?: boolean;
