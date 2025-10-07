@@ -1,1 +1,3 @@
-# Grouping text
+# Grouping Text
+
+`<div>` and `<span>` are HTML elements used to group other elements together. The `<div>` element is a block-level element, meaning it creates a distinct block on the page and typically starts on a new line. It's often used for larger structural groupings. The `<span>` element, on the other hand, is an inline element, meaning it flows within the surrounding text and doesn't create a new line. It's useful for styling or manipulating specific portions of text without disrupting the overall layout.
