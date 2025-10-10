@@ -102,12 +102,10 @@ Here is the list of available roadmaps with more being actively worked upon.
 
 </details>
 
----
+There are also interactive best practices:
 
 <details>
   <summary>✅ Best Practices</summary>
-
-There are also interactive best practices:
 
 - [Backend Performance Best Practices](https://roadmap.sh/best-practices/backend-performance)
 - [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
@@ -116,8 +114,6 @@ There are also interactive best practices:
 - [AWS Best Practices](https://roadmap.sh/best-practices/aws)
 
 </details>
-
----
 
 ..and questions to help you test, rate and improve your knowledge
 
