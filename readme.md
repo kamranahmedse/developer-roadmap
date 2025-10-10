@@ -30,10 +30,10 @@ Roadmaps are now interactive, you can click the nodes to read more about the top
 
 Here is the list of available roadmaps with more being actively worked upon.
 
+> Have a look at the [get started](https://roadmap.sh/get-started) page that might help you pick up a path.
+
 <details>
   <summary>📌 Roadmaps</summary>
-
-> Have a look at the [get started](https://roadmap.sh/get-started) page that might help you pick up a path.
 
 - [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
 - [Backend Roadmap](https://roadmap.sh/backend) / [Backend Beginner Roadmap](https://roadmap.sh/backend?r=backend-beginner)
