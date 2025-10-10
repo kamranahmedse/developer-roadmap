@@ -1,10 +1,11 @@
 import { queryOptions } from '@tanstack/react-query';
 import { httpGet } from '../lib/query-http';
 import { type Node, type Edge, renderFlowJSON } from '@roadmapsh/editor';
+import type { OfficialRoadmapDocument } from './official-roadmap';
 
 export type RoadmapJSON = {
   _id: string;
-  title: string;
+  title: OfficialRoadmapDocument['title'];
   description: string;
   slug: string;
   nodes: Node[];
