@@ -30,6 +30,9 @@ Roadmaps are now interactive, you can click the nodes to read more about the top
 
 Here is the list of available roadmaps with more being actively worked upon.
 
+<details>
+  <summary>📌 Roadmaps</summary>
+
 > Have a look at the [get started](https://roadmap.sh/get-started) page that might help you pick up a path.
 
 - [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
@@ -97,6 +100,13 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [AI Red Teaming Roadmap](https://roadmap.sh/ai-red-teaming)
 - [AI Agents Roadmap](https://roadmap.sh/ai-agents)
 
+</details>
+
+---
+
+<details>
+  <summary>✅ Best Practices</summary>
+
 There are also interactive best practices:
 
 - [Backend Performance Best Practices](https://roadmap.sh/best-practices/backend-performance)
@@ -105,13 +115,22 @@ There are also interactive best practices:
 - [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
 - [AWS Best Practices](https://roadmap.sh/best-practices/aws)
 
+</details>
+
+---
+
 ..and questions to help you test, rate and improve your knowledge
 
+<details>
+  <summary>📝 Knowledge Questions</summary>
+  
 - [JavaScript Questions](https://roadmap.sh/questions/javascript)
 - [Node.js Questions](https://roadmap.sh/questions/nodejs)
 - [React Questions](https://roadmap.sh/questions/react)
 - [Backend Questions](https://roadmap.sh/questions/backend)
 - [Frontend Questions](https://roadmap.sh/questions/frontend)
+
+</details>
 
 ![](https://i.imgur.com/waxVImv.png)
 
