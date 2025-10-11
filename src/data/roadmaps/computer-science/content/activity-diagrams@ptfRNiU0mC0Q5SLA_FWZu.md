@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@UML Activity Diagram Tutorial](https://www.lucidchart.com/pages/uml-activity-diagram)
 - [@article@What is Activity Diagram?](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-activity-diagram/)
+- [@article@UML Activity Diagram Examples](https://www.uml-diagrams.org/activity-diagrams-examples.html)
