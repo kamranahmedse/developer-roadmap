@@ -23,7 +23,13 @@ export function roadmapJSONOptions(roadmapId: string) {
         `${baseUrl}/${roadmapId}.json`,
       );
 
-      const svg = await renderFlowJSON(roadmapJSON);
+      const svg = renderFlowJSON(roadmapJSON);
+      if (!svg) {
+        return {
+          json: roadmapJSON,
+          svg: null,
+        };
+      }
 
       return {
         json: roadmapJSON,

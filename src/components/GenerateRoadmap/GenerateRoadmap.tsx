@@ -133,13 +133,16 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
   const isKeyOnly = IS_KEY_ONLY_ROADMAP_GENERATION;
 
-  const renderRoadmap = async (roadmap: string) => {
+  const renderRoadmap = (roadmap: string) => {
     const result = generateAICourseRoadmapStructure(roadmap);
     const { nodes, edges } = generateAIRoadmapFromText(result);
-    const svg = await renderFlowJSON({ nodes, edges });
-    if (roadmapContainerRef?.current) {
-      replaceChildren(roadmapContainerRef?.current, svg);
+    const svg = renderFlowJSON({ nodes, edges });
+    const container = roadmapContainerRef?.current;
+    if (!svg || !container) {
+      return;
     }
+
+    replaceChildren(container, svg);
   };
 
   const loadTermRoadmap = async (term: string) => {
@@ -221,7 +224,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
           });
         }
 
-        await renderRoadmap(result);
+        renderRoadmap(result);
       },
       onStreamEnd: async (result) => {
         result = result
@@ -358,7 +361,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
     }
 
     const { term, title, data } = response;
-    await renderRoadmap(data);
+    renderRoadmap(data);
 
     setCurrentRoadmap({
       id: roadmapId,
@@ -557,7 +560,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                   <span>
                     <span
                       className={cn(
-                        'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
+                        'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm text-gray-800 tabular-nums',
                         {
                           'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
                             !roadmapLimit,
@@ -652,7 +655,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
               <div className="flex w-full items-center justify-between gap-2">
                 <div className="flex items-center justify-between gap-2">
                   <button
-                    className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-400 py-1.5 pl-2.5 pr-3 text-xs font-medium transition-opacity duration-300 hover:bg-yellow-500 sm:text-sm"
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-400 py-1.5 pr-3 pl-2.5 text-xs font-medium transition-opacity duration-300 hover:bg-yellow-500 sm:text-sm"
                     onClick={downloadGeneratedRoadmapContent}
                   >
                     <Download size={15} />
@@ -668,7 +671,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
                 <div className="flex items-center justify-between gap-2">
                   <button
-                    className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pr-3 pl-2.5 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
                     onClick={async () => {
                       const response = await saveAIRoadmap();
                       if (response?.roadmapSlug) {
@@ -685,7 +688,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                   </button>
 
                   <button
-                    className="hidden items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:inline-flex sm:text-sm"
+                    className="hidden items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pr-3 pl-2.5 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:inline-flex sm:text-sm"
                     onClick={async () => {
                       const response = await saveAIRoadmap();
                       if (response?.roadmapId) {
@@ -718,7 +721,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
             className="relative min-h-[400px] px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
           />
           {!isAuthenticatedUser && (
-            <div className="absolute bottom-0 left-0 right-0">
+            <div className="absolute right-0 bottom-0 left-0">
               <div className="h-80 w-full bg-linear-to-t from-gray-100 to-transparent" />
               <div className="bg-gray-100">
                 <div className="mx-auto max-w-[600px] flex-col items-center justify-center bg-gray-100 px-5 pt-px">
@@ -726,7 +729,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                     <h2 className="mb-0.5 text-xl font-medium sm:mb-3 sm:text-2xl">
                       Sign up to View the full roadmap
                     </h2>
-                    <p className="mb-6 text-balance text-sm text-gray-600 sm:text-base">
+                    <p className="mb-6 text-sm text-balance text-gray-600 sm:text-base">
                       You must be logged in to view the complete roadmap
                     </p>
                   </div>
