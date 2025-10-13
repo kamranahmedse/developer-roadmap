@@ -4,7 +4,7 @@ LiteDB is a lightweight, open-source, NoSQL embedded document-oriented database 
 
 LiteDB supports data types like string, int, decimal, DateTime, and also supports binary data and serialized objects. It also supports LINQ, transactions, indexes and collections.
 
-For more information, visit the following links:
+Visit the following resources to learn more:
 
 - [@official@Getting started with LiteDB](https://www.litedb.org/)
 - [@official@Overview of LiteDB in ASP.NET](https://www.litedb.org/docs/)

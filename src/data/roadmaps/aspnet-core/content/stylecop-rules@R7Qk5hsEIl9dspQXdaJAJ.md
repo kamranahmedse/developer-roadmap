@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@opensource@StyleCop GitHub official page](https://github.com/StyleCop/StyleCop)
 - [@opensource@StyeleCop Analyzers, a more modern version of StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)
-- [@video@The StyleCop setup and Advantages](https://www.youtube.com/watch?v=dmpOKmz3lPw)
 - [@article@StyleCop: A Detailed Guide to Starting and Using It](https://blog.submain.com/stylecop-detailed-guide/)
+- [@video@The StyleCop setup and Advantages](https://www.youtube.com/watch?v=dmpOKmz3lPw)
