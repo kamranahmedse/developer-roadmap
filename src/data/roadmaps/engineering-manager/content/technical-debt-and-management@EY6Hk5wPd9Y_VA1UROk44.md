@@ -1,6 +1,6 @@
 # Technical Debt and Management
 
-Engineering Managers play a crucial role in managing technical debt. This involves identifying, prioritizing, and tackling issues. It's the manager's job to strike a balance between improving the existing codebase and delivering new features. 
+Engineering Managers play a crucial role in managing technical debt. This involves identifying, prioritizing, and tackling issues. It's the manager's job to strike a balance between improving the existing codebase and delivering new features.
 
 Addressing technical debt demands constant vigilance. Key responsibilities include conducting code reviews, advocating for coding standards, and allocating time for refactoring and updates. They face challenges like pushback from stakeholders and proper risk assessment.
 
