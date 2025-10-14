@@ -6,9 +6,9 @@ Consistency, on the other hand, refers to the property that all clients see the 
 
 In distributed systems, it is often a trade-off between availability and consistency. Systems that prioritize high availability may sacrifice consistency, while systems that prioritize consistency may sacrifice availability. Different distributed systems use different approaches to balance the trade-off between availability and consistency, such as using replication or consensus algorithms.
 
-Have a look at the following resources to learn more:
+Visit the following resources to learn more:
 
-- [@video@CAP Theorem](https://www.youtube.com/watch?v=_RbsFXWRZ10&t=1s)
+- [@opensource@CAP FAQ](https://github.com/henryr/cap-faq)
 - [@article@CAP Theorem Revisited](https://robertgreiner.com/cap-theorem-revisited/)
 - [@article@A plain english introduction to CAP Theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
-- [@opensource@CAP FAQ](https://github.com/henryr/cap-faq)
+- [@video@CAP Theorem](https://www.youtube.com/watch?v=_RbsFXWRZ10&t=1s)

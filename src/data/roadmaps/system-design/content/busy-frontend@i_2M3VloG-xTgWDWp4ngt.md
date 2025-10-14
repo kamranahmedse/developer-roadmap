@@ -6,7 +6,7 @@ Resource-intensive tasks can increase the response times for user requests and c
 
 This problem typically occurs when an application is developed as monolithic piece of code, with all of the business logic combined into a single tier shared with the presentation layer.
 
-To learn more about this and how to fix this pattern, visit the following link:
+Visit the following resources to learn more:
 
 - [@article@Busy Front End antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-front-end/)
 - [@feed@Explore top posts about Frontend Development](https://app.daily.dev/tags/frontend?ref=roadmapsh)
