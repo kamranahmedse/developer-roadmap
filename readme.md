@@ -1,3 +1,5 @@
+By Ellen Fernandes - estudante
+
 <p align="center">
   <a href="https://roadmap.sh/"><img src="public/img/brand.png" height="128"></a>
   <h2 align="center"><a href="https://roadmap.sh">roadmap.sh</a></h2>
