@@ -1,1 +1,3 @@
-# Standard attributes
+# Standard Attributes
+
+Standard attributes are properties that can be used on almost all HTML elements to provide additional information or functionality. These attributes control things like element styling, identification, accessibility, and event handling, allowing you to modify how elements behave and interact within a webpage. They offer a consistent way to manage common element characteristics across different browsers and devices.

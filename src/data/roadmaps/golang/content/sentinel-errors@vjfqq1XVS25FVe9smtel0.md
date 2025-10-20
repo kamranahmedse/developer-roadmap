@@ -4,6 +4,5 @@ Predefined error values representing specific conditions, defined as package-lev
 
 Visit the following resources to learn more:
 
-- [@official@Select Statement](https://go.dev/tour/concurrency/5)
 - [@article@Golang Sentinel Error](https://www.tiredsg.dev/blog/golang-sentinel-error/)
 - [@article@Writing Clean Code in Go: Sentinel Errors](https://medium.com/gopher-time/writing-clean-code-in-go-sentinel-errors-5ad93a30bc8e)

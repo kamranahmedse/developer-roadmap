@@ -4,11 +4,11 @@ Authorization in GraphQL refers to the process of controlling access to specific
 
 There are several ways to implement authorization in GraphQL:
 
-- Using middleware
-- Using schema directives
-- Using a data source layer
+*   Using middleware
+*   Using schema directives
+*   Using a data source layer
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@official@Get Started with Authorization](https://graphql.org/learn/authorization/)
 - [@feed@Explore top posts about Authorization](https://app.daily.dev/tags/authorization?ref=roadmapsh)

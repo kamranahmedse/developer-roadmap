@@ -6,6 +6,6 @@ The nature of cloud hosting, where applications are often multi-tenant, use shar
 
 Detecting failures and recovering quickly and efficiently, is necessary to maintain resiliency.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Resiliency Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#resiliency)

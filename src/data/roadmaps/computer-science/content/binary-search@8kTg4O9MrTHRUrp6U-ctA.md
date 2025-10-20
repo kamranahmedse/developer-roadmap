@@ -6,6 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@Binary Search - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
 - [@article@Binary Search](https://www.topcoder.com/thrive/articles/Binary%20Search)
-- [@video@Binary Search in 4 Minutes](https://www.youtube.com/watch?v=fDKIpRe8GW4\&feature=youtu.be)
+- [@video@Binary Search in 4 Minutes](https://www.youtube.com/watch?v=fDKIpRe8GW4&feature=youtu.be)
 - [@video@Binary Search - CS50](https://www.youtube.com/watch?v=D5SrAga1pno)
 - [@feed@Explore top posts about Binary Search](https://app.daily.dev/tags/binary-search?ref=roadmapsh)

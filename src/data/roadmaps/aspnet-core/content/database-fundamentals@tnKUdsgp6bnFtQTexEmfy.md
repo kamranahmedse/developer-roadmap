@@ -11,7 +11,7 @@ Visit the following resources to learn more:
 - [@article@Oracle: What is a Database?](https://www.oracle.com/database/what-is-database/)
 - [@article@Prisma.io: What are Databases?](https://www.prisma.io/dataguide/intro/what-are-databases)
 - [@article@Intro To Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
-- [@video@What is Relational Database](https://youtu.be/OqjJjpjDRLc)
 - [@article@NoSQL Explained](https://www.mongodb.com/nosql-explained)
+- [@video@What is Relational Database](https://youtu.be/OqjJjpjDRLc)
 - [@video@How do NoSQL Databases work](https://www.youtube.com/watch?v=0buKQHokLK8)
 - [@feed@Explore top posts about Database](https://app.daily.dev/tags/database?ref=roadmapsh)
