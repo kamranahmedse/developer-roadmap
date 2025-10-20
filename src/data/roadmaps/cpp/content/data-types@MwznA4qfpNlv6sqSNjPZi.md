@@ -60,6 +60,8 @@ Arrays are used to store multiple values of the same data type in consecutive me
 Example:
 ```cpp
 int numbers[5] = {1, 2, 3, 4, 5};
+int scores[10] = {100,95,98}; // Partially initialized array. 100,95,98 initialized on first 3 indexes, rest indexes are initialized with 0
+int allZero[0] = {0};         // initialized all to zero 
 ```
 
 ## Pointers

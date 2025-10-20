@@ -9,5 +9,5 @@ Visit the following resources to learn more:
 - [@official@Terraform Documentation](https://www.terraform.io/docs)
 - [@official@Terraform CDK](https://www.terraform.io/cdktf)
 - [@official@Terraform Tutorials](https://learn.hashicorp.com/terraform)
-- [@video@Intro to Terraform Video](https://www.youtube.com/watch?v=h970ZBgKINg\&ab_channel=HashiCorp)
+- [@video@Intro to Terraform Video](https://www.youtube.com/watch?v=h970ZBgKINg&ab_channel=HashiCorp)
 - [@feed@Explore top posts about Terraform](https://app.daily.dev/tags/terraform?ref=roadmapsh)

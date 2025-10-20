@@ -2,9 +2,9 @@
 
 MVC is an architectural design pattern used for developing applications, specifically web applications. This pattern separates an application into three main logical components **Model View Controller**. Each architectural component is built to handle specific development aspects of an application.
 
-- **Model** - Handles all data-related logic. Interacts with Database.
-- **View** - Handles UI part of the applications (data presentation).
-- **Controller** - Handles request flow, and acts as an intermediary between view and model.
+*   **Model** - Handles all data-related logic. Interacts with Database.
+*   **View** - Handles UI part of the applications (data presentation).
+*   **Controller** - Handles request flow, and acts as an intermediary between view and model.
 
 Visit the following resources to learn more:
 

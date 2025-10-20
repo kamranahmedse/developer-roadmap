@@ -181,6 +181,12 @@ const groups: GroupType[] = [
         otherGroups: ['Web Development', 'Absolute Beginners'],
       },
       {
+        title: 'CSS',
+        link: '/css',
+        type: 'skill',
+        otherGroups: ['Web Development', 'Absolute Beginners'],
+      },
+      {
         title: 'JavaScript',
         link: '/javascript',
         type: 'skill',

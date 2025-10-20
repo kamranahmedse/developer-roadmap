@@ -1,4 +1,30 @@
 {
+  "9cD5ag1L0GqHx4_zxc5JX": {
+    "title": "Open API Specs",
+    "description": "OpenAPI Specification (OAS), formerly Swagger, is a standard for defining and documenting RESTful APIs in YAML/JSON format. Describes endpoints, formats, authentication, and metadata. Enables client generation, automated documentation, testing, and promotes API design consistency.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "OpenAPI Specification Website",
+        "url": "https://swagger.io/specification/",
+        "type": "article"
+      },
+      {
+        "title": "Open API Live Editor",
+        "url": "https://swagger.io/tools/swagger-editor/",
+        "type": "article"
+      },
+      {
+        "title": "OpenAPI 3.0: How to Design and Document APIs with the Latest OpenAPI Specification 3.0",
+        "url": "https://www.youtube.com/watch?v=6kwmW_p_Tig",
+        "type": "video"
+      },
+      {
+        "title": " REST API and OpenAPI: It’s Not an Either/Or Question",
+        "url": "https://www.youtube.com/watch?v=pRS9LRBgjYg",
+        "type": "video"
+      }
+    ]
+  },
   "gKTSe9yQFVbPVlLzWB0hC": {
     "title": "Search Engines",
     "description": "Search engines like Elasticsearch are specialized tools for fast, scalable searching and analyzing large data volumes. Built on Apache Lucene, they offer full-text search, real-time indexing, distributed architecture, powerful query DSL, and analytics capabilities for log and event data analysis.\n\nVisit the following resources to learn more:",
@@ -6,22 +32,6 @@
       {
         "title": "Elasticsearch",
         "url": "https://www.elastic.co/elasticsearch/",
-        "type": "article"
-      }
-    ]
-  },
-  "9Fpoor-Os_9lvrwu5Zjh-": {
-    "title": "Design and Development Principles",
-    "description": "Design and development principles guide software creation. Key principles include SOLID, DRY (Don't Repeat Yourself), KISS (Keep It Simple), YAGNI (You Aren't Gonna Need It), separation of concerns, modularity, encapsulation, composition over inheritance, and loose coupling.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Design Principles - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Design_principles",
-        "type": "article"
-      },
-      {
-        "title": "Design Principles - Microsoft",
-        "url": "https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/index",
         "type": "article"
       }
     ]
@@ -336,9 +346,9 @@
       }
     ]
   },
-  "2f0ZO6GJElfZ2Eis28Hzg": {
-    "title": "Pick a Language",
-    "description": "Web development divides into Frontend (HTML, CSS, JavaScript) and Backend Development. Backend uses server-side languages like Python, Java, or Node.js, complemented by databases, frameworks, and web servers for website functionality. Choose a language based on project needs and preferences.",
+  "pick-a-backend-language@2f0ZO6GJElfZ2Eis28Hzg.md": {
+    "title": "Pick a Backend Language",
+    "description": "",
     "links": []
   },
   "_I1E__wCIVrhjMk6IMieE": {
@@ -445,37 +455,6 @@
       {
         "title": "Git and GitHub for Beginners",
         "url": "https://www.youtube.com/watch?v=RGOj5yH7evk",
-        "type": "video"
-      }
-    ]
-  },
-  "Ry_5Y-BK7HrkIc6X0JG1m": {
-    "title": "Bitbucket",
-    "description": "Bitbucket is Atlassian's Git-based repository hosting service offering cloud and self-hosted options. Features pull requests, branch permissions, and code review tools. Integrates with Jira and Trello, includes CI/CD pipelines, and provides unlimited private repos for small teams.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Bitbucket",
-        "url": "https://bitbucket.org/product",
-        "type": "article"
-      },
-      {
-        "title": "Overview of Bitbucket",
-        "url": "https://bitbucket.org/product/guides/getting-started/overview#a-brief-overview-of-bitbucket",
-        "type": "article"
-      },
-      {
-        "title": "Using Git with Bitbucket Cloud",
-        "url": "https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Bitbucket",
-        "url": "https://app.daily.dev/tags/bitbucket?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Bitbucket tutorial | How to use Bitbucket Cloud",
-        "url": "https://www.youtube.com/watch?v=M44nEyd_5To",
         "type": "video"
       }
     ]
@@ -834,21 +813,10 @@
       }
     ]
   },
-  "SYXJhanu0lFmGj2m2XXhS": {
-    "title": "Profiling Perfor.",
-    "description": "Performance profiling analyzes system behavior to identify bottlenecks and optimization opportunities. Collects data on CPU, memory, I/O operations, and execution times. Provides insights into code performance, highlighting slow operations for targeted improvements and enhanced responsiveness.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "How to Profile SQL Queries for Better Performance",
-        "url": "https://servebolt.com/articles/profiling-sql-queries/",
-        "type": "article"
-      },
-      {
-        "title": "Performance Profiling",
-        "url": "https://www.youtube.com/watch?v=MaauQTeGg2k",
-        "type": "video"
-      }
-    ]
+  "profiling-performance@SYXJhanu0lFmGj2m2XXhS.md": {
+    "title": "Profiling Performance",
+    "description": "",
+    "links": []
   },
   "bQnOAu863hsHdyNMNyJop": {
     "title": "N+1 Problem",
@@ -1002,22 +970,6 @@
       }
     ]
   },
-  "dLY0KafPstajCcSbslC4M": {
-    "title": "HATEOAS",
-    "description": "HATEOAS (Hypermedia As The Engine Of Application State) is a REST constraint enabling clients to navigate APIs dynamically through hypermedia links in responses. Clients discover actions through links instead of hard-coded URLs, providing flexibility and decoupling from server changes.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "What is HATEOAS and why is it important for my REST API?",
-        "url": "https://restcookbook.com/Basics/hateoas/",
-        "type": "article"
-      },
-      {
-        "title": "What happened to HATEOAS",
-        "url": "https://www.youtube.com/watch?v=HNTSrytKCoQ",
-        "type": "video"
-      }
-    ]
-  },
   "sNceS4MpSIjRkWhNDmrFg": {
     "title": "JSON APIs",
     "description": "JSON (JavaScript Object Notation) is an encoding scheme eliminating ad-hoc code for server communication. JSON API provides standardized implementation for data stores and structures, including entity types, bundles, and fields with defined communication protocols.\n\nVisit the following resources to learn more:",
@@ -1035,32 +987,6 @@
       {
         "title": "JSON API: Explained in 4 minutes",
         "url": "https://www.youtube.com/watch?v=N-4prIh7t38",
-        "type": "video"
-      }
-    ]
-  },
-  "9cD5ag1L0GqHx4_zxc5JX": {
-    "title": "Open API Specs",
-    "description": "OpenAPI Specification (OAS), formerly Swagger, is a standard for defining and documenting RESTful APIs in YAML/JSON format. Describes endpoints, formats, authentication, and metadata. Enables client generation, automated documentation, testing, and promotes API design consistency.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "OpenAPI Specification Website",
-        "url": "https://swagger.io/specification/",
-        "type": "article"
-      },
-      {
-        "title": "Open API Live Editor",
-        "url": "https://swagger.io/tools/swagger-editor/",
-        "type": "article"
-      },
-      {
-        "title": "OpenAPI 3.0: How to Design and Document APIs with the Latest OpenAPI Specification 3.0",
-        "url": "https://www.youtube.com/watch?v=6kwmW_p_Tig",
-        "type": "video"
-      },
-      {
-        "title": " REST API and OpenAPI: It’s Not an Either/Or Question",
-        "url": "https://www.youtube.com/watch?v=pRS9LRBgjYg",
         "type": "video"
       }
     ]
@@ -1159,89 +1085,15 @@
       }
     ]
   },
-  "KWTbEVX_WxS8jmSaAX3Fe": {
-    "title": "Client Side",
-    "description": "Client-side caching stores data locally on user devices to improve performance and reduce server load. Uses HTTP caching headers, service workers, and local storage APIs. Reduces network traffic and load times but requires careful cache invalidation strategies.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Client Side Caching",
-        "url": "https://redis.io/docs/latest/develop/use/client-side-caching/",
-        "type": "article"
-      },
-      {
-        "title": "Everything you need to know about HTTP Caching",
-        "url": "https://www.youtube.com/watch?v=HiBDZgTNpXY",
-        "type": "video"
-      }
-    ]
+  "http-caching@KWTbEVX_WxS8jmSaAX3Fe.md": {
+    "title": "HTTP Caching",
+    "description": "",
+    "links": []
   },
-  "Nq2BO53bHJdFT1rGZPjYx": {
-    "title": "CDN",
-    "description": "CDN (Content Delivery Network) delivers website assets from geographically closer servers to improve performance and availability. Services like CloudFlare, AWS CloudFront, and Akamai reduce bandwidth, add caching layers, and enhance security through global server networks.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "CloudFlare - What is a CDN? | How do CDNs work?",
-        "url": "https://www.cloudflare.com/en-ca/learning/cdn/what-is-a-cdn/",
-        "type": "article"
-      },
-      {
-        "title": "AWS - CDN",
-        "url": "https://aws.amazon.com/what-is/cdn/",
-        "type": "article"
-      },
-      {
-        "title": "What is Cloud CDN?",
-        "url": "https://www.youtube.com/watch?v=841kyd_mfH0",
-        "type": "video"
-      },
-      {
-        "title": "What is a CDN and how does it work?",
-        "url": "https://www.youtube.com/watch?v=RI9np1LWzqw",
-        "type": "video"
-      }
-    ]
-  },
-  "z1-eP4sV75GBEIdM4NvL9": {
-    "title": "Server Side",
-    "description": "Server-side caching improves performance by storing frequently accessed data in server memory, reducing repeated data retrieval. Speeds up response times and reduces database load. Caches query results, HTML fragments, API responses using tools like Redis, Memcached, and framework caching.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Server-side caching and Client-side caching",
-        "url": "https://www.codingninjas.com/codestudio/library/server-side-caching-and-client-side-caching",
-        "type": "article"
-      },
-      {
-        "title": "Caching strategies",
-        "url": "https://medium.com/@genchilu/cache-strategy-in-backend-d0baaacd2d79",
-        "type": "article"
-      },
-      {
-        "title": "Local vs distributed",
-        "url": "https://redis.io/glossary/distributed-caching/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Web Development",
-        "url": "https://app.daily.dev/tags/webdev?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
-  },
-  "ELj8af7Mi38kUbaPJfCUR": {
+  "caching@uPjCrDGA2MHylWXbZvMBM.md": {
     "title": "Caching",
-    "description": "Caching stores frequently accessed data in faster locations to improve performance by reducing latency and server load. It operates at browser, application, and database levels using strategies like LRU and time-based expiration. Balances speed gains with data consistency challenges.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What is Caching - AWS",
-        "url": "https://aws.amazon.com/caching/",
-        "type": "article"
-      },
-      {
-        "title": "Caching - Cloudflare",
-        "url": "https://www.cloudflare.com/learning/cdn/what-is-caching/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "RBrIP5KbVQ2F0ly7kMfTo": {
     "title": "Web Security",
@@ -1399,193 +1251,10 @@
       }
     ]
   },
-  "6XIWO0MoE-ySl4qh_ihXa": {
-    "title": "GOF Design Patterns",
-    "description": "Gang of Four (GoF) Design Patterns are 23 foundational software design patterns solving common object-oriented problems. Grouped into Creational (object creation), Structural (composition), and Behavioral (communication) categories. Promote code reusability, flexibility, and maintainability.\n\nLearn more from the following links:",
-    "links": [
-      {
-        "title": "Gangs of Four (GoF) Design Patterns",
-        "url": "https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns",
-        "type": "article"
-      },
-      {
-        "title": "Design Patterns for Humans",
-        "url": "https://github.com/kamranahmedse/design-patterns-for-humans",
-        "type": "article"
-      },
-      {
-        "title": "Tutorial - Builder Pattern (Gang of Four Design Patterns Series)",
-        "url": "https://www.youtube.com/watch?v=_sa2WlAFWQos",
-        "type": "video"
-      }
-    ]
-  },
-  "u8IRw5PuXGUcmxA0YYXgx": {
-    "title": "CQRS",
-    "description": "CQRS (Command Query Responsibility Segregation) separates read and write operations for data stores. Commands handle modifications, queries handle retrieval. Allows independent scaling and optimization of read/write sides, improving performance in complex systems but adding complexity.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "CQRS Pattern",
-        "url": "https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs",
-        "type": "article"
-      },
-      {
-        "title": "Learn CQRS Pattern in 5 minutes!",
-        "url": "https://www.youtube.com/watch?v=eiut3FIY1Cg",
-        "type": "video"
-      }
-    ]
-  },
-  "BvHi5obg0L1JDZFKBzx9t": {
-    "title": "Domain Driven Design",
-    "description": "Domain-Driven Design (DDD) focuses on understanding business domains to inform software design. Emphasizes collaboration between technical and domain experts, creating ubiquitous language and bounded contexts. Uses entities, value objects, aggregates, and repositories for complex business logic.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Domain-Driven Design",
-        "url": "https://redis.com/glossary/domain-driven-design-ddd/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Domain-Driven Design",
-        "url": "https://app.daily.dev/tags/domain-driven-design?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Domain Driven Design: What You Need To Know",
-        "url": "https://www.youtube.com/watch?v=4rhzdZIDX_k",
-        "type": "video"
-      }
-    ]
-  },
-  "wqE-mkxvehOzOv8UyE39p": {
-    "title": "Event Sourcing",
-    "description": "Event sourcing represents system state as a sequence of events over time. Changes are recorded as events in an event store, with current state derived by replaying events. Provides auditable history, supports undo/redo, often used with CQRS and DDD.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Event Sourcing - Martin Fowler",
-        "url": "https://martinfowler.com/eaaDev/EventSourcing.html",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Architecture",
-        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Event Sourcing 101",
-        "url": "https://www.youtube.com/watch?v=lg6aF5PP4Tc",
-        "type": "video"
-      }
-    ]
-  },
-  "I-PUAE2AzbEaUkW9vMaUM": {
-    "title": "Test Driven Development",
-    "description": "Test Driven Development (TDD) writes tests for requirements that fail until software meets those requirements. Once tests pass, cycle repeats for refactoring or new features. Ensures software meets requirements in simplest form and avoids defects.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What is Test Driven Development (TDD)?",
-        "url": "https://www.guru99.com/test-driven-development.html",
-        "type": "article"
-      },
-      {
-        "title": "Test-driven development",
-        "url": "https://www.ibm.com/garage/method/practices/code/practice_test_driven_development/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about TDD",
-        "url": "https://app.daily.dev/tags/tdd?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Test-Driven Development",
-        "url": "https://www.youtube.com/watch?v=Jv2uxzhPFl4",
-        "type": "video"
-      }
-    ]
-  },
-  "Ke522R-4k6TDeiDRyZbbU": {
-    "title": "Monolithic Apps",
-    "description": "Monolithic applications are single, cohesive units with tightly integrated components running as one service. Simplifies development and deployment but creates scalability and maintainability challenges. Changes require full system redeployment. Suitable for smaller applications; larger ones often transition to microservices.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Pattern: Monolithic Architecture",
-        "url": "https://microservices.io/patterns/monolithic.html",
-        "type": "article"
-      },
-      {
-        "title": "Monolithic Architecture - Advantages & Disadvantages",
-        "url": "https://datamify.medium.com/monolithic-architecture-advantages-and-disadvantages-e71a603eec89",
-        "type": "article"
-      },
-      {
-        "title": "Monolithic vs Microservice Architecture",
-        "url": "https://www.youtube.com/watch?v=NdeTGlZ__Do",
-        "type": "video"
-      }
-    ]
-  },
-  "nkmIv3dNwre4yrULMgTh3": {
-    "title": "Serverless",
-    "description": "Serverless computing lets developers build applications without managing server infrastructure. Cloud providers handle scaling and maintenance while developers deploy event-triggered functions. Billing based on actual usage. Platforms: AWS Lambda, Google Cloud Functions, Azure Functions.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Serverless",
-        "url": "https://www.ibm.com/cloud/learn/serverless",
-        "type": "article"
-      },
-      {
-        "title": "AWS Services",
-        "url": "https://aws.amazon.com/serverless/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Serverless",
-        "url": "https://app.daily.dev/tags/serverless?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Serverless Computing in 100 Seconds",
-        "url": "https://www.youtube.com/watch?v=W_VV2Fx32_Y&ab_channel=Fireship",
-        "type": "video"
-      }
-    ]
-  },
-  "K55h3aqOGe6-hgVhiFisT": {
-    "title": "Microservices",
-    "description": "Microservices architecture structures applications as loosely coupled, independently deployable services focused on specific business capabilities. Communicate via HTTP or messaging. Enables scalability, flexibility, diverse technologies, and continuous deployment but adds complexity in communication and orchestration.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Pattern: Microservice Architecture",
-        "url": "https://microservices.io/patterns/microservices.html",
-        "type": "article"
-      },
-      {
-        "title": "What is Microservices?",
-        "url": "https://smartbear.com/solutions/microservices/",
-        "type": "article"
-      },
-      {
-        "title": "Microservices 101",
-        "url": "https://thenewstack.io/microservices-101/",
-        "type": "article"
-      },
-      {
-        "title": "Articles about Microservices",
-        "url": "https://thenewstack.io/category/microservices/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Microservices",
-        "url": "https://app.daily.dev/tags/microservices?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Microservices explained in 5 minutes",
-        "url": "https://www.youtube.com/watch?v=lL_j7ilk7rc",
-        "type": "video"
-      }
-    ]
+  "monolith@Ke522R-4k6TDeiDRyZbbU.md": {
+    "title": "Monolith",
+    "description": "",
+    "links": []
   },
   "n14b7sfTOwsjKTpFC9EZ2": {
     "title": "Service Mesh",
@@ -1785,27 +1454,6 @@
       }
     ]
   },
-  "SGVwJme-jT_pbOTvems0v": {
-    "title": "Containerization vs Virtualization",
-    "description": "Virtualization creates VMs with separate OS instances on hypervisors, offering strong isolation but using more resources. Containerization shares OS kernel for lighter, faster-starting containers ideal for microservices. VMs provide better security isolation; containers offer efficiency and scalability.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Containerization vs. Virtualization: Everything you need to know",
-        "url": "https://middleware.io/blog/containerization-vs-virtualization/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Containers",
-        "url": "https://app.daily.dev/tags/containers?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Virtual Machine (VM) vs Docker",
-        "url": "https://www.youtube.com/watch?v=a1M_thDTqmU",
-        "type": "video"
-      }
-    ]
-  },
   "sVuIdAe08IWJVqAt4z-ag": {
     "title": "WebSockets",
     "description": "WebSockets enable full-duplex, real-time communication over a single persistent connection between client and server. Unlike HTTP's request-response cycles, allows continuous bidirectional data exchange. Ideal for live chat, gaming, and real-time updates with low-latency communication.\n\nVisit the following resources to learn more:",
@@ -1952,26 +1600,10 @@
       }
     ]
   },
-  "fekyMpEnaGqjh1Cu4Nyc4": {
-    "title": "Web Servers",
-    "description": "Web servers handle client requests and serve web content like HTML pages and images. Process HTTP/HTTPS requests, interact with databases, and send responses. Popular servers include Apache, Nginx, and IIS. Essential for hosting websites, managing traffic, and providing SSL/TLS security.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What is a Web Server? - Mozilla",
-        "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server",
-        "type": "article"
-      },
-      {
-        "title": "What is a Web Server?",
-        "url": "https://www.hostinger.co.uk/tutorials/what-is-a-web-server",
-        "type": "article"
-      },
-      {
-        "title": "Web Server Concepts and Examples",
-        "url": "https://youtu.be/9J1nJOivdyw",
-        "type": "video"
-      }
-    ]
+  "learn-about-web-servers@fekyMpEnaGqjh1Cu4Nyc4.md": {
+    "title": "Learn about Web Servers",
+    "description": "",
+    "links": []
   },
   "SHmbcMRsc3SygEDksJQBD": {
     "title": "Building For Scale",
@@ -2220,43 +1852,6 @@
       {
         "title": "Back to Basics: Static Stability Using a Circuit Breaker Pattern",
         "url": "https://www.youtube.com/watch?v=gy1RITZ7N7s",
-        "type": "video"
-      }
-    ]
-  },
-  "f7iWBkC0X7yyCoP_YubVd": {
-    "title": "Migration Strategies",
-    "description": "Migration strategies plan transitions between environments. Key approaches: Rehost (lift and shift with minimal changes), Replatform (optimize for new environment), Refactor (redesign for new features), Repurchase (replace with new solutions), Retain (keep in current environment), Retire (decommission redundant systems).\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Databases as a Challenge for Continuous Delivery",
-        "url": "https://phauer.com/2015/databases-challenge-continuous-delivery/",
-        "type": "article"
-      },
-      {
-        "title": "AWS Cloud Migration Strategies",
-        "url": "https://www.youtube.com/watch?v=9ziB82V7qVM",
-        "type": "video"
-      }
-    ]
-  },
-  "osQlGGy38xMcKLtgZtWaZ": {
-    "title": "Types of Scaling",
-    "description": "Horizontal scaling (scaling out/in) adds/removes resource instances like servers to distribute workload across multiple nodes for performance and redundancy. Vertical scaling (scaling up/down) increases/decreases single instance resources (CPU, memory, storage) but has hardware capacity limits.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Horizontal vs Vertical Scaling",
-        "url": "https://touchstonesecurity.com/horizontal-vs-vertical-scaling-what-you-need-to-know/",
-        "type": "article"
-      },
-      {
-        "title": "Vertical Vs Horizontal Scaling: Key Differences You Should Know",
-        "url": "https://www.youtube.com/watch?v=dvRFHG2-uYs",
-        "type": "video"
-      },
-      {
-        "title": "System Design 101",
-        "url": "https://www.youtube.com/watch?v=Y-Gl4HEyeUQ",
         "type": "video"
       }
     ]
@@ -3031,37 +2626,10 @@
       }
     ]
   },
-  "osvajAJlwGI3XnX0fE-kA": {
-    "title": "Long Polling",
-    "description": "Long polling technique where server holds client requests instead of sending empty responses. Server waits for specified period for new data, responding immediately when available or after timeout. Client then immediately re-requests, creating continuous request-response cycles.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Long Polling",
-        "url": "https://javascript.info/long-polling",
-        "type": "article"
-      },
-      {
-        "title": "What is Long Polling?",
-        "url": "https://www.youtube.com/watch?v=LD0_-uIsnOE",
-        "type": "video"
-      }
-    ]
-  },
-  "Tt7yr-ChHncJG0Ge1f0Xk": {
-    "title": "Short Polling",
-    "description": "Short polling sends periodic requests to server at regular intervals to check for updates. Simple to implement and HTTP-compatible but inefficient due to frequent requests and latency. Contrasts with long polling and WebSockets. Used when real-time requirements are less stringent.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Amazon SQS Short and Long Polling",
-        "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html",
-        "type": "article"
-      },
-      {
-        "title": "Short Polling vs Long Polling vs WebSockets",
-        "url": "https://www.youtube.com/watch?v=ZBM28ZPlin8",
-        "type": "video"
-      }
-    ]
+  "long--short-polling@osvajAJlwGI3XnX0fE-kA.md": {
+    "title": "Long / Short Polling",
+    "description": "",
+    "links": []
   },
   "M0iaSSdVPWaCUpyTG50Vf": {
     "title": "Redis",
@@ -3214,63 +2782,15 @@
       }
     ]
   },
-  "WiAK70I0z-_bzbWNwiHUd": {
-    "title": "TimeScale",
-    "description": "TimescaleDB is an open-source time-series database built as PostgreSQL extension. Handles large volumes of time-stamped data efficiently for monitoring, IoT, and financial applications. Features efficient ingestion, time-based queries, automatic partitioning (hypertables), and complex aggregations.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Timescale Website",
-        "url": "https://www.timescale.com/",
-        "type": "article"
-      },
-      {
-        "title": "Tutorial - TimeScaleDB Explained in 100 Seconds",
-        "url": "https://www.youtube.com/watch?v=69Tzh_0lHJ8",
-        "type": "video"
-      },
-      {
-        "title": "What is Time Series Data?",
-        "url": "https://www.youtube.com/watch?v=Se5ipte9DMY",
-        "type": "video"
-      }
-    ]
+  "timescaledb@WiAK70I0z-_bzbWNwiHUd.md": {
+    "title": "TimescaleDB",
+    "description": "",
+    "links": []
   },
-  "gT6-z2vhdIQDzmR2K1g1U": {
+  "cassandra@zsiZLWJ2bMvrjuHch5fX_.md": {
     "title": "Cassandra",
-    "description": "Apache Cassandra is a highly scalable, distributed NoSQL database with masterless ring architecture and no single point of failure. Excels in write-heavy environments with high throughput and low latency. Uses wide column store model, ideal for big data applications.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Apache Cassandra",
-        "url": "https://cassandra.apache.org/_/index.html",
-        "type": "article"
-      },
-      {
-        "title": "Cassandra - Quick Guide",
-        "url": "https://www.tutorialspoint.com/cassandra/cassandra_quick_guide.htm",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Backend Development",
-        "url": "https://app.daily.dev/tags/backend?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Apache Cassandra - Course for Beginners",
-        "url": "https://www.youtube.com/watch?v=J-cSy5MeMOA",
-        "type": "video"
-      }
-    ]
-  },
-  "QZwTLOvjUTaSb_9deuxsR": {
-    "title": "Base",
-    "description": "Oracle Base Database Service provides database systems on virtual machines in Oracle Cloud Infrastructure. Offers single-node and multi-node RAC systems with full control over data. Manageable through OCI Console, APIs, CLI, DBCLI, Enterprise Manager, or SQL Developer.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Base Database Documentation",
-        "url": "https://docs.oracle.com/en-us/iaas/base-database/index.html",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "5xy66yQrz1P1w7n6PcAFq": {
     "title": "AWS Neptune",
@@ -3329,20 +2849,106 @@
       }
     ]
   },
-  "ZsZvStCvKwFhlBYe9HGhl": {
-    "title": "Migrations",
-    "description": "Database migrations are version-controlled incremental schema changes that modify database structure without affecting existing data. Ensure consistent, repeatable evolution across environments while maintaining compatibility. Executed using tools like Liquibase, Flyway, or ORM features.\n\nLearn more from the following resources:",
+  "frontend-basics@oyg5g4-cY5EBEUgVkjnL3.md": {
+    "title": "Frontend Basics",
+    "description": "",
+    "links": []
+  },
+  "html@9-pCsW650T1mfj5dmRB9L.md": {
+    "title": "HTML",
+    "description": "",
+    "links": []
+  },
+  "css@utA1W2O6pzoV_LbtDE5DN.md": {
+    "title": "CSS",
+    "description": "",
+    "links": []
+  },
+  "javascript@An2lMuJEkkpL0cfw4RrSl.md": {
+    "title": "JavaScript",
+    "description": "",
+    "links": []
+  },
+  "K55h3aqOGe6-hgVhiFisT": {
+    "title": "Microservices",
+    "description": "Microservices architecture structures applications as loosely coupled, independently deployable services focused on specific business capabilities. Communicate via HTTP or messaging. Enables scalability, flexibility, diverse technologies, and continuous deployment but adds complexity in communication and orchestration.\n\nVisit the following resources to learn more:",
     "links": [
       {
-        "title": "What are Database Migrations?",
-        "url": "https://www.prisma.io/dataguide/types/relational/what-are-database-migrations",
+        "title": "Pattern: Microservice Architecture",
+        "url": "https://microservices.io/patterns/microservices.html",
         "type": "article"
       },
       {
-        "title": "Database Migrations for Beginners",
-        "url": "https://www.youtube.com/watch?v=dJDBP7pPA-o",
+        "title": "What is Microservices?",
+        "url": "https://smartbear.com/solutions/microservices/",
+        "type": "article"
+      },
+      {
+        "title": "Microservices 101",
+        "url": "https://thenewstack.io/microservices-101/",
+        "type": "article"
+      },
+      {
+        "title": "Articles about Microservices",
+        "url": "https://thenewstack.io/category/microservices/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Microservices",
+        "url": "https://app.daily.dev/tags/microservices?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Microservices explained in 5 minutes",
+        "url": "https://www.youtube.com/watch?v=lL_j7ilk7rc",
         "type": "video"
       }
     ]
+  },
+  "nkmIv3dNwre4yrULMgTh3": {
+    "title": "Serverless",
+    "description": "Serverless computing lets developers build applications without managing server infrastructure. Cloud providers handle scaling and maintenance while developers deploy event-triggered functions. Billing based on actual usage. Platforms: AWS Lambda, Google Cloud Functions, Azure Functions.\n\nVisit the following resources to learn more:",
+    "links": [
+      {
+        "title": "Serverless",
+        "url": "https://www.ibm.com/cloud/learn/serverless",
+        "type": "article"
+      },
+      {
+        "title": "AWS Services",
+        "url": "https://aws.amazon.com/serverless/",
+        "type": "article"
+      },
+      {
+        "title": "Explore top posts about Serverless",
+        "url": "https://app.daily.dev/tags/serverless?ref=roadmapsh",
+        "type": "article"
+      },
+      {
+        "title": "Serverless Computing in 100 Seconds",
+        "url": "https://www.youtube.com/watch?v=W_VV2Fx32_Y&ab_channel=Fireship",
+        "type": "video"
+      }
+    ]
+  },
+  "clickhouse@ZyGLSvx17p7QmYDy1LFbM.md": {
+    "title": "ClickHouse",
+    "description": "",
+    "links": []
+  },
+  "scylladb@aArZ3gKwObzafCkTOd-Hj.md": {
+    "title": "ScyllaDB",
+    "description": "",
+    "links": []
+  },
+  "dgraph@GKrcTsUi5XWj_pP1TOK0S.md": {
+    "title": "DGraph",
+    "description": "",
+    "links": []
+  },
+  "migrations@MOLAXgs0CMCT7o84L0EaK.md": {
+    "title": "Migrations",
+    "description": "",
+    "links": []
   }
 }

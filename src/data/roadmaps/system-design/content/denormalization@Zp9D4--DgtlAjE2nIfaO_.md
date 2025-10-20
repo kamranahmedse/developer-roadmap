@@ -4,6 +4,6 @@ Denormalization attempts to improve read performance at the expense of some writ
 
 Once data becomes distributed with techniques such as federation and sharding, managing joins across data centers further increases complexity. Denormalization might circumvent the need for such complex joins.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Denormalization](https://en.wikipedia.org/wiki/Denormalization)

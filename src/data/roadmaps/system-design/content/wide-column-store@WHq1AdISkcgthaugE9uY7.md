@@ -4,6 +4,6 @@ A wide column store's basic unit of data is a column (name/value pair). A column
 
 Google introduced Bigtable as the first wide column store, which influenced the open-source HBase often-used in the Hadoop ecosystem, and Cassandra from Facebook. Stores such as BigTable, HBase, and Cassandra maintain keys in lexicographic order, allowing efficient retrieval of selective key ranges.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Bigtable architecture](https://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf)
