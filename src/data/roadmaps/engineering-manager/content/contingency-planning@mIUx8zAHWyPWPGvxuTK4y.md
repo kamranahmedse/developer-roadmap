@@ -1,7 +1,9 @@
-# Contingency planning
+# Burnout Prevention
 
-An Engineering Manager needs to ensure that their team is prepared for any unexpected situations or challenges - that's where contingency planning comes into play. It's the manager's responsibility to guide their team in developing robust plans that address potential risks and uncertainties. This includes identifying possible obstacles, evaluating their impact, and devising strategies to mitigate them.
+Burnout prevention focuses on strategies and practices aimed at minimizing and mitigating the risk of employees experiencing burnout, a state of emotional, physical, and mental exhaustion caused by prolonged or excessive stress. It involves creating a supportive work environment, promoting healthy work-life balance, and equipping individuals and teams with the tools and resources needed to manage stress effectively and maintain their well-being.
 
-The challenges this role faces are manifold, from predicting the unknown to dealing with a resistant team. To navigate these, cultivating an open and flexible team culture is crucial. By fostering a problem-solving mentality, the manager can encourage their team to see contingency planning as a tool, not a burden.
+Visit the following resources to learn more:
 
-To successfully play this role, an Engineering Manager needs to have strong risk management and strategic thinking skills. They must be able to balance a long-term view with immediate, tactical decisions. They should also be comfortable leading difficult conversations about potential failures and mishaps.
+- [@article@Preventing Burnout: A Guide to Protecting Your Well-Being](https://www.psychiatry.org/news-room/apa-blogs/preventing-burnout-protecting-your-well-being)
+- [@article@Beating Burnout](https://hbr.org/2016/11/beating-burnout)
+- [@video@How to Avoid Burnout](https://www.youtube.com/watch?v=smjGAcyqDnk)
