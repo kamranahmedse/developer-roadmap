@@ -1,6 +1,6 @@
 # Google Test and Google Mock
 
-Google Test and Google Mock are open-source C++ unit testing frameworks developed by Google.Google Test is a standalone framework for writing and running unit tests, while Google Mock extends it with powerful mocking capabilities.Gmock is especially useful for testing components that interact with external or third-party utilities.
+Google Test and Google Mock are open-source C++ unit testing frameworks developed by Google. Google Test is a standalone framework for writing and running unit tests, while Google Mock extends it with powerful mocking capabilities. GMock is especially useful for testing components that interact with external or third-party utilities.
 
 Visit the following resources to learn more:
 
