@@ -4,7 +4,7 @@ When designing APIs, one critical decision is whether to create a synchronous or
 
 On the other hand, Asynchronous APIs do not wait for a response before moving on to the next task, allowing multiple operations to be executed simultaneously. This can result in improved performance and responsiveness especially in applications that need to handle multiple requests concurrently. However, coding for asynchronous APIs can be complex due to issues such as race conditions and callbacks. Understanding the differences between these two types of API design is crucial for creating efficient and effective APIs.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Asynchronous APIs — Everything You Need to Know](https://blog.hubspot.com/website/asynchronous-api)
 - [@article@The Differences Between Synchronous and Asynchronous APIs](https://nordicapis.com/the-differences-between-synchronous-and-asynchronous-apis/)
