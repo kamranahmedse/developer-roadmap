@@ -183,7 +183,10 @@ const gaPageIdentifier = Astro.url.pathname
     }
 
     <Analytics />
-    <GoogleAd />
+
+    <slot name='ad-slot-script'>
+      <GoogleAd />
+    </slot>
 
     {
       !import.meta.env.DEV && (
@@ -235,7 +238,10 @@ const gaPageIdentifier = Astro.url.pathname
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
     <GlobalUpgradeModal client:only='react' />
 
-    <GoogleAdSlot />
+    <slot name='ad-slot'>
+      <GoogleAdSlot />
+    </slot>
+
     <slot name='after-footer' />
 
     <PageVisit

@@ -4,19 +4,19 @@ Caching is the process of storing frequently accessed data in a temporary storag
 
 There are several caching strategies:
 
-- Refresh Ahead
-- Write-Behind
-- Write-through
-- Cache Aside
+*   Refresh Ahead
+*   Write-Behind
+*   Write-through
+*   Cache Aside
 
 Also, you can have the cache in several places, examples include:
 
-- Client Caching
-- CDN Caching
-- Web Server Caching
-- Database Caching
-- Application Caching
+*   Client Caching
+*   CDN Caching
+*   Web Server Caching
+*   Database Caching
+*   Application Caching
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Caching Strategies](https://medium.com/@mmoshikoo/cache-strategies-996e91c80303)

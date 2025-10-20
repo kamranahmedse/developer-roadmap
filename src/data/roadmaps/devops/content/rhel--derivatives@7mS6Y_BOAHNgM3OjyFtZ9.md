@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Red Hat Enterprise Linux Website](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
 - [@official@RHEL Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/)
-- [@video@What is Red Hat Enterprise Linux?](https://www.youtube.com/watch?v=HEBvdSI0wGQ)
 - [@article@Learn Linux 101](https://developer.ibm.com/series/learn-linux-101/)
+- [@video@What is Red Hat Enterprise Linux?](https://www.youtube.com/watch?v=HEBvdSI0wGQ)

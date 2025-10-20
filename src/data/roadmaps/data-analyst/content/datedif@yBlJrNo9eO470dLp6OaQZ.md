@@ -4,7 +4,7 @@ The `DATEDIF` function is an incredibly valuable tool for a Data Analyst in Exce
 
 `DATEDIF` is technically still supported, but wont show as an option. For additional information, see Excel "Help" page.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@DATEDIF function](https://support.microsoft.com/en-gb/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c)
 - [@article@How to use DATEDIF in Excel](https://www.excel-easy.com/examples/datedif.html)

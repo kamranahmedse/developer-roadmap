@@ -1,5 +1,9 @@
 # Availability Patterns
 
-Availability is measured as a percentage of uptime, and defines the proportion of time that a system is functional and working. Availability is affected by system errors, infrastructure problems, malicious attacks, and system load. Cloud applications typically provide users with a service level agreement (SLA), which means that applications must be designed and implemented to maximize availability.
+Availability patterns are established architectural approaches used to ensure a system remains operational and accessible to users, even in the face of failures or unexpected events. These patterns focus on minimizing downtime and maintaining a consistent level of service by incorporating redundancy, fault tolerance, and recovery mechanisms into the system's design. They provide a structured way to address potential points of failure and ensure business continuity.
 
-- [@article@Availability Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#availability)
+Visit the following resources to learn more:
+
+- [@article@High Availability in System Design – 15 Strategies for Always-On Systems](https://www.designgurus.io/blog/high-availability-system-design-basics)
+- [@article@System Design: Availability Patterns](https://dev.to/decoders_lord/system-design-availability-patterns-104i)
+- [@video@Design Patterns for High Availability: What gets you 99.999% uptime?](https://www.youtube.com/watch?v=LdvduBxZRLs)

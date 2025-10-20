@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@How NAT Works](https://www.comptia.org/content/guides/what-is-network-address-translation)
+- [@article@What Is Network Address Translation (NAT)?](https://www.cisco.com/site/us/en/learn/topics/networking/what-is-network-address-translation-nat.html)
 - [@video@NAT explained](https://www.youtube.com/watch?v=FTUV0t6JaDA)

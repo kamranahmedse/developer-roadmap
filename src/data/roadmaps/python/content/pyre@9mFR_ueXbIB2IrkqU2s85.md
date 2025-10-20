@@ -4,4 +4,4 @@ pyrefly is a static type checker for Python. It is a tool that helps you find ty
 
 Visit the following resources to learn more:
 
-- [@official@pyrefly Documentation](https://pyre-check.org/%5D(https://pyrefly.org))
+- [@official@pyrefly Documentation](https://pyrefly.org)

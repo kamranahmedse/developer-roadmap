@@ -6,9 +6,9 @@ In terms of object-oriented programming, it means that the structure and languag
 
 DDD connects the implementation to an evolving model and it is predicated on the following goals:
 
-- Placing the project's primary focus on the core domain and domain logic;
-- Basing complex designs on a model of the domain;
-- Initiating a creative collaboration between technical and domain experts to iteratively refine a conceptual model that addresses particular domain problems.
+*   Placing the project's primary focus on the core domain and domain logic;
+*   Basing complex designs on a model of the domain;
+*   Initiating a creative collaboration between technical and domain experts to iteratively refine a conceptual model that addresses particular domain problems.
 
 Visit the following resources to learn more:
 

@@ -1,4 +1,4 @@
-#  Blameless Post-mortems
+# Blameless Post-mortems
 
 An Engineering Manager plays a key role in facilitating blameless post-mortems. They bring teams together after incidents to dissect what went wrong, ensuring the main goal is learning, not pointing fingers.
 
