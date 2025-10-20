@@ -4,10 +4,10 @@ Noisy neighbor refers to a situation in which one or more components of a system
 
 Examples of noisy neighbor scenarios include:
 
-- One user on a shared server utilizing a large amount of CPU or memory, leading to reduced performance for other users on the same server.
-- One process on a shared server utilizing a large amount of I/O, causing other processes to experience slow I/O and increased latency.
-- One application consuming a large amount of network bandwidth, causing other applications to experience reduced throughput.
+*   One user on a shared server utilizing a large amount of CPU or memory, leading to reduced performance for other users on the same server.
+*   One process on a shared server utilizing a large amount of I/O, causing other processes to experience slow I/O and increased latency.
+*   One application consuming a large amount of network bandwidth, causing other applications to experience reduced throughput.
 
-Learn from the following links:
+Visit the following resources to learn more:
 
 - [@article@Noisy Neighbor antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor)

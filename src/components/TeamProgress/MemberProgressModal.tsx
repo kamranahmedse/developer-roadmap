@@ -108,12 +108,17 @@ export function MemberProgressModal(props: ProgressMapProps) {
     const json = await res.json();
     const svg =
       renderer === 'editor'
-        ? await renderFlowJSON(json)
+        ? renderFlowJSON(json)
         : await wireframeJSONToSVG(json, {
             fontURL: '/fonts/balsamiq.woff2',
           });
 
-    replaceChildren(containerEl.current!, svg);
+    const container = containerEl.current;
+    if (!svg || !container) {
+      return;
+    }
+
+    replaceChildren(container, svg);
   }
 
   useKeydown('Escape', () => {

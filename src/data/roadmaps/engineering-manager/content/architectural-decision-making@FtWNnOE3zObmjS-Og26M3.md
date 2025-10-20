@@ -1,6 +1,6 @@
 # Architectural Decision-Making
 
-Architectural decision-making is a crucial responsibility for an Engineering Manager. These decisions can shape the future capabilities and operation of an engineering team. A manager should be capable of balancing current requirements with long-term goals. This involves choosing the right technologies, frameworks and design patterns. 
+Architectural decision-making is a crucial responsibility for an Engineering Manager. These decisions can shape the future capabilities and operation of an engineering team. A manager should be capable of balancing current requirements with long-term goals. This involves choosing the right technologies, frameworks and design patterns.
 
 They face challenges, like managing risks and ensuring scalability. To address these challenges, they use data and consult their teams before making any major decisions to mitigate risk. The decision-making process includes stakeholder consultations, careful analysis of options, and potential risk assessments.
 

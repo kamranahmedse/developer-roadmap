@@ -5,6 +5,6 @@ Ionic builds mobile and desktop apps using web technologies (HTML, CSS, JavaScri
 Visit the following resources to learn more:
 
 - [@official@Ionic Framework Website](https://ionicframework.com/)
-- [@article@Ionic 8 Announcement](https://ionic.io/blog/ionic-8-is-here)
 - [@opensource@ionic-team/ionic-framework](https://github.com/ionic-team/ionic-framework)
+- [@article@Ionic 8 Announcement](https://ionic.io/blog/ionic-8-is-here)
 - [@feed@Explore top posts about Ionic](https://app.daily.dev/tags/ionic?ref=roadmapsh)

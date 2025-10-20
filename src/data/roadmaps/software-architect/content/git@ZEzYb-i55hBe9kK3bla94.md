@@ -5,7 +5,7 @@ Git is a distributed version control system designed to handle projects of any s
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
-- [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 - [@article@Git Cheat Sheet](https://cs.fyi/guide/git-cheatsheet)
 - [@article@Tutorial: Git for Absolutely Everyone](https://thenewstack.io/tutorial-git-for-absolutely-everyone/)
+- [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 - [@feed@Explore top posts about Git](https://app.daily.dev/tags/git?ref=roadmapsh)
