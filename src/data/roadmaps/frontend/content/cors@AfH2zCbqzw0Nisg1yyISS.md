@@ -5,5 +5,5 @@ CORS (Cross-Origin Resource Sharing) controls web page access to resources from 
 Visit the following resources to learn more:
 
 - [@article@Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-- [@video@CORS in 6 minutes](https://www.youtube.com/watch?v=PNtFSVU-YTI)
 - [@article@Understanding CORS](https://rbika.com/blog/understanding-cors)
+- [@video@CORS in 6 minutes](https://www.youtube.com/watch?v=PNtFSVU-YTI)
