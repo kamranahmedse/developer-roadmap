@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Viem Library](https://viem.sh)
 - [@article@Client Libraries](https://docs.waves.tech/en/building-apps/waves-api-and-sdk/client-libraries/)
-- [@article@Smart Contract Libraries](https://ethereum.org/en/developers/docs/smart-contracts/libraries/)

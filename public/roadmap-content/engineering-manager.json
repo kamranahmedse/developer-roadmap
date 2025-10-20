@@ -468,29 +468,29 @@
     "description": "An Engineering Manager's role in production issues management is crucial. They are responsible for quick decision making during system down-times or service disruptions. They deploy resources efficiently to resolve issues, sometimes guiding the team in real-time to troubleshoot and fix the problem.\n\nKey challenges include downtime minimization, maintaining system availability, and making trade-offs between quick fixes and long-term solutions. They address these challenges by implementing strong incident management policies and training the team for effective system recovery processes.\n\nSuccess in this aspect requires a mix of technical skills, effective communication, and problem-solving abilities. They also need a solid understanding of the deployed systems and infrastructure to ensure seamless functionality and service availability. It's crucial to learn from each outage to prevent or handle similar occurrences in the future.",
     "links": []
   },
-  "mIUx8zAHWyPWPGvxuTK4y": {
-    "title": "Contingency planning",
-    "description": "An Engineering Manager needs to ensure that their team is prepared for any unexpected situations or challenges - that's where contingency planning comes into play. It's the manager's responsibility to guide their team in developing robust plans that address potential risks and uncertainties. This includes identifying possible obstacles, evaluating their impact, and devising strategies to mitigate them.\n\nThe challenges this role faces are manifold, from predicting the unknown to dealing with a resistant team. To navigate these, cultivating an open and flexible team culture is crucial. By fostering a problem-solving mentality, the manager can encourage their team to see contingency planning as a tool, not a burden.\n\nTo successfully play this role, an Engineering Manager needs to have strong risk management and strategic thinking skills. They must be able to balance a long-term view with immediate, tactical decisions. They should also be comfortable leading difficult conversations about potential failures and mishaps.",
+  "burnout-prevention@mIUx8zAHWyPWPGvxuTK4y.md": {
+    "title": "Burnout prevention",
+    "description": "",
     "links": []
   },
-  "nnoVA8W70hrNDxN3XQCVL": {
-    "title": "Disaster recovery",
-    "description": "An Engineering Manager plays a critical part in disaster recovery. It is their job to ensure that, if any failure occurs, the team can quickly get systems up and running again. They devise and oversee the implementation of a sturdy disaster recovery plan. This often involves risk assessment, data backups, and establishing rapid recovery processes.\n\nChallenges they may face include dealing with data loss and service disruptions. To face these, an Engineering Manager often relies on a good strategy, clear communication, and effective coordination. They align the team and ensure everyone knows their role in the recovery process.\n\nIt requires strong leadership, risk management, technical knowledge, and problem-solving skills. Regular testing of the recovery plan is also essential to identify loopholes and ensure the effectiveness of the strategies in place.",
+  "critical-situation-leadership@nnoVA8W70hrNDxN3XQCVL.md": {
+    "title": "Critical situation leadership",
+    "description": "",
     "links": []
   },
-  "FwK-B7jRbBXVnuY9JxI1w": {
-    "title": "Business continuity",
-    "description": "An Engineering Manager plays a pivotal role in the domain of business continuity. This involves ensuring that the various aspects of technological and process frameworks are resilient to disruptions. The aim is to sustain core business operations during times of crisis.\n\nKey responsibilities include setting up robust risk management systems, executing incident-response plans, and ensuring data integrity during downtime. It's a challenge to maintain operational resilience without stinting ongoing projects, and managing it involves a delicate balance of resources.\n\nTo achieve this, Engineering Managers must possess excellent problem-solving skills and a clear understanding of business operation needs. Regular risk assessment and sharpening the team's skill set to adapt and respond to uncertainty quickly are essential strategies. Robust infrastructure, policy planning, and good leadership are underlying requirements to render effective business continuity.",
+  "emergency-staffing@FwK-B7jRbBXVnuY9JxI1w.md": {
+    "title": "Emergency staffing",
+    "description": "",
     "links": []
   },
-  "QFhhOgwz_bgZgOfKFg5XA": {
-    "title": "Security incident handling",
-    "description": "For an Engineering Manager, handling security incidents within a team involves keen attention to detail and quick actions. Their key responsibilities include coordinating with the security team to manage the issue and ensure minimal disruption to the project. They also facilitate communications, keeping all stakeholders informed about the situation and the steps being taken.\n\nChallenges faced by the Engineering Manager include managing team stress levels during security incidents and ensuring swift return to normal operations post-incident. By skillfully juggling these tasks, the manager can help secure the team's trust and keep the project on track.\n\nTo successfully handle security incidents, an Engineering Manager needs active decision-making skills, a solid understanding of security protocols, and strong team leadership capabilities. The ability to react calmly and decisively under pressure is also essential.",
+  "stress-management@QFhhOgwz_bgZgOfKFg5XA.md": {
+    "title": "Stress management",
+    "description": "",
     "links": []
   },
-  "tmY4Ktu6luFg5wKylJW76": {
-    "title": "Production issues management",
-    "description": "As an Engineering Manager, handling production issues is one of the vital responsibilities. This includes timeliness in identifying, troubleshooting, and resolving problems. They may be involved in the actual debugging, but most of their tasks involve coordinating the team and defining procedures for a swift response to any issues.\n\nAddressing these issues can be challenging, particularly if they disrupt essential services or products. The manager needs to communicate effectively with the team and stakeholders, manage expectations, and ensure minimal interruption of services.\n\nTo excel in production issues management, an Engineering Manager needs valuable skills. These include technical knowledge, critical thinking, decision-making, and strong communication skills. Also, experience with certain tools, like monitoring software, could be beneficial to quickly detect and resolve issues.",
+  "work-life-balance-during-crises@tmY4Ktu6luFg5wKylJW76.md": {
+    "title": "Work-life balance during crises",
+    "description": "",
     "links": []
   },
   "5MM1ccB1pmQcd3Uyjmbr7": {

@@ -4,7 +4,7 @@ PostgreSQL, often simply "Postgres", is an open-source relational database manag
 
 Postgres is known for its robustness and reliability, as well as its support for advanced features such as concurrency control, full-text search, and geospatial data. It is also highly extensible, allowing developers to create custom functions and operators in a variety of programming languages, including C, Python, and JavaScript.
 
-For more information, visit the following resources:
+Visit the following resources to learn more:
 
 - [@official@Postgresql - Open Source Relational Database](https://www.postgresql.org/)
 - [@article@What is Postgresql?](https://postgresqltutorial.com/postgresql-getting-started/what-is-postgresql/)

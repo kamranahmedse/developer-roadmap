@@ -1,4 +1,4 @@
-#  Market awareness
+# Market awareness
 
 An Engineering Manager needs to have both technology and market awareness. By understanding the market trends, they can lead the team towards developing products or features that meet client needs and stand out from the competition. This involves close collaboration with the marketing, sales, and product management teams to incorporate market feedback into the engineering process.
 

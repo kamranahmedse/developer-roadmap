@@ -1,4 +1,6 @@
-# IPSec
+# IPsec
+
+IPsec (Internet Protocol Security) is a suite of protocols used to secure Internet Protocol (IP) communications by authenticating and encrypting each IP packet of a communication session. It operates at the network layer, providing security for all applications running over it. IPsec can be used to create Virtual Private Networks (VPNs) or to secure remote access connections, ensuring data confidentiality, integrity, and authentication between devices.
 
 Visit the following resources to learn more:
 
