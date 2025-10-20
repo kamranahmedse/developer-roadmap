@@ -25,4 +25,4 @@ if (user.canCheckout()) {
 
 Learn more from the following resources:
 
-- [@Article - Tell, Don’t Ask](https://martinfowler.com/bliki/TellDontAsk.html)
+- [@article@Tell, Don't Ask](https://martinfowler.com/bliki/TellDontAsk.html)
