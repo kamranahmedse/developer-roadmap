@@ -4,10 +4,10 @@ Caching in GraphQL improves performance by storing query results for reuse. Stra
 
 There are several types of caching that can be used in GraphQL:
 
-- Client-side caching
-- Server-side caching
-- CDN caching
+*   Client-side caching
+*   Server-side caching
+*   CDN caching
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Get started with Caching](https://graphql.org/learn/caching/)
