@@ -4,7 +4,7 @@ Apache Kafka is an open-source, distributed event streaming platform that is use
 
 Kafka is based on a publish-subscribe model, where producers write data to topics, and consumers read data from those topics. Data is stored in topics in a log-based format, which allows for efficient storage and retrieval of data.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Working with Apache Kafka in ASP.NET](https://www.codemag.com/Article/2201061/Working-with-Apache-Kafka-in-ASP.NET-6-Core)
 - [@article@Kafka and .NET](https://docs.confluent.io/kafka-clients/dotnet/current/overview.html)
