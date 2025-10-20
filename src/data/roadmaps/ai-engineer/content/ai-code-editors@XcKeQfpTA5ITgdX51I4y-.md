@@ -9,3 +9,6 @@ Visit the following resources to learn more:
 - [@article@Bolt - Prompt, run, edit, and deploy full-stack web apps](https://bolt.new)
 - [@article@Replit - Build Apps using AI](https://replit.com/ai)
 - [@article@v0 - Build Apps with AI](https://v0.dev)
+- [@website@Claude Code - AI coding assistant in terminal](https://www.claude.com/product/claude-code)
+- [@official@Gemini CLI - Google's AI coding assistant for command line](https://github.com/google-gemini/gemini-cli)
+- [@official@OpenAI Codex - AI code generation via API and CLI](https://openai.com/codex/)

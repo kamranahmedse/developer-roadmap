@@ -1869,6 +1869,21 @@
         "title": "v0 - Build Apps with AI",
         "url": "https://v0.dev",
         "type": "website"
+      },
+      {
+        "title": "Claude Code - AI coding assistant in terminal",
+        "url": "https://www.claude.com/product/claude-code",
+        "type": "website"
+      },
+      {
+        "title": "Gemini CLI - Google's AI coding assistant for command line",
+        "url": "https://github.com/google-gemini/gemini-cli",
+        "type": "official"
+      },
+      {
+        "title": "OpenAI Codex - AI code generation via API and CLI",
+        "url": "https://openai.com/codex/",
+        "type": "official"
       }
     ]
   },
