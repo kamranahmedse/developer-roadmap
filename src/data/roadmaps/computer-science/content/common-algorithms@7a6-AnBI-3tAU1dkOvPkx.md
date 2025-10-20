@@ -2,17 +2,17 @@
 
 Here are some common algorithms that you should know. You can find more information about them in the Algorithms section of the Computer Science course.
 
-- Sorting
-- Recursion
-- Searching
-- Cache Algorithms
-- Tree Algorithms
-- Graph Algorithms
-- Greedy Algorithms
-- Backtracking
-- Substring Search
-- Suffix Arrays
-- Dynamic Programming
+*   Sorting
+*   Recursion
+*   Searching
+*   Cache Algorithms
+*   Tree Algorithms
+*   Graph Algorithms
+*   Greedy Algorithms
+*   Backtracking
+*   Substring Search
+*   Suffix Arrays
+*   Dynamic Programming
 
 Visit the following resources to learn more:
 

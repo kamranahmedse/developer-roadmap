@@ -657,22 +657,6 @@
       }
     ]
   },
-  "PkRAYBZQAUAHxWEeCCX4U": {
-    "title": "Huobi Eco Chain",
-    "description": "Huobi's ECO Chain (also known as HECO) is a public blockchain that provides developers with a low-cost onchain environment for running decentralized apps (dApps) of smart contracts and storing digital assets.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Introduction to HECO Chain",
-        "url": "https://docs.hecochain.com/#/",
-        "type": "article"
-      },
-      {
-        "title": "Huobi Eco Chain whitepaper",
-        "url": "https://www.hecochain.com/developer.133bd45.pdf",
-        "type": "article"
-      }
-    ]
-  },
   "txQ9U1wcnZkQVh6B49krk": {
     "title": "Avalanche",
     "description": "Avalanche describes itself as an “open, programmable smart contracts platform for decentralized applications.” What does that mean? Like many other decentralized protocols, Avalanche has its own token called AVAX, which is used to pay transaction fees and can be staked to secure the network.\n\nVisit the following resources to learn more:",

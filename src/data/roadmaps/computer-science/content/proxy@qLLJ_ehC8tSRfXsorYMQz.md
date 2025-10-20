@@ -4,5 +4,5 @@ A proxy server is an intermediary piece of hardware/software sitting between the
 
 Visit the following resources to learn more:
 
-- [@roadmap.sh@Proxy Servers](https://roadmap.sh/guides/proxy-servers)
+- [@article@Proxy Servers](https://roadmap.sh/guides/proxy-servers)
 - [@article@Proxy - System Design](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#proxy)

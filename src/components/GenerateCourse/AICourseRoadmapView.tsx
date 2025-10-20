@@ -113,13 +113,21 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
         onStream: async (result) => {
           const roadmap = generateAICourseRoadmapStructure(result, true);
           const { nodes, edges } = generateAIRoadmapFromText(roadmap);
-          const svg = await renderFlowJSON({ nodes, edges });
+          const svg = renderFlowJSON({ nodes, edges });
+          // it will be null only on server side
+          if (!svg) {
+            return;
+          }
           replaceChildren(containerEl.current!, svg);
         },
         onStreamEnd: async (result) => {
           const roadmap = generateAICourseRoadmapStructure(result, true);
           const { nodes, edges } = generateAIRoadmapFromText(roadmap);
-          const svg = await renderFlowJSON({ nodes, edges });
+          const svg = renderFlowJSON({ nodes, edges });
+          // it will be null only on server side
+          if (!svg) {
+            return;
+          }
           replaceChildren(containerEl.current!, svg);
           setRoadmapStructure(roadmap);
           setIsGenerating(false);
@@ -217,7 +225,7 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
   );
 
   return (
-    <div className="relative overflow-hidden mx-auto min-h-[500px] rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
+    <div className="relative mx-auto min-h-[500px] overflow-hidden rounded-xl border border-gray-200 bg-white shadow-xs lg:max-w-5xl">
       <AICourseOutlineHeader
         course={course}
         isLoading={isLoading}
@@ -237,7 +245,9 @@ export function AICourseRoadmapView(props: AICourseRoadmapViewProps) {
         </div>
       )}
 
-      {!isLoggedIn() && <LoginToView className="-mt-1 -mb-2 rounded-none border-none" />}
+      {!isLoggedIn() && (
+        <LoginToView className="-mt-1 -mb-2 rounded-none border-none" />
+      )}
 
       {error && !isGenerating && !isLoggedIn() && (
         <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center">

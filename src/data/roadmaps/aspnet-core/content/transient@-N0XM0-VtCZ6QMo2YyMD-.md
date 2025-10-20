@@ -4,7 +4,7 @@ Transient lifetime is a type of dependency injection that creates a new instance
 
 Transient lifetime is useful when you have services that are stateless and do not need to maintain any data between requests, such as a service that performs a simple calculation or returns data from a database.
 
-For more information:
+Visit the following resources to learn more:
 
 - [@article@What are Transient Dependencies?](https://blazor-university.com/dependency-injection/dependency-lifetimes-and-scopes/transient-dependencies/)
 - [@article@Dependency Injection Lifetime](https://www.tektutorialshub.com/asp-net-core/asp-net-core-dependency-injection-lifetime/)
