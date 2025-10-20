@@ -4,7 +4,7 @@ NoSQL (Not Only SQL) is a type of database that does not use the traditional tab
 
 There are several types of NoSQL databases, such as document databases, key-value databases, graph databases, and column-family databases, each with their own unique features and use cases. Some examples of NoSQL databases include MongoDB, Cassandra, RavenDB, CouchDB, and Redis.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@NoSQL in .NET Applications](https://www.slideshare.net/shijucv/nosql-database-in-net-apps)
 - [@article@Open Source NoSQL Database for .NET](https://www.alachisoft.com/nosdb/)

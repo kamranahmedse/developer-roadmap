@@ -4,6 +4,6 @@ Push CDNs receive new content whenever changes occur on your server. You take fu
 
 Sites with a small amount of traffic or sites with content that isn't often updated work well with push CDNs. Content is placed on the CDNs once, instead of being re-pulled at regular intervals.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@opensource@Introduction to CDNs](https://github.com/donnemartin/system-design-primer#content-delivery-network)

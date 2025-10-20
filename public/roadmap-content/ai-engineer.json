@@ -471,17 +471,6 @@
       }
     ]
   },
-  "5ShWZl1QUqPwO-NRGN85V": {
-    "title": "OpenAI Models",
-    "description": "OpenAI provides a variety of models designed for diverse tasks. GPT models like GPT-3 and GPT-4 handle text generation, conversation, and translation, offering context-aware responses, while Codex specializes in generating and debugging code across multiple languages. DALL-E creates images from text descriptions, supporting applications in design and content creation, and Whisper is a speech recognition model that converts spoken language to text for transcription and voice-to-text tasks.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "OpenAI Models Overview",
-        "url": "https://platform.openai.com/docs/models",
-        "type": "article"
-      }
-    ]
-  },
   "zdeuA4GbdBl2DwKgiOA4G": {
     "title": "OpenAI API",
     "description": "The OpenAI API provides access to powerful AI models like GPT, Codex, DALL-E, and Whisper, enabling developers to integrate capabilities such as text generation, code assistance, image creation, and speech recognition into their applications via a simple, scalable interface.\n\nLearn more from the following resources:",
@@ -1334,21 +1323,10 @@
       }
     ]
   },
-  "lVhWhZGR558O-ljHobxIi": {
-    "title": "RAG & Implementation",
-    "description": "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation to produce more accurate, context-aware responses. It uses two components: a retriever, which searches a database to find relevant information, and a generator, which crafts a response based on the retrieved data. Implementing RAG involves using a retrieval model (e.g., embeddings and vector search) alongside a generative language model (like GPT). The process starts by converting a query into embeddings, retrieving relevant documents from a vector database, and feeding them to the language model, which then generates a coherent, informed response. This approach grounds outputs in real-world data, resulting in more reliable and detailed answers.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "What is RAG?",
-        "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
-        "type": "article"
-      },
-      {
-        "title": "What is Retrieval-Augmented Generation? IBM",
-        "url": "https://www.youtube.com/watch?v=T-D1OfcDW1M",
-        "type": "video"
-      }
-    ]
+  "what-are-rags@lVhWhZGR558O-ljHobxIi.md": {
+    "title": "What are RAGs?",
+    "description": "",
+    "links": []
   },
   "GCn4LGNEtPI0NWYAZCRE-": {
     "title": "RAG Usecases",
@@ -1498,53 +1476,20 @@
       }
     ]
   },
-  "ebXXEhNRROjbbof-Gym4p": {
+  "langchain@jM-Jbo0wUilhVY830hetJ.md": {
     "title": "Langchain",
-    "description": "LangChain is a development framework that simplifies building applications powered by language models, enabling seamless integration of multiple AI models and data sources. It focuses on creating chains, or sequences, of operations where language models can interact with databases, APIs, and other models to perform complex tasks. LangChain offers tools for prompt management, data retrieval, and workflow orchestration, making it easier to develop robust, scalable applications like chatbots, automated data analysis, and multi-step reasoning systems.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "LangChain",
-        "url": "https://www.langchain.com/",
-        "type": "article"
-      },
-      {
-        "title": "What is LangChain?",
-        "url": "https://www.youtube.com/watch?v=1bUy-1hGZpI",
-        "type": "video"
-      }
-    ]
+    "description": "",
+    "links": []
   },
-  "d0ontCII8KI8wfP-8Y45R": {
+  "llama-index@JT4mBXOjvvrUnynA7yrqt.md": {
     "title": "Llama Index",
-    "description": "LlamaIndex, formerly known as GPT Index, is a tool designed to facilitate the integration of large language models (LLMs) with structured and unstructured data sources. It acts as a data framework that helps developers build retrieval-augmented generation (RAG) applications by indexing various types of data, such as documents, databases, and APIs, enabling LLMs to query and retrieve relevant information efficiently.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Llama Index",
-        "url": "https://docs.llamaindex.ai/en/stable/",
-        "type": "article"
-      },
-      {
-        "title": "Introduction to LlamaIndex with Python (2024)",
-        "url": "https://www.youtube.com/watch?v=cCyYGYyCka4",
-        "type": "video"
-      }
-    ]
+    "description": "",
+    "links": []
   },
-  "eOqCBgBTKM8CmY3nsWjre": {
-    "title": "Open AI Assistant API",
-    "description": "The OpenAI Assistant API enables developers to create advanced conversational systems using models like GPT-4. It supports multi-turn conversations, allowing the AI to maintain context across exchanges, which is ideal for chatbots, virtual assistants, and interactive applications. Developers can customize interactions by defining roles, such as system, user, and assistant, to guide the assistant's behavior. With features like temperature control, token limits, and stop sequences, the API offers flexibility to ensure responses are relevant, safe, and tailored to specific use cases.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "OpenAI Assistants API – Course for Beginners",
-        "url": "https://www.youtube.com/watch?v=qHPonmSX4Ms",
-        "type": "course"
-      },
-      {
-        "title": "Assistants API",
-        "url": "https://platform.openai.com/docs/assistants/overview",
-        "type": "article"
-      }
-    ]
+  "open-ai-response-api@eOqCBgBTKM8CmY3nsWjre.md": {
+    "title": "Open AI Response API",
+    "description": "",
+    "links": []
   },
   "c0RPhpD00VIUgF4HJgN2T": {
     "title": "Replicate",
@@ -1562,26 +1507,10 @@
       }
     ]
   },
-  "AeHkNU-uJ_gBdo5-xdpEu": {
+  "ai-agents@4_ap0rD9Gl6Ep_4jMfPpG.md": {
     "title": "AI Agents",
-    "description": "In AI engineering, \"agents\" refer to autonomous systems or components that can perceive their environment, make decisions, and take actions to achieve specific goals. Agents often interact with external systems, users, or other agents to carry out complex tasks. They can vary in complexity, from simple rule-based bots to sophisticated AI-powered agents that leverage machine learning models, natural language processing, and reinforcement learning.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Building an AI Agent Tutorial - LangChain",
-        "url": "https://python.langchain.com/docs/tutorials/agents/",
-        "type": "article"
-      },
-      {
-        "title": "AI agents and their types",
-        "url": "https://play.ht/blog/ai-agents-use-cases/",
-        "type": "article"
-      },
-      {
-        "title": "The Complete Guide to Building AI Agents for Beginners",
-        "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX",
-        "type": "video"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "778HsQzTuJ_3c9OSn5DmH": {
     "title": "Agents Usecases",
@@ -1652,21 +1581,10 @@
       }
     ]
   },
-  "mbp2NoL-VZ5hZIIblNBXt": {
-    "title": "OpenAI Assistant API",
-    "description": "The OpenAI Assistant API enables developers to create advanced conversational systems using models like GPT-4. It supports multi-turn conversations, allowing the AI to maintain context across exchanges, which is ideal for chatbots, virtual assistants, and interactive applications. Developers can customize interactions by defining roles, such as system, user, and assistant, to guide the assistant's behavior. With features like temperature control, token limits, and stop sequences, the API offers flexibility to ensure responses are relevant, safe, and tailored to specific use cases.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "OpenAI Assistants API – Course for Beginners",
-        "url": "https://www.youtube.com/watch?v=qHPonmSX4Ms",
-        "type": "course"
-      },
-      {
-        "title": "Assistants API",
-        "url": "https://platform.openai.com/docs/assistants/overview",
-        "type": "article"
-      }
-    ]
+  "openai-response-api@xXLyuUNrKEc32XLQxMjgT.md": {
+    "title": "OpenAI Response API",
+    "description": "",
+    "links": []
   },
   "W7cKPt_UxcUgwp8J6hS4p": {
     "title": "Multimodal AI",
@@ -1979,5 +1897,75 @@
         "type": "article"
       }
     ]
+  },
+  "haystack@ebXXEhNRROjbbof-Gym4p.md": {
+    "title": "Haystack",
+    "description": "",
+    "links": []
+  },
+  "ragflow@d0ontCII8KI8wfP-8Y45R.md": {
+    "title": "RAGFlow",
+    "description": "",
+    "links": []
+  },
+  "model-context-protocol-mcp@AeHkNU-uJ_gBdo5-xdpEu.md": {
+    "title": "Model Context Protocol (MCP)",
+    "description": "",
+    "links": []
+  },
+  "mcp-host@MabZ9jOrSj539C5qZrVBd.md": {
+    "title": "MCP Host",
+    "description": "",
+    "links": []
+  },
+  "mcp-server@8Xkd88EjX3GE_9DWQhr7G.md": {
+    "title": "MCP Server",
+    "description": "",
+    "links": []
+  },
+  "mcp-client@po0fIZYaFhRbNlza7sB37.md": {
+    "title": "MCP Client",
+    "description": "",
+    "links": []
+  },
+  "data-layer@Z0920V57_ziDhXbQJMN9O.md": {
+    "title": "Data Layer",
+    "description": "",
+    "links": []
+  },
+  "transport-layer@o4gHDZ5p9lyeHuCAPvAKz.md": {
+    "title": "Transport Layer",
+    "description": "",
+    "links": []
+  },
+  "building-an-mcp-server@oLGfKjcqBzJ3vd6Cg-T1B.md": {
+    "title": "Building an MCP Server",
+    "description": "",
+    "links": []
+  },
+  "building-an-mcp-client@0Rk0rCbmRFJT2GKwUibQS.md": {
+    "title": "Building an MCP Client",
+    "description": "",
+    "links": []
+  },
+  "connect-to-local-server@H-G93SsEgsA_NGL_v4hPv.md": {
+    "title": "Connect to Local Server",
+    "description": "",
+    "links": []
+  },
+  "connect-to-remote-server@2t4uINxmzfx8FUF-_i_2B.md": {
+    "title": "Connect to Remote Server",
+    "description": "",
+    "links": []
+  },
+  "vertex-ai@AxzTGDCC2Ftp4G66U4Uqr.md": {
+    "title": "Vertex AI",
+    "description": "",
+    "links": []
+  },
+  "google-adk@mbp2NoL-VZ5hZIIblNBXt.md": {
+    "title": "Google ADK",
+    "description": "",
+    "links": []
   }
 }

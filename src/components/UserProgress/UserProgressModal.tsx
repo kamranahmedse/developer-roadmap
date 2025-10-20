@@ -101,7 +101,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     }
 
     return renderer === 'editor'
-      ? await renderFlowJSON(roadmapJson as any)
+      ? (renderFlowJSON(roadmapJson as any) as SVGElement)
       : await wireframeJSONToSVG(roadmapJson, {
           fontURL: '/fonts/balsamiq.woff2',
         });
@@ -210,7 +210,7 @@ export function UserProgressModal(props: ProgressMapProps) {
   return (
     <div
       id={'user-progress-modal'}
-      className="fixed left-0 right-0 top-0 z-100 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
+      className="fixed top-0 right-0 left-0 z-100 h-full items-center justify-center overflow-x-hidden overflow-y-auto overscroll-contain bg-black/50"
     >
       <div className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div
@@ -230,7 +230,7 @@ export function UserProgressModal(props: ProgressMapProps) {
 
           <button
             type="button"
-            className={`absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-gray-100 bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden`}
+            className={`absolute top-3 right-2.5 ml-auto inline-flex items-center rounded-lg bg-gray-100 bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden`}
             onClick={onClose}
           >
             <X className="h-4 w-4" />

@@ -5,5 +5,5 @@ Relay is Facebook's JavaScript library for data-heavy React applications using G
 Visit the following resources to learn more:
 
 - [@official@Relay Website](https://relay.dev/)
-- [@video@ELI5 - Relay](https://www.youtube.com/watch?v=A4POd93GI_I)
 - [@opensource@facebook/relay](https://github.com/facebook/relay)
+- [@video@ELI5 - Relay](https://www.youtube.com/watch?v=A4POd93GI_I)

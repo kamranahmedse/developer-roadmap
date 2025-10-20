@@ -4,7 +4,7 @@ Related to the "Application Layer" discussion are microservices, which can be de
 
 Pinterest, for example, could have the following microservices: user profile, follower, feed, search, photo upload, etc.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Introduction to Microservices](https://aws.amazon.com/microservices/)
 - [@article@Microservices - Wikipedia](https://en.wikipedia.org/wiki/Microservices)

@@ -4,7 +4,7 @@ Microsoft.Extensions.DependencyInjection is a dependency injection framework tha
 
 The package provides a simple and consistent API for registering services and resolving dependencies, which can be used to configure and manage the lifetime of objects in an application. It also provides built-in support for various types of service lifetime, such as transient, singleton and scoped.
 
-For more information, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Guide to Microsoft Extensions Dependency Injection](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection?view=dotnet-plat-ext-7.0)
 - [@article@Exploring the Microsoft.Extensions.DependencyInjection](https://www.codeproject.com/Articles/5339241/Exploring-the-Microsoft-Extensions-DependencyInjec)

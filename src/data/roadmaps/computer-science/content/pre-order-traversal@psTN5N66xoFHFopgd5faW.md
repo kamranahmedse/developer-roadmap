@@ -1,6 +1,6 @@
 # Pre-Order Traversal
 
-Pre-order traversal is a tree traversal algorithm that visits the root node first, then recursively traverses the left subtree, followed by the right subtree.
+Pre-order traversal is a way to visit every node in a tree data structure. It follows a specific order: first, the current node is processed (or visited). Then, the left subtree of the current node is traversed using pre-order. Finally, the right subtree of the current node is traversed using pre-order. This "node-left-right" sequence ensures each node is visited exactly once.
 
 Visit the following resources to learn more:
 
