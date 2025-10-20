@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [@official@Spring Framework Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
 - [@article@"Spring Configuration" tutorial](https://www.baeldung.com/project-configuration-with-spring)
 - [@article@"Spring Framework" tutorial](https://www.tutorialspoint.com/spring/index.htm)
-- [@video@"Spring Core" video tutorial](https://www.youtube.com/watch?v=GB8k2-Egfv0)
+- [@video@Spring Configuration | Spring Tutorial For Beginners](https://www.youtube.com/watch?v=fLs_yULL10g)

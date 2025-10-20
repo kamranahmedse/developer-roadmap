@@ -4,10 +4,10 @@ In Hibernate, we can either create a new object of an entity and store it into t
 
 There are mainly four states of the Hibernate Lifecycle :
 
-- Transient State
-- Persistent State
-- Detached State
-- Removed State
+*   Transient State
+*   Persistent State
+*   Detached State
+*   Removed State
 
 Visit the following resources to learn more:
 

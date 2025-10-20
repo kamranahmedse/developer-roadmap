@@ -8,11 +8,11 @@ UDP is less reliable but works well in real time use cases such as VoIP, video c
 
 Use UDP over TCP when:
 
-- You need the lowest latency
-- Late data is worse than loss of data
-- You want to implement your own error correction
+*   You need the lowest latency
+*   Late data is worse than loss of data
+*   You want to implement your own error correction
 
-To learn more, visit the following link:
+Visit the following resources to learn more:
 
 - [@article@Networking for game programming](http://gafferongames.com/networking-for-game-programmers/udp-vs-tcp/)
 - [@article@Key differences between TCP and UDP protocols](http://www.cyberciti.biz/faq/key-differences-between-tcp-and-udp-protocols/)

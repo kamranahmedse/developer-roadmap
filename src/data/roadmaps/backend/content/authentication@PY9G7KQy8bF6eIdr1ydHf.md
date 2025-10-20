@@ -4,10 +4,10 @@ API authentication verifies client identity to ensure only authorized access to 
 
 Visit the following resources to learn more:
 
-- [@roadmap.sh@Basic Authentication](https://roadmap.sh/guides/basic-authentication)
-- [@roadmap.sh@Session Based Authentication](https://roadmap.sh/guides/session-authentication)
-- [@roadmap.sh@Token Based Authentication](https://roadmap.sh/guides/token-authentication)
-- [@roadmap.sh@JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
-- [@roadmap.sh@OAuth - Open Authorization](https://roadmap.sh/guides/oauth)
-- [@roadmap.sh@SSO - Single Sign On](https://roadmap.sh/guides/sso)
+- [@article@Basic Authentication](https://roadmap.sh/guides/basic-authentication)
+- [@article@Session Based Authentication](https://roadmap.sh/guides/session-authentication)
+- [@article@Token Based Authentication](https://roadmap.sh/guides/token-authentication)
+- [@article@JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
+- [@article@OAuth - Open Authorization](https://roadmap.sh/guides/oauth)
+- [@article@SSO - Single Sign On](https://roadmap.sh/guides/sso)
 - [@feed@Explore top posts about Authentication](https://app.daily.dev/tags/authentication?ref=roadmapsh)

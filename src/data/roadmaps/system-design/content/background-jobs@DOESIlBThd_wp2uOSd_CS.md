@@ -4,11 +4,11 @@ Background jobs in system design refer to tasks that are executed in the backgro
 
 Background jobs can be used for a variety of purposes, such as:
 
-- Performing maintenance tasks: such as cleaning up old data, generating reports, or backing up the database.
-- Processing large volumes of data: such as data import, data export, or data transformation.
-- Sending notifications or messages: such as sending email notifications or push notifications to users.
-- Performing long-running computations: such as machine learning or data analysis.
+*   Performing maintenance tasks: such as cleaning up old data, generating reports, or backing up the database.
+*   Processing large volumes of data: such as data import, data export, or data transformation.
+*   Sending notifications or messages: such as sending email notifications or push notifications to users.
+*   Performing long-running computations: such as machine learning or data analysis.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Background Jobs - Best Practices](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs)

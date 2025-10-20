@@ -4,6 +4,6 @@ A document store is centered around documents (XML, JSON, binary, etc), where a 
 
 Based on the underlying implementation, documents are organized by collections, tags, metadata, or directories. Although documents can be organized or grouped together, documents may have fields that are completely different from each other.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database)

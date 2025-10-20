@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@article@Kubernetes 101: Deploy Your First Application with MicroK8s](https://thenewstack.io/kubernetes-101-deploy-your-first-application-with-microk8s/)
 - [@video@Kubernetes Tutorial | Your First Kubernetes Application](https://www.youtube.com/watch?v=Vj6EFnav5Mg)
 - [@video@Kubernetes 101: Deploying Your First Application](https://www.youtube.com/watch?v=XltFOyGanYE)
+- [@course@Kubernetes Deployment Hands-on Lab](https://kodekloud.com/studio/labs/kubernetes/deployments-stable)

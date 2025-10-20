@@ -4,7 +4,7 @@ An ORM (Object-Relational Mapping) framework is a tool that maps the objects in 
 
 ORM frameworks are tools that map the objects in an application to the database tables, allowing developers to work with the database using familiar, object-oriented concepts such as Entities, Mapping, Context, Queries, Lazy Loading, Change Tracking, and Caching.
 
-For more resources, visit the following link:
+Visit the following resources to learn more:
 
 - [@article@ORM Framework](https://www.h2kinfosys.com/blog/orm-framework/)
 - [@article@What are Frameworks in ORM](https://www.killerphp.com/articles/what-are-orm-frameworks/)

@@ -4,7 +4,7 @@ Foundry is a smart contract development toolchain. Foundry manages your dependen
 
 Visit the following resources to learn more:
 
-- [@official@Foundry Overview](https://book.getfoundry.sh/)
-- [@video@Introduction to Foundry](https://youtu.be/fNMfMxGxeag)
 - [@course@Cyfrin Updraft | Foundry Fundamentals](https://updraft.cyfrin.io/courses/foundry)
 - [@course@Cyfrin Updraft | Foundry Advanced](https://updraft.cyfrin.io/courses/advanced-foundry)
+- [@official@Foundry Overview](https://book.getfoundry.sh/)
+- [@video@Introduction to Foundry](https://youtu.be/fNMfMxGxeag)

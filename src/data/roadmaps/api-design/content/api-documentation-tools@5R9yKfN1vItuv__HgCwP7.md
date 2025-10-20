@@ -4,6 +4,6 @@ API Documentation Tools are instrumental in conveying the intricacies of API des
 
 Visit the following resources to learn more:
 
-- [@website@Swagger's Official Website](https://swagger.io/)
-- [@website@DapperDox's Official Website](http://dapperdox.io/)
-- [@website@ReDoc Documentation](https://github.com/Redocly/redoc)
+- [@article@Swagger's Official Website](https://swagger.io/)
+- [@article@DapperDox's Official Website](http://dapperdox.io/)
+- [@article@ReDoc Documentation](https://github.com/Redocly/redoc)

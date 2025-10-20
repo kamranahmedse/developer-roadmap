@@ -67,11 +67,6 @@
         "type": "article"
       },
       {
-        "title": "Transformer Models Vs Llm Comparison",
-        "url": "https://www.restack.io/p/transformer-models-answer-vs-llm-cat-ai",
-        "type": "article"
-      },
-      {
         "title": "How Transformer LLMs Work",
         "url": "https://www.deeplearning.ai/short-courses/how-transformer-llms-work/",
         "type": "article"
@@ -168,7 +163,7 @@
     "links": [
       {
         "title": "Frequency Penalty Explanation",
-        "url": "https://docs.aipower.org/docs/ai-engine/openai/frequency-penalty",
+        "url": "https://platform.openai.com/docs/advanced-usage/advanced-usage#frequency-and-presence-penalties",
         "type": "article"
       },
       {
