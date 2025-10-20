@@ -4,6 +4,5 @@ A derivative measures how a function changes as its input changes. Imagine a cur
 
 Visit the following resources to learn more:
 
-- [@article@Understanding Derivatives: A Comprehensive Guide to Their Uses and Benefits](https://www.investopedia.com/terms/d/derivative.asp)
 - [@article@Derivatives](https://en.wikipedia.org/wiki/Derivative)
 - [@video@What is a Derivative? Deriving the Power Rule](https://www.youtube.com/watch?v=x3iEEDxrhyE)

@@ -1733,7 +1733,7 @@
       "draggable": true,
       "deletable": true,
       "data": {
-        "label": "Eurkea",
+        "label": "Eureka",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

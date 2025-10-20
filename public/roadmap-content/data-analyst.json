@@ -478,74 +478,10 @@
       }
     ]
   },
-  "8OXmF2Gn6TYJotBRvDjqA": {
-    "title": "Pandas",
-    "description": "Pandas is a widely acknowledged and highly useful data manipulation library in the world of data analysis. Known for its robust features like data cleaning, wrangling and analysis, pandas has become one of the go-to tools for data analysts. Built on NumPy, it provides high-performance, easy-to-use data structures and data analysis tools. In essence, its flexibility and versatility make it a critical part of the data analyst's toolkit, as it holds the capability to cater to virtually every data manipulation task.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Pandas",
-        "url": "https://pandas.pydata.org/",
-        "type": "article"
-      },
-      {
-        "title": "NumPy vs Pandas",
-        "url": "https://www.youtube.com/watch?v=KHoEbRH46Zk",
-        "type": "video"
-      }
-    ]
-  },
   "l1SnPc4EMqGdaIAhIQfrT": {
     "title": "Data Visualisation Libraries",
     "description": "Data visualization libraries are crucial in data science for transforming complex datasets into clear and interpretable visual representations, facilitating better understanding and communication of data insights. In Python, several libraries are widely used for this purpose. Matplotlib is a foundational library that offers comprehensive tools for creating static, animated, and interactive plots. Seaborn, built on top of Matplotlib, provides a high-level interface for drawing attractive and informative statistical graphics with minimal code. Plotly is another powerful library that allows for the creation of interactive and dynamic visualizations, which can be easily embedded in web applications. Additionally, libraries like Bokeh and Altair offer capabilities for creating interactive plots and dashboards, enhancing exploratory data analysis and the presentation of data findings. Together, these libraries enable data scientists to effectively visualize trends, patterns, and outliers in their data, making the analysis more accessible and actionable.\n\nLearn more from the following resources:",
     "links": []
-  },
-  "uGkXxdMXUMY-3fQFS1jK8": {
-    "title": "Matplotlib",
-    "description": "Matplotlib is a paramount data visualization library used extensively by data analysts for generating a wide array of plots and graphs. Through Matplotlib, data analysts can convey results clearly and effectively, driving insights from complex data sets. It offers a hierarchical environment which is very natural for a data scientist to work with. Providing an object-oriented API, it allows for extensive customization and integration into larger applications. From histograms, bar charts, scatter plots to 3D graphs, the versatility of Matplotlib assists data analysts in the better comprehension and compelling representation of data.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Matplotlib",
-        "url": "https://matplotlib.org/",
-        "type": "article"
-      },
-      {
-        "title": "Learn Matplotlib in 6 minutes",
-        "url": "https://www.youtube.com/watch?v=nzKy9GY12yo",
-        "type": "video"
-      }
-    ]
-  },
-  "y__UHXe2DD-IB7bvMF1-X": {
-    "title": "Dplyr",
-    "description": "Dplyr is a powerful and popular toolkit for data manipulation in R. As a data analyst, this library provides integral functions to manipulate, clean, and process data efficiently. It has been designed to be easy and intuitive, ensuring a robust and consistent syntax. Dplyr ensures data reliability and fast processing, essential for analysts dealing with large datasets. With a strong focus on efficiency, dplyr functions like select, filter, arrange, mutate, summarise, and group\\_by optimise data analysis operations, making data manipulation a smoother and hassle-free procedure for data analysts.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "dplyr",
-        "url": "https://dplyr.tidyverse.org/",
-        "type": "article"
-      },
-      {
-        "title": "Dplyr Essentials",
-        "url": "https://www.youtube.com/watch?v=Gvhkp-Yw65U",
-        "type": "video"
-      }
-    ]
-  },
-  "E0hIgQEeZlEidr4HtUFrL": {
-    "title": "Ggplot2",
-    "description": "When it comes to data visualization in R programming, ggplot2 stands tall as one of the primary tools for data analysts. This data visualization library, which forms part of the tidyverse suite of packages, facilitates the creation of complex and sophisticated visual narratives. With its grammar of graphics philosophy, ggplot2 enables analysts to build graphs and charts layer by layer, thereby offering detailed control over graphical features and design. Its versatility in creating tailored and aesthetically pleasing graphics is a vital asset for any data analyst tackling exploratory data analysis, reporting, or dashboard building.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "ggplot2",
-        "url": "https://ggplot2.tidyverse.org/",
-        "type": "article"
-      },
-      {
-        "title": "Make beautiful graphs in R",
-        "url": "https://www.youtube.com/watch?v=qnw1xDnt_Ec",
-        "type": "video"
-      }
-    ]
   },
   "_sjXCLHHTbZromJYn6fnu": {
     "title": "Data Collection",
@@ -816,22 +752,6 @@
       {
         "title": "Mean Median Mode Formula",
         "url": "https://www.cuemath.com/mean-median-mode-formula/",
-        "type": "article"
-      }
-    ]
-  },
-  "yn1sstYMO9du3rpfQqNs9": {
-    "title": "Average",
-    "description": "When focusing on data analysis, understanding key statistical concepts is crucial. Amongst these, central tendency is a foundational element. Central Tendency refers to the measure that determines the center of a distribution. The average is a commonly used statistical tool by which data analysts discern trends and patterns. As one of the most recognized forms of central tendency, figuring out the \"average\" involves summing all values in a data set and dividing by the number of values. This provides analysts with a 'typical' value, around which the remaining data tends to cluster, facilitating better decision-making based on existing data.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "How to Calculate the Average",
-        "url": "https://support.microsoft.com/en-gb/office/calculate-the-average-of-a-group-of-numbers-e158ef61-421c-4839-8290-34d7b1e68283#:~:text=Average%20This%20is%20the%20arithmetic,by%206%2C%20which%20is%205.",
-        "type": "article"
-      },
-      {
-        "title": "Average Formula",
-        "url": "https://www.cuemath.com/average-formula/",
         "type": "article"
       }
     ]

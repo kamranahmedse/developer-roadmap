@@ -4,7 +4,7 @@ A cryptocurrency wallet is a device, physical medium, program, or service which 
 
 Visit the following resources to learn more:
 
+- [@course@Cyfrin Updraft | Smart Contract DevOps](https://updraft.cyfrin.io/courses/wallets)
 - [@article@What is a Crypto Wallet?: A Beginner’s Guide](https://crypto.com/university/crypto-wallets)
 - [@article@Crypto Wallet? What is it?](https://www.coinbase.com/learn/crypto-basics/what-is-a-crypto-wallet)
-- [@course@Cyfrin Updraft | Smart Contract DevOps](https://updraft.cyfrin.io/courses/wallets)
 - [@article@Choose your wallet - Ethereum](https://ethereum.org/en/wallets/find-wallet/)

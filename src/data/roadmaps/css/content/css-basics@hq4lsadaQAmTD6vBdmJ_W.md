@@ -1,0 +1,3 @@
+# CSS Basics
+
+CSS Basics encompass the fundamental building blocks for styling web pages. This includes understanding selectors (how to target specific HTML elements), properties (the visual characteristics you want to change, like color or font size), and values (the specific settings for those properties, such as "red" or "16px"). Mastering these basics allows you to control the presentation of your website's content.
