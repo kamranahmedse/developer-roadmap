@@ -5,5 +5,4 @@ Transformer models are a type of neural network that read input data—like word
 Visit the following resources to learn more:
 
 - [@article@Exploring Open Source AI Models: LLMs and Transformer Architectures](https://llmmodels.org/blog/exploring-open-source-ai-models-llms-and-transformer-architectures/)
-- [@article@Transformer Models Vs Llm Comparison](https://www.restack.io/p/transformer-models-answer-vs-llm-cat-ai)
 - [@article@How Transformer LLMs Work](https://www.deeplearning.ai/short-courses/how-transformer-llms-work/)
