@@ -4,7 +4,7 @@ Now that you have the infrastructure setup, it's time to automate the deployment
 
 The next step at this point is to implement CI/CD for your application using GitHub actions. Setup a GitHub action that, whenever you push to master, will automatically:
 
-- Run your tests (ignore this step if you haven't learnt it yet) 
-- Deploy your application to AWS
+*   Run your tests (ignore this step if you haven't learnt it yet)
+*   Deploy your application to AWS
 
 Regarding the deployment to AWS you can use `rsync` to copy the files to the server. Here's a [sample GitHub workflow](https://gist.github.com/kamranahmedse/1e94b412006040f38e24b9443b2da41a) using `rsync`.

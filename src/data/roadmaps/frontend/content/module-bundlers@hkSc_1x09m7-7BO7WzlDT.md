@@ -4,7 +4,7 @@ Module bundlers combine multiple JavaScript files into optimized bundles for bro
 
 Visit the following resources to learn more:
 
-- [@article@The Complete JavaScript Module Bundlers Guide](https://snipcart.com/blog/javascript-module-bundler)
 - [@official@Rollup Bundler](https://rollupjs.org/)
 - [@official@Webpack Website](https://webpack.js.org/)
+- [@article@The Complete JavaScript Module Bundlers Guide](https://snipcart.com/blog/javascript-module-bundler)
 - [@video@Module Bundlers Explained](https://www.youtube.com/watch?v=5IG4UmULyoA)

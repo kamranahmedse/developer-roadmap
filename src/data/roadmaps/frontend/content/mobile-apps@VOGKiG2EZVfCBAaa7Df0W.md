@@ -1,6 +1,6 @@
 # Mobile applications
 
-Mobile applications run on phones and tablets through app stores. Types: native (platform-specific), hybrid (web in native shell), cross-platform (React Native, Flutter). Access device features like GPS, cameras. Focus on usability, performance, offline capability, and security.
+Visit the following resources to learn more:
 
 - [@official@React Native](https://reactnative.dev/)
 - [@official@Flutter](https://flutter.dev)

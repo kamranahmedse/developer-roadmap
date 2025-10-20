@@ -427,6 +427,10 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
                     roadmapId={roadmapId}
                     activeChatHistoryId={activeChatHistoryId}
                     onChatHistoryClick={(chatHistoryId) => {
+                      if (activeChatHistoryId === chatHistoryId) {
+                        return;
+                      }
+
                       setIsChatHistoryLoading(true);
                       setActiveChatHistoryId(chatHistoryId);
                     }}

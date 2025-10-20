@@ -1,0 +1,3 @@
+# Properties and Values
+
+In CSS, properties are like instructions that tell the browser how to style an HTML element. Each property has a value, which specifies the exact styling to apply. For example, the `color` property determines the text color, and its value could be `red`, `#00FF00`, or `rgb(0, 255, 0)`. The combination of a property and its value is called a declaration, and declarations are the building blocks of CSS rules.

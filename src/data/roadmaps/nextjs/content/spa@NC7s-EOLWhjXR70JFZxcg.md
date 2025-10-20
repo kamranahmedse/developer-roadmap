@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@https://nextjs.org/docs/app/guides/single-page-applications](https://nextjs.org/docs/app/guides/single-page-applications)
 - [@article@Single-page application](https://en.wikipedia.org/wiki/Single-page_application)
+- [@article@Building Single-Page Applications (SPAs) with React and Next.js](https://medium.com/@blog.iroidsolutions/building-single-page-applications-spas-with-react-and-next-js-c8e02d806145)

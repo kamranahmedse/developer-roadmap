@@ -4,11 +4,11 @@ You should now implement monitoring and autorestarts for your application using 
 
 Here are some of the monitors you should implement for the application.
 
-- CPU Usage
-- Memory Usage
-- Disk Usage
-- Network Usage
-- Service Availability
-- Process Availability
+*   CPU Usage
+*   Memory Usage
+*   Disk Usage
+*   Network Usage
+*   Service Availability
+*   Process Availability
 
 Monit comes with existing configurations for many services. You can find them in `/etc/monit/conf-available`. You can copy them (and modify if required) to `/etc/monit/conf-enabled` to enable them.

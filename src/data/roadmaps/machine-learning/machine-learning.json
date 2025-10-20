@@ -4187,7 +4187,7 @@
       "draggable": true,
       "deletable": true,
       "data": {
-        "label": "LSMT",
+        "label": "LSTM",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",

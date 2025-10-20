@@ -4,7 +4,7 @@ NServiceBus (NSB) is a service bus framework for building distributed systems us
 
 NSB supports multiple messaging transports, including MSMQ, RabbitMQ, and Azure Service Bus, and provides support for advanced messaging patterns such as publish-subscribe, request-response, and message-based sagas.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Using NServiceBus in an ASP.NET](https://docs.particular.net/samples/web/send-from-aspnetcore-webapi/)
 - [@article@Learn NServiceBus from .NET Core](https://www.codeproject.com/Articles/1224839/Learn-NServiceBus-from-NET-Core-WebAPI)
