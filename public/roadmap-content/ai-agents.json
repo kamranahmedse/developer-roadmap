@@ -163,7 +163,7 @@
     "links": [
       {
         "title": "Frequency Penalty Explanation",
-        "url": "https://docs.aipower.org/docs/ai-engine/openai/frequency-penalty",
+        "url": "https://platform.openai.com/docs/advanced-usage/advanced-usage#frequency-and-presence-penalties",
         "type": "article"
       },
       {
