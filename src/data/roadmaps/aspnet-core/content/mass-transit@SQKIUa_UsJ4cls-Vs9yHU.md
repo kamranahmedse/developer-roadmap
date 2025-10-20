@@ -4,7 +4,7 @@ MassTransit is an open-source, highly configurable service bus framework for bui
 
 It supports multiple messaging transports such as RabbitMQ, Azure Service Bus, Amazon SQS and others, automatic serialization and deserialization of messages, automatic retries and exception handling for failed message deliveries, and support for advanced messaging patterns like publish-subscribe, request-response, and event-driven architectures.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
-- [@article@Using MassTransit with RabbitMQ in ASP.NET Core](https://code-maze.com/masstransit-rabbitmq-aspnetcore/)
 - [@opensource@Complete guide to MassTransit](https://github.com/MassTransit/MassTransit)
+- [@article@Using MassTransit with RabbitMQ in ASP.NET Core](https://code-maze.com/masstransit-rabbitmq-aspnetcore/)

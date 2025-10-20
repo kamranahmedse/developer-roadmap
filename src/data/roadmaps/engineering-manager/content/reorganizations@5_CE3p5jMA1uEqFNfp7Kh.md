@@ -1,4 +1,4 @@
-#  Reorganizations
+# Reorganizations
 
 As an Engineering Manager, dealing with reorganizations can be challenging yet vital. They are responsible for planning and executing the restructure while ensuring minimal disruption to the workflow. It's also their duty to communicate these changes to their teams clearly and compassionously, as reorganizations can often lead to anxiety among members.
 

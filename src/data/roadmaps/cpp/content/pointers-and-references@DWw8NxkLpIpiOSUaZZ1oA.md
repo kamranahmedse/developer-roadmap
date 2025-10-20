@@ -55,6 +55,86 @@ Modifying the value of `ref` will also modify the value of `num` because they sh
 
 **Note:** References are generally used when you want to pass a variable by reference in function arguments or when you want to create an alias for a variable without the need for pointer syntax.
 
+# Constant Pointers and Pointers to Constants in C++
+
+In C++, the placement of the `const` keyword in a pointer declaration changes its meaning. Let’s go through the three main cases.
+
+---
+
+## 1. Constant Pointer
+A **constant pointer** means the pointer itself cannot change the address it holds after initialization, but the value at that address can still be modified.
+
+**Syntax:**
+```cpp
+int x = 10;
+int y = 20;
+int* const ptr = &x;   // Constant pointer to int
+
+*ptr = 15;             // ✅ Allowed: we can change the value of x
+// ptr = &y;           // ❌ Error: cannot make ptr point to y
+```
+
+👉 **Rule:**  
+- You **cannot change** what it points to.  
+- You **can change** the value at the address.
+
+---
+
+## 2. Pointer to Constant
+A **pointer to constant** means the pointer can change to point to different addresses, but the value at the address cannot be modified through this pointer.
+
+**Syntax:**
+```cpp
+int x = 10;
+int y = 20;
+const int* ptr = &x;   // Pointer to constant int
+
+// *ptr = 15;          // ❌ Error: cannot modify x through ptr
+ptr = &y;              // ✅ Allowed: can point to another variable
+```
+
+👉 **Rule:**  
+- You **can change** what it points to.  
+- You **cannot change** the value at the address through this pointer.
+
+---
+
+## 3. Constant Pointer to Constant
+A **constant pointer to constant** means neither the pointer nor the value it points to can be changed.
+
+**Syntax:**
+```cpp
+int x = 10;
+int y = 20;
+const int* const ptr = &x;   // Constant pointer to constant int
+
+// *ptr = 15;                // ❌ Error: cannot modify x
+// ptr = &y;                 // ❌ Error: cannot make ptr point to y
+```
+
+👉 **Rule:**  
+- You **cannot change** what it points to.  
+- You **cannot change** the value at the address through this pointer.
+
+---
+
+## Summary Table
+
+| Declaration              | Can change pointer? | Can change value? |
+|---------------------------|----------------------|-------------------|
+| `int* const ptr`          | ❌ No               | ✅ Yes            |
+| `const int* ptr`          | ✅ Yes              | ❌ No             |
+| `const int* const ptr`    | ❌ No               | ❌ No             |
+
+---
+
+## Rule of Thumb
+
+- `int* const ptr` → constant **pointer**, mutable **pointee**.  
+- `const int* ptr` → mutable **pointer**, constant **pointee**.  
+- `const int* const ptr` → constant **pointer**, constant **pointee**.  
+
+
 Learn more from the following resources:
 
 - [@article@Function Pointer in C++](https://www.scaler.com/topics/cpp/function-pointer-cpp/)

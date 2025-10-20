@@ -4,5 +4,5 @@ Prince2 is a structured project management method and practitioner certification
 
 Visit the following resources to learn more:
 
-- [@official@Prince2 Certification](https://www.axelos.com/certifications/propath/prince2-project-management)
 - [@course@Prince2 Project Management Course](https://www.simplilearn.com/project-management/prince2-foundation-and-practitioner-certification-training)
+- [@official@Prince2 Certification](https://www.axelos.com/certifications/propath/prince2-project-management)
