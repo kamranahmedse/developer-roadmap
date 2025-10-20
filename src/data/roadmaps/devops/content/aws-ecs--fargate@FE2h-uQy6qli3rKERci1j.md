@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@AWS - ECS Docs](https://docs.aws.amazon.com/ecs/)
 - [@video@Amazon ECS: AWS Fargate Overview](https://www.youtube.com/watch?v=yi22xrvPnPk)
 - [@video@AWS ECS Tutorial](https://www.youtube.com/watch?v=esISkPlnxL0)
-

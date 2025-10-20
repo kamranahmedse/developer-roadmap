@@ -4,7 +4,7 @@ Singleton lifetime is a type of dependency injection that creates a single insta
 
 Singleton lifetime is useful when you have services that need to maintain state or shared data across requests, such as a service that caches data or maintains a connection to a resource.
 
-For more information:
+Visit the following resources to learn more:
 
 - [@article@What are Singleton Dependencies?](https://blazor-university.com/dependency-injection/dependency-lifetimes-and-scopes/transient-dependencies/)
 - [@article@Dependency Injection Lifetime](https://www.tektutorialshub.com/asp-net-core/asp-net-core-dependency-injection-lifetime/)

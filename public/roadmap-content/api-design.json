@@ -735,42 +735,15 @@
       }
     ]
   },
-  "wFsbmMi5Ey9UyDADdbdPW": {
-    "title": "Role Based Access Control (RBAC)",
-    "description": "Role-Based Access Control (RBAC) is a method of managing authorization in API design that assigns system access to users based on their role within an organization. RBAC is crucial in controlling which endpoints a user can call, and what operations they are allowed to execute. In the context of API design, RBAC ensures appropriate levels of access for different types of users to guarantee data security and integrity. It simplifies the process of security administration by assigning privileges based on a user's job function, rather than on an individual basis.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Role-Based Access Control",
-        "url": "https://auth0.com/docs/manage-users/access-control/rbac",
-        "type": "article"
-      },
-      {
-        "title": "What is Role-based Access Control (RBAC)?",
-        "url": "https://www.redhat.com/en/topics/security/what-is-role-based-access-control",
-        "type": "article"
-      },
-      {
-        "title": "Role-based Access Control (RBAC) vs. Attribute-based Access Control (ABAC)",
-        "url": "https://www.youtube.com/watch?v=rvZ35YW4t5k",
-        "type": "video"
-      }
-    ]
+  "mac@tl1wXmOaj_zHL2o38VygO.md": {
+    "title": "MAC",
+    "description": "",
+    "links": []
   },
-  "dZTe_kxIUQsc9N3w920aR": {
-    "title": "Attribute Based Access Control (ABAC)",
-    "description": "Attribute Based Access Control (ABAC) is a flexible and powerful authorization method in the realm of API Design. Distinct from Role-Based Access Control (RBAC), which relies on predefined roles and permissions, ABAC uses attributes to build policies and make decisions. These attributes can be associated with the user, the action they want to perform, targeted resources, or the environment. With ABAC, finer-grained access control can be achieved, thereby improving the security and efficiency of APIs. This approach is widely used in complex and dynamic environments where access control requirements can be multifaceted and deeply context-dependent.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "What is Attribute Based Access Control?",
-        "url": "https://www.okta.com/uk/blog/2020/09/attribute-based-access-control-abac/",
-        "type": "article"
-      },
-      {
-        "title": "Attribute Based Access Control",
-        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html",
-        "type": "article"
-      }
-    ]
+  "rebac@CCcY8UsGdd2pdBYHt9L4o.md": {
+    "title": "ReBAC",
+    "description": "",
+    "links": []
   },
   "tzUJwXu_scwQHnPPT0oY-": {
     "title": "API Keys & Management",
@@ -1591,5 +1564,25 @@
         "type": "video"
       }
     ]
+  },
+  "dac@_BXgYUlaYfpYrryXTw5n2.md": {
+    "title": "DAC",
+    "description": "",
+    "links": []
+  },
+  "abac@dZTe_kxIUQsc9N3w920aR.md": {
+    "title": "ABAC",
+    "description": "",
+    "links": []
+  },
+  "pbac@nJWtUyn9bljh3T-q_adJK.md": {
+    "title": "PBAC",
+    "description": "",
+    "links": []
+  },
+  "rbac@wFsbmMi5Ey9UyDADdbdPW.md": {
+    "title": "RBAC",
+    "description": "",
+    "links": []
   }
 }

@@ -4,4 +4,4 @@ Database failure modes include hardware failures, software bugs, data corruption
 
 Visit the following resources to learn more:
 
-- [@article@Database Failure Modes](https://ieeexplore.ieee.org/document/7107294/)
+- [@course@Database Failure Modes](https://roadmap.sh/ai/course/database-failure-modes-prevention-and-recovery)

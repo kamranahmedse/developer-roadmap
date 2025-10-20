@@ -4,5 +4,5 @@ Octopus Deploy is a deployment automation tool that helps teams release applicat
 
 Visit the following resources to learn more:
 
-- [@official@Octopus Deploy](https://octopus.com/)
-- [@official@Official Documentation](https://octopus.com/docs)
+- [@official@Octopus Deploy](https://octopus.com/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-ci-cd-tools)
+- [@official@Official Documentation](https://octopus.com/docs?utm_source=roadmap&utm_medium=link&utm_campaign=devops-ci-cd-tools)

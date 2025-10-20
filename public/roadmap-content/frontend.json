@@ -192,106 +192,6 @@
       }
     ]
   },
-  "PCirR2QiFYO89Fm-Ev3o1": {
-    "title": "Learn the basics",
-    "description": "HTML (HyperText Markup Language) is the structural backbone of webpages, defining content organization. Works with CSS for styling and JavaScript for interactivity. Forms the foundational skeleton of websites, providing semantic structure for web content.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "web.dev: Learn HTML",
-        "url": "https://web.dev/learn/html",
-        "type": "article"
-      },
-      {
-        "title": "HTML Full Course - Build a Website Tutorial",
-        "url": "https://www.youtube.com/watch?v=kUMe1FH4CHE",
-        "type": "video"
-      }
-    ]
-  },
-  "z8-556o-PaHXjlytrawaF": {
-    "title": "Writing Semantic HTML",
-    "description": "Semantic HTML uses meaningful markup elements (header, nav, main, article, section, aside, footer) to convey content meaning, not just appearance. Enhances accessibility, SEO, and code readability. Aids screen readers and browser rendering for better user experience.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Guide to Writing Semantic HTML",
-        "url": "https://cs.fyi/guide/writing-semantic-html",
-        "type": "article"
-      },
-      {
-        "title": "Semantic HTML - web.dev",
-        "url": "https://web.dev/learn/html/semantic-html/",
-        "type": "article"
-      },
-      {
-        "title": "Why & When to Use Semantic HTML Elements over Div(s)",
-        "url": "https://www.youtube.com/watch?v=bOUhq46fd5g",
-        "type": "video"
-      }
-    ]
-  },
-  "V5zucKEHnIPPjwHqsMPHF": {
-    "title": "Forms and Validations",
-    "description": "Client-side form validation checks required fields and data formats before server submission. Ensures data integrity, improves user experience with immediate feedback, and reduces server load. Essential for quality data collection and user-friendly interfaces.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "MDN Web Docs: Client-side form validation",
-        "url": "https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation",
-        "type": "article"
-      },
-      {
-        "title": "Learn Forms by web.dev",
-        "url": "https://web.dev/learn/forms/",
-        "type": "article"
-      }
-    ]
-  },
-  "iJIqi7ngpGHWAqtgdjgxB": {
-    "title": "Accessibility",
-    "description": "Website accessibility ensures sites are usable by everyone, including people with disabilities. Involves alt text for images, keyboard navigation, color contrast, and captions. Benefits all users, supports legal compliance, and expands audience reach.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Accessibility for Developers by Google",
-        "url": "https://web.dev/accessibility",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Accessibility",
-        "url": "https://app.daily.dev/tags/accessibility?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Complete Playlist on Accessibility",
-        "url": "https://youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g",
-        "type": "video"
-      }
-    ]
-  },
-  "mH_qff8R7R6eLQ1tPHLgG": {
-    "title": "SEO Basics",
-    "description": "SEO (Search Engine Optimization) improves website visibility in search results through keywords, quality content, fast loading, mobile-friendliness, and trusted backlinks. Includes technical elements like sitemaps, HTTPS, and good navigation to increase organic traffic.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Complete SEO Course for Beginners",
-        "url": "https://www.youtube.com/watch?v=xsVTqzratPs",
-        "type": "course"
-      },
-      {
-        "title": "SEO for 2024: The Complete Guide",
-        "url": "https://www.youtube.com/watch?v=8YDUP-RH_4g",
-        "type": "course"
-      },
-      {
-        "title": "Google Search Central — SEO Docs",
-        "url": "https://developers.google.com/search/docs",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about SEO",
-        "url": "https://app.daily.dev/tags/seo?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
-  },
   "ZhJhf1M2OphYbEmduFq-9": {
     "title": "CSS",
     "description": "CSS (Cascading Style Sheets) styles HTML documents, controlling layout, colors, and fonts. Separates design from content using selectors to target elements. Features responsive design with media queries, cascade rules, inheritance, and specificity. Modern CSS includes Flexbox, Grid, animations, and transitions.\n\nVisit the following resources to learn more:",
@@ -323,79 +223,6 @@
       }
     ]
   },
-  "YFjzPKWDwzrgk2HUX952L": {
-    "title": "Learn the basics",
-    "description": "CSS (Cascading Style Sheets) styles websites controlling colors, fonts, layouts, and visual design. Essential web technology alongside HTML and JavaScript. Makes frontend attractive and user-friendly through comprehensive visual control and responsive design capabilities.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "web.dev — Learn CSS",
-        "url": "https://web.dev/learn/css/",
-        "type": "article"
-      },
-      {
-        "title": "CSS Crash Course For Absolute Beginners",
-        "url": "https://www.youtube.com/watch?v=yfoY53QXEnI",
-        "type": "video"
-      },
-      {
-        "title": "CSS Masterclass - Tutorial & Course for Beginners",
-        "url": "https://www.youtube.com/watch?v=FqmB-Zj2-PA",
-        "type": "video"
-      }
-    ]
-  },
-  "dXeYVMXv-3MRQ1ovOUuJW": {
-    "title": "Making Layouts",
-    "description": "Web layouts arrange content effectively using modern CSS techniques like Flexbox (1D) and CSS Grid (2D). Responsive design adapts to all devices. Frameworks like Bootstrap and Tailwind accelerate development. Good layouts prioritize content hierarchy, user flow, and accessibility.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Learn and Practice Flexbox",
-        "url": "https://flexboxfroggy.com/",
-        "type": "article"
-      },
-      {
-        "title": "The Box Model",
-        "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model",
-        "type": "article"
-      },
-      {
-        "title": "Learn CSS Grid - Course",
-        "url": "https://cssgrid.io/",
-        "type": "article"
-      },
-      {
-        "title": "Get on the Grid at Last with the CSS Grid Layout Module",
-        "url": "https://thenewstack.io/get-grid-last-css-grid-template-markup/",
-        "type": "article"
-      }
-    ]
-  },
-  "TKtWmArHn7elXRJdG6lDQ": {
-    "title": "Responsive Design",
-    "description": "Responsive web design ensures websites adapt to all device sizes using flexible layouts, scalable images, and CSS media queries. Provides optimal user experience across desktop, tablet, and mobile devices without requiring separate sites for each platform.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Conquering Responsive Layouts",
-        "url": "https://courses.kevinpowell.co/conquering-responsive-layouts",
-        "type": "course"
-      },
-      {
-        "title": "Learn Responsive Design",
-        "url": "https://web.dev/learn/design/",
-        "type": "article"
-      },
-      {
-        "title": "The Beginner's Guide to Responsive Web Design",
-        "url": "https://kinsta.com/blog/responsive-web-design/",
-        "type": "article"
-      },
-      {
-        "title": "Introduction To Responsive Web Design",
-        "url": "https://www.youtube.com/watch?v=srvUrASNj0s",
-        "type": "video"
-      }
-    ]
-  },
   "ODcfFEorkfJNupoQygM53": {
     "title": "JavaScript",
     "description": "JavaScript is a versatile programming language that makes websites interactive. Runs in browsers, servers (Node.js), and desktop applications. Features dynamic typing, event-driven programming, and constant evolution. Essential for modern web development across frontend and backend.\n\nVisit the following resources to learn more:",
@@ -419,79 +246,6 @@
         "title": "Explore top posts about JavaScript",
         "url": "https://app.daily.dev/tags/javascript?ref=roadmapsh",
         "type": "article"
-      }
-    ]
-  },
-  "A4brX0efjZ0FFPTB4r6U0": {
-    "title": "Fetch API / Ajax (XHR)",
-    "description": "Fetch API is the modern JavaScript interface for making HTTP requests, replacing XMLHttpRequest. Uses Promises for cleaner asynchronous code, supports various data types and HTTP methods. Now the standard for client-server communication with broad browser support.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Fetch API MDN Docs",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
-        "type": "article"
-      },
-      {
-        "title": "A Simple Guide to JavaScript Fetch API",
-        "url": "https://www.javascripttutorial.net/web-apis/javascript-fetch-api/",
-        "type": "article"
-      },
-      {
-        "title": "Introduction to Fetch",
-        "url": "https://web.dev/introduction-to-fetch/",
-        "type": "article"
-      },
-      {
-        "title": "JavaScript Fetch API",
-        "url": "https://www.youtube.com/watch?v=-ZI0ea5O2oA",
-        "type": "video"
-      }
-    ]
-  },
-  "0MAogsAID9R04R5TTO2Qa": {
-    "title": "Learn DOM Manipulation",
-    "description": "DOM (Document Object Model) represents HTML/XML documents as programmable objects. Enables dynamic manipulation of page structure, content, and styles through JavaScript. Allows interaction with elements, attributes, and events for interactive webpages.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "DOM Tree",
-        "url": "https://javascript.info/dom-nodes",
-        "type": "article"
-      },
-      {
-        "title": "Learn the HTML DOM with Exercises - CodeGuage",
-        "url": "https://www.codeguage.com/courses/js/html-dom-introduction",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about DOM",
-        "url": "https://app.daily.dev/tags/dom?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "What is DOM, Shadow DOM and Virtual DOM?",
-        "url": "https://www.youtube.com/watch?v=7Tok22qxPzQ",
-        "type": "video"
-      },
-      {
-        "title": "JavaScript DOM Crash Course",
-        "url": "https://www.youtube.com/watch?v=0ik6X4DJKCc",
-        "type": "video"
-      }
-    ]
-  },
-  "wQSjQqwKHfn5RGPk34BWI": {
-    "title": "Learn the Basics",
-    "description": "JavaScript adds interactivity to webpages through sliders, click events, pop-ups, and dynamic behavior. Transforms static HTML structure and CSS styling into interactive, responsive user experiences. Essential for modern web functionality and user engagement.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "The Modern JavaScript Tutorial",
-        "url": "https://javascript.info/",
-        "type": "article"
-      },
-      {
-        "title": "JavaScript Tutorial Full Course - Beginner to Pro (2024)",
-        "url": "https://www.youtube.com/watch?v=EerdGm-ehJQ",
-        "type": "video"
       }
     ]
   },
@@ -526,31 +280,10 @@
       }
     ]
   },
-  "NIY7c4TQEEHx0hATu-k5C": {
-    "title": "Version Control Systems",
-    "description": "Version Control Systems (VCS) like Git track code changes and enable developer collaboration through modification history. Features include branching, merging, reverting, remote repositories, pull requests, and code reviews. Essential for modern software development productivity, quality, and teamwork.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Visit Dedicated Git & GitHub Roadmap",
-        "url": "https://roadmap.sh/git-github",
-        "type": "article"
-      },
-      {
-        "title": "Git Documentation",
-        "url": "https://git-scm.com/docs",
-        "type": "article"
-      },
-      {
-        "title": "Learn Git by Atlassian",
-        "url": "https://www.atlassian.com/git",
-        "type": "article"
-      },
-      {
-        "title": "What is a Version Control System and why you should always use it",
-        "url": "https://www.youtube.com/watch?v=IeXhYROClZk",
-        "type": "video"
-      }
-    ]
+  "version-control@NIY7c4TQEEHx0hATu-k5C.md": {
+    "title": "Version Control ",
+    "description": "",
+    "links": []
   },
   "R_I4SGYqLk5zze5I1zS_E": {
     "title": "Git",
@@ -671,27 +404,6 @@
       }
     ]
   },
-  "DILBiQp7WWgSZ5hhtDW6A": {
-    "title": "Bitbucket",
-    "description": "Bitbucket is Atlassian's Git and Mercurial repository hosting platform supporting open-source and private projects. Features pull requests, code reviews, and integrates with Atlassian tools like Jira. Offers cloud and self-hosted options with CI/CD through Bitbucket Pipelines.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "How to use BitBucket?",
-        "url": "https://bitbucket.org/product/guides",
-        "type": "article"
-      },
-      {
-        "title": "BitBucket Website",
-        "url": "https://bitbucket.com/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Bitbucket",
-        "url": "https://app.daily.dev/tags/bitbucket?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
-  },
   "yrq3nOwFREzl-9EKnpU-e": {
     "title": "yarn",
     "description": "Yarn is Facebook's JavaScript package manager offering fast, reliable, secure alternative to npm. Features lockfile consistency, parallel installations, offline mode, and checksum verification. Yarn Berry with Plug'n'Play improves performance for large projects.\n\nVisit the following resources to learn more:",
@@ -770,21 +482,10 @@
       }
     ]
   },
-  "eXezX7CVNyC1RuyU_I4yP": {
-    "title": "Pick a Framework",
-    "description": "Web frameworks are development toolkits providing libraries, structure, rules, and tools for building applications. Different frameworks offer varying features based on project needs. Popular examples include React, Angular, and Vue, each with unique strengths and capabilities.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "15 Crazy New JS Framework Features You Don't Know Yet",
-        "url": "https://www.youtube.com/watch?v=466U-2D86bc",
-        "type": "video"
-      },
-      {
-        "title": "Which JS Framework is Best?",
-        "url": "https://www.youtube.com/watch?v=cuHDQhDhvPE",
-        "type": "video"
-      }
-    ]
+  "learn-a-framework@eXezX7CVNyC1RuyU_I4yP.md": {
+    "title": "Learn a Framework",
+    "description": "",
+    "links": []
   },
   "-bHFIiXnoUQSov64WI9yo": {
     "title": "Angular",
@@ -916,42 +617,10 @@
       }
     ]
   },
-  "N5DCb6bDfgUnSdHPLYY4g": {
-    "title": "Qwik",
-    "description": "Qwik is a frontend framework optimizing for fast loading through \"resumable\" architecture. Apps start with minimal JavaScript, loading interactive code only when needed. Makes large websites feel instantly fast through intelligent code delivery. Gaining attention for performance innovations.\n\nLearn more from the following resources:",
-    "links": [
-      {
-        "title": "Qwik Website",
-        "url": "https://qwik.dev",
-        "type": "article"
-      },
-      {
-        "title": "Qwik - The world's first O(1) JavaScript Framework?",
-        "url": "https://www.youtube.com/watch?v=x2eF3YLiNhY",
-        "type": "video"
-      }
-    ]
-  },
-  "XDTD8el6OwuQ55wC-X4iV": {
-    "title": "Writing CSS",
-    "description": "Modern CSS creates responsive designs using media queries, flexible typography, CSS-in-JS, and frameworks like Tailwind. Features CSS Logical Properties for internationalization and CSS Houdini for custom styling. Goals: performance, maintainability, and accessible designs across all devices.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Modern CSS: A Comprehensive Guide",
-        "url": "https://moderncss.dev/",
-        "type": "article"
-      },
-      {
-        "title": "CSS-Tricks: Modern CSS",
-        "url": "https://css-tricks.com/modern-css/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about CSS",
-        "url": "https://app.daily.dev/tags/css?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
+  "css-frameworks@XDTD8el6OwuQ55wC-X4iV.md": {
+    "title": "CSS Frameworks",
+    "description": "",
+    "links": []
   },
   "eghnfG4p7i-EDWfp3CQXC": {
     "title": "Tailwind",
@@ -989,162 +658,10 @@
       }
     ]
   },
-  "nPg_YWpMJtlhU2t2UD_6B": {
-    "title": "CSS Architecture",
-    "description": "CSS architecture organizes styles in large projects using naming conventions (BEM), component-based design, preprocessors, CSS modules, and utility classes. Aims for scalability, maintainability, reduced conflicts, better collaboration, and easier updates through systematic approaches.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "How to Organize Your CSS with a Modular Architecture",
-        "url": "https://snipcart.com/blog/organize-css-modular-architecture",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Architecture",
-        "url": "https://app.daily.dev/tags/architecture?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Modern CSS For Dynamic Component-Based Architecture",
-        "url": "https://www.youtube.com/watch?v=Y50iqMlrqU8",
-        "type": "video"
-      }
-    ]
-  },
-  "UTW1pP59dUehuf0zeHXqL": {
-    "title": "CSS Preprocessors",
-    "description": "CSS preprocessors (Sass, Less, Stylus) extend CSS with variables, nesting, mixins, and functions for easier writing and management. Compile to regular CSS while reducing repetition and improving organization. Make CSS more powerful and maintainable for large projects.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Sass Website",
-        "url": "https://sass-lang.com/",
-        "type": "article"
-      },
-      {
-        "title": "Less Website",
-        "url": "https://lesscss.org/",
-        "type": "article"
-      },
-      {
-        "title": "Stylus Website",
-        "url": "https://stylus-lang.com/",
-        "type": "article"
-      },
-      {
-        "title": "PostCSS Website",
-        "url": "https://postcss.org/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about CSS",
-        "url": "https://app.daily.dev/tags/css?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
-  },
-  "dRDmS072xeNLX7p_X565w": {
-    "title": "BEM",
-    "description": "BEM (Block, Element, Modifier) is a CSS naming methodology creating clear relationships between HTML and CSS. Makes styles more modular, reusable, and understandable through consistent naming conventions. Especially valuable for large projects requiring maintainable code.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "BEM Official Website",
-        "url": "https://en.bem.info",
-        "type": "article"
-      },
-      {
-        "title": "BEM Documentation",
-        "url": "https://en.bem.info/methodology/quick-start",
-        "type": "article"
-      },
-      {
-        "title": "5 Reasons To Use BEM Notation",
-        "url": "https://www.elpassion.com/blog/5-reasons-to-use-bem-a",
-        "type": "article"
-      }
-    ]
-  },
-  "kukEE5rMSPa4NeNjx21kt": {
-    "title": "Sass",
-    "description": "Sass (Syntactically Awesome Style Sheets) is a CSS preprocessor adding variables, nested rules, mixins, and functions. Compiles to regular CSS with two syntaxes: indented Sass and SCSS. Helps organize styles, reduces repetition, and improves maintainability in large projects.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Sass Website",
-        "url": "https://sass-lang.com/",
-        "type": "article"
-      },
-      {
-        "title": "Online Sass Playground",
-        "url": "https://sass-lang.com/playground/",
-        "type": "article"
-      },
-      {
-        "title": "Sass Tutorial for Beginners",
-        "url": "https://www.youtube.com/watch?v=_a5j7KoflTs",
-        "type": "video"
-      },
-      {
-        "title": "Sass, BEM, & Responsive Design",
-        "url": "https://www.youtube.com/watch?v=jfMHA8SqUL4",
-        "type": "video"
-      }
-    ]
-  },
-  "9WlPENh9g1xOv-zA64Tfg": {
-    "title": "PostCSS",
-    "description": "PostCSS transforms CSS using JavaScript plugins for automation, browser prefixes, and future CSS features. More flexible than preprocessors with plugin-based architecture. Popular plugins: Autoprefixer, cssnext, cssnano. Integrates with build tools for modern development workflows.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "PostCSS Website",
-        "url": "https://postcss.org/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about CSS",
-        "url": "https://app.daily.dev/tags/css?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "Learn PostCSS in 15 minutes",
-        "url": "https://www.youtube.com/watch?v=Kn2SKUOaoT4",
-        "type": "video"
-      }
-    ]
-  },
-  "i9z0stM4uKu27Cz6NIgNX": {
-    "title": "Build Tools",
-    "description": "Build tools automate making apps from source code. They compile, link, minify (shrink), and bundle code, run tests, and manage dependencies. Examples are Webpack, Vite, and Parcel for web development. Build tools speed up development, ensure consistency, and optimize code for users. They're key for modern software, especially big projects, making work more efficient and enabling continuous integration (CI).\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Webpack Website",
-        "url": "https://webpack.js.org/",
-        "type": "article"
-      },
-      {
-        "title": "Vite Website",
-        "url": "https://vitejs.dev",
-        "type": "article"
-      },
-      {
-        "title": "Parcel Website",
-        "url": "https://parceljs.org/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Tools",
-        "url": "https://app.daily.dev/tags/tools?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
-  },
-  "9VcGfDBBD8YcKatj4VcH1": {
-    "title": "Linters and Formatters",
-    "description": "Linters and formatters improve code quality by finding errors, bugs, and style issues (linters) and automatically fixing formatting like indentation and spacing (formatters). Ensure consistency, readability, and early error detection. Examples: ESLint, Prettier.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What Is a Linter?",
-        "url": "https://www.testim.io/blog/what-is-a-linter-heres-a-definition-and-quick-start-guide/",
-        "type": "article"
-      }
-    ]
+  "linters--formatters@9VcGfDBBD8YcKatj4VcH1.md": {
+    "title": "Linters & Formatters",
+    "description": "",
+    "links": []
   },
   "hkSc_1x09m7-7BO7WzlDT": {
     "title": "Module Bundlers",
@@ -1211,32 +728,6 @@
         "title": "How to Set Up JavaScript Bundling Using Rollup",
         "url": "https://www.youtube.com/watch?v=ICYLOZuFMz8",
         "type": "video"
-      }
-    ]
-  },
-  "twufEtHgxcRUWAUQ9bXus": {
-    "title": "Webpack",
-    "description": "Webpack is a JavaScript module bundler processing web resources (JS, CSS, images, fonts). Uses loaders for preprocessing and plugins for optimization. Features code splitting, lazy loading, hot module replacement, and tree shaking. Standard for complex applications despite learning curve.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Webpack",
-        "url": "https://webpack.js.org/",
-        "type": "article"
-      },
-      {
-        "title": "Getting Started with Webpack",
-        "url": "https://webpack.js.org/guides/getting-started/",
-        "type": "article"
-      },
-      {
-        "title": "A Complete Guide to Webpack 5",
-        "url": "https://www.valentinog.com/blog/webpack",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Webpack",
-        "url": "https://app.daily.dev/tags/webpack?ref=roadmapsh",
-        "type": "article"
       }
     ]
   },
@@ -1454,72 +945,15 @@
       }
     ]
   },
-  "U5mD5FmVx7VWeKxDpQxB5": {
-    "title": "Authentication Strategies",
-    "description": "Authentication strategies verify a user's identity to grant access. Common methods include Basic Auth (username/password), Session-based (server remembers login), Token-based (like JWT, a secure digital key), OAuth (for third-party access like \"Login with Google\"), and SSO (Single Sign-On, one login for many apps). Knowing these helps choose the right security for your app.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Basic Authentication",
-        "url": "https://roadmap.sh/guides/basic-authentication",
-        "type": "article"
-      },
-      {
-        "title": "Session Based Authentication",
-        "url": "https://roadmap.sh/guides/session-authentication",
-        "type": "article"
-      },
-      {
-        "title": "Token Based Authentication",
-        "url": "https://roadmap.sh/guides/token-authentication",
-        "type": "article"
-      },
-      {
-        "title": "JWT Authentication",
-        "url": "https://roadmap.sh/guides/jwt-authentication",
-        "type": "article"
-      },
-      {
-        "title": "OAuth",
-        "url": "https://roadmap.sh/guides/oauth",
-        "type": "article"
-      },
-      {
-        "title": "SSO - Single Sign On",
-        "url": "https://roadmap.sh/guides/sso",
-        "type": "article"
-      }
-    ]
+  "auth-strategies@U5mD5FmVx7VWeKxDpQxB5.md": {
+    "title": "Auth Strategies",
+    "description": "",
+    "links": []
   },
-  "RDWbG3Iui6IPgp0shvXtg": {
-    "title": "Web Security Basics",
-    "description": "Web security protects websites from cyber threats through HTTPS/TLS, XSS/SQL injection/CSRF prevention, CSP, secure authentication, input validation, and regular updates. Involves understanding OWASP Top Ten vulnerabilities, access controls, secure coding practices, and threat awareness for comprehensive protection.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "OWASP Website",
-        "url": "https://owasp.org/",
-        "type": "article"
-      },
-      {
-        "title": "OWASP Cheatsheets",
-        "url": "https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html",
-        "type": "article"
-      },
-      {
-        "title": "Content Security Policy (CSP)",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Security",
-        "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "OWASP ZAP Step-by-Step Tutorial",
-        "url": "https://www.youtube.com/playlist?list=PLH8n_ayg-60J9i3nsLybper-DR3zJw6Z5",
-        "type": "video"
-      }
-    ]
+  "web-security@RDWbG3Iui6IPgp0shvXtg.md": {
+    "title": "Web Security",
+    "description": "",
+    "links": []
   },
   "AfH2zCbqzw0Nisg1yyISS": {
     "title": "CORS",
@@ -1573,57 +1007,15 @@
       }
     ]
   },
-  "rmcm0CZbtNVC9LZ14-H6h": {
-    "title": "Content Security Policy",
-    "description": "Content Security Policy (CSP) prevents XSS and clickjacking attacks by specifying trusted content sources through HTTP headers. Website creators define safe sources for scripts, styles, images, and other resources. Limits malicious code execution and provides violation reporting for security monitoring.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "MDN Content Security Policy (CSP)",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP",
-        "type": "article"
-      },
-      {
-        "title": "Web.dev - Content Security Policy (CSP)",
-        "url": "https://web.dev/csp/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Security",
-        "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
+  "csp@rmcm0CZbtNVC9LZ14-H6h.md": {
+    "title": "CSP",
+    "description": "",
+    "links": []
   },
-  "JanR7I_lNnUCXhCMGLdn-": {
-    "title": "OWASP Security Risks",
-    "description": "OWASP (Open Web Application Security Project) identifies top web application security risks including injection attacks, broken authentication, data exposure, and vulnerable dependencies. Provides guidance on secure coding practices, regular security testing, and comprehensive protection strategies for web applications.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "OWASP Web Application Security Testing Checklist",
-        "url": "https://github.com/0xRadi/OWASP-Web-Checklist",
-        "type": "opensource"
-      },
-      {
-        "title": "OWASP Website",
-        "url": "https://owasp.org/",
-        "type": "article"
-      },
-      {
-        "title": "OWASP Cheatsheets",
-        "url": "https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html",
-        "type": "article"
-      },
-      {
-        "title": "OWASP Top 10: A Guide to the Worst Software Vulnerabilities",
-        "url": "https://thenewstack.io/owasp-top-10-a-guide-to-the-worst-software-vulnerabilities/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Security",
-        "url": "https://app.daily.dev/tags/security?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
+  "owasp-risks@JanR7I_lNnUCXhCMGLdn-.md": {
+    "title": "OWASP Risks",
+    "description": "",
+    "links": []
   },
   "ruoFa3M4bUE3Dg6GXSiUI": {
     "title": "Web Components",
@@ -1651,26 +1043,10 @@
       }
     ]
   },
-  "hwPOGT0-duy3KfI8QaEwF": {
+  "type-checkers@NQ95TJCe3E1IwEuBa__D6.md": {
     "title": "Type Checkers",
-    "description": "Type checkers analyze code for type-related errors before runtime, ensuring correct type usage and catching mistakes early. Examples: TypeScript, Flow (JavaScript), mypy (Python). Add static typing to dynamic languages, improving reliability, readability, and refactoring support for large projects.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Flow - Static Type Checker for JavaScript",
-        "url": "https://flow.org/",
-        "type": "article"
-      },
-      {
-        "title": "TypeScript",
-        "url": "https://www.typescriptlang.org/",
-        "type": "article"
-      },
-      {
-        "title": "Mypy - Static Type Checker for Python",
-        "url": "https://mypy.readthedocs.io/en/stable/",
-        "type": "article"
-      }
-    ]
+    "description": "",
+    "links": []
   },
   "VxiQPgcYDFAT6WgSRWpIA": {
     "title": "Custom Elements",
@@ -1726,42 +1102,6 @@
       {
         "title": "DOM vs Virtual DOM vs Shadow DOM",
         "url": "https://youtu.be/7Tok22qxPzQ?si=2cw36PNSgFTcNHWx",
-        "type": "video"
-      }
-    ]
-  },
-  "0asdhvwBH3gn-ercktV7A": {
-    "title": "TypeScript",
-    "description": "TypeScript is Microsoft's strongly-typed language extending JavaScript with static typing. Compiles to plain JavaScript with enhanced IDE support, interfaces, generics, and decorators. Catches errors early, improves maintainability, and reduces runtime issues. Standard for large-scale applications.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Visit Dedicated TypeScript Roadmap",
-        "url": "https://roadmap.sh/typescript",
-        "type": "article"
-      },
-      {
-        "title": "TypeScript Website",
-        "url": "https://www.typescriptlang.org/",
-        "type": "article"
-      },
-      {
-        "title": "TypeScript Playground",
-        "url": "https://www.typescriptlang.org/play",
-        "type": "article"
-      },
-      {
-        "title": "The TypeScript Handbook",
-        "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about TypeScript",
-        "url": "https://app.daily.dev/tags/typescript?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "TypeScript for Beginners",
-        "url": "https://www.youtube.com/watch?v=BwuLxPH8IDs",
         "type": "video"
       }
     ]
@@ -2078,31 +1418,10 @@
       }
     ]
   },
-  "n0q32YhWEIAUwbGXexoqV": {
-    "title": "Static Site Generators",
-    "description": "Static Site Generators (SSGs) build websites as pre-generated HTML files from content and templates. Make sites fast, secure, and easy to host. Examples: Jekyll, Hugo, Eleventy. Ideal for blogs, documentation, and content-focused sites with excellent performance.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "What is a Static Site Generator?",
-        "url": "https://www.cloudflare.com/learning/performance/static-site-generator/",
-        "type": "article"
-      },
-      {
-        "title": "Get Back to Basics With Static Website Generators",
-        "url": "https://thenewstack.io/get-back-basics-static-website-generators/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Web Development",
-        "url": "https://app.daily.dev/tags/webdev?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "What is a static site generator",
-        "url": "https://www.youtube.com/watch?v=Qms4k6y7OgI",
-        "type": "video"
-      }
-    ]
+  "ssg@n0q32YhWEIAUwbGXexoqV.md": {
+    "title": "SSG",
+    "description": "",
+    "links": []
   },
   "CMrss8E2W0eA6DVEqtPjT": {
     "title": "Vuepress",
@@ -2463,270 +1782,6 @@
       }
     ]
   },
-  "-DsETM9xLgHyGZthptj1Y": {
-    "title": "PRPL Pattern",
-    "description": "PRPL pattern optimizes web performance: Push critical resources, Render initial route, Pre-cache remaining routes, Lazy-load non-essential resources. Creates instant-feeling experiences on slow connections using service workers. Common in Progressive Web Apps (PWAs) for optimal loading strategies.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "PRPL Pattern - Google Developers",
-        "url": "https://developers.google.com/web/fundamentals/performance/prpl-pattern",
-        "type": "article"
-      },
-      {
-        "title": "PRPL Pattern",
-        "url": "https://www.patterns.dev/vanilla/prpl/",
-        "type": "article"
-      }
-    ]
-  },
-  "xD5WfEP7Ez0oi3890UgmH": {
-    "title": "RAIL Model",
-    "description": "RAIL Model is Google's performance framework: Response (<100ms to user input), Animation (60fps smooth visuals), Idle (efficient downtime usage), Load (fast initial rendering). Provides specific performance targets for creating responsive, user-friendly web experiences.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "RAIL Model - Google Developers",
-        "url": "https://developers.google.com/web/fundamentals/performance/rail",
-        "type": "article"
-      },
-      {
-        "title": "An Overview of the RAIL performance model",
-        "url": "https://www.keycdn.com/blog/rail-performance-model",
-        "type": "article"
-      }
-    ]
-  },
-  "X0Y3-IpPiFUCsNDK4RFxw": {
-    "title": "Performance Metrics",
-    "description": "Web performance metrics measure webpage speed and efficiency. Key metrics: Load time, First Contentful Paint (FCP), Time to Interactive (TTI), First Input Delay (FID), and Total Blocking Time (TBT). Help identify optimization opportunities and user experience improvements.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Web Performance Metrics - Google Developers",
-        "url": "https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics",
-        "type": "article"
-      },
-      {
-        "title": "Measuring web performance in 2024",
-        "url": "https://requestmetrics.com/web-performance/measure-web-performance/",
-        "type": "article"
-      },
-      {
-        "title": "Measuring performance and user experience - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/Performance",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Performance",
-        "url": "https://app.daily.dev/tags/performance?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
-  },
-  "RIhHMHLsLLPhNl05Q9aBf": {
-    "title": "Using Lighthouse",
-    "description": "Lighthouse is Google's open-source web auditing tool measuring performance, accessibility, and SEO. Available as browser extension and CLI. Provides comprehensive reports with improvement recommendations by simulating page loads and checking for optimization issues.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Lighthouse - Google Developers",
-        "url": "https://developers.google.com/web/tools/lighthouse",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Lighthouse",
-        "url": "https://app.daily.dev/tags/lighthouse?ref=roadmapsh",
-        "type": "article"
-      },
-      {
-        "title": "What is Google Lighthouse and how to use it",
-        "url": "https://www.youtube.com/watch?v=VyaHwvPWuZU",
-        "type": "video"
-      }
-    ]
-  },
-  "3_sJHKTogkDoCjR518-OL": {
-    "title": "Using DevTools",
-    "description": "Browser DevTools are built-in development features for inspecting, editing, and debugging HTML, CSS, and JavaScript. Include DOM inspector, console, network panel, performance profiler, and device emulation. Essential for frontend development, optimization, and testing.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Chrome DevTools - Google Developers",
-        "url": "https://developers.google.com/web/tools/chrome-devtools",
-        "type": "article"
-      },
-      {
-        "title": "Firefox DevTools User Docs",
-        "url": "https://firefox-source-docs.mozilla.org/devtools-user/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about DevTools",
-        "url": "https://app.daily.dev/tags/devtools?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
-  },
-  "raoa-75p_DyBAycvy3yVv": {
-    "title": "Storage",
-    "description": "Web Storage API stores data in browsers with localStorage (persistent) and sessionStorage (tab-specific). Useful for user preferences, shopping carts, and application state. Simpler and higher capacity than cookies with broad browser support.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Web Storage API - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API",
-        "type": "article"
-      },
-      {
-        "title": "Web Storage API – How to Store Data on the Browser",
-        "url": "https://www.freecodecamp.org/news/web-storage-api-how-to-store-data-on-the-browser/",
-        "type": "article"
-      },
-      {
-        "title": "Explore top posts about Storage",
-        "url": "https://app.daily.dev/tags/storage?ref=roadmapsh",
-        "type": "article"
-      }
-    ]
-  },
-  "NDJR8UCoa31v45TBFP7we": {
-    "title": "Web Sockets",
-    "description": "WebSockets enable real-time, bidirectional communication over persistent TCP connections. Ideal for low-latency applications like gaming, live streams, and chat systems. Avoids HTTP request overhead with broad browser support and framework integration.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Web Sockets - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
-        "type": "article"
-      },
-      {
-        "title": "What are Web Sockets?",
-        "url": "https://www.pubnub.com/guides/websockets/",
-        "type": "article"
-      },
-      {
-        "title": "How Web Sockets Work",
-        "url": "https://www.youtube.com/watch?v=pnj3Jbho5Ck",
-        "type": "video"
-      }
-    ]
-  },
-  "doPe92aUpo-8KWhi45lWK": {
-    "title": "Server Sent Events",
-    "description": "Server-Sent Events (SSE) enable servers to send live updates to webpages through one-way HTTP connections. Ideal for live chats, news feeds, and real-time notifications. Clients use EventSource objects to listen for formatted events from server response streams. Simple, browser-compatible solution for real-time updates.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Server-Sent Events - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events",
-        "type": "article"
-      },
-      {
-        "title": "Server-Sent Events - Postman",
-        "url": "https://www.youtube.com/watch?v=KrE044J8jEQ",
-        "type": "video"
-      }
-    ]
-  },
-  "TldWoXiqKxM4X3JONKAR7": {
-    "title": "Service Workers",
-    "description": "Service Workers are JavaScript files acting as proxy between webpages and network. Enable offline functionality by intercepting requests and serving cached responses. Support push notifications, background sync, and offline capabilities. Essential for Progressive Web Apps (PWAs).\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Service Workers - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
-        "type": "article"
-      },
-      {
-        "title": "Service Workers - Google",
-        "url": "https://web.dev/learn/pwa/service-workers",
-        "type": "article"
-      },
-      {
-        "title": "Web Workers Explained",
-        "url": "https://www.youtube.com/watch?v=JMKLXGwltGc",
-        "type": "video"
-      }
-    ]
-  },
-  "YbGGYoKJEx29PlvopUBiM": {
-    "title": "Location",
-    "description": "Geolocation API provides device location (latitude/longitude) using GPS, Wi-Fi, and sensors. Requires user permission for privacy. Enables current location access, position tracking, and distance calculations for location-aware web applications like maps and navigation.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Geolocation API - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API",
-        "type": "article"
-      },
-      {
-        "title": "Geolocation API overview",
-        "url": "https://developers.google.com/maps/documentation/geolocation/overview",
-        "type": "article"
-      }
-    ]
-  },
-  "6AlcArOiJMhHXguAosDzn": {
-    "title": "Notifications",
-    "description": "Notifications API displays system alerts for messages, updates, and events even when site isn't active. Requires user permission and supports title, text, icons, timeouts, and click actions. Keeps users informed of important website events.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Get Started With The Notifications API",
-        "url": "https://web.dev/articles/codelab-notifications-get-started",
-        "type": "article"
-      },
-      {
-        "title": "Notifications API - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API",
-        "type": "article"
-      },
-      {
-        "title": "How To Send Push Notifications With JavaScript",
-        "url": "https://youtu.be/Bm0JjR4kP8w?si=-2Nu0I2Zl9f-R1zj",
-        "type": "video"
-      }
-    ]
-  },
-  "Fd0hQh1DleM0gMzCpGou4": {
-    "title": "Device Orientation",
-    "description": "Device Orientation API detects device tilt and movement (pitch, roll, yaw) for motion-responsive applications. Requires permission for AR, gaming, and interactive experiences. Provides orientation data and change detection for motion-aware web apps.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Device Orientation API - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events",
-        "type": "article"
-      },
-      {
-        "title": "Detect the device orientation with JS",
-        "url": "https://www.youtube.com/watch?v=fMDuFoqSQfw",
-        "type": "video"
-      }
-    ]
-  },
-  "MAM1nuVk-h4AvTUk4nvmj": {
-    "title": "Payments",
-    "description": "Payment Request API standardizes checkout forms by collecting payment and shipping information through browsers. Supports credit cards, debit cards, and digital wallets. Creates PaymentRequest objects for user confirmation and payment processing.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Payment Request API - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API",
-        "type": "article"
-      },
-      {
-        "title": "The Payment Request API",
-        "url": "https://www.w3.org/TR/payment-request/",
-        "type": "article"
-      }
-    ]
-  },
-  "opu2bAsmdWHqWqtsCscLC": {
-    "title": "Credentials",
-    "description": "Credential Management API integrates websites with browser password managers for secure credential storage and retrieval. Enables auto sign-in, supports various authentication methods, and works with platform authenticators. Improves login experience and security across devices.\n\nVisit the following resources to learn more:",
-    "links": [
-      {
-        "title": "Credential Management API - MDN",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API",
-        "type": "article"
-      },
-      {
-        "title": "The Credential Management API",
-        "url": "https://web.dev/articles/security-credential-management",
-        "type": "article"
-      }
-    ]
-  },
   "h26uS3muFCabe6ekElZcI": {
     "title": "SWC",
     "description": "SWC (Speedy Web Compiler) is a Rust-based JavaScript/TypeScript compiler and bundler, much faster than Babel. Supports modern JavaScript features, JSX, and TypeScript compilation. Popular for large projects and as performance foundation for other build tools.\n\nVisit the following resources to learn more:",
@@ -2778,5 +1833,105 @@
         "type": "article"
       }
     ]
+  },
+  "bun@j2H1qGosbveayviOCVkUs.md": {
+    "title": "Bun",
+    "description": "",
+    "links": []
+  },
+  "biome@UvCVChB6NZ_yUg0RdIJ2o.md": {
+    "title": "Biome",
+    "description": "",
+    "links": []
+  },
+  "rolldown@hE-DbpBpYrfB8tmBEjTnG.md": {
+    "title": "Rolldown",
+    "description": "",
+    "links": []
+  },
+  "tanstack-start@f9zlP6lGhfe6HBHVYiySu.md": {
+    "title": "Tanstack Start",
+    "description": "",
+    "links": []
+  },
+  "deployment@A1ZUy16cVRYqmHxoCtUb0.md": {
+    "title": "Deployment",
+    "description": "",
+    "links": []
+  },
+  "github-pages@vpzh9bNXCxgdDFQLsot2_.md": {
+    "title": "GitHub Pages",
+    "description": "",
+    "links": []
+  },
+  "vercel@kPJ0jZo5AbOzvZgv0zwp0.md": {
+    "title": "Vercel",
+    "description": "",
+    "links": []
+  },
+  "cloudflare@_Uh-UFNe2wP2TV0x2lKY_.md": {
+    "title": "Cloudflare",
+    "description": "",
+    "links": []
+  },
+  "netlify@o8GstE5gxcGByh-D7lwqT.md": {
+    "title": "Netlify",
+    "description": "",
+    "links": []
+  },
+  "railway@PJRsqg5Vx9gQTodxaeZfz.md": {
+    "title": "Railway",
+    "description": "",
+    "links": []
+  },
+  "render@wfGz8pshGQARZ7qStGoSD.md": {
+    "title": "Render",
+    "description": "",
+    "links": []
+  },
+  "performance@6d8cjWZ4BuUjwT0seiuzJ.md": {
+    "title": "Performance",
+    "description": "",
+    "links": []
+  },
+  "lighthouse@dz7_QXoO7X0WmS5xuAhhJ.md": {
+    "title": "Lighthouse",
+    "description": "",
+    "links": []
+  },
+  "devtools-usage@JWU9jc12_ewaIKt3qWLcp.md": {
+    "title": "DevTools Usage",
+    "description": "",
+    "links": []
+  },
+  "service-workers@66ya3WdtlkjQyBTc3Lein.md": {
+    "title": "Service Workers",
+    "description": "",
+    "links": []
+  },
+  "streamed-responses@FyNXhHq1VIASNq-LI7JIu.md": {
+    "title": "Streamed Responses",
+    "description": "",
+    "links": []
+  },
+  "design-systems@ap4h4v5Sr4jBH3GwWSH8x.md": {
+    "title": "Design Systems",
+    "description": "",
+    "links": []
+  },
+  "web-apis@3HgiMfqihjWceSxd6ei8s.md": {
+    "title": "Web APIs",
+    "description": "",
+    "links": []
+  },
+  "accessibility@e-k6EhoxYG9h0x6vWOrDh.md": {
+    "title": "Accessibility",
+    "description": "",
+    "links": []
+  },
+  "cache-control@tWDmeXItfQDxB8Jij_V4L.md": {
+    "title": "Cache-Control",
+    "description": "",
+    "links": []
   }
 }

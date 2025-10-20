@@ -4,7 +4,7 @@ Latency and throughput are two important measures of a system's performance. **L
 
 Generally, you should aim for maximal throughput with acceptable latency.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@System Design: Latency vs Throughput](https://cs.fyi/guide/latency-vs-throughput/)
 - [@article@Understanding Latency versus Throughput](https://community.cadence.com/cadence_blogs_8/b/fv/posts/understanding-latency-vs-throughput)

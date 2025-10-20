@@ -40,7 +40,11 @@ export function aiRoadmapOptions(roadmapSlug?: string) {
 
       const result = generateAICourseRoadmapStructure(res.data);
       const { nodes, edges } = generateAIRoadmapFromText(result);
-      const svg = await renderFlowJSON({ nodes, edges });
+      const svg = renderFlowJSON({ nodes, edges });
+      if (!svg) {
+        return res;
+      }
+
       const svgHtml = svg.outerHTML;
 
       return {
@@ -153,7 +157,11 @@ export async function generateAIRoadmap(options: GenerateAIRoadmapOptions) {
       onMessage: async (message) => {
         const result = generateAICourseRoadmapStructure(message);
         const { nodes, edges } = generateAIRoadmapFromText(result);
-        const svg = await renderFlowJSON({ nodes, edges });
+        const svg = renderFlowJSON({ nodes, edges });
+        if (!svg) {
+          return;
+        }
+
         onRoadmapSvgChange?.(svg);
       },
       onMessageEnd: async () => {

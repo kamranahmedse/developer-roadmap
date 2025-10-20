@@ -5,7 +5,7 @@
 @plugin 'tailwind-scrollbar';
 
 @font-face {
-  font-family: 'Balsamiq Sans';
+  font-family: 'balsamiq';
   src: url('/fonts/balsamiq.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
@@ -13,7 +13,7 @@
 }
 
 @theme {
-  --font-balsamiq: 'Balsamiq Sans', sans-serif;
+  --font-balsamiq: 'balsamiq', sans-serif;
 }
 
 /*
