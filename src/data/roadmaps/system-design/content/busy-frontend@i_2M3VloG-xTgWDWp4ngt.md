@@ -1,10 +1,8 @@
 # Busy Frontend
 
-Performing asynchronous work on a large number of background threads can starve other concurrent foreground tasks of resources, decreasing response times to unacceptable levels.
+A busy frontend happens when the user-facing part of the system — such as the web servers, CDN, or browser — is handling more work than it can efficiently manage. This can lead to slow page loads, delayed responses, or timeouts. Common causes include too many concurrent users, large static assets, heavy client-side rendering, or missing caching layers.
 
-Resource-intensive tasks can increase the response times for user requests and cause high latency. One way to improve response times is to offload a resource-intensive task to a separate thread. This approach lets the application stay responsive while processing happens in the background. However, tasks that run on a background thread still consume resources. If there are too many of them, they can starve the threads that are handling requests.
-
-This problem typically occurs when an application is developed as monolithic piece of code, with all of the business logic combined into a single tier shared with the presentation layer.
+To improve responsiveness, you can use CDNs to cache static files, optimize and lazy-load scripts, balance requests across multiple servers, and reduce unnecessary API calls. The goal is to make sure the frontend remains fast and responsive even under heavy traffic.
 
 Visit the following resources to learn more:
 
