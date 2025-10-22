@@ -5,4 +5,4 @@ Audio on the web involves incorporating sound files into HTML documents. This al
 Visit the following resources to learn more:
 
 - [@article@<audio>: The Embed Audio element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio)
-- [@article@Learn HTML audio in 5 minutes!](https://www.youtube.com/watch?v=uof_zYxtnp0)
+- [@video@Learn HTML audio in 5 minutes!](https://www.youtube.com/watch?v=uof_zYxtnp0)
