@@ -1,6 +1,9 @@
 # Writing Custom Hooks
 
 Building your own Hooks lets you extract component logic into reusable functions.
+Custom hooks in React let you put reusable logic into simple functions. They start with the word "use" and can use other hooks like useState or useEffect inside them. This helps you avoid repeating the same code in different components. For example, you can make a useFetch hook to handle data fetching. It keeps your code clean and easy to read. Custom hooks don’t add new features but make React features reusable. They also help separate logic from UI. Any component can use them easily. Overall, custom hooks make React apps simpler and more organized.
+
+
 
 Visit the following resources to learn more:
 
