@@ -2,7 +2,7 @@
 
 These are the core modules that come with `Node.js` out of the box. This module provides tools or APIs for performing out certain standard `Node.js` operations. like interacting with the file system, url parsing, or logging information to the console.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@fs module](https://nodejs.org/api/fs.html)
 - [@official@url module](https://nodejs.org/api/url.html)
