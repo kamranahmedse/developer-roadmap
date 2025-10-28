@@ -8,6 +8,6 @@ Visit the following resources to learn more:
 
 - [@official@Postman](https://www.postman.com)
 - [@article@Learn Postman](https://learning.postman.com/docs/getting-started/introduction/)
-- [@video@API Testing with Postman](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
 - [@article@Newman CLI](https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/)
+- [@video@API Testing with Postman](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
 - [@feed@Explore top posts about Postman](https://app.daily.dev/tags/postman?ref=roadmapsh)
