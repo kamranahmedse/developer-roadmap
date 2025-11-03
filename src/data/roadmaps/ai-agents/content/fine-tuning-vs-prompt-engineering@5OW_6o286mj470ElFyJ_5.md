@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@OpenAI Fine Tuning](https://platform.openai.com/docs/guides/fine-tuning)
 - [@article@Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [@article@Prompt Engineering vs Prompt Tuning: A Detailed Explanation](https://medium.com/@aabhi02/prompt-engineering-vs-prompt-tuning-a-detailed-explanation-19ea8ce62ac4)
+- [@video@RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models](https://youtu.be/zYGDpG-pTho?si=pFeWqbjSN1RM4WiZ)

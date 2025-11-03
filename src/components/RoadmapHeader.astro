@@ -14,6 +14,7 @@ import { ScheduleButton } from './Schedule/ScheduleButton';
 import { ShareRoadmapButton } from './ShareRoadmapButton';
 import { TabLink } from './TabLink';
 import { PersonalizedRoadmap } from './PersonalizedRoadmap/PersonalizedRoadmap';
+import RoadmapFeedbackAlert from './Roadmaps/RoadmapFeedbackAlert.astro';
 
 export interface Props {
   title: string;
@@ -29,6 +30,7 @@ export interface Props {
   coursesCount?: number;
   hasAIChat?: boolean;
   isForkable?: boolean;
+  isNew?: boolean;
   activeTab?: 'roadmap' | 'projects' | 'courses';
 }
 
@@ -41,6 +43,7 @@ const {
   projectCount = 0,
   activeTab = 'roadmap',
   coursesCount = 0,
+  isNew = false,
 } = Astro.props;
 
 const hasCourses = coursesCount > 0;
@@ -64,6 +67,8 @@ const hasProjects = projectCount > 0;
       </div>
     )
   }
+
+  {isNew && <RoadmapFeedbackAlert roadmapId={roadmapId} title={title} />}
 
   <div
     class='relative rounded-none border bg-white px-5 pt-4 pb-0 sm:rounded-lg'

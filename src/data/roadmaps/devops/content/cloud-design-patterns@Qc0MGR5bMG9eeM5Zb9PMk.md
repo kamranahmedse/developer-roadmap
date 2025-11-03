@@ -4,7 +4,6 @@ Cloud design patterns are reusable solutions to common problems encountered in c
 
 Visit the following resources to learn more:
 
+- [@course@30 Cloud Design Patterns in depth](https://www.youtube.com/watch?v=cxYHugyNTP0)
 - [@official@Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
 - [@article@Cloud design patterns, architectures, and implementations](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/introduction.html)
-- [@course@30 Cloud Design Patterns in depth](https://www.youtube.com/watch?v=cxYHugyNTP0)
-

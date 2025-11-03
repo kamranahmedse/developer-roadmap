@@ -19,6 +19,8 @@
     'questions',
     'guides',
     'advertise',
+    'premium',
+    'dashboard',
   ];
 
   function sanitizeSettingValue(value) {
@@ -57,7 +59,28 @@
       page_type: 'best-practice',
       category: ['best-practice', sanitizeSettingValue(pageParts[1])],
     };
+  } else if (pageParts.length > 0) {
+    // Set page_type for all other pages using slugified first path segment
+    const pageType = sanitizeSettingValue(pageParts[0]);
+    adSettings = {
+      page_type: pageType,
+      category: [pageType],
+    };
+
+    // Add post_id if there's a second path segment
+    if (pageParts.length > 1) {
+      adSettings.post_id = sanitizeSettingValue(pageParts[1]);
+      adSettings.category.push(sanitizeSettingValue(pageParts[1]));
+    }
+  } else {
+    // Homepage
+    adSettings = {
+      page_type: 'home',
+      category: ['home'],
+    };
   }
+
+  console.info('Ad Settings:', adSettings);
 
   // @ts-nocheck
   window.googletag = window.googletag || { cmd: [] };

@@ -4,7 +4,7 @@
 
 **TLS (Transport Layer Security)** improves upon SSL by using stronger encryption algorithms, more secure key exchange mechanisms, and enhanced certificate validation. Like SSL, TLS begins with a handshake where the client and server agree on a protocol version and cipher suite, exchange keys, and verify certificates. However, TLS incorporates additional features like Perfect Forward Secrecy (PFS) and more secure hashing algorithms, making it significantly more secure than SSL for modern communications.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@What’s the Difference Between SSL and TLS?](https://aws.amazon.com/compare/the-difference-between-ssl-and-tls/)
 - [@video@TLS vs SSL - What's the Difference?](https://www.youtube.com/watch?v=J7fI_jH7L84)

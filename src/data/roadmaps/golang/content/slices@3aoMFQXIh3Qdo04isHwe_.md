@@ -5,5 +5,5 @@ Dynamic arrays built on top of arrays. Reference types with length and capacity.
 Visit the following resources to learn more:
 
 - [@official@make](https://go.dev/tour/moretypes/13)
-- [@article@The new() vs make() Functions in Go](https://nitish08.medium.com/loops-in-golang-d44fb39b08e)
+- [@article@The new() vs make() Functions in Go](https://www.freecodecamp.org/news/new-vs-make-functions-in-go/)
 - [@article@Slice Arrays Correctly](https://labex.io/tutorials/go-how-to-slice-arrays-correctly-418936)

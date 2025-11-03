@@ -136,7 +136,7 @@ export function RoadmapAIChat(props: RoadmapAIChatProps) {
   }, [roadmapDetail]);
 
   useEffect(() => {
-    if (!roadmapDetail || !roadmapContainerRef.current) {
+    if (!roadmapDetail || !roadmapContainerRef.current || !roadmapDetail.svg) {
       return;
     }
 

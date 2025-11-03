@@ -4,7 +4,7 @@ Instrumentation embeds code to capture metrics, logs, and traces. Monitoring obs
 
 Visit the following resources to learn more:
 
-- [@article@What is Instrumentation?](https://en.wikipedia.org/wiki/Instrumentation_/(computer_programming/))
+- [@article@What is Instrumentation?](https://en.wikipedia.org/wiki/Instrumentation_%28computer_programming%29)
 - [@article@What is Monitoring?](https://www.yottaa.com/performance-monitoring-backend-vs-front-end-solutions/)
 - [@article@What is Telemetry?](https://www.sumologic.com/insight/what-is-telemetry/)
 - [@video@Observability vs. APM vs. Monitoring](https://www.youtube.com/watch?v=CAQ_a2-9UOI)

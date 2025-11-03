@@ -41,7 +41,7 @@ export function ChatPersona(props: ChatPersonaProps) {
       queryClient,
     );
 
-  const roadmapTitle = roadmap?.json.title ?? '';
+  const roadmapTitle = roadmap?.json.title?.page ?? '';
 
   return (
     <div className="relative mx-auto flex h-auto max-w-[400px] grow flex-col justify-center p-4 px-2 px-4 sm:h-full sm:p-4">

@@ -1,0 +1,37 @@
+---
+import { Bell } from 'lucide-react';
+
+export interface Props {
+  roadmapId: string;
+  title: string;
+}
+
+const { roadmapId, title } = Astro.props;
+
+const issueTitle = encodeURIComponent(`[New Roadmap Feedback] ${title}`);
+const roadmapUrl = encodeURIComponent(`https://roadmap.sh/${roadmapId}`);
+const feedbackUrl = `https://github.com/kamranahmedse/developer-roadmap/issues/new?template=01-suggest-changes.yml&title=${issueTitle}&url=${roadmapUrl}`;
+---
+
+<div
+  class='hidden rounded-md border border-yellow-400 bg-gradient-to-r from-yellow-100 via-yellow-50 to-amber-100 px-2 py-2 sm:block'
+>
+  <p class='flex items-center gap-2.5 text-sm'>
+    <span
+      class='inline-flex items-center gap-1 rounded-sm bg-gradient-to-r from-yellow-600 to-yellow-700 px-2.5 py-1 text-xs font-bold text-white'
+    >
+      <Bell className='h-3.5 w-3.5' />
+      Feedback Wanted
+    </span>
+    <span class='font-medium text-yellow-900'>
+      This is a new roadmap, help us improve it with
+      <a
+        href={feedbackUrl}
+        target='_blank'
+        class='font-bold text-yellow-700 underline decoration-yellow-500 decoration-2 underline-offset-2 transition-all hover:text-yellow-900 hover:decoration-yellow-700'
+      >
+        your feedback
+      </a>
+    </span>
+  </p>
+</div>

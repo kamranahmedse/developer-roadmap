@@ -1,7 +1,6 @@
 # Database design basics
 
-Database Design is a collection of processes that facilitate the designing, development, implementation and maintenance of enterprise data management systems. Properly designed database are easy to maintain, improves data consistency and are cost effective in terms of disk storage space.
-The main objectives of database design in DBMS are to produce logical and physical designs models of the proposed database system.
+Database Design is a collection of processes that facilitate the designing, development, implementation and maintenance of enterprise data management systems. Properly designed database are easy to maintain, improves data consistency and are cost effective in terms of disk storage space. The main objectives of database design in DBMS are to produce logical and physical designs models of the proposed database system.
 
 Visit the following resources to learn more:
 

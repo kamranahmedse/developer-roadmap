@@ -4,6 +4,6 @@ Tasks queues receive tasks and their related data, runs them, then delivers thei
 
 [Celery](https://docs.celeryproject.org/en/stable/) has support for scheduling and primarily has python support.
 
-To learn more, visit the following links:
+Visit the following resources to learn more:
 
 - [@article@Celery - Distributed Task Queue](https://docs.celeryq.dev/en/stable/)

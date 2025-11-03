@@ -4,7 +4,7 @@ Cloud skills and knowledge are essential for working effectively with cloud comp
 
 Security in the cloud is a vital skill, encompassing encryption, identity and access management (IAM), compliance, and disaster recovery. Understanding DevOps practices, containerization (using tools like Docker and Kubernetes), and serverless computing also plays a significant role in cloud operations. Additionally, familiarity with cloud-native tools for automation, monitoring, and orchestration, as well as knowledge of cloud cost optimization and performance tuning, are important for maximizing cloud efficiency and ensuring a secure, scalable infrastructure.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@7 Cloud Computing skills to know](https://www.coursera.org/articles/cloud-computing-skills)
 - [@video@What Cloud Skills are Essential?](https://www.youtube.com/watch?v=udKBDRcj178)
