@@ -2,22 +2,18 @@ import './ChatRoadmapRenderer.css';
 
 import { lazy, useCallback, useEffect, useRef, useState } from 'react';
 import {
-  renderResourceProgress,
   updateResourceProgress,
   type ResourceProgressType,
   renderTopicProgress,
-  refreshProgressCounters,
 } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { Edge, Node } from '@roadmapsh/editor';
-import { slugify } from '../../lib/slugger';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { queryClient } from '../../stores/query-client';
 import { userResourceProgressOptions } from '../../queries/resource-progress';
 import { useQuery } from '@tanstack/react-query';
-import { TopicResourcesModal } from './TopicResourcesModal';
 
 const Renderer = lazy(() =>
   import('@roadmapsh/editor').then((mod) => ({

@@ -4,7 +4,7 @@ LDAPS (Lightweight Directory Access Protocol Secure) is a secure version of the 
 
 By using LDAPS, organizations can maintain the benefits of LDAP while ensuring that sensitive directory operations are protected from potential eavesdropping or man-in-the-middle attacks on the network.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
-- [@video@LDAP vs LDAPS - Whats the difference?](https://www.youtube.com/watch?v=J2qtayKzMmA)
 - [@article@How to enable LDAPS](https://www.dell.com/support/kbdoc/en-uk/000212661/how-to-enable-secure-lightweight-directory-access-protocol-ldaps-on-an-active-directory-domain-controller)
+- [@video@LDAP vs LDAPS - Whats the difference?](https://www.youtube.com/watch?v=J2qtayKzMmA)

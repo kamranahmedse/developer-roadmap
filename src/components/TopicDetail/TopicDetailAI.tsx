@@ -2,8 +2,10 @@ import '../ChatMessages/AIChat.css';
 
 import { useQuery } from '@tanstack/react-query';
 import {
+  BookOpenIcon,
   BotIcon,
   ChevronRightIcon,
+  FileTextIcon,
   Gift,
   Loader2Icon,
   LockIcon,
@@ -149,10 +151,11 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
   );
   const hasChatHistory = messages.length > 0;
   const nodeTextParts = roadmapTreeMapping?.text?.split('>') || [];
-  const hasSubjects =
-    (roadmapTreeMapping?.subjects &&
-      roadmapTreeMapping?.subjects?.length > 0) ||
-    nodeTextParts.length > 1;
+
+  const subjects = roadmapTreeMapping?.subjects || [];
+  const guides = roadmapTreeMapping?.guides || [];
+  const hasGuides = guides.length > 0;
+  const hasSubjects = subjects.length > 0 || nodeTextParts.length > 1;
 
   return (
     <div className="ai-chat relative mt-4 flex grow flex-col overflow-hidden rounded-lg border border-gray-200">
@@ -172,14 +175,14 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
         />
       )}
 
-      {hasSubjects && (
+      {(hasSubjects || hasGuides) && (
         <div className="border-b border-gray-200 p-3">
           <h4 className="flex items-center gap-2 text-sm">
-            Complete the following AI Tutor courses
+            Complete the following AI Tutor courses or guides
           </h4>
 
           <div className="mt-2.5 flex flex-wrap gap-1 text-sm">
-            {roadmapTreeMapping?.subjects?.map((subject) => {
+            {subjects.map((subject) => {
               return (
                 <a
                   key={subject}
@@ -197,15 +200,42 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                       return;
                     }
                   }}
-                  href={`/ai/course/search?term=${subject}&difficulty=beginner&src=topic`}
-                  className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
+                  href={`/ai/course/search?term=${subject}&src=topic`}
+                  className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
                 >
+                  <BookOpenIcon className="size-3.5" />
                   {subject}
                 </a>
               );
             })}
+            {guides.map((guide) => {
+              return (
+                <a
+                  key={guide}
+                  target="_blank"
+                  onClick={(e) => {
+                    if (!isLoggedIn()) {
+                      e.preventDefault();
+                      onLogin();
+                      return;
+                    }
 
-            {roadmapTreeMapping?.subjects?.length === 0 && (
+                    if (isLimitExceeded) {
+                      e.preventDefault();
+                      onUpgrade();
+                      return;
+                    }
+                  }}
+                  href={`/ai/guide/search?term=${guide}&src=topic`}
+                  className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
+                >
+                  <FileTextIcon className="size-3.5" />
+                  {guide}
+                </a>
+              );
+            })}
+
+            {subjects.length === 0 && (
               <a
                 target="_blank"
                 onClick={(e) => {

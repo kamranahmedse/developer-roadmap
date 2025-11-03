@@ -7,6 +7,6 @@ The Spring Data MongoDB project provides integration with the MongoDB document d
 Visit the following resources to learn more:
 
 - [@official@Spring Data MongoDB](https://spring.io/projects/spring-data-mongodb)
-- [@article@Introduction to Spring Data MongoDB](https://www.baeldung.com/spring-data-mongodb-tutorial)
 - [@official@Spring Boot Integration with MongoDB Tutorial](https://www.mongodb.com/compatibility/spring-boot)
+- [@article@Introduction to Spring Data MongoDB](https://www.baeldung.com/spring-data-mongodb-tutorial)
 - [@feed@Explore top posts about MongoDB](https://app.daily.dev/tags/mongodb?ref=roadmapsh)

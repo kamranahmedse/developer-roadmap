@@ -5,6 +5,6 @@ VPC stands for **Virtual Private Cloud** and is an essential service provided by
 Visit the following resources to learn more:
 
 - [@official@Amazon AWS VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
-- [@video@AWS VPC & Subnets For Beginners](https://youtu.be/TUTqYEZZUdc)
 - [@article@Up and Running with AWS VPC](https://cs.fyi/guide/up-and-running-with-aws-vpc)
 - [@article@VPC Basics](https://cloudcasts.io/course/vpc-basics)
+- [@video@AWS VPC & Subnets For Beginners](https://youtu.be/TUTqYEZZUdc)

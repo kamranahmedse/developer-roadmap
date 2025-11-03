@@ -52,7 +52,7 @@ export function UpdatePersonaModal(props: UpdatePersonaModalProps) {
       queryClient,
     );
 
-  const roadmapTitle = roadmap?.json.title ?? '';
+  const roadmapTitle = roadmap?.json?.title?.page ?? '';
 
   return (
     <Modal

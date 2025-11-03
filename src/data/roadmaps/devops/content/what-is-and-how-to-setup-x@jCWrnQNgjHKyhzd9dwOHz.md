@@ -2,9 +2,9 @@
 
 Learn how to setup:
 
-- Forward Proxy
-- Reverse Proxy
-- Load Balancer
-- Firewall
-- Caching Server
-- Web Server
+*   Forward Proxy
+*   Reverse Proxy
+*   Load Balancer
+*   Firewall
+*   Caching Server
+*   Web Server

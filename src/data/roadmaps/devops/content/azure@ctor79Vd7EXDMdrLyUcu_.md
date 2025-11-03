@@ -5,6 +5,6 @@ Microsoft Azure is a comprehensive cloud computing platform offering a wide arra
 Visit the following resources to learn more:
 
 - [@official@Azure Website](https://azure.microsoft.com/en-us/)
-- [@video@Microsoft Azure Fundamentals Certification Course (AZ-900)](https://www.youtube.com/watch?v=5abffC-K40c)
 - [@opensource@Microsoft Azure Guide](https://github.com/mikeroyal/Azure-Guide)
+- [@video@Microsoft Azure Fundamentals Certification Course (AZ-900)](https://www.youtube.com/watch?v=5abffC-K40c)
 - [@feed@Explore top posts about Azure](https://app.daily.dev/tags/azure?ref=roadmapsh)

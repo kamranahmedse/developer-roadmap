@@ -175,10 +175,34 @@ const groups: GroupType[] = [
     group: 'Languages / Platforms',
     roadmaps: [
       {
+        title: 'HTML',
+        link: '/html',
+        type: 'skill',
+        otherGroups: ['Web Development', 'Absolute Beginners'],
+      },
+      {
+        title: 'CSS',
+        link: '/css',
+        type: 'skill',
+        otherGroups: ['Web Development', 'Absolute Beginners'],
+      },
+      {
         title: 'JavaScript',
         link: '/javascript',
         type: 'skill',
+        otherGroups: ['Web Development', 'DevOps', 'Mobile Development', 'Absolute Beginners'],
+      },
+      {
+        title: 'Kotlin',
+        link: '/kotlin',
+        type: 'skill',
         otherGroups: ['Web Development', 'DevOps', 'Mobile Development'],
+      },
+      {
+        title: 'Swift & Swift-UI',
+        link: '/swift-ui',
+        type: 'skill',
+        otherGroups: ['Mobile Development'],
       },
       {
         title: 'TypeScript',
@@ -190,13 +214,13 @@ const groups: GroupType[] = [
         title: 'Node.js',
         link: '/nodejs',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps'],
+        otherGroups: ['Web Development', 'DevOps', 'Absolute Beginners'],
       },
       {
         title: 'PHP',
         link: '/php',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps'],
+        otherGroups: ['Web Development', 'DevOps', 'Absolute Beginners'],
       },
       {
         title: 'C++',
@@ -207,7 +231,7 @@ const groups: GroupType[] = [
         title: 'Go',
         link: '/golang',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps'],
+        otherGroups: ['Web Development', 'DevOps', 'Absolute Beginners'],
       },
       {
         title: 'Rust',
@@ -232,6 +256,12 @@ const groups: GroupType[] = [
         link: '/sql',
         type: 'skill',
         otherGroups: ['Web Development', 'Databases', 'DevOps'],
+      },
+      {
+        title: 'Shell / Bash',
+        link: '/shell-bash',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps'],
       },
     ],
   },

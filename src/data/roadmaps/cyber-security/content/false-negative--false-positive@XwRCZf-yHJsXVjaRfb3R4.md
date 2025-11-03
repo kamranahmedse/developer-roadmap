@@ -6,7 +6,7 @@ A false negative occurs when the security tool fails to detect an actual threat 
 
 To have an effective cybersecurity system, security professionals aim to maximize true positives and true negatives, while minimizing false positives and false negatives. Balancing these aspects ensures that the security tools maintain their effectiveness without causing undue disruptions to a user's experience.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Difference Between False Positive and False Negative](https://www.differencebetween.net/science/difference-between-false-positive-and-false-negative/)
 - [@video@What is a false positive virus?](https://www.youtube.com/watch?v=WrcAGBvIT14)

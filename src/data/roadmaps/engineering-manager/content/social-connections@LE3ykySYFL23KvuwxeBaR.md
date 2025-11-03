@@ -1,6 +1,6 @@
 # Social connections
 
-Creating and maintaining social connections within a team is a key focus for an Engineering Manager. It's their role to facilitate an environment that encourages bonding, which often involves organizing team-building events or casual gatherings. 
+Creating and maintaining social connections within a team is a key focus for an Engineering Manager. It's their role to facilitate an environment that encourages bonding, which often involves organizing team-building events or casual gatherings.
 
 They face challenges like remote work preventing face-to-face interaction, and cultural or personality differences causing disconnect. To address these, they may use digital tools for virtual meetups, or implement diversity and inclusion training.
 

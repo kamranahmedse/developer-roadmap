@@ -1,6 +1,6 @@
 # PyUnit / Unittest
 
-PyUnit is an easy way to create unit testing programs and UnitTests with Python. (Note that docs.python.org uses the name "unittest", which is also the module name.)
+PyUnit is an easy way to create unit testing programs and UnitTests with Python. (Note that [docs.python.org](http://docs.python.org) uses the name "unittest", which is also the module name.)
 
 Visit the following resources to learn more:
 

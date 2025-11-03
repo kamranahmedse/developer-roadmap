@@ -1,4 +1,4 @@
-#  System Design and Architecture
+# System Design and Architecture
 
 An Engineering Manager leads and oversees the system design and architecture. They're responsible for ensuring that the design aligns with the company's business goals and client needs. Their tasks may include making key technical decisions, reviewing design proposals, architecting scalable systems, and ensuring systems' redundancy and fault tolerance.
 

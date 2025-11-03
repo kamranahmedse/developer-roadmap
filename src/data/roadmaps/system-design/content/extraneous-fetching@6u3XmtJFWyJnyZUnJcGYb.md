@@ -4,11 +4,11 @@ Extraneous fetching in system design refers to the practice of retrieving more d
 
 Extraneous fetching can lead to a number of issues, such as:
 
-- Performance degradation
-- Increased resource utilization
-- Increased network traffic
-- Poor user experience
+*   Performance degradation
+*   Increased resource utilization
+*   Increased network traffic
+*   Poor user experience
 
-Visit the following links to learn more:
+Visit the following resources to learn more:
 
 - [@article@Extraneous Fetching antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/extraneous-fetching/)

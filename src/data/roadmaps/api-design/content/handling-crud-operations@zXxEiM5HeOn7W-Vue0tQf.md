@@ -4,7 +4,7 @@ When designing APIs, one needs to account for various types of interactions with
 
 Therefore, mastering CRUD operations in API design is a fundamental skill. Effective handling of CRUD operations facilitates seamless interaction between the front-end and back-end systems, and ensures proper data management, thereby improving user experience.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Introduction to Building a CRUD API with Node.js and Express](https://www.split.io/blog/introduction-to-building-a-crud-api-with-node-js-and-express/)
 - [@article@An expert's guide to CRUD APIs](https://www.forestadmin.com/blog/an-experts-guide-to-crud-apis-designing-a-robust-one/)

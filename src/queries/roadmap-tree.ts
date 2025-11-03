@@ -9,6 +9,7 @@ export interface RoadmapTreeDocument {
     nodeId: string;
     text: string;
     subjects: string[];
+    guides?: string[];
   }[];
   createdAt: Date;
   updatedAt: Date;

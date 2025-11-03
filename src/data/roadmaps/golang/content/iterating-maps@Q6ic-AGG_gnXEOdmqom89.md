@@ -4,6 +4,5 @@ Use `for range` to iterate over maps, returns key and value pairs. Iteration ord
 
 Visit the following resources to learn more:
 
-- [@article@Building High-Performance File Processing Pipelines in Go](https://dev.to/aaravjoshi/building-high-performance-file-processing-pipelines-in-go-a-complete-guide-3opm)
-- [@article@Mastering File I/O in Go: A Complete Guide](https://thelinuxcode.com/golang-os-open/)
-- [@article@Golang Fundamentals: File Handling and I/O](https://medium.com/@nagarjun_nagesh/golang-fundamentals-file-handling-and-i-o-502d50b96795)
+- [Iterating Over Maps in Go: Methods, Order, and Best Practices](https://leapcell.io/blog/iterating-over-maps-in-go-methods-order-and-best-practices)
+-[https://freshman.tech/snippets/go/iterate-over-map/](https://freshman.tech/snippets/go/iterate-over-map/)

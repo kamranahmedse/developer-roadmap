@@ -6,7 +6,7 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
 - [@course@Git by Example - Learn Version Control with Bite-sized Lessons](https://antonz.org/git-by-example/)
-- [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=vA5TTz6BXhY)
 - [@article@Learn Git with Tutorials, News and Tips - Atlassian](https://www.atlassian.com/git)
 - [@article@Git Cheat Sheet](https://cs.fyi/guide/git-cheatsheet)
+- [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=vA5TTz6BXhY)
 - [@feed@Explore top posts about Git](https://app.daily.dev/tags/git?ref=roadmapsh)
