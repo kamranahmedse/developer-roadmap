@@ -4,5 +4,5 @@ Embeddings are stored in a vector database by first converting data, such as tex
 
 Visit the following resources to learn more:
 
-- [@article@Indexing & Embeddings](https://docs.llamaindex.ai/en/stable/understanding/indexing/indexing/)
+- [@article@Indexing & Embeddings](https://developers.llamaindex.ai/python/framework/understanding/rag/indexing/)
 - [@video@Vector Databases Simply Explained! (Embeddings & Indexes)](https://www.youtube.com/watch?v=dN0lsF2cvm4)
