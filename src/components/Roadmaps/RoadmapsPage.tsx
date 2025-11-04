@@ -169,6 +169,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Laravel',
+        link: '/laravel',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
     ],
   },
   {
