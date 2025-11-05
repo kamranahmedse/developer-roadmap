@@ -201,5 +201,5 @@ a > code:before {
 
 .prose-xl
   :where(table):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
-  font-size: 0.875rem !important;
+  font-size: 0.875em !important;
 }
