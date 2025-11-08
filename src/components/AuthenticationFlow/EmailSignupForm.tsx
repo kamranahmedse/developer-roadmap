@@ -46,9 +46,11 @@ export function EmailSignupForm(props: EmailSignupFormProps) {
     if (error || response?.status !== 'ok') {
       setIsLoading(false);
       setIsDisabled?.(false);
-      setError(
-        error?.message || 'Something went wrong. Please try again later.',
-      );
+
+      const errorMessage = error?.message || 'Something went wrong. Please try again later.';
+      const correctedErrorMessage = errorMessage.replace(/Mame must be/g, 'Name must be');
+
+      setError(correctedErrorMessage);
 
       return;
     }
