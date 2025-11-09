@@ -8,15 +8,14 @@ Use if-else when you want your program to choose between two possible actions.
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     int age = 18;
 
     if (age >= 18) {
-        cout << "You can vote!" << endl;
+        std::cout << "You can vote!" << std::endl;
     } else {
-        cout << "Too young to vote." << endl;
+        std::cout << "Too young to vote." << std::endl;
     }
 
     return 0;
@@ -36,16 +35,15 @@ It’s often cleaner than using many if-else statements.
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     int day = 3;
 
     switch (day) {
-        case 1: cout << "Monday"; break;
-        case 2: cout << "Tuesday"; break;
-        case 3: cout << "Wednesday"; break;
-        default: cout << "Invalid day";
+        case 1: std::cout << "Monday"; break;
+        case 2: std::cout << "Tuesday"; break;
+        case 3: std::cout << "Wednesday"; break;
+        default: std::cout << "Invalid day";
     }
 
     return 0;
@@ -68,7 +66,6 @@ Although it works, it is not recommended because it makes programs harder to und
 
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     int x = 5;
@@ -76,10 +73,10 @@ int main() {
     if (x == 5)
         goto label;
 
-    cout << "This line will be skipped." << endl;
+    std::cout << "This line will be skipped." << std::endl;
 
 label:
-    cout << "Jumped to label!" << endl;
+    std::cout << "Jumped to label!" << std::endl;
 
     return 0;
 }
@@ -92,6 +89,6 @@ Explaination:
 
 Visit the following resources to learn more:
 
-- [@video@The 'if-else' Statement in C++](https://www.youtube.com/watch?v=9-BjXs1vMSc)
-- [@video@Learn C++ With Me - Switch Statement](https://www.youtube.com/watch?v=uOlLs1OYSSI)
-- [@video@Why is it illegal to use "goto"?](https://youtu.be/AKJhThyTmQw?si=gjEqAsDZVMDGVAT2)
+- [The 'if-else' Statement in C++](https://www.youtube.com/watch?v=9-BjXs1vMSc)
+- [Learn C++ With Me - Switch Statement](https://www.youtube.com/watch?v=uOlLs1OYSSI)
+- [Why is it illegal to use "goto"?](https://youtu.be/AKJhThyTmQw?si=gjEqAsDZVMDGVAT2)
