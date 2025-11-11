@@ -1,6 +1,6 @@
 # Architecture
 
-Spring Boot follows a layered architecture in which each layer communicates with the layer directly below or above (hierarchical structure) it. There are four layers in Spring Boot are as follows:
+Spring Boot follows a layered architecture in which each layer communicates with the layer directly below or above (hierarchical structure) it. The four layers in Spring Boot are as follows:
 
 *   **Presentation Layer**: handles the HTTP requests, translates the JSON parameter to object, and authenticates the request and transfer it to the business layer.
 *   **Business Layer**: The business layer handles all the business logic. It consists of service classes and uses services provided by data access layers. It also performs authorization and validation.
