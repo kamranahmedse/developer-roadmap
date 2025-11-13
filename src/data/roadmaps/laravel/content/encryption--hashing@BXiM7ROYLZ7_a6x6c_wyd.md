@@ -1,1 +1,3 @@
 # Encryption & Hashing
+
+Encryption and hashing are fundamental security techniques used to protect sensitive data. Encryption transforms data into an unreadable format using an algorithm and a key, making it unintelligible to unauthorized parties; decryption reverses this process to restore the original data. Hashing, on the other hand, creates a fixed-size, one-way representation (hash) of data, making it suitable for verifying data integrity and storing passwords securely, as the original data cannot be recovered from the hash.

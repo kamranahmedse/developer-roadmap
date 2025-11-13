@@ -1,1 +1,3 @@
 # Blade Templating
+
+Blade is a simple yet powerful templating engine provided with Laravel. It allows you to use plain PHP in your views, but also offers convenient shortcuts and directives for common tasks like displaying data, looping through arrays, and conditional statements. Blade templates are compiled into plain PHP code and cached, meaning they add essentially zero overhead to your application.

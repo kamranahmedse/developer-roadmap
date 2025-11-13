@@ -1,1 +1,3 @@
-# With Starter Kits
+# Authentication with Starter Kits
+
+Authentication is the process of verifying a user's identity. Laravel starter kits provide pre-built scaffolding for authentication features like registration, login, password reset, and email verification. These kits offer a quick and convenient way to implement authentication in your Laravel application, saving you from writing the boilerplate code from scratch.

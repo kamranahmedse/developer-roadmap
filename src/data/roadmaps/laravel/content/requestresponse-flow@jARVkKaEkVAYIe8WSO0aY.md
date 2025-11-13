@@ -1,1 +1,3 @@
 # Request–Response Flow
+
+In Laravel, the request-response flow begins when a user sends a request to the application. This request first hits the `public/index.php` file, which bootstraps the Laravel framework. The request is then passed to the HTTP kernel, which identifies the appropriate route based on the request URI. The route then calls a controller action or closure, which processes the request and generates a response. Finally, the response is sent back to the user's browser.

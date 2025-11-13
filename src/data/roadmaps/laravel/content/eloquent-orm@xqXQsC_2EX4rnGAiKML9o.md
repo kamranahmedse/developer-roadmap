@@ -1,1 +1,3 @@
 # Eloquent ORM
+
+Eloquent is an Object-Relational Mapper (ORM) that provides a simple and enjoyable way to interact with your database. It allows you to define models that represent database tables, and then use those models to query, insert, update, and delete data without writing raw SQL queries. Eloquent uses an Active Record implementation, meaning each model instance corresponds to a single row in its associated table.

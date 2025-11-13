@@ -1,1 +1,3 @@
-# Dependency injection
+# Dependency Injection
+
+Dependency Injection is a design pattern where a component receives its dependencies from external sources rather than creating them itself. This promotes loose coupling, making code more modular, testable, and reusable. Instead of a class being responsible for instantiating its dependencies, those dependencies are "injected" into the class, typically through its constructor, setter methods, or interface injection.

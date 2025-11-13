@@ -1,1 +1,3 @@
-# Gates
+# Authorization Gates
+
+Authorization gates provide a way to control access to specific resources or actions within your application. They are essentially closures that determine if a user is authorized to perform a given action. You define these gates with a name and a callback function that receives the authenticated user as an argument, allowing you to implement custom authorization logic based on user roles, permissions, or any other criteria.

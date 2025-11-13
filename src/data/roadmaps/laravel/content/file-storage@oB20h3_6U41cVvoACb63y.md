@@ -1,1 +1,3 @@
 # File Storage
+
+File storage provides a convenient way to store and retrieve files, whether they are stored locally on the server or in cloud storage services like Amazon S3 or Google Cloud Storage. It offers a unified API for working with different storage systems, allowing you to easily switch between them without modifying your application's code. This system handles tasks like file uploads, downloads, and management, simplifying the process of working with files in your application.

@@ -1,1 +1,3 @@
-# Migrations, seeders
+# Database Migrations and Seeders
+
+Database migrations are like version control for your database schema, allowing you to modify and share the database structure in a structured and organized way. Seeders, on the other hand, are used to populate your database with initial data, such as default user accounts or categories, making it easier to start working with your application. They work together to ensure a consistent and reproducible database setup across different environments.

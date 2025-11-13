@@ -1,1 +1,3 @@
 # Health Route
+
+A health route is a specific endpoint in an application that provides information about its operational status. It's designed to be easily accessible and quickly indicate whether the application is running correctly and its dependencies are healthy. This allows monitoring systems and load balancers to automatically detect and respond to issues, ensuring high availability and reliability.

@@ -1,1 +1,3 @@
-# Single-action controllers
+# Single-Action Controllers
+
+Single-action controllers are controllers that contain only one method, typically named `__invoke`. This approach simplifies controller logic when a controller is responsible for performing a single, specific task. Instead of defining multiple methods for different actions, you define a single method that handles the entire request, leading to cleaner and more focused code.
