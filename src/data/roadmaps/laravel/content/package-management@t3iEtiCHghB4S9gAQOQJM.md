@@ -1,1 +1,3 @@
 # Package Management
+
+Package management involves using tools to automate the process of installing, updating, configuring, and removing software packages. In Laravel, this is primarily handled by Composer, a dependency manager for PHP. Composer allows you to declare the libraries your project depends on, and it will manage the installation and updating of those dependencies for you, ensuring compatibility and simplifying the process of incorporating external functionality into your Laravel application.

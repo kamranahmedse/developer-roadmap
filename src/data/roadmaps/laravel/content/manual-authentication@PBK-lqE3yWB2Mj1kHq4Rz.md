@@ -1,1 +1,3 @@
 # Manual Authentication
+
+Manual authentication involves directly handling user login and logout processes within your application, giving you complete control over how users are identified and authorized. This approach requires you to manage user credentials, session management, and security measures yourself, rather than relying on built-in Laravel features or packages. It's useful when you need highly customized authentication logic or integration with existing systems.

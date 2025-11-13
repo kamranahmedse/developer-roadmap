@@ -1,1 +1,3 @@
-# Create a new project
+# Creating a New Laravel Project
+
+To start a new Laravel project, you'll typically use Composer, a dependency management tool for PHP. Open your terminal or command prompt, navigate to the directory where you want to create your project, and then run the command `composer create-project laravel/laravel your-project-name`. Replace `your-project-name` with the desired name for your project. This command downloads Laravel and all its dependencies, sets up the basic project structure, and prepares your development application.

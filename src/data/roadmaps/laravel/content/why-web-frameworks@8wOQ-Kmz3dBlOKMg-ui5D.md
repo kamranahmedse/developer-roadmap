@@ -1,1 +1,3 @@
-# Why Web Frameworks?
+# Web Frameworks
+
+Web frameworks provide a structured way to develop web applications by offering pre-built components, tools, and conventions. They streamline common tasks like routing, templating, database interaction, and security, allowing developers to focus on the unique features of their application rather than reinventing the wheel for basic functionalities. This leads to faster development, more maintainable code, and improved overall application quality.

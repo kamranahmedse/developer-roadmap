@@ -1,1 +1,3 @@
 # Jetstream
+
+Jetstream is an application scaffolding package for Laravel. It provides a robust starting point for your next Laravel project, including features like user registration, login, email verification, two-factor authentication, session management, API support via Laravel Sanctum, and team management. It's designed to be a complete solution for quickly building modern web applications with authentication and common features already implemented.

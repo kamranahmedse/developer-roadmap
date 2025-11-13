@@ -1,1 +1,3 @@
-# What is Laravel?
+# Laravel
+
+Laravel is a PHP web application framework that provides tools and structure for building web applications using the Model-View-Controller (MVC) architectural pattern. It aims to simplify common tasks used in web development, such as routing, templating, authentication, and database interactions, by providing a clean and expressive syntax. Laravel emphasizes developer experience and promotes rapid application development.

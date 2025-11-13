@@ -1,1 +1,3 @@
 # Query Builder
+
+The Query Builder provides a convenient, fluent interface for creating and running database queries. It allows you to interact with your database without writing raw SQL, offering a more readable and maintainable way to perform common database operations like selecting, inserting, updating, and deleting data. It supports various database systems and protects against SQL injection vulnerabilities.

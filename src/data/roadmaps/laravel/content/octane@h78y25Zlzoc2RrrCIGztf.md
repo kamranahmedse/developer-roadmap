@@ -1,1 +1,3 @@
 # Octane
+
+Octane supercharges your Laravel application's performance by serving it using high-powered application servers like Swoole or RoadRunner. Instead of creating a fresh application instance for each request, Octane keeps the application loaded in memory, significantly reducing boot times and overhead. This allows your application to handle a much higher volume of requests with lower latency.

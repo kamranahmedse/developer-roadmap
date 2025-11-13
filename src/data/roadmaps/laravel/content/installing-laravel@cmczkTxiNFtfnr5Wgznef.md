@@ -1,1 +1,3 @@
 # Installing Laravel
+
+Installing Laravel involves setting up a new project with all the necessary dependencies and configurations to start building your web application. This process typically includes using Composer, a dependency manager for PHP, to download the Laravel framework and its required packages. You can choose different methods for installation, such as using the Laravel installer or creating a new project directly via Composer, depending on your system and preferences.
