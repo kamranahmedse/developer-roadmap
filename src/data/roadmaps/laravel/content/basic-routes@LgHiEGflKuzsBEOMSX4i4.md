@@ -1,3 +1,10 @@
 # Basic Routes
 
-Basic routes in web applications define how the application responds to client requests, typically HTTP requests like GET, POST, PUT, and DELETE. They essentially map a specific URL (or URI) to a particular function or action within the application. When a user visits a certain URL, the route directs the request to the appropriate code that will handle it and return a response.
+Routing in Laravel determines how your application responds to client requests. It essentially maps URLs (like `/about` or `/contact`) to specific functions or controllers within your application. When a user visits a particular URL, Laravel's router identifies the corresponding route and executes the associated code, which might involve displaying a view, processing data, or performing other actions. This system allows you to define the structure and behavior of your web application based on the URLs users access.
+
+Visit the following resources to learn more:
+
+- [@official@Basic Routes](https://laravel.com/docs/12.x/routing#basic-routing)
+- [@article@Laravel Routing Guide – How to Create Route to Call a View](http://cloudways.com/blog/routing-in-laravel/)
+- [@article@Laravel - Routing](https://www.tutorialspoint.com/laravel/laravel_routing.htm)
+- [@video@The Basics of Routing in Laravel | Learn Laravel The Right Way](https://www.youtube.com/watch?v=pP4g0xPq0TQ)
