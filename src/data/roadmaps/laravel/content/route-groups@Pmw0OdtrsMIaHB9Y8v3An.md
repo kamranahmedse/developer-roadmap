@@ -1,3 +1,7 @@
 # Route Groups
 
 Route groups provide a way to share route attributes, such as middleware, namespaces, prefixes, and subdomain restrictions, across a large number of routes without needing to define them individually for each route. This allows for cleaner and more organized route definitions, reducing redundancy and improving maintainability. They essentially bundle common configurations for a set of routes.
+
+Visit the following resources to learn more:
+
+- [@official@Route Groups](https://laravel.com/docs/12.x/routing#route-groups)
