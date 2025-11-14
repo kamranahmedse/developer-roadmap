@@ -4,4 +4,4 @@ Named routes provide a convenient way to refer to routes throughout your applica
 
 Visit the following resources to learn more:
 
-- [@official@View Routes](https://laravel.com/docs/12.x/routing#named-routes)
+- [@official@Named Routes](https://laravel.com/docs/12.x/routing#named-routes)
