@@ -20,6 +20,30 @@ export default defineConfig({
       status: 301,
       destination: '/ai',
     },
+    '/best-practices': {
+      status: 301,
+      destination:'/roadmaps'
+    },
+    '/best-practices/aws': {
+      status: 301,
+      destination:'/aws-best-practices'
+    },
+    '/best-practices/backend-performance': {
+      status: 301,
+      destination:'/backend-performance-best-practices'
+    },
+    '/best-practices/frontend-performance': {
+      status: 301,
+      destination:'/frontend-performance-best-practices'
+    },
+    '/best-practices/api-security': {
+      status: 301,
+      destination:'/api-security-best-practices'
+    },
+    '/best-practices/code-review': {
+      status: 301,
+      destination:'/code-review-best-practices'
+    },
   },
   vite: {
     server: {
