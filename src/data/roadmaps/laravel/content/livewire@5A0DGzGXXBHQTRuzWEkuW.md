@@ -5,6 +5,6 @@ Livewire starter kits in Laravel provide a pre-configured foundation for buildin
 Visit the following resources to learn more:
 
 - [@official@Laravel Livewire](https://livewire.laravel.com/)
+- [@official@Livewire - Laravel Docs](https://laravel.com/docs/frontend#livewire)
 - [@opensource@Livewire](https://github.com/livewire/livewire)
 - [@video@Laravel Livewire Crash Course #1 - Introduction & Setup](https://www.youtube.com/watch?v=c8pPND7kclg)
-- [@official@Livewire - Laravel Docs](https://laravel.com/docs/12.x/frontend#livewire)

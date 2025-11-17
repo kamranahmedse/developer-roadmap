@@ -4,6 +4,6 @@ In Laravel, the request-response flow begins when a user sends a request to the 
 
 Visit the following resources to learn more:
 
-- [@official@Request Lifecycle](https://laravel.com/docs/12.x/lifecycle)
+- [@official@Request Lifecycle](https://laravel.com/docs/lifecycle)
 - [@article@Understanding the Laravel Request/Response Lifecycle: A Simple Guide for Developers](https://chandankshaw.medium.com/understanding-the-laravel-request-response-lifecycle-a-simple-guide-for-developers-e6afdf887a6d)
 - [@article@Requests and Responses](https://www.fastcomet.com/tutorials/laravel/requests-and-responses)
