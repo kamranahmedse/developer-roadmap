@@ -1,9 +1,8 @@
 import { queryOptions } from '@tanstack/react-query';
 import { FetchError, httpGet } from '../lib/query-http';
-import type { Node, Edge } from '@roadmapsh/editor';
 import { DateTime } from 'luxon';
 
-export const allowedOfficialRoadmapType = ['skill', 'role'] as const;
+export const allowedOfficialRoadmapType = ['skill', 'role', 'best-practice'] as const;
 export type AllowedOfficialRoadmapType =
   (typeof allowedOfficialRoadmapType)[number];
 

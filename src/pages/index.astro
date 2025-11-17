@@ -6,7 +6,6 @@ import FeaturedItems from '../components/FeaturedItems/FeaturedItems.astro';
 import { FeaturedVideoList } from '../components/FeaturedVideos/FeaturedVideoList';
 import HeroSection from '../components/HeroSection/HeroSection.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getAllBestPractices } from '../lib/best-practice';
 import { getAllVideos } from '../lib/video';
 import { listOfficialGuides } from '../queries/official-guide';
 import {
@@ -17,7 +16,9 @@ import {
 const roadmaps = await listOfficialRoadmaps();
 const roleRoadmaps = roadmaps.filter((roadmap) => roadmap.type === 'role');
 const skillRoadmaps = roadmaps.filter((roadmap) => roadmap.type === 'skill');
-const bestPractices = await getAllBestPractices();
+const bestPractices = roadmaps.filter(
+  (roadmap) => roadmap.type === 'best-practice',
+);
 
 export const projectGroups = [
   {
@@ -96,14 +97,17 @@ const videos = await getAllVideos();
 
     <FeaturedItems
       heading='Best Practices'
-      featuredItems={bestPractices.map((bestPractice) => ({
-        text: bestPractice.frontmatter.briefTitle,
-        url: `/best-practices/${bestPractice.id}`,
-        isNew: bestPractice.frontmatter.isNew,
-        isUpcoming: bestPractice.frontmatter.isUpcoming,
-      }))}
-    />
+      featuredItems={bestPractices.map((bestPracticeItem) => {
+        const isNew = isNewRoadmap(bestPracticeItem.createdAt);
 
+        return {
+          text: bestPracticeItem.title.card,
+          url: `/${bestPracticeItem.slug}`,
+          isNew,
+        };
+      })}
+      showCreateRoadmap={false}
+    />
     <div class='grid grid-cols-1 gap-7 bg-gray-50 py-7 sm:gap-16 sm:py-16'>
       <FeaturedGuideList
         heading='Guides'

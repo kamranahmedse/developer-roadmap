@@ -15,7 +15,7 @@ import type { BuiltInRoadmap } from '../components/Dashboard/PersonalDashboard';
 const roadmaps = await listOfficialRoadmaps();
 const roleRoadmaps = roadmaps.filter((roadmap) => roadmap.type === 'role');
 const skillRoadmaps = roadmaps.filter((roadmap) => roadmap.type === 'skill');
-const bestPractices = await getAllBestPractices();
+const bestPractices = roadmaps.filter(roadmap => roadmap.type === 'best-practice');
 const questionGroups = await getAllQuestionGroups();
 const guides = await listOfficialGuides();
 const videos = await getAllVideos();
@@ -48,15 +48,18 @@ const enrichedSkillRoadmaps: BuiltInRoadmap[] = skillRoadmaps.map((roadmap) => {
     },
   };
 });
-
-const enrichedBestPractices = bestPractices.map((bestPractice) => {
-  const { frontmatter } = bestPractice;
-
+const enrichedBestPracticeRoadmaps: BuiltInRoadmap[] = bestPractices.map((roadmap) => {
   return {
-    id: bestPractice.id,
-    url: `/best-practices/${bestPractice.id}`,
-    title: frontmatter.briefTitle,
-    description: frontmatter.briefDescription,
+    id: roadmap.slug,
+    url: `/${roadmap.slug}`,
+    title: roadmap.title.card,
+    description: roadmap.description,
+    relatedRoadmapIds: roadmap.relatedRoadmaps,
+    renderer: 'editor',
+    isNew: isNewRoadmap(roadmap.createdAt),
+    metadata: {
+      tags: ['best-practice-roadmap'],
+    },
   };
 });
 ---
@@ -65,7 +68,7 @@ const enrichedBestPractices = bestPractices.map((bestPractice) => {
   <DashboardPage
     builtInRoleRoadmaps={enrichedRoleRoadmaps}
     builtInSkillRoadmaps={enrichedSkillRoadmaps}
-    builtInBestPractices={enrichedBestPractices}
+    builtInBestPractices={enrichedBestPracticeRoadmaps}
     questionGroups={questionGroups}
     guides={guides.slice(0, 10)}
     videos={videos.slice(0, 10)}
