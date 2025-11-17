@@ -22,32 +22,27 @@ export default defineConfig({
     },
     '/best-practices': {
       status: 301,
-      destination:'/roadmaps'
+      destination: '/roadmaps',
     },
     '/best-practices/aws': {
       status: 301,
-      destination:'/aws-best-practices'
+      destination: '/aws-best-practices',
     },
     '/best-practices/backend-performance': {
       status: 301,
-      destination:'/backend-performance-best-practices'
+      destination: '/backend-performance-best-practices',
     },
     '/best-practices/frontend-performance': {
       status: 301,
-      destination:'/frontend-performance-best-practices'
+      destination: '/frontend-performance-best-practices',
     },
     '/best-practices/api-security': {
       status: 301,
-      destination:'/api-security-best-practices'
+      destination: '/api-security-best-practices',
     },
     '/best-practices/code-review': {
       status: 301,
-      destination:'/code-review-best-practices'
-    },
-  },
-  vite: {
-    server: {
-      allowedHosts: ['roadmap.sh', 'port3k.kamranahmed.info'],
+      destination: '/code-review-best-practices',
     },
   },
   markdown: {
@@ -95,6 +90,9 @@ export default defineConfig({
     plugins: [tailwindcss()],
     ssr: {
       noExternal: [/^@roadmapsh\/editor.*$/],
+    },
+    server: {
+      allowedHosts: ['roadmap.sh', 'port3k.kamranahmed.info'],
     },
   },
 });

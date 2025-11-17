@@ -453,12 +453,12 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
                   <HeroRoadmap
                     key={roadmap.id}
                     resourceId={roadmap.id}
-                    resourceType="best-practice"
+                    resourceType="roadmap"
                     resourceTitle={roadmap.title}
                     isFavorite={roadmap.isFavorite}
                     percentageDone={percentageDone}
                     isNew={roadmap.isNew}
-                    url={`/best-practices/${roadmap.id}`}
+                    url={`/${roadmap.id}`}
                   />
                 );
               })}
