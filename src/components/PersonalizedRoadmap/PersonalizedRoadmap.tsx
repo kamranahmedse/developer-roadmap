@@ -208,7 +208,7 @@ export function PersonalizedRoadmap(props: PersonalizedRoadmapProps) {
         />
       ) : (
         <button
-          className="group hidden sm:inline-flex items-center gap-1.5 border-b-2 border-b-transparent pb-2.5 text-sm font-normal text-gray-500 transition-colors hover:text-black"
+          className="group hidden items-center gap-1.5 border-b-2 border-b-transparent pb-2.5 text-sm font-normal text-gray-500 transition-colors hover:text-black sm:inline-flex"
           onClick={() => {
             if (!isLoggedIn()) {
               showLoginPopup();

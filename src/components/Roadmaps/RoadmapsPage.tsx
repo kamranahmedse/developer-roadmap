@@ -196,7 +196,12 @@ const groups: GroupType[] = [
         title: 'JavaScript',
         link: '/javascript',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps', 'Mobile Development', 'Absolute Beginners'],
+        otherGroups: [
+          'Web Development',
+          'DevOps',
+          'Mobile Development',
+          'Absolute Beginners',
+        ],
       },
       {
         title: 'Kotlin',

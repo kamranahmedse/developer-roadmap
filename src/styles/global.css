@@ -190,7 +190,7 @@ a > code:before {
 }
 
 /* Hide scrollbars */
-.scrollbar-none {
+.scrollbar-none { 
   scrollbar-width: none;
   -ms-overflow-style: none;
 }

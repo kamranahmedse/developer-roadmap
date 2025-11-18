@@ -96,10 +96,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
             </span>
           </h2>
         )}
-        <div
-          className="bg-gray-100 p-3 text-base [&>h2]:mt-5 [&>h2]:mb-2 [&>h2]:text-[17px] [&>h2]:font-medium [&>p]:mb-3 [&>p]:leading-relaxed [&>p]:font-normal [&>p]:text-gray-800 [&>p:last-child]:mb-0 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>ul>li]:mb-2 [&>ul>li]:font-normal"
-          // dangerouslySetInnerHTML={{ __html: markdownToHtml(answer, false) }}
-        >
+        <div className="bg-gray-100 p-3 text-base [&>h2]:mt-5 [&>h2]:mb-2 [&>h2]:text-[17px] [&>h2]:font-medium [&>p]:mb-3 [&>p]:leading-relaxed [&>p]:font-normal [&>p]:text-gray-800 [&>p:last-child]:mb-0 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>ul>li]:mb-2 [&>ul>li]:font-normal">
           {guideRenderer.render(answer)}
         </div>
       </div>
