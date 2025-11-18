@@ -23,15 +23,15 @@ const nodes = [
   },
   {
     id: 'GAjuWyJl9CI1nqXBp6XCf',
-    text: 'AI Agents > LLM Fundamentals > Model Mechanis > Tokenization',
+    text: 'AI Agents > LLM Fundamentals > Model Mechanism > Tokenization',
   },
   {
     id: 'dyn1LSioema-Bf9lLTgUZ',
-    text: 'AI Agents > LLM Fundamentals > Model Mechanis > Context Windows',
+    text: 'AI Agents > LLM Fundamentals > Model Mechanism > Context Windows',
   },
   {
     id: '1fiWPBV99E2YncqdCgUw2',
-    text: 'AI Agents > LLM Fundamentals > Model Mechanis > Token Based Pricing',
+    text: 'AI Agents > LLM Fundamentals > Model Mechanism > Token Based Pricing',
   },
   {
     id: 'L1zL1GzqjSAjF06pIIXhy',
