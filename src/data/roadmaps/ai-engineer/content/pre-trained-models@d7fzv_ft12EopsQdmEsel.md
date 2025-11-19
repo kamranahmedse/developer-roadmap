@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Pre-trained Models: Past, Present and Future](https://www.sciencedirect.com/science/article/pii/S2666651021000231)
 - [@video@Transforming Language with Generative Pre-trained Transformers (GPT)](https://www.youtube.com/watch?v=bdICz_sBI34)
-- [@article@Pre-trained Models: Past, Present and Future](https://www.sciencedirect.com/science/article/pii/S2666651021000231)
