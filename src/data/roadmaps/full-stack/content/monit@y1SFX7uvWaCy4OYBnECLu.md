@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Monit](https://mmonit.com/monit/)
 - [@official@Monit Documentation](https://mmonit.com/monit/documentation/)
-- [@video@Monit - Opensource Self Healing Server Monitoring](https://www.youtube.com/watch?v=3cA5lNje1Ow)
