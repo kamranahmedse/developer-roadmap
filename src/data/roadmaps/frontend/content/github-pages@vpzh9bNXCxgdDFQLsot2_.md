@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [@article@Getting Started with GitHub Pages](https://www.freecodecamp.org/news/what-is-github-pages/)
 - [@video@GitHub Pages Tutorial - Host a Website for Free](https://www.youtube.com/watch?v=8hrJ4oN1u_8)
 - [@video@GitHub Pages - Full Tutorial](https://www.youtube.com/watch?v=o5g-lUuFgpg)
-- [@feed@Explore top posts about GitHub](https://app.daily.dev/tags/github?ref=roadmapsh)
