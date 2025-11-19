@@ -1,0 +1,3 @@
+# Conditional Statements in Blade Templates
+
+Conditional statements, like `if` and `else`, allow you to control the rendering of content in your Blade templates based on certain conditions. This means you can display different parts of your view depending on whether a variable is true, a user is logged in, or any other logical expression you define. These directives provide a clean and readable way to implement logic directly within your HTML markup.

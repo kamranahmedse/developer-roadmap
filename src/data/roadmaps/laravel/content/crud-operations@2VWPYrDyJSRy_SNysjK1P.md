@@ -1,0 +1,3 @@
+# CRUD Operations in Eloquent ORM
+
+CRUD operations stand for Create, Read, Update, and Delete. These are the four basic functions of persistent storage, and they represent the fundamental operations performed on data within a database. In the context of Eloquent ORM, CRUD operations are simplified through intuitive methods that allow developers to interact with database tables as if they were working with PHP objects.

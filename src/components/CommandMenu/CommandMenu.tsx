@@ -79,13 +79,6 @@ const defaultPages: PageType[] = [
     isProtected: true,
   },
   {
-    id: 'best-practices',
-    url: '/best-practices',
-    title: 'Best Practices',
-    group: 'Pages',
-    icon: <BestPracticesIcon className="mr-2 h-4 w-4 stroke-2" />,
-  },
-  {
     id: 'questions',
     url: '/questions',
     title: 'Questions',

@@ -1,0 +1,3 @@
+# Eloquent Relationships
+
+Eloquent relationships define how different database tables are connected to each other. They allow you to easily retrieve related data from multiple tables using intuitive methods. For example, a user might have many posts, or a post might belong to a single category. Eloquent supports various relationship types like one-to-one, one-to-many, many-to-many, and polymorphic relationships, enabling you to model complex data structures and retrieve related data with ease.

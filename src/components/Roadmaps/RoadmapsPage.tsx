@@ -55,7 +55,7 @@ export type GroupType = {
   roadmaps: {
     title: string;
     link: string;
-    type: 'role' | 'skill';
+    type: 'role' | 'skill' | 'best-practice';
     otherGroups?: AllowGroupNames[];
   }[];
 };
@@ -169,6 +169,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Laravel',
+        link: '/laravel',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
     ],
   },
   {
@@ -190,13 +196,24 @@ const groups: GroupType[] = [
         title: 'JavaScript',
         link: '/javascript',
         type: 'skill',
-        otherGroups: ['Web Development', 'DevOps', 'Mobile Development', 'Absolute Beginners'],
+        otherGroups: [
+          'Web Development',
+          'DevOps',
+          'Mobile Development',
+          'Absolute Beginners',
+        ],
       },
       {
         title: 'Kotlin',
         link: '/kotlin',
         type: 'skill',
         otherGroups: ['Web Development', 'DevOps', 'Mobile Development'],
+      },
+      {
+        title: 'Swift & Swift-UI',
+        link: '/swift-ui',
+        type: 'skill',
+        otherGroups: ['Mobile Development'],
       },
       {
         title: 'TypeScript',
@@ -250,6 +267,12 @@ const groups: GroupType[] = [
         link: '/sql',
         type: 'skill',
         otherGroups: ['Web Development', 'Databases', 'DevOps'],
+      },
+      {
+        title: 'Shell / Bash',
+        link: '/shell-bash',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps'],
       },
     ],
   },
@@ -520,6 +543,41 @@ const groups: GroupType[] = [
       },
     ],
   },
+  {
+    group: 'Best Practices',
+    roadmaps: [
+      {
+        title: 'Backend Performance',
+        link: '/backend-performance-best-practices',
+        type: 'best-practice',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'Frontend Performance',
+        link: '/frontend-performance-best-practices',
+        type: 'best-practice',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'Code Review',
+        link: '/code-review-best-practices',
+        type: 'best-practice',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'AWS',
+        link: '/aws-review-best-practices',
+        type: 'best-practice',
+        otherGroups: ['Web Development', 'DevOps'],
+      },
+      {
+        title: 'API Security',
+        link: '/api-security-best-practices',
+        type: 'best-practice',
+        otherGroups: ['Web Development'],
+      },
+    ],
+  },
 ];
 
 const roleRoadmaps = groups.flatMap((group) =>
@@ -527,6 +585,9 @@ const roleRoadmaps = groups.flatMap((group) =>
 );
 const skillRoadmaps = groups.flatMap((group) =>
   group.roadmaps.filter((roadmap) => roadmap.type === 'skill'),
+);
+const bestPracticeRoadmaps = groups.flatMap((group) =>
+  group.roadmaps.filter((roadmap) => roadmap.type === 'best-practice'),
 );
 
 const allGroups = [
@@ -537,6 +598,10 @@ const allGroups = [
   {
     group: 'Skill Based Roadmaps',
     roadmaps: skillRoadmaps,
+  },
+  {
+    group: 'Best Practices',
+    roadmaps: bestPracticeRoadmaps,
   },
 ];
 

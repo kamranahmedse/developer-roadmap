@@ -1,0 +1,3 @@
+# Logging Basics
+
+Logging is the process of recording events that occur during the execution of a software application. These events, often called logs, provide valuable insights into the application's behavior, helping developers track errors, monitor performance, and understand user activity. Logs typically include timestamps, severity levels (e.g., debug, info, error), and contextual information about the event.

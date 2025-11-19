@@ -1,0 +1,3 @@
+# Eloquent Casts and Accessors
+
+Eloquent models in Laravel provide a way to interact with your database tables in an object-oriented manner. Casts allow you to modify the data type of an attribute when it's retrieved from or stored in the database. Accessors, on the other hand, let you format or modify attribute values when you access them, providing a convenient way to present data in a specific format without altering the underlying database value.

@@ -1,0 +1,3 @@
+# Authentication in Laravel
+
+Authentication is the process of verifying the identity of a user. It involves confirming that a user is who they claim to be, typically by checking their credentials (like a username and password) against stored records. Laravel provides built-in tools and features to simplify this process, making it easier to secure your application and control access to protected resources.

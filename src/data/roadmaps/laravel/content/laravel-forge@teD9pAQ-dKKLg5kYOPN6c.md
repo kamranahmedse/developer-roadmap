@@ -1,0 +1,3 @@
+# Laravel Forge
+
+Laravel Forge is a web-based platform designed to simplify the deployment and management of PHP applications, particularly those built with Laravel. It automates server provisioning, configuration, and deployment processes, allowing developers to focus on writing code rather than managing infrastructure. Forge supports various cloud providers and offers features like server monitoring, database management, and SSL certificate installation.

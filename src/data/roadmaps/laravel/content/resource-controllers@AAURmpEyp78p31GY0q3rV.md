@@ -1,0 +1,3 @@
+# Resource Controllers
+
+Resource controllers provide a standardized way to manage CRUD (Create, Read, Update, Delete) operations for a specific model. They group related request handling logic into a single class, making your code more organized and easier to maintain by mapping conventional HTTP verbs (like GET, POST, PUT, DELETE) to specific controller methods. This approach promotes a RESTful architecture for your application.

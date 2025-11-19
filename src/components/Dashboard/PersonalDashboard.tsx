@@ -453,12 +453,12 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
                   <HeroRoadmap
                     key={roadmap.id}
                     resourceId={roadmap.id}
-                    resourceType="best-practice"
+                    resourceType="roadmap"
                     resourceTitle={roadmap.title}
                     isFavorite={roadmap.isFavorite}
                     percentageDone={percentageDone}
                     isNew={roadmap.isNew}
-                    url={`/best-practices/${roadmap.id}`}
+                    url={`/${roadmap.id}`}
                   />
                 );
               })}
@@ -470,7 +470,9 @@ export function PersonalDashboard(props: PersonalDashboardProps) {
       <div className="grid grid-cols-1 gap-5 bg-gray-50 px-4 py-5 sm:gap-16 sm:px-0 sm:py-16">
         <FeaturedGuideList
           heading="Guides"
-          guides={guides.slice(0, 15)}
+          guides={guides
+            .filter((guide) => guide.roadmapId !== 'questions')
+            .slice(0, 15)}
           questions={guides
             .filter((guide) => guide.roadmapId === 'questions')
             .slice(0, 15)}

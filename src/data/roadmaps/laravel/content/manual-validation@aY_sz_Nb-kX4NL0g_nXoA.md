@@ -1,0 +1,3 @@
+# Manual Validation
+
+Manual validation in Laravel involves directly interacting with the validator class to validate data. Instead of relying on request objects or form requests, you create a validator instance, define the validation rules, and then check if the data passes these rules. This approach provides more control and flexibility, especially when dealing with complex validation scenarios or when validating data outside of a typical HTTP request.

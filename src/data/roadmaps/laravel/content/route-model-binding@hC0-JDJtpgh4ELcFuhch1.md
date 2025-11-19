@@ -1,0 +1,3 @@
+# Route Model Binding
+
+Route model binding is a way to automatically inject model instances into your route handlers based on the route parameters. Instead of manually querying the database for a model within your controller method using the ID passed in the route, Laravel can automatically resolve the model instance for you, making your code cleaner and more readable. This simplifies the process of retrieving data associated with a specific model based on the route parameters.

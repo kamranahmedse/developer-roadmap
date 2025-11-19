@@ -1,0 +1,3 @@
+# Authorization Policies
+
+Authorization Policies provide a structured way to define authorization logic for your application. They allow you to encapsulate the rules that determine whether a user is authorized to perform a specific action on a given resource. Instead of scattering authorization checks throughout your controllers and views, policies centralize this logic into dedicated classes, making your code more organized, maintainable, and testable.

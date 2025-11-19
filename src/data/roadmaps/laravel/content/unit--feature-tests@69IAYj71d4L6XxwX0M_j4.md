@@ -1,0 +1,3 @@
+# Unit and Feature Tests
+
+Unit and feature tests are automated ways to verify that your code works as expected. Unit tests focus on testing individual components or functions in isolation, ensuring each part performs its specific task correctly. Feature tests, on the other hand, test larger parts of your application, simulating user interactions and verifying that different components work together to deliver the desired functionality.

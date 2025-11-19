@@ -1,0 +1,3 @@
+# Basic Controllers
+
+Controllers are fundamental building blocks in web applications that handle incoming requests and orchestrate the application's response. They act as intermediaries between the user interface (or API endpoint) and the application's data and logic. A controller receives a request, processes it by interacting with models or other services, and then returns a response, such as a view, JSON data, or a redirect.

@@ -1,0 +1,3 @@
+# Retrieving Data and Files
+
+When a user interacts with a web application, they often send data to the server through forms or file uploads. Retrieving data involves accessing and using the information submitted by the user, such as form inputs or query parameters. Similarly, retrieving files deals with accessing and processing files that users upload to the server, allowing the application to handle and store these files appropriately.

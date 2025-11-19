@@ -1,0 +1,3 @@
+# Queues & Jobs
+
+Queues and jobs provide a mechanism to defer the processing of time-consuming tasks, such as sending emails, processing large datasets, or performing complex calculations, to a later time. Instead of executing these tasks immediately within a web request, they are pushed onto a queue. A worker process then retrieves and executes these jobs in the background, freeing up the web server to handle incoming requests more efficiently and improving the application's responsiveness.

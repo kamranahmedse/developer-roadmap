@@ -1,0 +1,3 @@
+# Layouts in Blade
+
+Layouts provide a consistent structure for your application's pages. They define the common elements like headers, footers, sidebars, and overall page structure, allowing you to avoid repeating the same HTML code across multiple views. By using layouts, you can create a template that child views can then extend and populate with their specific content, promoting code reusability and maintainability.

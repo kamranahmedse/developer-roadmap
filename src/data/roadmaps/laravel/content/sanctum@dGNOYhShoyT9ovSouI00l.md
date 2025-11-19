@@ -1,0 +1,3 @@
+# Sanctum
+
+Sanctum is a lightweight authentication system primarily designed for single-page applications (SPAs), mobile applications, and simple APIs. It provides a straightforward method for authenticating users using API tokens, allowing them to access protected routes and resources. Sanctum focuses on issuing API tokens that are scoped to specific abilities, offering a more granular control over user permissions compared to traditional session-based authentication.

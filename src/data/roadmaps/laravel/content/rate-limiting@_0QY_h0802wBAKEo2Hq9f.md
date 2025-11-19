@@ -1,0 +1,3 @@
+# Rate Limiting
+
+Rate limiting is a technique used to control the number of requests a user or client can make to a server within a specific time period. This helps to prevent abuse, protect resources, and maintain the stability and performance of an application by preventing it from being overwhelmed by excessive requests. It essentially sets a threshold for how often a particular action can be performed.

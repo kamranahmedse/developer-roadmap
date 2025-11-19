@@ -81,9 +81,6 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
             <SquareUserRound className="h-4 w-4 stroke-[2.5px] text-slate-400 group-hover:text-white" />
             My Profile
           </span>
-          <span className="rounded-xs bg-yellow-300 px-1 text-xs tracking-wide text-black uppercase">
-            New
-          </span>
         </a>
       </li>
       <li className="px-1">

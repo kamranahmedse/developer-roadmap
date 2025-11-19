@@ -1,0 +1,3 @@
+# Notifications
+
+Notifications provide a way to alert users about events that occur in your application, such as when a task is completed, a comment is posted, or a new follower is gained. These alerts can be delivered through various channels, including email, SMS, database entries, or even custom channels, allowing for flexible and tailored communication with users. The system typically involves defining notification classes that represent specific events and then sending these notifications to the appropriate recipients.

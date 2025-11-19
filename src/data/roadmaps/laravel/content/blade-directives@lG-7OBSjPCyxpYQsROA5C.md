@@ -1,0 +1,3 @@
+# Blade Directives
+
+Blade directives are shortcuts to common PHP control structures, like `if` statements and loops, within Laravel's Blade templating engine. They provide a cleaner and more readable syntax for embedding PHP logic directly into your HTML views. Instead of writing verbose PHP code, you can use directives like `@if`, `@foreach`, and `@csrf` to control the flow and output of your templates.
