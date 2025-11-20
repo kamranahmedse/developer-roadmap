@@ -1,1 +1,3 @@
-# Success vs failure 
+# Exit Codes: Success vs. Failure
+
+Exit codes are numerical values returned by a program or script upon completion, signaling whether it executed successfully or encountered an error. A zero (0) exit code typically indicates success, while any non-zero value signifies failure, with different non-zero codes often representing specific types of errors. These codes are crucial for scripting and automation, allowing scripts to make decisions based on the outcome of previous commands.

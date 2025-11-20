@@ -1,1 +1,3 @@
 # Input/Output
+
+Input/Output (I/O) refers to the communication between a computer program and the outside world. This involves receiving data (input) from sources like the keyboard, files, or other programs, and sending data (output) to destinations such as the terminal, files, or other programs. In essence, it's how a program interacts with its environment to receive instructions and display results.
