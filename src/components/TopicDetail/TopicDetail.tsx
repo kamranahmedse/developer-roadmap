@@ -48,6 +48,7 @@ import { PaidResourceDisclaimer } from './PaidResourceDisclaimer.tsx';
 import { ResourceListSeparator } from './ResourceListSeparator.tsx';
 import { TopicDetailAI } from './TopicDetailAI.tsx';
 import { TopicDetailLink } from './TopicDetailLink.tsx';
+import { TextToSpeechButton } from '../TextToSpeech/TextToSpeechButton';
 import {
   TopicDetailsTabs,
   type AllowedTopicDetailsTabs,
@@ -485,13 +486,23 @@ export function TopicDetail(props: TopicDetailProps) {
               })}
             >
               <div className="flex justify-between">
-                {shouldShowAiTab && (
-                  <TopicDetailsTabs
-                    activeTab={activeTab}
-                    setActiveTab={setActiveTab}
-                    hasAITutor={renderer === 'editor'}
-                  />
-                )}
+                <div className="flex items-center gap-2">
+                  {shouldShowAiTab && (
+                    <TopicDetailsTabs
+                      activeTab={activeTab}
+                      setActiveTab={setActiveTab}
+                      hasAITutor={renderer === 'editor'}
+                    />
+                  )}
+                  {/* TTS Button - only show on content tab when there's content */}
+                  {activeTab === 'content' && topicHtml && (
+                    <TextToSpeechButton 
+                      text={topicHtml} 
+                      size="sm"
+                      className="opacity-70 hover:opacity-100"
+                    />
+                  )}
+                </div>
                 <div
                   className={cn('flex flex-grow justify-end gap-1', {
                     'justify-between': !shouldShowAiTab,
