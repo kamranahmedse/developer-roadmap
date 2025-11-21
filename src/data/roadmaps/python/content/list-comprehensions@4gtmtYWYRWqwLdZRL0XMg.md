@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Python List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 - [@article@What Exactly are List Comprehensions in Python? - CodeGuage](https://www.codeguage.com/courses/python/lists-list-comprehensions)
-- [@article@Python List Comprehensions Quiz - CodeGuage](https://www.codeguage.com/courses/python/lists-list-comprehensions-quiz)
+- [@article@Python List Comprehensions Quiz](https://realpython.com/quizzes/list-comprehension-python/)

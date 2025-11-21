@@ -12,3 +12,4 @@ Learn more from the following resources:
 
 - [@official@How Terraform Applies a Configuration](https://developer.hashicorp.com/terraform/language/resources/behavior#how-terraform-applies-a-configuration)
 - [@official@The lifecycle Meta-Argument](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle)
+- [@Article@Terraform Resource Lifecycle Meta-Argument](https://spacelift.io/blog/terraform-resource-lifecycle)
