@@ -4,9 +4,9 @@ CSS (Cascading Style Sheets) is a language used to describe the presentation of 
 
 Visit the following resources to learn more:
 
+- [@course@Responsive Web Design Certification - Co-Learn HTML & CSS with guided projects](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
+- [@course@Web.dev by Google — Learn CSS](https://web.dev/learn/css/)
 - [@article@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/css)
 - [@video@CSS Complete Course](https://www.youtube.com/watch?v=n4R2E7O-Ngo)
 - [@video@HTML & CSS Full Course - Beginner to Pro](https://www.youtube.com/watch?v=G3e-cpL7ofc)
-- [@course@Responsive Web Design Certification - Co-Learn HTML & CSS with guided projects](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
-- [@course@Web.dev by Google — Learn CSS](https://web.dev/learn/css/)
 - [@feed@Explore top posts about CSS](https://app.daily.dev/tags/css?ref=roadmapsh)
