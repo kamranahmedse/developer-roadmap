@@ -4,9 +4,9 @@ Headless testing is when end-to-end tests are performed without loading the brow
 
 A few example cases where one may use headless browser testing include:
 
-- Automating HTML event responses, such as form submission, keyboard events, mouse-clicking, etc.
-- Web scraping
-- Generating screenshots of webpages
+*   Automating HTML event responses, such as form submission, keyboard events, mouse-clicking, etc.
+*   Web scraping
+*   Generating screenshots of webpages
 
 Visit the following resources to learn more:
 
