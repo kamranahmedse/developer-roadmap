@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@video@NPM tutorial for Beginners](https://www.youtube.com/watch?v=2V1UUhBJ62Y)
 - [@video@NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0)
 - [@feed@Explore top posts about NPM](https://app.daily.dev/tags/npm?ref=roadmapsh)
+-[@course@NPM Mastery Course](https://github.com/Leonardo-Garzon-1995/npm-mastery-course)
