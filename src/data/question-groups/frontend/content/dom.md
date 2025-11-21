@@ -1,1 +1,0 @@
-The Document Object Model (DOM) is an API for web documents. It represents the structure of an HTML web page as a tree of nodes, where each node corresponds to a part of the document (i.e. an element, an attribute, or text).

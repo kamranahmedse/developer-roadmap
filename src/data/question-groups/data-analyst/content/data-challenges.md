@@ -1,3 +1,0 @@
-Anything can happen when dealing with data, however if we're considering the most common challenges, we could include missing or inconsistent data, varying formats, lack of clear documentation, and large file sizes that strain computing resources. 
-
-To overcome these, analysts use a combination of thorough profiling, robust ETL (extract, transform, load) pipelines, modular cleaning scripts, and collaboration with data engineers or domain experts. 

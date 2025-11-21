@@ -1,1 +1,0 @@
-SARGable stands for Search Argumentable query, which uses indexes and leads to efficient queries. If a query is SARGable, the database engine quickly locates rows using indexes, avoids scanning the whole table, and improves query performance. 

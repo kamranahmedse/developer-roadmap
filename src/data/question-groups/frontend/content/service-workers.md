@@ -1,1 +1,0 @@
-Service workers are scripts that run in the background of a web application, separate from the web page’s main thread, and provide features like offline caching, push notifications, and background synchronization.
