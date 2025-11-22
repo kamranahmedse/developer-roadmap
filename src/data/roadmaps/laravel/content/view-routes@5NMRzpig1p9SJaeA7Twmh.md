@@ -4,6 +4,6 @@ View routes provide a simple way to return a view directly from a route without 
 
 Visit the following resources to learn more:
 
-- [@official@View Routes](https://laravel.com/docs/12.x/routing#view-routes)
+- [@official@View Routes](https://laravel.com/docs/routing#view-routes)
 - [@article@Basic routing & views](https://itf-laravel-11.netlify.app/laravel/basicRouting)
 - [@video@Laravel Tutorial for Beginners #2 - Routes & Views](https://www.youtube.com/watch?v=RT0DZYYE3wc)

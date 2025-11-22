@@ -4,7 +4,7 @@ Routing in Laravel determines how your application responds to client requests. 
 
 Visit the following resources to learn more:
 
-- [@official@Basic Routes](https://laravel.com/docs/12.x/routing#basic-routing)
+- [@official@Basic Routes](https://laravel.com/docs/routing#basic-routing)
 - [@article@Laravel Routing Guide – How to Create Route to Call a View](http://cloudways.com/blog/routing-in-laravel/)
 - [@article@Laravel - Routing](https://www.tutorialspoint.com/laravel/laravel_routing.htm)
 - [@video@The Basics of Routing in Laravel | Learn Laravel The Right Way](https://www.youtube.com/watch?v=pP4g0xPq0TQ)

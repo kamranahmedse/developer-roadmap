@@ -4,5 +4,5 @@ Laravel, primarily known as a backend framework, can also be effectively utilize
 
 Visit the following resources to learn more:
 
-- [@official@Laravel for Frontend](https://laravel.com/docs/12.x/frontend)
+- [@official@Laravel for Frontend](https://laravel.com/docs/frontend)
 - [@article@Integrating Laravel with Popular Frontend Frameworks: A Developer's Guide](https://dev.to/elisaray/integrating-laravel-with-popular-frontend-frameworks-a-developers-guide-4625)

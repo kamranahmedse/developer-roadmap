@@ -4,10 +4,10 @@ Laravel is a PHP web application framework that provides tools and structure for
 
 Visit the following resources to learn more:
 
+- [@course@Learn Laravel - Free Video Courses](https://laravel.com/learn)
+- [@course@[FREE] Laravel 11 For Beginners: Your First Project](https://laraveldaily.com/course/laravel-beginners)
 - [@official@Laravel](https://laravel.com/)
 - [@official@Laravel Docs](https://laravel.com/docs/master)
 - [@article@What is Laravel: core features, use cases, and advantages of the PHP framework](https://www.hostinger.com/tutorials/what-is-laravel)
-- [@course@Learn Laravel - Free Video Courses](https://laravel.com/learn)
-- [@course@[FREE] Laravel 11 For Beginners: Your First Project](https://laraveldaily.com/course/laravel-beginners)
 - [@video@Laravel 12 in 11 hours - Laravel for Beginners Full Course](https://www.youtube.com/watch?v=0M84Nk7iWkA)
 - [@video@Learn Laravel from Scratch [FULL BOOTCAMP COURSE]](https://www.youtube.com/watch?v=MOLZOXqaomM)

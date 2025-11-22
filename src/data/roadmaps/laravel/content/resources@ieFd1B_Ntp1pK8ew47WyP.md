@@ -4,4 +4,4 @@ The `resources` directory in a Laravel project is where you store your applicati
 
 Visit the following resources to learn more:
 
-- [@official@The Routes Directory](https://laravel.com/docs/12.x/structure#the-routes-directory)
+- [@official@The Routes Directory](https://laravel.com/docs/structure#the-routes-directory)

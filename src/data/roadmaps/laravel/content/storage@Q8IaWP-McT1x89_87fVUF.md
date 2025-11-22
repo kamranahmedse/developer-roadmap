@@ -4,4 +4,4 @@ The `storage` directory in Laravel is where the framework stores files generated
 
 Visit the following resources to learn more:
 
-- [@article@The Storage Directory](https://laravel.com/docs/12.x/structure#the-storage-directory)
+- [@article@The Storage Directory](https://laravel.com/docs/structure#the-storage-directory)

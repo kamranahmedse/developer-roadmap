@@ -4,4 +4,4 @@ The `database` directory in a Laravel project houses all files related to your a
 
 Visit the following resources to learn more:
 
-- [@official@The Database Directory](http://laravel.com/docs/12.x/structure#the-database-directory)
+- [@official@The Database Directory](http://laravel.com/docs/structure#the-database-directory)

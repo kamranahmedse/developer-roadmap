@@ -4,6 +4,6 @@ Installing Laravel involves setting up a new project environment where you can b
 
 Visit the following resources to learn more:
 
-- [@official@Installation](https://laravel.com/docs/12.x/installation)
+- [@official@Installation](https://laravel.com/docs/installation)
 - [@article@How To Install Laravel on Windows, macOS, and Linux](https://kinsta.com/blog/install-laravel/)
 - [@video@How to Easily Install Laravel | Laravel for Complete Beginners | Laravel Tutorial](https://www.youtube.com/watch?v=iBaM5LYgyPk)

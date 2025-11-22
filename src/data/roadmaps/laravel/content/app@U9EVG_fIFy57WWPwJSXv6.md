@@ -4,4 +4,4 @@ The `app` directory in a Laravel project houses the core logic of your applicati
 
 Visit the following resources to learn more:
 
-- [@official@App directory](https://laravel.com/docs/12.x/structure#the-root-app-directory)
+- [@official@App directory](https://laravel.com/docs/structure#the-root-app-directory)

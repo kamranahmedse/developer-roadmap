@@ -4,7 +4,7 @@ Route parameters allow you to capture segments of the URI within your route defi
 
 Visit the following resources to learn more:
 
-- [@official@Route parameters](https://laravel.com/docs/12.x/routing#route-parameters)
+- [@official@Route parameters](https://laravel.com/docs/routing#route-parameters)
 - [@article@Route Parameters and Route Model Binding](https://laraveldaily.com/lesson/laravel-beginners/route-parameters-route-model-binding)
 - [@article@Get Laravel Route Parameters in Middleware](https://www.digitalocean.com/community/tutorials/get-laravel-route-parameters-in-middleware)
 - [@video@Working with Route Parameters in Laravel | Learn Laravel The Right Way](https://www.youtube.com/watch?v=DgQEDXBcyZw)

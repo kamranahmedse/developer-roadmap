@@ -4,4 +4,4 @@ Bootstrap in a Laravel project is the initial point where the framework starts i
 
 Visit the following resources to learn more:
 
-- [@official@The Bootstrap Directory](https://laravel.com/docs/12.x/structure#the-bootstrap-directory)
+- [@official@The Bootstrap Directory](https://laravel.com/docs/structure#the-bootstrap-directory)

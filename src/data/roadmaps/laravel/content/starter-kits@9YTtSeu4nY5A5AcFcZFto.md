@@ -4,6 +4,6 @@ Starter kits provide a pre-built scaffolding for new Laravel applications, offer
 
 Visit the following resources to learn more:
 
-- [@official@Starter Kits](https://laravel.com/docs/12.x/starter-kits#main-content)
+- [@official@Starter Kits](https://laravel.com/docs/starter-kits#main-content)
 - [@article@Laravel Starter Kits List: Official and Community](https://nabilhassen.com/laravel-starter-kits-list-official-and-community)
 - [@article@10 Best Laravel Starter Kits for 2025](https://saasykit.com/blog/10-best-laravel-starter-kits-for-2025)
