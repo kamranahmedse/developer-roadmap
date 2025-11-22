@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Pointers](https://go.dev/tour/moretypes/1)
 - [@article@Understanding Value and Pointer Receivers in Golang](https://medium.com/the-bug-shots/understanding-value-and-pointer-receivers-in-golang-82dd73a3eef9)
-- [@article@Complete Guide to Pointers in Go: From Basics to Best Practices](https://www.willworth.dev/Go-Pointers)
