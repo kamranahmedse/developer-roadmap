@@ -1,0 +1,3 @@
+Go uses pointers to store addresses of other values in memory. This allows for efficient allocation of memory resources and low-level data manipulation, which directly translates into optimized low-level code by the compiler. 
+
+As a result of this, operations with pointers are fast and while they might also be more complex, and require extra care from the developer, they contribute to a proper and efficient management of memory. 

@@ -1,0 +1,3 @@
+# Implementing Request Throttling and Rate Limiting 
+
+In the context of backend performance, implementing request throttling and rate limiting acts as a defensive mechanism against system overload. These practices help in managing the flow of incoming requests to a level that the system can handle comfortably, thereby improving responsiveness and reliability. For instance, during a high traffic spike, uncontrolled, simultaneous requests might exhaust system resources leading to service disruption. However, with request throttling and rate limiting, you can control this traffic ensuring a steady performance. Furthermore, it also provides a layer of security by thwarting potential DDoS attacks which aim to flood the system with requests leading to a system crash.

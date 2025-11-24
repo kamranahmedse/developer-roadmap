@@ -1,0 +1,121 @@
+---
+import { DateTime } from 'luxon';
+import ChangelogBanner from '../components/ChangelogBanner.astro';
+import { FeaturedGuideList } from '../components/FeaturedGuides/FeaturedGuideList';
+import FeaturedItems from '../components/FeaturedItems/FeaturedItems.astro';
+import { FeaturedVideoList } from '../components/FeaturedVideos/FeaturedVideoList';
+import HeroSection from '../components/HeroSection/HeroSection.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllVideos } from '../lib/video';
+import { listOfficialGuides } from '../queries/official-guide';
+import {
+  isNewRoadmap,
+  listOfficialRoadmaps,
+} from '../queries/official-roadmap';
+
+const roadmaps = await listOfficialRoadmaps();
+const roleRoadmaps = roadmaps.filter((roadmap) => roadmap.type === 'role');
+const skillRoadmaps = roadmaps.filter((roadmap) => roadmap.type === 'skill');
+const bestPractices = roadmaps.filter(
+  (roadmap) => roadmap.type === 'best-practice',
+);
+
+export const projectGroups = [
+  {
+    title: 'Frontend',
+    id: 'frontend',
+  },
+  {
+    title: 'Backend',
+    id: 'backend',
+  },
+  {
+    title: 'DevOps',
+    id: 'devops',
+  },
+];
+
+const allGuides = await listOfficialGuides();
+const questionGuides = allGuides.filter(
+  (guide) => guide.roadmapId === 'questions',
+);
+const guides = allGuides.filter((guide) => guide.roadmapId !== 'questions');
+
+const videos = await getAllVideos();
+---
+
+<BaseLayout
+  title='Developer Roadmaps - roadmap.sh'
+  description={'Community driven roadmaps, articles and guides for developers to grow in their career.'}
+  permalink={'/'}
+>
+  <div slot='ad-slot-script'></div>
+  <div slot='ad-slot'></div>
+
+  <div class='bg-linear-to-b from-slate-900 to-black'>
+    <HeroSection />
+
+    <FeaturedItems
+      heading='Role-based Roadmaps'
+      featuredItems={roleRoadmaps.map((roadmapItem) => {
+        const isNew = isNewRoadmap(roadmapItem.createdAt);
+
+        return {
+          text: roadmapItem.title.card,
+          url: `/${roadmapItem.slug}`,
+          isNew,
+        };
+      })}
+      showCreateRoadmap={true}
+    />
+
+    <FeaturedItems
+      heading='Skill-based Roadmaps'
+      featuredItems={skillRoadmaps.map((roadmapItem) => {
+        const isNew = isNewRoadmap(roadmapItem.createdAt);
+
+        return {
+          text:
+            roadmapItem.title.card === 'Go'
+              ? 'Go Roadmap'
+              : roadmapItem.title.card.replace('Software Design', 'Design'),
+          url: `/${roadmapItem.slug}`,
+          isNew,
+        };
+      })}
+      showCreateRoadmap={true}
+    />
+
+    <FeaturedItems
+      heading='Project Ideas'
+      allowBookmark={false}
+      featuredItems={projectGroups.map((projectGroup) => ({
+        text: projectGroup.title,
+        url: `${projectGroup.id}/projects`,
+      }))}
+    />
+
+    <FeaturedItems
+      heading='Best Practices'
+      featuredItems={bestPractices.map((bestPracticeItem) => {
+        const isNew = isNewRoadmap(bestPracticeItem.createdAt);
+
+        return {
+          text: bestPracticeItem.title.card,
+          url: `/${bestPracticeItem.slug}`,
+          isNew,
+        };
+      })}
+      showCreateRoadmap={false}
+    />
+    <div class='grid grid-cols-1 gap-7 bg-gray-50 py-7 sm:gap-16 sm:py-16'>
+      <FeaturedGuideList
+        heading='Guides'
+        guides={guides.slice(0, 7)}
+        questions={questionGuides.slice(0, 7)}
+      />
+      <FeaturedVideoList heading='Videos' videos={videos.slice(0, 7)} />
+    </div>
+  </div>
+  <ChangelogBanner slot='changelog-banner' />
+</BaseLayout>

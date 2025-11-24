@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CustomRoadmap } from '../../components/CustomRoadmap/CustomRoadmap';
+import { SkeletonRoadmapHeader } from '../../components/CustomRoadmap/SkeletonRoadmapHeader';
+import Loader from '../../components/Loader.astro';
+import ProgressHelpPopup from '../../components/ProgressHelpPopup.astro';
+import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+import Icon from "../../components/AstroIcon.astro";
+---
+
+<SkeletonLayout title='Roadmaps' noIndex={true}>
+  <div class='relative flex min-h-[550px] flex-col'>
+    <div data-roadmap-loader class='flex w-full grow flex-col'>
+      <div class='flex grow items-center justify-center'>
+        <Loader />
+      </div>
+    </div>
+    <CustomRoadmap isEmbed={true} client:only='react' />
+
+    <div class='fixed bottom-5 right-4'>
+      <a
+        target='_blank'
+        class='rounded-md bg-gray-600 py-2 pr-2 pl-1.5 text-white hover:bg-black flex items-center gap-0.5'
+        href='https://roadmap.sh'
+      >
+        <Icon icon='logo' class="h-5" />
+        roadmap.sh
+      </a>
+    </div>
+  </div>
+</SkeletonLayout>

@@ -1,0 +1,3 @@
+Data visualization plays a vital role in making data accessible and understandable by turning raw numbers into visual formats that reveal trends, correlations, and outliers. After all, it helps analysts explore data by summarizing endless rows of values into simple representations that can communicate findings effectively to non-technical stakeholders. 
+
+Common tools for this purpose include Excel or Google Spreadsheets for quick visuals, Tableau and Power BI for interactive dashboards, and Python libraries like Matplotlib and Seaborn for custom plots. 

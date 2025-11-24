@@ -1,0 +1,8 @@
+The following is a high-level overview of how session management works for web applications:
+
+- **The session is created.** This happens with the first interaction with the system by the user (during log-in). The backend of your app will create a unique session ID that will be stored and returned to the user to use in future requests.
+- **Session information storage.** The session data needs to be stored somewhere. Whether it’s in-memory, or inside a database, it needs to be indexed by the session ID from the previous point. Here the best option is to use a database (ideally something like Redis with high I/O performance) so that the services can be scaled independently from the session data.
+- **The session ID is sent to the client.** The most common way of doing this is through cookies. The backend can set up a cookie with the session ID and the frontend can read it securely and use that ID however it needs to.
+- **Client sends the session ID.** After the ID is created, the client application will identify itself with the backend using this ID on every request.
+- **Accessing the session data in the backend.** The backend will access the stored session data using the session ID received from the client.
+- **Session is closed.** After a while, or perhaps through a user action, the session ID will be deleted, which will cause the session data to be lost (or removed from the DB). This effectively ends the interactions between the client and the server as part of the existing session.

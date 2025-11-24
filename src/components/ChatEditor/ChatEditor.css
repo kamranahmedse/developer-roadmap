@@ -1,0 +1,25 @@
+.chat-editor .tiptap p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.chat-editor .tiptap p:first-child.is-empty::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.chat-editor .tiptap [data-type='variable'] {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 2px 4px;
+  border-radius: 8px;
+  background-color: #f0f5ff;
+  color: #2c5df1;
+}

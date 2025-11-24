@@ -1,0 +1,94 @@
+---
+import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import { EmptyProjects } from '../../components/Projects/EmptyProjects';
+import { ProjectsList } from '../../components/Projects/ProjectsList';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { projectApi } from '../../api/project';
+import { officialRoadmapDetails } from '../../queries/official-roadmap';
+import { listOfficialProjects } from '../../queries/official-project';
+
+export const prerender = false;
+
+interface Params extends Record<string, string | undefined> {
+  roadmapId: string;
+}
+
+const { roadmapId } = Astro.params as Params;
+const roadmapData = await officialRoadmapDetails(roadmapId);
+if (!roadmapData) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+
+// update og for projects
+const ogImageUrl =
+  roadmapData?.openGraph?.image ||
+  getOpenGraphImageUrl({
+    group: 'roadmap',
+    resourceId: roadmapId,
+  });
+
+const descriptionNoun: Record<string, string> = {
+  'AI and Data Scientist': 'AI and Data Science',
+  'Game Developer': 'Game Development',
+  'Technical Writer': 'Technical Writing',
+  'Product Manager': 'Product Management',
+};
+
+const title = `${roadmapData.title.card} Projects`;
+const description = `Project ideas to take you from beginner to advanced in ${descriptionNoun[roadmapData.title.card] || roadmapData.title.card}`;
+
+// `Seeking backend projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`
+const seoTitle = `${roadmapData.title.card} Projects`;
+const nounTitle =
+  descriptionNoun[roadmapData?.title.card] || roadmapData.title.card;
+const seoDescription = `Seeking ${nounTitle.toLowerCase()} projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`;
+
+const projects = await listOfficialProjects({ roadmapId });
+const projectIds = projects.map((project) => project.slug);
+
+const projectApiClient = projectApi(Astro);
+const { response: userCounts } =
+  await projectApiClient.listProjectsUserCount(projectIds);
+---
+
+<BaseLayout
+  permalink={`/${roadmapId}/projects`}
+  title={seoTitle}
+  description={seoDescription}
+  briefTitle={roadmapData.title.card}
+  ogImageUrl={ogImageUrl}
+  keywords={roadmapData.seo.keywords}
+  noIndex={projects.length === 0}
+  resourceId={roadmapId}
+  resourceType='roadmap'
+>
+  <div class='bg-gray-50'>
+    <RoadmapHeader
+      title={title}
+      description={description}
+      partner={roadmapData.partner}
+      roadmapId={roadmapId}
+      isForkable={true}
+      activeTab='projects'
+      projectCount={projects.length}
+      coursesCount={roadmapData.courses?.length || 0}
+      hasAIChat={true}
+    />
+
+    <div class='container'>
+      {projects.length === 0 && <EmptyProjects client:load />}
+      {
+        projects.length > 0 && (
+          <ProjectsList
+            projects={projects}
+            userCounts={userCounts || {}}
+            client:load
+          />
+        )
+      }
+    </div>
+  </div>
+</BaseLayout>

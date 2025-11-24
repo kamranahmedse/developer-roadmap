@@ -1,0 +1,5 @@
+Correlation is the statistical measure that shows a relationship between two variables. When one changes, the other changes as well, positively or negatively. However, this doesn't mean that one variable causes the other to change. Causation means that one variable directly causes a change in the other. It implies a cause-and-effect relationship, not just an association. Proving causation requires deeper analysis and additional evidence.
+
+**Example:** There's a correlation between cart abandonment and uninstall rates in a shopping app. Users who abandon their carts often end up uninstalling the app shortly after. But that doesn't mean abandoning a cart causes someone to uninstall the app. The real cause might be a frustrating purchase process with too many steps. That complexity leads to both behaviors: abandoning the cart and uninstalling the app. So, while there's a correlation, you can't say it's causation without looking deeper.
+
+![Correlation vs. causation](https://assets.roadmap.sh/guest/difference-between-correlation-and-causation-j92us.png) 

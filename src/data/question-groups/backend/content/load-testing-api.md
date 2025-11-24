@@ -1,0 +1,4 @@
+- First you have to understand the goals and set up a testing environment. Ideally, your environment would closely resemble production.
+- Design and implement your tests with the tools you’ve selected (such as [JMeter](https://jmeter.apache.org/), [LoadRunner](https://www.opentext.com/products/loadrunner-enterprise) or any other).
+- Start to gradually increase the load on your tests while monitoring the performance and stability of your system.
+- Optimize your backend API and go back to the first step to redesign your tests and try again until you’re happy with the results.

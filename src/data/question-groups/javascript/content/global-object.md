@@ -1,0 +1,1 @@
+Global objects are containers for the global scope and its properties, e.g., variables. You can access its properties from anywhere within your code. In a web browser, the global object is the **"window,"** while in Node.js, it is **"global."** 

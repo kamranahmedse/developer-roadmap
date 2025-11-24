@@ -1,0 +1,5 @@
+This is a curveball question because the interviewer isn't really asking about the classic CLT. They're testing your knowledge about the Lindeberg-Feller CLT.
+
+In the classic CLT, all the variables are independent and from the same probability distribution (identically distributed). But here, the interviewer is saying: What if they're still independent but not identically distributed? Lindeberg-Feller helps in situations like this.
+
+It states that as long as the variables are independent, have finite second moments (meaning their variances aren't huge), and no single variable dominates (the Lindeberg condition), the normalized sum of those variables will still approach a normal distribution. So, even with different distributions, if those conditions hold, the average still forms a bell curve.

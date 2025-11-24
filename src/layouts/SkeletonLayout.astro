@@ -1,0 +1,17 @@
+---
+import BaseLayout, { type Props as BaseLayoutProps } from './BaseLayout.astro';
+
+export interface Props extends BaseLayoutProps {}
+
+const props = Astro.props;
+---
+
+<BaseLayout {...props}>
+  <div slot='ad-slot-script'></div>
+  <div slot='ad-slot'></div>
+
+  <div slot='course-announcement'></div>
+  <div slot='page-header'></div>
+  <slot />
+  <div slot='page-footer'></div>
+</BaseLayout>

@@ -1,0 +1,9 @@
+GitOps is a practice that uses Git as the single source of truth for infrastructure and application management. It takes advantage of Git repositories to store all configuration files and through automated processes, it ensures that both infrastructure and application configuration match the described state in the repo.
+
+The main differences between GitOps and traditional CI/CD are:
+
+- **Source of Truth**: GitOps uses Git as the single source of truth for both infrastructure and application configurations. In traditional CI/CD, configurations may be scattered across various tools and scripts.
+- **Deployment Automation**: In GitOps, changes are automatically applied by reconciling the desired state in Git with the actual state in the environment. Traditional CI/CD often involves manual steps for deployment.
+- **Declarative Approach**: GitOps emphasizes a declarative approach where the desired state is defined in Git and the system automatically converges towards it. Traditional CI/CD often uses imperative scripts to define steps and procedures to get the system to the state it should be in.
+- **Operational Model**: GitOps operates continuously, monitoring for changes in Git and applying them in near real-time. Traditional CI/CD typically follows a linear pipeline model with distinct build, test, and deploy stages.
+- **Rollback and Recovery**: GitOps simplifies rollbacks and recovery by reverting changes in the Git repository, which is a native mechanism and automatically triggers the system to revert to the previous state. Traditional CI/CD may require extra work and configuration to roll back changes.

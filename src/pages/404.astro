@@ -1,0 +1,48 @@
+---
+import Icon from '../components/AstroIcon.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { listOfficialRoadmaps } from '../queries/official-roadmap';
+
+const roadmapIds = await listOfficialRoadmaps();
+const legacyRoadmapUrls = [
+  ...roadmapIds.map((roadmap) => `/${roadmap.slug}/`),
+  '/roadmaps/',
+];
+---
+
+<BaseLayout title='Page not found' permalink={'/404'} noIndex={true}>
+  <!-- Legacy roadmap pages handling -->
+  <script slot='after-header' define:vars={{ legacyRoadmapUrls }}>
+    // If it's a roadmap page and it ends with a slash
+    // redirect to the same page without the slash
+    if (legacyRoadmapUrls.includes(window.location.pathname)) {
+      window.location.pathname = window.location.pathname.slice(0, -1);
+    }
+  </script>
+
+  <div class='bg-gray-100'>
+    <div
+      class='container flex flex-col items-center justify-center gap-7 py-10 md:flex-row md:py-32'
+    >
+      <Icon icon='construction' class='hidden md:block' />
+      <div class='text-left md:text-left'>
+        <h1
+          class='bg-linear-to-t from-black to-gray-600 bg-clip-text text-2xl leading-normal font-extrabold text-transparent md:text-5xl md:leading-normal'
+        >
+          Page not found!
+        </h1>
+        <p class='text-md mb-2 md:text-xl'>
+          Sorry, we couldn't find the page you are looking for.
+        </p>
+        <p>
+          <a class='text-blue-700 underline' href='/'>Homepage</a> &middot; <a
+            href='/roadmaps'
+            class='text-blue-700 underline'>Roadmaps</a
+          > &middot; <a href='/best-practices' class='text-blue-700 underline'
+            >Best Practices</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

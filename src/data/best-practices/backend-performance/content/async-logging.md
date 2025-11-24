@@ -1,0 +1,3 @@
+# Asynchronous Logging Mechanisms
+
+To optimise backend performance in web applications, implementing asynchronous logging mechanisms becomes crucial. It diminishes the logging overhead, thereby speeding up the execution flow of an application. For instance, the application does not need to wait for the logging data to be written on the disk, as the writing task is executed in the background, enabling the next instructions to execute without interruption. This also prevents unnecessary queuing of tasks, thereby bolstering the overall throughput of the backend operations. Netflix's open-source tool called 'Zuul' exhibits this concept where they use async logging to achieve scalability in high traffic.

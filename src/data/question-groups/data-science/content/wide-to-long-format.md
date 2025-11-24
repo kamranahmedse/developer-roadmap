@@ -1,0 +1,3 @@
+To transform data from wide format to long format, I usually use the **melt()** function in pandas to unpivot the columns into rows. It's especially useful when you have repeated measures across columns, like monthly sales or survey responses, and you want to make the data tidy for analysis or plotting.
+
+For example, if I have a DataFrame where each column represents a month, I'll keep the identifier (like product name) as is, and melt the rest so each row shows one product-month-sales combo. This makes it easier to group, filter, or feed into models.

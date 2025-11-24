@@ -1,0 +1,3 @@
+# Streaming of Large Requests/Responses
+
+In web application backend performance, the implementation of streaming large requests and responses is essential to maximize efficiency and speed. This is because streaming, unlike traditional methods, doesn't require the entire file to load before it can be accessed. This means that large data pieces are broken down into more manageable, smaller chunks which are then processed separately. Streaming minimizes memory usage, prevents potential timeouts, and reduces the latency between the client and server. For instance, when streaming a video, the user doesn't have to wait for the full video to buffer, hence enhancing user experience by delivering content faster and more seamlessly.

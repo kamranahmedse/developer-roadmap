@@ -1,0 +1,3 @@
+# Utilization of HTTP Keep-Alive for Reducing Connection Overhead 
+
+Significant enhancement in backend performance for web applications can be achieved through the utilization of HTTP keep-alive. This protocol allows for multiple HTTP requests to be sent over the same TCP connection. Typically, each new request from a client to a server would require a new TCP connection, and this process can be resource-intensive and slow as it involves a three-way handshake. With HTTP keep-alive, these overheads are greatly reduced as one connection can be reused for multiple requests. For example, in a web application where users constantly interact and request data, using this method can greatly speed up the load time and response, creating a smoother user experience.

@@ -1,0 +1,124 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import MarkdownIt from 'markdown-it-async';
+import { fileURLToPath } from 'node:url';
+import {
+  getOfficialGuide,
+  type OfficialGuideResponse,
+} from '../../queries/official-guide';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { GuideContent } from '../../components/Guide/GuideContent';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import {
+  getOfficialRoadmapTopic,
+  prepareOfficialRoadmapTopicContent,
+} from '../../queries/official-roadmap-topic';
+
+export const prerender = false;
+
+const { topicId, roadmapId } = Astro.params;
+
+if (!topicId || !roadmapId) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+
+  return Astro.rewrite('/404');
+}
+
+const isTopic = topicId?.includes('@') || topicId?.includes('/');
+let gitHubUrl = '';
+let htmlContent = '';
+let guide: OfficialGuideResponse | null = null;
+let permalink = '';
+let ogImageUrl = '';
+
+if (isTopic) {
+  // Handle nested paths by joining the segments
+  const topicPath = Array.isArray(topicId) ? topicId.join('/') : topicId;
+
+  // Get the project root directory
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+
+  // hack to make it work. TODO: Fix
+  const projectRoot = path.resolve(__dirname, '../../..').replace(/dist$/, '');
+
+  // Construct the path to the markdown file
+  let contentPath = path.join(
+    projectRoot,
+    'src',
+    'data',
+    'roadmaps',
+    roadmapId,
+    'content',
+    `${topicPath}.md`,
+  );
+
+  const nodeId = topicPath.split('@')?.[1];
+  if (!nodeId) {
+    Astro.response.status = 404;
+    Astro.response.statusText = 'Not found';
+    return Astro.rewrite('/404');
+  }
+
+  const topic = await getOfficialRoadmapTopic({
+    roadmapSlug: roadmapId,
+    nodeId,
+  });
+
+  if (topic) {
+    const md = MarkdownIt();
+    htmlContent = await md.renderAsync(
+      prepareOfficialRoadmapTopicContent(topic),
+    );
+  } else {
+    htmlContent = '<h1>Not found</h1>';
+  }
+
+  const fileWithoutBasePath = contentPath.replace(
+    /.+?\/src\/data/,
+    '/src/data',
+  );
+  gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
+} else {
+  guide = await getOfficialGuide(topicId, roadmapId);
+  if (!guide) {
+    Astro.response.status = 404;
+    Astro.response.statusText = 'Not found';
+    return Astro.rewrite('/404');
+  }
+
+  permalink = `/${roadmapId}/${topicId}`;
+  ogImageUrl =
+    guide?.featuredImage ||
+    getOpenGraphImageUrl(
+      {
+        group: 'guide',
+        resourceId: topicId,
+      },
+      {
+        roadmapId,
+      },
+    );
+}
+---
+
+{
+  isTopic ? (
+    <>
+      <div data-github-url={gitHubUrl} />
+      <Fragment set:html={htmlContent} />
+    </>
+  ) : (
+    <BaseLayout
+      title={guide?.seo?.metaTitle ?? guide?.title ?? ''}
+      description={guide?.seo?.metaDescription ?? guide?.description ?? ''}
+      permalink={permalink}
+      ogImageUrl={ogImageUrl}
+    >
+      <GuideContent guide={guide!} client:load />
+      <div slot='changelog-banner' />
+    </BaseLayout>
+  )
+}

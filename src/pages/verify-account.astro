@@ -1,0 +1,10 @@
+---
+import { TriggerVerifyAccount } from '../components/AuthenticationFlow/TriggerVerifyAccount';
+import AccountLayout from '../layouts/AccountLayout.astro';
+---
+
+<AccountLayout title='Verify account' noIndex={true}>
+  <div class='container py-16'>
+    <TriggerVerifyAccount client:load />
+  </div>
+</AccountLayout>

@@ -1,0 +1,2 @@
+* **Relational**: Stores data in structured tables with rows and columns (e.g., MySQL, PostgreSQL). Good for relationships and complex queries.  
+* **Non-relational**: Stores data in flexible formats like documents, key-value pairs, or graphs (e.g., MongoDB, Redis). Better for unstructured or hierarchical data.

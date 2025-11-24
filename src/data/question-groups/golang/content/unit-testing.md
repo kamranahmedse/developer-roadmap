@@ -1,0 +1,1 @@
+Writing unit tests using Go's built in testing package is quite straightforward and usually all code examples work as expected. Unit tests, in general, help document code behavior, making it easier to maintain and extend flexible and reusable code. 

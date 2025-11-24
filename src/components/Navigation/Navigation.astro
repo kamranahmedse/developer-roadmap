@@ -1,0 +1,132 @@
+---
+import { Fragment } from 'react';
+import { AccountStreak } from '../AccountStreak/AccountStreak';
+import Icon from '../AstroIcon.astro';
+import { NavigationDropdown } from '../NavigationDropdown';
+import { RoadmapDropdownMenu } from '../TopNavDropdowns/RoadmapDropdownMenu';
+import { AIDropdownMenu } from '../TopNavDropdowns/AIDropdownMenu';
+import { AccountDropdown } from './AccountDropdown';
+import { UpgradeProButton } from '../TopNavDropdowns/UpgradeProButton';
+---
+
+<div class='bg-slate-900 py-5 text-white sm:py-8'>
+  <nav class='container flex items-center justify-between'>
+    <div class='flex items-center gap-5'>
+      <a
+        class='flex items-center text-lg font-medium text-white'
+        href='/'
+        aria-label='roadmap.sh'
+      >
+        <Icon icon='logo' />
+      </a>
+
+      <a
+        href='/ai'
+        class='group relative inline text-gray-400 hover:text-white sm:hidden'
+      >
+        AI Tutor
+      </a>
+
+      <!-- Desktop navigation items -->
+      <div class='hidden gap-5 sm:flex sm:items-center'>
+        <NavigationDropdown client:load />
+        <RoadmapDropdownMenu client:load />
+        <AIDropdownMenu client:load />
+        <UpgradeProButton client:only='react' />
+      </div>
+    </div>
+
+    <ul class='hidden h-8 w-[172px] items-center justify-end gap-5 sm:flex'>
+      <li data-guest-required class='hidden'>
+        <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
+      </li>
+      <li class='flex items-center gap-2'>
+        <AccountStreak client:only='react' />
+        <AccountDropdown client:only='react' />
+
+        <a
+          data-guest-required
+          class='flex hidden h-8 w-28 cursor-pointer items-center justify-center rounded-full bg-linear-to-r from-blue-500 to-blue-700 px-4 py-2 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
+          href='/signup'
+        >
+          <span>Sign Up</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile Navigation Button -->
+    <button
+      class='block cursor-pointer text-gray-400 hover:text-gray-50 sm:hidden'
+      aria-label='Menu'
+      data-show-mobile-nav
+    >
+      <Icon icon='hamburger' />
+    </button>
+
+    <!-- Mobile Navigation Items -->
+    <div
+      class='fixed top-0 right-0 bottom-0 left-0 z-40 flex hidden items-center bg-slate-900'
+      data-mobile-nav
+    >
+      <button
+        data-close-mobile-nav
+        class='absolute top-6 right-6 block cursor-pointer text-gray-400 hover:text-gray-50'
+        aria-label='Close Menu'
+      >
+        <Icon icon='close' />
+      </button>
+      <ul class='flex w-full flex-col items-center gap-2 md:gap-3'>
+        <li>
+          <a href='/roadmaps' class='text-xl hover:text-blue-300 md:text-lg'>
+            Roadmaps
+          </a>
+        </li>
+        <li>
+          <a href='/ai' class='text-xl hover:text-blue-300 md:text-lg'>
+            AI Tutor
+          </a>
+        </li>
+        <li>
+          <a href='/guides' class='text-xl hover:text-blue-300 md:text-lg'>
+            Guides
+          </a>
+        </li>
+
+        <!-- Links for logged in users -->
+        <li data-auth-required class='hidden'>
+          <a href='/account' class='text-xl hover:text-blue-300 md:text-lg'>
+            Account
+          </a>
+        </li>
+        <li data-auth-required class='hidden'>
+          <button
+            data-logout-button
+            class='text-xl text-red-300 hover:text-red-400 md:text-lg'
+          >
+            Logout
+          </button>
+        </li>
+        <li>
+          <a
+            data-guest-required
+            href='/login'
+            class='hidden text-xl text-white md:text-lg'
+          >
+            Login
+          </a>
+        </li>
+        <li>
+          <a
+            data-guest-required
+            href='/signup'
+            class='hidden text-xl text-green-300 hover:text-green-400 md:text-lg'
+          >
+            Sign Up
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<script src='./navigation.ts'></script>

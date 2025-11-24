@@ -1,0 +1,7 @@
+.react-calendar-heatmap text {
+  fill: rgb(148, 163, 184) !important;
+}
+
+.react-calendar-heatmap rect:hover {
+  stroke: rgb(148, 163, 184) !important;
+}

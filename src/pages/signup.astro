@@ -1,0 +1,41 @@
+---
+import { AuthenticationForm } from '../components/AuthenticationFlow/AuthenticationForm';
+import AccountLayout from '../layouts/AccountLayout.astro';
+import {AccountTerms} from "../components/AccountTerms";
+---
+
+<AccountLayout
+  title='Signup - roadmap.sh'
+  description='Create an account to track your progress, showcase your skillset'
+  permalink={'/signup'}
+  noIndex={true}
+>
+  <div class='container'>
+    <div
+      class='mx-auto flex flex-col items-start justify-start pb-28 pt-10 sm:max-w-[400px] sm:items-center sm:justify-center sm:pt-20'
+    >
+      <div class='mb-2 text-left sm:mb-5 sm:text-center'>
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>Sign Up</h1>
+        <p class='mb-3 hidden text-base leading-6 text-gray-600 sm:block'>
+          Create an account to track your progress, showcase your skill-set and
+          be a part of the community.
+        </p>
+        <p class='mb-3 block text-sm text-gray-600 sm:hidden'>
+          Create an account to track your progress, showcase your skill-set and
+          be a part of the community.
+        </p>
+      </div>
+
+      <AuthenticationForm type='signup' client:load />
+
+      <div class='mt-3 w-full rounded-md border py-2 text-center text-sm text-slate-600'>
+        Already have an account? <a
+          href='/login'
+          class='font-medium text-blue-700 hover:text-blue-600'>Login</a
+        >
+      </div>
+
+      <AccountTerms />
+    </div>
+  </div>
+</AccountLayout>

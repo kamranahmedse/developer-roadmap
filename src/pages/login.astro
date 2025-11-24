@@ -1,0 +1,41 @@
+---
+import { AccountTerms } from '../components/AccountTerms';
+import { AuthenticationForm } from '../components/AuthenticationFlow/AuthenticationForm';
+import AccountLayout from '../layouts/AccountLayout.astro';
+---
+
+<AccountLayout
+  title='Login - roadmap.sh'
+  description='Register yourself to receive occasional emails about new roadmaps, updates, guides and videos'
+  permalink={'/login'}
+  noIndex={true}
+>
+  <div class='container'>
+    <div
+      class='mx-auto flex flex-col items-start justify-start pb-28 pt-10 sm:max-w-[400px] sm:items-center sm:justify-center sm:pt-20'
+    >
+      <div class='mb-2 text-left sm:mb-5 sm:text-center'>
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>Login</h1>
+        <p class='mb-3 text-base leading-6 text-gray-600'>
+          Welcome back! Let's take you to your account.
+        </p>
+      </div>
+
+      <AuthenticationForm client:load />
+
+      <div
+        class='mt-3 w-full rounded-md border py-2 text-center text-sm text-slate-600'
+      >
+        Don't have an account?{' '}
+        <a
+          href='/signup'
+          class='font-medium text-blue-700 hover:text-blue-600 hover:underline'
+        >
+          Sign up
+        </a>
+      </div>
+
+      <AccountTerms />
+    </div>
+  </div>
+</AccountLayout>

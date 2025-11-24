@@ -1,0 +1,3 @@
+Data analysts are always trying to handle holes in their data in one way or another, because it directly affects their job and results.
+
+There are several ways to handle missing data, one way is by using imputation techniques (e.g., mean, median, predictive models), removing incomplete rows, or even flagging affected data points. The chosen method depends on the data set and business context, with proper validation to ensure analytical integrity. 

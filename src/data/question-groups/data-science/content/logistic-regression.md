@@ -1,0 +1,5 @@
+Logistic regression is a supervised machine learning algorithm commonly used for binary classification tasks by predicting the probability of an outcome, event, or observation. The model delivers a binary outcome limited to two possible outcomes: yes/no, 0/1, or true/false. Logical regression analyzes the relationship between one or more independent variables and classifies the data into discrete classes. This relationship is then used to predict the value of one of those factors, the probability of a binary outcome using the logistic (sigmoid) function. It is mostly used for predictive modeling.
+
+For example, 0 represents a negative class, and 1 represents a positive class. Logistic regression is commonly used in binary classification problems where the outcome variable reveals either of the two categories (0 and 1).
+
+**Common pitfall:** Misunderstanding that logistic regression is not a classification algorithm but a probability estimator. 

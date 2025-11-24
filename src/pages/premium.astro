@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PremiumPage } from '../components/Premium/PremiumPage';
+---
+
+<BaseLayout 
+  title='Premium Features - AI-Powered Learning | roadmap.sh'
+  description='Unlock unlimited AI-powered learning with roadmap.sh Premium. Generate unlimited courses, get career guidance, instant AI answers, and access exclusive features for just $10/month.'
+  ogImageUrl='https://assets.roadmap.sh/guest/ai-tutor-og-6hm9j.png'
+  keywords={[
+    'roadmap.sh premium',
+    'ai learning platform',
+    'developer education',
+    'programming courses',
+    'career guidance',
+    'ai tutor',
+    'coding roadmaps',
+    'tech learning subscription',
+    'developer tools',
+    'unlimited courses',
+    'ai-powered education',
+    'programming mentor'
+  ]}
+  permalink={'/premium'}
+  jsonLd={[
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: 'roadmap.sh Premium',
+      description: 'AI-powered learning platform for developers with unlimited courses, career guidance, and instant AI support.',
+      image: 'https://assets.roadmap.sh/guest/ai-tutor-og-6hm9j.png',
+      brand: {
+        '@type': 'Brand',
+        name: 'roadmap.sh'
+      },
+      offers: [
+        {
+          '@type': 'Offer',
+          name: 'Monthly Plan',
+          price: '10.00',
+          priceCurrency: 'USD',
+          priceValidUntil: '2025-12-31',
+          availability: 'https://schema.org/InStock',
+          url: 'https://roadmap.sh/premium',
+          hasMerchantReturnPolicy: {
+            '@type': 'MerchantReturnPolicy',
+            applicableCountry: 'US',
+            returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted'
+          },
+          shippingDetails: {
+            '@type': 'OfferShippingDetails',
+            shippingRate: {
+              '@type': 'MonetaryAmount',
+              value: 0,
+              currency: 'USD'
+            },
+            doesNotShip: true
+          }
+        },
+        {
+          '@type': 'Offer',
+          name: 'Yearly Plan',
+          price: '100.00',
+          priceCurrency: 'USD',
+          priceValidUntil: '2025-12-31',
+          availability: 'https://schema.org/InStock',
+          url: 'https://roadmap.sh/premium',
+          hasMerchantReturnPolicy: {
+            '@type': 'MerchantReturnPolicy',
+            applicableCountry: 'US',
+            returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted'
+          },
+          shippingDetails: {
+            '@type': 'OfferShippingDetails',
+            shippingRate: {
+              '@type': 'MonetaryAmount',
+              value: 0,
+              currency: 'USD'
+            },
+            doesNotShip: true
+          }
+        }
+      ],
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        bestRating: '5',
+        ratingCount: '1000'
+      }
+    }
+  ]}
+>
+  <PremiumPage client:load />
+
+  <div slot='changelog-banner'></div>
+  <div slot='open-source-banner'></div>
+</BaseLayout>

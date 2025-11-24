@@ -1,0 +1,255 @@
+---
+import '../styles/global.css';
+
+import Analytics from '../components/Analytics/Analytics.astro';
+import Clarity from '../components/Analytics/Clarity.astro';
+import GoogleAd from '../components/Analytics/GoogleAd.astro';
+import GoogleAdSlot from '../components/Analytics/GoogleAdSlot.astro';
+import Hubspot from '../components/Analytics/Hubspot.astro';
+import RedditPixel from '../components/Analytics/RedditPixel.astro';
+import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
+import Authenticator from '../components/Authenticator/Authenticator.astro';
+import { CommandMenu } from '../components/CommandMenu/CommandMenu';
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation/Navigation.astro';
+import OpenSourceBanner from '../components/OpenSourceBanner.astro';
+import { PageProgress } from '../components/PageProgress';
+import { PageVisit } from '../components/PageVisit/PageVisit';
+import { CourseAnnouncement } from '../components/SQLCourse/CourseAnnouncement';
+import { Toaster } from '../components/Toast';
+import { siteConfig } from '../lib/config';
+import type { ResourceType } from '../lib/resource-progress';
+import Bluconic from '../components/Analytics/Bluconic.astro';
+import OneTrust from '../components/Analytics/OneTrust.astro';
+import LinkedIn from '../components/Analytics/LinkedIn.astro';
+import { cn } from '../lib/classname';
+import { GlobalUpgradeModal } from '../components/Billing/GlobalUpgradeModal';
+
+export interface Props {
+  title: string;
+  ogImageUrl?: string;
+  htmlClassName?: string;
+  bodyClassName?: string;
+  // This isn't used anywhere except for the sponsor event labels
+  briefTitle?: string;
+  redirectUrl?: string;
+  description?: string;
+  keywords?: string[];
+  noIndex?: boolean;
+  canonicalUrl?: string;
+  initialLoadingMessage?: string;
+  permalink?: string;
+  jsonLd?: Record<string, unknown>[];
+  resourceId?: string;
+  resourceType?: ResourceType;
+}
+
+const {
+  title = siteConfig.title,
+  htmlClassName,
+  bodyClassName,
+  briefTitle,
+  description = siteConfig.description,
+  ogImageUrl = 'https://roadmap.sh/img/og-img.png',
+  keywords = siteConfig.keywords,
+  noIndex = false,
+  permalink = '',
+  canonicalUrl: givenCanonical = '',
+  jsonLd = [],
+  redirectUrl = '',
+  initialLoadingMessage = '',
+  resourceId,
+  resourceType,
+} = Astro.props;
+
+// Remove trailing slashes to consider the page as canonical
+const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
+const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
+const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
+  import.meta.env.GITHUB_SHA
+}`;
+
+// e.g. frontend:react or best-practices:frontend-performance
+const gaPageIdentifier = Astro.url.pathname
+  .replace(/^\//, '')
+  .replace(/\/$/, '')
+  .replace(/\//g, ':');
+---
+
+<!doctype html>
+<html lang='en' class={htmlClassName}>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='generator' content={Astro.generator} />
+    <meta name='commit' content={commitUrl} />
+    <title>{title}</title>
+    <meta name='description' content={description} />
+    <meta name='keywords' content={keywords.join(', ')} />
+    {
+      redirectUrl && (
+        <meta http-equiv='refresh' content={`1;url=${redirectUrl}`} />
+      )
+    }
+    {noIndex && <meta name='robots' content='noindex' />}
+    <meta
+      name='viewport'
+      content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0'
+    />
+    <meta http-equiv='Content-Language' content='en' />
+
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:creator' content='@kamrify' />
+
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <meta
+      property='og:image'
+      content={ogImageUrl || 'https://roadmap.sh/img/og-img.png'}
+    />
+    <meta property='og:image:alt' content='roadmap.sh' />
+    <meta property='og:site_name' content='roadmap.sh' />
+    <meta property='og:title' content={title} />
+    <meta property='og:description' content={description} />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content={currentPageAbsoluteUrl} />
+
+    <link rel='canonical' href={canonicalUrl} />
+
+    <meta name='mobile-web-app-capable' content='yes' />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta
+      name='apple-mobile-web-app-status-bar-style'
+      content='black-translucent'
+    />
+    <meta name='apple-mobile-web-app-title' content='roadmap.sh' />
+    <meta name='application-name' content='roadmap.sh' />
+    <meta
+      name='ahrefs-site-verification'
+      content='04588b1b3d0118b4f973fa24f9df38ca6300d152cc26529a639e9a34d09c9880'
+    />
+
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/manifest/apple-touch-icon.png'
+    />
+    <meta name='msapplication-TileColor' content='#101010' />
+    <meta name='theme-color' content='#848a9a' />
+
+    <link rel='manifest' href='/manifest/manifest.json' />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/manifest/icon32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/manifest/icon16.png'
+    />
+    <link
+      rel='shortcut icon'
+      href='/manifest/favicon.ico'
+      type='image/x-icon'
+    />
+
+    <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
+
+    <link rel='preconnect' href='https://www.google-analytics.com/' />
+    <link rel='preconnect' href='https://api.roadmap.sh/' />
+
+    <!-- Google Tag Manager Start -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-T66KC7S8');
+    </script>
+    <!-- Google Tag Manager End -->
+
+    <slot name='after-header' />
+    {
+      jsonLd.length > 0 && (
+        <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />
+      )
+    }
+
+    <Analytics />
+
+    <slot name='ad-slot-script'>
+      <GoogleAd />
+    </slot>
+
+    {
+      !import.meta.env.DEV && (
+        <>
+          <OneTrust />
+          <Clarity />
+          <RedditPixel />
+          <Hubspot />
+          <Bluconic />
+        </>
+      )
+    }
+  </head>
+  <body class={cn('flex min-h-screen flex-col', bodyClassName)}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src='https://www.googletagmanager.com/ns.html?id=GTM-T66KC7S8'
+        height='0'
+        width='0'
+        style='display:none;visibility:hidden'></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <slot name='course-announcement'>
+      <CourseAnnouncement client:load />
+    </slot>
+    <slot name='page-header'>
+      <Navigation />
+    </slot>
+
+    <slot />
+
+    <slot name='page-footer'>
+      <slot name='changelog-banner' />
+      <slot name='open-source-banner'>
+        <OpenSourceBanner />
+      </slot>
+      <Footer />
+    </slot>
+
+    <Authenticator />
+    <slot name='login-popup'>
+      <LoginPopup />
+    </slot>
+
+    <Toaster client:only='react' />
+    <CommandMenu client:idle />
+    <PageProgress initialMessage={initialLoadingMessage} client:idle />
+    <GlobalUpgradeModal client:only='react' />
+
+    <slot name='ad-slot'>
+      <GoogleAdSlot />
+    </slot>
+
+    <slot name='after-footer' />
+
+    <PageVisit
+      resourceId={resourceId}
+      resourceType={resourceType}
+      client:load
+    />
+
+    {!import.meta.env.DEV && <LinkedIn />}
+  </body>
+</html>

@@ -1,0 +1,3 @@
+To prepare for a data analyst interview, reviewing a project that involved principal component analysis (PCA) is recommended. 
+
+For instance, applying PCA to a customer transaction dataset with dozens of behavioral variables helps reduce dimensionality and improve model performance by minimizing multicollinearity and noise, that way you get to showcase your own understanding of dimensionality reduction techniques. 

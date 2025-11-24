@@ -1,0 +1,27 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Roadmap",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "https://roadmap.sh/",
+  "short_name": "Roadmap",
+  "theme_color": "#EDD07E",
+  "description": "Roadmaps to becoming a Modern Developer – roadmap.sh",
+  "orientation": "any",
+  "background_color": "#101010",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/manifest/icon152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/icon196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    }
+  ]
+}

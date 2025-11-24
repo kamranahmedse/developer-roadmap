@@ -1,0 +1,75 @@
+---
+import { getProjectList } from '../../api/roadmap';
+import { userApi } from '../../api/user';
+import { UserPublicProfilePage } from '../../components/UserPublicProfile/UserPublicProfilePage';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export const prerender = false;
+
+interface Params extends Record<string, string | undefined> {
+  username: string;
+}
+
+const { username } = Astro.params as Params;
+if (!username) {
+  return Astro.redirect('/404');
+}
+
+const userClient = userApi(Astro as any);
+const { response: userDetails, error } =
+  await userClient.getPublicProfile(username);
+
+let errorMessage = '';
+if (error || !userDetails) {
+  errorMessage = error?.message || 'User not found';
+}
+
+const projectDetails = await getProjectList();
+const origin = Astro.url.origin;
+const ogImage = `${origin}/og/user/${username}`;
+
+const hasAnyRoadmaps = (userDetails?.roadmaps || []).length > 0;
+---
+
+<BaseLayout
+  title={`${userDetails?.name || 'Unknown'} - Skill Profile at roadmap.sh`}
+  description='Check out my skill profile at roadmap.sh'
+  ogImageUrl={ogImage}
+  noIndex={!hasAnyRoadmaps}
+>
+  {
+    !errorMessage && (
+      <UserPublicProfilePage
+        {...userDetails!}
+        projectDetails={projectDetails}
+        client:load
+      />
+    )
+  }
+  {
+    errorMessage && (
+      <div class='container my-24 flex flex-col'>
+        <picture>
+          <source
+            srcset='https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.webp'
+            type='image/webp'
+          />
+          <img
+            src='https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif'
+            alt='😞'
+            width='120'
+            height='120'
+          />
+        </picture>
+        <h2 class='my-2 text-2xl font-bold sm:my-3 sm:text-4xl'>
+          Problem loading user!
+        </h2>
+        <p class='text-lg'>
+          <span class='rounded-md bg-red-600 px-2 py-1 text-white'>
+            {errorMessage}
+          </span>
+        </p>
+      </div>
+    )
+  }
+</BaseLayout>

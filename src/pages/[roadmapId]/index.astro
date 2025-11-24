@@ -1,0 +1,179 @@
+---
+import { EditorRoadmap } from '../../components/EditorRoadmap/EditorRoadmap';
+import { FAQs } from '../../components/FAQs/FAQs';
+import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
+import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import { ShareIcons } from '../../components/ShareIcons/ShareIcons';
+import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
+import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { isNewRoadmap } from '../../queries/official-roadmap';
+import {
+  generateArticleSchema,
+  generateFAQSchema,
+} from '../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { RoadmapTitleQuestion } from '../../components/RoadmapTitleQuestion';
+import ResourceProgressStats from '../../components/ResourceProgressStats.astro';
+import { CheckSubscriptionVerification } from '../../components/Billing/CheckSubscriptionVerification';
+import { officialRoadmapDetails } from '../../queries/official-roadmap';
+import { DateTime } from 'luxon';
+import { listOfficialProjects } from '../../queries/official-project';
+
+export const prerender = false;
+
+interface Params extends Record<string, string | undefined> {
+  roadmapId: string;
+}
+
+const { roadmapId } = Astro.params as Params;
+const roadmapData = await officialRoadmapDetails(roadmapId);
+if (!roadmapData) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+
+let jsonLdSchema = [];
+
+const datePublished = DateTime.fromJSDate(
+  new Date(roadmapData?.createdAt),
+).toFormat('yyyy-MM-dd');
+const dateModified = DateTime.fromJSDate(
+  new Date(roadmapData?.updatedAt),
+).toFormat('yyyy-MM-dd');
+
+const baseUrl = import.meta.env.DEV
+  ? `http://localhost:8080`
+  : `https://roadmap.sh`;
+
+jsonLdSchema.push(
+  generateArticleSchema({
+    url: `https://roadmap.sh/${roadmapId}`,
+    headline: roadmapData?.seo?.title || roadmapData?.title?.page,
+    description: roadmapData?.description,
+    datePublished,
+    dateModified,
+    imageUrl: `${baseUrl}/roadmaps/${roadmapId}.png`,
+  }),
+);
+
+const ogImageUrl =
+  roadmapData?.openGraph?.image ||
+  getOpenGraphImageUrl({
+    group: 'roadmap',
+    resourceId: roadmapId,
+  });
+
+const question = roadmapData?.questions?.find(
+  (question) => question.type === 'main',
+);
+const faqs =
+  roadmapData?.questions?.filter((question) => question.type === 'faq') || [];
+if (faqs.length) {
+  jsonLdSchema.push(generateFAQSchema(faqs));
+}
+
+const projects = await listOfficialProjects({ roadmapId });
+const courses = roadmapData.courses || [];
+
+const isNew = isNewRoadmap(roadmapData.createdAt);
+---
+
+<BaseLayout
+  permalink={`/${roadmapId}`}
+  title={roadmapData?.seo?.title || roadmapData?.title.page}
+  briefTitle={roadmapData.title.card}
+  ogImageUrl={ogImageUrl}
+  description={roadmapData.seo.description}
+  keywords={roadmapData.seo.keywords}
+  noIndex={false}
+  jsonLd={jsonLdSchema}
+  resourceId={roadmapId}
+  resourceType='roadmap'
+>
+  <link
+    rel='preload'
+    href='/fonts/balsamiq.woff2'
+    as='font'
+    type='font/woff2'
+    crossorigin
+    slot='after-header'
+  />
+
+  <TopicDetail
+    resourceId={roadmapId}
+    resourceType='roadmap'
+    renderer='editor'
+    client:idle
+    canSubmitContribution={true}
+  />
+
+  <div class='bg-gray-50'>
+    <RoadmapHeader
+      title={roadmapData.title.page}
+      description={roadmapData.description}
+      partner={roadmapData.partner}
+      roadmapId={roadmapId}
+      isForkable={true}
+      isNew={isNew}
+      projectCount={projects.length}
+      coursesCount={courses.length}
+      hasAIChat={true}
+    />
+
+    <div class='container mt-2.5'>
+      <div class='rounded-md border bg-white'>
+        <ResourceProgressStats resourceId={roadmapId} resourceType='roadmap' />
+        {
+          question?.title && (
+            <RoadmapTitleQuestion
+              client:load
+              roadmapId={roadmapId}
+              question={question?.title}
+              answer={question?.description}
+            />
+          )
+        }
+      </div>
+    </div>
+
+    <div class='relative container max-w-[1000px]!'>
+      <ShareIcons
+        resourceId={roadmapId}
+        resourceType='roadmap'
+        description={roadmapData.description}
+        pageUrl={`https://roadmap.sh/${roadmapId}`}
+        client:load
+      />
+
+      <EditorRoadmap
+        resourceId={roadmapId}
+        resourceType='roadmap'
+        dimensions={roadmapData.dimensions!}
+        client:load
+      />
+    </div>
+
+    <UserProgressModal
+      resourceId={roadmapId}
+      resourceType='roadmap'
+      renderer='editor'
+      client:only='react'
+    />
+
+    {
+      roadmapId === 'docker' && (
+        <p class='mb-8 px-5 text-center text-xs text-gray-400 sm:mb-12'>
+          Roadmap owner Insight Partners is an investor in Docker.
+        </p>
+      )
+    }
+
+    <FAQs faqs={faqs} client:load />
+    <RelatedRoadmaps relatedRoadmaps={roadmapData?.relatedRoadmaps || []} />
+  </div>
+
+  <CheckSubscriptionVerification client:load />
+  <div slot='changelog-banner'></div>
+</BaseLayout>

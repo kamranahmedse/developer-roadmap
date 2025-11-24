@@ -1,0 +1,42 @@
+---
+import Icon from './AstroIcon.astro';
+---
+
+<div
+  class='my-0 rounded-lg px-5 pb-12 pt-5 text-left sm:pb-16 sm:pt-0 sm:text-center'
+>
+  <div class='mx-auto sm:max-w-[420px]'>
+    <div class='hidden sm:block'><Icon icon='bell' /></div>
+    <h2 class='text-3xl font-semibold sm:mb-1 sm:font-medium'>Upcoming</h2>
+    <p class='mb-0 inline-flex hidden text-gray-600 sm:mb-5' data-auth-required>
+      You will be notified by email when the roadmap is ready.
+    </p>
+    <p
+      class='mb-0 inline-flex text-gray-600 sm:mb-5'
+      data-guest-required
+    >
+      Please check back later or subscribe below.
+    </p>
+
+    <button
+      data-guest-required
+      data-popup='login-popup'
+      type='button'
+      name='submit'
+      class='font-regular text-md mt-5 w-full rounded-md bg-gray-700 px-5 py-2.5 text-center text-white hover:bg-black sm:mt-0 flex gap-1 items-center justify-center'
+      aria-label='Get Notified'
+    >
+      <Icon icon='bell' class='h-5' /> Notify me when ready!
+    </button>
+    <button
+      data-auth-required
+      type='button'
+      disabled
+      name='submit'
+      class='font-regular text-md mt-5 sm:mt-0 flex hidden w-full items-center justify-center gap-2 rounded-md bg-gray-300 px-5 py-2.5 text-center text-gray-800'
+      aria-label='Get Notified'
+    >
+      Please check back later
+    </button>
+  </div>
+</div>

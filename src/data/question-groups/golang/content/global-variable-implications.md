@@ -1,0 +1,1 @@
+Global variables in Go, which are declared at the package level, persist for the duration of the program. This means global variables might cause increased memory utilization (or even leaks) or concurrency issues if not managed with proper synchronization, thereby affecting modularity and testability. 

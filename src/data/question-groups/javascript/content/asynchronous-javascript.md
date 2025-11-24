@@ -1,0 +1,3 @@
+Asynchronous JavaScript is a way of writing code that can carry out many tasks at once. It saves you time, especially when working on tasks that take effort, like fetching data from a server.
+
+Async JavaScript lets your code run at the same time as other tasks while waiting for it to complete. Your code doesn't stop and wait for a task to finish, but it keeps checking now and then to see if the task is complete. Once it's done, either a promise or a callback function responds to the result of the task. 

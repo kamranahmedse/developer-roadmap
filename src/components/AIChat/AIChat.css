@@ -1,0 +1,131 @@
+.ai-chat .prose ul li > code,
+.ai-chat .prose ol li > code,
+.ai-chat p code,
+.ai-chat a > code,
+.ai-chat strong > code,
+.ai-chat em > code,
+.ai-chat h1 > code,
+.ai-chat h2 > code,
+.ai-chat h3 > code {
+  background: #ebebeb !important;
+  color: currentColor !important;
+  font-size: 14px;
+  font-weight: normal !important;
+}
+
+.ai-chat .course-ai-content.course-content.prose ul li > code,
+.ai-chat .course-ai-content.course-content.prose ol li > code,
+.ai-chat .course-ai-content.course-content.prose p code,
+.ai-chat .course-ai-content.course-content.prose a > code,
+.ai-chat .course-ai-content.course-content.prose strong > code,
+.ai-chat .course-ai-content.course-content.prose em > code,
+.ai-chat .course-ai-content.course-content.prose h1 > code,
+.ai-chat .course-ai-content.course-content.prose h2 > code,
+.ai-chat .course-ai-content.course-content.prose h3 > code,
+.ai-chat .course-notes-content.prose ul li > code,
+.ai-chat .course-notes-content.prose ol li > code,
+.ai-chat .course-notes-content.prose p code,
+.ai-chat .course-notes-content.prose a > code,
+.ai-chat .course-notes-content.prose strong > code,
+.ai-chat .course-notes-content.prose em > code,
+.ai-chat .course-notes-content.prose h1 > code,
+.ai-chat .course-notes-content.prose h2 > code,
+.ai-chat .course-notes-content.prose h3 > code {
+  font-size: 12px !important;
+}
+
+.ai-chat .course-ai-content pre {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ai-chat .course-ai-content pre::-webkit-scrollbar {
+  display: none;
+}
+
+.ai-chat .course-ai-content pre,
+.ai-chat .course-notes-content pre {
+  overflow: scroll;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.ai-chat .prose ul li > code:before,
+.ai-chat p > code:before,
+.ai-chat .prose ul li > code:after,
+.prose ol li > code:before,
+p > code:before,
+.ai-chat .prose ol li > code:after,
+.ai-chat .course-content h1 > code:after,
+.ai-chat .course-content h1 > code:before,
+.ai-chat .course-content h2 > code:after,
+.ai-chat .course-content h2 > code:before,
+.ai-chat .course-content h3 > code:after,
+.ai-chat .course-content h3 > code:before,
+.ai-chat .course-content h4 > code:after,
+.ai-chat .course-content h4 > code:before,
+.ai-chat p > code:after,
+.ai-chat a > code:after,
+.ai-chat a > code:before {
+  content: '' !important;
+}
+
+.ai-chat .course-content.prose ul li > code,
+.ai-chat .course-content.prose ol li > code,
+.ai-chat .course-content p code,
+.ai-chat .course-content a > code,
+.ai-chat .course-content strong > code,
+.ai-chat .course-content em > code,
+.ai-chat .course-content h1 > code,
+.ai-chat .course-content h2 > code,
+.ai-chat .course-content h3 > code,
+.ai-chat .course-content table code {
+  background: #f4f4f5 !important;
+  border: 1px solid #282a36 !important;
+  color: #282a36 !important;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-size: 16px !important;
+  white-space: pre;
+  font-weight: normal;
+}
+
+.ai-chat .course-content blockquote {
+  font-style: normal;
+}
+
+.ai-chat .course-content.prose blockquote h1,
+.ai-chat .course-content.prose blockquote h2,
+.ai-chat .course-content.prose blockquote h3,
+.ai-chat .course-content.prose blockquote h4 {
+  font-style: normal;
+  margin-bottom: 8px;
+}
+
+.ai-chat .course-content.prose ul li > code:before,
+.ai-chat .course-content p > code:before,
+.ai-chat .course-content.prose ul li > code:after,
+.ai-chat .course-content p > code:after,
+.ai-chat .course-content h2 > code:after,
+.ai-chat .course-content h2 > code:before,
+.ai-chat .course-content table code:before,
+.ai-chat .course-content table code:after,
+.ai-chat .course-content a > code:after,
+.ai-chat .course-content a > code:before,
+.ai-chat .course-content h2 code:after,
+.ai-chat .course-content h2 code:before,
+.ai-chat .course-content h2 code:after,
+.ai-chat .course-content h2 code:before {
+  content: '' !important;
+}
+
+.ai-chat .course-content table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.ai-chat .course-content table td,
+.ai-chat .course-content table th {
+  padding: 5px 10px;
+}
