@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Official Website](https://panda-css.com)
 - [@official@Tutorials and videos to get started with Panda!](https://panda-css.com/learn)
-- [@video@Panda CSS First Impressions | Theo Reacts](https://www.youtube.com/watch?v=UlY-Ixddjm0)
 - [@article@Panda CSS – CSS-in-JS without Runtime Overhead](https://infinum.com/blog/panda-css-css-in-js-without-runtime-overhead/)
+- [@video@Panda CSS First Impressions | Theo Reacts](https://www.youtube.com/watch?v=UlY-Ixddjm0)
