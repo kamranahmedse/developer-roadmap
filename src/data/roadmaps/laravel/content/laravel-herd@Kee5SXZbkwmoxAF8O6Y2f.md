@@ -5,6 +5,6 @@ Laravel Herd is a fast, native Laravel and PHP development environment for macOS
 Visit the following resources to learn more:
 
 - [@official@Laravel herd](https://herd.laravel.com/)
-- [@official@Installation Using Herd](https://laravel.com/docs/12.x/installation#installation-using-herd)
+- [@official@Installation Using Herd](https://laravel.com/docs/installation#installation-using-herd)
 - [@article@Laravel Development using Herd](https://medium.com/@Ashleecooper/laravel-development-using-herd-1da0932b9888)
 - [@video@How to Install Laravel on Windows with Laravel Herd and MySQL, phpMyAdmin for Beginners](https://www.youtube.com/watch?v=Io0GZLAc5WI)
