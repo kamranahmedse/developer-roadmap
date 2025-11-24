@@ -1,9 +1,9 @@
-# Linear Algebra
+# Probability
 
-Linear algebra is a branch of mathematics that deals with vector spaces and linear transformations between those spaces. It involves concepts like vectors, matrices, and systems of linear equations, and provides tools for manipulating and solving problems involving these entities. Operations such as matrix multiplication, decomposition, and eigenvalue analysis are fundamental to this field.
+Probability is a way to quantify the likelihood of an event occurring. It provides a numerical measure, ranging from 0 to 1, that represents the likelihood of a specific outcome occurring. A probability of 0 indicates impossibility, while a probability of 1 signifies certainty. It's a fundamental concept for understanding uncertainty and making predictions based on available data.
 
 Visit the following resources to learn more:
 
-- [@book@Linear algebra for data science](http://mitran-lab.amath.unc.edu/courses/MATH347DS/textbook.pdf)
-- [@article@How I learned Linear Algebra, Probability and Statistics for Data Science](https://towardsdatascience.com/how-i-learned-linear-algebra-probability-and-statistics-for-data-science-b9d1c34dfa56/)
-- [@video@Linear Algebra for Machine Learning](https://www.youtube.com/watch?v=QCPJ0VdpM00)
+- [@book@Probability and Statistics: The Science of Uncertainty](https://utstat.utoronto.ca/mikevans/jeffrosenthal/book.pdf)
+- [@article@Probability for machine learning](https://towardsdatascience.com/probability-for-machine-learning-b4150953df09/)
+- [@video@Probability for Data Science & Machine Learning](https://www.youtube.com/watch?v=sEte4hXEgJ8)
