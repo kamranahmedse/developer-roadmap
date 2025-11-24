@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Java Functional Interfaces](https://jenkov.com/tutorials/java-functional-programming/functional-interfaces.html)
 - [@article@Java Functional Interfaces](https://www.baeldung.com/java-8-functional-interfaces)
-

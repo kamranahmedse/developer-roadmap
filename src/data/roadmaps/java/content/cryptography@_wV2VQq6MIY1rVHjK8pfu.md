@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Java Cryptography Tutorial](https://jenkov.com/tutorials/java-cryptography/index.html)
 - [@video@Cryptography 101 for Java developers](https://www.youtube.com/watch?v=itmNhVckTPc)
-
