@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Javalin Website](https://javalin.io/)
 - [@article@Creating a REST API with Javalin](https://www.baeldung.com/javalin-rest-microservices)
-

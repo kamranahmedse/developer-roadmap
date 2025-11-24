@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Dependency Injection Tutorial](https://jenkov.com/tutorials/dependency-injection/index.html)
 - [@article@Java Dependency Injection Design Pattern Example Tutorial](https://www.digitalocean.com/community/tutorials/java-dependency-injection-design-pattern-example-tutorial)
-
