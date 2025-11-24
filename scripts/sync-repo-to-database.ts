@@ -1,15 +1,23 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
-import { parse } from 'node-html-parser';
-import { markdownToHtml } from '../src/lib/markdown';
-import { htmlToMarkdown } from '../src/lib/html';
 import {
   allowedOfficialRoadmapTopicResourceType,
   type AllowedOfficialRoadmapTopicResourceType,
-  type SyncToDatabaseTopicContent,
-} from '../src/queries/official-roadmap-topic';
+  type OfficialRoadmapDocument,
+  type OfficialRoadmapTopicContentDocument,
+  type OfficialRoadmapTopicResource,
+} from '../src/lib/types';
+import { parse } from 'node-html-parser';
+import { markdownToHtml } from '../src/lib/markdown';
+import { htmlToMarkdown } from '../src/lib/html';
+
+type SyncToDatabaseTopicContent = Omit<
+  OfficialRoadmapTopicContentDocument,
+  'createdAt' | 'updatedAt' | '_id' | 'resources'
+> & {
+  resources: Omit<OfficialRoadmapTopicResource, '_id'>[];
+};
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -148,7 +156,7 @@ try {
     }
 
     const content = await fs.readFile(filePath, 'utf8');
-    const html = markdownToHtml(content, false);
+    const html = markdownToHtml(content);
     const rootHtml = parse(html);
 
     let ulWithLinks: HTMLElement | undefined;
@@ -161,8 +169,7 @@ try {
       );
 
       if (listWithJustLinks.length > 0) {
-        // @ts-expect-error - TODO: fix this
-        ulWithLinks = ul;
+        ulWithLinks = ul as unknown as HTMLElement;
       }
     });
 

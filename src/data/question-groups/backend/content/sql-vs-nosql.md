@@ -1,3 +1,0 @@
-[SQL databases](https://roadmap.sh/sql) (or relational databases as they’re also known) rely on a predefined schema (or structure) for their data. Whenever you describe a record, or table inside the database, you do so through its format (name and fields).
-
-In [NoSQL](https://roadmap.sh/mongodb) databases, there is no schema, so there is no predefined structure to the data. You usually have collections of records that are not obligated to have the same structure, even if they represent conceptually the same thing.
