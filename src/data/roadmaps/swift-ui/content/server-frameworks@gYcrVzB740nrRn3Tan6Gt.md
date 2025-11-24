@@ -1,1 +1,3 @@
 # Server Frameworks
+
+Server frameworks provide the tools and structure needed to build backend applications, APIs, and web services. They handle tasks like routing requests, managing data, and interacting with databases, allowing developers to focus on the core logic of their server-side applications. These frameworks enable Swift developers to create robust and scalable server-side solutions, complementing the client-side capabilities of Swift and SwiftUI.
