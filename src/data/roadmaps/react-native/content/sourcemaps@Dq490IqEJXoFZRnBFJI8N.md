@@ -13,4 +13,4 @@ After generating sourcemaps, you can use them to debug errors more efficiently, 
 
 Visit the following resources to learn more:
 
-- [@official@SourceMaps](https://reactnative-archive-august-2023.netlify.app/docs/sourcemaps)
+- [@official@SourceMaps](https://reactnative.dev/docs/debugging-release-builds#enabling-source-maps)
