@@ -2,7 +2,7 @@
 
 `useReducer`: An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@useReducer Docs](https://react.dev/reference/react/useReducer)
 - [@article@The React useReducer Hook](https://www.telerik.com/blogs/react-usereducer-hook)

@@ -4,4 +4,4 @@ Configuration files in Laravel allow you to manage settings for your application
 
 Visit the following resources to learn more:
 
-- [@official@The Config Directory](http://laravel.com/docs/12.x/structure#the-config-directory)
+- [@official@The Config Directory](http://laravel.com/docs/structure#the-config-directory)

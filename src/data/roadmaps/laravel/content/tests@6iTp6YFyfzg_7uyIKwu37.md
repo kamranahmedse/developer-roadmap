@@ -4,4 +4,4 @@ The `tests` directory in Laravel projects houses all the automated tests for you
 
 Visit the following resources to learn more:
 
-- [@official@The Tests Directory](https://laravel.com/docs/12.x/structure#the-tests-directory)
+- [@official@The Tests Directory](https://laravel.com/docs/structure#the-tests-directory)

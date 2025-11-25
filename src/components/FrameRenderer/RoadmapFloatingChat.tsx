@@ -306,6 +306,53 @@ export function RoadmapFloatingChat(props: RoadmapChatProps) {
     };
   }, [isOpen, isPersonalizeOpen]);
 
+  useEffect(() => {
+    const handleChecklistClick = (e: CustomEvent) => {
+      const { roadmapId: eventRoadmapId, labelText, clickedText } = e.detail;
+
+      if (eventRoadmapId !== roadmapId) {
+        return;
+      }
+
+      if (!isLoggedIn()) {
+        setIsOpen(false);
+        showLoginPopup();
+        return;
+      }
+
+      const roadmapTitle = roadmapDetail?.json?.title?.page || roadmapDetail?.json?.title?.card || 'this roadmap';
+      const message = `Explain the '${roadmapTitle}' best practice '${labelText} > ${clickedText}'`;
+
+      flushSync(() => {
+        setIsOpen(true);
+      });
+
+      setTimeout(() => {
+        sendMessage(
+          { text: message, metadata: { json: textToJSON(message) } },
+          {
+            body: {
+              roadmapId,
+              ...(activeChatHistoryId
+                ? { chatHistoryId: activeChatHistoryId }
+                : {}),
+            },
+          },
+        );
+
+        setTimeout(() => {
+          scrollToBottom('smooth');
+          inputRef.current?.focus();
+        }, 0);
+      }, 100);
+    };
+
+    window.addEventListener('roadmap.checklist.click', handleChecklistClick as EventListener);
+    return () => {
+      window.removeEventListener('roadmap.checklist.click', handleChecklistClick as EventListener);
+    };
+  }, [roadmapId, roadmapDetail, sendMessage, activeChatHistoryId, scrollToBottom]);
+
   function textToJSON(text: string): JSONContent {
     return {
       type: 'doc',

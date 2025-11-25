@@ -4,10 +4,10 @@
 
 Key Features
 
-- Simplicity: Easy to use and understand.
-- Asynchronous Support: Handles asynchronous code gracefully.
-- Subtests: Allows for organizing tests into hierarchical structures.
-- Hooks: Provides beforeEach and afterEach hooks for setup and teardown.
+*   Simplicity: Easy to use and understand.
+*   Asynchronous Support: Handles asynchronous code gracefully.
+*   Subtests: Allows for organizing tests into hierarchical structures.
+*   Hooks: Provides beforeEach and afterEach hooks for setup and teardown.
 
 Visit the following resources to learn more:
 

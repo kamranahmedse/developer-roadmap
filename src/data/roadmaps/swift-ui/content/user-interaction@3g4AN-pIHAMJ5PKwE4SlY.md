@@ -1,1 +1,3 @@
 # User Interaction
+
+User interaction refers to how users engage with your app. This includes everything from tapping buttons and entering text to swiping through lists and responding to alerts. It's about making your app responsive and intuitive, so users can easily navigate and accomplish their goals. SwiftUI provides various tools and modifiers to handle user input and create interactive elements.
