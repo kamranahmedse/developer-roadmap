@@ -13,4 +13,5 @@ After generating sourcemaps, you can use them to debug errors more efficiently, 
 
 Visit the following resources to learn more:
 
+- [Source Maps (MDN)](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map)
 - [@official@SourceMaps](https://reactnative.dev/docs/debugging-release-builds#enabling-source-maps)
