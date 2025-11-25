@@ -10,6 +10,7 @@
 
 Visit the following resources to learn more:
 
+- [@official@Python Official Documentation on Listsc](https://docs.python.org/3/tutorial/introduction.html#lists)
 - [@article@Tuples vs. Lists vs. Sets in Python](https://jerrynsh.com/tuples-vs-lists-vs-sets-in-python/)
 - [@article@Python for Beginners: Lists](https://thenewstack.io/python-for-beginners-lists/)
 - [@article@Python for Beginners: When and How to Use Tuples](https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/)

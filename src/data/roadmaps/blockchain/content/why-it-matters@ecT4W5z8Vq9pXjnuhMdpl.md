@@ -7,5 +7,5 @@ Visit the following resources to learn more:
 - [@article@Why Blockchain?](https://chain.link/education-hub/blockchain)
 - [@article@Web3/Crypto: Why Bother?](https://continuations.com/post/671863718643105792/web3crypto-why-bother)
 - [@article@Why is Blockchain Important and Why Does it Matter](https://www.simplilearn.com/tutorials/blockchain-tutorial/why-is-blockchain-important)
-- [@video@Cyfirn Updraft | The Purpose of Smart Contracts](https://updraft.cyfrin.io/courses/blockchain-basics/basics/the-purpose-of-smart-contracts)
+- [@video@Cyfrin Updraft | The Purpose of Smart Contracts](https://updraft.cyfrin.io/courses/blockchain-basics/what-is-a-blockchain/the-purpose-of-smart-contracts)
 - [@feed@Explore top posts about Blockchain](https://app.daily.dev/tags/blockchain?ref=roadmapsh)
