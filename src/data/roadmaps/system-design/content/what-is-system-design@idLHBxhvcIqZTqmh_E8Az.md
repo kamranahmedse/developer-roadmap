@@ -10,3 +10,4 @@ It is also one of the important aspects of the interview process for software en
 
 
 - [@article@System Design: Complete Guide with Patterns, Examples, and Techniques](https://swimm.io/learn/system-design/system-design-complete-guide-with-patterns-examples-and-techniques)
+- [@article@A comprehensive guide to system design](https://www.crio.do/blog/a-comprehensive-guide-to-system-design/)
