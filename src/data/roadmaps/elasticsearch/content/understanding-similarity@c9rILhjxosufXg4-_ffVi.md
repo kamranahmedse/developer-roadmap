@@ -1,0 +1,3 @@
+# Understanding Similarity
+
+Similarity in information retrieval refers to the algorithm used to calculate the relevance score between a search query and a document. It determines how closely a document matches the search terms, influencing the order in which search results are presented. Different similarity algorithms consider factors like term frequency, inverse document frequency, and field length to produce a score reflecting the degree of relevance.

@@ -1,0 +1,3 @@
+# KQL
+
+Kibana Query Language (KQL) is a query language used within Kibana to search and filter data in Elasticsearch. It allows users to construct queries using a human-readable syntax, making it easier to find specific information within their Elasticsearch indices without needing to write complex JSON-based Elasticsearch queries. KQL supports features like free text search, field-based filtering, boolean operators, and range queries.

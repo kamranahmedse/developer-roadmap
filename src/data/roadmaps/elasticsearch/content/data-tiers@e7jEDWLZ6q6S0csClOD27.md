@@ -1,0 +1,3 @@
+# Data Tiers
+
+Data tiers in Elasticsearch refer to the strategy of categorizing and storing data based on its access frequency and importance. This approach involves segregating data into different storage types (like hot, warm, cold, and frozen) to optimize performance, cost, and resource utilization. By aligning data storage with its usage patterns, organizations can efficiently manage large volumes of data while maintaining acceptable query speeds and minimizing infrastructure expenses.

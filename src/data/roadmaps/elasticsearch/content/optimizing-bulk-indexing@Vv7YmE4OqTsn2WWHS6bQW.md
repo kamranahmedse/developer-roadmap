@@ -1,0 +1,3 @@
+# Optimizing Bulk Indexing
+
+Bulk indexing in Elasticsearch is the process of sending multiple indexing, updating, or deleting operations in a single request. Optimizing this process involves tuning various parameters and strategies to maximize throughput and minimize resource consumption, ensuring data is efficiently loaded into Elasticsearch. This includes adjusting batch sizes, managing thread pools, and leveraging techniques like request routing and refresh interval adjustments.

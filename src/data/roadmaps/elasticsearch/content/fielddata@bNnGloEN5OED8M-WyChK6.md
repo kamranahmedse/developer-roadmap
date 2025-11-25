@@ -1,0 +1,3 @@
+# Fielddata
+
+Fielddata is an on-disk data structure used by Elasticsearch to enable aggregations, sorting, and scripting on text fields. Because text fields are analyzed (broken down into individual terms), Elasticsearch needs a way to quickly access all the terms for a specific document when performing these operations. Fielddata loads all the terms for a field into memory, allowing for fast access during these operations.

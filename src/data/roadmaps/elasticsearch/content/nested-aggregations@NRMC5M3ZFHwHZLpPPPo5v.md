@@ -1,0 +1,3 @@
+# Nested Aggregations
+
+Nested aggregations allow you to perform aggregations on nested objects within your documents. These nested objects are stored as separate documents internally by Elasticsearch, and nested aggregations provide a way to access and analyze the data within these nested structures as if they were part of the parent document. This is particularly useful when you have complex data structures where related information is embedded within a single document.

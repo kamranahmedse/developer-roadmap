@@ -1,0 +1,3 @@
+# Hybrid Search
+
+Hybrid search combines multiple search techniques to improve the relevance and accuracy of search results. It leverages the strengths of different approaches, such as keyword-based search and semantic search, to provide a more comprehensive and nuanced understanding of the user's query and the available data. By blending these methods, hybrid search aims to overcome the limitations of any single approach and deliver more relevant and meaningful results.

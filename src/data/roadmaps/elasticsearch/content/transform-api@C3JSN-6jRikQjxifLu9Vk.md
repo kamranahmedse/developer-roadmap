@@ -1,0 +1,3 @@
+# Transform API
+
+The Transform API in Elasticsearch provides a way to summarize and transform data from one or more Elasticsearch indices into a new index. It essentially automates the process of creating aggregated views of your data, allowing you to perform tasks like data reduction, feature engineering, and creating summary indices for faster analysis and visualization. This API enables you to create new indices that contain pre-computed aggregations and transformations of your source data.

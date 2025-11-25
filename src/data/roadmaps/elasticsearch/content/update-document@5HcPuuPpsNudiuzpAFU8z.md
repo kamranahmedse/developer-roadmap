@@ -1,0 +1,3 @@
+# Update Document
+
+Updating a document in Elasticsearch involves modifying an existing document's data. You can achieve this using the Update API, which allows you to change specific fields or the entire document. The API uses a script or a partial document to specify the changes. When using a script, you can perform complex updates based on the document's current state. Alternatively, providing a partial document will merge the provided fields with the existing document. Elasticsearch then reindexes the document with the updated information.

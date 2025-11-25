@@ -1,0 +1,3 @@
+# Custom Analyzers
+
+Custom analyzers in Elasticsearch provide a way to define how text is processed both when indexing documents and when searching. They allow you to combine character filters, tokenizers, and token filters in a specific order to tailor the analysis process to your specific needs, such as handling language-specific nuances or removing unwanted characters. This customization ensures that your search results are more relevant and accurate.

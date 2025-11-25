@@ -1,0 +1,3 @@
+# Event Query Language (EQL)
+
+Event Query Language (EQL) is a powerful query language designed for security event analysis and threat hunting. It allows users to search for sequences of events that match specific patterns, enabling the detection of complex attack behaviors. EQL focuses on identifying relationships and dependencies between events over time, making it well-suited for uncovering malicious activities within large datasets.
