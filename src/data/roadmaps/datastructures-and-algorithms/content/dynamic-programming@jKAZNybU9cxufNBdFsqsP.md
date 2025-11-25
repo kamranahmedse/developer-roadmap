@@ -1,8 +1,8 @@
 # Dynamic Programming
 
-**Dynamic Programming** is a powerful problem-solving method that solves complex problems by breaking them down into simpler subproblems and solving each subproblem only once, storing their results using a memory-based data structure (like an array or a dictionary). The principle of dynamic programming is based on *Bellman's Principle of Optimality* which provides a method to solve optimization problems. In practical terms, this approach avoids repetitive computations by storing the results of expensive function calls. This technique is widely used in optimization problems where the same subproblem may occur multiple times. Dynamic Programming is used in numerous fields including mathematics, economics, and computer science.
+**Dynamic Programming** is a powerful problem-solving method that solves complex problems by breaking them down into simpler subproblems and solving each subproblem only once, storing their results using a memory-based data structure (like an array or a dictionary). The principle of dynamic programming is based on _Bellman's Principle of Optimality_ which provides a method to solve optimization problems. In practical terms, this approach avoids repetitive computations by storing the results of expensive function calls. This technique is widely used in optimization problems where the same subproblem may occur multiple times. Dynamic Programming is used in numerous fields including mathematics, economics, and computer science.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Getting Started with Dynamic Programming in Data Structures and Algorithms](https://medium.com/@PythonicPioneer/getting-started-with-dynamic-programming-in-data-structures-and-algorithms-126c7a16775c)
 - [@video@What Is Dynamic Programming and How To Use It](https://www.youtube.com/watch?v=vYquumk4nWw&t=4s)
