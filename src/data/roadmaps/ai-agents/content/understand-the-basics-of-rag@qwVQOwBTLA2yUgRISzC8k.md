@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@What Is RAG in AI and How to Use It?](https://www.v7labs.com/blog/what-is-rag)
 - [@article@An Introduction to RAG and Simple & Complex RAG](https://medium.com/enterprise-rag/an-introduction-to-rag-and-simple-complex-rag-9c3aa9bd017b)
 - [@video@Learn RAG From Scratch](https://www.youtube.com/watch?v=sVcwVQRHIc8)
+- [@video@What is Retrieval-Augmented Generation (RAG)?](https://www.youtube.com/watch?v=T-D1OfcDW1M)
