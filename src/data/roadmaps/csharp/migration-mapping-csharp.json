@@ -1,0 +1,19 @@
+{
+  "csharp-fundamentals": "1",
+  "csharp-fundamentals:basic-syntax": "1.1",
+  "csharp-fundamentals:data-types": "1.2",
+  "csharp-fundamentals:conditionals": "1.3",
+  "csharp-fundamentals:loops": "1.4",
+
+  "csharp-oop": "2",
+  "csharp-oop:inheritance": "2.1",
+  "csharp-oop:interfaces": "2.2",
+
+  "csharp-advanced": "3",
+  "csharp-advanced:async": "3.1",
+  "csharp-advanced:linq": "3.2",
+
+  "csharp-backend": "4",
+  "csharp-backend:aspnet-core": "4.1",
+  "csharp-backend:ef-core": "4.2"
+}

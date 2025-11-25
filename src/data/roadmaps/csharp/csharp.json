@@ -1,0 +1,51 @@
+{
+  "jsonUrl": "/jsons/roadmaps/csharp.json",
+  "pdfUrl": "/pdfs/roadmaps/csharp.pdf",
+  "order": 10,
+  "renderer": "editor",
+  "briefTitle": "C#",
+  "briefDescription": "Step by step guide to becoming a C# Developer in 2025",
+  "title": "C# Developer",
+  "description": "Step by step guide to becoming a C# developer in 2025",
+  "hasTopics": true,
+  "courses": [],
+  "question": {
+    "title": "What is a C# Developer?",
+    "description": "A C# developer builds software using the C# language and .NET ecosystem across web, desktop, gaming, and cloud platforms."
+  },
+  "dimensions": {
+    "width": 968,
+    "height": 2000
+  },
+  "schema": {
+    "headline": "C# Developer Roadmap",
+    "description": "Learn how to become a C# Developer with this interactive step-by-step guide.",
+    "imageUrl": "https://roadmap.sh/roadmaps/csharp.png",
+    "datePublished": "2025-01-01",
+    "dateModified": "2025-01-01"
+  },
+  "seo": {
+    "title": "Learn to become a modern C# developer",
+    "description": "Community-driven resources, guides, interview questions, and skills to learn modern C# development.",
+    "keywords": [
+      "csharp",
+      "dotnet",
+      "c# roadmap",
+      "c# developer"
+    ]
+  },
+  "relatedRoadmaps": [
+    "backend",
+    "dotnet",
+    "devops"
+  ],
+  "sitemap": {
+    "priority": 1,
+    "changefreq": "monthly"
+  },
+  "tags": [
+    "roadmap",
+    "skill-roadmap",
+    "csharp"
+  ]
+}
