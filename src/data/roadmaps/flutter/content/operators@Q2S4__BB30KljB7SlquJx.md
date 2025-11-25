@@ -4,4 +4,4 @@ Flutter, and Dart, utilize various operators to manipulate data: arithmetic oper
 
 Visit the following resources to learn more:
 
-- [@official@Operators](https://dart.dev/guides/language/language-tour#operators)
+- [@official@Operators](https://dart.dev/language/operators)
