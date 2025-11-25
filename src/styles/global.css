@@ -198,3 +198,8 @@ a > code:before {
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+.prose-xl
+  :where(table):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  font-size: 0.875em !important;
+}

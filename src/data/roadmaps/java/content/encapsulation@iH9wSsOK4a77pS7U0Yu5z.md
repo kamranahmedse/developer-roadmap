@@ -5,4 +5,3 @@ Encapsulation is a fundamental concept in object-oriented programming where data
 Visit the following resources to learn more:
 
 - [@article@Java - Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm)
-

@@ -7,6 +7,6 @@ There are several frameworks and libraries available for server-side rendering R
 Visit the following resources to learn more:
 
 - [@article@Next.js](https://nextjs.org/)
-- [@video@Next.js 14 Full Course 2024](https://www.youtube.com/watch?v=wm5gMKuwSYk)
 - [@article@Remix](https://remix.run/)
+- [@video@Next.js 14 Full Course 2024](https://www.youtube.com/watch?v=wm5gMKuwSYk)
 - [@video@Remix Crash Course](https://www.youtube.com/watch?v=RBYJTop1e-g)

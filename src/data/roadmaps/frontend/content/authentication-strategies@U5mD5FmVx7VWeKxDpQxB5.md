@@ -5,7 +5,7 @@ Authentication strategies verify a user's identity to grant access. Common metho
 Visit the following resources to learn more:
 
 - [@roadmap.sh@Basic Authentication](https://roadmap.sh/guides/basic-authentication)
-- [@roadmap.sh@Session Based Authentication](https://roadmap.sh/guides/session-authentication)
+- [@roadmap.sh@Session Based Authentication](https://roadmap.sh/guides/session-based-authentication-visually-explained)
 - [@roadmap.sh@Token Based Authentication](https://roadmap.sh/guides/token-authentication)
 - [@roadmap.sh@JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
 - [@roadmap.sh@OAuth](https://roadmap.sh/guides/oauth)

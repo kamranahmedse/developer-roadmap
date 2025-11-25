@@ -5,5 +5,5 @@ Headless component libraries have some powerful state, logic and data management
 Visit the following resources to learn more:
 
 - [@article@What are headless components?](https://dev.to/verthon/headless-ui-libraries-the-key-to-flexible-and-accessible-user-interfaces-546p)
-- [@video@Rise of Headless Components](https://www.youtube.com/watch?v=_WtVG_pKsxM)
 - [@article@Headless Components: A Comprehensive Guide](https://blog.logrocket.com/the-complete-guide-to-building-headless-interface-components-in-react/)
+- [@video@Rise of Headless Components](https://www.youtube.com/watch?v=_WtVG_pKsxM)

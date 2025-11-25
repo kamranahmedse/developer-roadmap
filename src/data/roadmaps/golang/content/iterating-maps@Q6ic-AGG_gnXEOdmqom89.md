@@ -4,5 +4,5 @@ Use `for range` to iterate over maps, returns key and value pairs. Iteration ord
 
 Visit the following resources to learn more:
 
-- [Iterating Over Maps in Go: Methods, Order, and Best Practices](https://leapcell.io/blog/iterating-over-maps-in-go-methods-order-and-best-practices)
--[https://freshman.tech/snippets/go/iterate-over-map/](https://freshman.tech/snippets/go/iterate-over-map/)
+- [@article@Iterating Over Maps in Go: Methods, Order, and Best Practices](https://leapcell.io/blog/iterating-over-maps-in-go-methods-order-and-best-practices)
+- [@article@How to iterate over and order a map in Go](https://freshman.tech/snippets/go/iterate-over-map/)

@@ -73,6 +73,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [GraphQL Roadmap](https://roadmap.sh/graphql)
 - [Android Roadmap](https://roadmap.sh/android)
 - [iOS Roadmap](https://roadmap.sh/ios)
+- [Swift/Swift UI Roadmap](https://roadmap.sh/swift-ui)
 - [Flutter Roadmap](https://roadmap.sh/flutter)
 - [Go Roadmap](https://roadmap.sh/golang)
 - [Rust Roadmap](https://roadmap.sh/rust)
@@ -96,6 +97,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [DevRel Engineer Roadmap](https://roadmap.sh/devrel)
 - [AI Red Teaming Roadmap](https://roadmap.sh/ai-red-teaming)
 - [AI Agents Roadmap](https://roadmap.sh/ai-agents)
+- [Bash/Shell Roadmap](https://roadmap.sh/shell-bash)
 
 There are also interactive best practices:
 
