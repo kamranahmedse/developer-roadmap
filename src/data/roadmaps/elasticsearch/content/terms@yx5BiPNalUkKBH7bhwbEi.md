@@ -1,0 +1,3 @@
+# Terms Aggregation
+
+The Terms aggregation is a multi-bucket aggregation that groups documents based on the terms found in a specific field. It analyzes the field's values and creates buckets for each unique term, counting the number of documents that contain that term. This allows you to identify the most frequent terms within your data and gain insights into the distribution of values in a field.

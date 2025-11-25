@@ -1,0 +1,3 @@
+# Leaf vs. Compound Queries
+
+Leaf queries in Elasticsearch target specific fields with simple search criteria, like finding documents where a field matches a particular value or falls within a certain range. Compound queries, on the other hand, combine multiple leaf or other compound queries to create more complex search logic, allowing you to specify how these individual queries should interact (e.g., must all match, at least one must match, or none should match).

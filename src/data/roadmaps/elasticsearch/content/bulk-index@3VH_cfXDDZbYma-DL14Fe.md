@@ -1,0 +1,3 @@
+# Bulk Indexing
+
+Bulk indexing in Elasticsearch is a way to send multiple indexing, updating, or deleting operations to the Elasticsearch cluster in a single request. Instead of sending each document individually, you batch them together, which significantly reduces the overhead of network communication and processing, leading to faster indexing speeds. This approach is particularly useful when dealing with large datasets or when needing to ingest data quickly.

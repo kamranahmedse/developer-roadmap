@@ -1,0 +1,3 @@
+# BM25 Algorithm
+
+BM25 (Best Matching 25) is a ranking function used by search engines to estimate the relevance of documents to a given search query. It's a bag-of-words retrieval function that scores documents based on the query terms appearing in each document, taking into account term frequency and document length. The algorithm adjusts for document length, preventing longer documents from being unfairly favored, and also considers how frequently a term appears in the entire collection of documents.

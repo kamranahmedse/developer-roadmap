@@ -1,0 +1,3 @@
+# Create Index
+
+Creating an index in Elasticsearch using the Document API involves sending a PUT request to the Elasticsearch server. This request specifies the name of the index you want to create. You can also include settings and mappings in the request body to configure how the index should store and analyze your data. If the index doesn't already exist, Elasticsearch will create it based on the provided configuration. If the index exists, you will get an error.

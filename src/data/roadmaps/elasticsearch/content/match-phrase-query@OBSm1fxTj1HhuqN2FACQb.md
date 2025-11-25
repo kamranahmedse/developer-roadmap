@@ -1,0 +1,3 @@
+# Match Phrase Query
+
+The Match Phrase query searches for documents that contain the exact phrase specified in the query. This means the terms must appear in the precise order and be adjacent to each other, as defined in the query string. It's a stricter form of matching compared to a standard match query, which only requires the terms to be present in the document, regardless of their order or proximity.

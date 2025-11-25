@@ -1,0 +1,3 @@
+# Index Document
+
+To add data to Elasticsearch, you use the Index API. This API lets you create a new document within a specific index. You need to specify the index name, a unique ID for the document (or let Elasticsearch generate one), and the document's content in JSON format. When you send this information to Elasticsearch via a PUT or POST request, it analyzes the data, indexes it, and makes it searchable.

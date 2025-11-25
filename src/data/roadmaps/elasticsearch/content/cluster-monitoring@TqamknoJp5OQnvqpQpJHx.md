@@ -1,0 +1,3 @@
+# Cluster Monitoring
+
+Cluster monitoring involves continuously observing the health, performance, and resource utilization of an Elasticsearch cluster. This process helps identify potential issues, bottlenecks, and anomalies that could impact the cluster's stability and responsiveness. Effective monitoring allows administrators to proactively address problems, optimize resource allocation, and ensure the cluster operates efficiently.

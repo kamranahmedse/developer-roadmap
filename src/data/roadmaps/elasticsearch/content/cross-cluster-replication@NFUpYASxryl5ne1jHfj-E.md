@@ -1,0 +1,3 @@
+# Cross-Cluster Replication
+
+Cross-cluster replication (CCR) allows you to replicate indices and their data from one Elasticsearch cluster to another. This enables scenarios like disaster recovery, where a secondary cluster can take over if the primary fails, and data locality, where data is replicated closer to users in different geographic regions for faster access. CCR ensures data consistency across clusters, providing a reliable and efficient way to maintain data availability and resilience.

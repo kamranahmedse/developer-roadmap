@@ -1,0 +1,3 @@
+# Range/Date Range Aggregations
+
+Range and Date Range aggregations are used to categorize documents into buckets based on numeric or date values falling within specified ranges. These aggregations allow you to define custom intervals for grouping data, providing flexibility in analyzing distributions and trends across your dataset. You can define specific start and end points for each range, enabling you to create meaningful segments for your analysis.

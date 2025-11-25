@@ -1,0 +1,3 @@
+# Roles & Users
+
+Roles and users are fundamental components of security in Elasticsearch. Roles define a set of privileges, specifying what actions a user can perform on which resources (like indices or clusters). Users are then assigned one or more roles, granting them the combined permissions of those roles. This system allows administrators to control access to data and cluster operations, ensuring that only authorized individuals can perform specific tasks within the Elasticsearch environment.

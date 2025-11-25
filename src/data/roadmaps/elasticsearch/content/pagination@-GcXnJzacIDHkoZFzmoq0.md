@@ -1,0 +1,3 @@
+# Pagination
+
+Pagination divides search results into discrete pages, allowing users to navigate through large datasets in manageable chunks. Instead of displaying all results at once, which can be overwhelming and resource-intensive, pagination presents a subset of results per page, improving user experience and reducing server load. This involves specifying the starting point (from) and the number of results to return (size) for each page.

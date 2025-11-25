@@ -1,0 +1,3 @@
+# Bool Query Filter Context
+
+The `filter` context within a Bool query in Elasticsearch is used to narrow down the documents that match a query without affecting the relevance score. It's like a pre-filter that efficiently excludes documents that don't meet specific criteria before the scoring process even begins, making it ideal for exact matches, range queries, and other conditions where relevance isn't a factor.

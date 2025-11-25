@@ -1,0 +1,3 @@
+# API Keys
+
+API keys in Elasticsearch provide a mechanism for authentication and authorization, allowing users or applications to securely access Elasticsearch APIs. They are a more granular alternative to using usernames and passwords, enabling you to restrict access to specific resources and actions. API keys can be configured with specific roles and privileges, limiting what a user or application can do within the Elasticsearch cluster.

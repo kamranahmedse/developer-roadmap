@@ -1,0 +1,3 @@
+# The Analyze API
+
+The Analyze API in Elasticsearch allows you to break down a text string into its individual terms, which are the basic building blocks for searching and indexing. It simulates the analysis process that Elasticsearch performs when indexing or searching documents, letting you see how a specific analyzer would process a given piece of text. This is useful for testing and debugging your analysis configuration.

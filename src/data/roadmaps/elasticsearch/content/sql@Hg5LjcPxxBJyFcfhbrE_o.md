@@ -1,0 +1,3 @@
+# Elasticsearch SQL
+
+Elasticsearch SQL allows you to query Elasticsearch data using the familiar SQL syntax. Instead of using Elasticsearch's native query DSL (Domain Specific Language), you can write SQL statements to retrieve, filter, and aggregate data stored in Elasticsearch indices. This provides a more accessible way for users familiar with SQL to interact with Elasticsearch, enabling them to leverage their existing skills to analyze and extract insights from their data.
