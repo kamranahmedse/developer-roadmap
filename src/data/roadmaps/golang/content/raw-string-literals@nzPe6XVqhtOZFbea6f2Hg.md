@@ -5,4 +5,4 @@ Enclosed in backticks (\`) and interpret characters literally without escape seq
 Visit the following resources to learn more:
 
 - [@official@Strings in Go](https://go.dev/blog/strings#what-is-a-string)
-- [@article@Golang Quick Reference: Strings. Introduction ](https://medium.com/@golangda/golang-quick-reference-strings-0d68bb036c29)
+- [@article@Golang Quick Reference: Strings. Introduction](https://medium.com/@golangda/golang-quick-reference-strings-0d68bb036c29)

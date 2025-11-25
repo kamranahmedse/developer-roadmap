@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@String](https://go.dev/blog/strings)
 - [@official@Go Speculation](https://go.dev/ref/spec)
-- [@article@Golang Quick Reference: Strings. Introduction ](https://medium.com/@golangda/golang-quick-reference-strings-0d68bb036c29)
+- [@article@Golang Quick Reference: Strings. Introduction](https://medium.com/@golangda/golang-quick-reference-strings-0d68bb036c29)
