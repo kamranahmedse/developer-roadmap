@@ -1,6 +1,6 @@
 # Repeat Commands
 
-In the shell, you can easily access and reuse previously executed commands. The most common way to do this is using the up and down arrow keys to navigate through your command history.  Alternatively, you can use the `history` command to view a numbered list of past commands, and then execute a specific command by typing `!n`, where `n` is the command's number in the history list.  You can also use `!!` to repeat the last command, or `!string` to execute the most recent command that starts with "string".
+In the shell, you can easily access and reuse previously executed commands. The most common way to do this is using the up and down arrow keys to navigate through your command history. Alternatively, you can use the `history` command to view a numbered list of past commands, and then execute a specific command by typing `!n`, where `n` is the command's number in the history list. You can also use `!!` to repeat the last command, or `!string` to execute the most recent command that starts with "string".
 
 Visit the following resources to learn more:
 

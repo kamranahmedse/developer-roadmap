@@ -4,10 +4,10 @@ Bash, short for Bourne Again Shell, is a command-line interpreter and a shell sc
 
 Visit the following resources to learn more:
 
+- [@book@Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)
 - [@official@Bash Docs](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
 - [@article@What is Bash?](https://opensource.com/resources/what-bash)
 - [@article@What Is Bash Used For?](https://www.codecademy.com/resources/blog/what-is-bash-used-for)
 - [@article@Bash Tutorial](https://www.w3schools.com/bash/)
-- [@book@Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf)
 - [@video@Bash Scripting Tutorial for Beginners](https://www.youtube.com/watch?v=tK9Oc6AEnR4)
 - [@video@Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)

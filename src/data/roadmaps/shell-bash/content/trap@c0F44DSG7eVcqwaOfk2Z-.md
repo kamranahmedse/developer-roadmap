@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Bash trap Command Explained](https://phoenixnap.com/kb/bash-trap-command)
 - [@article@The Bash Trap Command](https://www.linuxjournal.com/content/bash-trap-command)
-- [@video@Trapping signals with `trap` in Bash! Responding to Unix signals. You Suck at Programming #064](https://www.youtube.com/watch?v=aXovP1sUtoE)
+- [@video@Trapping signals with trap in Bash! Responding to Unix signals. You Suck at Programming #064](https://www.youtube.com/watch?v=aXovP1sUtoE)

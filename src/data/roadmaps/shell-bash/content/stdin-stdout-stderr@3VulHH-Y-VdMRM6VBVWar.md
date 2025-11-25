@@ -1,6 +1,6 @@
 # stdin, stdout, and stderr
 
-In computing, standard streams are preconnected input and output communication channels between a computer program and its environment. Specifically, *stdin* (standard input) is the channel through which a program receives input, typically from the keyboard or another program. *stdout* (standard output) is the channel through which a program writes its normal output, usually displayed on the screen. *stderr* (standard error) is the channel through which a program writes error messages and diagnostic information, also typically displayed on the screen, but kept separate from *stdout* to allow for easier handling of errors.
+In computing, standard streams are preconnected input and output communication channels between a computer program and its environment. Specifically, _stdin_ (standard input) is the channel through which a program receives input, typically from the keyboard or another program. _stdout_ (standard output) is the channel through which a program writes its normal output, usually displayed on the screen. _stderr_ (standard error) is the channel through which a program writes error messages and diagnostic information, also typically displayed on the screen, but kept separate from _stdout_ to allow for easier handling of errors.
 
 Visit the following resources to learn more:
 
