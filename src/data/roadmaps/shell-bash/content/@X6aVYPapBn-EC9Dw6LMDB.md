@@ -1,6 +1,6 @@
 # Asterisk Wildcard
 
-The asterisk (*) is a wildcard character that represents zero or more characters. It's used in commands and file paths to match multiple files or directories based on a pattern. For example, `*.txt` will match all files ending with ".txt", and `data*` will match files or directories starting with "data".
+The asterisk (\*) is a wildcard character that represents zero or more characters. It's used in commands and file paths to match multiple files or directories based on a pattern. For example, `*.txt` will match all files ending with ".txt", and `data*` will match files or directories starting with "data".
 
 Visit the following resources to learn more:
 

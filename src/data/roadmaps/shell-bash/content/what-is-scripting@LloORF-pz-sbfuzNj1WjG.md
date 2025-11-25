@@ -8,4 +8,5 @@ Visit the following resources to learn more:
 - [@article@What is scripting?](https://coralogix.com/blog/what-is-scripting/)
 - [@article@What's the difference between Programming and Scripting?](https://www.youtube.com/watch?v=7-0iBZxNq74)
 - [@article@Bash Scripting Tutorial – Linux Shell Script and Command Line for Beginners](https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/)
+- [@video@Bash Scripting on Linux](https://www.youtube.com/playlist?list=PLT98CRl2KxKGj-VKtApD8-zCqSaN2mD4w)
 - [@video@Scripting Languages](https://www.youtube.com/watch?v=yFWKYs_5DBg)
