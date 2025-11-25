@@ -4,4 +4,4 @@ Prompt injection is a security vulnerability where malicious users manipulate LL
 
 Visit the following resources to learn more:
 
-- [@video@What Is a Prompt Injection Attack?](https://youtu.be/jrHRe9lSqqA?si=6ZN2qrorBDbynFWv)
+- [@video@What Is a Prompt Injection Attack?](https://www.youtube.com/watch?v=jrHRe9lSqqA)
