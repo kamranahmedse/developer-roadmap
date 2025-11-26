@@ -1,20 +1,17 @@
-name: Sync on Roadmap Changes
+name: Sync Repo to Database
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - 'src/data/roadmaps/**'
+  workflow_dispatch:
+    inputs:
+      roadmap_slug:
+        description: "The slug of the roadmap to sync (e.g., frontend, backend)"
+        required: true
 
 jobs:
-  sync-on-changes:
+  sync-roadmap:
     runs-on: ubuntu-latest
-    if: github.actor != 'github-actions[bot]' && github.actor != 'dependabot[bot]'
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2  # Fetch previous commit to compare changes
 
       - name: Setup pnpm@v9
         uses: pnpm/action-setup@v4
@@ -28,40 +25,33 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
-      - name: Get changed files
-        id: changed-files
+      - name: Get all roadmap files
+        id: roadmap-files
         run: |
-          echo "Getting changed files in /src/data/roadmaps/"
-          
-          # Get changed files between HEAD and previous commit
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- src/data/roadmaps/)
-          
-          if [ -z "$CHANGED_FILES" ]; then
-            echo "No changes found in roadmaps directory"
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            exit 0
+          ROADMAP_DIR="src/data/roadmaps/${{ inputs.roadmap_slug }}"
+
+          if [ ! -d "$ROADMAP_DIR" ]; then
+            echo "Error: Roadmap directory '$ROADMAP_DIR' does not exist"
+            exit 1
           fi
-          
-          echo "Changed files:"
-          echo "$CHANGED_FILES"
-          
-          # Convert to space-separated list for the script
-          CHANGED_FILES_LIST=$(echo "$CHANGED_FILES" | tr '\n' ',')
-          
-          echo "has_changes=true" >> $GITHUB_OUTPUT
-          echo "changed_files=$CHANGED_FILES_LIST" >> $GITHUB_OUTPUT
+
+          echo "Getting all files in $ROADMAP_DIR"
+
+          ALL_FILES=$(find "$ROADMAP_DIR" -type f | tr '\n' ',')
+
+          echo "Files to sync:"
+          echo "$ALL_FILES"
+
+          echo "files=$ALL_FILES" >> $GITHUB_OUTPUT
 
       - name: Install Dependencies
-        if: steps.changed-files.outputs.has_changes == 'true'
         run: |
           echo "Installing Dependencies"
           pnpm install
 
-      - name: Run sync script with changed files
-        if: steps.changed-files.outputs.has_changes == 'true'
+      - name: Run sync script
         run: |
-          echo "Running sync script for changed roadmap files"
-          echo "Changed files: ${{ steps.changed-files.outputs.changed_files }}"
-          
-          # Run your script with the changed file paths
-          npm run sync:repo-to-database -- --files="${{ steps.changed-files.outputs.changed_files }}" --secret=${{ secrets.GH_SYNC_SECRET }}
+          echo "Running sync script for roadmap: ${{ inputs.roadmap_slug }}"
+          echo "Files: ${{ steps.roadmap-files.outputs.files }}"
+
+          npm run sync:repo-to-database -- --files="${{ steps.roadmap-files.outputs.files }}" --secret=${{ secrets.GH_SYNC_SECRET }}
