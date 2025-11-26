@@ -1,6 +1,6 @@
 # GitHub Pages
 
-GitHub Pages is a free static site hosting service that takes HTML, CSS, and JavaScript files directly from a GitHub repository and publishes them as a website. It's ideal for hosting project documentation, portfolios, blogs, and other static websites. Pages supports custom domains, HTTPS, and Jekyll for automatic site generation. Each repository can have one project site, while user and organization accounts get one primary site at username.github.io.
+GitHub Pages is a free static site hosting service that takes HTML, CSS, and JavaScript files directly from a GitHub repository and publishes them as a website. It's ideal for hosting project documentation, portfolios, blogs, and other static websites. Pages supports custom domains, HTTPS, and Jekyll for automatic site generation. Each repository can have one project site, while user and organization accounts get one primary site at [username.github.io](http://username.github.io).
 
 Visit the following resources to learn more:
 
