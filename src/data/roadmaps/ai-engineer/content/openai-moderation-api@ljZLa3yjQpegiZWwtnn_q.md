@@ -5,4 +5,4 @@ The OpenAI Moderation API helps detect and filter harmful content by analyzing t
 Visit the following resources to learn more:
 
 - [@official@Moderation](https://platform.openai.com/docs/guides/moderation)
-- [@article@How to user the moderation API](https://cookbook.openai.com/examples/how_to_use_moderation)
+- [@article@How to use the moderation API](https://cookbook.openai.com/examples/how_to_use_moderation)

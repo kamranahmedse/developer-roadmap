@@ -1,0 +1,3 @@
+# Search Analyzer
+
+A search analyzer in Elasticsearch is responsible for processing the query text provided by a user before it's used to search the index. It transforms the query text into a format that matches the indexed data, ensuring relevant results are retrieved. This process typically involves character filtering, tokenization, and token filtering, similar to the analysis process performed on documents during indexing, but tailored for search queries.

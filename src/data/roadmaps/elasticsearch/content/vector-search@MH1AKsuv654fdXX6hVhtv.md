@@ -1,0 +1,3 @@
+# Vector Search
+
+Vector search is a method of searching for data based on its meaning or context, rather than exact keyword matches. It involves representing data as high-dimensional vectors, where each vector captures the semantic properties of the data. Search queries are also converted into vectors, and the system finds data points with vectors that are "close" to the query vector, indicating semantic similarity.

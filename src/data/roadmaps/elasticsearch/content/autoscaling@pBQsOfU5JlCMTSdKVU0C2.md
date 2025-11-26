@@ -1,0 +1,3 @@
+# Autoscaling
+
+Autoscaling is the ability of a system to automatically adjust its resources (like compute, memory, or storage) based on the current demand. This means that the system can scale up (add more resources) when demand increases and scale down (remove resources) when demand decreases, all without manual intervention. This ensures optimal performance and cost efficiency by only using the resources that are actually needed.

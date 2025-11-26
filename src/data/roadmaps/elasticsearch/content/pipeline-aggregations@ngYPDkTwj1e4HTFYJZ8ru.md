@@ -1,0 +1,3 @@
+# Pipeline Aggregations
+
+Pipeline aggregations in Elasticsearch take the results of other aggregations as their input, allowing you to perform calculations and derive new insights based on the aggregated data. Instead of operating on the documents themselves, they process the output of other aggregations, enabling you to create complex analytical pipelines within your search queries. This allows for calculations like moving averages, derivatives, and cumulative sums to be performed directly within Elasticsearch.

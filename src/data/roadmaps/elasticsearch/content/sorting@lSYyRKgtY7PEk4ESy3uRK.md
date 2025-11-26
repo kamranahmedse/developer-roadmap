@@ -1,0 +1,3 @@
+# Sorting
+
+Sorting in Elasticsearch lets you order the search results based on the values of specific fields. By default, Elasticsearch sorts results by relevance score, but you can change this to sort by other criteria like date, price, or any other field in your documents. This allows you to present the most relevant or useful information to users based on their specific needs, such as showing the newest products first or listing items from lowest to highest price.

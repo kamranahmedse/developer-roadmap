@@ -1,0 +1,3 @@
+# Authentication
+
+Authentication is the process of verifying the identity of a user or system attempting to access a resource. It ensures that only authorized individuals or applications can gain entry by requiring them to prove who they are, typically through credentials like usernames and passwords, API keys, or certificates. This process confirms that the user or system is indeed who they claim to be before granting access.

@@ -1,0 +1,3 @@
+# Doc Values
+
+Doc values are a data structure in Elasticsearch that stores field values in a column-oriented fashion, optimized for aggregations, sorting, and scripting. Instead of storing the data alongside the inverted index, doc values are stored separately on disk, making them efficient for retrieving values for a large number of documents. This allows Elasticsearch to perform operations like sorting and aggregations much faster than if it had to retrieve the data from the inverted index.

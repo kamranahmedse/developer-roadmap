@@ -1,0 +1,3 @@
+# Semantic Search
+
+Semantic search aims to improve search accuracy by understanding the intent and contextual meaning of search queries. Instead of relying solely on keyword matching, it analyzes the relationships between words and concepts to deliver more relevant results. This involves using techniques like natural language processing (NLP) and machine learning to interpret the meaning behind the query and match it with documents that have similar meaning, even if they don't contain the exact keywords.

@@ -1,0 +1,3 @@
+# Mapping Explosion
+
+Mapping explosion in Elasticsearch refers to the uncontrolled growth of fields within an index's mapping. This typically happens when Elasticsearch automatically creates mappings for new fields as it encounters them in incoming documents. Suppose a large number of unique and unexpected field names are introduced. In that case, the index mapping can become excessively large, consuming significant memory and impacting cluster performance due to increased resource usage during mapping updates and search operations.

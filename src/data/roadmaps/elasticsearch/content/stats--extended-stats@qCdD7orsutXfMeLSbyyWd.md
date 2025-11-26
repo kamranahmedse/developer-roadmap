@@ -1,0 +1,3 @@
+# Stats and Extended Stats Aggregations
+
+Stats and Extended Stats aggregations are used to calculate various statistical measures from a set of numeric values. The Stats aggregation provides basic statistics like count, min, max, average, and sum. The Extended Stats aggregation builds upon this by adding standard deviation, sum of squares, variance, and other related metrics, offering a more comprehensive statistical overview of the data.

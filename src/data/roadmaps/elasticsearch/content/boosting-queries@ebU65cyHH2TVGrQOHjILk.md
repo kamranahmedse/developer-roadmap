@@ -1,0 +1,3 @@
+# Boosting Queries
+
+Boosting queries in Elasticsearch allows you to influence the relevance score of documents based on specific criteria. It works by increasing or decreasing the score of documents that match certain query clauses, effectively prioritizing some results over others. This helps to fine-tune search results to better align with user intent and improve the overall precision of your search.

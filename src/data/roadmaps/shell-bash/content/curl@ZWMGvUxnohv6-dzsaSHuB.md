@@ -5,8 +5,8 @@ curl is a command-line tool used to transfer data with URLs. It supports various
 Visit the following resources to learn more:
 
 - [@official@curl](https://curl.se/)
-- [@opensource@curl](https://github.com/curl/curl)
 - [@official@The Art Of Scripting HTTP Requests Using curl](https://curl.se/docs/httpscripting.html)
+- [@opensource@curl](https://github.com/curl/curl)
 - [@article@How to start using Curl and why: a hands-on introduction](https://medium.com/free-code-camp/how-to-start-using-curl-and-why-a-hands-on-introduction-ea1c913caaaa)
 - [@video@Supercharge Your Workflow with cURL | Understanding The cURL Command-Line Tool](https://www.youtube.com/watch?v=-nnJ82uc2ic)
 - [@video@You NEED to know how to use CURL!](https://www.youtube.com/watch?v=q2sqkvXzsw8)
