@@ -4,6 +4,6 @@ The "split brain" problem occurs in distributed systems when a cluster of nodes 
 
 Visit the following resources to learn more:
 
-- [@article@Avoiding the Elasticsearch split brain problem, and how to recover](https://bigdataboutique.com/blog/avoiding-the-elasticsearch-split-brain-problem-and-how-to-recover-f6451c)
 - [@official@Quorum-based decision making](https://www.elastic.co/docs/deploy-manage/distributed-architecture/discovery-cluster-formation/modules-discovery-quorums)
+- [@article@Avoiding the Elasticsearch split brain problem, and how to recover](https://bigdataboutique.com/blog/avoiding-the-elasticsearch-split-brain-problem-and-how-to-recover-f6451c)
 - [@article@Split-Brain in Distributed Systems](https://dzone.com/articles/split-brain-in-distributed-systems)

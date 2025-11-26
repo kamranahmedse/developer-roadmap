@@ -1,3 +1,3 @@
 # Avg, Sum, Min, and Max Aggregations
 
-These aggregations are fundamental tools for calculating statistical summaries of numerical data.  They compute the average (Avg), total (Sum), smallest value (Min), and largest value (Max) respectively, across a set of documents that match a query. These aggregations operate on numeric fields within your Elasticsearch indices, providing insights into the distribution and range of your data.
+These aggregations are fundamental tools for calculating statistical summaries of numerical data. They compute the average (Avg), total (Sum), smallest value (Min), and largest value (Max) respectively, across a set of documents that match a query. These aggregations operate on numeric fields within your Elasticsearch indices, providing insights into the distribution and range of your data.
