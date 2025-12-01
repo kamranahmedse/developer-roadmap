@@ -4,6 +4,7 @@ Container images are executable packages that include everything required to run
 
 Visit the following resources to learn more:
 
+- [@official@Docker Build Overview](https://docs.docker.com/build/concepts/overview)
 - [@official@Docker Image Builder](https://docs.docker.com/reference/cli/docker/buildx/build/)
 - [@official@Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 - [@opensource@Dockerfile Examples](https://github.com/dockersamples)
