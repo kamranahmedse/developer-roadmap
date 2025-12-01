@@ -4,6 +4,6 @@ Before you start learning React Native, you should have a basic knowledge of Jav
 
 Visit the following resources to learn more:
 
-- [@official@React Native Basics](https://reactnative.dev/docs/getting-started)
 - [@roadmap@Visit Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)
 - [@roadmap@Visit Dedicated React Roadmap](https://roadmap.sh/react)
+- [@official@React Native Basics](https://reactnative.dev/docs/getting-started)
