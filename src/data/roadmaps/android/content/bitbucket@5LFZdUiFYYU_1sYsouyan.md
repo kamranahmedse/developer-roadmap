@@ -4,5 +4,5 @@ Bitbucket is a web-based hosting service that is owned by Atlassian. Bitbucket u
 
 Visit the following resources to learn more:
 
-- [@official@Bitbucket](https://bitbucket.org/)  
+- [@official@Bitbucket](https://bitbucket.org/)
 - [@article@Bitbucket for Developers](https://www.atlassian.com/software/bitbucket)
