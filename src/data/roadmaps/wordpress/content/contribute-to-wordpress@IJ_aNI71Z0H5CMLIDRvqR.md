@@ -1,3 +1,3 @@
 # Contributing to WordPress
 
-Contributing to WordPress involves actively participating in the development and improvement of the WordPress platform. This can take many forms, from writing code and testing software to translating content and providing support to other users. It's a way to give back to the community and help shape the future of WordPress.
+To elevate your WordPress career, consider contributing directly to the WordPress project. This can involve submitting code to WordPress Core, improving documentation, or helping with translations. Engaging with the WordPress community through forums, online groups, and local meetups provides valuable networking and learning opportunities. Attending WordCamps and local WordPress meetups offers chances to learn from experts, connect with other professionals, and stay updated on the latest trends and best practices.
