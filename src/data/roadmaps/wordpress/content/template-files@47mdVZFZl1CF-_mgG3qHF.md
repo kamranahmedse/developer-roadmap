@@ -1,1 +1,3 @@
 # Template Files
+
+Template files are the building blocks of a WordPress theme, determining how your website's content is displayed. These files, written in PHP, HTML, and CSS, control the layout and design of different pages and sections of your site, such as the homepage, single posts, and archives. By modifying or creating template files, you can customize the appearance and functionality of your WordPress website.

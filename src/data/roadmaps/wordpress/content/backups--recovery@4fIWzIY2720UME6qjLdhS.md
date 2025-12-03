@@ -1,1 +1,3 @@
 # Backups & Recovery
+
+Backups & Recovery refers to the process of creating copies of your website's data and files, and then restoring that data in case of data loss or corruption. This includes everything from your website's content and media files to its database and theme settings. A robust backup and recovery strategy ensures that you can quickly restore your website to a working state, minimizing downtime and potential loss of information.

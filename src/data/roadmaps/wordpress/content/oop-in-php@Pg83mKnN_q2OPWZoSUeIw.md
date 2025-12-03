@@ -1,1 +1,3 @@
-# OOP in PHP
+# Object-Oriented Programming in PHP
+
+Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" to structure software design. These objects combine data (properties) and code (methods) that operate on that data. In PHP, OOP allows developers to create reusable and organized code by defining classes, which are blueprints for creating objects. This approach promotes modularity, making code easier to maintain, extend, and debug.

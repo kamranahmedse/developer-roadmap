@@ -1,1 +1,3 @@
 # Accessibility
+
+Accessibility refers to designing and developing websites that are usable by people of all abilities, including those with disabilities. This involves ensuring that content is perceivable, operable, understandable, and robust for users who may rely on assistive technologies like screen readers, keyboard navigation, or alternative input devices. A focus on accessibility creates a more inclusive and user-friendly experience for everyone.

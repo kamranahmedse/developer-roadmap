@@ -1,1 +1,3 @@
 # Template Hierarchy
+
+The Template Hierarchy is the system WordPress uses to determine which template file to use for displaying a specific page or post. It's essentially a roadmap that WordPress follows, checking for specific template files in your theme's folder. If a specific template file isn't found, WordPress moves down the hierarchy to a more general template until it finds one that matches. This allows for highly customized layouts for different content types and archive pages.

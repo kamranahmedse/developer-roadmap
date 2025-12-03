@@ -1,1 +1,3 @@
 # User & Login Security
+
+User and login security focus on protecting user accounts and the login process from unauthorized access. This involves implementing measures like strong passwords, two-factor authentication, limiting login attempts, and regularly monitoring user activity to prevent brute-force attacks and account compromises. Properly securing user accounts is essential for maintaining the overall integrity and safety of a WordPress website.

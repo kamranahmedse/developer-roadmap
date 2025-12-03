@@ -1,1 +1,3 @@
-# Classic vs Block Themes
+# Classic vs. Block Themes
+
+Classic themes in WordPress rely on PHP templates and the WordPress Template Hierarchy to structure and display content. Block themes, on the other hand, leverage the Block Editor (Gutenberg) for full site editing, allowing users to design and customize every aspect of their website using blocks. This fundamental difference impacts how themes are built, customized, and how users interact with their website's design.

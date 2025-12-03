@@ -1,1 +1,3 @@
 # Transients API
+
+The Transients API in WordPress provides a simple way to store temporary data in the database. Think of it as a caching system for storing the results of expensive operations, like complex database queries or external API calls. This stored data can then be quickly retrieved later, reducing server load and improving website performance. Transients have an expiration time, after which they are automatically deleted, ensuring that the stored data remains relevant and doesn't clutter the database indefinitely.

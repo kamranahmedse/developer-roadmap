@@ -1,1 +1,3 @@
 # WordPress REST API
+
+The WordPress REST API is an interface that allows other applications to interact with your WordPress site by sending and receiving data in a standardized way. It uses HTTP requests (like GET, POST, PUT, DELETE) to access and manipulate WordPress content, users, media, and other data. This enables developers to build custom applications, integrate WordPress with other systems, and create headless WordPress setups.

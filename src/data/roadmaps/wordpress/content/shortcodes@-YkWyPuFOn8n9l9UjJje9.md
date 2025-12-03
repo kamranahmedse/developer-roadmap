@@ -1,1 +1,3 @@
 # Shortcodes
+
+Shortcodes in WordPress are like shortcuts that allow you to easily add dynamic content or functionality to your posts, pages, and widgets. They are special tags enclosed in square brackets, such as `[my_shortcode]`, that WordPress recognizes and replaces with the corresponding output defined by the shortcode's associated function. This lets you embed things like videos, forms, or complex layouts without writing any code directly in your content.

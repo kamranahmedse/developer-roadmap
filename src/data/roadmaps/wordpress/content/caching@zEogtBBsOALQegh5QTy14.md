@@ -1,1 +1,3 @@
 # Caching
+
+Caching is a technique used to store copies of files or data in a temporary storage location, allowing for faster access in the future. When a user requests information, the system first checks the cache. If the information is found there (a "cache hit"), it's delivered quickly. If not (a "cache miss"), the system retrieves the information from its original source and then stores a copy in the cache for subsequent requests.

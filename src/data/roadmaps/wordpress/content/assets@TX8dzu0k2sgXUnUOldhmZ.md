@@ -1,1 +1,3 @@
-# Assets
+# Assets Optimization
+
+Assets optimization involves refining the files that make up a website, such as images, CSS, and JavaScript, to improve loading speed and overall performance. This process typically includes techniques like compressing files to reduce their size, combining multiple files to minimize HTTP requests, and using browser caching to store assets locally for faster retrieval on subsequent visits. Efficient asset optimization leads to a quicker, more responsive user experience.

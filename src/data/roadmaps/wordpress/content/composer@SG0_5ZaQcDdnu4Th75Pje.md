@@ -1,1 +1,3 @@
 # Composer
+
+Composer is a tool for managing dependencies in PHP projects, including WordPress. It lets you declare the libraries your project needs, and it will install them for you. This means you can easily include external code, like plugins or themes from repositories, without manually downloading and managing the files. Composer simplifies updating these dependencies and ensures your project has the correct versions of everything it needs to run.

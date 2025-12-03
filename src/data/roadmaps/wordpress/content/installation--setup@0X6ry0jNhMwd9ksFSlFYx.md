@@ -1,1 +1,3 @@
 # Installation & Setup
+
+Installing and setting up WordPress involves getting it onto your web server and configuring it to function correctly. This process typically includes downloading the WordPress software, creating a database, connecting WordPress to that database, and then configuring basic settings like the site title, tagline, and user accounts. It's the foundational step for building any WordPress website.

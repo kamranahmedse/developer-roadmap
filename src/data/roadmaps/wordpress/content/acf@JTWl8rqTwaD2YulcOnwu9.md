@@ -1,1 +1,3 @@
-# ACF
+# Advanced Custom Fields (ACF)
+
+Advanced Custom Fields (ACF) is a WordPress plugin that allows you to add custom fields to your WordPress edit screens. These custom fields can include various types of data, such as text, images, files, and more, enabling you to create more structured and dynamic content for your website without needing to write custom code. This provides greater control over the content entry process and how that content is displayed on the front end.

@@ -1,1 +1,3 @@
 # Child Themes
+
+Child themes in WordPress are essentially sub-themes that inherit the functionality and styling of a parent theme. They allow you to modify the design and code of your WordPress site without directly altering the parent theme files. This is crucial because when the parent theme receives an update, any changes made directly to it will be overwritten, but modifications made in the child theme will remain intact.

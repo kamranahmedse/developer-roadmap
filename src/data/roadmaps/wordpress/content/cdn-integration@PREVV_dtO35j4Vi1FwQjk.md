@@ -1,1 +1,3 @@
 # CDN Integration
+
+A Content Delivery Network (CDN) is a geographically distributed group of servers that work together to provide fast delivery of internet content. By caching website assets like images, videos, and scripts on these servers, which are located closer to users, a CDN reduces latency and improves website loading times. This results in a better user experience and can also decrease the load on your origin server.

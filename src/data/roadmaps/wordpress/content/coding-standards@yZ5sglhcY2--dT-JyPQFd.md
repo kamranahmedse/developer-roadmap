@@ -1,1 +1,3 @@
-# Coding Standards
+# WordPress Coding Standards
+
+WordPress Coding Standards are a set of guidelines and best practices for writing code that is consistent, readable, and maintainable within the WordPress ecosystem. These standards cover various aspects of coding, including PHP, HTML, CSS, and JavaScript, and aim to ensure that code is easy to understand, debug, and collaborate on, regardless of who wrote it. Adhering to these standards helps create a more unified and professional codebase for WordPress themes, plugins, and the core software itself.

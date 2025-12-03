@@ -1,1 +1,3 @@
-# Multisite
+# WordPress Multisite
+
+WordPress Multisite is a feature that allows you to create and manage a network of multiple websites from a single WordPress installation. Instead of installing WordPress separately for each website, you can use Multisite to share core files and plugins, simplifying administration and updates across all sites in the network. Each site within the network can have its own unique domain name, theme, and content, while still being managed from a central dashboard.

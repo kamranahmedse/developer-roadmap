@@ -1,1 +1,3 @@
-# Docker
+# Docker for Local WordPress Development
+
+Docker is a platform that uses containerization to package software with all its dependencies into standardized units for software development. This allows developers to create, deploy, and run applications in isolated environments called containers, ensuring consistency across different computing environments, from development to production. For WordPress, Docker simplifies setting up a local development environment by providing pre-configured containers with all the necessary components like web servers, databases, and PHP.
