@@ -1,1 +1,3 @@
 # SQL
+
+SQL, or Structured Query Language, is a special language used to talk to databases. Think of a database as a well-organized filing cabinet holding all sorts of information. SQL lets you ask questions of that filing cabinet, like "Show me all the blog posts written by John" or "Update the price of this product." Learning SQL is important because it gives you the power to directly access and manipulate the data that makes up a website, allowing for more advanced customization and troubleshooting.

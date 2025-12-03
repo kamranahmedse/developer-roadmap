@@ -1,1 +1,3 @@
 # Core Web Vitals
+
+Core Web Vitals are a set of specific metrics that Google uses to evaluate user experience on a webpage. They focus on three key aspects: loading performance (Largest Contentful Paint - LCP), interactivity (First Input Delay - FID), and visual stability (Cumulative Layout Shift - CLS). These metrics aim to quantify how quickly a page loads, how responsive it is to user input, and how much unexpected layout shifting occurs while the page is loading.

@@ -1,1 +1,3 @@
-# Block
+# Block Themes
+
+Block themes in WordPress are a modern approach to website design, where the entire site structure, from header to footer, is built using blocks. These blocks, the same ones used to create content in the WordPress editor, offer a visual and intuitive way to customize every aspect of your site's appearance without needing to write code. This allows for greater flexibility and control over design, empowering users to create unique and personalized websites.

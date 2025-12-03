@@ -1,1 +1,3 @@
 # Page Editors
+
+Page editors are tools that allow users to create and modify the content and layout of individual pages on a website through a visual interface. They simplify the process of web design and content creation by providing a user-friendly way to arrange elements like text, images, and other media without needing to write code. These editors often use a drag-and-drop interface, making it easy to build and customize pages to suit specific needs.

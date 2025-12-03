@@ -1,1 +1,3 @@
-# Introduction
+# WordPress
+
+WordPress is a popular content management system (CMS) that allows users to create and manage websites. It provides a user-friendly interface for building and publishing content, managing media, and customizing the appearance of a website through themes and plugins. WordPress is known for its flexibility, scalability, and large community support, making it a versatile platform for various types of websites, from blogs to e-commerce stores.

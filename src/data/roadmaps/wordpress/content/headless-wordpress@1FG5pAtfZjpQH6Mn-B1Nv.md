@@ -1,1 +1,3 @@
 # Headless WordPress
+
+Headless WordPress decouples the content management system (WordPress) from the presentation layer (the front-end). This means WordPress is used solely for creating, storing, and managing content, while a separate technology like React, Vue.js, or Angular is used to build and display the website to visitors. This approach allows developers greater flexibility in designing the user experience and leveraging modern front-end frameworks.

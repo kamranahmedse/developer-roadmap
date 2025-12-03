@@ -1,1 +1,3 @@
 # Frontend Fundamentals
+
+Frontend fundamentals encompass the core technologies that drive the visual and interactive aspects of a website. This includes HTML for structuring content, CSS for styling and layout, and JavaScript for adding dynamic behavior. Understanding these fundamentals is crucial because they form the foundation upon which all websites, including those built with WordPress, are constructed. Without a grasp of these technologies, customizing and troubleshooting the appearance and functionality of a WordPress site becomes significantly more challenging.

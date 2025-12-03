@@ -1,1 +1,3 @@
 # Migrations
+
+Migrations involve moving a WordPress website from one environment to another. This could be from a local development server to a live production server, from one hosting provider to another, or even between different servers within the same provider. The process typically includes transferring the WordPress files (themes, plugins, uploads) and the database containing all the website's content and settings.

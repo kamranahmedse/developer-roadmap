@@ -1,1 +1,3 @@
 # Custom Post Types
+
+Custom Post Types in WordPress allow you to create different types of content beyond the standard posts and pages. Think of them as a way to organize and manage specific kinds of information on your website, like products, events, or testimonials, each with its own unique set of fields and display options. This helps you structure your website's content in a more meaningful and organized way.

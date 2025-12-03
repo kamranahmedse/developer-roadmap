@@ -1,1 +1,3 @@
 # PHPUnit
+
+PHPUnit is a testing framework for PHP, providing a structured way to write and run automated tests for your code. It allows developers to define specific expectations for their code's behavior and then automatically verify if those expectations are met. In WordPress development, PHPUnit is used to test plugins, themes, and WordPress core itself, ensuring code quality and preventing regressions.

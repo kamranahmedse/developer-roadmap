@@ -1,1 +1,3 @@
 # Actions
+
+Actions in WordPress are hooks that allow you to execute custom functions at specific points in the WordPress core, plugins, and themes. They provide a way to "do" something at a particular moment during the execution of WordPress code, enabling developers to modify or extend functionality without directly altering the original source code. Think of them as triggers that fire off custom code when certain events occur within WordPress.

@@ -1,1 +1,3 @@
 # Style & Script Enqueueing
+
+Style and script enqueueing is the proper way to add CSS stylesheets and JavaScript files to your WordPress website. Instead of directly adding code to your theme's header or footer, enqueueing uses WordPress functions to register and load these assets in a controlled and organized manner. This ensures compatibility, avoids conflicts with other plugins and themes, and allows for dependency management.

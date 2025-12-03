@@ -1,1 +1,3 @@
 # Composer & Autoloading
+
+Composer is a dependency management tool for PHP, allowing you to declare the libraries your project depends on, and it will manage (install/update) them for you. Autoloading is a mechanism that automatically loads PHP class files when the classes are first used in your code, eliminating the need to manually require or include them. Together, Composer and autoloading streamline the process of managing external libraries and organizing your PHP code in a WordPress project.

@@ -1,1 +1,3 @@
-# Third-Party
+# Third-Party WordPress Themes
+
+Third-party WordPress themes are pre-designed website templates created by developers or companies other than WordPress.org. These themes offer a wide range of designs and functionalities, allowing users to quickly customize the look and feel of their WordPress website without extensive coding knowledge. They are typically purchased or downloaded from independent marketplaces or theme developers' websites.

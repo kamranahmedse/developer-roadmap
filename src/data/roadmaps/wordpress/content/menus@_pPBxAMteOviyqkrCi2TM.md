@@ -1,1 +1,3 @@
-# Menus
+# WordPress Menus in Classic Themes
+
+In classic WordPress themes, menus are how you organize and display navigation links on your website. They allow visitors to easily find different pages, categories, or custom links. You create and manage these menus through the WordPress admin panel, assigning them to specific locations within your theme, such as the header or footer. These locations are predefined by the theme developer.

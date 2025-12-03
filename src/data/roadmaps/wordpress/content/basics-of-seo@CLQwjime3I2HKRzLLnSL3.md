@@ -1,1 +1,3 @@
 # Basics of SEO
+
+Search Engine Optimization (SEO) is the practice of improving your website to increase its visibility when people search for products or services related to your business in search engines like Google. The better visibility your pages have in search results, the more likely you are to garner attention and attract prospective and existing customers to your website. For WordPress, this means optimizing your site's content and structure to rank higher in search engine results pages (SERPs), driving more organic traffic to your website.

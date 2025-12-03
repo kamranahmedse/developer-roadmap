@@ -1,1 +1,3 @@
 # PHP
+
+PHP is a widely-used scripting language especially suited for web development. It's primarily used to create dynamic web pages, meaning the content can change based on user interaction or other factors. PHP code is executed on the server, generating HTML which is then sent to the user's browser. It can interact with databases, handle forms, manage sessions, and perform various other tasks that make websites interactive and functional.

@@ -1,1 +1,3 @@
 # XAMPP
+
+XAMPP is a free and open-source cross-platform web server solution stack package, consisting primarily of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. It allows you to create a local server environment on your computer, enabling you to develop and test websites and web applications before deploying them to a live server. This is particularly useful for WordPress development, as it provides a convenient way to build and experiment with WordPress sites offline.

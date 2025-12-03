@@ -1,1 +1,3 @@
 # Activity Logging
+
+Activity logging involves tracking and recording actions taken within a system, such as user logins, content modifications, and settings changes. This creates an audit trail that can be used for security analysis, troubleshooting, and compliance purposes. By monitoring these activities, administrators can identify suspicious behavior, investigate security incidents, and gain insights into how the system is being used.

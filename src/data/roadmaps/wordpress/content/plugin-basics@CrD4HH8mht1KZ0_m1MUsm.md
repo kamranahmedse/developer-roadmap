@@ -1,1 +1,3 @@
 # Plugin Basics
+
+WordPress plugins are essentially bundles of code that you can upload to your WordPress site to extend its functionality. They allow you to add new features, modify existing ones, or integrate with third-party services without having to directly edit the core WordPress files. Think of them as apps for your website, enabling you to customize and enhance your site's capabilities with ease.

@@ -1,1 +1,3 @@
 # Taxonomies
+
+Taxonomies are ways to group content together. Think of them as organizational tools that help you classify and structure your website's information. They allow you to create relationships between different pieces of content, making it easier for users to navigate and find what they're looking for. Common examples include categories and tags, but you can also create custom taxonomies to suit your specific needs.

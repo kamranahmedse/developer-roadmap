@@ -1,1 +1,3 @@
-# Overrides
+# Overrides in Block Themes
+
+Overrides allow you to modify the default appearance and behavior of blocks and templates without directly editing the core theme files. This ensures that your customizations are preserved during theme updates. You can achieve this by creating custom templates, template parts, and block styles within your child theme or custom plugin, effectively overriding the original definitions.

@@ -1,1 +1,3 @@
 # Custom Fields
+
+Custom fields are a way to add extra information to your WordPress posts, pages, and other content types beyond the standard title, content, and excerpt. They allow you to create specific data entry points for things like product prices, book authors, event dates, or any other unique piece of information you want to associate with your content. This data can then be displayed on your website in a structured and organized manner.

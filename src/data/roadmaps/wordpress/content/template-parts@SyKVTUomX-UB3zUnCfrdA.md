@@ -1,1 +1,3 @@
-# Template Parts
+# Template Parts in Block Themes
+
+Template Parts are reusable sections of a WordPress block theme that define specific areas of a website's layout, like headers, footers, or sidebars. They are built using blocks and can be easily included in multiple templates, allowing for consistent design and easier content management across a site. Changes made to a Template Part are automatically reflected wherever that part is used.

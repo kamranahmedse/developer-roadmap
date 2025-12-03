@@ -1,1 +1,3 @@
-# Sytles
+# Styles in Block Themes
+
+Styles in block themes define the visual appearance of your WordPress website. They control elements like colors, typography, spacing, and layout, allowing you to customize the look and feel of your site without directly modifying the theme's code. These styles are typically managed through the `theme.json` file and the WordPress editor's styling options, providing a flexible and user-friendly way to create a unique design.
