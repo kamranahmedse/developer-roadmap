@@ -4,8 +4,8 @@ SQL, or Structured Query Language, is a programming language used for managing a
 
 Visit the following resources to learn more:
 
-- [@article@Visit the Dedicated QSL Rodmap](https://roadmap.sh/sql)
 - [@course@roadmap.sh - Master SQL](https://roadmap.sh/courses/sql)
+- [@article@Visit the Dedicated QSL Rodmap](https://roadmap.sh/sql)
 - [@article@SQL Tutorial](https://www.sqltutorial.org/)
 - [@article@SQL Tutorial](https://www.thoughtspot.com/sql-tutorial)
 - [@video@SQL Course for Beginners [Full Course]](https://www.youtube.com/watch?v=7S_tz1z_5bA)
