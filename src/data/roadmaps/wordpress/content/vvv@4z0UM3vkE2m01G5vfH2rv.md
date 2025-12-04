@@ -5,6 +5,6 @@ VVV (Varying Vagrant Vagrants) is an open-source development environment specifi
 Visit the following resources to learn more:
 
 - [@official@VVV](https://varyingvagrantvagrants.org/)
-- [@opensource@varying-vagrant-vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
 - [@official@Installing VVV](https://make.wordpress.org/core/handbook/tutorials/installing-wordpress-locally/installing-vvv/)
+- [@opensource@varying-vagrant-vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
 - [@article@How to Use Varying Vagrant Vagrants (VVV) for WordPress Development](https://www.wpkube.com/how-to-use-varying-vagrant-vagrants-vvv-for-wordpress-development/)
