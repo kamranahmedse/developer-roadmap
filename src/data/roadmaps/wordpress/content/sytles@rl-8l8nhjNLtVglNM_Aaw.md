@@ -1,3 +1,12 @@
-# Styles in Block Themes
+# Block Theme Styles
 
-Styles in block themes define the visual appearance of your WordPress website. They control elements like colors, typography, spacing, and layout, allowing you to customize the look and feel of your site without directly modifying the theme's code. These styles are typically managed through the `theme.json` file and the WordPress editor's styling options, providing a flexible and user-friendly way to create a unique design.
+Block theme styles in WordPress are sets of pre-defined visual settings that control the look and feel of your website. They allow you to quickly change things like colors, typography, and spacing across your entire site without needing to write any code. These styles are applied to the blocks that make up your pages and posts, ensuring a consistent and visually appealing design.
+
+Visit the following resources to learn more:
+
+- [@official@Styles](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-styles/)
+- [@official@Block Style Variations](https://developer.wordpress.org/themes/features/block-style-variations/)
+- [@official@Mastering Custom Block Styles in WordPress: 6 Methods for Theme and Plugin Developers](https://wordpress.com/blog/2025/05/07/custom-block-styles/)
+- [@article@Block style variations and section styles](https://fullsiteediting.com/lessons/custom-block-styles/)
+- [@video@Block Style Variations](https://www.youtube.com/watch?v=38crES_t-Qk)
+- [@video@Builder Basics: Block Styles vs. Block Variations](https://www.youtube.com/watch?v=ICI0GW9vibk)
