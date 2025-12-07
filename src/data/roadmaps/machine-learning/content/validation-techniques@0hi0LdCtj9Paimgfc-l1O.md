@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [@article@Cross-validation: evaluating estimator performance | scikit-learn](https://scikit-learn.org/stable/modules/cross_validation.html)
 - [@article@The 5 Stages of Machine Learning Validation](https://towardsdatascience.com/the-5-stages-of-machine-learning-validation-162193f8e5db/)
 - [@article@What is the Difference Between Test and Validation Datasets?](https://machinelearningmastery.com/difference-test-validation-datasets/)
-- [@video@Validating Machine Learning Model and Avoiding Common Challenges](https://www.youtube.com/watch?v=TnIh2b2Rw6)
+- [@video@Validating Machine Learning Model and Avoiding Common Challenges]([https://www.youtube.com/watch?v=TnIh2b2Rw6](https://www.youtube.com/watch?v=TnIh2b2Rw6Y))
