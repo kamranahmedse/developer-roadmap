@@ -10,5 +10,5 @@ Picking the right database for a system is an important decision, as it can have
 
 Visit the following resources to learn more:
 
-- [@video@Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)
+- [@video@Scaling up to your first 10 million users (DB related material begins at 10:33)](https://youtu.be/kKjm4ehYiMs?si=knWdkA2Y5QHM5ZJw&t=633)
 - [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)
