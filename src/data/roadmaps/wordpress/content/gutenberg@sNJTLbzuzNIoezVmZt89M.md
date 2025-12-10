@@ -1,0 +1,3 @@
+# Classic Editor
+
+The Classic Editor is the original text-based editor in WordPress. It allows you to create and edit pages and posts using a visual editor similar to a word processor, or directly with HTML code. You can format text, add images, create lists, and embed media using buttons and shortcodes. While it's been superseded by the Block Editor (Gutenberg), the Classic Editor remains available as a plugin for those who prefer its familiar interface.

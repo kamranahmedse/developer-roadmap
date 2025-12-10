@@ -2,7 +2,7 @@
 
 Docker Engine is the core open-source containerization runtime that creates and manages containers, builds images, and provides the Docker API. It runs on Linux, Windows, and macOS, serving as the foundation for Docker Desktop and standalone Docker installations on servers.
 
-For more information about docker engine see:
+Visit the following resources to learn more:
 
 - [@official@Docker Engine Installation Guide](https://docs.docker.com/engine/install/)
 - [@official@Docker Engine - Docker Documentation](https://docs.docker.com/engine/)

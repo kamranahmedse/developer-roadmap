@@ -4,36 +4,34 @@ The **Factory Pattern** is part of the Creational Design Patterns. This pattern 
 
 Here is a basic example of the Factory Pattern:
 
-```java
-public abstract class Animal {
-    public abstract String makeSound();
-}
-
-public class Dog extends Animal {
-    @override
-    public String makeSound() {
-        return "Woof";
+    public abstract class Animal {
+        public abstract String makeSound();
     }
-}
-
-public class Cat extends Animal {
-    @override
-    public String makeSound() {
-        return "Meow";
-    }
-}
-
-public class AnimalFactory {
-    public Animal createAnimal(String type) {
-        if ("Dog".equals(type)) {
-            return new Dog();
-        } else if ("Cat".equals(type)) {
-            return new Cat();
+    
+    public class Dog extends Animal {
+        @override
+        public String makeSound() {
+            return "Woof";
         }
-        return null;
     }
-}
-```
+    
+    public class Cat extends Animal {
+        @override
+        public String makeSound() {
+            return "Meow";
+        }
+    }
+    
+    public class AnimalFactory {
+        public Animal createAnimal(String type) {
+            if ("Dog".equals(type)) {
+                return new Dog();
+            } else if ("Cat".equals(type)) {
+                return new Cat();
+            }
+            return null;
+        }
+    }
 
 Visit the following resources to learn more:
 

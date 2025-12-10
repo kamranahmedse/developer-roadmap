@@ -4,6 +4,6 @@ Volume mounts are a way to map a folder or file on the host system to a folder o
 
 Visit the following resources to learn more:
 
-- [@official@Docker Volumes](https://docs.docker.com/storage/volumes/).
+- [@official@Docker Volumes](https://docs.docker.com/storage/volumes/)
 - [@official@Docker Volume Flags](https://docs.docker.com/storage/bind-mounts/#choose-the--v-or---mount-flag)
 - [@video@Docker Volumes explained in 6 minutes](https://www.youtube.com/watch?v=p2PH_YPCsis)

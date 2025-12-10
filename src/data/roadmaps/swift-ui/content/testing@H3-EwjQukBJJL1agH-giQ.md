@@ -1,1 +1,3 @@
 # Testing
+
+Testing involves writing code to verify that your app functions correctly automatically. This includes checking individual units of code (unit tests), ensuring different parts of your app work together seamlessly (integration tests), and validating the overall user experience (UI tests). By writing tests, you can catch bugs early, prevent regressions, and ensure the reliability of your application.

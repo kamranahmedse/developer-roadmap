@@ -4,13 +4,13 @@ As a Quality Assurance Engineer, your primary responsibility is to nurture a pro
 
 A few important points:
 
-- Foster a quality-centric mindset and promote shared responsibility for quality across the organization
-- Integrate quality processes into every phase of the software development lifecycle and encourage collaboration among team members
-- Take initiative, provide guidance, and lead the company in adopting best practices for ensuring high-quality products
-- Implement and maintain robust automation frameworks to enhance testing efficiency, coverage, and reliability
-- Continuously improve quality processes, stay updated with industry trends, and advocate for the importance of quality in driving customer satisfaction and business success
-- Think outside the box, ask questions, explore edge cases, and don't be afraid to misuse the product to uncover potential issues
-- Foster open communication, transparency, and a proactive approach to identifying and mitigating quality risks early in the development process
+*   Foster a quality-centric mindset and promote shared responsibility for quality across the organization
+*   Integrate quality processes into every phase of the software development lifecycle and encourage collaboration among team members
+*   Take initiative, provide guidance, and lead the company in adopting best practices for ensuring high-quality products
+*   Implement and maintain robust automation frameworks to enhance testing efficiency, coverage, and reliability
+*   Continuously improve quality processes, stay updated with industry trends, and advocate for the importance of quality in driving customer satisfaction and business success
+*   Think outside the box, ask questions, explore edge cases, and don't be afraid to misuse the product to uncover potential issues
+*   Foster open communication, transparency, and a proactive approach to identifying and mitigating quality risks early in the development process
 
 Visit the following resources to learn more:
 

@@ -1,0 +1,3 @@
+# REST API
+
+The WordPress REST API allows plugins to interact with WordPress core and other plugins using HTTP requests. It provides a standardized way to access and manipulate WordPress data, like posts, pages, users, and settings, through endpoints. This enables developers to build custom integrations, create headless WordPress sites, and develop interactive applications that communicate with WordPress.

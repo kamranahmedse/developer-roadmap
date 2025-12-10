@@ -5,7 +5,7 @@ Inertia.js allows you to build single-page applications (SPAs) using server-side
 Visit the following resources to learn more:
 
 - [@official@Inertia](https://inertiajs.com/)
-- [@article@How To Use Inertia.js in Your Laravel Projects](https://kinsta.com/blog/laravel-inertia/)
+- [@official@Inertia - Laravel Docs](https://laravel.com/docs/frontend#inertia)
 - [@opensource@Inertia](https://github.com/inertiajs/inertia-laravel)
+- [@article@How To Use Inertia.js in Your Laravel Projects](https://kinsta.com/blog/laravel-inertia/)
 - [@video@The New Features of Inertia 2.0 in 3 Minutes](https://www.youtube.com/watch?v=I96tyvRdmbA)
-- [@official@Inertia - Laravel Docs](https://laravel.com/docs/12.x/frontend#inertia)

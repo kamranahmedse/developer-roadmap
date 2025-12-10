@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Koin](https://insert-koin.io)
 - [@official@Android Architecture Components](https://developer.android.com/topic/libraries/architecture/index.html)
-- [@officialKotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)
+- [@article@@officialKotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)

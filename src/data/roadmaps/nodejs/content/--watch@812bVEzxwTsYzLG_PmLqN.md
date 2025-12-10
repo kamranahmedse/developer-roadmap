@@ -4,9 +4,9 @@ The `--watch` flag in Node.js is a powerful feature introduced in Node.js versio
 
 Here's How it works:
 
-- You run your Node.js script with the `--watch` flag: `$ node --watch your_script.js`
-- Node.js starts watching the specified file (or directory) for changes.
-- Whenever a change is detected, Node.js automatically restarts the script
+*   You run your Node.js script with the `--watch` flag: `$ node --watch your_script.js`
+*   Node.js starts watching the specified file (or directory) for changes.
+*   Whenever a change is detected, Node.js automatically restarts the script
 
 Visit the following resources to learn more:
 

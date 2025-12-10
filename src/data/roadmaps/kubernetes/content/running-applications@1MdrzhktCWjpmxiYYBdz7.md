@@ -1,10 +1,10 @@
-# Deployments
+# Running Applications
 
-A Deployment is a resource object for managing Pods and ReplicaSets via a declarative configuration, which define a desired state that describes the application workload life cycle, number of pods, deployment strategies, container images, and more. The Deployment Controller works to ensure the actual state matches desired state, such as by replacing a failed pod. Out of the box, Deployments support several deployment strategies, like "recreate" and "rolling update", however can be customized to support more advanced deployment strategies such as blue/green or canary deployments.
+Running applications involves deploying and managing software within a Kubernetes cluster. This includes packaging the application, defining its resource requirements (like CPU and memory), specifying how it should be exposed to the outside world, and ensuring it remains healthy and available. It also covers scaling the application to handle varying workloads and updating it without downtime.
 
 Visit the following resources to learn more:
 
-- [@official@Deployments Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-- [@article@Kubernetes Deployment: From Basic Strategies to Progressive Delivery
-](https://codefresh.io/learn/kubernetes-deployment/)
-- [@video@Kubernetes Deployments | Deployment Strategies](https://youtu.be/lxc4EXZOOvE)
+- [@official@Run Applications](https://kubernetes.io/docs/tasks/run-application/)
+- [@article@Deploying an Application on Kubernetes: A Complete Guide!](https://dev.to/pavanbelagatti/deploying-an-application-on-kubernetes-a-complete-guide-1cj6)
+- [@article@How Do Applications Run on Kubernetes?](https://thenewstack.io/how-do-applications-run-on-kubernetes/)
+- [@video@Kubernetes 101: Deploying Your First Application!](https://www.youtube.com/watch?v=XltFOyGanYE)

@@ -4,5 +4,5 @@ Redirect routes provide a simple way to create HTTP redirects within your applic
 
 Visit the following resources to learn more:
 
-- [@official@Redirect Routes](https://laravel.com/docs/12.x/routing#redirect-routes)
+- [@official@Redirect Routes](https://laravel.com/docs/routing#redirect-routes)
 - [@article@Route Redirect in Laravel: The Complete Guide](https://larafast.com/blog/route-redirect-in-laravel-the-complete-guide)

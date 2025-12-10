@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Official Website](https://ark-ui.com/)
 - [@official@Official Website](https://ark-ui.com/react/docs/overview/introduction)
-- [@video@Hands On ARK UI](https://www.youtube.com/watch?v=zjo-77I0unk)
 - [@article@What is ARK UI?](https://shaxadd.medium.com/enhance-your-user-interfaces-with-ark-ui-a-comprehensive-guide-7e87dd0a79cf)
+- [@video@Hands On ARK UI](https://www.youtube.com/watch?v=zjo-77I0unk)

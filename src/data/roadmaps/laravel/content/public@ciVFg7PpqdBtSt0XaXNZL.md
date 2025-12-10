@@ -4,4 +4,4 @@ The `public` directory serves as the document root for your Laravel application.
 
 Visit the following resources to learn more:
 
-- [@official@The Public Directory](https://laravel.com/docs/12.x/structure#the-public-directory)
+- [@official@The Public Directory](https://laravel.com/docs/structure#the-public-directory)

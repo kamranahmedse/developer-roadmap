@@ -1,0 +1,3 @@
+# Theme and Plugin Licensing & Updates
+
+WordPress themes and plugins often come with licenses that dictate how you can use, modify, and distribute them. These licenses can range from open-source (like GPL, allowing broad freedom) to commercial (with restrictions and paid support). Keeping your themes and plugins updated is crucial for security, compatibility, and access to new features. Updates often patch vulnerabilities, ensure the theme or plugin works with the latest version of WordPress, and introduce improvements that enhance functionality and user experience.

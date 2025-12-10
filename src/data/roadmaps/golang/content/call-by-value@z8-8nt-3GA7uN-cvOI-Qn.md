@@ -5,5 +5,5 @@ Go creates copies of values when passing to functions, not references to origina
 Visit the following resources to learn more:
 
 - [@article@Golang Call by Reference and Call by Value](https://www.scaler.com/topics/golang/golang-call-by-reference-and-call-by-value)
-- [Go Call by Value](https://www.includehelp.com/golang/go-call-by-value.aspx)
-- [Parameter Passing in Golang: The Ultimate Truth](https://dev.to/mahdifardi/parameter-passing-in-golang-the-ultimate-truth-1h0o)
+- [@article@Go Call by Value](https://www.includehelp.com/golang/go-call-by-value.aspx)
+- [@article@Parameter Passing in Golang: The Ultimate Truth](https://dev.to/mahdifardi/parameter-passing-in-golang-the-ultimate-truth-1h0o)
