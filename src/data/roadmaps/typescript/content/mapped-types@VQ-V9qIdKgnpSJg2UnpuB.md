@@ -1,19 +1,80 @@
 # Mapped Types
 
-Mapped types in TypeScript are a way to create a new type based on an existing type, where each property of the existing type is transformed in some way. Mapped types are declared using a combination of the `keyof` operator and a type that maps each property of the existing type to a new property type.
+Mapped types transform one type into another type by changing all of its properties. Think of them like a factory that takes a blueprint and produces a modified version of it.
 
-For example, the following is a mapped type that takes an object type and creates a new type with all properties of the original type but with their type changed to `readonly`:
+## Why Use Mapped Types?
+
+Imagine you have a type describing a user with properties like `name`, `email`, and `age`. What if you want:
+- A version where all properties are optional?
+- A version where all properties are read-only?
+- A version where all properties return promises?
+
+Instead of rewriting the type manually, mapped types create these variations automatically.
+
+## How It Works
+
+Mapped types use `keyof` to loop through all properties of a type and transform each one. Here's the pattern:
 
 ```typescript
-type Readonly<T> = {
-  readonly [P in keyof T]: T[P];
+type TransformType<T> = {
+  [Property in keyof T]: /* Do something with Property */
 };
-
-let obj = { x: 10, y: 20 };
-let readonlyObj: Readonly<typeof obj> = obj;
 ```
 
-In this example, the `Readonly` mapped type takes an object type `T` and creates a new type with all properties of `T` but with their type changed to `readonly`. The keyof `T` operator is used to extract the names of the properties of `T`, and the `T[P]` syntax is used to access the type of each property of `T`. The `readonly` keyword is used to make the properties of the new type `readonly`.
+## Examples
+
+### Make All Properties Optional
+
+```typescript
+// Original type
+type User = {
+  name: string;
+  email: string;
+  age: number;
+};
+
+// Mapped type: all properties become optional
+type PartialUser = {
+  [P in keyof User]?: User[P];
+};
+
+// Now we can create users with missing properties
+const user: PartialUser = { name: "John" }; // OK - email and age optional
+```
+
+### Make All Properties Readonly
+
+```typescript
+type ReadonlyUser = {
+  readonly [P in keyof User]: User[P];
+};
+
+const user: ReadonlyUser = { name: "John", email: "john@example.com", age: 30 };
+user.name = "Jane"; // Error: Cannot assign to readonly property
+```
+
+### Make Properties Return Promises (for async APIs)
+
+```typescript
+type Async<T> = {
+  [P in keyof T]: Promise<T[P]>;
+};
+
+type AsyncUser = Async<User>;
+// This creates: { name: Promise<string>, email: Promise<string>, age: Promise<number> }
+```
+
+## Real-World Use Case
+
+Mapped types are built into TypeScript. You've probably used them without realizing:
+- `Partial<T>` - Makes all properties optional
+- `Readonly<T>` - Makes all properties read-only
+- `Record<K, T>` - Creates an object type with specific keys
+
+## Common Mistakes
+
+- **Don't overthink it**: Mapped types are powerful but start simple
+- **Use TypeScript's built-in types first**: `Partial<T>`, `Readonly<T>`, etc. are already available
 
 Learn more from the following links:
 

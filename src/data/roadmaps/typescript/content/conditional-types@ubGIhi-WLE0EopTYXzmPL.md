@@ -1,17 +1,85 @@
 # Conditional Types
 
-Conditional types in TypeScript are a way to select a type based on a condition. They allow you to write a type that dynamically chooses a type based on the types of its inputs. Conditional types are declared using a combination of the `infer` keyword and a type that tests a condition and selects a type based on the result of the test.
+Conditional types let your types make decisions. They work like an `if` statement but for types: "If type A is type B, then use type X, otherwise use type Y."
 
-For example, the following is a conditional type that takes two types and returns the type of the first argument if it extends the second argument, and the type of the second argument otherwise:
+## Why Use Conditional Types?
+
+Sometimes the type your function returns depends on what you pass in. For example:
+- Pass in a `Promise<string>` → Get back `string`
+- Pass in a `string` → Get back `string`
+- Pass in an `array` → Get back the item type inside the array
+
+Conditional types let you describe these patterns.
+
+## How It Works
+
+Conditional types follow this pattern:
 
 ```typescript
-type Extends<T, U> = T extends U ? T : U;
-
-type A = Extends<string, any>; // type A is 'string'
-type B = Extends<any, string>; // type B is 'string'
+type Check<T> = T extends SomeType ? TypeIfTrue : TypeIfFalse;
 ```
 
-In this example, the Extends conditional type takes two types T and U and returns the type of the first argument `T` if it extends the second argument `U`, and the type of the second argument `U` otherwise. The T extends `U` syntax is used to test whether `T extends U`, and the `? T : U` syntax is used to select the type `T` if the test passes and the type `U` otherwise.
+Read it like: "If T extends SomeType, use TypeIfTrue, otherwise use TypeIfFalse."
+
+## Examples
+
+### Simple Example: Is It a String?
+
+```typescript
+type IsString<T> = T extends string ? "yes" : "no";
+
+type A = IsString<"hello">; // "yes"
+type B = IsString<42>; // "no"
+```
+
+### Practical Example: Extract Promise Type
+
+```typescript
+// When you have a Promise, extract what's inside
+type GetPromiseType<T> = T extends Promise<infer U> ? U : T;
+
+type A = GetPromiseType<Promise<string>>; // string
+type B = GetPromiseType<string>; // string
+```
+
+The `infer` keyword means "figure out and remember this type."
+
+### Real-World Example: Function Return Types
+
+```typescript
+// If T is a function, get its return type, otherwise return never
+type GetReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
+
+type A = GetReturnType<() => string>; // string
+type B = GetReturnType<() => { id: number }>; // { id: number }
+```
+
+### Nested Conditions
+
+```typescript
+type TypeName<T> = T extends string
+  ? "string"
+  : T extends number
+  ? "number"
+  : T extends boolean
+  ? "boolean"
+  : "other";
+
+type A = TypeName<"hello">; // "string"
+type B = TypeName<42>; // "number"
+```
+
+## Common Patterns
+
+- **Extract from Promise**: `T extends Promise<infer U> ? U : T`
+- **Get return type**: `T extends (...args: any[]) => infer R ? R : never`
+- **Get array item type**: `T extends (infer U)[] ? U : T`
+
+## Tips to Remember
+
+- **Use `infer` to capture types**: It lets you "remember" a type for later
+- **Chain conditions**: You can nest conditional types for complex logic
+- **Start simple**: Begin with basic conditions before using `infer`
 
 Learn more from the following links:
 
