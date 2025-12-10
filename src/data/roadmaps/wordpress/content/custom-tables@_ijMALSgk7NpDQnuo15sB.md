@@ -1,0 +1,3 @@
+# Custom Tables in WordPress Plugins
+
+Custom tables refer to database tables created and managed by a plugin, separate from the default WordPress tables (like `wp_posts` or `wp_users`). These tables allow plugins to store and manage their own specific data, offering greater flexibility and control over data structures compared to relying solely on WordPress's built-in database schema. This is particularly useful for plugins that require complex data relationships or need to store information not easily accommodated by the standard WordPress tables.

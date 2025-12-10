@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@Drone](https://www.drone.io/)
 - [@official@Drone Documentation](https://docs.drone.io/)
 - [@official@Drone Getting Started Guide](https://docs.drone.io/server/overview/)
-

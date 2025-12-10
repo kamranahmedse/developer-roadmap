@@ -2,9 +2,9 @@
 
 A programming method to map objects in Java to relational entities in a database. In other words, converting data between relational databases and object-oriented programming languages. Some popular ORM tools/frameworks in Java are:
 
-- Spring Data JPA
-- Hibernate
-- Ebean
+*   Spring Data JPA
+*   Hibernate
+*   Ebean
 
 Visit the following resources to learn more:
 

@@ -36,6 +36,11 @@ export async function fetchRoadmapJson(
 
   const response = await fetch(
     `https://roadmap.sh/api/v1-official-roadmap/${roadmapId}`,
+    {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; roadmap-sync/1.0)',
+      },
+    },
   );
 
   if (!response.ok) {
@@ -64,6 +69,7 @@ export async function syncContentToDatabase(
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (compatible; roadmap-sync/1.0)',
       },
       body: JSON.stringify({
         topics,
@@ -72,14 +78,21 @@ export async function syncContentToDatabase(
     },
   );
 
+  const responseText = await response.text();
+
   if (!response.ok) {
-    const error = await response.json();
     throw new Error(
-      `Failed to sync content to database: ${response.statusText} ${JSON.stringify(error, null, 2)}`,
+      `Failed to sync content to database: ${response.status} ${response.statusText}\n${responseText}`,
     );
   }
 
-  return response.json();
+  try {
+    return JSON.parse(responseText);
+  } catch {
+    throw new Error(
+      `Failed to parse response as JSON: ${responseText.substring(0, 500)}`,
+    );
+  }
 }
 
 const files =
@@ -231,8 +244,15 @@ try {
     });
   }
 
+  console.log(`📤 Syncing ${topics.length} topics to database...`);
   await syncContentToDatabase(topics);
+  console.log(`✅ Successfully synced ${topics.length} topics`);
 } catch (error) {
+  console.error('❌ Sync failed with error:');
   console.error(error);
+  if (error instanceof Error) {
+    console.error('\nError message:', error.message);
+    console.error('\nStack trace:', error.stack);
+  }
   process.exit(1);
 }

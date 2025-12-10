@@ -132,16 +132,16 @@ Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the va
 Clone the repository, install the dependencies and start the application
 
 ```bash
-git clone git@github.com:kamranahmedse/developer-roadmap.git
+git clone git@github.com:kamranahmedse/developer-roadmap.git --depth 1
 cd developer-roadmap
-npm install
-npm run dev
+pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
+pnpm install
 ```
 
-Note: use the `depth` parameter to reduce the clone size and speed up the clone.
+Run the development server with:
 
-```sh
-git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
+```bash
+pnpm dev
 ```
 
 ## Contribution

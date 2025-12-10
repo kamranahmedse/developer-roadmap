@@ -1,0 +1,3 @@
+# Cron Jobs
+
+Cron jobs are scheduled tasks that your WordPress site runs automatically in the background. Think of them as a built-in task scheduler. They allow you to automate things like publishing scheduled posts, checking for updates, sending email notifications, or performing database maintenance without requiring manual intervention. These tasks are executed at specific times or intervals, ensuring your website functions smoothly and efficiently.

@@ -4,6 +4,6 @@ React hook form is an opensource form library for react. Performant, flexible an
 
 Visit the following resources to learn more:
 
-- [@article@React Hook Form: Official Website](https://react-hook-form.com/)
 - [@opensource@react-hook-form/react-hook-form](https://github.com/react-hook-form/react-hook-form)
+- [@article@React Hook Form: Official Website](https://react-hook-form.com/)
 - [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

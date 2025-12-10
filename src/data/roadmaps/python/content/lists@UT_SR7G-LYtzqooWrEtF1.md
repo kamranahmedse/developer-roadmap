@@ -1,15 +1,10 @@
-# Lists, Tuples, Sets, and Dictionaries
+# Lists in Python
 
-**Lists:** A list is just like dynamic sized arrays, declared in other languages (vector in C++ and ArrayList in Java). Lists need not be homogeneous always which makes it the most powerful tool in Python.
-
-**Tuple:** A Tuple is a collection of Python objects separated by commas. In some ways, a tuple is similar to a list in terms of indexing, nested objects, and repetition but a tuple is immutable, unlike lists that are mutable.
-
-**Set:** A Set is an unordered collection data type that is iterable, mutable, and has no duplicate elements. Python’s set class represents the mathematical notion of a set.
-
-**Dictionary:** In python, Dictionary is an ordered (since Py 3.7) \[unordered (Py 3.6 & prior)\] collection of data values, used to store data values like a map, which, unlike other Data Types that hold only a single value as an element, Dictionary holds key:value pair. Key-value is provided in the dictionary to make it more optimized.
+Lists are fundamental data structures in Python used to store an ordered collection of items. These items can be of different data types (numbers, strings, or even other lists), and lists are mutable, meaning you can change their contents after they are created by adding, removing, or modifying elements. They are defined using square brackets `[]` and elements are separated by commas.
 
 Visit the following resources to learn more:
 
+- [@official@Python Official Documentation on Listsc](https://docs.python.org/3/tutorial/introduction.html#lists)
 - [@article@Tuples vs. Lists vs. Sets in Python](https://jerrynsh.com/tuples-vs-lists-vs-sets-in-python/)
 - [@article@Python for Beginners: Lists](https://thenewstack.io/python-for-beginners-lists/)
 - [@article@Python for Beginners: When and How to Use Tuples](https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/)

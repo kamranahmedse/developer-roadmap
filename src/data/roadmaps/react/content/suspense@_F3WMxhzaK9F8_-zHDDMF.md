@@ -4,10 +4,10 @@ React Suspense is a feature in React that allows components to "suspend" renderi
 
 Here is a general overview of how React Suspense works:
 
-- A component that uses Suspense wraps a component that may need to "suspend" rendering in a `Suspense` component.
-- The wrapped component throws a promise when it needs to suspend rendering.
-- The `Suspense` component catches the promise and renders a fallback component while the promise is pending.
-- When the promise resolves, the wrapped component is rendered with the required data.
+*   A component that uses Suspense wraps a component that may need to "suspend" rendering in a `Suspense` component.
+*   The wrapped component throws a promise when it needs to suspend rendering.
+*   The `Suspense` component catches the promise and renders a fallback component while the promise is pending.
+*   When the promise resolves, the wrapped component is rendered with the required data.
 
 Visit the following resources to learn more:
 

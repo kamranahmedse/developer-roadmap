@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@OpenAI Embeddings API Documentation](https://platform.openai.com/docs/guides/embeddings/what-are-embeddings)
 - [@article@Understanding Embeddings and Vector Search (Pinecone Blog)](https://www.pinecone.io/learn/vector-embeddings/)
+- [@video@What are Word Embeddings?](https://youtu.be/wgfSDrqYMJ4?si=8bS9_cVChpTzl2z6)
+- [@video@What is a Vector Database? Powering Semantic Search & AI Applications](https://youtu.be/gl1r1XV0SLw?si=StU9dl8yQTNxdDaI)
+- [@video@What is a Vector Database?](https://youtu.be/t9IDoenf-lo?si=QG0WD3di9zIliBPC)

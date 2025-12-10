@@ -4,4 +4,4 @@ The `vendor` directory in a Laravel project houses all the Composer-installed de
 
 Visit the following resources to learn more:
 
-- [@article@The Vendor Directory](https://laravel.com/docs/12.x/structure#the-vendor-directory)
+- [@article@The Vendor Directory](https://laravel.com/docs/structure#the-vendor-directory)

@@ -6,5 +6,5 @@ Key concepts include `Classes`, which are blueprints from which objects are crea
 
 Visit the following resources to learn more:
 
-- [@official@Object-Oriented Programming - Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)  
+- [@official@Object-Oriented Programming - Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
 - [@official@OOP in Kotlin](https://developer.android.com/codelabs/basic-android-kotlin-compose-classes-and-objects)

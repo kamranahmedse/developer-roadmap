@@ -5,6 +5,6 @@ Formik is another famous opensource form library that helps with getting values 
 Visit the following resources to learn more:
 
 - [@official@Official Website — Formik](https://formik.org/)
+- [@opensource@formik/formik](https://github.com/formik/formik)
 - [@video@Formik - Building React Forms easier](https://www.youtube.com/watch?v=khGypss-RJs)
 - [@video@React Formik Tutorial with Yup (React Form Validation)](https://www.youtube.com/watch?v=7Ophfq0lEAY)
-- [@opensource@formik/formik](https://github.com/formik/formik)

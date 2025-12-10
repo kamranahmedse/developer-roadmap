@@ -4,6 +4,6 @@ Expo is an open-source framework and platform built around React Native, designe
 
 Expo simplifies mobile development by handling much of the native configuration behind the scenes. Developers can use the **Expo Go** app to preview and test their projects instantly on real devices, while the **Expo CLI** offers powerful commands for creating, running, and managing apps. The **Expo SDK** provides prebuilt modules for features like camera access, push notifications, geolocation, and more, allowing you to focus on app logic rather than native integrations. For production workflows, **EAS (Expo Application Services)** supports custom builds, over-the-air updates, and app store submissions.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Expo Documentation](https://docs.expo.dev/)

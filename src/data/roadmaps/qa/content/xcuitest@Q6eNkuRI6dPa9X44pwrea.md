@@ -1,9 +1,8 @@
-# XCUITest
+# Swift Testing
 
-Mobile app testing, and more specifically, app UI testing involves checking how the interface behaves when user actions are performed and then compares results with expected outcomes. Here, testers try to replicate exactly how a user would interact with the application and validate the state of the UI. XCUITest allows them to write test cases for these purposes using two fundamental concepts.
+Swift testing involves writing code to automatically verify the functionality of Swift applications, especially those built for iOS, macOS, watchOS, and tvOS. This includes creating unit tests to check individual components, UI tests to simulate user interactions, and performance tests to ensure the app runs efficiently. The goal is to identify and fix bugs early in the development cycle, leading to more reliable and robust mobile applications.
 
 Visit the following resources to learn more:
 
-- [@official@XCUITest Documentation](https://developer.apple.com/documentation/xctest/)
-- [@article@Getting Started with XCUITest](https://www.browserstack.com/guide/getting-started-xcuitest-framework)
-- [@article@Xcuitest - End to End Testing](https://testautomationu.applitools.com/learningpaths.html?id=mobile-swift-path)
+- [@official@Swift Testing](https://developer.apple.com/documentation/testing)
+- [@roadmap@Visit the Dedicated Swift & SwiftUI Roadmap](https://roadmap.sh/swift-ui)

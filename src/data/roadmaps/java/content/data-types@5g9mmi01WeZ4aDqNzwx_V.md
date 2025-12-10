@@ -4,8 +4,8 @@ Variable in Java is a data container that stores the data values during Java pro
 
 Data Types are divided into two group -
 
-- Primitive - byte,short,int,long,float,double,boolean and char
-- Non-Primitive - String, Arrays, Classes, Enums and Records
+*   Primitive - byte,short,int,long,float,double,boolean and char
+*   Non-Primitive - String, Arrays, Classes, Enums and Records
 
 Visit the following resources to learn more:
 

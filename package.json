@@ -31,6 +31,7 @@
     "migrate:editor-roadmaps": "tsx ./scripts/migrate-editor-roadmap.ts",
     "sync:content-to-repo": "tsx ./scripts/sync-content-to-repo.ts",
     "sync:repo-to-database": "tsx ./scripts/sync-repo-to-database.ts",
+    "sync:roadmap": "tsx ./scripts/sync-roadmap-to-database.ts",
     "migrate:content-repo-to-database": "tsx ./scripts/migrate-content-repo-to-database.ts",
     "official:roadmap-assets": "tsx ./scripts/official-roadmap-assets.ts",
     "test:e2e": "playwright test"

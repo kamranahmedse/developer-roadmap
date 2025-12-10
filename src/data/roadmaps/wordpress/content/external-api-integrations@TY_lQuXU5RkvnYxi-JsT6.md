@@ -1,0 +1,3 @@
+# External API Integrations
+
+External API integrations allow plugins to connect and interact with services and data sources outside of the WordPress environment. This involves using code to send requests to external servers, receive data in formats like JSON or XML, and then process and display that information within the WordPress plugin. This enables plugins to extend their functionality by leveraging the capabilities of other platforms and services.

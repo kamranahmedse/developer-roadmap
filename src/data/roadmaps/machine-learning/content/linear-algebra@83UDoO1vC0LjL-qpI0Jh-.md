@@ -4,7 +4,7 @@ Linear algebra is a branch of mathematics that deals with vector spaces and line
 
 Visit the following resources to learn more:
 
-- [@article@How I learned Linear Algebra, Probability and Statistics for Data Science](https://towardsdatascience.com/how-i-learned-linear-algebra-probability-and-statistics-for-data-science-b9d1c34dfa56/)
-- [@video@Linear Algebra for Machine Learning](https://www.youtube.com/watch?v=QCPJ0VdpM00)
 - [@book@Linear algebra for data science](http://mitran-lab.amath.unc.edu/courses/MATH347DS/textbook.pdf)
 - [@book@Linear Algebra Done Right](https://linear.axler.net/LADR4e.pdf)
+- [@article@How I learned Linear Algebra, Probability and Statistics for Data Science](https://towardsdatascience.com/how-i-learned-linear-algebra-probability-and-statistics-for-data-science-b9d1c34dfa56/)
+- [@video@Linear Algebra for Machine Learning](https://www.youtube.com/watch?v=QCPJ0VdpM00)
