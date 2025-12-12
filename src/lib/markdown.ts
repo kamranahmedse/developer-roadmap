@@ -1,8 +1,11 @@
 // @ts-ignore
 import MarkdownIt from 'markdown-it';
 import MarkdownItAsync from 'markdown-it-async';
+import { codeToHtml } from 'shiki';
 
-// replaces @variableName@ with the value of the variable
+// ---------------------------
+// Replace variables in markdown
+// ---------------------------
 export function replaceVariables(
   markdown: string,
   variables: Record<string, string> = {},
@@ -12,11 +15,15 @@ export function replaceVariables(
     currentYear: new Date().getFullYear().toString(),
   };
 
-  return markdown?.replace(/@([^@]+)@/g, (match, p1) => {
-    return allVariables[p1] || match;
+  // Case-insensitive replacement
+  return markdown?.replace(/@([^@]+)@/gi, (match, p1) => {
+    return allVariables[p1] ?? match;
   });
 }
 
+// ---------------------------
+// Standard Markdown rendering
+// ---------------------------
 const md = new MarkdownIt({
   html: true,
   linkify: true,
@@ -24,70 +31,58 @@ const md = new MarkdownIt({
 
 export function markdownToHtml(markdown: string, isInline = true): string {
   try {
-    if (isInline) {
-      return md.renderInline(markdown);
-    } else {
-      return md.render(markdown);
-    }
+    if (isInline) return md.renderInline(markdown);
+    return md.render(markdown);
   } catch (e) {
+    console.error('Markdown rendering failed:', e);
     return markdown;
   }
 }
 
-// This is a workaround for the issue with tiptap-markdown extension
-// It doesn't support links with escaped brackets like this:
-// \\[link\\](https://example.com) -> [link](https://example.com)
-export function sanitizeMarkdown(markdown: string) {
-  return markdown.replace(/\\\[([^\\]+)\\\]\(([^\\]+)\)/g, '[$1]($2)');
+// ---------------------------
+// Sanitize Markdown escapes
+// ---------------------------
+export function sanitizeMarkdown(markdown: string): string {
+  // Remove backslashes from escaped Markdown characters
+  return markdown.replace(/\\([\\`*{}\[\]()#+\-.!_>~])/g, '$1');
 }
 
+// ---------------------------
+// Async Markdown rendering with syntax highlighting
+// ---------------------------
 const markdownItAsync = MarkdownItAsync({
   html: true,
   linkify: true,
 
-  async highlight(code, lang, attrs) {
-    const { codeToHtml } = await import('shiki');
-
-    const html = await codeToHtml(code, {
-      lang: lang?.toLowerCase(),
-      theme: 'dracula',
-    }).catch((e) => {
-      console.warn(e);
-      return code;
-    });
-
-    return html;
+  async highlight(code: string, lang?: string): Promise<string> {
+    try {
+      return await codeToHtml(code, {
+        lang: lang?.toLowerCase(),
+        theme: 'dracula',
+      });
+    } catch (e) {
+      console.warn('Highlighting failed:', e);
+      return `<pre><code>${code}</code></pre>`;
+    }
   },
 });
 
-export async function markdownToHtmlWithHighlighting(markdown: string) {
+export async function markdownToHtmlWithHighlighting(markdown: string): Promise<string> {
   try {
-    // Solution to open links in new tab in markdown
-    // otherwise default behaviour is to open in same tab
-    //
-    // SOURCE: https://github.com/markdown-it/markdown-it/blob/master/docs/architecture.md#renderer
+    // Open links in new tab with security attributes
     const defaultRender =
       markdownItAsync.renderer.rules.link_open ||
-      function (tokens, idx, options, env, self) {
-        return self.renderToken(tokens, idx, options);
-      };
+      ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options));
 
-    markdownItAsync.renderer.rules.link_open = function (
-      tokens,
-      idx,
-      options,
-      env,
-      self,
-    ) {
-      // Add a new `target` attribute, or replace the value of the existing one.
+    markdownItAsync.renderer.rules.link_open = function (tokens, idx, options, env, self) {
       tokens[idx].attrSet('target', '_blank');
-
-      // Pass the token to the default renderer.
+      tokens[idx].attrSet('rel', 'noopener noreferrer');
       return defaultRender(tokens, idx, options, env, self);
     };
 
     return markdownItAsync.renderAsync(markdown);
   } catch (e) {
+    console.error('Async markdown rendering failed:', e);
     return markdown;
   }
 }
