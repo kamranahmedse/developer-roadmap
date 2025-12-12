@@ -4,5 +4,5 @@ Encryption is used to protect data from being stolen, changed, or compromised an
 
 Visit the following resources to learn more:
 
-- [@article@Whay is Encryption?](https://cloud.google.com/learn/what-is-encryption)
-- [@video@Whay is Encryption?](https://www.youtube.com/watch?v=9chKCUQ8_VQ)
+- [@article@What is Encryption?](https://cloud.google.com/learn/what-is-encryption)
+- [@video@What is Encryption?](https://www.youtube.com/watch?v=9chKCUQ8_VQ)
