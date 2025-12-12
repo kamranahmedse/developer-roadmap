@@ -7,7 +7,7 @@ It involves 4 steps:
 1.  Data Generation: Collecting data from various source systems.
 2.  Data Storage: Safely storing data for future processing and analysis.
 3.  Data Ingestion: Transforming and bringing data into a centralized system.
-4.  Data Data Serving: Providing data to end-users for decision-making and operational purposes.
+4.  Data Serving: Providing data to end-users for decision-making and operational purposes.
 
 Visit the following resources to learn more:
 
