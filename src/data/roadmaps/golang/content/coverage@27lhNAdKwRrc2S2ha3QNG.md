@@ -5,4 +5,4 @@ Test coverage measures code execution during testing using `go test -cover` and 
 Visit the following resources to learn more:
 
 - [@official@Coverage Profiling](https://go.dev/doc/build-cover)
-- [@article@Understanding Go Coverage: A Guide to Test Coverage in Go](https://medium.com/@keployio/understanding-go-coverage-a-guide-to-test-coverage-in-go-0c6e5ac8ba81)
+- [@article@A Beginner's Guide to Code Coverage for Go Integration Tests](https://hackernoon.com/a-beginners-guide-to-code-coverage-for-go-integration-tests)
