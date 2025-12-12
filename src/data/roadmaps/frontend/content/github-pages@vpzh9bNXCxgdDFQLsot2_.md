@@ -6,6 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [@official@GitHub Pages Quickstart](https://docs.github.com/en/pages/quickstart)
-- [@article@Getting Started with GitHub Pages](https://www.freecodecamp.org/news/what-is-github-pages/)
+- [@article@How do I use GitHub Pages?](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/Using_GitHub_pages)
 - [@video@GitHub Pages Tutorial - Host a Website for Free](https://www.youtube.com/watch?v=8hrJ4oN1u_8)
 - [@video@GitHub Pages - Full Tutorial](https://www.youtube.com/watch?v=o5g-lUuFgpg)
