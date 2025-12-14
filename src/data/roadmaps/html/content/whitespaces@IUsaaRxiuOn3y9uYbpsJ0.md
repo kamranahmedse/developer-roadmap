@@ -4,5 +4,5 @@ Whitespaces in HTML refer to the spaces, tabs, and line breaks that are used to 
 
 Visit the following resources to learn more:
 
-- [@article@Handling whitespace | DMN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_text/Whitespace)
+- [@article@Handling whitespace | MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Text/Whitespace)
 - [@video@Whitespace in HTML](https://www.youtube.com/watch?v=XhItAZTTSR8)
