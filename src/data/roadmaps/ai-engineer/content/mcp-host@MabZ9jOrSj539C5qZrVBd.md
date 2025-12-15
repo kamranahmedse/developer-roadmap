@@ -4,5 +4,5 @@ The MCP Host is a central component within the Model Context Protocol (MCP) fram
 
 Visit the following resources to learn more:
 
-- [@official@Concepts of MCP](https://modelcontextprotocol.io/docs/learn/architecture#concepts-of-mcp)
 - [@course@Model Context Protocol (MCP) Course](https://huggingface.co/learn/mcp-course/en/unit0/introduction)
+- [@official@Concepts of MCP](https://modelcontextprotocol.io/docs/learn/architecture#concepts-of-mcp)
