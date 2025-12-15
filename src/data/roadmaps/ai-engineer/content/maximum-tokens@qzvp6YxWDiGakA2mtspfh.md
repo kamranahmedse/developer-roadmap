@@ -5,4 +5,4 @@ The OpenAI API has different maximum token limits depending on the model being u
 Visit the following resources to learn more:
 
 - [@official@Maximum Tokens](https://platform.openai.com/docs/guides/rate-limits)
-- [@article@The Ins and Outs of GPT Token Limits](https://www.supernormal.com/blog/gpt-token-limits)
+- [@article@Guide to Free vs Paid ChatGPT Token Limits](https://tactiq.io/learn/free-vs-paid-chatgpt-token-limits-guide)
