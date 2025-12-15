@@ -4,5 +4,5 @@ Open-source large language models (LLMs) are models whose source code and archit
 
 Visit the following resources to learn more:
 
-- [@article@The Best Large Language Models (LLMs) in 2024](https://zapier.com/blog/best-llm/)
-- [@article@8 Top Open-Source LLMs for 2024 and Their Uses](https://www.datacamp.com/blog/top-open-source-llms)
+- [@article@The Best Large Language Models (LLMs) in 2026](https://zapier.com/blog/best-llm/)
+- [@article@9 Top Open-Source LLMs for 2026 and Their Uses](https://www.datacamp.com/blog/top-open-source-llms)
