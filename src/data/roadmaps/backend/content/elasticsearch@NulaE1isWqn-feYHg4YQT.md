@@ -4,6 +4,7 @@ Elasticsearch is a document-oriented search engine and database supporting INSER
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit the Dedicated Elasticsearch Roadmap](https://roadmap.sh/elasticsearch)
 - [@official@Elasticsearch Website](https://www.elastic.co/elasticsearch/)
 - [@official@Elasticsearch Documentation](https://www.elastic.co/guide/index.html)
 - [@video@What is Elasticsearch](https://www.youtube.com/watch?v=ZP0NmfyfsoM)
