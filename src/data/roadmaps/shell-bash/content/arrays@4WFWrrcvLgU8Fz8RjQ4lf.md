@@ -4,7 +4,6 @@ Arrays are ordered collections of elements, where each element can be accessed u
 
 Visit the following resources to learn more:
 
-- [@article@Arithmetic - Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-arithmetic.php)
 - [@article@Bash Arrays](https://www.w3schools.com/bash/bash_arrays.php)
 - [@video@Arrays in Pure Bash - You Suck at Programming](https://www.youtube.com/watch?v=r4Sc-DpIprk)
 - [@video@Arrays in Bash Explained in 7 Minutes! - Indexed, Associative, and Nested / Multi-Dimensional](https://www.youtube.com/watch?v=asHJ-xfuyno)
