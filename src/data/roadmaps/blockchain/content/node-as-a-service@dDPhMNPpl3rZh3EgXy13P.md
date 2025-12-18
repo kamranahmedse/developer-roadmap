@@ -1,6 +1,6 @@
-# Node as a Service (NaaS)
+# Node as a Service
 
-Running your own blockchain node can be challenging, especially when getting started or while scaling fast. There are a number of services that run optimized node infrastructures for you, so you can focus on developing your application or product instead.
+Node as a Service (NaaS) provides access to blockchain nodes without requiring users to set up and maintain their own infrastructure. Instead of running a node directly, developers can connect to a node provided by a third-party service. This allows them to interact with the blockchain, read data, and broadcast transactions without the complexities of node management.
 
 Visit the following resources to learn more:
 

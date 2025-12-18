@@ -1,6 +1,6 @@
 # Unit Tests
 
-Unit testing involves testing individual components in a smart contract for correctness. A unit test is simple, quick to run, and provides a clear idea of what went wrong if the test fails.
+Unit tests are a way to check if individual parts of a program, like functions or modules, work correctly in isolation. They involve writing specific test cases that provide inputs to these parts and then verifying that the outputs match what's expected. This helps developers find and fix bugs early in the development process, ensuring that each component of the software behaves as intended before being integrated with other parts.
 
 Visit the following resources to learn more:
 

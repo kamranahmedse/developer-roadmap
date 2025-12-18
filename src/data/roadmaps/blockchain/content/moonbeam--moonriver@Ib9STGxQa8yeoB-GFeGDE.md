@@ -1,6 +1,6 @@
-# Moonbeam Moonriver
+# Moonbeam / Moonriver
 
-Moonbeam is a Polkadot network parachain that promises cross-chain interoperability between the Ethereum and Polkadot . More specifically, Moonbeam is a smart contract platform that enables developers to move dApps between the two networks without having to rewrite code or redeploy infrastructure. Moonriver is an incentivized testnet. It enables developers to create, test, and adjust their protocols prior to launching on Moonbeam. Moonbeam is the mainnet of the ecosystem.
+Moonbeam and Moonriver are developer-friendly blockchain platforms designed to operate as parachains within the Polkadot and Kusama networks, respectively. They provide an Ethereum-compatible environment, allowing developers to easily deploy existing Solidity-based smart contracts and decentralized applications (dApps) with minimal code changes. This compatibility simplifies the process of bringing Ethereum projects to the Polkadot ecosystem, leveraging its scalability and interoperability features.
 
 Visit the following resources to learn more:
 

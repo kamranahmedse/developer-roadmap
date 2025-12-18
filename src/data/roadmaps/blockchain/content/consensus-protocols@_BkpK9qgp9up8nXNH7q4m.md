@@ -1,6 +1,6 @@
-# Consensus protocols
+# Consensus Protocols
 
-Consensus for blockchain is a procedure in which the peers of a Blockchain network reach agreement about the present state of the data in the network. Through this, consensus algorithms establish reliability and trust in the Blockchain network.
+Consensus protocols are mechanisms that allow a distributed network of computers to agree on a single, consistent state of data. They ensure that all participants in the network can trust the information being shared, even when some participants might be unreliable or malicious. These protocols establish rules for how new information is added to the network and how conflicts are resolved, ultimately leading to a shared understanding of the truth.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # On-Chain Scaling
 
-On-chain scaling refers to any direct modification made to a blockchain, like data sharding and execution sharding in the incoming version of Ethereum 2.0. Another type of on-chain scaling would be a sidechain with two-way bridge to Ethereum, like Polygon.
+On-chain scaling refers to methods of increasing a blockchain's transaction processing capacity directly within the blockchain's own architecture. This involves modifications to the blockchain's core rules, such as increasing the block size or changing the consensus mechanism, to allow for more transactions to be processed in a given time period. The goal is to handle a higher volume of transactions without relying on external solutions.
 
 Visit the following resources to learn more:
 

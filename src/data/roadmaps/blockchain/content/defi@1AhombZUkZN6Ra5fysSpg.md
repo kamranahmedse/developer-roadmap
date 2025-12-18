@@ -1,6 +1,6 @@
-# DeFi
+# Decentralized Finance (DeFi)
 
-Decentralized finance offers financial instruments without relying on intermediaries such as brokerages, exchanges, or banks by using smart contracts on a blockchain.
+Decentralized Finance (DeFi) refers to financial services built on blockchain technology, primarily using smart contracts. These services aim to replicate traditional financial systems like lending, borrowing, trading, and insurance, but in a decentralized and often permissionless manner. DeFi applications seek to remove intermediaries, increase transparency, and provide greater accessibility to financial products.
 
 Visit the following resources to learn more:
 

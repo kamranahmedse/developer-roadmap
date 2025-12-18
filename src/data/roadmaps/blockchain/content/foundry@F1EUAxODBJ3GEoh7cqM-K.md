@@ -1,6 +1,6 @@
 # Foundry
 
-Foundry is a smart contract development toolchain. Foundry manages your dependencies, compiles your project, runs tests, deploys, and lets you interact with the chain from the command-line and via Solidity scripts.
+Foundry is a fast, portable, and modular toolkit for Ethereum application development. It's primarily used for writing, testing, and deploying smart contracts. Foundry offers a command-line interface and a Solidity-based testing environment, making it a popular choice for developers who prefer a more streamlined and efficient workflow compared to other frameworks.
 
 Visit the following resources to learn more:
 

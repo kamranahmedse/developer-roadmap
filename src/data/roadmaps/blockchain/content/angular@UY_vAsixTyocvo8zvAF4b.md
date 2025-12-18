@@ -1,6 +1,6 @@
 # Angular
 
-Angular is a component based front-end development framework built on TypeScript which includes a collection of well-integrated libraries that include features like routing, forms management, client-server communication, and more.
+Angular is a TypeScript-based, open-source web application framework led by the Angular Team at Google. It provides a structured way to build dynamic web applications, using components, templates, and dependency injection. Angular helps developers create complex, single-page applications with features like data binding, routing, and form management, making it a popular choice for building interactive user interfaces.
 
 Visit the following resources to learn more:
 

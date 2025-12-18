@@ -1,6 +1,6 @@
 # Infura
 
-Infura provides the tools and infrastructure that allow developers to easily take their blockchain application from testing to scaled deployment - with simple, reliable access to Ethereum and IPFS.
+Infura provides a suite of tools and infrastructure that allows developers to easily connect to the Ethereum and IPFS networks. It essentially acts as a gateway, handling the complexities of running and maintaining blockchain nodes. Instead of setting up and managing their own Ethereum node, developers can use Infura's API to interact with the blockchain, making it simpler to build and deploy decentralized applications.
 
 Visit the following resources to learn more:
 

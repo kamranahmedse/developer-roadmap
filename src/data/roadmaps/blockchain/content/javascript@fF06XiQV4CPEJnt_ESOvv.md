@@ -1,6 +1,6 @@
-# JavaScript
+# JavaScript for dApps
 
-JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. It lets us add interactivity to pages e.g. you might have seen sliders, alerts, click interactions, and popups etc on different websites -- all of that is built using JavaScript. Apart from being used in the browser, it is also used in other non-browser environments as well such as Node.js for writing server-side code in JavaScript, Electron for writing desktop applications, React Native for mobile applications and so on.
+JavaScript is a programming language that makes websites interactive. It's what allows buttons to work, animations to play, and data to be updated without reloading the page. For decentralized applications (dApps), JavaScript is essential because it's the primary language used to build the front-end, or user interface, that users interact with. It also connects the front-end to the blockchain, allowing users to send transactions and retrieve data from the decentralized network.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# Security
+# dApp Security
 
-dApps face unique security challenges as they run on immutable blockchains. dApps are harder to maintain, and developers cannot modify or update their codes once deployed. Therefore, special consideration must be taken before putting it on the blockchain.
+Decentralized applications (dApps) face unique security risks because they run on a blockchain and interact with smart contracts. Common vulnerabilities include flaws in smart contract code that can be exploited to drain funds, front-running where malicious actors take advantage of pending transactions, and phishing attacks targeting users' private keys. Securing dApps requires careful auditing of smart contracts, robust access controls, and user education to prevent exploitation of these vulnerabilities.
 
 Visit the following resources to learn more:
 

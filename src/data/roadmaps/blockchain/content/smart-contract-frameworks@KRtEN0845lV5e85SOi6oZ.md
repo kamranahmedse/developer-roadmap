@@ -1,6 +1,6 @@
 # Smart Contract Frameworks
 
-Building a full-fledged dapp requires different pieces of technology. Software frameworks include many of the needed features or provide easy plugin systems to pick the tools you desire.
+Smart contract frameworks are tools that provide a structure and set of libraries to help developers write, test, and deploy smart contracts more efficiently. They typically include features like automated testing, deployment scripts, and standardized contract structures, reducing boilerplate code and improving the overall development experience. These frameworks streamline the process of building decentralized applications (dApps) by offering pre-built components and best practices.
 
 Visit the following resources to learn more:
 

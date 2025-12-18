@@ -1,6 +1,6 @@
 # GitHub
 
-GitHub is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
+GitHub is a web-based platform that provides hosting for software development and version control using Git. It allows developers to collaborate on projects, track changes to code, and manage different versions of their work. It offers features like issue tracking, pull requests, and code review, making it a central hub for open-source and private software development.
 
 Visit the following resources to learn more:
 

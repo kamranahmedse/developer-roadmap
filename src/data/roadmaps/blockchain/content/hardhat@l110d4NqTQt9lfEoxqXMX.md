@@ -1,6 +1,6 @@
 # Hardhat
 
-Hardhat is an Ethereum development environment. It allows users to compile contracts and run them on a development network. Get Solidity stack traces, console.log and more.
+Hardhat is a development environment designed for Ethereum software. It helps developers manage and automate the tasks that are inherent to building smart contracts and decentralized applications (dApps), such as compiling, testing, debugging, and deploying smart contracts. It provides a local development network, allowing developers to experiment and iterate quickly without needing to interact with a live blockchain.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Crypto Wallets
 
-A cryptocurrency wallet is a device, physical medium, program, or service which stores the public and/or private keys for cryptocurrency transactions. In addition to this basic function of storing the keys, a cryptocurrency wallet more often also offers the functionality of encrypting and/or signing information.
+Crypto wallets are tools that allow users to manage and interact with their cryptocurrencies. They don't actually store the crypto themselves; instead, they store the private keys needed to access and control your digital assets on the blockchain. These wallets enable users to send, receive, and store cryptocurrencies, as well as interact with decentralized applications (dApps).
 
 Visit the following resources to learn more:
 

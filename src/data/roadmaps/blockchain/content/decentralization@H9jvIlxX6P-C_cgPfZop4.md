@@ -1,6 +1,6 @@
 # Decentralization
 
-In blockchain, decentralization refers to the transfer of control and decision-making from a centralized entity (individual, organization, or group thereof) to a distributed network. Decentralized networks strive to reduce the level of trust that participants must place in one another, and deter their ability to exert authority or control over one another in ways that degrade the functionality of the network.
+Decentralization means power and control are distributed, rather than held by a single entity. Imagine a group of friends managing a shared bank account; no single person can make changes without the others knowing and agreeing. This shared control makes the system more resistant to censorship, single points of failure, and manipulation, as no one individual has the authority to alter the rules or data unilaterally.
 
 Visit the following resources to learn more:
 

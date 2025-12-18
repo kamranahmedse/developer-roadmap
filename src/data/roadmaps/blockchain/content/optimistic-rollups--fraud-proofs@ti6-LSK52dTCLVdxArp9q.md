@@ -1,6 +1,6 @@
-# Optimistic Rollups and Fraud Proofs
+# Optimistic Rollups & Fraud Proofs
 
-‍Optimistic rollups are a layer 2 (L2) construction that improves throughput and latency on Ethereum’s base layer by moving computation and data storage off-chain. An optimistic rollup processes transactions outside of Ethereum Mainnet, reducing congestion on the base layer and improving scalability. Optimistic rollups allow anyone to publish blocks without providing proofs of validity. However, to ensure the chain remains safe, optimistic rollups specify a time window during which anyone can dispute a state transition.
+Optimistic rollups are a layer-2 scaling solution for blockchains that bundle multiple transactions together and post them to the main chain as a single transaction. The "optimistic" part means that these bundled transactions are assumed to be valid unless proven otherwise. Fraud proofs are the mechanism by which someone can challenge the validity of a rollup transaction. If a fraud proof is successful, the invalid transaction is reverted, and the submitter of the fraudulent transaction is penalized.
 
 Visit the following resources to learn more:
 

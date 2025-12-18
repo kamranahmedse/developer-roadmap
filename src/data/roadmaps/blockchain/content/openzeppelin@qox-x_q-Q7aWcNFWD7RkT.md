@@ -1,6 +1,6 @@
 # OpenZeppelin
 
-OpenZeppelin Contracts helps you minimize risk by using battle-tested libraries of smart contracts for Ethereum and other blockchains. It includes the most used implementations of ERC standards.
+OpenZeppelin is a library of secure, reusable smart contracts for Ethereum and other blockchain platforms. It provides implementations of common standards like ERC-20 and ERC-721, as well as security tools and best practices to help developers build decentralized applications (dApps) safely and efficiently. Think of it as a collection of pre-built, audited building blocks for smart contract development.
 
 Visit the following resources to learn more:
 

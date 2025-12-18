@@ -1,6 +1,6 @@
-# Vue.js
+# Vue
 
-Vue.js is an open-source JavaScript framework for building user interfaces and single-page applications. It is mainly focused on front end development.
+Vue.js is a progressive JavaScript framework used for building user interfaces and single-page applications. It focuses on the view layer, making it easy to integrate into existing projects or build complex applications from scratch. Vue utilizes a component-based architecture, allowing developers to create reusable UI elements and manage application state efficiently.
 
 Visit the following resources to learn more:
 

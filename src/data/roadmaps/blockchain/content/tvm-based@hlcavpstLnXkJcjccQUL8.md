@@ -1,8 +1,6 @@
-# TVM based
+# TVM-Based Blockchains
 
-TVM-based blockchain is a type of blockchain that uses the Telegram Open Network Virtual Machine (TVM) for executing smart contracts. This allows for fast and efficient execution of smart contracts and enables developers to create decentralized applications.
-
-BoC stands for Bag of Cells, and it refers to the data structure used in the TVM-based blockchain to store all the information related to a smart contract. This includes the code of the contract, its state, and other relevant data. The Bag of Cells is a highly efficient data structure that allows for fast and secure storage of smart contract data.
+TVM-based blockchains use the TON Virtual Machine (TVM) to execute smart contracts. TVM is designed for high performance and scalability, allowing these blockchains to handle a large number of transactions efficiently. It supports multiple programming languages and offers features like asynchronous message passing, enabling complex and decentralized applications to be built on the chain.
 
 Visit the following resources to learn more:
 

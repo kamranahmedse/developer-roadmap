@@ -1,6 +1,6 @@
 # Moralis
 
-Moralis provides a single workflow for building high performance dapps. Fully compatible with your favorite web3 tools and services.
+Moralis is a development platform that simplifies the process of building decentralized applications (dApps). It provides a set of tools and infrastructure that handle the backend complexities, allowing developers to focus on the frontend user experience and smart contract logic. Essentially, Moralis offers a streamlined way to interact with blockchain data and functionalities without needing to manage servers or complex APIs.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Slither
 
-Slither is a Solidity static analysis framework written in Python 3. It runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to easily write custom analyses. Slither enables developers to find vulnerabilities, enhance their code comprehension, and quickly prototype custom analyses.
+Slither is a static analysis tool for Solidity smart contracts. It analyzes code without executing it, identifying potential vulnerabilities, bugs, and code inefficiencies. It helps developers find issues like reentrancy, gas optimization opportunities, and compliance with coding standards before deploying their contracts.
 
 Visit the following resources to learn more:
 
