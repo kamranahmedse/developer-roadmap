@@ -1,6 +1,6 @@
 # Client Nodes
 
-A blockchain is a distributed network of computers (known as nodes) running software that can verify blocks and transaction data. The software application, known as a client, must be run on your computer to turn it into a blockchain node.
+Client nodes are the user's entry point to interact with a blockchain network and its decentralized applications (dApps). They provide an interface, often a web browser or a dedicated application, that allows users to send transactions, query blockchain data, and generally engage with the dApp's functionalities without needing to directly manage or understand the complexities of the underlying blockchain infrastructure. These nodes rely on other nodes in the network to verify and process transactions.
 
 Visit the following resources to learn more:
 

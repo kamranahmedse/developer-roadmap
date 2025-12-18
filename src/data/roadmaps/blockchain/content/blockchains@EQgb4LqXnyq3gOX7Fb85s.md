@@ -1,6 +1,6 @@
 # Blockchains
 
-Blockchain systems vary considerably in their design, particularly with regard to the consensus mechanisms used to perform the essential task of verifying network data.
+Blockchains are essentially digital ledgers that record transactions in a secure and transparent manner. There are primarily three types: Public blockchains, like Bitcoin and Ethereum, are permissionless and open to anyone. Private blockchains, on the other hand, are permissioned and controlled by a single organization. Consortium blockchains are also permissioned, but governed by a group of organizations, offering a balance between decentralization and control.
 
 Visit the following resources to learn more:
 

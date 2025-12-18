@@ -1,6 +1,6 @@
 # Git
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+Git is a distributed version control system that tracks changes to files in a project over time. It allows multiple developers to collaborate on the same codebase simultaneously, managing different versions and merging changes efficiently. Git enables developers to revert to previous states, compare modifications, and maintain a detailed history of all project updates.
 
 Visit the following resources to learn more:
 

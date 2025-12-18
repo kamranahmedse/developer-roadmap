@@ -1,9 +1,9 @@
 # Gnosis Chain
 
-Gnosis is a blockchain based on Ethereum, which changed the consensus model to PoS to solve major issues on the Ethereum mainnet. While the platform solves problems surrounding transaction fees and speed, it also means that the Gnosis chain is less decentralized, as it is somewhat reliant on the Ethereum chain.
+Gnosis Chain is a blockchain that's compatible with the Ethereum Virtual Machine (EVM). This means it can run smart contracts and applications designed for Ethereum with relatively few changes. It operates as a separate blockchain, using its own consensus mechanism and currency, while still maintaining compatibility with the Ethereum ecosystem.
 
 Visit the following resources to learn more:
 
 - [@official@Gnosis Chain](https://www.gnosischain.com/)
-- [@official@Gnosis Docs](https://www.docs.gnosischain.com/)
-- [@article@Gnosis Whitepaper](https://blockchainlab.com/pdf/gnosis_whitepaper.pdf)
+- [@official@Gnosis Docs](https://docs.gnosischain.com/)
+- [@article@Gnosis Whitepaper](https://www.allcryptowhitepapers.com/gnosis-whitepaper/)

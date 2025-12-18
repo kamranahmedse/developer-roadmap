@@ -1,6 +1,6 @@
 # GitLab
 
-GitLab is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
+GitLab is a web-based DevOps platform that provides a Git repository manager offering features like issue tracking, CI/CD pipelines, and more. It allows developers to collaboratively work on code, manage projects, and automate the software development lifecycle from planning to deployment. GitLab can be self-hosted or used as a SaaS solution.
 
 Visit the following resources to learn more:
 

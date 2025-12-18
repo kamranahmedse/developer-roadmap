@@ -1,6 +1,6 @@
-# Mythx
+# MythX
 
-MythX is a comprehensive smart contract security analysis tools developed by Consensys. It allows users to detect security vulnerabilities in Ethereum smart contracts throughout the development life cycle as well as analyze Solidity dapps for security holes and known smart contract vulnerabilities.
+MythX is a security analysis platform designed for Ethereum smart contracts. It automatically scans smart contract bytecode for common vulnerabilities using a combination of static analysis, dynamic analysis, and symbolic execution. This helps developers identify and address potential security flaws before deploying their contracts to the blockchain.
 
 Visit the following resources to learn more:
 

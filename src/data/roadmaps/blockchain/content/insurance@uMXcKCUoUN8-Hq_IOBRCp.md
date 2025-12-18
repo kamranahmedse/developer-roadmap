@@ -1,6 +1,6 @@
-# Insurance
+# Insurance dApps
 
-Blockchain technology has the ability to automate claims functions by verifying real-world data through the use of an oracle. It also automates payments between parties for claims and thus lower administrative costs for insurance companies.
+Insurance dApps can streamline and automate various insurance processes. For example, claims processing can be automated using smart contracts that trigger payouts when specific conditions are met, verified by oracles providing external data. This reduces fraud, speeds up payouts, and lowers administrative costs. Policy management can also be improved by storing policy details on the blockchain, ensuring transparency and immutability. Furthermore, new insurance models like peer-to-peer insurance can be facilitated, where users pool resources and share risks directly, cutting out traditional intermediaries.
 
 Visit the following resources to learn more:
 

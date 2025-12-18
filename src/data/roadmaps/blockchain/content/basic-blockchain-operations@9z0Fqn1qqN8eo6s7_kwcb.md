@@ -1,6 +1,6 @@
 # Basic Blockchain Operations
 
-Operations in a decentralized networks are the responsibility of the peer participants and their respective computational nodes. These are specific for each type of blockchain.
+Basic blockchain operations encompass the fundamental actions that allow a blockchain network to function. These operations include creating new blocks, adding transactions to blocks, verifying transactions, distributing the blockchain across the network, and reaching consensus on the state of the blockchain. These operations ensure the integrity, security, and immutability of the data stored on the blockchain.
 
 Visit the following resources to learn more:
 

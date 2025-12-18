@@ -1,6 +1,6 @@
 # Besu
 
-Besu is an Apache 2.0 licensed, MainNet compatible, Ethereum client written in Java.
+Besu is an open-source Ethereum client designed for both public and private blockchain networks. It allows users to connect to and interact with Ethereum-based blockchains, executing smart contracts and participating in network consensus. Besu is written in Java and offers features suitable for enterprise use, including privacy, permissioning, and monitoring tools.
 
 Visit the following resources to learn more:
 

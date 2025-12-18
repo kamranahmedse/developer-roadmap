@@ -1,6 +1,6 @@
-# State and Payment Channels
+# State & Payment Channels
 
-State channels refer to the process in which users transact with one another directly outside of the blockchain, or ‘off-chain,’ and greatly minimize their use of ‘on-chain’ operations.
+State channels and payment channels are techniques used to improve the scalability and efficiency of blockchain transactions. They allow participants to conduct multiple transactions off-chain, only interacting with the main blockchain to open and close the channel. This reduces congestion on the main chain and lowers transaction fees, as only the opening and closing transactions need to be recorded on the blockchain.
 
 Visit the following resources to learn more:
 

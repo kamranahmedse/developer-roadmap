@@ -1,6 +1,6 @@
-# Architecture
+# dApp Architecture
 
-Unlike Web2 applications, in Web3 there’s no centralized database that stores the application state or user identity, and there’s no centralized web server where the backend logic resides.
+Traditional web applications typically rely on a centralized server to handle data storage, logic, and user authentication. In contrast, decentralized applications (dApps) shift these responsibilities to a decentralized network, often a blockchain. Instead of a single server, dApps use smart contracts deployed on the blockchain to manage data and logic. The frontend of a dApp, which users interact with, can still be hosted on traditional servers or decentralized storage solutions, but the core functionality is executed and verified on the blockchain, making it more transparent and resistant to censorship.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# Blockchain
+# General Blockchain Knowledge
 
-A blockchain is a decentralized, distributed ledger technology that records transactions across many computers in such a way that the registered transactions cannot be altered retroactively. This technology is the backbone of cryptocurrencies like Bitcoin and Ethereum, but its applications extend far beyond digital currencies.
+General blockchain knowledge encompasses the fundamental concepts and principles that underpin blockchain technology. This includes understanding what a blockchain is, how it works as a distributed and immutable ledger, and the key components like blocks, transactions, consensus mechanisms, and cryptography. It also involves grasping the different types of blockchains (public, private, permissioned), their use cases beyond cryptocurrencies, and the potential benefits and limitations of this technology.
 
 Visit the following resources to learn more:
 

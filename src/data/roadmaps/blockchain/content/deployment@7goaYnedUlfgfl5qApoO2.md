@@ -1,6 +1,6 @@
-# Deployment
+# Smart Contract Deployment
 
-Unlike other software, smart contracts don’t run on a local computer or a remote server: they live on the blockchain. Thus, interacting with them is different from more traditional applications.
+Smart contract deployment is the process of taking a smart contract, written in a language like Solidity, and making it live and executable on a blockchain network. This involves compiling the code into bytecode, paying a transaction fee (gas) to the network, and storing the contract's bytecode and initial state on the blockchain. Once deployed, the smart contract becomes an immutable and autonomous program that can be interacted with by users and other contracts.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Arbitrum
 
-Arbitrum aims to reduce transaction fees and congestion by moving as much computation and data storage off of Ethereum's main blockchain (layer 1) as it can. Storing data off of Ethereum's blockchain is known as Layer 2 scaling solutions.
+Arbitrum is a Layer-2 scaling solution designed to improve the speed and reduce the costs of transactions on the Ethereum blockchain. It operates by executing transactions off-chain and then posting the results back to the main Ethereum chain, leveraging optimistic rollups to achieve higher throughput and lower gas fees compared to directly interacting with Ethereum. This allows for more complex and scalable decentralized applications (dApps) to be built and used without being constrained by the limitations of the base layer.
 
 Visit the following resources to learn more:
 

@@ -8,4 +8,4 @@ Visit the following resources to learn more:
 - [@official@Everscale Documentation](https://docs.everscale.network/)
 - [@official@Everscale Guide](https://everscale.guide/)
 - [@official@Everscale - Getting Started](https://everscale.network/getting-started)
-- [@official@Everscale Whitepaper](https://everscale.network/docs/everscale-whitepaper.pdf)
+- [@official@Everscale Whitepaper](https://coinpaprika.com/storage/cdn/whitepapers/10976405.pdf)

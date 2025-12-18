@@ -1,6 +1,6 @@
 # Bitbucket
 
-Bitbucket is a Git based hosting and source code repository service that is Atlassian's alternative to other products like GitHub, GitLab etc. Bitbucket offers hosting options via Bitbucket Cloud (Atlassian's servers), Bitbucket Server (customer's on-premise) or Bitbucket Data Centre (number of servers in customers on-premise or cloud environment)
+Bitbucket is a web-based version control repository hosting service owned by Atlassian, the same company that makes Jira and Confluence. It's primarily used for source code management and collaborative development, allowing teams to store, track, and manage changes to their code. Bitbucket supports both Git and Mercurial version control systems and offers features like pull requests, branching, and issue tracking to streamline the software development workflow.
 
 Visit the following resources to learn more:
 

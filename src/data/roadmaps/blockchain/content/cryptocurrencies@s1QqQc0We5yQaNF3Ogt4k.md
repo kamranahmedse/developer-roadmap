@@ -1,6 +1,6 @@
 # Cryptocurrencies
 
-A cryptocurrency, crypto-currency, or crypto is a digital currency designed to work as a medium of exchange through a blockchain, which is not reliant on any central authority, such as a government or bank, to uphold or maintain it.
+Cryptocurrencies are digital or virtual currencies that use cryptography for security. They operate independently of a central bank and are often decentralized, meaning no single entity controls them. Transactions are typically recorded on a distributed public ledger called a blockchain.
 
 Visit the following resources to learn more:
 

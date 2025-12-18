@@ -1,6 +1,6 @@
 # React
 
-React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.
+React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and efficiently update and render them based on data changes. React uses a component-based architecture and a virtual DOM to optimize performance, making it a popular choice for building interactive and dynamic web applications.
 
 Visit the following resources to learn more:
 

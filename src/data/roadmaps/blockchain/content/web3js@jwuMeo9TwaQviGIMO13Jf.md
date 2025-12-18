@@ -1,6 +1,6 @@
-# Web3.js
+# web3.js
 
-web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.
+web3.js is a collection of JavaScript libraries that allows you to interact with a local or remote Ethereum node using HTTP, WebSocket, or IPC. It provides a set of functions to interact with smart contracts on the Ethereum blockchain, send transactions, read blockchain data, and manage Ethereum accounts. Essentially, it acts as a bridge between your JavaScript application and the Ethereum network.
 
 Visit the following resources to learn more:
 

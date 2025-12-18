@@ -1,6 +1,6 @@
-# Blockchain Oracles
+# Oracles
 
-A blockchain oracle is a third-party service that connects smart contracts with the outside world, primarily to feed information in from the world, but also the reverse. Information from the world encapsulates multiple sources so that decentralized knowledge is obtained.
+Oracles are entities that connect blockchains to external systems, enabling smart contracts to interact with real-world data. They act as bridges, fetching information from off-chain sources like APIs, databases, or even physical sensors, and then relaying that data onto the blockchain for use in smart contract execution. This allows smart contracts to react to real-world events and conditions, making them more versatile and useful.
 
 Visit the following resources to learn more:
 

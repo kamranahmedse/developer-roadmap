@@ -1,6 +1,6 @@
-# Upgrades
+# Smart Contract Upgrades
 
-Smart contracts are immutable by default. Once they are created there is no way to alter them, effectively acting as an unbreakable contract among participants. However, for some scenarios, it is desirable to be able to modify them.
+Smart contract upgrades involve modifying or replacing existing smart contracts deployed on a blockchain. Since blockchains are immutable, directly altering a deployed contract is impossible. Instead, upgrade mechanisms typically involve deploying a new contract and migrating data and functionality from the old contract to the new one, ensuring minimal disruption and maintaining the integrity of the application.
 
 Visit the following resources to learn more:
 

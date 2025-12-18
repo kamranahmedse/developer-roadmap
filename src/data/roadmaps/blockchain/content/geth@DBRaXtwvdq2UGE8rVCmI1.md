@@ -1,6 +1,6 @@
 # Geth
 
-Go Ethereum (Geth) is one of the three original implementations (along with C++ and Python) of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3.
+Geth, short for Go Ethereum, is a command-line interface for running a full Ethereum node implemented in the Go programming language. It allows you to interact with the Ethereum blockchain, mine Ether, create and deploy smart contracts, and inspect block and transaction data. Essentially, Geth provides the core infrastructure needed to participate in the Ethereum network.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Truffle
 
-Truffle is a development environment, testing framework, and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM). It helps developers build, test, and deploy smart contracts with ease. It provides features like contract compilation, linking, deployment, and automated testing. However, Consensys, the company behind Truffle, announced the sunset of Truffle and Ganache in November 2023, shifting focus to other tools.
+Truffle is a development environment, testing framework, and asset pipeline for blockchains using the Ethereum Virtual Machine (EVM). It provides tools for compiling, testing, and deploying smart contracts, making it easier for developers to build decentralized applications (dApps). Truffle streamlines the development process by offering features like contract management, automated testing, and network configuration.
 
 Visit the following resources to learn more:
 

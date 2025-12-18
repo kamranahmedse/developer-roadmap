@@ -1,6 +1,6 @@
-# Ethereum 2
+# Ethereum 2.0
 
-Ethereum 2.0 marks a long-anticipated upgrade to the Ethereum public mainnet. Designed to accelerate Ethereum’s usage and adoption by improving its performance, Ethereum 2.0 implements Proof of Stake.
+Ethereum 2.0, also known as Serenity, represents a major upgrade to the Ethereum blockchain. It transitions the network from a Proof-of-Work (PoW) consensus mechanism to a Proof-of-Stake (PoS) system called Casper, aiming to improve scalability, security, and sustainability. This upgrade also introduces sharding, which divides the blockchain into multiple smaller, more manageable pieces to increase transaction throughput.
 
 Visit the following resources to learn more:
 

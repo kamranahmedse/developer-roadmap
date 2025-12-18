@@ -1,6 +1,6 @@
 # Oracle Networks
 
-By leveraging many different data sources, and implementing an oracle system that isn’t controlled by a single entity, decentralized oracle networks provide an increased level of security and fairness to smart contracts.
+Oracle networks are groups of independent oracles that work together to provide data to a blockchain. Instead of relying on a single source of information, these networks aggregate data from multiple oracles, enhancing reliability and security. This redundancy helps to mitigate the risk of inaccurate or manipulated data being fed into smart contracts, making the overall system more robust.
 
 Visit the following resources to learn more:
 

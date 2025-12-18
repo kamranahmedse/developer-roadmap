@@ -1,11 +1,12 @@
 # Rust
 
-Rust is a multi-paradigm, general-purpose programming language. Rust emphasizes performance, type safety, and concurrency. It is popular on smart contract chains Solana and Polkadot.
+Rust is a multi-paradigm, high-level programming language focused on safety, speed, and concurrency. It achieves memory safety without garbage collection, making it suitable for systems programming and resource-constrained environments. Rust's ownership system and borrow checker prevent common programming errors like data races and dangling pointers at compile time.
 
 Visit the following resources to learn more:
 
-- [@official@Rust Programming Language](https://www.rust-lang.org/)
-- [@official@Learn Rust](https://www.rust-lang.org/learn)
+- [@roadmap@Rust Programming Language](https://www.rust-lang.org/)
 - [@course@Cyfrin Updraft](https://updraft.cyfrin.io/courses/rust-programming-basics)
-- [@article@How to write and deploy a smart contract in Rust](https://docs.near.org/tutorials/nfts/introduction)
+- [@official@Learn Rust](https://www.rust-lang.org/learn)
+- [@article@Visit the Dedicated Rust Roadmap](https://roadmap.sh/rust)
+- [@article@How to Build and Deploy a Smart Contract With Rust and the Gear Protocol](https://www.freecodecamp.org/news/build-and-deploy-smart-contract-rust-gear-protocol/)
 - [@feed@Explore top posts about Rust](https://app.daily.dev/tags/rust?ref=roadmapsh)

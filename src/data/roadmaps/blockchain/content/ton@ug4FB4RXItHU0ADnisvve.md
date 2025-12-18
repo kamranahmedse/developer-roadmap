@@ -1,6 +1,6 @@
-# The Open Network
+# TON
 
-TON is a fully decentralized layer-1 blockchain designed by Telegram to onboard billions of users. It boasts ultra-fast transactions, tiny fees, easy-to-use apps, and is environmentally friendly.
+TON (The Open Network) is a decentralized and open-source blockchain platform originally designed by the Telegram team. It aims to provide fast, secure, and scalable transactions and decentralized applications (dApps). TON utilizes a multi-blockchain architecture, including a masterchain and multiple workchains, to achieve high throughput and flexibility.
 
 Visit the following resources to learn more:
 

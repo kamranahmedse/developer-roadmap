@@ -1,6 +1,6 @@
 # ERC Tokens
 
-An ‘Ethereum Request for Comments’ (ERC) is a document that programmers use to write smart contracts on Ethereum Blockchain. They describe rules in these documents that Ethereum-based tokens must comply with. While there are several Ethereum standards. These ERC Ethereum standards are the most well-known and popular: ERC-20, ERC-721, ERC-1155, and ERC-777.
+ERC tokens are a set of standards for creating tokens on the Ethereum blockchain. These standards define a common set of rules that tokens must follow, ensuring they can interact seamlessly with other applications and wallets within the Ethereum ecosystem. This standardization simplifies the process of creating, deploying, and using tokens for various purposes, such as representing digital assets, utility within a platform, or governance rights.
 
 Visit the following resources to learn more:
 

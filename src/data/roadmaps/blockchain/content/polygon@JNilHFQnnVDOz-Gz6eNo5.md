@@ -1,6 +1,6 @@
 # Polygon
 
-Polygon, formerly known as the Matic Network, is a protocol that allows anyone to create and exchange value, powered by zero-knowledge technology. Polygon provides multiple solutions including Polygon zkEVM, Polygon PoS, Polygon CDK, and Polygon ID.
+Polygon is a framework for building and connecting Ethereum-compatible blockchain networks. It aims to aggregate scalable solutions on Ethereum, supporting a multi-chain Ethereum ecosystem. It essentially provides tools to create custom blockchain networks that can connect to Ethereum, offering faster and cheaper transactions while still benefiting from Ethereum's security and ecosystem.
 
 Visit the following resources to learn more:
 

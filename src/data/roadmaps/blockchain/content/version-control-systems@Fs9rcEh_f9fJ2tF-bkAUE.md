@@ -1,6 +1,6 @@
 # Version Control Systems
 
-Version control/source control systems allow developers to track and control changes to code over time. These services often include the ability to make atomic revisions to code, branch/fork off of specific points, and to compare versions of code. They are useful in determining the who, what, when, and why code changes were made.
+Version control systems are tools that manage changes to code and other files over time. They allow multiple people to collaborate on a project without overwriting each other's work, track the history of modifications, and revert to previous versions if needed. These systems essentially create a detailed record of every change made to the project, making it easier to understand who made what changes and when.
 
 Visit the following resources to learn more:
 

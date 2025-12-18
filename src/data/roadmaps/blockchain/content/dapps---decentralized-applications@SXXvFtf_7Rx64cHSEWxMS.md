@@ -1,6 +1,6 @@
-# dApps
+# Decentralized Applications (dApps)
 
-A decentralized application (dApp) is an application that can operate autonomously, through the use of smart contracts that run on a blockchain. Like traditional applications, dApps provide some function or utility to its users.
+Decentralized applications, or dApps, are applications that run on a decentralized network, like a blockchain, rather than a single, centralized server. This means that the application's backend logic and data are distributed across many computers, making it more resistant to censorship and single points of failure. Users typically interact with dApps through a user interface, similar to traditional applications, but the underlying architecture is fundamentally different.
 
 Visit the following resources to learn more:
 

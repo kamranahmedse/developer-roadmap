@@ -4,6 +4,6 @@ dApps can be used for just about anything that requires two or more parties to a
 
 Visit the following resources to learn more:
 
-- [@article@What Is a dApp? A Guide to Decentralized Applications](https://www.sofi.com/learn/content/what-is-a-dapp/)
+- [@article@What are dApps? A guide to decentralized applications](https://www.moonpay.com/learn/defi/what-are-dapps)
 - [@article@Blockchain Use Cases and Applications by Industry](https://consensys.net/blockchain-use-cases/)
 - [@article@The real-world use cases for blockchain technology](https://roboticsandautomationnews.com/2022/05/20/the-real-world-use-cases-for-blockchain-technology/)

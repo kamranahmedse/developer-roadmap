@@ -1,6 +1,6 @@
 # Cryptography
 
-Cryptography, or cryptology, is the practice and study of techniques for secure communication in the presence of adversarial behavior. Cryptography is the technique of protecting information and communications by using codes, so that only those intended to receive the information can read and process it. It involves various algorithms and protocols to secure communication by converting plain text into unreadable formats, making it incomprehensible to unauthorized parties.
+Cryptography is the art of secure communication. It involves techniques for encrypting messages, making them unreadable to anyone except the intended recipient who possesses the key to decrypt them. It also provides methods for verifying the authenticity and integrity of data, ensuring that it hasn't been tampered with and that it truly comes from the claimed source.
 
 Visit the following resources to learn more:
 

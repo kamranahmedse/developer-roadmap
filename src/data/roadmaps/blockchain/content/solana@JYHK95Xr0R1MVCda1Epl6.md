@@ -1,6 +1,6 @@
 # Solana
 
-Solana is a public blockchain platform with smart contract functionality. Its native cryptocurrency is SOL.
+Solana is a high-performance, open-source blockchain platform designed for speed and scalability. It aims to provide fast transaction speeds and low transaction costs, making it suitable for decentralized applications (dApps) and decentralized finance (DeFi) projects. Solana achieves this through a combination of innovative technologies, including Proof of History (PoH), a consensus mechanism that allows for faster block creation and validation.
 
 Visit the following resources to learn more:
 

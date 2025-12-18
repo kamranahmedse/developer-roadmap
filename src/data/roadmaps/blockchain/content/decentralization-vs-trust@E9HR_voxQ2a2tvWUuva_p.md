@@ -1,6 +1,6 @@
-# Decentralization vs trust
+# Decentralization vs. Trust
 
-Blockchains, cryptocurrency, smart contracts, and oracles have emerged as new technologies for coordinating social and economic activities in a more secure, transparent, and accessible manner. Most importantly, these technologies are revealing the power of cryptographic guarantees—what we often call cryptographic truth—in restoring users’ trust in everyday interactions.
+Decentralization refers to the distribution of power and control away from a central authority. Trust, in this context, is the reliance on a third party or system to act honestly and reliably. The relationship between the two lies in how decentralization aims to reduce or eliminate the need for trust in a single entity by distributing it across a network.
 
 Visit the following resources to learn more:
 

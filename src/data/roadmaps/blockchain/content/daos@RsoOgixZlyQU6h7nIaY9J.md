@@ -1,6 +1,6 @@
 # DAOs
 
-A decentralized autonomous organization (DAO) is an emerging form of legal structure. With no central governing body, every member within a DAO typically shares a common goal and attempt to act in the best interest of the entity. Popularized through cryptocurrency enthusiasts and blockchain technology, DAOs are used to make decisions in a bottoms-up management approach.
+DAOs, or Decentralized Autonomous Organizations, are essentially internet-native organizations governed by rules encoded as computer programs (smart contracts) on a blockchain. These rules dictate how the organization operates, and decisions are made through proposals and voting by DAO members, often using tokens that represent ownership or voting rights. This system aims to create a transparent and democratic structure where control is distributed rather than centralized.
 
 Visit the following resources to learn more:
 
