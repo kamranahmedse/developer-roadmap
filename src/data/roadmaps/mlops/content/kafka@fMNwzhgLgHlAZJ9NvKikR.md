@@ -1,6 +1,6 @@
 # Kafka
 
-Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+Kafka is a distributed, fault-tolerant, high-throughput streaming platform. It's primarily used for building real-time data pipelines and streaming applications, allowing you to publish, subscribe to, store, and process streams of records. These streams can originate from various sources and be consumed by multiple applications simultaneously.
 
 Visit the following resources to learn more:
 
