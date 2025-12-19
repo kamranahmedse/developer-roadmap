@@ -1,8 +1,8 @@
-# Cloud-native ML Services
+# Cloud-Native ML Services
 
-Most of the cloud providers offer managed services for machine learning. These services are designed to help data scientists and machine learning engineers to build, train, and deploy machine learning models at scale. These services are designed to be cloud-native, meaning they are designed to work with other cloud services and are optimized for the cloud environment.
+Cloud-native ML services are pre-built machine learning tools and platforms offered by cloud providers. These services allow users to build, train, and deploy machine learning models without managing the underlying infrastructure. They often include features like automated model training, scalable deployment options, and integration with other cloud services.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@AWS Sage Maker](https://aws.amazon.com/sagemaker/)
 - [@official@Azure ML](https://azure.microsoft.com/en-gb/products/machine-learning)

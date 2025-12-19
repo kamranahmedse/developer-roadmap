@@ -1,6 +1,6 @@
 # Docker
 
-Docker is a platform for working with containerized applications. Among its features are a daemon and client for managing and interacting with containers, registries for storing images, and a desktop application to package all these features together.
+Docker is a platform that uses operating system-level virtualization to deliver software in packages called containers. These containers isolate software from its environment and ensure that it works uniformly despite differences between development and production environments. Docker simplifies the process of building, shipping, and running applications by packaging all dependencies, libraries, and configurations into a single unit.
 
 Visit the following resources to learn more:
 
