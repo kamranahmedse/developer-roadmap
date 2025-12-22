@@ -4,8 +4,9 @@ Solidity is a programming language specifically designed for writing smart contr
 
 Visit the following resources to learn more:
 
-- [@course@Cyfirn Updraft | Solidity Smart Contract Development](https://updraft.cyfrin.io/courses/solidity)
 - [@official@Solidity Programming Language](https://soliditylang.org/)
+- [@course@Cyfirn Updraft | Solidity Smart Contract Development](https://updraft.cyfrin.io/courses/solidity)
+- [@course@Cyfirn Updraft | Assembly and Formal Verification](https://updraft.cyfrin.io/courses/formal-verification)
 - [@article@Solidity Tutorial](https://www.tutorialspoint.com/solidity/index.htm)
 - [@video@Solidity Course by FreeCodeCamp](https://www.youtube.com/watch?v=ipwxYa-F1uY)
 - [@video@Solidity Course by Dapp University](https://www.youtube.com/watch?v=EhPeHeoKF88)
