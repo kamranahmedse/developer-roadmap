@@ -1,6 +1,6 @@
 # Vercel
 
-Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.
+Vercel is a platform designed for deploying and hosting web applications, particularly those built with modern frontend frameworks and static site generators. It provides features like automatic deployments from Git repositories, serverless functions, and a global content delivery network (CDN) to ensure fast and reliable performance. Vercel simplifies the process of taking a frontend project from development to production.
 
 Visit the following resources to learn more:
 
