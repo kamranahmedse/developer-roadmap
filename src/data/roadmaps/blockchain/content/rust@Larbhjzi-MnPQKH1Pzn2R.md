@@ -5,7 +5,7 @@ Rust is a multi-paradigm, high-level programming language focused on safety, spe
 Visit the following resources to learn more:
 
 - [@roadmap@Rust Programming Language](https://www.rust-lang.org/)
-- [@course@Cyfrin Updraft](https://updraft.cyfrin.io/courses/rust-programming-basics)
+- [@course@Cyfrin Updraft | Rust Programming Basics](https://updraft.cyfrin.io/courses/rust-programming-basics)
 - [@official@Learn Rust](https://www.rust-lang.org/learn)
 - [@article@Visit the Dedicated Rust Roadmap](https://roadmap.sh/rust)
 - [@article@How to Build and Deploy a Smart Contract With Rust and the Gear Protocol](https://www.freecodecamp.org/news/build-and-deploy-smart-contract-rust-gear-protocol/)
