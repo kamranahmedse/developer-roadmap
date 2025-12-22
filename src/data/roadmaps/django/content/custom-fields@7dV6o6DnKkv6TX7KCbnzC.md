@@ -1,0 +1,3 @@
+# Custom Fields
+
+Custom fields in Django allow you to define your own field types beyond the standard ones provided by Django, such as CharField, IntegerField, and DateTimeField. This is useful when you need to store data in a specific format or require specialized validation logic that isn't covered by the built-in field types. By creating custom fields, you can seamlessly integrate your unique data requirements into your Django models.

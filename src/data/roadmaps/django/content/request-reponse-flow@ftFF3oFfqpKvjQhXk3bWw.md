@@ -1,0 +1,3 @@
+# Request-Response Flow in Django
+
+The request-response flow describes how a web application handles incoming requests from users and generates appropriate responses. When a user interacts with a website (e.g., clicks a link or submits a form), their browser sends a request to the server. The server then processes this request, potentially interacting with a database or other resources, and ultimately sends back a response to the user's browser, which then renders the content for the user to see.

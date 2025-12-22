@@ -1,0 +1,3 @@
+# MySQL in Django
+
+MySQL is a popular open-source relational database management system. Django supports MySQL as one of its database backends, allowing you to store and manage your application's data using MySQL's robust features. To use MySQL with Django, you'll need to install the appropriate MySQL driver, configure your Django project's settings to connect to the database, and then define your data models and interact with the database using Django's ORM.

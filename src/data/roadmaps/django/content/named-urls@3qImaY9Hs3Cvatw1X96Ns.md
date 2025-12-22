@@ -1,0 +1,3 @@
+# Named URLs
+
+Named URLs in Django provide a way to refer to your URL patterns by name instead of hardcoding the URL strings in your templates and views. This allows you to change your URL structure without having to update every place where the URL is used, making your code more maintainable and less prone to errors. By assigning a unique name to each URL pattern, you can use this name to dynamically generate URLs, ensuring that your links remain consistent even if the underlying URL structure changes.

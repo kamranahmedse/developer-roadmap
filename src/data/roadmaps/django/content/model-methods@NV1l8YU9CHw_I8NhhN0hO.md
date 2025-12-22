@@ -1,0 +1,3 @@
+# Model Methods
+
+Model methods are functions you define within a Django model class to add custom behavior to individual model instances. These methods allow you to encapsulate logic related to a specific object, such as calculating derived values, performing data manipulations, or implementing custom validation rules. They provide a clean and organized way to extend the functionality of your models beyond the basic fields and relationships.

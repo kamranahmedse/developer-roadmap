@@ -1,0 +1,3 @@
+# DTL Syntax
+
+The Django Template Language (DTL) syntax defines how dynamic content and logic are embedded within HTML templates. It uses tags, variables, and filters to render data from the Django backend into the final HTML output displayed to the user. These elements allow developers to create dynamic web pages by inserting data, performing simple logic, and controlling the structure of the template.

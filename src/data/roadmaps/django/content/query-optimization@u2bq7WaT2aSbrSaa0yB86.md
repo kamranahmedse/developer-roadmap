@@ -1,0 +1,3 @@
+# Query Optimization
+
+Query optimization is the process of improving the efficiency of database queries to reduce execution time and resource consumption. It involves analyzing queries, identifying bottlenecks, and applying techniques like indexing, query rewriting, and caching to minimize the amount of data processed and the number of database operations performed. The goal is to make queries run faster and more efficiently, leading to improved application performance and scalability.

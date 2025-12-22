@@ -1,0 +1,3 @@
+# Signals
+
+Signals in Django allow certain actions to be triggered when specific events occur in your application. Think of them as a way to let different parts of your code communicate with each other without being directly linked. When a particular event happens (like a model being saved or deleted), a signal is sent out, and any functions that are connected to that signal will be executed. This provides a decoupled way to perform tasks in response to events throughout your Django project.

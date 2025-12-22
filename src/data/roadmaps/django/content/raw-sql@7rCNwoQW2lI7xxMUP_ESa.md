@@ -1,0 +1,3 @@
+# Raw SQL Queries
+
+Raw SQL queries in Django allow you to bypass the Django ORM and write SQL statements directly. This is useful when you need to optimize performance, access database-specific features not supported by the ORM, or execute complex queries that are difficult to express using the ORM's query API. It provides a way to interact with the database at a lower level, giving you more control over the generated SQL.

@@ -1,0 +1,3 @@
+# PDB and IPDB
+
+PDB (Python Debugger) is an interactive source code debugger for Python programs. It allows you to pause your program during execution, inspect variables, step through code line by line, and set breakpoints. IPDB is an enhanced version of PDB that uses IPython, providing features like tab completion, syntax highlighting, and better introspection capabilities, making the debugging process more efficient and user-friendly.

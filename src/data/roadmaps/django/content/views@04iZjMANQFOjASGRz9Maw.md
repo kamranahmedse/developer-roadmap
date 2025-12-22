@@ -1,0 +1,3 @@
+# Views
+
+Views are functions or classes in Django that take a web request and return a web response. They act as the intermediary between the model (data) and the template (presentation), processing user requests, retrieving data from the database, and rendering the appropriate template to display the information to the user. Essentially, a view determines what content is shown to the user when they visit a specific URL.

@@ -1,0 +1,3 @@
+# Routers in Django REST Framework
+
+Routers in Django REST Framework (DRF) provide an automated way to generate URL patterns for your API views. Instead of manually defining URLs for common API actions like listing, creating, retrieving, updating, and deleting resources, routers handle this automatically based on the viewsets you define. This simplifies URL configuration and promotes consistency across your API.

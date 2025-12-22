@@ -1,0 +1,3 @@
+# Variables in Django Templates
+
+Variables in Django templates are placeholders that get replaced with actual values when the template is rendered. They allow you to dynamically display data from your Django views within your HTML templates. These variables are enclosed in double curly braces `{{ variable_name }}` and can represent data of various types, such as strings, numbers, lists, or even objects.

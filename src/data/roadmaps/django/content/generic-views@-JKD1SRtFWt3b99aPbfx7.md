@@ -1,0 +1,3 @@
+# Generic Views
+
+Generic views in Django are pre-built views that handle common web development tasks, like displaying a list of objects, creating new objects, or updating existing ones. They reduce the amount of boilerplate code you need to write by providing reusable logic for interacting with your models and templates. Instead of writing custom view functions for each task, you can configure these generic views to suit your specific needs.

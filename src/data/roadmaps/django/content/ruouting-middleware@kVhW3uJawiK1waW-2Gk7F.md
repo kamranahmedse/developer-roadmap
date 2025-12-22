@@ -1,0 +1,3 @@
+# Routing Middleware
+
+Middleware in Django is a framework of hooks into Django's request/response processing. It's a layer of code that sits between the web server and your Django views, processing every request and response in your application. This allows you to modify the request before it reaches your view, or modify the response before it's sent to the user, enabling functionalities like authentication, session management, and request logging.

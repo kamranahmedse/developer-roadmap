@@ -1,0 +1,3 @@
+# Database Setup in Django
+
+Setting up the database in Django involves configuring your project to connect to and interact with a specific database management system (DBMS). This process includes specifying the database type (e.g., PostgreSQL, MySQL, SQLite), providing connection details like the database name, username, password, and host, and ensuring that Django can communicate with the database to store and retrieve data for your application.

@@ -1,0 +1,3 @@
+# Caching
+
+Caching is a technique to store frequently accessed data in a temporary storage location (the cache) to speed up future requests for that data. Instead of retrieving the data from the source (like a database) every time, which can be slow, the application first checks the cache. If the data is in the cache (a "cache hit"), it's retrieved quickly. If not (a "cache miss"), the data is retrieved from the original source, stored in the cache for future use, and then returned to the user. This reduces database load and improves application performance.

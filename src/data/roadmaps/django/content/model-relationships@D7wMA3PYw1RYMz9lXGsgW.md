@@ -1,0 +1,3 @@
+# Model Relationships
+
+Model relationships in Django define how different models (database tables) are connected. These relationships allow you to link related data, such as a blog post belonging to a specific author or a customer having multiple orders. Django provides different types of relationships like One-to-One, One-to-Many (ForeignKey), and Many-to-Many to represent these connections effectively in your database schema.

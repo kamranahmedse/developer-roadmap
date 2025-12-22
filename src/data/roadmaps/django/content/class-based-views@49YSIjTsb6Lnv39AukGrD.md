@@ -1,0 +1,3 @@
+# Class-Based Views
+
+Class-based views (CBVs) in Django are an alternative way to implement views using Python classes instead of functions. They provide a structured and reusable approach to handling common view logic, promoting code organization and reducing redundancy. CBVs leverage inheritance and mixins to offer a more object-oriented way to define views, making them easier to extend and customize.

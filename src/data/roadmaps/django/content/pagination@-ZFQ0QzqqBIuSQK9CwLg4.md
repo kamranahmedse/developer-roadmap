@@ -1,0 +1,3 @@
+# Pagination
+
+Pagination divides large datasets into smaller, discrete pages, improving user experience and server performance. In Django, this is typically used when displaying a large number of objects, such as blog posts or product listings. Instead of loading all items at once, pagination allows users to navigate through the data in manageable chunks, reducing load times and making it easier to find specific information.

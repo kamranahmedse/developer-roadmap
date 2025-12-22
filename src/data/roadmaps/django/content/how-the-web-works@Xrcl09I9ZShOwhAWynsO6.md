@@ -1,0 +1,3 @@
+# How the Web Works
+
+The web operates through a client-server model where a client (like a web browser) sends a request to a server, and the server processes that request and sends back a response. This interaction involves protocols like HTTP for communication, URLs to identify resources, and DNS to translate domain names into IP addresses, enabling users to access and interact with content hosted on servers across the internet.

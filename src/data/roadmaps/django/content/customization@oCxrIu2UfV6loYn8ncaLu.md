@@ -1,0 +1,3 @@
+# Custom Middleware
+
+Middleware in Django is a framework of hooks into Django's request/response processing. It's a way to modify the incoming request or outgoing response at various points in the process. Customization allows developers to create their own middleware components to handle specific tasks, such as request logging, authentication checks, or modifying response headers, tailoring the framework to their application's unique needs.

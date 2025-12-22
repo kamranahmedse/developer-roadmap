@@ -1,0 +1,3 @@
+# Templates
+
+Templates are text files that separate the presentation of your application from its Python code. They contain placeholders (variables) and logic (template tags) that are evaluated when the template is rendered, dynamically generating HTML or other text-based formats. This allows you to create dynamic web pages by inserting data from your Django application into a predefined structure.

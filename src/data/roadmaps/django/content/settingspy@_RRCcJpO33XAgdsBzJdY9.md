@@ -1,0 +1,3 @@
+# settings.py
+
+`settings.py` is a crucial Python module in a Django project that contains global configurations and settings for the entire application. It defines things like database connections, installed apps, middleware, template locations, and security settings. This file essentially acts as the central control panel for your Django project, allowing you to customize its behavior and functionality.

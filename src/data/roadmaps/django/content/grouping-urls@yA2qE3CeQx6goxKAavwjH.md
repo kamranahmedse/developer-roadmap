@@ -1,0 +1,3 @@
+# Grouping URLs
+
+Grouping URLs in Django involves organizing your URL patterns into logical sections within your project's `urls.py` files. This is typically achieved using the `include()` function, which allows you to delegate URL handling to other `urls.py` files. By grouping related URLs, you can improve the structure and maintainability of your project, making it easier to navigate and understand the URL configuration. This approach is especially useful for larger projects with numerous URL patterns.
