@@ -1,0 +1,3 @@
+# Django Debug Toolbar
+
+The Django Debug Toolbar is a powerful set of panels that display various debugging information about the current request and response. It appears as a collapsible toolbar in your browser when you're developing a Django application. This toolbar provides insights into database queries, template rendering, settings, headers, static files, and more, helping developers identify and resolve performance bottlenecks and other issues quickly.

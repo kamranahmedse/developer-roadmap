@@ -1,0 +1,3 @@
+# Formatters
+
+Formatters in Django's logging framework structure log records into human-readable or machine-parseable strings. They define the layout of log messages, specifying which pieces of information (like timestamp, log level, message content, or source file) are included and how they are arranged. You can customize formatters to suit your specific needs, ensuring that log output is clear, consistent, and useful for debugging and monitoring your Django application.

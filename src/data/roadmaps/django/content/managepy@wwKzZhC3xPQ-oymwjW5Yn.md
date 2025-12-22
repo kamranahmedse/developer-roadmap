@@ -1,0 +1,3 @@
+# manage.py
+
+`manage.py` is a command-line utility that's automatically created when you start a new Django project. It acts as a central point for running administrative tasks related to your project, such as starting the development server, running tests, creating database migrations, and more. Think of it as a helper script that simplifies interacting with your Django project from the command line.

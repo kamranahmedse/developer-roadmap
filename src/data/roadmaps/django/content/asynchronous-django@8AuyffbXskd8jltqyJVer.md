@@ -1,0 +1,3 @@
+# Asynchronous Django
+
+Asynchronous programming allows a program to execute multiple tasks seemingly at the same time without waiting for each task to complete before starting the next. Instead of blocking and waiting, the program can switch between tasks as needed, improving efficiency. In Django, this is achieved using tools like `async` and `await` keywords in Python, along with asynchronous views and middleware, enabling the application to handle more requests concurrently and reduce response times, especially for tasks involving I/O operations like database queries or external API calls.

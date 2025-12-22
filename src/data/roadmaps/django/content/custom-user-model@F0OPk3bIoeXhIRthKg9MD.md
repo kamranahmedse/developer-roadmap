@@ -1,0 +1,3 @@
+# Custom User Model
+
+A custom user model in Django allows developers to define their own user model instead of using the default Django user model. This provides flexibility to include additional fields or methods tailored to the specific requirements of an application, such as storing extra profile information or implementing custom authentication logic. By creating a custom user model, you gain full control over the user representation within your Django project.

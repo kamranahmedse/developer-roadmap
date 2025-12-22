@@ -1,0 +1,3 @@
+# URL patterns
+
+URL patterns in Django define how URLs (web addresses) are mapped to specific views (functions that handle requests). They act like a directory, telling Django which view to execute when a user visits a particular URL. Each pattern consists of a regular expression that matches a URL and a corresponding view function. When a URL matches a pattern, Django calls the associated view, passing the request object and any captured parameters from the URL.

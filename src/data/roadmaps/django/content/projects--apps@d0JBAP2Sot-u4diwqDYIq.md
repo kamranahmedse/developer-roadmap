@@ -1,0 +1,3 @@
+# Projects & Apps
+
+In Django, a project is a collection of settings and configurations for a particular website or web application. An app, on the other hand, is a modular, reusable component that performs a specific function within that project, like handling user authentication, managing blog posts, or processing payments. A project can contain multiple apps, and an app can be used in multiple projects.

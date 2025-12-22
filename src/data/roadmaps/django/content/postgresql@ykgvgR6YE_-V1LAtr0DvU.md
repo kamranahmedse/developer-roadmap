@@ -1,0 +1,3 @@
+# PostgreSQL in Django
+
+PostgreSQL is an open-source, advanced relational database management system (RDBMS) known for its reliability, data integrity, and adherence to standards. It offers a wide range of features, including support for complex data types, advanced indexing, and transactional integrity, making it a robust choice for managing structured data. Django fully supports PostgreSQL as one of its primary database backends.

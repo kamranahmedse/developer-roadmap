@@ -1,0 +1,3 @@
+# Django for Frontend
+
+Django, primarily known as a backend framework, can also be used to serve frontend content. While Django excels at handling data and server-side logic, it can also deliver HTML, CSS, and JavaScript files to the user's browser, effectively acting as the frontend server. This approach allows developers to build complete web applications using a single framework, streamlining development and deployment.

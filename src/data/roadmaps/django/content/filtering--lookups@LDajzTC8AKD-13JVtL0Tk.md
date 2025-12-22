@@ -1,0 +1,3 @@
+# Filtering and Lookups in Django ORM
+
+Filtering and lookups are fundamental mechanisms within Django's Object-Relational Mapper (ORM) that allow you to precisely query your database. They enable you to retrieve specific data based on defined criteria, such as finding all users with a particular name or all articles published within a certain date range. These tools provide a powerful and flexible way to interact with your database without writing raw SQL queries.

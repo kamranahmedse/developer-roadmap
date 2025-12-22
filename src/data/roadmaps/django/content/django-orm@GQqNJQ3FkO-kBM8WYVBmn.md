@@ -1,0 +1,3 @@
+# Django ORM
+
+The Django ORM (Object-Relational Mapper) is a powerful tool that allows developers to interact with databases using Python code instead of writing raw SQL queries. It acts as an abstraction layer, translating Python objects into database queries and vice versa, simplifying database operations within a Django project. This enables developers to define database schemas using Python classes (models) and perform common database tasks like creating, reading, updating, and deleting data through a high-level API.

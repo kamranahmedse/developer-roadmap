@@ -1,0 +1,3 @@
+# Path Converters
+
+Path converters in Django are special strings within URL patterns that capture specific parts of the URL and pass them as arguments to your view functions. They define the type of data expected in that part of the URL (like an integer, string, or slug) and ensure that the data is correctly formatted before being passed to the view. This allows you to create dynamic URLs that can handle different types of input and simplifies the process of extracting data from the URL for use in your application logic.

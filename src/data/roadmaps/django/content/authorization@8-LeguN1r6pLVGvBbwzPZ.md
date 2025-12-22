@@ -1,0 +1,3 @@
+# Authorization
+
+Authorization is the process of determining whether a user has permission to access a specific resource or perform a particular action. It focuses on verifying what an authenticated user is allowed to do within a system, ensuring that they only have access to the resources and functionalities they are entitled to. This is distinct from authentication, which confirms the user's identity.

@@ -1,0 +1,3 @@
+# Admin Customization
+
+Admin customization in Django refers to modifying the default appearance and functionality of the Django admin interface. This involves tailoring the admin site to better suit the specific needs of a project, such as changing the display of fields, adding custom actions, or altering the overall layout. Customization allows developers to create a more user-friendly and efficient experience for content managers and administrators.

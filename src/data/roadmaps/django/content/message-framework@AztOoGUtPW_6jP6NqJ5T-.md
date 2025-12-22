@@ -1,0 +1,3 @@
+# Message Framework
+
+The message framework in Django provides a way to deliver one-time notification messages, also known as "flash messages," to users. These messages are typically used to provide feedback about the outcome of an action, such as a successful form submission or an error that occurred. They are stored temporarily and displayed to the user on their next page view, then automatically removed.

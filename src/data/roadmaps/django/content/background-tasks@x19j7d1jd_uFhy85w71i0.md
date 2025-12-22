@@ -1,0 +1,3 @@
+# Background Tasks
+
+Background tasks in Django are processes that run independently of the main web application, without blocking user requests. They are useful for handling time-consuming or resource-intensive operations like sending emails, processing large datasets, or generating reports. By offloading these tasks to the background, the web application remains responsive and provides a better user experience.

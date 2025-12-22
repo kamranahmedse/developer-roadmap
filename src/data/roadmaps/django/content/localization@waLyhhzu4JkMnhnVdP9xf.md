@@ -1,0 +1,3 @@
+# Localization
+
+Localization is the process of adapting a product or content to a specific target market. This involves translating text, but also adapting other elements like date formats, currency symbols, and cultural references to make the product feel native to the user's region. It ensures that the application is accessible and relevant to users from different linguistic and cultural backgrounds.

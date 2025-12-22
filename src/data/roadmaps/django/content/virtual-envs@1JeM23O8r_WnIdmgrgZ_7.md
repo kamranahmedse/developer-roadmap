@@ -1,0 +1,3 @@
+# Virtual Environments
+
+Virtual environments are isolated spaces on your computer that contain specific versions of Python and its packages. This allows you to manage dependencies for different projects separately, preventing conflicts that can arise when projects require different versions of the same library. By creating a virtual environment for each Django project, you ensure that each project has its own set of dependencies, making your projects more organized and reproducible.

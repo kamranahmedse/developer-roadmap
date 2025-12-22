@@ -1,0 +1,3 @@
+# Template Inheritance
+
+Template inheritance in Django allows you to build a base "skeleton" template that contains all the common elements of your site (like the header, footer, and navigation). Child templates can then extend this base template and override specific blocks of content, filling in the unique parts for each page while reusing the common structure. This promotes code reusability and maintainability by avoiding repetition across your website's templates.

@@ -1,0 +1,3 @@
+# Logging Filters
+
+Filters in Django's logging framework provide a way to add extra control over which log records are processed by a handler. They determine whether a specific log record should be emitted based on criteria you define. This allows you to selectively include or exclude log messages based on attributes like the logger name, log level, or any other custom logic you implement. Filters are attached to handlers, and a handler will only process a log record if all of its filters allow it.

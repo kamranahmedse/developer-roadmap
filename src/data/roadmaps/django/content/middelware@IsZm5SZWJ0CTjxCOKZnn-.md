@@ -1,0 +1,3 @@
+# Middleware
+
+Middleware is a framework of hooks into Django's request/response processing. It's a way to modify the incoming request or outgoing response at different stages of the process. Each middleware component is a class that performs a specific function, like modifying request headers, handling sessions, or logging user activity, before the view is executed or after the response is generated.

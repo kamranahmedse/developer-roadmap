@@ -1,0 +1,3 @@
+# Migrations
+
+Migrations are Django's way of propagating changes you make to your models (like adding a field, deleting a model, etc.) into your database schema. They are essentially files that contain instructions on how to modify your database to match your model definitions. These files are generated based on the differences between your current models and the last known state of your database, allowing you to evolve your database schema over time in a controlled and reversible manner.

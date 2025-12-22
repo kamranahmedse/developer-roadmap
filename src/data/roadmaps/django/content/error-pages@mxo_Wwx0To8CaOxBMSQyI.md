@@ -1,0 +1,3 @@
+# Error Pages
+
+Error pages in Django are what users see when something goes wrong with your website. Instead of a confusing or blank screen, Django can display informative pages that explain the error. These pages can show technical details helpful for developers during debugging, like the traceback (the sequence of function calls that led to the error) and the values of variables at the time of the error. You can also customize these pages to provide a more user-friendly experience, offering solutions or guidance to users who encounter problems.

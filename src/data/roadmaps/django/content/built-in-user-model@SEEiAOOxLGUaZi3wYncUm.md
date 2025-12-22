@@ -1,0 +1,3 @@
+# Built-in User Model
+
+Django provides a default user model that handles common authentication tasks like user registration, login, and permission management. This model includes fields like username, password, email, first name, and last name, and it offers methods for password hashing and user authorization. It serves as a foundation for managing users in your Django project, and can be customized or extended to fit specific application requirements.
