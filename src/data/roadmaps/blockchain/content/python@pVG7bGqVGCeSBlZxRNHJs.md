@@ -5,10 +5,10 @@ Python is a versatile and widely-used programming language known for its clear s
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
-- [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
-- [@official@Python Website](https://www.python.org/)
-- [@official@Python Documentation](https://docs.python.org/3/)
 - [@course@Introduction to Python and Vyper](https://updraft.cyfrin.io/courses/intro-python-vyper-smart-contract-development)
 - [@course@Intermediate Python and Vyper](https://updraft.cyfrin.io/courses/intermediate-python-vyper-smart-contract-development)
 - [@course@Advanced Python and Vyper Smart Contract Development](https://updraft.cyfrin.io/courses/advanced-python-vyper-smart-contract-development)
+- [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
+- [@official@Python Website](https://www.python.org/)
+- [@official@Python Documentation](https://docs.python.org/3/)
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
