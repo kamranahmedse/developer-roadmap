@@ -3208,33 +3208,6 @@
       "focusable": true
     },
     {
-      "id": "qwdh5pkBbrF8LKPxbZp4F",
-      "type": "topic",
-      "position": { "x": 281.97614503814657, "y": 2374.4170226331694 },
-      "selected": true,
-      "selectable": true,
-      "draggable": true,
-      "deletable": true,
-      "data": {
-        "label": "Chain of Thought (CoT)",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center",
-          "colorType": "c"
-        },
-        "oldId": "KcgDVjHRzuaeCs81cnCA_"
-      },
-      "zIndex": 999,
-      "style": { "width": 231 },
-      "measured": { "width": 231, "height": 49 },
-      "focusable": true,
-      "dragging": false,
-      "width": 231,
-      "height": 49,
-      "resizing": false
-    },
-    {
       "id": "cW8O4vLLKEG-Q0dE8E5Zp",
       "type": "topic",
       "position": { "x": 281.97614503814657, "y": 2268.4170226331694 },
@@ -3353,33 +3326,6 @@
       "focusable": true,
       "dragging": false,
       "width": 231,
-      "height": 49,
-      "resizing": false
-    },
-    {
-      "id": "Nmy1PoB32DcWZnPM8l8jT",
-      "type": "topic",
-      "position": { "x": 280.97614503814657, "y": 2584.4774309459326 },
-      "selected": true,
-      "selectable": true,
-      "draggable": true,
-      "deletable": true,
-      "data": {
-        "label": "Tree-of-Thought",
-        "style": {
-          "fontSize": 17,
-          "justifyContent": "flex-start",
-          "textAlign": "center",
-          "colorType": "c"
-        },
-        "oldId": "hj1adjkG9nalXKZ-Youn0"
-      },
-      "zIndex": 999,
-      "style": { "width": 231 },
-      "measured": { "width": 232, "height": 49 },
-      "focusable": true,
-      "dragging": false,
-      "width": 232,
       "height": 49,
       "resizing": false
     },
