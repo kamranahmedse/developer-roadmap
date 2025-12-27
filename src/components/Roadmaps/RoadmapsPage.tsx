@@ -566,7 +566,7 @@ const groups: GroupType[] = [
       },
       {
         title: 'AWS',
-        link: '/aws-review-best-practices',
+        link: '/aws-best-practices',
         type: 'best-practice',
         otherGroups: ['Web Development', 'DevOps'],
       },
