@@ -18,5 +18,5 @@ int main() {
 ```
 
 - [@official@std::unique_ptr - Detailed Reference](https://en.cppreference.com/w/cpp/memory/unique_ptr)  
-- [@article@Smart Pointers – unique_ptr](https://www.learncpp.com/cpp-tutorial/unique-ptr/)  
+- [@article@Smart Pointers – unique_ptr](https://www.learncpp.com/cpp-tutorial/stdunique_ptr/)  
 - [@video@When should you use std::unique_ptr? - StackOverflow Discussion](https://stackoverflow.com/questions/13782051/when-should-you-use-stdunique-ptr)
