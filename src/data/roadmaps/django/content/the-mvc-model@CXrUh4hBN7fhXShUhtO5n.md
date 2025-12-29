@@ -1,1 +1,9 @@
 # The MVC Model
+
+The Model-View-Controller (MVC) architectural pattern separates an application into three interconnected parts. The Model manages data and business logic, the View displays data to the user, and the Controller handles user input and updates the Model. Django uses a slightly modified version called Model-Template-View (MTV), where the Template is the presentation layer (like the View in MVC), and the View handles the logic of what data to display (like the Controller in MVC). Django's framework structure naturally encourages this separation of concerns, making it easier to develop and maintain complex web applications.
+
+Visit the following resources to learn more:
+
+- [@article@MVC Architecture Explained: Model, View, Controller](https://www.codecademy.com/article/mvc-architecture-model-view-controller)
+- [@article@MVC](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
+- [@video@MVC Explained in 4 Minutes](https://www.youtube.com/watch?v=DUg2SWWK18I)

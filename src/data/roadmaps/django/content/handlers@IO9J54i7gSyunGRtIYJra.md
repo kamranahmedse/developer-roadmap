@@ -1,3 +1,3 @@
 # Handlers
 
-Handlers in Django's logging framework determine *where* log messages go. They act as the delivery mechanism, taking log records created by loggers and sending them to specific destinations. These destinations can include the console, files, email addresses, or even external services. Different handlers can be configured to handle different log levels, allowing you to route critical errors to one location and less severe warnings to another.
+Handlers in Django's logging framework determine _where_ log messages go. They act as the delivery mechanism, taking log records created by loggers and sending them to specific destinations. These destinations can include the console, files, email addresses, or even external services. Different handlers can be configured to handle different log levels, allowing you to route critical errors to one location and less severe warnings to another.
