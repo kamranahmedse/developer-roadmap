@@ -1,4 +1,4 @@
-## Networking & Pod-to-Pod Communication
+# Networking & Pod-to-Pod Communication
 
 Kubernetes networking enables pods to communicate with each other across the cluster, regardless of which node they are running on. Every pod is assigned its own IP address, and Kubernetes follows a flat network model where all pods can directly communicate with each other without Network Address Translation (NAT).
 
@@ -12,5 +12,3 @@ Visit the following resources to learn more:
 * [@official@Network Policies - Kubernetes Documentation](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 * [@article@Kubernetes Networking Explained](https://www.tigera.io/learn/guides/kubernetes-networking/)
 * [@video@Kubernetes Networking Deep Dive](https://www.youtube.com/watch?v=t98ekMiz0hQ)
-
----
