@@ -6,6 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@Visual Studio Code](https://code.visualstudio.com/o)
 - [@official@Docs - Visual Studio Code](https://code.visualstudio.com/docs)
-- [@video@FreeCodeCamp Crash Course](https://www.youtube.com/watch?v=WPqXP_kLzpo)
 - [@article@VSCode Basics](https://www.youtube.com/watch?v=B-s71n0dHUk)
 - [@article@VSCode in 100 Seconds](https://www.youtube.com/watch?v=KMxo3T_MTvY)
+- [@video@FreeCodeCamp Crash Course](https://www.youtube.com/watch?v=WPqXP_kLzpo)
