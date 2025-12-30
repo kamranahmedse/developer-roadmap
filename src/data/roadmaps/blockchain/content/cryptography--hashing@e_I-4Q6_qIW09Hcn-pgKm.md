@@ -1,6 +1,6 @@
-# Cryptography & Hashing
+# Cryptography
 
-Cryptography is the art of secure communication, using techniques to encrypt (scramble) messages so only the intended recipient can read them. Hashing is a process that takes any input and produces a fixed-size string of characters, called a hash. This hash acts like a unique fingerprint of the input data. Even a tiny change to the original input will result in a drastically different hash.
+Cryptography is the art of secure communication. It involves techniques for encrypting messages, making them unreadable to anyone except the intended recipient who possesses the key to decrypt them. It also provides methods for verifying the authenticity and integrity of data, ensuring that it hasn't been tampered with and that it truly comes from the claimed source.
 
 Visit the following resources to learn more:
 

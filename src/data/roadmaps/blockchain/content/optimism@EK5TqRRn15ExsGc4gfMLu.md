@@ -4,7 +4,7 @@ Optimism is a Layer 2 scaling solution for Ethereum. It aims to improve transact
 
 Visit the following resources to learn more:
 
+- [@book@Optimism Explained: Layer 2 Scaling & How It Differs from Arbitrum](https://www.youtube.com/watch?v=Rte3fQY6xy4)
 - [@official@Optimism](https://www.optimism.io/)
 - [@official@Optimism Documentation](https://docs.optimism.io/)
-- [@book@Optimism Explained: Layer 2 Scaling & How It Differs from Arbitrum](https://www.youtube.com/watch?v=Rte3fQY6xy4)
 - [@video@How To Use Ethereum Optimism L2 (2025)](https://www.youtube.com/watch?v=KsYFeG4mBoE)
