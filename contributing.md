@@ -136,6 +136,7 @@ For local development, you can use the following commands:
 ```bash
 git clone git@github.com:kamranahmedse/developer-roadmap.git --depth 1
 cd developer-roadmap
+cp .env.example .env
 pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
 pnpm install
 ```
