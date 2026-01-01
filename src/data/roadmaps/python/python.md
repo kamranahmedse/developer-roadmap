@@ -97,3 +97,8 @@ tags:
   - 'main-sitemap'
   - 'skill-roadmap'
 ---
+## Resources
+
+- **Python for Everybody – Coursera**  
+  Beginner-friendly introduction to Python programming.  
+  https://www.coursera.org/specializations/python
