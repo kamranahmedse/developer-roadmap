@@ -31,7 +31,7 @@ question:
     
     If they're focused on front-end development, their work usually involves designing dynamic user interfaces and integrating them with REST APIs (usually) to connect with back-end systems.
     
-    If, on the other hand, they're focused on back-end development, then most likely, they're spending most of their time developing APIs using a back-end framework like NextJS.
+    If, on the other hand, they're focused on back-end development, then most likely, they're spending most of their time developing APIs using a back-end framework like NestJS.
 seo:
   title: 'JavaScript Developer Roadmap: Step by step guide to learn JavaScript'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for javascript development. Learn to become a modern JavaScript developer by following the steps, skills, resources and guides listed in this roadmap.'
