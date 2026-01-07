@@ -6,5 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@What is CAP Theorem?](https://www.bmc.com/blogs/cap-theorem/)
 - [@article@An Illustrated Proof of the CAP Theorem](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)
+- [@article@Perspectives on the CAP Theorem](https://github.com/user-attachments/files/18232157/Brewer2.pdf)
 - [@article@CAP Theorem and its applications in NoSQL Databases](https://www.ibm.com/uk-en/cloud/learn/cap-theorem)
 - [@video@What is CAP Theorem?](https://www.youtube.com/watch?v=_RbsFXWRZ10)
