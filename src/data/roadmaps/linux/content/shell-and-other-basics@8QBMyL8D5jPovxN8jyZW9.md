@@ -4,6 +4,7 @@ The Linux shell is a command-line interface that acts as an intermediary between
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit the Dedicated Shell/Bash Roadmap](https://roadmap.sh/shell-bash)
 - [@article@Learning The Shell](https://www.linuxcommand.org/lc3_lts0010.php)
 - [@article@What is a Shell in Linux](https://linuxsimply.com/what-is-a-shell-linux/)
 - [@article@Learn Linux Easily](https://linuxjourney.com)
