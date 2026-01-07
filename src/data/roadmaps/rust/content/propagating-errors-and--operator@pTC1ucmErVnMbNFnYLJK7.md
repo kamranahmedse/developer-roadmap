@@ -1,4 +1,4 @@
-# Propagating Errors and `?` Operator
+# Propagating Errors and ? Operator
 
 The `?` operator provides concise error propagation in functions returning `Result` or `Option`. It automatically unwraps `Ok`/`Some` values or early-returns `Err`/`None` to the caller. This eliminates verbose `match` expressions and enables clean, readable error handling patterns.
 

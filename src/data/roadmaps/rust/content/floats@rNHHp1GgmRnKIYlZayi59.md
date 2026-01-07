@@ -4,8 +4,8 @@ In Rust, `floats` are a primitive data types used to represent floating-point nu
 
 Rust supports two types of floating-point numbers: `f32` and `f64`. These are 32-bit and 64-bit in size, respectively.
 
-- `f32` (_binary32_ type defined in IEEE-754-2008) is a single-precision float, which means is less precise than `f64` type.
-- `f64` (_binary64_ type defined in IEEE-754-2008) has double precision. The default type is `f64` because on modern CPUs it’s roughly the same speed as `f32` but allows more precision.
+*   `f32` (_binary32_ type defined in IEEE-754-2008) is a single-precision float, which means is less precise than `f64` type.
+*   `f64` (_binary64_ type defined in IEEE-754-2008) has double precision. The default type is `f64` because on modern CPUs it’s roughly the same speed as `f32` but allows more precision.
 
 Both `f32` and `f64` represent negative, zero and positive floating-point values.
 

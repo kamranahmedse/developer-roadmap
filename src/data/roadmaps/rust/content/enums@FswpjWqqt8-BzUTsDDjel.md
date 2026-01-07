@@ -4,7 +4,7 @@ An enum, short for enumeration, is a custom data type that allows you to define 
 
 An instance of an `enum` can be one and only one of the enum's declared variants at any given time. Unlike enumerations in some other languages, variants in Rust are not restricted to a singular data type. When you define an `enum`, you can decide for each of its possible variants whether or not that variant will hold additional embedded data; each variant of the enum is also allowed to hold data of completely different types and amounts.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Defining an Enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html)
 - [@article@Understanding and Implementing Enums in Rust](https://towardsdev.com/understanding-and-implementing-enums-in-rust-6eae37b6b5e3)

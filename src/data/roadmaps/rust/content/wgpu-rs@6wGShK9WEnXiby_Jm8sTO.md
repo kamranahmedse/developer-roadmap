@@ -5,5 +5,5 @@
 Visit the following resources to learn more:
 
 - [@official@wgpu: portable graphics library for Rust](https://wgpu.rs/)
-- [@article@wpgu docs](hhttps://docs.rs/wgpu/latest/wgpu/)
 - [@opensource@gfx-rs/wgpu](https://github.com/gfx-rs/wgpu)
+- [@article@wpgu docs](hhttps://docs.rs/wgpu/latest/wgpu/)

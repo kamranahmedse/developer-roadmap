@@ -5,5 +5,5 @@
 Visit the following resources to learn more:
 
 - [@official@Smol - Gist of Rust](https://book.gist.rs/rust/r1/smol.html)
-- [@article@Smol Documentation](https://docs.rs/smol/latest/smol/)
 - [@opensource@smol-rs/smol: A small and fast async runtime for Rust](https://github.com/smol-rs/smol)
+- [@article@Smol Documentation](https://docs.rs/smol/latest/smol/)

@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@official@Rc\<T\> in std::rc](https://doc.rust-lang.org/std/rc/struct.Rc.html)
+- [@official@Rc<T> in std::rc](https://doc.rust-lang.org/std/rc/struct.Rc.html)
 - [@official@rct - The Reference Counted Smart Pointer](https://doc.rust-lang.org/book/ch15-04-rc.html#rct-the-reference-counted-smart-pointer)

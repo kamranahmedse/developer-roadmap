@@ -4,6 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [@opensource@quinn-rs/quinn: Async-friendly QUIC implementation in Rust](https://github.com/quinn-rs/quinn)
 - [@official@Quinn — Rust Network Library](https://lib.rs/crates/quinn)
+- [@opensource@quinn-rs/quinn: Async-friendly QUIC implementation in Rust](https://github.com/quinn-rs/quinn)
 - [@article@Quinn](https://docs.rs/quinn/latest/quinn/)
