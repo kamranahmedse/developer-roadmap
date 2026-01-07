@@ -5,5 +5,5 @@ Queue follows FIFO (First-In-First-Out) ordering where elements are added at one
 Visit the following resources to learn more:
 
 - [@official@VecDeque in std::collections](https://doc.rust-lang.org/std/collections/struct.VecDeque.html)
-- [@article@Working with Queues in Rust](https://basillica.medium.com/working-with-queues-in-rust-5a5afe82da46)
 - [@official@Queues](https://docs.rs/queues/latest/queues/)
+- [@article@Working with Queues in Rust](https://basillica.medium.com/working-with-queues-in-rust-5a5afe82da46)

@@ -2,7 +2,7 @@
 
 `HashSet<T>` is a collection of unique elements using hash-based storage for fast lookups, insertions, and deletions. No duplicates are allowed and elements are unordered. Provides methods like `insert()`, `contains()`, and `remove()`. Example: `let mut set = HashSet::new(); set.insert("value");`
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@HashSet in std::collections](https://doc.rust-lang.org/std/collections/struct.HashSet.html)
 - [@official@Hashset](https://doc.rust-lang.org/rust-by-example/std/hash/hashset.html)

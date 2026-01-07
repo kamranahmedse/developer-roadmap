@@ -5,4 +5,4 @@
 Visit the following resources to learn more:
 
 - [@official@TOML](https://docs.rs/toml/latest/toml/)
-- [@opensourcetoml-rs/toml-rs](https://github.com/toml-rs/toml-rs)
+- [@article@@opensourcetoml-rs/toml-rs](https://github.com/toml-rs/toml-rs)
