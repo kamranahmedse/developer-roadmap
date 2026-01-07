@@ -4,105 +4,107 @@ Basic operations in C++ refer to the fundamental arithmetic, relational, and log
 
 Here's a summary of the basic operations in C++
 
-## Arithmetic Operations
+Arithmetic Operations
+---------------------
 
 These operations are used for performing calculations in C++ and include the following:
 
-- **Addition (+)**: Adds two numbers.
-```cpp
-int a = 5;
-int b = 6;
-int sum = a + b; // sum is 11
-```
+*   **Addition (+)**: Adds two numbers.
 
-- **Subtraction (-)**: Subtracts one number from the other.
-```cpp
-int a = 10;
-int b = 6;
-int diff = a - b; // diff is 4
-```
+    int a = 5;
+    int b = 6;
+    int sum = a + b; // sum is 11
+    
 
-- **Multiplication (*)**: Multiplies two numbers.
-```cpp
-int a = 3;
-int b = 4;
-int product = a * b; // product is 12
-```
+*   **Subtraction (-)**: Subtracts one number from the other.
 
-- **Division (/)**: Divides one number by another, yields quotient.
-```cpp
-int a = 12;
-int b = 4;
-int quotient = a / b; // quotient is 3
-```
+    int a = 10;
+    int b = 6;
+    int diff = a - b; // diff is 4
+    
 
-- **Modulus (%)**: Divides one number by another, yields remainder.
-```cpp
-int a = 15;
-int b = 4;
-int remainder = a % b; // remainder is 3
-```
+*   **Multiplication (\*)**: Multiplies two numbers.
 
-## Relational Operators
+    int a = 3;
+    int b = 4;
+    int product = a * b; // product is 12
+    
+
+*   **Division (/)**: Divides one number by another, yields quotient.
+
+    int a = 12;
+    int b = 4;
+    int quotient = a / b; // quotient is 3
+    
+
+*   **Modulus (%)**: Divides one number by another, yields remainder.
+
+    int a = 15;
+    int b = 4;
+    int remainder = a % b; // remainder is 3
+    
+
+Relational Operators
+--------------------
 
 These operations compare two values and return a boolean value (true/false) depending on the comparison. The relational operations are:
 
-- **Equal to (==)**: Returns true if both operands are equal.
-```cpp
-5 == 5 // true
-3 == 4 // false
-```
+*   **Equal to (==)**: Returns true if both operands are equal.
 
-- **Not equal to (!=)**: Returns true if operands are not equal.
-```cpp
-5 != 2 // true
-1 != 1 // false
-```
+    5 == 5 // true
+    3 == 4 // false
+    
 
-- **Greater than (>)**: Returns true if the first operand is greater than the second.
-```cpp
-5 > 3 // true
-2 > 3 // false
-```
+*   **Not equal to (!=)**: Returns true if operands are not equal.
 
-- **Less than (<)**: Returns true if the first operand is less than the second.
-```cpp
-3 < 5 // true
-6 < 5 // false
-```
+    5 != 2 // true
+    1 != 1 // false
+    
 
-- **Greater than or equal to (>=)**: Returns true if the first operand is greater than or equal to the second.
-```cpp
-5 >= 5 // true
-6 >= 2 // true
-3 >= 4 // false
-```
+*   **Greater than (>)**: Returns true if the first operand is greater than the second.
 
-- **Less than or equal to (<=)**: Returns true if the first operand is less than or equal to the second.
-```cpp
-4 <= 4 // true
-2 <= 3 // true
-5 <= 4 // false
-```
+    5 > 3 // true
+    2 > 3 // false
+    
 
-## Logical Operators
+*   **Less than (<)**: Returns true if the first operand is less than the second.
+
+    3 < 5 // true
+    6 < 5 // false
+    
+
+*   **Greater than or equal to (>=)**: Returns true if the first operand is greater than or equal to the second.
+
+    5 >= 5 // true
+    6 >= 2 // true
+    3 >= 4 // false
+    
+
+*   **Less than or equal to (<=)**: Returns true if the first operand is less than or equal to the second.
+
+    4 <= 4 // true
+    2 <= 3 // true
+    5 <= 4 // false
+    
+
+Logical Operators
+-----------------
 
 Logical operators are used for combining multiple conditions or boolean values.
 
-- **AND (&&)**: Returns true if both operands are true.
-```cpp
-true && true // true
-true && false // false
-```
+*   **AND (&&)**: Returns true if both operands are true.
 
-- **OR (||)**: Returns true if any one of the operands is true.
-```cpp
-true || false // true
-false || false // false
-```
+    true && true // true
+    true && false // false
+    
 
-- **NOT (!)**: Returns true if the operand is false and vice versa.
-```cpp
-!true // false
-!false // true
-```
+*   **OR (||)**: Returns true if any one of the operands is true.
+
+    true || false // true
+    false || false // false
+    
+
+*   **NOT (!)**: Returns true if the operand is false and vice versa.
+
+    !true // false
+    !false // true

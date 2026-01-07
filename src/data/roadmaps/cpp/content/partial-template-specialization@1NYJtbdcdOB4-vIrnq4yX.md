@@ -6,43 +6,42 @@ Partial template specialization is achieved by providing a specialization of a t
 
 Here is a code example that demonstrates partial template specialization:
 
-```cpp
-// Primary template
-template <typename T>
-struct MyTemplate {
-    static const char* name() {
-        return "General case";
+    // Primary template
+    template <typename T>
+    struct MyTemplate {
+        static const char* name() {
+            return "General case";
+        }
+    };
+    
+    // Partial specialization for pointers
+    template <typename T>
+    struct MyTemplate<T*> {
+        static const char* name() {
+            return "Partial specialization for pointers";
+        }
+    };
+    
+    // Full specialization for int
+    template <>
+    struct MyTemplate<int> {
+        static const char* name() {
+            return "Full specialization for int";
+        }
+    };
+    
+    int main() {
+        MyTemplate<double> t1; // General case
+        MyTemplate<double*> t2; // Partial specialization for pointers
+        MyTemplate<int> t3; // Full specialization for int
+    
+        std::cout << t1.name() << '\n';
+        std::cout << t2.name() << '\n';
+        std::cout << t3.name() << '\n';
+    
+        return 0;
     }
-};
-
-// Partial specialization for pointers
-template <typename T>
-struct MyTemplate<T*> {
-    static const char* name() {
-        return "Partial specialization for pointers";
-    }
-};
-
-// Full specialization for int
-template <>
-struct MyTemplate<int> {
-    static const char* name() {
-        return "Full specialization for int";
-    }
-};
-
-int main() {
-    MyTemplate<double> t1; // General case
-    MyTemplate<double*> t2; // Partial specialization for pointers
-    MyTemplate<int> t3; // Full specialization for int
-
-    std::cout << t1.name() << '\n';
-    std::cout << t2.name() << '\n';
-    std::cout << t3.name() << '\n';
-
-    return 0;
-}
-```
+    
 
 In the example above, we have defined a primary template `MyTemplate` with a single type parameter `T`. We then provide a partial template specialization for pointer types by specifying `MyTemplate<T*>`. This means that the partial specialization will be chosen when the type argument is a pointer type.
 
@@ -50,10 +49,9 @@ Lastly, we provide a full specialization for the `int` type by specifying `MyTem
 
 When running this example, the output will be:
 
-```
-General case
-Partial specialization for pointers
-Full specialization for int
-```
+    General case
+    Partial specialization for pointers
+    Full specialization for int
+    
 
 This demonstrates that the partial specialization works as expected, and is chosen for pointer types, while the full specialization is chosen for the `int` type.

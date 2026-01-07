@@ -6,24 +6,23 @@ Using `reinterpret_cast` should be handled with care, as it can lead to undefine
 
 Here's an example of usage:
 
-```cpp
-#include <iostream>
-
-int main() {
-    int num = 42;
-    int *num_ptr = &num;
-
-    // Disguise the integer pointer as a char pointer
-    char *char_ptr = reinterpret_cast<char *>(num_ptr);
-
-    for (size_t i = 0; i < sizeof(int); ++i) {
-        // Print the individual bytes of the integer as characters
-        std::cout << "Byte " << i << ": " << char_ptr[i] << '\n';
+    #include <iostream>
+    
+    int main() {
+        int num = 42;
+        int *num_ptr = &num;
+    
+        // Disguise the integer pointer as a char pointer
+        char *char_ptr = reinterpret_cast<char *>(num_ptr);
+    
+        for (size_t i = 0; i < sizeof(int); ++i) {
+            // Print the individual bytes of the integer as characters
+            std::cout << "Byte " << i << ": " << char_ptr[i] << '\n';
+        }
+    
+        return 0;
     }
-
-    return 0;
-}
-```
+    
 
 In this example, we're using `reinterpret_cast` to change the type of a pointer from `int *` to `char *`, effectively treating the integer as an array of characters and printing each byte.
 

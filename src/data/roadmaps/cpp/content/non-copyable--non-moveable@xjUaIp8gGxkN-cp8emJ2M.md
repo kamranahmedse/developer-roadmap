@@ -6,26 +6,24 @@ To make a class non-copyable, you need to delete the copy constructor and the co
 
 Here's an example of how to apply the non-copyable idiom to a class:
 
-```cpp
-class NonCopyable {
-public:
-  NonCopyable() = default;
-  ~NonCopyable() = default;
-
-  // Delete the copy constructor
-  NonCopyable(const NonCopyable&) = delete;
-
-  // Delete the copy assignment operator
-  NonCopyable& operator=(const NonCopyable&) = delete;
-};
-```
+    class NonCopyable {
+    public:
+      NonCopyable() = default;
+      ~NonCopyable() = default;
+    
+      // Delete the copy constructor
+      NonCopyable(const NonCopyable&) = delete;
+    
+      // Delete the copy assignment operator
+      NonCopyable& operator=(const NonCopyable&) = delete;
+    };
+    
 
 To use the idiom, simply inherit from the `NonCopyable` class:
 
-```cpp
-class MyClass : private NonCopyable {
-  // MyClass is now non-copyable
-};
-```
+    class MyClass : private NonCopyable {
+      // MyClass is now non-copyable
+    };
+    
 
 This ensures that any attempt to copy or assign objects of `MyClass` will result in a compilation error, thus preventing unwanted behavior.
