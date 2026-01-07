@@ -6,12 +6,11 @@ In C++, the compiler generates a mangled name for each function and variable bas
 
 For example, suppose you have the following function:
 
-```cpp
-int add(int a, int b)
-{
-    return a + b;
-}
-```
+    int add(int a, int b)
+    {
+        return a + b;
+    }
+    
 
 The compiler might generate a mangled name such as `_Z3addii`, which encodes the function name `add` and its two `int` parameters.
 
@@ -19,9 +18,8 @@ The exact rules for name mangling are implementation and platform dependent. Dif
 
 Some tools, such as c++filt (included in GCC and Clang), can be used to demangle a mangled name back to the original identifier, which can be useful when debugging or working with symbol tables.
 
-```sh
-$ echo "_Z3addii" | c++filt
-add(int, int)
-```
+    $ echo "_Z3addii" | c++filt
+    add(int, int)
+    
 
 In general, it is not necessary for you to understand the details of name mangling when writing code in C++, as the compiler handles it automatically. However, it can affect program behavior in some cases, such as when using external libraries or linking object files from different compilers.

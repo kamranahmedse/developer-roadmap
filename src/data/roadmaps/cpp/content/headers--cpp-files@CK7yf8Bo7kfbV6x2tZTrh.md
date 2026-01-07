@@ -8,18 +8,17 @@ Header files, usually with the `.h` or `.hpp` extension, are responsible for dec
 
 Example of a header file:
 
-```cpp
-// example.h
-#ifndef EXAMPLE_H
-#define EXAMPLE_H
-
-class Example {
-public:
-    void printMessage();
-};
-
-#endif
-```
+    // example.h
+    #ifndef EXAMPLE_H
+    #define EXAMPLE_H
+    
+    class Example {
+    public:
+        void printMessage();
+    };
+    
+    #endif
+    
 
 ### Source Files (.cpp)
 
@@ -27,15 +26,14 @@ Source files, with the `.cpp` extension, are responsible for implementing the ac
 
 Example of a source file:
 
-```cpp
-// example.cpp
-#include "example.h"
-#include <iostream>
-
-void Example::printMessage() {
-    std::cout << "Hello, code splitting!\n";
-}
-```
+    // example.cpp
+    #include "example.h"
+    #include <iostream>
+    
+    void Example::printMessage() {
+        std::cout << "Hello, code splitting!\n";
+    }
+    
 
 ### Separate Compilation
 
@@ -43,13 +41,12 @@ C++ allows for separate compilation, which means that each source file can be co
 
 Example of separate compilation and linking:
 
-```sh
-# Compile each source file into an object file
-g++ -c main.cpp -o main.o
-g++ -c example.cpp -o example.o
-
-# Link object files together to create the executable
-g++ main.o example.o -o my_program
-```
+    # Compile each source file into an object file
+    g++ -c main.cpp -o main.o
+    g++ -c example.cpp -o example.o
+    
+    # Link object files together to create the executable
+    g++ main.o example.o -o my_program
+    
 
 By following the code splitting technique, you can better organize your C++ codebase, making it more manageable and maintainable.
