@@ -1,0 +1,3864 @@
+{
+  "nodes": [
+    {
+      "id": "title-design-engineer",
+      "type": "title",
+      "position": {
+        "x": 384,
+        "y": 20
+      },
+      "data": {
+        "label": "Design Engineer",
+        "style": {
+          "fontSize": 28,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 68,
+      "measured": {
+        "width": 200,
+        "height": 68
+      }
+    },
+    {
+      "id": "section-phase1",
+      "type": "section",
+      "position": {
+        "x": 10,
+        "y": 100
+      },
+      "data": {
+        "label": "",
+        "style": {
+          "fontSize": 17,
+          "backgroundColor": "#f8fafc",
+          "borderColor": "#e2e8f0"
+        }
+      },
+      "zIndex": -999,
+      "width": 948,
+      "height": 520,
+      "style": {
+        "width": 948,
+        "height": 520
+      },
+      "measured": {
+        "width": 948,
+        "height": 520
+      }
+    },
+    {
+      "id": "label-phase1",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 110
+      },
+      "data": {
+        "label": "Phase 1: Foundation",
+        "style": {
+          "fontSize": 20,
+          "fontWeight": "bold"
+        },
+        "color": "#1e293b"
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 40,
+      "measured": {
+        "width": 200,
+        "height": 40
+      }
+    },
+    {
+      "id": "label-philosophy",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 160
+      },
+      "data": {
+        "label": "Philosophy & Identity",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 30,
+      "measured": {
+        "width": 160,
+        "height": 30
+      }
+    },
+    {
+      "id": "Dq8KzRfL3mNvYpXwJ2H5T",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 195
+      },
+      "data": {
+        "label": "What is Design Engineering",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 220,
+      "height": 45,
+      "style": {
+        "width": 220,
+        "height": 45
+      },
+      "measured": {
+        "width": 220,
+        "height": 45
+      }
+    },
+    {
+      "id": "Kp9WxTn4vRsYhLmQ7Z3Uj",
+      "type": "topic",
+      "position": {
+        "x": 260,
+        "y": 195
+      },
+      "data": {
+        "label": "Design Engineer Mindset",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 210,
+      "height": 45,
+      "style": {
+        "width": 210,
+        "height": 45
+      },
+      "measured": {
+        "width": 210,
+        "height": 45
+      }
+    },
+    {
+      "id": "Lw5MzQp8rNtYkXvH9J2Sf",
+      "type": "topic",
+      "position": {
+        "x": 480,
+        "y": 195
+      },
+      "data": {
+        "label": "DE vs Frontend vs UX",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 45,
+      "style": {
+        "width": 200,
+        "height": 45
+      },
+      "measured": {
+        "width": 200,
+        "height": 45
+      }
+    },
+    {
+      "id": "Mn6RtYp3wKsXhLvQ8Z4Vf",
+      "type": "topic",
+      "position": {
+        "x": 690,
+        "y": 195
+      },
+      "data": {
+        "label": "Working with Designers",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 45,
+      "style": {
+        "width": 200,
+        "height": 45
+      },
+      "measured": {
+        "width": 200,
+        "height": 45
+      }
+    },
+    {
+      "id": "Np7StZq4xLtYiMwR9K5Wg",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 250
+      },
+      "data": {
+        "label": "Spiral Learning Approach",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 210,
+      "height": 45,
+      "style": {
+        "width": 210,
+        "height": 45
+      },
+      "measured": {
+        "width": 210,
+        "height": 45
+      }
+    },
+    {
+      "id": "Wy6BCIz3GTDHoVEA8T4Fp",
+      "type": "topic",
+      "position": {
+        "x": 250,
+        "y": 250
+      },
+      "data": {
+        "label": "Philosophy Reads",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 180,
+      "height": 45,
+      "style": {
+        "width": 180,
+        "height": 45
+      },
+      "measured": {
+        "width": 180,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-core-tech",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 310
+      },
+      "data": {
+        "label": "Core Technologies",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 150,
+      "height": 30,
+      "measured": {
+        "width": 150,
+        "height": 30
+      }
+    },
+    {
+      "id": "Oq8TuAr5yMvZjNxS0L6Xh",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 345
+      },
+      "data": {
+        "label": "HTML Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 180,
+      "height": 45,
+      "style": {
+        "width": 180,
+        "height": 45
+      },
+      "measured": {
+        "width": 180,
+        "height": 45
+      }
+    },
+    {
+      "id": "Pr9UvBs6zNwAkOyT1M7Yi",
+      "type": "topic",
+      "position": {
+        "x": 220,
+        "y": 345
+      },
+      "data": {
+        "label": "CSS Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 175,
+      "height": 45,
+      "style": {
+        "width": 175,
+        "height": 45
+      },
+      "measured": {
+        "width": 175,
+        "height": 45
+      }
+    },
+    {
+      "id": "Qs0VwCt7ANxBlPzU2N8Zj",
+      "type": "topic",
+      "position": {
+        "x": 405,
+        "y": 345
+      },
+      "data": {
+        "label": "JavaScript Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 45,
+      "style": {
+        "width": 200,
+        "height": 45
+      },
+      "measured": {
+        "width": 200,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-design-basics",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 405
+      },
+      "data": {
+        "label": "Design Basics",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 130,
+      "height": 30,
+      "measured": {
+        "width": 130,
+        "height": 30
+      }
+    },
+    {
+      "id": "Rt1WxDu8BOyClQAV3O9Ak",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 440
+      },
+      "data": {
+        "label": "Typography Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 45,
+      "style": {
+        "width": 200,
+        "height": 45
+      },
+      "measured": {
+        "width": 200,
+        "height": 45
+      }
+    },
+    {
+      "id": "Su2XyEv9CPzDmRAW4P0Bl",
+      "type": "topic",
+      "position": {
+        "x": 240,
+        "y": 440
+      },
+      "data": {
+        "label": "Color Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 175,
+      "height": 45,
+      "style": {
+        "width": 175,
+        "height": 45
+      },
+      "measured": {
+        "width": 175,
+        "height": 45
+      }
+    },
+    {
+      "id": "Tv3YzFw0DQAEnSBX5Q1Cm",
+      "type": "topic",
+      "position": {
+        "x": 425,
+        "y": 440
+      },
+      "data": {
+        "label": "Layout Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 180,
+      "height": 45,
+      "style": {
+        "width": 180,
+        "height": 45
+      },
+      "measured": {
+        "width": 180,
+        "height": 45
+      }
+    },
+    {
+      "id": "Uw4ZAGx1ERBFoTCY6R2Dn",
+      "type": "topic",
+      "position": {
+        "x": 615,
+        "y": 440
+      },
+      "data": {
+        "label": "Visual Hierarchy",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-tools1",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 500
+      },
+      "data": {
+        "label": "Tools",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 60,
+      "height": 30,
+      "measured": {
+        "width": 60,
+        "height": 30
+      }
+    },
+    {
+      "id": "Vx5ABHy2FSCGnUDZ7S3Eo",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 535
+      },
+      "data": {
+        "label": "Git & GitHub",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 140,
+      "height": 45,
+      "style": {
+        "width": 140,
+        "height": 45
+      },
+      "measured": {
+        "width": 140,
+        "height": 45
+      }
+    },
+    {
+      "id": "vertical-phase1-2",
+      "type": "vertical",
+      "position": {
+        "x": 474,
+        "y": 620
+      },
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "stroke": "#2B78E4",
+          "strokeWidth": 3.5
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 50,
+      "measured": {
+        "width": 20,
+        "height": 50
+      }
+    },
+    {
+      "id": "section-phase2",
+      "type": "section",
+      "position": {
+        "x": 10,
+        "y": 680
+      },
+      "data": {
+        "label": "",
+        "style": {
+          "fontSize": 17,
+          "backgroundColor": "#f0fdf4",
+          "borderColor": "#bbf7d0"
+        }
+      },
+      "zIndex": -999,
+      "width": 948,
+      "height": 380,
+      "style": {
+        "width": 948,
+        "height": 380
+      },
+      "measured": {
+        "width": 948,
+        "height": 380
+      }
+    },
+    {
+      "id": "label-phase2",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 690
+      },
+      "data": {
+        "label": "Phase 2: Building",
+        "style": {
+          "fontSize": 20,
+          "fontWeight": "bold"
+        },
+        "color": "#166534"
+      },
+      "zIndex": 999,
+      "width": 180,
+      "height": 40,
+      "measured": {
+        "width": 180,
+        "height": 40
+      }
+    },
+    {
+      "id": "label-react-ts",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 740
+      },
+      "data": {
+        "label": "React & TypeScript",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 150,
+      "height": 30,
+      "measured": {
+        "width": 150,
+        "height": 30
+      }
+    },
+    {
+      "id": "Xz7CDJa4HUEIpWFB9U5Gq",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 775
+      },
+      "data": {
+        "label": "React Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 180,
+      "height": 45,
+      "style": {
+        "width": 180,
+        "height": 45
+      },
+      "measured": {
+        "width": 180,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ya8DEKb5IVFJqXGC0V6Hr",
+      "type": "topic",
+      "position": {
+        "x": 220,
+        "y": 775
+      },
+      "data": {
+        "label": "TypeScript Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 45,
+      "style": {
+        "width": 200,
+        "height": 45
+      },
+      "measured": {
+        "width": 200,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-styling",
+      "type": "label",
+      "position": {
+        "x": 450,
+        "y": 740
+      },
+      "data": {
+        "label": "Styling",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 80,
+      "height": 30,
+      "measured": {
+        "width": 80,
+        "height": 30
+      }
+    },
+    {
+      "id": "Zb9EFLc6JWGKrYHD1W7Is",
+      "type": "topic",
+      "position": {
+        "x": 450,
+        "y": 775
+      },
+      "data": {
+        "label": "Tailwind CSS",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 140,
+      "height": 45,
+      "style": {
+        "width": 140,
+        "height": 45
+      },
+      "measured": {
+        "width": 140,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-design-to-code",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 835
+      },
+      "data": {
+        "label": "Design-to-Code",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 140,
+      "height": 30,
+      "measured": {
+        "width": 140,
+        "height": 30
+      }
+    },
+    {
+      "id": "Ac0FGMd7KXHLsZIE2X8Jt",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 870
+      },
+      "data": {
+        "label": "Reading Figma Files",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 175,
+      "height": 45,
+      "style": {
+        "width": 175,
+        "height": 45
+      },
+      "measured": {
+        "width": 175,
+        "height": 45
+      }
+    },
+    {
+      "id": "Bd1GHNe8LYIMtAJF3Y9Ku",
+      "type": "topic",
+      "position": {
+        "x": 215,
+        "y": 870
+      },
+      "data": {
+        "label": "Figma Dev Mode",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ce2HIOf9MZJNuBKG4Z0Lv",
+      "type": "topic",
+      "position": {
+        "x": 385,
+        "y": 870
+      },
+      "data": {
+        "label": "Pixel Perfect Implementation",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 225,
+      "height": 45,
+      "style": {
+        "width": 225,
+        "height": 45
+      },
+      "measured": {
+        "width": 225,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-anim-basics",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 930
+      },
+      "data": {
+        "label": "Animation Basics",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 140,
+      "height": 30,
+      "measured": {
+        "width": 140,
+        "height": 30
+      }
+    },
+    {
+      "id": "Df3IJPg0NAKOvCLH5A1Mw",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 965
+      },
+      "data": {
+        "label": "CSS Transitions",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 155,
+      "height": 45,
+      "style": {
+        "width": 155,
+        "height": 45
+      },
+      "measured": {
+        "width": 155,
+        "height": 45
+      }
+    },
+    {
+      "id": "Eg4JKQh1OBLPwDMI6B2Nx",
+      "type": "topic",
+      "position": {
+        "x": 195,
+        "y": 965
+      },
+      "data": {
+        "label": "CSS Animations",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 150,
+      "height": 45,
+      "style": {
+        "width": 150,
+        "height": 45
+      },
+      "measured": {
+        "width": 150,
+        "height": 45
+      }
+    },
+    {
+      "id": "Fh5KLRi2PCMQxENJ7C3Oy",
+      "type": "topic",
+      "position": {
+        "x": 355,
+        "y": 965
+      },
+      "data": {
+        "label": "Animation Principles",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 175,
+      "height": 45,
+      "style": {
+        "width": 175,
+        "height": 45
+      },
+      "measured": {
+        "width": 175,
+        "height": 45
+      }
+    },
+    {
+      "id": "Gi6LMSj3QDNRyFOK8D4Pz",
+      "type": "topic",
+      "position": {
+        "x": 540,
+        "y": 965
+      },
+      "data": {
+        "label": "Hover & Focus States",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 180,
+      "height": 45,
+      "style": {
+        "width": 180,
+        "height": 45
+      },
+      "measured": {
+        "width": 180,
+        "height": 45
+      }
+    },
+    {
+      "id": "vertical-phase2-3",
+      "type": "vertical",
+      "position": {
+        "x": 474,
+        "y": 1060
+      },
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "stroke": "#2B78E4",
+          "strokeWidth": 3.5
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 50,
+      "measured": {
+        "width": 20,
+        "height": 50
+      }
+    },
+    {
+      "id": "section-phase3",
+      "type": "section",
+      "position": {
+        "x": 10,
+        "y": 1120
+      },
+      "data": {
+        "label": "",
+        "style": {
+          "fontSize": 17,
+          "backgroundColor": "#fef3c7",
+          "borderColor": "#fde68a"
+        }
+      },
+      "zIndex": -999,
+      "width": 948,
+      "height": 880,
+      "style": {
+        "width": 948,
+        "height": 880
+      },
+      "measured": {
+        "width": 948,
+        "height": 880
+      }
+    },
+    {
+      "id": "label-phase3",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 1130
+      },
+      "data": {
+        "label": "Phase 3: Professional",
+        "style": {
+          "fontSize": 20,
+          "fontWeight": "bold"
+        },
+        "color": "#92400e"
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 40,
+      "measured": {
+        "width": 200,
+        "height": 40
+      }
+    },
+    {
+      "id": "label-design-systems",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 1180
+      },
+      "data": {
+        "label": "Design Systems",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 130,
+      "height": 30,
+      "measured": {
+        "width": 130,
+        "height": 30
+      }
+    },
+    {
+      "id": "Hj7MNTk4RENSzGPL9E5Qa",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1215
+      },
+      "data": {
+        "label": "Design System Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 225,
+      "height": 45,
+      "style": {
+        "width": 225,
+        "height": 45
+      },
+      "measured": {
+        "width": 225,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ik8NOUl5SFOTaHQM0F6Rb",
+      "type": "topic",
+      "position": {
+        "x": 265,
+        "y": 1215
+      },
+      "data": {
+        "label": "Design Tokens",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 45,
+      "style": {
+        "width": 145,
+        "height": 45
+      },
+      "measured": {
+        "width": 145,
+        "height": 45
+      }
+    },
+    {
+      "id": "Jl9OPVm6TGPUbIRN1G7Sc",
+      "type": "topic",
+      "position": {
+        "x": 420,
+        "y": 1215
+      },
+      "data": {
+        "label": "Color Tokens",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 130,
+      "height": 45,
+      "style": {
+        "width": 130,
+        "height": 45
+      },
+      "measured": {
+        "width": 130,
+        "height": 45
+      }
+    },
+    {
+      "id": "Km0PQWn7UHQVcJSO2H8Td",
+      "type": "topic",
+      "position": {
+        "x": 560,
+        "y": 1215
+      },
+      "data": {
+        "label": "Typography Tokens",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 165,
+      "height": 45,
+      "style": {
+        "width": 165,
+        "height": 45
+      },
+      "measured": {
+        "width": 165,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ln1QRXo8VIRWdKTP3I9Ue",
+      "type": "topic",
+      "position": {
+        "x": 735,
+        "y": 1215
+      },
+      "data": {
+        "label": "Spacing Tokens",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 45,
+      "style": {
+        "width": 145,
+        "height": 45
+      },
+      "measured": {
+        "width": 145,
+        "height": 45
+      }
+    },
+    {
+      "id": "Vx7ABHy4FSCIpUDZ9S5Eo",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1270
+      },
+      "data": {
+        "label": "Style Dictionary",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 150,
+      "height": 45,
+      "style": {
+        "width": 150,
+        "height": 45
+      },
+      "measured": {
+        "width": 150,
+        "height": 45
+      }
+    },
+    {
+      "id": "Wy8BCIz5GTDJqVEA0T6Fp",
+      "type": "topic",
+      "position": {
+        "x": 190,
+        "y": 1270
+      },
+      "data": {
+        "label": "Tokens Studio",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 140,
+      "height": 45,
+      "style": {
+        "width": 140,
+        "height": 45
+      },
+      "measured": {
+        "width": 140,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-component-arch",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 1330
+      },
+      "data": {
+        "label": "Component Architecture",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 180,
+      "height": 30,
+      "measured": {
+        "width": 180,
+        "height": 30
+      }
+    },
+    {
+      "id": "Mo2RSYp9WJSXeKUQ4J0Vf",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1365
+      },
+      "data": {
+        "label": "Component API Design",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 190,
+      "height": 45,
+      "style": {
+        "width": 190,
+        "height": 45
+      },
+      "measured": {
+        "width": 190,
+        "height": 45
+      }
+    },
+    {
+      "id": "Np3STZq0XKTYfLVR5K1Wg",
+      "type": "topic",
+      "position": {
+        "x": 230,
+        "y": 1365
+      },
+      "data": {
+        "label": "Compound Components",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 190,
+      "height": 45,
+      "style": {
+        "width": 190,
+        "height": 45
+      },
+      "measured": {
+        "width": 190,
+        "height": 45
+      }
+    },
+    {
+      "id": "Oq4TUAr1YLUZgMWS6L2Xh",
+      "type": "topic",
+      "position": {
+        "x": 430,
+        "y": 1365
+      },
+      "data": {
+        "label": "Polymorphic Components",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 45,
+      "style": {
+        "width": 200,
+        "height": 45
+      },
+      "measured": {
+        "width": 200,
+        "height": 45
+      }
+    },
+    {
+      "id": "Su4XYEv1CPYEkQAW6P2Bl",
+      "type": "topic",
+      "position": {
+        "x": 640,
+        "y": 1365
+      },
+      "data": {
+        "label": "CVA (Class Variance)",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 185,
+      "height": 45,
+      "style": {
+        "width": 185,
+        "height": 45
+      },
+      "measured": {
+        "width": 185,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-framer-motion",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 1425
+      },
+      "data": {
+        "label": "Animation / Framer Motion",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 200,
+      "height": 30,
+      "measured": {
+        "width": 200,
+        "height": 30
+      }
+    },
+    {
+      "id": "Pr5UVBs2ZMVAgNXT7M3Yi",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1460
+      },
+      "data": {
+        "label": "Framer Motion",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 45,
+      "style": {
+        "width": 145,
+        "height": 45
+      },
+      "measured": {
+        "width": 145,
+        "height": 45
+      }
+    },
+    {
+      "id": "Qs6VWCt3ANWBhOYU8N4Zj",
+      "type": "topic",
+      "position": {
+        "x": 185,
+        "y": 1460
+      },
+      "data": {
+        "label": "Motion Variants",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 150,
+      "height": 45,
+      "style": {
+        "width": 150,
+        "height": 45
+      },
+      "measured": {
+        "width": 150,
+        "height": 45
+      }
+    },
+    {
+      "id": "Rt7WXDu4BOXCiPZV9O5Ak",
+      "type": "topic",
+      "position": {
+        "x": 345,
+        "y": 1460
+      },
+      "data": {
+        "label": "Gesture Animations",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 170,
+      "height": 45,
+      "style": {
+        "width": 170,
+        "height": 45
+      },
+      "measured": {
+        "width": 170,
+        "height": 45
+      }
+    },
+    {
+      "id": "Su8XYEv5CPYDjQAW0P6Bl",
+      "type": "topic",
+      "position": {
+        "x": 525,
+        "y": 1460
+      },
+      "data": {
+        "label": "Layout Animations",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "Tv9YZFw6DQZEkRBX1Q7Cm",
+      "type": "topic",
+      "position": {
+        "x": 695,
+        "y": 1460
+      },
+      "data": {
+        "label": "Spring Physics",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 140,
+      "height": 45,
+      "style": {
+        "width": 140,
+        "height": 45
+      },
+      "measured": {
+        "width": 140,
+        "height": 45
+      }
+    },
+    {
+      "id": "Uw0ZAGx7ERZFlSCY2R8Dn",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1515
+      },
+      "data": {
+        "label": "AnimatePresence",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "Pr1UVBs8ZMVBhNXT3M9Yi",
+      "type": "topic",
+      "position": {
+        "x": 200,
+        "y": 1515
+      },
+      "data": {
+        "label": "Scroll Animations",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "Rt3WXDu0BOXDjPZV5O1Ak",
+      "type": "topic",
+      "position": {
+        "x": 370,
+        "y": 1515
+      },
+      "data": {
+        "label": "Micro-interactions",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-accessibility",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 1575
+      },
+      "data": {
+        "label": "Accessibility",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 110,
+      "height": 30,
+      "measured": {
+        "width": 110,
+        "height": 30
+      }
+    },
+    {
+      "id": "Vx1ABHy8FSCHoUDZ3S9Eo",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1610
+      },
+      "data": {
+        "label": "Accessibility Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 210,
+      "height": 45,
+      "style": {
+        "width": 210,
+        "height": 45
+      },
+      "measured": {
+        "width": 210,
+        "height": 45
+      }
+    },
+    {
+      "id": "Wy2BCIz9GTDIpVEA4T0Fp",
+      "type": "topic",
+      "position": {
+        "x": 250,
+        "y": 1610
+      },
+      "data": {
+        "label": "Semantic HTML Mastery",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 195,
+      "height": 45,
+      "style": {
+        "width": 195,
+        "height": 45
+      },
+      "measured": {
+        "width": 195,
+        "height": 45
+      }
+    },
+    {
+      "id": "Xz3CDJa0HUEJqWFB5U1Gq",
+      "type": "topic",
+      "position": {
+        "x": 455,
+        "y": 1610
+      },
+      "data": {
+        "label": "ARIA Patterns",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 140,
+      "height": 45,
+      "style": {
+        "width": 140,
+        "height": 45
+      },
+      "measured": {
+        "width": 140,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ya4DEKb1IVFKrXGC6V2Hr",
+      "type": "topic",
+      "position": {
+        "x": 605,
+        "y": 1610
+      },
+      "data": {
+        "label": "Focus Management",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 165,
+      "height": 45,
+      "style": {
+        "width": 165,
+        "height": 45
+      },
+      "measured": {
+        "width": 165,
+        "height": 45
+      }
+    },
+    {
+      "id": "Zb5EFLc2JWGLsYHD7W3Is",
+      "type": "topic",
+      "position": {
+        "x": 780,
+        "y": 1610
+      },
+      "data": {
+        "label": "Reduced Motion",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 150,
+      "height": 45,
+      "style": {
+        "width": 150,
+        "height": 45
+      },
+      "measured": {
+        "width": 150,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-ui-patterns",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 1670
+      },
+      "data": {
+        "label": "UI Patterns & Libraries",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 170,
+      "height": 30,
+      "measured": {
+        "width": 170,
+        "height": 30
+      }
+    },
+    {
+      "id": "Ac6FGMd3KXHMtZIE8X4Jt",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1705
+      },
+      "data": {
+        "label": "Radix UI",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 110,
+      "height": 45,
+      "style": {
+        "width": 110,
+        "height": 45
+      },
+      "measured": {
+        "width": 110,
+        "height": 45
+      }
+    },
+    {
+      "id": "Bd7GHNe4LYINuAJF9Y5Ku",
+      "type": "topic",
+      "position": {
+        "x": 150,
+        "y": 1705
+      },
+      "data": {
+        "label": "shadcn/ui",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 110,
+      "height": 45,
+      "style": {
+        "width": 110,
+        "height": 45
+      },
+      "measured": {
+        "width": 110,
+        "height": 45
+      }
+    },
+    {
+      "id": "Gi8LMSj5QDNTzFOK0D6Pz",
+      "type": "topic",
+      "position": {
+        "x": 270,
+        "y": 1705
+      },
+      "data": {
+        "label": "Forms & Validation",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "Hj9MNTk6RENUzGPL1E7Qa",
+      "type": "topic",
+      "position": {
+        "x": 440,
+        "y": 1705
+      },
+      "data": {
+        "label": "Modals & Dialogs",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 155,
+      "height": 45,
+      "style": {
+        "width": 155,
+        "height": 45
+      },
+      "measured": {
+        "width": 155,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ik0NOUl7SFOVcHQM2F8Rb",
+      "type": "topic",
+      "position": {
+        "x": 605,
+        "y": 1705
+      },
+      "data": {
+        "label": "Dropdowns & Menus",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 170,
+      "height": 45,
+      "style": {
+        "width": 170,
+        "height": 45
+      },
+      "measured": {
+        "width": 170,
+        "height": 45
+      }
+    },
+    {
+      "id": "Jl1OPVm8TGPWdIRN3G9Sc",
+      "type": "topic",
+      "position": {
+        "x": 785,
+        "y": 1705
+      },
+      "data": {
+        "label": "Toast Notifications",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-states",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 1765
+      },
+      "data": {
+        "label": "UI States",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 90,
+      "height": 30,
+      "measured": {
+        "width": 90,
+        "height": 30
+      }
+    },
+    {
+      "id": "Qs2VWCt9ANWChOYU4N0Zj",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1800
+      },
+      "data": {
+        "label": "Loading States",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 140,
+      "height": 45,
+      "style": {
+        "width": 140,
+        "height": 45
+      },
+      "measured": {
+        "width": 140,
+        "height": 45
+      }
+    },
+    {
+      "id": "Tv5YZFw2DQZFmRBX7Q3Cm",
+      "type": "topic",
+      "position": {
+        "x": 180,
+        "y": 1800
+      },
+      "data": {
+        "label": "Empty States",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 130,
+      "height": 45,
+      "style": {
+        "width": 130,
+        "height": 45
+      },
+      "measured": {
+        "width": 130,
+        "height": 45
+      }
+    },
+    {
+      "id": "Uw6ZAGx3ERZGnSCY8R4Dn",
+      "type": "topic",
+      "position": {
+        "x": 320,
+        "y": 1800
+      },
+      "data": {
+        "label": "Error States",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 125,
+      "height": 45,
+      "style": {
+        "width": 125,
+        "height": 45
+      },
+      "measured": {
+        "width": 125,
+        "height": 45
+      }
+    },
+    {
+      "id": "Oq0TUAr7YLUAhMWS2L8Xh",
+      "type": "topic",
+      "position": {
+        "x": 455,
+        "y": 1800
+      },
+      "data": {
+        "label": "Dark Mode Implementation",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 210,
+      "height": 45,
+      "style": {
+        "width": 210,
+        "height": 45
+      },
+      "measured": {
+        "width": 210,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-tools3",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 1860
+      },
+      "data": {
+        "label": "Tools",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 60,
+      "height": 30,
+      "measured": {
+        "width": 60,
+        "height": 30
+      }
+    },
+    {
+      "id": "Ce8HIOf5MZJOvBKG0Z6Lv",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 1895
+      },
+      "data": {
+        "label": "Storybook",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 120,
+      "height": 45,
+      "style": {
+        "width": 120,
+        "height": 45
+      },
+      "measured": {
+        "width": 120,
+        "height": 45
+      }
+    },
+    {
+      "id": "Df9IJPg6NAKPwCLH1A7Mw",
+      "type": "topic",
+      "position": {
+        "x": 160,
+        "y": 1895
+      },
+      "data": {
+        "label": "Next.js Fundamentals",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 175,
+      "height": 45,
+      "style": {
+        "width": 175,
+        "height": 45
+      },
+      "measured": {
+        "width": 175,
+        "height": 45
+      }
+    },
+    {
+      "id": "vertical-phase3-4",
+      "type": "vertical",
+      "position": {
+        "x": 474,
+        "y": 2000
+      },
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "stroke": "#2B78E4",
+          "strokeWidth": 3.5
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 50,
+      "measured": {
+        "width": 20,
+        "height": 50
+      }
+    },
+    {
+      "id": "section-phase4",
+      "type": "section",
+      "position": {
+        "x": 10,
+        "y": 2060
+      },
+      "data": {
+        "label": "",
+        "style": {
+          "fontSize": 17,
+          "backgroundColor": "#fce7f3",
+          "borderColor": "#fbcfe8"
+        }
+      },
+      "zIndex": -999,
+      "width": 948,
+      "height": 620,
+      "style": {
+        "width": 948,
+        "height": 620
+      },
+      "measured": {
+        "width": 948,
+        "height": 620
+      }
+    },
+    {
+      "id": "label-phase4",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 2070
+      },
+      "data": {
+        "label": "Phase 4: Mastery",
+        "style": {
+          "fontSize": 20,
+          "fontWeight": "bold"
+        },
+        "color": "#9d174d"
+      },
+      "zIndex": 999,
+      "width": 180,
+      "height": 40,
+      "measured": {
+        "width": 180,
+        "height": 40
+      }
+    },
+    {
+      "id": "label-ai-tools",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 2120
+      },
+      "data": {
+        "label": "AI Tools",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 80,
+      "height": 30,
+      "measured": {
+        "width": 80,
+        "height": 30
+      }
+    },
+    {
+      "id": "Eg0JKQh7OBLQxDMI2B8Nx",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 2155
+      },
+      "data": {
+        "label": "v0 by Vercel",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 130,
+      "height": 45,
+      "style": {
+        "width": 130,
+        "height": 45
+      },
+      "measured": {
+        "width": 130,
+        "height": 45
+      }
+    },
+    {
+      "id": "Fh1KLRi8PCMRyENJ3C9Oy",
+      "type": "topic",
+      "position": {
+        "x": 170,
+        "y": 2155
+      },
+      "data": {
+        "label": "Cursor IDE",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 120,
+      "height": 45,
+      "style": {
+        "width": 120,
+        "height": 45
+      },
+      "measured": {
+        "width": 120,
+        "height": 45
+      }
+    },
+    {
+      "id": "Gi2LMSj9QDNSzFOK4D0Pz",
+      "type": "topic",
+      "position": {
+        "x": 300,
+        "y": 2155
+      },
+      "data": {
+        "label": "GitHub Copilot",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 145,
+      "height": 45,
+      "style": {
+        "width": 145,
+        "height": 45
+      },
+      "measured": {
+        "width": 145,
+        "height": 45
+      }
+    },
+    {
+      "id": "Hj3MNTk0RENTzGPL5E1Qa",
+      "type": "topic",
+      "position": {
+        "x": 455,
+        "y": 2155
+      },
+      "data": {
+        "label": "Effective AI Prompting",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 185,
+      "height": 45,
+      "style": {
+        "width": 185,
+        "height": 45
+      },
+      "measured": {
+        "width": 185,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ik4NOUl1SFOUbHQM6F2Rb",
+      "type": "topic",
+      "position": {
+        "x": 650,
+        "y": 2155
+      },
+      "data": {
+        "label": "Reviewing AI Output",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 170,
+      "height": 45,
+      "style": {
+        "width": 170,
+        "height": 45
+      },
+      "measured": {
+        "width": 170,
+        "height": 45
+      }
+    },
+    {
+      "id": "Xz9CDJa6HUEKrWFB1U7Gq",
+      "type": "topic",
+      "position": {
+        "x": 830,
+        "y": 2155
+      },
+      "data": {
+        "label": "Vercel AI SDK",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 130,
+      "height": 45,
+      "style": {
+        "width": 130,
+        "height": 45
+      },
+      "measured": {
+        "width": 130,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-career",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 2215
+      },
+      "data": {
+        "label": "Career",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 70,
+      "height": 30,
+      "measured": {
+        "width": 70,
+        "height": 30
+      }
+    },
+    {
+      "id": "Jl5OPVm2TGPVcIRN7G3Sc",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 2250
+      },
+      "data": {
+        "label": "Portfolio Strategy",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 155,
+      "height": 45,
+      "style": {
+        "width": 155,
+        "height": 45
+      },
+      "measured": {
+        "width": 155,
+        "height": 45
+      }
+    },
+    {
+      "id": "Km6PQWn3UHQWdJSO8H4Td",
+      "type": "topic",
+      "position": {
+        "x": 195,
+        "y": 2250
+      },
+      "data": {
+        "label": "Case Study Writing",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 165,
+      "height": 45,
+      "style": {
+        "width": 165,
+        "height": 45
+      },
+      "measured": {
+        "width": 165,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ln7QRXo4VIRXeKTP9I5Ue",
+      "type": "topic",
+      "position": {
+        "x": 370,
+        "y": 2250
+      },
+      "data": {
+        "label": "Technical Interviews",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 170,
+      "height": 45,
+      "style": {
+        "width": 170,
+        "height": 45
+      },
+      "measured": {
+        "width": 170,
+        "height": 45
+      }
+    },
+    {
+      "id": "Mo8RSYp5WJSYfKUQ0J6Vf",
+      "type": "topic",
+      "position": {
+        "x": 550,
+        "y": 2250
+      },
+      "data": {
+        "label": "Design Critique Skills",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 175,
+      "height": 45,
+      "style": {
+        "width": 175,
+        "height": 45
+      },
+      "measured": {
+        "width": 175,
+        "height": 45
+      }
+    },
+    {
+      "id": "Np9STZq6XKTZgLVR1K7Wg",
+      "type": "topic",
+      "position": {
+        "x": 735,
+        "y": 2250
+      },
+      "data": {
+        "label": "Career Progression",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 165,
+      "height": 45,
+      "style": {
+        "width": 165,
+        "height": 45
+      },
+      "measured": {
+        "width": 165,
+        "height": 45
+      }
+    },
+    {
+      "id": "Zb1EFLc8JWGMtYHD3W9Is",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 2305
+      },
+      "data": {
+        "label": "Building in Public",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 160,
+      "height": 45,
+      "style": {
+        "width": 160,
+        "height": 45
+      },
+      "measured": {
+        "width": 160,
+        "height": 45
+      }
+    },
+    {
+      "id": "Km2PQWn9UHQXeJSO4H0Td",
+      "type": "topic",
+      "position": {
+        "x": 200,
+        "y": 2305
+      },
+      "data": {
+        "label": "Open Source Contribution",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 205,
+      "height": 45,
+      "style": {
+        "width": 205,
+        "height": 45
+      },
+      "measured": {
+        "width": 205,
+        "height": 45
+      }
+    },
+    {
+      "id": "label-advanced",
+      "type": "label",
+      "position": {
+        "x": 30,
+        "y": 2365
+      },
+      "data": {
+        "label": "Advanced Skills",
+        "style": {
+          "fontSize": 14
+        },
+        "color": "#64748b"
+      },
+      "zIndex": 999,
+      "width": 130,
+      "height": 30,
+      "measured": {
+        "width": 130,
+        "height": 30
+      }
+    },
+    {
+      "id": "Ya0DEKb7IVFLsXGC2V8Hr",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 2400
+      },
+      "data": {
+        "label": "React Hooks for DE",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 170,
+      "height": 45,
+      "style": {
+        "width": 170,
+        "height": 45
+      },
+      "measured": {
+        "width": 170,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ac2FGMd9KXHNuZIE4X0Jt",
+      "type": "topic",
+      "position": {
+        "x": 210,
+        "y": 2400
+      },
+      "data": {
+        "label": "Responsive Design",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 165,
+      "height": 45,
+      "style": {
+        "width": 165,
+        "height": 45
+      },
+      "measured": {
+        "width": 165,
+        "height": 45
+      }
+    },
+    {
+      "id": "Bd3GHNe0LYIOvAJF5Y1Ku",
+      "type": "topic",
+      "position": {
+        "x": 385,
+        "y": 2400
+      },
+      "data": {
+        "label": "SVG Basics",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 115,
+      "height": 45,
+      "style": {
+        "width": 115,
+        "height": 45
+      },
+      "measured": {
+        "width": 115,
+        "height": 45
+      }
+    },
+    {
+      "id": "Ce4HIOf1MZJPwBKG6Z2Lv",
+      "type": "topic",
+      "position": {
+        "x": 510,
+        "y": 2400
+      },
+      "data": {
+        "label": "CSS Custom Properties",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 190,
+      "height": 45,
+      "style": {
+        "width": 190,
+        "height": 45
+      },
+      "measured": {
+        "width": 190,
+        "height": 45
+      }
+    },
+    {
+      "id": "Df5IJPg2NAKQxCLH7A3Mw",
+      "type": "topic",
+      "position": {
+        "x": 30,
+        "y": 2455
+      },
+      "data": {
+        "label": "Component Documentation",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 215,
+      "height": 45,
+      "style": {
+        "width": 215,
+        "height": 45
+      },
+      "measured": {
+        "width": 215,
+        "height": 45
+      }
+    },
+    {
+      "id": "Eg6JKQh3OBLRyDMI8B4Nx",
+      "type": "topic",
+      "position": {
+        "x": 255,
+        "y": 2455
+      },
+      "data": {
+        "label": "Performance Basics",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 170,
+      "height": 45,
+      "style": {
+        "width": 170,
+        "height": 45
+      },
+      "measured": {
+        "width": 170,
+        "height": 45
+      }
+    },
+    {
+      "id": "Fh7KLRi4PCMSzENJ9C5Oy",
+      "type": "topic",
+      "position": {
+        "x": 435,
+        "y": 2455
+      },
+      "data": {
+        "label": "Design QA Process",
+        "style": {
+          "fontSize": 14,
+          "justifyContent": "flex-start",
+          "textAlign": "center"
+        }
+      },
+      "zIndex": 999,
+      "width": 170,
+      "height": 45,
+      "style": {
+        "width": 170,
+        "height": 45
+      },
+      "measured": {
+        "width": 170,
+        "height": 45
+      }
+    },
+    {
+      "id": "vertical-phase4-footer",
+      "type": "vertical",
+      "position": {
+        "x": 474,
+        "y": 2680
+      },
+      "data": {
+        "label": "vertical node",
+        "style": {
+          "strokeDasharray": "0.8 8",
+          "strokeLinecap": "round",
+          "strokeWidth": 3.5,
+          "stroke": "#2B78E4"
+        }
+      },
+      "zIndex": 999,
+      "width": 20,
+      "height": 40,
+      "measured": {
+        "width": 20,
+        "height": 40
+      }
+    },
+    {
+      "id": "footer-paragraph",
+      "type": "paragraph",
+      "position": {
+        "x": 184,
+        "y": 2730
+      },
+      "data": {
+        "label": "Continue learning and stay updated with the latest design engineering trends, tools, and best practices. Explore related roadmaps for Frontend Development, UI/UX Design, and Design Systems.",
+        "style": {
+          "fontSize": 15,
+          "justifyContent": "flex-start",
+          "textAlign": "center",
+          "borderColor": "#e2e8f0",
+          "backgroundColor": "#ffffff"
+        }
+      },
+      "zIndex": 999,
+      "width": 600,
+      "height": 80,
+      "style": {
+        "width": 600,
+        "height": 80
+      },
+      "measured": {
+        "width": 600,
+        "height": 80
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-title-phase1",
+      "source": "title-design-engineer",
+      "sourceHandle": "z2",
+      "target": "Dq8KzRfL3mNvYpXwJ2H5T",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "solid"
+      }
+    },
+    {
+      "id": "edge-phase1-connector",
+      "source": "Vx5ABHy2FSCGnUDZ7S3Eo",
+      "sourceHandle": "z2",
+      "target": "vertical-phase1-2",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "solid"
+      }
+    },
+    {
+      "id": "edge-phase2-start",
+      "source": "vertical-phase1-2",
+      "sourceHandle": "z2",
+      "target": "Xz7CDJa4HUEIpWFB9U5Gq",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "solid"
+      }
+    },
+    {
+      "id": "edge-phase2-connector",
+      "source": "Gi6LMSj3QDNRyFOK8D4Pz",
+      "sourceHandle": "z2",
+      "target": "vertical-phase2-3",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "solid"
+      }
+    },
+    {
+      "id": "edge-phase3-start",
+      "source": "vertical-phase2-3",
+      "sourceHandle": "z2",
+      "target": "Hj7MNTk4RENSzGPL9E5Qa",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "solid"
+      }
+    },
+    {
+      "id": "edge-phase3-connector",
+      "source": "Df9IJPg6NAKPwCLH1A7Mw",
+      "sourceHandle": "z2",
+      "target": "vertical-phase3-4",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "solid"
+      }
+    },
+    {
+      "id": "edge-phase4-start",
+      "source": "vertical-phase3-4",
+      "sourceHandle": "z2",
+      "target": "Eg0JKQh7OBLQxDMI2B8Nx",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "solid"
+      }
+    },
+    {
+      "id": "edge-phase4-footer",
+      "source": "Fh7KLRi4PCMSzENJ9C5Oy",
+      "sourceHandle": "z2",
+      "target": "vertical-phase4-footer",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "edge-footer-end",
+      "source": "vertical-phase4-footer",
+      "sourceHandle": "z2",
+      "target": "footer-paragraph",
+      "targetHandle": "y1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3.5,
+        "stroke": "#2b78e4"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-philosophy-1",
+      "source": "Dq8KzRfL3mNvYpXwJ2H5T",
+      "sourceHandle": "x2",
+      "target": "Kp9WxTn4vRsYhLmQ7Z3Uj",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-philosophy-2",
+      "source": "Kp9WxTn4vRsYhLmQ7Z3Uj",
+      "sourceHandle": "x2",
+      "target": "Lw5MzQp8rNtYkXvH9J2Sf",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-philosophy-3",
+      "source": "Lw5MzQp8rNtYkXvH9J2Sf",
+      "sourceHandle": "x2",
+      "target": "Mn6RtYp3wKsXhLvQ8Z4Vf",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-core-tech-1",
+      "source": "Oq8TuAr5yMvZjNxS0L6Xh",
+      "sourceHandle": "x2",
+      "target": "Pr9UvBs6zNwAkOyT1M7Yi",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-core-tech-2",
+      "source": "Pr9UvBs6zNwAkOyT1M7Yi",
+      "sourceHandle": "x2",
+      "target": "Qs0VwCt7ANxBlPzU2N8Zj",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-design-basics-1",
+      "source": "Rt1WxDu8BOyClQAV3O9Ak",
+      "sourceHandle": "x2",
+      "target": "Su2XyEv9CPzDmRAW4P0Bl",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-design-basics-2",
+      "source": "Su2XyEv9CPzDmRAW4P0Bl",
+      "sourceHandle": "x2",
+      "target": "Tv3YzFw0DQAEnSBX5Q1Cm",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-design-basics-3",
+      "source": "Tv3YzFw0DQAEnSBX5Q1Cm",
+      "sourceHandle": "x2",
+      "target": "Uw4ZAGx1ERBFoTCY6R2Dn",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-react-ts",
+      "source": "Xz7CDJa4HUEIpWFB9U5Gq",
+      "sourceHandle": "x2",
+      "target": "Ya8DEKb5IVFJqXGC0V6Hr",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-figma-1",
+      "source": "Ac0FGMd7KXHLsZIE2X8Jt",
+      "sourceHandle": "x2",
+      "target": "Bd1GHNe8LYIMtAJF3Y9Ku",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-figma-2",
+      "source": "Bd1GHNe8LYIMtAJF3Y9Ku",
+      "sourceHandle": "x2",
+      "target": "Ce2HIOf9MZJNuBKG4Z0Lv",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-anim-1",
+      "source": "Df3IJPg0NAKOvCLH5A1Mw",
+      "sourceHandle": "x2",
+      "target": "Eg4JKQh1OBLPwDMI6B2Nx",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-anim-2",
+      "source": "Eg4JKQh1OBLPwDMI6B2Nx",
+      "sourceHandle": "x2",
+      "target": "Fh5KLRi2PCMQxENJ7C3Oy",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-anim-3",
+      "source": "Fh5KLRi2PCMQxENJ7C3Oy",
+      "sourceHandle": "x2",
+      "target": "Gi6LMSj3QDNRyFOK8D4Pz",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-tokens-1",
+      "source": "Hj7MNTk4RENSzGPL9E5Qa",
+      "sourceHandle": "x2",
+      "target": "Ik8NOUl5SFOTaHQM0F6Rb",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-tokens-2",
+      "source": "Ik8NOUl5SFOTaHQM0F6Rb",
+      "sourceHandle": "x2",
+      "target": "Jl9OPVm6TGPUbIRN1G7Sc",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-tokens-3",
+      "source": "Jl9OPVm6TGPUbIRN1G7Sc",
+      "sourceHandle": "x2",
+      "target": "Km0PQWn7UHQVcJSO2H8Td",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-tokens-4",
+      "source": "Km0PQWn7UHQVcJSO2H8Td",
+      "sourceHandle": "x2",
+      "target": "Ln1QRXo8VIRWdKTP3I9Ue",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-comp-1",
+      "source": "Mo2RSYp9WJSXeKUQ4J0Vf",
+      "sourceHandle": "x2",
+      "target": "Np3STZq0XKTYfLVR5K1Wg",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-comp-2",
+      "source": "Np3STZq0XKTYfLVR5K1Wg",
+      "sourceHandle": "x2",
+      "target": "Oq4TUAr1YLUZgMWS6L2Xh",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-comp-3",
+      "source": "Oq4TUAr1YLUZgMWS6L2Xh",
+      "sourceHandle": "x2",
+      "target": "Su4XYEv1CPYEkQAW6P2Bl",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-framer-1",
+      "source": "Pr5UVBs2ZMVAgNXT7M3Yi",
+      "sourceHandle": "x2",
+      "target": "Qs6VWCt3ANWBhOYU8N4Zj",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-framer-2",
+      "source": "Qs6VWCt3ANWBhOYU8N4Zj",
+      "sourceHandle": "x2",
+      "target": "Rt7WXDu4BOXCiPZV9O5Ak",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-framer-3",
+      "source": "Rt7WXDu4BOXCiPZV9O5Ak",
+      "sourceHandle": "x2",
+      "target": "Su8XYEv5CPYDjQAW0P6Bl",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-framer-4",
+      "source": "Su8XYEv5CPYDjQAW0P6Bl",
+      "sourceHandle": "x2",
+      "target": "Tv9YZFw6DQZEkRBX1Q7Cm",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-a11y-1",
+      "source": "Vx1ABHy8FSCHoUDZ3S9Eo",
+      "sourceHandle": "x2",
+      "target": "Wy2BCIz9GTDIpVEA4T0Fp",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-a11y-2",
+      "source": "Wy2BCIz9GTDIpVEA4T0Fp",
+      "sourceHandle": "x2",
+      "target": "Xz3CDJa0HUEJqWFB5U1Gq",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-a11y-3",
+      "source": "Xz3CDJa0HUEJqWFB5U1Gq",
+      "sourceHandle": "x2",
+      "target": "Ya4DEKb1IVFKrXGC6V2Hr",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-a11y-4",
+      "source": "Ya4DEKb1IVFKrXGC6V2Hr",
+      "sourceHandle": "x2",
+      "target": "Zb5EFLc2JWGLsYHD7W3Is",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ui-1",
+      "source": "Ac6FGMd3KXHMtZIE8X4Jt",
+      "sourceHandle": "x2",
+      "target": "Bd7GHNe4LYINuAJF9Y5Ku",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ui-2",
+      "source": "Bd7GHNe4LYINuAJF9Y5Ku",
+      "sourceHandle": "x2",
+      "target": "Gi8LMSj5QDNTzFOK0D6Pz",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ui-3",
+      "source": "Gi8LMSj5QDNTzFOK0D6Pz",
+      "sourceHandle": "x2",
+      "target": "Hj9MNTk6RENUzGPL1E7Qa",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ui-4",
+      "source": "Hj9MNTk6RENUzGPL1E7Qa",
+      "sourceHandle": "x2",
+      "target": "Ik0NOUl7SFOVcHQM2F8Rb",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ui-5",
+      "source": "Ik0NOUl7SFOVcHQM2F8Rb",
+      "sourceHandle": "x2",
+      "target": "Jl1OPVm8TGPWdIRN3G9Sc",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-states-1",
+      "source": "Qs2VWCt9ANWChOYU4N0Zj",
+      "sourceHandle": "x2",
+      "target": "Tv5YZFw2DQZFmRBX7Q3Cm",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-states-2",
+      "source": "Tv5YZFw2DQZFmRBX7Q3Cm",
+      "sourceHandle": "x2",
+      "target": "Uw6ZAGx3ERZGnSCY8R4Dn",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-states-3",
+      "source": "Uw6ZAGx3ERZGnSCY8R4Dn",
+      "sourceHandle": "x2",
+      "target": "Oq0TUAr7YLUAhMWS2L8Xh",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ai-1",
+      "source": "Eg0JKQh7OBLQxDMI2B8Nx",
+      "sourceHandle": "x2",
+      "target": "Fh1KLRi8PCMRyENJ3C9Oy",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ai-2",
+      "source": "Fh1KLRi8PCMRyENJ3C9Oy",
+      "sourceHandle": "x2",
+      "target": "Gi2LMSj9QDNSzFOK4D0Pz",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ai-3",
+      "source": "Gi2LMSj9QDNSzFOK4D0Pz",
+      "sourceHandle": "x2",
+      "target": "Hj3MNTk0RENTzGPL5E1Qa",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ai-4",
+      "source": "Hj3MNTk0RENTzGPL5E1Qa",
+      "sourceHandle": "x2",
+      "target": "Ik4NOUl1SFOUbHQM6F2Rb",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-ai-5",
+      "source": "Ik4NOUl1SFOUbHQM6F2Rb",
+      "sourceHandle": "x2",
+      "target": "Xz9CDJa6HUEKrWFB1U7Gq",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-career-1",
+      "source": "Jl5OPVm2TGPVcIRN7G3Sc",
+      "sourceHandle": "x2",
+      "target": "Km6PQWn3UHQWdJSO8H4Td",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-career-2",
+      "source": "Km6PQWn3UHQWdJSO8H4Td",
+      "sourceHandle": "x2",
+      "target": "Ln7QRXo4VIRXeKTP9I5Ue",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-career-3",
+      "source": "Ln7QRXo4VIRXeKTP9I5Ue",
+      "sourceHandle": "x2",
+      "target": "Mo8RSYp5WJSYfKUQ0J6Vf",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-career-4",
+      "source": "Mo8RSYp5WJSYfKUQ0J6Vf",
+      "sourceHandle": "x2",
+      "target": "Np9STZq6XKTZgLVR1K7Wg",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-advanced-1",
+      "source": "Ya0DEKb7IVFLsXGC2V8Hr",
+      "sourceHandle": "x2",
+      "target": "Ac2FGMd9KXHNuZIE4X0Jt",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-advanced-2",
+      "source": "Ac2FGMd9KXHNuZIE4X0Jt",
+      "sourceHandle": "x2",
+      "target": "Bd3GHNe0LYIOvAJF5Y1Ku",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-advanced-3",
+      "source": "Bd3GHNe0LYIOvAJF5Y1Ku",
+      "sourceHandle": "x2",
+      "target": "Ce4HIOf1MZJPwBKG6Z2Lv",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-advanced-4",
+      "source": "Df5IJPg2NAKQxCLH7A3Mw",
+      "sourceHandle": "x2",
+      "target": "Eg6JKQh3OBLRyDMI8B4Nx",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    },
+    {
+      "id": "h-edge-advanced-5",
+      "source": "Eg6JKQh3OBLRyDMI8B4Nx",
+      "sourceHandle": "x2",
+      "target": "Fh7KLRi4PCMSzENJ9C5Oy",
+      "targetHandle": "x1",
+      "style": {
+        "strokeDasharray": "0.8 8",
+        "strokeLinecap": "round",
+        "strokeWidth": 3,
+        "stroke": "#94a3b8"
+      },
+      "data": {
+        "edgeStyle": "dashed"
+      }
+    }
+  ]
+}
