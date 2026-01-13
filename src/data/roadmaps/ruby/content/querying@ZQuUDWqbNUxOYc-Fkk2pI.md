@@ -1,3 +1,8 @@
-# Querying
+# Querying Enumerable Collections
 
-`Enumerable` comes with some methods that allow you to search and filter elements within a collection based on specific conditions. These methods return elements that match your criteria, providing a way to extract relevant data from a larger set. This allows you to efficiently find specific items or subsets of items within a collection without manually iterating through each element.
+Enumerable querying methods in Ruby allow you to gather information *about* a collection without necessarily extracting or transforming its elements. These methods check for the presence of elements that meet certain conditions, determine the size or characteristics of the collection, or verify if all or any elements satisfy a given criteria. They return boolean values, counts, or other summary data about the Enumerable itself, rather than returning a modified Enumerable.
+
+Visit the following resources to learn more:
+
+- [@article@Methods for Querying](https://ruby-doc.org/3.4.1/Enumerable.html#module-Enumerable-label-Methods+for+Querying)
+- [@article@Getting to know Ruby's Enumerable Module](https://www.rafaelmontas.com/getting-to-know-ruby-enumerable-module/)
