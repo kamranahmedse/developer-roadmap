@@ -1,6 +1,6 @@
 # Constants & Variables
 
-In Ruby, variables are named storage locations that hold data, and their values can be changed during the program's execution. Constants, on the other hand, are also named storage locations, but their values are intended to remain fixed throughout the program's runtime. While Ruby technically allows you to reassign a constant (it will issue a warning), the convention is to treat them as immutable values that should not be altered. Variables are typically named using snake_case, while constants are named using SCREAMING_SNAKE_CASE.
+In Ruby, variables are named storage locations that hold data, and their values can be changed during the program's execution. Constants, on the other hand, are also named storage locations, but their values are intended to remain fixed throughout the program's runtime. While Ruby technically allows you to reassign a constant (it will issue a warning), the convention is to treat them as immutable values that should not be altered. Variables are typically named using snake\_case, while constants are named using SCREAMING\_SNAKE\_CASE.
 
 Visit the following resources to learn more:
 

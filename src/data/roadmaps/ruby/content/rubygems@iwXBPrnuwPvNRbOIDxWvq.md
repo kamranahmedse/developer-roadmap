@@ -1,3 +1,3 @@
 # RubyGems
 
-RubyGems is a package management system for the Ruby programming language. It provides a standard format for distributing Ruby programs and libraries (called "gems"), a tool for easily installing gems, and a central repository (RubyGems.org) for finding and sharing them. It simplifies the process of managing dependencies and distributing reusable code in the Ruby ecosystem.
+RubyGems is a package management system for the Ruby programming language. It provides a standard format for distributing Ruby programs and libraries (called "gems"), a tool for easily installing gems, and a central repository ([RubyGems.org](http://RubyGems.org)) for finding and sharing them. It simplifies the process of managing dependencies and distributing reusable code in the Ruby ecosystem.

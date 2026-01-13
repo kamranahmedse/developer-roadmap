@@ -5,7 +5,7 @@ Installers are software packages designed to simplify the process of setting up 
 Visit the following resources to learn more:
 
 - [@official@Installers - Ruby Docs](https://www.ruby-lang.org/en/documentation/installation/#installers)
-- [@opensource@ruby-build (macOS, Linux, UNIX OS)](https://github.com/rbenv/ruby-build#readme)
-- [@opensource@ruby-install (macOS, Linux, UNIX OS)](https://github.com/postmodern/ruby-install#readme)
 - [@official@RubyInstaller (Windows)](https://rubyinstaller.org/)
 - [@official@Ruby Stack](https://bitnami.com/stack/ruby/installer)
+- [@opensource@ruby-build (macOS, Linux, UNIX OS)](https://github.com/rbenv/ruby-build#readme)
+- [@opensource@ruby-install (macOS, Linux, UNIX OS)](https://github.com/postmodern/ruby-install#readme)
