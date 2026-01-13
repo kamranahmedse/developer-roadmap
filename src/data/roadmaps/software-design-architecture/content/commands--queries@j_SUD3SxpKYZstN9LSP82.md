@@ -4,6 +4,6 @@ The Command and Query Responsibility Segregation (CQRS) pattern is a technique u
 
 Queries are used for retrieving data from the system, such as reading data from a database or a cache. These operations are handled by Query Handlers, which are responsible for executing the appropriate query and returning the data to the caller.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Get Started with CQRS Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs)

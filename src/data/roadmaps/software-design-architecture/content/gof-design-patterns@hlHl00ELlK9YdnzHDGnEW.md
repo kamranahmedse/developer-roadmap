@@ -4,11 +4,11 @@ The Gang of Four (GoF) design patterns are a set of design patterns for object-o
 
 The GoF design patterns are divided into three categories: Creational, Structural and Behavioral.
 
-- Creational Patterns
-- Structural Patterns
-- Behavioral Patterns
+*   Creational Patterns
+*   Structural Patterns
+*   Behavioral Patterns
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Gangs of Four (GoF) Design Patterns](https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns)
 - [@video@Tutorial - Builder Pattern (Gang of Four Design Patterns Series)](https://www.youtube.com/watch?v=_sa2WlAFWQos)

@@ -4,7 +4,7 @@ Serverless architecture is a design pattern that allows developers to build and 
 
 This architecture pattern mainly focuses on the business logic and event-driven execution, rather than on server management. It allows developers to write and deploy code in small, single-purpose functions that are triggered by specific events, such as changes in a database or the arrival of new data in a stream.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Serverless Architecture Patterns in AWS](https://waswani.medium.com/serverless-architecture-patterns-in-aws-edeab0e46a32)
 - [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)

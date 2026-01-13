@@ -4,6 +4,6 @@ In object-oriented programming (OOP), an interface is a contract or a set of met
 
 Interfaces are used to define a common behavior for a group of related classes, and to provide a way for objects of different classes to be treated polymorphically. A class that implements an interface must provide an implementation for all of the methods declared in the interface. A class can implement multiple interfaces, but can only inherit from one base class.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@Fundamental concepts: What's an Interface?](https://www.youtube.com/watch?v=o1jBgdhQsGo)

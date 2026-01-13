@@ -4,9 +4,9 @@ Abstraction is a concept in object-oriented programming (OOP) that refers to the
 
 There are two types of abstraction:
 
-- Data abstraction: refers to hiding the internal representation of data and providing a simplified view of the data through a set of well-defined interfaces.
-- Behavioral abstraction: refers to hiding the internal behavior of an object and providing a simplified view of its capabilities through a set of well-defined interfaces.
+*   Data abstraction: refers to hiding the internal representation of data and providing a simplified view of the data through a set of well-defined interfaces.
+*   Behavioral abstraction: refers to hiding the internal behavior of an object and providing a simplified view of its capabilities through a set of well-defined interfaces.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@video@Tutorial - Abstraction](https://www.youtube.com/watch?v=OF55HZPE7lQ)

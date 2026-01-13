@@ -4,7 +4,7 @@ Event-driven architecture (EDA) is a software design pattern in which the system
 
 The main advantage of using EDA is that it allows for a clear separation of concerns between the components, and it can improve the scalability and fault-tolerance of the system. Additionally, it allows for loose coupling between components, meaning that the components are not aware of each other's existence, and can be developed, deployed, and scaled independently.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Overview of Event-driven programming](https://en.wikipedia.org/wiki/Event-driven_programming)
 - [@article@What is event-driven architecture?](https://www.redhat.com/en/topics/integration/what-is-event-driven-architecture)

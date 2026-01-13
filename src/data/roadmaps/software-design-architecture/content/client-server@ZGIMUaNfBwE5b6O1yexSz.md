@@ -4,6 +4,6 @@ The client-server architecture is a common architecture pattern used in distribu
 
 The client is responsible for presenting the user interface and handling user input, while the server is responsible for processing the requests and returning the appropriate response. The server can also handle tasks such as data storage, security, and business logic.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Intro to Client-server Architecture](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1195/Arch_Design_Activity/ClientServer.pdf)

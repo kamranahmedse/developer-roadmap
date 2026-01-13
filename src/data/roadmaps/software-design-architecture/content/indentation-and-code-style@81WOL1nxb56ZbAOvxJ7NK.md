@@ -4,7 +4,7 @@ Indentation is the practice of using whitespace to visually group related lines 
 
 Having a consistent indentation and code style can help to make the code more readable and understandable, which can improve the maintainability of the system.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Clean Code – Formatting](https://www.baeldung.com/cs/clean-code-formatting)
 - [@feed@Explore top posts about General Programming](https://app.daily.dev/tags/general-programming?ref=roadmapsh)

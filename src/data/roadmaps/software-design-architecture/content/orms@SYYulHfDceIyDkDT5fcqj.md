@@ -4,7 +4,7 @@ ORM stands for Object-Relational Mapping, it is a technique used in enterprise a
 
 ORMs are designed to abstract away the complexity of working with a relational database and allow developers to interact with the database using a higher-level, object-oriented API. They provide a set of libraries and tools that map the objects in the code to the tables and rows in the database, and vice versa. This allows developers to work with the data using a familiar object-oriented paradigm, rather than having to write complex SQL queries.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Why do you need an ORM?](https://enterprisecraftsmanship.com/posts/do-you-need-an-orm/)
 - [@feed@Explore top posts about Backend Development](https://app.daily.dev/tags/backend?ref=roadmapsh)
