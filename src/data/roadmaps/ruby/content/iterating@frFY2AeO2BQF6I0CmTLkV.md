@@ -1,0 +1,3 @@
+# Iterating with Enumerable
+
+The `Enumerable` module in Ruby provides a collection of methods that allow you to traverse and process elements within a collection (like an array or hash). These iterating methods, such as `each`, `map`, `select`, and `reject`, simplify the process of performing actions on each item in the collection, transforming the collection, or filtering elements based on specific conditions. They abstract away the need for manual indexing and provide a more concise and readable way to work with collections.

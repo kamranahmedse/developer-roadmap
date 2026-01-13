@@ -1,0 +1,3 @@
+# File I/O
+
+File I/O involves reading data from and writing data to files. It allows your Ruby programs to interact with files on your computer's file system. You can open files, read their contents line by line or in chunks, write new data to them, or append data to existing files. This interaction is essential for tasks like reading configuration files, processing data from external sources, and saving program output.

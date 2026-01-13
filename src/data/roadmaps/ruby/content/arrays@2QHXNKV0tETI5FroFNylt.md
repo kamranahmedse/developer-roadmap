@@ -1,0 +1,3 @@
+# Arrays
+
+Arrays in Ruby are ordered collections of items. They can hold any type of data, including numbers, strings, symbols, or even other arrays. You create an array using square brackets `[]`, with elements separated by commas. Arrays are dynamic, meaning their size can change as you add or remove elements. You can access elements in an array using their index, starting from 0 for the first element.

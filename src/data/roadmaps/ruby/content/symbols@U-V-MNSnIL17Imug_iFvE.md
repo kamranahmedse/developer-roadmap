@@ -1,0 +1,3 @@
+# Symbols
+
+Symbols are lightweight, immutable strings often used as identifiers or names within a Ruby program. Unlike regular strings, symbols are guaranteed to be unique; Ruby only creates one copy of a symbol, regardless of how many times it's referenced. This makes them efficient for tasks like hash keys or representing states, where comparing identity is more important than comparing content. They are typically written with a colon prefix, like `:my_symbol`.

@@ -1,0 +1,3 @@
+# Concurrency & Parallelism
+
+Concurrency and parallelism are techniques for improving the performance and responsiveness of programs by executing multiple tasks seemingly or actually at the same time. Concurrency deals with managing multiple tasks within a single program, allowing them to make progress even if one task is blocked. Parallelism, on the other hand, involves physically executing multiple tasks simultaneously, typically by distributing them across multiple processor cores.

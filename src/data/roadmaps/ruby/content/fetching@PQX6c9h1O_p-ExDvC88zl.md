@@ -1,0 +1,3 @@
+# Fetching
+
+`Enumerable` comes with some methods that allow you to retrieve elements from a collection based on specific criteria or conditions. This often involves iterating through the collection and selecting elements that meet a certain requirement, or accessing elements at specific indices. Methods like `find`, `select`, `detect`, and array-like indexing are commonly used to fetch elements from an `Enumerable` object.

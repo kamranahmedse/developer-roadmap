@@ -1,0 +1,3 @@
+# Blocks
+
+Blocks are chunks of code that can be passed to methods as if they were arguments. They are defined using either `do...end` or curly braces `{}`. Blocks are not objects themselves, but they can be converted into objects called Procs. Methods can then execute the code within the block using the `yield` keyword. Blocks are a fundamental part of Ruby's expressiveness, allowing for powerful iteration and control flow patterns.

@@ -1,0 +1,3 @@
+# Method Parameters
+
+Method parameters are the values you pass into a method when you call it. There are several types: required parameters, which must be provided; optional parameters, which have default values if not provided; and variable-length arguments (using `*args`), which allow you to pass in an arbitrary number of arguments as an array. Keyword arguments (using `key: value`) allow you to pass arguments by name, and can also be required or optional. Block parameters (using `&block`) allow you to pass a block of code to a method.

@@ -1,0 +1,3 @@
+# Stacks & Queues
+
+Stacks and queues are fundamental data structures used to manage collections of items. A stack operates on the Last-In, First-Out (LIFO) principle, where the last element added is the first one removed, like a stack of plates. Conversely, a queue follows the First-In, First-Out (FIFO) principle, where the first element added is the first one removed, similar to a waiting line. In Ruby, these can be implemented using arrays or custom classes to manage data in a specific order.

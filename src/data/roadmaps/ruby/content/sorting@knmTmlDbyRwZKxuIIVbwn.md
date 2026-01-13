@@ -1,0 +1,3 @@
+# Sorting in Enumerable
+
+The `Enumerable` module in Ruby provides several methods for sorting collections. These methods allow you to arrange elements in ascending or descending order based on their natural ordering or a custom comparison logic. The most common sorting methods include `sort`, which returns a new sorted array, and `sort_by`, which sorts based on the result of a block applied to each element. You can also use `min`, `max`, `minmax` to find the smallest, largest, or both smallest and largest elements in a collection, respectively.

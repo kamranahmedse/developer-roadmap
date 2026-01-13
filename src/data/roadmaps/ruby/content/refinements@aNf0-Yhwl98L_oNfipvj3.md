@@ -1,0 +1,3 @@
+# Refinements
+
+Refinements in Ruby provide a way to modify the behavior of a class or module within a specific scope, without affecting the global definition of that class or module. This allows you to introduce changes or extensions to existing code in a localized manner, preventing unintended side effects in other parts of your application. Refinements are particularly useful for managing dependencies and avoiding conflicts when working with shared code or libraries.

@@ -1,0 +1,3 @@
+# Inheritance
+
+Inheritance is a fundamental concept in object-oriented programming where a new class (called a subclass or derived class) is created from an existing class (called a superclass or base class). The subclass inherits the properties and behaviors (attributes and methods) of the superclass, allowing it to reuse and extend the functionality of the existing class. This promotes code reusability and helps in creating a hierarchical structure of classes.
