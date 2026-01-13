@@ -1,0 +1,3 @@
+# Exception Handling with `begin`, `rescue`, and `ensure`
+
+Exception handling is a mechanism to deal with errors that occur during the execution of a program. In Ruby, the `begin`, `rescue`, and `ensure` keywords provide a structured way to handle these exceptions. The `begin` block encloses the code that might raise an exception. If an exception occurs, the `rescue` block catches and handles it. The `ensure` block, if present, guarantees that its code will always be executed, regardless of whether an exception was raised or not, making it suitable for cleanup operations.

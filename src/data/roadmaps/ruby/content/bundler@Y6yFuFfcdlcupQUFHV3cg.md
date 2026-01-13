@@ -1,0 +1,3 @@
+# Bundler
+
+Bundler is a dependency manager for Ruby. It ensures that an application uses the exact versions of gems (Ruby libraries) that it needs to function correctly. It tracks and installs the specific gem versions required by a project, creating a consistent environment across different machines and deployments. This prevents conflicts and ensures that the application behaves as expected, regardless of where it's run.

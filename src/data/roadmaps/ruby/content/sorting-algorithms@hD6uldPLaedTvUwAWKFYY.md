@@ -1,0 +1,3 @@
+# Sorting Algorithms
+
+Sorting algorithms are methods used to rearrange a collection of items (like numbers, strings, or objects) into a specific order, such as ascending or descending. These algorithms work by comparing elements and swapping their positions until the entire collection is ordered according to the desired criteria. Different sorting algorithms have varying efficiencies and are suitable for different types and sizes of data.

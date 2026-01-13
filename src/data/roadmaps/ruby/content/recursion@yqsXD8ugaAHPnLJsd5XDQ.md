@@ -1,0 +1,3 @@
+# Recursion
+
+Recursion is a programming technique where a function calls itself within its own definition. This creates a loop-like behavior, but instead of using explicit loops (like `for` or `while`), the function breaks down a problem into smaller, self-similar subproblems until it reaches a base case, which stops the recursion and returns a value. The results from each recursive call are then combined to produce the final solution.

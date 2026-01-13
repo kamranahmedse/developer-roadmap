@@ -1,0 +1,3 @@
+# Attributes Accessors
+
+Attributes accessors in Ruby provide a convenient way to access and modify the instance variables of a class. They automatically generate methods for reading (getting) and writing (setting) the values of these variables. The three main types are `attr_reader`, which creates a getter method; `attr_writer`, which creates a setter method; and `attr_accessor`, which creates both a getter and a setter method. These accessors simplify code and encapsulate the internal state of objects.

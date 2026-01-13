@@ -1,0 +1,3 @@
+# Handling Exceptions
+
+Exception handling is a mechanism to deal with errors that occur during the execution of a program. It involves identifying potential error-prone sections of code, anticipating possible exceptions, and implementing specific blocks of code to gracefully handle these exceptions, preventing the program from crashing and allowing it to continue execution or terminate in a controlled manner.

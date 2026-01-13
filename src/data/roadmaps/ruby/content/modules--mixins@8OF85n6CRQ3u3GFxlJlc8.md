@@ -1,0 +1,3 @@
+# Modules & Mixins
+
+Modules in Ruby are collections of methods, classes, and constants. They provide a way to namespace and prevent naming conflicts. Mixins allow you to incorporate module functionality into classes, enabling code reuse and multiple inheritance-like behavior. By including a module in a class, the class gains access to the module's methods, effectively "mixing in" the module's functionality.

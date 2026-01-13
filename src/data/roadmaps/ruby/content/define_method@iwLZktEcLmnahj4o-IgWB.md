@@ -1,0 +1,3 @@
+# define_method
+
+`define_method` is a method used to dynamically create new methods within a class or module. Instead of explicitly writing out the method definition with the `def` keyword, `define_method` allows you to generate methods at runtime, often based on data or logic that isn't known until the program is running. This provides a powerful way to reduce code duplication and create more flexible and adaptable code.

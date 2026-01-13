@@ -1,0 +1,3 @@
+# Method Lookup
+
+Method lookup is the process a programming language uses to determine which method to execute when a method is called on an object. It involves searching through the object's class and its ancestors (inheritance hierarchy) to find the appropriate method definition. The search typically starts with the object's class and proceeds up the inheritance chain until a matching method is found.

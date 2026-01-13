@@ -1,0 +1,3 @@
+# Standard
+
+Standard is a Ruby gem that automatically formats and lints Ruby code, aiming to enforce a consistent style across projects. It combines the functionality of linters like RuboCop with an auto-formatter, providing a single tool to ensure code adheres to a predefined set of style rules. By automatically fixing style issues, Standard helps developers focus on writing code rather than debating formatting preferences.

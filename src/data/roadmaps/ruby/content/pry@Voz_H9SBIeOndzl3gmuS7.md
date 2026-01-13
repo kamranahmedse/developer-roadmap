@@ -1,0 +1,3 @@
+# Pry
+
+Pry is a powerful Ruby runtime developer console and an alternative to `irb`. It offers features like syntax highlighting, code browsing, documentation lookup, and the ability to step through code execution. Pry allows developers to pause program execution at any point, inspect variables, and even modify code on the fly, making it an invaluable tool for debugging and understanding Ruby code.

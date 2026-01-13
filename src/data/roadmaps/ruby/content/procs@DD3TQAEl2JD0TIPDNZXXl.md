@@ -1,0 +1,3 @@
+# Procs
+
+A Proc in Ruby is an object that represents a block of code that can be stored, passed around, and executed later. Think of it as a named, reusable chunk of code. Unlike regular methods, Procs are objects, allowing them to be treated like any other variable, passed as arguments to methods, and stored in data structures. They capture the surrounding context in which they are defined, meaning they have access to variables and methods available at the time of their creation.

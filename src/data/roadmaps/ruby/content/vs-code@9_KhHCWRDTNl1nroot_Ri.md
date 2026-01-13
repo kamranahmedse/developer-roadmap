@@ -1,0 +1,3 @@
+# VS Code Ruby Extension
+
+The VS Code Ruby extension enhances the Visual Studio Code editor with features specifically designed for Ruby development. It provides functionalities like syntax highlighting, code completion, debugging support, linting, and formatting, making it easier for developers to write, test, and maintain Ruby code within the VS Code environment. This extension streamlines the development workflow and improves code quality by offering real-time feedback and assistance.

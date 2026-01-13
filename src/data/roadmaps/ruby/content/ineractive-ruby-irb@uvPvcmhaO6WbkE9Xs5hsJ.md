@@ -1,0 +1,3 @@
+# Interactive Ruby (irb)
+
+Interactive Ruby (irb) is a command-line tool that allows you to execute Ruby code interactively. It provides a read-eval-print loop (REPL) environment where you can type in Ruby expressions, and irb will immediately evaluate and display the result. This makes it a valuable tool for experimenting with code, testing ideas, and quickly checking the behavior of Ruby methods and objects.

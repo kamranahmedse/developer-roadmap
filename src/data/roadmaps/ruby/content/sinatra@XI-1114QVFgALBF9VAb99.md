@@ -1,0 +1,3 @@
+# Sinatra
+
+Sinatra is a lightweight and flexible Domain Specific Language (DSL) for creating web applications in Ruby with minimal effort. It provides a simple way to map routes to Ruby code, allowing developers to quickly build web applications without the complexity of larger frameworks. Sinatra emphasizes convention over configuration, making it easy to get started and build small to medium-sized web applications.
