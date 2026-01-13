@@ -4,6 +4,6 @@ In software architecture, component-based design (CBD) is an approach to designi
 
 In CBD, a software system is divided into a set of components, each of which has a well-defined interface and a specific responsibility. These components can be developed, tested, and deployed independently, making it easier to add new features, modify existing ones, and maintain the system.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Component Based Software architecture](https://www.tutorialspoint.com/software_architecture_design/component_based_architecture.htm)

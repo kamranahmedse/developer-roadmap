@@ -4,7 +4,7 @@ A domain model is a representation of a specific area of knowledge or business t
 
 A domain model is used to provide a clear and consistent representation of the problem domain, and to capture the business requirements and constraints of the system. It is also used to guide the design of the system and to ensure that the system accurately reflects the real-world problem it is intended to solve.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Overview of Domain model](https://en.wikipedia.org/wiki/Domain_model)
 - [@article@Domain Driven Design](https://khalilstemmler.com/articles/categories/domain-driven-design/)

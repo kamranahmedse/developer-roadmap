@@ -4,11 +4,11 @@ A layered architecture is a software design pattern in which the functionality o
 
 There are several types of layered architectures, but a common one is the three-layer architecture which consists of:
 
-- Presentation Layer
-- Business Layer
-- Data Access Layer
+*   Presentation Layer
+*   Business Layer
+*   Data Access Layer
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Software Architecture Patterns — Layered Architecture](https://priyalwalpita.medium.com/software-architecture-patterns-layered-architecture-a3b89b71a057)
 - [@article@5 Primary Layers in Software Architecture?](https://www.indeed.com/career-advice/career-development/what-are-the-layers-in-software-architecture)

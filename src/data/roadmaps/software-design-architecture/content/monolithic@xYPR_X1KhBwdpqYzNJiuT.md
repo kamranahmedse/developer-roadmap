@@ -4,7 +4,7 @@ In software architecture, monolithic architecture is a design approach in which 
 
 A monolithic architecture is often used for small to medium-sized systems, where the complexity of the system is manageable and the need for scalability and flexibility is not as high. In a monolithic architecture, the entire system is typically built, deployed, and executed as a single unit, which can make it easier to understand and manage the system.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Overview of Monolithic Architecture](https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith)
 - [@article@What is Monolithic architecture?](https://www.techtarget.com/whatis/definition/monolithic-architecture)

@@ -4,14 +4,14 @@ Design patterns are general solutions to common problems that arise in software 
 
 There are several different types of design patterns, including:
 
-- Creational patterns
-- Structural patterns
-- Behavioral patterns
-- Architectural patterns
+*   Creational patterns
+*   Structural patterns
+*   Behavioral patterns
+*   Architectural patterns
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
-- [@video@What Are Design Patterns?](https://www.youtube.com/watch?v=BWprw8UHIzA)
 - [@article@Overview - Software Design Pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
 - [@article@Explaining, imaging and simplifying design patterns](https://refactoring.guru/design-patterns/what-is-pattern)
+- [@video@What Are Design Patterns?](https://www.youtube.com/watch?v=BWprw8UHIzA)
 - [@feed@Explore top posts about Design Patterns](https://app.daily.dev/tags/design-patterns?ref=roadmapsh)

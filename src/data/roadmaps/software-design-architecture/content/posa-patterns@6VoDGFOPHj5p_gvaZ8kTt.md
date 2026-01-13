@@ -4,12 +4,12 @@ POSA (Pattern-Oriented Software Architecture) is a set of design patterns for de
 
 POSA patterns are divided into four categories:
 
-- Partitioning Patterns
-- Placement Patterns
-- Routing Patterns
-- Federation Patterns
+*   Partitioning Patterns
+*   Placement Patterns
+*   Routing Patterns
+*   Federation Patterns
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
-- [@video@POSA Pattern Examples](https://www.youtube.com/watch?v=iYNa_KcWxCU)
 - [@article@Overview of Pattern-Oriented Software Architecture](https://en.wikipedia.org/wiki/Pattern-Oriented_Software_Architecture)
+- [@video@POSA Pattern Examples](https://www.youtube.com/watch?v=iYNa_KcWxCU)

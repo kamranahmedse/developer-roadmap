@@ -4,7 +4,7 @@ Value Objects are a pattern used in enterprise application development to repres
 
 A Value Object is defined by its value rather than its identity, meaning that two Value Objects with the same value are considered to be equal, regardless of their identity.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Overview - Implement Value Objects](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/implement-value-objects)
 - [@article@Intro to Value object](https://en.wikipedia.org/wiki/Value_object)

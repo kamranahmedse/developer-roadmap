@@ -4,6 +4,6 @@ An Anemic model, also known as an anemic domain model, is a type of domain model
 
 An anemic model is considered an anti-pattern in object-oriented programming (OOP) because it violates the principles of encapsulation and separation of concerns. In an anemic model, the behavior is separated from the data, and is typically implemented in a separate service layer, which can lead to a complex, tightly coupled, and hard-to-maintain codebase.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Overview of Anemic Domain Model](https://en.wikipedia.org/wiki/Anemic_domain_model)
