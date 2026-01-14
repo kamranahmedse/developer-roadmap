@@ -5,8 +5,8 @@ Arrays in Ruby are ordered collections of items. They can hold any type of data,
 Visit the following resources to learn more:
 
 - [@official@class Array](https://docs.ruby-lang.org/en/master/Array.html)
-- [@article@Arrays](https://www.theodinproject.com/lessons/ruby-arrays)
-- [@article@Ruby Arrays](https://www.tutorialspoint.com/ruby/ruby_arrays.htm)
+- [@article@Arrays](https://launchschool.com/books/ruby/read/arrays#whatisanarray)
+- [@article@Arrays - Odin Project](https://www.theodinproject.com/lessons/ruby-arrays)
 - [@article@Arrrays](https://ruby-for-beginners.rubymonstas.org/built_in_classes/arrays.html)
 - [@video@Arrays are Easy in Ruby for Beginners 9](https://www.youtube.com/watch?v=PeyodDIfLeE)
 - [@video@Arrays | Ruby | Tutorial 13](https://www.youtube.com/watch?v=SP3Vf2KcYeU)
