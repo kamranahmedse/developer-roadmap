@@ -69,57 +69,13 @@ When iterating over containers such as `std::vector<std::string>`, the choice of
 
 ### Comparison
 
-Loop style
+| Loop style          | Copies made? | Can modify element? | Efficiency                         | Typical use case                         |
+|---------------------|--------------|---------------------|------------------------------------|------------------------------------------|
+| `auto str`          | ✅ Yes        | ✅ Only the copy     | Less efficient for large objects   | When you need a local, mutable copy      |
+| `auto const &str`   | ❌ No         | ❌ Read-only         | Most efficient for read-only use   | Safely read elements without copying     |
+| `auto &str`         | ❌ No         | ✅ Modifies original | Efficient, mutates container       | Modify elements in place                 |
+| `const auto str`    | ✅ Yes        | ❌ Read-only         | Less efficient for large objects   | Explicit read-only copy                  |
 
-Copies made?
-
-Can modify element?
-
-Efficiency
-
-Typical Use Case
-
-`auto str`
-
-✅ Yes
-
-✅ Only the copy
-
-Less efficient for large objects
-
-When you need a local, mutable copy
-
-`auto const &str`
-
-❌ No
-
-❌ Read-only
-
-Most efficient for read-only use
-
-Safely read elements without copying
-
-`auto &str`
-
-❌ No
-
-✅ Modifies original
-
-Efficient, mutates container
-
-Modify elements in place
-
-`const auto str`
-
-✅ Yes
-
-❌ Read-only
-
-Less efficient for large objects
-
-Explicit read-only copy
-
-* * *
 
 Example: Why `const auto str` Can Be Useful
 -------------------------------------------
