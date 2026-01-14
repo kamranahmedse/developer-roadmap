@@ -4,8 +4,8 @@ Hashes are collections of key-value pairs. Think of them like dictionaries, wher
 
 Visit the following resources to learn more:
 
-- [@official@Ruby - Hashes](https://www.tutorialspoint.com/ruby/ruby_hashes.htm)
-- [@article@Hashes](https://www.theodinproject.com/lessons/ruby-hashes)
-- [@article@class Hash](https://docs.ruby-lang.org/en/master/Hash.html)
+- [@official@class Hash](https://docs.ruby-lang.org/en/master/Hash.html)
+- [@article@What is a Hash](https://launchschool.com/books/ruby/read/hashes#whatisahash)
+- [@article@Hashes - Odin Project](https://www.theodinproject.com/lessons/ruby-hashes)
 - [@video@Hashes | Ruby | Tutorial 14](https://www.youtube.com/watch?v=BtHKhsDUPwQ)
 - [@video@Ruby Programming Tutorial - 31 - Hashes](https://www.youtube.com/watch?v=imns9_XncQU)
