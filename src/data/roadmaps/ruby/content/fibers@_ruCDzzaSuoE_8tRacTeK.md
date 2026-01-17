@@ -4,7 +4,7 @@ Fibers are a lightweight concurrency construct that allows you to create code bl
 
 Visit the following resources to learn more:
 
+- [@book@Magesh, "Concurrency in Ruby: Threads, Fibers, and Ractors Demystified"](https://www.youtube.com/watch?v=LVHiq_SbQOE)
 - [@official@class Fiber](https://docs.ruby-lang.org/en/master/Fiber.html)
 - [@article@How to use Ruby Fibers for Background Jobs](https://medium.com/@alieckaja/unleashing-the-power-of-fibers-for-background-jobs-8a22e3a38cd1)
 - [@article@Ruby Fibers 101](https://blog.saeloun.com/2022/03/01/ruby-fibers-101/)
-- [@book@Magesh, "Concurrency in Ruby: Threads, Fibers, and Ractors Demystified"](https://www.youtube.com/watch?v=LVHiq_SbQOE)
