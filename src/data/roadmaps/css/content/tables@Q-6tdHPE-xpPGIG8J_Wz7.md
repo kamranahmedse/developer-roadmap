@@ -5,4 +5,4 @@ Tables in CSS are used to format tabular data on a webpage, arranging informatio
 Visit the following resources to learn more:
 
 - [@article@Table](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_table)
-- [@article@Styling HTML tables with CSS - Web Design/UX Tutorial](https://www.youtube.com/watch?v=biI9OFH6Nmg)
+- [@video@Styling HTML tables with CSS - Web Design/UX Tutorial](https://www.youtube.com/watch?v=biI9OFH6Nmg)
