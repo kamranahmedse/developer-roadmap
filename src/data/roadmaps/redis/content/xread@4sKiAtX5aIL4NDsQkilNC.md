@@ -1,6 +1,6 @@
 # XREAD
 
-The XREAD command reads data from one or more streams, only returning entired with an ID greater than the last recieved ID.
+The XREAD command reads data from one or more streams, only returning entries with an ID greater than the last received ID.
 
 Learn more from the following resources:
 

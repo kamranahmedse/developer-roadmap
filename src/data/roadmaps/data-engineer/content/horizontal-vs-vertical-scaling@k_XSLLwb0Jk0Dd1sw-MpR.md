@@ -1,6 +1,6 @@
 # Horizontal vs Vertical Scaling
 
-Horizontal scaling is the process of adding more machines or nodes to a an existing pool in a system to distribute the workload and address increased load.
+Horizontal scaling is the process of adding more machines or nodes to an existing pool in a system to distribute the workload and address increased load.
 
 By contrast, vertical scaling involves increasing the computing power of individual machines in a system. This is achieved by adjusting or upgrading hardware components, such as CPU, RAM, and network speed.
 
