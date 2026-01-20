@@ -23,7 +23,7 @@ For new roadmaps, you can either:
 For the existing roadmaps, please follow the details listed for the nature of contribution:
 
 - **Fixing Typos** — Make your changes in the [roadmap markdown file](https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps) and submit a [PR](https://github.com/kamranahmedse/developer-roadmap/pulls).
-- **Adding or Removing Nodes** — Please open an [issue](https://github.com/kamranahmedse/developer-roadmap/issues) with your suggestion.
+- **Adding/Removing Nodes and Modifying Node Titles** — Please open an [issue](https://github.com/kamranahmedse/developer-roadmap/issues) with your suggestion.
 
 **Note:** Please note that our goal is **not to have the biggest list of items**. Our goal is to list items or skills most relevant today.
 
