@@ -1,6 +1,6 @@
 # Kubernetes
 
-Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. By orchestrating containers across multiple machines, Kubernetes ensures high availability and efficient resource utilization, making it a powerful tool for managing complex deployments.
+Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. By orchestrating containers across multiple machines, Kubernetes ensures high availability and efficient resource utilization, making it a powerful tool for managing complex deployments.
 
 Visit the following resources to learn more:
 

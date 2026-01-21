@@ -6,4 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@ApacheSpark](https://spark.apache.org/documentation.html)
 - [@article@Spark By Examples](https://sparkbyexamples.com)
-- [@feed@Explore top posts about Apache Spark](https://app.daily.dev/tags/spark?ref=roadmapsh)
+- [@article@First Steps in Machine Learning with Apache Spark](https://towardsdatascience.com/first-steps-in-machine-learning-with-apache-spark-672fe31799a3/)
+- [@article@Read articles about Apache Spark](https://towardsdatascience.com/tag/apache-spark/)
+- [@video@Apache Spark Architecture - EXPLAINED!](https://www.youtube.com/watch?v=iXVIPQEGZ9Y)
