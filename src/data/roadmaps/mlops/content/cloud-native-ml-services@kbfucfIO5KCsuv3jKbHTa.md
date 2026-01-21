@@ -6,4 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@AWS Sage Maker](https://aws.amazon.com/sagemaker/)
 - [@official@Azure ML](https://azure.microsoft.com/en-gb/products/machine-learning)
+- [@official@Vertex AI Platform](https://cloud.google.com/vertex-ai?hl=en)
+- [@article@What is cloud native?](https://cloud.google.com/learn/what-is-cloud-native?hl=en)
 - [@video@What is Cloud Native?](https://www.youtube.com/watch?v=fp9_ubiKqFU)

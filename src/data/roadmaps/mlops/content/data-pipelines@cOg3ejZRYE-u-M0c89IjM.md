@@ -5,4 +5,6 @@ Data pipelines are a series of automated processes that transport and transform 
 Visit the following resources to learn more:
 
 - [@article@What is a Data Pipeline? - IBM](https://www.ibm.com/topics/data-pipeline)
+- [@article@How to Build Data Pipelines for Machine Learning](https://towardsdatascience.com/how-to-build-data-pipelines-for-machine-learning-b97bbef050a5/)
+- [@article@Read Articles about Data Pipelines](https://towardsdatascience.com/tag/data-pipeline/)
 - [@video@What are Data Pipelines?](https://www.youtube.com/watch?v=oKixNpz6jNo)

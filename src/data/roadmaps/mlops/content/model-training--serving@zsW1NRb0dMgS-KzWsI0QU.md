@@ -4,7 +4,7 @@ Model Training refers to the phase in the Machine Learning (ML) pipeline where w
 
 Visit the following resources to learn more:
 
-- [@opensource@ML Deployment k8s Fast API](https://github.com/sayakpaul/ml-deployment-k8s-fastapi/)
-- [@article@MLOps Principles](https://ml-ops.org/content/mlops-principles)
-- [@article@ML deployment with k8s FastAPI, Building an ML app with FastAPI](https://dev.to/bravinsimiyu/beginner-guide-on-how-to-build-a-machine-learning-app-with-fastapi-part-ii-deploying-the-fastapi-application-to-kubernetes-4j6g)
+- [@opensource@What is model training?](https://www.ibm.com/think/topics/model-training)
+- [@article@What Is AI Model Training & Why Is It Important?](https://www.oracle.com/uk/artificial-intelligence/ai-model-training/)
 - [@article@KServe Tutorial](https://towardsdatascience.com/kserve-highly-scalable-machine-learning-deployment-with-kubernetes-aa7af0b71202)
+- [@video@Five Steps to Create a New AI Model](https://www.youtube.com/watch?v=jcgaNrC4ElU&t=172s)

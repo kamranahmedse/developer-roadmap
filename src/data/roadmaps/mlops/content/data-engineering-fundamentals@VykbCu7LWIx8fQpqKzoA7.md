@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit the Dedicated Data Engineer Roadmap](https://roadmap.sh/data-engineer)
 - [@article@Data Engineering 101](https://www.redpanda.com/guides/fundamentals-of-data-engineering)
+- [@article@How to Become a Data Engineer](https://towardsdatascience.com/how-to-become-a-data-engineer-c0319cb226c2/)
 - [@video@Fundamentals of Data Engineering](https://www.youtube.com/watch?v=mPSzL8Lurs0)
