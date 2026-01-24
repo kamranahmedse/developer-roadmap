@@ -6,6 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@What is CI/CD?](https://about.gitlab.com/topics/ci-cd/)
 - [@article@A Primer: Continuous Integration and Continuous Delivery (CI/CD)](https://thenewstack.io/a-primer-continuous-integration-and-continuous-delivery-ci-cd/)
-- [@feed@Articles about CI/CD](https://app.daily.dev/tags/version-control?ref=roadmapsh)
 - [@article@DevOps CI/CD Explained in 100 Seconds](https://thenewstack.io/category/ci-cd/)
 - [@video@Automate your Workflows with GitHub Actions](https://www.youtube.com/watch?v=scEDHsr3APg)
+- [@feed@Articles about CI/CD](https://app.daily.dev/tags/version-control?ref=roadmapsh)
