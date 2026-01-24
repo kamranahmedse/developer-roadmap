@@ -4,8 +4,8 @@ SQL, or Structured Query Language, is a standard language for managing and manip
 
 Visit the following resources to learn more:
 
-- [@official@Visit the Dedicated SQL Roadmap](https://roadmap.sh/sql)
 - [@course@Premium SQL Course - Roadmap](https://roadmap.sh/courses/sql)
+- [@official@Visit the Dedicated SQL Roadmap](https://roadmap.sh/sql)
 - [@article@SQL Tutorial](https://www.w3schools.com/sql/)
 - [@article@How I Learned SQL In 2 Weeks (From Scratch)](https://towardsdatascience.com/how-i-learned-sql-in-2-weeks-from-scratch-b78040f4e2c1/)
 - [@video@Full SQL Crash Course - Learn SQL in 90 Minutes](https://www.youtube.com/watch?v=7cIG41gjHB4)

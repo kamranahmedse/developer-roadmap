@@ -6,5 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@What is Data Lineage?](https://www.ibm.com/topics/data-lineage)
 - [@article@What is a Feature Store](https://www.snowflake.com/guides/what-feature-store-machine-learning/)
-- [@article@The Ultimate Guide To Data Lineage](https://www.montecarlodata.com/blog-data-lineage/)
-- [@video@What is Data Lineage?](https://www.youtube.com/watch?v=Jar5Rr_7TOU)
