@@ -1,9 +1,11 @@
-# Kuberenetes
+# Rolling Updates and Rollbacks
 
-Kubernetes, also known as K8s, is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It allows developers to focus on writing code while Kubernetes handles the underlying infrastructure. Kubernetes uses declarative configuration files to specify the desired state of an application, and can automatically scale applications based on demand, handle failovers, and manage networking and storage. It is widely used in cloud-native architectures that rely on microservices and containers for production deployments.
+Rolling updates and rollbacks are methods for updating applications without downtime. A rolling update gradually replaces old versions of an application with new ones, ensuring that some instances of the application are always available. If problems arise during the update, a rollback allows you to revert to the previous, stable version of the application.
 
 Visit the following resources to learn more:
 
-- [@official@Overview of Kubernetes](https://kubernetes.io/docs/concepts/overview/)
-- [@video@Kubernetes Explained in 100 Seconds](https://www.youtube.com/watch?v=PziYflu8cB8)
-- [@video@Kubernetes Tutorial for Beginners](https://www.youtube.com/watch?v=X48VuDVv0do&t=1s)
+- [@official@Performing a Rolling Update](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/)
+- [@article@How do you rollback deployments in Kubernetes?](https://learnkube.com/kubernetes-rollbacks)
+- [@video@Kubernetes Deployments: A Guide to the Rolling Update Deployment Strategy](https://semaphore.io/blog/kubernetes-rolling-update-deployment)
+- [@video@Kubernetes Rollbacks Tutorial](https://www.youtube.com/watch?v=9hK11Ov74U4)
+- [@video@Kubernetes Deployment strategies | Rolling Update Deployment | Argo rollout | ADAM](https://www.youtube.com/watch?v=cy3KXqgJOrE)
