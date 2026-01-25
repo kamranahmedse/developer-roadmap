@@ -159,13 +159,24 @@ app.get('/users', async (req, res) => {
 ```js
 const compression = require('compression');
 
-// Compress all responses
+// Basic compression (uses sensible defaults)
+app.use(compression());
+
+// With custom options
 app.use(compression({
   level: 6, // Compression level (1-9)
   threshold: 1024, // Only compress if > 1KB
+}));
+
+// Custom filter to skip compression for certain requests
+app.use(compression({
   filter: (req, res) => {
+    // Skip compression if client requests it
     if (req.headers['x-no-compression']) return false;
-    return compression.filter(req, res);
+    
+    // Check if content type is compressible
+    const contentType = res.getHeader('Content-Type') || '';
+    return /text|json|javascript|xml|css|html/.test(contentType);
   }
 }));
 ```
