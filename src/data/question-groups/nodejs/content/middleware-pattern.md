@@ -13,7 +13,7 @@ function middleware(req, res, next) {
 }
 
 // Using middleware
-const express = require('express');
+import express from 'express';
 const app = express();
 
 app.use(middleware);
@@ -151,6 +151,7 @@ function rateLimiter(limit = 100, windowMs = 60000) {
     const record = rateLimit.get(ip);
     
     if (now > record.resetTime) {
+      // Window expired - reset and clean up
       record.count = 1;
       record.resetTime = now + windowMs;
       return next();
@@ -162,6 +163,18 @@ function rateLimiter(limit = 100, windowMs = 60000) {
     
     record.count++;
     next();
+  };
+}
+
+// Cleanup old entries periodically (prevents memory leak)
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, record] of rateLimit.entries()) {
+    if (now > record.resetTime) {
+      rateLimit.delete(ip);
+    }
+  }
+}, 60000); // Clean up every minute
   };
 }
 

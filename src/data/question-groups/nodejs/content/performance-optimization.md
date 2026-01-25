@@ -22,7 +22,7 @@ app.get('/hash', (req, res) => {
 ### In-Memory Caching
 
 ```js
-const NodeCache = require('node-cache');
+import NodeCache from 'node-cache';
 const cache = new NodeCache({ stdTTL: 600 }); // 10 min TTL
 
 async function getUserData(userId) {
@@ -43,7 +43,7 @@ async function getUserData(userId) {
 ### Redis Caching
 
 ```js
-const Redis = require('ioredis');
+import Redis from 'ioredis';
 const redis = new Redis();
 
 async function getCachedData(key, fetchFn, ttl = 3600) {
@@ -134,7 +134,7 @@ app.get('/export', async (req, res) => {
 
 ```js
 // PostgreSQL with pg
-const { Pool } = require('pg');
+import { Pool } from 'pg';
 
 const pool = new Pool({
   max: 20, // Max connections in pool
@@ -157,7 +157,7 @@ app.get('/users', async (req, res) => {
 ## 6. Compression
 
 ```js
-const compression = require('compression');
+import compression from 'compression';
 
 // Basic compression (uses sensible defaults)
 app.use(compression());
@@ -174,9 +174,8 @@ app.use(compression({
     // Skip compression if client requests it
     if (req.headers['x-no-compression']) return false;
     
-    // Check if content type is compressible
-    const contentType = res.getHeader('Content-Type') || '';
-    return /text|json|javascript|xml|css|html/.test(contentType);
+    // Fallback to the default compression filter behavior
+    return compression.filter(req, res);
   }
 }));
 ```
@@ -184,8 +183,8 @@ app.use(compression({
 ## 7. Use Clustering
 
 ```js
-const cluster = require('cluster');
-const os = require('os');
+import cluster from 'node:cluster';
+import os from 'node:os';
 
 if (cluster.isPrimary) {
   const numCPUs = os.cpus().length;
@@ -199,7 +198,7 @@ if (cluster.isPrimary) {
     cluster.fork(); // Restart
   });
 } else {
-  require('./app'); // Your Express app
+  await import('./app.js'); // Your Express app
 }
 
 // Or use PM2 (recommended)
@@ -213,8 +212,8 @@ if (cluster.isPrimary) {
 const data = JSON.parse(largeJsonString);
 
 // ✅ Use streaming JSON parser
-const { parser } = require('stream-json');
-const { streamArray } = require('stream-json/streamers/StreamArray');
+import { parser } from 'stream-json';
+import { streamArray } from 'stream-json/streamers/StreamArray.js';
 
 fs.createReadStream('large.json')
   .pipe(parser())
@@ -224,7 +223,7 @@ fs.createReadStream('large.json')
   });
 
 // ✅ Use faster JSON libraries
-const fastJson = require('fast-json-stringify');
+import fastJson from 'fast-json-stringify';
 
 const stringify = fastJson({
   type: 'object',

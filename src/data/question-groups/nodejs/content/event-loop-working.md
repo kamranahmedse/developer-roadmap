@@ -21,7 +21,7 @@ Used internally by Node.js.
 Retrieves new I/O events and executes I/O-related callbacks. This is where most application code runs.
 
 ```js
-const fs = require('fs');
+import fs from 'node:fs';
 
 fs.readFile('file.txt', (err, data) => {
   console.log('File read - executed in poll phase');
@@ -65,6 +65,8 @@ process.nextTick(() => console.log('nextTick'));
 setImmediate(() => console.log('setImmediate'));
 
 // Inside I/O callback, setImmediate always runs first
+import fs from 'node:fs';
+
 fs.readFile('file.txt', () => {
   setImmediate(() => console.log('setImmediate'));
   setTimeout(() => console.log('setTimeout'), 0);

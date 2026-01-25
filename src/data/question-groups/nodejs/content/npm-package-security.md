@@ -220,7 +220,7 @@ jobs:
         run: npm audit --audit-level=high
         
       - name: Run Snyk
-        uses: snyk/actions/node@master
+        uses: snyk/actions/node@v1.1234.0  # Use specific version tag, not master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 ```

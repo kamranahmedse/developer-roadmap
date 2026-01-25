@@ -5,9 +5,11 @@ Node.js provides two main ways to utilize multiple CPU cores: the Cluster module
 Creates multiple processes (workers) that share the same server port. Each worker is a separate Node.js process with its own memory and V8 instance.
 
 ```js
-const cluster = require('cluster');
-const http = require('http');
-const numCPUs = require('os').cpus().length;
+import cluster from 'node:cluster';
+import http from 'node:http';
+import os from 'node:os';
+
+const numCPUs = os.cpus().length;
 
 if (cluster.isPrimary) {
   console.log(`Primary ${process.pid} is running`);
@@ -37,7 +39,7 @@ if (cluster.isPrimary) {
 Creates threads within the same process. Workers share memory (via SharedArrayBuffer) and are lighter than cluster workers.
 
 ```js
-const { Worker, isMainThread, parentPort, workerData } = require('worker_threads');
+import { Worker, isMainThread, parentPort, workerData } from 'node:worker_threads';
 
 if (isMainThread) {
   // Main thread
@@ -88,10 +90,15 @@ function heavyComputation(n) {
 Best for scaling HTTP servers across CPU cores:
 
 ```js
+import cluster from 'node:cluster';
+import os from 'node:os';
+
 // Use with PM2 (recommended for production)
 // pm2 start app.js -i max
 
 // Or manually with cluster
+const numCPUs = os.cpus().length;
+
 if (cluster.isPrimary) {
   for (let i = 0; i < numCPUs; i++) {
     cluster.fork();
@@ -107,7 +114,7 @@ Best for CPU-intensive operations without blocking the event loop:
 
 ```js
 // main.js
-const { Worker } = require('worker_threads');
+import { Worker } from 'node:worker_threads';
 
 function runWorker(data) {
   return new Promise((resolve, reject) => {
@@ -126,7 +133,7 @@ app.post('/process-image', async (req, res) => {
 
 ```js
 // worker.js
-const { workerData, parentPort } = require('worker_threads');
+import { workerData, parentPort } from 'node:worker_threads';
 
 // Heavy image processing
 const result = processImage(workerData.image);
@@ -137,7 +144,7 @@ parentPort.postMessage(result);
 
 ```js
 // Main thread
-const { Worker } = require('worker_threads');
+import { Worker } from 'node:worker_threads';
 
 const sharedBuffer = new SharedArrayBuffer(4);
 const sharedArray = new Int32Array(sharedBuffer);
@@ -150,7 +157,7 @@ const worker = new Worker('./worker.js', {
 Atomics.store(sharedArray, 0, 100);
 
 // Worker thread
-const { workerData } = require('worker_threads');
+import { workerData } from 'node:worker_threads';
 const sharedArray = new Int32Array(workerData.sharedBuffer);
 console.log(Atomics.load(sharedArray, 0)); // 100
 ```

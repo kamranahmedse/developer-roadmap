@@ -62,7 +62,7 @@ test('callback is called with data', (done) => {
 
 ```js
 // userService.js
-const axios = require('axios');
+import axios from 'axios';
 
 async function getUser(id) {
   const response = await axios.get(`/api/users/${id}`);
@@ -93,7 +93,7 @@ test('getUser handles errors', async () => {
 
 ```js
 // userRepository.js
-const db = require('./db');
+import db from './db.js';
 
 async function findUserById(id) {
   return db.query('SELECT * FROM users WHERE id = ?', [id]);
@@ -119,7 +119,7 @@ test('findUserById queries database', async () => {
 ## Testing with Mocha
 
 ```js
-const { expect } = require('chai');
+import { expect } from 'chai';
 
 describe('User API', () => {
   // Async/Await
@@ -157,7 +157,13 @@ function delayedGreeting(callback) {
 }
 
 // Test with fake timers
-jest.useFakeTimers();
+beforeEach(() => {
+  jest.useFakeTimers();
+});
+
+afterEach(() => {
+  jest.useRealTimers();
+});
 
 test('calls callback after 1 second', () => {
   const callback = jest.fn();
@@ -170,14 +176,12 @@ test('calls callback after 1 second', () => {
   
   expect(callback).toHaveBeenCalledWith('Hello!');
 });
-
-jest.useRealTimers();
 ```
 
 ## Testing Event Emitters
 
 ```js
-const EventEmitter = require('events');
+import EventEmitter from 'node:events';
 
 class DataProcessor extends EventEmitter {
   async process(data) {
@@ -208,8 +212,8 @@ test('emits events during processing', async () => {
 ## Testing HTTP Endpoints
 
 ```js
-const request = require('supertest');
-const app = require('./app');
+import request from 'supertest';
+import app from './app.js';
 
 describe('GET /api/users', () => {
   it('returns list of users', async () => {
@@ -221,7 +225,9 @@ describe('GET /api/users', () => {
     expect(response.body).toBeInstanceOf(Array);
     expect(response.body.length).toBeGreaterThan(0);
   });
-  
+});
+
+describe('POST /api/users', () => {
   it('creates a new user', async () => {
     const newUser = { name: 'John', email: 'john@example.com' };
     

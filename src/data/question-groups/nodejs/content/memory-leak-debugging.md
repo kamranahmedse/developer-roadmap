@@ -37,7 +37,7 @@ function processRequest(id, data) {
 }
 
 // ✅ Fixed: Use LRU cache with size limit
-const LRU = require('lru-cache');
+import LRU from 'lru-cache';
 const cache = new LRU({ max: 500 });
 
 function processRequest(id, data) {
@@ -118,12 +118,10 @@ setInterval(() => {
 ### 3. Heap Snapshots Programmatically
 
 ```js
-const v8 = require('v8');
-const fs = require('fs');
+import v8 from 'node:v8';
 
 function takeHeapSnapshot() {
   const snapshotFile = `heap-${Date.now()}.heapsnapshot`;
-  const stream = fs.createWriteStream(snapshotFile);
   v8.writeHeapSnapshot(snapshotFile);
   console.log(`Heap snapshot written to ${snapshotFile}`);
 }

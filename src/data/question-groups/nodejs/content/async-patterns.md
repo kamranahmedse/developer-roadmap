@@ -5,7 +5,7 @@ Node.js provides multiple ways to handle asynchronous operations. Understanding 
 The original async pattern in Node.js. Error-first callbacks are the convention.
 
 ```js
-const fs = require('fs');
+import fs from 'node:fs';
 
 // Error-first callback pattern
 fs.readFile('file.txt', 'utf8', (err, data) => {
@@ -31,7 +31,7 @@ fs.readFile('file1.txt', (err, data1) => {
 Cleaner chaining and better error handling than callbacks.
 
 ```js
-const fs = require('fs').promises;
+import fs from 'node:fs/promises';
 
 // Promise chain
 fs.readFile('file1.txt', 'utf8')
@@ -57,8 +57,9 @@ function delay(ms) {
 }
 
 // Promisify callback functions
-const { promisify } = require('util');
-const readFileAsync = promisify(fs.readFile);
+import { promisify } from 'node:util';
+import fsCallback from 'node:fs'; // callback-based API
+const readFileAsync = promisify(fsCallback.readFile);
 ```
 
 ## 3. Async/Await
@@ -66,7 +67,7 @@ const readFileAsync = promisify(fs.readFile);
 Syntactic sugar over Promises. Most readable and maintainable.
 
 ```js
-const fs = require('fs').promises;
+import fs from 'node:fs/promises';
 
 async function readFiles() {
   try {

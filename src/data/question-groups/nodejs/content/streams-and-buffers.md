@@ -6,7 +6,7 @@ Streams are collections of data that might not be available all at once and don'
 Data source that you can read from.
 
 ```js
-const fs = require('fs');
+import fs from 'node:fs';
 
 const readable = fs.createReadStream('large-file.txt', {
   highWaterMark: 16 * 1024 // 16KB chunks
@@ -40,7 +40,7 @@ writable.on('finish', () => {
 Both readable and writable (e.g., TCP sockets).
 
 ```js
-const net = require('net');
+import net from 'node:net';
 
 const server = net.createServer((socket) => {
   // socket is a duplex stream
@@ -54,7 +54,7 @@ const server = net.createServer((socket) => {
 Modify data as it passes through.
 
 ```js
-const { Transform } = require('stream');
+import { Transform } from 'node:stream';
 
 const upperCase = new Transform({
   transform(chunk, encoding, callback) {
@@ -62,6 +62,7 @@ const upperCase = new Transform({
     callback();
   }
 });
+```
 
 process.stdin.pipe(upperCase).pipe(process.stdout);
 ```
@@ -69,6 +70,8 @@ process.stdin.pipe(upperCase).pipe(process.stdout);
 ## Buffer vs Reading Entire File
 
 ```js
+import fs from 'node:fs';
+
 // ❌ Bad: Loads entire file in memory
 const data = fs.readFileSync('large-file.txt');
 console.log(data.length); // Could crash with large files
@@ -89,7 +92,8 @@ stream.on('end', () => {
 Chain streams together for powerful data processing:
 
 ```js
-const zlib = require('zlib');
+import fs from 'node:fs';
+import zlib from 'node:zlib';
 
 // Compress a file using streams
 fs.createReadStream('input.txt')
@@ -103,6 +107,8 @@ fs.createReadStream('input.txt')
 When writable stream can't keep up with readable stream:
 
 ```js
+import fs from 'node:fs';
+
 const readable = fs.createReadStream('source.txt');
 const writable = fs.createWriteStream('dest.txt');
 

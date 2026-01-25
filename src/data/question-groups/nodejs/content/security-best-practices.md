@@ -50,14 +50,14 @@ app.get('/profile', (req, res) => {
 });
 
 // ✅ Escape HTML entities
-const escapeHtml = require('escape-html');
+import escapeHtml from 'escape-html';
 
 app.get('/profile', (req, res) => {
   res.send(`<h1>Hello ${escapeHtml(req.query.name)}</h1>`);
 });
 
 // ✅ Use Content Security Policy
-const helmet = require('helmet');
+import helmet from 'helmet';
 app.use(helmet.contentSecurityPolicy({
   directives: {
     defaultSrc: ["'self'"],
@@ -71,7 +71,8 @@ app.use(helmet.contentSecurityPolicy({
 Helmet sets various HTTP headers to secure your app.
 
 ```js
-const helmet = require('helmet');
+import helmet from 'helmet';
+import express from 'express';
 const app = express();
 
 // Use all default protections
@@ -89,7 +90,7 @@ app.use(helmet.frameguard({ action: 'deny' }));
 Prevent brute force and DDoS attacks.
 
 ```js
-const rateLimit = require('express-rate-limit');
+import rateLimit from 'express-rate-limit';
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -112,8 +113,8 @@ app.use('/api/login', authLimiter);
 ## 6. Secure Authentication
 
 ```js
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 
 // Hash passwords
 const hashPassword = async (password) => {
@@ -147,7 +148,7 @@ res.cookie('token', token, {
 ## 7. Input Validation
 
 ```js
-const Joi = require('joi');
+import Joi from 'joi';
 
 const userSchema = Joi.object({
   username: Joi.string().alphanum().min(3).max(30).required(),
@@ -172,7 +173,7 @@ app.post('/register', async (req, res) => {
 const JWT_SECRET = 'mysecret123';
 
 // ✅ Use environment variables
-require('dotenv').config();
+import 'dotenv/config';
 const JWT_SECRET = process.env.JWT_SECRET;
 
 // ✅ Validate required env vars at startup
@@ -200,7 +201,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Secure session configuration
-const session = require('express-session');
+import session from 'express-session';
 
 app.use(session({
   secret: process.env.SESSION_SECRET,
