@@ -1,0 +1,3 @@
+# Transactions
+
+Transactions are a sequence of operations performed as a single logical unit of work. They ensure data integrity by treating a series of database operations as an "all or nothing" proposition. If any operation within the transaction fails, the entire transaction is rolled back, reverting the database to its original state before the transaction began. This prevents partial updates and maintains consistency.

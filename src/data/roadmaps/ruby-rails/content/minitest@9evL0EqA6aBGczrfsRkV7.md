@@ -1,0 +1,3 @@
+# Minitest
+
+Minitest is a complete testing suite for Ruby, providing support for test-driven development (TDD), behavior-driven development (BDD), mocking, and benchmarking. It's a lightweight and fast testing framework that comes bundled with Ruby, making it readily available for use in Rails applications. Minitest allows developers to write various types of tests, including unit tests, integration tests, and system tests, to ensure the quality and reliability of their code.

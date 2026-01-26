@@ -1,0 +1,3 @@
+# Sessions in Rails Controllers
+
+Beyond processing requests and rendering views, controllers also provide a mechanism for maintaining user sessions. Sessions allow you to store data related to a specific user across multiple requests, enabling features like login persistence, shopping carts, and personalized experiences. This data is typically stored on the server and associated with a unique session ID that is sent to the client's browser as a cookie.

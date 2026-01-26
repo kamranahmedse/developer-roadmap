@@ -1,0 +1,3 @@
+# Mailbox and Mailer
+
+The Rails Mailbox and Mailer provide a structured way to handle incoming and outgoing emails. Mailers are used to compose and send emails from your application, defining email content, recipients, and headers. Mailboxes, introduced more recently, route incoming emails to specific controllers or models within your application, allowing you to process and respond to emails programmatically.

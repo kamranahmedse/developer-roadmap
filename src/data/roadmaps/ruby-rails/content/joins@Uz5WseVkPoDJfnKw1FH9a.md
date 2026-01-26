@@ -1,0 +1,3 @@
+# Joins in Active Record
+
+Joins in Active Record allow you to combine data from multiple database tables based on related columns. This is essential for retrieving information that spans across different tables, such as fetching a user's posts or a product's categories. By specifying the relationships between your models, Active Record simplifies the process of writing complex SQL queries, enabling you to efficiently retrieve and manipulate related data.

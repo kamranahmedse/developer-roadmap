@@ -1,0 +1,3 @@
+# Active Record
+
+Active Record is an Object-Relational Mapping (ORM) system. It serves as the interface between your Ruby on Rails application and the underlying database. Active Record provides a way to interact with database tables as if they were Ruby objects, allowing you to perform create, read, update, and delete (CRUD) operations on your data using intuitive methods instead of writing raw SQL queries.

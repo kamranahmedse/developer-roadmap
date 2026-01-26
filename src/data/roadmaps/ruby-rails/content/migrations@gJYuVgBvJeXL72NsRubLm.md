@@ -1,0 +1,3 @@
+# Migrations
+
+Migrations are a way to evolve your database schema over time in a consistent and manageable way. They are Ruby files that define changes to your database structure, such as creating tables, adding columns, or modifying indexes. These files allow you to track and apply changes to your database schema, making it easy to collaborate with other developers and deploy your application to different environments.

@@ -1,0 +1,3 @@
+# ViewComponent
+
+ViewComponent is a framework for building reusable, testable & encapsulated UI components in Ruby on Rails. It encourages a component-based architecture within your Rails application, allowing you to define UI elements as Ruby classes with associated templates, similar to components in frameworks like React or Vue. This approach promotes better organization, maintainability, and reusability of your view code.

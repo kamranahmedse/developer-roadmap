@@ -1,0 +1,3 @@
+# Layouts and Yield in Rails Views
+
+Layouts provide a consistent structure for your application's views. They are templates that define the overall look and feel of a page, including elements like headers, footers, and navigation. The `yield` keyword acts as a placeholder within the layout, indicating where the content from individual views should be inserted. This allows you to reuse common elements across multiple pages while still displaying unique content for each.

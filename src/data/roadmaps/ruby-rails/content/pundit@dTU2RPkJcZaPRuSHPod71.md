@@ -1,0 +1,3 @@
+# Pundit
+
+Pundit is a Ruby gem that provides a straightforward way to implement authorization in your Ruby on Rails applications. It focuses on defining authorization rules using plain Ruby objects (policies) that determine whether a given user is allowed to perform a specific action on a particular resource. This approach promotes clean, maintainable, and testable authorization logic within your application.

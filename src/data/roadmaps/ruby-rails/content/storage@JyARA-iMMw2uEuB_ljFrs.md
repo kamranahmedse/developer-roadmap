@@ -1,0 +1,3 @@
+# Storage in Ruby on Rails
+
+Rails itself doesn't directly manage file storage; instead, it relies on external services or libraries to handle the actual saving and retrieval of these files. This allows you to store files locally on your server, or more commonly, in cloud storage services like Amazon S3, Google Cloud Storage, or Azure Blob Storage. These services offer scalability, reliability, and often lower costs compared to managing storage yourself.

@@ -1,0 +1,3 @@
+# Logging
+
+Logging involves recording events that occur within an application, such as user actions, errors, and system information. This recorded data is typically stored in log files, providing a valuable resource for monitoring application behavior, diagnosing issues, and understanding performance. Rails provides a built-in logging framework that simplifies the process of generating and managing these logs.

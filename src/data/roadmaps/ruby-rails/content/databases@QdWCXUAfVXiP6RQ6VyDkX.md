@@ -1,0 +1,3 @@
+# Database
+
+Databases are structured collections of data, organized for efficient storage, retrieval, and management. Active Record is Rails' ORM (Object-Relational Mapping) layer, providing an interface between your Ruby code and the database. It allows you to interact with database tables as if they were Ruby objects, simplifying database operations like creating, reading, updating, and deleting records.

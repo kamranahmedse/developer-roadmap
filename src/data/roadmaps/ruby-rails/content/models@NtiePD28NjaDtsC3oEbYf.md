@@ -1,0 +1,3 @@
+# Models
+
+Models are Ruby classes that represent data and business logic. They interact with the database to perform CRUD (Create, Read, Update, Delete) operations on the data. Models provide a structured way to manage data, enforce validations, and define relationships between different data entities within an application. They are a core component of the Model-View-Controller (MVC) architectural pattern.

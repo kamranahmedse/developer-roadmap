@@ -1,0 +1,3 @@
+# Setting up Ruby on Rails
+
+Setting up Ruby on Rails involves installing the necessary software and configuring your environment to develop and run Rails applications. This typically includes installing Ruby, the Rails gem, a database system (like PostgreSQL or MySQL), and any other dependencies required for your project. Once these components are installed, you can create a new Rails application using the `rails new` command and start building your web application.

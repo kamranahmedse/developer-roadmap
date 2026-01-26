@@ -1,0 +1,3 @@
+# Ordering
+
+Ordering in Active Record allows you to specify the sequence in which records are retrieved from the database. This is achieved by using the `order` method, which accepts either a string representing the SQL order clause or a hash/symbol representing the attribute(s) to order by and their direction (ascending or descending). Ordering ensures that data is presented in a predictable and meaningful way, enhancing the user experience and facilitating data analysis.
