@@ -1,0 +1,3 @@
+# How the Web Works
+
+The web operates through a client-server model where a client (like a web browser) sends a request to a server, and the server processes that request and sends back a response. This interaction typically involves HTTP (Hypertext Transfer Protocol) for communication, URLs (Uniform Resource Locators) to identify resources, and HTML (Hypertext Markup Language) to structure the content displayed in the browser. The server hosts the website's files and logic, while the client interprets and renders the received information for the user.

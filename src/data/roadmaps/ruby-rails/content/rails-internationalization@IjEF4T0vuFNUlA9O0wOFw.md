@@ -1,0 +1,3 @@
+# Rails Internationalization
+
+Internationalization (I18n) is the process of designing and developing applications that can be adapted to various languages and regions without engineering changes. It involves extracting text and other locale-specific data from the application's code and storing it in separate files, allowing the application to be translated and formatted for different locales. This enables users to interact with the application in their preferred language and cultural context.

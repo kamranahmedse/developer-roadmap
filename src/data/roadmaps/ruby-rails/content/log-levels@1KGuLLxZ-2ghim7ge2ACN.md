@@ -1,0 +1,3 @@
+# Log Levels
+
+Log levels in Rails are categories that indicate the severity of a log message. They help you filter and prioritize information when debugging or monitoring your application. Common log levels, in increasing order of severity, are: `debug`, `info`, `warn`, `error`, and `fatal`. Each level allows you to control the amount of detail recorded, from verbose debugging information to critical errors that require immediate attention.

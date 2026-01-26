@@ -1,0 +1,3 @@
+# CSRF Protection
+
+Cross-Site Request Forgery (CSRF) is a web security vulnerability that allows an attacker to trick a user's browser into executing unwanted actions on a trusted site when the user is authenticated. CSRF protection involves adding a unique, unpredictable token to each form submitted by the user. This token is then verified on the server-side to ensure that the request originated from the legitimate application and not a malicious source.

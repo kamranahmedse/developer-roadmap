@@ -1,0 +1,3 @@
+# Capybara
+
+Capybara is a Ruby gem that simplifies acceptance testing for web applications. It simulates how a user interacts with your application through a browser, allowing you to write tests that verify the behavior of your application from an end-user perspective. It provides a clean and easy-to-use API for interacting with elements on a web page, such as clicking links, filling in forms, and asserting the presence of specific content.

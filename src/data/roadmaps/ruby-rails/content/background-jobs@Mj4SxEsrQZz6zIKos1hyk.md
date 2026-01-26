@@ -1,0 +1,3 @@
+# Background Jobs
+
+Background jobs are tasks that are executed asynchronously, meaning they run separately from the main application process. This allows your web application to remain responsive and handle user requests quickly, while time-consuming or resource-intensive tasks are processed in the background. Common examples include sending emails, processing large data sets, or generating reports.

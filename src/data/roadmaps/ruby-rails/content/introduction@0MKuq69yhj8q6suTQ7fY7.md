@@ -1,0 +1,3 @@
+# Introduction to Ruby on Rails
+
+Ruby on Rails, often shortened to Rails, is a server-side web application framework written in the Ruby programming language. It provides a structure for databases, web services, and web pages, emphasizing the use of convention over configuration (CoC) and the don't repeat yourself (DRY) principles. Rails aims to make web application development easier by providing tools and structures that developers can use to quickly build robust and maintainable web applications.

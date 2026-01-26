@@ -1,0 +1,3 @@
+# Kamal
+
+Kamal is a deployment tool created by 37signals (the creators of Ruby on Rails) designed to simplify the process of deploying web applications to one or more servers. It focuses on using Docker containers and modern deployment strategies like zero-downtime deployments, making it easier to manage and scale your Rails applications in production environments. It aims to provide a streamlined alternative to more complex deployment solutions.

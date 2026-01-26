@@ -1,0 +1,3 @@
+# Strong Parameters
+
+Controller parameters are the data sent from a client (like a web browser) to your Rails application, typically through forms or API requests. These parameters are accessible within your controller actions. Strong parameters are a security feature in Rails that helps protect your application from mass assignment vulnerabilities. They work by requiring you to explicitly permit which parameters are allowed to be used when creating or updating database records, effectively filtering out any unexpected or malicious data that might be included in the request.

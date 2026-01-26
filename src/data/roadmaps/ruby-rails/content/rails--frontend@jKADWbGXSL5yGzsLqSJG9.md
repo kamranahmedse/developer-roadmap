@@ -1,0 +1,3 @@
+# Rails & Frontend
+
+Rails, while primarily a backend framework, often interacts with frontend technologies to create complete web applications. It handles the server-side logic, database interactions, and API endpoints, while the frontend, built with technologies like JavaScript, HTML, and CSS, focuses on the user interface and user experience. The frontend consumes data from the Rails backend and presents it to the user in an interactive and visually appealing way.

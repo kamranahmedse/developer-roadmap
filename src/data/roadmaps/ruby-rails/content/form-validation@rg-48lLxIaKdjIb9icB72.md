@@ -1,0 +1,3 @@
+# Form Validation
+
+Form validation is the process of ensuring that the data submitted through a form meets specific requirements before it's saved to the database. This helps prevent errors, maintain data integrity, and provide a better user experience. Rails provides built-in methods and helpers to easily define and enforce these validation rules directly within your models, such as checking for presence, format, uniqueness, or custom criteria.

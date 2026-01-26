@@ -1,0 +1,3 @@
+# Validations
+
+Validations are rules that you define for your models to ensure that only valid data is saved into your database. They help maintain data integrity by checking if attributes meet specific criteria, such as presence, format, uniqueness, or custom conditions, before a record is created or updated. If a validation fails, the record will not be saved, and an error message will be added to the object's `errors` collection.

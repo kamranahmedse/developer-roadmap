@@ -1,0 +1,3 @@
+# form_with
+
+`form_with` is a helper method used to create HTML forms. It simplifies the process of generating the necessary HTML tags for form elements, handling attributes like the form's action URL, HTTP method (GET, POST, PUT, PATCH, DELETE), and CSRF protection. It's the recommended way to build forms in Rails 5.1 and later, offering a more streamlined and flexible approach compared to older form helpers.

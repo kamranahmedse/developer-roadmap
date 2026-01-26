@@ -1,0 +1,3 @@
+# Basic Queries in Active Record
+
+Active Record provides a powerful and intuitive interface for interacting with databases in Rails applications. Basic queries allow you to retrieve data from your database tables using simple and expressive methods. These methods enable you to find records based on various criteria, such as specific IDs, attribute values, or more complex conditions, forming the foundation for data retrieval operations within your Rails application.

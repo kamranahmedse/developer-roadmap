@@ -1,0 +1,3 @@
+# Assets Pipeline
+
+The Assets Pipeline in Rails provides a structured way to manage and pre-process assets like stylesheets, JavaScript files, and images. It bundles, minifies, and compresses these assets to improve website performance by reducing the number of requests and the size of the files that need to be downloaded by the browser. It also allows you to use features like automatic CSS prefixing and CoffeeScript compilation.

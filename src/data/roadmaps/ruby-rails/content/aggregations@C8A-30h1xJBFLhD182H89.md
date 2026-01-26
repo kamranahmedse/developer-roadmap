@@ -1,0 +1,3 @@
+# Aggregations
+
+Aggregations in Active Record allow you to derive summary information from your database records. This involves performing calculations like finding the average, minimum, maximum, or sum of values across a set of records, or counting the number of records that meet certain criteria. These calculations are typically performed directly within the database for efficiency and can be easily accessed through your Rails models.

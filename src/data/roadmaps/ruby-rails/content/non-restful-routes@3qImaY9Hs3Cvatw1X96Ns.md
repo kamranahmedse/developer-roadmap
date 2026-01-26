@@ -1,0 +1,3 @@
+# Non-RESTful Routes
+
+Non-RESTful routes are custom routes that deviate from the standard RESTful conventions (like `index`, `show`, `create`, `update`, `destroy`). They are used when an action doesn't naturally map to a typical CRUD operation or when you need a more descriptive or specific URL for a particular function in your application. These routes allow you to define custom paths and HTTP verbs to connect to specific controller actions.

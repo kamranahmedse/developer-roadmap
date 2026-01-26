@@ -1,0 +1,3 @@
+# ERB Templates
+
+ERB (Embedded Ruby) templates are a core component of Rails views, allowing you to embed Ruby code directly within your HTML markup. This enables dynamic content generation, where data from your Rails application can be seamlessly integrated into the presentation layer. ERB templates use special tags to denote Ruby code, which is then executed when the view is rendered, producing the final HTML output sent to the user's browser.

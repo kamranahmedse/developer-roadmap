@@ -1,0 +1,3 @@
+# App Directory
+
+The `app` directory in a Rails application is the heart of your project, containing the core logic and components that define its behavior. It's where you'll find the code responsible for handling user requests, interacting with the database, and rendering views. This directory is organized into subdirectories, each dedicated to a specific aspect of the application, such as models, views, and controllers.

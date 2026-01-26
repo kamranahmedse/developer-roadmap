@@ -1,0 +1,3 @@
+# MySQL in Rails
+
+MySQL is a popular open-source relational database management system (RDBMS). In a Ruby on Rails application, MySQL serves as a persistent data store for your application's information, such as user accounts, product details, and blog posts. Rails leverages Active Record, an Object-Relational Mapping (ORM) framework, to interact with MySQL databases, allowing developers to work with data using Ruby objects instead of writing raw SQL queries.

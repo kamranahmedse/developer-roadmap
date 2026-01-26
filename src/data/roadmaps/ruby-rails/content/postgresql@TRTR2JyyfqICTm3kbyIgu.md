@@ -1,0 +1,3 @@
+# PostgreSQL in Rails
+
+PostgreSQL is an open-source, object-relational database system known for its reliability, feature robustness, and adherence to standards. It's a popular choice for Rails applications due to its advanced data types, support for complex queries, and strong community support. Rails seamlessly integrates with PostgreSQL through Active Record, providing an abstraction layer for database interactions.

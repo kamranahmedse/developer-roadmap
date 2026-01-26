@@ -1,0 +1,3 @@
+# Customizing Routes
+
+Customizing routes allows developers to define specific URL patterns and map them to particular controller actions. This provides flexibility in designing user-friendly and SEO-optimized URLs, deviating from the default Rails conventions. By modifying the `routes.rb` file, you can create custom routes that cater to the unique needs of your application, including specifying HTTP methods, defining route parameters, and using regular expressions for pattern matching.

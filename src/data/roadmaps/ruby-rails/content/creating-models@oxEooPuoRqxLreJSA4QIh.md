@@ -1,0 +1,3 @@
+# Creating Models
+
+Models in Ruby on Rails represent the data and business logic of your application. They are Ruby classes that inherit from `ApplicationRecord` and typically correspond to tables in your database. Creating a model involves defining its attributes (columns in the database table) and any associated validations, callbacks, and relationships with other models. This process allows you to interact with your database in an object-oriented way, making data management more intuitive and efficient.

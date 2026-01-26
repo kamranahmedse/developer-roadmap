@@ -1,0 +1,3 @@
+# OmniAuth
+
+OmniAuth is a flexible authentication system that allows users to sign in to your application using third-party providers like Google, Facebook, Twitter, and more. It provides a standardized way to handle the authentication process, abstracting away the complexities of dealing with different authentication protocols and APIs. This simplifies the integration of social login and other external authentication methods into your Ruby on Rails application.

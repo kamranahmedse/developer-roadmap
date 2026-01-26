@@ -1,0 +1,3 @@
+# Query Optimization
+
+Query optimization focuses on improving the efficiency of database queries to reduce execution time and resource consumption. This involves techniques like eager loading to minimize the number of queries, using indexes to speed up data retrieval, and writing efficient query conditions to filter data effectively. The goal is to retrieve the necessary data as quickly as possible, improving the overall performance of your Rails application.

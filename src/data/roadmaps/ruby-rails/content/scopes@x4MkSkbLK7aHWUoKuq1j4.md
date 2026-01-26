@@ -1,0 +1,3 @@
+# Scopes
+
+Scopes in Rails models are pre-defined database queries that you can reuse throughout your application. They allow you to encapsulate common query logic, making your code cleaner, more readable, and easier to maintain. Scopes can be simple, like finding all active users, or more complex, involving joins and conditions. They are defined within the model and can be chained together to create more specific queries.

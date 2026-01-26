@@ -1,0 +1,3 @@
+# Rails Generators
+
+Rails Generators are powerful tools built into the Rails framework that automate the creation of files and directories needed for various parts of your application. They streamline development by providing pre-built templates for models, controllers, views, migrations, and more, reducing boilerplate code and ensuring consistency across your project. Using generators helps you quickly scaffold out the basic structure of your application components, allowing you to focus on the specific logic and functionality you need to implement.
