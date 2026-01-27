@@ -2190,7 +2190,7 @@
       "draggable": true,
       "deletable": true,
       "data": {
-        "label": "NoSQL Databsases",
+        "label": "NoSQL Databases",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
