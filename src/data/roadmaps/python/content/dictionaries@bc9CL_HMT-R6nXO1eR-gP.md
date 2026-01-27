@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Dictionaries in Python](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 - [@article@Dictionaries in Python](https://realpython.com/python-dicts/)
+- [@article@Hashmaps in Python: Master Implementation and Use Cases](https://roadmap.sh/python/hashmap)
