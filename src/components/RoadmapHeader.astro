@@ -15,6 +15,7 @@ import { ShareRoadmapButton } from './ShareRoadmapButton';
 import { TabLink } from './TabLink';
 import { PersonalizedRoadmap } from './PersonalizedRoadmap/PersonalizedRoadmap';
 import RoadmapFeedbackAlert from './Roadmaps/RoadmapFeedbackAlert.astro';
+import {markdownToHtml} from '../lib/markdown';
 
 export interface Props {
   title: string;
@@ -116,8 +117,8 @@ const hasProjects = projectCount > 0;
       <h1 class='mb-0.5 text-2xl font-bold sm:mb-3.5 sm:text-5xl'>
         {title}
       </h1>
-      <p class='text-sm text-balance text-gray-500 sm:text-lg'>
-        {description}
+      <p class='text-sm text-balance text-gray-500 sm:text-lg' set:html={markdownToHtml(description)}>
+        
       </p>
     </div>
 
