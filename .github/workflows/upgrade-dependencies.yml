@@ -9,10 +9,10 @@ jobs:
   upgrade-deps:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup Node.js Version 20 (LTS)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 20
 
@@ -28,7 +28,7 @@ jobs:
           pnpm install --lockfile-only
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           delete-branch: false
           branch: "update-deps"
