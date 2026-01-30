@@ -59,7 +59,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
 - [Engineering Manager Roadmap](https://roadmap.sh/engineering-manager)
 - [QA Roadmap](https://roadmap.sh/qa)
-- [Python Roadmap](https://roadmap.sh/python) 
+- [Python Roadmap](https://roadmap.sh/python)
 - [Django Roadmap](https://roadmap.sh/django)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [Game Developer Roadmap](https://roadmap.sh/game-developer) / [Server Side Game Developer](https://roadmap.sh/server-side-game-developer)
@@ -139,6 +139,7 @@ Clone the repository, install the dependencies and start the application
 ```bash
 git clone git@github.com:kamranahmedse/developer-roadmap.git --depth 1
 cd developer-roadmap
+cp .env.example .env
 pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
 pnpm install
 ```
