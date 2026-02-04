@@ -5,8 +5,8 @@ Prompt engineering is the process of crafting effective inputs (prompts) to guid
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
+- [@course@Introduction to Prompt Engineering](https://learnprompting.org/courses/intro-to-prompt-engineering)
 - [@article@What is Prompt Engineering? A Detailed Guide For 2026](https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication)
 - [@article@Prompting Techniques](https://www.promptingguide.ai/techniques)
 - [@article@Prompt engineering techniques](https://www.ibm.com/think/topics/prompt-engineering-techniques)
-- [@course@Introduction to Prompt Engineering](https://learnprompting.org/courses/intro-to-prompt-engineering)
 - [@video@What is Prompt Engineering?](https://www.youtube.com/watch?v=nf1e-55KKbg)
