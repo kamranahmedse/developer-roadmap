@@ -1,4 +1,4 @@
-# AI Agents in AI-Assisted Coding
+# AI Agents
 
 AI agents are autonomous programs designed to help developers write code more efficiently. These agents can automate repetitive tasks, suggest code completions, identify errors, and even generate entire code blocks based on natural language descriptions or existing code patterns. They leverage machine learning models to understand code syntax, semantics, and context, enabling them to provide intelligent and relevant assistance throughout the software development lifecycle.
 

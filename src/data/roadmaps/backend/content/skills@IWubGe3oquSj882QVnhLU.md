@@ -1,4 +1,4 @@
-# Skills for AI Coding Assistants
+# Skills
 
 AI coding assistants can now leverage "skills" – pre-defined functions or tools exposed to the AI that allow it to perform specific actions. Instead of relying solely on their internal knowledge and large language models, these assistants can call upon these skills (like running tests, deploying code, or querying databases) when needed. This allows the AI to interact with the development environment and execute tasks directly, improving accuracy and efficiency, all while minimizing the context window required for each action.
 
