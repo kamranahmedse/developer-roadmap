@@ -7,4 +7,4 @@ This API is designed for building agents and applications that need conversation
 Visit the following resources to learn more:
 
 - [@official@Response API Reference](https://platform.openai.com/docs/api-reference/responses)
-- [@video@Introduction to the OpenAI Response API](https://www.youtube.com/watch?v=hNr5EebepYs)
+- [@video@Build Hour: Responses API](https://www.youtube.com/watch?v=hNr5EebepYs)
