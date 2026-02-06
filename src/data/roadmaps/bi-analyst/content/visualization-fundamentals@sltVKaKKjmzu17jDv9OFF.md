@@ -4,7 +4,7 @@ Data visualization is the graphical representation of information and data. By u
 
 Visit the following resources to learn more:
 
-- [@article@What Is Data Visualization? Definition, Examples, And Learning Resources](https://www.tableau.com/visualization/what-is-data-visualization)
-- [@article@Fundamentals of Data Visualization](https://clauswilke.com/dataviz/introduction.html)
 - [@book@The Ultimate Data Visualization Handbook for Designers](https://uxmag.medium.com/the-ultimate-data-visualization-handbook-for-designers-efa7d6e0b6fe)
 - [@course@Business Intelligence Fundamentals](https://www.simplilearn.com/free-business-intelligence-course-online-skillup)
+- [@article@What Is Data Visualization? Definition, Examples, And Learning Resources](https://www.tableau.com/visualization/what-is-data-visualization)
+- [@article@Fundamentals of Data Visualization](https://clauswilke.com/dataviz/introduction.html)

@@ -4,5 +4,5 @@ Advanced SQL queries go beyond basic data retrieval and manipulation. They invol
 
 Visit the following resources to learn more:
 
-- [@article@25 Advanced SQL Query Examples](https://learnsql.com/blog/25-advanced-sql-query-examples/)
 - [@official@SQL Roadmap](https://roadmap.sh/sql)
+- [@article@25 Advanced SQL Query Examples](https://learnsql.com/blog/25-advanced-sql-query-examples/)

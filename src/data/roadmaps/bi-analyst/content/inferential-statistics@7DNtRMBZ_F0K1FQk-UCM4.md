@@ -4,7 +4,7 @@ Inferential statistics uses sample data to make inferences or predictions about 
 
 Visit the following resources to learn more:
 
+- [@course@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)
 - [@article@Inferential Statistics | An Easy Introduction & Examples](https://www.scribbr.com/statistics/inferential-statistics/)
 - [@article@Statistical inference](https://en.wikipedia.org/wiki/Statistical_inference)
 - [@video@Inferential Statistics FULL Tutorial](https://www.youtube.com/watch?v=6E6pB5JFLgM)
-- [@course@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)

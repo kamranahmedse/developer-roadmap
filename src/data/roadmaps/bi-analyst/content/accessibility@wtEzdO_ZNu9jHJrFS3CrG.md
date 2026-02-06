@@ -5,4 +5,5 @@ Accessibility in data visualization focuses on designing charts and graphs that 
 Visit the following resources to learn more:
 
 - [@article@10 Guidelines for DataViz Accessibility](https://www.highcharts.com/blog/tutorials/10-guidelines-for-dataviz-accessibility/)
+- [@article@5 Crucial Tweaks That Will Make Your Charts Accessible to People with Visual Impairments](https://towardsdatascience.com/5-crucial-tweaks-that-will-make-your-charts-accessible-to-people-with-visual-impairments/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@Accessibility in Data Visualisation](https://www.youtube.com/watch?v=OOPeS_xWoKQ)

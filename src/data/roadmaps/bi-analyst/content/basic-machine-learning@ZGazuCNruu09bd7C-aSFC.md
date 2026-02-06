@@ -4,6 +4,6 @@ Machine learning fundamentals encompass the key concepts and techniques that ena
 
 Visit the following resources to learn more:
 
-- [@article@What Is Machine Learning (ML)?](https://www.ibm.com/think/topics/machine-learning)
 - [@course@Fundamentals of Machine Learning - Microsoft](https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/)
 - [@course@MLCourse.ai](https://mlcourse.ai/)
+- [@article@What Is Machine Learning (ML)?](https://www.ibm.com/think/topics/machine-learning)

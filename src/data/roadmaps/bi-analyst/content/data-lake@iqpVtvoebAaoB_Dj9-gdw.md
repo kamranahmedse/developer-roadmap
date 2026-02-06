@@ -1,4 +1,4 @@
-# Data lakes 
+# Data lakes
 
 **Data Lakes** are large-scale data repository systems that store raw, untransformed data, in various formats, from multiple sources. They're often used for big data and real-time analytics requirements. Data lakes preserve the original data format and schema which can be modified as necessary.
 

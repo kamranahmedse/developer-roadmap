@@ -4,6 +4,6 @@ Linear regression is a statistical method used to model the relationship between
 
 Visit the following resources to learn more:
 
+- [@course@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)
 - [@article@What Is Linear Regression?](https://www.ibm.com/think/topics/linear-regression)
 - [@article@Linear regression](https://en.wikipedia.org/wiki/Linear_regression)
-- [@course@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)
