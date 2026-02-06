@@ -4,6 +4,6 @@ Business Intelligence (BI) involves using data to understand past and present bu
 
 Visit the following resources to learn more:
 
+- [@course@Business Intelligence Fundamentals](https://www.simplilearn.com/free-business-intelligence-course-online-skillup)
 - [@article@What Is Business Intelligence - Microsoft](https://www.microsoft.com/en-us/power-platform/products/power-bi/topics/business-intelligence/what-is-business-intelligence)
 - [@article@What Is Business Intelligence (BI)? - IBM](https://www.ibm.com/think/topics/business-intelligence)
-- [@course@Business Intelligence Fundamentals](https://www.simplilearn.com/free-business-intelligence-course-online-skillup)

@@ -5,8 +5,8 @@ PostgreSQL is an advanced, open-source relational database management system (RD
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated PostgreSQL DBA Roadmap](https://roadmap.sh/postgresql-dba)
+- [@course@PostgreSQL: Become an SQL developer](https://www.simplilearn.com/free-postgresql-course-skillup)
 - [@official@Official Website](https://www.postgresql.org/)
 - [@article@Learn PostgreSQL - Full Tutorial for Beginners](ttps://www.postgresqltutorial.com/)
 - [@video@ostgres tutorial for Beginners](https://www.youtube.com/watch?v=SpfIwlAYaKk)
 - [@feed@Explore top posts about PostgreSQL](https://app.daily.dev/tags/postgresql?ref=roadmapsh)
-- [@course@PostgreSQL: Become an SQL developer](https://www.simplilearn.com/free-postgresql-course-skillup)

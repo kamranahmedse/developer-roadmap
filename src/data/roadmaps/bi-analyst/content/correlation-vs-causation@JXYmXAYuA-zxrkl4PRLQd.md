@@ -4,6 +4,6 @@ Correlation describes the degree to which two variables tend to move together, i
 
 Visit the following resources to learn more:
 
+- [@course@Intro to Inferential Statistics](http://udacity.com/course/intro-to-inferential-statistics--ud201)
 - [@article@Correlation vs. Causation | Difference, Designs & Examples](https://www.scribbr.com/methodology/correlation-vs-causation/)
 - [@article@Correlation does not imply causation](https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation)
-- [@course@Intro to Inferential Statistics](http://udacity.com/course/intro-to-inferential-statistics--ud201)

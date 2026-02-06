@@ -4,6 +4,6 @@ Correlation analysis is a statistical method used to determine the strength and 
 
 Visit the following resources to learn more:
 
+- [@course@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)
 - [@article@Correlation Analysis](https://datatab.net/tutorial/correlation)
 - [@article@Correlation](https://en.wikipedia.org/wiki/Correlation)
-- [@course@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)

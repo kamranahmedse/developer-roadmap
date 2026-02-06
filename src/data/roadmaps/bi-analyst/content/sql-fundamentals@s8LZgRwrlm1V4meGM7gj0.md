@@ -4,5 +4,5 @@ SQL stands for Structured Query Language. It is a standardized programming langu
 
 Visit the following resources to learn more:
 
-- [@article@Tutorial - Essential SQL For The Beginners](https://www.sqltutorial.org/)
 - [@official@SQL Roadmap](https://roadmap.sh/sql)
+- [@article@Tutorial - Essential SQL For The Beginners](https://www.sqltutorial.org/)

@@ -4,6 +4,6 @@ Regression analysis is a form of predictive modelling technique which investigat
 
 Visit the following resources to learn more:
 
+- [@course@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)
 - [@article@Regression: Definition, Analysis, Calculation, and Example](https://www.investopedia.com/terms/r/regression.asp)
 - [@article@A Refresher on Regression Analysis - Harvard](https://hbr.org/2015/11/a-refresher-on-regression-analysis)
-- [@course@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)
