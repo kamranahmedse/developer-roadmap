@@ -1,10 +1,9 @@
 # Google ADK
 
-The Google AI Development Kit (ADK) provides tools and infrastructure for building AI agents. It helps developers create agents that can perceive their environment, reason about it, and take actions to achieve specific goals. The ADK typically includes libraries, APIs, and example code to streamline the development process, allowing engineers to focus on the agent's logic and behavior rather than the underlying infrastructure.
+The Google AI Agent Definition Kit (ADK) provides tools and frameworks for defining, building, and deploying AI agents. It helps streamline the agent development process by offering structure for agent design, tools for interacting with external APIs and data sources, and infrastructure for deploying agents in various environments. In essence, the ADK simplifies how developers create agents that can perform tasks, interact with users, and integrate with other systems.
 
 Visit the following resources to learn more:
 
+- [@official@Overview of Agent Development Kit](https://docs.cloud.google.com/agent-builder/agent-development-kit/overview)
 - [@official@Agent Development Kit](https://google.github.io/adk-docs/)
-- [@official@Build an agent with the Agent Development Kit](https://cloud.google.com/vertex-ai/generative-ai/docs/agent-development-kit/quickstart)
-- [@article@Google's Agent Development Kit (ADK): A Guide With Demo Project](https://www.datacamp.com/tutorial/agent-development-kit-adk)
-- [@video@Getting started with Agent Developer Kit](https://www.youtube.com/playlist?list=PLOU2XLYxmsIIAPgM8FmtEcFTXLLzmh4DK)
+- [@official@Agent Development Kit: Making it easy to build multi-agent applications](https://developers.googleblog.com/en/agent-development-kit-easy-to-build-multi-agent-applications/)
