@@ -4,7 +4,7 @@ Lambdas, also known as anonymous functions, are a fundamental concept in Dart an
 
 Lambdas are defined using the `=>` operator and can take zero or more arguments. They can also contain expressions, statements, and return values.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Lambda Functions in Dart](https://medium.com/jay-tillu/lambda-functions-in-dart-7db8b759f07a)
 - [@video@Anonymous Function in Dart | Lambda Function](https://www.youtube.com/watch?v=XTKKQdTAR0U)

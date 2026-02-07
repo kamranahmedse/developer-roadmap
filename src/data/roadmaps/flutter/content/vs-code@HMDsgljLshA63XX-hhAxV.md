@@ -4,13 +4,13 @@ VS Code is a lightweight, fast, and highly customizable code editor that provide
 
 With the Flutter extension, VS Code provides essential development tools including:
 
-- Flutter widget inspector
-- Hot reload and hot restart
-- Integrated debugging
-- Code completion and IntelliSense
-- Flutter outline view
-- Device management
-- Integrated terminal
+*   Flutter widget inspector
+*   Hot reload and hot restart
+*   Integrated debugging
+*   Code completion and IntelliSense
+*   Flutter outline view
+*   Device management
+*   Integrated terminal
 
 VS Code is particularly popular among developers who prefer a lightweight IDE with fast performance, extensive customization options, and cross-platform availability.
 

@@ -4,7 +4,7 @@ In Flutter, you can use Firebase Storage to store and retrieve binary data, such
 
 To use Firebase Storage in your Flutter app, you need to first create a Firebase project in the Firebase Console and then add the Firebase Storage package to your Flutter app.
 
-Learn more from the following:
+Visit the following resources to learn more:
 
 - [@official@Firebase Storage](https://firebase.google.com/docs/storage)
 - [@video@How to Upload and Retrieve Images from Firebase Storage](https://www.youtube.com/watch?v=sM-WMcX66FI)
