@@ -6,3 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@How git commit works](https://github.com/git-guides/git-commit)
 - [@article@Git commit](https://www.atlassian.com/git/tutorials/saving-changes/git-commit)
+- [@course@Staging Area (Interactive Lesson)](https://inter-git.com/lessons/adding-files-to-index)
+- [@course@Making a Commit (Interactive Lesson)](https://inter-git.com/lessons/making-a-commit)
