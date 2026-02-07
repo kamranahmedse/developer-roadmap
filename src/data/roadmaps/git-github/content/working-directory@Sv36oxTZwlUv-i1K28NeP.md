@@ -5,4 +5,4 @@ A working directory in Git is the local environment where files are stored and m
 Learn more from the following resources:
 
 - [@article@Git vs Working Directory](https://codesweetly.com/git-vs-working-directory/)
-- [@course@Your Working Directory (Interactive Lesson)](https://inter-git.com/lessons/creating-repository)
+- [@article@Your Working Directory (Interactive Lesson)](https://inter-git.com/lessons/creating-repository)
