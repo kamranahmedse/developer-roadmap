@@ -2,7 +2,7 @@
 
 Dart supports functional programming through higher-order functions, immutable data structures, lambdas/closures, and pure functions, enabling developers to write code that emphasizes immutability, statelessness, and data transformation via functions.
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Functional Programming - Flutter](https://docs.flutter.dev/resources/faq)
 - [@article@Brief Overview of Functional Programming](https://buildflutter.com/functional-programming-with-flutter/)

@@ -2,7 +2,7 @@
 
 GitHub is a web-based platform that provides hosting for software development and version control using Git. It is widely used by developers and organizations around the world to manage and collaborate on software projects.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated GitHub Roadmap](https://roadmap.sh/git-github)
 - [@official@GitHub](https://github.com)
