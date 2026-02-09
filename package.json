@@ -48,7 +48,7 @@
     "@radix-ui/react-dropdown-menu": "^2.1.15",
     "@radix-ui/react-popover": "^1.1.14",
     "@resvg/resvg-js": "^2.6.2",
-    "@roadmapsh/editor": "workspace:*",
+    "@roadmapsh/editor": "npm:@roadmapsh/dummy-editor@^0.0.12",
     "@shikijs/transformers": "^3.9.2",
     "@tailwindcss/vite": "^4.1.7",
     "@tanstack/react-query": "^5.76.1",

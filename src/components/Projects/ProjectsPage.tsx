@@ -84,7 +84,7 @@ export function ProjectsPage(props: ProjectsPageProps) {
   const requiredSortOrder = [
     'Frontend',
     'Backend',
-    'DevOps',
+    'ПРИВЕТ',
     'Full-stack',
     'JavaScript',
     'Go',

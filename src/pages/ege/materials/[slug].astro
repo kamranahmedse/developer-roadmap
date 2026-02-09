@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const { slug } = Astro.params;
+
+if (!slug) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+
+const titles: Record<string, string> = {
+  'exam-structure': 'Формат и структура экзамена',
+  theory: 'База теории',
+  practice: 'Практика по заданиям',
+  'mock-exams': 'Пробные варианты',
+};
+
+const pageTitle = titles[slug] || 'Материалы';
+---
+
+<BaseLayout
+  title={`ЕГЭ: ${pageTitle}`}
+  description={`Материалы: ${pageTitle}`}
+  permalink={`/ege/materials/${slug}`}
+>
+  <div class='bg-linear-to-b from-slate-900 to-black text-white'>
+    <div class='container py-10 sm:py-14'>
+      <h1 class='text-3xl font-bold sm:text-5xl'>{pageTitle}</h1>
+      <p class='mt-4 max-w-3xl text-slate-300'>
+        Здесь будут материалы по теме. Если хочешь, пришли список ссылок — я
+        добавлю их и разложу по предметам.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+

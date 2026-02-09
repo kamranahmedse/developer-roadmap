@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { egeSubjectsBySlug } from '../../data/ege';
+
+const { subject } = Astro.params;
+
+if (!subject) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+
+const subjectData = egeSubjectsBySlug.get(subject);
+
+if (!subjectData) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+---
+
+<BaseLayout
+  title={`ЕГЭ: ${subjectData.title}`}
+  description={subjectData.description}
+  permalink={`/ege/${subjectData.slug}`}
+  redirectUrl={`/ege/roadmap/${subjectData.slug}`}
+>
+  <div />
+</BaseLayout>

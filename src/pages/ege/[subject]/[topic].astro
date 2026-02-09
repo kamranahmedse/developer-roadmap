@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { egeSubjectsBySlug, getEgeSubjectTopics } from '../../../data/ege';
+
+const { subject, topic } = Astro.params;
+
+if (!subject || !topic) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+
+const subjectData = egeSubjectsBySlug.get(subject);
+const topicData = subjectData
+  ? getEgeSubjectTopics(subjectData).find((item) => item.slug === topic)
+  : undefined;
+
+if (!subjectData || !topicData) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+---
+
+<BaseLayout
+  title={`ЕГЭ: ${subjectData.title} — ${topicData.title}`}
+  description={topicData.description}
+  permalink={`/ege/${subjectData.slug}/${topicData.slug}`}
+>
+  <div class='bg-linear-to-b from-slate-900 to-black text-white'>
+    <div class='container py-10 sm:py-14'>
+      <p class='mb-3 text-sm uppercase tracking-wide text-slate-400'>
+        {subjectData.title}
+      </p>
+      <h1 class='text-3xl font-bold sm:text-5xl'>{topicData.title}</h1>
+      <p class='mt-4 max-w-3xl text-slate-300'>{topicData.description}</p>
+    </div>
+
+    <div class='border-t border-t-[#1e293c]'>
+      <div class='container py-10 sm:py-14'>
+        <h2 class='mb-4 text-lg font-medium text-slate-200'>Материалы</h2>
+        {
+          topicData.materials.length > 0 ? (
+            <ul class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
+              {
+                topicData.materials.map((material) => (
+                  <li>
+                    <a
+                      class='block rounded-lg border border-slate-800 bg-slate-900 p-4 text-slate-300 transition hover:border-slate-600 hover:text-white'
+                      href={material.url}
+                    >
+                      {material.title}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          ) : (
+            <div class='rounded-lg border border-dashed border-slate-700 bg-slate-900 p-4 text-slate-400'>
+              Материалы пока не добавлены. Пришли ссылки — я добавлю их сюда.
+            </div>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

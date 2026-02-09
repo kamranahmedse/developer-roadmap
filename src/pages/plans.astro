@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { egePlans } from '../data/ege';
+---
+
+<BaseLayout
+  title='Планы подготовки к ЕГЭ'
+  description='Выбери удобный план подготовки к ЕГЭ.'
+  permalink='/plans'
+>
+  <div class='bg-linear-to-b from-slate-900 to-black text-white'>
+    <div class='container py-10 sm:py-14'>
+      <h1 class='text-3xl font-bold sm:text-5xl'>Планы подготовки</h1>
+      <p class='mt-4 max-w-3xl text-slate-300'>
+        Выбери план и настрой темп подготовки под себя.
+      </p>
+    </div>
+
+    <div class='border-t border-t-[#1e293c]'>
+      <div class='container py-10 sm:py-14'>
+        <ul class='grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3'>
+          {
+            egePlans.map((plan) => (
+              <li id={plan.slug}>
+                <div class='rounded-lg border border-slate-800 bg-slate-900 p-4'>
+                  <div class='text-xs uppercase tracking-wide text-slate-500'>
+                    {plan.duration}
+                  </div>
+                  <div class='mt-2 text-lg font-medium text-slate-100'>
+                    {plan.title}
+                  </div>
+                  <div class='mt-2 text-sm text-slate-400'>
+                    {plan.description}
+                  </div>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { egeSubjectsBySlug } from '../../../data/ege';
+import { EgePlanRoadmapShell } from '../../../components/EgeRoadmap/EgePlanRoadmapShell';
+
+const { subject } = Astro.params;
+
+if (!subject) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+
+const subjectData = egeSubjectsBySlug.get(subject);
+
+if (!subjectData) {
+  Astro.response.status = 404;
+  Astro.response.statusText = 'Not found';
+  return Astro.rewrite('/404');
+}
+
+---
+
+<BaseLayout
+  title={`ЕГЭ: ${subjectData.title}`}
+  description={subjectData.description}
+  permalink={`/ege/roadmap/${subjectData.slug}`}
+>
+  <div class='bg-linear-to-b from-slate-900 to-black text-white'>
+    <div class='container py-8 sm:py-12'>
+      <p class='mb-3 text-sm uppercase tracking-wide text-slate-400'>
+        Дорожная карта
+      </p>
+      <h1 class='text-3xl font-bold sm:text-5xl'>{subjectData.title}</h1>
+      <p class='mt-4 max-w-3xl text-slate-300'>{subjectData.description}</p>
+    </div>
+  </div>
+
+  <div class='bg-white'>
+    <div class='container py-8 sm:py-12'>
+      <EgePlanRoadmapShell subject={subjectData} client:only='react' />
+    </div>
+  </div>
+</BaseLayout>
