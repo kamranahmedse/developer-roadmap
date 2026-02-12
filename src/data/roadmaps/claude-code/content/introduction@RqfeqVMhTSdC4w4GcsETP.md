@@ -1,0 +1,3 @@
+# What is Claude Code?
+
+Claude Code is an AI-powered coding tool developed by Anthropic that operates directly in the terminal. Unlike traditional autocomplete tools, Claude Code functions as an autonomous agent capable of understanding entire codebases, executing multi-step tasks, and maintaining context across complex projects. By understanding the entire codebase, Claude Code helps simplify workflows, making it a powerful tool for software development.

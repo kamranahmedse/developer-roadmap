@@ -1,0 +1,3 @@
+# CLaude Code in Code Editor
+
+IDE extensions allow you to use Claude Code directly within popular development environments like Visual Studio Code and the JetBrains family (including IntelliJ IDEA, PyCharm, and WebStorm). These extensions provide a graphical sidebar and inline diff viewers, enabling you to review proposed code changes side-by-side with your existing files. By integrating with the IDE, Claude gains automatic awareness of your active workspace, current file selection, and even terminal error messages, which eliminates the need to manually copy and paste context.

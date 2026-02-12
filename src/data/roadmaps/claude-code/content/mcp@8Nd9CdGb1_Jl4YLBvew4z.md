@@ -1,0 +1,3 @@
+# MCP 
+
+The Model Context Protocol (MCP) is an open-source standard that enables an Claude Code to connect securely to a vast ecosystem of external tools, databases, and third-party services. By acting like a "universal connector" for AI, MCP allows you to extend the Claude Code's core capabilities beyond simple file editing, giving it the power to interact with APIs like GitHub to manage pull requests, query live databases such as PostgreSQL or Snowflake, and much more.

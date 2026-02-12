@@ -1,0 +1,3 @@
+# Opus
+
+Claude Opus is the most advanced and capable large language model in the Claude family, designed specifically for high-level reasoning and complex problem-solving. It functions as a "deep thinking" engine that can handle vast amounts of information and follow intricate instructions with a high degree of accuracy and nuance. In technical environments, it is typically used for architectural design, surgical bug fixes in large codebases, and strategic planning where a mistake could lead to significant system failures. While it is slower and more resource-intensive than smaller models, its superior logic allows it to solve "hard" problems that require a holistic understanding of a project's context and long-term goals.

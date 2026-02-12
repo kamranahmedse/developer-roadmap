@@ -1,0 +1,3 @@
+# /agents
+
+The `/agents` command is a specialized management interface used to create, configure, and orchestrate sub-agents within your Claude Code environment. This command transitions from a single-assistant model to a multi-agent workflow, allowing you to delegate specific types of work—like security auditing, unit testing, or architectural planning—to "specialists" that have their own isolated context windows and tailored system prompts.

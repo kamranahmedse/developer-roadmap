@@ -1,0 +1,3 @@
+# Claude Code Desktop
+
+Claude Code desktop is a software application that allows an AI assistant to interact directly with your local files and development tools through a graphical interface. It functions as an agentic coding partner that can read your codebase, edit files, and execute terminal commands to help build features or fix bugs in real time. The app organizes your work into a "Code" tab for direct project interaction and a "Cowork" tab for autonomous background tasks, while also offering a familiar chat interface for general questions.

@@ -1,0 +1,3 @@
+# Tools
+
+Tools in Claude Code are specialized functions that allow the AI assistant to perform actions on your computer rather than just generating text. These functions are categorized into client-side tools that interact with your local environment—such as `Bash` for running terminal commands, `Read` and `Edit` for file manipulation, and `Glob` or `Grep` for searching codebases—and server-side tools like `WebSearch` for fetching real-time information from the internet. When you give Claude a task, it uses these tools in an "agentic loop" to gather context, propose changes, and verify results, often requiring your permission before executing high-impact actions.

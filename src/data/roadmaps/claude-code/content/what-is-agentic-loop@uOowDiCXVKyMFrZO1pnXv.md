@@ -1,0 +1,3 @@
+# Agentic Loop
+
+An agentic loop is a computational pattern where an agent continuously interacts with its environment through a cycle of perception, planning, and action. The agent observes its surroundings, decides on a course of action based on its goals and current state, executes that action, and then observes the results to inform its next decision. This iterative process allows the agent to learn, adapt, and pursue its objectives in a dynamic and potentially unpredictable environment.

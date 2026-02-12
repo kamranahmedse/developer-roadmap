@@ -1,0 +1,3 @@
+# Claude Code Models
+
+Claude Code is powered by three distinct models—Opus, Sonnet, and Haiku— each optimized for a specific role within the development lifecycle. **Claude Opus** is the "deep thinker" and primary architect, used for complex reasoning, high-level system design, and surgical bug fixes in large codebases. **Claude Sonnet** serves as the versatile "balanced builder," providing a high-speed middle ground for daily tasks like implementing feature logic, writing boilerplate, and managing state across multiple files. **Claude Haiku** is the "fast-response specialist," designed for near-instant execution of lightweight tasks, such as generating rapid UI prototypes, drafting commit messages, or acting as parallel sub-agents to scan logs and run quick checks.

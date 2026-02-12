@@ -1,0 +1,3 @@
+# Coding Agent
+
+A coding agent is an AI-powered software entity designed to autonomously write, test, and debug code to solve specific programming tasks or complete software development projects. It uses various AI techniques, like large language models and reinforcement learning, to understand requirements, generate code snippets, identify errors, and iterate on its solutions to achieve the desired outcome.
