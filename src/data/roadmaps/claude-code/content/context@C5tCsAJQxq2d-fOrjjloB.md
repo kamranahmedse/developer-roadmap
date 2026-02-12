@@ -1,0 +1,3 @@
+# Context
+
+A context window is the total amount of information a model can hold in its active memory at one time, including your conversation history, the files it has read, and the results of any terminal commands it has executed. It functions like a temporary workspace where every word and symbol (counted as tokens) fills up a limited capacity. As this window fills, Claude Code may begin to "forget" earlier details or become less accurate, which is why managing context through commands like `/compact` is essential to keep responses sharp and costs under control.

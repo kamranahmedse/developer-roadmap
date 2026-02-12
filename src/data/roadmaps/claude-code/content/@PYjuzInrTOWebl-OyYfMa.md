@@ -1,0 +1,3 @@
+# Bash Mode (!)
+
+Bash Mode (triggered by prefixing your input with an exclamation mark !) is a powerful feature that allows you to execute shell commands directly on your machine without involving the Claude Code's reasoning or consuming any tokens. While the AI assistant normally uses the "Bash tool" to run commands on your behalf (which costs money and takes time for the model to "think"), Bash Mode is your direct line to the terminal.

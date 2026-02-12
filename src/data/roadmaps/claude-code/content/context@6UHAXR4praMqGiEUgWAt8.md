@@ -1,0 +1,3 @@
+# /context
+
+The `/context` command is a diagnostic tool that provides a technical breakdown of how the model's context window is currently allocated, using a colored grid. While commands like `/usage` show you the "how much," `/context` shows you the "what." It lists every file, conversation turn, and tool result currently being held in the AI's active memory, allowing you to see exactly which resources are consuming tokens.

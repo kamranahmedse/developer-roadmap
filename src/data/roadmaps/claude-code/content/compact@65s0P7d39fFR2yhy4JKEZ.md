@@ -1,0 +1,3 @@
+# /compact
+
+The `/compact` command is a context management tool designed to optimize your session's memory when the context window begins to fill up. Instead of completely wiping your history like `/clear`, `/compact` instructs Claude to generate a concise summary of the key decisions, code changes, and project state established so far. It then replaces the bulky, line-by-line conversation history with this summarized version, effectively "compressing" the tokens used while preserving the essential knowledge the AI needs to continue the task.

@@ -1,0 +1,3 @@
+# /clear
+
+The `/clear` command is a utility tool that removes all previous messages, tool outputs, and file contents from the active conversation history. It wipes the current context, allowing you to start a fresh dialogue with the AI without exiting the application or losing your current working directory settings. This is particularly useful for reducing token costs and preventing "context drift," where the AI might become confused by old instructions or irrelevant code snippets from a previous task.

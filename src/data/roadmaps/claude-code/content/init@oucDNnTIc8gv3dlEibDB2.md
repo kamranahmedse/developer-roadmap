@@ -1,0 +1,3 @@
+# /init
+
+The `/init` command is the initialization utility used to set up Claude Code for a specific project directory. When you run this command, it creates a CLAUDE.md file in your current folder. This file serves as the "foundation" for the assistant, allowing you to define project-specific coding standards, build commands, and test suites that Claude will automatically reference in every future session within that repository.

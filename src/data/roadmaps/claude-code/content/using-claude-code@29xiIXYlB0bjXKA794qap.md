@@ -1,0 +1,3 @@
+# Using Claude Code
+
+Claude Code is a sophisticated agentic tool that provides significant power through its ability to execute commands and edit files, but it requires a disciplined approach to prevent security risks and runaway costs. Because every interaction—including the files Claude reads, the commands it runs, and the long "thought" processes of models like Opus—consumes tokens, a single unguided session can quickly become expensive. You should be familiar with the inner workings of Claude Code and follow best practices to maximize efficiency

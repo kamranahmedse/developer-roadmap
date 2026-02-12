@@ -1,0 +1,3 @@
+# Ctrl+R
+
+`Ctrl+R` is a terminal shortcut that opens the command history search, allowing you to quickly find and reuse previous prompts or terminal commands you have typed during your session. Instead of manually retyping complex instructions or scrolling back through hundreds of lines of output, you can press `Ctrl+R` and start typing a few letters to filter your recent activity until the correct entry is highlighted. Once you find the desired command, you can press `Enter` to run it immediately or use the arrow keys to edit the text before execution.

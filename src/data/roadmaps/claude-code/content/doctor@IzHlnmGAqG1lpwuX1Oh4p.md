@@ -1,0 +1,3 @@
+# /doctor
+
+The `/doctor` command is a diagnostic utility used to troubleshoot and verify the health of your Claude Code installation and its environment. When executed, it runs a series of automated checks to ensure that your authentication tokens are valid, your network connection to the Anthropic servers is stable, and all required system dependencies—like Git and Node.js—are correctly configured. If the tool detects an issue, such as a missing binary or an expired session, it provides a detailed error report and suggested steps to resolve the problem immediately.

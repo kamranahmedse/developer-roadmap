@@ -1,0 +1,3 @@
+# Vibe Coding
+
+Vibe coding is a modern software development approach in which developers use AI agents and large language models (LLMs) to generate, build, and iterate on applications via natural language prompts, rather than writing code manually. Coined by Andrej Karpathy, this method focuses on the "vibe" or overall intent of the application, often involving rapid prototyping and minimal manual code review, making software development more accessible and faster.
