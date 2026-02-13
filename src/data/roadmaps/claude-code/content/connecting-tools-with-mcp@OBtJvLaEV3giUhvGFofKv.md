@@ -1,3 +1,10 @@
 # Connecting Tools with MCP
 
 Model Context Protocol (MCP) transforms Claude Code from a local file editor into a connected agent capable of interacting with your entire tech stack, from Jira tickets to live databases. Acting like a "USB-C port for AI," MCP provides a standardized bridge that allows Claude to discover and execute external functions without requiring custom-coded integrations for every service. You can add these capabilities using the interactive `claude mcp add` command or by directly editing your configuration file. This modularity is key to managing your context window; rather than loading every possible tool at once, you can scope specific MCP servers to individual projects or call them on-demand, ensuring Claude has the exact "hands" it needs only when the task requires them.
+
+Visit the following resources to learn more:
+
+- [@official@Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp)
+- [@article@What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/getting-started/intro)
+- [@video@Claude Code MCP: How to Add MCP Servers (Complete Guide)](https://www.youtube.com/watch?v=DfWHX7kszQI)
+- [@video@Claude Code Tutorial #7 - MCP Servers](https://www.youtube.com/watch?v=X7lgIa6guKg)

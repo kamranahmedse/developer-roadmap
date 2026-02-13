@@ -1,3 +1,7 @@
 # Manage Context
 
 Active management of the context window is the single most effective way to ensure reliable model performance and predictable operational costs, as Claude Code is billed based on the total number of tokens processed in each turn. Because the tool re-reads the entire conversation history with every new message to maintain state, unmanaged sessions can quickly balloon in size, leading to "context rot" where the model loses track of early instructions or struggles with "lost-in-the-middle" accuracy degradation.
+
+Visit the following resources to learn more:
+
+- [@official@Manage costs effectively](https://code.claude.com/docs/en/costs#reduce-token-usage)

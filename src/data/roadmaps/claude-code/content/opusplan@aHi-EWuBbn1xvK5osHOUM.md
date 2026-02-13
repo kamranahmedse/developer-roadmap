@@ -1,3 +1,8 @@
 # Opusplan
 
 `opusplan` is a specialized command alias for Claude Code that combines the high-level reasoning of the most advanced model with the speed and efficiency of a faster one to optimize complex development tasks. When you initiate a session using `claude opusplan`, the tool uses Claude Opus to analyze your request, explore the codebase, and draft a comprehensive technical strategy, ensuring that the initial logic and architectural decisions are as accurate as possible. Once the plan is finalized, the system automatically hands off the execution phase to Claude Sonnet, who carries out the actual file edits, terminal commands, and test runs. This workflow is commonly used for large-scale refactors, implementing features across multiple files, or solving "hard" bugs where the risk of logic errors is high, as it provides the intelligence of a top-tier model while significantly reducing the time and cost compared to using Opus for the entire coding process.
+
+Visit the following resources to learn more:
+
+- [@official@opusplan model setting](https://code.claude.com/docs/en/model-config#opusplan-model-setting)
+- [@video@Claude Code Opus Plan Mode // 1M Context // Testing ++](https://www.youtube.com/watch?v=I2aAkp7q_uY)
