@@ -58,6 +58,8 @@ docker build -t stans-app .
 docker run -p 8080:80 stans-app
 ```
 
+The containerized application will have Nginx serving the static files inside the container.
+
 ### Part 3: CI/CD Pipeline
 
 Create a GitHub Actions workflow (`.github/workflows/deploy.yml`) that:
