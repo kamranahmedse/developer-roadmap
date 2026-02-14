@@ -23,7 +23,7 @@ roadmapIds:
   - 'devops'
 ---
 
-The goal of this project is to deploy and manage the [STANS (Smart Traffic-Aware Navigation System)](https://github.com/weedu230/STANS) - a React/TypeScript application that calculates optimal routes using graph algorithms.
+The goal of this project is to deploy and manage the [STANS (Smart Traffic-Aware Navigation System)](https://github.com/weedu230/STANS) - a React/TypeScript application that calculates optimal routes using graph algorithms. You will learn containerization with Docker, CI/CD automation with GitHub Actions, and production deployment strategies including security best practices.
 
 ## Requirements
 
@@ -63,7 +63,7 @@ docker run -p 8080:80 stans-app
 Create a GitHub Actions workflow (`.github/workflows/deploy.yml`) that:
 
 - Triggers on push to the main branch
-- Runs tests (if any exist, or add basic validation)
+- Runs basic validation (verify the build completes successfully)
 - Builds the Docker image
 - Pushes the image to Docker Hub or GitHub Container Registry
 - (Optional) Deploys to a remote server using SSH
@@ -78,8 +78,8 @@ Deploy the containerized application to a cloud server:
 
 - Set up a Linux server on AWS, DigitalOcean, or another provider
 - Install Docker on the server
-- Configure Nginx as a reverse proxy (if deploying multiple services)
-- Set up SSL/TLS with Let's Encrypt using Certbot
+- Pull and run your Docker image on the server
+- Set up SSL/TLS with Let's Encrypt using Certbot (configure Nginx on the host for SSL termination)
 - Configure the server firewall (allow ports 80, 443, and 22 only)
 - Ensure the container restarts automatically (`--restart=always`)
 
