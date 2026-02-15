@@ -1,3 +1,0 @@
-# Pagination
-
-Pagination is the process of dividing content into discrete pages, allowing users to navigate through large datasets in a manageable way. Instead of displaying all records at once, which can lead to performance issues and a poor user experience, pagination presents data in smaller, more digestible chunks, typically with navigation controls to move between pages. This improves loading times and makes it easier for users to find the information they need.

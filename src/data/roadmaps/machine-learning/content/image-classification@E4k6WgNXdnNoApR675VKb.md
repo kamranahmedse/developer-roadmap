@@ -1,3 +1,0 @@
-# Image Classification with Convolutional Neural Networks
-
-Convolutional Neural Networks (CNNs) are commonly used for image classification tasks. They work by automatically learning relevant features from images through convolutional layers, which detect patterns like edges and textures. These learned features are then used to classify the image into different categories, such as identifying objects like cats, dogs, or cars. CNNs excel at this because they can handle the high dimensionality of image data and are robust to variations in object position, scale, and lighting.

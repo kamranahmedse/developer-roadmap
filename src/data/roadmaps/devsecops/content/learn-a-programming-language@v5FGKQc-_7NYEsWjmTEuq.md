@@ -1,3 +1,0 @@
-# Programming Languages
-
-Programming languages are the fundamental tools used to build and automate software systems. In DevSecOps, knowing how to code is important because it allows you to analyze code for vulnerabilities, automate security tasks, and integrate security checks directly into the development pipeline. Knowing the languages your applications are built with enables you to proactively identify and address security risks early in the software development lifecycle.

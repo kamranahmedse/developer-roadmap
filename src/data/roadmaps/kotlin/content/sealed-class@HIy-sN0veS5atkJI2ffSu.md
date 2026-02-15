@@ -1,1 +1,0 @@
-# Sealed Class

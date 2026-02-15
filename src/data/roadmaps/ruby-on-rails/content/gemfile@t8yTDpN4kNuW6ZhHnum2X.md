@@ -1,3 +1,0 @@
-# Gemfile
-
-The Gemfile is a file in the root directory of a Ruby on Rails application that specifies the gem dependencies required for the project. It uses Ruby's syntax to list the gems and their versions, allowing Bundler to manage and install the correct versions of each gem. This ensures that the application has all the necessary libraries to run properly and consistently across different environments.

@@ -1,3 +1,0 @@
-# Image and Video Recognition with CNNs
-
-Convolutional Neural Networks (CNNs) are a specialized type of neural network particularly effective at processing images and videos. In image recognition, CNNs can identify objects, scenes, and faces by learning spatial hierarchies of features from pixel data. For video recognition, CNNs analyze sequences of frames to understand actions, events, and even predict future occurrences. This is achieved by extracting relevant spatial and temporal features, enabling applications like video surveillance, autonomous driving, and content analysis.

@@ -1,3 +1,0 @@
-# APIs as Data Sources
-
-APIs (Application Programming Interfaces) are sets of rules and specifications that software programs can follow to communicate with each other. In essence, they allow different applications to exchange data and functionality. As data sources, APIs provide a structured way to access information from various online services, databases, and applications, enabling BI analysts to integrate real-time or near real-time data into their analyses and reports.

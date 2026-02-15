@@ -1,9 +1,0 @@
-# TDD - Test Driven Development
-
-Test Driven Development (TDD) is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free.
-
-Visit the following resources to learn more:
-
-- [@article@What is Test Driven Development (TDD)? Tutorial with Example](https://www.guru99.com/test-driven-development.html)
-- [@article@Introduction to Test Driven Development (TDD)](https://pt.coursera.org/learn/test-and-behavior-driven-development-tdd-bdd)
-- [@feed@Explore top posts about TDD](https://app.daily.dev/tags/tdd?ref=roadmapsh)

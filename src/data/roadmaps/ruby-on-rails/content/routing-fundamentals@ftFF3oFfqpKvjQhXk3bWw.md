@@ -1,3 +1,0 @@
-# Routing Fundamentals
-
-Routing in a web application is the process of mapping incoming HTTP requests (like GET or POST requests) to specific controller actions. It acts as a traffic director, examining the URL and other request parameters to determine which part of the application should handle the request and generate a response. This mechanism allows you to define how your application responds to different URLs, creating a structured and organized web experience for users.

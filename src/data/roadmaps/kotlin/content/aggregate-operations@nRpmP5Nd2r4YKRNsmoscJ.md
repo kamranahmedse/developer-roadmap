@@ -1,1 +1,0 @@
-# Aggregate Operations

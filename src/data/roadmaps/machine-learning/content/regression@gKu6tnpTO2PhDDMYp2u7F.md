@@ -1,3 +1,0 @@
-# Regression
-
-Regression in supervised learning is a method used to predict a continuous numerical value. It works by finding the relationship between input features (independent variables) and a target variable (dependent variable). The goal is to build a model that can accurately estimate the target variable's value based on the given input features. For example, predicting house prices based on size and location is a regression problem.

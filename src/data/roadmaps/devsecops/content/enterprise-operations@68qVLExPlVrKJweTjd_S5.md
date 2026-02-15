@@ -1,3 +1,0 @@
-# Enterprise Operations
-
-Enterprise Operations encompasses all the activities and processes required to manage and maintain an organization's IT infrastructure, applications, and services. This includes tasks like system administration, network management, database administration, incident response, and ensuring the overall stability and performance of the IT environment that supports the business. It focuses on keeping the lights on and ensuring that the business can function effectively.

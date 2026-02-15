@@ -1,3 +1,0 @@
-# Change Management
-
-Change management is the process, tools, and techniques used to manage the people-side of change to achieve the required business outcome. It involves helping individuals and teams understand, accept, and adapt to changes in their work environment, processes, technologies, or organizational structure. Effective change management minimizes disruption, resistance, and negative impacts, while maximizing adoption and realizing the benefits of the change initiative.

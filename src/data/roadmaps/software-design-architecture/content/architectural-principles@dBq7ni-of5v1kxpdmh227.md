@@ -1,1 +1,0 @@
-# Architectural Principles

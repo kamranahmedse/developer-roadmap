@@ -1,8 +1,0 @@
-# Maximum Tokens
-
-The OpenAI API has different maximum token limits depending on the model being used. For instance, GPT-3 has a limit of 4,096 tokens, while GPT-4 can support larger inputs, with some versions allowing up to 8,192 tokens, and extended versions reaching up to 32,768 tokens. Tokens include both the input text and the generated output, so longer inputs mean less space for responses. Managing token limits is crucial to ensure the model can handle the entire input and still generate a complete response, especially for tasks involving lengthy documents or multi-turn conversations.
-
-Visit the following resources to learn more:
-
-- [@official@Maximum Tokens](https://platform.openai.com/docs/guides/rate-limits)
-- [@article@Guide to Free vs Paid ChatGPT Token Limits](https://tactiq.io/learn/free-vs-paid-chatgpt-token-limits-guide)

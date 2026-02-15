@@ -1,3 +1,0 @@
-# Rails & Frontend
-
-Rails, while primarily a backend framework, works seamlessly with various frontend technologies to build complete web applications. You can use Rails to handle the server-side logic, data management, and API endpoints, while employing frontend frameworks like React, Vue.js, or even Hotwire for the user interface and interactive elements. Hotwire, in particular, allows you to build modern, reactive UIs by sending HTML over the wire instead of complex JSON, simplifying the development process and leveraging Rails' server-side rendering capabilities. This combination allows developers to create full-stack applications with a clear separation of concerns, where Rails manages the backend and the chosen frontend framework handles the user experience.

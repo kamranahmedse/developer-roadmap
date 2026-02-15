@@ -1,3 +1,0 @@
-# Calculated Fields & Measures
-
-Calculated fields and measures are custom computations derived from existing data within a data model. They allow you to create new insights and metrics by applying formulas, functions, and logic to raw data. These calculations can involve aggregations, arithmetic operations, conditional statements, and more, enabling you to analyze data in ways not directly available from the original dataset. Modern BI tools usually come with capabilities to create custom calculated fields and measures.

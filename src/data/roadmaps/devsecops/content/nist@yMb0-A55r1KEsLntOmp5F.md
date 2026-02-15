@@ -1,3 +1,0 @@
-# NIST Cybersecurity Framework
-
-The NIST Cybersecurity Framework (CSF) is a voluntary framework primarily intended for organizations to manage and reduce cybersecurity risks. It provides a set of standards, guidelines, and best practices to help organizations assess their current cybersecurity posture, identify areas for improvement, and develop a roadmap for enhancing their security capabilities. The framework is structured around five core functions: Identify, Protect, Detect, Respond, and Recover, which are further broken down into categories and subcategories to provide a detailed and actionable approach to cybersecurity risk management.

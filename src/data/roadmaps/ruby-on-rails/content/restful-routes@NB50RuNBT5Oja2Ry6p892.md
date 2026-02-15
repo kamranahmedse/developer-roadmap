@@ -1,3 +1,0 @@
-# RESTful Routes
-
-RESTful routes provide a standardized way to map HTTP verbs (GET, POST, PUT, DELETE) to controller actions, representing Create, Read, Update, and Delete (CRUD) operations on resources. This convention promotes a clean and predictable URL structure, making applications easier to understand and maintain by aligning routes with the underlying data model. By following REST principles, developers can create well-organized and scalable web applications.

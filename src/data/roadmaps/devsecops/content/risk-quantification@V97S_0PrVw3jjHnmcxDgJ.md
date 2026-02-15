@@ -1,3 +1,0 @@
-# Risk Quantification
-
-Risk quantification is the process of assigning measurable values (often monetary) to the potential impact of identified risks. It involves analyzing the probability of a risk occurring and the potential damage it could cause to an organization's assets, operations, or reputation. This allows for a more objective comparison of different risks and helps prioritize mitigation efforts based on their potential financial or operational impact.

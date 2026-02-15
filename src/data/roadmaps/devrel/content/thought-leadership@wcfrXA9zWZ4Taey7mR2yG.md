@@ -1,1 +1,0 @@
-# Thought Leadership

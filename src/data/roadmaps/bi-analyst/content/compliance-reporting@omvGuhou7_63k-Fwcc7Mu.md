@@ -1,3 +1,0 @@
-# Compliance Reporting in Healthcare
-
-Compliance reporting in healthcare involves creating reports that demonstrate adherence to regulations and standards set by healthcare organizations. These reports track key performance indicators (KPIs) related to patient safety, data security, financial integrity, and quality of care. They are used to identify areas of non-compliance, mitigate risks, and ensure that healthcare providers meet legal and ethical obligations.

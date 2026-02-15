@@ -1,3 +1,0 @@
-# Request-Response Flow in Rails Routing
-
-The request-response flow in Rails describes how a web application handles incoming requests from users and generates appropriate responses. When a user interacts with a Rails application (e.g., clicks a link or submits a form), the request is first received by the Rails router. The router then analyzes the request and determines which controller and action should handle it. The controller action processes the request, interacts with the model if necessary, and renders a view. Finally, the rendered view is sent back to the user as a response.

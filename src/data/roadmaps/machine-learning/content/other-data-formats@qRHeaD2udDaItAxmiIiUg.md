@@ -1,3 +1,0 @@
-# Other Data Formats
-
-Beyond the common formats like CSV, Excel, JSON, and Parquet, data can exist in a variety of other structures. These include formats optimized for specific applications or data types. For instance, images are often stored as JPEGs or PNGs, while audio data might be in WAV or MP3 format. Relational databases store data in structured tables accessible through SQL. Furthermore, specialized formats like HDF5 are used for large, complex datasets, particularly in scientific computing, and Protocol Buffers offer an efficient way to serialize structured data. Data can also be unstructured, existing as plain text, log files, or even streaming data from sensors.

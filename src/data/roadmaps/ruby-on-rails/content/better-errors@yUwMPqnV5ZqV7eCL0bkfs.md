@@ -1,3 +1,0 @@
-# Better Errors
-
-Better Errors is a Ruby gem that enhances the standard Rails error page with more detailed and interactive debugging information. It provides a richer debugging experience by displaying source code snippets, allowing you to inspect variables, and even execute code directly within the error page. This makes it easier to understand the cause of errors and quickly identify solutions during development.

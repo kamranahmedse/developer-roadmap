@@ -1,3 +1,0 @@
-# ISO 27001
-
-ISO 27001 is an international standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). It provides a framework of policies and procedures that includes all legal, physical, and technical controls involved in an organization's information risk management processes. The standard helps organizations protect their information assets through a systematic approach to security.

@@ -1,3 +1,0 @@
-# Public Directory
-
-The `public` directory in a Ruby on Rails application serves as the root directory for all static assets that are directly accessible by web browsers. It holds files like HTML, CSS, JavaScript, images, and other media that don't require any processing or compilation by Rails before being served to the user. These files are served directly by the web server (like Nginx or Apache) without Rails intervention, making them efficient for delivering static content.

@@ -1,9 +1,7 @@
 // https://astro.build/config
-import sitemap from '@astrojs/sitemap';
 import node from '@astrojs/node';
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
-import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
 import tailwindcss from '@tailwindcss/vite';
 
 import react from '@astrojs/react';
@@ -80,10 +78,6 @@ export default defineConfig({
   }),
   trailingSlash: 'never',
   integrations: [
-    sitemap({
-      filter: shouldIndexPage,
-      serialize: serializeSitemap,
-    }),
     react(),
   ],
   vite: {

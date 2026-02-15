@@ -1,3 +1,0 @@
-# Coherence in Data Quality
-
-Coherence, within the realm of data quality, refers to the logical consistency and understandability of data across different datasets or within a single dataset. It ensures that data elements relate to each other in a meaningful and expected way, avoiding contradictions and ambiguities. High coherence means the data tells a clear and consistent story, making it reliable for analysis and decision-making.

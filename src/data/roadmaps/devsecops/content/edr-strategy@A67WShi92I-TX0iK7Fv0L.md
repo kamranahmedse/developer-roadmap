@@ -1,3 +1,0 @@
-# EDR Strategy
-
-Endpoint Detection and Response (EDR) strategy focuses on proactively identifying and mitigating threats on endpoint devices like laptops, servers, and workstations. It involves implementing tools and processes that continuously monitor these endpoints for suspicious activities, analyze the data to detect potential security incidents, and provide automated or manual response capabilities to contain and remediate threats. A well-defined EDR strategy helps organizations gain visibility into endpoint security posture and improve their ability to defend against advanced attacks.

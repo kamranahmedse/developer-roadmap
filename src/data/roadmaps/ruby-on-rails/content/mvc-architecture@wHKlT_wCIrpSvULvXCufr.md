@@ -1,3 +1,0 @@
-# MVC Architecture
-
-MVC, or Model-View-Controller, is a software design pattern commonly used for developing user interfaces that divides an application into three interconnected parts. The Model manages the application's data and logic, the View displays the data to the user, and the Controller handles user input and updates the Model and View accordingly. This separation of concerns makes applications easier to develop, test, and maintain.

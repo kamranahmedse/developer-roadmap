@@ -1,3 +1,0 @@
-# Redirects
-
-Redirects in web applications are mechanisms to automatically forward a user from one URL to another. This is commonly used for various reasons, such as moving content to a new location, handling outdated URLs, or guiding users through a specific workflow. In Rails, redirects are implemented within controllers to send an HTTP response that instructs the browser to navigate to a different URL.

@@ -1,9 +1,0 @@
-# Unsupervised Learning
-
-Unsupervised learning, as a fundamental aspect of Machine Learning, holds great implications in the realm of data analytics. It is an approach where a model learns to identify patterns and relationships within a dataset that isn't labelled or classified. It is especially useful for a Data Analyst as it can assist in recognizing unforeseen trends, providing new insights or preparing data for other machine learning tasks. This ability to infer without direct supervision allows a vast potential for latent structure discovery and new knowledge derivation from raw data.
-
-Visit the following resources to learn more:
-
-- [@article@What is Unsupervised Learning?](https://cloud.google.com/discover/what-is-unsupervised-learning)
-- [@article@Introduction to Unsupervised Learning](https://www.datacamp.com/blog/introduction-to-unsupervised-learning)
-- [@video@Unsupervised Machine Learning Explained For Beginners](https://www.youtube.com/watch?v=yteYU_QpUxs&pp=ygUbI3doYXRpc3Vuc3VwZXJ2aXNlZGxlYXJuaW5n)

@@ -1,3 +1,0 @@
-# Accessibility
-
-Accessibility, often shortened to A11y, focuses on designing and developing websites and applications that are usable by people with disabilities. This includes individuals with visual, auditory, motor, or cognitive impairments, ensuring they can perceive, understand, navigate, and interact with web content effectively. Implementing accessibility involves following established guidelines and best practices to create inclusive digital experiences.
