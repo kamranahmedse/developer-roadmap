@@ -1,0 +1,101 @@
+{
+  "title": "Математика (Профиль)",
+  "slug": "matematika-profil",
+  "description": "Цель: решить все задачи 1-й части без ошибок и набрать максимум во 2-й.",
+  "blocks": [
+    {
+      "title": "Часть 1: задачи 1-12",
+      "topics": [
+        {
+          "title": "Практическая математика (№1-5)",
+          "slug": "prakticheskaya-matematika",
+          "description": "Проценты, округление, графики, прикладные задачи. Скорость и внимательность.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Алгебра (№6, 9)",
+          "slug": "algebra",
+          "description": "Преобразования выражений: степенные, логарифмические, тригонометрические.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Уравнения (№10)",
+          "slug": "uravneniya-10",
+          "description": "Методы решения, ОДЗ.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Неравенства (№12)",
+          "slug": "neravenstva-12",
+          "description": "Методы решения, ОДЗ.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Начала анализа (№7, 11)",
+          "slug": "nachala-analiza",
+          "description": "Производная, экстремумы, монотонность. Связь графика и производной.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Геометрия (№8, 13)",
+          "slug": "geometriya",
+          "description": "Планиметрия и стереометрия: теоремы и свойства фигур.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Часть 2: задачи 13-18",
+      "topics": [
+        {
+          "title": "№13 Стереометрия",
+          "slug": "stereometriya-13",
+          "description": "Углы и расстояния, координаты, векторы, скалярное произведение.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "№14 Уравнение/неравенство",
+          "slug": "uravnenie-14",
+          "description": "Метод рационализации, разложение на множители.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "№15 Неравенство",
+          "slug": "neravenstvo-15",
+          "description": "Системы неравенств, ОДЗ, равносильные преобразования.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "№16 Планиметрия",
+          "slug": "planimetriya-16",
+          "description": "Окружности, биссектрисы, медианы, высоты, синусы/косинусы, подобие.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "№17 Экономическая задача",
+          "slug": "ekonomicheskaya-17",
+          "description": "Кредиты, вклады, оптимизация. Математическая модель.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "№18 Задача с параметром",
+          "slug": "parametr-18",
+          "description": "Графический и аналитический методы, типовые сюжеты.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    }
+  ]
+}

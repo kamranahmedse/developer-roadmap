@@ -1,54 +1,28 @@
 ---
 import '../styles/global.css';
 
-import Analytics from '../components/Analytics/Analytics.astro';
-import Clarity from '../components/Analytics/Clarity.astro';
-import GoogleAd from '../components/Analytics/GoogleAd.astro';
-import GoogleAdSlot from '../components/Analytics/GoogleAdSlot.astro';
-import Hubspot from '../components/Analytics/Hubspot.astro';
-import RedditPixel from '../components/Analytics/RedditPixel.astro';
-import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
-import Authenticator from '../components/Authenticator/Authenticator.astro';
-import { CommandMenu } from '../components/CommandMenu/CommandMenu';
 import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation/Navigation.astro';
-import OpenSourceBanner from '../components/OpenSourceBanner.astro';
-import { PageProgress } from '../components/PageProgress';
-import { PageVisit } from '../components/PageVisit/PageVisit';
-import { CourseAnnouncement } from '../components/SQLCourse/CourseAnnouncement';
-import { Toaster } from '../components/Toast';
 import { siteConfig } from '../lib/config';
-import type { ResourceType } from '../lib/resource-progress';
-import Bluconic from '../components/Analytics/Bluconic.astro';
-import OneTrust from '../components/Analytics/OneTrust.astro';
-import LinkedIn from '../components/Analytics/LinkedIn.astro';
-import { cn } from '../lib/classname';
-import { GlobalUpgradeModal } from '../components/Billing/GlobalUpgradeModal';
 
 export interface Props {
   title: string;
   ogImageUrl?: string;
   htmlClassName?: string;
   bodyClassName?: string;
-  // This isn't used anywhere except for the sponsor event labels
-  briefTitle?: string;
   redirectUrl?: string;
   description?: string;
   keywords?: string[];
   noIndex?: boolean;
   canonicalUrl?: string;
-  initialLoadingMessage?: string;
   permalink?: string;
   jsonLd?: Record<string, unknown>[];
-  resourceId?: string;
-  resourceType?: ResourceType;
 }
 
 const {
   title = siteConfig.title,
   htmlClassName,
   bodyClassName,
-  briefTitle,
   description = siteConfig.description,
   ogImageUrl = 'https://roadmap.sh/img/og-img.png',
   keywords = siteConfig.keywords,
@@ -57,9 +31,6 @@ const {
   canonicalUrl: givenCanonical = '',
   jsonLd = [],
   redirectUrl = '',
-  initialLoadingMessage = '',
-  resourceId,
-  resourceType,
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
@@ -68,12 +39,6 @@ const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
 const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
   import.meta.env.GITHUB_SHA
 }`;
-
-// e.g. frontend:react or best-practices:frontend-performance
-const gaPageIdentifier = Astro.url.pathname
-  .replace(/^\//, '')
-  .replace(/\/$/, '')
-  .replace(/\//g, ':');
 ---
 
 <!doctype html>
@@ -157,24 +122,6 @@ const gaPageIdentifier = Astro.url.pathname
 
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
 
-    <link rel='preconnect' href='https://www.google-analytics.com/' />
-    <link rel='preconnect' href='https://api.roadmap.sh/' />
-
-    <!-- Google Tag Manager Start -->
-    <script is:inline>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-T66KC7S8');
-    </script>
-    <!-- Google Tag Manager End -->
-
     <slot name='after-header' />
     {
       jsonLd.length > 0 && (
@@ -182,38 +129,8 @@ const gaPageIdentifier = Astro.url.pathname
       )
     }
 
-    <Analytics />
-
-    <slot name='ad-slot-script'>
-      <GoogleAd />
-    </slot>
-
-    {
-      !import.meta.env.DEV && (
-        <>
-          <OneTrust />
-          <Clarity />
-          <RedditPixel />
-          <Hubspot />
-          <Bluconic />
-        </>
-      )
-    }
   </head>
-  <body class={cn('flex min-h-screen flex-col', bodyClassName)}>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src='https://www.googletagmanager.com/ns.html?id=GTM-T66KC7S8'
-        height='0'
-        width='0'
-        style='display:none;visibility:hidden'></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <slot name='course-announcement'>
-      <CourseAnnouncement client:load />
-    </slot>
+  <body class={`flex min-h-screen flex-col ${bodyClassName ?? ''}`}>
     <slot name='page-header'>
       <Navigation />
     </slot>
@@ -221,35 +138,9 @@ const gaPageIdentifier = Astro.url.pathname
     <slot />
 
     <slot name='page-footer'>
-      <slot name='changelog-banner' />
-      <slot name='open-source-banner'>
-        <OpenSourceBanner />
-      </slot>
       <Footer />
     </slot>
 
-    <Authenticator />
-    <slot name='login-popup'>
-      <LoginPopup />
-    </slot>
-
-    <Toaster client:only='react' />
-    <CommandMenu client:idle />
-    <PageProgress initialMessage={initialLoadingMessage} client:idle />
-    <GlobalUpgradeModal client:only='react' />
-
-    <slot name='ad-slot'>
-      <GoogleAdSlot />
-    </slot>
-
     <slot name='after-footer' />
-
-    <PageVisit
-      resourceId={resourceId}
-      resourceType={resourceType}
-      client:load
-    />
-
-    {!import.meta.env.DEV && <LinkedIn />}
   </body>
 </html>

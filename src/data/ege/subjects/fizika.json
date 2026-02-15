@@ -1,0 +1,207 @@
+{
+  "title": "Физика",
+  "slug": "fizika",
+  "description": "Цель: понимание физических законов и умение решать задачи.",
+  "blocks": [
+    {
+      "title": "Блок 1: Механика",
+      "topics": [
+        {
+          "title": "Кинематика и динамика",
+          "slug": "kinematika-dinamika",
+          "description": "Равномерное/ускоренное движение, законы Ньютона, силы.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Статика",
+          "slug": "statika",
+          "description": "Момент силы, условия равновесия.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Законы сохранения",
+          "slug": "zakony-sohraneniya",
+          "description": "Импульс и энергия.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Колебания и волны",
+          "slug": "kolebaniya-volny",
+          "description": "Механические колебания, волновые процессы.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 2: Молекулярная физика и термодинамика",
+      "topics": [
+        {
+          "title": "МКТ и идеальный газ",
+          "slug": "mkt-idealny-gaz",
+          "description": "Уравнение состояния и основные положения.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Изопроцессы и графики",
+          "slug": "izoprocessy",
+          "description": "Графики и их анализ.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Внутренняя энергия и первое начало",
+          "slug": "vnutrennyaya-energiya",
+          "description": "Работа газа и энергия.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Тепловые машины",
+          "slug": "teplovye-mashiny",
+          "description": "КПД и влажность.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 3: Электродинамика",
+      "topics": [
+        {
+          "title": "Электростатика",
+          "slug": "elektrostatika",
+          "description": "Закон Кулона, напряженность, потенциал.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Постоянный ток",
+          "slug": "postoyannyy-tok",
+          "description": "Закон Ома, работа и мощность.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Магнетизм",
+          "slug": "magnetizm",
+          "description": "Сила Ампера и Лоренца.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Электромагнитная индукция",
+          "slug": "indukciya",
+          "description": "Закон Фарадея, правило Ленца.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Колебания, волны и оптика",
+          "slug": "kolbaniya-optika",
+          "description": "Электромагнитные колебания, геометрическая и волновая оптика.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 4: Квантовая и ядерная физика",
+      "topics": [
+        {
+          "title": "Фотоэффект",
+          "slug": "fotoeffekt",
+          "description": "Уравнение Эйнштейна.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Атом и спектры",
+          "slug": "atom-spektry",
+          "description": "Планетарная модель и спектры.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Радиоактивность",
+          "slug": "radioaktivnost",
+          "description": "Закон распада.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Ядерные реакции",
+          "slug": "yadernye-reakcii",
+          "description": "Энергия связи.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 5: Решение задач",
+      "topics": [
+        {
+          "title": "Качественные задачи (№1-4, 21-23)",
+          "slug": "kachestvennye-zadachi",
+          "description": "Понимание теории и объяснение явлений.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Расчетные задачи базового уровня",
+          "slug": "raschetnye-zadachi-baza",
+          "description": "Оттачивание формул и алгоритмов.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Сложные задачи: механика",
+          "slug": "slozhnye-zadachi-mehanika",
+          "description": "Комбинированные задачи на динамику и сохранение.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Сложные задачи: МКТ/термодинамика",
+          "slug": "slozhnye-zadachi-mkt",
+          "description": "Графики и первое начало термодинамики.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Сложные задачи: электродинамика",
+          "slug": "slozhnye-zadachi-elektro",
+          "description": "Частицы в полях, цепи, индукция.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "№29-31 Электродинамика",
+          "slug": "zadachi-29-31",
+          "description": "Самые сложные задания по электродинамике.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "№24-26 Механика",
+          "slug": "zadachi-24-26",
+          "description": "Комбинированные задачи на законы сохранения.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "№32 Квантовая физика",
+          "slug": "zadacha-32-kvant",
+          "description": "Типовые задачи на фотоэффект и ядро.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    }
+  ]
+}

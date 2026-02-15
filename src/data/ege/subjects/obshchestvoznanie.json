@@ -1,0 +1,135 @@
+{
+  "title": "Обществознание",
+  "slug": "obshchestvoznanie",
+  "description": "Цель: системные знания по всем блокам и уверенная аргументация в эссе.",
+  "blocks": [
+    {
+      "title": "Блок 1: Человек и общество",
+      "topics": [
+        {
+          "title": "Общество как система, институты",
+          "slug": "obshchestvo-sistema",
+          "description": "Ключевые понятия и роли институтов.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Глобальные проблемы, типы обществ",
+          "slug": "tipy-obshchestv",
+          "description": "Традиционное, индустриальное, постиндустриальное.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Мышление и деятельность",
+          "slug": "myshlenie-deyatelnost",
+          "description": "Потребности и интересы.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Познание и истина",
+          "slug": "poznanie-istina",
+          "description": "Формы, методы, виды знаний, критерии истины.",
+          "difficulty": "easy",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 2: Экономика",
+      "topics": [
+        {
+          "title": "Теория: спрос, предложение, рынки",
+          "slug": "ekonomika-teoriya",
+          "description": "Базовая теория и ключевые определения.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Решение экономических задач (№22)",
+          "slug": "ekonomika-zadachi-22",
+          "description": "Проценты, кредиты, налоги: логика и математика.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 3: Социальные отношения",
+      "topics": [
+        {
+          "title": "Социальные отношения",
+          "slug": "socialnye-otnosheniya",
+          "description": "Стратификация, группы, конфликты, контроль.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 4: Политика",
+      "topics": [
+        {
+          "title": "Политика",
+          "slug": "politika",
+          "description": "Формы государства, политическая система, участие.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 5: Право",
+      "topics": [
+        {
+          "title": "Теория права",
+          "slug": "teoriya-prava",
+          "description": "Источники, нормы, ответственность.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Конституционное и отрасли права",
+          "slug": "otrasli-prava",
+          "description": "Объемный блок: конституционное, гражданское, трудовое, уголовное.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 6: Развернутый ответ",
+      "topics": [
+        {
+          "title": "№24 Понятие и предложения",
+          "slug": "zadanie-24",
+          "description": "Дать точное определение и 2 предложения.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "№25 Раскрытие темы по плану",
+          "slug": "zadanie-25",
+          "description": "Структура, теория, примеры.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "№26/28 Конкретизация и план",
+          "slug": "zadanie-26-28",
+          "description": "Иллюстрации и логика плана.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "№29 ЭССЕ",
+          "slug": "zadanie-29-esse",
+          "description": "Смысл высказывания, теория, факты, вывод.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    }
+  ]
+}

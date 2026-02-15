@@ -1,0 +1,207 @@
+{
+  "title": "История",
+  "slug": "istoriya",
+  "description": "Цель: хронология, причинно-следственные связи и работа с источниками.",
+  "blocks": [
+    {
+      "title": "Блок 1: Древность и Средневековье (до конца XVII в.)",
+      "topics": [
+        {
+          "title": "Древняя Русь и Крещение",
+          "slug": "drevyannaya-rus-kreshchenie",
+          "description": "Восточные славяне, образование государства, Крещение Руси.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Удельная Русь и ордынское иго",
+          "slug": "udelnaya-rus-orda",
+          "description": "Нашествие и последствия.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Объединение земель вокруг Москвы",
+          "slug": "moskva-obedinenie",
+          "description": "Формирование единого государства.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Россия в XVI веке и Смутное время",
+          "slug": "xvi-smuta",
+          "description": "Иван Грозный и Смута.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Россия в XVII веке",
+          "slug": "xvii-romanovy",
+          "description": "Первые Романовы, раскол, социальные движения.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 2: Россия в XVIII веке",
+      "topics": [
+        {
+          "title": "Эпоха Петра I",
+          "slug": "petr-1",
+          "description": "Реформы и Северная война.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Дворцовые перевороты",
+          "slug": "dvortsovye-perevoroty",
+          "description": "Смена правителей и особенности эпохи.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Екатерина II и Пугачев",
+          "slug": "ekaterina-2",
+          "description": "Просвещенный абсолютизм и восстание.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Внешняя политика XVIII века",
+          "slug": "vneshnyaya-politika-18",
+          "description": "Русско-турецкие войны, разделы Польши.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 3: Россия в XIX веке",
+      "topics": [
+        {
+          "title": "Александр I и 1812 год",
+          "slug": "aleksandr-1-1812",
+          "description": "Отечественная война и декабристы.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Николай I и общественная мысль",
+          "slug": "nikolay-1",
+          "description": "Крымская война, западники и славянофилы.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Великие реформы Александра II",
+          "slug": "reformy-aleksandra-2",
+          "description": "Отмена крепостного права и реформы.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Контрреформы и общественные движения",
+          "slug": "kontrreformy-19",
+          "description": "Народничество, марксизм.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Внешняя политика XIX века",
+          "slug": "vneshnyaya-politika-19",
+          "description": "Кавказ, Балканы, Дальний Восток.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 4: Россия в XX – начале XXI вв.",
+      "topics": [
+        {
+          "title": "Революции и реформы начала века",
+          "slug": "revolyucii-1905-1917",
+          "description": "1905–1907, реформы Столыпина.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Первая мировая и революции 1917",
+          "slug": "pervaya-mirovaya-1917",
+          "description": "Февральская и Октябрьская революции.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Гражданская война и НЭП",
+          "slug": "grazhdanskaya-voina-nep",
+          "description": "Образование СССР.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Индустриализация и сталинизм",
+          "slug": "industrializaciya-stalinizm",
+          "description": "Коллективизация и репрессии.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Великая Отечественная война",
+          "slug": "vov",
+          "description": "Периодизация, основные сражения, тыл.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Послевоенный период и «застой»",
+          "slug": "poslevoennyy-period",
+          "description": "Оттепель, застой, ключевые события.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Перестройка и распад СССР",
+          "slug": "perestroyka-sssr",
+          "description": "Причины и последствия.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Современная Россия",
+          "slug": "sovremennaya-rossiya",
+          "description": "1990–2000-е годы.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 5: Источники и сочинение",
+      "topics": [
+        {
+          "title": "Анализ исторического источника (№20-22)",
+          "slug": "istoricheskiy-istochnik",
+          "description": "Автор, эпоха, цель, контекст.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Анализ карты/ситуации/культуры (№23-24)",
+          "slug": "istoricheskiy-analiz",
+          "description": "Памятники культуры, карты, причины и следствия.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "№25 Историческое сочинение",
+          "slug": "istoricheskoe-sochinenie",
+          "description": "Структура, выбор периода, ключевые события и личности.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    }
+  ]
+}

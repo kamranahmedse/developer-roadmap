@@ -1,6 +1,4 @@
 ---
-import AstroIcon from '../AstroIcon.astro';
-import { MarkFavorite } from './MarkFavorite';
 export interface FeaturedItemType {
   isUpcoming?: boolean;
   isNew?: boolean;
@@ -33,17 +31,7 @@ const {
     {text}
   </span>
 
-  {
-    allowBookmark && (
-      <MarkFavorite
-        resourceId={url.split('/').pop()!}
-        resourceType={
-          url.includes('best-practices') ? 'best-practice' : 'roadmap'
-        }
-        client:only='react'
-      />
-    )
-  }
+  {allowBookmark && null}
 
   {
     isNew && (

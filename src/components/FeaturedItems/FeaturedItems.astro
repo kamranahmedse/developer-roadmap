@@ -1,5 +1,4 @@
 ---
-import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton';
 import FeaturedItem, { type FeaturedItemType } from './FeaturedItem.astro';
 
 export interface Props {
@@ -39,13 +38,7 @@ const {
           </li>
         ))
       }
-      {
-        showCreateRoadmap && (
-          <li>
-            <CreateRoadmapButton client:load className='min-h-[54px]' />
-          </li>
-        )
-      }
+      {showCreateRoadmap && null}
     </ul>
   </div>
 </div>

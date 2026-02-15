@@ -1,0 +1,207 @@
+{
+  "title": "Русский язык",
+  "slug": "russkiy-yazyk",
+  "description": "Цель: высокий балл за счет минимальных ошибок в тесте и идеального сочинения.",
+  "blocks": [
+    {
+      "title": "Блок 1: Нормы языка (Задания 1-3, 5-8)",
+      "topics": [
+        {
+          "title": "Орфоэпия (ударения)",
+          "slug": "orfoepiya-udareniya",
+          "description": "Составь список слов из банка ФИПИ, учи по 10-15 в неделю.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Лексические нормы (паронимы)",
+          "slug": "leksicheskie-normy-paronimy",
+          "description": "Выучи паронимы из списка ФИПИ, практика на заданиях.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Морфологические нормы",
+          "slug": "morfologicheskie-normy",
+          "description": "Склонение числительных, формы слов: правила и исключения.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Синтаксические нормы",
+          "slug": "sintaksicheskie-normy",
+          "description": "Разбор ошибок: несогласованность, управление, причастный/деепричастный оборот.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 2: Орфография (Задания 4, 9-15)",
+      "topics": [
+        {
+          "title": "Правописание корней",
+          "slug": "pravopisanie-korney",
+          "description": "Чередующиеся, проверяемые/непроверяемые гласные. Правила и словарные слова.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Правописание приставок",
+          "slug": "pravopisanie-pristavok",
+          "description": "Неизменяемые, на з/с, пре-/при-. Правила и исключения.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Правописание суффиксов и окончаний",
+          "slug": "pravopisanie-suffiksov-okoncaniy",
+          "description": "Таблицы с правилами для разных частей речи.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Слитное/раздельное/дефисное написание",
+          "slug": "slitno-razdelno-defisno",
+          "description": "Частые случаи: то/же/либо/нибудь, пол-/полу-.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Н/НН в разных частях речи",
+          "slug": "n-nn",
+          "description": "Алгоритм решения.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 3: Пунктуация (Задания 16-21)",
+      "topics": [
+        {
+          "title": "Запятая в простом и сложном предложениях",
+          "slug": "zapytaya-prostoe-slozhnoe",
+          "description": "Отработка базовых случаев.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Тире между подлежащим и сказуемым",
+          "slug": "tire-podlezh-skaz",
+          "description": "Основные правила и исключения.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Причастные и деепричастные обороты",
+          "slug": "prichastnye-deeprichastnye",
+          "description": "Знаки препинания и типовые ошибки.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Вводные слова и конструкции",
+          "slug": "vvodnye-slova",
+          "description": "Классификация и пунктуация.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Сложноподчиненное предложение",
+          "slug": "spp",
+          "description": "Запятые и основные виды придаточных.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Однородные члены предложения",
+          "slug": "odnorodnye-chleny",
+          "description": "Союзы и запятые.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 4: Текст, речь, выразительные средства (Задания 1-3, 22-26)",
+      "topics": [
+        {
+          "title": "Информационная обработка текста",
+          "slug": "informacionnaya-obrabotka",
+          "description": "Учись выделять главное.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Средства связи предложений",
+          "slug": "sredstva-svyazi",
+          "description": "Лексические и морфологические средства.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Типы речи",
+          "slug": "tipy-rechi",
+          "description": "Функционально-смысловые типы.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Лексическое значение слова",
+          "slug": "leksicheskoe-znachenie",
+          "description": "Синонимы, антонимы, контекст.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Изобразительно-выразительные средства",
+          "slug": "izrazi-tropy-figury",
+          "description": "Тропы и фигуры речи: учи и находи в тексте.",
+          "difficulty": "medium",
+          "materials": []
+        }
+      ]
+    },
+    {
+      "title": "Блок 5: Сочинение (Задание 27)",
+      "topics": [
+        {
+          "title": "Структура сочинения",
+          "slug": "sochinenie-struktura",
+          "description": "Вступление → 2 примера → проблема → позиция автора → своя позиция → заключение.",
+          "difficulty": "easy",
+          "materials": []
+        },
+        {
+          "title": "Алгоритм работы с текстом",
+          "slug": "sochinenie-algoritm",
+          "description": "Как быстро выявлять проблему и позицию автора.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Комментарий к проблеме",
+          "slug": "sochinenie-kommentarij",
+          "description": "Анализ примера, пояснение, связь между примерами.",
+          "difficulty": "hard",
+          "materials": []
+        },
+        {
+          "title": "Аргументация и банк примеров",
+          "slug": "sochinenie-argumenty",
+          "description": "Литературные, исторические, жизненные аргументы по ключевым проблемам.",
+          "difficulty": "medium",
+          "materials": []
+        },
+        {
+          "title": "Речевое оформление и грамотность",
+          "slug": "sochinenie-grammatika",
+          "description": "Проверка на речевые ошибки и логичность изложения.",
+          "difficulty": "hard",
+          "materials": []
+        }
+      ]
+    }
+  ]
+}
