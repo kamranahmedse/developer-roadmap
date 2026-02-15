@@ -1,13 +1,7 @@
 ---
 import Icon from '../components/AstroIcon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { listOfficialRoadmaps } from '../queries/official-roadmap';
-
-const roadmapIds = await listOfficialRoadmaps();
-const legacyRoadmapUrls = [
-  ...roadmapIds.map((roadmap) => `/${roadmap.slug}/`),
-  '/roadmaps/',
-];
+const legacyRoadmapUrls = ['/roadmaps/'];
 ---
 
 <BaseLayout title='Page not found' permalink={'/404'} noIndex={true}>

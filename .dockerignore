@@ -1,0 +1,17 @@
+node_modules
+.astro
+.temp
+.git
+.gitignore
+.vscode
+.cursor
+.DS_Store
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+*.local
+.env
+.env.*
+
+# Build output
+dist
