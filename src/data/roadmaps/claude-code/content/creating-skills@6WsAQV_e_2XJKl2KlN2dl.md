@@ -4,9 +4,9 @@ To create a custom skill in Claude Code, you must establish a new folder within 
 
 Visit the following resources to learn more:
 
+- [@course@Agent Skills with Anthropic](https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/)
 - [@official@Extend Claude with skills](https://code.claude.com/docs/en/skills#extend-claude-with-skills)
 - [@official@How to create custom Skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)
-- [@course@Agent Skills with Anthropic](https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/)
 - [@article@Claude Code Skills — Equipping Your Claude Code Agents with more Superpowers](https://medium.com/@ooi_yee_fei/claude-code-skills-superpowering-claude-code-agents-a42b44a58ae2)
 - [@article@Build Your First Claude Code Agent Skill: A Simple Project Memory System That Saves Hours](https://pub.spillwave.com/build-your-first-claude-code-skill-a-simple-project-memory-system-that-saves-hours-1d13f21aff9e)
 - [@video@Claude Code Skills & skills.sh - Crash Course](https://www.youtube.com/watch?v=rcRS8-7OgBo)
