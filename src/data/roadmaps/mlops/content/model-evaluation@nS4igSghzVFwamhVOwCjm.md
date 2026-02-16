@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@What is Model Evaluation](https://domino.ai/data-science-dictionary/model-evaluation)
 - [@article@Model Evaluation Metrics](https://www.markovml.com/blog/model-evaluation-metrics)
-- [@article@Read Articles about Model Evaluation](https://towardsdatascience.com/tag/model-evaluation/)
+- [@article@How to Evaluate the Performance of Your ML/ AI Models](https://towardsdatascience.com/how-to-evaluate-the-performance-of-your-ml-ai-models-ba1debc6f2fa/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@How to evaluate ML models | Evaluation metrics for machine learning](https://www.youtube.com/watch?v=LbX4X71-TFI)

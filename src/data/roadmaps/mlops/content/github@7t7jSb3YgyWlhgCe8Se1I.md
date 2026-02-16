@@ -7,5 +7,6 @@ Visit the following resources to learn more:
 - [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
 - [@official@GitHub](https://github.com)
 - [@official@GitHub Documentation](https://docs.github.com/en/get-started/quickstart)
+- [@article@Comprehensive Guide to GitHub for Data Scientists](https://towardsdatascience.com/comprehensive-guide-to-github-for-data-scientist-d3f71bd320da/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 - [@feed@Explore top posts about GitHub](https://app.daily.dev/tags/github?ref=roadmapsh)

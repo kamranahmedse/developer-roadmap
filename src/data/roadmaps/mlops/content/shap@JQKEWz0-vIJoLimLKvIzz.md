@@ -7,4 +7,5 @@ Visit the following resources to learn more:
 - [@official@Welcome to the SHAP documentation](https://shap.readthedocs.io/en/latest/)
 - [@opensource@shap](https://github.com/shap/shap)
 - [@article@Explainable AI - Understanding and Trusting Machine Learning Models](https://www.datacamp.com/tutorial/explainable-ai-understanding-and-trusting-machine-learning-models)
+- [@article@When Shapley Values Break: A Guide to Robust Model Explainability](https://towardsdatascience.com/when-shapley-values-break-a-guide-to-robust-model-explainability/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@SHAP values for beginners | What they mean and their applications](https://www.youtube.com/watch?v=MQ6fFDwjuco)

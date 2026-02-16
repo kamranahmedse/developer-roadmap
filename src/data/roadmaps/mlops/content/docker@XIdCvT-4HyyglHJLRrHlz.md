@@ -6,6 +6,7 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Docker Roadmap](https://roadmap.sh/docker)
 - [@official@Docker Documentation](https://docs.docker.com/)
+- [@article@A Data Scientist’s Guide to Docker Containers](https://towardsdatascience.com/a-data-scientists-guide-to-docker-containers/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@Docker Tutorial](https://www.youtube.com/watch?v=RqTEHSBrYFw)
 - [@video@Docker Simplified in 55 Seconds](https://youtu.be/vP_4DlOH1G4)
 - [@feed@Explore top posts about Docker](https://app.daily.dev/tags/docker?ref=roadmapsh)
