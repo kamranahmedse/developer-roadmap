@@ -6,6 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@Apache Flink Documentation](https://flink.apache.org/)
 - [@article@Apache Flink](https://www.tutorialspoint.com/apache_flink/apache_flink_introduction.htm)
-- [@article@An Introduction to Stream Processing with Apache Flink](https://towardsdatascience.com/an-introduction-to-stream-processing-with-apache-flink-b4acfa58f14d/)
+- [@article@An Introduction to Stream Processing with Apache Flink](https://towardsdatascience.com/an-introduction-to-stream-processing-with-apache-flink-b4acfa58f14d/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@Introduction | Apache Flink 101](https://www.youtube.com/watch?v=3cg5dABA6mo&list=PLa7VYi0yPIH1UdmQcnUr8lvjbUV8JriK0)
 - [@feed@Explore top posts about Apache Flink](https://app.daily.dev/tags/apache-flink?ref=roadmapsh)

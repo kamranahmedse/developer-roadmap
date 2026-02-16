@@ -5,6 +5,7 @@ Machine learning fundamentals encompass the key concepts and techniques that ena
 Visit the following resources to learn more:
 
 - [@roadmap@Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
+- [@article@Everything I Studied to Become a Machine Learning Engineer (No CS Background)](https://towardsdatascience.com/everything-i-studied-to-become-a-machine-learning-engineer-no-cs-background/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@course@Fundamentals of Machine Learning - Microsoft](https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/)
 - [@course@MLCourse.ai](https://mlcourse.ai/)
 - [@course@Fast.ai](https://course.fast.ai)

@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@opensource@What is model training?](https://www.ibm.com/think/topics/model-training)
 - [@article@What Is AI Model Training & Why Is It Important?](https://www.oracle.com/uk/artificial-intelligence/ai-model-training/)
-- [@article@KServe Tutorial](https://towardsdatascience.com/kserve-highly-scalable-machine-learning-deployment-with-kubernetes-aa7af0b71202)
+- [@article@KServe Tutorial](https://towardsdatascience.com/kserve-highly-scalable-machine-learning-deployment-with-kubernetes-aa7af0b71202/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@Five Steps to Create a New AI Model](https://www.youtube.com/watch?v=jcgaNrC4ElU&t=172s)

@@ -1,6 +1,6 @@
 # Python
 
-Python is a widely-used programming language known for its clear syntax and extensive libraries. It's a versatile tool that can handle many tasks, from simple scripting to complex software development. Its ease of use and the availability of specialized libraries for data analysis, machine learning, and automation make it a popular choice for building and deploying machine learning systems.
+Python is a widely used programming language known for its clear syntax and extensive libraries. It's a versatile tool that can handle many tasks, from simple scripting to complex software development. Its ease of use and the availability of specialized libraries for data analysis, machine learning, and automation make it a popular choice for building and deploying machine learning systems.
 
 Visit the following resources to learn more:
 

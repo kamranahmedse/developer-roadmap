@@ -5,6 +5,7 @@ Kafka is a distributed, fault-tolerant, high-throughput streaming platform. It's
 Visit the following resources to learn more:
 
 - [@official@Apache Kafka Quickstart](https://kafka.apache.org/quickstart)
-- [@article@Read Articles about Kafka](https://towardsdatascience.com/tag/apache-kafka/)
+- [@article@What is Apache Kafka?](https://aws.amazon.com/what-is/apache-kafka/)
+- [@article@End-to-End Data Engineering System on Real Data with Kafka, Spark, Airflow, Postgres, and Docker](https://towardsdatascience.com/end-to-end-data-engineering-system-on-real-data-with-kafka-spark-airflow-postgres-and-docker-a70e18df4090/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@Apache Kafka Fundamentals](https://www.youtube.com/watch?v=B5j3uNBH8X4)
 - [@feed@Explore top posts about Kafka](https://app.daily.dev/tags/kafka?ref=roadmapsh)

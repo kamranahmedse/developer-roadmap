@@ -7,5 +7,5 @@ Visit the following resources to learn more:
 - [@roadmap@Visit the Dedicated Terraform Roadmap](https://roadmap.sh/terraform)
 - [@official@Terraform](https://developer.hashicorp.com/terraform)
 - [@article@What is Terraform?](https://www.ibm.com/think/topics/terraform)
-- [@article@Automatically Managing Data Pipeline Infrastructures With Terraform](https://towardsdatascience.com/automatically-managing-data-pipeline-infrastructures-with-terraform-323fd1808a47/)
+- [@article@Automatically Managing Data Pipeline Infrastructures With Terraform](https://towardsdatascience.com/automatically-managing-data-pipeline-infrastructures-with-terraform-323fd1808a47/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@Terraform Course - Automate your AWS cloud infrastructure](https://www.youtube.com/watch?v=SLB_c_ayRMo)

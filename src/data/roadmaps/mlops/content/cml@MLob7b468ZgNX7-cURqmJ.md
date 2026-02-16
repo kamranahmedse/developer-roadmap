@@ -4,6 +4,6 @@ Continuous Machine Learning (CML) is a tool designed to bring continuous integra
 
 Visit the following resources to learn more:
 
-- [@article@CML](https://cml.dev/)
-- [@article@Get Started with CML](https://cml.dev/doc/start)
-- [@article@Continuous Machine Learning](https://towardsdatascience.com/continuous-machine-learning-e1ffb847b8da/)
+- [@official@CML](https://cml.dev/)
+- [@official@Get Started with CML](https://cml.dev/doc/start)
+- [@article@Continuous Machine Learning](https://towardsdatascience.com/continuous-machine-learning-e1ffb847b8da/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)

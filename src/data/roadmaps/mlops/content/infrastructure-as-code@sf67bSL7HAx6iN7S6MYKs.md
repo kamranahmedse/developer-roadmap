@@ -5,5 +5,6 @@ Infrastructure as Code (IaC) is a modern approach to managing and provisioning I
 Visit the following resources to learn more:
 
 - [@article@What is Infrastructure as Code?](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac)
+- [@article@Automatically Managing Data Pipeline Infrastructures With Terraform](https://towardsdatascience.com/automatically-managing-data-pipeline-infrastructures-with-terraform-323fd1808a47/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@Terraform Course for Beginners](https://www.youtube.com/watch?v=SLB_c_ayRMo)
 - [@video@8 Terraform Best Practices](https://www.youtube.com/watch?v=gxPykhPxRW0)
