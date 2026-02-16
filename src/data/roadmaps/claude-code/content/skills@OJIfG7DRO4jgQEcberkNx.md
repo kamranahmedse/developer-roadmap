@@ -4,10 +4,10 @@ In Claude Code, Skills are self-contained folders of "expert knowledge" and repe
 
 Visit the following resources to learn more:
 
+- [@course@Agent Skills with Anthropic](https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/)
 - [@official@Extend Claude with skills](https://code.claude.com/docs/en/skills#extend-claude-with-skills)
 - [@official@The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en)
 - [@opensource@skill](https://github.com/anthropics/skills)
-- [@course@Agent Skills with Anthropic](https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/)
 - [@article@Claude Code Skills — Equipping Your Claude Code Agents with more Superpowers](https://medium.com/@ooi_yee_fei/claude-code-skills-superpowering-claude-code-agents-a42b44a58ae2)
 - [@video@Claude Code Skills & skills.sh - Crash Course](https://www.youtube.com/watch?v=rcRS8-7OgBo)
 - [@video@Stop Using Claude Code Without Skills](https://www.youtube.com/watch?v=vIUJ4Hd7be0)

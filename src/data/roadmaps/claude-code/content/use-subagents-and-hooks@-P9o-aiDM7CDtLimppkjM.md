@@ -5,5 +5,5 @@ In Claude Code, Subagents and Hooks are powerful architectural tools that manage
 Visit the following resources to learn more:
 
 - [@official@Claude Code Subagents: Complete Guide to Multi-Agent Architecture](https://wmedia.es/en/writing/claude-code-subagents-guide-ai)
-- [@article@Delegate verbose operations to subagents](https://code.claude.com/docs/en/costs#delegate-verbose-operations-to-subagents)
 - [@official@Automate workflows with hooks](https://code.claude.com/docs/en/hooks-guide)
+- [@article@Delegate verbose operations to subagents](https://code.claude.com/docs/en/costs#delegate-verbose-operations-to-subagents)
