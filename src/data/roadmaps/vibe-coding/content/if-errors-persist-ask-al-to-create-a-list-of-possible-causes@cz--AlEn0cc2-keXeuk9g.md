@@ -1,3 +1,3 @@
-# Ask Al to create a list of possible causes
+# If errors persist, ask Al to create a list of possible causes
 
-If a bug keeps coming back after fixes, ask AI to step back and list all the possible reasons it could be happening. This forces a more systematic approach and often surfaces the real root cause instead of just patching symptoms.
+Sometimes a bug doesn't go away after the first fix, or the AI's solution introduces a new problem. When this happens, instead of asking it to keep trying fixes, ask it to step back and list all the possible reasons why the error could be happening. This forces a more systematic approach and often surfaces the real root cause rather than just treating the symptoms. Once you have the list, you can go through the possibilities one by one and rule them out until you find the actual culprit.

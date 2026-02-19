@@ -1,3 +1,3 @@
 # Explicitly ask AI to perform a security audit of the application
 
-Before launching anything publicly, ask AI to go through the code and look for security issues — unprotected routes, missing input validation, exposed data, and anything else that could be exploited. Treat this as a mandatory step, not an optional one.
+Before you launch anything to the public, ask the AI to go through your codebase and look for security vulnerabilities. Ask it specifically to check for common issues like exposed API keys, unprotected routes, missing input validation, insecure data storage, and anything else that could be exploited. AI is quite good at spotting these problems when you ask it to look for them directly — the key word being "ask", because it won't volunteer this information unless prompted. Treat a security audit as a mandatory step before going live, not an optional one, and make it part of your routine whenever you add significant new functionality.

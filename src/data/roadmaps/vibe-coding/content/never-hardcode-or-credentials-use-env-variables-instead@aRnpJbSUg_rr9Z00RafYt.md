@@ -1,3 +1,3 @@
-# Always Use env variables
+# Never hardcode or credentials; use env variables instead
 
-API keys, passwords, and tokens should never appear directly in your code. Store them in a `.env` file using environment variables, and make sure that file is listed in `.gitignore` so it never gets pushed to GitHub accidentally.
+API keys, database passwords, authentication tokens — these are secrets, and they should never appear directly in your code. If they do, anyone who can see your code, including people browsing a public GitHub repository, can steal them and use them to access your services or rack up charges on your accounts. Environment variables are the standard solution — they store sensitive values outside of your codebase in a separate file that never gets shared or committed to version control. Always ask the AI to use environment variables for anything sensitive, and double-check that your `.env` file is listed in your `.gitignore` so it never accidentally gets pushed to GitHub.

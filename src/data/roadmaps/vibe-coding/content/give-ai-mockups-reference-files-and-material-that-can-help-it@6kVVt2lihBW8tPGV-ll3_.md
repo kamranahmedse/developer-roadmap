@@ -1,3 +1,3 @@
-# Give AI mockups, reference files, and material 
+# Give AI mockups, reference files and material that can help it
 
-Always give AI something to look at, not just something to read. Paste in existing files, attach screenshots, or link to references. The more relevant material you provide, the less it has to guess and the better the output will be.
+AI works best when it has something to look at, not just something to read. If you have a design mockup, a screenshot, a diagram, or even a rough hand-drawn sketch, include it in your prompt. If there's an existing file in your project that the AI should follow as a pattern, paste it in. The more relevant context and visual reference you provide, the less the AI has to guess, and the closer the output will be to what you actually had in mind. Always ask yourself — what would help a human developer understand this better? Then give that to the AI too.

@@ -1,3 +1,3 @@
 # Ask AI to handle your Git and GitHub CLI tasks
 
-You don't need to memorize Git commands. Ask AI to write commit messages, create branches, push code, and manage your repository for you. This removes one of the biggest barriers beginners face with version control and keeps the workflow moving smoothly.
+You don't need to memorize Git commands to use version control effectively as a vibe coder. Just ask the AI to handle it for you. You can tell it to write your commit messages, create new branches, push your code to GitHub, or even set up your repository from scratch. Tools like Claude Code can run these commands directly in your terminal, which means the whole version control workflow can be managed through conversation rather than manual typing. This removes one of the biggest barriers beginners face with Git and lets you get the benefits of version control without having to become an expert in it.

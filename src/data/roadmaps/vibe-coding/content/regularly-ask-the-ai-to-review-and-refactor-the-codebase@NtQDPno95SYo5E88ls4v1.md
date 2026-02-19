@@ -1,3 +1,3 @@
 # Regularly ask the AI to review and refactor the codebase
 
-Every few sessions, pause new feature work and ask AI to clean up the existing code. Over time, code gets messy, and a regular cleanup keeps the project healthy and makes it easier to keep building without things breaking unexpectedly.
+Every few sessions, pause on building new features and ask the AI to look over the existing code and clean it up. Over time, even well-written code gets messy — there will be unused functions, repeated logic, files that have grown too large, and shortcuts that made sense at the time but are now causing problems. A regular refactor session keeps the project healthy, improves performance, and makes it easier to keep building without things breaking unexpectedly. It also helps the AI work better in future sessions because it's dealing with cleaner, more organized code rather than trying to navigate through a tangled mess.

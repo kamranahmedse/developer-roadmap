@@ -1,6 +1,6 @@
 # Pick a popular tech stack rather than new/niche ones
 
-Use popular tech stacks like React, Next.js, Tailwind, and Supabase. AI has been trained on a lot of code using these tools, so it gives better results. If you use something niche or very new, AI will make more mistakes, and you will spend more time fixing things. Popular stacks also have more tutorials and community support, which helps when you get stuck.
+Stick to well-known technologies like React, Next.js, Tailwind CSS, or Supabase rather than chasing the newest or most obscure tools. Popular stacks have more documentation, more tutorials, more community support, and most importantly, AI tools like Claude and ChatGPT have been trained with so much more code written in those technologies. When you use a niche or brand-new tool, the AI is less familiar with it, which means it makes more mistakes, gives weaker suggestions, and you'll find it harder to get help when things go wrong. As a beginner, your goal is to reduce friction, and a popular stack does exactly that.
 
 Visit the following resources to learn more:
 

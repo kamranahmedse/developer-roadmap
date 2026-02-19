@@ -1,3 +1,3 @@
-# For unrelated tasks, clean and start new sessions
+# For unrelated tasks, proactively clean and start new sessions
 
-When switching to a different task, start a new chat. Carrying over context from an unrelated session confuses the AI, reduces the quality of responses, and wastes tokens on information that is no longer relevant.
+Every chat session has a context window — a limit to how much the AI can keep track of at once. When you switch to a completely different task, carrying over the context from a previous task can confuse the AI and make its responses less accurate. Get into the habit of starting a fresh session whenever you're moving on to something unrelated. It keeps the AI focused, reduces the chances of errors, and also saves on token costs if you're using a paid plan.

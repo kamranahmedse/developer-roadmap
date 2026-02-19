@@ -1,3 +1,3 @@
-# Use git commit
+# Use `git commit` regularly
 
-Every time AI completes a task, and the result looks good, make a commit. This locks in your progress so that if the next task breaks something, you can go back to the last working version without losing any of your previous work.
+Make it a habit to run a Git commit every time the AI completes a task successfully and the result looks good. If the next task goes badly wrong, you lose nothing more than that one task, rather than hours of work. Over time, your commit history also becomes a useful record of how your project evolved, which can help when you need to understand why a certain decision was made or when something first started breaking.
