@@ -1,0 +1,3 @@
+# Plan what you need to develop
+
+Don't try to build everything at once. Start with your MVP, the simplest version that works. If you are building a task manager, that might just be adding, viewing, and deleting tasks. Nothing else. Then break the rest into phases. Maybe phase two is user accounts, phase three is notifications. This way you always have something working, and the AI gives better results when you give it smaller, focused tasks instead of asking it to build a whole app in one go.
