@@ -1,0 +1,3 @@
+# Illustrate AI with Examples
+
+Show AI what you want instead of just telling it. Attach a screenshot, a rough sketch, or a link to a website that looks like what you are trying to build. If you have code that you want AI to follow as a pattern, paste it in. Examples work much better than descriptions because AI doesn't have to guess what you mean. You can use tools like [excalidraw](https://excalidraw.com) for sketching.

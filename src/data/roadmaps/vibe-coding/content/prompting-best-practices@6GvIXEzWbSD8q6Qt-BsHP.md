@@ -1,0 +1,9 @@
+# Prompting Best Practices
+
+How you talk to AI determines the quality of what you get back. Ask for one thing at a time, be specific, show examples, tell it what to avoid, and use a context document so you don't repeat yourself every session.
+
+Visit the following resources to learn more:
+
+- [@roadmap@Visit the Dedicated Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
+- [@article@Prompt Engineering Best Practices: Tips, Tricks, and Tools](https://www.digitalocean.com/resources/articles/prompt-engineering-best-practices)
+- [@video@RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models](https://www.youtube.com/watch?v=zYGDpG-pTho)
