@@ -1,3 +1,3 @@
-# Ask for one task at a time 
+# Ask for one task at a time rather than five different items
 
-Keep your prompts focused. Ask AI to do one thing, review the result, and then move on to the next. When you stack multiple requests into one prompt, the AI loses focus and mistakes pile up across all of them at once.
+It's tempting to write one big prompt that asks the AI to do everything at once, but this almost always leads to problems. The AI tries to do too many things simultaneously, makes mistakes across multiple areas, and it becomes very hard to figure out what went wrong. Instead, break your request down and tackle one thing at a time. Finish one task, review it, confirm it works, and then move on to the next. This approach keeps the AI focused and keeps you in control of what's happening at every step.

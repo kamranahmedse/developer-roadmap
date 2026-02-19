@@ -1,6 +1,6 @@
 # Security Best Practices
 
-Security is easy to overlook when you are focused on building, but the consequences of ignoring it can be serious. Always use environment variables for sensitive information like API keys and passwords, and before going live, explicitly ask AI to audit your app for vulnerabilities.
+Security is one of those topics that beginners tend to ignore until something goes wrong — and by then it can be very costly. When you're building with AI, it's easy to focus entirely on getting features working and overlook the fact that your app might be handling sensitive user data, processing payments, or exposing APIs to the public internet. AI won't automatically make your app secure unless you ask it to. Building good security habits early is much easier than trying to fix a vulnerable app after it's already been deployed and is being used by real people.
 
 Visit the following resources to learn more:
 

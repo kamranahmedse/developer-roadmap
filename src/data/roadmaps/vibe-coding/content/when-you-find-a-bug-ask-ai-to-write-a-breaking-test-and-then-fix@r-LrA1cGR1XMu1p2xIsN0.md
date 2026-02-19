@@ -1,3 +1,3 @@
-# Use breaking tests
+# When you find a bug, ask AI to write a breaking test and then fix
 
-Before fixing a bug, ask AI to write a test that reproduces it, that is, a test that currently fails because of the broken behavior. Then ask it to fix the code so the test passes. This confirms the fix is real and prevents the same bug from coming back silently.
+When a bug shows up, don't just ask the AI to fix it straight away. Instead, first ask it to write a test that reproduces the bug — a test that currently fails because of the broken behavior. Then ask it to fix the code so that the test passes. This approach is valuable for two reasons. First, it confirms that the AI actually understands what the bug is before it tries to fix it. Second, it leaves you with a permanent test that will alert you if that same bug ever comes back in the future. It turns every bug into a long-term improvement to your project's stability.

@@ -1,3 +1,3 @@
-# Tell AI to add logs 
+# Tell AI to add logs to find the error faster
 
-Ask AI to add log statements to the relevant parts of the code so you can see exactly what is happening at each step when the error occurs. Once you know where things go wrong, ask it to remove the logs and apply the proper fix.
+If the error isn't obvious, ask the AI to add log statements throughout the relevant parts of the code. Logs print information to the console as the code runs, showing you exactly what's happening at each step and where things go wrong. This is a classic debugging technique that works just as well in vibe coding. Once you've identified the problem using the logs, you can ask the AI to remove them and apply the proper fix. It's a simple trick that can save a lot of time when the error is buried deep in the logic.

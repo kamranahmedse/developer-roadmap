@@ -1,3 +1,3 @@
-# Tell AI what NOT to do
+# Based on your previous coding sessions, tell AI what NOT to do
 
-Keep track of the mistakes AI keeps repeating and include them in your prompts. Telling AI what to avoid is just as important as telling it what to do. A simple line like "do not add placeholder data" can prevent a lot of unnecessary back and forth.
+Over time, you'll notice patterns in the mistakes AI makes — maybe it keeps using inline styles when you want CSS classes, or it keeps making files too large, or it keeps adding features you didn't ask for. Keep a mental or written note of these patterns and include them explicitly in your prompts. Telling the AI what to avoid is just as important as telling it what to do. A simple line like "do not add any placeholder data" or "do not create new files unless necessary" can prevent a lot of unnecessary back and forth.
