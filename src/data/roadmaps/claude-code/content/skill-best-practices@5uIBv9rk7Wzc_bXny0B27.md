@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [@official@The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en)
 - [@article@A useful cheatsheet for understanding Claude Skills](https://www.reddit.com/r/ClaudeAI/comments/1qbpe91/a_useful_cheatsheet_for_understanding_claude/)
 - [@article@Writing Claude Skills That Actually Work: A Guide to What Works (And What Doesn’t)](https://medium.com/@creativeaininja/writing-claude-skills-that-actually-work-a-guide-to-what-works-and-what-doesnt-2dfcd9593106)
-- [@video@Claude Code Skills are INSANE (and you’re not using them correctly](https://www.youtube.com/watch?v=thxXGxYIwUI)
