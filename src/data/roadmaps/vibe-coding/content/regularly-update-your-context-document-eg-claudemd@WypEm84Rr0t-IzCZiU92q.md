@@ -4,5 +4,5 @@ Your context document is a file where you store everything the AI needs to know 
 
 Visit the following resources to learn more:
 
-- [@article@# Writing a good CLAUDE.md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
+- [@article@Writing a good CLAUDE.md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
 - [@article@Rules Files for Safer Vibe Coding](https://www.wiz.io/blog/safer-vibe-coding-rules-files)

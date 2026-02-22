@@ -5,5 +5,5 @@ Prompting is the skill at the heart of vibe coding. It's how you communicate wit
 Visit the following resources to learn more:
 
 - [@roadmap@Visit the Dedicated Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
-- [@video@RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models](https://www.youtube.com/watch?v=zYGDpG-pTho)
 - [@article@Vibe Coding Like A Pro](https://leonnicholls.medium.com/vibe-coding-like-a-pro-de18aa1a0cce)
+- [@video@RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models](https://www.youtube.com/watch?v=zYGDpG-pTho)

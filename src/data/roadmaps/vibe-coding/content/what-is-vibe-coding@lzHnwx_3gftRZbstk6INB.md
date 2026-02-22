@@ -4,8 +4,8 @@ Vibe coding is a modern software development approach in which developers use AI
 
 Visit the following resources to learn more:
 
-- [@article@hat is vibe coding? - Google](https://cloud.google.com/discover/what-is-vibe-coding)
+- [@article@What is vibe coding? - Google](https://cloud.google.com/discover/what-is-vibe-coding)
 - [@article@What is vibe coding? - IBM](https://www.ibm.com/think/topics/vibe-coding)
 - [@article@Human Won’t Replace Python](https://towardsdatascience.com/human-wont-replace-python/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
-- [@video@hat Is Vibe Coding? Building Software with Agentic AI](https://www.youtube.com/watch?v=Y68FF_nUSWE)
+- [@video@What Is Vibe Coding? Building Software with Agentic AI](https://www.youtube.com/watch?v=Y68FF_nUSWE)
 - [@video@What is Vibe Coding?](https://www.youtube.com/watch?v=5OWurmg41tI)

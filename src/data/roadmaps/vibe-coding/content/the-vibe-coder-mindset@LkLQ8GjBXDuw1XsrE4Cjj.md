@@ -1,3 +1,5 @@
+# undefined
+
 The vibe coder mindset
 
 AI is a collaborator, not just a tool. Think of it less like a search engine and more like a junior developer sitting next to you. You don't just ask it one question and walk away — you have a back-and-forth conversation with it. You give it context, review what it produces, push back when something looks wrong, and guide it toward what you actually want. The more clearly you explain your idea, the better it performs. This is a big shift from traditional programming, where you had to know exactly what to type and in what order. With AI, your job changes from writing the code to directing it — you become the decision maker who sets the vision, checks the output, and keeps things on track. You still need to understand the basics, but you no longer need to memorize syntax or spend hours figuring out how to implement every small detail from scratch.
