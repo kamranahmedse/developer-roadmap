@@ -1,3 +1,3 @@
 # Prompt the error message and let AI do the rest
 
-When something breaks, the first thing you should do is copy the full error message and paste it directly into your prompt. Don't try to summarize it or describe it in your own words — give the AI the exact text. Then, add a brief description of what you were trying to do when the error appeared. In most cases, this is enough for the AI to identify the problem and suggest a fix. It's one of the fastest and most effective ways to resolve bugs without needing to understand every line of the code yourself.
+When something breaks, copy the full error message and paste it directly into your prompt along with a short description of what you were doing. In most cases, this is enough for AI to find the problem and suggest a fix without any back and forth.

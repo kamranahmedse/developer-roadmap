@@ -1,3 +1,3 @@
-# Be specific about what you want rather than high-level vague instructions
+# Be specific about what you want 
 
-The more detail you give, the better the output. Saying "make a dashboard" gives the AI very little to work with, whereas saying "make a dashboard with a sidebar on the left, a stats overview at the top with three cards showing total users, revenue, and active sessions, and a data table below" gives it a clear picture to build from. Think about what the result should actually look like and describe it as precisely as you can. You don't need to use technical jargon — plain, descriptive language works just as well as long as it's specific.
+Describe exactly what you want — layout, behavior, content, constraints. The more detail you give, the less the AI has to guess. Vague prompts produce vague results, and you end up spending more time correcting than if you had been specific from the start.
