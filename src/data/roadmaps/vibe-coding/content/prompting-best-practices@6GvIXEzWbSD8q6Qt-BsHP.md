@@ -1,6 +1,6 @@
 # Prompting Best Practices
 
-Prompting is the skill at the heart of vibe coding. It's how you communicate with AI, and like any form of communication, there's a big difference between doing it poorly and doing it well. A vague or confusing prompt will get you a vague or broken result. A clear, specific, well-structured prompt will get you something much closer to what you actually want.
+How you talk to AI determines the quality of what you get back. Ask for one thing at a time, be specific, show examples, tell it what to avoid, and use a context document so you don't repeat yourself every session.
 
 Visit the following resources to learn more:
 

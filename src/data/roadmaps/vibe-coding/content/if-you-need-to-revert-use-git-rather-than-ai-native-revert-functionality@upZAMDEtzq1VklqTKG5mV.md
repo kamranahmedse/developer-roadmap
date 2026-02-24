@@ -1,3 +1,3 @@
-# If you need to revert, use Git rather than AI native revert functionality
+# Revert with Git
 
-Most AI coding tools have some kind of built-in undo or revert feature, and while it can be tempting to use it, it's not always reliable — especially when the changes are complex or span multiple files. Git, on the other hand, is a battle-tested system and gives you precise, predictable control over your code history. When something goes wrong, using Git to revert ensures you're going back to an exact snapshot of your project, rather than hoping the AI's undo feature catches everything correctly.
+Git gives you precise, reliable control over your code history. AI's built-in undo features are not always trustworthy, especially when changes span multiple files. A proper Git revert takes you back to an exact saved state with no surprises.

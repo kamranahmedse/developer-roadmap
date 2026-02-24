@@ -1,3 +1,3 @@
-# Use "act as" framing when helpful
+# Use "act as" framing when helpful 
 
-Sometimes you don't just want code — you want a specific kind of thinking. Telling the AI to "act as a UX researcher," or "act as a senior backend developer," or "act as a product manager" shifts the way it approaches your question. It starts thinking from that perspective and gives you more relevant, role-specific advice. This is especially useful when you're making decisions rather than building things — like when you want feedback on your app's user flow, or you want someone to poke holes in your idea before you start building.
+When you want a specific type of thinking, tell AI to take on a role. "Act as a senior developer" or "act as a UX researcher" shifts how it approaches your question and gives you more relevant, role-specific advice than a generic prompt would.

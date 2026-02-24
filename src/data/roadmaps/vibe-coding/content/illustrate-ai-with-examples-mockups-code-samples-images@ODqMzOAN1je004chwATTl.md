@@ -1,3 +1,3 @@
-# Illustrate AI with examples (mockups, code samples, images)
+# Illustrate AI with Examples
 
-The more context you give AI, the better results you get. Instead of just describing what you want in words, show it — attach a rough sketch, a screenshot of a design you like, or even a link to a website with a similar layout. If you have a specific piece of code you want it to follow as a pattern, paste that in, too. AI responds really well to examples because they remove the guesswork and give it something concrete to work from. Think of it like briefing a designer — a visual reference will always get you closer to what you want than a paragraph of abstract description.
+Show AI what you want instead of just telling it. Attach a screenshot, a rough sketch, or a link to a website that looks like what you are trying to build. If you have code that you want AI to follow as a pattern, paste it in. Examples work much better than descriptions because AI doesn't have to guess what you mean. You can use tools like [excalidraw](https://excalidraw.com) for sketching.

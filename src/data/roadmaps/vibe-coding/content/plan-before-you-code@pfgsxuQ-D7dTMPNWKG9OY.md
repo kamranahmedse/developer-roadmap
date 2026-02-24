@@ -1,6 +1,6 @@
 # Plan before you Code
 
-Before you ask AI to build anything, take some time to think through what you actually want to make. A lot of beginners jump straight into prompting and end up with a messy project that goes in circles — adding features randomly, changing direction halfway through, and ending up with something that doesn't really work. The planning phase doesn't have to be formal or complicated; it just means getting clear on what you're building, who it's for, and what it needs to do. Investing some time in planning saves you hours of frustration later and gives the AI a much clearer direction to work with.
+Before you start coding with AI, have a plan. Define your MVP and break the project into phases. Don't try to build everything at once; work step by step. Give AI examples like mockups, screenshots, or code samples so it understands what you want. You can even use AI itself to help you plan. Tell it your idea, let it help you refine it, and break it into phases. Little planning at the start saves many hours of fixing later.
 
 Visit the following resources to learn more:
 

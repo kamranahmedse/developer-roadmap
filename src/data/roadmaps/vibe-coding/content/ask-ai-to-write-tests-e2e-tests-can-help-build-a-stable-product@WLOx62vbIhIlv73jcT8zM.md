@@ -1,3 +1,3 @@
 # Ask AI to write tests
 
-Every time the AI builds a new feature, ask it to write tests for that feature before moving on. One particularly valuable type of test is an end-to-end test, often called an E2E test, which simulates a real user going through your app — clicking buttons, filling in forms, navigating between pages — and checks that everything works as expected from start to finish. Having E2E tests in place means you can make changes to your code with confidence, knowing that if something breaks the user experience, a test will catch it immediately.
+Every time AI builds a feature, ask it to write tests for that feature right away. End-to-end tests are especially useful because they simulate a real user going through your app and catch bugs that affect the experience before they reach real users.

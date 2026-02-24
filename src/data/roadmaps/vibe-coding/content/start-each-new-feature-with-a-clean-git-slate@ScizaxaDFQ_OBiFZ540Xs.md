@@ -1,3 +1,3 @@
 # Start each new feature with a clean Git slate
 
-Before you ask AI to start building a new feature, make sure your current work is committed and saved in Git. This means all your recent changes are locked in as a checkpoint. That way, if the AI makes a mess while building the new feature, you can simply discard the changes and go back to the clean starting point without losing any of your previous work. It's a simple habit that removes a lot of stress and gives you the confidence to let the AI experiment without worrying about breaking something permanently.
+Before asking AI to build something new, make sure all your current changes are committed. This gives you a clean checkpoint so that if the new feature causes problems, you can discard the changes and start again without any risk to what you already have.

@@ -1,3 +1,3 @@
 # Testing
 
-Testing is how you make sure your app actually works the way it's supposed to — not just once, but every time you make a change. A lot of beginners skip testing because it feels like extra work on top of building, but the opposite is true. Good tests save you time because they automatically catch problems the moment they appear, rather than letting them hide in the code until they cause a much bigger issue later. The great news for vibe coders is that AI can write most of your tests for you, so there's very little excuse not to have them.
+Testing is how you make sure your app actually works the way it's supposed to. Ask AI to write tests as it builds, not after. Use E2E tests to catch real user-facing bugs, write a breaking test before fixing any bug, and refactor freely once your tests are in place.

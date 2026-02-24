@@ -1,10 +1,7 @@
-# undefined
+# Plan what you need to develop
 
-#Plan what you need to develop (MVP, Different Phases)
-
-Start by planning your MVP — your Minimum Viable Product. This is the simplest version of your idea that still works and solves the core problem. For example, if you're building a task manager app, your MVP might just be the ability to add, view, and delete tasks — nothing more. Don't try to build everything at once. Break your project into phases, where phase one is the basic working version and later phases add more features like user accounts, notifications, or analytics. This keeps things manageable for you and AI, gives you something working early on, and makes it much easier to track progress without feeling overwhelmed.
+Don't try to build everything at once. Start with your MVP, the simplest version that works. If you are building a task manager, that might just be adding, viewing, and deleting tasks. Nothing else. Then break the rest into phases. Maybe phase two is user accounts, phase three is notifications. This way, you always have something working, and the AI gives better results when you give it smaller, focused tasks instead of asking it to build a whole app in one go.
 
 Visit the following resources to learn more:
 
-- [@article@From vibe coding to vibe planning](https://tessl.io/blog/from-vibe-coding-to-vibe-planning/)
 - [@article@A Structured Workflow for "Vibe Coding" Full-Stack Apps](https://dev.to/wasp/a-structured-workflow-for-vibe-coding-full-stack-apps-352l)

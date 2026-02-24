@@ -1,3 +1,3 @@
 # If you have style/coding preferences, document them for AI
 
-Every developer has preferences — maybe you like a specific way of naming variables, a certain folder structure, or a particular way of handling errors. The problem is that AI doesn't remember these preferences between sessions unless you tell it. That's why it's important to write them down in dedicated instruction files, like a [CLAUDE.md](http://CLAUDE.md), and share it with the AI at the start of each session. Over time, this document becomes your personal coding rulebook, and it saves you from having to correct the same things over and over again every time you start a new chat.
+Write down your preferences — folder structure, naming conventions, coding patterns — in a dedicated file (e.g., a CLAUDE.md)  and share it with AI at the start of each session. This stops you from correcting the same things over and over and keeps the code consistent throughout the project.
