@@ -1,4 +1,4 @@
-# Explicitly tell AI to "think" or "brainstorm" 
+# Explicitly tell AI to "think" or "brainstorm"
 
 For tricky problems, don't ask AI to jump straight to a solution. Tell it to think through the options first and explain its reasoning before writing any code. This simple instruction often leads to much better results on complex tasks.
 
