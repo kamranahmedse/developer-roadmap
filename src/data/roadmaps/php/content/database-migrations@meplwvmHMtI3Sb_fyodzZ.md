@@ -4,4 +4,4 @@ Database migrations help keep track of changes in your database schema, making i
 
 Visit the following resources to learn more:
 
-- [@article@Laravel Migrations](https://laravel.com/docs/migrations).
+*   [@article@Laravel Migrations](https://laravel.com/docs/migrations).
