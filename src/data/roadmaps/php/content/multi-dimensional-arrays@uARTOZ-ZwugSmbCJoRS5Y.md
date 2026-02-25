@@ -4,13 +4,11 @@ Multi-dimensional arrays in PHP are a type of array that contains one or more ar
 
 Here's an example:
 
-```php
-$users = [
-       ["John", "john@example.com", "john123"],
-       ["Jane", "jane@example.com", "jane123"],
-       ["Doe", "doe@example.com", "doe123"]
-];
-```
+    $users = [
+           ["John", "john@example.com", "john123"],
+           ["Jane", "jane@example.com", "jane123"],
+           ["Doe", "doe@example.com", "doe123"]
+    ];
 
 Visit the following resources to learn more:
 
