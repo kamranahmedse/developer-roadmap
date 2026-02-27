@@ -4,6 +4,9 @@ Circuit breaker pattern protects systems from failures by temporarily stopping o
 
 Visit the following resources to learn more:
 
+- [@official@Circuit Breaker - Azure Architecture Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
+- [@opensource@Resilience4j - Circuit Breaker Library for Java](https://github.com/resilience4j/resilience4j)
 - [@article@Circuit Breaker - AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_mitigate_interaction_failure_graceful_degradation.html)
 - [@article@The Circuit Breaker Pattern](https://aerospike.com/blog/circuit-breaker-pattern/)
+- [@video@What is the Circuit Breaker Pattern?](https://www.youtube.com/watch?v=ADHcBxEXvFA)
 - [@video@Back to Basics: Static Stability Using a Circuit Breaker Pattern](https://www.youtube.com/watch?v=gy1RITZ7N7s)
