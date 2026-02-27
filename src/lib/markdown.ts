@@ -24,10 +24,11 @@ const md = new MarkdownIt({
 
 export function markdownToHtml(markdown: string, isInline = true): string {
   try {
+    const replacedMarkdown = replaceVariables(markdown);
     if (isInline) {
-      return md.renderInline(markdown);
+      return md.renderInline(replacedMarkdown);
     } else {
-      return md.render(markdown);
+      return md.render(replacedMarkdown);
     }
   } catch (e) {
     return markdown;
@@ -86,7 +87,8 @@ export async function markdownToHtmlWithHighlighting(markdown: string) {
       return defaultRender(tokens, idx, options, env, self);
     };
 
-    return markdownItAsync.renderAsync(markdown);
+    return markdownItAsync.renderAsync(replaceVariables(markdown));
+
   } catch (e) {
     return markdown;
   }
