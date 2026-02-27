@@ -4,8 +4,10 @@ Ansible is an open-source automation tool used for configuration management, app
 
 Visit the following resources to learn more:
 
-- [@course@Ansible Full Course for Beginners](https://www.youtube.com/watch?v=9Ua2b06oAr4)
 - [@official@Ansible Website](https://www.ansible.com/)
+- [@official@Ansible Documentation](https://docs.ansible.com/)
+- [@article@Getting Started with Ansible](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-20-04)
+- [@course@Ansible Full Course for Beginners](https://www.youtube.com/watch?v=9Ua2b06oAr4)
 - [@video@Ansible in 100 Seconds](https://www.youtube.com/watch?v=xRMPKQweySE)
 - [@video@Ansible Full Course to Zero to Hero](https://www.youtube.com/watch?v=GROqwFFLl3s)
 - [@feed@Explore top posts about Ansible](https://app.daily.dev/tags/ansible?ref=roadmapsh)

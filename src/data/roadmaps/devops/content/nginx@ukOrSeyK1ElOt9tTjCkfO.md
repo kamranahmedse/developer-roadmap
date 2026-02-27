@@ -5,6 +5,10 @@ NGINX is a high-performance, open-source web server, reverse proxy, and load bal
 Visit the following resources to learn more:
 
 - [@official@Nginx](https://nginx.org/)
-- [@article@Basic NGINX Setup on Ubuntu: Guide to a Functional and Secure Website Serving](https://swissmade.host/en/blog/basic-nginx-setup-ubuntu-guide-to-a-functional-and-secure-website-serving)
+- [@official@Nginx Documentation](https://nginx.org/en/docs/)
+- [@article@Basic NGINX Setup on Ubuntu](https://swissmade.host/en/blog/basic-nginx-setup-ubuntu-guide-to-a-functional-and-secure-website-serving)
+- [@article@Understanding the Nginx Configuration File Structure](https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts)
+- [@course@NGINX Full Course](https://www.youtube.com/watch?v=0VGEgXfNMIE)
 - [@video@NGINX Explained in 100 Seconds](https://www.youtube.com/watch?v=JKxlsvZXG7c)
+- [@video@Nginx Crash Course](https://www.youtube.com/watch?v=7VAI73roXaY)
 - [@feed@Explore top posts about Nginx](https://app.daily.dev/tags/nginx?ref=roadmapsh)

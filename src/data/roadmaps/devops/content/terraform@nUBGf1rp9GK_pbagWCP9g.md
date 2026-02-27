@@ -5,8 +5,10 @@ Terraform is an open-source infrastructure as code (IaC) tool developed by Hashi
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Terraform Roadmap](https://roadmap.sh/terraform)
-- [@course@Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4)
 - [@official@Terraform Documentation](https://www.terraform.io/docs)
 - [@official@Terraform Tutorials](https://learn.hashicorp.com/terraform)
+- [@opensource@Terraform Registry - Official Providers](https://registry.terraform.io/)
 - [@article@How to Scale Your Terraform Infrastructure](https://thenewstack.io/how-to-scale-your-terraform-infrastructure/)
+- [@course@Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4)
+- [@video@Terraform in 100 Seconds](https://www.youtube.com/watch?v=tomUWcQ0P3k)
 - [@feed@Explore top posts about Terraform](https://app.daily.dev/tags/terraform?ref=roadmapsh)
