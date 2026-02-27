@@ -4,6 +4,10 @@ ACID represents four database transaction properties: Atomicity (all-or-nothing 
 
 Visit the following resources to learn more:
 
+- [@official@PostgreSQL Tutorial on Transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html)
 - [@article@What is ACID Compliant Database?](https://retool.com/blog/whats-an-acid-compliant-database/)
 - [@article@What is ACID Compliance?: Atomicity, Consistency, Isolation](https://fauna.com/blog/what-is-acid-compliance-atomicity-consistency-isolation)
+- [@article@A Beginner's Guide to ACID and Database Transactions](https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/)
 - [@video@ACID Explained: Atomic, Consistent, Isolated & Durable](https://www.youtube.com/watch?v=yaQ5YMWkxq4)
+- [@video@ACID Transactions (Explained by Example)](https://www.youtube.com/watch?v=pomxJOFVcQs)
+- [@book@Database System Concepts - Silberschatz, Korth, Sudarshan](https://db-book.com/)
