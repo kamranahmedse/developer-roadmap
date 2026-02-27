@@ -5,8 +5,10 @@ Redis is an open-source, in-memory data structure store supporting strings, list
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Redis Roadmap](https://roadmap.sh/redis)
-- [@course@Redis Crash Course](https://www.youtube.com/watch?v=XCsS_NVAa1g)
 - [@official@Redis](https://redis.io/)
 - [@official@Redis Documentation](https://redis.io/docs/latest/)
+- [@article@Redis Data Types Explained](https://redis.io/docs/data-types/)
+- [@course@Redis Crash Course](https://www.youtube.com/watch?v=XCsS_NVAa1g)
 - [@video@Redis in 100 Seconds](https://www.youtube.com/watch?v=G1rOthIU-uo)
+- [@video@Redis Tutorial for Beginners](https://www.youtube.com/watch?v=jgpVdJB2sKQ)
 - [@feed@Explore top posts about Redis](https://app.daily.dev/tags/redis?ref=roadmapsh)
