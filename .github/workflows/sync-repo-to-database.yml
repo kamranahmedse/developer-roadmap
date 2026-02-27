@@ -11,7 +11,7 @@ jobs:
   sync-roadmap:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup pnpm@v9
         uses: pnpm/action-setup@v4
@@ -20,7 +20,7 @@ jobs:
           run_install: false
 
       - name: Setup Node.js Version 20 (LTS)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 20
           cache: 'pnpm'

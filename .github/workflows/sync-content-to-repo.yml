@@ -12,7 +12,7 @@ jobs:
   sync-content:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup pnpm@v9
         uses: pnpm/action-setup@v4
@@ -21,7 +21,7 @@ jobs:
           run_install: false
 
       - name: Setup Node.js Version 20 (LTS)
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 20
           cache: 'pnpm'
@@ -44,7 +44,7 @@ jobs:
       
       - name: Create PR
         if: steps.verify-changed-files.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           delete-branch: false
           branch: "chore/sync-content-to-repo-${{ inputs.roadmap_slug }}"
