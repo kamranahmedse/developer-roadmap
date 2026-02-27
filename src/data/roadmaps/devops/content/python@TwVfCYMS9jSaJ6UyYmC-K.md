@@ -6,7 +6,8 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
 - [@official@Python Website](https://www.python.org/)
+- [@article@Real Python Tutorials](https://realpython.com/)
 - [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
-- [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
+- [@course@Python for Everybody - freeCodeCamp](https://www.youtube.com/watch?v=8DvywoWv6fI)
 - [@video@Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)
 - [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

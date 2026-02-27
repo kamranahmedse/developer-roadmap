@@ -6,7 +6,9 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Docker Roadmap](https://roadmap.sh/docker)
 - [@official@Docker Documentation](https://docs.docker.com/)
+- [@opensource@Awesome Docker](https://github.com/veggiemonk/awesome-docker)
+- [@article@Docker Getting Started Guide](https://docs.docker.com/get-started/)
+- [@course@DevOps with Docker](https://courses.mooc.fi/org/uh-cs/courses/devops-with-docker)
 - [@video@Docker Tutorial](https://www.youtube.com/watch?v=RqTEHSBrYFw)
 - [@video@Docker simplified in 55 seconds](https://youtu.be/vP_4DlOH1G4)
 - [@feed@Explore top posts about Docker](https://app.daily.dev/tags/docker?ref=roadmapsh)
-- [@course@DevOps with Docker](https://courses.mooc.fi/org/uh-cs/courses/devops-with-docker)
