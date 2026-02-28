@@ -6,3 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Atlas Search Indexes](https://www.mongodb.com/docs/atlas/atlas-search/manage-indexes/)
 - [@article@Atlas Search Made Easy: A Summary Guide for Developers](https://medium.com/@sumitkessar/atlas-search-made-easy-a-summary-guide-for-developers-883c27886987)
+- [@course@Vector Search Fundamentals Skill Badge](https://learn.mongodb.com/courses/vector-search-fundamentals)
+- [@course@Search Fundamentals Skill Badge](https://learn.mongodb.com/courses/search-fundamentals)

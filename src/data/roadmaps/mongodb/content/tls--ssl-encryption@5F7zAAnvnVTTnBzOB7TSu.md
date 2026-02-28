@@ -7,3 +7,5 @@ Visit the following resources to learn more:
 - [@official@TLS / SSL Encryption](https://www.mongodb.com/docs/manual/core/security-transport-encryption/)
 - [@official@Configure mongod and mongos for TLS/SSL](https://www.mongodb.com/docs/manual/tutorial/configure-ssl/)
 - [@article@How to Enable TLS/SSL on MongoDB](https://medium.com/mongoaudit/how-to-enable-tls-ssl-on-mongodb-d973a92cefa6)
+- [@course@Networking Security: Self-Managed Skill Badge](https://learn.mongodb.com/courses/networking-security-self-managed)
+- [@course@Networking Security: Atlas Skill Badge](https://learn.mongodb.com/courses/networking-security-atlas)
