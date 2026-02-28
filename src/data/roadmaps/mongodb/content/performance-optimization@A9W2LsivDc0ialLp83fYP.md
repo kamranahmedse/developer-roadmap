@@ -6,3 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Comprehensive Guide to Optimising MongoDB Performance](https://www.mongodb.com/developer/products/mongodb/guide-to-optimizing-mongodb-performance/)
 - [@article@How To Optimize MongoDB Performance & Security](https://medium.com/@noel.benji/how-to-optimize-mongodb-performance-security-6fd3ba1304c1)
+- [@course@MongoDB Monitoring Tooling Skill Badge](https://learn.mongodb.com/courses/monitoring-tooling)
+- [@course@Performance Tools and Techniques Skill Badge](https://learn.mongodb.com/courses/performance-tools-and-techniques)

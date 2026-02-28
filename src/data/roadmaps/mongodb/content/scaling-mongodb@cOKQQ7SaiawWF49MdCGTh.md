@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@Scaling](https://www.mongodb.com/resources/basics/scaling)
 - [@official@Scalability With MongoDB Atlas](https://www.mongodb.com/resources/products/capabilities/scalability-with-mongodb-atlas)
 - [@article@Scaling MongoDB for Larger Datasets](https://medium.com/mongodb-tutorial/scaling-mongodb-for-larger-datasets-strategies-and-technical-considerations-b9d35243ff49)
+- [@course@Data Resilience: Atlas Skill Badge](https://learn.mongodb.com/courses/data-resilience-atlas)

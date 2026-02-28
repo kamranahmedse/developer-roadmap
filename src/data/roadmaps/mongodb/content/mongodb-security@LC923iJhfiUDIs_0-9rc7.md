@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@MongoDB Security](https://www.mongodb.com/docs/manual/security/)
 - [@official@MongoDB Database Documentation](https://www.mongodb.com/docs/)
 - [@article@MongoDB Security: Best Practices to Keep Your Data Safe](https://www.digitalocean.com/community/tutorial-series/mongodb-security-best-practices-to-keep-your-data-safe)
+- [@course@Secure MongoDB Self-Managed: AuthN and AuthZ Skill Badge](https://learn.mongodb.com/courses/secure-mongodb-self-managed-authn-and-authz)

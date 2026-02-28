@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Indexing](https://www.mongodb.com/docs/manual/indexes/)
 - [@article@How To Use Indexes in MongoDB](https://www.digitalocean.com/community/tutorials/how-to-use-indexes-in-mongodb)
+- [@course@Indexing Design Fundamentals Skill Badge](https://learn.mongodb.com/courses/indexing-design-fundamentals)

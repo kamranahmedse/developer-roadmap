@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@official@count](https://www.mongodb.com/docs/manual/reference/method/db.collection.count/)
 - [@official@distinct](https://www.mongodb.com/docs/manual/reference/method/db.collection.distinct/)
 - [@article@A Comprehensive Guide to MongoDB Methods](https://medium.com/@coderwithtools/a-comprehensive-guide-to-mongodb-methods-syntax-and-examples-feee0ac07599)
+- [@course@CRUD Operations Skill Badge](https://learn.mongodb.com/courses/crud-operations-in-mongodb)
