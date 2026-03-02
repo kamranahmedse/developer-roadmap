@@ -1,8 +1,9 @@
 # Cohere
 
-Cohere is an AI platform that specializes in natural language processing (NLP) by providing large language models designed to help developers build and deploy text-based applications. Cohere’s models are used for tasks such as text classification, language generation, semantic search, and sentiment analysis. Unlike some other providers, Cohere emphasizes simplicity and scalability, offering an easy-to-use API that allows developers to fine-tune models on custom data for specific use cases. Additionally, Cohere provides robust multilingual support and focuses on ensuring that its NLP solutions are both accessible and enterprise-ready, catering to a wide range of industries.
+Cohere offers a suite of closed large language models (LLMs) designed for various natural language processing tasks. These models are accessible through an API and are trained and maintained by Cohere, meaning users don't have to worry about the complexities of training and fine-tuning their own models from scratch. Cohere focuses on providing enterprise-grade NLP solutions emphasizing safety, reliability, and ease of integration.
 
 Visit the following resources to learn more:
 
 - [@official@Cohere](https://cohere.com/)
+- [@official@LLM University - Cohere](https://cohere.com/llmu)
 - [@article@What Does Cohere Do?](https://medium.com/geekculture/what-does-cohere-do-cdadf6d70435)

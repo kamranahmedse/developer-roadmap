@@ -1,0 +1,3 @@
+# Replit
+
+Replit is an online integrated development environment (IDE) that allows users to write and run code in various programming languages directly in their web browser. It provides a collaborative coding environment with features like real-time collaboration, version control, and package management, making it easy to build and deploy projects without needing to install software locally. Replit also incorporates AI features like code completion and generation to help streamline the coding process.

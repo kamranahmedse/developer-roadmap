@@ -1,8 +1,8 @@
 # Hugging Face Hub
 
-The Hugging Face Hub is a comprehensive platform that hosts over 900,000 machine learning models, 200,000 datasets, and 300,000 demo applications, facilitating collaboration and sharing within the AI community. It serves as a central repository where users can discover, upload, and experiment with various models and datasets across multiple domains, including natural language processing, computer vision, and audio tasks. It also supports version control.
+The Hugging Face Hub is a central platform where users can discover, share, and collaborate on pre-trained models, datasets, and demos for machine learning. It hosts a vast repository of resources contributed by the community, allowing users to easily access and integrate these assets into their AI projects. The Hub provides tools for version control, model card documentation, and even web-based deployment, simplifying the process of leveraging existing AI models and contributing back to the open-source community.
 
 Visit the following resources to learn more:
 
-- [@course@nlp-official](https://huggingface.co/learn/nlp-course/en/chapter4/1)
 - [@official@Hugging Face Documentation](https://huggingface.co/docs/hub/en/index)
+- [@course@The Hugging Face Hub (LLM Course)](https://huggingface.co/learn/nlp-course/en/chapter4/1)

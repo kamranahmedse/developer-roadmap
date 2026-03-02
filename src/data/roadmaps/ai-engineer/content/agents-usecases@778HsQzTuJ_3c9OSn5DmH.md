@@ -1,6 +1,6 @@
-# Agents Usecases
+# Agents Use Cases
 
-AI Agents have a variety of usecases ranging from customer support, workflow automation, cybersecurity, finance, marketing and sales, and more.
+AI Agents have a variety of use cases ranging from customer support, workflow automation, cybersecurity, finance, marketing, and sales, and more.
 
 Visit the following resources to learn more:
 

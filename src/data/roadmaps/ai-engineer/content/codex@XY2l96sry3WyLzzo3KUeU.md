@@ -1,0 +1,3 @@
+# Codex
+
+Codex is an AI model created by OpenAI that translates natural language into code. It's designed to understand and generate code in a variety of programming languages, including Python, JavaScript, and more. Codex is particularly adept at interpreting comments and instructions to produce functional code snippets, making it a powerful tool for automating and accelerating the software development process.
