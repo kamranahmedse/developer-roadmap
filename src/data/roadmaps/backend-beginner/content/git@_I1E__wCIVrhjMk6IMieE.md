@@ -1,0 +1,12 @@
+# Git
+
+Git is a distributed version control system used to track changes in source code during software development. It enables multiple developers to collaborate on a project by managing versions of code, allowing for branching, merging, and tracking of revisions. Git ensures that changes are recorded with a complete history, enabling rollback to previous versions if necessary. It supports distributed workflows, meaning each developer has a complete local copy of the project’s history, facilitating seamless collaboration, conflict resolution, and efficient management of code across different teams or environments.
+
+Visit the following resources to learn more:
+
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
+- [@article@Learn Git with Tutorials, News and Tips - Atlassian](https://www.atlassian.com/git)
+- [@article@Getting Started with Git and GitHub: A Complete Tutorial for Beginner](https://towardsdatascience.com/learn-basic-git-commands-for-your-data-science-works-2a75396d530d/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
+- [@article@Git Cheat Sheet](https://cs.fyi/guide/git-cheatsheet)
+- [@feed@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [@feed@Explore top posts about Git](https://app.daily.dev/tags/git?ref=roadmapsh)
