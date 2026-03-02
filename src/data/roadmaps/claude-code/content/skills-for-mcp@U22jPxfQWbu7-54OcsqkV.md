@@ -1,6 +1,6 @@
 # Skills for MCP
 
-Skills act as structured, reusable knowledge packages that dramatically improve how Claude interacts with MCP (Model Context Protocol) servers by giving it precise, context-aware instructions for specific tools and workflows. Rather than relying on Claude to infer how to use a given MCP server from scratch each time, skills provide curated guidance — best practices, common patterns, error handling strategies, and domain-specific context — that help Claude make smarter, more reliable decisions when invoking tools, chaining calls, and interpreting results.
+Skills act as structured, reusable knowledge packages that dramatically improve how Claude interacts with MCP (Model Context Protocol) servers by giving it precise, context-aware instructions for specific tools and workflows. Rather than relying on Claude to infer how to use a given MCP server from scratch each time, skills provide curated guidance that helps Claude make smarter, more reliable decisions when invoking tools, chaining calls, and interpreting results.
 
 Visit the following resources to learn more:
 
