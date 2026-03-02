@@ -6,5 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@jwt.io Website](https://jwt.io/)
 - [@article@What is JWT?](https://www.akana.com/blog/what-is-jwt)
+- [@article@JWT Security Best Practices](https://curity.io/resources/learn/jwt-best-practices/)
 - [@video@What Is JWT and Why Should You Use JWT](https://www.youtube.com/watch?v=7Q17ubqLfaM)
 - [@feed@Explore top posts about JWT](https://app.daily.dev/tags/jwt?ref=roadmapsh)
