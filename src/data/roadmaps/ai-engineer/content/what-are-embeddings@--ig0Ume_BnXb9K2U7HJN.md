@@ -4,5 +4,6 @@ Embeddings are dense, numerical vector representations of data, such as words, s
 
 Visit the following resources to learn more:
 
-- [@official@Introducing Text and Code Embeddings](https://openai.com/index/introducing-text-and-code-embeddings/)
-- [@article@What are Embeddings](https://www.cloudflare.com/learning/ai/what-are-embeddings/)
+- [@article@What is Embedding? -IBM](https://www.ibm.com/topics/embedding)
+- [@article@What are Embeddings in Machine Learning?](https://www.cloudflare.com/en-gb/learning/ai/what-are-embeddings/)
+- [@video@What are Word Embeddings](https://www.youtube.com/watch?v=wgfSDrqYMJ4)
