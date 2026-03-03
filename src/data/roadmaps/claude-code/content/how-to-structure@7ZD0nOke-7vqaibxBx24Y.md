@@ -1,6 +1,6 @@
 # How to Structure CLAUDE.md
 
-To write an effective CLAUDE.md, you should treat it as a concise, persistent "source of truth" that provides Claude with the project-specific context it cannot infer from the code alone. The file should be kept short and human-readable, focusing on non-obvious information like unique bash commands for building and testing, repository-specific code styles, and architectural decisions.
+To write an effective [CLAUDE.md](http://CLAUDE.md), you should treat it as a concise, persistent "source of truth" that provides Claude with the project-specific context it cannot infer from the code alone. The file should be kept short and human-readable, focusing on non-obvious information like unique bash commands for building and testing, repository-specific code styles, and architectural decisions.
 
 Visit the following resources to learn more:
 
