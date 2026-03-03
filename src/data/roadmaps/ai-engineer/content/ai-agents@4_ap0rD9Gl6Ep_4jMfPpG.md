@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@Building an AI Agent Tutorial - LangChain](https://python.langchain.com/docs/tutorials/agents/)
 - [@article@AI Agents and Their Types](https://play.ht/blog/ai-agents-use-cases/)
+- [@article@How to Design My First AI Agent](https://towardsdatascience.com/how-to-design-my-first-ai-agent/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)

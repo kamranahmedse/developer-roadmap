@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is AGI?](https://aws.amazon.com/what-is/artificial-general-intelligence/)
 - [@article@The crucial difference between AI and AGI](https://www.forbes.com/sites/bernardmarr/2024/05/20/the-crucial-difference-between-ai-and-agi/)
+- [@article@Stop Worrying about AGI: The Immediate Danger is Reduced General Intelligence (RGI)](https://towardsdatascience.com/stop-worrying-about-agi-the-immediate-danger-is-reduced-general-intelligence-rgi/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
