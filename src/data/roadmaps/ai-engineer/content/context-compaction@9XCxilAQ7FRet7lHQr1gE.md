@@ -1,8 +1,9 @@
-# Context Compaction
+# AI Agents
 
-Context compaction is a technique used to reduce the length of the context provided to a large language model (LLM) without sacrificing relevant information. This process aims to remove redundant, irrelevant, or less important information from the context window to make room for more data or improve the efficiency and effectiveness of the LLM's processing. Compaction can involve techniques like summarization, filtering, or re-ranking of context information.
+In AI engineering, "agents" refer to autonomous systems or components that can perceive their environment, make decisions, and take actions to achieve specific goals. Agents often interact with external systems, users, or other agents to carry out complex tasks. They can vary in complexity, from simple rule-based bots to sophisticated AI-powered agents that leverage machine learning models, natural language processing, and reinforcement learning.
 
 Visit the following resources to learn more:
 
-- [@article@Context Engineering](https://blog.langchain.com/context-engineering-for-agents/)
-- [@article@Context Compaction](https://gist.github.com/badlogic/cd2ef65b0697c4dbe2d13fbecb0a0a5f)
+- [@article@Building an AI Agent Tutorial - LangChain](https://python.langchain.com/docs/tutorials/agents/)
+- [@article@AI Agents and Their Types](https://www.digitalocean.com/resources/articles/types-of-ai-agents)
+- [@video@The Complete Guide to Building AI Agents for Beginners](https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX)

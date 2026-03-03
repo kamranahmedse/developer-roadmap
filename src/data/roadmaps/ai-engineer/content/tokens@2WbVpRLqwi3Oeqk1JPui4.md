@@ -5,4 +5,4 @@ Tokens are fundamental units of text that LLMs process, created by breaking text
 Visit the following resources to learn more:
 
 - [@article@Explaining Tokens — the Language and Currency of AI](https://blogs.nvidia.com/blog/ai-tokens-explained/)
-- [@article@Understanding Tokens and Parameters in Model Training: A Deep Dive](ttps://www.functionize.com/blog/understanding-tokens-and-parameters-in-model-training)
+- [@article@What is Tokenization? Types, Use Cases, Implementation](https://www.datacamp.com/blog/what-is-tokenization)

@@ -1,10 +1,8 @@
-# Tools & Function Calling in AI Agents
+# OpenAI Assistant API
 
-Tools and function calling equip AI agents with the ability to interact with the real world and access external information. Instead of just providing text-based responses, the agent can use predefined functions, tools, or APIs to perform specific actions like searching the web, sending emails, or controlling devices. This extends the agent's capabilities and allows it to solve more complex tasks that require actions beyond simple language generation.
+The OpenAI Assistant API enables developers to create advanced conversational systems using models like GPT-4. It supports multi-turn conversations, allowing the AI to maintain context across exchanges, which is ideal for chatbots, virtual assistants, and interactive applications. Developers can customize interactions by defining roles, such as system, user, and assistant, to guide the assistant's behavior. With features like temperature control, token limits, and stop sequences, the API offers flexibility to ensure responses are relevant, safe, and tailored to specific use cases.
 
 Visit the following resources to learn more:
 
-- [@course@A Comprehensive Guide to Function Calling in LLMs](https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/)
-- [@official@What are Tools? - Hugging Face](https://huggingface.co/learn/agents-course/en/unit1/tools)
-- [@article@Compare 50+ AI Agent Tools in 2026](https://aimultiple.com/ai-agent-tools)
-- [@article@AI Agents Explained in Simple Terms for Beginners](https://www.geeky-gadgets.com/ai-agents-explained-for-beginners/)
+- [@course@OpenAI Assistants API – Course for Beginners](https://www.youtube.com/watch?v=qHPonmSX4Ms)
+- [@official@Assistants API](https://platform.openai.com/docs/assistants/overview)
