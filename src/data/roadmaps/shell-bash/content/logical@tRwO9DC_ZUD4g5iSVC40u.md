@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@How to program with Bash: Logical operators and shell expansions](https://opensource.com/article/19/10/programming-bash-logical-operators-shell-expansions)
 - [@article@Using Logical Operators in Bash: A Comprehensive Guide](https://tecadmin.net/bash-logical-operators/)
-- [@video@Logical Operators - Bash Programing Tutorial 8](https://www.youtube.com/watch?v=sDRHmbRlNT8)
+- [@video@Logical Operators - Bash Programming Tutorial 8](https://www.youtube.com/watch?v=sDRHmbRlNT8)

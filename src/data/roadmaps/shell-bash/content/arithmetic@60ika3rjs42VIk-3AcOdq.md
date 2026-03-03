@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Bash Math Operations (Bash Arithmetic) Explained](https://phoenixnap.com/kb/bash-math)
 - [@article@Bash Operators](https://www.w3schools.com/bash/bash_operators.php)
-- [@video@Arithmetic Expressions - Bash Programing Tutorial](https://www.youtube.com/watch?v=rjuB3X8MOQc)
+- [@video@Arithmetic Expressions - Bash Programming Tutorial](https://www.youtube.com/watch?v=rjuB3X8MOQc)
