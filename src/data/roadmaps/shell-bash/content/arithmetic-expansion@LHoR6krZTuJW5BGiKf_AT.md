@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Arithmetic Expansion (Bash Reference Manual)](https://www.gnu.org/software/bash/manual/html_node/Arithmetic-Expansion.html)
 - [@article@Bash Math Operations (Bash Arithmetic) Explained {+11 Examples}](https://phoenixnap.com/kb/bash-math)
-- [@video@Arithmetic Expressions - Bash Programing Tutorial 4](https://www.youtube.com/watch?v=rjuB3X8MOQc)
+- [@video@Arithmetic Expressions - Bash Programming Tutorial 4](https://www.youtube.com/watch?v=rjuB3X8MOQc)

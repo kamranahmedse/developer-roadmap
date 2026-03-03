@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [@article@Other Comparison Operators](https://tldp.org/LDP/abs/html/comparison-ops.html)
 - [@article@Bash Operators](https://www.w3schools.com/bash/bash_operators.php)
 - [@article@Shell Scripting: Comparison Operators and If Statements](https://medium.com/@kadimasam/shell-scripting-comparison-operators-and-if-statements-9e0277fd60b8)
-- [@video@Comparison Operators and Square Brackets - Bash Programing Tutorial](https://www.youtube.com/watch?v=XSLj65wnP90)
+- [@video@Comparison Operators and Square Brackets - Bash Programming Tutorial](https://www.youtube.com/watch?v=XSLj65wnP90)
