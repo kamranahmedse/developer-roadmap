@@ -22,6 +22,8 @@ interface OrphanEntry {
   file: string;
   reason: string;
   duplicateOf: string;
+  action: 'deleted' | 'renamed';
+  renamedTo?: string;
 }
 
 async function fetchRoadmapJson(slug: string): Promise<{ nodes: Node[] }> {
@@ -144,11 +146,24 @@ async function cleanupRoadmap(slug: string): Promise<OrphanEntry[]> {
       }
 
       const correctFile = `${expectedSlug}@${nodeId}.md`;
-      orphans.push({
-        file,
-        reason: 'Same nodeId, old slug',
-        duplicateOf: correctFile,
-      });
+      const correctFileExists = files.includes(correctFile);
+
+      if (correctFileExists) {
+        orphans.push({
+          file,
+          reason: 'Same nodeId, old slug',
+          duplicateOf: correctFile,
+          action: 'deleted',
+        });
+      } else {
+        orphans.push({
+          file,
+          reason: 'Same nodeId, old slug',
+          duplicateOf: correctFile,
+          action: 'renamed',
+          renamedTo: correctFile,
+        });
+      }
       continue;
     }
 
@@ -158,20 +173,28 @@ async function cleanupRoadmap(slug: string): Promise<OrphanEntry[]> {
         file,
         reason: 'Same slug, old nodeId',
         duplicateOf: validFile,
+        action: 'deleted',
       });
     } else {
       orphans.push({
         file,
         reason: 'Topic removed from roadmap',
         duplicateOf: 'N/A',
+        action: 'deleted',
       });
     }
   }
 
   for (const orphan of orphans) {
     const filePath = path.join(contentDir, orphan.file);
-    await fs.unlink(filePath);
-    console.log(`  Deleted: ${orphan.file} (${orphan.reason})`);
+    if (orphan.action === 'renamed') {
+      const newPath = path.join(contentDir, orphan.renamedTo!);
+      await fs.rename(filePath, newPath);
+      console.log(`  Renamed: ${orphan.file} -> ${orphan.renamedTo} (${orphan.reason})`);
+    } else {
+      await fs.unlink(filePath);
+      console.log(`  Deleted: ${orphan.file} (${orphan.reason})`);
+    }
   }
 
   if (orphans.length === 0) {
@@ -210,14 +233,16 @@ async function main() {
   const roadmapsAffected = allOrphans.size;
 
   let summary = `## Orphaned Content Cleanup\n\n`;
-  summary += `Removed **${totalOrphans}** orphaned content file(s) across **${roadmapsAffected}** roadmap(s).\n\n`;
+  summary += `Cleaned up **${totalOrphans}** orphaned content file(s) across **${roadmapsAffected}** roadmap(s).\n\n`;
 
   for (const [slug, orphans] of allOrphans) {
     summary += `### ${slug}\n\n`;
-    summary += `| Removed File | Reason | Duplicate Of |\n`;
-    summary += `|---|---|---|\n`;
+    summary += `| File | Action | Reason | Duplicate Of |\n`;
+    summary += `|---|---|---|---|\n`;
     for (const orphan of orphans) {
-      summary += `| \`${orphan.file}\` | ${orphan.reason} | ${orphan.duplicateOf === 'N/A' ? 'N/A' : `\`${orphan.duplicateOf}\``} |\n`;
+      const action = orphan.action === 'renamed' ? `Renamed to \`${orphan.renamedTo}\`` : 'Deleted';
+      const dupOf = orphan.duplicateOf === 'N/A' ? 'N/A' : `\`${orphan.duplicateOf}\``;
+      summary += `| \`${orphan.file}\` | ${action} | ${orphan.reason} | ${dupOf} |\n`;
     }
     summary += `\n`;
   }
@@ -225,7 +250,7 @@ async function main() {
   const summaryPath = path.join(__dirname, '..', '.cleanup-summary.md');
   await fs.writeFile(summaryPath, summary);
   console.log(`\nSummary written to .cleanup-summary.md`);
-  console.log(`Total: ${totalOrphans} orphaned file(s) removed across ${roadmapsAffected} roadmap(s)`);
+  console.log(`Total: ${totalOrphans} orphaned file(s) cleaned up across ${roadmapsAffected} roadmap(s)`);
 }
 
 main().catch((err) => {
