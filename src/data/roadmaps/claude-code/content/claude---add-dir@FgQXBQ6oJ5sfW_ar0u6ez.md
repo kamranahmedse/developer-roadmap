@@ -4,5 +4,5 @@ The `claude --add-dir` command is a startup flag that allows you to include extr
 
 Visit the following resources to learn more:
 
-- [@official@CLI flags](https://code.claude.com/docs/en/cli-reference#cli-flags)
+- [@official@CLI Flags](https://code.claude.com/docs/en/cli-reference#cli-flags)
 - [@official@Load memory from additional directories](https://code.claude.com/docs/en/memory#load-memory-from-additional-directories)

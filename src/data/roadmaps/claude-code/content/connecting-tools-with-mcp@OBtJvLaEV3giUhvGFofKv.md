@@ -4,8 +4,8 @@ Model Context Protocol (MCP) transforms Claude Code from a local file editor int
 
 Visit the following resources to learn more:
 
-- [@official@Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp)
 - [@course@Model Context Protocol: Advanced Topics](https://anthropic.skilljar.com/model-context-protocol-advanced-topics)
+- [@official@Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp)
 - [@article@What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/getting-started/intro)
 - [@video@Claude Code MCP: How to Add MCP Servers (Complete Guide)](https://www.youtube.com/watch?v=DfWHX7kszQI)
 - [@video@Claude Code Tutorial #7 - MCP Servers](https://www.youtube.com/watch?v=X7lgIa6guKg)

@@ -8,5 +8,5 @@ Claude Code can be accessed through three main interfaces: a Command Line Interf
 
 Visit the following resources to learn more:
 
-- [@official@Use Claude Code everywhere](https://code.claude.com/docs/en/overview#use-claude-code-everywhere)
 - [@course@Claude 101](https://anthropic.skilljar.com/claude-101)
+- [@official@Use Claude Code everywhere](https://code.claude.com/docs/en/overview#use-claude-code-everywhere)

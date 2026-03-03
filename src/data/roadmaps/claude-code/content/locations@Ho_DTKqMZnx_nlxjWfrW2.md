@@ -1,6 +1,6 @@
 # Locations of CLAUDE.md
 
-Claude Code manages instructions through a hierarchical memory system that layers context based on the directory structure of your project. At the start of every session, Claude recursively searches from your current working directory up to the root, automatically loading global preferences from `~/.claude/CLAUDE.md` and shared team standards from the project root's `CLAUDE.md`. Claude also supports progressive disclosure via subdirectory CLAUDE.md files.
+Claude Code manages instructions through a hierarchical memory system that layers context based on the directory structure of your project. At the start of every session, Claude recursively searches from your current working directory up to the root, automatically loading global preferences from `~/.claude/CLAUDE.md` and shared team standards from the project root's `CLAUDE.md`. Claude also supports progressive disclosure via subdirectory [CLAUDE.md](http://CLAUDE.md) files.
 
 Visit the following resources to learn more:
 
