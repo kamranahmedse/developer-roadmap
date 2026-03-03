@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@How to Become an AI Engineer: Duties, Skills, and Salary](https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer)
 - [@article@AI Engineers: What they do and how to become one](https://www.techtarget.com/whatis/feature/How-to-become-an-artificial-intelligence-engineer)
+- [@article@I Transitioned from Data Science to AI Engineering: Here’s Everything You Need to Know](https://towardsdatascience.com/i-transitioned-from-data-science-to-ai-engineering-heres-everything-you-need-to-know/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)

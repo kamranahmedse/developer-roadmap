@@ -7,4 +7,5 @@ Visit the following resources to learn more:
 - [@official@Claude](https://claude.ai)
 - [@course@Claude 101](https://anthropic.skilljar.com/claude-101)
 - [@video@How To Use Claude Pro For Beginners](https://www.youtube.com/watch?v=J3X_JWQkvo8)
+- [@article@How To Use Claude Pro For Beginners](https://www.youtube.com/watch?v=J3X_JWQkvo8)
 - [@video@Claude FULL COURSE 1 HOUR (Build & Automate Anything)](https://www.youtube.com/watch?v=KrKhfm2Xuho)

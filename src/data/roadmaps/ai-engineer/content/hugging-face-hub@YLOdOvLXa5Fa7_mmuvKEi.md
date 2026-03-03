@@ -4,5 +4,5 @@ The Hugging Face Hub is a central platform where users can discover, share, and 
 
 Visit the following resources to learn more:
 
-- [@official@Hugging Face Documentation](https://huggingface.co/docs/hub/en/index)
 - [@course@The Hugging Face Hub (LLM Course)](https://huggingface.co/learn/nlp-course/en/chapter4/1)
+- [@official@Hugging Face Documentation](https://huggingface.co/docs/hub/en/index)
