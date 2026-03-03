@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       roadmap_slug:
-        description: "The ID of the roadmap to clean up (or __all__ for all roadmaps)"
+        description: "The ID of the roadmap to clean up"
         required: true
-        default: "__all__"
 
 jobs:
   cleanup-content:
