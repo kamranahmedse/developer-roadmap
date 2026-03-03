@@ -33,6 +33,7 @@
     "sync:repo-to-database": "tsx ./scripts/sync-repo-to-database.ts",
     "sync:roadmap": "tsx ./scripts/sync-roadmap-to-database.ts",
     "migrate:content-repo-to-database": "tsx ./scripts/migrate-content-repo-to-database.ts",
+    "cleanup:orphaned-content": "tsx ./scripts/cleanup-orphaned-content.ts",
     "official:roadmap-assets": "tsx ./scripts/official-roadmap-assets.ts",
     "test:e2e": "playwright test"
   },

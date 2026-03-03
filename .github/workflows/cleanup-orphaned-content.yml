@@ -1,0 +1,81 @@
+name: Cleanup Orphaned Content
+
+on:
+  workflow_dispatch:
+    inputs:
+      roadmap_slug:
+        description: "The ID of the roadmap to clean up (or __all__ for all roadmaps)"
+        required: true
+        default: "__all__"
+
+jobs:
+  cleanup-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm@v9
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: false
+
+      - name: Setup Node.js Version 20 (LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install Dependencies and Run Cleanup
+        run: |
+          echo "Installing Dependencies"
+          pnpm install
+          echo "Running Orphaned Content Cleanup"
+          npm run cleanup:orphaned-content -- --roadmap-slug=${{ inputs.roadmap_slug }}
+
+      - name: Read cleanup summary
+        id: read-summary
+        run: |
+          if [ -f .cleanup-summary.md ]; then
+            {
+              echo 'summary<<EOF'
+              cat .cleanup-summary.md
+              echo 'EOF'
+            } >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Delete summary file
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: rm -f .cleanup-summary.md
+
+      - name: Create PR
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          delete-branch: false
+          branch: "chore/cleanup-orphaned-content-${{ inputs.roadmap_slug }}"
+          base: "master"
+          labels: |
+            automated pr
+          reviewers: jcanalesluna,kamranahmedse
+          commit-message: "chore: cleanup orphaned content files"
+          title: "chore: cleanup orphaned content - ${{ inputs.roadmap_slug }}"
+          body: |
+            ${{ steps.read-summary.outputs.summary }}
+
+            > [!IMPORTANT]
+            > This PR removes orphaned/duplicate content files for: ${{ inputs.roadmap_slug }}
+            >
+            > Commit: ${{ github.sha }}
+            > Workflow Path: ${{ github.workflow_ref }}
+
+            **Please review the changes and merge the PR if everything looks correct.**
