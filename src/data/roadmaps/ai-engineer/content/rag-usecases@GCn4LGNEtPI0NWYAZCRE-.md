@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@article@Retrieval augmented generation use cases: Transforming data into insights](https://www.glean.com/blog/retrieval-augmented-generation-use-cases)
 - [@article@Retrieval Augmented Generation (RAG) – 5 Use Cases](https://theblue.ai/blog/rag-news/)
 - [@video@Introduction to RAG](https://www.youtube.com/watch?v=LmiFeXH-kq8&list=PL-pTHQz4RcBbz78Z5QXsZhe9rHuCs1Jw-)
-- [@article@How to Train a Chatbot Using RAG and Custom Data](https://towardsdatascience.com/how-to-train-a-chatbot-using-rag-and-custom-data/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)

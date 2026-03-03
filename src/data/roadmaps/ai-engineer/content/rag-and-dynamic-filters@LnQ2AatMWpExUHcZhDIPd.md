@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@4 context engineering strategies every AI engineer needs to know](https://newsletter.owainlewis.com/p/4-context-engineering-strategies)
 - [@article@Context Engineering](https://blog.langchain.com/context-engineering-for-agents/)
-- [@article@Is RAG Dead? The Rise of Context Engineering and Semantic Layers for Agentic AI](https://towardsdatascience.com/beyond-rag/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)

@@ -5,4 +5,4 @@ Context compaction is a technique used to reduce the length of the context provi
 Visit the following resources to learn more:
 
 - [@article@Context Engineering](https://blog.langchain.com/context-engineering-for-agents/)
-- [@article@Context Compaction](https://gist.github.com/badlogic/cd2ef65b0697c4dbe2d13fbecb0a0a5f)
+- [@opensource@Context Compaction](https://gist.github.com/badlogic/cd2ef65b0697c4dbe2d13fbecb0a0a5f)

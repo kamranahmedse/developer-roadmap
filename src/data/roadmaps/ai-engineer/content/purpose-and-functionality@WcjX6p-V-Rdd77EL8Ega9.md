@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@What is a Vector Database? Top 12 Use Cases](https://lakefs.io/blog/what-is-vector-databases/)
 - [@article@Vector Databases: Intro, Use Cases](https://www.v7labs.com/blog/vector-databases)
-- [@article@When (Not) to Use Vector DB](https://towardsdatascience.com/when-not-to-use-vector-db/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
