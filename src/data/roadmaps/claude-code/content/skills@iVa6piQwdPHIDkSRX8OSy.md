@@ -1,6 +1,6 @@
 # Skills
 
-Claude Code skills are modular packages of instructions, scripts, and assets that teach the AI assistant how to perform specific, repeatable workflows. Each skill is stored in a dedicated folder containing a mandatory SKILL.md file, which uses YAML frontmatter to define its name and a description that the AI uses to automatically discover and load the skill when relevant.
+Claude Code skills are modular packages of instructions, scripts, and assets that teach the AI assistant how to perform specific, repeatable workflows. Each skill is stored in a dedicated folder containing a mandatory [SKILL.md](http://SKILL.md) file, which uses YAML frontmatter to define its name and a description that the AI uses to automatically discover and load the skill when relevant.
 
 Visit the following resources to learn more:
 

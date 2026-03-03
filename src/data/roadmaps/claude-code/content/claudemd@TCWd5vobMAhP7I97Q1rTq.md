@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-CLAUDE.md is a project-specific markdown file that acts as the "persistent memory" and onboarding manual for Claude Code, ensuring the AI adheres to your unique development standards across every session. Since Claude begins each new interaction with a blank context, this file is automatically read at launch to provide essential project "WHY, WHAT, and HOW".
+[CLAUDE.md](http://CLAUDE.md) is a project-specific markdown file that acts as the "persistent memory" and onboarding manual for Claude Code, ensuring the AI adheres to your unique development standards across every session. Since Claude begins each new interaction with a blank context, this file is automatically read at launch to provide essential project "WHY, WHAT, and HOW".
 
 Visit the following resources to learn more:
 
