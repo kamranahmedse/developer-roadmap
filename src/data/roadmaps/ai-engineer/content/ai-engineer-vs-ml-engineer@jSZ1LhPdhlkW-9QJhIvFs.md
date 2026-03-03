@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What does an AI Engineer do?](https://www.codecademy.com/resources/blog/what-does-an-ai-engineer-do/)
 - [@article@What is an ML Engineer?](https://www.coursera.org/articles/what-is-machine-learning-engineer)
-- [@article@Machine Learning vs AI Engineer: What Are the Differences?](https://towardsdatascience.com/machine-learning-vs-ai-engineer-no-confusing-jargon/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@AI vs ML](https://www.youtube.com/watch?v=4RixMPF4xis)
