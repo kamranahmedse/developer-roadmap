@@ -1,9 +1,8 @@
-# OpenAI AgentKit
+# OpenAI Functions / Tools
 
-OpenAI AgentKit is a framework designed to simplify the process of creating AI agents that can perform specific tasks by leveraging large language models (LLMs). It provides tools and abstractions for managing agent state, defining agent behavior, and connecting agents to various tools and resources, allowing developers to build more complex and capable AI systems without needing to manage all the low-level details.
+OpenAI Functions, also known as tools, enable developers to extend the capabilities of language models by integrating external APIs and functionalities, allowing the models to perform specific actions, fetch real-time data, or interact with other software systems. This feature enhances the model's utility by bridging it with services like web searches, databases, and custom business applications, enabling more dynamic and task-oriented responses.
 
 Visit the following resources to learn more:
 
-- [@official@Introducing AgentKit](https://openai.com/index/introducing-agentkit/)
-- [@official@Build every step of agents on one platform](https://openai.com/agent-platform/)
-- [@video@Build Hour: AgentKit](https://www.youtube.com/watch?v=sAitLFLbgDA)
+- [@official@Function Calling](https://platform.openai.com/docs/guides/function-calling)
+- [@video@How does OpenAI Function Calling work?](https://www.youtube.com/watch?v=Qor2VZoBib0)

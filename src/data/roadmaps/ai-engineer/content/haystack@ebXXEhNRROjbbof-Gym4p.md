@@ -1,9 +1,8 @@
-# Haystack
+# Langchain
 
-Haystack is an open-source Python framework that helps you build search and question-answering agents fast. You connect your data sources, pick a language model, and set up pipelines that find the best answer to a user’s query. Haystack handles tasks such as indexing documents, retrieving passages, running the model, and ranking results. It works with many back-ends like Elasticsearch, OpenSearch, FAISS, and Pinecone, so you can scale from a laptop to a cluster. You can add features like summarization, translation, and document chat by dropping extra nodes into the pipeline. The framework also offers REST APIs, a web UI, and clear tutorials, making it easy to test and deploy your agent in production.
+LangChain is a development framework that simplifies building applications powered by language models, enabling seamless integration of multiple AI models and data sources. It focuses on creating chains, or sequences, of operations where language models can interact with databases, APIs, and other models to perform complex tasks. LangChain offers tools for prompt management, data retrieval, and workflow orchestration, making it easier to develop robust, scalable applications like chatbots, automated data analysis, and multi-step reasoning systems.
 
 Visit the following resources to learn more:
 
-- [@official@Haystack](https://haystack.deepset.ai/)
-- [@official@@Haystack Overview](https://docs.haystack.deepset.ai/docs/intro)
-- [@opensource@deepset-ai/haystack](https://github.com/deepset-ai/haystack)
+- [@official@LangChain](https://www.langchain.com/)
+- [@video@What is LangChain?](https://www.youtube.com/watch?v=1bUy-1hGZpI)

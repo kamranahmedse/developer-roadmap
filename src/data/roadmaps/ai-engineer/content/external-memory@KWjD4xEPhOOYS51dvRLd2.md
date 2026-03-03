@@ -1,8 +1,9 @@
-# External Memory for LLMs
+# Inference
 
-External memory refers to the techniques used to provide Large Language Models (LLMs) with access to information that is not stored directly within their parameters. This allows LLMs to access and utilize a much broader and more up-to-date knowledge base than what was available during their training. By using external memory, LLMs can overcome limitations related to knowledge cut-off, hallucination, and the inability to incorporate new information, leading to more accurate, reliable, and contextually relevant respons
+In artificial intelligence (AI), inference refers to the process where a trained machine learning model makes predictions or draws conclusions from new, unseen data. Unlike training, inference involves the model applying what it has learned to make decisions without needing examples of the exact result. In essence, inference is the AI model actively functioning. For example, a self-driving car recognizing a stop sign on a road it has never encountered before demonstrates inference. The model identifies the stop sign in a new setting, using its learned knowledge to make a decision in real-time.
 
 Visit the following resources to learn more:
 
-- [@article@Context Engineering - LLM Memory and Retrieval for AI Agents](https://weaviate.io/blog/context-engineering)
-- [@article@4 context engineering strategies every AI engineer needs to know](https://newsletter.owainlewis.com/i/180013006/1-write-external-memory)
+- [@article@Inference vs Training](https://www.cloudflare.com/learning/ai/inference-vs-training/)
+- [@article@What is Machine Learning Inference?](https://hazelcast.com/glossary/machine-learning-inference/)
+- [@article@What is Machine Learning Inference? An Introduction to Inference Approaches](https://www.datacamp.com/blog/what-is-machine-learning-inference)

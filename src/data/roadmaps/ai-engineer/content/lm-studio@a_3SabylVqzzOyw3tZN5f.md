@@ -1,8 +1,8 @@
-# LM Studio
+# OpenSource AI
 
-LM Studio is a desktop application designed for discovering, downloading, and running large language models (LLMs) locally on your computer. It provides a user-friendly interface to experiment with different open-source LLMs without needing extensive technical knowledge or cloud infrastructure. Essentially, it helps you manage and interact with LLMs directly on your machine.
+Open-source AI refers to AI models, tools, and frameworks that are freely available for anyone to use, modify, and distribute. Examples include TensorFlow, PyTorch, and models like BERT and Stable Diffusion. Open-source AI fosters transparency, collaboration, and innovation by allowing developers to inspect code, adapt models for specific needs, and contribute improvements. This approach accelerates the development of AI technologies, enabling faster experimentation and reducing dependency on proprietary solutions.
 
 Visit the following resources to learn more:
 
-- [@official@LMStudio](https://lmstudio.ai/)
-- [@video@LM Studio Tutorial: Run Large Language Models (LLM) on Your Laptop](https://www.youtube.com/watch?v=ygUEbCpOOLg)
+- [@article@Open Source AI Is the Path Forward](https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/)
+- [@video@Should You Use Open Source Large Language Models?](https://www.youtube.com/watch?v=y9k-U9AuDeM)

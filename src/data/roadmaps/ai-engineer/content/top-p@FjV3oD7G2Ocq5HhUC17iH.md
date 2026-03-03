@@ -1,8 +1,8 @@
-# Top-P Sampling
+# Token Counting
 
-Top-P sampling, also known as nucleus sampling, is a technique used in language models to generate text. Instead of considering all possible next words, it focuses on the smallest set of words whose cumulative probability exceeds a threshold 'P'. Unlike Top-K's fixed number, Top-P dynamically adjusts based on the probability distribution. Low values (0.1-0.5) produce focused outputs, medium (0.6-0.9) balance creativity and coherence, and high (0.9-0.99) enable creative diversity.
+Token counting refers to tracking the number of tokens processed during interactions with language models, including both input and output text. Tokens are units of text that can be as short as a single character or as long as a word, and models like GPT process text by splitting it into these tokens. Knowing how many tokens are used is crucial because the API has token limits (e.g., 4,096 for GPT-3 and up to 32,768 for some versions of GPT-4), and costs are typically calculated based on the total number of tokens processed.
 
 Visit the following resources to learn more:
 
-- [@article@Top-P Sampling: What Is It and Why Does It Matter?](https://www.dataannotation.tech/blog/top-p-sampling)
-- [@video@What are the LLM’s Top-P + Top-K ?](https://www.youtube.com/watch?v=aDmp2Uim0zQ)
+- [@official@OpenAI Tokenizer Tool](https://platform.openai.com/tokenizer)
+- [@article@How to count tokens with Tiktoken](https://cookbook.openai.com/examples/how_to_count_tokens_with_tiktoken)
