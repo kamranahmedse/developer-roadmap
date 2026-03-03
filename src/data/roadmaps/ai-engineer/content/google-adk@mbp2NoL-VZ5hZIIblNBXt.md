@@ -4,6 +4,6 @@ The Google Agent Development Kit (ADK) is a framework designed to help developer
 
 Visit the following resources to learn more:
 
+- [@course@ADK Crash Course - From Beginner To Expert](https://codelabs.developers.google.com/onramp/instructions#0)
 - [@official@Agent Development Kit](https://google.github.io/adk-docs/)
 - [@official@Overview of Agent Development Kit](https://docs.cloud.google.com/agent-builder/agent-development-kit/overview)
-- [@course@ADK Crash Course - From Beginner To Expert](https://codelabs.developers.google.com/onramp/instructions#0)
