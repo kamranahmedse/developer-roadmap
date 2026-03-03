@@ -5,3 +5,4 @@ Anomaly detection with embeddings works by transforming data, such as text, imag
 Visit the following resources to learn more:
 
 - [@article@Anomaly in Embeddings](https://ai.google.dev/gemini-api/tutorials/anomaly_detection)
+- [@article@Boosting Your Anomaly Detection With LLMs](https://towardsdatascience.com/boosting-your-anomaly-detection-with-llms/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
