@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@A Comprehensive Guide to Function Calling in LLMs](https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/)
 - [@article@Function Calling with LLMs | Prompt Engineering Guide](https://www.promptingguide.ai/applications/function_calling)
-- [@article@Function Calling with Open-Source LLMs](https://medium.com/@rushing_andrei/function-calling-with-open-source-llms-594aa5b3a304)
 - [@video@LLM Function Calling - AI Tools Deep Dive](https://www.youtube.com/watch?v=gMeTK6zzaO4)

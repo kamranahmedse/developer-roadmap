@@ -5,6 +5,5 @@ Few-shot prompting is a technique used with large language models (LLMs) where y
 Visit the following resources to learn more:
 
 - [@article@Few-Shot Prompting](https://www.promptingguide.ai/techniques/fewshot)
-- [@article@Technique #3: Examples in Prompts: From Zero-Shot to Few-Shot](https://learnprompting.org/docs/basics/few_shot?srsltid=AfmBOooXYnhXZxh3YDocIxmsft0KBwCcuKQjaU5gCnBxSJdSvjBgYDDR)
 - [@article@What is few shot prompting?](https://www.ibm.com/think/topics/few-shot-prompting)
 - [@video@Discover Few-Shot Prompting | Google AI Essentials](https://www.youtube.com/watch?v=9qdgEBVkWR4)
