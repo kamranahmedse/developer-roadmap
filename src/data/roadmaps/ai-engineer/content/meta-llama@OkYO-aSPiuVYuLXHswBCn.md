@@ -4,5 +4,5 @@ Meta Llama is a family of large language models (LLMs) developed by Meta AI. The
 
 Visit the following resources to learn more:
 
-- [@course@Building with Llama 4](https://www.deeplearning.ai/short-courses/building-with-llama-4/)
 - [@official@Llama](https://www.llama.com/)
+- [@course@Building with Llama 4](https://www.deeplearning.ai/short-courses/building-with-llama-4/)

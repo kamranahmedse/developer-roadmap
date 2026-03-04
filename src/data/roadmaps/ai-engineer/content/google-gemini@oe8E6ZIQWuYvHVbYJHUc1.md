@@ -4,7 +4,7 @@ Google Gemini is an advanced AI model by Google DeepMind, designed to integrate 
 
 Visit the following resources to learn more:
 
+- [@course@Google AI Training](https://grow.google/ai/)
 - [@official@Google Gemini](https://gemini.google.com/)
 - [@official@Google's Gemini Documentation](https://workspace.google.com/solutions/ai/)
-- [@course@Google AI Training](https://grow.google/ai/)
 - [@video@Welcome to the Gemini era](https://www.youtube.com/watch?v=_fuimO6ErKI)
