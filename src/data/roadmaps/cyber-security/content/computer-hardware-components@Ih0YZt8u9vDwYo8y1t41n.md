@@ -6,5 +6,5 @@ The **storage device**, such as a hard disk drive (HDD) or solid-state drive (SS
 
 Visit the following resources to learn more:
 
-- [@article@What is computer hardware?](https://uk.crucial.com/articles/pc-builders/what-is-computer-hardware)
+- [@article@What is computer hardware?](https://www.ibm.com/think/topics/hardware)
 - [@video@Computer Components for Dummies](https://www.youtube.com/watch?v=cZs6kh0WFRY)
