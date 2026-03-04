@@ -4,5 +4,5 @@ Codex is OpenAI's coding agent that you can use inside ChatGPT, in your terminal
 
 Visit the following resources to learn more:
 
-- [@official@Codex - Official Webste](https://chatgpt.com/codex)
+- [@official@Codex - Official Website](https://chatgpt.com/codex)
 - [@video@Getting started with Codex](https://www.youtube.com/watch?v=px7XlbYgk7I)
