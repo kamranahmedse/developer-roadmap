@@ -5,4 +5,5 @@ Retrieval-Augmented Generation (RAG) combines information retrieval with languag
 Visit the following resources to learn more:
 
 - [@article@What is RAG?](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
+- [@article@RAG Explained: Understanding Embeddings, Similarity, and Retrieval](https://towardsdatascience.com/rag-explained-understanding-embeddings-similarity-and-retrieval/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@What is Retrieval-Augmented Generation? IBM](https://www.youtube.com/watch?v=T-D1OfcDW1M)

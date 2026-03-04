@@ -5,3 +5,4 @@ The NanoBanana API is a tool designed to facilitate the integration and processi
 Visit the following resources to learn more:
 
 - [@official@NanoBanana API](https://nanobananaapi.ai/)
+- [@article@Generating Consistent Imagery with Gemini](https://towardsdatascience.com/generating-consistent-imagery-with-gemini/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)

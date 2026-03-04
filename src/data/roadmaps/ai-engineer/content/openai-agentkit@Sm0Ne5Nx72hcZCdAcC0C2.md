@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Introducing AgentKit](https://openai.com/index/introducing-agentkit/)
 - [@official@Build every step of agents on one platform](https://openai.com/agent-platform/)
-- [@video@Build Hour: AgentKit](https://www.youtube.com/watch?v=sAitLFLbgDA)
+- [@video@OpenAI Agents SDK Tutorial (FULL SERIES)](https://www.youtube.com/watch?v=gFcAfU3V1Zo)
