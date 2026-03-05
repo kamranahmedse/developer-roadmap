@@ -1,6 +1,6 @@
-# XSS
+# Cross-Site Scripting (XSS)
 
-Cross-Site Scripting (XSS) is a common web application vulnerability where attackers inject malicious scripts into content from trusted websites. These scripts execute in victims' browsers, potentially stealing sensitive data, hijacking user sessions, or defacing websites. XSS attacks come in three main types: stored (persistent), reflected (non-persistent), and DOM-based. Stored XSS permanently embeds malicious code in a server, while reflected XSS occurs when user input is immediately returned by a web application. DOM-based XSS manipulates the Document Object Model in the browser. Prevention strategies include input validation, output encoding, and implementing Content Security Policy headers to mitigate the risk of XSS vulnerabilities.
+Cross-Site Scripting (XSS) is a type of security vulnerability that occurs when a web application allows malicious scripts to be injected into the code, which is executed by other users' browsers. These scripts can steal session cookies, redirect the user to malicious websites, or deface the website, all while appearing to originate from the trusted website itself.
 
 Visit the following resources to learn more:
 

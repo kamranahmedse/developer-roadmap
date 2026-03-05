@@ -1,6 +1,6 @@
-# ATT&CK
+# MITRE ATT&CK Framework
 
-MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. It provides a comprehensive matrix of attack methods used by threat actors, organized into tactics like initial access, execution, persistence, and exfiltration. This framework is widely used by cybersecurity professionals for threat modeling, improving defensive capabilities, and developing more effective security strategies. ATT&CK helps organizations understand attacker behavior, assess their security posture, and prioritize defenses against the most relevant threats.
+The MITRE ATT&CK framework is a knowledge base and model for describing the tactics, techniques, and procedures (TTPs) that adversaries use when attacking computer systems. It's organized into matrices that outline common attack behaviors across various platforms and environments. Security professionals use ATT&CK to understand adversary behavior, develop threat models, improve defenses, and assess an organization's security posture.
 
 Visit the following resources to learn more:
 

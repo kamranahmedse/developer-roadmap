@@ -1,13 +1,6 @@
-# Private Key vs Public Key
+# Private vs Public Keys
 
-**Public keys** and **private keys** are cryptographic components used in asymmetric encryption.
-
-*   **Public Key:** This key is shared openly and used to encrypt data or verify a digital signature. It can be distributed widely and is used by anyone to send encrypted messages to the key owner or to verify their digital signatures.
-    
-*   **Private Key:** This key is kept secret by the owner and is used to decrypt data encrypted with the corresponding public key or to create a digital signature. It must be protected rigorously to maintain the security of encrypted communications and authentication.
-    
-
-Together, they enable secure communications and authentication, where the public key encrypts or verifies, and the private key decrypts or signs.
+Private and public keys are fundamental components of modern cryptography. A private key is a secret, known only to the owner, used for encrypting data and creating digital signatures. A public key, mathematically related to the private key, can be shared openly and is used to decrypt messages encrypted with the corresponding private key or to verify digital signatures created with the private key. The security relies on the difficulty of deriving the private key from the public key.
 
 Visit the following resources to learn more:
 

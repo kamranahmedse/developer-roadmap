@@ -1,6 +1,6 @@
-# Public
+# Public Cloud
 
-A **public cloud** is a computing service offered by third-party providers over the internet, where resources such as servers, storage, and applications are shared among multiple users or organizations. It is typically managed by the cloud service provider and offers scalability, cost-effectiveness, and ease of access, with users paying only for the resources they consume. Public clouds are ideal for businesses and individuals who need flexible, on-demand computing resources without the overhead of managing physical infrastructure. Popular examples include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
+Public cloud refers to computing services offered by a third-party provider over the public internet, available to anyone who wants to use or purchase them. These services include servers, storage, databases, networking, software, analytics, and intelligence. Users typically pay only for the resources they consume, allowing for scalability and cost-effectiveness.
 
 Visit the following resources to learn more:
 

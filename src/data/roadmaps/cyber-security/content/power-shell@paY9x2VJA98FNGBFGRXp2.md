@@ -1,6 +1,6 @@
-# Power Shell
+# PowerShell
 
-**PowerShell** is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and an associated scripting language. It is widely used for system administration, enabling administrators to automate tasks, manage systems, and configure services both on-premises and in cloud environments. PowerShell supports complex scripting with its access to .NET libraries, making it powerful for automating processes, managing network configurations, and interacting with APIs. It also plays a critical role in cybersecurity, as attackers can use PowerShell for malicious purposes, while defenders use it for forensic analysis and system management.
+PowerShell is a command-line shell and scripting language developed by Microsoft. It's designed for system administrators to automate tasks and manage operating systems. Built on the .NET framework, PowerShell uses cmdlets (pronounced "command-lets") to perform specific actions and can interact with various system components and applications.
 
 Visit the following resources to learn more:
 

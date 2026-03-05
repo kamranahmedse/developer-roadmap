@@ -1,8 +1,6 @@
-# Lightweight Directory Access Protocol Secure (LDAPS)
+# LDAPS
 
-LDAPS (Lightweight Directory Access Protocol Secure) is a secure version of the Lightweight Directory Access Protocol (LDAP), which is used to access and manage directory services over a network. LDAP is commonly employed for user authentication, authorization, and management in environments like Active Directory, where it helps manage access to resources such as applications and systems. LDAPS adds security by encrypting LDAP traffic using SSL/TLS (Secure Sockets Layer/Transport Layer Security) protocols, protecting sensitive information like usernames, passwords, and directory data from being intercepted or tampered with during transmission. This encryption ensures data confidentiality and integrity, making LDAPS a preferred choice for organizations that require secure directory communication.
-
-By using LDAPS, organizations can maintain the benefits of LDAP while ensuring that sensitive directory operations are protected from potential eavesdropping or man-in-the-middle attacks on the network.
+LDAPS (Lightweight Directory Access Protocol Secure) is a method of securing LDAP communications by using SSL (Secure Sockets Layer) or TLS (Transport Layer Security) to encrypt the data transmitted between a client and a directory server. This encryption prevents eavesdropping and tampering with sensitive information like usernames, passwords, and other directory attributes during transit, ensuring a more secure directory service environment.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# Understand the Concept of Isolation
+# Isolation
 
-Isolation in computing and cybersecurity refers to the practice of separating systems, processes, or data to contain potential threats and minimize the impact of security breaches. It involves creating boundaries between different components of a system or network to prevent unauthorized access or the spread of malware. Common isolation techniques include virtual machines, containers, network segmentation, and sandboxing. Isolation enhances security by limiting the attack surface, containing potential breaches, and protecting sensitive data or critical systems from compromised areas. It's a fundamental principle in designing secure architectures, implementing least privilege access, and managing multi-tenant environments in cloud computing.
+Isolation is a security principle focused on separating critical resources, processes, or data to prevent unauthorized access or modification. This separation limits the potential impact of a security breach, vulnerability, or error. By creating distinct boundaries, it ensures that if one component is compromised, the damage is contained and does not spread to other parts of the system.
 
 Visit the following resources to learn more:
 

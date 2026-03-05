@@ -1,6 +1,6 @@
-# MAC-based
+# Mandatory Access Control (MAC)
 
-**Mandatory Access Control (MAC)** is a security model in which access to resources is governed by predefined policies set by the system or organization, rather than by individual users. In MAC, access decisions are based on security labels or classifications assigned to both users and resources, such as sensitivity levels or clearance levels. Users cannot change these access controls; they are enforced by the system to maintain strict security standards and prevent unauthorized access. MAC is often used in high-security environments, such as government or military systems, to ensure that data and resources are accessed only by individuals with appropriate authorization.
+Mandatory Access Control (MAC) is a security model where the operating system enforces strict rules on access to resources. Unlike discretionary access control (DAC), where users control access to their own files, MAC uses a centralized authority to define access policies. These policies are based on labels or classifications assigned to both users and data. Access is granted only if the user's label matches or dominates the data's label, ensuring a rigid and consistent security posture.
 
 Visit the following resources to learn more:
 

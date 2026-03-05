@@ -1,6 +1,6 @@
 # Key Exchange
 
-Key exchange is a cryptographic process through which two parties securely share encryption keys over a potentially insecure communication channel. This process is fundamental in establishing a secure communication session, such as in SSL/TLS protocols used for internet security. The most widely known key exchange method is the Diffie-Hellman key exchange, where both parties generate a shared secret key, which can then be used for encrypting subsequent communications. Another common method is the RSA key exchange, which uses public-key cryptography to securely exchange keys. The goal of key exchange is to ensure that only the communicating parties can access the shared key, which is then used to encrypt and decrypt messages, thereby protecting the confidentiality and integrity of the transmitted data.
+Key exchange refers to the processes and protocols used to securely share cryptographic keys between parties. This allows them to then use those keys for encrypting and decrypting messages, ensuring confidentiality and integrity of their communication. Without a secure method for sharing keys, the strength of any encryption algorithm is compromised, as an attacker could simply intercept the key and decrypt the messages.
 
 Visit the following resources to learn more:
 

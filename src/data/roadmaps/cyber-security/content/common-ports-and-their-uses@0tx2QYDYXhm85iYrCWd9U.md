@@ -1,6 +1,6 @@
-# Common Ports and their Uses
+# Common Ports and Their Uses
 
-Common ports are standardized communication endpoints used by various network protocols and services. In cybersecurity, understanding these ports is crucial for configuring firewalls, detecting potential threats, and managing network traffic. Some widely used ports include 80 and 443 for HTTP and HTTPS web traffic, 22 for SSH secure remote access, 25 for SMTP email transmission, and 53 for DNS name resolution. FTP typically uses port 21 for control and 20 for data transfer, while ports 137-139 and 445 are associated with SMB file sharing. Database services often use specific ports, such as 3306 for MySQL and 1433 for Microsoft SQL Server. Cybersecurity professionals must be familiar with these common ports and their expected behaviors to effectively monitor network activities, identify anomalies, and secure systems against potential attacks targeting specific services.
+Ports are virtual endpoints where network connections start and end. They are numbered, and these numbers help identify specific applications or services running on a server. When data is sent over a network, it's directed to a specific port on the receiving device, ensuring that the correct application handles the data. Understanding these common ports and their corresponding services is crucial for diagnosing network issues, configuring firewalls, and identifying potential security vulnerabilities.
 
 Visit the following resources to learn more:
 

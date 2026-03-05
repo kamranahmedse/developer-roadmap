@@ -1,6 +1,6 @@
-# ANY.RUN
+# any.run
 
-ANY.RUN is an interactive online malware analysis platform that allows users to safely execute and analyze suspicious files and URLs in a controlled, virtualized environment. This sandbox service provides real-time insights into the behavior of potentially malicious software, such as how it interacts with the system, what files it modifies, and what network connections it attempts to make. Users can observe and control the analysis process, making it a valuable tool for cybersecurity professionals to identify and understand new threats, assess their impact, and develop appropriate countermeasures. ANY.RUN is particularly useful for dynamic analysis, enabling a deeper understanding of malware behavior in real-time.
+any.run is an interactive online platform used for analyzing suspicious files and URLs in a safe, isolated environment. It allows users to execute potentially malicious software or visit questionable websites without risking their own systems. The platform provides real-time visibility into the behavior of the analyzed item, capturing network traffic, process creation, file modifications, and other indicators of compromise. This helps security professionals quickly understand the nature and impact of a threat.
 
 Visit the following resources to learn more:
 

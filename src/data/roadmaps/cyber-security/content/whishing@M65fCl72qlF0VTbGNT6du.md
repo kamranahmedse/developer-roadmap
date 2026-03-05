@@ -1,6 +1,6 @@
 # Whishing
 
-Whishing, a portmanteau of "wireless" and "phishing," is a cyber attack method that targets users of wireless networks, particularly public Wi-Fi hotspots. Attackers set up rogue wireless access points or compromise existing ones to intercept network traffic or redirect users to malicious websites. These fake hotspots often mimic legitimate ones, tricking users into connecting and potentially exposing their sensitive information. Whishing attacks can lead to theft of login credentials, financial data, or personal information. To protect against whishing, users are advised to avoid sensitive transactions on public Wi-Fi, use VPNs, verify network authenticity, and ensure HTTPS connections when browsing.
+Whishing, a portmanteau of "Whaling" and "Phishing," is a type of social engineering attack that specifically targets high-profile individuals within an organization, such as CEOs, CFOs, and other executives. Unlike regular phishing, which casts a wide net, whishing is highly targeted and aims to trick these individuals into divulging sensitive information or performing actions that benefit the attacker, like transferring money or revealing confidential business strategies. The attackers carefully research their targets to craft believable and persuasive messages, often impersonating someone the target knows or trusts.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # iCloud
 
-iCloud is a cloud storage and cloud computing service provided by Apple Inc. It allows users to store data, such as documents, photos, and music, on remote servers and synchronize them across their Apple devices, including iPhones, iPads, and MacBooks.
+iCloud is Apple's cloud storage and cloud computing service. It allows users to store data like documents, photos, music, and contacts on remote servers and wirelessly synchronize it to their iOS, macOS, or Windows devices. iCloud also provides services like Find My (to locate lost devices) and Keychain (for password management), integrated directly into Apple's operating systems.
 
 Visit the following resources to learn more:
 

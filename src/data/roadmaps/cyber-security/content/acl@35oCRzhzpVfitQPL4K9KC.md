@@ -1,6 +1,6 @@
-# ACL
+# Access Control Lists (ACLs)
 
-An Access Control List (ACL) is a security mechanism used to define which users or system processes are granted access to objects, such as files, directories, or network resources, and what operations they can perform on those objects. ACLs function by maintaining a list of permissions attached to each object, specifying the access rights of various entities—like users, groups, or network traffic—thereby providing fine-grained control over who can read, write, execute, or modify the resources. This method is essential in enforcing security policies, reducing unauthorized access, and ensuring that only legitimate users can interact with sensitive data or systems.
+An Access Control List (ACL) is a set of permissions attached to an object (like a file, folder, or network resource) that specifies which users or groups have access to the object and what level of access they are granted (e.g., read, write, execute). Essentially, it's a table that tells a system who is allowed to do what.
 
 Visit the following resources to learn more:
 

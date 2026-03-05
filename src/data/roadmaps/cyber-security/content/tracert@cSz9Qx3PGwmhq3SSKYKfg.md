@@ -1,6 +1,6 @@
-# tracert
+# Tracert
 
-Tracert (traceroute in Unix-based systems) is a network diagnostic tool used to trace the path that data packets take from a source computer to a destination host. It shows the number of hops (intermediate routers) traversed, the IP addresses of these routers, and the round-trip time for each hop. Tracert works by sending packets with increasing Time-To-Live (TTL) values, causing each router along the path to respond. This tool is valuable for identifying network bottlenecks, pinpointing where packet loss occurs, and understanding the routing path of network traffic. It's commonly used for troubleshooting network connectivity issues, analyzing network performance, and mapping network topology.
+Tracert (traceroute) is a command-line network diagnostic tool used to trace the route that a packet takes from your computer to a specified destination. It works by sending out a series of packets with increasing time-to-live (TTL) values. Each router along the path decrements the TTL, and when a packet's TTL reaches zero, the router sends back an ICMP "time exceeded" message. Tracert records these responses from each router, providing a list of hops and the round-trip time for each hop.
 
 Visit the following resources to learn more:
 

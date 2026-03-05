@@ -1,6 +1,6 @@
-# Understand Basics of Forensics
+# Digital Forensics
 
-Digital forensics is the process of collecting, analyzing, and preserving electronic evidence for legal or investigative purposes. It involves recovering data from various digital devices, including computers, smartphones, and networks, often in cases of cybercrime, data breaches, or legal disputes. Forensic analysts use specialized tools and techniques to extract and examine data, maintain chain of custody, and present findings in a court-admissible manner. Key aspects include data acquisition, file recovery, timeline analysis, and malware detection. Digital forensics plays a crucial role in cybersecurity incident response, criminal investigations, and corporate compliance, requiring a meticulous approach to ensure the integrity and admissibility of digital evidence.
+Digital forensics is like being a detective for computers and other digital devices. When a cybercrime or security incident happens, digital forensics experts investigate the devices involved to find clues. They collect, preserve, and analyze data from these devices, such as emails, files, and system logs, to figure out what happened, who was responsible, and how they did it. The goal is to find digital evidence that can be used in legal proceedings or to improve security measures and prevent future incidents.
 
 Visit the following resources to learn more:
 

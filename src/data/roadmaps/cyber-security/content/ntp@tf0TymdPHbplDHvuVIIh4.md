@@ -1,6 +1,6 @@
-# NTP
+# Network Time Protocol (NTP)
 
-**Network Time Protocol (NTP)** is a protocol used to synchronize the clocks of computers and network devices over a network. It ensures that all systems maintain accurate and consistent time by coordinating with a hierarchy of time sources, such as atomic clocks or GPS, through network communication. NTP operates over UDP port 123 and uses algorithms to account for network delays and adjust for clock drift, providing millisecond-level accuracy. Proper time synchronization is crucial for applications requiring time-sensitive operations, logging events, and maintaining the integrity of security protocols.
+Network Time Protocol (NTP) is a networking protocol designed to synchronize the clocks of computers over a network. It uses a hierarchical system of time servers to distribute accurate time information, enabling devices to maintain consistent and reliable timestamps. This protocol operates by exchanging time data between a client and one or more time servers to calculate the network delay and clock offset, allowing the client to adjust its clock to match the server's time.
 
 Visit the following resources to learn more:
 

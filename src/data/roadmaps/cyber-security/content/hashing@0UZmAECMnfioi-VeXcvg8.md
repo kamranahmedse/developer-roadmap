@@ -1,6 +1,6 @@
 # Hashing
 
-Hashing is a cryptographic process that converts input data of any size into a fixed-size string of characters, typically a hexadecimal number. This output, called a hash value or digest, is unique to the input data and serves as a digital fingerprint. Unlike encryption, hashing is a one-way process, meaning it's computationally infeasible to reverse the hash to obtain the original data. In cybersecurity, hashing is widely used for password storage, data integrity verification, and digital signatures. Common hashing algorithms include MD5 (now considered insecure), SHA-256, and bcrypt. Hashing helps detect unauthorized changes to data, as even a small alteration in the input produces a significantly different hash value. However, the strength of a hash function is crucial, as weak algorithms can be vulnerable to collision attacks, where different inputs produce the same hash, potentially compromising security measures relying on the uniqueness of hash values.
+Hashing is a fundamental concept in computer science involving the use of a mathematical function (a hash function) to map data of arbitrary size to a fixed-size value, known as a hash or a hash code. This transformation is typically one-way, meaning it is computationally infeasible to reverse the process and recover the original data from the hash value alone. Hash functions are designed to be deterministic, ensuring that the same input always produces the same output.
 
 Visit the following resources to learn more:
 

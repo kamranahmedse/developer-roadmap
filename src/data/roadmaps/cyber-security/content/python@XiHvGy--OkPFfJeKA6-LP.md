@@ -5,5 +5,5 @@
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
-- [@course@Python Full Course 2024](https://www.youtube.com/watch?v=ix9cRaBkVe0)
+- [@course@Python Full Course for Beginners](https://www.youtube.com/watch?v=K5KVEU3aaeQ)
 - [@video@Python in 100 Seconds](https://www.youtube.com/watch?v=x7X9w_GIm1s)

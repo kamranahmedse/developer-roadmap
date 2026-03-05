@@ -1,8 +1,6 @@
-# True Negative / True Positive
+# True Positives and True Negatives
 
-A True Positive occurs when a security system correctly identifies a genuine threat or malicious activity. It's an accurate alert that correctly detects an actual security incident. For example, an antivirus correctly flagging a file as malware. A True Negative is when a security system correctly identifies that there is no threat when indeed no threat exists. It's the system's accurate determination that normal, benign activity is not a security risk. For example, a firewall correctly allowing legitimate network traffic.
-
-Both True Positives and True Negatives represent correct assessments by security systems, contributing to effective threat detection and minimizing false alarms. Balancing these with minimizing false positives and false negatives is crucial for optimal security system performance.
+In the context of security assessments and testing, a true positive is when a security system correctly identifies a threat that is actually present. Conversely, a true negative occurs when the system correctly identifies that there is no threat when, in reality, no threat exists. These metrics are fundamental in evaluating the effectiveness and accuracy of security tools and protocols.
 
 Visit the following resources to learn more:
 

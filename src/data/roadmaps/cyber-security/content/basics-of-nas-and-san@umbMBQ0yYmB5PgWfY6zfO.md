@@ -1,8 +1,6 @@
-# Basics of NAS and SAN
+# Network Attached Storage (NAS) and Storage Area Networks (SAN)
 
-Network Attached Storage (NAS) and Storage Area Network (SAN) are both technologies used for storing and managing data, but they operate in different ways and serve different purposes. NAS is a dedicated file storage device that connects to a network, allowing multiple users and devices to access files over a shared network. It operates at the file level and uses standard networking protocols such as NFS or SMB/CIFS, making it easy to set up and manage, especially for small to medium-sized businesses. NAS devices are ideal for sharing files, providing backups, and enabling centralized data access across multiple users in a local network.
-
-SAN, on the other hand, is a high-performance, specialized network designed to provide block-level storage, which means it acts as a direct-attached storage device to servers. SAN uses protocols such as Fibre Channel or iSCSI and is typically employed in large enterprise environments where fast, high-capacity, and low-latency storage is critical for applications like databases and virtualized systems. While NAS focuses on file sharing across a network, SAN is designed for more complex, high-speed data management, enabling servers to access storage as if it were directly connected to them. Both NAS and SAN are vital components of modern data storage infrastructure but are chosen based on the specific performance, scalability, and management needs of the organization.
+Network Attached Storage (NAS) is a file-level data storage device that connects to a network, allowing multiple devices to access files from a central location. A Storage Area Network (SAN) is a dedicated, high-speed network that provides block-level access to storage devices, appearing to servers as locally attached disks.
 
 Visit the following resources to learn more:
 

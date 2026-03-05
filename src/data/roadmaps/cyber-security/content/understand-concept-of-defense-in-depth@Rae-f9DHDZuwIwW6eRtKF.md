@@ -1,6 +1,6 @@
-# Understand Concept of Defense in Depth
+# Defense in Depth
 
-Defense in Depth is a cybersecurity strategy that employs multiple layers of security controls throughout an IT system or network. This approach assumes that no single security measure is perfect, and therefore combines various defensive mechanisms to protect assets. It typically includes physical security, network security, endpoint protection, application security, data security, and user education. By implementing overlapping security measures, the strategy aims to create a comprehensive security posture that can withstand various types of attacks, slow down intruders, and provide multiple opportunities for detection and response. This layered approach helps organizations maintain security even if one layer is compromised, significantly improving overall resilience against cyber threats.
+Defense in Depth is a layered security strategy where multiple security controls are strategically placed throughout an IT environment. This approach ensures that if one security mechanism fails or is bypassed, others are in place to prevent a successful attack. Think of it like an onion: you have to peel through many layers before you get to the core.
 
 Visit the following resources to learn more:
 

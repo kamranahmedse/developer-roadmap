@@ -1,6 +1,6 @@
-# EDR
+# Endpoint Detection and Response (EDR)
 
-Endpoint Detection and Response (EDR) is a cybersecurity technology that provides continuous monitoring and response to threats at the endpoint level. It is designed to detect, investigate, and mitigate suspicious activities on endpoints such as laptops, desktops, and mobile devices. EDR solutions log and analyze behaviors on these devices to identify potential threats, such as malware or ransomware, that have bypassed traditional security measures like antivirus software. This technology equips security teams with the tools to quickly respond to and contain threats, minimizing the risk of a security breach spreading across the network. EDR systems are an essential component of modern cybersecurity strategies, offering advanced protection by utilizing real-time analytics, AI-driven automation, and comprehensive data recording.
+EDR is a security technology that continuously monitors endpoints (like computers, laptops, and servers) for suspicious activity and threats. It collects data from these endpoints, analyzes it in real-time, and automatically responds to detected threats to prevent or minimize damage. The goal of EDR is to provide better visibility into what is happening on endpoints, allowing security teams to quickly identify, investigate, and remediate security incidents.
 
 Visit the following resources to learn more:
 

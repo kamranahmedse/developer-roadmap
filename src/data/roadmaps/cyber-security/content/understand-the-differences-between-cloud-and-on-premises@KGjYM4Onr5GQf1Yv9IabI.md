@@ -1,6 +1,6 @@
-# Understand the differences between cloud and on-premises
+# Cloud vs. On-Premises
 
-Cloud computing involves using remote servers hosted on the internet to store, manage, and process data, rather than a local server or personal computer. It offers scalability, flexibility, and often lower upfront costs. Users can access resources on-demand and pay for what they use. Cloud solutions provide easier remote access and automatic updates but may raise data security and compliance concerns. On-premises (or on-prem) refers to installing and running software on computers and servers located within an organization's physical premises. This approach offers more direct control over data and systems, potentially better performance for certain applications, and can address specific regulatory requirements. However, it typically requires higher upfront investment, ongoing maintenance, and may be less scalable than cloud solutions. Many organizations now adopt hybrid approaches, combining both cloud and on-premises solutions to balance their specific needs for control, cost-efficiency, and flexibility.
+Cloud computing involves using shared computing resources, like servers and software, provided by a third-party over the internet. On-premises computing, on the other hand, involves managing your own computing infrastructure, including servers, networking, and software, physically located within your own facilities. The key difference lies in where the infrastructure resides and who is responsible for its management and maintenance.
 
 Visit the following resources to learn more:
 

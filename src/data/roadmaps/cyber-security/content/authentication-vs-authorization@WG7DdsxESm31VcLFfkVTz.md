@@ -1,8 +1,6 @@
-# Authentication vs Authorization
+# Authentication vs. Authorization
 
-**Authentication** is the process of validating the identity of a user, device, or system. It confirms that the entity attempting to access the resource is who or what they claim to be. The most common form of authentication is the use of usernames and passwords. Other methods include:
-
-**Authorization** comes into play after the authentication process is complete. It involves granting or denying access to a resource, based on the authenticated user's privileges. Authorization determines what actions the authenticated user or entity is allowed to perform within a system or application.
+Authentication verifies *who* a user is, confirming their identity using credentials like usernames and passwords. Authorization, on the other hand, determines *what* a user is allowed to access after they've been authenticated. In essence, authentication proves you are who you say you are, while authorization dictates what you can do.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# Understand Handshakes
+# Handshakes
 
-In networking and cybersecurity, a handshake is a process of establishing a secure connection between two parties before data exchange begins. It typically involves a series of predefined messages exchanged to verify identities, agree on communication parameters, and sometimes establish encryption keys. The most common example is the TCP three-way handshake used to initiate a connection. In cryptographic protocols like TLS/SSL, handshakes are more complex, involving certificate verification and key exchange. Handshakes are crucial for ensuring secure, authenticated communications, preventing unauthorized access, and setting up the parameters for efficient data transfer in various network protocols and security systems.
+A handshake is a digital "hello" between two systems, like your computer and a website's server, establishing a secure communication channel. It's a process where both sides exchange information to agree on things like encryption methods and session keys. Think of it as a secret agreement before any real conversation happens, ensuring that the data exchanged afterward is protected from eavesdropping or tampering. It verifies identities and sets up a secure connection before any sensitive data is transmitted.
 
 Visit the following resources to learn more:
 
