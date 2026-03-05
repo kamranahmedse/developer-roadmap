@@ -1,22 +1,7 @@
 # Ambient Modules
 
-Ambient modules in TypeScript are used to declare external modules or third-party libraries in a TypeScript program. Ambient modules provide type information for modules that have no TypeScript declarations, but are available in the global scope.
+Ambient modules in TypeScript are used to describe the shape of existing JavaScript code when you don't have the TypeScript declaration files (`.d.ts`) readily available. They essentially allow you to tell the TypeScript compiler about the existence and structure of a JavaScript module, so you can import and use it in your TypeScript code without getting type errors, even if the module itself wasn't written in TypeScript.
 
-Here's an example of how you can use ambient modules in TypeScript:
-
-```typescript
-// myModule.d.ts
-declare module 'my-module' {
-  export function doSomething(): void;
-}
-
-// main.ts
-import * as myModule from 'my-module';
-myModule.doSomething();
-```
-
-In this example, we declare an ambient module "my-module" in the `myModule.d.ts` file. This declaration provides type information for the "my-module" module, including the "doSomething" function that is exported from the module.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Ambient Modules](https://www.typescriptlang.org/docs/handbook/modules/reference.html#ambient-modules)

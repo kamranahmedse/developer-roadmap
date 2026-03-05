@@ -1,22 +1,7 @@
-# Equality
+# Equality in Type Guards and Narrowing
 
-TypeScript also uses switch statements and equality checks like `===`, `!==`, `==`, and `!=` to narrow types. For example:
+Equality in the context of type guards and narrowing refers to using comparison operators (like `===`, `!==`, `==`, `!=`) to refine the type of a variable within a TypeScript program. By comparing a variable against a specific value (or another variable), TypeScript can infer a more specific type for that variable within a certain scope, enabling safer and more accurate code execution by ruling out possibilities. This mechanism enhances type safety by allowing the compiler to understand the possible values and types a variable can hold at different points in the code.
 
-```typescript
-function example(x: string | number, y: string | boolean) {
-  if (x === y) {
-    // We can now call any 'string' method on 'x' or 'y'.
-    x.toUpperCase();
-    y.toLowerCase();
-  } else {
-    console.log(x);
-    console.log(y);
-  }
-}
-```
-
-When we checked that `x` and `y` are both equal in the above example, TypeScript knew their types also had to be equal. Since string is the only common type that both `x` and `y` could take on, TypeScript knows that `x` and `y` must be a string in the first branch.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Equality Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#equality-narrowing)

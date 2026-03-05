@@ -8,16 +8,14 @@ With `strictNullChecks` off, values that might be `null` or `undefined` can stil
 
 With `strictNullChecks` on, when a value is `null` or `undefined`, you will need to test for those values before using methods or properties on that value. Just like checking for `undefined` before using an optional property, we can use narrowing to check for values that might be `null`:
 
-```typescript
-function doSomething(x: string | null) {
-  if (x === null) {
-    // do nothing
-  } else {
-    console.log('Hello, ' + x.toUpperCase());
-  }
-}
-```
+    function doSomething(x: string | null) {
+      if (x === null) {
+        // do nothing
+      } else {
+        console.log('Hello, ' + x.toUpperCase());
+      }
+    }
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@null and undefined](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined)

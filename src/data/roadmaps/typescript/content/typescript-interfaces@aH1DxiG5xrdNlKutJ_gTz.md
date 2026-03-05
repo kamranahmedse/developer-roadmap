@@ -1,23 +1,7 @@
-# Interfaces
+# TypeScript Interfaces
 
-Interfaces in TypeScript provide a way to define a contract for a type, which includes a set of properties, methods, and events. It's used to enforce a structure for an object, class, or function argument. Interfaces are not transpiled to JavaScript and are only used by TypeScript at compile-time for type-checking purposes.
+Interfaces in TypeScript are a way to define a contract for the structure of an object. They describe the shape that an object should have, specifying the names, types, and optionality of its properties. Essentially, an interface names a specific combination of fields and their types. These interfaces don't compile into JavaScript; they are purely a TypeScript construct used for type-checking during development.
 
-Here's an example of defining and using an interface in TypeScript:
-
-```typescript
-interface User {
-  name: string;
-  age: number;
-}
-
-const user: User = {
-  name: 'John Doe',
-  age: 30,
-};
-```
-
-In this example, the `User` interface defines the structure of the `user` object with two properties, `name` and `age`. The object is then typed as User using a type-assertion: `User`.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@TypeScript - Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)

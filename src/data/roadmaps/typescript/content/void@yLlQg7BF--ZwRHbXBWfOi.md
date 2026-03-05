@@ -1,16 +1,7 @@
-# void
+# Void Type
 
-`void` represents the return value of functions which don’t return a value. It’s the inferred type any time a function doesn’t have any `return` statements, or doesn’t return any explicit value from those return statements:
+The `void` type in TypeScript represents the absence of a value. It is commonly used as the return type of functions that do not return any value, essentially indicating that the function performs an action but doesn't produce a result. A function declared with a `void` return type is not expected to return any data back to the caller.
 
-```typescript
-// The inferred return type is void
-function noop() {
-  return;
-}
-```
-
-In JavaScript, a function that doesn’t return any value will implicitly return the value `undefined`. However, `void` and `undefined` are not the same thing in TypeScript. There are further details at the end of this chapter.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@void - TypeScript Docs](https://www.typescriptlang.org/docs/handbook/2/functions.html#void)

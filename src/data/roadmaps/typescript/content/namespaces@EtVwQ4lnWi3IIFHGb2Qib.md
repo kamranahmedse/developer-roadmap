@@ -1,25 +1,8 @@
 # Namespaces
 
-In TypeScript, namespaces are used to organize and share code across multiple files. Namespaces allow you to group related functionality into a single unit and prevent naming conflicts.
+Namespaces in TypeScript are a way to organize code into logical groups, preventing naming collisions and improving code maintainability. They create a named container where you can define variables, functions, classes, and interfaces. By using namespaces, you can encapsulate related functionality under a specific name, making your code more structured and easier to understand.
 
-Here's an example of how you can use namespaces in TypeScript:
-
-```typescript
-// myNamespace.ts
-namespace MyNamespace {
-  export function doSomething() {
-    console.log('Doing something...');
-  }
-}
-
-// main.ts
-/// <reference path="myNamespace.ts" />
-MyNamespace.doSomething(); // Output: "Doing something..."
-```
-
-In this example, we use the `namespace` keyword in the "myNamespace.ts" file to define a namespace "MyNamespace". Within the namespace, we export a function "doSomething".
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Overview of Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 - [@official@Namespaces and Modules](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html)

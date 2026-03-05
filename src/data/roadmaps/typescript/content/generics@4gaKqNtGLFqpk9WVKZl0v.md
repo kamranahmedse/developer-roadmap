@@ -1,19 +1,7 @@
 # Generics
 
-Generics in TypeScript are a way to write code that can work with multiple data types, instead of being limited to a single data type. Generics allow you to write functions, classes, and interfaces that take one or more type parameters, which act as placeholders for the actual data types that will be used when the function, class, or interface is used.
+Generics are a way to write code that can work with a variety of types without knowing those types ahead of time. They allow you to define type variables that can be used to represent the specific type that will be used when the code is actually executed. This makes your code more reusable and type-safe by preventing errors that could occur if you were to use `any` or other less specific types.
 
-For example, the following is a generic function that takes a single argument of any data type and returns the same data type:
-
-```typescript
-function identity<T>(arg: T): T {
-  return arg;
-}
-
-let output = identity<string>('Hello'); // type of output will be 'string'
-```
-
-In this example, the `identity` function takes a single argument of any data type and returns the same data type. The actual data type is specified when the function is called by using `<string>` before the argument `"Hello"`.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Hello World of Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics)

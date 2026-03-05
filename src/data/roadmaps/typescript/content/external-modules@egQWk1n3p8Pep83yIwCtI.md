@@ -1,22 +1,7 @@
-# External Modules
+# External Modules in TypeScript
 
-In TypeScript, external modules allow you to organize and share code across multiple files. External modules in TypeScript follow the CommonJS or ES modules standards.
+External modules in TypeScript are files containing code that can be imported and used in other files. They help organize and structure your project by dividing code into logical units, improving maintainability and reusability. Each external module has its own scope, preventing naming conflicts and allowing you to explicitly control what is exposed from the module using `export` and what is consumed from other modules using `import`.
 
-Here's an example of how you can use external modules in TypeScript:
-
-```typescript
-// myModule.ts
-export function doSomething() {
-  console.log('Doing something...');
-}
-
-// main.ts
-import { doSomething } from './myModule';
-doSomething(); // Output: "Doing something..."
-```
-
-In this example, we use the "export" keyword in the "myModule.ts" file to export the "doSomething" function, making it available for other files to use.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@TypeScript - External Module](https://learncodeweb.com/typescript/modules-in-typescript-explain-with-an-example/)

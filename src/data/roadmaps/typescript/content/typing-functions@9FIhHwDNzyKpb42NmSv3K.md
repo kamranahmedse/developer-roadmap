@@ -1,33 +1,7 @@
 # Typing Functions
 
-In TypeScript, functions can be typed in a few different ways to indicate the input parameters and return type of the function.
+Functions in programming are reusable blocks of code that perform specific tasks. Typing functions in TypeScript means defining the types of the parameters a function accepts and the type of value it returns. This allows the TypeScript compiler to verify that functions are used correctly, preventing type-related errors at runtime and enhancing code maintainability and readability.
 
-Function declaration with types:
-
-```typescript
-function add(a: number, b: number): number {
-  return a + b;
-}
-```
-
-Arrow function with types:
-
-```typescript
-const multiply = (a: number, b: number): number => {
-  return a * b;
-};
-```
-
-Function type:
-
-```typescript
-let divide: (a: number, b: number) => number;
-
-divide = (a, b) => {
-  return a / b;
-};
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@TypeScript Functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)

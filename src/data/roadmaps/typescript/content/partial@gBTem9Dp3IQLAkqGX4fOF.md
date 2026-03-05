@@ -1,31 +1,3 @@
-# Partial
+# Partial Type
 
-The Partial type in TypeScript allows you to make all properties of a type optional. This is useful when you need to create an object with only a subset of the properties of an existing type.
-
-Here's an example of using the Partial type in TypeScript:
-
-```typescript
-interface User {
-  name: string;
-  age: number;
-  email: string;
-}
-
-function createUser(user: Partial<User>): User {
-  return {
-    name: 'John Doe',
-    age: 30,
-    email: 'john.doe@example.com',
-    ...user,
-  };
-}
-
-const newUser = createUser({ name: 'Jane Doe' });
-
-console.log(newUser);
-// Output: { name: 'Jane Doe', age: 30, email: 'john.doe@example.com' }
-```
-
-Learn more from the following links:
-
-- [@official@Partial<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)
+The `Partial<Type>` utility type in TypeScript constructs a type where all properties of the original `Type` are set to optional. This means that when you use `Partial<Type>`, you can create objects that only include a subset of the properties defined in the original `Type`, or even have no properties at all. Essentially, it makes all properties of a type nullable.

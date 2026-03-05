@@ -1,17 +1,7 @@
 # Intersection Types
 
-An intersection type creates a new type by combining multiple existing types. The new type has all features of the existing types.
+Intersection types in TypeScript allow you to combine multiple types into a single type. The resulting type has all the features (properties, methods, etc.) of all the constituent types. This is particularly useful when you want to create a type that represents an object that must satisfy multiple type constraints simultaneously.
 
-To combine types, you use the `&` operator as follows:
-
-```typescript
-type typeAB = typeA & typeB;
-```
-
-The `typeAB` will have all properties from both typeA and typeB.
-
-Note that the union type uses the `|` operator that defines a variable which can hold `typeA` value, or `typeB` value, or both altogether.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Intersection Types in TypeScript](https://www.typescripttutorial.net/typescript-tutorial/typescript-intersection-types/)

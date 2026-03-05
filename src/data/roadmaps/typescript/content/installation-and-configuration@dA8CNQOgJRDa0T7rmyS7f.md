@@ -1,49 +1,8 @@
-# Install and Configure
+# Installation and Configuration
 
-To install and configure TypeScript in your project, you need to perform the following steps:
+The installation process of TypeScript generally includes installing the TypeScript compiler, which translates TypeScript code into JavaScript, and configuring your project with a `tsconfig.json` file to manage compiler options and project settings. This setup enables you to write, compile, and run TypeScript code effectively.
 
-- Initialize npm in your project directory by running the following command:
-
-```bash
-npm init
-```
-
-- Install TypeScript as a project dependency by running the following command:
-
-```bash
-npm install --save-dev typescript
-```
-
-- Create a `tsconfig.json` file in your project directory to specify the compiler options for building your project. For example:
-
-```json
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "strict": true,
-    "outDir": "./dist",
-    "rootDir": "./src"
-  },
-  "exclude": ["node_modules"]
-}
-```
-
-- Compile your TypeScript code using the following command:
-
-```bash
-npx tsc
-```
-
-Note: You can also compile individual TypeScript files by specifying the file path after the tsc command. For example:
-
-```bash
-npx tsc ./src/index.ts
-```
-
-And you're all set! You can now start writing TypeScript code in your project.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Install and Configure TypeScript](https://www.typescriptlang.org/download)
 - [@article@TypeScript Getting Started](https://thenewstack.io/typescript-tutorial-a-guide-to-using-the-programming-language/)

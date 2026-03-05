@@ -1,28 +1,7 @@
-# Never
+# Never Type
 
-The `never` type represents the type of values that never occur. For instance, `never` is the return type for a function expression or an arrow function expression that always throws an exception or one that never returns. Variables also acquire the type never when narrowed by any type guards that can never be `true`.
+The `never` type in TypeScript represents the type of values that will never occur. This means a function that always throws an error or runs forever (infinite loop) implicitly returns `never`. It is also useful for exhaustive checking in discriminated unions, ensuring that all possible cases are handled. Essentially, you cannot assign any type to a variable of type `never` (except `never` itself), making it the bottom type in TypeScript's type system.
 
-The never type is a subtype of, and assignable to, every type; however, no type is a subtype of, or assignable to, `never` (except `never` itself). Even any isn’t assignable to `never`.
-
-Examples of functions returning never:
-
-```typescript
-// Function returning never must not have a reachable end point
-function error(message: string): never {
-  throw new Error(message);
-}
-
-// Inferred return type is never
-function fail() {
-  return error('Something failed');
-}
-
-// Function returning never must not have a reachable end point
-function infiniteLoop(): never {
-  while (true) {}
-}
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Never Type](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)

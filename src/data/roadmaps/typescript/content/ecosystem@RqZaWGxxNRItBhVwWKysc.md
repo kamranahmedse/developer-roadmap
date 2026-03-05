@@ -1,3 +1,3 @@
-# Ecosystem
+# TypeScript Ecosystem
 
-Have a look at the linked nodes for different tools and frameworks that you can use to build your projects.
+The TypeScript ecosystem refers to the collection of tools, libraries, frameworks, and resources that support and enhance TypeScript development. It includes everything from build tools and linters to UI libraries and server-side frameworks that have TypeScript definitions available or are specifically designed to work well with TypeScript. The ecosystem also incorporates community resources like documentation, tutorials, and open-source projects that help developers learn and use TypeScript effectively.

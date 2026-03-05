@@ -1,15 +1,7 @@
-# Constructor Params
+# Constructor Parameters
 
-In TypeScript, constructor parameters can be declared with access modifiers (e.g. `public`, `private`, `protected`) and/or type annotations. The parameters are then automatically assigned to properties of the same name within the constructor, and can be accessed within the class. For example:
+In TypeScript classes, constructor parameters provide a concise way to define and initialize class properties directly within the constructor's parameter list. By using access modifiers like `public`, `private`, or `protected` before a constructor parameter, TypeScript automatically creates a corresponding class property with that name and assigns the constructor argument's value to it. This streamlines the process of property declaration and initialization, reducing boilerplate code.
 
-```typescript
-class Example {
-  constructor(private name: string, public age: number) {}
-}
-```
-
-In this example, the constructor has two parameters: name and age. name has a private access modifier, so it can only be accessed within the Example class. age has a public access modifier, so it can be accessed from outside the class as well.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@TypeScript - Construct](https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors)
