@@ -1,8 +1,6 @@
-# File Transfer Protocol (FTP)
+# FTP
 
-FTP is a standard network protocol used to transfer files from one host to another host over a TCP-based network, such as the Internet. Originally developed in the 1970s, it's one of the earliest protocols for transferring files between computers and remains widely used today.
-
-FTP operates on a client-server model, where one computer acts as the client (the sender or requester) and the other acts as the server (the receiver or provider). The client initiates a connection to the server, usually by providing a username and password for authentication, and then requests a file transfer.
+File Transfer Protocol (FTP) is a standard network protocol used for transferring files between a client and a server over a TCP/IP network, such as the internet. It operates using a client-server model, where a client initiates a connection to an FTP server to upload, download, delete, or rename files. FTP requires authentication, usually with a username and password, and establishes separate control and data connections for managing commands and transferring data, respectively.
 
 Visit the following resources to learn more:
 

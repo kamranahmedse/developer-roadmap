@@ -1,6 +1,6 @@
 # LDAP
 
-LDAP (Lightweight Directory Access Protocol) is a standardized application protocol for accessing and maintaining distributed directory information services over an IP network. It's primarily used for querying and modifying directory services, such as user authentication and information lookup. LDAP organizes data in a hierarchical tree structure and is commonly used in enterprise environments for centralized user management, authentication, and authorization. It supports features like single sign-on and can integrate with various applications and services. LDAP is widely used in conjunction with Active Directory and other directory services to provide a centralized repository for user accounts, groups, and other organizational data, facilitating efficient user and resource management in networked environments.
+LDAP (Lightweight Directory Access Protocol) is a software protocol for enabling anyone to locate data about organizations, individuals, and other resources, such as files and devices on a network. It is a "directory service" that structures information in a hierarchical, tree-like structure, allowing for efficient searching and retrieval of information. Think of it like a phone book for networks, but instead of just names and numbers, it can store a wide range of information about network users and resources.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# ARP
+# ARP Troubleshooting
 
-ARP is a protocol used by the Internet Protocol (IP) to map an IP address to a physical address, also known as a Media Access Control (MAC) address. ARP is essential for routing data between devices in a Local Area Network (LAN) as it allows for the translation of IP addresses to specific hardware on the network. When a device wants to communicate with another device on the same LAN, it needs to determine the corresponding MAC address for the target IP address. ARP helps in this process by broadcasting an ARP request containing the target IP address. All devices within the broadcast domain receive this ARP request and compare the target IP address with their own IP address. If a match is found, the device with the matching IP address sends an ARP reply which contains its MAC address. The device that initiated the ARP request can now update its ARP cache (a table that stores IP-to-MAC mappings) with the new information, and then proceed to send data to the target's MAC address.
+Address Resolution Protocol (ARP) is a protocol used to map an IP address to a physical machine address, also known as a Media Access Control (MAC) address, on a local network. When a device wants to communicate with another device on the same network, it uses ARP to find the MAC address associated with the destination's IP address. Problems with ARP can lead to communication failures and network connectivity issues, requiring specific tools and techniques for diagnosis and resolution.
 
 Visit the following resources to learn more:
 

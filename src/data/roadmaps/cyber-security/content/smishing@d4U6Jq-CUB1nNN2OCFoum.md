@@ -1,6 +1,6 @@
 # Smishing
 
-Smishing, a portmanteau of "SMS" and "phishing," is a form of cyber attack that uses text messages (SMS) to deceive recipients into divulging sensitive information or taking harmful actions. Attackers typically impersonate trusted entities like banks, government agencies, or popular services, urging victims to click on malicious links, download harmful apps, or provide personal data. These messages often create a sense of urgency or offer enticing rewards to manipulate recipients. Smishing exploits the trust people place in mobile communications and the limited security features of SMS. As mobile device usage increases, smishing has become a significant threat, requiring user awareness and caution when interacting with unsolicited text messages.
+Smishing is a type of phishing attack that uses SMS (Short Message Service) or text messages to trick individuals into giving up sensitive information. Attackers send fraudulent text messages that appear to be from legitimate sources, such as banks, government agencies, or popular businesses. These messages often contain urgent requests, warnings, or enticing offers designed to lure recipients into clicking malicious links, calling fake phone numbers, or providing personal details.
 
 Visit the following resources to learn more:
 

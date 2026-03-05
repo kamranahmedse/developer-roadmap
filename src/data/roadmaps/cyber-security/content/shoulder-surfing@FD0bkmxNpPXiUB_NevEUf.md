@@ -1,6 +1,6 @@
 # Shoulder Surfing
 
-In a Shoulder Surfing Attack, an attacker tries to get information when you are unaware of where the attacker looks over your shoulder or from your back to see what you're doing on your device and obtain sensitive information. Shoulder Surfing attacks are accomplished by observing the content "over the victim's shoulder". It is a social engineering attack where the attackers physically view the device screen and keypad to obtain personal information. This attack is mostly done when you are in a public place or crowded area. Sometimes attackers attack when you are busy on your device and the attacker could be your friend, someone you know or it may be some stranger.
+Shoulder surfing is a type of social engineering attack where an attacker directly observes someone entering sensitive information, such as passwords, PINs, or credit card details. This observation can happen in public places like ATMs, coffee shops, or even within an office environment. The attacker uses direct line of sight to steal the information without needing any technical tools or sophisticated hacking methods.
 
 Visit the following resources to learn more:
 

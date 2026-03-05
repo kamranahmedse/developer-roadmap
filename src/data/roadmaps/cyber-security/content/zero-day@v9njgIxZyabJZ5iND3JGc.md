@@ -1,6 +1,6 @@
-# Zero Day
+# Zero-Day Exploits
 
-A zero-day vulnerability is a software security flaw unknown to the vendor and its developers, leaving it unpatched and potentially exploitable. When attackers discover and exploit such a vulnerability before the software creator can develop and release a fix, it's called a zero-day attack. These attacks are particularly dangerous because they take advantage of the window between discovery and patching, during which systems are highly vulnerable. Zero-days are prized in cybercriminal circles and can be used for various malicious purposes, including data theft, system compromise, or as part of larger attack campaigns. Defending against zero-days often requires proactive security measures, as traditional signature-based defenses are ineffective against unknown threats.
+A zero-day exploit refers to a cyber attack that targets a software vulnerability which is unknown to the software vendor or the public. This means there isn't a patch available to fix the vulnerability when the attack occurs. These vulnerabilities are discovered by malicious actors and exploited before developers have a chance to address them, making them particularly dangerous.
 
 Visit the following resources to learn more:
 

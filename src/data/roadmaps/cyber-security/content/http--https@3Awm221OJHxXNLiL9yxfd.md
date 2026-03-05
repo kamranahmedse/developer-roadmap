@@ -1,6 +1,6 @@
 # HTTP / HTTPS
 
-HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) are fundamental protocols for web communication. HTTP is the foundation for data exchange on the World Wide Web, allowing browsers to request resources from web servers. However, HTTP transmits data in plain text, making it vulnerable to eavesdropping and man-in-the-middle attacks. HTTPS addresses these security concerns by adding a layer of encryption using SSL/TLS (Secure Sockets Layer/Transport Layer Security). This encryption protects the confidentiality and integrity of data in transit, securing sensitive information such as login credentials and financial transactions. HTTPS also provides authentication, ensuring that users are communicating with the intended website. In recent years, there has been a significant push towards HTTPS adoption across the web, with major browsers marking HTTP sites as "not secure." This shift has greatly enhanced overall web security, though it's important to note that HTTPS secures the connection, not necessarily the content of the website itself.
+HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the web. It defines how messages are formatted and transmitted between a web server and a browser. HTTPS (HTTP Secure) is the secure version of HTTP, where the communication is encrypted using Transport Layer Security (TLS) or Secure Sockets Layer (SSL). This encryption protects the data being transferred from eavesdropping and tampering.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# Performing CRUD on Files
+# File CRUD Operations in Operating Systems
 
-Performing CRUD operations on files involves creating new files (using write mode), reading file contents (using read mode), updating files (by appending or overwriting existing content), and deleting files (using commands or functions like `os.remove()` in Python). These basic operations are fundamental for managing file data in various applications.
+Creating, reading, updating, and deleting (CRUD) files are fundamental operations within any operating system. These actions allow users and programs to interact with data stored on a computer, enabling everything from saving documents to managing configuration settings. Understanding how these operations work at a lower level provides insights into data management and system security.
 
 Visit the following resources to learn more:
 

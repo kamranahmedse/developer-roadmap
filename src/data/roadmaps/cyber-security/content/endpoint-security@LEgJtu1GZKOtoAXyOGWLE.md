@@ -1,6 +1,6 @@
 # Endpoint Security
 
-Endpoint security focuses on protecting individual devices that connect to a network, such as computers, smartphones, tablets, and IoT devices. It's a critical component of modern cybersecurity strategy, as endpoints often serve as entry points for cyberattacks. This approach involves deploying and managing security software on each device, including antivirus programs, firewalls, and intrusion detection systems. Advanced endpoint protection solutions may incorporate machine learning and behavioral analysis to detect and respond to novel threats. Endpoint security also encompasses patch management, device encryption, and access controls to mitigate risks associated with lost or stolen devices. As remote work and bring-your-own-device (BYOD) policies become more prevalent, endpoint security has evolved to include cloud-based management and zero-trust architectures, ensuring that security extends beyond the traditional network perimeter to protect data and systems regardless of device location or ownership.
+Endpoint security focuses on protecting networks by securing the devices that connect to them, such as desktops, laptops, smartphones, and servers. It involves implementing security measures directly on these endpoints to prevent malicious activities, data breaches, and unauthorized access. This approach aims to create a defensive layer at each point of network entry, rather than solely relying on perimeter security.
 
 Visit the following resources to learn more:
 

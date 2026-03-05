@@ -1,10 +1,6 @@
 # ARP
 
-Address Resolution Protocol (ARP) is a crucial mechanism used in networking that allows the Internet Protocol (IP) to map an IP address to a corresponding physical address, commonly known as a Media Access Control (MAC) address. This protocol is essential for enabling devices within a Local Area Network (LAN) to communicate by translating IP addresses into specific hardware addresses.
-
-When one device on a LAN wants to communicate with another, it needs to know the MAC address associated with the target device’s IP address. ARP facilitates this by sending out an ARP request, which broadcasts the target IP to all devices in the network. Each device checks the requested IP against its own. The device that recognizes the IP as its own responds with an ARP reply, which includes its MAC address.
-
-Once the requesting device receives the MAC address, it updates its ARP cache—a table that stores IP-to-MAC address mappings—allowing it to send data directly to the correct hardware address.
+Address Resolution Protocol (ARP) is a communication protocol used for discovering the link-layer address, such as a MAC address, associated with a given Internet layer address, typically an IPv4 address. In simpler terms, when a device wants to send data to another device on the same network, it uses ARP to find the physical hardware address (MAC address) of the destination device, so that the data can be correctly delivered. It works by sending a broadcast ARP request asking "Who has this IP address?" and the device with that IP address responds with its MAC address.
 
 Visit the following resources to learn more:
 

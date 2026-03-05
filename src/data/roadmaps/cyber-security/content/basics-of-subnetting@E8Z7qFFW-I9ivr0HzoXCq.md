@@ -1,6 +1,6 @@
-# Basics of Subnetting
+# Subnetting Fundamentals
 
-Subnetting is a technique used in computer networking to divide a large network into smaller, more manageable sub-networks, or "subnets." It enhances network performance and security by reducing broadcast traffic and enabling better control over IP address allocation. Each subnet has its own range of IP addresses, which allows network administrators to optimize network traffic and reduce congestion by isolating different sections of a network. In subnetting, an IP address is split into two parts: the network portion and the host portion. The network portion identifies the overall network, while the host portion identifies individual devices within that network. Subnet masks are used to define how much of the IP address belongs to the network and how much is reserved for hosts. By adjusting the subnet mask, administrators can create multiple subnets from a single network, with each subnet having a limited number of devices. Subnetting is particularly useful for large organizations, allowing them to efficiently manage IP addresses, improve security by segmenting different parts of the network, and control traffic flow by minimizing unnecessary data transmissions between segments.
+Subnetting is the practice of dividing a network into two or more smaller, logically isolated networks, called subnets. This is accomplished by manipulating the subnet mask, which defines the range of IP addresses that belong to a particular network. By carving up a larger network address space, you can improve network performance, security, and manageability by limiting broadcast domains and isolating traffic.
 
 Visit the following resources to learn more:
 

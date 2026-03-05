@@ -1,8 +1,6 @@
 # Host Intrusion Prevention System (HIPS)
 
-A Host Intrusion Prevention System (HIPS) is a security solution designed to monitor and protect individual host devices, such as servers, workstations, or laptops, from malicious activities and security threats. HIPS actively monitors system activities and can detect, prevent, and respond to unauthorized or anomalous behavior by employing a combination of signature-based, behavior-based, and heuristic detection methods.
-
-HIPS operates at the host level, providing a last line of defense by securing the individual endpoints within a network. It is capable of preventing a wide range of attacks, including zero-day exploits, malware infections, unauthorized access attempts, and policy violations.
+A Host Intrusion Prevention System (HIPS) is a software application installed on a single host (like a computer or server) that monitors the activities taking place on that host. It analyzes events for malicious or suspicious behavior, based on predefined rules and signatures, and takes action to block or mitigate threats targeting that specific system.
 
 Visit the following resources to learn more:
 

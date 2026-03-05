@@ -1,14 +1,6 @@
-# Brute Force vs Password Spray
+# Brute Force vs. Password Spraying
 
-What is Brute Force?
---------------------
-
-Brute Force is a method of password cracking where an attacker systematically tries all possible combinations of characters until the correct password is found. This method is highly resource-intensive, as it involves attempting numerous password variations in a relatively short period of time.
-
-What is Password Spray?
------------------------
-
-Password Spray is a more targeted and stealthy method of password cracking where an attacker tries a small number of common passwords across many different accounts. Instead of bombarding a single account with numerous password attempts (as in brute force), password spraying involves using one or a few passwords against multiple accounts.
+Brute force attacks attempt to crack a password by systematically trying every possible combination of characters until the correct one is found. Password spraying, conversely, uses a list of commonly used passwords and attempts them against many different user accounts. The goal of password spraying is to avoid account lockouts, which are often triggered by repeated failed login attempts from a single account.
 
 Visit the following resources to learn more:
 

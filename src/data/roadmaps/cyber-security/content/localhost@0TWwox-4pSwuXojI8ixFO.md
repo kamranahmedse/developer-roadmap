@@ -1,6 +1,6 @@
-# localhost
+# Localhost
 
-**Localhost** refers to the standard hostname used to access the local computer on which a network service or application is running. It resolves to the loopback IP address `127.0.0.1` for IPv4 or `::1` for IPv6. When you connect to `localhost`, you're effectively communicating with your own machine, allowing you to test and debug network services or applications locally without accessing external networks.
+Localhost is a hostname that refers to the current computer being used to access it. It's essentially a way for your computer to communicate with itself over a network connection. Typically, it resolves to the IP address 127.0.0.1, which is reserved for loopback addresses. This allows programs and services running on your machine to interact with each other without needing to connect to an external network.
 
 Visit the following resources to learn more:
 

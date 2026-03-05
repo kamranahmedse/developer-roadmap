@@ -1,6 +1,6 @@
 # WAN
 
-A Wide Area Network (WAN) is a telecommunications network that extends over a large geographical area, connecting multiple smaller networks like LANs across cities, countries, or continents. WANs use technologies such as leased lines, satellites, cellular networks, or the internet to facilitate long-distance communication. They enable organizations to share data and resources across dispersed locations, supporting remote offices and global operations. WANs typically involve slower transmission speeds compared to LANs due to longer distances and varied connection types. Key considerations for WANs include bandwidth management, security protocols like VPNs, and optimizing performance across diverse network conditions.
+A Wide Area Network (WAN) connects multiple Local Area Networks (LANs) that are geographically separated. It uses various technologies like leased lines, satellite links, and the internet to enable communication between these disparate networks, allowing users and computers in one location to communicate with those in other locations. Think of it as a super-connector, enabling communication even when LANs are spread across cities, countries, or even continents.
 
 Visit the following resources to learn more:
 

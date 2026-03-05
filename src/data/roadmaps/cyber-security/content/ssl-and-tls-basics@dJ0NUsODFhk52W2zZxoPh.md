@@ -1,6 +1,6 @@
-# SSL vs TLS
+# SSL and TLS Basics
 
-Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols used to provide security in internet communications. These protocols encrypt the data that is transmitted over the web, so anyone who tries to intercept packets will not be able to interpret the data. One difference that is important to know is that SSL is now deprecated due to security flaws, and most modern web browsers no longer support it. But TLS is still secure and widely supported, so preferably use TLS.
+Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols that provide secure communication over a network. They work by encrypting data exchanged between a client and a server, ensuring confidentiality and integrity. SSL was the predecessor to TLS, and while SSL is now considered outdated and insecure, the term "SSL" is often still used interchangeably with "TLS." The protocols establish a secure connection using digital certificates for authentication and encryption algorithms for data protection.
 
 Visit the following resources to learn more:
 

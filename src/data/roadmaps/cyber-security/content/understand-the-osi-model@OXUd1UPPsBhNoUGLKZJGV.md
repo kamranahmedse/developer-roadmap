@@ -1,14 +1,6 @@
-# Understand the OSI model
+# OSI Model
 
-The OSI (Open Systems Interconnection) Model is a conceptual framework that describes how data communication occurs between devices in a network. It consists of seven layers, each with specific functions:
-
-1.  Physical: Deals with physical transmission media
-2.  Data Link: Handles error-free transfer between adjacent nodes
-3.  Network: Manages addressing and routing
-4.  Transport: Ensures end-to-end data delivery and flow control
-5.  Session: Establishes, manages, and terminates connections
-6.  Presentation: Formats and encrypts data for the application layer
-7.  Application: Provides network services to end-user applications
+The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven distinct layers. Each layer performs a specific set of network functions, and communicates with the layers above and below it. This model provides a structured way to understand how information travels from one application to another over a network.
 
 Visit the following resources to learn more:
 

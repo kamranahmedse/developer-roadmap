@@ -1,6 +1,6 @@
-# Whois
+# WHOIS
 
-WHOIS is a query and response protocol used to retrieve information about registered domain names, IP addresses, and autonomous systems on the Internet. It provides details such as the domain registrar, registration date, expiration date, and contact information for the domain owner (although this may be limited due to privacy protection). WHOIS databases are maintained by regional Internet registries and domain registrars. The protocol is commonly used by network administrators, cybersecurity professionals, and researchers for tasks like verifying domain ownership, investigating potential cyber threats, and gathering information for legal or business purposes. However, with the implementation of GDPR and other privacy regulations, some WHOIS information has become more restricted.
+WHOIS is a query and response protocol widely used for querying databases that store the registered users or assignees of an Internet resource, such as a domain name, an IP address block, or an autonomous system number. These databases provide information like the registrant's contact details, creation and expiration dates, registrar information, and nameservers associated with the resource. While primarily used for technical and administrative purposes, WHOIS data can be valuable for identifying potential sources of abuse, tracking down malicious actors, or verifying the legitimacy of online resources.
 
 Visit the following resources to learn more:
 

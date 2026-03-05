@@ -1,6 +1,6 @@
-# winhex
+# WinHex
 
-WinHex is a universal hexadecimal editor and disk editor primarily used for computer forensics and data recovery. It allows users to examine and edit the raw content of files, disks, or memory in hexadecimal and ASCII formats. WinHex provides advanced features for data analysis, including disk cloning, secure data erasure, and file system reconstruction. It supports various file systems and can work with physical disks, disk images, and RAM. Forensic experts use WinHex to investigate digital evidence, recover deleted files, and analyze data structures. While powerful, it requires careful use as it can directly manipulate raw data, potentially causing unintended changes to critical system files or data.
+WinHex is a hexadecimal editor and disk analysis tool primarily used for data recovery, digital forensics, and low-level data processing. It allows users to inspect and edit all types of files, physical disks, and memory, making it invaluable for identifying file system anomalies, recovering deleted data, and analyzing system behavior. Its features include disk imaging, RAM editing, data interpretation, and scripting capabilities, which are often utilized by security professionals for incident investigation and threat hunting.
 
 Visit the following resources to learn more:
 

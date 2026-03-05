@@ -1,6 +1,6 @@
-# PKI
+# Public Key Infrastructure (PKI)
 
-**Public Key Infrastructure (PKI)** is a framework that manages digital certificates and public-private key pairs, enabling secure communication, authentication, and data encryption over networks. PKI supports various security services such as confidentiality, integrity, and digital signatures. It includes components like **Certificate Authorities (CAs)**, which issue and revoke digital certificates, **Registration Authorities (RAs)**, which verify the identity of certificate requestors, and **certificates** themselves, which bind public keys to individuals or entities. PKI is essential for secure online transactions, encrypted communications, and identity verification in applications like SSL/TLS, email encryption, and code signing.
+Public Key Infrastructure (PKI) is a system that uses digital certificates to verify and authenticate the identity of users, devices, and services. It relies on cryptographic keys – a public key for encrypting data and a corresponding private key for decrypting it. PKI establishes a trusted environment for secure electronic transactions and communication by managing digital certificates that bind a public key to an identity, ensuring that the communication is from a trusted party.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Phishing
 
-The technique where scammers pretend to be trusted organizations like your _bank_, _online retailers_ or a _government office_ in order to trick you into sharing your personal information like bank passcode, credit card number, Paypal password etc.
+Phishing is a type of social engineering attack where malicious actors attempt to deceive individuals into revealing sensitive information, such as usernames, passwords, credit card details, or other personal data. This is often done by disguising oneself as a trustworthy entity in an electronic communication, like an email, message, or website, to trick the recipient into clicking a malicious link or providing the requested information. The goal is to steal data or install malware on the victim's device.
 
 Visit the following resources to learn more:
 

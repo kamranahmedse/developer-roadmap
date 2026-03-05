@@ -1,8 +1,6 @@
-# dd
+# `dd` for Incident Response and Discovery
 
-`dd` is a powerful data duplication and forensic imaging tool that is widely used in the realm of cybersecurity. As an incident responder, this utility can assist you in uncovering important evidence and preserving digital details to reconstruct the event timelines and ultimately prevent future attacks.
-
-This command-line utility is available on Unix-based systems such as Linux, BSD, and macOS. It can perform tasks like data duplication, data conversion, and error correction. Most importantly, it's an invaluable tool for obtaining a bit-by-bit copy of a disk or file, which can then be analyzed using forensic tools.
+`dd` (data duplicator) is a command-line utility used primarily for copying and converting data. It operates at a low level, reading and writing data block by block. This makes it extremely useful for creating exact bit-by-bit copies of storage devices, such as hard drives or memory sticks, and creating forensic images in raw or other formats.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# MAN
+# Metropolitan Area Network (MAN)
 
-A **Metropolitan Area Network (MAN)** is a type of network that spans a city or large campus, connecting multiple local area networks (LANs) within that geographic area. MANs are designed to provide high-speed data transfer and communication services to organizations, institutions, or businesses across a city. They support a variety of applications, including internet access, intranet connectivity, and data sharing among multiple locations. Typically, MANs are faster and cover a broader area than LANs but are smaller in scope compared to wide area networks (WANs).
+A Metropolitan Area Network (MAN) is a computer network that connects computers and other devices within a geographical area larger than a local area network (LAN) but smaller than a wide area network (WAN). It's essentially a scaled-up version of a LAN, designed to serve a city or metropolitan area. MANs are often used to connect multiple LANs together, allowing devices in different locations to communicate with each other.
 
 Visit the following resources to learn more:
 

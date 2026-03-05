@@ -1,6 +1,6 @@
-# WPA vs WPA2 vs WPA3 vs WEP
+# WPA, WPA2, WPA3, and WEP
 
-WEP (Wired Equivalent Privacy) is an outdated and insecure wireless encryption standard that was the first to secure Wi-Fi networks but is now considered highly vulnerable to attacks. WPA (Wi-Fi Protected Access) improved upon WEP with stronger encryption and authentication methods, but it still had some security weaknesses. WPA2, the successor to WPA, introduced more robust encryption with the Advanced Encryption Standard (AES) and improved security overall. WPA3, the latest standard, offers enhanced security features such as stronger encryption, improved protection against brute-force attacks, and better security for public networks. Each successive standard provides increased security and protection for wireless networks.
+These terms represent different security protocols used to secure Wi-Fi networks. WEP (Wired Equivalent Privacy) was the original standard but has since been deemed insecure. WPA (Wi-Fi Protected Access) was introduced as an interim upgrade, followed by WPA2, which offered stronger encryption through AES. WPA3 is the latest standard, incorporating advanced features like Simultaneous Authentication of Equals (SAE) for improved password security and stronger encryption overall.
 
 Visit the following resources to learn more:
 

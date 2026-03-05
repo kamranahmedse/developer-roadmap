@@ -1,6 +1,6 @@
 # LOLBAS
 
-**LOLBAS** (Living Off the Land Binaries and Scripts) refers to a collection of legitimate system binaries and scripts that can be abused by attackers to perform malicious actions while evading detection. These tools, which are often part of the operating system or installed software, can be leveraged for various purposes, such as executing commands, accessing data, or modifying system configurations, thereby allowing attackers to carry out their activities without deploying custom malware. The use of LOLBAS techniques makes it harder for traditional security solutions to detect and prevent malicious activities since the binaries and scripts used are typically trusted and deemed legitimate.
+Living Off The Land Binaries and Scripts (LOLBAS) refers to the use of legitimate, pre-installed operating system tools and programs for malicious purposes. Instead of introducing new malware, attackers leverage these existing, trusted binaries to perform actions such as downloading files, executing code, or gathering information, often evading traditional security defenses that focus on detecting malicious software.
 
 Visit the following resources to learn more:
 

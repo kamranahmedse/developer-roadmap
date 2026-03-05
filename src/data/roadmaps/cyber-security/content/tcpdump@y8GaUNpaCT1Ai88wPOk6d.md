@@ -1,6 +1,6 @@
-# tcpdump
+# Tcpdump
 
-Tcpdump is a powerful command-line packet analyzer used for network troubleshooting and security analysis. It captures and displays the contents of network packets matching specified criteria. Tcpdump can intercept and display communication protocols, packet headers, and payload data passing over a network interface. It's commonly used for diagnosing network issues, monitoring network traffic, detecting suspicious activities, and analyzing protocol behavior. Tcpdump offers various filtering options to focus on specific types of traffic, IP addresses, or ports. While primarily used on Unix-like systems, its Windows equivalent is WinDump. Due to its ability to capture sensitive data, tcpdump usage often requires administrative privileges and must comply with legal and ethical guidelines.
+Tcpdump is a command-line packet analyzer that captures and displays network traffic going through a system. It allows users to intercept and inspect TCP/IP packets, providing insights into network communication. By analyzing packet headers and payloads, users can diagnose network issues, monitor traffic patterns, and identify potential security threats.
 
 Visit the following resources to learn more:
 

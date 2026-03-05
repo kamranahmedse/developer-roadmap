@@ -1,6 +1,6 @@
-# MFA and 2FA
+# Multi-Factor Authentication (MFA) and Two-Factor Authentication (2FA)
 
-**Multi-Factor Authentication (MFA)** and **Two-Factor Authentication (2FA)** are security methods that require users to provide two or more forms of verification to access a system. **2FA** specifically uses two factors, typically combining something the user knows (like a password) with something they have (like a phone or token) or something they are (like a fingerprint). **MFA**, on the other hand, can involve additional layers of authentication beyond two factors, further enhancing security. Both methods aim to strengthen access controls by making it harder for unauthorized individuals to gain access, even if passwords are compromised.
+Multi-factor authentication (MFA) is an authentication method that requires the user to present multiple pieces of evidence (factors) to verify their identity. Two-factor authentication (2FA) is a specific type of MFA that uses only two factors. These factors typically fall into categories like something you know (password), something you have (security token or code sent to your phone), or something you are (biometrics).
 
 Visit the following resources to learn more:
 

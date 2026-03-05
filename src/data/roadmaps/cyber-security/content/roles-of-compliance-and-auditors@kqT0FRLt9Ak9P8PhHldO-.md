@@ -1,6 +1,6 @@
 # Roles of Compliance and Auditors
 
-Compliance officers ensure that an organization adheres to legal, regulatory, and internal policies by proactively implementing controls, training employees, and mitigating risks. Auditors, both internal and external, assess the effectiveness of these controls and the accuracy of financial reporting through periodic evaluations, providing independent assurance to management and stakeholders. While compliance focuses on prevention and day-to-day adherence, auditors focus on verifying and evaluating past performance to ensure integrity and identify areas for improvement. Both roles work together to manage risk and maintain organizational accountability.
+Compliance and auditors ensure organizations adhere to internal policies, industry regulations, and legal requirements related to data security and privacy. They assess security controls, identify vulnerabilities, and verify that practices align with established standards like GDPR, HIPAA, or PCI DSS. Through regular audits and compliance checks, they help organizations maintain a strong security posture and avoid penalties or reputational damage.
 
 Visit the following resources to learn more:
 

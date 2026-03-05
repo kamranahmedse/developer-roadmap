@@ -1,6 +1,6 @@
-# Understand the concept of Infrastructure as Code
+# Infrastructure as Code
 
-Infrastructure as Code (IaC) is a practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. It treats infrastructure configuration as software, allowing it to be version-controlled, tested, and automatically deployed. IaC enables consistent, repeatable environment setups, reduces manual errors, facilitates rapid scaling and disaster recovery, and improves collaboration between development and operations teams. Popular IaC tools include Terraform, AWS CloudFormation, and Ansible, which use declarative or imperative approaches to define infrastructure states. This approach is fundamental to DevOps practices, cloud computing, and the efficient management of complex, dynamic IT environments.
+Infrastructure as Code (IaC) is the practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools. Think of it as writing code to define and deploy your servers, networks, and other infrastructure components in a consistent and repeatable manner. This approach enables version control, automation, and faster deployments compared to traditional manual processes.
 
 Visit the following resources to learn more:
 

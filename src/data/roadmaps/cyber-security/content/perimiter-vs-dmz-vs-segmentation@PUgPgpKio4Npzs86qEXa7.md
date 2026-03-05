@@ -1,15 +1,6 @@
-# Perimeter vs DMZ vs Segmentation
+# Perimeter, DMZ, and Segmentation
 
-In network security, **perimeter**, **DMZ (Demilitarized Zone)**, and **segmentation** are strategies for organizing and protecting systems:
-
-1.  **Perimeter** security refers to the outer boundary of a network, typically protected by firewalls, intrusion detection systems (IDS), and other security measures. It acts as the first line of defense against external threats, controlling incoming and outgoing traffic to prevent unauthorized access.
-    
-2.  **DMZ** is a subnet that sits between an internal network and the external internet, hosting public-facing services like web servers and mail servers. The DMZ isolates these services to minimize the risk of attackers gaining access to the internal network by compromising a public-facing server.
-    
-3.  **Segmentation** divides a network into smaller, isolated sections or zones, each with its own security controls. This limits the spread of attacks, enhances internal security, and enforces access control between different parts of the network, reducing the potential impact of a breach.
-    
-
-Together, these strategies create a layered defense, protecting sensitive resources by managing traffic flow and access points across the network.
+These are network security concepts that define how a network is structured to protect its assets. The perimeter is the outer defense line, controlling traffic entering and exiting the network. A DMZ (Demilitarized Zone) hosts publicly accessible services, isolating them from the internal network. Segmentation divides the network into smaller, isolated zones to limit the impact of a security breach.
 
 Visit the following resources to learn more:
 

@@ -1,8 +1,6 @@
-# Directory Traversal
+# Directory Traversal Attacks
 
-Directory Traversal, also known as Path Traversal, is a vulnerability that allows attackers to read files on a system without proper authorization. These attacks typically exploit unsecured paths using "../" (dot-dot-slash) sequences and their variations, or absolute file paths. The attack is also referred to as "dot-dot-slash," "directory climbing," or "backtracking."
-
-While Directory Traversal is sometimes combined with other vulnerabilities like Local File Inclusion (LFI) or Remote File Inclusion (RFI), the key difference is that Directory Traversal doesn't execute code, whereas LFI and RFI usually do.
+Directory traversal, also known as path traversal, is a web security vulnerability that allows attackers to access files and directories stored outside of the intended web server's root directory. It exploits insufficient security validation of user-supplied filenames, enabling attackers to navigate the file system and potentially gain access to sensitive information, execute arbitrary code, or compromise the entire server.
 
 Visit the following resources to learn more:
 
