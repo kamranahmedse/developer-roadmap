@@ -4,14 +4,12 @@
 
 For example:
 
-```typescript
-let anyValue: any = 42;
+    let anyValue: any = 42;
+    
+    // we can assign any value to anyValue, regardless of its type
+    anyValue = 'Hello, world!';
+    anyValue = true;
 
-// we can assign any value to anyValue, regardless of its type
-anyValue = 'Hello, world!';
-anyValue = true;
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@any](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any)

@@ -1,11 +1,7 @@
-# string
+# String
 
-It is a primitive data type in TypeScript that represents textual data. It is a set of elements of the 16-bit Unicode character set.
+A string represents a sequence of characters. It's used to store and manipulate textual data, like words, sentences, or any sequence of symbols.  Strings are typically enclosed in single quotes (`'...'`), double quotes (`"..."`), or backticks (`` `...` ``).
 
-```typescript
-let name: string = 'John Doe';
-```
-
-Learn more from the following link
+Visit the following resources to learn more:
 
 - [@official@Number, String, Boolean, Symbol and Object](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean)

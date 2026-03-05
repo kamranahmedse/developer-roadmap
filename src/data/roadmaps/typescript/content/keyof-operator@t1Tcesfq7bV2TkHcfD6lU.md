@@ -1,20 +1,7 @@
 # keyof Operator
 
-The `keyof` operator in TypeScript is used to get the union of keys from an object type. Here's an example of how it can be used:
+The `keyof` operator in TypeScript creates a union of all the keys (property names) of a given object type. It essentially extracts the names of the properties as string literal types. This allows you to work with the properties of an object type in a type-safe way, especially when dealing with generic functions or situations where you need to ensure that you're only accessing valid properties.
 
-```typescript
-interface User {
-  name: string;
-  age: number;
-  location: string;
-}
-
-type UserKeys = keyof User; // "name" | "age" | "location"
-const key: UserKeys = 'name';
-```
-
-In this example, `UserKeys` is a type that represents the union of keys from the `User` interface, which is `"name"` | `"age"` | `"location"`. And a constant named `key` with the type `UserKeys` is declared with the value `"name"`.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@keyof Type Operator](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#handbook-content)

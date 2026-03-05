@@ -1,22 +1,7 @@
 # Type Predicates
 
-Type predicates are functions that return a boolean value. They are used to narrow the type of a variable. Type predicates are used in type guards.
+Type predicates are a way to refine the type of a variable within a TypeScript function. They're used to tell the TypeScript compiler that a specific condition guarantees a variable is of a certain type. Instead of the compiler inferring the type based on basic checks, a type predicate explicitly asserts that if a function returns `true`, the argument must be of the specified type.
 
-```typescript
-function isString(value: unknown): value is string {
-  return typeof value === 'string';
-}
-
-function example(x: unknown) {
-  if (isString(x)) {
-    // We can now call any 'string' method on 'x'.
-    x.toUpperCase();
-  } else {
-    console.log(x);
-  }
-}
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Type Guards and Differentiating Types](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)

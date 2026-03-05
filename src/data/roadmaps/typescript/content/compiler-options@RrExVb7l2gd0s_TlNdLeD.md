@@ -1,11 +1,7 @@
 # Compiler Options
 
-TypeScript compiler accepts a number of command line options that allow you to customize the compilation process. These options can be passed to the compiler using the `--` prefix, for example:
+Compiler options in TypeScript provide fine-grained control over how the TypeScript compiler (`tsc`) transforms `.ts` files into JavaScript. These options are typically configured within a `tsconfig.json` file or passed directly via the command line.  They dictate aspects like target ECMAScript version, module system, strictness of type checking, source map generation, and many other behaviors of the compilation process.
 
-```bash
-tsc --target ES5 --module commonjs
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)

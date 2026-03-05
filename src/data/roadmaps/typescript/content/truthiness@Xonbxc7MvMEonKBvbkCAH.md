@@ -1,19 +1,7 @@
 # Truthiness
 
-Truthiness might not be a word you’ll find in the dictionary, but it’s very much something you’ll hear about in JavaScript.
+Truthiness in TypeScript, as in JavaScript, refers to the concept of a value evaluating to `true` when encountered in a Boolean context.  Certain values are inherently "truthy" while others are "falsy."  TypeScript uses this understanding to refine the type of a variable based on the outcome of a truthiness check, effectively narrowing its potential types to those that are compatible with a `true` outcome. This allows for more precise type checking within conditional blocks.
 
-In JavaScript, we can use any expression in conditionals, `&&`s, `||`s, `if` statements, Boolean negations (`!`), and more. As an example, if statements don’t expect their condition to always have the type boolean.
-
-```typescript
-function getUsersOnlineMessage(numUsersOnline: number) {
-  if (numUsersOnline) {
-    return `There are ${numUsersOnline} online now!`;
-  }
-
-  return "Nobody's here. :(";
-}
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Truthiness Narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#truthiness-narrowing)

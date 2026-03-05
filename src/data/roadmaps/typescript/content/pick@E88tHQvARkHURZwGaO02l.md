@@ -1,22 +1,7 @@
 # Pick
 
-Pick constructs a type by picking the set of properties Keys (string literal or union of string literals) from Type.
+`Pick` is a utility type that constructs a new type by selecting a set of properties from an existing type. You specify which properties you want to include in the new type using their keys. This is useful when you need a subset of properties from a larger type definition.
 
-```typescript
-interface Todo {
-  title: string;
-  description: string;
-  completed: boolean;
-}
-
-type TodoPreview = Pick<Todo, 'title' | 'completed'>;
-
-const todo: TodoPreview = {
-  title: 'Clean room',
-  completed: false,
-};
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Pick<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys)

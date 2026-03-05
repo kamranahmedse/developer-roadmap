@@ -1,21 +1,7 @@
 # Interface Declaration
 
-An `interface` in TypeScript is a blueprint for creating objects with specific structure. An `interface` defines a set of properties, methods, and events that a class or object must implement. The interface is a contract between objects and classes and can be used to enforce a specific structure for objects in your code.
+An interface declaration introduces a new named type into the TypeScript type system. It specifies a contract that an object (or other type) can adhere to, defining the names and types of properties and methods that implementing objects must possess. Interfaces do not produce JavaScript code; they exist purely for type-checking purposes, enabling stronger static typing and improved code maintainability.
 
-Here is an example of an interface declaration in TypeScript:
-
-```typescript
-interface Person {
-  firstName: string;
-  lastName: string;
-  age?: number;
-
-  getFullName(): string;
-}
-```
-
-In this example, the Person interface defines four properties: `firstName`, `lastName`, `age`, and a method `getFullName()`. The age property is optional, indicated by the `?` symbol. Any class or object that implements the `Person` interface must have these properties and method.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Extending Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)

@@ -1,19 +1,7 @@
 # Type Aliases
 
-A Type Alias in TypeScript allows you to create a new name for a type.
+Type aliases in TypeScript create a new name for an existing type. This new name can then be used anywhere you would normally use the original type. They don't create a new type; instead, they offer a more readable and convenient way to refer to potentially complex or frequently used types, such as unions, intersections, or tuple types.
 
-Here's an example:
-
-```typescript
-type Name = string;
-type Age = number;
-type User = { name: Name; age: Age };
-
-const user: User = { name: 'John', age: 30 };
-```
-
-In the example above, `Name` and `Age` are type aliases for `string` and `number` respectively. And `User` is a type alias for an object with properties `name` of type `Name` and `age` of type `Age`.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Type Aliases](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases)

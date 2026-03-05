@@ -1,26 +1,3 @@
 # Hybrid Types
 
-In TypeScript, a hybrid type is a type that combines multiple types into a single type. The resulting type is considered a union of those types. This allows you to specify that a value can have multiple types, rather than just one.
-
-For example, you can create a hybrid type that can accept either a string or a number:
-
-```typescript
-type StringOrNumber = string | number;
-```
-
-You can also use hybrid types to create more complex types that can represent a combination of several different types of values. For example:
-
-```typescript
-type Education = {
-  degree: string;
-  school: string;
-  year: number;
-};
-
-type User = {
-  name: string;
-  age: number;
-  email: string;
-  education: Education;
-};
-```
+Hybrid types describe objects that act as both an object and a function. In essence, they possess properties and methods like a regular object, but they can also be invoked or called directly like a function. This unusual structure is often used when a function needs to maintain state or have additional properties associated with it.

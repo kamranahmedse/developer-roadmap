@@ -1,18 +1,7 @@
-# Unknown
+# Unknown Type
 
-`unknown` is the type-safe counterpart of any. Anything is assignable to `unknown`, but `unknown` isn’t assignable to anything but itself and `any` without a type assertion or a control flow based narrowing. Likewise, no operations are permitted on an `unknown` without first asserting or narrowing to a more specific type.
+The `unknown` type in TypeScript represents a value that can be anything. Unlike `any`, which essentially disables type checking, `unknown` forces you to perform type checks or type assertions before you can perform operations on a value declared as `unknown`. This helps prevent unexpected errors at runtime by ensuring you've handled the potential type of the value.
 
-```typescript
-function f1(a: any) {
-  a.b(); // OK
-}
-
-function f2(a: unknown) {
-  // Error: Property 'b' does not exist on type 'unknown'.
-  a.b();
-}
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Unknown Type in TypeScript](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type)

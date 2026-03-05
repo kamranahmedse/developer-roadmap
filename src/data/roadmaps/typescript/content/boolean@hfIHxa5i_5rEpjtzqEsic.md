@@ -1,12 +1,7 @@
-# boolean
+# Boolean Type in TypeScript
 
-`boolean` is a primitive data type in TypeScript that represents a boolean value i.e. either true or false. Given below is an example of a boolean variable declaration:
+A boolean type represents a logical value that can be either `true` or `false`. It is commonly used in programming to control the flow of execution based on certain conditions, allowing programs to make decisions and execute different code blocks depending on whether a condition is met. Boolean values are fundamental for expressing logical operations and comparisons.
 
-```typescript
-let isTrue: boolean = true;
-let isFalse: boolean = false;
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@article@Number, String, Boolean, Symbol and Object](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean)

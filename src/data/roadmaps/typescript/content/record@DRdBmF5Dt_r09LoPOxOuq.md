@@ -1,22 +1,7 @@
-# Record
+# Record Utility Type
 
-Record constructs an object type whose property keys are Keys and whose property values are Type. This utility can be used to map the properties of a type to another type.
+The `Record` utility type in TypeScript is used to construct a new type where the keys are of a specific type (typically a string, number, or symbol) and the values are of another specified type. This is useful when you want to define an object structure with a predefined set of keys and a consistent type for the values associated with those keys. Essentially, it's a shorthand for defining object types with specific key-value pairings.
 
-```typescript
-interface CatInfo {
-  age: number;
-  breed: string;
-}
-
-type CatName = 'miffy' | 'boris' | 'mordred';
-
-const cats: Record<CatName, CatInfo> = {
-  miffy: { age: 10, breed: 'Persian' },
-  boris: { age: 5, breed: 'Maine Coon' },
-  mordred: { age: 16, breed: 'British Shorthair' },
-};
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Record<Keys, Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)

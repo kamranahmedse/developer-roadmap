@@ -1,6 +1,6 @@
 # Linting
 
-With ESLint you can impose the coding standard using a certain set of standalone rules.
+Linting is the process of running a program that analyzes code for potential errors, stylistic issues, and code quality problems. It helps developers identify and fix issues early in the development cycle, leading to more maintainable and consistent codebases. ESLint is a popular linting tool for JavaScript and TypeScript that can be configured with rules to enforce specific coding standards and best practices.
 
 Visit the following resources to learn more:
 

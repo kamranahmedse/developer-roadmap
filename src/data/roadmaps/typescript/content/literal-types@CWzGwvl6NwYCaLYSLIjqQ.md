@@ -1,18 +1,7 @@
 # Literal Types
 
-Literal types in TypeScript are a way to specify a value exactly, rather than just a type. Literal types can be used to enforce that a value must be of a specific type and a specific value. Literal types are created by using a literal value, such as a string, number, or boolean, as a type.
+Literal types are a feature that allows you to specify the exact value a variable can hold. Instead of just saying a variable is a `string` or a `number`, you can specify that it can only be a particular string like `"hello"` or a particular number like `42`. This enables more precise type checking and helps catch errors at compile time by ensuring that variables only hold the intended values.
 
-For example, the following is a literal type that represents a value of 42:
-
-```typescript
-type Age = 42;
-
-let age: Age = 42; // ok
-let age: Age = 43; // error
-```
-
-In this example, the `Age` literal type is created by using the number `42` as a type. This type can then be used to enforce that a value must be of type `number` and have the value `42`.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Literal Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)

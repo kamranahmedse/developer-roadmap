@@ -1,15 +1,8 @@
 # Utility Types
 
-TypeScript provides several utility types that can be used to manipulate and transform existing types. Here are some of the most common ones:
+Utility Types in TypeScript are built-in generic types that perform common type transformations. They allow you to create new types based on existing ones by applying operations like making properties optional, required, readonly, or picking specific properties. These utilities enhance type safety and code reusability by enabling you to express complex type manipulations in a concise and declarative way.
 
-- `Partial`: makes all properties of a type optional.
-- `Readonly`: makes all properties of a type read-only.
-- `Pick`: allows you to pick specific properties from a type.
-- `Omit`: allows you to omit specific properties from a type.
-- `Exclude`: creates a type that is the set difference of A and B.
-- ..and more.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@TypeScript - Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
 - [@article@TypeScript Utility Types Guide](https://camchenry.com/blog/typescript-utility-types)

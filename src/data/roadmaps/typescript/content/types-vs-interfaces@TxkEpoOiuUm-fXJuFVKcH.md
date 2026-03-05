@@ -1,36 +1,8 @@
 # Types vs Interfaces
 
-In TypeScript, both types and interfaces can be used to define the structure of objects and enforce type checks. However, there are some differences between the two.
+In TypeScript, both types and interfaces are ways to define the shape of an object. They specify what properties an object should have and the data type of those properties. Types can describe simple types like primitives (string, number, boolean) or more complex structures like unions and intersections, while interfaces are primarily used to define the structure of objects, including their properties and methods. The key difference lies in their extensibility and use cases.
 
-Types are used to create a new named type based on an existing type or to combine existing types into a new type. They can be created using the type keyword. For example:
-
-```typescript
-type Person = {
-  name: string;
-  age: number;
-};
-
-const person: Person = {
-  name: 'John Doe',
-  age: 30,
-};
-```
-
-Interfaces, on the other hand, are used to describe the structure of objects and classes. They can be created using the interface keyword. For example:
-
-```typescript
-interface Person {
-  name: string;
-  age: number;
-}
-
-const person: Person = {
-  name: 'John Doe',
-  age: 30,
-};
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Interfaces vs. Type Aliases](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces)
 - [@article@Interfaces vs Types in TypeScript](https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript)

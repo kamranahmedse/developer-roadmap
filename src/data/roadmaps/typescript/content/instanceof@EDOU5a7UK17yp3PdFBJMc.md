@@ -1,27 +1,7 @@
-# instanceof operator
+# instanceof Operator
 
-The `instanceof` operator is a way to narrow down the type of a variable. It is used to check if an object is an instance of a class.
+The `instanceof` operator checks if an object is an instance of a specific class or constructor function. It determines if the prototype property of a constructor appears anywhere in the prototype chain of an object. The result of this check is a boolean value, indicating whether the object is considered an instance of the specified type.
 
-```typescript
-class Bird {
-  fly() {
-    console.log('flying...');
-  }
-  layEggs() {
-    console.log('laying eggs...');
-  }
-}
-
-const pet = new Bird();
-
-// instanceof
-if (pet instanceof Bird) {
-  pet.fly();
-} else {
-  console.log('pet is not a bird');
-}
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@instanceOf Operator](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#instanceof-narrowing)

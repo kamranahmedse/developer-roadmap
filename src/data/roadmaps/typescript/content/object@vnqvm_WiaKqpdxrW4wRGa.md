@@ -1,19 +1,7 @@
-# Object
+# Object Types in TypeScript
 
-To define an `object` type, we simply list its properties and their types.
+In TypeScript, an object type defines the structure of a JavaScript object. It specifies the names, types, and optionality of the properties an object should have. You can define object types using curly braces `{}` and listing the properties with their corresponding types, separated by semicolons or commas. This allows TypeScript to enforce that objects conform to a specific shape, enhancing code safety and providing better autocompletion during development.
 
-For example, here’s a function that takes a point-like object:
-
-```typescript
-// The parameter's type annotation is an object type
-function printCoord(pt: { x: number; y: number }) {
-  console.log("The coordinate's x value is " + pt.x);
-  console.log("The coordinate's y value is " + pt.y);
-}
-
-printCoord({ x: 3, y: 7 });
-```
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@Object Types in TypeScript](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types)

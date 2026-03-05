@@ -1,17 +1,7 @@
-# As Const
+# as const
 
-`as const` is a type assertion in TypeScript that allows you to assert that an expression has a specific type, and that its value should be treated as a read-only value.
+`as const` is a TypeScript feature that allows you to tell the compiler to infer the narrowest or most specific type possible for an expression. Instead of the compiler widening the type of a value to its general type (like inferring a string variable as `string`), `as const` makes the compiler infer the value as a constant type (like inferring a string variable as the specific string literal type `"hello"`). This is useful for creating immutable data structures or when you need the compiler to enforce the exact values allowed.
 
-For example:
-
-```typescript
-const colors = ['red', 'green', 'blue'] as const;
-
-// colors is now of type readonly ['red', 'green', 'blue']
-```
-
-Using as const allows TypeScript to infer more accurate types for constants, which can lead to improved type checking and better type inference in your code.
-
-Learn more from the following links:
+Visit the following resources to learn more:
 
 - [@official@const assertions](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions)
