@@ -1,10 +1,8 @@
 # Nested Subqueries
 
-In SQL, a subquery is a query that is nested inside a main query. If a subquery is nested inside another subquery, it is called a nested subquery. They can be used in SELECT, INSERT, UPDATE, or DELETE statements or inside another subquery.
+Nested subqueries are queries embedded within another SQL query. Think of it as a query inside a query, where the inner query's result is used by the outer query. This allows you to perform more complex data retrieval and filtering operations by breaking down a larger problem into smaller, more manageable steps. Essentially, the outer query depends on the result returned by the inner query to complete its own operation.
 
-Nested subqueries can get complicated quickly, but they are essential for performing complex database tasks.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Nested Subqueries](https://www.studysmarter.co.uk/explanations/computer-science/databases/nested-subqueries-in-sql/)
 - [@video@MySQL Subqueries](https://www.youtube.com/watch?v=i5acg3Hvu6g)

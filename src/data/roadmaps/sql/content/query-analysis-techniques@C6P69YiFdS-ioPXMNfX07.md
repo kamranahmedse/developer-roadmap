@@ -1,8 +1,8 @@
 # Query Analysis Techniques
 
-Query analysis techniques in SQL involve examining and optimizing queries to improve performance and efficiency. Key techniques include using `EXPLAIN` or `EXPLAIN PLAN` commands to understand the query execution plan, which reveals how the database processes the query, including join methods, index usage, and data retrieval strategies. Analyzing `execution plans` helps identify bottlenecks such as full table scans or inefficient joins. Other techniques include `profiling queries` to measure execution time, `examining indexes` to ensure they are effectively supporting query operations, and `refactoring queries` by breaking down complex queries into simpler, more efficient components. Additionally, monitoring `database performance metrics` like CPU, memory usage, and disk I/O can provide insights into how queries impact overall system performance. Regularly applying these techniques allows for the identification and resolution of performance issues, leading to faster and more efficient database operations.
+Understanding how SQL queries are executed is essential for performance tuning. Tools like `EXPLAIN` or `EXPLAIN PLAN` allow you to dissect the execution plan the database uses for a specific query. This plan reveals the order in which tables are accessed, the types of indexes used (or not used), and the estimated cost of each operation, enabling you to identify bottlenecks and optimize the query for faster execution.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@EXPLAIN](https://docs.snowflake.com/en/sql-reference/sql/explain)
 - [@article@EXPLAIN PLAN](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/EXPLAIN-PLAN.html)
