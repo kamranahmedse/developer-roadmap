@@ -1,14 +1,8 @@
 # Views
 
-Views in SQL are virtual tables based on the result set of an SQL statement. They act as a saved query that can be treated like a table, offering several benefits:
+Views are like virtual tables. Instead of physically storing data, a view's definition is based on a query against one or more tables. When you query a view, the database executes the underlying query defined in the view, and the results are presented as if they were from an actual table. This simplifies complex queries and provides a level of data abstraction and security.
 
-- Simplifying complex queries by encapsulating joins and subqueries
-- Providing an additional security layer by restricting access to underlying tables
-- Presenting data in a more relevant format for specific users or applications
+Visit the following resources to learn more:
 
-Views can be simple (based on a single table) or complex (involving multiple tables, subqueries, or functions). Some databases support updatable views, allowing modifications to the underlying data through the view. Materialized views, available in some systems, store the query results, improving performance for frequently accessed data at the cost of additional storage and maintenance overhead.
-
-Learn more from the following resources:
-
-- [@video@SQL Views Tutorial](https://www.youtube.com/watch?v=cLSxasHg9WY)
 - [@article@Views in SQL](https://www.datacamp.com/tutorial/views-in-sql)
+- [@video@SQL Views Tutorial](https://www.youtube.com/watch?v=cLSxasHg9WY)

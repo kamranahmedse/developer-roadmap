@@ -1,10 +1,8 @@
 # dense_rank
 
-`DENSE_RANK` is a window function in SQL that assigns a rank to each row within a window partition, with no gaps in the ranking numbers. 
+`dense_rank` is a window function that assigns a rank to each row within a partition of a result set, based on the order of rows. Unlike the `rank` function, `dense_rank` assigns consecutive ranks without gaps, even when there are ties in the ordering criteria. This means that if two or more rows have the same value for the ordering column(s), they will receive the same rank, and the next rank assigned will be the next consecutive integer, without skipping any numbers.
 
-Unlike the `RANK` function, `DENSE_RANK` does not skip any rank (positions in the order). If you have, for example, 1st, 2nd, and 2nd, the next rank listed would be 3rd when using `DENSE_RANK`, whereas it would be 4th using the `RANK` function. The `DENSE_RANK` function operates on a set of rows, called a window, and in that window, values are compared to each other.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL DENSE_RANK](https://www.sqltutorial.org/sql-window-functions/sql-dense_rank/)
 - [@article@Breaking Down DENSE_RANK](https://www.kdnuggets.com/breaking-down-denserank-a-step-by-step-guide-for-sql-enthusiasts)

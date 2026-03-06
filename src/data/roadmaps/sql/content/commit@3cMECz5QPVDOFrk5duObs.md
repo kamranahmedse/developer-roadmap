@@ -1,9 +1,7 @@
 # COMMIT
 
-The SQL COMMIT command is used to save all the modifications made by the current transaction to the database. A COMMIT command ends the current transaction and makes permanent all changes performed in the transaction. It is a way of ending your transaction and saving your changes to the database.
+COMMIT is an SQL command that saves all changes made during a transaction to the database. Until a COMMIT command is issued, all modifications within a transaction are only temporary and visible to the current session. Once COMMIT is executed, the changes become permanent and visible to other users and sessions. This ensures data consistency and durability.
 
-After the SQL COMMIT statement is executed, it can not be rolled back, which means you can't undo the operations. COMMIT command is used when the user is satisfied with the changes made in the transaction, and these changes can now be made permanent in the database.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL COMMIT and ROLLBACK](https://www.digitalocean.com/community/tutorials/sql-commit-sql-rollback)

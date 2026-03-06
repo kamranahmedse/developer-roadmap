@@ -1,7 +1,7 @@
 # RIGHT JOIN
 
-A `RIGHT JOIN` in SQL is a type of outer join that returns all rows from the right (second) table and the matching rows from the left (first) table. If there's no match in the left table, `NULL` values are returned for the left table's columns. This join type is less commonly used than LEFT JOIN but is particularly useful when you want to ensure all records from the second table are included in the result set, regardless of whether they have corresponding matches in the first table. `RIGHT JOIN` is often used to identify missing relationships or to include all possible values from a lookup table.
+A RIGHT JOIN combines rows from two tables based on a related column. It returns all rows from the right table (the table specified after the `RIGHT JOIN` keyword), and the matching rows from the left table. If there's no match in the left table for a row in the right table, `NULL` values are returned for the columns from the left table in the result set.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL RIGHT JOIN With Examples](https://www.programiz.com/sql/right-join)

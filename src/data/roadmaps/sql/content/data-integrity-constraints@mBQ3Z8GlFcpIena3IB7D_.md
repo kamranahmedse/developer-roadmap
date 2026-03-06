@@ -1,10 +1,8 @@
 # Data Integrity Constraints
 
-SQL constraints are used to specify rules for the data in a table. They ensure the accuracy and reliability of the data within the table. If there is any violation between the constraint and the action, the action is aborted by the constraint.
+Data integrity constraints are rules you set up in a database to make sure the data is accurate and reliable. These rules prevent bad data from being entered into tables. Think of them as checks and balances that maintain the quality of your information by enforcing specific criteria like uniqueness, valid ranges, or required values.
 
-Constraints are classified into two types: column level and table level. Column level constraints apply to individual columns whereas table level constraints apply to the entire table. Each constraint has its own purpose and usage, utilizing them effectively helps maintain the accuracy and integrity of the data.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Integrity Constraints in SQL: A Guide With Examples](https://www.datacamp.com/tutorial/integrity-constraints-sql)
 - [@article@Integrity Constraints](https://dataheadhunters.com/academy/integrity-constraints-ensuring-accuracy-and-consistency-in-your-data/)

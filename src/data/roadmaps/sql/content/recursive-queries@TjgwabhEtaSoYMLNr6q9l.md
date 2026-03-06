@@ -1,8 +1,8 @@
 # Recursive Queries
 
-Recursive queries in SQL allow for the repeated execution of a query within itself, enabling the traversal of hierarchical or tree-like data structures. This powerful feature is particularly useful for handling nested relationships, such as organizational hierarchies, bill of materials, or network topologies. By using a combination of an anchor member (initial query) and a recursive member (the part that refers to itself), recursive queries can iterate through multiple levels of data, retrieving information that would be difficult or impossible to obtain with standard SQL constructs. This technique simplifies complex queries and improves performance when dealing with self-referential data.
+Recursive queries are SQL queries that refer to themselves within their own definition. They're used to process hierarchical or tree-structured data, where relationships exist between rows in the same table, like organizational charts, bill of materials, or social networks. Using `WITH RECURSIVE` clause, these queries iterate through the data until a certain condition is met, allowing you to traverse the hierarchy and extract related information.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Recursive Queries in SQL](https://codedamn.com/news/sql/recursive-queries-in-sql)
 - [@article@Recursive SQL Expression Visually Explained](https://builtin.com/data-science/recursive-sql)

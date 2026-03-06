@@ -1,7 +1,7 @@
-# Unique
+# Unique Constraint
 
-`UNIQUE` is a constraint in SQL used to ensure that all values in a column or a set of columns are distinct. When applied to a column or a combination of columns, it prevents duplicate values from being inserted into the table. This constraint is crucial for maintaining data integrity, especially for fields like email addresses, usernames, or product codes where uniqueness is required. `UNIQUE` constraints can be applied during table creation or added later, and they automatically create an index on the specified column(s) for improved query performance. Unlike `PRIMARY KEY` constraints, `UNIQUE` columns can contain `NULL` values (unless explicitly disallowed), and a table can have multiple `UNIQUE` constraints.
+A unique constraint ensures that all values in a column (or a group of columns) are different. It prevents duplicate entries, maintaining data integrity by enforcing uniqueness for the specified field(s). This is useful for fields like email addresses or usernames, where each record should have a distinct value.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL UNIQUE Constraint](https://www.w3schools.com/sql/sql_unique.asp)

@@ -1,13 +1,7 @@
 # INNER JOIN
 
-An `INNER JOIN` in SQL is a type of join that returns the records with matching values in both tables. This operation compares each row of the first table with each row of the second table to find all pairs of rows that satisfy the join predicate.
+INNER JOINs combine rows from two or more tables based on a related column.  They return only the rows where there is a match in the specified columns of all tables involved in the join. If there's no matching value in the joined columns, that row is excluded from the result set.
 
-Few things to consider in case of `INNER JOIN`:
-
-- It is a default join in SQL. If you mention `JOIN` in your query without specifying the type, SQL considers it as an `INNER JOIN`.
-- It returns only the matching rows from both the tables.
-- If there is no match, the returned is an empty result.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL INNER JOIN Clause](https://www.programiz.com/sql/inner-join)

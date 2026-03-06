@@ -1,12 +1,8 @@
 # HAVING
 
-The `HAVING` clause is used in combination with the `GROUP BY` clause to filter the results of `GROUP BY`. It is used to mention conditions on the group functions, like `SUM`, `COUNT`, `AVG`, `MAX` or `MIN`.
+The `HAVING` clause in SQL is used to filter the results of aggregate functions. It's similar to the `WHERE` clause, but operates on grouped rows produced by the `GROUP BY` clause. Essentially, `HAVING` allows you to specify conditions that groups must meet to be included in the final result set after aggregation has taken place.
 
-It's important to note that where `WHERE` clause introduces conditions on individual rows, `HAVING` introduces conditions on groups created by the `GROUP BY` clause.
-
-Also note, `HAVING` applies to summarized group records, whereas `WHERE` applies to individual records.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL HAVING Clause](https://www.programiz.com/sql/having)
 - [@video@HAVING Clause](https://www.youtube.com/watch?v=tYBOMw7Ob8E)

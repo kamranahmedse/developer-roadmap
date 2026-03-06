@@ -1,9 +1,7 @@
 # Cross Join
 
-The cross join in SQL is used to combine every row of the first table with every row of the second table. It's also known as the Cartesian product of the two tables. The most important aspect of performing a cross join is that it does not require any condition to join.
+A Cross Join produces a result set that is the number of rows in the first table multiplied by the number of rows in the second table. If a WHERE clause is used in conjunction with a CROSS JOIN, it functions like an INNER JOIN. However, using an INNER JOIN is generally preferred to using a CROSS JOIN with a WHERE clause for readability and performance reasons. It essentially creates all possible combinations of rows from the tables involved.
 
-The issue with cross join is it returns the Cartesian product of the two tables, which can result in large numbers of rows and heavy resource usage. It's hence critical to use them wisely and only when necessary.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@SQL CROSS JOIN With Examples](https://www.sqlshack.com/sql-cross-join-with-examples/)

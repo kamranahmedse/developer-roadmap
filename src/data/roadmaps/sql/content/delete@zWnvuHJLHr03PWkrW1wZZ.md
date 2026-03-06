@@ -1,7 +1,7 @@
-# DELETE
+# DELETE Statement in SQL
 
-DELETE is an SQL statement used to remove one or more rows from a table. It allows you to specify which rows to delete using a WHERE clause, or delete all rows if no condition is provided. DELETE is part of the Data Manipulation Language (DML) and is used for data maintenance, removing outdated or incorrect information, or implementing business logic that requires data removal. When used without a WHERE clause, it empties the entire table while preserving its structure, unlike the TRUNCATE command.
+The `DELETE` statement in SQL removes existing records from a table. You specify which table to affect and can optionally include a `WHERE` clause to specify conditions for which rows should be deleted. If no `WHERE` clause is provided, all rows in the table will be deleted. It modifies the data within the database by removing entire rows based on the given criteria.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@DELETE](https://www.w3schools.com/sql/sql_delete.asp)
