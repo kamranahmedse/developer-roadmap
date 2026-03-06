@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Object Model](https://www.postgresql.org/docs/current/tutorial-concepts.html)
 - [@article@Understanding PostgreSQL: The Power of an Object-Relational](https://medium.com/@asadbukhari886/understanding-of-postgresql-the-power-of-an-object-relational-database-b6ae349c3f40)
-- [@article@PostgreSQL Server and Database Objects](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-server-and-database-objects/)
+- [@article@PostgreSQL Server and Database Objects](https://neon.com/postgresql/postgresql-tutorial/postgresql-server-and-database-objects)
