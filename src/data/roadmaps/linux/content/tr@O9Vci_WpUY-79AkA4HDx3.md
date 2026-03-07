@@ -5,4 +5,4 @@ The `tr` command in Linux is a command-line utility that translates or substitut
 Visit the following resources to learn more:
 
 - [@article@tr Command in Linux: 6 Useful Examples](https://linuxhandbook.com/tr-command/)
-- [@article@Linux tr Command: Character Translating](https://labex.io/tutorials/linux-linux-tr-command-character-translating-388064)
+- [@article@Linux tr Command with Practical Examples](https://labex.io/tutorials/linux-linux-tr-command-with-practical-examples-422963)
