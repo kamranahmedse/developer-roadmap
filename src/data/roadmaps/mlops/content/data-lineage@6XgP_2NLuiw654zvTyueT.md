@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@What is Data Lineage?](https://www.ibm.com/topics/data-lineage)
 - [@article@What is a Feature Store](https://www.snowflake.com/guides/what-feature-store-machine-learning/)
-- [@article@How Should We Be Thinking about Data Lineage?](https://towardsdatascience.com/how-should-we-be-thinking-about-data-lineage-541ca5ab83d0/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
