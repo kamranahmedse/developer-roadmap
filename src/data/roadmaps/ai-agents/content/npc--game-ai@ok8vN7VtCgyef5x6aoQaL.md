@@ -4,5 +4,5 @@ Game studios use AI agents to control non-player characters (NPCs). The agent ob
 
 Visit the following resources to learn more:
 
-- [@official@Unity – AI for NPCs](https://dev.epicgames.com/documentation/en-us/unreal-engine/artificial-intelligence-in-unreal-engine?application_version=5.3)  
+- [@official@Unity – AI for NPCs](https://dev.epicgames.com/documentation/en-us/unreal-engine/artificial-intelligence-in-unreal-engine?application_version=5.3)
 - [@article@AI-Driven NPCs: The Future of Gaming Explained](https://www.capermint.com/blog/everything-you-need-to-know-about-non-player-character-npc/)

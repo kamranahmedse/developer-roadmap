@@ -4,8 +4,8 @@ OpenAI Function Calling lets you give a language model a list of tools and have 
 
 Visit the following resources to learn more:
 
-- [@official@OpenAI Documentation – Function Calling](https://platform.openai.com/docs/guides/function-calling)  
-- [@official@OpenAI Cookbook – Using Functions with GPT Models](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb)  
-- [@officialOpenAI Blog – Announcing Function Calling and Other Updates](https://openai.com/blog/function-calling-and-other-api-updates)  
-- [@officialOpenAI API Reference – Functions Section](https://platform.openai.com/docs/api-reference/chat/create#functions)  
-- [@officialOpenAI Community – Discussions and Examples on Function Calling](https://community.openai.com/tag/function-calling)  
+- [@official@OpenAI Documentation – Function Calling](https://platform.openai.com/docs/guides/function-calling)
+- [@official@OpenAI Cookbook – Using Functions with GPT Models](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb)
+- [@article@@officialOpenAI Blog – Announcing Function Calling and Other Updates](https://openai.com/blog/function-calling-and-other-api-updates)
+- [@article@@officialOpenAI API Reference – Functions Section](https://platform.openai.com/docs/api-reference/chat/create#functions)
+- [@article@@officialOpenAI Community – Discussions and Examples on Function Calling](https://community.openai.com/tag/function-calling)

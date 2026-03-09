@@ -4,5 +4,5 @@ When you give a task to an AI, make clear how long the answer should be and what
 
 Visit the following resources to learn more:
 
-- [@article@Mastering Prompt Engineering: Format, Length, and Audience](https://techlasi.com/savvy/mastering-prompt-engineering-format-length-and-audience-examples-for-2024/)  
+- [@article@Mastering Prompt Engineering: Format, Length, and Audience](https://techlasi.com/savvy/mastering-prompt-engineering-format-length-and-audience-examples-for-2024/)
 - [@article@Ultimate Guide to Prompt Engineering](https://promptdrive.ai/prompt-engineering/)
