@@ -1,6 +1,6 @@
 # Small O Notation
 
-Small o notation, denoted as o(g(n)), defines an upper bound on the growth of a function f(n) that is *not* asymptotically tight. In simpler terms, f(n) is o(g(n)) if, for any positive constant c, there exists a value n₀ such that f(n) is strictly less than c*g(n) for all n greater than n₀. This means that g(n) grows strictly faster than f(n) as n approaches infinity.
+Small o notation, denoted as o(g(n)), defines an upper bound on the growth of a function f(n) that is _not_ asymptotically tight. In simpler terms, f(n) is o(g(n)) if, for any positive constant c, there exists a value n₀ such that f(n) is strictly less than c\*g(n) for all n greater than n₀. This means that g(n) grows strictly faster than f(n) as n approaches infinity.
 
 Visit the following resources to learn more:
 
