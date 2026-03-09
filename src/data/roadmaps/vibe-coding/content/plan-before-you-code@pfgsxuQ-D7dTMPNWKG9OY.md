@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@From vibe coding to vibe planning](https://tessl.io/blog/from-vibe-coding-to-vibe-planning/)
 - [@article@Advance Planning for AI Project Evaluation](https://towardsdatascience.com/advance-planning-for-ai-project-evaluation/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
-- [@video@Spec-Driven Development: AI Assisted Coding Explained](https://www.youtube.com/watch?v=mViFYTwWvcM)
 - [@video@Vibe Planning: The Smarter Way to Code with AI Agents](https://www.youtube.com/watch?v=B4uD9z6i_IU)
