@@ -1,19 +1,9 @@
 # Enterprise Patterns
 
-Enterprise patterns are a set of design patterns that are commonly used in the development of enterprise software applications. These patterns provide a common vocabulary and a set of best practices for solving common problems that arise in the development of large, complex software systems. Some examples of enterprise patterns include:
-
-*   Domain-Driven Design (DDD)
-*   Model-View-Controller (MVC)
-*   Service Oriented Architecture (SOA)
-*   Command and Query Responsibility Segregation (CQRS)
-*   Event Sourcing
-*   Microservices
-*   Event-Driven Architecture (EDA)
-
-These patterns can help to improve the maintainability and scalability of the software, by providing a clear separation of concerns and allowing for a more modular and flexible architecture.
+Enterprise Patterns are well-documented, reusable solutions to commonly occurring problems in enterprise software development. These patterns provide a vocabulary and a set of best practices for designing robust, scalable, and maintainable enterprise applications, addressing recurring challenges like data access, concurrency, distribution, and integration with legacy systems. They serve as blueprints for solving complex architectural and design issues, promoting consistency and reducing development time.
 
 Visit the following resources to learn more:
 
-- [@article@Software Architecture Patterns in Enterprise Software](https://blog.devgenius.io/10-software-architecture-patterns-in-enterprise-software-development-fabacb5ed0c8)
+- [@article@Enterprise Software Architecture Patterns: An Ultimate Guide](https://www.rishabhsoft.com/blog/enterprise-software-architecture-patterns)
 - [@video@What are Enterprise Integration Patterns?](https://www.youtube.com/watch?v=WNm3QmJadNs)
 - [@feed@Explore top posts about Enterprise](https://app.daily.dev/tags/enterprise?ref=roadmapsh)

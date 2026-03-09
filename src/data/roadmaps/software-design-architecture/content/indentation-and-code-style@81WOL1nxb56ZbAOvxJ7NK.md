@@ -1,8 +1,6 @@
 # Indentation and Code Style
 
-Indentation is the practice of using whitespace to visually group related lines of code together, making it easier to read and understand the structure of the code. Code style refers to the conventions and guidelines used to format and structure code, such as naming conventions, commenting, and use of whitespace.
-
-Having a consistent indentation and code style can help to make the code more readable and understandable, which can improve the maintainability of the system.
+Indentation and code style refer to the consistent formatting of source code to improve readability and maintainability. This involves using whitespace, line breaks, and naming conventions in a standardized manner across a project. The goal is to create code that is visually appealing and easy for developers to understand, regardless of who wrote it. Consistent indentation highlights the code's structure, making it easier to follow control flow and identify logical blocks. Adhering to a specific code style, which dictates rules for naming, commenting, and other formatting aspects, further enhances the clarity and consistency of the codebase.
 
 Visit the following resources to learn more:
 
