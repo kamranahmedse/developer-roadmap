@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@course@HackTheBox Academy's module on File Inclusion & Path Traversal](https://academy.hackthebox.com/course/preview/file-inclusion)
 - [@official@OWASP's article on Path Traversal](https://owasp.org/www-community/attacks/Path_Traversal)
 - [@article@Portswigger's guide on File Path Traversal](https://portswigger.net/web-security/file-path-traversal)
-- [@article@Acunetix's article on directory traversal](https://www.acunetix.com/websitesecurity/directory-traversal/)

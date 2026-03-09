@@ -4,5 +4,5 @@ Port scanners are essential tools in the troubleshooting and cybersecurity lands
 
 Visit the following resources to learn more:
 
-- [@article@Top 5 Best Port Scanners](https://securitytrails.com/blog/best-port-scanners)
+- [@article@Top 5 Free Open Port Check Tools in 2026](https://www.upguard.com/blog/best-open-port-scanners)
 - [@video@How To Use Nmap To Scan For Open Ports](https://www.youtube.com/watch?v=ifbwTt3_oCg)

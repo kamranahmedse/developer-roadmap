@@ -1,4 +1,4 @@
-# `dd` for Incident Response and Discovery
+# dd for Incident Response and Discovery
 
 `dd` (data duplicator) is a command-line utility used primarily for copying and converting data. It operates at a low level, reading and writing data block by block. This makes it extremely useful for creating exact bit-by-bit copies of storage devices, such as hard drives or memory sticks, and creating forensic images in raw or other formats.
 
