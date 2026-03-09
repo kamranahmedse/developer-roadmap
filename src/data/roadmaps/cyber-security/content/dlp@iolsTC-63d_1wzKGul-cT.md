@@ -4,5 +4,5 @@ Data Loss Prevention (DLP) refers to a set of strategies, tools, and processes u
 
 Visit the following resources to learn more:
 
-- [@article@What is DLP (data loss prevention)?](https://www.cloudflare.com/es-es/learning/access-management/what-is-dlp/)
+- [@article@What is DLP (data loss prevention)?](https://www.cloudflare.com/en-gb/learning/access-management/what-is-dlp/)
 - [@article@What is Data Loss Prevention (DLP)?](https://www.techtarget.com/whatis/definition/data-loss-prevention-DLP)
