@@ -6,5 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Experiment Tracking](https://madewithml.com/courses/mlops/experiment-tracking/#dashboard)
 - [@article@ML Flow Model Registry](https://mlflow.org/docs/latest/model-registry.html)
-- [@article@What is a Model Registry?](https://jfrog.com/learn/mlops/model-registry/)
-- [@video@Introduction to Experiment Tracking](https://www.youtube.com/watch?v=hctZDeB14-s)
