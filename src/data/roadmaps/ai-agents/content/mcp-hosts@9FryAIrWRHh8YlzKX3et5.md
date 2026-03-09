@@ -4,7 +4,7 @@ MCP Hosts are computers or services that run the Model Context Protocol. They ha
 
 Visit the following resources to learn more:
 
-- [@official@Vercel Serverless Hosting](https://vercel.com/docs)  
+- [@official@Vercel Serverless Hosting](https://vercel.com/docs)
+- [@opensource@punkeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
 - [@article@The Ultimate Guide to MCP](https://guangzhengli.com/blog/en/model-context-protocol)
 - [@article@AWS MCP Servers for Code Assistants](https://aws.amazon.com/blogs/machine-learning/introducing-aws-mcp-servers-for-code-assistants-part-1/)
-- [@opensource@punkeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)

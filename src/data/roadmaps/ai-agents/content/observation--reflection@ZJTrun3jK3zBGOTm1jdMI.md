@@ -4,5 +4,5 @@ Observation and reflection form the thinking pause in an AI agent’s loop. Firs
 
 Visit the following resources to learn more:
 
-- [@official@Best Practices for Prompting and Self-checking](https://platform.openai.com/docs/guides/prompt-engineering)  
-- [@article@Self-Reflective AI: Building Agents That Learn by Observing Themselves](https://arxiv.org/abs/2302.14045)  
+- [@official@Best Practices for Prompting and Self-checking](https://platform.openai.com/docs/guides/prompt-engineering)
+- [@article@Self-Reflective AI: Building Agents That Learn by Observing Themselves](https://arxiv.org/abs/2302.14045)

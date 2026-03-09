@@ -5,6 +5,6 @@ To judge how well an AI agent works, you need clear numbers. Track accuracy, pre
 Visit the following resources to learn more:
 
 - [@article@Robustness Testing for AI](https://mitibmwatsonailab.mit.edu/category/robustness/)
-- [@article@Complete Guide to Machine Learning Evaluation Metrics](https://medium.com/analytics-vidhya/complete-guide-to-machine-learning-evaluation-metrics-615c2864d916)  
-- [@article@Measuring Model Performance](https://developers.google.com/machine-learning/crash-course/classification/accuracy)  
-- [@article@A Practical Framework for (Gen)AI Value Measurement](https://medium.com/google-cloud/a-practical-framework-for-gen-ai-value-measurement-5fccf3b66c43)  
+- [@article@Complete Guide to Machine Learning Evaluation Metrics](https://medium.com/analytics-vidhya/complete-guide-to-machine-learning-evaluation-metrics-615c2864d916)
+- [@article@Measuring Model Performance](https://developers.google.com/machine-learning/crash-course/classification/accuracy)
+- [@article@A Practical Framework for (Gen)AI Value Measurement](https://medium.com/google-cloud/a-practical-framework-for-gen-ai-value-measurement-5fccf3b66c43)

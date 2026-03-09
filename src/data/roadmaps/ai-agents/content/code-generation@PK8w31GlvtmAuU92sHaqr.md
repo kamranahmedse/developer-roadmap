@@ -4,6 +4,6 @@ Code-generation agents take a plain language request, understand the goal, and t
 
 Visit the following resources to learn more:
 
+- [@official@GitHub Copilot](https://github.com/features/copilot)
 - [@article@Multi-Agent-based Code Generation](https://arxiv.org/abs/2312.13010)
 - [@article@From Prompt to Production: GitHub Blog](https://github.blog/ai-and-ml/github-copilot/from-prompt-to-production-building-a-landing-page-with-copilot-agent-mode/)
-- [@official@GitHub Copilot](https://github.com/features/copilot)

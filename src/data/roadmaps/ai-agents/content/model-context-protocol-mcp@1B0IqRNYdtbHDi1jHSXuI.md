@@ -4,8 +4,8 @@ Model Context Protocol (MCP) is a rulebook that tells an AI agent how to pack ba
 
 Visit the following resources to learn more:
 
-- [@opensource@Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol)
-- [@official@Model Context Protocol](https://modelcontextprotocol.io/introduction)
-- [@article@Introducing the Azure MCP Server ](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/)  
-- [@article@The Ultimate Guide to MCP](https://guangzhengli.com/blog/en/model-context-protocol)
 - [@course@MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/)
+- [@official@Model Context Protocol](https://modelcontextprotocol.io/introduction)
+- [@opensource@Model Context Protocol](https://github.com/modelcontextprotocol/modelcontextprotocol)
+- [@article@Introducing the Azure MCP Server ](https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/)
+- [@article@The Ultimate Guide to MCP](https://guangzhengli.com/blog/en/model-context-protocol)

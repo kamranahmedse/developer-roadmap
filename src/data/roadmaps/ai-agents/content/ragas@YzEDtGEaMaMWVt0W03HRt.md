@@ -5,5 +5,5 @@ Ragas is an open-source tool used to check how well a Retrieval-Augmented Genera
 Visit the following resources to learn more:
 
 - [@official@Ragas Documentation](https://docs.ragas.io/en/latest/)
-- [@article@Evaluating RAG Applications with RAGAs](https://towardsdatascience.com/evaluating-rag-applications-with-ragas-81d67b0ee31a/n)
 - [@opensource@explodinggradients/ragas](https://github.com/explodinggradients/ragas)
+- [@article@Evaluating RAG Applications with RAGAs](https://towardsdatascience.com/evaluating-rag-applications-with-ragas-81d67b0ee31a/n)

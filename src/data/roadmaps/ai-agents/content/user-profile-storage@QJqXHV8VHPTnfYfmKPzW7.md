@@ -5,4 +5,4 @@ User profile storage is the part of an AI agent’s memory that holds stable fac
 Visit the following resources to learn more:
 
 - [@article@Storage Technology Explained: AI and Data Storage](https://www.computerweekly.com/feature/Storage-technology-explained-AI-and-the-data-storage-it-needs)
-- [@partner@The Architect's Guide to Storage for AI - The New Stack](https://thenewstack.io/the-architects-guide-to-storage-for-ai/)
+- [@article@The Architect's Guide to Storage for AI - The New Stack](https://thenewstack.io/the-architects-guide-to-storage-for-ai/)

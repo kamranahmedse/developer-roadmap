@@ -4,6 +4,6 @@ After you write a first prompt, treat it as a draft, not the final version. Run 
 
 Visit the following resources to learn more:
 
-- [@article@Master Iterative Prompting: A Guide](https://blogs.vreamer.space/master-iterative-prompting-a-guide-to-more-effective-interactions-with-ai-50a736eaec38)
 - [@course@Prompt Engineering Best Practices](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- [@article@Master Iterative Prompting: A Guide](https://blogs.vreamer.space/master-iterative-prompting-a-guide-to-more-effective-interactions-with-ai-50a736eaec38)
 - [@video@Prompt Engineering: The Iterative Process](https://www.youtube.com/watch?v=dOxUroR57xs)

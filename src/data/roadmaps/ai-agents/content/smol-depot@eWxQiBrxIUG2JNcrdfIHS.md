@@ -4,6 +4,6 @@ Smol Depot is an open-source kit that lets you bundle all the parts of a small A
 
 Visit the following resources to learn more:
 
-- [@official@smol.ai - Continuous Fine-tuning Platform for AI Engineers](https://smol.candycode.dev/)  
+- [@official@smol.ai - Continuous Fine-tuning Platform for AI Engineers](https://smol.candycode.dev/)
 - [@article@5-min Smol AI Tutorial](https://www.ai-jason.com/learning-ai/smol-ai-tutorial)
-- [@video@Smol AI Full Beginner Course](https://www.youtube.com/watch?v=d7qFVrpLh34)  
+- [@video@Smol AI Full Beginner Course](https://www.youtube.com/watch?v=d7qFVrpLh34)

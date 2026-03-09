@@ -4,7 +4,7 @@ openllmetry is a small Python library that makes it easy to watch what your AI a
 
 Visit the following resources to learn more:
 
-- [@official@OpenTelemetry Documentation](https://www.traceloop.com/blog/openllmetry)  
-- [@official@What is OpenLLMetry? - traceloop](https://www.traceloop.com/docs/openllmetry/introduction)  
+- [@official@OpenTelemetry Documentation](https://www.traceloop.com/blog/openllmetry)
+- [@official@What is OpenLLMetry? - traceloop](https://www.traceloop.com/docs/openllmetry/introduction)
 - [@official@Use Traceloop with Python](https://www.traceloop.com/docs/openllmetry/getting-started-python)
 - [@opensource@traceloop/openllmetry](https://github.com/traceloop/openllmetry)

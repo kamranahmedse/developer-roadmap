@@ -4,7 +4,7 @@ Building an AI agent from scratch means writing every part of the system yoursel
 
 Visit the following resources to learn more:
 
-- [@article@A Step-by-Step Guide to Building an AI Agent From Scratch](https://www.neurond.com/blog/how-to-build-an-ai-agent)  
-- [@article@How to Build AI Agents](https://wotnot.io/blog/build-ai-agents)  
+- [@article@A Step-by-Step Guide to Building an AI Agent From Scratch](https://www.neurond.com/blog/how-to-build-an-ai-agent)
+- [@article@How to Build AI Agents](https://wotnot.io/blog/build-ai-agents)
 - [@article@Build Your Own AI Agent from Scratch in 30 Minutes](https://medium.com/@gurpartap.sandhu3/build-you-own-ai-agent-from-scratch-in-30-mins-using-simple-python-1458f8099da0)
 - [@video@Building an AI Agent From Scratch](https://www.youtube.com/watch?v=bTMPwUgLZf0)

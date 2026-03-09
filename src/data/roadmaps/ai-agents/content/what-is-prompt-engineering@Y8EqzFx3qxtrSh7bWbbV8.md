@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
 - [@article@What is Prompt Engineering? - AI Prompt Engineering Explained - AWS](https://aws.amazon.com/what-is/prompt-engineering/)
-- [@article@What is Prompt Engineering? A Detailed Guide For 2025](https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication)  
+- [@article@What is Prompt Engineering? A Detailed Guide For 2025](https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication)

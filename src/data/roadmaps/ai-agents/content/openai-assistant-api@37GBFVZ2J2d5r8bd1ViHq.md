@@ -4,7 +4,7 @@ The OpenAI Assistants API lets you add clear, task-specific actions to a chat wi
 
 Visit the following resources to learn more:
 
-- [@official@OpenAI Documentation – Assistants API Overview](https://platform.openai.com/docs/assistants/overview)  
-- [@official@OpenAI Blog – Introducing the Assistants API](https://openai.com/blog/assistants-api)  
-- [@official@OpenAI Cookbook – Assistants API Example](https://github.com/openai/openai-cookbook/blob/main/examples/Assistants_API_overview_python.ipynb)  
-- [@official@OpenAI API Reference – Assistants Endpoints](https://platform.openai.com/docs/api-reference/assistants)  
+- [@official@OpenAI Documentation – Assistants API Overview](https://platform.openai.com/docs/assistants/overview)
+- [@official@OpenAI Blog – Introducing the Assistants API](https://openai.com/blog/assistants-api)
+- [@official@OpenAI Cookbook – Assistants API Example](https://github.com/openai/openai-cookbook/blob/main/examples/Assistants_API_overview_python.ipynb)
+- [@official@OpenAI API Reference – Assistants Endpoints](https://platform.openai.com/docs/api-reference/assistants)
