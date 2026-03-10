@@ -32,4 +32,5 @@ Disadvantages of Failover
 
 Visit the following resources to learn more:
 
-- [@article@Fail Over Pattern - High Availability](https://www.filecloud.com/blog/2015/12/architectural-patterns-for-high-availability/)
+- [@opensource@Fail Over](https://github.com/donnemartin/system-design-primer?tab=readme-ov-file#fail-over)
+- [@article@Active-Passive vs. Active-Active Failover](https://www.serverion.com/uncategorized/active-passive-vs-active-active-failover/)
