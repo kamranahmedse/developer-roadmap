@@ -7,6 +7,6 @@ Visit the following resources to learn more:
 - [@roadmap@Visit Dedicated Terraform Roadmap](https://roadmap.sh/terraform)
 - [@official@Terraform Docs](https://www.terraform.io/docs)
 - [@official@Terraform Tutorials](https://learn.hashicorp.com/terraform)
-- [@video@Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4)
 - [@article@How to Scale Your Terraform Infrastructure](https://thenewstack.io/how-to-scale-your-terraform-infrastructure/)
+- [@video@Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4)
 - [@feed@Explore top posts about Terraform](https://app.daily.dev/tags/terraform?ref=roadmapsh)
