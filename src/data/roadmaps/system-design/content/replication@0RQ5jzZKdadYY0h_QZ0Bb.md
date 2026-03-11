@@ -9,3 +9,4 @@ Replication is an availability pattern that involves having multiple copies of t
 Visit the following resources to learn more:
 
 - [@opensource@Replication: Availability Pattern](https://github.com/donnemartin/system-design-primer#replication)
+- [@article@Database Replication Introduction: Types and Advantages](https://www.enjoyalgorithms.com/blog/introduction-to-database-replication-system-design)
