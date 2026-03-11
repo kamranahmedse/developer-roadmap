@@ -4,9 +4,9 @@ Model Context Protocol (MCP) is a rulebook that tells an AI agent how to pack ba
 
 Visit the following resources to learn more:
 
+- [@course@MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/)
 - [@official@Model Context Protocol](https://modelcontextprotocol.io/introduction)
 - [@opensource@modelcontexprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol)
 - [@article@The Ultimate Guide to MCP](https://guangzhengli.com/blog/en/model-context-protocol)
 - [@article@A Clear Intro to MCP (Model Context Protocol) with Code Examples](https://towardsdatascience.com/clear-intro-to-mcp/)
 - [@article@Model Context Protocol (MCP): A Guide With Demo Project](https://www.datacamp.com/tutorial/mcp-model-context-protocol)
-- [@course@MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/)
