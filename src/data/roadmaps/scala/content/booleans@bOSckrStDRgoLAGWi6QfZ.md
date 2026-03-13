@@ -1,0 +1,3 @@
+# Booleans
+
+Booleans represent truth values: either `true` or `false`. They are fundamental for decision-making in programs, allowing you to control the flow of execution based on conditions. You use booleans with logical operators like `&&` (and), `||` (or), and `!` (not) to create more complex expressions that evaluate to either `true` or `false`. These are often used in conditional statements (like `if` and `else`) and loops.

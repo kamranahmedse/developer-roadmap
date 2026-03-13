@@ -1,0 +1,3 @@
+# Nothing
+
+`Nothing` is a special type in Scala that sits at the bottom of the type hierarchy. It's a subtype of every other type, meaning it can be used anywhere any other type is expected. However, `Nothing` has no instances (no actual values), which essentially means that a function returning `Nothing` will never return normally; it either throws an exception, enters an infinite loop, or the program exits. You can think of it as a "dead end" type that signals a point of no return in your code.

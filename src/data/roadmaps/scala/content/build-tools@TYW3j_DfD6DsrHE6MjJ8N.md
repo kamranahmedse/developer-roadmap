@@ -1,0 +1,3 @@
+# Build Tools
+
+Build tools automate tasks like compiling code, running tests, and packaging applications. They streamline the development process and ensure consistency across projects. In the Scala ecosystem, popular build tools include `scalacli`, a newer option emphasizing simplicity and speed, `sbt`, a widely used and powerful tool with a large plugin ecosystem, and `mill`, known for its fast builds and reliance on Scala itself for configuration.

@@ -1,0 +1,3 @@
+# Unit
+
+Unit is a data type in Scala that represents a placeholder when no meaningful value needs to be returned. It's similar to `void` in languages like Java or C. The unit type has only one possible value, written as `()`. You'll often see it used as the return type of functions that perform side effects but don't produce a result, or when a function is required to return a value but there's no logical value to return.

@@ -1,0 +1,3 @@
+# Know your ecosystem
+
+Ecosystems in Scala are groups of frameworks and libraries that work well together and are often maintained and developed by the same organization. While nothing is stopping you from choosing any framework or library from the wide spectrum of Scala open-source projects, it often makes sense to stick to those that belong to the same ecosystem unless you have a good reason to pick another. Of course, you’re also free to use one ecosystem in one project and another in a different project.
