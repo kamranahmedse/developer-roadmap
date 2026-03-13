@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [@article@Overview of Composition over Inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance)
 - [@video@Tutorial - Composition over Inheritance](https://www.youtube.com/watch?v=wfMtDGfHWpA)
+- [@video@Composition over Inheritance Explained by Games](https://www.youtube.com/watch?v=HNzP1aLAffM&list=PLCl5BUbK0jXt5l18S5UNAoUc4eQ2PJDye)
