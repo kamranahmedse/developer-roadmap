@@ -1,0 +1,3 @@
+# Strings
+
+Strings represent sequences of characters. They're used to store and manipulate text. You create them by enclosing characters within double quotes, like `"Hello, world!"`. Strings are immutable, meaning you can't change them directly; operations on strings produce new strings. Scala provides a rich set of methods for string manipulation, including concatenation, substring extraction, searching, and replacement.

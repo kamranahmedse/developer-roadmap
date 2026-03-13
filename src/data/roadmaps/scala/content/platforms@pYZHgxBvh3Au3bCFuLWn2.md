@@ -1,0 +1,3 @@
+# Know your platform
+
+A platform is a runtime environment in which code is compiled and executed. Scala is primarily known as a JVM language, alongside Java and Kotlin. Scala code is compiled into the same bytecode as these languages and runs in the Java Runtime Environment (JRE), which provides independence from specific machine configurations and features such as garbage collection. However, there are at least two other platforms where Scala code can be run: Scala Native, which aims to compile Scala directly to machine code, bypassing the JRE, and Scala.js, which transpiles Scala code to JavaScript, allowing it to run in web browsers.

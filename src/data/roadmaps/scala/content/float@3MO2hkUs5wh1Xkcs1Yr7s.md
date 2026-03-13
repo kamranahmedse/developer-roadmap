@@ -1,0 +1,3 @@
+# Float
+
+Floats in Scala are used to represent numbers with decimal points. They are like regular numbers but can have a fractional part, such as 3.14 or -2.7. A float uses 32 bits of memory and can store values with a certain level of precision. Because they are stored in binary format with a limited number of bits, they can sometimes have slight inaccuracies when representing certain decimal numbers.

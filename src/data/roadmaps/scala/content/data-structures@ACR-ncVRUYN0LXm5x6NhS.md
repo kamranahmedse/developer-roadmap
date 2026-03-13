@@ -1,0 +1,3 @@
+# Data Structures: Class, Trait, and Object
+
+Scala provides three fundamental building blocks for structuring data and behavior: classes, traits, and objects. A class is a blueprint for creating objects, encapsulating data (fields) and behavior (methods). A trait is similar to an interface but can also contain concrete methods and fields, allowing for code reuse through mixins. An object is a singleton instance of a class, useful for creating utility classes or entry points to applications. Together, these structures enable the creation of well-organized and maintainable code.

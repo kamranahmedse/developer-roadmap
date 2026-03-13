@@ -1,0 +1,3 @@
+# No ecosystem
+
+The Scala open-source landscape outside of the major ecosystems often focuses on niche use cases or innovative ideas that may not be covered by the larger frameworks. Projects in this space can range from specialized tools for data science, machine learning, and web development to unique solutions for testing, build management, and database connectivity. These projects are frequently driven by individual developers or small communities.

@@ -1,0 +1,3 @@
+# Integers
+
+Integers are whole numbers, meaning they don't have any fractional or decimal parts. In Scala, integers can be positive (like 5), negative (like -10), or zero (0). They are used for counting and performing arithmetic calculations that involve only whole numbers. Scala provides several integer types, each with a different range of values they can represent, allowing you to choose the most appropriate type based on the size of the numbers you need to work with.

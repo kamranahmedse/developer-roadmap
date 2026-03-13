@@ -1,0 +1,3 @@
+# Scope & Visibility
+
+Scope and visibility in Scala determine where variables, methods, and classes can be accessed within your code. Scope defines the region of code where a variable is valid and accessible, while visibility controls whether a member (variable or method) of a class or object can be accessed from outside that class or object. Understanding these concepts is crucial for writing well-structured, maintainable, and secure Scala programs.

@@ -1,0 +1,3 @@
+# YouTube
+
+YouTube can be a fantastic resource for learning Scala. On the platform, you can find a wide variety of content, from beginner-friendly tutorials introducing basic concepts to in-depth explanations of advanced topics. Many experienced Scala developers and educators create and share their knowledge on YouTube, often demonstrating practical examples and real-world applications, allowing learners to visually grasp the concepts and follow along with code demonstrations.

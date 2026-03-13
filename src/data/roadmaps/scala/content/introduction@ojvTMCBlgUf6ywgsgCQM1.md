@@ -1,0 +1,3 @@
+# Introduction
+
+Scala is a programming language that blends object-oriented and functional programming ideas. It runs on the Java Virtual Machine (JVM) and can also be compiled to JavaScript. This makes it possible to use Scala for a wide variety of tasks, from building large-scale systems to writing web applications and scripts. It is designed to be concise, elegant, and type-safe, aiming to provide developers with powerful tools for creating robust and scalable applications.
