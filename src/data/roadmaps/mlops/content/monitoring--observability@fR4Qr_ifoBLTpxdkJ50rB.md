@@ -4,6 +4,7 @@ Monitoring and observability involve tracking the performance and health of mach
 
 Visit the following resources to learn more:
 
+- [@opensource@ingero-io/ingero](https://github.com/ingero-io/ingero)
 - [@article@What’s the Difference Between Observability and Monitoring?](https://aws.amazon.com/compare/the-difference-between-monitoring-and-observability/)
 - [@article@Observability and Instrumentation: What They Are and Why They Matter](https://newrelic.com/blog/best-practices/observability-instrumentation)
 - [@video@What is observability?](https://www.youtube.com/watch?v=--17See0KHs)
