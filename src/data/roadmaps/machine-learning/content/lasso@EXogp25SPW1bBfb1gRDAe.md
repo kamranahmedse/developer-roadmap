@@ -4,6 +4,6 @@ Lasso (Least Absolute Shrinkage and Selection Operator) regression is a linear r
 
 Visit the following resources to learn more:
 
-- [@article@Lasso | scikit-learn](https://www.ibm.com/think/topics/lasso-regression)
+- [@article@Lasso | scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html)
 - [@article@What is lasso regression?](https://www.ibm.com/think/topics/lasso-regression)
 - [@video@Lasso Regression with Scikit-Learn (Beginner Friendly)](https://www.youtube.com/watch?v=LmpBt0tenJE)
