@@ -1,6 +1,6 @@
 # Working with Strings
 
-Scala offers various ways to manipulate strings, such as combining them (concatenation), finding their length, or extracting parts of them. String interpolation is a feature that lets you embed variables directly within strings, making it easier to build dynamic text.  For example, you can use `s"My name is $name"` where `name` is a variable, and Scala will replace `$name` with its actual value when the string is created.
+Scala offers various ways to manipulate strings, such as combining them (concatenation), finding their length, or extracting parts of them. String interpolation is a feature that lets you embed variables directly within strings, making it easier to build dynamic text. For example, you can use `s"My name is $name"` where `name` is a variable, and Scala will replace `$name` with its actual value when the string is created.
 
 Visit the following resources to learn more:
 

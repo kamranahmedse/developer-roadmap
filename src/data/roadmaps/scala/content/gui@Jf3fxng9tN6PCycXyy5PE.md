@@ -1,0 +1,3 @@
+# GUI Frameworks and Libraries
+
+GUI frameworks and libraries provide tools and components for creating graphical user interfaces in applications. These tools handle the visual elements like windows, buttons, text fields, and other interactive elements, along with event handling to make applications responsive to user actions. They allow developers to build desktop or web-based applications with a rich, interactive visual experience.

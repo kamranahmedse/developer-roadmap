@@ -1,7 +1,6 @@
 # Conditionals
 
-Conditional statements are primarily handled using if/else and match/case constructs. The if/else construct is straightforward and similar to other programming languages, allowing for simple conditional branching. The match/case construct is more powerful and can handle multiple conditions, pattern matching, and even include guards (additional conditions using if expressions within each case).
-Resources
+Conditional statements are primarily handled using if/else and match/case constructs. The if/else construct is straightforward and similar to other programming languages, allowing for simple conditional branching. The match/case construct is more powerful and can handle multiple conditions, pattern matching, and even include guards (additional conditions using if expressions within each case). Resources
 
 Visit the following resources to learn more:
 

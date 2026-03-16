@@ -1,7 +1,6 @@
 # Mutable collections
 
-Mutable collections are used when you need collections that can be updated or extended in place, usually for better performance. After the computations are done, you can transform it to its immutable counterpart. Scala provides several mutable collection classes, including ArrayBuffer, ListBuffer, HashSet, and HashMap.
-Resources
+Mutable collections are used when you need collections that can be updated or extended in place, usually for better performance. After the computations are done, you can transform it to its immutable counterpart. Scala provides several mutable collection classes, including ArrayBuffer, ListBuffer, HashSet, and HashMap. Resources
 
 Visit the following resources to learn more:
 

@@ -4,7 +4,7 @@ ZIO is a Scala framework designed for asynchronous and concurrent programming. I
 
 Visit the following resources to learn more:
 
+- [@course@ZIO Course on Rock the JVM](https://rockthejvm.com/courses/zio)
 - [@official@ZIO Official Website](https://zio.dev/)
 - [@opensource@ZIO GitHub Repository](https://github.com/zio/zio)
-- [@course@ZIO Course on Rock the JVM](https://rockthejvm.com/courses/zio)
 - [@article@Introduction to ZIO on Baeldung](https://www.baeldung.com/scala/zio-intro)

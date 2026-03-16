@@ -1,7 +1,6 @@
 # The unapply method
 
-The unapply method is used to deconstruct instances through pattern matching. It is often used in extractor objects to extract data values compacted in objects.
-Resources
+The unapply method is used to deconstruct instances through pattern matching. It is often used in extractor objects to extract data values compacted in objects. Resources
 
 Visit the following resources to learn more:
 
