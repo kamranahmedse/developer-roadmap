@@ -1,0 +1,3 @@
+# Effect systems
+
+An effect system is a programming paradigm that helps manage side effects in a controlled and predictable manner. In functional programming, side effects - such as input/output operations, state changes, or exceptions - can introduce complexity and make code harder to reason about. An effect system allows developers to explicitly declare and handle these side effects, making the code more modular, testable, and maintainable. By separating the description of what a program should do from the actual execution of those actions, effect systems enable better composition and reasoning about program behavior.

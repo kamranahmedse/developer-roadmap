@@ -1,7 +1,6 @@
 # Standard operators
 
-Operators are methods that can be used in a more readable and intuitive way. Scala supports standard arithmetic operators (+, -, *, /), relational operators (==, !=, >, <, >=, <=), and logical operators (&&, ||, !). Additionally, Scala has specific operators like the arrow (->) and fat arrow (=>). The arrow operator (->) is used to create tuples, which are pairs of values. For example, 1 -> 2 creates a tuple (1, 2). The fat arrow (=>) is used in function definitions and pattern matching.
-Resources
+Operators are methods that can be used in a more readable and intuitive way. Scala supports standard arithmetic operators (+, -, \*, /), relational operators (==, !=, >, <, >=, <=), and logical operators (&&, ||, !). Additionally, Scala has specific operators like the arrow (->) and fat arrow (=>). The arrow operator (->) is used to create tuples, which are pairs of values. For example, 1 -> 2 creates a tuple (1, 2). The fat arrow (=>) is used in function definitions and pattern matching. Resources
 
 Visit the following resources to learn more:
 

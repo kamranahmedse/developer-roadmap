@@ -1,0 +1,3 @@
+# Macros & the Type System
+
+Macros are pieces of code that transform other code at compile time. They allow you to perform computations and generate code based on the structure of your program, enabling powerful metaprogramming capabilities. The type system, on the other hand, is a set of rules that govern how data types are used in a programming language. It ensures type safety, preventing errors by verifying that operations are performed on compatible data types during compilation.

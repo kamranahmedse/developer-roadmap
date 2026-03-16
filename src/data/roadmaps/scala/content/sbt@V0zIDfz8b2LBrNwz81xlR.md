@@ -4,7 +4,7 @@ sbt (Scala Build Tool) is a build tool designed for Scala and Java projects. It 
 
 Visit the following resources to learn more:
 
+- [@book@sbt in Action Book](https://www.manning.com/books/sbt-in-action)
 - [@official@sbt Official Documentation](https://www.scala-sbt.org/learn.html)
 - [@official@Scala Book: sbt Overview](https://docs.scala-lang.org/overviews/scala-book/scala-build-tool-sbt.html)
-- [@book@sbt in Action Book](https://www.manning.com/books/sbt-in-action)
 - [@article@Introduction to SBT on Baeldung](https://www.baeldung.com/scala/sbt-intro)

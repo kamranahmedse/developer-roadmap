@@ -1,6 +1,6 @@
 # Regex
-Regular expressions are supported through the Regex class in the scala.util.matching package. Regular expressions (regex) are patterns used to match character combinations in strings. They are useful for text processing, pattern matching, and data validation.
-Resources
+
+Regular expressions are supported through the Regex class in the scala.util.matching package. Regular expressions (regex) are patterns used to match character combinations in strings. They are useful for text processing, pattern matching, and data validation. Resources
 
 Visit the following resources to learn more:
 

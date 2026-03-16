@@ -1,7 +1,6 @@
 # Total / partial functions
 
-A total function is a function that is defined for every possible input value it can be given. In contrast, a partial function is a function that is only defined for a subset of possible input values. Partial functions can be used with collection methods like collect and collectFirst to manipulate and transform data.
-Resources
+A total function is a function that is defined for every possible input value it can be given. In contrast, a partial function is a function that is only defined for a subset of possible input values. Partial functions can be used with collection methods like collect and collectFirst to manipulate and transform data. Resources
 
 Visit the following resources to learn more:
 

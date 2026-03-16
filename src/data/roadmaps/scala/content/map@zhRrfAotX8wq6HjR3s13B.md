@@ -1,7 +1,6 @@
 # map
 
-The map method is used to apply a function to each element of a collection and create a new collection with the same number of elements, where each element is the result of applying that function to the original element.
- Resources
+The map method is used to apply a function to each element of a collection and create a new collection with the same number of elements, where each element is the result of applying that function to the original element. Resources
 
 Visit the following resources to learn more:
 

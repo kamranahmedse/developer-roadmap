@@ -1,7 +1,6 @@
-# ScalaCLI 
+# ScalaCLI
 
-ScalaCLI is a command-line tool designed to simplify the process of learning and using Scala. It is optimized for speed and ease of use, making it ideal for scripts, playgrounds, and single-module projects. ScalaCLI manages its own dependencies and supports features like incremental compilation and dependency resolution. It does not require a configuration file, and all configurations can be provided through directives embedded in Scala files or via command-line arguments.
-Resources
+ScalaCLI is a command-line tool designed to simplify the process of learning and using Scala. It is optimized for speed and ease of use, making it ideal for scripts, playgrounds, and single-module projects. ScalaCLI manages its own dependencies and supports features like incremental compilation and dependency resolution. It does not require a configuration file, and all configurations can be provided through directives embedded in Scala files or via command-line arguments. Resources
 
 Visit the following resources to learn more:
 

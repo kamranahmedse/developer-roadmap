@@ -1,6 +1,6 @@
 # Monads
 
-Monads in Scala are constructs that augment a value with additional features, known as effects. These effects can include managing the nullability of a variable or handling the asynchronicity of its computation. In Scala, common monads include Option[T], Future[T], Either, List, and more. A monad adds an effect to a value by wrapping it around a context. The key functions a monad must implement are unit (which lifts a value into the monadic context) and flatMap (which allows for chaining operations within the monadic context).
+Monads in Scala are constructs that augment a value with additional features, known as effects. These effects can include managing the nullability of a variable or handling the asynchronicity of its computation. In Scala, common monads include Option\[T\], Future\[T\], Either, List, and more. A monad adds an effect to a value by wrapping it around a context. The key functions a monad must implement are unit (which lifts a value into the monadic context) and flatMap (which allows for chaining operations within the monadic context).
 
 Visit the following resources to learn more:
 

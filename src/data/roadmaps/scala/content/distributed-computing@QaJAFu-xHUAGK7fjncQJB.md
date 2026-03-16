@@ -1,0 +1,3 @@
+# Distributed computing
+
+Distributed computing involves creating systems where multiple computers work together to solve complex problems by sharing resources and processing tasks across a network. Scala is particularly well-suited for distributed computing due to its ecosystem of libraries and frameworks like Akka, Apache Spark, and ZIO, which provide tools for building resilient, scalable, and fault-tolerant distributed systems.
