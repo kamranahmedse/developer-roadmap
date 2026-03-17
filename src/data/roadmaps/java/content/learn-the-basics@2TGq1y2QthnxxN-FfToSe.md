@@ -14,4 +14,6 @@ Visit the following resources to learn more:
 - [@article@Java: The Complete Reference](https://www.amazon.co.uk/gp/product/B09JL8BMK7/ref=dbs_a_def_rwt_bibl_vppi_i2)
 - [@video@Java Tutorial for Beginners](https://youtu.be/eIrMbAQSU34)
 - [@video@Java + DSA + Interview Preparation Course (For beginners)](https://youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)
-- [@feed@Explore top posts about Java](https://app.daily.dev/tags/java?ref=roadmapsh)
+- [@feed@Explore top posts about Java](https://app.daily.dev/tags/java?
+- ref=roadmapsh)
+- [@article@Java Programming - GeeksforGeeks](https://www.geeksforgeeks.org/java/)
