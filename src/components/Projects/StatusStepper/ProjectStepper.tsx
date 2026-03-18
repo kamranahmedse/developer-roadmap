@@ -112,7 +112,7 @@ export function ProjectStepper(props: ProjectStepperProps) {
     <div
       ref={stickyElRef}
       className={cn(
-        'relative top-0 -mx-4 my-5 overflow-hidden rounded-none border border-x-0 bg-white transition-all sm:sticky sm:mx-0 sm:rounded-lg sm:border-x',
+        'relative z-10 top-0 -mx-4 my-5 overflow-hidden rounded-none border border-x-0 bg-white transition-all sm:sticky sm:mx-0 sm:rounded-lg sm:border-x',
         {
           'sm:-mx-5 sm:rounded-none sm:border-x-0 sm:border-t-0 sm:bg-gray-50':
             isSticky,
