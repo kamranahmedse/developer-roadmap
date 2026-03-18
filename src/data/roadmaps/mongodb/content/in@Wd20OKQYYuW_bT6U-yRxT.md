@@ -5,4 +5,4 @@ The `$in` operator in MongoDB selects documents where a field value matches any 
 Visit the following resources to learn more:
 
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
-- [@official@\$in](https://www.mongodb.com/docs/manual/reference/operator/aggregation/gte/)
+- [@official@\$in](https://www.mongodb.com/docs/manual/reference/operator/aggregation/in/)
