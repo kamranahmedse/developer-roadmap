@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is DML?](https://satoricyber.com/glossary/dml-data-manipulation-language)
 - [@article@What is DML?(Wiki)](https://en.wikipedia.org/wiki/Data_manipulation_language)
-- [@article@Difference Between DMS & DML](https://appmaster.io/blog/difference-between-ddl-and-dml)
+- [@article@Difference Between DDL & DML](https://appmaster.io/blog/difference-between-ddl-and-dml)
