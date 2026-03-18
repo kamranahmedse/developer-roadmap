@@ -4,5 +4,5 @@ The `$lookup` aggregation stage performs left outer joins between collections, s
 
 Visit the following resources to learn more:
 
-- [@official@\$limit](https://www.mongodb.com/docs/manual/reference/operator/aggregation/limit/)
+- [@official@\$lookup](https://www.mongodb.com/docs/manual/reference/operator/aggregation/lookup/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
