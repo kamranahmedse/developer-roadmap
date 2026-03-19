@@ -1,6 +1,6 @@
 # v0
 
-v0 by Vercel is a generative UI tool that helps developers quickly prototype and generate React code. You describe the UI you want, and v0 uses AI to generate the JSX and CSS (using Tailwind CSS) to build it. It's designed to speed up the initial stages of frontend development by providing a starting point that you can then customize and refine.
+v0 is Vercel's UI generation tool. You describe a component or screen in plain language, and it produces clean React code ready to drop into your project. It is best for generating individual UI components rather than full applications; use it when you need a specific interface element quickly without writing it from scratch.
 
 Visit the following resources to learn more:
 

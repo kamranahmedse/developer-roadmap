@@ -1,6 +1,6 @@
 # Lovable
 
-Lovable is an AI tool that lets you build full web apps just by chatting with it — you describe what you want, and it generates both the frontend and backend code, sets up a database, and gives you a live working app, all without you needing to write code manually. It's similar to v0 but goes further because it handles the whole stack, not just the UI. It's aimed at non-developers or beginners who want to go from idea to a real, deployed product as fast as possible, making it one of the most popular vibe coding tools right now.
+Lovable generates a working front-end application from a text description. It is one of the fastest ways to go from idea to something clickable. The output is good enough for early user testing but may need refinement with a code editor before it is ready for production.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Claude Code
 
-Claude Code is a family of large language models designed for code generation and understanding. It excels at tasks like code completion, bug finding, documentation, and even translating code between different programming languages. Essentially, it's a tool that helps developers write, understand, and maintain code more efficiently by leveraging artificial intelligence.
+Claude Code is a terminal-based AI tool built by Anthropic. It is designed to reason through complex code problems, explain unfamiliar codebases, and help with debugging. It works best when you need to understand what a piece of code is doing before modifying it; give it a specific problem and it will walk through it step by step.
 
 Visit the following resources to learn more:
 

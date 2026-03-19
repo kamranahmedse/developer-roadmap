@@ -1,6 +1,6 @@
 # Gemini
 
-Gemini is a family of multimodal large language models (LLMs) developed by Google. These models are designed to handle and understand different types of data, including text, code, images, audio, and video. They are used to build AI-powered features by providing capabilities such as natural language understanding, content generation, and complex reasoning.
+Gemini CLI is Google's command-line AI tool for developers. It assists with code generation, explanation, and refactoring directly in the terminal. It is a practical option if you are already working within Google's ecosystem or want a powerful AI assistant without switching away from your existing terminal workflow.
 
 Visit the following resources to learn more:
 

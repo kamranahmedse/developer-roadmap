@@ -1,6 +1,6 @@
 # Codex
 
-Codex is OpenAI's coding agent that you can use inside ChatGPT, in your terminal, or in your code editor. You describe what you want in plain English, and it reads your codebase, writes the code, runs tests, and proposes the changes for you to review.
+Codex is OpenAI's code-focused model, integrated into tools like GitHub Copilot and available through the API. It is strong at translating a clearly defined requirement into working code; describe the specific behavior you want and it generates the implementation. It works best for contained, well-defined tasks rather than open-ended architectural decisions.
 
 Visit the following resources to learn more:
 
