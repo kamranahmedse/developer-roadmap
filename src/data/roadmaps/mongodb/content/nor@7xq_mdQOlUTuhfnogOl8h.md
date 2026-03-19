@@ -4,5 +4,5 @@ The `$nor` operator in MongoDB performs logical NOR operation, selecting documen
 
 Visit the following resources to learn more:
 
-- [@official@\$nor](https://www.mongodb.com/docs/manual/reference/operator/aggregation/nor/)
+- [@official@\$nor](https://www.mongodb.com/docs/manual/reference/operator/query/nor/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
