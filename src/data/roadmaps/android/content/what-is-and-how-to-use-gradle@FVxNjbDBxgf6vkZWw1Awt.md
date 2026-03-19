@@ -4,7 +4,7 @@ Gradle is a powerful build system used in Android development that allows you to
 
 Visit the following resources to learn more:
 
-- [@official@Gradle Build Tool](https://gradle.org/)
+- [@official@Gradle Build Tool](https://docs.gradle.org/current/userguide/userguide.html)
 - [@official@Gradle Documentation](https://docs.gradle.org/current/userguide/getting_started_eng.html)
 - [@video@Gradle Course for Beginners - 55minutes](https://www.youtube.com/watch?v=R6Z-Sxb837I)
 - [@video@Introduction to Gradle for Complete Beginners - 25minutes](https://youtu.be/-dtcEMLNmn0?si=NuIP-3wNpUrxfTxA)
