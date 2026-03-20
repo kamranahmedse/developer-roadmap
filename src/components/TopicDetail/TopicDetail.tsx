@@ -669,7 +669,7 @@ export function TopicDetail(props: TopicDetailProps) {
                           return (
                             <li key={subject}>
                               <TopicDetailLink
-                                url={`/ai/course/search?term=${subject}&src=topic`}
+                                url={`/ai/course/search?term=${encodeURIComponent(subject)}&src=topic`}
                                 type="course"
                                 title={subject}
                                 onClick={(e) => {
@@ -693,7 +693,7 @@ export function TopicDetail(props: TopicDetailProps) {
                           return (
                             <li key={guide}>
                               <TopicDetailLink
-                                url={`/ai/guide/search?term=${guide}&src=topic`}
+                                url={`/ai/guide/search?term=${encodeURIComponent(guide)}&src=topic`}
                                 type="article"
                                 title={guide}
                                 onClick={(e) => {
