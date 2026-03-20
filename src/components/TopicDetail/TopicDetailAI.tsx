@@ -200,7 +200,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                       return;
                     }
                   }}
-                  href={`/ai/course/search?term=${subject}&src=topic`}
+                  href={`/ai/course/search?term=${encodeURIComponent(subject)}&src=topic`}
                   className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
                 >
                   <BookOpenIcon className="size-3.5" />
@@ -226,7 +226,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                       return;
                     }
                   }}
-                  href={`/ai/guide/search?term=${guide}&src=topic`}
+                  href={`/ai/guide/search?term=${encodeURIComponent(guide)}&src=topic`}
                   className="flex items-center gap-1.5 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black"
                 >
                   <FileTextIcon className="size-3.5" />
@@ -251,7 +251,7 @@ export function TopicDetailAI(props: TopicDetailAIProps) {
                     return;
                   }
                 }}
-                href={`/ai/course/search?term=${roadmapTreeMapping?.text}&difficulty=beginner&src=topic`}
+                href={`/ai/course/search?term=${encodeURIComponent(roadmapTreeMapping?.text || '')}&difficulty=beginner&src=topic`}
                 className="flex items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 hover:bg-gray-200 hover:text-black [&>svg:last-child]:hidden"
               >
                 {nodeTextParts.slice(-2).map((text, index) => {
