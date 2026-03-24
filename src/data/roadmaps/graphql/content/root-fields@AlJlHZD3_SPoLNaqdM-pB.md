@@ -4,4 +4,4 @@ Root fields are the top-level fields available to clients in GraphQL queries and
 
 Visit the following resources to learn more:
 
-- [@official@Get Started with Root Feilds](https://graphql.org/learn/execution/#root-fields-resolvers)
+- [@official@Get Started with Root Fields](https://graphql.org/learn/execution/#root-fields-resolvers)
