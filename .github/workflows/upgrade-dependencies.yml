@@ -17,7 +17,7 @@ jobs:
           node-version: 20
 
       - name: Setup pnpm@v9
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4
         with:
           version: 9
 
@@ -28,7 +28,7 @@ jobs:
           pnpm install --lockfile-only
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         with:
           delete-branch: false
           branch: "update-deps"

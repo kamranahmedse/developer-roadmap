@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup pnpm@v9
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4
         with:
           version: 9
           run_install: false
@@ -54,4 +54,7 @@ jobs:
           echo "Running sync script for roadmap: ${{ inputs.roadmap_slug }}"
           echo "Files: ${{ steps.roadmap-files.outputs.files }}"
 
-          npm run sync:repo-to-database -- --files="${{ steps.roadmap-files.outputs.files }}" --secret=${{ secrets.GH_SYNC_SECRET }}
+          npm run sync:repo-to-database -- --files="${{ steps.roadmap-files.outputs.files }}" --secret=${GH_SYNC_SECRET}
+
+        env:
+          GH_SYNC_SECRET: ${{ secrets.GH_SYNC_SECRET }}

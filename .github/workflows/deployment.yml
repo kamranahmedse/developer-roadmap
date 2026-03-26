@@ -14,7 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - uses: pnpm/action-setup@v4.0.0
+      - uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
         with:
           version: 9
 
@@ -23,7 +23,9 @@ jobs:
       # -------------------
       - name: Prepare configuration files
         run: |
-          git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/infra-config.git configuration --depth 1
+          git clone https://${GH_PAT}@github.com/roadmapsh/infra-config.git configuration --depth 1
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
       - name: Copy configuration files
         run: |
           cp configuration/dist/github/developer-roadmap.env .env
@@ -37,22 +39,27 @@ jobs:
 
       - name: Generate Production Build
         run: |
-          git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
+          git clone https://${GH_PAT}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
           npm run generate-renderer
           npm run compress:images
           npm run build
 
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
       # --------------------
       # Deploy to EC2
       # --------------------
-      - uses: webfactory/ssh-agent@v0.7.0
+      - uses: webfactory/ssh-agent@836c84ec59a0e7bc0eabc79988384eb567561ee2 # v0.7.0
         with:
           ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
       - name: Deploy Application to EC2
         run: |
-          rsync -apvz --delete --no-times --exclude "configuration" -e "ssh -o StrictHostKeyChecking=no" -p ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:/var/www/roadmap.sh/
+          rsync -apvz --delete --no-times --exclude "configuration" -e "ssh -o StrictHostKeyChecking=no" -p ./ ${EC2_USERNAME}@${EC2_HOST}:/var/www/roadmap.sh/
+        env:
+          EC2_USERNAME: ${{ secrets.EC2_USERNAME }}
+          EC2_HOST: ${{ secrets.EC2_HOST }}
       - name: Restart PM2
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@8743aa11bfbda97acb45c151ae7a2e0b203f1914 # master
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
@@ -69,7 +76,9 @@ jobs:
           curl -L \
             -X POST \
             -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
+            -H "Authorization: Bearer ${GH_PAT}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/roadmapsh/infra-ansible/actions/workflows/playbook.yml/dispatches \
             -d '{ "ref":"master", "inputs": { "playbook": "roadmap_web.yml", "tags": "cloudfront", "is_verbose": false } }'
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
