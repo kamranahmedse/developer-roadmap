@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup pnpm@v9
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4
         with:
           version: 9
           run_install: false
@@ -31,8 +31,10 @@ jobs:
           echo "Installing Dependencies"
           pnpm install
           echo "Syncing Content to Repo"
-          npm run sync:content-to-repo -- --roadmap-slug=${{ inputs.roadmap_slug }} --secret=${{ secrets.GH_SYNC_SECRET }}
+          npm run sync:content-to-repo -- --roadmap-slug=${{ inputs.roadmap_slug }} --secret=${GH_SYNC_SECRET}
 
+        env:
+          GH_SYNC_SECRET: ${{ secrets.GH_SYNC_SECRET }}
       - name: Check for changes
         id: verify-changed-files
         run: |
@@ -44,7 +46,7 @@ jobs:
       
       - name: Create PR
         if: steps.verify-changed-files.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
         with:
           delete-branch: false
           branch: "chore/sync-content-to-repo-${{ inputs.roadmap_slug }}"
