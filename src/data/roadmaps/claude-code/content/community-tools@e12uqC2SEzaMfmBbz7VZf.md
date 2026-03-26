@@ -6,3 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Conductor](https://docs.conductor.build/)
 - [@article@A Hands-On Review of Conductor, an AI Parallel Runner App](https://thenewstack.io/a-hands-on-review-of-conductor-an-ai-parallel-runner-app/)
+- [@opensource@Factory Floor](https://github.com/alltuner/factoryfloor)
+- [@article@Factory Floor: Parallel Development with Git Worktrees and Claude Code](https://factory-floor.com)
