@@ -5,9 +5,21 @@ import { LinkedInButton } from './LinkedInButton';
 import { EmailLoginForm } from './EmailLoginForm';
 import { EmailSignupForm } from './EmailSignupForm';
 
+/**
+ * AuthenticationForm component for handling user login/signup flows
+ * @param type - Specifies whether to render login or signup form
+ * @returns JSX element for authentication form
+ */
+
 type AuthenticationFormProps = {
   type?: 'login' | 'signup';
 };
+
+/**
+ * AuthenticationForm component for handling user login/signup flows
+ * @param type - Specifies whether to render login or signup form
+ * @returns JSX element for authentication form
+ */
 
 export function AuthenticationForm(props: AuthenticationFormProps) {
   const { type = 'login' } = props;
