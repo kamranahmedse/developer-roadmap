@@ -33,12 +33,12 @@ describe('AuthenticationForm', () => {
     expect(getByText('OR')).toBeInTheDocument();
   });
 
-  test('passes isDisabled and setIsDisabled props to child components', () => {
-    const { getByRole } = render(<AuthenticationForm />);
+  test('disables social auth buttons when isDisabled is true', () => {
+    const { getByRole } = render(<AuthenticationForm isDisabled />);
     
-    // Verify that the social provider buttons are present
-    expect(getByRole('button', { name: /github/i })).toBeInTheDocument();
-    expect(getByRole('button', { name: /google/i })).toBeInTheDocument();
-    expect(getByRole('button', { name: /linkedin/i })).toBeInTheDocument();
+    // Verify that the social provider buttons are disabled
+    expect(getByRole('button', { name: /github/i })).toBeDisabled();
+    expect(getByRole('button', { name: /google/i })).toBeDisabled();
+    expect(getByRole('button', { name: /linkedin/i })).toBeDisabled();
   });
 });
