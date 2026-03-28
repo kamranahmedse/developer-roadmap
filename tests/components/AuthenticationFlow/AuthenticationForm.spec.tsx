@@ -4,23 +4,27 @@ import { AuthenticationForm } from '@/components/AuthenticationFlow/Authenticati
 
 describe('AuthenticationForm', () => {
   test('renders login form by default', () => {
-    const { getByTestId } = render(<AuthenticationForm />);
+    const { getByText, getByRole } = render(<AuthenticationForm />);
     
-    // Check that the login form components are rendered
-    expect(getByTestId('email-login-form')).toBeInTheDocument();
-    expect(getByTestId('github-button')).toBeInTheDocument();
-    expect(getByTestId('google-button')).toBeInTheDocument();
-    expect(getByTestId('linkedin-button')).toBeInTheDocument();
+    // Check that the login form content is rendered
+    expect(getByText(/log in/i)).toBeInTheDocument();
+
+    // Check that the social login buttons are rendered
+    expect(getByRole('button', { name: /github/i })).toBeInTheDocument();
+    expect(getByRole('button', { name: /google/i })).toBeInTheDocument();
+    expect(getByRole('button', { name: /linkedin/i })).toBeInTheDocument();
   });
 
   test('renders signup form when type is signup', () => {
-    const { getByTestId } = render(<AuthenticationForm type="signup" />);
+    const { getByText, getByRole } = render(<AuthenticationForm type="signup" />);
     
-    // Check that the signup form components are rendered
-    expect(getByTestId('email-signup-form')).toBeInTheDocument();
-    expect(getByTestId('github-button')).toBeInTheDocument();
-    expect(getByTestId('google-button')).toBeInTheDocument();
-    expect(getByTestId('linkedin-button')).toBeInTheDocument();
+    // Check that the signup form content is rendered
+    expect(getByText(/sign up/i)).toBeInTheDocument();
+
+    // Check that the social signup buttons are rendered
+    expect(getByRole('button', { name: /github/i })).toBeInTheDocument();
+    expect(getByRole('button', { name: /google/i })).toBeInTheDocument();
+    expect(getByRole('button', { name: /linkedin/i })).toBeInTheDocument();
   });
 
   test('renders OR separator', () => {
@@ -30,12 +34,11 @@ describe('AuthenticationForm', () => {
   });
 
   test('passes isDisabled and setIsDisabled props to child components', () => {
-    const { getByTestId } = render(<AuthenticationForm />);
+    const { getByRole } = render(<AuthenticationForm />);
     
-    // Verify that the child components receive the expected props
-    expect(getByTestId('github-button')).toHaveAttribute('data-testid', 'github-button');
-    expect(getByTestId('google-button')).toHaveAttribute('data-testid', 'google-button');
-    expect(getByTestId('linkedin-button')).toHaveAttribute('data-testid', 'linkedin-button');
-    expect(getByTestId('email-login-form')).toHaveAttribute('data-testid', 'email-login-form');
+    // Verify that the social provider buttons are present
+    expect(getByRole('button', { name: /github/i })).toBeInTheDocument();
+    expect(getByRole('button', { name: /google/i })).toBeInTheDocument();
+    expect(getByRole('button', { name: /linkedin/i })).toBeInTheDocument();
   });
 });
