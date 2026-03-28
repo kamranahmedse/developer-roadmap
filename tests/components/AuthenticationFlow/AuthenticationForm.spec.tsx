@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { AuthenticationForm } from '@/components/AuthenticationFlow/AuthenticationForm';
+import { AuthenticationForm } from '../../../components/AuthenticationFlow/AuthenticationForm';
 
 describe('AuthenticationForm', () => {
   test('renders login form by default', () => {
