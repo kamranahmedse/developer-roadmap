@@ -597,6 +597,12 @@
           "justifyContent": "flex-start",
           "textAlign": "center"
         },
+        "resources": [
+       {
+          "title": "MDN HTML Basics",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML"
+       }
+       ],
         "oldId": "U0Pn4yFrx6D4CwpUolzOm"
       },
       "zIndex": 999,
@@ -6951,6 +6957,6 @@
       "selected": false,
       "id": "reactflow__edge-PoM77O2OtxPELxfrW1wtly2-raoa-75p_DyBAycvy3yVvz1",
       "focusable": true
-    }
+    } 
   ]
 }
