@@ -1,5 +1,6 @@
 import { useCallback, useRef, useState } from 'react';
-import { removeAuthToken } from '../lib/jwt';
+import Cookies from 'js-cookie';
+import { removeAuthToken, TOKEN_COOKIE_NAME } from '../lib/jwt';
 import { readChatStream } from '../lib/chat';
 import { markdownToHtmlWithHighlighting } from '../lib/markdown';
 import { flushSync } from 'react-dom';
@@ -47,6 +48,7 @@ export function useChat(options: UseChatOptions) {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            Authorization: `Bearer ${Cookies.get(TOKEN_COOKIE_NAME)}`,
           },
           body: JSON.stringify({ messages, ...data }),
           signal: abortControllerRef.current?.signal,
