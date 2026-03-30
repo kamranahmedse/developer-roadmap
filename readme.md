@@ -72,7 +72,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [Node.js Roadmap](https://roadmap.sh/nodejs)
 - [PHP Roadmap](https://roadmap.sh/php)
-- [Wordpress Roadmap](https://roadmap.sh/wordpress)
+- [WordPress Roadmap](https://roadmap.sh/wordpress)
 - [Laravel Roadmap](https://roadmap.sh/laravel)
 - [GraphQL Roadmap](https://roadmap.sh/graphql)
 - [Android Roadmap](https://roadmap.sh/android)
