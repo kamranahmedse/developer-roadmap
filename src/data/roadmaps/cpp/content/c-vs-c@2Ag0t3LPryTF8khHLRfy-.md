@@ -12,6 +12,8 @@ Syntax and Semantics
 *   Does not support objects or classes.
 *   Memory management is manual, using functions like `malloc` and `free`.
 
+Here's an example of manual memory management in C:
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,7 +30,7 @@ int main() {
     
     if (p != NULL) {
         // 2. Initialize: You MUST do this manually
-        strcpy(p->name, "Hero");
+        strcpy(p->name, "AdrianMtzTrev");
         p->score = 0;
         
         printf("Player %s joined with score %d\n", p->name, p->score);
@@ -46,7 +48,9 @@ int main() {
 *   Supports both functions and classes.
 *   Incorporates different programming paradigms.
 *   Memory management can be manual (like C) or rely on constructors/destructors and smart pointers.
- 
+
+Here's the equivalent example using C++ classes:
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -69,7 +73,7 @@ public:
 
 int main() {
     // 1. Create: Allocates AND initializes in one step
-    Player* p = new Player("Hero");
+    Player* p = new Player("Elizabeth");
 
     std::cout << "Current score: " << p->score << std::endl;
 
@@ -85,7 +89,7 @@ With **smart pointers**
 ```cpp
 int main() {
     // The "Modern" C++ way - no 'delete' required!
-    auto p = std::make_unique<Player>("Hero");
+    auto p = std::make_unique<Player>("Ricardo");
     std::cout << "Current score: " << p->score << std::endl;
 } // p is automatically destroyed here
 ```
