@@ -8,5 +8,6 @@ These tools send your logs from your running application into a single location.
 
 Visit the following resources to learn more:
 
+- [@article@APM Logs: How to Get Started for Faster Debugging](https://last9.io/blog/apm-logs-for-faster-debugging/)
 - [@article@Debugging using APM](https://stackify.com/node-js-debugging-tips/)
 - [@feed@Explore top posts about APM](https://app.daily.dev/tags/apm?ref=roadmapsh)
