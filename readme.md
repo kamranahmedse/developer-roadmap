@@ -148,6 +148,7 @@ Run the development server with:
 ```bash
 pnpm dev
 ```
+> Make sure to rename `.env.example` to `.env` before running the app.
 
 ## Contribution
 
