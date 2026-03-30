@@ -1,8 +1,8 @@
-# Bug Magnet
+# BugBug
 
-Exploratory Testing is all about exploring the software by navigating random paths and discovering what it can do and what it can’t. In exploratory testing we try to verify how well system reacts to special/invalid inputs and edge cases. Bug Magnet will help you configure Data validations and variety input scenarios likely to cause issues.
+BugBug is a browser extension designed to help with test automation, particularly for web applications. It allows users to record their interactions with a website and then generate test scripts from those recordings, aiming to simplify the process of creating automated UI tests. It often emphasizes ease of use and integration with existing testing frameworks.
 
 Visit the following resources to learn more:
 
-- [@article@Bug Magnet Website](https://bugmagnet.org/)
-- [@article@Bug Magnet: Chrome Extension for Exploratory Testing](http://www.testingjournals.com/bug-magnet-extension-exploratory-testing/)
+- [@official@bugbug](https://bugbug.io/v2/)
+- [@video@BugBug.io Tutorial – The Best No-Code Selenium IDE Alternative for Browser Test Automation](https://www.youtube.com/watch?v=p09L8bD_Kh0)
