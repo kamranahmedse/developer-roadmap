@@ -12,34 +12,33 @@ Syntax and Semantics
 *   Does not support objects or classes.
 *   Memory management is manual, using functions like `malloc` and `free`.
 
- ```c
-    #include <stdio.h>
-    #include <stdlib.h>
-    #include <string.h>
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-    typedef struct {
-        char name[20];
-        int score;
-    } Player;
+typedef struct {
+    char name[20];
+    int score;
+} Player;
 
-    int main() {
-        // 1. Allocate: malloc needs the exact byte size
-        Player* p = (Player*)malloc(sizeof(Player));
+int main() {
+    // 1. Allocate: malloc needs the exact byte size
+    Player* p = (Player*)malloc(sizeof(Player));
+    
+    if (p != NULL) {
+        // 2. Initialize: You MUST do this manually
+        strcpy(p->name, "Hero");
+        p->score = 0;
         
-        if (p != NULL) {
-            // 2. Initialize: You MUST do this manually
-            strcpy(p->name, "Hero");
-            p->score = 0;
-            
-            printf("Player %s joined with score %d\n", p->name, p->score);
-            
-            // 3. Free: Just drops the memory
-            free(p);
-        }
-        return 0;
+        printf("Player %s joined with score %d\n", p->name, p->score);
+        
+        // 3. Free: Just drops the memory
+        free(p);
     }
-
- ```
+    return 0;
+}
+```
 
 ### C++
 
@@ -48,46 +47,48 @@ Syntax and Semantics
 *   Incorporates different programming paradigms.
 *   Memory management can be manual (like C) or rely on constructors/destructors and smart pointers.
  
- ```cpp
-    #include <iostream>
-    #include <string>
+```cpp
+#include <iostream>
+#include <string>
 
-    class Player {
-    public:
-        std::string name;
-        int score;
+class Player {
+public:
+    std::string name;
+    int score;
 
-        // Constructor: Runs automatically during 'new'
-        Player(std::string n) : name(n), score(0) {
-            std::cout << name << " enters the game!\n";
-        }
-
-        // Destructor: Runs automatically during 'delete'
-        ~Player() {
-            std::cout << name << " has left the game.\n";
-        }
-    };
-
-    int main() {
-        // 1. Create: Allocates AND initializes in one step
-        Player* p = new Player("Hero");
-
-        std::cout << "Current score: " << p->score << std::endl;
-
-        // 2. Destroy: Runs the destructor first, then releases memory
-        delete p; 
-
-        return 0;
+    // Constructor: Runs automatically during 'new'
+    Player(std::string n) : name(n), score(0) {
+        std::cout << name << " enters the game!\n";
     }
- ```   
+
+    // Destructor: Runs automatically during 'delete'
+    ~Player() {
+        std::cout << name << " has left the game.\n";
+    }
+};
+
+int main() {
+    // 1. Create: Allocates AND initializes in one step
+    Player* p = new Player("Hero");
+
+    std::cout << "Current score: " << p->score << std::endl;
+
+    // 2. Destroy: Runs the destructor first, then releases memory
+    delete p; 
+
+    return 0;
+}
+```
+
 With **smart pointers**
- ```cpp
-    int main() {
-        // The "Modern" C++ way - no 'delete' required!
-        auto p = std::make_unique<Player>("Hero");
-        std::cout << "Current score: " << p->score << std::endl;
-    } // p is automatically destroyed here
- ```
+
+```cpp
+int main() {
+    // The "Modern" C++ way - no 'delete' required!
+    auto p = std::make_unique<Player>("Hero");
+    std::cout << "Current score: " << p->score << std::endl;
+} // p is automatically destroyed here
+```
 
 
 Code Reusability and Modularity
