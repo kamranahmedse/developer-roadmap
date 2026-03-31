@@ -1,19 +1,6 @@
-# Code Editors
+# Code Editors / IDEs
 
-Code editors and IDEs are programs specifically designed for editing, managing and writing source code. They offer a wide range of features that make the development process easier and faster. Here's a brief introduction to some of the most popular code editors and IDEs for C++:
-
-*   **Visual Studio**: Visual Studio is an Integrated Development Environment (IDE) for Windows, developed by Microsoft. It includes its own integrated compiler known as Microsoft Visual C++ (MSVC).
-    
-*   **Visual Studio Code (VSCode)**: Visual Studio Code is a popular, free, open-source, and lightweight code editor developed by Microsoft. It offers an extensive library of extensions that enhance functionality for C++ development.
-    
-*   **Sublime Text**: Sublime Text is a cross-platform text editor that is quite popular among developers due to its speed and minimalist design. It supports C++ with the help of plugins and has a variety of themes and packages available for customization.
-    
-*   **CLion**: CLion is an Integrated Development Environment (IDE) developed by JetBrains specifically for C and C++ developers. It provides advanced features like code completion, refactoring support, debugging, and more. It's worth noting that CLion is a commercial IDE, but there is community version available.
-    
-
-These are just a few examples, and there are many other code editors available, including Atom, Notepad++, and Geany. They all have their features and may suit different developers' needs. Finding the right code editor is often a matter of personal preference and workflow.
-
-To work with C++ in your chosen code editor, you often need to install some additional tools and add-ons, such as compilers, linters, and debugger support. Make sure to follow the instructions provided in the editor's documentation to set up C++ correctly.
+Choosing the right code editor or IDE is a crucial first step for any C++ developer. These tools provide a platform for writing, editing, and managing your code, often including features like syntax highlighting, code completion, debugging tools, and build automation. Popular options range from lightweight and customizable editors like Visual Studio Code and Sublime Text, to more comprehensive IDEs like Visual Studio and CLion, each with its own strengths and features. Selecting the best one for you often comes down to personal preference and your specific development needs.
 
 Visit the following resources to learn more:
 

@@ -1,17 +1,6 @@
 # unique_ptr
 
-One of C++'s main features includes variants of the normal _raw_ C pointers. One of these is the `unique_ptr`, which is a type of smart pointer that claims exclusive ownership over a value.
-
-    #include <memory>
-    #include <iostream>
-    
-    int main() {
-        std::unique_ptr<int> uptr = std::make_unique<int>(10);
-        std::cout << *uptr << std::endl;
-    
-        std::unique_ptr<int> uptr2 = uptr; // compile error
-        std::unique_ptr<int> uptr2 = std::move(uptr); // transferring ownership
-    }
+`unique_ptr` is a smart pointer in C++ that provides exclusive ownership of a dynamically allocated object. It ensures that only one `unique_ptr` can point to a given object at any time, preventing memory leaks by automatically deleting the managed object when the `unique_ptr` goes out of scope or is explicitly reset. Ownership can be transferred to another `unique_ptr` using `std::move`, but copying is disallowed to enforce the single-ownership principle.
 
 Visit the following resources to learn more:
 

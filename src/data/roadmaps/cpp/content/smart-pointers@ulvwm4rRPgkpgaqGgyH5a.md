@@ -1,1 +1,3 @@
 # Smart Pointers
+
+Smart pointers are classes that behave like regular pointers but provide automatic memory management. They help prevent memory leaks by automatically deallocating the memory they point to when they are no longer needed. This is achieved through techniques like reference counting and RAII (Resource Acquisition Is Initialization). Essentially, they encapsulate a raw pointer and ensure that the memory it points to is freed when the smart pointer goes out of scope or is reset.
