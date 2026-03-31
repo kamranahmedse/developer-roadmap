@@ -1,10 +1,8 @@
-# Data Types
+# Naming Conventions
 
-Data types are classifications that specify which type of value a variable can hold and what operations can be performed on it. They define the kind of data, such as numbers, text, or boolean values, that can be stored and manipulated within a program. Understanding data types is fundamental to writing correct and efficient code, as it allows the program to handle different kinds of information appropriately.
+Naming conventions are a set of rules or guidelines for choosing names for variables, methods, classes, and other entities in a programming language. These conventions promote code readability, maintainability, and consistency across a project. Following a standard naming scheme helps developers understand the purpose and scope of different elements within the code, making it easier to collaborate and debug.
 
 Visit the following resources to learn more:
 
-- [@article@Basic Data Types](https://www.theodinproject.com/lessons/ruby-basic-data-types)
-- [@article@Understanding Data Types in Ruby](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-ruby)
-- [@article@Ruby DataTypes: Explore the Fundamentals](https://www.theknowledgeacademy.com/blog/ruby-data-types/)
-- [@video@Data Types | Ruby | Tutorial 7](https://www.youtube.com/watch?v=rjLB_bD3SLU)
+- [@article@Ruby Naming Convention](https://namingconvention.org/ruby/)
+- [@article@Naming conventions in Ruby language](https://dhanusir.com/ruby/section-two/naming-conventions/)
