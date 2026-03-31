@@ -1,1 +1,3 @@
-# undefined
+# PyTorch C++
+
+PyTorch C++ provides a front-end for the PyTorch machine learning framework, allowing you to build and deploy models using C++ instead of Python. This enables you to leverage the performance and control of C++ for computationally intensive tasks, especially in production environments where low latency and resource efficiency are critical. It involves using a C++ API to define and execute PyTorch operations.

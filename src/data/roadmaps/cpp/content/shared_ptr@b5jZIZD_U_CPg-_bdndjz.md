@@ -1,1 +1,3 @@
-# undefined
+# shared_ptr
+
+`shared_ptr` is a smart pointer in C++ that manages dynamically allocated memory. It enables multiple pointers to safely own and share the same object. When the last `shared_ptr` pointing to an object goes out of scope, the managed object is automatically deleted, preventing memory leaks. It achieves this by maintaining a reference count that tracks the number of `shared_ptr` instances pointing to the same memory location.

@@ -1,1 +1,3 @@
-# undefined
+# POCO
+
+POCO (Portable Components) is a C++ class library that simplifies network-centric, portable applications. It offers a comprehensive set of tools and components for tasks such as networking, data processing, and basic utilities. POCO focuses on being modular and cross-platform.

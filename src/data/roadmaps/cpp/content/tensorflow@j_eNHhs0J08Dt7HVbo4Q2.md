@@ -1,1 +1,3 @@
-# undefined
+# Tensorflow
+
+TensorFlow is an open-source software library developed by Google, primarily used for numerical computation and large-scale machine learning. It allows developers to create and train machine learning models using a variety of tools, libraries, and community resources. TensorFlow focuses on deep learning tasks like image recognition, natural language processing, and time series analysis.
