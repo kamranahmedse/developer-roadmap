@@ -8,6 +8,6 @@ Visit the following resources to learn more:
 - [@official@Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html)
 - [@opensource@rails](https://github.com/rails/rails)
 - [@article@Ruby vs Ruby on Rails: What’s the Difference?](https://kinsta.com/blog/ruby-vs-ruby-on-rails/)
+- [@article@Visit the Dedicated Ruby on Rails Roadmap](https://roadmap.sh/ruby-on-rails)
 - [@video@Learn Ruby on Rails - Full Course](https://www.youtube.com/watch?v=fmyvWz5TUWg)
 - [@video@Ruby on Rails in 100 Seconds](https://www.youtube.com/watch?v=2DvrRadXwWY)
-- [@article@Visit the Dedicated Ruby on Rails Roadmap](https://roadmap.sh/ruby-on-rails)
