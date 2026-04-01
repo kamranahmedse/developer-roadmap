@@ -4,4 +4,5 @@ Type casting in C++ involves converting a variable's data type to another. C++ p
 
 Visit the following resources to learn more:
 
+- [@article@Type Casting](https://www.w3schools.com/cpp//cpp_type_casting.asp)
 - [@video@Casting in C++](https://youtu.be/pWZS1MtxI-A)

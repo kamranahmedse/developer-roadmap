@@ -5,3 +5,5 @@ In C++, a reference is an alias for an existing variable. It provides an alterna
 Visit the following resources to learn more:
 
 - [@article@References](https://en.cppreference.com/w/cpp/language/reference)
+- [@article@C++ References](https://www.w3schools.com/cpp/cpp_references.asp)
+- [@video@REFERENCES in C++](https://www.youtube.com/watch?v=IzoFn3dfsPA)

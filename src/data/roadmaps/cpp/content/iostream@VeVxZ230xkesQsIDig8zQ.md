@@ -1,3 +1,3 @@
 # iostream
 
-`iostream` is a fundamental header in the C++ Standard Library that handles input and output (I/O) operations. It provides classes like `istream` for input, `ostream` for output, and `iostream` for combined I/O.  `cin`, `cout`, `cerr`, and `clog` are predefined objects within `iostream` for standard input, standard output, standard error output, and buffered logging, respectively. Use the `#include <iostream>` directive to incorporate this functionality into your programs.
+`iostream` is a fundamental header in the C++ Standard Library that handles input and output (I/O) operations. It provides classes like `istream` for input, `ostream` for output, and `iostream` for combined I/O. `cin`, `cout`, `cerr`, and `clog` are predefined objects within `iostream` for standard input, standard output, standard error output, and buffered logging, respectively. Use the `#include <iostream>` directive to incorporate this functionality into your programs.
