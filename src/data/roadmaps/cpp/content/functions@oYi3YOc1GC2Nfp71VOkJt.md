@@ -4,4 +4,6 @@ Functions in C++ are self-contained blocks of code designed to perform specific 
 
 Visit the following resources to learn more:
 
+- [@article@C++ Functions](https://www.w3schools.com/cpp/cpp_functions.asp)
 - [@article@introduction to functions in c++](https://www.learncpp.com/cpp-tutorial/introduction-to-functions/)
+- [@video@Learn C++ With Me #20 - Functions](https://www.youtube.com/watch?v=C83tPpvxIJA)

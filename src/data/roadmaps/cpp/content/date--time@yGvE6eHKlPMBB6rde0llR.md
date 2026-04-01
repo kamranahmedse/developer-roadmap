@@ -1,3 +1,3 @@
 # Date / Time
 
-The C++ `chrono` library, part of the Standard Template Library (STL), offers tools for handling dates and times.  It allows you to represent time spans as `durations` (e.g., seconds, minutes, hours), specific moments as `time_points` based on clocks, and access the current time using different `clock` types like `system_clock`, `steady_clock`, and `high_resolution_clock`.  You can also convert `time_points` to calendar time for human-readable formats.
+The C++ `chrono` library, part of the Standard Template Library (STL), offers tools for handling dates and times. It allows you to represent time spans as `durations` (e.g., seconds, minutes, hours), specific moments as `time_points` based on clocks, and access the current time using different `clock` types like `system_clock`, `steady_clock`, and `high_resolution_clock`. You can also convert `time_points` to calendar time for human-readable formats.
