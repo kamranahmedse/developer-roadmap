@@ -37,6 +37,8 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [DevOps Roadmap](https://roadmap.sh/devops) / [DevOps Beginner Roadmap](https://roadmap.sh/devops?r=devops-beginner)
 - [DevSecOps Roadmap](https://roadmap.sh/devsecops)
 - [Full Stack Roadmap](https://roadmap.sh/full-stack)
+- [Claude Code Roadmap](https://roadmap.sh/claude-code)
+- [Vibe Coding Roadmap](https://roadmap.sh/vibe-coding)
 - [HTML Roadmap](https://roadmap.sh/html)
 - [CSS Roadmap](https://roadmap.sh/css)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
@@ -103,6 +105,10 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [AI Red Teaming Roadmap](https://roadmap.sh/ai-red-teaming)
 - [AI Agents Roadmap](https://roadmap.sh/ai-agents)
 - [Bash/Shell Roadmap](https://roadmap.sh/shell-bash)
+- [Ruby Roadmap](https://roadmap.sh/ruby)
+- [Ruby on Rails Roadmap](https://roadmap.sh/ruby-on-rails)
+- [Scala Roadmap](https://roadmap.sh/scala)
+
 
 There are also interactive best practices:
 
