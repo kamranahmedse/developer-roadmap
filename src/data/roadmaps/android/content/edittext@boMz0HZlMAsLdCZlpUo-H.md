@@ -1,7 +1,9 @@
-# EditText
+# TextField
 
-`EditText` is a fundamental UI element in Android Studio, used for allowing users to input and edit text within an application. It is a subclass of `TextView` that provides additional features to handle user input.
+A TextField allows users to input and edit text on the screen. It provides a visual component, such as a box or line, where users can type in characters, typically using an on-screen keyboard or physical keyboard. TextFields are fundamental for collecting user input in forms, search bars, messaging apps, and various other interactive elements.
 
 Visit the following resources to learn more:
 
-- [@official@Android developers: EditText](https://developer.android.com/reference/android/widget/EditText)
+- [@official@TextField](https://developer.android.com/reference/kotlin/androidx/compose/material3/TextField.composable#TextField(androidx.compose.foundation.text.input.TextFieldState,androidx.compose.ui.Modifier,kotlin.Boolean,kotlin.Boolean,androidx.compose.ui.text.TextStyle,androidx.compose.material3.TextFieldLabelPosition,kotlin.Function1,kotlin.Function0,kotlin.Function0,kotlin.Function0,kotlin.Function0,kotlin.Function0,kotlin.Function0,kotlin.Boolean,androidx.compose.foundation.text.input.InputTransformation,androidx.compose.foundation.text.input.OutputTransformation,androidx.compose.foundation.text.KeyboardOptions,androidx.compose.foundation.text.input.KeyboardActionHandler,androidx.compose.foundation.text.input.TextFieldLineLimits,kotlin.Function2,androidx.compose.foundation.ScrollState,androidx.compose.ui.graphics.Shape,androidx.compose.material3.TextFieldColors,androidx.compose.foundation.layout.PaddingValues,androidx.compose.foundation.interaction.MutableInteractionSource))
+- [@official@Configure text fields  |  Jetpack Compose  |  Android Developers](https://developer.android.com/develop/ui/compose/text/user-input?textfield=state-based)
+- [@article@Comprehensive Guide to TextFields in Jetpack Compose](https://medium.com/@ramadan123sayed/comprehensive-guide-to-textfields-in-jetpack-compose-f009c4868c54)

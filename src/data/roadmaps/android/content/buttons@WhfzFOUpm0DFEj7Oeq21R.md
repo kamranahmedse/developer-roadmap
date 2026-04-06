@@ -1,10 +1,8 @@
-# Buttons
+# Button
 
-A `button` consists of text or an icon, or both, that communicates what action occurs when the user taps it.
-
-Buttons are UI widgets that allow users to interact with an application by tapping on them. A button typically consists of text, an icon, or a combination of both, and communicates what action will occur when the user taps it.
+A button is a fundamental UI element that triggers an action when tapped or clicked by the user. It allows users to initiate specific tasks within an application, such as submitting a form, navigating to another screen, or executing a function. Buttons typically consist of text or an icon that clearly indicates their purpose.
 
 Visit the following resources to learn more:
 
-- [@official@Android Developers: Button](https://developer.android.com/develop/ui/views/components/button)
-- [@official@Create a Button - Android](https://developer.android.com/quick-guides/content/create-button)
+- [@official@Button  |  Jetpack Compose  |  Android Developers](https://developer.android.com/develop/ui/compose/components/button)
+- [@article@A Comprehensive Guide to Buttons and Actions in Jetpack Compose | by Ramadan Sayed | Medium](https://medium.com/@ramadan123sayed/a-comprehensive-guide-to-buttons-and-actions-in-jetpack-compose-50968cf030f7)

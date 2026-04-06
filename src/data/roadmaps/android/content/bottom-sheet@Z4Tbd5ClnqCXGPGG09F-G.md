@@ -1,11 +1,8 @@
 # BottomSheet
 
-`Bottom sheets` are surfaces containing supplementary content that are anchored to the bottom of the screen.
-
-There are several attributes that can be used to adjust the behavior of both standard and modal bottom sheets.
-
-Behavior attributes can be applied to standard bottom sheets in xml by setting them on a child View set to `app:layout_behavior` or programmatically.
+A BottomSheet is a UI pattern that presents supplementary content from the bottom edge of the screen. It typically appears as a sheet that slides up to reveal more information or options related to the current screen or selected item. Users can often dismiss it by swiping down or tapping outside of it.
 
 Visit the following resources to learn more:
 
-- [@official@Android developers: Bottom Sheets](https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetDialog)
+- [@official@Bottom sheets  |  Jetpack Compose  |  Android Developers](https://developer.android.com/develop/ui/compose/components/bottom-sheets)
+- [@video@Full Guide to Bottom Sheets - UX With Material3](https://www.youtube.com/watch?v=VxgWUdOKgtI)

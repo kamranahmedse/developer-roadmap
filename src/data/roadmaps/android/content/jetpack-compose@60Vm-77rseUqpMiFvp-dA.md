@@ -5,4 +5,5 @@
 Visit the following resources to learn more:
 
 - [@official@Jetpack Compose](https://developer.android.com/jetpack/compose)
+- [@official@Compose layout basics](https://developer.android.com/develop/ui/compose/layouts/basics)
 - [@video@Jetpack Compose Crash Course](https://www.youtube.com/watch?v=6_wK_Ud8--0)
