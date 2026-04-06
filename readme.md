@@ -125,6 +125,7 @@ There are also interactive best practices:
 - [React Questions](https://roadmap.sh/questions/react)
 - [Backend Questions](https://roadmap.sh/questions/backend)
 - [Frontend Questions](https://roadmap.sh/questions/frontend)
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for developer workflow orchestration, automated code review, and multi-agent coordination. MIT licensed.
 
 ![](https://i.imgur.com/waxVImv.png)
 
