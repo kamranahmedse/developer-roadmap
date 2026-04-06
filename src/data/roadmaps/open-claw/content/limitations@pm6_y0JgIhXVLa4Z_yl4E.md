@@ -1,0 +1,3 @@
+# Limitations
+
+Running Open Claw on a VPS or cloud server solves the uptime problem of a local machine but introduces its own constraints. You are paying a recurring monthly fee for the server, which adds up over time, especially if you need more resources to handle heavier workloads. Performance is also constrained by the size of the VPS you choose, and cheaper tiers may struggle with memory-intensive tasks or multiple simultaneous agent sessions. Finally, you are dependent on your cloud provider's availability, so any outages on their end will take your agent offline until they are resolved.
