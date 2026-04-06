@@ -4,6 +4,7 @@
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit the Dedicated Kotlin Roadmap](https://roadmap.sh/kotlin)
 - [@official@Kotlin](https://kotlinlang.org/)
 - [@official@Kotlin Documentation](https://kotlinlang.org/docs/home.html)
 - [@video@Learn Kotlin Programming for Beginners - Free Code Camp](https://youtu.be/EExSSotojVI?si=4VPW8ZHa2UMX0HH1)

@@ -1,6 +1,6 @@
 # Column and Row in Compose
 
-Column and Row are fundamental layout composables in Jetpack Compose used to arrange items vertically (Column) or horizontally (Row).  They provide a simple and intuitive way to organize UI elements by stacking them in a single direction, offering control over how items are aligned and spaced within the layout. This makes creating responsive and visually appealing user interfaces much easier.
+Column and Row are fundamental layout composables in Jetpack Compose used to arrange items vertically (Column) or horizontally (Row). They provide a simple and intuitive way to organize UI elements by stacking them in a single direction, offering control over how items are aligned and spaced within the layout. This makes creating responsive and visually appealing user interfaces much easier.
 
 Visit the following resources to learn more:
 
