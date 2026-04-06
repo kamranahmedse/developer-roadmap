@@ -1,9 +1,8 @@
-# RelativeLayout
+# Column and Row in Compose
 
-A **RelativeLayout** in Android is a type of ViewGroup that allows you to position child views relative to each other or relative to the parent layout. It's a flexible layout where you can arrange the child views in relation to one another based on certain rules, making it suitable for creating complex UI designs.
-
-**RelativeLayout** was commonly used in earlier Android development, but with the introduction of `ConstraintLayout`, it's less frequently used in modern apps.
+Column and Row are fundamental layout composables in Jetpack Compose used to arrange items vertically (Column) or horizontally (Row).  They provide a simple and intuitive way to organize UI elements by stacking them in a single direction, offering control over how items are aligned and spaced within the layout. This makes creating responsive and visually appealing user interfaces much easier.
 
 Visit the following resources to learn more:
 
-- [@official@Relative Layout](https://developer.android.com/develop/ui/views/layout/relative)
+- [@official@Column](https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/Column.composable#Column(androidx.compose.ui.Modifier,androidx.compose.foundation.layout.Arrangement.Vertical,androidx.compose.ui.Alignment.Horizontal,kotlin.Function1)(androidx.compose.ui.Modifier,androidx.compose.foundation.layout.Arrangement.Vertical,androidx.compose.ui.Alignment.Horizontal,kotlin.Function1))
+- [@official@Row](https://developer.android.com/reference/kotlin/androidx/compose/foundation/layout/Row.composable#Row(androidx.compose.ui.Modifier,androidx.compose.foundation.layout.Arrangement.Horizontal,androidx.compose.ui.Alignment.Vertical,kotlin.Function1)(androidx.compose.ui.Modifier,androidx.compose.foundation.layout.Arrangement.Horizontal,androidx.compose.ui.Alignment.Vertical,kotlin.Function1))

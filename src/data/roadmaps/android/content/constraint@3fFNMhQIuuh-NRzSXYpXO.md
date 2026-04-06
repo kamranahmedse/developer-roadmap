@@ -1,6 +1,6 @@
 # ConstraintLayout
 
-Lets you create large, complex layouts with a flat view hierarchy—no nested view groups. It's similar to `RelativeLayout` in that all views are laid out according to relationships between sibling views and the parent layout, but it's more flexible than RelativeLayout and easier to use. Its available on xml and jetpack compose.
+ConstraintLayout is a layout manager in Android that gives you flexible control over the positioning and sizing of views within your user interface. It allows you to create complex layouts without nesting multiple view groups, which can improve performance. Views are positioned by defining constraints relative to other views or the parent layout.
 
 Visit the following resources to learn more:
 
