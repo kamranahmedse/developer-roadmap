@@ -1,6 +1,6 @@
 # MEMORY.md
 
-MEMORY.md is a persistent file where the agent stores important facts it has learned over time. It is regularly updated so the agent can recall relevant information in future conversations.
+[MEMORY.md](http://MEMORY.md) is a persistent file where the agent stores important facts it has learned over time. It is regularly updated so the agent can recall relevant information in future conversations.
 
 Visit the following resources to learn more:
 

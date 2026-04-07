@@ -1,6 +1,6 @@
 # SOUL.md
 
-SOUL.md is the file where you define the agent's personality, tone, and core behavioral guidelines. Think of it as the agent's character sheet. It shapes how it communicates and makes decisions across all conversations.
+[SOUL.md](http://SOUL.md) is the file where you define the agent's personality, tone, and core behavioral guidelines. Think of it as the agent's character sheet. It shapes how it communicates and makes decisions across all conversations.
 
 Visit the following resources to learn more:
 
