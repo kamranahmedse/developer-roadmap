@@ -1,3 +1,5 @@
+# undefined
+
 Security Risks (Plugins)
 
 Plugins run at a deeper level than skills and can have significant access to your system. Open Claw installs plugin dependencies with `--ignore-scripts` to reduce risk, but you should still only install plugins from trusted sources.
