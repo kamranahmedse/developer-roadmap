@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@What's new in Claude 4.6 - Claude API Docs](https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-6)
 - [@video@Introducing Claude Opus 4.6](https://www.youtube.com/watch?v=dPn3GBI8lII)
 - [@video@Claude Opus 4.6: The Biggest AI Jump I've Covered--It's Not Close. (Here's What You Need to Know)](https://www.youtube.com/watch?v=JKk77rzOL34)
-- [@video@10 Things You Couldn’t Do Before Claude Opus 4.6](https://www.youtube.com/watch?v=C_MXaam7Hhw)

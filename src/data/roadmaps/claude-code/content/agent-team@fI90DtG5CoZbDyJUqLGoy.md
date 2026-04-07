@@ -6,7 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Orchestrate teams of Claude Code sessions](https://code.claude.com/docs/en/agent-teams)
 - [@official@Building a C compiler with a team of parallel Claudes](https://www.anthropic.com/engineering/building-c-compiler)
-- [@article@I Tried (New) Claude Code Agent Teams (And Discovered New Way to Swarm)](https://medium.com/@joe.njenga/i-tried-new-claude-code-agent-teams-and-discovered-new-way-to-swarm-28a6cd72adb8)
 - [@article@How to Set Up Claude Code Agent Teams (Full Walkthrough + What Actually Changed)](https://www.reddit.com/r/ClaudeCode/comments/1qz8tyy/how_to_set_up_claude_code_agent_teams_full/)
 - [@video@Claude Code's Agent Teams Are Insane - Multiple AI Agents Coding Together in Real Time](https://www.youtube.com/watch?v=-1K_ZWDKpU0)
-- [@video@How to Use Claude Code Agent Teams in 13 Mins (Opus 4.6)](https://www.youtube.com/watch?v=y9IYtWELMHw)

@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@Plugins](https://claude.com/plugins)
 - [@opensource@plugins](https://github.com/anthropics/claude-code/tree/main/plugins)
 - [@video@Claude Code Now Has SUPERPOWERS! (plugin)](https://www.youtube.com/watch?v=vfVQP2AbUHo)
-- [@video@Claude Code Plugins Just Changed My Workflow Forever -](https://www.youtube.com/watch?v=-KusSduAP1A)

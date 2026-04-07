@@ -1,10 +1,6 @@
-# Ways to use Claude
+# Ways to Use Claude Code
 
-Claude Code can be accessed through three main interfaces: a Command Line Interface (CLI) for terminal-heavy workflows and automation, an editor code extension (e.g VS Code, JetBrains IDEs) that offers a graphical sidebar with inline code diffs, and a standalone Desktop Application for managing complex projects in a dedicated environment. While the CLI is highly composable and scriptable, the editor extensions integrate directly with your editor’s file explorer, and the Desktop App provides a user-friendly entry point with visual session management. Each method utilizes the same agentic engine to research, write, and execute code, allowing you to choose the interface that best fits your specific development style.
-
-*   **macOS, Linux, WSL:** `curl -fsSL https://claude.ai/install.sh | bash`
-    
-*   **Windows PowerShell:** `irm https://claude.ai/install.ps1 | iex`
+Claude Code offers multiple interfaces to cater to diverse development workflows. These include a Command Line Interface (CLI) for automation and scripting, editor code extensions (like VS Code, JetBrains IDEs) providing a graphical sidebar with inline code diffs, and a standalone Desktop Application for managing complex projects. Each interface leverages the same agentic engine for researching, writing, and executing code, providing options for different development styles. The CLI is accessible via shell scripts for macOS, Linux, and WSL, and through PowerShell for Windows.
 
 Visit the following resources to learn more:
 
