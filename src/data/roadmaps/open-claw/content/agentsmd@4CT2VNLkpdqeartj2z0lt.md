@@ -1,6 +1,6 @@
 # AGENTS.md
 
-AGENTS.md describes the agents available in your workspace, their roles, and how they relate to each other. It is used when running multiple agents to clarify who does what.
+[AGENTS.md](http://AGENTS.md) describes the agents available in your workspace, their roles, and how they relate to each other. It is used when running multiple agents to clarify who does what.
 
 Visit the following resources to learn more:
 

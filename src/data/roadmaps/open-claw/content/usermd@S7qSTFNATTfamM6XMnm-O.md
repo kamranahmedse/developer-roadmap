@@ -1,6 +1,6 @@
 # USER.md
 
-USER.md contains information about you: your preferences, context, and anything you want the agent to know about you by default. The agent reads this to personalize its responses.
+[USER.md](http://USER.md) contains information about you: your preferences, context, and anything you want the agent to know about you by default. The agent reads this to personalize its responses.
 
 Visit the following resources to learn more:
 
