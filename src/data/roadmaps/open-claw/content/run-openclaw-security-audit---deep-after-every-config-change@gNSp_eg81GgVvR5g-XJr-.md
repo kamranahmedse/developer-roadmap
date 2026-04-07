@@ -1,4 +1,4 @@
-# Run `openclaw security audit --deep` After Every Config Change
+# Run openclaw security audit --deep After Every Config Change
 
 Every configuration change is an opportunity to accidentally introduce a vulnerability. Running a deep security audit after changes catches problems before they become incidents.
 
