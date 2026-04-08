@@ -5,3 +5,5 @@ Open Claw can be used for a wide range of tasks: you can connect it to your mess
 Visit the following resources to learn more:
 
 - [@official@Showcase - OpenClaw](https://docs.openclaw.ai/start/showcase)
+- [@opensource@awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/README.md)
+- [@video@OpenClaw Use Cases that are actually helpful...](https://www.youtube.com/watch?v=Q7r--i9lLck)

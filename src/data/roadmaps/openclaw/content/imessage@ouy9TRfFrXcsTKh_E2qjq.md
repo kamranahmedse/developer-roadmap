@@ -5,3 +5,4 @@ iMessage is Apple's built-in messaging system. The recommended way to connect it
 Visit the following resources to learn more:
 
 - [@official@BlueBubbles Channel](https://docs.openclaw.ai/channels/bluebubbles)
+- [@article@OpenClaw SMS and iMessage setup guide (Twilio, BlueBubbles, imsg)](https://lumadock.com/tutorials/openclaw-sms-imessage-setup-guide)

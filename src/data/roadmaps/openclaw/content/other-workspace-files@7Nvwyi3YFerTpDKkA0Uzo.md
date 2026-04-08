@@ -5,3 +5,4 @@ Open Claw recognizes several other special markdown files that are automatically
 Visit the following resources to learn more:
 
 - [@official@Agent Workspace](https://docs.openclaw.ai/concepts/agent-workspace)
+- [@article@AI Agents 003 — OpenClaw Workspace Files Explained: SOUL.md, AGENTS.md, HEARTBEAT.md and More](https://capodieci.medium.com/ai-agents-003-openclaw-workspace-files-explained-soul-md-agents-md-heartbeat-md-and-more-5bdfbee4827a)

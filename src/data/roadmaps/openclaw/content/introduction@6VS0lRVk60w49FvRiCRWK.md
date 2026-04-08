@@ -5,3 +5,5 @@ Open Claw is a self-hosted AI agent gateway that connects your messaging apps to
 Visit the following resources to learn more:
 
 - [@official@Open Claw Docs](https://docs.openclaw.ai/)
+- [@article@What Is OpenClaw? The Open-Source AI Agent That Actually Does Things](https://www.mindstudio.ai/blog/what-is-openclaw-ai-agent)
+- [@video@The wild rise of OpenClaw...](https://www.youtube.com/watch?v=ssYt09bCgUY)

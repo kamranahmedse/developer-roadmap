@@ -4,5 +4,4 @@ Running Open Claw on dedicated hardware means using a physical device like a Ras
 
 Visit the following resources to learn more:
 
-- [@official@Rasberry Pi](https://docs.openclaw.ai/install/raspberry-pi#raspberry-pi)
-- [@official@macOS VMs](https://docs.openclaw.ai/install/macos-vm#macos-vms)
+- [@article@OpenClaw: The complete guide to building, training, and living with your personal AI agent](https://www.lennysnewsletter.com/p/openclaw-the-complete-guide-to-building?hide_intro_popup=true)

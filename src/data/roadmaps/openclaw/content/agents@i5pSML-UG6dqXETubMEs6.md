@@ -5,3 +5,4 @@ An agent in Open Claw is a fully isolated unit with its own workspace folder con
 Visit the following resources to learn more:
 
 - [@official@Agent Runtime](https://docs.openclaw.ai/concepts/agent)
+- [@opensource@🦞 Awesome OpenClaw Agents](https://github.com/mergisi/awesome-openclaw-agents)

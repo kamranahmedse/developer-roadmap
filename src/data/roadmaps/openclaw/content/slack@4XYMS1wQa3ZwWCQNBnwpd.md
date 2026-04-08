@@ -5,3 +5,4 @@ Slack is a team communication platform. Open Claw connects to it via the Bolt SD
 Visit the following resources to learn more:
 
 - [@official@Slack Channel](https://docs.openclaw.ai/channels/slack)
+- [@video@Connect OpenClaw to Slack in 5 Minutes](https://www.youtube.com/watch?v=gOUbJA9YFiE)

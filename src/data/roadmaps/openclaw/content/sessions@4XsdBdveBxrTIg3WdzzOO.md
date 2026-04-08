@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Session Management](https://docs.openclaw.ai/concepts/session)
 - [@official@Session Pruning](https://docs.openclaw.ai/concepts/session-pruning)
+- [@article@OpenClaw Session Management Explained](https://www.dench.com/blog/openclaw-session-management)

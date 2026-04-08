@@ -4,5 +4,5 @@ A local machine is the right choice if you are just getting started, experimenti
 
 Visit the following resources to learn more:
 
-- [@official@Platforms](https://docs.openclaw.ai/platforms)
 - [@official@Getting Started](https://docs.openclaw.ai/start/getting-started)
+- [@video@The only OpenClaw tutorial you’ll ever need (March 2026 edition)](https://www.youtube.com/watch?v=CxErCGVo-oo)

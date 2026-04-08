@@ -5,3 +5,4 @@ To get the most out of Open Claw, run `openclaw doctor` regularly to catch confi
 Visit the following resources to learn more:
 
 - [@official@CLI Reference](https://docs.openclaw.ai/cli)
+- [@article@OpenClaw Cheatsheet](https://moltfounders.com/openclaw-mega-cheatsheet)

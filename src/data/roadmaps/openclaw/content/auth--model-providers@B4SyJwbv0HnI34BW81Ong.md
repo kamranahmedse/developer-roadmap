@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Provider Directory](https://docs.openclaw.ai/providers)
 - [@official@Provider Quickstart](https://docs.openclaw.ai/providers/models)
+- [@article@OpenClaw Model Selection & API Providers](https://www.meta-intelligence.tech/en/insight-openclaw-model-guide)
