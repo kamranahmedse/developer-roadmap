@@ -1,4 +1,4 @@
-# Onboarding 
+# Onboarding
 
 Onboarding is the guided first-run process that walks you through connecting your first AI model provider and communication channel so your agent is ready to receive and respond to messages. You can run it with `openclaw onboard`.
 

@@ -5,3 +5,4 @@ Running Open Claw on your local machine means installing it directly on your per
 Visit the following resources to learn more:
 
 - [@official@Getting Started](https://docs.openclaw.ai/start/getting-started)
+- [@video@OpenClaw Full Tutorial for Beginners – How to Set Up and Use OpenClaw (ClawdBot / MoltBot)](https://www.youtube.com/watch?v=n1sfrc-RjyM)

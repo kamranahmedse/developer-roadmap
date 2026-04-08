@@ -5,3 +5,4 @@ Open Claw supports several mechanisms for running tasks automatically, including
 Visit the following resources to learn more:
 
 - [@official@Automation Overview](https://docs.openclaw.ai/automation)
+- [@video@OpenClaw (Clawdbot) use cases: 9 automations + 4 wild builds that actually work](https://www.youtube.com/watch?v=52kOmSQGt_E)

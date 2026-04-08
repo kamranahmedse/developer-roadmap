@@ -5,3 +5,4 @@ Signal is an end-to-end encrypted messaging app. Open Claw connects to it via si
 Visit the following resources to learn more:
 
 - [@official@Signal Channel](https://docs.openclaw.ai/channels/signal)
+- [@video@OpenClaw Signal Setup - How To Connect Signal With OpenClaw (Signal integration)](https://www.youtube.com/watch?v=fbdT7akVm2I)

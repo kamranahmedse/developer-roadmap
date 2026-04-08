@@ -5,5 +5,5 @@ Plugins are packages that can register any combination of capabilities: channels
 Visit the following resources to learn more:
 
 - [@official@Tools and Plugins](https://docs.openclaw.ai/tools)
-- [@official@https://docs.openclaw.ai/tools/plugin](https://docs.openclaw.ai/tools/plugin)
-- [@official@https://docs.openclaw.ai/plugins/community](https://docs.openclaw.ai/plugins/community)
+- [@official@Plugins](https://docs.openclaw.ai/tools/plugin)
+- [@video@Create OpenClaw AI Plugin for Extra Features and Skills | Step-by-Step Guide for Beginners](https://www.youtube.com/watch?v=baHEUzqatK4)

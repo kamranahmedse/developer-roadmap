@@ -5,3 +5,4 @@ A VPS or cloud server is the right choice if you need your agent to be always on
 Visit the following resources to learn more:
 
 - [@official@Remote Access](https://docs.openclaw.ai/gateway/remote#macos-persistent-ssh-tunnel-via-launchagent)
+- [@video@DO NOT use a VPS for OpenClaw (major warning)](https://www.youtube.com/watch?v=ev4iiGXlnh0)

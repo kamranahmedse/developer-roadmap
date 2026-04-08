@@ -6,3 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Security](https://docs.openclaw.ai/gateway/security)
 - [@official@Threat Model](https://docs.openclaw.ai/security/THREAT-MODEL-ATLAS)
+- [@article@OpenClaw security: A checklist for securing a local AI agent](https://www.hostinger.com/ca/tutorials/openclaw-security)
+- [@video@DO NOT use a VPS for OpenClaw (major warning)](https://www.youtube.com/watch?v=ev4iiGXlnh0)

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Security](https://docs.openclaw.ai/gateway/security)
 - [@official@Gateway Runbook](https://docs.openclaw.ai/gateway)
+- [@article@OpenClaw security best practices guide](https://lumadock.com/tutorials/openclaw-security-best-practices-guide)

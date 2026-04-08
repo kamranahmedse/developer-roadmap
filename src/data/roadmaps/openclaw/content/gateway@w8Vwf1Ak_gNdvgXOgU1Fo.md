@@ -5,3 +5,4 @@ The Gateway is the single always-on process that handles routing, the control pl
 Visit the following resources to learn more:
 
 - [@official@Gateway Runbook](https://docs.openclaw.ai/gateway)
+- [@article@OpenClaw Gateway: Setup, Start/Stop Commands & Remote Mode](https://www.meta-intelligence.tech/en/insight-openclaw-gateway)

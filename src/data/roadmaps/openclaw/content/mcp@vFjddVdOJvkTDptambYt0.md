@@ -5,3 +5,4 @@ MCP (Model Context Protocol) is an open standard for connecting AI models to ext
 Visit the following resources to learn more:
 
 - [@official@mcp](https://docs.openclaw.ai/cli/mcp#mcp)
+- [@article@How to Set Up OpenClaw MCP Server](https://fast.io/resources/openclaw-mcp-setup/)

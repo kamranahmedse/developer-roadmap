@@ -4,4 +4,5 @@ A Mac Mini is a compact desktop computer that works well as a home server for Op
 
 Visit the following resources to learn more:
 
-- [@official@macOS VMs Hosting](https://docs.openclaw.ai/install/macos-vm#macos-vms)
+- [@video@How to set up OpenClaw on Mac mini (full tutorial)](https://www.youtube.com/watch?v=dKRJQeGIj_E)
+- [@video@OpenClaw Installation Guide: The Setup That Actually Works!](https://www.youtube.com/watch?v=9xnWCeLhRow)
