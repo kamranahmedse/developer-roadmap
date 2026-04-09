@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Get Started with CPP!](https://isocpp.org/get-started)
 - [@video@C++ Full Course by freeCodeCamp](https://youtu.be/vLnPwxZdW4Y)
 - [@video@C++ Programming Course - Beginner to Advanced](https://www.youtube.com/watch?v=8jLOx1hD3_o)
+- [@course@Modern Cpp Series By Mike Shah](https://courses.mshah.io/courses/cpp-programming-language)
