@@ -1,3 +1,0 @@
-# Risks
-
-Running Open Claw on a VPS exposes your Gateway to the public internet, which makes it a potential target if not properly secured. A misconfigured auth token, an exposed port, or a weak allowlist can give unauthorized users access to an agent that has tool access to your files, commands, and API keys. Since you are storing API credentials on a remote machine you do not physically control, a compromised server means those keys need to be rotated immediately.
