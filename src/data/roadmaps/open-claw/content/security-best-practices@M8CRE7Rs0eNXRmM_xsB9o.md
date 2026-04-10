@@ -1,3 +1,0 @@
-# Security Best Practices
-
-Treat dedicated hardware the same way you would a VPS: Bind the Gateway to localhost, set a strong auth token, and use Tailscale or an SSH tunnel for any remote access rather than exposing ports directly. Run Open Claw as a non-root user, keep the OS and Open Claw itself updated, and store all API keys in environment variables rather than config files. Keep the device physically secure, run `openclaw security audit --deep` after any configuration change, and make regular backups of your workspace and memory files so you can recover quickly if the hardware fails.

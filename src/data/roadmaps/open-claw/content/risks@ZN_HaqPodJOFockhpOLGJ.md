@@ -1,3 +1,0 @@
-# Risks
-
-Dedicated hardware sitting in your home or office is physically accessible, which means anyone with access to the device could potentially tamper with it or extract credentials stored on it. If the device is connected to your home network without proper isolation, a compromised agent could have access to other devices on the same network. Power outages, hardware failures, and accidental resets can also cause data loss if your workspace and memory files are not backed up regularly.
