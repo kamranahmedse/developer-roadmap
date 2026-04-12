@@ -214,9 +214,11 @@ const gaPageIdentifier = Astro.url.pathname
     <slot name='course-announcement'>
       <CourseAnnouncement client:load />
     </slot>
-    <slot name='page-header'>
-      <Navigation />
-    </slot>
+    {Astro.slots.has('page-header') ? (
+        <slot name='page-header' />
+      ) : (
+        <Navigation />
+      )}
 
     <slot />
 
