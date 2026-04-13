@@ -38,6 +38,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [DevSecOps Roadmap](https://roadmap.sh/devsecops)
 - [Full Stack Roadmap](https://roadmap.sh/full-stack)
 - [Claude Code Roadmap](https://roadmap.sh/claude-code)
+- [OpenClaw Roadmap](https://roadmap.sh/openclaw)
 - [Vibe Coding Roadmap](https://roadmap.sh/vibe-coding)
 - [HTML Roadmap](https://roadmap.sh/html)
 - [CSS Roadmap](https://roadmap.sh/css)
