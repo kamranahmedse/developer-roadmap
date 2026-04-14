@@ -1,3 +1,7 @@
-## Deep Learning
+# Deep Learning
 
-Deep learning is a subset of machine learning that deals with algorithms inspired by the structure and function of the brain called artificial neural networks. Deep learning is a key technology behind driverless cars, enabling them to recognize a stop sign, or to distinguish a pedestrian from a lamppost. It is the key to voice control in consumer devices like phones, tablets, TVs, and hands-free speakers. Deep learning is getting lots of attention lately and for good reason. It’s achieving results that were not possible before.
+Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence "deep") to analyze data and learn complex patterns. These networks are inspired by the structure and function of the human brain, and they are particularly effective at tasks like image recognition, natural language processing, and speech recognition. By processing data through these layers, deep learning models can automatically extract features and make predictions with high accuracy.
+
+Visit the following resources to learn more:
+
+- [@roadmap@Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)
