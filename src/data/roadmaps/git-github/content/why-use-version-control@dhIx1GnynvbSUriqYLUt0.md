@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Benefits of using version control](https://www.techrepublic.com/article/version-control-benefits/)
 - [@article@What is version control and why is it important?](https://start.docuware.com/blog/document-management/what-is-version-control-why-is-it-important)
+- [@course@Why use Git? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
