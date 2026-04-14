@@ -8,3 +8,5 @@ Visit the following resources to learn more:
 - [@article@Learn Git with Tutorials, News and Tips - Atlassian](https://www.atlassian.com/git)
 - [@article@Git Cheat Sheet](https://cs.fyi/guide/git-cheatsheet)
 - [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [@course@What is Git? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
+- [@course@What is a Repository? (Interactive Lesson)](https://inter-git.com/lessons/creating-repository)
