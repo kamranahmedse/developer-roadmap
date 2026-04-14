@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [@article@Comparing Workflows - Centralized vs Distributed](https://www.atlassian.com/git/tutorials/comparing-workflows)
 - [@video@Version Control System (VCS) - Everything you need to know](https://www.youtube.com/watch?v=SVkuliabq4g)
 - [@video@Git for Beginners - Git & GitHub Tutorial](https://www.youtube.com/watch?v=8JJ101D3knE)
+- [@course@What is Version Control? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
