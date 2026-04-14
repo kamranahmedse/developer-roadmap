@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@official@Subversion](https://subversion.apache.org/)
 - [@article@What is Version Control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [@video@Version Control System (VCS)](https://www.youtube.com/watch?v=SVkuliabq4g)
+- [@course@What is Version Control? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
