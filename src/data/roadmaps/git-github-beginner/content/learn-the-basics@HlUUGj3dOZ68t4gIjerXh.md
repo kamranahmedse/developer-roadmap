@@ -8,3 +8,5 @@ Visit the following resources to learn more:
 - [@official@Git](https://git-scm.com/)
 - [@official@GitHub](https://github.com)
 - [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=vA5TTz6BXhY)
+- [@course@What is Git? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
+- [@course@What is a Repository? (Interactive Lesson)](https://inter-git.com/lessons/creating-repository)
