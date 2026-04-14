@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
 - [@article@What is a repository?](https://www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository)
+- [@course@What is a repository? (Interactive Lesson)](https://inter-git.com/lessons/creating-repository)

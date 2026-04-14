@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@video@What is Git? Explained in 2 minutes](https://www.youtube.com/watch?v=2ReR1YJrNOM)
 - [@article@What is version control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- [@course@What is Git? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
