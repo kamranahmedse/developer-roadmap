@@ -98,7 +98,7 @@ It's important to add a valid type, this will help us categorize the content and
 
 - <p><strong>Do not add things you have not evaluated personally!</strong><br/>
 
-  Use your critical thinking to filter out non-essential stuff. Give honest arguments for why the resource should be included. Have you read this book? Can you give a short article?</p>
+  Use your critical thinking to filter out non-essential stuff. Give honest arguments for why the resource should be included. Have you read this book? Can you write a short review?</p>
 
 - <p><strong>Create a Single PR for Content Additions</strong></p>
 
