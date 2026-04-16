@@ -111,14 +111,16 @@ if (isTopic) {
       <Fragment set:html={htmlContent} />
     </>
   ) : (
-    <BaseLayout
-      title={guide?.seo?.metaTitle ?? guide?.title ?? ''}
-      description={guide?.seo?.metaDescription ?? guide?.description ?? ''}
-      permalink={permalink}
-      ogImageUrl={ogImageUrl}
-    >
-      <GuideContent guide={guide!} client:load />
-      <div slot='changelog-banner' />
-    </BaseLayout>
+    guide && (
+      <BaseLayout
+        title={guide?.seo?.metaTitle ?? guide?.title ?? ''}
+        description={guide?.seo?.metaDescription ?? guide?.description ?? ''}
+        permalink={permalink}
+        ogImageUrl={ogImageUrl}
+      >
+        <GuideContent guide={guide!} client:load />
+        <div slot='changelog-banner' />
+      </BaseLayout>
+    )
   )
 }
