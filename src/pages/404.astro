@@ -1,6 +1,7 @@
 ---
 import Icon from '../components/AstroIcon.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation/Navigation.astro';
 import { listOfficialRoadmaps } from '../queries/official-roadmap';
 
 const roadmapIds = await listOfficialRoadmaps();
@@ -19,6 +20,8 @@ const legacyRoadmapUrls = [
       window.location.pathname = window.location.pathname.slice(0, -1);
     }
   </script>
+
+  <Navigation slot='page-header' />
 
   <div class='bg-gray-100'>
     <div
