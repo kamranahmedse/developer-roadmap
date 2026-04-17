@@ -1,3 +1,8 @@
 # OpenAI
 
-OpenAI developed influential language models including GPT-3, GPT-4, and o3, setting industry standards for prompt engineering practices. Their API provides access to powerful LLMs with configurable parameters like temperature and max tokens. Many prompt engineering techniques and best practices originated from working with OpenAI systems.
+OpenAI develops leading language models including GPT-5.4, o3, and Codex, setting industry standards for prompt engineering. Their API provides access to frontier models with configurable parameters, and their Agents SDK enables building autonomous AI systems. The OpenAI Cookbook and platform documentation are key references for prompt engineering best practices.
+
+Visit the following resources to learn more:
+
+- [@official@OpenAI API Documentation](https://developers.openai.com/api/docs)
+- [@official@OpenAI Cookbook (GitHub)](https://github.com/openai/openai-cookbook)

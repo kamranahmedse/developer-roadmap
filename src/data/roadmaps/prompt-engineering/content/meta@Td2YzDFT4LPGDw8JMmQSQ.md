@@ -1,3 +1,8 @@
 # Meta
 
-Meta (formerly Facebook) develops the Llama family of open-source large language models. Llama models are available for research and commercial use, offering strong performance across various tasks. For prompt engineering, Meta's models provide transparency in training data and architecture, allowing developers to fine-tune and customize prompts for specific applications without vendor lock-in.
+Meta develops the Llama family of open-source large language models. The latest release, Llama 4, comes in Maverick and Scout variants with strong multimodal and long-context capabilities. Llama models are freely available for research and commercial use, providing transparency in training data and architecture without vendor lock-in.
+
+Visit the following resources to learn more:
+
+- [@official@Llama](https://www.llama.com/)
+- [@opensource@Llama Models (GitHub)](https://github.com/meta-llama/llama-models)

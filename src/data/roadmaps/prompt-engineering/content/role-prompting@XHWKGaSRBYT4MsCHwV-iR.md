@@ -4,4 +4,6 @@ Role prompting assigns a specific character, identity, or professional role to t
 
 Visit the following resources to learn more:
 
+- [@article@Assigning Roles to Chatbots - LearnPrompting](https://learnprompting.org/docs/basics/roles)
+- [@article@Role Prompting - LearnPrompting](https://learnprompting.org/docs/advanced/zero_shot/role_prompting)
 - [@video@Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents](https://youtu.be/vD0E3EUb8-8?si=9orzEniOGmRD7g-o&t=136)

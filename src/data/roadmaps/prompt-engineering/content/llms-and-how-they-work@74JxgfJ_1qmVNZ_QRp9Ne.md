@@ -4,4 +4,7 @@ LLMs function as sophisticated prediction engines that process text sequentially
 
 Visit the following resources to learn more:
 
+- [@article@What are large language models (LLMs)? - IBM](https://www.ibm.com/think/topics/large-language-models)
+- [@article@Large language model - Wikipedia](https://en.wikipedia.org/wiki/Large_language_model)
+- [@article@How Large Language Models Work: Explained Simply](https://justainews.com/applications/chatbots-and-virtual-assistants/how-large-language-models-work/)
 - [@video@How Large Language Models Work](https://youtu.be/5sLYAQS9sWQ)

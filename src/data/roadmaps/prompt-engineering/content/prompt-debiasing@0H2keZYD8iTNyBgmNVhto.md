@@ -4,4 +4,4 @@ Prompt debiasing involves techniques to reduce unwanted biases in LLM outputs by
 
 Visit the following resources to learn more:
 
-- [@article@Prompt Debiasing](https://learnprompting.org/docs/reliability/debiasing)
+- [@article@Prompt Debiasing - LearnPrompting](https://learnprompting.org/docs/reliability/debiasing)
