@@ -25,7 +25,9 @@ const codeBlockClassName = cn(
   '[&_code]:bg-transparent',
   '[&_.line]:px-3',
   '[&_.line]:w-full',
-  '[&_.line]:relative',
+  '[&_.line]:block',
+  '[&_.line]:static',
+  '[&_.line]:z-auto',
   '[&_.line]:min-h-5',
 );
 
