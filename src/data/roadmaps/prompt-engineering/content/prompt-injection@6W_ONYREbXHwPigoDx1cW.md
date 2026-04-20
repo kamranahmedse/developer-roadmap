@@ -4,4 +4,6 @@ Prompt injection is a security vulnerability where malicious users manipulate LL
 
 Visit the following resources to learn more:
 
+- [@official@Mitigate jailbreaks and prompt injections - Anthropic](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks)
+- [@official@LLM01:2025 Prompt Injection - OWASP](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
 - [@video@What Is a Prompt Injection Attack?](https://www.youtube.com/watch?v=jrHRe9lSqqA)

@@ -1,3 +1,8 @@
 # Anthropic
 
-Anthropic created Claude, a family of large language models known for safety features and constitutional AI training. Claude models excel at following instructions, maintaining context, and avoiding harmful outputs. Their strong instruction-following capabilities and built-in safety measures make them valuable for reliable, ethical AI applications.
+Anthropic develops Claude, a family of large language models focused on safety and helpfulness. The current lineup includes Claude Opus 4.7 (most capable, for complex reasoning and agentic coding), Claude Sonnet 4.6 (best speed-intelligence balance), and Claude Haiku 4.5 (fastest, near-frontier intelligence). All models support extended thinking, vision, and 1M token context windows.
+
+Visit the following resources to learn more:
+
+- [@official@Claude API Documentation](https://docs.anthropic.com/en/docs/intro)
+- [@official@Anthropic Research](https://www.anthropic.com/research)

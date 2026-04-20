@@ -4,4 +4,7 @@ Chain of Thought prompting improves LLM reasoning by generating intermediate rea
 
 Visit the following resources to learn more:
 
+- [@article@Chain-of-Thought Prompting - DAIR.AI](https://www.promptingguide.ai/techniques/cot)
+- [@article@Chain-of-Thought Prompting - LearnPrompting](https://learnprompting.org/docs/intermediate/chain_of_thought)
+- [@article@Reasoning LLMs Guide - DAIR.AI](https://www.promptingguide.ai/guides/reasoning-llms)
 - [@video@Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents](https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu&t=203)

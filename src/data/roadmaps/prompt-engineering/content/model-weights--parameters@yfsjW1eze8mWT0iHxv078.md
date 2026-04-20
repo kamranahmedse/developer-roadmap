@@ -1,3 +1,7 @@
 # Model Weights / Parameters
 
 Model weights and parameters are the learned values that define an LLM's behavior and knowledge. Parameters are the trainable variables adjusted during training, while weights represent their final values. Understanding parameter count helps gauge model capabilities - larger models typically have more parameters and better performance but require more computational resources.
+
+Visit the following resources to learn more:
+
+- [@article@What are LLM parameters? - IBM](https://www.ibm.com/think/topics/llm-parameters)

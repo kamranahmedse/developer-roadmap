@@ -4,4 +4,6 @@ ReAct (Reason and Act) prompting enables LLMs to solve complex tasks by combinin
 
 Visit the following resources to learn more:
 
+- [@article@ReAct - DAIR.AI](https://www.promptingguide.ai/techniques/react)
+- [@article@ReAct: Synergizing Reasoning and Acting - LearnPrompting](https://learnprompting.org/docs/techniques/react)
 - [@video@4 Methods of Prompt Engineering](https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu&t=203)
