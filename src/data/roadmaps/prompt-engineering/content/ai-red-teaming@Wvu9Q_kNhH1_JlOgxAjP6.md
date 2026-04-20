@@ -4,6 +4,4 @@ AI red teaming involves deliberately testing AI systems to find vulnerabilities,
 
 Visit the following resources to learn more:
 
-- [@official@Define success and build evaluations - Anthropic](https://platform.claude.com/docs/en/test-and-evaluate/develop-tests)
-- [@official@OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/llmrisk/)
-- [@opensource@Microsoft PyRIT - Risk Identification for GenAI](https://github.com/microsoft/PyRIT)
+- [@roadmap@Visit the Dedicated AI Red Teaming Roadmap](https://roadmap.sh/ai-red-teaming)

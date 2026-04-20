@@ -4,5 +4,5 @@ Retrieval-Augmented Generation (RAG) combines LLMs with external knowledge retri
 
 Visit the following resources to learn more:
 
-- [@article@Retrieval Augmented Generation (RAG) - DAIR.AI](https://www.promptingguide.ai/techniques/rag)
 - [@opensource@Introduction to RAG - LlamaIndex](https://developers.llamaindex.ai/python/framework/understanding/rag/)
+- [@article@Retrieval Augmented Generation (RAG) - DAIR.AI](https://www.promptingguide.ai/techniques/rag)
