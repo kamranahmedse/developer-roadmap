@@ -1,0 +1,3 @@
+# Merge K Sorted Lists
+
+Given k sorted linked lists, merge them into one sorted list using a min-heap. You insert the head of each list into the heap, then repeatedly extract the minimum and push the next node from that list. This problem sits at the intersection of heaps and linked lists and is the canonical k-way merge example. Visit the question on the LeetCode [website](https://leetcode.com/problems/merge-k-sorted-lists/).

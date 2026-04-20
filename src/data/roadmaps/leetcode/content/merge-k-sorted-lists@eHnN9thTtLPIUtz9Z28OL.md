@@ -1,0 +1,3 @@
+# Merge K Sorted Lists
+
+Given k sorted linked lists, merge them into one sorted list. The optimal approach uses a min-heap to always extract the smallest current node across all lists. This problem connects linked list manipulation with heap usage and is the defining example of the k-way merge pattern. Visit the question on the LeetCode [website](https://leetcode.com/problems/merge-k-sorted-lists/).

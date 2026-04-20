@@ -1,0 +1,3 @@
+# Valid Parentheses
+
+Given a string of brackets, determine if it is valid, meaning every opening bracket is closed by the same type in the correct order. You push opening brackets onto a stack and pop when you see a closing bracket, checking for a match. This is the canonical stack problem and teaches you the key idea: a stack naturally tracks things that need a future match. Visit the question on the LeetCode [website](https://leetcode.com/problems/valid-parentheses/).

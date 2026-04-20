@@ -1,0 +1,3 @@
+# Binary Search
+
+Given a sorted array and a target, return the index of the target or -1 if not found. You repeatedly halve the search space by comparing the middle element to the target. This is the simplest form of binary search and the one you must be able to write without mistakes before moving to harder variants. Visit the question on the LeetCode [website](https://leetcode.com/problems/binary-search/).

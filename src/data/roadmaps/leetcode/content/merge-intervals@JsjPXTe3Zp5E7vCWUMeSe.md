@@ -1,0 +1,3 @@
+# Merge Intervals
+
+Given a list of intervals, merge all overlapping ones. You sort by start time and iterate, extending the current interval when the next one overlaps, or starting a new one when it does not. This is the foundational interval problem and teaches you that sorting by start time reduces the overlap check to a single comparison with the previous interval's end. Visit the question on the LeetCode [website](https://leetcode.com/problems/merge-intervals/).

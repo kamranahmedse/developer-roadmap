@@ -1,0 +1,3 @@
+# Design Add and Search Words Data Structure
+
+Build a data structure that supports adding words and searching for words where a dot can match any letter. Exact characters navigate the trie normally, while a dot triggers DFS across all child nodes. This problem teaches you how to combine trie traversal with backtracking for wildcard matching. Visit the question on the LeetCode [website](https://leetcode.com/problems/design-add-and-search-words-data-structure/).

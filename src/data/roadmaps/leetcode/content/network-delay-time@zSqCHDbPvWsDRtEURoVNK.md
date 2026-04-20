@@ -1,0 +1,3 @@
+# Network Delay Time
+
+Given a network of nodes and weighted directed edges, find the time it takes for a signal to reach all nodes from a source. This is Dijkstra's algorithm: you use a min-heap to always process the closest unvisited node next. This problem teaches you Dijkstra's algorithm in its clearest form, without extra complications, making it the best starting point for weighted shortest path problems. Visit the question on the LeetCode [website](https://leetcode.com/problems/network-delay-time/).

@@ -1,0 +1,3 @@
+# Jump Game II
+
+Given the same setup, find the minimum number of jumps to reach the last index. You greedily track the end of the current jump range and the furthest you can reach within it, incrementing the jump count when you exhaust the current range. This problem teaches you the two-range greedy technique, where you separate the current jump's boundary from the next one. Visit the question on the LeetCode [website](https://leetcode.com/problems/jump-game-ii/).

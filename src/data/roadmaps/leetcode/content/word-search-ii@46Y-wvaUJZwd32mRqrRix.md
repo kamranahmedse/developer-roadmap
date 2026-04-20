@@ -1,0 +1,3 @@
+# Word Search II
+
+Given a board of characters and a list of words, return all words that exist in the board. You build a trie from the word list and do DFS from each cell, pruning paths that do not match any trie prefix. This problem is the hardest trie problem in this stage and teaches you how a trie dramatically reduces the search space compared to checking each word separately. Visit the question on the LeetCode [website](https://leetcode.com/problems/word-search-ii/).

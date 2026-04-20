@@ -1,0 +1,3 @@
+# Non-overlapping Intervals
+
+Given a list of intervals, find the minimum number to remove so that no two intervals overlap. Sorting by end time and greedily keeping non-conflicting intervals gives the maximum number you can keep, and the answer is total minus that. This problem reinforces the greedy interval scheduling principle and connects directly to the activity selection problem in algorithm theory. Visit the question on the LeetCode [website](https://leetcode.com/problems/non-overlapping-intervals/).

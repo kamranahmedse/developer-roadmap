@@ -1,0 +1,3 @@
+# Stage 5 — Sliding Window
+
+The sliding window pattern is used when you need to find an optimal subarray or substring that satisfies some constraint. Instead of checking every possible subarray from scratch, you maintain a window with two pointers and update the result incrementally as the window expands or shrinks. Fixed-size windows are straightforward; variable-size windows require a clear rule for when to shrink from the left. This stage also introduces the monotonic deque, which extends sliding window to problems that need the maximum or minimum within the window at each step.

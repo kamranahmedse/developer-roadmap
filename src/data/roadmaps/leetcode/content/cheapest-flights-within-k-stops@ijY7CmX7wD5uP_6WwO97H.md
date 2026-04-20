@@ -1,0 +1,3 @@
+# Cheapest Flights Within K Stops
+
+Given a graph of flights with prices, find the cheapest route from source to destination using at most k stops. This is a modified Dijkstra or Bellman-Ford problem where the constraint is on the number of edges, not just total cost. This problem teaches you how to add an extra dimension (number of steps) to a shortest path algorithm. Visit the question on the LeetCode [website](https://leetcode.com/problems/cheapest-flights-within-k-stops/).

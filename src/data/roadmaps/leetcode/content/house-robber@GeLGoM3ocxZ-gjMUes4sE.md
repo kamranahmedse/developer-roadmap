@@ -1,0 +1,3 @@
+# House Robber
+
+You are a robber planning to steal from houses in a row. You cannot rob two adjacent houses. Find the maximum amount you can steal. At each house you choose to rob it and skip the previous, or skip it and keep the best from before. This problem teaches the classic DP choice between taking the current element and combining it with a past state, or skipping it. Visit the question on the LeetCode [website](https://leetcode.com/problems/house-robber/).

@@ -1,0 +1,3 @@
+# Spiral Matrix
+
+Given an m by n matrix, return all elements in spiral order. You maintain four boundaries (top, bottom, left, right) and peel one layer at a time, moving right, down, left, then up, shrinking the boundaries after each direction. This problem teaches careful boundary management and is a good test of whether you can translate a visual pattern into clean code. Visit the question on the LeetCode [website](https://leetcode.com/problems/spiral-matrix/).

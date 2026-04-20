@@ -1,0 +1,3 @@
+# Longest Increasing Subsequence
+
+Given an array, find the length of the longest strictly increasing subsequence. For each element, you check all previous elements that are smaller and extend the best subsequence ending there. This problem teaches you patience sorting and the classic O(n²) DP formulation, with an O(n log n) binary search optimization as a natural follow-up. Visit the question on the LeetCode [website](https://leetcode.com/problems/longest-increasing-subsequence/).

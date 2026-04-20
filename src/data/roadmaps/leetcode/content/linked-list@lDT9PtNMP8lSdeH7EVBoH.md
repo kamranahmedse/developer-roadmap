@@ -1,0 +1,3 @@
+# Stage 6 — Linked List
+
+Linked list problems test your ability to manipulate pointers directly, without the convenience of index-based access. The core techniques are the dummy node (to simplify edge cases at the head), the fast and slow pointer (to find midpoints and detect cycles), and in-place reversal (to rearrange nodes without extra memory). These three techniques cover the majority of linked list problems. The problems here also build the pointer intuition you will need when working with trees in the next stage.

@@ -1,0 +1,3 @@
+# Sliding Window Maximum
+
+Given an array and a window size k, return the maximum value in each window. A monotonic deque stores indices in decreasing order of value, so the front is always the current maximum. This problem teaches you the monotonic deque, which gives O(n) window max where a heap would give O(n log n). Visit the question on the LeetCode [website](https://leetcode.com/problems/sliding-window-maximum/).

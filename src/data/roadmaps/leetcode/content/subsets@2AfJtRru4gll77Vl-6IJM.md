@@ -1,0 +1,3 @@
+# Subsets
+
+Given an array of unique integers, return all possible subsets including the empty set. You use backtracking to make a binary decision at each element: include it or skip it, building subsets recursively. This problem teaches the foundation of backtracking, the include/exclude decision tree that underpins all subset and combination problems. Visit the question on the LeetCode [website](https://leetcode.com/problems/subsets/).

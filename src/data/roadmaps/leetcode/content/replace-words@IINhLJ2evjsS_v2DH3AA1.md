@@ -1,0 +1,3 @@
+# Replace Words
+
+Given a dictionary of root words and a sentence, replace each word in the sentence with its shortest matching root from the dictionary. You insert all roots into a trie, then for each word in the sentence traverse the trie character by character until you hit a root or fail. This problem teaches you practical trie lookup with early termination, which is the core of trie efficiency. Visit the question on the LeetCode [website](https://leetcode.com/problems/replace-words/).

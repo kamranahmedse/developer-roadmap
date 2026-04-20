@@ -1,0 +1,3 @@
+# Burst Balloons
+
+Given an array of balloons with values, burst all of them to maximize coins, where bursting a balloon gives coins equal to the product of itself and its neighbors. You use interval DP: instead of choosing which balloon to burst first, you choose which to burst last within each interval. This problem teaches you that sometimes reversing the order of decisions makes the DP structure cleaner. Visit the question on the LeetCode [website](https://leetcode.com/problems/burst-balloons/).

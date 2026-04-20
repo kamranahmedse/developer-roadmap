@@ -1,0 +1,3 @@
+# Reverse Bits
+
+Given a 32-bit unsigned integer, reverse its bits. You build the result bit by bit by extracting the last bit from the input and shifting it into the result. This problem teaches you how to construct a new number bit by bit using shifts and masks, which is useful in many low-level and embedded contexts. Visit the question on the LeetCode [website](https://leetcode.com/problems/reverse-bits/).

@@ -1,0 +1,3 @@
+# Longest Substring Without Repeating Characters
+
+Find the length of the longest substring that contains no duplicate characters. You expand the right pointer and shrink the left pointer whenever a duplicate enters the window, using a set to track current characters. This is the canonical variable-size sliding window problem and teaches you the expand-then-shrink rhythm that most substring problems follow. Visit the question on the LeetCode [website](https://leetcode.com/problems/longest-substring-without-repeating-characters/).

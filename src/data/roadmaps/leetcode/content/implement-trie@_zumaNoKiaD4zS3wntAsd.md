@@ -1,0 +1,3 @@
+# Implement Trie
+
+Build a trie data structure that supports inserting a word, searching for an exact word, and checking if any word starts with a given prefix. Each node stores a map of child characters and a flag marking word endings. This problem teaches you the trie structure itself, which is prerequisite knowledge for all harder trie problems. Visit the question on the LeetCode [website](https://leetcode.com/problems/implement-trie-prefix-tree/).

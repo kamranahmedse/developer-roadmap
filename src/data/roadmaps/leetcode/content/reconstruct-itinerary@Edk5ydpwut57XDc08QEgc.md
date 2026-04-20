@@ -1,0 +1,3 @@
+# Reconstruct Itinerary
+
+Given a list of airline tickets, reconstruct the itinerary in lexical order starting from JFK, using all tickets exactly once. You use DFS with a sorted adjacency list and add nodes to the result only after all their outgoing edges are exhausted, which is Hierholzer's algorithm for Eulerian paths. This problem teaches you a non-obvious graph traversal where the order of adding nodes to the result is reversed. Visit the question on the LeetCode [website](https://leetcode.com/problems/reconstruct-itinerary/).

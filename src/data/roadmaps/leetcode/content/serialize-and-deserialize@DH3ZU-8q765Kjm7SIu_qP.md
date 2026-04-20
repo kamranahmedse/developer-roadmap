@@ -1,0 +1,3 @@
+# Serialize and Deserialize Binary Tree
+
+Design an algorithm to convert a binary tree to a string and reconstruct it exactly from that string. One approach uses BFS level-order, encoding null pointers explicitly so the structure can be recovered. This problem teaches you that tree traversal is not just for reading trees but also for encoding and rebuilding them, a fundamental idea in tree design problems. Visit the question on the LeetCode [website](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/).

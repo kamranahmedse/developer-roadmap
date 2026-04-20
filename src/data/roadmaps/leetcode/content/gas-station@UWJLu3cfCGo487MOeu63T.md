@@ -1,0 +1,3 @@
+# Gas Station
+
+Given gas amounts and costs at each station on a circular route, find the starting station from which you can complete the circuit. If total gas is at least total cost, a solution exists, and the starting point is always after the last segment where the running tank went negative. This problem teaches you that a global observation (total gas vs total cost) can determine existence, while a local scan finds the answer. Visit the question on the LeetCode [website](https://leetcode.com/problems/gas-station/).
