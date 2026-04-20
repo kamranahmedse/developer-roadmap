@@ -1,6 +1,6 @@
 # ✨ Contribution Guidelines ✨
 
-First of all, thank you for considering to contribute. Please look at the details below:
+First of all, thank you for considering to contribute. Please look at the details below.:
 
 - [New Roadmaps](#new-roadmaps)
 - [Existing Roadmaps](#existing-roadmaps)
@@ -117,7 +117,7 @@ It's important to add a valid type, this will help us categorize the content and
 
 - New Roadmaps.
 - Engaging and fresh content links.
-- Typos and grammatical fixes.
+- Typos and grammatical fixes are welcome.
 - Enhanced Existing Content.
 - Content copy in topics that do not have any (or minimal copy exists).
 
