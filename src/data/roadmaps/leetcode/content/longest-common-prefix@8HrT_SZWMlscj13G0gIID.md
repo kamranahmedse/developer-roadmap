@@ -1,0 +1,3 @@
+# Longest Common Prefix
+
+Given an array of strings, find the longest common prefix among all of them. One approach inserts all strings into a trie and traverses down as long as each node has exactly one child and is not a word end. This problem is simpler than the others but teaches you that tries are not only for search, they also encode shared structure between strings. Visit the question on the LeetCode [website](https://leetcode.com/problems/longest-common-prefix/).

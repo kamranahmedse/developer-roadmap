@@ -1,0 +1,3 @@
+# Word Break
+
+Given a string and a dictionary of words, determine if the string can be segmented into a sequence of dictionary words. You use DP where each position stores whether the substring up to that point can be formed, checking every possible last word. This problem teaches you how to use a boolean DP array to track reachability, a pattern that appears in many string segmentation problems. Visit the question on the LeetCode [website](https://leetcode.com/problems/word-break/).

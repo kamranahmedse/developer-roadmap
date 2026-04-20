@@ -1,0 +1,3 @@
+# Reorder List
+
+Given a linked list, reorder it so that nodes alternate from the front and back of the original list. You find the middle, reverse the second half, then merge the two halves together. This problem combines three sub-techniques (finding middle, reversing, merging) and teaches you to decompose complex pointer problems into simpler steps. Visit the question on the LeetCode [website](https://leetcode.com/problems/reorder-list/).

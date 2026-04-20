@@ -1,0 +1,3 @@
+# Stage 1 — Arrays & Hashing
+
+Arrays and hash maps are the building blocks of almost every algorithm problem. Before learning any pattern, you need to be comfortable navigating an array and reaching for a hash map when you need fast lookups. Most problems in this stage are solved in one or two passes, and the main skill you are developing is recognizing when a hash map can replace a nested loop. If you find yourself thinking about checking membership or counting frequencies, a hash map is almost always the right tool.

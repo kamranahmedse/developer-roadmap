@@ -1,0 +1,3 @@
+# Number of Islands
+
+Given a 2D grid of land and water cells, count the number of islands. You do DFS from each unvisited land cell, marking the entire connected landmass as visited before moving on. This is the entry point for graph DFS on a matrix and teaches you to treat a grid as an implicit graph where adjacency is defined by up, down, left, right neighbors. Visit the question on the LeetCode [website](https://leetcode.com/problems/number-of-islands/).

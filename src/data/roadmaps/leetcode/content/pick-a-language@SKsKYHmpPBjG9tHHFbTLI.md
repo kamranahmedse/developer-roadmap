@@ -1,0 +1,3 @@
+# Pick a language
+
+For LeetCode and technical interviews, the language you use matters less than how well you know it. Pick one language and stick with it throughout your preparation. Switching between languages wastes time and splits your focus. What interviewers care about is whether you can write clean, correct code and explain your reasoning clearly. That said, some languages have practical advantages: Python is concise and fast to write, which is helpful under time pressure. Java and C++ are common in companies that care about performance. JavaScript is a natural choice if you are coming from frontend development.

@@ -1,0 +1,3 @@
+# Stage 3 — Stack
+
+A stack is the right tool whenever you need to process elements in a last-in-first-out order, or when you need to track something that will be resolved later. Many stack problems involve matching pairs, maintaining a running minimum or maximum, or deferring a computation until a future element triggers it. The monotonic stack variant, where you maintain elements in increasing or decreasing order, is particularly important and appears frequently in harder problems involving histograms, temperatures, and next greater elements.

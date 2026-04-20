@@ -1,0 +1,3 @@
+# Linked List Cycle
+
+Given the head of a linked list, determine if it contains a cycle. The fast and slow pointer technique has one pointer move one step at a time and another move two, and if there is a cycle they will eventually meet. This problem introduces the fast and slow pointer pattern, which is used in several harder linked list problems. Visit the question on the LeetCode [website](https://leetcode.com/problems/linked-list-cycle/).

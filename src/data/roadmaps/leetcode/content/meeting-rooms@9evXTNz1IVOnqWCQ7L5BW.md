@@ -1,0 +1,3 @@
+# Meeting Rooms
+
+Given a list of meeting time intervals, determine if a person can attend all of them. You sort by start time and check if any meeting starts before the previous one ends. This is the simplest interval problem and teaches you that sorted order plus a single-pass scan resolves most interval overlap questions instantly. Visit the question on the LeetCode [website](https://leetcode.com/problems/meeting-rooms/).

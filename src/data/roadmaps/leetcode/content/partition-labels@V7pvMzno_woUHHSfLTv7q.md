@@ -1,0 +1,3 @@
+# Partition Labels
+
+Given a string, partition it into as many parts as possible so that each letter appears in at most one part. You find the last occurrence of each character first, then greedily extend the current partition's boundary as you scan. This problem teaches you how to greedily build non-overlapping intervals using the last-occurrence anchor, a pattern that appears in several interval problems. Visit the question on the LeetCode [website](https://leetcode.com/problems/partition-labels/).

@@ -1,0 +1,3 @@
+# Pow(x, n)
+
+Implement the power function that raises x to the nth power, including negative exponents, in O(log n). You use fast exponentiation: square the base and halve the exponent at each step, handling odd exponents by multiplying in an extra factor. This problem teaches you recursive divide-and-conquer on a numerical computation, and is the standard way to implement exponentiation efficiently. Visit the question on the LeetCode [website](https://leetcode.com/problems/powx-n/).

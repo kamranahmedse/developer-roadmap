@@ -1,0 +1,3 @@
+# Trapping Rain Water
+
+Given an array of bar heights representing an elevation map, compute how much water can be trapped between the bars after rain. For each position, the water level is determined by the shorter of the tallest bars to its left and right. Two pointers eliminate the need to precompute these maximums separately. This is one of the hardest two pointer problems and teaches you to reason about what constrains a value from both sides. Visit the question on the LeetCode [website](https://leetcode.com/problems/trapping-rain-water/).

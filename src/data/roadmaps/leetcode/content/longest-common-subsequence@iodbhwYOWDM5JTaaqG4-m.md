@@ -1,0 +1,3 @@
+# Longest Common Subsequence
+
+Given two strings, find the length of their longest common subsequence. If characters match, you extend the LCS from the diagonal; otherwise you take the best from dropping one character in either string. This is the canonical 2D DP problem and teaches you how a 2D table captures the relationship between two sequences simultaneously. Visit the question on the LeetCode [website](https://leetcode.com/problems/longest-common-subsequence/).

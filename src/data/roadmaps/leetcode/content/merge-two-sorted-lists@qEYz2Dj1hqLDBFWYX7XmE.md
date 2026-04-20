@@ -1,0 +1,3 @@
+# Merge Two Sorted Lists
+
+Given the heads of two sorted linked lists, merge them into one sorted list by splicing nodes together without creating new ones. You compare the heads of both lists at each step and attach the smaller node to your result. This problem teaches you the dummy node technique, which simplifies edge cases when building a new list from scratch. Visit the question on the LeetCode [website](https://leetcode.com/problems/merge-two-sorted-lists/).

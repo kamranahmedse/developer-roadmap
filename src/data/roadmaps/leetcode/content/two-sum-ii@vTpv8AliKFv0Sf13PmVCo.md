@@ -1,0 +1,3 @@
+# Two Sum II
+
+Given a sorted array, find two numbers that add up to a target and return their positions. Because the array is sorted, you can use two pointers starting from each end and move them based on whether the current sum is too large or too small. This is where the two pointer pattern clicks for most learners, since the sorted order gives a clear rule for which pointer to move. Visit the question on the LeetCode [website](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/).

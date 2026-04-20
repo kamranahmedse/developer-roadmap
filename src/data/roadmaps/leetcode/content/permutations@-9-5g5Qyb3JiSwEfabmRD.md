@@ -1,0 +1,3 @@
+# Permutations
+
+Given an array of distinct integers, return all possible orderings. Unlike subsets, order matters here, so at each step you pick any unused element and continue recursively. This problem teaches you the difference between combination-style and permutation-style backtracking, and how to track which elements have been used. Visit the question on the LeetCode [website](https://leetcode.com/problems/permutations/).

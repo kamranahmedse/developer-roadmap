@@ -1,0 +1,3 @@
+# Regular Expression Matching
+
+Given a string and a pattern with dot and star wildcards, determine if the pattern matches the entire string. A 2D DP table tracks whether each prefix of the string matches each prefix of the pattern, with special handling for the star operator. This is one of the hardest 2D DP problems and teaches you to handle optional repetition in DP, where a character can appear zero or more times. Visit the question on the LeetCode [website](https://leetcode.com/problems/regular-expression-matching/).

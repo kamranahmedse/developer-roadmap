@@ -1,0 +1,3 @@
+# Generate Parentheses
+
+Given n, generate all combinations of well-formed parentheses. You build strings recursively, adding an opening bracket if you still have some left and a closing bracket only if it would not break validity. This problem sits at the boundary of stack and backtracking thinking, and teaches you to use constraints to prune a search space before exploring it. Visit the question on the LeetCode [website](https://leetcode.com/problems/generate-parentheses/).

@@ -1,0 +1,3 @@
+# Coin Change
+
+Given coin denominations and a target amount, find the minimum number of coins needed. You build a DP table where each amount stores the fewest coins to make it, using each coin to update future amounts. This is the canonical unbounded knapsack problem and teaches you bottom-up DP where you iterate over amounts rather than items. Visit the question on the LeetCode [website](https://leetcode.com/problems/coin-change/).

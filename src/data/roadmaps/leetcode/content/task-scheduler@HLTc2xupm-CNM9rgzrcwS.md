@@ -1,0 +1,3 @@
+# Task Scheduler
+
+Given a list of tasks and a cooldown n, find the minimum time needed to finish all tasks, with the constraint that the same task must wait n intervals between executions. A greedy approach with a max-heap always schedules the most frequent remaining task, filling cooldown gaps with other tasks or idle time. This problem teaches you to combine a heap with a greedy scheduling strategy. Visit the question on the LeetCode [website](https://leetcode.com/problems/task-scheduler/).

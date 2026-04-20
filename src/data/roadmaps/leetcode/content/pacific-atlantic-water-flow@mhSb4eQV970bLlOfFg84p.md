@@ -1,0 +1,3 @@
+# Pacific Atlantic Water Flow
+
+Given a matrix of heights, find all cells from which water can flow to both the Pacific and Atlantic oceans. You reverse the problem: do BFS inward from each ocean's border, marking all reachable cells, then return cells reachable from both. This problem teaches you that reversing the direction of traversal can turn an exponential problem into a linear one. Visit the question on the LeetCode [website](https://leetcode.com/problems/pacific-atlantic-water-flow/).

@@ -1,0 +1,3 @@
+# Binary Tree Level Order Traversal
+
+Given a binary tree, return its node values level by level. You use a queue to process all nodes at one level before moving to the next, collecting each level into its own list. This is the entry point for tree BFS and teaches you the queue-based level tracking pattern that applies to many tree and graph problems. Visit the question on the LeetCode [website](https://leetcode.com/problems/binary-tree-level-order-traversal/).

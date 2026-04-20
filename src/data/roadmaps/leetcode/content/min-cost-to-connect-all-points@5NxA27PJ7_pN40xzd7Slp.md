@@ -1,0 +1,3 @@
+# Min Cost to Connect All Points
+
+Given a list of points, find the minimum cost to connect all of them where cost is the Manhattan distance between two points. This is a minimum spanning tree problem solvable with Prim's algorithm using a min-heap, always picking the cheapest edge to an unvisited node. This problem teaches you that MST problems feel similar to Dijkstra but the goal is different: connect everything, not find shortest paths. Visit the question on the LeetCode [website](https://leetcode.com/problems/min-cost-to-connect-all-points/).

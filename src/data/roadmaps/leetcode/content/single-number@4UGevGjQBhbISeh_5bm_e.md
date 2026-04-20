@@ -1,0 +1,3 @@
+# Single Number
+
+Given an array where every element appears twice except one, find the element that appears only once. XOR of a number with itself is zero, and XOR of a number with zero is the number itself, so XOR-ing all elements cancels duplicates and leaves the unique one. This problem is the entry point to bit manipulation and teaches you that XOR is a surprisingly powerful tool for finding missing or unique values. Visit the question on the LeetCode [website](https://leetcode.com/problems/single-number/).
