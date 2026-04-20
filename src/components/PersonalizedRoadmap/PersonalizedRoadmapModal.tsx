@@ -53,7 +53,7 @@ export function PersonalizedRoadmapModal(props: PersonalizedRoadmapModalProps) {
         <h2 className="text-lg font-semibold">Personalize Roadmap</h2>
         <div className="mt-0.5 flex flex-col gap-2">
           <label htmlFor={infoFieldId} className="text-balance text-gray-600">
-            Tell us about yourself to personlize this roadmap as per your goals
+            Tell us about yourself to personalize this roadmap as per your goals
             and experience
           </label>
           <textarea
