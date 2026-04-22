@@ -20,6 +20,8 @@
 
 <br>
 
+![roadmap.sh — 85 community-curated, interactive developer roadmaps. Frontend, Backend, DevOps, AI Engineering, System Design and 80+ more tracks. Since 2017.](public/img/hero.png)
+
 ![](https://i.imgur.com/waxVImv.png)
 
 Roadmaps are now interactive, you can click the nodes to read more about the topics.
