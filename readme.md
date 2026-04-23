@@ -53,6 +53,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [AWS Roadmap](https://roadmap.sh/aws)
 - [Cloudflare Roadmap](https://roadmap.sh/cloudflare)
 - [Linux Roadmap](https://roadmap.sh/linux)
+- [Leetcode Roadmap](https://roadmap.sh/leetcode)
 - [Terraform Roadmap](https://roadmap.sh/terraform)
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [BI Analyst Roadmap](https://roadmap.sh/bi-analyst)
