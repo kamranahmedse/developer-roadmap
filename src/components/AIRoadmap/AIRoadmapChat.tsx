@@ -178,7 +178,11 @@ export function AIRoadmapChat(props: AIRoadmapChatProps) {
 
   useImperativeHandle(aiChatActionsRef, () => ({
     handleNodeClick: (node: RoadmapNodeDetails) => {
-      handleSubmitInput(`Explain what is "${node.nodeTitle}" topic in detail.`);
+      const sanitizedTitle = node.nodeTitle
+        .replace(/[\r\n\t]/g, ' ')
+        .trim()
+        .slice(0, 100);
+      handleSubmitInput(`Explain what is "${sanitizedTitle}" topic in detail.`);
     },
   }));
 
