@@ -17,7 +17,6 @@ const __dirname = path.dirname(__filename);
 
 // Usage: tsx ./scripts/editor-roadmap-content.ts <roadmapId>
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-console.log('GEMINI_API_KEY:', GEMINI_API_KEY);
 const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
 const roadmapId = process.argv[2];
 

@@ -29,15 +29,16 @@ const BEST_PRACTICE_CONTENT_DIR = path.join(
 );
 const OpenAI = require('openai');
 
-const openai = new OpenAI({
-  apiKey: OPEN_AI_API_KEY,
-});
+// OpenAI client is initialised inside writeTopicContent
+// to limit the API key scope to function-level only.
+// This avoids holding the API key at module scope.
 
 function getFilesInFolder(folderPath, fileList = {}) {
   const files = fs.readdirSync(folderPath);
 
   files.forEach((file) => {
-    const filePath = path.join(folderPath, file);
+    const safeName = path.basename(file);
+    const filePath = `${path.normalize(folderPath)}${path.sep}${safeName}`;
     const stats = fs.statSync(filePath);
 
     if (stats.isDirectory()) {
@@ -57,6 +58,7 @@ function getFilesInFolder(folderPath, fileList = {}) {
 }
 
 function writeTopicContent(topicTitle) {
+  const openai = new OpenAI({ apiKey: OPEN_AI_API_KEY });
   let prompt = `I will give you a topic and you need to write a brief paragraph with examples (if possible) about why it is important for the "${bestPracticeTitle}". Just reply to the question without adding any other information about the prompt and use simple language. Also do not start your sentences with "XYZ is important because..". Your format should be as follows:
 
 # (Put a heading for the topic)
