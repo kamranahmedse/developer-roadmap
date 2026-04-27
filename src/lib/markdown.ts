@@ -1,6 +1,7 @@
 // @ts-ignore
 import MarkdownIt from 'markdown-it';
 import MarkdownItAsync from 'markdown-it-async';
+import sanitizeHtml from 'sanitize-html';
 
 // replaces @variableName@ with the value of the variable
 export function replaceVariables(
@@ -87,7 +88,18 @@ export async function markdownToHtmlWithHighlighting(markdown: string) {
       return defaultRender(tokens, idx, options, env, self);
     };
 
-    return markdownItAsync.renderAsync(replaceVariables(markdown));
+    const rawHtml = await markdownItAsync.renderAsync(replaceVariables(markdown));
+    return sanitizeHtml(rawHtml, {
+      allowedTags: sanitizeHtml.defaults.allowedTags.concat(['pre', 'code', 'span', 'img']),
+      allowedAttributes: {
+        ...sanitizeHtml.defaults.allowedAttributes,
+        a: ['href', 'name', 'target', 'rel'],
+        code: ['class'],
+        span: ['class', 'style'],
+        pre: ['class', 'style'],
+        img: ['src', 'alt', 'title'],
+      },
+    });
 
   } catch (e) {
     return markdown;
