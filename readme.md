@@ -145,7 +145,7 @@ Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the va
 Clone the repository, install the dependencies and start the application
 
 ```bash
-git clone git@github.com:nilbuild/developer-roadmap.git --depth 1
+git clone git@github.com:kamranahmedse/developer-roadmap.git --depth 1
 cd developer-roadmap
 pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
 pnpm install
