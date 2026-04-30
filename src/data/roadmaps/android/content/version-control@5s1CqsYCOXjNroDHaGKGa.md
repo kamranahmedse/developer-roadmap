@@ -4,4 +4,6 @@ _Version Control_ is a system that records changes to a file or set of files ove
 
 Visit the following resources to learn more:
 
+- [@video@What is Git? Explained in 2 minutes](https://www.youtube.com/watch?v=2ReR1YJrNOM)
 - [@article@Version Control Systems](https://en.wikipedia.org/wiki/Version_control)
+- [@course@What is Git? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
