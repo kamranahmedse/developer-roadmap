@@ -1,0 +1,3 @@
+# Mobile Networks
+ 
+Mobile networks are wireless communication systems that provide connectivity to devices over large geographic areas through a network of cell towers and base stations. They have evolved through generations, from 2G and 3G through 4G to 5G, each offering faster speeds, lower latency, and greater capacity. Understanding mobile network architecture is increasingly important as more devices rely on cellular connectivity and as 5G enables new enterprise and IoT use cases.

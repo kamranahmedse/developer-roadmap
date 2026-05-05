@@ -1,0 +1,3 @@
+# Wireshark
+ 
+Wireshark is an open-source network protocol analyzer that captures and displays the data traveling across a network in real time. Engineers use it to inspect individual packets, decode protocols, diagnose connectivity problems, and investigate security incidents at a granular level. It supports hundreds of protocols and is one of the most widely used tools for deep network troubleshooting and analysis.

@@ -1,0 +1,3 @@
+# Network Devices
+ 
+Network devices are the physical hardware components that make up a network and enable communication between connected devices. Each type of device serves a specific function, such as directing traffic, amplifying signals, or connecting different network segments. Understanding what each device does and how they interact is fundamental to designing and troubleshooting any network.

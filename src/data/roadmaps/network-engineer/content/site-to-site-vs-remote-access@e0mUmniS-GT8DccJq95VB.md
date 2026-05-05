@@ -1,0 +1,3 @@
+# Site-to-Site vs Remote Access
+ 
+Site-to-site VPNs connect two entire networks together — such as a branch office to a headquarters — over an encrypted tunnel, allowing devices on both networks to communicate as if they were on the same LAN. Remote access VPNs allow individual users to securely connect to a corporate network from any location, typically using a VPN client on their device. Both serve different purposes and are often deployed together in enterprise environments to address different connectivity needs.

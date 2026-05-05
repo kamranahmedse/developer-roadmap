@@ -1,0 +1,3 @@
+# FTP / SFTP
+ 
+FTP (File Transfer Protocol) is a standard protocol used to transfer files between a client and a server over a network. It operates over two channels (one for commands and one for data), but transmits information in plain text, making it insecure. SFTP (SSH File Transfer Protocol) is a secure alternative that encrypts both commands and data using SSH, making it the preferred choice for transferring sensitive files.

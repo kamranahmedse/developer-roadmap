@@ -1,0 +1,3 @@
+# QoS (Quality of Service)
+ 
+QoS, or Quality of Service, refers to a set of techniques used to manage network traffic and ensure that critical applications receive the bandwidth, low latency, and reliability they need. Without QoS, all traffic is treated equally, which can cause voice calls to break up or video to buffer when the network is congested. QoS works by classifying, prioritizing, and managing packets so that high-priority traffic is delivered first.

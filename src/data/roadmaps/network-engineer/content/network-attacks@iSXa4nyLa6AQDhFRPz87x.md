@@ -1,0 +1,3 @@
+# Network Attacks
+ 
+Network attacks are deliberate actions taken by malicious actors to disrupt, intercept, or gain unauthorized access to network resources and data. They can target vulnerabilities in protocols, devices, software, or human behavior to compromise the confidentiality, integrity, or availability of a network. Understanding the types of attacks that exist is the first step in designing defenses and responding effectively when incidents occur.

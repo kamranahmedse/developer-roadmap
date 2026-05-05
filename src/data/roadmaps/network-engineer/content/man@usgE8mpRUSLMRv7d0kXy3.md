@@ -1,0 +1,3 @@
+# MAN
+ 
+A MAN, or Metropolitan Area Network, is a network that covers a geographic area roughly the size of a city or a large campus. It is larger than a LAN but smaller than a WAN, often used by organizations or service providers to connect multiple buildings or locations within the same metropolitan region. MANs typically use fiber optic cables or wireless links to achieve high-speed connectivity across the area.

@@ -1,0 +1,3 @@
+# Packet prioritization
+ 
+Packet prioritization is the process of classifying network traffic and assigning different levels of importance to different types of packets so that critical traffic is processed and delivered first. Real-time traffic, like VoIP and video conferencing, is given higher priority than background activities like file downloads or software updates. This ensures that time-sensitive applications remain functional even when the network is under heavy load.

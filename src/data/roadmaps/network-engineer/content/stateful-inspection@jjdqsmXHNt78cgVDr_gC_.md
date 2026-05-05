@@ -1,0 +1,3 @@
+# Stateful Inspection
+ 
+Stateful inspection, also known as dynamic packet filtering, is a firewall technique that tracks the state of active network connections and makes filtering decisions based on context, not just individual packets. By maintaining a state table of established connections, a stateful firewall can allow response packets that belong to a legitimate session while blocking unsolicited incoming traffic. This provides significantly better security than simple packet filtering without sacrificing too much performance.

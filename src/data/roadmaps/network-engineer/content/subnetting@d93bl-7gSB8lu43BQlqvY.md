@@ -1,0 +1,3 @@
+# Subnetting
+ 
+Subnetting is the process of dividing a large network into smaller, more manageable sub-networks called subnets. It helps improve network performance by reducing broadcast traffic and allows organizations to organize their network logically, such as separating departments or locations. Subnetting works by borrowing bits from the host portion of an IP address to create a subnet identifier, controlled by the subnet mask.

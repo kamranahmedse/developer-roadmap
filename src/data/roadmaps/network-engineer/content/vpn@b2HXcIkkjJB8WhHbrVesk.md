@@ -1,0 +1,3 @@
+# VPN
+ 
+A VPN, or Virtual Private Network, creates an encrypted tunnel between a device and a remote network over the public Internet, allowing secure communication as if the device were directly connected to that network. Organizations use VPNs to let remote employees securely access internal resources, while individuals use them for privacy and to bypass geographic content restrictions. VPNs mask the user's IP address and encrypt all traffic passing through the tunnel.

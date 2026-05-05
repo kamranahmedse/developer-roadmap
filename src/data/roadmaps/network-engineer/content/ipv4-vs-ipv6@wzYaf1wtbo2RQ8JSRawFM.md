@@ -1,0 +1,3 @@
+# IPv4 vs IPv6
+ 
+IPv4 is the original version of the Internet Protocol, using 32-bit addresses written in dotted decimal notation (e.g., 192.168.1.1), allowing for about 4.3 billion unique addresses. IPv6 was introduced to solve the problem of IPv4 address exhaustion, using 128-bit addresses written in hexadecimal (e.g., 2001:0db8::1), providing an astronomically larger address space. Beyond address size, IPv6 also introduces improvements in routing efficiency, auto-configuration, and built-in security features.

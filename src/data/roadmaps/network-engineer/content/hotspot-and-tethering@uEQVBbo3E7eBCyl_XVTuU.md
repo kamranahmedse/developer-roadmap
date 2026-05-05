@@ -1,0 +1,3 @@
+# Hotspot and Tethering
+ 
+A hotspot is a physical location or device that provides wireless Internet access to other devices, typically by sharing a cellular data connection. Tethering is the act of connecting a device, such as a laptop, to a smartphone's mobile data connection via Wi-Fi, USB, or Bluetooth to access the Internet. Both concepts are relevant for network engineers when designing mobile connectivity solutions or troubleshooting remote access scenarios.

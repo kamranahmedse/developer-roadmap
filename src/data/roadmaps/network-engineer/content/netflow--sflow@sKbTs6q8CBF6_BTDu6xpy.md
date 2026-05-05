@@ -1,0 +1,3 @@
+# NetFlow / sFlow
+ 
+NetFlow is a Cisco-developed protocol that collects and exports metadata about IP traffic flows passing through a network device, providing visibility into who is communicating with whom, how much data is being exchanged, and what protocols are in use. sFlow is a similar, vendor-neutral sampling-based protocol that works across a broader range of hardware. Both are used for traffic analysis, capacity planning, anomaly detection, and security monitoring without requiring full packet capture.

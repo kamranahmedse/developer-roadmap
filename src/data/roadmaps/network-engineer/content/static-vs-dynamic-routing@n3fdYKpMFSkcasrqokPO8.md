@@ -1,0 +1,3 @@
+# Static vs Dynamic Routing
+ 
+Static routing involves manually configuring fixed routes in a router's routing table, which do not change unless an administrator updates them. It is simple and predictable, but does not adapt automatically to network changes or failures. Dynamic routing uses routing protocols that allow routers to automatically discover routes, share information with neighboring routers, and adapt to topology changes in real time.

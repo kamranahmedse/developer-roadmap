@@ -1,0 +1,3 @@
+# IDS / IPS
+ 
+An IDS (Intrusion Detection System) monitors network traffic for suspicious patterns and known attack signatures, alerting administrators when potential threats are detected without taking direct action. An IPS (Intrusion Prevention System) goes a step further by automatically blocking or dropping malicious traffic in real time based on the same detection mechanisms. Together, they provide visibility into network threats and an active layer of defense against intrusions.

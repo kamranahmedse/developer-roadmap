@@ -1,0 +1,3 @@
+# Modems
+ 
+A modem (modulator-demodulator) is a device that converts digital data from a computer into a format suitable for transmission over a communication medium such as telephone lines or cable, and vice versa. It serves as the bridge between your local network and your Internet Service Provider's infrastructure. Modern modems often include router functionality built in, combining both devices into a single unit.

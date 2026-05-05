@@ -1,0 +1,3 @@
+# Access Points
+ 
+A wireless access point (AP) is a device that creates a wireless local area network, typically in an office or large building, by connecting to a wired router or switch and broadcasting a Wi-Fi signal. Multiple access points can be deployed across a large area to extend wireless coverage and allow devices to roam seamlessly. Access points are distinct from routers —they extend the network wirelessly but do not typically perform routing functions on their own.

@@ -1,0 +1,3 @@
+# Introduction
+ 
+A network engineer is a technology professional responsible for designing, building, and maintaining the communication infrastructure that allows computers and devices to exchange data. This includes planning how networks are structured, selecting and configuring hardware like routers and switches, troubleshooting connectivity issues, and ensuring the network remains secure and reliable. Network engineers work across a wide range of environments and must understand both the theoretical principles behind how data travels and the practical skills needed to implement and manage real-world systems.

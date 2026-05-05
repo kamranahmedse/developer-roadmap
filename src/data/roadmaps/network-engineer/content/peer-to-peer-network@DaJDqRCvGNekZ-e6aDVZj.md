@@ -1,0 +1,3 @@
+# Peer-to-Peer Network
+ 
+A peer-to-peer (P2P) network is one where each device, or peer, can act as both a client and a server, sharing resources directly with other devices without a central server. This model is simpler and cheaper to set up than a client-server network, making it common in small home networks or applications like file sharing. However, P2P networks can be harder to manage and secure as they grow in size.

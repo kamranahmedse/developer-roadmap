@@ -1,0 +1,3 @@
+# Wireless Networking
+ 
+Wireless networking refers to the technology that allows devices to connect to a network and communicate without physical cables, using radio frequency signals instead. It encompasses standards like Wi-Fi, Bluetooth, and cellular networks, each suited to different ranges and use cases. Wireless networks introduce unique considerations around signal strength, interference, frequency bands, and security that wired networks do not face.

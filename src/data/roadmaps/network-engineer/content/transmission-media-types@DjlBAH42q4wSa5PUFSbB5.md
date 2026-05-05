@@ -1,0 +1,3 @@
+# Transmission Media Types
+ 
+Transmission media refers to the physical or wireless channels through which data travels between devices. Wired media includes twisted pair cables (like Ethernet), coaxial cables, and fiber optic cables, each with different speeds, ranges, and interference characteristics. Wireless media uses radio waves, microwaves, or infrared signals to transmit data without physical connections.

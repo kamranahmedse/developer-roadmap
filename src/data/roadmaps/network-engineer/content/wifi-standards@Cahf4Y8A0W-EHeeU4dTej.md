@@ -1,0 +1,3 @@
+# WiFi Standards
+ 
+Wi-Fi standards are a series of specifications developed by the IEEE under the 802.11 family that define how wireless networks operate. Each generation, from 802.11b and 802.11g through to 802.11ac (Wi-Fi 5) and 802.11ax (Wi-Fi 6), brings improvements in speed, range, efficiency, and the ability to handle more simultaneous connections. Understanding the differences between standards helps in selecting the right hardware for a given environment.

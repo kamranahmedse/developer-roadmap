@@ -1,0 +1,3 @@
+# MAC Address Tables
+ 
+A MAC address table, also called a CAM (Content Addressable Memory) table, is a database maintained by a network switch that maps MAC addresses to the specific ports those devices are connected to. When a frame arrives, the switch looks up the destination MAC address in this table to determine which port to forward the frame to. If the address is not found, the switch floods the frame to all ports until it learns the correct mapping.

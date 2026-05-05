@@ -1,0 +1,3 @@
+# Physical
+ 
+The Physical layer is the first and lowest layer of the OSI model, responsible for the actual transmission of raw bits over a physical medium such as copper cables, fiber optics, or radio waves. It defines the electrical, mechanical, and timing specifications for hardware components like network cables, connectors, and network interface cards. Everything at this layer deals with the physical delivery of signals, not their meaning.

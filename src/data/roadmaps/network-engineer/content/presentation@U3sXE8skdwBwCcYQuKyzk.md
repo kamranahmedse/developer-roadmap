@@ -1,0 +1,3 @@
+# Presentation
+ 
+The Presentation layer is the sixth layer of the OSI model, responsible for translating data between the format used by the application and the format used for network transmission. It handles tasks such as data encryption and decryption, compression, and character encoding. This layer ensures that data sent from one system can be read by another, regardless of differences in internal data representation.

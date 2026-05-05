@@ -1,0 +1,3 @@
+# IPSec vs SSL VPN
+ 
+IPSec (Internet Protocol Security) VPNs operate at the network layer, encrypting all IP traffic between two endpoints and are commonly used for site-to-site connections between networks. SSL/TLS VPNs operate at the application layer, typically accessible through a web browser or lightweight client, and are better suited for remote individual user access. The choice between the two depends on the use case: IPSec is generally preferred for permanent network-to-network tunnels, while SSL VPNs offer more flexibility for end-user remote access.

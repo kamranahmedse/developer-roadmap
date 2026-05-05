@@ -1,0 +1,3 @@
+# How does the Internet Work?
+ 
+The Internet is a massive global network of interconnected computers and devices that communicate by sending data to each other using a shared set of rules. When you visit a website, your device sends a request that travels through multiple routers and networks until it reaches the server hosting that site, which then sends the data back to your screen. This exchange happens through a system of protocols —most notably TCP/IP— that break data into small packets, route them across the network, and reassemble them at the destination.

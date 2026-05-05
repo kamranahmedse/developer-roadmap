@@ -1,0 +1,3 @@
+# MPLS
+ 
+MPLS, or Multiprotocol Label Switching, is a technique for speeding up network traffic by using short labels to direct packets along predetermined paths rather than making complex routing decisions at each hop. When a packet enters an MPLS network, it is assigned a label, and subsequent routers forward it based on that label without needing to inspect the IP header. MPLS is widely used by service providers to manage traffic efficiently and deliver services like VPNs and quality of service guarantees.

@@ -1,0 +1,3 @@
+# Proxy
+ 
+A proxy firewall operates at the application layer and acts as an intermediary between internal clients and external servers, inspecting the full content of network requests and responses. Instead of allowing direct connections, all traffic is routed through the proxy, which can apply content filtering, authentication, and logging. Because it terminates and re-establishes each connection, a proxy firewall provides deep inspection but can introduce latency.

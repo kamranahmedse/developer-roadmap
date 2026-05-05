@@ -1,0 +1,3 @@
+# SAN
+ 
+A SAN, or Storage Area Network, is a specialized high-speed network that provides block-level access to shared storage devices such as disk arrays and tape libraries. Unlike a regular network where files are shared, a SAN makes storage appear as locally attached to the servers that use it, enabling fast and reliable data access. SANs are commonly used in enterprise environments to support databases, virtualization, and backup systems.

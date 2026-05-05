@@ -1,0 +1,3 @@
+# SMTP / IMAP
+ 
+SMTP (Simple Mail Transfer Protocol) is the protocol used to send emails from a client to a server or between mail servers. IMAP (Internet Message Access Protocol) is used by email clients to retrieve and manage messages stored on a mail server, allowing access from multiple devices while keeping messages synchronized. Together, these protocols handle the sending and receiving sides of email communication.

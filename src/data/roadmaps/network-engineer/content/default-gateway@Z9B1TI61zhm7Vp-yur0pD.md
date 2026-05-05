@@ -1,0 +1,3 @@
+# Default Gateway
+ 
+A default gateway is the IP address of the router that a device uses to send traffic destined for networks outside its own local subnet. When a device does not have a specific route for a destination, it forwards the packet to the default gateway, which then handles the routing decision. In most home and office networks, the default gateway is the IP address of the local router.

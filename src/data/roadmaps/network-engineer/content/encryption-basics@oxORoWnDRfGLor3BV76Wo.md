@@ -1,0 +1,3 @@
+# Encryption Basics
+ 
+Encryption is the process of converting readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and a key, so that only authorized parties with the correct key can decrypt and read it. It is the foundation of data security in networking, protecting information in transit and at rest from unauthorized access. The two main types are symmetric encryption, where the same key is used to encrypt and decrypt, and asymmetric encryption, which uses a pair of public and private keys.

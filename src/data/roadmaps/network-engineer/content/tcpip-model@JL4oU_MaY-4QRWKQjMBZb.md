@@ -1,0 +1,3 @@
+# TCP/IP Model
+ 
+The TCP/IP model is a practical, four-layer framework that describes how data is transmitted over the Internet and most modern networks. It was developed by the U.S. Department of Defense and serves as the foundation for Internet communication. Unlike the OSI model's seven layers, the TCP/IP model consolidates functions into four layers: Network Access, Internet, Transport, and Application.

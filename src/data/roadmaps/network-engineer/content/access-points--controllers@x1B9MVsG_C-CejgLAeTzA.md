@@ -1,0 +1,3 @@
+# Access Points & Controllers
+ 
+Wireless access points (APs) are devices that broadcast Wi-Fi signals and connect wireless clients to a wired network. In larger deployments, multiple access points are managed by a wireless controller, which centralizes configuration, monitoring, and roaming policies across all APs. This controller-based architecture simplifies management and ensures consistent performance and security across the entire wireless network.

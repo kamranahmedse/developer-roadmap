@@ -1,0 +1,3 @@
+# Link Aggregation
+ 
+Link aggregation is a technique that combines multiple physical network connections between two devices into a single logical link, increasing bandwidth and providing redundancy. If one physical link fails, the others continue to carry traffic without interruption. It is standardized under IEEE 802.3ad (LACP) and is commonly used between switches, servers, and storage devices to improve both performance and reliability.
