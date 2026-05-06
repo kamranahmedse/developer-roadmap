@@ -1,3 +1,8 @@
 # Next-Generation
- 
+
 A Next-Generation Firewall (NGFW) is an advanced firewall that goes beyond traditional packet filtering and stateful inspection to include deep packet inspection, application awareness, intrusion prevention, and user identity tracking. NGFWs can identify and control traffic based on the specific application being used, regardless of port or protocol, and can detect and block sophisticated threats in real time. They represent the current standard for enterprise perimeter security.
+
+Visit the following resources to learn more:
+
+- [@article@What is a next-generation firewall (NGFW)?](https://www.cloudflare.com/en-gb/learning/security/what-is-next-generation-firewall-ngfw/)
+- [@video@What is Next Generation Firewalls? | Next Gen Firewalls Explained | NGFWS](https://www.youtube.com/watch?v=KsELeMSYZN0)

@@ -1,3 +1,8 @@
 # Traffic shaping
- 
+
 Traffic shaping is a QoS technique used to control the rate at which data is transmitted on a network, smoothing out bursts and enforcing bandwidth limits for specific types of traffic. By delaying or queuing packets that exceed a defined rate, traffic shaping ensures that no single application or user monopolizes network resources. It is commonly used by ISPs and enterprises to manage congestion and maintain consistent performance across the network.
+
+Visit the following resources to learn more:
+
+- [@article@QoS Traffic Shaping Explained](https://networklessons.com/quality-of-service/qos-traffic-shaping-explained)
+- [@video@What is Traffic Shaping and Policing?](https://www.youtube.com/watch?v=khS8c1WrWfU)
