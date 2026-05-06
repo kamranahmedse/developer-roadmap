@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@What is Serverless?](https://www.redhat.com/en/topics/cloud-native-apps/what-is-serverless)
 - [@video@What is Serverless?](https://www.youtube.com/watch?v=vxJobGtqKVM)
-- [@feed@Explore top posts about Serverless](https://app.daily.dev/tags/serverless?ref=roadmapsh)

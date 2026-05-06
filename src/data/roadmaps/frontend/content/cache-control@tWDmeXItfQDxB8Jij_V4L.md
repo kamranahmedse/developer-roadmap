@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [@article@Cache-Control header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control)
 - [@article@What is cache-control? | Cache explained](https://www.cloudflare.com/en-gb/learning/cdn/glossary/what-is-cache-control/)
 - [@video@Two-Minute Tech Tuesdays - Cache-Control Header](https://www.youtube.com/watch?v=8TBWJo094yA)
-- [@video@Deep Dive into HTTP Caching: cache-control, no-cache, no-store, max-age, ETag and etc.](https://www.youtube.com/watch?v=Cy2ZJOBgk84)
+- [@video@Deep Dive into HTTP Caching](https://www.youtube.com/watch?v=Cy2ZJOBgk84)

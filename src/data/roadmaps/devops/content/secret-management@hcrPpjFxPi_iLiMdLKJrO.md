@@ -1,6 +1,6 @@
 # Secret Management
 
-Secret management refers to the secure handling, storage, and distribution of sensitive information such as passwords, API keys, and certificates within an organization's IT infrastructure. It involves using specialized tools and practices to protect secrets from unauthorized access while ensuring they are available to authorized systems and users when needed. Secret management solutions typically offer features like encryption at rest and in transit, access controls, auditing, rotation policies, and integration with various platforms and services. These systems aim to centralize secret storage, reduce the risk of exposure, automate secret lifecycle management, and provide seamless integration with applications and DevOps workflows. Effective secret management is crucial for maintaining security, compliance, and operational efficiency in modern, complex IT environments.
+Secret management refers to the practices and tools used to securely store, access, and distribute sensitive information such as passwords, API keys, tokens, and certificates. Rather than hardcoding secrets in code or config files, secret management systems provide a controlled way to inject credentials into applications at runtime.
 
 Visit the following resources to learn more:
 

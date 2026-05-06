@@ -6,5 +6,6 @@ This is very different from traditional programming, where you must know exact s
 
 Visit the following resources to learn more:
 
+- [@article@Vibe Coding Best Practices: How To Get Consistent Results](https://roadmap.sh/vibe-coding/best-practices)
 - [@article@The Unbearable Lightness of Coding](https://towardsdatascience.com/the-unbearable-lightness-of-coding/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@video@What is Vibe Coding?](https://www.youtube.com/watch?v=5OWurmg41tI)

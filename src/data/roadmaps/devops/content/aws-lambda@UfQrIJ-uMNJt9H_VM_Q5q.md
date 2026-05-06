@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@AWS Lambda Introduction](https://docs.aws.amazon.com/lambda/latest/operatorguide/intro.html)
 - [@video@AWS Lambda Tutorial: Getting Started with Serverless Computing](https://www.youtube.com/watch?v=RtiWU1DrMaM)
-- [@feed@Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)

@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity#0)
 - [@article@Hands-On With Antigravity: Google’s Newest AI Coding Experiment](https://thenewstack.io/hands-on-with-antigravity-googles-newest-ai-coding-experiment/)
 - [@video@Welcome to Google Antigravity 🚀](https://www.youtube.com/watch?v=SVCBA-pBgt0)
-- [@video@Antigravity + Stitch MCP: AI Agents That Build Complete Websites](https://www.youtube.com/watch?v=7wa4Ey_tCCE)

@@ -34,6 +34,6 @@ The application should handle loading, empty, and error states effectively. Afte
 Here are the links to the resources you will need for this project:
 
 - [GitHub Repository Search API](https://docs.github.com/en/rest/reference/search#search-repositories)
-- [Programming Language Data](https://raw.githubusercontent.com/kamranahmedse/githunt/master/src/components/filters/language-filter/languages.json)
+- [Programming Language Data](https://raw.githubusercontent.com/nilbuild/githunt/master/src/components/filters/language-filter/languages.json)
 
 This project will help you practice API integration, managing asynchronous data, and enhancing user experience with responsive UI states.

@@ -6,7 +6,7 @@ export function AuthorCredentials() {
   return (
     <div className="flex items-center gap-3 text-white lg:mt-auto">
       <img
-        src="https://github.com/kamranahmedse.png"
+        src="https://github.com/nilbuild.png"
         className="aspect-[4/5] h-[110px] w-[88px] rounded-xl object-cover shadow-md"
         alt="Kamran Ahmed"
       />
@@ -23,7 +23,7 @@ export function AuthorCredentials() {
 
         <div className="flex flex-col gap-1">
           <a
-            href="https://github.com/kamranahmedse"
+            href="https://github.com/nilbuild"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex cursor-pointer items-center gap-1 rounded-md bg-gradient-to-r from-yellow-500/15 to-orange-500/15 px-2 py-1.5 backdrop-blur-sm transition-all duration-200 hover:border-yellow-400/40 hover:from-yellow-500/25 hover:to-orange-500/25"

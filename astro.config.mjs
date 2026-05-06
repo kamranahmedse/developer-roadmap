@@ -60,7 +60,7 @@ export default defineConfig({
               '/',
               '#',
               'mailto:',
-              'https://github.com/kamranahmedse',
+              'https://github.com/nilbuild',
               'https://thenewstack.io',
               'https://kamranahmed.info',
               'https://roadmap.sh',

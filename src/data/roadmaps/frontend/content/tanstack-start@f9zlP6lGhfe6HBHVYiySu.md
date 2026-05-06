@@ -8,5 +8,5 @@ Visit the following resources to learn more:
 - [@official@Tanstack Start Docs](https://tanstack.com/start/latest/docs/framework/react/overview)
 - [@official@Getting Started](https://tanstack.com/start/latest/docs/framework/react/getting-started)
 - [@article@An introduction to the TanStack Start framework](https://blog.logrocket.com/tanstack-start-overview/)
-- [@video@TanStack Start Full Course 2025 | Become a TanStack Start Pro in 1 Hour](https://www.youtube.com/watch?v=s4I4JtOZNgg)
+- [@video@TanStack Start Full Course 2025](https://www.youtube.com/watch?v=s4I4JtOZNgg)
 - [@video@Tanstack Start is now my Go-To Framework](https://www.youtube.com/watch?v=TWWS_lo4kOA)

@@ -8,5 +8,5 @@ Visit the following resources to learn more:
 - [@official@Model Context Protocol](https://modelcontextprotocol.io/introduction)
 - [@opensource@modelcontexprotocol](https://github.com/modelcontextprotocol/modelcontextprotocol)
 - [@article@The Ultimate Guide to MCP](https://guangzhengli.com/blog/en/model-context-protocol)
-- [@article@A Clear Intro to MCP (Model Context Protocol) with Code Examples](https://towardsdatascience.com/clear-intro-to-mcp/)
+- [@article@A Clear Intro to MCP with Code Examples](https://towardsdatascience.com/clear-intro-to-mcp/)
 - [@article@Model Context Protocol (MCP): A Guide With Demo Project](https://www.datacamp.com/tutorial/mcp-model-context-protocol)

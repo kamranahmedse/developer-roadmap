@@ -1,6 +1,6 @@
 # Reverse Proxy
 
-A reverse proxy is a server that sits between client devices and backend servers, intercepting requests from clients and forwarding them to appropriate backend servers. It acts on behalf of the servers, providing benefits such as load balancing, caching, SSL termination, and security. Reverse proxies can distribute incoming traffic across multiple servers to improve performance and reliability, cache frequently requested content to reduce server load, handle SSL encryption and decryption to offload this task from backend servers, and provide an additional layer of security by hiding server details. Common uses include improving web application performance, enabling microservices architectures, and enhancing security in web hosting environments. Popular reverse proxy software includes NGINX, HAProxy, and Apache with mod\_proxy.
+A reverse proxy is a server that sits in front of one or more web servers and intercepts requests from clients. Instead of a client connecting directly to an application server, it connects to the reverse proxy, which then forwards the request to the appropriate backend server and returns the response back to the client. This setup is commonly used to manage traffic load, improve security by hiding the identity of backend servers, and handle tasks like SSL termination or caching to optimize performance.
 
 Visit the following resources to learn more:
 

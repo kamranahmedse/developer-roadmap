@@ -5,6 +5,7 @@ Effective utilization of Claude Code involves adopting key strategies for optima
 Visit the following resources to learn more:
 
 - [@official@Best Practices for Claude Code](https://code.claude.com/docs/en/best-practices#best-practices-for-claude-code)
+- [@article@Vibe Coding Best Practices: How To Get Consistent Results](https://roadmap.sh/vibe-coding/best-practices)
 - [@article@What are your "best practices" for Claude Code? : r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/comments/1nris9w/what_are_your_best_practices_for_claude_code/)
 - [@article@How I use Claude Code (+ my best tips)](https://www.builder.io/blog/claude-code)
 - [@video@Claude Code Workflows That Will 10x Your Productivity](https://www.youtube.com/watch?v=yZvDo_n12ns&t=145s)

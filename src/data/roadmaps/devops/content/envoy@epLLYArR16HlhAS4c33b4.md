@@ -1,10 +1,9 @@
 # Envoy
 
-Originally created at Lyft, Envoy is a high-performance data plane designed for service mesh architectures. Lyft open sourced it and donated it to the CNCF, where it is now one of the CNCF’s graduated open source projects. Envoy is a self contained process that is designed to run alongside every application server. All of the Envoys form a transparent communication mesh in which each application sends and receives messages to and from localhost and is unaware of the network topology.
+Envoy is a high-performance, open-source edge and service proxy originally developed at Lyft. It is designed for cloud-native applications and serves as the data plane in many service mesh implementations, including Istio, handling tasks like load balancing, service discovery, circuit breaking, and observability.
 
 Visit the following resources to learn more:
 
 - [@official@Envoy](https://www.envoyproxy.io/)
 - [@opensource@envoyproxy/envoy](https://github.com/envoyproxy/envoy)
 - [@article@What is Envoy?](https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy)
-- [@feed@Explore top posts about Envoy](https://app.daily.dev/tags/envoy?ref=roadmapsh)

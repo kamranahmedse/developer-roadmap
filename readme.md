@@ -53,6 +53,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [AWS Roadmap](https://roadmap.sh/aws)
 - [Cloudflare Roadmap](https://roadmap.sh/cloudflare)
 - [Linux Roadmap](https://roadmap.sh/linux)
+- [Leetcode Roadmap](https://roadmap.sh/leetcode)
 - [Terraform Roadmap](https://roadmap.sh/terraform)
 - [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [BI Analyst Roadmap](https://roadmap.sh/bi-analyst)
@@ -144,7 +145,7 @@ Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the va
 Clone the repository, install the dependencies and start the application
 
 ```bash
-git clone git@github.com:kamranahmedse/developer-roadmap.git --depth 1
+git clone git@github.com:nilbuild/developer-roadmap.git --depth 1
 cd developer-roadmap
 pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
 pnpm install
@@ -169,8 +170,8 @@ pnpm dev
 
 ## Thanks to all contributors ❤
 
- <a href = "https://github.com/kamranahmedse/developer-roadmap/graphs/contributors">
-   <img src = "https://contrib.rocks/image?repo=kamranahmedse/developer-roadmap"/>
+ <a href = "https://github.com/nilbuild/developer-roadmap/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=nilbuild/developer-roadmap"/>
  </a>
 
 ## License

@@ -1,7 +1,7 @@
 import { type ReactNode, useState } from 'react';
 import type {
-  LeaderboardUserDetails,
-  ListLeaderboardStatsResponse,
+    LeaderboardUserDetails,
+    ListLeaderboardStatsResponse,
 } from '../../api/leaderboard';
 import { cn } from '../../lib/classname';
 import { FolderKanban, GitPullRequest, Users, Users2, Zap } from 'lucide-react';
@@ -192,7 +192,7 @@ function LeaderboardLane(props: LeaderboardLaneProps) {
                   />
                   {isGitHubUser ? (
                     <a
-                      href={`https://github.com/kamranahmedse/developer-roadmap/pulls?q=is%3Apr+is%3Aclosed+author%3A${user.name}`}
+                      href={`https://github.com/nilbuild/developer-roadmap/pulls?q=is%3Apr+is%3Aclosed+author%3A${user.name}`}
                       target="_blank"
                       className="truncate font-medium underline underline-offset-2"
                     >

@@ -1,6 +1,6 @@
 # Availability
 
-Availability is the percentage of time that a system is functional and working as intended, generally referred to as uptime. Availability can be affected by hardware or software errors, infrastructure problems, malicious attacks, and system load. Many cloud providers typically offer their users a service level agreement (SLA) that specifies the exact percentages of promised uptime/downtime. Availability is related to reliability in this sense. For example, a company might promise 99.99% uptime for their services.
+Availability patterns are design approaches that ensure a system remains operational and accessible even in the face of failures. They include techniques such as health endpoint monitoring, queue-based load leveling, and the throttling pattern, all aimed at preventing downtime and gracefully handling spikes or partial failures.
 
 Visit the following resources to learn more:
 

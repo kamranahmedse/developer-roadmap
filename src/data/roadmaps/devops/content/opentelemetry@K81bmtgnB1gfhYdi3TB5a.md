@@ -1,6 +1,6 @@
 # OpenTelemetry
 
-OpenTelemetry is an open-source observability framework for cloud-native software, providing a standardized way to collect and export telemetry data such as metrics, logs, and traces. It aims to make observability a built-in feature of cloud-native applications by offering a vendor-neutral, unified set of APIs, libraries, agents, and instrumentation. OpenTelemetry simplifies the implementation of observability across different languages and platforms, enabling developers to instrument their code once and send data to multiple backends. It supports automatic instrumentation for many popular frameworks and libraries, reducing the effort required to add observability to applications. By providing a consistent approach to data collection and export, OpenTelemetry facilitates better interoperability between observability tools and platforms in modern, distributed software environments.
+OpenTelemetry is an open-source observability framework that provides standardized APIs, SDKs, and tools for collecting traces, metrics, and logs from applications. It is vendor-neutral and supported by most major observability platforms, making it the emerging standard for instrumenting cloud-native applications.
 
 Visit the following resources to learn more:
 

@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@AI in software development - IBM](https://www.ibm.com/think/topics/ai-in-software-development)
 - [@article@AI in software development](https://github.com/resources/articles/ai-in-software-development)
-- [@article@The right way to implement AI into your frontend development workflow](https://blog.logrocket.com/frontend-ai-tools-for-developers/)
+- [@article@The right way to implement AI into your frontend workflow](https://blog.logrocket.com/frontend-ai-tools-for-developers/)
 - [@article@5 Best AI Models For Frontend Development and UI Design](https://www.index.dev/blog/ai-models-frontend-development-ui-generation)

@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)
 - [@article@Streaming API responses for AI - OpenAI](https://platform.openai.com/docs/guides/streaming-responses)
-- [@article@Streaming Responses in AI: How AI Outputs Are Generated in Real-Time](https://dev.to/pranshu_kabra_fe98a73547a/streaming-responses-in-ai-how-ai-outputs-are-generated-in-real-time-18kb)
+- [@article@Streaming Responses in AI](https://dev.to/pranshu_kabra_fe98a73547a/streaming-responses-in-ai-how-ai-outputs-are-generated-in-real-time-18kb)

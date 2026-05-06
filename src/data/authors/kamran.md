@@ -7,7 +7,7 @@ employment:
 social:
   linkedin: 'https://www.linkedin.com/in/kamrify'
   twitter: 'https://twitter.com/kamrify'
-  github: 'https://github.com/kamranahmedse'
+  github: 'https://github.com/nilbuild'
   website: 'https://kamranahmed.info'
 ---
 

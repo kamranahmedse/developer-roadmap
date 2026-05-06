@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@Vercel](https://vercel.com/)
 - [@official@Vercel Docs](https://vercel.com/docs)
 - [@video@Vercel: Product Walkthrough](https://www.youtube.com/watch?v=sPmat30SE4k)
-- [@feed@Explore top posts about Vercel](https://app.daily.dev/tags/vercel?ref=roadmapsh)

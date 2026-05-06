@@ -15,4 +15,4 @@ In this example, the function 'add' only accepts integers and also returns an in
 
 Visit the following resources to learn more:
 
-- [@official@Type Declarations](https://www.php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration)
+- [@official@Type Declarations](https://www.php.net/manual/en/language.types.declarations.php)

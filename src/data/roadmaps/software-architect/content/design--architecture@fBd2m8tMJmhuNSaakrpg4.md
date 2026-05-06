@@ -7,4 +7,4 @@ Practically, architects improve by experimenting with various technology stacks,
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Software Design Roadmap](https://roadmap.sh/software-design-architecture)
-- [@opensource@Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+- [@opensource@Design Patterns for Humans](https://github.com/nilbuild/design-patterns-for-humans)

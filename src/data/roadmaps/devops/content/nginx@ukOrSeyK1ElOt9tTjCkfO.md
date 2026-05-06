@@ -1,14 +1,9 @@
 # Nginx
 
-NGINX is a high-performance, open-source web server, reverse proxy, and load balancer. Known for its efficiency in handling concurrent connections, NGINX uses an event-driven, asynchronous architecture that consumes minimal resources. It excels at serving static content, proxying requests to application servers, and load balancing across multiple backends. NGINX is widely used for its ability to improve website performance, scalability, and security. It supports various protocols including HTTP, HTTPS, SMTP, and WebSocket, and offers features like SSL/TLS termination, caching, and content compression. Popular in both small-scale and enterprise environments, NGINX is a key component in many modern web architectures, particularly in microservices and containerized deployments.
+Nginx is a high-performance web server that also functions as a reverse proxy, load balancer, and HTTP cache. It is designed to handle a large number of concurrent connections with low memory usage, making it an efficient tool for serving static content or distributing incoming traffic across multiple backend application servers.
 
 Visit the following resources to learn more:
 
 - [@official@Nginx](https://nginx.org/)
-- [@official@Nginx Documentation](https://nginx.org/en/docs/)
-- [@article@Basic NGINX Setup on Ubuntu](https://swissmade.host/en/blog/basic-nginx-setup-ubuntu-guide-to-a-functional-and-secure-website-serving)
-- [@article@Understanding the Nginx Configuration File Structure](https://www.digitalocean.com/community/tutorials/understanding-the-nginx-configuration-file-structure-and-configuration-contexts)
-- [@course@NGINX Full Course](https://www.youtube.com/watch?v=0VGEgXfNMIE)
+- [@article@Basic NGINX Setup on Ubuntu: Guide to a Functional and Secure Website Serving](https://swissmade.host/en/blog/basic-nginx-setup-ubuntu-guide-to-a-functional-and-secure-website-serving)
 - [@video@NGINX Explained in 100 Seconds](https://www.youtube.com/watch?v=JKxlsvZXG7c)
-- [@video@Nginx Crash Course](https://www.youtube.com/watch?v=7VAI73roXaY)
-- [@feed@Explore top posts about Nginx](https://app.daily.dev/tags/nginx?ref=roadmapsh)

@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@hat is AI code refactoring? - IBM](https://www.ibm.com/think/topics/ai-code-refactoring)
 - [@article@What is AI code refactoring?](https://graphite.com/guides/what-is-ai-code-refactoring)
-- [@video@Using AI to Refactor Legacy Code: A Practical Guide with Scott Wierschem](https://www.youtube.com/watch?v=B7Yt-WmlW2I)
-- [@video@AI-Driven Code Refactoring: Improving Legacy Codebases Automatically - Jorrik Klijnsma](https://www.youtube.com/watch?v=u8tvVxUOwvY)
+- [@video@Using AI to Refactor Legacy Code:](https://www.youtube.com/watch?v=B7Yt-WmlW2I)
+- [@video@AI-Driven Code Refactoring: Improving Legacy Codebases](https://www.youtube.com/watch?v=u8tvVxUOwvY)

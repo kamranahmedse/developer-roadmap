@@ -15,7 +15,7 @@ tags:
 
 In this short series of lessons, we are going to create a react app from scratch. We are mainly going to use React and Chakra UI and see how we can build an application that fetches the trending projects from GitHub's API and shows you in the form of listing.
 
-If you want to get an idea of what we are going to be building have a look at [GitHunt](https://kamranahmed.info/githunt). Also the complete source code can be found at [@kamranahmedse/githunt](https://github.com/kamranahmedse/githunt)
+If you want to get an idea of what we are going to be building have a look at [GitHunt](https://kamranahmed.info/githunt). Also the complete source code can be found at [@nilbuild/githunt](https://github.com/nilbuild/githunt)
 
 ## Intro and Basic Setup
 

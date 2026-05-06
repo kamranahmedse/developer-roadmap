@@ -4,5 +4,6 @@ Anthropic develops Claude, a family of large language models focused on safety a
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit the Dedicated Claude Code Roadmap](https://roadmap.sh/claude-code)
 - [@official@Claude API Documentation](https://docs.anthropic.com/en/docs/intro)
 - [@official@Anthropic Research](https://www.anthropic.com/research)

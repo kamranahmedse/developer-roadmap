@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Fetch issues JSON data and parse it properly
-issues=$(gh issue list --repo kamranahmedse/developer-roadmap --search "sort:created-asc" --state open --limit 500 --json number,title,createdAt,updatedAt,state,url,comments,reactionGroups,body | jq -c '.[]')
+issues=$(gh issue list --repo nilbuild/developer-roadmap --search "sort:created-asc" --state open --limit 500 --json number,title,createdAt,updatedAt,state,url,comments,reactionGroups,body | jq -c '.[]')
 
 # checks the body of issue, identifies the slug from the roadmap URLs
 # and labels the issue with the corresponding slug

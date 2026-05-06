@@ -7,4 +7,4 @@ Now that you have learnt git and GitHub you should be ready to work with others.
 *   Add snapshots of your project to the readme file so that anyone can see what the project looks like without having to run it locally.
 *   Add a `LICENSE` file to each repository that you create. This file should contain the license that you want to use for the project. You can use [choosealicense.com](https://choosealicense.com/) to help you choose a license.
 
-You can have a look at [my GitHub profile](https://github.com/kamranahmedse) and see how I have structured my repositories and how [some of my readme files look like](https://github.com/kamranahmedse/aws-cost-cli).
+You can have a look at [my GitHub profile](https://github.com/nilbuild) and see how I have structured my repositories and how [some of my readme files look like](https://github.com/nilbuild/aws-cost-cli).
