@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Git branch documentation](https://git-scm.com/docs/git-branch)
 - [@article@Git branch](https://www.atlassian.com/git/tutorials/using-branches)
+- [@video@Git Branches Tutorial](https://youtu.be/e2IbNHi4uCI?si=YWJ2H_ocTaVoKkGt)
