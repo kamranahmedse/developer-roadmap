@@ -1,3 +1,3 @@
 # NAT / PAT
- 
+
 NAT, or Network Address Translation, is a method used by routers to map private IP addresses on a local network to a single public IP address before traffic leaves for the Internet. This allows many devices to share one public IP, which helps conserve the limited pool of available IPv4 addresses. PAT, or Port Address Translation, is an extension of NAT that also maps different port numbers to each internal device, allowing multiple simultaneous connections to be tracked and distinguished even when they all share the same public IP.

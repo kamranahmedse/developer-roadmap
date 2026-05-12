@@ -1,0 +1,3 @@
+# Traffic Management
+ 
+Traffic management refers to the set of techniques and tools used to control how network traffic flows, ensuring efficient use of available bandwidth and reliable delivery of data. It covers everything from prioritizing critical applications over less important ones, to shaping traffic to prevent congestion, to distributing load across multiple servers or links. Effective traffic management ensures that the network performs well under normal conditions and degrades gracefully under heavy load.

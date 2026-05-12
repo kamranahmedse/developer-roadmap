@@ -1,0 +1,3 @@
+# Dynatrace
+ 
+Dynatrace is an AI-powered observability platform that automatically discovers, maps, and monitors the full technology stack, from infrastructure and networks to applications and user experience. Its standout feature is the Davis AI engine, which automatically detects anomalies, determines root causes, and reduces alert noise by correlating data across the entire environment. While primarily used by application and platform teams, network engineers in large enterprises use Dynatrace to gain visibility into how network performance impacts application behavior and end-user experience.
