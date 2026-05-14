@@ -4,7 +4,6 @@ Using Git worktrees with Claude Code is a powerful scaling technique that allows
 
 Visit the following resources to learn more:
 
-- [@official@Run parallel Claude Code sessions with Git worktrees](https://code.claude.com/docs/en/common-workflows#run-parallel-claude-code-sessions-with-git-worktrees)
-- [@official@git-worktrees](https://git-scm.com/docs/git-worktree)
+- [@official@Run parallel Claude Code sessions with Git worktrees](https://code.claude.com/docs/en/worktrees)
 - [@article@Using Git Worktrees for Parallel AI Development](https://stevekinney.com/courses/ai-development/git-worktrees)
 - [@video@Git Worktrees: The secret sauce to Claude Code!](https://www.youtube.com/watch?v=up91rbPEdVc)
