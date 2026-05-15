@@ -1,3 +1,9 @@
 # Launch Planning
 
-The role of a Product Manager is central to launch planning. It involves designing and executing a strategic plan to introduce a new product or feature to the market. In order to ensure the success of the product, a Product Manager needs to collaborate with various departments such as design, development, sales, marketing, and customer service. They are responsible for setting the timeline, allocating resources, identifying target consumers, and setting price points. This requires a detailed understanding of the market, competitors, and the unique value proposed by their product. Launch planning is a critical phase in the product life cycle and its success greatly determines the trajectory of the product in the market.
+Launch planning is the process of coordinating all activities required to successfully bring a product or feature to market. It involves defining launch goals, identifying key milestones, coordinating cross-functional teams, preparing marketing materials, training sales teams, and establishing success metrics. Product Managers lead launch planning by creating detailed timelines, defining responsibilities, and ensuring that all teams are aligned on the launch objectives. Effective launch planning reduces risk, ensures smooth execution, and maximizes the impact of the product launch.
+
+Learn more from the following resources:
+
+- [@article@The GTM Product Launch Strategy Checklist - Highspot](https://www.highspot.com/blog/product-launch-guide/)
+- [@official@Product Launch Checklist: How to Ensure a Successful Launch - Atlassian](https://www.atlassian.com/agile/product-management/product-launch-checklist)
+- [@article@Your Ultimate Product Launch Checklist - GTM Alliance](https://www.gotomarketalliance.com/your-ultimate-product-launch-checklist/)

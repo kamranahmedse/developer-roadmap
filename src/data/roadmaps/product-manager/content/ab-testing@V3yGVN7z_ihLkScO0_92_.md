@@ -1,3 +1,8 @@
-# A/B Testing in Data-Driven Decision Making
+# A/B Testing
 
-The role of a Product Manager often requires making informed decisions to improve product performance and user experience. This is where A/B Testing, a vital aspect of data-driven decision making, comes into play. A/B Testing, also known as split testing, involves comparing two versions of a webpage, ad, or other product experience to see which performs better. It is a methodical approach that enables product managers to determine the impact of changes and make data-driven decisions. It helps reduce the inherent uncertainty in introducing new features or changes and is a key tool in the product manager's arsenal.
+A/B testing in the data-driven decision making context is a controlled experiment where two or more variations of a product element are tested simultaneously to determine which performs better against a defined metric. Users are randomly assigned to different variations, and statistical analysis determines whether observed differences are significant. For Product Managers, A/B testing provides empirical evidence for product decisions, reduces the risk of shipping ineffective changes, and enables continuous optimization. Key considerations include proper sample size, statistical significance, test duration, and avoiding common pitfalls like peeking at results too early.
+
+Learn more from the following resources:
+
+- [@article@Data-Driven Product Management: Using Analytics - Product School](https://productschool.com/blog/analytics/using-analytics-to-make-product-decisions)
+- [@article@20+ Key Metrics for Product Management - Product School](https://productschool.com/blog/analytics/metrics-product-management)

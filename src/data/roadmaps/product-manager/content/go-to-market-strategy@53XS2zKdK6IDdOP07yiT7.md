@@ -1,3 +1,8 @@
 # Go-to-Market Strategy
 
-A Go-to-Market (GTM) strategy is an action plan that specifies how a product manager will reach target customers and achieve a competitive advantage. It serves as a blueprint that guides companies in introducing their products to the market. For a product manager, the GTM strategy is not just about product launch, it includes understanding the market dynamics, customer needs, creating marketing and sales strategies, and post-launch activities like customer service. An effective GTM strategy can help product managers ensure a successful product launch and strong market presence.
+A go-to-market (GTM) strategy is a comprehensive plan that outlines how a product will reach its target customers and achieve market success. It encompasses positioning, pricing, distribution, marketing, and sales strategies. For Product Managers, developing a GTM strategy involves understanding the target market, defining the value proposition, identifying distribution channels, setting pricing, and coordinating cross-functional teams including marketing, sales, and customer success. A well-executed GTM strategy ensures that the product launch generates awareness, drives adoption, and achieves business objectives.
+
+Learn more from the following resources:
+
+- [@article@Go-to-Market Strategy for Product Marketing - Product School](https://productschool.com/blog/product-marketing/go-to-market-strategy)
+- [@article@What is a Go-To-Market Strategy? - Coursera](https://www.coursera.org/articles/go-to-market-strategy)

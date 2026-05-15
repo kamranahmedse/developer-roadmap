@@ -1,3 +1,9 @@
-# Five Forces Analysis for a Product Manager
+# Five Forces Analysis
 
-Five Forces Analysis, developed by Michael E. Porter, is a critical tool that a Product Manager can utilize to understand the competitive forces within the industry and help inform product development strategy. This analysis includes five different forces: potential new entrants, substitute products or services, bargaining power of buyers, bargaining power of suppliers and competitive rivalry. By thoroughly examining these areas, a Product Manager can uncover opportunities, mitigate challenges, and position the product to achieve sustainable profitability. It also supports crucial decisions around pricing, marketing, and development prioritization. Thus, mastering Five Forces Analysis is fundamental for successful product management.
+Porter's Five Forces is a strategic framework that analyzes the competitive forces shaping an industry. The five forces are: (1) rivalry among existing competitors, (2) threat of new entrants, (3) threat of substitute products, (4) bargaining power of buyers, and (5) bargaining power of suppliers. For Product Managers, Five Forces analysis helps assess industry attractiveness, understand competitive dynamics, and identify strategic opportunities. It provides a structured way to evaluate market conditions beyond just direct competitors, helping teams make informed decisions about product positioning, pricing, and market entry strategies.
+
+Learn more from the following resources:
+
+- [@article@Porter's Five Forces Analysis: How to Use It - WorkBoard](https://www.workboard.com/resources/blog/porters-5-forces)
+- [@article@Porter's Five Forces: A Practical Guide - StrategyU](https://strategyu.co/porters-five-forces/)
+- [@article@Porter's Five Forces: Complete Guide, Examples and Template - Cascade](https://www.cascade.app/blog/porters-5-forces)

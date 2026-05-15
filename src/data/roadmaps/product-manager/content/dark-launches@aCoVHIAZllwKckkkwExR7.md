@@ -1,3 +1,8 @@
 # Dark Launches
 
-Dark Launches are a valuable strategy in product management. Essentially, they refer to the release of features to a subset of users before the official launch. These unannounced releases, invisible to the majority of users, provide product managers crucial data about how the feature functions in a live environment. They enable product managers to observe real user interactions, gather feedback, identify bugs and areas of improvement prior to a broad scale rollout. This greatly reduces the risk of encountering major issues post-launch and helps ensure a smoother user experience, making dark launches a critical weapon in a product manager's arsenal.
+A dark launch is a technique where new features are deployed to production and tested with real traffic without being visible to users. The feature runs in the background, processing real data and generating performance metrics, but users don't see or interact with it. This allows teams to validate performance, identify issues, and gather data before the official launch. Product Managers use dark launches to de-risk high-stakes releases, test infrastructure changes, and validate assumptions with real production data. Dark launches are often combined with feature flags and canary releases for controlled rollout.
+
+Learn more from the following resources:
+
+- [@article@Dark Launch: How to Release Features Safely - Product Fruits](https://productfruits.com/blog/dark-launch)
+- [@article@Feature Toggles (aka Feature Flags) - Martin Fowler](https://martinfowler.com/articles/feature-toggles.html)

@@ -1,3 +1,9 @@
 # Creating a Roadmap
 
-A product manager plays an essential role in setting a strategic direction for the products they are tasked with guiding. An integral part of this role is creating a product roadmap. This key document outlines the vision, direction, and progress of the product over time. It is a detailed plan that explains how the product is likely to grow, the strategy behind it, and the steps necessary to achieve its development goals. It is imperative for a product manager to create and maintain a product roadmap, as it provides a clear path for everyone involved and sets realistic expectations regarding the product's evolution. The roadmap keeps the product manager, the development team, stakeholders, and customers on the same page, allowing for seamless collaboration and effective decision-making.
+Creating a product roadmap involves translating product strategy into a visual, time-bound plan that communicates what the team will build and when. The process includes defining product goals, identifying key initiatives, estimating effort and impact, and sequencing work based on priorities and dependencies. Product Managers must balance stakeholder input, team capacity, market opportunities, and strategic alignment when creating roadmaps. Modern roadmaps are often outcome-based rather than feature-based, focusing on the problems to solve rather than specific solutions. The roadmap should be a living document that evolves as the team learns and market conditions change.
+
+Learn more from the following resources:
+
+- [@article@Product Roadmap Guide with Examples & Templates - Product School](https://productschool.com/blog/product-strategy/what-is-a-product-roadmap)
+- [@article@All You Need to Know About Product Roadmaps - Agile Alliance](https://agilealliance.org/all-you-need-to-know-about-product-roadmaps-a-hands-on-guide/)
+- [@article@Product Roadmap Best Practices - ProdPad](https://www.prodpad.com/blog/product-roadmap-best-practice-things-to-avoid/)

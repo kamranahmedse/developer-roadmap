@@ -4,4 +4,6 @@ The role of a Product Manager greatly correlates to the understanding and implem
 
 Visit the following resources to learn more:
 
-- [@article@The Official Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [@article@Scrum 101: Your Guide to Getting Started - Parabol](https://www.parabol.co/resources/scrum-101-guide/)
+- [@article@Scrum for Agile Product Management Teams - ProductPlan](https://productplan.com/learn/scrum-for-agile-product-management-teams)
+- [@article@Scrum Overview - Mountain Goat Software](https://www.mountaingoatsoftware.com/agile/scrum)

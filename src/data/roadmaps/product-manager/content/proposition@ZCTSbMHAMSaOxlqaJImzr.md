@@ -1,3 +1,9 @@
-# Proposition under Vision & Mission
+# Proposition
 
-As a critical cog in the wheel, a Product Manager is closely entwined with the strategic development of the product's proposition under the company's vision and mission. This involves understanding and aligning the product's value proposition with the overarching business objectives. A well-articulated proposition gives direction to the product development process, influences the marketing strategies, and contributes to creating a product that rings true to the brand promise. The role of the Product Manager here is multifaceted—they contribute to defining, refining, and maintaining this proposition while ensuring it's in sync with the customers' needs and market trends. They also act as a crucial link between various stakeholders, including leadership, technical teams, and customers.
+A product proposition is a clear statement that communicates the unique value a product delivers to its target customers. It articulates why customers should choose your product over alternatives, focusing on the specific benefits and outcomes rather than just features. A strong proposition is customer-centric, specific, and backed by evidence. It serves as a foundation for marketing messaging, sales enablement, and product development priorities. Product Managers develop propositions by deeply understanding customer needs, competitive landscape, and the product's distinctive capabilities.
+
+Learn more from the following resources:
+
+- [@article@Achieve Product-Market Fit with Value Proposition Designer - Strategyzer](https://www.strategyzer.com/library/achieve-product-market-fit-with-our-brand-new-value-proposition-designer-canvas)
+- [@article@Value Proposition Canvas: Essential Guide for Product-Market Fit - Kaizenko](https://www.kaizenko.com/value-proposition-canvas-essential-guide-for-product-market-fit/)
+- [@article@Value Proposition Canvas Best Practices - Strategyzer](https://www.strategyzer.com/library/value-proposition-canvas-best-practices)

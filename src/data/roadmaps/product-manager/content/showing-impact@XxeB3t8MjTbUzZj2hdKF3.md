@@ -1,3 +1,9 @@
 # Showing Impact
 
-As a Product Manager, one of the essential skills to possess is the ability to demonstrate the impact of the product in the market or to the organization. It involves quantifying and presenting the value and success created by the product through metrics such as sales, customer adoption, or even impact on brand, customer satisfaction, or social responsibility. Showing impact is not just about reporting success, it's also a valuable tool for securing resources, influencing stakeholders, shaping strategy, and fostering a performance-driven culture within the team and company. To effectively show impact, a Product Manager needs a deep understanding of the business model, the market, and the key performance indicators that actually matter to the organization and stakeholders.
+Showing impact is the ability to demonstrate the tangible results and value that product initiatives deliver. Product Managers must effectively communicate outcomes to stakeholders, executives, and team members to build credibility, secure resources, and maintain support. This involves defining clear success metrics before launching initiatives, tracking progress against those metrics, and presenting results in a compelling way. Showing impact also means celebrating wins, acknowledging failures as learning opportunities, and connecting daily work to broader business outcomes. Effective impact demonstration builds confidence in the product team and supports future investment decisions.
+
+Learn more from the following resources:
+
+- [@article@How to Measure Impact in Product Operations - Mind the Product](https://www.mindtheproduct.com/how-to-measure-impact-in-product-operations/)
+- [@article@How You Can Drive Business Impact as a Product Manager - Mind the Product](https://www.mindtheproduct.com/how-you-can-drive-business-impact-as-a-product-manager-by-matt-lemay-at-mtpcon-london-2025/)
+- [@article@An Introduction to Impact Mapping - Mind the Product](https://www.mindtheproduct.com/impact-mapping-tim-herbig-the-product-experience/)

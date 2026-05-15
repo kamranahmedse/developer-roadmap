@@ -1,3 +1,9 @@
-# UX / UI Design 
+# UX / UI Design
 
-UX (User Experience) and UI (User Interface) design are integral parts of product management. A product manager often works closely with UX/UI designers to ensure that the product not only meets the functional requirements but also provides a seamless and engaging user experience. UX design focuses on the overall feel of the product, ensuring it solves problems for users effectively and provides a positive experience. On the other hand, UI design concentrates on the aesthetics of the product – its look and feel, responsiveness, and interactivity. Understanding UX/UI design is vital for a product manager as it heavily influences user satisfaction and product success.
+UX (User Experience) and UI (User Interface) design are critical disciplines in product management that focus on creating products that are both usable and delightful. UX design encompasses the entire user journey - from first contact through long-term engagement - focusing on usability, accessibility, and satisfaction. UI design focuses on the visual and interactive elements that users engage with. Product Managers need to understand both disciplines to collaborate effectively with design teams, make informed product decisions, and ensure that the product delivers value in a way that users can easily understand and enjoy.
+
+Learn more from the following resources:
+
+- [@article@The Ultimate Guide to UX Design for Product Managers - Maven](https://maven.com/articles/ux-design-for-product-managers)
+- [@article@Product Manager and UX Designer Collaboration Guide - Pencil and Paper](https://www.pencilandpaper.io/articles/product-manager-and-ux-designer-collaboration-guide)
+- [@article@UX Basics: Study Guide - NNGroup](https://www.nngroup.com/articles/ux-basics-study-guide/)

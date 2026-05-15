@@ -1,3 +1,9 @@
-# User Stories in Product Requirements
+# User Stories
 
-For a product manager, understanding user stories is an essential part of defining product requirements. A user story is a tool used in Agile development that captures a description of a product feature from an end-user perspective. User Stories helps the product manager not only in understanding and noting down the user's perspective but also in communicating this perspective to the design and development teams efficiently. User stories depict the type of user, what they want, and why, giving the team a clear focus of what needs to be accomplished. Therefore, as a product manager, utilizing user stories can lead to products that meet user expectations and demands effectively.
+User stories are short, simple descriptions of a feature told from the perspective of the person who desires the capability, typically following the format: "As a [type of user], I want [some goal] so that [some reason]." They are a fundamental tool in agile product development that helps teams focus on user value rather than technical implementation. Product Managers write user stories to capture requirements in a way that is understandable to all stakeholders - developers, designers, and business teams. Good user stories are independent, negotiable, valuable, estimable, small, and testable (INVEST criteria).
+
+Learn more from the following resources:
+
+- [@article@User Stories Are Better Than PRDs - Product Talk](https://www.producttalk.org/user-stories-are-better-than-prds/)
+- [@article@User Stories With Examples and a Template - Atlassian](https://www.atlassian.com/agile/project-management/user-stories)
+- [@article@User Stories and the INVEST Model - Mountain Goat Software](https://www.mountaingoatsoftware.com/agile/user-stories)

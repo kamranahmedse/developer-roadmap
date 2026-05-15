@@ -7,4 +7,5 @@ Product managers are responsible for defining the product vision, strategy, and 
 Learn more from the following resources:
 
 - [@article@Product vs Project Manager - Coursera](https://www.coursera.org/gb/articles/product-manager-vs-project-manager)
+- [@article@Product Manager vs. Project Manager - Atlassian](https://www.atlassian.com/agile/project-management/product-vs-project-management)
 - [@video@Product Manager vs Project Manager](https://www.youtube.com/watch?v=nPR6HsUO_XY)

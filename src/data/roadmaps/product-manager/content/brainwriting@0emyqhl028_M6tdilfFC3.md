@@ -1,3 +1,8 @@
-# Brainwriting in Product Management
+# Brainwriting
 
-Brainwriting is a critical tool in the arsenal of modern Product Managers. It refers to a structured brainstorming technique where team members independently write down their ideas, then pass them on to others for the development and enhancement. In the realm of product management, this can help stimulate creative problem-solving and innovation, paving the way for new features, strategies, and improvements. It's a game-changer as it values the voices of all team members, reduces group pressure, and mitigates the problem of idea domination often present in traditional brainstorming sessions.
+Brainwriting is a structured ideation technique that addresses some of the limitations of traditional brainstorming. Also known as the 6-3-5 method, brainwriting involves 6 participants who each write 3 ideas on a worksheet within 5 minutes, then pass their sheets to the next person who builds on those ideas. This silent, written approach ensures equal participation from all team members, reduces social pressure and groupthink, and generates a large volume of ideas in a short time. For Product Managers, brainwriting is particularly valuable when working with introverted team members or when exploring sensitive topics where verbal brainstorming might be inhibited.
+
+Learn more from the following resources:
+
+- [@article@What is Brainwriting? The 6-3-5 Method Explained - Zapier](https://zapier.com/blog/brainwriting/)
+- [@article@6-3-5 Brainwriting - Wikipedia](https://en.wikipedia.org/wiki/6-3-5_Brainwriting)

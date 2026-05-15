@@ -1,3 +1,8 @@
 # A/B Testing
 
-A/B testing, otherwise known as split testing, is an essential statistical tool that is central to the responsibilities of a product manager. This method involves comparing two versions of a webpage, product feature, or user interface to determine which performs better according to certain metrics or goals. It allows product managers to make data-driven decisions and improve the product based on real user experiences and preferences. A solid understanding of A/B testing methods and application equips product managers with the ability to optimize user engagement, retention and conversion rates.
+A/B testing (also known as split testing) is a method of comparing two versions of a webpage, feature, or product experience to determine which performs better. Users are randomly shown either version A (control) or version B (variant), and their behavior is measured to determine which version achieves the desired outcome more effectively. For Product Managers, A/B testing is a powerful tool for making data-driven decisions about product changes, reducing risk by validating hypotheses before full rollout, and continuously optimizing the user experience. It requires clear hypothesis formulation, proper sample sizing, and statistical analysis.
+
+Learn more from the following resources:
+
+- [@article@How Usability Testing Enhances Product Development - UX Firm](https://www.uxfirm.com/usability-testing-product-development)
+- [@article@Usability Testing: The Key to Designing With Confidence - Figma](https://www.figma.com/resource-library/usability-testing/)

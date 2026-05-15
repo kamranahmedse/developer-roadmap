@@ -1,3 +1,9 @@
 # Product Identification
 
-Product Identification plays a critical role in the diverse spectrum of responsibilities held by a Product Manager. It typically involves identifying and detailing the core features, value proposition, and user demographics of a product. This is an essential preliminary step in product development that not only assists in recognising the unique selling points but also helps in positioning the product appropriately in the competitive market. The rationale, advantages and potential of a product are all captured during the product identification process, making it a key strategic roadmap element for a Product Manager. Knowledge of product identification can empower Product Managers to make informed decisions that align with user needs and business goals.
+Product Identification is the process of discovering and defining new product opportunities through market research, customer insights, and competitive analysis. It involves understanding customer pain points, identifying unmet needs, and evaluating market gaps that represent viable business opportunities. Product Managers use various techniques including customer interviews, market analysis, trend monitoring, and competitive intelligence to identify products that can deliver value to users while achieving business objectives. Effective product identification requires a deep understanding of the target market, the ability to recognize patterns in user behavior, and the vision to see how technology can solve real problems.
+
+Learn more from the following resources:
+
+- [@article@What is Product Ideation? - Optimizely](https://www.optimizely.com/optimization-glossary/product-ideation/)
+- [@article@Product Discovery Guide: 4 Stages to Understanding Users - Maze](https://maze.co/guides/product-discovery/)
+- [@article@Guide: Product Discovery Process and Techniques - Productboard](https://www.productboard.com/blog/step-by-step-framework-for-better-product-discovery/)

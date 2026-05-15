@@ -4,5 +4,6 @@ The development phase of the product development lifecycle is a critical stage w
 
 Learn more from the following resources:
 
-- [@video@What's Product Development?](https://www.youtube.com/watch?v=jLvMGnAYicY)
 - [@article@What is Product Development?](https://www.aha.io/roadmapping/guide/what-is-product-development)
+- [@article@7 Phases of Product Development - Product School](https://productschool.com/blog/product-strategy/7-phases-of-product-development)
+- [@video@What's Product Development?](https://www.youtube.com/watch?v=jLvMGnAYicY)

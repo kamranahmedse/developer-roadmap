@@ -1,3 +1,9 @@
 # Cohort Analysis
 
-Cohort Analysis is a valuable tool in a Product manager's data-driven decision-making toolkit. This specific kind of analysis divides a product's user base into related groups. It's not strictly about the demographics, but rather the shared characteristics within a specific timeframe. These groups, or cohorts, could be determined by the users' behaviors, experiences, or traits. Understanding these cohorts and their behaviors proves to be crucial in identifying trends, predicting user actions, and innovating ways to improve overall user experience and product utility.
+Cohort analysis is a technique that groups users based on shared characteristics or experiences (typically their signup date or first interaction) and tracks their behavior over time. This allows Product Managers to understand how different groups of users behave, identify trends in retention and engagement, and measure the impact of product changes on specific user segments. For example, comparing the retention curves of users who signed up before and after a major feature launch reveals whether the change improved long-term engagement. Cohort analysis is particularly valuable for understanding retention patterns and identifying when users drop off.
+
+Learn more from the following resources:
+
+- [@article@Cohort Analysis: 4 Use Cases for Product Managers - Smartlook](https://www.smartlook.com/blog/cohort-analysis/)
+- [@article@Ultimate Guide to Cohort Analysis - Mixpanel](https://mixpanel.com/blog/cohort-analysis/)
+- [@article@Cohort Analysis: A Beginner's Guide to Reducing Churn - Appcues](https://www.appcues.com/blog/cohort-analysis)

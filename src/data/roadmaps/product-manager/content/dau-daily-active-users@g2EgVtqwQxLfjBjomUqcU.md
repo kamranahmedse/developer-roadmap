@@ -1,3 +1,9 @@
-# DAU (Daily Active Users) in Product Management
+# DAU (Daily Active Users)
 
-For a Product Manager, understanding the significance of DAU or Daily Active Users is crucial. DAU is a key product metric used in the tech industry to measure the success of a product. It refers to the number of unique individuals who interact with a product or service on a daily basis. This insight helps product managers understand how compelling and sticky a product is and provides valuable data for making strategic product decisions. Monitoring and analyzing DAU trends can assist in identifying potential issues, measuring user engagement, or capturing growth opportunities.
+DAU (Daily Active Users) is a key engagement metric that measures the number of unique users who interact with a product on a daily basis. It provides a snapshot of the product's daily reach and engagement level. Product Managers track DAU to understand usage patterns, measure the impact of product changes, and identify trends in user engagement. DAU is often used in conjunction with MAU (Monthly Active Users) to calculate the DAU/MAU ratio, which indicates user stickiness - the higher the ratio, the more frequently users engage with the product.
+
+Learn more from the following resources:
+
+- [@article@Product Management 101: DAU/WAU/MAU - Pendo](https://www.pendo.io/pendo-blog/product-management-101-dau-wau-mau/)
+- [@article@The Essential Guide to DAU/MAU Ratio - Gainsight](https://www.gainsight.com/essential-guide/product-management-metrics/dau-mau/)
+- [@article@DAU/MAU Is an Important Metric But Here's Where It Fails - Andrew Chen](https://andrewchen.com/dau-mau-is-an-important-metric-but-heres-where-it-fails/)

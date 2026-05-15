@@ -1,3 +1,9 @@
 # Communication Techniques
 
-Product management is not just about understanding and planning products or services. As a Product Manager, mastering effective communication techniques is key to your success. This involves not only sharing your own ideas, but also actively listening, facilitating discussion, confronting issues, and influencing stakeholders. Mastering these skills helps to rally your team around a shared vision, keep stakeholders informed, and ensure that everyone is working toward the same objectives. This includes communication with diverse audiences such as development teams, designers, sales, marketing and alike. With effective communication techniques, a Product Manager can streamline collaboration, speed up decision-making, and avoid misunderstandings.
+Communication techniques are specific methods and approaches that Product Managers use to convey information effectively. These include storytelling (structuring messages as narratives), the pyramid principle (leading with conclusions), elevator pitches (concise value propositions), written specifications (detailed requirements), and visual communication (diagrams, wireframes, roadmaps). Each technique is suited to different contexts and audiences. Mastering a range of communication techniques allows PMs to adapt their approach based on the situation, whether it's presenting to executives, writing user stories for engineers, or creating marketing messaging.
+
+Learn more from the following resources:
+
+- [@article@What Is A Product Spec? 10 Components Of A Great One - Reforge](https://www.reforge.com/blog/how-to-write-product-specs)
+- [@article@Product Requirements: Using a Written or Visual Framework - Mind the Product](https://www.mindtheproduct.com/product-requirements-using-written-visual-framework/)
+- [@article@Communicating Product Strategy - SVPG](https://www.svpg.com/communicating-product-strategy/)

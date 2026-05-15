@@ -1,3 +1,9 @@
 # Working with Engineering Teams
 
-When it comes to the role of a Product Manager, effective collaboration with the engineering team is paramount. This involves fostering a strong communication culture, understanding technical constraints, and efficiently managing the product backlog. The relationship between a Product Manager and the engineering team can significantly influence the success of a product. Mutual respect, transparency and a clear understanding of roles and responsibilities help pave the way for a fruitful partnership.
+Effective collaboration between Product Managers and engineering teams is essential for building great products. This relationship involves clear communication of requirements and priorities, mutual respect for each other's expertise, and shared ownership of outcomes. Product Managers must understand technical constraints and trade-offs, while engineers need to understand the business context and user needs. Key practices include involving engineers early in discovery, writing clear requirements, participating in technical discussions, respecting engineering estimates, and celebrating successes together. Strong PM-engineering partnerships lead to better products, faster delivery, and higher team satisfaction.
+
+Learn more from the following resources:
+
+- [@article@Coaching - Collaboration - SVPG](https://www.svpg.com/coaching-collaboration/)
+- [@article@Building True Product-Engineering Partnership at Scale - Mind the Product](https://www.mindtheproduct.com/building-true-product-engineering-partnership-at-scale/)
+- [@article@Manage the EM-PM Working Arrangement - Reforge](https://www.reforge.com/guides/manage-the-em-pm-working-arrangement)

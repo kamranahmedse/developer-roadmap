@@ -1,3 +1,8 @@
 # Backlog Management
 
-Backlog Management is a critical aspect in the role of a Product Manager. It involves organizing and prioritizing a list of tasks or features - known as the "backlog" -that are required for the development of a product. Effective backlog management ensures that the product team is working on the most valuable features at the right time, thereby maximizing the product's value and reducing time to market. It requires continuous collaboration with stakeholders, balancing business needs with technical feasibility, and strategically planning to meet short and long term objectives.
+Backlog management is the ongoing process of creating, organizing, and prioritizing the list of work items (features, bugs, technical debt, improvements) that the product team needs to deliver. A well-managed backlog is the foundation of effective agile development, ensuring that the team always works on the most valuable items. Product Managers are responsible for backlog prioritization, while the entire team contributes to refinement. Key practices include regular grooming sessions, clear acceptance criteria, appropriate sizing of items, and maintaining a healthy balance between new features, bugs, and technical improvements.
+
+Learn more from the following resources:
+
+- [@article@Backlog Grooming - Atlassian](https://www.atlassian.com/agile/project-management/backlog-grooming)
+- [@article@Product Backlog Refinement - Mountain Goat Software](https://www.mountaingoatsoftware.com/blog/product-backlog-refinement-grooming)

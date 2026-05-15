@@ -1,3 +1,9 @@
 # Difficult Conversations
 
-In the world of product management, navigating difficult conversations is an unavoidable part of the job. Product Managers often find themselves in challenging discussions with stakeholder, developers, sales teams, and even customers. These conversations can revolve around product expectations, timelines, resource allocation, and a multitude of other issues. Effectively handling these difficult talks while maintaining strong relationships is vital for a successful product journey. That's why, mastering the art of managing and resolving these talks in an efficient, respectful, and productive manner is an essential skill for every Product Manager.
+Difficult conversations are challenging discussions that involve disagreement, conflict, or delivering unwelcome news. For Product Managers, these might include saying no to feature requests, addressing performance issues, negotiating priorities with stakeholders, or communicating product failures. Effective handling of difficult conversations requires preparation, empathy, clear communication, and the ability to separate facts from emotions. Key techniques include using "I" statements, focusing on interests rather than positions, finding common ground, and maintaining respect throughout the conversation. Mastering difficult conversations builds trust and strengthens relationships.
+
+Learn more from the following resources:
+
+- [@article@Effective Leadership: How to Manage Difficult Conversations - IE Insights](https://www.ie.edu/insights/articles/effective-leadership-how-to-manage-difficult-conversations/)
+- [@article@How to Have Difficult Conversations - Berkeley Exec Ed](https://executive.berkeley.edu/thought-leadership/blog/how-have-difficult-conversations)
+- [@article@We Have to Talk: A Checklist for Difficult Conversations - Judy Ringer](https://www.judyringer.com/resources/articles/we-have-to-talk-a-stepbystep-checklist-for-difficult-conversations.php)

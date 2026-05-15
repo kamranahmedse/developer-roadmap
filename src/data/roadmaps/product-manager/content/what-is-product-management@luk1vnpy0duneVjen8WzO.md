@@ -5,4 +5,5 @@ Product management is a multifaceted discipline that forms the backbone of any t
 Learn more from the following resources:
 
 - [@article@What is Product Management? - Product Plan](https://www.productplan.com/learn/what-is-product-management/#what-is-product-management)
+- [@article@What Does a Product Manager Do? - Reforge](https://www.reforge.com/blog/what-does-a-product-manager-do)
 - [@video@What is Product Management? - Atlassian](https://www.youtube.com/watch?v=kzMBIyzq9Ag)

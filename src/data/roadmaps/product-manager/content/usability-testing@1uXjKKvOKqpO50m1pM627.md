@@ -1,3 +1,9 @@
 # Usability Testing
 
-Usability testing is a crucial aspect in a Product Manager's role. It essentially involves evaluating a product or feature by testing it with representative users. As a Product Manager, they must ensure that usability testing is performed at various stages of product development to understand and improve user satisfaction and experience. It provides direct input on how users use and perceive a product. Often, it is the Product Manager's responsibility to facilitate this process, from selecting suitable user groups to facilitating the sessions and analysing the results for future product iteration and improvement. Understanding usability testing allows Product Managers to identify any design problems and necessary improvements before full-scale product launch.
+Usability testing is a user research method where real users attempt to complete specific tasks with a product while researchers observe and gather feedback. It reveals usability issues, validates design decisions, and provides insights into how users actually interact with the product. Product Managers use usability testing throughout the development process - from testing early prototypes to validating final designs before launch. Key practices include defining clear test objectives, recruiting representative participants, creating realistic task scenarios, and analyzing findings to prioritize improvements.
+
+Learn more from the following resources:
+
+- [@article@Usability Testing 101 - NNGroup](https://www.nngroup.com/articles/usability-testing-101/)
+- [@article@How to Conduct Usability Testing - Aakash G](https://www.aakashg.com/how-to-conduct-usability-testing/)
+- [@article@Usability Testing in Product Development - ProductLed Alliance](https://www.productledalliance.com/usability-testing-in-product-development/)

@@ -1,3 +1,8 @@
-# User Personas in User Research
+# User Personas
 
-User Personas are considered foundational in user research in product management. These are fictional characters or profiles representing a certain user segment for a product or service. For a Product Manager, understanding user personas is crucial as it allows them to better identify with the user's needs, behavior patterns, and goals. It serves as a tool that humanizes these users and allows for a more personalized approach when designing a product or service. They contribute towards making informed decisions about product features, user interface, and overall user experience. Thus, user personas play a significant role in aligning all stakeholders in a product lifecycle on who the target users are.
+User personas are fictional, research-based representations of your target users that help product teams understand and empathize with their customers. They typically include demographic information, goals, pain points, behaviors, and attitudes relevant to your product. Product Managers use personas to align teams around a shared understanding of who they're building for, guide feature prioritization, and ensure that product decisions are user-centered. Well-crafted personas are based on actual user research data, not assumptions, and should be updated as new insights emerge. They serve as a practical tool for keeping the user at the center of product development decisions.
+
+Learn more from the following resources:
+
+- [@article@User Personas for UX, Product and Design Teams - User Interviews](https://www.userinterviews.com/ux-research-field-guide-chapter/personas)
+- [@article@Creating Research-Backed Personas - UX Collective](https://uxdesign.cc/creating-research-backed-personas-ec31571cee47)

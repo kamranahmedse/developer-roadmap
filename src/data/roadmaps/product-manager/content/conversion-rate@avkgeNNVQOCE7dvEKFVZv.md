@@ -1,3 +1,9 @@
-# Conversion Rate: A Key Product Metric
+# Conversion Rate
 
-The Conversion Rate is a crucial product metric for any Product Manager. It is the percentage of users who complete a desired action on a product or service, such as making a purchase, signing up for a trial, or subscribing to a newsletter. Monitoring conversion rates allows Product Managers to understand how effectively their product is meeting target audience needs, achieving business goals, and driving desired customer behaviors. It helps in identifying areas of improvement, opportunities for growth, and impact of changes on user interactions.
+Conversion rate measures the percentage of users who complete a desired action (such as signing up, making a purchase, or upgrading) out of the total number of users who had the opportunity to do so. It's a critical metric for understanding how effectively a product moves users through the funnel. Product Managers track conversion rates at various stages of the user journey to identify bottlenecks, measure the impact of product changes, and optimize the user experience. Improving conversion rates often has a direct impact on revenue and growth.
+
+Learn more from the following resources:
+
+- [@article@Conversion Rate Optimization for Product Teams - Heap](https://www.heap.io/topics/conversion-rate-optimization-for-marketing-product-teams)
+- [@article@Conversion Rate Optimization: Complete Guide - Mouseflow](https://mouseflow.com/topics/conversion-rate-optimization/)
+- [@article@Product Conversion Rate: What You're Missing - Contentsquare](https://contentsquare.com/blog/product-conversion/)

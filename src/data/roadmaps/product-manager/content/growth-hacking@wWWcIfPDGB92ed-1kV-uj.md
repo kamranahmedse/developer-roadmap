@@ -1,3 +1,9 @@
 # Growth Hacking
 
-Growth hacking is a pivotal concept that product managers must be familiar with in order to effectively strategize and achieve business growth. As a concept, growth hacking leverages data-driven and unconventional marketing strategies to help boost product growth. For a product manager role, understanding growth hacking means utilizing the principles to conceive effective marketing strategies that accelerate the product's market performance and user base. Market understanding, creativity, analytical thinking, and data insights are key elements of growth hacking a product manager needs to grasp.
+Growth hacking is a data-driven approach to rapid experimentation across marketing channels and product development to identify the most effective ways to grow a product or business. It combines creativity, analytics, and technology to find scalable growth strategies. Growth hackers (often Product Managers in startup environments) use techniques like viral loops, referral programs, A/B testing, content marketing, and product-led growth to drive user acquisition, activation, retention, and revenue. The key principle is rapid experimentation - testing many ideas quickly, measuring results, and doubling down on what works.
+
+Learn more from the following resources:
+
+- [@article@What is Growth Hacking? Strategies to Know - Stripe](https://stripe.com/resources/more/growth-hacking-strategies)
+- [@article@Product Managers Should Be Growth Hackers - Product School](https://productschool.com/blog/product-strategy/product-managers-growth-hackers)
+- [@article@What is Product-Led Growth? - Delighted](https://delighted.com/blog/product-led-growth)

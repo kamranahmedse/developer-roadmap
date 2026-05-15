@@ -4,4 +4,6 @@ The discovery phase is a crucial stage in a Product Manager's role. It involves 
 
 Visit the following resources to learn more:
 
+- [@article@The Definitive Guide to Product Discovery - Product School](https://productschool.com/blog/product-fundamentals/what-is-product-discovery)
+- [@article@Problem Exploration, Selection and Validation - Will Larson](https://lethain.com/intro-product-management/)
 - [@video@Introduction to Modern Product Discovery by Teresa Torres](https://youtu.be/l7-5x0ra2tc?si=Zh4LeSF_qAj8y6-a)

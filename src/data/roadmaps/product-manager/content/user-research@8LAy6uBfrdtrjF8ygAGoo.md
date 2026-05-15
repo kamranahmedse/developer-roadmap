@@ -1,3 +1,9 @@
 # User Research
 
-User research is a critical aspect of a Product Manager's role. It is through understanding the needs, behaviors, and pain points of a user that a Product Manager can create, refine, and market products successfully. User research is not a one-time event but a continuous process that helps Product Managers stay abreast of their target market's evolving demands and expectations. Methods used include interviews, surveys, usability testing, and observation, among others. By staying connected to the users' perspectives, a Product Manager can ensure a more user-centric product development process resulting in a product that genuinely meets and exceed user expectations.
+User research is a fundamental discipline in product management that involves understanding user behaviors, needs, and motivations through various qualitative and quantitative methods. It informs product decisions by providing evidence-based insights about who users are, what they need, and how they interact with products. Product Managers use user research throughout the product lifecycle, from discovery (understanding problems) to delivery (validating solutions). Key methods include user interviews, surveys, usability testing, ethnographic studies, and analytics analysis. Effective user research reduces the risk of building products that don't meet user needs and helps teams prioritize features that deliver real value.
+
+Learn more from the following resources:
+
+- [@article@Product Management Skills: User Research - Product School](https://productschool.com/blog/user-experience/product-management-skills-user-research)
+- [@article@The Product Manager's Guide to UX Research - User Interviews](https://www.userinterviews.com/blog/ux-research-for-product-managers)
+- [@article@Product Discovery Guide: Overview, Steps, Techniques - Dovetail](https://dovetail.com/product-development/what-is-product-discovery/)

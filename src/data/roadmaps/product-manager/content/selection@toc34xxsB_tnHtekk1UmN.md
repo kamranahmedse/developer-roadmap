@@ -1,3 +1,9 @@
-# Selection in Product Management
+# Selection
 
-The Selection process in Product Management involves identifying which features and projects to prioritize, based on the product's strategic direction, business objectives, customer needs, and market trends. As a Product Manager, understanding how to effectively carry out this selection process is critical in managing resources efficiently, aligning team efforts towards high-impact tasks, and driving product success in the market. This process usually involves tools and frameworks, such as product roadmaps, prioritization matrices, user feedback, and data analysis.
+Selection in the product management context refers to the process of evaluating and choosing which product ideas, features, or initiatives to pursue. After generating ideas through brainstorming and ideation, Product Managers must use structured frameworks to prioritize and select the most promising opportunities. This involves assessing factors such as market potential, technical feasibility, strategic alignment, resource requirements, and expected impact. Effective selection ensures that limited resources are focused on initiatives that deliver the greatest value to both users and the business.
+
+Learn more from the following resources:
+
+- [@article@Framework for Tool Selection: What You Need to Consider - ScottMadden](https://www.scottmadden.com/insight/framework-for-tool-selection-what-you-need-to-consider/)
+- [@article@Selection Criteria for Product Management Tools - Secret PM Handbook](https://secretpmhandbook.com/selection-criteria-product-management-tools/)
+- [@article@The 2026 Guide to Product Prioritization Frameworks - Canny](https://canny.io/blog/product-prioritization-frameworks/)

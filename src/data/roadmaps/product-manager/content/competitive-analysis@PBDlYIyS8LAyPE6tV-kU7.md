@@ -1,3 +1,8 @@
 # Competitive Analysis
 
-Understanding the competitive landscape is a critical aspect of a Product Manager's role. Competitive analysis involves identifying your competitors and evaluating their strategies to determine their strengths and weaknesses relative to your own product or service. A product manager uses competitive analysis to understand market trends, discover opportunities for growth, and determine competitive advantages. It is an essential factor in positioning, marketing, and strategic decision-making. This process of understanding often involves collecting and reviewing information about competitor products, including their features, functionality, pricing structures, and success within target markets.
+Competitive analysis is the process of evaluating and understanding competitors in your market to inform product strategy and decision-making. It involves identifying direct and indirect competitors, analyzing their strengths and weaknesses, understanding their product offerings, pricing strategies, and market positioning. For Product Managers, competitive analysis helps identify market gaps, validate product assumptions, and develop differentiation strategies. Key activities include competitor product teardowns, feature comparisons, pricing analysis, and monitoring competitor marketing and messaging. Regular competitive analysis ensures that your product remains relevant and competitive in a dynamic market.
+
+Learn more from the following resources:
+
+- [@article@Product Manager's Power Move: Competitor Analysis - Product School](https://productschool.com/blog/skills/product-manager-competitive-analysis)
+- [@article@Competitive Analysis: A Step-by-Step Guide - Coursera](https://www.coursera.org/articles/competitor-analysis)

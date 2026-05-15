@@ -5,4 +5,5 @@ A Product Manager is often viewed as the "CEO of the Product", requiring a uniqu
 Learn more from the following resources:
 
 - [@article@What Skills Does a Product Manager Need?](https://careerfoundry.com/en/blog/product-management/product-manager-skills/)
+- [@article@12 Essential Product Manager Skills - Reforge](https://www.reforge.com/blog/product-manager-skills)
 - [@video@Skills Every Product Manager Needs](https://www.youtube.com/watch?v=ysBpePyeHkU)

@@ -1,3 +1,8 @@
-# Capabilities under Vision & Mission
+# Capabilities
 
-The role of a Product Manager is multifaceted and one important aspect of that role revolves around setting and understanding the vision and mission. A vision is a long-term goal or aspiration for a product and encompasses the overall direction or strategy for the product. Conversely, a mission statement focuses more on the present, describing the purpose of the product and who it serves. These aspects help drive the decision-making process in product management. Product Managers utilize these tools to align the product team and the company as a whole. They make strategic decisions and formulate plans based on the foundation set by the vision and mission. By leveraging these capabilities, Product Managers are able to make informed decisions that propel the product towards success.
+Product capabilities refer to the features, functions, and qualities that a product possesses to deliver value to its users. Understanding and defining product capabilities is essential for Product Managers as it bridges the gap between high-level strategy and tactical execution. Capabilities include both functional (what the product does) and non-functional (how well it does it) aspects such as performance, security, scalability, and usability. Product Managers must assess current capabilities, identify gaps, and prioritize capability development based on strategic importance and customer needs.
+
+Learn more from the following resources:
+
+- [@article@Product Strategy 101: Vision, Goals and Execution - Plane](https://plane.so/blog/product-strategy-101-vision-goals-and-execution-frameworks)
+- [@article@Master the Product Management Process - Product School](https://productschool.com/blog/product-fundamentals/product-management-process)

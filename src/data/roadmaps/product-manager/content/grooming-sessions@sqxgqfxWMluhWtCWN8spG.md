@@ -1,3 +1,9 @@
 # Grooming Sessions
 
-In the realm of product management, grooming sessions are a crucial part of the Agile product development process. Also known as backlog refinement or story-time sessions, they help product managers, along with the development team, prioritise and refine the product backlog to ensure smooth execution of product delivery. During grooming sessions, product manager clarifies doubts about product backlog items, re-orders them based on business or technical priority and often breaks down large user stories into smaller, manageable tasks. They are integral in maintaining a well-organised, clear and up-to-date product roadmap.
+Grooming sessions (also called backlog refinement or backlog grooming) are regular meetings where the product team reviews, discusses, and prepares backlog items for upcoming sprints. During these sessions, Product Managers present items, clarify requirements, estimate effort, and ensure that stories meet the Definition of Ready. Grooming sessions help teams identify dependencies, uncover technical constraints, and break down large items into manageable pieces. Regular grooming keeps the backlog healthy, reduces uncertainty during sprint planning, and ensures that the team always has well-defined work ready to start.
+
+Learn more from the following resources:
+
+- [@article@What is Backlog Refinement? - Atlassian](https://www.atlassian.com/agile/scrum/backlog-refinement)
+- [@article@Product Backlog Refinement: How Scrum Teams Do It Right - Mountain Goat Software](https://www.mountaingoatsoftware.com/agile/user-stories/product-backlog-refinement)
+- [@article@Product Backlog Refinement: Best Practices To Prioritize Work - Aha!](https://www.aha.io/roadmapping/guide/release-management/product-backlog-refinement)

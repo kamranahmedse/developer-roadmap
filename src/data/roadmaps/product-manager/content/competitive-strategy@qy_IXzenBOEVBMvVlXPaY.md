@@ -1,3 +1,8 @@
-# Competitive Strategy in Product Management
+# Competitive Strategy
 
-Product Managers play a crucial role in defining and implementing the competitive strategy of a product. This strategy is typically a long-term action plan for a company that identifies how to achieve a competitive advantage while meeting the needs of its customers. Product managers, with their deep understanding of the market, identify opportunities, understand competitors, and align the product to meet business goals and customers' needs. Strong strategic thinking aids in making informed decisions towards competitive positioning of the product, considering factors such as pricing, features, and marketing strategies.
+Competitive strategy defines how a product will compete in its market and create sustainable advantage. It involves analyzing the competitive landscape, identifying differentiation opportunities, and positioning the product to win. Product Managers develop competitive strategies by understanding competitor strengths and weaknesses, identifying market gaps, and aligning product capabilities with customer needs. Common competitive strategies include cost leadership, differentiation, and focus (niche) strategies. The competitive strategy should inform product roadmap decisions, feature prioritization, and go-to-market approaches.
+
+Learn more from the following resources:
+
+- [@article@Porter's Five Forces in Product Management - LinkedIn](https://www.linkedin.com/pulse/porters-five-forces-product-management-strategic-lens-dishant-salunke-snzyf)
+- [@article@The Five Forces - Harvard Business School](https://www.isc.hbs.edu/strategy/business-strategy/Pages/the-five-forces.aspx)

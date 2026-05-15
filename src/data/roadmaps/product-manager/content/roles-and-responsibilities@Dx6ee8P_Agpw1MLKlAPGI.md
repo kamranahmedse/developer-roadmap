@@ -5,3 +5,5 @@ A product manager is a pivotal role that stands at the crossroads of business, t
 Learn more from the following resources:
 
 - [@article@Product Manager Roles & Responsibilities](https://www.productside.com/product-manager-roles-and-responsibilities-keytask/)
+- [@article@What Does a Product Manager Do? - Product School](https://productschool.com/blog/career-development/what-does-product-manager-do)
+- [@article@Product Manager: Role, Tasks, and How to Become One - Coursera](https://www.coursera.org/articles/what-does-a-product-manager-do)

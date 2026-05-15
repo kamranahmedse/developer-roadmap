@@ -1,3 +1,9 @@
-# User Testing 
+# User Testing
 
-User Testing is an essential responsibility for a product manager. In this process, the product manager ensures that the product developed by the team meets the users' needs and provides a good user experience. This is done by selecting representative users or personas, understanding the user's goals, implementing and planning test scenarios, facilitating the test and analysing the observed user behaviour. The feedback collected is then used to refine the product design, thus playing a significant part in shaping the product's road map and release cycle. Overall, User Testing provides invaluable insights that can often lead to significant improvements in the product.
+User testing is a broad term encompassing various methods of evaluating a product by testing it with representative users. It includes usability testing, A/B testing, beta testing, concept testing, and more. The goal is to gather feedback from real users to identify issues, validate assumptions, and improve the product. Product Managers use user testing throughout the product lifecycle - from validating early concepts to testing prototypes to measuring the impact of launched features. Effective user testing requires clear objectives, representative participants, and a systematic approach to analyzing and acting on findings.
+
+Learn more from the following resources:
+
+- [@article@How Product Designers Test Their Designs - UserTesting](https://www.usertesting.com/resources/guides/product-design/testing-methods)
+- [@article@The Complete Guide to User Testing - Askable](https://www.askable.com/blog/the-complete-guide-to-user-testing)
+- [@article@Remote Usability Tests: Moderated and Unmoderated - NNGroup](https://www.nngroup.com/articles/remote-usability-tests/)

@@ -1,3 +1,9 @@
-# Churn Rate in Key Product Metrics
+# Churn Rate
 
-Churn Rate is a pivotal term in the world of Product Manager. While understanding key product metrics, the term churn plays a significant role. It is the measurement of the percentage of customers or users who leave a product over a given period of time, divided by remaining customers. For example, if you start your month with 100 users and end with 90, your churn rate is 10%. Keeping a low churn rate can signify that customer satisfaction is high, sustaining customer loyalty and fostering conditions for growth. As a Product Manager, understanding, measuring and acting to reduce churn rate is critical to product strategy and overall business sustainability.
+Churn rate (also known as attrition rate) measures the percentage of users or customers who stop using a product over a specified period. It's the inverse of retention rate and is a critical metric for subscription and recurring revenue businesses. High churn indicates that users are not finding enough value to continue using the product. Product Managers analyze churn to identify at-risk users, understand why users leave, and develop strategies to improve retention. Reducing churn by even small percentages can have a significant impact on revenue and growth.
+
+Learn more from the following resources:
+
+- [@article@A PM Leader's Guide on How to Reduce Customer Churn - Aakash Gupta](https://www.aakashg.com/how-to-reduce-customer-churn/)
+- [@article@How to Use Product Metrics to Predict and Prevent Churn - Mainsail Partners](https://mainsailpartners.com/how-to-use-product-metrics-to-predict-and-prevent-churn/)
+- [@article@Cracking the Churn Code: A PM's Guide to Retention - Get Product People](https://www.getproductpeople.com/blog/guide-to-saas-churn-rate-reduction)

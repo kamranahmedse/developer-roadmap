@@ -1,3 +1,8 @@
 # Validation
 
-Validation in the context of Product Management, refers to the process of ensuring that a product, feature, or concept meets the needs and expectations of the targeted end-user population. Product Managers carry out this process before the development phase to mitigate risks and avoid potentially costly mistakes. Validation helps in identifying if the problem is worth solving, gauges market demand, and validates the proposed solution. Typically, this might involve user interviews, surveys, prototypes, and market research. It plays a crucial role in decreasing uncertainties and refining the product roadmap. Its objective is to build a product that provides sufficient value to customers and meets business goals.
+Product validation is the process of testing product assumptions and ideas before committing significant resources to development. It involves gathering evidence through experiments, prototypes, and user feedback to confirm that a product concept addresses real user needs and has market potential. Product Managers use various validation techniques including MVP testing, user interviews, surveys, A/B testing, and landing page experiments. The goal is to reduce risk by learning what works and what doesn't early in the product development process, ensuring that the team builds products that users actually want and will pay for.
+
+Learn more from the following resources:
+
+- [@article@8 Product Discovery Techniques - Maze](https://maze.co/guides/product-discovery/techniques/)
+- [@article@How to Test Product Assumptions Before Building](https://www.getproductpeople.com/blog/how-to-test-product-assumptions-before-building-features)

@@ -6,4 +6,6 @@ From a product management perspective, this involves implementing innovative ide
 
 Learn more from the following resources:
 
+- [@official@What is Blue Ocean Strategy](https://www.blueoceanstrategy.com/what-is-blue-ocean-strategy/)
+- [@article@Finding Untapped Markets: An Introduction to Blue Ocean Strategy](https://www.thestrategyinstitute.org/insights/finding-untapped-markets-an-introduction-to-blue-ocean-strategy)
 - [@video@How To Differentiate Your Business With BLUE OCEAN STRATEGY](https://www.youtube.com/watch?v=UKDxj6W7CXs)
