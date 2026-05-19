@@ -5,4 +5,4 @@ Coding patterns are recurring problem-solving strategies that apply across many 
 Visit the following resources to learn more:
 
 - [@article@Don’t Just LeetCode; Follow the Coding Patterns Instead](https://levelup.gitconnected.com/dont-just-leetcode-follow-the-coding-patterns-instead-4beb6a197fdb)
-- [@video@Data Structure and Algorithm Patterns for LeetCode Interviews – Tutorial](https://www.youtube.com/watch?v=Z_c4byLrNBU)
+- [@video@Data Structure and Algorithm Patterns for LeetCode Interviews](https://www.youtube.com/watch?v=Z_c4byLrNBU)

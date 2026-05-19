@@ -5,5 +5,4 @@ Design a data structure that supports adding numbers one by one and returning th
 Visit the following resources to learn more:
 
 - [@article@Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
-- [@video@Find Median from Data Stream | Detailed Explanation](https://www.youtube.com/watch?v=jnj87BSi9Is)
 - [@video@Find Median from Data Stream: Real-Time Median with Heaps](https://www.youtube.com/watch?v=SdURPlHqc1g)
