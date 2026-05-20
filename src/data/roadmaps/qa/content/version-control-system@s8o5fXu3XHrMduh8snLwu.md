@@ -4,7 +4,7 @@ Version control/source control systems allow developers to track and control cha
 
 Visit the following resources to learn more:
 
-- [@official@Git](https://git-scm.com/)
-- [@official@Mercurial](https://www.mercurial-scm.org/)
-- [@article@What is Version Control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
-- [@feed@Explore top posts about QA](https://app.daily.dev/tags/qa?ref=roadmapsh)
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
+- [@video@What is a Version Control System and why you should always use it](https://www.youtube.com/watch?v=IeXhYROClZk)
+- [@article@What is version control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
+- [@course@Why version control? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
