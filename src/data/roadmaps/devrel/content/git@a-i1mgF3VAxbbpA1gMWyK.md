@@ -4,6 +4,7 @@ Git is a distributed version control system designed to handle projects of any s
 
 Learn more from the following resources:
 
-- [@article@What is Git?](https://www.atlassian.com/git/tutorials/what-is-git)
-- [@article@What is Git? Our beginner’s guide to version control](https://github.blog/developer-skills/programming-languages-and-frameworks/what-is-git-our-beginners-guide-to-version-control/)
-- [@video@What is Git? Explained in 2 Minutes!](https://www.youtube.com/watch?v=2ReR1YJrNOM)
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
+- [@article@Tutorial: Git for Absolutely Everyone](https://thenewstack.io/tutorial-git-for-absolutely-everyone/)
+- [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [@course@Why use Git? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
