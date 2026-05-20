@@ -4,6 +4,7 @@ Git is a distributed version control system **(VCS)** used to track changes in s
 
 Learn more from the following resources:
 
-- [@official@Git Documentation](https://www.git-scm.com/)
-- [@video@Git in 100 Seconds](https://www.youtube.com/watch?v=hwP7WQkmECE)
-- [@feed@Explore top posts about Git](https://app.daily.dev/tags/git?ref=roadmapsh)
+- [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
+- [@article@Tutorial: Git for Absolutely Everyone](https://thenewstack.io/tutorial-git-for-absolutely-everyone/)
+- [@video@Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+- [@course@Why use Git? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
