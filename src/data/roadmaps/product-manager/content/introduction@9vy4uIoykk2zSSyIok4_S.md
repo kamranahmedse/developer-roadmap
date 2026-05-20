@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Manager: Role, Responsibilities & Best Practices - Atlassian](https://www.atlassian.com/agile/product-management/product-manager)
 - [@article@What is Product Management? - Productboard](https://www.productboard.com/what-is-product-management/)
+- [@article@Product Management - Wikipedia](https://en.wikipedia.org/wiki/Product_management)

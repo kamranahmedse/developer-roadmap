@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@AI for Product Managers: Essential Tools and Strategies](https://monday.com/blog/rnd/ai-for-product-managers/)
 - [@official@Productboard Use Cases, Features, and Capabilities](https://www.productboard.com/use-cases/)
+- [@article@Productboard Tool Guide - Mambo](https://www.mambo.io/blog/product-board-tool)

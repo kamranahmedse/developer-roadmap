@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@8 Product Discovery Techniques - Maze](https://maze.co/guides/product-discovery/techniques/)
 - [@article@How to Test Product Assumptions Before Building](https://www.getproductpeople.com/blog/how-to-test-product-assumptions-before-building-features)
+- [@article@Verification and Validation - Wikipedia](https://en.wikipedia.org/wiki/Verification_and_validation)

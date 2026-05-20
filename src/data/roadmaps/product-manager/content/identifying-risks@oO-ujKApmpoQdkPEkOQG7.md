@@ -8,3 +8,4 @@ Learn more from the following resources:
 
 - [@article@How to Manage Risks as a Product Manager - Product Compass](https://www.productcompass.pm/p/how-to-manage-risks-as-a-product-manager)
 - [@article@A Quick Guide to Technical Risk Analysis for Product Managers - Forbes](https://www.forbes.com/councils/forbestechcouncil/2021/02/26/a-quick-guide-to-technical-risk-analysis-for-product-managers/)
+- [@article@Identifying Risks in Product Management - Mambo](https://www.mambo.io/blog/identifying-risks-product-management)

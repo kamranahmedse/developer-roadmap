@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Machine Learning for Product Managers: A Quick Primer](https://www.mindtheproduct.com/machine-learning-for-product-managers-a-quick-primer/)
 - [@article@Practical Examples of Machine Learning for a Product Manager](https://craftedup.com/blog/practical-examples-of-machine-learning-for-a-product-manager/)
+- [@article@Machine Learning - Wikipedia](https://en.wikipedia.org/wiki/Machine_learning)

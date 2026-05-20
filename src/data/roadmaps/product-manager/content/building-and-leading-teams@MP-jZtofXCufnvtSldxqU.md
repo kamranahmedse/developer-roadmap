@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Building a Great Product Management Organization](https://melissaperri.com/blog/2024/7/16/building-a-great-product-management-organization)
 - [@article@Building High-Performing Product Teams: The PDLC Approach](https://www.mindtheproduct.com/building-high-performing-product-teams-the-pdlc-approach/)
+- [@article@Building High-Performing Product Teams - Mambo](https://www.mambo.io/blog/building-high-performing-product-teams)

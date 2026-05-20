@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Looker Business Intelligence Platform](https://cloud.google.com/looker)
 - [@official@Looker Visualization Guide](https://docs.cloud.google.com/looker/docs/visualization-guide)
+- [@article@Looker Analytics Guide - Mambo](https://www.mambo.io/blog/looker-analytics)

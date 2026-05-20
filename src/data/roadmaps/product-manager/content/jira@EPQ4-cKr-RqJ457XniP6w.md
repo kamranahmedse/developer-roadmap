@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Get Started with Jira - Comprehensive Beginner's Guide](https://www.atlassian.com/software/jira/guides/getting-started/introduction)
 - [@official@How to Use Jira Product Discovery](https://www.atlassian.com/software/jira/product-discovery/guides/getting-started/introduction)
+- [@article@Jira for Product Management - Mambo](https://www.mambo.io/blog/jira-product-management)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Quantitative Risk Management vs. Qualitative Risk Analysis](https://riskonnect.com/operational-resilience/quantitative-risk-management-vs-qualitative-risk-analysis/)
 - [@article@Qualitative and Quantitative Risk Assessments](https://www.metricstream.com/learn/practical-guide-to-assessing-non-financial-risks.html)
+- [@article@Quantitative Risk Assessment - Wikipedia](https://en.wikipedia.org/wiki/Quantitative_risk_assessment)

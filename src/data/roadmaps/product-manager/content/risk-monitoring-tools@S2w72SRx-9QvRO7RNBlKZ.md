@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Best Risk Management Tools](https://www.atlassian.com/blog/work-management/risk-management-tools)
 - [@article@Project Risk Management Software: 7 Options to Compare](https://www.wrike.com/blog/project-risk-management-software/)
+- [@article@Risk Monitoring - SafetyCulture](https://www.safetyculture.com/topics/risk-monitoring/)

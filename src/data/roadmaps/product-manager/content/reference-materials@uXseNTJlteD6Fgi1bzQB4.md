@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@User Experience (UX) Surveys: The Ultimate Guide - IxDF](https://ixdf.org/literature/article/ux-surveys)
 - [@article@The Product Manager's Guide to User Research - Maze](https://maze.co/collections/product-development/user-research/)
+- [@article@Reference Material - Wikipedia](https://en.wikipedia.org/wiki/Reference_material)

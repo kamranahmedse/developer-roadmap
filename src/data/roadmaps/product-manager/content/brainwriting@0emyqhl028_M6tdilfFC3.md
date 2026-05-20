@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@What is Brainwriting? The 6-3-5 Method Explained - Zapier](https://zapier.com/blog/brainwriting/)
 - [@article@6-3-5 Brainwriting - Wikipedia](https://en.wikipedia.org/wiki/6-3-5_Brainwriting)
+- [@article@Brainwriting in Product Management - Mambo](https://www.mambo.io/blog/brainwriting-product-management)

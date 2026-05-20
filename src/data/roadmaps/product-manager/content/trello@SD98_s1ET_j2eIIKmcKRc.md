@@ -8,3 +8,4 @@ Learn more from the following resources:
 
 - [@official@Trello Guides: Getting Started](https://trello.com/guide)
 - [@official@Getting Started with Trello](https://support.atlassian.com/trello/docs/getting-started/)
+- [@article@Trello for Product Management - Mambo](https://www.mambo.io/blog/trello-product-management)

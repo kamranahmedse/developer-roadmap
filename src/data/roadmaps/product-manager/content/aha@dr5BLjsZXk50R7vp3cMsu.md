@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Product Roadmaps: How To Create One Step-by-Step](https://www.aha.io/roadmapping/guide/product-roadmap)
 - [@official@Free Product Management Resources](https://www.aha.io/roadmapping/guide)
+- [@article@Aha! Roadmapping Tool Guide - Mambo](https://www.mambo.io/blog/aha-roadmapping-tool)

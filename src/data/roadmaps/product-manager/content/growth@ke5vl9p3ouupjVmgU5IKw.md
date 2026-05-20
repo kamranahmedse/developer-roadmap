@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Lifecycle Stages: A Complete Guide - HelloPM](https://hellopm.co/what-are-product-lifecycle-stages/)
 - [@article@The 4 Stages of the Product Management Lifecycle - ICAgile](https://www.icagile.com/resources/the-4-stages-of-the-product-management-lifecycle)
+- [@article@Growth in Product Management - Mambo](https://www.mambo.io/blog/growth-product-management)

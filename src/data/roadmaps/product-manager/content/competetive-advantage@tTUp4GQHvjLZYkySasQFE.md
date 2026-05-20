@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Porter's Five Forces: A Framework for Competitive Strategy - Harding Loevner](https://www.hardingloevner.com/porters-five-forces-a-framework-for-competitive-strategy-analysis/)
 - [@article@Porter's Five Forces: The Ultimate Blueprint - TSI](https://www.thestrategyinstitute.org/insights/porters-five-forces-the-ultimate-competitive-strategy-blueprint)
+- [@article@Competitive Advantage - Wikipedia](https://en.wikipedia.org/wiki/Competitive_advantage)

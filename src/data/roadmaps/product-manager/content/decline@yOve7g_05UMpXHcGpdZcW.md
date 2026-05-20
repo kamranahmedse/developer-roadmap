@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Life Cycle Different Stages with Examples - Emeritus](https://emeritus.org/blog/different-stages-of-product-life-cycle/)
 - [@article@From Growth to Decline: How Industry Life Cycles Shape Business - IBISWorld](https://www.ibisworld.com/blog/industry-life-cycles/99/1127/)
+- [@article@Decline Stage in Product Management - Mambo](https://www.mambo.io/blog/decline-product-management)

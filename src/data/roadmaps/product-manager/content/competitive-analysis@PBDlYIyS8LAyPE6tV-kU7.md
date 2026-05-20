@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Manager's Power Move: Competitor Analysis - Product School](https://productschool.com/blog/skills/product-manager-competitive-analysis)
 - [@article@Competitive Analysis: A Step-by-Step Guide - Coursera](https://www.coursera.org/articles/competitor-analysis)
+- [@article@Competitive Analysis for Product Managers - Reforge](https://www.reforge.com/blog/competitive-analysis-for-product-managers)

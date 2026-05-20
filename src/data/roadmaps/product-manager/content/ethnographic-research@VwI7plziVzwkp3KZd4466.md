@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Ethnographic Research - Qualtrics](https://www.qualtrics.com/articles/strategy-research/ethnographic-research/)
 - [@article@Ethnography: UX Research Methods for Discovery - User Interviews](https://www.userinterviews.com/ux-research-field-guide-chapter/ethnography)
+- [@article@Ethnography - Wikipedia](https://en.wikipedia.org/wiki/Ethnography)

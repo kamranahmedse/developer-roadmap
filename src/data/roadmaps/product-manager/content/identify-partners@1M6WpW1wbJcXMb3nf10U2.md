@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@What are the 23 Types of Strategic Partnerships - Breezy.io](https://breezy.io/blog/types-of-strategic-partnerships)
 - [@article@Strategic Partnership Management: A Practical Guide - Qmarkets](https://www.qmarkets.net/resources/article/strategic-partnership/)
+- [@article@Identifying Partners - Mambo](https://www.mambo.io/blog/identifying-partners)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Project Management Tools in Comparison: Jira vs. Asana vs. Monday](https://www.xalt.de/en/project-management-tools-compared-jira-vs-asana-vs-monday/)
 - [@article@The Product Roadmap Tools Comparison Guide](https://www.tempo.io/guides/product-roadmap-tools-comparison)
+- [@article@Project Management Tools - Mambo](https://www.mambo.io/blog/project-management-tools)

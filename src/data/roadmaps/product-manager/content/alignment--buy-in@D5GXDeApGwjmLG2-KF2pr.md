@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@How Product Managers Achieve Stakeholder Alignment - Aha!](https://www.aha.io/roadmapping/guide/product-management/how-product-managers-achieve-stakeholder-alignment)
 - [@article@Product Stakeholders: Categorize, Map, and Manage - Product School](https://productschool.com/blog/skills/product-management-skills-stakeholder-management)
+- [@article@Product Roadmap Alignment - Mambo](https://www.mambo.io/blog/product-roadmap-alignment)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Linear Docs](https://linear.app/docs)
 - [@official@Linear Start Guide](https://linear.app/docs/start-guide)
+- [@article@Linear for Product Management - Mambo](https://www.mambo.io/blog/linear-product-management)

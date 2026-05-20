@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@User Personas for UX, Product and Design Teams - User Interviews](https://www.userinterviews.com/ux-research-field-guide-chapter/personas)
 - [@article@Creating Research-Backed Personas - UX Collective](https://uxdesign.cc/creating-research-backed-personas-ec31571cee47)
+- [@article@Persona (User Experience) - Wikipedia](https://en.wikipedia.org/wiki/Persona_(user_experience))

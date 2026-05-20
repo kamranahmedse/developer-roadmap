@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@What is Positioning? - Product Marketing Alliance](https://www.productmarketingalliance.com/your-guide-to-positioning/)
 - [@article@The Ultimate Guide to Product Positioning - Marketing Strategy](https://www.marketingstrategy.com/the-ultimate-guide-to-product-positioning/)
+- [@article@Positioning (Marketing) - Wikipedia](https://en.wikipedia.org/wiki/Positioning_(marketing))

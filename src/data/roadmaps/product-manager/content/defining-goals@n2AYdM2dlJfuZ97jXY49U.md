@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product OKRs: Driving Outcomes Over Outputs - Product School](https://productschool.com/blog/product-strategy/product-okrs)
 - [@article@OKRs and Product Roadmaps - Roman Pichler](https://www.romanpichler.com/blog/okrs-and-product-roadmaps/)
+- [@article@Defining Goals in Product Management - Mambo](https://www.mambo.io/blog/defining-goals-product-management)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@7 Powerful Blue Ocean Strategy Examples](https://www.blueoceanstrategy.com/blog/7-powerful-blue-ocean-strategy-examples/)
 - [@article@Product Development Process: 6 Stages and Frameworks - Asana](https://asana.com/resources/product-development-process)
+- [@article@Case Studies in Product Management - Mambo](https://www.mambo.io/blog/case-studies-product-management)

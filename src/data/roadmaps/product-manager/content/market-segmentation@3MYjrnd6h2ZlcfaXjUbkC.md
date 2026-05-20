@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Understanding Market Segmentation - Investopedia](https://www.investopedia.com/terms/m/market-segmentation.asp)
 - [@article@Mastering Segmentation Strategy - Simon-Kucher](https://www.simon-kucher.com/en/insights/mastering-segmentation-strategy-comprehensive-guide)
+- [@article@Market Segmentation - Wikipedia](https://en.wikipedia.org/wiki/Market_segmentation)

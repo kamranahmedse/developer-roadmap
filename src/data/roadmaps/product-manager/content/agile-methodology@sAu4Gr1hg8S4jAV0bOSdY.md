@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@What is Scrum? Guide to the Agile Framework - Atlassian](https://www.atlassian.com/agile/scrum)
 - [@article@The Official Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [@article@Agile Software Development - Wikipedia](https://en.wikipedia.org/wiki/Agile_software_development)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@The 5 Stages in the Design Thinking Process - IxDF](https://ixdf.org/literature/article/5-stages-in-the-design-thinking-process)
 - [@article@The Complete UX Design Process - Konrad](https://www.konrad.com/research/ux-design-process)
+- [@article@Design Thinking - Wikipedia](https://en.wikipedia.org/wiki/Design_thinking)

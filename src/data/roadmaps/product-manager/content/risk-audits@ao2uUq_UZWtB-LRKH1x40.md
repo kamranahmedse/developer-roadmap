@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Conducting a Risk Management Audit: Best Practices and Guidelines](https://hyperproof.io/resource/risk-management-audit-best-practices-and-guidelines/)
 - [@article@Intro to Risk Audits in Project Management](https://projectmanagementacademy.net/resources/blog/risk-audits-in-project-management/)
+- [@article@Risk Audit in Project Management - Project Management Academy](https://www.projectmanagementacademy.net/blog/risk-audit-in-project-management)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@AI for Product Managers: Unlocking Growth in 2024](https://productschool.com/blog/artificial-intelligence/ai-for-product-managers-unlocking-growth-in-2024)
 - [@article@AI ML Product Managers: A Comprehensive Guide](https://scaledagile.com/blog/ai-ml-product-managers-guide/)
+- [@article@AI in Product Management - Mambo](https://www.mambo.io/blog/ai-product-management)

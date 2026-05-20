@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@How to Avoid Gold Plating in Project Management - Monday](https://monday.com/blog/project-management/gold-plating-project-management/)
 - [@article@The Difference Between Scope Creep and Gold Plating - Wrike](https://www.wrike.com/professional-services-guide/faq/scope-creep-vs-gold-plating/)
+- [@article@Feature Creep - Wikipedia](https://en.wikipedia.org/wiki/Feature_creep)

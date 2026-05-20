@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Strategy 101: Vision, Goals and Execution - Plane](https://plane.so/blog/product-strategy-101-vision-goals-and-execution-frameworks)
 - [@article@Master the Product Management Process - Product School](https://productschool.com/blog/product-fundamentals/product-management-process)
+- [@article@Capabilities in Product Management - Mambo](https://www.mambo.io/blog/capabilities-product-management)

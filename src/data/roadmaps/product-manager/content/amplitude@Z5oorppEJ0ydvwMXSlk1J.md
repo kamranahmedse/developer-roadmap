@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Amplitude Product Analytics Fundamentals](https://amplitude.com/product-analytics-fundamentals)
 - [@official@Amplitude Documentation](https://amplitude.com/docs)
+- [@article@Amplitude Analytics Guide - Mambo](https://www.mambo.io/blog/amplitude-analytics)

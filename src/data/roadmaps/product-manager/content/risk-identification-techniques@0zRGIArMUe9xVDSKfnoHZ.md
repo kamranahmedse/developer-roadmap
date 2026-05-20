@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Top 10 Risk Identification Techniques for Successful Project Management](https://birdviewpsa.com/blog/top-10-risk-identification-techniques-in-project-management/)
 - [@article@Risk Identification Techniques and How to Brainstorm Well](https://mpug.com/risk-identification-techniques-and-how-to-brainstorm-well)
+- [@article@Risk Matrix - Wikipedia](https://en.wikipedia.org/wiki/Risk_matrix)

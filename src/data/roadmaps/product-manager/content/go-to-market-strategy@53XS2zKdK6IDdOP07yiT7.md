@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Go-to-Market Strategy for Product Marketing - Product School](https://productschool.com/blog/product-marketing/go-to-market-strategy)
 - [@article@What is a Go-To-Market Strategy? - Coursera](https://www.coursera.org/articles/go-to-market-strategy)
+- [@article@Go-to-Market Strategy - Product School](https://productschool.com/blog/product-fundamentals/go-to-market-strategy)

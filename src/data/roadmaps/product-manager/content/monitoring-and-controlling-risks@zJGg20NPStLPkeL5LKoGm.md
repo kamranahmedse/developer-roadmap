@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Strategies for Project Risk Control and Monitoring](https://es.celoxis.com/project-management/chapter/controlling-project-risks)
 - [@article@Project Risk Analysis: Quantitative and Qualitative Techniques](https://www.projectmanager.com/training/how-to-analyze-risks-project)
+- [@article@Monitoring Risks in Product Management - Mambo](https://www.mambo.io/blog/monitoring-risks-product-management)

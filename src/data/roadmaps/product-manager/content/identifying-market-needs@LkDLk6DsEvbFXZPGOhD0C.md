@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@5 Techniques to Generate New Product Ideas - Hanover Research](https://www.hanoverresearch.com/insights-blog/corporate/5-techniques-to-generate-new-product-ideas/)
 - [@article@Product Ideation: How PMs Can Generate Powerful Feature Ideas - Aha!](https://www.aha.io/roadmapping/guide/idea-management/how-can-i-come-up-with-new-product-ideas)
+- [@article@Identifying Market Needs - Mambo](https://www.mambo.io/blog/identifying-market-needs)

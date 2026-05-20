@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Porter's Five Forces in Product Management - LinkedIn](https://www.linkedin.com/pulse/porters-five-forces-product-management-strategic-lens-dishant-salunke-snzyf)
 - [@article@The Five Forces - Harvard Business School](https://www.isc.hbs.edu/strategy/business-strategy/Pages/the-five-forces.aspx)
+- [@article@Product Strategy - SVPG](https://www.svpg.com/product-strategy/)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Use Microsoft Teams for Collaboration](https://learn.microsoft.com/en-us/microsoft-365/business-premium/create-teams-for-collaboration?view=o365-worldwide)
 - [@official@IT Project Manager Guide for Microsoft Teams](https://adoption.microsoft.com/en-us/guides/it-project-manager-teams/)
+- [@article@Microsoft Teams - Wikipedia](https://en.wikipedia.org/wiki/Microsoft_Teams)

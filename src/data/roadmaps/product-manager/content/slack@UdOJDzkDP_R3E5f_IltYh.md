@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@How to Master Project Collaboration: 8 Essential Steps](https://slack.com/blog/collaboration/how-to-master-project-collaboration-8-essential-steps)
 - [@official@Project Documentation: A Smarter Way to Align Teams](https://slack.com/blog/productivity/project-documentation-what-it-is-why-it-matters-and-how-to-do-it-right)
+- [@article@Slack - Wikipedia](https://en.wikipedia.org/wiki/Slack_(software))

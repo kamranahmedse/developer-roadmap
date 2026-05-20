@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@How to Create a PRD - Atlassian](https://www.atlassian.com/agile/product-management/requirements)
 - [@article@The Only PRD Template You Need - Product School](https://productschool.com/blog/product-strategy/product-template-requirements-document-prd)
+- [@article@Job Stories in Product Management - Mambo](https://www.mambo.io/blog/job-stories-product-management)

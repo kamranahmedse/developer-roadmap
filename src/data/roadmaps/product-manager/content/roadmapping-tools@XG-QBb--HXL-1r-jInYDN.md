@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@11 Best Product Roadmap Tools for Product Teams](https://blog.buildbetter.ai/11-best-product-roadmap-tools-for-product-teams/)
 - [@article@7 Top Product Roadmap Software for Product Management](https://www.meegle.com/blogs/product-roadmap-software)
+- [@article@Roadmapping Tools - Mambo](https://www.mambo.io/blog/roadmapping-tools)

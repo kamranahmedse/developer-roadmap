@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Leadership Skills: Influence Without Authority](https://productschool.com/blog/skills/influence-without-authority-product-manager)
 - [@article@Influencing without Authority: A Four-Part Formula](https://executiveeducation.wharton.upenn.edu/thought-leadership/wharton-at-work/2021/05/influencing-without-authority/)
+- [@article@Influencing Without Authority - Mambo](https://www.mambo.io/blog/influencing-without-authority)

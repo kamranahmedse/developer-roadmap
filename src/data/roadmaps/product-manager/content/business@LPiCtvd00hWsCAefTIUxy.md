@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Management Communication Skills - ProductPlan](https://productplan.com/learn/product-management-communication-skills)
 - [@article@3 Persuasive Communication Skills Product Managers Need - Productboard](https://www.productboard.com/blog/3-persuasive-communication-skills-product-managers-need/)
+- [@article@Business in Product Management - Mambo](https://www.mambo.io/blog/business-product-management)

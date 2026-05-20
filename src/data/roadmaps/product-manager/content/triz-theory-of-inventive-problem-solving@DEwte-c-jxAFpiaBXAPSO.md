@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@What is TRIZ? - Oxford Creativity](https://www.triz.co.uk/what-is-triz)
 - [@article@Unlocking Innovative Solutions with TRIZ - SixSigma.us](https://www.6sigma.us/six-sigma-in-focus/triz-inventive-problem-solving-methodology/)
+- [@article@TRIZ - Wikipedia](https://en.wikipedia.org/wiki/TRIZ)

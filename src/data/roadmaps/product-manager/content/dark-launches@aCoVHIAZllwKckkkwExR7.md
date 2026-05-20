@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Dark Launch: How to Release Features Safely - Product Fruits](https://productfruits.com/blog/dark-launch)
 - [@article@Feature Toggles (aka Feature Flags) - Martin Fowler](https://martinfowler.com/articles/feature-toggles.html)
+- [@article@Dark Launches in Product Management - Mambo](https://www.mambo.io/blog/dark-launches-product-management)

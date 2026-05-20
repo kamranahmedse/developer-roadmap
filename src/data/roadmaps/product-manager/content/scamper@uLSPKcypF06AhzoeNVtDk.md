@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@SCAMPER Design Thinking Technique - IMD](https://www.imd.org/blog/innovation/scamper-method-design-thinking/)
 - [@article@Brainstorming Techniques for Product Builders - Aha!](https://www.aha.io/roadmapping/guide/brainstorming-techniques-for-product-builders)
+- [@article@SCAMPER - Wikipedia](https://en.wikipedia.org/wiki/SCAMPER)

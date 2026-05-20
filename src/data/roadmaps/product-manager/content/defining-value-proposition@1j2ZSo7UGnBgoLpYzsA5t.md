@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@What is The Value Proposition Canvas - IxDF](https://ixdf.org/literature/topics/value-proposition-canvas)
 - [@article@A Product Manager's Guide to the Lean Business Canvas - Centercode](https://www.centercode.com/blog/a-product-managers-guide-to-the-lean-business-canvas)
+- [@article@Value Proposition in Product Management - Mambo](https://www.mambo.io/blog/value-proposition-product-management)

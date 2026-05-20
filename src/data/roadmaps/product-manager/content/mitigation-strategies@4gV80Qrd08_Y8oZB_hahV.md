@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Risk Management Strategies in Product Development Projects](https://valuetransform.com/risk-management-strategies-in-product-development-projects/)
 - [@article@5 Essential Risk Management Strategies for Product Development](https://www.treetowntech.com/risk-management-product-development/)
+- [@article@The Importance of Risk Management - SafetyCulture](https://www.safetyculture.com/topics/risk-management/)

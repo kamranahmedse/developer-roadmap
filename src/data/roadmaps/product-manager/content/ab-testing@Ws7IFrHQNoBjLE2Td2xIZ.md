@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@How Usability Testing Enhances Product Development - UX Firm](https://www.uxfirm.com/usability-testing-product-development)
 - [@article@Usability Testing: The Key to Designing With Confidence - Figma](https://www.figma.com/resource-library/usability-testing/)
+- [@article@A/B Testing in Product Management - Mambo](https://www.mambo.io/blog/ab-testing-product-management)

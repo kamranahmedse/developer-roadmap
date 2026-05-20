@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Backlog Grooming - Atlassian](https://www.atlassian.com/agile/project-management/backlog-grooming)
 - [@article@Product Backlog Refinement - Mountain Goat Software](https://www.mountaingoatsoftware.com/blog/product-backlog-refinement-grooming)
+- [@article@Backlog Management in Product Management - Mambo](https://www.mambo.io/blog/backlog-management-product-management)

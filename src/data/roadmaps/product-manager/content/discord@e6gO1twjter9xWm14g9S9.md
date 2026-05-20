@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Discord for Product Communities: Why It Works and How to Set It Up](https://community.atlassian.com/forums/App-Central-articles/Discord-for-product-communities-why-it-works-and-how-to-set-it/ba-p/3174171)
 - [@article@8 Online Communities Product Managers Should Join](https://productplan.com/learn/product-manager-communities)
+- [@article@Discord for Product Management - Mambo](https://www.mambo.io/blog/discord-product-management)

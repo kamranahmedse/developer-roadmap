@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@How To Do Mind Mapping - Atlassian](https://www.atlassian.com/work-management/project-management/mind-mapping)
 - [@article@Mind Mapping Techniques - Miro](https://miro.com/mind-map/mind-mapping-techniques/)
+- [@article@Mind Mapping in Product Management - Mambo](https://www.mambo.io/blog/mind-mapping-product-management)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@The Rise of Emotional Intelligence: Transforming Product Management](https://www.forbes.com/councils/forbestechcouncil/2024/01/24/the-rise-of-emotional-intelligence-transforming-product-management/)
 - [@article@How to Build Emotional Intelligence in Product Management](https://www.mindtheproduct.com/how-to-build-emotional-intelligence-in-product-management-pippa-topp-cpo-giffgaff/)
+- [@article@Emotional Intelligence in Product Management - Mambo](https://www.mambo.io/blog/emotional-intelligence-product-management)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@4 Ways to Elevate Your Communication Skills - Product Leadership](https://www.productleadership.com/blog/how-to-improve-communication-skills/)
 - [@article@Interpersonal Skills Playbook for PMs - Recruited](https://www.recruited.tech/blog/interpersonal-skills-playbook-for-pms)
+- [@article@Interpersonal Skills in Product Management - Mambo](https://www.mambo.io/blog/interpersonal-skills-product-management)

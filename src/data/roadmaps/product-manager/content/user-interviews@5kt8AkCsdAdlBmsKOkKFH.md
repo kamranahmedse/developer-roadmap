@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@User Interviews 101 - NN/g](https://www.nngroup.com/articles/user-interviews/)
 - [@article@How I Prepare and Run User Interviews - Tim Herbig](https://www.linkedin.com/pulse/how-i-prepare-run-user-interviews-product-thoughts-114-tim-herbig)
+- [@article@User Interviews in Product Management - Mambo](https://www.mambo.io/blog/user-interviews-product-management)

@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@10 Tactics of Influence Every Product Manager Must Master](https://www.aakashg.com/tactics-of-influence/)
 - [@article@Product Manager Skills: Maximizing Influence Through People Skills](https://www.linkedin.com/pulse/product-manager-skills-maximizing-influence-through-people-lawley)
+- [@article@Leadership in Product Management - Mambo](https://www.mambo.io/blog/leadership-product-management)

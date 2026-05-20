@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@The Ultimate Guide to Remote Working Team Collaboration](https://slack.com/blog/collaboration/ultimate-guide-collaboration-in-the-workplace)
 - [@official@Slack for Team Collaboration](https://slack.com/resources/collections/slack-for-team-collaboration)
+- [@article@Communication Tools for Product Management - Mambo](https://www.mambo.io/blog/communication-tools-product-management)

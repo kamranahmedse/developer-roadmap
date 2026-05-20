@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@STP Marketing: Segmentation, Targeting, Positioning - Smart Insights](https://www.smartinsights.com/digital-marketing-strategy/customer-segmentation-targeting/segmentation-targeting-and-positioning/)
 - [@article@STP Marketing Strategy Guide - Salesforce](https://www.salesforce.com/ap/blog/segmentation-targeting-positioning-model/)
+- [@article@Unique Selling Proposition - Wikipedia](https://en.wikipedia.org/wiki/Unique_selling_proposition)

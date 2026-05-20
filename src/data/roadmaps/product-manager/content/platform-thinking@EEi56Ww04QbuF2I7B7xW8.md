@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Unlocking Platform Thinking: Key Platform Product Management](https://www.productleadership.com/blog/unlocking-platform-thinking-product-management/)
 - [@article@Platform Thinking: Building Products That Scale Beyond Features](https://www.masteringproducthq.com/p/platform-thinking-building-products)
+- [@article@The Role of Product - SVPG](https://www.svpg.com/the-role-of-product/)

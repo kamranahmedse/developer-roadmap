@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Predictive Analytics For Product Managers In 2025 And Beyond](https://productside.com/predictive-analytics-for-product-managers/)
 - [@article@Predictive Analytics: A Game Changer for Data-Driven Decisions](https://www.eleapsoftware.com/glossary/predictive-analytics-a-game-changer-for-data-driven-decisions/)
+- [@article@Predictive Analytics - Wikipedia](https://en.wikipedia.org/wiki/Predictive_analytics)

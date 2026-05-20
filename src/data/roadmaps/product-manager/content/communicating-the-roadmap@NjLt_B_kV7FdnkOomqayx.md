@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Roadmap Guide - Atlassian](https://www.atlassian.com/agile/product-management/product-roadmaps)
 - [@article@Outcome-Based Roadmaps: Mapping Impact, Not Features - Product School](https://productschool.com/blog/product-strategy/outcome-based-roadmap)
+- [@article@Communicating the Product Roadmap - Mambo](https://www.mambo.io/blog/communicating-product-roadmap)

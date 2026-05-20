@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Bridging Disciplines: Service Design and Product Management - SDN](https://www.service-design-network.org/touchpoint/bridging-disciplines-service-design-and-product-management)
 - [@article@UX Activities in the Product & Service Design Cycle - NN/g](https://media.nngroup.com/media/articles/attachments/ux_methods_activities_NNg_A4.pdf)
+- [@article@Service Design - Wikipedia](https://en.wikipedia.org/wiki/Service_design)

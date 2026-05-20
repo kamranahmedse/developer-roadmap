@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Top 9 Brainstorming Techniques - Notion](https://www.notion.com/blog/brainstorming-techniques)
 - [@article@Three Divergent Thinking Techniques - Forbes](https://www.forbes.com/councils/forbescoachescouncil/2021/04/12/three-divergent-thinking-techniques-to-fuel-creativity-in-teams/)
+- [@article@Brainstorming - Wikipedia](https://en.wikipedia.org/wiki/Brainstorming)

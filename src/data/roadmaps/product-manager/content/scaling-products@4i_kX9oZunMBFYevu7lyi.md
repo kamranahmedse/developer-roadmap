@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Scaling Guide: Strategies for Efficient Growth](https://startup-house.com/blog/how-to-scale-a-product)
 - [@article@Scaling Products for Global Markets: Strategies That Work](https://www.linkedin.com/pulse/scaling-products-global-markets-strategies-work-adeoluwa-oni-pmp-bwdmf)
+- [@article@Scaling Products - Mambo](https://www.mambo.io/blog/scaling-products)

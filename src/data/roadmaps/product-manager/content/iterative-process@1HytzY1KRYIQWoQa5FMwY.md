@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Iterative Process: Definition, Steps, and Examples - Asana](https://asana.com/resources/iterative-process)
 - [@article@What Is an Iterative Process? - Atlassian](https://www.atlassian.com/work-management/project-management/iterative-process)
+- [@article@Iterative and Incremental Development - Wikipedia](https://en.wikipedia.org/wiki/Iterative_and_incremental_development)

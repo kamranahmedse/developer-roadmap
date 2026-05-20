@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Risk Response Strategy and Contingency Plans](https://www.projectmanagement.com/blog-post/73729/risk-response-strategy-and-contingency-plans)
 - [@article@Contingency Planning 101: Facing Unexpected Events in Uncertain Times](https://ra.poole.ncsu.edu/blog/2023/07/contingency-planning-101-facing-unexpected-events-in-uncertain-times/)
+- [@article@Contingency Plan - Wikipedia](https://en.wikipedia.org/wiki/Contingency_plan)

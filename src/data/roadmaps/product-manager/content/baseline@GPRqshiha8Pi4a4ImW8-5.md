@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@A Practical Guide to OKRs in Product Management - Tim Herbig](https://herbig.co/okrs-product-management/)
 - [@article@OKRs and KPIs in Product Management: A Practical Guide](https://tiagorodrigos.medium.com/okrs-and-kpis-in-product-management-a-practical-guide-99c3a8126d51)
+- [@article@Baseline in Product Management - Mambo](https://www.mambo.io/blog/baseline-product-management)

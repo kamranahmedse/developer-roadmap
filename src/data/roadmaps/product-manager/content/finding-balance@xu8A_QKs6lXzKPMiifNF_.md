@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Understanding Trade-Offs in Product Management - Shorter Loop](https://shorterloop.com/product-management-glossary/pm-glossary-terms/trade-offs/)
 - [@article@Balancing Tradeoffs Across Different Customers - Learning by Shipping](https://blog.learningbyshipping.com/2013/01/28/balancing-tradeoffs-across-different-customers/)
+- [@article@Finding Balance in Product Management - Mambo](https://www.mambo.io/blog/finding-balance-product-management)

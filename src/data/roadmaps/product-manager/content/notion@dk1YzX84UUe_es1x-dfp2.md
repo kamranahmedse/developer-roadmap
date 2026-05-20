@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Product Templates - Notion Marketplace](https://www.notion.com/templates/category/product)
 - [@official@Product Management Template - Notion](https://www.notion.com/templates/product-management)
+- [@article@Notion for Product Management - Mambo](https://www.mambo.io/blog/notion-product-management)

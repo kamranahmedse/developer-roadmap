@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Product Life Cycle: 4 Stages - Coursera](https://www.coursera.org/articles/product-lifecycle)
 - [@article@The 6 Stages of the Product Life Cycle - Salesforce](https://www.salesforce.com/au/blog/product-life-cycle/)
+- [@article@Product Lifecycle Management - Wikipedia](https://en.wikipedia.org/wiki/Product_lifecycle_management)

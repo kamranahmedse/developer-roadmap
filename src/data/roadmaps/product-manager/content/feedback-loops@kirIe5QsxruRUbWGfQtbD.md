@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@What is a Product Feedback Loop - LaunchDarkly](https://launchdarkly.com/blog/product-feedback-loop/)
 - [@article@Mastering the Feedback Loop - Mind the Product](https://www.mindtheproduct.com/mastering-the-feedback-loop-where-user-insights-meet-product-excellence/)
+- [@article@Feedback Loop - Wikipedia](https://en.wikipedia.org/wiki/Feedback_loop)

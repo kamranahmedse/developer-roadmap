@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Data-Driven Product Management: Using Analytics - Product School](https://productschool.com/blog/analytics/using-analytics-to-make-product-decisions)
 - [@article@20+ Key Metrics for Product Management - Product School](https://productschool.com/blog/analytics/metrics-product-management)
+- [@article@A/B Testing - Wikipedia](https://en.wikipedia.org/wiki/A/B_testing)

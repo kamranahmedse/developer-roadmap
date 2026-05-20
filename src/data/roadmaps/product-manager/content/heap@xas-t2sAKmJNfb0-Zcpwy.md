@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@official@Heap Getting Started Guide](https://learn.heap.io/page/getting-started)
 - [@official@Heap Documentation and Support](https://help.heap.io/hc/en-us)
+- [@article@Heap Analytics Guide - Mambo](https://www.mambo.io/blog/heap-analytics)

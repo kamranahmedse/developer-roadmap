@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@An Effective Project Risk Management Process in 5 Steps](https://riskonnect.com/project-risk-management/project-risk-management-process/)
 - [@article@A Comprehensive Guide to Project Management Risk](https://www.protechtgroup.com/en-us/blog/project-management-risk-guide)
+- [@article@What is Risk Mitigation - SafetyCulture](https://www.safetyculture.com/topics/risk-mitigation/)

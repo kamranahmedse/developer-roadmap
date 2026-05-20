@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@Risk Register in Project Management: 7 Step Implementation Guide](https://projectmanagementacademy.net/resources/blog/risk-register-in-project-management/)
 - [@article@Free Risk Register Templates](https://www.smartsheet.com/risk-register-templates)
+- [@article@Risk Register - Wikipedia](https://en.wikipedia.org/wiki/Risk_register)

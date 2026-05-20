@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@article@9 Proven Product Growth Strategies to Scale in 2025](https://www.aakashg.com/product-growth-strategies/)
 - [@article@Essential Strategies for Building and Scaling Products Successfully](https://www.productleadership.com/blog/essential-strategies-for-building-and-scaling-products/)
+- [@article@Growth Strategies in Product Management - Mambo](https://www.mambo.io/blog/growth-strategies-product-management)
