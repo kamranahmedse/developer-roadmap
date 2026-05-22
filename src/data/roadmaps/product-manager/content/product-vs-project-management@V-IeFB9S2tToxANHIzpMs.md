@@ -8,3 +8,4 @@ Learn more from the following resources:
 
 - [@article@Product vs Project Manager - Coursera](https://www.coursera.org/gb/articles/product-manager-vs-project-manager)
 - [@video@Product Manager vs Project Manager](https://www.youtube.com/watch?v=nPR6HsUO_XY)
+- [@article@Product Manager vs. Project Manager: Key Differences Explained - Atlassian](https://www.atlassian.com/agile/project-management/product-vs-project-management)

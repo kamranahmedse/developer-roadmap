@@ -1,3 +1,9 @@
 # Growth Strategies
 
 For a Product Manager, successful growth strategies are key to the scalability and survival of a product in the long run. They are charged with defining the direction and vision of the product, which includes implementing robust growth strategies. These strategies could range from market penetration, market development, product development to diversification. These strategic decisions directly affect the product's market share, competitiveness, and profitability. A well-versed Product Manager should understand these strategies and how to effectively deploy them based on the product's lifecycle, customer insights, competitive analysis, and market conditions. It is critical for the product manager to be in sync with cross-functional teams including Sales, Marketing, Engineering, Design to implement these growth initiatives effectively and move the product in the intended direction.
+
+Learn more from the following resources:
+
+- [@article@4 Product Growth Strategies + A Framework Teams Can Follow - Contentsquare](https://contentsquare.com/guides/growth-product-management/strategy/)
+- [@article@10 Steps to a Killer Product Strategy Framework - ProductPlan](https://www.productplan.com/learn/product-strategy-framework)
+- [@article@What Is a Growth Strategy? Key Steps and Examples - Reforge](https://www.reforge.com/blog/growth-strategy-templates)

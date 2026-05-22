@@ -5,3 +5,4 @@ The product roadmap is a strategic document that provides a detailed overview of
 Learn more from the following resources:
 - [@article@What is a Product Roadmap? - Product Plan](https://www.productplan.com/learn/what-is-a-product-roadmap/)
 - [@video@What is a Product Roadmap? - Vibhor Chandel](https://www.youtube.com/watch?v=BJR70jnpHog&ab_channel=VibhorChandel)
+- [@article@Product Roadmap Definition and Examples - Product School](https://productschool.com/resources/glossary/product-roadmap-term)

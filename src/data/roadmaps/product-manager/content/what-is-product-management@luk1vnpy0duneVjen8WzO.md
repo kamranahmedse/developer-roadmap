@@ -6,3 +6,5 @@ Learn more from the following resources:
 
 - [@article@What is Product Management? - Product Plan](https://www.productplan.com/learn/what-is-product-management/#what-is-product-management)
 - [@video@What is Product Management? - Atlassian](https://www.youtube.com/watch?v=kzMBIyzq9Ag)
+- [@article@What Is Product Management? Everything You Need to Know - Product School](https://productschool.com/blog/product-fundamentals/what-is-product-management)
+- [@article@What, Exactly, Is a Product Manager? - Mind the Product](https://www.mindtheproduct.com/what-exactly-is-a-product-manager/)

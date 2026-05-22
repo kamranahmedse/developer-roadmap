@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [@video@What's Product Development?](https://www.youtube.com/watch?v=jLvMGnAYicY)
 - [@article@What is Product Development?](https://www.aha.io/roadmapping/guide/what-is-product-development)
+- [@article@4 Key Stages of the Product Development Process - Reforge](https://www.reforge.com/blog/product-development-process)

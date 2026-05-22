@@ -7,3 +7,5 @@ From a product management perspective, this involves implementing innovative ide
 Learn more from the following resources:
 
 - [@video@How To Differentiate Your Business With BLUE OCEAN STRATEGY](https://www.youtube.com/watch?v=UKDxj6W7CXs)
+- [@article@What is Blue Ocean Strategy - Blue Ocean Strategy](https://www.blueoceanstrategy.com/what-is-blue-ocean-strategy/)
+- [@article@7 Powerful Blue Ocean Strategy Examples - Blue Ocean Strategy](https://www.blueoceanstrategy.com/blog/7-powerful-blue-ocean-strategy-examples/)

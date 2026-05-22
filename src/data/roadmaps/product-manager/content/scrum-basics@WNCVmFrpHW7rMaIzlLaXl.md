@@ -5,3 +5,5 @@ The role of a Product Manager greatly correlates to the understanding and implem
 Visit the following resources to learn more:
 
 - [@article@The Official Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [@article@What is Scrum? - Atlassian](https://www.atlassian.com/agile/scrum)
+- [@article@What is a Product Owner? - Atlassian](https://www.atlassian.com/agile/product-management/product-owner)

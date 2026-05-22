@@ -5,3 +5,5 @@ The Product Development Lifecycle is a crucial aspect for Product Managers to un
 Learn more from the following resources:
 
 - [@article@Product Development Lifecycle - MailChimp](https://mailchimp.com/resources/product-life-cycle/)
+- [@article@The 7 Strategic Phases of the Product Development Lifecycle - ProductPlan](https://www.productplan.com/learn/strategic-phases-product-planning-process)
+- [@article@Product Development Process: 10 Stages Every Team Should Follow - Aha!](https://www.aha.io/roadmapping/guide/stages-of-product-development)

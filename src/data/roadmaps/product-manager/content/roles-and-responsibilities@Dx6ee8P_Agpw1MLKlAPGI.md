@@ -5,3 +5,5 @@ A product manager is a pivotal role that stands at the crossroads of business, t
 Learn more from the following resources:
 
 - [@article@Product Manager Roles & Responsibilities](https://www.productside.com/product-manager-roles-and-responsibilities-keytask/)
+- [@article@Product Manager: Role and Best Practices for Beginners - Atlassian](https://www.atlassian.com/agile/product-management/product-manager)
+- [@article@What Does a Product Manager Actually Do? Daily Life as a PM - Product School](https://productschool.com/blog/career-development/what-does-product-manager-do)

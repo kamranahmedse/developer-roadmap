@@ -1,3 +1,9 @@
 # Market Segmentation under Positioning
 
 As a Product Manager, understanding market segmentation is crucial in the process of positioning your product. Market segmentation involves dividing a market into distinct groups of buyers who have different needs, characteristics, and behaviors, and who might require separate products or marketing mixes. It helps product managers identify and analyze potential customers, their needs, and how the product can meet their needs. Furthermore, using market segmentation for positioning assists in developing a product's unique selling proposition, thus facilitating a stronger connection with targeted customer segments. Without proper market segmentation, product positioning may become less effective and could result in wasted marketing efforts.
+
+# Articles
+
+- [@article@Market Segmentation Tips for Product People - Roman Pichler](https://www.romanpichler.com/blog/market-segmentation-tips-for-product-managers/)
+- [@article@How User Segmentation Helps PMs Improve Products - GoPractice](https://gopractice.io/skills/user-segmentation-in-product-management/)
+- [@article@Product Management 101: User Segmentation - Pendo](https://www.pendo.io/pendo-blog/product-management-101-user-segmentation/)
