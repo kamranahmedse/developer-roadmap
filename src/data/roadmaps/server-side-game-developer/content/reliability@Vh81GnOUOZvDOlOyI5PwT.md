@@ -4,5 +4,5 @@ Reliability refers to how consistently a data packet can be transferred from one
 Learn more from the following resources:
 
 - [@article@Reliability and Congestion Avoidance over UDP - Gaffer On Games](https://gafferongames.com/post/reliability_ordering_and_congestion_avoidance_over_udp/)
-- [@article@Transmission Control Protocol (TCP) - GeeksforGeeks](https://www.geeksforgeeks.org/computer-networks/what-is-transmission-control-protocol-tcp/)
+- [@article@Transmission Control Protocol (TCP) - IBM](https://www.ibm.com/docs/en/zos/3.1.0?topic=protocol-transmission-control-tcp)
 - [@article@UDP Packet Reliability and Re-sending - Stack Overflow](https://gamedev.stackexchange.com/questions/106722/udp-packet-reliability-and-re-sending)

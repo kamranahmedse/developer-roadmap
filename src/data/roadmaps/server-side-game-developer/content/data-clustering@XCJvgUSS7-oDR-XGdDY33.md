@@ -4,5 +4,5 @@
 Visit the following resources to learn more:
 
 - [@official@Clustering - scikit-learn Documentation](https://scikit-learn.org/stable/modules/clustering.html)
-- [@article@DBSCAN Clustering in ML - GeeksforGeeks](https://www.geeksforgeeks.org/machine-learning/dbscan-clustering-in-ml-density-based-clustering/)
+- [@article@DBSCAN - Wikipedia](https://en.wikipedia.org/wiki/DBSCAN)
 - [@article@DBSCAN vs K-Means: A Guide in Python - New Horizons](https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python)

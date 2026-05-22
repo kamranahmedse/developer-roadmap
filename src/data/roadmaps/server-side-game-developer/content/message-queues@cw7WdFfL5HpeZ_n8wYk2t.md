@@ -6,4 +6,4 @@ Learn more from the following resources:
 
 - [@article@What's the Difference Between Kafka and RabbitMQ? - AWS](https://aws.amazon.com/compare/the-difference-between-rabbitmq-and-kafka/)
 - [@article@Message Queue System Design Guide - System Design Handbook](https://www.systemdesignhandbook.com/guides/message-queue-system-design/)
-- [@article@Message Queues System Design - GeeksforGeeks](https://www.geeksforgeeks.org/system-design/message-queues-system-design/)
+- [@article@What is a Message Queue? - IBM](https://www.ibm.com/think/topics/message-queue)

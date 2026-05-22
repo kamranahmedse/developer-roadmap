@@ -4,5 +4,5 @@ XML, or Extensible Markup Language, is a language designed to store and transpor
 Learn more from the following resources:
 
 - [@article@XML Tutorial - W3Schools](https://www.w3schools.com/xml/)
-- [@article@XML Tutorial - GeeksforGeeks](https://www.geeksforgeeks.org/html/xml-tutorial/)
+- [@article@XML Introduction - MDN](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction)
 - [@article@What is XML? Complete Guide - Codecademy](https://www.codecademy.com/resources/blog/what-is-xml-used-for)

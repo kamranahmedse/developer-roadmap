@@ -5,5 +5,5 @@ MySQL is an open-source relational database management system (RDBMS) that uses 
 Learn more from the following resources:
 
 - [@article@MySQL Tutorial - W3Schools](https://www.w3schools.com/mysql/)
-- [@article@MySQL Tutorial - GeeksforGeeks](https://www.geeksforgeeks.org/mysql/mysql-tutorial/)
+- [@article@MySQL Tutorial - TutorialsPoint](https://www.tutorialspoint.com/mysql/index.htm)
 - [@article@Getting Started with MySQL - MySQL Docs](https://dev.mysql.com/doc/mysql-getting-started/en/)

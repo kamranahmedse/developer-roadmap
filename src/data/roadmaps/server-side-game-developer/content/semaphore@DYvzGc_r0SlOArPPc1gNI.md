@@ -9,7 +9,7 @@ semaphores help maintain stability in high-performance multiplayer environments.
 
 Visit the following resources to learn more:
 
-- [@article@Semaphores in Process Synchronization](https://www.geeksforgeeks.org/semaphores-in-process-synchronization/)
+- [@article@Semaphore Objects - Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/sync/semaphore-objects)
 
 - [@article@Semaphore (programming) - Wikipedia](https://en.wikipedia.org/wiki/Semaphore_(programming))
 - [@article@Synchronization With Semaphores - Oracle](https://docs.oracle.com/cd/E19120-01/open.solaris/816-5137/sync-11157/index.html)

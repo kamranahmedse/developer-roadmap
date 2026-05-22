@@ -4,5 +4,5 @@ Couchbase is a NoSQL database technology that provides flexible data models suit
 Visit the following resources to learn more:
 
 - [@official@Start Here! Getting Started with Couchbase - Couchbase Docs](https://docs.couchbase.com/server/current/getting-started/start-here.html)
-- [@article@Introduction to Couchbase - GeeksforGeeks](https://www.geeksforgeeks.org/dbms/introduction-to-couchbase/)
+- [@article@Couchbase - Wikipedia](https://en.wikipedia.org/wiki/Couchbase)
 - [@official@Couchbase Documentation](https://docs.couchbase.com/home/index.html)

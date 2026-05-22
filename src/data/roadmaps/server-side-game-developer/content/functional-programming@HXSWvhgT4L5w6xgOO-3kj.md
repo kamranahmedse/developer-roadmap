@@ -5,5 +5,5 @@
 Learn more from the following resources:
 
 - [@article@Functional Programming - Wikipedia](https://en.wikipedia.org/wiki/Functional_programming)
-- [@article@Functional Programming Paradigm - GeeksforGeeks](https://www.geeksforgeeks.org/blogs/functional-programming-paradigm/)
+- [@article@What is Functional Programming? - IBM](https://www.ibm.com/think/topics/functional-programming)
 - [@article@Functional Programming Concepts in F# - Microsoft](https://learn.microsoft.com/en-us/dotnet/fsharp/tutorials/functional-programming-concepts)

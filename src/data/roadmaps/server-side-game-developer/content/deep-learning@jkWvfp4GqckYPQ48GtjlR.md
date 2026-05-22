@@ -4,5 +4,5 @@ Deep Learning is a subset of machine learning that imitates the workings of the 
 Learn more from the following resources:
 
 - [@article@Neural Networks — Machine Learning Crash Course - Google Developers](https://developers.google.com/machine-learning/crash-course/neural-networks)
-- [@article@Introduction to Neural Networks - GeeksforGeeks](https://www.geeksforgeeks.org/deep-learning/neural-networks-a-beginners-guide/)
+- [@article@What are Neural Networks? - IBM](https://www.ibm.com/think/topics/neural-networks)
 - [@interactive@A Neural Network Playground - TensorFlow](https://playground.tensorflow.org/)

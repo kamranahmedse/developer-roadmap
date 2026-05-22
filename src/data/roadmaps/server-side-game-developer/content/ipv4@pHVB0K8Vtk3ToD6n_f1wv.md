@@ -5,5 +5,5 @@
 Learn more from the following resources:
 
 - [@article@How IPv4 Works - A Handbook for Developers - freeCodeCamp](https://www.freecodecamp.org/news/how-ipv4-works-a-handbook-for-developers/)
-- [@article@What is Internet Protocol Version 4 (IPv4) - GeeksforGeeks](https://www.geeksforgeeks.org/computer-networks/what-is-ipv4/)
+- [@article@IPv4 - Wikipedia](https://en.wikipedia.org/wiki/IPv4)
 - [@article@IPv4 Header Structure and Fields Explained - ComputerNetworkingNotes](https://www.computernetworkingnotes.com/networking-tutorials/ipv4-header-structure-and-fields-explained.html)

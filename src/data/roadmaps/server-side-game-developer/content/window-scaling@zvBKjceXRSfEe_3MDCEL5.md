@@ -4,5 +4,5 @@ Window Scaling is a mechanism in the Transmission Control Protocol (TCP) that pr
 Learn more from the following resources:
 
 - [@article@TCP Window Size Scaling - NetworkLessons](https://networklessons.com/network-fundamentals/tcp-window-size-scaling)
-- [@article@What is TCP Window Scaling? - GeeksforGeeks](https://www.geeksforgeeks.org/what-is-tcp-window-scaling/)
+- [@article@TCP Window Scale Option - Wikipedia](https://en.wikipedia.org/wiki/TCP_window_scale_option)
 - [@article@RFC 7323 - TCP Extensions for High Performance - IETF](https://datatracker.ietf.org/doc/html/rfc7323)

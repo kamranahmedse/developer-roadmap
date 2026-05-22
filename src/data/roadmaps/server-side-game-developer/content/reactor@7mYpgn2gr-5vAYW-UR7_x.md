@@ -4,5 +4,5 @@ The **Reactor** is a design pattern that deals with synchronous I/O multiplexing
 Learn more from the following resources:
 
 - [@article@Reactor Pattern - Wikipedia](https://en.wikipedia.org/wiki/Reactor_pattern)
-- [@article@What is Reactor Pattern in Node.js? - GeeksforGeeks](https://www.geeksforgeeks.org/node-js/what-is-reactor-pattern-in-node-js/)
+- [@article@Blocking vs Non-Blocking - Node.js Docs](https://nodejs.org/en/learn/asynchronous-work/overview-of-blocking-vs-non-blocking)
 - [@article@Reactor Pattern in Java - Java Design Patterns](https://java-design-patterns.com/patterns/reactor/)

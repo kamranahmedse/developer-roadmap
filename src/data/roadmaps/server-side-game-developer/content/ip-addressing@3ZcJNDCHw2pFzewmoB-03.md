@@ -5,5 +5,5 @@ IP (Internet Protocol) addressing is a fundamental aspect of networking, at the 
 Learn more from the following resources:
 
 - [@article@TCP/IP Addressing and Subnetting - Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting)
-- [@article@What is an IP Address? - GeeksforGeeks](https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-an-ip-address/)
+- [@article@What is an IP Address? - IBM](https://www.ibm.com/think/topics/ip-address)
 - [@course@Fundamentals of Computer Networking - Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/network-fundamentals/)

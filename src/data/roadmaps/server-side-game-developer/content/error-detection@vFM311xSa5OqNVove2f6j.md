@@ -10,8 +10,8 @@ in multiplayer games, ensuring smooth gameplay and synchronization across player
 
 Visit the following resources to learn more:
 
-- [@article@Error Detection Code – Checksum](https://www.geeksforgeeks.org/error-detection-code-checksum/)  
+- [@article@Checksum - Wikipedia](https://en.wikipedia.org/wiki/Checksum)
 - [@article@Error Control in TCP](https://www.cisco.com/c/en/us/support/docs/ip/tcp/13733-40.html)
-- [@article@Error Detection in Computer Networks - GeeksforGeeks](https://www.geeksforgeeks.org/computer-networks/error-detection-in-computer-networks/)
+- [@article@What is Error Detection? - IBM](https://www.ibm.com/think/topics/error-detection)
 - [@article@Cyclic Redundancy Check - Wikipedia](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)
 - [@article@Detecting and Correcting Bit Errors - Princeton University](https://www.cs.princeton.edu/courses/archive/spring19/cos463/lectures/L08-error-control.pdf)

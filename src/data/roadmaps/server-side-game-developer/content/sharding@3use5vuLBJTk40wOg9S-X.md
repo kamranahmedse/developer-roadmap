@@ -4,5 +4,5 @@ Sharding is a type of database partitioning that separates very large databases 
 Learn more from the following resources:
 
 - [@article@A Comprehensive Guide to Sharding - PubNub](https://www.pubnub.com/guides/sharding/)
-- [@article@Database Sharding - System Design - GeeksforGeeks](https://www.geeksforgeeks.org/system-design/database-sharding-a-system-design-concept/)
+- [@article@Sharded Cluster Components - MongoDB Docs](https://www.mongodb.com/docs/manual/core/sharded-cluster-components/)
 - [@article@Sharding Pattern - Azure Architecture Center - Microsoft Learn](https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding)

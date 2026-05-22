@@ -4,6 +4,6 @@
 
 Learn more from the following resources:
 
-- [@article@What is Internet Protocol (IP)? - GeeksforGeeks](https://www.geeksforgeeks.org/computer-networks/what-is-internet-protocol-ip/)
+- [@article@Internet Protocol - Wikipedia](https://en.wikipedia.org/wiki/Internet_Protocol)
 - [@article@IP Network (Internet Protocol Network) - Kentik](https://www.kentik.com/kentipedia/ip-network/)
 - [@article@Introduction to IP (Internet Protocol) V4 - NetworkLessons](https://networklessons.com/subnetting/internet-protocol)
