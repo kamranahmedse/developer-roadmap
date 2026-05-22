@@ -5,3 +5,5 @@ Don't try to build everything at once. Start with your MVP, the simplest version
 Visit the following resources to learn more:
 
 - [@article@A Structured Workflow for "Vibe Coding" Full-Stack Apps](https://dev.to/wasp/a-structured-workflow-for-vibe-coding-full-stack-apps-352l)
+- [@article@Vibe Coding MVP Guide: How to Build SaaS Faster with AI Tools - Upsilon IT](https://www.upsilonit.com/blog/vibe-coding-mvp-guide)
+- [@article@From Vibe Coding to Spec-Driven Development - Towards Data Science](https://towardsdatascience.com/from-vibe-coding-to-spec-driven-development/)

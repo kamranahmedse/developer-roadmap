@@ -5,3 +5,5 @@ Context is everything when working with AI. The AI only knows what you tell it; 
 Visit the following resources to learn more:
 
 - [@article@Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- [@article@Context Engineering Best Practices for AI-Powered Dev Teams - Packmind](https://packmind.com/context-engineering-ai-coding/context-engineering-best-practices/)
+- [@article@Complete Guide to Context Engineering for Coding Agents - Latitude](https://latitude.so/blog/context-engineering-guide-coding-agents)

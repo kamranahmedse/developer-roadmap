@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Passing the Security Vibe Check: The Dangers of Vibe Coding](https://www.databricks.com/blog/passing-security-vibe-check-dangers-vibe-coding)
 - [@article@How to secure AI-coded (vibe coded) applications](https://dev.to/zvone187/how-to-secure-ai-coded-vibe-coded-applications-18ge)
+- [@article@Vibe Coding Security: Risks and Best Practices - Legit Security](https://www.legitsecurity.com/aspm-knowledge-base/vibe-coding-security)
