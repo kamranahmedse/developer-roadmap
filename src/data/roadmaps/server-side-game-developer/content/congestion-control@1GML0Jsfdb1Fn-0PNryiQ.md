@@ -13,3 +13,6 @@ game performance, especially in high-traffic scenarios.
 Visit the following resources to learn more:
 
 - [@article@Congestion Control in Linux TCP](https://www.usenix.org/conference/2002-usenix-annual-technical-conference/congestion-control-linux-tcp)
+- [@article@TCP Congestion Control - Wikipedia](https://en.wikipedia.org/wiki/TCP_congestion_control)
+- [@article@TCP Congestion Control Guide - SynchroNet](https://synchronet.net/congestion-control-in-tcp/)
+- [@official@RFC 8085: UDP Usage Guidelines - IETF](https://www.rfc-editor.org/rfc/rfc8085.html)

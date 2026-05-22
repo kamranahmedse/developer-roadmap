@@ -1,3 +1,9 @@
 # Java
 
 Java is an object-oriented programming language that is class-based and designed to have as few implementation dependencies as possible. It was originally developed by James Gosling at Sun Microsystems and released in 1995 as a core component of Sun Microsystems' Java platform. The language's syntax has much in common with C and C++, but its object model is simpler and has less low-level facilities. Java applications are typically compiled to bytecode that can run on any Java Virtual Machine (JVM), making Java applications highly portable. Java is a general-purpose programming language and is used widely for server-side applications, particularly in high-performance environments where speed and scalability are critical.
+
+Learn more from the following resources:
+
+- [@official@Netty - Asynchronous Event-Driven Network Framework](https://netty.io/)
+- [@article@A Quick Guide to Java on Netty - Okta Developer](https://developer.okta.com/blog/2019/11/25/java-netty-webflux)
+- [@official@libGDX Networking Guide](https://libgdx.com/wiki/networking)

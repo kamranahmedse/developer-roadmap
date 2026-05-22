@@ -4,3 +4,9 @@
 
 - [@article@C Programming Language](https://en.wikipedia.org/wiki/C_%28programming_language%29)
 - [@article@C++ Programming Language](https://en.wikipedia.org/wiki/C%2B%2B)
+
+Learn more from the following resources:
+
+- [@article@Learn C++ - LearnCpp](https://www.learncpp.com/)
+- [@official@Get Started with C++ - ISO C++](https://isocpp.org/get-started)
+- [@article@C++ Reference - DevDocs](https://devdocs.io/cpp/)

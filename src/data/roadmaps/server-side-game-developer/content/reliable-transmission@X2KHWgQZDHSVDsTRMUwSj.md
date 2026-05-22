@@ -13,3 +13,6 @@ Visit the following resources to learn more:
 
 - [@article@Reliable Transmission](https://book.systemsapproach.org/direct/reliable.html)
 - [@article@TCP Reliable Transmission (IETF RFC 793)](https://datatracker.ietf.org/doc/html/rfc793)
+- [@article@Automatic Repeat Request (ARQ) - GeeksforGeeks](https://www.geeksforgeeks.org/computer-networks/what-is-arq-automatic-repeat-request/)
+- [@article@Difference Between Stop and Wait, GoBackN and Selective Repeat - GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-stop-and-wait-gobackn-and-selective-repeat/)
+- [@documentation@RFC 3366 - Advice to Link Designers on Link ARQ - IETF](https://datatracker.ietf.org/doc/html/rfc3366)

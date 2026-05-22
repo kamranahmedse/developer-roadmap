@@ -1,3 +1,8 @@
 # Deep Learning
 
 Deep Learning is a subset of machine learning that imitates the workings of the human brain in processing data and creating patterns for decision-making. This technique utilizes multiple layers of algorithms (or neural networks) to process information. Deep learning involves training a model using large volumes of data and neural network architectures that contain many layers. A server-side game developer might use deep learning algorithms to create complex AI characters, improve game physics, or even analyze player data. Deep learning can be supervised, semi-supervised or unsupervised and it's extensively applied in various domains such as voice recognition, image recognition, natural language processing, etc. It is a crucial element for many modern AI applications.
+Learn more from the following resources:
+
+- [@article@Neural Networks — Machine Learning Crash Course - Google Developers](https://developers.google.com/machine-learning/crash-course/neural-networks)
+- [@article@Introduction to Neural Networks - GeeksforGeeks](https://www.geeksforgeeks.org/deep-learning/neural-networks-a-beginners-guide/)
+- [@interactive@A Neural Network Playground - TensorFlow](https://playground.tensorflow.org/)

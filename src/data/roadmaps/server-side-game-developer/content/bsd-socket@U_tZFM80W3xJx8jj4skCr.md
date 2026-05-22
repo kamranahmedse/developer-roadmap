@@ -1,3 +1,8 @@
 # BSD Socket
 
 The BSD sockets API is an application programming interface (API) for network communication originally developed as part of the Berkeley Software Distribution (BSD). This API provides a set of functions for creating and manipulating network sockets in operating systems. It has been widely adopted in a variety of platforms due to its simplicity and ease of use for networking tasks. The BSD socket API supports various network protocols and is extensible to support new protocols. It allows low-level access to network services, with the facilities to manage connections, send and receive data, and handle multiple connections concurrently. The API supports both connection-oriented (TCP) and connectionless (UDP) network protocols.
+# Learn more from the following resources:
+
+- [@article@Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
+- [@article@Berkeley Sockets - Wikipedia](https://en.wikipedia.org/wiki/Berkeley_sockets)
+- [@official@BSD Socket Interface - Keil](https://www.keil.com/pack/doc/mw6/network/html/using_network_sockets_bsd.html)

@@ -5,3 +5,8 @@ RPC (Remote Procedure Call) and REST (Representational State Transfer) are two d
 In the context of game development, both RPC and REST can be used depending on the specific needs of the game and the underlying architecture that supports it. Both of them offer unique characteristics that make them suitable for different aspects or modules inside a game like character control, game state management, real-time networking, etc. While RPC might be more suited for real-time, fast communication, REST can be leveraged for independent, scalable, and stateless nature of its design. 
 
 In sum, RPC and REST terms come up frequently in server-side game development due to their importance in determining how your game will communicate between its different parts, especially in multiplayer environments. It is crucial to make the appropriate choice based on your game's requirements and desired user experience.
+Learn more from the following resources:
+
+- [@article@RPC vs REST - Difference Between API Architectures - AWS](https://aws.amazon.com/compare/the-difference-between-rpc-and-rest/)
+- [@article@Understanding the Difference Between RPC and REST for Web APIs - Merge](https://www.merge.dev/blog/understanding-the-difference-between-rpc-and-rest-for-web-apis)
+- [@article@Do You Really Know Why You Prefer REST Over RPC? - API Handyman](https://apihandyman.io/do-you-really-know-why-you-prefer-rest-over-rpc/)

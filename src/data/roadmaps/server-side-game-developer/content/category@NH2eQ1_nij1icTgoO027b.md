@@ -11,3 +11,8 @@ The Internet Protocol Addresses (IP Addresses) are categorized into five differe
 **Class D** IP address is designed for multicast groups and ranges from 224.0.0.0 to 239.255.255.255. 
 
 Lastly, **Class E** IP address ranges from 240.0.0.0 to 255.255.255.254 and is preserved for research and development purposes.
+Learn more from the following resources:
+
+- [@article@IP Address - Wikipedia](https://en.wikipedia.org/wiki/IP_address)
+- [@official@Internet Protocol RFC 791 - IETF](https://datatracker.ietf.org/doc/html/rfc791)
+- [@official@IPv4 Header Format - Wikipedia](https://en.wikipedia.org/wiki/IPv4#Header)
