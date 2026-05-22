@@ -6,3 +6,9 @@
 - Clean split of API/internals without internals leaking into the API?
 - Are there no breaking changes to user-facing parts (API classes, configuration, metrics, log formats, etc)?
 - Is a new API generally useful and not overly specific to a single use case?
+
+Learn more from the following resources:
+
+- [@article@API Design Best Practices Guide - Fern](https://buildwithfern.com/post/api-design-best-practices-guide)
+- [@article@RESTful API Resource Naming](https://restfulapi.net/resource-naming/)
+- [@article@Web API Design Best Practices - Microsoft Azure](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design)
