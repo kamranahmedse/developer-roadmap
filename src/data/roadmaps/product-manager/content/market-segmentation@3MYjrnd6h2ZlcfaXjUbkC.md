@@ -4,6 +4,8 @@ As a Product Manager, understanding market segmentation is crucial in the proces
 
 # Articles
 
+Visit the following resources to learn more:
+
 - [@article@Market Segmentation Tips for Product People - Roman Pichler](https://www.romanpichler.com/blog/market-segmentation-tips-for-product-managers/)
 - [@article@How User Segmentation Helps PMs Improve Products - GoPractice](https://gopractice.io/skills/user-segmentation-in-product-management/)
 - [@article@Product Management 101: User Segmentation - Pendo](https://www.pendo.io/pendo-blog/product-management-101-user-segmentation/)

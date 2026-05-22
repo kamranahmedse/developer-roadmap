@@ -4,6 +4,8 @@ As a Product Manager, having a comprehensive understanding of the business is es
 
 # Articles
 
+Visit the following resources to learn more:
+
 - [@article@Business Fundamentals for Product Managers - Product Leaders Blog](https://www.productleaders.blog/blog/business-fundamentals-for-product-managers)
 - [@article@The Fundamentals of Modern Product Management - Pendo](https://www.pendo.io/resources/the-fundamentals-of-modern-product-management/)
 - [@article@What Are the Key Fundamentals of Product Management - Mind the Product](https://www.mindtheproduct.com/what-are-the-key-fundamentals-of-product-management/)

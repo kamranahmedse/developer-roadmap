@@ -4,6 +4,8 @@ As a central aspect of a Product Manager's role, market analysis encompasses the
 
 # Articles
 
+Visit the following resources to learn more:
+
 - [@article@Product Management Skills: Market Research - Product School](https://productschool.com/blog/skills/product-management-skills-market-research)
 - [@article@Market Research Techniques: A Comprehensive Guide for Product Managers - Maven](https://maven.com/articles/product-managers-guide-market-research)
 - [@article@Competitive Analysis for Product Managers: A Complete Guide - Plane](https://plane.so/blog/competitive-analysis-for-product-managers-a-complete-guide)
