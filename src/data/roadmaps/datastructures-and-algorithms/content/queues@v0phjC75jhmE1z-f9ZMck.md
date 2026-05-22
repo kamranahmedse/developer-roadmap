@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@video@Queue](https://www.youtube.com/watch?v=M6GnoUDpqEE)
 - [@video@Python Queue](https://www.youtube.com/watch?v=rUUrmGKYwHw)
+- [@article@Queue Data Structure - GeeksforGeeks](https://www.geeksforgeeks.org/queue-data-structure/)
+- [@official@Queue (Abstract Data Type) - Wikipedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+- [@course@Queues - Coursera](https://www.coursera.org/lecture/data-structures/queues-HQQz6)

@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@video@Binary Search Tree Part-1](https://youtu.be/lFq5mYUWEBk?si=GKRm1O278NCetnry)
 - [@video@Binary Search Tree Part-2](https://youtu.be/JnrbMQyGLiU?si=1pfKn2akKXWLshY6)
+- [@official@Binary Search Tree - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/binary-search-tree-data-structure/)
+- [@official@DSA Binary Search Trees - W3Schools](https://www.w3schools.com/dsa/dsa_data_binarysearchtrees.php)
+- [@article@Binary Search Tree Tutorial - Bridges](https://bridgesuncc.github.io/tutorials/BinarySearchTree.html)

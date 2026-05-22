@@ -6,3 +6,9 @@ Functions in programming are named sections of a program that perform a specific
 *   **User-defined** functions: written by the user for a specific use case.
 *   **Anonymous** functions: also known as lambda functions, which are not declared using the standard keyword (`def` in Python, for example).
 *   **Higher-order** functions: functions that take other functions as arguments or return a function.
+
+Visit the following resources to learn more:
+
+- [@article@Functions in Programming - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/functions-programming/)
+- [@official@Python Functions - W3Schools](https://www.w3schools.com/python/python_functions.asp)
+- [@official@JavaScript Functions - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)

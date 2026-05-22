@@ -7,3 +7,6 @@ Visit the following resources to learn more:
 - [@video@Hash Table](https://www.youtube.com/watch?v=KEs5UyBJ39g&ab_channel=takeUforward)
 - [@video@Python Hash Table Part 1](https://www.youtube.com/watch?v=ea8BRGxGmlA)
 - [@video@Python Hash Table Part 2](https://www.youtube.com/watch?v=54iv1si4YCM)
+- [@article@Hashing Data Structure - GeeksforGeeks](https://www.geeksforgeeks.org/hashing-data-structure/)
+- [@official@Hash Table - Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
+- [@course@Hash Tables - Coursera](https://www.coursera.org/lecture/data-structures/hash-tables-dgU6E)

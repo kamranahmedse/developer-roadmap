@@ -5,3 +5,6 @@ Recursion is a method where the solution to a problem depends on solutions to sh
 Visit the following resources to learn more:
 
 - [@video@Recursion in 100 Seconds](https://www.youtube.com/watch?v=rf60MejMz3E)
+- [@article@How Does Recursion Work? Explained with Code Examples](https://www.freecodecamp.org/news/what-is-recursion/)
+- [@article@Introduction to Recursion - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/introduction-to-recursion/)
+- [@article@Recursion (Computer Science) - Wikipedia](https://en.wikipedia.org/wiki/Recursion_(computer_science))

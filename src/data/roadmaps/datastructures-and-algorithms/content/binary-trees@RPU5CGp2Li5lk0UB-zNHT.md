@@ -5,3 +5,6 @@ A **Binary Tree** is a type of tree data structure in which each node has at mos
 Visit the following resources to learn more:
 
 - [@video@Binary Tree](https://youtu.be/4r_XR9fUPhQ?si=PBsRjix_Z9kVHgMM)
+- [@official@Binary Tree Data Structure - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/binary-tree-data-structure/)
+- [@official@DSA Binary Trees - W3Schools](https://www.w3schools.com/dsa/dsa_data_binarytrees.php)
+- [@article@Binary Trees - Stanford CS Education Library](http://cslibrary.stanford.edu/110/BinaryTrees.html)

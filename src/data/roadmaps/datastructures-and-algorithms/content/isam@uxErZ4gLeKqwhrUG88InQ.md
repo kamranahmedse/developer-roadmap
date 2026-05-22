@@ -5,3 +5,6 @@ ISAM, which stands for Indexed Sequential Access Method, is a type of disk stora
 Visit the following resources to learn more:
 
 - [@video@DBMS - Index Sequential Access Method (ISAM)](https://www.youtube.com/watch?v=EiW1VVPor10)
+- [@article@ISAM - Wikipedia](https://en.wikipedia.org/wiki/ISAM)
+- [@article@Indexed Sequential Access Method (ISAM) - GeeksforGeeks](https://www.geeksforgeeks.org/indexed-sequential-access-method-isam/)
+- [@article@Difference Between ISAM and B-Tree - GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-isam-and-b-tree/)

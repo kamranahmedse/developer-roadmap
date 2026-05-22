@@ -7,3 +7,6 @@ Visit the following resources to learn more:
 - [@article@Bubble Sort Visualize](https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/)
 - [@video@Bubble Sort](https://www.youtube.com/watch?v=Jdtq5uKz-w4)
 - [@video@Bubble Sort](https://www.youtube.com/watch?v=p__ETf2CKY4)
+- [@article@Bubble Sort - W3Schools](https://www.w3schools.com/dsa/dsa_algo_bubblesort.php)
+- [@article@Bubble Sort - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/bubble-sort-algorithm/)
+- [@article@Bubble Sort - Programiz](https://www.programiz.com/dsa/bubble-sort)

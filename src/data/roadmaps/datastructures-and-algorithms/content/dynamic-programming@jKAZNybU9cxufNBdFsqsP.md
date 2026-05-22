@@ -7,3 +7,6 @@ Visit the following resources to learn more:
 - [@article@Getting Started with Dynamic Programming in Data Structures and Algorithms](https://medium.com/@PythonicPioneer/getting-started-with-dynamic-programming-in-data-structures-and-algorithms-126c7a16775c)
 - [@video@What Is Dynamic Programming and How To Use It](https://www.youtube.com/watch?v=vYquumk4nWw&t=4s)
 - [@video@5 Simple Steps for Solving Dynamic Programming Problems](https://www.youtube.com/watch?v=aPQY__2H3tE)
+- [@article@Dynamic Programming - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/dynamic-programming/)
+- [@article@Dynamic Programming - Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming)
+- [@article@Dynamic Programming - Programiz](https://www.programiz.com/dsa/dynamic-programming)

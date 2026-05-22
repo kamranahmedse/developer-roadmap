@@ -10,3 +10,6 @@ Visit the following resources to learn more:
 - [@video@Arrays in C++](https://www.youtube.com/watch?v=G38hQKXa_RU&pp=ygUJYXJyYXkgYysr)
 - [@video@Arrays in Rust](https://www.youtube.com/watch?v=cH6Qv47MPwk&pp=ygUKYXJyYXkgcnVzdA%3D%3D)
 - [@video@Arrays in Ruby](https://www.youtube.com/watch?v=SP3Vf2KcYeU&pp=ygUKYXJyYXkgcnVieQ%3D%3D)
+- [@article@Array Data Structure - GeeksforGeeks](https://www.geeksforgeeks.org/array-data-structure/)
+- [@official@Array Data Structure - Wikipedia](https://en.wikipedia.org/wiki/Array_data_structure)
+- [@course@Arrays - Coursera](https://www.coursera.org/lecture/data-structures/arrays-OsEGs)

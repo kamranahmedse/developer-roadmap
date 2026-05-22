@@ -5,3 +5,6 @@
 Visit the following resources to learn more:
 
 - [@video@Learn Binary Search in 10 minutes](https://www.youtube.com/watch?v=xrMppTpoqdw)
+- [@official@DSA Binary Search - W3Schools](https://www.w3schools.com/dsa/dsa_algo_binarysearch.php)
+- [@article@Binary Search - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+- [@official@Binary Search Tutorial - HackerEarth](https://www.hackerearth.com/practice/algorithms/searching/binary-search/tutorial/)

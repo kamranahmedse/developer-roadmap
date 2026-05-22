@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@Selection Sort Visualize](https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/practice-problems/)
 - [@video@Selection sort in 3 minutes](https://www.youtube.com/watch?v=g-PGLbMth_g&t=5s)
+- [@article@Selection Sort - Programiz](https://www.programiz.com/dsa/selection-sort)
+- [@article@Selection Sort - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/selection-sort-algorithm-2/)
+- [@article@Selection Sort - Wikipedia](https://en.wikipedia.org/wiki/Selection_sort)

@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@Asymptotic Analysis: Big-O Notation and More](https://www.programiz.com/dsa/asymptotic-notations)
 - [@article@The Big O Notation](https://towardsdatascience.com/big-o-notation-32fb458e5260/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
+- [@course@Big-Ω (Big-Omega) Notation - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-omega-notation)
+- [@article@Asymptotic Notations: A Comprehensive Guide](https://dev.to/princem/asymptotic-notations-a-comprehensive-guide-30i8)
+- [@article@Time Complexity - Wikipedia](https://en.wikipedia.org/wiki/Time_complexity)

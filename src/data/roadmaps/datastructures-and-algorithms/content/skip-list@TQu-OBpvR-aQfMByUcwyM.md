@@ -5,3 +5,6 @@ A **Skip List** is a probabilistic data structure that allows efficient search, 
 Visit the following resources to learn more:
 
 - [@video@Skip Lists](https://www.youtube.com/watch?v=NDGpsfwAaqo)
+- [@article@Skip List - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/skip-list/)
+- [@article@Skip Lists - Advanced DSA - Dev.to](https://dev.to/yashdevs/skip-lists-advanced-dsa-1nm6)
+- [@article@Skip List - Wikipedia](https://en.wikipedia.org/wiki/Skip_list)

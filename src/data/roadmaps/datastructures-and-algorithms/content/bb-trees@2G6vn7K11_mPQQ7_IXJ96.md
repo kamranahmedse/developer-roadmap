@@ -5,3 +5,5 @@
 Visit the following resources to learn more:
 
 - [@video@B Trees and B+ Trees. How they are useful in Databases](https://www.youtube.com/watch?v=aZjYr87r1b8)
+- [@article@B+ Tree — Programiz](https://www.programiz.com/dsa/b-plus-tree)
+- [@article@B-tree — Wikipedia](https://en.wikipedia.org/wiki/B-tree)

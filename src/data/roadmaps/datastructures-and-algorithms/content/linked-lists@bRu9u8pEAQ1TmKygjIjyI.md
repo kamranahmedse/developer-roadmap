@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@video@Introduction To Linked List](https://youtu.be/Nq7ok-OyEpg?si=xttaGoYKcoJ09Ln2)
 - [@video@Python Linked List](https://www.youtube.com/watch?v=qp8u-frRAnU&list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12&index=4&ab_channel=codebasics)
+- [@article@Linked List Data Structure - GeeksforGeeks](https://www.geeksforgeeks.org/data-structures/linked-list/)
+- [@official@Linked List Visualization - VisuAlgo](https://visualgo.net/en/list)
+- [@course@Linked Lists - Coursera](https://www.coursera.org/lecture/data-structures/linked-lists-KkYlP)

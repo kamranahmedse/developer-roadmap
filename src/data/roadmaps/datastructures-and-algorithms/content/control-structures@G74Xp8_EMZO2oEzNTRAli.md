@@ -5,3 +5,9 @@ Control structures are fundamental elements in most programming languages that f
 *   **Sequential** control structures are the default mode where instructions happen one after another.
 *   **Selection** control structures (often called "conditional" or "decision" structures) allow one set of instructions to be executed if a condition is true and another if it's false. These typically include `if...else` statements.
 *   **Iteration** control structures (also known as _loops_) allow a block of code to be repeated multiple times. Common loop structures include `for`, `while`, and `do...while` loops. All these control structures play a vital role in shaping the program logic.
+
+Visit the following resources to learn more:
+
+- [@article@Control Flow Structures in Python - Real Python](https://realpython.com/python-control-flow/)
+- [@article@Control Structures in Programming Languages - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/control-structures-in-programming-languages/)
+- [@official@Python While Loops - W3Schools](https://www.w3schools.com/python/python_while_loops.asp)

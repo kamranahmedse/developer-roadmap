@@ -8,3 +8,6 @@ Visit the following resources to learn more:
 - [@video@A Complete Overview of Quicksort](https://www.youtube.com/watch?v=0SkOjNaO1XY)
 - [@video@QuickSort](https://www.youtube.com/watch?v=7h1s2SojIRw)
 - [@video@QuickSort Analysis](https://www.youtube.com/watch?v=-qOVVRIZzao)
+- [@article@Quick Sort - Programiz](https://www.programiz.com/dsa/quick-sort)
+- [@article@Quick Sort - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/quick-sort-algorithm/)
+- [@article@Quick Sort - W3Schools](https://www.w3schools.com/dsa/dsa_algo_quicksort.php)

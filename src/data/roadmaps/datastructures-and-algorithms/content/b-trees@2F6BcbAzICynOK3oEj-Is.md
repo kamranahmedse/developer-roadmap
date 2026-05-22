@@ -5,3 +5,5 @@ B-Tree is a self-balanced search tree data structure that maintains sorted data 
 Visit the following resources to learn more:
 
 - [@video@B-trees in 4 minutes — Intro](https://www.youtube.com/watch?v=FgWbADOG44s)
+- [@article@Introduction of B Tree — GeeksforGeeks](https://www.geeksforgeeks.org/dsa/introduction-of-b-tree-2/)
+- [@article@B-tree — Programiz](https://www.programiz.com/dsa/b-tree)

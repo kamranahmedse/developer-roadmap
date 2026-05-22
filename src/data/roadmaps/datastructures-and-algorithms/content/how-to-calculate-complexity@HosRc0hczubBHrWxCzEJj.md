@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@video@Time & Space Complexity](https://www.youtube.com/watch?v=Z0bH0cMY0E8)
 - [@video@How Write and Analyze Algorithm](https://www.youtube.com/watch?v=xGYsEqe9Vl0)
+- [@article@Time Complexity with Simple Examples](https://www.geeksforgeeks.org/dsa/understanding-time-complexity-simple-examples/)
+- [@article@Big O: A Beginner's Guide](https://dev.to/binayakjha/big-o-a-beginners-guide-175c)
+- [@article@What does O(log n) mean exactly?](https://stackoverflow.com/questions/2307283/what-does-olog-n-mean-exactly)

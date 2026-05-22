@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@Heap Sort Visualize](https://www.hackerearth.com/practice/algorithms/sorting/heap-sort/tutorial/)
 - [@video@Heap sort in 4 minutes](https://www.youtube.com/watch?v=2DmK_H7IdTo)
+- [@article@Heap Sort - Programiz](https://www.programiz.com/dsa/heap-sort)
+- [@article@Heap Sort - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/heap-sort/)
+- [@article@Heapsort - Wikipedia](https://en.wikipedia.org/wiki/Heapsort)

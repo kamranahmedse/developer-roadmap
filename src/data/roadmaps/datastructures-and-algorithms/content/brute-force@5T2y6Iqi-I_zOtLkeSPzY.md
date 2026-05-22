@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@Brute Force Technique in Algorithms](https://medium.com/@shraddharao_/brute-force-technique-in-algorithms-34bac04bde8a)
 - [@video@Brute Force Algorithm Explained With C++ Examples](https://www.youtube.com/watch?v=BYWf6-tpQ4k)
+- [@article@Brute Force Approach and its Pros and Cons - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/brute-force-approach-and-its-pros-and-cons/)
+- [@article@Brute Force Algorithms Cheatsheet - Codecademy](https://www.codecademy.com/learn/learn-data-structures-and-algorithms-with-python/modules/brute-force-algorithms/cheatsheet)
+- [@article@Brute-force Search - Wikipedia](https://en.wikipedia.org/wiki/Brute-force_search)

@@ -5,3 +5,6 @@
 Visit the following resources to learn more:
 
 - [@video@Learn Depth First Search in 7 minutes](https://youtu.be/by93qH4ACxo?si=FXcUfuwB5atV5SIY)
+- [@article@Depth-first search - Wikipedia](https://en.wikipedia.org/wiki/Depth-first_search)
+- [@article@Learn Depth-First Search (DFS) Algorithm From Scratch](https://www.simplilearn.com/tutorials/data-structure-tutorial/dfs-algorithm)
+- [@article@Depth First Search (DFS) Algorithm - TutorialsPoint](https://www.tutorialspoint.com/data_structures_algorithms/depth_first_traversal.htm)

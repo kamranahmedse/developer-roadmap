@@ -5,3 +5,6 @@ Object-oriented programming (OOP) is a programming paradigm that uses "objects" 
 Visit the following resources to learn more:
 
 - [@video@Object-Oriented Programming (Simplified)](https://youtu.be/pTB0EiLXUC8?si=I8rV2K5fhpoqmixX)
+- [@official@Object-oriented Programming - MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming)
+- [@article@Object-Oriented Programming (OOP) in Python - Real Python](https://realpython.com/python3-object-oriented-programming/)
+- [@article@The Four Pillars of Object Oriented Programming - DEV Community](https://dev.to/chukwuma1976/the-four-pillars-of-object-oriented-programming-3l5f)

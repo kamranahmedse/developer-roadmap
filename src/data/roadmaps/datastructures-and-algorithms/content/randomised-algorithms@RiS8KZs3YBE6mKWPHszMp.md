@@ -5,3 +5,6 @@ Randomised algorithms are a type of algorithm that employs a degree of randomnes
 Visit the following resources to learn more:
 
 - [@video@Algorithm Classification Randomized Algorithm](https://www.youtube.com/watch?v=J_EVG6yCOz0)
+- [@article@Randomized Algorithm - Wikipedia](https://en.wikipedia.org/wiki/Randomized_algorithm)
+- [@article@Randomized Algorithms - GeeksforGeeks](https://www.geeksforgeeks.org/randomized-algorithms/)
+- [@article@Randomized Algorithms - Brilliant](https://brilliant.org/wiki/randomized-algorithms/)

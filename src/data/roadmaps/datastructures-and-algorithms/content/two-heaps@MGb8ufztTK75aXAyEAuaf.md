@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@Two Heaps — A Coding Pattern for Median-finding (Emre Bolat)](https://emre.me/coding-patterns/two-heaps/)
 - [@video@Coding Pattern - Two Heaps](https://www.youtube.com/watch?v=9P7W5aEaatQ)
+- [@article@Median of Running Stream - takeUforward](https://takeuforward.org/data-structure/median-of-running-stream/)
+- [@article@Median of Stream of Running Integers - GeeksforGeeks](https://www.geeksforgeeks.org/median-of-stream-of-running-integers/)
+- [@article@Two Heap Method - GeeksforGeeks](https://www.geeksforgeeks.org/two-heap-method/)

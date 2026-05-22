@@ -6,3 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@Merge Sort Visualize](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/)
 - [@video@Merge Sort](https://www.youtube.com/watch?v=4VqmGXwpLqc)
+- [@article@Merge Sort - Programiz](https://www.programiz.com/dsa/merge-sort)
+- [@article@Merge Sort - GeeksforGeeks](https://www.geeksforgeeks.org/dsa/merge-sort/)
+- [@article@Merge Sort - Wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
