@@ -12,6 +12,6 @@ game performance.
 
 Visit the following resources to learn more:
 
-- [@documentation@Go Channel Documentation](https://golang.org/doc/effective_go.html#channels)  
-- [@documentation@Rust Channels for Concurrency](https://doc.rust-lang.org/book/ch16-02-message-passing.html)
+- [@official@Go Channel Documentation](https://golang.org/doc/effective_go.html#channels)  
+- [@official@Rust Channels for Concurrency](https://doc.rust-lang.org/book/ch16-02-message-passing.html)
 - [@article@Comprehensive Guide to Channel](https://elixir-lang.org/getting-started/processes.html#using-processes-and-messages)  

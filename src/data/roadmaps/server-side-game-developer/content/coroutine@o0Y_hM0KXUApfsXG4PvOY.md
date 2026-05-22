@@ -9,8 +9,8 @@ developers an efficient way to write non-blocking code while maintaining readabi
 
 Visit the following resources to learn more:
 
-- [@documentation@C++ Coroutines (cppreference)](https://en.cppreference.com/w/cpp/language/coroutines)
-- [@documentation@Python Coroutines and Tasks](https://docs.python.org/3/library/asyncio-task.html)
+- [@official@C++ Coroutines (cppreference)](https://en.cppreference.com/w/cpp/language/coroutines)
+- [@official@Python Coroutines and Tasks](https://docs.python.org/3/library/asyncio-task.html)
 - [@official@Write and Run Coroutines - Unity Manual](https://docs.unity3d.com/Manual/Coroutines.html)
 - [@official@Coroutines Guide - Kotlin Documentation](https://kotlinlang.org/docs/coroutines-guide.html)
 - [@article@Coroutines for Game Design - Stack Overflow](https://stackoverflow.com/questions/1247894/coroutines-for-game-design)

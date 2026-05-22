@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@ApacheSpark](https://spark.apache.org/documentation.html)
 - [@article@Spark By Examples](https://sparkbyexamples.com)
-- [@feed@Explore top posts about Apache Spark](https://app.daily.dev/tags/spark?ref=roadmapsh)
+- [@article@Explore top posts about Apache Spark](https://app.daily.dev/tags/spark?ref=roadmapsh)

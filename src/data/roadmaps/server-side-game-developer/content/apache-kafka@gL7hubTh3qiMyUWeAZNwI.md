@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Apache Kafka Quickstart](https://kafka.apache.org/quickstart)
 - [@video@Apache Kafka Fundamentals](https://www.youtube.com/watch?v=B5j3uNBH8X4)
-- [@feed@Explore top posts about Kafka](https://app.daily.dev/tags/kafka?ref=roadmapsh)
+- [@article@Explore top posts about Kafka](https://app.daily.dev/tags/kafka?ref=roadmapsh)

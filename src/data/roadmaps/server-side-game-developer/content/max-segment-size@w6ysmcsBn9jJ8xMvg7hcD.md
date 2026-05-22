@@ -15,4 +15,4 @@ Visit the following resources to learn more:
 
 - [@article@RFC 879 - Maximum Segment Size](https://tools.ietf.org/html/rfc879)  
 - [@article@What is MSS (maximum segment size)?](https://www.cloudflare.com/learning/network-layer/what-is-mss/)  
-- [@documentation@TCP Maximum Segment Size tuning](https://www.ibm.com/docs/en/aix/7.2?topic=tuning-tcp-maximum-segment-size)
+- [@official@TCP Maximum Segment Size tuning](https://www.ibm.com/docs/en/aix/7.2?topic=tuning-tcp-maximum-segment-size)

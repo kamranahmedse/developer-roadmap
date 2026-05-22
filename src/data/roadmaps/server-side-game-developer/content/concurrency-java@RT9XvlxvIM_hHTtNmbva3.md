@@ -1,7 +1,7 @@
 # Concurrency (Java)
 
 Concurrency is a property of systems that allows multiple tasks to run in an overlapped or simultaneous manner. This is widely used in server side game development where it is common to have multiple players interfacing with the system at the same time. It is essential to keep the system responsive and efficient under high load. Concurrency is often achieved through multithreading or asynchronous programming. Multithreading involves multiple threads of execution within a single program, with each thread running on a separate processor core. Asynchronous programming, on the other hand, achieves concurrency by allowing tasks to progress without waiting for other tasks to complete. This can be particularly useful in situations where tasks involve I/O operations or network requests, which can take a significant amount of time to complete, and would otherwise block the execution of other tasks.
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Synchronization - Java Tutorial](https://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html)
 - [@article@Java Concurrency - Wikipedia](https://en.wikipedia.org/wiki/Java_concurrency)

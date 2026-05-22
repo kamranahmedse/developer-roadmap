@@ -1,7 +1,7 @@
 # Function
 
 In server-side game development, functions are a fundamental building block of programming. These are reusable pieces of code designed to perform a particular task. Developers create functions to streamline code, improve readability, and enhance the efficiency of their program. Functions can take parameters as input and return a result. The syntax for declaring a function varies from one programming language to another. However, the basic structure remains the same. It usually starts with a function keyword, followed by the function name and parentheses `()`. Inside these parentheses, we can pass parameters. These parameters are then utilized within the function's body enclosed within curly brackets `{}`. The outputs are typically returned using a return statement. Remember, each function should ideally perform one task, and the function name should accurately represent its purpose to make the code self-explanatory.
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@First-class Function - Wikipedia](https://en.wikipedia.org/wiki/First-class_function)
 - [@article@First-class Function - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function)

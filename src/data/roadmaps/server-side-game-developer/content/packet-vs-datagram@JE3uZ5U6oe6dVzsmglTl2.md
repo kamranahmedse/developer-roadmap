@@ -7,7 +7,7 @@ A **Packet** is the most general term that just refers to the encapsulated data 
 On the other hand, a **Datagram** is a specific type of data packet. It is an independent, self-contained message sent over the network whose arrival, arrival time, and content are not guaranteed. This term is particularly associated with the UDP (User Datagram Protocol), where each transmission unit is called a datagram. 
 
 The difference between packets and datagrams depends largely on the protocol being used to transmit the data. TCP (Transmission Control Protocol) data is typically referred to as a packet, whereas with UDP it is a datagram.
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Datagram - Wikipedia](https://en.wikipedia.org/wiki/Datagram)
 - [@article@What are the differences between datagrams, frames, and network packets? - Network Engineering Stack Exchange](https://networkengineering.stackexchange.com/questions/50083/what-are-the-differences-in-the-contents-of-datagrams-frames-and-network-packe)

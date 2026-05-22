@@ -10,7 +10,7 @@ better performance and scalability.
 
 Visit the following resources to learn more:
 
-- [@documentation@Linux select API](https://man7.org/linux/man-pages/man2/select.2.html)
+- [@official@Linux select API](https://man7.org/linux/man-pages/man2/select.2.html)
 - [@article@I/O Multiplexing: The select and poll Functions - Shichao's Notes](https://notes.shichao.io/unp/ch6/)
 - [@article@Linux select() - Synchronous I/O Multiplexing - phoenixNAP](https://phoenixnap.com/kb/linux-select)
-- [@documentation@select() - IBM Documentation](https://www.ibm.com/docs/en/zos/3.1.0?topic=functions-select-suspend-execution-pending-multiple-descriptors)
+- [@official@select() - IBM Documentation](https://www.ibm.com/docs/en/zos/3.1.0?topic=functions-select-suspend-execution-pending-multiple-descriptors)

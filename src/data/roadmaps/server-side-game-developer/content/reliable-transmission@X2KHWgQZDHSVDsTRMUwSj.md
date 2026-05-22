@@ -15,4 +15,4 @@ Visit the following resources to learn more:
 - [@article@TCP Reliable Transmission (IETF RFC 793)](https://datatracker.ietf.org/doc/html/rfc793)
 - [@article@Automatic Repeat Request (ARQ) - Wikipedia](https://en.wikipedia.org/wiki/Automatic_repeat_request)
 - [@article@Sliding Window Protocol - Wikipedia](https://en.wikipedia.org/wiki/Sliding_window_protocol)
-- [@documentation@RFC 3366 - Advice to Link Designers on Link ARQ - IETF](https://datatracker.ietf.org/doc/html/rfc3366)
+- [@official@RFC 3366 - Advice to Link Designers on Link ARQ - IETF](https://datatracker.ietf.org/doc/html/rfc3366)

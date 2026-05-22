@@ -9,6 +9,6 @@ usage—making it ideal for multiplayer games and real-time applications.
 
 Visit the following resources to learn more:
 
-- [@documentation@Linux epoll API](https://man7.org/linux/man-pages/man7/epoll.7.html)  
+- [@official@Linux epoll API](https://man7.org/linux/man-pages/man7/epoll.7.html)  
 - [@article@Understanding epoll for Scalable Network Servers](https://medium.com/@copyconstruct/the-method-to-epolls-madness-d9d2d6378642)
 - [@article@epoll vs select vs poll](https://devarea.com/linux-io-multiplexing-select-vs-poll-vs-epoll/)

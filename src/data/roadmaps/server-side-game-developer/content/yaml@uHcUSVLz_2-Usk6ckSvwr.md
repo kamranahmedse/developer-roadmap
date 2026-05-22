@@ -1,7 +1,7 @@
 # YAML
 
 YAML, which stands for "YAML Ain't Markup Language," is a human-readable data serialization standard that can be used in conjunction with all programming languages. It is often used to write configuration files and in applications where data is being stored or transmitted. YAML supports advanced features like referencing, merging, arrays and dictionaries. Also, it is flexible and supports various data structures like scalars, sequences, associative arrays. Though it might seem similar to JSON and XML, it focuses on data serialization rather than marking up documents, and ensures readability for humans. It uses a whitespace indentation to denote structure, which can simplify file format complexities.
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@YAML Tutorial: A Complete Language Guide - Spacelift](https://spacelift.io/blog/yaml)
 - [@article@YAML for Beginners - Red Hat](https://www.redhat.com/en/blog/yaml-beginners)

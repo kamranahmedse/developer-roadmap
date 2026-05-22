@@ -4,7 +4,7 @@ TCP (Transmission Control Protocol) is often described as a "heavyweight" protoc
 
 On the other hand, UDP (User Datagram Protocol) is known as a "lightweight" protocol. It is simpler and faster because it does not offer the same extensive features as TCP. UDP does not guarantee delivery, does not require initial handshake establishment between communicating systems, and does not put data packets in order, thereby reducing the computation and rendering it lightweight.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Processes and Threads - Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/procthread/processes-and-threads)
 - [@article@Operating Systems: Threads - UIC](https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/4_Threads.html)

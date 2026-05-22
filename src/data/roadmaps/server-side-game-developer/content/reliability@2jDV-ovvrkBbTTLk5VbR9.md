@@ -1,7 +1,7 @@
 # Reliability
 
 The **Reliability** in terms of IP (Internet Protocol) generally refers to the dependability and consistency of the network connections. It's essentially about how reliable the data transfer is over the network. IP itself is an unreliable protocol, meaning it doesn't guarantee the delivery of data packets. This is where protocols like TCP (Transmission Control Protocol) come in. TCP adds a layer of reliability to IP by ensuring the delivery of the data packets, ordering them correctly and error-checking. This ensures that game data synchronizes correctly across the server and clients without any loss, providing consistency and a smooth gameplay experience. However, the full guarantees of TCP come with some additional overhead; therefore, some games might prefer to use unreliable protocols when high performance is more critical than absolute reliability.
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Reliability at the Transport Layer - Williams College](https://www.cs.williams.edu/~tom/courses/336/outlines/lect28_2.html)
 - [@article@Reliable Bytes: How TCP Ensures Trustworthy Data Transfer - ITU Online](https://www.ituonline.com/blogs/reliable-bytes-how-tcp-ensures-trustworthy-data-transfer-across-the-internet/)

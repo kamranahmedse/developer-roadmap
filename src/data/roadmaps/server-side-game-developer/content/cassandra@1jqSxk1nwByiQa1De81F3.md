@@ -1,7 +1,7 @@
 # Cassandra
 
 Apache Cassandra is an open-source, distributed NoSQL database system that is designed to manage large volumes of data across a wide range of servers. It provides high availability with no single point of failure. Cassandra is often used for applications where data is distributed across multiple locations as it has superior replication mechanisms. It utilizes a peer-to-peer architecture, as opposed to master-slaves, which allows for continuous availability and scalability. Cassandra also provides robust support for clusters spanning multiple datacenters, with asynchronous masterless replication allowing low latency operations for all clients.
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Cassandra Architecture - Apache Cassandra](https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html)
 - [@article@Apache Cassandra - Wikipedia](https://en.wikipedia.org/wiki/Apache_Cassandra)
