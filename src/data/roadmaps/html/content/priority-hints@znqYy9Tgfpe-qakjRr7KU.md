@@ -4,4 +4,4 @@ Priority Hints in HTML allow developers to indicate the relative priority of fet
 
 Visit the following resources to learn more:
 
-- [@article@Priority header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Priority)
+- [@article@fetchpriority HTML attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/fetchpriority)
