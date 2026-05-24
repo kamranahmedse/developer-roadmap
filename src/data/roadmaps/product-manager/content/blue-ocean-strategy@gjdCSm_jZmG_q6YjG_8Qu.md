@@ -4,7 +4,7 @@ Blue Ocean Strategy is a significant methodology in product identification for a
 
 From a product management perspective, this involves implementing innovative ideas, seeking new opportunities and envisioning potential markets. Product Managers, hence, are able to utilize this strategy to develop unique products that can trigger exponential growth and success for their organizations. In a nutshell, Blue Ocean Strategy provides a creative and systematic approach towards successful product identification and differentiation.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@video@How To Differentiate Your Business With BLUE OCEAN STRATEGY](https://www.youtube.com/watch?v=UKDxj6W7CXs)
 - [@article@What is Blue Ocean Strategy - Blue Ocean Strategy](https://www.blueoceanstrategy.com/what-is-blue-ocean-strategy/)

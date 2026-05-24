@@ -2,7 +2,7 @@
 
 Identifying market needs is a fundamental task for a Product Manager during the process of market analysis. A market need is what motivates a consumer to buy a product or service. The market analysis mandates the Product Manager to study the market, understand the customers' behavior patterns and preferences, and keep an eye on current market trends. This data-driven outlook helps the Product Manager decipher the gaps in the market, what pain-points the potential customers have that are unresolved, and hence, find opportunities to create new products or enhance existing ones. Glazing through customer feedback, surveys, and competitor analysis are some of the methods that help identify these needs and provide the launchpad for successful product planning and development.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@The Definitive Guide to Product Discovery and Frameworks - Product School](https://productschool.com/blog/product-fundamentals/what-is-product-discovery)
 - [@article@How to Identify Market Needs and Create Products to Meet Them - UXtweak](https://blog.uxtweak.com/market-needs/)

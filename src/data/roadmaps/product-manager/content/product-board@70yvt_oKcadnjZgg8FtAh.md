@@ -2,7 +2,7 @@
 
 Product Board is a strategic tool that serves as a backbone in the realm of product management. Known for its compelling visual environment, it is widely used to cater decision-making processes and hare insights about the product roadmap. It acts as a guidance system for product managers to prioritize the high-impact assignments and deliver meticulously crafted, user-centric products. Able to integrate with other popular platforms, Product Board offers a seamless user experience with its powerful features to bridge the gap between strategy, execution, and team alignment. Excellent facilitator for feedback management, user segmentation, and iterative planning, it is a must-have tool for every agile product manager.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Product Feature Prioritization Tools - Productboard](https://www.productboard.com/product/prioritization/)
 - [@article@Product Roadmapping Guide & Tips - Productboard](https://www.productboard.com/glossary/product-roadmap/)
