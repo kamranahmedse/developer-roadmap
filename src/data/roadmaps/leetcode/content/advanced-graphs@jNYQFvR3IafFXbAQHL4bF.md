@@ -1,0 +1,3 @@
+# Advanced Graphs
+
+Advanced graph problems involve weighted edges, which require more sophisticated algorithms than simple BFS or DFS. Dijkstra's algorithm finds the shortest path in a weighted graph using a min-heap. Prim's and Kruskal's algorithms find the minimum spanning tree, connecting all nodes at minimum total cost. These algorithms are more complex than anything seen so far, and the problems here often combine the algorithm with an additional constraint, such as a limit on the number of steps or a non-standard cost function. Understanding the conditions under which each algorithm applies is as important as knowing how to implement it.

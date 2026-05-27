@@ -4,6 +4,6 @@ Cloudflare is a internet company that provides a range of services to help prote
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit the Dedicated Cloudflare Roadmap](https://roadmap.sh/cloudflare)
 - [@official@Cloudflare](https://cloudflare.com/)
 - [@video@Introduction to Cloudflare](https://www.youtube.com/watch?v=24cml1rKGBs)
-- [@feed@Explore top posts about Cloudflare](https://app.daily.dev/tags/cloudflare?ref=roadmapsh)

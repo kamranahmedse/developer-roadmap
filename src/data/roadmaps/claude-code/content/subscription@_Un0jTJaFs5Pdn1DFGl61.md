@@ -1,6 +1,6 @@
 # Subscription Options
 
-Subscription options for Claude Code allow users to authenticate and access its features.  Individuals with a Claude Pro or Claude Max subscription can link their account for free Claude Code usage.  For teams and larger organizations, Team and Enterprise plans offer higher usage limits, enhanced security features like SSO and audit logs, and deeper integration capabilities.
+Subscription options for Claude Code allow users to authenticate and access its features. Individuals with a Claude Pro or Claude Max subscription can link their account for free Claude Code usage. For teams and larger organizations, Team and Enterprise plans offer higher usage limits, enhanced security features like SSO and audit logs, and deeper integration capabilities.
 
 Visit the following resources to learn more:
 

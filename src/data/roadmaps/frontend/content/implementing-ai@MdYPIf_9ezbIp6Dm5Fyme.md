@@ -4,4 +4,4 @@ Implementing AI in frontend development involves integrating artificial intellig
 
 Visit the following resources to learn more:
 
-- [@article@Anthropic vs OpenAI vs Gemini: Which Generative AI Model is Right for Enterprise Use?](https://www.aqedigital.com/blog/anthropic-vs-openai-vs-gemini/)
+- [@article@Anthropic vs OpenAI vs Gemini](https://www.aqedigital.com/blog/anthropic-vs-openai-vs-gemini/)

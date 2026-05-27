@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@openSUSE Documentation](https://en.opensuse.org/Main_Page)
 - [@article@Unofficial openSUSE Getting Started Guide](https://opensuse-guide.org/)
 - [@video@OpenSuSE - You Should Try It](https://www.youtube.com/watch?v=CZwAgf3f8CM)
-- [@feed@Explore top posts about Linux](https://app.daily.dev/tags/linux?ref=roadmapsh)

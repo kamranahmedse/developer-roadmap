@@ -5,4 +5,5 @@ Idempotency in API design refers to the concept where multiple identical request
 Visit the following resources to learn more:
 
 - [@article@What is idempotency?](https://blog.dreamfactory.com/what-is-idempotency)
+- [@article@Idempotency Is Easy Until the Second Request Is Different](https://blog.dochia.dev/blog/idempotency/)
 - [@article@Idempotent REST API](https://restfulapi.net/idempotent-rest-apis/)

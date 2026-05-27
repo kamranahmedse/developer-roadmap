@@ -1,6 +1,6 @@
 # NetBSD
 
-NetBSD is a free, open-source Unix-like operating system descended from Berkeley Software Distribution (BSD). It's known for its high portability, supporting a wide range of hardware platforms from large-scale servers to embedded devices. NetBSD emphasizes clean design, well-written code, and adherence to standards. It features a modular kernel architecture, making it adaptable to various environments. NetBSD includes advanced features like kernel ASLR (Address Space Layout Randomization) for enhanced security. It's particularly popular in research environments, embedded systems, and among users who value system consistency across different hardware. While less common in desktop environments, NetBSD's focus on portability and clean code makes it a favorite for cross-platform development and specialized computing applications.
+NetBSD is a free, fast, and secure Unix-like operating system known for its emphasis on code clarity, portability, and clean design. It is designed to run on a vast range of hardware architectures, from embedded devices and handhelds to large-scale servers and workstations. By maintaining a highly modular and hardware-independent codebase, it serves as a versatile foundation for research, specialized appliance development, and environments where high performance and stability are required across diverse platforms.
 
 Visit the following resources to learn more:
 

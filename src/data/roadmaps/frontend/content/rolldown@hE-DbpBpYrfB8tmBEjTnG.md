@@ -9,4 +9,4 @@ Visit the following resources to learn more:
 - [@official@Getting Started](https://rolldown.rs/guide/getting-started)
 - [@opensource@rolldown](https://github.com/rolldown/rolldown)
 - [@article@Rolldown: why it matters](https://dev.to/justinschroeder/rolldown-why-it-matters-4129)
-- [@video@Alexander Lichter | Rolldown: How Vite bundles at the speed of Rust | ViteConf 2025](https://www.youtube.com/watch?v=3PFLeteDuyQ)
+- [@video@Rolldown: How Vite bundles at the speed of Rust](https://www.youtube.com/watch?v=3PFLeteDuyQ)

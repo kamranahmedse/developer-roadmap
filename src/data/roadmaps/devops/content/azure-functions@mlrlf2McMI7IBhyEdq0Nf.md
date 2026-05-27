@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@Azure Functions - Serverless Computing](https://azure.microsoft.com/en-in/products/functions)
 - [@official@Azure Functions Overview](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview)
 - [@video@Getting Started With Azure Functions](https://www.youtube.com/watch?v=l3beXs3o-0w)
-- [@feed@Explore top posts about Azure](https://app.daily.dev/tags/azure?ref=roadmapsh)

@@ -4,5 +4,5 @@ API design is a critical component of modern software development, enabling vari
 
 Visit the following resources to learn more:
 
-- [@article@API Vulnerability Overview](https://apimike.com/api-vulnerabilities)
+- [@article@Top 10 API Security Vulnerabilities](https://curity.io/resources/learn/owasp-top-ten/)
 - [@article@Top API Vulnerabilities and 6 Ways to Mitigate Them](https://brightsec.com/blog/top-api-vulnerabilities-and-6-ways-to-mitigate-them/)

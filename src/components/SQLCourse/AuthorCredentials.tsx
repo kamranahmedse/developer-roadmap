@@ -4,7 +4,7 @@ export function AuthorCredentials() {
     <div className="mx-auto mt-8 flex flex-col items-start gap-4 text-sm text-zinc-400 sm:flex-row sm:flex-wrap sm:items-center md:mt-12 md:justify-center md:gap-x-3 md:gap-y-2">
       <div className="flex items-center gap-1">
         <img
-          src="https://github.com/kamranahmedse.png"
+          src="https://github.com/nilbuild.png"
           className="mr-1.5 size-8 rounded-full object-cover"
           alt="Kamran Ahmed"
         />
@@ -19,7 +19,7 @@ export function AuthorCredentials() {
       </div>
       <div className="hidden flex-wrap items-center gap-x-3 gap-y-2 sm:flex sm:justify-center">
         <a
-          href="https://github.com/kamranahmedse"
+          href="https://github.com/nilbuild"
           target="_blank"
           className="hidden items-center gap-1 text-yellow-500 hover:text-yellow-400 sm:inline-flex"
         >

@@ -4,5 +4,5 @@ A Spring servlet is a Java class that serves as the central point for handling r
 
 Visit the following resources to learn more:
 
-- [@official@The DispatcherServlet](https://docs.spring.io/spring-framework/docs/3.0.0.M4/spring-framework-reference/html/ch15s02.html)
+- [@official@The DispatcherServlet](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-servlet.html)
 - [@article@DispatcherServlet and web.xml in Spring Boot](https://www.baeldung.com/spring-boot-dispatcherservlet-web-xml)

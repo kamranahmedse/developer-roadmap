@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@article@Whats a Service Mesh?](https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh)
 - [@article@The Latest News About Service Mesh (TNS)](https://thenewstack.io/category/service-mesh/)
 - [@video@Istio & Service Mesh - Simply Explained in 15 mins](https://www.youtube.com/watch?v=16fgzklcF7Y)
-- [@feed@Explore top posts about Service Mesh](https://app.daily.dev/tags/service-mesh?ref=roadmapsh)

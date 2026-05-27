@@ -4,6 +4,6 @@ When designing APIs, it's crucial to consider the concept of standards and compl
 
 Visit the following resources to learn more:
 
-- [@article@What is API Compliance?](https://tyk.io/learning-center/api-compliance/)
 - [@article@What is API Compliance and Why is it important?](https://www.traceable.ai/blog-post/achieve-api-compliance)
+- [@article@What is API compliance? A cloud security perspective](https://www.wiz.io/academy/api-security/api-compliance)
 - [@article@REST API Standards](https://www.integrate.io/blog/rest-api-standards/)

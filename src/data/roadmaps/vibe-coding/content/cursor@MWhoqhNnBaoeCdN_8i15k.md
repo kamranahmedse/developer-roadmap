@@ -4,7 +4,7 @@ Cursor is a code editor built on top of VS Code with AI assistance integrated th
 
 Visit the following resources to learn more:
 
-- [@official@Cursor](https://cursor.com/)
 - [@official@Cursor Docs](https://cursor.com/docs)
+- [@article@Claude Code vs Cursor: Which AI Coding Tool To Choose in 2026?](https://roadmap.sh/claude-code/vs-cursor)
 - [@video@Cursor AI Tutorial for Beginners](https://www.youtube.com/watch?v=3289vhOUdKA)
 - [@video@Cursor Tutorial for Beginners (AI Code Editor)](https://www.youtube.com/watch?v=ocMOZpuAMw4)

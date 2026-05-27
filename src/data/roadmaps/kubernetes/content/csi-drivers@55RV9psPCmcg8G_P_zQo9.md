@@ -5,4 +5,4 @@ CSI (Container Storage Interface) drivers in Kubernetes provide a standard way f
 Visit the following resources to learn more:
 
 - [@official@Container Storage Interface (CSI) for Kubernetes](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/)
-- [@video@CSI in Kubernetes](https://www.youtube.com/watch?v=brXPQ1Qwjl4)
+- [@official@Kubernetes CSI Developer Documentation](https://kubernetes-csi.github.io/docs/)

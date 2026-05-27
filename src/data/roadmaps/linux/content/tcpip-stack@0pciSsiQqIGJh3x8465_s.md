@@ -1,6 +1,6 @@
-# TCP/IP Stack
+# TCP/IP
 
-TCP/IP (Transmission Control Protocol/Internet Protocol) is the foundational networking protocol suite that enables computer communication over networks. It consists of four layers: Network Interface, Internet, Transport, and Application. In Linux, TCP/IP is integral to the OS functionality, allowing hosts to connect and transfer data across same or different networks.
+TCP/IP (Transmission Control Protocol/Internet Protocol) forms the backbone of internet communication, allowing computers to connect and transfer data. It comprises four layers: Network Interface, Internet, Transport, and Application. Essential for Linux networking, enabling hosts to interact across networks. Use `netstat -at` to view active TCP/IP connections. Crucial for network management and troubleshooting.
 
 Visit the following resources to learn more:
 

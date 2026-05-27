@@ -24,7 +24,7 @@ courses:
       - 'Certification'
     instructor:
       name: 'Kamran Ahmed'
-      image: 'https://github.com/kamranahmedse.png'
+      image: 'https://github.com/nilbuild.png'
       title: 'Founder - roadmap.sh'
 schema:
   headline: 'Data Engineer Roadmap'

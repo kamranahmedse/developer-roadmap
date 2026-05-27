@@ -5,4 +5,5 @@ To get the most out of Open Claw, run `openclaw doctor` regularly to catch confi
 Visit the following resources to learn more:
 
 - [@official@CLI Reference](https://docs.openclaw.ai/cli)
+- [@article@Vibe Coding Best Practices: How To Get Consistent Results](https://roadmap.sh/vibe-coding/best-practices)
 - [@article@OpenClaw Cheatsheet](https://moltfounders.com/openclaw-mega-cheatsheet)

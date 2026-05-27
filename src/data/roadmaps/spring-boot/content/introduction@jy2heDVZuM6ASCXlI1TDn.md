@@ -4,8 +4,8 @@ Spring Boot is a framework for building applications based on the Spring Framewo
 
 Visit the following resources to learn more:
 
+- [@course@Spring Boot Course](https://spring.academy/courses/spring-boot)
 - [@official@Spring Boot](https://spring.io/projects/spring-boot)
 - [@article@Spring Boot - Introduction](https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm)
 - [@article@Introduction to Spring Boot](https://medium.com/adessoturkey/introduction-to-spring-boot-458cb814ec14)
 - [@article@What-is-Spring-Boot?](https://www.ibm.com/topics/java-spring-boot)
-- [@course@Spring Boot Course](https://spring.academy/courses/spring-boot)

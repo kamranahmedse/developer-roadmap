@@ -1,9 +1,8 @@
 # Checking Service Logs
 
-System logs are essential for troubleshooting and monitoring Linux systems. Most logs are stored in `/var/log` directory and managed by systemd. Use `journalctl` to view system logs and `journalctl -u service_name` for specific service logs. The `dmesg` command displays kernel messages. Regular log monitoring is crucial for system administration.
+Systemd captures output from all managed services and stores it in the journal, a binary log managed by journald. You can view logs for a specific service using journalctl -u service-name. Useful flags include -f to follow logs in real time, --since and --until to filter by time range, and -n to limit the number of lines shown. Logs include both stdout/stderr from the process and systemd lifecycle events.
 
 Visit the following resources to learn more:
 
-- [@article@How to Use journalctl Command to Analyze Logs in Linux](https://linuxhandbook.com/journalctl-command/)
-- [@article@journalctl — Linux manual page](https://www.man7.org/linux/man-pages/man1/journalctl.1.html)
-- [@article@Linux Log Files Location & How To View Logs Files](https://www.cyberciti.biz/faq/linux-log-files-location-and-how-do-i-view-logs-files/)
+- [@article@Journalctl Explained: How To View And Analyze Systemd Logs.](https://uptimerobot.com/knowledge-hub/logging/journalctl-explained-how-to-view-and-analyze-systemd-logs/)
+- [@article@How To Use journalctl to View and Manipulate systemd Logs on Linux](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)

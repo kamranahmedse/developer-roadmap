@@ -4,4 +4,6 @@ For tricky problems, don't ask AI to jump straight to a solution. Tell it to thi
 
 Visit the following resources to learn more:
 
-- [@article@Teaching AI to “Think” Before Answering](https://medium.com/@21joshishubham/teaching-ai-to-think-before-answering-1bf8c6bb16c4)
+- [@article@Teaching AI to "Think" Before Answering](https://medium.com/@21joshishubham/teaching-ai-to-think-before-answering-1bf8c6bb16c4)
+- [@article@What is Chain of Thought (CoT) Prompting? - IBM](https://www.ibm.com/think/topics/chain-of-thoughts)
+- [@article@Chain-of-Thought (CoT) Prompting Guide](https://www.promptingguide.ai/techniques/cot)

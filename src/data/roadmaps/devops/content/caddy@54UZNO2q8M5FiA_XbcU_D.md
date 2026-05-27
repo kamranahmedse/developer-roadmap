@@ -1,6 +1,6 @@
 # Caddy
 
-Caddy is a modern, open-source web server written in Go, designed to be easy to use, secure, and performant out of the box. It features automatic HTTPS with Let's Encrypt certificate provisioning and renewal, HTTP/2 and HTTP/3 support, and a simple configuration syntax. Caddy can serve static files, reverse proxy to other services, and handle various web hosting tasks with minimal setup. Its modular architecture allows for easy extension through plugins, making it versatile for different deployment scenarios. Caddy's emphasis on simplicity and security makes it popular for both small projects and production environments, particularly among developers looking for a straightforward, feature-rich web server solution.
+Caddy is an open-source web server that automatically manages HTTPS certificates for your websites and applications. It is written in Go and is designed to be easy to configure using a simple file format called the Caddyfile. By default, it handles the complexities of TLS/SSL, meaning it automatically provisions and renews certificates from Let's Encrypt without requiring manual intervention. You can set it up by downloading the binary for your operating system, creating a basic Caddyfile that defines your domain and back-end service, and running the command to start the server.
 
 Visit the following resources to learn more:
 

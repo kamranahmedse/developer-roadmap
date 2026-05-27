@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Writing a good CLAUDE.md](https://www.humanlayer.dev/blog/writing-a-good-claude-md)
 - [@article@Rules Files for Safer Vibe Coding](https://www.wiz.io/blog/safer-vibe-coding-rules-files)
+- [@article@Writing AI Coding Agent Context Files is Easy. Keeping Them Accurate - Packmind](https://packmind.com/evaluate-context-ai-coding-agent/)

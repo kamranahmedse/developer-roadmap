@@ -1,6 +1,6 @@
 # Cloud Design Patterns
 
-Cloud design patterns are reusable solutions to common problems encountered in cloud computing architectures. These patterns address challenges related to scalability, reliability, security, and performance in distributed systems. They provide best practices for designing and implementing cloud-native applications, covering aspects such as data management, messaging, resiliency, and deployment. Examples include the Circuit Breaker pattern for handling faults, the CQRS pattern for separating read and write operations, and the Sidecar pattern for deploying components of an application into a separate process or container. By leveraging these patterns, developers can create more robust, efficient, and maintainable cloud applications that better utilize the benefits of cloud platforms.
+Cloud design patterns are reusable solutions to common architectural challenges that arise when building applications for cloud environments. They address concerns such as scalability, resilience, security, and operational efficiency, providing proven approaches that architects and developers can apply when designing distributed systems.
 
 Visit the following resources to learn more:
 

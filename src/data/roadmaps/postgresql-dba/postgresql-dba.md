@@ -23,7 +23,7 @@ courses:
       - 'Certification'
     instructor:
       name: 'Kamran Ahmed'
-      image: 'https://github.com/kamranahmedse.png'
+      image: 'https://github.com/nilbuild.png'
       title: 'Founder - roadmap.sh'
 seo:
   title: 'DBA Roadmap: Learn to become a database administrator with PostgreSQL'

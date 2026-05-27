@@ -1,6 +1,6 @@
 # Cloud Smith
 
-Cloudsmith is a cloud-native package management platform that enables organizations to manage and distribute software packages across their infrastructure. It provides a centralized repository for storing, managing, and deploying packages, making it easier to manage complex software dependencies and ensure consistency across environments. Cloudsmith supports a wide range of package formats, including Docker, Helm, npm, pip, and more. It also integrates with popular development tools like Jenkins, GitLab, and CircleCI, making it easy to automate package management and deployment workflows.
+Cloudsmith is a cloud-native artifact management service that supports a wide range of package formats, including Docker images, npm, PyPI, Maven, and more. It provides a centralized, hosted repository for storing and distributing artifacts with fine-grained access controls and integration with popular CI/CD pipelines.
 
 Visit the following resources to learn more:
 

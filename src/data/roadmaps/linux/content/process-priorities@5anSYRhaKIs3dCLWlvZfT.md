@@ -1,6 +1,6 @@
 # Process Priorities
 
-Linux assigns priority levels to processes, affecting execution timing and resource allocation. Process priorities use "nice" values ranging from -20 (highest priority) to +19 (lowest priority) and only root can set negative nice value. The `/proc` filesystem contains process information including priorities. You can view priorities with `ps -eo pid,pri,user,comm` and modify them using `renice` command.
+Linux assigns priority levels to processes for efficient resource utilization and execution timing. Priority values ("nice" values) range from -20 (highest) to +19 (lowest priority). View priorities with `ps -eo pid,pri,user,comm`. Change priorities using `renice -5 -p [PID]`. Essential for system performance optimization and CPU resource management.
 
 Visit the following resources to learn more:
 

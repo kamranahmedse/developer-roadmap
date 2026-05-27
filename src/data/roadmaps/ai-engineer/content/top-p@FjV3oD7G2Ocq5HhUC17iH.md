@@ -4,5 +4,4 @@ Top-P sampling, also known as nucleus sampling, is a technique used in language 
 
 Visit the following resources to learn more:
 
-- [@article@Top-P Sampling: What Is It and Why Does It Matter?](https://www.dataannotation.tech/blog/top-p-sampling)
 - [@video@What are the LLM’s Top-P + Top-K ?](https://www.youtube.com/watch?v=aDmp2Uim0zQ)

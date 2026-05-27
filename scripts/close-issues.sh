@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Fetch issues JSON data and parse it properly
-issues=$(gh issue list --repo kamranahmedse/developer-roadmap --search "sort:created-asc" --state open --limit 500 --json number,title,createdAt,updatedAt,state,url,comments,reactionGroups,body | jq -c '.[]')
+issues=$(gh issue list --repo nilbuild/developer-roadmap --search "sort:created-asc" --state open --limit 500 --json number,title,createdAt,updatedAt,state,url,comments,reactionGroups,body | jq -c '.[]')
 
 # Loop through the issues and delete the ones created in 2022 and not updated in the past year
 while IFS= read -r issue; do

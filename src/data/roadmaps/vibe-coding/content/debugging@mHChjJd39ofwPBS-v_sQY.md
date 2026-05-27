@@ -5,3 +5,5 @@ AI is very good at fixing errors when you give it the right information. Paste t
 Visit the following resources to learn more:
 
 - [@video@Vibe Coding Debugging: The Only Tutorial You Need for 10X Fast Debugging](https://www.youtube.com/watch?v=2h8WSChA1-o)
+- [@article@10 Debugging Techniques and How AI Is Changing the Game - WeAreBrain](https://wearebrain.com/blog/10-effective-debugging-techniques-for-developers/)
+- [@article@AI-First Debugging: Tools and Techniques for Faster Root Cause Analysis - LogRocket](https://blog.logrocket.com/ai-debugging/)

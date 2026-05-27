@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit the Dedicated Claude Code Roadmap](https://roadmap.sh/claude-code)
 - [@official@Claude Code Overview](https://code.claude.com/docs/en/overview)
-- [@article@Claude Code: From Zero to Hero](https://medium.com/@dan.avila7/claude-code-from-zero-to-hero-bebe2436ac32)
+- [@article@Vibe coding tutorial: Build your first app with Claude Code](https://roadmap.sh/vibe-coding/tutorial)
 - [@video@Claude Code Tutorial for Beginners](https://www.youtube.com/watch?v=eMZmDH3T2bY)

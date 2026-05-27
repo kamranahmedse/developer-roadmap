@@ -45,7 +45,7 @@ export function AuthorQuoteMessage() {
 
           <div className="mt-8 flex items-center gap-4">
             <img
-              src="https://github.com/kamranahmedse.png"
+              src="https://github.com/nilbuild.png"
               alt="Kamran Ahmed"
               className="size-14 rounded-full ring-2 ring-yellow-500/20"
             />

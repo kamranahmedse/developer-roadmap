@@ -12,5 +12,5 @@ It involves 4 steps:
 Visit the following resources to learn more:
 
 - [@book@Fundamentals of Data Engineering](https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/)
-- [@article@Data Engineering Lifecycle](hhttps://medium.com/towards-data-engineering/data-engineering-lifecycle-d1e7ee81632e)
+- [@article@Data Engineering Lifecycle](https://medium.com/towards-data-engineering/data-engineering-lifecycle-d1e7ee81632e)
 - [@video@Getting Into Data Engineering](https://www.youtube.com/watch?v=hZu_87l62J4)

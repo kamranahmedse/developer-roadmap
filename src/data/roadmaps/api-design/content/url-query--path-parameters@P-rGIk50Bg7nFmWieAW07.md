@@ -4,6 +4,6 @@ When designing APIs, an integral part involves dealing with uniform resource loc
 
 Visit the following resources to learn more:
 
-- [@article@Understanding Path Variables and Query Parameters in HTTP Requests](https://medium.com/@averydcs/understanding-path-variables-and-query-parameters-in-http-requests-232248b71a8)
+- [@article@Understanding Path Variables and Query Parameters](https://medium.com/@averydcs/understanding-path-variables-and-query-parameters-in-http-requests-232248b71a8)
 - [@article@Describing parameters](https://swagger.io/docs/specification/describing-parameters/)
 - [@article@How API Parameters Work: Query, Path, Header, and Body](https://treblle.com/blog/api-parameters-query-path-header-body)

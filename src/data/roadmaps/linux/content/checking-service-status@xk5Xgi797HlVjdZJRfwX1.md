@@ -1,9 +1,7 @@
-# Service Status
+# Checking Service Status
 
-Service status shows the current state of Linux services including network processes, backend servers, and background applications. Use `systemctl status service_name` to check service states through systemd manager. Example: `systemctl status apache2.service` shows Apache web server status. Essential for diagnosing problems, maintaining performance, and preventing service downtimes.
+systemctl status service-name gives a real-time snapshot of a service: whether it's active, inactive, or failed; its process ID; recent log lines; and any error messages from the last run. For a quick boolean check, systemctl is-active and systemctl is-enabled return simple values suitable for use in scripts. The enabled/disabled state indicates whether the service is configured to start automatically at boot, separate from whether it's currently running.
 
 Visit the following resources to learn more:
 
-- [@article@Service Management in Linux: A Comprehensive Guide](https://medium.com/@thesureshvadde/service-management-in-linux-a-comprehensive-guide-cb4c7e81dfa9)
-- [@article@Use Systemctl Status Command to Check Service Status](https://linuxhandbook.com/systemctl-check-service-status/)
-- [@article@How to Check All Running Services in Linux](https://www.2daygeek.com/how-to-check-all-running-services-in-linux/)
+- [@article@Checking the Status of a Service Without Having an Exact Name](https://www.baeldung.com/linux/initialization-managers-service-status)

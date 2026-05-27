@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@article@GitOps Interactive Benefits Diagram](https://octopus.com/devops/gitops/interactive-diagrams/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-gitops)
 - [@article@GitOps Maturity Model](https://octopus.com/devops/gitops/gitops-maturity-model/?utm_source=roadmap&utm_medium=link&utm_campaign=devops-gitops)
 - [@video@What is GitOps, How GitOps works and Why it's so useful](https://www.youtube.com/watch?v=f5EpcWp0THw)
-- [@feed@Explore top posts about GitOps](https://app.daily.dev/tags/gitops?ref=roadmapsh)

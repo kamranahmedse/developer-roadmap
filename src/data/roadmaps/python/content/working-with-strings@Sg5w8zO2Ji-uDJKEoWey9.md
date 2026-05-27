@@ -6,5 +6,6 @@ Visit the following resources to learn more:
 
 - [@official@string — Common string operations](https://docs.python.org/3/library/string.html)
 - [@article@Python Strings](https://www.w3schools.com/python/python_strings.asp)
+- [@article@Python Print New Line: Methods, Examples, and Best Practices](https://roadmap.sh/python/print-new-line)
 - [@video@String methods in Python are easy 〰️](https://www.youtube.com/watch?v=tb6EYiHtcXU)
 - [@video@Python Tutorial for Beginners 2: Strings - Working with Textual Data](https://www.youtube.com/watch?v=k9TUPpGqYTo)

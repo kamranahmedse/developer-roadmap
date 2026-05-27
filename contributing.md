@@ -15,15 +15,15 @@ First of all, thank you for considering to contribute. Please look at the detail
 
 For new roadmaps, you can either:
 
-- Submit a roadmap by providing [a textual roadmap similar to this roadmap](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5) in an [issue](https://github.com/kamranahmedse/developer-roadmap/issues).
-- Create an interactive roadmap yourself using [our roadmap editor](https://draw.roadmap.sh/) & submit the link to that roadmap in an [issue](https://github.com/kamranahmedse/developer-roadmap/issues).
+- Submit a roadmap by providing [a textual roadmap similar to this roadmap](https://gist.github.com/nilbuild/98758d2c73799b3a6ce17385e4c548a5) in an [issue](https://github.com/nilbuild/developer-roadmap/issues).
+- Create an interactive roadmap yourself using [our roadmap editor](https://draw.roadmap.sh/) & submit the link to that roadmap in an [issue](https://github.com/nilbuild/developer-roadmap/issues).
 
 ## Existing Roadmaps
 
 For the existing roadmaps, please follow the details listed for the nature of contribution:
 
-- **Fixing Typos** — Make your changes in the [roadmap markdown file](https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps) and submit a [PR](https://github.com/kamranahmedse/developer-roadmap/pulls).
-- **Adding/Removing Nodes and Modifying Node Titles** — Please open an [issue](https://github.com/kamranahmedse/developer-roadmap/issues) with your suggestion.
+- **Fixing Typos** — Make your changes in the [roadmap markdown file](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps) and submit a [PR](https://github.com/nilbuild/developer-roadmap/pulls).
+- **Adding/Removing Nodes and Modifying Node Titles** — Please open an [issue](https://github.com/nilbuild/developer-roadmap/issues) with your suggestion.
 
 **Note:** Please note that our goal is **not to have the biggest list of items**. Our goal is to list items or skills most relevant today.
 
@@ -51,7 +51,7 @@ Have a look at this project to get an idea of [what we are looking for](https://
 
 ## Adding Content
 
-Find [the content directory inside the relevant roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps). Please keep the following guidelines in mind when submitting content:
+Find [the content directory inside the relevant roadmap](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps). Please keep the following guidelines in mind when submitting content:
 
 - Content must be in English.
 - Maximum of 8 links per topic.
@@ -134,7 +134,7 @@ It's important to add a valid type, this will help us categorize the content and
 For local development, you can use the following commands:
 
 ```bash
-git clone git@github.com:kamranahmedse/developer-roadmap.git --depth 1
+git clone git@github.com:nilbuild/developer-roadmap.git --depth 1
 cd developer-roadmap
 pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
 pnpm install

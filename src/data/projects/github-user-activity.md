@@ -39,14 +39,14 @@ The application should run from the command line, accept the GitHub username as 
 - Fetch the recent activity of the specified GitHub user using the GitHub API. You can use the following endpoint to fetch the user's activity:
   ```
   # https://api.github.com/users/<username>/events
-  # Example: https://api.github.com/users/kamranahmedse/events
+  # Example: https://api.github.com/users/nilbuild/events
   ```
 - Display the fetched activity in the terminal.
   ```
   Output:
-  - Pushed 3 commits to kamranahmedse/developer-roadmap
-  - Opened a new issue in kamranahmedse/developer-roadmap
-  - Starred kamranahmedse/developer-roadmap
+  - Pushed 3 commits to nilbuild/developer-roadmap
+  - Opened a new issue in nilbuild/developer-roadmap
+  - Starred nilbuild/developer-roadmap
   - ...
   ```
   You can [learn more about the GitHub API here](https://docs.github.com/en/rest/activity/events?apiVersion=2022-11-28).

@@ -35,7 +35,7 @@ export function MeetYourInstructor() {
           <div className="flex shrink-0 flex-col items-center">
             <div className="relative">
               <img
-                src="https://github.com/kamranahmedse.png"
+                src="https://github.com/nilbuild.png"
                 alt="Kamran Ahmed"
                 className="h-40 w-40 rounded-full object-cover ring-4 ring-yellow-500/40 transition-all duration-300 hover:ring-yellow-500/60"
               />

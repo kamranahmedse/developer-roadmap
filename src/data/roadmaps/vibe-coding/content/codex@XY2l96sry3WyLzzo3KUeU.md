@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Codex - Official Website](https://chatgpt.com/codex)
 - [@video@Getting started with Codex](https://www.youtube.com/watch?v=px7XlbYgk7I)
+- [@official@Best practices - Codex](https://developers.openai.com/codex/learn/best-practices)

@@ -1,6 +1,6 @@
 # SOPS
 
-SOPS (Secrets OPerationS) is an open-source tool for managing and encrypting sensitive data such as passwords, API keys, and certificates. It allows developers to store secrets securely in version-controlled files by encrypting specific parts of files, typically using AWS KMS, GCP KMS, Azure Key Vault, or PGP. SOPS integrates seamlessly with infrastructure-as-code workflows, ensuring that secrets remain secure throughout the development lifecycle while allowing decryption only in trusted environments. It strikes a balance between security and usability in secret management.
+SOPS (Secrets OPerationS) is an open-source tool developed by Mozilla for encrypting the values within structured files such as YAML, JSON, and ENV files. It integrates with key management services like AWS KMS, GCP KMS, and PGP, allowing encrypted secrets to be safely committed to version control.
 
 Visit the following resources to learn more:
 
