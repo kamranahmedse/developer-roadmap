@@ -1,7 +1,9 @@
 # Tell AI to add logs
 
-Ask AI to add log statements to the relevant parts of the code so you can see exactly what is happening at each step when the error occurs. Once you know where things go wrong, ask it to remove the logs and apply the proper fix.
-# Articles
+Articles
+========
+
+Visit the following resources to learn more:
 
 - [@article@Top 10 Debugging Techniques for Vibe Coders - EmbedAI](https://embedai.dev/blog/debugging-techniques-vibe-coders)
 - [@article@Vibe Coding Debugging: Mastering Effective Techniques - Alan Knox](https://alanknox.com/debugging-engineering-for-vibe-coders/)

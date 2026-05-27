@@ -2,7 +2,7 @@
 
 Every time AI completes a task, and the result looks good, make a commit. This locks in your progress so that if the next task breaks something, you can go back to the last working version without losing any of your previous work.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@Best Practices for Committing AI-Generated Code - DeployHQ](https://www.deployhq.com/git/committing-ai-generated-code)
 - [@article@Git and GitHub for Vibe Coders - DeepakNess](https://deepakness.com/blog/git-for-vibe-coders/)

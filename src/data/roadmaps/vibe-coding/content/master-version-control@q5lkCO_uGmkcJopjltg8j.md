@@ -5,5 +5,5 @@ Version control is the system you use to track changes to your code over time. V
 Visit the following resources to learn more:
 
 - [@article@Git Guardian: Why Version Control is Non-Negotiable in Vibe Coding](https://verityai.co/blog/vibe-coding-version-control)
-- [@video@Vibe Coding Course 7 – Version Control Basics (Git)](https://www.youtube.com/watch?v=qUE-nVUrpq4)
 - [@article@Version Control in the Age of AI - Tower Blog](https://www.git-tower.com/blog/version-control-in-the-age-of-ai)
+- [@video@Vibe Coding Course 7 – Version Control Basics (Git)](https://www.youtube.com/watch?v=qUE-nVUrpq4)
