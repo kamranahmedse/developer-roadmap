@@ -4,5 +4,6 @@ This package provides robust and efficient functionalities for marshaling (encod
 
 Visit the following resources to learn more:
 
-- [@official@Empty Interface](https://go.dev/tour/methods/14)
-- [@article@Understanding the empty interface in Go](https://dev.to/flrnd/understanding-the-empty-interface-in-go-4652)
+- [@official@encoding/json - Go Packages](https://pkg.go.dev/encoding/json)
+- [@article@JSON and Go - The Go Blog](https://go.dev/blog/json)
+- [@feed@Explore top posts about JSON](https://app.daily.dev/tags/json?ref=roadmapsh)
