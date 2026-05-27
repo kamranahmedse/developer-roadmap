@@ -1,0 +1,3 @@
+# RAGs
+ 
+Retrieval-Augmented Generation (RAG) is a pattern where relevant documents or data are fetched from a knowledge source and injected into a model's context before generating a response. This gives the model access to customer-specific or up-to-date information without requiring fine-tuning. RAG is one of the most common patterns FDEs implement when building AI features on top of a customer's proprietary data.

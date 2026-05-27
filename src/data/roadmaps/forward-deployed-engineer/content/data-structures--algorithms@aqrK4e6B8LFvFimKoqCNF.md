@@ -1,0 +1,3 @@
+# Data Structures & Algorithms
+ 
+Data structures are ways of organizing data in memory, such as arrays, linked lists, trees, graphs, and hash maps. Algorithms are step-by-step procedures for solving problems, like sorting, searching, or traversal. Knowing these well means being able to evaluate performance characteristics of code, debug inefficiencies in customer systems, and reason clearly about solutions to technical problems.

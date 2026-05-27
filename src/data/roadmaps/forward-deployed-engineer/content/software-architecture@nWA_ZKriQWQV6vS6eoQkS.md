@@ -1,0 +1,3 @@
+# Software Architecture
+ 
+Software architecture is the high-level structure of a software system, including how components are organized, how they interact, and what principles guide those design decisions. Common patterns include layered architecture, microservices, event-driven design, and domain-driven design. FDEs need to quickly understand a customer's architecture and make decisions that fit within it, or clearly articulate why a different approach is needed.

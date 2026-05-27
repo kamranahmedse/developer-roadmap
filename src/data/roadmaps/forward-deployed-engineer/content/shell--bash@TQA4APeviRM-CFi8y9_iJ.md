@@ -1,0 +1,3 @@
+# Shell / Bash
+ 
+Bash is a command-line shell and scripting language available on most Unix-like systems. Shell scripts let you automate repetitive tasks, manage files, configure systems, and chain together command-line tools. Being fluent in Bash allows FDEs to move fast in terminal environments, debug deployment issues quickly, and write lightweight automation without reaching for a heavier tool.

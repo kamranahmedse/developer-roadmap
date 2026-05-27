@@ -1,0 +1,3 @@
+# Inference Optimization
+ 
+Inference optimization refers to techniques for making model predictions faster and cheaper without significantly reducing quality. Common approaches include quantization, distillation, response caching, and request batching. Inference costs can become a real issue quickly, and knowing how to optimize without degrading the user experience is a practical skill FDEs should have.

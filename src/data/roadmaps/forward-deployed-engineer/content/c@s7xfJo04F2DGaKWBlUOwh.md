@@ -1,0 +1,3 @@
+# C++
+ 
+C++ is a high-performance, statically typed language that gives developers fine-grained control over memory and system resources. It is used in systems programming, game engines, embedded software, and performance-critical applications. While less common in typical web or AI deployments, some customer environments in hardware, robotics, or real-time systems will require at least reading and navigating C++ codebases.

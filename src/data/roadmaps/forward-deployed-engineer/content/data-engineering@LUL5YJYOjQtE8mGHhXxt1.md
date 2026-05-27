@@ -1,0 +1,3 @@
+# Data Engineering
+ 
+Data engineering involves building and maintaining the systems that collect, store, process, and move data at scale. This includes designing pipelines, working with data warehouses, and ensuring data quality for downstream consumers like analysts and ML systems. FDEs working with enterprise customers often find that data access, transformation, and availability are the first real blockers to building anything useful with AI.

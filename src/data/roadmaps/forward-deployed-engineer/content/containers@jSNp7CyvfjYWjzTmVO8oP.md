@@ -1,0 +1,3 @@
+# Containers
+ 
+Containers are a lightweight way to package an application along with its dependencies and configuration so it runs consistently across environments. Unlike virtual machines, containers share the host operating system kernel, making them fast to start and efficient to run. Containerizing an application is often the first step toward making it deployable in a customer's cloud environment.

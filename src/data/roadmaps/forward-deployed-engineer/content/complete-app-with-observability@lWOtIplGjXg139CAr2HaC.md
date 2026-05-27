@@ -1,0 +1,3 @@
+# Complete App with Observability
+ 
+Take a complete application and make it production-ready by adding the operational layer it needs: structured logging, distributed tracing, error tracking, performance metrics, and alerts. This is the step most people skip when building for themselves, but it is the step that separates a demo from something a customer can actually rely on. Go through the experience of adding observability from scratch, then break something intentionally and use those tools to find it. That exercise alone will change how you think about building systems.

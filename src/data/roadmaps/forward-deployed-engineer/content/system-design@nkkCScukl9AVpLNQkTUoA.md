@@ -1,0 +1,3 @@
+# System Design
+ 
+System design is the process of defining the components, data flows, and infrastructure needed to build a scalable and reliable system. It involves decisions around databases, caching, load balancing, APIs, and service boundaries. For FDEs, system design often happens under time pressure and with incomplete information, so knowing common patterns well makes it possible to move quickly without making costly mistakes.

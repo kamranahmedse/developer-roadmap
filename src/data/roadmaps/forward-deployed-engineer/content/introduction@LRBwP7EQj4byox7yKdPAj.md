@@ -1,0 +1,3 @@
+# Introduction
+ 
+A Forward Deployed Engineer works directly at the intersection of software engineering and customer delivery. The role involves embedding with customers or clients to build, deploy, and adapt technical solutions in close collaboration with their teams, rather than working from a centralized product org. It requires both technical depth and the ability to operate in ambiguous, fast-moving environments where the requirements are rarely fully defined upfront.

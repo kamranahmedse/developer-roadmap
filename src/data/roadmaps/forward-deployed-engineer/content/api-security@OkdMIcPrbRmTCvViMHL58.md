@@ -1,0 +1,3 @@
+# API Security
+ 
+API security covers the practices and controls needed to protect APIs from unauthorized access and abuse. This includes authentication, authorization, rate limiting, input validation, and protection against common attacks. When building APIs, it's important to follow the customer's security standards and design endpoints that are not vulnerable to misuse, especially when those APIs expose AI capabilities.

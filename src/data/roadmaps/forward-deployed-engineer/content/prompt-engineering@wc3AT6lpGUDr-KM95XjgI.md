@@ -1,0 +1,3 @@
+# Prompt Engineering
+ 
+Prompt engineering is the practice of crafting inputs to language models in a way that produces more accurate, useful, or reliable outputs. Techniques include zero-shot and few-shot prompting, chain-of-thought reasoning, role assignment, and structured output formatting. Strong prompt engineering skills often determine whether a customer demo works convincingly or falls apart on edge cases.

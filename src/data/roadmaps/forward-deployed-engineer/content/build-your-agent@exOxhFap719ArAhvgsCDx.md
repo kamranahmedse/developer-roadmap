@@ -1,0 +1,3 @@
+# Build your Agent
+ 
+You have learned the concepts. Now build one. Pick a real task, something you actually want automated, and build an agent that can do it: define the tools, write the orchestration logic, handle failures, and test it against inputs that are likely to break it. It does not matter if the first version is rough. Getting hands-on with a real agent exposes the gaps that no amount of reading covers, and what you learn from debugging a misbehaving agent is exactly the knowledge you will need when doing it inside a customer environment.

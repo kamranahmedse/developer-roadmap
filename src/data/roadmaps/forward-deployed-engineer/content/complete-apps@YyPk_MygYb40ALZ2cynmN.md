@@ -1,0 +1,3 @@
+# Complete Apps
+ 
+This is where everything connects. Take an idea and build it fully, from the database schema to the API to the frontend. No mocking, no placeholders, no "this would normally connect to X." The point is to experience what it feels like to own a full system: making decisions at every layer, dealing with the friction between them, and ending up with something that actually works. Building complete apps on your own is the best way to develop that instinct before you are doing it under customer pressure.

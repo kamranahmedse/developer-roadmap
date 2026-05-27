@@ -1,0 +1,3 @@
+# Frontend Apps
+ 
+Put the frontend skills together and build something that lives entirely in the browser. A weather dashboard, a personal finance tracker, a Pomodoro timer, a markdown editor. Use mock data or a public API if you need data, but keep the focus on the frontend itself: how you structure components, manage state, handle routing, and make the interface feel responsive and usable. The goal is to get comfortable making frontend decisions on your own, without a backend to hide behind.

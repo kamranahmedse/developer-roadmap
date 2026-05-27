@@ -1,0 +1,3 @@
+# Roles & Responsibilities
+ 
+An FDE handles a wide range of tasks across the software lifecycle, from discovery and scoping to building and shipping working software inside customer environments. They often act as the technical lead on engagements, translating business requirements into real systems while communicating tradeoffs to non-technical stakeholders. Unlike a traditional software engineer, the role blends customer-facing work with hands-on building.

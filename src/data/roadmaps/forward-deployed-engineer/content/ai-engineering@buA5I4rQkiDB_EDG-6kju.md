@@ -1,0 +1,3 @@
+# AI Engineering
+ 
+AI engineering involves building software systems that use machine learning models and large language models (LLMs) as components. This includes selecting models, integrating them via APIs, engineering prompts, managing context, and deploying AI features in production. For FDEs, AI engineering is often the core of the engagement to deliver a working AI-powered feature within the customer's existing environment.

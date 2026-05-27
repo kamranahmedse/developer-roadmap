@@ -1,0 +1,3 @@
+# AI Agents
+ 
+AI agents are systems where an LLM is given tools, memory, and a goal, and can take a sequence of actions to complete a task rather than just responding to a single prompt. Agents can call APIs, search the web, write and run code, read files, and more. FDEs are increasingly asked to build agent-based systems for customers, where the challenge is making them reliable enough to run in production rather than just in a demo.

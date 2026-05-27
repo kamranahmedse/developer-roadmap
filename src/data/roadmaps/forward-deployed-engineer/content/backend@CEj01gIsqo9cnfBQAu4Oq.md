@@ -1,0 +1,3 @@
+# Backend
+ 
+Backend development refers to the server-side logic of a web application, including handling requests, running business logic, interacting with databases, and returning responses. Backend systems are typically built with Python, Node.js, Java, or Go, connected to databases and external services. FDEs who can build solid backend systems can own the full delivery of a feature rather than handing off at the API boundary.

@@ -1,0 +1,3 @@
+# Terraform
+ 
+Terraform is an open-source infrastructure-as-code tool by HashiCorp that lets engineers define cloud resources in configuration files and provision or update them automatically. It works across multiple cloud providers and is the standard tool for managing infrastructure in a repeatable, version-controlled way. FDEs who can write Terraform can provision and tear down customer environments faster and more reliably than doing it manually through cloud consoles.

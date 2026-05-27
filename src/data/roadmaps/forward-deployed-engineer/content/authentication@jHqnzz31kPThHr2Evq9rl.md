@@ -1,0 +1,3 @@
+# Authentication
+ 
+Authentication is the process of verifying the identity of a user or system. Common mechanisms include username/password, API keys, OAuth 2.0 tokens, and JWTs. In customer environments, FDEs typically need to integrate with an existing identity provider rather than build authentication from scratch, which requires understanding how common auth flows work and how to connect new services to them securely.
