@@ -3564,7 +3564,7 @@
       },
       "selected": false,
       "data": {
-        "label": "Svelte Kit",
+        "label": "SvelteKit",
         "style": {
           "fontSize": 17,
           "justifyContent": "flex-start",
