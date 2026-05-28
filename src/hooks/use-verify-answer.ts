@@ -18,6 +18,8 @@ type UseVerifyAnswerOptions = {
   onFinish?: (data: VerifyAnswerResponse) => void;
 };
 
+const MAX_QUIZ_QUESTION_LENGTH = 500;
+
 export function useVerifyAnswer(options: UseVerifyAnswerOptions) {
   const { quizSlug, question, userAnswer, onError, onFinish } = options;
 
@@ -36,6 +38,11 @@ export function useVerifyAnswer(options: UseVerifyAnswerOptions) {
       abortControllerRef.current?.abort();
       abortControllerRef.current = new AbortController();
 
+      const safeQuestion =
+        question.length > MAX_QUIZ_QUESTION_LENGTH
+          ? question.slice(0, MAX_QUIZ_QUESTION_LENGTH)
+          : question;
+
       const response = await fetch(
         `${import.meta.env.PUBLIC_API_URL}/v1-verify-quiz-answer/${quizSlug}`,
         {
@@ -43,7 +50,7 @@ export function useVerifyAnswer(options: UseVerifyAnswerOptions) {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ question, userAnswer }),
+          body: JSON.stringify({ question: safeQuestion, userAnswer }),
           signal: abortControllerRef.current?.signal,
           credentials: 'include',
         },
