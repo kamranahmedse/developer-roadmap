@@ -4,5 +4,5 @@ Flux is an open-source GitOps tool that automatically synchronizes the state of 
 
 Visit the following resources to learn more:
 
-- [@official@Flux CD](https://docs.fluxcd.io/)
+- [@official@Flux CD](https://fluxcd.io/flux/)
 - [@video@Introduction to Flux CD on Kubernetes](https://www.youtube.com/watch?v=X5W_706-jSY)
