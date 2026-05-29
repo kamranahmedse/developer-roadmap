@@ -4,5 +4,5 @@ Sealed Secrets is a Kubernetes-focused tool developed by Bitnami that lets you e
 
 Visit the following resources to learn more:
 
-- [@opensource@bitname/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets)
+- [@opensource@bitnami/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets)
 - [@article@Sealed Secrets](https://fluxcd.io/flux/guides/sealed-secrets/)
