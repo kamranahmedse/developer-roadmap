@@ -5,4 +5,4 @@ Artifactory is a universal artifact repository manager developed by JFrog that s
 Visit the following resources to learn more:
 
 - [@official@Artifactory Website](https://jfrog.com/artifactory/)
-- [@video@Key Features of JFrog Artifactory in 5 Minutes](https://www.youtube.com/watch?v=ZCNOtVj7bow)
+- [@video@Key Features of JFrog Artifactory in 5 Minutes](https://www.youtube.com/watch?v=LoTyOSCssvM)
