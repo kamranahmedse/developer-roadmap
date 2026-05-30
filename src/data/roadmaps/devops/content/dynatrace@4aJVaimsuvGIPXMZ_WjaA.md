@@ -4,6 +4,6 @@ Dynatrace is an AI-powered observability and application performance monitoring 
 
 Visit the following resources to learn more:
 
-- [@official@Dynatrace Documentation Learn](https://docs.dynatrace.com/docs)
+- [@official@Dynatrace Documentation](https://docs.dynatrace.com/docs)
 - [@video@What is Dynatrace in 15 minutes](https://www.youtube.com/watch?v=qo6vjyE-Ak0)
-- [@video@ynatrace Fundamental Tutorials](https://www.youtube.com/watch?v=F2PvOaM5Iws&list=PLDhScTEBdP8yAgvshsI_TwWvH2FCiOtd5)
+- [@video@Dynatrace Fundamental Tutorials](https://www.youtube.com/watch?v=F2PvOaM5Iws&list=PLDhScTEBdP8yAgvshsI_TwWvH2FCiOtd5)
