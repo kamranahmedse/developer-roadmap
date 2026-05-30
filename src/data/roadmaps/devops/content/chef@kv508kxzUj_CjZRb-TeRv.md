@@ -5,5 +5,5 @@ Chef is a configuration management tool that uses Ruby-based scripts called "rec
 Visit the following resources to learn more:
 
 - [@official@Chef Website](https://www.chef.io/products/chef-infra)
+- [@opensource@Chef](https://github.com/chef/chef)
 - [@article@Chef Tutorial](https://www.tutorialspoint.com/chef/index.htm)
-- [@video@chef/chef](https://github.com/chef/chef)
