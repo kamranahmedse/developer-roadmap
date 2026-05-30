@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Papertrail Guides](https://www.papertrail.com/solution/guides/)
 - [@official@Papertrail Blog](https://www.papertrail.com/blog/)
-- [@video@SolarWinds Papertrail Overview](https://www.youtube.com/watch?v=gFFtrzoQEfI)
+- [@video@SolarWinds Papertrail Overview](https://www.youtube.com/watch?v=lx3UyNSn8AQ)

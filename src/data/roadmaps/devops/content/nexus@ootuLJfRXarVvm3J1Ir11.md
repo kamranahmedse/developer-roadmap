@@ -4,5 +4,5 @@ The Nexus Repository Manager is a widely used repository manager software develo
 
 Visit the following resources to learn more:
 
-- [@article@Repository Management Basics](https://learn.sonatype.com/courses/nxrm-admin-100/)
+- [@article@Using Nexus Repository](https://help.sonatype.com/en/using-nexus-repository.html)
 - [@article@Nexus Best Practices](https://help.sonatype.com/repomanager3/nexus-repository-best-practices)

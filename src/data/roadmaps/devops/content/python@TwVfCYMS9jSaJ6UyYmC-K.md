@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
 - [@official@Python Website](https://www.python.org/)
-- [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
+- [@article@Python Crash Course](https://ehmatthes.github.io/pcc_3e/)
 - [@video@Python Full Course for free](https://www.youtube.com/watch?v=ix9cRaBkVe0)

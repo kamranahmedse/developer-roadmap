@@ -5,5 +5,5 @@ Jaeger is an open-source distributed tracing platform originally developed by Ub
 Visit the following resources to learn more:
 
 - [@official@Jaeger](https://www.jaegertracing.io/)
-- [@official@Jaeger Documentation](https://www.jaegertracing.io/docs/1.37/)
+- [@official@Jaeger Documentation](https://www.jaegertracing.io/docs/latest)
 - [@opensource@jaegertracing/jaeger](https://github.com/jaegertracing/jaeger)
