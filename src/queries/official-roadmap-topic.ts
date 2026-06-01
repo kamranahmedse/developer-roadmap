@@ -63,6 +63,21 @@ export async function getOfficialRoadmapTopic(
   }
 }
 
+export function escapeMarkdownLinkText(text: string) {
+  return text
+    .replace(/\\/g, '\\\\')
+    .replace(/</g, '\\<')
+    .replace(/>/g, '\\>')
+    .replace(/\[/g, '\\[')
+    .replace(/\]/g, '\\]');
+}
+
+export function formatOfficialRoadmapTopicResourceLink(
+  resource: Pick<OfficialRoadmapTopicResource, 'type' | 'title' | 'url'>,
+) {
+  return `- [@${resource.type}@${escapeMarkdownLinkText(resource.title)}](${resource.url})`;
+}
+
 export function prepareOfficialRoadmapTopicContent(
   topic: OfficialRoadmapTopicContentDocument,
 ) {
@@ -70,7 +85,11 @@ export function prepareOfficialRoadmapTopicContent(
 
   let content = description;
   if (resources.length > 0) {
-    content += `\n\nVisit the following resources to learn more:\n\n${resources.map((resource) => `- [@${resource.type}@${resource.title}](${resource.url})`).join('\n')}`;
+    const resourceLinks = resources
+      .map(formatOfficialRoadmapTopicResourceLink)
+      .join('\n');
+
+    content += `\n\nVisit the following resources to learn more:\n\n${resourceLinks}`;
   }
 
   return content;

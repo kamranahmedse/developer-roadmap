@@ -3,7 +3,10 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { slugify } from '../src/lib/slugger';
 import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
-import type { OfficialRoadmapTopicContentDocument } from '../src/queries/official-roadmap-topic';
+import {
+  formatOfficialRoadmapTopicResourceLink,
+  type OfficialRoadmapTopicContentDocument,
+} from '../src/queries/official-roadmap-topic';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -106,7 +109,11 @@ function prepareTopicContent(topic: OfficialRoadmapTopicContentDocument) {
 
   let content = description;
   if (resources.length > 0) {
-    content += `\n\nVisit the following resources to learn more:\n\n${resources.map((resource) => `- [@${resource.type}@${resource.title}](${resource.url})`).join('\n')}`;
+    const resourceLinks = resources
+      .map(formatOfficialRoadmapTopicResourceLink)
+      .join('\n');
+
+    content += `\n\nVisit the following resources to learn more:\n\n${resourceLinks}`;
   }
 
   return content;
