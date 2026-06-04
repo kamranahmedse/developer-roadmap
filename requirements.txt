@@ -1,0 +1,8 @@
+# Requirements for developer-roadmap contribution workflow
+# Python tooling used for content linting/validation
+
+requests>=2.31.0         # HTTP client for fetching/validating URLs
+markdown>=3.5.0          # Parse and validate .md files
+pyyaml>=6.0              # YAML configuration support
+rich>=13.0.0             # Pretty terminal output for scripts
+typer>=0.9.0             # CLI tooling for contribution scripts
