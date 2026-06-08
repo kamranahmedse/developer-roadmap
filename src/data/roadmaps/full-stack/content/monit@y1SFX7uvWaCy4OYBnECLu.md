@@ -4,5 +4,4 @@ When it comes to monitoring the health of your applications, there are several d
 
 Visit the following resources to learn more:
 
-- [@official@Monit](https://mmonit.com/monit/)
 - [@official@Monit Documentation](https://mmonit.com/monit/documentation/)

@@ -5,8 +5,6 @@ GitHub Actions is a workflow automation tool provided by GitHub that can be used
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
-- [@official@GitHub Actions](https://github.com/features/actions)
 - [@official@GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [@video@5 Ways to DevOps-ify your App](https://www.youtube.com/watch?v=eB0nUzAI7M8)
 - [@video@DevOps CI/CD Explained in 100 Seconds](https://www.youtube.com/watch?v=scEDHsr3APg)
-- [@feed@Explore top posts about GitHub](https://app.daily.dev/tags/github-actions?ref=roadmapsh)

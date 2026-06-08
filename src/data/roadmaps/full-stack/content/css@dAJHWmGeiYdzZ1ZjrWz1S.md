@@ -6,7 +6,5 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit the Dedicated CSS Roadmap](https://roadmap.sh/css)
 - [@article@Web.dev by Google — Learn CSS](https://web.dev/learn/css/)
-- [@article@CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [@video@CSS Complete Course](https://youtu.be/n4R2E7O-Ngo)
 - [@video@HTML and CSS Tutorial](https://www.youtube.com/watch?v=D-h8L5hgW-w)
-- [@feed@Explore top posts about CSS](https://app.daily.dev/tags/css?ref=roadmapsh)

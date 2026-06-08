@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@article@Up and Running with AWS EC2](https://cs.fyi/guide/up-and-running-with-aws-ec2)
 - [@article@EC2 Essentials](https://cloudcasts.io/course/ec2-essentials)
 - [@video@Deploy Node App on AWS EC2](https://youtu.be/oHAQ3TzUTro)
-- [@feed@Explore top posts about AWS EC2](https://app.daily.dev/tags/aws-ec2?ref=roadmapsh)

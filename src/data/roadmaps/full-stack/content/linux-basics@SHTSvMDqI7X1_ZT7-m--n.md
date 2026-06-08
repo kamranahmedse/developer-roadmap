@@ -6,7 +6,5 @@ Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Linux Roadmap](https://roadmap.sh/linux)
 - [@course@Coursera - Unix Courses](https://www.coursera.org/courses?query=unix)
-- [@article@Linux Basics](https://dev.to/rudrakshi99/linux-basics-2onj)
 - [@article@Unix / Linux Tutorial](https://www.tutorialspoint.com/unix/index.htm)
 - [@video@Linux Operating System - Crash Course](https://www.youtube.com/watch?v=ROjZy1WbCIA)
-- [@feed@Explore top posts about Linux](https://app.daily.dev/tags/linux?ref=roadmapsh)

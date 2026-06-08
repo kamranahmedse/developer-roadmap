@@ -4,12 +4,7 @@ AWS has several services but you don't need to know all of them. Some common one
 
 Visit the following resources to learn more:
 
-- [@article@Up and Running with AWS VPC](https://cs.fyi/guide/up-and-running-with-aws-vpc)
-- [@article@Up and Running with AWS EC2](https://cs.fyi/guide/up-and-running-with-aws-ec2)
+- [@roadmap@Visit the Dedicated AWS Roadmap](https://roadmap.sh/aws)
 - [@article@VPC Basics](https://cloudcasts.io/course/vpc-basics)
 - [@article@EC2 Essentials](https://cloudcasts.io/course/ec2-essentials)
 - [@video@Deploy Node App on AWS EC2](https://youtu.be/oHAQ3TzUTro)
-- [@video@AWS VPC & Subnets For Beginners](https://youtu.be/TUTqYEZZUdc)
-- [@video@DNS with AWS Route 53](https://www.youtube.com/watch?v=yRIY7BJohfo)
-- [@video@Upload Images to S3 from Node Back End](https://www.youtube.com/watch?v=NZElg91l_ms)
-- [@feed@Explore top posts about AWS](https://app.daily.dev/tags/aws?ref=roadmapsh)
