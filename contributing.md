@@ -34,6 +34,7 @@ If you have a project idea that you think we should add to the roadmap, feel fre
 The detailed format for the issue should be as follows:
 
 ```md
+
 ## What is this project about?
 
 (Add an introduction to the project.)
@@ -65,6 +66,7 @@ Please note that we are intentionally keeping the content under the topic popup 
 Please adhere to the following style when adding content to a topic:
 
 ```md
+
 # Topic Title
 
 (Content)
