@@ -8,7 +8,7 @@ on:
 jobs:
   aws_costs:
     runs-on: ubuntu-latest
-    if: github.repository == github.event.repository.full_name
+    if: github.event.repository.fork == false
     steps:
       - name: Get Costs
         env:
