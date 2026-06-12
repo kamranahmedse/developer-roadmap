@@ -1,6 +1,6 @@
 # Correlation Analysis
-
-Correlation Analysis is a quantitative method that data analysts widely employ to determine if there is a significant relationship between two variables, and if so, how strong or weak, positive or negative that relationship might be. This form of analysis helps data analysts identify patterns and trends within datasets, and is often represented visually through scatter plots. By using correlation analysis, data analysts can derive valuable insights to inform decision-making processes within a wide range of fields, from marketing to finance. The implementation of correlation analysis is crucial to forecast future outcomes, develop strategies and drive business growth.
+ 
+Correlation analysis measures the strength and direction of the relationship between two numeric variables. The Pearson correlation coefficient ranges from -1 (perfect negative relationship) to +1 (perfect positive relationship), with 0 indicating no linear relationship. Correlation does not imply causation, and further analysis is needed to understand underlying relationships.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Regression
-
-As a data analyst, understanding regression is of paramount importance. Regression analysis is a form of predictive modelling technique which investigates the relationship between dependent and independent variables. It is used for forecast, time series modelling and finding the causal effect relationship between variables. In essence, Regression techniques are used by data analysts to predict a continuous outcome variable (dependent variable) based on one or more predictor variables (independent variables). The main goal is to understand how the typical value of the dependent variable changes when any one of the independent variables is varied, while the other independent variables are held fixed. This understanding of regression takes data analysis from a reactive position to a more powerful, predictive one, equipping data analysts with an integral tool in their work.
+ 
+Regression models the relationship between a dependent variable and one or more independent variables. Simple linear regression fits a line to describe how one variable changes with another. Multiple regression extends this to several predictors. Regression is used for prediction, forecasting, and understanding which factors influence an outcome.
 
 Visit the following resources to learn more:
 

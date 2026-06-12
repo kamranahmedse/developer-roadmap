@@ -1,8 +1,7 @@
-# Supervised Machine Learning Basics for Data Analysts
-
-Supervised machine learning forms an integral part of the toolset for a Data Analyst. With a direct focus on building predictive models from labeled datasets, it involves training an algorithm based on these known inputs and outputs, helping Data Analysts establish correlations and make reliable predictions. Fortifying a Data Analyst's role, supervised machine learning enables the accurate interpretation of complex data, enhancing decision-making processes.
+# Supervised Learning
+ 
+Supervised learning trains models on labeled data, where each example has an input and a known output. The model learns a mapping from inputs to outputs that generalizes to new examples. Classification and regression are the two main tasks in supervised learning.
 
 Visit the following resources to learn more:
 
 - [@article@What is Supervised Learning?](https://cloud.google.com/discover/what-is-supervised-learning)
-- [@article@Supervised Machine Learning](https://www.datacamp.com/blog/supervised-machine-learning)

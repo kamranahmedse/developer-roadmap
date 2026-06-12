@@ -5,4 +5,3 @@ Data Transformation, also known as Data Wrangling, is an essential part of a Dat
 Visit the following resources to learn more:
 
 - [@article@What is data transformation?](https://www.qlik.com/us/data-management/data-transformation)
-- [@feed@Explore top posts about Data Analysis](https://app.daily.dev/tags/data-analysis?ref=roadmapsh)

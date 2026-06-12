@@ -1,6 +1,6 @@
-# Big Data and Data Analyst
-
-In the modern digitized world, Big Data refers to extremely large datasets that are challenging to manage and analyze using traditional data processing applications. These datasets often come from numerous different sources and are not only voluminous but also diverse in nature, including structured and unstructured data. The role of a data analyst in the context of big data is crucial. Data analysts are responsible for inspecting, cleaning, transforming, and modeling big data to discover useful information, conclude and support decision-making. They leverage their analytical skills and various big data tools and technologies to extract insights that can benefit the organization and drive strategic business initiatives.
+# Big Data Technologies
+ 
+Big data technologies handle datasets that are too large or complex for traditional tools to process. The defining characteristics of big data are often described as volume, velocity, and variety. Distributed processing frameworks like Hadoop and Spark allow computation to be spread across clusters of machines.
 
 Visit the following resources to learn more:
 

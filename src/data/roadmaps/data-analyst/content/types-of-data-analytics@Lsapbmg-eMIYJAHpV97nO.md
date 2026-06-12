@@ -1,13 +1,6 @@
-# Introduction to Types of Data Analytics
-
-Data Analytics has proven to be a critical part of decision-making in modern business ventures. It is responsible for discovering, interpreting, and transforming data into valuable information. Different types of data analytics look at past, present, or predictive views of business operations.
-
-Data Analysts, as ambassadors of this domain, employ these types, to answer various questions:
-
-*   Descriptive Analytics _(what happened in the past?)_
-*   Diagnostic Analytics _(why did it happened in the past?)_
-*   Predictive Analytics _(what will happen in the future?)_
-*   Prescriptive Analytics _(how can we make it happen?)_
+# Types of Data Analytics
+ 
+Data analytics is divided into four types based on the questions they answer: descriptive, diagnostic, predictive, and prescriptive. Each type builds on the previous, moving from understanding what happened to recommending what to do. Knowing which type of analysis a problem requires shapes the tools and techniques used.
 
 Visit the following resources to learn more:
 

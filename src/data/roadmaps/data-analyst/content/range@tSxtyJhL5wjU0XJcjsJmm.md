@@ -1,6 +1,6 @@
 # Range
-
-The concept of Range refers to the spread of a dataset, primarily in the realm of statistics and data analysis. This measure is crucial for a data analyst as it provides an understanding of the variability amongst the numbers within a dataset. Specifically in a role such as Data Analyst, understanding the range and dispersion aids in making more precise analyses and predictions. Understanding the dispersion within a range can highlight anomalies, identify standard norms, and form the foundation for statistical conclusions like the standard deviation, variance, and interquartile range. It allows for the comprehension of the reliability and stability of particular datasets, which can help guide strategic decisions in many industries. Therefore, range is a key concept that every data analyst must master.
+ 
+Range is the simplest measure of dispersion, calculated as the difference between the maximum and minimum values in a dataset. It gives a quick sense of how wide the data spans but is sensitive to outliers. For a more robust measure, interquartile range (IQR) is preferred.
 
 Visit the following resources to learn more:
 

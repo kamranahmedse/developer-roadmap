@@ -1,6 +1,6 @@
 # Standard Deviation
-
-In the realm of data analysis, the concept of dispersion plays a critical role in understanding and interpreting data. One of the key measures of dispersion is the Standard Deviation. As a data analyst, understanding the standard deviation is crucial as it gives insight into how much variation or dispersion exists from the average (mean), or expected value. A low standard deviation indicates that the data points are generally close to the mean, while a high standard deviation implies that the data points are spread out over a wider range. By mastering the concept of standard deviation and other statistical tools related to dispersion, data analysts are better equipped to provide meaningful analyses and insights from the available data.
+ 
+Standard deviation is the square root of variance and expresses dispersion in the same units as the original data. It is the most commonly used measure of spread. A low standard deviation means values are clustered near the mean; a high one means they are more spread out.
 
 Visit the following resources to learn more:
 

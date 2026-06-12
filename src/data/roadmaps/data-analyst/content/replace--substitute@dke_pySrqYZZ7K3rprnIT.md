@@ -1,10 +1,6 @@
 # REPLACE / SUBSTITUTE
-
-In Microsoft Excel, the REPLACE and SUBSTITUTE functions are powerful tools used for modifying text data within cells. Both functions serve to alter text but are utilized in different scenarios based on the nature of the changes needed.
-
-The SUBSTITUTE function is used to replace occurrences of a specified substring with a new substring. It allows for replacing text based on matching characters rather than position, making it ideal for altering specific instances of text within a string.
-
-The REPLACE function is used to replace part of a text string with another text string, based on its position within the original text. It is particularly useful when you need to replace a specific segment of text with new text, starting at a designated position.
+ 
+`REPLACE` replaces a portion of a text string based on position and length. `SUBSTITUTE` replaces all occurrences of a specific substring with another string. Both are used for text cleaning and standardization in Excel.
 
 Visit the following resources to learn more:
 

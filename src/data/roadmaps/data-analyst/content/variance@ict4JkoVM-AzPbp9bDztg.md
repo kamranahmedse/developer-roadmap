@@ -1,6 +1,6 @@
-# Variance as a Measure of Dispersion
-
-Data analysts heavily rely on statistical concepts to analyze and interpret data, and one such fundamental concept is variance. Variance, an essential measure of dispersion, quantifies the spread of data, providing insight into the level of variability within the dataset. Understanding variance is crucial for data analysts as the reliability of many statistical models depends on the assumption of constant variance across observations. In other words, it helps analysts determine how much data points diverge from the expected value or mean, which can be pivotal in identifying outliers, understanding data distribution, and driving decision-making processes. However, variance can't be interpreted in the original units of measurement due to its squared nature, which is why it is often used in conjunction with its square root, the standard deviation.
+# Variance
+ 
+Variance measures the average squared deviation of each value from the mean. It quantifies how much the data points differ from the average. A higher variance indicates greater spread. Variance is the basis for standard deviation and many inferential statistical tests.
 
 Visit the following resources to learn more:
 

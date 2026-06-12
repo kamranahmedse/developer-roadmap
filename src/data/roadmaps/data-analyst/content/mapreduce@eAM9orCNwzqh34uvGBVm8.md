@@ -1,6 +1,6 @@
 # MapReduce
-
-MapReduce is a prominent data processing technique used by Data Analysts around the world. It allows them to handle large data sets with complex, unstructured data efficiently. MapReduce breaks down a big data problem into smaller sub-tasks (Map) and then takes those results to create an output in a more usable format (Reduce). This technique is particularly useful in conducting exploratory analysis, as well as in handling big data operations such as text processing, graph processing, or more complicated machine learning algorithms.
+ 
+MapReduce is a programming model for processing large datasets in parallel. The map phase transforms input data into key-value pairs, and the reduce phase aggregates them into a final result. It was the original processing model for Hadoop and, while largely replaced by Spark, the map-reduce paradigm still underlies many distributed data processing patterns.
 
 Visit the following resources to learn more:
 

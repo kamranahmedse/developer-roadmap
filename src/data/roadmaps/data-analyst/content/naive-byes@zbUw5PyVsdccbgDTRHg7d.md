@@ -1,6 +1,6 @@
-# Naive Bayes
-
-As a data analyst, understanding various machine learning algorithms is crucial. Naive Bayes is one of such basic yet powerful algorithms used for predictive modeling and data classification. This algorithm applies the principles of probability and statistics, specifically Bayes' theorem, with a 'naive' assumption of independence among the predictors. Ideal for dealing with large volumes of data, Naive Bayes is a competitive algorithm for text classification, spam filtering, recommendation systems, and more. Understanding Naive Bayes can significantly improve the ability of a data analyst to create more effective models and deliver superior analytical results.
+# Naive Byes
+ 
+Naive Bayes is a probabilistic classification algorithm based on Bayes' theorem, with the assumption that features are independent of each other given the class. Despite this simplifying assumption, it performs well in practice for text classification, spam detection, and other categorical problems. It is fast to train and works well with small datasets.
 
 Visit the following resources to learn more:
 

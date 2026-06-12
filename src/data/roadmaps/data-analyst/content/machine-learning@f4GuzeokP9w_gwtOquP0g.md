@@ -1,3 +1,7 @@
-# Machine Learning Basics for Data Analysts
+# Machine Learning
+ 
+Machine learning is the field of building systems that learn from data to make predictions or decisions. For data analysts, understanding ML provides tools to tackle problems that go beyond traditional statistical methods, such as classifying text, detecting anomalies, and building recommendation systems. Analysts typically apply ML algorithms rather than build them from scratch.
 
-Data analysts are becoming increasingly involved in the realm of machine learning. This emerging technology harnesses algorithms, statistical models, and other tools to teach machines to perform tasks that would normally require human intelligence. This includes activities such as making predictions based on data, recognizing patterns, and making decisions. Understanding the basics of machine learning is therefore not only beneficial, but essential, to modern data analysts who wish to stay competitive in their field.
+Visit the following resources to learn more:
+
+- [@roadmap@Visit the Dedicated Machine Learning Roadmap](https://roadmap.sh/machine-learning)

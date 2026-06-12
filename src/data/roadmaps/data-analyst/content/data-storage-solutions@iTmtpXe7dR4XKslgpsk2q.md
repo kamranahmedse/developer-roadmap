@@ -1,6 +1,6 @@
 # Data Storage Solutions
-
-As a business enterprise expands, so does its data. For data analysts, the surge in information means they need efficient and scalable data storage solutions to manage vast volumes of structured and unstructured data, collectively referred to as Big Data. Big Data storage solutions are critical in preserving the integrity of data while also providing quick and easy access to the data when needed. These solutions use software and hardware components to securely store massive amounts of information across numerous servers, allowing data analysts to perform robust data extraction, data processing and complex data analyses. There are several options, from the traditional Relational Database Management Systems (RDBMS) to the more recent NoSQL databases, Hadoop ecosystems, and Cloud storage solutions, each offering unique capabilities and benefits to cater for different big data needs.
+ 
+Big data storage solutions are designed to hold large volumes of structured, semi-structured, and unstructured data reliably. Options include distributed file systems like HDFS, object stores like S3, and columnar databases optimized for analytics. The choice depends on access patterns, data format, and the processing framework being used.
 
 Visit the following resources to learn more:
 

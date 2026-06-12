@@ -1,6 +1,6 @@
 # CNNs
-
-Convolutional Neural Networks (CNNs) form an integral part of deep learning frameworks, particularly within the realm of image processing. Data analysts with a focus on deep learning applications often turn to CNNs for their capacity to efficiently process high-dimensional data, such as images, and extract critical features relevant to the problem at hand. As a powerful tool for modeling patterns in data, CNNs are frequently employed in applications ranging from image recognition to natural language processing (NLP). Understanding CNNs, therefore, provides a robust foundation for data analysts aspiring to harness the potential of deep learning techniques.
+ 
+Convolutional Neural Networks (CNNs) are a type of deep neural network designed for processing grid-structured data like images. They use convolutional layers to automatically learn spatial features such as edges, textures, and shapes. CNNs are the standard architecture for image classification, object detection, and computer vision tasks.
 
 Visit the following resources to learn more:
 

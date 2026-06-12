@@ -1,6 +1,6 @@
-# Pie Chart
-
-As a data analyst, understanding and efficiently using various forms of data visualization is crucial. Among these, Pie Charts represent a significant tool. Essentially, pie charts are circular statistical graphics divided into slices to illustrate numerical proportions. Each slice of the pie corresponds to a particular category. The pie chart's beauty lies in its simplicity and visual appeal, making it an effective way to convey relative proportions or percentages at a glance. For a data analyst, it's particularly useful when you want to show a simple distribution of categorical data. Like any tool, though, it's important to use pie charts wisely—ideally, when your data set has fewer than seven categories, and the proportions between categories are distinct.
+# Pie Charts
+ 
+Pie charts show the proportional composition of a whole by dividing a circle into slices. They are best used for a small number of categories (typically fewer than five) where the relative sizes are meaningfully different. Pie charts are often criticized for being harder to interpret accurately than bar charts for the same data.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Cleanup
-
-The Cleanup of Data is a critical component of a Data Analyst's role. It involves the process of inspecting, cleaning, transforming, and modeling data to discover useful information, inform conclusions, and support decision making. This process is crucial for Data Analysts to generate accurate and significant insights from data, ultimately resulting in better and more informed business decisions. A solid understanding of data cleanup procedures and techniques is a fundamental skill for any Data Analyst. Hence, it is necessary to hold a high emphasis on maintaining data quality by managing data integrity, accuracy, and consistency during the data cleanup process.
+ 
+Data cleanup (or data cleaning) is the process of identifying and correcting errors, inconsistencies, and missing values in a dataset. Common tasks include handling null values, removing duplicates, fixing formatting issues, and standardizing categories. Clean data is a prerequisite for accurate analysis.
 
 Visit the following resources to learn more:
 

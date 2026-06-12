@@ -1,6 +1,6 @@
-# Logistic
-
-Logistic Regression is one of the foundational techniques that a data analyst must understand in machine learning. This method is a predictive analysis algorithm based on the concept of probability. It’s used for categorizing data into distinct classes, making it particularly useful for binary classification problems. It should be understood that despite its name, logistic regression is used in classification problems, not regression tasks. Data analysts use this algorithm to build machine learning models to solve various real-world problems such as email spam, credibility of loan applicants, development of marketing strategies and so on.
+# Logistic Regression
+ 
+Logistic regression is a supervised classification algorithm that models the probability of a binary outcome using a sigmoid function. Despite its name, it is a classification method, not a regression one. It is widely used for binary classification tasks like churn prediction, fraud detection, and medical diagnosis.
 
 Visit the following resources to learn more:
 

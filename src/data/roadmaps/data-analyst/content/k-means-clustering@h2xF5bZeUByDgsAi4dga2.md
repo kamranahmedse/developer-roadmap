@@ -1,6 +1,6 @@
-# Kmeans
-
-Kmeans is a fundamentally important method in data analysis and falls under the broad umbrella of machine learning basics. A data analyst using Kmeans clusters large data sets into subgroups or clusters based upon specific characteristics or parameters. The primary purpose is to derive insights from similarities/dissimilarities within the dataset, which can then be used for understanding patterns, trends, and predictive modeling. Accurate use of Kmeans can lead to enhanced decision-making, forecasting and strategic planning based on the data.
+# K-Means Clustering
+ 
+K-Means is an unsupervised clustering algorithm that partitions data into K groups by iteratively assigning points to the nearest cluster centroid and updating the centroids. It is simple and scalable but requires specifying K in advance and is sensitive to outliers and initial centroid placement. It is used for customer segmentation, anomaly detection, and data compression.
 
 Visit the following resources to learn more:
 

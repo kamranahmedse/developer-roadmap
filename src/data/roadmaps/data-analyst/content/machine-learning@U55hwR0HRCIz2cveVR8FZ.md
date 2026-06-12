@@ -1,8 +1,10 @@
-# Machine Learning - A Key Concept for Data Analysts
-
-Machine learning, a subset of artificial intelligence, is an indispensable tool in the hands of a data analyst. It provides the ability to automatically learn, improve from experience and make decisions without being explicitly programmed. In the context of a data analyst, machine learning contributes significantly in uncovering hidden insights, recognising patterns or making predictions based on large amounts of data. Through the use of varying algorithms and models, data analysts are able to leverage machine learning to convert raw data into meaningful information, making it a critical concept in data analysis.
+# Machine Learning
+ 
+Machine learning is a branch of artificial intelligence where systems learn patterns from data and make predictions or decisions without being explicitly programmed for each task. For data analysts, ML provides tools like classification, clustering, and regression models that automate pattern recognition at scale. Understanding the basics of ML extends what an analyst can do beyond traditional statistical methods.
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit the Dedicated Machine Learning Roadmap Roadmap](https://roadmap.sh/machine-learning)
 - [@article@What is Machine Learning (ML)?](https://www.ibm.com/topics/machine-learning)
+- [@article@Data Science vs Machine Learning: How are they different?](https://roadmap.sh/ai-data-scientist/vs-machine-learning)
 - [@video@What is Machine Learning?](https://www.youtube.com/watch?v=9gGnTQTYNaE)

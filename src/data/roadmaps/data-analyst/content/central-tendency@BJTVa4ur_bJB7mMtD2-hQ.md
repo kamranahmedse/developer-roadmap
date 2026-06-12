@@ -1,6 +1,6 @@
 # Central Tendency
-
-Descriptive analysis is a significant branch in the field of data analytics, and under this, the concept of Central Tendency plays a vital role. As data analysts, understanding central tendency is of paramount importance as it offers a quick summary of the data. It provides information about the center point around which the numerical data is distributed. The three major types of the central tendency include the Mean, Median, and Mode. These measures are used by data analysts to identify trends, make comparisons, or draw conclusions. Therefore, an understanding of central tendency equips data analysts with essential tools for interpreting and making sense of statistical data.
+ 
+Measures of central tendency describe the center or typical value of a dataset. The three main measures are mean (arithmetic average), median (middle value), and mode (most frequent value). The choice between them depends on the data's distribution and whether outliers are present.
 
 Visit the following resources to learn more:
 

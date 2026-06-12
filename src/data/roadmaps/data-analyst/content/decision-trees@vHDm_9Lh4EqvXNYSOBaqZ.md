@@ -1,6 +1,6 @@
 # Decision Trees
-
-As a data analyst, understanding machine learning topics like decision trees is crucial. Decision trees are a fundamental aspect in the field of machine learning and artificial intelligence. They present a simple yet effective method of data analysis. They have applications in several areas including customer relationship management, fraud detection, financial analysis, healthcare and more. In simpler terms, a decision tree can be considered as a method of breaking down complex decisions and estimating likely outcomes. This introduction would help data analysts understand the logic behind decision trees and how they are constructed for the purpose of predictive modeling.
+ 
+A decision tree is a supervised learning algorithm that splits data into branches based on feature values to reach a prediction. It is interpretable because the decision logic can be visualized and explained. Decision trees are the foundation for ensemble methods like Random Forests and Gradient Boosting.
 
 Visit the following resources to learn more:
 
