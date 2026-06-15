@@ -1,0 +1,3 @@
+# Scikit-learn
+ 
+Scikit-learn is the standard machine learning library for Python. It provides a consistent API for classification, regression, clustering, dimensionality reduction, model selection, and preprocessing. Models are trained with `.fit()`, used to predict with `.predict()`, and evaluated with a suite of metrics. Scikit-learn also provides tools for pipelines, cross-validation, and hyperparameter tuning.

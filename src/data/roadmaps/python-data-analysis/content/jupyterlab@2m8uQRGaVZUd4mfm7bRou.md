@@ -1,0 +1,3 @@
+# JupyterLab
+ 
+JupyterLab is the modern, full-featured successor to the classic Jupyter Notebook interface. It supports notebooks where code, output, and narrative text coexist in a single document, while adding a tabbed layout, a file browser, a terminal, and support for multiple file types side by side. It is the standard environment for exploratory data analysis because results are visible immediately after each cell is run.

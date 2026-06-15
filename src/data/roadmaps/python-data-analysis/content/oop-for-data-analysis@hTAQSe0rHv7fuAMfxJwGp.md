@@ -1,0 +1,3 @@
+# OOP for Data Analysis
+
+Object-oriented programming (OOP) organizes code around classes and objects rather than standalone functions and procedures. A class defines a blueprint with attributes (data) and methods (behavior), and objects are instances of that class. For data analysis work, OOP is useful when building reusable data processing components, custom dataset loaders, or analysis pipelines that need to maintain state across multiple steps. Most of the libraries used daily, including Pandas, NumPy, and Scikit-learn, are built around classes, so understanding OOP helps in reading documentation, subclassing existing components, and writing cleaner, more maintainable analysis code.

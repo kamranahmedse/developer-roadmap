@@ -1,0 +1,3 @@
+# Airflow
+ 
+Apache Airflow is an open-source platform for authoring, scheduling, and monitoring data pipelines. Pipelines are defined as DAGs (Directed Acyclic Graphs) in Python, where each node is a task and edges define dependencies. Airflow provides a web UI for monitoring runs, retrying failures, and tracking execution history. It is the standard orchestration tool for production Python data pipelines.
