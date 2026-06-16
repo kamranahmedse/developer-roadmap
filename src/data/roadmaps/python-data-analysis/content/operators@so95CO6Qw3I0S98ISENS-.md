@@ -5,5 +5,5 @@ Operators are symbols that perform operations on values and variables. Python su
 Visit the following resources to learn more:
 
 - [@article@Python Operators](https://www.w3schools.com/python/python_operators.asp)
-- [@article@Python Operators with examples](https://www.programiz.com/python-programming/operators)
+- [@article@Python Operators from Scratch!!! – A Beginner’s Guide](https://towardsdatascience.com/python-operators-from-scratch-a-beginners-guide-8471306f4278/)
 - [@video@Python Tutorial for Beginners | Operators in Python](https://www.youtube.com/watch?v=v5MR5JnKcZI)

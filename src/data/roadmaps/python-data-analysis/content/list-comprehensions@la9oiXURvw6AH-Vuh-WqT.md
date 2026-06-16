@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 - [@article@When to Use a List Comprehension in Python Quiz](https://realpython.com/quizzes/list-comprehension-python/)
+- [@article@List Comprehensions in Python](https://towardsdatascience.com/list-comprehensions-in-python-28d54c9286ca/)

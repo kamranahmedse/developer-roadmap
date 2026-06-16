@@ -5,4 +5,5 @@
 Visit the following resources to learn more:
 
 - [@official@pandas.DataFrame.groupby](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html)
+- [@article@All About Pandas Groupby Explained with 25 Examples](https://towardsdatascience.com/all-about-pandas-groupby-explained-with-25-examples-494e04a8ef56/)
 - [@video@Group By and Aggregate Functions in Pandas |](https://www.youtube.com/watch?v=VRmXto2YA2I)

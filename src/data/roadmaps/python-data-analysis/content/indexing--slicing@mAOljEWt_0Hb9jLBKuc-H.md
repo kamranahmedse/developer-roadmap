@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@Indexing on ndarrays](https://numpy.org/doc/stable/user/basics.indexing.html)
 - [@article@NumPy Array Indexing](https://www.w3schools.com/python/numpy/numpy_array_indexing.asp)
 - [@article@NumPy Array Slicing](https://www.w3schools.com/python/numpy/numpy_array_slicing.asp)
+- [@article@Indexing Arrays](https://towardsdatascience.com/introducing-numpy-part-2-indexing-arrays-5b381b90d1d0/)
