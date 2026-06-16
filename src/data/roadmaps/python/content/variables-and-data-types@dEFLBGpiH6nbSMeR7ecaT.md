@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Variables in Python](https://realpython.com/python-variables)
 - [@article@Python for Beginners: Data Types](https://thenewstack.io/python-for-beginners-data-types/)
 - [@video@Python Variables and Data Types](https://www.youtube.com/playlist?list=PLBlnK6fEyqRhN-sfWgCU1z_Qhakc1AGOn)
+- [@article@Python Null (None): Guide to Missing Values and NoneType](https://roadmap.sh/python/null)
