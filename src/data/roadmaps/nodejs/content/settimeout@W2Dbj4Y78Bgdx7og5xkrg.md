@@ -1,6 +1,6 @@
 # setTimeout
-
-The setTimeout runs a function after the specified period expires. Times are declared in milliseconds.
+ 
+`setTimeout()` executes a callback function once, after a specified delay in milliseconds. It does not block other code from running while waiting. It is one of the simplest ways to introduce asynchronous behavior in Node.js.
 
 Visit the following resources to learn more:
 

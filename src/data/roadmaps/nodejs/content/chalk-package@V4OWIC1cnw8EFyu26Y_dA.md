@@ -1,6 +1,6 @@
-# Chalk
-
-Chalk is a clean and focused library used to do string styling in your terminal applications. With it, you can print different styled messages to your console such as changing font colors, font boldness, font opacity, and the background of any message printed on your console.
+# chalk package
+ 
+`chalk` is an npm package for styling terminal output with colors and formatting like bold, underline, and italic. It is used to make CLI output more readable by highlighting errors in red, success messages in green, and so on. It works across different terminal environments.
 
 Visit the following resources to learn more:
 

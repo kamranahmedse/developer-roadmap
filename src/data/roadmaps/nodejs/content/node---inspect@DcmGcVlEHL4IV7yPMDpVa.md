@@ -1,6 +1,6 @@
-# Node Inspect
-
-Node.js provides a built-in DevTools-based debugger to allow debugging Node.js applications.
+# node --inspect
+ 
+The `--inspect` flag starts the Node.js process with a debugging interface enabled. You can then connect to it using Chrome DevTools or a compatible IDE like VS Code to set breakpoints, step through code, and inspect variables. Appending `--inspect-brk` pauses execution immediately, letting you debug from the very start of the process.
 
 Visit the following resources to learn more:
 

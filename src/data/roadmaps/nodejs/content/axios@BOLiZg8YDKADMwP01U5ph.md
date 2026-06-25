@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Axios Documentation](https://axios-http.com/docs/intro)
 - [@video@Axios Tutorial](https://www.youtube.com/watch?v=6LyagkoRWYA)
-- [@feed@Explore top posts about Axios](https://app.daily.dev/tags/axios?ref=roadmapsh)

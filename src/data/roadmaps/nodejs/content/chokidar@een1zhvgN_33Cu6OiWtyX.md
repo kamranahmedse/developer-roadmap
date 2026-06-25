@@ -1,6 +1,6 @@
-# Chokidar
-
-Chokidar is a fast open-source file watcher for node. js. You give it a bunch of files, it watches them for changes and notifies you every time an old file is edited; or a new file is created.
+# chokidar
+ 
+Chokidar is an npm package for watching file system changes. It wraps Node.js's native `fs.watch` and `fs.watchFile` with a more reliable and consistent API. It is widely used in development tools like Webpack and Vite to trigger rebuilds when files change.
 
 Visit the following resources to learn more:
 

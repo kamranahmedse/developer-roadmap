@@ -1,6 +1,6 @@
-# Global Install vs Local Install
-
-NodeJS and NPM allow two methods of installing dependencies/packages: Local and Global. This is mainly used when adding a package or dependency as part of a specific project you're working on. The package would be installed (with its dependencies) in `node_modules` folder **under your project**. In addition, in `package.json` file there will be a new line added for the installed dependency under the label `dependencies`. At this point - you can start using the package in your NodeJS code by importing the package. Unlike the local install, you can install packages and dependencies **globally**. This would install it in a system path, and these packages would be available to any program which runs on **this specific** computer. This method is often used for installing command line tools (for example, even `npm` program is a Globally installed npm package).
+# Global Installation
+ 
+A global npm installation places a package in a system-wide location, making it available as a command-line tool from any directory. You use it for tools you want to run across multiple projects, like CLI utilities. It is done with the `-g` flag: `npm install -g <package>`.
 
 Visit the following resources to learn more:
 

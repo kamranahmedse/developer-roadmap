@@ -1,8 +1,6 @@
 # Using Debugger
-
-Node.js includes a command-line debugging utility. The Node.js debugger client is not a full-featured debugger, but simple stepping and inspection are possible. To use it, start Node.js with the inspect argument followed by the path to the script to debug.
-
-Example - `$ node inspect myscript.js`
+ 
+Node.js includes a built-in debugger that can be activated with the `--inspect` flag or the `debugger` keyword in code. It lets you pause execution, step through code, and inspect variables at runtime using Chrome DevTools or a compatible IDE. Using a debugger is more efficient than adding `console.log` statements throughout the code.
 
 Visit the following resources to learn more:
 

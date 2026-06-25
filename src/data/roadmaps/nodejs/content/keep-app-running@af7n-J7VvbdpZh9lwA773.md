@@ -4,5 +4,4 @@ PM2 lets you run your nodejs scripts forever. In the event that your application
 
 Visit the following resources to learn more:
 
-- [@article@Keep a Node Application Constantly Running](https://devtut.github.io/nodejs/keep-a-node-application-constantly-running.html#use-pm2-as-a-process-manager)
-- [@feed@Explore top posts about Node.js](https://app.daily.dev/tags/nodejs?ref=roadmapsh)
+- [@article@Running Node.js Apps with PM2 (Complete Guide)](https://betterstack.com/community/guides/scaling-nodejs/pm2-guide/)

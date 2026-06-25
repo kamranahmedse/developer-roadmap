@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@PassportJS](https://www.passportjs.org/)
 - [@official@PassportJS Documentation](https://www.passportjs.org/docs/)
 - [@video@Implementation of OAuth using passportjs](https://www.youtube.com/watch?v=sakQbeRjgwg&list=PL4cUxeGkcC9jdm7QX143aMLAqyM-jTZ2x)
-- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

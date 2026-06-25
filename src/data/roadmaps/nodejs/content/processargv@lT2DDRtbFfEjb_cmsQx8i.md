@@ -1,6 +1,6 @@
 # process.argv
-
-`process.argv` is an array of parameters that are sent when you run a Node.js file or Node.js process.
+ 
+`process.argv` is an array containing the command-line arguments passed to the Node.js process. The first two elements are the path to Node.js and the script file; the remaining elements are the arguments provided by the user. Parsing `process.argv` manually is the lowest-level way to read CLI input.
 
 Visit the following resources to learn more:
 

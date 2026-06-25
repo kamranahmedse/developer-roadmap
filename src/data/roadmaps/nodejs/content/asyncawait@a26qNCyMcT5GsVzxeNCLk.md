@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Async/Await Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 - [@article@More on async await](https://javascript.info/async-await)
-- [@article@W3Docs Async/Await](https://www.w3docs.com/learn-javascript/async-await.html)
 - [@video@Using async await](https://www.youtube.com/watch?v=V_Kr9OSfDeU)

@@ -1,9 +1,8 @@
 # Cypress
-
-Cypress is a new front end testing tool built for the modern web. It enables you to write faster, easier and more reliable tests.
+ 
+Cypress is an end-to-end testing framework designed for web applications. It runs tests directly in the browser and provides a visual test runner for debugging. It is primarily used for testing user interactions in the browser rather than pure Node.js code.
 
 Visit the following resources to learn more:
 
 - [@official@Cypress](https://www.cypress.io/)
 - [@article@Cypress Documentation](https://docs.cypress.io/)
-- [@feed@Explore top posts about Cypress](https://app.daily.dev/tags/cypress?ref=roadmapsh)

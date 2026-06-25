@@ -1,6 +1,6 @@
 # setImmediate
-
-The `setImmediate` function delays the execution of a function to be called after the current event loops finish all their execution. It's very similar to calling `setTimeout` with 0 ms delay.
+ 
+`setImmediate()` schedules a callback to run in the check phase of the event loop, after I/O events have been processed. It is similar to `setTimeout(fn, 0)` but is guaranteed to run before any timers in some cases. It is used when you want to yield control to the event loop before continuing execution.
 
 Visit the following resources to learn more:
 

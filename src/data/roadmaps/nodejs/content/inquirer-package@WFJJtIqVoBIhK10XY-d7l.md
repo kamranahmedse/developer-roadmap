@@ -1,8 +1,6 @@
-# Inquirer
-
-Inquirer.js is a collection of common interactive command line interfaces for taking inputs from user. It is promise based and supports chaining series of prompt questions together, receiving text input, checkboxes, lists of choices and much more.
-
-You can use it to empower your terminal applications that need user input or to build your own CLI.
+# Inquirer Package
+ 
+Inquirer.js is a popular npm package for building rich, interactive command-line interfaces. It supports many input types including text, passwords, lists, checkboxes, and confirmations. It is a good choice for CLIs that require multi-step input flows.
 
 Visit the following resources to learn more:
 

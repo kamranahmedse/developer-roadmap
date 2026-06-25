@@ -1,6 +1,6 @@
 # process.env
-
-In Node. js, process. env is a global variable that is injected during runtime. It is a view of the state of the system environment variables. When we set an environment variable, it is loaded into process.env during runtime and can later be accessed.
+ 
+`process.env` is a Node.js object that contains all environment variables available to the current process. These can be set in the shell, in a `.env` file via a library like dotenv, or by the deployment platform. Configuration values like port numbers, API keys, and database URLs are commonly stored and accessed this way.
 
 Visit the following resources to learn more:
 

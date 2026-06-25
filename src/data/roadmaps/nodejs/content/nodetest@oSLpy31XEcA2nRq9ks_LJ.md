@@ -1,13 +1,6 @@
 # node:test
-
-`node:test` is a built-in module in Node.js that provides a simple, asynchronous test runner. It's designed to make writing tests as straightforward as writing any other code.
-
-Key Features
-
-*   Simplicity: Easy to use and understand.
-*   Asynchronous Support: Handles asynchronous code gracefully.
-*   Subtests: Allows for organizing tests into hierarchical structures.
-*   Hooks: Provides beforeEach and afterEach hooks for setup and teardown.
+ 
+`node:test` is Node.js's built-in test runner, added in version 18. It provides a simple API for writing and running tests without any additional dependencies. For projects that want minimal tooling, it is a practical alternative to third-party frameworks.
 
 Visit the following resources to learn more:
 

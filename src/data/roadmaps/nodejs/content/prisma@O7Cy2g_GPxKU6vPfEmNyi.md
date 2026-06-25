@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Prisma](https://www.prisma.io/)
 - [@official@Prisma Documentation](https://www.prisma.io/docs/)
-- [@feed@Explore top posts about Prisma](https://app.daily.dev/tags/prisma?ref=roadmapsh)

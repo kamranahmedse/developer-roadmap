@@ -1,6 +1,6 @@
 # process.cwd()
-
-The `process.cwd()` method returns the current working directory of the Node.js process.
+ 
+`process.cwd()` returns the current working directory of the Node.js process, which is the directory from which the script was launched. Unlike `__dirname`, it reflects the shell's working directory, not the file's location. It is useful when your application needs to resolve paths relative to where it was started.
 
 Visit the following resources to learn more:
 

@@ -1,9 +1,6 @@
-# Making API calls with HTTP
-
-You can make API calls using the `http` module in Node.js as well. Here are the two methods that you can use:
-
-*   `http.get()` - Make http GET requests.
-*   `http.request()` - Similar to `http.get()` but enables sending other types of http requests (GET requests inclusive).
+# http module
+ 
+The `http` module is Node.js's built-in module for creating HTTP servers and making HTTP requests. It provides low-level access to the HTTP protocol, giving you full control over request and response handling. Most developers use a framework like Express or a library like Axios on top of it.
 
 Visit the following resources to learn more:
 

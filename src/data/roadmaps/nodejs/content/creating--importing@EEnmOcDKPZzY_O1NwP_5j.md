@@ -1,6 +1,6 @@
-# Custom Modules
-
-Modules are the collection of JavaScript codes in a separate logical file that can be used in external applications based on their related functionality. There are two ways to create modules in Node.js i.e. either via CommonJS or ESM.
+# Creating & Importing
+ 
+Creating a module means writing JavaScript in a file and exporting the parts you want to share. Importing means pulling those exports into another file using `require()` in CommonJS or `import` in ESM. This mechanism is how Node.js applications are structured into separate, connected files.
 
 Visit the following resources to learn more:
 

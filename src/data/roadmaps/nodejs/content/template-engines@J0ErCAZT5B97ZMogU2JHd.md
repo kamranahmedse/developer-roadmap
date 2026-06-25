@@ -1,15 +1,6 @@
 # Template Engines
-
-Template engine helps us to create an HTML template with minimal code. Also, it can inject data into HTML template at client side and produce the final HTML.
-
-Some examples of template engines in Node.js are:
-
-*   Nunjucks
-*   Jade
-*   Vash
-*   EJS
-*   Handlebars
-*   HAML
+ 
+Template engines allow you to generate HTML dynamically by combining HTML structure with data. In Node.js, they are used in server-side rendered applications to produce HTML pages on the server before sending them to the client. Common template engines include EJS, Pug, and Marko.
 
 Visit the following resources to learn more:
 

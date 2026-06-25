@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Jest](https://jestjs.io)
 - [@official@Jest Documentation](https://jestjs.io/docs/getting-started)
-- [@feed@Explore top posts about Jest](https://app.daily.dev/tags/jest?ref=roadmapsh)

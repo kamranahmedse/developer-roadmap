@@ -1,8 +1,6 @@
 # Uncaught Exceptions
-
-When a JavaScript error is not properly handled, an uncaughtException is emitted. These suggest the programmer has made an error, and they should be treated with the utmost priority.
-
-The correct use of `uncaughtException` is to perform synchronous cleanup of allocated resources (e.g. file descriptors, handles, etc) before shutting down the process. It is not safe to resume normal operation after `uncaughtException` because system becomes corrupted. The best way is to let the application crash, log the error and then restart the process automatically using nodemon or pm2.
+ 
+An uncaught exception is an error that is not handled anywhere in the application, causing the Node.js process to crash. You can listen for these with the `process.on('uncaughtException', ...)` event, though it should be used carefully and mainly for logging before shutting down gracefully. Relying on it as a catch-all is considered bad practice.
 
 Visit the following resources to learn more:
 
