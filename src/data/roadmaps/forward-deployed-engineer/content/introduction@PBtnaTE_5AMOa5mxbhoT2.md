@@ -4,5 +4,5 @@ A Forward Deployed Engineer is a software engineer who works directly inside a c
 
 Visit the following resources to learn more:
 
-- [@article@orward deployed engineer is AI’s hottest job](https://thenewstack.io/forward-deployed-engineer-fde-openai-google/)
+- [@article@Forward deployed engineer is AI’s hottest job](https://thenewstack.io/forward-deployed-engineer-fde-openai-google/)
 - [@article@Forward-deployed engineer: The complete guide](https://www.rocketlane.com/blogs/forward-deployed-engineer)
