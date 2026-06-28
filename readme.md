@@ -113,6 +113,8 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Ruby on Rails Roadmap](https://roadmap.sh/ruby-on-rails)
 - [Scala Roadmap](https://roadmap.sh/scala)
 - [Forward Deployed Engineer Roadmap](https://roadmap.sh/forward-deployed-engineer)
+- [AI Product Builder Roadmap](https://roadmap.sh/ai-product-builder)
+
 
 
 There are also interactive best practices:
