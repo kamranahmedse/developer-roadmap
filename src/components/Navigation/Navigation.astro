@@ -58,6 +58,8 @@ import { UpgradeProButton } from '../TopNavDropdowns/UpgradeProButton';
     <button
       class='block cursor-pointer text-gray-400 hover:text-gray-50 sm:hidden'
       aria-label='Menu'
+      aria-expanded='false'
+      aria-controls='mobile-navigation'
       data-show-mobile-nav
     >
       <Icon icon='hamburger' />
@@ -65,7 +67,12 @@ import { UpgradeProButton } from '../TopNavDropdowns/UpgradeProButton';
 
     <!-- Mobile Navigation Items -->
     <div
+      id='mobile-navigation'
       class='fixed top-0 right-0 bottom-0 left-0 z-40 flex hidden items-center bg-slate-900'
+      aria-hidden='true'
+      aria-label='Main navigation'
+      aria-modal='true'
+      role='dialog'
       data-mobile-nav
     >
       <button

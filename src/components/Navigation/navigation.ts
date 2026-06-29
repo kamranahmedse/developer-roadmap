@@ -1,5 +1,22 @@
 import { logout } from '../../lib/auth';
 
+function setMobileNavState(isOpen: boolean) {
+  const mobileNav = document.querySelector('[data-mobile-nav]');
+  const mobileNavTrigger = document.querySelector('[data-show-mobile-nav]');
+  const closeButton = document.querySelector('[data-close-mobile-nav]');
+
+  mobileNav?.classList.toggle('hidden', !isOpen);
+  mobileNav?.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+  mobileNavTrigger?.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  document.body.classList.toggle('overflow-hidden', isOpen);
+
+  if (isOpen) {
+    (closeButton as HTMLButtonElement | null)?.focus();
+  } else {
+    (mobileNavTrigger as HTMLButtonElement | null)?.focus();
+  }
+}
+
 function bindEvents() {
   document.addEventListener('click', (e) => {
     const target = e.target as HTMLElement;
@@ -15,9 +32,9 @@ function bindEvents() {
       e.preventDefault();
       logout();
     } else if (dataset.showMobileNav !== undefined) {
-      document.querySelector('[data-mobile-nav]')?.classList.remove('hidden');
+      setMobileNavState(true);
     } else if (dataset.closeMobileNav !== undefined) {
-      document.querySelector('[data-mobile-nav]')?.classList.add('hidden');
+      setMobileNavState(false);
     } else if (
       accountDropdown &&
       !target?.closest('[data-account-dropdown]') &&
@@ -35,6 +52,19 @@ function bindEvents() {
         .querySelector('[data-account-dropdown]')
         ?.classList.toggle('hidden');
     });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') {
+      return;
+    }
+
+    const mobileNav = document.querySelector('[data-mobile-nav]');
+    if (!mobileNav || mobileNav.classList.contains('hidden')) {
+      return;
+    }
+
+    setMobileNavState(false);
+  });
 
   document
     .querySelector('[data-command-menu]')
