@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@pip Documentation](https://pip.pypa.io/en/stable/installation/)
 - [@article@Using Pythons pip to Manage Your Projects Dependencies](https://realpython.com/what-is-pip/)
-- [@feed@Explore top posts about PIP](https://app.daily.dev/tags/pip?ref=roadmapsh)

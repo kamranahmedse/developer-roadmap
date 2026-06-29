@@ -5,7 +5,6 @@ Pydantic is a Python library for data validation and settings management using P
 Visit the following resources to learn more:
 
 - [@official@Pydantic Documentation](https://docs.pydantic.dev/latest/)
-- [@official@FastAPI – Request Body with Pydantic](https://fastapi.tiangolo.com/tutorial/body/)
 - [@article@Pydantic: Simplifying Data Validation in Python – Real Python](https://realpython.com/python-pydantic/)
 - [@article@Pydantic V2 Migration Guide](https://docs.pydantic.dev/latest/migration/)
 - [@video@Pydantic Tutorial – Complete Python Data Validation (ArjanCodes)](https://www.youtube.com/watch?v=XIdQ6gO3Anc)

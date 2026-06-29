@@ -5,4 +5,3 @@ Frameworks automate the common implementation of common solutions which gives th
 Visit the following resources to learn more:
 
 - [@article@Pyscript: A Browser-Based Python Framework](https://thenewstack.io/pyscript-a-browser-based-python-framework/)
-- [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

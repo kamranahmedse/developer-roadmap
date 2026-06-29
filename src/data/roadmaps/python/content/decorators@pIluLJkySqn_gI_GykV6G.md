@@ -5,6 +5,5 @@ Decorator is a design pattern in Python that allows a user to add new functional
 Visit the following resources to learn more:
 
 - [@article@Learn Decorators in Python](https://pythonbasics.org/decorators/)
-- [@article@Python Decorators](https://www.datacamp.com/tutorial/decorators-python)
 - [@video@Decorators in Python](https://www.youtube.com/watch?v=FXUUSfJO_J4)
 - [@video@Python Decorators in 1 Minute](https://www.youtube.com/watch?v=BE-L7xu8pO4)

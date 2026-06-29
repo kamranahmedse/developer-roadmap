@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Concurrent Execution](https://docs.python.org/3/library/concurrency.html)
 - [@article@Python Concurrency](https://realpython.com/python-concurrency/)
+- [@article@Python Multithreading: The Most Practical Intro](https://roadmap.sh/python/multithreading)

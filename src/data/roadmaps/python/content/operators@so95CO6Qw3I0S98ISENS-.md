@@ -5,7 +5,6 @@ Operators are symbols or keywords that perform operations on values and variable
 Visit the following resources to learn more:
 
 - [@article@Python Operators](https://www.w3schools.com/python/python_operators.asp)
-- [@article@Python Operators with examples](https://www.programiz.com/python-programming/operators)
 - [@article@Python Division: Operators, Floor Division, and Examples](https://roadmap.sh/python/division)
 - [@article@Python Modulo Operator (%): Complete Guide with Examples](https://roadmap.sh/python/modulo)
 - [@article@Python not Operator: The Complete Guide to Logical Negation](https://roadmap.sh/python/not-operator)

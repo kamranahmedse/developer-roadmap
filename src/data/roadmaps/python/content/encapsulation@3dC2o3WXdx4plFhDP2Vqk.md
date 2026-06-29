@@ -5,6 +5,5 @@ Encapsulation is a way to bundle data (attributes) and the methods that operate 
 Visit the following resources to learn more:
 
 - [@article@Encapsulation in Python: All You Need to Know](https://roadmap.sh/python/encapsulation)
-- [@article@Encapsulation in Python: A Comprehensive Guide](https://www.datacamp.com/tutorial/encapsulation-in-python-object-oriented-programming)
 - [@article@Encapsulation](https://programming-25.mooc.fi/part-9/3-encapsulation)
 - [@video@Encapsulation - Advanced Python Tutorial #5](https://www.youtube.com/watch?v=dzmYoSzL8ok)

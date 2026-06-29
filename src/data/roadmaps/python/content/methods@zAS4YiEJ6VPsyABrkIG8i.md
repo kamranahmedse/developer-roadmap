@@ -1,11 +1,6 @@
-# Methods and Dunder
+# Methods and Dunder Methods
 
-A method in python is somewhat similar to a function, except it is associated with object/classes. Methods in python are very similar to functions except for two major differences.
-
-*   The method is implicitly used for an object for which it is called.
-*   The method is accessible to data that is contained within the class.
-
-Dunder or magic methods in Python are the methods that have two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading. Few examples for magic methods are: **`__init__`**, **`__add__`**, **`__len__`**, **`__repr__`** etc.
+Methods are functions defined within a class that describe the behaviors or actions an object can perform. Dunder methods, short for "double underscore" methods, are special built-in methods—such as `__init__` or `__str__`—that allow you to define how your objects interact with Python’s built-in operations and syntax. By implementing these methods, you can customize how objects are initialized, represented as strings, compared, or used with mathematical operators.
 
 Visit the following resources to learn more:
 

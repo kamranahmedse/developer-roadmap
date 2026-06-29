@@ -5,3 +5,4 @@ GIL is a mechanism that allows only one thread to execute Python code at a time.
 Visit the following resources to learn more:
 
 - [@article@What is GIL?](https://realpython.com/python-gil/)
+- [@article@Python Multithreading: The Most Practical Intro](https://roadmap.sh/python/multithreading)

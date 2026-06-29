@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@PyPI Website](https://pypi.org/)
 - [@article@How to Publish an Open-Source Python Package to PyPI](https://realpython.com/pypi-publish-python-package/)
 - [@video@Getting Started with Pip and PyPI in Python](https://www.youtube.com/watch?v=bPSfNKvhooA)
-- [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)
