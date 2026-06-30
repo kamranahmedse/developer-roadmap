@@ -5,6 +5,6 @@ Terraform is an open-source infrastructure as code tool that allows you to defin
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Terraform Roadmap](https://roadmap.sh/terraform)
-- [@course@Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4)
 - [@official@Terraform Documentation](https://www.terraform.io/docs)
-- [@official@Terraform Tutorials](https://learn.hashicorp.com/terraform)
+- [@course@Complete Terraform Course](https://www.youtube.com/watch?v=7xngnjfIlK4)
+- [@article@Terraform Backend: How it Works and How to Configure it](https://roadmap.sh/terraform/backend)
