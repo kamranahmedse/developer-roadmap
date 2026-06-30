@@ -77,7 +77,7 @@ Inline JavaScript lets you place your JavaScript code into an HTML element's att
 Using inline JavaScript is suitable for fast and easy tasks. But it can make your HTML code difficult to read, especially if you have a lot of JavaScript code.
 
 ```html
-<button onclick="console.log('A click occured')">
+<button onclick="console.log('A click occurred')">
       Sign up on roadmap.sh
 </button>
 ``` 
