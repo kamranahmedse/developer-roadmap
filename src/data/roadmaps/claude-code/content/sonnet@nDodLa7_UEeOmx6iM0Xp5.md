@@ -4,6 +4,6 @@ Claude Sonnet is a high-performance large language model that strikes an ideal b
 
 Visit the following resources to learn more:
 
-- [@official@Introducing Claude Sonnet 4.5 \ Anthropic](https://www.anthropic.com/news/claude-sonnet-4-5)
-- [@official@Claude Sonnet 4.5 \ Anthropic](https://www.anthropic.com/claude/sonnet)
+- [@official@Introducing Claude Sonnet 4.5 \\ Anthropic](https://www.anthropic.com/news/claude-sonnet-4-5)
+- [@official@Claude Sonnet 4.5 \\ Anthropic](https://www.anthropic.com/claude/sonnet)
 - [@video@Sonnet 4.5 is the best coding model in the world](https://www.youtube.com/watch?v=uZBjVeyiYkk)

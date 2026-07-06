@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Tools](https://code.claude.com/docs/en/how-claude-code-works#tools)
 - [@official@Tools available to Claude](https://code.claude.com/docs/en/settings#tools-available-to-claude)
-- [@official@Introducing advanced tool use on the Claude Developer Platform \ Anthropic](https://www.anthropic.com/engineering/advanced-tool-use)
+- [@official@Introducing advanced tool use on the Claude Developer Platform \\ Anthropic](https://www.anthropic.com/engineering/advanced-tool-use)
 - [@article@Claude Code Built-in Tools Reference | vtrivedy](https://www.vtrivedy.com/posts/claudecode-tools-reference/)
