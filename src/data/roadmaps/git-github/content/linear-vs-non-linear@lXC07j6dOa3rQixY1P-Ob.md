@@ -1,9 +1,6 @@
 # Linear vs Non-Linear
-
-In Git, linear and non-linear history refer to different ways of managing commit history.
-
-- Linear history: A repository with a linear history has commits that are applied in a single, sequential order.
-- Non-linear history: A repository with a non-linear history allows multiple branches or lines of development, which can be merged back into the main branch at different points.
+ 
+A linear history means commits follow a single, straight sequence with no branching or merging, often achieved through rebasing instead of merging. A non-linear history includes branches that diverge and later merge back together, creating a more complex graph of commits. Teams choose between the two based on whether they prioritize a simple, readable log or a history that reflects exactly how work happened in parallel.
 
 Visit the following resources to learn more:
 

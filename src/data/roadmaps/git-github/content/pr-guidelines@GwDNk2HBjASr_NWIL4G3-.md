@@ -1,6 +1,6 @@
 # PR Guidelines
-
-Pull Request (PR) guidelines are essential for maintaining a smooth and efficient code review process in collaborative development environments. These guidelines typically outline best practices for creating, formatting, and submitting PRs, ensuring that changes are well-documented, easy to review, and align with the project's standards. They may cover aspects such as PR size, commit message formatting, documentation requirements, and testing expectations. By establishing clear PR guidelines, teams can streamline their workflow, improve code quality, and facilitate effective communication among contributors.
+ 
+Pull request guidelines are the conventions a project sets for how contributions should be submitted, often documented in a `CONTRIBUTING.md` file. They typically cover expectations like keeping pull requests focused on a single change, writing a clear description, and linking related issues. Following these guidelines makes it easier for maintainers to review and merge contributions quickly.
 
 Visit the following resources to learn more:
 

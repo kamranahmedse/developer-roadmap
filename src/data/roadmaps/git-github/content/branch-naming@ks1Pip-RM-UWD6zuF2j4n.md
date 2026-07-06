@@ -1,6 +1,6 @@
 # Branch Naming
-
-A well-defined branch naming convention is essential for maintaining a clean and organized Git workflow. It's recommended to use descriptive and meaningful names that clearly indicate the purpose of each branch. For example, using prefixes like `feature/`, `fix/`, or `docs/` can help identify whether a branch is related to new feature development, bug fixes, or documentation updates. Additionally, including the issue or task ID (e.g., `issue/123`) can provide context and make it easier for team members to find relevant information. By following a consistent naming convention, you can improve collaboration, reduce confusion, and increase the overall efficiency of your Git workflow.
+ 
+Branch naming conventions give structure to how branches are labeled, often including a prefix like `feature/`, `bugfix/`, or `hotfix/` followed by a short description. Consistent naming makes it easy to identify a branch's purpose at a glance and helps automate workflows that trigger based on branch name patterns. Teams often document their convention in a contributing guide so everyone follows the same format.
 
 Visit the following resources to learn more:
 

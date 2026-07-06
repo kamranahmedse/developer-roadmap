@@ -1,6 +1,6 @@
 # GitHub Discussions
-
-GitHub Discussions is a collaborative communication feature within GitHub repositories that provides a dedicated space for community conversations, questions, and knowledge sharing. It allows team members, contributors, and users to engage in threaded discussions, share ideas, ask for help, and make announcements outside of specific code changes or issues. This feature enhances project collaboration by centralizing important conversations, reducing noise in the issue tracker, and fostering a sense of community around open-source projects or team initiatives.
+ 
+GitHub Discussions is a forum-style feature for conversations that don't fit the structure of an issue, such as general questions, ideas, or announcements. Unlike issues, discussions aren't meant to track specific tasks and can be organized into categories like Q&A or ideas. Maintainers often enable discussions to separate open-ended community conversation from actionable bug reports.
 
 Visit the following resources to learn more:
 

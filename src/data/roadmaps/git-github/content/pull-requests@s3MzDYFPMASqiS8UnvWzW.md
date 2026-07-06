@@ -1,11 +1,6 @@
 # Pull Requests
-
-You can use GitHub CLI to manage pull requests with the following commands:
-
-- `gh pr create`: Create a new pull request.
-- `gh pr merge`: Merge a pull request into the target branch.
-- `gh pr list`: List all pull requests for a repository.
-- `gh pr view`: View details of a specific pull request.
+ 
+GitHub CLI supports the full pull request workflow from the terminal, including creating one with `gh pr create`, reviewing changes with `gh pr diff`, and merging with `gh pr merge`. This lets developers open and manage pull requests without leaving their code editor or terminal session. It's especially useful for quickly checking pull request status during a coding session.
 
 Visit the following resources to learn more:
 

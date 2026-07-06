@@ -1,6 +1,6 @@
 # Git Worktree
-
-A Git worktree allows you to create multiple working directories for a single repository, each with its own checkout and index. Unlike a regular checkout, which creates a new working directory for a specific branch and updates your IDE's configuration settings, a Git worktree does not require you to switch between branches using git checkout. This means you can have multiple branches checked out at the same time without affecting each other or requiring changes to your IDE configurations. By creating a separate worktree for each branch, you can stage changes independently and maintain distinct working directories without impacting the main repository or its working directory.
+ 
+Git worktree allows multiple branches to be checked out simultaneously in separate directories, all linked to the same repository. Running `git worktree add <path> <branch>` creates a new working directory for a specific branch without needing to clone the repository again. This is useful when a developer needs to work on two branches at once, like testing a hotfix while a feature branch remains checked out elsewhere.
 
 Visit the following resources to learn more:
 

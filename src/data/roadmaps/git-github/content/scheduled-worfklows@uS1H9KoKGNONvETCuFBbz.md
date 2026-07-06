@@ -1,6 +1,6 @@
-# Scheduled Worfklows
-
-GitHub Actions allows you to schedule workflows to run at specific times or intervals. You can set up workflows to automatically run at predetermined times, such as daily or weekly.
+# Scheduled Workflows
+ 
+Scheduled workflows run automatically at specified times using cron syntax under the `schedule` trigger in a workflow file. This is useful for recurring tasks like nightly builds, periodic cleanup jobs, or fetching data on a regular interval. GitHub runs scheduled workflows based on UTC time, and there can be a slight delay depending on runner availability.
 
 Visit the following resources to learn more:
 

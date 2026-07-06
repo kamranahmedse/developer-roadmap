@@ -1,9 +1,6 @@
 # Secrets and Env Vars
-
-GitHub provides features to securely store and manage sensitive data, such as secrets and environment variables.
-
-- Secrets: These are sensitive values that should not be committed to a repository, like API keys or database credentials.
-- Environment Variables: They can be used to set values for your workflow or application, making it easier to manage dependencies.
+ 
+Secrets store sensitive values like API keys or passwords securely, configured in a repository's settings and referenced in workflows without exposing their actual values in logs. Environment variables, defined with the `env` key, hold configuration values that steps in a workflow can access during execution. Both are commonly used together, keeping sensitive data out of the workflow file itself while still making it available where needed.
 
 Visit the following resources to learn more:
 

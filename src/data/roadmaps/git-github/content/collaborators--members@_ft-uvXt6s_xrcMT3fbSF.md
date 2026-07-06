@@ -4,5 +4,5 @@ In GitHub, collaborators and members refer to individuals who contribute to or h
 
 Visit the following resources to learn more:
 
-- [@article@Inviting collaborators to a personal repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 - [@official@REST API endpoints for collaborators](https://docs.github.com/en/rest/collaborators/collaborators?apiVersion=2022-11-28)
+- [@article@Inviting collaborators to a personal repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)

@@ -1,8 +1,6 @@
 # Installation and Setup
-
-The GitHub CLI can be installed on Windows, macOS, and Linux operating systems. Installation options include downloading binaries directly from the release page or using package managers (such as homebrew, pip, etc).
-
-Once installed, setting up the GitHub CLI typically involves authenticating with your GitHub account by running `gh auth login` in your terminal. This step is essential for linking your GitHub credentials to the CLI, allowing you to interact with your repositories and perform various actions.
+ 
+Installing GitHub CLI involves downloading the `gh` tool through a package manager like Homebrew, apt, or winget, depending on the operating system. After installation, running `gh auth login` connects the tool to a GitHub account through browser or token-based authentication. Once authenticated, `gh` commands can be run from any repository to interact with GitHub directly.
 
 Visit the following resources to learn more:
 

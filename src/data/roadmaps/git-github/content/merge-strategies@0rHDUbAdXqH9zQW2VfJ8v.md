@@ -1,12 +1,6 @@
 # Merge Strategies
-
-When combining changes from one branch into another, Git provides various merge strategies to choose from. These methods allow for flexibility and customization in integrating code updates into your main branch. The available options include:
-
-- Fast Forward (FF)
-- Non-Fast Forward
-- Rebase
-- Squash
-- Cherry Picking
+ 
+Merge strategies are the different approaches Git offers for combining changes from one branch into another. Options include a standard merge that preserves full history, a squash merge that condenses all commits into one, and a rebase that replays commits on top of another branch. Choosing a strategy affects how clean or detailed the resulting commit history looks.
 
 Visit the following resources to learn more:
 

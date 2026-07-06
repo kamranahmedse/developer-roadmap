@@ -1,6 +1,6 @@
 # Fetch without Merge
-
-Running `git fetch` retrieves changes from a remote repository into your local clone, but does not automatically merge any of these changes into your local working directory. This is different from `git pull`, which both fetches and merges remote changes. By using fetch without merge, you can ensure that your local clone is up-to-date with the latest information from the remote repository, while leaving your working directory unchanged. You can then choose to apply these changes by using merge or rebase. This approach helps maintain a clean and consistent local state, making it easier to manage and commit changes.
+ 
+`git fetch` downloads new commits, branches, and tags from a remote repository without merging them into the local branch. It updates the remote-tracking branches, like `origin/main`, so the developer can inspect incoming changes before deciding to merge or rebase them. This makes fetch a safer way to check for updates compared to `git pull`, which fetches and merges in one step.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Project Planning
-
-Project planning on GitHub is a comprehensive process that leverages the platform's built-in tools to organize, track, and manage software development projects efficiently. It typically involves using features such as Issues for task tracking, Projects for kanban-style boards, Milestones for grouping related issues and pull requests, and Labels for categorization. These tools, combined with GitHub's collaborative features like pull requests and code reviews, enable teams to create structured workflows, set priorities, assign tasks, and monitor progress throughout the development lifecycle. By centralizing project management within the same platform used for version control, GitHub streamlines communication and enhances productivity for development teams of all sizes.
+ 
+Project planning in GitHub Projects involves setting up boards, defining custom fields, and organizing tasks into a workflow that reflects how a team operates. This can include setting milestones, prioritizing issues, and assigning work to specific people or iterations. Planning ahead of time in a project board helps teams track progress and spot bottlenecks before deadlines.
 
 Visit the following resources to learn more:
 

@@ -5,5 +5,5 @@ Git Bisect is an interactive tool used to identify which commit in your project'
 Visit the following resources to learn more:
 
 - [@official@Git Bisect](https://git-scm.com/docs/git-bisect)
-- [@article@Using `git bisect` to find the faulty commit](https://dev.to/alvesjessica/using-git-bisect-to-find-the-faulty-commit-25gf)
+- [@article@Using git bisect to find the faulty commit](https://dev.to/alvesjessica/using-git-bisect-to-find-the-faulty-commit-25gf)
 - [@video@Git Bisect | How to use Git Bisect | Learn Git](https://www.youtube.com/watch?v=z-AkSXDqodc)

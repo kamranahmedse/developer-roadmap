@@ -1,12 +1,6 @@
 # Installing Git Locally
-
-To use Git on your local machine, you need to install it first. The installation process varies depending on your operating system:
-
-- On Windows: Download the binary from the official Git or GitHub release page and follow the installation instructions.
-- On macOS (using Homebrew): Run `brew install git` in your terminal.
-- On Linux: Run `sudo apt-get install git` or `sudo yum install git` depending on your distribution.
-
-Once installed, you can verify the Git version by running `git --version` in your terminal. This will display the currently installed Git version.
+ 
+Installing Git locally means setting up the Git command-line tool on a personal machine so it can track and manage code changes. The installation process differs by operating system: Windows users typically download an installer from the official Git website, macOS users can install it through Homebrew or Xcode command line tools, and Linux users install it through their package manager. Once installed, running `git --version` in a terminal confirms the setup worked.
 
 Visit the following resources to learn more:
 

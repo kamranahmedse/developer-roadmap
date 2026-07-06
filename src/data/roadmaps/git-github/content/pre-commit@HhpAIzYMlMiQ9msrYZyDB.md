@@ -1,8 +1,8 @@
 # pre-commit
-
-Git pre-commit hooks are scripts that run automatically before a commit is created, allowing developers to enforce code quality standards and catch issues early in the development process. These hooks can perform tasks such as linting, formatting, running tests, or checking for sensitive information, ensuring that only clean and compliant code is committed to the repository. By intercepting the commit process, pre-commit hooks help maintain code consistency, reduce errors, and streamline the overall development workflow, making them a valuable tool for enforcing best practices and improving code quality across a project.
+ 
+The `pre-commit` hook runs before a commit is finalized, giving a chance to inspect the staged changes and abort the commit if something is wrong. It's frequently used to run linters, formatters, or tests against the code being committed. If the hook script exits with a non-zero status, the commit is stopped.
 
 Visit the following resources to learn more:
 
-- [@opensource@pre-commit/pre-commit](https://github.com/pre-commit/pre-commit)
 - [@official@Git Hooks](https://www.atlassian.com/git/tutorials/git-hooks)
+- [@opensource@pre-commit/pre-commit](https://github.com/pre-commit/pre-commit)

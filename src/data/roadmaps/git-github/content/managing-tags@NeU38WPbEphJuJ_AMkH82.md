@@ -1,12 +1,6 @@
 # Managing Tags
-
-In Git, a tag is a named reference to a specific commit in the project's history.
-
-- Creating tags: Use `git tag [name] [commit-hash]` to create a new tag. You can also use `git tag -a [name] -m "[message]" [commit-hash]` for annotated tags.
-- Listing tags: Run `git tag` to display all existing tags.
-- Deleting tags: Remove an existing tag with `git tag -d [tag-name]`.
-
-Tags can be used for marking releases, milestones, or other significant events in a project's history.
+ 
+Managing tags involves creating, listing, and deleting tags within a repository. The command `git tag <name>` creates a lightweight tag, while `git tag -a <name> -m "message"` creates an annotated one with extra details. Running `git tag` alone lists existing tags, and `git tag -d <name>` deletes one locally.
 
 Visit the following resources to learn more:
 

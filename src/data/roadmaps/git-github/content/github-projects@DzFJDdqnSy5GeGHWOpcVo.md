@@ -1,6 +1,6 @@
 # GitHub Projects
-
-GitHub Projects is a flexible project management tool integrated directly into GitHub repositories. It allows teams to create customizable project boards, track issues and pull requests, and manage workflows using Kanban-style columns or table views. With features like automated workflows, custom fields, and various visualization options, GitHub Projects helps teams organize, prioritize, and track work across multiple repositories. This tool enhances collaboration, increases transparency, and streamlines project management processes, making it easier for developers and stakeholders to stay aligned on project goals and progress.
+ 
+GitHub Projects is a built-in project management tool that lets teams organize issues and pull requests into boards, tables, or timelines. It supports custom fields, automation rules, and different views to track work across one or multiple repositories. Teams use it to plan sprints, track progress, and visualize the status of ongoing work without leaving GitHub.
 
 Visit the following resources to learn more:
 

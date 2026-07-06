@@ -1,6 +1,6 @@
 # GitHub Packages
-
-GitHub Packages is a package repository service that allows developers to store and share packages, containers, and other software artifacts. It provides a central location for sharing packages with teams, organizations, or the wider developer community. GitHub Packages supports popular package managers like npm, Maven, and Gradle, as well as container registries like Docker Hub. This feature enables seamless integration of packages into development workflows, making it easier to share dependencies, libraries, and frameworks within and across projects. By using GitHub Packages, developers can simplify dependency management, reduce errors, and improve overall collaboration.
+ 
+GitHub Packages is a package hosting service that lets developers publish and manage packages, like npm, Docker, or Maven artifacts, directly within GitHub. It integrates with existing repository permissions, so access to a package can follow the same rules as the repository it's tied to. Teams use it to keep both their code and its published packages within the same platform and permission system.
 
 Visit the following resources to learn more:
 

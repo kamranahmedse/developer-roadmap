@@ -1,6 +1,6 @@
 # GitHub Sponsors
-
-A GitHub Sponsor is a way to support and fund open-source projects on GitHub. It allows maintainers of public repositories to receive financial support from users who value their work. Sponsors can contribute funds to help with expenses, development time, or other project-related costs. In return, sponsors are recognized as supporters in the repository's README file and on the project's website. This feature promotes transparency, accountability, and appreciation within open-source communities, making it easier for maintainers to focus on their projects.
+ 
+GitHub Sponsors lets developers and organizations receive financial support directly from users who want to fund their open source work. Sponsors can choose a one-time or recurring monthly contribution, and maintainers can offer different sponsorship tiers with specific perks. This gives open source maintainers a way to earn income for their work directly through the platform.
 
 Visit the following resources to learn more:
 

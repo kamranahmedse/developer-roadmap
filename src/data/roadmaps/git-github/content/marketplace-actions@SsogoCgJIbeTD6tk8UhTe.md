@@ -1,12 +1,6 @@
 # Marketplace Actions
-
-The GitHub Marketplace offers a wide range of pre-built actions that can be used to automate tasks and workflows within your repository.
-
-- Automate tasks: Use marketplace actions to automate tasks such as testing, deployment, or security.
-- Customize workflows: Create custom workflows using marketplace actions to tailor the build process to specific needs.
-- Streamline development: By automating repetitive tasks, developers can focus on code quality and collaboration.
-
-These actions are created by the GitHub community and can be easily added to your workflow to enhance productivity and efficiency.
+ 
+Marketplace Actions are pre-built, reusable workflow steps published by GitHub and the community that can be added to any workflow. Instead of writing custom scripts for common tasks like checking out code or setting up a programming language, a workflow can reference an action like `actions/checkout` or `actions/setup-node`. Using marketplace actions saves time and lets workflows benefit from tools maintained and tested by others.
 
 Visit the following resources to learn more:
 

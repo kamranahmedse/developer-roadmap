@@ -5,6 +5,6 @@ Ignored files are tracked in a special file named `.gitignore` that is checked i
 Visit the following resources to learn more:
 
 - [@official@gitignore Documentation](https://git-scm.com/docs/gitignore)
+- [@opensource@gitignore - A collection of useful .gitignore templates](https://github.com/github/gitignore)
 - [@article@.gitignore file - ignoring files in Git | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
 - [@article@Ignoring files - GitHub Docs](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
-- [@opensource@gitignore - A collection of useful .gitignore templates](https://github.com/github/gitignore)

@@ -1,12 +1,6 @@
 # Caching Dependencies
-
-GitHub Actions provides a caching feature that allows you to store and reuse dependencies between workflows, reducing the time it takes to run your actions. By caching dependencies, you can:
-
-- Reuse compiled code
-- Store database connections
-- Reduce network traffic
-
-It is highly recommended to not store any sensitive information in the cache. For example, sensitive information can include access tokens or login credentials stored in a file in the cache path.
+ 
+Caching dependencies in GitHub Actions stores files like package manager directories between workflow runs, avoiding the need to reinstall them from scratch every time. The `actions/cache` action saves and restores these files based on a key, often derived from a lockfile's hash. This significantly speeds up workflows that install the same dependencies repeatedly across multiple runs.
 
 Visit the following resources to learn more:
 

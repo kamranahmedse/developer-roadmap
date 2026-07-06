@@ -4,5 +4,6 @@ The GitHub GraphQL API is a set of APIs that provides access to various GitHub f
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit the Dedicated GraphQL Roadmap](https://roadmap.sh/graphql)
 - [@official@GitHub GraphQL API documentation](https://docs.github.com/en/graphql)
 - [@official@Forming calls with GraphQL](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql)

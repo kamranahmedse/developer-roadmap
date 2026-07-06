@@ -1,6 +1,6 @@
 # pre-push
-
-Git pre-push hooks are scripts that run automatically before a push operation is executed, providing a final checkpoint to validate changes before they are shared with a remote repository. These hooks allow developers to perform last-minute checks, such as running tests, linting code, or verifying commit messages, to ensure that only high-quality and compliant code is pushed. By intercepting the push process, pre-push hooks help maintain code integrity, prevent accidental pushes of incomplete or broken code, and enforce project-specific rules, making them a valuable tool for maintaining code quality and consistency across distributed development teams.
+ 
+The `pre-push` hook runs before commits are pushed to a remote repository, allowing checks to run on the commits about to be shared. It's often used to run a test suite or verify that the branch is up to date before allowing the push to proceed. If the script exits with a non-zero status, the push is cancelled.
 
 Visit the following resources to learn more:
 

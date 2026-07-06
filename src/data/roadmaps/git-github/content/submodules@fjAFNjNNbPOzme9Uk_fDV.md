@@ -1,9 +1,6 @@
 # Submodules
-
-In Git, submodules allow you to include another repository within a project. This feature enables the management of external dependencies as part of the main project.
-
-- Including external repositories: Submodules can be used to include other Git repositories within your project.
-- Managing dependencies: They provide a way to manage and track changes in external dependencies.
+ 
+A submodule is a Git repository embedded inside another repository as a subdirectory, keeping its own separate history. It allows a project to include and track a specific version of another project without merging their codebases together. Submodules are commonly used for shared libraries or dependencies that are maintained in their own repository.
 
 Visit the following resources to learn more:
 

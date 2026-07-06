@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@GitHub REST API documentation](https://docs.github.com/en/rest?apiVersion=2022-11-28)
 - [@official@Quickstart for GitHub REST API](https://docs.github.com/en/rest/quickstart?apiVersion=2022-11-28)
-- [@video@[Tutorial] - How to use GitHub REST API for Beginners](https://www.youtube.com/watch?v=OvfLavRD1Os)
+- [@video@\[Tutorial\] - How to use GitHub REST API for Beginners](https://www.youtube.com/watch?v=OvfLavRD1Os)

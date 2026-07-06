@@ -1,6 +1,6 @@
 # PR from a Fork
-
-Creating a pull request from a fork on GitHub is a common workflow for contributing to open-source projects or collaborating on repositories you don't have direct write access to. After forking the original repository to your GitHub account, you can make changes in your fork, commit them, and then create a pull request to propose these changes to the original repository. This process allows project maintainers to review your contributions, discuss any necessary modifications, and ultimately merge your changes into the main project if they're approved. It's an essential feature that facilitates collaboration and code review in distributed development environments.
+ 
+A pull request from a fork lets a contributor propose changes to a repository they don't have write access to. The contributor forks the repository, makes changes on their own copy, and opens a pull request comparing their fork's branch against the original repository. This workflow is the standard way open source contributions happen, since it doesn't require granting outside contributors direct write access.
 
 Visit the following resources to learn more:
 

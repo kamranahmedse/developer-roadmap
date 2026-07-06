@@ -4,6 +4,6 @@ The `git init` command creates a new Git repository. It can be used to convert a
 
 Visit the following resources to learn more:
 
+- [@course@Creating Repository (Interactive Lesson)](https://inter-git.com/lessons/creating-repository)
 - [@official@Git - git-init Documentation](https://git-scm.com/docs/git-init)
 - [@article@git init | Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-init#:~:text=The%20git%20init%20command%20creates,run%20in%20a%20new%20project.)
-- [@course@Creating Repository (Interactive Lesson)](https://inter-git.com/lessons/creating-repository)

@@ -1,12 +1,10 @@
 # GitHub Actions
-
-GitHub Actions is a very useful tool for automation, allowing developers to automate tasks within the software development lifecycle directly on GitHub.
-
-One of the best ways to learn about GitHub Actions is through the course offered by Microsoft Learn. This course is well-structured and provides practical examples that are concise and easy to understand.
+ 
+GitHub Actions is a CI/CD platform built into GitHub that automates tasks like testing, building, and deploying code in response to repository events. Workflows are defined in YAML files stored in the `.github/workflows` directory and can run on GitHub-hosted or self-hosted runners. It's widely used to automate everything from running test suites on every pull request to deploying applications after a merge.
 
 Visit the following resources to learn more:
 
-- [@official@GitHub Actions](https://docs.github.com/en/actions)
 - [@course@Microsoft Learn: Introduction to GitHub Actions](https://learn.microsoft.com/en-us/collections/n5p4a5z7keznp5)
 - [@course@YouTube: GitHub Actions Playlist](https://www.youtube.com/watch?v=-hVG9z0fCac&list=PLArH6NjfKsUhvGHrpag7SuPumMzQRhUKY&pp=iAQB)
+- [@official@GitHub Actions](https://docs.github.com/en/actions)
 - [@video@What are GitHub Actions](https://www.youtube.com/watch?v=URmeTqglS58)

@@ -1,6 +1,6 @@
 # Custom Domains
 
-On GitHub Pages, users can customize their site's URL by connecting a custom domain to their repository. This feature allows users to use their own domain name instead of the default GitHub.io subdomain, giving their site a more professional and personalized look.
+On GitHub Pages, users can customize their site's URL by connecting a custom domain to their repository. This feature allows users to use their own domain name instead of the default [GitHub.io](http://GitHub.io) subdomain, giving their site a more professional and personalized look.
 
 Visit the following resources to learn more:
 

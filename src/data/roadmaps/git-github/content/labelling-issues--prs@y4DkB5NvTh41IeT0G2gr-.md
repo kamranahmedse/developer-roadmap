@@ -1,13 +1,6 @@
 # Labelling Issues / PRs
-
-On GitHub, labels are a way to categorize issues and pull requests (PRs) by topic, priority, or other criteria. Some common labels used are:
-
-- `Bug`
-- `Duplicate`
-- `Enhancement`
-- `Feature request`
-- `High priority`
-- `Needs feedback`
+ 
+Labels are colored tags applied to issues and pull requests to categorize them by type, priority, or status. Common examples include "bug," "enhancement," or "help wanted," and repositories can define custom labels to match their workflow. Labels make it easier to filter and search through large numbers of issues or pull requests at a glance.
 
 Visit the following resources to learn more:
 

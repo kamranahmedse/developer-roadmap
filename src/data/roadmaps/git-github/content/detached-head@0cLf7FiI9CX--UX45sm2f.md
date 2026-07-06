@@ -1,6 +1,6 @@
 # Detached HEAD
-
-In Git, a detached head occurs when you check out a commit directly using its hash instead of a branch name. This leaves your repository's HEAD pointer pointing directly at that commit, rather than being linked to a specific branch. To view the history and changes made in a detached head, use `git log` or `git show`. If you want to see the differences between the current detached head and another branch, use `git diff <branch>`. A detached head can be a useful temporary state for exploring specific commits or features, but it's essential to merge those changes back into a branch before sharing them with others.
+ 
+A detached HEAD state occurs when HEAD points directly to a specific commit instead of a branch, typically after checking out a commit hash or tag. Any new commits made in this state aren't attached to a branch, so they can be lost once another branch is checked out unless a new branch is created to save them. This state is often used to inspect old commits without affecting the current branch.
 
 Visit the following resources to learn more:
 

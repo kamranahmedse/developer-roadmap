@@ -1,8 +1,6 @@
 # git config
-
-The `git config` command is a convenience function that is used to set Git configuration values on a global or local project level. These configuration levels correspond to .gitconfig text files. Executing `git config` will modify a configuration text file.
-
-The most basic use case for `git config` is to invoke it with a configuration name, which will display the set value at that name. Configuration names are dot delimited strings composed of a 'section' and a 'key' based on their hierarchy. For example: `user.email`
+ 
+`git config` sets configuration values that control how Git behaves, such as the user's name, email, and default editor. These settings can apply at different levels: system-wide, per user, or per repository. Git attaches this information to every commit, which is why setting a name and email is one of the first steps after installing Git.
 
 Visit the following resources to learn more:
 

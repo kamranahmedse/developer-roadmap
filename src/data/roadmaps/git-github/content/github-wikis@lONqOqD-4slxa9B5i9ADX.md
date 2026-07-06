@@ -1,6 +1,6 @@
 # GitHub Wikis
-
-GitHub Wikis are collaborative documentation spaces integrated directly into GitHub repositories. They provide a platform for teams to create, edit, and organize project-related information, such as documentation, guidelines, and FAQs. Wikis support Markdown formatting, making it easy to structure content and include images or links. With version control and the ability to clone wiki repositories, teams can collaboratively maintain up-to-date documentation alongside their code, enhancing project understanding and facilitating knowledge sharing among contributors and users.
+ 
+A GitHub wiki is a separate space attached to a repository for writing longer-form documentation, tutorials, or notes that don't belong in the main README. Wikis support Markdown and have their own version history, similar to the main repository. They're often used for detailed guides, FAQs, or design documents that would otherwise clutter the codebase.
 
 Visit the following resources to learn more:
 

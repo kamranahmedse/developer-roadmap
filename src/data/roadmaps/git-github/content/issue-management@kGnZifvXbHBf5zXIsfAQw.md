@@ -1,12 +1,6 @@
 # Issue Management
-
-The GitHub CLI provides a range of features for managing issues within your repository. Here are some key actions you can perform:
-
-- Listing issues: Run `gh issue list` to view a list of all open and closed issues.
-- Creating issues: Use `gh issue create --title "Issue Title" --body "Issue body"` to create a new issue with the specified title and body.
-- Assigning issues: Run `gh issue assign <issue-number> <username>` to assign an issue to a specific user.
-- Labelling issues: Use `gh issue label <issue-number> <label-name>` to add a label to an existing issue.
-- Closing issues: Run `gh issue close <issue-number>` to mark an issue as closed.
+ 
+GitHub CLI allows creating, listing, and closing issues directly from the terminal using commands like `gh issue create` and `gh issue list`. Filters can narrow results by label, assignee, or state, similar to searching issues on the website. This makes it possible to triage or manage issues without switching to a browser.
 
 Visit the following resources to learn more:
 

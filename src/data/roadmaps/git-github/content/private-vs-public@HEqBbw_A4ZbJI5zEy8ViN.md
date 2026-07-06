@@ -1,6 +1,6 @@
 # Private vs Public
-
-GitHub offers both private and public repositories, each serving different purposes in software development. Public repositories are visible to everyone on the internet, making them ideal for open-source projects, collaboration, and showcasing work to a wider audience. They encourage community contributions and can help developers build their portfolios. Private repositories, on the other hand, are only accessible to the repository owner and designated collaborators. These are suitable for proprietary code, sensitive projects, or work that's not ready for public consumption. Private repositories offer greater control over access and visibility, making them essential for businesses and individuals who need to keep their code confidential.
+ 
+A public repository is visible to anyone on GitHub and can be cloned or viewed by other users, while a private repository restricts access to the owner and any collaborators explicitly invited. Public repositories are common for open source projects that want community contributions, while private repositories suit proprietary code or work in progress. Repository visibility can be changed later in the settings, though switching a private repo to public exposes its entire history.
 
 Visit the following resources to learn more:
 

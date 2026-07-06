@@ -1,6 +1,6 @@
 # GitHub CLI
-
-GitHub CLI is a command-line interface tool that brings GitHub functionality to your terminal. It allows developers to interact with GitHub directly from the command line, enabling them to manage repositories, create issues, pull requests, and perform various GitHub operations without leaving their terminal environment. This powerful tool streamlines workflows, enhances productivity, and provides a seamless integration between local development and GitHub's collaborative features, making it easier for developers to incorporate GitHub into their daily coding routines.
+ 
+GitHub CLI, or `gh`, is a command-line tool that lets developers interact with GitHub directly from the terminal instead of the web interface. It supports common tasks like creating repositories, managing issues, and opening pull requests without switching context. Being scriptable also makes it useful for automating GitHub-related tasks in scripts or CI pipelines.
 
 Visit the following resources to learn more:
 

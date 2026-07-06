@@ -1,11 +1,6 @@
 # Repository management
-
-Using GitHub CLI for repository management allows you to streamline tasks and work more efficiently. ou can use GitHub CLI to manage repositories with the following commands:
-
-- `gh repo create`: Create a new repository.
-- `gh repo delete`: Delete an existing repository.
-- `gh repo visibility`: Change the repository's visibility (public or private).
-- `gh repo topic`: Manage topic labels for a repository.
+ 
+GitHub CLI supports repository management commands like `gh repo create`, `gh repo clone`, and `gh repo view`, letting developers manage repositories without leaving the terminal. These commands mirror actions normally done through the GitHub website, such as creating a new repo or checking its details. This is especially useful for developers who prefer staying in the command line during their workflow.
 
 Visit the following resources to learn more:
 

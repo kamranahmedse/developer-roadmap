@@ -1,23 +1,8 @@
 # Use in Automation
+ 
+GitHub CLI can be used inside scripts or CI/CD pipelines to automate tasks like creating releases, commenting on issues, or triggering workflows. Because it supports authentication via tokens, it can run in non-interactive environments without manual login. This makes it a common tool for building custom automation around GitHub's platform without relying on the REST API directly.
 
-GitHub CLI is a powerful tool for automating GitHub-related tasks directly from the command line. It enables developers to streamline workflows and integrate GitHub processes into scripts and automated systems.
-
-Key uses in automation:
-
-1. CI/CD: Automate PR creation, review, merging, and release management
-2. Issue and Project Management: Create, update, and close issues; manage project boards
-3. Repository Management: Clone repos, create forks, manage settings and collaborators
-4. GitHub Actions Integration: Trigger and monitor workflows, manage secrets
-5. Scripting and Batch Operations: Perform bulk actions across multiple repositories
-
-To use GitHub CLI in automation:
-
-1. Install GitHub CLI
-2. Authenticate with your GitHub account
-3. Learn basic commands and syntax
-4. Integrate CLI commands into scripts or automation tools
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@GitHub CLI documentation](https://cli.github.com/manual/)
 - [@article@Automating your workflow with GitHub CLI](https://github.blog/2021-03-11-scripting-with-github-cli/)

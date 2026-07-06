@@ -1,12 +1,6 @@
 # git filter-branch
-
-You can use `git filter-branch` to rewrite Git revision history by applying custom filters on each revision.
-
-- Filter types: You can modify trees (e.g., removing a file or running a Perl script) or information about each commit.
-- Preserving original data: The command preserves all original commit times, merge information, and other details unless specified otherwise.
-- Rewriting specific branches: Only the positive refs mentioned in the command line are rewritten; if no filters are specified, commits are recommitted without changes.
-
-Notably, there exists a simpler, safer, and more powerful alternative: `git filter-repo`. This tool is actively promoted by Git and offers a streamlined approach to filtering revisions, making it a preferred choice for rewriting your Git history, especially when managing large repositories.
+ 
+`git filter-branch` rewrites a large portion of a repository's history, often used to remove sensitive files or restructure the project after the fact. It applies a filter across many or all commits, such as deleting a specific file from every point in history. Because it's slow and error-prone, Git's documentation now recommends the `git filter-repo` tool as a faster, safer alternative for the same kind of history rewriting.
 
 Visit the following resources to learn more:
 

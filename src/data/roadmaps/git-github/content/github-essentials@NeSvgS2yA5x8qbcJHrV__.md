@@ -1,6 +1,6 @@
 # GitHub Essentials
-
-GitHub Essentials refers to the core features and functionalities that form the foundation of GitHub's version control and collaboration platform. These essentials include repositories for storing and managing code, branches for parallel development, pull requests for code review and merging, issues for tracking tasks and bugs, and collaborative tools like project boards and wikis. Understanding and mastering these fundamental components allows developers to effectively manage their projects, collaborate with team members, and contribute to open-source initiatives, making GitHub an indispensable tool in modern software development workflows.
+ 
+GitHub Essentials covers the core features needed to start using GitHub as a collaboration platform on top of Git. This includes creating an account, understanding the interface, setting up a profile, and creating repositories. These basics form the starting point for hosting projects online and working with other developers.
 
 Visit the following resources to learn more:
 
