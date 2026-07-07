@@ -4,6 +4,5 @@ Labels and inputs are fundamental building blocks for creating forms in HTML. La
 
 Visit the following resources to learn more:
 
-- [@article@<label>: The Label element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label)
-- [@article@<input>: The HTML Input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input)
+- [@article@: The HTML Input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input)
 - [@article@HTML Inputs and Labels: A Love Story](https://css-tricks.com/html-inputs-and-labels-a-love-story/)

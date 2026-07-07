@@ -4,5 +4,5 @@ The `<hr>` tag in HTML creates a thematic break in an HTML page and is most ofte
 
 Visit the following resources to learn more:
 
-- [@article@<hr>: The Thematic Break (Horizontal Rule) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr)
+- [@article@: The Thematic Break (Horizontal Rule) element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr)
 - [@video@hr & br tags in HTML](https://www.youtube.com/watch?v=B1UCE3nfLww)

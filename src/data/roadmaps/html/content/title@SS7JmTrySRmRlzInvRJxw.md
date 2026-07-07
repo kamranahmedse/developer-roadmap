@@ -4,5 +4,4 @@ The `<title>` tag in HTML defines the title of the HTML document. This title is 
 
 Visit the following resources to learn more:
 
-- [@article@<title>: The Document Title element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title)
 - [@video@HTML Title Tag Example | Step-by-Step Instructions and Real-World Example!](https://www.youtube.com/watch?v=LaSOIf6dnzo)

@@ -4,5 +4,5 @@ Comments in HTML are notes that you can add to your code to explain what's going
 
 Visit the following resources to learn more:
 
-- [@article@Using HTML comments <!-- … -->](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Comments)
+- [@article@Using HTML comments ](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Comments)
 - [@video@HTML - Comments - W3Schools.com](https://www.youtube.com/watch?v=229HYq40vaA)

@@ -4,5 +4,5 @@ The `<html>` element is the root element of an HTML page. It tells the browser t
 
 Visit the following resources to learn more:
 
-- [@article@<html>: The HTML Document / Root element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/html)
-- [@article@HTML <html> Tag](https://www.w3schools.com/tags/tag_html.asp)
+- [@article@The HTML Document / Root element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/html)
+- [@article@HTML Tag](https://www.w3schools.com/tags/tag_html.asp)

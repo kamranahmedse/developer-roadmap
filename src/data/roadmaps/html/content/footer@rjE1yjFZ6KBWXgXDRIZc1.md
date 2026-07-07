@@ -4,5 +4,4 @@ The `<footer>` element in HTML represents a container for introductory content o
 
 Visit the following resources to learn more:
 
-- [@article@<footer>: The Footer element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer)
 - [@video@Learn HTML headers & footers in 5 minutes! 🤯](https://www.youtube.com/watch?v=JNFdCgmMkPk)

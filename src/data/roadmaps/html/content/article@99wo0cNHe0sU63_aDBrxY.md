@@ -4,5 +4,4 @@ The `<article>` element in HTML represents a self-contained composition in a doc
 
 Visit the following resources to learn more:
 
-- [@article@<article>: The Article Contents element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/article)
 - [@video@HTML article Tag Tutorial (Semantic Element): Easy Guide for Beginners](https://www.youtube.com/watch?v=C7Sp70_TU40)

@@ -4,4 +4,4 @@ The `<body>` tag in HTML defines the main content of an HTML document. It contai
 
 Visit the following resources to learn more:
 
-- [@article@<body>: The Document Body element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/body)
+- [@official@body HTML Document Body element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/body)

@@ -4,5 +4,4 @@ The `<address>` element in HTML represents contact information for the author or
 
 Visit the following resources to learn more:
 
-- [@article@<address>: The Contact Address element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/address)
 - [@video@How do you display addresses in HTML?](https://www.youtube.com/watch?v=P1OCt7x5zSA)

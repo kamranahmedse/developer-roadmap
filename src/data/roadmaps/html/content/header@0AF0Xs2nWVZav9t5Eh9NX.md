@@ -4,5 +4,4 @@ The `<header>` element represents introductory content, typically containing a g
 
 Visit the following resources to learn more:
 
-- [@article@<header>: The Header element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header)
 - [@video@Learn HTML headers & footers in 5 minutes!](https://www.youtube.com/watch?v=JNFdCgmMkPk)

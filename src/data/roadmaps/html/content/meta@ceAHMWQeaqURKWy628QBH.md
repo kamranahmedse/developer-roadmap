@@ -4,6 +4,6 @@ Meta tags are HTML elements that provide metadata about a webpage. This data is 
 
 Visit the following resources to learn more:
 
-- [@article@<meta>: The metadata element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta)
+- [@article@meta: The metadata element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta)
 - [@article@Meta elements | Wikipedia](https://en.wikipedia.org/wiki/Meta_element)
 - [@video@Learn HTML meta tags in 3 minutes](https://www.youtube.com/watch?v=bi5bfH_gVWE)

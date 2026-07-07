@@ -4,5 +4,4 @@ The `<ins>` element in HTML represents text that has been inserted into a docume
 
 Visit the following resources to learn more:
 
-- [@article@<ins>: The Inserted Text element -](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ins)
 - [@video@Inserted Text in HTML (ins Tag)](https://www.youtube.com/watch?v=fKWiyfOUs9M)

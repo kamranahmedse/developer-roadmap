@@ -4,7 +4,6 @@ The HTML `<table>` tag is used to create tables on web pages. It organizes data 
 
 Visit the following resources to learn more:
 
-- [@article@<table>: The Table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table)
 - [@article@HTML table basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_table_basics)
 - [@article@HTML Table (With Examples)](https://www.programiz.com/html/table)
 - [@video@How to Create Tables in HTML](https://www.youtube.com/watch?v=e23RA_Uo99o)

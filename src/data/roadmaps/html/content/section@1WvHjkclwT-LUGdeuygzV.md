@@ -4,5 +4,4 @@ The `<section>` tag in HTML is used to define thematic groupings of content with
 
 Visit the following resources to learn more:
 
-- [@article@<section>: The Generic Section element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section)
 - [@video@HTML section Tag Tutorial (Semantic Element): Easy Guide for Beginners](https://www.youtube.com/watch?v=08b6OJbL3Cs)

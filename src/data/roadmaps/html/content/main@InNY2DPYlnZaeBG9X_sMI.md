@@ -4,5 +4,4 @@ The `<main>` element in HTML defines the primary content of a document's `<body>
 
 Visit the following resources to learn more:
 
-- [@article@<main>: The Main element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main)
 - [@video@HTML main Tag Tutorial (Semantic Element): Easy Guide for Beginners](https://www.youtube.com/watch?v=ROahTJeu-Iw)

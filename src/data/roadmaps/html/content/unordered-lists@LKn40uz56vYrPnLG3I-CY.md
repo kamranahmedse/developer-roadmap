@@ -4,5 +4,5 @@ Unordered lists present items in a bulleted format, where the order of the items
 
 Visit the following resources to learn more:
 
-- [@article@<ul>: The Unordered List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul)
-- [@article@<li>: The List Item element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/li)
+- [@article@ul: The Unordered List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ul)
+- [@article@HTML Unordered Lists](https://www.w3schools.com/html/html_lists_unordered.asp)

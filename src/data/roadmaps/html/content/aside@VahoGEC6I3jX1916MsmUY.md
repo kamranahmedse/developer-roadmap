@@ -4,5 +4,4 @@ The `<aside>` element in HTML represents a section of a page that is tangentiall
 
 Visit the following resources to learn more:
 
-- [@article@<aside>: The Aside element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside)
 - [@video@HTML aside Tag Tutorial (Semantic Element): Easy Guide for Beginners](https://www.youtube.com/watch?v=2uKbSQ0mXGA)

@@ -4,5 +4,4 @@ The `<nav>` element in HTML is used to define a section of a page that contains 
 
 Visit the following resources to learn more:
 
-- [@article@<nav>: The Navigation Section element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav)
 - [@video@HTML nav Tag Tutorial (Semantic Element): Easy Guide for Beginners](https://www.youtube.com/watch?v=FqDFwCQb4yI)

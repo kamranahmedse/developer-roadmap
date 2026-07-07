@@ -4,6 +4,5 @@ The `<video>` element in HTML is used to embed video content directly into a web
 
 Visit the following resources to learn more:
 
-- [@article@<video>: The Video Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video)
-- [@article@Learn HTML video in 4 minutes!](https://www.youtube.com/watch?v=BAx2GaMW2qA)
 - [@course@HTML & CSS - How to Embed a YouTube Video in Your Website](https://www.youtube.com/watch?v=ly36kn0ug4k)
+- [@article@Learn HTML video in 4 minutes!](https://www.youtube.com/watch?v=BAx2GaMW2qA)

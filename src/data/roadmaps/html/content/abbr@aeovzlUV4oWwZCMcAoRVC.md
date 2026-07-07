@@ -4,5 +4,4 @@ The `<abbr>` tag in HTML represents an abbreviation or acronym. It's useful for 
 
 Visit the following resources to learn more:
 
-- [@article@<abbr>: The Abbreviation element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/abbr)
 - [@video@HTML abbr tag](https://www.youtube.com/watch?v=yN191Pkg4kg)

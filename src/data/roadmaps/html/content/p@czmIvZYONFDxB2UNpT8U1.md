@@ -4,5 +4,4 @@ The `<p>` tag in HTML defines a paragraph. Browsers automatically add a single b
 
 Visit the following resources to learn more:
 
-- [@article@<p>: The Paragraph element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/p)
 - [@video@HTML - Paragraphs | W3Schools](https://www.youtube.com/watch?v=qis4kAOThLw)

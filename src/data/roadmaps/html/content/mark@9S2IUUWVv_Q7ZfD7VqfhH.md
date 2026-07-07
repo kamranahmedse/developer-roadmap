@@ -4,5 +4,4 @@ The `<mark>` tag in HTML is used to highlight specific parts of text within a la
 
 Visit the following resources to learn more:
 
-- [@article@<mark>: The Mark Text element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/mark)
 - [@video@Mark Tag Example HTML | Master When and How to Use Mark Tag properly!](https://www.youtube.com/watch?v=uJc-UUgZ-UM)

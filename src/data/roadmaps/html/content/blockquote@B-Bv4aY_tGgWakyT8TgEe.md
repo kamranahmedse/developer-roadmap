@@ -4,5 +4,4 @@ The `blockquote` element in HTML represents a section of text that is quoted fro
 
 Visit the following resources to learn more:
 
-- [@article@<blockquote>: The Block Quotation element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/blockquote)
 - [@video@The Blockquote and Quote Tags](https://www.youtube.com/watch?v=SNEABGfkWhQ)

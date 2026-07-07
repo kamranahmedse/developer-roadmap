@@ -4,5 +4,4 @@ The `<dfn>` element in HTML represents the defining instance of a term. It's use
 
 Visit the following resources to learn more:
 
-- [@article@<dfn>: The Definition element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dfn)
 - [@video@HTML dfn Tag](https://www.youtube.com/watch?v=o6pKejnUN9s)

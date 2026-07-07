@@ -4,6 +4,5 @@ The `<b>` and `<strong>` tags in HTML are used to make text appear bold. While b
 
 Visit the following resources to learn more:
 
-- [@article@<b>: The Bring Attention To element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/b)
-- [@article@<strong>: The Strong Importance element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/strong)
-- [@article@The Difference Between <b> and <Strong> in HTML – Explained with Examples](https://www.freecodecamp.org/news/difference-between-b-and-strong-in-html/)
+- [@article@b: Bring Attention To element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/b)
+- [@article@strong: The Strong Importance element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/strong)
