@@ -4,6 +4,6 @@ Filesystems define how files are stored and organized on Linux storage disks, en
 
 Visit the following resources to learn more:
 
-- [@official@Filesystems in the Linux Kernel](https://www.kernel.org/doc/html/v6.16-rc2/filesystems/index.html)
+- [@official@Filesystems in the Linux Kernel](https://docs.kernel.org/filesystems/index.html)
 - [@article@df command in Linux (Check Disk Space)](https://linuxize.com/post/how-to-check-disk-space-in-linux-using-the-df-command/)
 - [@article@Partitions And Filesystems In Linux - Introduction](https://www.linuxfordevices.com/tutorials/linux/partitions-and-filesystems)

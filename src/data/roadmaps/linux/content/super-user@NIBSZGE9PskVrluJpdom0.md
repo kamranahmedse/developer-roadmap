@@ -1,8 +1,6 @@
 # Super User
-
-The Super User, also known as "root user", represents a user account in Linux with extensive powers, privileges, and capabilities. This user has complete control over the system and can access any data stored on it. This includes the ability to modify system configurations, change other user's passwords, install software, and perform more administrative tasks in the shell environment.
-
-The usage of super user is critical to operating a Linux system properly and safely as it can potentially cause serious damage. The super user can be accessed through the `sudo` or `su` commands.
+ 
+The super user, commonly referred to as root, is the account with unrestricted access to every file, process, and setting on a Linux system. Regular users run commands with `sudo` to temporarily gain root privileges for a single command, rather than logging in as root directly. Because root can modify or delete anything on the system, using `sudo` only when necessary reduces the risk of accidental damage.
 
 Visit the following resources to learn more:
 

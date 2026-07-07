@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@APT Package Manager](https://www.debian.org/doc/manuals/apt-guide/index.en.html)
 - [@article@What is Repository in Linux?](https://linuxsimply.com/what-is-repository-in-linux/)
 - [@article@Official Repositories - ArchWiki](https://wiki.archlinux.org/title/Official_repositories)
-- [@article@Understanding Linux Repositories](https://blogs.maalavs.com/linux/understanding-linux-repositories/)

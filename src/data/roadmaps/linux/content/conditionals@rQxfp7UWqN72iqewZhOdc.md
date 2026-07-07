@@ -5,4 +5,4 @@ Shell conditionals allow scripts to make decisions based on conditions using `if
 Visit the following resources to learn more:
 
 - [@article@Bash Scripting: Conditionals](https://linuxconfig.org/bash-scripting-conditionals)
-- [@article@Using If Else in Bash Scripts [Examples] - Linux Handbook](https://linuxhandbook.com/if-else-bash/)
+- [@article@Using If Else in Bash Scripts \[Examples\] - Linux Handbook](https://linuxhandbook.com/if-else-bash/)

@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Understanding Foreground and Background Processes](https://linuxconfig.org/understanding-foreground-and-background-linux-processes)
 - [@article@Running Linux Commands in Background and Foreground](https://linuxhandbook.com/run-process-background/)
-- [@article@Foreground and Background Processes - LinuxOPsys](https://linuxopsys.com/foreground-and-background-processes-co11/)

@@ -2,8 +2,6 @@
 
 Environment variables are dynamic named values that can affect the behavior of running processes in a shell. They exist in every shell session. A shell session's environment includes, but is not limited to, the user's home directory, command search path, terminal type, and program preferences.
 
-Environment variables help to contribute to the fantastic and customizable flexibility you see in Unix systems. They provide a simple way to share configuration settings between multiple applications and processes in Linux.
-
 Visit the following resources to learn more:
 
 - [@article@Environment Variables in Linux](https://labex.io/tutorials/linux-environment-variables-in-linux-385274)

@@ -2,17 +2,6 @@
 
 In Linux, understanding the directory hierarchy is crucial for efficient navigation and file management. A Linux system's directory structure, also known as the Filesystem Hierarchy Standard (FHS), is a defined tree structure that helps to prevent files from being scattered all over the system and instead organise them in a logical and easy-to-navigate manner.
 
-*   `/`: Root directory, the top level of the file system.
-*   `/home`: User home directories.
-*   `/bin`: Essential binary executables.
-*   `/sbin`: System administration binaries.
-*   `/etc`: Configuration files.
-*   `/var`: Variable data (logs, spool files).
-*   `/usr`: User programs and data.
-*   `/lib`: Shared libraries.
-*   `/tmp`: Temporary files.
-*   `/opt`: Third-party applications.
-
 Visit the following resources to learn more:
 
 - [@article@Linux Directory Structure Explained for Beginners](https://linuxhandbook.com/linux-directory-structure/)
