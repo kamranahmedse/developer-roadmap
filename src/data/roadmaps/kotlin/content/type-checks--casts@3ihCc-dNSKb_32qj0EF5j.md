@@ -1,6 +1,6 @@
 # Type Checks & Casts
 
-Kotlin allows you to check the type of a variable at runtime using the `is` operator. This operator returns `true` if a variable is of a certain type.  Furthermore, Kotlin's smart casts automatically cast a variable to a more specific type within a block of code if the compiler can guarantee that the variable is of that type due to a type check. This eliminates the need for explicit casting in many situations, making the code cleaner and safer.
+Kotlin allows you to check the type of a variable at runtime using the `is` operator. This operator returns `true` if a variable is of a certain type. Furthermore, Kotlin's smart casts automatically cast a variable to a more specific type within a block of code if the compiler can guarantee that the variable is of that type due to a type check. This eliminates the need for explicit casting in many situations, making the code cleaner and safer.
 
 Visit the following resources to learn more:
 

@@ -1,9 +1,10 @@
 # Defining Classes
 
 In Kotlin, a class is a blueprint for creating objects (instances). You define a class using the `class` keyword, followed by the class name and curly braces. A class consists of three major parts:
-* Properties. Variables that specify the attributes of the class's objects.
-* Methods. Functions that contain the class's behaviors and actions.
-* Constructors. A special member function that creates instances of the class throughout the program in which it's defined.
+
+*   Properties. Variables that specify the attributes of the class's objects.
+*   Methods. Functions that contain the class's behaviors and actions.
+*   Constructors. A special member function that creates instances of the class throughout the program in which it's defined.
 
 Visit the following resources to learn more:
 

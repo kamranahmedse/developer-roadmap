@@ -5,6 +5,6 @@ Kotlin leverages both its own `kotlin.io` package and the standard Java `java.io
 Visit the following resources to learn more:
 
 - [@official@kotlin.io](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.io/)
-- [@opensource@kotlinx.io](https://github.com/Kotlin/kotlinx-io)
 - [@official@java.io](https://docs.oracle.com/javase/tutorial/essential/io/)
+- [@opensource@kotlinx.io](https://github.com/Kotlin/kotlinx-io)
 - [@video@Working With Files In Kotlin - IO Essentials](https://www.youtube.com/watch?v=MSeI7XVzrvo)

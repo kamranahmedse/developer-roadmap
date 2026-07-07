@@ -4,6 +4,6 @@ Android Studio is the official Integrated Development Environment (IDE) for Andr
 
 Visit the following resources to learn more:
 
+- [@course@Introduction to programming in Kotlin](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-1)
 - [@official@Kotlin for Android](https://kotlinlang.org/docs/android-overview.html)
 - [@article@Develop Android apps with Kotlin](https://developer.android.com/kotlin)
-- [@course@Introduction to programming in Kotlin](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-1)

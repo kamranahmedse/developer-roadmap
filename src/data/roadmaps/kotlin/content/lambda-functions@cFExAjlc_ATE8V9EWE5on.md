@@ -1,6 +1,6 @@
 # Lambda Functions
 
-Lambda functions in Kotlin are essentially nameless functions that you can treat like values. Think of them as mini-functions you can pass around, store in variables, or execute directly. They're defined using curly braces `{}` and can take parameters and return a value.  They're particularly useful for short, concise operations, especially when working with collections or higher-order functions (functions that take other functions as arguments).
+Lambda functions in Kotlin are essentially nameless functions that you can treat like values. Think of them as mini-functions you can pass around, store in variables, or execute directly. They're defined using curly braces `{}` and can take parameters and return a value. They're particularly useful for short, concise operations, especially when working with collections or higher-order functions (functions that take other functions as arguments).
 
 Visit the following resources to learn more:
 

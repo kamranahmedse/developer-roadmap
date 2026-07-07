@@ -5,5 +5,5 @@ The Android SDK (Software Development Kit) is a set of tools, libraries, documen
 Visit the following resources to learn more:
 
 - [@official@Kotlin for Android](https://kotlinlang.org/docs/android-overview.html)
-- [@article@Develop Android apps with Kotlin](https://developer.android.com/kotlin)
 - [@official@Android & Kotlin Development Masterclass – Full Course](https://www.youtube.com/watch?v=blKkRoZPxLc&ab_channel=freeCodeCamp.org)
+- [@article@Develop Android apps with Kotlin](https://developer.android.com/kotlin)

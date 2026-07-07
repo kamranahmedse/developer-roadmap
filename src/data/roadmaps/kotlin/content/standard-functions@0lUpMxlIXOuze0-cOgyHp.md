@@ -1,15 +1,6 @@
 # Standard Functions
 
-Kotlin functions are declared using the `fun` keyword. 
-`
-fun double(x: Int): Int {
-    return 2 * x
-}
-`
-To call a functions, just:
-`
-val result = double(2)
-`
+Kotlin functions are declared using the `fun` keyword. `fun double(x: Int): Int { return 2 * x }` To call a functions, just: `val result = double(2)`
 
 Visit the following resources to learn more:
 

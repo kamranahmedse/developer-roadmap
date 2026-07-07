@@ -4,5 +4,5 @@ Android Jetpack is a suite of libraries, tools, and architectural guidance desig
 
 Visit the following resources to learn more:
 
-- [@article@Kotlin for Jetpack](https://developer.android.com/develop/ui/compose/kotlin)
 - [@course@Android Basics with Compose](https://developer.android.com/courses/android-basics-compose/course)
+- [@article@Kotlin for Jetpack](https://developer.android.com/develop/ui/compose/kotlin)
