@@ -1,0 +1,3 @@
+# Predefined Macros
+ 
+Predefined macros are macros that the compiler defines automatically without any explicit `#define`, providing information such as the current file name (`__FILE__`), line number (`__LINE__`), compilation date (`__DATE__`), or which C standard is in use (`__STDC_VERSION__`). They are often used in debugging output or conditional compilation to adapt code based on the compiler or platform. Different compilers may also define their own additional predefined macros beyond the standard set.

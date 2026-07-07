@@ -1,0 +1,3 @@
+# Process Management
+ 
+Process management covers creating, controlling, and terminating processes from within a C program, typically using POSIX functions like `fork` to create a new process, `exec` to replace a process's program with a new one, and `wait` to have a parent process wait for a child process to finish. This is the foundation for how shells and other programs launch and manage other programs. It is closely related to but distinct from concurrency, since separate processes have their own independent memory space unlike threads.

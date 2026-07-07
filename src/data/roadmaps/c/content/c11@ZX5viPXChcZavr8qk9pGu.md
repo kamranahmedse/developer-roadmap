@@ -1,0 +1,3 @@
+# C11
+ 
+C11, published in 2011, introduced support for multithreading through `<threads.h>`, atomic operations via `_Atomic` and `<stdatomic.h>`, and improved Unicode support. It also added optional bounds-checking functions intended to reduce common security vulnerabilities, though these saw limited adoption across compilers. C11 was a significant step in bringing standardized concurrency support directly into the language.

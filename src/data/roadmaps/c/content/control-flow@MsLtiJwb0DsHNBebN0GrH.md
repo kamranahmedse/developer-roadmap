@@ -1,0 +1,3 @@
+# Control Flow
+ 
+Control flow determines the order in which statements in a program execute, using constructs like conditionals and loops instead of running every line top to bottom unconditionally. C provides `if`/`else` and `switch` for branching, and `for`, `while`, and `do-while` for repetition. Mastering control flow is what allows a program to make decisions and repeat work based on data rather than following a single fixed path.

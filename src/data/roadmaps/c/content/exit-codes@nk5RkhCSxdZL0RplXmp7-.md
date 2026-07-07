@@ -1,0 +1,3 @@
+# Exit Codes
+ 
+An exit code is a small integer that a program returns to the operating system when it finishes, indicating whether it succeeded or failed, and if it failed, sometimes why. By convention, an exit code of 0 means success and any nonzero value indicates an error, with `EXIT_SUCCESS` and `EXIT_FAILURE` from `<stdlib.h>` providing portable constants for these. Exit codes are commonly checked by shell scripts and other programs that call a C program and need to know whether it completed successfully.

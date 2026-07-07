@@ -1,0 +1,3 @@
+# Pointers & Memory
+ 
+Pointers and memory concepts cover how C represents and manages memory directly, rather than hiding it behind automatic garbage collection. A pointer is a variable that stores the memory address of another value, giving direct access to and control over memory. This area also covers the layout of a program's memory, the difference between stack and heap allocation, and the risks of managing memory manually, like leaks and dangling pointers.

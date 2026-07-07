@@ -1,0 +1,3 @@
+# Conditional Compilation
+ 
+Conditional compilation uses preprocessor directives like `#ifdef`, `#ifndef`, `#if`, and `#endif` to include or exclude blocks of code before the compiler processes them, based on whether certain macros are defined. It is commonly used for platform-specific code, enabling debug-only sections, or preventing a header file from being included multiple times through header guards. Because this happens during preprocessing, excluded code is never even seen by the compiler.

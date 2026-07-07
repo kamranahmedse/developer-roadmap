@@ -1,0 +1,3 @@
+# Running your First Program
+ 
+Running a first C program means writing a small source file, usually one that prints "Hello, World!", compiling it with a tool like GCC, and executing the resulting binary. This process introduces the basic compile-then-run workflow that every C program follows: source code goes through the compiler to produce machine code, and only that machine code actually runs. It is a good checkpoint to confirm the toolchain from installation works correctly.

@@ -1,0 +1,3 @@
+# Stack vs Heap
+ 
+The stack is a region of memory that automatically manages local variables and function call data, growing and shrinking as functions are called and return, and it is fast but limited in size. The heap is a region for dynamically allocated memory, managed manually with functions like `malloc` and `free`, offering more flexibility in size and lifetime at the cost of more responsibility. Choosing between them depends on whether the data's size is known at compile time and how long it needs to live.

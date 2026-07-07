@@ -1,0 +1,3 @@
+# Dynamic Arrays
+ 
+A dynamic array is an array-like structure that can grow or shrink at runtime, typically implemented by allocating memory on the heap and reallocating a larger block, often using `realloc`, when it runs out of space. Unlike a fixed-size C array, it tracks both its current length and its allocated capacity separately. This pattern underlies dynamic array types like C++'s `std::vector` or Python's list, though C requires implementing it manually.

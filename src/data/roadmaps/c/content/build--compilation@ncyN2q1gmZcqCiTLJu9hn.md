@@ -1,0 +1,3 @@
+# Build & Compilation
+ 
+Building and compiling a C program is the process of transforming human-readable source code into an executable binary, passing through stages including preprocessing, compilation, assembly, and linking. Understanding this pipeline helps explain common errors, like the difference between a compiler error, which happens when code is invalid, and a linker error, which happens when a function or variable cannot be found. Build tools automate this process, especially for projects with many source files.

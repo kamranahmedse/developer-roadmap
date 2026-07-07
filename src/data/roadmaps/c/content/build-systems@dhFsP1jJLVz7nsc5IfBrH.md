@@ -1,0 +1,3 @@
+# Build Systems
+ 
+A build system automates the process of compiling and linking a project's source files into a final executable or library, tracking dependencies so that only files affected by a change need to be rebuilt. Options range from simple tools like GNU Make, which uses explicit rules in a Makefile, to higher-level generators like CMake, which produce build files for other underlying build tools. Choosing a build system matters more as a project grows beyond a handful of source files.

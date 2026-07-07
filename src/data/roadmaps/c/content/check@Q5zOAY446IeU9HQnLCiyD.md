@@ -1,0 +1,3 @@
+# Check
+ 
+Check is a unit testing framework for C that runs each test case in its own separate process, so a crash or memory error in one test does not stop the rest of the test suite from running. It provides assertion macros and supports organizing tests into suites, similar to other C testing frameworks. Its process-isolation approach makes it particularly resilient when testing code prone to crashes or segmentation faults.

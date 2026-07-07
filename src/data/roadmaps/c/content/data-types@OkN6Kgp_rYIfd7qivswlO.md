@@ -1,0 +1,3 @@
+# Data Types
+ 
+A data type in C defines what kind of value a variable can hold and how much memory it occupies, such as an integer, a floating-point number, or a character. C provides a small set of basic types built into the language, along with qualifiers and extended types for more specific needs. Choosing the right type affects both correctness, since operations behave differently across types, and memory usage.

@@ -1,0 +1,3 @@
+# ABI
+ 
+An ABI (Application Binary Interface) defines the low-level conventions that compiled code must follow to be compatible with other compiled code, including how function arguments are passed, how data is laid out in memory, and how the stack is organized. Unlike a language-level API, which concerns source code compatibility, an ABI concerns binary compatibility between already-compiled pieces of code. Two libraries compiled with incompatible ABIs, for example using different compilers or settings, may not work correctly together even if their source-level interfaces match.

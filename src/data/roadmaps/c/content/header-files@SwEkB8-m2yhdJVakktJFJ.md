@@ -1,0 +1,3 @@
+# Header Files
+ 
+Header files, with a `.h` extension, contain declarations, such as function prototypes, struct definitions, and macros, that are shared across multiple source files using `#include`. They let multiple `.c` files agree on the same interface without duplicating code. Header guards, or `#pragma once`, prevent the same header from being included multiple times in one compilation, which would otherwise cause duplicate-definition errors.

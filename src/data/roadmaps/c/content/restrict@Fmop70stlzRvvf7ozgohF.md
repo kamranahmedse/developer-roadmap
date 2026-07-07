@@ -1,0 +1,3 @@
+# restrict
+ 
+The `restrict` qualifier, introduced in C99, is a hint to the compiler that a pointer is the only way to access the memory it points to during its lifetime. This allows the compiler to make more aggressive optimizations, since it does not need to guard against another pointer aliasing the same memory. Misusing `restrict` by actually aliasing the memory anyway results in undefined behavior.

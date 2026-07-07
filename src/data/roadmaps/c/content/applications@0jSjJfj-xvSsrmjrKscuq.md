@@ -1,0 +1,3 @@
+# Applications
+ 
+C shows up in operating system kernels (Linux, Windows internals), embedded systems and microcontrollers, device drivers, database engines, and performance-critical libraries. Many other languages, including Python and Ruby, have interpreters written in C, and most language runtimes expose a C interface for interoperability. It is also the language of choice when a program needs to run close to hardware with minimal overhead.

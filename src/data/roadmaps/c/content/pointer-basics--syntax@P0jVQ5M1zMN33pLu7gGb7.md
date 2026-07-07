@@ -1,0 +1,3 @@
+# Pointer Basics & Syntax
+ 
+A pointer is declared with an asterisk, such as `int *p`, and holds the memory address of a value rather than the value itself. The `&` operator retrieves a variable's address, while the `*` operator, when applied to a pointer, dereferences it to access the value it points to. Pointers are central to C, used for passing large data efficiently, building dynamic data structures, and enabling functions to modify their caller's variables.

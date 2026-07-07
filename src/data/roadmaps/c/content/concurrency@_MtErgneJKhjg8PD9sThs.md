@@ -1,0 +1,3 @@
+# Concurrency
+ 
+Concurrency in C covers running multiple sequences of execution, such as threads or processes, at the same time or in an interleaved fashion. This includes using POSIX threads for shared-memory parallelism within a single process, mutexes to prevent multiple threads from corrupting shared data, and inter-process communication for separate processes that need to exchange data. Writing correct concurrent C code requires careful attention to shared state, since the language provides no automatic protection against data races.

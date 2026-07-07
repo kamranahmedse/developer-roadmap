@@ -1,0 +1,3 @@
+# Memory Model
+ 
+C's memory model describes how a running program's memory is organized into distinct regions: the stack for local variables and function call information, the heap for dynamically allocated memory, and separate segments for global/static variables and the compiled program code itself. Understanding this layout helps explain why some memory is automatically reclaimed and other memory must be freed manually. It also clarifies why certain bugs, like stack overflows or heap corruption, occur in specific regions.

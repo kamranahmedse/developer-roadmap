@@ -1,0 +1,3 @@
+# Type Qualifiers
+ 
+Type qualifiers add extra meaning to a variable's declaration beyond its basic type, telling the compiler how the variable can be used or how it might change. C provides four standard qualifiers: `const`, `volatile`, `restrict`, and `_Atomic`. They do not change how much memory a variable uses, but they do affect what optimizations the compiler is allowed to make and what guarantees the programmer gets.

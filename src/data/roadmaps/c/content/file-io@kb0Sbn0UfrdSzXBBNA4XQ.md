@@ -1,0 +1,3 @@
+# File I/O
+ 
+File input/output in C is done through the standard library's stream-based functions, which let a program open, read from, write to, and close files. Streams abstract away the underlying operating system details of file access behind a consistent interface. File I/O also involves choosing between binary and text mode, which affects how certain characters, like line endings, are handled.

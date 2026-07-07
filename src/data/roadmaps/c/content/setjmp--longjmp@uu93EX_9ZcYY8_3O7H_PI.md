@@ -1,0 +1,3 @@
+# setjmp / longjmp
+ 
+`setjmp` and `longjmp`, declared in `<setjmp.h>`, implement a non-local jump that lets a program save an execution point with `setjmp` and later jump back to it with `longjmp`, potentially unwinding several function calls at once. This is sometimes used as a rough substitute for exception handling, for example to recover from an error deep in a call stack. Because it skips normal function cleanup, like calling destructors in C++, it must be used carefully, and it does not exist to make error handling elegant, only possible.

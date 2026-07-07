@@ -1,0 +1,3 @@
+# errno
+ 
+`errno` is a global variable, declared in `<errno.h>`, that many standard library functions set to a specific error code when they fail. It is not automatically reset to zero on success, so it should only be checked immediately after a function call that is documented to set it, and typically after confirming the function actually failed. Functions like `perror` or `strerror` translate an `errno` value into a human-readable message.

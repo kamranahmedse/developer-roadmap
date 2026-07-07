@@ -1,0 +1,3 @@
+# vim / nvim
+ 
+vim and its modern fork neovim are terminal-based text editors known for keyboard-driven, modal editing rather than a traditional mouse-and-menu interface. They are lightweight and run over SSH, which makes them popular for editing C code on remote servers or embedded systems. Configuring one for C development, such as adding syntax highlighting or a language server, takes some initial setup but rewards frequent use with speed.

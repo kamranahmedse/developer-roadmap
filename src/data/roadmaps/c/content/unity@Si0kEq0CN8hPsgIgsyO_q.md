@@ -1,0 +1,3 @@
+# Unity
+ 
+Unity is a lightweight unit testing framework for C, designed with embedded systems in mind, requiring minimal dependencies and working even on platforms without a full standard library. It provides a set of assertion macros for checking expected values and organizing tests into runnable suites. Its small footprint makes it a common choice for testing firmware and other resource-constrained environments.

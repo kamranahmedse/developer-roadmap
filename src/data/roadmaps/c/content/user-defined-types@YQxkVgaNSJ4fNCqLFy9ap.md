@@ -1,0 +1,3 @@
+# User-Defined Types
+ 
+User-defined types let a programmer group related data or give existing types new names, going beyond the basic built-in types. C provides `struct` for grouping different types together, `union` for storing different types in the same memory, `enum` for naming a set of related integer constants, and `typedef` for creating aliases for existing types. These tools make code more organized and self-documenting when modeling real-world data.

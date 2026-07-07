@@ -1,0 +1,3 @@
+# Arrays
+ 
+An array in C is a fixed-size, contiguous block of memory holding multiple elements of the same type, accessed using an index starting at zero. The size of an array must be known at compile time unless it is allocated dynamically on the heap. Arrays decay into pointers to their first element when passed to functions, which means the function receiving them loses information about the array's original size.

@@ -1,0 +1,3 @@
+# TinyCC
+ 
+TinyCC, also called tcc, is a small, fast C compiler that prioritizes compilation speed over generating optimized machine code. It can compile and run C code almost instantly, making it useful for scripting-like use cases or quick testing, though the resulting binaries are typically slower than those produced by GCC or Clang with optimizations enabled. Its small size also makes it practical for embedding in other tools.

@@ -1,0 +1,3 @@
+# Idioms & Design Patterns
+ 
+Idioms and design patterns in C are established techniques for achieving goals, like encapsulation or polymorphism, that the language does not support directly through built-in syntax the way object-oriented languages do. These patterns typically combine structs, function pointers, and careful use of pointers and headers to simulate features from higher-level languages. Recognizing them helps when reading existing C codebases, since many rely on these conventions rather than documenting the intent explicitly.

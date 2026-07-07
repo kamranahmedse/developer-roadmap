@@ -1,0 +1,3 @@
+# Introduction
+ 
+C is a general-purpose programming language created in the early 1970s at Bell Labs by Dennis Ritchie. It gives direct access to memory and hardware while staying close to the machine, which makes it fast and predictable but also demands more care from the programmer. Operating systems, embedded firmware, compilers, and many other languages' runtimes are built with it. Learning C teaches how computers actually manage memory and execute instructions, knowledge that carries over to almost every other language.

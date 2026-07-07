@@ -1,0 +1,3 @@
+# IPC
+ 
+Inter-process communication (IPC) covers mechanisms that let separate, independent processes exchange data, since processes do not share memory the way threads within one process do. Common IPC mechanisms include pipes for streaming data between related processes, shared memory segments for faster but more manually managed data sharing, and message queues or sockets for more structured or networked communication. Choosing an IPC mechanism depends on factors like whether the processes are on the same machine and how much data needs to move between them.

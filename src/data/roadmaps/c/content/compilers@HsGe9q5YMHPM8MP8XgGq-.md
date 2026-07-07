@@ -1,0 +1,3 @@
+# Compilers
+ 
+A compiler translates C source code into machine code that can run directly on a specific processor and operating system. Popular choices include GCC and Clang, which support most platforms, and specialized compilers like TinyCC, designed for speed rather than optimization. Compilers also expose various flags controlling optimization level, warnings, and debugging information included in the output.

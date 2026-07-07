@@ -1,0 +1,3 @@
+# Printing Variables
+ 
+Printing variables in C typically uses the `printf` function from the standard library, with format specifiers like `%d` for integers, `%f` for floats, or `%s` for strings telling it how to interpret the data. Each specifier must match the variable's actual type, since `printf` does not check this at compile time and mismatches can produce garbage output or crashes. This makes printing a common source of subtle bugs for beginners.

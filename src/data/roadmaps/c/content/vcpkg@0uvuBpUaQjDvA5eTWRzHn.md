@@ -1,0 +1,3 @@
+# vcpkg
+ 
+vcpkg is an open-source package manager from Microsoft for C and C++ libraries, supporting Windows, Linux, and macOS. It builds libraries from source for the target platform and compiler, then integrates them with build systems like CMake or Visual Studio. Its cross-platform support has made it a common choice for projects that need to build consistently across different operating systems.

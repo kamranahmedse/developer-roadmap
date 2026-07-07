@@ -1,0 +1,3 @@
+# File Scope & Storage Duration
+ 
+File scope refers to a variable or function declared outside any function, making it visible throughout the rest of that file, and potentially other files if declared `extern`. Storage duration describes how long a variable's memory remains allocated: automatic for local variables that exist only during their enclosing block, static for variables that persist for the entire program's execution, and dynamic for heap-allocated memory managed manually. These two concepts together determine both where a variable can be used and how long it stays valid.

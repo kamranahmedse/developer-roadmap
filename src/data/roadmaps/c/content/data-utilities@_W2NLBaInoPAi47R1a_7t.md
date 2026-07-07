@@ -1,0 +1,3 @@
+# Data Utilities
+ 
+Data utility functions, largely from `<stdlib.h>`, provide general-purpose operations such as memory allocation (`malloc`, `free`), converting strings to numbers (`atoi`, `strtol`), generating pseudo-random numbers (`rand`), and sorting or searching arrays (`qsort`, `bsearch`). They cover common tasks that come up across many kinds of programs regardless of domain. Because they are part of the standard library, they are available on any standards-compliant C implementation without extra installation.

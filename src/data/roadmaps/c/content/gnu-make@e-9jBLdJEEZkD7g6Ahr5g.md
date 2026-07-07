@@ -1,0 +1,3 @@
+# GNU Make
+ 
+GNU Make is a build automation tool that reads a file called a Makefile, containing rules that specify how to build targets from their dependencies, and only rebuilds the parts of a project that have actually changed. It is one of the oldest and most widely available build tools on Unix-like systems. Writing Makefiles by hand for larger projects can become complex, which is part of why higher-level tools like CMake are often used to generate them instead.

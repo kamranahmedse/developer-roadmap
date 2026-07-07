@@ -1,0 +1,3 @@
+# Strings
+ 
+C represents strings as arrays of `char` terminated by a null character (`\0`), rather than as a distinct string type. Because of this, string handling relies on knowing exactly where the null terminator is, and functions like `strlen`, `strcpy`, and `strcmp` from `<string.h>` operate on this convention. Forgetting to account for the null terminator's extra byte, or copying a string into a buffer too small to hold it, are frequent sources of bugs.

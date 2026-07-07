@@ -1,0 +1,3 @@
+# Recursive Functions
+ 
+A recursive function is one that calls itself, either directly or indirectly, to solve a problem by breaking it into smaller instances of the same problem. Every recursive function needs a base case that stops the recursion, otherwise it will call itself indefinitely until it exhausts the call stack. Recursion is well suited to problems with a naturally recursive structure, like tree traversal, though it can use more memory than an equivalent loop due to the accumulating function calls on the stack.

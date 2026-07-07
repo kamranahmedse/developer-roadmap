@@ -1,0 +1,3 @@
+# Basic Functions
+ 
+A basic function definition in C specifies a return type, a name, a parameter list, and a body containing the code to execute, for example `int add(int a, int b) { return a + b; }`. If a function does not return a value, its return type is declared as `void`. Function prototypes, declarations without a body, let functions be used before their full definition appears later in the file.

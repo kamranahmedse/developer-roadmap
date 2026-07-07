@@ -1,0 +1,3 @@
+# Variadic Functions
+ 
+Variadic functions accept a variable number of arguments, like `printf`, which can take any number of values depending on its format string. They are declared using an ellipsis (`...`) as the last parameter and accessed inside the function using macros from `<stdarg.h>`, such as `va_start`, `va_arg`, and `va_end`. Because the compiler cannot type-check variadic arguments the way it does regular parameters, mismatches between expected and actual argument types are a common source of bugs.

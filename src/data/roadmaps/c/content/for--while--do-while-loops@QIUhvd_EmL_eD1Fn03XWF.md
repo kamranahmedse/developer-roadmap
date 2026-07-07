@@ -1,0 +1,3 @@
+# for / while / do while loops
+ 
+C offers three loop constructs: `for`, which bundles initialization, condition, and increment in one line and suits a known number of iterations; `while`, which checks its condition before each iteration and suits an unknown number of repetitions; and `do-while`, which checks its condition after each iteration, guaranteeing the loop body runs at least once. Choosing between them mostly comes down to whether the number of iterations is known ahead of time and whether the body must run at least once.

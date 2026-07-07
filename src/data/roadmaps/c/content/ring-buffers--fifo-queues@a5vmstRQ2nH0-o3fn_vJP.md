@@ -1,0 +1,3 @@
+# Ring Buffers / FIFO Queues
+ 
+A ring buffer, or circular buffer, is a fixed-size buffer that wraps around to the beginning once it reaches the end, making it efficient for implementing first-in-first-out queues without shifting elements. It tracks a read position and a write position that both wrap around the buffer's length. Ring buffers are common in embedded systems and streaming applications where data arrives continuously and memory needs to stay bounded.

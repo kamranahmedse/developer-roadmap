@@ -1,0 +1,3 @@
+# Buffer Overflow
+ 
+A buffer overflow occurs when a program writes more data into a fixed-size buffer, like an array, than it can hold, overwriting adjacent memory. This can corrupt other variables, crash the program, or in more severe cases be exploited to execute malicious code, making it a well-known security vulnerability. Using safer alternatives to functions like `strcpy`, such as `strncpy` or `snprintf` with explicit size limits, helps prevent it.

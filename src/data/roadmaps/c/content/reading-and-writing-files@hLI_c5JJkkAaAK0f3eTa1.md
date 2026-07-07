@@ -1,0 +1,3 @@
+# Reading and Writing Files
+ 
+Reading and writing files in C uses functions like `fread` and `fwrite` for binary data, or `fgets`, `fputs`, and `fprintf` for text, all operating on a `FILE *` obtained from `fopen`. Each function needs to be checked for how much data it actually transferred, since reads and writes can return less than requested, for example at the end of a file. Properly checking these return values catches errors that would otherwise silently produce incomplete or corrupted data.

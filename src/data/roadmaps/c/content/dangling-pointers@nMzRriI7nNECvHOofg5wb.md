@@ -1,0 +1,3 @@
+# Dangling Pointers
+ 
+A dangling pointer points to memory that has already been freed or otherwise become invalid, but the pointer itself still holds the old address. Using a dangling pointer, whether reading or writing through it, results in undefined behavior and can corrupt unrelated data. Setting a pointer to `NULL` immediately after freeing it is a common way to reduce the risk of accidentally using it again.

@@ -1,0 +1,3 @@
+# WinDbg
+ 
+WinDbg is a debugger from Microsoft for Windows programs, capable of both live debugging and analyzing crash dump files after a program has already terminated. It is commonly used for debugging Windows-specific issues, including kernel-level and driver debugging, that other cross-platform debuggers do not handle. Its interface and command set differ significantly from GDB or LLDB, reflecting its Windows-specific origins.

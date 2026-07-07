@@ -1,0 +1,3 @@
+# Meson
+ 
+Meson is a build system that emphasizes speed and a simple, readable configuration language, generating backend build files for tools like Ninja rather than compiling directly itself. It aims to make common build tasks straightforward with sensible defaults, reducing the boilerplate often needed with tools like CMake. It has gained adoption in several open-source C projects seeking a more modern build configuration experience.

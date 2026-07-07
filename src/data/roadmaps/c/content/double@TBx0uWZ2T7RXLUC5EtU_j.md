@@ -1,0 +1,3 @@
+# double
+ 
+The `double` type stores double-precision floating-point numbers, offering roughly twice the precision of `float`, around 15 to 17 significant decimal digits, and typically occupying 8 bytes of memory. It is the default floating-point type used by C's standard library functions unless `float` is specified explicitly. `double` is generally preferred over `float` when precision matters more than memory savings.

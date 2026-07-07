@@ -1,0 +1,3 @@
+# Memory Leakage
+ 
+A memory leak happens when dynamically allocated memory is no longer needed but is never freed, so it stays reserved and unavailable for the rest of the program's execution. Leaks accumulate over time, especially in long-running programs, and can eventually exhaust available memory. Tools like Valgrind can detect leaks by tracking allocations that are never matched with a corresponding `free`.

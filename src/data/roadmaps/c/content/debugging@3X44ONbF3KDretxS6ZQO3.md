@@ -1,0 +1,3 @@
+# Debugging
+ 
+Debugging in C involves finding and fixing defects in a program, often using dedicated tools since bugs like memory corruption or undefined behavior may not produce an obvious, immediate symptom. Debuggers like GDB and LLDB let a programmer pause execution, inspect variables, and step through code line by line. Other tools, like Valgrind and sanitizers, specialize in detecting specific classes of bugs such as memory errors.

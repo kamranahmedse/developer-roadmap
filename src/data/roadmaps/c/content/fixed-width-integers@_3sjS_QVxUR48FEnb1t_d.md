@@ -1,0 +1,3 @@
+# Fixed-width integers
+ 
+Fixed-width integer types, defined in `<stdint.h>`, such as `int32_t` or `uint8_t`, guarantee an exact bit width regardless of platform, unlike `int` or `long` whose sizes can vary. This makes them useful for writing portable code, especially in networking, file formats, and embedded systems where exact sizes matter. Using them avoids subtle bugs that arise from assuming a type's size without checking it.

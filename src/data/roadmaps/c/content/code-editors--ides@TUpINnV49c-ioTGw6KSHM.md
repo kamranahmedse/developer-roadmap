@@ -1,0 +1,3 @@
+# Code Editors / IDEs
+ 
+C can be written in a plain text editor, a lightweight code editor, or a full IDE, and the choice affects how much tooling support you get for things like autocomplete, debugging, and build integration. Lightweight editors like vim or VSCode require some manual setup for compiling and debugging, while full IDEs bundle these features together. Beginners often start with something simple and add tooling as their projects grow more complex.

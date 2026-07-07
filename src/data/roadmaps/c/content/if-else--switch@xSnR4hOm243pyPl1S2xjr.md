@@ -1,0 +1,3 @@
+# if else / switch
+ 
+The `if`/`else` statement branches execution based on whether a condition evaluates to true or false, and can be chained with `else if` for multiple conditions. The `switch` statement compares a single value against several possible cases and is often clearer than a long `if`/`else if` chain when checking one variable against many fixed values. Forgetting a `break` at the end of a `switch` case causes execution to fall through into the next case, which is a common source of bugs.

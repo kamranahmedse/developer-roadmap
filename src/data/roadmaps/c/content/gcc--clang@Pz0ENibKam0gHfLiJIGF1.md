@@ -1,0 +1,3 @@
+# GCC / Clang
+ 
+GCC (GNU Compiler Collection) and Clang are two widely used, open-source C compilers, each supporting multiple platforms and largely compatible command-line interfaces. GCC has a longer history and broader platform support, while Clang is known for faster compilation, more readable error messages, and being built on the LLVM compiler infrastructure. Both support similar optimization flags and standard compliance modes, making it common for projects to test against both.

@@ -1,0 +1,3 @@
+# Text Processing
+ 
+Text processing functions, mostly from `<string.h>` and `<ctype.h>`, handle operations on C strings and characters, such as measuring length (`strlen`), copying (`strcpy`), concatenating (`strcat`), comparing (`strcmp`), and classifying individual characters as alphabetic, numeric, or whitespace. Many of these functions assume null-terminated strings and do not check buffer sizes, so using safer, bounded variants where available reduces the risk of buffer overflows. They form the core toolkit for any program that manipulates text.

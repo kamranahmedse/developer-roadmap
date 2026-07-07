@@ -1,0 +1,3 @@
+# assert.h
+ 
+`<assert.h>` provides the `assert` macro, which checks that a given condition is true and, if not, prints an error message with the file and line number before terminating the program. It is commonly used during development to catch programming errors early, such as invalid function arguments, rather than letting them cause harder-to-diagnose failures later. Defining the `NDEBUG` macro before including `<assert.h>` disables all assertions, which is typically done in release builds for performance.

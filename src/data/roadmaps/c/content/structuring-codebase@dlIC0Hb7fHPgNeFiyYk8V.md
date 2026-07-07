@@ -1,0 +1,3 @@
+# Structuring Codebase
+ 
+Structuring a C codebase covers how to organize code across multiple files as a project grows beyond a single source file. This includes splitting declarations into header files, controlling which variables and functions are visible outside a file using linkage, and understanding how storage duration affects a variable's lifetime. Good structure keeps large C projects maintainable and avoids naming conflicts between files.

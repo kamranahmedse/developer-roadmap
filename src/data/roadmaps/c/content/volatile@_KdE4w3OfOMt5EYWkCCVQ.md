@@ -1,0 +1,3 @@
+# volatile
+ 
+The `volatile` qualifier tells the compiler that a variable's value can change unexpectedly, outside the normal flow of the program, such as through hardware registers or signal handlers. This prevents the compiler from applying optimizations that assume the variable's value stays the same between reads. It is common in embedded programming and low-level code that interacts directly with hardware.

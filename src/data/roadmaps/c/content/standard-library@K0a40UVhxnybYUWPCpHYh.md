@@ -1,0 +1,3 @@
+# Standard Library
+ 
+The C standard library is a collection of functions and macros, grouped into headers like `<stdio.h>` and `<stdlib.h>`, that come bundled with every standards-compliant C compiler. It covers common needs such as input/output, string handling, memory allocation, math functions, and time handling, so programmers do not need to reimplement basic functionality themselves. Its scope is deliberately limited compared to standard libraries in some other languages, reflecting C's minimalist design.

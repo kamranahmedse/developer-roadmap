@@ -1,0 +1,3 @@
+# const
+ 
+The `const` qualifier marks a variable as read-only after initialization, so any attempt to modify it later triggers a compile-time error. It is commonly used for function parameters that should not be changed by the function, and for values that are fixed for the program's lifetime, like configuration constants. Using `const` where possible helps the compiler catch accidental modifications and documents intent for other readers of the code.

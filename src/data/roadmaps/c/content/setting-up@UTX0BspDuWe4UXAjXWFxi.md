@@ -1,0 +1,3 @@
+# Setting up
+ 
+Setting up C means installing a compiler, choosing an editor, and confirming that a simple program builds and runs on the local machine. The exact steps differ by operating system, since Linux and macOS often ship with a compiler already available while Windows usually requires a separate install. Getting this working correctly at the start avoids confusion later when debugging build errors.

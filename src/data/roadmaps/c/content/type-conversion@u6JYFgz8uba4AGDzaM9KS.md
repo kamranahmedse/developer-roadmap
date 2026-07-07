@@ -1,0 +1,3 @@
+# Type Conversion
+ 
+Type conversion changes a value from one data type to another, either automatically by the compiler (implicit conversion) or explicitly by the programmer using a cast, such as `(int)3.9`. Implicit conversions follow C's promotion rules, for example converting a `char` to an `int` in arithmetic, and can sometimes cause unexpected precision loss or overflow. Explicit casts give the programmer direct control but also make it easy to silently discard data if used carelessly.
