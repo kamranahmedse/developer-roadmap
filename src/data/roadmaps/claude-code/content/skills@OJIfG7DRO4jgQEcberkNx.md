@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [@official@Extend Claude with skills](https://code.claude.com/docs/en/skills#extend-claude-with-skills)
 - [@official@The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en)
 - [@video@Claude Code Skills & skills.sh - Crash Course](https://www.youtube.com/watch?v=rcRS8-7OgBo)
+- [@video@MCP vs Skills: Which Is Right for Your AI Agent and LLMs?](https://www.youtube.com/watch?v=goU9VIXA8II)

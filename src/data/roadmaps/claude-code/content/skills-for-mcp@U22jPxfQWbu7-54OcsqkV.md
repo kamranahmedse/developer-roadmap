@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en)
 - [@opensource@Anthropic Skills Guide](https://github.com/darraghh1/my-claude-setup/blob/main/docs/research/anthropic-skills-guide.md)
 - [@article@Claude Skills Library](https://mcpservers.org/claude-skills)
+- [@video@MCP vs Skills: Which Is Right for Your AI Agent and LLMs?](https://www.youtube.com/watch?v=goU9VIXA8II)
