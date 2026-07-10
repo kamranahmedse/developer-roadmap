@@ -9,6 +9,6 @@ Visit the following resources to learn more:
 - [@article@MLOps Explained: A Deep Dive into Machine Learning Operations](https://hermanmotcheyo.medium.com/mlops-explained-a-deep-dive-into-machine-learning-operations-ab9342c5c90d)
 - [@article@Machine Learning Operations (MLOps) For Beginners](https://towardsdatascience.com/machine-learning-operations-mlops-for-beginners-a5686bfe02b2/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
 - [@article@MLOps vs DevOps: Differences, Overlaps, and Use Cases](https://www.datacamp.com/blog/mlops-vs-devops)
-- [@article@MLOps: What It Is, Why It Matters, and How to Implement It](https://neptune.ai/blog/mlops)
+- [@article@MLOps: What It Is, Why It Matters, and How to Implement It](https://web.archive.org/web/20251126053103/https://neptune.ai/blog/mlops)
 - [@video@What is MLOps?](https://www.youtube.com/watch?v=OejCJL2EC3k)
 - [@video@MLOps Explained - What It Is, Why You Need It and How It Works](https://www.youtube.com/watch?v=biqYkVf-a7Y)
