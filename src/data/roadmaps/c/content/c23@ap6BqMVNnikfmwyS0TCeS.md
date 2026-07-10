@@ -1,3 +1,7 @@
 # C23
- 
+
 C23 is the most recent major revision of the C standard, adding features such as improved type inference with `auto` in some contexts, new attributes, and additional standard library functions, while continuing to refine areas like Unicode support. Compiler support for C23 features varies and continues to roll out gradually across GCC, Clang, and other compilers. Projects prioritizing portability often wait until a feature reaches broad compiler support before adopting it.
+
+Visit the following resources to learn more:
+
+- [@article@C23 (C standard revision) - Wikipedia](https://en.wikipedia.org/wiki/C23_(C_standard_revision))

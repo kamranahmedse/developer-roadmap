@@ -1,3 +1,3 @@
 # Package Managers
- 
+
 Package managers for C, such as vcpkg and Conan, automate finding, downloading, and building third-party libraries so they can be linked into a project without manually managing source code or prebuilt binaries. This addresses a longstanding pain point in C development, since the language itself has no built-in package management or standard library distribution mechanism. They typically integrate with build systems like CMake to simplify adding dependencies to a project.

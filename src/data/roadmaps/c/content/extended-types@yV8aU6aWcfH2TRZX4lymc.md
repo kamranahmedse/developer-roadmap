@@ -1,3 +1,7 @@
 # Extended Types
- 
+
 Extended types cover additional numeric and specialized types beyond the basic set, such as `long long` for larger integer ranges, `long double` for extended floating-point precision, and complex number types added in later C standards. They exist to handle cases where the basic types are not large or precise enough. Availability and exact behavior of some extended types can vary between compilers and standards versions.
+
+Visit the following resources to learn more:
+
+- [@article@C Extended Types](https://www.w3schools.com/c/c_data_types_extended.php)

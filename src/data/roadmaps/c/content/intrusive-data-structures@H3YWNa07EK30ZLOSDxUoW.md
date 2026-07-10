@@ -1,3 +1,3 @@
 # Intrusive Data Structures
- 
+
 An intrusive data structure embeds the structural elements needed for a container, such as the next-pointer for a linked list, directly inside the data type being stored, rather than wrapping the data in a separate container node. This avoids extra memory allocation for container-specific nodes and lets the same piece of data belong to multiple intrusive structures simultaneously. The Linux kernel makes heavy use of this pattern for its internal linked lists.

@@ -1,3 +1,8 @@
 # Diagnostics & Limits
- 
+
 Diagnostic and limit headers, such as `<assert.h>` and `<limits.h>`, provide tools for catching bugs and understanding platform constraints. The `assert` macro checks that a condition holds true during development and aborts the program with a message if it does not, while `<limits.h>` defines constants like `INT_MAX` describing the range of values each integer type can hold on the current platform. These are used more during development and debugging than in a program's normal runtime logic.
+
+Visit the following resources to learn more:
+
+- [@article@C Library - \<limits.h\>](https://www.tutorialspoint.com/c_standard_library/limits_h.htm)
+- [@article@C Library - \<assert.h\>](https://www.tutorialspoint.com/c_standard_library/assert_h.htm)

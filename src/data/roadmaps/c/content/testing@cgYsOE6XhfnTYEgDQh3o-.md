@@ -1,3 +1,7 @@
 # Testing
- 
+
 Testing in C verifies that code behaves correctly, an area the language itself provides minimal built-in support for beyond the simple `assert` macro. Dedicated testing frameworks like Unity, CMocka, and Check add structure for organizing test cases, running them automatically, and reporting results, similar to unit testing frameworks in other languages. Establishing a testing habit early helps catch regressions as a C codebase grows.
+
+Visit the following resources to learn more:
+
+- [@article@Embedded C/C++ Unit Testing Fundamentals](https://www.parasoft.com/blog/embedded-unit-testing/)

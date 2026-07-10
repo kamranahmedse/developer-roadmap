@@ -1,0 +1,3 @@
+# Common Data Structures
+
+Beyond the built-in array, C programmers commonly build their own data structures using structs and pointers, since the language does not provide these as ready-made library types. Common examples include dynamic arrays that grow as needed, linked lists that store elements as a chain of nodes, hash maps for fast key-based lookup, and ring buffers for fixed-size queues. Implementing these from scratch is a common exercise for understanding how higher-level languages' built-in collections work internally.
