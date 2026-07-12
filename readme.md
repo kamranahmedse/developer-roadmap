@@ -70,6 +70,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [Game Developer Roadmap](https://roadmap.sh/game-developer) / [Server Side Game Developer](https://roadmap.sh/server-side-game-developer)
 - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
+- [C Roadmap](https://roadmap.sh/c)
 - [C++ Roadmap](https://roadmap.sh/cpp)
 - [React Roadmap](https://roadmap.sh/react)
 - [Next.js Roadmap](https://roadmap.sh/nextjs)
