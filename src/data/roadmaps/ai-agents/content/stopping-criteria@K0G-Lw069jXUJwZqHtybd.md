@@ -5,4 +5,3 @@ Stopping criteria tell the language model when to stop writing more text. Withou
 Visit the following resources to learn more:
 
 - [@article@Defining Stopping Criteria in Large Language Models](https://www.metriccoders.com/post/defining-stopping-criteria-in-large-language-models-a-practical-guide)
-- [@article@Stopping Criteria for Decision Tree Algorithm and Tree Plots](https://aieagle.in/stopping-criteria-for-decision-tree-algorithm-and-tree-plots/)

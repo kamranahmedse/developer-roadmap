@@ -4,5 +4,4 @@ Frequency penalty is a setting that tells a language model, “Stop repeating yo
 
 Visit the following resources to learn more:
 
-- [@article@Frequency Penalty Explanation](https://platform.openai.com/docs/advanced-usage/advanced-usage#frequency-and-presence-penalties)
 - [@article@Understanding Frequency Penalty and Presence Penalty](https://medium.com/@the_tori_report/understanding-frequency-penalty-and-presence-penalty-how-to-fine-tune-ai-generated-text-e5e4f5e779cd)
