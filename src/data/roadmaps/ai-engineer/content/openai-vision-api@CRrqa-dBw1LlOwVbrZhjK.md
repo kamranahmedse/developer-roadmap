@@ -4,5 +4,5 @@ The OpenAI Vision API enables models to analyze and understand images, allowing 
 
 Visit the following resources to learn more:
 
-- [@official@Vision](https://platform.openai.com/docs/guides/vision)
+- [@official@Vision](https://developers.openai.com/api/docs/guides/images-vision)
 - [@video@OpenAI Vision API Crash Course](https://www.youtube.com/watch?v=ZjkS11DSeEk)
