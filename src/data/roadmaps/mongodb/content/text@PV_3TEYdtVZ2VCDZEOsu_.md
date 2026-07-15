@@ -4,5 +4,5 @@ The `$text` operator in MongoDB performs full-text search on fields with text in
 
 Visit the following resources to learn more:
 
-- [@official@\$text](https://www.mongodb.com/docs/manual/reference/operator/query/text/)
+- [@official@$text](https://www.mongodb.com/docs/manual/reference/operator/query/text/)
 - [@article@Full-Text Search in MongoDB](https://devforid.medium.com/full-text-search-in-mongodb-655169b59fce)

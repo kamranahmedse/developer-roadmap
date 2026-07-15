@@ -5,5 +5,5 @@ The `$project` stage in MongoDB aggregation pipelines is used to reshape documen
 Visit the following resources to learn more:
 
 - [@official@Aggregation Pipeline](https://www.mongodb.com/docs/manual/core/aggregation-pipeline/)
-- [@official@\$project](https://www.mongodb.com/docs/manual/reference/operator/aggregation/project/)
-- [@official@\$group](https://www.mongodb.com/docs/manual/reference/operator/aggregation/group/)
+- [@official@$project](https://www.mongodb.com/docs/manual/reference/operator/aggregation/project/)
+- [@official@$group](https://www.mongodb.com/docs/manual/reference/operator/aggregation/group/)

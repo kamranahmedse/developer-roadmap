@@ -5,4 +5,4 @@ The `$gte` (greater than or equal to) operator in MongoDB selects documents wher
 Visit the following resources to learn more:
 
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
-- [@official@\$gte](https://www.mongodb.com/docs/manual/reference/operator/aggregation/gte/)
+- [@official@$gte](https://www.mongodb.com/docs/manual/reference/operator/aggregation/gte/)

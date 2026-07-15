@@ -4,5 +4,5 @@ Regular expressions in MongoDB are patterns used to match strings within documen
 
 Visit the following resources to learn more:
 
-- [@official@\$regex](https://www.mongodb.com/docs/manual/reference/operator/query/regex/)
+- [@official@$regex](https://www.mongodb.com/docs/manual/reference/operator/query/regex/)
 - [@article@Mastering Regex in MongoDB: A Beginner's Guide](https://medium.com/@jaydeepdnai.imscit20/mastering-regex-in-mongodb-a-beginners-guide-886bcb404725)

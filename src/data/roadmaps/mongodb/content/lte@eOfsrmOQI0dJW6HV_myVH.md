@@ -4,5 +4,5 @@ The `$lte` (less than or equal to) operator in MongoDB selects documents where a
 
 Visit the following resources to learn more:
 
-- [@official@\$lte](https://www.mongodb.com/docs/manual/reference/operator/aggregation/lte/)
+- [@official@$lte](https://www.mongodb.com/docs/manual/reference/operator/aggregation/lte/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

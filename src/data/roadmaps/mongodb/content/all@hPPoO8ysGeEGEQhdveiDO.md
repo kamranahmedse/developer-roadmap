@@ -4,5 +4,5 @@ The `$all` operator in MongoDB selects documents where an array field contains a
 
 Visit the following resources to learn more:
 
-- [@official@\$all](https://www.mongodb.com/docs/manual/reference/operator/query/all/)
-- [@article@\$all and \$elemMatch in MongoDB](https://dev.to/kawsarkabir/all-and-elemmatch-in-mongodb-4od6)
+- [@official@$all](https://www.mongodb.com/docs/manual/reference/operator/query/all/)
+- [@article@$all and $elemMatch in MongoDB](https://dev.to/kawsarkabir/all-and-elemmatch-in-mongodb-4od6)

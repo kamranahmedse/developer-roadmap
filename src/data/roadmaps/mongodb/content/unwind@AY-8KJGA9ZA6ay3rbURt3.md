@@ -4,5 +4,5 @@ The `$unwind` aggregation stage deconstructs array fields, creating separate doc
 
 Visit the following resources to learn more:
 
-- [@official@\$unwind](https://www.mongodb.com/docs/manual/reference/operator/aggregation/unwind/)
+- [@official@$unwind](https://www.mongodb.com/docs/manual/reference/operator/aggregation/unwind/)
 - [@article@Advanced Techniques with MongoDB: Mastering Lookup](https://medium.com/@akshatgupta1903/advanced-techniques-with-mongodb-mastering-lookup-and-unwind-acfc8a8ad5b9)

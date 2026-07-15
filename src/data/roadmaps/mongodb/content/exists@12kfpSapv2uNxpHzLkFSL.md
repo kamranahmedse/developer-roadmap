@@ -4,5 +4,5 @@ The `$exists` operator in MongoDB matches documents based on the presence or abs
 
 Visit the following resources to learn more:
 
-- [@official@\$exists](https://www.mongodb.com/docs/manual/reference/operator/query/exists/)
-- [@article@MongoDB \$exists Operator](https://sparkbyexamples.com/mongodb/using-mongodb-exists-operator/)
+- [@official@$exists](https://www.mongodb.com/docs/manual/reference/operator/query/exists/)
+- [@article@MongoDB $exists Operator](https://sparkbyexamples.com/mongodb/using-mongodb-exists-operator/)

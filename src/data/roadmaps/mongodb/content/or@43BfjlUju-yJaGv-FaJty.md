@@ -4,5 +4,5 @@ The `$or` operator in MongoDB performs logical OR operation on multiple query ex
 
 Visit the following resources to learn more:
 
-- [@official@\$or](https://www.mongodb.com/docs/manual/reference/operator/aggregation/or/)
+- [@official@$or](https://www.mongodb.com/docs/manual/reference/operator/aggregation/or/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

@@ -4,5 +4,5 @@ The `$nin` (not in) operator in MongoDB selects documents where a field value do
 
 Visit the following resources to learn more:
 
-- [@official@\$nin](https://www.mongodb.com/docs/manual/reference/operator/aggregation/nin/)
+- [@official@$nin](https://www.mongodb.com/docs/manual/reference/operator/aggregation/nin/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

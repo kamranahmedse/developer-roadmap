@@ -5,4 +5,4 @@ ObjectId is MongoDB's default primary key type, consisting of a 12-byte identifi
 Visit the following resources to learn more:
 
 - [@official@ObjectId](https://www.mongodb.com/docs/manual/reference/method/objectid/)
-- [@article@Usage of ObjectId \(\) in MongoDB with Examples](https://www.softwaretestinghelp.com/mongodb/objectid-mongodb/)
+- [@article@Usage of ObjectId () in MongoDB with Examples](https://www.softwaretestinghelp.com/mongodb/objectid-mongodb/)

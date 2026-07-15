@@ -4,5 +4,5 @@ The `$sort` aggregation stage orders documents by specified field values in asce
 
 Visit the following resources to learn more:
 
-- [@official@\$sort](https://www.mongodb.com/docs/manual/reference/operator/aggregation/sort/)
+- [@official@$sort](https://www.mongodb.com/docs/manual/reference/operator/aggregation/sort/)
 - [@article@Sort Records: How to Sort by Date, Name, and More](https://www.prisma.io/dataguide/mongodb/mongodb-sorting)

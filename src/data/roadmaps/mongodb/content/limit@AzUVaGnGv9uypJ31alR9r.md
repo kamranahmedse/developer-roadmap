@@ -4,5 +4,5 @@ The `$limit` aggregation stage restricts the number of documents passed to the n
 
 Visit the following resources to learn more:
 
-- [@official@\$limit](https://www.mongodb.com/docs/manual/reference/operator/aggregation/limit/)
+- [@official@$limit](https://www.mongodb.com/docs/manual/reference/operator/aggregation/limit/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

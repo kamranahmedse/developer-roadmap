@@ -4,5 +4,5 @@ The `$and` operator in MongoDB performs logical AND operation on multiple query 
 
 Visit the following resources to learn more:
 
-- [@official@\$and](https://www.mongodb.com/docs/manual/reference/operator/query/and/)
-- [@article@\$and operator](https://codeforgeek.com/and-operator-in-mongodb/)
+- [@official@$and](https://www.mongodb.com/docs/manual/reference/operator/query/and/)
+- [@article@$and operator](https://codeforgeek.com/and-operator-in-mongodb/)

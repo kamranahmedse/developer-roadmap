@@ -4,7 +4,7 @@ Aggregation in MongoDB is a powerful framework for data processing and transform
 
 Visit the following resources to learn more:
 
+- [@course@Fundamentals of Data Transformation Skill Badge](https://learn.mongodb.com/courses/fundamentals-of-data-transformation)
 - [@official@Aggregation Operations](https://www.mongodb.com/docs/manual/aggregation/)
 - [@official@MongoDB Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
 - [@article@How To Use Aggregations in MongoDB](https://www.digitalocean.com/community/tutorials/how-to-use-aggregations-in-mongodb)
-- [@course@Fundamentals of Data Transformation Skill Badge](https://learn.mongodb.com/courses/fundamentals-of-data-transformation)

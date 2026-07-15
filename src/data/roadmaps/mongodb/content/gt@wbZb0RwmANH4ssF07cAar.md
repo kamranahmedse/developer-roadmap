@@ -5,4 +5,4 @@ The `$gt` (greater than) operator in MongoDB selects documents where a field val
 Visit the following resources to learn more:
 
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
-- [@official@\$gt](https://www.mongodb.com/docs/manual/reference/operator/aggregation/gt/)
+- [@official@$gt](https://www.mongodb.com/docs/manual/reference/operator/aggregation/gt/)

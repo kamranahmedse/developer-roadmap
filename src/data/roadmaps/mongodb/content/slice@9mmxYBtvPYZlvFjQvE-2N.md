@@ -4,5 +4,5 @@ The `$slice` projection operator in MongoDB returns a subset of array elements f
 
 Visit the following resources to learn more:
 
-- [@official@\$slice](https://www.mongodb.com/docs/manual/reference/operator/aggregation/slice/)
+- [@official@$slice](https://www.mongodb.com/docs/manual/reference/operator/aggregation/slice/)
 - [@article@MongoDB slice - Syntax & Examples](https://database.guide/mongodb-slice/)

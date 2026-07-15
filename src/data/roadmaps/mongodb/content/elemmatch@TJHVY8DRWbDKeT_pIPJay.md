@@ -4,5 +4,5 @@ The `$elemMatch` operator in MongoDB matches documents containing array elements
 
 Visit the following resources to learn more:
 
-- [@official@\$elemMatch](https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/)
-- [@article@MongoDB \$elemMatch Query Operator](https://codeforgeek.com/elemmatch-in-mongodb/)
+- [@official@$elemMatch](https://www.mongodb.com/docs/manual/reference/operator/query/elemmatch/)
+- [@article@MongoDB $elemMatch Query Operator](https://codeforgeek.com/elemmatch-in-mongodb/)

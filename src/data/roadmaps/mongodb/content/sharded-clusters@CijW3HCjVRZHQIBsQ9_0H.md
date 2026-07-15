@@ -4,7 +4,7 @@ Sharded Clusters enable horizontal scaling by distributing data across multiple 
 
 Visit the following resources to learn more:
 
+- [@course@Sharding Strategies Skill Badge](https://learn.mongodb.com/courses/sharding-strategies)
 - [@official@Deploy a Self-Managed Sharded Cluster](https://www.mongodb.com/docs/manual/tutorial/deploy-shard-cluster/)
 - [@official@Sharding](https://www.mongodb.com/docs/manual/sharding/)
 - [@article@MongoDB Sharding: A Step by Step Guide to Setup A MongoDB Shard Cluster](https://medium.com/@sanklecha.harsh/mongodb-sharding-a-step-by-step-guide-to-setup-a-mongodb-shard-cluster-98668f53a078)
-- [@course@Sharding Strategies Skill Badge](https://learn.mongodb.com/courses/sharding-strategies)

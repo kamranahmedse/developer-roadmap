@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@SQL vs NoSQL: What's the Difference?](https://www.mongodb.com/resources/basics/databases/nosql-explained/nosql-vs-sql)
 - [@official@What is NoSQL? - MongoDB](https://www.mongodb.com/resources/basics/databases/nosql-explained)
-- [@article@What is SQL? - Microsoft](https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15)
-- [@article@SQL vs NoSQL: When to Use What and Why](https://medium.com/data-science-collective/sql-vs-nosql-when-to-use-what-and-why-from-someone-whos-used-both-at-scale-2547382758f5)
+- [@article@MongoDB vs. PostgreSQL: Key differences and when to use each](https://roadmap.sh/mongodb/vs-postgresql)

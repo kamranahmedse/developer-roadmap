@@ -4,5 +4,5 @@ The `$eq`operator in MongoDB matches documents where a field value equals a spec
 
 Visit the following resources to learn more:
 
-- [@official@\$eq](https://www.mongodb.com/docs/manual/reference/operator/query/eq/)
-- [@article@MongoDB \$eq Aggregation Pipeline Operator](https://database.guide/mongodb-eq/)
+- [@official@$eq](https://www.mongodb.com/docs/manual/reference/operator/query/eq/)
+- [@article@MongoDB $eq Aggregation Pipeline Operator](https://database.guide/mongodb-eq/)

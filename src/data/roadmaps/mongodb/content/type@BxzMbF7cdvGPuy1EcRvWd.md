@@ -4,6 +4,6 @@ The `$type` operator in MongoDB selects documents based on the BSON data type of
 
 Visit the following resources to learn more:
 
-- [@official@$\type](https://www.mongodb.com/docs/manual/reference/operator/query/type/)
+- [@official@$\\type](https://www.mongodb.com/docs/manual/reference/operator/query/type/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)
 - [@official@BSON Types](https://www.mongodb.com/docs/manual/reference/bson-types/)

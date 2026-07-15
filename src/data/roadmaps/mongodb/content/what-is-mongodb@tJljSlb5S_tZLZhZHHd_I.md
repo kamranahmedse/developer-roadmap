@@ -4,7 +4,7 @@ MongoDB is a NoSQL, document-oriented database designed for scalability, flexibi
 
 Visit the following resources to learn more:
 
+- [@course@MongoDB Overview Skill Badge](https://learn.mongodb.com/courses/mongodb-overview)
 - [@official@MongoDB - The Modern No SQL Database](https://www.mongodb.com/)
 - [@official@MongoDB Documentation](https://www.mongodb.com/docs)
 - [@official@What is Atlas?](https://www.mongodb.com/docs/atlas/)
-- [@course@MongoDB Overview Skill Badge](https://learn.mongodb.com/courses/mongodb-overview)

@@ -4,8 +4,8 @@ Replica Sets in MongoDB provide high availability and data redundancy through a 
 
 Visit the following resources to learn more:
 
+- [@course@Cluster Reliability Skill Badge](https://learn.mongodb.com/courses/cluster-reliability)
+- [@course@Data Resilience: Self-Managed Skill Badge](https://learn.mongodb.com/courses/data-resilience-self-managed)
 - [@official@Replication](https://www.mongodb.com/docs/manual/replication/)
 - [@official@Replication in MongoDB](https://learn.mongodb.com/learn/course/replication-in-mongodb/lesson-5-read-and-write-concerns-with-mongodb-deployments/learn?client=customer&page=2)
 - [@article@Replica Sets and Shards in MongoDB: Architecture and Benefits](https://dev-aditya.medium.com/replica-sets-and-shards-in-mongodb-architecture-and-benefits-a3c83f39e4f0)
-- [@course@Cluster Reliability Skill Badge](https://learn.mongodb.com/courses/cluster-reliability)
-- [@course@Data Resilience: Self-Managed Skill Badge](https://learn.mongodb.com/courses/data-resilience-self-managed)

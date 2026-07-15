@@ -4,6 +4,6 @@ MongoDB Atlas is a fully-managed cloud database service offered by MongoDB that 
 
 Visit the following resources to learn more:
 
+- [@course@Atlas Essentials Course | MongoDB University](https://learn.mongodb.com/learning-paths/atlas-essentials)
 - [@official@MongoDB Atlas | The Modern, Multi-Cloud Database](https://www.mongodb.com/atlas)
 - [@official@What is Atlas?](https://www.mongodb.com/docs/atlas/)
-- [@course@Atlas Essentials Course | MongoDB University](https://learn.mongodb.com/learning-paths/atlas-essentials)

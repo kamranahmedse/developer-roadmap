@@ -4,5 +4,5 @@ Boolean data type in MongoDB stores true or false values, representing logical s
 
 Visit the following resources to learn more:
 
-- [@official@\$type](https://www.mongodb.com/docs/manual/reference/operator/query/type/)
+- [@official@$type](https://www.mongodb.com/docs/manual/reference/operator/query/type/)
 - [@official@How to Index Boolean Values](https://www.mongodb.com/docs/atlas/atlas-search/field-types/boolean-type/)

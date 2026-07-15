@@ -4,5 +4,5 @@ The `$ne` (not equal) operator in MongoDB selects documents where a field value 
 
 Visit the following resources to learn more:
 
-- [@official@\$ne](https://www.mongodb.com/docs/manual/reference/operator/aggregation/ne/)
+- [@official@$ne](https://www.mongodb.com/docs/manual/reference/operator/aggregation/ne/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

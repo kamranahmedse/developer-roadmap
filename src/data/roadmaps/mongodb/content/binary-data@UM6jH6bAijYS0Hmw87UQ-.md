@@ -4,6 +4,6 @@ Binary data in MongoDB stores non-textual data like images, files, and encoded c
 
 Visit the following resources to learn more:
 
-- [@official@BinData \(\)](https://www.mongodb.com/docs/manual/reference/method/bindata/)
+- [@official@BinData ()](https://www.mongodb.com/docs/manual/reference/method/bindata/)
 - [@official@BSON Types](https://www.mongodb.com/docs/manual/reference/bson-types/)
 - [@article@Understanding BSON: The Backbone of MongoDB's Data Format](https://dev.to/abhay_yt_52a8e72b213be229/understanding-bson-the-backbone-of-mongodbs-data-format-11oa)

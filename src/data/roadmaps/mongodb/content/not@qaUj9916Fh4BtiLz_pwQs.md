@@ -4,5 +4,5 @@ The `$not` operator in MongoDB performs logical negation on a query expression, 
 
 Visit the following resources to learn more:
 
-- [@official@\$not](https://www.mongodb.com/docs/manual/reference/operator/aggregation/not/)
+- [@official@$not](https://www.mongodb.com/docs/manual/reference/operator/aggregation/not/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

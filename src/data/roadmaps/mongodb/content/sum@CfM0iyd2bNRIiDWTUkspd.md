@@ -4,5 +4,5 @@ The `$sum` aggregation operator calculates the total sum of numeric values acros
 
 Visit the following resources to learn more:
 
-- [@official@\$sum](https://www.mongodb.com/docs/manual/reference/operator/aggregation/sum/)
+- [@official@$sum](https://www.mongodb.com/docs/manual/reference/operator/aggregation/sum/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

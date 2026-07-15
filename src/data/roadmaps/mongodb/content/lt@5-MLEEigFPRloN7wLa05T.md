@@ -4,5 +4,5 @@ The $lt (less than) operator in MongoDB selects documents where a field value is
 
 Visit the following resources to learn more:
 
-- [@official@\$lt](https://www.mongodb.com/docs/manual/reference/operator/aggregation/lt/)
+- [@official@$lt](https://www.mongodb.com/docs/manual/reference/operator/aggregation/lt/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

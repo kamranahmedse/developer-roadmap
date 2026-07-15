@@ -5,5 +5,5 @@ Query operators in MongoDB enable sophisticated document filtering and selection
 Visit the following resources to learn more:
 
 - [@official@Query and Projection Operators](https://www.mongodb.com/docs/manual/reference/operator/query/)
-- [@official@\$project](https://www.mongodb.com/docs/manual/reference/operator/aggregation/project/)
+- [@official@$project](https://www.mongodb.com/docs/manual/reference/operator/aggregation/project/)
 - [@official@Aggregation Operators](https://www.mongodb.com/docs/manual/reference/operator/aggregation/)

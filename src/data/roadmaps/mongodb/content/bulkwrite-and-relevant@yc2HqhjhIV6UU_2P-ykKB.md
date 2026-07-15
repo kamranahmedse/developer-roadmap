@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@official@db.collection.bulkWrite\(\)](https://www.mongodb.com/docs/manual/reference/method/db.collection.bulkwrite/)
+- [@official@db.collection.bulkWrite()](https://www.mongodb.com/docs/manual/reference/method/db.collection.bulkwrite/)
 - [@article@MongoDB: InsertMany vs BulkWrite](https://medium.com/@msbytedev/mongodb-insertmany-vs-bulkwrite-2f9da91b544c)
