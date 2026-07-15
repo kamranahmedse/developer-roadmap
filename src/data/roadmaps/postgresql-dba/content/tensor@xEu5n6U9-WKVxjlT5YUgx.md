@@ -4,6 +4,6 @@ Tensor Query Language (TQL) is a specialized SQL-like language designed for quer
 
 TQL enables users to perform complex queries on datasets, including operations like embedding search, array slicing, and custom numeric computations. This flexibility supports a wide range of applications, from simple data retrieval to sophisticated data preprocessing steps needed for training machine learning models. The language also integrates with version control, allowing users to manage and query different versions of their datasets seamlessly.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Tensor Query Language Documentation](https://docs.activeloop.ai/examples/tql)

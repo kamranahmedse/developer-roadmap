@@ -4,7 +4,7 @@ The Spatial Generalized Search Tree (SP-GiST) is an advanced indexing structure 
 
 SP-GiST is ideal for applications that involve complex spatial queries and need efficient indexing mechanisms for large datasets. It works by dividing the data space into smaller, manageable partitions, which helps in optimizing search operations and improving query performance. This structure is particularly beneficial in geographic information systems (GIS), spatial databases, and applications dealing with high-dimensional data.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@PostgreSQL SP-GiST](https://www.slingacademy.com/article/postgresql-sp-gist-space-partitioned-generalized-search-tree/)
 - [@article@(The Many) Spatial Indexes of PostGIS](https://www.crunchydata.com/blog/the-many-spatial-indexes-of-postgis)

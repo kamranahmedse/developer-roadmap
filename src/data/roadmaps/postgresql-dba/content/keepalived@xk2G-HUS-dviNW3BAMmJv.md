@@ -4,7 +4,7 @@ Keepalived is a robust and widely-used open-source solution for load balancing a
 
 Keepalived achieves this by utilizing the Linux Virtual Server (LVS) module and the Virtual Router Redundancy Protocol (VRRP). For PostgreSQL database systems, Keepalived can be an advantageous addition to your infrastructure by offering fault tolerance and load balancing. With minimal configuration, it distributes read-only queries among multiple replicated PostgreSQL servers or divides transaction processing across various nodes – ensuring an efficient and resilient system.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Keepalived](https://www.keepalived.org/)
 - [@opensource@acassen/keepalived](https://github.com/acassen/keepalived)

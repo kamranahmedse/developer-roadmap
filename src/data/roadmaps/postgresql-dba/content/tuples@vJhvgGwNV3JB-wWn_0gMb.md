@@ -4,7 +4,7 @@ In the relational model, a **tuple** is a fundamental concept that represents a 
 
 For example, consider a `users` table with columns `id`, `name`, and `email`. A sample tuple in this table could be `(1, 'John Smith', 'john.smith@example.com')`, where each value corresponds to its respective column. PostgreSQL provides a variety of operations that can be performed on tuples.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@How PostgreSQL Freezes Tuples](https://medium.com/@hnasr/how-postgres-freezes-tuples-4a9931261fc)
 - [@article@Whats the difference between and tuple and a row?](https://stackoverflow.com/questions/19799282/whats-the-difference-between-a-tuple-and-a-row-in-postgres)

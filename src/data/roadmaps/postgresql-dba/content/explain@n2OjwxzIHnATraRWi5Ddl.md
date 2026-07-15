@@ -4,7 +4,7 @@ Understanding the performance and efficiency of your queries is crucial when wor
 
 `EXPLAIN` generates a query execution plan without actually executing the query. It shows the nodes in the plan tree, the order in which they will be executed, and the estimated cost of each operation.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Using EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html)
 - [@article@PostgreSQL EXPLAIN](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-explain/)
