@@ -6,6 +6,7 @@ The Agile software development methodology is one of the simplest and most effec
 
 Visit the following resources to learn more:
 
+- [@article@Agile Methodology: What is Agile Methodology in Software Testing?](https://www.geeksforgeeks.org/software-testing/what-is-agile-methodology/)
 - [@article@Agile Methodology: What is Agile Model in Software Testing?](https://www.guru99.com/agile-scrum-extreme-testing.html)
 - [@article@Manifesto for Agile Software Development](https://agilemanifesto.org/)
 - [@feed@Explore top posts about Agile](https://app.daily.dev/tags/agile?ref=roadmapsh)
