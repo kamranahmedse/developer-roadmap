@@ -1,0 +1,3 @@
+# Interface States
+ 
+Interface states describe the different conditions a component or screen can be in, such as default, hover, disabled, loading, or error. Designing for these states ensures the product behaves predictably and gives clear feedback in situations beyond the ideal, happy path. Overlooking states like empty or error conditions is a common cause of confusing or broken-feeling experiences.

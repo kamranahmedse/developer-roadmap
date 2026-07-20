@@ -1,0 +1,3 @@
+# Risk Identification
+ 
+Risk identification is the process of proactively spotting potential problems, such as technical limitations, unclear requirements, or unvalidated user needs, before they derail a project. It draws on input from design, engineering, and business stakeholders to surface risks that any single perspective might miss. Identified risks are typically prioritized and addressed through further research, prototyping, or technical spikes.

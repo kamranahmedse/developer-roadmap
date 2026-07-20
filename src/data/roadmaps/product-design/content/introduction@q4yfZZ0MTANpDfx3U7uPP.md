@@ -1,0 +1,3 @@
+# Introduction
+ 
+Product design is the practice of shaping a product's experience, look, and behavior so it solves a real user problem while supporting business goals. It spans research, strategy, interaction design, visual design, and collaboration with engineering through to launch and iteration. The discipline sits at the intersection of user experience and business outcomes, rather than focusing on interfaces alone.

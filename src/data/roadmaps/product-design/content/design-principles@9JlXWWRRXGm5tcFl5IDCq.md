@@ -1,0 +1,3 @@
+# Design Principles
+ 
+Design principles are the guiding rules a team commits to when making design decisions, covering things like putting users first, favoring function over polish, and staying consistent across a product. They act as a shared reference so individual designers make similar calls even when working independently. Principles like these get applied throughout every later stage, from research to shipping.

@@ -1,0 +1,3 @@
+# Brainstorming
+ 
+Brainstorming is a group activity where participants generate as many ideas as possible for solving a problem, typically without judging or filtering them in the moment. The emphasis on quantity over quality early on helps surface unconventional ideas that might otherwise get dismissed too soon. Ideas generated here are usually filtered and refined in later steps of the ideation process.

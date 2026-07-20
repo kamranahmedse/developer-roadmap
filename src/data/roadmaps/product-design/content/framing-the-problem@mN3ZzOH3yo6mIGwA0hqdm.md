@@ -1,0 +1,3 @@
+# Framing the Problem
+ 
+Framing the problem is the step of turning research findings into a clear, well-defined problem statement that guides design work. It uses tools like empathy maps, personas, jobs-to-be-done, and How Might We questions to translate raw insight into an actionable direction. A well-framed problem keeps a team focused on solving the right issue instead of jumping straight to solutions.

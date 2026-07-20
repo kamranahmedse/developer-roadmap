@@ -1,0 +1,3 @@
+# A/B Testing
+ 
+A/B testing compares two versions of a design, showing each version to a separate group of users, to measure which one performs better against a specific metric. Because only one variable typically changes between versions, teams can attribute any difference in outcome to that specific change with reasonable confidence. It is one of the most common ways product teams validate design decisions with real user data before rolling them out fully.

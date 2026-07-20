@@ -1,0 +1,3 @@
+# Design Tokens
+ 
+Design tokens are named, reusable values, such as a specific color, spacing unit, or font size, that store core design decisions in a single place. Instead of hardcoding a color value on every screen, a designer references a token like "primary-color" that can be updated everywhere at once. This makes it much easier to maintain consistency and make sweeping visual changes across a large product.

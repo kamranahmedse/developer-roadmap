@@ -1,0 +1,3 @@
+# Product Design vs UI
+ 
+Product design is concerned with the overall problem being solved, the user's journey, and business impact, while UI design focuses specifically on the visual and interactive surface, such as layout, color, and components. A product designer typically owns decisions about what the product should do, while a UI designer focuses on how it looks and feels to use. In smaller teams, one person often does both.

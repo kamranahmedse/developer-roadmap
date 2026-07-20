@@ -1,0 +1,3 @@
+# Agile UX, Lean UX
+ 
+Agile UX and Lean UX are approaches to design that fit within iterative, fast-moving development cycles rather than lengthy upfront design phases. They favor small, testable increments of design work, tight feedback loops, and close collaboration with engineering throughout a sprint. These approaches are common in teams that release frequently and need design to keep pace with development.

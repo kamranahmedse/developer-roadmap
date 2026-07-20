@@ -1,0 +1,3 @@
+# Feasibility Assessment
+ 
+Feasibility assessment evaluates whether a proposed design or feature can realistically be built given the team's technical capabilities, timeline, and resources. It usually involves close collaboration with engineers to estimate effort and identify potential blockers. This assessment often happens alongside risk management, since infeasible ideas represent one of the biggest risks to a project's success.

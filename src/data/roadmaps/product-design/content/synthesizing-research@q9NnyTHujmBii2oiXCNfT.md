@@ -1,0 +1,3 @@
+# Synthesizing Research
+ 
+Synthesizing research means analyzing raw data from interviews, surveys, and observations to identify patterns, themes, and key insights. It turns a large volume of individual data points into a smaller set of clear, actionable findings a team can act on. This step usually happens after gathering information and before framing the problem, since the synthesized insights shape how the problem gets defined.

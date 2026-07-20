@@ -1,0 +1,3 @@
+# Navigation
+ 
+Navigation refers to the system of menus, links, and structural elements that let users move between different parts of a product. Well-designed navigation reflects the underlying information architecture, making the product's structure clear and predictable. Poor navigation is a common cause of user frustration, since it can leave people unable to find content or features they know exist.

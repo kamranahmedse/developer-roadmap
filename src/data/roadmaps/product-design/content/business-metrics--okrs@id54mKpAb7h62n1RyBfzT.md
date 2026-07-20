@@ -1,0 +1,3 @@
+# Business Metrics & OKRs
+ 
+Business metrics and OKRs are the specific measures and objectives a company tracks to judge whether it is succeeding, such as revenue, growth rate, or customer retention. OKRs pair an objective with measurable key results, giving teams a clear way to check progress. Product design decisions are often justified or prioritized based on how they are expected to move these metrics.

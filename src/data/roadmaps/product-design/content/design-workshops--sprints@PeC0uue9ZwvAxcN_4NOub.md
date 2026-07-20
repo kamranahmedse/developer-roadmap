@@ -1,0 +1,3 @@
+# Design Workshops & Sprints
+ 
+Design workshops and sprints are structured, time-boxed sessions where a team collaborates intensively to solve a specific problem, often over a few days. They typically combine activities like sketching, prioritization, and prototyping to move quickly from a vague problem to a testable idea. This approach is used when a team needs rapid alignment and a concrete output in a short amount of time.

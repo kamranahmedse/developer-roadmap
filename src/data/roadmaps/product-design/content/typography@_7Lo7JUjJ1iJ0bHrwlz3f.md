@@ -1,0 +1,3 @@
+# Typography
+ 
+Typography covers the choice and use of fonts, sizes, weights, and spacing to make text readable and establish visual hierarchy within a product. Poor typography choices can make an interface feel cluttered or hard to read, even if the underlying content is well written. Typography decisions are usually codified into a design system so headings, body text, and labels stay consistent throughout a product.

@@ -1,0 +1,3 @@
+# Operating at Scale
+ 
+Operating at scale covers the practices needed to keep design consistent and efficient as a product, team, or company grows larger. It includes disciplines like DesignOps, which manages the processes and tools supporting a design team, and multi-platform design, which addresses maintaining a consistent experience across devices. These practices become necessary once a single ad hoc process can no longer keep up with growing complexity.

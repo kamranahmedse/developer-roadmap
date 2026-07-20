@@ -1,0 +1,3 @@
+# Content Organization
+ 
+Content organization is the process of grouping and labeling information within a product so it matches how users think about and search for it. Poorly organized content can hide useful information behind confusing categories or unclear labels, even if the content itself is well written. This work often draws on card sorting or similar research techniques to validate that groupings make sense to real users.

@@ -1,0 +1,3 @@
+# Design Systems
+ 
+A design system is a shared collection of reusable components, patterns, and guidelines, including visual foundations like color and typography, that keeps a product consistent as it grows. It gives designers and engineers a common language and set of building blocks instead of recreating the same elements repeatedly. Well-maintained design systems become especially valuable as a product scales across multiple teams or platforms.

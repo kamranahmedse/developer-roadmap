@@ -1,0 +1,3 @@
+# Site Maps
+ 
+A site map is a diagram that shows the overall structure of a product's pages or screens and how they relate to one another in a hierarchy. It gives a bird's eye view of the entire product, which is useful for planning navigation and spotting gaps or redundant sections. Site maps are typically created early in the information architecture process, before individual screens are designed.

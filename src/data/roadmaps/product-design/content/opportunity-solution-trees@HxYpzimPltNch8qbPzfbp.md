@@ -1,0 +1,3 @@
+# Opportunity Solution Trees
+ 
+An opportunity solution tree is a visual framework that maps a desired outcome at the top, branching down into different opportunities, and further down into specific solutions and experiments for each. It helps teams see multiple possible paths to a goal instead of committing early to a single solution. This structure makes it easier to compare and prioritize different ways of solving the same underlying opportunity.

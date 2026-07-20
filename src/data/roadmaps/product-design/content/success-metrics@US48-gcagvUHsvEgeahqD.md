@@ -1,0 +1,3 @@
+# Success Metrics
+ 
+Success metrics are the specific, quantifiable indicators used to judge whether a product or feature is achieving its intended goal, such as retention rate, conversion rate, or task completion time. Choosing the right metrics early prevents teams from optimizing for numbers that look good but do not reflect real user value. These metrics are revisited later during measurement and iteration to judge actual performance.

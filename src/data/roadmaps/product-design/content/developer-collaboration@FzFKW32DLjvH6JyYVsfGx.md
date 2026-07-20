@@ -1,0 +1,3 @@
+# Developer Collaboration
+ 
+Developer collaboration is the ongoing communication between designers and engineers throughout a project, not just at the point of handoff. Involving developers early can surface technical constraints or better implementation approaches before a design is finalized. This continuous relationship helps prevent late-stage surprises that force design changes during development.

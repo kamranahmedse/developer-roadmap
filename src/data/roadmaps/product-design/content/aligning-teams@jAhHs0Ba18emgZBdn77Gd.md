@@ -1,0 +1,3 @@
+# Aligning Teams
+ 
+Aligning teams is the ongoing work of getting stakeholders, designers, and engineers to agree on direction, priorities, and process. It includes practices like stakeholder alignment, adopting shared methods such as Agile UX or Lean UX, and running collaborative design workshops or sprints. Strong alignment reduces friction and rework later in a project caused by misunderstandings about goals or approach.

@@ -1,0 +1,3 @@
+# Engineering Collaboration
+ 
+Engineering collaboration covers the practices that keep designers and developers working together effectively, including preparing for launch, handing off designs clearly, and maintaining ongoing communication during development. Strong collaboration reduces the gap between what was designed and what actually gets built. This relationship becomes especially important as a product moves from design into active development and release.

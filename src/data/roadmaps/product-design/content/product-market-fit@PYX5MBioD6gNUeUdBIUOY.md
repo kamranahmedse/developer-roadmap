@@ -1,0 +1,3 @@
+# Product-Market Fit
+ 
+Product-market fit describes the point at which a product satisfies strong market demand, shown by users actively adopting, retaining, and recommending it. Before reaching this point, teams typically iterate heavily on the product based on user feedback and usage data. Many product decisions, including which features to prioritize, are shaped by how close or far the product is from this fit.

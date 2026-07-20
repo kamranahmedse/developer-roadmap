@@ -1,0 +1,3 @@
+# Experimentation
+ 
+Experimentation is the practice of testing design or product changes with real users under controlled conditions to measure their actual effect, commonly through methods like A/B testing and feature flags. It replaces guesswork with evidence about whether a specific change improves or harms a chosen metric. This approach is central to a data-informed process of continuous improvement.

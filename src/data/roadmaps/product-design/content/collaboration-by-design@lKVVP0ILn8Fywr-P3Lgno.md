@@ -1,0 +1,3 @@
+# Collaboration by Design
+ 
+Collaboration by design means treating design as a shared, cross-functional activity involving product managers, engineers, and other stakeholders rather than something done in isolation. Design workshops, reviews, and shared documentation are common practices that support this. It reflects the reality that good product decisions usually depend on input from multiple disciplines, not just the designer.

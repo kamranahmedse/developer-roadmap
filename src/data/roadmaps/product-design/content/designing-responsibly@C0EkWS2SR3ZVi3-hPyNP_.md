@@ -1,0 +1,3 @@
+# Designing Responsibly
+ 
+Designing responsibly means considering the broader impact of design decisions on users and society, beyond just business metrics or user engagement. It includes practices like ethical design, which questions whether a pattern manipulates users unfairly, and inclusive design, which ensures products work for people with diverse needs and backgrounds. This area has grown in importance as design has become more capable of shaping user behavior at scale.

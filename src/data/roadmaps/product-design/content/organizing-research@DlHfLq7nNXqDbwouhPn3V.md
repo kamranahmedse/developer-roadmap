@@ -1,0 +1,3 @@
+# Organizing Research
+ 
+Organizing research is the process of consolidating findings from multiple research methods into a usable, shared format for the team. It includes synthesizing raw data into clear insights and storing findings in a research repository so they remain accessible over time. Without this step, valuable research risks being forgotten or repeated unnecessarily by different team members.

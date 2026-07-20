@@ -1,0 +1,3 @@
+# Iteration over Perfection
+ 
+This principle favors releasing a workable version of a design and improving it based on real feedback, instead of trying to perfect it before anyone uses it. Waiting for a flawless design often means delaying valuable learning about how users actually respond. It ties closely to practices like A/B testing and continuous improvement that rely on live feedback to guide refinement.

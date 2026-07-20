@@ -1,0 +1,3 @@
+# Business & User Needs
+ 
+Balancing business and user needs means weighing what would benefit users against what the business requires to remain viable, such as revenue or strategic goals. A design that ignores business needs may not survive as a sustainable product, while one that ignores user needs may fail to gain adoption. Prioritization decisions usually involve finding the overlap between these two sets of needs.

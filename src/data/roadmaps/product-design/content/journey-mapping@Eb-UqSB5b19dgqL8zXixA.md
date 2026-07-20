@@ -1,0 +1,3 @@
+# Journey Mapping
+ 
+Journey mapping visualizes the full sequence of steps a user takes to accomplish a goal, often across multiple touchpoints and over an extended period of time. It typically captures actions, thoughts, and emotions at each stage, highlighting moments of friction or delight. Teams use it to spot gaps in the experience that would be easy to miss when looking at a single screen in isolation.

@@ -1,0 +1,3 @@
+# Task Flows
+ 
+A task flow maps the specific steps required to complete a single task within a product, similar to a user flow but typically narrower in scope and without branching alternate paths. It is used to closely examine and optimize one particular interaction, such as completing a checkout or resetting a password. This detailed view helps identify unnecessary steps or friction within a specific task.

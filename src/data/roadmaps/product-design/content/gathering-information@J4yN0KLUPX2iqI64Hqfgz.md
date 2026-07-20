@@ -1,0 +1,3 @@
+# Gathering Information
+ 
+Gathering information is the first step of the discover phase, where a team collects raw data about users, their behaviors, and their problems. It uses a mix of methods such as surveys, interviews, contextual inquiry, heatmaps, and session recordings, depending on what kind of insight is needed. This information becomes the foundation for later steps like mapping context and framing the problem.

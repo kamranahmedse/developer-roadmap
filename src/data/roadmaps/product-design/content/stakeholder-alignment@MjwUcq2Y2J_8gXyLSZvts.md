@@ -1,0 +1,3 @@
+# Stakeholder Alignment
+ 
+Stakeholder alignment means ensuring that key decision-makers across the business share a common understanding of a product's direction and priorities. It typically involves regular communication, shared documentation, and structured meetings to surface disagreements early rather than after work is done. Without this alignment, a design can face late-stage pushback that forces costly rework.
