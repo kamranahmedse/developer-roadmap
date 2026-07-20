@@ -1,6 +1,6 @@
-# Avoid Choice Overload
-
-Choice overload occurs when users face too many options, leading to decision paralysis, anxiety, and dissatisfaction. As a UX designer, it's important to simplify decision-making by limiting the number of options to 5-7 at a time, prioritizing the most relevant choices. Organizing options into logical categories with visual cues can help users navigate their selections more easily. Implementing smart defaults can streamline decisions by pre-selecting commonly used options, while advanced filtering and sorting features allow users to refine their choices in complex scenarios. By addressing choice overload with these strategies, you can enhance user experience and facilitate a more seamless decision-making process.
+# Avoid Direct Payments
+ 
+Avoiding direct payments means reducing the visible friction of parting with money, for example by using stored credit, points, or a saved card instead of asking users to re-enter payment details each time. Research shows the physical or visible act of paying creates psychological pain that can reduce purchase likelihood. Reducing that friction supports a more favorable conscious evaluation of the purchase decision.
 
 Visit the following resources to learn more:
 

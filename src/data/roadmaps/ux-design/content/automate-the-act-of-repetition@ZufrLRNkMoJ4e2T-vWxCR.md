@@ -1,6 +1,6 @@
 # Automate the Act of Repetition
-
-To enhance user experience and streamline interactions, it's crucial to automate repetitive tasks that often lead to frustration and decreased efficiency. Properly implemented automation can save time, reduce errors, and improve user satisfaction by minimizing tedious actions. As a UX designer, consider strategies such as pre-filling forms with previously entered information, remembering user preferences, providing smart suggestions based on past behavior, enabling batch actions for group tasks, and offering keyboard shortcuts for common actions. By focusing on these automation techniques, you can create a seamless and enjoyable experience that meets users' needs and increases retention.
+ 
+Automating repetition removes the user from having to repeat an action manually once it has been done or approved once. Recurring subscriptions, auto-renewals, and scheduled backups are examples where the system takes over a task after the first setup. This reduces the chance that a user abandons a beneficial habit simply because they forgot to repeat it.
 
 Visit the following resources to learn more:
 
