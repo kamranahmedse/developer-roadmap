@@ -1,3 +1,3 @@
 # Micro-interactions
- 
+
 Micro-interactions are small, focused moments of feedback within a product, such as a button changing color when clicked or a checkbox animating when checked. They confirm to users that their action was registered and add a sense of responsiveness to an interface. Though subtle, well-designed micro-interactions can meaningfully improve how polished and trustworthy a product feels.

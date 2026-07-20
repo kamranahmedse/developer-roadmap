@@ -1,3 +1,3 @@
 # Voice & Tone
- 
+
 Voice and tone define the personality and style of a product's writing, and how that style shifts depending on the situation, such as a playful tone in a success message versus a serious tone in an error about lost data. A consistent voice helps a product feel coherent and trustworthy across different touchpoints. Tone can flex situationally while the underlying voice generally stays consistent.

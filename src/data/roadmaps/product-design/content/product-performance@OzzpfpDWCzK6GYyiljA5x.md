@@ -1,3 +1,3 @@
 # Product Performance
- 
+
 Product performance measures how well a product is achieving its intended goals after launch, using data like product analytics and structured frameworks such as HEART. This step connects back to the success metrics defined earlier in the process, showing whether a product is actually delivering the value it was designed to. Ongoing measurement here feeds directly into decisions about what to improve next.

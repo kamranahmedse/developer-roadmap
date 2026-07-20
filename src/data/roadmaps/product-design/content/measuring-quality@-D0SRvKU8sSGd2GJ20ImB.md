@@ -1,3 +1,3 @@
 # Measuring Quality
- 
+
 Measuring quality is the process of evaluating how well a design performs against established standards, using methods like UX benchmarking and expert review. Unlike usability testing with real users, these methods often rely on structured criteria or experienced evaluators to judge quality. This step helps teams track whether design quality is improving or declining over time and across products.

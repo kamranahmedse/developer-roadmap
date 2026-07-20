@@ -1,3 +1,3 @@
 # Continuous Improvement
- 
+
 Continuous improvement is the ongoing practice of using data, feedback, and experimentation to make incremental refinements to a product after launch. Rather than treating a product as finished once shipped, teams keep monitoring performance and iterating based on what they learn. This mindset closes the loop back to earlier stages like research and testing, treating design as a repeating cycle rather than a one-time project.

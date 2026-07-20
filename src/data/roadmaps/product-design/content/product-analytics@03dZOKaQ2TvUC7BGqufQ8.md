@@ -1,3 +1,3 @@
 # Product Analytics
- 
+
 Product analytics involves collecting and analyzing data on how users actually interact with a product, such as which features they use, how often, and where they drop off. This quantitative data complements qualitative research by showing patterns across a large number of users rather than a small sample. Teams use product analytics to identify where to focus further research or design improvements.

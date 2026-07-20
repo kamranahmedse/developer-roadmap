@@ -1,3 +1,3 @@
 # Microcopy
- 
+
 Microcopy refers to the small pieces of text embedded throughout an interface, such as button labels, tooltips, placeholder text, and error messages. Despite being brief, microcopy has an outsized effect on how easy and confident a user feels while completing a task. Well-crafted microcopy often prevents confusion at exactly the moment a user is about to make a decision or take an action.

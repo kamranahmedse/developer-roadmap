@@ -1,3 +1,3 @@
 # Visual Hierarchy
- 
+
 Visual hierarchy is the arrangement of design elements, such as size, color, and placement, to guide a user's attention to the most important information first. A clear hierarchy helps users quickly understand what matters most on a screen without having to read everything. It draws on principles from color, typography, and layout to create a scannable, easy-to-navigate interface.

@@ -1,3 +1,3 @@
 # Managing Risk
- 
+
 Managing risk in product design means identifying assumptions, constraints, and uncertainties that could cause a project to fail, and addressing them before committing significant resources. It includes assumption mapping, risk identification, and assessing technical constraints and feasibility. Catching risks early is generally far cheaper than discovering them after a product has shipped.

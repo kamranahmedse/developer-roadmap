@@ -1,3 +1,3 @@
 # Inclusive Design
- 
+
 Inclusive design is the practice of creating products that work well for people with a wide range of abilities, backgrounds, and circumstances, rather than designing only for a typical or average user. It considers factors like disability, language, cultural context, and access to technology when making design decisions. Accessibility testing is one concrete practice that supports the broader goal of inclusive design.

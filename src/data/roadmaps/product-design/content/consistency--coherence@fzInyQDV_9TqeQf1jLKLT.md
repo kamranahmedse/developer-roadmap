@@ -1,3 +1,3 @@
 # Consistency & Coherence
- 
+
 Consistency and coherence mean that a product's visual style, terminology, and interaction patterns behave the same way across different screens and features. Inconsistent patterns force users to relearn how things work in different parts of the same product, increasing cognitive effort. Design systems and shared components are common tools used to maintain this principle at scale.

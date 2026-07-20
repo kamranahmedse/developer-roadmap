@@ -1,3 +1,3 @@
 # Functionality over Polish
- 
+
 This principle prioritizes making a product work correctly and solve the user's problem before investing heavily in visual refinement. A feature that looks beautiful but fails to perform its core task provides little value, while a rough but functional one can still succeed. Teams often apply this early in a project, saving deeper visual polish for later stages once the core experience is validated.

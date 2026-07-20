@@ -1,3 +1,3 @@
 # Components
- 
+
 Components are reusable interface building blocks, such as buttons, form fields, or cards, that combine visual style and behavior into a single, consistent unit. Building interfaces from shared components speeds up design and development while keeping the product visually and functionally consistent. Components are a core part of most design systems, since they let teams avoid rebuilding the same elements repeatedly.

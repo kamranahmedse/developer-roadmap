@@ -1,3 +1,3 @@
 # Motion Principles
- 
+
 Motion principles are the underlying rules that guide how animation is used consistently across a product, covering aspects like timing, easing, and when motion should or should not be used. They help ensure that transitions feel cohesive rather than arbitrary from one screen to another. Teams often document these principles alongside other design system elements to keep motion consistent as new features are added.

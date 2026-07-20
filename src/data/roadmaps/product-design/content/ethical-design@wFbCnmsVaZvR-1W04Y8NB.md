@@ -1,3 +1,3 @@
 # Ethical Design
- 
+
 Ethical design involves evaluating whether design choices manipulate or mislead users for the benefit of a business, rather than genuinely serving their interests. It scrutinizes patterns like fake urgency, hidden costs, or deceptive defaults that push users toward decisions they might not otherwise make. Practicing ethical design means being willing to choose a less profitable pattern when a more persuasive one would harm user trust.
