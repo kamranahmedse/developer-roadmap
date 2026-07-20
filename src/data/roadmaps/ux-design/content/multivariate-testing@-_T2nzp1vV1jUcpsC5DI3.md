@@ -1,3 +1,7 @@
 # Multivariate Testing
- 
+
 Multivariate testing compares multiple design variations that differ across several elements at once, such as headline, image, and button color, to see which combination performs best. Unlike a simple test of one variable, it can reveal how different elements interact with each other. It typically requires more traffic than a simple A/B test to produce statistically reliable results.
+
+Visit the following resources to learn more:
+
+- [@article@What Is Multivariate Testing? How It Works and Why It Matters](https://contentsquare.com/guides/conversion-rate-optimization-glossary/multivariate-testing/)

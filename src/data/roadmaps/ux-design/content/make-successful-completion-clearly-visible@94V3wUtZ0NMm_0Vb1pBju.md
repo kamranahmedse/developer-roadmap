@@ -1,3 +1,3 @@
 # Make successful completion clearly visible
- 
+
 This principle emphasizes giving users an unmistakable signal when they have finished a task successfully, such as a confirmation screen, success message, or visual change. Ambiguous endings leave users unsure whether their action worked, which can lead to repeated submissions or abandoned trust in the product. A clear completion moment also closes the loop and reinforces that the effort paid off.

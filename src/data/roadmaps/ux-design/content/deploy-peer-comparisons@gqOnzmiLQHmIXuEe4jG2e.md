@@ -1,3 +1,3 @@
 # Deploy Peer Comparisons
- 
+
 Deploying peer comparisons in the context of making an action easy means showing users what similar people typically do, which can reduce hesitation by making the target action feel normal and low-risk. Seeing that others in a similar situation completed the same action reassures a user that it is a safe and reasonable choice. This reduces the perceived effort or risk that might otherwise stop a user from acting.

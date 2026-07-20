@@ -1,3 +1,3 @@
 # Deploy Strong Authority on Subject
- 
+
 Displaying authority means showing credentials, expertise, or endorsements relevant to the subject matter, such as certifications, media mentions, or an author's professional background. Users are more likely to trust and follow guidance from a source that appears knowledgeable. This practice is common on educational, financial, and medical products where credibility strongly affects user decisions.

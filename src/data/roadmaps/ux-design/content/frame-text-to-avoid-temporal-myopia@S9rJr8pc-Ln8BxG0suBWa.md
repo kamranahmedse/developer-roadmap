@@ -1,3 +1,3 @@
 # Frame Text to Avoid Temporal Myopia
- 
+
 Temporal myopia is the tendency for people to undervalue future consequences in favor of immediate ones. Framing text to counter this means making future benefits or costs feel more immediate and concrete, such as showing exactly how much money is lost per month rather than per year. This technique is used to create urgency by making a delayed consequence feel present and real.

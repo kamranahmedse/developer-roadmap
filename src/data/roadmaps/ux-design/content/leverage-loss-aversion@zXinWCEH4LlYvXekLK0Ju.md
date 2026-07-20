@@ -1,3 +1,3 @@
 # Leverage Loss-Aversion
- 
+
 Loss-aversion is the tendency for people to feel the pain of losing something more strongly than the pleasure of gaining something equivalent. Designers use this by framing messages around what a user stands to lose, such as "don't lose your progress" instead of "keep your progress," which tends to be more motivating. It is a common technique in subscription cancellation flows and limited-time offers.

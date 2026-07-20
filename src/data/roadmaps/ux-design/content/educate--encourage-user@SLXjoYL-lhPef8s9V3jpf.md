@@ -1,3 +1,3 @@
 # Educate & Encourage User
- 
+
 Educating and encouraging the user means providing clear information about a choice along with positive reinforcement to help them decide with confidence. This can take the form of tooltips, explainer content, or contextual tips shown at the moment a decision is being made. The goal is to improve the quality of a conscious decision rather than to push the user toward a specific outcome.

@@ -1,3 +1,7 @@
 # Event-driven Process Chain Model (EPC)
- 
+
 The Event-driven Process Chain model, or EPC, is a diagramming notation that represents a business process as an alternating sequence of events and functions. Each function is triggered by an event and produces one or more resulting events, which can branch using logical connectors. It is used to model detailed business processes with more precision than a basic flowchart allows.
+
+Visit the following resources to learn more:
+
+- [@article@Event-driven process chain (EPC)](https://ariscommunity.com/event-driven-process-chain)

@@ -1,3 +1,3 @@
 # Clear the Page of Distractions
- 
+
 Clearing the page of distractions means removing any element that competes with the user's attention on the target action, such as unrelated links, ads, or excessive navigation. A cleaner page increases the odds a user notices and completes the intended action. This is especially important on high-stakes screens like checkout or signup, where every extra element is a chance for the user to leave.

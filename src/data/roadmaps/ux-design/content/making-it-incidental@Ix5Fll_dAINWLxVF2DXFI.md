@@ -1,3 +1,3 @@
 # Making it Incidental
- 
+
 Making an action incidental means folding it into a task the user is already doing, so it happens as a side effect rather than a separate decision. An example is a payment app that automatically rounds up purchases and saves the difference, so saving money requires no extra effort from the user. This avoids relying on the user to remember or choose to perform the target behavior on its own.

@@ -1,3 +1,3 @@
 # Use Competition
- 
+
 Using competition means framing a decision or task as a contest against other users, such as leaderboards or limited spots, to motivate a favorable choice. People are often more willing to act quickly or commit fully when they sense they are competing against others. This taps into the same drive that makes gamification effective, applied specifically to nudging a conscious evaluation toward action.

@@ -1,3 +1,3 @@
 # Default Everything
- 
+
 Defaulting everything means pre-filling or pre-selecting sensible choices throughout an interface so the user can proceed with minimal input, only changing what they specifically want to adjust. This reduces the effort required to complete a task, since accepting the default is always easier than making an active choice. It is one of the most effective ways to make a target action easy to complete.

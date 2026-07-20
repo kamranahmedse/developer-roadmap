@@ -5,3 +5,4 @@ Balsamiq is a popular wireframing tool that helps designers, developers, and pro
 Visit the following resources to learn more:
 
 - [@official@Balsamiq Website](https://balsamiq.com/)
+- [@video@Rapid Wireframing with Balsamiq](https://www.youtube.com/watch?v=dwqHdlXDCBQ&list=PLVlyYfbClWxTsCrScEqhH9JGQUgq98pIu)

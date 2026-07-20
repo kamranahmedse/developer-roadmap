@@ -1,3 +1,3 @@
 # Cue Routine Reward Model
- 
+
 The Cue-Routine-Reward model explains a habit as a loop where a cue triggers a routine, and that routine produces a reward that reinforces the cue-routine connection. Over repeated cycles, the routine becomes automatic once the cue appears, requiring less conscious thought each time. Designers use this model to understand existing habits before deciding whether to support, replace, or break them.

@@ -1,3 +1,3 @@
 # Understanding the Product
- 
+
 Understanding the product is the early stage of a UX project where the designer clarifies what the product does, who it serves, and how it makes or delivers value. It includes defining the target action, actor, and outcome, along with analyzing the business model behind the product. This groundwork shapes every later design decision, from conceptual design through prototyping.

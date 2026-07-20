@@ -1,3 +1,3 @@
 # Nir Eyal's Hook Model
- 
+
 Nir Eyal's Hook Model describes a four-step loop that products use to build habitual engagement: trigger, action, variable reward, and investment. The trigger prompts the user, the action is the simplest behavior done in anticipation of a reward, the reward keeps the user interested through variability, and the investment step has the user put something into the product that makes future triggers more effective. Social media feeds and many mobile games are commonly cited examples of this loop in action.

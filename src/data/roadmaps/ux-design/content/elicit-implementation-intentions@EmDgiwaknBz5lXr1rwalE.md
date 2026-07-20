@@ -1,3 +1,3 @@
 # Elicit Implementation Intentions
- 
+
 Eliciting implementation intentions means prompting users to specify exactly when, where, or how they will perform an intended action, rather than leaving the intention vague. Research shows that a concrete plan, such as picking a specific time to exercise, makes follow-through significantly more likely than a general intention alone. Apps often support this by letting users schedule or specify the details of a planned action at the moment they commit to it.

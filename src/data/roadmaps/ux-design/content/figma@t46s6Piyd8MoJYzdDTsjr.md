@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@official@Figma Website](https://figma.com)
+- [@official@Figma](https://figma.com)
 - [@video@Free Figma UX Design UI Essentials Course](https://youtu.be/kbZejnPXyLM?si=W9oY5j_6AcSuHfq2)

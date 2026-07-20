@@ -1,3 +1,3 @@
 # Remind of Prior Commitment to Act
- 
+
 This technique reminds users of a commitment they already made, such as a goal they set or an item they added to a wishlist, to prompt them to follow through. People feel internal pressure to stay consistent with past commitments, which this pattern leverages to drive action. It is often used in re-engagement emails or notifications that reference something the user previously started.

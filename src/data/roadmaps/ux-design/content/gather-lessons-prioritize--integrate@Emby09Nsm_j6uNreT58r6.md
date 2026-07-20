@@ -1,3 +1,3 @@
 # Gather Lessons, Prioritize & Integrate
- 
+
 This step involves collecting insights from testing and user data, deciding which findings matter most, and feeding them back into the product's design. Not every lesson learned is worth acting on immediately, so teams prioritize based on expected impact and effort required. Integrating validated lessons closes the loop between measuring impact and improving the product.

@@ -1,3 +1,3 @@
 # Prime User-Relevant Associations
- 
+
 Priming means exposing users to words, images, or cues related to a desired outcome just before they make a decision, so that concept is more mentally accessible. For example, showing images of relaxation before a spa booking flow can make the decision feel more aligned with the user's goals. This technique shapes the frame of mind a user is in without changing the actual options presented.

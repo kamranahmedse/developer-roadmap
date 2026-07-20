@@ -1,3 +1,3 @@
 # Support Conscious Action
- 
+
 Supporting conscious action means designing for moments where a user needs to actively think through a decision instead of relying on automatic habits. This applies to choices with real consequences, such as financial commitments or health decisions, where speeding the user through the process could cause harm. It typically involves giving the user relevant information and time to reflect before they act.

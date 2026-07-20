@@ -1,3 +1,3 @@
 # Use Peer Comparisons
- 
+
 Peer comparisons show users how their behavior or choices compare to others in a similar group, such as "you used less energy than 80% of similar households." This taps into social norms, since people tend to adjust their behavior to align with what others like them are doing. It is commonly used to encourage a favorable decision by framing the target choice as the normal one.

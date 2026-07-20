@@ -1,3 +1,7 @@
 # Five Forces Model
- 
+
 The Five Forces Model, developed by Michael Porter, analyzes an industry's competitiveness through five factors: existing competition, threat of new entrants, threat of substitutes, and the bargaining power of suppliers and buyers. It helps teams understand how much pressure a business faces from its market environment beyond just direct competitors. This analysis often shapes decisions about pricing, differentiation, and where a new business model can find an advantage.
+
+Visit the following resources to learn more:
+
+- [@article@Porter's Five Forces Explained and How to Use the Model](https://www.investopedia.com/terms/p/porter.asp)

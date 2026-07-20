@@ -1,3 +1,3 @@
 # Lessen the Burden of Action / Info
- 
+
 This practice focuses on reducing the amount of effort or information a user must provide to complete a task, such as shortening forms, auto-filling known data, or breaking a long process into smaller steps. Every additional field or requirement is a chance for a user to stop and reconsider or abandon the task. Simplifying these requirements directly increases completion rates.
