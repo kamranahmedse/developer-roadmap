@@ -1,0 +1,8 @@
+# Channel Planning
+ 
+Channel planning is the process of assigning specific radio frequency channels to access points in a way that minimizes interference between them. In the 2.4 GHz band, only three non-overlapping channels (1, 6, and 11) are available, making careful planning essential in dense deployments. The 5 GHz band offers significantly more non-overlapping channels, giving engineers more flexibility. The goal of channel planning is to ensure that neighboring APs operate on different channels so their signals do not interfere with each other, which would otherwise reduce throughput and increase retransmissions across the network.
+
+Visit the following resources to learn more:
+
+- [@article@Channel Planning Best Practices for Better Wi-Fi](https://www.ekahau.com/blog/channel-planning-best-practices-for-better-wi-fi/)
+- [@video@How to Design Wi-Fi Channels](https://www.youtube.com/watch?v=4GvZtUW-JiU)
