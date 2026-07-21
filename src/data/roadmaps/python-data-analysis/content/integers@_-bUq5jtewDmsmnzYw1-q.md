@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Built-in Types](https://docs.python.org/3/library/stdtypes.html)
 - [@article@int](https://realpython.com/ref/builtin-types/int/)
+- [@article@"Python Max Int: Understanding Arbitrary Precision Integers "](https://roadmap.sh/python/max-int)
