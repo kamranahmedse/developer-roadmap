@@ -5,4 +5,3 @@ API Integration Patterns, in the context of API Design, refers to the common par
 Visit the following resources to learn more:
 
 - [@article@API Integration Patterns - Dzone](https://dzone.com/refcardz/api-integration-patterns)
-- [@article@API Integration Patterns - Devoteam](https://uk.devoteam.com/expert-view/api-integration-patterns/)

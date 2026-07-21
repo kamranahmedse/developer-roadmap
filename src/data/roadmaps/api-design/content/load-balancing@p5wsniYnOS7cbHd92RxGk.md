@@ -5,6 +5,5 @@ Load Balancing plays a crucial role in the domain of API Design. It primarily re
 Visit the following resources to learn more:
 
 - [@article@What is Load Balancing?](https://www.cloudflare.com/en-gb/learning/performance/what-is-load-balancing/)
-- [@article@Load Balancers in API](https://learn.microsoft.com/en-us/rest/api/load-balancer/)
-- [@article@API Gateway vs Load Balancer: Which is Right for Your Application?](https://konghq.com/blog/engineering/api-gateway-vs-load-balancer)
+- [@article@API gateway vs. Load balancer: Do you need one or both?](https://roadmap.sh/network-engineer/api-gateway-vs-load-balancer)
 - [@video@What is a Load Balancer?](https://www.youtube.com/watch?v=sCR3SAVdyCc)

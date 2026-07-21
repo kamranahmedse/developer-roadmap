@@ -4,8 +4,6 @@ gRPC is a platform agnostic serialization protocol that is used to communicate b
 
 Visit the following resources to learn more:
 
-- [@official@gRPC Website](https://grpc.io/)
 - [@official@gRPC Introduction](https://grpc.io/docs/what-is-grpc/introduction/)
 - [@official@gRPC Core Concepts](https://grpc.io/docs/what-is-grpc/core-concepts/)
 - [@video@Stephane Maarek - gRPC Introduction](https://youtu.be/XRXTsQwyZSU)
-- [@feed@Explore top posts about gRPC](https://app.daily.dev/tags/grpc?ref=roadmapsh)

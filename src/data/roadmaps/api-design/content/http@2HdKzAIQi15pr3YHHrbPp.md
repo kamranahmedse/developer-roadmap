@@ -4,7 +4,6 @@ HTTP, or Hypertext Transfer Protocol, is a fundamental piece of any API design. 
 
 Visit the following resources to learn more:
 
-- [@article@Everything you need to know about HTTP](https://cs.fyi/guide/http-in-depth)
 - [@article@What is HTTP?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/)
 - [@article@An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 - [@article@HTTP/3 From A To Z: Core Concepts](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)

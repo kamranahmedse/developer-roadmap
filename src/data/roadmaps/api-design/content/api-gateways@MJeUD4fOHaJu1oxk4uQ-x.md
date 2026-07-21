@@ -5,4 +5,5 @@ API Gateways act as the main point of entry in a microservices architecture, oft
 Visit the following resources to learn more:
 
 - [@article@What does an API Gateway do?](https://www.redhat.com/en/topics/api/what-does-an-api-gateway-do)
+- [@article@API gateway vs. Load balancer: Do you need one or both?](https://roadmap.sh/network-engineer/api-gateway-vs-load-balancer)
 - [@article@What are API Gateways?](https://www.ibm.com/blog/api-gateway/)
