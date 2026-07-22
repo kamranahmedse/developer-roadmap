@@ -31,7 +31,7 @@ You are required to complete the following tasks:
 - Familiarize yourself with the AWS Management Console.
 - Launch an EC2 instance with the following specifications:
    - Use Ubuntu Server AMI.
-   - Choose a `t2.micro` instance type (eligible for AWS Free Tier).
+   - Choose a `t3.micro` instance type (eligible for AWS Free Tier).
    - Use the default VPC and subnet for your region.
    - Configure the security group to allow inbound traffic on ports `22` (SSH) and `80` (HTTP).
    - Create a new key pair or use an existing one for SSH access.
