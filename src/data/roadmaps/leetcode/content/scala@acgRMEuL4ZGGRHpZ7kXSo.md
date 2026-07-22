@@ -1,7 +1,7 @@
-# Scala
+# C
 
-Scala is a functional and object-oriented language that runs on the JVM and is popular in data engineering and distributed systems roles. Its expressive type system and functional abstractions like pattern matching and higher-order functions can make some algorithmic problems elegant to solve. However, Scala is rarely the expected language in general software engineering interviews, and LeetCode support for it is more limited. Choose Scala only if you are specifically targeting roles where it is the primary language and you are already fluent in it.
+C is a general-purpose, procedural programming language that provides low-level access to system memory and efficient mapping to machine instructions. It is known for its minimalist design, which relies on a simple set of keywords and a straightforward syntax to perform tasks. C remains a foundational language for building operating systems, embedded systems, and high-performance applications where execution speed and resource efficiency are critical.
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit the Dedicated Scala Roadmap](https://roadmap.sh/scala)
+- [@roadmap@Visit the Dedicated C Roadmap](https://roadmap.sh/c)

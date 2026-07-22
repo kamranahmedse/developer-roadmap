@@ -1,9 +1,10 @@
 # Trees
 
-Trees are the data structure where recursion becomes natural. Most tree problems follow one of two patterns: DFS, where you go deep before backtracking, and BFS, where you process nodes level by level. DFS is usually implemented recursively and is good for path-based and structural problems. BFS uses a queue and is good for level-based problems and shortest-path questions on unweighted trees. The key habit to build here is thinking clearly about what a function returns versus what it records as a side effect, since many tree problems require tracking a global answer while the recursion handles local decisions.
+Trees are the data structure where recursion becomes natural. Most tree problems follow DFS, going deep before backtracking, or BFS, processing level by level. DFS is usually recursive and suits path-based problems, while BFS uses a queue and suits level-based or shortest-path questions. A key habit is separating what a function returns from what it records as a side effect, since many problems need a global answer tracked alongside local recursive decisions. Segment trees and Fenwick trees extend these ideas to range queries over a mutable array, though they show up more in competitive programming than standard interviews.
 
 Visit the following resources to learn more:
 
 - [@article@Trees DSA](https://www.w3schools.com/dsa/dsa_theory_trees.php)
-- [@article@Trees](https://www.programiz.com/dsa/trees)
+- [@article@Segment Tree (cp-algorithms)](https://cp-algorithms.com/data_structures/segment_tree.html)
+- [@article@Fenwick Tree / BIT (cp-algorithms)](https://cp-algorithms.com/data_structures/fenwick.html)
 - [@video@Tree data structures in 2 minutes 🌳](https://www.youtube.com/watch?v=Etpc_-br5rI&t=1s)

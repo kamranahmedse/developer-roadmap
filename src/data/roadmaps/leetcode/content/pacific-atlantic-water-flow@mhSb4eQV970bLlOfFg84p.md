@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 - [@video@Pacific Atlantic Water Flow - Leetcode 417 - Graphs (Python)](https://www.youtube.com/watch?v=pDvvDvgHUKE)
-- [@video@[Java] Leetcode 417. Pacific Atlantic Water Flow [Search #4]](https://www.youtube.com/watch?v=ZQp1oGp1y6s)
+- [@video@\[Java\] Leetcode 417. Pacific Atlantic Water Flow \[Search #4\]](https://www.youtube.com/watch?v=ZQp1oGp1y6s)

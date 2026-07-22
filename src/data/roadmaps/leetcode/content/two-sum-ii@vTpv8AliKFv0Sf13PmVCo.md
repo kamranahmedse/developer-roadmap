@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Two Sum II - Input Array Is Sorted - LeetCode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/)
 - [@video@Two Sum II - Leetcode 167](https://www.youtube.com/watch?v=ciPrKYoOQkI)
-- [@video@[Java] Leetcode 167. Two Sum II](https://www.youtube.com/watch?v=CWUnvUJ29zw)
+- [@video@\[Java\] Leetcode 167. Two Sum II](https://www.youtube.com/watch?v=CWUnvUJ29zw)
