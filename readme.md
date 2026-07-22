@@ -40,6 +40,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Claude Code Roadmap](https://roadmap.sh/claude-code)
 - [OpenClaw Roadmap](https://roadmap.sh/openclaw)
 - [Vibe Coding Roadmap](https://roadmap.sh/vibe-coding)
+- [Forward Deployed Engineer Roadmap](https://roadmap.sh/forward-deployed-engineer)
 - [HTML Roadmap](https://roadmap.sh/html)
 - [CSS Roadmap](https://roadmap.sh/css)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
@@ -102,6 +103,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Kubernetes Roadmap](https://roadmap.sh/kubernetes)
 - [Cyber Security Roadmap](https://roadmap.sh/cyber-security)
 - [MongoDB Roadmap](https://roadmap.sh/mongodb)
+- [Product Design Roadmap](https://roadmap.sh/product-design)
 - [UX Design Roadmap](https://roadmap.sh/ux-design)
 - [Docker Roadmap](https://roadmap.sh/docker)
 - [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
@@ -113,7 +115,6 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Ruby Roadmap](https://roadmap.sh/ruby)
 - [Ruby on Rails Roadmap](https://roadmap.sh/ruby-on-rails)
 - [Scala Roadmap](https://roadmap.sh/scala)
-- [Forward Deployed Engineer Roadmap](https://roadmap.sh/forward-deployed-engineer)
 
 
 There are also interactive best practices:
