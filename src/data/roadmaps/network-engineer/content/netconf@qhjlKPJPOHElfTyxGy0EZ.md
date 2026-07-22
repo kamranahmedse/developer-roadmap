@@ -1,5 +1,5 @@
 # NETCONF
- 
+
 NETCONF, or Network Configuration Protocol, is a network management protocol designed specifically for configuring and retrieving the state of network devices. It uses XML to encode data and runs over SSH, providing a structured, transactional approach to device management that is far more reliable than screen-scraping CLI output. NETCONF supports operations like get, edit-config, copy-config, and commit, and works alongside YANG data models, which define the structure of the configuration data being exchanged, making it one of the primary protocols used in programmatic network management and automation.
 
 Visit the following resources to learn more:

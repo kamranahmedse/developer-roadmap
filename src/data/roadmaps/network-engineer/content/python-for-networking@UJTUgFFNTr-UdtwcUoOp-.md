@@ -1,5 +1,5 @@
 # Python for Networking
- 
+
 Python has become the dominant programming language in network engineering due to its simplicity, readability, and the rich ecosystem of libraries built specifically for interacting with network devices and infrastructure. Network engineers use Python to write scripts that automate configuration changes, parse device output, interact with APIs, process network data, and build custom tools. Libraries like Netmiko and NAPALM abstract away the complexity of connecting to and communicating with different vendors' devices, allowing engineers to write automation code without needing to handle low-level connection management themselves.
 
 Visit the following resources to learn more:

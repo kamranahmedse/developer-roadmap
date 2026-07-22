@@ -5,5 +5,5 @@ A load balancer is a device or software that distributes incoming network traffi
 Visit the following resources to learn more:
 
 - [@article@What is Network Load Balancing? Understanding Traffic Distribution](https://www.digitalocean.com/resources/articles/network-load-balancing)
-- [@video@Load Balancer Explained](https://www.youtube.com/watch?v=1fN2UDbtGDQ)
 - [@article@API gateway vs. Load balancer: Do you need one or both?](https://roadmap.sh/network-engineer/api-gateway-vs-load-balancer)
+- [@video@Load Balancer Explained](https://www.youtube.com/watch?v=1fN2UDbtGDQ)

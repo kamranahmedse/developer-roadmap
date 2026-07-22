@@ -1,5 +1,5 @@
 # Spine-Leaf
- 
+
 Spine-leaf is a two-tier data center network architecture designed to provide consistent, low-latency connectivity between servers and storage in modern data centers. Every leaf switch connects to every spine switch, and no leaf connects directly to another leaf. All traffic between devices on different leaves passes through a spine switch in exactly two hops. This predictable, any-to-any connectivity pattern eliminates the bottlenecks and spanning tree complexity of traditional hierarchical designs, making spine-leaf the dominant architecture for hyperscale data centers, cloud environments, and any network carrying large volumes of east-west traffic between servers.
 
 Visit the following resources to learn more:
