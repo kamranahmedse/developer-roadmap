@@ -1,6 +1,6 @@
 # Development IDE
-
-Development IDE refers to the Development Integrated Development Environment that is vital for Android App development. For Android, the primary IDE is **Android Studio**. This official IDE from Google includes everything you need to build an Android app, such as a code editor, code analysis tools, emulators for all of Android's supported OS versions and hardware configurations, and more. Other popular IDEs include **Eclipse** (with an Android Developer Tools plugin), **NetBeans**, and **IntelliJ IDEA**. Each of these IDEs tends to have its own set of specialized features, but all are designed to provide the tools and services needed for Android development. The choice of an IDE often depends on the specific needs and preferences of the developer or development team.
+ 
+Android Studio is the official integrated development environment for Android development. It is built on IntelliJ IDEA and provides tools for code editing, debugging, performance profiling, and device emulation. It also integrates directly with the Gradle build system and the Android SDK.
 
 Visit the following resources to learn more:
 

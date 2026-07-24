@@ -1,8 +1,6 @@
-# Basics of OOP
-
-Understanding the `Basics of Object-Oriented Programming (OOP)` is crucial. OOP is a programming paradigm that uses "Objects" - entities that contain both data and functions that manipulate the data.
-
-Key concepts include `Classes`, which are blueprints from which objects are created; `Objects`, instances of a class; `Inheritance`, where one class acquires properties from another; `Polymorphism`, the ability of an object to take many forms; `Abstraction`, showing only necessary details and hiding implementation from the user; and `Encapsulation`, the concept of wrapping data and the methods that work on data within one unit.
+# Basics of Kotlin
+ 
+The basics of Kotlin cover the syntax and core concepts needed to write Kotlin programs. This includes variables, data types, control flow, functions, lambdas, classes, and Kotlin-specific features like null safety and extension functions. A solid grasp of these fundamentals is required before working with Android-specific APIs.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# Tasks and Backstack
-
-The **tasks backstack** in Android refers to the way Android manages and arranges tasks in a stack-like structure. Every task has a stack of activities, which is referred to as the task's back stack. The activities are placed in the order they are opened. When a new activity is started, it is placed at the top of the stack and becomes the running activity, while the previous activity is paused and put into the back stack. When you press the back button, the current activity is destroyed and the activity at the top of the back stack becomes active again. Android defines how to navigate between tasks and activities using this back stack concept.
+# Tasks & Backstack
+ 
+A task is a collection of activities that the user interacts with to accomplish a goal, and the back stack keeps track of the order in which those activities were opened. When the user presses Back, activities are popped off the stack in reverse order. Understanding task and back stack behavior is important for building predictable navigation flows.
 
 Visit the following resources to learn more:
 

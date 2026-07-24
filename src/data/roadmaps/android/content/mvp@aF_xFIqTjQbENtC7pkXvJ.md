@@ -1,12 +1,6 @@
-# MVP or Model View Presenter
-
-The MVP `Model View Presenter` pattern is a derivative of the well-known MVC `Model View Controller` pattern and is one of the most popular patterns for organizing the presentation layer in Android applications.
-
-MVP is divided into three components:
-
-*   `Model`: Responsible for managing the data input to the app. This can often be an Interactor or UseCase, handling the business logic and data operations.
-*   `View`: Takes care of updating the graphical part of the application. It acts as a passive view, only receiving data and requesting actions to be performed.
-*   `Presenter`: Handles all the logic related to the graphical interface that the View requests. It provides the View with the data it needs to display on the screen.
+# MVP
+ 
+MVP (Model-View-Presenter) is an architectural pattern where the Presenter acts as a mediator between the View and the Model. The View delegates user actions to the Presenter, which processes them and updates the View through an interface contract. MVP was widely used before MVVM and ViewModel became the recommended approach.
 
 Visit the following resources to learn more:
 

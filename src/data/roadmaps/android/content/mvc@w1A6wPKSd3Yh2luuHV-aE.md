@@ -1,13 +1,6 @@
-# MVC or Model View Controller
-
-MVC or `Model View Controller` is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected components.
-
-Components:
------------
-
-*   `Model`: The internal representations of information. This can often be an Interactor or UseCase
-*   `View`: The interface that presents information to and accepts it from the user
-*   `Controller`: The controller contains logic that updates the model and/or view in response to input from the users of the app.
+# MVC
+ 
+MVC (Model-View-Controller) is an architectural pattern that divides an application into three components: the Model holds data and business logic, the View renders the UI, and the Controller handles user input. Android does not map cleanly to traditional MVC, as Activities and Fragments often act as both View and Controller simultaneously.
 
 Visit the following resources to learn more:
 

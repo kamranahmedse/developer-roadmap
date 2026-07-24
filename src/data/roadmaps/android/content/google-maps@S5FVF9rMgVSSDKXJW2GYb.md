@@ -1,6 +1,6 @@
 # Google Maps
-
-Google Maps is a crucial service on Android, offering powerful, user-friendly mapping technology and local business information. Google Maps features include street maps, satellite imagery, 360° panoramic views of streets (Street View), real-time traffic conditions (Google Traffic), and route planning for traveling by foot, car, bicycle and air, or public transportation. The service's interface includes a function to overlay various layers such as traffic density, public transit lines, and cycling paths. Google Maps for Android also provides an API, which allows developers to interface with and control certain aspects of the Google Maps service in their applications. This capability subjects to certain usage limits and requirements set by Google.
+ 
+The Google Maps SDK for Android allows apps to embed interactive maps, display markers, draw routes, and access geolocation data. It is used in apps that require navigation, location search, or geographic visualization. The SDK integrates with the Fused Location Provider for efficient and battery-aware location access.
 
 Visit the following resources to learn more:
 

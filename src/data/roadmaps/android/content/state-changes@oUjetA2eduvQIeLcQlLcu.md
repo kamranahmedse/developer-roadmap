@@ -1,6 +1,6 @@
 # State Changes
-
-"Activity" is a crucial component that represents a single screen with a user interface. One or more active activities make up an Application. These activities can go through different states in their lifecycle, often due to user interaction or system interruption. The primary states of an Activity include `Created`, `Started`, `Resumed`, `Paused`, `Stopped`, `Restarted`, and `Destroyed`. The "Created" state occurs when an activity instance is being created. The "Started" state is when the activity is visible to the user, while "Resumed" is when the activity is interacting with the user. An activity is "Paused" when it loses focus but is partly visible, "Stopped" when it's not visible, "Restarted" when the activity is about to be started, and "Destroyed" when the activity is finished or the system is temporarily destroying it.
+ 
+State changes occur when an Activity transitions between lifecycle states due to user actions or system events. Common triggers include pressing the Home button, rotating the device, or receiving a phone call. Android developers must save and restore UI state during these transitions to prevent data loss.
 
 Visit the following resources to learn more:
 

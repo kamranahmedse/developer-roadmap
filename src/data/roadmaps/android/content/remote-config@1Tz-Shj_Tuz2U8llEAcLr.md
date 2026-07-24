@@ -1,6 +1,6 @@
 # Remote Config
-
-Firebase Remote Config is a cloud service offered by Firebase. It lets you change the behavior and appearance of your app without requiring a new app release. By using Firebase Remote config, you can customize your app for different user segments, manage the core aspects of your app by modifying parameters externally, and conduct A/B tests to improve your app. It works efficiently by using default values that control the behavior and appearance of your app. When your app needs configuration information, it makes a request to the Firebase Remote Config server. If the server has updated values, these values replace the default ones, hence modifying the app's behavior or appearance according to your needs.
+ 
+Firebase Remote Config allows developers to change the behavior and appearance of an Android app without publishing an app update. Configuration values are stored in the cloud and fetched at runtime. It is commonly used for A/B testing, feature flags, and gradual feature rollouts.
 
 Visit the following resources to learn more:
 

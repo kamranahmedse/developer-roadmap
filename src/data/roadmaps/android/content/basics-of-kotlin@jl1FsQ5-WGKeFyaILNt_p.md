@@ -4,5 +4,6 @@ Kotlin is a concise, multi-platform, and fun language developed by JetBrains. Le
 
 Visit the following resources to learn more:
 
+- [@roadmap@Visit the Dedicaated Kotlin Roadmap](https://roadmap.sh/kotlin)
 - [@official@Kotlin](https://kotlinlang.org/)
 - [@official@Kotlin Docs](https://kotlinlang.org/docs/getting-started.html)

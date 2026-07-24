@@ -1,6 +1,6 @@
-# BitBucket
-
-Bitbucket is a web-based hosting service that is owned by Atlassian. Bitbucket uses either Mercurial or Git revision control systems, allowing users to manage and maintain their code. This platform is mainly used for code and code review. Bitbucket provides both commercial plans and free accounts. It offers free accounts with an unlimited number of private repositories (which can have up to five users in the case of free accounts) as of September 2010. It originally offered only Mercurial support. Bitbucket integrates with other Atlassian software like JIRA, HipChat, Confluence and Bamboo.
+# Bitbucket
+ 
+Bitbucket is a Git repository hosting service by Atlassian. It integrates with other Atlassian tools like Jira and Confluence, making it a common choice for teams already using Atlassian products. Bitbucket supports pull requests, branch permissions, and CI/CD pipelines through Bitbucket Pipelines.
 
 Visit the following resources to learn more:
 

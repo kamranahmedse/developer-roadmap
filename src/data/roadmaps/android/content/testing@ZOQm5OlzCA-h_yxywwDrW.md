@@ -1,6 +1,6 @@
 # Testing
-
-**Testing** is a crucial part of the app development process. It involves validating the functionality, performance, usability, and consistency of your app before deploying it to the Play Store. There are two types of testing methods notably used: **Unit testing** and **Instrumentation Testing**. Unit testing, as the name suggests, tests each unit or segment of your code separately. It doesn't require Android dependencies and hence, runs faster. Instrumentation testing, on another hand, requires Android dependencies and is slower. Instrumentation testing tests the UIs, simulates user interactions and validates the navigation between different parts of your app. Android provides built-in testing frameworks like `JUnit` for unit testing and `Espresso` for Instrumentation testing.
+ 
+Testing in Android ensures that app code behaves correctly and that UI interactions work as expected. JUnit is used for unit testing business logic, while Espresso handles UI testing by simulating user interactions on a device or emulator.
 
 Visit the following resources to learn more:
 

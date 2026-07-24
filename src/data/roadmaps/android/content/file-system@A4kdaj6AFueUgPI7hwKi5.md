@@ -1,6 +1,6 @@
 # File System
-
-The Android operating system uses a specific File System structure to store and manage files. It’s primarily based on the Linux File system, with some specific Android features. The File System includes several key directories that are used for specific purposes. For instance, directories such as `/system` hold system apps and firmware, while `/data` contains user data, settings and installed applications, and `/sdcard` usually represents an internal or external SD card for additional storage. It's worth mentioning directories like `/proc`, `/dev`, and `/sys` which are virtual file systems and house important system files. As an Android developer, understanding these directories can help you interact with Android's file system more effectively. Note that access to some of these directories may be restricted depending on system permissions.
+ 
+The Android file system allows apps to read and write files to internal storage, external storage, and cache directories. Internal storage is private to the app, while shared storage is accessible to other apps through proper permissions and scoped storage APIs. File system access is used for raw files, media, and documents.
 
 Visit the following resources to learn more:
 
