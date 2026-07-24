@@ -1,6 +1,6 @@
 # Filtering, Sorting & Search
 
-Filtering, sorting, and search are query capabilities that let API consumers retrieve exactly the data they need rather than fetching everything and processing it client-side. Filtering narrows results by field values (?status=active), sorting orders them (?sort=created_at&order=desc), and search allows freetext or fuzzy matching across fields. Designing these using predictable query parameter names and clearly documenting supported combinations is a significant part of API usability.
+Filtering, sorting, and search are query capabilities that let API consumers retrieve exactly the data they need rather than fetching everything and processing it client-side. Filtering narrows results by field values (?status=active), sorting orders them (?sort=created\_at&order=desc), and search allows freetext or fuzzy matching across fields. Designing these using predictable query parameter names and clearly documenting supported combinations is a significant part of API usability.
 
 Visit the following resources to learn more:
 
