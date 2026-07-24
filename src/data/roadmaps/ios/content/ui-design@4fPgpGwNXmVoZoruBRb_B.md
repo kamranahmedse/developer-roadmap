@@ -1,9 +1,10 @@
 # UI Design
+ 
+UI design for iOS focuses on how apps should look and behave to feel native and intuitive on Apple platforms. The primary reference is Apple's Human Interface Guidelines (HIG), which provides principles and specific guidance on navigation patterns, controls, typography, color, and accessibility. Applying these principles leads to apps that feel familiar and polished to iOS users.
 
-UI Design in iOS development focuses on creating visually appealing and functional user interfaces that adhere to Apple's Human Interface Guidelines. It involves designing layouts, choosing appropriate color schemes, typography, and interactive elements that provide a seamless user experience. iOS designers use tools like Sketch, Figma, or Adobe XD to create mockups and prototypes. Key considerations include maintaining consistency with iOS design patterns, ensuring accessibility, supporting different device sizes and orientations, and implementing intuitive navigation. Effective iOS UI design balances aesthetic appeal with usability, leveraging native UI components and custom designs to create engaging, user-friendly applications that feel at home on Apple devices.
+Visit the following resources to learn more:
 
-Learn more from the following resources:
-
-- [@article@Design Patterns in iOS](https://shreethaanur.medium.com/design-patterns-in-ios-55d00c2eef4c)
+- [@roadmap@Visit the Dedicated Product Design Roadmap](https://roadmap.sh/product-design)
 - [@official@Sketch](https://www.sketch.com/)
 - [@official@Figma](https://www.figma.com/)
+- [@article@Design Patterns in iOS](https://shreethaanur.medium.com/design-patterns-in-ios-55d00c2eef4c)

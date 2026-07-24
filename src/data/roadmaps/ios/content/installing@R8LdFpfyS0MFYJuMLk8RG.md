@@ -1,10 +1,8 @@
 # Installing
+ 
+Installing Xcode is the first step in setting up an iOS development environment. Xcode is available for free from the Mac App Store and requires macOS and sufficient disk space. After installation, additional simulators and command-line tools can be added through Xcode settings.
 
-The Xcode Integrated Development Environment (IDE) can only be installed on MacOS given it's nature as an iOS IDE. It can be installed simply like any application on the Mac, via the iStore using an Apple ID.
+Visit the following resources to learn more:
 
-If you wish to do any development using the Command Line Interface (CLI) you will need to install Xcode Command Line Tools via the `Xcode-select --install`. Popular CLI tools such as `clang`, `gcc` & `git` will require the installation of Xcode Command Line Tools.
-
-Learn more from the following resources:
-
-- [@video@How to Install Xcode on Mac](https://www.youtube.com/watch?v=F6QZ2atZrDw)
 - [@article@Xcode Command Line Tools Installation](https://mac.install.guide/commandlinetools/4)
+- [@video@How to Install Xcode on Mac](https://www.youtube.com/watch?v=F6QZ2atZrDw)

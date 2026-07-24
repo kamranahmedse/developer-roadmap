@@ -1,8 +1,8 @@
 # View Transitions
+ 
+View transitions control how the app animates when moving between screens. UIKit provides built-in transition styles like push and modal presentation, and custom transitions are created using the UIViewControllerAnimatedTransitioning protocol. Transitions provide visual continuity that helps users understand where they are in the app.
 
-UIKit View Transitions provide mechanisms for animating changes between different views or view states within an iOS app. These transitions can be used for presenting or dismissing view controllers, switching between views in a container, or updating the content of a single view. UIKit offers built-in transition styles like push, fade, and flip, as well as the ability to create custom transitions using animation controllers. Developers can use `UIView.transition(with:duration:options:animations:completion:)` for simple view changes or implement `UIViewControllerAnimatedTransitioning` for more complex, custom transitions between view controllers.
+Visit the following resources to learn more:
 
-Learn more from the following resources:
-
-- [@article@View Controller Transitions](https://developer.apple.com/documentation/uikit/animation_and_haptics/view_controller_transitions)
 - [@course@Kodeco - UIKit Transitions](https://www.kodeco.com/books/ios-animations-by-tutorials/v6.0/chapters/5-transitions)
+- [@article@View Controller Transitions](https://developer.apple.com/documentation/uikit/animation_and_haptics/view_controller_transitions)

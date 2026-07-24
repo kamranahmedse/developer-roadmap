@@ -1,8 +1,6 @@
 # HealthKit
 
-HealthKit is a powerful framework that allows developers to create health and fitness applications that can interact seamlessly with the iOS `Health app`.
-
-HealthKit provides a central repository for health and fitness data on iPhone and Apple Watch. With the user’s permission, apps communicate with the HealthKit store to access and share this data.
+HealthKit is a powerful framework that allows developers to create health and fitness applications that can interact seamlessly with the iOS `Health app`. HealthKit provides a central repository for health and fitness data on iPhone and Apple Watch. With the user’s permission, apps communicate with the HealthKit store to access and share this data.
 
 Visit the following resources to learn more:
 

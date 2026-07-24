@@ -1,8 +1,8 @@
 # Error Handling
+ 
+Swift provides a structured error handling model using the throw, try, and catch keywords. Functions that can fail declare throws in their signature, and callers handle errors using do-catch blocks. Swift also supports the Result type for propagating errors through asynchronous APIs.
 
-Error handling is a crucial programming concept for managing unexpected situations or failures during code execution. It involves anticipating potential issues, detecting when they occur, and responding appropriately. Common techniques include try-catch blocks, throwing and catching exceptions, and using error codes or result objects. Effective error handling improves program robustness, prevents crashes, aids in debugging, and enhances user experience by providing meaningful feedback. It allows developers to gracefully manage issues like invalid inputs, resource unavailability, or network failures, ensuring the program can recover or fail safely when problems arise.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@article@General Error Handling Rules - Google](https://developers.google.com/tech-writing/error-messages/error-handling)
 - [@article@Error Handling Patterns](https://andreabergia.com/blog/2023/05/error-handling-patterns/)

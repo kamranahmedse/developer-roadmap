@@ -1,8 +1,8 @@
 # Basic Interfaces
+ 
+Building a basic interface in UIKit involves adding views to a view controller's root view, setting up Auto Layout constraints, and wiring controls to code through IBOutlets and IBActions. Simple interfaces typically combine labels, buttons, text fields, and image views arranged into a readable, functional layout.
 
-UIKit Basic Interfaces refer to the fundamental user interface elements provided by the UIKit framework for creating standard iOS app layouts. These include navigation bars (UINavigationBar) for hierarchical navigation, tab bars (UITabBar) for switching between app sections, toolbars (UIToolbar) for displaying action buttons, and status bars for system information. Basic interfaces also encompass common screen layouts like list views (UITableView), grid layouts (UICollectionView), and scroll views (UIScrollView) for handling content that exceeds screen size. Mastering these basic interfaces ensures developers can create consistent, platform-native app experiences that users find familiar and intuitive, while providing a solid foundation for more complex UI designs.
-
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@UINavigationBar](https://developer.apple.com/documentation/uikit/uinavigationbar)
 - [@official@UITabBar](https://developer.apple.com/documentation/uikit/uitabbar)

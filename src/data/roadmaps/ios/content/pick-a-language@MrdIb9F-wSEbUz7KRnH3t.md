@@ -1,8 +1,6 @@
 # Pick a Language
-
-Apple used to use Objective C for the development of apps for iOS and macOS, but since 2014 [Swift](https://www.swift.org/documentation/) has become the primary language for app development. After more than 10 years of growing strong and mature, now it is worth starting your iOS Developer journey by learning the language.
-
-Swift is a multi-paradigm language that has object-oriented, functional, and protocol-oriented flavors to it. For someone with a coding background in C++ and Java, the strange concepts would be Optionals, Closures, and the very fact you can skip writing semicolons when you end your statements.
+ 
+iOS development primarily uses Swift and Objective-C. Swift is Apple's modern recommended language for new projects, while Objective-C is still present in many legacy codebases and system frameworks.
 
 Visit the following resources to learn more:
 

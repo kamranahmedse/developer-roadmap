@@ -1,3 +1,7 @@
 # Networking
+ 
+Networking in iOS covers how apps communicate with remote servers and APIs. The native foundation is URLSession for HTTP requests, and Alamofire is a popular third-party library that simplifies common networking tasks. iOS apps commonly consume REST APIs over HTTPS and, increasingly, GraphQL APIs.
 
-Networking in iOS development involves the exchange of data between an app and remote servers or services over the internet. At the core of iOS networking is URLSession, a powerful class within the Foundation framework that handles HTTP/HTTPS communications. URLSession supports a wide range of operations, from simple data fetching to complex, concurrent downloads and uploads. Developers use it to create data tasks for basic requests, download tasks for file transfers, and upload tasks for sending data to servers. URLSession manages connections, authentication, and caching automatically. iOS networking often revolves around interacting with RESTful APIs, typically using JSON for data interchange. Robust networking code requires careful error handling, efficient response parsing, and effective management of network reachability. Modern Swift features like the Combine framework and async/await syntax complement URLSession by providing more elegant ways to handle asynchronous network operations, enhancing code readability and maintainability in complex scenarios.
+Visit the following resources to learn more:
+
+- [@roadmap@Visit the Dedicated Network Engineer Roadmap](https://roadmap.sh/network-engineer)

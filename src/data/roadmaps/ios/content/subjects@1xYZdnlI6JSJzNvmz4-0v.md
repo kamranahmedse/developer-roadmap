@@ -1,9 +1,9 @@
 # Subjects
+ 
+Subjects in RxSwift act as both Observables and Observers, making them useful for bridging non-reactive code into reactive streams. PublishSubject emits only new items to subscribers; BehaviorSubject replays the last value to new subscribers; and ReplaySubject replays a configurable number of past values. Subjects are commonly used as input channels in MVVM ViewModels.
 
-RxSwift Subjects are a special type of Observable that act as both an observer and an observable. They can receive and emit values, serving as a bridge between the imperative and reactive programming paradigms. Subjects allow multiple observers to react to the same source of emitted items. RxSwift provides several types of Subjects, including PublishSubject (emits only new elements), BehaviorSubject (emits the latest element to new subscribers), ReplaySubject (buffers and re-emits a specified number of elements), and Variable (a deprecated wrapper around BehaviorSubject).
+Visit the following resources to learn more:
 
-Learn more from the following resources:
-
+- [@official@ReactiveX Subject Documentation](https://reactivex.io/documentation/subject.html)
 - [@article@RxSwift Subjects Reference](https://docs.rxswift.org/rxswift/subjects)
 - [@article@RxSwift Subjects](https://medium.com/@jhalekhnish/rxswift-subjects-45f65649aee6)
-- [@official@ReactiveX Subject Documentation](https://reactivex.io/documentation/subject.html)

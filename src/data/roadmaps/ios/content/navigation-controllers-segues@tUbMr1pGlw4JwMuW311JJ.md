@@ -1,12 +1,8 @@
 # Navigation Controllers, Segues
+ 
+UINavigationController manages a stack of view controllers with a navigation bar at the top. Segues are the transitions between view controllers defined in a Storyboard, triggered by user interaction or called programmatically. The prepare(for:sender:) method is used to pass data to the destination view controller before a segue executes.
 
-UIKit Navigation Controllers and Segues are key components for managing app navigation:
+Visit the following resources to learn more:
 
-Navigation Controllers (`UINavigationController`) manage a stack of view controllers, providing a hierarchical interface for navigating content. They handle push and pop transitions between screens, maintain a navigation bar, and support back-navigation functionality.
-
-Segues are visual connections between view controllers in storyboards, defining transitions between scenes. They can be triggered programmatically or through user interactions. Types include push, modal, and custom segues. Segues simplify the process of passing data between view controllers during transitions.
-
-Learn more from the following resources:
-
-- [@video@How to Nav Bar Programmatically](https://www.youtube.com/watch?v=wcN3-E1_ZxU)
 - [@official@UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller)
+- [@video@How to Nav Bar Programmatically](https://www.youtube.com/watch?v=wcN3-E1_ZxU)

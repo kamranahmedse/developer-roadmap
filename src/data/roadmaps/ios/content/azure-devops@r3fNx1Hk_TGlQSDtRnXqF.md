@@ -1,6 +1,8 @@
 # Azure DevOps
+ 
+Azure DevOps is Microsoft's suite of developer tools that includes a CI/CD pipeline service supporting iOS development. It uses macOS-hosted agents to run Xcode builds and Fastlane workflows, and integrates with Azure Repos, GitHub, and other source control systems. Azure DevOps is commonly used in enterprise organizations already invested in Microsoft tooling.
 
-Azure DevOps is a suite of development tools and services offered by Microsoft to support the entire software development lifecycle. It includes Azure Repos for source code management with Git repositories, Azure Pipelines for continuous integration and continuous deployment (CI/CD), Azure Boards for agile project management and tracking, Azure Artifacts for managing and sharing packages, and Azure Test Plans for manual and exploratory testing. Azure DevOps integrates seamlessly with a variety of third-party tools and services, offering flexibility and extensibility. It provides robust security features, comprehensive reporting, and scalable infrastructure, making it suitable for teams of all sizes. By using Azure DevOps, development teams can collaborate more effectively, automate their workflows, and deliver high-quality software more quickly and efficiently.
+Visit the following resources to learn more:
 
 - [@official@Azure DevOps Website](https://azure.microsoft.com/en-gb/products/devops)
 - [@article@Build, test, and deploy Xcode apps](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/xcode?view=azure-devops)

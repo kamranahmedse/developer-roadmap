@@ -1,9 +1,6 @@
 # Navigation Stacks
-
-iOS 16 introduced a new concept of navigating through SiwftUI apps: NavigationStack.
-NavigationStack is data-driven, meaning that you specify navigationDestinations for each data type (models) that your app supports.
-These destinations are defined once for each NavigationStack and are valid throughout the app.
-Navigation itself is handled through the NavigationLink View, which allows setting a label and a value (your model).
+ 
+Navigation stacks in SwiftUI are managed by NavigationStack (iOS 16+), which maintains a path representing the current navigation state. Views are pushed onto the stack by navigating to a value, and the stack handles the back button automatically. The state-driven model enables programmatic navigation and full deep link support.
 
 Visit the following resources to learn more:
 

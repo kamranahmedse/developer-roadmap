@@ -1,8 +1,6 @@
 # ARKit
-
-ARKit is Apple’s framework for creating `augmented reality (AR) experiences` on iOS devices.
-
-`Augmented reality (AR)` describes user experiences that add 2D or 3D elements to the live view from a device’s sensors in a way that makes those elements appear to inhabit the real world.
+ 
+ARKit is Apple's augmented reality framework for iOS. It uses the device's camera and motion sensors to track the physical world and overlay digital content on top of it. ARKit provides features like horizontal and vertical plane detection, image tracking, face tracking, and LiDAR scene reconstruction on supported devices.
 
 Visit the following resources to learn more:
 
