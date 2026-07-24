@@ -4,5 +4,6 @@ Python's basic syntax defines the rules for writing code that the interpreter ca
 
 Visit the following resources to learn more:
 
-- [@roadmap@isit Dedicated Python Roadmap](https://roadmap.sh/python)
+- [@roadmap@Visit Dedicated Python for Data Analysis Roadmap](https://roadmap.sh/python-data-analysis)
+- [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
 - [@video@Learn Python - Full Course](https://www.youtube.com/watch?v=4M87qBgpafk)
