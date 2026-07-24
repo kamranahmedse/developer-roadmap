@@ -1,6 +1,6 @@
 # CSR vs SSR
-
-CSR stands for Client Side Rendering and SSR stands for Server Side Rendering. CSR pages are computed in your machine and then shown by your browser while in the case of SSR, the server sends ready to show Html content directly. Primarily React, Vue, and Angular apps are examples of CSR (technically it is possible for them to be executed in SSR mode too) and almost all older tech stacks are SSR like PHP, ruby on rails, java, dot net, etc. From the user's standpoint, CSR apps take higher time to render but compensate by avoiding page reloads later (SPA) while SSR apps often have faster initial load time but do a full page reload often.
+ 
+Client-Side Rendering (CSR) builds pages in the browser using JavaScript after load, while Server-Side Rendering (SSR) delivers fully rendered HTML from the server. The rendering approach affects when elements are available in the DOM, which directly impacts how and when automation tools can safely interact with the page.
 
 Visit the following resources to learn more:
 

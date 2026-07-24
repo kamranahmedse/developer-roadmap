@@ -1,11 +1,9 @@
-# HTML/CSS/JavaScript Basics
-
-HTML stands for HyperText Markup Language. It is used on the front and gives structure to the webpage, which you can style using CSS and make interactive using JavaScript.
-
-CSS or Cascading Style Sheets is the language used to style the front end of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
-
-JavaScript allows you to add interactivity to your pages. You may have seen common examples on the websites: sliders, click interactions, popups, and so on.
+# HTML, CSS, JavaScript
+ 
+HTML, CSS, and JavaScript are the three core web technologies that frontend test automation engineers must understand. HTML defines the structure of web pages, CSS controls styling and layout, and JavaScript powers interactivity. This knowledge enables testers to locate elements reliably, understand rendering behavior, and write effective automation scripts.
 
 Visit the following resources to learn more:
 
-- [@feed@Explore top posts about CSS](https://app.daily.dev/tags/css?ref=roadmapsh)
+- [@roadmap@Visit the Dedicated HTML Roadmap](https://roadmap.sh/html)
+- [@roadmap@Visit the Dedicated CSS Roadmap](https://roadmap.sh/css)
+- [@roadmap@Visit the Dedicated JavaScript Roadmap](https://roadmap.sh/javascript)

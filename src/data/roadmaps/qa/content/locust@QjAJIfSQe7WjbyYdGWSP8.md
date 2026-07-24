@@ -1,12 +1,6 @@
 # Locust
-
-Locust is an easy-to-use, scriptable and scalable performance testing tool. You define the behavior of your users in regular Python code instead of being stuck in a UI or restrictive domain-specific language. This makes Locust infinitely expandable and very developer friendly. Given below are some of the features of Locust.
-
-*   Write test scenarios in plain old Python
-*   Distributed and scalable - supports hundreds of thousands of concurrent users
-*   Web-based UI
-*   Can test any system
-*   Hackable
+ 
+Locust is an open-source Python-based load testing tool where user behavior is defined in plain Python code. It simulates large numbers of concurrent users using lightweight coroutines rather than threads, making it efficient for high-load scenarios. Locust provides a real-time web UI for monitoring results and supports distributed load generation.
 
 Visit the following resources to learn more:
 

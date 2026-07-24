@@ -1,8 +1,6 @@
 # Kanban
-
-Kanban is a very popular framework for development in the agile software development methodology. It provides a transparent way of visualizing the tasks and work capacity of a team. It mainly uses physical and digital boards to allow the team members to visualize the current state of the project they are working on.
-
-A kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency.
+ 
+Kanban is an Agile workflow management method that visualizes work on a board with columns representing stages like To Do, In Progress, and Done. Work items flow through columns as they are completed, and work-in-progress limits prevent bottlenecks. QA teams use Kanban to manage testing tasks and make workflow impediments visible.
 
 Visit the following resources to learn more:
 

@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@article@What is Accessibility Testing? (Examples)](https://www.guru99.com/accessibility-testing.html)
 - [@article@Accessibility Testing Tutorial (Step By Step Guide)](https://www.softwaretestinghelp.com/what-is-web-accessibility-testing/)
 - [@article@IBM Accessibility Toolkit](https://www.ibm.com/able/)
-- [@feed@Explore top posts about Accessibility](https://app.daily.dev/tags/accessibility?ref=roadmapsh)

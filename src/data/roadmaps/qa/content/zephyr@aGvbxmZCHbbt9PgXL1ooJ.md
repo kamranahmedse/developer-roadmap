@@ -1,10 +1,6 @@
 # Zephyr
-
-Zephyr is a testing solution that improves the quality of your software by managing and monitoring end-to-end testing. It is very effective for managing manual testing. Its key capabilities include:
-
-*   Test-case creation
-*   Organization of tests by product releases and components
-*   Assignment of tests to the Quality Assurance team
+ 
+Zephyr is a test management solution available as a Jira plugin (Zephyr Scale, Zephyr Squad) and as a standalone product. It allows teams to create test cases, organize them into cycles, execute tests, and view reports without leaving the Jira interface. Zephyr is widely used in teams that rely on Jira as their primary project tracking tool.
 
 Visit the following resources to learn more:
 

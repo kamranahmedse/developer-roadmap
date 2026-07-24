@@ -1,8 +1,6 @@
-# Run scope
-
-A Simple Tool for Monitoring Complex APIs. Verify that the structure and content of your API calls meets your expectations. Powerful and flexible assertions give you total control over defining a successful API call.
-
-Create simple monitors with dynamic data for even the most complex use cases. More than simple string matching, build API validations without any code and use them across local dev, staging and production environments.
+# RunScope
+ 
+Runscope (now part of Blazemeter) is an API monitoring and testing tool that checks API endpoints for correctness, performance, and availability on a scheduled or triggered basis. It is used for continuous API monitoring in production and staging environments. Runscope alerts teams when API responses deviate from expected behavior or exceed response time thresholds.
 
 Visit the following resources to learn more:
 

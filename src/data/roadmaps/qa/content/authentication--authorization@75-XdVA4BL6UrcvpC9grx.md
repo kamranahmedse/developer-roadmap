@@ -1,8 +1,6 @@
-# Authentication authorization
-
-`Authentication` is the process of verifying that an individual, entity or website is whom it claims to be. Authentication in the context of web applications is commonly performed by submitting a username or ID and one or more items of private information that only a given user should know.
-
-`Authorization` may be defined as "the process of verifying that a requested action or service is approved for a specific entity" (NIST). `Authorization` is distinct from authentication which is the process of verifying an entity's identity. When designing and developing a software solution, it is important to keep these distinctions in mind. A user who has been authenticated (perhaps by providing a username and password) is often not authorized to access every resource and perform every action that is technically possible through a system.
+# Authentication / Authorization
+ 
+Authentication testing verifies that the system correctly identifies users through login flows, session management, and token handling. Authorization testing verifies that authenticated users can only access the resources they are permitted to. Weak authentication or authorization is consistently among the most critical and exploited security vulnerabilities.
 
 Visit the following resources to learn more:
 

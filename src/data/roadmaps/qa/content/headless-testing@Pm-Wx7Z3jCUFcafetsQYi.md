@@ -1,12 +1,6 @@
 # Headless Testing
-
-Headless testing is when end-to-end tests are performed without loading the browser's user interface. Since the browser operates as a typical browser would but does not make use of the user interface, it is considered highly suitable for automated testing.
-
-A few example cases where one may use headless browser testing include:
-
-*   Automating HTML event responses, such as form submission, keyboard events, mouse-clicking, etc.
-*   Web scraping
-*   Generating screenshots of webpages
+ 
+Headless testing runs browser-based tests without a visible graphical user interface. Headless browsers execute JavaScript and render pages in memory, making tests faster and suitable for CI/CD environments where a display server is not available. Tools for headless testing include Cypress, Playwright, Puppeteer, Zombie.js, Headless Chrome, Headless Firefox, and HtmlUnit.
 
 Visit the following resources to learn more:
 

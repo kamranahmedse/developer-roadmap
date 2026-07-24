@@ -1,19 +1,6 @@
 # Artillery
-
-Artillery is a modern, powerful & easy-to-use performance testing toolkit. Use it to ship scalable applications that stay performant & resilient under high load.
-
-Artillery prioritizes developer productivity and happiness, and follows the "batteries-included" philosophy.
-
-Features
---------
-
-*   Emulate complex user behavior with scenarios
-*   Load testing and smoke testing
-*   Batteries included
-*   Extensible & hackable
-*   Integrations and add-ons
-*   Designed for cross-team collaboration
-*   Planet-scale testing
+ 
+Artillery is an open-source load testing toolkit for APIs and microservices. Test scenarios are defined in YAML or JavaScript, and it supports HTTP, WebSocket, and Socket.io protocols. Artillery is designed to run in CI/CD pipelines and integrates with monitoring platforms for capturing and visualizing performance data.
 
 Visit the following resources to learn more:
 

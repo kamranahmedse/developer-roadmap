@@ -1,8 +1,6 @@
 # Stress Testing
-
-`Stress Testing` is a type of `Performance Testing`. The objective of stress testing is to identify the breaking point of application under test under extreme normal load.
-
-e.g. Injecting high volume of requests per second to an API might cause the disruption to its service, or throws HTTP 503 Service Unavailable or cause other consequences.
+ 
+Stress testing evaluates a system's behavior when pushed beyond its normal operational capacity. It determines the system's breaking point by gradually increasing load until failure. Stress tests reveal how the system fails, whether it fails gracefully, and how it recovers after load is reduced.
 
 Visit the following resources to learn more:
 

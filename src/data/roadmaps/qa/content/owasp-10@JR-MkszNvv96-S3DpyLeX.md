@@ -1,8 +1,6 @@
 # OWASP 10
-
-The Open Web Application Security Project, or OWASP, is an international non-profit organization dedicated to web application security.
-
-The OWASP Top 10 is a regularly-updated report outlining security concerns for web application security, focusing on the 10 most critical risks. The report is put together by a team of security experts from all over the world. OWASP refers to the Top 10 as an ‘awareness document’ and they recommend that all companies incorporate the report into their processes in order to minimize and/or mitigate security risks.
+ 
+The OWASP Top 10 is a list of the most critical web application security risks, published by the Open Web Application Security Project. It covers vulnerabilities like injection attacks, broken authentication, insecure deserialization, and security misconfiguration. Security testing commonly uses the OWASP Top 10 as a checklist to verify that an application's most critical risks are addressed.
 
 Visit the following resources to learn more:
 

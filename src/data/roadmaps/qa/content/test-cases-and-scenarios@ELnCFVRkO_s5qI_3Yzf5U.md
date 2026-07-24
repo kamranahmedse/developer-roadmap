@@ -1,8 +1,6 @@
 # Test Cases and Scenarios
-
-A Test Case is a set of actions executed to verify a particular feature or functionality of your software application. A Test Case contains test steps, test data, precondition, and postcondition developed for a specific test scenario to verify any requirement. The test case includes specific variables or conditions, using which a testing engineer can compare expected and actual results to determine whether a software product is functioning as per the requirements of the customer.
-
-A Test Scenario is defined as any functionality that can be tested. It is a collective set of test cases which helps the testing team to determine the positive and negative characteristics of the project.
+ 
+Test cases are documented descriptions of conditions, inputs, and expected results used to verify a specific aspect of a system. Test scenarios describe the higher-level situation being tested, and one scenario typically encompasses multiple test cases. Well-written test cases provide repeatable, clear documentation of what is being tested and what constitutes pass or fail.
 
 Visit the following resources to learn more:
 

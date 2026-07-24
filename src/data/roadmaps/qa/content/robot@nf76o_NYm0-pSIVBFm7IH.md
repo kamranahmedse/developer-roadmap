@@ -1,8 +1,6 @@
-# Robot framework
-
-Robot Framework is a Python-based, extensible keyword-driven automation framework for acceptance testing, acceptance test driven development (ATDD), behavior driven development (BDD) and robotic process automation (RPA).
-
-Robot Framework is open and extensible. Robot Framework can be integrated with virtually any other tool to create powerful and flexible automation solutions.
+# Robot
+ 
+Robot Framework is an open-source, keyword-driven test automation framework with a human-readable tabular test syntax. It is extensible through Python or Java libraries and supports web, API, desktop, and mobile testing. Robot Framework is widely used for acceptance testing and integrates with SeleniumLibrary and the Browser Library.
 
 Visit the following resources to learn more:
 

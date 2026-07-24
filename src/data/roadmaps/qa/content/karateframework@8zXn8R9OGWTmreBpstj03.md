@@ -1,10 +1,6 @@
-# Karate framework
-
-Karate is the only open-source tool to combine API test-automation, mocks, performance-testing and even UI automation into a single, unified framework. The BDD syntax popularized by Cucumber is language-neutral, and easy for even non-programmers. Assertions and HTML reports are built-in, and you can run tests in parallel for speed.
-
-There's also a cross-platform stand-alone executable for teams not comfortable with Java. You don't have to compile code. Just write tests in a simple, readable syntax - carefully designed for HTTP, JSON, GraphQL and XML. And you can mix API and UI test-automation within the same test script.
-
-A Java API also exists for those who prefer to programmatically integrate Karate's rich automation and data-assertion capabilities.
+# Karateframework
+ 
+Karate is an open-source test automation framework that combines API testing, mocking, and performance testing using a plain-text Gherkin-like syntax. It does not require programming knowledge for basic test cases, making it accessible to non-developer testers. Karate integrates with CI/CD pipelines and supports parallel test execution out of the box.
 
 Visit the following resources to learn more:
 

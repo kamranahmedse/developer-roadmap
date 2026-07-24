@@ -1,10 +1,6 @@
 # Trello
-
-Trello is a popular, simple, and easy-to-use collaboration tool that enables you to organize projects and everything related to them into boards. With Trello, you can find all kinds of information, such as:
-
-*   What’s being worked on?
-*   Who’s working on what?
-*   What progress the project is making
+ 
+Trello is a visual project management tool based on Kanban-style boards with cards and lists. Teams use it to track tasks, manage workflows, and coordinate work across members. In QA contexts, Trello is commonly used for lightweight test planning and defect tracking in smaller teams or projects.
 
 Visit the following resources to learn more:
 

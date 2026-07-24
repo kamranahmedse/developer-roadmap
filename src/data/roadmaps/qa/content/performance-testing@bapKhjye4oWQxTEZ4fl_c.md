@@ -1,21 +1,6 @@
 # Performance Testing
-
-Performance Testing is a subset of Performance Engineering. It is a process of evaluating a system’s behavior under various extreme conditions. The main intent of performance testing is monitoring and improving key performance indicators such as response time, throughput, memory, CPU utilization, and more.
-
-There are three objectives (three S) of Performance testing to observe and evaluate: `Speed`, `Scalability`, and `Stability`.
-
-Types of Performance Testing
-----------------------------
-
-Following are the commonly used performance testing types, but not limited to:
-
-*   Load Testing
-*   Stress Testing
-*   Spike Testing
-*   Endurance Testing
-*   Volume Testing
-*   Scalability Testing
-*   Capacity Testing
+ 
+Performance testing measures the speed, scalability, and stability of a system under various conditions. It encompasses load testing, stress testing, endurance testing, and spike testing. The goal is to identify performance bottlenecks and verify that response times and throughput meet defined service level objectives.
 
 Visit the following resources to learn more:
 

@@ -5,6 +5,6 @@ Version control/source control systems allow developers to track and control cha
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Git & GitHub Roadmap](https://roadmap.sh/git-github)
+- [@course@Why version control? (Interactive Lesson)](https://inter-git.com/lessons/introduction)
 - [@article@What is Version Control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
 - [@video@Version Control System (VCS)](https://www.youtube.com/watch?v=SVkuliabq4g)
-- [@course@Why version control? (Interactive Lesson)](https://inter-git.com/lessons/introduction)

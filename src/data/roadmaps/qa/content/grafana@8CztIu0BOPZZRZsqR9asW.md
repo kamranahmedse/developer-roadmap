@@ -1,6 +1,6 @@
 # Grafana
-
-Grafana is the open-source platform for monitoring and observability. It allows you to query, visualize, alert on and understand your metrics no matter where they are stored.
+ 
+Grafana is an open-source analytics and visualization platform for creating dashboards from metrics stored in data sources like Prometheus, InfluxDB, and Datadog. QA teams use Grafana to visualize load test results, track performance metrics over time, and build custom dashboards for monitoring test environment health.
 
 Visit the following resources to learn more:
 
