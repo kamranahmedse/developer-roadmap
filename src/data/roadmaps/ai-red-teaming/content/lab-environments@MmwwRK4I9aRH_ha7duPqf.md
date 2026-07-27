@@ -7,5 +7,6 @@ Learn more from the following resources:
 - [@platform@HackAPrompt Playground](https://learnprompting.org/hackaprompt-playground)
 - [@platform@InjectPrompt Playground](https://playground.injectprompt.com/)
 - [@platform@Gandalf AI Prompt Injection Lab](https://gandalf.lakera.ai/)
+- [@platform@PromptTrace](https://prompttrace.airedlab.com)
 - [@platform@Hack The Box: Hacking Labs](https://www.hackthebox.com/hacker/hacking-labs)
 - [@platform@TryHackMe: Learn Cyber Security](https://tryhackme.com/)
