@@ -5,4 +5,4 @@ In CSS, the `border` property defines the line that surrounds an HTML element's 
 Visit the following resources to learn more:
 
 - [@article@Border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
-- [@article@Learn CSS borders in 4 minutes!](https://www.youtube.com/watch?v=pkNdQ7TmxIw)
+- [@video@Learn CSS borders in 4 minutes!](https://www.youtube.com/watch?v=pkNdQ7TmxIw)
