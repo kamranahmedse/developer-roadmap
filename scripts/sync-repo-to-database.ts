@@ -1,15 +1,15 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { OfficialRoadmapDocument } from '../lib/official-roadmap';
+import type { OfficialRoadmapDocument } from './lib/official-roadmap';
 import { parse } from 'node-html-parser';
-import { markdownToHtml } from '../lib/markdown';
-import { htmlToMarkdown } from '../lib/html';
+import { markdownToHtml } from './lib/markdown';
+import { htmlToMarkdown } from './lib/html';
 import {
   allowedOfficialRoadmapTopicResourceType,
   type AllowedOfficialRoadmapTopicResourceType,
   type SyncToDatabaseTopicContent,
-} from '../lib/official-roadmap-topic';
+} from './lib/official-roadmap-topic';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

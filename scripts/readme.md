@@ -4,7 +4,7 @@
 > database in sync. All three are driven by GitHub Actions in `.github/workflows`,
 > but can be run locally too.
 
-Shared helpers live in the top level `lib/` directory.
+Shared helpers live in `scripts/lib`.
 
 ## `sync-content-to-repo.ts`
 

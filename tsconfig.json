@@ -10,8 +10,8 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "types": ["node"]
+    "types": ["node"],
   },
-  "include": ["lib/**/*.ts", "scripts/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["scripts/**/*.ts"],
+  "exclude": ["node_modules"],
 }

@@ -1,12 +1,12 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { slugify } from '../lib/slugger';
-import type { OfficialRoadmapDocument } from '../lib/official-roadmap';
+import { slugify } from './lib/slugger';
+import type { OfficialRoadmapDocument } from './lib/official-roadmap';
 import {
   prepareOfficialRoadmapTopicContent,
   type OfficialRoadmapTopicContentDocument,
-} from '../lib/official-roadmap-topic';
+} from './lib/official-roadmap-topic';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
