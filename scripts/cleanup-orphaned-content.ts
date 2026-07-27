@@ -1,20 +1,21 @@
-import type { Node } from '@roadmapsh/editor';
-import matter from 'gray-matter';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { slugify } from '../src/lib/slugger';
+import type { OfficialRoadmapNode } from './lib/official-roadmap';
+import { slugify } from './lib/slugger';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
+const ROADMAP_CONTENT_DIR = path.join(__dirname, '../roadmaps');
 
 const args = process.argv.slice(2);
 const roadmapSlug = args?.[0]?.replace('--roadmap-slug=', '');
 
 if (!roadmapSlug) {
-  console.error('Usage: tsx scripts/cleanup-orphaned-content.ts --roadmap-slug=<slug|__all__>');
+  console.error(
+    'Usage: tsx scripts/cleanup-orphaned-content.ts --roadmap-slug=<slug|__all__>',
+  );
   process.exit(1);
 }
 
@@ -26,51 +27,39 @@ interface OrphanEntry {
   renamedTo?: string;
 }
 
-async function fetchRoadmapJson(slug: string): Promise<{ nodes: Node[] }> {
-  try {
-    const response = await fetch(
-      `https://roadmap.sh/api/v1-official-roadmap/${slug}`,
-    );
+async function fetchRoadmapJson(
+  slug: string,
+): Promise<{ nodes: OfficialRoadmapNode[] }> {
+  const response = await fetch(
+    `https://roadmap.sh/api/v1-official-roadmap/${slug}`,
+  );
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-
-    const data = await response.json();
-    if (data.error) {
-      throw new Error(data.error);
-    }
-
-    return data;
-  } catch (err) {
-    console.log(`  API fetch failed for ${slug}, falling back to local JSON`);
-    const localPath = path.join(ROADMAP_CONTENT_DIR, slug, `${slug}.json`);
-    const raw = await fs.readFile(localPath, 'utf-8');
-    return JSON.parse(raw);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${slug}: HTTP ${response.status}`);
   }
+
+  const data = await response.json();
+  if (data.error) {
+    throw new Error(`Failed to fetch ${slug}: ${data.error}`);
+  }
+
+  return data;
 }
 
-async function isEditorRoadmap(slug: string): Promise<boolean> {
-  const mdPath = path.join(ROADMAP_CONTENT_DIR, slug, `${slug}.md`);
-  try {
-    const raw = await fs.readFile(mdPath, 'utf-8');
-    const { data } = matter(raw);
-    return data.renderer === 'editor';
-  } catch {
-    return false;
-  }
+async function hasContentDir(slug: string): Promise<boolean> {
+  const stat = await fs
+    .stat(path.join(ROADMAP_CONTENT_DIR, slug, 'content'))
+    .catch(() => null);
+
+  return Boolean(stat?.isDirectory());
 }
 
-async function getEditorRoadmapSlugs(): Promise<string[]> {
+async function getRoadmapSlugs(): Promise<string[]> {
   const allDirs = await fs.readdir(ROADMAP_CONTENT_DIR);
   const results: string[] = [];
 
   for (const dir of allDirs) {
-    const stat = await fs.stat(path.join(ROADMAP_CONTENT_DIR, dir)).catch(() => null);
-    if (!stat?.isDirectory()) {
-      continue;
-    }
-    if (await isEditorRoadmap(dir)) {
+    if (await hasContentDir(dir)) {
       results.push(dir);
     }
   }
@@ -78,7 +67,9 @@ async function getEditorRoadmapSlugs(): Promise<string[]> {
   return results;
 }
 
-function parseContentFilename(filename: string): { slug: string; nodeId: string } | null {
+function parseContentFilename(
+  filename: string,
+): { slug: string; nodeId: string } | null {
   const match = filename.match(/^(.+)@([^.]+)\.md$/);
   if (!match) {
     return null;
@@ -114,7 +105,7 @@ async function cleanupRoadmap(slug: string): Promise<OrphanEntry[]> {
 
   for (const node of topicNodes) {
     validNodeIds.add(node.id);
-    nodeIdToExpectedSlug.set(node.id, slugify(node.data.label as string));
+    nodeIdToExpectedSlug.set(node.id, slugify(node.data?.label as string));
   }
 
   const files = await fs.readdir(contentDir);
@@ -126,7 +117,10 @@ async function cleanupRoadmap(slug: string): Promise<OrphanEntry[]> {
     if (!parsed) {
       continue;
     }
-    if (validNodeIds.has(parsed.nodeId) && nodeIdToExpectedSlug.get(parsed.nodeId) === parsed.slug) {
+    if (
+      validNodeIds.has(parsed.nodeId) &&
+      nodeIdToExpectedSlug.get(parsed.nodeId) === parsed.slug
+    ) {
       validFilesBySlug.set(parsed.slug, file);
     }
   }
@@ -190,7 +184,9 @@ async function cleanupRoadmap(slug: string): Promise<OrphanEntry[]> {
     if (orphan.action === 'renamed') {
       const newPath = path.join(contentDir, orphan.renamedTo!);
       await fs.rename(filePath, newPath);
-      console.log(`  Renamed: ${orphan.file} -> ${orphan.renamedTo} (${orphan.reason})`);
+      console.log(
+        `  Renamed: ${orphan.file} -> ${orphan.renamedTo} (${orphan.reason})`,
+      );
     } else {
       await fs.unlink(filePath);
       console.log(`  Deleted: ${orphan.file} (${orphan.reason})`);
@@ -206,15 +202,11 @@ async function cleanupRoadmap(slug: string): Promise<OrphanEntry[]> {
 
 async function main() {
   const slugs =
-    roadmapSlug === '__all__'
-      ? await getEditorRoadmapSlugs()
-      : [roadmapSlug];
+    roadmapSlug === '__all__' ? await getRoadmapSlugs() : [roadmapSlug];
 
-  if (roadmapSlug !== '__all__') {
-    if (!(await isEditorRoadmap(roadmapSlug))) {
-      console.error(`${roadmapSlug} is not an editor-rendered roadmap`);
-      process.exit(1);
-    }
+  if (roadmapSlug !== '__all__' && !(await hasContentDir(roadmapSlug))) {
+    console.error(`No content directory found for ${roadmapSlug}`);
+    process.exit(1);
   }
 
   console.log(`Processing ${slugs.length} roadmap(s)...`);
@@ -240,8 +232,12 @@ async function main() {
     summary += `| File | Action | Reason | Duplicate Of |\n`;
     summary += `|---|---|---|---|\n`;
     for (const orphan of orphans) {
-      const action = orphan.action === 'renamed' ? `Renamed to \`${orphan.renamedTo}\`` : 'Deleted';
-      const dupOf = orphan.duplicateOf === 'N/A' ? 'N/A' : `\`${orphan.duplicateOf}\``;
+      const action =
+        orphan.action === 'renamed'
+          ? `Renamed to \`${orphan.renamedTo}\``
+          : 'Deleted';
+      const dupOf =
+        orphan.duplicateOf === 'N/A' ? 'N/A' : `\`${orphan.duplicateOf}\``;
       summary += `| \`${orphan.file}\` | ${action} | ${orphan.reason} | ${dupOf} |\n`;
     }
     summary += `\n`;
@@ -250,7 +246,9 @@ async function main() {
   const summaryPath = path.join(__dirname, '..', '.cleanup-summary.md');
   await fs.writeFile(summaryPath, summary);
   console.log(`\nSummary written to .cleanup-summary.md`);
-  console.log(`Total: ${totalOrphans} orphaned file(s) cleaned up across ${roadmapsAffected} roadmap(s)`);
+  console.log(
+    `Total: ${totalOrphans} orphaned file(s) cleaned up across ${roadmapsAffected} roadmap(s)`,
+  );
 }
 
 main().catch((err) => {

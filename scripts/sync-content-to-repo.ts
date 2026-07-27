@@ -1,12 +1,12 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { slugify } from '../src/lib/slugger';
-import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
+import { slugify } from './lib/slugger';
+import type { OfficialRoadmapDocument } from './lib/official-roadmap';
 import {
-  formatOfficialRoadmapTopicResourceLink,
+  prepareOfficialRoadmapTopicContent,
   type OfficialRoadmapTopicContentDocument,
-} from '../src/queries/official-roadmap-topic';
+} from './lib/official-roadmap-topic';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -62,11 +62,7 @@ export async function fetchRoadmapJson(
 }
 
 // Directory containing the roadmaps
-const ROADMAP_CONTENT_DIR = path.join(
-  __dirname,
-  '../src/data/roadmaps',
-  roadmapSlug,
-);
+const ROADMAP_CONTENT_DIR = path.join(__dirname, '../roadmaps', roadmapSlug);
 
 const allTopics = await roadmapTopics(roadmapSlug, secret);
 const roadmap = await fetchRoadmapJson(roadmapSlug);
@@ -99,22 +95,7 @@ for (const topic of allTopics) {
     await fs.mkdir(topicDir, { recursive: true });
   }
 
-  const topicContent = prepareTopicContent(topic);
+  const topicContent = prepareOfficialRoadmapTopicContent(topic);
   await fs.writeFile(topicPath, topicContent);
   console.log(`✅ Synced ${topicSlug}`);
-}
-
-function prepareTopicContent(topic: OfficialRoadmapTopicContentDocument) {
-  const { description, resources = [] } = topic;
-
-  let content = description;
-  if (resources.length > 0) {
-    const resourceLinks = resources
-      .map(formatOfficialRoadmapTopicResourceLink)
-      .join('\n');
-
-    content += `\n\nVisit the following resources to learn more:\n\n${resourceLinks}`;
-  }
-
-  return content;
 }

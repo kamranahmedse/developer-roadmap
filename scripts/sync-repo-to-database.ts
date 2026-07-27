@@ -1,15 +1,15 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { OfficialRoadmapDocument } from '../src/queries/official-roadmap';
+import type { OfficialRoadmapDocument } from './lib/official-roadmap';
 import { parse } from 'node-html-parser';
-import { markdownToHtml } from '../src/lib/markdown';
-import { htmlToMarkdown } from '../src/lib/html';
+import { markdownToHtml } from './lib/markdown';
+import { htmlToMarkdown } from './lib/html';
 import {
   allowedOfficialRoadmapTopicResourceType,
   type AllowedOfficialRoadmapTopicResourceType,
   type SyncToDatabaseTopicContent,
-} from '../src/queries/official-roadmap-topic';
+} from './lib/official-roadmap-topic';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -106,7 +106,7 @@ if (files.length === 0) {
 }
 
 console.log(`🚀 Starting ${files.length} files`);
-const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
+const ROADMAP_CONTENT_DIR = path.join(__dirname, '../roadmaps');
 
 try {
   const topics: SyncToDatabaseTopicContent[] = [];
@@ -118,7 +118,7 @@ try {
       continue;
     }
 
-    const pathParts = file.replace('src/data/roadmaps/', '').split('/');
+    const pathParts = file.replace('roadmaps/', '').split('/');
     const roadmapSlug = pathParts?.[0];
     if (!roadmapSlug) {
       console.error(`🚨 Roadmap slug is required: ${file}`);

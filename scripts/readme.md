@@ -1,37 +1,54 @@
-## CLI Tools
+## Content Sync Scripts
 
-> A bunch of CLI scripts to make the development easier
+> Scripts that keep the `roadmaps/` content in this repository and the roadmap.sh
+> database in sync. All three are driven by GitHub Actions in `.github/workflows`,
+> but can be run locally too.
 
-## `roadmap-links.cjs`
+Shared helpers live in `scripts/lib`.
 
-Generates a list of all the resources links in any roadmap file.
+## `sync-content-to-repo.ts`
 
-## `compress-jsons.cjs`
-
-Compresses all the JSON files in the `public/jsons` folder
-
-## `update-sponsors.cjs`
-
-Updates the sponsor ads on each roadmap page with the latest sponsor information in the Excel sheet.
-
-## `roadmap-content.cjs`
-
-Currently, for any new roadmaps that we add, we do create the interactive roadmap but we end up leaving the content empty in the roadmap till we get time to fill it up manually.
-
-This script populates all the content files with some minimal content from OpenAI so that the users visiting the website have something to read in the interactive roadmap till we get time to fill it up manually.
-
-## `roadmap-dirs.cjs`
-
-This command is used to create the content folders and files for the interactivity of the roadmap. You can use the below command to generate the roadmap skeletons inside a roadmap directory:
+Pulls topic content out of the database and writes it into
+`roadmaps/<slug>/content/<label>@<nodeId>.md`. Used to seed or refresh the repo
+mirror of a roadmap.
 
 ```bash
-npm run roadmap-dirs [frontend|backend|devops|...]
+npm run sync:content-to-repo -- --roadmap-slug=frontend --secret=<GH_SYNC_SECRET>
 ```
 
-For the content skeleton to be generated, we should have proper grouping, and the group names in the project files. You can follow the steps listed below in order to add the meta information to the roadmap.
+Workflow: `sync-content-to-repo.yml` (dispatched from the backoffice). It opens a
+PR with whatever changed.
 
-- Remove all the groups from the roadmaps through the project editor. Select all and press `cmd+shift+g`
-- Identify the boxes that should be clickable and group them together with `cmd+shift+g`
-- Assign the name to the groups.
-  - Group names have the format of `[sort]-[slug]` e.g. `100-internet`. Each group name should start with a number starting from 100 which helps with sorting of the directories and the files. Groups at the same level have the sequential sorting information.
-  - Each groups children have a separate group and have the name similar to `[sort]-[parent-slug]:[child-slug]` where sort refers to the sorting of the `child-slug` and not the parent. Also parent-slug does not need to have the sorting information as a part of slug e.g. if parent was `100-internet` the children would be `100-internet:how-does-the-internet-work`, `101-internet:what-is-http`, `102-internet:browsers`.
+## `sync-repo-to-database.ts`
+
+The other direction, and the one community PRs flow through. Parses each content
+file, splits the resource list out of the description, maps the resource type
+prefixes (`@article@`, `@video@`, ...) and posts everything to
+`/v1-sync-official-roadmap-topics`.
+
+```bash
+npm run sync:repo-to-database -- --files=roadmaps/frontend/content/html@node-id.md --secret=<GH_SYNC_SECRET>
+```
+
+`--files` is a comma separated list. Anything that is not a `.md` file under a
+`content/` directory is skipped.
+
+Workflow: `sync-repo-to-database.yml`.
+
+## `cleanup-orphaned-content.ts`
+
+Compares the files on disk against the roadmap nodes in the database and removes
+or renames the leftovers: same node id with an outdated slug (renamed, or deleted
+when the correct file already exists), same slug with a stale node id (deleted),
+and topics that no longer exist on the roadmap (deleted).
+
+```bash
+npm run cleanup:orphaned-content -- --roadmap-slug=frontend
+npm run cleanup:orphaned-content -- --roadmap-slug=__all__
+```
+
+`__all__` walks every directory under `roadmaps/` that has a `content/` folder.
+A markdown report is written to `.cleanup-summary.md`, which the workflow uses as
+the PR body.
+
+Workflow: `cleanup-orphaned-content.yml`.
