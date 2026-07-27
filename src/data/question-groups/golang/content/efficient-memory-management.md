@@ -1,1 +1,0 @@
-Efficient memory management in Go can be achieved by carefully declaring variables with appropriate scope and preallocating data structures like slices or maps when possible, while releasing unused references to aid garbage collection and avoiding long-lived goroutines or channels that could cause leaks in your memory consumption. 

@@ -22,7 +22,7 @@ For new roadmaps, you can either:
 
 For the existing roadmaps, please follow the details listed for the nature of contribution:
 
-- **Fixing Typos** — Make your changes in the [roadmap markdown file](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps) and submit a [PR](https://github.com/nilbuild/developer-roadmap/pulls).
+- **Fixing Typos** — Make your changes in the [roadmap markdown file](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps) and submit a [PR](https://github.com/nilbuild/developer-roadmap/pulls).
 - **Adding/Removing Nodes and Modifying Node Titles** — Please open an [issue](https://github.com/nilbuild/developer-roadmap/issues) with your suggestion.
 
 **Note:** Please note that our goal is **not to have the biggest list of items**. Our goal is to list items or skills most relevant today.
@@ -51,7 +51,7 @@ Have a look at this project to get an idea of [what we are looking for](https://
 
 ## Adding Content
 
-Find [the content directory inside the relevant roadmap](https://github.com/nilbuild/developer-roadmap/tree/master/src/data/roadmaps). Please keep the following guidelines in mind when submitting content:
+Find [the content directory inside the relevant roadmap](https://github.com/nilbuild/developer-roadmap/tree/master/roadmaps). Please keep the following guidelines in mind when submitting content:
 
 - Content must be in English.
 - Maximum of 8 links per topic.
@@ -102,7 +102,7 @@ It's important to add a valid type, this will help us categorize the content and
 
 - <p><strong>Create a Single PR for Content Additions</strong></p>
 
-  If you are planning to contribute by adding content to the roadmaps, I recommend you to clone the repository, add content to the [content directory of the roadmap](./src/data/roadmaps/) and create a single PR to make it easier for me to review and merge the PR.
+  If you are planning to contribute by adding content to the roadmaps, I recommend you to clone the repository, add content to the [content directory of the roadmap](./roadmaps/) and create a single PR to make it easier for me to review and merge the PR.
 
 - <p><strong>Write meaningful commit messages</strong><br/>
 
@@ -129,21 +129,20 @@ It's important to add a valid type, this will help us categorize the content and
 - PR's that don't follow our style guide, have no description, and a default title.
 - Links to your own blog articles.
 
-## Local Development
+## Working Locally
 
-For local development, you can use the following commands:
+This repository only holds the roadmap content, so there is no app to run. Clone
+it, edit the markdown and open a PR:
 
 ```bash
 git clone git@github.com:nilbuild/developer-roadmap.git --depth 1
 cd developer-roadmap
-pnpm add @roadmapsh/editor@npm:@roadmapsh/dummy-editor -w
-pnpm install
 ```
-Run the development server with:
 
-```bash
-pnpm dev
-```
+Content lives in `roadmaps/<roadmap-slug>/content/<topic-slug>@<node-id>.md`. Keep
+the file name as it is, the node id is what ties the file to a topic on the
+roadmap. Once your PR is merged, the content is synced to the website
+automatically.
 
 ***
 
