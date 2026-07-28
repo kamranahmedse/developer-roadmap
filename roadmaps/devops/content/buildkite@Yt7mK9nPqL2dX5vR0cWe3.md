@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [@official@Buildkite Website](https://buildkite.com/)
 - [@official@Buildkite Documentation](https://buildkite.com/docs)
 - [@official@Getting Started with Buildkite](https://buildkite.com/docs/tutorials/getting-started)
-- [@video@Buildkite Overview](https://www.youtube.com/watch?v=_lBPiA7fUvQ)
+- [@video@Buildkite YouTube Channel](https://www.youtube.com/@Buildkite)
