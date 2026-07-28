@@ -2,7 +2,7 @@
 
 Targeted training is crucial for mastering AI Red Teaming. Look for courses covering adversarial ML, prompt hacking, LLM security, ethical hacking for AI, and specific red teaming methodologies applied to AI systems offered by platforms like Learn Prompting, Coursera, or security training providers.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@course@AI Red Teaming Courses - Learn Prompting](https://learnprompting.org/blog/ai-red-teaming-courses)
 - [@course@AI Security | Coursera](https://www.coursera.org/learn/ai-security)
