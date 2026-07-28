@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Built-in Functions](https://docs.python.org/3/library/functions.html)
 - [@video@All 71 built-in Python functions](https://www.youtube.com/watch?v=7Qu_KXc7xSI)
+- [@article@Master Python Filter: Syntax, Examples, and Best Practices](https://roadmap.sh/python/filter)
