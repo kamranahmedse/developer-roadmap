@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@Built-in Functions in Python](https://docs.python.org/3/library/functions.html)
 - [@article@Defining Python Functions](https://realpython.com/defining-your-own-python-function/)
 - [@article@How to Return Multiple Values in Python (and When to Use Each Method)](https://roadmap.sh/python/return-multiple-values)
+- [@article@Master Python Filter: Syntax, Examples, and Best Practices](https://roadmap.sh/python/filter)
