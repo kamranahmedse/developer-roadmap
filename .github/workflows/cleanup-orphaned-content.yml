@@ -13,16 +13,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup pnpm@v9
+      - name: Setup pnpm@v11
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 11
           run_install: false
 
-      - name: Setup Node.js Version 20 (LTS)
+      - name: Setup Node.js Version 24 (LTS)
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: 'pnpm'
 
       - name: Install Dependencies and Run Cleanup
