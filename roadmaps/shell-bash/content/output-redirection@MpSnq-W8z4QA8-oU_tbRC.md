@@ -5,5 +5,5 @@ Output redirection in shell scripting allows you to control where the output of 
 Visit the following resources to learn more:
 
 - [@article@Unix / Linux - Shell Input/Output Redirections](https://www.tutorialspoint.com/unix/unix-io-redirections.htm#:~:text=The%20output%20from%20a%20command,is%20known%20as%20output%20redirection.)
-- [@article@Linux Question: What is /dev/null 2>&1 ?](https://hemantjain.medium.com/linux-question-what-is-dev-null-2-1-82d75a156b5c)
+- [@article@Linux Question: What is /dev/null 2\>&1 ?](https://hemantjain.medium.com/linux-question-what-is-dev-null-2-1-82d75a156b5c)
 - [@video@Linux Commands for Beginners 16 - Output Redirection](https://www.youtube.com/watch?v=NUjpOLlYv7Q)

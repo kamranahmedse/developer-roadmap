@@ -4,7 +4,7 @@ Vim is a highly configurable text editor built to enable efficient text editing.
 
 Visit the following resources to learn more:
 
+- [@course@OpenVim - Interactive Vim Tutorial](https://openvim.com/)
 - [@official@Vim](https://www.vim.org/)
 - [@article@Getting started with Vim: The basics](https://opensource.com/article/19/3/getting-started-vim)
 - [@video@Vim As Your Editor - Introduction](https://www.youtube.com/watch?v=X6AR2RMB5tE)
-- [@course@OpenVim - Interactive Vim Tutorial](https://openvim.com/)

@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@PowerShell Docs](https://learn.microsoft.com/en-us/powershell/)
 - [@opensource@PowerShell](https://github.com/PowerShell/PowerShell)
 - [@video@Learn PowerShell in Less Than 2 Hours](https://www.youtube.com/watch?v=ZOoCaWyifmI)
-- [@video@PowerShell Made Easy](https://www.youtube.com/watch?v=b7SGPchYRn0)
