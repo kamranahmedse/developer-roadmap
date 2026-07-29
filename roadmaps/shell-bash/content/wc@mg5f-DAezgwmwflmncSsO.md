@@ -5,4 +5,4 @@
 Visit the following resources to learn more:
 
 - [@article@Wc Command - Count Number of Lines, Words, and Characters](https://www.tecmint.com/wc-command-examples/)
-- [@video@wc Command in Linux [Practical Examples] -](https://www.youtube.com/watch?v=H8vq9QrZJo8)
+- [@video@wc Command in Linux \[Practical Examples\] -](https://www.youtube.com/watch?v=H8vq9QrZJo8)

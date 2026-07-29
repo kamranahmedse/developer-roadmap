@@ -4,6 +4,6 @@ Determining the length of a string is a common task in scripting. It involves fi
 
 Visit the following resources to learn more:
 
-- [@article@How to Find Length of String in Bash [Quick Tip]](https://linuxhandbook.com/bash-string-length/)
+- [@article@How to Find Length of String in Bash \[Quick Tip\]](https://linuxhandbook.com/bash-string-length/)
 - [@article@Bash String Manipulation Examples – Length, Substring, Find and Replace](https://www.thegeekstuff.com/2010/07/bash-string-manipulation/)
 - [@video@Counting Characters in a Bash String - Quick Tip](https://www.youtube.com/watch?v=mK7hutk2yCE)

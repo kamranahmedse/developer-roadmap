@@ -4,5 +4,4 @@ The `shift` command in shell scripting renames the command-line arguments. Speci
 
 Visit the following resources to learn more:
 
-- [@article@Bash shift Command](https://linuxopsys.com/bash-shift-command)
 - [@video@BASH Shifting Argument Variables Linux Shell Tutorial](https://www.youtube.com/watch?v=fJSUVGlQ1E8)

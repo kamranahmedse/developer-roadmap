@@ -4,6 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@Bash expr with Examples](https://linuxopsys.com/bash-expr-with-examples)
 - [@article@Practical examples of “expr” command in Linux](https://tecadmin.net/expr-command-examples/)
 - [@video@Linux Tutorial for Beginners | expr command | Evaluate Expressions in Linux](https://www.youtube.com/watch?v=6LbMLSBoLGY)
