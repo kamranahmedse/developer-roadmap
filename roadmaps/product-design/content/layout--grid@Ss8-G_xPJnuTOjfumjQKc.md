@@ -1,3 +1,8 @@
 # Layout & Grid
 
 Layout and grid systems define how elements are positioned and spaced on a screen, using a consistent underlying structure such as columns and margins. A solid grid keeps interfaces visually organized and makes it easier to design new screens that feel consistent with existing ones. This foundation supports responsive design, since a well-built grid can adapt across different screen sizes.
+
+Visit the following resources to learn more:
+
+- [@article@Understanding layout](https://m2.material.io/design/layout/understanding-layout.html#principles)
+- [@video@Complete Layout Guide](https://www.youtube.com/watch?v=MlsV3hu84as)

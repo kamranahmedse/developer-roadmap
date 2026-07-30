@@ -5,5 +5,5 @@ Product design is the practice of shaping a product's experience, look, and beha
 Visit the following resources to learn more:
 
 - [@article@What is product design?](https://www.figma.com/resource-library/what-is-product-design/)
-- [@article@What EXACTLY is Product Design? 🤔](https://www.youtube.com/watch?v=LckQ4VVjHDs)
+- [@video@What EXACTLY is Product Design? 🤔](https://www.youtube.com/watch?v=LckQ4VVjHDs)
 - [@video@Product Design Tutorials & Advice](https://www.youtube.com/playlist?list=PLDodijvPErk-0e-znq_4a2rtVW4BFF_wi)

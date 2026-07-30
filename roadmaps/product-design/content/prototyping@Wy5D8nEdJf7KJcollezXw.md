@@ -5,3 +5,4 @@ Prototyping is the process of building an interactive or semi-interactive repres
 Visit the following resources to learn more:
 
 - [@article@What is prototyping](https://www.figma.com/resource-library/what-is-prototyping/)
+- [@video@UX Prototyping Tutorial - What is a prototype?](https://www.youtube.com/watch?v=zFBa7URT654)
