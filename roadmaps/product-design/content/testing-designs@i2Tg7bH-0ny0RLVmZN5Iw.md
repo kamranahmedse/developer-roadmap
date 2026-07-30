@@ -1,3 +1,7 @@
 # Testing Designs
 
 Testing designs is the practice of evaluating a design with real users or experts to identify usability problems and accessibility issues before or after launch. It includes methods like usability testing and accessibility testing, each focused on different aspects of the experience. This step provides direct evidence of how well a design works, rather than relying solely on internal judgment.
+
+Visit the following resources to learn more:
+
+- [@article@Test Design: A Guide for Manual and Automated Testing](https://www.testrail.com/blog/test-design-guide/)
