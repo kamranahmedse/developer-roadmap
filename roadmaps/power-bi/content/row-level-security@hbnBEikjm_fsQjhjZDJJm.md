@@ -1,0 +1,3 @@
+# Row-Level Security
+ 
+Row-level security restricts which rows of data a user can see within a report, based on rules defined in the data model and tied to the user's identity. Roles are set up in Power BI Desktop with DAX filter expressions, then assigned to specific users or groups in the Service. This lets a single report be shared broadly while each viewer only sees the data relevant to them, such as their own region's sales.

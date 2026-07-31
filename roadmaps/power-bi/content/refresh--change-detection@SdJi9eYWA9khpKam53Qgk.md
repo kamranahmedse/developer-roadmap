@@ -1,0 +1,3 @@
+# Refresh & Change Detection
+ 
+Refresh settings determine how often a dataset in the Service pulls updated data from its source, on a schedule or triggered manually. Change detection is a feature that checks a lightweight query first to see whether the underlying data has actually changed before running a full, more expensive refresh. This reduces unnecessary load on the source system when data has not changed since the last check.

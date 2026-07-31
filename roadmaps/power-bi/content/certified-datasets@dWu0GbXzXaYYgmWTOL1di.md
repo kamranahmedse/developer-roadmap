@@ -1,0 +1,3 @@
+# Certified Datasets
+ 
+Certified datasets are datasets that have been reviewed and approved by a designated authority within an organization, marked with a badge that signals to other users that the data is trustworthy and ready for reuse. Certification helps prevent duplicate, inconsistent versions of the same dataset from spreading across an organization. Users building new reports are encouraged to build on certified datasets rather than creating their own from scratch.

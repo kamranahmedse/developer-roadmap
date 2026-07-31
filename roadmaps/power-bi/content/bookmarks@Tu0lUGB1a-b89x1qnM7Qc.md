@@ -1,0 +1,3 @@
+# Bookmarks
+ 
+Bookmarks capture the current state of a report page, including filters, slicer selections, and visual visibility, so that state can be restored later with a single click. They are often combined with buttons to build guided navigation, such as toggling between different views of the same data. Bookmarks are also used to simulate features Power BI does not natively support, like a simple tab-based layout.

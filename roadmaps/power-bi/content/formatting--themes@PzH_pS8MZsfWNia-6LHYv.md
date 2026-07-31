@@ -1,0 +1,3 @@
+# Formatting & Themes
+ 
+Formatting and themes control the visual appearance of a report, including colors, fonts, and visual styling, either set individually per visual or applied consistently across a whole report using a theme file. A theme is a JSON file that defines a color palette and style rules, letting an organization apply consistent branding across multiple reports at once. Manual formatting on individual visuals overrides whatever the theme sets by default.

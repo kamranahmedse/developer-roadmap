@@ -1,0 +1,3 @@
+# Microsoft Fabric
+ 
+Microsoft Fabric is Microsoft's unified data platform that brings together data engineering, data warehousing, and data science alongside Power BI, all built on a shared storage layer called OneLake. Power BI datasets within Fabric can use Direct Lake mode to query data stored in OneLake without a separate import step. Fabric represents a shift toward Power BI being one part of a broader integrated analytics platform rather than a standalone tool.

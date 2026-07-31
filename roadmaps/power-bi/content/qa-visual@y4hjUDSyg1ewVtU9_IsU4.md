@@ -1,0 +1,3 @@
+# Q&A Visual
+ 
+The Q&A visual lets report viewers type a question in natural language and get an automatically generated chart in response, using Power BI's natural language query engine. It relies on well-named fields and synonyms configured in the model to correctly interpret what is being asked. This gives less technical users a way to explore data without needing to know how to build a visual manually.

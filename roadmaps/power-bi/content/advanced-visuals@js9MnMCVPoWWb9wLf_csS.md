@@ -1,0 +1,3 @@
+# Advanced Visuals
+ 
+Advanced visuals are analytical tools that go beyond standard charts, including the decomposition tree, key influencers, small multiples, and the Q&A visual, each aimed at deeper exploration of the data rather than simple presentation. They are often used for exploratory analysis rather than a fixed, polished dashboard. These visuals tend to have more configuration options than basic chart types.

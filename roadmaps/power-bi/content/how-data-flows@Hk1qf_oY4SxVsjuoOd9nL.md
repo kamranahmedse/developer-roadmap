@@ -1,0 +1,3 @@
+# How Data Flows
+ 
+Data in Power BI moves through a pipeline: it gets pulled from a source using a connector, cleaned and reshaped in Power Query, loaded into a data model, and then visualized in reports. Depending on the connection mode, data can be imported and stored inside Power BI or queried live from the source at report load time. Understanding this flow helps in deciding where to fix an issue, whether at the source, during transformation, or in the model itself.

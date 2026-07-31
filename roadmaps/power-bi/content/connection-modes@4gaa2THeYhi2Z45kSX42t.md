@@ -1,0 +1,3 @@
+# Connection Modes
+ 
+Connection mode determines how Power BI interacts with a data source: whether it copies the data into its own storage or queries the source live each time a report runs. The main modes are Import, DirectQuery, Dual Storage, and Direct Lake, each with different trade-offs between performance, data freshness, and source load. Choosing a mode affects report speed, refresh strategy, and how large a dataset can practically be.

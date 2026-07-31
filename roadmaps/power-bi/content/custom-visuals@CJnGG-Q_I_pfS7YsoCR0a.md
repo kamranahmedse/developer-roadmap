@@ -1,0 +1,3 @@
+# Custom Visuals
+ 
+Custom visuals are chart types built by Microsoft or third parties beyond the default set included in Power BI, imported from the AppSource marketplace or a local file. They extend what can be shown beyond the built-in visual gallery, covering things like specialized chart types or interactive widgets. Custom visuals can carry their own performance and security considerations since they run custom code inside the report.

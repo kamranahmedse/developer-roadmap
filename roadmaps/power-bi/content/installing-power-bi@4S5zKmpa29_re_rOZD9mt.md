@@ -1,0 +1,3 @@
+# Installing Power BI
+ 
+Installing Power BI Desktop involves downloading it from the Microsoft Store or the Power BI website and running the setup file, which requires no special configuration for most users. The Service and Mobile app do not need installation in the same sense: the Service runs in a browser, and Mobile is installed like any other app from an app store. Organizations sometimes manage Desktop installation through their own software deployment tools instead of individual downloads.

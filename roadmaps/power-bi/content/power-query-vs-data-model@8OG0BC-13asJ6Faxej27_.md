@@ -1,0 +1,3 @@
+# Power Query vs. Data Model
+ 
+This distinguishes the two stages of Power BI's pipeline: Power Query, which happens before data is loaded, and the data model, which is where the loaded tables, relationships, and measures live. Some transformations can be done in either place, but Power Query changes affect the row-level data at refresh time, while the model layer, through calculated columns and measures, works with data already loaded. Deciding where to do a given transformation affects performance and refresh behavior

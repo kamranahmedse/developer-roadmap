@@ -1,0 +1,3 @@
+# Advanced DAX
+ 
+Advanced DAX covers techniques beyond the core functions, such as quick measures, field parameters, visual calculations, and calculation groups, which solve more specialized reporting problems. These features often exist to reduce the amount of manual DAX needed for common but complex patterns. They are typically introduced only after the fundamentals of context and filtering are solid.

@@ -1,0 +1,3 @@
+# Data & Infrastructure
+ 
+Data and infrastructure covers the backend components that support Power BI's data connectivity and refresh, including gateways, refresh scheduling, and datasets or dataflows. These pieces operate behind the scenes to keep published reports connected to their data sources reliably. They matter most to whoever administers data sources for an organization, rather than to report authors themselves.

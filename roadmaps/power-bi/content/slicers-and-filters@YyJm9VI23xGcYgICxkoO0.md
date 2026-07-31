@@ -1,0 +1,3 @@
+# Slicers and Filters
+ 
+Slicers are visual controls placed directly on a report page that let viewers filter the data interactively, such as choosing a specific year or category. Filters serve a similar purpose but are configured through a separate filter pane and can apply at the visual, page, or entire report level rather than as a visible control. Together they give report viewers control over what data they see without needing to edit the report itself.

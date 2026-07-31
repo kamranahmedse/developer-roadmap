@@ -1,0 +1,3 @@
+# Row vs Filter Context
+ 
+Row context is the context that exists when a formula evaluates one row at a time, such as inside a calculated column or an iterator function, while filter context is the set of filters currently applied from visuals, slicers, and other measures. A single formula can be affected by both at once, and confusing the two is a frequent source of unexpected results. Functions like CALCULATE are what let one type of context interact with, or convert into, the other.

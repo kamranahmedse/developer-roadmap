@@ -1,0 +1,3 @@
+# Design Principles
+ 
+Design principles in Power BI cover general practices for making reports clear and effective, such as using consistent color schemes, avoiding chart clutter, and prioritizing the most important information. Good design guides the viewer's attention to what matters rather than decorating the report unnecessarily. These principles borrow heavily from general data visualization and UX design practices, applied specifically to report building.

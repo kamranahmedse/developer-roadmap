@@ -1,0 +1,3 @@
+# Subscriptions and Alerts
+ 
+Subscriptions send scheduled snapshots of a report or dashboard by email, while alerts notify a user when a specific metric on a dashboard tile crosses a threshold they define. Both features let users stay informed without needing to actively check the report themselves. Alerts are only available on dashboard tiles with numeric values like cards and gauges, not on every visual type.

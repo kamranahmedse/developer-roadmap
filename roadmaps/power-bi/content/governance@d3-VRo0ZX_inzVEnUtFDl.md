@@ -1,0 +1,3 @@
+# Governance
+ 
+Governance in Power BI covers the policies and processes an organization puts in place to manage data quality, security, and consistency across all Power BI content, including standards for certified datasets, sensitivity labeling, and monitoring usage. It becomes more important as the number of reports and users grows within an organization. Administrators typically oversee governance through tenant-level settings in the Power BI admin portal.

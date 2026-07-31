@@ -1,0 +1,3 @@
+# Relationships
+ 
+Relationships connect tables in the data model, defining how filtering on one table affects another. Power BI infers relationships based on matching column names when possible, but they can also be set manually with the specific keys and direction chosen by the modeler. A well-designed set of relationships is what allows a single slicer to filter across multiple visuals correctly.

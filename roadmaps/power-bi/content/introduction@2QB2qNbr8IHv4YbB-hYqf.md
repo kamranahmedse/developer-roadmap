@@ -1,0 +1,3 @@
+# Introduction
+ 
+Power BI is a business intelligence tool from Microsoft for connecting to data, transforming it, and building interactive reports and dashboards. It combines a desktop authoring app, a cloud service for publishing and sharing, and a mobile app for viewing reports on the go. Analysts and business users use it to turn raw data from spreadsheets, databases, and cloud services into visual insights without writing much code.

@@ -1,0 +1,3 @@
+# Variables in DAX
+ 
+Variables in DAX, defined with VAR and used with RETURN, let a formula store an intermediate result and reuse it later in the same expression instead of recalculating it. This improves both readability, since the logic is broken into named steps, and performance, since the value is computed only once. Variables have become the standard way to structure any DAX formula beyond the simplest one-liner.

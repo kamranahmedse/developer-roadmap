@@ -1,0 +1,3 @@
+# Logical Functions
+ 
+Logical functions in DAX, such as IF, AND, OR, and SWITCH, evaluate conditions and return different results depending on whether they are true or false. They are used to build conditional logic within a measure or calculated column, similar to conditional statements in other languages. SWITCH is commonly preferred over nested IF statements once there are more than two or three conditions.

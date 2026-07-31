@@ -1,0 +1,3 @@
+# Table Manipulation
+ 
+Table manipulation functions in DAX, such as FILTER, ALL, VALUES, and SUMMARIZE, return or transform entire tables rather than single values, which are then used inside other functions like calculations or iterators. They let a formula work with a modified version of a table, such as removing a filter or reducing it to unique values. These functions are central to writing more advanced DAX beyond simple aggregations.

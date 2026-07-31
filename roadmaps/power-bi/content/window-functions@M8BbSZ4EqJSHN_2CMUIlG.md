@@ -1,0 +1,3 @@
+# Window Functions
+ 
+Window functions in DAX, like OFFSET, INDEX, and WINDOW, let a calculation reference rows relative to the current one within an ordered set, such as the previous row or a moving range. They are newer additions to DAX aimed at simplifying calculations that previously needed more complex workarounds, such as running totals or period-over-period comparisons. They work closely with the concept of ordering and partitioning within a table.

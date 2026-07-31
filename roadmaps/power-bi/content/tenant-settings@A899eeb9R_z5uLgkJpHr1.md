@@ -1,0 +1,3 @@
+# Tenant Settings
+ 
+Tenant settings are organization-wide configuration options managed by Power BI administrators, controlling things like whether users can share content externally, use certain features, or install custom visuals. These settings apply across the entire organization rather than a single workspace. They are the main lever administrators have for balancing user flexibility against organizational risk.

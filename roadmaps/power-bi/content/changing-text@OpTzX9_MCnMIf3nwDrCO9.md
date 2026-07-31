@@ -1,0 +1,3 @@
+# Changing Text
+ 
+Power Query includes text transformation functions for tasks like changing case, trimming whitespace, extracting substrings, and replacing characters within a column. These operations are common when cleaning inconsistent text data coming from different sources, such as mismatched capitalization or extra spaces. Most of them are available directly from the ribbon without writing M code manually.

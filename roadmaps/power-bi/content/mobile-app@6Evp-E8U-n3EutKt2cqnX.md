@@ -1,0 +1,3 @@
+# Mobile App
+ 
+The Power BI mobile app, in the context of the Service, is where published reports and dashboards become available for viewing on phones and tablets once a user has access through the Service. It supports features like push notifications for data alerts and offline access to recently opened reports. Reports viewed on mobile can automatically adjust to phone-friendly layouts if one has been designed for them.

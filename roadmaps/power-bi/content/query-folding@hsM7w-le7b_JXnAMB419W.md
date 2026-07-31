@@ -1,0 +1,3 @@
+# Query Folding
+ 
+Query folding is when Power Query translates its transformation steps back into a query that runs on the source system, such as SQL, instead of pulling all the raw data and transforming it locally. This pushes the processing work to the source, which is usually faster and lighter on memory. Not all steps fold, and checking the native query lets you see how far folding goes before it breaks.

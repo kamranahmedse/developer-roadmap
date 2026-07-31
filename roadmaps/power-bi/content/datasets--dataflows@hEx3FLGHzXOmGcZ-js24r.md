@@ -1,0 +1,3 @@
+# Datasets & Dataflows
+ 
+A dataset in the Power BI Service is the data model behind a published report, including its tables, relationships, and measures. A dataflow is a separate, reusable set of Power Query transformations stored in the cloud, which multiple datasets can reference instead of duplicating the same transformation logic in each report. Dataflows help centralize data preparation across many reports built by different teams.

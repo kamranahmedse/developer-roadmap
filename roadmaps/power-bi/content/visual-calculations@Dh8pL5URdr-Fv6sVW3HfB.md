@@ -1,0 +1,3 @@
+# Visual Calculations
+ 
+Visual calculations are a newer type of DAX calculation defined directly on a visual rather than in the model, evaluated on the data already aggregated and displayed in that visual. They simplify certain patterns, like running totals or rank within a visual, that would otherwise need more complex model-level DAX. Because they operate after the visual's own aggregation, their syntax and behavior differ somewhat from regular measures.

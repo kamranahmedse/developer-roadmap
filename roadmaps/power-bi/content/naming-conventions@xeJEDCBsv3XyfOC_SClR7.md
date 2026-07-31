@@ -1,0 +1,3 @@
+# Naming Conventions
+ 
+Naming conventions are consistent rules for how tables, columns, and measures are named within a model, such as using clear business terms instead of database field names. Consistent naming makes a model easier to understand for anyone building reports, especially in larger organizations with many contributors. This often includes deciding on casing style, abbreviations, and how to group related fields with prefixes.

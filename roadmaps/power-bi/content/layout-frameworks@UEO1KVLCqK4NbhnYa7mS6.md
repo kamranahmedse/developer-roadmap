@@ -1,0 +1,3 @@
+# Layout Frameworks
+ 
+Layout frameworks are structured approaches to arranging visuals on a report page, such as grid-based layouts or a defined visual hierarchy that guides the eye from summary to detail. They help keep reports consistent across pages and easier to build quickly once a template pattern is established. Many teams develop a standard layout framework to apply across all their reports for a unified look.

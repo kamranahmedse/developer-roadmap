@@ -1,0 +1,3 @@
+# Role-Playing Dimensions
+ 
+A role-playing dimension is a single dimension table used in multiple different contexts within the same fact table, such as a date table used for both order date and ship date. Since Power BI only allows one active relationship between two tables at a time, extra relationships must be set inactive and activated within DAX using USERELATIONSHIP, or duplicated as separate tables. This pattern comes up often with date dimensions in sales and logistics data.

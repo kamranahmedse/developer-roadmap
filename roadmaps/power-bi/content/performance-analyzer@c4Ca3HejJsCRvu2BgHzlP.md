@@ -1,0 +1,3 @@
+# Performance Analyzer
+ 
+Performance Analyzer is a built-in Power BI Desktop tool that records how long each visual takes to render, broken down by DAX query time, visual display time, and other processing. It helps pinpoint whether a slow report is caused by an inefficient measure, a heavy visual, or the underlying data model. Recorded traces can also be exported for deeper analysis in external tools.
