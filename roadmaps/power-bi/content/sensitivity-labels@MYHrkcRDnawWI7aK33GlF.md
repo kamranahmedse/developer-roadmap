@@ -1,0 +1,3 @@
+# Sensitivity Labels
+ 
+Sensitivity labels classify Power BI content, such as reports or datasets, according to its confidentiality level, using the same labeling system as Microsoft Purview across other Microsoft 365 apps. These labels can carry protection settings, like restricting export or requiring encryption when the content is exported to a file. They help organizations track and control sensitive data as it moves between different formats and applications.

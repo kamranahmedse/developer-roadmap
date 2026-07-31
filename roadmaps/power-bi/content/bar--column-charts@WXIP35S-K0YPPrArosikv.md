@@ -1,0 +1,3 @@
+# Bar & Column Charts
+ 
+Bar and column charts represent values as horizontal or vertical bars, sized proportionally to the value they represent, making them well suited for comparing values across categories. Column charts are generally preferred for showing change over time, while bar charts work better with long category labels. They are among the most commonly used visuals because most audiences read them easily.

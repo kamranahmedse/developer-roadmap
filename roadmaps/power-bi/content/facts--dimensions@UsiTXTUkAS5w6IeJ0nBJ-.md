@@ -1,0 +1,3 @@
+# Facts & Dimensions
+ 
+Fact tables hold measurable, numeric data such as sales amounts or transaction counts, usually at a fine level of detail with many rows. Dimension tables hold descriptive attributes, like product names or customer regions, that get connected to facts through relationships and used to filter or group them. Separating facts from dimensions is the core idea behind a star schema.

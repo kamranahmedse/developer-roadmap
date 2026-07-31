@@ -1,0 +1,3 @@
+# Data Profiling
+ 
+Data profiling in Power Query shows statistics about a column's contents, such as the distribution of values, the percentage of errors, and the percentage of empty values. It helps catch data quality problems before they reach the model, like unexpected nulls or outliers. The feature includes column quality, column distribution, and column profile views, each showing a different angle on the data.

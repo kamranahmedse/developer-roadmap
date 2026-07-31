@@ -1,0 +1,3 @@
+# Collaboration
+ 
+Collaboration features in Power BI Service support teams working together on the same content, including commenting on reports, sharing within workspaces, and coordinating through Microsoft Teams integration. These features are aimed at making Power BI usable as a shared analytics platform rather than a single-author tool. They matter more as the number of people using and building reports within an organization grows.

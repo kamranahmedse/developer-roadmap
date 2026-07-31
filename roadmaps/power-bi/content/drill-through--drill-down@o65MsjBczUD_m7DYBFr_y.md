@@ -1,0 +1,3 @@
+# Drill-through & Drill-down
+ 
+Drill-through lets a user right-click a data point and jump to a separate detail page filtered to that specific selection, while drill-down lets a user click into a hierarchy within the same visual to see a more granular level, like moving from year to month. Both give users a way to go from a summary view into more detail without cluttering the main report with every level at once. They rely on either a defined hierarchy or a separate page set up specifically to receive drill-through filters.

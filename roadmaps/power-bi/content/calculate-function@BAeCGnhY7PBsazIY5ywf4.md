@@ -1,0 +1,3 @@
+# CALCULATE Function
+ 
+CALCULATE is the function in DAX that modifies the filter context under which an expression is evaluated, by adding, removing, or replacing filters. It underlies most non-trivial DAX formulas, including time intelligence functions, which are internally built using CALCULATE with date-based filter arguments. Learning how CALCULATE's filter arguments interact with existing report filters is a key step in becoming proficient at DAX.

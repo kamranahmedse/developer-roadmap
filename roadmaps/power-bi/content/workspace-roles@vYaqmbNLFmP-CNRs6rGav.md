@@ -1,0 +1,3 @@
+# Workspace Roles
+ 
+Workspace roles define what a user can do within a specific workspace, ranging from admin, with full control, down to viewer, with read-only access. These roles determine actions like who can publish new reports, manage workspace settings, or simply view existing content. Assigning the right role for each person balances collaboration needs against the risk of unintended changes.

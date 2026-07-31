@@ -1,0 +1,3 @@
+# Visualization Basics
+ 
+Visualization basics cover the standard chart types available in Power BI and how to choose the right one for a given kind of data or comparison. Each chart type suits certain scenarios better than others, such as bar charts for category comparisons or line charts for trends over time. Picking the right visual type is often more important to communication than any formatting applied afterward.

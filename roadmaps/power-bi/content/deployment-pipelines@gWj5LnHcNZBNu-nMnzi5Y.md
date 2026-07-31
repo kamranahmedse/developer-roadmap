@@ -1,0 +1,3 @@
+# Deployment Pipelines
+ 
+Deployment pipelines let teams manage separate development, test, and production environments for their Power BI content, promoting reports and datasets through each stage in a controlled way. This mirrors common software development practices, catching issues in a test environment before they reach production users. Pipelines also support rules for automatically swapping data sources or parameters between environments.

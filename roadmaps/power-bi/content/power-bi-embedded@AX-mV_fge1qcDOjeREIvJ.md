@@ -1,0 +1,3 @@
+# Power BI Embedded
+ 
+Power BI Embedded lets developers embed Power BI reports and dashboards into their own applications or websites, using a dedicated Azure capacity rather than requiring end users to have their own Power BI license. It is aimed at software vendors who want to include analytics inside their own product. The embedding is done through APIs and SDKs that control the report's appearance and behavior within the host application.

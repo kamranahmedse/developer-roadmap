@@ -1,0 +1,3 @@
+# Sharing & Permissions
+ 
+Sharing and permissions control who can view or edit Power BI content, managed through workspace roles, direct sharing links, and row-level security for data-specific restrictions. Permissions can be set at different levels, from an entire workspace down to an individual report or dataset. Getting this right balances making data accessible to the people who need it while restricting it from those who should not see it.

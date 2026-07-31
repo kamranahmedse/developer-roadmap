@@ -1,0 +1,3 @@
+# Pivot & Transpose
+ 
+Pivoting turns unique values in one column into multiple new columns, reshaping data from a long format into a wide format, while transpose flips rows into columns and vice versa entirely. These operations are used to reshape data that arrives in a structure unsuited for reporting, such as a table where dates run down instead of across. Unpivoting, the reverse of pivoting, is often needed just as often when source data is already wide.

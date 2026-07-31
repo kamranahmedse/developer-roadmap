@@ -1,0 +1,3 @@
+# Maps
+ 
+Map visuals plot data geographically, using either points on a map for specific locations or shaded regions for values tied to areas like states or countries. Power BI supports a few map types, including standard maps, filled maps, and ArcGIS-based maps for more advanced geographic analysis. They rely on location data being correctly recognized, often helped along by setting the right data category on the relevant column.

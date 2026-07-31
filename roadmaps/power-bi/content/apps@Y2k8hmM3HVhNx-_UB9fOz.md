@@ -1,0 +1,3 @@
+# Apps
+ 
+Apps in Power BI package a workspace's reports and dashboards into a single, polished experience for end users to consume, without giving them access to the underlying workspace itself. They are published separately from the workspace and can be updated on a controlled schedule rather than reflecting every workspace change instantly. Apps are the typical way Power BI content gets distributed to a broad audience within an organization.

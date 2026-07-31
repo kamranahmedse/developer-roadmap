@@ -1,0 +1,3 @@
+# Cross-filtering
+ 
+Cross-filtering is the default behavior in Power BI where clicking on a data point in one visual filters the other visuals on the same page automatically. It happens because visuals on a page interact with each other based on shared fields in the data model, without needing extra configuration. This interaction can be adjusted or turned off for specific visual pairs through the edit interactions setting.

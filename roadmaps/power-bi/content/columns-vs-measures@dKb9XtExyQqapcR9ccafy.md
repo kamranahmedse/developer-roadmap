@@ -1,0 +1,3 @@
+# Columns vs Measures
+ 
+Calculated columns compute a value for every row in a table and store the result physically in the model, while measures calculate a value on the fly based on the current filter context of a visual. Columns are useful when a value needs to be sliced or filtered on directly, while measures are used for aggregations that should respond dynamically to whatever is selected in a report. Choosing the wrong one can lead to unnecessary model size or incorrect calculation behavior.

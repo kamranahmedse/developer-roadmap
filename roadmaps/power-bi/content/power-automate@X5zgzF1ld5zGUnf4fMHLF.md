@@ -1,0 +1,3 @@
+# Power Automate
+ 
+Power Automate integrates with Power BI to trigger automated workflows based on events in a report, such as a button click that kicks off an approval process or sends a notification. It connects Power BI to hundreds of other services and apps without needing custom code. This turns a report from a passive viewing experience into something that can initiate real business processes.

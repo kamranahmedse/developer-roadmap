@@ -1,0 +1,3 @@
+# Object-Level Security
+ 
+Object-level security restricts access to entire tables or columns in the data model, hiding them completely from certain users rather than just filtering rows. It is used when specific columns, like salary or other sensitive fields, should not be visible to some users at all, regardless of row-level filters. This is set up through external tools like Tabular Editor rather than the standard Power BI Desktop interface.

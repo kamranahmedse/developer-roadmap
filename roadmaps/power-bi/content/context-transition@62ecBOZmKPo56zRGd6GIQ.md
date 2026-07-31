@@ -1,0 +1,3 @@
+# Context Transition
+ 
+Context transition happens when CALCULATE turns the current row context into an equivalent filter context, which occurs whenever CALCULATE is used inside a row context, such as within a calculated column. This mechanism explains behavior that otherwise seems inconsistent, like a measure returning different results depending on where it is called from. It is one of the more subtle but important behaviors to understand in DAX.

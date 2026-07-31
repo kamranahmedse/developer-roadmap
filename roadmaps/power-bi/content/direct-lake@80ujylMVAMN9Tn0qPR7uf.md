@@ -1,0 +1,3 @@
+# Direct Lake
+ 
+Direct Lake is a storage mode built for Microsoft Fabric that reads data directly from files in a data lake without importing or duplicating it, while still delivering query speed close to Import mode. It avoids the usual DirectQuery performance penalty because it reads the lake's columnar file format natively. This mode is specific to datasets built on OneLake within Microsoft Fabric.

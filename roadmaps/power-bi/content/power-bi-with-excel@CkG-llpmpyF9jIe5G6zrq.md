@@ -1,0 +1,3 @@
+# Power BI with Excel
+ 
+Power BI integrates with Excel in a couple of directions: Excel workbooks can connect to a Power BI dataset to analyze it using PivotTables, and Power BI reports can be exported to Excel for further ad hoc analysis. This lets users work in whichever tool suits a particular task while sharing the same underlying data. It is useful for users more comfortable with Excel who still want access to a centralized, governed dataset.

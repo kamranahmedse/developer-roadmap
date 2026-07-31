@@ -1,0 +1,3 @@
+# Dashboards vs Reports
+ 
+A report in Power BI is a multi-page collection of interactive visuals connected to a single dataset, while a dashboard is a single page of pinned tiles that can pull from multiple different reports and datasets. Dashboards are meant for a high-level, at-a-glance summary, while reports support deeper interactive exploration. Tiles on a dashboard link back to the report or visual they were pinned from.

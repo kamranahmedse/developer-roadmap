@@ -1,0 +1,3 @@
+# Hierarchies
+ 
+A hierarchy in the data model groups related columns into a drill path, such as Year, Quarter, Month, and Day, so users can navigate from a summary level down to detail in a single visual. Hierarchies are built by dragging one column onto another in the model view or fields pane. They make it easier for report users to explore data without needing separate visuals for each level of detail.

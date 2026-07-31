@@ -1,0 +1,3 @@
+# DirectQuery
+ 
+DirectQuery is a connection mode where Power BI sends queries directly to the source database each time a report visual is viewed or filtered, rather than storing a copy of the data. This keeps the report always in sync with the source but depends on the source database's performance to respond quickly. It is often used for very large datasets that are impractical to import in full.

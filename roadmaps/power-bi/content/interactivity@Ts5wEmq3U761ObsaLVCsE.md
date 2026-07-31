@@ -1,0 +1,3 @@
+# Interactivity
+ 
+Interactivity refers to the features that let report viewers explore data dynamically rather than viewing a static image, including cross-filtering between visuals, drill-through, bookmarks, and buttons. These features turn a report into a tool for investigation rather than just a summary. Designing good interactivity requires thinking about how a viewer will naturally want to explore the data.

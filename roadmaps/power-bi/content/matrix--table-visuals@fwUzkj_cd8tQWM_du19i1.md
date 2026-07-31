@@ -1,0 +1,3 @@
+# Matrix & Table Visuals
+ 
+Table visuals display data in rows and columns similar to a spreadsheet, while matrix visuals add the ability to group rows and columns into a pivot-table style structure with expandable hierarchies. Both are used when users need to see exact numbers rather than a visual summary, or need to drill into totals and subtotals. Matrix visuals in particular support features like row and column grouping that plain tables do not.

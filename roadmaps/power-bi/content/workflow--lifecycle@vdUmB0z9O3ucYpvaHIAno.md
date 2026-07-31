@@ -1,0 +1,3 @@
+# Workflow & Lifecycle
+ 
+Workflow and lifecycle covers the processes used to manage Power BI content as it moves from development to production, including automation through Power Automate and structured promotion through deployment pipelines. These practices bring more discipline to how reports are built, tested, and released, similar to software development practices. They matter most in larger organizations managing many reports across multiple environments.

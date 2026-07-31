@@ -1,0 +1,3 @@
+# Sorting Data
+ 
+Sorting controls the order in which categories or rows appear within a visual, whether alphabetically, by value, or by a custom sort order defined through a separate sort-by column. Getting sort order right matters especially for categorical axes where a meaningful order, like months or a defined ranking, needs to be preserved rather than defaulting to alphabetical. Sort settings can be adjusted per visual independently of how the underlying table is ordered.

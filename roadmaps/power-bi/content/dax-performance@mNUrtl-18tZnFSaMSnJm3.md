@@ -1,0 +1,3 @@
+# DAX Performance
+ 
+DAX performance concerns how efficiently a formula executes, influenced by factors like the choice between iterators and aggregations, the size of tables being filtered, and how CALCULATE's filters are constructed. Poorly written DAX can turn a simple report into a slow one, even on a small dataset. Tools like Performance Analyzer and DAX Studio help identify which specific measures are the bottleneck.

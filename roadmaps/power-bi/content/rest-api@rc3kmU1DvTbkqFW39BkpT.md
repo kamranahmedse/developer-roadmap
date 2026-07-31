@@ -1,0 +1,3 @@
+# REST API
+ 
+The Power BI REST API lets developers interact with Power BI programmatically, covering tasks like refreshing a dataset, managing workspace content, or embedding reports, without using the standard user interface. It is commonly used to automate repetitive administrative tasks or integrate Power BI actions into custom applications. Authentication to the API typically uses Azure Active Directory tokens.

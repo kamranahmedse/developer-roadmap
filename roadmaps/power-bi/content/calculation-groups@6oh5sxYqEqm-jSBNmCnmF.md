@@ -1,0 +1,3 @@
+# Calculation Groups
+ 
+Calculation groups let a set of DAX logic, such as time intelligence patterns, be applied to any measure without duplicating that logic per measure. Instead of writing separate year-over-year measures for every existing measure, a single calculation item can apply that transformation to whichever measure a user selects. They are set up through external tools like Tabular Editor rather than Power BI Desktop directly.

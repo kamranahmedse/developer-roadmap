@@ -1,0 +1,3 @@
+# Data Loss Prevention
+ 
+Data loss prevention policies scan Power BI content for sensitive information, such as credit card numbers or personal data, and can flag or block reports that expose it inappropriately. These policies typically integrate with Microsoft Purview's broader data loss prevention framework used across Microsoft 365. They act as an automated safeguard against sensitive data being shared beyond its intended audience.

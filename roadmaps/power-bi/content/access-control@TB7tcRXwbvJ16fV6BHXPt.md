@@ -1,0 +1,3 @@
+# Access Control
+ 
+Access control covers the mechanisms that determine who can see or interact with specific data and content in Power BI, spanning row-level security, object-level security, and workspace roles. It works at multiple levels, from restricting entire reports to filtering which rows a specific user can see within the same report. Proper access control is essential once Power BI content contains sensitive or role-specific data.

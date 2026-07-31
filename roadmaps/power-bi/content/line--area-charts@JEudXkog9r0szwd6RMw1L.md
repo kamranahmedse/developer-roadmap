@@ -1,0 +1,3 @@
+# Line & Area Charts
+ 
+Line charts connect data points with a continuous line, making them the standard choice for showing trends over a continuous axis like time. Area charts are a variation that fills the space beneath the line, which can help emphasize volume or make it easier to compare multiple stacked series. Both work best when there are enough data points to show a clear trend rather than isolated values.
