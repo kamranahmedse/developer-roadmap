@@ -4,7 +4,6 @@ Caching is a technique used to store copies of data in a temporary storage locat
 
 Visit the following resources to learn more:
 
-- [@course@Redis University - Introduction to Redis Data Structures](https://redis.io/university/courses/ru101/)
 - [@article@What is caching?](https://www.cloudflare.com/en-gb/learning/cdn/what-is-caching/)
 - [@article@Top Caching Strategies Explained](https://blog.bytebytego.com/p/top-caching-strategies)
 - [@video@Caching Complete Tutorial for Beginners](https://www.youtube.com/watch?v=1XJG34mewts)

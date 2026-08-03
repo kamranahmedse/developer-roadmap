@@ -5,6 +5,5 @@ CSS (Cascading Style Sheets) is a stylesheet language used to describe the prese
 Visit the following resources to learn more:
 
 - [@roadmap@Visit the Dedicated CSS Roadmap](https://roadmap.sh/css)
-- [@book@HTML & CSS: design and build websites](https://sites.math.duke.edu/courses/math_everywhere/assets/techRefs/HTML%20and%20CSS-%20Design%20and%20Build%20Websites_Jon%20Duckett_2011.pdf)
 - [@article@CSS MDN Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS)
 - [@video@CSS Tutorial – Full Course for Beginners](https://www.youtube.com/watch?v=OXGznpKZ_sA)

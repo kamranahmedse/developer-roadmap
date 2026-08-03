@@ -5,6 +5,6 @@ Search engines like Elasticsearch are specialized tools for fast, scalable searc
 Visit the following resources to learn more:
 
 - [@roadmap@Visit the Dedicated Elasticsearch Roamdap](https://roadmap.sh/elasticsearch)
-- [@article@What is Elasticsearch? - Official Docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html)
 - [@official@Intro to OpenSearch](https://opensearch.org/docs/latest/getting-started/intro/)
+- [@article@What is Elasticsearch? - Official Docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html)
 - [@video@Elasticsearch Tutorial for Beginners](https://www.youtube.com/watch?v=ZP0NmfyNsuo)

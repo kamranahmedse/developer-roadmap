@@ -4,7 +4,6 @@ Retrieval-Augmented Generation (RAG) is an AI approach that combines information
 
 Visit the following resources to learn more:
 
-- [@article@What is Retrieval Augmented Generation (RAG)? - Datacamp](https://www.datacamp.com/blog/what-is-retrieval-augmented-generation-rag)
 - [@article@What is Retrieval-Augmented Generation? - Google](https://cloud.google.com/use-cases/retrieval-augmented-generation)
 - [@article@The Ultimate Guide to RAGs – Each Component Dissected](https://towardsdatascience.com/the-ultimate-guide-to-rags-each-component-dissected-3cd51c4c0212/)
 - [@video@What is Retrieval-Augmented Generation? - IBM](https://www.youtube.com/watch?v=T-D1OfcDW1M)

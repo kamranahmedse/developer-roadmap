@@ -4,7 +4,7 @@ DGraph is a distributed, fast, and scalable graph database. It's designed to han
 
 Visit the following resources to learn more:
 
-- [@official@Dgraph](https://docs.hypermode.com/dgraph/overview)
+- [@official@Dgraph](https://docs.dgraph.io/dgraph-overview)
 - [@opensource@dgraph](https://github.com/dgraph-io/dgraph)
 - [@article@Dgraph, what is a graph database anyway?](https://medium.com/@JalalOkbi/dgraph-what-is-a-graph-database-anyway-8b6c22fb1eeb)
 - [@video@Learn Dgraph in 20 minutes (Graph Database) quick tutorial](https://www.youtube.com/watch?v=roHj5G4vM9Q)

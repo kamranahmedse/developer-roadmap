@@ -5,6 +5,6 @@ PostgreSQL is an advanced, open-source RDBMS known for robustness, extensibility
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated PostgreSQL DBA Roadmap](https://roadmap.sh/postgresql-dba)
+- [@course@PostgreSQL Full Course for Beginners – freeCodeCamp](https://www.youtube.com/watch?v=qw--VYLpxG4)
 - [@official@Official Website](https://www.postgresql.org/)
 - [@article@Learn PostgreSQL - Full Tutorial for Beginners](https://www.postgresqltutorial.com/)
-- [@course@PostgreSQL Full Course for Beginners – freeCodeCamp](https://www.youtube.com/watch?v=qw--VYLpxG4)

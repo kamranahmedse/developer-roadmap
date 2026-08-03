@@ -4,7 +4,6 @@ Database transactions are series of operations executed as atomic units to ensur
 
 Visit the following resources to learn more:
 
-- [@article@What are Transactions?](https://fauna.com/blog/database-transaction)
 - [@article@SQL Transactions Tutorial](https://www.sqlservertutorial.net/sql-server-basics/sql-server-transaction/)
 - [@video@What is a Database transaction?](https://www.youtube.com/watch?v=wHUOeXbZCYA)
 - [@video@ACID Properties in Databases With Examples](https://www.youtube.com/watch?v=GAe5oB742dw)
