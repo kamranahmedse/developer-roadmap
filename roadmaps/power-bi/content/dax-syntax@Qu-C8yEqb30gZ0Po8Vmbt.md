@@ -1,3 +1,8 @@
 # DAX Syntax
- 
+
 DAX syntax follows a formula structure similar to Excel, starting with a name and an equals sign, followed by functions and references to columns or tables written in a specific notation. Table names are typically written in plain reference and column references use the table name followed by the column name in brackets. Getting the syntax right, including matching parentheses and correct references, is a common early hurdle for new DAX writers.
+
+Visit the following resources to learn more:
+
+- [@official@DAX syntax](https://learn.microsoft.com/en-us/dax/dax-syntax-reference)
+- [@video@Learn DAX Fundamentals in 10 Minutes | Step-by-Step Guide](https://www.youtube.com/watch?v=-QOtL_LOc40)
