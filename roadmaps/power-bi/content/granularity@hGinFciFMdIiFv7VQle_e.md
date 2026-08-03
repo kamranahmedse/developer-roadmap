@@ -1,3 +1,8 @@
 # Granularity
- 
+
 Granularity refers to the level of detail represented by each row in a fact table, such as one row per transaction versus one row per day. Choosing the right granularity affects both performance and what kinds of calculations are possible, since aggregating up is easier than breaking data down further after the fact. Mismatched granularity between related tables is a common source of modeling problems.
+
+Visit the following resources to learn more:
+
+- [@article@What is Granularity in Power BI?](https://www.graphed.com/blog/what-is-granularity-in-power-bi)
+- [@video@What is Data Granularity? | BI For Beginners](https://www.youtube.com/watch?v=hiSHHTcA8Os)
