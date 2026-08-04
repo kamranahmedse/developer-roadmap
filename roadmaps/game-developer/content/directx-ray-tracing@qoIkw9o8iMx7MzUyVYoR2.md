@@ -4,6 +4,6 @@ DirectX Ray Tracing (DXR) is an advanced Windows API introduced with DirectX 12.
 
 Visit the following resources to learn more:
 
-- [@article@Announcing Microsoft DirectX Ray Tracing](https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/)
 - [@official@DirectX Ray Tracing](https://developer.nvidia.com/blog/introduction-nvidia-rtx-directx-ray-tracing/)
 - [@official@DX12 Ray Tracing](https://developer.nvidia.com/blog/dx12-raytracing-tutorials/)
+- [@article@Announcing Microsoft DirectX Ray Tracing](https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/)

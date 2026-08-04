@@ -4,5 +4,5 @@ A **Decision Tree** is a graphical representation used in game development which
 
 Visit the following resources to learn more:
 
-- [@articleDecision Tree](https://www.gamedeveloper.com/programming/behavior-trees-for-ai-how-they-work)
+- [@article@@articleDecision Tree](https://www.gamedeveloper.com/programming/behavior-trees-for-ai-how-they-work)
 - [@video@What is a Decision Tree?](https://www.youtube.com/watch?v=bmP4ppe_-cw)

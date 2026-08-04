@@ -4,5 +4,5 @@ Ray tracing is a rendering technique in computer graphics that simulates the phy
 
 Visit the following resources to learn more:
 
-- [@article@What is Ray Tracing?](https://www.pcmag.com/how-to/what-is-ray-tracing-and-what-it-means-for-pc-gaming)
 - [@official@Nvidia GeForce RTX](https://www.nvidia.com/en-us/geforce/rtx/)
+- [@article@What is Ray Tracing?](https://www.pcmag.com/how-to/what-is-ray-tracing-and-what-it-means-for-pc-gaming)

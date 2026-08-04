@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@What is Real-Time Ray Tracing?](https://www.unrealengine.com/en-US/explainers/ray-tracing/what-is-real-time-ray-tracing)
 - [@official@Nvidia RTX Real-Time Ray Tracing](https://blogs.nvidia.com/blog/rtx-real-time-ray-tracing/)
+- [@article@What is Real-Time Ray Tracing?](https://www.unrealengine.com/en-US/explainers/ray-tracing/what-is-real-time-ray-tracing)
