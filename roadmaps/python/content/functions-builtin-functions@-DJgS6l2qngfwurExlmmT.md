@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Defining Python Functions](https://realpython.com/defining-your-own-python-function/)
 - [@article@How to Return Multiple Values in Python (and When to Use Each Method)](https://roadmap.sh/python/return-multiple-values)
 - [@article@Master Python Filter: Syntax, Examples, and Best Practices](https://roadmap.sh/python/filter)
+- [@article@Python reduce(): The Complete Guide (With Examples)](https://roadmap.sh/python/reduce)
