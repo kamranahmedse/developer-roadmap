@@ -2,7 +2,6 @@
 
 Definition lists in HTML are used to present terms and their corresponding definitions. They are structured using three main elements: `<dl>` (definition list), `<dt>` (definition term), and `<dd>` (definition description). The `<dl>` element acts as the container for the entire list, while each term is marked with `<dt>` and its associated description is enclosed within `<dd>`. This structure allows for a clear and organized presentation of terms and their meanings.
 
-
 @article@: The Description List element @article@: The Description Details element
 
 Visit the following resources to learn more:

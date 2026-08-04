@@ -1,6 +1,6 @@
-# The <cite> Element
-
-The `<cite>` element in HTML is used to define the title of a creative work (e.g., a book, article, song, movie, painting, sculpture, etc.). It's typically used to provide a reference or citation for a source. The content inside the `<cite>` element is often rendered in italics by browsers, but this styling can be overridden with CSS.
+# The  Element
+The <cite> element in HTML is used to define the title of a creative work (e.g., a book, article, song, movie, painting, sculpture, etc.). It's typically used to provide a reference or citation for a source. The content inside the <cite> element is often rendered in italics by browsers, but this styling can be overridden with CSS.
+Visit the following resources to learn more:
 
 Visit the following resources to learn more:
 
