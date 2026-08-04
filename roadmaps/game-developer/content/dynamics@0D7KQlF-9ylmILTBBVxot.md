@@ -4,4 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [@article@Dynamics in Game Physics](https://americanprofessionguide.com/game-mechanics-and-dynamics/)
+- [@article@Game Mechanics & Game Dynamics: Gamification 101](https://www.gamify.com/gamification-blog/game-mechanics-game-dynamics-gamification-101)
+- [@article@Unpacking Game Mechanics and Game Dynamics](https://maxlearn.info/blog/game-mechanics-and-game-dynamics/)
+- [@article@Game Mechanics](https://en.wikipedia.org/wiki/Game_mechanics)

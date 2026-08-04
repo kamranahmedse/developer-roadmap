@@ -4,9 +4,9 @@ Godot is an open-source, multi-platform game engine that is known for being feat
 
 Visit the following resources to learn more:
 
-- [@opensource@godotengine/godot](https://github.com/godotengine/godot)
 - [@official@Godot](https://godotengine.org/)
 - [@official@Godot Documentation](https://docs.godotengine.org/en/stable/)
+- [@opensource@godotengine/godot](https://github.com/godotengine/godot)
 - [@video@Godot in 100 Seconds](https://www.youtube.com/watch?v=QKgTZWbwD1U)
 - [@video@Tutorial - How to make a Video Game in Godot](https://www.youtube.com/watch?v=LOhfqjmasi0)
 - [@video@Tutorial - How to make 3D Games in Godot](https://www.youtube.com/watch?v=ke5KpqcoiIU)

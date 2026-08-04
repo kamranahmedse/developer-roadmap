@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@NVIDIA Vulkan Ray Tracing Tutorial](https://developer.nvidia.com/rtx/raytracing/vkray)
 - [@official@Ray Tracing with Vulkan](https://docs.vulkan.org/guide/latest/extensions/ray_tracing.html)
+- [@article@NVIDIA Vulkan Ray Tracing Tutorial](https://developer.nvidia.com/rtx/raytracing/vkray)

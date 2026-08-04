@@ -5,4 +5,4 @@
 Visit the following resources to learn more:
 
 - [@article@Spline in Mathematics](https://en.wikipedia.org/wiki/Spline_(mathematics))
-- [@Video@In-depth video about Splines by Freya Holmér](https://youtu.be/jvPPXbo87ds?si=JX_G-gS81tOwQwjf)
+- [@article@@Video@In-depth video about Splines by Freya Holmér](https://youtu.be/jvPPXbo87ds?si=JX_G-gS81tOwQwjf)
