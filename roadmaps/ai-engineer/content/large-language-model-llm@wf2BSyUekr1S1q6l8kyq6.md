@@ -2,6 +2,8 @@
 
 LLMs, or Large Language Models, are advanced AI models trained on vast datasets to understand and generate human-like text. They can perform a wide range of natural language processing tasks, such as text generation, translation, summarization, and question answering. Examples include GPT-5, BERT, and DeepSeek. LLMs are capable of understanding context, handling complex queries, and generating coherent responses, making them useful for applications like chatbots, content creation, and automated support. However, they require significant computational resources and may carry biases from their training data.
 
+### Note: 
+An LLM is fundamentally a next-token prediction model. Features like web browsing, file access, code execution, or using external applications are not intrinsic capabilities of the LLM—they are enabled by the surrounding application or AI agent through external tools.
 Visit the following resources to learn more:
 
 - [@article@What is a large language model (LLM)?](https://www.cloudflare.com/en-gb/learning/ai/what-is-large-language-model/)
