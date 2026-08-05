@@ -1,9 +1,9 @@
-# Relm
+# Iced
 
-`relm` is a declarative, event-driven GUI framework for Rust built on `gtk-rs` and GTK+3. Uses Model-View-Update architecture with async Futures for complex UI interactions. Features widget identification by name, seamless inter-widget communication, and leverages Rust's safe concurrency for dynamic desktop applications.
+Iced is a cross-platform GUI library for Rust that focuses on simplicity and type safety. Inspired by the Elm architecture, it uses a functional approach where the application state is updated through messages, making it easy to create reactive and predictable user interfaces. It provides a modular design that allows developers to build desktop and web applications with a clean, declarative syntax.
 
 Visit the following resources to learn more:
 
-- [@official@Relm](https://relm4.org/)
-- [@official@Relm Documentation](https://relm4.org/book/stable/)
-- [@article@Relm, a GUI library, based on GTK+ and futures, written in Rust](https://relm.antoyo.xyz/relm-intro/)
+- [@official@Iced](ttps://iced.rs/)
+- [@official@Iced Guide](ttps://iced.rs/index.html)
+- [@article@Building a Modern Rust GUI with Iced](https://medium.com/@k8scat/building-a-modern-rust-gui-with-iced-a-comprehensive-guide-fc272704f7a5)

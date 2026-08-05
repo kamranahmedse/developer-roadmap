@@ -4,6 +4,5 @@ A `Box` in Rust is a smart pointer that allocates memory on the heap. It's prima
 
 Visit the following resources to learn more:
 
-- [@official@Using Box<T> to Point to Data on the Heap](https://doc.rust-lang.org/book/ch15-01-box.html)
 - [@official@Smart Pointers](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html#smart-pointers)
 - [@video@The Box Smart Pointer in Rust](https://www.youtube.com/watch?v=m76sRj2VgGo)
