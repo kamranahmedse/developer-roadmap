@@ -1,0 +1,49 @@
+name: Validate Content
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'roadmaps/**'
+      - 'scripts/**'
+      - '.github/workflows/validate-content.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm@v11
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+          run_install: false
+
+      - name: Setup Node.js Version 24 (LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Validate Content
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "Validating All Content Files"
+            npm run validate:content -- --all
+          else
+            CHANGED_FILES=$(git diff --name-only origin/master...HEAD -- 'roadmaps/**/*.md' | tr '\n' ',')
+            if [ -z "$CHANGED_FILES" ]; then
+              echo "No content files changed, skipping validation"
+              exit 0
+            fi
+            echo "Validating Changed Content Files"
+            npm run validate:content -- --files=$CHANGED_FILES
+          fi
