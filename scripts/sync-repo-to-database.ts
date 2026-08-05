@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { OfficialRoadmapDocument } from './lib/official-roadmap';
-import { parse } from 'node-html-parser';
+import { parse, type HTMLElement } from 'node-html-parser';
 import { markdownToHtml } from './lib/markdown';
 import { htmlToMarkdown } from './lib/html';
 import {
@@ -174,7 +174,6 @@ try {
       );
 
       if (listWithJustLinks.length > 0) {
-        // @ts-expect-error - TODO: fix this
         ulWithLinks = ul;
       }
     });
@@ -187,9 +186,9 @@ try {
               let linkText = link.textContent || '';
               const linkHref = link.getAttribute('href') || '';
               let linkType = linkText.match(typePattern)?.[1] || 'article';
-              linkType = allowedOfficialRoadmapTopicResourceType.includes(
-                linkType as any,
-              )
+              linkType = (
+                allowedOfficialRoadmapTopicResourceType as readonly string[]
+              ).includes(linkType)
                 ? linkType
                 : 'article';
 
@@ -201,16 +200,11 @@ try {
                 type: linkType as AllowedOfficialRoadmapTopicResourceType,
               };
             })
-            .sort((a, b) => {
-              const order = [
-                'official',
-                'opensource',
-                'article',
-                'video',
-                'feed',
-              ];
-              return order.indexOf(a.type) - order.indexOf(b.type);
-            })
+            .sort(
+              (a, b) =>
+                allowedOfficialRoadmapTopicResourceType.indexOf(a.type) -
+                allowedOfficialRoadmapTopicResourceType.indexOf(b.type),
+            )
         : [];
 
     const title = rootHtml.querySelector('h1');
