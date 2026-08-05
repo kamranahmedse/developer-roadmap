@@ -1,6 +1,6 @@
 # Architect Frameworks
 
-Architect frameworks are tools that provide a structured approach to software architecture. They help architects organize their work, manage dependencies, and ensure consistency across projects. Some popular frameworks include:
+This section covers frameworks and methodologies used specifically for enterprise architecture modeling and business analysis, distinct from software development frameworks. They provide structured approaches for documenting and communicating architecture at an organizational level. Familiarity with these frameworks matters most for architects working in large, formally structured enterprises.
 
 Visit the following resources to learn more:
 

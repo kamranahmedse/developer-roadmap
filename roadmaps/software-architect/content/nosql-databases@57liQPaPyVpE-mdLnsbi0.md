@@ -1,16 +1,8 @@
 # Nosql databases
 
-NoSQL databases (aka "not only SQL") are non-tabular databases and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.
-
-Types of NoSQL databases
-
-*   Document databases Ex. MongoDB
-*   Key-value databases Ex. Redis
-*   Wide-column databases Ex. Cassandra
-*   Graph databases Ex. Neo4J
+NoSQL databases store data in flexible formats like documents, key value pairs, or graphs, without requiring a fixed schema. They often trade strict consistency for better scalability and performance, making them suitable for large scale or rapidly changing data. Architects choose NoSQL databases when the data model does not fit neatly into relational tables or when horizontal scaling is a priority.
 
 Visit the following resources to learn more:
 
 - [@article@NoSQL Database - AWS](https://aws.amazon.com/nosql/)
 - [@article@NoSQL Databases](https://www.mongodb.com/resources/basics/databases/nosql-explained)
-- [@feed@Explore top posts about NoSQL](https://app.daily.dev/tags/nosql?ref=roadmapsh)

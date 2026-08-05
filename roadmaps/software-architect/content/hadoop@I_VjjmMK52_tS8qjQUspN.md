@@ -1,6 +1,6 @@
 # Hadoop
 
-The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
+Hadoop is an open source framework for distributed storage and processing of large datasets across clusters of commodity hardware. Its core components include HDFS for storage and MapReduce for processing, though many projects now pair Hadoop's storage with faster engines like Spark. It remains common in enterprises with established big data infrastructure built around it.
 
 Visit the following resources to learn more:
 

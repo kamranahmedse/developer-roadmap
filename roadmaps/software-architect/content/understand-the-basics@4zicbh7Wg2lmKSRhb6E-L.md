@@ -1,3 +1,3 @@
-# Software Architect Basics
-
-Understand different concepts such as what is software architecture, software architect, different types of architects and so on.
+# Understand the Basics
+ 
+Understanding the basics means knowing what software architecture is, what a software architect does, and how architectural decisions are structured across different levels of a system. It covers the terminology and mental models an architect uses before diving into any specific pattern or tool. This foundation shapes how later, more technical topics fit into the bigger picture.

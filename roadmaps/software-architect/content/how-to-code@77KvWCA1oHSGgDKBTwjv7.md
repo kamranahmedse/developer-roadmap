@@ -1,8 +1,6 @@
 # How to Code
-
-Even as an Enterprise Architect, staying connected to coding practices is essential to understand developers’ challenges and earn their trust. Maintaining a **side project** allows you to explore new technologies, tools, and methodologies hands-on, building practical experience beyond theoretical knowledge. This helps in forming informed decisions and keeping pace with evolving trends in development.
-
-To prioritize what to explore, structured resources like ThoughtWorks’ Technology Radar can guide you. It categorizes technologies into **Adopt**, **Trial**, **Assess**, and **Hold**, helping architects focus on impactful and enterprise-ready innovations. Staying informed and involved ensures better collaboration and alignment with developers.
+ 
+An architect needs strong coding skills to design realistic solutions and earn credibility with the development team. Writing code themselves helps them understand the practical constraints of the technologies they choose and spot problems before they become costly. Staying hands on also keeps their architectural decisions grounded in real implementation experience rather than theory alone.
 
 Visit the following resources to learn more:
 

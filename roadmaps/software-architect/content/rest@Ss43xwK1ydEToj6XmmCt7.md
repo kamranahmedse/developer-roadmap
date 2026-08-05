@@ -1,6 +1,6 @@
 # REST
 
-REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.
+REST is an architectural style for designing APIs around resources, identified by URLs and manipulated through standard HTTP methods like GET, POST, and DELETE. Its simplicity and reliance on existing web standards have made it the most common approach for building public and internal APIs. Architects favor REST when they need a widely understood, easy to consume interface.
 
 Visit the following resources to learn more:
 

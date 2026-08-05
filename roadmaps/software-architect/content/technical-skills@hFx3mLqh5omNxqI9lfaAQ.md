@@ -1,10 +1,3 @@
 # Technical Skills
-
-*   Experience in software development
-*   Experience in project management
-*   Knowledge of one or more programming languages, such as Java, Python, JavaScript, Ruby, Rust, and C
-*   Knowledge of different development platforms
-*   Understanding of web applications, cybersecurity, and open source technologies
-*   Proficiency in analyzing code for issues and errors
-*   Experience in database platforms
-*   Experience with Operations and DevOps Skills
+ 
+Technical skills cover the practical, hands on knowledge an architect needs, including programming languages, design patterns, tools, and infrastructure concepts. These skills give an architect the credibility and depth needed to make informed decisions rather than relying only on theory. The following sections break this knowledge down into specific areas like languages, patterns, and tools.

@@ -1,13 +1,6 @@
 # Service oriented
 
-Service-oriented architecture (SOA) is an enterprise-wide approach to software development of application components that takes advantage of reusable software components, or services.
-
-SOA provides four different service types:
-
-1.  Functional services (i.e., business services), which are critical for business applications.
-2.  Enterprise services, which serve to implement functionality.
-3.  Application services, which are used to develop and deploy apps.
-4.  Infrastructure services, which are instrumental for backend processes like security and authentication.
+Service oriented architecture structures a system as a set of loosely coupled services that communicate through well defined interfaces, often using standards like SOAP. It predates microservices and shares similar goals of modularity and reuse, but typically involves heavier middleware like an enterprise service bus. Many large enterprises still run service oriented systems built before microservices became common.
 
 Visit the following resources to learn more:
 

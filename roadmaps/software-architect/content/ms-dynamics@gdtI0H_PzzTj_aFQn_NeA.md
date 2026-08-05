@@ -1,6 +1,6 @@
 # MS Dynamics
 
-Microsoft Dynamics 365 is a combination of both Enterprise Resource Planning (ERP) software and Customer Relationship Management (CRM) software.
+Microsoft Dynamics is a suite of enterprise resource planning and customer relationship management applications used to manage business processes like sales, finance, and operations. It integrates closely with other Microsoft products, making it a common choice for organizations already invested in the Microsoft ecosystem. Architects working with Dynamics need to understand its data model and integration options when connecting it to other systems.
 
 Visit the following resources to learn more:
 

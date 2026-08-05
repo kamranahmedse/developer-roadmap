@@ -1,10 +1,6 @@
 # EMC and DMS
 
-EMC (Enterprise Metadata Catalog) and DMS (Document Management System) are two distinct concepts in the realm of data management and information systems. Below is an overview of each:
-
-An Enterprise Metadata Catalog (EMC) is a centralized repository that stores metadata about data assets within an organization. This metadata provides context, meaning, and structure to the data, enabling better data management and utilization.
-
-A Document Management System (DMS) is a software solution that helps organizations capture, store, manage, and track electronic documents and images of paper-based information. DMS solutions are essential for organizing and securing documents in a digital format.
+EMC's document management systems provide enterprise level tools for storing, organizing, and controlling access to documents and records at scale. These systems focus on compliance, versioning, and retention policies important for regulated industries. Architects integrating with EMC DMS need to understand how document workflows and metadata fit into a broader enterprise system.
 
 Visit the following resources to learn more:
 

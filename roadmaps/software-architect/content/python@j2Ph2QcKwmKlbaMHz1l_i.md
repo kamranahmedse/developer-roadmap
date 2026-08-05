@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [@official@Python Getting Started](https://www.python.org/about/gettingstarted/)
 - [@article@Automate the Boring Stuff](https://automatetheboringstuff.com/)
 - [@article@Python Crash Course](https://ehmatthes.github.io/pcc/)
-- [@feed@Explore top posts about Python](https://app.daily.dev/tags/python?ref=roadmapsh)

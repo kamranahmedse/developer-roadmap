@@ -1,6 +1,6 @@
 # Working with Databases
 
-Working with databases involves storing, managing, and retrieving data efficiently to support applications and business processes. Databases can be relational, like MySQL and PostgreSQL, which use structured tables and SQL for querying, or non-relational (NoSQL), like MongoDB and Cassandra, which handle unstructured or semi-structured data. Effective database management requires designing normalized schemas for relational databases, ensuring data integrity, and optimizing queries for performance. For NoSQL databases, it's important to choose the right type (e.g., document, key-value, columnar) based on application needs. Additionally, managing transactions, indexing, backups, and security are crucial for maintaining reliable and scalable database systems.
+Working with data covers the tools and concepts an architect needs to design systems that store, process, and analyze large amounts of information. This includes choosing between database types, understanding data processing frameworks, and knowing how analytics fits into a broader system. Data heavy systems often require different architectural trade offs than typical transactional applications.
 
 Visit the following resources to learn more:
 

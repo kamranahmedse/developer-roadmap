@@ -1,8 +1,6 @@
 # Infrastructure as Code
 
-Sometimes referred to as IaC, this section refers to the techniques and tools used to define infrastructure, typically in a markup language like YAML or JSON. Infrastructure as code allows DevOps Engineers to use the same workflows used by software developers to version, roll back, and otherwise manage changes.
-
-The term Infrastructure as Code encompasses everything from bootstrapping to configuration to orchestration, and it is considered a best practice in the industry to manage all infrastructure as code. This technique precipitated the explosion in system complexity seen in modern DevOps organizations.
+Infrastructure as code manages servers, networks, and other infrastructure through machine readable configuration files instead of manual setup. Tools like Terraform or CloudFormation let teams version, review, and repeat infrastructure changes just like application code. Architects rely on this approach to ensure environments are consistent and reproducible across development, testing, and production.
 
 Visit the following resources to learn more:
 

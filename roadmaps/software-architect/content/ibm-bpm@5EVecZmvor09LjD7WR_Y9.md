@@ -1,6 +1,6 @@
 # IBM BPM
 
-IBM BPM is a comprehensive business process management platform. It provides a robust set of tools to author, test, and deploy business processes, as well as full visibility and insight to managing those business processes.
+IBM Business Process Manager is a platform for modeling, automating, and monitoring business processes within an organization. It provides tools for both business analysts and developers to design workflows and integrate them with existing enterprise systems. Architects encounter IBM BPM in enterprises that have standardized on IBM's middleware stack for process automation.
 
 Visit the following resources to learn more:
 

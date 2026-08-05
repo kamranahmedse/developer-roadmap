@@ -1,6 +1,6 @@
 # Functional Programming
 
-Functional programming is a programming paradigm designed to handle pure mathematical functions. This paradigm is totally focused on writing more compounded and pure functions.
+Functional programming treats computation as the evaluation of pure functions, avoiding shared state and mutable data where possible. This style makes code easier to test and reason about, since functions with no side effects behave predictably given the same input. Concepts from functional programming, like immutability and pure functions, increasingly appear even in languages that are not purely functional.
 
 Visit the following resources to learn more:
 
