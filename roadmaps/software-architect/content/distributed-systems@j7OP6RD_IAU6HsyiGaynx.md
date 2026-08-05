@@ -1,6 +1,6 @@
 # Distributed Systems
 
-Distributed systems are a type of computing architecture where components located on networked computers communicate and coordinate their actions by passing messages. These systems are designed to work together to achieve a common goal, often providing services or processing data in a collaborative manner.
+Distributed systems consist of multiple independent components running on different machines that communicate over a network to work as a single system. They introduce challenges like network latency, partial failures, and data consistency that do not exist in single machine applications. Architects designing distributed systems need to plan for failure as a normal condition rather than an exception.
 
 Visit the following resources to learn more:
 

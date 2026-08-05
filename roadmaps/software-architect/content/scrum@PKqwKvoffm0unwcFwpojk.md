@@ -1,15 +1,6 @@
 # Scrum
 
-`Scrum` is a popular agile framework used for project management, particularly in software development. It emphasizes iterative development, collaboration, and flexibility to deliver high-quality products.
-
-Key elements of Scrum:
-
-*   **Sprints**: Time-boxed iterations (usually 2-4 weeks) where teams work on specific goals.
-*   **Product Backlog**: Prioritized list of features or requirements for the product.
-*   **Sprint Backlog**: Selected items from the Product Backlog to be completed during a Sprint.
-*   **Daily Scrum (Stand-up)**: Brief daily meeting where team members share progress, challenges, and plans for the day.
-*   **Sprint Review**: Meeting at the end of a Sprint to demonstrate completed work and gather feedback.
-*   **Sprint Retrospective**: Meeting to reflect on the Sprint, identify improvements, and adjust processes for the next Sprint.
+Scrum is an agile framework that organizes work into fixed length iterations called sprints, with defined roles like product owner and scrum master guiding the process. It includes regular ceremonies such as sprint planning, daily standups, and retrospectives to keep the team aligned and improve over time. It is one of the most widely adopted agile methodologies in software development.
 
 Visit the following resources to learn more:
 

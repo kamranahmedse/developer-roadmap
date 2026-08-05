@@ -1,10 +1,6 @@
-# Http Https
-
-HTTP is the `TCP/IP` based application layer communication protocol which standardizes how the client and server communicate with each other. It defines how the content is requested and transmitted across the internet.
-
-HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP, which is the primary protocol used to send data between a web browser and a website.
-
-`HTTPS = HTTP + SSL/TLS`
+# HTTP, HTTPS
+ 
+HTTP is the protocol that underlies most communication on the web, defining how clients and servers exchange requests and responses. HTTPS adds encryption on top of HTTP using TLS, protecting data in transit from being read or altered by third parties. Nearly every modern web architecture relies on a solid understanding of how these protocols handle requests, headers, and status codes.
 
 Visit the following resources to learn more:
 

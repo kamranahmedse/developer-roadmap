@@ -1,6 +1,6 @@
 # Datawarehouses Principles
 
-It is based on the assumption that every system should take care of a concern in a way that such concern should be encapsulated by the system itself.
+Data warehouse principles cover how to design storage systems optimized for analytical queries rather than transactional workloads. This includes concepts like star and snowflake schemas, fact and dimension tables, and strategies for handling historical data changes. Understanding these principles helps an architect design systems that support reliable reporting and business intelligence.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Layered Architecture
 
-Layered architecture is a software design pattern where an application is divided into distinct layers, each with a specific responsibility, such as presentation, business logic, and data access. This approach promotes modularity, easier maintenance, testing, and component reusability. The most common implementation is the three-tier architecture, which separates concerns between the user interface, business rules, and data handling. However, it can introduce complexity, performance issues, tight coupling, and overhead if not carefully implemented. Despite these challenges, layered architecture is widely used in scalable and maintainable systems, particularly in enterprise applications.
+Layered architecture organizes a system into horizontal layers, such as presentation, business logic, and data access, where each layer only communicates with the ones directly above or below it. This separation makes it easier to change one layer without affecting the others, such as swapping a database without touching business rules. It is one of the oldest and most widely understood architectural styles.
 
 Visit the following resources to learn more:
 

@@ -1,12 +1,6 @@
 # SOLID
-
-SOLID is a set of principles applied to object-oriented design (OOD) to create maintainable, understandable, and flexible code, while avoiding code smells and defects. The principles are:
-
-*   Single Responsibility
-*   Open/Closed
-*   Liskov Substitution
-*   Interface Segregation
-*   Dependency Inversion
+ 
+SOLID is a set of five object oriented design principles: single responsibility, open closed, Liskov substitution, interface segregation, and dependency inversion. Following these principles leads to code that is easier to extend, test, and maintain as a system grows. Architects use SOLID as a checklist when reviewing designs for long term maintainability.
 
 Visit the following resources to learn more:
 

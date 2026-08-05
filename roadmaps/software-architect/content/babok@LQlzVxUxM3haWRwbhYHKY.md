@@ -5,4 +5,4 @@ The guide to the Business Analysis Body of Knowledge (BABOK Guide) is a book fro
 Visit the following resources to learn more:
 
 - [@official@Babok](https://www.iiba.org/career-resources/a-business-analysis-professionals-foundation-for-success/babok/)
-- [@article@Wikipedia](https://en.wikipedia.org/wiki/A_Guide_to_the_Business_Analysis_Body_of_Knowledge)
+- [@article@A Guide to the Business Analysis Body of Knowledge](https://en.wikipedia.org/wiki/A_Guide_to_the_Business_Analysis_Body_of_Knowledge)

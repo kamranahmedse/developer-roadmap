@@ -1,14 +1,6 @@
 # TCP/IP Model
 
-The `TCP/IP model` defines how devices should transmit data between them and enables communication over networks and large distances. The model represents how data is exchanged and organized over networks. It is split into four layers, which set the standards for data exchange and represent how data is handled and packaged when being delivered between applications, devices, and servers.
-
-*   **Network Access Layer**: The network access layer is a group of applications requiring network communications. This layer is responsible for generating the data and requesting connections.
-    
-*   **Internet Layer**: The internet layer is responsible for sending packets from a network and controlling their movement across a network to ensure they reach their destination.
-    
-*   **Transport Layer**: The transport layer is responsible for providing a solid and reliable data connection between the original application or device and its intended destination.
-    
-*   **Application Layer**: The application layer refers to programs that need TCP/IP to help them communicate with each other.
+The TCP/IP model is the practical, four layer framework that actually underlies how the internet works, covering link, internet, transport, and application layers. It is simpler than the OSI model and maps more directly to real protocols like IP, TCP, and HTTP. Understanding TCP/IP helps an architect reason about how data actually travels between systems over the internet.
 
 Visit the following resources to learn more:
 

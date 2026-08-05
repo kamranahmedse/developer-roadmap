@@ -1,6 +1,6 @@
 # Iaf
 
-The Integrated Architecture Framework (IAF) is an enterprise architecture framework that covers business, information, information system and technology infrastructure.
+The Integrated Architecture Framework is a methodology for enterprise architecture that structures architecture work across business, information, and technology domains. It provides a consistent way to model how different aspects of an organization's architecture relate to each other. Architects use frameworks like IAF when working in organizations that require formal architecture governance.
 
 Visit the following resources to learn more:
 

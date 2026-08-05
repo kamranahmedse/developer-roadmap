@@ -1,6 +1,6 @@
 # UML
 
-The Unified Modeling Language, or UML, is a modeling language that is intended to provide a standard way to visualize and describe the design of a system.
+The Unified Modeling Language is a standardized set of diagram types used to visualize the design of a system, including class diagrams, sequence diagrams, and use case diagrams. It gives architects and developers a common visual language for describing structure and behavior before or during implementation. While not every team uses UML formally, understanding its notation helps when reading architecture documentation.
 
 Visit the following resources to learn more:
 

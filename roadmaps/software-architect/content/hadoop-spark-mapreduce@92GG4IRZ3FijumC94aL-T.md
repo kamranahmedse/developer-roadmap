@@ -1,8 +1,6 @@
 # Spark, Hadoop MapReduce
 
-Spark is a data processing framework that can quickly perform processing tasks on very large data sets, and can also distribute data processing tasks across multiple computers, either on its own or in tandem with other distributed computing tools.
-
-Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner.
+Hadoop, Spark, and MapReduce are frameworks for processing large datasets across clusters of machines. MapReduce, the original model, splits processing into map and reduce steps distributed across nodes, while Spark improves on this with in memory processing for much faster performance. Architects consider these tools when a system needs to process data at a scale that a single machine cannot handle.
 
 Visit the following resources to learn more:
 

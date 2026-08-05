@@ -1,19 +1,6 @@
 # BPM BPEL
 
-BPM: Business Process Management
---------------------------------
-
-Medium or large enterprises needs robust processes to streamline their business needs by reducing the cost incurred per process and diminishing the turn around time for each activity. To achieve the above, there are various BPM tools like PEGA, IBM BPM, Appian, etc. Basically these tools automate the processes through a robust process modelling and implementation.
-
-BPMN: Business Process Management Notations
--------------------------------------------
-
-Its is a standard for representing business processes graphically. While modelling the process, the notations used are complied with BPMN (there are other like EPC, etc.). So BPMN is a standard notation that BPM consultants follow to model the business process. BPMN has versions and now BPMN 2.0 is the standard one.
-
-BPEL : Business Process Execution Language
-------------------------------------------
-
-Programmers use BPEL to define how a business process that involves web services will be executed. BPEL messages are typically used to invoke remote services, orchestrate process execution and manage events and exceptions. BPEL is often associated with Business Process Management Notation. In many organizations, analysts use BPMN to visualize business processes and developers transform the visualizations to BPEL for execution.
+Business process management describes methodologies and tools for modeling, automating, and optimizing business processes across an organization. BPEL, the Business Process Execution Language, is an XML based language used to define and orchestrate these processes, often within service oriented architectures. Architects working on enterprise workflow automation need to understand how BPM tools coordinate multiple systems to complete a business process.
 
 Visit the following resources to learn more:
 

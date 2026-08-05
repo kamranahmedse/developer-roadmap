@@ -9,9 +9,8 @@
 Visit the following resources to learn more:
 
 - [@roadmap@Visit Dedicated Java Roadmap](https://roadmap.sh/java)
-- [@official@Java](https://www.java.com/)
 - [@roadmap@Visit Dedicated Kotlin Roadmap](https://roadmap.sh/kotlin)
+- [@official@Java](https://www.java.com/)
 - [@official@Kotlin](https://kotlinlang.org/)
 - [@official@Scala Documentation](https://docs.scala-lang.org/)
 - [@official@Swift Docs](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour)
-- [@article@Explore top posts about Java](https://app.daily.dev/tags/java?ref=roadmapsh)

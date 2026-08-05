@@ -1,18 +1,6 @@
-# Authentication Strategies
-
-Authentication strategies are essential for ensuring secure access to applications and systems. They define how users are verified before being granted access to resources. Here are some common authentication strategies:
-
-Password-Based Authentication
-
-Multi-Factor Authentication (MFA)
-
-OAuth and OpenID Connect
-
-Token-Based Authentication:
-
-Biometric Authentication
-
-Certificate-Based Authentication
+# Auth Strategies
+ 
+Authentication and authorization strategies determine how a system verifies who a user is and what they are allowed to do. Common approaches include session based authentication, token based methods like JWT, and protocols like OAuth for delegated access. Choosing the right strategy affects both security and how easily a system integrates with other services.
 
 Visit the following resources to learn more:
 

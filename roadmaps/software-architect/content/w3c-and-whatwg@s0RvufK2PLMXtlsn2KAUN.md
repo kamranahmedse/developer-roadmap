@@ -1,8 +1,6 @@
 # W3c and WHATWG Standards
 
-World Wide Web Consortium (W3C) standards define the best practices for web development to enable developers to build rich interactive experiences that are available on any device. Theses standards range from recommended web technologies such as HTML, CSS, XML to the generally accepted principles of web architecture, semantics and services.
-
-Web Hypertext Application Technology Working Group (WHATWG) is another set of web standards that came into existence after W3C announced that it was going to be focusing on XHTML over HTML.
+The W3C and WHATWG are the organizations responsible for defining and maintaining web standards like HTML, CSS, and related specifications. The W3C historically focused on formal standardization, while WHATWG, formed by browser vendors, drives the living standard for HTML used by modern browsers today. Understanding these standards bodies helps an architect know where to look for authoritative guidance on how web technologies should behave.
 
 Visit the following resources to learn more:
 

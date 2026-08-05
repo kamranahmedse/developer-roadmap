@@ -1,6 +1,6 @@
 # Salesforce
 
-Salesforce is a cloud platform helping companies to manage relationships with their customers
+Salesforce is a widely used cloud based customer relationship management platform that also supports custom application development through its Apex language and Lightning platform. Many organizations extend Salesforce beyond CRM into custom business applications built on top of its platform. Architects need to understand Salesforce's data model, API options, and platform limits when integrating it with other enterprise systems.
 
 Visit the following resources to learn more:
 
