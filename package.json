@@ -8,7 +8,8 @@
     "format": "prettier --write .",
     "sync:content-to-repo": "tsx ./scripts/sync-content-to-repo.ts",
     "sync:repo-to-database": "tsx ./scripts/sync-repo-to-database.ts",
-    "cleanup:orphaned-content": "tsx ./scripts/cleanup-orphaned-content.ts"
+    "cleanup:orphaned-content": "tsx ./scripts/cleanup-orphaned-content.ts",
+    "validate:content": "tsx ./scripts/validate-content.ts"
   },
   "dependencies": {
     "markdown-it": "^14.1.0",
