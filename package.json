@@ -6,6 +6,7 @@
   "description": "Roadmap content for roadmap.sh",
   "scripts": {
     "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
     "sync:content-to-repo": "tsx ./scripts/sync-content-to-repo.ts",
     "sync:repo-to-database": "tsx ./scripts/sync-repo-to-database.ts",
     "cleanup:orphaned-content": "tsx ./scripts/cleanup-orphaned-content.ts"
