@@ -1,8 +1,10 @@
 # useState Hook
 
-`useState` hook is used to manage the state of a component in functional components. Calling `useState` returns an array with two elements: the current state value and a function to update the state.
+`useState` is a React Hook that lets you add state to functional components. When you call `useState`, you get back the current state value and a function to update it, allowing components to store and manage data that persists between renders.
 
 Visit the following resources to learn more:
 
-- [@official@Using the State Hook](https://react.dev/reference/react/useState)
-- [@article@React useState Hook by Example](https://www.robinwieruch.de/react-usestate-hook/)
+- [@official@useState Documentation](https://react.dev/reference/react/useState)
+- [@official@State: A Component's Memory](https://react.dev/learn/state-a-components-memory)
+- [@official@Adding Interactivity](https://react.dev/learn/adding-interactivity)
+- [@article@eact Hooks: useState Explained](https://www.robinwieruch.de/react-usestate-hook/)
