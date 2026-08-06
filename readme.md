@@ -68,6 +68,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Python Roadmap](https://roadmap.sh/python) 
 - [Python for Data Analysis Roadmap](https://roadmap.sh/python-data-analysis) 
 - [Django Roadmap](https://roadmap.sh/django)
+- [Power BI Roadmap](https://roadmap.sh/power-bi)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [Game Developer Roadmap](https://roadmap.sh/game-developer) / [Server Side Game Developer](https://roadmap.sh/server-side-game-developer)
 - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
