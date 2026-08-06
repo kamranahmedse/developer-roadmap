@@ -4,7 +4,7 @@ Prompt engineering focuses on crafting effective instructions (prompts) to elici
 
 Visit the following resources to learn more:
 
-- [@article@Prompt engineering: overview and guide](https://cloud.google.com/discover/what-is-prompt-engineering?hl=en)
-- [@article@What is prompt engineering?](https://www.ibm.com/think/topics/prompt-engineering)
-- [@video@Google's 9 Hour AI Prompt Engineering Course In 20 Minutes](https://www.youtube.com/watch?v=p09yRj47kNM)
-- [@video@Prompt Engineering Full Course](https://www.youtube.com/watch?v=2BpCk4d2Cc0)
+- [@article@Context engineering vs. prompt engineering](https://www.elastic.co/search-labs/blog/context-engineering-vs-prompt-engineering)
+- [@article@Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- [@article@Beyond Prompting: The Power of Context Engineering](https://towardsdatascience.com/beyond-prompting-the-power-of-context-engineering/?utm_source=roadmap&utm_medium=Referral&utm_campaign=TDS+roadmap+integration)
+- [@video@Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents](https://www.youtube.com/watch?v=vD0E3EUb8-8)
