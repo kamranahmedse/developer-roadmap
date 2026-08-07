@@ -2,7 +2,7 @@
 
 Redis Transactions allow the execution of a group of commands in a single step, they are centered around the commands MULTI, EXEC, DISCARD and WATCH.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Transactions](https://redis.io/docs/latest/develop/interact/transactions/)
 - [@official@MULTI](https://redis.io/docs/latest/commands/multi/)
