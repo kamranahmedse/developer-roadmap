@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@official@SQL vs NoSQL: What's the Difference?](https://www.mongodb.com/resources/basics/databases/nosql-explained/nosql-vs-sql)
 - [@official@What is NoSQL? - MongoDB](https://www.mongodb.com/resources/basics/databases/nosql-explained)
 - [@article@MongoDB vs. PostgreSQL: Key differences and when to use each](https://roadmap.sh/mongodb/vs-postgresql)
+- [@article@Types of NoSQL Databases: How to Choose the Right One](https://roadmap.sh/backend/types-of-nosql-databases)
