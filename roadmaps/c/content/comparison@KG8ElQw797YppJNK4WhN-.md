@@ -4,5 +4,5 @@ Comparison operators, such as `==`, `!=`, `<`, `>`, `<=`, and `>=`, evaluate two
 
 Visit the following resources to learn more:
 
-- [@article@Comparison Opearators](https://www.tutorialspoint.com/cprogramming/c_relational_operators.htm)
-- [@article@C Comparison Opearators](https://www.w3schools.com/c/c_operators_comparison.php)
+- [@article@Comparison Operators](https://www.tutorialspoint.com/cprogramming/c_relational_operators.htm)
+- [@article@C Comparison Operators](https://www.w3schools.com/c/c_operators_comparison.php)

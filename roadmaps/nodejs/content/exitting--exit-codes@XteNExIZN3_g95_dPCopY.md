@@ -1,4 +1,4 @@
-# Exitting / Exit Codes
+# Exiting / Exit Codes
  
 When a Node.js process finishes, it exits with a numeric exit code that signals whether it succeeded or failed. An exit code of `0` means success; any non-zero code indicates an error. You can set the exit code explicitly using `process.exit(code)` or by setting `process.exitCode`.
 

@@ -4,4 +4,4 @@ Google Public DNS is a global Domain Name System (DNS) resolution service that t
 
 Visit the following resources to learn more:
 
-- [@official@Google  Coud DNS](https://cloud.google.com/dns)
+- [@official@Google Cloud DNS](https://cloud.google.com/dns)
