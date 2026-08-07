@@ -2,7 +2,7 @@
 
 In Redis, setting keys refers to the operation of storing keys by associating them with unique identifiers (keys), it's the process of writing or updating data in the systems. Getting keys refers to the process of retrieving data from the system using the associated key.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@Keys](https://redis.io/docs/latest/commands/keys/)
 - [@official@SET](https://redis.io/docs/latest/commands/set/)

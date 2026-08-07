@@ -2,7 +2,7 @@
 
 In Redis, the SET and GET commands are fundamental operations used to store and retrieve key-value pairs. Redis is an in-memory key-value store, and these commands form the basis for working with data in Redis.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@SET Docs](https://redis.io/docs/latest/commands/set/)
 - [@official@GET Docs](https://redis.io/docs/latest/commands/get/)

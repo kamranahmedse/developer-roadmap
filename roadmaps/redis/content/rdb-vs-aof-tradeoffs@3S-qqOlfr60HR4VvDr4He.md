@@ -6,7 +6,7 @@ When comparing RDB (Redis Database Backup) and AOF (Append-Only File) for data p
 
 **AOF**, on the other hand, logs every write operation in real-time, allowing for more granular recovery with minimal data loss, as you can replay commands to reconstruct the dataset. This comes at the cost of increased disk I/O and potential performance overhead, especially with frequent write operations. The AOF file can also grow significantly, requiring periodic rewriting to optimize size.
 
-Learn more from the following resources:
+Visit the following resources to learn more:
 
 - [@official@RDB Advantages](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/#rdb-advantages)
 - [@official@AOF Advantages](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/#aof-advantages)
