@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [@article@Python Division: Operators, Floor Division, and Examples](https://roadmap.sh/python/division)
 - [@article@Python Modulo Operator (%): Complete Guide with Examples](https://roadmap.sh/python/modulo)
 - [@article@Python not Operator: The Complete Guide to Logical Negation](https://roadmap.sh/python/not-operator)
+- [@article@The or Operator in Python: Complete Guide with Examples](https://roadmap.sh/python/or)
