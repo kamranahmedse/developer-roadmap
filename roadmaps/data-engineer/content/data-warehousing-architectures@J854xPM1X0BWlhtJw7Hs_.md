@@ -1,3 +1,3 @@
 # Data Warehousing Architectures
- 
+
 Data warehousing architectures describe how data is organized, stored, and accessed across a warehouse system. Common patterns include traditional ETL-based warehouses, cloud-native warehouses, data lakehouse architectures, and federated query systems. The choice of architecture affects cost, query performance, scalability, and how fresh the data available for analysis is.

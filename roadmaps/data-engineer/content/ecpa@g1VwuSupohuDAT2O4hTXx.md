@@ -1,5 +1,5 @@
 # ECPA
- 
+
 The Electronic Communications Privacy Act (ECPA) is a US federal law that regulates government access to electronic communications and stored data. It sets rules for when law enforcement can intercept communications or compel disclosure of stored data from service providers. Data engineers working with communication data must be aware of ECPA requirements when designing storage and access controls.
 
 Visit the following resources to learn more:

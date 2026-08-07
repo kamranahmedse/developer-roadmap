@@ -1,5 +1,5 @@
 # Data Engineering Lifecycle
- 
+
 The data engineering lifecycle describes the stages data moves through from creation to consumption. These stages typically include generation, ingestion, storage, transformation, and serving. Each stage has its own tools, failure modes, and design considerations. Understanding the full lifecycle helps engineers make better decisions about architecture and tooling.
 
 Visit the following resources to learn more:

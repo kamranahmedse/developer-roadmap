@@ -1,5 +1,5 @@
 # Data Analytics
- 
+
 Data analytics is the process of examining datasets to draw conclusions and support decision-making. It covers a spectrum from descriptive analytics (what happened) to diagnostic (why it happened), predictive (what might happen), and prescriptive (what to do). Data engineers build the infrastructure that makes analytics possible by ensuring clean, accessible, and timely data.
 
 Visit the following resources to learn more:

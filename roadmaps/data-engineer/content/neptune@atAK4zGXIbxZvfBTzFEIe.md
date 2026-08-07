@@ -1,5 +1,5 @@
 # Neptune
- 
+
 Amazon Neptune is a managed graph database service on AWS that supports both the Property Graph model (with Gremlin) and RDF (with SPARQL). It is designed for highly connected datasets and scales to billions of relationships. Neptune is used for knowledge graphs, fraud detection, and identity resolution.
 
 Visit the following resources to learn more:

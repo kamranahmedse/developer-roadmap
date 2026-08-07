@@ -1,5 +1,5 @@
 # Go
- 
+
 Go is a compiled language developed by Google, known for its simplicity, fast execution, and strong concurrency model. In data engineering, it is used to build lightweight, high-throughput services and tools. Its performance characteristics make it a good fit for data pipeline components where latency and resource efficiency matter.
 
 Visit the following resources to learn more:

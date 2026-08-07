@@ -1,5 +1,5 @@
 # OLTP vs OLAP
- 
+
 OLTP (Online Transaction Processing) systems are optimized for fast, frequent read and write operations, typically backing operational applications. OLAP (Online Analytical Processing) systems are designed for complex queries over large datasets, used in reporting and analytics. The two have different storage formats, indexing strategies, and performance characteristics.
 
 Visit the following resources to learn more:

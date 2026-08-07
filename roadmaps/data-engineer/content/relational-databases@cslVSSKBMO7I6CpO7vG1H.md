@@ -1,5 +1,5 @@
 # Relational Databases
- 
+
 Relational databases store data in tables with rows and columns, and use SQL for querying. Relationships between tables are defined through foreign keys. They are the most widely used type of database for transactional applications and form the backbone of most operational systems.
 
 Visit the following resources to learn more:

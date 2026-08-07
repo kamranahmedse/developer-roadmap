@@ -1,5 +1,5 @@
 # Docker
- 
+
 Docker is the most widely used platform for building, shipping, and running containers. It packages code and its dependencies into a lightweight, portable image that runs the same in any environment. Data engineers use Docker to containerize pipeline code, ensure reproducible environments, and simplify deployment.
 
 Visit the following resources to learn more:

@@ -1,5 +1,5 @@
 # Business Intelligence
- 
+
 Business intelligence (BI) refers to the tools and processes used to collect, analyze, and visualize business data to support decisions. BI platforms connect to data warehouses and allow business users to build reports and dashboards without writing code. Common BI tools include Tableau, Power BI, Looker, and Streamlit.
 
 Visit the following resources to learn more:

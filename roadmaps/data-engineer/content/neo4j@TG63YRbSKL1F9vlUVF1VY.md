@@ -1,5 +1,5 @@
 # Neo4j
- 
+
 Neo4j is the most widely used graph database. It stores data natively as nodes and relationships and uses Cypher, a declarative query language designed for graph traversal. Neo4j is used for applications where relationship-heavy queries are central, such as recommendation systems and network analysis.
 
 Visit the following resources to learn more:

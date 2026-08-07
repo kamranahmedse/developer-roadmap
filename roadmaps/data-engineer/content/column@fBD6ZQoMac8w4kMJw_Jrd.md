@@ -1,5 +1,5 @@
 # Column
- 
+
 Column-family databases (also called wide-column stores) organize data into rows and dynamic columns grouped into column families. They are optimized for read and write operations on large datasets spread across many machines. This model is well suited for time-series data, logging, and analytical workloads.
 
 Visit the following resources to learn more:

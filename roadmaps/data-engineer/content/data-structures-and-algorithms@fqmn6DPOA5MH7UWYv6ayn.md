@@ -1,5 +1,5 @@
 # Data Structures and Algorithms
- 
+
 Data structures and algorithms form the foundation for writing efficient code. This knowledge is relevant for data engineers when optimizing queries, designing storage schemas, and building processing logic that scales. Common topics include arrays, hash maps, trees, sorting, and complexity analysis.
 
 Visit the following resources to learn more:

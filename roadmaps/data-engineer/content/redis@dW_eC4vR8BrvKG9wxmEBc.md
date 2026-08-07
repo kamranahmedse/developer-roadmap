@@ -1,5 +1,5 @@
 # Redis
- 
+
 Redis is an in-memory key-value store known for its extremely low latency. It supports a variety of data structures including strings, lists, sets, sorted sets, and hashes. Redis is widely used for caching, real-time leaderboards, pub/sub messaging, and session storage.
 
 Visit the following resources to learn more:
