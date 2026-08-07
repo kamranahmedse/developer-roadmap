@@ -1,5 +1,5 @@
 # CI/CD
- 
+
 CI/CD (Continuous Integration and Continuous Delivery) is a set of practices and tools for automating the testing and deployment of code changes. In data engineering, CI/CD pipelines validate pipeline code, run tests, and deploy updates to production automatically. This reduces manual errors and accelerates the delivery of pipeline changes.
 
 Visit the following resources to learn more:

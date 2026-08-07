@@ -1,5 +1,5 @@
 # Data Lake
- 
+
 A data lake is a centralized storage repository that holds large amounts of raw data in its native format, including structured, semi-structured, and unstructured data. Unlike a data warehouse, a data lake does not enforce a schema on ingestion. Data is stored cheaply at scale and processed when needed, which enables flexibility for future analysis.
 
 Visit the following resources to learn more:

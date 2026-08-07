@@ -1,5 +1,5 @@
 # ArgoCD
- 
+
 Argo CD is a declarative GitOps continuous delivery tool for Kubernetes. It continuously monitors a Git repository and ensures that the state of the Kubernetes cluster matches the desired state defined in code. Argo CD is used in data engineering to manage Kubernetes-based pipeline deployments and infrastructure changes through Git.
 
 Visit the following resources to learn more:

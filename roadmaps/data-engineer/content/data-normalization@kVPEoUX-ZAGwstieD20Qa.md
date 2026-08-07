@@ -1,5 +1,5 @@
 # Data Normalization
- 
+
 Data normalization is the process of organizing a relational database to reduce redundancy and improve data integrity. It involves decomposing tables into smaller, related ones according to normal forms (1NF, 2NF, 3NF, etc.). Normalized schemas are easier to maintain but may require more joins when querying.
 
 Visit the following resources to learn more:

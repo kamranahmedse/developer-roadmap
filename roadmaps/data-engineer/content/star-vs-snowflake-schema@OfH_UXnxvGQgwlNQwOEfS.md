@@ -1,3 +1,3 @@
 # Star vs Snowflake Schema
- 
+
 Star and snowflake schemas are two approaches to organizing data in a data warehouse. A star schema has a central fact table connected directly to dimension tables, making queries simple and fast. A snowflake schema normalizes dimension tables into multiple related tables, reducing redundancy but requiring more joins. Star schemas are more common in analytical systems due to their query performance.

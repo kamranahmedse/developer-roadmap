@@ -1,5 +1,5 @@
 # Kubernetes
- 
+
 Kubernetes is an open-source container orchestration system that automates the deployment, scaling, and management of containerized applications. In data engineering, it is used to run pipeline workers, schedule jobs, and manage microservices. Kubernetes has become the standard infrastructure layer for modern data platforms.
 
 Visit the following resources to learn more:

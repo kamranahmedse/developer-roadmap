@@ -1,5 +1,5 @@
 # APIs
- 
+
 APIs (Application Programming Interfaces) expose data from external services in a structured format, typically JSON or XML over HTTP. Many data pipelines pull data from third-party APIs such as payment processors, marketing platforms, or social networks. Rate limits, authentication, and schema changes are common challenges when ingesting from APIs.
 
 Visit the following resources to learn more:

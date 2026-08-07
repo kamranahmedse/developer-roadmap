@@ -1,5 +1,5 @@
 # Cloud Computing
- 
+
 Cloud computing refers to the delivery of computing resources, including servers, storage, databases, networking, and software, over the internet. Major cloud providers offer on-demand infrastructure that scales with usage and is billed per consumption. Cloud platforms are the dominant environment for modern data engineering work.
 
 Visit the following resources to learn more:

@@ -1,5 +1,5 @@
 # Compute Engine (Compute)
- 
+
 Google Cloud Compute Engine provides virtual machine instances on Google's infrastructure. It supports custom machine types, preemptible VMs for cost savings, and integration with other Google Cloud services. Compute Engine is used for running custom workloads, data processing jobs, and services that require full control over the operating environment.
 
 Visit the following resources to learn more:

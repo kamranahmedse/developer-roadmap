@@ -1,5 +1,5 @@
 # Data Warehouse
- 
+
 A data warehouse stores structured, processed data from operational systems, optimized for analytical queries. It typically uses columnar storage and is populated through ETL or ELT processes. Common cloud data warehouses include Google BigQuery, Snowflake, and Amazon Redshift.
 
 Visit the following resources to learn more:

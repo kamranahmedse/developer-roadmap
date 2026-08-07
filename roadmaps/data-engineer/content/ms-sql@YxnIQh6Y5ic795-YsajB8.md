@@ -1,5 +1,5 @@
 # MS SQL
- 
+
 Microsoft SQL Server (MS SQL) is a relational database developed by Microsoft, commonly used in enterprise and Windows-based environments. It integrates tightly with the Microsoft ecosystem, including Azure, Power BI, and .NET. MS SQL supports T-SQL, Microsoft's extension of SQL with additional procedural capabilities.
 
 Visit the following resources to learn more:

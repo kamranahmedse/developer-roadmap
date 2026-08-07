@@ -1,5 +1,5 @@
 # RabbitMQ
- 
+
 RabbitMQ is an open-source message broker that implements the AMQP protocol. It routes messages between producers and consumers using exchanges and queues, supporting patterns like publish/subscribe, work queues, and routing. RabbitMQ is used for task queues, service-to-service communication, and event notification systems.
 
 Visit the following resources to learn more:

@@ -1,5 +1,5 @@
 # Data Hub
- 
+
 A data hub is a centralized platform that acts as an integration point for data flowing between multiple systems. Unlike a data warehouse, a data hub focuses on data movement and integration rather than storage for analytics. It often combines features of a message broker, metadata catalog, and integration layer.
 
 Visit the following resources to learn more:

@@ -1,5 +1,5 @@
 # Containers & Orchestration
- 
+
 Containers package an application and its dependencies into a portable, isolated unit that runs consistently across environments. Container orchestration automates the deployment, scaling, and management of these containers across a cluster. Together, containers and orchestration form the foundation for running modern data workloads in cloud and hybrid environments.
 
 Visit the following resources to learn more:
