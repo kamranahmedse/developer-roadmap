@@ -4,6 +4,7 @@ Logical operators combine boolean expressions. Python uses `and`, `or`, and `not
 
 Visit the following resources to learn more:
 
-- [@article@Python Logical Operators](https://www.w3schools.com/python/python_if_logical.asp)
 - [@article@Python not Operator: The Complete Guide to Logical Negation](https://roadmap.sh/python/not-operator)
+- [@article@The or Operator in Python: Complete Guide with Examples](https://roadmap.sh/python/or)
+- [@article@Python Logical Operators](https://www.w3schools.com/python/python_if_logical.asp)
 - [@video@Logical operators in Python are easy 🔣](https://www.youtube.com/watch?v=W7luvtXeQTA)
