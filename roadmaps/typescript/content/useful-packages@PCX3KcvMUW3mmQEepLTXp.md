@@ -5,6 +5,7 @@ TypeScript has a large ecosystem of packages that can be used to extend the lang
 Visit the following resources to learn more:
 
 - [@official@zod](https://zod.dev/)
+- [@official@valibot](https://valibot.dev/)
 - [@official@ts-node](https://typestrong.org/ts-node)
 - [@opensource@ts-morph](https://github.com/dsherret/ts-morph)
 - [@opensource@ts-jest](https://github.com/kulshekhar/ts-jest)
