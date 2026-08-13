@@ -5,5 +5,4 @@ Pandas is a powerful Python library that makes exploring and understanding data 
 Visit the following resources to learn more:
 
 - [@official@Pandas Docs](https://pandas.pydata.org/docs/index.html)
-- [@article@Python pandas Tutorial: The Ultimate Guide for Beginners](https://www.datacamp.com/tutorial/pandas)
 - [@video@Exploratory Data Analysis in Pandas | Python Pandas Tutorials](https://www.youtube.com/watch?v=Liv6eeb1VfE)

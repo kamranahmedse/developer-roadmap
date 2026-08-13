@@ -5,4 +5,3 @@ Data modeling involves structuring and organizing data in a way that's optimized
 Visit the following resources to learn more:
 
 - [@article@What Is Data Modeling? | IBM](https://www.ibm.com/think/topics/data-modeling)
-- [@article@Data Modeling Explained: Techniques, Examples, and Best Practices](https://www.datacamp.com/blog/data-modeling)

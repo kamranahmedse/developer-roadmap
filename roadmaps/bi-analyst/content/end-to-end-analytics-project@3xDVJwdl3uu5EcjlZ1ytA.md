@@ -4,5 +4,4 @@ An end-to-end analytics project encompasses the entire process of solving a busi
 
 Visit the following resources to learn more:
 
-- [@article@20 Data Analytics Projects for All Levels](https://www.datacamp.com/blog/data-analytics-projects-all-levels)
 - [@video@End to End Data Analytics Project (Python + SQL)](https://www.youtube.com/watch?v=uL0-6kfiH3g)
