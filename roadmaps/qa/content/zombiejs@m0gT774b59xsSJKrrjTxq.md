@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Zombie.js](http://zombie.js.org/)
 - [@article@Getting Started with Zombie.js](https://www.packt.com/getting-started-zombiejs/)
-- [@feed@Explore top posts about JavaScript](https://app.daily.dev/tags/javascript?ref=roadmapsh)

@@ -1,5 +1,5 @@
 # Gatling
- 
+
 Gatling is an open-source load testing framework written in Scala, designed for high-performance testing of HTTP-based services. Tests are written as code using a fluent DSL and can be version-controlled alongside application code. Gatling generates detailed HTML reports and is known for its ability to simulate large numbers of concurrent users efficiently.
 
 Visit the following resources to learn more:

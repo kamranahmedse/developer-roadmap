@@ -1,5 +1,5 @@
 # Test Cases and Scenarios
- 
+
 Test cases are documented descriptions of conditions, inputs, and expected results used to verify a specific aspect of a system. Test scenarios describe the higher-level situation being tested, and one scenario typically encompasses multiple test cases. Well-written test cases provide repeatable, clear documentation of what is being tested and what constitutes pass or fail.
 
 Visit the following resources to learn more:

@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@GitLab](https://gitlab.com/)
 - [@official@GitLab Documentation](https://docs.gitlab.com/)
-- [@feed@Explore top posts about GitLab](https://app.daily.dev/tags/gitlab?ref=roadmapsh)

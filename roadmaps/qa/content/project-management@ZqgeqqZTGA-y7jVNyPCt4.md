@@ -1,5 +1,5 @@
 # Project Management
- 
+
 Project management tools in QA help teams plan, track, and coordinate testing activities within the broader software project. They manage requirements, bugs, sprints, and progress reporting. Platforms commonly used in QA teams include Atlassian products, Assembla, YouTrack, and Trello.
 
 Visit the following resources to learn more:

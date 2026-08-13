@@ -1,5 +1,5 @@
 # QA Mindset
- 
+
 The QA mindset is the set of critical thinking habits and attitudes that make an effective tester. It includes questioning assumptions, thinking about how systems can fail, paying attention to detail, and advocating for the user's perspective. A strong QA mindset balances thoroughness with pragmatism, focusing testing effort where it creates the most value.
 
 Visit the following resources to learn more:

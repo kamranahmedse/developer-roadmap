@@ -1,5 +1,5 @@
 # Robot
- 
+
 Robot Framework is an open-source, keyword-driven test automation framework with a human-readable tabular test syntax. It is extensible through Python or Java libraries and supports web, API, desktop, and mobile testing. Robot Framework is widely used for acceptance testing and integrates with SeleniumLibrary and the Browser Library.
 
 Visit the following resources to learn more:

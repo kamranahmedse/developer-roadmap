@@ -1,5 +1,5 @@
 # Reporting
- 
+
 Test reporting collects and presents the results of test execution in a readable format for QA teams, developers, and stakeholders. Good reports show which tests passed or failed, trends over time, defect density, and coverage levels. Tools like TestRail, Allure, and JUnit report formats integrate with CI/CD systems to publish results automatically after each build.
 
 Visit the following resources to learn more:

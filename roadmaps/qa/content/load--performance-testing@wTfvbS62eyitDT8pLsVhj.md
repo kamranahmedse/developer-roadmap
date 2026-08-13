@@ -1,5 +1,5 @@
 # Load & Performance Testing
- 
+
 Load and performance testing evaluates how a system behaves under expected and peak traffic conditions. Tools like K6, JMeter, Gatling, Locust, and Artillery simulate concurrent users and measure response times, throughput, and error rates. Results inform capacity planning, infrastructure decisions, and optimization priorities.
 
 Visit the following resources to learn more:
