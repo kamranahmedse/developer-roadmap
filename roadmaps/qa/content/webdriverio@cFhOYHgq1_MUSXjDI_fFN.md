@@ -1,5 +1,5 @@
 # Webdriver.io
- 
+
 WebdriverIO is a Node.js-based test automation framework for web and mobile applications built on the WebDriver protocol. It provides an async API for browser automation and integrates with popular test frameworks like Mocha, Jasmine, and Cucumber. WebdriverIO supports Selenium, Chrome DevTools Protocol, and Appium as underlying drivers.
 
 Visit the following resources to learn more:

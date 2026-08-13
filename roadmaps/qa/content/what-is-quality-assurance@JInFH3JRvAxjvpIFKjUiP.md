@@ -1,5 +1,5 @@
 # What is Quality Assurance?
- 
+
 Quality Assurance (QA) is a systematic process for ensuring that software products meet defined quality standards before delivery. It encompasses planning, executing, and evaluating tests to identify defects, verify requirements, and improve development processes. QA is process-oriented and aims to prevent defects throughout the development cycle, not just detect them at the end.
 
 Visit the following resources to learn more:

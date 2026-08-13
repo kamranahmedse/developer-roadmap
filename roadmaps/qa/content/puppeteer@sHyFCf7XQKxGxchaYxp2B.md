@@ -5,4 +5,3 @@ Puppeteer is a Node library that provides a high-level API to control headless C
 Visit the following resources to learn more:
 
 - [@official@Puppeteer](https://pptr.dev/)
-- [@feed@Explore top posts about Crawling](https://app.daily.dev/tags/crawling?ref=roadmapsh)
