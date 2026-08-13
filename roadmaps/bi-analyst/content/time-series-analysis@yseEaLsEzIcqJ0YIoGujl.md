@@ -4,7 +4,6 @@ Time series analysis is a statistical method used to analyze data points collect
 
 Visit the following resources to learn more:
 
-- [@article@Time series](https://en.wikipedia.org/wiki/Time_series)
 - [@article@Time Series Analysis: Definition, Types & Techniques](https://www.tableau.com/analytics/what-is-time-series-analysis)
 - [@article@Introduction to Time Series Analysis](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm)
 - [@video@What is Time Series Analysis?](https://www.youtube.com/watch?v=GE3JOFwTWVM)

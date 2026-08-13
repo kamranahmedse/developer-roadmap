@@ -4,4 +4,4 @@ Quality control in manufacturing involves systematically monitoring and evaluati
 
 Visit the following resources to learn more:
 
-- [@article@Quality Control in Manufacturing: Methods, Best Practices, and Implementation](https://www.starrapid.com/blog/quality-control-in-manufacturing/)
+- [@article@Business Intelligence for Manufacturing: Optimizing Production with Data](https://okundata.com/blog/business-intelligence-for-manufacturing)

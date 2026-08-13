@@ -4,6 +4,5 @@ Hypothesis testing is a statistical method used to determine whether there is en
 
 Visit the following resources to learn more:
 
-- [@article@Hypothesis Testing](https://latrobe.libguides.com/maths/hypothesis-testing)
 - [@article@Hypothesis Testing - 4 Steps](https://www.investopedia.com/terms/h/hypothesistesting.asp)
 - [@article@Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)

@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@SQL Roadmap](https://roadmap.sh/sql)
 - [@article@SQL Window Functions](https://mode.com/sql-tutorial/sql-window-functions)
-- [@article@SQL Window Functions Cheat Sheet](https://www.datacamp.com/cheat-sheet/sql-window-functions-cheat-sheet)

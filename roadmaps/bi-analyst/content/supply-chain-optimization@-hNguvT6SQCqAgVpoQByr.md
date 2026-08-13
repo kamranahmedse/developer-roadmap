@@ -5,4 +5,3 @@ Supply chain optimization involves streamlining the processes of sourcing, produ
 Visit the following resources to learn more:
 
 - [@article@How supply chain analytics keeps processes and products moving](https://www.teradata.com/insights/data-analytics/supply-chain-analytics)
-- [@article@Enhance Efficiency: Supply Chain Analytics in Manufacturing](https://www.scatterpie.io/blogs/supply-chain-analytics-in-manufacturing)

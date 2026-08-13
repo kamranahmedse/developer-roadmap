@@ -4,8 +4,7 @@ Python is a versatile and widely-used programming language known for its readabi
 
 Visit the following resources to learn more:
 
-- [@roadmap@Visit Dedicated Python Roadmap](https://roadmap.sh/python)
-- [@book@Python for Data Analysis](https://datapot.vn/wp-content/uploads/2023/12/datapot.vn-Python-for-Data-Analysis.pdf?srsltid=AfmBOopeeuwebcpwD9crBjnMo3wchpUtvkz-g1T2Phi7FFyjkx7l5t9e)
+- [@roadmap@Visit the Dedicated Python for Data Analysis Roadmap](https://roadmap.sh/python-data-analysis)
+- [@roadmap@Visit the Dedicated Python Developer Roadmap](https://roadmap.sh/python)
 - [@official@Python](https://www.python.org/)
-- [@article@Real Python](https://realpython.com/)
-- [@video@Ultimate Data Analyst Bootcamp [24 Hours!]](https://www.youtube.com/watch?v=wQQR60KtnFY)
+- [@video@Ultimate Data Analyst Bootcamp \[24 Hours!\]](https://www.youtube.com/watch?v=wQQR60KtnFY)

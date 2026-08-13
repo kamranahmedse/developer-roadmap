@@ -4,4 +4,4 @@ Data analytics helps healthcare providers manage patients more effectively. By a
 
 Visit the following resources to learn more:
 
-- [@article@Top 8 Use Cases of Healthcare Business Intelligence](https://kms-healthcare.com/blog/healthcare-business-intelligence/)
+- [@article@Business Intelligence in Healthcare: Revolutionizing Patient Care with Data](https://www.xbyteanalytics.com/business-intelligence-in-healthcare/)

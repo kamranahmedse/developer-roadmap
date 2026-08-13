@@ -5,5 +5,4 @@ A data mart is a subset of a data warehouse, focused on a specific business func
 Visit the following resources to learn more:
 
 - [@article@What is a Data Mart?](https://www.ibm.com/think/topics/data-mart)
-- [@article@Data Mart vs Data Warehouse: a Detailed Comparison](https://www.datacamp.com/blog/data-mart-vs-data-warehouse)
 - [@article@Data Lake VS Data Warehouse VS Data Marts](https://www.youtube.com/watch?v=w9-WoReNKHk)
