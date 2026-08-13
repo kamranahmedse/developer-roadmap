@@ -4,7 +4,7 @@ Route groups provide a way to share route attributes, such as middleware, namesp
 
 Visit the following resources to learn more:
 
-- [@official@Route Groupes](https://laravel.com/docs/routing#route-groups)
+- [@official@Route Groups](https://laravel.com/docs/routing#route-groups)
 - [@article@How Laravel Route Groups Can Simplify and Organize Your Code](https://redberry.international/laravel-route-group-organize-your-code/)
 - [@article@6 Tips To Organize Your Routes](https://laravel-news.com/laravel-route-organization-tips)
 - [@video@Laravel 12 Route Grouping & Naming – Organize Your Routes Like a Pro](https://www.youtube.com/watch?v=qXulJqduM4I)

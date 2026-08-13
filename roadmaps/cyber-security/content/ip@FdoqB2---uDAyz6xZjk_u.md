@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@Check Your IP Address](https://ipleak.net)
 - [@article@What is an IP Address and What does it mean?](https://www.kaspersky.com/resource-center/definitions/what-is-an-ip-address)
-- [@video@Whats an IP address?](https://www.youtube.com/watch?v=6is6Gulh7qE)
+- [@video@What's an IP address?](https://www.youtube.com/watch?v=6is6Gulh7qE)

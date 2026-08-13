@@ -5,4 +5,4 @@ EMC's document management systems provide enterprise level tools for storing, or
 Visit the following resources to learn more:
 
 - [@article@DMS](https://www.opentext.com/products/documentum-content-management)
-- [@article@EMC Softwares](https://www.spiceworks.com/collaboration/content-collaboration/articles/top-10-enterprise-content-management-software-systems/)
+- [@article@EMC Software](https://www.spiceworks.com/collaboration/content-collaboration/articles/top-10-enterprise-content-management-software-systems/)

@@ -4,4 +4,4 @@ Enterprise software refers to software applications that are designed to meet th
 
 Visit the following resources to learn more:
 
-- [@article@Enterprise Softwares](https://en.wikipedia.org/wiki/Enterprise_software)
+- [@article@Enterprise Software](https://en.wikipedia.org/wiki/Enterprise_software)

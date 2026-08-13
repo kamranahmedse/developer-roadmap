@@ -5,4 +5,4 @@ Workspaces are containers in the Power BI Service that hold related reports, das
 Visit the following resources to learn more:
 
 - [@official@Workspaces in Power BI](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-new-workspaces)
-- [@video@ower BI Workspaces Explained:](https://www.youtube.com/watch?v=1fS8MvcaBGE)
+- [@video@Power BI Workspaces Explained:](https://www.youtube.com/watch?v=1fS8MvcaBGE)

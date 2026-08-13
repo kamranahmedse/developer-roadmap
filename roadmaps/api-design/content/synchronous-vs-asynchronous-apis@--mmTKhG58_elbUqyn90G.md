@@ -8,4 +8,4 @@ Visit the following resources to learn more:
 
 - [@article@Asynchronous APIs — Everything You Need to Know](https://blog.hubspot.com/website/asynchronous-api)
 - [@article@The Differences Between Synchronous and Asynchronous APIs](https://nordicapis.com/the-differences-between-synchronous-and-asynchronous-apis/)
-- [@article@Understanding Asyncronous APIs](https://blog.postman.com/understanding-asynchronous-apis/)
+- [@article@Understanding Asynchronous APIs](https://blog.postman.com/understanding-asynchronous-apis/)

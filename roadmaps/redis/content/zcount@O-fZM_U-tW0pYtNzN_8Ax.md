@@ -1,6 +1,6 @@
 # ZCOUNT
 
-ZCOUNT returns the number of elements in the sorted set at the targetted `key`, with a score between `min` and `max`.
+ZCOUNT returns the number of elements in the sorted set at the targeted `key`, with a score between `min` and `max`.
 
 Visit the following resources to learn more:
 

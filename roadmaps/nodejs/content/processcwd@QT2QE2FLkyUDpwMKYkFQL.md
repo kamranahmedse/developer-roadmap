@@ -5,4 +5,4 @@
 Visit the following resources to learn more:
 
 - [@official@process.cwd()](https://nodejs.org/api/process.html#processcwd)
-- [@article@Whats the difference between process.cwd() vs __dirname?](https://stackoverflow.com/questions/9874382/whats-the-difference-between-process-cwd-vs-dirname)
+- [@article@What's the difference between process.cwd() vs __dirname?](https://stackoverflow.com/questions/9874382/whats-the-difference-between-process-cwd-vs-dirname)

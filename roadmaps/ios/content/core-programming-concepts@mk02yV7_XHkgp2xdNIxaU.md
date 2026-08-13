@@ -5,4 +5,4 @@ Core programming concepts for iOS development encompass fundamental principles e
 Visit the following resources to learn more:
 
 - [@article@Programming Fundamentals](https://www.theknowledgeacademy.com/blog/programming-fundamentals/)
-- [@article@What are the basic fundementals of programming?](https://www.educative.io/answers/what-are-the-basic-fundamental-concepts-of-programming)
+- [@article@What are the basic fundamentals of programming?](https://www.educative.io/answers/what-are-the-basic-fundamental-concepts-of-programming)

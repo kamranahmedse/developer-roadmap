@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@HATEOAS Driven REST APIs](https://restfulapi.net/hateoas/)
 - [@article@HATEOAS](https://htmx.org/essays/hateoas/)
-- [@video@What Happend To HATEOAS in RESTful API?](https://www.youtube.com/watch?v=HNTSrytKCoQ)
+- [@video@What Happened To HATEOAS in RESTful API?](https://www.youtube.com/watch?v=HNTSrytKCoQ)

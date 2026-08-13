@@ -4,5 +4,5 @@ Data classes in Kotlin are special classes designed to hold data. The compiler a
 
 Visit the following resources to learn more:
 
-- [@official@Data classess](https://kotlinlang.org/docs/data-classes.html#data-classes.md)
+- [@official@Data classes](https://kotlinlang.org/docs/data-classes.html#data-classes.md)
 - [@video@Data classes - Kotlin Vocabulary](https://www.youtube.com/watch?v=PlywDf1dAnA)

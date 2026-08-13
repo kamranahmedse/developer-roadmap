@@ -5,5 +5,5 @@ Autoencoders are a type of neural network used for unsupervised learning. They w
 Visit the following resources to learn more:
 
 - [@article@What is an autoencoder? | IBM](https://www.ibm.com/think/topics/autoencoder)
-- [@article@Intro to Autoencoders | TensorFLow](https://www.tensorflow.org/tutorials/generative/autoencoder)
+- [@article@Intro to Autoencoders | TensorFlow](https://www.tensorflow.org/tutorials/generative/autoencoder)
 - [@video@Autoencoders](https://www.youtube.com/watch?v=hZ4a4NgM3u0)

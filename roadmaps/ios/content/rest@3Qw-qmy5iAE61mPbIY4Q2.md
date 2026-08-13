@@ -5,4 +5,4 @@ REST (Representational State Transfer) is an architectural style for networked A
 Visit the following resources to learn more:
 
 - [@article@REST API Calls in Swift: iOS Networking Architecture](https://matteomanferdini.com/swift-rest-api/)
-- [@article@Sending and recieving Codable data with URLSession and SwiftUI](https://www.hackingwithswift.com/books/ios-swiftui/sending-and-receiving-codable-data-with-urlsession-and-swiftui)
+- [@article@Sending and receiving Codable data with URLSession and SwiftUI](https://www.hackingwithswift.com/books/ios-swiftui/sending-and-receiving-codable-data-with-urlsession-and-swiftui)

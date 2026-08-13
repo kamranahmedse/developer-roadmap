@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Writing your first Django app, part 1](https://docs.djangoproject.com/en/6.0/intro/tutorial01/)
 - [@official@Django Create Project](https://www.w3schools.com/django/django_create_project.php)
-- [@video@How to Create Frist Django Project in Visual Studio Code (2024)](https://www.youtube.com/watch?v=fxcOtcYYqA0)
+- [@video@How to Create First Django Project in Visual Studio Code (2024)](https://www.youtube.com/watch?v=fxcOtcYYqA0)

@@ -1,6 +1,6 @@
 # Starting the Server
 
-Starting a Redis server is platform dependant and is usually done via `systemctl` on Linux or `brew services` on MacOS.
+Starting a Redis server is platform dependent and is usually done via `systemctl` on Linux or `brew services` on MacOS.
 
 Visit the following resources to learn more:
 

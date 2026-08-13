@@ -4,6 +4,6 @@ Kotlin Notebook is an interactive environment for writing and executing Kotlin c
 
 Visit the following resources to learn more:
 
-- [@official@Kotline Notebook](https://kotlinlang.org/docs/kotlin-notebook-overview.html)
+- [@official@Kotlin Notebook](https://kotlinlang.org/docs/kotlin-notebook-overview.html)
 - [@official@Create your first Kotlin Notebook](https://kotlinlang.org/docs/kotlin-notebook-create.html)
 - [@video@Kotlin Notebook: Visual, Interactive, Fun | Kotlin Notebook Tutorial](https://www.youtube.com/watch?v=m4Cqz2_P9rI)

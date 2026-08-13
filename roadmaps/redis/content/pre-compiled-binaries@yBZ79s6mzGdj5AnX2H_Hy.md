@@ -1,6 +1,6 @@
 # Pre-compiled Binaries
 
-Redis can be compiled and installed on a variety of platofrm and operating systems including Linux and macOS, the Redis binaries have no dependencies other than a C compiler and libc
+Redis can be compiled and installed on a variety of platforms and operating systems including Linux and macOS. The Redis binaries have no dependencies other than a C compiler and libc.
 
 Visit the following resources to learn more:
 
