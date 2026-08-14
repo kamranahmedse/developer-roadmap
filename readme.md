@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://roadmap.sh/"><img src="https://roadmap.sh/img/brand.png" height="70"></a>
   <h2 align="center"><a href="https://roadmap.sh">roadmap.sh</a></h2>
-  <p align="center">Community-driven roadmaps, articles and resources for developers<p>
+  <p align="center">Community-driven roadmaps, articles and resources for developers</p>
   <p align="center">
     <a href="https://roadmap.sh/roadmaps">
     	<img src="https://img.shields.io/badge/%E2%9C%A8-Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
@@ -65,8 +65,8 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Product Manager Roadmap](https://roadmap.sh/product-manager)
 - [Engineering Manager Roadmap](https://roadmap.sh/engineering-manager)
 - [QA Roadmap](https://roadmap.sh/qa)
-- [Python Roadmap](https://roadmap.sh/python) 
-- [Python for Data Analysis Roadmap](https://roadmap.sh/python-data-analysis) 
+- [Python Roadmap](https://roadmap.sh/python)
+- [Python for Data Analysis Roadmap](https://roadmap.sh/python-data-analysis)
 - [Django Roadmap](https://roadmap.sh/django)
 - [Power BI Roadmap](https://roadmap.sh/power-bi)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
@@ -117,7 +117,6 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Ruby on Rails Roadmap](https://roadmap.sh/ruby-on-rails)
 - [Scala Roadmap](https://roadmap.sh/scala)
 
-
 There are also interactive best practices:
 
 - [Backend Performance Best Practices](https://roadmap.sh/best-practices/backend-performance)
@@ -149,39 +148,3 @@ Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the va
 ## Repository Structure
 
 This repository holds the content behind the roadmaps on [roadmap.sh](https://roadmap.sh).
-
-```
-roadmaps/<roadmap-slug>/content/<topic-slug>@<node-id>.md
-```
-
-Each markdown file is the content of a single topic on a roadmap. The node id in
-the file name is what links it to the topic, so please keep file names intact.
-Merged changes are synced to the website automatically.
-
-```bash
-git clone git@github.com:nilbuild/developer-roadmap.git --depth 1
-cd developer-roadmap
-```
-
-`scripts/` holds the sync tooling used by the maintainers, see
-[scripts/readme.md](./scripts/readme.md) for details.
-
-## Contribution
-
-> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
-
-- Add content to roadmaps
-- Add new roadmaps
-- Suggest changes to existing roadmaps
-- Discuss ideas in issues
-- Spread the word
-
-## Thanks to all contributors ❤
-
- <a href = "https://github.com/nilbuild/developer-roadmap/graphs/contributors">
-   <img src = "https://contrib.rocks/image?repo=nilbuild/developer-roadmap"/>
- </a>
-
-## License
-
-Have a look at the [license file](./license) for details
