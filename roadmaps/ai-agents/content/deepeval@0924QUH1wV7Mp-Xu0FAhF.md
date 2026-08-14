@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@DeepEval - The Open-Source LLM Evaluation Framework](https://www.deepeval.com/)
 - [@opensource@DeepEval GitHub Repository](https://github.com/confident-ai/deepeval)
-- [@article@Evaluate LLMs Effectively Using DeepEval: A Pratical Guide](https://www.datacamp.com/tutorial/deepeval)
+- [@article@Evaluate LLMs Effectively Using DeepEval: A Practical Guide](https://www.datacamp.com/tutorial/deepeval)
 - [@video@DeepEval - LLM Evaluation Framework](https://www.youtube.com/watch?v=ZNs2dCXHlfo)

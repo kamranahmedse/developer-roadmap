@@ -5,4 +5,4 @@ Databases provide a structured way to store and manage data within your Swift ap
 Visit the following resources to learn more:
 
 - [@article@Working with Databases in Swift: A Comprehensive Guide](https://thatthinginswift.com/working-with-databases-in-swift-a-comprehensive-guide/)
-- [@article@Databases & Persistance](https://www.swift.org/packages/database.html)
+- [@article@Databases & Persistence](https://www.swift.org/packages/database.html)

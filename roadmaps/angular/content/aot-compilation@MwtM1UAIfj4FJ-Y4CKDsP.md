@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Ahead-of-time (AOT) compilation](https://angular.dev/tools/cli/aot-compiler)
 - [@opensource@Angular Compiler Output](https://github.com/JeanMeche/angular-compiler-output)
-- [@article@Understanding Angular's ahead of time compliation](https://blog.nashtechglobal.com/understanding-angulars-ahead-of-time-aot-compilation/)
+- [@article@Understanding Angular's ahead of time compilation](https://blog.nashtechglobal.com/understanding-angulars-ahead-of-time-aot-compilation/)

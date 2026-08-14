@@ -4,5 +4,5 @@ Virtual tables (vtables) are compiler-generated lookup tables used in C++ to imp
 
 Visit the following resources to learn more:
 
-- [@article@Understandig Virtual Tables in C++](https://pabloariasal.github.io/2017/06/10/understanding-virtual-tables/)
+- [@article@Understanding Virtual Tables in C++](https://pabloariasal.github.io/2017/06/10/understanding-virtual-tables/)
 - [@video@Classes part 18 - Understanding the vtable (Popular interview question) | Modern Cpp Series Ep. 54](https://www.youtube.com/watch?v=hS7kPtVB1vI)

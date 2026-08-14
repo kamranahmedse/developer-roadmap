@@ -1,6 +1,6 @@
 # Sets
 
-A Redis set is an unordered collection of members which can be used to track unique items, represent relations and preform set operations.
+A Redis set is an unordered collection of members which can be used to track unique items, represent relations and perform set operations.
 
 Visit the following resources to learn more:
 

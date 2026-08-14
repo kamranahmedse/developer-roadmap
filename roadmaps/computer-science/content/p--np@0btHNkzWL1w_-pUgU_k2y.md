@@ -10,4 +10,4 @@ So far, we don't know whether P = NP or P ≠ NP.
 
 Visit the following resources to learn more:
 
-- [@article@Whats P=NP?, and why is it such a famous question?](https://stackoverflow.com/questions/111307/whats-p-np-and-why-is-it-such-a-famous-question)
+- [@article@What's P=NP?, and why is it such a famous question?](https://stackoverflow.com/questions/111307/whats-p-np-and-why-is-it-such-a-famous-question)

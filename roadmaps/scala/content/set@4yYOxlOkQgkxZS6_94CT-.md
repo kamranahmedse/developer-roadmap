@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Sets](https://docs.scala-lang.org/overviews/collections-2.13/sets.html)
 - [@article@Scala - Sets](https://www.tutorialspoint.com/scala/scala_sets.htm)
-- [@article@Scala: Whats the difference between "Map" vs "Set"? - Stack Overflow](https://stackoverflow.com/questions/45133364/scala-whats-the-difference-between-map-vs-set)
+- [@article@Scala: What's the difference between "Map" vs "Set"? - Stack Overflow](https://stackoverflow.com/questions/45133364/scala-whats-the-difference-between-map-vs-set)

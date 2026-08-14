@@ -1,6 +1,6 @@
 # Distribution
 
-Two additional statistics to better understand the distribution of your datasets are skewness and kurtosis, which measures distribution asymetry, whereas kurtosis measurs the "tailedness" and peakedness of a distribution.
+Two additional statistics to better understand the distribution of your datasets are skewness and kurtosis. Skewness measures distribution asymmetry, whereas kurtosis measures the "tailedness" and peakedness of a distribution.
 
 Visit the following resources to learn more:
 

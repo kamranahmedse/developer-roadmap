@@ -4,6 +4,6 @@ The `/rewind` command is a history management tool that allows you to undo recen
 
 Visit the following resources to learn more:
 
-- [@official@Built-in commadns](https://code.claude.com/docs/en/interactive-mode)
+- [@official@Built-in commands](https://code.claude.com/docs/en/interactive-mode)
 - [@official@Checkpointing](https://code.claude.com/docs/en/checkpointing)
 - [@article@Rewind Changes Instantly with Checkpoints](https://wmedia.es/en/tips/rewind-changes-instantly-with-checkpoints)

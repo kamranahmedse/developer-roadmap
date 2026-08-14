@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@Permisions](https://linuxcommand.org/lc3_lts0090.php)
+- [@article@Permissions](https://linuxcommand.org/lc3_lts0090.php)
 - [@video@Linux Crash Course - Understanding File Permissions](https://www.youtube.com/watch?v=4N4Q576i3zA)

@@ -6,6 +6,6 @@ In the context of [ASP.NET](http://ASP.NET), CI/CD can be used to automate vario
 
 Visit the following resources to learn more:
 
-- [@article@How to reate a CI/CD pipeline for ASP.NET?](https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet/)
+- [@article@How to create a CI/CD pipeline for ASP.NET?](https://www.azuredevopslabs.com/labs/vstsextend/azuredevopsprojectdotnet/)
 - [@video@Building a CI/CD Pipeline in Azure DevOps for ASP.NET Core](https://youtube.com/watch?v=eOQL0nXQlLs)
 - [@feed@Explore top posts about CI/CD](https://app.daily.dev/tags/cicd?ref=roadmapsh)

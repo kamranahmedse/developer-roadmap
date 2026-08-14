@@ -5,4 +5,4 @@ PostgreSQL stands out among other RDBMS options due to its open-source nature, a
 Visit the following resources to learn more:
 
 - [@article@PostgreSQL vs MySQL: The Critical Differences](https://www.integrate.io/blog/postgresql-vs-mysql-which-one-is-better-for-your-use-case/)
-- [@article@Whats the difference between PostgreSQL and MySQL?](https://aws.amazon.com/compare/the-difference-between-mysql-vs-postgresql/)
+- [@article@What's the difference between PostgreSQL and MySQL?](https://aws.amazon.com/compare/the-difference-between-mysql-vs-postgresql/)

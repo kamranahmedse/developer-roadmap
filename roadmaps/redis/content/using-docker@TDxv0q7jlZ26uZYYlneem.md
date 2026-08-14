@@ -1,6 +1,6 @@
 # Using Docker
 
-Redis Community Edition can be installed on Docker but it is recommended to complete the installation of Redis Stack in order to gain access to the modeling capabilities, be able to seach and query data, as well as using Redis as a vector database.
+Redis Community Edition can be installed on Docker but it is recommended to complete the installation of Redis Stack in order to gain access to the modeling capabilities, be able to search and query data, as well as using Redis as a vector database.
 
 Visit the following resources to learn more:
 
