@@ -137,7 +137,7 @@ There are also interactive best practices:
 
 ## Share with the community
 
-Please consider sharing a post about, [roadmap.sh](https://roadmap.sh) and the value it provides. It really does help!
+Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the value it provides. It really does help!
 
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-reddit-red?logo=reddit)](https://reddit.com/submit?url=https://roadmap.sh&title=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-hacker%20news-orange?logo=ycombinator)](https://news.ycombinator.com/submitlink?u=https://roadmap.sh)
