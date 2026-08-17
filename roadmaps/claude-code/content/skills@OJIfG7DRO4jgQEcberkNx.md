@@ -8,5 +8,6 @@ Visit the following resources to learn more:
 - [@course@Introduction to agent skills](https://anthropic.skilljar.com/introduction-to-agent-skills)
 - [@official@Extend Claude with skills](https://code.claude.com/docs/en/skills#extend-claude-with-skills)
 - [@official@The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf?hsLang=en)
+- [@opensource@UIZZE anti-ui-slop Skill](https://uizze.com/.well-known/agent-skills/anti-ui-slop/SKILL.md) — Free MIT Skill that grounds UI work in 800,000+ real web and iOS screens, requires a design contract and required states, and applies a pre-ship finish gate.
 - [@video@Claude Code Skills & skills.sh - Crash Course](https://www.youtube.com/watch?v=rcRS8-7OgBo)
 - [@video@MCP vs Skills: Which Is Right for Your AI Agent and LLMs?](https://www.youtube.com/watch?v=goU9VIXA8II)
