@@ -1,0 +1,3 @@
+# lubridate
+ 
+lubridate makes working with dates and times considerably easier than base R alone. Functions like `ymd()`, `mdy()`, and `dmy()` parse dates written in different common formats without requiring a manually specified format string. It also provides clear tools for date arithmetic using durations, periods, and intervals, each handling calendar quirks like leap years slightly differently.

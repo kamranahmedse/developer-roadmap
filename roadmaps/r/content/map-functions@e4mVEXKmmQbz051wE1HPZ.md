@@ -1,0 +1,3 @@
+# Map Functions
+ 
+Map functions apply a function to every element of a list or vector and collect the results, avoiding the need for an explicit loop. purrr's `map()` always returns a list, while variants like `map_dbl()` return a vector of a specific type, making the expected output explicit. This becomes especially useful for iterating over nested data, such as running the same model on many subsets of a dataset at once.

@@ -1,0 +1,3 @@
+# tidygraph
+ 
+tidygraph applies tidyverse conventions to network data, letting you manipulate graph nodes and edges using familiar dplyr-style verbs instead of igraph's more specialized syntax. It works alongside ggraph for visualization, together forming a tidyverse-native alternative to working with igraph directly. It's often preferred by users already comfortable with the tidyverse who want that same syntax applied to network data.

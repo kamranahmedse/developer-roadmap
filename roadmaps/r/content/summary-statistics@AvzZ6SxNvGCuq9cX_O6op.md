@@ -1,0 +1,3 @@
+# Summary Statistics
+ 
+Summary statistics condense a column of data down to a few representative numbers, like the mean, median, and standard deviation. They form the foundation for almost every deeper statistical technique, since you need to understand a variable's basic behavior before modeling relationships involving it. Calculating these is usually the first step in getting a feel for any new dataset.

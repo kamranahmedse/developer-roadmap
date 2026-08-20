@@ -1,0 +1,3 @@
+# Probability Distributions
+ 
+A probability distribution describes how likely different outcomes are for a random variable, such as the normal distribution or the binomial distribution for counting successes in repeated trials. R provides functions for common distributions following a consistent naming pattern: `d` for density, `p` for cumulative probability, `q` for quantiles, and `r` for random generation. Understanding which distribution reasonably describes your data underlies many statistical tests and models.

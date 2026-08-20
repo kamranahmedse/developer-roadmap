@@ -1,0 +1,3 @@
+# Parsing Dates
+ 
+Parsing dates handles the extra complexity of date formats, since something like "01/02/2024" could mean different things depending on locale conventions. Getting the format specification right, or using a package like lubridate that guesses common formats automatically, avoids silently misreading dates. This matters especially when working with data from different countries or systems that don't agree on date conventions.

@@ -1,0 +1,3 @@
+# Type Conversion
+ 
+Type conversion is deliberately changing a value from one type to another, such as turning the character `"5"` into the numeric value `5` with `as.numeric()`. R also does this automatically in some situations, called coercion, which can cause quiet bugs when data doesn't convert the way you expect. Understanding both the explicit functions and R's automatic rules helps catch these issues early.

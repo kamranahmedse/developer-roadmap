@@ -1,0 +1,3 @@
+# Reshaping
+ 
+Reshaping changes the layout of a dataset without changing its underlying content, most commonly converting between wide and long formats. Wide format spreads related values across separate columns, while long format stacks them into fewer columns with an extra column identifying what each value represents. Many statistical functions and plotting tools expect one shape or the other, so reshaping is often a necessary step before analysis.

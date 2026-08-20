@@ -1,0 +1,3 @@
+# Web Scraping
+ 
+Web scraping extracts data directly from a website's HTML when that data isn't offered through a proper API or downloadable file. The rvest package reads a webpage's HTML and lets you select specific elements using CSS selectors or XPath, pulling out text, tables, or links. It requires some understanding of how the target page is structured, since different sites organize their HTML very differently.

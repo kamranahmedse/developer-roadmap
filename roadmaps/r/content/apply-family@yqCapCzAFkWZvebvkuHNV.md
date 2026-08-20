@@ -1,0 +1,3 @@
+# Apply Family
+ 
+The apply family is a set of base R functions that apply another function to every element of a vector, list, or data structure, replacing many uses of explicit loops. `lapply()` always returns a list, `sapply()` tries to simplify the result into a vector or matrix, and `vapply()` works like `sapply()` but requires specifying the expected output type in advance. These functions predate the tidyverse's purrr package, which offers similar functionality with more consistent behavior.

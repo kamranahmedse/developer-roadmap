@@ -1,0 +1,3 @@
+# NLP
+ 
+NLP, or natural language processing, covers techniques for analyzing and extracting meaning from text data, such as tokenizing, measuring sentiment, or discovering topics across a collection of documents. R has a mature set of packages for this kind of work, ranging from tidyverse-friendly tools to faster, more specialized libraries for large text corpora. It's a distinct application area combining string handling with statistical and sometimes machine learning techniques.
