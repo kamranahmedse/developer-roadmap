@@ -1,0 +1,3 @@
+# Dropping vs. Imputing
+ 
+Once missing values are found, you have to decide whether to drop rows containing them, which is simple but can lose real information, or impute them, replacing missing values with an estimate like the column mean. The right choice depends heavily on why the data is missing and how much of it there is. Dropping too aggressively can bias results if the missingness isn't random.

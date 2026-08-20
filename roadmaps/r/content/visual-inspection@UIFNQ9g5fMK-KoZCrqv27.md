@@ -1,0 +1,3 @@
+# Visual Inspection
+ 
+Visual inspection uses plots, most often boxplots or scatterplots, to spot outliers by eye rather than through a fixed numeric rule. This often reveals context that purely numeric methods miss, such as whether an unusual value looks like a data entry error or a genuine rare event. It's frequently used alongside numeric methods like IQR or Z-score rather than as a replacement for them.

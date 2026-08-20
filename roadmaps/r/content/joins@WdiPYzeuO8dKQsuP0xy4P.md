@@ -1,0 +1,3 @@
+# Joins
+ 
+Joins combine two data frames based on matching values in one or more shared columns, similar to joins in SQL. An inner join keeps only rows with matches in both tables, a left join keeps all rows from the first table and fills in matches where available, and a full join keeps all rows from both regardless of matches. Choosing the right join type is essential whenever data is spread across multiple related tables.

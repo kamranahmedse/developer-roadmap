@@ -1,0 +1,3 @@
+# Data Tables
+ 
+A data table is the structure provided by the data.table package, built specifically for fast, memory-efficient operations on large datasets. It extends the data frame with a more concise syntax and internal optimizations that make filtering, grouping, and joining noticeably faster on big data. Many R users learn dplyr first and pick up data tables specifically when performance on large datasets becomes a bottleneck.

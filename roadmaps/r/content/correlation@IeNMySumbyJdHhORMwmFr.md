@@ -1,0 +1,3 @@
+# Correlation
+ 
+Correlation measures the strength and direction of a linear relationship between two numeric variables, expressed as a single number between negative one and positive one. A value near positive one means the variables tend to increase together, and near zero means little linear relationship exists. Correlation does not imply causation, and it can miss real relationships that aren't linear in shape.

@@ -1,0 +1,3 @@
+# Your First R Script
+ 
+A first R script is usually a short file with a few lines of code, like assigning a variable and printing it, run to confirm your R installation actually works. Writing and running this first script is where syntax stops being abstract and starts being something you can see execute. It's also the point where you get comfortable with the basic loop of writing code, running it, and reading the output.

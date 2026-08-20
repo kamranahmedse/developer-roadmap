@@ -1,0 +1,3 @@
+# CSV
+ 
+CSV files store tabular data as plain text with values separated by commas, making them one of the most universal formats for exchanging data between tools. Base R can read them with `read.csv()`, though readr's `read_csv()` is faster and handles more edge cases well, such as inconsistent column types or unusual encodings. Reading them correctly means paying attention to details like headers and how missing values are represented.

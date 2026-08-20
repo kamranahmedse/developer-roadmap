@@ -1,0 +1,3 @@
+# purrr
+ 
+purrr applies a function to each element of a list or vector and collects the results, similar in spirit to base R's apply family but with more consistent, predictable behavior. Its `map()` function always returns a list, while variants like `map_dbl()` return a vector of a specific type, making the expected output explicit. It fits naturally with the pipe operator and tidyverse style, letting you iterate without writing explicit loops.

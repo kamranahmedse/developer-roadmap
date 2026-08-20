@@ -1,0 +1,3 @@
+# What is R
+ 
+R is a programming language built for statistical computing and data analysis. Bell Labs statisticians created its predecessor, S, in the 1970s, and R emerged in the 1990s as an open-source implementation of similar ideas. It comes with built-in support for vectors, data frames, and statistical functions, so tasks like regression or plotting a distribution take just a line or two of code. Universities, pharmaceutical companies, and data science teams use it heavily for analysis, visualization, and research reproducibility.

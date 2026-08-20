@@ -1,0 +1,3 @@
+# ggplot2
+
+ggplot2 is a data visualization package that follows the grammar of graphics, a system for describing and building graphs by combining independent components. It allows users to create complex plots by layering elements such as data, coordinate systems, and visual mappings. By providing a consistent and structured approach to plotting, it enables the creation of publication-quality visualizations through a series of intuitive, additive commands.

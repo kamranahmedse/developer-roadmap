@@ -1,0 +1,3 @@
+# Parallel Computing
+ 
+Parallel computing splits a computational task across multiple processor cores at once, rather than running everything sequentially, cutting the total time for tasks that can be broken into independent pieces. R provides tools like the parallel package's `parLapply()` for distributing work across a cluster of R processes. Not every task benefits from this, since the overhead of splitting work and combining results can outweigh the benefit for small or fast tasks.

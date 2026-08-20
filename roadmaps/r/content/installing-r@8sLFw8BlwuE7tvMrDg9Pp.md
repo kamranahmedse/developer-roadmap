@@ -1,0 +1,3 @@
+# Installing R
+
+Installing R involves downloading the base software environment from the Comprehensive R Archive Network (CRAN) and executing the installer for your specific operating system. This process sets up the core language engine, allowing you to run R scripts, manage packages, and perform statistical computations directly on your computer. Once the installation is complete, you can interact with the language through the default console or by using an integrated development environment like Positron or RStudio.

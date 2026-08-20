@@ -1,0 +1,3 @@
+# Debugging
+ 
+Debugging in R involves finding out why code isn't behaving as expected, using tools like `browser()`, which pauses execution at a specific line so you can inspect variables, and `traceback()`, which shows the sequence of function calls leading up to an error. RStudio and Positron both provide visual debugging tools built on top of these, including breakpoints you can set by clicking in the editor. Print statements remain a simple and effective debugging tool for many everyday issues.

@@ -1,0 +1,3 @@
+# R vs Python for Data Work
+ 
+R and Python solve overlapping problems but come from different roots. R grew out of statistics departments, so its core language and packages treat data frames, vectors, and statistical models as first-class citizens. Python grew as a general-purpose language, so its data tools (pandas, NumPy) were added on top of a language built for other things. In practice, R tends to win for statistical modeling, academic research, and quick exploratory analysis, while Python wins for production software, deep learning, and general-purpose scripting.

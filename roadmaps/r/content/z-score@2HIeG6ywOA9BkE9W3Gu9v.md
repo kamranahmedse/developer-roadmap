@@ -1,0 +1,3 @@
+# Z-score
+ 
+The Z-score method flags values a certain number of standard deviations away from the mean, commonly using a threshold like 2 or 3. It works well for roughly normally distributed data, but poorly for data that's heavily skewed, since the mean and standard deviation themselves get distorted by skew. It gives a precise numeric measure of how unusual a given value is relative to the rest of the data.
