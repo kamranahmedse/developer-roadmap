@@ -1,3 +1,3 @@
 # Regular Expressions
- 
+
 Regular expressions are a pattern-matching language for describing sequences of characters, used to search, validate, or extract specific pieces of text. A pattern like `^\d{3}-\d{4}$` might describe a phone number format, matching only text that fits that exact shape. They take practice to read fluently, but solve text problems that simple string functions alone can't handle efficiently.

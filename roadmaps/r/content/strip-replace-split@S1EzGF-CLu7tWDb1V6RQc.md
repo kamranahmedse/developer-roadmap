@@ -1,3 +1,3 @@
 # strip, replace, split
- 
+
 Stripping removes leading or trailing whitespace from text, replacing swaps out unwanted characters or patterns for something else, and splitting breaks a single string into multiple parts based on a delimiter. These are usually among the first steps in cleaning any dataset with free-text or inconsistently formatted columns. The stringr package provides consistent functions for all three operations.

@@ -1,3 +1,3 @@
 # Sampling
- 
+
 Sampling covers the different methods for selecting a subset of a population to study, when studying the entire population isn't feasible, including simple random, stratified, and cluster sampling. It also covers the mechanics of random number generation in R and setting a seed for reproducibility. The right sampling method depends on the structure of the population and what you need the sample to represent.

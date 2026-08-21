@@ -1,3 +1,3 @@
 # tidyr
- 
+
 tidyr handles reshaping data between different layouts, most notably converting between wide and long formats with `pivot_longer()` and `pivot_wider()`. Many statistical functions and ggplot2 specifically expect data in a particular shape, so tidyr often bridges the gap between how data is stored and how it needs to look for analysis or plotting. It also handles filling in missing combinations of values and unnesting nested data structures.

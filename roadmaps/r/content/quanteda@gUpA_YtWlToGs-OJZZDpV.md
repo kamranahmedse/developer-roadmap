@@ -1,3 +1,3 @@
 # quanteda
- 
+
 quanteda is a faster, more powerful text analysis package built for working with large corpora of documents, offering more advanced features than tidytext for tasks like document-feature matrices and topic modeling. It trades some of tidytext's tidyverse-native simplicity for more performance and specialized functionality. It's typically reached for once text analysis needs outgrow what tidytext comfortably handles.

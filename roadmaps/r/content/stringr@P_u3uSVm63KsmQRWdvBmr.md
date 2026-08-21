@@ -1,3 +1,3 @@
 # stringr
- 
+
 stringr provides a consistent, well-documented set of functions for working with text, covering tasks like detecting patterns, extracting substrings, and combining strings. Every function follows a consistent naming pattern starting with `str_`, such as `str_detect()` or `str_replace()`, making the package easier to learn than base R's more scattered string functions. It's the standard tool for text-heavy cleaning and manipulation in modern R code.

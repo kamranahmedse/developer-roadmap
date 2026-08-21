@@ -1,3 +1,3 @@
 # Relationship Analysis
- 
+
 Relationship analysis examines how two or more variables relate to each other, using tools like scatterplots for two numeric variables, correlation matrices for many numeric variables at once, and cross-tabulation for categorical variables. This is usually the second step in exploratory analysis, after looking at variables individually. It often surfaces the patterns that later motivate a specific statistical model.
