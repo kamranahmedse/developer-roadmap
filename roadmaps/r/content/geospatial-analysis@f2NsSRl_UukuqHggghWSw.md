@@ -1,3 +1,3 @@
 # Geospatial Analysis
- 
+
 Geospatial analysis works with data tied to specific locations on Earth, using specialized structures and tools for handling coordinates, boundaries, and spatial relationships. It covers both vector data, like points and polygons, and raster data, like satellite imagery. This is a distinct application area requiring its own set of packages beyond standard data manipulation tools.

@@ -1,3 +1,3 @@
 # Hypothesis Testing
- 
+
 Hypothesis testing provides a formal framework for deciding whether an observed pattern in data is likely real or could plausibly have occurred by chance alone. It starts with a null hypothesis, typically stating there's no effect, and calculates a p-value representing how surprising the observed data would be if that null hypothesis were true. Common tests include the t-test for comparing means and the chi-square test for categorical relationships.

@@ -1,3 +1,3 @@
 # Faceting & Themes
- 
+
 Faceting splits a single plot into a grid of smaller plots, one for each level of a categorical variable, making it easy to compare patterns across groups side by side. Themes control the overall visual styling of a plot, like background color, gridlines, and font sizes. Together they cover much of the difference between a rough exploratory plot and one polished enough to share.

@@ -1,3 +1,3 @@
 # Linear Regression
- 
+
 Linear regression models the relationship between a numeric outcome and one or more predictor variables, fitting a straight line, or hyperplane with multiple predictors, that best describes the relationship. R's `lm()` function fits linear models with a simple formula syntax, like `lm(sales ~ advertising)`. Checking the model's assumptions, like linearity and constant variance of the errors, matters for trusting its results.

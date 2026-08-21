@@ -1,3 +1,3 @@
 # Text
- 
+
 Plain text files store unstructured or loosely structured data without the strict comma or tab delimiters of a CSV or TSV file. Reading them into R might mean reading line by line for further parsing, or using a delimiter-aware function if the text has some consistent structure like tab separation. This is a common starting point for log files, raw scraped content, or data that doesn't fit neatly into a standard tabular format.

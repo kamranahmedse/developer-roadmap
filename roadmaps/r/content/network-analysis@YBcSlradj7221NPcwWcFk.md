@@ -1,3 +1,3 @@
 # Network Analysis
- 
+
 Network analysis studies relationships between entities, represented as a graph of nodes connected by edges, such as people connected by friendships or web pages connected by links. It covers identifying influential nodes, detecting clusters or communities within a network, and visualizing the overall structure. This is a distinct application area from typical tabular data analysis, since relationships between records matter as much as the records themselves.

@@ -1,3 +1,3 @@
 # Grammar of Graphics
- 
+
 The grammar of graphics is the conceptual framework ggplot2 is built on, describing any plot as a combination of data, a coordinate system, and layered geometric elements mapped to aesthetics. Instead of choosing a fixed chart type, you build a plot by combining these pieces, which is why the same underlying approach can produce scatterplots, bar charts, or complex layouts using consistent syntax. Understanding this grammar is what makes ggplot2 code readable and predictable once you know the pattern.

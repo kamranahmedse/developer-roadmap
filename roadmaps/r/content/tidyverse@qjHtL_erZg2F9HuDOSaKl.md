@@ -1,3 +1,3 @@
 # tidyverse
- 
+
 The tidyverse is a collection of R packages designed to work together around a shared philosophy and consistent syntax for data science tasks. It includes packages for data manipulation, visualization, string handling, and more, all built to interoperate smoothly with the pipe operator. Learning the tidyverse's conventions once makes each individual package inside it easier to pick up.

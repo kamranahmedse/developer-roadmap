@@ -1,3 +1,3 @@
 # Time Series Analysis
- 
+
 Time series analysis studies data collected sequentially over time, where the order of observations carries meaning that would be lost if the rows were shuffled. It involves identifying trends, seasonal patterns, and autocorrelation, where a value depends on its own previous values. Forecasting models use these identified patterns to predict future values based on historical data.
