@@ -7,4 +7,5 @@ Zod is designed to be as developer-friendly as possible. The goal is to eliminat
 Visit the following resources to learn more:
 
 - [@official@Zod Website](https://zod.dev/)
+- [@official@Valibot - Alternative to Zod](https://valibot.dev/)
 - [@video@Learn Zod In 30 Minutes](https://www.youtube.com/watch?v=L6BE-U3oy80)
