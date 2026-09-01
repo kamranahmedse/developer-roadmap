@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@RADIUS (Remote Authentication Dial-In User Service)](https://www.techtarget.com/searchsecurity/definition/RADIUS)
+- [@official@Remote Authentication Dial In User Service (RADIUS) - RFC 2865](https://datatracker.ietf.org/doc/html/rfc2865)
 - [@video@How RADIUS Authentication Works](https://www.youtube.com/watch?v=LLrb3em-_po)

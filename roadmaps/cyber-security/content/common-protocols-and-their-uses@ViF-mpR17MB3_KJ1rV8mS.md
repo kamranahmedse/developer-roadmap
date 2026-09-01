@@ -4,5 +4,5 @@ Networking protocols are standardized sets of rules that govern how data is tran
 
 Visit the following resources to learn more:
 
-- [@article@12 Common Network Protocols](https://www.techtarget.com/searchnetworking/feature/12-common-network-protocols-and-their-functions-explained)
+- [@article@What Is a Network Protocol?](https://www.comptia.org/en-us/blog/what-is-a-network-protocol/)
 - [@video@Networking For Hackers! (Common Network Protocols)](https://www.youtube.com/watch?v=p3vaaD9pn9I)
