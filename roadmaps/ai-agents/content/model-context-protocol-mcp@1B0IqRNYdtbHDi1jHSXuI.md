@@ -1,6 +1,6 @@
 # Model Context Protocol (MCP)
 
-Model Context Protocol (MCP) is a rulebook that tells an AI agent how to pack background information before it sends a prompt to a language model. It lists what pieces go into the prompt—things like the system role, the user’s request, past memory, tool calls, or code snippets—and fixes their order. Clear tags mark each piece, so both humans and machines can see where one part ends and the next begins. Keeping the format steady cuts confusion, lets different tools work together, and makes it easier to test or swap models later. When agents follow MCP, the model gets a clean, complete prompt and can give better answers.
+Model Context Protocol (MCP) is an open, standardized protocol that lets AI applications connect to external data sources and tools in a uniform way. Instead of writing a custom integration every time a model needs to read a file, query a database, or call an API, developers expose that capability through an MCP server, and any MCP-compatible client (the AI application) can discover and use it the same way. MCP follows a client-server architecture: the host application runs a client that talks to one or more servers over a defined protocol, exchanging structured requests for tools, resources, or prompts. This decouples AI applications from the specific systems they connect to, similar to how the Language Server Protocol decoupled code editors from language-specific tooling.
 
 Visit the following resources to learn more:
 
