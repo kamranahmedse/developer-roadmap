@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [@course@Creating a Repository? (Interactive Lesson)](https://inter-git.com/lessons/creating-repository)
 - [@course@Adding Files to Index (Interactive Lesson)](https://inter-git.com/lessons/adding-files-to-index)
 - [@course@Making a Commit (Interactive Lesson)](https://inter-git.com/lessons/making-a-commit)
+- [@course@Git Introduction: init, add, commit, branches and remotes in a browser sandbox (Hands-on)](https://learn.webterm.app/en/courses/git-introduction)
