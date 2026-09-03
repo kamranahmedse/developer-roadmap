@@ -1,6 +1,4 @@
-# undefined
-
-#Resource Modeling
+# Resource Modeling
 
 Resource modeling is the process of deciding what "things" your API exposes and how they map to URLs. A resource is any noun your API manages, like a user, an order, or a product. Modeling it means defining its boundaries, its relationships to other resources, and what data it carries. Good resource modeling done upfront prevents awkward URL structures and inconsistent data shapes that are painful to fix once consumers are depending on your API.
 
