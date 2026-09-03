@@ -5,3 +5,4 @@ Secure Real-time Transport Protocol (SRTP) is a security profile for RTP, the Re
 Visit the following resources to learn more:
 
 - [@article@SRTP (Secure RTP)](https://developer.mozilla.org/en-US/docs/Glossary/RTP)
+- [@article@Implementing Secure SIP Communications](https://www.ictfax.com/implementing-secure-sip-communications-in-ictfax/)
