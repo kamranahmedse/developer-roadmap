@@ -4,4 +4,4 @@ Database security best practices are a collection of methods used to protect sen
 
 Visit the following resources to learn more:
 
-- [@article@What is database security?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-database-security)
+- [@article@What is database security?](https://www.ibm.com/think/topics/database-security)

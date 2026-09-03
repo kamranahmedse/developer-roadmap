@@ -4,4 +4,4 @@ The `ROUND` function in SQL is used to round a numeric value to a specified numb
 
 Visit the following resources to learn more:
 
-- [@article@What is the SQL ROUND Function and how does it work?](https://www.datacamp.com/tutorial/mastering-sql-round)
+- [@article@SQL ROUND Function: Syntax, Usage, and Examples](https://mimo.org/glossary/sql/round)

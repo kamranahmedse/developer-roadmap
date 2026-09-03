@@ -4,5 +4,4 @@ Data integrity constraints are rules you set up in a database to make sure the d
 
 Visit the following resources to learn more:
 
-- [@article@Integrity Constraints in SQL: A Guide With Examples](https://www.datacamp.com/tutorial/integrity-constraints-sql)
-- [@article@Integrity Constraints](https://dataheadhunters.com/academy/integrity-constraints-ensuring-accuracy-and-consistency-in-your-data/)
+- [@article@Integrity Constraints in DBMS: Key to Database Quality](https://www.theknowledgeacademy.com/blog/integrity-constraints-in-dbms/)
