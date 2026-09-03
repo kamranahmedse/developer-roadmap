@@ -4,5 +4,4 @@ Views are like virtual tables. Instead of physically storing data, a view's defi
 
 Visit the following resources to learn more:
 
-- [@article@Views in SQL](https://www.datacamp.com/tutorial/views-in-sql)
 - [@video@SQL Views Tutorial](https://www.youtube.com/watch?v=cLSxasHg9WY)

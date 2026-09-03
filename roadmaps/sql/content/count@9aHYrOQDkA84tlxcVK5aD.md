@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [@article@COUNT SQL Function](https://www.datacamp.com/tutorial/count-sql-function)
+- [@article@The SQL COUNT() Function](https://www.w3schools.com/sql/sql_count.asp)
