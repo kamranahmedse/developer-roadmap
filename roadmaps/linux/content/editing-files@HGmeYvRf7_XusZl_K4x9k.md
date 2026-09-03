@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@Editing Files in Linux Command Line](https://itsfoss.com/edit-files-linux/)
 - [@article@The Complete Guide to Text Editing in Linux with Nano and Vim](https://thelinuxcode.com/how-to-edit-file-in-linux/)
 - [@article@Vim Tutorial for Beginners](https://linuxconfig.org/vim-tutorial)
+- [@course@Vim Introduction: modes, motions and operators in a browser sandbox (Hands-on)](https://learn.webterm.app/en/courses/vim-introduction)

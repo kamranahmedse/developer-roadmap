@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [@article@An In-Depth Guide to Pipes in Linux - TheLinuxCode](https://thelinuxcode.com/linux-pipe-command-examples/)
 - [@article@Piping and Redirection](https://ryanstutorials.net/linuxtutorial/piping.php#piping)
 - [@article@What is Piping in Linux?](https://linuxsimply.com/what-is-piping-in-linux/)
+- [@course@Terminal Fundamentals: pipes, redirects and grep in a browser sandbox (Hands-on)](https://learn.webterm.app/en/courses/terminal-fundamentals)
