@@ -5,4 +5,5 @@ NumPy provides linear algebra operations, including matrix multiplication (`np.d
 Visit the following resources to learn more:
 
 - [@article@Numpy Linear Algebra](https://www.programiz.com/python-programming/numpy/linear-algebra)
+- [@article@Matrix Multiplication in Python: The Complete Decision Guide](https://roadmap.sh/python-data-analysis/matrix-multiplication)
 - [@video@Learn NumPy in 1 hour! 🔢](https://www.youtube.com/watch?v=VXU4LSAQDSc)
