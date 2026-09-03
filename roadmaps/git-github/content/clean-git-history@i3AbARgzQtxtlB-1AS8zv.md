@@ -1,5 +1,5 @@
 # Clean Git History
- 
+
 A clean Git history means commits are logically organized, well described, and free of unnecessary noise like "fix typo" or "WIP" messages. Techniques like squashing commits, rebasing, and writing clear commit messages all contribute to keeping history readable. A clean history makes it easier to trace when and why a specific change was introduced.
 
 Visit the following resources to learn more:

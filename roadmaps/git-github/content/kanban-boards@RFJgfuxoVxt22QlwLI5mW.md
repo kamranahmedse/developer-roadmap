@@ -1,5 +1,5 @@
 # Kanban Boards
- 
+
 A Kanban board is a visual layout that organizes tasks into columns representing different stages, such as "To Do," "In Progress," and "Done." Items move across columns as their status changes, giving a clear picture of the team's workflow at a glance. GitHub Projects supports this board view natively, letting issues and pull requests be dragged between columns.
 
 Visit the following resources to learn more:

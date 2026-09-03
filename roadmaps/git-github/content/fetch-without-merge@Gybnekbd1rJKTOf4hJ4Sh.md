@@ -1,5 +1,5 @@
 # Fetch without Merge
- 
+
 `git fetch` downloads new commits, branches, and tags from a remote repository without merging them into the local branch. It updates the remote-tracking branches, like `origin/main`, so the developer can inspect incoming changes before deciding to merge or rebase them. This makes fetch a safer way to check for updates compared to `git pull`, which fetches and merges in one step.
 
 Visit the following resources to learn more:

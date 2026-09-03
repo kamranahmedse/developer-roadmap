@@ -1,5 +1,5 @@
 # Fast-Forward vs Non-FF
- 
+
 A fast-forward merge happens when the target branch has no new commits since the feature branch was created, so Git simply moves the branch pointer forward without creating a new commit. A non-fast-forward merge occurs when both branches have diverged, requiring Git to create a dedicated merge commit that ties the two histories together. Developers can force a merge commit even when a fast-forward is possible by using `git merge --no-ff`, which some teams prefer for a clearer history.
 
 Visit the following resources to learn more:

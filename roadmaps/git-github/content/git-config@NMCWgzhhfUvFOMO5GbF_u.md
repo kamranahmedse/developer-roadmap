@@ -1,5 +1,5 @@
 # git config
- 
+
 `git config` sets configuration values that control how Git behaves, such as the user's name, email, and default editor. These settings can apply at different levels: system-wide, per user, or per repository. Git attaches this information to every commit, which is why setting a name and email is one of the first steps after installing Git.
 
 Visit the following resources to learn more:

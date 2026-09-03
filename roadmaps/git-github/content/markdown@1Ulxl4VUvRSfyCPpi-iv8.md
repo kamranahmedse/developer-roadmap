@@ -1,5 +1,5 @@
 # Markdown
- 
+
 Markdown is a lightweight markup language used to format text with plain, readable syntax, like using asterisks for bold or a hash symbol for headings. GitHub renders Markdown automatically in README files, issues, pull requests, and comments, converting the plain text syntax into styled output. Its simplicity makes it a common choice for documentation across many platforms beyond just GitHub.
 
 Visit the following resources to learn more:

@@ -1,5 +1,5 @@
 # Git Remotes
- 
+
 A remote is a version of a repository hosted somewhere other than the local machine, such as on GitHub. Remotes let developers push their local commits to a shared location and pull down changes made by others. A repository can have multiple remotes, though most projects use a single one, conventionally named `origin`.
 
 Visit the following resources to learn more:

@@ -1,5 +1,5 @@
 # Forking vs Cloning
- 
+
 Forking creates a personal copy of someone else's repository under the user's own GitHub account, allowing changes without affecting the original project. Cloning downloads a copy of a repository, whether it's the original or a fork, to a local machine for editing. Contributors typically fork a repository first, then clone their fork locally, so changes can eventually be proposed back to the original project through a pull request.
 
 Visit the following resources to learn more:

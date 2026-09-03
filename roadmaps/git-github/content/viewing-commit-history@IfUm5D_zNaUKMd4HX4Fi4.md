@@ -1,5 +1,5 @@
 # Viewing Commit History
- 
+
 Viewing commit history shows the sequence of commits made to a repository, typically through the `git log` command. Each entry includes the commit hash, author, date, and message, giving a record of how the project evolved. Developers use this history to understand past changes, find when a bug was introduced, or review someone else's work.
 
 Visit the following resources to learn more:

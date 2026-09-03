@@ -1,5 +1,5 @@
 # PR Guidelines
- 
+
 Pull request guidelines are the conventions a project sets for how contributions should be submitted, often documented in a `CONTRIBUTING.md` file. They typically cover expectations like keeping pull requests focused on a single change, writing a clear description, and linking related issues. Following these guidelines makes it easier for maintainers to review and merge contributions quickly.
 
 Visit the following resources to learn more:
