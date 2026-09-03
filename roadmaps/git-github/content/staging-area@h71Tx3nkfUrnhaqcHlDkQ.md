@@ -1,5 +1,5 @@
 # Staging Area
- 
+
 The staging area, also called the index, is where changes are prepared before being committed. Running `git add` moves specific changes from the working directory into the staging area, letting developers choose exactly what to include in the next commit. This separation gives control over grouping related changes together instead of committing every modified file at once.
 
 Visit the following resources to learn more:

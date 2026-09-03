@@ -1,5 +1,5 @@
 # What and Why use?
- 
+
 Submodules let a project reference another Git repository at a specific commit, rather than copying its code directly into the main project. This is useful when multiple projects depend on the same shared library and need to track updates to it independently. Using a submodule keeps the dependency's history separate while still linking it to a fixed point in the parent project.
 
 Visit the following resources to learn more:

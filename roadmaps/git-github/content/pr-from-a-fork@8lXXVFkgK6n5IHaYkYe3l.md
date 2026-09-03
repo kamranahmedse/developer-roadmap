@@ -1,5 +1,5 @@
 # PR from a Fork
- 
+
 A pull request from a fork lets a contributor propose changes to a repository they don't have write access to. The contributor forks the repository, makes changes on their own copy, and opens a pull request comparing their fork's branch against the original repository. This workflow is the standard way open source contributions happen, since it doesn't require granting outside contributors direct write access.
 
 Visit the following resources to learn more:

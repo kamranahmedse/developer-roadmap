@@ -1,5 +1,5 @@
 # GitHub Actions
- 
+
 GitHub Actions is a CI/CD platform built into GitHub that automates tasks like testing, building, and deploying code in response to repository events. Workflows are defined in YAML files stored in the `.github/workflows` directory and can run on GitHub-hosted or self-hosted runners. It's widely used to automate everything from running test suites on every pull request to deploying applications after a merge.
 
 Visit the following resources to learn more:

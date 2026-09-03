@@ -1,5 +1,5 @@
 # Linear vs Non-Linear
- 
+
 A linear history means commits follow a single, straight sequence with no branching or merging, often achieved through rebasing instead of merging. A non-linear history includes branches that diverge and later merge back together, creating a more complex graph of commits. Teams choose between the two based on whether they prioritize a simple, readable log or a history that reflects exactly how work happened in parallel.
 
 Visit the following resources to learn more:

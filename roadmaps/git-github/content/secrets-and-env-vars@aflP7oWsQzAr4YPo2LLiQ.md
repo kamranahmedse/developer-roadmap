@@ -1,5 +1,5 @@
 # Secrets and Env Vars
- 
+
 Secrets store sensitive values like API keys or passwords securely, configured in a repository's settings and referenced in workflows without exposing their actual values in logs. Environment variables, defined with the `env` key, hold configuration values that steps in a workflow can access during execution. Both are commonly used together, keeping sensitive data out of the workflow file itself while still making it available where needed.
 
 Visit the following resources to learn more:

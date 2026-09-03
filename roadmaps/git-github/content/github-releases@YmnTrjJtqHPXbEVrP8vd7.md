@@ -1,5 +1,5 @@
 # GitHub Releases
- 
+
 A GitHub release packages a specific tag along with release notes, binaries, or other downloadable assets. It gives users a clear, versioned snapshot of the project they can download without cloning the entire repository. Releases are commonly used to distribute compiled software, mark milestones, and document what changed between versions.
 
 Visit the following resources to learn more:

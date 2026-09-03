@@ -1,5 +1,5 @@
 # Undoing Changes
- 
+
 Undoing changes in Git covers the different ways to reverse modifications, whether they're uncommitted, staged, or already committed. Depending on the situation, developers might use `git checkout` to discard local edits, `git reset` to unstage or remove commits, or `git revert` to safely undo a commit that's already been shared. Choosing the right method depends on whether the change has been pushed to a shared remote.
 
 Visit the following resources to learn more:

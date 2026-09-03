@@ -1,5 +1,5 @@
 # Teams within Organization
- 
+
 Teams within a GitHub organization group members together to manage permissions more efficiently across multiple repositories. Instead of granting access to each person individually, an admin assigns access to a team, and every member inherits those permissions. This structure is useful for larger organizations where different teams, like frontend or backend developers, need different levels of access to specific repositories.
 
 Visit the following resources to learn more:
