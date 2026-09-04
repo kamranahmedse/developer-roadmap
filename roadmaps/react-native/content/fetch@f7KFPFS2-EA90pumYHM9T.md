@@ -4,4 +4,5 @@ _Fetch_ is a JavaScript function available in React Native that is used to make 
 
 Visit the following resources to learn more:
 
-- [@article@Managing network connection status in React Native](https://blog.logrocket.com/managing-network-connection-status-in-react-native/)
+- [@official@Networking](https://reactnative.dev/docs/network)
+- [@official@Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)

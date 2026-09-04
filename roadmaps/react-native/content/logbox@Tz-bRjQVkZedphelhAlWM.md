@@ -1,6 +1,6 @@
 # LogBox
 
-LogBox is a new feature added to React Native to improve how logs are displayed and managed in your development environment. It provides better visualization and organization of logs, warnings, and errors, making it easier for developers to address issues in their code.
+LogBox is React Native's in-app display for logs, warnings, and errors during development. It groups and formats them, with stack traces for errors, so problems are easier to spot and address in your code.
 
 Visit the following resources to learn more:
 

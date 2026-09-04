@@ -11,5 +11,5 @@ Choose the storage option that best fits your app's requirements and use cases. 
 
 Visit the following resources to learn more:
 
-- [@official@AsyncStorage](https://reactnative.dev/docs/asyncstorage)
+- [@opensource@Async Storage](https://github.com/react-native-async-storage/async-storage)
 - [@article@Best Data Storage Option for React Native Apps](https://dev.to/ammarahmed/best-data-storage-option-for-react-native-apps-42k)
