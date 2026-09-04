@@ -1,6 +1,6 @@
 # Weak Consistency
-
-After an update is made to the data, it is not guaranteed that any subsequent read operation will immediately reflect the changes made. The read may or may not see the recent write.
+ 
+Weak consistency means that after a write, reads are not guaranteed to see that write immediately, or at all. This model works for use cases where occasional data loss or staleness is acceptable, such as real-time voice or video calls, where getting the latest packet matters more than getting every packet.
 
 Visit the following resources to learn more:
 

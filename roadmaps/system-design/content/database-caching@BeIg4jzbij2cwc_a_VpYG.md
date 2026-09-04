@@ -1,6 +1,6 @@
 # Database Caching
-
-Database caching involves storing frequently accessed data from a database in a temporary storage location (the cache) to reduce the load on the database and improve application performance. Instead of repeatedly querying the database for the same data, the application first checks the cache. If the data is present (a cache hit), it's retrieved from the cache, which is much faster than a database query. If the data is not in the cache (a cache miss), the application queries the database, retrieves the data, stores it in the cache for future use, and then returns it to the application.
+ 
+Database caching stores the results of frequent or expensive database queries so they do not need to be recalculated on every request. Many databases include a built-in caching layer, and applications can also add an external cache in front of the database. This reduces load on the database and speeds up repeated reads.
 
 Visit the following resources to learn more:
 

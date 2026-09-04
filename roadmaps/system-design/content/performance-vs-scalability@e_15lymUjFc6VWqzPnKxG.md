@@ -1,15 +1,9 @@
 # Performance vs Scalability
-
-A service is **scalable** if it results in increased **performance** in a manner proportional to resources added. Generally, increasing performance means serving more units of work, but it can also be to handle larger units of work, such as when datasets grow.
-
-Another way to look at performance vs scalability:
-
-*   If you have a **performance** problem, your system is slow for a single user.
-*   If you have a **scalability** problem, your system is fast for a single user but slow under heavy load.
+ 
+Performance and scalability describe different problems in a system. A performance problem shows up when a system is slow for a single user, while a scalability problem shows up when the system is fast for one user but slows down under heavy load. A system can be fast but not scalable, or scalable but not particularly fast for any individual request.
 
 Visit the following resources to learn more:
 
 - [@article@Scalability, Availability & Stability Patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
 - [@article@A Word on Scalability](https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html)
 - [@article@Performance vs Scalability](https://blog.professorbeekums.com/performance-vs-scalability/)
-- [@feed@Explore top posts about Performance](https://app.daily.dev/tags/performance?ref=roadmapsh)

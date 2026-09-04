@@ -1,6 +1,6 @@
 # Choreography
-
-Have each component of the system participate in the decision-making process about the workflow of a business transaction, instead of relying on a central point of control.
+ 
+Choreography is an approach to coordinating a distributed workflow where each service reacts to events and decides its own next action, rather than a central controller directing the process. Services publish events when they complete a step, and other services listen and respond accordingly. This keeps services loosely coupled but can make the overall flow harder to trace.
 
 Visit the following resources to learn more:
 

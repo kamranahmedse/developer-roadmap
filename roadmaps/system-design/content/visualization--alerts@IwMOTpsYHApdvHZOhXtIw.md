@@ -1,6 +1,6 @@
-# Visualization and Alerts
-
-An important aspect of any monitoring system is the ability to present the data in such a way that an operator can quickly spot any trends or problems. Also important is the ability to quickly inform an operator if a significant event has occurred that might require attention.
+# Visualization & Alerts
+ 
+Visualization and alerts turn raw monitoring data into dashboards and notifications that people can act on. Dashboards give a real-time or historical view of system health, while alerts notify the right people automatically when a metric crosses a concerning threshold. Together they close the loop between collecting data and actually responding to problems.
 
 Visit the following resources to learn more:
 

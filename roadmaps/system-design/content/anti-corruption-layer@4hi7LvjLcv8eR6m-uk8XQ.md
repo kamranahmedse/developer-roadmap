@@ -1,6 +1,6 @@
-# Anti-corruption Layer
-
-Implement a facade or adapter layer between different subsystems that don't share the same semantics. This layer translates requests that one subsystem makes to the other subsystem. Use this pattern to ensure that an application's design is not limited by dependencies on outside subsystems. This pattern was first described by Eric Evans in Domain-Driven Design.
+# Anti-Corruption Layer
+ 
+An anti-corruption layer sits between two systems with different data models or logic, translating requests and responses so that one system's design does not leak into and pollute the other. It is often used when integrating a new system with a legacy system, keeping the new system's model clean and independent. This isolation makes it easier to later replace or evolve either system without affecting the other.
 
 Visit the following resources to learn more:
 

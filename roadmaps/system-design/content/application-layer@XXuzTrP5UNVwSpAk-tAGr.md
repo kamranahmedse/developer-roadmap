@@ -1,14 +1,6 @@
 # Application Layer
-
-Separating out the web layer from the application layer (also known as platform layer) allows you to scale and configure both layers independently. Adding a new API results in adding application servers without necessarily adding additional web servers. The single responsibility principle advocates for small and autonomous services that work together. Small teams with small services can plan more aggressively for rapid growth.
-
-![](https://i.imgur.com/F0cjurv.png)
-
-Disadvantages
--------------
-
-*   Adding an application layer with loosely coupled services requires a different approach from an architectural, operations, and process viewpoint (vs a monolithic system).
-*   Microservices can add complexity in terms of deployments and operations.
+ 
+The application layer is where the core business logic of a system runs, separate from the data storage layer and the presentation layer. Keeping this layer independent allows it to scale horizontally by running multiple instances behind a load balancer. It often gets broken down into smaller services, such as microservices, as a system grows.
 
 Visit the following resources to learn more:
 

@@ -1,16 +1,6 @@
 # HTTP
-
-HTTP is a method for encoding and transporting data between a client and a server. It is a request/response protocol: clients issue requests and servers issue responses with relevant content and completion status info about the request. HTTP is self-contained, allowing requests and responses to flow through many intermediate routers and servers that perform load balancing, caching, encryption, and compression.
-
-A basic HTTP request consists of a verb (method) and a resource (endpoint). Below are common HTTP verbs:
-
-    Verb   | Description                   | Idempotent* | Safe | Cacheable                               |
-    -------|-------------------------------|-------------|------|-----------------------------------------|
-    GET    | Reads a resource              | Yes         | Yes  | Yes                                     |
-    POST   | Creates a resource or trigger | No          | No   | Yes if response contains freshness info |
-    PUT    | Creates or replace a resource | Yes         | No   | No                                      |
-    PATCH  | Partially updates a resource  | No          | No   | Yes if response contains freshness info |
-    DELETE | Deletes a resource            | Yes         | No   | No                                      |
+ 
+HTTP, or Hypertext Transfer Protocol, is the foundational protocol for communication on the web, defining how clients and servers exchange requests and responses. It is stateless, meaning each request is handled independently without relying on previous ones, and it uses methods like GET, POST, and PUT to define the type of operation. Most web APIs are built on top of HTTP.
 
 Visit the following resources to learn more:
 

@@ -1,8 +1,6 @@
 # Latency vs Throughput
-
-Latency and throughput are two important measures of a system's performance. **Latency** refers to the amount of time it takes for a system to respond to a request. **Throughput** refers to the number of requests that a system can handle at the same time.
-
-Generally, you should aim for maximal throughput with acceptable latency.
+ 
+Latency is the time it takes to complete a single operation, such as the time between a request and its response. Throughput is the number of operations a system can process in a given time period. The two are related but not interchangeable: a system can have low latency but limited throughput, or high throughput with noticeable latency per request.
 
 Visit the following resources to learn more:
 

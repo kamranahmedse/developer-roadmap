@@ -1,6 +1,6 @@
 # Static Content Hosting
 
-Deploy static content to a cloud-based storage service that can deliver them directly to the client. This can reduce the need for potentially expensive compute instances.
+Static content hosting involves storing fixed files—such as HTML documents, CSS stylesheets, JavaScript files, and images—on a cloud-based storage service rather than serving them directly from a traditional application server. By offloading these files to a distributed storage system, you can serve them to users through a Content Delivery Network (CDN), which caches the data at various geographic locations to reduce latency and decrease the processing load on your primary backend infrastructure.
 
 Visit the following resources to learn more:
 

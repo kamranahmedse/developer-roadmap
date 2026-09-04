@@ -1,8 +1,6 @@
 # Push CDNs
-
-Push CDNs receive new content whenever changes occur on your server. You take full responsibility for providing content, uploading directly to the CDN and rewriting URLs to point to the CDN. You can configure when content expires and when it is updated. Content is uploaded only when it is new or changed, minimizing traffic, but maximizing storage.
-
-Sites with a small amount of traffic or sites with content that isn't often updated work well with push CDNs. Content is placed on the CDNs once, instead of being re-pulled at regular intervals.
+ 
+A push CDN requires the origin server to actively upload content to the CDN ahead of time, rather than waiting for a request. This suits sites with relatively small amounts of content that does not change frequently, since it gives full control over what gets stored and when it updates. It is less efficient for large, frequently changing content libraries.
 
 Visit the following resources to learn more:
 

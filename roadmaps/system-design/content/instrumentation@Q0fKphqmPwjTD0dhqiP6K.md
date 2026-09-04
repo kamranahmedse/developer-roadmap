@@ -1,6 +1,6 @@
 # Instrumentation
-
-Instrumentation is a critical part of the monitoring process. You can make meaningful decisions about the performance and health of a system only if you first capture the data that enables you to make these decisions. The information that you gather by using instrumentation should be sufficient to enable you to assess performance, diagnose problems, and make decisions without requiring you to sign in to a remote production server to perform tracing (and debugging) manually. Instrumentation data typically comprises metrics and information that's written to trace logs.
+ 
+Instrumentation is the process of adding code to a system that emits data about its internal behavior, such as logs, metrics, and traces. Without instrumentation, there is no data for monitoring tools to collect or analyze. Good instrumentation is designed early, since retrofitting it into a complex system later is much harder.
 
 Visit the following resources to learn more:
 

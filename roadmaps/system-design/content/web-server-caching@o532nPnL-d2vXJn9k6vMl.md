@@ -1,3 +1,3 @@
 # Web Server Caching
-
-[Reverse proxies](https://github.com/donnemartin/system-design-primer#reverse-proxy-web-server) and caches such as [Varnish](https://www.varnish-cache.org/) can serve static and dynamic content directly. Web servers can also cache requests, returning responses without having to contact application servers.
+ 
+Web server caching stores responses at the web server level, such as full HTML pages or static resources, so the server can serve them directly without regenerating them for each request. Reverse proxies like Varnish or Nginx are commonly used for this purpose. It reduces the load on application servers for content that does not change on every request.

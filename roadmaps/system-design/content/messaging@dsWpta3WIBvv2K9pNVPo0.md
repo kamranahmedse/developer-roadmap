@@ -1,6 +1,6 @@
 # Messaging
-
-Messaging is a pattern that allows for the communication and coordination between different components or systems, using messaging technologies such as message queues, message brokers, and event buses. This pattern allows for decoupling of the sender and receiver, and can be used to build scalable and flexible systems.
+ 
+Messaging patterns describe ways for components in a distributed system to communicate asynchronously through messages rather than direct calls. This includes patterns for sequencing messages, coordinating multiple consumers, and handling large payloads. Messaging decouples producers and consumers, letting each scale and fail independently.
 
 Visit the following resources to learn more:
 

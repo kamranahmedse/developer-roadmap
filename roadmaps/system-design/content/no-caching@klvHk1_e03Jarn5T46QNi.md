@@ -1,12 +1,6 @@
 # No Caching
-
-No caching antipattern occurs when a cloud application that handles many concurrent requests, repeatedly fetches the same data. This can reduce performance and scalability.
-
-When data is not cached, it can cause a number of undesirable behaviors, including:
-
-*   Repeatedly fetching the same information from a resource that is expensive to access, in terms of I/O overhead or latency.
-*   Repeatedly constructing the same objects or data structures for multiple requests.
-*   Making excessive calls to a remote service that has a service quota and throttles clients past a certain limit.
+ 
+The no caching antipattern refers to an application that repeatedly performs expensive operations, like database queries or external API calls, without caching results that could be reused. This creates unnecessary load and latency for data that does not change often. Adding an appropriate caching layer can significantly reduce this overhead.
 
 Visit the following resources to learn more:
 

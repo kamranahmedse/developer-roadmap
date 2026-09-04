@@ -1,8 +1,6 @@
 # Pull CDNs
-
-Pull CDNs grab new content from your server when the first user requests the content. You leave the content on your server and rewrite URLs to point to the CDN. This results in a slower request until the content is cached on the CDN.
-
-A time-to-live (TTL) determines how long content is cached. Pull CDNs minimize storage space on the CDN, but can create redundant traffic if files expire and are pulled before they have actually changed. Sites with heavy traffic work well with pull CDNs, as traffic is spread out more evenly with only recently-requested content remaining on the CDN.
+ 
+A pull CDN fetches content from the origin server the first time a user requests it, then caches that content for subsequent requests until it expires. This keeps the CDN in sync with the origin automatically, since new or updated content gets pulled in on demand. It works well for sites with content that changes often but is not accessed instantly after publishing.
 
 Visit the following resources to learn more:
 
