@@ -1,8 +1,6 @@
 # Task Queues
-
-Tasks queues receive tasks and their related data, runs them, then delivers their results. They can support scheduling and can be used to run computationally-intensive jobs in the background.
-
-[Celery](https://docs.celeryproject.org/en/stable/) has support for scheduling and primarily has python support.
+ 
+A task queue holds units of work, called tasks, that are processed asynchronously by one or more worker processes. Producers add tasks to the queue, and workers pull tasks off and execute them independently of the request that created them. This decouples slow or resource-intensive work from the main application flow.
 
 Visit the following resources to learn more:
 

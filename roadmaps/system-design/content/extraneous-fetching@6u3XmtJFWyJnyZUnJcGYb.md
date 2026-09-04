@@ -1,13 +1,6 @@
 # Extraneous Fetching
-
-Extraneous fetching in system design refers to the practice of retrieving more data than is needed for a specific task or operation. This can occur when a system is not optimized for the specific workload or when the system is not properly designed to handle the data requirements.
-
-Extraneous fetching can lead to a number of issues, such as:
-
-*   Performance degradation
-*   Increased resource utilization
-*   Increased network traffic
-*   Poor user experience
+ 
+Extraneous fetching happens when an application retrieves more data than it actually needs for a given operation, wasting bandwidth and processing time. This often occurs from overly broad queries or APIs that always return full objects regardless of what the caller uses. Fetching only the required fields reduces unnecessary load on the system.
 
 Visit the following resources to learn more:
 

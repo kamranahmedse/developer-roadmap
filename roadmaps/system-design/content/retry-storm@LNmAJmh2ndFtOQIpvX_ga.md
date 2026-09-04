@@ -1,6 +1,6 @@
 # Retry Storm
-
-Retry Storm refers to a situation in which a large number of retries are triggered in a short period of time, leading to a significant increase in traffic and resource usage. This can occur when a system is not properly designed to handle failures or when a component is behaving unexpectedly. This can lead to Performance degradation, Increased resource utilization, Increased network traffic, and Poor user experience. To address retry storms, a number of approaches can be taken such as Exponential backoff, Circuit breaking, and Monitoring and alerting.
+ 
+A retry storm happens when many clients or services retry failed requests at the same time, often after a shared dependency recovers from an outage, overwhelming that dependency again right after it comes back up. This can turn a brief failure into a prolonged outage. Techniques like exponential backoff and jitter help spread out retries to avoid this.
 
 Visit the following resources to learn more:
 

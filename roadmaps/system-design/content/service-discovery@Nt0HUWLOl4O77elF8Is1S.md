@@ -1,6 +1,6 @@
 # Service Discovery
-
-Systems such as [Consul](https://www.consul.io/docs/index.html), [Etcd](https://coreos.com/etcd/docs/latest), and [Zookeeper](http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper) can help services find each other by keeping track of registered names, addresses, and ports. [Health checks](https://www.consul.io/intro/getting-started/checks.html) help verify service integrity and are often done using an HTTP endpoint. Both Consul and Etcd have a built in key-value store that can be useful for storing config values and other shared data.
+ 
+Service discovery is the mechanism that lets services in a distributed system find each other's network locations without hardcoding IP addresses. As services scale up, down, or move between hosts, a service discovery system keeps track of where each instance currently lives. Tools like Consul, etcd, or built-in mechanisms in orchestration platforms handle this automatically.
 
 Visit the following resources to learn more:
 

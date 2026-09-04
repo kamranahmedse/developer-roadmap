@@ -1,8 +1,6 @@
 # Ambassador
-
-Create helper services that send network requests on behalf of a consumer service or application. An ambassador service can be thought of as an out-of-process proxy that is co-located with the client.
-
-This pattern can be useful for offloading common client connectivity tasks such as monitoring, logging, routing, security (such as TLS), and resiliency patterns in a language agnostic way. It is often used with legacy applications, or other applications that are difficult to modify, in order to extend their networking capabilities. It can also enable a specialized team to implement those features.
+ 
+The ambassador pattern places a helper service in front of a client to handle networking concerns, like retries, monitoring, or protocol translation, on the client's behalf. This lets the main application focus on its core logic while the ambassador manages the complexity of communicating with external services. It is often implemented as a sidecar deployed alongside the client.
 
 Visit the following resources to learn more:
 

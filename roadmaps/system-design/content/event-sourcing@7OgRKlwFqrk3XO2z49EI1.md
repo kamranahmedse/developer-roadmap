@@ -1,9 +1,8 @@
 # Event Sourcing
-
-Instead of storing just the current state of the data in a domain, use an append-only store to record the full series of actions taken on that data. The store acts as the system of record and can be used to materialize the domain objects. This can simplify tasks in complex domains, by avoiding the need to synchronize the data model and the business domain, while improving performance, scalability, and responsiveness. It can also provide consistency for transactional data, and maintain full audit trails and history that can enable compensating actions.
+ 
+Event sourcing stores every change to an application's state as a sequence of immutable events, rather than storing just the current state. The current state can always be reconstructed by replaying the events in order, and the full history of changes is preserved. This provides a complete audit trail and makes it easier to debug how a system reached its current state.
 
 Visit the following resources to learn more:
 
 - [@article@Event Sourcing pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
-- [@feed@Explore top posts about Architecture](https://app.daily.dev/tags/architecture?ref=roadmapsh)
 - [@video@Event Sourcing Explained Using Football](https://www.youtube.com/watch?v=xPmQxYIi5fA&list=PLCl5BUbK0jXt5l18S5UNAoUc4eQ2PJDye)

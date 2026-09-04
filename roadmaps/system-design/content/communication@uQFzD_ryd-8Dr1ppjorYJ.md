@@ -1,3 +1,3 @@
 # Communication
-
-Network protocols are a key part of systems today, as no system can exist in isolation - they all need to communicate with each other. You should learn about the networking protocols such as HTTP, TCP, UDP. Also, learn about the architectural styles such as RPC, REST, GraphQL and gRPC.
+ 
+Communication in a distributed system covers the protocols and methods that different components use to exchange data with each other. The choice of communication method affects latency, reliability, and how tightly or loosely coupled the components are. Common approaches include HTTP-based APIs, remote procedure calls, and message-based protocols.

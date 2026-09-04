@@ -1,8 +1,6 @@
 # Document Store
-
-A document store is centered around documents (XML, JSON, binary, etc), where a document stores all information for a given object. Document stores provide APIs or a query language to query based on the internal structure of the document itself. Note, many key-value stores include features for working with a value's metadata, blurring the lines between these two storage types.
-
-Based on the underlying implementation, documents are organized by collections, tags, metadata, or directories. Although documents can be organized or grouped together, documents may have fields that are completely different from each other.
+ 
+A document store saves data as documents, typically in formats like JSON or BSON, where each document can have a different structure. This flexibility suits applications with evolving or irregular data shapes, since there is no need to alter a fixed schema for every change. MongoDB is a widely used example of this database type.
 
 Visit the following resources to learn more:
 

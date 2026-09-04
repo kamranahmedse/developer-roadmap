@@ -1,6 +1,6 @@
 # Compensating Transaction
-
-Undo the work performed by a series of steps, which together define an eventually consistent operation, if one or more of the steps fail. Operations that follow the eventual consistency model are commonly found in cloud-hosted applications that implement complex business processes and workflows.
+ 
+A compensating transaction undoes the effects of a previous operation when a later step in a multi-step process fails, since distributed transactions cannot always be rolled back atomically like a single database transaction. Each step in the process has a corresponding compensating action defined in advance. This keeps the overall system consistent even when a workflow cannot complete as planned.
 
 Visit the following resources to learn more:
 

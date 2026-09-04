@@ -1,21 +1,6 @@
 # Caching
-
-Caching is the process of storing frequently accessed data in a temporary storage location, called a cache, in order to quickly retrieve it without the need to query the original data source. This can improve the performance of an application by reducing the number of times a data source must be accessed.
-
-There are several caching strategies:
-
-*   Refresh Ahead
-*   Write-Behind
-*   Write-through
-*   Cache Aside
-
-Also, you can have the cache in several places, examples include:
-
-*   Client Caching
-*   CDN Caching
-*   Web Server Caching
-*   Database Caching
-*   Application Caching
+ 
+Caching stores frequently accessed data in a fast-access layer, like memory, so subsequent requests can be served without repeating expensive computations or database queries. It reduces latency and load on backend systems, but introduces the challenge of keeping cached data consistent with the source of truth. Caches can exist at multiple points in a system, from the client to the database.
 
 Visit the following resources to learn more:
 

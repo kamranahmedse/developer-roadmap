@@ -1,6 +1,6 @@
 # Bulkhead
-
-The Bulkhead pattern is a type of application design that is tolerant of failure. In a bulkhead architecture, elements of an application are isolated into pools so that if one fails, the others will continue to function. It's named after the sectioned partitions (bulkheads) of a ship's hull. If the hull of a ship is compromised, only the damaged section fills with water, which prevents the ship from sinking.
+ 
+The bulkhead pattern isolates parts of a system into separate pools of resources, so that a failure or overload in one part does not consume the resources needed by other parts. It is named after the bulkheads in a ship's hull, which prevent a leak in one compartment from sinking the whole vessel. This containment limits how far a failure can spread.
 
 Visit the following resources to learn more:
 

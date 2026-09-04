@@ -1,10 +1,6 @@
 # Availability vs Consistency
-
-Availability refers to the ability of a system to provide its services to clients even in the presence of failures. This is often measured in terms of the percentage of time that the system is up and running, also known as its uptime.
-
-Consistency, on the other hand, refers to the property that all clients see the same data at the same time. This is important for maintaining the integrity of the data stored in the system.
-
-In distributed systems, it is often a trade-off between availability and consistency. Systems that prioritize high availability may sacrifice consistency, while systems that prioritize consistency may sacrifice availability. Different distributed systems use different approaches to balance the trade-off between availability and consistency, such as using replication or consensus algorithms.
+ 
+In a distributed system, availability and consistency often pull in opposite directions when a network partition happens. A system can either keep serving requests using potentially stale data, favoring availability, or refuse to respond until all nodes agree, favoring consistency. Which one a system prioritizes depends on the use case.
 
 Visit the following resources to learn more:
 
