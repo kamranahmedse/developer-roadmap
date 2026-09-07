@@ -1,6 +1,6 @@
 # Chakra UI
 
-Chakra UI is a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.
+Chakra UI is a component library that provides accessible, ready-to-use React components along with a styling system based on style props. It focuses on accessibility and developer experience out of the box, with sensible defaults for spacing, color, and responsive design. Components can be customized through a theme configuration.
 
 Visit the following resources to learn more:
 

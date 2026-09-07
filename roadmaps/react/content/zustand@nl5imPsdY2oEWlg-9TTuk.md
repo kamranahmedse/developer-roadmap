@@ -1,13 +1,10 @@
 # Zustand
 
-Zustand is a small, fast and scalable bearbones state-management solution using simplified flux principles. Has a comfy api based on hooks, isn't boilerplatey or opinionated.
-
-Zustand is often used as an alternative to other state management libraries, such as Redux and MobX, because of its simplicity and small size. It is particularly well-suited for small to medium-sized applications, where the complexity of larger state management libraries is not required.
+Zustand is a small state management library that uses a single store defined with a simple function, without requiring reducers or actions like Redux. Components can read and update the store directly through a hook, with minimal boilerplate. Its simplicity and small bundle size make it a common choice for apps that outgrow plain Context.
 
 Visit the following resources to learn more:
 
-- [@opensource@Zustand - Official Website](https://github.com/pmndrs/zustand)
+- [@official@Zustand - Official Website](https://zustand-demo.pmnd.rs/)
 - [@opensource@Zustand Repository](https://github.com/pmndrs/zustand)
 - [@article@Working with Zustand](https://tkdodo.eu/blog/working-with-zustand)
-- [@article@Zustand - Official Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
 - [@video@Zustand Tutorial for Beginners](https://www.youtube.com/watch?v=AYO4qHAnLQI&t)

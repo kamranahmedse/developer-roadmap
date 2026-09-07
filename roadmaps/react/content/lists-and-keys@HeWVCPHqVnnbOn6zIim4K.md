@@ -1,6 +1,6 @@
 # Lists and Keys
 
-When you render lists in React, you can use the `key` prop to specify a unique key for each item. This key is used to identify which item to update when you want to update a specific item.
+Rendering a list in React usually means mapping over an array of data and returning a component for each item. React needs a unique key for each item in the list so it can track which elements changed, were added, or were removed. Without proper keys, React may re-render list items incorrectly or lose track of their state.
 
 Visit the following resources to learn more:
 

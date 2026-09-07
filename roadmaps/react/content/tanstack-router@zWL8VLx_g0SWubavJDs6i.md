@@ -1,6 +1,6 @@
 # TanStack Router
 
-TanStack Router is a powerful router for building React applications, offering a range of advanced features to streamline development.
+Tanstack Router is a routing library built with type safety in mind, generating types based on your route definitions. It supports features like nested routes, loaders for fetching data before a page renders, and search parameter validation. It is part of the same family of tools as Tanstack Query.
 
 Visit the following resources to learn more:
 

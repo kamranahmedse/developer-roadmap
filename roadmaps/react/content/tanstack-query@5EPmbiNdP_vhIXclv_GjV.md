@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@opensource@TanStack Query](https://github.com/TanStack/query)
 - [@article@TanStack for Beginners: A Complete Guide & Tutorial](https://codeparrot.ai/blogs/tanstack-for-beginners-a-complete-guide-tutorial)
 - [@video@TanStack Query - How to become a React Query God](https://www.youtube.com/watch?v=mPaCnwpFvZY)
-- [@feed@Explore top posts about React](https://app.daily.dev/tags/react?ref=roadmapsh)

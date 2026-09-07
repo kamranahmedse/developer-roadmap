@@ -1,5 +1,7 @@
 # MobX
 
+MobX is a state management library based on observable data, where changes to state automatically trigger updates in any component using that data. It relies on decorators or plain functions to mark state as observable, and React components re-render only when the specific data they use changes. It takes a more reactive, less explicit approach compared to libraries like Redux.
+
 Visit the following resources to learn more:
 
 - [@official@Official Website: MobX](https://mobx.js.org/)

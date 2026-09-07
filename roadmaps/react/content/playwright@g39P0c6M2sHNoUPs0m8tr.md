@@ -1,6 +1,6 @@
 # Playwright
 
-Playwright Test was created specifically to accommodate the needs of end-to-end testing. Playwright supports all modern rendering engines including Chromium, WebKit, and Firefox. Test on Windows, Linux, and macOS, locally or on CI, headless or headed with native mobile emulation of Google Chrome for Android and Mobile Safari.Playwright leverages the DevTools protocol to write powerful, stable automated tests.Playwright can actually see into and control the browser rather than relying on a middle translation layer, it allows for the simulation of more insightful and relevant user scenarios.
+Playwright is an end-to-end testing tool built by Microsoft that can run tests across multiple browsers, including Chromium, Firefox, and WebKit. It supports features like automatic waiting for elements and parallel test execution, which helps keep test suites fast and reliable as they grow.
 
 Visit the following resources to learn more:
 

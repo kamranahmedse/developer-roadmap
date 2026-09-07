@@ -1,6 +1,6 @@
 # Components
 
-Components are the building blocks of React applications. They let us split the UI into independent, reusable pieces, and think about each piece in isolation.
+Components are the building blocks of a React application. Each one is a piece of code, usually a function, that returns some UI and can be reused across the app. Breaking an interface into components makes the code easier to read, test, and maintain.
 
 Visit the following resources to learn more:
 
