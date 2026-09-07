@@ -1,6 +1,6 @@
 # Forms
 
-Although you can build forms using vanilla React, it normally requires a lot of boilerplate code. This is because the form is built using a combination of state and props. To make it easier to manage forms, we use some sort of library.
+Forms in React need extra handling compared to plain HTML, since input values are usually tied to component state to keep the UI in sync with user input. This includes tracking values, validating input, and showing error messages. Libraries exist to simplify this instead of writing all the state and validation logic by hand.
 
 Visit the following resources to learn more:
 

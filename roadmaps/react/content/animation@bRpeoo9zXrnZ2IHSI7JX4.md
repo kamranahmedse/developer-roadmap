@@ -1,6 +1,6 @@
 # Animation
 
-Animation in React can be achieved using various methods, such as CSS transitions, keyframes, or libraries like `react-spring`, `framer-motion`, and `GSAP` (GreenSock Animation Platform). CSS transitions are ideal for simple animations, where you can toggle classes or manipulate inline styles to create smooth transitions. For more complex and interactive animations, libraries like `react-spring` provide a declarative approach, allowing you to create animations by defining spring physics or interpolating values. `framer-motion` offers a rich API to handle complex animations, gestures, and even layout transitions with ease. `GSAP` is another powerful library that excels at creating high-performance animations, offering fine-grained control over every aspect of the animation process. These tools integrate seamlessly with React's component-driven architecture, enabling you to create responsive and dynamic user interfaces.
+React Animation allows you to change the visual state of elements over time, such as fading, sliding, or scaling them in response to user interaction or state changes. React does not include animation tools by default, so most projects rely on dedicated libraries to handle timing, easing, and transitions smoothly.
 
 Visit the following resources to learn more:
 

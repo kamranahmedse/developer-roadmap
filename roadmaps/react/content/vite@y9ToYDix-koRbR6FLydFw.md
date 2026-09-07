@@ -1,6 +1,6 @@
 # Vite
 
-Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects.
+Vite is a build tool that starts a development server almost instantly and updates the browser as soon as you save a file. It uses native ES modules during development instead of bundling everything upfront, which makes it much faster than older tools. Many React projects use Vite to scaffold a new app and handle the build process for production.
 
 Visit the following resources to learn more:
 
@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@Vite Documentation](https://vitejs.dev/guide)
 - [@video@Vite Crash Course](https://youtu.be/LQQ3CR2JTX8)
 - [@video@Vite Crash Course | Faster Alternative To CRA | 2023](https://www.youtube.com/watch?v=89NJdbYTgJ8)
-- [@feed@Explore top posts about Vite](https://app.daily.dev/tags/vite?ref=roadmapsh)

@@ -1,9 +1,6 @@
 # Events
 
-Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
-
-*   React events are named using camelCase, rather than lowercase.
-*   With JSX you pass a function as the event handler, rather than a string.
+React wraps native browser events in its own system called synthetic events, so they behave consistently across different browsers. You attach event handlers directly in JSX, such as onClick or onChange, and they receive an event object similar to the native one. This lets components respond to user interaction like clicks, typing, or form submissions.
 
 Visit the following resources to learn more:
 

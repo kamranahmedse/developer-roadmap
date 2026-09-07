@@ -1,8 +1,7 @@
 # Hooks
 
-Hooks were introduced in React 16.8 and they let us use React's features-like managing your component's state and or performing an after effect when certain changes occur in state(s) without writing a class.
+Hooks are functions that let you use React features like state and lifecycle behavior inside function components. They were introduced to avoid the need for class components when handling things like data fetching or subscriptions. Every hook name starts with "use", such as useState or useEffect, and they must be called in the same order on every render.
 
 Visit the following resources to learn more:
 
 - [@official@Hooks Reference](https://react.dev/reference/react)
-- [@feed@Explore top posts about React Hooks](https://app.daily.dev/tags/react-hooks?ref=roadmapsh)

@@ -1,6 +1,6 @@
 # Ark UI
 
-It is a modern and versatile user interface framework designed to streamline the development of responsive and accessible web applications. It provides a `comprehensive set` of components and tools that simplify the process of building user interfaces, allowing developers to focus on functionality and design. With a strong emphasis on flexibility and ease of use, Ark UI enables rapid prototyping and `scalable solutions`, ensuring a consistent and polished user experience across various devices and platforms. Its modular architecture and extensive documentation make it an excellent choice for developers looking to enhance productivity and maintain high standards in their UI design.
+Ark UI is a headless component library that provides the state and accessibility logic for common UI patterns, and works across multiple frameworks, not just React. It gives full control over markup and styling while handling the more complex interaction logic behind the scenes. It shares some underlying tooling with Panda CSS.
 
 Visit the following resources to learn more:
 

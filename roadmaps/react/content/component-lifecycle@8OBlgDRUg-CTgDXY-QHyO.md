@@ -1,8 +1,6 @@
 # Component Life Cycle
 
-React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting along with several “lifecycle methods” that you can override to run code at particular times in the process.
-
-It is not recommended to use lifecycle methods manually. Instead, use the useEffect hook with functional components.
+The component lifecycle describes the different stages a component goes through, from being created and added to the page, to updating, and finally being removed. In function components, lifecycle behavior is handled through hooks like useEffect instead of separate lifecycle methods. Knowing this lifecycle helps developers run code at the right moment, such as fetching data when a component first appears.
 
 Visit the following resources to learn more:
 
@@ -10,5 +8,3 @@ Visit the following resources to learn more:
 - [@official@Class Component](https://react.dev/reference/react/Component)
 - [@article@React component lifecycle: React lifecycle methods & hooks](https://tsh.io/blog/react-component-lifecycle-methods-vs-hooks/)
 - [@article@The React lifecycle: methods and hooks explained](https://retool.com/blog/the-react-lifecycle-methods-and-hooks-explained#react-hooks-and-the-component-lifecycle)
-- [@article@React Lifecycle: Methods & Hooks In Detail](https://www.bairesdev.com/blog/react-lifecycle-methods-hooks/)
-- [@article@lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)

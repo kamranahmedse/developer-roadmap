@@ -7,5 +7,4 @@ Visit the following resources to learn more:
 - [@official@Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks/)
 - [@article@React Hooks Best Practices: Unlocking Efficiency and Elegance](https://medium.com/womenintechnology/react-hooks-best-practices-unlocking-efficiency-and-elegance-da23f7e1418a)
 - [@article@Mastering React Hooks: Best Practices and Common Pitfalls](https://dev.to/codesensei/mastering-react-hooks-best-practices-and-common-pitfalls-3d9i)
-- [@article@React Hooks Cheat Sheet: Best Practices with Examples](https://blog.logrocket.com/react-hooks-cheat-sheet-solutions-common-problems/)
 - [@article@React Custom Hooks: Best Practices and Examples](https://utopia-insights.dev/react-custom-hooks-best-practices-and-examples/)

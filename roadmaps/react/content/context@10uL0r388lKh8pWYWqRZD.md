@@ -1,8 +1,6 @@
 # Context
 
-Context provides a way to pass data through the component tree without having to pass props down manually at every level.
-
-In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.
+Context is a built-in React feature that lets you share data across the component tree without passing it through props at every level. You create a context, provide a value at some point in the tree, and any component below can read that value with useContext. It works well for data that does not change often, like theme or authentication status, but is not designed to replace a full state management library for frequently changing data.
 
 Visit the following resources to learn more:
 

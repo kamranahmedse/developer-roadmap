@@ -1,6 +1,6 @@
 # Panda CSS
 
-Panda CSS is CSS-in-JS with build time generated styles, RSC compatible, multi-variant support, and best-in-class developer experience.
+Panda CSS is a CSS-in-JS tool that generates static CSS at build time instead of at runtime. You write styles using a type-safe API in your components, and Panda extracts and compiles them into optimized CSS files. This gives some of the developer experience of CSS-in-JS without the runtime performance cost.
 
 Visit the following resources to learn more:
 

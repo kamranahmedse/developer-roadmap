@@ -1,6 +1,6 @@
 # Formik
 
-Formik is another famous opensource form library that helps with getting values in and out of form state, validation and error messages, and handling form submissions.
+Formik is a library for building forms in React, handling values, validation, and submission through a consistent API. It uses controlled inputs, meaning form state is tracked in React state as the user types. It was one of the most popular form libraries before performance-focused alternatives like React Hook Form gained traction.
 
 Visit the following resources to learn more:
 

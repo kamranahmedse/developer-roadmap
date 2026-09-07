@@ -1,8 +1,6 @@
 # Jotai
 
-Jotai takes an atomic approach to global React state management.
-
-Build state by combining atoms and renders are automatically optimized based on atom dependency. This solves the extra re-render issue of React context, eliminates the need for memoization, and provides a similar developer experience to signals while maintaining a declarative programming model.
+Jotai is a state management library built around small, independent units of state called atoms. Instead of one large central store, you create atoms as needed and combine them however you like. It fits well with React's component model, since components only subscribe to the atoms they actually use.
 
 Visit the following resources to learn more:
 

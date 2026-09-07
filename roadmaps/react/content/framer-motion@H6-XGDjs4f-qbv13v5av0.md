@@ -1,8 +1,6 @@
 # Framer Motion
 
-Framer Motion is a popular open-source motion library for React that allows developers to create sophisticated animations and interactions with ease. It is designed to be simple to use yet powerful, providing a rich set of tools to animate elements in a declarative way.
-
-It powers the amazing animations and interactions in Framer, the web builder for creative pros. Zero code, maximum speed.
+Framer Motion is an animation library for React that lets you animate components with simple props, such as defining an initial state, an animate state, and a transition. It supports gestures, layout animations, and page transitions, and integrates naturally with React's component model.
 
 Visit the following resources to learn more:
 

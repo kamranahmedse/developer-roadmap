@@ -1,6 +1,6 @@
 # Routing
 
-Routing is an essential concept in Single Page Applications (SPA). When your application is divided into separated logical sections, and all of them are under their own URL, your users can easily share links among each other.
+A router in React handles navigation between different views or pages without reloading the whole browser page. It matches the current URL to a specific component and renders it, giving the app the feel of multiple pages while staying a single-page application. Several libraries exist to add this functionality, since React itself does not include routing.
 
 Visit the following resources to learn more:
 

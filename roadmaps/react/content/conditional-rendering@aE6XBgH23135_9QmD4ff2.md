@@ -1,8 +1,6 @@
 # Conditional Rendering
 
-In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
-
-Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like [if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) or the [conditional operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) to create elements representing the current state, and let React update the UI to match them.
+Conditional rendering means showing different UI depending on a condition, such as whether a user is logged in or a list is empty. In React, this is often done with plain JavaScript, using if statements, ternary operators, or logical AND. There is no special syntax for it since JSX already works with normal JavaScript expressions.
 
 Visit the following resources to learn more:
 

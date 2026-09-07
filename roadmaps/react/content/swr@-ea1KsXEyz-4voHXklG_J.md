@@ -1,12 +1,7 @@
 # SWR
 
-SWR is a React Hooks library for data fetching.
-
-The name “SWR” is derived from stale-while-revalidate, a cache invalidation strategy popularized by HTTP RFC 5861. SWR first returns the data from cache (stale), then sends the request (revalidate), and finally comes with the up-to-date data again.
-
-With just one hook, you can significantly simplify the data fetching logic in your project.
+SWR is a data fetching library for React whose name comes from "stale-while-revalidate", a caching strategy where old data is shown immediately while fresh data loads in the background. It handles caching, revalidation, and re-fetching on focus or network reconnect with minimal setup. It was built by the team behind Next.js.
 
 Visit the following resources to learn more:
 
 - [@article@SWR: React Hooks for Data Fetching](https://swr.vercel.app/)
-- [@feed@Explore top posts about Next.js](https://app.daily.dev/tags/nextjs?ref=roadmapsh)

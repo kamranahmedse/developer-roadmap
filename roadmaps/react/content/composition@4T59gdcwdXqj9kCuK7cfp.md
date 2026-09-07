@@ -1,6 +1,6 @@
 # Composition vs Inheritance
 
-React has a powerful composition model, and it is recommended to use composition instead of inheritance to reuse code between components.
+Composition means building complex components by combining smaller, simpler ones. Instead of relying on inheritance, React encourages passing components as props or nesting them as children to reuse logic and layout. This keeps components flexible and easier to reason about compared to sharing code through class hierarchies.
 
 Visit the following resources to learn more:
 

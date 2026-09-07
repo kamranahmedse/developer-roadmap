@@ -1,8 +1,6 @@
 # Render Props
 
-The term 'render props' refers to a technique for sharing code between React components using a prop whose value is a function.
-
-A component with a render prop takes a function that returns a React element and calls it instead of implementing its own render logic.
+A render prop is a pattern where a component takes a function as a prop and calls it to decide what to render. This allows the component to share logic with whatever gets rendered, without dictating the exact UI. It was common before hooks existed, and hooks now cover many of the same use cases in a simpler way.
 
 Visit the following resources to learn more:
 
