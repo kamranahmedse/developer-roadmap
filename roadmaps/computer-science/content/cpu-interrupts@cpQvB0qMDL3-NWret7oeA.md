@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@System Interrupts 100% CPU](https://www.wikihow.com/System-Interrupts-100-Cpu)
 - [@video@Interrupts](https://youtu.be/iKlAWIKEyuw)
-- [@feed@Explore top posts about Computing](https://app.daily.dev/tags/computing?ref=roadmapsh)

@@ -1,6 +1,6 @@
 # Sequence Diagrams
 
-Sequence diagrams are a way to show how objects or systems interact with each other over time.
+A sequence diagram shows how objects interact with each other over time by depicting the order in which messages are sent between them. It is commonly used to visualize the flow of a specific scenario, like a user login process, across multiple components.
 
 Visit the following resources to learn more:
 

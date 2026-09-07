@@ -1,6 +1,6 @@
 # Balanced Tree
 
-A balanced binary tree, also referred to as a height-balanced binary tree, is defined as a binary tree in which the height of the left and right subtree of any node differ by not more than 1.
+A balanced tree keeps the height difference between subtrees small, typically bounded by a constant, so no path from root to leaf is much longer than another. This guarantees that operations like search, insert, and delete stay close to O(log n) regardless of insertion order. AVL trees and red-black trees are common implementations that enforce balance automatically.
 
 Visit the following resources to learn more:
 

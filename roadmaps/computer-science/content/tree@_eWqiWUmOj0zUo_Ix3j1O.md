@@ -1,6 +1,6 @@
 # Tree
 
-A tree is non-linear and a hierarchical data structure consisting of a collection of nodes such that each node of the tree stores a value and a list of references to other nodes (the “children”).
+A tree is a hierarchical data structure made of nodes connected by edges, with one node designated as the root and every other node reachable from it through exactly one path. Each node can have child nodes, and nodes with no children are called leaves. Trees are used to represent hierarchical relationships and support efficient searching, insertion, and deletion when balanced.
 
 Visit the following resources to learn more:
 

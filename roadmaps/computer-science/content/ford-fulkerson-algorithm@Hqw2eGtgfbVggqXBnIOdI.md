@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@article@Ford-Fulkerson Algorithm](https://www.programiz.com/dsa/ford-fulkerson-algorithm)
 - [@video@Ford-Fulkerson in 5 minutes](https://www.youtube.com/watch?v=Tl90tNtKvxs)
-- [@feed@Explore top posts about Data Science](https://app.daily.dev/tags/data-science?ref=roadmapsh)

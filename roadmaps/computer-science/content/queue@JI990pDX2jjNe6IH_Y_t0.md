@@ -1,6 +1,6 @@
 # Queue
 
-Queue is a linear collection of items where items are inserted and removed in a particular order. The queue is also called a FIFO Data Structure because it follows the "First In, First Out" principle i.e., the item that is inserted in the first is the one that is taken out first.
+A queue is a data structure that processes elements in the order they arrived, following a first-in, first-out (FIFO) rule. New elements are added at the back and removed from the front. Queues are used for task scheduling, handling requests in order, and breadth-first traversal of trees and graphs.
 
 Visit the following resources to learn more:
 

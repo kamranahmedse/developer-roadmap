@@ -5,4 +5,3 @@ The CPU executes programs by repeatedly fetching instructions from memory, decod
 Visit the following resources to learn more:
 
 - [@video@How CPU Executes a Program](https://www.youtube.com/watch?v=XM4lGflQFvA)
-- [@feed@Explore top posts about Computing](https://app.daily.dev/tags/computing?ref=roadmapsh)

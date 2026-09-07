@@ -1,6 +1,6 @@
 # Combinatorics
 
-Combinatorics is the study of counting. It is a branch of mathematics that is used to solve problems in a variety of fields, including computer science, statistics, and physics. In computer science, combinatorics is used to solve problems related to counting the number of possible outcomes of a given problem. For example, if you are given a set of 10 objects, how many different ways can you arrange them? Or, if you are given a set of 10 objects, how many different ways can you choose 3 objects from that set? These are examples of combinatorial problems.
+Combinatorics is the branch of math concerned with counting, arranging, and combining objects according to given rules, covering concepts like permutations and combinations. It is used in algorithm analysis to count the number of possible states or configurations a problem can have, which often determines the feasibility of a brute-force approach.
 
 Visit the following resources to learn more:
 

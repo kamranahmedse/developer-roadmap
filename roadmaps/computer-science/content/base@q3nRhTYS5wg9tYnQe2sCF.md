@@ -1,10 +1,6 @@
 # BASE Model
 
-The rise in popularity of NoSQL databases provided flexibility and fluidity in manipulating data, and as a result a new database model was designed that reflects these properties. The acronym BASE is slightly more confusing than ACID; however, the words behind it highlight how the BASE model differs. BASE stands for:
-
-*   **B**asically **A**vailable
-*   **S**oft state
-*   **E**ventual consistency
+BASE describes an alternative to the ACID model used by many distributed and NoSQL databases, standing for basically available, soft state, and eventually consistent. It favors availability and scalability over the strict consistency guarantees of ACID, accepting that data may be temporarily inconsistent across nodes before converging.
 
 Visit the following resources to learn more:
 

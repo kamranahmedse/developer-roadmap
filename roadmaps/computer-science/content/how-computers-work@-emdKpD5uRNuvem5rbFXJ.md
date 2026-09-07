@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@video@How Computers Calculate - ALU](https://youtu.be/1I5ZMmrOfnA)
 - [@video@Registers and RAM](https://youtu.be/fpnE6UAfbtU)
 - [@video@The Central Processing Unit (CPU)](https://youtu.be/FZGugFqdr60)
-- [@video@Instructions and Programs](https://youtu.be/zltgXvg6r3k)

@@ -1,6 +1,6 @@
 # Constant
 
-Constant time algorithms are the simplest and most efficient algorithms. They are algorithms that always take the same amount of time to run, regardless of the size of the input. This is the best case scenario for an algorithm, and is the goal of all algorithms.
+Constant time, written O(1), means an operation takes the same amount of time regardless of input size. Accessing an array element by index or reading a value from a hash table are typical examples, since neither depends on how much data the structure holds.
 
 Visit the following resources to learn more:
 
