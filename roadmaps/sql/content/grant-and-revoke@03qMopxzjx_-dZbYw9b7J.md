@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [@article@GRANT](https://www.ibm.com/docs/en/qmf/12.2.0?topic=privileges-sql-grant-statement)
-- [@article@REVOKE](https://www.ibm.com/docs/en/qmf/12.2.0?topic=privileges-sql-revoke-statement)
+- [@article@GRANT](https://www.ibm.com/docs/en/qmf/13.1.3?topic=SS9UMF_13.1.3/igm/igm/tpc/dsq_priv_sql_grant.htm)
+- [@article@REVOKE](https://www.ibm.com/docs/en/qmf/13.1.3?topic=SS9UMF_13.1.3/igm/igm/tpc/dsq_priv_sql_revoke.htm)
