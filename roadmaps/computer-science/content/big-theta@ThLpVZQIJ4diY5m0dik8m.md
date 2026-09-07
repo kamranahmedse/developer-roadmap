@@ -1,6 +1,6 @@
 # Big Theta Notation
 
-If a function has the same Big O and Big Omega, they also become the function's Big Theta. Big Theta is used to describe the exact growth rate of a function. It is denoted by the symbol Θ.
+Big-Theta (Θ) notation describes a tight bound on an algorithm's growth rate, meaning the algorithm's running time grows at the same rate as the given function in both the best and worst case. It gives the most precise asymptotic description when an algorithm's upper and lower bounds match.
 
 Visit the following resources to learn more:
 

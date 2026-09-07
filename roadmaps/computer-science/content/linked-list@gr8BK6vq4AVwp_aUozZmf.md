@@ -6,10 +6,5 @@ Visit the following resources to learn more:
 
 - [@course@Singly Linked Lists](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
 - [@course@Core: Linked Lists vs Arrays](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
-- [@course@In the Real World: Linked Lists vs Arrays](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
-- [@course@Doubly Linked Lists](https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD)
 - [@video@Linked List Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=odW9FU8jPRQ)
 - [@video@Linked Lists in 4 minutes](https://www.youtube.com/watch?v=F8AbOfQwl1c)
-- [@video@CS 61B Lecture 7: Linked Lists I](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
-- [@video@CS 61B Lecture 7: Linked Lists II](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
-- [@video@Why you should avoid Linked Lists?](https://www.youtube.com/watch?v=YQs6IC-vgmo)

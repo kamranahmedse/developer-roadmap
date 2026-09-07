@@ -1,6 +1,6 @@
 # Big Omega Notation
 
-The Big Omega notation is similar to the Big O notation. The only difference is that it denotes the lower bound on the growth rate of a function.
+Big Omega (Ω) notation describes a lower bound on an algorithm's growth rate, meaning the algorithm will take at least this much time or space in the best case. It is used to express the minimum amount of work an algorithm is guaranteed to do for a given input size.
 
 Visit the following resources to learn more:
 

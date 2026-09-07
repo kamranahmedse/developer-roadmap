@@ -1,10 +1,6 @@
 # gRPC
 
-gRPC is a platform agnostic serialization protocol that is used to communicate between services. Designed by Google in 2015, it is a modern alternative to REST APIs. It is a binary protocol that uses HTTP/2 as a transport layer. It is a high performance, open source, general-purpose RPC framework that puts mobile and HTTP/2 first.
-
-It's main use case is for communication between two different languages within the same application. You can use Python to communicate with Go, or Java to communicate with C#.
-
-gRPC uses the protocol buffer language to define the structure of the data that is
+gRPC is a remote procedure call framework that lets a client call methods on a server as if they were local function calls, using Protocol Buffers for efficient binary serialization. It runs over HTTP/2, which enables features like multiplexed streaming, and is commonly used for fast communication between internal microservices.
 
 Visit the following resources to learn more:
 
@@ -12,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@gRPC Introduction](https://grpc.io/docs/what-is-grpc/introduction/)
 - [@official@gRPC Core Concepts](https://grpc.io/docs/what-is-grpc/core-concepts/)
 - [@video@Stephane Maarek - gRPC Introduction](https://youtu.be/XRXTsQwyZSU)
-- [@feed@Explore top posts about gRPC](https://app.daily.dev/tags/grpc?ref=roadmapsh)

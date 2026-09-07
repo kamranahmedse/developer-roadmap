@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@opensource@Design Patterns for Humans](https://github.com/nilbuild/design-patterns-for-humans)
 - [@article@Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
 - [@article@Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns/)
-- [@feed@Explore top posts about Design Patterns](https://app.daily.dev/tags/design-patterns?ref=roadmapsh)

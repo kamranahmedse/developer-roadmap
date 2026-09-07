@@ -1,27 +1,6 @@
 # Factorial
 
-Factorial complexity algorithms have a runtime of `O(n!)`. This is the worst case scenario for an algorithm. Factorial complexity algorithms are very inefficient and should be avoided.
-
-    def generate_permutations(s):
-        # Base case: If the string length is 1, return a list containing the string
-        if len(s) == 1:
-            return [s]
-    
-        # Initialize the result list
-        permutations = []
-    
-        # Recursively generate all permutations
-        for i in range(len(s)):
-            # Current character
-            current_char = s[i]
-            # Remaining characters
-            remaining_chars = s[:i] + s[i + 1 :]
-            # Generate all permutations of the remaining characters
-            for perm in generate_permutations(remaining_chars):
-                # Add the current character to the front of each generated permutation
-                permutations.append(current_char + perm)
-    
-        return permutations
+Factorial time, written O(n!), means the work grows by the factorial of the input size, making it impractical for anything but very small inputs. Algorithms that generate every possible permutation of a set, like a brute-force solution to the traveling salesman problem, run in factorial time.
 
 Visit the following resources to learn more:
 

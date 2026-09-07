@@ -1,6 +1,6 @@
 # How Computers Calculate?
 
-Computers calculate using the binary system, where all data is represented as 0s and 1s. These binary states correspond to the ON/OFF positions of transistors, which are the building blocks of logic gates (AND, OR, NOT). Numbers, characters, and instructions are broken into binary sequences (bits), and grouped into bytes (8 bits). Arithmetic operations like addition are performed through logic gates, which combine binary values. The CPU executes these calculations by following a fetch-decode-execute cycle. Complex calculations, such as handling decimals, use floating-point representation. Programs written in high-level languages are compiled into machine code for the CPU to execute.
+Computers perform calculations by representing numbers in binary and manipulating them using logic gates built from transistors, which implement operations like addition through circuits called adders. Complex operations, like multiplication or floating point math, are built up from combinations of these basic binary operations at the hardware level.
 
 Visit the following resources to learn more:
 

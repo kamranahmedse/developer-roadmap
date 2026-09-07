@@ -1,10 +1,6 @@
 # Lock / Mutex / Semaphore
 
-A lock allows only one thread to enter the part that's locked and the lock is not shared with any other processes.
-
-A mutex is the same as a lock but it can be system wide (shared by multiple processes).
-
-A semaphore does the same as a mutex but allows x number of threads to enter, this can be used for example to limit the number of cpu, io or ram intensive tasks running at the same time.
+A lock or mutex ensures that only one thread can access a shared resource at a time, preventing race conditions when multiple threads read and write the same data. A semaphore is a more general version that allows a set number of threads to access a resource concurrently, using a counter instead of a simple locked or unlocked state.
 
 Visit the following resources to learn more:
 

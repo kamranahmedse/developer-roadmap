@@ -1,6 +1,6 @@
 # Longest Path Problem
 
-Longest path problem is a problem that asks us to find the longest path in a graph.
+The Longest Path Problem asks for the longest simple path between two vertices in a graph, one that does not repeat any vertex. Unlike the shortest path problem, which has efficient algorithms, finding the longest path is NP-hard in general graphs, though it becomes solvable in polynomial time for special cases like directed acyclic graphs.
 
 Visit the following resources to learn more:
 

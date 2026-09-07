@@ -1,6 +1,6 @@
 # P
 
-The P in the P class stands for Polynomial Time. It is the collection of decision problems(problems with a “yes” or “no” answer) that can be solved by a deterministic machine in polynomial time.
+P is the complexity class of decision problems that can be solved by a deterministic algorithm in polynomial time. Problems in P are generally considered efficiently solvable, forming the baseline against which harder complexity classes are compared.
 
 Visit the following resources to learn more:
 
@@ -8,5 +8,3 @@ Visit the following resources to learn more:
 - [@video@Complexity: P, NP, NP-completeness, Reductions](https://www.youtube.com/watch?v=eHZifpgyH_4&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=22)
 - [@video@Complexity: Approximation Algorithms](https://www.youtube.com/watch?v=MEz1J9wY2iM&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=24)
 - [@video@Complexity: Fixed-Parameter Algorithms](https://www.youtube.com/watch?v=4q-jmGrmxKs&index=25&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
-- [@video@Lecture 23: Computational Complexity](https://www.youtube.com/watch?v=moPtwq_cVH8&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=24)
-- [@video@Greedy Algs. II & Intro to NP Completeness](https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=2939)

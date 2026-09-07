@@ -1,6 +1,6 @@
 # Full Binary Tree
 
-A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children. It is also known as a proper binary tree.
+A full binary tree is a binary tree where every node has either zero or two children, never just one. This property is used in some algorithm proofs and data structures, like certain heap implementations, where a strict shape simplifies reasoning about node counts and depth.
 
 Visit the following resources to learn more:
 

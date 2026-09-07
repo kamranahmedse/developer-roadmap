@@ -1,11 +1,6 @@
 # Knuth Morris Pratt
 
-Knuth morris pratt is a string searching algorithm that uses a precomputed array to find the substring in a string. This array is known as the prefix function. The prefix function is the longest prefix that is also a suffix of a substring. The prefix function is used to skip the characters that are already matched. The algorithm is as follows:
-
-*   Compute the prefix function of the substring.
-*   Traverse through the string and substring simultaneously.
-*   If the characters match, increment the index of both the string and substring.
-*   If the characters don't match, increment the index of the string by the value of the prefix function at the index of the substring.
+The Knuth-Morris-Pratt (KMP) algorithm searches for a pattern in text by preprocessing the pattern into a table that tracks the longest proper prefix that is also a suffix. This lets the algorithm skip re-checking characters it has already matched when a mismatch occurs, giving it O(n + m) time complexity.
 
 Visit the following resources to learn more:
 

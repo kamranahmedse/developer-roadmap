@@ -1,6 +1,6 @@
 # Unbalanced Tree
 
-An unbalanced binary tree is one that is not balanced.
+An unbalanced tree has subtrees of very different heights, which can happen when data is inserted in a sorted or near-sorted order into a plain binary search tree. In the worst case, the tree degenerates into something resembling a linked list, and operations that should take O(log n) instead take O(n). Self-balancing tree variants exist specifically to prevent this.
 
 Visit the following resources to learn more:
 

@@ -1,8 +1,6 @@
 # Normalization vs Denormalization
 
-Database normalization is a process used to organize a database into tables and columns. The idea is that a table should be about a specific topic and that only those columns which support that topic are included. This limits the number of duplicate data contained within your database. This makes the database more flexible by eliminating issues stemming from database modifications.
-
-Denormalization is the opposite of normalization. It is the process of adding redundant data to a database to improve read performance. This is done by adding duplicate data into multiple tables to avoid expensive joins. This is done at the expense of increased storage and decreased write performance.
+Normalization organizes a database schema to reduce data redundancy by splitting data into related tables, following a set of normal forms. Denormalization does the opposite, intentionally duplicating data across tables to reduce the number of joins needed for common queries, trading storage and update complexity for faster reads.
 
 Visit the following resources to learn more:
 

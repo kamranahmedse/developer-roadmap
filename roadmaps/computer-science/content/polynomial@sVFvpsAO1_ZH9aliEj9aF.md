@@ -1,11 +1,6 @@
 # Polynomial
 
-Polynomial algorithms are algorithms that have a runtime that is a polynomial function of the input size. This means that the runtime is a function of the form `n^k` where `k` is a constant. For example, the runtime of the following algorithm is `n^2`:
-
-    def polynomial_algorithm(n):
-        for i in range(n):
-            for j in range(n):
-                print(i, j)
+Polynomial time means an algorithm's running time can be expressed as n raised to some fixed power, such as O(n²) or O(n³). Problems solvable in polynomial time are generally considered tractable in complexity theory, forming the basis of the complexity class P.
 
 Visit the following resources to learn more:
 

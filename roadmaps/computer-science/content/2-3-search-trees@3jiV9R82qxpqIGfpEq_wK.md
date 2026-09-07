@@ -1,8 +1,6 @@
 # 2-3 Search Trees
 
-In practice: 2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees).
-
-You would use 2-3 tree very rarely because its implementation involves different types of nodes. Instead, people use Red Black trees.
+In practice: 2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees). You would use 2-3 tree very rarely because its implementation involves different types of nodes. Instead, people use Red Black trees.
 
 Visit the following resources to learn more:
 

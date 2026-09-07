@@ -1,6 +1,6 @@
 # Character Encodings
 
-Character encodings are a way of representing characters as numbers. They are used to store and transmit text. The most common character encoding is ASCII, which is a 7-bit encoding. This means that each character is represented by a number between 0 and 127. The ASCII character set contains 128 characters, including letters, numbers, punctuation, and control characters. The ASCII character set is a subset of the Unicode character set, which is a 16-bit encoding. Unicode is a superset of ASCII, so ASCII characters can be represented by Unicode. Unicode is the most common character encoding used on the web.
+A character encoding maps characters, like letters, digits, and symbols, to numeric values that a computer can store and process as bytes. Different encodings can represent different sets of characters and use different numbers of bytes per character, which is why text can display as garbled symbols when read with the wrong encoding.
 
 Visit the following resources to learn more:
 

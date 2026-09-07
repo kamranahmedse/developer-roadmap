@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@GraphQL](https://graphql.org/)
 - [@official@GraphQL Documentation](https://graphql.org/learn/)
 - [@article@Apollo GraphQL Tutorials](https://www.apollographql.com/tutorials/)
-- [@feed@Explore top posts about GraphQL](https://app.daily.dev/tags/graphql?ref=roadmapsh)

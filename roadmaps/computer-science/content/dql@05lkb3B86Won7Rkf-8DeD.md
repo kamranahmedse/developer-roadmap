@@ -1,6 +1,6 @@
 # DQL (Data Query Language)
 
-DQL statements are used for performing queries on the data within schema objects. The purpose of the DQL Command is to get some schema relation based on the query passed to it. We can define DQL as follows it is a component of SQL statement that allows getting data from the database and imposing order upon it. It includes the SELECT statement. This command allows getting the data out of the database to perform operations with it. When a SELECT is fired against a table or tables the result is compiled into a further temporary table, which is displayed or perhaps received by the program i.e. a front-end.
+DQL (Data Query Language) is the subset of SQL used to retrieve data from a database, primarily through the SELECT statement. It is used to read and filter existing data without modifying it.
 
 Visit the following resources to learn more:
 

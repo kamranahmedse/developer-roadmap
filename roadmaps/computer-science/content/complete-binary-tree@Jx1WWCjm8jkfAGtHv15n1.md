@@ -1,6 +1,6 @@
 # Complete Binary Tree
 
-A complete binary tree is a special type of binary tree where all the levels of the tree are filled completely except the lowest level nodes which are filled from as left as possible.
+A complete binary tree fills every level from left to right, with all levels full except possibly the last, which is filled from the left. This shape allows the tree to be stored efficiently in an array, since a node's children can be found using simple index arithmetic instead of pointers. Binary heaps are usually implemented as complete binary trees for this reason.
 
 Visit the following resources to learn more:
 

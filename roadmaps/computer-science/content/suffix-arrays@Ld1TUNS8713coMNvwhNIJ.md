@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@article@Suffix Arrays - Princeton University](https://algs4.cs.princeton.edu/63suffix/)
 - [@video@Suffix Array Introduction](https://www.youtube.com/watch?v=zqKlL3ZpTqs)
 - [@video@Advanced Data Structures: Suffix Arrays](https://www.youtube.com/watch?v=IzMxbboPcqQ)
-- [@video@Suffix Arrays: building](https://www.youtube.com/watch?v=ZWlbhBjjwyA)
