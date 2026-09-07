@@ -4,5 +4,4 @@ React Native is a popular framework for developing native mobile applications us
 
 Visit the following resources to learn more:
 
-- [@article@Why You Should Choose React Native?](https://www.geeksforgeeks.org/why-you-should-choose-react-native/)
 - [@article@React Native: What is it? and, Why is it used?](https://medium.com/@thinkwik/react-native-what-is-it-and-why-is-it-used-b132c3581df)

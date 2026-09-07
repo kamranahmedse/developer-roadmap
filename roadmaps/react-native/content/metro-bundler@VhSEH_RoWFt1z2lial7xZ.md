@@ -4,4 +4,5 @@ Metro Bundler is the default bundler for React Native applications. It's a JavaS
 
 Visit the following resources to learn more:
 
-- [@official@Metro Bundler](https://facebook.github.io/metro/)
+- [@official@Metro Bundler](https://metrobundler.dev/)
+- [@official@Metro in React Native](https://reactnative.dev/docs/metro)

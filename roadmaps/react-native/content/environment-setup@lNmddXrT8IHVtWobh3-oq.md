@@ -10,9 +10,10 @@ Expo CLI is a command-line tool built for creating and managing React Native pro
 React Native CLI
 ----------------
 
-React Native CLI is the official command-line interface for building native mobile apps using React Native. This method requires you to manually set up the native development environment and tools needed for iOS and Android app development.
+The React Native Community CLI (`@react-native-community/cli`) lets you start a project without a framework. This method requires you to manually set up the native development environment and tools needed for iOS and Android app development.
 
 Visit the following resources to learn more:
 
-- [@official@React Native CLI](https://reactnative.dev/docs/environment-setup?guide=native)
-- [@official@Expo CLI Quickstart](https://docs.expo.dev/get-started/create-a-project)
+- [@official@Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment)
+- [@official@Get Started Without a Framework](https://reactnative.dev/docs/getting-started-without-a-framework)
+- [@official@Create a project with Expo](https://docs.expo.dev/get-started/create-a-project/)
