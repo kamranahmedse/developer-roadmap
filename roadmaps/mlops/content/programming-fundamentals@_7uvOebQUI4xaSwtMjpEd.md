@@ -1,3 +1,3 @@
 # Programming Fundamentals
-
-ML programming fundamentals encompass the essential skills and concepts needed to develop machine learning models effectively. Key aspects include understanding data structures and algorithms, as well as proficiency in programming languages commonly used in ML, such as Python and R. Familiarity with libraries and frameworks like TensorFlow, PyTorch, and scikit-learn is crucial for implementing machine learning algorithms and building models. Additionally, concepts such as data preprocessing, feature engineering, model evaluation, and hyperparameter tuning are vital for optimizing performance. A solid grasp of statistics and linear algebra is also important, as these mathematical foundations underpin many ML techniques, enabling practitioners to analyze data and interpret model results accurately.
+ 
+Programming fundamentals are the basic concepts needed to write and understand code, such as variables, loops, functions, and data structures. These concepts apply across languages and form the base for writing scripts, building pipelines, and automating tasks. Without them, working with any ML or data tool becomes much harder.
