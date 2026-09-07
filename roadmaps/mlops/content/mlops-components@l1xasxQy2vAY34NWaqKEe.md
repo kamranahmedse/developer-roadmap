@@ -1,6 +1,6 @@
 # MLOps Components
-
-MLOps components can be broadly classified into three major categories: Development, Operations and Governance. The **Development** components include everything involved in the creation of machine learning models, such as data extraction, data analysis, feature engineering, and machine learning model training. The **Operations** category includes components involved in deploying, monitoring, and maintaining machine learning models in production. This may include release management, model serving, and performance monitoring. Lastly, the **Governance** category encompasses the policies and regulations related to machine learning models. This includes model audit and tracking, model explainability, and security & compliance regulations.
+ 
+MLOps components are the building blocks that together form a working ML pipeline. These usually include version control, CI/CD, orchestration, experiment tracking, data lineage, model training and serving, and monitoring. Each component handles a different part of the lifecycle, and combining them lets teams move a model from an idea to a stable production system.
 
 Visit the following resources to learn more:
 

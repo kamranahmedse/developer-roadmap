@@ -1,6 +1,6 @@
 # Data Engineering Fundamentals
-
-Data Engineering is essentially dealing with the collection, validation, storage, transformation, and processing of data. The objective is to provide reliable, efficient, and scalable data pipelines and infrastructure that allow data scientists to convert data into actionable insights. It involves steps like data ingestion, data storage, data processing, and data provisioning. Important concepts include designing, building, and maintaining data architecture, databases, processing systems, and large-scale processing systems. It is crucial to have extensive technical knowledge in various tools and programming languages like SQL, Python, Hadoop, and more.
+ 
+Data engineering fundamentals cover how data is collected, stored, and moved so it can be used for analysis or model training. This includes designing pipelines that pull data from various sources, clean it, and load it into a place where it can be accessed reliably. Good data engineering practices make sure ML models are trained on accurate and up-to-date data.
 
 Visit the following resources to learn more:
 

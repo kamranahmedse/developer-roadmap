@@ -1,6 +1,6 @@
 # CI/CD
-
-CI/CD, which stands for Continuous Integration and Continuous Delivery/Deployment, is a software development practice that automates the process of building, testing, and deploying code changes. Continuous Integration focuses on frequently merging code changes into a central repository, followed by automated builds and tests. Continuous Delivery/Deployment then automates the release of these validated code changes to a staging or production environment.
+ 
+CI/CD stands for Continuous Integration and Continuous Delivery, a practice of automatically testing and shipping code changes. In an ML context, CI/CD pipelines also test data quality, validate model performance, and automate retraining or redeployment when new code or data arrives. This reduces manual steps and helps catch broken models before they go live.
 
 Visit the following resources to learn more:
 

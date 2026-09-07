@@ -1,6 +1,6 @@
-# Model Training and Serving
-
-Model Training refers to the phase in the Machine Learning (ML) pipeline where we teach a machine learning model how to make predictions by providing it with data. This process begins with feeding the model a training dataset, which it uses to learn and understand patterns or perform computations. The model's performance is then evaluated by comparing its prediction outputs with the actual results. Various algorithms can be used in the model training process. The choice of algorithm usually depends on the task, the data available, and the requirements of the project. It is worth noting that the model training stage can be computationally expensive, particularly when dealing with large datasets or complex models.
+# Model Training & Serving
+ 
+Model training is the process of teaching a machine learning model to make predictions using data, while serving is making that trained model available to handle real requests. Serving usually involves wrapping the model in an API so applications can send input and get predictions back. Together they cover the step where a model moves from a notebook experiment to something an application can actually use.
 
 Visit the following resources to learn more:
 
