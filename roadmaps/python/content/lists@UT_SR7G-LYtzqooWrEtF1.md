@@ -6,5 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@Python Official Documentation on Listsc](https://docs.python.org/3/tutorial/introduction.html#lists)
 - [@article@Python for Beginners: Lists](https://thenewstack.io/python-for-beginners-lists/)
-- [@article@Python for Beginners: When and How to Use Tuples](https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/)
+- [@article@Python Remove from List: Full Guide + Examples](https://roadmap.sh/python/remove-item-from-list)
 - [@video@Difference Between List, Tuple, Set and Dictionary in Python](https://www.youtube.com/watch?v=n0krwG38SHI)
