@@ -5,4 +5,5 @@ Lists are ordered, mutable sequences that can hold elements of any type. They ar
 Visit the following resources to learn more:
 
 - [@official@List](https://docs.python.org/3/tutorial/datastructures.html)
+- [@article@Python Remove from List: Full Guide + Examples](https://roadmap.sh/python/remove-item-from-list)
 - [@video@How to Use Lists in Python](https://www.youtube.com/watch?v=9OeznAkyQz4)
