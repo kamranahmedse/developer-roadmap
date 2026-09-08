@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@What Is Cloud Security? - Google Cloud](https://cloud.google.com/learn/what-is-cloud-security)
 - [@article@Cloud Security](https://www.checkpoint.com/cyber-hub/cloud-security/what-is-cloud-security/)
+- [@course@Cloud Security Labs: S3, IAM, Metadata, Containers](https://ransomleak.com/catalogue/cloud-security/)
 - [@video@What is cloud security](https://www.youtube.com/watch?v=jI8IKpjiCSM)

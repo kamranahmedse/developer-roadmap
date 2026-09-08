@@ -6,5 +6,6 @@ Visit the following resources to learn more:
 
 - [@article@How to Recognize and Avoid Phishing Scams](https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams)
 - [@article@Recognize and Report Phishing](https://www.cisa.gov/secure-our-world/recognize-and-report-phishing)
+- [@course@Phishing: Hands-on Exercise in a Simulated Inbox](https://ransomleak.com/exercises/phishing/)
 - [@video@Protect yourself from phishing](https://support.microsoft.com/en-us/windows/protect-yourself-from-phishing-0c7ea947-ba98-3bd9-7184-430e1f860a44)
 - [@video@Phishing attacks are SCARY easy to do!! (let me show you!)](https://www.youtube.com/watch?v=u9dBGWVwMMA)
