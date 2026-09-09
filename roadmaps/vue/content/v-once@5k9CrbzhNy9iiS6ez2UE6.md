@@ -1,22 +1,6 @@
 # v-once
 
-The `v-once` directive makes an HTML element render only once, skipping every future update.
-
-## Example
-
-```html
-<script setup>
-  import { ref } from 'vue';
-  const input = ref("Some Text");
-</script>
-
-<template>
-  <input v-model="input">
-  <p v-once>{{ input }}</p>
-</template>
-```
-
-In this example the **p** element will not change its text even if the input variable is changed through the **input** element.
+v-once is a built-in directive used to render an element or component only once and skip future updates during subsequent re-renders. Once the initial content is rendered, the data bindings are removed, meaning any changes to the associated data will not trigger updates to that specific part of the DOM. This can be useful for optimizing performance when dealing with static content that does not need to change after the initial load.
 
 Visit the following resources to learn more:
 

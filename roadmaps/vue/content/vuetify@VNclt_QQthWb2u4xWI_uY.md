@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [@official@Vuetify Website](https://vuetifyjs.com/en/)
 - [@official@Getting Started with Vuetify](https://vuetifyjs.com/en/getting-started/installation/)
-- [@feed@Explore top posts about Vue.js](https://app.daily.dev/tags/vuejs?ref=roadmapsh)
 - [@video@Vuetify: Create an App with Vue JS - in 30 MINUTES!](https://www.youtube.com/watch?v=CjXgoYo86yY)

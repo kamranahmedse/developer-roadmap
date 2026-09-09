@@ -1,21 +1,6 @@
 # v-pre
 
-The `v-pre` directive makes an element render its content as-is, skipping its compilation. The most common use case is when displaying raw mustache syntax.
-
-## Example
-
-```html
-<script setup>
-  import { ref } from 'vue';
-  const text = ref("Some Text")
-</script>
-
-<template>
-  <p v-pre >{{ text }}</p>
-</template>
-```
-
-The **p** element will display: `{{ text }}` and not `Some Text` because the compilation is skipped.
+`v-pre` is a directive used to tell Vue to skip the compilation process for a specific element and all of its children. By using this directive, any mustache-style syntax or Vue-specific expressions inside the element are displayed exactly as they are written in the source code rather than being processed by the framework. This is typically useful when displaying raw code snippets or large chunks of static content that do not require data binding.
 
 Visit the following resources to learn more:
 
