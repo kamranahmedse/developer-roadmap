@@ -1,6 +1,6 @@
 # API Styles
 
-Though Vue 2 supported many approaches to writing components, only one approach, the "Options API", was built in and accessible without plugins. Vue 3, retains the Options API (OAPI), and adds in the Composition API (CAPI). Composition API itself is actually a part of the Options API, but moves most of the component logic into a setup function. This led to a 3rd approach to writing components being built in called "script/setup", which removes much of the boilerplate from Composition API. These approaches are not mutually exclusive. Each component in your project can use any of these approaches, however for consistency it is recommended to stick primarily to one, and only deviate to one of the others when you have a good reason.
+API styles refer to the two different ways you can write Vue components: Options API and Composition API. The Options API uses a structured object with predefined properties like `data`, `methods`, and `mounted` to organize component logic. The Composition API, on the other hand, allows you to group related code using functions, providing more flexibility and better reuse of logic across larger applications.
 
 Visit the following resources to learn more:
 

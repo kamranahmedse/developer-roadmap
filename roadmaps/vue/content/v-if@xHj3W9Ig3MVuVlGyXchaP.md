@@ -1,12 +1,6 @@
 # v-if
 
-Conditionally render an element or a template fragment based on the truthy-ness of the expression value. When a `v-if` element is toggled, the element and its contained directives / components are destroyed and re-constructed. If the initial condition is falsy, then the inner content won't be rendered at all.
-
-## Example
-
-```html
-<h1 v-if="awesome">Vue is awesome!</h1>
-```
+v-if is a directive used to conditionally render an element or a block based on the truthiness of an expression. When the expression evaluates to true, the element is added to the Document Object Model (DOM), and when it evaluates to false, the element is removed. This directive can also be paired with v-else-if and v-else to handle multiple conditional branches within a template.
 
 Visit the following resources to learn more:
 
