@@ -1,10 +1,6 @@
-# Route Guards
+# Guards
 
-Use route guards to prevent users from navigating to parts of an application without authorization.
-
-Angular route guards are interfaces provided by Angular that, when implemented, allow us to control the accessibility of a route based on conditions provided in function implementation of that interface.
-
-Some types of angular guards are `CanActivate`, `CanActivateChild`, `CanDeactivate`, `CanMatch` and `Resolve`.
+Guards are interfaces that tell the router whether it should allow a user to navigate to or away from a requested route. They function by executing a piece of logic that returns a boolean, a promise, or an observable to determine if the navigation process proceeds or is blocked. This mechanism provides a way to protect specific pages based on conditions like authentication status, user permissions, or unsaved form data.
 
 Visit the following resources to learn more:
 

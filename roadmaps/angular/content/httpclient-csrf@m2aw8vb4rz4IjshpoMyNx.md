@@ -1,8 +1,6 @@
 # HttpClient CSRF
 
-HttpClient includes a built-in mechanism to prevent XSRF attacks. When making HTTP requests, an interceptor reads a token from a cookie (default name: XSRF-TOKEN) and sets it as an HTTP header (X-XSRF-TOKEN). Since only code running on your domain can read this cookie, the backend can verify that the HTTP request originates from your client application and not from an attacker.
-
-However, HttpClient only handles the client-side aspect of XSRF protection. Your backend service must be configured to set the cookie for your page and verify that the header is present on all relevant requests. Without this backend configuration, Angular’s default XSRF protection will not be effective.
+HttpClient CSRF protection is a built-in mechanism that helps prevent Cross-Site Request Forgery attacks by validating requests against a security token. When this feature is enabled, the framework automatically reads a token from a cookie and sets it as an HTTP header for subsequent requests. The server then verifies this token to ensure that the request originated from the intended application rather than a malicious site.
 
 Visit the following resources to learn more:
 

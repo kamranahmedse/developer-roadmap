@@ -1,6 +1,6 @@
 # Dependencies
 
-A provider is an instruction to the Dependency Injection system on how to obtain a value for a dependency. Most of the time, these dependencies are services that you create and provide.
+Dependencies are external pieces of code or services that a module needs to function correctly. When a module requires specific functionality provided by another part of the application, it lists these items as requirements to ensure they are available for use within the component ecosystem. This mechanism allows developers to organize shared code into manageable units that can be imported and utilized wherever necessary throughout the project.
 
 Visit the following resources to learn more:
 

@@ -1,11 +1,6 @@
-# Binding data props attrs events
+# Binding
 
-In an Angular template, a binding creates a live connection between view and the model and keeps them both in sync.
-
-*   **property**: helps you set values for properties of HTML elements or directives.
-*   **attributes**: helps you set values for attributes of HTML elements directly.
-*   **event**: lets you listen for and respond to user actions such as keystrokes, mouse movements, clicks, and touches.
-*   **data**: It's a combination of property and event binding and helps you share data between components.
+Binding is a mechanism that creates a live connection between the application logic in a component and the user interface displayed in the DOM. It allows data to flow between the TypeScript code and the HTML template, ensuring that the view automatically updates whenever the underlying data changes. Through various syntax forms like interpolation, property binding, and event binding, developers can display dynamic values, modify HTML attributes, and respond to user inputs effectively.
 
 Visit the following resources to learn more:
 

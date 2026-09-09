@@ -1,8 +1,6 @@
 # Sanitization
 
-Sanitization is the inspection of an untrusted value, turning it into a value that's safe to insert into the DOM. In many cases, sanitization doesn't change a value at all. Sanitization depends on context: A value that's harmless in CSS is potentially dangerous in a URL.
-
-Angular sanitizes untrusted values for HTML and URLs. Sanitizing resource URLs isn't possible because they contain arbitrary code. In development mode, Angular prints a console warning when it has to change a value during sanitization.
+Sanitization is the process of inspecting and cleaning untrusted data to prevent malicious code from being executed in a web browser. It ensures that values injected into the DOM are stripped of dangerous elements, such as `<script>` tags or inline event handlers, while preserving safe content. This mechanism automatically filters data bound to templates to maintain a secure environment and protect the application from security vulnerabilities.
 
 Visit the following resources to learn more:
 

@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [@official@Attribute Directives](https://angular.dev/guide/testing/attribute-directives)
 - [@article@Testing Directives](https://testing-angular.com/testing-directives/)
-- [@feed@Explore top posts about Testing](https://app.daily.dev/tags/testing?ref=roadmapsh)

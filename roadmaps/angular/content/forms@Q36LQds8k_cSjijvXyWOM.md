@@ -1,8 +1,6 @@
 # Forms
 
-Forms are used to handle user input in many applications, from entering sensitive information to performing data entry tasks.
-
-Angular provides two approaches to handle user input through forms: reactive and template-driven forms.
+Forms are structures used to collect, validate, and manage user input within a web application. They provide a way for users to interact with data by filling out fields, selecting options, or uploading files. In this framework, they offer tools to track changes, handle input validation, and synchronize data between the user interface and the underlying application model.
 
 Visit the following resources to learn more:
 

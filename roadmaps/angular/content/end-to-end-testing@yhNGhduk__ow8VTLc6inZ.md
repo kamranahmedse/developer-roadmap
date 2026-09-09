@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@Your First Test with Cypress](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test)
 - [@official@Writing Tests: Introduction](https://nightwatchjs.org/guide/writing-tests/introduction.html)
 - [@official@Getting Started](https://webdriver.io/docs/gettingstarted/)
-- [@official@Puppeteer Angular Schematic](https://pptr.dev/guides/ng-schematics/#getting-started)

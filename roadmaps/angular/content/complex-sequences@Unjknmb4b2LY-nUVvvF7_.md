@@ -1,13 +1,6 @@
 # Complex Sequences
 
-Angular lets you animate coordinated sequences, such as an entire grid or list of elements as they enter and leave a page. You can choose to run multiple animations in parallel, or run discrete animations sequentially, one following another.
-
-The functions that control complex animation sequences are:
-
-*   `query()`: Finds one or more inner HTML elements.
-*   `stagger()`: Applies a cascading delay to animations for multiple elements.
-*   `group()`: Runs multiple animation steps in parallel.
-*   `sequence()`: Runs animation steps one after another.
+Complex sequences involve orchestrating multiple animation steps or staggered effects to occur in a specific order. This process uses the `query` and `stagger` functions to control the timing and execution of individual elements within a container. By chaining these animations together, developers create sophisticated motion patterns that transition smoothly between different states or views.
 
 Visit the following resources to learn more:
 

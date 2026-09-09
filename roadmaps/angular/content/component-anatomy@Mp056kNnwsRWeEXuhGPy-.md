@@ -1,12 +1,6 @@
 # Component Anatomy
 
-Angular components are the foundational building blocks of Angular applications, designed to encapsulate both the UI and the business logic.
-
-Every component must have:
-
-*   A TypeScript class with behaviors
-*   An HTML template
-*   A CSS selector
+A component in Angular consists of three main parts: a TypeScript class that handles the logic and data, an HTML template that defines the visual structure, and CSS styles that control the appearance. These parts work together to encapsulate a specific piece of the user interface, allowing developers to define how a section of the application behaves and looks in one unified location.
 
 Visit the following resources to learn more:
 

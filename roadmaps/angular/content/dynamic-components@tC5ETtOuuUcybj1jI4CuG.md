@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@article@New Input Binding for NgComponentOutlet](https://medium.com/ngconf/new-input-binding-for-ngcomponentoutlet-cb18a86a739d)
 - [@article@Render dynamic components in Angular using ViewContainerRef](https://dev.to/railsstudent/render-dynamic-components-in-angular-using-viewcontainerref-160h)
 - [@video@Dynamic Component in Angular (2024)](https://www.youtube.com/watch?v=ncbftt3NWVo)
-- [@video@Mastering ViewContainerRef for dynamic component loading in Angular17](https://www.youtube.com/watch?v=Ra4PITCt8m0)

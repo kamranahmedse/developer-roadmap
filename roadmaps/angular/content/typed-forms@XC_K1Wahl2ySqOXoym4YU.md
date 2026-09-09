@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@article@Angular Strictly Typed Forms (Complete Guide)](https://blog.angular-university.io/angular-typed-forms/)
 - [@video@Getting started with Typed Reactive Forms in Angular](https://www.youtube.com/watch?v=mT3UR0TdDnU)
 - [@video@Angular TYPED Forms: Are You Using Them Correctly?](https://www.youtube.com/watch?v=it2BZoIvBPc)
-- [@video@Knowing this makes Angular typed forms WAY less awkward](https://www.youtube.com/watch?v=xpRlijg6spo)

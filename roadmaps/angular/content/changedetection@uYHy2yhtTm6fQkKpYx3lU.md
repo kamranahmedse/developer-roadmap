@@ -1,9 +1,6 @@
-# changeDetection
+# Change Detection
 
-The change-detection strategy to use for this component. When a component is instantiated, Angular creates a change detector, which is responsible for propagating the component's bindings. The strategy is one of:
-
-*   `ChangeDetectionStrategy.OnPush` sets the strategy to CheckOnce (on demand).
-*   `ChangeDetectionStrategy.Default` sets the strategy to CheckAlways.
+Change detection is the mechanism that keeps the user interface in sync with the underlying application state. It automatically monitors the component's data and updates the Document Object Model (DOM) whenever changes occur. This process ensures that the view accurately reflects the current values of class properties, whether triggered by user events, timers, or network requests.
 
 Visit the following resources to learn more:
 

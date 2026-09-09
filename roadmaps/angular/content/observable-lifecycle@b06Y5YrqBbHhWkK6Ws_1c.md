@@ -1,13 +1,6 @@
-# Observable lifecycle
+# Observable Lifecycle
 
-An observable is a function that acts as a wrapper for a data stream. They support to pass messages inside your application. An observable is useless until an observer subscribes to it. An observer is an object which consumes the data emitted by the observable. An observer keeps receiving data values from the observable until the observable is completed, or the observer unsubscribes from the observable. Otherwise observers can receive data values from the observable continuously and asynchronously. So we can perform various operations such as updating the user interface, or passing the JSON response.
-
-There are 4 stages for a life cycle of an observable.
-
-*   Creation
-*   Subscription
-*   Execution
-*   Destruction
+An Observable lifecycle defines the stages a stream goes through from its initial creation to its eventual termination. It begins when an observer subscribes to the stream, triggering the execution of the producer function. Data values are then emitted sequentially to the observer until the stream completes successfully or encounters an error. Once the stream finishes or the observer explicitly unsubscribes, the execution stops and all associated resources are cleaned up to prevent memory leaks.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
-# Rate limiting
+# Rate Limiting Operators
 
-Rate limiting in RxJS refers to the practice of restricting the rate at which events or data can be emitted from an observable. This can be useful in situations where the rate of incoming data is higher than the rate at which it can be processed, or where there are limits on the number of requests that can be made to a server. There are a few different operators in RxJS that can be used for rate limiting, such as throttleTime and sampleTime. These operators can be used to limit the rate of emissions from an observable by discarding emissions that occur too frequently. Another operator is auditTime it emits the last value from the source Observable during periodic time windows.
+Rate limiting operators control the frequency of event emissions within an observable stream by managing how often values are passed through. These operators allow developers to handle high-frequency events, such as keystrokes or scroll movements, by filtering out rapid-fire inputs based on time intervals or specific conditions. Common examples include debouncing to wait for a pause in activity, or throttling to enforce a fixed rate of execution.
 
 Visit the following resources to learn more:
 

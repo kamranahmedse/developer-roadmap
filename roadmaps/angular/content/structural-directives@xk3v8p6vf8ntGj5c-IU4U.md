@@ -1,12 +1,6 @@
 # Structural Directives
 
-Structural directives are directives applied to an `<ng-template>` element that conditionally or repeatedly renders the content of that `<ng-template>`. If you just wrap elements in an `<ng-template>` without applying a structural directive, those elements will not be rendered.
-
-In Angular, there are three standard structural directives:
-
-*   `*ngIf` – conditionally includes a template depending on the value of an expression returned by a Boolean.
-*   `*ngFor` – makes it simple to iterate over an array.
-*   `*ngSwitch` – renders each matching view.
+Structural directives are instructions used to modify the layout of the DOM by adding, removing, or manipulating elements. These directives are identified by an asterisk (*) prefix and control the structure of the application view based on specific conditions or data collections. Common examples include *ngIf for conditional rendering and *ngFor for repeating elements based on an array.
 
 Visit the following resources to learn more:
 

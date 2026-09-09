@@ -8,6 +8,3 @@ Visit the following resources to learn more:
 - [@official@Merge](https://www.learnrxjs.io/learn-rxjs/operators/combination/merge)
 - [@official@Concat](https://www.learnrxjs.io/learn-rxjs/operators/combination/concat)
 - [@official@Zip](https://www.learnrxjs.io/learn-rxjs/operators/combination/zip)
-- [@official@CombineLatest](https://www.learnrxjs.io/learn-rxjs/operators/combination/combineLatest)
-- [@official@WithLatestFrom](https://www.learnrxjs.io/learn-rxjs/operators/combination/withLatestFrom)
-- [@official@ForkJoin](https://www.learnrxjs.io/learn-rxjs/operators/combination/forkJoin)
