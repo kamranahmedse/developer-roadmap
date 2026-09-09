@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [@official@Component Lifecycle](https://angular.dev/guide/components/lifecycle)
 - [@article@The Life Cycle Hooks of Angular](https://blog.logrocket.com/angular-lifecycle-hooks/)
 - [@article@Angular Lifecycle Hooks — Everything you need to know](https://medium.com/@sinanozturk/angular-component-lifecycle-hooks-2f600c48dff3)
-- [@feed@Explore top posts about Angular LifeCycle Hooks](https://dev.to/search?utf8=%E2%9C%93&q=angular+hook)

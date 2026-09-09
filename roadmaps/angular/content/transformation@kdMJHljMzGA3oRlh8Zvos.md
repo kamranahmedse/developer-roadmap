@@ -1,12 +1,6 @@
-# Transformation
+# Transformation Operators
 
-In RxJS, "transformation" refers to the process of modifying or manipulating the data emitted by an Observable. There are a variety of methods available in RxJS that can be used to transform the data emitted by an Observable, including:
-
-*   **map**: applies a function to each item emitted by the Observable and emits the resulting value
-*   **mergeMap**: applies a function to each item emitted by the Observable, and then merges the resulting Observables into a single Observable
-*   **switchMap**: applies a function to each item emitted by the Observable, and then switches to the latest resulting Observable
-*   **concatMap**: applies a function to each item emitted by the Observable, and then concatenates the resulting Observables into a single Observable
-*   **exhaustMap**: applies a function to each item emitted by the Observable, but ignores subsequent emissions until the current Observable completes
+Transformation operators are functions that take the data emitted by an observable, change its form or content, and then output the modified values to the next part of the stream. These tools allow you to map, project, or group incoming data into new formats before it reaches your components or services. Common examples include `map`, which transforms values using a provided function, and `mergeMap`, which flattens multiple observables into a single stream.
 
 Visit the following resources to learn more:
 
@@ -14,7 +8,3 @@ Visit the following resources to learn more:
 - [@official@Merge](https://www.learnrxjs.io/learn-rxjs/operators/combination/merge)
 - [@official@Concat](https://www.learnrxjs.io/learn-rxjs/operators/combination/concat)
 - [@official@Zip](https://www.learnrxjs.io/learn-rxjs/operators/combination/zip)
-- [@official@switchMap](https://www.learnrxjs.io/learn-rxjs/operators/transformation/switchmap)
-- [@official@concatMap](https://www.learnrxjs.io/learn-rxjs/operators/transformation/concatMap)
-- [@official@exhaustMap](https://www.learnrxjs.io/learn-rxjs/operators/transformation/exhaustMap)
-- [@video@switchMap vs mergeMap vs concatMap vs exhaustMap practical guide](https://youtu.be/40pC5wHowWw)

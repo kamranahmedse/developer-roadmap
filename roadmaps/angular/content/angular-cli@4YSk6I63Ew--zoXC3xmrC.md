@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [@official@CLI Reference](https://angular.dev/cli)
 - [@official@The Angular CLI](https://angular.dev/tools/cli)
 - [@video@Angular CLI - Setup](https://www.youtube.com/watch?v=mZnzX3J5XKI)
-- [@feed@Explore top posts about Angular](https://app.daily.dev/tags/angular?ref=roadmapsh)

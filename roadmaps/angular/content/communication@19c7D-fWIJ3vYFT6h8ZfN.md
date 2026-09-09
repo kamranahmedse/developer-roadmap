@@ -1,9 +1,6 @@
-# Communication
+# Component Communication
 
-Angular components can communicate with each other using `@Input()` and `@Output()` decorators. These decorators facilitate data exchange between parent and child components.
-
-*   **@Input()**: This decorator allows a parent component to pass data to a child component, enabling the child to receive and use the data.
-*   **@Output()**: This decorator allows a child component to emit events to a parent component, enabling the parent to respond to changes or actions within the child component.
+Component communication is the process of sharing data between different parts of an application's user interface. It involves passing information from a parent component to a child using input properties, or sending data from a child back to a parent through output events and event emitters. For components that do not share a direct relationship, services or state management patterns are often used to facilitate the transfer of data across the application.
 
 Visit the following resources to learn more:
 
@@ -11,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@Outputs](https://angular.dev/guide/components/outputs)
 - [@official@Model Inputs](https://angular.dev/guide/signals/model)
 - [@official@Custom events with outputs](https://angular.dev/guide/components/outputs)
-- [@video@Non-Related Component Communication | Angular Component & Directives](https://www.youtube.com/watch?v=aIkGXMJFTzM)

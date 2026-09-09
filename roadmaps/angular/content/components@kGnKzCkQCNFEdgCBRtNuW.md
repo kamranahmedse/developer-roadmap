@@ -1,11 +1,6 @@
-# Angular Components
+# Components
 
-Components are the main building block for Angular applications. Each component consists of:
-
-*   An HTML template that declares what renders on the page
-*   A TypeScript class that defines the behavior
-*   A CSS selector that defines how the component is used in a template
-*   Optionally, CSS styles applied to the template
+Components are the fundamental building blocks of an application that define how a specific part of the user interface looks and behaves. Each one consists of a TypeScript class that manages data and logic, an HTML template that defines the structure, and CSS styles that control the visual appearance. They function as independent units that can be nested within one another to construct complex page layouts.
 
 Visit the following resources to learn more:
 

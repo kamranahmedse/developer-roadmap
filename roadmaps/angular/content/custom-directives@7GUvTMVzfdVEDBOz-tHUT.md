@@ -1,8 +1,6 @@
-# Directive
+# Custom Directives
 
-Directives are the functions that will execute whenever the Angular compiler finds them. Angular Directives enhance the capability of HTML elements by attaching custom behaviors to the DOM.
-
-From the core concept, Angular directives are categorized into three categories: Attribute Directives, Structural Directives, and Component Directives.
+Custom Directives are user-defined classes that allow you to extend the functionality of HTML elements by attaching custom behavior or transforming the appearance of the Document Object Model. They serve as a mechanism to create reusable components that can manipulate DOM nodes, listen for events, or apply specific styling logic across various parts of an application. By creating these classes with a specific decorator, developers can define how an element should react to user interactions or changes in the data state.
 
 Visit the following resources to learn more:
 

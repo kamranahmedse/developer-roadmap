@@ -1,8 +1,6 @@
 # RxJS Basics
 
-Reactive Extensions for JavaScript, or RxJS, is a reactive library used to implement reactive programming to deal with async implementation, callbacks, and event-based programs.
-
-The reactive paradigm can be used in many different languages through the use of reactive libraries. These libraries are downloaded APIs that provide functionalities for reactive tools like observers and operators. It can be used in your browser or with Node.js.
+RxJS is a library for reactive programming that uses Observables to make it easier to compose asynchronous or callback-based code. It provides a vast collection of operators that allow developers to transform, filter, and combine streams of data over time. By treating events like clicks or HTTP responses as streams, this tool enables a declarative approach to managing complex data flows within an application.
 
 Visit the following resources to learn more:
 

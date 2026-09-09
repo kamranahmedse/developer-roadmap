@@ -1,6 +1,6 @@
 # @defer
 
-A type of block that can be used to defer load the JavaScript for components, directives and pipes used inside a component template.
+The @defer block is a mechanism that allows you to delay the loading of specific parts of your template until a defined condition is met. It works by postponing the initialization of components, directives, and pipes within the block to reduce the initial bundle size and improve the application's startup performance. You can trigger the loading process using built-in triggers like interaction, visibility, or time, while also specifying placeholder or loading states to display to the user while the content is being fetched.
 
 Visit the following resources to learn more:
 

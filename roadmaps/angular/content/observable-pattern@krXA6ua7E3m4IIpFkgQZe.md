@@ -1,8 +1,6 @@
-# Observer Pattern
+# Observable Pattern
 
-The observer pattern is a software design pattern in which an object, named the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
-
-Angular uses the Observer pattern which simply means — Observable objects are registered, and other objects observe (in Angular using the subscribe method) them and take action when the observable object is acted on in some way.
+The observable pattern is a software design pattern where an object, known as the subject, maintains a list of dependents called observers and notifies them automatically of any state changes. In this model, the observable acts as a data source that pushes values over time to one or more subscribers. This approach allows components to handle asynchronous data streams, such as user events or HTTP requests, by reacting to new data as it becomes available.
 
 Visit the following resources to learn more:
 

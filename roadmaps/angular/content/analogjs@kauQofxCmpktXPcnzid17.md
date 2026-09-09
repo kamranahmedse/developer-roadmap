@@ -8,5 +8,3 @@ Visit the following resources to learn more:
 - [@official@AnalogJS Documentation](https://analogjs.org/docs)
 - [@opensource@analogjs/analog](https://github.com/analogjs/analog)
 - [@video@Robin Goetz - AnalogJS - The Vite powered Angular meta-framework](https://www.youtube.com/watch?v=BSgpvP4eAGk)
-- [@video@Full-stack Angular (SSR, file-based routing, + more) with AnalogJS](https://www.youtube.com/watch?v=VSCXOTCJpiI)
-- [@video@Is AnalogJS good enough for my blog site?](https://www.youtube.com/watch?v=xTzEDQULo6s)

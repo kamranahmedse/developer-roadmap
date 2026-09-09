@@ -1,6 +1,6 @@
 # ContentChild
 
-Content queries retrieve results from the elements in the component's content— the elements nested inside the component in the template where it's used.
+ContentChild is a decorator used to access the first element or directive that matches a specific selector from the content projected into a component. It allows a parent component to interact directly with elements or child components passed through `<ng-content>` by providing a reference to the DOM element or class instance. This mechanism enables the parent to read properties, call methods, or manipulate the child elements that are injected within the component's template.
 
 Visit the following resources to learn more:
 

@@ -1,8 +1,6 @@
-# Built-in directives
+# Directives
 
-SKDirectives are classes that add additional behavior to elements in your Angular applications. Use Angular's built-in directives to manage forms, lists, styles, and what users see.
-
-`NgClass` Adds and removes a set of CSS classes. | `NgStyle` Adds and removes a set of HTML styles. | `NgModel` Adds two-way data binding to an HTML form element.
+Directives are classes that allow you to extend the functionality of HTML elements by attaching custom behavior or transforming the appearance of the DOM. They act as markers that tell the framework to perform specific actions on an element, such as adding, removing, or changing its structure and style. There are three main types, including components, structural directives that modify layout, and attribute directives that change the look or behavior of existing elements.
 
 Visit the following resources to learn more:
 
