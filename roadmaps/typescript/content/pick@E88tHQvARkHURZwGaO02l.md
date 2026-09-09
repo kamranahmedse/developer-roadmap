@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [@official@Pick<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys)
+- [@official@Pick\<Type, Keys\>](https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys)

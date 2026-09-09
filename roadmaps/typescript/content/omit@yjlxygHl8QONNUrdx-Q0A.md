@@ -4,4 +4,4 @@
 
 Visit the following resources to learn more:
 
-- [@official@Omit<Type, Keys>](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)
+- [@official@Omit\<Type, Keys\>](https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys)

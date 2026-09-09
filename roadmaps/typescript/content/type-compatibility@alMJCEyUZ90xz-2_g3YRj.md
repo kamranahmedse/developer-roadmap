@@ -1,21 +1,6 @@
 # Type Compatibility
 
-TypeScript uses structural typing to determine type compatibility. This means that two types are considered compatible if they have the same structure, regardless of their names.
-
-Here's an example of type compatibility in TypeScript:
-
-    interface Point {
-      x: number;
-      y: number;
-    }
-    
-    let p1: Point = { x: 10, y: 20 };
-    let p2: { x: number; y: number } = p1;
-    
-    console.log(p2.x); // Output: 10
-    
-
-In this example, `p1` has the type `Point`, while `p2` has the type `{ x: number; y: number }`. Despite the fact that the two types have different names, they are considered compatible because they have the same structure. This means that you can assign a value of type `Point` to a variable of type `{ x: number; y: number }`, as we do with `p1` and `p2` in this example.
+Type compatibility is a mechanism in TypeScript that determines whether one type can be assigned to another based on the structure of the types. Unlike languages that use nominal typing where compatibility is based on explicit declarations, TypeScript uses structural typing to compare members. If a target type has all the required members of a source type, the compiler considers them compatible, regardless of their specific names or hierarchies.
 
 Visit the following resources to learn more:
 

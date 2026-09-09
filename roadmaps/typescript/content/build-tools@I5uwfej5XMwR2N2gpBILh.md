@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [@official@Vite Next Generation Frontend Tooling](https://vitejs.dev)
 - [@official@Parcel is a zero configuration build tool for the web](https://parceljs.org/)
 - [@official@esbuild is an extremely fast JavaScript bundler and minifier](https://esbuild.github.io/)
-- [@official@swc is a super-fast compiler written in Rust](https://swc.rs/)

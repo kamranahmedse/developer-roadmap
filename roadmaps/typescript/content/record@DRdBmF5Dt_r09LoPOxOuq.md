@@ -4,4 +4,4 @@ The `Record` utility type in TypeScript is used to construct a new type where th
 
 Visit the following resources to learn more:
 
-- [@official@Record<Keys, Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
+- [@official@Record\<Keys, Type\>](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
