@@ -1,18 +1,6 @@
-# Any
+# any
 
-TypeScript has a special type, `any`, that you can use whenever you don’t want a particular value to cause typechecking errors.
-
-When a value is of type `any`, you can access any properties of it (which will in turn be of type `any`), call it like a function, assign it to (or from) a value of any type, or pretty much anything else that’s syntactically legal:
-
-    let obj: any = { x: 0 };
-    // None of the following lines of code will throw compiler errors.
-    // Using `any` disables all further type checking, and it is assumed
-    // you know the environment better than TypeScript.
-    obj.foo();
-    obj();
-    obj.bar = 100;
-    obj = 'hello';
-    const n: number = obj;
+`any` is a type in TypeScript that acts as a top type by opting out of type checking for a variable. When a value is assigned the `any` type, you can perform any operation on it, such as accessing arbitrary properties or calling it as a function, without the compiler raising errors. This type is primarily used as an escape hatch when you need to bypass the type system for dynamic content or when migrating existing JavaScript codebases to TypeScript.
 
 Visit the following resources to learn more:
 
