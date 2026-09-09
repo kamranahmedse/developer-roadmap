@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [@article@What is MFA?](https://www.onelogin.com/learn/what-is-mfa)
 - [@article@What is 2FA?](https://www.microsoft.com/en-gb/security/business/security-101/what-is-two-factor-authentication-2fa)
+- [@course@MFA Fatigue Attack: Interactive Exercise](https://ransomleak.com/exercises/mfa-fatigue-attack/)

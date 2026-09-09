@@ -5,4 +5,5 @@ Social Engineering is a manipulation technique that exploits human psychology to
 Visit the following resources to learn more:
 
 - [@article@What Is Social Engineering?](https://www.cisco.com/c/en/us/products/security/what-is-social-engineering.html)
+- [@course@Social Engineering: Interactive Pretexting Exercise](https://ransomleak.com/exercises/social-engineering/)
 - [@video@Social Engineering Explained](https://www.youtube.com/shorts/DdCSraNCxhs)

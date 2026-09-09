@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@article@Dumpster Diving](https://www.techtarget.com/searchsecurity/definition/dumpster-diving)
 - [@article@What is Dumpster Diving](https://powerdmarc.com/dumpster-diving-in-cybersecurity/)
+- [@course@Secure Document Disposal: Interactive Office Exercise](https://ransomleak.com/exercises/secure-document-disposal/)
 - [@video@Dumpster Diving for Sensitive Information](https://www.youtube.com/watch?v=Pom86gq4mk4)

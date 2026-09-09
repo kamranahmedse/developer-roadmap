@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [@official@OWASP Top Ten](https://owasp.org/www-project-top-ten/)
 - [@official@OWASP Vulnerable Web Applications Directory (VWAD)](https://vwad.owasp.org/)
+- [@course@OWASP Top 10 Exploit-then-Fix Labs](https://ransomleak.com/catalogue/application-security/)
 - [@video@OWASP Top Ten](https://youtube.com/playlist?list=PLyqga7AXMtPOguwtCCXGZUKvd2CDCmUgQ&si=ZYRbcDSRvqTOnDOo)
